@@ -1,5 +1,5 @@
 ---
-title: Administrar conjuntos de revisión en la exhibición avanzada de documentos electrónicos
+title: Administrar conjuntos de revisión en eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Obtenga información sobre cómo administrar conjuntos de revisión para poder analizar, consultar, ver, etiquetar y exportar datos en un caso de exhibición avanzada de documentos electrónicos.
+description: Aprenda a administrar conjuntos de revisión para que pueda analizar, consultar, ver, etiquetar y exportar datos en un caso de eDiscovery avanzado.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: c489fa77c8e2d40d4f50275848465d5e8334c7a1
 ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
@@ -24,9 +24,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/05/2020
 ms.locfileid: "44034172"
 ---
-# <a name="manage-review-sets-in-advanced-ediscovery"></a>Administrar conjuntos de revisión en la exhibición avanzada de documentos electrónicos
+# <a name="manage-review-sets-in-advanced-ediscovery"></a>Administrar conjuntos de revisión en eDiscovery avanzado
 
-Los conjuntos de revisión son un conjunto estático de documentos en los que puede analizar, consultar, ver, etiquetar y exportar datos en un caso. Para obtener más información acerca de cómo realizar estas tareas, consulte:
+Los conjuntos de revisión son un conjunto estático de documentos donde puede analizar, consultar, ver, etiquetar y exportar datos en un caso. Para obtener más información acerca de cómo realizar estas tareas, vea:
 
 - [Analizar datos en un conjunto de revisión](analyzing-data-in-review-set.md)
 
@@ -40,15 +40,15 @@ Los conjuntos de revisión son un conjunto estático de documentos en los que pu
 
 ## <a name="create-a-review-set"></a>Crear un conjunto de revisión
 
-Los conjuntos de revisión se pueden crear en la pestaña **conjuntos de revisión** haciendo clic en **+ Agregar conjunto de revisión**.
+Los conjuntos de revisión se pueden crear en la **pestaña Conjuntos de revisión** haciendo clic **en + Agregar conjunto de revisión.**
 
 ![Agregar conjunto de revisión](../media/f45c51d9-585d-47d1-b7fb-0288715e0b6a.png)
 
-En la página Agregar elemento emergente de **conjunto de revisiones** , escriba un nombre para el conjunto de revisión y, a continuación, haga clic en **Guardar**. El nuevo conjunto de revisiones se muestra en la lista de la pestaña **conjuntos de revisión** .
+En la **página desplegable Agregar conjunto** de revisión, escriba un nombre para el conjunto de revisión y, a continuación, haga clic en **Guardar**. El nuevo conjunto de revisión se muestra en la lista de la **pestaña Conjuntos de** revisión.
 
-![Nuevo conjunto de revisión enumerado en la pestaña conjunto de revisiones](../media/AeDnewreviewset.png)
+![Nuevo conjunto de revisión enumerado en la pestaña Conjunto de revisión](../media/AeDnewreviewset.png)
 
-Hay tres formas diferentes de agregar datos a un conjunto de revisión en un caso de exhibición avanzada de documentos electrónicos.
+Hay tres formas diferentes de agregar datos a un conjunto de revisión en un caso de eDiscovery avanzado.
 
 ![Tres formas de agregar a un conjunto de revisión](../media/1f1f4efd-c03b-4255-bc3d-df358e56549c.png)
 

@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
-description: Aprenda a configurar Information Rights Management (IRM) en Exchange Online para usar un servidor de Active Directory Rights Management Service (AD RMS).
+description: Obtenga información sobre cómo configurar Information Rights Management (IRM) en Exchange Online para usar un servidor de Active Directory Rights Management Service (AD RMS).
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 92bf92427ed9a0ba55a0f059859d59c11023ea33
 ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
@@ -26,9 +26,9 @@ ms.locfileid: "44166121"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurar IRM para usar un servidor de AD RMS local
   
-Para su uso con implementaciones locales, Information Rights Management (IRM) en Exchange online usa Active Directory Rights Management Services (AD RMS), una tecnología de protección de la información en Windows Server 2008 y versiones posteriores. La protección de IRM se implanta en el correo electrónico mediante la aplicación de una plantilla de directiva de permisos de AD RMS a un mensaje de correo electrónico. Los derechos se adjuntan al propio mensaje para que la protección se produzca en línea o sin conexión, y dentro y fuera del firewall de la organización.
+Para su uso con implementaciones locales, Information Rights Management (IRM) en Exchange Online usa Active Directory Rights Management Services (AD RMS), una tecnología de protección de la información en Windows Server 2008 y versiones posteriores. La protección de IRM se implanta en el correo electrónico mediante la aplicación de una plantilla de directiva de permisos de AD RMS a un mensaje de correo electrónico. Los derechos se adjuntan al propio mensaje para que la protección se produzca en línea y sin conexión y dentro y fuera del firewall de la organización.
   
-En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS. Para obtener información acerca del uso de las nuevas funciones de cifrado de mensajes de Office 365 con Azure Active Directory y Azure Rights Management, consulte las [preguntas más frecuentes sobre el cifrado de mensajes de office 365](https://docs.microsoft.com/microsoft-365/compliance/ome-faq).
+En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS. Para obtener información sobre el uso de las nuevas funcionalidades para el cifrado de mensajes de Office 365 con Azure Active Directory y Azure Rights Management, consulte las preguntas más frecuentes sobre el cifrado de mensajes de [Office 365.](https://docs.microsoft.com/microsoft-365/compliance/ome-faq)
   
 Para obtener más información sobre IRM en Exchange Online, consulte [Information Rights Management en Exchange Online](information-rights-management-in-exchange-online.md).
   
@@ -42,7 +42,7 @@ Para obtener más información sobre IRM en Exchange Online, consulte [Informati
 
 - Para obtener información detallada sobre cómo instalar y configurar Windows PowerShell y conectarlo al servicio, vea [Conectarse a Exchange Online mediante PowerShell remoto](https://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
 
-- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- Para obtener información acerca de los métodos abreviados de teclado que pueden aplicarse a los procedimientos de este tema, consulte [Métodos abreviados](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)de teclado para el Centro de administración de Exchange en Exchange Online.
 
 > [!TIP]
 > ¿Problemas? Solicite ayuda en los foros de Exchange. Visite los foros en [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
@@ -102,7 +102,7 @@ Para comprobar que el dominio de publicación de confianza se haya importado cor
   
 ### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>Paso 3: use el Shell de administración de Exchange para distribuir una plantilla de directiva de permisos AD RMS
 
-Después de importar el dominio de publicación de confianza, debe asegurarse de que la plantilla de directiva de permisos AD RMS esté distribuida. Una plantilla distribuida es visible para los usuarios de Outlook en la web (anteriormente conocido como Outlook Web App), que a su vez pueden aplicar las plantillas a un mensaje de correo electrónico.
+Después de importar el dominio de publicación de confianza, debe asegurarse de que la plantilla de directiva de permisos AD RMS esté distribuida. Una plantilla distribuida es visible para los usuarios de Outlook en la Web (anteriormente conocido como Outlook Web App), que pueden aplicar las plantillas a un mensaje de correo electrónico.
   
 Para obtener una lista de todas las plantillas que incluye el TPD predeterminado, ejecute el comando siguiente:
   
@@ -168,4 +168,4 @@ Para comprobar si ha importado el TPD y ha habilitado IRM correctamente, haga lo
   
 - Use el cmdlet **Test-IRMConfiguration** para probar si IRM funciona. Para obtener más información, vea "Ejemplo 1" en [Test-IRMConfiguration](https://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
 
-- Redacte un nuevo mensaje en Outlook en la web y protéjalo con IRM seleccionando la opción **establecer permisos** en el menú extendido ( ![icono](../media/ITPro-EAC-MoreOptionsIcon.gif)más opciones).
+- Redacte un nuevo mensaje en Outlook en la Web  y protéjalo con IRM seleccionando la opción Establecer permisos en el menú extendido (icono Más ![ ](../media/ITPro-EAC-MoreOptionsIcon.gif) opciones).

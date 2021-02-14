@@ -31,22 +31,22 @@ ms.locfileid: "44785900"
 ---
 # <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-for-business"></a>Requisitos previos para proteger datos en dispositivos con Microsoft 365 para empresas
 
-Este artículo se aplica a Microsoft 365 empresa Premium.
+Este artículo se aplica a Microsoft 365 Empresa Premium.
 
-El primer paso para configurar su organización con Microsoft 365 para la empresa es asegurarse de que puede cumplir los requisitos previos.
+El primer paso para configurar su organización con Microsoft 365 para empresas es asegurarse de que puede cumplir los requisitos previos.
   
 ## <a name="requirements-for-setting-up-your-organization-with-microsoft-365-for-business"></a>Requisitos para configurar su organización con Microsoft 365 para empresas
 
-- Los dispositivos Windows deben ejecutar Windows 7 Professional, Windows 8 Pro o Windows 8,1 Pro.
+- Los dispositivos Windows deben ejecutar Windows 7 Professional, Windows 8 Pro o Windows 8.1 Pro.
     
     [Actualizar dispositivos Windows a Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
     
-    Si está ejecutando Windows 10 Home, debe **comprar** Windows 10 Pro. Consulte [actualizar Windows 10 Home a Windows 10 Pro](https://support.microsoft.com/office/0aee10c1-4d34-43ee-a325-579c6c2df90e) para obtener instrucciones. 
+    Si estás ejecutando Windows 10 Home, debes **comprar** Windows 10 Pro. Consulta [actualizar Windows 10 Home a Windows 10 Pro](https://support.microsoft.com/office/0aee10c1-4d34-43ee-a325-579c6c2df90e) para obtener instrucciones. 
     
-- Quite los dispositivos de las soluciones de administración móvil (hierro móvil, vigilancia, etc.). Debe inscribir a todas las personas de su organización en Microsoft 365 para la administración móvil de la empresa.
+- Quitar dispositivos de soluciones de administración de dispositivos móviles (Mobile Iron, AirWatch, entre otros). Inscribirá a todas las personas de su organización en la administración móvil de Microsoft 365 para empresas.
     
 - Apple iOS 8.0 y versiones posteriores.
     
-    Google Android 4.0 y versiones posteriores (incluido Samsung KNOX Standard 4.0 y versiones superiores). Para obtener más información, vea [dispositivos compatibles con Intune](https://go.microsoft.com/fwlink/p/?linkid=852307).
+    Google Android 4.0 y versiones posteriores (incluido Samsung KNOX Standard 4.0 y versiones superiores). Para obtener más información, vea [dispositivos compatibles con Intune.](https://go.microsoft.com/fwlink/p/?linkid=852307)
     
-- Si tiene aplicaciones de Office existentes en los equipos de los usuarios, consulte [Prepárese para la instalación del cliente de Office](prepare-for-office-client-deployment.md) para comprender los pasos que puede que tenga que realizar antes de configurar Microsoft 365 for Business para instalar Office 2016 en los equipos de los usuarios. 
+- Si tiene aplicaciones de Office existentes en los equipos de los usuarios, lea "Prepararse para la instalación del cliente de [Office"](prepare-for-office-client-deployment.md) para comprender los pasos que debe seguir antes de configurar Microsoft 365 para empresas para instalar Office 2016 en los equipos de los usuarios. 

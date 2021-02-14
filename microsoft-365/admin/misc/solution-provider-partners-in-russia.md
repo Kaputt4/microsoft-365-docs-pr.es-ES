@@ -18,7 +18,7 @@ search.appverid:
 - MOE150
 ms.assetid: d3adf0cf-d581-4452-a5b3-6e0d16a34daa
 ROBOTS: NOINDEX
-description: Obtenga una lista de los proveedores de soluciones en la nube de Microsoft en Rusia.
+description: Obtener una lista de proveedores de Soluciones en la nube de Microsoft en Rusia.
 ms.openlocfilehash: 4c9a466f946e502cace0588e0d90706965a70140
 ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT

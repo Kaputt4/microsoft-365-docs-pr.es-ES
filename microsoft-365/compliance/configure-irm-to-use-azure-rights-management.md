@@ -17,7 +17,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Este artículo contiene información sobre las nuevas funciones de cifrado de mensajes de Office 365 (OME).
+description: Este artículo contiene información sobre las nuevas funcionalidades del cifrado de mensajes de Office 365 (OME).
 ms.openlocfilehash: b1a9c58a17b5f8434325191828063ec91a116e88
 ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
@@ -27,6 +27,6 @@ ms.locfileid: "44166101"
 ---
 # <a name="configure-irm-to-use-azure-rights-management"></a>Configurar IRM para usar Azure Rights Management
 
-Con el lanzamiento de las nuevas funciones de Office 365 cifrado de mensajes (OME), ya no es necesario configurar IRM por separado. Microsoft no recomienda configurar implementaciones nuevas mediante OME y IRM heredados con Azure Rights Management. Para obtener más información acerca de las nuevas capacidades de OME, vea [preguntas más frecuentes sobre el cifrado de mensajes de Office 365](https://docs.microsoft.com/microsoft-365/compliance/ome-faq). Si está listo para empezar a usar las nuevas funciones de OME dentro de su organización, vea [configurar las nuevas funciones de cifrado de mensajes de Office 365 integradas en Azure Information Protection](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities).
+Con el lanzamiento de las nuevas funcionalidades para el cifrado de mensajes de Office 365 (OME), ya no necesita configurar IRM por separado. Microsoft no recomienda configurar nuevas implementaciones con OME e IRM heredados con Azure Rights Management. Para obtener más información acerca de las nuevas capacidades de OME, consulte las preguntas más frecuentes sobre el cifrado de mensajes [de Office 365.](https://docs.microsoft.com/microsoft-365/compliance/ome-faq) Si está listo para empezar a usar las nuevas funcionalidades de OME dentro de su organización, consulte Configurar nuevas capacidades de cifrado de mensajes de [Office 365](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities)integradas en Azure Information Protection.
   
 

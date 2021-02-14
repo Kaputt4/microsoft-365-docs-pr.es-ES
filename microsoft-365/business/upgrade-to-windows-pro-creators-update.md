@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
-description: Descubra formas en las que puede actualizar sus dispositivos Windows a Windows 10 Pro para usar características de redes empresariales y de seguridad más avanzadas.
+description: Descubre formas en que puedes actualizar los dispositivos Windows a Windows 10 Pro para usar características más avanzadas de seguridad y redes empresariales.
 ms.openlocfilehash: 24ef1f1547ed8873ed1fa18120eef6275f53c7dc
 ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
@@ -41,25 +41,25 @@ Vea un breve vídeo sobre cómo actualizar dispositivos Windows a Windows 10 Pro
 
 Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## <a name="upgrade-to-windows-10-pro"></a>Actualizar a Windows 10 Pro
+## <a name="upgrade-to-windows-10-pro"></a>Actualizar a Windows 10 Pro
   
-Para actualizar a Windows 10 Pro, tiene varias opciones. Puede:
+Para actualizar a Windows 10 Pro, tienes varias opciones. Puede:
     
-- Instale la actualización desde el [sitio de descarga de software de Microsoft](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash; Seleccione esta opción si el dispositivo en el que ha iniciado sesión está en el mismo dispositivo que el que desea actualizar. 
+- Instalar la actualización desde el sitio de descarga de software de [Microsoft](https://go.microsoft.com/fwlink/?LinkID=836951 ) Seleccione esta opción si el dispositivo en el que ha iniciado sesión está en el mismo dispositivo que el que &ndash; desea actualizar. 
 
-    - En el sitio de descarga de software, haga clic en **Actualizar ahora** para iniciar la actualización del dispositivo a Windows 10 Pro Creators Update. 
+    - En el sitio de descarga de software, haz clic en **Actualizar ahora** para empezar a actualizar el dispositivo a Windows 10 Pro Creators Update. 
     
-- Cree un medio de instalación con la [herramienta de creación de medios](https://go.microsoft.com/fwlink/?LinkID=836960) &ndash; Seleccione esta opción para crear un medio de instalación de Windows 10 Pro Creators Update (unidad flash USB o archivo ISO) para instalar Windows 10 en un PC que sea diferente al que está usando.
+- Crear un medio [](https://go.microsoft.com/fwlink/?LinkID=836960) de instalación con la herramienta de creación de medios Seleccione esta opción para crear un medio de instalación de &ndash; Windows 10 Pro Creators Update (unidad flash USB o archivo ISO) para instalar Windows 10 en un equipo que sea diferente del que está usando.
 
-    - Lea las instrucciones sobre cómo usar la herramienta y crear los medios de instalación. 
+    - Lee las instrucciones sobre cómo usar la herramienta y crear los medios de instalación. 
 
 > [!NOTE]
-> Si tiene dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8,1 Pro, su suscripción a Microsoft 365 para empresas le da derecho a una actualización a Windows Pro 10.
+> Si tienes dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, tu suscripción a Microsoft 365 para empresas te da derecho a una actualización de Windows Pro 10.
     
-Consulte [configurar dispositivos Windows para los usuarios de Microsoft 365 para empresas](set-up-windows-devices.md) para completar la configuración de dispositivos con Windows 10. 
+Consulta Configurar dispositivos Windows para que los usuarios de [Microsoft 365](set-up-windows-devices.md) para empresas completen la configuración de dispositivos Windows 10. 
   
-Consulte [configurar dispositivos móviles para Microsoft 365 para los usuarios de la empresa](set-up-mobile-devices.md) para completar la configuración de dispositivos iOS y Android. 
+Consulte Configurar dispositivos móviles para que los usuarios de [Microsoft 365](set-up-mobile-devices.md) para empresas completen la configuración de dispositivos Android e iOS. 
   
-## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Para obtener más información sobre la configuración y el uso de Microsoft 365 para empresas
+## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Para obtener más información sobre cómo configurar y usar Microsoft 365 para empresas
 
 [Vídeos de aprendizaje de Microsoft 365 para empresas](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

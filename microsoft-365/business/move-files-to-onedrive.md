@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
-description: Obtenga información sobre cómo mover sus archivos de trabajo personales y los archivos confidenciales de la empresa a OneDrive para la empresa en tan solo unos pocos pasos sencillos.
+description: Obtenga información sobre cómo puede mover los archivos de trabajo personales y los archivos confidenciales de la empresa a OneDrive para la Empresa en tan solo unos sencillos pasos.
 ms.openlocfilehash: 561c9dee1080a50dea695f136df10be8e5d52959
 ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "44785920"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Mover archivos a OneDrive para la Empresa
 
-Vea un breve vídeo sobre cómo mover archivos a OneDrive para la empresa.<br><br>
+Vea un breve vídeo sobre cómo mover archivos a OneDrive para la Empresa.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
@@ -52,6 +52,6 @@ Si un usuario tiene un equipo que incluye muchos archivos personales, primero de
     
 Para transferir el perfil de usuario y archivos importantes, también puede usar una herramienta de terceros, como ForensiT. Debe cargar los archivos resultantes también en OneDrive para la Empresa.
   
-## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Para obtener más información sobre la configuración y el uso de Microsoft 365 para empresas
+## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Para obtener más información sobre cómo configurar y usar Microsoft 365 para empresas
 
 [Vídeos de aprendizaje de Microsoft 365 para empresas](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

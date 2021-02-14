@@ -1,5 +1,5 @@
 ---
-title: RGPD simplificada una guía para su pequeña empresa
+title: Guía A simplificada del RGPD para su pequeña empresa
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -18,7 +18,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 211c5c90-9719-4d73-9ad9-1925bb80f5f6
-description: Obtenga información sobre cómo Microsoft 365 para empresas puede ayudarle con el proceso general del Reglamento de protección de datos (RGPD).
+description: Obtenga información sobre cómo Microsoft 365 para empresas puede ayudarle con el proceso del Reglamento general de protección de datos (RGPD).
 ms.openlocfilehash: 066803e15fe107c8a20b61d9871b6807629f2a9f
 ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
@@ -26,147 +26,147 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/27/2020
 ms.locfileid: "44399163"
 ---
-# <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplificado: una guía para su pequeña empresa
+# <a name="gdpr-simplified-a-guide-for-your-small-business"></a>RGPD simplificado: guía para su pequeña empresa
 
- *Uso de Microsoft 365 para empresas para mitigar y administrar el cumplimiento de RGPD* 
+ *Uso de Microsoft 365 para empresas para mitigar y administrar el cumplimiento del RGPD* 
   
-El Reglamento General de protección de datos (RGPD) es un Reglamento de la Unión Europea (UE) que administra la forma en que una organización debe controlar los datos personales. El RGPD está pendiente de entrar en vigor el 25 de mayo de 2018. Si su empresa vende a, proporciona servicios para, o usa a los ciudadanos de la Unión Europea, el [RGPD](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) le afectará. 
+El Reglamento general de protección de datos (RGPD) es un reglamento de la Unión Europea (UE) que exige el modo en que una organización debe controlar los datos personales. El RGPD debe entrar en vigor el 25 de mayo de 2018. Si su empresa vende, proporciona servicios o emplea ciudadanos de la Unión Europea, el [RGPD](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_en) le afectará. 
   
-Este artículo le ayudará a comprender qué es el RGPD, por qué viene y cómo Microsoft 365 para empresas puede ayudar a su organización a cumplir con el RGPD.
+Este artículo le ayuda a comprender cuál es el RGPD, por qué se produjo y cómo Microsoft 365 para empresas puede ayudar a su organización a cumplir con el RGPD.
   
-## <a name="a-quick-overview-of-the-gdpr"></a>Información general rápida sobre el RGPD
+## <a name="a-quick-overview-of-the-gdpr"></a>Información general rápida del RGPD
 
-RGPD es un Reglamento de la UE que actualiza y expande la Directiva de protección de datos anterior (DPD), que actuó en primer lugar en 1995. El RGPD está relacionado con la privacidad de los datos de un individuo, es decir, un cliente individual, un cliente, un empleado o un socio comercial. El objetivo de RGPD es fortalecer la protección de datos personales para los ciudadanos de la UE, independientemente de que residan en la UE o en otras partes. El Reglamento establece las expectativas y los avisos sobre cómo lograrlos. Cuando la RGPD se convierte en ejecutivas a finales de mayo de 2018, las organizaciones deben tener medidas en vigor que cumplan los requisitos de la RGPD.
+El RGPD es un reglamento de la UE que actualiza y amplía la directiva de protección de datos (DPD) anterior, que se aprobaba por primera vez en 1995. El RGPD se preocupa por la privacidad de los datos de una persona, ya sea que individualmente un cliente, un cliente, un empleado o un socio comercial. El objetivo del RGPD es reforzar la protección de datos personales para los ciudadanos de la UE, tanto si residen en la UE como en otro lugar. El reglamento establece expectativas e informa sobre cómo lograrlas. Cuando el RGPD se hace aplicable a finales de mayo de 2018, las organizaciones deben tener medidas que cumplan los requisitos del RGPD.
   
-RGPD es todo sobre los datos y cómo se usa. Piense que los datos tienen un ciclo de vida. El ciclo comienza al recopilar datos, sigue a la vez que se almacena y se usa (procesando), y termina cuando se elimina completamente de los sistemas. 
+El RGPD trata sobre los datos y cómo se usan. Piense que los datos tienen un ciclo de vida. El ciclo comienza cuando se recopilan datos, continúa a medida que se almacenan y se usan (procesamiento) y finaliza cuando se eliminan completamente de los sistemas. 
   
-El RGPD está relacionado con los siguientes tipos de datos: 
+El RGPD se preocupa por los siguientes tipos de datos: 
   
-- **Datos personales:** Si puede vincular datos a una persona e identificarlos, esos datos se consideran personales con respecto al RGPD. Algunos ejemplos de datos personales incluyen nombre, dirección, fecha de nacimiento y dirección IP. La RGPD tiene en cuenta incluso la información codificada (también denominada "información de seudónimos") para que sea datos personales, independientemente del grado de oscurecimiento o de la técnica de los datos, si los datos se pueden vincular a un individuo.
+- **Datos personales:** Si puede vincular datos a una persona e identificarlos, esos datos se consideran personales con respecto al RGPD. Algunos ejemplos de datos personales son el nombre, la dirección, la fecha de nacimiento y la dirección IP. El RGPD considera incluso la información codificada (también conocida como información "seudónima") como datos personales, independientemente de lo oscuros o técnicos que sean los datos, si los datos se pueden vincular a una persona.
     
-- **Datos personales confidenciales** Se trata de datos que agregan más detalles a los datos personales. Algunos ejemplos son la religión, la afiliación sindical, el origen étnico, etc. Los datos personales confidenciales también incluyen datos biométricos y DNA. En RGPD, los datos confidenciales tienen reglas de protección más estrictas que los datos personales. 
+- **Datos personales confidenciales** Se trata de datos que agregan más detalles a los datos personales. Algunos ejemplos son: pertenencia a organizaciones, pertenencia a organizaciones, origen étnico, entre otros. Los datos personales confidenciales también incluyen datos biométricos y ANÁLISIS. Según el RGPD, los datos confidenciales tienen reglas de protección más estrictas que los datos personales. 
     
-## <a name="gdpr-terms"></a>Términos de RGPD
+## <a name="gdpr-terms"></a>Términos del RGPD
 
 Verá algunos términos a los que se hace referencia con frecuencia en el RGPD. Es importante comprender estos términos.
   
  **Consentimiento**
   
-La RGPD dice: "el tratamiento de datos personales debe estar diseñado para servir a Mankind". La RGPD espera a conseguir este objetivo usando el consentimiento al procesar datos personales. Podría ser el acto sencillo de preguntar a los clientes si quieren recibir mensajes de correo electrónico de su empresa. También significa que no hay más casillas de exclusión en el sitio web cuando desea usar datos para marketing. Debe tomar el consentimiento explícito usando un "Acta afirmativa clara". Además, tendrá que mantener los registros de cuando se tome o se revoque un consentimiento.
+El RGPD indica: "El procesamiento de datos personales debe diseñarse para servir a personas con dificultades". El RGPD espera lograr este objetivo mediante el consentimiento al procesar datos personales. Ese podría ser el simple acto de preguntar a los clientes si quieren recibir mensajes de correo electrónico de su empresa. También significa que no hay más casillas de no participar en su sitio web cuando quiera usar datos para marketing. Debe dar su consentimiento explícito mediante un "acto afirmativo claro". Además, también tendrá que mantener registros de cuándo se toma o revoca un consentimiento.
   
- **Derechos de los titulares de datos**
+ **Derechos del titular de los datos (DSR)**
   
-El RGPD establece los derechos del titular de los datos, lo que significa que, en relación con sus datos personales, los clientes, los empleados, los socios comerciales, los clientes, los contratistas, los estudiantes, los proveedores, etc. tienen derecho a:
+El RGPD establece derechos del interesado, lo que significa que, con respecto a sus datos personales, los clientes, empleados, socios comerciales, clientes, contratistas, estudiantes, proveedores, etc. tienen derecho a:
   
-- **Ser informado sobre sus datos:** Debe informar a los usuarios sobre el uso de sus datos. 
+- **Tenga en cuenta sus datos:** Debe informar a los usuarios sobre el uso de sus datos. 
     
-- **Tener acceso a sus datos:** Debe conceder acceso a los usuarios a cualquiera de sus datos (por ejemplo, mediante el acceso de cuenta o de alguna manera manual). 
+- **Tener acceso a sus datos:** Debe proporcionar a los usuarios acceso a cualquiera de sus datos que tiene en su poder (por ejemplo, mediante el acceso a la cuenta o de alguna forma manual). 
     
-- **Solicite rectificación de datos:** Los usuarios pueden pedirle que corrija datos inexactos. 
+- **Pida rectificación de datos:** Los usuarios pueden pedirle que corrija los datos inexactos. 
     
-- **Pedir que se eliminen los datos:** También conocido como "derecho a eliminación", este derecho permite que una persona solicite que se eliminen todos los datos personales que haya recopilado una compañía en todos los sistemas que la usan o lo comparten. 
+- **Pida que se eliminen los datos:** También conocido como "derecho a la eliminación", este derecho permite a una persona solicitar que cualquiera de sus datos personales recopilados por una empresa se elimine en todos los sistemas que los usan o los comparten. 
     
-- **Procesamiento restringido de solicitudes:** Un individuo puede pedirle que elimine o restrinja sus datos. Sin embargo, solo es aplicable en determinadas circunstancias. 
+- **Solicitud de procesamiento restringido:** Una persona puede pedir que suprima o restrinja sus datos. Sin embargo, solo es aplicable en determinadas circunstancias. 
     
-- **Disponer de portabilidad de datos:** Un individuo puede pedir que sus datos se transfieran a otra empresa. 
+- **Tener portabilidad de datos:** Una persona puede solicitar que sus datos se transfieran a otra empresa. 
     
-- **Objeto:** Un individuo puede objeto a sus datos que se usan para varios usos, incluido el marketing directo. 
+- **Objeto:** Una persona puede oponerse a sus datos que se usan para diversos usos, incluido el marketing directo. 
     
-- **No se debe hacer que esté sujeto a la toma de decisiones automatizada, incluido el perfilado:** RGPD tiene reglas estrictas sobre el uso de datos para perfilar a personas y automatizar decisiones basadas en esa generación de perfiles. 
+- Pida no estar sujeto a la toma de decisiones **automatizada, incluida la generación de perfiles:** El RGPD tiene reglas estrictas sobre el uso de datos para perfilar personas y automatizar las decisiones basadas en esa generación de perfiles. 
     
-## <a name="common-small-business-questions-about-the-gdpr"></a>Preguntas comunes sobre la pequeña empresa sobre el RGPD
+## <a name="common-small-business-questions-about-the-gdpr"></a>Preguntas comunes de pequeñas empresas sobre el RGPD
 
-### <a name="im-a-sole-proprietor---do-i-really-have-to-worry-about-the-gdpr"></a>Soy el único titular, tengo que preocuparme por el RGPD? n.
+### <a name="im-a-sole-proprietor---do-i-really-have-to-worry-about-the-gdpr"></a>Soy un único propietario: ¿realmente tengo que preocuparme por el RGPD?
 
-El RGPD es acerca de los datos que procesa, no el número de empleados que tiene. Afecta a las empresas de todos los tamaños, incluso a los propietarios únicos. Sin embargo, las empresas con menos de 250 empleados tienen algunas exenciones, como la reducción de registros, pero solo si está seguro de que el procesamiento de datos no afecta a los derechos de la persona y es un procesamiento ocasional.
+El RGPD trata sobre los datos que procesa, no el número de empleados que tiene. Afecta a empresas de todos los tamaños, incluso a únicas empresas. Sin embargo, las compañías con menos de 250 empleados tienen algunas exenciones, como la reducción de la conservación de registros, pero solo si está seguro de que el procesamiento de datos no afecta a los derechos del individuo y es un procesamiento ocasional.
   
-Por ejemplo, el procesamiento de datos no personales estaría exento o necesitaría medidas reducidas. Sin embargo, si procesa datos que se ven como "datos confidenciales de categoría especial", incluso si solo de vez en cuando, tendrá que registrar este procesamiento de datos. La definición del "procesamiento ocasional" es impreciso, pero está pensada para aplicarse a datos que se usan una vez o rara vez.
+Por ejemplo, el procesamiento de datos no personales estaría exento o necesita medidas reducidas. Sin embargo, si procesa datos que se ven como "datos confidenciales de categoría especial", incluso si solo en ocasiones, tendrá que registrar este procesamiento de datos. La definición de "procesamiento ocasional" es imprecisa, pero está pensada para aplicarse a los datos que se usan una vez o en raras ocasiones.
   
-También debe asegurarse de que los datos personales que recopila están protegidos. Esto significa que debe cifrarla y asegurarse de que el acceso a ella se controla mediante al menos una contraseña. Mantener los datos de los clientes en una hoja de cálculo en el escritorio sin ninguna protección no cumple con las expectativas RGPD. 
+También debe asegurarse de que los datos personales que recopile estén protegidos. Esto significa que debe cifrarlo y asegurarse de que el acceso a él se controla con al menos una contraseña. Mantener los datos de los clientes en una hoja de cálculo del escritorio sin protección no cumplirá las expectativas del RGPD. 
   
-### <a name="how-can-i-tell-if-our-company-website-is-gdpr-compliant"></a>¿Cómo puedo saber si el sitio web de su empresa es compatible con RGPD?
+### <a name="how-can-i-tell-if-our-company-website-is-gdpr-compliant"></a>¿Cómo puedo saber si nuestro sitio web de la empresa cumple con el RGPD?
 
-La primera pregunta que debe formularse es: ¿recopila datos personales en cualquier lugar del sitio? Por ejemplo, puede tener un formulario de contacto que le pida un nombre y una dirección de correo electrónico. Si desea enviar correos electrónicos de marketing, asegúrese de agregar una casilla "participar" que explique exactamente para qué usará los datos. Solo si el destinatario comprueba esa casilla puede usar sus datos personales con fines de marketing.
+La primera pregunta que se debe hacer es: ¿Recopila datos personales en cualquier parte del sitio? Por ejemplo, es posible que tenga un formulario de contacto que solicite un nombre y una dirección de correo electrónico. Si desea enviar correos electrónicos de marketing, asegúrese de agregar una casilla de verificación "participar" que explique exactamente para qué usará los datos. Solo si el destinatario comprueba esa casilla puede usar sus datos personales con fines de marketing.
   
-Compruebe también que la base de datos que almacena los datos está protegida. Su empresa de hospedaje web o proveedor de almacenamiento en la nube podrá informar sobre esto. Si usa Microsoft 365 para empresas, el almacenamiento de datos es compatible con RGPD. 
+Además, compruebe que la base de datos que almacena los datos está protegida. La empresa de hospedaje web o el proveedor de almacenamiento en la nube podrán informar sobre esto. Si usa Microsoft 365 para empresas, el almacenamiento de datos es conforme al RGPD. 
   
-### <a name="my-company-is-outside-europe-does-the-gdpr-really-affect-us"></a>Mi compañía está fuera de Europa. ¿El RGPD realmente afecta a nosotros?
+### <a name="my-company-is-outside-europe-does-the-gdpr-really-affect-us"></a>Mi empresa está fuera de Europa. ¿Realmente nos afecta el RGPD?
 
-El RGPD es un Reglamento que protege a los ciudadanos de la UE. Si su empresa ya trabaja con ciudadanos de la UE o usted espera en el futuro, se verá afectado. Esto se aplica tanto a los ciudadanos que viven en un estado de la UE como a los que viven en otro lugar.
+El RGPD es un reglamento que protege a los ciudadanos de la UE. Si tu empresa trabaja con los ciudadanos de la UE ahora o esperas que en el futuro, te verá afectado. Esto se aplica tanto a los ciudadanos que viven en un estado de la UE como a los que viven en otro lugar.
   
 Considere los siguientes ejemplos:
   
-- Una compañía estadounidense que contrata coches a ciudadanos de la UE tendrá que cumplir los requisitos de RGPD al recopilar y procesar los datos del cliente. La empresa tendrá que dar su consentimiento cuando tomen los datos del cliente y asegurarse de que los datos se almacenan de forma segura. También necesitarán asegurarse de que el cliente puede aplicar todos sus derechos de los titulares de los datos. 
+- Una empresa estadounidense que contrate automóviles a los ciudadanos de la UE deberá cumplir los requisitos del RGPD cuando recopile y procese los datos del cliente. La empresa tendrá que dar su consentimiento cuando tome los datos del cliente y asegurarse de que los datos se almacenan de forma segura. También tendrán que asegurarse de que el cliente puede aplicar todos sus derechos de interesado. 
     
-- Una compañía australiana vende productos en línea y sus usuarios establecen cuentas en línea. RGPD los derechos y el consentimiento del interesado se aplicarán a los ciudadanos de la UE que abran una cuenta. La empresa tendrá que asegurarse de que el cliente puede aplicar todos sus derechos de titular de datos. 
+- Una compañía australiana vende productos en línea y sus usuarios establecen cuentas en línea. Los derechos y el consentimiento del interesado del RGPD se aplicarán a los ciudadanos de la UE que abran una cuenta. La empresa tendrá que asegurarse de que el cliente puede aplicar todos sus derechos de interesado. 
     
-- Una benéfica internacional recopila datos sobre los donantes y los usa para enviar actualizaciones y solicitudes de donaciones. El RGPD dice: '... el tratamiento de datos personales para fines de comercialización directa puede considerarse como efectuados para un interés legítimo. Sin embargo, la responsabilidad está en la organización para demostrar que sus intereses reemplazan a los del titular de los datos. La empresa (o en este caso, la organización caritativa) siempre debe obtener el consentimiento con un conocimiento, explícito y de suscripción.
+- Una organización internacional recopila datos sobre los donadores y los usa para enviar actualizaciones y solicitudes de donaciones. El RGPD indica: '... el procesamiento de datos personales con fines de marketing directo puede considerarse realizado por un interés legítimo". Sin embargo, la responsabilidad es de la organización de demostrar que sus intereses reemplazan a los del interesado. La empresa (o, en este caso, la organización caritativa) siempre debe obtener el consentimiento de consentimiento informado, explícito y optativo.
     
-La RGPD también se aplica si los datos del cliente se mueven a través de los bordes. Si usa Cloud Computing para el almacenamiento de datos, tendrá que asegurarse de que el servicio es totalmente compatible con RGPD. Puede resultar complicado si el almacenamiento de datos se encuentra en ubicaciones que tienen un registro deficiente de protección de datos. Si usa Microsoft 365 para empresas, tenemos la documentación legal correcta en su ubicación para cubrir los requisitos de RGPD.
+El RGPD también se aplica si los datos de los clientes se mueven a través de las fronteras. Si usa informática en la nube para el almacenamiento de datos, deberá asegurarse de que el servicio cumple totalmente con el RGPD. Puede complicarse si el almacenamiento de datos se encuentra en ubicaciones que tienen un registro deficiente de protección de datos. Si usa Microsoft 365 para empresas, tenemos la documentación legal correcta para cubrir los requisitos del RGPD.
   
-### <a name="sure-i-collect-data-but-some-other-company-stores-it-does-that-get-me-off-the-hook"></a>¿Está seguro de que recopila datos, pero alguna otra compañía lo almacena. ¿Me consigue sacar el gancho?
+### <a name="sure-i-collect-data-but-some-other-company-stores-it-does-that-get-me-off-the-hook"></a>Sí, recopilo datos, pero alguna otra empresa los almacena. ¿Eso me saca del enlace?
 
-En RGPD, si recopila los datos que está afectado en cierta medida. RGPD tiene el concepto de procesador de datos y un controlador de datos: 
+Según el RGPD, si recopila datos, se verá afectado en cierta medida. El RGPD tiene el concepto de procesador de datos y controlador de datos: 
   
-- **Controlador de datos:** Una persona u organización (puede tener controladores conjuntos) que decida cómo, qué y por qué se recopilan los datos. Pueden almacenarla con los servidores en la nube de otra empresa. Por ejemplo, un sitio web que recopila datos de clientes es un controlador. 
+- **Controlador de datos:** Una persona u organización (puede tener controladores conjuntos) que decida cómo, qué y por qué se recopilan los datos. Pueden almacenarlo con los servidores en la nube de otra empresa. Por ejemplo, un sitio web que recopila datos de clientes es un controlador. 
     
-- **Procesador de datos:** Persona u organización que almacena datos en nombre de los controladores y los procesa cuando se solicitan. Por ejemplo, el almacenamiento de datos de Microsoft 365 apps for Business funciona como un procesador y es totalmente compatible con RGPD. 
+- **Procesador de datos:** Una persona u organización que almacena datos en nombre de los responsables y procesa estos datos cuando se solicitan. Por ejemplo, el almacenamiento de datos de Aplicaciones de Microsoft 365 para empresas actúa como procesador y es totalmente compatible con el RGPD. 
     
-    Una organización o un sistema pueden actuar como controlador y como procesador. Microsoft 365 para empresas puede funcionar como ambos y cumplir con el RGPD.
+    Una organización o sistema puede actuar como controlador y procesador. Microsoft 365 para empresas puede actuar como ambos y cumplir con el RGPD.
     
-### <a name="can-i-still-send-out-marketing-emails-to-my-old-customers"></a>¿Puedo seguir enviando correos electrónicos de marketing a mis clientes antiguos?
+### <a name="can-i-still-send-out-marketing-emails-to-my-old-customers"></a>¿Aún puedo enviar correos electrónicos de marketing a mis antiguos clientes?
 
-Debe asegurarse de que sus clientes, incluso los que ha tenido durante años, han consentido en usar sus datos para marketing. Es posible que haya capturado el consentimiento anteriormente, así como un registro para mostrarlo. Si es así, ya está listo para continuar con el marketing. Si no es así, tendrá que obtener permiso del cliente para seguir realizando marketing en ellos. Normalmente, esto implica enviar un correo electrónico que pide a los clientes que vayan a su sitio y seleccione una opción para aceptar la recepción de futuros correos electrónicos. 
+Debes asegurarte de que tus clientes, incluso los que has tenido durante años, han dado su consentimiento para usar sus datos para marketing. Es posible que haya capturado previamente el consentimiento, así como un registro para mostrarlo. Si es así, está todo listo para continuar con el marketing. Si no es así, debes obtener permiso del cliente para continuar marketing con ellos. Esto suele implicar enviar un correo electrónico solicitando a los clientes que vayan a su sitio y seleccionar una opción para dar su consentimiento para recibir futuros correos electrónicos. 
   
-### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>¿Tengo que preocuparse por el RGPD al reclutar nuevos empleados? ¿Qué ocurre con los empleados actuales?
+### <a name="do-i-have-to-worry-about-the-gdpr-when-i-recruit-new-employees-what-about-current-employees"></a>¿Tengo que preocuparme por el RGPD al contratar nuevos empleados? ¿Qué pasa con los empleados actuales?
 
-La RGPD no sólo afecta a los datos de los clientes; también se extiende a los datos de los empleados. Las nuevas contrataciones suelen encontrarse mediante plataformas de medios sociales como LinkedIn. Asegúrese de no almacenar ningún dato de contratación potencial sin su permiso expreso.
+El RGPD no solo afecta a los datos de los clientes; también se extiende a los datos de los empleados. Las nuevas contrataciones suelen estar ubicadas en plataformas de redes sociales como LinkedIn. Asegúrese de que no almacena ningún dato potencial de contratación sin su permiso rápido.
   
-En cuanto a los empleados existentes y los nuevos contratos de empleados, una firma al final de un contrato no asume necesariamente el consentimiento, especialmente cuando se usa una cláusula no afirmativa en un contrato. En este caso, debe capturar el consentimiento de una manera explícita asociada con la cláusula. Esto significa que depende de su contrato de empleado, pero puede usar "interés legítimo" en algunos casos y agregar un aviso de procesamiento de datos de empleado para asegurarse de que sus empleados saben lo que hará con sus datos.
+En cuanto a los contratos de empleados existentes y nuevos empleados, una firma al final de un contrato no necesariamente supone consentimiento, especialmente cuando se usa una cláusula no afirmativa en un contrato. En este caso, debe capturar el consentimiento de forma explícita asociada a la cláusula. Esto depende del contrato de los empleados, pero puede usar "intereses legítimos" en algunos casos y agregar un aviso de procesamiento de datos de empleados para asegurarse de que los empleados son conscientes de lo que hará con sus datos.
   
-## <a name="satisfy-privacy-concerns-using-microsoft-365-for-business"></a>Satisfacer las dudas sobre privacidad con Microsoft 365 para empresas
+## <a name="satisfy-privacy-concerns-using-microsoft-365-for-business"></a>Satisfacer los problemas de privacidad con Microsoft 365 para empresas
 
-Ser compatible con RGPD es asegurarse de que los datos personales están protegidos. RGPD tiene un concepto conocido como privacidad por diseño y predeterminado. Esto significa que la protección de datos debe estar "integrada" en un sistema y un producto para que la satisfacción de las preocupaciones de privacidad sea de segunda naturaleza. 
+Cumplir con el RGPD es asegurarse de que los datos personales están protegidos. El RGPD tiene un concepto conocido como Privacidad por diseño y predeterminado. Esto significa que la protección de datos debe "incluirse" en un sistema y un producto para que satisfacer los problemas de privacidad sea una segunda naturaleza. 
   
-Como sus equivalentes más grandes, una pequeña empresa necesita comodidad sin sacrificar la seguridad. Microsoft 365 para empresas está diseñado para empresas de menos de 300 empleados. Las empresas pequeñas pueden usar las herramientas basadas en la nube de Microsoft para mejorar la productividad empresarial. Con Microsoft 365 for Business, una pequeña empresa puede administrar correos electrónicos, documentación e incluso reuniones y eventos. También tiene medidas de seguridad integradas y administración de dispositivos, que son vitales para el cumplimiento del RGPD.
+Al igual que sus equivalentes más grandes, una pequeña empresa necesita comodidad sin sacrificar la seguridad. Microsoft 365 para empresas está diseñado para empresas de menos de 300 empleados. Las pequeñas empresas pueden usar herramientas basadas en la nube de Microsoft para mejorar la productividad empresarial. Con Microsoft 365 para empresas, una pequeña empresa puede administrar correos electrónicos, documentación e incluso reuniones y eventos. También tiene medidas de seguridad integradas y administración de dispositivos, que son fundamentales para el cumplimiento del RGPD.
   
 Microsoft 365 para empresas puede ayudarle con el proceso de RGPD de las siguientes maneras:
   
-- **Descubrir:** Un paso importante para RGPD el cumplimiento es saber qué datos tiene. 
+- **Descubra:** Un paso importante para el cumplimiento del RGPD es saber qué datos tiene. 
     
-- **Administrar:** Controlar el acceso a los datos y administrar su uso es una parte integral de RGPD. Microsoft 365 para empresas protege los datos profesionales en función de las directivas que desea aplicar a los dispositivos. La administración de dispositivos es vital en una edad en la que los empleados trabajan de forma remota. Microsoft 365 para empresas incluye características de administración de dispositivos que garantiza que los datos estén protegidos en todos los dispositivos. Por ejemplo, puede especificar que todos los dispositivos con Windows 10 en su empresa estén protegidos a través de Windows Defender. 
+- **Administrar:** Controlar el acceso a los datos y administrar su uso es una parte integral del RGPD. Microsoft 365 para empresas protege los datos profesionales en función de las directivas que desee aplicar a los dispositivos. La administración de dispositivos es fundamental en una edad en la que los empleados trabajan de forma remota. Microsoft 365 para empresas incluye características de administración de dispositivos que se asegura de que los datos estén protegidos en todos los dispositivos. Por ejemplo, puedes especificar que todos los dispositivos Windows 10 de tu empresa estén protegidos a través de Windows Defender. 
     
-- **Proteger:** Microsoft 365 para empresas está diseñado para la seguridad. Los controles de administración de dispositivos y protección de datos funcionan en la red de la empresa, incluidos los dispositivos remotos, para ayudar a proteger los datos. Microsoft 365 para empresas ofrece controles como la configuración de privacidad en las aplicaciones de Office y el cifrado de documentos. Con Microsoft 365 para empresas, puede realizar la supervisión de cumplimiento de RGPD para asegurarse de que tiene el nivel correcto de protección establecido. 
+- **Proteger:** Microsoft 365 para empresas está diseñado para la seguridad. Sus controles de protección de datos y administración de dispositivos funcionan en toda la red empresarial, incluidos los dispositivos remotos, para ayudar a mantener la seguridad de los datos. Microsoft 365 para empresas ofrece controles como la configuración de privacidad en las aplicaciones de Office y el cifrado de documentos. Con Microsoft 365 para empresas, puede realizar la supervisión del cumplimiento del RGPD para asegurarse de que tiene el nivel correcto de protección establecido. 
     
-- **Informe:** El RGPD pone un gran énfasis en los informes. Incluso una empresa con un solo empleado, si el negocio procesa grandes cantidades de datos, es necesario para documentar e informar sobre sus procedimientos. Microsoft 365 para empresas saca el dolor de los requisitos de informes para organizaciones más pequeñas. 
+- **Informe:** El RGPD hace mucho énfasis en los informes. Incluso una empresa con un solo empleado, si esa empresa procesa grandes cantidades de datos, es necesaria para documentar e informar sobre sus procedimientos. Microsoft 365 para empresas quita el dolor de cabeza de los requisitos de informes para organizaciones más pequeñas. 
     
-    Las herramientas como los registros de auditoría permiten realizar un seguimiento e informar sobre el movimiento de datos. Los informes incluyen la clasificación de los datos recopilados y almacenados, lo que se hace con los datos y las transferencias de los datos. 
+    Herramientas como los registros de auditoría te permiten realizar un seguimiento del movimiento de datos y notificarlo. Los informes incluyen la clasificación de los datos que se recopilan y almacenan, lo que se hace con los datos y las transferencias de los datos. 
     
-Los clientes, empleados y clientes están cada vez más conscientes de la importancia de la privacidad de los datos y ahora esperan que una empresa u organización respete esa privacidad. Microsoft 365 para empresas le proporciona las herramientas para lograr y mantener el cumplimiento de RGPD sin un Upheaval masivo en su empresa.
+Los clientes, empleados y clientes son cada vez más conscientes de la importancia de la privacidad de los datos y ahora esperan que una empresa u organización respeten esa privacidad. Microsoft 365 para empresas le proporciona las herramientas para lograr y mantener el cumplimiento del RGPD sin una gran actividad para su empresa.
   
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para prepararse para el RGPD, aquí le presentamos algunas sugerencias para seguir los pasos siguientes:
+Para prepararse para el RGPD, estas son algunas sugerencias para los pasos siguientes que debe realizar:
   
-- Evalúe el programa RGPD con [listas de comprobación de preparación de responsabilidad](https://docs.microsoft.com/microsoft-365/compliance/gdpr-arc).
+- Evalúe su programa de RGPD con [listas de comprobación de preparación de responsabilidad.](https://docs.microsoft.com/microsoft-365/compliance/gdpr-arc)
     
-- Investigue [Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/business) como solución para lograr y mantener el cumplimiento con RGPD. 
+- Investigue [Microsoft 365 para empresas](https://www.microsoft.com/microsoft-365/business) como solución para lograr y mantener el cumplimiento del RGPD. 
    
 
 > [!IMPORTANT]
 > Obtenga asesoramiento legal adecuado para su empresa u organización.
   
-## <a name="additional-resources"></a>Otros recursos
+## <a name="additional-resources"></a>Recursos adicionales
 
-[Información general del centro de confianza de Microsoft de RGPD](https://www.microsoft.com/trust-center/privacy/gdpr-overview
+[Información general del Centro de confianza de Microsoft sobre el RGPD](https://www.microsoft.com/trust-center/privacy/gdpr-overview
 )
   
-El blog oficial de Microsoft: [compromiso de Microsoft con RGPD](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)
+Blog oficial de Microsoft: [compromiso de Microsoft con el RGPD](https://blogs.microsoft.com/on-the-issues/2018/05/21/microsofts-commitment-to-gdpr-privacy-and-putting-customers-in-control-of-their-own-data/)
   
 Sitios de la Comisión Europea:
   
 - [Protección de datos](https://ec.europa.eu/info/law/law-topic/data-protection)
     
-- [2018 reforma de las reglas de protección de datos de la UE](https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules)
+- [Reforma de 2018 de las reglas de protección de datos de la UE](https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules)
     
 

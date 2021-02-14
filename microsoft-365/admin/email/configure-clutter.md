@@ -1,5 +1,5 @@
 ---
-title: Configurar otros correos para su organización
+title: Configurar Otros desorden para su organización
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
-description: 'Obtenga información sobre cómo habilitar o deshabilitar la característica otros correos para todos o algunos usuarios específicos de la organización mediante Exchange PowerShell. '
+description: 'Obtenga información sobre cómo habilitar o deshabilitar la característica Otros desordenes para todos los usuarios o para usuarios específicos de su organización, con Exchange PowerShell. '
 ms.openlocfilehash: 67267b0865dfcfd6c0ba66d59ce1d0d111d59325
 ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
@@ -27,82 +27,82 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 06/17/2020
 ms.locfileid: "44780282"
 ---
-# <a name="configure-clutter-for-your-organization"></a>Configurar otros correos para su organización
+# <a name="configure-clutter-for-your-organization"></a>Configurar Otros desorden para su organización
 
 > [!TIP]
-> La [bandeja de entrada prioritarios](../setup/configure-focused-inbox.md) va a reemplazar otros correos. Más información: [actualización de la bandeja de entrada prioritarios y nuestros planes de desorden](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
+> [La Bandeja de entrada Con](../setup/configure-focused-inbox.md) foco reemplazará a Otros desordenes. Más información: [Actualizar en la Bandeja de entrada Enfocados y nuestros planes para Desorden](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-Como administrador, es posible que tenga que administrar la característica otros correos de Microsoft 365. Para activar o desactivar la característica otros correos para los usuarios de su organización, debe usar Exchange PowerShell. (Las personas pueden activarla o desactivarla siguiendo estas instrucciones: [desactivar o deshacer desorden en Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c).
+Como administrador, puede que tenga que administrar la característica Otros desordenes en Microsoft 365. Para activar o desactivar la característica Otros desordenes para los usuarios de su organización, debe usar Exchange PowerShell. (Los usuarios pueden activarla o desactivarla con estas instrucciones: [Desactivar/activar Otros correos en Outlook.](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
   
-Consulte [PowerShell with Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) y [Conéctese a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415) para obtener más información sobre el uso de Exchange PowerShell. Debe tener una cuenta que tenga como mínimo el rol de administrador de servicios de Exchange y la capacidad de conectarse a Exchange Online con PowerShell. 
+Consulte Usar [PowerShell con Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) y conectarse a [Exchange Online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415) para obtener más información sobre el uso de Exchange PowerShell. Debe tener una cuenta que tenga al menos el rol de administrador del servicio de Exchange y la capacidad de conectarse a Exchange Online con PowerShell. 
   
-## <a name="turn-clutter-on-using-exchange-powershell"></a>Volver a activar otros correos con Exchange PowerShell
+## <a name="turn-clutter-on-using-exchange-powershell"></a>Activar Desorden con Exchange PowerShell
 
-Puede habilitar otros correos de forma manual para un buzón de correo mediante la ejecución del cmdlet [set-desorden](https://go.microsoft.com/fwlink/?LinkID=834446) . También puede ver la configuración de otros correos para los buzones de la organización mediante la ejecución del cmdlet [Get-desorden](https://go.microsoft.com/fwlink/?LinkID=834759) . 
+Puede habilitar Otros correos manualmente para un buzón ejecutando el cmdlet [Set-Clutter.](https://go.microsoft.com/fwlink/?LinkID=834446) También puede ver la configuración de Otros correos para los buzones de la organización ejecutando el cmdlet [Get-Clutter.](https://go.microsoft.com/fwlink/?LinkID=834759) 
   
-Active otros correos para un solo usuario denominado Naiara Padilla
+Activar Otros desorden para un solo usuario llamado Allie Bellew
     
 `Set-Clutter -Identity "Allie Bellew" -Enable $true`
 
 
-## <a name="turn-clutter-off-using-exchange-powershell"></a>Desactive el desorden con Exchange PowerShell
+## <a name="turn-clutter-off-using-exchange-powershell"></a>Desactivar Otros servicios con Exchange PowerShell
 
-Puede deshabilitar el desorden manualmente para un buzón mediante la ejecución del cmdlet [set-desorden](https://go.microsoft.com/fwlink/?LinkID=834446) . También puede ver la configuración de **otros correos** para los buzones de la organización mediante la ejecución del cmdlet [Get-desorden](https://go.microsoft.com/fwlink/?LinkID=834759) . 
+Puede deshabilitar Otros correos manualmente para un buzón ejecutando el cmdlet [Set-Clutter.](https://go.microsoft.com/fwlink/?LinkID=834446) También puede ver la **configuración de Otros** correos para los buzones de la organización ejecutando el cmdlet [Get-Clutter.](https://go.microsoft.com/fwlink/?LinkID=834759) 
   
-Desactive otros correos para un solo usuario denominado Naiara Padilla:
+Desactivar Otros desorden para un solo usuario llamado Allie Bellew:
     
 `Set-Clutter -Identity "Allie Bellew" -Enable $false`
 
-Si usa PowerShell para crear de forma masiva los usuarios, deberá ejecutar [set-desorden](https://go.microsoft.com/fwlink/?LinkID=834446) en el buzón de cada usuario para administrar otros correos. 
+Si usa PowerShell para crear usuarios en masa, deberá ejecutar [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) en el buzón de cada usuario para administrar Otros correos. 
   
-## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>¿Cuándo se muestran los usuarios en Outlook en la web al cambiar el desorden?
+## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>¿Cuándo se mostrará el modificador Despegar/Desactivar desorden a los usuarios de Outlook en la Web?
 <a name="bkmk_onoff"> </a>
 
-Como administrador, puede volver a habilitar otros correos mediante Exchange PowerShell. Una vez hecho esto, se desactivará la bandeja de entrada prioritarios y el desorden volverá a estar activo. 
+Como administrador, puede volver a habilitar Otros desorden con Exchange PowerShell. Una vez hecho esto, la Bandeja de entrada Foco se desactivará y Otros desorden volverá a estar activo. 
   
- **Si está usando Outlook en la web con una suscripción de Microsoft 365 empresa Premium:**
+ **Si usa Outlook en la Web con una suscripción a Microsoft 365 Empresa Premium:**
   
-- Si el usuario tiene correos actualmente habilitados: 
+- Si el usuario actualmente tiene Otros desorden habilitados: 
     
-  - La configuración de otros correos aparece
+  - Aparece la configuración de otros desordenes
     
-- Si el usuario tiene la bandeja de entrada prioritarios habilitada actualmente: 
+- Si el usuario tiene habilitada la Bandeja de entrada Centrada actualmente: 
     
-  - La configuración de otros correos no aparecerá
+  - La configuración de otros desordenes no aparecerá
     
-- Si no hay otros correos o la bandeja de entrada prioritarios habilitada: 
+- Si no está habilitada la Bandeja de entrada Desorden o Centrado: 
     
-  - Los correos y la bandeja de entrada prioritarios aparecen como opciones en la configuración de correo del usuario.
+  - Tanto Desorden como Bandeja de entrada Centrado aparecen como opciones en la configuración de correo del usuario
     
- **Si está usando Outlook.com:**
+ **Si usas Outlook.com:**
   
-- Si el usuario tiene correos actualmente habilitados: 
+- Si el usuario actualmente tiene Otros desorden habilitado: 
     
-  - La configuración de otros correos aparece
+  - Aparece la configuración de otros desordenes
     
-- Si el usuario tiene la bandeja de entrada prioritarios habilitada actualmente: 
+- Si el usuario tiene habilitada la Bandeja de entrada Enfocado actualmente: 
     
-  - La configuración de otros correos no aparecerá
+  - La configuración de otros desordenes no aparecerá
     
-- Si no hay otros correos o la bandeja de entrada prioritarios habilitada: 
+- Si no está habilitada la Bandeja de entrada Desorden o Centrado: 
     
-  - Los correos y la bandeja de entrada prioritarios aparecen como opciones en la configuración de correo del usuario.
+  - Tanto Desorden como Bandeja de entrada Centrado aparecen como opciones en la configuración de correo del usuario
     
-- Si el usuario habilitó la bandeja de entrada prioritarios en algún punto del pasado:
+- Si el usuario habilitó la Bandeja de entrada Enfocado en algún momento del pasado:
     
-  - La configuración de otros correos nunca aparecerá
+  - La configuración de otros desordenes nunca aparecerá
     
-    Otra 
+    De lo contrario, 
     
-  - Aparecerá la configuración de otros correos
+  - Aparecerá la configuración de otros desordenes
     
 ## <a name="related-articles"></a>Artículos relacionados
 <a name="bkmk_onoff"> </a>
 
-[Usar otros correos para ordenar los mensajes de prioridad baja en Outlook](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
+[Usar Otros correos para ordenar mensajes de prioridad baja en Outlook](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
     
-[Usar otros correos para ordenar los mensajes de prioridad baja en OWA](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce)
+[Usar Otros correos para ordenar mensajes de prioridad baja en OWA](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce)
     
-[Desactivar otros correos en Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
+[Desactivar Otros correos en Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
     
 

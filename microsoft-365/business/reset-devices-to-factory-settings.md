@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: Obtenga información sobre cómo usar Microsoft 365 para empresas para restablecer en fábrica los dispositivos Windows 10 que administre y revertirlos a su configuración original en el momento de la compra.
+description: Aprende a usar Microsoft 365 para empresas para restablecer de fábrica los dispositivos Windows 10 que administras, reviertándolos a su configuración original a la compra.
 ms.openlocfilehash: 6b82f502f8fdcbbd2338b2a0e2ad69d230a693cb
 ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
@@ -33,15 +33,15 @@ ms.locfileid: "44470815"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Restablecer dispositivos Windows 10 a la configuración de fábrica
 
-Este artículo se aplica a Microsoft 365 empresa Premium.
+Este artículo se aplica a Microsoft 365 Empresa Premium.
 
-Un restablecimiento de fábrica revierte un dispositivo a la configuración original que tenía cuando se compró. Se quitan todas las aplicaciones y los datos del dispositivo que se han instalado después de la compra. Puede usar Microsoft 365 para la empresa para restablecer en fábrica los dispositivos Windows 10 que administra.
+Un restablecimiento de fábrica revierte un dispositivo a la configuración original que tenía cuando se compró. Se quitan todas las aplicaciones y los datos del dispositivo que se han instalado después de la compra. Puedes usar Microsoft 365 para empresas para restablecer de fábrica los dispositivos windows 10 que administras.
   
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     
-2. En el panel de navegación izquierdo, elija **dispositivos** \> **administrar**.
+2. En el panel de navegación izquierdo, elija **Administrar** \> **dispositivos.**
 
-3. En la página **administrar** , marque la casilla de verificación situada junto al dispositivo del que desea quitar los datos y, a continuación, en la lista desplegable **administrar** , seleccione **restablecimiento de fábrica**.
+3. En la **página** Administrar, activa la casilla junto al dispositivo del  que quieres quitar datos y, a continuación, en la lista desplegable Administrar, elige **Restablecimiento de fábrica.**
     
 4. En el panel **¿Está seguro de que quiere realizar un restablecimiento de fábrica en los siguientes dispositivos?**, elija **Confirmar** \> **Cerrar**.
     

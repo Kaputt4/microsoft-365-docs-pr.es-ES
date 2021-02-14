@@ -30,23 +30,23 @@ ms.locfileid: "44780018"
 ---
 # <a name="quick-help-contacts"></a>Ayuda rápida: Contactos
 
-Si necesita contactos compartidos a los que pueden acceder todos los usuarios de su organización, créelos en el centro de administración de Microsoft 365. Los contactos que cree aquí serán visibles para usted y para los usuarios como parte de la lista global de direcciones.
+Si necesita contactos compartidos a los que puedan acceder todos los usuarios de su organización, cándalos en el Centro de administración de Microsoft 365. Los contactos que cree aquí serán visibles para usted y para los usuarios como parte de la lista global de direcciones.
   
 ## <a name="how-do-i-add-contacts-in-the-admin-center"></a>¿Cómo se agregan contactos en el Centro de administración?
 
-1. En el centro de administración, vaya a **Users** la \> página <a href="https://go.microsoft.com/fwlink/p/?linkid=2053302" target="_blank">contactos</a> de usuarios.
+1. En el centro de administración, vaya a la página **Contactos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053302" target="_blank">de</a> usuarios.
 
-2. En la página **contactos** , seleccione **Agregar un contacto**.
+2. En la **página Contactos,** seleccione **Agregar un contacto.**
   
-3. En la página **nuevo contacto** , rellene los detalles y seleccione **Agregar** para crear un contacto.
+3. En la **página Nuevo contacto,** rellene los detalles y seleccione **Agregar** para crear un contacto.
   
 ## <a name="how-are-these-contacts-different-from-my-contacts"></a>¿En qué se diferencian estos contactos de Mis contactos?
 
-Mis contactos son contactos que usted crea para usted y que los usuarios crean para sí mismos, pero que otros no pueden ver. Los contactos que se crean en el Centro de administración son contactos para la organización, y todos los usuarios pueden verlos, además de los suyos propios. Para obtener más información, consulte [People Overview-Outlook Web App](https://support.microsoft.com/office/5fe173cf-e620-4f62-9bf6-da5041f651bf).
+Mis contactos son contactos que usted crea para usted mismo y los usuarios crean por sí mismos, pero otros no pueden ver. Los contactos que se crean en el Centro de administración son contactos para la organización, y todos los usuarios pueden verlos, además de los suyos propios. Para obtener más información, vea [Información general sobre personas : Outlook Web App](https://support.microsoft.com/office/5fe173cf-e620-4f62-9bf6-da5041f651bf).
   
 ## <a name="how-does-everyone-get-to-the-contacts-i-created-in-the-admin-center"></a>¿Cómo acceden los usuarios a los contactos que he creado en el Centro de administración?
 
- Pueden ir a **contactos** en Microsoft 365, expanda **directorio** y seleccionar **todos los contactos**. Desde ahí, pueden ver todos los contactos y su información.
+ Pueden ir a Contactos **en** Microsoft 365, expandir **Directorio** y seleccionar **Todos los contactos.** Desde ahí, pueden ver todos los contactos y su información.
   
 ## <a name="can-anyone-create-and-edit-these-organizational-contacts"></a>¿Puede cualquier usuario crear y editar estos contactos de la organización?
 
@@ -54,7 +54,7 @@ No. Solo los administradores **globales** y de **Exchange** pueden crear, editar
   
 ## <a name="can-i-use-this-to-manage-my-business-clients"></a>¿Puedo usar esto para administrar mis clientes empresariales?
 
-Puede usar los contactos de Microsoft 365 sin embargo, pero hay limitaciones. Obtenga información sobre [otros modos de administrar los contactos](ways-to-manage-contacts.md).
+Puede usar los contactos de Microsoft 365 como quiera, pero existen limitaciones. Obtenga información sobre [otros modos de administrar los contactos](ways-to-manage-contacts.md).
   
 ## <a name="how-do-i-bulk-import-organizational-contacts"></a>¿Cómo importar en bloque los contactos de la organización?
 

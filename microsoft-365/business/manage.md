@@ -1,5 +1,5 @@
 ---
-title: Administración de Microsoft 365 para empresas
+title: Administrar Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 27ff1678-865a-4707-8145-e1155aa815d6
-description: Aprenda a administrar Microsoft 365 para tareas de administración relacionadas con la empresa, dispositivos móviles, equipos con Windows 10 PC y muchas tareas de este tipo.
+description: Aprende a administrar tareas de administración relacionadas con Microsoft 365 para empresas, dispositivos móviles, equipos con Windows 10 y muchas de estas tareas.
 ms.openlocfilehash: 0534356f4ffc4a05504121d96edbc381e00632e9
 ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
@@ -29,11 +29,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/27/2020
 ms.locfileid: "44403046"
 ---
-# <a name="manage-microsoft-365-for-business"></a>Administración de Microsoft 365 para empresas
+# <a name="manage-microsoft-365-for-business"></a>Administrar Microsoft 365 para empresas
 
 ## <a name="general-microsoft-365-for-business-admin-tasks"></a>Tareas generales de administración de Microsoft 365 para empresas
 
-La mayor parte del [contenido administrativo](https://docs.microsoft.com/office365/admin/admin-home) de Office 365 también se aplica a Microsoft 365 para empresas.
+La mayor parte [del contenido de](https://docs.microsoft.com/office365/admin/admin-home) administración de Office 365 también se aplica a Microsoft 365 para empresas.
 
 - [Agregar más usuarios a Microsoft 365 para empresas](add-users-m365b.md)
     
@@ -41,33 +41,33 @@ La mayor parte del [contenido administrativo](https://docs.microsoft.com/office3
     
 - [Características de seguridad de Microsoft 365 para empresas](security-features.md)
     
-- [Cómo se asignan las características de protección de Microsoft 365 para la configuración de Intune a la configuración de Intune](map-protection-features-to-intune-settings.md)
+- [¿Cómo se asignan las características de protección de Microsoft 365 para empresas a la configuración de Intune?](map-protection-features-to-intune-settings.md)
     
 Consulte las siguientes secciones sobre cómo usar Microsoft 365 para empresas para proteger los datos de su organización en equipos y dispositivos móviles.
   
 ## <a name="manage-mobile-devices"></a>Administrar dispositivos móviles
 
-- [Configurar dispositivos móviles para los usuarios de Microsoft 365 para empresas](set-up-mobile-devices.md)
+- [Configurar dispositivos móviles para usuarios de Microsoft 365 para empresas](set-up-mobile-devices.md)
     
 - [Establecer la configuración de protección de aplicaciones para dispositivos Android o iOS](app-protection-settings-for-android-and-ios.md)
     
-    Para asegurarse de que esto funciona, consulte [validar la configuración de protección de aplicaciones en un dispositivo Android o iOS](validate-settings-on-android-or-ios.md). 
+    Para asegurarse de que ha funcionado, vea Validar la configuración de protección [de aplicaciones en un dispositivo Android o iOS.](validate-settings-on-android-or-ios.md) 
     
 - [Eliminar datos de la empresa de dispositivos](remove-company-data.md)
     
 ## <a name="manage-windows-10-pcs"></a>Administrar los equipos de Windows 10
 
-- [Configurar dispositivos Windows para los usuarios de Microsoft 365 para empresas](set-up-windows-devices.md)
+- [Configurar dispositivos Windows para usuarios de Microsoft 365 para empresas](set-up-windows-devices.md)
 
-    Lea la [preparación para la implementación del cliente de Office por parte de Microsoft 365 para empresas](prepare-for-office-client-deployment.md) antes de instalar automáticamente Office. 
+    Lea [Prepare for Office client deployment by Microsoft 365 for business](prepare-for-office-client-deployment.md) antes de instalar office automáticamente. 
     
 - [Establecer la configuración de protección de dispositivos para dispositivos con Windows 10](protection-settings-for-windows-10-pcs.md)
     
-    Para asegurarse de que funciona, consulte [validar la configuración de protección de dispositivos en dispositivos Windows 10](validate-settings-on-windows-10-pcs.md). 
+    Para asegurarte de que esto ha funcionado, consulta [Validar la configuración de protección de dispositivos en dispositivos Windows 10.](validate-settings-on-windows-10-pcs.md) 
     
 - [Establecer la configuración de protección de aplicaciones para dispositivos Windows 10](protection-settings-for-windows-10-devices.md)
     
-    Para asegurarse de que esto funciona, consulte [validar la configuración de protección de aplicaciones en equipos PC con Windows 10](validate-protection-settings-on-windows-10-pcs.md). 
+    Para asegurarte de que esto ha funcionado, consulta [Validar la configuración de protección de aplicaciones en equipos con Windows 10.](validate-protection-settings-on-windows-10-pcs.md) 
     
 - [Eliminar datos de la empresa de dispositivos](remove-company-data.md)
     
@@ -75,7 +75,7 @@ Consulte las siguientes secciones sobre cómo usar Microsoft 365 para empresas p
     
 ### <a name="use-autopilot-to-deploy-windows-10-devices"></a>Usar AutoPilot para implementar dispositivos con Windows 10
 
-En los siguientes temas se describe cómo se puede usar Windows AutoPilot en Microsoft 365 para la empresa para preconfigurar dispositivos Windows 10.
+En los siguientes temas se describe cómo usar Windows AutoPilot en Microsoft 365 para empresas para configurar previamente dispositivos Windows 10.
   
 - [Usar la guía paso a paso para agregar perfiles y dispositivos de AutoPilot](add-autopilot-devices-and-profile.md)
     
@@ -89,14 +89,14 @@ En los siguientes temas se describe cómo se puede usar Windows AutoPilot en Mic
     
 - [Información sobre la configuración de los perfiles de AutoPilot](autopilot-profile-settings.md)
     
-## <a name="set-up-and-prerequisite-information"></a>Información de configuración y requisitos previos
+## <a name="set-up-and-prerequisite-information"></a>Configuración y información de requisitos previos
 
 - [Requisitos previos para proteger datos en dispositivos con Microsoft 365 para empresas](pre-requisites-for-data-protection.md)
     
-- [Configuración de Microsoft 365 para empresas mediante el Asistente para la instalación](set-up.md)
+- [Configurar Microsoft 365 para empresas mediante el asistente de configuración](set-up.md)
     
 - [Migrar a Microsoft 365 para empresas](migrate-to-microsoft-365-business.md)
     
-- [Habilitar los dispositivos Windows 10 Unidos a un dominio para que los administre Microsoft 365 para la empresa](manage-windows-devices.md)
+- [Habilitar dispositivos Windows 10 unidos a un dominio para que sean administrados por Microsoft 365 para empresas](manage-windows-devices.md)
     
 - [Características de seguridad adicionales](security-features.md#additional-security-features)

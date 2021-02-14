@@ -38,9 +38,9 @@ Puede que tenga que eliminar un [usuario](../add-users/add-users.md) de su organ
   
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 
-2. Seleccione un usuario y, a continuación, en la lista de usuarios seleccione **más opciones** (**...**) y, a continuación, elija **eliminar usuario**.
+2. Seleccione un usuario y, a continuación, encima de la lista de usuarios, seleccione **Más opciones** (**...**) y, a continuación, elija **Eliminar usuario**.
   
-3. En el panel de confirmación de eliminación, seleccione **eliminar usuario**. <br/>[Leer el artículo completo.](../add-users/delete-a-user.md)
+3. En el panel de confirmación de eliminación, seleccione **Eliminar usuario.** <br/>[Lea el artículo completo.](../add-users/delete-a-user.md)
   
 ::: moniker-end
 
@@ -48,9 +48,9 @@ Puede que tenga que eliminar un [usuario](../add-users/add-users.md) de su organ
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.  
 
-2. Seleccione un usuario y, a continuación, en la lista de usuarios elija **más** > **eliminar un usuario**.
+2. Seleccione un usuario y, a continuación, encima de la lista de usuarios elija **Más** > **eliminar un usuario.**
   
-3. En el panel de confirmación de eliminación, seleccione **eliminar usuario**. <br/>[Leer el artículo completo.](../add-users/delete-a-user.md)
+3. En el panel de confirmación de eliminación, seleccione **Eliminar usuario.** <br/>[Lea el artículo completo.](../add-users/delete-a-user.md)
 
 ::: moniker-end
 
@@ -58,24 +58,24 @@ Puede que tenga que eliminar un [usuario](../add-users/add-users.md) de su organ
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>. 
 
-2. Seleccione un usuario y, a continuación, en la lista de usuarios elija **más** > **eliminar un usuario**.
+2. Seleccione un usuario y, a continuación, encima de la lista de usuarios elija **Más** > **eliminar un usuario.**
   
-3. En el panel de confirmación de eliminación, seleccione **eliminar usuario**. <br/>[Leer el artículo completo.](../add-users/delete-a-user.md)
+3. En el panel de confirmación de eliminación, seleccione **Eliminar usuario.** <br/>[Lea el artículo completo.](../add-users/delete-a-user.md)
 
 ::: moniker-end
 
   
 ## <a name="restore-a-user"></a>Restaurar un usuario
 
-Puede restaurar los usuarios buscando **eliminados** en la Página principal y eligiendo **usuarios eliminados** en los resultados, o yendo a la página **usuarios eliminados** de la navegación izquierda y eligiendo al usuario que desea restaurar. [Lea el artículo completo](../add-users/delete-a-user.md).
+Puede restaurar usuarios buscando eliminados en la  página principal y eligiendo Usuarios  eliminados en los resultados, o yendo a la página Usuarios eliminados desde el panel de navegación izquierdo y eligiendo el usuario que desea restaurar.  [Lea el artículo completo](../add-users/delete-a-user.md).
   
 ## <a name="what-are-deleted-users"></a>¿Qué son los usuarios eliminados?
 
 Un [usuario](../add-users/add-users.md) eliminado es aquella cuenta profesional o educativa que se elimina de su organización. 
   
-## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>¿La eliminación de un usuario libera su licencia de Microsoft 365?
+## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>¿Elimina un usuario la licencia de Microsoft 365?
 
-Sí, la eliminación del usuario libera la licencia de Microsoft 365 asignada a ese usuario. A continuación, puede asignar dicha licencia a otro usuario. [Lea el artículo completo](../../commerce/licenses/remove-licenses-from-subscription.md).
+Sí, al eliminar el usuario se libera la licencia de Microsoft 365 asignada a ese usuario. A continuación, puede asignar dicha licencia a otro usuario. [Lea el artículo completo](../../commerce/licenses/remove-licenses-from-subscription.md).
   
 ## <a name="i-had-a-deleted-user-listed-in-deleted-users-and-then-it-disappeared-what-happened"></a>Tenía a un usuario eliminado en la lista de Usuarios eliminados y ha desaparecido. ¿Qué ha ocurrido?
 
@@ -91,6 +91,6 @@ Al eliminar un usuario, no pierde todos sus datos. Los datos del usuario se alma
   
 ## <a name="how-do-i-restore-a-user"></a>¿Cómo puedo restaurar a un usuario?
 
-Puede restaurar los usuarios buscando **eliminados** en la Página principal y eligiendo **usuarios eliminados** en los resultados, o yendo a la página **usuarios eliminados** de la navegación izquierda y eligiendo al usuario que desea restaurar. [Lea artículo completo](../add-users/delete-a-user.md).
+Puede restaurar usuarios buscando eliminados en la  página principal y eligiendo Usuarios  eliminados en los resultados, o yendo a la página Usuarios eliminados desde el panel de navegación izquierdo y eligiendo el usuario que desea restaurar.  [Lea artículo completo](../add-users/delete-a-user.md).
   
 

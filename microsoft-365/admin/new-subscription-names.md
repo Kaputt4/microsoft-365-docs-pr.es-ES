@@ -26,10 +26,10 @@ ms.locfileid: "44399199"
 
 Cambiamos algunos de nuestros nombres de suscripción de Office 365 y Microsoft 365. No necesita hacer nada. Sus servicios, aplicaciones y características serán los mismos, al igual que el precio de su suscripción. El nombre de la suscripción se actualizará automáticamente en el Centro de administración de Microsoft 365 y los extractos de facturación se actualizarán a partir del 21 de abril de 2020.
 
-- **Office 365 Business Essentials** es ahora **Microsoft 365 Business Basic**
-- **Office 365 empresa Premium** ahora es el **estándar de empresa de Microsoft 365**
-- **Microsoft 365 Business** es ahora **Microsoft 365 empresa Premium**
-- **Office 365 empresa** ahora es **Microsoft 365 aplicaciones para empresas**
-- **Office 365 ProPlus** ahora es **Microsoft 365 apps for Enterprise**
+- **Office 365 Empresa Essentials** es **ahora Microsoft 365 Empresa Básico**
+- **Office 365 Empresa Premium** es **ahora Microsoft 365 Empresa Estándar**
+- **Microsoft 365 Empresa** ahora **es Microsoft 365 Empresa Premium**
+- **Office 365 Empresa** es ahora **Aplicaciones de Microsoft 365 para empresas**
+- **Office 365 ProPlus** es ahora Aplicaciones de **Microsoft 365 para empresas**
 
 [¡Aprende más!](https://go.microsoft.com/fwlink/?linkid=2120533)

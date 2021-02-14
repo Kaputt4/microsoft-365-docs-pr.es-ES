@@ -27,7 +27,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
-description: Obtenga información sobre cómo solucionar problemas de errores que puede ver al trabajar con archivos de dispositivos de AutoPilot en Microsoft 365 empresa Premium.
+description: Obtenga información sobre cómo solucionar errores que puede ver mientras trabaja con archivos de dispositivos de AutoPilot en Microsoft 365 Empresa Premium.
 ms.openlocfilehash: bec5126696ee322db42e4b7c5cd8e0df485ab2c9
 ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
@@ -39,13 +39,13 @@ ms.locfileid: "44403418"
 
 ## <a name="device-file-error-messages"></a>Mensajes de error de archivo de dispositivo
 
-Aquí encontrará información sobre algunos de los errores que puede ver al trabajar con archivos de dispositivos de AutoPilot en Microsoft 365 empresa Premium. 
+Aquí tienes información sobre algunos de los errores que podrías ver al trabajar con archivos de dispositivos de AutoPilot en Microsoft 365 Empresa Premium. 
   
-|**Código de error**|**Corregir para intentar**|
+|**Código de error**|**Corrección que se debe intentar**|
 |:-----|:-----|
-|Cuerpo de la solicitud no válido  <br/> |Este error se debe producir rara vez, si ve este error, vuelva a intentar la operación.  <br/> |
-|El valor de hash de hardware para un dispositivo no es correcto.  <br/> |Si ve este error, significa que el valor que proporcionó en el archivo CSV para el hash de hardware de un dispositivo no es correcto. En primer lugar, compruebe que el valor se escribió correctamente. Si cree que el valor es correcto, pero el error sigue ocurriendo, pida ayuda al proveedor de hardware.  <br/> |
-|Dispositivo asignado a otro espacio empresarial  <br/> |Si ve este error, significa que el valor que proporcionó en el archivo CSV para el número de serie o la clave de producto de uno o más dispositivos no es correcto. En primer lugar, compruebe que el valor se escribió correctamente. Si cree que el valor es correcto, pero el error sigue ocurriendo, pida ayuda al proveedor de hardware.  <br/> |
-|El archivo CSV contiene un número de serie o clave de producto no válido  <br/> |Si ve este error, significa que el dispositivo que está intentando registrar ya está registrado en otra organización. Para solucionar este error, pida ayuda al proveedor de hardware.  <br/> |
-|Este dispositivo no es compatible con el programa de instalación mediante el uso de piloto automático  <br/> | Este error significa que el dispositivo no cumple con los requisitos de la implementación de AutoPilot. Los dispositivos tienen que cumplir estos requisitos:  <br/>  Windows 10, versión 1703 o posteriores.  <br/>  Nuevos dispositivos que no han tenido acceso a la experiencia rápida de Windows.  <br/> |
-|No se encontró el dispositivo  <br/> |Este error significa que uno o más dispositivos del archivo CSV no están registrados en la organización. Para solucionarlo, pida ayuda al proveedor de hardware.  <br/> |
+|Cuerpo de la solicitud no válido  <br/> |Este error debería producirse rara vez, si ve este error, vuelva a intentar la operación.  <br/> |
+|El valor hash de hardware para un dispositivo no es correcto.  <br/> |Si ves este error, significa que el valor que proporcionaste en el archivo CSV para el hash de hardware de un dispositivo no es correcto. En primer lugar, compruebe que el valor se ha especificado correctamente. Si piensa que el valor es correcto, pero este error sigue ocurriendo, pida ayuda a su proveedor de hardware.  <br/> |
+|Dispositivo asignado a otro inquilino  <br/> |Si ve este error, significa que el valor que proporcionó en el archivo CSV para el número de serie o la clave de producto de uno o más dispositivos no es correcto. En primer lugar, compruebe que el valor se ha especificado correctamente. Si piensa que el valor es correcto, pero este error sigue ocurriendo, pida ayuda a su proveedor de hardware.  <br/> |
+|El archivo CSV contiene un número de serie o una clave de producto no válidos  <br/> |Si ve este error, significa que el dispositivo que está intentando registrar ya está registrado por otra organización. Para solucionar este error, pida ayuda a su proveedor de hardware.  <br/> |
+|Este dispositivo no es compatible con la configuración mediante AutoPilot  <br/> | Este error significa que el dispositivo no cumple los requisitos de implementación de AutoPilot. Los dispositivos tienen que cumplir estos requisitos:  <br/>  Windows 10, versión 1703 o posteriores.  <br/>  Nuevos dispositivos que no han pasado por la configuración de Windows.  <br/> |
+|No se encontró el dispositivo  <br/> |Este error significa que uno o más dispositivos del archivo CSV no están registrados en la organización. Para solucionar este problema, pida ayuda a su proveedor de hardware.  <br/> |
