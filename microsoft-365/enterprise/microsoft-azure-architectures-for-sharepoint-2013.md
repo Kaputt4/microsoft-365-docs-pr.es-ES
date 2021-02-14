@@ -15,7 +15,7 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-apr2020
 ms.assetid: 98fc1006-9399-4ff0-a216-c7c05820d822
-description: Obtenga información sobre los tipos de soluciones de SharePoint 2013 que se pueden hospedar en máquinas virtuales de Microsoft Azure y cómo configurar Azure para hospedar uno.
+description: Obtenga información sobre qué tipos de soluciones de SharePoint 2013 se pueden hospedar en máquinas virtuales de Microsoft Azure y cómo configurar Azure para hospedar uno.
 ms.openlocfilehash: 37d7eb2a746e30ad560949a933783beb6b971a08
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "46696623"
 ---
 # <a name="microsoft-azure-architectures-for-sharepoint-2013"></a>Arquitecturas de Microsoft Azure para SharePoint 2013
 
-Azure es un buen entorno para hospedar una solución de SharePoint Server 2013. En la mayoría de los casos, recomendamos Microsoft 365, pero una granja de servidores de SharePoint Server hospedada en Azure puede ser una buena opción para soluciones específicas. En este artículo se describe cómo diseñar soluciones de SharePoint para que sean una buena opción en la plataforma de Azure. Se usan como ejemplo las dos soluciones específicas siguientes:
+Azure es un buen entorno para hospedar una solución de SharePoint Server 2013. En la mayoría de los casos, se recomienda Microsoft 365, pero una granja de servidores de SharePoint Server hospedada en Azure puede ser una buena opción para soluciones específicas. En este artículo se describe cómo diseñar soluciones de SharePoint para que se ajusten a la plataforma de Azure. Se usan como ejemplo las dos soluciones específicas siguientes:
   
 - [Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md)
     
@@ -39,14 +39,14 @@ Los servicios de infraestructura de Azure son una opción atractiva para hospeda
 |:-----|:-----|
 |Entornos de desarrollo y pruebas  <br/> |Es fácil crear y administrar estos entornos.  <br/> |
 |Recuperación ante desastres de granjas de SharePoint locales para Azure  <br/> |**Centro de datos secundario y hospedado** Use Azure en lugar de invertir en un centro de datos secundario de una región diferente. <br/> **Entornos de recuperación ante desastres de coste más bajo** Mantenga y pague menos recursos que un entorno local de recuperación ante desastres. El número de recursos depende del entorno de recuperación ante desastres que elija: espera pasiva, estado de espera semiactiva o espera activa.<br/> **Plataforma más elástica** En caso de desastre, escale fácil y horizontalmente la granja de SharePoint de recuperación para satisfacer los requisitos de carga. Reduzca horizontalmente cuando ya no necesite los recursos.<br/> Vea [Recuperación ante desastres de SharePoint Server 2013 en Microsoft Azure](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md).  <br/> |
-|Sitios orientados a Internet que usan características y escala no disponibles en Microsoft 365  <br/> |**Centre sus esfuerzos** Concéntrese en crear el mejor sitio posible y no en tener que crear la infraestructura necesaria. <br/> **Aproveche la flexibilidad de Azure** Asigne el tamaño a la granja según la demanda mediante la adición de servidores nuevos y pague únicamente los recursos que necesita. No se admite la asignación dinámica de máquinas (escala automática).<br/> **Use Azure Active Directory (AD)** Aproveche Azure AD para cuentas de clientes. <br/> **Agregar la funcionalidad de SharePoint no disponible en Microsoft 365** Agregar informes detallados y Web Analytics. <br/> Vea [Sitios de Internet en Microsoft Azure con SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
-|Granjas de aplicaciones para admitir entornos locales de Microsoft 365 o  <br/> |**Cree, pruebe y hospede a aplicaciones** en Azure para admitir entornos locales y en la nube. <br/> **Hospede a este rol** en Azure en lugar de comprar hardware nuevo para entornos locales. <br/> |
+|Los sitios orientados a Internet que usan características y escala no están disponibles en Microsoft 365  <br/> |**Centre sus esfuerzos** Concéntrese en crear el mejor sitio posible y no en tener que crear la infraestructura necesaria. <br/> **Aproveche la flexibilidad de Azure** Asigne el tamaño a la granja según la demanda mediante la adición de servidores nuevos y pague únicamente los recursos que necesita. No se admite la asignación dinámica de máquinas (escala automática).<br/> **Use Azure Active Directory (AD)** Aproveche Azure AD para cuentas de clientes. <br/> **Agregar funcionalidad de SharePoint no disponible en Microsoft 365** Agregar informes profundos y análisis web. <br/> Vea [Sitios de Internet en Microsoft Azure con SharePoint Server 2013](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md).  <br/> |
+|Granjas de aplicaciones para admitir Entornos locales o de Microsoft 365  <br/> |**Cree, pruebe y hospede a aplicaciones** en Azure para admitir entornos locales y en la nube. <br/> **Hospede a este rol** en Azure en lugar de comprar hardware nuevo para entornos locales. <br/> |
    
 Para intranet y cargas de trabajo y soluciones de colaboración, considere las siguientes opciones:
   
-- Determine si Microsoft 365 cumple los requisitos empresariales o puede formar parte de la solución. Microsoft 365 proporciona un amplio conjunto de características que siempre está actualizado.
+- Determine si Microsoft 365 cumple los requisitos de su empresa o puede formar parte de la solución. Microsoft 365 proporciona un amplio conjunto de características que siempre está actualizado.
     
-- Si Microsoft 365 no cumple todos los requisitos empresariales, considere una implementación estándar de SharePoint 2013 local de los servicios de consultoría de Microsoft (MCS). Una arquitectura estándar puede ser una solución más rápida, económica y sencilla que una solución personalizada. 
+- Si Microsoft 365 no cumple todos los requisitos empresariales, considere una implementación estándar de SharePoint 2013 local desde los Servicios de consultoría de Microsoft (MCS). Una arquitectura estándar puede ser una solución más rápida, económica y sencilla que una solución personalizada. 
     
 - Si una implementación estándar no cumple los requisitos empresariales, considere una solución local personalizada.
     
@@ -107,7 +107,7 @@ En este diagrama:
     
 Para obtener información adicional para planear y crear una red virtual entre locales, consulte [Conectar una red local con una red virtual de Microsoft Azure](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
   
-## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>Adición de servicios de dominio de Active Directory (AD DS) y DNS
+## <a name="add-active-directory-domain-services-ad-ds-and-dns"></a>Agregar Servicios de dominio de Active Directory (AD DS) y DNS
 
 Para la recuperación ante desastres en Azure, debe implementar Windows Server AD y DNS en un escenario híbrido donde se implementa Windows Server AD tanto de forma local como en máquinas virtuales de Azure.
   

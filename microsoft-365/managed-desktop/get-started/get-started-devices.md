@@ -1,7 +1,7 @@
 ---
 title: Prepare a los usuarios para que usen dispositivos
 description: ''
-keywords: Escritorio administrado por Microsoft, dispositivo, introducción, Microsoft 365
+keywords: Escritorio administrado de Microsoft, dispositivo, introducción, Microsoft 365
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -18,32 +18,32 @@ ms.locfileid: "47289452"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Prepare a los usuarios para que usen dispositivos
 
-Una vez que un dispositivo de escritorio administrado de Microsoft se encuentra en manos del usuario, empezar con él es rápido y fácil. Los dispositivos vienen preconfigurados con la versión actual de Windows y las configuraciones y aplicaciones se instalan desde la nube mientras el usuario completa la configuración. 
+Una vez que un dispositivo de Escritorio administrado de Microsoft está en manos del usuario, empezar a trabajar con él es rápido y fácil. Los dispositivos vienen preconfigurados con la versión actual de Windows y las configuraciones y aplicaciones se instalan desde la nube a medida que el usuario completa la configuración. 
  
-Para que esto sea aún más fácil, ofrecemos una guía que dirige a los usuarios a través de la configuración inicial y proporciona recursos de ayuda para la configuración y para usarlos más adelante, si es necesario. Puede personalizar esta guía para incluir determinados detalles específicos de su organización. A continuación, se distribuye la guía directamente a los usuarios junto con el dispositivo. Hay dos versiones, una para las organizaciones que usan el sistema de soporte de Microsoft (la aplicación Get Help), una para quienes proporcionan compatibilidad alternativa para sus usuarios.
+Para que esto sea aún más fácil, ofrecemos una guía que guía a los usuarios a través de la configuración inicial y proporciona recursos de ayuda tanto para la configuración como para su uso posterior, si es necesario. Puede personalizar esta guía para incluir determinados detalles específicos de su organización. A continuación, distribuyes la guía directamente a los usuarios junto con su dispositivo. Hay dos versiones, una para las organizaciones que usan el sistema de soporte técnico de Microsoft (la aplicación Obtener ayuda), una para las que proporcionan soporte alternativo para sus usuarios.
 
 ## <a name="to-prepare-the-guide"></a>Para preparar la guía
 
 1. Descargue la versión adecuada para su organización:
-- [Microsoft Managed Desktop: Introducción al dispositivo (obtener versión de ayuda)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) : Use esta versión si los usuarios van a usar el sistema de soporte de Microsoft.
-- [Escritorio administrado por Microsoft:](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf) Introducción al dispositivo: Use esta versión si los usuarios *no* van a usar el sistema de soporte de Microsoft.
-2. Use cualquier aplicación capaz de abrir archivos PDF para rellenar los detalles relevantes para su organización:
-    - El nombre de la red a la que deben conectarse los usuarios para continuar con el programa de instalación (paso 3 de la guía)
+- [Escritorio administrado de Microsoft: introducción al](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) dispositivo (versión obtener ayuda): use esta versión si los usuarios usarán el sistema de soporte técnico de Microsoft.
+- [Escritorio administrado de Microsoft: introducción al dispositivo:](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf) use esta versión si los usuarios *no usarán* el sistema de soporte técnico de Microsoft.
+2. Use cualquier aplicación capaz de abrir archivos PDF para rellenar detalles relevantes para su organización:
+    - El nombre de la red a la que los usuarios deben conectarse para continuar con la instalación (paso 3 de la guía)
     - El nombre de la cuenta de inquilino de Azure de su organización (paso 4 de la guía)
-    - Información de contacto del soporte técnico de TI interno de su organización (parte superior de la segunda página)
-3. Guarde el PDF editado y, a continuación, distribúyalo a sus usuarios. 
+    - Información de contacto para el soporte técnico interno de TI de su organización (parte superior de la segunda página)
+3. Guarde el PDF editado y, a continuación, distribuya a los usuarios. 
 
 ## <a name="ready-to-use-guide"></a>"Guía lista para usar"
 
-También proporcionamos una versión más genérica de la guía para aquellas organizaciones que no necesitan personalizarla. Hay dos versiones, una para las organizaciones que usan el sistema de soporte de Microsoft (la aplicación Get Help), una para quienes proporcionan compatibilidad alternativa para sus usuarios. 
+También proporcionamos una versión más genérica de la guía para aquellas organizaciones que no necesitan personalizarla. Hay dos versiones, una para las organizaciones que usan el sistema de soporte técnico de Microsoft (la aplicación Obtener ayuda), una para las que proporcionan soporte alternativo para sus usuarios. 
 
-- [Microsoft Managed Desktop: Introducción al dispositivo (obtenga una versión de ayuda lista para usar)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf) : Use esta versión si los usuarios usarán el sistema de soporte de Microsoft.
-- [Microsoft Managed Desktop: Introducción a su dispositivo (listo para usar)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) : Use esta versión si los usuarios *no* van a usar el sistema de soporte de Microsoft.
+- [Escritorio administrado de Microsoft:](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf) introducción al dispositivo (obtener la versión de ayuda, listo para usar): use esta versión si los usuarios usarán el sistema de soporte técnico de Microsoft.
+- [Escritorio administrado de Microsoft: introducción al](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) dispositivo (listo para usar):  use esta versión si los usuarios no usarán el sistema de soporte técnico de Microsoft.
 
-En este punto, está listo para continuar con la implementación de aplicaciones:
+En este punto, estás listo para pasar a implementar aplicaciones:
 
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar a trabajar con el escritorio administrado de Microsoft
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Pasos para empezar a usar el Escritorio administrado de Microsoft
 
 1. [Agregar y verificar los contactos de administración en el portal de administración ](add-admin-contacts.md)
 2. [Ajustar el acceso condicional](conditional-access.md)
@@ -51,5 +51,5 @@ En este punto, está listo para continuar con la implementación de aplicaciones
 4. [Desplegar el portal de empresa de Intune](company-portal.md)
 5. [Habilitar Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Instalar dispositivos](set-up-devices.md)
-7. Preparar a los usuarios para que usen dispositivos (este tema)
+7. Preparar a los usuarios para usar dispositivos (este tema)
 8. [Implementar aplicaciones](deploy-apps.md)

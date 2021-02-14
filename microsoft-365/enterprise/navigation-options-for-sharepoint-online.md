@@ -20,7 +20,7 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: En este artículo se describen las opciones de navegación sitios con la publicación de SharePoint habilitada en SharePoint Online.
+description: En este artículo se describen los sitios de opciones de navegación con publicación de SharePoint habilitada en SharePoint Online.
 ms.openlocfilehash: 86cefc60a26687835fd6a88de7f249143811de4f
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -30,106 +30,106 @@ ms.locfileid: "46696566"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Opciones de navegación para SharePoint Online
 
-En este artículo se describen las opciones de navegación sitios con la publicación de SharePoint habilitada en SharePoint Online. La elección y configuración de la navegación afectan significativamente al rendimiento y la escalabilidad de los sitios de SharePoint Online. La plantilla de sitio de publicación de SharePoint solo debe usarse si es necesario para un portal centralizado y la característica de publicación solo debe habilitarse en sitios específicos y solo cuando sea absolutamente necesario, ya que puede afectar al rendimiento cuando se usa incorrectamente.
+En este artículo se describen los sitios de opciones de navegación con Publicación de SharePoint habilitada en SharePoint Online. La elección y la configuración de la navegación afectan significativamente al rendimiento y la escalabilidad de los sitios en SharePoint Online. La plantilla de sitio de publicación de SharePoint solo debe usarse si es necesario para un portal centralizado y la característica de publicación solo debe habilitarse en sitios específicos y solo cuando sea absolutamente necesario, ya que puede afectar al rendimiento cuando se usa incorrectamente.
 
 >[!NOTE]
->Si está usando las opciones modernas de navegación de SharePoint, como el menú mega, la navegación en cascada o la navegación de concentradores, este artículo no se aplica a su sitio. Las arquitecturas de sitio modernas de SharePoint aprovechan una jerarquía de sitios más acoplada y un modelo de concentrador y radio. Esto permite lograr muchos escenarios que no requieran el uso de la característica de publicación de SharePoint.
+>Si usa opciones modernas de navegación de SharePoint como mega menú, navegación en cascada o navegación central, este artículo no se aplica a su sitio. Las arquitecturas de sitio modernas de SharePoint aprovechan una jerarquía de sitios más plana y un modelo de concentrador y radio. Esto permite lograr muchos escenarios que NO requieren el uso de la característica de publicación de SharePoint.
 
 ## <a name="overview-of-navigation-options"></a>Información general sobre las opciones de navegación
 
-La configuración del proveedor de navegación puede afectar significativamente al rendimiento de todo el sitio, y se debe tener en cuenta para elegir un proveedor de navegación y una configuración que se escale con eficacia para los requisitos de un sitio de SharePoint. Hay dos proveedores de navegación preparados, así como implementaciones de navegación personalizadas.
+La configuración del proveedor de navegación puede afectar significativamente al rendimiento de todo el sitio y es necesario tener en cuenta detenidamente la selección de un proveedor de navegación y una configuración que se escala de forma eficaz para los requisitos de un sitio de SharePoint. Hay dos proveedores de navegación personalizados, así como implementaciones de navegación personalizadas.
 
-La primera opción, [**navegación estructural**](#using-structural-navigation-in-sharepoint-online), es la opción de navegación recomendada en SharePoint Online para los sitios clásicos de SharePoint, **si activa el almacenamiento en caché de navegación estructural para su sitio**. Este proveedor de navegación muestra los elementos de navegación bajo el sitio actual y, de forma opcional, el sitio actual y sus elementos relacionados. Proporciona funciones adicionales, como el recorte de seguridad y la enumeración de la estructura del sitio. Si el almacenamiento en caché está deshabilitado, esto afectará negativamente al rendimiento y la escalabilidad, y puede estar sujeto a la limitación.
+La primera opción, [**navegación**](#using-structural-navigation-in-sharepoint-online)estructural, es la opción de navegación recomendada en SharePoint Online para sitios clásicos de SharePoint, si activa el almacenamiento en caché de navegación estructural **para el sitio.** Este proveedor de navegación muestra los elementos de navegación debajo del sitio actual y, opcionalmente, el sitio actual y sus elementos del mismo nivel. Proporciona funciones adicionales, como el recorte de seguridad y la enumeración de la estructura del sitio. Si el almacenamiento en caché está deshabilitado, esto afectará negativamente al rendimiento y la escalabilidad, y puede estar sujeto a la limitación.
 
-La segunda opción, la [**navegación administrada (metadatos)**](#using-managed-navigation-and-metadata-in-sharepoint-online), representa los elementos de navegación con un conjunto de términos de metadatos administrados. Se recomienda deshabilitar el recorte de seguridad a menos que sea necesario. El recorte de seguridad está habilitado como configuración segura de forma predeterminada para este proveedor de navegación; sin embargo, muchos sitios no requieren la sobrecarga de recorte de seguridad, ya que los elementos de navegación suelen ser coherentes para todos los usuarios del sitio. Con la configuración recomendada para deshabilitar el recorte de seguridad, este proveedor de navegación no necesita la enumeración de la estructura del sitio y es altamente escalable con un impacto aceptable en el rendimiento.
+La segunda opción, [**navegación administrada (metadatos),**](#using-managed-navigation-and-metadata-in-sharepoint-online)representa los elementos de navegación mediante un conjunto de términos de metadatos administrados. Se recomienda deshabilitar el recorte de seguridad a menos que sea necesario. El recorte de seguridad está habilitado como una configuración segura de forma predeterminada para este proveedor de navegación; sin embargo, muchos sitios no requieren la sobrecarga del recorte de seguridad, ya que los elementos de navegación suelen ser coherentes para todos los usuarios del sitio. Con la configuración recomendada para deshabilitar el recorte de seguridad, este proveedor de navegación no requiere enumerar la estructura del sitio y es altamente escalable con un impacto aceptable en el rendimiento.
 
-Además de los proveedores de navegación preinstalados, muchos clientes han implementado correctamente implementaciones de navegación personalizadas alternativas. Consulte [scripting del lado cliente](#using-search-driven-client-side-scripting) basado en búsquedas en este artículo.
+Además de los proveedores de navegación personalizados, muchos clientes han implementado correctamente implementaciones de navegación personalizada alternativas. Vea [scripting del lado cliente controlado](#using-search-driven-client-side-scripting) por búsqueda en este artículo.
   
 ## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Ventajas y desventajas de las opciones de navegación de SharePoint Online
 
-En la tabla siguiente se resumen las ventajas y los inconvenientes de cada opción.
+En la tabla siguiente se resumen las ventajas y desventajas de cada opción.
 
 |Navegación estructural  |Navegación administrada  |Navegación basada en búsquedas  |Proveedor de navegación personalizada  |
 |---------|---------|---------|---------|
-|Ti<br/><br/>Fácil de mantener<br/>Seguridad recortada<br/>Actualizaciones automáticas en un plazo de 24 horas al cambiar el contenido<br/>     |Ti<br/><br/>Fácil de mantener<br/>|Ti<br/><br/>Seguridad recortada<br/>Se actualiza automáticamente cuando se agregan sitios<br/>Tiempo de carga rápida y estructura de navegación en caché local<br/>|Ti<br/><br/>Opción más amplia de opciones disponibles<br/>Carga rápida cuando se utiliza correctamente el almacenamiento en caché<br/>Muchas opciones funcionan bien con un diseño de página dinámico<br/>|
-|Conos<br/><br/>**Afecta al rendimiento si el almacenamiento en caché está deshabilitado**<br/>Sujeto a la limitación<br/>|Conos<br/><br/>No se actualiza automáticamente para reflejar la estructura del sitio<br/>**Afecta al rendimiento si se habilita el recorte de seguridad** o si la estructura de navegación es compleja<br/>|Conos<br/><br/>No se pueden ordenar sitios fácilmente<br/>Requiere la personalización de la página maestra (habilidades técnicas necesarias)<br/>|Conos<br/><br/>Se requiere desarrollo personalizado<br/>Se necesita un origen de datos externo o almacenamiento en caché, por ejemplo Azure<br/>|
+|Pros:<br/><br/>Fácil de mantener<br/>Seguridad recortada<br/>Se actualiza automáticamente en un plazo de 24 horas cuando se cambia el contenido<br/>     |Pros:<br/><br/>Fácil de mantener<br/>|Pros:<br/><br/>Seguridad recortada<br/>Actualizaciones automáticas a medida que se agregan sitios<br/>Tiempo de carga rápida y estructura de navegación almacenada localmente en caché<br/>|Pros:<br/><br/>Mayor variedad de opciones disponibles<br/>Carga rápida cuando el almacenamiento en caché se usa correctamente<br/>Muchas opciones funcionan bien con el diseño de página dinámico<br/>|
+|Desventajas:<br/><br/>**Afecta al rendimiento si el almacenamiento en caché está deshabilitado**<br/>Sujeto a limitación<br/>|Desventajas:<br/><br/>No se actualiza automáticamente para reflejar la estructura del sitio<br/>**Afecta al rendimiento si el recorte de seguridad está habilitado** o cuando la estructura de navegación es compleja<br/>|Desventajas:<br/><br/>No se puede ordenar sitios fácilmente<br/>Requiere personalización de la página maestra (se requieren aptitudes técnicas)<br/>|Desventajas:<br/><br/>Se requiere desarrollo personalizado<br/>Se necesita el origen de datos externos o la memoria caché almacenada, por ejemplo, Azure<br/>|
 
-La opción más adecuada para su sitio dependerá de los requisitos de su sitio y de su capacidad técnica. Si quiere un proveedor de navegación fácil de configurar que se actualice automáticamente cuando cambie el contenido, la navegación estructural [con el almacenamiento en caché habilitado](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43) es una buena opción.
+La opción más adecuada para el sitio dependerá de los requisitos del sitio y de su capacidad técnica. Si desea un proveedor de navegación fácil de configurar que se actualice automáticamente cuando se cambia el contenido, la navegación estructural con el almacenamiento en caché habilitado [es](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43) una buena opción.
 
 >[!NOTE]
->Aplicar el mismo principio que los sitios modernos de SharePoint simplificando la estructura general del sitio a una estructura más plana y no jerárquica mejora el rendimiento y simplifica el paso a los sitios modernos de SharePoint. Esto significa que en lugar de tener una sola colección de sitios con cientos de sitios (subwebs), un mejor enfoque es disponer de muchas colecciones de sitios con muy pocos subsitios (subwebs).
+>Aplicar el mismo principio que los sitios de SharePoint modernos simplificando la estructura general del sitio a una estructura más plana y no jerárquica mejora el rendimiento y simplifica el desplazamiento a sitios modernos de SharePoint. Esto significa que, en lugar de tener una sola colección de sitios con cientos de sitios (subwebs), un mejor enfoque es tener muchas colecciones de sitios con muy pocos subsitios (subwebs).
 
-## <a name="analyzing-navigation-performance-in-sharepoint-online"></a>Analizar el rendimiento de navegación en SharePoint Online
+## <a name="analyzing-navigation-performance-in-sharepoint-online"></a>Análisis del rendimiento de navegación en SharePoint Online
 
-La [herramienta diagnósticos de página para SharePoint](https://aka.ms/perftool) es una extensión de explorador para los exploradores Microsoft Edge y Chrome que analizan las páginas del portal moderno de SharePoint Online y del sitio de publicación clásico. Esta herramienta solo funciona para SharePoint Online y no se puede usar en una página del sistema de SharePoint.
+La herramienta Diagnóstico de páginas para [SharePoint](https://aka.ms/perftool) es una extensión de explorador para exploradores Microsoft Edge y Chrome que analiza tanto el portal moderno de SharePoint Online como las páginas de sitio de publicación clásicas. Esta herramienta solo funciona para SharePoint Online y no se puede usar en una página del sistema de SharePoint.
 
-La herramienta genera un informe para cada página analizada que muestra cómo se ejecuta la página en un conjunto predefinido de reglas y muestra información detallada cuando los resultados de una prueba se encuentran fuera del valor de línea base. Los diseñadores y administradores de SharePoint Online pueden usar la herramienta para solucionar problemas de rendimiento y garantizar que las nuevas páginas se optimizan antes de la publicación.
+La herramienta genera un informe para cada página analizada que muestra el rendimiento de la página con respecto a un conjunto predefinido de reglas y muestra información detallada cuando los resultados de una prueba están fuera del valor de línea base. Los diseñadores y administradores de SharePoint Online pueden usar la herramienta para solucionar problemas de rendimiento a fin de garantizar que las páginas nuevas estén optimizadas antes de la publicación.
 
-En particular, **SPRequestDuration** es el tiempo que tarda SharePoint en procesar la página. La navegación intensa (como, por ejemplo, las páginas en navegación), las jerarquías de sitios complejas y otras opciones de configuración y topología pueden contribuir drásticamente a las duraciones más largas.
+**SPRequestDuration** en particular es el tiempo que sharepoint tarda en procesar la página. La navegación intensa (como incluir páginas en la navegación), jerarquías de sitios complejas y otras opciones de configuración y topología pueden contribuir considerablemente a duraciones más largas.
 
 ## <a name="using-structural-navigation-in-sharepoint-online"></a>Uso de la navegación estructural en SharePoint Online
 
-Esta es la navegación predefinida que se usa de forma predeterminada y es la solución más sencilla. No requiere personalización y un usuario no técnico también puede agregar elementos, ocultar elementos y administrar la navegación desde la página de configuración fácilmente. Se recomienda [Habilitar el almacenamiento en caché](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43); de lo contrario, existe un equilibrio entre rendimiento caro.
+Esta es la navegación lista para usar que se usa de forma predeterminada y es la solución más sencilla. No requiere ninguna personalización y un usuario no técnico también puede agregar fácilmente elementos, ocultar elementos y administrar la navegación desde la página de configuración. Se recomienda [habilitar el almacenamiento en caché;](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43)de lo contrario, hay un costo económico en el rendimiento.
 
 ### <a name="how-to-implement-structural-navigation-caching"></a>Cómo implementar el almacenamiento en caché de navegación estructural
 
-En la apariencia de la **configuración del sitio**  >  **y**la  >  **navegación**, puede validar si la navegación estructural está seleccionada para la navegación global o la navegación actual. La selección de **Mostrar páginas** tendrá un impacto negativo en el rendimiento.
+En **Vista y sensación** de navegación de la configuración del sitio, puede validar si la navegación estructural está seleccionada para  >    >  la navegación global o la navegación actual. Seleccionar **Mostrar páginas tendrá** un impacto negativo en el rendimiento.
 
-![Navegación estructural con la muestra de subsitios seleccionada](../media/SPONavOptionsStructuredShowSubsites.png)
+![Navegación estructural con Mostrar subsitios seleccionado](../media/SPONavOptionsStructuredShowSubsites.png)
 
-El almacenamiento en caché se puede habilitar o deshabilitar en el nivel de la colección de sitios y en el nivel del sitio, y se habilita de forma predeterminada para ambos. Para habilitar en el nivel de la colección de sitios, en **configuración del sitio**navegación de la colección de sitios de administración de sitios  >  **Site Collection Administration**  >  **Site Collection Navigation**, active la casilla **Habilitar almacenamiento en caché**.
+El almacenamiento en caché se puede habilitar o deshabilitar en el nivel de colección de sitios y en el nivel de sitio, y está habilitado para ambos de forma predeterminada. Para habilitarla en el nivel de colección de sitios, **en** Configuración del sitio, Navegación de la colección de sitios de administración de la colección de sitios, active la casilla  >    >  Habilitar **almacenamiento en caché.**
 
 ![Habilitar el almacenamiento en caché en el nivel de sitio](../media/structural-nav/structural-nav-caching-site-coll.png)
 
-Para habilitar en el nivel de sitio, **Site Settings**en  >  **navegación**por la configuración del sitio, active la casilla **Habilitar almacenamiento en caché**.
+Para habilitar en el nivel de sitio, en Navegación **de** configuración del sitio, active la casilla  >  Habilitar almacenamiento **en caché.**
 
 ![Habilitar el almacenamiento en caché en el nivel de sitio](../media/structural-nav/structural-nav-caching-site.png)
 
-## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Usar la navegación administrada y los metadatos en SharePoint Online
+## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Uso de metadatos y navegación administrada en SharePoint Online
 
-La navegación administrada es otra opción precreada que puede usar para volver a crear la mayor parte de la funcionalidad como navegación estructural. Los metadatos administrados se pueden configurar para que el recorte de seguridad esté habilitado o deshabilitado. Cuando se configura con el recorte de seguridad deshabilitado, la navegación administrada es bastante eficiente ya que carga todos los vínculos de navegación con un número constante de llamadas del servidor. No obstante, la habilitación de la reducción de seguridad anula algunas de las ventajas de rendimiento de la navegación administrada.
+La navegación administrada es otra opción lista para usar que puede usar para volver a crear la mayor parte de la misma funcionalidad que la navegación estructural. Los metadatos administrados se pueden configurar para que el recorte de seguridad esté habilitado o deshabilitado. Cuando se configura con el recorte de seguridad deshabilitado, la navegación administrada es bastante eficaz, ya que carga todos los vínculos de navegación con un número constante de llamadas de servidor. Sin embargo, si se habilita el recorte de seguridad, se anulan algunas de las ventajas de rendimiento de la navegación administrada.
 
 Si necesita habilitar el recorte de seguridad, le recomendamos que:
 
-- Actualizar todos los vínculos a direcciones URL descriptivas a vínculos simples
-- Agregar los nodos de recorte de seguridad necesarios como direcciones URL descriptivas
-- Limitar el número de elementos de navegación a un máximo de 100 y no tener más de 3 niveles de profundidad
+- Actualizar todos los vínculos de url descriptivos a vínculos simples
+- Agregar nodos de recorte de seguridad necesarios como direcciones URL fáciles de usar
+- Limitar el número de elementos de navegación a no más de 100 y no más de 3 niveles de profundidad
 
-Muchos sitios no requieren el recorte de seguridad, ya que la estructura de navegación suele ser coherente para todos los usuarios del sitio. Si se deshabilita el recorte de seguridad y se agrega un vínculo a la navegación que no tienen acceso a todos los usuarios, el vínculo seguirá mostrando pero conducirá a un mensaje de acceso denegado. No existe ningún riesgo de acceso involuntario al contenido.
+Muchos sitios no requieren recorte de seguridad, ya que la estructura de navegación suele ser coherente para todos los usuarios del sitio. Si la reducción de seguridad está deshabilitada y se agrega un vínculo a la navegación al que no todos los usuarios tienen acceso, el vínculo se mostrará pero dará lugar a un mensaje de acceso denegado. No existe ningún riesgo de acceso involuntario al contenido.
 
 ### <a name="how-to-implement-managed-navigation-and-the-results"></a>Cómo implementar la navegación administrada y los resultados
 
-Hay varios artículos sobre docs.microsoft.com acerca de los detalles de la navegación administrada. Por ejemplo, vea [información general sobre la navegación administrada en SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation).
+Hay varios artículos sobre docs.microsoft.com sobre los detalles de la navegación administrada. Por ejemplo, vea [Información general sobre la navegación administrada en SharePoint Server.](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)
 
-Para implementar la navegación administrada, se configuran los términos con direcciones URL correspondientes a la estructura de navegación del sitio. La navegación administrada puede incluso creadosrse manualmente para reemplazar la navegación estructural en muchos casos. Por ejemplo:
+Para implementar la navegación administrada, configure los términos con direcciones URL correspondientes a la estructura de navegación del sitio. La navegación administrada incluso se puede seleccionar manualmente para reemplazar la navegación estructural en muchos casos. Por ejemplo:
 
-![Estructura de sitio de SharePoint Online](../media/SPONavOptionsListOfSites.png))
+![Estructura del sitio de SharePoint Online](../media/SPONavOptionsListOfSites.png))
 
-## <a name="using-search-driven-client-side-scripting"></a>Uso de scripting de cliente basado en búsquedas
+## <a name="using-search-driven-client-side-scripting"></a>Uso de scripting del lado cliente controlado por búsqueda
 
-Una clase común de implementaciones de navegación personalizadas adopta patrones de diseño representados por el cliente que almacenan una memoria caché local de nodos de navegación.
+Una clase común de implementaciones de navegación personalizada adopta patrones de diseño representados por el cliente que almacenan una memoria caché local de nodos de navegación.
 
 Estos proveedores de navegación tienen un par de ventajas clave:
 
 - Por lo general, funcionan bien con diseños de página dinámicos.
-- Son extremadamente escalables y funcionan porque pueden representarse sin costo de recursos (y actualizar en segundo plano después de un tiempo de espera).
-- Estos proveedores de navegación pueden recuperar datos de navegación mediante varias estrategias, desde configuraciones estáticas simples a varios proveedores de datos dinámicos.
+- Son extremadamente escalables y de rendimiento porque pueden representarse sin costo de recursos (y actualizarse en segundo plano después de un tiempo de espera).
+- Estos proveedores de navegación pueden recuperar datos de navegación mediante diversas estrategias, desde configuraciones estáticas simples hasta varios proveedores de datos dinámicos.
 
-Un ejemplo de un proveedor de datos es usar una **navegación**basada en búsquedas, que permite la flexibilidad para enumerar los nodos de navegación y controlar de forma eficaz el recorte de seguridad.
+Un ejemplo de un proveedor de datos es usar una navegación basada en búsquedas, que permite flexibilidad para enumerar nodos de navegación y controlar el recorte de seguridad de forma eficaz.
 
-Hay otras opciones populares para crear **proveedores de navegación personalizados**. Revise [soluciones de navegación para portales de SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) para obtener más información sobre la creación de un proveedor de navegación personalizado.
+Hay otras opciones populares para crear proveedores **de navegación personalizados.** Revise las [soluciones de navegación de los portales de SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-navigation) para obtener más instrucciones sobre cómo crear un proveedor de navegación personalizado.
 
-Mediante la búsqueda, puede aprovechar los índices que se han integrado en el fondo con el rastreo continuo. Los resultados de la búsqueda se extraen del índice de búsqueda y los resultados se reducen por seguridad. Esto suele ser más rápido que los proveedores de navegación preparados cuando se requiere el recorte de seguridad. Usar la búsqueda para la navegación estructural, sobre todo si tiene una estructura de sitio compleja, reducirá considerablemente el tiempo de carga de la página. La principal ventaja de esto sobre la navegación administrada es que se beneficia de la reducción de seguridad.
+Con la búsqueda puede aprovechar los índices que se integran en segundo plano mediante el rastreo continuo. Los resultados de la búsqueda se extraden del índice de búsqueda y los resultados tienen recortes de seguridad. Por lo general, esto es más rápido que los proveedores de navegación personalizados cuando se requiere una reducción de seguridad. El uso de la búsqueda de navegación estructural, especialmente si tiene una estructura de sitio compleja, acelerará considerablemente el tiempo de carga de la página. La principal ventaja de esto sobre la navegación administrada es que se beneficia del recorte de seguridad.
 
-Este enfoque implica la creación de una página maestra personalizada y la sustitución del código de navegación precreado con HTML personalizado. Siga este procedimiento descrito en el siguiente ejemplo para reemplazar el código de navegación en el archivo `seattle.html` . En este ejemplo, se abrirá el `seattle.html` archivo y se reemplazará todo el elemento `id="DeltaTopNavigation"` con código HTML personalizado.
+Este enfoque implica crear una página maestra personalizada y reemplazar el código de navegación integrado por HTML personalizado. Siga este procedimiento descrito en el ejemplo siguiente para reemplazar el código de navegación en el archivo `seattle.html` . En este ejemplo, se abrirá el archivo `seattle.html` y se reemplazará todo el elemento `id="DeltaTopNavigation"` por código HTML personalizado.
 
-### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Ejemplo: reemplazar el código de navegación de precodificación en una página maestra
+### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Ejemplo: reemplazar el código de navegación de configuración rápida en una página maestra
 
-1. Navegue a la página Configuración del sitio.
-2. Abra la galería de páginas maestras; para ello, haga clic en **páginas maestras**.
-3. Desde aquí puede navegar por la biblioteca y descargar el archivo `seattle.master` .
-4. Edite el código con un editor de texto y elimine el bloque de código en la siguiente captura de pantalla.<br/>![Eliminar el bloque de código que se muestra](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
-5. Quite el código entre las `<SharePoint:AjaxDelta id="DeltaTopNavigation">` `<\SharePoint:AjaxDelta>` etiquetas y y reemplácela por el siguiente fragmento de código:<br/>
+1. Vaya a la página Configuración del sitio.
+2. Abra la galería de páginas maestras haciendo clic **en Páginas maestras.**
+3. Desde aquí, puede navegar por la biblioteca y descargar el `seattle.master` archivo.
+4. Edite el código con un editor de texto y elimine el bloque de código en la siguiente captura de pantalla.<br/>![Eliminar el bloque de código mostrado](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
+5. Quite el código entre las `<SharePoint:AjaxDelta id="DeltaTopNavigation">` etiquetas y `<\SharePoint:AjaxDelta>` reempláctíjalo por el siguiente fragmento de código:<br/>
 
 ```javascript
 <div id="loading">
@@ -200,30 +200,30 @@ Este enfoque implica la creación de una página maestra personalizada y la sust
 ```
 
 <br/>
-6. Reemplace la dirección URL de la etiqueta de anclaje de la imagen de carga al principio, por un vínculo a una imagen de carga en la colección de sitios. Después de realizar los cambios, cambie el nombre del archivo y, a continuación, cárguelo en la galería de páginas maestras. Esto genera un nuevo archivo. Master.<br/>
-7. Este HTML es el marcado básico que rellenará los resultados de la búsqueda devueltos desde el código JavaScript. Tendrá que editar el código para cambiar el valor de var root = "site Collection URL" como se muestra en el siguiente fragmento de código:<br/>
+6. Reemplace la dirección URL de la etiqueta delimitadora de la imagen de carga al principio, con un vínculo a una imagen de carga en la colección de sitios. Después de realizar los cambios, cambie el nombre del archivo y cámbiele el nombre a la galería de páginas maestras. Esto genera un nuevo archivo .master.<br/>
+7. Este CÓDIGO HTML es el marcado básico que se rellenará con los resultados de búsqueda devueltos desde código JavaScript. Deberá editar el código para cambiar el valor de var root = "site collection URL" como se muestra en el siguiente fragmento de código:<br/>
 
 ```javascript
 var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
 ```
 
 <br/>
-8. Los resultados se asignan a self. Nodes y una jerarquía se crea a partir de los objetos mediante la linq.js asignar el resultado a una matriz self. hierarchy. Esta matriz es el objeto que está enlazado al HTML. Esto se realiza en la función toggleView () pasando el objeto Self a la función ko. applyBinding ().<br/>Esto hace que la matriz de jerarquías se enlace al siguiente HTML:<br/>
+8. Los resultados se asignan a la matriz self.nodes y se genera una jerarquía a través de los objetos linq.js asignando el resultado a una matriz self.hierarchy. Esta matriz es el objeto enlazado al CÓDIGO HTML. Esto se realiza en la función toggleView() pasando el objeto self a la función ko.applyBinding().<br/>A continuación, esto hace que la matriz de jerarquía esté enlazada al siguiente CÓDIGO HTML:<br/>
 
 ```javascript
 <div data-bind="foreach: hierarchy" class="noindex ms-core-listMenu-horizontalBox">
 ```
 
-Los controladores de eventos para `mouseenter` y `mouseexit` se agregan a la navegación de nivel superior para controlar los menús desplegables de subsitio que se realizan en la `addEventsToElements()` función.
+Los controladores de eventos para y se agregan a la navegación de nivel superior para controlar los menús desplegables de subsitio que se realizan `mouseenter` `mouseexit` en la `addEventsToElements()` función.
 
-En nuestro ejemplo de navegación compleja, una carga de página nueva sin el almacenamiento en caché local muestra el tiempo empleado en el servidor se ha reducido de la navegación estructural de Benchmark para obtener un resultado similar al del enfoque de navegación administrada.
+En nuestro ejemplo de navegación compleja, una carga de página nueva sin el almacenamiento en caché local muestra que el tiempo invertido en el servidor se ha recortado de la navegación estructural de pruebas comparativas para obtener un resultado similar al método de navegación administrada.
 
 ### <a name="about-the-javascript-file"></a>Acerca del archivo JavaScript...
 
 >[!NOTE]
->Si usa JavaScript personalizado, asegúrese de que la red CDN pública esté habilitada y que el archivo esté en una ubicación de red CDN.
+>Si usa JavaScript personalizado, asegúrese de que la red CDN pública está habilitada y de que el archivo se encuentra en una ubicación de red CDN.
 
-El archivo JavaScript completo es el siguiente:
+Todo el archivo JavaScript es el siguiente:
 
 ```javascript
 //Models and Namespaces
@@ -458,27 +458,27 @@ function addEventsToElements() {
 
 ```
 
-Para resumir el código que se ha mostrado anteriormente en la `jQuery $(document).ready` función `viewModel object` , se ha creado una y, a continuación, `loadNavigationNodes()` se llama a la función en ese objeto. Esta función carga la jerarquía de navegación previamente creada almacenada en el almacenamiento local de HTML5 del explorador del cliente o llama a la función `queryRemoteInterface()` .
+En resumen, el código mostrado anteriormente en la función se crea y, a continuación, se llama a la `jQuery $(document).ready` `viewModel object` función de ese `loadNavigationNodes()` objeto. Esta función carga la jerarquía de navegación creada anteriormente almacenada en el almacenamiento local HTML5 del explorador cliente o llama a la `queryRemoteInterface()` función.
 
-`QueryRemoteInterface()` compila una solicitud mediante la `getRequest()` función con el parámetro de consulta definido anteriormente en el script y, a continuación, devuelve datos del servidor. Estos datos son esencialmente una matriz de todos los sitios de la colección de sitios que se representan como objetos de transferencia de datos con diversas propiedades.
+`QueryRemoteInterface()` crea una solicitud mediante la función con el parámetro de consulta definido anteriormente en el script y, a continuación, devuelve `getRequest()` datos del servidor. Estos datos son básicamente una matriz de todos los sitios de la colección de sitios representados como objetos de transferencia de datos con varias propiedades.
 
-A continuación, estos datos se analizan en los `SPO.Models.NavigationNode` objetos definidos anteriormente que usan `Knockout.js` para crear propiedades observables para su uso mediante el enlace de datos de los valores en el código HTML que se ha definido anteriormente.
+A continuación, estos datos se analizan en los objetos definidos anteriormente que usan para crear propiedades observables para su uso mediante el enlace de datos de los valores en el HTML que definimos `SPO.Models.NavigationNode` `Knockout.js` anteriormente.
 
-A continuación, los objetos se colocan en una matriz de resultados. Esta matriz se analiza en JSON usando knockout y se almacena en el almacenamiento local del explorador para mejorar el rendimiento en futuras cargas de páginas.
+A continuación, los objetos se ponen en una matriz de resultados. Esta matriz se analiza en JSON mediante Knockout y se almacena en el almacenamiento del explorador local para mejorar el rendimiento en futuras cargas de página.
 
 ### <a name="benefits-of-this-approach"></a>Ventajas de este enfoque
 
-Una de las principales ventajas de [este enfoque](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) es que, al usar el almacenamiento local de HTML5, la navegación se almacena localmente para el usuario la próxima vez que cargue la página. Obtenemos mejoras de rendimiento principales al usar la API de búsqueda para la navegación estructural; sin embargo, se necesita cierta capacidad técnica para ejecutar y personalizar esta funcionalidad.
+Una de las principales ventajas de [este](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page) enfoque es que, al usar el almacenamiento local de HTML5, la navegación se almacena localmente para el usuario la próxima vez que carga la página. Se obtienen mejoras de rendimiento importantes al usar la API de búsqueda para la navegación estructural; sin embargo, se necesita cierta capacidad técnica para ejecutar y personalizar esta funcionalidad.
 
-En la [implementación del ejemplo](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page), los sitios se ordenan de la misma manera que la navegación estructural de forma integrada; orden alfabético. Si desea desviarse de esta orden, sería más complicado su desarrollo y mantenimiento. Además, este enfoque requiere que se desvíe de las páginas maestras admitidas. Si no se mantiene la página maestra personalizada, el sitio perderá las actualizaciones y las mejoras que Microsoft realiza en las páginas maestras.
+En la [implementación de ejemplo,](#example-replace-the-out-of-the-box-navigation-code-in-a-master-page)los sitios se ordenan del mismo modo que la navegación estructural lista para su uso; orden alfabético. Si quisieras desviarte de este orden, sería más complicado desarrollar y mantener. Además, este enfoque requiere que se desvíe de las páginas maestras admitidas. Si no se mantiene la página maestra personalizada, el sitio se perderá las actualizaciones y mejoras que Microsoft realiza en las páginas maestras.
 
 El [código anterior](#about-the-javascript-file) tiene las siguientes dependencias:
 
-- jQuery https://jquery.com/
-- KnockoutJS - https://knockoutjs.com/
-- Linq.js https://linqjs.codeplex.com/ o github.com/neuecc/linq.js
+- jQuery: https://jquery.com/
+- KnockoutJS: https://knockoutjs.com/
+- Linq.js- https://linqjs.codeplex.com/ o github.com/neuecc/linq.js
 
-La versión actual de LinqJS no contiene el método ByHierarchy que se usó en el código anterior y romperá el código de navegación. Para solucionarlo, agregue el método siguiente al archivo de Linq.js antes de la línea `Flatten: function ()` .
+La versión actual de LinqJS no contiene el método ByHierarchy usado en el código anterior y romperá el código de navegación. Para solucionar este problema, agregue el siguiente método al Linq.js archivo antes de la línea `Flatten: function ()` .
 
 ```javascript
 ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
@@ -547,4 +547,4 @@ ByHierarchy: function(firstLevel, connectBy, orderBy, ascending, parent) {
 
 [Información general sobre la navegación administrada en SharePoint Server](https://docs.microsoft.com/sharepoint/administration/overview-of-managed-navigation)
 
-[Rendimiento y almacenamiento en caché de navegación estructural](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43)
+[Almacenamiento en caché y rendimiento de la navegación estructural](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43)

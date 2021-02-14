@@ -33,9 +33,9 @@ ms.locfileid: "47307342"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Acerca del centro de administración de Microsoft 365
 
-**Si ha adquirido un plan de 365 para el negocio de Microsoft y tiene permisos de administrador, tiene acceso al centro de administración**. Este artículo le resultará muy útil.
+Si ha adquirido un plan de **Microsoft 365** para empresas Y tiene permisos de administrador, tiene acceso al centro de administración. Este artículo le resultará muy útil.
 
-**Si es un usuario o tiene un plan de la familia 365 de Microsoft, no tiene un centro de administración.** Para configurar Microsoft 365, vaya a [Descargar e instalar o volver a instalar microsoft 365 u Office 2019 en un equipo PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
+**Si es un usuario o tiene un plan de La familia de Microsoft 365, no tiene un centro de administración.** Para configurar Microsoft 365, vaya a Descargar e instalar o reinstalar [Microsoft 365 u Office 2019](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)en un equipo PC o Mac.
 
 Puede utilizar el centro de administración para configurar su organización en la nube, administrar usuarios, administrar suscripciones y mucho más. En este artículo, obtendrá información sobre cómo acceder al centro de administración y obtener más información sobre las características y la configuración disponibles.
 
@@ -67,7 +67,7 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 
 2. Seleccione el icono del iniciador de aplicaciones en la esquina superior izquierda y elija **Administrador**.
 
-    El icono **Administrador** solo aparece para las personas que tienen [permisos de administrador](../add-users/about-admin-roles.md)de Microsoft 365. Si no ve el icono, no tiene permisos para obtener acceso al centro de administración de la organización.
+    El **icono** Administrador aparece solo para las personas que tienen permisos de administrador [de](../add-users/about-admin-roles.md)Microsoft 365. Si no ve el icono, no tiene permisos para acceder al centro de administración de su organización.
 
 ## <a name="admin-center-features-and-settings"></a>Características y configuración del centro de administración
 
@@ -83,21 +83,21 @@ A continuación se muestran las características y la configuración que encontr
 |**Soporte técnico** <br/> | Vea las solicitudes de servicio existentes o cree otras nuevas. Obtenga más información en [póngase en contacto con el soporte técnico para productos para empresas: ayuda de administración](../contact-support-for-business-products.md). |
 |**Configuración** <br/> |Administre la configuración global de aplicaciones, como correo electrónico, sitios y el conjunto de aplicaciones de Office. Cambie la directiva y la fecha de expiración de su contraseña. Agregue y actualice nombres de dominio, como contoso.com. Cambie las preferencias de perfil y versión de su organización. Y decida si los socios pueden acceder a su centro de administración.  <br/> |
 |**Instalación** <br/> |Administre los dominios existentes, active y administre la autenticación multifactorial, administre el acceso de administrador, migre los buzones de correo de los usuarios a Office 365, administre las actualizaciones de funciones y ayude a los usuarios a instalar sus aplicaciones de Office. |
-|**Informes** <br/> |Consulte de un vistazo cómo su organización está usando Microsoft 365 con informes detallados sobre el uso del correo electrónico, las activaciones de Office y mucho más. Obtenga información sobre cómo usar los nuevos [informes de actividad](../activity-reports/activity-reports.md).<br/> |
+|**Informes** <br/> |Vea de un vistazo cómo su organización usa Microsoft 365 con informes detallados sobre el uso de correo electrónico, las activaciones de Office y mucho más. Obtenga información sobre cómo usar los nuevos informes [de actividad.](../activity-reports/activity-reports.md)<br/> |
 |**Estado** <br/> |Consulte de un vistazo el estado del servicio. También puede consultar detalles adicionales y el historial del estado del servicio. Vea[Cómo comprobar la salud del servicio](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health).  <br/> Use el Centro de mensajes para realizar un seguimiento de los próximos cambios en las características y servicios. Publicaremos anuncios allí con información que le permitirá planear los cambios y comprender cómo afectarán a los usuarios. Para obtener más información, vea [Centro de mensajes de Office 365](../manage/message-center.md).  <br/> |
 |**Centros de administración** <br/> |Abra centros de administración independientes de Exchange, Skype empresarial, SharePoint, Yammer y Azure AD. Cada centro de administración incluye toda la configuración disponible para ese servicio.  <br/> Por ejemplo, en el centro de administración de Exchange, configure y administre el correo electrónico, los calendarios, los grupos de distribución, etc. En el centro de administración de SharePoint, cree y administre colecciones de sitios, la configuración del sitio y OneDrive para la Empresa. En el centro de administración de Skype Empresarial, configure las notificaciones de mensajería instantánea, las conferencias de acceso telefónico y la presencia en línea.  <br/> Obtenga más información sobre el [centro de administración de Exchange](https://go.microsoft.com/fwlink/p/?LinkID=271807) y el [centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/sharepoint-online).<br/> **Nota:** Los centros de administración disponibles dependen de su plan y su región.           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>Tareas comunes del centro de administración
 
-- Administrar usuarios: [Agregar usuarios y asignar licencias al mismo tiempo](../add-users/add-users.md), [eliminar o restaurar usuarios](../add-users/delete-a-user.md)o [restablecer la contraseña de un usuario](../add-users/reset-passwords.md).
+- Administrar usuarios: [agregar usuarios y asignar](../add-users/add-users.md)licencias al mismo tiempo, eliminar o [restaurar](../add-users/delete-a-user.md)usuarios, o restablecer la contraseña de [un usuario.](../add-users/reset-passwords.md)
 
 - Obtenga ayuda con la facturación: [Facturación](../../commerce/index.yml)
 
 - Ver informes de actividad: [informes de actividad de](../activity-reports/activity-reports.md)
 
-- [Crear un grupo de 365 de Microsoft ](../create-groups/create-groups.md)
+- [Crear un grupo de Microsoft 365 ](../create-groups/create-groups.md)
 
-- [Administración de un grupo de Microsoft 365](../create-groups/manage-groups.md)
+- [Administrar un grupo de Microsoft 365](../create-groups/manage-groups.md)
 
 ## <a name="see-also"></a>Consulte también
 

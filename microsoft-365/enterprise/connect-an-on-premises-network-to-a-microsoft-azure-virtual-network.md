@@ -31,7 +31,7 @@ ms.locfileid: "46696552"
 
 Una red virtual de Azure entre locales se conecta a la red local, extendiendo la red para incluir subredes y máquinas virtuales hospedadas en servicios de infraestructura de Azure. Esta conexión permite a los equipos de la red local obtener acceso directamente a máquinas virtuales en Azure, y viceversa. 
 
-Por ejemplo, un servidor de sincronización de directorios que se ejecuta en una máquina virtual de Azure necesita consultar los controladores de dominio locales para obtener cambios en las cuentas y sincronizar dichos cambios con la suscripción a Microsoft 365. En este artículo se muestra cómo configurar una red virtual de Azure entre locales usando una conexión de red privada virtual (VPN) de sitio a sitio que está preparada para hospedar máquinas virtuales de Azure.
+Por ejemplo, un servidor de sincronización de directorios que se ejecuta en una máquina virtual de Azure debe consultar a los controladores de dominio locales para ver si hay cambios en las cuentas y sincronizar dichos cambios con su suscripción de Microsoft 365. En este artículo se muestra cómo configurar una red virtual de Azure entre locales mediante una conexión de red privada virtual (VPN) de sitio a sitio que esté lista para hospedar máquinas virtuales de Azure.
 
 ## <a name="configure-a-cross-premises-azure-virtual-network"></a>Configurar una red virtual de Azure entre locales
 

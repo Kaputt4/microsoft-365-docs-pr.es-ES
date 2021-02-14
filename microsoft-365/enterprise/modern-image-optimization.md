@@ -20,7 +20,7 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo usar las herramientas incluidas en SharePoint Online para optimizar las imágenes en las páginas de sitio modernas de SharePoint Online.
+description: Aprenda a usar las herramientas incluidas en SharePoint Online para optimizar imágenes en páginas de sitio modernas de SharePoint Online.
 ms.openlocfilehash: 09122dfd0bc832cf9a09cfb05bf0540e323797d9
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT

@@ -19,35 +19,35 @@ ms.locfileid: "47289464"
 ---
 # <a name="work-with-app-control"></a>Usar el control de aplicaciones
 
-Una vez que se haya implementado el control de aplicaciones en el entorno, tanto usted como las operaciones de escritorio administradas de Microsoft tienen responsabilidades en curso. Por ejemplo, es posible que quiera agregar una nueva aplicación en el entorno o agregar (o quitar) un firmante de confianza. Para mejorar la seguridad, todas las aplicaciones deben estar firmadas con código antes de liberarlas a los usuarios. Los detalles del publicador de una aplicación incluyen información sobre el firmante.
+Una vez implementado el control de aplicaciones en su entorno, tanto usted como las operaciones de escritorio administrado de Microsoft tienen responsabilidades continuas. Por ejemplo, es posible que desee agregar una nueva aplicación en el entorno o agregar (o quitar) un firmante de confianza. Para mejorar la seguridad, todas las aplicaciones deben estar firmadas con código antes de publicarlas para los usuarios. Los detalles del editor de una aplicación incluyen información sobre el firmante.
 
 
 ## <a name="add-a-new-app"></a>Agregar una nueva aplicación
 
-Para agregar una nueva aplicación, siga estos pasos:
+Para agregar una nueva aplicación, sigue estos pasos:
 
-1. Agregue la aplicación a [Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management).
-2. Implemente la aplicación en cualquier dispositivo en el anillo de prueba. 
-3. Pruebe la aplicación de acuerdo con los procesos de negocio estándar. 
-4. Consulte el visor de eventos en **aplicaciones y servicios Logs\Microsoft\Windows\AppLocker**, buscando los eventos **8003** o **8006** . Estos eventos indican que la aplicación estaría bloqueada. Para obtener más información sobre todos los eventos del bloqueador de aplicaciones y sus significados, vea [using Event Viewer with AppLocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker).
-5. Si encuentra alguno de estos eventos, abra una solicitud de firmante con Microsoft Managed Desktop Operations.
+1. Agregue la aplicación a [Microsoft Intune.](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management)
+2. Implementa la aplicación en cualquier dispositivo del anillo de prueba. 
+3. Prueba la aplicación de acuerdo con los procesos de negocio estándar. 
+4. Comprueba el Visor de eventos en Registros de aplicaciones y **servicios\Microsoft\Windows\AppLocker** y busca cualquier evento **8003** **u 8006.** Estos eventos indican que la aplicación se bloquearía. Para obtener más información sobre todos los eventos de app Locker y sus significados, consulta Usar el Visor [de eventos con AppLocker.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker)
+5. Si encuentra cualquiera de estos eventos, abra una solicitud de firmante con Operaciones de escritorio administrado de Microsoft.
 
 ## <a name="add-or-remove-a-trusted-signer"></a>Agregar (o quitar) un firmante de confianza
 
-Al abrir una solicitud de firmante, primero deberá proporcionar algunos detalles importantes de Publisher. A continuación, siga estos pasos:
+Cuando abras una solicitud de firmante, primero deberás proporcionar algunos detalles importantes del editor. A continuación, siga estos pasos:
 
-1. [Recopilar detalles de Publisher](#gather-publisher-details).
-2. Abra un vale con las operaciones de escritorio administradas de Microsoft para solicitar la regla de firmante e incluya los siguientes detalles:  
+1. [Recopilar detalles del editor.](#gather-publisher-details)
+2. Abra un vale con operaciones de escritorio administrado de Microsoft para solicitar la regla de firmante e incluir los siguientes detalles:  
     - Nombre de la aplicación 
     - Versión de la aplicación 
-    - Descripción 
+    - Description 
     - Tipo de cambio ("agregar" o "quitar")  
-    - Detalles de la editorial (por ejemplo: "O = <publisher name> , L = <location> , S = estado, C = país") 
+    - Detalles del editor (por ejemplo: "O= <publisher name> ,L= <location> ,S=State,C=Country") 
 
 > [!NOTE]
-> Para quitar la confianza de una aplicación, siga los mismos pasos, pero establezca **tipo de cambio** en *quitar*.
+> Para quitar la confianza de una aplicación, siga los mismos pasos, pero establezca **Cambiar tipo** para *quitar.*
 
-Las operaciones implementarán progresivamente las directivas en los grupos de implementación siguiendo esta programación:
+Las operaciones implementarán de forma progresiva directivas en grupos de implementación siguiendo esta programación:
 
 
 |Grupo de implementación  |Tipo de directiva  |Timing  |
@@ -58,21 +58,21 @@ Las operaciones implementarán progresivamente las directivas en los grupos de i
 |Amplias     | Enforced        |  Día 3       |
 
 
-Puede pausar o revertir la implementación en cualquier momento durante la ejecución. Para ello, abra otra solicitud de servicio con operaciones.
+Puedes pausar o revertir la implementación en cualquier momento durante la implementación. Para ello, abra otra solicitud de servicio con Operations.
 
 > [!NOTE]
-> Si pausa la liberación de una regla de firmante, dicha regla debe revertirse o completarse antes de que se pueda iniciar otra implementación.
+> Si pausa la publicación de una regla de firmante, dicha regla debe revertirse o completarse antes de que se pueda iniciar otra implementación.
 
-## <a name="gather-publisher-details"></a>Recopilar detalles de Publisher
+## <a name="gather-publisher-details"></a>Recopilar detalles del editor
 
-Para obtener acceso a los datos de Publisher para una aplicación, siga estos pasos:
+Para acceder a los datos de editor de una aplicación, sigue estos pasos:
 
-1. Busque un dispositivo de escritorio administrado por Microsoft en el anillo de prueba que tiene una directiva de modo de auditoría aplicada. 
-2. Intente instalar la aplicación en el dispositivo.
-3. Abra el visor de eventos en ese dispositivo. 
-4. En el visor de eventos, vaya a **Logs\Microsoft\Windows de servicios y aplicaciones**y, a continuación, seleccione **AppLocker**. 
-5. Busque cualquier evento **8003** o **8006** y, a continuación, copie la información del evento: 
+1. Busca un dispositivo de Escritorio administrado de Microsoft en el anillo de prueba al que se haya aplicado una directiva de modo auditoría. 
+2. Intenta instalar la aplicación en el dispositivo.
+3. Abre el Visor de eventos en ese dispositivo. 
+4. En el Visor de eventos, ve a Registros de **aplicaciones y servicios\Microsoft\Windows** y, a continuación, **selecciona AppLocker**. 
+5. Busque cualquier **evento 8003** **u 8006** y, a continuación, copie la información del evento: 
     - Nombre de la aplicación 
     - Versión de la aplicación 
-    - Descripción 
-    - Detalles de la editorial (por ejemplo: "O = <publisher name> , L = <location> , S = estado, C = país") 
+    - Description 
+    - Detalles del editor (por ejemplo: "O= <publisher name> , L= <location> , S=State, C=Country") 

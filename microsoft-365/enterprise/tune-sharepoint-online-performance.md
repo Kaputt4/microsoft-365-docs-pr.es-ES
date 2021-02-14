@@ -18,7 +18,7 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
-description: Contiene vínculos a otros artículos que le indican cómo mejorar el rendimiento de los tiempos de descarga de páginas de SharePoint Online.
+description: Contiene vínculos a otros artículos que le dicen cómo mejorar el rendimiento de los tiempos de descarga de página para SharePoint Online.
 ms.openlocfilehash: c488cb47205c8f250494420ffe3a068244411859
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -28,7 +28,7 @@ ms.locfileid: "46694063"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Ajustar el rendimiento de SharePoint Online
 
-Este artículo contiene vínculos a otros artículos que le indican cómo mejorar el rendimiento de los tiempos de descarga de páginas de SharePoint Online. Este artículo forma parte del proyecto [planeación de red y ajuste del rendimiento para Office 365](https://aka.ms/tune) .
+Este artículo contiene vínculos a otros artículos que le dicen cómo mejorar el rendimiento de los tiempos de descarga de página para SharePoint Online. Este artículo forma parte del plan de red y el ajuste [del rendimiento para el proyecto de Office 365.](https://aka.ms/tune)
 
 ## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>Artículos sobre cómo ajustar el rendimiento de SharePoint Online
 
@@ -36,7 +36,7 @@ Use estos artículos para ajustar el rendimiento de SharePoint Online.
   
 - [Introducción al ajuste del rendimiento para SharePoint Online](introduction-to-performance-tuning-for-sharepoint-online.md)
 
-- [Usar la herramienta de diagnóstico de página para SharePoint Online](page-diagnostics-for-spo.md)
+- [Usar la herramienta de diagnóstico de páginas para SharePoint Online](page-diagnostics-for-spo.md)
 
 - [Opciones de navegación para SharePoint Online](navigation-options-for-sharepoint-online.md)
 
@@ -50,7 +50,7 @@ Use estos artículos para ajustar el rendimiento de SharePoint Online.
 
 - [Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online](use-microsoft-365-cdn-with-spo.md)
 
-- [Usar el elemento Web de búsqueda de contenido en lugar del elemento Web de consulta de contenido para mejorar el rendimiento en SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
+- [Uso del elemento web Búsqueda de contenido en lugar del elemento web Consulta de contenido para mejorar el rendimiento en SharePoint Online](using-content-search-web-part-instead-of-content-query-web-part-to-improve-perfo.md)
 
 - [Planeamiento de capacidad y pruebas de carga en SharePoint Online](capacity-planning-and-load-testing-sharepoint-online.md)
 
@@ -62,10 +62,10 @@ Use estos artículos para ajustar el rendimiento de SharePoint Online.
 
 - [Optimizar iFrames en páginas de portal modernas de SharePoint Online](modern-iframe-optimization.md)
 
-- [Optimizar el rendimiento de elementos Web en las páginas de portal modernas de SharePoint Online](modern-web-part-optimization.md)
+- [Optimizar el rendimiento del elemento web en páginas de portal modernas de SharePoint Online](modern-web-part-optimization.md)
 
-- [Optimizar las llamadas de página en las páginas de portal modernas de SharePoint Online](modern-page-call-optimization.md)
+- [Optimizar las llamadas de página en páginas de portal modernas de SharePoint Online](modern-page-call-optimization.md)
 
-- [Optimizar el peso de la página en las páginas de portal modernas de SharePoint Online](modern-page-weight-optimization.md)
+- [Optimizar el peso de la página en las páginas del portal moderno de SharePoint Online](modern-page-weight-optimization.md)
 
-- [Optimizar las imágenes de las páginas de portal modernas de SharePoint Online](modern-image-optimization.md)
+- [Optimizar imágenes en páginas de portal modernas de SharePoint Online](modern-image-optimization.md)

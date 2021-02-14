@@ -1,5 +1,5 @@
 ---
-title: Menores y adquisición de complementos desde la tienda
+title: Menores de edad y adquisición de complementos de la Tienda
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: Obtenga información sobre las regulaciones generales del Reglamento de protección de datos (RGPD) que rigen los datos personales de los menores.
+description: Obtenga información sobre las regulaciones del Reglamento general de protección de datos (RGPD) que rigen los datos personales de los menores.
 ms.openlocfilehash: a738e22a0ac0b995c8e44fcf4cc5a2eb47375be5
 ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
@@ -27,30 +27,30 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/29/2020
 ms.locfileid: "47306556"
 ---
-# <a name="minors-and-acquiring-add-ins-from-the-store"></a>Menores y adquisición de complementos desde la tienda
+# <a name="minors-and-acquiring-add-ins-from-the-store"></a>Menores de edad y adquisición de complementos de la Tienda
 
-El Reglamento General de protección de datos (RGPD) es un Reglamento de la Unión Europea que se hace efectivo el 25 de mayo de 2018. Proporciona a los usuarios derechos y protección de sus datos. Uno de los aspectos de la RGPD es que los menores no pueden tener sus datos personales enviados a las partes que su padre o tutor no han aprobado. La antigüedad específica definida como un menor depende de la región en la que se encuentra la persona.
+El Reglamento general de protección de datos (RGPD) es un reglamento de la Unión Europea que se hace efectivo el 25 de mayo de 2018. Concede a los usuarios derechos y protección de sus datos. Uno de los aspectos del RGPD es que los menores no pueden enviar sus datos personales a las partes que sus padres o tutores no han aprobado. La edad específica definida como menor depende de la región donde se encuentra la persona.
   
-Las regiones que tienen regulaciones legales sobre el consentimiento paterno incluyen los Estados Unidos, Corea del sur, Reino Unido y la Unión Europea. Para esas regiones, un menor se bloquea (a través de Azure Active Directory) desde la obtención de nuevos complementos de Office de la tienda y la ejecución de complementos adquiridos anteriormente. En el caso de los países sin las regulaciones legales, no habrá ninguna restricción de descarga.
+Las regiones que tienen normativas legales sobre el consentimiento parental incluyen Los Estados Unidos, Corea del Sur, Reino Unido y la Unión Europea. Para esas regiones, se bloqueará a un menor (a través de Azure Active Directory) para que no pueda obtener nuevos complementos de Office de la Tienda y ejecutar complementos que se adquirieron anteriormente. Para los países sin normativas legales, no habrá restricciones de descarga.
   
-Un usuario se determina como secundario en función de los datos especificados en Azure Active Directory. El administrador de la organización es responsable de declarar el grupo de edad legal y el consentimiento paterno para ese usuario.
+Se determina que un usuario es un menor en función de los datos especificados en Azure Active Directory. El administrador de la organización es responsable de declarar el grupo de edad legal y el consentimiento parental para ese usuario.
   
-Si el tutor o el tutor consiente a un menor con un complemento específico, el administrador de la organización puede usar la implementación centralizada para implementar ese complemento en todos los menores que tengan el consentimiento del usuario.
+Si el elemento primario/tutor da su consentimiento a un menor mediante un complemento específico, el administrador de la organización puede usar la implementación centralizada para implementar ese complemento para todos los menores que tengan consentimiento.
   
-Para que RGPD cumpla con los menores, debe asegurarse de que una de las siguientes compilaciones de Office está implementada en su centro educativo o de organización.
+Para cumplir con el RGPD para menores, debe asegurarse de que se implemente una de las siguientes compilaciones de Office en su escuela u organización.
  
- **Para Word, Excel, PowerPoint y Project**: 
+ **Para Word, Excel, PowerPoint y Project:** 
 
 |**Plataforma** <br/> |**Número de compilación** <br/> |
 |:-----|:-----|
-|Microsoft 365 apps for Enterprise (canal actual)  <br/> |9001,2138   <br/> |
-|Microsoft 365 aplicaciones para empresas (canal empresarial semestral)  <br/> |8431,2159  <br/> |
+|Aplicaciones de Microsoft 365 para empresas (Canal actual)  <br/> |9001.2138   <br/> |
+|Aplicaciones de Microsoft 365 para empresas (Canal empresarial semianual)  <br/> |8431.2159  <br/> |
 |Office 2016 para Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 para Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 para Mac  <br/> |16.11.18020200  <br/> |
-|Office para la Web  <br/> |N/D  <br/> |
+|Office para la web  <br/> |N/D  <br/> |
    
- **Para Outlook**: 
+ **Para Outlook:** 
   
 |**Plataforma** <br/> |**Número de compilación** <br/> |
 |:-----|:-----|
@@ -63,15 +63,15 @@ Para que RGPD cumpla con los menores, debe asegurarse de que una de las siguient
 
  **Requisitos de Office 2013**
   
-Word, Excel y PowerPoint 2013 para Windows admitirán las mismas comprobaciones menores si la biblioteca de autenticación de Active Directory (ADAL) está habilitada. Hay dos opciones para el cumplimiento normativo, tal como se explica a continuación.
+Word, Excel y PowerPoint 2013 para Windows admitirán las mismas comprobaciones secundarias si la Biblioteca de autenticación de Active Directory (ADAL) está habilitada. Hay dos opciones de cumplimiento, como se explica a continuación.
   
-- **Habilitar Adal**. En este artículo se explica cómo habilitar ADAL para Office 2013: [usar la autenticación moderna de Microsoft 365 con clientes de Office](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016).<br/>También debe configurar las claves del registro para habilitar ADAL, tal y como se explica en [enable Modern Authentication for Office 2013 on Windows Devices](../security-and-compliance/enable-modern-authentication.md).<br/>Además, debe instalar las siguientes actualizaciones de abril para Office 2013:
+- **Habilitar ADAL**. En este artículo se explica cómo habilitar ADAL para Office 2013: Usar la autenticación moderna de [Microsoft 365 con clientes de Office.](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)<br/>También debe establecer las claves del Registro para habilitar ADAL, como se explica en Habilitar la autenticación moderna para [Office 2013 en dispositivos Windows.](../security-and-compliance/enable-modern-authentication.md)<br/>Además, debe instalar las siguientes actualizaciones de abril para Office 2013:
     
-  - [Descripción de la actualización de seguridad para Office 2013:10 de abril de 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
+  - [Descripción de la actualización de seguridad de Office 2013: 10 de abril de 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     
-  - [3 de abril de 2018, actualización para Office 2013 (KB4018333)](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
+  - [3 de abril de 2018, actualización de Office 2013 (KB4018333)](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
     
-- **No habilite Adal**. Si no puede habilitar ADAL en Office 2013, nuestra recomendación es usar la Directiva de grupo para desactivar la tienda para los clientes de Office. [Aquí](https://technet.microsoft.com/library/cc178992.aspx)encontrará información sobre cómo desactivar la aplicación para la configuración de Office.
+- **No habilite ADAL**. Si no puede habilitar ADAL en Office 2013, le recomendamos que use la directiva de grupo para desactivar la Tienda para los clientes de Office. Aquí encontrará información sobre cómo desactivar la configuración de la aplicación para [Office.](https://technet.microsoft.com/library/cc178992.aspx)
 
 ## <a name="related-articles"></a>Artículos relacionados
 
