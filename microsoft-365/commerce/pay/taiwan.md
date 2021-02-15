@@ -24,12 +24,12 @@ ms.locfileid: "48648376"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md). 
 
-Pague por el N.T. Solo dólares y haga referencia al número de factura en la remesa de pago.
+Pagar en N.T. Solo dólares y números de factura de referencia en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco beneficiario:** CITIBANK TAIWANÉS LIMITADO  
-Código **de banco y código de sucursal:** 0210018  
-**Código SWIFT:** CITITWTX  
+**Banco de beneficiarios:** BANK TAIWAN LIMITED  
+**Código bancario y código de sucursal:** 0210018  
+**Código SWIFT:** TXTWTX  
 **Número de cuenta:** 5038946139  
-**Nombre de cuenta:** MICROSOFT TAIWÁN CORPORATION    
+**Nombre de cuenta:** MICROSOFT TAIWAN CORPORATION    

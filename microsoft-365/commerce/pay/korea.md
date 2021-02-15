@@ -24,12 +24,12 @@ ms.locfileid: "48649570"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en KRW y haga referencia al número de factura en la remesa de pago.
+Pagar solo en KRW y hacer referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank  
-**Branch:** 89-29 Shinmunro-2KA Chongro-Gu Seúl, Corea 110-062  
-**Código SWIFT:** CITIKRSX  
+**Banco:** Bank  
+**Rama:** 89-29 Muymunro-2ka Grogro-gu Seúl, Corea del Sur 110-062  
+**Código SWIFT:** HEXADECIMALKRSX  
 **Número de cuenta:** 5001296088  
 **Nombre de cuenta:** MICROSOFT COREA  

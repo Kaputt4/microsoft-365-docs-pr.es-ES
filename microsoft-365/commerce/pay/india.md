@@ -24,4 +24,4 @@ ms.locfileid: "48647200"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Siga las instrucciones de pago en su factura y haga referencia a los números de factura en la remesa de pago.  
+Siga las instrucciones de pago de la factura y haga referencia a los números de factura en la remesa de pago.  

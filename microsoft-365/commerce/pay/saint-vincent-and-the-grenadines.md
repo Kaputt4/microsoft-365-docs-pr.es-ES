@@ -1,5 +1,5 @@
 ---
-title: Información de pago para San Vicente y las Granadinas
+title: Información de pago para San Pedro y las Granadinas
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48648700"
 ---
-# <a name="payment-information-for-saint-vincent-and-the-grenadines"></a>Información de pago para San Vicente y las Granadinas
+# <a name="payment-information-for-saint-vincent-and-the-grenadines"></a>Información de pago para San Pedro y las Granadinas
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en USD y haga referencia al número de factura en su reenvío de factura.
+Pagar solo en USD y hacer referencia a los números de factura en la remesa de la factura.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Banco de América  
-**Bifurcación** Dallas  
+**Banco:** Bank of America  
+**Rama** Dallas  
 **Código SWIFT:** BOFAUS3N  
 **Número de cuenta:** 4426587954  
 **Nombre de cuenta:** Microsoft  

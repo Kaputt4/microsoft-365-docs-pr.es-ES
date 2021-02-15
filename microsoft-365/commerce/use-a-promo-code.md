@@ -23,7 +23,7 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: Obtenga información sobre cómo aplicar un código promocional a su suscripción de Microsoft 365 para reducir el precio y cómo solucionar problemas del código de promoción en caso de que se produce un error.
+description: Obtenga información sobre cómo aplicar un código promocional a su suscripción de Microsoft 365 para reducir el precio y cómo solucionar problemas de código de promoción en caso de error.
 ms.openlocfilehash: 09f39b6f82153c6b23525ab41cfb94e77437d062
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
@@ -33,23 +33,23 @@ ms.locfileid: "48646744"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>Usar el código de promoción para reducir el precio
 
-Cuando compre una suscripción, puede usar un código promocional para reducir el precio. Lea este artículo para obtener información sobre cómo aplicar un código de promoción a su suscripción, para obtener información sobre los [términos del código de promoción](#promo-code-terms)y para [solucionar problemas de códigos de promoción](#troubleshooting-promo-codes).
+Al comprar una suscripción, puedes usar un código promocional para reducir el precio. Lea este artículo para obtener información sobre cómo aplicar un [](#promo-code-terms)código de promoción a su suscripción, para obtener información sobre los términos del código de promoción y para solucionar problemas de códigos [de promoción.](#troubleshooting-promo-codes)
   
 ## <a name="apply-a-promo-code-to-your-subscription"></a>Aplicar un código de promoción a la suscripción
 
-1. Para comenzar la compra, puede comprar una suscripción nueva o agregar servicios a una suscripción existente.
+1. Comience la compra comprando una suscripción nueva o agregando servicios a una suscripción existente.
     
-2. Cuando desproteja, elija * * ¿tiene una promoción o un código de descuento? y, a continuación, escriba el código en el cuadro. 
+2. Cuando des check out, elija **¿Tiene un código de promoción o descuento? y, a continuación, escriba el código en el cuadro. 
   
-3. Seleccione **aplicar código de promoción**. Debe ver la confirmación de que se aplicó correctamente. Si ve un mensaje diferente, consulte [Solución de problemas de códigos de promoción](#troubleshooting-promo-codes) para averiguar el motivo. 
+3. Seleccione **Aplicar código de promoción.** Debería ver la confirmación de que se aplicó correctamente. Si ve un mensaje diferente, consulte [Solución de problemas de códigos de promoción](#troubleshooting-promo-codes) para averiguar el motivo. 
     
-4. Continúe con la desprotección. En la página confirmación del pedido, verá el código de descuento que se incluye en la cantidad. 
+4. Continúe des check out. En la página de confirmación del pedido, verás el código de descuento incluido con el importe. 
     
-En cualquier momento después de completar la compra, puede ver el descuento creado por el código de promoción en su factura. Para obtener más información, consulte [ver el](billing-and-payments/view-your-bill-or-invoice.md).
+En cualquier momento después de completar la compra, puede ver el descuento creado por el código de promoción en su factura. Para obtener más información, vea [Ver el](billing-and-payments/view-your-bill-or-invoice.md)archivo .
   
 ## <a name="promo-code-terms"></a>Términos de los códigos de promoción
 
-Las siguientes directrices se aplican a los códigos de promoción para las suscripciones de Microsoft 365 para empresas.
+Las siguientes directrices se aplican a los códigos de promoción de las suscripciones de Microsoft 365 para empresas.
   
 - **Cantidad de códigos de promoción por suscripción** Puede utilizar un código de promoción para varias suscripciones en el mismo orden, pero no puede usar varios códigos de promoción para la misma suscripción. 
     

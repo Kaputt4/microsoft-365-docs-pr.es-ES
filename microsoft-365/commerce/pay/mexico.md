@@ -24,13 +24,13 @@ ms.locfileid: "48649276"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en pesos mexicanos. Para que se procese el pago, el nombre de la empresa y el número de factura (s) deben proporcionarse en el pago de la remisión.
+Pagar solo en pesos mezcán unidos. Para que se procese el pago, el nombre de la compañía y el número de facturas deben proporcionarse en el pago de la remesa.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank/Banamex  
-**Rama:** Act. Roberto Medellin 800, P.B. Sur, col. Santa Fe, México City C.P. 01210, México  
+**Banco:** Bank/Banamex  
+**Rama:** Act. Roberto Mendelin 800, P.B. Sur,Col. Santa Fe, Ciudad de México C.P. 01210, México  
 **Código SWIFT:** BNMXMM  
 **CLABE** 002180002337160225  
 **Número de cuenta:** 0233716022  
-**Nombre de cuenta:** Pagos de Microsoft Inc.
+**Nombre de cuenta:** Microsoft Payments Inc.

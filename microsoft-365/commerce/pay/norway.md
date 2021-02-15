@@ -1,5 +1,5 @@
 ---
-title: Información de pago para Noruega
+title: Información de pago de Noruega
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48648928"
 ---
-# <a name="payment-information-for-norway"></a>Información de pago para Noruega
+# <a name="payment-information-for-norway"></a>Información de pago de Noruega
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en NOK y haga referencia al número de factura en la remesa de pago.
+Pagar solo en NOK y hacer referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank, Londres  
-**Código SWIFT/BIC:** CITIGB2L  
-**Iban:** GB94CITI18500812207621  
+**Banco:** Bank, Londres  
+**Código SWIFT/BIC:** GBGB2L  
+**IBAN:** GB94CITI18500812207621  
 **Número de cuenta:** 12207621  
 **Nombre de cuenta:** MICROSOFT  

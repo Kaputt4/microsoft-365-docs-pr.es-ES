@@ -1,5 +1,5 @@
 ---
-title: Información de pago de Panamá
+title: Información de pago para Panamá
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,15 +20,15 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48648868"
 ---
-# <a name="payment-information-for-panama"></a>Información de pago de Panamá
+# <a name="payment-information-for-panama"></a>Información de pago para Panamá
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en USD y haga referencia al número de factura en la remesa de pago.
+Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Banco de América   
+**Banco:** Bank of America   
 **Rama:** Dallas   
 **Código SWIFT:** BOFAUS3N   
 **Número de cuenta:** 4426587954   

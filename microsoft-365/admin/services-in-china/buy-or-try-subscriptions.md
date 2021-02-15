@@ -1,5 +1,5 @@
 ---
-title: Comprar o probar las suscripciones para Office 365 operado por 21Vianet
+title: Comprar o probar suscripciones para Office 365 operado por 21Vianet
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - GEA150
 ms.assetid: f9877a28-1434-4108-9e92-f29ef8ee5591
-description: Obtenga información sobre cómo probar una suscripción de Office 365 o comprarla directamente, agregar suscripciones u obtener complementos para una cuenta existente de Office 365 operado por 21Vianet en China.
+description: Obtenga información sobre cómo probar una suscripción a Office 365 o comprarla inmediatamente, agregar suscripciones u obtener complementos a una cuenta de Office 365 existente operado por 21Vianet en China.
 monikerRange: o365-21vianet
 ms.openlocfilehash: b20233190b117b4b2562bc2e47774541e6e2d3f8
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -28,20 +28,20 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48644836"
 ---
-# <a name="buy-or-try-subscriptions-for-office-365-operated-by-21vianet"></a>Comprar o probar las suscripciones para Office 365 operado por 21Vianet
+# <a name="buy-or-try-subscriptions-for-office-365-operated-by-21vianet"></a>Comprar o probar suscripciones para Office 365 operado por 21Vianet
 
 > [!NOTE]
 >  Este artículo se aplica a Office 365 operado por 21Vianet en China.
 
-## <a name="buy-or-try-office-365"></a>Compre o pruebe Office 365
+## <a name="buy-or-try-office-365"></a>Comprar o probar Office 365
 
-Puede comprar una suscripción inmediatamente o puede probar Office 365 durante un máximo de 30 días. Si lo desea, puede comprar su suscripción de prueba y mantener el dominio, los datos y la configuración que ha configurado en la versión de prueba.
+Puede comprar una suscripción inmediatamente o puede probar Office 365 durante un máximo de 30 días. Si le gusta, puede comprar su suscripción de prueba y mantener el dominio, los datos y la configuración que ha configurado en la versión de prueba.
 
-1. Vaya a [comparar Office 365 para planes de empresa](https://go.microsoft.com/fwlink/p/?linkid=393691&amp;clcid=0x409) y seleccione el nombre del plan que desea comprar. A continuación, seleccione **comprar ahora**.
+1. Vaya a [Comparar los planes de Office 365](https://go.microsoft.com/fwlink/p/?linkid=393691&amp;clcid=0x409) para empresas y seleccione el nombre del plan que desea comprar. A continuación, **seleccione Comprar ahora.**
 
-2. Cree una cuenta rellenando la página **sólo unos pocos detalles** .
+2. Cree una cuenta rellenando la **página Solo unos pocos** detalles.
 
-3. Siga las instrucciones para configurar su versión de prueba de 30 días o para completar la compra.
+3. Siga las instrucciones para configurar la prueba de 30 días o para completar la compra.
 
 ## <a name="buy-your-trial-subscription"></a>Comprar la suscripción de prueba
 
@@ -58,29 +58,29 @@ Puede comprar una suscripción inmediatamente o puede probar Office 365 durante 
 4. En la página **Comprar suscripciones**, verá los distintos planes que puede comprar. El plan que ha probado se identifica con el banner **En prueba**.
 
     > [!IMPORTANT]
-    > Si adquiere un plan diferente del plan de prueba, tiene que reasignar las licencias del plan de prueba al nuevo plan (antes de que finalice el período de gracia de 90 días después de que expire el plan de prueba) para conservar los datos, las cuentas y la configuración. De lo contrario, se perderán los datos, las cuentas y la configuración.
+    > Si compra un plan diferente del plan de prueba, debe reasignar las licencias de su plan de prueba a su nuevo plan (antes de que finalice el período de gracia de 90 días después de que expire el plan de prueba) para conservar los datos, las cuentas y la configuración. De lo contrario, perderá los datos, las cuentas y la configuración.
 
 5. Seleccione la suscripción que desea comprar y seleccione **Comprar ahora**.
 
-6. Siga los pasos para desproteger.
+6. Siga los pasos para des echar un vistazo.
 
-## <a name="add-subscriptions-or-add-ons-to-an-existing-office-365-account"></a>Agregar suscripciones o complementos a una cuenta de Office 365 existente
+## <a name="add-subscriptions-or-add-ons-to-an-existing-office-365-account"></a>Agregar suscripciones o complementos a una cuenta existente de Office 365
 
-1. En el [centro de administración](https://go.microsoft.com/fwlink/p/?linkid=850627), vaya a **Billing** la \> Página servicios de **compra** de facturación.
+1. En el [centro de administración,](https://go.microsoft.com/fwlink/p/?linkid=850627)vaya a la página **Servicios de compra** de \> **facturación.**
 
-2. Seleccione los servicios que quiera comprar, seleccione **comprar**y, a continuación, seleccione **Desproteger ahora**.
+2. Selecciona los servicios que quieras comprar, selecciona Comprar y, a continuación, desproteme **ahora.**
 
-3. Sigue las instrucciones para completar la compra.
+3. Siga las instrucciones para completar la compra.
 
 ## <a name="payment-options"></a>Opciones de pago
 
-Puede pagar la suscripción de la siguiente manera:
+Puede pagar la suscripción mediante:
 
 - Factura
 
-- Pago en línea con Alipay o UnionPay de China
+- Pago en línea con Alipay o China UnionPay
 
-La prueba de pago se proporcionará en forma de Fapiaos. Puede enviar su solicitud de Fapiao a nuestro [sistema de Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) aproximadamente tres (3) días después de pagar. Para obtener más información, consulte [Apply for a Fapiao for Office 365 operated by 21Vianet](apply-for-a-fapiao.md).
+La prueba de pago se proporciona en forma de Fapiaos. Puedes enviar tu solicitud de Fapiao a nuestro [sistema Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) unos tres (3) días después de haber pagado. Para obtener más información, vea [Aplicar un Fapiao para Office 365 operado por 21Vianet.](apply-for-a-fapiao.md)
 
 > [!NOTE]
 >  No se aceptan tarjetas de crédito internacionales.

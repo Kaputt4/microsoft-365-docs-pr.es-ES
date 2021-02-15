@@ -24,15 +24,15 @@ ms.locfileid: "48646888"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en RUB y haga referencia al número de factura en la remesa de pago.
+Pagar solo en RUB y hacer referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** ZAO KB Citibank en Moscú  
-**Código SWIFT:** CITIRUMX  
-**Bik:** 044525202  
-**DCI:** 7731420476  
+**Banco:** ZAO KB KbKbbank en Rusia  
+**Código SWIFT:** RUMRUMX  
+**PIE:** 044525202  
+**INN:** 7731420476  
 **KPP:** 773101001  
 **Número de cuenta:** 40702810000702700004  
-**Cuenta correspondiente:** 30101810300000000202 en OPERU Moskovsky GTU Bank of Rusia  
-**Nombre de cuenta:** Pagos de Microsoft Rusia LLC
+**Cuenta correspondiente:** 30101810300000000202 en OPERU Moskovsk GTU Bank of Russia  
+**Nombre de cuenta:** Microsoft Payments Rusia LLC

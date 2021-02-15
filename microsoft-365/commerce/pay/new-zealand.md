@@ -1,5 +1,5 @@
 ---
-title: Información de pago para Nueva Zelanda
+title: Información de pago de Nueva Zelanda
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,19 +20,19 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48649048"
 ---
-# <a name="payment-information-for-new-zealand"></a>Información de pago para Nueva Zelanda
+# <a name="payment-information-for-new-zealand"></a>Información de pago de Nueva Zelanda
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en NZD y haga referencia al número de factura en la remesa de pago.
+Pagar solo en NZD y hacer referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank  
+**Banco:** Bank  
 **Código bancario:** 31  
 **Código de sucursal:** 2840  
-**Código SWIFT:** CITINZ2X  
+**Código SWIFT:** NZ2X  
 **Sufijo (3 dígitos):** 004    
 **Sufijo (2 dígitos):** 04  
 **Número de cuenta:** 0026181  
-**Nombre de cuenta:** VENTAS REGIONALES DE MICROSOFT CORP.  
+**Nombre de cuenta:** MICROSOFT REGIONAL SALES CORP  

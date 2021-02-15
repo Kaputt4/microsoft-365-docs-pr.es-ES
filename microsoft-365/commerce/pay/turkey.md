@@ -24,12 +24,12 @@ ms.locfileid: "48648280"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en TRY y haga referencia al número de factura en la remesa de pago.
+Pagar solo en TRY y hacer referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** La sustancia de Citibank, Estambul  
-**Código SWIFT:** CITITRIX  
-**Iban:** TR420009200000000092407039  
+**Banco:** Bank A.S., Requete  
+**Código SWIFT:** TRIX  
+**IBAN:** TR420009200000000092407039  
 **Número de cuenta:** 92407039  
 **Nombre de cuenta:** Pagos de Microsoft  

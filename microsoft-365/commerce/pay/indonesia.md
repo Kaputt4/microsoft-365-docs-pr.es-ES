@@ -24,12 +24,12 @@ ms.locfileid: "48647212"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md). 
 
-Pague solo en IDR y haga referencia al número de factura en la remesa de pago.
+Pagar solo en id. y hacer referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank, Indonesia  
+**Banco:** Bank, Indonesia  
 **Rama:** Yakarta  
-**Código SWIFT:** CITIIDJX  
+**Código SWIFT:** HEXADECIMALIDJX  
 **Número de cuenta:** 104468055  
 **Nombre de cuenta:** PT Microsoft Indonesia  

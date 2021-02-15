@@ -24,13 +24,13 @@ ms.locfileid: "48648304"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md). <!--This should go to the parent "Pay for your Microsoft 365 for business subscription" topic-->
 
-Pague solo en USD y haga referencia al número de factura en la remesa de pago.
+Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank, Londres  
-**Código SWIFT:** CITIGB2L  
-**Iban:** GB95CITI18500812510049  
+**Banco:** Bank, Londres  
+**Código SWIFT:** GBGB2L  
+**IBAN:** GB95CITI18500812510049  
 **Número de cuenta:** 12510049  
 **Nombre de cuenta:** MICROSOFT  
 

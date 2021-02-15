@@ -24,12 +24,12 @@ ms.locfileid: "48648400"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en CHF y haga referencia al número de factura en la remesa de pago.
+Pagar solo en CHF y hacer referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank, Londres  
-**Código SWIFT/BIC:** CITIGB2L  
-**Iban:** GB44CITI18500812207648  
+**Banco:** Bank, Londres  
+**Código SWIFT/BIC:** GBGB2L  
+**IBAN:** GB44CITI18500812207648  
 **Número de cuenta:** 12207648  
 **Nombre de cuenta:** MICROSOFT  

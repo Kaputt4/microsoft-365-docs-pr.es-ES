@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-description: Obtenga más información sobre la aplicación de Microsoft Office para iOS para Office 365 operado por 21Vianet y cómo descargarla para clientes en China.
+description: Obtenga más información sobre Microsoft Office aplicación para iOS para Office 365 operado por 21Vianet y cómo descargarla para los clientes de China.
 monikerRange: o365-21vianet
 ms.openlocfilehash: f1179b21b8db9b6ba7ff9016d575e687d802fbda
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -29,28 +29,28 @@ ms.locfileid: "48644800"
 ---
 # <a name="office-app-for-ios-for-office-365-operated-by-21vianet"></a>Aplicación de Office para iOS para Office 365 operado por 21Vianet
 
-La aplicación de Microsoft Office para iOS combina aplicaciones móviles de Word, Excel y PowerPoint en una sola aplicación que se puede descargar para teléfonos con iOS. Con la aplicación de Office para iOS, puede conectarse a Office 365 de la misma manera que lo haría con las aplicaciones móviles de Word, Excel y PowerPoint. La descarga de la aplicación de Office para iOS no afectará a las instalaciones existentes de Word, Excel y PowerPoint.
+La Microsoft Office para iOS combina las aplicaciones móviles de Word, Excel y PowerPoint en una sola aplicación disponible para su descarga para teléfonos iOS. Con la aplicación de Office para iOS, puede conectarse a Office 365 como lo haría con las aplicaciones móviles de Word, Excel y PowerPoint. La descarga de la aplicación de Office para iOS no afectará a las instalaciones existentes de Word, Excel y PowerPoint.
 
-Algunas de las características de aplicaciones de Office para iOS no están disponibles para los clientes de Office 365 operado por 21Vianet:
+Algunas características de la aplicación de Office para iOS no están disponibles para los clientes de Office 365 operado por 21Vianet:
 
-- Imagen a texto e imagen en tabla 
-- Conversión de fotos a documentos de Word desde un objetivo 
+- Imagen a texto e Imagen a tabla 
+- Convertir fotos en documentos de Word desde Lens 
 - Acción transferir archivos 
-- Las notas siguen siendo locales y no se sincronizan con el servidor
-- Vista previa de vínculo en el recorrido QR
-- Tarjetas de roles en directo en la sección yo
+- Las notas permanecen locales y no se sincronizan con el servidor
+- Vista previa de vínculos dentro de Scan QR
+- Tarjetas de persona en directo en la sección Yo
 - Clasificación, etiquetado y protección (CLP)
 
 
 ## <a name="download-the-office-app-for-ios"></a>Descargar la aplicación de Office para iOS
 
-- Descargue la aplicación de Office para iPhone desde la [App Store](https://products.office.com/mobile/office?rtc=2). 
+- Descargue la aplicación de Office para iPhones desde [la Tienda de aplicaciones.](https://products.office.com/mobile/office?rtc=2) 
 
 > [!NOTE]
-> Actualmente, la aplicación de Office para iOS solo está disponible para iPhone. La compatibilidad con iPad se agregará en un momento posterior. 
+> La aplicación de Office para iOS solo está disponible actualmente para iPhone. La compatibilidad con iPad se agregará más adelante. 
 
 ## <a name="security-considerations"></a>Consideraciones acerca de la seguridad
 
-Si su organización inserta aplicaciones en dispositivos móviles para empleados, se recomienda reemplazar las aplicaciones de Word, Excel y PowerPoint con la aplicación de Office para iOS.  
+Si su organización inserta aplicaciones en dispositivos móviles de los empleados, le sugerimos que reemplace las aplicaciones de Word, Excel y PowerPoint por la aplicación de Office para iOS.  
 
 

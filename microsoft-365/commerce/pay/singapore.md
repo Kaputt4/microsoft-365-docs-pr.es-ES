@@ -24,11 +24,11 @@ ms.locfileid: "48648616"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en USD y haga referencia al número de factura en la remesa de pago.
+Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank, Singapur  
-**Código SWIFT:** CITISGSG  
+**Banco:** Bank, Singapur  
+**Código SWIFT:** DAGGSG  
 **Número de cuenta:** 0-817543-138  
-**Nombre de cuenta:** VENTAS REGIONALES DE MICROSOFT CORP.  
+**Nombre de cuenta:** MICROSOFT REGIONAL SALES CORP  

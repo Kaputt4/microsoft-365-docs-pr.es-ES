@@ -24,19 +24,19 @@ ms.locfileid: "48648100"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en USD y haga referencia al número de factura en la remesa de pago.
+Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.
 
-## <a name="check"></a>Check
+## <a name="check"></a>Cheque
 
-**Beneficiario:** Microsoft  
-**Dirección postal:**   
+**Pagador:** Microsoft  
+**Dirección de correo:**   
 Correo estándar: PO Box 842103, Dallas, TX 75284-2103  
-Mail Express: Lockbox 842103, 1950 N. Stemmons Frwy, Ste. 5010, Dallas, TX 75207-2103
+Correo rápido: Caja de seguridad 842103, 1950 N. Stemmons Frwy, Ste. 5010, Dallas, TX 75207-2103
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Banco de América  
+**Banco:** Bank of America  
 **Código SWIFT:** BOFAUS3N  
-**Número de enrutamiento/ABA:** 111 000 012  
+**ABA/Routing Number:** 111 000 012  
 **Número de cuenta:** 4426587954  
 **Nombre de cuenta:** Microsoft  

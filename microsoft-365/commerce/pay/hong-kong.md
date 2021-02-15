@@ -24,13 +24,13 @@ ms.locfileid: "48647260"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Siga las instrucciones de pago en su factura y haga referencia a los números de factura en la remesa de pago.
+Siga las instrucciones de pago de la factura y haga referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
 **Banco:** HSBC, Hong Kong  
-**Código de banco:** 004  
+**Código bancario:** 004  
 **Código de sucursal:** 848  
 **Código SWIFT:** HSBCHKHH  
 **Número de cuenta:** 848342259001    
-**Nombre de cuenta:** Pte de Ltd-Payco de pago de pagos de Microsoft
+**Nombre de cuenta:** Microsoft Payments Pte Ltd-Payco Invoice

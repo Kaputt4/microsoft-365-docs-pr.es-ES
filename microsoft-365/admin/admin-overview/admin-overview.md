@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
-description: 'Obtenga información sobre el centro de administración de 365 de Microsoft: Cómo iniciar sesión, quién es su administrador, y vea una introducción al vídeo sobre el mismo.'
+description: 'Obtenga información sobre el Centro de administración de Microsoft 365: cómo iniciar sesión, quién es su administrador y vea una introducción en vídeo al respecto.'
 ms.openlocfilehash: 6db1ea88d9a9aeb003f16c746a8fe0a5b4d87a42
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
@@ -30,9 +30,9 @@ ms.locfileid: "48646600"
 # <a name="admin-center-overview"></a>Información general del Centro de administración 
 
   
-Al comprar un [plan de microsoft 365 apps for Business](https://go.microsoft.com/fwlink/?linkid=856886) o un plan de [Microsoft 365 para la empresa](https://www.microsoft.com/microsoft-365/business), le ofrecemos una cuenta especial que tiene permisos de administrador. Esta cuenta se denomina cuenta de administrador.
+Cuando compre un plan de Aplicaciones de [Microsoft 365](https://go.microsoft.com/fwlink/?linkid=856886) para empresas o un plan de [Microsoft 365](https://www.microsoft.com/microsoft-365/business)para empresas, le ofrecemos una cuenta especial con permisos de administrador. Esta cuenta se denomina cuenta de administrador.
   
-Con esta cuenta, puede obtener acceso al centro de administración de Microsoft 365 para administrar su empresa: agregar usuarios, administrar la suscripción, restablecer contraseñas y mucho más. ¿Se atreve?
+Con esta cuenta puede acceder al Centro de administración de Microsoft 365 para administrar su empresa: agregar usuarios, administrar la suscripción, restablecer contraseñas y mucho más. ¿Se atreve?
   
 ::: moniker range="o365-worldwide"
 
@@ -52,7 +52,7 @@ Con esta cuenta, puede obtener acceso al centro de administración de Microsoft 
 
 ::: moniker-end
 
-Si recibe el mensaje "**no tiene permiso para obtener acceso a esta página o realizar esta acción**", no es administrador.
+Si recibe el mensaje **"No** tiene permiso para acceder a esta página o realizar esta acción", no es administrador.
 <br><br>    
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/3a4e19ee-1a2a-473f-8995-06de0052c169?autoplay=false]
   
@@ -61,12 +61,12 @@ Si recibe el mensaje "**no tiene permiso para obtener acceso a esta página o re
 
 A la hora de buscar a su administrador para restablecer su contraseña, eliminar una cuenta o realizar otras tareas, debería ponerse en contacto con él de la siguiente manera:
   
-- **Universidades y escuelas**: póngase en contacto con su equipo de soporte técnico. Normalmente puede encontrar un vínculo en el sitio de su universidad. En escuelas más pequeñas, es posible que solo algunos usuarios tengan permisos de administrador. 
+- **Universidades y escuelas**: póngase en contacto con su equipo de soporte técnico. Normalmente puede encontrar un vínculo en el sitio de su universidad. En escuelas más pequeñas, puede haber solo algunas personas que tienen permisos de administrador. 
     
 - **Grandes empresas**: póngase en contacto con el departamento de soporte técnico. 
     
 - **Pequeñas empresas**: póngase en contacto con el propietario o copropietario de la empresa. A menudo se proporcionan permisos de administrador a los consultores de TI que hacen el trabajo de mantenimiento informático para la empresa. 
     
-De forma predeterminada, la persona que registra y adquiere una suscripción de Microsoft 365 para empresas obtiene permisos de administrador. Esa persona puede asignar permisos de administrador a otras personas para ayudarles a administrar Microsoft 365 para su organización.
+De forma predeterminada, la persona que se suscribe y compra una suscripción a Microsoft 365 para empresas obtiene permisos de administrador. Esa persona puede asignar permisos de administrador a otras personas para ayudarles a administrar Microsoft 365 para su organización.
   
-Si no sabe con quién ponerse en contacto en su trabajo o centro educativo para obtener ayuda, intente preguntar a la persona que le proporcionó la cuenta de usuario y la contraseña.
+Si no tiene idea de con quién ponerse en contacto en su trabajo o escuela para obtener ayuda, intente pedir ayuda a la persona que le proporcionó su cuenta de usuario y contraseña.

@@ -24,11 +24,11 @@ ms.locfileid: "48648544"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en ZAR y haga referencia al número de factura en la remesa de pago.
+Pagar solo en ZAR y hacer referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank  
+**Banco:** Bank  
 **Rama:** Johannesburgo  
 **Código SWIFT:** CITIZAJ  
 **Número de cuenta:** 0201419034  

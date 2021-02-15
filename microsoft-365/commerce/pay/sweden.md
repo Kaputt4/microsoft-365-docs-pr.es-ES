@@ -1,5 +1,5 @@
 ---
-title: Información de pago para Suecia
+title: Información de pago de Suecia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,17 +20,17 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48648436"
 ---
-# <a name="payment-information-for-sweden"></a>Información de pago para Suecia
+# <a name="payment-information-for-sweden"></a>Información de pago de Suecia
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en SEK y haga referencia al número de factura en la remesa de pago.
+Pagar solo en SEK y hacer referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank, Londres  
-**Código SWIFT/BIC:** CITIGB2L  
-**Iban:** GB22CITI18500812207656  
-**Código de ordenación:** 185008  
+**Banco:** Bank, Londres  
+**Código SWIFT/BIC:** GBGB2L  
+**IBAN:** GB22CITI18500812207656  
+**Código sort:** 185008  
 **Número de cuenta:** 12207656  
 **Nombre de cuenta:** MICROSOFT 
