@@ -1,5 +1,5 @@
 ---
-title: Información de pago para la República Checa
+title: Información de pago de la República Checa
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,17 +20,17 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637264"
 ---
-# <a name="payment-information-for-czech-republic"></a><span data-ttu-id="5c512-103">Información de pago para la República Checa</span><span class="sxs-lookup"><span data-stu-id="5c512-103">Payment information for Czech Republic</span></span>
+# <a name="payment-information-for-czech-republic"></a><span data-ttu-id="a82d9-103">Información de pago de la República Checa</span><span class="sxs-lookup"><span data-stu-id="a82d9-103">Payment information for Czech Republic</span></span>
 
-<span data-ttu-id="5c512-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="5c512-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="a82d9-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="a82d9-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="5c512-105">Pague solo en EUR y haga referencia al número de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="5c512-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="a82d9-105">Pagar solo en EUR y hacer referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="a82d9-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="5c512-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="5c512-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="a82d9-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="a82d9-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="5c512-107">**Banco:** Citibank, Londres</span><span class="sxs-lookup"><span data-stu-id="5c512-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="5c512-108">**Código SWIFT/BIC:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="5c512-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
-<span data-ttu-id="5c512-109">**Iban:** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="5c512-109">**IBAN:** GB31CITI18500812207591</span></span>  
-<span data-ttu-id="5c512-110">**Código de ordenación:** 185008</span><span class="sxs-lookup"><span data-stu-id="5c512-110">**SORT Code:** 185008</span></span>  
-<span data-ttu-id="5c512-111">**Número de cuenta:** 12207591</span><span class="sxs-lookup"><span data-stu-id="5c512-111">**Account Number:** 12207591</span></span>  
-<span data-ttu-id="5c512-112">**Nombre de cuenta:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="5c512-112">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="a82d9-107">**Banco:** Bank, Londres</span><span class="sxs-lookup"><span data-stu-id="a82d9-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="a82d9-108">**Código SWIFT/BIC:** GBGB2L</span><span class="sxs-lookup"><span data-stu-id="a82d9-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
+<span data-ttu-id="a82d9-109">**IBAN:** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="a82d9-109">**IBAN:** GB31CITI18500812207591</span></span>  
+<span data-ttu-id="a82d9-110">**Código sort:** 185008</span><span class="sxs-lookup"><span data-stu-id="a82d9-110">**SORT Code:** 185008</span></span>  
+<span data-ttu-id="a82d9-111">**Número de cuenta:** 12207591</span><span class="sxs-lookup"><span data-stu-id="a82d9-111">**Account Number:** 12207591</span></span>  
+<span data-ttu-id="a82d9-112">**Nombre de cuenta:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="a82d9-112">**Account Name:** MICROSOFT</span></span>  

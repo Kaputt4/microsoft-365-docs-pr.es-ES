@@ -1,5 +1,5 @@
 ---
-title: Información de pago para Côte d'Ivoire
+title: Información de pago de Côte d'Ivoire
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637420"
 ---
-# <a name="payment-information-for-cte-divoire"></a><span data-ttu-id="d0153-103">Información de pago para Côte d'Ivoire</span><span class="sxs-lookup"><span data-stu-id="d0153-103">Payment information for Côte d'Ivoire</span></span>
+# <a name="payment-information-for-cte-divoire"></a><span data-ttu-id="99f2d-103">Información de pago de Côte d'Ivoire</span><span class="sxs-lookup"><span data-stu-id="99f2d-103">Payment information for Côte d'Ivoire</span></span>
 
-<span data-ttu-id="d0153-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="d0153-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="99f2d-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="99f2d-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="d0153-105">Pague solo en USD y haga referencia al número de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="d0153-105">Please pay in USD only and reference your invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="99f2d-105">Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="99f2d-105">Please pay in USD only and reference your invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="d0153-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="d0153-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="99f2d-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="99f2d-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="d0153-107">**Banco:** Citibank, Londres</span><span class="sxs-lookup"><span data-stu-id="d0153-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="d0153-108">**Código SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="d0153-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="d0153-109">**Iban:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="d0153-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="d0153-110">**Número de cuenta:** 12510049</span><span class="sxs-lookup"><span data-stu-id="d0153-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="d0153-111">**Nombre de cuenta:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="d0153-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="99f2d-107">**Banco:** Bank, Londres</span><span class="sxs-lookup"><span data-stu-id="99f2d-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="99f2d-108">**Código SWIFT:** GBGB2L</span><span class="sxs-lookup"><span data-stu-id="99f2d-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="99f2d-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="99f2d-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="99f2d-110">**Número de cuenta:** 12510049</span><span class="sxs-lookup"><span data-stu-id="99f2d-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="99f2d-111">**Nombre de cuenta:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="99f2d-111">**Account Name:** MICROSOFT</span></span>  

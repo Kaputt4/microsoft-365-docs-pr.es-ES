@@ -20,16 +20,16 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637972"
 ---
-# <a name="payment-information-for-australia"></a><span data-ttu-id="fedba-103">Información de pago para Australia</span><span class="sxs-lookup"><span data-stu-id="fedba-103">Payment information for Australia</span></span>
+# <a name="payment-information-for-australia"></a><span data-ttu-id="dcec9-103">Información de pago para Australia</span><span class="sxs-lookup"><span data-stu-id="dcec9-103">Payment information for Australia</span></span>
 
-<span data-ttu-id="fedba-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="fedba-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="dcec9-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="dcec9-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="fedba-105">Pague solo en AUD y haga referencia al número de factura en su reenvío de factura.</span><span class="sxs-lookup"><span data-stu-id="fedba-105">Please pay in AUD only and reference your invoice number(s) on your invoice remittance.</span></span>
+<span data-ttu-id="dcec9-105">Pagar solo en AUD y hacer referencia a los números de factura en la remesa de factura.</span><span class="sxs-lookup"><span data-stu-id="dcec9-105">Please pay in AUD only and reference your invoice number(s) on your invoice remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="fedba-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="fedba-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="dcec9-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="dcec9-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="fedba-107">**Banco:** Citibank, Sydney</span><span class="sxs-lookup"><span data-stu-id="fedba-107">**Bank:** Citibank, Sydney</span></span>  
-<span data-ttu-id="fedba-108">**Código SWIFT:** CITIAU2X</span><span class="sxs-lookup"><span data-stu-id="fedba-108">**SWIFT Code:** CITIAU2X</span></span>  
-<span data-ttu-id="fedba-109">**Código BSB:** 242000</span><span class="sxs-lookup"><span data-stu-id="fedba-109">**BSB Code:** 242000</span></span>  
-<span data-ttu-id="fedba-110">**Número de cuenta:** 205565043</span><span class="sxs-lookup"><span data-stu-id="fedba-110">**Account Number:** 205565043</span></span>  
-<span data-ttu-id="fedba-111">**Nombre de cuenta:** VENTAS REGIONALES DE MICROSOFT CORP.</span><span class="sxs-lookup"><span data-stu-id="fedba-111">**Account Name:** MICROSOFT REGIONAL SALES CORP</span></span>  
+<span data-ttu-id="dcec9-107">**Banco:** Bank, Sydney</span><span class="sxs-lookup"><span data-stu-id="dcec9-107">**Bank:** Citibank, Sydney</span></span>  
+<span data-ttu-id="dcec9-108">**Código SWIFT:** AU2X</span><span class="sxs-lookup"><span data-stu-id="dcec9-108">**SWIFT Code:** CITIAU2X</span></span>  
+<span data-ttu-id="dcec9-109">**Código BSB:** 242000</span><span class="sxs-lookup"><span data-stu-id="dcec9-109">**BSB Code:** 242000</span></span>  
+<span data-ttu-id="dcec9-110">**Número de cuenta:** 205565043</span><span class="sxs-lookup"><span data-stu-id="dcec9-110">**Account Number:** 205565043</span></span>  
+<span data-ttu-id="dcec9-111">**Nombre de cuenta:** MICROSOFT REGIONAL SALES CORP</span><span class="sxs-lookup"><span data-stu-id="dcec9-111">**Account Name:** MICROSOFT REGIONAL SALES CORP</span></span>  

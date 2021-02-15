@@ -1,5 +1,5 @@
 ---
-title: Información de pago para el Salvador
+title: Información de pago de El Salvador
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48636786"
 ---
-# <a name="payment-information-for-el-salvador"></a><span data-ttu-id="d3f0b-103">Información de pago para el Salvador</span><span class="sxs-lookup"><span data-stu-id="d3f0b-103">Payment information for El Salvador</span></span>
+# <a name="payment-information-for-el-salvador"></a><span data-ttu-id="30513-103">Información de pago de El Salvador</span><span class="sxs-lookup"><span data-stu-id="30513-103">Payment information for El Salvador</span></span>
 
-<span data-ttu-id="d3f0b-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="d3f0b-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="30513-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="30513-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="d3f0b-105">Pague solo en USD y haga referencia al número de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="d3f0b-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="30513-105">Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="30513-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="d3f0b-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="d3f0b-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="30513-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="30513-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="d3f0b-107">**Banco:** Banco de América</span><span class="sxs-lookup"><span data-stu-id="d3f0b-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="d3f0b-108">**Rama:** Dallas</span><span class="sxs-lookup"><span data-stu-id="d3f0b-108">**Branch:** Dallas</span></span>  
-<span data-ttu-id="d3f0b-109">**Código SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="d3f0b-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="d3f0b-110">**Número de cuenta:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="d3f0b-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="d3f0b-111">**Nombre de cuenta:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="d3f0b-111">**Account Name:** Microsoft</span></span>  
+<span data-ttu-id="30513-107">**Banco:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="30513-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="30513-108">**Rama:** Dallas</span><span class="sxs-lookup"><span data-stu-id="30513-108">**Branch:** Dallas</span></span>  
+<span data-ttu-id="30513-109">**Código SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="30513-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="30513-110">**Número de cuenta:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="30513-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="30513-111">**Nombre de cuenta:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="30513-111">**Account Name:** Microsoft</span></span>  

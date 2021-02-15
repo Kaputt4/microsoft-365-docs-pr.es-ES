@@ -20,17 +20,17 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48636832"
 ---
-# <a name="payment-information-for-estonia"></a><span data-ttu-id="86d6e-103">Información de pago para Estonia</span><span class="sxs-lookup"><span data-stu-id="86d6e-103">Payment information for Estonia</span></span>
+# <a name="payment-information-for-estonia"></a><span data-ttu-id="31c96-103">Información de pago para Estonia</span><span class="sxs-lookup"><span data-stu-id="31c96-103">Payment information for Estonia</span></span>
 
-<span data-ttu-id="86d6e-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="86d6e-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="31c96-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="31c96-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="86d6e-105">Pague solo en EUR y haga referencia al número de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="86d6e-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="31c96-105">Pagar solo en EUR y hacer referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="31c96-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="86d6e-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="86d6e-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="31c96-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="31c96-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="86d6e-107">**Banco:** Citibank, Londres</span><span class="sxs-lookup"><span data-stu-id="86d6e-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="86d6e-108">**Código SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="86d6e-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="86d6e-109">**Iban:** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="86d6e-109">**IBAN:** GB31CITI18500812207591</span></span>  
-<span data-ttu-id="86d6e-110">**Código de ordenación:** 185008</span><span class="sxs-lookup"><span data-stu-id="86d6e-110">**SORT Code:** 185008</span></span>  
-<span data-ttu-id="86d6e-111">**Número de cuenta:** 12207591</span><span class="sxs-lookup"><span data-stu-id="86d6e-111">**Account Number:** 12207591</span></span>  
-<span data-ttu-id="86d6e-112">**Nombre de cuenta:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="86d6e-112">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="31c96-107">**Banco:** Bank, Londres</span><span class="sxs-lookup"><span data-stu-id="31c96-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="31c96-108">**Código SWIFT:** GBGB2L</span><span class="sxs-lookup"><span data-stu-id="31c96-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="31c96-109">**IBAN:** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="31c96-109">**IBAN:** GB31CITI18500812207591</span></span>  
+<span data-ttu-id="31c96-110">**Código sort:** 185008</span><span class="sxs-lookup"><span data-stu-id="31c96-110">**SORT Code:** 185008</span></span>  
+<span data-ttu-id="31c96-111">**Número de cuenta:** 12207591</span><span class="sxs-lookup"><span data-stu-id="31c96-111">**Account Number:** 12207591</span></span>  
+<span data-ttu-id="31c96-112">**Nombre de cuenta:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="31c96-112">**Account Name:** MICROSOFT</span></span>  

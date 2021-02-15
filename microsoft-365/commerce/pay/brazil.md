@@ -20,8 +20,8 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637684"
 ---
-# <a name="payment-information-for-brazil"></a><span data-ttu-id="b72f2-103">Información de pago para Brasil</span><span class="sxs-lookup"><span data-stu-id="b72f2-103">Payment information for Brazil</span></span>
+# <a name="payment-information-for-brazil"></a><span data-ttu-id="ce526-103">Información de pago para Brasil</span><span class="sxs-lookup"><span data-stu-id="ce526-103">Payment information for Brazil</span></span>
 
-<span data-ttu-id="b72f2-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="b72f2-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="ce526-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="ce526-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="b72f2-105">Siga las instrucciones de pago en su factura y haga referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="b72f2-105">Please follow payment instruction on your invoice and reference invoice number(s) on the payment remittance.</span></span>  
+<span data-ttu-id="ce526-105">Siga las instrucciones de pago en la factura y haga referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="ce526-105">Please follow payment instruction on your invoice and reference invoice number(s) on the payment remittance.</span></span>  

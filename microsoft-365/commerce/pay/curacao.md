@@ -1,5 +1,5 @@
 ---
-title: Información de pago para Curacao
+title: Información de pago de Curazao
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637408"
 ---
-# <a name="payment-information-for-curacao"></a><span data-ttu-id="3015b-103">Información de pago para Curacao</span><span class="sxs-lookup"><span data-stu-id="3015b-103">Payment information for Curacao</span></span>
+# <a name="payment-information-for-curacao"></a><span data-ttu-id="8fdc7-103">Información de pago de Curazao</span><span class="sxs-lookup"><span data-stu-id="8fdc7-103">Payment information for Curacao</span></span>
 
-<span data-ttu-id="3015b-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="3015b-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="8fdc7-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="8fdc7-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="3015b-105">Pague solo en USD y haga referencia al número de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="3015b-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="8fdc7-105">Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="8fdc7-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="3015b-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="3015b-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="8fdc7-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="8fdc7-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="3015b-107">**Banco:** Banco de América</span><span class="sxs-lookup"><span data-stu-id="3015b-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="3015b-108">**Rama:** Dallas</span><span class="sxs-lookup"><span data-stu-id="3015b-108">**Branch:** Dallas</span></span>  
-<span data-ttu-id="3015b-109">**Código SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="3015b-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="3015b-110">**Número de cuenta:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="3015b-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="3015b-111">**Nombre de cuenta:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="3015b-111">**Account Name:** Microsoft</span></span>  
+<span data-ttu-id="8fdc7-107">**Banco:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="8fdc7-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="8fdc7-108">**Rama:** Dallas</span><span class="sxs-lookup"><span data-stu-id="8fdc7-108">**Branch:** Dallas</span></span>  
+<span data-ttu-id="8fdc7-109">**Código SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="8fdc7-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="8fdc7-110">**Número de cuenta:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="8fdc7-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="8fdc7-111">**Nombre de cuenta:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="8fdc7-111">**Account Name:** Microsoft</span></span>  

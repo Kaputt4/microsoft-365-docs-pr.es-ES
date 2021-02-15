@@ -1,5 +1,5 @@
 ---
-title: Información de pago para Brunei
+title: Información de pago de Brunéi
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,15 +20,15 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637675"
 ---
-# <a name="payment-information-for-brunei"></a><span data-ttu-id="2ec92-103">Información de pago para Brunei</span><span class="sxs-lookup"><span data-stu-id="2ec92-103">Payment information for Brunei</span></span>
+# <a name="payment-information-for-brunei"></a><span data-ttu-id="e4bf8-103">Información de pago de Brunéi</span><span class="sxs-lookup"><span data-stu-id="e4bf8-103">Payment information for Brunei</span></span>
 
-<span data-ttu-id="2ec92-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="2ec92-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="e4bf8-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="e4bf8-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="2ec92-105">Pague solo en USD y haga referencia al número de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="2ec92-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="e4bf8-105">Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="e4bf8-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="2ec92-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="2ec92-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="e4bf8-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="e4bf8-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="2ec92-107">**Banco:** Citibank, Singapur</span><span class="sxs-lookup"><span data-stu-id="2ec92-107">**Bank:** Citibank, Singapore</span></span>   
-<span data-ttu-id="2ec92-108">**Código SWIFT:** CITISGSG</span><span class="sxs-lookup"><span data-stu-id="2ec92-108">**SWIFT Code:** CITISGSG</span></span>  
-<span data-ttu-id="2ec92-109">**Número de cuenta** 0-817543-138,</span><span class="sxs-lookup"><span data-stu-id="2ec92-109">**Account Number** 0-817543-138,</span></span>  
-<span data-ttu-id="2ec92-110">**Nombre de cuenta:** VENTAS REGIONALES DE MICROSOFT CORP.</span><span class="sxs-lookup"><span data-stu-id="2ec92-110">**Account Name:** MICROSOFT REGIONAL SALES CORP</span></span>  
+<span data-ttu-id="e4bf8-107">**Banco:** Bank, Singapur</span><span class="sxs-lookup"><span data-stu-id="e4bf8-107">**Bank:** Citibank, Singapore</span></span>   
+<span data-ttu-id="e4bf8-108">**Código SWIFT:** DAGGSG</span><span class="sxs-lookup"><span data-stu-id="e4bf8-108">**SWIFT Code:** CITISGSG</span></span>  
+<span data-ttu-id="e4bf8-109">**Número de** cuenta 0-817543-138,</span><span class="sxs-lookup"><span data-stu-id="e4bf8-109">**Account Number** 0-817543-138,</span></span>  
+<span data-ttu-id="e4bf8-110">**Nombre de cuenta:** MICROSOFT REGIONAL SALES CORP</span><span class="sxs-lookup"><span data-stu-id="e4bf8-110">**Account Name:** MICROSOFT REGIONAL SALES CORP</span></span>  
