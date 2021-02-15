@@ -36,7 +36,7 @@ Escritorio administrado de Microsoft no recopila datos por sí mismo para propor
 
 ## <a name="data-storage-and-sources-in-microsoft-managed-desktop"></a>Almacenamiento de datos y orígenes en escritorio administrado de Microsoft
 
-Una vez que El Escritorio administrado de Microsoft obtiene los datos, necesita proporcionar su servicio, almacenamiento y procesamiento de los datos de la siguiente manera:
+Una vez que el Escritorio administrado de Microsoft obtiene los datos, debe proporcionar su servicio, almacenamiento y procesamiento de los datos de la siguiente manera:
 
 ### <a name="storing-data-storage-location-and-data-retention"></a>Almacenar datos, ubicación de almacenamiento y retención de datos
 
@@ -61,7 +61,7 @@ Escritorio administrado de Microsoft usa estos datos:
 |Datos de Azure Active Directory     | Se usa en informes creados para administradores de inquilinos, que están disponibles en el portal de administración de Escritorio administrado de Microsoft.        |
 |Datos de Intune     | Se usa en informes creados para administradores de inquilinos, que están disponibles en el portal de administración de Escritorio administrado de Microsoft.        |
 |Microsoft Defender para punto de conexión     |  Se usa para abordar las amenazas de seguridad detectadas en dispositivos inscritos por el Centro de operaciones de seguridad (SOC) del Escritorio administrado de Microsoft.  |
-|Datos de diagnóstico de Windows     |Se usa para determinar el estado de actualización de los dispositivos administrados y para proporcionar y mejorar la oferta de IT como servicio (ITaaS) de Microsoft Managed Desktop.         |
+|Datos de diagnóstico de Windows     |Se usa para determinar el estado de actualización de los dispositivos administrados y para proporcionar y mejorar la oferta de It-as-a-Service (ITaaS) de Escritorio administrado de Microsoft.         |
 |Datos de contacto de administrador     | El Escritorio administrado de Microsoft lo usa para comunicarse con los administradores de inquilinos.        |
 
 
@@ -83,11 +83,11 @@ Escritorio administrado de Microsoft procesa estas entidades para proporcionar e
 
 ### <a name="microsoft-azure-active-directory"></a>Microsoft Azure Active Directory
 
-Azure Active Directory almacena los datos de identidad que usa el Escritorio administrado de Microsoft en una ubicación geográfica en función de la dirección proporcionada por la organización al suscribirse a un servicio en línea de Microsoft, como Office 365 o Azure. Consulte [Microsoft Azure: ¿Dónde están los datos de mis clientes?](http://azuredatacentermap.azurewebsites.net/) para obtener un mapa que muestre los centros de datos de Azure Active Directory.
+Azure Active Directory almacena los datos de identidad que usa el Escritorio administrado de Microsoft en una ubicación geográfica en función de la dirección proporcionada por la organización al suscribirse a un servicio en línea de Microsoft, como Office 365 o Azure. Consulte [Microsoft Azure: ¿Dónde están mis datos de cliente?](http://azuredatacentermap.azurewebsites.net/) para obtener un mapa que muestre los centros de datos de Azure Active Directory.
 
 Para obtener más información sobre las regiones que Azure usa para el almacenamiento de datos, vea [Azure Active Directory: dónde](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)se encuentran los datos.
 
-### <a name="microsoft-intune"></a>Microsoft Intune
+### <a name="microsoft-intune"></a>Microsoft Intune
 
 Los datos de Intune se pueden almacenar en algunas regiones diferentes, como Europa Norte (Irlanda) y Europa Occidental (Países Bajos). El administrador de TI crea una cuenta de inquilino y elige el país donde se almacenarán los datos cuando se inscriban inicialmente en los servicios de Intune. Para obtener una lista de las ubicaciones de centros de datos usadas por Intune, vea [Microsoft Intune: ¿Dónde están mis datos de cliente?](http://intunedatacentermap.azurewebsites.net/). Para obtener más información sobre el almacenamiento de datos y el uso de Intune, vea [Recopilación de datos en Intune.](https://docs.microsoft.com/intune/privacy-data-collect)
 
@@ -95,7 +95,7 @@ Los datos de Intune se pueden almacenar en algunas regiones diferentes, como Eur
 
 Los datos de Microsoft Defender para puntos de conexión se pueden almacenar en algunas regiones diferentes. Por este motivo, Defender para puntos de conexión opera en los centros de datos de Microsoft Azure en la Unión Europea, el Reino Unido y en Estados Unidos, como se indica en [Microsoft Defender para](http://intunedatacentermap.azurewebsites.net/)Endpoint: ubicaciones de almacenamiento de datos. Para obtener más información sobre el almacenamiento de datos y el uso de Defender para Endpoint, consulta ¿Qué datos recopila [Microsoft Defender para Endpoint?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
 
-### <a name="windows-10"></a>Windows 10
+### <a name="windows-10"></a>Windows 10
 
 Como se indica en la Declaración de privacidad de [Microsoft,](https://privacy.microsoft.com/privacystatement)"los datos personales recopilados por Microsoft pueden almacenarse y procesarse en su región, en Los Estados Unidos y en cualquier otro país donde Microsoft o sus filiales, subsidiarias o proveedores de servicios operan instalaciones. [...] Normalmente, la ubicación de almacenamiento principal se encuentra en la región del cliente o en Estados Unidos, a menudo con una copia de seguridad en un centro de datos de otra región. Las ubicación o las ubicación de almacenamiento se eligen para funcionar de forma eficaz, mejorar el rendimiento y crear redundancias con el fin de proteger los datos si hay una interrupción u otro problema. Tomamos medidas para asegurarnos de que los datos que recopilamos en esta declaración de privacidad se procesan de acuerdo con las disposiciones de esta declaración y los requisitos de la legislación aplicable donde se encuentran los datos".
 
@@ -123,9 +123,9 @@ Escritorio administrado de Microsoft no usa datos personales recopilados como pa
 
 El Reglamento general de protección de datos [(RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de la Unión Europea otorga derechos a las personas (conocidas en el reglamento como interesados) para administrar los datos personales recopilados por un empresa u otro tipo de agencia u organización (conocido como controlador de datos o simplemente responsable). Los datos personales se definen ampliamente en el RGPD como cualquier dato que guarde relación con una persona física identificada o identificable. El RGPD ofrece a los interesados derechos específicos sobre sus datos personales, como la obtención de copias de ellos, la solicitud de modificaciones, la restricción de tratamiento, la eliminación o la recepción en un formato electrónico que permita su transferencia a otro responsable. Una solicitud formal de un interesado a un responsable para que realice una acción sobre sus datos personales se denomina Solicitud del interesado o DSR.
 
-De forma similar, la Ley de Privacidad del Consumidor de California (CCPA) proporciona derechos y obligaciones de privacidad a los consumidores de California, incluidos derechos similares a los derechos del interesado del RGPD, como el derecho a eliminar, acceder y recibir (portabilidad) su información personal. La CCPA también proporciona ciertas divulgaciones, protecciones contra la discriminación al elegir el ejercicio de derechos y requisitos de "no participar o participar" para determinadas transferencias de datos clasificadas como "ventas". Las ventas se definen de forma amplia para incluir el uso compartido de datos con ánimo de lucro. Para obtener más información sobre la CCPA, consulte la [Ley de Privacidad de los Consumidores California](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa?view=o365-worldwide) y las [Preguntas más frecuentes sobre la privacidad del consumidor de California](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?view=o365-worldwide).
+De forma similar, la Ley de Privacidad del Consumidor de California (CCPA) proporciona derechos y obligaciones de privacidad a los consumidores de California, incluidos derechos similares a los derechos del interesado del RGPD, como el derecho a eliminar, acceder y recibir (portabilidad) su información personal. La CCPA también proporciona ciertas divulgaciones, protecciones contra la discriminación al elegir ejercer derechos y requisitos de "no participar o participar" para determinadas transferencias de datos clasificadas como "ventas". Las ventas se definen de forma amplia para incluir el uso compartido de datos con ánimo de lucro. Para obtener más información sobre la CCPA, consulte la [Ley de Privacidad de los Consumidores California](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa?view=o365-worldwide) y las [Preguntas más frecuentes sobre la privacidad del consumidor de California](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?view=o365-worldwide).
 
-En la siguiente sección se describe cómo Escritorio administrado de Microsoft ayuda a los controladores a buscar, tener acceso y actuar sobre datos personales o información personal que usa el Escritorio administrado de Microsoft.
+En la siguiente sección se describe cómo El Escritorio administrado de Microsoft ayuda a los controladores a buscar, tener acceso y actuar sobre datos personales o información personal que usa el Escritorio administrado de Microsoft.
 
 > [!NOTE]
 > Si busca información general sobre el RGPD, consulte la sección [RGPD](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) del Portal de confianza de servicios.
@@ -136,7 +136,7 @@ Un administrador de inquilinos puede ver, corregir y eliminar sus propios datos 
 
 ### <a name="user-related-personal-data"></a>Datos personales relacionados con el usuario
 
-Aparte de esto, el Escritorio administrado de Microsoft no recopila datos personales por sí mismo. En su lugar, se basa en los datos personales recopilados por otros servicios en línea de Microsoft Enterprise y los usa. Los administradores de TI que buscan responder a sus solicitudes de usuario para ver, corregir y eliminar sus datos personales pueden usar la funcionalidad respectiva de los servicios subyacentes de los que depende el Escritorio administrado de Microsoft. Si está interesado en ver o eliminar datos personales [usados](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure) por estos servicios, consulte primero el artículo Solicitudes del interesado de Azure para el RGPD.
+Aparte de esto, el Escritorio administrado de Microsoft no recopila datos personales por sí mismo. En su lugar, se basa y usa datos personales recopilados por otros Servicios en línea de Microsoft Enterprise. Los administradores de TI que buscan responder a sus solicitudes de usuario para ver, corregir y eliminar sus datos personales pueden usar la funcionalidad respectiva de los servicios subyacentes de los que depende el Escritorio administrado de Microsoft. Si está interesado en ver o eliminar datos personales [usados](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure) por estos servicios, consulte primero el artículo Solicitudes del interesado de Azure para el RGPD.
 
 Además, use las siguientes instrucciones para ejercer las DSR para los servicios de los que depende el Escritorio administrado de Microsoft para la recopilación de datos personales:
 

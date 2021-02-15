@@ -20,7 +20,7 @@ Puede usar dispositivos nuevos y existentes en escritorio administrado de Micros
 
 ## <a name="to-obtain-new-devices"></a>Para obtener nuevos dispositivos
 
-Te recomendamos que trabajes con uno de nuestros partners de dispositivos aprobados. Puedes trabajar con el contacto de tu cuenta de Microsoft para obtener más ayuda para configurar una asociación de dispositivo. Sin embargo, en esencia, el proceso es así:
+Te recomendamos que trabajes con uno de nuestros partners de dispositivos aprobados. Puedes trabajar con el contacto de tu cuenta De Microsoft para obtener más ayuda para configurar una asociación de dispositivo. Sin embargo, en esencia, el proceso es así:
 
 1. Revise la lista de [dispositivos aprobados actualmente.](../service-description/device-list.md)
 2. Ordena los dispositivos, trabajando con un partner de dispositivos aprobado.

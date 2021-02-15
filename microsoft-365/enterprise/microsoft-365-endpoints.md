@@ -36,18 +36,18 @@ Para optimizar el rendimiento de los servicios basados en la nube de Microsoft 3
 
 Consulte Administración de puntos de conexión [de Microsoft 365](managing-office-365-endpoints.md) para obtener más información.
 
-Actualmente hay cinco nubes de Microsoft 365 diferentes. Esta tabla te lleva a la lista de puntos de conexión de cada uno.
+Actualmente hay cinco nubes de Microsoft 365 diferentes. Esta tabla te lleva a la lista de puntos de conexión de cada uno de ellos.
 
-| Nube | Descripción |
+| Nube | Description |
 |:-------|:-----|
 | [Puntos de conexión mundiales](urls-and-ip-address-ranges.md) | Los puntos de conexión para las suscripciones de Microsoft 365 en todo el mundo, que incluyen la nube de la comunidad de administración pública de Estados Unidos (GCC). |
 | [Puntos de conexión de DoD de Estados Unidos](microsoft-365-u-s-government-dod-endpoints.md) | Puntos de conexión para las suscripciones del Department of Defense (DoD) de Estados Unidos. |
 | [Puntos de conexión de GCC High de Estados Unidos](microsoft-365-u-s-government-gcc-high-endpoints.md) | Puntos de conexión para suscripciones a Government Community Cloud High (GCC High) de Estados Unidos. |
-| [Puntos de conexión de Microsoft 365 operados por 21Vianet](urls-and-ip-address-ranges-21vianet.md) | Los puntos de conexión de Microsoft 365 operado por 21Vianet, que está diseñado para satisfacer las necesidades de Microsoft 365 en China. |
+| [Puntos de conexión de Microsoft 365 operado por 21Vianet](urls-and-ip-address-ranges-21vianet.md) | Los puntos de conexión de Microsoft 365 operado por 21Vianet, que está diseñado para satisfacer las necesidades de Microsoft 365 en China. |
 | [Puntos de conexión de Microsoft 365 Germany](microsoft-365-germany-endpoints.md) | Puntos de conexión de una nube independiente en Europa para los clientes con más regulaciones en Alemania, la Unión Europea (UE) y la Asociación Europea de Libre Comercio (AELC). |
 |||
 
-Para automatizar la obtención de la lista más reciente de puntos de conexión para la nube de Microsoft 365, vea la dirección IP de [Office 365](microsoft-365-ip-web-service.md)y el servicio web url.
+Para automatizar la obtención de la lista más reciente de puntos de conexión para la nube de Microsoft 365, vea el servicio web url y la dirección [IP de Office 365.](microsoft-365-ip-web-service.md)
 
 Para consultar puntos de conexión adicionales, vea estos artículos:
 

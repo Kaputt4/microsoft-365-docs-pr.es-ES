@@ -1,5 +1,5 @@
 ---
-title: Buscar estadísticas en eDiscovery avanzado
+title: Estadísticas de búsqueda en eDiscovery avanzado
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Para validar los resultados de la búsqueda, vea las estadísticas que se generan después de ejecutar una búsqueda de colección en la exhibición avanzada de documentos electrónicos.
+description: Valide los resultados de la búsqueda consultando las estadísticas que se generan después de ejecutar una búsqueda de colección en eDiscovery avanzado.
 ms.openlocfilehash: 5b6cfdaffc7851a00035a4edcc9d490b229c455d
 ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
@@ -24,55 +24,55 @@ ms.locfileid: "49750781"
 ---
 # <a name="search-statistics-in-advanced-ediscovery"></a>Estadísticas de búsqueda en eDiscovery avanzado
 
-Una forma de validar los resultados de la búsqueda es ver las estadísticas de los resultados para asegurarse de que se ajustan a sus expectativas. Una vez finalizada la búsqueda, se muestran las estadísticas de alto nivel en el control flotante de detalles de búsqueda:
+Una forma de validar los resultados de la búsqueda es ver las estadísticas de los resultados para asegurarse de que se alineen con sus expectativas. Cuando se completa una búsqueda, se muestran estadísticas de alto nivel en el control desplegable de detalles de búsqueda:
 
-- Número y volumen de los elementos recuperados por la búsqueda
+- Número y volumen de elementos recuperados por la búsqueda
 
-- Número y volumen de los elementos sin indexar o parcialmente indizados que se encontraron en las ubicaciones de búsqueda
+- Número y volumen de elementos parcialmente indizados o sin indexar que se encontraron en las ubicaciones de búsqueda
 
-- Número de buzones y ubicaciones que se han buscado.
-Para ver estadísticas más detalladas, haga clic en "estadísticas" en el control flotante de detalles de búsqueda.
+- Número de buzones y ubicaciones en los que se ha buscado.
+Para ver estadísticas más detalladas, haga clic en "Estadísticas" en el menú desplegable de detalles de búsqueda.
 
-## <a name="summary-view"></a>Vista de Resumen
+## <a name="summary-view"></a>Vista de resumen
 
-En la vista de Resumen, puede ver los resultados de la búsqueda desglosados por tipo de ubicación (por ejemplo, Exchange). Para cada tipo de ubicación, puede ver:
+En la vista Resumen, puede ver los resultados de la búsqueda desglosados por tipo de ubicación (por ejemplo, Exchange). Para cada tipo de ubicación, puede ver:
 
 - Número de ubicaciones que tenían elementos que coincidían con las condiciones de búsqueda
 
-- Número de elementos de estas ubicaciones que coinciden con las condiciones de búsqueda
+- Número de elementos de estas ubicaciones que coincidieron con las condiciones de búsqueda
 
-- Volumen total de elementos que coinciden con las condiciones de búsqueda.
+- Volumen total de elementos que coincidieron con las condiciones de búsqueda.
 
 ## <a name="top-locations-view"></a>Vista de ubicaciones superiores
 
-En la vista de ubicaciones superiores, verá las ubicaciones individuales con más coincidencias. Para cada ubicación, verá:
+En la vista De ubicaciones principales, verá las ubicaciones individuales con más coincidencias. Para cada ubicación, verá:
 
-- Nombre de la ubicación (por ejemplo, dirección URL de SharePoint)
+- Nombre de ubicación (por ejemplo, dirección URL de SharePoint)
 
 - Tipo de ubicación
 
-- Número de elementos que coinciden con las condiciones de búsqueda
+- Número de elementos que coincidieron con las condiciones de búsqueda
 
-- Volumen total de elementos que coinciden con las condiciones de búsqueda.
+- Volumen total de elementos que coincidieron con las condiciones de búsqueda.
 
-## <a name="queries-view"></a>Vista de consultas
+## <a name="queries-view"></a>Vista Consultas
 
-Si ha usado (c:s) palabra clave o filas de palabra clave en la consulta, puede ver el desglose de la consulta en la vista consultas por tipo de ubicación. Para cada tipo de ubicación, verá:
+Si ha usado (c:s) filas de palabras clave o palabras clave en la consulta, puede ver el desglose de la consulta en la vista Consultas por tipo de ubicación. Para cada tipo de ubicación, verá:
 
-- Parte: esta columna tendrá la palabra "principal" o "palabra clave". "Principal" significa que la fila presenta estadísticas sobre toda la consulta, mientras que "palabra clave" se refiere a uno de los componentes de consulta.
+- Parte: esta columna tendrá la palabra "Principal" o "Palabra clave". "Principal" significa que la fila presenta estadísticas en toda la consulta, mientras que "Palabra clave" significa uno de los componentes de consulta.
 
-- Consulta: el componente de consulta real al que hace referencia la fila. Si la parte es "principal", será toda la consulta; Si la parte es "keyword", verá uno de los componentes de consulta aquí.
+- Consulta: componente de consulta real al que hace referencia la fila. Si Part es "Primary", esta será la consulta completa; Si Part era "Palabra clave", verá uno de los componentes de consulta aquí.
   
-  - Cuando busca en todo el contenido de los buzones (sin especificar ninguna palabra clave), la consulta real es (Size >= 0) para que se devuelvan todos los elementos.
+  - Al buscar en todos los buzones de contenido (sin especificar palabras clave), la consulta real es (tamaño >= 0) para que se devuelvan todos los elementos
   
-  - Al buscar sitios de SharePoint Online y OneDrive para la empresa, se agregan los dos componentes siguientes:
+  - Al buscar sitios de SharePoint Online y OneDrive para la Empresa, se agregan los dos componentes siguientes:
     
-    - NO IsExternalContent: 1-excluye el contenido de una organización de SharePoint local
+    - NOT IsExternalContent:1: excluye cualquier contenido de una organización de SharePoint local
     
-    - NO isOneNotePage: 1: excluye todos los archivos de OneNote porque serían duplicados de cualquier documento que coincida con la consulta de búsqueda.
+    - NOT isOneNotePage: 1: excluye todos los archivos de OneNote porque serían duplicados de cualquier documento que coincida con la consulta de búsqueda.
 
 - Número de ubicaciones que tenían elementos que coincidían con las condiciones de búsqueda.
 
-- Número de elementos de estas ubicaciones que coinciden con las condiciones de búsqueda.
+- Número de elementos de estas ubicaciones que coincidieron con las condiciones de búsqueda.
 
-- Volumen total de elementos que coinciden con las condiciones de búsqueda.
+- Volumen total de elementos que coincidieron con las condiciones de búsqueda.

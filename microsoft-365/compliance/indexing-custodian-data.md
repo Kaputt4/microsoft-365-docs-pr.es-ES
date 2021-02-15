@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Cuando se agrega un custodio a un caso de eDiscovery avanzado, cualquier contenido que se considere indizado parcialmente se reprocesa para que se pueda buscar por completo.
+description: Cuando se agrega un administrador a un caso de eDiscovery avanzado, se vuelve a procesar todo el contenido que se considera parcialmente indizado para que sea totalmente posible realizar búsquedas.
 ms.openlocfilehash: 908d01cacc103639e1f9efe965240c33a5296ba9
 ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
@@ -25,9 +25,9 @@ ms.locfileid: "49750761"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>Clasificación avanzada de los datos de administración
 
-Cuando se agrega un custodio a un caso de eDiscovery avanzado, cualquier contenido que se considere indizado parcialmente se reprocesa para que se pueda buscar por completo.  Este proceso se denomina *indización avanzada*. El contenido se puede indizar parcialmente por varios motivos, como la existencia de imágenes, tipos de archivo no admitidos o cuando se encuentran límites de tamaño de archivo de indización.
+Cuando se agrega un administrador a un caso de eDiscovery avanzado, se vuelve a procesar todo el contenido que se considera parcialmente indizado para que sea totalmente posible realizar búsquedas.  Este proceso se denomina *indización avanzada.* El contenido se puede indizar parcialmente por varios motivos, incluida la existencia de imágenes, tipos de archivo no admitidos o cuando se encuentran límites de tamaño de archivo de indización.
 
-Para obtener más información acerca de la compatibilidad de procesamiento y los elementos indizados parcialmente, consulte:
+Para obtener más información sobre el procesamiento de compatibilidad y elementos parcialmente indizados, vea:
 
 - [Tipos de archivo admitidos en eDiscovery avanzado](supported-filetypes-ediscovery20.md)
 
@@ -37,9 +37,9 @@ Para obtener más información acerca de la compatibilidad de procesamiento y lo
 
 - [Extensiones de nombres de archivo rastreados y tipos de archivo analizados de forma predeterminada en SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
-## <a name="viewing-advanced-indexing-results"></a>Ver resultados de indización avanzada
+## <a name="viewing-advanced-indexing-results"></a>Visualización de resultados de indización avanzados
 
-Una vez completado el proceso de indización avanzado, puede comprender la efectividad del reprocesamiento.  En la vista de resultados de indización avanzada de la ficha **procesamiento** de un caso, el gráfico muestra el número de elementos agregados al *Índice híbrido*.  El índice híbrido es donde la exhibición avanzada de documentos electrónicos almacena el contenido reprocesado.
+Una vez completado el proceso de indización avanzada, puede comprender la eficacia del reprocesamiento.  En la vista de resultados de indización avanzada de la ficha Procesamiento de un caso, el gráfico muestra el número de elementos agregados al *índice híbrido.*   El índice híbrido es donde eDiscovery avanzado almacena el contenido reprocesado.
 
 Esta vista también incluye el número de elementos que requieren corrección y otro gráfico de errores por tipo de archivo. Para obtener más información, vea:
 
@@ -47,9 +47,9 @@ Esta vista también incluye el número de elementos que requieren corrección y 
 
 - [Corrección de errores de un único elemento](single-item-error-remediation.md)
 
-## <a name="updating-the-advanced-index-for-custodians"></a>Actualización del índice avanzado para los custodios
+## <a name="updating-the-advanced-index-for-custodians"></a>Actualización del índice avanzado para administradores
 
-Cuando se agrega un custodio a un caso de eDiscovery avanzado, se reprocesan todos los elementos parcialmente indizados. Sin embargo, a medida que pasa el tiempo, se pueden agregar más elementos indizados parcialmente al buzón de un usuario o a una cuenta de OneDrive.  Si es necesario, puede actualizar el índice de un custodio específico. Para obtener más información, consulte [administrar custodios en un caso de exhibición avanzada de](manage-new-custodians.md#re-index-custodian-data)documentos electrónicos. También puede actualizar el índice de todos los custodios en un caso haciendo clic en el **Índice de actualización** en la pestaña **procesando** .
+Cuando se agrega un administrador a un caso de eDiscovery avanzado, se vuelve a procesar todos los elementos parcialmente indizados. Sin embargo, a medida que pasa el tiempo, se pueden agregar elementos más parcialmente indizados al buzón de un usuario o a una cuenta de OneDrive.  Si es necesario, puede actualizar el índice para un administrador específico. Para obtener más información, vea [Administrar administradores en un caso de eDiscovery avanzado.](manage-new-custodians.md#re-index-custodian-data) También puede actualizar el índice de todos los administradores en un caso haciendo clic en el índice **Actualizar** en la **pestaña Procesamiento.**
 
 > [!NOTE]
-> La actualización de los índices de custodios es un proceso de ejecución prolongada. Se recomienda no actualizar índices más de una vez al día en un caso.
+> La actualización de índices de administradores es un proceso de larga duración. Se recomienda no actualizar los índices más de una vez al día en un caso.

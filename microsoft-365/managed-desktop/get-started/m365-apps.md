@@ -28,7 +28,7 @@ Escritorio administrado de Microsoft garantiza que las Aplicaciones de Microsoft
 - PowerPoint
 - Outlook
 - Publisher
-- Access
+- Acceso
 - Skype Empresarial
 - OneNote
 
@@ -45,18 +45,18 @@ Si un usuario no tiene Aplicaciones de Microsoft 365 en su dispositivo por cualq
 
 Escritorio administrado de Microsoft no admite la implementación de la versión de 32 bits de M365 Apps para empresas.
 
-## <a name="updates-to-microsoft-365-apps"></a>Actualizaciones de Aplicaciones de Microsoft 365
+## <a name="updates-to-microsoft-365-apps"></a>Actualizaciones de aplicaciones de Microsoft 365
 
-Las Aplicaciones de Microsoft 365 están configuradas para actualizarse en el [Canal empresarial mensual.](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) Este procedimiento proporciona a los usuarios nuevas características de Office cada mes, pero recibirán solo una actualización al mes en una programación de lanzamiento predecible. Las actualizaciones se lanzan el segundo martes del mes; estas actualizaciones pueden incluir actualizaciones de características, seguridad y calidad. Estas actualizaciones se producen automáticamente y se extran directamente de la red CDN de Office para ese canal específico.
+Las Aplicaciones de Microsoft 365 están configuradas para actualizarse en el Canal [empresarial mensual.](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) Este procedimiento proporciona a los usuarios nuevas características de Office cada mes, pero recibirán solo una actualización al mes en una programación de lanzamiento predecible. Las actualizaciones se lanzan el segundo martes del mes; estas actualizaciones pueden incluir actualizaciones de características, seguridad y calidad. Estas actualizaciones se producen automáticamente y se extran directamente de la red CDN de Office para ese canal específico.
 
-Escritorio administrado de Microsoft escalona cada versión para identificar posibles problemas en el entorno. Completamos el lanzamiento 28 días después del lanzamiento del grupo de productos de aplicaciones de Microsoft 365. Escritorio administrado de Microsoft programa las versiones de actualización a diferentes grupos para permitir tiempo para la validación y las pruebas de la siguiente manera: 
+Escritorio administrado de Microsoft escalona cada versión para identificar posibles problemas en tu entorno. Completamos el lanzamiento 28 días después del lanzamiento del grupo de productos de aplicaciones de Microsoft 365. Escritorio administrado de Microsoft programa las versiones de actualización a diferentes grupos para permitir tiempo para la validación y las pruebas de la siguiente manera: 
 
 - Prueba: cero días
 - Primero: cero días
 - Rápido: 7 días
 - Amplia: 21 días
 
-Escritorio administrado de Microsoft establece una fecha límite de actualización de siete [días](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) para dispositivos. Una vez que la actualización esté disponible, debe instalarse en un plazo de siete días. Se [](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) notifica a los usuarios que se necesitan actualizaciones en varias ubicaciones: la aplicación, en la bandeja del sistema 12 horas antes de la fecha límite, y reciben una advertencia de 15 minutos antes de la fecha límite. Todas las Aplicaciones de Microsoft 365 deben cerrarse para que se complete la actualización.
+Escritorio administrado de Microsoft establece una fecha límite de actualización de siete [días](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) para los dispositivos. Una vez que la actualización esté disponible, debe instalarse en un plazo de siete días. Se [](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) notifica a los usuarios que las actualizaciones son necesarias en varias ubicaciones: la aplicación, en la bandeja del sistema 12 horas antes de la fecha límite, y reciben una advertencia de 15 minutos antes de la fecha límite. Todas las Aplicaciones de Microsoft 365 deben cerrarse para que se complete la actualización.
 
 ### <a name="pausing-or-rolling-back-an-update"></a>Pausar o revertir una actualización
 
@@ -109,7 +109,7 @@ La opción "ocultar notificaciones de actualización" se establece en **False** 
 
 **Valor predeterminado:** Canal empresarial mensual
 
-Se usa una combinación **de las directivas UpdatePath** y **UpdateChannel** según sea necesario para lograr la programación de actualizaciones. Estas directivas se establecen para garantizar que todos los dispositivos de Office reciban actualizaciones directamente de la red CDN para el Canal empresarial mensual.
+Se usa una combinación **de las directivas UpdatePath** y **UpdateChannel** según sea necesario para lograr la programación de actualizaciones. Estas directivas se establecen para garantizar que todos los dispositivos de Office reciban actualizaciones directamente de la red CDN para el canal empresarial mensual.
 
 ### <a name="specify-the-target-version-of-microsoft-365-apps"></a>Especificar la versión de destino de aplicaciones de Microsoft 365
 
@@ -130,7 +130,7 @@ Hay varias opciones de configuración que afectan al comportamiento la primera v
 
 **Valor predeterminado:** Deshabilitado
 
-La primera vez que un usuario abre una aplicación de Microsoft 365, se le pide que acepte los términos de licencia. Si desea aceptar los términos de licencia en nombre de los usuarios, presente una solicitud de servicio al equipo de operaciones de escritorio administrado de Microsoft solicitando que esta configuración esté habilitada. 
+La primera vez que un usuario abre una aplicación de Microsoft 365, se le pide que acepte los términos de licencia. Si desea aceptar los términos de licencia en nombre de los usuarios, presente una solicitud de servicio al equipo de operaciones de escritorio administrado de Microsoft solicitando que se habilite esta opción. 
 
 ### <a name="suppress-outlook-mobile-check-box"></a>Suprimir la casilla de verificación de Outlook Mobile
 
@@ -146,14 +146,14 @@ Hay otras opciones de configuración de la aplicación de Microsoft 365 que el E
 
 **Valor predeterminado:** Deshabilitado
 
-Algunas organizaciones están interesadas en que los usuarios tengan acceso a archivos corporativos y personales en sus dispositivos. Puede presentar una solicitud de servicio al equipo de operaciones de Escritorio administrado de Microsoft solicitando que se habilite esta opción. 
+Algunas organizaciones están interesadas en que los usuarios tengan acceso a archivos corporativos y personales en sus dispositivos. Puede presentar una solicitud de servicio al equipo de operaciones de Escritorio administrado de Microsoft solicitando que esta configuración esté habilitada. 
 
 ## <a name="settings-you-manage"></a>Configuración que administra
 
 Hay muchas otras directivas que el Escritorio administrado de Microsoft aún no establece como parte de nuestro servicio. Puede configurar estas directivas con Microsoft Intune, que usa el servicio de directivas [de nube de Office.](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) Para establecer estas directivas, siga estos pasos:
 
 1.  Inicia sesión en el Centro de administración de Microsoft Endpoint Manager.
-2.  Seleccionar **directivas > aplicaciones para aplicaciones de Office > crear**
+2.  Seleccionar **aplicaciones > directivas para aplicaciones de Office > crear**
 3.  En la **página Crear configuración** de directiva, haga lo siguiente:
     - Escriba un nombre.
     - Proporciona una descripción (opcional).

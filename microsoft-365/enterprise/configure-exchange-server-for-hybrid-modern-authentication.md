@@ -28,7 +28,7 @@ ms.locfileid: "49780289"
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-La autenticación moderna híbrida (HM) es un método de administración de identidades que ofrece una autenticación y autorización de usuario más seguras, y está disponible para implementaciones híbridas locales de Exchange Server.
+La autenticación moderna híbrida (HM) es un método de administración de identidades que ofrece una autenticación y autorización de usuario más seguras, y está disponible para las implementaciones híbridas locales de Exchange Server.
 
 ## <a name="fyi"></a>FYI
 
@@ -83,7 +83,7 @@ Asegúrese de que los clientes de direcciones URL a los que se pueden conectar a
 
 1. En primer lugar, conéctese a AAD [con estas instrucciones.](connect-to-microsoft-365-powershell.md)
 
-   **Nota** Debes usar la opción _Connect-MsolService_ de esta página para poder usar el siguiente comando.
+   **Nota** Debe usar la opción _Connect-MsolService_ de esta página para poder usar el siguiente comando.
 
 2. Para las direcciones URL relacionadas con Exchange, escriba el siguiente comando:
 
@@ -153,7 +153,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 ## <a name="verify"></a>Comprobar
 
-Una vez que habilite HM, el siguiente inicio de sesión de un cliente usará el nuevo flujo de autenticación. Ten en cuenta que al activar HM no se desencadenará una nueva autenticación para ningún cliente. Los clientes se reautentifiquen en función de la duración de los tokens de autenticación o los certificados que tienen.
+Una vez que habilite HM, el siguiente inicio de sesión de un cliente usará el nuevo flujo de autenticación. Ten en cuenta que al activar HM no se desencadenará una nueva autenticación para ningún cliente. Los clientes se reautentifiquen en función de la duración de los tokens de autenticación o los certificados que tengan.
 
 También debe mantener presionada la tecla CTRL al mismo tiempo que hace clic con el botón secundario en el icono del cliente de Outlook (también en la bandeja de notificaciones de Windows) y hacer clic en "Estado de conexión". Busque la dirección SMTP del cliente en un tipo "Authn" de "Bearer", que representa el token de portador usado \* en OAuth.
 

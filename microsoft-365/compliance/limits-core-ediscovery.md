@@ -31,7 +31,7 @@ En la tabla siguiente se enumeran los límites de casos y retenciones principale
   | Descripción del límite | Límite |
   |:-----|:-----|
   |Número máximo de casos para una organización  <br/> |Sin límite  <br/> |
-  |Número máximo de retenciones de casos para una organización  <br/> |10,000  <br/> |
+  |Número máximo de retenciones de casos para una organización  <br/> |10 000  <br/> |
   |Número máximo de buzones en una única retención de casos  <br/> |1,000  <br/> |
   |Número máximo de sitios de SharePoint y OneDrive para la Empresa en una única retención de casos  <br/> |100  <br/> |
   |Número máximo de casos que se muestran en la página principal de eDiscovery principal y el número máximo de elementos que se muestran en las pestañas Retenciones, Búsquedas y Exportación dentro de un caso. <sup>1</sup> |1,000|

@@ -31,7 +31,7 @@ ms.locfileid: "49787920"
 
  *Se aplica a: Administrador de Office 365*
 
-Office 365 requiere conectividad a Internet. Los siguientes puntos de conexión solo deben ser accesibles para los clientes que usen **planes de Office 365** Germany.
+Office 365 requiere conectividad a Internet. Los puntos de conexión siguientes solo deben ser accesibles para los clientes que usen planes **de Office 365** Germany.
   
  **Puntos de conexión de Office 365:** [mundial (incluido GCC)](urls-and-ip-address-ranges.md)  | [Office 365 operado por 21Vianet](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 Germany*  |  [Office 365 Administración Pública de Estados Unidos (DoD)](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 Administración Pública de Estados Unidos (GCC High)](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   
@@ -43,7 +43,7 @@ Empiece con la administración de puntos de conexión [de Office 365](managing-o
 
 Los datos que se muestran en esta página a continuación se generan a partir de los servicios web basados en REST. Si usa un script o un dispositivo de red para tener acceso a estos datos, debe ir directamente [al servicio](microsoft-365-ip-web-service.md) web.
 
-A continuación se enumeran los requisitos de conectividad de la máquina de un usuario a Office 365. No incluye conexiones de red de Microsoft a una red de cliente, a veces denominadas conexiones de red híbridas o entrantes.
+A continuación se enumeran los requisitos de conectividad de la máquina de un usuario a Office 365. No incluye conexiones de red de Microsoft a una red de clientes, a veces denominadas conexiones de red híbridas o entrantes.
 
 Los puntos de conexión se agrupan en cuatro áreas de servicio. Las tres primeras se pueden seleccionar por separado para la conectividad; la cuarta área de servicio es una dependencia común (denominada de Microsoft 365 Common y Office) y debe disponer de conectividad de red en todo momento.
 

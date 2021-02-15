@@ -47,7 +47,7 @@ Complete los siguientes requisitos previos antes de poder configurar un conector
 
 - El conector de Twitter puede importar un total de 200 000 elementos en un solo día. Si hay más de 200 000 elementos de Twitter en un día, ninguno de esos elementos se importará a Microsoft 365.
 
-- El usuario que configura el conector de Twitter en el Centro de cumplimiento de Microsoft 365 (en el paso 5) debe tener asignado el rol de importación y exportación de buzones en Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol De importación y exportación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones Crear grupos de [roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+- El usuario que configura el conector de Twitter en el Centro de cumplimiento de Microsoft 365 (en el paso 5) debe tener asignado el rol de importación y exportación de buzones en Exchange Online. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol De importación y exportación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, consulte [](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones Crear grupos de [roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>Paso 1: Crear una aplicación en Azure Active Directory
 
@@ -101,7 +101,7 @@ Durante la finalización de este paso (siguiendo las instrucciones paso a paso),
 
 ## <a name="step-4-configure-the-twitter-connector-app"></a>Paso 4: Configurar la aplicación del conector de Twitter
 
-El siguiente paso es agregar opciones de configuración a la aplicación de conector de Twitter que implementó en el paso 2. Para ello, vaya a la página principal de la aplicación del conector y la configure.
+El siguiente paso es agregar opciones de configuración a la aplicación del conector de Twitter que implementó en el paso 2. Para ello, vaya a la página principal de la aplicación del conector y la configure.
 
 Para obtener instrucciones paso a paso, vea [Configurar la aplicación web del conector.](deploy-twitter-connector.md#step-4-configure-the-connector-web-app)
 

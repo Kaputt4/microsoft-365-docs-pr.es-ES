@@ -27,7 +27,7 @@ ms.locfileid: "49780301"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>Información adicional del dispositivo para la migración desde Microsoft Cloud Deutschland
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Cómo puedo saber si mi organización se ve afectada?**
 
@@ -35,11 +35,11 @@ Los administradores deben `https://portal.microsoftazure.de` comprobar si tienen
 
 **¿Cuál es el impacto en mis usuarios?**
 
-Los usuarios de un dispositivo registrado ya no podrán iniciar sesión después de que la migración entre en la fase de migración de [Finalizar Azure AD.](ms-cloud-germany-transition.md#how-is-the-migration-organized)  
+Los usuarios de un dispositivo registrado ya no podrán iniciar sesión después de que la migración entre en la fase de migración [de Finalizar Azure AD.](ms-cloud-germany-transition.md#how-is-the-migration-organized)  
 
 Asegúrate de que todos los dispositivos estén registrados con el punto de conexión mundial antes de que la organización se desconecte de Microsoft Cloud Deutschland.
   
-**¿Cuándo los usuarios vuelven a registrar sus dispositivos?**
+**¿Cuándo los usuarios pueden volver a registrar sus dispositivos?**
 
 Es fundamental para su éxito que solo anula el registro y vuelva a registrar los dispositivos durante la fase de migración independiente [de Microsoft Cloud Deutschland.](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
@@ -86,9 +86,9 @@ Private key state : Okay
      Device state : Unknown
 ```
 
-Los dispositivos afectados tendrán el "Estado del dispositivo" con el valor "Desconocido". Si el resultado es "Dispositivo no unido" o cuyo valor de "Estado del dispositivo" es "Correcto", omite las siguientes instrucciones.
+Los dispositivos afectados tendrán el "Estado del dispositivo" con el valor "Desconocido". Si el resultado es "Dispositivo no unido" o cuyo valor de "Estado de dispositivo" es "Correcto", omite las siguientes instrucciones.
 
-Solo para dispositivos que muestran que el dispositivo está unido (en virtud de deviceId, huella digital, entre otros) y cuyo valor de "Estado del dispositivo" es "Desconocido", los administradores deben ejecutar el siguiente comando en el contexto de un usuario de dominio que inicie sesión en un dispositivo de nivel inferior:
+Solo para dispositivos que muestran que el dispositivo está unido (en virtud de deviceId, huella digital, entre otros) y cuyo valor de "Estado de dispositivo" es "Desconocido", los administradores deben ejecutar el siguiente comando en el contexto de un usuario de dominio que inicie sesión en un dispositivo de nivel inferior:
 
 ```console
 "%programfiles%\Microsoft Workplace Join\autoworkplace /leave"
@@ -96,7 +96,7 @@ Solo para dispositivos que muestran que el dispositivo está unido (en virtud de
 
 El comando anterior solo debe ejecutarse una vez por usuario de dominio que inicie sesión en el dispositivo de nivel inferior de Windows. Este comando debe ejecutarse en el contexto del inicio de sesión del usuario del dominio. 
 
-Debe tenerse suficiente cuidado para no ejecutar este comando cuando el usuario inicia sesión posteriormente. Cuando se ejecute el comando anterior, borrará el estado unido del equipo híbrido local unido a Azure AD para el usuario que llegó a sesión. Además, si el equipo aún está configurado para unirse a Azure AD híbrido en el inquilino, intentará unirse cuando el usuario vuelva a inicio de sesión.
+Debe tenerse suficiente cuidado para no ejecutar este comando cuando el usuario inicia sesión posteriormente. Cuando se ejecute el comando anterior, borrará el estado unido del equipo local híbrido unido a Azure AD para el usuario que ha iniciado sesión. Además, si el equipo aún está configurado para unirse a Azure AD híbrido en el inquilino, intentará unirse cuando el usuario vuelva a inicio de sesión.
 
 ### <a name="windows-current"></a>Windows Current
 
@@ -177,7 +177,7 @@ El comando anterior solo debe ejecutarse una vez en un contexto administrativo e
 
 ### <a name="azure-ad-joinre-registration"></a>Unión o nuevo registro de Azure AD
 
-El usuario puede unir el dispositivo a Azure AD desde la configuración de Windows: Configuración > cuentas > acceso a trabajo **o escuela > conectarse.**
+El usuario puede unir el dispositivo a Azure AD desde la configuración de Windows: Configuración > cuentas > acceso a **trabajo o escuela > conectarse.**
  
 
 ## <a name="azure-ad-registered-company-owned"></a>Azure AD Registrado (propiedad de la compañía)
@@ -188,7 +188,7 @@ Para determinar si el dispositivo windows 10 está registrado en Azure AD, ejecu
 %SystemRoot%\system32\dsregcmd.exe /status
 ```
 
-Si el dispositivo está registrado en Azure AD, verá el siguiente resultado:
+Si el dispositivo está registrado en Azure AD, verá la siguiente salida:
 
 ```console
 +----------------------------------------------------------------------+
@@ -205,7 +205,7 @@ Para quitar la cuenta registrada de Azure AD existente en el dispositivo:
 
 - Extraiga el archivo ZIP y ejecute **WPJCleanup.cmd**. Esta herramienta iniciará el archivo ejecutable correcto en función de la versión de Windows en el dispositivo.
 
-- Mediante el uso de un mecanismo como la directiva de grupo, el administrador puede ejecutar el comando en el dispositivo en el contexto de cualquier usuario que haya iniciado sesión en el dispositivo.
+- Mediante un mecanismo como la directiva de grupo, el administrador puede ejecutar el comando en el dispositivo en el contexto de cualquier usuario que haya iniciado sesión en el dispositivo.
 
 Para deshabilitar los mensajes del Administrador de cuentas web para registrar el dispositivo en Azure AD, agrega este valor del Registro: 
 
@@ -251,12 +251,12 @@ Para obtener más información sobre las acciones necesarias durante la fase de 
 
 ## <a name="ios"></a>iOS
 
-En dispositivos iOS, un usuario tendrá que quitar manualmente las cuentas almacenadas en caché de Microsoft Authenticator, anular el registro del dispositivo y cerrar la sesión de cualquier aplicación nativa del dispositivo.
+En dispositivos iOS, un usuario deberá quitar manualmente las cuentas almacenadas en caché de Microsoft Authenticator, anular el registro del dispositivo y cerrar la sesión de cualquier aplicación nativa del dispositivo.
 
 ### <a name="step-1-if-present-remove-the-account-from-the-microsoft-authenticator-app"></a>Paso 1: Si está presente, quite la cuenta de la aplicación Microsoft Authenticator
 
 1. Pulse la cuenta en la aplicación Microsoft Authenticator.
-2. Puntee en **el icono** Configuración de la esquina superior derecha. Si no ve el icono **Configuración,** es posible que no esté usando la versión más reciente de Microsoft Authenticator.
+2. Puntee **en el icono** Configuración de la esquina superior derecha. Si no ve el icono **Configuración,** es posible que no esté usando la versión más reciente de Microsoft Authenticator.
 3. Pulsa el **botón Quitar** cuenta.
 4. Pulsa **Todas las aplicaciones en este dispositivo.**
  

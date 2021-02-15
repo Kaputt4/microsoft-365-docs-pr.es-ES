@@ -43,11 +43,11 @@ Azure AD Connect sincroniza el UPN y la contraseña de los usuarios para que los
   
 ### <a name="change-your-primary-domain"></a>Cambiar el dominio principal
 
-Cambie su dominio principal a un dominio que haya comprobado en Microsoft 365, por ejemplo, contoso.com. A continuación, todos los usuarios que tienen el dominio contoso.local se actualizan a contoso.com. Sin embargo, este es un proceso muy implicado y se describe una solución más sencilla en la siguiente sección.
+Cambie su dominio principal a un dominio que haya comprobado en Microsoft 365, por ejemplo, contoso.com. A continuación, todos los usuarios que tienen el dominio contoso.local se actualizan para contoso.com. Sin embargo, este es un proceso muy implicado y se describe una solución más sencilla en la siguiente sección.
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>Agregar sufijos UPN y actualizar los usuarios a ellos
 
-Puede solucionar el problema ".local" registrando nuevos sufijos UPN en AD DS para que coincidan con el dominio (o dominios) que ha comprobado en Microsoft 365. Después de registrar el nuevo sufijo, actualiza los UPN de usuario para reemplazar el ".local" por el nuevo nombre de dominio, por ejemplo, para que una cuenta de usuario se parezca a billa@contoso.com.
+Puede solucionar el problema ".local" registrando nuevos sufijos UPN en AD DS para que coincidan con el dominio (o dominios) que ha comprobado en Microsoft 365. Después de registrar el nuevo sufijo, actualice los UPN de usuario para reemplazar ".local" por el nuevo nombre de dominio, por ejemplo, para que una cuenta de usuario se parezca a billa@contoso.com.
   
 Después de actualizar los UPN para usar el dominio comprobado, está listo para sincronizar su AD DS local con Microsoft 365.
   

@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Use el editor de comunicaciones para cambiar el texto y combinar variables de campo al dar formato al contenido.
+description: Use el Editor de comunicaciones para cambiar el texto y combinar variables de campo al dar formato al contenido.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 6dcfb58dff3a3acf99340895872bb2da9795d9c8
 ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
@@ -26,25 +26,25 @@ ms.locfileid: "49769165"
 ---
 # <a name="use-the-communications-editor"></a>Usar el editor de comunicaciones
 
-A medida que se define el contenido del contenido del portal, las notificaciones de retención legal y los avisos/escalamientos relacionados, puede usar el editor de comunicaciones para formatear y personalizar el contenido de forma dinámica.
+Al definir el contenido del portal, las notificaciones de retención legal y los avisos o escalaciones relacionados, puede usar el Editor de comunicaciones para dar formato y personalizar dinámicamente el contenido.
 
 ## <a name="rich-text-editor"></a>Editor de texto enriquecido
 
-El editor de comunicaciones permite al usuario personalizar el texto con las opciones del editor. Por ejemplo, los usuarios pueden cambiar los tipos de fuente, crear listas con viñetas, resaltar contenido, etc.
+El Editor de comunicaciones permite al usuario personalizar el texto mediante las opciones del editor. Por ejemplo, los usuarios pueden cambiar los tipos de fuente, crear listas con viñetas, resaltar contenido y mucho más.
 
 ## <a name="merge-field-variables"></a>Combinar variables de campo
 
-Puede usar variables de combinación de correo electrónico del editor de comunicaciones para incrustar atributos de custodios personalizados en el texto del cuerpo de una comunicación. Cuando se envía al custodio, el campo de combinación se rellenará con el campo correspondiente. Por ejemplo, cuando se envía a custodio Andrés Díaz, el campo de combinación [nombre del custodio] se convertiría con el nombre correspondiente.
+Puede usar variables de combinación de correo electrónico desde el Editor de comunicaciones para insertar atributos de administrador personalizados en el texto del cuerpo de una comunicación. Cuando se envía al administrador, el campo de combinación se rellenará con el campo correspondiente. Por ejemplo, cuando se envía al administrador John Smith, el campo de combinación [Nombre de administrador] se traduciría con el nombre correspondiente.
 
-Puede usar los campos de combinación de correo electrónico seleccionando los iconos de **campo de combinación** en la parte superior del control del editor de texto enriquecido. El marcador de posición se agregará en función de la ubicación del cursor de los usuarios.
+Puede usar los campos de combinación de correo electrónico seleccionando los iconos **de** campo combinar en la parte superior del control del editor de texto enriquecido. El marcador de posición se agregará en función de la ubicación del cursor de los usuarios.
 
 ### <a name="list-of-merge-field-variables"></a>Lista de variables de campo de combinación
 
-| Nombre del campo                  | Detalles de campo |
+| Nombre del campo                  | Detalles del campo |
 | :------------------- | :------------------- |
-| Nombre para mostrar  | Nombre y apellido del custodio. | 
-| Vínculo de confirmación | Un vínculo personalizado para registrar la confirmación de cada custodio.|                 |
-| Vínculo al portal     | Un vínculo personalizado para el portal de cumplimiento de la custodio.|                |
-| Responsable de la expedición                   | La dirección de correo electrónico del oficial de expedición especificado.|                   |
+| Nombre para mostrar  | Nombre y apellidos del administrador. | 
+| Vínculo de confirmación | Un vínculo personalizado para registrar el acuse de recibo de cada administrador.|                 |
+| Vínculo del portal     | Un vínculo personalizado para el Portal de cumplimiento del administrador.|                |
+| Oficial emisor                   | La dirección de correo electrónico del responsable emisor especificado.|                   |
 | Fecha de emisión                   | La fecha en que se emitió el aviso (UTC).              |
 |||

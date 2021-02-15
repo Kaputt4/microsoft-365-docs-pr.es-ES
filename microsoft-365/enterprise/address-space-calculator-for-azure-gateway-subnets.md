@@ -32,7 +32,7 @@ Una red virtual (VNet) en servicios de infraestructura de Azure que esté conect
 
 Para la segunda recomendación, puede determinar el espacio de direcciones de la subred de puerta de enlace estableciendo los bits usados para la subred de puerta de enlace en 0 y los bits restantes en el espacio de direcciones de VNET en 1. Para calcular rápidamente el espacio de direcciones de la subred de puerta de enlace sin tener que convertir a binario y volver a decimales, puede usar una aplicación de consola escrita en C# o Python o con un bloque de comandos de PowerShell.
 
-Este artículo contiene bloques de código de C#, Python y PowerShell que calculan el espacio de direcciones de la subred de puerta de enlace en función de los valores de w.x.y.z/n para el prefijo de dirección de la red virtual y la longitud del prefijo de subred de puerta de enlace.
+Este artículo contiene bloques de código de C#, Python y PowerShell que calculan el espacio de direcciones de la subred de puerta de enlace en función de los valores de w.x.y.z/n para el prefijo de dirección de red virtual y la longitud del prefijo de subred de puerta de enlace.
 
 ## <a name="c-code-block"></a>Bloque de código C#
 

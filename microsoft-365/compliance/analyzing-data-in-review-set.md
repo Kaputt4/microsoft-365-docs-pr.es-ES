@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Obtenga información sobre las herramientas disponibles para organizar conjuntos de documentos al analizar un caso de exhibición avanzada de documentos electrónicos.
+description: Obtenga información sobre las herramientas disponibles para organizar conjuntos de documentos al analizar un caso de eDiscovery avanzado.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 7c63e7eca2e032bfa11c4d4e6f961bb7a7700a4e
 ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
@@ -26,7 +26,7 @@ ms.locfileid: "49751375"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analizar datos en un conjunto de revisión en eDiscovery avanzado
 
-Cuando el número de documentos recopilados es grande, puede ser difícil revisarlos todos. EDiscovery avanzado proporciona una serie de herramientas para analizar los documentos para reducir el volumen de documentos que se van a revisar sin ninguna pérdida de información y para ayudarle a organizar los documentos de forma coherente. Para obtener más información acerca de estas funciones, consulte:
+Cuando el número de documentos recopilados es grande, puede ser difícil revisarlos todos. EDiscovery avanzado proporciona una serie de herramientas para analizar los documentos a fin de reducir el volumen de documentos que se revisarán sin pérdida de información y para ayudarle a organizar los documentos de forma coherente. Para obtener más información sobre estas funcionalidades, vea:
 
 - [Detección de semiduplicados](near-duplicate-detection-in-advanced-ediscovery.md)
 
@@ -34,19 +34,19 @@ Cuando el número de documentos recopilados es grande, puede ser difícil revisa
 
 - [Temas](themes-in-advanced-ediscovery.md)
 
-Para analizar los datos de un conjunto de revisión:
+Para analizar datos en un conjunto de revisión:
 
-1. Configure las opciones de análisis en su caso. Para obtener más información, vea [Configure Search and Analytics Settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md).
+1. Configura las opciones de análisis para tu caso. Para obtener más información, vea [Configuración de búsqueda y análisis.](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
 
-2. Abra el conjunto de revisiones que desee analizar.
+2. Abra el conjunto de revisión que desea analizar.
 
-3. Haga clic en **administrar conjunto de revisiones**.
+3. Haga **clic en Administrar conjunto de revisión.**
 
-4. Haga clic en **ejecutar análisis para el conjunto de revisión**.
+4. Haga **clic en Ejecutar análisis para el conjunto de revisión.**
 
-Puede comprobar el progreso del análisis en la ficha **trabajos** del caso.
+Puede comprobar el progreso del análisis en la **ficha Trabajos** del caso.
 
- Una vez completado el análisis, puede ver el informe de análisis, ejecutar consultas dentro de su conjunto de revisión en los resultados del análisis (vea la [consulta dentro del conjunto de revisión](review-set-search.md)) y ver los documentos relacionados de un documento determinado (vea [revisar los datos en el conjunto de revisiones](reviewing-data-in-review-set.md)).
+ Una vez completado el análisis, puede ver el informe de análisis, ejecutar consultas [](review-set-search.md)dentro del conjunto de revisión en los resultados del análisis (vea Consulta dentro del conjunto de revisión) y ver documentos relacionados de un documento determinado (vea Revisión de datos en el conjunto de revisión). [](reviewing-data-in-review-set.md)
 
 ## <a name="analytics-report"></a>Informe de análisis
 
@@ -54,22 +54,22 @@ Para ver un informe de análisis de un conjunto de revisión:
 
 1. Abra el conjunto de revisión.
 
-2. Haga clic en **administrar conjunto de revisiones**.
+2. Haga **clic en Administrar conjunto de revisión.**
 
-3. Haga clic en **Ver informe**.
+3. Haga clic **en Ver informe.**
 
 El informe tiene siete componentes del análisis:
 
-- **Rellenado de destino:** El número de mensajes de correo electrónico, datos adjuntos y documentos sueltos que se encuentran en el conjunto de revisión.
+- **Población objetivo:** El número de mensajes de correo electrónico, datos adjuntos y documentos sueltos que se encuentran en el conjunto de revisión.
 
-- **Documentos (sin datos adjuntos):** El número de documentos sueltos que son dinámicos, únicos Near duplicados de un pivote o un duplicado exacto de otro documento.
+- **Documentos (excluyendo datos adjuntos):** El número de documentos sueltos que son tablas dinámicas, duplicados cercanos únicos de un control dinámico o un duplicado exacto de otro documento.
 
-- **Mensajes de correo electrónico:** El número de mensajes de correo electrónico que son inclusivos, copias inclusivas, menos inclusivas o ninguna de las anteriores.
+- **Mensajes de correo electrónico:** El número de mensajes de correo electrónico incluidos, copias inclusivas, menos incluidos o ninguno de los anteriores.
 
-- **Datos adjuntos:** El número de datos adjuntos de correo electrónico que son únicos o duplicados de otro correo electrónico adjunto en el conjunto de revisión.
+- **Datos adjuntos:** El número de datos adjuntos de correo electrónico que son únicos o duplicados de otros datos adjuntos de correo electrónico en el conjunto de revisión.
 
-- **Número de archivos por tipo:** El número de archivos, identificados por extensión de archivo.
+- **Número de archivos por tipo:** El número de archivos, identificado por extensión de archivo.
 
 - **Documentos por origen:** Un resumen del contenido por su origen de datos original.
 
-- **Documentos agregados por proceso:** Un resumen del contenido de los procesos del conjunto de revisión. 
+- **Documentos agregados por proceso:** Un resumen del contenido por procesos de conjunto de revisión. 

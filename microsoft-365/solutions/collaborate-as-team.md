@@ -49,13 +49,13 @@ Para establecer la configuración de colaboración externa
 1. Inicie sesión en Azure Active Directory en [https://aad.portal.azure.com](https://aad.portal.azure.com) .
 2. En el panel de navegación izquierdo, haga clic **en Azure Active Directory.**
 3. Haga **clic en Identidades externas.**
-4. En la **pantalla Introducción, en** el panel de navegación izquierdo, haga clic en **Configuración de colaboración externa.**
+4. En la **pantalla Introducción,** en el panel de navegación izquierdo, haga clic en **Configuración de colaboración externa.**
 5. Asegúrese de **que los administradores y los usuarios del** rol de invitador de invitado pueden invitar y que **los** miembros pueden invitar están establecidos en **Sí**.
 6. Si ha realizado cambios, haga clic en **Guardar**.
 
 Tenga en cuenta la configuración de la **sección Restricciones de colaboración.** Asegúrese de que los dominios de los invitados con los que desea colaborar no están bloqueados.
 
-Si trabaja con invitados de varias organizaciones, es posible que desee restringir su capacidad de acceso a los datos del directorio. Esto les impedirá ver quién más es un invitado en el directorio. Para ello, en Restricciones de  acceso de usuario invitado, seleccione Usuarios **invitados** tienen acceso limitado a las propiedades y la pertenencia a la configuración de objetos de directorio o el acceso de usuarios invitados está restringido a las propiedades y pertenencias a sus **propios** objetos de directorio.
+Si trabaja con invitados de varias organizaciones, es posible que desee restringir su capacidad de acceso a los datos del directorio. Esto les impedirá ver quién más es un invitado en el directorio. Para ello, en Restricciones de  acceso de usuarios **invitados,** seleccione Los usuarios invitados tienen acceso limitado a las propiedades y la pertenencia a la configuración de objetos de directorio o el acceso de usuarios invitados está restringido a las propiedades y pertenencias de sus **propios** objetos de directorio.
 
 ## <a name="teams-guest-access-settings"></a>Configuración de acceso de invitado de Teams
 
@@ -70,7 +70,7 @@ Para establecer la configuración de acceso de invitados de Teams
 1. Inicie sesión en el Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://admin.microsoft.com).
 2. En el panel de navegación izquierdo, haga clic **en Mostrar todo**.
 3. En **Centros de administración**, haga clic en **Teams**.
-4. En el Centro de administración de Teams, en el panel de navegación izquierdo, expanda Configuración de toda la **organización** y haga clic en **Acceso de invitado.**
+4. En el Centro de administración de Teams, en el panel de navegación izquierdo, **expanda** Configuración de toda la organización y haga clic en **Acceso de invitado.**
 5. Asegúrese de que **Permitir el acceso de invitados en Teams** se haya establecido en **Activado**.
 6. Realice los cambios que quiera en la configuración de invitado adicional y luego haga clic en **Guardar**.
 
@@ -115,7 +115,7 @@ Para establecer la configuración de uso compartido en el nivel de organización
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>Configuración de vínculos predeterminada en el nivel de organización de SharePoint
 
-La configuración predeterminada de vínculos a archivos y carpetas determina la opción de vínculo que se mostrará a los usuarios de forma predeterminada cuando compartan un archivo o carpeta. Los usuarios pueden cambiar el tipo de vínculo a una de las otras opciones antes de compartir, si lo desean.
+La configuración predeterminada de vínculos de archivos y carpetas determina la opción de vínculo que se mostrará a los usuarios de forma predeterminada cuando compartan un archivo o carpeta. Los usuarios pueden cambiar el tipo de vínculo a una de las otras opciones antes de compartir, si lo desean.
 
 Tenga en cuenta que esta configuración afecta a todos los equipos y sitios de SharePoint de su organización.
 

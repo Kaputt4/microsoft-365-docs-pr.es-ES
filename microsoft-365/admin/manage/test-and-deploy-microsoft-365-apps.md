@@ -1,5 +1,5 @@
 ---
-title: Probar e implementar Aplicaciones de Microsoft 365
+title: Probar e implementar aplicaciones de Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -29,7 +29,7 @@ Para obtener información adicional sobre cómo comprar y otorgar licencias a ap
   
 ## <a name="manage-apps-in-the-integrated-apps-portal"></a>Administrar aplicaciones en el portal de aplicaciones integradas
 
-Al elegir aplicaciones integradas en el Centro de administración de Microsoft 365, puede administrar las pruebas y la implementación de las aplicaciones de microsoft y de los partners de Microsoft compradas y con licencia. 
+Al elegir aplicaciones integradas en el Centro de administración de Microsoft 365, puede administrar las pruebas y la implementación de aplicaciones de microsoft y partners de Microsoft compradas y con licencia. 
 
 1. En el centro de administración, en el panel de navegación izquierdo, elija **Configuración** y, a continuación, elija **Aplicaciones integradas.** 
 
@@ -77,7 +77,7 @@ Puedes buscar, probar e implementar completamente aplicaciones publicadas que a�
 
     b. Seleccione **Actualizar,** **Listo** y ahora puede seleccionar **Implementar en** la **pestaña** Información general.  
 
-6. Revise la información de la aplicación y, a continuación, **seleccione Implementar**. 
+6. Revise la información de la aplicación y, a continuación, **seleccione Implementar.** 
 
 7. Seleccione **Listo en** la página Implementación **completada.** 
 

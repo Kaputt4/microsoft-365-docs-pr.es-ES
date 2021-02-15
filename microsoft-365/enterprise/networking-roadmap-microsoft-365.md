@@ -24,7 +24,7 @@ ms.locfileid: "49787756"
 ---
 # <a name="networking-roadmap-for-microsoft-365"></a>Guía básica de redes para Microsoft 365
 
-Microsoft 365 para empresas incluye servicios en la nube de productividad y colaboración, Microsoft Intune y muchos servicios de identidad y seguridad de Microsoft Azure. Todos estos servicios en la nube se basan en la seguridad, rendimiento y confiabilidad de conexiones de los dispositivos del cliente a través de Internet o circuitos dedicados. Para hospedar estos servicios y hacer que estén disponibles para los clientes de todo el mundo, Microsoft ha diseñado una infraestructura de red que destaca por el rendimiento e integración. 
+Microsoft 365 para empresas incluye servicios en la nube de colaboración y productividad, Microsoft Intune y muchos servicios de identidad y seguridad de Microsoft Azure. Todos estos servicios en la nube se basan en la seguridad, rendimiento y confiabilidad de conexiones de los dispositivos del cliente a través de Internet o circuitos dedicados. Para hospedar estos servicios y hacer que estén disponibles para los clientes de todo el mundo, Microsoft ha diseñado una infraestructura de red que destaca por el rendimiento e integración. 
 
 Una parte fundamental de la incorporación de Microsoft 365 es asegurarse de que las conexiones de red e Internet estén configuradas para un acceso optimizado. La configuración de la red local para tener acceso a una nube de Software como servicio (SaaS) distribuida globalmente es diferente de una red tradicional que está optimizada para el tráfico a centros de datos locales y una conexión a Internet central. 
 

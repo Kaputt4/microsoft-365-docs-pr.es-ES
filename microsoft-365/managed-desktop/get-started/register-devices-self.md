@@ -1,6 +1,6 @@
 ---
 title: Registre nuevos dispositivos usted mismo
-description: Registre los dispositivos usted mismo para que puedan ser administrados por el Escritorio administrado de Microsoft
+description: Registre los dispositivos usted mismo para que puedan ser administrados por escritorio administrado de Microsoft
 ms.prod: w10
 author: jaimeo
 f1.keywords:
@@ -19,7 +19,7 @@ ms.locfileid: "49840686"
 Escritorio administrado de Microsoft puede funcionar con dispositivos nuevos o puede volver a usar los dispositivos que ya tenga (lo que requerirá que los vuelva a crear una imagen). Puedes registrar dispositivos con escritorio administrado de Microsoft en el portal de Microsoft Endpoint Manager.
 
 > [!NOTE]
-> ¿Trabaja con un partner para obtener dispositivos? Si es así, no es necesario preocuparse por obtener los hash de hardware; se ocuparán de eso por usted. Asegúrate de que tu partner establezca una relación contigo en el [Centro de partners.](https://partner.microsoft.com/dashboard) Tu partner puede obtener más información en la [ayuda del Centro de partners.](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer) Una vez establecida esta relación, tu partner simplemente registrará dispositivos en tu nombre, sin que sea necesario realizar ninguna otra acción por tu parte. Si quieres ver los detalles o tu partner tiene preguntas, consulta pasos para que [los partners registren dispositivos.](register-devices-partner.md) Una vez registrados los dispositivos, puedes continuar con la comprobación de [la imagen](#check-the-image) y la entrega de [los dispositivos](#deliver-the-device) a los usuarios.
+> Trabajar con un partner para obtener dispositivos Si es así, no es necesario preocuparse por obtener los hash de hardware; se ocuparán de eso por usted. Asegúrate de que tu partner establezca una relación contigo en el [Centro de partners.](https://partner.microsoft.com/dashboard) Tu partner puede obtener más información en la [ayuda del Centro de partners.](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer) Una vez establecida esta relación, tu partner simplemente registrará dispositivos en tu nombre, sin que sea necesario realizar ninguna otra acción por tu parte. Si quieres ver los detalles o tu partner tiene preguntas, consulta pasos para que [los partners registren dispositivos.](register-devices-partner.md) Una vez registrados los dispositivos, puedes continuar con la comprobación de [la imagen](#check-the-image) y [la entrega de los dispositivos](#deliver-the-device) a los usuarios.
 
 ## <a name="prepare-to-register-brand-new-devices"></a>Prepararse para registrar dispositivos nuevos
 

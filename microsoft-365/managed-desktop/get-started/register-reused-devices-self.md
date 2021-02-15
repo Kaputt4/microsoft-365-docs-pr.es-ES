@@ -17,7 +17,7 @@ ms.locfileid: "49840520"
 # <a name="register-existing-devices-yourself"></a>Registre dispositivos existentes usted mismo
 
 >[!NOTE]
->En este tema se describen los pasos para volver a usar los dispositivos que ya tiene y registrarlos en el Escritorio administrado de Microsoft. Si trabaja con dispositivos nuevos, siga los pasos descritos en Registrar nuevos dispositivos en Escritorio administrado [de Microsoft.](register-devices-self.md)
+>En este tema se describen los pasos para volver a usar los dispositivos que ya tiene y registrarlos en el Escritorio administrado de Microsoft. Si trabaja con dispositivos nuevos, siga los pasos descritos en Registrar nuevos dispositivos en escritorio administrado [de Microsoft.](register-devices-self.md)
 
 El proceso para partners se documenta en [pasos para que los asociados registren dispositivos.](register-devices-partner.md)
 
@@ -38,7 +38,7 @@ Para registrar dispositivos existentes, siga estos pasos:
 
 Escritorio administrado de Microsoft identifica cada dispositivo de forma única haciendo referencia a su hash de hardware. Tienes cuatro opciones para obtener esta información de los dispositivos que ya estás usando:
 
-- Pide a tu proveedor oem el archivo de registro de AutoPilot, que incluirá los hash de hardware.
+- Pida a su proveedor oem el archivo de registro de AutoPilot, que incluirá los hash de hardware.
 - Recopilar información en [Microsoft Endpoint Configuration Manager.](#microsoft-endpoint-configuration-manager)
 - Ejecute un Windows PowerShell script (ya sea mediante [Active Directory](#active-directory-powershell-script-method) o [manualmente](#manual-powershell-script-method) en cada dispositivo) y recopile los resultados en un archivo.
 - Inicie cada dispositivo, pero no complete la experiencia de configuración de Windows, y recopile los [hash en una unidad flash extraíble.](#flash-drive-method)
@@ -64,7 +64,7 @@ Consulta Registrar [dispositivos mediante el Portal de administración](#registe
 
 #### <a name="active-directory-powershell-script-method"></a>Método de script de PowerShell de Active Directory
 
-En un entorno de Active Directory, puede usar el cmdlet de PowerShell para recopilar de forma remota la información de los dispositivos de los grupos de `Get-WindowsAutoPilotInfo` Active Directory mediante WinRM. También puede usar el `Get-AD Computer` cmdlet y obtener resultados filtrados para un nombre de modelo de hardware específico incluido en el catálogo. Antes de continuar, confirme primero estos requisitos previos y, a continuación, siga los pasos siguientes:
+En un entorno de Active Directory, puede usar el cmdlet de PowerShell para recopilar de forma remota la información de dispositivos en grupos de `Get-WindowsAutoPilotInfo` Active Directory mediante WinRM. También puede usar el `Get-AD Computer` cmdlet y obtener resultados filtrados para un nombre de modelo de hardware específico incluido en el catálogo. Antes de continuar, confirme primero estos requisitos previos y, a continuación, siga los pasos siguientes:
 
 - WinRM está habilitado.
 - Los dispositivos que quieres registrar están activos en la red (es decir, no están desconectados ni desactivados).
@@ -153,9 +153,9 @@ Puedes supervisar el progreso del registro de dispositivos en la página princip
 
 | Estado | Descripción |
 |---------------|-------------|
-| Registro pendiente | El registro aún no se ha realizado. Vuelva a consultar más adelante. |
-| Error de registro | No se pudo completar el registro. Consulta El registro [de dispositivos para](#troubleshooting-device-registration) solucionar problemas para obtener más información. |
-| Listo para el usuario | El registro se ha registrado correctamente y el dispositivo ya está listo para entregarse al usuario. El Escritorio administrado de Microsoft les guiará a través de la configuración por primera vez, por lo que no es necesario realizar ninguna preparación adicional. |
+| Registro pendiente | El registro aún no se ha realizado. Vuelva a consultar más tarde. |
+| Error de registro | No se pudo completar el registro. Consulta Solución [de problemas del registro de dispositivos](#troubleshooting-device-registration) para obtener más información. |
+| Listo para el usuario | El registro se ha registrado correctamente y el dispositivo ya está listo para entregarse al usuario. Escritorio administrado de Microsoft les guiará a través de la configuración por primera vez, por lo que no es necesario realizar ninguna preparación adicional. |
 | Activo | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Esto también indica que usan el dispositivo con regularidad. |
 | Inactivo | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Sin embargo, no han usado el dispositivo recientemente (en los últimos 7 días).  | 
 

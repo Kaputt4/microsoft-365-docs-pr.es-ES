@@ -31,7 +31,7 @@ También puedes implementar aplicaciones adicionales que no son de Microsoft par
 
 ## <a name="apps-provided-by-microsoft"></a>Aplicaciones proporcionadas por Microsoft
 
-Se incluyen con su licencia de Escritorio administrado de Microsoft las versiones de 64 bits de las aplicaciones de Microsoft 365 Apps for enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Empresarial y OneNote). Las versiones de Hacer clic y  ejecutar de Microsoft Project y Visio no se incluyen de forma predeterminada, pero puede solicitar que se agregó. Para obtener más información acerca de estas aplicaciones, vea [Instalar Microsoft Project o Microsoft Visio en dispositivos de escritorio administrado de Microsoft.](../get-started/project-visio.md)
+Se incluyen con su licencia de Escritorio administrado de Microsoft las versiones de 64 bits de las aplicaciones de Microsoft 365 Apps for enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype Empresarial y OneNote). Las versiones de Hacer clic y  ejecutar de Microsoft Project y Visio no se incluyen de forma predeterminada, pero puede solicitar que se agregó. Para obtener más información acerca de estas aplicaciones, vea [Instalar Microsoft Project o Microsoft Visio en dispositivos de Escritorio administrado de Microsoft.](../get-started/project-visio.md)
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Qué hace Microsoft para admitir las aplicaciones que proporcionamos
 
@@ -56,7 +56,7 @@ Si actualmente implementas tus aplicaciones con Microsoft Endpoint Configuration
 Revisa las aplicaciones y comprueba:
 
 - Ninguna de las aplicaciones está prohibida o tiene un comportamiento restringido, como se describe en los requisitos de aplicaciones de [Escritorio administrado de Microsoft.](https://aka.ms/app-req)
-- Las aplicaciones deben estar listas para la administración por Parte de Microsoft Intune. Para obtener más información sobre este tema, consulta Implementación de aplicaciones de [Windows 10](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) con Microsoft Intune y [Agregar aplicaciones a Microsoft Intune.](https://docs.microsoft.com/intune/apps-add)
+- Las aplicaciones deben estar listas para ser administradas por Microsoft Intune. Para obtener más información sobre este tema, consulta implementación de aplicaciones de [Windows 10](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) con Microsoft Intune y [Agregar aplicaciones a Microsoft Intune.](https://docs.microsoft.com/intune/apps-add)
 - Otros requisitos de empaquetado previo, como proporcionar claves de licencia, un acuerdo con los términos de licencia y establecer previamente conexiones de servidor.
 
 ### <a name="decide-how-to-package-apps"></a>Decidir cómo empaquetar aplicaciones
@@ -68,7 +68,7 @@ Hay tres opciones para empaquetar las aplicaciones:
 
 - Puede empaquetar aplicaciones usted mismo
 - Puede trabajar con un proveedor que no es de Microsoft
-- Puedes interactuar con MCS para empaquetar tus aplicaciones. Trabajar con el representante de la cuenta microsoft. Para obtener más información, vea [Trabajar con servicios de consultoría de Microsoft.](apps-MCS.md)
+- Puedes interactuar con MCS para empaquetar tus aplicaciones. Trabajar con el representante de la cuenta Microsoft. Para obtener más información, vea [Trabajar con servicios de consultoría de Microsoft.](apps-MCS.md)
 
 
 

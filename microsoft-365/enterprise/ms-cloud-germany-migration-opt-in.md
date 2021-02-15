@@ -58,7 +58,7 @@ Las migraciones comenzarán a principios de 2021 para las organizaciones que opt
 
 ## <a name="what-happens-if-you-do-not-opt-in-for-migration-in-admin-center"></a>¿Qué sucede si no opta por la migración en el Centro de administración?
 
-Los Términos de Online Services han cambiado para incluir términos que permitirán a Microsoft migrar los datos y suscripciones de Microsoft 365, Dynamics 365 y Power BI de Microsoft Cloud Deutschland a un nuevo centro de datos. Estos términos surte efecto en cualquier suscripción de Microsoft Cloud Alemania (Microsoft Cloud Deutschland) que se haya renovado desde el 1 de mayo de 2020. 
+Los Términos de Online Services han cambiado para incluir términos que permitirán a Microsoft migrar los datos y suscripciones de Microsoft 365, Dynamics 365 y Power BI de Microsoft Cloud Deutschland a un nuevo centro de datos. Estos términos surte efecto en cualquier suscripción a Microsoft Cloud Alemania (Microsoft Cloud Deutschland) renovado desde el 1 de mayo de 2020. 
 
 El administrador de inquilinos del cliente recibirá un aviso por correo electrónico y el Centro de mensajes le advierte de que la suscripción a la migración se realizará automáticamente para una migración asistida por Microsoft. Este aviso se enviará al menos 30 días antes de la suscripción automática. Después de la suscripción a la migración, todas las comunicaciones y actualizaciones de estado se envían a los administradores de inquilinos del cliente en el Centro de mensajes.
 

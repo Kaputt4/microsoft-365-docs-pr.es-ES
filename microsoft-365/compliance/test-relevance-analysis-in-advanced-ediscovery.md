@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
-description: Obtenga información sobre cómo usar la pestaña prueba tras el cálculo del lote en la exhibición avanzada de documentos electrónicos para probar, comparar y validar la calidad general de procesamiento.
+description: Obtenga información sobre cómo usar la pestaña Prueba después del cálculo por lotes en eDiscovery avanzado para probar, comparar y validar la calidad general del procesamiento.
 ms.openlocfilehash: 3ac12c176f2e46ac0321976a7e0689fbd8893bba
 ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
@@ -26,88 +26,88 @@ ms.locfileid: "49769175"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery"></a>Probar el análisis de relevancia en eDiscovery avanzado
   
-La pestaña prueba de eDiscovery avanzado permite probar, comparar y validar la calidad general de procesamiento. Estas pruebas se realizan después del cálculo por lotes. Al etiquetar los archivos de la colección, un experto realiza la última decisión sobre si cada archivo etiquetado es relevante para el caso.
+La pestaña Prueba de eDiscovery avanzado le permite probar, comparar y validar la calidad general del procesamiento. Estas pruebas se realizan después del cálculo por lotes. Al etiquetar los archivos de la colección, un experto toma la decisión final sobre si cada archivo etiquetado es relevante para el caso.
   
-En escenarios únicos o de varios problemas, las pruebas se realizan normalmente por problema. Los resultados se pueden ver después de cada prueba y los resultados de la prueba se pueden volver a usar con los archivos de prueba de ejemplo especificados.
+En escenarios únicos y de varios problemas, las pruebas suelen realizarse por problema. Los resultados se pueden ver después de cada prueba y los resultados de las pruebas se pueden volver a trabajar con archivos de prueba de ejemplo especificados.
   
 ## <a name="testing-the-rest"></a>Probar el resto
 
-La prueba "probar el resto" se usa para validar las decisiones de selección, por ejemplo, para revisar solo los archivos por encima de una puntuación de límite de relevancia específica basada en los resultados avanzados de eDiscovery avanzado. El experto revisa un ejemplo de archivos con una puntuación de límite seleccionada para evaluar el número de archivos relevantes dentro de ese conjunto.
+La prueba "Probar el resto" se usa para validar las decisiones de selección, por ejemplo, para revisar solo los archivos por encima de una puntuación de límite de relevancia específica en función de los resultados finales de eDiscovery avanzado. El experto revisa una muestra de archivos con una puntuación de límite seleccionada para evaluar el número de archivos relevantes dentro de ese conjunto.
   
-Esta prueba proporciona estadísticas y una comparación entre el conjunto de revisión y la prueba de la población de REST. Los resultados del conjunto de revisión son los que se calculan por relevancia durante la formación. Los resultados incluyen cálculos basados en la configuración y los parámetros de entrada, como:
+Esta prueba proporciona estadísticas y una comparación entre el conjunto review y la población Test the Rest. Los resultados del conjunto de revisión son los calculados por Relevancia durante el aprendizaje. Los resultados incluyen cálculos basados en la configuración y los parámetros de entrada, como:
   
-- Probar estadísticas de muestra del número de archivos de una muestra e identificado archivos relevantes.
+- Pruebe las estadísticas de ejemplo del número de archivos de un ejemplo y los archivos relevantes identificados.
 
-- Comparación tabular de los parámetros de población del conjunto de revisión y el resto, por ejemplo, el número de archivos, el número estimado de archivos relevantes, la riqueza estimada y el costo medio de buscar otro archivo relevante. El administrador puede establecer la configuración del parámetro cost.
+- Comparación tabular de los parámetros Population del conjunto Review y rest, por ejemplo, el número de archivos, el número estimado de archivos relevantes, la enriquecimiento estimado y el costo promedio de encontrar otro archivo relevante. El administrador puede establecer la configuración del parámetro de costo.
 
-Para ejecutar la prueba "probar el resto":
+Para ejecutar la prueba "Probar el resto":
 
-1. Abra la **pestaña \> prueba de relevancia** .
+1. Abra la pestaña **Prueba \> de** relevancia.
 
-2. En la pestaña **prueba** , haga clic en **nueva prueba**. Se muestra el cuadro de diálogo **crear prueba** , tal como se muestra en el siguiente ejemplo.
+2. En la **pestaña Prueba,** haga clic **en Nueva prueba.** Se **muestra el cuadro** de diálogo Crear prueba, como se muestra en el ejemplo siguiente.
 
     ![Resultados de Probar el resto de relevancia](../media/46e6898a-f929-4fd0-88d9-6f91d04b6ce2.png)
   
-3. En **nombre** de la prueba y **Descripción**, escriba el nombre y la descripción.
+3. En **Nombre de prueba** y **Descripción,** escriba el nombre y la descripción.
 
-4. En la lista **tipo de prueba** , seleccione **probar el resto**
+4. En la **lista Tipo de** prueba, seleccione Probar el **resto**
 
-5. En la lista **emisión/categoría** , seleccione el nombre del problema.
+5. En la **lista Problema o categoría,** seleccione el nombre del problema.
 
-6. En la lista **cargar** , seleccione la carga. 
+6. En la **lista Cargar,** seleccione la carga. 
 
-7. En el **% lectura**, acepte el valor predeterminado o seleccione un valor para la puntuación de relevancia de corte. 
+7. En **% de** lectura, acepte el valor predeterminado o seleccione un valor para la puntuación de relevancia de límite. 
 
-8. En **establecer tamaño** o aceptar el valor predeterminado. Los iconos de restauración restaurarán los valores predeterminados.
+8. En **Establecer tamaño** o acepte el valor predeterminado. Los iconos de restauración restaurarán los valores predeterminados.
 
-9. Haga clic en **iniciar etiquetado**. Se genera una muestra de prueba.
+9. Haga **clic en Iniciar etiquetado.** Se genera un ejemplo de prueba.
 
-10. Revise y etiquete cada uno de los archivos en la pestaña **\> etiqueta de relevancia** y, cuando haya terminado, haga clic en **calcular**.
+10. Revise y etiquete cada uno de los archivos en la pestaña **Etiqueta \> de** relevancia y, cuando haya terminado, haga clic en **Calcular**.
 
-11. En la pestaña prueba, puede hacer clic en **ver resultados** para ver los resultados de la prueba. En la siguiente captura de pantalla se muestra un ejemplo.
+11. En la pestaña Prueba, puede hacer clic en **Ver resultados** para ver los resultados de la prueba. En la siguiente captura de pantalla se muestra un ejemplo.
 
     ![Resultados de Probar el resto](../media/b95744a9-047d-4c29-992d-04fa7e58e58a.png)
   
-En la captura de pantalla anterior, la sección **parámetros de ejemplo** de la tabla contiene detalles sobre el número de archivos en el ejemplo etiquetado por el experto y el número de archivos relevantes que se encuentran en ese ejemplo.
+En la captura  de pantalla anterior, la sección de parámetros de ejemplo de la tabla contiene detalles sobre el número de archivos del ejemplo etiquetados por el experto y el número de archivos relevantes que se encuentran en ese ejemplo.
   
-La sección **parámetros de rellenado** de la tabla contiene los resultados de la prueba, incluido el rellenado de la revisión del conjunto de archivos con una puntuación inferior al límite seleccionado y el rellenado "el resto" de los archivos con una puntuación superior al límite seleccionado. Para cada población, se muestran los siguientes resultados:
+La sección **Parámetros** de población de la tabla contiene los resultados de las pruebas, incluido el conjunto de revisión de la población de archivos con una puntuación por debajo del límite seleccionado y la población de archivos "El resto" con una puntuación por encima del límite seleccionado. Para cada población, se muestran los siguientes resultados:
   
-- Incluye archivos con el%-límite de lectura declarados
+- Incluye archivos con % de lectura: límite establecido
 
 - El número total de archivos
 
 - El número estimado de archivos relevantes
 
-- La riqueza estimada
+- La enriquecimiento estimado
 
-- El costo medio de revisión de buscar otro archivo relevante
+- Costo medio de revisión de la búsqueda de otro archivo relevante
 
-## <a name="testing-the-slice"></a>Prueba del segmento
+## <a name="testing-the-slice"></a>Probar el segmento
 
-La prueba "probar el sector" realiza una prueba similar a la prueba "probar el resto", pero con un segmento del conjunto de archivos tal y como se especifica por% de lectura de relevancia.
+La prueba "Probar el segmento" realiza pruebas similares a la prueba "Probar el resto", pero a un segmento del conjunto de archivos especificado por %de lectura de relevancia.
 
-Para ejecutar la prueba "probar el sector":
+Para ejecutar la prueba "Probar el segmento":
   
-1. Abra la **pestaña \> prueba de relevancia** .
+1. Abra la pestaña **Prueba \> de** relevancia.
 
-2. En la pestaña **prueba** , haga clic en **nueva prueba**. Se muestra el cuadro de diálogo **crear prueba** .
+2. En la **pestaña Prueba,** haga clic **en Nueva prueba.** Se **muestra el cuadro** de diálogo Crear prueba.
 
-3. En **nombre** de la prueba y **Descripción**, escriba la información.
+3. En **Nombre y** **descripción** de la prueba, escriba la información.
 
-4. En la lista **tipo de prueba** , seleccione **probar el sector**.
+4. En la **lista Tipo de** prueba, seleccione Probar el **segmento.**
 
-5. En la lista de **problemas** , seleccione el nombre del problema.
+5. En la **lista** Problema, seleccione el nombre del problema.
 
-6. En la lista **cargar** , seleccione la carga.
+6. En la **lista Cargar,** seleccione la carga.
 
-7. En **leer% entre**, acepte los valores predeterminados de rango bajo y alto o seleccione valores para los resultados de relevancia de corte.
+7. En **% de lectura entre**, acepte los valores predeterminados de rango bajo y alto o seleccione valores para las puntuaciones de relevancia de límite.
 
-8. En **establecer tamaño**, seleccione un valor o acepte el valor predeterminado.
+8. En **Establecer tamaño,** seleccione un valor o acepte el valor predeterminado.
 
     Los iconos de restauración restaurarán el valor predeterminado.
 
-9. Haga clic en **iniciar etiquetado**. Se genera una muestra de prueba.
+9. Haga **clic en Iniciar etiquetado.** Se genera un ejemplo de prueba.
 
-10. Revise y etiquete cada uno de los archivos en la pestaña **\> etiqueta de relevancia** y, cuando haya terminado, haga clic en **calcular**.
+10. Revise y etiquete cada uno de los archivos en la pestaña **Etiqueta \> de** relevancia y, cuando haya terminado, haga clic en **Calcular**.
 
-11. En la pestaña prueba, puede hacer clic en **ver resultados** para ver los resultados de la prueba.
+11. En la pestaña Prueba, puede hacer clic en **Ver resultados** para ver los resultados de la prueba.

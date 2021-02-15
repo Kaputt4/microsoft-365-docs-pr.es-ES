@@ -18,7 +18,7 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
-description: En este artículo, aprenderá a crear, probar y ajustar una directiva DLP de acuerdo con las necesidades de su organización.
+description: En este artículo, aprenderá a crear, probar y ajustar una directiva DLP según las necesidades de su organización.
 ms.openlocfilehash: 9b43899969ab0fdc5d67b051db36c0b245f7811e
 ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
@@ -28,208 +28,208 @@ ms.locfileid: "49663197"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
-La prevención de pérdida de datos (DLP) ayuda a impedir el uso compartido no intencionado o accidental de información confidencial.
+La prevención de pérdida de datos (DLP) le ayuda a evitar el uso compartido accidental o no intencionado de información confidencial.
 
-DLP examina los mensajes de correo electrónico y los archivos en busca de información confidencial, como un número de tarjeta de crédito. Con DLP puede detectar información confidencial y emprender acciones como:
+DLP examina los mensajes de correo electrónico y los archivos para obtener información confidencial, como un número de tarjeta de crédito. Con DLP puede detectar información confidencial y tomar medidas como:
 
 - Registrar el evento con fines de auditoría
-- Mostrar una advertencia al usuario final que está enviando el correo electrónico o compartiendo el archivo
-- Bloquear activamente el correo electrónico o el uso compartido de archivos sin tener lugar
+- Mostrar una advertencia al usuario final que envía el correo electrónico o comparte el archivo
+- Bloquear activamente el correo electrónico o el uso compartido de archivos
 
 ## <a name="permissions"></a>Permissions
 
-Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP necesitan permisos para el centro de cumplimiento. De forma predeterminada, el administrador de inquilinos tendrá acceso a los responsables de cumplimiento normativo y a otros usuarios. Siga estos pasos:
+Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP necesitan permisos para el centro de cumplimiento. De forma predeterminada, el administrador del espacio empresarial tendrá acceso para dar acceso a los responsables de cumplimiento normativo y a otras personas. Siga estos pasos:
   
 1. Crear un grupo en Microsoft 365 y adición de responsables de cumplimiento.
     
 2. Crear un grupo de roles en la página **Permisos** del Centro de seguridad y cumplimiento. 
 
-3. Al crear el grupo de roles, use la sección **elegir roles** para agregar el rol siguiente al grupo de roles: **Administración de cumplimiento de DLP**.
+3. Al crear el grupo de roles, use la sección Elegir **roles** para agregar el siguiente rol al grupo de roles: **Administración de cumplimiento de DLP.**
     
 4. Use la sección **Elegir miembros** para añadir el grupo de Microsoft 365 que creó antes del grupo de roles.
 
-Use el rol de **Administración de cumplimiento de DLP de solo vista** para crear un grupo de roles con privilegios de solo vista para las directivas de DLP y los informes de DLP.
+Use el rol **Administración de cumplimiento dlp de** solo vista para crear un grupo de roles con privilegios de solo vista para las directivas DLP y los informes DLP.
 
 Para más información, vea [Conceder acceso a los usuarios al Centro de cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
-Estos permisos son necesarios para crear y aplicar una directiva DLP que no se apliquen las directivas.
+Estos permisos son necesarios para crear y aplicar una directiva DLP para no aplicar directivas.
 
-## <a name="how-sensitive-information-is-detected-by-dlp"></a>Cómo se detecta la información confidencial mediante DLP
+## <a name="how-sensitive-information-is-detected-by-dlp"></a>Cómo DLP detecta la información confidencial
 
-DLP busca información confidencial por coincidencia de patrón de expresiones regulares (RegEx), en combinación con otros indicadores, como la proximidad de determinadas palabras clave a los patrones coincidentes. Por ejemplo, un número de tarjeta de crédito VISA tiene 16 dígitos. Pero estos dígitos pueden escribirse de varias maneras, como 1111-1111-1111-1111, 1111 1111 1111 1111 o 1111111111111111.
+DLP busca información confidencial mediante la coincidencia de patrones de expresión regular (RegEx), en combinación con otros indicadores, como la proximidad de determinadas palabras clave a los patrones de coincidencia. Por ejemplo, un número de tarjeta de crédito VISA tiene 16 dígitos. Pero estos dígitos se pueden escribir de diferentes maneras, como 1111-1111-1111-1111, 1111 1111 1111 1111 o 11111111111111111111111111.
 
-Cualquier cadena de 16 dígitos no es necesariamente un número de tarjeta de crédito, puede ser un número de incidencia de un sistema de asistencia o un número de serie de un componente de hardware. Para identificar la diferencia entre un número de tarjeta de crédito y una cadena de 16 dígitos inofensivo, se realiza un cálculo (suma de comprobación) para confirmar que los números coinciden con un patrón conocido de las diversas marcas de tarjeta de crédito.
+Cualquier cadena de 16 dígitos no es necesariamente un número de tarjeta de crédito, puede ser un número de vale de un sistema de asistencia o un número de serie de un fragmento de hardware. Para saber la diferencia entre un número de tarjeta de crédito y una cadena de 16 dígitos inofensiva, se realiza un cálculo (suma de comprobación) para confirmar que los números coinciden con un patrón conocido de las distintas marcas de tarjetas de crédito.
 
-Si DLP encuentra palabras clave como "VISA" o "AMEX", valores de fecha cercanos que pueden ser la fecha de expiración de la tarjeta de crédito, DLP también usa esos datos para ayudarle a decidir si la cadena es un número de tarjeta de crédito o no.
+Si DLP encuentra palabras clave como "VISA" o "AMEX", valores cercanos a la fecha que podría ser la fecha de expiración de la tarjeta de crédito, DLP también usa esos datos para ayudarle a decidir si la cadena es un número de tarjeta de crédito o no.
 
-Es decir, la DLP es lo suficientemente inteligente como para reconocer la diferencia entre estas dos cadenas de texto en un correo electrónico:
+En otras palabras, DLP es lo suficientemente inteligente como para reconocer la diferencia entre estas dos cadenas de texto en un correo electrónico:
 
-- "¿Puede solicitarme un nuevo portátil. Usar mi VISAdo número 1111-1111-1111-1111, expirar 11/22 y enviarme la fecha de entrega estimada cuando la tiene. "
-- "El número de serie del portátil es 2222-2222-2222-2222 y se compró en 11/2010. Por cierto, ¿se aprobó todavía mi visado de viajes? "
+- "Puedes pedirme un nuevo portátil. Use mi número VISA 1111-1111-1111-1111, expira el 22/11/11 y envíeme la fecha de entrega estimada cuando la tenga".
+- "Mi número de serie de portátil es 2222-2222-2222-2222 y se compró el 11/2010. Por cierto, ¿mi visa de viaje ya está aprobada?"
 
-Vea [información confidencial definiciones de entidad](sensitive-information-type-entity-definitions.md) que explica cómo se detecta cada tipo de información.
+Vea [definiciones de entidad de tipo de información](sensitive-information-type-entity-definitions.md) confidencial que explica cómo se detecta cada tipo de información.
 
-## <a name="where-to-start-with-data-loss-prevention"></a>Dónde comenzar con prevención de pérdida de datos
+## <a name="where-to-start-with-data-loss-prevention"></a>Dónde empezar con la prevención de pérdida de datos
 
-Cuando los riesgos de la filtración de datos no son totalmente obvios, es difícil averiguar dónde se debe empezar exactamente con la implementación de DLP. Afortunadamente, las directivas de DLP se pueden ejecutar en el "modo de prueba", lo que le permite evaluar su eficacia y precisión antes de activarlas.
+Cuando los riesgos de fuga de datos no son totalmente obvios, es difícil averiguar dónde debe comenzar exactamente con la implementación de DLP. Afortunadamente, las directivas DLP se pueden ejecutar en "modo de prueba", lo que le permite medir su eficacia y precisión antes de activarlas.
 
-Las directivas de DLP para Exchange Online se pueden administrar a través del centro de administración de Exchange. Sin embargo, puede configurar directivas de DLP para todas las cargas de trabajo a través del centro de seguridad & cumplimiento, que voy a usar para las demostraciones de este artículo. En el centro de seguridad & cumplimiento, encontrará las directivas DLP en la Directiva de **prevención de pérdida de datos**  >  . Elija **crear una directiva** para iniciar.
+Las directivas DLP para Exchange Online se pueden administrar a través del Centro de administración de Exchange. Pero puede configurar directivas DLP para todas las cargas de trabajo a través del Centro de seguridad y cumplimiento de &, por lo que eso es lo que usaré para las demostraciones de este artículo. En el Centro de & cumplimiento, encontrará las directivas DLP en Directiva de **prevención de pérdida de**  >  **datos.** Elija **Crear una directiva** para iniciarla.
 
-Microsoft 365 proporciona una amplia variedad de [plantillas de directivas de DLP](what-the-dlp-policy-templates-include.md) que puede usar para crear directivas. Supongamos que es un negocio australiano. Puede filtrar las plantillas en Australia y elegir la privacidad, la salud y la financiación.
+Microsoft 365 proporciona una variedad de plantillas de directiva [DLP](what-the-dlp-policy-templates-include.md) que puede usar para crear directivas. Supongamos que es un negocio de Australia. Puede filtrar las plantillas en Australia y elegir Finanzas, Salud y Privacidad.
 
-![Opción para elegir el país o la región](../media/DLP-create-test-tune-choose-country.png)
+![Opción para elegir país o región](../media/DLP-create-test-tune-choose-country.png)
 
-Para esta demostración, elegiré datos de identificación personal (PII) de Australia, que incluye los tipos de información del número de archivo de impuestos de Australia (TFN) y el número de permiso de conducir.
+Para esta demostración, elegiré los datos de información de identificación personal (PII) de Australia, que incluye los tipos de información del número de archivo fiscal (TFN) de Australia y el número de licencia de conductor.
 
-![Opción para elegir una plantilla de Directiva](../media/DLP-create-test-tune-choose-policy-template.png)
+![Opción para elegir una plantilla de directiva](../media/DLP-create-test-tune-choose-policy-template.png)
 
-Asigne un nombre a la nueva Directiva de DLP. El nombre predeterminado coincidirá con la plantilla de directiva DLP, pero debe elegir un nombre más descriptivo, ya que se pueden crear varias directivas a partir de la misma plantilla.
+Asigne un nombre a la nueva directiva DLP. El nombre predeterminado coincidirá con la plantilla de directiva DLP, pero debe elegir un nombre más descriptivo propio, ya que se pueden crear varias directivas a partir de la misma plantilla.
 
-![Opción para asignar un nombre a la Directiva](../media/DLP-create-test-tune-name-policy.png)
+![Opción para nombrar la directiva](../media/DLP-create-test-tune-name-policy.png)
 
-Elija las ubicaciones a las que se aplicará la Directiva. Las directivas DLP se pueden aplicar a Exchange Online, SharePoint Online y OneDrive para la empresa. Voy a dejar esta directiva configurada para aplicarse a todas las ubicaciones.
+Elija las ubicaciones a las que se aplicará la directiva. Las directivas DLP se pueden aplicar a Exchange Online, SharePoint Online y OneDrive para la Empresa. Voy a dejar esta directiva configurada para que se aplique a todas las ubicaciones.
 
 ![Opción para elegir todas las ubicaciones](../media/DLP-create-test-tune-choose-locations.png)
 
-En el primer paso de configuración de la **Directiva** , simplemente acepte los valores predeterminados por el momento. Puede personalizar las directivas de DLP, pero los valores predeterminados son un buen punto de partida.
+En el primer paso **de configuración** de directiva, solo tienes que aceptar los valores predeterminados por ahora. Puede personalizar las directivas DLP, pero los valores predeterminados son un buen punto de inicio.
 
-![Opciones para personalizar el tipo de contenido que se va a proteger](../media/DLP-create-test-tune-default-customization-settings.png)
+![Opciones para personalizar el tipo de contenido que se debe proteger](../media/DLP-create-test-tune-default-customization-settings.png)
 
-Después de hacer clic en siguiente, * * aparecerá una página **configuración de directivas** adicional con más opciones de personalización. Para una directiva que solo está probando, aquí es donde puede empezar a realizar algunos ajustes.
+Después de hacer clic en Siguiente,** se mostrará una página **de** configuración de directiva adicional con más opciones de personalización. Para una directiva que solo estás probando, aquí es donde puedes empezar a realizar algunos ajustes.
 
-- He desactivado las sugerencias de Directiva por ahora, que es un paso razonable que debe realizar si solo está probando cosas y no quiere mostrar nada a los usuarios todavía. Las sugerencias de directiva muestran advertencias a los usuarios de que están a punto de infringir una directiva de DLP. Por ejemplo, un usuario de Outlook verá una advertencia que indica que el archivo que ha adjuntado contiene números de tarjeta de crédito y que se rechazará el correo electrónico. El objetivo de las sugerencias de directiva es detener el comportamiento no compatible antes de que ocurra.
-- También se ha reducido el número de instancias de 10 a 1, por lo que esta directiva detectará cualquier uso compartido de datos PII australianos, no solo el uso compartido de datos de forma masiva.
+- He desactivado las sugerencias de directiva por ahora, que es un paso razonable para realizar si solo estás probando las cosas y no quieres mostrar nada a los usuarios todavía. Las sugerencias de directiva muestran advertencias a los usuarios de que están a punto de infringir una directiva DLP. Por ejemplo, un usuario de Outlook verá una advertencia de que el archivo que ha adjuntado contiene números de tarjeta de crédito y hará que su correo electrónico se rechace. El objetivo de las sugerencias de directiva es detener el comportamiento no compatible antes de que ocurra.
+- También he reducido el número de instancias de 10 a 1, por lo que esta directiva detectará cualquier uso compartido de datos pii de Australia, no solo el uso compartido masivo de los datos.
 - También he agregado otro destinatario al correo electrónico del informe de incidentes.
 
 ![Configuración de directiva adicional](../media/DLP-create-test-tune-more-policy-settings.png)
 
-Por último, he configurado esta directiva para que se ejecute inicialmente en modo de prueba. Observe que también hay una opción para deshabilitar las sugerencias de directiva en el modo de prueba. Esto le proporciona la flexibilidad necesaria para habilitar las sugerencias de directiva en la Directiva, pero después decidir si desea mostrarlas o suprimirlas durante las pruebas.
+Por último, he configurado esta directiva para que se ejecute inicialmente en modo de prueba. Observe que también hay una opción aquí para deshabilitar las sugerencias de directiva mientras está en modo de prueba. Esto te ofrece la flexibilidad de tener las sugerencias de directiva habilitadas en la directiva, pero luego decidir si quieres mostrarlas o suprimirlas durante las pruebas.
 
-![Opción para probar la Directiva primero](../media/DLP-create-test-tune-test-mode.png)
+![Opción para probar primero la directiva](../media/DLP-create-test-tune-test-mode.png)
 
-En la pantalla finalización de la revisión, haga clic en **crear** para finalizar la creación de la Directiva.
+En la pantalla de revisión final, haga **clic en Crear** para terminar de crear la directiva.
 
 ## <a name="test-a-dlp-policy"></a>Probar una directiva DLP
 
-La nueva Directiva de DLP empezará a surtir efecto en aproximadamente 1 hora. Puede sentarse y esperar a que se active por una actividad de usuario normal o puede intentar activarla usted mismo. Anteriormente vinculó a [definiciones de entidad de tipo de información confidencial](sensitive-information-type-entity-definitions.md), que proporciona información sobre cómo desencadenar las coincidencias de DLP.
+La nueva directiva DLP empezará a tener efecto en aproximadamente 1 hora. Puedes esperar a que se desencadene por la actividad normal del usuario o puedes intentar desencadenarla tú mismo. Anteriormente, vinculé [a definiciones](sensitive-information-type-entity-definitions.md)de entidad de tipo de información confidencial, que proporciona información sobre cómo desencadenar coincidencias dlp.
 
-Como ejemplo, la Directiva DLP que he creado para este artículo detectará los números de archivo de impuestos australianos (TFN). De acuerdo con la documentación, la coincidencia se basa en los siguientes criterios.
+Por ejemplo, la directiva DLP que creé para este artículo detectará números de archivo fiscal (TFN) de Australia. Según la documentación, la coincidencia se basa en los siguientes criterios.
 
-![Documentación sobre el número de archivo de impuestos de Australia](../media/DLP-create-test-tune-Australia-Tax-File-Number-doc.png)
+![Documentación sobre el número de archivo fiscal de Australia](../media/DLP-create-test-tune-Australia-Tax-File-Number-doc.png)
  
-Para demostrar la detección de TFN de forma bastante predecible, un correo electrónico con las palabras "número de archivo de impuestos" y una cadena de 9 dígitos en proximidad se desplazará sin problemas. La razón por la que no activa la Directiva DLP es que la cadena de 9 dígitos debe pasar la suma de comprobación que indica que es un TFN válido y no solo una cadena de números inocua.
+Para demostrar la detección de TFN de una manera más sencilla, un correo electrónico con las palabras "Número de archivo de impuestos" y una cadena de 9 dígitos cerca se navegará sin problemas. La razón por la que no desencadena la directiva DLP es que la cadena de 9 dígitos debe pasar la suma de comprobación que indica que es un TFN válido y no solo una cadena inofensiva de números.
 
-![Número de archivo de impuestos de Australia que no pasa la suma de comprobación](../media/DLP-create-test-tune-email-test1.png)
+![Número de archivo fiscal de Australia que no supera la suma de comprobación](../media/DLP-create-test-tune-email-test1.png)
 
-En comparación, un correo electrónico con las palabras "número de archivo de impuestos" y un TFN válido que pase la suma de comprobación activará la Directiva. Para el registro, el TFN que estoy usando se ha tomado de un sitio web que genera un TFNs válido, pero no genuino. Estos sitios son muy útiles porque uno de los errores más comunes al probar una directiva DLP es usar un número falso que no es válido y no pasa la suma de comprobación (y, por lo tanto, no desencadena la Directiva).
+En comparación, un correo electrónico con las palabras "Número de archivo de impuestos" y un TFN válido que pasa la suma de comprobación activará la directiva. Para el registro aquí, el TFN que estoy usando se ha tomado de un sitio web que genera TFN válidos, pero no originales. Estos sitios son muy útiles porque uno de los errores más comunes al probar una directiva DLP es usar un número falso que no es válido y no superará la suma de comprobación (y, por lo tanto, no activará la directiva).
 
-![Número de archivo de impuestos de Australia que pasa la suma de comprobación](../media/DLP-create-test-tune-email-test2.png)
+![Número de archivo fiscal de Australia que pasa la suma de comprobación](../media/DLP-create-test-tune-email-test2.png)
 
-El correo electrónico del informe de incidentes incluye el tipo de información confidencial que se ha detectado, el número de instancias que se han detectado y el nivel de confianza de la detección.
+El correo electrónico del informe de incidentes incluye el tipo de información confidencial que se detectó, el número de instancias detectadas y el nivel de confianza de la detección.
 
 ![Informe de incidentes que muestra el número de archivo de impuestos detectado](../media/DLP-create-test-tune-email-incident-report.png)
 
-Si deja la Directiva DLP en modo de prueba y analiza los correos electrónicos del informe de incidentes, puede empezar a familiarizarse con la precisión de la Directiva DLP y la eficacia que tendrá cuando se aplique. Además de los informes de incidentes, puede [usar los informes DLP](view-the-dlp-reports.md) para ver una vista agregada de las coincidencias de directivas en el espacio empresarial.
+Si deja la directiva DLP en modo de prueba y analiza los correos electrónicos del informe de incidentes, puede empezar a conocer la precisión de la directiva DLP y lo eficaz que será cuando se aplique. Además de los informes de incidentes, puede usar los informes [DLP](view-the-dlp-reports.md) para ver una vista agregada de las coincidencias de directivas en su espacio empresarial.
 
 ## <a name="tune-a-dlp-policy"></a>Ajustar una directiva DLP
 
-Al analizar las visitas de la Directiva, es posible que desee realizar algunos ajustes en el comportamiento de las directivas. Como ejemplo sencillo, puede determinar que un TFN en el correo electrónico no es un problema (creo que sigue siendo, pero vamos a ir con él para la demostración), pero dos o más instancias son un problema. Varias instancias podrían ser un escenario arriesgado, como un empleado que envíe por correo electrónico una exportación de CSV desde la base de datos de recursos humanos a una parte externa, por ejemplo, un servicio de contabilidad externo. Definitivamente algo que preferiría detectar y bloquear.
+Al analizar los aciertos de la directiva, es posible que desee realizar algunos ajustes en el comportamiento de las directivas. Como ejemplo simple, puede determinar que un TFN en el correo electrónico no es un problema (creo que lo sigue siendo, pero vamos con él por razones de demostración), pero dos o más instancias es un problema. Varios casos pueden ser un escenario de riesgo, como un empleado que envía por correo electrónico una exportación de CSV de la base de datos de RECURSOS a una parte externa, por ejemplo, un servicio de contabilidad externo. Definitivamente, es algo que prefiere detectar y bloquear.
 
-En el centro de seguridad & cumplimiento, puede editar una directiva existente para ajustar el comportamiento.
+En el Centro de & cumplimiento puede editar una directiva existente para ajustar el comportamiento.
 
-![Opción para editar la Directiva](../media/DLP-create-test-tune-edit-policy.png)
+![Opción para editar la directiva](../media/DLP-create-test-tune-edit-policy.png)
  
-Puede ajustar la configuración de ubicación para que la Directiva se aplique solo a cargas de trabajo específicas o a sitios y cuentas específicos.
+Puede ajustar la configuración de ubicación para que la directiva se aplique solo a cargas de trabajo específicas o a cuentas y sitios específicos.
 
 ![Opciones para elegir ubicaciones específicas](../media/DLP-create-test-tune-edit-locations.png)
 
-También puede ajustar la configuración de la Directiva y editar las reglas para que se adapten mejor a sus necesidades.
+También puede ajustar la configuración de directiva y editar las reglas para que se adapten mejor a sus necesidades.
 
-![Opción para editar la regla](../media/DLP-create-test-tune-edit-rule.png)
+![Opción para editar regla](../media/DLP-create-test-tune-edit-rule.png)
 
-Al editar una regla en una directiva DLP que puede cambiar:
+Al editar una regla dentro de una directiva DLP, puede cambiar:
 
 - Las condiciones, incluido el tipo y el número de instancias de datos confidenciales que desencadenarán la regla.
-- Las acciones que se realizan, como restringir el acceso al contenido.
-- Notificaciones de usuario, que son sugerencias de directiva que se muestran al usuario en su cliente de correo electrónico o explorador Web.
+- Las acciones que se toman, como restringir el acceso al contenido.
+- Notificaciones de usuario, que son sugerencias de directiva que se muestran al usuario en su cliente de correo electrónico o explorador web.
 - Invalidaciones de usuario, que determina si los usuarios pueden optar por continuar con el correo electrónico o el uso compartido de archivos de todos modos.
 - Informes de incidentes, para notificar a los administradores.
 
 ![Opciones para editar partes de una regla](../media/DLP-create-test-tune-editing-options.png)
 
-Para esta demostración, he agregado notificaciones de usuario a la Directiva (tenga cuidado de hacerlo sin el suficiente aprendizaje de reconocimiento de usuarios) y los usuarios pueden invalidar la Directiva con una justificación comercial o marcarla como falso positivo. Tenga en cuenta que también puede personalizar el correo electrónico y el texto de la sugerencia de Directiva si desea incluir información adicional sobre las directivas de la organización o solicitar a los usuarios que se pongan en contacto con el soporte técnico si tienen preguntas.
+Para esta demostración, agregó notificaciones de usuario a la directiva (tenga cuidado de hacerlo sin la formación adecuada para el usuario) y permitió a los usuarios invalidar la directiva con una justificación comercial o marcando como falso positivo. Tenga en cuenta que también puede personalizar el correo electrónico y el texto de la sugerencia de directiva si desea incluir información adicional sobre las directivas de su organización o solicitar a los usuarios que se pondrán en contacto con el soporte técnico si tienen preguntas.
 
-![Opciones de invalidaciones y notificaciones de usuario](../media/DLP-create-test-tune-user-notifications.png)
+![Opciones para notificaciones e invalidaciones de usuario](../media/DLP-create-test-tune-user-notifications.png)
 
-La Directiva contiene dos reglas para controlar el volumen alto y el volumen bajo, por lo que debe asegurarse de editar ambas con las acciones que desee. Esta es una oportunidad para tratar los casos de manera diferente en función de sus características. Por ejemplo, puede permitir reemplazos para infracciones de volumen bajos, pero no permitir invalidaciones para infracciones de gran volumen.
+La directiva contiene dos reglas para controlar el volumen alto y el bajo volumen, así que asegúrate de editar ambas con las acciones que quieras. Esta es una oportunidad para tratar los casos de forma diferente en función de sus características. Por ejemplo, puede permitir invalidaciones para infracciones de bajo volumen, pero no permitir invalidaciones para infracciones de volumen alto.
 
-![Una regla para grandes volúmenes y una regla para volumen bajo](../media/DLP-create-test-tune-two-rules.png)
+![Una regla para volumen alto y otra para volumen bajo](../media/DLP-create-test-tune-two-rules.png)
 
-Además, si desea bloquear o restringir el acceso al contenido que infringe la Directiva, debe configurar una acción en la regla para hacerlo.
+Además, si desea bloquear o restringir realmente el acceso al contenido que infringe la directiva, debe configurar una acción en la regla para hacerlo.
 
 ![Opción para restringir el acceso al contenido](../media/DLP-create-test-tune-restrict-access-action.png)
 
-Después de guardar los cambios en la configuración de la Directiva, también es necesario volver a la página de configuración principal de la Directiva y habilitar la opción de Mostrar sugerencias de directiva a los usuarios mientras la Directiva está en modo de prueba. Esta es una forma eficaz de introducir directivas de DLP para los usuarios finales y realizar un entrenamiento del usuario, sin arriesgar demasiados falsos positivos que afecten a su productividad.
+Después de guardar los cambios en la configuración de directiva, también necesito volver a la página de configuración principal de la directiva y habilitar la opción para mostrar sugerencias de directiva a los usuarios mientras la directiva está en modo de prueba. Esta es una forma eficaz de introducir directivas DLP para los usuarios finales y realizar formación sobre el usuario, sin correr el riesgo de demasiados falsos positivos que afectan a su productividad.
 
-![Opción para mostrar las sugerencias de directiva en el modo de prueba](../media/DLP-create-test-tune-show-policy-tips.png)
+![Opción para mostrar sugerencias de directiva en modo de prueba](../media/DLP-create-test-tune-show-policy-tips.png)
 
-En el lado del servidor (o en la nube si lo prefiere), es posible que el cambio no surta efecto inmediatamente, debido a diferentes intervalos de procesamiento. Si realiza un cambio de la Directiva DLP que mostrará nuevas sugerencias de directiva a un usuario, es posible que el usuario no vea los cambios de forma inmediata en el cliente de Outlook, que comprueba los cambios de Directiva cada 24 horas. Si quiere aumentar la velocidad de las pruebas, puede usar esta corrección del registro para [borrar la marca de tiempo de la última descarga de la clave PolicyNudges](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451). Outlook descargará la información más reciente de la Directiva la próxima vez que la reinicie y empiece a redactar un mensaje de correo electrónico.
+En el lado del servidor (o en el lado de la nube, si lo prefiere), es posible que el cambio no surte efecto inmediatamente, debido a varios intervalos de procesamiento. Si está realizando un cambio de directiva DLP que mostrará sugerencias de directiva nuevas a un usuario, es posible que el usuario no vea que los cambios entren en vigor inmediatamente en su cliente de Outlook, que comprueba si hay cambios de directiva cada 24 horas. Si desea acelerar las cosas para realizar pruebas, puede usar esta corrección del Registro para borrar la marca de tiempo de la última descarga de la clave [PolicyNudges](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451). Outlook descargará la información de directiva más reciente la próxima vez que la reinicie y comience a redactar un mensaje de correo electrónico.
 
-Si tiene habilitadas las sugerencias de Directiva, el usuario empezará a ver sugerencias en Outlook y podrá informar de falsos positivos cuando se produzcan.
+Si tiene las sugerencias de directiva habilitadas, el usuario empezará a ver las sugerencias en Outlook y podrá notificarle falsos positivos cuando se produzcan.
 
-![Sugerencia de directiva con opción para notificar falso positivo](../media/DLP-create-test-tune-policy-tip-in-outlook.png)
+![Sugerencia de directiva con opción para informar de falso positivo](../media/DLP-create-test-tune-policy-tip-in-outlook.png)
 
-## <a name="investigate-false-positives"></a>Investigar positivos falsos
+## <a name="investigate-false-positives"></a>Investigar falsos positivos
 
-Las plantillas de directivas de DLP no son perfectas directamente en el cuadro. Es probable que se produzcan falsos positivos en el entorno, por lo que es tan importante para facilitar la implementación de DLP y dedicar tiempo a probar y ajustar las directivas de forma adecuada.
+Las plantillas de directiva DLP no son perfectas desde el primer momento. Es probable que encuentre algunos falsos positivos en su entorno, por lo que es tan importante facilitar el acceso a una implementación de DLP, tomando el tiempo suficiente para probar y ajustar las directivas.
 
-Este es un ejemplo de un falso positivo. Este correo electrónico es bastante inocuo. El usuario proporciona su número de teléfono móvil a alguien e incluye su firma de correo electrónico.
+Este es un ejemplo de un falso positivo. Este correo electrónico es bastante inofensivo. El usuario proporciona su número de teléfono móvil a alguien e incluye su firma de correo electrónico.
 
 ![Correo electrónico que muestra información de falsos positivos](../media/DLP-create-test-tune-false-positive-email.png)
  
-Pero el usuario ve una sugerencia de directiva que advierte que el correo electrónico contiene información confidencial, en concreto, un número de licencia de conductor australiano.
+Pero el usuario ve una sugerencia de directiva en la que se le advierte de que el correo electrónico contiene información confidencial, en concreto, un número de licencia de conductor de Australia.
 
-![Opción para notificar un falso positivo en la sugerencia de Directiva](../media/DLP-create-test-tune-policy-tip-closeup.png)
+![Opción para informar de falso positivo en la sugerencia de directiva](../media/DLP-create-test-tune-policy-tip-closeup.png)
 
-El usuario puede informar del falso positivo y el administrador puede comprobar por qué se ha producido. En el correo electrónico del informe de incidentes, el correo electrónico se marca como falso positivo.
+El usuario puede informar del falso positivo y el administrador puede ver por qué se ha producido. En el correo electrónico del informe de incidentes, el correo electrónico se marca como un falso positivo.
 
 ![Informe de incidentes que muestra falso positivo](../media/DLP-create-test-tune-false-positive-incident-report.png)
 
-El caso de la licencia de conducir es un buen ejemplo para profundizar. La razón por la que se ha producido este falso positivo es que el tipo "licencia de conductor australiano" se desencadenará por cualquier cadena de 9 dígitos (incluso la que forme parte de una cadena de 10 dígitos), dentro de 300 caracteres de proximidad a las palabras clave "Sydney NSW" (no distingue entre mayúsculas y minúsculas). Por lo tanto, se desencadena por el número de teléfono y la firma de correo electrónico, solo porque el usuario se encuentra en Sydney.
+Este caso de licencia de conductor es un buen ejemplo para profundizar. La razón por la que se ha producido este falso positivo es que el tipo "Licencia de conductor de Australia" se desencadenará mediante cualquier cadena de 9 dígitos (incluso una que forma parte de una cadena de 10 dígitos), dentro de 300 caracteres cerca de las palabras clave "sydney nsw" (no distingue mayúsculas de minúsculas). Por lo tanto, se desencadena mediante el número de teléfono y la firma de correo electrónico, solo porque el usuario se encuentra en Sídney.
 
 
-Una opción es quitar el tipo de información de licencia de la conducción australiano de la Directiva. Está ahí porque forma parte de la plantilla de directiva DLP, pero no se ve obligado a usarlo. Si solo está interesado en los números de archivo de impuestos y no en las licencias de conducir, basta con quitarlos. Por ejemplo, puede quitarla de la regla de volumen bajo de la Directiva, pero déjela en la regla de volumen alto para que se sigan detectando las listas de licencias de varios impulsores.
+Una opción es quitar el tipo de información de licencia de conductor de Australia de la directiva. Está ahí porque forma parte de la plantilla de directiva DLP, pero no estamos obligados a usarla. Si solo te interesan los números de archivo fiscal y no las licencias de conductor, puedes quitarlo. Por ejemplo, puedes quitarla de la regla de bajo volumen de la directiva, pero dejarla en la regla de volumen alto para que aún se detecten listas de varias licencias de controladores.
 
 ![Opción para eliminar el tipo de información confidencial de la regla](../media/DLP-create-test-tune-delete-low-volume-rule.png)
  
-Otra opción es simplemente aumentar el recuento de instancias, de modo que un bajo volumen de licencias de conducir solo se detecta cuando hay varias instancias.
+Otra opción es simplemente aumentar el recuento de instancias, para que solo se detecte un bajo volumen de licencias de controlador cuando hay varias instancias.
 
 ![Opción para editar el recuento de instancias](../media/DLP-create-test-tune-edit-instance-count.png)
 
-Además de cambiar el recuento de instancias, también puede ajustar la precisión de coincidencia (o nivel de confianza). Si el tipo de información confidencial tiene varios patrones, puede ajustar la precisión de la coincidencia en la regla para que la regla coincida solo con modelos específicos. Por ejemplo, para ayudar a reducir los falsos positivos, puede establecer la precisión de coincidencia de la regla para que coincida solo con el patrón con el nivel de confianza más alto. Comprender cómo se calcula el nivel de confianza es un poco complicado (y más allá del alcance de esta publicación), pero esta es una buena explicación de [Cómo usar el nivel de confianza para ajustar las reglas](data-loss-prevention-policies.md#match-accuracy).
+Además de cambiar el recuento de instancias, también puedes ajustar la precisión de coincidencia (o nivel de confianza). Si el tipo de información confidencial tiene varios patrones, puede ajustar la precisión de coincidencia en la regla para que la regla coincida solo con patrones específicos. Por ejemplo, para ayudar a reducir los falsos positivos, puedes establecer la precisión de coincidencia de la regla para que coincida solo con el patrón con el nivel de confianza más alto. Comprender cómo se calcula el nivel de confianza es un poco complicado (y más allá del ámbito de esta publicación), pero esta es una buena explicación de cómo usar el nivel de confianza para ajustar las [reglas.](data-loss-prevention-policies.md#match-accuracy)
 
-Por último, si desea obtener un poco más avanzado, puede personalizar cualquier tipo de información confidencial, por ejemplo, puede quitar "Sydney NSW" de la lista de palabras clave para el número de [permiso de conducción de Australia](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)para eliminar el falso positivo que se ha activado. Para obtener información sobre cómo hacerlo con XML y PowerShell, consulte [Personalización de un tipo de información confidencial integrada](customize-a-built-in-sensitive-information-type.md).
+Por último, si quieres obtener incluso un poco más avanzado, puedes personalizar cualquier tipo de información confidencial; por ejemplo, puedes quitar "Sydney NSW" de la lista de palabras clave para el número de licencia de conductor de [Australia,](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)para eliminar el falso positivo desencadenado anteriormente. Para obtener información sobre cómo hacerlo mediante XML y PowerShell, vea la personalización de un tipo de [información confidencial integrado.](customize-a-built-in-sensitive-information-type.md)
 
 ## <a name="turn-on-a-dlp-policy"></a>Activar una directiva DLP
 
-Cuando esté satisfecho de que su Directiva de DLP detecte de forma precisa y eficaz los tipos de información confidencial, y de que los usuarios finales estén preparados para tratar con las directivas que se encuentran en vigor, puede habilitar la Directiva.
+Cuando esté satisfecho de que la directiva DLP detecte de forma precisa y eficaz los tipos de información confidencial, y que los usuarios finales estén listos para tratar con las directivas que están en su lugar, puede habilitar la directiva.
 
-![Opción para activar la Directiva](../media/DLP-create-test-tune-turn-on-policy.png)
+![Opción para activar la directiva](../media/DLP-create-test-tune-turn-on-policy.png)
  
-Si está esperando para ver cuándo tendrá efecto la Directiva, [Conéctese a PowerShell del centro de cumplimiento de seguridad &](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) y ejecute el [cmdlet Get-DlpCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy) para ver el DistributionStatus.
+Si está esperando a ver cuándo se hará efectiva la directiva, conéctese [a PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) del Centro de seguridad & Cumplimiento y ejecute el [cmdlet Get-DlpCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy) para ver el DistributionStatus.
 
 ![Ejecutar el cmdlet en PowerShell](../media/DLP-create-test-tune-PowerShell.png)
 
-Después de activar la Directiva DLP, debe ejecutar algunas pruebas finales de su propiedad para asegurarse de que se producen las acciones de directiva esperadas. Si intenta probar cosas como datos de tarjetas de crédito, hay sitios web en línea con información sobre cómo generar una tarjeta de crédito de ejemplo u otra información personal que pase las sumas de comprobación y active las directivas.
+Después de activar la directiva DLP, debe ejecutar algunas pruebas finales propias para asegurarse de que se están produciendo las acciones de directiva esperadas. Si está intentando probar cosas como los datos de tarjetas de crédito, hay sitios web en línea con información sobre cómo generar tarjetas de crédito de ejemplo u otra información personal que pasará sumas de comprobación y desencadenarán las directivas.
 
-Las directivas que permiten invalidaciones de usuario presentan esa opción al usuario como parte de la sugerencia de directiva.
+Las directivas que permiten invalidaciones de usuarios presentarán esa opción al usuario como parte de la sugerencia de directiva.
 
-![Sugerencia de directiva que permite al usuario invalidar](../media/DLP-create-test-tune-override-option.png)
+![Sugerencia de directiva que permite la invalidación de usuarios](../media/DLP-create-test-tune-override-option.png)
 
 Las directivas que restringen el contenido presentarán la advertencia al usuario como parte de la sugerencia de directiva e impedirán que envíen el correo electrónico.
 
-![Sugerencia de directiva de que el contenido está restringido](../media/DLP-create-test-tune-restrict-warning.png)
+![Sugerencia de directiva que dice que el contenido está restringido](../media/DLP-create-test-tune-restrict-warning.png)
 
 ## <a name="summary"></a>Resumen
 
-Las directivas de prevención de pérdida de datos son útiles para organizaciones de todos los tipos. La prueba de algunas directivas de DLP es un ejercicio de bajo riesgo debido al control que tiene sobre elementos como, por ejemplo, sugerencias de directivas, invalidaciones de usuarios finales e informes de incidentes. Puede probar silenciosamente algunas directivas de DLP para ver qué tipo de infracciones ya se están produciendo en su organización y, a continuación, crear directivas con tasas de falsos positivos bajos, educar a los usuarios sobre lo que se permite y no y, a continuación, implementar sus directivas de DLP en la organización.
+Las directivas de prevención de pérdida de datos son útiles para organizaciones de todos los tipos. Probar algunas directivas DLP es un ejercicio de bajo riesgo debido al control que tiene sobre aspectos como sugerencias de directiva, invalidaciones de usuarios finales e informes de incidentes. Puede probar algunas directivas DLP en modo silencioso para ver qué tipo de infracciones ya se están produciendo en su organización y, a continuación, crear directivas con tasas de falsos positivos baja, instruir a los usuarios sobre lo que está permitido y no permitido y, a continuación, implantar las directivas DLP en la organización.

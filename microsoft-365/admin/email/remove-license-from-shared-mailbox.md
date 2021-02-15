@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
-description: 'Quitar la licencia de un buzón compartido para asignarlo a otro usuario. '
+description: 'Quite la licencia de un buzón compartido para asignarla a otro usuario. '
 ms.openlocfilehash: 11d5185cc3f79899a737ddccc0a93160acb380bc
 ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
@@ -38,14 +38,14 @@ ms.locfileid: "49698308"
 
 ::: moniker-end
 
-Los buzones compartidos no suelen requerir una licencia. Siga estas instrucciones para quitar una licencia de un buzón de correo compartido de manera que pueda asignarla a un usuario o devolver la licencia para que no pague por una licencia que no necesite.
+Los buzones compartidos normalmente no requieren una licencia. Siga estas instrucciones para quitar una licencia de un buzón compartido de modo que pueda asignarla a un usuario o devolver la licencia para que no tenga que pagar por una licencia que no necesite.
 
 > [!NOTE]
-> Se requiere una licencia en las siguientes situaciones:
+> Se requiere una licencia en los siguientes escenarios:
 > 1. El buzón compartido tiene más de 50 GB de almacenamiento en uso.
-> 2. El buzón de correo compartido usa el archivado local.
+> 2. El buzón compartido usa el archivado local.
 > 3. El buzón compartido se coloca en retención por juicio.
-> 4. El buzón de correo compartido tiene asignada una licencia de Microsoft defender.
+> 4. El buzón compartido tiene asignada una licencia de Microsoft Defender.
 
   
 ## <a name="remove-the-license"></a>Quitar la licencia
@@ -55,17 +55,17 @@ Los buzones compartidos no suelen requerir una licencia. Siga estas instruccione
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 
    > [!NOTE]
-   > Debe quitar la licencia de la página usuarios activos. No puede quitar la licencia de la página buzón compartido porque las licencias son configuraciones del usuario. 
+   > Debe quitar la licencia de la página Usuarios activos. No puede quitar la licencia de la página buzón compartido porque las licencias son configuraciones de usuario. 
   
 2. Seleccione el buzón compartido.
 
-3. Una de las pestañas **licencias y aplicaciones** , expanda **licencias** y desactive la casilla de la licencia que desea quitar.
+3. Una en **la pestaña Licencias y aplicaciones,** expanda **Licencias** y desactive la casilla de la licencia que desea quitar.
 
 4. Seleccione **Guardar cambios**.
 
-5. Al volver a la página **usuarios activos** , el estado del buzón compartido será **sin licencia**.
+5. Cuando vuelva a la página **Usuarios activos,** el estado del buzón compartido será **Sin licencia.**
 
-6. Todavía está pagando por la licencia. Para dejar de pagar por ella, [Quite la licencia de la suscripción](../../commerce/licenses/remove-licenses-from-subscription.md).
+6. Sigues pagando por la licencia. Para dejar de pagar por ella, [quite la licencia de su suscripción.](../../commerce/licenses/remove-licenses-from-subscription.md)
 
 ::: moniker-end
 
@@ -74,17 +74,17 @@ Los buzones compartidos no suelen requerir una licencia. Siga estas instruccione
  1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
 
     > [!NOTE]
-    > Debe quitar la licencia de la página usuarios activos. No puede quitar la licencia de la página buzón compartido porque las licencias son configuraciones del usuario.
+    > Debe quitar la licencia de la página Usuarios activos. No puede quitar la licencia de la página buzón compartido porque las licencias son configuraciones de usuario.
 
-2. Seleccione el buzón compartido y, a continuación, seleccione **Editar** junto a **licencias de producto**.
+2. Seleccione el buzón compartido y, a continuación, **seleccione Editar** junto a Licencias **de producto.**
 
-3. Una página de **licencias de productos** , establezca el botón de alternancia en **desactivado** para la licencia que desea quitar.
+3. Una de **las páginas Licencias de producto,** establece el botón de **alternancia** en Desactivado para la licencia que quieras quitar.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
-5. Al volver a la página **usuarios activos** , el estado del buzón compartido será **sin licencia**.
+5. Cuando vuelva a la página **Usuarios activos,** el estado del buzón compartido será **Sin licencia.**
 
-6. Todavía está pagando por la licencia. Para dejar de pagar por ella, [Quite la licencia de la suscripción](../../commerce/licenses/remove-licenses-from-subscription.md).
+6. Sigues pagando por la licencia. Para dejar de pagar por ella, [quite la licencia de su suscripción.](../../commerce/licenses/remove-licenses-from-subscription.md)
 
 ::: moniker-end
 
@@ -93,17 +93,17 @@ Los buzones compartidos no suelen requerir una licencia. Siga estas instruccione
  1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
 
     > [!NOTE]
-    > Debe quitar la licencia de la página usuarios activos. No puede quitar la licencia de la página buzón compartido porque las licencias son configuraciones del usuario.
+    > Debe quitar la licencia de la página Usuarios activos. No puede quitar la licencia de la página buzón compartido porque las licencias son configuraciones de usuario.
 
-2. Seleccione el buzón compartido y, a continuación, seleccione **Editar** junto a **licencias de producto**.
+2. Seleccione el buzón compartido y, a continuación, **seleccione Editar** junto a Licencias **de producto.**
 
-3. Una página de **licencias de productos** , establezca el botón de alternancia en **desactivado** para la licencia que desea quitar.
+3. Una de **las páginas Licencias de producto,** establece el botón de **alternancia** en Desactivado para la licencia que quieras quitar.
 
-4. Haga clic en **Guardar**.
+4. Seleccione **Guardar**.
 
-5. Al volver a la página **usuarios activos** , el estado del buzón compartido será **sin licencia**.
+5. Cuando vuelva a la página **Usuarios activos,** el estado del buzón compartido será **Sin licencia.**
 
-6. Todavía está pagando por la licencia. Para dejar de pagar por ella, [Quite la licencia de la suscripción](../../commerce/licenses/remove-licenses-from-subscription.md).
+6. Sigues pagando por la licencia. Para dejar de pagar por ella, [quite la licencia de su suscripción.](../../commerce/licenses/remove-licenses-from-subscription.md)
 
 ::: moniker-end 
 

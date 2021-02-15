@@ -1,5 +1,5 @@
 ---
-title: Administrar varios inquilinos
+title: Administrar varios espacios empresariales
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,7 +18,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo usar el conmutador de inquilinos y sobre las vistas de varios inquilinos.
+description: Obtenga información sobre cómo usar el conmutador de inquilinos y sobre las vistas multiinquilino.
 ms.openlocfilehash: 0b73665159fbc6ce2d1aa99ba1518dc257d88ec8
 ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
@@ -47,7 +47,7 @@ La administración de varios inquilinos ofrece una forma unificada de administra
 
 ## <a name="view-all-tenants-page"></a>Página Ver todos los inquilinos
 
-1. En el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, seleccione **Todos los inquilinos.**
+1. En el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, **seleccione Todos los inquilinos.**
 - En la **página Todos los inquilinos,** puede
   - Evaluar el estado del servicio
   - Revisar el uso de licencias
@@ -59,14 +59,14 @@ Si ha marcado un inquilino como favorito, se expande automáticamente para que p
 
 ## <a name="view-service-health-for-all-accounts"></a>Ver el estado del servicio para todas las cuentas
 
-La vista de estado del servicio muestra si algún incidente o aviso está afectando a los inquilinos. Incluso le mostrará cuántos de los inquilinos administrados se ven afectados.
+La vista de estado del servicio muestra si algún incidente o aviso está afectando a los inquilinos. Incluso le dirá cuántos de los inquilinos administrados se ven afectados.
 
 1. En el Centro de administración de Microsoft 365, en la vista multiinquilino, seleccione **Estado del servicio.**
 2. En  la vista agregada de la página Estado del servicio, también puede ver el número total de incidentes, el número total de avisos que afectan a cualquiera de los inquilinos administrados y el número de servicios con incidentes activos. También puede ver cuántos de sus inquilinos se ven afectados por incidentes y avisos.
     
     - Puede usar la opción de filtro para ver problemas por tipo de problema o por servicio
 
-    - Puede revisar los problemas en las **pestañas Todos los servicios** o Todos **los** problemas.
+    - Puede revisar los problemas en **todas las pestañas** Todos los servicios o Todos **los** problemas.
 
     :::image type="content" source="../../media/multitenant-servicehealth.png" alt-text="Página de estado del servicio multiinquilino.":::
 1. Seleccione un incidente en la **pestaña Todos los servicios** o Todos los problemas para obtener más información sobre cualquier incidente en la **pestaña** Información general.  Seleccione la **pestaña Inquilinos afectados** para obtener una lista de los inquilinos afectados.

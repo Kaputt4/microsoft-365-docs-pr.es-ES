@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
-description: Acelere la planeación y configuración de Microsoft 365 u Office 365 con guías de configuración.
+description: Acelerar la planeación y configuración de Microsoft 365 u Office 365 con guías de configuración.
 ms.openlocfilehash: 9bddf24e4133dfac32a0175b754709ba0c840760
 ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
@@ -65,7 +65,7 @@ La [guía Preparar su entorno](https://aka.ms/prepareyourenvironment) le ayuda a
 
 ### <a name="email-setup-advisor"></a>Asesor de configuración de correo electrónico
 
-El [asesor de configuración de](https://aka.ms/office365setup) correo electrónico le proporciona las instrucciones paso a paso necesarias para configurar Exchange Online para su organización. Esto incluye la configuración de nuevas cuentas de correo electrónico, la migración del correo electrónico y la configuración de la protección de correo electrónico. Para una correcta configuración de correo electrónico, use este asesor y recibirá el método de migración recomendado en función del sistema de correo actual de su organización, el número de buzones que se migran y cómo desea administrar los usuarios y su acceso.
+El [asesor de configuración de](https://aka.ms/office365setup) correo electrónico le proporciona las instrucciones paso a paso necesarias para configurar Exchange Online para su organización. Esto incluye la configuración de nuevas cuentas de correo electrónico, la migración del correo electrónico y la configuración de la protección de correo electrónico. Para configurar correctamente el correo electrónico, use este asesor y recibirá el método de migración recomendado en función del sistema de correo actual de su organización, el número de buzones que se migran y cómo desea administrar los usuarios y su acceso.
 
 ### <a name="migrate-gmail-contacts-and-calendar-items"></a>Migrar contactos y elementos de calendario de Gmail
 
@@ -86,7 +86,7 @@ Recibirá instrucciones para optimizar el tráfico de dispositivos de los trabaj
 
 ### <a name="windows-virtual-desktop-setup-guide"></a>Guía de configuración de Windows Virtual Desktop
 
-Windows Virtual Desktop es un servicio completo de virtualización de aplicaciones y escritorio que se ejecuta en la nube. Es la única infraestructura de escritorio virtual (VDI) que ofrece administración simplificada, Windows 10 de varias sesiones, optimizaciones para aplicaciones de Microsoft 365 y compatibilidad con entornos de Servicios de Escritorio remoto (RDS). Implemente y escale sus escritorios y aplicaciones de Windows en Azure en minutos y obtenga características integradas de seguridad y cumplimiento. 
+Windows Virtual Desktop es un servicio completo de virtualización de aplicaciones y escritorio que se ejecuta en la nube. Es la única infraestructura de escritorio virtual (VDI) que ofrece administración simplificada, Windows 10 de varias sesiones, optimizaciones para aplicaciones de Microsoft 365 y compatibilidad con entornos de Servicios de Escritorio remoto (RDS). Implemente y escale los escritorios y aplicaciones de Windows en Azure en minutos y obtenga características integradas de seguridad y cumplimiento. 
 
 La [guía de configuración de Windows Virtual Desktop](https://aka.ms/wvdsetupguide) proporciona a los administradores recursos de planeación y los requisitos previos para la implementación, la guía de configuración y recursos adicionales. 
 
@@ -98,9 +98,9 @@ La guía de configuración de [Microsoft Edge](https://aka.ms/edgeadvisor) le ay
 
 ### <a name="microsoft-search-setup-guide"></a>Guía de configuración de Microsoft Search
 
-Búsqueda de Microsoft ayuda a su organización a encontrar lo que necesita para completar lo que está trabajando. Tanto si busca personas, archivos, organigramas, sitios o respuestas a preguntas comunes, su organización puede usar Microsoft Search a lo largo de su día de trabajo para obtener respuestas.
+Búsqueda de Microsoft ayuda a su organización a encontrar lo que necesita para completar lo que está trabajando. Tanto si busca personas, archivos, organigramas, sitios o respuestas a preguntas comunes, su organización puede usar Búsqueda de Microsoft a lo largo de su día de trabajo para obtener respuestas.
 
-La [guía de configuración de Microsoft Search](https://aka.ms/MicrosoftSearchSetup) le ayuda a configurar Microsoft Search tanto si desea realizar pruebas piloto para un grupo de usuarios como si lo desea para todos los usuarios de su organización. Asignará administradores de búsqueda y editores de búsqueda y, a continuación, personalizará la experiencia de búsqueda para los usuarios con respuestas y opciones adicionales, como agregar la extensión de Bing a Chrome o configurar Bing como motor de búsqueda predeterminado.
+La [guía de configuración de Microsoft Search](https://aka.ms/MicrosoftSearchSetup) le ayuda a configurar Microsoft Search tanto si desea realizar pruebas piloto para un grupo de usuarios como si desea realizar una implementación para todos los usuarios de su organización. Asignará administradores de búsqueda y editores de búsqueda y, a continuación, personalizará la experiencia de búsqueda para los usuarios con respuestas y opciones adicionales, como agregar la extensión de Bing a Chrome o configurar Bing como motor de búsqueda predeterminado.
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Guía de configuración de administración co-administración de Intune Configuration Manager
 
@@ -161,7 +161,7 @@ Use la guía de configuración de [Exchange Online Protection](https://aka.ms/EO
 
 ### <a name="microsoft-defender-for-office-365-advisor"></a>Asesor de Microsoft Defender para Office 365
 
-El asesor de Microsoft Defender para [Office 365](https://aka.ms/oatpsetup) protege su organización contra amenazas malintencionadas que su entorno puede encontrar a través de mensajes de correo electrónico, vínculos y herramientas de colaboración de terceros. Esta guía le proporciona los recursos e información que le ayudarán a preparar e identificar el plan de Defender para Office 365 para adaptarlo a las necesidades de su organización. 
+El asesor de Microsoft Defender para [Office 365](https://aka.ms/oatpsetup) protege su organización contra las amenazas malintencionadas que su entorno puede encontrar a través de mensajes de correo electrónico, vínculos y herramientas de colaboración de terceros. Esta guía le proporciona los recursos e información que le ayudarán a preparar e identificar el plan de Defender para Office 365 para adaptarlo a las necesidades de su organización. 
 
 ### <a name="microsoft-information-protection-setup-guide"></a>Guía de configuración de Microsoft Information Protection
 
@@ -175,7 +175,7 @@ La guía de configuración de gobierno de [Microsoft Information](https://aka.ms
 
 ### <a name="microsoft-365-apps-deployment-advisor"></a>Asesor de implementación de Aplicaciones de Microsoft 365
 
-El asesor de implementación de Aplicaciones de [Microsoft 365](https://aka.ms/OPPquickstartguide) le ayuda a obtener los dispositivos de los usuarios que ejecutan la versión más reciente de productos de Office como Word, Excel, PowerPoint y OneNote. Encontrarás instrucciones sobre los distintos métodos de implementación que incluyen opciones fáciles de instalar automáticamente en implementaciones empresariales con herramientas de administración. Las instrucciones le ayudarán a evaluar su entorno, averiguar los requisitos de implementación específicos e implementar las herramientas de soporte necesarias para garantizar una instalación correcta. 
+El asesor de implementación de Aplicaciones de [Microsoft 365](https://aka.ms/OPPquickstartguide) le ayuda a obtener los dispositivos de los usuarios que ejecutan la versión más reciente de productos de Office como Word, Excel, PowerPoint y OneNote. Encontrarás instrucciones sobre los distintos métodos de implementación que incluyen opciones fáciles de instalar automáticamente para las implementaciones empresariales con herramientas de administración. Las instrucciones le ayudarán a evaluar su entorno, averiguar los requisitos de implementación específicos e implementar las herramientas de soporte necesarias para garantizar una instalación correcta. 
 
 ### <a name="mobile-apps-setup-guide"></a>Guía de configuración de aplicaciones móviles
 
@@ -187,11 +187,11 @@ La guía de configuración de [Microsoft Teams](https://aka.ms/teamsguidance) pr
 
 ### <a name="sharepoint-setup-guide"></a>Guía de configuración de SharePoint
 
-La guía de configuración de [SharePoint](https://aka.ms/spoguidance) le ayuda a configurar el almacenamiento de documentos y la administración de contenido de SharePoint, crear sitios, configurar el uso compartido externo, migrar datos y configurar opciones avanzadas, e impulsar la participación y la comunicación del usuario dentro de su organización. Siga los pasos para configurar las directivas de permisos de uso compartido de contenido, elegir las herramientas de sincronización de migración, así como habilitar la configuración de seguridad para su entorno de SharePoint. 
+La guía de configuración de [SharePoint](https://aka.ms/spoguidance) le ayuda a configurar el almacenamiento de documentos y la administración de contenido de SharePoint, crear sitios, configurar el uso compartido externo, migrar datos y configurar opciones avanzadas, e impulsar la participación y la comunicación de los usuarios dentro de su organización. Siga los pasos para configurar las directivas de permisos de uso compartido de contenido, elegir las herramientas de sincronización de migración, así como habilitar la configuración de seguridad para su entorno de SharePoint. 
 
 ### <a name="onedrive-setup-guide"></a>Guía de configuración de OneDrive
 
-Use la guía [de configuración de OneDrive](https://aka.ms/ODfBquickstartguide) para empezar a usar las funcionalidades de almacenamiento, uso compartido, colaboración y sincronización de archivos de OneDrive. OneDrive proporciona una ubicación central donde los usuarios pueden sincronizar sus archivos de Aplicaciones de Microsoft 365, configurar el uso compartido externo, migrar datos de usuario y configurar la seguridad avanzada y la configuración de acceso a dispositivos. La guía de configuración de OneDrive se puede implementar con una suscripción de OneDrive o un plan independiente de OneDrive. 
+Use la guía [de configuración de OneDrive](https://aka.ms/ODfBquickstartguide) para empezar a usar las capacidades de almacenamiento, uso compartido, colaboración y sincronización de archivos de OneDrive. OneDrive proporciona una ubicación central donde los usuarios pueden sincronizar sus archivos de Aplicaciones de Microsoft 365, configurar el uso compartido externo, migrar datos de usuario y configurar la seguridad avanzada y la configuración de acceso a dispositivos. La guía de configuración de OneDrive se puede implementar con una suscripción de OneDrive o un plan independiente de OneDrive. 
 
 ### <a name="yammer-deployment-advisor"></a>Asesor de implementación de Yammer
 
@@ -215,4 +215,4 @@ Use la [guía implementar Office](https://aka.ms/officeremoteinstall) para usuar
 
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Implementar y actualizar Aplicaciones de Microsoft 365 con Configuration Manager
 
-Para las organizaciones que usan Configuration Manager, puede usar el asesor Implementar y actualizar Aplicaciones de [Microsoft 365](https://aka.ms/oppinstall) con Configuration Manager para generar un script que configurará automáticamente la implementación de Aplicaciones de Microsoft 365 mediante los procedimientos recomendados recomendados por los ingenieros de FastTrack. Use esta guía para crear los grupos de implementación, personalizar las aplicaciones y características de Office, configurar instalaciones dinámicas o lean y, a continuación, ejecutar el script para crear las aplicaciones, las reglas de implementación automática y las colecciones de dispositivos que necesita para dirigirse a la implementación. 
+Para las organizaciones que usan Configuration Manager, puede usar el asesor Implementar y actualizar aplicaciones de [Microsoft 365](https://aka.ms/oppinstall) con Configuration Manager para generar un script que configurará automáticamente la implementación de Aplicaciones de Microsoft 365 mediante los procedimientos recomendados recomendados por los ingenieros de FastTrack. Use esta guía para crear los grupos de implementación, personalizar las aplicaciones y características de Office, configurar instalaciones dinámicas o lean y, a continuación, ejecutar el script para crear las aplicaciones, las reglas de implementación automática y las colecciones de dispositivos que necesita para dirigirse a la implementación. 

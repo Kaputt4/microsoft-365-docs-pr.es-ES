@@ -143,7 +143,7 @@ Para asegurarse de que los invitados externos no puedan tener acceso de forma pr
     - **Condiciones**
         - El contenido contiene cualquiera de estos tipos de información confidencial: [Seleccionar todo lo que se aplica]
         - El contenido se comparte desde Microsoft 365 con personas de fuera de mi organización
-        <br/>![Condiciones dlp para detectar el uso compartido externo de contenido confidencial](../media/dlp-teams-external-sharing/external-condition.png)<br/>
+        <br/>![Condiciones DLP para detectar el uso compartido externo de contenido confidencial](../media/dlp-teams-external-sharing/external-condition.png)<br/>
 
 
     - **Acciones**

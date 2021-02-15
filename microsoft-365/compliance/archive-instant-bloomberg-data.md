@@ -34,13 +34,13 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 ![Proceso de importación y archivo de Instant Bloomberg](../media/InstantBloombergDataArchiving.png)
 
-1. Su organización trabaja con Bloomberg para configurar un sitio sftp de Bloomberg. También trabajará con Bloomberg para configurar Instant Bloomberg para copiar mensajes de chat en su sitio sftp de Bloomberg.
+1. Su organización trabaja con Bloomberg para configurar un sitio SFTP de Bloomberg. También trabajará con Bloomberg para configurar Instant Bloomberg para copiar mensajes de chat en su sitio SFTP de Bloomberg.
 
-2. Una vez cada 24 horas, los mensajes de chat de Instant Bloomberg se copian en el sitio sftp de Bloomberg.
+2. Una vez cada 24 horas, los mensajes de chat de Instant Bloomberg se copian en el sitio SFTP de Bloomberg.
 
 3. El conector Instant Bloomberg que cree en el Centro de cumplimiento de Microsoft 365 se conecta al sitio SFTP de Bloomberg todos los días y transfiere los mensajes de chat de las 24 horas anteriores a un área segura de Azure Storage en Microsoft Cloud. El conector también convierte el contenido de un chat en formato de mensaje de correo electrónico.
 
-4. El conector importa los elementos del mensaje de chat al buzón de un usuario específico. Se crea una nueva carpeta denominada InstantBloomberg en el buzón del usuario específico y los elementos se importarán en él. El conector hace esto mediante el valor de la *propiedad CorporateEmailAddress* . Cada mensaje de chat contiene esta propiedad, que se rellena con la dirección de correo electrónico de todos los participantes del mensaje de chat. Además de la asignación automática de usuarios mediante el valor de la propiedad *CorporateEmailAddress,* también puede definir una asignación personalizada cargando un archivo de asignación CSV. Este archivo de asignación debe contener un UUID de Bloomberg y la dirección de buzón de Microsoft 365 correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de chat, el conector primero buscará el archivo de asignación personalizada. Si no encuentra un usuario válido de Microsoft 365 que se corresponda con el UUID de Bloomberg de un usuario, el conector usará la propiedad *CorporateEmailAddress* del elemento de chat. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizada o en la propiedad *CorporateEmailAddress* del elemento de chat, el elemento no se importará.
+4. El conector importa los elementos del mensaje de chat al buzón de un usuario específico. Se crea una nueva carpeta denominada InstantBloomberg en el buzón del usuario específico y los elementos se importarán en él. Para ello, el conector usa el valor de la *propiedad CorporateEmailAddress.* Cada mensaje de chat contiene esta propiedad, que se rellena con la dirección de correo electrónico de todos los participantes del mensaje de chat. Además de la asignación automática de usuarios mediante el valor de la propiedad *CorporateEmailAddress,* también puede definir una asignación personalizada cargando un archivo de asignación CSV. Este archivo de asignación debe contener un UUID de Bloomberg y la dirección de buzón de Microsoft 365 correspondiente para cada usuario. Si habilita la asignación automática de usuarios y proporciona una asignación personalizada, para cada elemento de chat, el conector primero buscará el archivo de asignación personalizada. Si no encuentra un usuario válido de Microsoft 365 que se corresponda con el UUID de Bloomberg de un usuario, el conector usará la propiedad *CorporateEmailAddress* del elemento de chat. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizada o en la propiedad *CorporateEmailAddress* del elemento de chat, el elemento no se importará.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -74,7 +74,7 @@ Algunos de los pasos de implementación necesarios para archivar datos de Instan
 
 El primer paso es obtener una copia de las claves públicas del Shell seguro (SSH) y la Privacidad bastante buena (PGP). Estas claves se usan en el paso 2 para configurar el sitio SFTP de Bloomberg para permitir que el conector (que crea en el paso 3) se conecte al sitio SFTP y transfiera los datos de chat de Instant Bloomberg a los buzones de Microsoft 365. También obtendrá una dirección IP en este paso, que usará al configurar el sitio SFTP de Bloomberg.
 
-1. Vaya a <https://compliance.microsoft.com> y, a continuación, **haga clic en Conectores de datos** Instant  >  **Bloomberg**.
+1. Vaya a <https://compliance.microsoft.com> y, a continuación, **haga clic en Conectores** de datos  >  **Instant Bloomberg**.
 
 2. En la página **de descripción del producto Instant Bloomberg,** haga clic en Agregar **conector**
 
@@ -86,7 +86,7 @@ El primer paso es obtener una copia de las claves públicas del Shell seguro (SS
 
    - Clave pública PGP: esta clave se usa para configurar el cifrado de datos que se transfieren desde el sitio SFTP de Bloomberg a Microsoft 365.
 
-   - Dirección IP: el sitio SFTP de Bloomberg está configurado para aceptar una solicitud de conexión solo desde esta dirección IP, que usa el conector Instant Bloomberg que crea en el paso 3. 
+   - Dirección IP: el sitio SFTP de Bloomberg está configurado para aceptar una solicitud de conexión solo desde esta dirección IP, que usa el conector Instant Bloomberg que se crea en el paso 3. 
 
 5. Haga **clic en** Cancelar para cerrar el asistente. Volverá a este asistente en el paso 3 para crear el conector.
 
@@ -101,7 +101,7 @@ El siguiente paso es usar las claves públicas SSH y PGP y la dirección IP que 
 
 El último paso es crear un conector Instant Bloomberg en el Centro de cumplimiento de Microsoft 365. El conector usa la información que proporciona para conectarse al sitio SFTP de Bloomberg y transferir mensajes de chat a los cuadros de buzón de usuario correspondientes en Microsoft 365.
 
-1. Vaya a <https://compliance.microsoft.com> y, a continuación, **haga clic en Conectores de datos** Instant  >  **Bloomberg**.
+1. Vaya a <https://compliance.microsoft.com> y, a continuación, **haga clic en Conectores** de datos  >  **Instant Bloomberg**.
 
 2. En la página **de descripción del producto Instant Bloomberg,** haga clic en Agregar **conector**
 
