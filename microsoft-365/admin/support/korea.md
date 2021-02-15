@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
+description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 5ef2965da6ad3d404f865ac4a5e5bcd92e076366
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,26 +20,26 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48641706"
 ---
-# <a name="contact-support-for-korea"></a><span data-ttu-id="b3220-103">Póngase en contacto con el soporte técnico de Corea</span><span class="sxs-lookup"><span data-stu-id="b3220-103">Contact support for Korea</span></span>
+# <a name="contact-support-for-korea"></a><span data-ttu-id="d0e29-103">Ponerse en contacto con el soporte técnico para Corea</span><span class="sxs-lookup"><span data-stu-id="d0e29-103">Contact support for Korea</span></span>
 
-<span data-ttu-id="b3220-104">[Buscar otro país o región](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="b3220-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="d0e29-104">[Buscar otro país o región](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="d0e29-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="b3220-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="b3220-105">Phone number</span></span>
-<span data-ttu-id="b3220-106">080 495 0880</span><span class="sxs-lookup"><span data-stu-id="b3220-106">080 495 0880</span></span>
+## <a name="phone-number"></a><span data-ttu-id="d0e29-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="d0e29-105">Phone number</span></span>
+<span data-ttu-id="d0e29-106">080 495 0880</span><span class="sxs-lookup"><span data-stu-id="d0e29-106">080 495 0880</span></span>
 
-## <a name="hours"></a><span data-ttu-id="b3220-107">Horas</span><span class="sxs-lookup"><span data-stu-id="b3220-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="b3220-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="b3220-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="d0e29-107">Horas</span><span class="sxs-lookup"><span data-stu-id="d0e29-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="d0e29-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="d0e29-108">Billing Support:</span></span>
 
-<span data-ttu-id="b3220-109">Coreano: Mon-Fri 9 A.M.-6 P.M.</span><span class="sxs-lookup"><span data-stu-id="b3220-109">Korean: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="d0e29-109">Coreano: Mon-Fri 9:00 a 18:00</span><span class="sxs-lookup"><span data-stu-id="d0e29-109">Korean: Mon-Fri 9 AM-6 PM</span></span>
 
-<span data-ttu-id="b3220-110">Inglés: Mon-Fri 9 A.M.-6 P.M.</span><span class="sxs-lookup"><span data-stu-id="b3220-110">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="d0e29-110">Inglés: Mon-Fri 9:00 a 18:00</span><span class="sxs-lookup"><span data-stu-id="d0e29-110">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="b3220-111">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="b3220-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="d0e29-111">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="d0e29-111">Technical Support:</span></span>
 
-<span data-ttu-id="b3220-112">Coreano: Mon-Fri 9 A.M.-6 P.M.</span><span class="sxs-lookup"><span data-stu-id="b3220-112">Korean: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="d0e29-112">Coreano: Mon-Fri 9:00 a 18:00</span><span class="sxs-lookup"><span data-stu-id="d0e29-112">Korean: Mon-Fri 9 AM-6 PM</span></span>
 
-<span data-ttu-id="b3220-113">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="b3220-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="d0e29-113">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="d0e29-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="b3220-114">Número de teléfono alternativo: 02 3483 1937</span><span class="sxs-lookup"><span data-stu-id="b3220-114">Alternative Phone Number: 02 3483 1937</span></span>
+<span data-ttu-id="d0e29-114">Número de teléfono alternativo: 02 3483 1937</span><span class="sxs-lookup"><span data-stu-id="d0e29-114">Alternative Phone Number: 02 3483 1937</span></span>
 
-<span data-ttu-id="b3220-115">Aplicar cargos de llamadas locales</span><span class="sxs-lookup"><span data-stu-id="b3220-115">Local call charges apply</span></span>
+<span data-ttu-id="d0e29-115">Se aplican tarifas de llamada local</span><span class="sxs-lookup"><span data-stu-id="d0e29-115">Local call charges apply</span></span>
