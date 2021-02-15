@@ -1,5 +1,5 @@
 ---
-title: Información de asistencia para Saint Pierre y Miquelón
+title: Información de soporte técnico para San Pedro y Miquelón
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
+description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: d91c656459133e21b4e2c6fd032d582f520d1254
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,24 +20,24 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48640048"
 ---
-# <a name="contact-support-for-saint-pierre-and-miquelon"></a>Póngase en contacto con el soporte técnico para Saint Pierre y Miquelón
+# <a name="contact-support-for-saint-pierre-and-miquelon"></a>Ponerse en contacto con el soporte técnico de San Pedro y Miquelón
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Número de teléfono
-+ 1 312 843 5147
++1 312 843 5147
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Francés: Mon-Fri 6 A.M.-2 P.M.
+Francés: Mon-Fri 6:00 a 14:00
 
-Inglés: Mon-Fri 6 A.M.-2 P.M.
+Inglés: Mon-Fri 6:00 a 14:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Francés: Mon-Fri 5 A.M. a 6 P.M.
+Francés: Mon-Fri 17:00 a 18:00
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Aplicación de gastos de llamadas internacionales
+Se aplican cargos por llamadas internacionales

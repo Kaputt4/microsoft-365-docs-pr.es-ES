@@ -1,5 +1,5 @@
 ---
-title: Información de soporte para Mauricio
+title: Información de soporte técnico para Mauricio
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
+description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 8dd058697f7a7c696a4020fb25e74ef51fb94415
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48641092"
 ---
-# <a name="contact-support-for-mauritius"></a>Póngase en contacto con el soporte de Mauricio
+# <a name="contact-support-for-mauritius"></a>Póngase en contacto con el soporte técnico de Mauricio
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -30,12 +30,12 @@ ms.locfileid: "48641092"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Francés: Mon-Fri 11 A.M.-7 P.M.
+Francés: Mon-Fri 11:00 a 19:00
 
-Inglés: Mon-Fri 11 A.M.-7 P.M.
+Inglés: Mon-Fri 11:00 a 19:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Francés: Mon-Fri 11 AM-medianoche
+Francés: Mon-Fri 11 a.m. a medianoche
 
 Inglés: 24 horas al día, 7 días a la semana

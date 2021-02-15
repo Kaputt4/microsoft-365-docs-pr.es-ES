@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para la Autoridad Palestina
+title: Información de soporte técnico para la Autoridad Nacional Europea
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
+description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 3066f28c2a42a48ab534bd58df7a62a2562b184d
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,30 +20,30 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48640420"
 ---
-# <a name="contact-support-for-palestinian-authority"></a>Póngase en contacto con el soporte técnico para la Autoridad Palestina
+# <a name="contact-support-for-palestinian-authority"></a>Ponerse en contacto con el soporte técnico de la Autoridad Nacional Europea
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Número de teléfono
-+ 962 6 5503451
++962 6 5503451
 
-Seleccione la opción 1
+Seleccionar la opción 1
 
-Seleccione la opción 9
+Seleccionar la opción 9
 
-Escriba el código 7702
+Escribir código 7702
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Árabe: Sun-Thu 10 A.M. a 6 P.M.
+Árabe: Sun-Thu 10:00 a 18:00
 
-Inglés: Mon-Fri 10 A.M. a 6 P.M.
+Inglés: Mon-Fri 10:00 a 18:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Árabe: Sun-Thu 10 A.M. a 6 P.M.
+Árabe: Sun-Thu 10:00 a 18:00
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Aplicación de gastos de llamadas internacionales
+Se aplican cargos por llamadas internacionales

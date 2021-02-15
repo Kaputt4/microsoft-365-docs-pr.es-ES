@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
+description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 268ebe93b54fc07122cb88dd42392783cd3895d1
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,28 +20,28 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48643600"
 ---
-# <a name="contact-support-for-cameroon"></a>Póngase en contacto con soporte técnico para Camerún
+# <a name="contact-support-for-cameroon"></a>Ponerse en contacto con el soporte técnico de Camerún
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Número de teléfono
-+ 225 20 24 24 90
++225 20 24 24 90
 
-Seleccione la opción 9
+Seleccionar la opción 9
 
-Escriba el código 7703
+Escribir código 7703
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Francés: Mon-Fri 8 AM-4 PM
+Francés: Mon-Fri 8:00 a 16:00
 
-Inglés: Mon-Fri 8 AM-4 PM
+Inglés: Mon-Fri 8:00 a 16:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Francés: Mon-Fri 8 A.M.-9 P.M.
+Francés: Mon-Fri 8:00 a 21:00
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Aplicación de gastos de llamadas internacionales
+Se aplican cargos por llamadas internacionales

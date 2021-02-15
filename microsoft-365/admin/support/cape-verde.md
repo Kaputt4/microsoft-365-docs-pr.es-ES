@@ -1,5 +1,5 @@
 ---
-title: Información de soporte para cabo verde (cabo verde)
+title: Información de soporte técnico para Cabo Verde (Cabo Verde)
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
+description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 3b05cb91ca1a7c4c2ab8b27be10120e8ef7b1c2e
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,22 +20,22 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48643468"
 ---
-# <a name="contact-support-for-cape-verde-cabo-verde"></a>Póngase en contacto con el soporte de cabo verde (cabo verde)
+# <a name="contact-support-for-cape-verde-cabo-verde"></a>Ponerse en contacto con el soporte técnico de Cabo Verde (Cabo Verde)
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Número de teléfono
-+ 351 21 366 5030
++351 21 366 5030
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Inglés: Mon-Fri 8 AM-4 PM
+Inglés: Mon-Fri 8:00 a 16:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Portugués: Mon-Fri 7 A.M.-8 P.M.
+Portugués: Mon-Fri 7:00 a 20:00
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Aplicación de gastos de llamadas internacionales
+Se aplican cargos por llamadas internacionales

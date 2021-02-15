@@ -1,5 +1,5 @@
 ---
-title: Información de soporte para el Salvador
+title: Información de soporte técnico para El Salvador
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
+description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 1238595d1eca11004f5bb9b4eb19c9652d91a787
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,21 +20,21 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48642952"
 ---
-# <a name="contact-support-for-el-salvador"></a>Póngase en contacto con el soporte para el Salvador
+# <a name="contact-support-for-el-salvador"></a>Ponerse en contacto con el soporte técnico de El Salvador
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 800 6676
 
-Seleccione la opción 4
+Seleccionar la opción 4
 
-Escriba el código 7007
+Escribir código 7007
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Español: Mon-Fri 9 A.M.-5 P.M.
+Español: lunes a viernes de 9:00 a 17:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 

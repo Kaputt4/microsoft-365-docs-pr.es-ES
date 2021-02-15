@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
+description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 46ecbf89b3063ab72937d0ed3bfd8056084b11fa
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,28 +20,28 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48640552"
 ---
-# <a name="contact-support-for-oman"></a>Póngase en contacto con el soporte técnico para Omán
+# <a name="contact-support-for-oman"></a>Ponerse en contacto con el soporte técnico de Omán
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 800 73332
 
-Seleccione la opción 9
+Seleccionar la opción 9
 
-Seleccione la opción 2
+Seleccionar la opción 2
 
-Escriba el código 7702
+Escribir código 7702
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Árabe: Sun-Thu 10 A.M. a 6 P.M.
+Árabe: Sun-Thu 10:00 a 18:00
 
-Inglés: Mon-Fri 10 A.M. a 6 P.M.
+Inglés: Mon-Fri 10:00 a 18:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Árabe: Sun-Thu 11 A.M.-8 P.M.
+Árabe: Sun-Thu 11:00 a 20:00
 
 Inglés: 24 horas al día, 7 días a la semana

@@ -1,5 +1,5 @@
 ---
-title: Información de soporte para Senegal
+title: Información de soporte técnico para Senegal
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
+description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 9a553ccff4b9d034cdd269e5df6cc484ba808682
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,26 +20,26 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48639856"
 ---
-# <a name="contact-support-for-senegal"></a>Póngase en contacto con el soporte técnico para Senegal
+# <a name="contact-support-for-senegal"></a>Ponerse en contacto con el soporte técnico de Senegal
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 800 103 072
 
-Después de marcar, escribe
+Después de marcar, escriba
 
 877 867 2337
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Francés: Mon-Fri 8 AM-4 PM
+Francés: Mon-Fri 8:00 a 16:00
 
-Inglés: Mon-Fri 8 AM-4 PM
+Inglés: Mon-Fri 8:00 a 16:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Francés: Mon-Fri 7 A.M.-8 P.M.
+Francés: Mon-Fri 7:00 a 20:00
 
 Inglés: 24 horas al día, 7 días a la semana
