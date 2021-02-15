@@ -31,20 +31,20 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/29/2021
 ms.locfileid: "50044377"
 ---
-# <a name="bump-up-security-protection-for-your-campaign-or-business"></a><span data-ttu-id="fc219-103">Mejorar la protección de seguridad para su campaña o negocio</span><span class="sxs-lookup"><span data-stu-id="fc219-103">Bump up security protection for your campaign or business</span></span>
+# <a name="bump-up-security-protection-for-your-campaign-or-business"></a><span data-ttu-id="a7e39-103">Mejorar la protección de seguridad para su campaña o negocio</span><span class="sxs-lookup"><span data-stu-id="a7e39-103">Bump up security protection for your campaign or business</span></span>
 
 
-## <a name="overview"></a><span data-ttu-id="fc219-104">Información general</span><span class="sxs-lookup"><span data-stu-id="fc219-104">Overview</span></span> 
-<span data-ttu-id="fc219-105">Vea este vídeo para ver cómo proteger su campaña o negocio:</span><span class="sxs-lookup"><span data-stu-id="fc219-105">Watch this video to see how you can protect your campaign or business:</span></span>
+## <a name="overview"></a><span data-ttu-id="a7e39-104">Información general</span><span class="sxs-lookup"><span data-stu-id="a7e39-104">Overview</span></span> 
+<span data-ttu-id="a7e39-105">Vea este vídeo para ver cómo proteger su campaña o negocio:</span><span class="sxs-lookup"><span data-stu-id="a7e39-105">Watch this video to see how you can protect your campaign or business:</span></span>
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3cfV1]  
 
 
-<span data-ttu-id="fc219-106">A continuación, siga los pasos para:</span><span class="sxs-lookup"><span data-stu-id="fc219-106">Then follow the steps to:</span></span>
+<span data-ttu-id="a7e39-106">A continuación, siga los pasos para:</span><span class="sxs-lookup"><span data-stu-id="a7e39-106">Then follow the steps to:</span></span>
 
-- [<span data-ttu-id="fc219-107">Protección contra malware y otras amenazas</span><span class="sxs-lookup"><span data-stu-id="fc219-107">Protect against malware and other threats</span></span>](m365-campaigns-increase-protection.md)
-- <span data-ttu-id="fc219-108">[Proteger el acceso a los datos de la campaña](m365-campaigns-conditional-access.md) mediante la protección de las cuentas y aplicaciones</span><span class="sxs-lookup"><span data-stu-id="fc219-108">[Protect access to your campaign data](m365-campaigns-conditional-access.md) by protecting your accounts and apps</span></span>
-- [<span data-ttu-id="fc219-109">Proteger cuentas de administrador</span><span class="sxs-lookup"><span data-stu-id="fc219-109">Protect admin accounts</span></span>](m365-campaigns-protect-admin-accounts.md)
-- [<span data-ttu-id="fc219-110">Configurar dispositivos móviles</span><span class="sxs-lookup"><span data-stu-id="fc219-110">Set up mobile devices</span></span>](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
-- [<span data-ttu-id="fc219-111">Proporcionar formación a los usuarios</span><span class="sxs-lookup"><span data-stu-id="fc219-111">Train your users</span></span>](m365-campaigns-users.md)
+- [<span data-ttu-id="a7e39-107">Protección contra malware y otras amenazas</span><span class="sxs-lookup"><span data-stu-id="a7e39-107">Protect against malware and other threats</span></span>](m365-campaigns-increase-protection.md)
+- <span data-ttu-id="a7e39-108">[Proteger el acceso a los datos de la campaña](m365-campaigns-conditional-access.md) mediante la protección de las cuentas y aplicaciones</span><span class="sxs-lookup"><span data-stu-id="a7e39-108">[Protect access to your campaign data](m365-campaigns-conditional-access.md) by protecting your accounts and apps</span></span>
+- [<span data-ttu-id="a7e39-109">Proteger cuentas de administrador</span><span class="sxs-lookup"><span data-stu-id="a7e39-109">Protect admin accounts</span></span>](m365-campaigns-protect-admin-accounts.md)
+- [<span data-ttu-id="a7e39-110">Configurar dispositivos móviles</span><span class="sxs-lookup"><span data-stu-id="a7e39-110">Set up mobile devices</span></span>](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
+- [<span data-ttu-id="a7e39-111">Proporcionar formación a los usuarios</span><span class="sxs-lookup"><span data-stu-id="a7e39-111">Train your users</span></span>](m365-campaigns-users.md)
