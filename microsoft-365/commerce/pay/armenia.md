@@ -24,12 +24,12 @@ ms.locfileid: "48637984"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en USD y haga referencia al número de factura en su reenvío de factura.
+Pagar solo en USD y hacer referencia a los números de factura en la remesa de la factura.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank, Londres  
-**Código SWIFT:** CITIGB2L  
-**Número iban:** GB95CITI18500812510049  
+**Banco:** Bank, Londres  
+**Código SWIFT:** GBGB2L  
+**Número IBAN:** GB95CITI18500812510049  
 **Número de cuenta:** 12510049  
 **Nombre de cuenta:** Microsoft  

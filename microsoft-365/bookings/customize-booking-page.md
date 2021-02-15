@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
-description: Cambiar el tema de color de la página de reserva en la aplicación Microsoft bookings.
+description: Cambie el tema de color de la página de reserva en la aplicación Microsoft Bookings.
 ms.openlocfilehash: c930c06300a83ee17f1efdaaf42761ddfdebdd7b
 ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
@@ -18,56 +18,56 @@ ms.locfileid: "48456380"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>Personalizar y publicar la página de reserva
 
-La página de reserva es donde se configura la apariencia de la página de reserva a la que se enfrenta el cliente externo. Una vez que haya personalizado y publicado la página de reserva, los clientes la usarán para reservar citas con usted.
+La página de reserva es donde configuras el aspecto que tendrá la página de reservas de cliente externo. Una vez que personalice y publique la página de reserva, los clientes la usarán para reservar citas con usted.
 
-Para personalizar la página de reserva, inicie sesión en [Office.com](https://office.com)y, a continuación, vaya a la página de reservas de **reservas** \> **Booking page**. Puede personalizar la página de reserva con las siguientes opciones. Una vez que haya configurado la página de reserva, puede publicarla para que los clientes puedan empezar a reservar citas con usted.
+Para personalizar la página de reserva, [inicie sesión en Office.com](https://office.com)y, a continuación, vaya a la página **Bookings** \> **Bookings**. Puede personalizar la página de reserva con las siguientes opciones. Una vez que hayas configurado la página de reserva, puedes publicarla para que los clientes puedan empezar a reservar citas contigo.
 
-1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **reservas**.
+1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, **seleccione Bookings**.
 
-2. En el panel de navegación, seleccione **Página de reserva**.
+2. En el panel de navegación, seleccione **Booking page**.
 
 En la sección siguiente se proporciona información sobre cómo configurar la página de reservas y cómo publicar la página.
 
-- **Estado** de la página de reserva Publica el calendario para que el servicio bookable. Tiene las opciones para compartir el vínculo a su calendario mediante correo electrónico y Twitter, y para agregar un botón de **libro ahora** a una página de Facebook. El vínculo también se puede incrustar en el sitio web de la organización.
+- **Estado de la página de reserva** Publique el calendario en directo para que el servicio se puede reservar. Tiene las opciones para compartir el vínculo a su calendario  por correo electrónico y Twitter, y para agregar un botón Libro ahora a una página de Facebook. El vínculo también se puede incrustar en el sitio web de su organización.
 
-    La página de reserva interna tiene el siguiente aspecto:
+    La página de reserva interna tiene este aspecto:
 
-    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="La página reservas":::
+    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="La página Bookings":::
 
-- **Control de acceso de la página de reserva: requerir una cuenta de Microsoft 365 de mi organización para reservar**  Al seleccionar esta opción, solo se permitirá que los usuarios de la organización vean la página o los libros de todos los servicios. El acceso a la página está autorizado a través de comprobaciones de credenciales para asegurarse de que el visitante pertenece a una cuenta dentro del espacio empresarial.
+- Control de acceso a la página de **reserva: requerir una cuenta de Microsoft 365 de mi organización para realizar la reserva**  Al seleccionar esta opción solo se permitirá que los usuarios de la organización puedan ver la página o reservar cualquier servicio. El acceso a la página se autoriza mediante comprobaciones de credenciales para garantizar que el visitante pertenece a una cuenta dentro del espacio empresarial.
 
-- **Control de acceso de la página de reserva: deshabilitar la indización directa del motor de búsqueda de la página de reserva** Esta configuración impide que la página aparezca en los resultados de búsqueda para Google, Bing u otros motores de búsqueda. Al activar esta casilla, se limitará el acceso a la página al vínculo de la página generada.
+- **Control de acceso a la página de reserva: deshabilitar la indización directa del motor de búsqueda de la página de reserva** Esta configuración impide que la página aparezca en los resultados de búsqueda de Google, Bing u otros motores de búsqueda. Si selecciona esta casilla, se asegurará de que el acceso a la página esté limitado al vínculo de página generado.
 
-- **Consentimiento del uso de datos del cliente** Cuando se selecciona, el texto que solicita el consentimiento del usuario o del cliente de su organización para usar sus datos aparecerá en la página de Self-Service. La casilla tendrá que ser comprobada por el usuario para poder completar la reserva.
+- **Consentimiento de uso de datos de clientes** Cuando se selecciona, el texto que solicita el consentimiento del usuario o del cliente para que la organización use sus datos aparecerá en la Self-Service usuario. El usuario tendrá que comprobar la casilla para completar la reserva.
 
-- **Directiva de programación**, **notificaciones de correo electrónico**y **personal** todas estas configuraciones son similares a las disponibles para cada servicio en la ficha servicios.
+- **Directiva de programación,** notificaciones  **de** correo electrónico y personal. Todas estas configuraciones son similares a las disponibles para cada servicio en la pestaña Servicios.
 
-- **Disponibilidad** Esta es una opción para establecer los intervalos de disponibilidad de fecha y hora específicos para un servicio. De lo contrario, las reservas se establecerán de forma predeterminada en el horario comercial. Puede usar la opción de **disponibilidad** que se muestra aquí para escenarios como festivos o grandes horas.
+- **Disponibilidad** Esta es una opción para establecer intervalos de fecha y hora específicos de disponibilidad para un servicio. De lo contrario, Bookings tendrá como valor predeterminado el horario comercial. Puede usar la opción **Disponibilidad** aquí para escenarios como días festivos o horas extendidas.
 
-- **Personalizar la página** Elija los colores y logotipos que aparecen en la página Self-Service, por ejemplo, para la coherencia de la marca.
+- **Personalizar la página** Elija los colores y logotipos que aparecen en la Self-Service, por ejemplo, para mantener la coherencia de la marca.
 
-- **Configuración regional y de zona horaria** Aquí puede configurar la zona horaria y las preferencias de idioma para la página de Self-Service. Se recomienda configurar la zona horaria local. Para los visitantes de la página de Self-Service, las reservas detectan automáticamente sus zonas horarias locales y mostrarán la disponibilidad en sus propias zonas horarias. Por ejemplo, si una cita está disponible en 1:00PM PST, alguien en CST verá que la hora disponible aparece como 3:00PM CST.
+- **Configuración de región y zona horaria** Aquí puedes establecer las preferencias de zona horaria e idioma para la Self-Service usuario. Se recomienda establecer la zona horaria local. Para los visitantes de su Self-Service, Bookings detecta automáticamente sus zonas horarias locales y les mostrará disponibilidad en sus propias zonas horarias. Por ejemplo, si una cita está disponible a las 13:00 PST, alguien en CST verá que la hora disponible se muestra como 3:00 p.m. CST.
 
-Una vez que haya publicado la página de reserva, los clientes verán la página de reserva donde pueden reservar citas con usted. La página de reserva a la que se enfrenta el cliente tiene el siguiente aspecto:
+Una vez publicada la página de reserva, los clientes verán la página de reserva donde podrán reservar citas con usted. La página de reserva orientada al cliente tiene este aspecto:
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="La página reservas":::
+:::image type="content" source="media/bookings-self-service.jpg" alt-text="Página de reserva orientada al cliente":::
 
 ## <a name="publish-the-booking-page"></a>Publicar la página de reserva
 
-Vea este vídeo o siga los pasos que se indican a continuación para publicar o anular la publicación de la página de reserva.
+Vea este vídeo o siga los pasos siguientes para publicar o anular la publicación de la página de reserva.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuYil]
 
-1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, seleccione **reservas**.
+1. En Microsoft 365, seleccione el iniciador de aplicaciones y, a continuación, **seleccione Bookings**.
 
-1. En el panel de navegación, seleccione **Página de reserva**.
+1. En el panel de navegación, seleccione **Booking page**.
 
-1. Compruebe que las directivas de programación son correctas. Consulte [establecer las directivas de programación](set-scheduling-policies.md) para obtener más información.
+1. Compruebe que las directivas de programación son correctas. Vea [Establecer las directivas de programación](set-scheduling-policies.md) para obtener más información.
 
-1. Seleccione **Guardar y publicar**. Verá un mensaje de confirmación.
+1. Seleccione **Guardar y publicar.** Verá un mensaje de confirmación.
 
-1. Seleccione **abrir página publicada** para ver la página en un explorador Web.
+1. Seleccione **Abrir página publicada para** ver la página en un explorador web.
 
-## <a name="unpublish-the-booking-page"></a>Cancelar la publicación de la página de reserva
+## <a name="unpublish-the-booking-page"></a>Anular la publicación de la página de reserva
 
- - Para cancelar la publicación de la página de reserva, vaya a la página de reserva y seleccione **Cancelar publicación**.
+ - Para anular la publicación de la página de reserva, vaya a la página Booking y seleccione **Unpublish**.

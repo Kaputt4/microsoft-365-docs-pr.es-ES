@@ -1,5 +1,5 @@
 ---
-title: Información de soporte para Taiwán
+title: Información de soporte técnico para Taiwán
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
+description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: c1bdebfbcf8968cac27464a426568541f560463c
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48639340"
 ---
-# <a name="contact-support-for-taiwan"></a>Póngase en contacto con el soporte de Taiwán
+# <a name="contact-support-for-taiwan"></a>Ponerse en contacto con el soporte técnico para Taiwán
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -30,16 +30,16 @@ ms.locfileid: "48639340"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Chino (mandarín): Mon-Fri 9 A.M.-6 P.M.
+Chino (mandarín): Mon-Fri 9:00 a 18:00
 
-Inglés: Mon-Fri 9 A.M.-6 PM local
+Inglés: Mon-Fri 9:00 a 18:00 Locales
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Chino (mandarín): Mon-Fri 9 A.M.-6 P.M.
+Chino (mandarín): Mon-Fri 9:00 a 18:00
 
 Inglés: 24 horas al día, 7 días a la semana
 
 Número de teléfono alternativo: 02 2656 7301
 
-Aplicar cargos de llamadas locales
+Se aplican tarifas de llamada local

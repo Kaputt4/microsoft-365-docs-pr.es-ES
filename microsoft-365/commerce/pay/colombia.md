@@ -24,13 +24,13 @@ ms.locfileid: "48637456"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en pesos de Colombia. Para que se procese el pago, el nombre de la empresa y los números de factura deben proporcionarse en el aviso de remisión.
+Pagar solo en pesos. Para que se procese el pago, el nombre de la compañía y los números de factura deben proporcionarse en el asesoramiento de remesas.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank, Bogotá;  
+**Banco:** Bank, Bogotá;  
 **Código bancario:** 09  
 **Código SWIFT:** CITICOBB  
-**Nits:** 800.198.591-3  
+**NIT:** 800.198.591-3  
 **Número de cuenta:** 0060534055  
 **Nombre de cuenta:** Rama de Microsoft Colombia Inc.   

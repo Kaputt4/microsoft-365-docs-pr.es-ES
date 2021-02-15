@@ -1,5 +1,5 @@
 ---
-title: Información de soporte para Islas Vírgenes (Estados Unidos)
+title: Información de soporte técnico para Islas Vírgenes, EE. UU.
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
+description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 7e5d039ca73d5319a41aca85ed7e11e0d620a113
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48638692"
 ---
-# <a name="contact-support-for-virgin-islands-us"></a>Póngase en contacto con el soporte de Islas Vírgenes (Estados Unidos)
+# <a name="contact-support-for-virgin-islands-us"></a>Ponerse en contacto con el soporte técnico para Islas Vírgenes, EE. UU.
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -30,7 +30,7 @@ ms.locfileid: "48638692"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Inglés: Mon-Fri 9 A.M.-5 P.M.
+Inglés: lunes a viernes de 9:00 a 17:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 

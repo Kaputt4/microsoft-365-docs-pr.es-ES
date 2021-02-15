@@ -24,12 +24,12 @@ ms.locfileid: "48637972"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en AUD y haga referencia al número de factura en su reenvío de factura.
+Pagar solo en AUD y hacer referencia a los números de factura en la remesa de factura.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank, Sydney  
-**Código SWIFT:** CITIAU2X  
+**Banco:** Bank, Sydney  
+**Código SWIFT:** AU2X  
 **Código BSB:** 242000  
 **Número de cuenta:** 205565043  
-**Nombre de cuenta:** VENTAS REGIONALES DE MICROSOFT CORP.  
+**Nombre de cuenta:** MICROSOFT REGIONAL SALES CORP  

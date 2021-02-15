@@ -24,21 +24,21 @@ ms.locfileid: "48637516"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en CAD y haga referencia al número de factura en la remesa de pago.
+Pagar solo en CAD y hacer referencia a los números de factura en la remesa de pago.
 
-## <a name="check"></a>Check
+## <a name="check"></a>Cheque
 
-**Beneficiario:** Microsoft
+**Pagador:** Microsoft
 
-**Dirección postal:**  
-Banco de América, Lockbox 910430, PO Box 4090, STN A, Toronto ON M5W 0E9, Canadá
+**Dirección de correo:**  
+Bank of America, Lockbox 910430, PO Box 4090, STN A, Toronto ON M5W 0E9, Canada
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Banco de América, Toronto  
+**Banco:** Bank of America, Toronto  
 **Código SWIFT:** BOFACATT  
 **Número de cuenta:** 45571239  
 **Nombre de cuenta:** Microsoft  
-**Identificador de banco:** 241  
+**Id. de banco:** 241  
 **Rama:** 56792  
-**N.º de enrutamiento/tránsito:** 024156792  
+**Enrutamiento/tránsito #:** 024156792  

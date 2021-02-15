@@ -27,13 +27,13 @@ ms.locfileid: "48487429"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Restablecimiento de contraseña para el entorno de prueba de Microsoft 365
 
-*Esta guía del entorno de pruebas solo puede usarse para entornos de prueba de empresa de Microsoft 365.*
+*Esta guía del entorno de pruebas solo se puede usar para Entornos de prueba de Microsoft 365 para empresas.*
 
 El restablecimiento de contraseña de autoservicio (SSPR) de Azure Active Directory (Azure AD) permite a los usuarios restablecer o desbloquear sus contraseñas o cuentas.
 
-En este artículo se describe cómo configurar y probar restablecimientos de contraseñas en el entorno de prueba de Microsoft 365.
+En este artículo se describe cómo configurar y probar restablecimientos de contraseña en el entorno de prueba de Microsoft 365.
 
-La configuración de SSPR implica tres fases:
+La configuración de SSPR consta de tres fases:
 - [Fase 1: configurar la sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
 - [Fase 2: habilitar escritura diferida de contraseñas](#phase-2-enable-password-writeback)
 - [Fase 3: configurar y probar el restablecimiento de contraseña](#phase-3-configure-and-test-password-reset)
@@ -41,20 +41,20 @@ La configuración de SSPR implica tres fases:
 ![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Para obtener un mapa visual de todos los artículos de la pila de la guía del entorno de pruebas de 365 para empresas, vaya a la [pila de la guía de entorno de pruebas 365 de Microsoft para empresas](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Para obtener un mapa visual de todos los artículos de la pila de guía del entorno de pruebas de Microsoft 365 para empresas, vaya a La pila de guía del laboratorio de pruebas de [Microsoft 365 para empresas.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Fase 1: configurar la sincronización de hash de contraseñas para el entorno de prueba de Microsoft 365
 
-En primer lugar, siga las instrucciones de [sincronización de hash de contraseña](password-hash-sync-m365-ent-test-environment.md). 
+En primer lugar, siga las instrucciones de sincronización [de hash de contraseña.](password-hash-sync-m365-ent-test-environment.md) 
 
-La configuración resultante tiene el siguiente aspecto:
+La configuración resultante tiene este aspecto:
   
 ![La empresa simulada con el entorno de prueba con la sincronización de hash de contraseñas](../media/pass-through-auth-m365-ent-test-environment/Phase1.png)
   
 Esta configuración se compone de:
   
 - Una suscripción de prueba o de pago de Microsoft 365 E5.
-- Una intranet de organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y cliente1 en una subred de una red virtual de Azure.
+- Intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENT1 en una subred de una red virtual de Azure.
 - Azure AD Connect se ejecuta en APP1 para sincronizar el dominio de TESTLAB de Active Directory Domain Services (AD DS) con el espacio empresarial de Azure AD de sus suscripciones de Microsoft 365.
 
 ## <a name="phase-2-enable-password-writeback"></a>Fase 2: habilitar escritura diferida de contraseñas
@@ -70,26 +70,26 @@ En esta fase, configure el restablecimiento de contraseña en el inquilino de Az
 En primer lugar, habilite el restablecimiento de contraseña de cuentas en un determinado grupo de Azure AD.
 
 1. Desde una instancia privada del explorador, abra [https://portal.azure.com](https://portal.azure.com) y después inicie sesión con las credenciales de la cuenta de administrador global.
-2. En Azure portal, seleccione grupos de **Azure Active Directory**  >  **Groups**  >  **New Group**.
+2. En Azure Portal, seleccione **Grupos de Azure Active Directory** Nuevo  >    >  **grupo.**
 3. Configure **Tipo de grupo** como **Seguridad**, **Nombre del grupo** como **PWReset** y **Tipo de pertenencia** como **Asignado**.
-4. Seleccione **miembros**, buscar y seleccione el **usuario 3**, seleccione **seleccionar**y, a continuación, seleccione **crear**.
+4. Seleccione **Miembros,** busque y seleccione **Usuario 3,** **Seleccione** y, a continuación, **seleccione Crear**.
 5. Cierre el panel **Grupos**.
-6. En el panel Azure Active Directory, seleccione **restablecimiento de contraseña** en el panel de navegación izquierdo.
+6. En el panel de Azure Active Directory, seleccione **Restablecimiento de contraseña** en el panel de navegación izquierdo.
 7. En el panel **Propiedades - Restablecer contraseña**, debajo de la opción **Habilitar autoservicio de restablecimiento de contraseña**, elija **Seleccionado**.
-8. Seleccione **Seleccionar grupo**, seleccione el grupo **PWReset** y, a continuación **, seleccione**  >  **Guardar**.
+8. Seleccione **Seleccionar grupo,** seleccione el **grupo PWReset** y, a continuación, **seleccione**  >  **Guardar**.
 9. Cierre la instancia de explorador privada.
 
-A continuación, pruebe el restablecimiento de contraseña de la cuenta de usuario 3.
+A continuación, pruebe el restablecimiento de contraseña para la cuenta usuario 3.
 
 1. Abra una nueva instancia de explorador privada y vaya a [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).
 1. Inicie sesión con las credenciales de la cuenta Usuario 3.
-1. En la **información necesaria**, seleccione **siguiente**. 
+1. En **Más información necesaria,** seleccione **Siguiente**. 
 1. En **No perder el acceso a su cuenta**, configure el teléfono de autenticación con su número de teléfono y el correo electrónico de autenticación con su cuenta de correo electrónico laboral o personal.
-1. Una vez comprobados ambos, seleccione **parece adecuado**y, a continuación, cierre la instancia privada del explorador.
-1. En una nueva instancia de explorador privada, vaya a [https://aka.ms/sspr](https://aka.ms/sspr) .
-1. Escriba el nombre de la cuenta de usuario 3, escriba los caracteres de la CAPTCHA y, a continuación, seleccione **siguiente**.
-1. Para el **paso 1 de comprobación**, seleccione Enviar por correo electrónico **mi correo electrónico alternativo**y, después, seleccione **correo electrónico**. Cuando reciba el correo electrónico, escriba el código de verificación y, a continuación, seleccione **siguiente**.
-1. En **volver a la cuenta**, escriba una nueva contraseña para la cuenta de usuario 3 y, a continuación, seleccione **Finalizar**. Anote la contraseña cambiada de la cuenta de usuario 3 y almacénela en un lugar seguro.
+1. Después de comprobar ambos, seleccione **Se ve bien** y, a continuación, cierre la instancia privada del explorador.
+1. En una nueva instancia de explorador privado, vaya a [https://aka.ms/sspr](https://aka.ms/sspr) .
+1. Escriba el nombre de la cuenta usuario 3, escriba los caracteres de captcha y, a continuación, **seleccione siguiente**.
+1. Para **el paso de verificación 1,** seleccione Enviar un correo electrónico a mi **correo** electrónico alternativo y, a continuación, seleccione **Correo electrónico.** Cuando reciba el correo electrónico, escriba el código de verificación y, a continuación, **seleccione Siguiente**.
+1. En **Volver a su cuenta,** escriba una nueva contraseña para la cuenta usuario 3 y, a continuación, seleccione **Finalizar**. Anote la contraseña cambiada de la cuenta de usuario 3 y almacénela en un lugar seguro.
 1. En una pestaña independiente del mismo explorador, vaya a [https://portal.office.com](https://portal.office.com) y después inicie sesión con el nombre de la cuenta Usuario 3 y la nueva contraseña. Debe ver la página **principal de Microsoft Office**.
 
 ## <a name="next-step"></a>Paso siguiente
@@ -102,4 +102,4 @@ Explorar características de [identidad](m365-enterprise-test-lab-guides.md#iden
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
-[Documentación de Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentación para Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)

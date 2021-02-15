@@ -31,23 +31,23 @@ ms.locfileid: "48487475"
 
 Las Guías del laboratorio de pruebas (TLG) le ayudan a obtener información rápidamente sobre productos de Microsoft. Proporcionan instrucciones prescriptivas para configurar entornos de pruebas representativos pero simplificados. Puede usar estos entornos para la demostración, la personalización o la creación de pruebas de concepto complejas durante el tiempo que dure una suscripción de prueba o de pago.
 
-Las guías del laboratorio están diseñadas para ser modulares. Se basan en los otros para crear varias configuraciones que se ajusten mejor a sus necesidades de configuración de aprendizaje o prueba. La experiencia práctica "he creado ti y funciona" le ayuda a comprender los requisitos de implementación de un nuevo producto o escenario, de modo que pueda planear mejor su hospedaje en producción.
+Las TLD están diseñadas para ser modulares. Se crean entre sí para crear varias configuraciones que se asemejen más a sus necesidades de configuración de aprendizaje o prueba. La experiencia práctica "Lo he creado yo mismo y funciona" le ayudará a comprender los requisitos de implementación de un nuevo producto o escenario, de modo que pueda planear mejor su hospedaje en producción.
 
-También puede usar TLG para crear entornos representativos para desarrollar y probar aplicaciones, también conocidas como entornos de desarrollo y pruebas.
+También puede usar TLD para crear entornos representativos para desarrollar y probar aplicaciones, también conocidas como entornos de desarrollo y pruebas.
   
 ![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Para obtener un mapa visual de todos los artículos de la pila de la guía del entorno de pruebas de Microsoft 365 para empresas, expanda el siguiente gráfico o vaya a la [pila de la guía del laboratorio de pruebas de microsoft 365 para empresas](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+Para obtener un mapa visual de todos los artículos de la pila de guía del entorno de pruebas de Microsoft 365 para empresas, expanda el siguiente gráfico o vaya a La pila de guía del laboratorio de pruebas de [Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)para empresas.
 
 [![Pila de guías de laboratorio para pruebas de Microsoft 365 Enterprise](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>Configuración básica
 
-En primer lugar, cree un entorno de prueba para [Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365-enterprise/). Puede crear dos tipos diferentes de configuraciones básicas:
+En primer lugar, cree un entorno de prueba [para Microsoft 365 para empresas.](https://docs.microsoft.com/microsoft-365-enterprise/) Puede crear dos tipos diferentes de configuraciones base:
 
-- [Configuración básica ligera](lightweight-base-configuration-microsoft-365-enterprise.md) : Úsela cuando quiera configurar y demostrar las características y funciones de Microsoft 365 para empresas en un entorno solo de nube, que no incluye ningún componente local.
+- [Configuración básica ligera:](lightweight-base-configuration-microsoft-365-enterprise.md) úsese esto cuando desee configurar y demostrar las características y capacidades de Microsoft 365 para empresas en un entorno solo de nube, que no incluye ningún componente local.
 
-- [Configuración de base de empresa simulada](simulated-ent-base-configuration-microsoft-365-enterprise.md) : Úsela cuando quiera configurar y demostrar las características y capacidades de Microsoft 365 para empresas en un entorno de nube híbrida, que usa componentes locales como un dominio de servicios de dominio de Active Directory (AD DS).
+- [](simulated-ent-base-configuration-microsoft-365-enterprise.md) Configuración básica empresarial simulada: úsese esto cuando quiera configurar y demostrar las características y capacidades de Microsoft 365 para empresas en un entorno de nube híbrida, que usa componentes locales, como un dominio de Servicios de dominio de Active Directory (AD DS).
 
 También puede crear entornos de prueba para Office 365 E5 al no agregar la licencia de Microsoft 365 E5 a su prueba o entorno de prueba de producción.
     
@@ -69,7 +69,7 @@ Para mostrar características y funciones relacionadas con identidades, vea:
 
 - [Inicio de sesión único de conexión directa de Azure AD](single-sign-on-m365-ent-test-environment.md)
   
-   Habilite y pruebe el inicio de sesión único de integración de Azure AD (SSO transparente) con un controlador de dominio de AD DS.
+   Habilitar y probar el inicio de sesión único de conexión directa de Azure AD (SSO de conexión directa) con un controlador de dominio de AD DS.
 
 - [Autenticación multifactor](multi-factor-authentication-microsoft-365-test-environment.md)
   

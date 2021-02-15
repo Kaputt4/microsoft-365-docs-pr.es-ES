@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico de Surinam
+title: Información de soporte técnico para Surinam
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
+description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 215d40590092c39ebc01b528841b2607b4b1e28b
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -25,17 +25,17 @@ ms.locfileid: "48639436"
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Número de teléfono
-+ 1 312 843 5146
++1 312 843 5146
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Holandés: Mon-Fri 4 A.M.-1 PM
+Neerlandés: Mon-Fri 17:00 a 13:00
 
-Inglés: Mon-Fri 4 A.M.-1 PM
+Inglés: Mon-Fri 5:00 a 13:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Aplicación de gastos de llamadas internacionales
+Se aplican cargos por llamadas internacionales

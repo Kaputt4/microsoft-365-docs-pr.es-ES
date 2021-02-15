@@ -1,5 +1,5 @@
 ---
-title: Información de pago para Côte d'Ivoire
+title: Información de pago de Côte d'Ivoire
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637420"
 ---
-# <a name="payment-information-for-cte-divoire"></a>Información de pago para Côte d'Ivoire
+# <a name="payment-information-for-cte-divoire"></a>Información de pago de Côte d'Ivoire
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en USD y haga referencia al número de factura en la remesa de pago.
+Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank, Londres  
-**Código SWIFT:** CITIGB2L  
-**Iban:** GB95CITI18500812510049  
+**Banco:** Bank, Londres  
+**Código SWIFT:** GBGB2L  
+**IBAN:** GB95CITI18500812510049  
 **Número de cuenta:** 12510049  
 **Nombre de cuenta:** MICROSOFT  

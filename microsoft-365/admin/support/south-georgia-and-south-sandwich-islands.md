@@ -1,5 +1,5 @@
 ---
-title: Información de soporte de Georgia del Sur e islas Sandwich del sur
+title: Información de soporte técnico para Georgia del Sur e Islas Sandwich del Sur
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: Adm_Support
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre cómo ponerse en contacto con el soporte técnico de su país o región.
+description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: a4e3ab28c307dc654f96c862492e36b36824213f
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -20,20 +20,20 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48639580"
 ---
-# <a name="contact-support-for-south-georgia-and-south-sandwich-islands"></a>Póngase en contacto con el soporte de Georgia del Sur e islas Sandwich del sur
+# <a name="contact-support-for-south-georgia-and-south-sandwich-islands"></a>Ponerse en contacto con el soporte técnico de Georgia del Sur y las Islas Sandwich del Sur
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Número de teléfono
-+ 1 312 843 5145
++1 312 843 5145
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Inglés: Mon-Fri 11 A.M.-7 P.M.
+Inglés: Mon-Fri 11:00 a 19:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Aplicación de gastos de llamadas internacionales
+Se aplican cargos por llamadas internacionales

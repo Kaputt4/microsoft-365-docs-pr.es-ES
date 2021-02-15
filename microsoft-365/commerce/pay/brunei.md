@@ -1,5 +1,5 @@
 ---
-title: Información de pago para Brunei
+title: Información de pago de Brunéi
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,15 +20,15 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637675"
 ---
-# <a name="payment-information-for-brunei"></a>Información de pago para Brunei
+# <a name="payment-information-for-brunei"></a>Información de pago de Brunéi
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en USD y haga referencia al número de factura en la remesa de pago.
+Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank, Singapur   
-**Código SWIFT:** CITISGSG  
-**Número de cuenta** 0-817543-138,  
-**Nombre de cuenta:** VENTAS REGIONALES DE MICROSOFT CORP.  
+**Banco:** Bank, Singapur   
+**Código SWIFT:** DAGGSG  
+**Número de** cuenta 0-817543-138,  
+**Nombre de cuenta:** MICROSOFT REGIONAL SALES CORP  

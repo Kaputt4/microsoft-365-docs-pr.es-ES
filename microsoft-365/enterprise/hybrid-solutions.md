@@ -27,9 +27,9 @@ ms.locfileid: "48327920"
 ---
 # <a name="hybrid-solutions"></a>Soluciones híbridas
 
-Con Microsoft Azure, puede implementar algunas cargas de trabajo de Office Server que normalmente se implementaron localmente en los servicios de infraestructura de Azure.
+Con Microsoft Azure, puede implementar algunas cargas de trabajo de Office Server que normalmente se implementaban localmente en los servicios de infraestructura de Azure.
   
-Para la infraestructura de identidades de Microsoft 365 en Azure:
+Para la infraestructura de identidad de Microsoft 365 en Azure:
 
 - [Uso de Azure AD para la autenticación de SharePoint Server](using-azure-ad-for-sharepoint-server-authentication.md)
 

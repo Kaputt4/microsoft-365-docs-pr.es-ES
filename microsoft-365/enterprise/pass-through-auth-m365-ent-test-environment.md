@@ -27,7 +27,7 @@ ms.locfileid: "48487451"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Autenticación de paso a través para el entorno de prueba de Microsoft 365
 
-*Esta guía del entorno de pruebas se puede usar tanto para entornos de prueba empresariales de Microsoft 365 para empresas como para Office 365.*
+*Esta Guía del entorno de pruebas se puede usar tanto para entornos de prueba de Microsoft 365 para empresas como de Office 365 Enterprise.*
 
 Las organizaciones que quieren usar directamente su infraestructura de Active Directory Domain Services (AD DS) local para la autenticación de aplicaciones y servicios en la nube de Microsoft pueden usar la autenticación de paso a través. Este artículo describe cómo configurar el entorno de prueba de Microsoft 365 para la autenticación de paso a través, lo que resulta en la siguiente configuración:
   
@@ -70,7 +70,7 @@ En esta fase, configure Azure AD Connect en APP1 para usar la autenticación de 
 
 5.    En la página **Conectar a Azure AD**, escriba las credenciales de la cuenta de administrador global y, a continuación, haga clic en **Siguiente**.
 
-6.    En la página **Inicio de sesión de usuario**, haga clic en **Autenticación de paso a través**y, a continuación, en **Siguiente**.
+6.    En la página **Inicio de sesión de usuario**, haga clic en **Autenticación de paso a través** y, a continuación, en **Siguiente**.
 
 7.    En la página **Listo para configurar**, haga clic en **Configurar**.
 
@@ -94,7 +94,7 @@ Esta es la configuración resultante:
  
 Esta configuración se compone de:
 
-- Una suscripción de prueba de Microsoft 365 E5 o de pago con el dominio DNS testlab.\<your domain name> registrado.
+- Una suscripción de prueba o de pago de Microsoft 365 E5 con el dominio DNS testlab.\<your domain name> registrado.
 - La intranet de una organización simplificada conectada a Internet, que consta de las máquinas virtuales DC1, APP1 y CLIENTE1 en una subred de una red virtual de Azure. Un Agente de autenticación se ejecuta en APP1 para administrar las solicitudes de autenticación de paso a través desde el inquilino de Azure AD de las suscripciones de Microsoft 365.
 
 ## <a name="next-step"></a>Paso siguiente
@@ -107,4 +107,4 @@ Explorar características de [identidad](m365-enterprise-test-lab-guides.md#iden
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
-[Documentación de Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentación para Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)

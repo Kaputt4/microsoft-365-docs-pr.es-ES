@@ -24,13 +24,13 @@ ms.locfileid: "48637960"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en EUR y haga referencia al número de factura en su reenvío de factura.
+Pagar solo en EUR y hacer referencia a los números de factura en la remesa de la factura.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank, Londres  
-**Código SWIFT/BIC:** CITIGB2L  
-**Código de ordenación:** 185008  
-**Iban** GB31CITI18500812207591  
+**Banco:** Bank, Londres  
+**Código SWIFT/BIC:** GBGB2L  
+**Código sort:** 185008  
+**IBAN** GB31CITI18500812207591  
 **Número de cuenta:** 12207591  
 **Nombre de cuenta:** MICROSOFT  

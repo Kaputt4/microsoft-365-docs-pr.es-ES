@@ -86,7 +86,7 @@ Office 365 clasifica los puntos de conexión necesarios para Office 365 en tres 
 - Se les puede proporcionar elementos de seguridad necesarios directamente en el servicio en lugar de en línea en la red.
 - Suponen alrededor de un 70-80 % del volumen de tráfico en el servicio de Office 365.
 
-Este conjunto de puntos de conexión de ámbito estricto se puede dividir y separar del túnel de VPN forzoso para enviarlo de forma segura directamente al servicio de Office 365 mediante la interfaz local del usuario. Esto es conocido como**túnel dividido**.
+Este conjunto de puntos de conexión de ámbito estricto se puede dividir y separar del túnel de VPN forzoso para enviarlo de forma segura directamente al servicio de Office 365 mediante la interfaz local del usuario. Esto es conocido como **túnel dividido**.
 
 Los elementos de seguridad como DLP, protección de antivirus, autenticación y control de acceso se pueden ofrecer de forma más eficaz con estos puntos de conexión en diferentes capas dentro del servicio. Como también desviamos la mayor parte del volumen del tráfico fuera de la solución de VPN, el tráfico de red privada queda liberado y puede usarse para el tráfico empresarial crítico que todavía depende de él. Asimismo, en muchos casos elimina la necesidad de usar un programa de actualización prolongado y costoso que pueda lidiar con esta nueva forma de operar.
 

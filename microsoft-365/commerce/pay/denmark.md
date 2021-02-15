@@ -24,12 +24,12 @@ ms.locfileid: "48637204"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en DKK y haga referencia al número de factura en la remesa de pago.
+Pagar solo en DKK y hacer referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Citibank, Londres  
-**Código SWIFT:** CITIGB2L  
-**Iban:** GB19CITI18500812207613  
+**Banco:** Bank, Londres  
+**Código SWIFT:** GBGB2L  
+**IBAN:** GB19CITI18500812207613  
 **Número de cuenta:** 12207613  
 **Nombre de cuenta:** MICROSOFT  

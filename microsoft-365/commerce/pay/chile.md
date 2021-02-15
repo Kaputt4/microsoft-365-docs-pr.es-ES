@@ -24,11 +24,11 @@ ms.locfileid: "48637480"
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pague solo en USD. Para que se procese el pago, el nombre de la empresa y los números de factura deben proporcionarse en el aviso de remisión.
+Paga solo en USD. Para que se procese el pago, el nombre de la compañía y los números de factura deben proporcionarse en el consejo de remesas.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Banco de América  
+**Banco:** Bank of America  
 **Rama:** Dallas  
 **Código SWIFT:** BOFAUS3N  
 **Número de cuenta:** 4426587954  

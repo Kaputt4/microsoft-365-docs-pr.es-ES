@@ -24,11 +24,11 @@ ms.locfileid: "48398812"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Acceso de dispositivos e identidades en el entorno de prueba de Microsoft 365
 
-*Esta guía del entorno de pruebas solo puede usarse para entornos de prueba de empresa de Microsoft 365.*
+*Esta guía del entorno de pruebas solo se puede usar para Entornos de prueba de Microsoft 365 para empresas.*
 
-Las [configuraciones de identidad y acceso a dispositivos](../security/office-365-security/microsoft-365-policies-configurations.md) son un conjunto de características y directivas de acceso condicional para proteger el acceso a todos los servicios que se integran con Azure Active Directory (Azure ad).
+[Las configuraciones de acceso](../security/office-365-security/microsoft-365-policies-configurations.md) a dispositivos e identidades son un conjunto de características y directivas de acceso condicional para proteger el acceso a todos los servicios integrados con Azure Active Directory (Azure AD).
 
-Para crear un entorno de prueba que tenga las configuraciones comunes de identidad y acceso a dispositivos en su ubicación:
+Para crear un entorno de prueba que tenga las configuraciones comunes de acceso a dispositivos e identidades:
 
 1. Configurar el entorno de prueba con las características de seguridad y la identidad de requisitos previos en función de la elección del método de autenticación y el modelo de identidad:
 
@@ -36,16 +36,16 @@ Para crear un entorno de prueba que tenga las configuraciones comunes de identid
   - [Sincronización de hash de contraseña (PHS)](phs-prereqs-m365-test-environment.md)
   - [Autenticación de paso a través (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. Use [directivas comunes de identidad y acceso a dispositivos](identity-access-policies.md) para configurar las directivas que se basan en los requisitos previos configurados para el entorno de prueba y para explorar y comprobar la protección de las identidades y los dispositivos.
+2. Use [directivas comunes de acceso](identity-access-policies.md) a dispositivos e identidades para configurar las directivas que se basen en los requisitos previos configurados para su entorno de prueba y explorar y comprobar la protección de identidades y dispositivos.
 
 ## <a name="see-also"></a>Ver también
 
 [Guías de laboratorio de pruebas de identidad adicionales](m365-enterprise-test-lab-guides.md#identity)
 
-[Mapa de ruta de identidad](identity-roadmap-microsoft-365.md)
+[Guía básica de identidad](identity-roadmap-microsoft-365.md)
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
-[Información general de Microsoft 365 para empresas](microsoft-365-overview.md)
+[Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
-[Documentación de Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentación para Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
