@@ -27,20 +27,20 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/22/2021
 ms.locfileid: "49926743"
 ---
-# <a name="provide-feedback-on-microsoft-365-defender"></a><span data-ttu-id="6a9b2-104">Enviar comentarios sobre Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="6a9b2-104">Provide feedback on Microsoft 365 Defender</span></span>
+# <a name="provide-feedback-on-microsoft-365-defender"></a><span data-ttu-id="e0edd-104">Enviar comentarios sobre Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="e0edd-104">Provide feedback on Microsoft 365 Defender</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="6a9b2-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="6a9b2-105">**Applies to:**</span></span>
-- <span data-ttu-id="6a9b2-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="6a9b2-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="e0edd-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="e0edd-105">**Applies to:**</span></span>
+- <span data-ttu-id="e0edd-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="e0edd-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="6a9b2-107">Sus comentarios nos ayudan a mejorar en la protección de su entorno frente a ataques avanzados.</span><span class="sxs-lookup"><span data-stu-id="6a9b2-107">Your feedback helps us get better in protecting your environment from advanced attacks.</span></span> <span data-ttu-id="6a9b2-108">Comparta su experiencia, impresiones y solicitudes proporcionando comentarios.</span><span class="sxs-lookup"><span data-stu-id="6a9b2-108">Share your experience, impressions, and  requests by providing feedback.</span></span>
+<span data-ttu-id="e0edd-107">Sus comentarios nos ayudan a mejorar en la protección de su entorno frente a ataques avanzados.</span><span class="sxs-lookup"><span data-stu-id="e0edd-107">Your feedback helps us get better in protecting your environment from advanced attacks.</span></span> <span data-ttu-id="e0edd-108">Comparta su experiencia, impresiones y solicitudes proporcionando comentarios.</span><span class="sxs-lookup"><span data-stu-id="e0edd-108">Share your experience, impressions, and  requests by providing feedback.</span></span>
 
-1. <span data-ttu-id="6a9b2-109">En cualquier parte del portal, seleccione **Enviar comentarios.**</span><span class="sxs-lookup"><span data-stu-id="6a9b2-109">From any part of the portal, select **Give feedback**.</span></span> 
+1. <span data-ttu-id="e0edd-109">En cualquier parte del portal, seleccione **Enviar comentarios.**</span><span class="sxs-lookup"><span data-stu-id="e0edd-109">From any part of the portal, select **Give feedback**.</span></span> 
 
     ![Imagen del botón de comentarios](../../media/feedback.png)
 
-2. <span data-ttu-id="6a9b2-111">Califica tu experiencia y proporciona detalles sobre lo que te gusta o dónde se puede realizar una mejora.</span><span class="sxs-lookup"><span data-stu-id="6a9b2-111">Rate your experience and provide details on what you liked or where improvement can be made.</span></span> <span data-ttu-id="6a9b2-112">También puede optar por ponerse en contacto con usted sobre los comentarios.</span><span class="sxs-lookup"><span data-stu-id="6a9b2-112">You can also choose to be contacted about the feedback.</span></span> 
+2. <span data-ttu-id="e0edd-111">Califica tu experiencia y proporciona detalles sobre lo que te gusta o dónde se puede realizar una mejora.</span><span class="sxs-lookup"><span data-stu-id="e0edd-111">Rate your experience and provide details on what you liked or where improvement can be made.</span></span> <span data-ttu-id="e0edd-112">También puede optar por ponerse en contacto con usted sobre los comentarios.</span><span class="sxs-lookup"><span data-stu-id="e0edd-112">You can also choose to be contacted about the feedback.</span></span> 
 
-3. <span data-ttu-id="6a9b2-113">Seleccione **Enviar**.</span><span class="sxs-lookup"><span data-stu-id="6a9b2-113">Select **Submit**.</span></span>
+3. <span data-ttu-id="e0edd-113">Seleccione **Enviar**.</span><span class="sxs-lookup"><span data-stu-id="e0edd-113">Select **Submit**.</span></span>
