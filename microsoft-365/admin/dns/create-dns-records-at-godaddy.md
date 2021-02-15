@@ -123,7 +123,7 @@ Siga estos pasos.
 
     |**Tipo de registro**|**Host**|**Señala a**|**Prioridad**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (intercambiador de correo)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtenga la  *\<domain-key\>*  información de su cuenta de Microsoft.           [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 hora  <br/> |
+    |MX (intercambiador de correo)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtenga la  *\<domain-key\>*  información de su cuenta de Microsoft.           [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 hora  <br/> |
 
 6. Seleccione **Guardar**.
 

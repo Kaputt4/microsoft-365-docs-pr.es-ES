@@ -45,7 +45,7 @@ Con Microsoft 365, recibirá nuevas actualizaciones de productos y característi
 
 ## <a name="how-it-works---release-validation"></a>Cómo funciona: validación de versiones
 
-Cualquier nueva versión es probada y validada por el equipo de características, después por todo el equipo de características de Microsoft 365, seguido de todo Microsoft. Después de la validación y las pruebas internas, el siguiente paso es una **Versión dirigida** (anteriormente conocida como First Release) para los clientes que hayan decidido participar. En cada anillo de versión, Microsoft recopila comentarios y valida posteriormente la calidad mediante la supervisión de métricas de uso claves. Esta serie de validaciones progresivas se realiza de forma local para asegurar que la versión publicada mundialmente es tan sólida como sea posible. Las versiones se representan en la siguiente ilustración. 
+El equipo de características prueba y valida primero cualquier nueva versión, después todo el equipo de características de Microsoft 365, seguido de todo Microsoft. Después de la validación y las pruebas internas, el siguiente paso es una **Versión dirigida** (anteriormente conocida como First Release) para los clientes que hayan decidido participar. En cada anillo de versión, Microsoft recopila comentarios y valida posteriormente la calidad mediante la supervisión de métricas de uso claves. Esta serie de validaciones progresivas se realiza de forma local para asegurar que la versión publicada mundialmente es tan sólida como sea posible. Las versiones se representan en la siguiente ilustración. 
   
 ![Liberar anillos de validación para Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
@@ -57,7 +57,7 @@ Para actualizaciones significativas, los clientes son notificados inicialmente p
 
 ## <a name="standard-release"></a>Versión estándar
 
-Esta es la opción predeterminada en la que usted y sus usuarios reciben las últimas actualizaciones cuando se lanzan ampliamente para todos los clientes.
+Esta es la opción predeterminada en la que tú y tus usuarios reciben las últimas actualizaciones cuando se lanzan ampliamente para todos los clientes.
   
 Un procedimiento recomendado es dejar a la mayoría de los usuarios  en la versión **Standard** y a los profesionales de IT y usuarios avanzados en la versión dirigida para evaluar nuevas características y preparar equipos para dar soporte a los usuarios empresariales y ejecutivos. 
   
@@ -104,7 +104,7 @@ Puede cambiar la forma en que su organización recibe las actualizaciones de Mic
 
 5. Para deshabilitar la versión dirigida, seleccione **Versión estándar** y, a continuación, seleccione **Guardar cambios.** 
     
-6. Para habilitar la versión dirigida para todos los usuarios de la organización, seleccione Versión **dirigida** para todos los usuarios y, a continuación, **seleccione Guardar cambios.** 
+6. Para habilitar la versión dirigida para todos los usuarios de la organización, seleccione La versión dirigida para todos los usuarios **y,** a continuación, **seleccione Guardar cambios.** 
     
 7. Para habilitar la versión dirigida para algunas personas de la organización, seleccione La versión dirigida para los usuarios seleccionados **y,** a continuación, **seleccione Guardar cambios.** 
     
@@ -114,6 +114,6 @@ Puede cambiar la forma en que su organización recibe las actualizaciones de Mic
 
 
   
-## <a name="learn-more"></a>Obtén más información
+## <a name="learn-more"></a>Más información
 
 Descubra cómo administrar [mensajes en](https://docs.microsoft.com/office365/admin/manage/message-center) el Centro de mensajes de [Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) para recibir notificaciones sobre las próximas actualizaciones y versiones de Microsoft 365.

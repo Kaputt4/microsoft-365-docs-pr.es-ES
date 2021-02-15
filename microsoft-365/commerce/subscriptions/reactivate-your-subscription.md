@@ -70,7 +70,7 @@ Debe ser administrador global o de facturación para reactivar una suscripción.
 
 3. Introduzca los datos de pago. Puede actualizar aquí su información de pago actual.
 
-   Si la suscripción ha expirado, después de enviar los detalles de  pago, la suscripción vuelve a un estado activo y la siguiente fecha de facturación se extiende un mes o un año, según el compromiso de suscripción actual. Si paga con tarjeta de crédito o cuenta bancaria, se le cobrará por la extensión a su tarjeta de crédito o cuenta bancaria. Si paga mediante factura, verá la extensión reflejada en la siguiente factura. Para asegurarse de que la suscripción no expire de nuevo, [active la facturación periódica.](renew-your-subscription.md#turn-recurring-billing-off-or-on)
+   Si la suscripción ha expirado, después de enviar los detalles de  pago, la suscripción vuelve a un estado activo y la siguiente fecha de facturación se extiende un mes o un año, según el compromiso de suscripción actual. Si paga con tarjeta de crédito o cuenta bancaria, se le cobrará por la extensión a su tarjeta de crédito o cuenta bancaria. Si paga mediante factura, verá la extensión reflejada en la siguiente factura. Para asegurarse de que la suscripción no vuelva a expirar, [active la facturación periódica.](renew-your-subscription.md#turn-recurring-billing-off-or-on)
 
    > [!NOTE]
    > La capacidad de pagar por cuenta bancaria no está disponible en algunos países o regiones.
@@ -91,7 +91,7 @@ Debe ser administrador global o de facturación para reactivar una suscripción.
 
 3. Introduzca los datos de pago. Puede actualizar aquí su información de pago actual.
 
-   Si la suscripción ha expirado, después de enviar los detalles de  pago, la suscripción vuelve a un estado activo y la siguiente fecha de facturación se extiende un mes o un año, según el compromiso de suscripción actual. Si paga con tarjeta de crédito o cuenta bancaria, se le cobrará por la extensión a su tarjeta de crédito o cuenta bancaria. Si paga mediante factura, verá la extensión reflejada en la siguiente factura. Para asegurarse de que la suscripción no expire de nuevo, [active la facturación periódica.](renew-your-subscription.md#turn-recurring-billing-off-or-on)
+   Si la suscripción ha expirado, después de enviar los detalles de  pago, la suscripción vuelve a un estado activo y la siguiente fecha de facturación se extiende un mes o un año, según el compromiso de suscripción actual. Si paga con tarjeta de crédito o cuenta bancaria, se le cobrará por la extensión a su tarjeta de crédito o cuenta bancaria. Si paga mediante factura, verá la extensión reflejada en la siguiente factura. Para asegurarse de que la suscripción no vuelva a expirar, [active la facturación periódica.](renew-your-subscription.md#turn-recurring-billing-off-or-on)
 
    > [!NOTE]
    > La capacidad de pagar por cuenta bancaria no está disponible en algunos países o regiones.

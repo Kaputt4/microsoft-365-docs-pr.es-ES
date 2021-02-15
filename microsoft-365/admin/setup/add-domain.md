@@ -83,9 +83,9 @@ ms.locfileid: "50114266"
     
 5. Elija cómo desea comprobar que es el propietario del dominio.
     
-    1. Si el registrador de dominios usa [La](#domain-connect-registrars-integrating-with-microsoft-365)conexión de dominio, [Microsoft](../get-help-with-domains/domain-connect.md) configurará los registros automáticamente haciendo que inicie sesión en su registrador y confirme la conexión a Microsoft 365. Se te devolverá al centro de administración y Microsoft comprobará automáticamente tu dominio.
-    2. Puede usar un registro TXT para comprobar su dominio. Seleccione esta opción y **seleccione Siguiente** para ver las instrucciones para agregar este registro DNS al sitio web del registrador. Esto puede tardar hasta 30 minutos en comprobarse después de agregar el registro. 
-    3. Puede agregar un archivo de texto al sitio web de su dominio. Seleccione y descargue el archivo .txt desde el Asistente para instalación y, a continuación, cargue el archivo en la carpeta de nivel superior del sitio web. La ruta de acceso al archivo debe ser similar a: `http://mydomain.com/ms39978200.txt` . Confirmaremos que es el propietario del dominio mediante la búsqueda del archivo en su sitio web.
+    1. Si el registrador de dominios usa [La](#domain-connect-registrars-integrating-with-microsoft-365)conexión de dominio, [Microsoft](../get-help-with-domains/domain-connect.md) configurará los registros automáticamente haciendo que inicie sesión en su registrador y confirme la conexión a Microsoft 365. Volverá al centro de administración y Microsoft comprobará automáticamente su dominio.
+    2. Puede usar un registro TXT para comprobar su dominio. Seleccione esta opción y seleccione **Siguiente** para ver las instrucciones para agregar este registro DNS al sitio web del registrador. Esto puede tardar hasta 30 minutos en comprobarse después de agregar el registro. 
+    3. Puede agregar un archivo de texto al sitio web de su dominio. Seleccione y descargue el archivo .txt desde el Asistente para instalación y, a continuación, cargue el archivo en la carpeta de nivel superior de su sitio web. La ruta de acceso al archivo debe ser similar a: `http://mydomain.com/ms39978200.txt` . Confirmaremos que es el propietario del dominio mediante la búsqueda del archivo en su sitio web.
     
 6. Elija cómo desea realizar los cambios de DNS necesarios para que Microsoft use su dominio.
     
@@ -118,7 +118,7 @@ Siga los pasos siguientes para agregar un registro personalizado para un sitio w
 
 5. Seleccione el tipo de registro DNS que desea agregar y escriba la información del nuevo registro.
     
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 ## <a name="registrars-with-domain-connect"></a>Registradores con conexión de dominio
 

@@ -47,7 +47,7 @@ Para empezar, necesitará el módulo de PowerShell de Exchange Online (v2.0.3 o 
 Para instalar MCCA, empiece por usar PowerShell en modo de administrador. Siga los pasos siguientes:
 
 1. Selecciona el botón **Inicio de** Windows.
-2. Escriba **PowerShell**, haga clic con el botón **secundario en Windows PowerShell** y, a continuación, seleccione Ejecutar como **administrador.**
+2. Escriba **PowerShell,** haga clic con el botón secundario **en Windows PowerShell** y, a continuación, seleccione Ejecutar como **administrador.**
 1. En el símbolo del sistema, escriba:
 
     ```powershell
@@ -103,7 +103,7 @@ Siga estas instrucciones para ejecutar un informe basado en una ubicación espec
   | 7  | Japón |
   | 8  | Corea |
   | 9  | Norteamérica (excepto Canadá) |
-  | 10  | Sudamérica |
+  | 10   | Sudamérica |
   | 11  | Sudáfrica |
   | 12  | Suiza |
   | 13  | Emiratos Árabes Unidos |
@@ -111,7 +111,7 @@ Siga estas instrucciones para ejecutar un informe basado en una ubicación espec
 
 
  > [!NOTE]
-> El informe siempre incluirá tipos de información confidencial internacionales compatibles con MCCA, como código SWIFT, número de tarjeta de crédito, etc.
+> El informe siempre incluirá tipos de información confidencial internacional compatibles con MCCA, como código SWIFT, número de tarjeta de crédito, etc.
 
 #### <a name="role-based-reporting"></a>Informes basados en roles
 
@@ -122,7 +122,7 @@ La tabla siguiente muestra qué roles tienen acceso a qué secciones del informe
 ![MCCA: roles](../media/compliance-manager-mcca-roles.png "Roles de MCCA")
 
 Excepciones:
-1. El usuario no podrá generar informes para IP aparte de la sección "Usar IRM para Exchange Online".
+1. El usuario no podrá generar un informe para IP aparte de la sección "Usar IRM para Exchange Online".
 2. El usuario podrá generar un informe para IP aparte de la sección "Usar IRM para Exchange Online".
 3. El usuario podrá generar un informe para IP aparte de la sección "Habilitar cumplimiento de comunicaciones en O365".
 4. El usuario no podrá generar un informe para IP aparte de la sección "Habilitar auditoría en Office 365".
@@ -146,11 +146,11 @@ Seleccione un cuadro para ver las mejoras y recomendaciones.
 
 **Elementos con el estado de mejora**
 
-Seleccione la lista desplegable situada junto a la **etiqueta Mejora** a la derecha de la acción de mejora. Verá un resumen rápido y detalles sobre la configuración actual y las acciones de mejora recomendadas. El resumen incluye vínculos directos al Administrador de cumplimiento, la solución aplicable en el Centro de cumplimiento de Microsoft 365 y documentación relevante.
+Seleccione la lista desplegable situada junto a la **etiqueta Mejora** a la derecha de la acción de mejora. Verá un resumen rápido y detalles sobre la configuración actual y las acciones de mejora recomendadas. El resumen incluye vínculos directos al Administrador de cumplimiento, la solución aplicable en el Centro de cumplimiento de Microsoft 365 y la documentación pertinente.
 
 Al hacer clic en el vínculo Administrador de cumplimiento, podrá obtener una vista filtrada de todas las acciones de mejora de esa solución que aún no ha implementado. Desde allí, puede ver el número de puntos [](compliance-score-calculation.md)que puede lograr para aumentar la puntuación de cumplimiento, y las evaluaciones a las que se aplican, así como las normas y certificaciones aplicables.
 
-Para DLP, hay un botón **de script** de corrección que proporciona un script de PowerShell generado previamente en función de lo que se recomienda. Puede copiarla y pegarla directamente en la consola de PowerShell. Creará una directiva DLP en modo de prueba
+Para DLP, hay un botón **de script** de corrección que le proporciona un script de PowerShell generado previamente en función de lo que se recomienda. Puede copiarla y pegarla directamente en la consola de PowerShell. Creará una directiva DLP en modo de prueba
 
 **Elementos con estado de recomendación**
 

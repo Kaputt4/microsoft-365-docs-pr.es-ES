@@ -35,12 +35,12 @@ Microsoft 365 Empresa Premium tiene todo lo que necesita para su pequeña empres
 
 Por ejemplo, su negocio ha aumentado y necesita más de 300 licencias (enhorabuena, por cierto).
 
-O bien, su empresa necesita características empresariales, como Aplicaciones de Microsoft 365 para empresas, Windows 10 Enterprise E3 o Licencias de acceso de cliente (CAL) enterprise.
+O bien, su empresa necesita características empresariales, como Aplicaciones de Microsoft 365 para empresas, Windows 10 Enterprise E3 o Licencias de acceso de cliente (CAL) de Enterprise.
 
 La actualización es sencilla: puede iniciar la [actualización desde el Centro de administración.](../commerce/subscriptions/upgrade-to-different-plan.md) Se mantienen todos los datos y la configuración de la suscripción actual. No hay nada que hacer para prepararse para la migración y nada que hacer después, excepto aprovechar las nuevas características.
 
 >[!Note]
->También puede usar una suscripción a Microsoft 365 Empresa Premium para un máximo de 300 puestos y obtener una suscripción a Microsoft 365 E3 para más de 300 puestos. Sin embargo, Microsoft Defender para Office 365 no está incluido en Microsoft 365 E3. Para la protección contra amenazas continua, debe agregar licencias adicionales de Defender para Office 365 para que todos los usuarios del ámbito de su Defender para las políticas de Office 365 puedan obtener una licencia.
+>También puede usar una suscripción a Microsoft 365 Empresa Premium para un máximo de 300 puestos y obtener una suscripción a Microsoft 365 E3 para más de 300 puestos. Sin embargo, Microsoft Defender para Office 365 no está incluido en Microsoft 365 E3. Para una protección contra amenazas continua, debe agregar licencias adicionales de Defender para Office 365 para que todos los usuarios del ámbito de su Defender para las políticas de Office 365 puedan obtener una licencia.
 >
 
 ## <a name="differences-between-microsoft-365-business-premium-and-microsoft-365-enterprise"></a>Diferencias entre Microsoft 365 Empresa Premium y Microsoft 365 Enterprise
@@ -65,7 +65,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Empresa Premium y 
 | Autoservicio de restablecimiento de contraseña para cuentas híbridas de Azure Active Directory (Azure AD), autenticación multifactor (MFA) de Azure AD, acceso condicional, escritura de contraseña para identidades locales|     ![Incluido con Microsoft 365 Empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 | Cloud App Discovery, Azure AD Connect Health    |     | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 | Aplicaciones de Azure AD Office 365 single Sign-On (SSO): 10 aplicaciones por usuario (aplicaciones SaaS de galería como Salesforce)* | ![Incluido con Microsoft 365 Empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
-| SSO de Azure AD Premium 1: sin límite (aplicaciones locales a través de Azure AD Application Proxy y aplicaciones que no son de galería con Self-Service de integración de aplicaciones)    |     | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
+| SSO de Azure AD Premium 1: sin límite (aplicaciones locales a través del Proxy de aplicación de Azure AD y aplicaciones que no son de galería con Self-Service de integración de aplicaciones)    |     | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 | **Datos de administración de dispositivos y aplicaciones**        | | | 
 | Microsoft Intune, Windows Autopilot|     ![Incluido con Microsoft 365 Empresa Premium](../media/check-mark.png)    | ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
 |Virtual Desktop Access (VDA)    |  |     ![Incluido con Microsoft 365 E3](../media/check-mark.png) | 
@@ -91,7 +91,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Empresa Premium y 
 
 Para migrar, trabaje con su partner para mover su suscripción a Microsoft 365 Empresa Premium y las licencias a una suscripción de Microsoft 365 E3 adecuada con sus licencias.
 
-En las secciones siguientes se describen los cambios que necesita realizar, si los hay, y lo que puede hacer después de la migración.
+En las secciones siguientes se describen los cambios que debe realizar, si los hay, y lo que puede hacer después de la migración.
 
 ### <a name="microsoft-365-subscription-configuration-and-data"></a>Configuración y datos de suscripción de Microsoft 365
 
@@ -129,7 +129,7 @@ Windows 10 Business incluye estas protecciones:
 Windows 10 Enterprise E3 también incluye la administración empresarial del aislamiento basado en hardware para Microsoft Edge.
 
 >[!Note]
->Los usuarios migrados a Microsoft 365 E3 necesitarán una licencia de Microsoft Defender para Office 365 para la protección contra amenazas continuada. Asegúrese de comprar licencias adicionales de Defender para Office 365 para que todos los usuarios del ámbito de las políticas de Defender para Office 365 puedan obtener una licencia. 
+>Los usuarios migrados a Microsoft 365 E3 necesitarán una licencia de Microsoft Defender para Office 365 para la protección contra amenazas continuada. Asegúrese de comprar licencias adicionales de Defender para Office 365 para que todos los usuarios del ámbito de su Defender para las políticas de Office 365 puedan obtener una licencia. 
 >
 
 ### <a name="device-management-with-intune"></a>Administración de dispositivos con Intune
@@ -138,7 +138,7 @@ No es necesario realizar ningún cambio en la configuración actual de Intune an
 
 ### <a name="windows-10"></a>Windows 10
 
-Microsoft 365 Empresa Premium incluye Windows 10 Business, que puedes instalar con Windows AutoPilot. Al migrar a Microsoft 365 E3, cada licencia de usuario incluye Windows 10 Enterprise E3, que también puedes instalar con Windows Autopilot.
+Microsoft 365 Empresa Premium incluye Windows 10 Empresa, que puedes instalar con Windows AutoPilot. Al migrar a Microsoft 365 E3, cada licencia de usuario incluye Windows 10 Enterprise E3, que también puedes instalar con Windows Autopilot.
 
 <a name="office-365-business"></a>
 ###  <a name="microsoft-365-apps-for-business"></a>Aplicaciones de Microsoft 365 para negocios

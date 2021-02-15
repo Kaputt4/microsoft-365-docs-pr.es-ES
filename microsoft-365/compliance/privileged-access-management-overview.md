@@ -39,9 +39,9 @@ La administración del acceso con privilegios complementa otras protecciones de 
 
 ![Protección en capas en Microsoft 365](../media/pam-layered-protection.png)
 
-La administración de acceso con privilegios se define y se define en  el ámbito en el nivel de tarea, mientras que Azure AD Privileged Identity Management aplica protección en el nivel de rol con la capacidad de ejecutar varias tareas.  Azure AD Privileged Identity Management permite principalmente la administración de accesos para roles y grupos de roles de AD, mientras que la administración de acceso con privilegios en Microsoft 365 solo se aplica en el nivel de tareas.
+La administración de acceso con privilegios se define y se aplica al  ámbito en el nivel de tarea, mientras que Azure AD Privileged Identity Management aplica protección en el nivel de rol con la capacidad de ejecutar varias tareas.  Azure AD Privileged Identity Management permite principalmente la administración de accesos para roles y grupos de roles de AD, mientras que la administración de acceso con privilegios en Microsoft 365 solo se aplica en el nivel de tareas.
 
-- **Habilitar la administración de acceso con privilegios mientras ya usa Azure AD Privileged Identity Management:** La adición de la administración del acceso con privilegios proporciona otro nivel granular de protección y capacidades de auditoría para el acceso con privilegios a los datos de Microsoft 365.
+- **Habilitar la administración de acceso con privilegios mientras ya usa Azure AD Privileged Identity Management:** La adición de la administración del acceso con privilegios proporciona otra capa granular de capacidades de protección y auditoría para el acceso con privilegios a los datos de Microsoft 365.
 
 - **Habilitar Azure AD Privileged Identity Management mientras ya usa la administración de acceso con privilegios en Office 365:**  Agregar Azure AD Privileged Identity Management a la administración de acceso con privilegios puede ampliar el acceso con privilegios a los datos fuera de Microsoft 365 que se define principalmente mediante roles de usuario o identidad.  
 
@@ -77,7 +77,7 @@ Para una solicitud aprobada, el espacio de ejecución de administración de Exch
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>¿Qué SKU pueden usar el acceso con privilegios en Office 365?
 
-La administración de acceso con privilegios está disponible para los clientes para una amplia selección de complementos y suscripciones de Microsoft 365 y Office 365. Consulte [Introducción a la administración de acceso con privilegios](privileged-access-management-configuration.md) para obtener más información.
+Privileged access management is available for customers for a wide selection of Microsoft 365 and Office 365 subscriptions and add-ons. Consulte [Introducción a la administración de acceso con privilegios](privileged-access-management-configuration.md) para obtener más información.
 
 ### <a name="when-will-privileged-access-support-office-365-workloads-beyond-exchange"></a>¿Cuándo admitirá el acceso con privilegios las cargas de trabajo de Office 365 más allá de Exchange?
 
@@ -89,7 +89,7 @@ Sí, el aumento del límite actual de 30 directivas de acceso con privilegios po
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>¿Necesito ser administrador global para administrar el acceso con privilegios en Office 365?
 
-No, necesita el rol Administración de roles de Exchange asignado a las cuentas que administran el acceso con privilegios en Office 365. Si no desea configurar el rol Administración de roles como un permiso de cuenta independiente, el rol Administrador global incluye este rol de forma predeterminada y puede administrar el acceso con privilegios. Los usuarios incluidos en un grupo de aprobadores no necesitan ser administradores globales ni tener asignado el rol administración de roles para revisar y aprobar solicitudes con PowerShell.
+No, necesita el rol Administración de roles de Exchange asignado a las cuentas que administran el acceso con privilegios en Office 365. Si no desea configurar el rol administración de roles como un permiso de cuenta independiente, el rol de administrador global incluye este rol de forma predeterminada y puede administrar el acceso con privilegios. Los usuarios incluidos en un grupo de aprobadores no necesitan ser administradores globales ni tener asignado el rol administración de roles para revisar y aprobar solicitudes con PowerShell.
 
 ### <a name="how-is-privileged-access-management-related-to-customer-lockbox"></a>¿Cómo está relacionada la administración del acceso con privilegios con la Caja de seguridad del cliente?
 

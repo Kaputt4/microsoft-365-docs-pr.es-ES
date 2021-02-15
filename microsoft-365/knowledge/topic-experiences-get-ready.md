@@ -39,7 +39,7 @@ Para planear temas de Viva, debe:
     - Las tarjetas de tema solo se pueden ver en páginas modernas.
     - Identificar páginas clásicas de alto perfil que son candidatos de modernización.
 
-4. [Proteger el contenido adecuadamente](#4-secure-content-appropriately)
+4. [Proteger el contenido correctamente](#4-secure-content-appropriately)
     - Los recursos de tema se recortan en función de los permisos de un usuario.
     - Identifique cualquier contenido que pueda tener permisos incorrectos amplios o restrictivos:
       - Animar a los propietarios de sitios a usar los informes de uso compartido para revisar los permisos
@@ -50,7 +50,7 @@ Para planear temas de Viva, debe:
 
 5. [Identificación de temas y administradores de conocimientos](#5-identify-knowledge-managers-and-topics)
     - Use taxonomías existentes para crear manualmente temas o ayude a confirmar los temas sugeridos por IA.
-    - Identificar expertos en la materia (MIME) para temas anticipados o seedados.
+    - Identificar expertos en la materia (MIM) para temas previstos o seedados.
     - Identifique los sitios que cubren un gran número de datos valiosos que se pueden usar para la minería de temas piloto.
     - Involucra a los administradores de conocimientos y a las comunidades de prácticas.
 
@@ -102,9 +102,9 @@ Una buena administración de permisos es fundamental aquí. Y una buena administ
   - Use la búsqueda con esta cuenta para detectar contenido que se comparte ampliamente.
   - Si el contenido inapropiado es visible para esta cuenta a través de la búsqueda, puede trabajar con los propietarios del sitio para corregir la configuración de permisos.
 
-Además de los permisos, también puede controlar el ámbito de lo que se puede detectar a través de los temas. Siempre tiene el control de lo que se indiza.
+Además de los permisos, también puede controlar el ámbito de lo que se puede detectar a través de temas. Siempre tiene el control de lo que se indiza.
 
-Los administradores pueden configurar la indización en el Centro de administración de Microsoft 365. Al configurar administración de [conocimientos,](set-up-topic-experiences.md)puede:
+Los administradores pueden configurar la indización en el Centro de administración de Microsoft 365. Al configurar Administración [de conocimientos,](set-up-topic-experiences.md)puede:
 
 - Permitir la detección en todos los sitios de SharePoint o especificar sitios para incluir o excluir como orígenes de temas.
 - Si tiene términos confidenciales, también puede excluir temas por nombre. Por ejemplo, si tiene el nombre de un proyecto confidencial, donde no desea que aparezca un resaltado o una tarjeta, independientemente de los permisos del usuario, puede excluir ese nombre de proyecto.
@@ -135,11 +135,11 @@ Los resaltados y las tarjetas se mostrarán a los usuarios en el contexto de su 
   - Solo las personas seleccionadas o los grupos de seguridad (esta opción es buena mientras sigue implementando Temas Viva, para que pueda probar con un subconjunto de usuarios). Si desea que los invitados consulten Temas, deberá usar la opción "Usuarios o grupos de seguridad seleccionados" y concederles una licencia.
   - Con nadie.
 
-    Todos los usuarios, incluso los invitados, tendrán que aplicar una licencia para poder ver la experiencia del tema. Y recuerde que los permisos siempre controlan lo que se puede ver.
+    Todos los usuarios, incluso los usuarios invitados, necesitarán tener una licencia aplicada para poder ver la experiencia del tema. Y recuerde que los permisos siempre controlan lo que se puede ver.
 
 - ¿Qué temas están visibles? Puede elegir:
   - Mostrar todos los temas de candidatos.
-  - Mostrar solo los temas confirmados.
+  - Mostrar solo temas confirmados.
 
 Ahora que tenemos los administradores, expertos y usuarios, podemos hablar sobre los propios temas.
 

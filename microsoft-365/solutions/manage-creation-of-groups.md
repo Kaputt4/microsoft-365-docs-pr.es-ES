@@ -37,7 +37,7 @@ Si su empresa requiere que restrinja quién puede crear grupos, puede hacerlo si
 - Microsoft Stream
 - Planner
 - Power BI (clásico)
-- Proyecto para la web/Mapa de ruta
+- Proyecto para la web/ Plan de desarrollo
 
 Puede restringir la creación de grupos de Microsoft 365 a los miembros de un grupo o grupo de seguridad de Microsoft 365 concreto. Para configurar esto, use Windows PowerShell. Este artículo le guiará a través de los pasos necesarios.
 
@@ -166,7 +166,7 @@ Vuelva a intentar el mismo procedimiento con un miembro del grupo.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Planeación paso a paso de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Planeación paso a paso del gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [Crear un plan de gobierno de colaboración](collaboration-governance-first.md)
 

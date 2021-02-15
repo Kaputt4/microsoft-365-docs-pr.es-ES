@@ -71,7 +71,7 @@ Si usa Office 365 operado por 21Vianet en China, consulte Ver su factura u obten
 
 ## <a name="change-your-sold-to-address"></a>Cambiar la dirección del solicitante
 
-1. En el centro de administración, vaya a la página Cuentas **de** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">facturación de</a> facturación.
+1. En el centro de administración, vaya a la página **Cuentas de** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">facturación de</a> facturación.
 
 2. seleccione **Editar información de cuenta de facturación.**
 
@@ -166,7 +166,7 @@ De forma predeterminada, las notificaciones de facturación de su organización 
   
 1. Inicie sesión en Microsoft 365 con su cuenta de trabajo o escuela como administrador global. Obtenga información [sobre cómo iniciar sesión.](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
 
-2. Seleccione el **icono usuario y,** a continuación, **seleccione Mi cuenta.**
+2. Seleccione el **icono De usuario** y, a continuación, Mi **cuenta.**
   
 3. Seleccione **Información personal.**
   

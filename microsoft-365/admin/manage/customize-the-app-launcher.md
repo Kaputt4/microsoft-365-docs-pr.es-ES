@@ -79,7 +79,7 @@ El icono personalizado aparece en el iniciador de aplicaciones en la pestaña **
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. En el centro de administración, vaya a la **pestaña** Configuración del perfil de organización  >    >  **de configuración de la** </a> organización.
+1. En el centro de administración, vaya a la **pestaña** Configuración de la organización de  >  **configuración**  >  **de la organización.** </a>
     
 2. En la **página Perfil de** la organización, junto a Agregar iconos   **personalizados para su organización,** seleccione **Editar**.
 
@@ -87,7 +87,7 @@ El icono personalizado aparece en el iniciador de aplicaciones en la pestaña **
     
 4. Seleccione **Actualizar** \> **cerrar**. 
     
-Para eliminar un icono personalizado, en la **ventana Mosaicos** personalizados, seleccione el icono, seleccione **Eliminar**  >  **icono.** 
+Para eliminar un icono personalizado, en la **ventana Mosaicos** personalizados, seleccione el icono, **seleccione Eliminar**  >  **icono.** 
   
 ## <a name="whats-next"></a>¿Cuál es el siguiente paso?
 

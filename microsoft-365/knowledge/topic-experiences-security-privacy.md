@@ -19,7 +19,7 @@ ms.locfileid: "50107797"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Seguridad y privacidad de Microsoft Viva Topics
 
-Los temas usan las características de seguridad de contenido existentes en Microsoft 365, junto con los controles administrativos, para controlar qué contenido generado por AI se muestra a los usuarios de su organización. Es la combinación de la configuración de seguridad de Microsoft 365 (permisos para sitios, archivos y carpetas) y la configuración de administración de temas que determinan lo que un usuario determinado puede ver en los temas.
+Los temas usan las características de seguridad de contenido existentes en Microsoft 365, junto con los controles administrativos, para controlar qué contenido generado por IA se muestra a los usuarios de su organización. Es la combinación de la configuración de seguridad de Microsoft 365 (permisos para sitios, archivos y carpetas) y la configuración de administración de temas que determinan lo que un usuario determinado puede ver en los temas.
 
 La configuración de temas no modifica ningún control de acceso existente en el contenido de la organización. Los usuarios solo verán a lo que ya tienen acceso.
 
@@ -36,9 +36,9 @@ Para ver temas, un usuario debe:
 
 Estos dos aspectos permiten a los usuarios ver el acceso al centro de temas y permitirles ver las tarjetas de tema y los resaltados.
 
-Los colaboradores de temas también tienen [permisos](topic-experiences-user-permissions.md) de creación y edición para los temas, y los administradores de conocimientos pueden confirmar o quitar temas.
+Además, los colaboradores de [temas](topic-experiences-user-permissions.md) tienen permisos de creación y edición para los temas, y los administradores de conocimientos pueden confirmar o quitar temas.
 
-Cuando se detecta un tema por primera vez, los administradores de conocimientos pueden verlo en el centro de temas. Según la integridad y relevancia del tema, los lectores del tema pueden o no ver el tema presentado en las tarjetas de tema.
+Cuando se detecta un tema por primera vez, los administradores de conocimientos pueden verlo en el centro de temas. Según la integridad y relevancia del tema, los visores de temas pueden o no ver el tema presentado en las tarjetas de tema.
 
 Los temas pueden contener información generada por IA e información agregada o editada por colaboradores de temas o administradores de conocimientos.
 
@@ -53,7 +53,7 @@ En la tabla siguiente se describe lo que los usuarios (visores de temas, colabor
 |:---------|:------------------|
 |Nombre del tema|Los usuarios pueden ver el nombre del tema de todos los temas en el centro de temas. Es posible que algunos temas no sean visibles si tienen una relevancia baja para el usuario.|
 |Descripción del tema|Las descripciones generadas por IA solo son visibles para los usuarios que tienen permisos para el contenido de origen. Todas las descripciones introducidas o editadas manualmente son visibles para todos los usuarios.|
-|Personas|Los usuarios anclados son visibles para todos los usuarios. Las personas sugeridas solo son visibles para los usuarios que tienen permisos para el contenido de origen.|
+|Contactos|Los usuarios anclados son visibles para todos los usuarios. Las personas sugeridas solo son visibles para los usuarios que tienen permisos para el contenido de origen.|
 |Archivos|Los archivos solo son visibles para los usuarios que tienen permisos para el contenido de origen.|
 |Páginas|Las páginas solo son visibles para los usuarios que tienen permisos para el contenido de origen.|
 |Sitios|Los sitios solo son visibles para los usuarios que tienen permisos para el contenido de origen.|
@@ -78,11 +78,11 @@ Además, se recomiendan estos procedimientos recomendados:
 
 - Configurar un flujo de trabajo para solicitar cambios. Los administradores de conocimientos o los propietarios de equipos o sitios deben tener un proceso mediante el cual pueden solicitar la exclusión de temas o sitios a medida que se inician nuevos proyectos dentro de la organización o si encuentran contenido con configuraciones de permisos inadecuadas.
 
-- Tenga en cuenta el público y la confidencialidad de la información al crear descripciones de temas. Estas descripciones pueden ser visibles para los usuarios que no tienen permisos para el contenido de origen del tema.
+- Tenga en cuenta la audiencia y la confidencialidad de la información al crear descripciones de temas. Estas descripciones pueden ser visibles para los usuarios que no tienen permisos para el contenido de origen del tema.
 
 Aunque puede cambiar los permisos en páginas de temas individuales para restringir el acceso a un grupo específico de usuarios, no se recomienda este enfoque debido al alto grado de esfuerzo administrativo necesario.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Configurar Teams con tres niveles de protección](../solutions/configure-teams-three-tiers-protection.md)
 

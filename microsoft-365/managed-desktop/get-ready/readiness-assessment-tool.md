@@ -18,15 +18,15 @@ ms.locfileid: "50142938"
 ---
 # <a name="readiness-assessment-tools"></a>Herramientas de evaluación de preparación
 
-Para una experiencia lo más fluida posible al inscribirse en el Escritorio administrado de Microsoft, hay opciones de configuración y otros parámetros que debe establecer con antelación, así como ciertos requisitos de dispositivo y red que cumplir. Una herramienta, a la que se accede a través del portal de administración de Escritorio administrado de Microsoft, comprueba la configuración relacionada con la administración. Otra herramienta, que se puede descargar, comprueba los requisitos de dispositivo individuales y la configuración de red. Puedes usar estas herramientas para comprobar esa configuración y recibir pasos detallados para corregir los que no sean correctos.
+Para obtener la experiencia más fluida posible cuando se inscribe en el Escritorio administrado de Microsoft, hay opciones de configuración y otros parámetros que debe establecer con antelación, así como ciertos requisitos de dispositivo y red para cumplir. Una herramienta, a la que se accede a través del portal de administración de Escritorio administrado de Microsoft, comprueba la configuración relacionada con la administración. Otra herramienta, que se puede descargar, comprueba los requisitos de dispositivos individuales y la configuración de red. Puedes usar estas herramientas para comprobar esa configuración y recibir pasos detallados para corregir los que no sean correctos.
 
 ## <a name="downloadable-readiness-assessment-checker-for-devices-and-network"></a>Herramienta de comprobación de evaluación de preparación descargable para dispositivos y red
 
-Para obtener más información sobre cómo usar el herramienta de comprobación de evaluación de preparación descargable, consulta El herramienta de comprobación de evaluación [de](readiness-assessment-downloadable.md)preparación descargable.
+Para obtener más información sobre cómo usar el herramienta de comprobación de evaluación de preparación descargable, consulte El herramienta de comprobación de evaluación [de](readiness-assessment-downloadable.md)preparación descargable.
 
 ## <a name="online-readiness-assessment-tool-for-management-settings"></a>Herramienta de evaluación de preparación en línea para la configuración de administración
 
-La herramienta en línea comprueba la configuración de Microsoft Endpoint Manager (en concreto, Microsoft Intune), Azure Active Directory (Azure AD) y Microsoft 365 para asegurarse de que funcionarán con el escritorio administrado de Microsoft. Escritorio administrado de Microsoft conserva los datos asociados con estas comprobaciones durante 12 meses después de la última vez que se ejecuta una comprobación en la organización de Azure AD (inquilino). Después de 12 meses, lo conservamos en formato no identificado. Puedes elegir eliminar los datos que recopilamos.
+La herramienta en línea comprueba la configuración de Microsoft Endpoint Manager (en concreto, Microsoft Intune), Azure Active Directory (Azure AD) y Microsoft 365 para asegurarse de que funcionarán con el Escritorio administrado de Microsoft. Escritorio administrado de Microsoft conserva los datos asociados con estas comprobaciones durante 12 meses después de la última vez que se ejecuta una comprobación en la organización de Azure AD (inquilino). Después de 12 meses, lo conservamos en formato no identificado. Puedes elegir eliminar los datos que recopilamos.
 
 Cualquiera con al menos el rol lector global o administrador de Intune podrá ejecutar esta herramienta, pero dos de las comprobaciones[(las](readiness-assessment-fix.md#conditional-access-policies) directivas de acceso condicional y la autenticación [multifactor](readiness-assessment-fix.md#multifactor-authentication) requieren permisos adicionales.
  
@@ -40,7 +40,7 @@ La herramienta de evaluación comprueba estos elementos:
 |Conectores de certificados     | Comprueba el estado de los conectores de certificado para asegurarse de que están activos   |
 |Acceso condicional     | Comprueba que las directivas de acceso condicional no están  asignadas a todos los usuarios (las directivas de acceso condicional no deben asignarse a las cuentas de servicio de Escritorio administrado de Microsoft).    |
 |Directivas de cumplimiento de dispositivos     | Comprueba que las directivas de cumplimiento de Intune  no están asignadas a todos los usuarios (las directivas no deben asignarse a ningún dispositivo de Escritorio administrado de Microsoft).    |
-|Perfiles de configuración de dispositivos     | Confirma que los perfiles de configuración no están asignados  a todos los usuarios ni a todos los dispositivos (los perfiles de configuración no deben asignarse a ningún dispositivo de Escritorio administrado de Microsoft).     |
+|Perfiles de configuración de dispositivos     | Confirma que los perfiles de configuración no se asignan a  todos los usuarios ni a todos los dispositivos (los perfiles de configuración no deben asignarse a ningún dispositivo de Escritorio administrado de Microsoft).     |
 |Restricciones de tipo de dispositivo     | Comprueba que los dispositivos Windows 10 de la organización pueden inscribirse en Intune        |
 |Página de estado de inscripción     | Confirma que la página de estado de inscripción no está habilitada      |
 |Inscripción de Intune     | Comprueba que los dispositivos Windows 10 de la organización de Azure AD se inscribieron automáticamente en Intune         |
@@ -62,7 +62,7 @@ La herramienta de evaluación comprueba estos elementos:
 |Enterprise State Roaming     | Aconseja cómo comprobar que enterprise State Roaming está habilitado       |
 |Licencias     | Comprueba que ha obtenido las [licencias necesarias](prerequisites.md#more-about-licenses)         |
 |Autenticación multifactor     | Comprueba que la autenticación multifactor no se aplica a todos los usuarios (la autenticación multifactor no se debe aplicar accidentalmente a las cuentas de servicio de Escritorio administrado de Microsoft).|
-|Nombres de cuenta de seguridad   | Comprueba que ningún nombre de usuario entre en conflicto con los que Microsoft Managed Desktop reserva para su propio uso        |
+|Nombres de cuenta de seguridad   | Comprueba que ningún nombre de usuario entre en conflicto con los que el Escritorio administrado de Microsoft reserva para su propio uso        |
 |Roles de administrador de seguridad     | Confirma que los usuarios con roles lector de seguridad, operador de seguridad o lector global tienen asignados esos roles en Microsoft Defender para endpoint         |
 |Valores predeterminados de seguridad | Comprueba si la organización de Azure AD tiene habilitados los valores predeterminados de seguridad en Azure Active Directory |
 |Autoservicio de restablecimiento de contraseña     | Confirma que el restablecimiento de contraseña de autoservicio está habilitado        |

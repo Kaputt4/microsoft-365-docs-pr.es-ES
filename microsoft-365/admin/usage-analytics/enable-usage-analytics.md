@@ -52,7 +52,7 @@ También puede expandir la sección **Productos** para comprar una versión de P
 > [!NOTE]
 > Necesita una licencia de Power BI Pro para instalar, personalizar y distribuir una aplicación de plantilla. Para obtener más información, consulte [Requisitos previos.](https://docs.microsoft.com/power-bi/service-template-apps-install-distribute?source=docs#prerequisites)
 
-Para compartir sus datos, tanto usted como las personas con las que comparte los datos, necesitan una licencia de Power BI Pro o el contenido debe estar en un área de trabajo en un servicio [Power BI Premium.](https://docs.microsoft.com/power-bi/service-premium-what-is) 
+Para compartir los datos, tanto usted como las personas con las que comparte los datos, necesitan una licencia de Power BI Pro o el contenido debe estar en un área de trabajo en un servicio [Power BI Premium.](https://docs.microsoft.com/power-bi/service-premium-what-is) 
   
 ### <a name="enable-the-template-app"></a>Habilitar la aplicación de plantilla
 
@@ -66,7 +66,7 @@ Para [obtener más información, vea los roles](../add-users/about-admin-roles.m
     
 3. En el panel Informes que se abre, establezca Hacer que los datos estén disponibles para el análisis de uso de **Microsoft 365** para Power BI en **Al** \> **guardar.** 
   
-El proceso de recopilación de datos se completará en dos o 48 horas según el tamaño del espacio empresarial. El **botón Ir a Power BI** se habilitará (ya no será gris) cuando se complete la recopilación de datos. 
+El proceso de recopilación de datos se completará en dos o 48 horas, dependiendo del tamaño del espacio empresarial. El **botón Ir a Power BI** se habilitará (ya no será gris) cuando se complete la recopilación de datos. 
     
 ### <a name="start-the-template-app"></a>Iniciar la aplicación de plantilla
 
@@ -98,7 +98,7 @@ Los agregados de nivel de inquilino estarán disponibles en todos los informes d
 
 Para establecer que los datos que se recopilen para todos los informes sean anónimos, debe ser administrador global. Esto ocultará información identificable como los nombres de usuario, grupo y sitio en informes y en la aplicación de plantilla.
   
-1. En el centro de administración, vaya a **Configuración** de la organización y, en la pestaña \> Servicios, elija **Informes.** 
+1. En el centro de  administración, vaya a Configuración de la organización y, en la pestaña \> Servicios, elija **Informes.** 
     
 2. Seleccione **Informes** y, a continuación, **elija Mostrar identificadores anónimos.** Esta configuración se aplica tanto a los informes de uso como a la aplicación de plantilla.
   

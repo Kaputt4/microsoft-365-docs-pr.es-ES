@@ -49,7 +49,7 @@ Hay dos formas de aplicar un Fapiao:
 
     ![La página Facturas del Centro de administración de Microsoft 365.](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
   
-## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>Paso 2: Registrarse en el sistema de administración de Fapiao de 21Vianet
+## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>Paso 2: Registrarse con el sistema de administración de Fapiao de 21Vianet
 
 > [!NOTE]
 > Puede usar el mismo nombre de correo electrónico y contraseña que su cuenta de Office 365, o puede usar algo diferente.
@@ -127,7 +127,7 @@ Si quieres cambiar el título de Fapiao, envíanos el Fapiao de nuevo y volverem
 
     ![El menú desplegable después de que un usuario haya iniciado sesión en el sistema de administración de Fapiao 21Vianet.](../../media/ee6de24b-6be2-41e6-8aec-e0c3cb0ea35e.png)
   
-2. Si ha olvidado la contraseña de inicio de sesión, puede usar su dirección de correo electrónico de inicio de sesión para restablecer la contraseña. El sistema de administración de Fapiao enviará una nueva contraseña a tu dirección de correo electrónico. Puede usar la nueva contraseña para iniciar sesión.
+2. Si ha olvidado la contraseña de inicio de sesión, puede usar su dirección de correo electrónico de inicio de sesión para restablecer la contraseña. El sistema de administración de Fapiao enviará una nueva contraseña a la dirección de correo electrónico. Puede usar la nueva contraseña para iniciar sesión.
 
     ![Imágenes secuenciales que muestran cómo restablecer la contraseña en el sistema de administración de Fapiao 21Vianet.](../../media/2edb0a47-1286-4792-804d-7e84534c8370.png)
   

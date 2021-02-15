@@ -51,7 +51,7 @@ Puede usar una tarjeta de crédito o débito, o una cuenta bancaria para pagar l
 > [!IMPORTANT]
 > El pago a través de una cuenta bancaria no está disponible en algunos países o regiones.
 
-Puede pagar la suscripción con una tarjeta de crédito o débito, o una cuenta bancaria. Cuando pagas con uno de estos métodos de pago, seguimos cobrando ese método de pago hasta que la suscripción expire o se cancele. Puede [administrar los métodos de pago](manage-payment-methods.md) siempre que lo necesite. También tiene la posibilidad de [recibir una copia del extracto de facturación por correo electrónico](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).
+Puede pagar la suscripción con tarjeta de crédito/débito o cuenta bancaria. Al pagar con uno de estos métodos de pago, seguiremos cobrando con ese método de pago hasta que la suscripción expire o se cancele. Puede [administrar los métodos de pago](manage-payment-methods.md) siempre que lo necesite. También tiene la posibilidad de [recibir una copia del extracto de facturación por correo electrónico](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).
 
 ## <a name="paying-by-invoice"></a>Pagar con factura
 
@@ -61,22 +61,22 @@ En algunos casos, puede pagar la suscripción mediante factura con un cheque o E
 - Tener un costo de suscripción que supere una cantidad determinada (esta cantidad varía según la ubicación del servicio)
 - Pasar una comprobación de crédito
 
-Si se requiere una comprobación de crédito, se le notificará al comprar la suscripción. Si acepta ser contactado, recibe un correo electrónico que incluye más información sobre cómo solicitar la aprobación del crédito. Las comprobaciones de crédito se suelen completar en dos días laborables.
+Si se requiere una comprobación de crédito, se le notificará al comprar su suscripción. Si permite que nos pongamos en contacto con usted, recibirá un correo electrónico con más información sobre la solicitud de aprobación de crédito. Las comprobaciones de crédito se suelen completar en dos días laborables.
 
 > [!NOTE]
 > Los clientes que viven en Brasil pueden pagar una suscripción con un Boleto Bancario. Si ha seleccionado esta opción, la factura para el pago se envía al correo electrónico proporcionado durante la compra de la suscripción en los 10 días laborables posteriores a la fecha del pedido. La fecha de vencimiento es 30 días posterior a la fecha del pedido. Si no recibe su Boleto por correo electrónico, compruebe la carpeta de correo no deseado o póngase en contacto con el soporte técnico.
 >
 > Si lo prefiere, puede pagar mediante transferencia electrónica entre cuentas. El organismo y el número de cuenta aparecen en la parte inferior de la factura. Debe especificar el número de factura en el campo de identificación de transferencia.
 
-Si paga mediante factura para su suscripción, recibe un correo electrónico cuando el extracto de facturación está listo para ver. Este correo electrónico no contiene una copia del extracto de facturación. Sin embargo, puede elegir recibir una copia del extracto de [facturación por correo electrónico.](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email) El extracto de facturación incluye detalles sobre las opciones para realizar un pago y dónde enviarlo. Si escribe un número de pedido de compra al comprar una suscripción, el número aparece en su extracto de facturación. Para información sobre cómo acceder a los extractos de facturación, vea [Ver su factura](view-your-bill-or-invoice.md).
+Si paga su suscripción mediante factura, recibirá un correo electrónico que indica que su extracto de facturación está listo. Este correo electrónico no contiene una copia del extracto de facturación. Pero también tiene la posibilidad de [recibir una copia del extracto de facturación por correo electrónico](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). El extracto de facturación incluye información sobre las opciones de pago, además de dónde debe enviarse. Si escribe un número de pedido de compra al comprar una suscripción, el número aparece en su extracto de facturación. Para información sobre cómo acceder a los extractos de facturación, vea [Ver su factura](view-your-bill-or-invoice.md).
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>¿Qué debo hacer si tengo un saldo pendiente?
 
 Si no podemos cobrar el método de pago en el archivo, enviamos un correo electrónico que le permite saber que hay un problema. El correo electrónico indica brevemente cuál es el problema e incluye un vínculo donde puede comprobar el saldo pendiente. Seguimos reintentar la transacción cada pocos días durante 30 días, durante el cual la suscripción está en un período de gracia. Cada vez que se produce un error en una transacción, recibe una alerta por correo electrónico sobre el error.
 
-Si agregó personalmente el método de pago que tiene un importe pendiente pasado, puede usar **Liquidar saldo** para realizar un pago. El método de pago que usas para pagar el importe vencido se convierte en el nuevo método de pago para todas las suscripciones que usaron el método de pago rechazado.
+Si agregó personalmente el método de pago que tiene un importe pendiente pasado, puede usar **Liquidar saldo** para realizar un pago. El método de pago que use para pagar el saldo vencido se convertirá en el nuevo método de pago para todas las suscripciones que usaban el método de pago rechazado.
 
-1. En el centro de administración, vaya a la **página** Facturación &  >  **pagos** y, a continuación, seleccione la <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">pestaña Métodos de</a> pago.
+1. En el centro de administración, ve a la página **Facturación**&  >  **pagos** y, a continuación, selecciona la <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">pestaña Métodos de</a> pago.
 1. Un mensaje de advertencia indica qué método de pago se ha rechazado. Seleccione **Liquidar saldo.**
 1. En el panel derecho, elija un método de pago diferente o seleccione **Agregar un nuevo método de pago.**
 1. Después de actualizar la información del método de pago, seleccione **Guardar**.
@@ -252,11 +252,11 @@ No puede pagar la factura en línea. Debe remitir el pago mediante cheque o EFT.
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>¿Puedo cambiar de mi método de pago actual a pagar mediante factura?
 
-Solo puede cambiar al pago mediante factura si su suscripción cuesta por encima de un importe determinado. Primero debe pagar cualquier saldo pendiente en la tarjeta de crédito o débito o cuenta bancaria para poder cambiar al pago mediante factura. Para obtener información sobre cómo cambiar los métodos de pago, vea [Cambiar un método de pago para una única suscripción.](manage-payment-methods.md#change-a-payment-method-for-a-single-subscription)
+Solo puede cambiar al pago mediante factura si su suscripción cuesta por encima de un importe determinado. Primero debe pagar el saldo pendiente en la tarjeta de crédito, débito o cuenta bancaria antes de cambiar a pagar mediante factura. Para obtener información sobre cómo cambiar los métodos de pago, vea [Cambiar un método de pago para una única suscripción.](manage-payment-methods.md#change-a-payment-method-for-a-single-subscription)
 
 ## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>¿Puedo cambiar de pagar mediante factura a usar un método de pago diferente?
 
-No puede cambiar automáticamente de pagar mediante factura a pagar con un método de pago diferente. En su lugar, debe comprar una suscripción diferente pagada con una tarjeta de crédito o débito o cuenta [bancaria,](../subscriptions/move-users-different-subscription.md)mover todos los usuarios a la nueva suscripción y, [a](../try-or-buy-microsoft-365.md#buy-a-different-subscription) continuación, cancelar la [suscripción antigua.](../subscriptions/cancel-your-subscription.md)
+No puede cambiar automáticamente del pago con factura al pago con un método de pago diferente. En su lugar, debe [comprar otra suscripción](../try-or-buy-microsoft-365.md#buy-a-different-subscription) con otra tarjeta de crédito/débito o cuenta bancaria, [mover a todos los usuarios a la nueva suscripción](../subscriptions/move-users-different-subscription.md) y [cancelar la suscripción antigua](../subscriptions/cancel-your-subscription.md).
 
 ## <a name="related-articles"></a>Artículos relacionados
 

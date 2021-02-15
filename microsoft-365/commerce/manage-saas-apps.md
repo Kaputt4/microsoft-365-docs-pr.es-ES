@@ -40,7 +40,7 @@ Puede administrar licencias y facturación de aplicaciones de terceros en el Cen
 Hay varias formas de comprar aplicaciones de terceros.
 
 - **Compra directa:** los clientes pueden comprar suscripciones directamente desde [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)o [AppSource.](https://www.appsource.com/)
-- **Compra de partner:** trabaja con un partner a través del Centro de partners para comprar suscripciones.
+- **Compra de partners:** trabaja con un partner a través del Centro de partners para comprar suscripciones.
 - **Propuesta de Microsoft:** responder a una propuesta de Microsoft Sales que incluye aplicaciones de terceros.
 
 Una vez que los clientes compren las aplicaciones y acepten el Contrato de cliente de Microsoft, pueden administrarlas en el Centro de administración de Microsoft 365 o en la Microsoft Store para Empresas.
@@ -103,7 +103,7 @@ Los administradores pueden cambiar el número de licencias que pertenecen a su o
 
 1. En el centro de administración, vaya a la página  >  **Facturación de aplicaciones de**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Sus</a> productos.
 2. Busca y selecciona la aplicación que quieras administrar.
-3. Seleccione **Cambiar cantidad de licencia.**
+3. Seleccione **Cambiar cantidad de licencias.**
 
 ## <a name="manage-payment-methods"></a>Administrar métodos de pago
 
@@ -121,7 +121,7 @@ Para obtener más información sobre los perfiles de facturación, vea [Comprend
 2. Busca y selecciona la aplicación que quieras administrar.
 3. Junto a **Perfil de facturación,** seleccione **Editar**.
 
-Para obtener más información sobre las facturas, vea [Comprender su factura.](billing-and-payments/understand-your-invoice.md)
+Para obtener más información sobre las facturas, vea [Comprender la factura.](billing-and-payments/understand-your-invoice.md)
 
 ## <a name="cancel-a-software-as-a-service-app-subscription"></a>Cancelar una suscripción de aplicación de software como servicio
 

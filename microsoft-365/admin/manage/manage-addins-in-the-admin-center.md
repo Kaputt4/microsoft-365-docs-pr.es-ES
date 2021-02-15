@@ -121,11 +121,11 @@ Un usuario que intente acceder a la tienda verá el siguiente mensaje: Lo **sent
   
 La compatibilidad para desactivar la Tienda Office está disponible en las siguientes versiones:
   
-- Windows: 16.0.9001 - Actualmente disponible.
+- Windows: 16.0.9001 - Disponible actualmente.
     
 - Mac: 16.10.18011401 - Disponible actualmente.
     
-- iOS: 2.9.18010804 - Actualmente disponible.
+- iOS: 2.9.18010804 - Disponible actualmente.
     
 - La web: disponible actualmente.
     
@@ -160,7 +160,7 @@ Si el complemento implementado no admite comandos de complemento o si desea ver 
   
 2. Seleccione **Administrado por el administrador** en el panel de navegación izquierdo. 
 
-## <a name="learn-more"></a>Obtén más información
+## <a name="learn-more"></a>Más información
 
 [Implementar complementos en el centro de administración](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
 

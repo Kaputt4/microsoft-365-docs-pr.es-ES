@@ -37,10 +37,10 @@ Este tema le guiará a través de la habilitación y configuración de la admini
 Antes de empezar con la administración del acceso con privilegios, debe confirmar su suscripción a [Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) y cualquier complemento. Para acceder y usar la administración de acceso con privilegios, la organización debe tener una de las siguientes suscripciones o complementos:
 
 - Suscripción a Microsoft 365 E5 (versión de pago o de prueba)
-- Suscripción de Microsoft 365 E3 (o suscripción a Office 365 E3 + Enterprise Mobility y suscripción a Seguridad E3) + el complemento Cumplimiento de Microsoft 365 E5
+- Suscripción de Microsoft 365 E3 (o suscripción a Office 365 E3 + Enterprise Mobility y suscripción de Seguridad E3) + el complemento Cumplimiento de Microsoft 365 E5
 - Cualquier suscripción de Microsoft 365, Office 365, Exchange, SharePoint o OneDrive para la Empresa + el complemento De administración de riesgos de Microsoft 365 E5 Insider  
 - Suscripción a Microsoft 365 A5 (versión de pago o de prueba)
-- Suscripción a Microsoft 365 A3 (u suscripción a Office 365 A3 + Enterprise Mobility and Security A3) + el complemento Cumplimiento de Microsoft A5
+- Suscripción a Microsoft 365 A3 (o suscripción a Office 365 A3 + enterprise mobility and Security A3) + el complemento de cumplimiento de Microsoft A5
 - Cualquier suscripción a Microsoft 365, Office 365, Exchange, SharePoint o OneDrive para la Educación + el complemento De administración de riesgos de Microsoft 365 A5 Insider
 - Suscripción a Office 365 Enterprise E5 (versión de pago o de prueba)
 - Suscripción a Office 365 Enterprise E3 + el complemento de cumplimiento avanzado de Office 365 (ya no está disponible para nuevas suscripciones, vea la nota)
@@ -48,9 +48,9 @@ Antes de empezar con la administración del acceso con privilegios, debe confirm
 Los usuarios que envíen y respondan a solicitudes de administración de acceso con privilegios deben tener asignada una de las licencias anteriores.
 
 >[!IMPORTANT]
->El cumplimiento avanzado de Office 365 ya no se vende como suscripción independiente. Cuando expiran las suscripciones actuales, los clientes deben realizar la transición a una de las suscripciones anteriores, que contienen las mismas características de cumplimiento o características adicionales.
+>El cumplimiento avanzado de Office 365 ya no se vende como una suscripción independiente. Cuando expiran las suscripciones actuales, los clientes deben realizar la transición a una de las suscripciones anteriores, que contienen las mismas características de cumplimiento o características de cumplimiento adicionales.
 
-Si no tiene un plan de Office 365 Enterprise E5 existente y desea probar la administración del acceso con privilegios, puede agregar [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) a su suscripción existente [de](https://www.microsoft.com/microsoft-365/enterprise) Office 365 o registrarse para una prueba de Microsoft 365 Enterprise E5.
+Si no tiene un plan de Office 365 Enterprise E5 existente y desea probar la administración del acceso con privilegios, puede agregar [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) a su suscripción [existente de](https://www.microsoft.com/microsoft-365/enterprise) Office 365 o registrarse para una versión de prueba de Microsoft 365 Enterprise E5.
 
 ## <a name="enable-and-configure-privileged-access-management"></a>Habilitar y configurar la administración de acceso con privilegios
 
@@ -150,7 +150,7 @@ Puede crear y configurar hasta 30 directivas de acceso con privilegios para su o
 
     **Nombre de la** directiva: seleccionar entre las directivas disponibles
 
-    **Tipo de aprobación:** Manual o Auto
+    **Tipo de aprobación:** manual o automático
 
     **Grupo de aprobación:** seleccionar el grupo de aprobadores creado en el paso 1
 
@@ -198,7 +198,7 @@ Las solicitudes de acceso con privilegios son válidas hasta 24 horas después d
 
     **Comentarios:** campo de texto para los comentarios relacionados con la solicitud de acceso
 
-5. Seleccione **Guardar** y, a continuación, **Cerrar**. La solicitud se enviará al grupo del aprobador por correo electrónico.
+5. Seleccione **Guardar** y, a continuación, **Cerrar**. Su solicitud se enviará al grupo del aprobador por correo electrónico.
 
 #### <a name="in-exchange-management-powershell"></a>En Exchange Management PowerShell
 
@@ -220,7 +220,7 @@ Después de crear una solicitud de aprobación, el estado de la solicitud de ele
 
 #### <a name="in-the-microsoft-365-admin-center"></a>En el Centro de administración de Microsoft 365
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales.
+1. Inicie sesión en el Centro de administración de [Microsoft 365](https://admin.microsoft.com) con sus credenciales.
 
 2. En el centro de administración, vaya **a** Configuración de configuración de la  >    >  **organización seguridad & acceso con**  >  **privilegios de privacidad.**
 
@@ -244,11 +244,11 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 ### <a name="approving-an-elevation-authorization-request"></a>Aprobar una solicitud de autorización de elevación
 
-Cuando se crea una solicitud de aprobación, los miembros del grupo aprobador relevante reciben una notificación por correo electrónico y pueden aprobar la solicitud asociada con el identificador de solicitud. El solicitante es notificado de la aprobación o denegación de la solicitud a través de un mensaje de correo electrónico.
+Cuando se crea una solicitud de aprobación, los miembros del grupo de aprobadores relevante reciben una notificación por correo electrónico y pueden aprobar la solicitud asociada con el identificador de solicitud. Se notifica al solicitante la aprobación o denegación de la solicitud mediante un mensaje de correo electrónico.
 
 #### <a name="in-the-microsoft-365-admin-center"></a>En el Centro de administración de Microsoft 365
 
-1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales.
+1. Inicie sesión en el Centro de administración de [Microsoft 365](https://admin.microsoft.com) con sus credenciales.
 
 2. En el centro de administración, vaya **a** Configuración de configuración de la  >    >  **organización seguridad & acceso con**  >  **privilegios de privacidad.**
 
@@ -312,7 +312,7 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 ## <a name="disable-privileged-access-in-office-365"></a>Deshabilitar el acceso con privilegios en Office 365
 
-Si es necesario, puede deshabilitar la administración de acceso con privilegios para su organización. Deshabilitar el acceso con privilegios no elimina ninguna de las directivas de aprobación o grupos de aprobadores asociados.
+Si es necesario, puede deshabilitar la administración del acceso con privilegios para su organización. Deshabilitar el acceso con privilegios no elimina ninguna de las directivas de aprobación o grupos de aprobadores asociados.
 
 ### <a name="in-the-microsoft-365-admin-center"></a>En el Centro de administración de Microsoft 365
 

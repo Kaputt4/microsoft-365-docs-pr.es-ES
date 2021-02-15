@@ -38,7 +38,7 @@ También puedes controlar si los usuarios de tu organización pueden realizar co
 ## <a name="view-self-service-subscriptions"></a>Ver suscripciones de autoservicio
 
 1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
+2. En la **pestaña** Productos, seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
 3. Para ver más detalles sobre una suscripción, elija una de la lista.
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Ver quién tiene licencias para una suscripción de compra de autoservicio
@@ -89,7 +89,7 @@ Cuando mueve usuarios a una suscripción diferente, la suscripción antigua se c
 > Debe tener una licencia disponible para cada usuario al que se va a mover en la suscripción a la que va a mover a los usuarios.
 
 1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
+2. En la **pestaña** Productos, seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
 3. Seleccione la suscripción que desea asumir.
 4. En la página de detalles de la suscripción, en la sección **Suscripciones** y configuración, seleccione **Tomar el control de esta suscripción.**
 5. En el panel derecho, seleccione **Mover usuarios.**
@@ -103,14 +103,14 @@ Cuando mueve usuarios a una suscripción diferente, la suscripción antigua se c
 Cuando decide cancelar una suscripción de compra de autoservicio, los usuarios con licencias pierden el acceso al producto. El usuario que compró originalmente la suscripción de compra de autoservicio recibe un correo electrónico que indica que se canceló la suscripción.
 
 1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
+2. En la **pestaña** Productos, seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
 3. Seleccione la suscripción que desea cancelar.
 4. En la página de detalles de la suscripción, en la sección **Suscripciones** y configuración, seleccione **Tomar el control de esta suscripción.**
 5. En el panel derecho, seleccione **Cancelar suscripción.**
 6. Seleccione un motivo para la cancelación en la lista desplegable y, a continuación, **seleccione Cancelar suscripción.**
 7. En el **cuadro ¿Está seguro de que desea cancelar?** seleccione **Cancelar suscripción.**
 8. Cierre el panel derecho.
-9. En la página de detalles de la suscripción, el **estado de la** suscripción se muestra como **Eliminado.**
+9. En la página de detalles de la suscripción, el **estado de** la suscripción se muestra como **Eliminado.**
 
 ## <a name="need-help-contact-us"></a>¿Necesita ayuda? Póngase en contacto con nosotros.
 

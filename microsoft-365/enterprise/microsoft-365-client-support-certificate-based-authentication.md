@@ -27,7 +27,7 @@ ms.locfileid: "50097263"
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-La autenticación moderna es un término genérico para una combinación de métodos de autenticación y autorización. Entre ellas se incluyen:
+La autenticación moderna es un término genérico para una combinación de métodos de autenticación y autorización. Entre ellos se incluyen:
 
 - **Métodos de autenticación:** autenticación multifactor; Autenticación basada en certificados de cliente.
 - **Métodos de** autorización: implementación de Microsoft de Open Authorization (OAuth).
@@ -44,10 +44,10 @@ Las últimas versiones de los siguientes clientes y plataformas admiten la auten
 <br>
 <br>
 
-| Clientes | Android | iOS | Mac| Windows 10 <br> Aplicaciones modernas| Windows 10 <br> Desktop |
+| Clientes | Android | iOS | Mac| Windows 10 <br> Aplicaciones modernas| Windows 10 <br> Desktop |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | Administrador de Azure Active Directory | N/D | N/D | N/D | N/D | ![Compatible](../media/check-mark.png) |
-| Access | N/D | N/D | N/D | N/D | ![Compatible](../media/check-mark.png) |
+| Acceso | N/D | N/D | N/D | N/D | ![Compatible](../media/check-mark.png) |
 | Administrador de Azure | N/D | N/D | N/D | N/D | N/D |
 | Portal de empresa | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | No aplicable |
 | Cortana | Planeado | Planeado | N/D | ![Compatible.](../media/check-mark.png) | No aplicable |
@@ -65,7 +65,7 @@ Las últimas versiones de los siguientes clientes y plataformas admiten la auten
 | OneNote | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |
 | Outlook | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |
 | Planner | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | N/D | N/D | N/D |
-| PowerApps | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | No aplicable | ![Compatible.](../media/check-mark.png) | No aplicable |
+| Power Apps | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | No aplicable | ![Compatible.](../media/check-mark.png) | No aplicable |
 | Power Automate | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | N/D | N/D | N/D |
 | Power BI | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | No aplicable | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |
 | PowerPoint | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |
@@ -87,7 +87,7 @@ Las últimas versiones de los siguientes clientes y plataformas admiten la auten
 | Yammer | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | Planeado | N/D | Planeado |
 
 >[!NOTE]
-><sup>1</sup> Edge para iOS y Android admite la autenticación basada en certificados durante los flujos de adición de cuentas. Edge para iOS y Android no admite la autenticación basada en certificados al realizar la autenticación en sitios web, que normalmente son sitios de intranet. <br><br>  En este escenario, un usuario navega a un sitio web (normalmente en la intranet) donde el sitio web requiere que el usuario se autentique a través de un certificado. Esto no implica la autenticación moderna en absoluto y no aprovecha una biblioteca de autenticación de Microsoft. Esto se debe a una limitación con iOS: iOS impide que las aplicaciones de terceros accedan a la cadena de claves del sistema donde se almacenan los certificados (solo las aplicaciones de Apple y el controlador [de vista web safari](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) pueden acceder a la cadena de claves del sistema). <br><br> Como Edge se basa en el marco [WebKit](https://developer.apple.com/documentation/webkit) para representar sitios web, Edge no puede tener acceso a la cadena de claves del sistema y presentar al usuario una opción de certificado. Esto, desafortunadamente, es por diseño debido a la arquitectura de Apple.
+><sup>1</sup> Edge para iOS y Android admite la autenticación basada en certificados durante los flujos de adición de cuentas. Edge para iOS y Android no admite la autenticación basada en certificados al realizar la autenticación en sitios web, que normalmente son sitios de intranet. <br><br>  En este escenario, un usuario navega a un sitio web (normalmente en la intranet) donde el sitio web requiere que el usuario se autentique a través de un certificado. Esto no implica la autenticación moderna en absoluto y no aprovecha una biblioteca de autenticación de Microsoft. Esto se debe a una limitación con iOS: iOS impide que las aplicaciones de terceros accedan a la cadena de claves del sistema donde se almacenan los certificados (solo las aplicaciones de Apple y el controlador [de vista web safari](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) pueden acceder a la cadena de claves del sistema). <br><br> Como Edge se basa en el marco [WebKit](https://developer.apple.com/documentation/webkit) para representar sitios web, Edge no puede acceder a la cadena de claves del sistema y presentar al usuario una opción de certificado. Esto, desafortunadamente, es por diseño debido a la arquitectura de Apple.
 
 ## <a name="supported-powershell-modules"></a>Módulos de PowerShell compatibles
 

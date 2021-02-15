@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo trabajan los usuarios con etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web, y qué aplicaciones admiten etiquetas de confidencialidad.
+description: Obtenga información sobre cómo trabajan los usuarios con las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web, y qué aplicaciones admiten etiquetas de confidencialidad.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: e9e3f73ad3756381a2ea6884d6ec65bc85063a10
 ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
@@ -35,7 +35,7 @@ Use la información de este artículo para ayudarle a administrar correctamente 
 
 Para usar etiquetas de confidencialidad integradas en las aplicaciones de escritorio de Office para Windows y Mac, debe usar una edición de suscripción de Office. Este cliente de etiquetado no admite ediciones independientes de Office, como Office 2016 u Office 2019.
 
-Para usar etiquetas de confidencialidad con estas ediciones independientes de Office en equipos Windows, instale el cliente de etiquetado unificado de [Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)
+Para usar etiquetas de confidencialidad con estas ediciones independientes de Office en equipos windows, instale el cliente de etiquetado unificado [de Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>Compatibilidad con funcionalidades de etiquetas de confidencialidad en aplicaciones
 
@@ -48,7 +48,7 @@ Las nuevas versiones de las aplicaciones de Office están disponibles en diferen
 
 Office para iOS y Office para Android: las etiquetas de confidencialidad están integradas en la [aplicación de Office.](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)
 
-Hay funcionalidades adicionales disponibles al instalar el cliente de etiquetado unificado de Azure Information Protection, que solo se ejecuta en equipos Windows. Para obtener estos detalles, consulta [Comparar los clientes de etiquetado para equipos Windows.](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)
+Hay funcionalidades adicionales disponibles al instalar el cliente de etiquetado unificado de Azure Information Protection, que solo se ejecuta en equipos Windows. Para obtener más información, consulta [Comparar los clientes de etiquetado para equipos Windows.](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)
 
 ### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Capacidades de etiquetas de confidencialidad en Word, Excel y PowerPoint
 
@@ -110,7 +110,7 @@ Si se cumplen ambas condiciones, pero necesita desactivar el cliente de etiqueta
 
 2. Establecer **Usar la característica de confidencialidad en Office para aplicar y ver etiquetas de confidencialidad** en **0**. 
  
-Implemente esta configuración mediante la directiva de grupo o mediante el servicio de directivas [en la nube de Office.](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service) La configuración tiene efecto cuando se reinician las aplicaciones de Office.
+Implemente esta configuración mediante la directiva de grupo o mediante el servicio de directiva de nube [de Office.](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service) La configuración tiene efecto cuando se reinician las aplicaciones de Office.
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Cliente de etiquetado integrado de Office y cliente de Azure Information Protection
 
@@ -122,11 +122,11 @@ Como alternativa, deshabilite o quite el complemento de Office, **Azure Informat
 
 Al deshabilitar o quitar este complemento de Office, el cliente de Azure Information Protection permanece instalado para que pueda seguir etiquetando archivos fuera de las aplicaciones de Office. Por ejemplo, mediante el Explorador de archivos o PowerShell.
 
-Para obtener información sobre qué características son compatibles con los clientes de Azure Information Protection y el cliente de etiquetado integrado de Office, vea la documentación de Azure Information Protection para elegir qué cliente de etiquetado usar para equipos [Windows.](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)
+Para obtener información acerca de qué características son compatibles con los clientes de Azure Information Protection y el cliente de etiquetado integrado de Office, consulte La documentación de Azure Information Protection para elegir qué cliente de etiquetado usar para equipos [Windows.](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)
 
 ## <a name="office-file-types-supported"></a>Tipos de archivo de Office admitidos
 
-Las aplicaciones de Office que tienen etiquetado integrado para archivos de Word, Excel y PowerPoint admiten el formato Open XML (como .docx y .xlsx), pero no el formato Microsoft Office 97-2003 (como .doc y .xls). Cuando un tipo de archivo no es compatible  con el etiquetado integrado, el botón Confidencialidad no está disponible en la aplicación de Office.
+Las aplicaciones de Office que tienen etiquetado integrado para archivos de Word, Excel y PowerPoint admiten el formato Open XML (como .docx y .xlsx), pero no el formato Microsoft Office 97-2003 (como .doc y .xls). Cuando no se admite un tipo de archivo  para el etiquetado integrado, el botón Confidencialidad no está disponible en la aplicación de Office.
 
 El cliente de etiquetado unificado de Azure Information Protection admite tanto el formato Open XML como el formato Microsoft Office 97-2003. Para obtener más información, consulte [Tipos de archivo admitidos](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-file-types) por el cliente de etiquetado unificado de Azure Information Protection desde la guía de administración de ese cliente.
 
@@ -149,7 +149,7 @@ Cuando los usuarios etiquetan inicialmente un documento o correo electrónico, s
 
 - Un usuario aplica la etiqueta **Confidencial \ Todos** los empleados a un documento y esta etiqueta está configurada para aplicar la configuración de cifrado para todos los usuarios de la organización. A continuación, este usuario configura manualmente las opciones de IRM para restringir el acceso a un usuario fuera de la organización. El resultado final es un documento con la etiqueta **Confidencial \** Todos los empleados y cifrada, pero los usuarios de su organización no pueden abrirlo como se esperaba.
 
-- Un usuario aplica la etiqueta **Confidencial \** Solo destinatarios a un correo electrónico y este correo electrónico está configurado para aplicar la configuración de cifrado **no reenviar**. A continuación, este usuario configura manualmente las opciones de IRM para que el correo electrónico no esté restringido. El resultado final es que los destinatarios pueden reenviar el correo electrónico, a pesar de tener la etiqueta **Confidencial \ Solo destinatarios.**
+- Un usuario aplica la etiqueta **Confidencial \** Solo destinatarios a un correo electrónico y este correo electrónico está configurado para aplicar la configuración de cifrado no **reenviar**. A continuación, este usuario configura manualmente las opciones de IRM para que el correo electrónico no esté restringido. El resultado final es que los destinatarios pueden reenviar el correo electrónico, a pesar de tener la etiqueta **Confidencial \ Solo destinatarios.**
 
 - Un usuario aplica la etiqueta **General** a un documento y esta etiqueta no está configurada para aplicar cifrado. A continuación, este usuario configura manualmente las opciones de IRM para restringir el acceso al documento. El resultado final es un documento con la etiqueta **General,** pero que también aplica cifrado para que algunos usuarios no puedan abrirlo como se esperaba.
 
@@ -179,11 +179,11 @@ Ejemplos de herencia de etiquetas, donde la etiqueta **Confidencial** aplica cif
 
 - Un usuario crea un nuevo mensaje de correo electrónico y aplica la **etiqueta Confidencial** a este mensaje. A continuación, agregan un documento de Word que no está etiquetado ni cifrado. Como resultado de la herencia, el documento se acaba de etiquetar **Confidencial** y ahora se ha aplicado cifrado desde esa etiqueta.
 
-- Un usuario crea un nuevo mensaje de correo electrónico y aplica la **etiqueta Confidencial** a este mensaje. A continuación, agregan un documento de Word con la etiqueta **General** y este archivo no está cifrado. Como resultado de la herencia, el documento se vuelve a etiquetar como **Confidencial** y ahora se aplica cifrado desde esa etiqueta.
+- Un usuario crea un nuevo mensaje de correo electrónico y aplica la **etiqueta Confidencial** a este mensaje. A continuación, agregan un documento de Word con la etiqueta **General** y este archivo no está cifrado. Como resultado de la herencia, el  documento se vuelve a etiquetar como Confidencial y ahora se aplica cifrado desde esa etiqueta.
 
 ## <a name="sensitivity-label-compatibility"></a>Compatibilidad de etiquetas de confidencialidad
 
-Con aplicaciones con **RMS:** si abre un documento o correo electrónico con etiquetas y cifrados en una aplicación con [RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) que no admite etiquetas de confidencialidad, la aplicación seguirá obligando al cifrado y a la administración de derechos.
+Con aplicaciones con **RMS:** si abre un documento o correo electrónico con etiquetas y cifrados en una aplicación con [RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) que no admite etiquetas de confidencialidad, la aplicación sigue obligando al cifrado y a la administración de derechos.
 
 Con el cliente de **Azure Information Protection:** puede ver y cambiar las etiquetas de confidencialidad que se aplican a documentos y correos electrónicos con el cliente de etiquetado integrado de Office mediante el cliente de Azure Information Protection y al revés.
 
@@ -217,7 +217,7 @@ Si los usuarios externos no tienen una cuenta en Azure Active Directory, pueden 
     
     La ventaja de esta opción es una sobrecarga administrativa mínima porque las cuentas se crean automáticamente y la configuración de etiquetas es más sencilla. Para este escenario, debe seleccionar la opción de cifrado [Agregar cualquier](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) usuario autenticado porque no conocerá las direcciones de correo electrónico por adelantado. La desventaja es que esta configuración no le permite restringir el acceso y los derechos de uso a usuarios específicos.
 
-Los usuarios externos también pueden usar una cuenta Microsoft para documentos cifrados cuando usan Aplicaciones de Microsoft 365 (anteriormente aplicaciones de[Office 365)](https://docs.microsoft.com/deployoffice/name-change)en Windows y son compatibles recientemente con macOS (versión 16.42+), Android (versión 16.0.13029+) e iOS (versión 2.42+). Por ejemplo, alguien comparte un documento cifrado con ellos y la configuración de cifrado especifica su dirección de correo electrónico de Gmail. Este usuario puede crear su propia cuenta de Microsoft que use su dirección de correo electrónico de Gmail. A continuación, después de iniciar sesión con esta cuenta, pueden abrir el documento y editarlo, según las restricciones de uso especificadas para ese usuario. Para obtener un ejemplo de tutorial de este escenario, vea [Abrir y editar el documento protegido.](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)
+Los usuarios externos también pueden usar una cuenta microsoft para documentos cifrados cuando usan Aplicaciones de Microsoft 365 (anteriormente aplicaciones de[Office 365)](https://docs.microsoft.com/deployoffice/name-change)en Windows y son compatibles recientemente con macOS (versión 16.42+), Android (versión 16.0.13029+) e iOS (versión 2.42+). Por ejemplo, alguien comparte un documento cifrado con ellos y la configuración de cifrado especifica su dirección de correo electrónico de Gmail. Este usuario puede crear su propia cuenta de Microsoft que use su dirección de correo electrónico de Gmail. A continuación, después de iniciar sesión con esta cuenta, pueden abrir el documento y editarlo, según las restricciones de uso especificadas para ese usuario. Para obtener un ejemplo de tutorial de este escenario, vea [Abrir y editar el documento protegido.](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)
 
 > [!NOTE]
 > La dirección de correo electrónico de la cuenta Microsoft debe coincidir con la dirección de correo electrónico especificada para restringir el acceso a la configuración de cifrado.
@@ -263,13 +263,13 @@ Para estos escenarios, con sus aplicaciones de Office, un usuario con etiquetas 
 > 
 > El cliente de etiquetado unificado de Azure Information Protection admite marcados dinámicos. Para etiquetar integrado en Office, vea las tablas de la sección [de](#support-for-sensitivity-label-capabilities-in-apps) funcionalidades de esta página.
 
-Al configurar una etiqueta de confidencialidad para los marcados de contenido, puede usar las siguientes variables en la cadena de texto para el encabezado, pie de página o marca de agua:
+Al configurar una etiqueta de confidencialidad para las marcas de contenido, puede usar las siguientes variables en la cadena de texto para el encabezado, pie de página o marca de agua:
 
 | Variable | Descripción | Ejemplo cuando se aplica la etiqueta |
 | -------- | ----------- | ------- |
 | `${Item.Label}` | Nombre para mostrar de la etiqueta aplicada| **General**|
 | `${Item.Name}` | Nombre de archivo o asunto de correo electrónico del contenido que se va a etiquetar | **Sales.docx** |
-| `${Item.Location}` | Ruta de acceso y nombre de archivo del documento que se va a etiquetar, o el asunto de correo electrónico de un correo electrónico etiquetado | **\\\Sales\2020\Q3\Report.docx**|
+| `${Item.Location}` | Ruta de acceso y nombre de archivo del documento que se va a etiquetar, o el asunto de correo electrónico de un correo electrónico etiquetado. | **\\\Sales\2020\Q3\Report.docx**|
 | `${User.Name}` | Nombre para mostrar del usuario que aplica la etiqueta| **Richard Simón** |
 | `${User.PrincipalName}` | Nombre principal de usuario (UPN) de Azure AD del usuario que aplica la etiqueta | **rsimone \@ contoso.com** |
 | `${Event.DateTime}` | Fecha y hora en que se etiqueta el contenido, en la zona horaria local del usuario que aplica la etiqueta | **10/8/2020 13:30** |
@@ -279,7 +279,7 @@ Al configurar una etiqueta de confidencialidad para los marcados de contenido, p
 
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Establecer diferentes marcas visuales para Word, Excel, PowerPoint y Outlook
 
-Como variable adicional, puede configurar marcas visuales por tipo de aplicación de Office mediante una instrucción de variable "If.App" en la cadena de texto e identificar el tipo de aplicación con los valores **Word,** **Excel,** **PowerPoint** o **Outlook**. También puede abreviar estos valores, que es necesario si desea especificar más de uno en la misma instrucción If.App.
+Como variable adicional, puede configurar marcas visuales por tipo de aplicación de Office mediante una instrucción de variable "If.App" en la cadena de texto e identificar el tipo de aplicación con los valores **Word**, **Excel,** **PowerPoint** o **Outlook**. También puede abreviar estos valores, que es necesario si desea especificar más de uno en la misma instrucción If.App.
 
 > [!NOTE]
 > Para mayor integridad, se incluyen instrucciones para Outlook, aunque actualmente solo son compatibles con el cliente de etiquetado unificado de Azure Information Protection.
@@ -310,7 +310,7 @@ Ejemplos:
 
     `${If.App.WP}This content is ${If.End}Confidential`
 
-    En Word y PowerPoint, la etiqueta aplica el texto de marca de agua "Este contenido es confidencial". En Excel, la etiqueta aplica el texto de marca de agua "Confidencial". En Outlook, la etiqueta no aplica ningún texto de marca de agua porque no se admiten marcas de agua como marcas de agua visuales para Outlook.
+    En Word y PowerPoint, la etiqueta aplica el texto de marca de agua "Este contenido es confidencial". En Excel, la etiqueta aplica el texto de marca de agua "Confidencial". En Outlook, la etiqueta no aplica ningún texto de marca de agua porque las marcas de agua como marcas de agua visuales no son compatibles con Outlook.
 
 ## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>Exigir a los usuarios que apliquen una etiqueta a su correo electrónico y documentos
 

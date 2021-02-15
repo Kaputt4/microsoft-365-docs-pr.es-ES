@@ -29,7 +29,7 @@ ms.locfileid: "50099683"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Soporte técnico de Azure Information Protection para Office 365 operado por 21Vianet
 
-En este artículo se tratan las diferencias entre el soporte técnico de Azure Information Protection (AIP) para Office 365 operado por 21Vianet y las ofertas comerciales, así como instrucciones específicas para configurar AIP para clientes en China, incluido cómo instalar el escáner local de AIP y administrar trabajos de análisis de &mdash; contenido.
+En este artículo se tratan las diferencias entre el soporte de Azure Information Protection (AIP) para Office 365 operado por 21Vianet y las ofertas comerciales, así como instrucciones específicas para configurar AIP para clientes en China, incluido cómo instalar el escáner local de AIP y administrar trabajos de análisis de &mdash; contenido.
 
 ## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>Diferencias entre AIP para Office 365 operado por 21Vianet y ofertas comerciales
 
@@ -43,7 +43,7 @@ La siguiente lista incluye las diferencias existentes entre AIP para Office 365 
   
 - Se admite el uso compartido de correos electrónicos protegidos con usuarios en la nube comercial.
   
-- El uso compartido de documentos y datos adjuntos de correo electrónico con usuarios en la nube comercial no está disponible actualmente. Esto incluye Office 365 operado por usuarios de 21Vianet en la nube comercial, usuarios que no son de Office 365 operados por 21Vianet en la nube comercial y usuarios con una licencia rms para personas.
+- El uso compartido de documentos y datos adjuntos de correo electrónico con usuarios en la nube comercial no está disponible actualmente. Esto incluye Office 365 operado por 21Vianet usuarios en la nube comercial, usuarios que no son de Office 365 operados por 21Vianet en la nube comercial y usuarios con una licencia rms para individuos.
   
 - IRM con SharePoint (bibliotecas y sitios protegidos por IRM) no está disponible actualmente.
   
@@ -51,7 +51,7 @@ La siguiente lista incluye las diferencias existentes entre AIP para Office 365 
 
 - El [Visor móvil no](/azure/information-protection/rms-client/mobile-app-faq) es compatible con Azure China 21Vianet.
 
-- El área AIP de Azure Portal no está disponible para los clientes de China. Use [comandos de PowerShell en](#step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) lugar de realizar acciones en el portal, como instalar el escáner local y administrar los trabajos de análisis de contenido.
+- El área AIP de Azure Portal no está disponible para los clientes en China. Use [comandos de PowerShell en](#step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) lugar de realizar acciones en el portal, como instalar el escáner local y administrar los trabajos de análisis de contenido.
 
 ## <a name="configure-aip-for-customers-in-china"></a>Configurar AIP para clientes en China
 
@@ -60,7 +60,7 @@ Para configurar AIP para clientes en China:
 
 2. [Configurar el cifrado DNS.](#step-2-configure-dns-encryption)
 
-3. Instale y configure el cliente de etiquetado unificado [AIP.](#step-3-install-and-configure-the-aip-unified-labeling-client)
+3. [Instale y configure el cliente de etiquetado unificado de AIP.](#step-3-install-and-configure-the-aip-unified-labeling-client)
 
 4. [Configurar aplicaciones AIP en Windows.](#step-4-configure-aip-apps-on-windows)
 
@@ -84,7 +84,7 @@ Para que el cifrado funcione correctamente, RMS debe estar habilitado para el in
 
 Para que el cifrado funcione correctamente, las aplicaciones cliente de Office deben conectarse a la instancia de China del servicio y arrancar desde allí. Para redirigir las aplicaciones cliente a la instancia de servicio correcta, el administrador de inquilinos debe configurar un registro SRV de DNS con información sobre la dirección URL de Azure RMS. Sin el registro SRV de DNS, la aplicación cliente intentará conectarse a la instancia de nube pública de forma predeterminada y se producirá un error.
 
-Además, se supone que los usuarios iniciarán sesión con un nombre de usuario basado en el dominio propiedad del inquilino (por ejemplo, ) y no con el nombre de usuario `joe@contoso.cn` `onmschina` (por ejemplo, `joe@contoso.onmschina.cn` ). El nombre de dominio del nombre de usuario se usa para la redirección dns a la instancia de servicio correcta.
+Además, se supone que los usuarios iniciarán sesión con un nombre de usuario basado en el dominio de inquilino (por ejemplo, ) y no en el nombre de usuario `joe@contoso.cn` `onmschina` (por ejemplo, `joe@contoso.onmschina.cn` ). El nombre de dominio del nombre de usuario se usa para la redirección dns a la instancia de servicio correcta.
 
 #### <a name="configure-dns-encryption---windows"></a>Configurar el cifrado DNS: Windows
 
@@ -158,6 +158,6 @@ Al instalar el escáner y administrar los trabajos de análisis de contenido, us
 | [Remove-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/remove-aipscannercontentscanjob) | Elimina el trabajo de análisis de contenido. |
 | [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/remove-aipscannerrepository) | Quita un repositorio del trabajo de análisis de contenido. |
 | [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) | Define la configuración del trabajo de análisis de contenido. |
-| [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Define la configuración de un repositorio existente en el trabajo de detección de contenido. |
+| [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Define la configuración de un repositorio existente en el trabajo de análisis de contenido. |
 
-Para obtener más información, vea ¿Qué es el escáner de etiquetado unificado de [Azure Information Protection?](/azure/information-protection/deploy-aip-scanner) y Administre los trabajos de análisis de contenido [solo con PowerShell.](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer)
+Para obtener más información, vea ¿Qué es el escáner de etiquetado unificado de [Azure Information Protection?](/azure/information-protection/deploy-aip-scanner) y Administre los trabajos de análisis de contenido solo [con PowerShell.](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer)

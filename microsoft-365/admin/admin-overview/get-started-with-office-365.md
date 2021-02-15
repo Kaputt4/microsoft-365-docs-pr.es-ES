@@ -30,9 +30,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 02/08/2021
 ms.locfileid: "50142078"
 ---
-# <a name="get-started"></a>Comenzar
+# <a name="get-started"></a>Introducción
 
-Your organization recently got Microsoft 365, and now you need to use it so you can start reading email, sharing documents, and more. Obtenga información sobre cómo configurar y usar Microsoft 365 en su equipo, teléfono y tableta.
+Su organización acaba de obtener Microsoft 365 y ahora necesita usarlo para que pueda empezar a leer el correo electrónico, compartir documentos y mucho más. Obtenga información sobre cómo configurar y usar Microsoft 365 en su equipo, teléfono y tableta.
   
 ::: moniker range="o365-worldwide"
 

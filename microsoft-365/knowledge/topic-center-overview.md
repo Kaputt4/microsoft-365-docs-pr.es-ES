@@ -57,11 +57,11 @@ El centro de temas se crea durante la configuración de Temas de Viva. Una vez c
 
 En la página principal del centro de temas, puede ver los temas de su organización a los que tiene una conexión.
 
-- Conexiones sugeridas: verá los temas enumerados **en We've listed you on these topics. ¿Lo hemos hecho bien?** Estos son temas en los que se ha sugerido la conexión con el tema a través de la IA. Por ejemplo, puede ser autor de un archivo o sitio relacionado. Se le pedirá que confirme que debe permanecer en la lista como una persona relacionada con el tema.
+- Conexiones sugeridas: verá los temas enumerados **en We've listed you on these topics. ¿Lo hemos hecho bien?**. Estos son temas en los que se ha sugerido su conexión con el tema a través de AI. Por ejemplo, puede ser un autor de un archivo o sitio relacionado. Se le pedirá que confirme que debe permanecer en la lista como una persona relacionada con el tema.
 
    ![Conexiones sugeridas](../media/knowledge-management/my-topics.png) </br>
  
-- Conexiones confirmadas: estos son temas en los que está anclado en la página del tema o ha confirmado una conexión sugerida al tema. Los temas pasarán de la sección sugerida a confirmada cuando confirme una conexión sugerida.
+- Conexiones confirmadas: se trata de temas en los que está anclado en la página del tema o ha confirmado una conexión sugerida al tema. Los temas pasarán de la sección sugerida a confirmada cuando confirme una conexión sugerida.
  
    ![Temas confirmados](../media/knowledge-management/my-topics-confirmed.png) </br>
 
@@ -70,7 +70,7 @@ Una vez que un usuario confirma su conexión a un tema, el usuario puede realiza
 
 ## <a name="manage-topics-page"></a>Página Administrar temas
 
-Para trabajar en la **sección Administrar** temas del Centro  de temas, debe tener los permisos necesarios administrar temas necesarios para el rol de administrador de conocimientos. El administrador puede asignar estos permisos a los usuarios durante [](topic-experiences-knowledge-rules.md) la configuración de la administración del [conocimiento,](set-up-topic-experiences.md)o un administrador puede agregar nuevos usuarios después a través del Centro de administración de Microsoft 365.
+Para trabajar en la sección **Administrar** temas del Centro  de temas, debe tener los permisos necesarios administrar temas necesarios para el rol de administrador de conocimientos. El administrador puede asignar estos permisos a los usuarios durante la configuración de la administración de [conocimientos](topic-experiences-knowledge-rules.md) [o](set-up-topic-experiences.md)un administrador puede agregar nuevos usuarios a través del Centro de administración de Microsoft 365.
 
 En la página Administrar temas, el panel del tema muestra todos los temas, a los que tiene acceso, que se identificaron desde las ubicaciones de origen especificadas. Cada tema mostrará la fecha en que se descubrió el tema. Un usuario al que se le **asignaron permisos** administrar temas puede revisar los temas no confirmados y elegir:
 - Confirme el tema: resalta el tema para los usuarios que tienen acceso a los archivos y páginas relacionados con el tema y les permite ver la tarjeta de tema asociada y la página del tema.

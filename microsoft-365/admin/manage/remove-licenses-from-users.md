@@ -38,7 +38,7 @@ ms.locfileid: "50114482"
 
 ::: moniker range="o365-worldwide"
 
-Puede desasignación de licencias  de usuarios en la página Usuarios activos o en la **página Licencias.** El método que use dependerá de si desea desasignación de licencias de producto de usuarios específicos o desasignación de licencias de usuarios de un producto específico.
+Puede desasignación de licencias  de usuarios en la página Usuarios activos o en la **página** Licencias. El método que use dependerá de si desea desasignación de licencias de producto de usuarios específicos o desasignación de licencias de usuarios de un producto específico.
 
 ::: moniker-end
 
@@ -84,7 +84,7 @@ Al usar la página **Usuarios activos** para desasignación de licencias, se des
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
 2. Elige el usuario para el que quieres desasignación de la licencia.
 3. A la derecha, en la **fila Licencias de producto,** seleccione **Editar**.
-4. En el **panel Licencias de producto,** cambie el botón de alternancia a la posición Desactivado de la licencia que desea quitar para el usuario.  Por ejemplo, si se apaga la licencia de Office 365 Enterprise E3, se desasigna esa licencia y todos los servicios bajo esa licencia para ese usuario.
+4. En el **panel Licencias de producto,** cambie el botón de alternancia a la posición Desactivado de la licencia que desea quitar para el usuario.  Por ejemplo, si se apaga la licencia de Office 365 Enterprise E3, se desasigna esa licencia y todos los servicios de esa licencia para ese usuario.
 5. En la parte inferior del panel **Licencias de producto**, elija **Guardar** \> **Cerrar** \> **Cerrar**.
 
 ::: moniker-end
@@ -141,7 +141,7 @@ Al usar la página **Usuarios activos** para desasignación de licencias, se des
 - Cuando se quita una licencia de un usuario, los datos asociados con esa cuenta se mantienen durante 30 días. Después del período de gracia de 30 días, los datos se eliminan y no se pueden recuperar.
 - Los archivos guardados en OneDrive para la Empresa no se eliminan a menos que el usuario se elimine del Centro de administración de Microsoft 365 o se quite a través de la sincronización de Active Directory. Para obtener más información, vea [Retención y eliminación de OneDrive.](https://docs.microsoft.com/onedrive/retention-and-deletion)
 - Cuando se quita la licencia, el buzón del usuario ya no se puede buscar mediante una herramienta de exhibición de documentos electrónicos como búsqueda de contenido o eDiscovery avanzado. Para obtener más información, vea "Buscar buzones desconectados o sin licencia" en Búsqueda de contenido [en Microsoft 365.](https://docs.microsoft.com/microsoft-365/compliance/content-search#searching-disconnected-or-de-licensed-mailboxes)
-- Si tiene una suscripción Enterprise, como Office 365 Enterprise E3, Exchange Online le permite conservar los datos del buzón de una cuenta de usuario eliminada mediante buzones [inactivos.](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365) Para obtener más información, vea Crear y administrar buzones [inactivos en Exchange Online.](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes)
+- Si tiene una suscripción Enterprise, como Office 365 Enterprise E3, Exchange Online le permite conservar los datos del buzón de una cuenta de usuario eliminada mediante el uso de buzones [inactivos.](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365) Para obtener más información, vea Crear y administrar buzones [inactivos en Exchange Online.](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes)
 - Para obtener información sobre cómo bloquear el acceso de un usuario a los datos de Microsoft 365 después de quitar su licencia y cómo obtener acceso a los datos después, consulte Quitar [un](../add-users/remove-former-employee.md)antiguo empleado.
 - Si quita la licencia de un usuario y aún tiene aplicaciones de Office instaladas, verán errores de activación y producto sin licencia en [Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) cuando usen aplicaciones de Office.
 

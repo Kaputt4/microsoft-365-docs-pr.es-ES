@@ -42,7 +42,7 @@ Para cambiar el nombre del centro de temas
 
     ![Editar el nombre del centro del tema](../media/manage-topic-center-name.png)  
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Administrar la detección de temas en temas de Microsoft Viva](topic-experiences-discovery.md)
 

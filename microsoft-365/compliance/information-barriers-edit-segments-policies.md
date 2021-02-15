@@ -27,12 +27,12 @@ Una vez [definidas](information-barriers-policies.md)las directivas de barreras 
 
 |**Acción**|**Descripción**|
 |:---------|:--------------|
-| [Editar atributos de cuenta de usuario](#edit-user-account-attributes) | Rellene los atributos de Azure Active Directory que se pueden usar para definir segmentos.<br/>Edite los atributos de cuenta de usuario cuando los usuarios no se incluyan en los segmentos en los que deben estar, para cambiar los segmentos en los que se encuentran los usuarios o para definir segmentos con atributos diferentes. |
+| [Editar atributos de cuenta de usuario](#edit-user-account-attributes) | Rellene los atributos de Azure Active Directory que se pueden usar para definir segmentos.<br/>Edite los atributos de cuenta de usuario cuando los usuarios no se incluyan en los segmentos en los que deben estar, para cambiar los segmentos en los que se encuentran los usuarios o para definir segmentos mediante atributos diferentes. |
 | [Editar un segmento](#edit-a-segment) | Edite los segmentos cuando desee cambiar la forma en que se define un segmento. <br/>Por ejemplo, es posible que haya definido segmentos originalmente con *Department* y ahora quiera usar otro atributo, como *MemberOf*. |
 | [Editar una directiva](#edit-a-policy) | Edite una directiva de barreras de información cuando desee cambiar el funcionamiento de una directiva.<br/>Por ejemplo, en lugar de bloquear las comunicaciones entre dos segmentos, puede decidir que desea permitir que las comunicaciones solo se produzcan entre ciertos segmentos. |
 | [Establecer una directiva en estado inactivo](#set-a-policy-to-inactive-status) |Establece una directiva en estado inactivo cuando quieras realizar cambios en una directiva o cuando no quieras que una directiva esté en vigor. |
 | [Quitar una directiva](#remove-a-policy) | Quite una directiva de barreras de información cuando ya no necesite una directiva concreta. |
-| [Detener una aplicación de directiva](#stop-a-policy-application) | Tome esta acción cuando desee detener el proceso de aplicación de directivas de barreras de información.<br/> La detención de una aplicación de directiva no es instantánea y no deshace las directivas que ya se han aplicado a los usuarios. |
+| [Detener una aplicación de directiva](#stop-a-policy-application) | Tome esta acción cuando desee detener el proceso de aplicación de directivas de barreras de información.<br/> La detención de una aplicación de directiva no es instantánea y no deshace directivas que ya se han aplicado a los usuarios. |
 | [Definir directivas para barreras de información](information-barriers-policies.md) | Defina una directiva de barreras de información cuando aún no tenga dichas directivas en su lugar y debe restringir o limitar las comunicaciones entre grupos de usuarios específicos. |
 | [Solución de problemas de barreras de información](information-barriers-troubleshooting.md) | Consulte este artículo cuando se tope con problemas inesperados con barreras de información. |
 
@@ -68,7 +68,7 @@ Use este procedimiento para editar la definición de un segmento de usuario. Por
     Verá una lista de segmentos y detalles para cada uno, como el tipo de segmento, su valor UserGroupFilter, quién lo creó o modificó por última vez, GUID, y así sucesivamente.
 
     > [!TIP]
-    > Imprimir o guardar la lista de segmentos para su referencia más adelante. Por ejemplo, si desea editar un segmento, necesitará conocer su nombre o su valor de identificación (se usa con el parámetro Identity).
+    > Imprimir o guardar la lista de segmentos para su referencia más adelante. Por ejemplo, si desea editar un segmento, necesitará conocer su nombre o identificar el valor (se usa con el parámetro Identity).
 
 2. Para editar un segmento, use el cmdlet **Set-OrganizationSegment** con el parámetro **Identity** y los detalles relevantes.
 
@@ -88,9 +88,9 @@ Cuando haya terminado de editar segmentos para su organización, puede definir [
 
 2. Use el cmdlet **Set-InformationBarrierPolicy** con un parámetro **Identity** y especifique los cambios que desea realizar.
 
-    Ejemplo: supongamos que se definió una directiva para impedir que el segmento *investigación* se comunique con los segmentos *ventas* *y marketing.* La directiva se definió con este cmdlet: `New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
+    Ejemplo: supongamos que se definió una directiva para impedir que el segmento *investigación* se comunique con los *segmentos* ventas *y marketing.* La directiva se definió con este cmdlet: `New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
 
-    Supongamos que queremos cambiarlo para que los usuarios del segmento *Investigación* solo puedan comunicarse con personas del segmento *de RECURSOS* HUMANOS. Para realizar este cambio, usamos este cmdlet: `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
+    Supongamos que queremos cambiarlo para que los usuarios del segmento *Investigación* solo puedan comunicarse con personas del segmento *de recursos* humanos. Para realizar este cambio, usamos este cmdlet: `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
 
     En este ejemplo, cambiamos "SegmentsBlocked" a "SegmentsAllowed" y especificamos el segmento *hr.*
 
@@ -108,7 +108,7 @@ Cuando haya terminado de editar segmentos para su organización, puede definir [
 
     |**Sintaxis**|**Ejemplo**|
     |:---------|:----------|
-    | `Set-InformationBarrierPolicy -Identity GUID -State Inactive` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <p> En este ejemplo, se establece una directiva de barreras de información con GUID *43c37853-ea10-4b90-a23d-ab8c9377247* en estado inactivo. |
+    | `Set-InformationBarrierPolicy -Identity GUID -State Inactive` | `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive` <p> En este ejemplo, establecemos una directiva de barreras de información que tiene un GUID *43c37853-ea10-4b90-a23d-ab8c9377247* en un estado inactivo. |
 
 3. Para aplicar los cambios, use el cmdlet **Start-InformationBarrierPoliciesApplication.**
 

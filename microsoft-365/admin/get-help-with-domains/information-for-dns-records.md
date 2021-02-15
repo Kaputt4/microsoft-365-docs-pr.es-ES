@@ -58,7 +58,7 @@ ms.locfileid: "50126376"
     
 3. En la **página Comprobar dominio,** seleccione **Agregar un registro TXT** en su lugar y, a continuación, **seleccione Siguiente**.
     
-4. Copia el **valor TXT que se** muestra. Tiene el siguiente aspecto: **MS=msXXXXXXXX**. 
+4. Copia el **valor TXT** que se muestra. Tiene el siguiente aspecto: **MS=msXXXXXXXX**. 
     
 5. Vaya a [Crear registros DNS](create-dns-records-at-any-dns-hosting-provider.md)en cualquier proveedor de host DNS y seleccione su host DNS en la lista de registradores para ver las instrucciones paso a paso.
     
@@ -70,7 +70,7 @@ ms.locfileid: "50126376"
 
 ::: moniker range="o365-worldwide"
 
-1. En el Centro de administración de Microsoft  365, vaya a la página \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Dominios de</a> configuración.
+1. En el Centro de administración de Microsoft 365, vaya a la página **Dominios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">de</a> configuración.
 
 ::: moniker-end
     
@@ -94,6 +94,6 @@ ms.locfileid: "50126376"
     
     Los grupos de registros DNS que aparecen en esta página varían en función de las opciones que se seleccionan en **Finalidad del dominio**.
     
-4. Vaya a Crear registros DNS en cualquier proveedor de host [DNS](create-dns-records-at-any-dns-hosting-provider.md)y, a continuación, seleccione el host DNS de la lista de registradores para ver instrucciones paso a paso para agregar registros en el sitio web del host DNS.
+4. Go to [Create DNS records at any DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md), and then select your DNS host from the list of registrars to see step-by-step instructions for adding records at that DNS host's website.
     
 5. Si el host DNS no tiene un vínculo en la página, puede seguir las instrucciones generales.

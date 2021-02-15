@@ -33,7 +33,7 @@ ms.locfileid: "50114260"
 > [!NOTE]
 > El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
-Puede ver su extracto de facturación o factura para obtener información sobre los cargos de suscripción a Office 365 operado por 21Vianet. También puedes obtener un Fapiao (tu prueba final de compra). Puedes enviar tu solicitud de Fapiao a nuestro sistema de administración de [Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465) unos tres días después de haber pagado. 
+Puede ver el extracto de facturación o la factura para obtener información sobre los cargos de suscripción a Office 365 operado por 21Vianet. También puedes obtener un Fapiao (tu prueba de compra final). Puedes enviar tu solicitud fapiao a nuestro sistema de administración [de Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465) unos tres días después de haber pagado. 
   
 ## <a name="find-your-billing-statement-or-request-a-fapiao"></a>Buscar el extracto de facturación o solicitar un Fapiao
 

@@ -93,11 +93,11 @@ La suscripción ahora aparece en estado **Deshabilitado** y tiene una funcionali
 
 ::: moniker-end
 
-## <a name="what-happens-when-you-cancel-a-subscription"></a>Qué sucede al cancelar una suscripción
+## <a name="what-happens-when-you-cancel-a-subscription"></a>Qué sucede cuando cancela una suscripción
 
 Si cancela una suscripción antes de que finalice el período, el estado de la suscripción pasa directamente a un estado deshabilitado. Para casi todas las suscripciones, en la mayoría de los países y las regiones, el estado de deshabilitada dura 90 días. Los administradores todavía podrán tener acceso y realizar copias de seguridad de los datos de su organización mientras la suscripción está en el estado de deshabilitada, pero se recomienda que los administradores [hagan una copia de seguridad de sus datos](back-up-data-before-switching-plans.md) antes de cancelar una suscripción, especialmente si es su única suscripción. Los administradores también pueden reactivar la suscripción mientras está en estado deshabilitado.
 
-Después de 90 dice, la suscripción pasa al estado eliminado. Los datos que deje atrás pueden eliminarse después de esos 90 días y no más tarde de 180 días después de la cancelación. No puede quitar un método de pago de una suscripción cancelada hasta que llegue al estado eliminado.
+Después de 90 dice, la suscripción pasa al estado eliminado. Los datos que deje atrás pueden eliminarse después de esos 90 días como no más tarde de 180 días después de la cancelación. No puede quitar un método de pago de una suscripción cancelada hasta que llegue al estado eliminado.
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Qué pasará con usted y sus usuarios si cancela una suscripción
   
@@ -112,7 +112,7 @@ Para obtener más información, consulte [¿Qué sucede con mis datos y](what-if
 
 ## <a name="other-steps-you-might-have-to-take"></a>Otros pasos que puede que tenga que realizar
 
-### <a name="change-custom-domain-settings"></a>Cambiar la configuración de dominio personalizado
+### <a name="change-custom-domain-settings"></a>Cambiar la configuración de dominio personalizada
 
 Si usa un dominio personalizado con su suscripción, hay algunos pasos adicionales que debe realizar para poder cancelar la suscripción. Si no tiene un dominio personalizado, puede pasar directamente a [Guardar los datos.](#save-your-data)
 
@@ -146,7 +146,7 @@ Cuando la cancelación se hace efectiva, los usuarios pierden el acceso a sus da
 
 ### <a name="uninstall-office-optional"></a>Desinstalar Office (opcional)
 
-Si canceló la suscripción y no movió [usuarios a](move-users-different-subscription.md) una suscripción diferente que incluya Microsoft 365, Microsoft 365 se ejecuta en modo de funcionalidad reducida. Cuando esto sucede, los usuarios solo pueden leer e imprimir documentos, y las aplicaciones de Microsoft 365 muestran notificaciones de producto [sin licencia.](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) Para evitar confusiones, solicite a los usuarios que [desinstalen Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) de sus equipos.
+Si canceló la suscripción y no movió [usuarios a](move-users-different-subscription.md) una suscripción diferente que incluya Microsoft 365, Microsoft 365 se ejecuta en modo de funcionalidad reducida. Cuando esto sucede, los usuarios solo pueden leer e imprimir documentos y las aplicaciones de Microsoft 365 muestran notificaciones de productos [sin licencia.](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) Para evitar confusiones, solicite a los usuarios que [desinstalen Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) de sus equipos.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -18,7 +18,7 @@ ms.locfileid: "50110056"
 ---
 # <a name="device-requirements"></a>Requisitos del dispositivo
 
-Escritorio administrado de Microsoft evalúa periódicamente los requisitos del dispositivo para incluirse en el servicio. En este artículo se describen los requisitos de hardware y software que un dispositivo debe cumplir para poder trabajar con escritorio administrado de Microsoft. Puedes revisar una lista de dispositivos [específicos ya aprobados](device-list.md) para su uso con el servicio en función de estos requisitos.
+Escritorio administrado de Microsoft evalúa periódicamente los requisitos del dispositivo para incluirse en el servicio. En este artículo se describen los requisitos de hardware y software que debe cumplir un dispositivo para trabajar con escritorio administrado de Microsoft. Puedes revisar una lista de dispositivos [específicos ya aprobados](device-list.md) para su uso con el servicio en función de estos requisitos.
 
 > [!NOTE]
 > Estos requisitos pueden cambiar en cualquier momento, pero proporcionaremos un aviso de 30 días de cualquier cambio en los requisitos de hardware. Los requisitos modificados más recientemente se marcan con **\*** . 
@@ -62,7 +62,7 @@ Los dispositivos deben tener estas capacidades:
 Para obtener más información sobre estas capacidades y las tecnologías relacionadas con ellas que usa el servicio, vea Tecnologías de [Escritorio administrado de Microsoft.](../intro/technologies.md)
 
 > [!NOTE]
-> ARM no se admiten los procesadores.
+> ARM procesadores no son compatibles.
 
 Los dispositivos deben cumplir o superar los siguientes límites de almacenamiento y memoria:
 

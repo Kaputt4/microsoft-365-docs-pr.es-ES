@@ -44,14 +44,14 @@ Puede cambiar los usuarios que pueden ver los temas de su organización.
 
     ![Quién puede ver los temas](../media/k-manage-who-can-see-topics.png) 
 
-3. Haga clic en **Guardar**.  
+3. Seleccione **Guardar**.  
  
 > [!Note] 
 > Aunque esta configuración le permite seleccionar cualquier usuario de su organización, solo los usuarios que tengan asignadas licencias de Experiencias de tema podrán ver los temas.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
-[Administrar la detección de temas en temas de Microsoft Viva](topic-experiences-discovery.md)
+[Administrar la detección de temas en Temas de Microsoft Viva](topic-experiences-discovery.md)
 
 [Administrar permisos de temas en temas de Microsoft Viva](topic-experiences-user-permissions.md)
 

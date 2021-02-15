@@ -48,7 +48,7 @@ La administración de identidades de usuario con la autenticación moderna ofrec
 
 Tenga en cuenta que, como Skype Empresarial trabaja estrechamente con Exchange, el comportamiento de inicio de sesión que verán los usuarios de los clientes de Skype Empresarial se verán afectados por el estado de la autenticación moderna de Exchange. Esto también se aplicará si tiene una arquitectura híbrida de _dominio dividido_ de Skype Empresarial, en la que tiene tanto Skype Empresarial online como Skype Empresarial local, con usuarios alojados en ambas ubicaciones.
 
-Para obtener más información acerca de la autenticación moderna en Office 365, vea Compatibilidad con aplicaciones cliente de [Office 365: autenticación multifactor.](microsoft-365-client-support-multi-factor-authentication.md)
+Para obtener más información acerca de la autenticación moderna en Office 365, vea [Office 365 Client App Support - Multi-factor authentication](microsoft-365-client-support-multi-factor-authentication.md).
 
 > [!IMPORTANT]
 > A partir de agosto de 2017, todos los nuevos espacios empresariales de Office 365 que incluyen Skype Empresarial online y Exchange online tienen la autenticación moderna habilitada de manera predeterminada. Los espacios empresariales preexistentes no tendrán un cambio en el estado de su MA predeterminado, pero todos los nuevos espacios empresariales admiten automáticamente el conjunto ampliado de características de identidad que aparecen anteriormente. Para comprobar el estado de su MA, vea la sección [Comprobar el estado de la autenticación moderna de su entorno local](hybrid-modern-auth-overview.md#BKMK_CheckStatus).

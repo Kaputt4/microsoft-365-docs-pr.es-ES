@@ -40,7 +40,7 @@ ms.locfileid: "50114759"
 ::: moniker range="o365-worldwide"
 
 1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. En la **pestaña Productos,** seleccione la suscripción de prueba que desea ampliar. 
+2. En la **pestaña Productos,** seleccione la suscripción de prueba que desea extender. 
 3. En la página detalles de la suscripción, en la sección Suscripciones y configuración **de pago,** seleccione **Extender fecha de finalización.**
 4. En el **panel Extender fecha de** finalización, revise la información de extensión y, si es necesario, seleccione un método de pago. Cuando haya terminado, seleccione Extender **versión de prueba.**
 
@@ -49,7 +49,7 @@ ms.locfileid: "50114759"
 ::: moniker range="o365-germany"
 
 1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
-2. En la **página Suscripciones,** seleccione la suscripción de prueba que desea ampliar y, a continuación, en la fecha de expiración, **seleccione Extender versión de prueba.**
+2. En la **página Suscripciones,** seleccione la suscripción de prueba que desea ampliar y, a continuación, en la fecha de expiración, seleccione **Extender versión de prueba.**
 3. Complete los pasos del asistente.
 
 ::: moniker-end

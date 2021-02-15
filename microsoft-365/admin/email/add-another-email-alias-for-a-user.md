@@ -65,7 +65,7 @@ Debe tener permisos [de administrador](../add-users/about-admin-roles.md) para h
 3. Seleccione **+ Agregar un alias** y escriba un nuevo alias para el usuario.   
     
     > [!Important] 
-    > Si recibe el mensaje de error "No se puede encontrar un parámetro que coincida con el nombre de parámetro **'EmailAddresses",** significa que está tardando un poco más en finalizar la configuración del espacio empresarial o del dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
+    > Si recibe el mensaje de error "No se puede encontrar un parámetro que coincida con el nombre de parámetro **'EmailAddresses",** significa que está tardando un poco más en terminar de configurar el inquilino o el dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
     
   
     > [!IMPORTANT]
@@ -96,7 +96,7 @@ Debe tener permisos [de administrador](../add-users/about-admin-roles.md) para h
 3. Junto a **Nombre de usuario /Alias de correo** electrónico, seleccione **Editar**.
 
     > [!Important] 
-    > Si recibe el mensaje de error "No se puede encontrar un parámetro que coincida con el nombre de parámetro **'EmailAddresses",** significa que está tardando un poco más en finalizar la configuración del espacio empresarial o del dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
+    > Si recibe el mensaje de error "No se puede encontrar un parámetro que coincida con el nombre de parámetro **'EmailAddresses",** significa que está tardando un poco más en terminar de configurar el inquilino o el dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
 
 4. En el cuadro de texto en **Alias**, escriba la primera parte del nuevo alias de correo electrónico. Si ha agregado su propio dominio a Microsoft 365, puede elegir el dominio para el nuevo alias de correo electrónico mediante la lista desplegable. A continuación, seleccione **Aceptar**.
 
@@ -110,7 +110,7 @@ Debe tener permisos [de administrador](../add-users/about-admin-roles.md) para h
 
 6. Espere 24 horas para que los nuevos alias se rellenen en Microsoft 365. 
     
-    El usuario tendrá ahora una dirección principal y un alias. Por ejemplo, todo el correo enviado a la dirección principal de Eliza Aldán, Eliza@NodPublishers.com y su alias, Sales@NodPublishers.com, irán a la Bandeja de entrada de Eliza.
+    El usuario tendrá ahora una dirección principal y un alias. Por ejemplo, todo el correo enviado a la dirección principal de Eliza Sele, Eliza@NodPublishers.com, y su alias, Sales@NodPublishers.com, irán a la Bandeja de entrada de Eliza.
     
   
 7. **Cuando el usuario responda, la dirección *De*  será su alias de correo electrónico principal.** Por ejemplo, supongamos que se envía un mensaje a Sales@NodPublishers.com y llega a la bandeja de entrada de Eliza. Cuando Naiara responda al mensaje, su dirección de correo electrónico principal se mostrará como el remitente, en lugar de ventas@NodPublishers.com. 
@@ -127,7 +127,7 @@ Debe tener permisos [de administrador](../add-users/about-admin-roles.md) para h
 3. Junto a **Nombre de usuario /Alias de correo** electrónico, seleccione **Editar**.
 
     > [!Important] 
-    > Si recibe el mensaje de error "No se puede encontrar un parámetro que coincida con el nombre de parámetro **'EmailAddresses",** significa que está tardando un poco más en finalizar la configuración del espacio empresarial o del dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
+    > Si recibe el mensaje de error "No se puede encontrar un parámetro que coincida con el nombre de parámetro **'EmailAddresses",** significa que está tardando un poco más en terminar de configurar el inquilino o el dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
 
 4. En el cuadro de texto en **Alias**, escriba la primera parte del nuevo alias de correo electrónico. Si ha agregado su propio dominio a Microsoft 365, puede elegir el dominio para el nuevo alias de correo electrónico mediante la lista desplegable. A continuación, seleccione **Aceptar**.
 
@@ -141,7 +141,7 @@ Debe tener permisos [de administrador](../add-users/about-admin-roles.md) para h
 
 6. Espere 24 horas para que los nuevos alias se rellenen en Microsoft 365. 
     
-    El usuario tendrá ahora una dirección principal y un alias. Por ejemplo, todo el correo enviado a la dirección principal de Eliza Aldán, Eliza@NodPublishers.com y su alias, Sales@NodPublishers.com, irán a la Bandeja de entrada de Eliza.
+    El usuario tendrá ahora una dirección principal y un alias. Por ejemplo, todo el correo enviado a la dirección principal de Eliza Sele, Eliza@NodPublishers.com, y su alias, Sales@NodPublishers.com, irán a la Bandeja de entrada de Eliza.
     
   
 7. **Cuando el usuario responda, la dirección *De*  será su alias de correo electrónico principal.** Por ejemplo, supongamos que se envía un mensaje a Sales@NodPublishers.com y llega a la bandeja de entrada de Eliza. Cuando Naiara responda al mensaje, su dirección de correo electrónico principal se mostrará como el remitente, en lugar de ventas@NodPublishers.com. 

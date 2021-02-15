@@ -35,7 +35,7 @@ Para empezar a usar un dominio personalizado (contoso.com) con Microsoft 365, de
   
 Puede agregar y administrar registros DNS con las herramientas administrativas de su host de dominio o dar a Microsoft el control de sus registros de dominio y los configuraremos por usted.
   
-Seleccione su host de dominio a continuación para los pasos exactos. Si no está seguro de quién es su host, consulte [Buscar su registrador de dominios.](find-your-domain-registrar.md)
+Seleccione su host de dominio a continuación para los pasos exactos. Si no está seguro de quién es su host, consulte [Buscar el registrador de dominios.](find-your-domain-registrar.md)
   
 
 ## <a name="let-microsoft-365-manage-your-dns-records"></a>Permitir que Microsoft 365 administre los registros DNS
@@ -51,7 +51,7 @@ Seleccione su host de dominio a continuación para los pasos exactos. Si no est�
 |[Namecheap](../dns/change-nameservers-at-namecheap.md)|
 |[Network Solutions](../dns/change-nameservers-at-network-solutions.md) |  
 
-O bien, obtenga información sobre [cómo cambiar los servidores dns para configurar Microsoft 365 con cualquier registrador de dominios.](change-nameservers-at-any-domain-registrar.md)
+O bien, obtenga información sobre cómo cambiar los servidores dns [para configurar Microsoft 365 con cualquier registrador de dominios.](change-nameservers-at-any-domain-registrar.md)
 
 ## <a name="manage-your-own-dns-records"></a>Administrar sus propios registros DNS
 

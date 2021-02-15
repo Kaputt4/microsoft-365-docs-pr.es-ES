@@ -45,7 +45,7 @@ Para obtener más información sobre cómo determinar si su organización puede 
 Para obtener más información sobre la administración de complementos después de la implementación, vea Administrar complementos [en el Centro de administración](manage-addins-in-the-admin-center.md)
   
 > [!NOTE]
->  Para Word, Excel y PowerPoint usan un Catálogo de aplicaciones de [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) para implementar complementos para los usuarios en un entorno local sin conexión a Microsoft 365 o se requiere compatibilidad con complementos de SharePoint. Para que Outlook use el panel de control de Exchange para implementar en un entorno local sin conexión a Microsoft 365.
+>  Para Word, Excel y PowerPoint usan un Catálogo de aplicaciones de [SharePoint](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) para implementar complementos para los usuarios en un entorno local sin conexión a Microsoft 365 ni compatibilidad con complementos de SharePoint necesarios. Para que Outlook use el panel de control de Exchange para implementar en un entorno local sin conexión a Microsoft 365.
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>Enfoque recomendado para implementar complementos de Office
 
@@ -74,7 +74,7 @@ Antes de empezar, vea Determinar si la implementación centralizada de complemen
   
 4. Si seleccionó la opción para agregar un complemento desde la Tienda Office, haga la selección del complemento. </br>
 
-    Puede ver los complementos disponibles por categorías: **Sugerido para usted,** **Clasificación** o **Nombre.** Solo los complementos gratuitos están disponibles en la Tienda Office. Los complementos de pago no son compatibles en estos momentos. Después de seleccionar un complemento, acepte los términos y condiciones para continuar. <br/> 
+    Puede ver los complementos disponibles por categorías: Sugerencias para **usted,** **Clasificación** o **Nombre.** Solo los complementos gratuitos están disponibles en la Tienda Office. Los complementos de pago no son compatibles en estos momentos. Después de seleccionar un complemento, acepte los términos y condiciones para continuar. <br/> 
 
     > [!NOTE] 
     > Con la opción Tienda Office, las actualizaciones y mejoras se implementan automáticamente para los usuarios.
@@ -132,11 +132,11 @@ Las actualizaciones de los complementos se producen de la siguiente manera:
 - **Complemento de línea de negocio:** en este caso, en el que un administrador cargó explícitamente un manifiesto, el complemento requiere que el administrador cargue un nuevo archivo de manifiesto para admitir los cambios de metadatos. La próxima vez que se inicien las aplicaciones de Office pertinentes, el complemento se actualizará. La aplicación web puede cambiar en cualquier momento. 
 
     > [!NOTE]
-    > El administrador no necesita quitar un complemento de LOB para realizar una actualización.   En la sección Complementos, el administrador puede simplemente hacer clic en  el complemento de LÍNEA de base de datos y elegir el botón Actualizar en la esquina inferior derecha. La actualización solo funcionará si la versión del nuevo complemento es mayor que la del complemento existente.   
+    > El administrador no necesita quitar un complemento de LOB para realizar una actualización.   En la sección Complementos, el administrador puede simplemente hacer clic en  el complemento de LOB y elegir el botón Actualizar en la esquina inferior derecha. La actualización solo funcionará si la versión del nuevo complemento es mayor que la del complemento existente.   
     
 - **Complemento de la Tienda Office:** si un administrador seleccionó un complemento de la Tienda Office y el complemento se actualiza en la Tienda Office, se actualizará más tarde en Implementación centralizada. La próxima vez que se inicien las aplicaciones de Office pertinentes, el complemento se actualizará. La aplicación web puede cambiar en cualquier momento. 
   
-## <a name="learn-more"></a>Obtén más información
+## <a name="learn-more"></a>Más información
 
 [Administrar complementos en el centro de administración](manage-addins-in-the-admin-center.md)
 
@@ -146,4 +146,4 @@ Las actualizaciones de los complementos se producen de la siguiente manera:
   
 [Usar cmdlets de PowerShell de implementación centralizada para administrar complementos](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
   
-[Solución de problemas: el usuario no ve complementos](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[Solución de problemas: el usuario no ve los complementos](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)

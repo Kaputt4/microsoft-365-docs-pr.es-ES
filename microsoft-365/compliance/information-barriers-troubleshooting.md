@@ -24,7 +24,7 @@ ms.locfileid: "50126567"
 
 [Las barreras de información](information-barriers.md) pueden ayudar a su organización a cumplir con los requisitos legales y las normativas del sector. Por ejemplo, con las barreras de información, puede restringir la comunicación entre grupos específicos de usuarios para evitar un conflicto de intereses u otros problemas. (Para obtener más información sobre cómo configurar barreras de información, vea [Definir directivas para barreras de información).](information-barriers-policies.md)
 
-En caso de que los usuarios se tomen problemas inesperados después de que haya barreras de información, hay algunos pasos que puede seguir para resolver esos problemas. Use este artículo como guía.
+En caso de que los usuarios se tomen problemas inesperados después de que haya barreras de información, hay algunos pasos que puede realizar para resolver esos problemas. Use este artículo como guía.
 
 > [!IMPORTANT]
 > Para realizar las tareas descritas en este artículo, se le debe asignar un rol adecuado, como uno de los siguientes:<br/>- Administrador global de Microsoft 365 Enterprise<br/>- administrador global<br/>- Administrador de cumplimiento<br/>- Administración de cumplimiento de LAC (este es un nuevo rol)<p>Para obtener más información acerca de los requisitos previos para las barreras de información, consulte [Requisitos previos (para directivas de barreras de información).](information-barriers-policies.md#prerequisites)<p>Asegúrese de [conectarse a PowerShell del Centro & seguridad](/powershell/exchange/connect-to-scc-powershell)y cumplimiento.
@@ -39,7 +39,7 @@ En este caso, los usuarios están informando de problemas inesperados de comunic
 
 ### <a name="what-to-do"></a>Qué hacer
 
-Determinar si los usuarios se ven afectados por una directiva de barreras de información. Según cómo se configuren las directivas, es posible que las barreras de información funcionen según lo esperado. O bien, es posible que tenga que refinar las directivas de su organización.
+Determinar si los usuarios se ven afectados por una directiva de barreras de información. En función de cómo se configuren las directivas, es posible que las barreras de información funcionen según lo esperado. O bien, es posible que tenga que refinar las directivas de su organización.
 
 1. Use el **cmdlet Get-InformationBarrierRecipientStatus** con el parámetro Identity. 
 
@@ -49,7 +49,7 @@ Determinar si los usuarios se ven afectados por una directiva de barreras de inf
 
     **Si los usuarios no están incluidos en las directivas de barreras de información, póngase en contacto con el soporte técnico.** De lo contrario, continúe con el paso siguiente.
 
-2. Averigüe qué segmentos se incluyen en una directiva de barreras de información. Para ello, use el `Get-InformationBarrierPolicy` cmdlet con el parámetro Identity. 
+2. Descubra qué segmentos se incluyen en una directiva de barreras de información. Para ello, use el `Get-InformationBarrierPolicy` cmdlet con el parámetro Identity. 
 
     |**Sintaxis**|**Ejemplo**|
     |:---------|:----------|
@@ -104,7 +104,7 @@ Compruebe que los usuarios en cuestión están incluidos en una directiva de bar
     |:----------|:------------------|
     | No se muestran segmentos para los usuarios seleccionados | Realice una de las acciones siguientes:<br/>- Asignar usuarios a un segmento existente editando sus perfiles de usuario en Azure Active Directory. (Vea [Configurar las propiedades de la cuenta de usuario con PowerShell de Office 365).](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- Definir un segmento con un atributo [admitido para barreras de información.](information-barriers-attributes.md) A continuación, [defina una nueva directiva o](information-barriers-policies.md#part-2-define-information-barrier-policies) [edite una directiva existente](information-barriers-edit-segments-policies.md#edit-a-policy) para incluir ese segmento. |
     | Los segmentos se enumeran pero no se asignan directivas de barreras de información a esos segmentos | Realice una de las acciones siguientes:<br/>- [Definir una nueva directiva de barreras de información](information-barriers-policies.md#part-2-define-information-barrier-policies) para cada segmento en cuestión <br/>- [Editar una directiva de barreras de información](information-barriers-edit-segments-policies.md#edit-a-policy) existente para asignarla al segmento correcto |
-    | Los segmentos se enumeran y cada uno se incluye en una directiva de barreras de información | - Ejecute el `Get-InformationBarrierPolicy` cmdlet para comprobar que las directivas de barreras de información están activas<br/>- Ejecutar el `Get-InformationBarrierPoliciesApplicationStatus` cmdlet para confirmar que se aplican las directivas<br/>- Ejecutar el `Start-InformationBarrierPoliciesApplication` cmdlet para aplicar todas las directivas de barreras de información activas |
+    | Los segmentos se enumeran y se incluyen en una directiva de barreras de información | - Ejecute el `Get-InformationBarrierPolicy` cmdlet para comprobar que las directivas de barreras de información están activas<br/>- Ejecutar el `Get-InformationBarrierPoliciesApplicationStatus` cmdlet para confirmar que se aplican las directivas<br/>- Ejecutar el `Start-InformationBarrierPoliciesApplication` cmdlet para aplicar todas las directivas de barreras de información activas |
 
 ## <a name="issue-i-need-to-remove-a-single-user-from-an-information-barrier-policy"></a>Problema: Necesito quitar un solo usuario de una directiva de barreras de información
 
@@ -112,7 +112,7 @@ En este caso, las directivas de barreras de información están en vigor y se bl
 
 ### <a name="what-to-do"></a>Qué hacer
 
-Las directivas de barreras de información se asignan a segmentos de usuarios. Los segmentos se definen mediante el uso de [determinados atributos en los perfiles de cuenta de usuario.](information-barriers-attributes.md) Si debe quitar una directiva de un solo usuario, considere la posibilidad de editar el perfil de ese usuario en Azure Active Directory de modo que el usuario ya no esté incluido en un segmento afectado por barreras de información.
+Las directivas de barreras de información se asignan a segmentos de usuarios. Los segmentos se definen mediante el uso de [determinados atributos en los perfiles de cuenta de usuario.](information-barriers-attributes.md) Si debe quitar una directiva de un solo usuario, considere la posibilidad de editar el perfil de ese usuario en Azure Active Directory de modo que el usuario ya no se incluya en un segmento afectado por barreras de información.
 
 1. Use el **cmdlet Get-InformationBarrierRecipientStatus con** parámetros Identity. Este cmdlet devuelve información sobre los usuarios, como los valores de atributo y las directivas de barreras de información que se aplican.
 
@@ -147,8 +147,8 @@ Tenga en cuenta que al ejecutar el cmdlet de la aplicación de directiva, las di
   
     |**Estado**|**Paso siguiente**|
     |:---------|:------------|
-    | **No iniciado** | Si han pasado más de 45 minutos desde que se ha ejecutado el cmdlet **Start-InformationBarrierPoliciesApplication,** revise el registro de auditoría para ver si hay errores en las definiciones de directiva o algún otro motivo por el que la aplicación no se ha iniciado. |
-    | **Failed** | Si se ha dado un error en la aplicación, revise el registro de auditoría. Revisa también tus segmentos y directivas. ¿Hay usuarios asignados a más de un segmento? ¿Hay segmentos asignados a más de una poliica? Si es necesario, [edite](information-barriers-edit-segments-policies.md#edit-a-segment) segmentos o [directivas](information-barriers-edit-segments-policies.md#edit-a-policy)de edición y, a continuación, ejecute el cmdlet **Start-InformationBarrierPoliciesApplication** de nuevo. |
+    | **No iniciado** | Si han pasado más de 45 minutos desde que se ha ejecutado el cmdlet **Start-InformationBarrierPoliciesApplication,** revise el registro de auditoría para ver si hay errores en las definiciones de directiva o algún otro motivo por el que la aplicación no se haya iniciado. |
+    | **Failed** | Si se ha dado un error en la aplicación, revise el registro de auditoría. Revise también los segmentos y directivas. ¿Hay usuarios asignados a más de un segmento? ¿Hay segmentos asignados a más de una poliica? Si es necesario, [edite segmentos](information-barriers-edit-segments-policies.md#edit-a-segment) o [directivas](information-barriers-edit-segments-policies.md#edit-a-policy)de edición y, a continuación, ejecute el cmdlet **Start-InformationBarrierPoliciesApplication** de nuevo. |
     | **En curso** | Si la aplicación aún está en curso, deje más tiempo para que se complete. Si han pasado varios días, recopila los registros de auditoría y, a continuación, póngase en contacto con el soporte técnico. |
 
 ## <a name="issue-information-barrier-policies-are-not-being-applied-at-all"></a>Problema: las directivas de barreras de información no se aplican en absoluto
@@ -166,9 +166,9 @@ Asegúrese de que su organización no tiene directivas de libreta de direcciones
     |**Resultados**|**Paso siguiente**|
     |:----------|:------------|
     | Se enumeran las directivas de la libreta de direcciones de Exchange | [Quitar directivas de libreta de direcciones](/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
-    | No existen directivas de libreta de direcciones |Revisar los registros de auditoría para averiguar por qué se está fallando la aplicación de directiva |
+    | No existen directivas de libreta de direcciones |Revise los registros de auditoría para averiguar por qué se está fallando la aplicación de directiva |
 
-3. [Ver el estado de cuentas de usuario, segmentos, directivas o aplicación de directiva.](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application)
+3. [Ver el estado de las cuentas de usuario, segmentos, directivas o aplicación de directiva.](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application)
 
 ## <a name="issue-information-barrier-policy-not-applied-to-all-designated-users"></a>Problema: la directiva de barreras de información no se aplica a todos los usuarios designados
 
@@ -187,13 +187,13 @@ Cuando ejecute el cmdlet, busque texto como este en `Get-InformationBarrierPolic
 
 ### <a name="what-to-do"></a>Qué hacer
 
-1. Busque en el registro de auditoría `<application guid>` . Puede copiar este código de PowerShell y modificarlo para las variables.
+1. Busque en el registro de auditoría `<application guid>` . Puede copiar este código de PowerShell y modificar las variables.
 
 ```powershell
 $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
 ```
 
-2. Compruebe los valores de los campos y los resultados detallados del registro `"UserId"` de `"ErrorDetails"` auditoría. Esto le dará la razón del error. Puede copiar este código de PowerShell y modificarlo para las variables.
+2. Compruebe los valores de los campos y los resultados detallados del registro `"UserId"` de `"ErrorDetails"` auditoría. Esto le dará la razón del error. Puede copiar este código de PowerShell y modificar las variables.
 
 ```powershell
    $DetailedLogs[1] |fl

@@ -14,7 +14,7 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - remotework
-description: Proteja el correo electrónico y los datos de su empresa frente a ciberamenazas, como ransomware, phishing y datos adjuntos malintencionados.
+description: Proteja el correo electrónico y los datos de su empresa frente a ciberamenazas, incluidos ransomware, phishing y datos adjuntos malintencionados.
 ms.openlocfilehash: a1850438d02042ba5931a6208b82f74766ae0be8
 ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
@@ -44,15 +44,15 @@ Para los clientes que usan nuestros planes de empresa, Microsoft le recomienda q
 |---|---|---|---|---|
 |1 |[Habilitar Azure AD Multi-Factor Authentication (MFA)](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2 |[Protección contra amenazas](#2-protect-against-threats)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3|[Configurar Microsoft Defender para Office 365](#3-configure-microsoft-defender-for-office-365)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3 |[Configurar Microsoft Defender para Office 365](#3-configure-microsoft-defender-for-office-365)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Configurar Microsoft Defender para la identidad](#4-configure-microsoft-defender-for-identity)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[Activar Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Configurar la protección de aplicaciones móviles de Intune para teléfonos y tabletas](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Configurar MFA y el acceso condicional para invitados, incluida la protección de aplicaciones de Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Inscribir equipos en la administración de dispositivos y requerir equipos compatibles](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[Optimizar la red para la conectividad en la nube](#9-optimize-your-network-for-cloud-connectivity)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10 |[Entrenar a los usuarios](#10-train-users)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|11|[Introducción a Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10  |[Entrenar a los usuarios](#10-train-users)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11 |[Introducción a Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[Supervisar amenazas y tomar medidas](#12-monitor-for-threats-and-take-action)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
@@ -95,7 +95,7 @@ Microsoft Defender para Office 365, incluido con Microsoft 365 E5 y Office 365 E
 Microsoft Defender para Office 365:
 
 - Protege su organización de amenazas de correo electrónico desconocidas en tiempo real mediante sistemas inteligentes que inspeccionan datos adjuntos y vínculos para buscar contenido malintencionado. Estos sistemas automatizados incluyen una plataforma de detonación sólida, heurística y modelos de aprendizaje automático.
-- Protege su organización cuando los usuarios colaboran y comparten archivos, mediante la identificación y el bloqueo de archivos malintencionados en sitios de grupo y bibliotecas de documentos.
+- Protege su organización cuando los usuarios colaboran y comparten archivos, identificando y bloqueando archivos malintencionados en sitios de grupo y bibliotecas de documentos.
 - Aplica modelos de aprendizaje automático y algoritmos avanzados de detección de suplantación para evitar ataques de suplantación de identidad.
 
 Para obtener información general, incluido un resumen de los planes, vea [Defender para Office 365.](office-365-security/office-365-atp.md)
@@ -114,7 +114,7 @@ Deberá trabajar con el administrador de Exchange Online y el administrador de S
 
 [Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) es una solución de seguridad basada en la nube que aprovecha las señales locales de Active Directory para identificar, detectar e investigar las amenazas avanzadas, las identidades vulnerables y las acciones internas malintencionadas dirigidas a su organización. Céntrate en esto a continuación porque protege tu infraestructura local y de nube, no tiene dependencias ni requisitos previos y puede proporcionar ventajas inmediatas.
 
-- Ver [Inicios rápidos](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) de Microsoft Defender para identidades para obtener la configuración rápidamente
+- Ver [Inicios rápidos de Microsoft Defender para identidades](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) para obtener la configuración rápidamente
 - Ver [vídeo: Introducción a Microsoft Defender para la identidad](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
 - Revisar las [tres fases de la implementación de Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
 
@@ -124,7 +124,7 @@ Ahora que ha configurado Microsoft Defender para Office 365 y Microsoft Defender
 
 ![Ilustración del panel de MTP](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
-Después de configurar uno o varios de los servicios de Defender para Office 365, active MTP. Las nuevas características se agregan continuamente a MTP; considere la posibilidad de participar en la recepción de características de vista previa.
+Después de configurar uno o varios de los servicios de Defender para Office 365, active MTP. Las nuevas características se agregan continuamente a MTP; considere la posibilidad de participar para recibir características de vista previa.
 
 - [Más información sobre MTP](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
 - [Activar MTP](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)
@@ -148,14 +148,14 @@ Para configurar la protección de aplicaciones móviles, use las instrucciones d
 
 ## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7: Configurar MFA y el acceso condicional para invitados, incluida la protección de aplicaciones móviles de Intune
 
-A continuación, asegúrese de que puede seguir colaborando y trabajando con invitados. Si está usando el plan de Microsoft 365 E3 e implementó MFA para todos los usuarios, está configurado.
+A continuación, asegúrese de que puede seguir colaborando y trabajando con invitados. Si usa el plan de Microsoft 365 E3 e implementó MFA para todos los usuarios, está configurado.
 
-Si usa el plan de Microsoft 365 E5 y está aprovechando Azure Identity Protection para MFA basado en riesgos, debe realizar un par de ajustes (porque Azure AD Identity Protection no se extiende a los invitados):
+Si usa el plan de Microsoft 365 E5 y está aprovechando Azure Identity Protection para MFA basada en riesgos, debe realizar un par de ajustes (porque Azure AD Identity Protection no se extiende a los invitados):
 
 - Cree una nueva regla de acceso condicional para requerir MFA siempre para invitados y usuarios externos.
 - Actualice la regla de acceso condicional de MFA basada en riesgos para excluir invitados y usuarios externos.
 
-Use las instrucciones [de](./office-365-security/identity-access-policies-guest-access.md) actualización de las directivas comunes para permitir y proteger el acceso de invitado y externo para comprender cómo funciona el acceso de invitado con Azure AD y para actualizar las directivas afectadas.
+Use las instrucciones [de](./office-365-security/identity-access-policies-guest-access.md) actualización de las directivas comunes para permitir y proteger el acceso externo y de invitado para comprender cómo funciona el acceso de invitado con Azure AD y para actualizar las directivas afectadas.
 
 Las directivas de protección de aplicaciones móviles de Intune que creaste, junto con la regla de acceso condicional para requerir aplicaciones aprobadas y protección de aplicaciones, se aplican a las cuentas de invitado y ayudarán a proteger los datos de la organización.
 
@@ -173,7 +173,7 @@ También puede aprovechar estos tutoriales:
 - [Usar Autopilot para inscribir dispositivos Windows en Intune](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
 - [Usar las características de inscripción de dispositivos corporativos de Apple en Apple Business Manager (ABM) para inscribir dispositivos iOS/iPadOS en Intune](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
-Después de inscribir dispositivos, usa las instrucciones de las directivas comunes de [acceso](./office-365-security/identity-access-policies.md) a dispositivos e identidades para crear estas directivas:
+Después de inscribir dispositivos, usa las instrucciones de las [directivas](./office-365-security/identity-access-policies.md) comunes de acceso a dispositivos e identidades para crear estas directivas:
 
 - [Definir directivas de cumplimiento de dispositivos:](./office-365-security/identity-access-policies.md#define-device-compliance-policies) la configuración recomendada para Windows 10 incluye la necesidad de protección antivirus. Si tiene Microsoft 365 E5, use Microsoft Defender para Endpoint para supervisar el estado de los dispositivos de los empleados. Asegúrese de que las directivas de cumplimiento para otros sistemas operativos incluyen protección antivirus y software de protección de punto final.
 - [Requerir equipos compatibles:](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) esta es la regla de acceso condicional de Azure AD que aplica las directivas de cumplimiento de dispositivos.
@@ -182,11 +182,11 @@ Solo una organización puede administrar un dispositivo, así que asegúrese de 
 
 ## <a name="9-optimize-your-network-for-cloud-connectivity"></a>9: Optimizar la red para la conectividad en la nube
 
-Si permites rápidamente que la mayor parte de los empleados trabajen desde casa, este cambio repentino de patrones de conectividad puede tener un impacto significativo en la infraestructura de red corporativa. Muchas redes se escalaron y diseñaron antes de adoptar los servicios en la nube. En muchos casos, las redes son tolerantes a los trabajadores remotos, pero no están diseñadas para que todos los usuarios las utilicen de forma remota al mismo tiempo.
+Si permites rápidamente que la mayor parte de los empleados trabajen desde casa, este cambio repentino de patrones de conectividad puede tener un impacto significativo en la infraestructura de red corporativa. Muchas redes se escalaron y diseñaron antes de que se adoptaran los servicios en la nube. En muchos casos, las redes son tolerantes a los trabajadores remotos, pero no están diseñadas para que todos los usuarios las utilicen de forma remota al mismo tiempo.
 
-Los elementos de red como concentradores de VPN, equipos de salida de red central (como servidores proxy y dispositivos de prevención de pérdida de datos), ancho de banda de Internet central, circuitos MPLS backhaul, capacidad NAT, entre otros, se ponen de pronto bajo una gran presión debido a la carga de toda la empresa que los usa. El resultado final es un rendimiento y productividad deficientes junto con una experiencia de usuario deficiente para los usuarios que se adaptan a trabajar desde casa.
+Los elementos de red como concentradores de VPN, equipos de salida de red central (como servidores proxy y dispositivos de prevención de pérdida de datos), ancho de banda de Internet central, circuitos MPLS backhaul, funcionalidad NAT, entre otros, se ponen de pronto bajo una gran presión debido a la carga de toda la empresa que los usa. El resultado final es un rendimiento y productividad deficientes junto con una experiencia de usuario deficiente para los usuarios que se adaptan a trabajar desde casa.
 
-Algunas de las protecciones que tradicionalmente se han proporcionado al enrutar el tráfico a través de una red corporativa las proporcionan las aplicaciones en la nube a las que acceden los usuarios. Si ha llegado a este paso de este artículo, ha implementado un conjunto de sofisticados controles de seguridad en la nube para los datos y servicios de Microsoft 365. Con estos controles en su lugar, es posible que esté listo para enrutar el tráfico de los usuarios remotos directamente a Office 365. Si aún necesita un vínculo VPN para obtener acceso a otras aplicaciones, puede mejorar en gran medida su rendimiento y experiencia de usuario mediante la implementación de túnel dividido. Una vez que haya alcanzado un acuerdo en su organización, un equipo de red bien coordinado podrá hacerlo en un día.
+Algunas de las protecciones que tradicionalmente se han proporcionado al enrutar el tráfico a través de una red corporativa las proporcionan las aplicaciones en la nube a las que acceden los usuarios. Si ha llegado a este paso de este artículo, ha implementado un conjunto de sofisticados controles de seguridad en la nube para los datos y servicios de Microsoft 365. Con estos controles, es posible que esté listo para enrutar el tráfico de los usuarios remotos directamente a Office 365. Si aún necesita un vínculo VPN para obtener acceso a otras aplicaciones, puede mejorar en gran medida su rendimiento y experiencia de usuario mediante la implementación de túnel dividido. Una vez que haya alcanzado un acuerdo en su organización, un equipo de red bien coordinado podrá hacerlo en un día.
 
 Vea estos recursos en Documentos para obtener más información:
 
@@ -195,7 +195,7 @@ Vea estos recursos en Documentos para obtener más información:
 
 Artículos de blog recientes sobre este tema:
 
-- [Cómo optimizar rápidamente el tráfico para el personal remoto & reducir la carga en la infraestructura](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
+- [Cómo optimizar rápidamente el tráfico para el personal remoto & reducir la carga de la infraestructura](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
 - [Formas alternativas para que los profesionales de seguridad y ti logren controles de seguridad modernos en los escenarios de trabajo remoto únicos actuales](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
 ## <a name="10-train-users"></a>10: Entrenar a los usuarios
@@ -211,7 +211,7 @@ Microsoft 365 proporciona los siguientes recursos para ayudar a informar a los u
 |Concepto|Recursos|
 |---|---|
 |Microsoft 365|[Caminos de aprendizaje personalizables](https://docs.microsoft.com/office365/customlearning/) <p>Estos recursos pueden ayudarle a reunir formación para los usuarios finales de su organización|
-|Centro de seguridad de Microsoft 365|[Módulo de aprendizaje: proteger su organización con seguridad inteligente integrada de Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Este módulo le permite describir cómo funcionan conjuntamente las características de seguridad de Microsoft 365 y para articular las ventajas de estas características de seguridad.|
+|Seguridad de Microsoft 365|[Módulo de aprendizaje: proteger su organización con seguridad inteligente integrada de Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Este módulo le permite describir cómo funcionan conjuntamente las características de seguridad de Microsoft 365 y para articular las ventajas de estas características de seguridad.|
 |Autenticación multifactor|[Comprobación en dos pasos: ¿Cuál es la página de verificación adicional?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Este artículo ayuda a los usuarios finales a comprender qué es la autenticación multifactor y por qué se usa en su organización.|
 |
 

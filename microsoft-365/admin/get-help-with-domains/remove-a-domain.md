@@ -120,7 +120,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 3. Seleccione **Establecer como guardar** cerrar >  > **principal.**
   
-4. En la parte superior, seleccione el nombre de la cuenta y, a continuación, seleccione **Cerrar sesión.**
+4. En la parte superior, seleccione el nombre de la cuenta y, a continuación, **seleccione Cerrar sesión.**
 
 5. Inicie sesión con el nuevo dominio y la misma contraseña.
 
@@ -136,7 +136,7 @@ También puede usar PowerShell para mover los usuarios a otro dominio. Vea [Set-
 
 3. Seleccione **Establecer como guardar** cerrar >  > **principal.**
   
-4. En la parte superior, seleccione el nombre de la cuenta y, a continuación, seleccione **Cerrar sesión.**
+4. En la parte superior, seleccione el nombre de la cuenta y, a continuación, **seleccione Cerrar sesión.**
 
 5. Inicie sesión con el nuevo dominio y la misma contraseña.
 
@@ -219,7 +219,7 @@ Si tiene cientos o miles de usuarios, use PowerShell para consultar todos los us
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> No puede quitar el dominio [". onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) de su cuenta. Al quitar un dominio, las cuentas de usuario volverán a la dirección ".onmicrosoft.com" como el SMTP principal/UserprincipalName.
+> No puede quitar el dominio [". onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) de su cuenta. Cuando quita un dominio, las cuentas de usuario volverán a la dirección ".onmicrosoft.com" como el SMTP principal/UserprincipalName.
   
 ¿Todavía no funciona? Puede que su dominio necesite quitarse manualmente. [Llámenos](../contact-support-for-business-products.md) y le ayudaremos.
   

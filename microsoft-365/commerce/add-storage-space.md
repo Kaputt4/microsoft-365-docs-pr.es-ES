@@ -113,7 +113,7 @@ Si aún no ha comprado almacenamiento adicional para su suscripción, puede hace
 4. En la página Almacenamiento adicional de archivos de **Office 365,** si se muestra, elija la suscripción base y, a continuación, escriba el número de gigabytes de almacenamiento que desea agregar.
 5. Seleccione **Des check out now**.
 6. On the **How does this look?** page, verify the number of gigabytes of storage you selected, review the pricing information, and then select **Next**.
-7. En la **página Completar pedido,** compruebe el total. Si necesita realizar cambios, seleccione **Editar orden.** Si el pedido requiere una comprobación de crédito, active la casilla. Cuando haya terminado, seleccione Realizar **pedido** \> **Ir a la página principal de administración.**
+7. En la **página Completar pedido,** compruebe el total. Si necesita realizar cambios, seleccione **Editar orden.** Si el pedido requiere una comprobación de crédito, active la casilla. Cuando haya terminado, seleccione **Realizar pedido** Ir a la página principal \> **de administración.**
 
 ::: moniker-end
 
@@ -121,7 +121,7 @@ Si aún no ha comprado almacenamiento adicional para su suscripción, puede hace
 
 1. En el centro de administración, vaya a la página **Suscripciones** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">de facturación.</a>  
 
-2. En la **página Suscripciones,** elija la suscripción a la que desea agregar espacio de almacenamiento y, a continuación, **seleccione Complementos.**
+2. En la **página** Suscripciones, elija la suscripción a la que desea agregar espacio de almacenamiento y, a continuación, **seleccione Complementos.**
 
     ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
@@ -146,7 +146,7 @@ Si aún no ha comprado almacenamiento adicional para su suscripción, puede hace
 
 1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
-2. En la **página Suscripciones,** elija la suscripción a la que desea agregar espacio de almacenamiento y, a continuación, **seleccione Complementos.**
+2. En la **página** Suscripciones, elija la suscripción a la que desea agregar espacio de almacenamiento y, a continuación, **seleccione Complementos.**
 
     ![Add-ons button used to purchase add-ons.](../media/b4d2beb4-4f6d-435a-b127-01ceebd6eebf.png)
   
@@ -175,10 +175,10 @@ Si ya ha adquirido almacenamiento adicional de archivos a través del complement
 
 1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la **pestaña** Productos, seleccione la suscripción que contiene el complemento De almacenamiento de archivos adicional de **Office 365.**
-3. En la página de detalles del producto, en la sección **Complementos,** seleccione Administrar **complementos.**
-4. En el **panel Administrar complementos,** en la lista De **complementos,** elija Almacenamiento de archivos adicional de **Office 365.**
+3. En la página detalles del producto, en la sección **Complementos,** seleccione Administrar **complementos.**
+4. En el **panel Administrar complementos,** en la lista De **complementos,** elija Almacenamiento de **archivos adicional de Office 365.**
 5. En el **cuadro de texto** Cantidad, escriba el número de GBs de espacio de almacenamiento que desea para la suscripción.
-6. Haga clic en **Guardar**.
+6. Seleccione **Guardar**.
 
 ::: moniker-end
 

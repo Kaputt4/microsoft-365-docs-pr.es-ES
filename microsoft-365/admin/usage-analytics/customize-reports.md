@@ -68,7 +68,7 @@ En este ejemplo se muestra cómo modificar la pestaña **Activación** en el **i
 
 En el ejemplo siguiente se muestra cómo crear un objeto visual para realizar un seguimiento de nuevos usuarios de Yammer de forma mensual.
   
-1. Vaya al informe **de uso del** producto con el panel de navegación izquierdo y seleccione la pestaña **Yammer.**
+1. Vaya al informe **de uso del** producto en el panel de navegación izquierdo y seleccione la pestaña **Yammer.**
     
 2. Cambie al modo de edición eligiendo El botón Más ![ página en Power BI y ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) **Editar**. 
     

@@ -26,8 +26,8 @@ Antes de empezar con la adopción, debe comprender los conceptos relacionados co
 ![Arquitectura de Temas Viva](../media/knowledge-management/topic-management-architecture.png)
 
 - **Detección:** los usuarios pueden descubrir conocimientos en las aplicaciones que usan a diario a través de tarjetas de tema; también pueden descubrir temas en Microsoft Search.
-- **Curación:** los expertos en la materia (MIM) refinan los temas a través de las páginas de temas y la inteligencia artificial aprende de sus aportaciones. El Centro de temas contiene páginas de temas que los usuarios pueden explorar y que los expertos pueden administrar.
-- **Identificación:** con los conocimientos de Microsoft Graph y la Inteligencia Artificial (AI) y las personas (temas, habilidades, entre otros) se identifican y organizan automáticamente en temas relacionados. El contenido de SharePoint se indiza con contenido de seguridad.
+- **Curación:** los expertos en la materia (MI) refinan los temas a través de las páginas de temas y la inteligencia artificial aprende de sus aportaciones. El Centro de temas contiene páginas de temas que los usuarios pueden explorar y que los expertos pueden administrar.
+- **Identificación:** con microsoft Graph y los conocimientos de inteligencia artificial (AI) y las personas (temas, aptitudes, entre otros) se identifican y organizan automáticamente en temas relacionados. El contenido de SharePoint se indiza con contenido de seguridad.
 - **Extensión:** con los conectores de contenido de Microsoft Graph (próximamente), puede ingerir conocimientos de repositorios de datos y servicios externos.
 
 Para obtener más información, puede revisar la [introducción](topic-experiences-overview.md) para obtener una introducción.
@@ -43,12 +43,12 @@ Para ayudarle a prepararse, piense en estas preguntas:
 
 - ¿Qué contenido se debe usar para la detección de temas?
 - ¿Quién administrará los temas?
-- ¿Quién verá las tarjetas de temas y los aspectos destacados?
+- ¿Quién verá las tarjetas de temas y los puntos destacados?
 - ¿Qué temas se esperan?
 
 Revise esta lista de requisitos previos para sacar el máximo partido a los temas de Viva:
 
-|Producto o característica |Descripción |
+|Producto o característica |Description |
 |:-------|:--------|
 |SharePoint Online con páginas modernas de SharePoint |La minería de temas solo incluye contenido en sitios de SharePoint y las tarjetas de tema solo se pueden ver en páginas modernas.|
 |Microsoft Graph |Puede controlar si los temas se incluyen o excluyen de Search o Delve con la configuración de Microsoft Graph. |
@@ -74,7 +74,7 @@ Para planear la adopción de Temas Viva, debe:
     - Próximamente, vídeos de aprendizaje y ayuda para los usuarios finales.
 
 4. [Crear una red de campeones:](#build-a-champion-network)
-    - Es posible que ya tenga comunidades de prácticas o redes de campeones. Estas son excelentes formas de socializar y evangelis y hacer que los compañeros participen en la ayuda mutua. Además, pueden compartir historias de éxito que pueden ser realmente valiosas. Pueden ofrecer consejos y generar entusiasmo.
+    - Es posible que ya tenga comunidades de prácticas o redes de campeones. Estas son excelentes formas de socializar y evangelis, y hacer que los compañeros participen en la ayuda entre sí. Además, pueden compartir casos de éxito que pueden ser muy valiosos. Pueden ofrecer consejos y generar entusiasmo.
 
 ### <a name="target-scenarios"></a>Escenarios de destino
 
@@ -94,7 +94,7 @@ Por ejemplo, este es un escenario para la incorporación de roles:
 
 Después de identificar los escenarios, puede priorizar los escenarios:
 
-Una forma de priorizarlos es trazando los escenarios en una cuadrícula que muestra el impacto frente a la facilidad de implementación. Busque escenarios que tengan un alto impacto y sean fáciles de implementar y que sean su prioridad principal. Los escenarios de bajo impacto e difíciles de implementar son la prioridad más baja. Cuando tiene una ganar rápida con un escenario de alto impacto y fácil de implementar, ayuda a los usuarios a emocionar y ver las posibilidades de usar temas.
+Una forma de priorizarlos es trazando los escenarios en una cuadrícula que muestra el impacto frente a la facilidad de implementación. Busque escenarios que tengan un alto impacto y que sean fáciles de implementar y que sean su prioridad principal. Los escenarios de bajo impacto e difíciles de implementar son la prioridad más baja. Cuando tiene una ganar rápida con un escenario de alto impacto y fácil de implementar, ayuda a los usuarios a emocionar y ver las posibilidades de usar temas.
 
 ![Los escenarios de alto impacto y fáciles de implementar son de alta prioridad](../media/knowledge-management/topics-prioritize-scenarios.png)
 
@@ -104,7 +104,7 @@ Elige un par de escenarios clave en los que centrarte inicialmente, trabajar con
 
 Identifique las partes interesadas de su proyecto. Los roles clave son el patrocinador ejecutivo, el propietario del éxito y los campeones.
 
-|Role |Responsibilities |Department |
+|Función |Responsibilities |Department |
 |:-------|:-------|:--------|
 | Patrocinadores ejecutivos   | Comunicar valores y visión de alto nivel a la empresa   |  Liderazgo ejecutivo   |
 | Clientes potenciales del proyecto | Supervisar todo el proceso de lanzamiento y ejecución de inicio | Administración de proyectos |

@@ -32,7 +32,7 @@ En este artículo se describe cómo implementar las directivas recomendadas de a
 
 Estas recomendaciones se basan en tres niveles diferentes de seguridad y protección para Teams que se pueden aplicar en función de la granularidad de sus necesidades: línea base, confidencial y altamente regulado. Puede obtener más información sobre estos niveles de seguridad y las directivas recomendadas a las que hacen referencia estas recomendaciones en las configuraciones de acceso a dispositivos e [identidades.](microsoft-365-policies-configurations.md)
 
-En este artículo se incluyen más recomendaciones específicas para la implementación de Teams para cubrir circunstancias de autenticación específicas, incluidos los usuarios externos a la organización. Deberá seguir estas instrucciones para obtener una experiencia de seguridad completa.
+En este artículo se incluyen más recomendaciones específicas para la implementación de Teams con el fin de cubrir circunstancias de autenticación específicas, incluidos los usuarios externos a la organización. Deberá seguir estas instrucciones para obtener una experiencia de seguridad completa.
 
 ## <a name="getting-started-with-teams-before-other-dependent-services"></a>Introducción a Teams antes que otros servicios dependientes
 
@@ -90,7 +90,7 @@ Microsoft Teams define los siguientes tipos de acceso:
 
 - **El** acceso de invitado usa una cuenta B2B de Azure AD para un usuario invitado o externo que se puede agregar como miembro de un equipo y tener acceso con permiso a la comunicación y los recursos del equipo.
 
-- **El acceso** externo es para un usuario externo que no tiene una cuenta de Azure AD B2B. El acceso externo puede incluir invitaciones y participación en llamadas, chats y reuniones, pero no incluye la pertenencia al equipo ni el acceso a los recursos del equipo.
+- **El acceso** externo es para un usuario externo que no tiene una cuenta B2B de Azure AD. El acceso externo puede incluir invitaciones y participación en llamadas, chats y reuniones, pero no incluye la pertenencia al equipo ni el acceso a los recursos del equipo.
 
 Las directivas de acceso condicional solo se aplican al acceso de invitado en Teams porque hay una cuenta B2B de Azure AD correspondiente.
 
@@ -105,7 +105,7 @@ Para ver las directivas recomendadas para permitir el acceso a usuarios invitado
 
 Además de las directivas para los usuarios internos de su empresa u organización, los administradores pueden habilitar el acceso de invitado para permitir, de forma individual, que las personas externas a su empresa u organización accedan a los recursos de Teams e interactúen con personas internas para cosas como conversaciones de grupo, chat y reuniones.
 
-Para obtener más información sobre el acceso de invitados y cómo implementarlo, consulte [Acceso de invitados de Teams.](https://docs.microsoft.com/microsoftteams/guest-access)
+Para obtener más información sobre el acceso de invitados y cómo implementarlo, vea [Acceso de invitados de Teams.](https://docs.microsoft.com/microsoftteams/guest-access)
 
 ### <a name="external-access-in-teams"></a>Acceso externo en Teams
 
@@ -133,7 +133,7 @@ La mensajería o el chat también se pueden administrar a través de la directiv
 
 ### <a name="meeting-policies"></a>Directivas de reunión
 
-No se completaría ninguna discusión sobre Teams sin planear e implementar directivas en torno a las reuniones de Teams. Las reuniones son un componente esencial de Teams, lo que permite a los usuarios reunirse formalmente y presentarse a muchos usuarios a la vez, así como compartir contenido relevante para la reunión. Es esencial establecer las directivas adecuadas para su organización en torno a las reuniones.
+No se completaría ninguna discusión sobre Teams sin planear e implementar directivas en torno a las reuniones de Teams. Las reuniones son un componente esencial de Teams, lo que permite a los usuarios reunirse formalmente y presentar a muchos usuarios a la vez, así como compartir contenido relevante para la reunión. Es esencial establecer las directivas adecuadas para su organización en torno a las reuniones.
 
 Para obtener más información, consulte [Administrar directivas de reunión en Teams.](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams)
 
@@ -147,7 +147,7 @@ Para obtener más información sobre las directivas de permisos de aplicación, 
 
 ![Paso 4: Directivas para aplicaciones en la nube de Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
-Configurar directivas de acceso condicional para:
+Configure las directivas de acceso condicional para:
 
 - [Exchange Online](secure-email-recommended-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)

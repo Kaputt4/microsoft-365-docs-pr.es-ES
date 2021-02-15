@@ -29,9 +29,9 @@ La puerta de enlace al servicio de escritorio administrado de Microsoft es [Micr
 > - Chrome (versión más reciente)
 > - Firefox (versión más reciente)
 
-Tu cuenta administrativa necesitará permisos específicos para acceder a las características administrativas de Escritorio administrado de Microsoft en Microsoft Endpoint Manager. Puede administrar el acceso de administrador a estas características dentro de la organización mediante el control de acceso basado en roles. Hay disponibles varios roles de administrador de Azure Active Directory (Azure AD) y roles integrados de Escritorio administrado de Microsoft para proporcionar un control más detallado a las distintas características del portal de administración de escritorio administrado de Microsoft. Para obtener más información acerca de los roles de Azure Active Directory, vea Permisos de [roles de administrador en Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) A diferencia de los roles de administrador de Azure AD que se aplican a diversos productos y servicios de Microsoft, los roles integrados son específicos del Escritorio administrado de Microsoft y solo garantizarán el acceso a las características de administración de este servicio. Los administradores pueden asignar roles integrados a los usuarios individualmente o en combinación con los roles de administrador de Azure AD para agregar permisos de Escritorio administrado de Microsoft a las cuentas de administrador existentes.
+Tu cuenta administrativa necesitará permisos específicos para acceder a las características administrativas de Escritorio administrado de Microsoft en Microsoft Endpoint Manager. Puede administrar el acceso de administrador a estas características dentro de la organización mediante el control de acceso basado en roles. Hay disponibles varios roles de administrador de Azure Active Directory (Azure AD) y roles integrados de Escritorio administrado de Microsoft para proporcionar un control más detallado a las distintas características del portal de administración de escritorio administrado de Microsoft. Para obtener más información acerca de los roles de Azure Active Directory, consulte Permisos de [roles de administrador en Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) A diferencia de los roles de administrador de Azure AD que se aplican a diversos productos y servicios de Microsoft, los roles integrados son específicos del Escritorio administrado de Microsoft y solo garantizarán el acceso a las características de administración de este servicio. Los administradores pueden asignar roles integrados a los usuarios individualmente o en combinación con los roles de administrador de Azure AD para agregar permisos de Escritorio administrado de Microsoft a las cuentas de administrador existentes.
 
-## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>Roles de Azure Active Directory con acceso a Escritorio administrado de Microsoft
+## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>Roles de Azure Active Directory con acceso al Escritorio administrado de Microsoft
 
 |Rol de Azure AD  |Permisos de Escritorio administrado de Microsoft  |
 |---------|---------|
@@ -52,8 +52,8 @@ Si necesita ayuda para asignar roles de Azure Active Directory, consulte Permiso
 
 |Rol integrado  |Permisos de Escritorio administrado de Microsoft  |
 |---------|---------|
-|Administrador del servicio de escritorio administrado de Microsoft  | Cuando se asigna a un usuario, este rol concede al administrador permisos de lectura y escritura para las características que no están relacionadas con la seguridad en el portal de administración de escritorio administrado de Microsoft.   |
-|Lector de servicio de escritorio administrado de Microsoft | Cuando se asigna a un usuario, este rol concede al administrador permisos de solo lectura para características no relacionadas con la seguridad en el portal de administración de escritorio administrado de Microsoft.  |
+|Administrador del servicio de escritorio administrado de Microsoft  | Cuando se asigna a un usuario, este rol concede al administrador permisos de lectura y escritura para las características que no están relacionadas con la seguridad en el portal de administración de Escritorio administrado de Microsoft.   |
+|Lector de servicio de escritorio administrado de Microsoft | Cuando se asigna a un usuario, este rol concede al administrador permisos de solo lectura para las características que no están relacionadas con la seguridad en el portal de administración de escritorio administrado de Microsoft.  |
 |Administrador de seguridad de escritorio administrado de Microsoft |Cuando se asigna a un usuario, este rol concede a ese administrador permisos de lectura y escritura solo para las características relacionadas con la seguridad en el portal de administración de Escritorio administrado de Microsoft.    |
 
 > [!NOTE]
@@ -61,7 +61,7 @@ Si necesita ayuda para asignar roles de Azure Active Directory, consulte Permiso
 
 ### <a name="assigning-built-in-roles-to-user"></a>Asignación de roles integrados al usuario
 
-Para facilitar la administración de roles integrados, hay un grupo de seguridad para cada rol personalizado con el nombre "Roles de área de trabajo _modernos_- Nombre de rol" (por ejemplo, "Roles de área de trabajo modernos – Administrador de seguridad"). Para asignar usuarios a uno de estos grupos de seguridad, siga estos pasos:
+Para facilitar la administración de roles integrados, hay un grupo de seguridad para cada rol personalizado con el nombre "Roles de área de trabajo _modernos_- Nombre de rol" (por ejemplo, "Roles de área de trabajo modernos– Administrador de seguridad"). Para asignar usuarios a uno de estos grupos de seguridad, siga estos pasos:
 1.  Ve al portal de Microsoft Endpoint Manager.
 2.  Seleccione **Grupos** en el lado izquierdo.
 3.  Busque roles **de área de** trabajo modernas y, a continuación, seleccione el grupo asociado con el rol que desea asignar. 
@@ -80,7 +80,7 @@ Si necesita asignar uno o varios de los roles integrados a un grupo existente, s
 3. Cambie el **filtro de tipo de** aplicación a Aplicaciones de _Microsoft_ y, a continuación, **seleccione Aplicar**.
 4. Busque y seleccione las API _de clientes de Modern Workplace._
 5. Seleccione **Usuarios y grupos en** el panel de la izquierda y, a continuación, seleccione + Agregar usuario o **grupo.**
-6. Busque el grupo que desee de **Usuarios y grupos.**
+6. Busque el grupo que desee en **Usuarios y grupos.**
 7. Busque el rol aplicable en **Seleccionar un rol** y, a continuación, selecciónelo.
 8. Seleccione **Asignar**.
  

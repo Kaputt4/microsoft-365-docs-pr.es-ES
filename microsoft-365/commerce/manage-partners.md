@@ -45,7 +45,7 @@ Debe ser administrador global o de facturación para realizar estos pasos. Para 
 
 Hay varias formas de que un partner pueda trabajar contigo. En función de las necesidades empresariales indicadas, eligen uno de estos tipos cuando envían su solicitud para trabajar con usted.
 
-| Tipo de socio | Descripción |
+| Tipo de socio | Description |
 | ------ | ------------------- |
 | Revendedor | Partners que venden productos de Microsoft a su organización o escuela. |
 | Administrador delegado | Partners que administran productos y servicios para su organización o escuela. En Azure Active Directory (AD), el partner es un administrador global de su espacio empresarial. Este rol les permite administrar servicios como la creación de cuentas de usuario, la asignación y administración de licencias y el restablecimiento de contraseñas. |
@@ -86,13 +86,13 @@ Si ya tienes un partner pero aún no has firmado un Contrato de cliente de Micro
 
 ## <a name="remove-partner-admin-roles"></a>Quitar roles de administrador de partners
 
-Según la solicitud realizada por el partner, cuando acepte la invitación, acepta darles roles de administrador global y del departamento de soporte técnico. Cuando se conceden estos roles de administrador a un partner, se les conceden automáticamente privilegios de administrador delegado en Azure AD. Para obtener más información, consulte [Privilegios de administrador delegado en Azure AD.](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)
+Según la solicitud realizada por el partner, cuando acepte la invitación, acepta darles roles de administrador global y del departamento de soporte técnico. Cuando se conceden estos roles de administrador a un partner, se les conceden automáticamente privilegios de administrador delegado en Azure AD. Para obtener más información, vea [Privilegios de administrador delegado en Azure AD.](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)
 
 Si no quieres dar los roles de administrador al partner, cancela la invitación en lugar de aceptarla.
 
 Puedes quitar roles de administrador de un partner en cualquier momento. Quitar los roles de administrador no quita la relación de partner. Aún pueden trabajar contigo en una capacidad diferente, como un revendedor. Si decides que ya no quieres trabajar con un partner, ponte en contacto con él para finalizar la relación.
 
-1. En el centro de administración, ve a la página **Relaciones**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">de partners de facturación.</a>
+1. En el centro de administración, ve a la página **Relaciones de**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">partners de</a> facturación.
 2. En la **página Relaciones de partners,** seleccione la fila que contiene el nombre del asociado que desea quitar.
 3. Seleccione la fila que contiene el nombre del asociado.
 4. En la página de asociados, seleccione **Quitar roles.**

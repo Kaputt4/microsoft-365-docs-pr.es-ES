@@ -42,4 +42,4 @@ Al comprar una suscripción, elige la facturación mensual o anual. Para cambiar
 1. En el centro de  administración, vaya a la página \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Facturación de sus productos.</a>
 2. En la pestaña **Productos**, seleccione la suscripción que desee cambiar.
 3. En la página de detalles de la suscripción, en la sección Configuración de **suscripción y pago,** seleccione **Editar frecuencia de facturación.**
-4. En el **panel Editar frecuencia de** facturación, elija la opción de la frecuencia con la que desea que se le facture y, a continuación, seleccione **Cambiar.**
+4. En el **panel Editar frecuencia de** facturación, elija la opción de la frecuencia con la que desea que se le facture y, a continuación, seleccione **Cambiar**.

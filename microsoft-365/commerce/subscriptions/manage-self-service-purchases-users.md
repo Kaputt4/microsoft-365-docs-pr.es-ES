@@ -31,7 +31,7 @@ ms.locfileid: "50114686"
 
 ::: moniker-end
 
-Como usuario, puede comprar suscripciones a determinados productos y asignar licencias para esas suscripciones a personas de su equipo. Eres responsable de pagar las compras de autoservicio que realices. Puede administrar sus suscripciones en el Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com.</a>
+Como usuario, puede comprar suscripciones a determinados productos y asignar licencias para esas suscripciones a las personas de su equipo. Eres responsable de pagar las compras de autoservicio que realices. Puede administrar sus suscripciones en el Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com.</a>
 
 El administrador tiene una vista de solo lectura de las suscripciones que compre. Pueden ver el producto, el nombre del comprador, las suscripciones adquiridas, la fecha de expiración, el precio de compra y los usuarios asignados para cada suscripción que compres.
 
@@ -40,12 +40,12 @@ El administrador tiene una vista de solo lectura de las suscripciones que compre
 Puedes ver una lista de todas las suscripciones compradas por autoservicio que compraste.
 
 1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
+2. En la **pestaña** Productos, seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>Cómo comprar más o reducir licencias
 
 1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. En la **pestaña** Productos, seleccione la suscripción para la que quiere comprar más o reduzca las licencias.
+2. En la **pestaña** Productos, seleccione la suscripción para la que desea comprar más o reducir las licencias.
 3. Elija **Comprar licencias o** Quitar **licencias.**
 4. En el panel derecho, en el cuadro **Total** de licencias, escriba el número total de licencias que desea para esta suscripción y, a continuación, **elija Guardar**. Por ejemplo, si tiene 100 licencias y desea agregar 5 más, escriba 105.
 
@@ -73,8 +73,8 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 
 1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la pestaña **Productos**, busque la suscripción que quiere cancelar. Seleccione **Más acciones** (tres puntos) y luego seleccione **Cancelar suscripción**.
-3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Si lo desea, proporcione los comentarios que tenga.
-4. Haga clic en **Guardar**.
+3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione los comentarios que tenga.
+4. Seleccione **Guardar**.
 
 ## <a name="manage-your-payment-details"></a>Administrar los detalles de pago
 

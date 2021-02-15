@@ -66,7 +66,7 @@ Le recomendamos que compre las licencias que necesita para su suscripción antes
 
 ## <a name="how-do-i-resolve-license-conflicts"></a>¿Cómo puedo resolver los conflictos de licencia?
 
-Puede resolver conflictos de licencias comprando [más](../../commerce/licenses/buy-licenses.md) licencias o quitando licencias de los usuarios [que ya no las necesitan.](remove-licenses-from-users.md) De manera opcional, puede [eliminar una cuenta de usuario para liberar una licencia](../add-users/delete-a-user.md).
+Puede resolver los conflictos de licencias comprando [más](../../commerce/licenses/buy-licenses.md) licencias o quitando licencias de los usuarios [que ya no las necesitan.](remove-licenses-from-users.md) De manera opcional, puede [eliminar una cuenta de usuario para liberar una licencia](../add-users/delete-a-user.md).
   
 ## <a name="related-articles"></a>Artículos relacionados
 

@@ -35,12 +35,12 @@ Los recursos de esta página están diseñados para empezar a aprender y usar te
 
 ## <a name="get-started"></a>Introducción
 
-Los recursos de esta sección le ayudarán a obtener más información sobre los temas De Viva y cómo puede ayudarle.
+Los recursos de esta sección le ayudarán a obtener más información sobre los temas de Viva y cómo puede ayudarle.
 
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|
-|Más información sobre Los temas de Viva|[Introducción a Los temas de Microsoft Viva](topic-experiences-overview.md)|
-|Obtenga información sobre cómo se detectan y sugieren los temas por IA|[Detección de temas de Microsoft Viva](topic-experiences-discovery.md)|
+|Obtener más información sobre Los temas de Viva|[Introducción a Los temas de Microsoft Viva](topic-experiences-overview.md)|
+|Obtenga información sobre cómo AI detecta y sugiere temas|[Detección de temas de Microsoft Viva](topic-experiences-discovery.md)|
 |Más información sobre la seguridad de los temas|[Seguridad y privacidad de Microsoft Viva](topic-experiences-security-privacy.md)|
 
 
@@ -60,7 +60,7 @@ Los recursos de esta sección ayudan a su administrador de su organización a co
 |:-----|:-----|
 |Obtenga información sobre cómo configurar y configurar Microsoft Viva|[Configurar Microsoft Viva](set-up-topic-experiences.md)|
 |Obtenga información sobre cómo configurar permisos de usuario|[Administrar los permisos por temas](topic-experiences-user-permissions.md)|
-|Obtenga información sobre cómo administrar quién puede ver temas|[Administrar la visibilidad por temas](topic-experiences-knowledge-rules.md)|
+|Obtenga información sobre cómo administrar quién puede ver los temas|[Administrar la visibilidad por temas](topic-experiences-knowledge-rules.md)|
 |Obtenga información sobre cómo administrar la configuración de detección de temas|[Administrar el descubrimiento por temas](topic-experiences-discovery.md)|
 
 ## <a name="work-with-topics"></a>Trabajar con temas

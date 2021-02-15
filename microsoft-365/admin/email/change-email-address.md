@@ -24,7 +24,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: 'Cambie su dirección de correo electrónico inicial a una dirección de correo electrónico de fácil acceso como tom@fourthcoffee.com. Para ello, debe comprar un nombre de dominio y agregarlo a Microsoft 365. '
+description: 'Cambie su dirección de correo electrónico inicial a una dirección de correo electrónico de fácil uso como tom@fourthcoffee.com. Para ello, debe comprar un nombre de dominio y agregarlo a Microsoft 365. '
 ms.openlocfilehash: 445b78f759cee79a794f9656afd5b26051534e26
 ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
@@ -45,7 +45,7 @@ ms.locfileid: "50114026"
   
 ::: moniker range="o365-worldwide"
 
-Su dirección de correo electrónico inicial en Microsoft 365 incluye .onmicrosoft.com, como tom@fourthcoffee.onmicrosoft.com. Puede cambiarla por una más sencilla como tomas@fourthcoffee.com. Antes, necesitará su propio nombre de dominio, como fourthcoffee.com. Si ya tiene uno, ¡genial! Si no es así, puede obtener información sobre cómo [comprar uno en un registrador de dominios](../get-help-with-domains/buy-a-domain-name.md).
+La dirección de correo electrónico inicial de Microsoft 365 incluye .onmicrosoft.com, como tom@fourthcoffee.onmicrosoft.com. Puede cambiarla por una más sencilla como tomas@fourthcoffee.com. Antes, necesitará su propio nombre de dominio, como fourthcoffee.com. Si ya tiene uno, ¡genial! Si no es así, puede obtener información sobre cómo [comprar uno en un registrador de dominios](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
@@ -61,7 +61,7 @@ Su dirección de correo electrónico inicial en Office 365 operado por 21Vianet 
 
 ::: moniker-end
 
-Cuando cambie el correo electrónico de su dominio para que llegue a Microsoft 365, al actualizar el registro MX de su dominio durante la instalación, todo el correo electrónico enviado a ese dominio empezará a llegar a Microsoft 365. Asegúrese de que ha agregado usuarios y creado buzones en Microsoft 365 para todos los usuarios que tienen correo electrónico en su dominio ANTES de cambiar el registro MX. ¿No quiere mover el correo electrónico de todos los usuarios de su dominio a Microsoft 365? Puede tomar medidas para [pilotar Microsoft 365 con solo unas pocas direcciones de correo electrónico en su lugar.](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain?view=o365-worldwide)
+Cuando cambie el correo electrónico de su dominio para que llegue a Microsoft 365, al actualizar el registro MX de su dominio durante la instalación, todo el correo electrónico enviado a ese dominio empezará a llegar a Microsoft 365. Asegúrese de que ha agregado usuarios y creado buzones en Microsoft 365 para todos los usuarios que tienen correo electrónico en su dominio ANTES de cambiar el registro MX. ¿No quiere mover el correo electrónico de todos los usuarios de su dominio a Microsoft 365? Puede tomar medidas para [realizar pruebas piloto de Microsoft 365 con solo unas pocas direcciones de correo electrónico en su lugar.](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain?view=o365-worldwide)
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Cambiar la dirección de correo electrónico para usar su dominio personalizado mediante el Centro de administración de Microsoft 365
 

@@ -59,18 +59,18 @@ Los administradores de conocimientos también pueden editar temas directamente d
    ![Control De edición](../media/knowledge-management/topic-page-edit.png) </br>  
 
 
-2. En la <b>sección Nombres</b> alternativos, escriba cualquier otro nombre al que se pueda hacer referencia al tema. 
+2. En la <b>sección Nombres alternativos,</b> escriba cualquier otro nombre al que se pueda hacer referencia al tema. 
 
     ![Nombres alternativos](../media/knowledge-management/alt-names.png) </br> 
 3. En la <b>sección</b> Descripción, escriba un par de oraciones que describan el tema. O bien, si ya existe una descripción, actualícádala si es necesario.
 
     ![Sección descripción](../media/knowledge-management/description.png)</br>
 
-4. En la <b>sección Personas</b> ancladas, puede "anclar" a una persona para mostrarla como experto en la materia sobre el tema. Comience por escribir su nombre o dirección de correo electrónico en el cuadro Agregar un nuevo usuario y, <b>a</b> continuación, seleccione el usuario que desea agregar desde los resultados de la búsqueda. También puede "desanclarlos" seleccionando el icono Quitar <b>de</b> la lista en la tarjeta de usuario.
+4. En la <b>sección Personas</b> ancladas, puede "anclar" a una persona para mostrarla como experto en la materia sobre el tema. Comience por escribir su nombre o dirección de correo electrónico en el cuadro Agregar un nuevo usuario y, <b>a</b> continuación, seleccione el usuario que desea agregar desde los resultados de la búsqueda. También puede "desanclarlos" seleccionando el icono Quitar de <b>la</b> lista en la tarjeta de usuario.
  
     ![Agregar personas ancladas](../media/knowledge-management/pinned-people.png)</br>
 
-    La <b>sección Personas sugeridas</b> muestra a los usuarios que AI cree que pueden ser expertos en la materia desde su conexión con los recursos sobre el tema. Puedes cambiar su estado de Sugerido a Anclado seleccionando el icono de patilla en la tarjeta de usuario.
+    La <b>sección De personas sugeridas</b> muestra a los usuarios que AI cree que pueden ser expertos en la materia desde su conexión con los recursos sobre el tema. Puedes cambiar su estado de Sugerido a Anclado seleccionando el icono de patilla en la tarjeta de usuario.
 
    ![Anclar a personas sugeridas](../media/knowledge-management/suggested-people.png)</br>
 
@@ -78,7 +78,7 @@ Los administradores de conocimientos también pueden editar temas directamente d
 
    ![Sección de páginas y archivos anclados](../media/knowledge-management/pinned-files-and-pages.png)</br>
  
-    Para agregar un nuevo archivo, seleccione <b>Agregar</b>, seleccione el sitio de SharePoint de los sitios frecuentes o seguidos y, a continuación, seleccione el archivo de la biblioteca de documentos del sitio.
+    Para agregar un archivo nuevo, seleccione <b>Agregar</b>, seleccione el sitio de SharePoint de los sitios frecuentes o seguidos y, a continuación, seleccione el archivo de la biblioteca de documentos del sitio.
 
     También puede usar la opción <b>De un vínculo</b> para agregar un archivo o página proporcionando la dirección URL. 
 
@@ -86,7 +86,7 @@ Los administradores de conocimientos también pueden editar temas directamente d
 
    ![Sección de páginas y archivos sugeridos](../media/knowledge-management/suggested-files-and-pages.png)</br>
 
-    Puedes crear un archivo o una página sugeridos en un archivo o página anclados seleccionando el icono anclado.
+    Puede crear un archivo o una página sugeridos en un archivo o página anclados seleccionando el icono anclado.
 
 7.  La <b>sección Sitios relacionados</b> muestra los sitios que tienen información sobre el tema. 
 
@@ -102,7 +102,7 @@ Los administradores de conocimientos también pueden editar temas directamente d
 
     A continuación, puede proporcionar una descripción de cómo se relacionan los temas y seleccionar <b>Actualizar</b>.</br>
 
-   ![Descripción de temas relacionados](../media/knowledge-management/related-topics-update.png)</br> 
+   ![Descripción de los temas relacionados](../media/knowledge-management/related-topics-update.png)</br> 
 
    El tema relacionado que agregó se mostrará como un tema conectado.
 

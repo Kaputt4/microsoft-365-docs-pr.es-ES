@@ -16,7 +16,7 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
-description: Solucionar errores relacionados con retenciones aplicadas a administradores y orígenes de datos no administradores en eDiscovery avanzado.
+description: Solucionar errores relacionados con retenciones aplicadas a administradores y orígenes de datos que no son administradores en eDiscovery avanzado.
 ms.openlocfilehash: a9956ac76cc083b6e408bd2f458b0320158fa231
 ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT

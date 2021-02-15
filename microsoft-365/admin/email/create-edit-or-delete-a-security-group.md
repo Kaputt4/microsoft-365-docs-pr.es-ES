@@ -41,7 +41,7 @@ En la página Grupos  de Microsoft 365, puede crear grupos de cuentas de usuario
 También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange-online-and-sharepoint-online) que puede usar para enviar correo electrónico o asignar permisos a un grupo de usuarios y [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange-online-and-sharepoint-online) que conceden a los usuarios permisos y acceso a sitios y colecciones de sitios. 
   
 > [!IMPORTANT]
->  ¿Tiene previsto usar buzones del sitio? Todos los usuarios que se agreguen a un sitio de SharePoint mediante un grupo de seguridad en lugar de individualmente podrán usar únicamente el buzón del sitio de SharePoint. No podrán acceder al buzón del sitio de Outlook. Para obtener más información, [vea Usar Grupos de Microsoft 365 en lugar de buzones de sitio.](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b) 
+>  ¿Tiene previsto usar buzones del sitio? Todos los usuarios que se agreguen a un sitio de SharePoint mediante un grupo de seguridad en lugar de individualmente podrán usar únicamente el buzón del sitio de SharePoint. No podrán acceder al buzón del sitio de Outlook. Para obtener más información, [vea Usar grupos de Microsoft 365 en lugar de buzones de sitio.](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b) 
   
 ## <a name="manage-security-groups-in-the-admin-center"></a>Administrar grupos de seguridad en el centro de administración
 
@@ -51,7 +51,7 @@ También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange
   
 2. En la **página** Grupos, seleccione **Agregar un grupo.**
     
-3. En la **página Elegir un tipo de grupo,** elija **Seguridad.** 
+3. En la **página Elegir un tipo de grupo,** elija **Seguridad**. 
     
 4. Siga los pasos para completar la creación del grupo. 
  
@@ -96,7 +96,7 @@ También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange
   
 2. En la **página** Grupos, seleccione el nombre del grupo. 
     
-3. En el panel de configuración, seleccione la pestaña **General** o **la** pestaña Miembros para editar los detalles del grupo o los miembros.
+3. En el panel de configuración, seleccione la **pestaña General** o **la** pestaña Miembros para editar los detalles del grupo o los miembros.
 
 ::: moniker-end
 
@@ -137,9 +137,9 @@ También hay [Grupos de Exchange Online y SharePoint Online](#groups-in-exchange
     
 ## <a name="groups-in-exchange-online-and-sharepoint-online"></a>Grupos de Exchange Online y SharePoint Online
 
-Si desea crear grupos de usuarios para poder  \>  \> **enviarles** correo electrónico a todos al mismo tiempo, puede hacerlo en el Centro de administración de Exchange yendo a Grupos de destinatarios de Exchange de \> **administración.** A continuación, **seleccione** ![ Nuevo complemento y seleccione el tipo de grupo que ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) desea crear: 
+Si desea crear grupos de usuarios para que pueda enviarles correo electrónico a todos al mismo  tiempo, puede hacerlo en el Centro de administración de Exchange yendo a Grupos de destinatarios de Exchange de \>  \>  \> **administración.** A continuación, **seleccione** ![ Nuevo complemento y seleccione el tipo de grupo que ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) desea crear: 
   
-- **Grupo de distribución**: se usa para distribuir mensajes a un grupo de usuarios. También se denomina grupo *de distribución habilitado para correo* o lista de *distribución.* Para más información, vea [Administrar grupos de distribución](https://technet.microsoft.com/library/bb124513.aspx).
+- **Grupo de distribución**: se usa para distribuir mensajes a un grupo de usuarios. También se denomina un grupo *de distribución* habilitado para correo o una lista de *distribución.* Para más información, vea [Administrar grupos de distribución](https://technet.microsoft.com/library/bb124513.aspx).
     
 - **Grupo de seguridad**: se puede usar para distribuir mensajes a un grupo de usuarios o para conceder permisos de acceso a recursos. Este grupo también se denomina grupo *de seguridad habilitado para correo.* Para obtener más información, consulte [Administrar grupos de seguridad habilitados para correo](https://technet.microsoft.com/library/bb123521.aspx).
     

@@ -77,7 +77,7 @@ Durante la configuración, los administradores de conocimientos pueden configura
 -   Seleccione los sitios de SharePoint que se rastrearán para los temas.
 -   Selecciona qué usuarios con licencia pueden ver temas (visores de temas).
 -   Seleccione los temas que se excluirán de la identificación.
--   Seleccione los usuarios con licencia que pueden crear y editar temas (colaboradores de temas).
+-   Seleccione qué usuarios con licencia pueden crear y editar temas (colaboradores de temas).
 -   Seleccione qué usuarios con licencia pueden administrar temas (administradores de conocimientos).
 -   Asigne un nombre al centro de temas.
 

@@ -27,7 +27,7 @@ ms.locfileid: "50097203"
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-El inicio de sesión único (SSO) agrega seguridad y comodidad cuando los usuarios inician sesión en las aplicaciones de Azure Active Directory. Con el inicio de sesión único, los usuarios inician sesión una vez con una cuenta para acceder a dispositivos locales unidos a un dominio de Servicios de dominio de Active Directory (AD DS), aplicaciones de software como servicio (SaaS) y aplicaciones web.
+El inicio de sesión único (SSO) agrega seguridad y comodidad cuando los usuarios inician sesión en las aplicaciones de Azure Active Directory. Con el inicio de sesión único, los usuarios inician sesión una vez con una cuenta para acceder a dispositivos unidos a un dominio local de Servicios de dominio de Active Directory (AD DS), aplicaciones de software como servicio (SaaS) y aplicaciones web.
 
 Obtenga más información sobre [el inicio de sesión único.](/azure/active-directory/manage-apps/what-is-single-sign-on)
 
@@ -37,9 +37,9 @@ Las últimas versiones de los siguientes clientes y plataformas admiten el inici
 <br>
 <br>
 
-| Clientes | Android | iOS | Mac| Windows 10 <br> Aplicaciones modernas| Windows 10 <br> Desktop |
+| Clientes | Android | iOS | Mac| Windows 10 <br> Aplicaciones modernas| Windows 10 <br> Desktop |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| Access | N/D | N/D | N/D | N/D | ![Compatible](../media/check-mark.png) |
+| Acceso | N/D | N/D | N/D | N/D | ![Compatible](../media/check-mark.png) |
 | Portal de empresa | N/D | ![Compatible](../media/check-mark.png) | Planeado | ![Compatible.](../media/check-mark.png) | No aplicable |
 | Cortana | N/D | N/D | N/D | ![Compatible.](../media/check-mark.png) | No aplicable |
 | Delve | Planeado | ![Compatible.](../media/check-mark.png) | N/D | N/D | N/D |
@@ -53,7 +53,7 @@ Las últimas versiones de los siguientes clientes y plataformas admiten el inici
 | OneNote | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | Planeado |
 | Outlook | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | Planeado | ![Compatible](../media/check-mark.png) |
 | Planner | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | N/D | N/D | N/D |
-| PowerApps | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | No aplicable | Planeado | N/D |
+| Power Apps | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | No aplicable | Planeado | N/D |
 | Power Automate | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | N/D | N/D | N/D |
 | Power BI | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | No aplicable | ![Compatible](../media/check-mark.png) | Planeado |
 | PowerPoint | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |

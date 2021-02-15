@@ -37,7 +37,7 @@ Las contraseñas son el método más común para autenticar un inicio de sesión
 Para proporcionar un nivel adicional de seguridad para los inicios de sesión, debe usar la autenticación multifactor (MFA), que usa una contraseña, que debe ser segura, y un método de comprobación adicional basado en:
 
 - Algo que tiene con usted que no se duplica fácilmente, como un smartphone.
-- Algo que tiene de forma exclusiva y exclusiva, como las huellas digitales, la cara u otro atributo biométrico.
+- Algo que tiene de forma única y exclusiva, como las huellas digitales, la cara u otro atributo biométrico.
 
 El método de comprobación adicional no se emplea hasta después de que se haya comprobado la contraseña del usuario. Con MFA, incluso si una contraseña de usuario segura está en peligro, el atacante no tiene su smartphone o su huella digital para completar el inicio de sesión.
 
@@ -153,11 +153,11 @@ Esta tabla muestra los resultados de habilitar MFA con los valores predeterminad
 ||Habilitado|Deshabilitado|Método de autenticación secundario|
 |---|---|---|---|
 |**Valores predeterminados de seguridad**|No se pueden usar directivas de acceso condicional|Se pueden usar directivas de acceso condicional|Aplicación Microsoft Authenticator|
-|**Directivas de acceso condicional**|Si hay alguna habilitada, no se pueden habilitar los valores predeterminados de seguridad|Si se deshabilitan todos, puede habilitar los valores predeterminados de seguridad|Especificado por el usuario durante el registro de MFA|
+|**Directivas de acceso condicional**|Si hay alguna habilitada, no puede habilitar los valores predeterminados de seguridad|Si se deshabilitan todos, puede habilitar los valores predeterminados de seguridad|Especificado por el usuario durante el registro de MFA|
 |**MFA por usuario heredado (no recomendado)**|Invalida los valores predeterminados de seguridad y las directivas de acceso condicional que requieren MFA en cada inicio de sesión|Invalidada por los valores predeterminados de seguridad y las directivas de acceso condicional|Especificado por el usuario durante el registro de MFA|
 ||||
 
-Si los valores predeterminados de seguridad están habilitados, se pedirá a todos los usuarios nuevos el registro de MFA y el uso de la aplicación Microsoft Authenticator en su siguiente inicio de sesión.
+Si los valores predeterminados de seguridad están habilitados, se pedirá a todos los nuevos usuarios el registro de MFA y el uso de la aplicación Microsoft Authenticator en su siguiente inicio de sesión.
 
 ## <a name="ways-to-manage-mfa-settings"></a>Formas de administrar la configuración de MFA
 
@@ -178,4 +178,4 @@ En el Centro de administración de Microsoft 365, puede configurar la MFA por us
 
 [Vídeo: Activar la autenticación multifactor](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
 
-[Vídeo: Activar la autenticación multifactor para el teléfono](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)
+[Vídeo: Activar la autenticación multifactor para su teléfono](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)

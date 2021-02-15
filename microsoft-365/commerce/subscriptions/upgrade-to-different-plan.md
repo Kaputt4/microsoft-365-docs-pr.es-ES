@@ -53,7 +53,7 @@ Al usar la **pestaña Actualizar,** se le dirige a través del proceso de compra
 
 4. Busque el plan al que desea actualizar y, a continuación, seleccione el **botón** Actualizar.
 
-5. Escribe el número de licencias que necesitas, elige si vas a pagar cada mes o durante todo el año y, a continuación, **selecciona Ir a la compra.**
+5. Escriba el número de licencias que necesita, elija si desea pagar cada mes o durante todo el año y, a continuación, **seleccione Ir a la compra.**
 
     > [!NOTE]
     > Asegúrese de comprar suficientes licencias para cubrir a todos los usuarios.
@@ -76,7 +76,7 @@ Si desea pasar a un plan con menos servicios, puede cambiar los planes manualmen
 
 ## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Solo quiero actualizar algunos de mis usuarios. ¿Cómo puedo hacerlo?
 
-Si solo desea actualizar algunos usuarios a un plan diferente, pero necesita comprar primero la nueva suscripción, consulte [Cambiar planes manualmente.](change-plans-manually.md) Si ya tiene la suscripción a la que desea actualizar a los usuarios, vea [Mover usuarios a una suscripción diferente.](move-users-different-subscription.md)
+Si solo desea actualizar algunos usuarios a un plan diferente, pero necesita comprar primero la nueva suscripción, consulte [Cambiar planes manualmente.](change-plans-manually.md) Si ya tiene la suscripción a la que desea actualizar a los usuarios, vea Mover usuarios [a una suscripción diferente.](move-users-different-subscription.md)
 
 ## <a name="why-some-changes-take-longer"></a>Por qué algunos cambios tardan más tiempo
 
@@ -86,7 +86,7 @@ Si solo desea actualizar algunos usuarios a un plan diferente, pero necesita com
 
 ## <a name="why-cant-i-upgrade-plans"></a>¿Por qué no puedo actualizar planes?
 
-Si no ve ningún plan  en la pestaña Actualización, significa que su plan no se puede actualizar automáticamente. En algunos casos, es posible que pueda resolver el problema para poder ver los planes disponibles para la actualización o, en su lugar, puede actualizar o cambiar los planes manualmente.
+Si no ve ningún plan  en la pestaña Actualizar, significa que su plan no se puede actualizar automáticamente. En algunos casos, es posible que pueda resolver el problema para poder ver los planes disponibles para la actualización o, en su lugar, puede actualizar o cambiar los planes manualmente.
 
 ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>¿Por qué no hay planes que actualizar?
 
@@ -96,7 +96,7 @@ Para actualizar los planes automáticamente, todos los usuarios deben tener asig
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>No puede actualizar suscripciones en este momento porque esta suscripción no está completamente configurada o el servicio no está disponible.
 
-Por ejemplo, si uno de los servicios tiene un incidente, no podrá actualizar hasta que todos los servicios estén en buen estado. Para ver si hay problemas de aprovisionamiento o estado del servicio, en el centro de administración, vaya a la página **estado** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">del servicio de</a> mantenimiento.
+Por ejemplo, si uno de los servicios tiene un incidente, no podrá actualizar hasta que todos los servicios estén en buen estado. Para ver si hay problemas de aprovisionamiento o estado del servicio, en el centro de administración, vaya a la página **estado** del servicio \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">de</a> mantenimiento.
 
 Si encuentra que un servicio no está completamente preparado o un problema de estado del servicio, espere unas pocas horas para que el servicio se encuentre disponible y vuelva a intentarlo. Si todavía tiene un problema, llame [al soporte técnico.](../../admin/contact-support-for-business-products.md)
 
@@ -142,9 +142,9 @@ Si su plan no es apto para actualizar planes automáticamente, es posible que pu
 
 Si tiene un complemento con su suscripción, es posible que pueda cambiar [los planes manualmente.](change-plans-manually.md)
 
-#### <a name="your-subscription-has-an-unpaid-balance"></a>Su suscripción tiene un saldo sin pagar
+#### <a name="your-subscription-has-an-unpaid-balance"></a>La suscripción tiene un saldo sin pagar
 
-Para resolver esto, busque la suscripción en la página Sus <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">productos</a> y seleccione el vínculo Pagar **ahora** en la sección **Facturación.** Después de realizar el pago, vuelve a comprobar la **pestaña** Actualizar.
+Para resolver este problema, busque la suscripción en  la página Sus <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">productos</a> y seleccione el vínculo Pagar ahora en la sección **Facturación.** Después de realizar el pago, vuelve a comprobar la **pestaña** Actualizar.
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>¿Qué hace la actualización de un plan a mi servicio y facturación?
 
@@ -168,12 +168,12 @@ Todos los datos de usuario se conservarán durante la actualización, incluidos 
   
 ### <a name="billing"></a>Facturación
 
-El día que se complete la actualización del plan, se desactivará la facturación de la suscripción antigua y se activará la facturación de la nueva suscripción. Obtendrá un crédito prorrateado correspondiente a los servicios no usados en la suscripción anterior. Recibirá una nueva factura que incluye el crédito de la suscripción antigua en un plazo de 30 días a partir de la actualización a la nueva suscripción.
+El día que se complete la actualización del plan, se desactivará la facturación de la suscripción antigua y se activará la facturación de la nueva suscripción. Obtendrá un crédito prorrateado correspondiente a los servicios no usados en la suscripción anterior. Recibirá una nueva factura que incluye el crédito de la suscripción anterior en un plazo de 30 días a partir de la actualización a la nueva suscripción.
   
 > [!NOTE]
 > El tiempo que lleva a su cuenta acreditar su pago depende del método que se usó para pagar la suscripción.
   
-**Actualizar desde una suscripción de prepago antes de que expire** Si el costo total de la nueva suscripción es superior o igual al valor restante de su suscripción de prepago, no perderá tiempo de prepago. En la página de finalización de la compra verá un crédito para el tiempo que no haya usado. Pero, si el coste total de su nueva suscripción es inferior al valor restante de la suscripción de prepago actual, perderá parte de su tiempo sin usar. Se le notificará antes de realizar la compra y puede esperar a actualizar hasta más cerca de la fecha de expiración de la suscripción de prepago.
+**Actualizar desde una suscripción de prepago antes de que expire** Si el costo total de la nueva suscripción es superior o igual al valor restante de su suscripción de prepago, no perderá tiempo de prepago. En la página de finalización de la compra verá un crédito para el tiempo que no haya usado. Pero, si el coste total de su nueva suscripción es inferior al valor restante de la suscripción de prepago actual, perderá parte de su tiempo sin usar. Se le notificará antes de realizar la desprotección y puede esperar a actualizar hasta más cerca de la fecha de expiración de su suscripción de prepago.
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>Llamar al soporte técnico para ayudarle a actualizar los planes
 

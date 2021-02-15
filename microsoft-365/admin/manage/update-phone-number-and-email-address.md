@@ -45,7 +45,7 @@ Use la **página Información de seguridad** para cambiar el número de teléfon
   
 1. Vaya al Centro de administración de Microsoft 365.
 
-2. En el encabezado, seleccione el icono de perfil Mi \> **cuenta Información de** \> **seguridad.**
+2. En el encabezado, seleccione el icono de perfil \> **Mi cuenta Información de** \> **seguridad.**
 
 3. En la **pestaña Información de** seguridad, seleccione Agregar **teléfono** alternativo del teléfono del método o \>  \>  **correo electrónico** para agregar detalles. Para actualizar los detalles de la dirección de correo electrónico alternativa, el teléfono y el móvil, seleccione **Cambiar.** Asegúrese de usar algo distinto de la dirección de correo electrónico de Microsoft para su dirección de correo electrónico alternativa.
 

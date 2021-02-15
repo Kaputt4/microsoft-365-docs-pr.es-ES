@@ -23,10 +23,10 @@ ms.locfileid: "50107305"
 ---
 # <a name="create-a-new-topic"></a>Cree un equipo nuevo 
 
-En Temas Viva, puede crear un nuevo tema si no se detecta uno a través de la indización o si la tecnología de IA no encontró pruebas suficientes para establecerlo como un tema.
+En Temas Viva, puede crear un nuevo tema si no se detecta uno a través de la indización o si la tecnología de IA no encontró suficiente evidencia para establecerlo como un tema.
 
 > [!Note] 
-> Aunque la información de un tema recopilado por la IA tiene recortes de [seguridad,](topic-experiences-security-trimming.md)tenga en cuenta que la información de un tema creado manualmente es visible para todos los usuarios que tienen permisos para ver el tema. 
+> Aunque la información de un tema recopilado por AI tiene recortes de [seguridad,](topic-experiences-security-trimming.md)tenga en cuenta que la información de un tema creado manualmente es visible para todos los usuarios que tienen permisos para ver el tema. 
 
 
 ## <a name="requirements"></a>Requirements
@@ -52,7 +52,7 @@ Para crear un nuevo tema, debe:
 
     ![Descripción del tema](../media/knowledge-management/description.png)</br>
 
-4. En la <b>sección Personas</b> ancladas, puede "anclar" a una persona para mostrarla como experto en la materia sobre el tema. Comience por escribir su nombre o dirección de correo electrónico en el cuadro agregar un nuevo usuario y, <b>a</b> continuación, seleccione el usuario que desea agregar desde los resultados de la búsqueda. También puede "desanclarlos" seleccionando el icono Quitar <b>de</b> la lista en la tarjeta de usuario. También puede arrastrar a la persona para cambiar el orden en que aparece la lista de personas.
+4. En la <b>sección De</b> personas ancladas, puede "anclar" a una persona para mostrarla como experto en la materia sobre el tema. Comience por escribir su nombre o dirección de correo electrónico en el cuadro agregar un nuevo usuario y, <b>a</b> continuación, seleccione el usuario que desea agregar desde los resultados de búsqueda. También puede "desanclarlos" seleccionando el icono Quitar de <b>la</b> lista en la tarjeta de usuario. También puede arrastrar a la persona para cambiar el orden en que aparece la lista de personas.
  
     ![Personas ancladas](../media/knowledge-management/pinned-people.png)</br>
 

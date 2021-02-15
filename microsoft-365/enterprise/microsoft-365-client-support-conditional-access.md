@@ -38,10 +38,10 @@ Las últimas versiones de los siguientes clientes y plataformas admiten el acces
 <br>
 <br>
 
-| Clientes | Android | iOS | Mac| Windows 10 <br> Aplicaciones modernas| Windows 10 <br> Desktop |
+| Clientes | Android | iOS | Mac| Windows 10 <br> Aplicaciones modernas| Windows 10 <br> Desktop |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | Administrador de Azure Active Directory | N/D | N/D | N/D | N/D | ![Compatible](../media/check-mark.png) |
-| Access | N/D | N/D | N/D | N/D | ![Compatible](../media/check-mark.png) |
+| Acceso | N/D | N/D | N/D | N/D | ![Compatible](../media/check-mark.png) |
 | Administrador de Azure | N/D | N/D | N/D | N/D | N/D |
 | Portal de empresa | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | No aplicable |
 | Cortana | Planeado | Planeado | N/D | ![Compatible.](../media/check-mark.png) | No aplicable |
@@ -59,7 +59,7 @@ Las últimas versiones de los siguientes clientes y plataformas admiten el acces
 | OneNote | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |
 | Outlook | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |
 | Planner | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | N/D | N/D | N/D |
-| PowerApps | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | No aplicable | Planeado | N/D |
+| Power Apps | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | No aplicable | Planeado | N/D |
 | Power Automate | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | N/D | N/D | N/D |
 | Power BI | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | No aplicable | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |
 | PowerPoint | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) | ![Compatible](../media/check-mark.png) |

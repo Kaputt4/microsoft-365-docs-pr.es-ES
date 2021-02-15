@@ -108,7 +108,7 @@ Aquí se incluye información general rápida. Cada paso se explica en detalle e
 |||
 |:-----|:-----|
 |**Paso** <br/> |**Por qué se debe realizar este procedimiento** <br/> |
-|1. [Guardar el contenido del buzón de un antiguo empleado](#save-the-contents-of-a-former-employees-mailbox) <br/> |Esto es útil para la persona que va a asumir el trabajo del empleado, o si hay un litigio.  <br/> |
+|1. [Guardar el contenido del buzón de un antiguo empleado](#save-the-contents-of-a-former-employees-mailbox) <br/> |Esto es útil para la persona que va a asumir el trabajo del empleado o si hay un litigio.  <br/> |
 |2. [Reenviar el correo electrónico de un antiguo empleado a otro empleado o convertir en un buzón compartido](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |Esta opción permite mantener activa la dirección de correo electrónico de su antiguo empleado. Si tiene clientes o socios que siguen enviando correos electrónicos a la dirección del antiguo empleado, con esta opción el correo llegará a la persona que ahora se encarga del trabajo.  <br/> |
 |3. [Borrar y bloquear el dispositivo móvil de un antiguo empleado](#wipe-and-block-a-former-employees-mobile-device) <br/> |Quita los datos profesionales del teléfono o de la tableta.  <br/> |
 |4. Bloquear el acceso de un antiguo empleado [a los datos de Microsoft 365](#block-a-former-employees-access-to-microsoft-365-data)<br/> |Impide que la persona acceda a sus antiguos buzones y datos de Microsoft 365.  <br/><br/> **Sugerencia:** Cuando bloqueas el acceso de un usuario, sigues pagando por su licencia. Para dejar de pagar por ella, elimine la licencia de la suscripción (paso 5).  |
@@ -127,7 +127,7 @@ Puede guardar el contenido del buzón de correo del antiguo empleado de dos form
 
 2. Aplique una retención por juicio o una conservación local al buzón de correo antes de eliminar la cuenta del usuario. Esto es mucho más complicado que la primera opción, pero vale la pena hacerlo si su plan Enterprise incluye archivado y retención legal, si los litigios son una posibilidad o si tiene un departamento informático potente a nivel técnico.
 
-    Después de convertir el buzón en un "buzón inactivo", los administradores, los responsables de cumplimiento normativo o los administradores de registros pueden usar las herramientas de exhibición de documentos electrónicos de In-Place en Exchange Online para obtener acceso y buscar en el contenido.
+    Después de convertir el buzón en un "buzón inactivo", los administradores, los responsables de cumplimiento normativo o los administradores de registros pueden usar las herramientas de exhibición de documentos electrónicos de In-Place en Exchange Online para obtener acceso al contenido y buscarlo.
 
     Los buzones inactivos no pueden recibir correo electrónico y no se muestran en la libreta de direcciones compartida de su organización ni en otras listas.
 
@@ -150,7 +150,7 @@ En este paso, asigne la dirección de correo electrónico del exempleado a otro 
 2. Seleccione el nombre del empleado que desea bloquear y, a continuación, seleccione la **pestaña** Correo.
 3. En **Reenvío de correo electrónico,** seleccione Administrar reenvío de correo **electrónico.**
 4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el **cuadro Dirección de reenvío,** escriba la dirección de correo electrónico del empleado actual que va a recibir el correo electrónico.
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 6. Recuerde no eliminar la cuenta del antiguo empleado.
 
 ::: moniker-end
@@ -165,7 +165,7 @@ En este paso, asigne la dirección de correo electrónico del exempleado a otro 
 
 4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el cuadro **Dirección de reenvío**, escriba la dirección de correo electrónico del empleado actual (o del buzón de correo compartido) al que se enviará el correo.
   
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 6. Recuerde no eliminar la cuenta del antiguo empleado.
 
@@ -181,7 +181,7 @@ En este paso, asigne la dirección de correo electrónico del exempleado a otro 
 
 4. Active **Reenviar todo el correo electrónico enviado a este buzón**. En el cuadro **Dirección de reenvío**, escriba la dirección de correo electrónico del empleado actual (o del buzón de correo compartido) al que se enviará el correo.
   
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 6. Recuerde no eliminar la cuenta del antiguo empleado.
 
@@ -195,7 +195,7 @@ Si su antiguo empleado tenía un teléfono de la organización, puede usar el Ce
 2. En el Centro de administración de Exchange, vaya a **Destinatarios** \> **Buzones**.
 3. Seleccione el usuario y, en **Dispositivos móviles,** seleccione **Ver detalles.**
 4. En la **página Detalles del** dispositivo móvil, en Dispositivos móviles, seleccione el dispositivo móvil, seleccione Borrar dispositivo de borrado de datos y, a  ![ continuación, seleccione ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) **Bloquear**.
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
    > [!TIP]
    > Asegúrese de quitar o deshabilitar el usuario de su Servicio Blackberry Enterprise local. También debe deshabilitar cualquier dispositivo BlackBerry para el usuario. Consulte la BlackBerry Business Cloud Services Administration Guide (Guía de administración de servicios de BlackBerry Business Cloud) si necesita pasos específicos sobre cómo deshabilitar al usuario.
 
@@ -243,7 +243,7 @@ Si tiene correo electrónico como parte de su suscripción a Microsoft 365, debe
 
 ## <a name="remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>Quitar y eliminar la licencia de Microsoft 365 de un antiguo empleado
 
-Por lo tanto, no siga pagando por una licencia después de que alguien abandone la organización, debe quitar su licencia de Microsoft 365 y, a continuación, eliminarla de su suscripción. Si decide no eliminar la licencia de la suscripción, puede asignarla a otro usuario.
+Por lo tanto, no siga pagando por una licencia después de que alguien abandone su organización, debe quitar su licencia de Microsoft 365 y, a continuación, eliminarla de la suscripción. Si decide no eliminar la licencia de la suscripción, puede asignarla a otro usuario.
   
 Al quitar la licencia, todos los datos de ese usuario se conservan durante 30 días. Puede [acceder](get-access-to-and-back-up-a-former-user-s-data.md) a los datos o [restaurar](restore-user.md) la cuenta si el usuario se vuelve a incorporar. Después de 30 días, todos los datos del usuario (excepto los documentos almacenados en SharePoint Online) se eliminan permanentemente de Microsoft 365 y no se pueden recuperar.
 
@@ -281,8 +281,8 @@ Al quitar la licencia, todos los datos de ese usuario se conservan durante 30 d�
 1. En el centro de administración, vaya a **la** página \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Facturación de</a> sus productos y seleccione la **pestaña** Productos.
 2. Seleccione la suscripción de la que desea quitar licencias.
 3. En la página de detalles, seleccione **Quitar licencias.**
-4. En el **panel Quitar licencias,** en Nueva  cantidad, en el cuadro Total de licencias, escriba el número total de licencias que desea para esta suscripción. Por ejemplo, si tiene 25 licencias y desea quitar una de ellas, escriba 24.
-5. Haga clic en **Guardar**.
+4. En el **panel Quitar licencias,** en Nueva cantidad, en el cuadro **Total** de licencias, escriba el número total de licencias que desea para esta suscripción. Por ejemplo, si tiene 25 licencias y desea quitar una de ellas, escriba 24.
+5. Seleccione **Guardar**.
 ::: moniker-end
 
 ::: moniker range="o365-germany"

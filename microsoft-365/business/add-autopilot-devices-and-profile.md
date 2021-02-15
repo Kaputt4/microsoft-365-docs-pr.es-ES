@@ -48,7 +48,7 @@ Los dispositivos deben cumplir estos requisitos:
 
 [![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-Si aún no has creado grupos de dispositivos o perfiles, la mejor manera de empezar es mediante la guía paso a paso. También puedes agregar [dispositivos y](create-and-edit-autopilot-devices.md) [asignarles perfiles](create-and-edit-autopilot-profiles.md) sin usar la guía. 
+Si aún no has creado grupos de dispositivos o perfiles, la mejor manera de empezar es mediante la guía paso a paso. También puedes agregar [dispositivos y asignarles perfiles](create-and-edit-autopilot-profiles.md) sin usar la guía. [](create-and-edit-autopilot-devices.md) 
   
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 

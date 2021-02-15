@@ -39,7 +39,7 @@ Los administradores de conocimientos ayudan a guiar los temas detectados durante
 
 - Sugerido: Un tema ha sido identificado por la inteligencia artificial y tiene suficientes recursos, conexiones y propiedades compatibles.
 - Confirmado: se valida un tema sugerido por AI. La validación se realiza mediante la confirmación de un administrador de conocimientos. Además, se puede confirmar un tema si al menos dos usuarios dan comentarios positivos a través de la pregunta de comentarios en la tarjeta del tema.
-- Publicado: tema confirmado que se ha seleccionado: se han realizado ediciones manuales para mejorar su calidad.
+- Publicado: un tema confirmado que se ha seleccionado: se han realizado ediciones manuales para mejorar su calidad.
 - Eliminado: un administrador de conocimientos rechaza un tema y ya no será visible para los espectadores. El tema puede estar en cualquier estado cuando se quita (sugerido, confirmado o publicado). Cuando se quita un tema publicado, la página con los detalles seleccionados deberá eliminarse manualmente a través de la biblioteca de páginas del centro de temas.
 
    ![Gráfico de ciclo de vida de temas](../media/knowledge-management/topic-lifecycle.png) </br> 
@@ -98,7 +98,7 @@ La <b>columna Impresiones</b> muestra el número de veces que se ha mostrado un 
 
 ## <a name="confirmed-topics"></a>Temas confirmados
 
-En la página Administrar temas, los temas que se detectaron en las ubicaciones de origen de SharePoint especificadas y que han sido confirmados por un administrador de conocimientos o "con origen público" confirmado por dos o más personas a través del mecanismo de comentarios de la tarjeta se mostrarán en la pestaña Confirmado.  Si es necesario, un usuario con permisos para administrar temas puede revisar los temas confirmados y elegir rechazarlos.
+En la página Administrar temas, los temas que se detectaron en las ubicaciones de origen de SharePoint especificadas y que un administrador de  conocimientos confirmó o que confirmaron dos o más personas a través del mecanismo de comentarios de la tarjeta aparecerán en la pestaña Confirmado. Si es necesario, un usuario con permisos para administrar temas puede revisar los temas confirmados y elegir rechazarlos.
 
 Para revisar un tema confirmado:
 

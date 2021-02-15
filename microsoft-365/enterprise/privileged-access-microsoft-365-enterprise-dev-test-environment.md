@@ -45,7 +45,7 @@ Si desea configurar la administración de acceso con privilegios de forma ligera
 Si desea configurar la administración de acceso con privilegios en una empresa simulada, siga las instrucciones de autenticación [de paso a través.](pass-through-auth-m365-ent-test-environment.md)
   
 >[!NOTE]
->Las pruebas de administración de acceso con privilegios no requieren el entorno de prueba de empresa simulado, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de Servicios de dominio de Active Directory. Se proporciona aquí como una opción para que pueda probar la administración del acceso con privilegios y experimentar con ella en un entorno que representa una organización típica.
+>Las pruebas de administración de acceso con privilegios no requieren el entorno de prueba de empresa simulado, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de Servicios de dominio de Active Directory. Se proporciona aquí como una opción para que pueda probar la administración de acceso con privilegios y experimentar con ella en un entorno que representa una organización típica.
 
 ## <a name="phase-2-configure-privileged-access-management"></a>Fase 2: Configurar la administración del acceso con privilegios
 
@@ -67,7 +67,7 @@ En esta fase, compruebe que la directiva de acceso con privilegios funciona y qu
 
 ### <a name="test-the-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>Probar la capacidad de ejecutar una tarea NO definida en una directiva de acceso con privilegios
 
-En primer lugar, conéctese a Exchange Management PowerShell con las credenciales de un usuario configurado como administrador global en su entorno de prueba e intente crear una nueva regla de diario. La [tarea New-JournalRule](/powershell/module/exchange/new-journalrule) no está definida actualmente en una directiva de acceso con privilegios para su organización.
+En primer lugar, conéctese a PowerShell de administración de Exchange con las credenciales de un usuario configurado como administrador global en su entorno de prueba e intente crear una nueva regla de diario. La [tarea New-JournalRule](/powershell/module/exchange/new-journalrule) no está definida actualmente en una directiva de acceso con privilegios para su organización.
 
 1. En el equipo local, abra e inicie sesión en el módulo de PowerShell remoto de Exchange Online en **Microsoft Corporation** Microsoft Exchange Online Módulo remoto de PowerShell con la cuenta de administrador global para su entorno  >   de prueba.
 
@@ -146,7 +146,7 @@ En primer lugar, conéctese a Exchange Management PowerShell con las credenciale
 
     **Comentarios:** solicitar permiso para crear una nueva regla de diario
 
-5. Seleccione **Guardar** y, a continuación, **seleccione Cerrar**. La solicitud se enviará al grupo del aprobador por correo electrónico.
+5. Seleccione **Guardar** y, a continuación, **seleccione Cerrar**. Su solicitud se enviará al grupo del aprobador por correo electrónico.
 
 ### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>Aprobar la solicitud de acceso con privilegios para la creación de una nueva regla de diario
 
@@ -156,7 +156,7 @@ En primer lugar, conéctese a Exchange Management PowerShell con las credenciale
 
 3. Seleccione **Administrar directivas de acceso y solicitudes.**
 
-4. Seleccione la solicitud pendiente y, a continuación, seleccione **Aprobar** para conceder acceso a la cuenta de administrador global para crear una nueva regla de diario. La cuenta de administrador global (el usuario solicitante) recibirá una confirmación por correo electrónico de que se concedió la aprobación.
+4. Seleccione la solicitud pendiente y, a continuación, seleccione **Aprobar** para conceder acceso a la cuenta de administrador global para crear una nueva regla de diario. La cuenta de administrador global (el usuario solicitante) recibirá una confirmación por correo electrónico de que se ha concedido la aprobación.
 
 ### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>Probar la creación de una nueva regla de diario con acceso con privilegios aprobado para la New-JournalRule tarea
 

@@ -24,7 +24,7 @@ ms.locfileid: "50097493"
 ---
 # <a name="microsoft-365-client-and-services-app-support"></a>Compatibilidad con aplicaciones de cliente y servicios de Microsoft 365
 
-Microsoft admite una amplia gama de características de seguridad, autenticación y cumplimiento para mantener seguros los datos de los clientes y permite a los administradores de TI personalizar directivas en el Centro de administración de Microsoft 365 para sus usuarios. Las siguientes características son solo un subconjunto de las muchas características empresariales que puede configurar en función de su suscripción a Microsoft 365.
+Microsoft admite una amplia gama de características de seguridad, autenticación y cumplimiento para mantener seguros los datos de los clientes y permite a los administradores de TI personalizar las directivas en el Centro de administración de Microsoft 365 para sus usuarios. Las siguientes características son solo un subconjunto de las muchas características empresariales que puede configurar en función de su suscripción a Microsoft 365.
 
 ## <a name="client-and-service-support"></a>Compatibilidad con clientes y servicios
 
@@ -40,7 +40,7 @@ Actualmente se evalúan los siguientes eventos:
 - El administrador revoca explícitamente todos los tokens de actualización de un usuario
 - Riesgo elevado de usuario detectado por Azure AD Identity Protection
 
-Para obtener más información acerca de la evaluación continua del acceso para la compatibilidad con aplicaciones de cliente y servicios, vea [Evaluación de acceso continuo (versión preliminar).](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
+Para obtener más información acerca de la evaluación de acceso continua para la compatibilidad con aplicaciones de cliente y servicios, vea [Evaluación de acceso continuo (versión preliminar).](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
 
 ## <a name="client-support"></a>Compatibilidad con clientes
 
@@ -67,7 +67,7 @@ Las directivas de acceso condicional son instrucciones if-then para conceder acc
 
 Al tomar estas decisiones de acceso, las directivas pueden tomar diferentes acciones:
 
-- La directiva puede bloquear el acceso: esta configuración es la acción más restrictiva e impide que el usuario acceda al recurso.
+- La directiva puede bloquear el acceso: esta configuración es la acción más restrictiva y evita que el usuario acceda al recurso.
 - La directiva puede conceder acceso: esta configuración es una decisión menos restrictiva y puede requerir una o varias de las siguientes opciones:
 
     - Autenticación multifactor
@@ -98,7 +98,7 @@ Para el contenido administrado por la organización, puede aplicar directivas de
 - Entregar la configuración de la aplicación para administrar el comportamiento y la configuración de la aplicación
 - Restringir la aplicación administrada a una identidad definida deshabilitando las capacidades de identidad múltiple o el uso personal
 
-Para obtener más información acerca de la administración de aplicaciones móviles con Microsoft Intune, vea ¿Qué es [la administración de aplicaciones de Microsoft Intune?](/mem/intune/apps/app-management)
+Para obtener más información acerca de la administración de aplicaciones móviles con Microsoft Intune, vea [¿Qué es la administración de aplicaciones de Microsoft Intune?](/mem/intune/apps/app-management)
 
 ### <a name="multi-factor-authentication"></a>Autenticación multifactor
 
@@ -114,7 +114,7 @@ Para obtener más información acerca de la autenticación multifactor para la c
 
 El inicio de sesión único (SSO) agrega seguridad y comodidad cuando los usuarios inician sesión en las aplicaciones de Azure Active Directory. Con el inicio de sesión único, los usuarios inician sesión una vez con una cuenta para acceder a dispositivos locales unidos a un dominio de Servicios de dominio de Active Directory (AD DS), aplicaciones de software como servicio (SaaS) y aplicaciones web de su organización.
 
-Para obtener más información sobre el inicio de sesión único para la compatibilidad con aplicaciones de cliente y servicios, vea Soporte técnico de aplicaciones cliente de [Microsoft 365: inicio de sesión único.](microsoft-365-client-support-single-sign-on.md)
+Para obtener más información sobre el inicio de sesión único para la compatibilidad con aplicaciones de cliente y servicios, vea [Microsoft 365 Client App Support: Single sign-on](microsoft-365-client-support-single-sign-on.md).
 
 ## <a name="services-support"></a>Compatibilidad con servicios
 
@@ -152,4 +152,4 @@ Para proporcionar el mejor cifrado de su clase a nuestros clientes, Microsoft pl
 
 Entendemos que la seguridad de los datos es importante y estamos garantizamos transparencia en cuanto a los cambios que pueden afectar al uso del servicio TLS. Se recomienda que todas las combinaciones cliente-servidor y explorador-servidor usen TLS 1.2 (o una versión posterior) para mantener la conexión a los servicios de Office 365. Es posible que tenga que actualizar ciertas combinaciones cliente-servidor y navegador-servidor.
 
-Para obtener más información acerca de la compatibilidad y los servicios de TLS 1.2, vea Preparación para [TLS 1.2 en Office 365 y Office 365 GCC.](/microsoft-365/compliance/prepare-tls-1.2-in-office-365)
+Para obtener más información acerca de la compatibilidad con TLS 1.2 y los servicios, vea Preparación para [TLS 1.2 en Office 365 y Office 365 GCC.](/microsoft-365/compliance/prepare-tls-1.2-in-office-365)

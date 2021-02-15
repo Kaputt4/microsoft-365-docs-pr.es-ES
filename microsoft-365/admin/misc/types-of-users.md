@@ -38,7 +38,7 @@ En la **página Usuarios activos** del Centro de administración de Microsoft 36
 |**Tipo de usuario** <br/> |**Definición** <br/> |
 |Usuarios con licencia  <br/> |A estos usuarios se les ha asignado una licencia de Microsoft 365, como Microsoft 365 Empresa Standard u Office 365 Enterprise E3, para que puedan usar los servicios de Microsoft 365.  <br/> |
 |Inicio de sesión permitido  <br/> |Estos usuarios pueden iniciar sesión en Microsoft 365 para crear documentos, comprobar el correo electrónico, etc. La mayoría de los usuarios debería poder iniciar sesión en cualquier momento de un periodo determinado.  <br/> |
-|Inicio de sesión bloqueado  <br/> |Estos usuarios no pueden iniciar sesión en Microsoft 365. Un ejemplo de esto es un usuario que abandonó la empresa y que bloqueó su acceso a Microsoft 365.  <br/> |
+|Inicio de sesión bloqueado  <br/> |Estos usuarios no pueden iniciar sesión en Microsoft 365. Un ejemplo de esto es un usuario que abandonó la empresa y bloqueó su acceso a Microsoft 365.  <br/> |
 |Usuarios sin licencia  <br/> |Estos usuarios no tienen ninguna licencia de Microsoft 365, como Microsoft 365 Empresa Standard u Office 365 Enterprise E3, por lo que no pueden usar las características de Microsoft 365. Algunos ejemplos son los administradores que solo necesitan administrar Microsoft 365, los empleados que han dejado la empresa o los buzones compartidos y de recursos que no están asociados a personas.  <br/> |
 |Usuarios con errores  <br/> |Estos usuarios tienen errores asociados a su cuenta que deben resolverse.  <br/> |
 |Administradores de facturación  <br/> |Estos usuarios pueden realizar compras, administrar suscripciones, administrar vales de soporte técnico y supervisar el estado del servicio en su nombre.  <br/> |

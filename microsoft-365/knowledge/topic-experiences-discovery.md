@@ -42,14 +42,14 @@ Si desea incluir o excluir una lista específica de sitios, puede usar la siguie
 Site name,URL
 ```
 
-Si agrega sitios mediante el selector de sitios, se agregan a la lista existente de sitios para incluirlos o excluirlos. Si carga un archivo .csv, sobrescribirá cualquier lista existente. Si ya ha incluido o excluido sitios específicos, puede descargar la lista como un archivo .csv, realizar cambios y cargar la nueva lista.
+Si agrega sitios mediante el selector de sitios, se agregan a la lista existente de sitios para incluir o excluir. Si carga un archivo .csv, sobrescribirá cualquier lista existente. Si ya ha incluido o excluido sitios específicos, puede descargar la lista como un archivo .csv, realizar cambios y cargar la nueva lista.
 
 Para elegir sitios para la detección de temas
 
 1. En la **pestaña Detección** de temas, en Seleccionar orígenes de temas de **SharePoint,** **seleccione Editar**.
-2. En la página Seleccionar orígenes de temas **de SharePoint,** seleccione los sitios de SharePoint que se rastrearán como orígenes de los temas durante la detección. Esto incluye:
+2. En la página Seleccionar orígenes de temas **de SharePoint,** seleccione los sitios de SharePoint que se rastrearán como orígenes de los temas durante la detección. Incluye lo siguiente:
     - **Todos los sitios:** todos los sitios de SharePoint del espacio empresarial. Esto captura los sitios actuales y futuros.
-    - **Todos, excepto los sitios seleccionados:** escriba los nombres de los sitios que desea excluir.  También puede cargar una lista de sitios en los que quiera no participar en la detección. Los sitios creados en el futuro se incluirán como orígenes para la detección de temas. 
+    - **Todos, excepto los sitios seleccionados:** escriba los nombres de los sitios que desea excluir.  También puede cargar una lista de sitios en los que desea no participar en la detección. Los sitios creados en el futuro se incluirán como orígenes para la detección de temas. 
     - **Solo los sitios seleccionados:** escriba los nombres de los sitios que desea incluir. También puede cargar una lista de sitios. Los sitios creados en el futuro no se incluirán como orígenes para la detección de temas.
     - **Ningún sitio:** los temas no se generarán ni actualizarán automáticamente con contenido de SharePoint. Los temas existentes permanecen en el centro de temas.
 
@@ -86,7 +86,7 @@ En la plantilla CSV, escriba la siguiente información sobre los temas que desea
 
     ![Excluir temas de la plantilla CSV](../media/exclude-topics-csv.png) 
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Administrar la visibilidad de temas en Microsoft 365](topic-experiences-knowledge-rules.md)
 

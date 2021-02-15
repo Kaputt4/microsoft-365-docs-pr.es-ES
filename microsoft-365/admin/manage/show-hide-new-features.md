@@ -40,8 +40,8 @@ Puede controlar cuáles de estos mensajes de características se muestran a los 
 
 1. En el Centro de administración de Microsoft 365, en **Configuración,** elija **Configuración de la organización.**
 2. En la **pestaña** Servicios, elija **Novedades de Office.**
-3. Al hacer clic en el nombre de la característica, aparece un panel emergente con la siguiente información:
-     - Breve descripción de la característica.
+3. Al hacer clic en el nombre de la característica, aparece un panel desplegable con la siguiente información:
+     - Una breve descripción de la característica.
      - Un vínculo a un artículo para obtener más información sobre la característica.
      - Las aplicaciones de Office en las que aparece la característica.
      - La primera versión (versión) en la que está disponible la característica para ese canal.
@@ -68,7 +68,7 @@ Las nuevas características aparecen en la página según la programación sigui
 |**Empresa semesual (versión preliminar)** <br/> |1 de septiembre y 1 de marzo <br/> | 2 semanas antes de la versión principal que ofrece nuevas características|
 |**Empresa semesual** <br/> |1 de enero y 1 de julio <br/> | 2 semanas antes de la versión principal que ofrece nuevas características<br/> |
 
-Para obtener más información sobre cuándo se lanzan nuevas versiones en cada canal de actualización, consulte Historial de actualizaciones de Aplicaciones de [Microsoft 365 (enumerado por fecha).](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)
+Para obtener más información sobre cuándo se lanzan nuevas versiones en cada canal de actualización, vea El historial de actualizaciones de Aplicaciones de [Microsoft 365 (enumerado por fecha).](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)
 
 ## <a name="add-the-whats-new-in-office-card-to-the-admin-center-home-page"></a>Agregar la tarjeta "Novedades de Office" a la página principal del centro de administración
 
@@ -79,4 +79,4 @@ Para obtener más información sobre cuándo se lanzan nuevas versiones en cada 
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[La administración de Novedades de Office ya está disponible por lo general](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-is-now-generally-available/ba-p/1179954)
+[Office What's New management is now generally available](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-is-now-generally-available/ba-p/1179954)

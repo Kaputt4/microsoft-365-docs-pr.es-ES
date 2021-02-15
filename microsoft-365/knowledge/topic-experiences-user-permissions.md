@@ -24,7 +24,7 @@ Puede administrar la configuración de permisos de temas en el [Centro de admini
 Con la configuración de permisos de tema puede elegir:
 
 - Qué usuarios pueden crear y editar temas: cree nuevos temas que no se encontraron durante la detección o edite los detalles de los temas existentes.
-- Qué usuarios pueden administrar los temas: obtener acceso al centro de administración de temas y ver comentarios sobre los temas, así como mover temas a lo largo del ciclo de vida.
+- Qué usuarios pueden administrar los temas: obtener acceso al centro de administración de temas y ver comentarios sobre los temas, así como mover temas durante el ciclo de vida.
 
 ## <a name="to-access-topics-management-settings"></a>Para obtener acceso a la configuración de administración de temas:
 
@@ -49,23 +49,23 @@ Para actualizar quién tiene permisos para crear y editar temas:
 
     ![Crear y editar temas](../media/k-manage-who-can-create-and-edit.png)  
 
-3. Haga clic en **Guardar**.
+3. Seleccione **Guardar**.
 
 Para actualizar quién tiene permisos para administrar temas:
 
-1. En la **pestaña Permisos del tema,** en **Quién puede administrar temas,** seleccione **Editar**.
+1. En la **pestaña Permisos de tema,** en **Quién puede administrar temas,** seleccione **Editar**.
 2. En la **página Quién puede administrar temas,** puede seleccionar:
     - **Todos en su organización**
     - **Personas o grupos de seguridad seleccionados**
 
     ![Administrar temas](../media/k-manage-who-can-manage-topics.png)  
 
-3. Haga clic en **Guardar**.
+3. Seleccione **Guardar**.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
-[Administrar la detección de temas en temas de Microsoft Viva](topic-experiences-discovery.md)
+[Administrar la detección de temas en Temas de Microsoft Viva](topic-experiences-discovery.md)
 
-[Administrar la visibilidad de temas en Temas de Microsoft Viva](topic-experiences-knowledge-rules.md)
+[Administrar la visibilidad de los temas en Temas de Microsoft Viva](topic-experiences-knowledge-rules.md)
 
 [Cambiar el nombre del centro de temas en Temas de Microsoft Viva](topic-experiences-administration.md)

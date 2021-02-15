@@ -47,7 +47,7 @@ Si la facturación periódica está desactivada para un  perfil de facturación,
 
 ## <a name="paying-by-invoice"></a>Pagar con factura
 
-Si tiene un perfil de facturación configurado para pagar con factura, puede pagar la suscripción con un cheque o EFT. También puedes usar una tarjeta de crédito para realizar un pago en línea mediante el botón Pagar **ahora** de la factura.
+Si tiene un perfil de facturación configurado para pagar con factura, puede pagar la suscripción con un cheque o EFT. También puedes usar una tarjeta de crédito para realizar un pago en línea mediante el botón **Pagar** ahora de la factura.
 
 Para poder pagar mediante factura, debe:
 
@@ -55,9 +55,9 @@ Para poder pagar mediante factura, debe:
 - Tener un costo de suscripción que supere una cantidad determinada (esta cantidad varía según la ubicación del servicio)
 - Pasar una comprobación de crédito
 
-Si se requiere una comprobación de crédito, se le notificará al comprar la suscripción. Si acepta ser contactado, recibe un correo electrónico que incluye más información sobre la solicitud de aprobación de crédito. Las comprobaciones de crédito se suelen completar en dos días laborables.
+Si se requiere una comprobación de crédito, se le notificará al comprar su suscripción. Si permite que nos pongamos en contacto con usted, recibirá un correo electrónico con más información sobre la solicitud de aprobación de crédito. Las comprobaciones de crédito se suelen completar en dos días laborables.
 
-Si el perfil de facturación está a favor de una factura, recibe un correo electrónico cuando el extracto de facturación está listo para ver. Este correo electrónico no contiene una copia del extracto de facturación. Sin embargo, puede elegir recibir una copia del extracto de [facturación por correo electrónico.](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email) El extracto de facturación incluye detalles sobre las opciones para realizar un pago y dónde enviarlo. Si escribe un número de pedido de compra (PO) en su perfil de facturación, el número aparecerá en el extracto de facturación. Para información sobre cómo acceder a los extractos de facturación, vea [Ver su factura](view-your-bill-or-invoice.md).
+Si el perfil de facturación está a favor de una factura, recibe un correo electrónico cuando el extracto de facturación está listo para ver. Este correo electrónico no contiene una copia del extracto de facturación. Pero también tiene la posibilidad de [recibir una copia del extracto de facturación por correo electrónico](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). El extracto de facturación incluye información sobre las opciones de pago, además de dónde debe enviarse. Si escribe un número de pedido de compra (PO) en su perfil de facturación, el número aparecerá en el extracto de facturación. Para información sobre cómo acceder a los extractos de facturación, vea [Ver su factura](view-your-bill-or-invoice.md).
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>¿Dónde envío mi cheque o pago por EFT?
 

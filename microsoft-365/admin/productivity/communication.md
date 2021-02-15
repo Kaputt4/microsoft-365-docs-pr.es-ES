@@ -38,7 +38,7 @@ Para empezar a trabajar con información de comunicación, las personas de su or
 - Yammer
 - Exchange Online
 
-Para obtener más información, [vea asignar licencias a los usuarios.](../manage/assign-licenses-to-users.md)
+Para obtener más información, vea [asignar licencias a los usuarios.](../manage/assign-licenses-to-users.md)
 
 Después de que los usuarios hayan estado activos en los productos anteriores al menos una vez en los últimos 28 días, empezará a ver las conclusiones.
 
@@ -72,7 +72,7 @@ Microsoft 365 proporciona a los usuarios la flexibilidad para adaptarse al estil
    - Resalta el (numerador/denominador) usado para calcular el porcentaje expresado en el encabezado:
      - **Numerador:**# de personas que usan más de un modo de comunicación en los últimos 28 días
      - **Denominador:**# de personas marcadas como habilitadas para más de un producto de comunicación en los últimos 28 días
-   - **El valor de** punto de referencia de la métrica clave también se muestra como un porcentaje
+   - **El valor de punto** de referencia de la métrica clave también se muestra como un porcentaje
 
 4. **Ver recursos de comunicación:** Al hacer clic aquí, se incluye todo el contenido de soporte técnico en forma de vídeos o artículos relacionados con la comunicación. Desde estos puedes navegar a la lista de reproducción personalizada para la comunicación y, posteriormente, para todas las categorías de puntuación de productividad.
 
@@ -96,7 +96,7 @@ También le proporcionamos información que le ayudará a obtener visibilidad de
 
 :::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Desglose de los modos de comunicación.]":::
 
-1. **Encabezado:** Destaca el objetivo de la información para proporcionar un desglose detallado de los distintos modos de comunicación que se tienen en cuenta dentro de la comunicación.
+1. **Encabezado:** Destaca el objetivo de la información para proporcionar un desglose detallado de los distintos modos de comunicación que se tienen en cuenta en la comunicación.
 
 2. **Cuerpo:** Proporciona información sobre el valor del uso de diferentes modos para compartir conocimientos.
 
@@ -129,7 +129,7 @@ También le proporcionamos información que le ayudará a obtener visibilidad de
 
 3. **Visualización:** Desglosa la tasa de respuesta de los nuevos subprocesos de correo electrónico en función de si @mentions o no:
 
-   - **Respuestas a mensajes de correo electrónico con \@ menciones:** la parte coloreada y la fracción representan la tasa de respuesta para los nuevos subprocesos de correo electrónico que contienen @mentions. Esta fracción se construye a partir de:
+   - **Respuestas a correos electrónicos con \@ menciones:** la parte coloreada y la fracción representan la tasa de respuesta de los nuevos subprocesos de correo electrónico que contienen @mentions. Esta fracción se construye a partir de:
    
      - **Numerador:** Nuevos subprocesos de correo electrónico @mentions que se iniciaron y recibieron una respuesta en los últimos 28 días.
      - **Denominador:** Nuevos subprocesos de correo electrónico @mentions que se iniciaron en los últimos 28 días.
@@ -137,7 +137,7 @@ También le proporcionamos información que le ayudará a obtener visibilidad de
    - Respuestas a mensajes de correo electrónico sin **\@ menciones:** la parte coloreada y la fracción representan la tasa de respuesta de los nuevos subprocesos de correo electrónico que @mentions. Esta fracción se construye a partir de:
    
      - **Numerador:** Nuevos subprocesos de correo electrónico que no contienen @mentions, que se iniciaron y también recibieron una respuesta en los últimos 28 días.
-     - **Denominador:** Nuevos subprocesos de correo electrónico que @mentions que se iniciaron en los últimos 28 días.
+     - **Denominador:** Nuevos subprocesos de correo electrónico que no @mentions que se iniciaron en los últimos 28 días.
      
 4. **Ver contenido relacionado:** Seleccione este vínculo para ver vídeos intercalados y otro contenido de ayuda relacionado.
 

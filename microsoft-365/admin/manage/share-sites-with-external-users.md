@@ -75,7 +75,7 @@ El uso compartido externo está activado de forma predeterminada en el nivel de 
   
 2. En la página que se abre, elija si los usuarios solo pueden compartir con invitados existentes, invitados nuevos y existentes, o cualquier persona. 
     
-3. Haga clic en **Guardar**.
+3. Seleccione **Guardar**.
     
 Después de habilitar el uso compartido externo en el nivel de organización, puede ajustar la configuración de uso compartido para deshabilitar el uso compartido externo para determinados sitios. Para obtener información, vea Activar o desactivar el uso compartido [externo para un sitio.](/sharepoint/change-external-sharing-site)
   
