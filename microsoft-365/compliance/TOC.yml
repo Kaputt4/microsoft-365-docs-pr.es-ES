@@ -156,7 +156,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Usar etiquetas de confidencialidad en las aplicaciones de Office
+        - name: Administrar etiquetas de confidencialidad en las aplicaciones de Office
           href: sensitivity-labels-office-apps.md
     - name: Cifrado
       items:
