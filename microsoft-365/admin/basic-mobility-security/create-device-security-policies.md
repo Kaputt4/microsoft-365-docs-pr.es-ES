@@ -32,7 +32,7 @@ Puede usar movilidad y seguridad básicas para crear directivas de dispositivo q
 ## <a name="before-you-begin"></a>Antes de empezar
 
 > [!IMPORTANT]
-> Para poder crear una directiva de dispositivo móvil, debes activar y configurar La movilidad y la seguridad básicas. Para obtener más información, consulta Información general sobre movilidad y seguridad básicas.
+> Para poder crear una directiva de dispositivo móvil, debe activar y configurar la movilidad y la seguridad básicas. Para obtener más información, consulta Información general sobre movilidad y seguridad básicas.
 
 - Obtén información sobre los dispositivos, las aplicaciones de dispositivos móviles y la configuración de seguridad que admiten movilidad y seguridad básicas. Vea [las funcionalidades de movilidad y seguridad básicas.](capabilities.md)
 - Cree grupos de seguridad que incluyan a los usuarios de Microsoft 365 a los que desea implementar directivas y para los usuarios a los que quizás quiera excluir del bloqueo del acceso a Microsoft 365. Antes de implementar una nueva directiva en la organización, se recomienda probarla implementándola para un número reducido de usuarios. Puede crear y usar un grupo de seguridad que incluya solo usted mismo o un número reducido de usuarios de Microsoft 365 que puedan probar la directiva por usted. Para obtener más información acerca de los grupos de seguridad, vea [Crear, editar o eliminar un grupo de seguridad.](https://go.microsoft.com/fwlink/p/?LinkId=518555)
@@ -40,7 +40,7 @@ Puede usar movilidad y seguridad básicas para crear directivas de dispositivo q
 - Antes de implementar directivas, haga que su organización conozca los posibles impactos de inscribir un dispositivo en Movilidad y Seguridad básicas. En función de cómo configure las directivas, se puede bloquear el acceso de los dispositivos no compatibles a Microsoft 365 y los datos, incluidas las aplicaciones instaladas, las fotos y la información personal en un dispositivo inscrito, y los datos se pueden eliminar.
 
 >[!NOTE]
->Las directivas y las reglas de acceso creadas en Movilidad y seguridad básicas para Microsoft 365 Empresa Standard reemplazan Exchange ActiveSync las directivas de buzón de dispositivo móvil y las reglas de acceso de dispositivo creadas en el Centro de administración de Exchange. Después de inscribir un dispositivo en movilidad básica y seguridad para Microsoft 365 Empresa Standard, se omite cualquier directiva de buzón de dispositivo móvil o regla de acceso de dispositivo de Exchange ActiveSync aplicada al dispositivo. Para obtener más información sobre Exchange ActiveSync, [consulte Exchange ActiveSync en Exchange Online.](https://go.microsoft.com/fwlink/p/?LinkId=524380)
+>Las directivas y las reglas de acceso creadas en Movilidad y seguridad básicas para Microsoft 365 Empresa Standard invalidan Exchange ActiveSync las directivas de buzón de dispositivo móvil y las reglas de acceso de dispositivo creadas en el Centro de administración de Exchange. Después de inscribir un dispositivo en movilidad básica y seguridad para Microsoft 365 Empresa Standard, se omite cualquier directiva de buzón de dispositivo móvil o regla de acceso de dispositivo de Exchange ActiveSync aplicada al dispositivo. Para obtener más información sobre Exchange ActiveSync, [consulte Exchange ActiveSync en Exchange Online.](https://go.microsoft.com/fwlink/p/?LinkId=524380)
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>Paso 1: Crear una directiva de dispositivo e implementarla en un grupo de prueba
 
@@ -54,7 +54,7 @@ Antes de empezar, asegúrese de que ha activado y configurado movilidad y seguri
 
 3. En la **página Configuración de** directiva, especifique los requisitos que desea aplicar a los dispositivos móviles de su organización.
 
-4. **Requerir la administración de perfiles** de correo electrónico: cuando se habilita, los dispositivos que no tienen un perfil de correo electrónico administrado por Movilidad y seguridad básicas se consideran no compatibles. Un dispositivo no puede tener un perfil de correo electrónico administrado cuando no está correctamente dirigido o si el usuario configura manualmente la cuenta de correo electrónico en el dispositivo. Cuando lo deja **sin habilitar** (predeterminado), esta configuración no se evalúa para el cumplimiento o el incumplimiento. Para obtener instrucciones sobre cómo los usuarios pueden cumplir con esta opción cuando se selecciona esta opción, consulte Se encontró una [cuenta de correo electrónico existente.](https://docs.microsoft.com/intune-user-help/existing-company-email-account-found)
+4. **Requerir la administración de perfiles** de correo electrónico: cuando se habilita, los dispositivos que no tienen un perfil de correo electrónico administrado por Movilidad y seguridad básicas se consideran no compatibles. Un dispositivo no puede tener un perfil de correo electrónico administrado cuando no está dirigido correctamente o si el usuario configura manualmente la cuenta de correo electrónico en el dispositivo. Cuando la deja **sin habilitar** (predeterminada), esta configuración no se evalúa para el cumplimiento o el incumplimiento. Para obtener instrucciones sobre cómo los usuarios pueden cumplir con esta opción cuando se selecciona esta opción, consulte Se encontró una [cuenta de correo electrónico existente.](https://docs.microsoft.com/intune-user-help/existing-company-email-account-found)
 
 5. On the **Do you want to apply this policy now?** page, choose the groups that you want to apply this policy to.
 
@@ -105,7 +105,7 @@ Si desea excluir algunas personas de las comprobaciones de acceso condicional en
 
    :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="La movilidad y la seguridad básicas crean una opción de directiva":::
 
-3. Seleccione **Agregar** para agregar el grupo de seguridad que tiene usuarios que desea excluir de tener acceso bloqueado a Microsoft 365. Cuando un usuario se ha agregado a esta lista, puede acceder al correo electrónico de Microsoft 365 cuando usa un dispositivo no compatible.
+3. Seleccione **Agregar** para agregar el grupo de seguridad que tiene usuarios que desea excluir de haber bloqueado el acceso a Microsoft 365. Cuando un usuario se ha agregado a esta lista, puede acceder al correo electrónico de Microsoft 365 cuando usa un dispositivo no compatible.
 
 4. Seleccione el grupo de seguridad que desea usar en el panel **Seleccionar** grupo.
 
@@ -146,7 +146,7 @@ Al eliminar una directiva o quitar un usuario de un grupo en el que se implement
 
 La directiva se quita del dispositivo móvil para cada usuario, la directiva se aplica a la próxima vez que el dispositivo se comprueba con movilidad y seguridad básicas. Si implementas una nueva directiva que se aplica a estos dispositivos de usuario, se les pedirá que vuelvan a inscribirse en movilidad y seguridad básicas.
 
-También puedes borrar un dispositivo completamente o borrar selectivamente la información de la organización del dispositivo. Para obtener más información, consulta [Borrar un dispositivo móvil en Movilidad y seguridad básicas.](wipe-mobile-device.md)
+También puedes borrar por completo un dispositivo o borrar selectivamente la información de la organización del dispositivo. Para obtener más información, [consulta Borrar un dispositivo móvil en Movilidad y seguridad básicas.](wipe-mobile-device.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

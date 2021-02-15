@@ -37,7 +37,7 @@ ms.locfileid: "49925031"
 
 Si recibe una invitación de Microsoft Teams para unirse a un equipo, hay un par de pasos para aceptar la invitación.
 
-1. Abra la invitación por correo electrónico y seleccione **Abrir Microsoft Teams.** Si no ve la invitación, compruebe su carpeta de correo no deseado o correo no deseado.
+1. Abra la invitación por correo electrónico y seleccione **Abrir Microsoft Teams.** Si no ve la invitación, compruebe la carpeta de correo no deseado.
   1. Si su dirección de correo electrónico no se ha usado previamente para crear una cuenta de Microsoft, tendrá que crear una.
 
      En el  **cuadro de diálogo**  Crear cuenta, seleccione  **Siguiente,** cree una contraseña y seleccione  **Siguiente**.

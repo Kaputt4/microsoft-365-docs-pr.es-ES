@@ -39,7 +39,7 @@ Use las cuatro sugerencias siguientes para trabajar donde esté: Descargue una i
 
 **¿Está pensando en trabajar desde casa con regularidad?**
 
-Use esta plantilla para analizar sus hábitos y la forma en que le gusta trabajar para crear un plan que funcione durante la transición a una oficina en casa. Recopila los materiales y el proceso para optimizar el espacio y mantener la eficacia y la tarea. [Descargar la plantilla](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
+Use esta plantilla para analizar sus hábitos y la forma en que le gusta trabajar para crear un plan que funcione al realizar la transición a una oficina en casa. Recopila los materiales y los materiales para optimizar el espacio y mantener la eficacia y la tarea. [Descargar la plantilla](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
 
 ## <a name="install-outlook-and-keep-in-touch"></a>Instalar Outlook y mantenerse en contacto
 

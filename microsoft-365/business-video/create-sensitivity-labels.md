@@ -41,7 +41,7 @@ Las etiquetas de confidencialidad le permiten clasificar y proteger el contenido
 1. En el [Centro de administración,](https://admin.microsoft.com)seleccione el **Centro de administración de** cumplimiento.
 1. Seleccione **Clasificación y,** a continuación, **Etiquetas de confidencialidad.**
 1. Seleccione **Crear una etiqueta** y, cuando aparezca la advertencia, seleccione **Sí**.
-1. Escriba un **nombre de etiqueta,** información **sobre** herramientas y **descripción.** Seleccione **Siguiente**.
+1. Escriba un **nombre de etiqueta,** **información sobre** herramientas y **descripción.** Seleccione **Siguiente**.
 1. Activar **cifrado**. Elija cuándo desea asignar permisos, si desea que el acceso de los usuarios al contenido expire y si desea permitir el acceso sin conexión.
 1. **Seleccione Asignar permisos y,** a continuación, **agregue estas direcciones de correo electrónico o dominios.**
 1. Escriba una dirección de correo electrónico o un nombre de dominio (como Contoso.org).  Seleccione **Agregar** y repita para cada dirección de correo electrónico o dominio que desee agregar.
@@ -55,7 +55,7 @@ Las etiquetas de confidencialidad le permiten clasificar y proteger el contenido
 1. De forma predeterminada, las etiquetas aparecen en las aplicaciones de Office en este orden: **Confidencial,** **Interna** y **Pública**. Para cambiar el orden, para cada etiqueta, seleccione **Más** acciones (puntos suspensivos) y, a continuación, mueva la etiqueta hacia arriba o hacia abajo. Normalmente, los permisos se enumeran del nivel más bajo al más alto de permisos.
 1. Para agregar una subetiqueta a una etiqueta, seleccione **Más acciones** y, a continuación, **Agregue subdominio.**
 1. Cuando haya terminado, elija **Publicar etiquetas,** **Elegir etiquetas** para publicar y, a continuación, **Agregar**. Seleccione las etiquetas que desea publicar y, a continuación, **seleccione Agregar**, **Listo** y, a continuación, **Siguiente**.
-1. De forma predeterminada, la nueva directiva de etiquetas se aplica a todos los usuarios. Si desea limitar a quién se aplica la directiva, seleccione Elegir usuarios **o** grupos y, a continuación, **Agregar**. Seleccione a quién desea que se aplique la directiva y, a continuación, **seleccione Agregar**, **Listo** y, a continuación, **Siguiente**.
+1. De forma predeterminada, la nueva directiva de etiquetas se aplica a todos los usuarios. Si desea limitar a quién se aplica la directiva, seleccione **Elegir usuarios o** grupos y, a continuación, **Agregar**. Seleccione a quién desea aplicar la directiva y, a continuación, seleccione **Agregar**, **Listo** y, a continuación, **Siguiente**.
 1. Si desea una etiqueta predeterminada para documentos y correo electrónico, seleccione la etiqueta que desee en la lista desplegable. Revise la configuración restante, ajuste según sea necesario y, a continuación, seleccione **Siguiente**.
 1. Escriba un **nombre** y **una descripción** para la directiva. Seleccione **Siguiente**.
 1. Revise la configuración y, a continuación, **seleccione Publicar**.

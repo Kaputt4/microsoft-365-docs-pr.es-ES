@@ -34,7 +34,7 @@ ms.locfileid: "49927927"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S?autoplay=false]
 
-Para permitir que los usuarios restablezcan sus propias contraseñas sin tener que ponerse en contacto con usted cada vez, puede configurar el autoservicio de restablecimiento de contraseña en Microsoft 365 Empresa Premium.
+Para permitir que los usuarios restablezcan sus propias contraseñas sin tener que ponerse en contacto con usted cada vez, puede configurar el restablecimiento de contraseñas sin intervención del administrador en Microsoft 365 Empresa Premium.
 
 ## <a name="try-it"></a>¿Se atreve?
 

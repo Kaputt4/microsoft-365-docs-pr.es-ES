@@ -96,7 +96,7 @@ No se recomienda deshabilitar esta configuración, ya que esto permitiría a los
 
 **Valor predeterminado:** Deshabilitado
 
-No recomendamos usar Flash debido a riesgos de seguridad asociados. Si todavía tiene procesos que dependen de Flash, establezca la directiva **[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** para habilitar Flash para los sitios que la necesiten. Si no puedes mantener una lista de sitios permitidos para usar Flash, presentar una solicitud de cambio para cambiar el valor a **Hacer** clic y reproducir, lo que permite a los usuarios elegir cuándo es adecuado ejecutar Flash.
+No recomendamos usar Flash debido a los riesgos de seguridad asociados. Si todavía tiene procesos que dependen de Flash, establezca la directiva **[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** para habilitar Flash para los sitios que la necesiten. Si no puedes mantener una lista de sitios permitidos para usar Flash, presentar una solicitud de cambio para cambiar el valor a **Hacer** clic y reproducir, lo que permite a los usuarios elegir cuándo es adecuado ejecutar Flash.
 
 ### <a name="password-manager"></a>Administrador de contraseñas
 

@@ -37,7 +37,7 @@ ms.locfileid: "49928179"
 
 Cree un equipo de toda la organización en Microsoft Teams del que puedan formar parte todos los miembros de su empresa. A medida que agregue más usuarios a Microsoft 365, se agregarán automáticamente a este equipo.
 
-1. En Microsoft Teams, seleccione  **Teams** **y, a continuación, cree un equipo.**
+1. En Microsoft Teams, seleccione  **Teams** **y, a continuación, cree equipo.**
 2. Elija **Crear un equipo desde cero.**
 3. Seleccione **Crear un equipo para toda la organización.**
 

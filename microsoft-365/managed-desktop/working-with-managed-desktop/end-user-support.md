@@ -40,7 +40,7 @@ Obtener ayuda es una aplicación que está instalada en todos los dispositivos d
 ### <a name="prerequisites"></a>Requisitos previos
 Para que los usuarios puedan obtener ayuda a través de la aplicación, asegúrese de que se cumplen estos requisitos previos:
 
-- El dispositivo debe estar registrado con Escritorio administrado de Microsoft mediante uno de los métodos de Configurar dispositivos de Escritorio administrado de [Microsoft,](../get-started/set-up-devices.md)como Registrar nuevos dispositivos [usted mismo.](../get-started/register-devices-self.md)
+- El dispositivo debe estar registrado con Escritorio administrado de Microsoft mediante uno de los métodos de Configurar dispositivos de Escritorio administrado de [Microsoft,](../get-started/set-up-devices.md)como [Registrar nuevos dispositivos usted mismo.](../get-started/register-devices-self.md)
 - El idioma para mostrar del dispositivo debe establecerse en cualquiera de estas configuraciones regionales en inglés: en-us, en-gb, en-au, en-nz o en-ca.
 - La aplicación Obtener ayuda debe estar actualizada. Para confirmar su estado, comprueba si hay actualizaciones de aplicaciones en Microsoft Store.
 - Algunos [puntos de conexión](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) deben ser accesibles desde el dispositivo.

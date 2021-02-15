@@ -26,9 +26,9 @@ ms.locfileid: "49864881"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>Iniciar el portal mediante el Programador de inicio del portal
 
-Un portal es un sitio de SharePoint en la intranet que tiene un gran número de visores de sitio que emplean el contenido en el sitio. El inicio del portal en oleadas es una parte importante de garantizar que los usuarios tengan una experiencia fluida y de rendimiento al obtener acceso a un nuevo portal de SharePoint Online. 
+Un portal es un sitio de SharePoint en la intranet que tiene un gran número de visores de sitio que emplean el contenido en el sitio. Iniciar el portal en oleadas es una parte importante de garantizar que los usuarios tengan una experiencia fluida y con un rendimiento que acceda a un nuevo portal de SharePoint Online. 
 
-Iniciar en oleadas es una forma clave de lanzar el portal, como se detalla en la planeación del plan de lanzamiento de lanzamiento del [portal en SharePoint Online.](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide) El Programador de inicio del portal está diseñado para ayudarle a seguir un enfoque de implementación por fases o oleadas mediante la administración de redireccionamientos para el nuevo portal. Durante cada una de las oleadas, puedes recopilar comentarios de los usuarios y supervisar el rendimiento durante cada oleada de implementación. Esto tiene la ventaja de introducir lentamente el portal, darle la opción de pausar y resolver problemas antes de continuar con la siguiente oleada y, en última instancia, garantizar una experiencia positiva para los usuarios. 
+Iniciar en oleadas es una forma clave de lanzar el portal, como se detalla en la planeación del plan de lanzamiento de lanzamiento del [portal en SharePoint Online.](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide) El Programador de inicio del portal está diseñado para ayudarle a seguir un enfoque de implementación por fases o oleadas mediante la administración de redireccionamientos para el nuevo portal. Durante cada una de las oleadas, puedes recopilar comentarios de los usuarios y supervisar el rendimiento durante cada oleada de implementación. Esto tiene la ventaja de introducir lentamente el portal, lo que te da la opción de pausar y resolver problemas antes de continuar con la siguiente oleada y, en última instancia, garantizar una experiencia positiva para los usuarios. 
 
 Hay dos tipos de redirección: 
 - bidireccional: inicie un nuevo portal de SharePoint Online moderno para reemplazar un portal moderno o clásico de SharePoint existente 
@@ -66,7 +66,7 @@ El número de oleadas necesarias depende del tamaño de inicio esperado.
 - De 30.000 a 100.000 usuarios: 5 oleadas
 - Más de 100.000 usuarios: 5 oleadas y póngase en contacto con su equipo de cuentas de Microsoft
 
-### <a name="steps-for-bidirectional-redirection"></a>Pasos para el redireccionamiento bidireccional
+### <a name="steps-for-bidirectional-redirection"></a>Pasos para la redirección bidireccional
 
 La redirección bidireccional implica el inicio de un nuevo portal de SharePoint Online moderno para reemplazar un portal moderno o clásico de SharePoint existente. Los usuarios de las oleadas activas serán redirigidos al nuevo sitio independientemente de si navegan al sitio antiguo o nuevo. Los usuarios de una oleada no iniciada que intenten obtener acceso al nuevo sitio serán redirigidos de nuevo al sitio antiguo hasta que se inicia su oleada. 
 
@@ -138,4 +138,4 @@ Ejemplo:
 2. Valide que no se produce ningún redireccionamiento para todos los usuarios.
 
 ## <a name="learn-more"></a>Más información
-[Planeación del plan de implementación del lanzamiento del portal en SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)
+[Planeación del plan de lanzamiento de lanzamiento del portal en SharePoint Online](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)

@@ -42,7 +42,7 @@ Si un hacker obtiene acceso al buzón de un usuario, puede reenviar automáticam
 1. Seleccione **Más opciones.** Asigne un nombre a la nueva regla.
 1. A continuación, abra la lista desplegable para **aplicar esta regla si**, seleccione el **remitente** y, a continuación, sea **interno externo**.
 1. Seleccione **Dentro de la organización** y, a continuación, **Aceptar**.
-1. Elija **agregar condición,** abra la lista desplegable, seleccione **Las propiedades del mensaje** y, a continuación, incluya el tipo de **mensaje.**
+1. Elija **agregar condición,** abra la lista desplegable, seleccione **Las propiedades del mensaje** y, a continuación, incluya el tipo de **mensaje**.
 1. Abra la **lista desplegable seleccionar tipo** de mensaje, elija **Reenviar** automáticamente y, a continuación, **Aceptar.**
 1. Abra la **lista desplegable Hacer** lo siguiente, seleccione Bloquear **el** mensaje y, a continuación, **rechace el** mensaje e incluya una explicación.
 1. Escriba el texto del mensaje para su explicación y, a continuación, seleccione **Aceptar.**

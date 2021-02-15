@@ -18,7 +18,7 @@ ms.locfileid: "49841042"
 ---
 # <a name="assign-licenses"></a>Asignar licencias
 
-Como parte de la preparación para inscribirse en el Escritorio administrado de Microsoft, debe asegurarse de haber obtenido las licencias necesarias. Si aún no ha obtenido las licencias, consulte [Más](../get-ready/prerequisites.md#more-about-licenses) información sobre las licencias para obtener más información sobre exactamente qué licencias necesita.
+Como parte de la preparación para inscribirse en el Escritorio administrado de Microsoft, debe asegurarse de que ha obtenido las licencias necesarias. Si aún no ha obtenido las licencias, consulte [Más](../get-ready/prerequisites.md#more-about-licenses) información sobre las licencias para obtener más información sobre exactamente qué licencias necesita.
 
 
 Si todas las licencias están alineadas, es el momento de asignarlas a los usuarios. Para asignar licencias, le recomendamos que aproveche la característica de licencias basadas en [grupos](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) de Azure Active Directory.

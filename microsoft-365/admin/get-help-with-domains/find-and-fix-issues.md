@@ -35,7 +35,7 @@ ms.locfileid: "49926395"
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
-Configurar el dominio para que funcione con Microsoft 365 puede ser complicado. El sistema DNS puede ser un poco enrevesado y la configuración DNS de su dominio afecta a importantes actividades empresariales, como el correo electrónico.
+Configurar el dominio para que funcione con Microsoft 365 puede resultar complicado. El sistema DNS puede ser un poco enrevesado y la configuración DNS de su dominio afecta a importantes actividades empresariales, como el correo electrónico.
 
 > [!NOTE]
 > Puede comprobar si hay problemas con su dominio comprobando su estado. Vaya a **Dominios**  >  **de instalación** y vea las notificaciones en la **columna** Estado. Si ves un problema, selecciona Más acciones (tres puntos) y, a continuación, elige **Comprobar estado.** En el panel que se abre se describen los problemas que se produzcan con el dominio.
@@ -75,7 +75,7 @@ Si ha configurado correctamente el registro MX y otros registros DNS de su domin
 
 Cuando agrega su dominio a Microsoft 365, normalmente el registro MX de su dominio se actualiza (por usted o Microsoft 365) para que apunte a Microsoft 365 y todo el correo electrónico enviado a ese dominio empezará a llegar a Microsoft 365. Asegúrese de que ha creado buzones en Microsoft 365 para todos los usuarios que tienen correo electrónico en su dominio ANTES de cambiar el registro MX.
   
-¿Qué ocurre si no desea mover el correo electrónico de todos los usuarios de su dominio a Microsoft 365? Puede tomar medidas para [pilotar Microsoft 365 con solo unas pocas direcciones de correo electrónico en su lugar.](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)
+¿Qué ocurre si no desea mover el correo electrónico de todos los usuarios de su dominio a Microsoft 365? Puede tomar medidas para [realizar pruebas piloto de Microsoft 365 con solo unas pocas direcciones de correo electrónico en su lugar.](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>¿No se puede confirmar el estado de la cuenta educativa o sin ánimo de lucro?
 <a name="BKMK_validateAcct"> </a>

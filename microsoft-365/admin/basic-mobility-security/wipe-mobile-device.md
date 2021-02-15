@@ -39,9 +39,9 @@ Los dispositivos móviles pueden almacenar información confidencial de la organ
 
 - **Cuando se elimina un dispositivo (Restablecimiento** de fábrica o Quitar datos de la compañía), el dispositivo se quita de la lista de dispositivos administrados.
     
-- **Restablecer automáticamente** un dispositivo: puedes configurar una directiva básica de movilidad y seguridad que restablece automáticamente un dispositivo de fábrica después de que el usuario intente introducir la contraseña del dispositivo un número específico de veces. Para ello, siga los pasos descritos en [Crear directivas de seguridad de dispositivos en movilidad y seguridad básicas.](create-device-security-policies.md)
+- **Restablecer automáticamente** un dispositivo: puedes configurar una directiva básica de movilidad y seguridad que restablece automáticamente un dispositivo de fábrica después de que el usuario intente introducir la contraseña del dispositivo un número específico de veces. Para ello, siga los pasos descritos en Crear directivas de [seguridad de dispositivos en movilidad y seguridad básicas.](create-device-security-policies.md)
     
-- **Si quieres conocer la experiencia del** usuario al borrar su dispositivo, consulta ¿Cuál es el impacto en el usuario y en el   [dispositivo?](#whats-the-user-and-device-impact).
+- **Si quieres conocer la experiencia del** usuario al borrar su dispositivo, consulta ¿Cuál es el impacto del usuario y del   [dispositivo?](#whats-the-user-and-device-impact).
 
 ## <a name="wipe-a-mobile-device"></a>Borrar un dispositivo móvil
 
@@ -60,8 +60,8 @@ Los dispositivos móviles pueden almacenar información confidencial de la organ
 6. Seleccione el tipo de eliminación remota que desea realizar.
 
     - Para realizar un borrado completo y restaurar el dispositivo a su configuración de fábrica, selecciona **Restablecimiento de fábrica.**
-    - Para realizar una eliminación selectiva y eliminar solo la información de la organización de Microsoft 365, seleccione **Quitar datos de la empresa.**
-    - Para quitar el dispositivo de la organización, seleccione **Quitar dispositivo.**
+    - Para realizar una eliminación selectiva y eliminar solo la información de la organización de Microsoft 365, **seleccione Quitar datos de la empresa.**
+    - Para quitar el dispositivo de la organización, selecciona **Quitar dispositivo.**
 
 7. Seleccione **Sí** para confirmar.
 
@@ -81,11 +81,11 @@ Borre un dispositivo por estos motivos:
 
 La eliminación se envía inmediatamente al dispositivo móvil y el dispositivo se marca como no compatible en Azure Active Directory. Aunque todos los datos se quitan cuando un dispositivo se restablece a los valores predeterminados de fábrica, en la tabla siguiente se describe qué contenido se quita para cada tipo de dispositivo cuando se quitan los datos de la empresa.
 
-|**Impaciación de contenido**|**iOS 10 y versiones posteriores**|**Android 5 y versiones posteriores**|
+|**Amenaza de contenido**|**iOS 10 y versiones posteriores**|**Android 5 y versiones posteriores**|
 |:-----|:-----|:-----|
 |Los datos de la aplicación de Microsoft 365 se borran si el dispositivo está protegido por directivas de Intune App Protection. Las aplicaciones no se quitan. En el caso de dispositivos no protegidos por directivas de administración de aplicaciones móviles (MAM), Outlook y OneDrive no quitarán los datos almacenados en caché.<br/>**Nota** Para aplicar directivas de Protección de aplicaciones de Intune, debes tener una licencia de Intune.|Sí|Sí|
 |La configuración de directiva aplicada por movilidad básica y seguridad a los dispositivos ya no se aplica; los usuarios pueden cambiar la configuración.|Sí|Sí|
-|Los perfiles de correo electrónico creados por Movilidad y seguridad básicas se quitan y se elimina el correo electrónico almacenado en caché en el dispositivo.|Sí|N/D|
+|Los perfiles de correo electrónico creados por movilidad y seguridad básicas se quitan y se elimina el correo electrónico almacenado en caché en el dispositivo.|Sí|N/D|
 >[!NOTE]
 >La aplicación Portal de empresa está disponible en la App Store para iOS y la Play Store para dispositivos Android.
 

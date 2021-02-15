@@ -44,7 +44,7 @@ Durante la construcción de consultas, use la referencia de esquema integrada pa
 
 - **Descripción de** las tablas: tipo de datos contenidos en la tabla y el origen de los datos.
 - **Columnas:** todas las columnas de la tabla.
-- **Tipos de acción:** valores posibles en la `ActionType` columna que representa los tipos de eventos admitidos por la tabla. Esta información solo se proporciona para las tablas que contienen información de eventos.
+- **Tipos de acción:** valores posibles en `ActionType` la columna que representa los tipos de evento admitidos por la tabla. Esta información solo se proporciona para las tablas que contienen información de eventos.
 - **Consulta de ejemplo:** consultas de ejemplo que ofrecen cómo se puede usar la tabla.
 
 ### <a name="access-the-schema-reference"></a>Obtener acceso a la referencia de esquema

@@ -34,7 +34,7 @@ ms.locfileid: "49927615"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
 
-Es posible que su empresa necesite varios nombres de dominio para distintos fines. Por ejemplo, es posible que desee agregar una ortografía diferente del nombre de la compañía porque los clientes ya la usan y sus comunicaciones no se han podido contactar con usted.
+Es posible que su empresa necesite varios nombres de dominio para distintos fines. Por ejemplo, es posible que desee agregar una ortografía diferente del nombre de la compañía porque los clientes ya lo están usando y sus comunicaciones no le han podido contactar.
 
 ## <a name="try-it"></a>¿Se atreve?
 

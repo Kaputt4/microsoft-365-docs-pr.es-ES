@@ -38,7 +38,7 @@ Antes de implementar certificados SCEP o PKCS en el Escritorio administrado de M
 
 Para permitir que un dispositivo se pueda proporcionar automáticamente con la configuración de Wi-Fi necesaria para la red empresarial, es posible que necesites un perfil de configuración Wi-Fi usuario. Puede configurar escritorio administrado de Microsoft para implementar estos perfiles en sus dispositivos. Si la seguridad de red requiere que los dispositivos sean parte del dominio local, es posible que también deba evaluar la infraestructura de red de Wi-Fi para asegurarse de que es compatible con dispositivos de Escritorio administrado de Microsoft (los dispositivos de Escritorio administrado de Microsoft solo están unidos a Azure AD). 
  
-Antes de implementar una configuración de Wi-Fi en dispositivos de Escritorio administrado de Microsoft, tendrá que recopilar los requisitos de la organización para cada red Wi-Fi cliente. Para facilitar esta actividad, puedes usar esta plantilla [de perfil wi-fi.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx)
+Antes de implementar una configuración Wi-Fi en dispositivos de Escritorio administrado de Microsoft, tendrá que recopilar los requisitos de la organización para cada red Wi-Fi cliente. Para facilitar esta actividad, puedes usar esta plantilla [de perfil WiFi.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx)
  
  
 ## <a name="wired-connectivity-requirements-and-8021x-authentication"></a>Requisitos de conectividad por cable y autenticación 802.1x 
@@ -50,7 +50,7 @@ Antes de implementar un perfil de configuración de red cableada en dispositivos
  
 1. Inicie sesión en un dispositivo que tenga configurado el perfil 802.1x existente y esté conectado a la red LAN.  
 2. Abra un símbolo del sistema con credenciales administrativas. 
-3. Busque el nombre de la interfaz LAN mediante la ejecución **de la interfaz netsh para mostrar la interfaz.** 
+3. Busque el nombre de la interfaz LAN ejecutando **netsh interface show interface**. 
 4. Exporte el XML de perfil LAN ejecutando **netsh lan export profile folder=.  Interface="interface_name"**. 
 5. Si necesita probar el perfil exportado en el dispositivo de Escritorio administrado de Microsoft, ejecute **netsh lan add profile filename="PATH_AND_FILENAME.xml" interface="INTERFACE_NAME"**. 
  

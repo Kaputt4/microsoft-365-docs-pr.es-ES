@@ -37,13 +37,13 @@ Puede usar la aplicación móvil Administrador de Microsoft 365 para administrar
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. Para obtener la aplicación móvil de administración de Microsoft 365, busque el administrador de  **Microsoft 365**  en la tienda de aplicaciones de su dispositivo e instál hacerlo.
+1. Para obtener la aplicación móvil de administración de Microsoft 365, busque el administrador de  **Microsoft 365**  en la tienda de aplicaciones de su dispositivo e instálelo.
 2. Inicie sesión con su dirección de correo electrónico de administrador global y vea el panel para ver el estado del servicio, supervisar las licencias de usuario y ver mensajes y solicitudes de servicio.
 3. Estas son algunas tareas comunes que puedes realizar con la aplicación:
 
 ### <a name="reset-a-users-password"></a>Restablecer la contraseña de un usuario
 
-1. En **Vínculos rápidos,** elija **Usuarios.**
+1. En  **Vínculos rápidos,** elija  **Usuarios**.
 2. En la **página** Usuarios, elija el nombre del usuario y, a continuación, **elija Restablecer contraseña.**
 3. Si desea que el usuario cambie su nueva contraseña cuando  inicie sesión por primera vez, active la casilla Cambiar al iniciar sesión por primera vez y, a continuación, elija **Restablecer**.
 4. Cuando se le pida confirmar, elija  **Sí** y, a continuación,  **Aceptar**.
@@ -60,4 +60,4 @@ Puede usar la aplicación móvil Administrador de Microsoft 365 para administrar
 
 1. En el menú principal, elija **Configuración.**
 2. En **Configuración de la** aplicación, elija **Notificaciones.**
-3. Active las casillas situadas junto **a Estado del** servicio y Centro de **mensajes.**
+3. Active las casillas situadas junto **al estado del servicio y** al Centro de **mensajes.**

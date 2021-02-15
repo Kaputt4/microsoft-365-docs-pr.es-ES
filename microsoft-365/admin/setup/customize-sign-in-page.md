@@ -29,7 +29,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/22/2021
 ms.locfileid: "49926911"
 ---
-# <a name="add-your-company-branding-to-the-sign-in-page"></a>Agregar la personalción de marca de su empresa a la página de inicio de sesión
+# <a name="add-your-company-branding-to-the-sign-in-page"></a>Agregar la personalación de marca de su empresa a la página de inicio de sesión
 
  Ahora puede usar la suscripción de Azure Active Directory (AD) que se incluye con su suscripción de Microsoft 365 para personalizar la página de inicio de sesión que ven los usuarios. 
   

@@ -34,7 +34,7 @@ ms.locfileid: "49926923"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidades en toda la organización
 
- Puede administrar firmas de correo electrónico agregando una firma de correo electrónico, un aviso de declinación de responsabilidades legales o una declaración de divulgación a los mensajes de correo electrónico que entran o salen de la organización. Puede configurarlo para que se aplique a todos los mensajes entrantes y salientes, como se muestra a continuación. O puede aplicarlo a determinados mensajes; por ejemplo, a aquellos que contengan palabras específicas o patrones de texto.
+ Puede administrar firmas de correo electrónico agregando una firma de correo electrónico, un aviso de declinación de responsabilidades legales o una declaración de divulgación a los mensajes de correo electrónico que entran o salen de su organización. Puede configurarlo para que se aplique a todos los mensajes entrantes y salientes, como se muestra a continuación. O puede aplicarlo a determinados mensajes; por ejemplo, a aquellos que contengan palabras específicas o patrones de texto.
 
  Vea un breve vídeo sobre la creación de una firma de correo electrónico en toda la empresa. <br><br>
   
@@ -45,7 +45,7 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Crear una firma que se aplique a todos los mensajes
 
 > [!TIP]
-> Las firmas de toda la organización se denominan "avisos de declinación de responsabilidades", independientemente de lo que incluyan. Por ejemplo, solo pueden ser una firma o también incluir su dirección, aviso legal u otra información que desee.
+> Las firmas de toda la organización se denominan "avisos de declinación de responsabilidades", independientemente de lo que incluyan. Por ejemplo, solo pueden ser una firma, o también incluir su dirección, declinación de responsabilidades legales u otra información que desee.
     
 ::: moniker range="o365-worldwide"
 

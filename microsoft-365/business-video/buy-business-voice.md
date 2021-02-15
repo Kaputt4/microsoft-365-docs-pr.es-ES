@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo comprar el complemento microsoft 365 Business Voice.
+description: Obtenga información sobre cómo comprar el complemento de Microsoft 365 Business Voice.
 ms.openlocfilehash: b52d10587ce00cc2a9cd3bdb5364a0ba54cd2dbf
 ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
@@ -43,7 +43,7 @@ Con Microsoft 365 Business Voice, puede realizar y recibir llamadas, usar audioc
 1. Seleccione **Microsoft 365 Business Voice**.
 
     Si no lo ve, primero debe comprar una suscripción empresarial que incluya Microsoft Teams.
-1. Escriba el número de usuarios para los que desea obtener licencias y seleccione **Des check out now**.
+1. Escribe el número de usuarios para los que quieres licencias y selecciona **Des check out now**.
 1. Seleccione **Recarga automática para** comprar créditos de comunicación si es necesario y evitar interrupciones del servicio.
 
     Los créditos de comunicación se usan para llamadas internacionales, números gratuitos y minutos de llamadas adicionales.

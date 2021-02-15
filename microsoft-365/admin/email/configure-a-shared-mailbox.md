@@ -81,7 +81,7 @@ No es necesario asignar una licencia al buzón compartido para reenviar el corre
 
 ::: moniker-end
 
-2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **Edición de reenvío de correo** \> **electrónico.**
+2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **Editar reenvío de correo** \> **electrónico.**
     
 3. Establezca el botón de **alternancia en Activar** y escriba una dirección de correo electrónico a la que reenviar los mensajes. Puede ser cualquier dirección de correo electrónico válida. Para reenviar a varias direcciones, debe crear un grupo de distribución para las direcciones y, [a](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) continuación, escribir el nombre del grupo en este cuadro.
     
@@ -262,7 +262,7 @@ Si decide no mostrar el buzón compartido en la lista global de direcciones, el 
 
 ::: moniker-end
 
-2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **Mostrar en la lista global de direcciones Editar** \> .
+2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **Mostrar en la lista global de direcciones** \> **Editar**.
 
 3. Establezca el botón de **alternancia en Activar** o **Desactivar.** 
 

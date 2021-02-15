@@ -45,7 +45,7 @@ Obtenga más información sobre cómo [compartir archivos fuera de su](securely-
 
 ## <a name="share-and-collaborate-with-a-client-or-business-partner"></a>Compartir y colaborar con un cliente o socio comercial
 
-¿Compartir como parte de un proyecto? ¿O como parte de una relación continua con un partner o proveedor de negocios? Puede poner un poco más de tiempo, configurar un equipo en Microsoft Teams y tener un lugar continuo para compartir y trabajar juntos. Es fácil trabajar con personas ajenas a su empresa e incluso puede configurar canales independientes para que otros proveedores o partners puedan mantener todo recto.
+¿Compartir como parte de un proyecto? ¿O como parte de una relación continua con un partner o proveedor de negocios? Puede poner un poco más de tiempo, configurar un equipo en Microsoft Teams y tener un lugar continuo para compartir y trabajar juntos. Es fácil trabajar con personas externas a su empresa e incluso puede configurar canales independientes para que otros proveedores o socios puedan mantener todo recto.
 
 1. Cree el equipo.
 1. Cargue los archivos.

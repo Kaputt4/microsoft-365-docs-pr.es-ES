@@ -35,7 +35,7 @@ ms.locfileid: "49925499"
 >**El período de vista previa del conector ServiceNow ha finalizado**<br>
 >Esta funcionalidad ya no está disponible. Gracias por sus comentarios y soporte continuo mientras determinamos los pasos siguientes.
 
-El [Centro de seguridad de Microsoft 365](overview-security-center.md) se ha mejorado con la capacidad de crear y realizar un seguimiento de vales de forma nativa en ServiceNow. [Más información sobre ServiceNow](https://www.servicenow.com/)
+El [Centro de seguridad de Microsoft 365](overview-security-center.md) se ha mejorado con la capacidad de crear y realizar un seguimiento de los vales de forma nativa en ServiceNow. [Más información sobre ServiceNow](https://www.servicenow.com/)
 
 En el centro de seguridad, los administradores de seguridad pueden enviar una acción de mejora de puntuación de seguridad de [Microsoft](microsoft-secure-score.md) directamente a ServiceNow y crear un vale. Tanto la administración de incidentes como los vales de administración de cambios se pueden crear. Realiza un seguimiento de los vales en la página principal del centro de seguridad y ServiceNow.
 

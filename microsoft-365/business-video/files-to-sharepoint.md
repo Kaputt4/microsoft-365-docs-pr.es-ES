@@ -37,11 +37,11 @@ Después de registrarse en Microsoft 365 Empresa Premium,&#39;copiar los archivo
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. Abra Microsoft Teams y, a continuación, abra un equipo al que todos los usuarios de su empresa puedan tener acceso.
+1. Abra Microsoft Teams y, a continuación, abra un equipo al que todos los miembros de su empresa puedan tener acceso.
 2. Seleccione **Archivos** y, a continuación, **seleccione Abrir en SharePoint.**
 3. Seleccione  **Documentos** para ir a la ubicación donde se almacena todo en el sitio.
 4. Seleccione  **Sincronizar** y, a continuación,  **seleccione Sí**. Esto sincroniza los archivos del sitio de SharePoint con el equipo.
-5. En el Explorador de archivos,&#39;ahora verá la carpeta de documentos sincronizados del sitio de SharePoint de&#39;empresa. Si sincroniza sitios de SharePoint adicionales, se mostrarán por encima o por debajo de este. Haga clic con el botón secundario en la carpeta de documentos sincronizados y ábrala en una nueva ventana para verla en paralelo con los archivos de la empresa que desea mover.
+5. En el Explorador de archivos,&#39;ahora verá la carpeta de documentos sincronizados de su empresa&#39;sitio de SharePoint. Si sincroniza sitios de SharePoint adicionales, se mostrarán por encima o por debajo de este. Haga clic con el botón secundario en la carpeta de documentos sincronizados y ábrala en una nueva ventana para verla en paralelo con los archivos de la empresa que desea mover.
 6. Seleccione todos los archivos que desee mover y arrástrelos a la carpeta sincronizada de SharePoint. Las flechas circulares azules situadas junto a los archivos&#39;se sincronizan con el sitio de SharePoint. Cuando se&#39;la sincronización, se muestran las marcas de verificación verde.
 7. Vuelva al sitio de SharePoint para ver los archivos que se han sincronizado con la nube.
 

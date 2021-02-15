@@ -47,4 +47,4 @@ Siga estos pasos para registrarse en Microsoft 365 Empresa Premium (anteriorment
 8. Escriba el número de usuarios, elija un plan de facturación y, a continuación,  **seleccione Siguiente**.
 9.  Escriba la dirección&#39;de su empresa y, a **continuación, haga clic en Siguiente.**
 10. Escriba la información de su tarjeta de crédito y, a **continuación, haga un pedido.** Después de unos instantes, se creará tu cuenta.
-11. En este punto, puede seleccionar Continuar para configurar la cuenta  **o** puede iniciar sesión en el Centro de administración de Microsoft 365 y completar la configuración más adelante.
+11. En este punto, puede  **seleccionar** Continuar para configurar la cuenta o puede iniciar sesión en el Centro de administración de Microsoft 365 y completar la configuración más adelante.

@@ -44,10 +44,10 @@ Seleccione una plantilla de su fila para mostrar su página de detalles. Esta p�
 
 ## <a name="creating-and-modifying-templates-overview"></a>Introducción a la creación y modificación de plantillas
 
-Para modificar una plantilla existente o crear su propia plantilla nueva, usará una hoja de cálculo de Excel con formato especial[(descargue](https://go.microsoft.com/fwlink/?linkid=2124865)un ejemplo) para ensamblar los datos de control necesarios. Después de completar la hoja de cálculo, se importa al Administrador de cumplimiento durante el proceso de creación o modificación de una plantilla.
+Para modificar una plantilla existente o crear su propia plantilla nueva, usará una hoja de cálculo de Excel con formato especial[(descargue](https://go.microsoft.com/fwlink/?linkid=2124865)un ejemplo) para ensamblar los datos de control necesarios. Después de completar la hoja de cálculo, se importa en el Administrador de cumplimiento durante el proceso de creación o modificación de una plantilla.
 
 > [!NOTE]
-> La hoja de cálculo tiene un formato y un esquema específicos que deben usarse o no se importarán correctamente en el Administrador de cumplimiento. A [continuación se muestran las instrucciones de](#formatting-your-template-data-with-excel) formato.
+> La hoja de cálculo tiene un formato y un esquema específicos que deben usarse o no se importarán correctamente en el Administrador de cumplimiento. A [continuación se muestran las instrucciones](#formatting-your-template-data-with-excel) de formato.
 
 **Roles obligatorios**
 
@@ -65,7 +65,7 @@ Para crear su propia plantilla (usada para crear evaluaciones personalizadas), s
     - Si hay un error en el archivo, un mensaje de error en la parte superior explica el problema. Tendrás que corregir el archivo y cargarlo de nuevo. Los errores se producen si la hoja de cálculo tiene un formato incorrecto o si hay información no válida en determinados campos (consulte de nuevo las instrucciones [de formato).](#formatting-your-template-data-with-excel)  
     
 6. La **pantalla Revisar y finalizar** muestra el número de acciones y controles de mejora y la puntuación máxima de la plantilla. Cuando esté listo para aprobar, seleccione **Crear plantilla.** (Si necesita realizar cambios, seleccione **Atrás).**
-7. La última pantalla confirma que se ha creado una plantilla nueva. Seleccione **Listo** para salir del asistente.
+7. La última pantalla confirma que se ha creado una nueva plantilla. Seleccione **Listo** para salir del asistente.
 8. You'll arrive at your new template's details page, where you can [create your assessment](compliance-manager-assessments.md#create-your-own-custom-assessment).
 
 ## <a name="formatting-your-template-data-with-excel"></a>Dar formato a los datos de la plantilla con Excel
@@ -123,7 +123,7 @@ La **pestaña** Acciones es obligatoria.  Designa las acciones de mejora adminis
 
 ![El Administrador de cumplimiento controla los valores de puntos](../media/compliance-score-action-scoring.png "El Administrador de cumplimiento controla los valores de puntos")
 
-- **actionDescriptionTitle**: este es el título de la descripción y es obligatorio. Este título de descripción te permite tener la misma acción en varias plantillas y mostrar una descripción diferente en cada plantilla.  Este campo le ayuda a aclarar la plantilla a la que hace referencia la descripción. En la mayoría de los casos, puede colocar el nombre de la plantilla que está creando en este campo.
+- **actionDescriptionTitle**: este es el título de la descripción y es obligatorio. Este título de descripción te permite tener la misma acción en varias plantillas y mostrar una descripción diferente en cada plantilla.  Este campo le ayuda a aclarar a qué plantilla hace referencia la descripción. En la mayoría de los casos, puede colocar el nombre de la plantilla que está creando en este campo.
 
 - **actionDescription:** proporcione una descripción de la acción. Puede aplicar formato, como texto en negrita e hipervínculos. Este campo es obligatorio.
 
@@ -205,7 +205,7 @@ Ten en cuenta que los títulos de las acciones, tanto para las acciones de mejor
 
 #### <a name="remove-an-improvement-action"></a>Quitar una acción de mejora
 
-Para quitar una acción de mejora de una plantilla, deberá quitarla de cada control que haga referencia a ella. Siga los pasos siguientes para modificar la hoja de cálculo:
+Para quitar una acción de mejora de una plantilla, deberás quitarla de cada control que haga referencia a ella. Siga los pasos siguientes para modificar la hoja de cálculo:
 
 1. En la **pestaña ControlFamily,** busque el título de la acción de mejora que desea quitar.
 2. Elimine el título de la acción de mejora en las celdas donde aparece. Si la acción de mejora es la única acción de esa fila, elimine toda la fila (que quita el control).

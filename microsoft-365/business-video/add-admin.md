@@ -43,7 +43,7 @@ Al registrarse en Microsoft 365 Empresa, se convierte automáticamente en admini
 1. Al registrarse en Microsoft 365 Empresa, se convierte automáticamente en administrador global. Para ayudar a administrar la empresa, también puede hacer que otros administradores de personas. 
 1. En el Centro de administración de Microsoft 365, seleccione **Usuarios** y, a continuación, **Usuarios activos.**
 1. Elija el usuario que desea que sea administrador y, a continuación, **seleccione Administrar roles.**
-1. En el **panel Administrar roles,** desactive la casilla de verificación del rol actual del usuario y seleccione el nuevo rol que desea asignar al usuario.
+1. En el **panel Administrar roles,** desactive la casilla de verificación de rol actual del usuario y seleccione el nuevo rol que desea asignar al usuario.
 1. Seleccione **Guardar cambios y,** a continuación, cierre el **panel de confirmación** actualizado de roles de administrador.
 
 ### <a name="add-someone-outside-the-company-as-an-admin"></a>Agregar a alguien fuera de la empresa como administrador
@@ -56,7 +56,7 @@ Si hay una persona externa de TI que le ayudará a administrar su empresa, puede
 1. En la **lista desplegable** Seleccionar ubicación, elija la ubicación del usuario.
 1. Active la casilla **Crear usuario sin licencia** de producto. No es necesario asignar una licencia a este usuario porque solo administrarán los servicios de Microsoft 365 y no los usarán. Seleccione **Siguiente**.
 1. Expanda la **sección Roles.** Desactive la casilla situada junto al rol actual del usuario y, a continuación, elija **Administrador global.** Seleccione **Siguiente**.
-1. Revise la configuración y, a continuación, **seleccione Finalizar adición.**
+1. Revise la configuración y, a continuación, seleccione **Finalizar adición.**
 1. Seleccione **Cerrar**.
 
 El nuevo administrador global ahora puede ayudar a administrar los servicios de Microsoft 365.

@@ -49,25 +49,25 @@ Para empezar, compruebe lo siguiente:
 
     - Asegúrese de que Safari es el explorador predeterminado en el dispositivo y de que las cookies no están deshabilitadas.
 
-    - Reinicia el dispositivo y, a continuación, navega a portal.manage.microsoft.com. Inicie sesión con su identificador de usuario y contraseña de Microsoft 365 e intente instalar el perfil manualmente.
+    - Reinicia el dispositivo y, a continuación, navega hasta portal.manage.microsoft.com. Inicie sesión con su identificador de usuario y contraseña de Microsoft 365 e intente instalar el perfil manualmente.
 
 ## <a name="windows-rt"></a>Windows RT
 
 - Asegúrese de que su dominio está configurado en Microsoft 365 para trabajar con movilidad y seguridad básicas. Para obtener más información, consulta [Configurar movilidad y seguridad básicas.](set-up.md)
     
-- Asegúrese de que el usuario está eligiendo **Activar en** lugar de   elegir **Unirse.**
+- Asegúrese de que el usuario elige **Activar** en lugar de   elegir **Unirse.**
 
 ## <a name="windows-10-pc"></a>Windows 10 PC
 
 - Asegúrese de que su dominio está configurado en Microsoft 365 para trabajar con movilidad y seguridad básicas. Para obtener más información, consulta [Configurar movilidad y seguridad básicas.](set-up.md)
     
-- A menos que tenga Azure Active Directory Premium, **** asegúrese de que el usuario elija Inscribirse solo en la administración de dispositivos en lugar de   elegir **Conectar.**
+- A menos que tenga Azure Active Directory Premium, **** asegúrese de que el usuario elija Inscribirse en la administración de dispositivos solo en lugar de   elegir **Conectar.**
 
 ## <a name="android-phone-or-tablet"></a>Teléfono o tableta Android
 
 - Asegúrate de que el dispositivo ejecuta Android 4.4 o posterior.
 
-- Asegúrese de que Chrome esté actualizado y esté configurado como explorador predeterminado.
+- Asegúrese de que Chrome está actualizado y está configurado como explorador predeterminado.
 
 - Si ve el mensaje de error "No hemos podido inscribir este dispositivo", inicie sesión en Microsoft 365 y asegúrese de que se haya asignado una licencia que incluya Exchange Online al usuario que ha iniciado sesión en el dispositivo.
 

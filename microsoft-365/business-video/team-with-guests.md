@@ -37,7 +37,7 @@ ms.locfileid: "49925879"
 
 Puede usar Microsoft Teams para trabajar juntos en un proyecto con sus empleados y personas ajenas a la empresa, como sus clientes.
 
-1. En Teams, elija **Teams en** el panel de navegación izquierdo y, a continuación, elija **Crear equipo.**
+1. En Teams, elija **Teams** en el panel de navegación izquierdo y, a continuación, **elija Crear equipo.**
 2. En el  **cuadro Crear su equipo,**  escriba un nombre de equipo, proporcione una descripción breve, elija una configuración de privacidad y, a continuación,  **elija Siguiente**.
 3. En el  **cuadro Agregar miembros,**  escriba los nombres de otros empleados de la organización. Para invitados externos, escriba su dirección de correo electrónico.
 
@@ -46,4 +46,4 @@ Puede usar Microsoft Teams para trabajar juntos en un proyecto con sus empleados
 1. Elija  **Agregar** y, a continuación,  **seleccione Cerrar**.
 2. At the bottom of the page, enter a short welcome message to your new team, and then choose **Send** :::image type="icon" source="../media/teams-send-icon.png" border="false"::: .   
 
-Su cliente recibirá una invitación por correo electrónico de Teams, que le informará de que necesita una cuenta gratuita de Microsoft para unirse al equipo. Pueden crear una cuenta con su dirección de correo electrónico existente siguiendo las instrucciones proporcionadas. A continuación, pueden usar Teams en la Web o instalar la aplicación Teams en su equipo.
+Su cliente recibirá una invitación por correo electrónico de Teams, que le informará de que necesita una cuenta gratuita de Microsoft para unirse al equipo. Pueden crear una cuenta con su dirección de correo electrónico existente siguiendo las instrucciones proporcionadas. A continuación, pueden usar Teams en la web o instalar la aplicación Teams en su equipo.

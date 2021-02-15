@@ -20,7 +20,7 @@ En este artículo se proporcionan detalles sobre las regiones y los idiomas comp
 
 ## <a name="supported-languages"></a>Idiomas admitidos
 
-El inglés es el único idioma disponible para los usuarios de Escritorio administrado de Microsoft. Esta directiva incluye todas las interfaces de usuario para [](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) usuarios y administradores, así como todas las interacciones con el soporte técnico de administradores [y el soporte de usuarios.](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support)
+El inglés es el único idioma disponible para los usuarios de Escritorio administrado de Microsoft. Esta directiva incluye todas las interfaces de usuario para usuarios y administradores, así como todas las interacciones con el soporte técnico de [administradores](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) y [el soporte de usuarios.](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support)
 
 
 Puede seguir utilizando dispositivos administrados fuera de las regiones de habla inglesa sin interrupciones en el servicio de Escritorio administrado de Microsoft. Por ejemplo, un empleado basado en el Reino Unido puede trabajar de forma segura y recibir actualizaciones en su dispositivo administrado mientras viaja a Asia, Europa o América del Sur. 
@@ -32,7 +32,7 @@ Para obtener más información acerca de la compatibilidad de usuarios con Escri
 Las organizaciones de los siguientes países pueden suscribirse al Escritorio administrado de Microsoft:
 
 - Estados Unidos
-- Canadá (excepto Quebec)
+- Canadá (excluido Quebec)
 - Reino Unido
 - Irlanda
 - Bélgica

@@ -38,13 +38,13 @@ Después de configurar Microsoft 365 Empresa Premium (anteriormente conocido com
 
 En primer lugar, comprueba que tienes instalado Windows 10 Pro:
 
-1. Elija  **Inicio,** busque  **el Panel de control** y selecciónelo.
+1. Elija  **Inicio,** busque el  **Panel de control** y selecciónelo.
 2. Elige **Sistema y Sistema de**   >   **seguridad** y confirma la edición de Windows.
 
 A continuación, conéctese a Microsoft 365 Empresa:
 
 1. Seleccione  **Inicio** y, a continuación, seleccione el  **icono** Configuración.
-2. Seleccione   >   **Conectarse a la escuela o trabajo de Acceso a**   >   **cuentas.**
+2. Seleccione **Acceso a** cuentas para  >   **conectarse a la escuela** o   >   **trabajo.**
 3. Seleccione **Unir este dispositivo a Azure Active Directory.**
 4. Escriba la dirección de correo electrónico de su cuenta de Microsoft 365 y seleccione **Siguiente.**
 5. Escriba su contraseña, seleccione  **Iniciar sesión** y, a continuación, compruebe que se está uniendo a la organización correcta.

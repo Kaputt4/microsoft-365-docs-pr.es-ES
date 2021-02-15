@@ -33,7 +33,7 @@ ms.locfileid: "49927128"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG3?autoplay=false]
 
-Al crear un grupo, se crea una dirección de correo electrónico central y un lugar donde colaborar. Puedes usar esto para proporcionar una dirección de correo electrónico como ventas o información de la que todos puedan ver y obtener correos electrónicos.
+Al crear un grupo, se crea una dirección de correo electrónico central y un lugar para colaborar. Puedes usar esto para proporcionar una dirección de correo electrónico como ventas o información de la que todos puedan ver y obtener correos electrónicos.
 
 ## <a name="try-it"></a>¿Se atreve?
 
@@ -43,4 +43,4 @@ Al crear un grupo, se crea una dirección de correo electrónico central y un lu
 4. Active la  **casilla Enviar todos los correos electrónicos y eventos**  de grupo a las bandejas de entrada de los miembros.
 5. En **Agregar miembros,** seleccione los empleados que desea recibir los correos electrónicos y, a continuación, **elija Agregar miembros.**
 6. En la **pestaña Inicio** de Outlook, seleccione Configuración **de grupo** y, a continuación, **Editar grupo.**
-7. En el cuadro Editar  **grupo,** active la casilla Permitir que los usuarios externos a la organización envíe por correo electrónico la casilla de grupo y, a continuación, elija **Aceptar.**
+7. En el cuadro Editar  **grupo,** active la casilla Permitir que los usuarios externos a la organización envíe un correo electrónico al grupo y, a continuación, elija **Aceptar.**

@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Ayude a los empleados a aprender a configurar las aplicaciones de Office que obtienen con Microsoft 365 Empresa Premium.
+description: Ayude a sus empleados a aprender a configurar las aplicaciones de Office que obtienen con Microsoft 365 Empresa Premium.
 ms.openlocfilehash: 1715562a648af42bff07ab9a3e62647e386125cb
 ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
@@ -34,7 +34,7 @@ ms.locfileid: "49927255"
 
 ¿Es nuevo en Microsoft 365 para empresas? :::image type="icon" source="../media/video-call-icon.png" border="false":::[Vea este vídeo](https://support.microsoft.com/office/d6466f0d-5d13-464a-adcb-00906ae87029) para obtener información sobre él. Después, siga estos pasos.
 
-:::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="Imagen que muestra los pasos rápidos de configuración de los empleados.":::
+:::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="Imagen que muestra los pasos rápidos de configuración de empleados.":::
 
 ## <a name="1-sign-in-to-office"></a>1. Iniciar sesión en Office
 

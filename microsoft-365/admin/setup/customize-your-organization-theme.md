@@ -50,7 +50,7 @@ Como administrador de su suscripción a Microsoft 365 para empresas, puede cambi
       > [!NOTE]
       > Para que el logotipo aparezca en la aplicación móvil de SharePoint, use solo imágenes SVG. Las imágenes cargadas en cualquier otro formato no se muestran en la aplicación. Los logotipos no se pueden hacer clic en la aplicación móvil de SharePoint.
 
-    - **Haga clic en el logotipo:** puede usar el logotipo en la barra de navegación como vínculo a cualquier recurso de la empresa. Puede escribir la dirección URL del logotipo aquí, empezando por http:// o https://. Esto es opcional.
+    - **Haga clic en el logotipo:** puede usar el logotipo en la barra de navegación como vínculo a cualquier recurso de la empresa. Puede escribir la dirección URL del logotipo aquí, empezando por http:// o https://. Es opcional.
 
     - **Seleccione la** imagen de fondo: seleccione la imagen y cargue su propio ARCHIVO JPG, PNG o GIF con una resolución de 1366 x 50 píxeles, no superior a 15 KB. La imagen de fondo se mostrará en la barra de navegación superior de todas las páginas.
 
@@ -81,7 +81,7 @@ Podrá quitar el icono o los colores personalizados en cualquier momento. Solo t
 
 - **Color de** énfeño: elige uno que se muestre bien en un fondo blanco o claro. El color de énfeño se usa para colorear algunos vínculos y botones que se muestran en un fondo blanco o claro. Por ejemplo, el color de énfeño se usa para dar color a los elementos de la bandeja de entrada de un usuario y en su Office.com portal.
   
-- **Relación de contraste:** la relación de contraste recomendada entre el color del texto, el icono o el botón y el color de fondo es de 4,5:1.
+- **Relación de contraste:** la relación de contraste recomendada entre el color de texto, icono o botón y el color de fondo es 4.5:1.
   
 ## <a name="related-articles"></a>Artículos relacionados
 

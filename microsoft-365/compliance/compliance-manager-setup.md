@@ -26,7 +26,7 @@ ms.locfileid: "49870915"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
-**En este artículo:** Este artículo le ayuda a configurar el Administrador de cumplimiento. Obtenga información sobre cómo obtener **acceso al** Administrador de cumplimiento, establecer roles y permisos, y configurar **pruebas automáticas** **de acciones de mejora.** Pase por **el panel del Administrador de** cumplimiento y comprenda las páginas principales: la página de acciones de mejora, la página de soluciones, la página de evaluaciones y la página de plantillas de evaluación.
+**En este artículo:** Este artículo le ayuda a configurar el Administrador de cumplimiento. Obtenga información sobre cómo obtener **acceso al** Administrador de cumplimiento, establecer roles y permisos, y configurar **pruebas automáticas** **de acciones de mejora.** Pase por **el panel del Administrador** de cumplimiento y comprenda las páginas principales: la página de acciones de mejora, la página de soluciones, la página de evaluaciones y la página de plantillas de evaluación.
 
 ## <a name="who-can-access-compliance-manager"></a>Quién puede acceder al Administrador de cumplimiento
 
@@ -58,7 +58,7 @@ Para establecer permisos y asignar roles en el Centro de seguridad y & cumplimie
 
 1. Vaya al Centro de seguridad y & cumplimiento de [Office 365](https://protection.office.com/) y seleccione **Permisos** en el panel de navegación izquierdo.
 
-2. Busque el grupo de roles al que desea agregar uno o más usuarios y active la casilla a la izquierda del nombre del grupo. (Vea la [lista de roles y funciones relacionadas a continuación.](#role-types) Los nombres de los grupos de roles imitan el nombre del rol).
+2. Busque el grupo de roles al que desea agregar uno o más usuarios y active la casilla a la izquierda del nombre del grupo. (Vea la lista [de roles y funciones relacionadas a continuación.](#role-types) Los nombres de los grupos de roles imitan el nombre del rol).
 
 3. En el panel desplegable de ese grupo, seleccione **Editar en** el **encabezado** Miembros.
 
@@ -66,7 +66,7 @@ Para establecer permisos y asignar roles en el Centro de seguridad y & cumplimie
 
 5. Seleccione **+ Agregar** para elegir uno o más usuarios para agregar al grupo.
 
-6. Seleccione la casilla situada junto a los nombres que desea agregar y, a continuación, seleccione **el** botón Agregar en la parte inferior.
+6. Seleccione la casilla situada junto a los nombres que desea agregar y, a continuación, seleccione el botón **Agregar** en la parte inferior.
 
 7. Cuando haya terminado de asignar usuarios, seleccione **Listo** y, a continuación, seleccione **Guardar** y, a continuación, **Cerrar.**
 
@@ -120,7 +120,7 @@ El administrador global de su organización puede cambiar la configuración de l
 
 4. Selecciona el botón aplicable para activar las pruebas automáticas de todas las acciones de mejora, desactivarla para todas las acciones o activarla mediante una acción individual.
 
-5. Si selecciona Activar **por acción de mejora,** una lista mostrará todas las acciones de mejora disponibles entre las que elegir.  Activa la casilla situada junto a cualquier acción que quieras probar automáticamente.
+5. Si selecciona Activar **por acción de mejora,** una lista mostrará todas las acciones de mejora disponibles para elegir.  Activa la casilla situada junto a cualquier acción que quieras probar automáticamente.
 
 6. Seleccione **Guardar para** guardar la configuración. Recibirá un mensaje de confirmación en la parte superior de la pantalla en el que se guardará la selección. Si recibe un aviso de error, inténtelo de nuevo.
 
@@ -128,7 +128,7 @@ El administrador global de su organización puede cambiar la configuración de l
 
 ### <a name="manage-user-history"></a>Administrar el historial de usuarios
 
-La **configuración Administrar el historial** de usuarios le ayuda a identificar rápidamente qué usuarios han trabajado con acciones de mejora en el Administrador de cumplimiento. Los datos de usuario identificables asociados con acciones de mejora incluyen cualquier trabajo de implementación y prueba realizado, los documentos que cargaron y las notas que introdujeron. Comprender y recuperar este tipo de datos puede ser necesario para las necesidades de cumplimiento propias de su organización.
+La **configuración Administrar el historial** de usuarios le ayuda a identificar rápidamente qué usuarios han trabajado con acciones de mejora en el Administrador de cumplimiento. Los datos de usuario identificables asociados con acciones de mejora incluyen cualquier trabajo de implementación y prueba realizado, los documentos que cargaron y las notas que introdujeron. Comprender y recuperar este tipo de datos puede ser necesario para las necesidades de cumplimiento de su organización.
 
 La configuración del historial de usuarios también le permite reasignar todas las acciones de mejora de un usuario a otro.
 
@@ -193,7 +193,7 @@ El nuevo usuario al que se asigna recibe un correo electrónico que se le ha asi
 
 #### <a name="delete-user-history"></a>Eliminar historial de usuarios
 
-Al eliminar el historial de un usuario, se quitará como propietario de las acciones de mejora y se quitará su nombre de todos los demás campos del Administrador de cumplimiento. Al eliminar el historial de un usuario, las acciones  de mejora que poseen no mostrarán un valor Asignado a hasta que se asigne un nuevo usuario. Los documentos cargados en la acción de mejora mostrarán el usuario **quitado** en lugar del nombre del usuario eliminado. La eliminación del historial de usuarios es permanente.
+Al eliminar el historial de un usuario, se quitarán como propietarios de las acciones de mejora y se quitará su nombre de todos los demás campos del Administrador de cumplimiento. Al eliminar el historial de un usuario, las acciones  de mejora que poseen no mostrarán un valor Asignado a hasta que se asigne un nuevo usuario. Los documentos cargados en la acción de mejora mostrarán el usuario **quitado** en lugar del nombre del usuario eliminado. La eliminación del historial de usuarios es permanente.
 
 Para eliminar el historial de un usuario, siga los pasos siguientes:
 
@@ -207,7 +207,7 @@ Para eliminar el historial de un usuario, siga los pasos siguientes:
 
 5. En el **menú** desplegable Seleccionar, elija **Eliminar historial.**
 
-6. Aparece una ventana que te pide que confirmes la eliminación permanente del historial del usuario. Para continuar con la eliminación, seleccione **Eliminar historial.** Para salir sin eliminar el historial, seleccione **Cancelar**.
+6. Aparece una ventana que le pide que confirme la eliminación permanente del historial del usuario. Para continuar con la eliminación, seleccione **Eliminar historial.** Para salir sin eliminar el historial, seleccione **Cancelar**.
 
 7. Volverá a la página  Administrar historial de usuarios con un mensaje de confirmación en la parte superior que indica que se eliminó el historial del usuario.
 
@@ -219,7 +219,7 @@ El panel del Administrador de cumplimiento está diseñado para proporcionarle u
 
 ### <a name="overall-compliance-score"></a>Puntuación de cumplimiento general
 
-La puntuación de cumplimiento se destaca en la parte superior. Muestra un porcentaje basado en puntos posibles para completar acciones de mejora que abordan normas y normativas clave de protección de datos. Los puntos [de las acciones de Microsoft](compliance-manager-assessments.md#microsoft-actions-tab), que son administrados por Microsoft, también se cuentan para su puntuación de cumplimiento.
+La puntuación de cumplimiento se destaca en la parte superior. Muestra un porcentaje basado en puntos posibles para completar acciones de mejora que abordan normas y normativas clave de protección de datos. Los puntos [de las acciones de Microsoft,](compliance-manager-assessments.md#microsoft-actions-tab)que son administrados por Microsoft, también se cuentan para su puntuación de cumplimiento.
 
 Cuando llegue al Administrador de cumplimiento por primera vez, la puntuación inicial se basa en la línea base de protección de datos [de Microsoft 365.](compliance-manager-assessments.md#data-protection-baseline-default-assessment) Esta evaluación de línea base, que está disponible para todas las organizaciones, es un conjunto de controles que incluye estándares y normativas comunes del sector. El Administrador de cumplimiento examina las soluciones de Microsoft 365 existentes y le ofrece una evaluación inicial basada en la configuración de privacidad y seguridad actual. A medida que agregue evaluaciones relevantes para su organización, su puntuación será más significativa para usted.
 
@@ -249,7 +249,7 @@ Para aplicar filtros:
 1. Seleccione **Filtro** en la parte superior derecha del panel.
 2. Seleccione los criterios de filtro en **el** panel desplegable Filtros y, a continuación, **seleccione Aplicar**.
 
-Después de aplicar un filtro, verá la puntuación ajustada en tiempo real. El porcentaje de puntuación de cumplimiento y la información detallada, así como las acciones y soluciones de mejora, ahora solo pertenecen a los datos cubiertos por los criterios de filtro. Si sale del Administrador de cumplimiento, la vista filtrada permanece cuando vuelve a iniciar sesión.
+Después de aplicar un filtro, verás que la puntuación se ajusta en tiempo real. El porcentaje de puntuación de cumplimiento y la información detallada, así como las acciones y soluciones de mejora, ahora solo pertenecen a los datos cubiertos por los criterios de filtro. Si sale del Administrador de cumplimiento, la vista filtrada permanece cuando vuelve a iniciar sesión.
 
 Para quitar filtros:
 
@@ -262,7 +262,7 @@ Para quitar filtros:
 
 ### <a name="view-your-improvement-actions"></a>Ver las acciones de mejora
 
-El panel del Administrador de cumplimiento muestra las **principales acciones de mejora.** Para ver todas las acciones de mejora, seleccione la pestaña Acciones de mejora en el panel, que le lleva a la página de acciones de mejora. También puedes seleccionar Ver todas las acciones de mejora debajo de la lista de acciones de mejora clave en el panel para acceder a la página de acciones de mejora.
+El panel del Administrador de cumplimiento muestra las **acciones de mejora clave.** Para ver todas las acciones de mejora, seleccione la pestaña Acciones de mejora en el panel, que le lleva a la página de acciones de mejora. También puedes seleccionar Ver todas las acciones de mejora debajo de la lista de acciones de mejora clave en el panel para acceder a la página de acciones de mejora.
 
 La página de acciones de mejora muestra todas las acciones de mejora que administra la organización. Las acciones administradas por Microsoft se pueden ver en cada evaluación (obtenga más información sobre [las acciones de Microsoft).](compliance-manager-assessments.md#microsoft-actions-tab)
 
@@ -277,7 +277,7 @@ La página de acciones de mejora muestra los siguientes puntos de datos para cad
 - **Grupo:** el grupo al que asignó la acción
 - **Soluciones:** la solución a la que puede ir para realizar la acción
 - **Evaluaciones:** las evaluaciones que contienen la acción
-- **Categorías:** la categoría de protección de datos relacionada (por ejemplo, proteger la información, administrar dispositivos, etc.)
+- **Categorías:** categoría de protección de datos relacionada (por ejemplo, proteger la información, administrar dispositivos, etc.)
 - **Estado de la prueba:**
     - **Ninguno:** no se registró ninguna actualización de estado
     - **No evaluado:** las pruebas no se han iniciado
@@ -290,13 +290,13 @@ La página de acciones de mejora muestra los siguientes puntos de datos para cad
     - **No se pudo detectar:** no se puede determinar el estado automatizado
     - **Parcialmente probado:** puntuación automatizada que otorga puntos parciales
 
-**Obtenga más información: Vea** [cómo asignar y realizar el trabajo en acciones de mejora.](compliance-manager-improvement-actions.md)
+**Obtenga más información:** [Vea cómo asignar y realizar el trabajo en acciones de mejora.](compliance-manager-improvement-actions.md)
 
 ## <a name="solutions-page"></a>Página soluciones
 
-La página de soluciones muestra el porcentaje de puntos ganados y potenciales organizados por solución. Ver los puntos restantes y las acciones de mejora desde esta vista le ayuda a comprender qué soluciones necesitan una atención más inmediata.
+La página de soluciones muestra el recurso compartido de puntos ganados y posibles organizados por solución. Ver los puntos restantes y las acciones de mejora desde esta vista le ayuda a comprender qué soluciones necesitan una atención más inmediata.
 
-Busque la página soluciones seleccionando la **pestaña Soluciones** en el panel del Administrador de cumplimiento. También puedes seleccionar Ver todas **las soluciones debajo** de Soluciones que afectan a tu **puntuación** en la sección superior derecha del panel.
+Busque la página soluciones seleccionando la **pestaña Soluciones** en el panel del Administrador de cumplimiento. También puedes seleccionar Ver todas **las soluciones debajo** de **Soluciones que afectan a tu puntuación** en la sección superior derecha del panel.
 
 ### <a name="filtering-your-solutions-view"></a>Filtrar la vista de soluciones
 
@@ -334,8 +334,8 @@ La página de evaluaciones resume la información clave sobre cada evaluación:
 - **Las acciones de mejora:** el número de acciones completadas para satisfacer la implementación de los controles
 - **Acciones de Microsoft:** número de acciones completadas para satisfacer la implementación de los controles de Microsoft
 - **Grupo:** nombre del grupo al que pertenece la evaluación
-- **Producto:** servicio de Microsoft 365 asociado
-- **Reglamento:** norma, directiva o ley reglamentaria que se aplica a la evaluación
+- **Producto:** servicio asociado de Microsoft 365
+- **Reglamento:** la norma, directiva o ley reglamentaria que se aplica a la evaluación
 
 ### <a name="filtering-your-assessments-view"></a>Filtrar la vista de evaluaciones
 

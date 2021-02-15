@@ -33,7 +33,7 @@ ms.locfileid: "49927747"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0?autoplay=false]
 
-En cada suscripción a Microsoft 365 Empresa, debe haber al menos una cuenta de administrador. El administrador administra el servicio, las cuentas de usuario y los dispositivos. Si es usted quien se ha registrado para la suscripción, es el administrador global de la suscripción. También puede convertirse en administrador si otro administrador le hace uno.
+En cada suscripción a Microsoft 365 Empresa, debe haber al menos una cuenta de administrador. El administrador administra el servicio, las cuentas de usuario y los dispositivos. Si es usted quien se ha registrado para la suscripción, es el administrador global de la suscripción. También puedes convertirte en administrador si otro administrador te hace uno.
 
 Aunque siempre necesita al menos un rol de administrador para su suscripción, puede ser un riesgo de seguridad si una parte externa pone en peligro la cuenta de administrador. Le recomendamos que solo asigne el rol de administrador a aquellos que realmente lo necesiten y que asigne el rol de usuario a la mayoría de las personas.
 

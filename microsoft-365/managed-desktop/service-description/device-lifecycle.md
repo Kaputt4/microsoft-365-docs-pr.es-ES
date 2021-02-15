@@ -59,11 +59,11 @@ En esta tabla se muestran fechas de ejemplo para dispositivos *teóricas:*
 
 ## <a name="product-release-and-evaluation"></a>Versión y evaluación del producto
 
-El ciclo de vida del producto se inicia cuando un fabricante publica el producto públicamente:
+El ciclo de vida del producto comienza cuando un fabricante publica el producto públicamente:
 
 ![línea de tiempo del ciclo de vida que muestra el período de lanzamiento y evaluación](../../media/non-dark3-edits.PNG)
 
-Durante esta fase, el equipo de ingeniería de Escritorio administrado de Microsoft realiza su evaluación y certificación de un producto. El equipo evalúa aspectos como la confiabilidad y el rendimiento con Windows, el cumplimiento de una línea base de hardware, la opinión del mercado y la preparación de inventario y canales, entre otras cosas. Este proceso suele demorar aproximadamente seis semanas.
+Durante esta fase, el equipo de ingeniería de Escritorio administrado de Microsoft realiza su evaluación y certificación de un producto. El equipo evalúa aspectos como la confiabilidad y el rendimiento con Windows, el cumplimiento de una línea base de hardware, la opinión del mercado y la preparación del inventario y del canal, entre otras cosas. Este proceso suele demorar aproximadamente seis semanas.
   
 Escritorio administrado de Microsoft solo evaluará los dispositivos para su certificación en los primeros seis meses de disponibilidad. Esta directiva garantiza que siempre estamos centrando nuestros esfuerzos en la última generación de hardware.
  
@@ -78,7 +78,7 @@ Este período es el núcleo de la disponibilidad del producto:
 
 Cualquier dispositivo inscrito durante este período recibe los tres años completos de soporte técnico del Escritorio administrado de Microsoft (como se muestra en la escala de tiempo azul). Este período dura hasta una fecha de finalización establecida en 24 meses a partir de la fecha de disponibilidad general.
 
-Puede considerar este período como una "inscripción abierta" eficaz, por lo que para maximizar el valor del Escritorio administrado de Microsoft, debe dirigirse a los modelos de adquisición y los productos seleccionados para que se ajusten a este período. Como ejemplo pequeño, debe evitar la instalación en un período de lanzamiento de dos años con un producto que se encuentra en su último mes de disponibilidad principal: la mayoría de esos dispositivos no recibirán los tres años completos de administración de Escritorio administrado de Microsoft (vea el período de gracia para obtener más información). [](#product-grace-period)  
+Puede considerar este período como una "inscripción abierta" eficaz, por lo que para maximizar el valor del Escritorio administrado de Microsoft, debe dirigirse a los modelos de adquisición y los productos seleccionados para que se ajusten a este período. Como ejemplo pequeño, debe evitar la instalación en un período de lanzamiento de dos años con un producto que se encuentra en su último mes de disponibilidad principal: la mayoría de esos dispositivos no recibirán los tres años completos de administración del Escritorio administrado de Microsoft (vea el período de gracia para obtener más información). [](#product-grace-period)  
 
 ## <a name="product-grace-period"></a>Período de gracia del producto
 
@@ -89,7 +89,7 @@ Si ha comprado recientemente dispositivos aprobados antes de inscribirse en el E
 
 ![línea de tiempo del ciclo de vida que muestra el período de gracia](../../media/non-dark2-edits.PNG)
 
-El ejemplo de Fabrikam Laptop de la tabla anterior ilustra esta situación: 
+El ejemplo fabrikam laptop de la tabla anterior ilustra esta situación: 
 
 |Producto  |Fecha de aprobación  |Fin de la disponibilidad principal  |Fin de la elegibilidad  |
 |---------|---------|---------|---------|

@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Usa Windows PowerShell para obtener detalles sobre los dispositivos de movilidad y seguridad básicas de la organización.
+description: Usa Windows PowerShell para obtener detalles sobre los dispositivos de movilidad y seguridad básica de la organización.
 ms.openlocfilehash: 7c6a0365dfd573377c3675bbcee8ee8280e33816
 ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
@@ -33,7 +33,7 @@ Este es un desglose de los detalles del dispositivo disponibles para ti.
 
 |**Detalle**|**Qué buscar en PowerShell**|
 |:----------------|:------------------------------------------------------------------------------|
-|El dispositivo está inscrito en movilidad y seguridad básicas. Para obtener más información, consulta [Inscribir el dispositivo móvil mediante movilidad y seguridad básicas](enroll-your-mobile-device.md)|El valor del *parámetro isManaged*   es:<br/>**True**= el dispositivo está inscrito.<br/>**False**= el dispositivo no está inscrito. |
+|El dispositivo está inscrito en movilidad y seguridad básicas. Para obtener más información, consulta [Inscribir el dispositivo móvil con movilidad y seguridad básicas](enroll-your-mobile-device.md)|El valor del *parámetro isManaged*   es:<br/>**True**= el dispositivo está inscrito.<br/>**False**= el dispositivo no está inscrito. |
 |El dispositivo es compatible con las directivas de seguridad del dispositivo. Para obtener más información, consulta [Crear directivas de seguridad de dispositivos](create-device-security-policies.md)|El valor del *parámetro isCompliant*   es:<br/>**True**   = el dispositivo es compatible con las directivas.<br/>**False**   = el dispositivo no cumple con las directivas.|
 
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Parámetros básicos de PowerShell de movilidad y seguridad":::

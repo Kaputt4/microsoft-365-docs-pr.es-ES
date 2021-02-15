@@ -1,5 +1,5 @@
 ---
-title: Realizar un seguimiento del historial de puntuaciones seguras de Microsoft y cumplir los objetivos
+title: Realizar un seguimiento del historial de puntuaciones de seguridad de Microsoft y cumplir los objetivos
 description: Obtenga información sobre la actividad que ha afectado a su puntuación de seguridad de Microsoft. Descubrir tendencias y establecer objetivos.
 keywords: puntuación de seguridad de microsoft, puntuación de seguridad, puntuación de seguridad de Office 365, puntuación de seguridad de Microsoft, centro de seguridad de Microsoft 365, acciones de mejora
 ms.prod: m365-security
@@ -34,9 +34,9 @@ ms.locfileid: "49925677"
 
 [Puntuación de seguridad de Microsoft](microsoft-secure-score.md) es una medida de la posición de seguridad de una organización, con un número mayor que indica más acciones de mejora tomadas. Puede encontrarse en el Centro de seguridad https://security.microsoft.com/securescore [de Microsoft 365.](overview-security-center.md)
 
-## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>Obtener información sobre la actividad que ha afectado a la puntuación
+## <a name="gain-insights-into-activity-that-has-affected-your-score"></a>Obtener información sobre la actividad que ha afectado a tu puntuación
 
-Vea un gráfico de la puntuación de su organización con el tiempo en la **pestaña** Historial.
+Vea un gráfico de la puntuación de su organización a lo largo del tiempo en la **pestaña** Historial.
 
 Debajo del gráfico hay una lista de todas las acciones realizadas en el intervalo de tiempo seleccionado y sus atributos, como los puntos y la categoría resultantes. Puede personalizar un intervalo de fechas y filtrar por categoría.
 
@@ -52,7 +52,7 @@ Para ver todo el historial de esa acción de mejora específica, seleccione el v
 
 En la **pestaña &** de tendencias, hay varios gráficos y gráficos para darle más visibilidad a las tendencias y establecer objetivos. Puede establecer el intervalo de fechas para toda la página de visualizaciones. Las visualizaciones incluyen:
 
-* **Zona de puntuación segura:** personalizada en función de los objetivos y las definiciones de rangos de puntuación correctos, correctos y no válidos de su organización.
+* **Zona de puntuación segura:** personalizada en función de los objetivos y definiciones de rangos de puntuación correctos, correctos y no válidos de su organización.
 * **Tendencia de regresión:** una escala de tiempo de puntos que han retrocedido debido a cambios en la configuración, el usuario o el dispositivo.  
 * **Tendencia de comparación:** cómo la puntuación de seguridad de su organización se compara con la de otros usuarios a lo largo del tiempo. Esta vista puede incluir líneas que representan el promedio de puntuación de las organizaciones con un recuento de puestos similar y una vista de comparación personalizada que puede establecer.
 * **Tendencia de aceptación de riesgos:** escala de tiempo de las acciones de mejora marcadas como "riesgo aceptado".
@@ -64,7 +64,7 @@ Hay dos lugares para ver cómo se compara su puntuación con las organizaciones 
 
 #### <a name="comparison-bar-chart"></a>Gráfico de barras de comparación
 
-El gráfico de barras de comparación es la **pestaña** Información general. Mantenga el puntero sobre el gráfico para ver la puntuación y la oportunidad de puntuación. Los datos de comparación se anonimizan, por lo que no sabemos exactamente qué otros inquilinos están en la combinación.
+El gráfico de barras de comparación es la **pestaña** Información general. Mantenga el mouse sobre el gráfico para ver la puntuación y la oportunidad de puntuación. Los datos de comparación se anonimizan, por lo que no sabemos exactamente qué otros inquilinos están en la combinación.
 
 ![Gráfico de barras de puntuaciones de una organización similar](../../media/secure-score/secure-score-comparison-bar.png)
 
@@ -87,13 +87,13 @@ Si ha realizado una selección personalizada pero los resultados tienen menos de
 
 #### <a name="comparison-trend"></a>Tendencia de comparación
 
-En la **pestaña Métricas & tendencias,** vea cómo la puntuación de seguridad de su organización se compara con la de otros usuarios a lo largo del tiempo.
+En la **pestaña & de** tendencias, vea cómo la puntuación de seguridad de su organización se compara con la de otros usuarios a lo largo del tiempo.
 
 ![Gráfico de líneas de puntuaciones de una organización similar a lo largo del tiempo](../../media/secure-score/secure-score-comparison-trend.png)
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos escuchar sus comentarios
 
-Si tiene algún problema, háganoslo saber publicando en la comunidad [seguridad, privacidad & cumplimiento.](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) Estamos supervisando la comunidad y le proporcionaremos ayuda.
+Si tiene algún problema, háganoslo saber publicando en la comunidad [seguridad, privacidad & cumplimiento.](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) Estamos supervisando la comunidad y proporcionaremos ayuda.
 
 ## <a name="related-resources"></a>Recursos relacionados
 

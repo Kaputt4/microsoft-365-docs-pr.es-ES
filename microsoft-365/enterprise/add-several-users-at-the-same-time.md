@@ -72,7 +72,7 @@ Cada persona de su equipo necesita una cuenta de usuario para poder iniciar sesi
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- Ahora que estas personas tienen cuentas, deben descargar e instalar o reinstalar [Microsoft 365 u Office 2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)en un equipo PC o Mac. Cada persona de su equipo puede instalar Microsoft 365 en hasta 5 equipos PC o Mac.
+- Ahora que estas personas tienen cuentas, necesitan descargar e instalar o reinstalar [Microsoft 365 u Office 2016 en un equipo PC o Mac.](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) Cada persona de su equipo puede instalar Microsoft 365 en hasta 5 equipos PC o Mac.
 
 - Cada persona también puede configurar aplicaciones de [Office](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) y correo electrónico en un dispositivo móvil en hasta 5 tabletas y 5 teléfonos, como iPhone, iPad y teléfonos y tabletas Android. De esta forma, puede editar archivos de Office desde cualquier lugar.
 
@@ -96,7 +96,7 @@ Cuando guarde el archivo, probablemente recibirá un mensaje que le informará d
   
 ### <a name="tips-for-formatting-your-spreadsheet"></a>Consejos para aplicar formato a la hoja de cálculo
 
-- **¿Debo mantener los mismos encabezados de columna que en la hoja de cálculo de muestra?** Sí. La hoja de cálculo de muestra contiene los encabezados de columna en la primera fila. Estos encabezados son necesarios. Para cada usuario que quiera agregar a Microsoft 365, cree una fila bajo el encabezado. Si agrega, cambia o elimina cualquiera de los encabezados de columna, es posible que Microsoft 365 no pueda crear usuarios a partir de la información del archivo.
+- **¿Debo mantener los mismos encabezados de columna que en la hoja de cálculo de muestra?** Sí. La hoja de cálculo de muestra contiene los encabezados de columna en la primera fila. Estos encabezados son necesarios. Para cada usuario que quiera agregar a Microsoft 365, cree una fila bajo el encabezado. Si agrega, cambia o elimina cualquiera de los encabezados de columna, Es posible que Microsoft 365 no pueda crear usuarios a partir de la información del archivo.
 
 - **¿Qué ocurre si no tengo toda la información requerida para cada usuario?** El nombre de usuario y el nombre para mostrar son obligatorios, y no puede agregar un nuevo usuario sin esta información. Si le falta parte de la información, como el fax, puede usar un espacio más una coma para indicar que el campo debe dejarse en blanco.
 

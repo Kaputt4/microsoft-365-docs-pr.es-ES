@@ -39,11 +39,11 @@ Después de registrarse en Microsoft 365 Empresa Premium,&#39;deseará copiar lo
 
 1. En Windows, selecciona el  **botón** Inicio.
 2. Busque OneDrive y selecciónelo.
-3. Escriba la dirección de correo electrónico del trabajo.
+3. Escriba su dirección de correo electrónico del trabajo.
 4. Seleccione  **Iniciar sesión** y, a continuación, seleccione  **Siguiente**.
 5. Vaya a través del tutorial breve y, a continuación, **seleccione Abrir mi carpeta de OneDrive.** Si también usa la versión personal de OneDrive,&#39;verá aquí.
 6. En el Explorador de archivos, vaya a los archivos que desea copiar.
-7. Seleccione los archivos y, a continuación, arrástrelos y suélelos en la carpeta de OneDrive. Las flechas circulares azules junto a los archivos significan que&#39;se sincronizan con la nube. Cuando se&#39;la sincronización, se muestran las marcas de verificación verde.
+7. Seleccione los archivos y, a continuación, arrástrelos y suélelos en la carpeta de OneDrive. Las flechas circulares azules situadas junto a los archivos&#39;se sincronizan con la nube. Cuando se&#39;la sincronización, se muestran las marcas de verificación verde.
 
 Además de trabajar en los archivos de OneDrive localmente, puede acceder a ellos desde el explorador web:
 

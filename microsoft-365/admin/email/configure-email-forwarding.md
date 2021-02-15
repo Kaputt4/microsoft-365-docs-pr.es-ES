@@ -80,7 +80,7 @@ Debe ser administrador de Exchange o administrador global de Microsoft 365 para 
 
 3. Expanda **Configuración de correo** y, a continuación, en la sección Reenvío de **correo** electrónico, seleccione **Editar**.
 
-4. En la página de reenvío de correo electrónico, establezca el botón de alternancia en **Activar,** escriba la dirección de reenvío y elija si desea mantener una copia de los correos electrónicos reenviados. Si no ve esta opción, asegúrese de que se ha asignado una licencia a la cuenta de usuario. Seleccione **Guardar**.
+4. On the email forwarding page, set the toggle to **On,** enter the forwarding address, and choose whether you want to keep a copy of forwarded emails. Si no ve esta opción, asegúrese de que se ha asignado una licencia a la cuenta de usuario. Seleccione **Guardar**.
 
    **Para reenviar a varias direcciones de correo** electrónico, puede pedir al usuario que configure una regla en Outlook para reenviarla a las direcciones. Para obtener más información, vea [Usar reglas para reenviar mensajes automáticamente.](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)
 

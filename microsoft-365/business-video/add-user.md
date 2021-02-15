@@ -41,7 +41,7 @@ Cuando una nueva persona se une a su empresa, debe agregarla a su suscripción d
 1. En el Centro de administración de Microsoft 365, vaya a **Administración de** usuarios y seleccione Agregar usuario.
 1. Escriba el nombre y **los** apellidos del nuevo **usuario.** El **nombre para** mostrar se rellena automáticamente, pero puede cambiarlo.
 1. Escriba un nombre **de usuario.** Esta será la dirección de correo electrónico del nuevo usuario. Si tiene más de un dominio, seleccione el dominio correcto en la lista desplegable.
-1. Para que se cree una contraseña automáticamente, seleccione **Generar automáticamente la contraseña.**
+1. Para que se cree una contraseña automáticamente, **seleccione Generar automáticamente la contraseña.**
 1. Para requerir que el usuario cambie su contraseña, active la casilla Requerir que este usuario cambie su contraseña cuando inicie sesión **por** primera vez.
 1. Si quiere que los detalles de la cuenta se envíen por correo electrónico, active la casilla Enviar contraseña por correo electrónico al **finalizar.** Su nombre de correo electrónico se agregará automáticamente, pero puede agregar la dirección de correo electrónico alternativa del nuevo usuario para que también reciba los detalles de la cuenta. Seleccione **Siguiente**.
 1. Seleccione su ubicación en la lista desplegable y, a continuación, active la casilla situada junto a la suscripción que desea que use el usuario. Seleccione **Nex** t.

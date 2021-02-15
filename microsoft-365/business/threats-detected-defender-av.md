@@ -14,7 +14,7 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
-description: Obtén información sobre cómo Antivirus de Microsoft Defender protege los dispositivos Windows contra amenazas de software, como virus, malware y spyware.
+description: Obtén información sobre cómo Antivirus de Microsoft Defender protege tus dispositivos Windows contra amenazas de software, como virus, malware y spyware.
 ms.openlocfilehash: 1653aef6967cdf76e6e19acda158fb29758280a8
 ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
@@ -26,8 +26,8 @@ ms.locfileid: "49870904"
 
 Antivirus de Microsoft Defender protege los dispositivos Windows contra amenazas de software, como virus, malware y spyware.
 
-- Normalmente, los virus se propagan adjuntando su código a otros archivos de su dispositivo o red y pueden hacer que los programas infectados funcionen incorrectamente.
-- El malware incluye archivos malintencionados, aplicaciones y código que pueden causar daños y alterar el uso normal de los dispositivos. Además, el malware puede permitir el acceso no autorizado, usar recursos del sistema, robar contraseñas e información de la cuenta, bloquear el equipo y pedir un rescate, etc.
+- Normalmente, los virus se propagan adjuntando su código a otros archivos del dispositivo o la red y pueden hacer que los programas infectados funcionen incorrectamente.
+- El malware incluye archivos malintencionados, aplicaciones y código que pueden causar daños y alterar el uso normal de los dispositivos. Además, el malware puede permitir el acceso no autorizado, usar recursos del sistema, robar contraseñas e información de la cuenta, bloquearle fuera de su equipo y pedir un rescate, y mucho más.
 - Spyware recopila datos, como la actividad de exploración web, y envía los datos a servidores remotos.
  
 Para proporcionar protección contra amenazas, Antivirus de Microsoft Defender usa varios métodos. Estos métodos incluyen la protección de entrega en la nube, la protección en tiempo real y las actualizaciones de protección dedicadas.
@@ -46,7 +46,7 @@ Para obtener más información sobre malware y Antivirus de Microsoft Defender, 
 
 Antivirus de Microsoft Defender forma parte del sistema operativo y está habilitado en dispositivos que ejecutan Windows 10. Sin embargo, si usa una solución antivirus que no es de Microsoft y no usa [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)para Endpoint, antivirus de Microsoft Defender pasa automáticamente al modo deshabilitado.  
 
-Cuando se encuentra en modo deshabilitado, los usuarios y clientes aún pueden usar antivirus de Microsoft Defender para exámenes programados o a petición para identificar amenazas; sin embargo, Antivirus de Microsoft Defender ya no:
+Cuando se encuentra en modo deshabilitado, los usuarios y los clientes aún pueden usar el Antivirus de Microsoft Defender para exámenes programados o a petición para identificar amenazas; sin embargo, antivirus de Microsoft Defender ya no:
 
 - se usa como la aplicación antivirus predeterminada.
 - examinar activamente los archivos en busca de amenazas.
@@ -66,12 +66,12 @@ Cuando antivirus de Microsoft Defender detecta amenazas, sucede lo siguiente:
 - Las detecciones se enumeran en la aplicación [Seguridad de Windows](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) en la página Historial **de** protección.  
 - Si ha protegido sus dispositivos [Windows 10](secure-win-10-pcs.md) y los inscribió en [Intune](/mem/intune/enrollment/windows-enrollment-methods)y su organización tiene 800 dispositivos o menos inscritos, verá detecciones de amenazas e información en el  Centro de administración de Microsoft  <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">365</a> en la página Amenazas y **antivirus,** a la que puede acceder desde la tarjeta Antivirus de **Microsoft Defender** en la página principal (o desde el panel de navegación seleccionando Amenazas de estado  >  **& antivirus).**
 
-    Si tu organización tiene más de 800 dispositivos inscritos en Intune, se te pedirá que veas las detecciones de amenazas y la información de [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) en lugar de desde la página Amenazas y **antivirus.**
+    Si tu organización tiene más de 800 dispositivos inscritos en Intune, se te pedirá que veas información y detecciones de amenazas de [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) en lugar de desde la página Amenazas y **antivirus.**
  
     > [!NOTE]
     > La **tarjeta antivirus de Microsoft Defender** y la página amenazas y **antivirus** se están implantando en fases, por lo que es posible que no tenga acceso inmediato a ellas.
 
-En la mayoría de los casos, los usuarios no necesitan realizar ninguna acción adicional. En cuanto se detecta un archivo o programa malintencionado en un dispositivo, Antivirus de Microsoft Defender lo bloquea y evita que se ejecute. Además, las amenazas detectadas recientemente se agregan al motor antivirus y antimalware para que también estén protegidos otros dispositivos y usuarios.  
+En la mayoría de los casos, los usuarios no necesitan realizar ninguna acción adicional. Tan pronto como se detecta un archivo o programa malintencionado en un dispositivo, Antivirus de Microsoft Defender lo bloquea y evita que se ejecute. Además, las amenazas detectadas recientemente se agregan al motor antivirus y antimalware para que otros dispositivos y usuarios también estén protegidos.  
 
 Si hay una acción que un usuario necesita realizar, como aprobar la eliminación de un archivo malintencionado, lo verá en la notificación que recibe. Para obtener más información sobre las acciones que antivirus de Microsoft Defender realiza en nombre de un usuario o las acciones que los usuarios pueden necesitar realizar, consulte [Historial de protección.](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708) Para obtener información sobre cómo administrar las detecciones de amenazas como profesional o administrador de TI, consulte Revisar las amenazas detectadas [y tomar medidas.](review-threats-take-action.md)
 
@@ -85,8 +85,8 @@ Para obtener más información sobre las diferentes amenazas, visite el sitio de
 
 [Proteger dispositivos Windows 10](secure-windows-10-devices.md) (artículo)\
 [Evaluar antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/evaluate-microsoft-defender-antivirus) (artículo)\
-[Cómo activar la protección antivirus en tiempo real y de](/mem/intune/user-help/turn-on-defender-windows#turn-on-real-time-and-cloud-delivered-protection) entrega en la nube (artículo)\
-[Cómo activar y usar el Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) de Microsoft Defender desde la aplicación Seguridad de Windows (artículo)\
+[Cómo activar la protección antivirus en tiempo real](/mem/intune/user-help/turn-on-defender-windows#turn-on-real-time-and-cloud-delivered-protection) y de entrega en la nube (artículo)\
+[Cómo activar y usar antivirus de Microsoft Defender desde la aplicación Seguridad de Windows](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) (artículo)\
 [Cómo activar antivirus de Microsoft Defender mediante la directiva de grupo](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (artículo)\
 [Cómo actualizar las definiciones de antivirus](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (artículo)\
 [Cómo enviar malware y no malware a Microsoft para su análisis](/microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) (artículo)

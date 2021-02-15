@@ -54,8 +54,8 @@ Business Voice va a cualquier lugar donde vaya porque forma parte de Microsoft T
 1. Al configurar Business Voice, recibirá números de teléfono nuevos para su empresa y empleados. Debe hacerlo incluso si planea importar los números de negocio existentes más adelante.
 1. Si quiere números gratuitos o la posibilidad de llamar a cualquier número internacionalmente, compre créditos de comunicación para su empresa, lo que proporciona minutos de llamada más allá de lo que se incluye con Business Voice.
 1. Crea un saludo para tus clientes cargando una grabación o escribiendo un mensaje y te convertiremos el texto en voz.
-1. A continuación, cree un menú de enrutamiento de llamadas desde su número de negocio principal que dirija a los clientes a la persona o departamento adecuados por voz o las claves de su teléfono. Puede programar un saludo y un menú diferentes para días festivos o después del horario laboral.
-1. Por último, transfiera los números de teléfono existentes a Microsoft Teams.
+1. A continuación, cree un menú de enrutamiento de llamadas desde su número de negocio principal que dirija a los clientes a la persona o departamento adecuados por voz o las claves de su teléfono. Puede programar un saludo y un menú diferentes para los días festivos o después del horario laboral.
+1. Por último, transfiera sus números de teléfono existentes a Microsoft Teams.
 1. Cuando los números estén disponibles en Teams, asígnelos a sus empleados y su número de negocio principal. Ahora está listo para usar su nuevo teléfono de empresa con la aplicación Teams en cualquier equipo, teléfono o tableta.
 
 ## <a name="how-to-use"></a>Cómo se usa

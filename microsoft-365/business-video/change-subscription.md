@@ -42,7 +42,7 @@ A medida que los usuarios cambian de roles, es posible que necesiten caracterís
 
 1. En el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, seleccione Facturación **y,** a continuación, **Comprar servicios.**
 1. Elija la suscripción que desea agregar y, a continuación, **seleccione Comprar**.
-1. Elija cómo quiere pagar y el número de licencias que necesita y, a continuación, **seleccione Des** check out now .
+1. Elija cómo quiere pagar y el número de licencias que necesita y, a continuación, seleccione **Des** check out now .
 1. Revise el pedido y, a continuación, elija **Siguiente**.
 1. Confirme el total y seleccione **Realizar pedido.**
 
@@ -50,7 +50,7 @@ A medida que los usuarios cambian de roles, es posible que necesiten caracterís
 
 1. En el Centro de administración de Microsoft 365, en el panel de navegación izquierdo, seleccione Usuarios **y,** a continuación, **Usuarios activos.**
 1. Selecciona el nombre del usuario y, a continuación, selecciona **Licencias y aplicaciones.**
-1. En **Licencias,** verá su nueva suscripción. Active la casilla situada junto a la nueva suscripción y desactive la casilla situada junto a la suscripción antigua.
+1. En **Licencias,** verá la nueva suscripción. Active la casilla situada junto a la nueva suscripción y desactive la casilla situada junto a la suscripción antigua.
 1. Seleccione **Guardar cambios**. La licencia de la nueva suscripción ahora se asigna a este usuario.
 
 ### <a name="remove-an-unused-license"></a>Quitar una licencia sin usar

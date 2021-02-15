@@ -1,6 +1,6 @@
 ---
 title: Tecnologías de seguridad en escritorio administrado de Microsoft
-description: Tecnologías usadas para la seguridad de dispositivos, la administración de identidades y accesos, la seguridad de red y la seguridad de la información
+description: Tecnologías usadas para la seguridad de dispositivos, la administración de identidades y acceso, la seguridad de red y la seguridad de la información
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
@@ -38,14 +38,14 @@ Escritorio administrado de Microsoft garantiza que todos los dispositivos admini
 Servicio | Descripción
 --- | ---
 Antivirus | El Antivirus de Microsoft Defender está instalado y configurado<br>Las definiciones del Antivirus de Microsoft Defender están actualizadas
-Cifrado de volumen completo |    Windows BitLocker es la solución de cifrado de volumen para dispositivos de Escritorio administrado de Microsoft.<br><br>Una vez que una organización está incorporada en el servicio, los dispositivos se cifrarán con BitLocker de Windows con el Módulo de plataforma de confianza (TPM) integrado para evitar el acceso no autorizado a los datos locales cuando el dispositivo esté en modo de suspensión o desactivado. 
-Supervisión |    Microsoft Defender para endpoint se usa para la supervisión de amenazas de seguridad en todos los dispositivos de Escritorio administrado de Microsoft. Defender for Endpoint permite a los clientes empresariales detectar, investigar y responder a amenazas avanzadas en su red corporativa. Para obtener más información, consulte [Microsoft Defender para Endpoint.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
-Actualizaciones del sistema operativo |  Los dispositivos de escritorio administrado de Microsoft siempre están protegidos con las últimas actualizaciones de seguridad.
-Configuración de dispositivos seguros |   Escritorio administrado de Microsoft implementa la línea base de seguridad de Microsoft. Para obtener más información, consulta líneas [base de seguridad de Windows.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
+Cifrado de volumen completo |    Windows BitLocker es la solución de cifrado de volumen para dispositivos de escritorio administrado de Microsoft.<br><br>Una vez que una organización se incorpore al servicio, los dispositivos se cifrarán con BitLocker de Windows con el Módulo de plataforma de confianza (TPM) integrado para evitar el acceso no autorizado a los datos locales cuando el dispositivo esté en modo de suspensión o desactivado. 
+Supervisión |    Microsoft Defender para endpoint se usa para la supervisión de amenazas de seguridad en todos los dispositivos de Escritorio administrado de Microsoft. Defender for Endpoint permite a los clientes empresariales detectar, investigar y responder a amenazas avanzadas en su red corporativa. Para obtener más información, consulta [Microsoft Defender para Endpoint.](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+Actualizaciones del sistema operativo |  Los dispositivos de Escritorio administrado de Microsoft siempre están protegidos con las últimas actualizaciones de seguridad.
+Configuración de dispositivos seguros |   Escritorio administrado de Microsoft implementa la línea base de seguridad de Microsoft. Para obtener más información, consulta Líneas [base de seguridad de Windows.](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 
 
 
-## <a name="identity-and-access-management"></a>Administración de acceso e identidad  
+## <a name="identity-and-access-management"></a>Administración de identidad y acceso
 
 La administración de identidades y acceso protege los activos corporativos y los datos críticos para la empresa. Escritorio administrado de Microsoft configura dispositivos para garantizar un uso seguro con identidades administradas de Azure Active Directory (Azure AD). Es responsabilidad del cliente mantener información precisa en su inquilino de Azure AD. 
 
@@ -58,7 +58,7 @@ Permiso de usuario estándar |  Para proteger el sistema y hacerlo más seguro, 
 
 ## <a name="network-security"></a>Seguridad de red
 
-Los clientes son responsables de la seguridad de red. 
+Los clientes son responsables de la seguridad de la red. 
 
 Servicio | Descripción
 --- | ---

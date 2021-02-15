@@ -40,8 +40,8 @@ Para migrar el correo electrónico, el calendario y los contactos de Google Work
 1. Inicie sesión en [office.com](https://office.com)y elija **Administrador.**
 1. En el Centro de administración de Microsoft 365, elija **Ir a configuración guiada.** 
 1. Opcionalmente, instale las aplicaciones de Office y, a continuación, **seleccione Continuar.** 
-1. Dado que va a migrar desde Google Workspace, elija el dominio predeterminado y seleccione **Usar este dominio.** 
-1. Escriba los nombres de usuario y los nombres de usuario deseados, compruebe la dirección de correo electrónico para que pueda recibir las contraseñas de su usuario y, a continuación, seleccione Agregar usuarios y **asigne licencias.** 
+1. Dado que va a migrar desde Google Workspace, elija el dominio predeterminado y **seleccione Usar este dominio.** 
+1. Escriba los nombres de usuario y los nombres de usuario deseados, compruebe la dirección de correo electrónico para que pueda recibir las contraseñas del usuario y, a continuación, seleccione Agregar usuarios y **asigne licencias.** 
 1. Escriba las direcciones de correo electrónico donde los usuarios recibirán sus nuevas credenciales, seleccione **Enviar correo electrónico y continúe.**
 1. A **continuación,** vuelva a conectar el dominio temporal. 
 1. Opcionalmente, elija informar a los usuarios de su organización sobre Teams y, a continuación, **seleccione Continuar**.

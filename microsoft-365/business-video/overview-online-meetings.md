@@ -37,9 +37,9 @@ Necesitarán descargar [](https://support.microsoft.com/office/6d79a648-6913-469
 
 Si con frecuencia colabora estrechamente en proyectos con un cliente, cliente o partner, considere la posibilidad de crear un equipo para sus clientes, puede invitarlos fácilmente [a](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7) reuniones y también tener conversaciones, compartir archivos y realizar un seguimiento de los proyectos en Microsoft Teams.
 
-Descargue una infografía para obtener información general rápida sobre cómo unirse u hospedar una reunión en línea con Microsoft Teams.
+Descargue una infografía para obtener una introducción rápida sobre cómo unirse u hospedar una reunión en línea con Microsoft Teams.
 
-Descargue una infografía para obtener información general rápida sobre cómo unirse u hospedar una reunión en línea con Microsoft Teams. [PDF](https://go.microsoft.com/fwlink/?linkid=2078712)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
+Descargue una infografía para obtener una introducción rápida sobre cómo unirse u hospedar una reunión en línea con Microsoft Teams. [PDF](https://go.microsoft.com/fwlink/?linkid=2078712)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)
 
 ## <a name="1-schedule-a-meeting"></a>1. Programar una reunión
 
@@ -53,7 +53,7 @@ Para programar reuniones con sus empleados, clientes y otros invitados, use Micr
 1. Escriba una **fecha y** **hora** de inicio y finalización.
 1. En el **cuadro** Detalles, escriba una descripción de la reunión y cualquier otro detalle que desee agregar, como una agenda de reunión.
 1. En **Invitar a personas,** escriba los nombres de los empleados o clientes a los que desea invitar.
-1. Si ves **Provisional** o **Ocupado debajo** de cualquier nombre, elige una de las **horas** gratuitas proporcionadas o haz clic en Asistente para **programación** para obtener más opciones.
+1. Si ves **Provisional** o **Ocupado debajo** de cualquier nombre, elige una de las **horas** gratuitas proporcionadas o haz clic en Asistente para programación **para** obtener más opciones.
 1. Elija **Programar una reunión.**
 
 ## <a name="2-join-a-meeting"></a>2. Unirse a una reunión
@@ -73,7 +73,7 @@ Use Microsoft Teams para unirse a reuniones con los empleados de su empresa y co
 
 Puede convertir fácilmente un chat en Microsoft Teams en una reunión. Solo tiene **que elegir el botón de** llamada de vídeo o el botón de llamada de :::image type="icon" source="../media/video-call-icon.png" border="false"::: **audio** para iniciar :::image type="icon" source="../media/audio-call-icon.png" border="false"::: una llamada. También puede agregar personas a la llamada si necesita convertirse en una discusión de grupo.
 
-¿Necesita ayuda? Consulte [Iniciar una llamada desde un chat en Teams.](https://support.microsoft.com/office/f5138c9d-df4c-43d8-9cf6-53400c1a7798)
+¿Necesita un poco de ayuda? Consulte [Iniciar una llamada desde un chat en Teams.](https://support.microsoft.com/office/f5138c9d-df4c-43d8-9cf6-53400c1a7798)
 
 ## <a name="related-articles"></a>Artículos relacionados
 

@@ -44,6 +44,6 @@ La autenticación multifactor significa que usted y sus empleados deben proporci
 1. En **Habilitar valores predeterminados de seguridad,** seleccione **Sí** y, a continuación, **Guarde**.
 
 > [!NOTE]
-> Para las nuevas suscripciones, los valores predeterminados seguros se activan automáticamente.
+> Para las nuevas suscripciones, los valores predeterminados de seguridad se activan automáticamente.
 
 La próxima vez que los empleados seleccionados inicien sesión, se les pedirá que configuren la aplicación Microsoft Authenticator en sus teléfonos para una segunda forma de autenticación.

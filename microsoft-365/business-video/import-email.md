@@ -41,10 +41,10 @@ Después de registrarse en Microsoft 365, es posible que aún tenga correo elect
 
 1. En Outlook, seleccione  **Archivo**, **Abrir y Exportar** y, a continuación, **Importar/Exportar**.
 2. Seleccione  **Exportar a un archivo** y, a continuación, seleccione  **Siguiente**.
-3. Seleccione  **el archivo de datos de Outlook** y, a continuación, seleccione  **Siguiente**.
+3. Seleccione  **archivo de datos de Outlook** y, a continuación, seleccione  **Siguiente**.
 4. Seleccione su cuenta de correo electrónico antigua.
 5. Compruebe que está incluyendo subcarpetas. A continuación,  **seleccione Siguiente**.
-6. Seleccione  **Examinar** y vaya a una ubicación fácil de recordar, como el escritorio. Seleccione  **Aceptar** y, a continuación, **Finalizar**.
+6. Selecciona  **Examinar** y ve a una ubicación fácil de recordar, como el escritorio. Seleccione  **Aceptar** y, a continuación, **Finalizar**.
 7. Deje los campos de contraseña en blanco y, a continuación, elija **Aceptar**.
 
     Se ha exportado su cuenta de correo electrónico antigua.
@@ -53,6 +53,6 @@ Después de registrarse en Microsoft 365, es posible que aún tenga correo elect
 
 1. En Outlook, seleccione  **Archivo**, **Abrir**,  **Exportar** y, a continuación, **Importar/Exportar**.
 2. Seleccione  **Importar desde otro programa o archivo** y, a continuación, seleccione  **Siguiente**.
-3. Seleccione  **el archivo de datos de Outlook** y, a continuación, seleccione  **Siguiente**.
+3. Seleccione  **archivo de datos de Outlook** y, a continuación, seleccione  **Siguiente**.
 4. Seleccione  **Examinar** y vaya al archivo que acaba de exportar. Selecciónelo y, a  **continuación, seleccione Abrir** y, a continuación, **Siguiente**.
 5. Compruebe que está incluyendo subcarpetas y que está importando elementos a la misma carpeta en su nueva cuenta de correo electrónico. Elija **Terminar**.

@@ -45,7 +45,7 @@ Primero tendrá que eliminar los registros DNS existentes de Google y, a continu
 1. Desplácese hacia abajo **hasta Registros** de recursos personalizados y elimine los registros DNS existentes que aparezcan, incluidos los que haya creado anteriormente para Microsoft 365.
 1. Vaya al Centro [de administración de Microsoft 365.](https://admin.microsoft.com)
 1. En el panel de navegación izquierdo, elija Mostrar **todo**, **Configuración**, **Dominios**.
-1. A continuación, elija el dominio predeterminado.
+1. A continuación, elija su dominio predeterminado.
 1. Seleccione **Continuar configuración** y, a continuación, para conectar su dominio, elija  **Continuar**.
 1. Desplácese hacia abajo para ver los registros DNS que deben copiarse en Google.
 1. Abra **Registros MX** y, en Puntos para dirección o **valor,** copie el registro.

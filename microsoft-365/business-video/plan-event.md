@@ -43,7 +43,7 @@ Use cubos para ordenar tareas por tipo, como planeación de eventos, marketing y
 
 1. Seleccione  **Agregar nuevo depósito y**  escriba una nueva categoría de tarea.
 2. Seleccione  **+**  esta opción para agregar tareas a un depósito y escriba un nombre.
-3. Seleccione  **Agregar tarea**.
+3. Seleccione **Agregar tarea.**
 
 ### <a name="work-with-labels"></a>Trabajar con etiquetas
 

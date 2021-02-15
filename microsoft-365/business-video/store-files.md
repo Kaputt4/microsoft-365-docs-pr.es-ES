@@ -45,6 +45,6 @@ En Microsoft 365, puede almacenar su trabajo en OneDrive para la Empresa o en si
 ### <a name="collaborate-with-a-sharepoint-site"></a>Colaborar con un sitio de SharePoint
 
 1. En [Office 365,](https://www.office.com/)abra  **SharePoint**  desde el iniciador de aplicaciones y, a continuación, seleccione el sitio de grupo.
-2. Agregue archivos a la ubicación de documentos predeterminada o cree más ubicaciones de documentos, denominadas Bibliotecas.
+2. Agregue archivos a la ubicación predeterminada de documentos o cree más ubicaciones de documentos, denominadas Bibliotecas.
 
 Puede personalizar el sitio de SharePoint creando subs sitios para proyectos, equipos o clientes específicos. También puede agregar el nombre, el logotipo y la apariencia de su empresa, convirtiendo el sitio en una intranet empresarial. [Más información](https://support.microsoft.com/office/06bbadc3-6b04-4a60-9d14-894f6a170818).

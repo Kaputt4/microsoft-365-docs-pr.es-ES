@@ -41,9 +41,9 @@ Las directivas de prevención de pérdida de datos ayudan a identificar y proteg
 1. To get started, go to the [admin center](https://admin.microsoft.com), and select **Setup**.
 1. Desplácese hacia abajo **hasta Configurar la prevención de pérdida de** datos y, a continuación, seleccione **Ver** y, a continuación, **Administrar**.
 1. Para editar una directiva, selecciónelo, elija **Editar directiva** y, a continuación, seleccione qué cambiar. Por ejemplo, seleccione **Ubicaciones** para cambiar lo que se examina.
-1. Para habilitar el examen de contenido en Microsoft Teams, active el modificador para alternar en la posición **On** y, a continuación, **seleccione Guardar**.
+1. Para habilitar el examen de contenido en Microsoft Teams, cambie el modificador de alternancia a la posición **On** y, a continuación, **seleccione Guardar**.
 1. Para editar la configuración de directiva, seleccione **Editar**.
-1. Deberá establecer reglas independientes que se apliquen a pequeñas y grandes cantidades de contenido confidencial detectado. Expande la regla de bajo volumen. Elija **Editar regla.**
+1. Deberá establecer reglas independientes que se apliquen a pequeñas y grandes cantidades de contenido confidencial detectado. Expande la regla de bajo volumen. Elija **Editar regla**.
 1. Revise la configuración y ajuste la configuración según sea necesario. Por ejemplo, puede elegir personalizar el texto **del** correo electrónico y **personalizar el texto de sugerencia de directiva.** Seleccione **Guardar**.
 1. Repita este paso para la regla de volumen alto. Seleccione **Guardar** y, a continuación, **Cerrar**.
 1. Para crear una nueva directiva, seleccione **Crear una directiva.**
@@ -54,4 +54,4 @@ Las directivas de prevención de pérdida de datos ayudan a identificar y proteg
 1. Elija lo que desea que suceda si se detecta información confidencial. Seleccione **Siguiente**.
 1. Personalice los permisos de acceso e invalidación. Seleccione **Siguiente**.
 1. Elige cuándo quieres que la directiva entre en vigor. Seleccione **Siguiente**.
-1. Revise la configuración y seleccione **Crear**. Una vez que la directiva entre en vigor, se bloqueará el correo electrónico que contenga la información confidencial descrita y el remitente que intentó enviar esa información verá un mensaje de advertencia.
+1. Revise la configuración y seleccione **Crear**. Una vez que la directiva entre en vigor, se bloqueará el correo electrónico que contiene la información confidencial descrita y el remitente que intentó enviar esa información verá un mensaje de advertencia.

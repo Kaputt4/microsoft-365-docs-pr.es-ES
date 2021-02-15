@@ -31,15 +31,15 @@ Este artículo contiene las preguntas más frecuentes sobre movilidad y segurida
 
 ## <a name="how-can-i-get-basic-mobility-and-security-i-dont-see-it-in-the-microsoft-365-admin-center"></a>¿Cómo puedo obtener la movilidad y la seguridad básicas? No lo veo en el Centro de administración de Microsoft 365
 
-1.  Para activar la movilidad y la seguridad básicas, vaya a la página Seguridad y [& cumplimiento de Office 365.](https://protection.office.com/)
+1.  Active la movilidad básica y la seguridad yendo a la página Seguridad y [& cumplimiento de Office 365.](https://protection.office.com/)
 
 2.  Ve a Prevención de pérdida de datos > administración de dispositivos.
 
 ## <a name="how-can-i-get-started-with-device-management-in-basic-mobility-and-security"></a>¿Cómo puedo empezar a usar la administración de dispositivos en movilidad y seguridad básicas?
 
-Hay cuatro pasos para empezar a usar la movilidad y la seguridad básicas: 
+Hay cuatro pasos para empezar a trabajar con movilidad y seguridad básicas: 
 
-1. Active la movilidad y la seguridad básicas yendo a La seguridad de [Office 365 & cumplimiento.](https://protection.office.com/)
+1. Active la movilidad y la seguridad básicas yendo a La seguridad [de Office 365 & cumplimiento.](https://protection.office.com/)
 
 2. Ve a Prevención de pérdida de datos > administración de dispositivos > directivas de dispositivo.
     
@@ -51,7 +51,7 @@ Para obtener más información, vea [Configurar movilidad y seguridad básicas.]
 
 ## <a name="im-trying-to-set-up-basic-mobility-and-security-but-it-seems-stuck-the-microsoft-365-service-health-has-been-showing-provisioning-for-a-while-what-can-i-do"></a>Estoy intentando configurar la movilidad y la seguridad básicas, pero parece que está bloqueado. El Estado del servicio de Microsoft 365 ha estado mostrando "aprovisionamiento" durante un tiempo. ¿Qué puedo hacer?
 
-El servicio puede tardar algún tiempo en prepararse para usted. Una vez completado el aprovisionamiento, verá la página Movilidad y seguridad básica. Si ha esperado 24 horas y el estado sigue aprovisionamiento, póngase en contacto con el soporte técnico y le ayudaremos a averiguar cuál es el problema. Para obtener opciones de soporte técnico, [consulte ¿Aún necesita ayuda?](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp).
+El servicio puede tardar algún tiempo en prepararse para usted. Cuando se complete el aprovisionamiento, verá la página Movilidad y seguridad básica. Si ha esperado 24 horas y el estado sigue aprovisionamiento, póngase en contacto con el soporte técnico y le ayudaremos a averiguar cuál es el problema. Para obtener opciones de soporte técnico, [consulte ¿Aún necesita ayuda?](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp).
 
 ## <a name="what-can-i-do-if-device-enrollment-fails"></a>¿Qué puedo hacer si se produce un error en la inscripción de dispositivos?
 
@@ -69,7 +69,7 @@ Si la inscripción sigue sin funcionar, consulte Solucionar problemas [de movili
 
 ## <a name="whats-the-difference-between-intune-and-basic-mobility-and-security"></a>¿Cuál es la diferencia entre Intune y movilidad y seguridad básicas?
 
-La movilidad y la seguridad básicas se hospedan en el servicio de Intune. Es un subconjunto de servicios de Intune proporcionados como una ventaja adicional para Microsoft 365 y es una solución integrada basada en la nube para administrar dispositivos en su organización. Para obtener una comparación en paralelo de los dos servicios para ayudarle a decidir si el uso de Intune o Movilidad y seguridad básica para Microsoft 365 es la mejor opción para usted, vea Elegir entre seguridad de movilidad básica e [Intune.](choose-between-basic-mobility-and-security-and-intune.md)
+La movilidad y la seguridad básicas se hospedan en el servicio de Intune. Es un subconjunto de servicios de Intune proporcionados como una ventaja adicional para Microsoft 365 y es una solución integrada basada en la nube para administrar dispositivos en su organización. Para obtener una comparación en paralelo de los dos servicios para ayudarle a decidir si el uso de Intune o Movilidad y seguridad básica para Microsoft 365 es la mejor opción para usted, vea Elegir entre Seguridad de movilidad básica e [Intune.](choose-between-basic-mobility-and-security-and-intune.md)
 
 ## <a name="how-do-policies-work-for-basic-mobility-and-security-how-do-i-set-them-up-disable-them"></a>¿Cómo funcionan las directivas para movilidad y seguridad básicas? ¿Cómo puedo configurarlos? ¿Deshabilitarlos?
 
@@ -83,7 +83,7 @@ Si desea excluir un grupo específico de usuarios de que no se ven afectados por
 
 Si ya usa directivas de Exchange ActiveSync para administrar dispositivos móviles, puede empezar a usar Movilidad y seguridad básica siguiendo los pasos para configurar la movilidad y la seguridad básicas. Para obtener más información, vea Proteger el acceso de usuarios [y dispositivos](https://go.microsoft.com/fwlink/?LinkId=615145) [y Configurar movilidad y seguridad básicas.](set-up.md)
 
-Al aplicar las directivas que cree en Movilidad y seguridad básicas a grupos de usuarios, estas directivas invalidan Exchange ActiveSync las directivas de buzón de dispositivo móvil y las reglas de acceso de dispositivo que haya creado anteriormente en el Centro de administración de Exchange para esos usuarios.
+Al aplicar las directivas que cree en Movilidad y seguridad básicas Exchange ActiveSync grupos de usuarios, estas directivas invalidan Exchange ActiveSync las directivas de buzón de dispositivo móvil y las reglas de acceso de dispositivo que haya creado anteriormente en el Centro de administración de Exchange para esos usuarios.
 
 Después de inscribir un dispositivo en movilidad y seguridad básicas, se omiten todas Exchange ActiveSync directiva de buzón de dispositivo móvil o regla de acceso de dispositivo aplicada al dispositivo.
 

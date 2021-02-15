@@ -40,7 +40,7 @@ Inicie el proceso de empaquetado cargando la información de la aplicación en e
 
 ![calendario que muestra la entrada de la aplicación un jueves (el día 21 en este ejemplo), validación multimedia al día siguiente, empaquetado el lunes siguiente (día 25) y entrega de la aplicación el viernes siguiente (el día 29)](../../media/MCS-cal.png)
 
-Se te notificará una vez que se haya entregado la aplicación. En ese momento, tiene 21 días para realizar pruebas de aceptación y aprobar el trabajo en el portal de Escritorio administrado de Microsoft. Si detecta algún problema con la aplicación durante las pruebas de aceptación, rechace la aplicación en el portal de Escritorio administrado de Microsoft y se le conectará por correo electrónico con un empaquetador de MCS para comprender y resolver el problema.
+Se te notificará una vez que se haya entregado la aplicación. En ese momento, tiene 21 días para realizar pruebas de aceptación y aprobar el trabajo en el portal de Escritorio administrado de Microsoft. Si detecta algún problema con la aplicación durante las pruebas de aceptación, rechace la aplicación en el portal de Escritorio administrado de Microsoft y se conectará por correo electrónico con un empaquetador de MCS para comprender y resolver el problema.
 
 ## <a name="testing-accounts-and-environment"></a>Entorno y cuentas de prueba
 

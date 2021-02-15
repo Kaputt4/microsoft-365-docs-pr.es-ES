@@ -66,8 +66,8 @@ En esta ilustración, las sucursales tienen su propia conexión a Internet a tra
 
 A continuación se muestra cómo la configuración optimizada resuelve los problemas de latencia de una red empresarial tradicional:
 
-- El tráfico de Confianza de Microsoft 365 omite la red troncal WAN y se envía a las puertas frontales locales de todas las oficinas, lo que reduce la latencia.
-- Las chineadas de red que realizan procesamiento de paquetes duplicados se omiten para el tráfico de confianza de Microsoft 365, disminuyendo la latencia.
+- El tráfico de Confianza de Microsoft 365 omite la red troncal WAN y se envía a las puertas frontales locales de todas las oficinas, disminuyendo la latencia.
+- Las chineadas de red que realizan procesamiento de paquetes duplicados se omiten para el tráfico de confianza de Microsoft 365, lo que reduce la latencia.
 - Los dispositivos perimetrales de red que realizan procesamiento de paquetes innecesarios y duplicados se omiten para el tráfico de confianza de Microsoft 365, lo que reduce la latencia.
 
 Para obtener más información, consulte Información general sobre la conectividad de [red de Microsoft 365.](../enterprise/microsoft-365-networking-overview.md)
@@ -94,7 +94,7 @@ Para obtener más información e instrucciones, consulte [Optimizar la conectivi
 
 ## <a name="using-network-insights-preview"></a>Uso de Network Insights (versión preliminar)
 
-La información de red son métricas de rendimiento recopiladas de su inquilino de Microsoft 365 que le ayudan a diseñar perímetros de red para las ubicaciones de las oficinas. Cada información proporciona detalles en directo sobre las características de rendimiento de un problema específico para cada ubicación geográfica en la que los usuarios locales acceden a su espacio empresarial.
+La información de red son métricas de rendimiento recopiladas de su inquilino de Microsoft 365 que le ayudan a diseñar perímetros de red para las ubicaciones de las oficinas. Cada información proporciona detalles en directo sobre las características de rendimiento de un problema especificado para cada ubicación geográfica en la que los usuarios locales acceden a su espacio empresarial.
 
 Hay dos perspectivas de red de nivel de inquilino que se pueden mostrar para el inquilino:
 
@@ -113,7 +113,7 @@ Estas son las conclusiones de red específicas para cada ubicación de la oficin
 >[!IMPORTANT]
 >La información de red, las recomendaciones de rendimiento y las evaluaciones del Centro de administración de Microsoft 365 se encuentran actualmente en estado de versión preliminar. Solo está disponible para los inquilinos de Microsoft 365 que se han inscrito en el programa de vista previa de características.
 
-Para obtener más información, vea [Microsoft 365 Network Insights](../enterprise/office-365-network-mac-perf-insights.md).
+Para obtener más información, [vea Microsoft 365 Network Insights](../enterprise/office-365-network-mac-perf-insights.md).
 
 ## <a name="sharepoint-performance-with-the-office-365-cdn"></a>Rendimiento de SharePoint con la red CDN de Office 365
 
@@ -133,7 +133,7 @@ Para que los clientes locales, los dispositivos perimetrales y los servicios de 
 
 Para automatizar la lista y la administración de cambios para los puntos de conexión de Microsoft 365 en sus archivos PAC de cliente y dispositivos de red, use la dirección IP de [Office 365](../enterprise/microsoft-365-ip-web-service.md)y el servicio web basado en REST de url. Este servicio le ayuda a identificar y diferenciar mejor el tráfico de red de Microsoft 365, lo que facilita evaluar, configurar y mantenerse al día con los últimos cambios.
 
-Puede usar PowerShell, Python u otros idiomas para determinar los cambios en los puntos de conexión a lo largo del tiempo y configurar los archivos PAC y los dispositivos de red perimetral.
+Puede usar PowerShell, Python u otros lenguajes para determinar los cambios en los puntos de conexión a lo largo del tiempo y configurar los archivos PAC y los dispositivos de red perimetral.
 
 El proceso básico es:
 
@@ -141,13 +141,13 @@ El proceso básico es:
 2. Ejecuta un número periódico diario para comprobar si hay cambios en los puntos de conexión o usa un método de notificación.
 3. Cuando se detecten cambios, vuelva a generar y redistribuir el archivo PAC para los equipos cliente y realice los cambios en los dispositivos de red.
 
-Para obtener más información, vea [dirección IP de Office 365 y servicio web de dirección URL.](../enterprise/microsoft-365-ip-web-service.md)
+Para obtener más información, vea [dirección IP de Office 365 y servicio web de url.](../enterprise/microsoft-365-ip-web-service.md)
 
 ## <a name="results-of-step-2"></a>Resultados del paso 2
 
 Para su espacio empresarial de Microsoft 365 con redes óptimas, ha determinado:
 
-- Cómo optimizar el rendimiento de la red para los usuarios locales agregando conexiones a Internet a todas las sucursales y eliminando las indicaciones de red.
+- Cómo optimizar el rendimiento de la red para los usuarios locales agregando conexiones a Internet a todas las sucursales y eliminando las bifurcaciones de red.
 - Cómo implementar la lista automatizada de puntos de conexión de confianza para los archivos PAC basados en cliente y los dispositivos y servicios de red, incluidas las actualizaciones continuas (más adecuadas para redes empresariales).
 - Cómo admitir el acceso de trabajadores remotos a los recursos locales.
 - Cómo usar Network Insights

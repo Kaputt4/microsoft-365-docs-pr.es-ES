@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Aprenda a crear un calendario compartido.
+description: Obtenga información sobre cómo crear un calendario compartido.
 ms.openlocfilehash: 8851f801eafc11348e35551c06309eb0115c2212
 ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT

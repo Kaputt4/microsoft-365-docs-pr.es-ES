@@ -34,7 +34,7 @@ ms.locfileid: "49926119"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrWGt?autoplay=false]
 
-Microsoft 365 ayuda a proteger su empresa contra ransomware al impedir que se abran archivos potencialmente peligrosos, como JavaScript, lotes y ejecutables, en Outlook. Para aumentar este nivel de protección mediante la adición de reglas que bloquean o advierten sobre tipos de archivos adicionales, siga estos pasos.
+Microsoft 365 ayuda a proteger su empresa contra ransomware evitando que se abran archivos potencialmente peligrosos, como JavaScript, lotes y ejecutables, en Outlook. Para aumentar este nivel de protección mediante la adición de reglas que bloquean o advierten sobre tipos de archivos adicionales, siga estos pasos.
 
 ## <a name="try-it"></a>¿Se atreve?
 
@@ -43,7 +43,7 @@ Microsoft 365 ayuda a proteger su empresa contra ransomware al impedir que se ab
 1. En la pestaña reglas, elija la flecha situada junto al símbolo más (+) y, a continuación, **elija Crear una nueva regla.**
 1. En la **nueva página de** reglas, escriba un nombre para la regla, desplácese hasta la parte inferior y, a continuación, elija Más **opciones.**
 1. En **Aplicar esta regla si**, seleccione Cualquier dato **adjunto** y, a continuación, seleccione la extensión de archivo incluye **estas palabras.**
-1. En el cuadro **debajo** de especificar palabras o frases, escriba las extensiones de archivo a las que desea aplicar la regla, como las extensiones de archivo que pueden contener macros. Use el símbolo más (+) para agregarlos de uno en uno.
+1. En el cuadro **debajo** de especificar palabras o frases, escriba las extensiones de archivo a las que desea aplicar la regla, como las extensiones de archivo que pueden contener macros. Usa el símbolo más (+) para agregarlos de uno en uno.
 
     Obtenga más información sobre los tipos de archivo leyendo [Proteger contra ransomware.](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)
 

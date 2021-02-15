@@ -41,7 +41,7 @@ Una vez&#39;haya configurado Microsoft 365 Empresa Premium, puede instalar aplic
 2. Seleccione  **Buscar,** escriba  **Outlook** en la barra de búsqueda y, a continuación, selecciónelo.
 3. Elija **Obtener**   >   **instalación.**
 4. Escriba su contraseña de Id. de Apple, **seleccione Iniciar sesión** en  >   **Abrir**.
-5. Escriba su dirección de correo electrónico del trabajo.
+5. Escriba la dirección de correo electrónico del trabajo.
 6. Seleccione **Agregar cuenta,** escriba su contraseña y, a continuación, **elija Iniciar sesión.**
 7. (Opcional), seleccione **Vamos a hacerlo ** para agregar más cuentas o seleccione Quizás más adelante  **para**  omitir este paso.
 8. Seleccione  **Aceptar** para reiniciar la aplicación de modo que Microsoft 365 Empresa pueda proteger los datos de Outlook.

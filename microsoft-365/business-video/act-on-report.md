@@ -42,7 +42,7 @@ En el [centro de administración,](https://admin.microsoft.com)puede ver todos l
 
 1. Vaya a **Informes** y, a continuación, **Uso.** Para obtener información detallada sobre cualquier informe, seleccione uno. El informe de usuarios activos muestra qué servicios usan más las personas de su empresa.
 1. Por ejemplo, vamos a ver el informe de OneDrive. Aquí podemos ver cuántas personas tienen una cuenta, también puedes ver el número de archivos totales y activos, así como el almacenamiento usado. Para ver todos los demás informes, vaya al menú desplegable.
-1. Aquí podemos echar un vistazo al informe de uso de la aplicación de correo electrónico y ver qué métodos usan más los empleados para acceder a su correo electrónico. También puede ver información específica de una persona, pero los detalles están ocultos de forma predeterminada. Para mostrar los detalles de usuario individual, vaya **a** Configuración y, a continuación, Servicios **& complementos.**
+1. Aquí podemos echar un vistazo al informe de uso de la aplicación de correo electrónico y ver qué métodos usan más los empleados para acceder a su correo electrónico. También puede ver información específica de una persona, pero los detalles están ocultos de forma predeterminada. Para mostrar los detalles de usuario individual, vaya **a** Configuración y, a continuación, servicios **& complementos.**
 1. En el panel de informes, podemos activar el identificador anónimo. Ahora, vamos a cerrar el panel y volver a **Informes,** **Uso** y Actividad de **correo electrónico.** Aquí podemos ver información específica de una persona.
 
     Recuerde que si alguna vez se queda bloqueado, siempre puede volver a la Ayuda que le proporciona información sobre el informe específico que está viendo.

@@ -37,7 +37,7 @@ Si es administrador, puede comprobar qué suscripciones tiene su organización y
 ::: moniker range="o365-worldwide"
 
 1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. En la **pestaña Productos,** verá todas las suscripciones. Cada línea de suscripción incluye información sobre licencias, estado de suscripción y facturación.
+2. En la **pestaña** Productos, verá todas las suscripciones. Cada línea de suscripción incluye información sobre licencias, estado de suscripción y facturación.
 3. Si desea cambiar las columnas que aparecen en la lista, seleccione **Elegir columnas**. Cambie la selección de columnas y, a continuación, **seleccione Guardar**.
 4. Para ver más detalles de una única suscripción, seleccione esa suscripción.
 

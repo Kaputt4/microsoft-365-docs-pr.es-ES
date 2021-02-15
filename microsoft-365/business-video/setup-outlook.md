@@ -35,9 +35,9 @@ ms.locfileid: "49925927"
 
 ## <a name="try-it"></a>¿Se atreve?
 
-Después de instalar las aplicaciones de Office,&#39;configurar Outlook para empezar a usar el correo electrónico, el calendario y los contactos. Aquí&#39;cómo hacerlo.
+Después de instalar las aplicaciones de Office,&#39;configurar Outlook para que empiece a usar el correo electrónico, el calendario y los contactos. Aquí&#39;cómo hacerlo.
 
-1. Abra el menú Inicio. Busque Outlook y elija esta opción.
+1. Abra el menú Inicio. Busque Outlook y eli elija.
 2. Escriba su dirección de correo electrónico de Microsoft 365 y seleccione **Conectar.**
 3. Escriba las direcciones de correo electrónico adicionales que desee usar, como su dirección de correo electrónico anterior o personal. Seleccione  **Siguiente**.
 4. Si se le solicita, escriba una contraseña y, a continuación, **seleccione Iniciar sesión.**

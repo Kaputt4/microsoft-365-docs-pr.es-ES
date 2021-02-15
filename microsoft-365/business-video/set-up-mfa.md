@@ -38,17 +38,17 @@ La autenticación multifactor proporciona más seguridad para su empresa. Siga e
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. Cuando inicie [https://office.com](https://office.com) sesión, verá el mensaje **Más información** necesaria. Elija **Siguiente**.
+1. Cuando inicie sesión, verá el mensaje [https://office.com](https://office.com) **Más información** necesaria. Elija **Siguiente**.
 1. En **el paso 1,** elija **aplicación móvil en** **la** lista desplegable Teléfono de autenticación.
 1. En ¿Cómo desea usar la aplicación móvil?, seleccione el método que desea usar para iniciar sesión:
-    - Selecciona **Recibir notificaciones para la verificación para** autenticar directamente desde tu aplicación móvil, que puede incluir la autenticación con huella digital.
+    - Seleccione **Recibir notificaciones para comprobarla para** autenticarse directamente desde la aplicación móvil, que puede incluir la autenticación con huella digital.
     - Seleccione **Usar código de verificación** para escribir un nuevo código de verificación cada vez que se autentique.
 1. Elija **Configurar**.
 1. Deje abierta **la ventana Configurar aplicación** móvil en el equipo.
 1. En el dispositivo móvil, vaya a la tienda de aplicaciones, busque "Microsoft Authenticator", selecciónelo, instálelo y ábralo.
-1. En Authenticator, sigue las indicaciones para completar el asistente y luego elige el signo más (+) para agregar tu cuenta.
+1. En Authenticator, sigue las instrucciones para completar el asistente y luego elige el signo más (+) para agregar tu cuenta.
 1. Choose **Work or school account**, choose **Allow** when prompted for permission to take pictures and record video, and then follow the instructions to scan the QR code in the open window on your computer.
 1. Después de agregar la cuenta, elija **Got It**.
 1. En el equipo, elija **Siguiente** y, a continuación, vuelva a **elegir** Siguiente.
-1. Anote el código que aparece en el dispositivo móvil, escriba el código en el equipo en el cuadro debajo del paso **2** y, a continuación, elija **Comprobar**.
+1. Tome nota del código que aparece en el dispositivo móvil, escriba el código en el equipo en el cuadro debajo del paso **2** y, a continuación, **elija Comprobar**.
 1. En los cuadros debajo **del paso 3,** escriba un número de teléfono de copia de seguridad, como su número de oficina, elija **Siguiente** y, a continuación, **elija Listo.**

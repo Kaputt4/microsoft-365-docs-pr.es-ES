@@ -27,7 +27,7 @@ ms.locfileid: "49877121"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Capacidades de Movilidad y seguridad básicas
 
-La movilidad y la seguridad básicas pueden ayudarle a proteger y administrar dispositivos móviles como iPhone, iPad, Android y Windows Phone que usan los usuarios de Microsoft 365 con licencia de su organización. Puede crear directivas de administración de dispositivos móviles con configuraciones que puedan ayudar a controlar el acceso al correo electrónico y los documentos de Microsoft 365 de su organización para dispositivos móviles y aplicaciones compatibles. Si un dispositivo se pierde o se lo roban, puede borrarlo de forma remota para quitar la información confidencial de la organización.
+La movilidad y la seguridad básicas pueden ayudarle a proteger y administrar dispositivos móviles como iPhone, iPad, Android y Windows Phones que usan los usuarios de Microsoft 365 con licencia de su organización. Puede crear directivas de administración de dispositivos móviles con configuraciones que puedan ayudar a controlar el acceso al correo electrónico y documentos de Microsoft 365 de su organización para dispositivos móviles y aplicaciones compatibles. Si un dispositivo se pierde o se lo roban, puede borrarlo de forma remota para quitar la información confidencial de la organización.
 
 ## <a name="supported-devices"></a>Dispositivos admitidos
 
@@ -51,16 +51,16 @@ Puede usar la movilidad y la seguridad básicas para proteger y administrar los 
 El control de acceso para Windows 10 requiere una suscripción que incluya Azure AD Premium y el dispositivo debe unirse a Azure Active Directory.
 
 <sup>3</sup> El control de acceso para dispositivos Windows 8.1 RT está limitado a Exchange ActiveSync.
-Después de junio de 2020, las versiones de Android posteriores a la 9 no pueden administrar la configuración de contraseña excepto en dispositivos DesA de Knox.
+Después de junio de 2020, las versiones de Android posteriores a 9 no pueden administrar la configuración de contraseña excepto en dispositivos DesA de Knox.
 
 >[!NOTE]
->Los dispositivos ya inscritos con versiones anteriores del sistema operativo siguen funcionando, aunque es posible que las funcionalidades cambien sin previo aviso.
+>Los dispositivos ya inscritos con versiones anteriores del sistema operativo siguen funcionando, aunque las funcionalidades pueden cambiar sin previo aviso.
 
-Si los usuarios de su organización usan dispositivos móviles que no son compatibles con movilidad y seguridad básicas, es posible que desee bloquear el acceso Exchange ActiveSync la aplicación Exchange ActiveSync correo electrónico de Microsoft 365 para esos dispositivos, para ayudar a que los datos de su organización sean más seguros. Para ver los pasos para bloquear Exchange ActiveSync, consulte [Administrar la configuración de acceso de dispositivos en Movilidad y seguridad básicas.](manage-device-access-settings.md)
+Si los usuarios de su organización usan dispositivos móviles que no son compatibles con movilidad y seguridad básicas, es posible que desee bloquear el acceso de una aplicación Exchange ActiveSync correo electrónico de Microsoft 365 para esos dispositivos, para ayudar a que los datos de su organización sean más seguros. Para ver los pasos para bloquear Exchange ActiveSync, consulta [Administrar la configuración de acceso de dispositivos en Movilidad y seguridad básicas.](manage-device-access-settings.md)
 
 ## <a name="access-control-for-microsoft-365-email-and-documents"></a>Control de acceso para documentos y correo electrónico de Microsoft 365
 
-Las aplicaciones admitidas para los distintos tipos de dispositivos móviles de la tabla siguiente solicitan a los usuarios que se inscriban en Movilidad y Seguridad básicas, donde hay una nueva directiva de administración de dispositivos móviles que se aplica al dispositivo de un usuario y el usuario no ha inscrito previamente el dispositivo. Si el dispositivo de un usuario no cumple con una directiva, en función de cómo configure la directiva, es posible que se bloquee el acceso de un usuario a los recursos de Microsoft 365 en estas aplicaciones o que tenga acceso, pero Microsoft 365 informa de una infracción de directiva.
+Las aplicaciones admitidas para los distintos tipos de dispositivos móviles de la tabla siguiente solicitan a los usuarios que se inscriban en Movilidad y seguridad básicas, donde hay una nueva directiva de administración de dispositivos móviles que se aplica al dispositivo de un usuario y el usuario no ha inscrito previamente el dispositivo. Si el dispositivo de un usuario no cumple con una directiva, en función de cómo configure la directiva, es posible que se bloquee el acceso de un usuario a los recursos de Microsoft 365 en estas aplicaciones o que tenga acceso, pero Microsoft 365 informa de una infracción de directiva.
 
 |**Producto**|**iOS 10.0 o posterior**|**Android 5.0 o posterior**|
 |:-----|:-----|:-----|
@@ -77,7 +77,7 @@ En el siguiente diagrama se muestra lo que sucede cuando un usuario con un nuevo
 :::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Control de acceso de movilidad básica y seguridad":::
 
 > [!NOTE]
-> Las directivas y las reglas de acceso creadas en Movilidad y seguridad básicas para Microsoft 365 Empresa Standard invalidarán Exchange ActiveSync las directivas de buzón de dispositivo móvil y las reglas de acceso de dispositivo creadas en el Centro de administración de Exchange. Después de inscribir un dispositivo en Movilidad y seguridad básica para Microsoft 365 Empresa Standard, se omitirá cualquier directiva de buzón de dispositivo móvil o regla de acceso de dispositivo de Exchange ActiveSync aplicada al dispositivo. Para obtener más información sobre Exchange ActiveSync, [consulte Exchange ActiveSync en Exchange Online.](https://go.microsoft.com/fwlink/p/?LinkId=524380)
+> Las directivas y las reglas de acceso creadas en Movilidad y seguridad básicas para Microsoft 365 Empresa Standard invalidarán Exchange ActiveSync las directivas de buzón de dispositivo móvil y las reglas de acceso de dispositivo creadas en el Centro de administración de Exchange. Después de inscribir un dispositivo en movilidad básica y seguridad para Microsoft 365 Empresa Standard, se omitirá cualquier directiva de buzón de dispositivo móvil o regla de acceso de dispositivo de Exchange ActiveSync aplicada al dispositivo. Para obtener más información sobre Exchange ActiveSync, [consulte Exchange ActiveSync en Exchange Online.](https://go.microsoft.com/fwlink/p/?LinkId=524380)
 
 ## <a name="policy-settings-for-mobile-devices"></a>Configuración de directivas para dispositivos móviles
 
@@ -189,9 +189,9 @@ Puede establecer la siguiente configuración de directiva adicional mediante los
 
 ## <a name="settings-supported-by-windows"></a>Configuración compatible con Windows
 
-Puedes administrar dispositivos Windows 10 inscribándolos como dispositivos móviles. Después de implementar una directiva aplicable, los usuarios con dispositivos Windows 10 tendrán que inscribirse en Movilidad y Seguridad básica la primera vez que usen la aplicación de correo electrónico integrada para acceder a su correo electrónico de Microsoft 365 (requiere una suscripción a Azure AD Premium).
+Puedes administrar dispositivos Windows 10 inscribándolos como dispositivos móviles. Después de implementar una directiva aplicable, los usuarios con dispositivos Con Windows 10 tendrán que inscribirse en Movilidad básica y Seguridad la primera vez que usen la aplicación de correo electrónico integrada para acceder a su correo electrónico de Microsoft 365 (requiere una suscripción a Azure AD Premium).
 
-La siguiente configuración es compatible con dispositivos windows 10 inscritos como dispositivos móviles. Esta configuración no impedirá que los usuarios accedan a los recursos de Microsoft 365.
+La siguiente configuración es compatible con dispositivos Windows 10 inscritos como dispositivos móviles. Esta configuración no impedirá que los usuarios accedan a los recursos de Microsoft 365.
 
 ### <a name="security-settings"></a>Configuración de seguridad
 

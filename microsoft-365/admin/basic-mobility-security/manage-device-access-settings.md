@@ -1,5 +1,5 @@
 ---
-title: Administrar la configuración de acceso de dispositivos en Movilidad y seguridad básicas
+title: Administrar la configuración de acceso a dispositivos en Movilidad y seguridad básicas
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -27,7 +27,7 @@ ms.locfileid: "49876953"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Administrar la configuración de acceso de dispositivos en Movilidad y seguridad básicas
 
-Si usa movilidad y seguridad básicas, es posible que haya dispositivos que no pueda administrar con La movilidad y la seguridad básicas. Si es así, debe bloquear Exchange ActiveSync acceso de la aplicación al correo electrónico de Microsoft 365 para dispositivos móviles que no son compatibles con movilidad y seguridad básicas. Esto ayuda a proteger la información de la organización en más dispositivos.
+Si usas la movilidad y la seguridad básicas, es posible que haya dispositivos que no puedas administrar con movilidad y seguridad básicas. Si es así, debe bloquear Exchange ActiveSync acceso de la aplicación al correo electrónico de Microsoft 365 para dispositivos móviles que no son compatibles con movilidad y seguridad básicas. Esto ayuda a proteger la información de la organización en más dispositivos.
 
 Siga estos pasos:
 

@@ -35,7 +35,7 @@ Esta solución le lleva a través de la configuración de esa base en estos paso
 4. Migrar los dispositivos Windows, los clientes de Office y los datos y servidores de Office locales
 5. Implementar la administración de dispositivos y aplicaciones
 
-Pero primero, dedemos un momento para comprender qué es un inquilino y cómo es un inquilino que proporciona una base firme.
+Pero primero, vamos a tomar un momento para comprender qué es un inquilino y cómo es un inquilino que proporciona una base firme.
 
 ## <a name="a-microsoft-365-tenant-defined"></a>Un inquilino de Microsoft 365 definido
 
@@ -49,7 +49,7 @@ Aquí le mostramos un ejemplo:
 
 *La administración de* inquilinos es la planeación, implementación y funcionamiento continuo de los inquilinos de Microsoft 365. 
 
-## <a name="attributes-of-a-well-designed-and-operating-tenant"></a>Atributos de un inquilino operativo y bien diseñado
+## <a name="attributes-of-a-well-designed-and-operating-tenant"></a>Atributos de un inquilino bien diseñado y operativo
 
 Además del nombre y la ubicación correctos para su espacio empresarial, hay elementos adicionales para planear, implementar y administrar para garantizar que las experiencias de usuario con aplicaciones de productividad en la nube como Microsoft Teams y Exchange Online sean eficaces, seguras y &mdash; &mdash; eficaces.
 
@@ -64,9 +64,9 @@ Estos son los elementos:
   - Ha optimizado el tráfico de red para los trabajadores remotos que usan un cliente VPN.
 - Ha sincronizado sus cuentas, grupos y otros objetos de Servicios de dominio de Active Directory (AD DS).
   - Las cuentas de inquilino de Azure AD se asignan a buzones de Exchange Online con los dominios DNS correctos para las direcciones de correo electrónico.
-  - A las cuentas de usuario se les han asignado las licencias correctas de los productos comprados correctos (como Microsoft 365 E3 o E5).
+  - Las cuentas de usuario tienen asignadas las licencias correctas de los productos comprados correctos (como Microsoft 365 E3 o E5).
 - Ha configurado una administración segura de identidades y acceso.
-  - Necesita un inicio de sesión de usuario seguro con autenticación multifactor (MFA) o sin contraseña.
+  - Necesita un inicio de sesión de usuario seguro con autenticación multifactor o sin contraseña (MFA).
   - Tiene directivas de acceso condicional que aplican requisitos de inicio de sesión y restricciones para niveles más altos de seguridad.
 - Los servidores de Office locales y sus datos se han migrado a aplicaciones en la nube o se usan en una configuración híbrida.
 - Está realizando la administración de dispositivos con Intune o Movilidad y seguridad básica integrada en Microsoft 365.
@@ -93,9 +93,9 @@ En las siguientes secciones y tabla se indican las funciones clave y las licenci
 | Funcionalidad o característica | Description | Licencias |
 |:-------|:-----|:-------|
 | Varios inquilinos | Cada inquilino de Microsoft 365 es distinto, único e independiente de todos los demás inquilinos de Microsoft 365. Con varios inquilinos, existen restricciones y consideraciones adicionales al administrarlos y proporcionar servicios a los usuarios. | Microsoft 365 E3 o E5 | 
-| Migración de buzones de inquilinos cruzados | Los administradores de inquilinos pueden mover buzones entre inquilinos con dependencias de infraestructura mínimas en sus sistemas locales. Esto elimina la necesidad de incorporar buzones de correo. | Microsoft 365 E3 o E5 | 
+| Migración de buzones de inquilinos cruzados | Los administradores de inquilinos pueden mover buzones entre inquilinos con dependencias de infraestructura mínimas en sus sistemas locales. De esta forma, se elimina la necesidad de incorporar buzones de correo. | Microsoft 365 E3 o E5 | 
 | Multi-Geo | Su espacio empresarial puede almacenar datos en reposo en las otras ubicaciones geográficas del centro de datos que haya elegido para cumplir los requisitos de residencia de datos. | Microsoft 365 E3 o E5 | 
-| Mover datos principales a una nueva ubicación geográfica del centro de datos | A medida que Microsoft agrega nuevas ubicaciones geográficas de centro de datos para recursos de cálculo y capacidad adicionales, puede solicitar un movimiento geográfico del centro de datos para la residencia de datos en la ubicación geográfica de los datos principales de los clientes. | Microsoft 365 E3 o E5 | 
+| Mover datos principales a una nueva ubicación geográfica del centro de datos | A medida que Microsoft agrega nuevas ubicaciones geográficas de centro de datos para recursos de capacidad y cálculo adicionales, puede solicitar un movimiento geográfico del centro de datos para la residencia de datos en la ubicación geográfica de los datos principales de los clientes. | Microsoft 365 E3 o E5 | 
 ||||
 
 ### <a name="networking"></a>Redes
@@ -126,11 +126,11 @@ En las siguientes secciones y tabla se indican las funciones clave y las licenci
 | Migrar datos y servidores locales a Microsoft 365 | Migre los buzones de Exchange, los sitios de SharePoint y Skype Empresarial Online a los servicios en la nube de Microsoft 365. | Microsoft 365 E3 o E5 | 
 ||||
 
-### <a name="device-and-app-management"></a>Administración de dispositivos y aplicaciones
+### <a name="device-and-app-management"></a>Datos de administración de dispositivos y aplicaciones
 
 | Funcionalidad o característica | Description | Licencias |
 |:-------|:-----|:-------|
-| Microsoft Intune | Un servicio basado en la nube que proporciona administración de dispositivos móviles (MDM) y administración de aplicaciones móviles (MAM) para controlar cómo se usan la aplicación de la organización y los dispositivos, incluidos teléfonos móviles, tabletas y portátiles. | Microsoft 365 E3 o E5 | 
+| Microsoft Intune | Un servicio basado en la nube que proporciona administración de dispositivos móviles (MDM) y administración de aplicaciones móviles (MAM) para controlar cómo se usan la aplicación de la organización y los dispositivos, incluidos teléfonos móviles, tabletas y portátiles. | Microsoft 365 E3 o E5 | 
 | Movilidad y seguridad básicas | Proteja y administre los dispositivos móviles de los usuarios, como iPhone, iPad, Android y teléfonos Windows con este servicio integrado.  | Microsoft 365 E3 o E5 | 
 ||||
 

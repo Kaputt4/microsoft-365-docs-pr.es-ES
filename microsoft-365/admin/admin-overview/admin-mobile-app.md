@@ -88,7 +88,7 @@ Los números son el total de los mensajes de la semana pasada, no los mensajes n
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>¿Cómo puedo compartir los mensajes e incidencias de servicio con el resto de mi organización?
 
-Si selecciona un mensaje o un incidente de servicio específico, la opción de recurso compartido estará en la esquina superior derecha. Actualmente se admite el uso compartido de correo electrónico.
+Si selecciona un mensaje o incidente de servicio específico, la opción compartir estará en la esquina superior derecha. Actualmente se admite el uso compartido de correo electrónico.
   
 ### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>¿Puedo usar esta aplicación con varias cuentas o inquilinos?
 
@@ -106,7 +106,7 @@ Puede probar algunos pasos para la solución de problemas de aplicaciones móvil
     
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>¿Qué hago si no encuentro la respuesta a mi pregunta?
 
-Enviar [feedback365@microsoft.com](mailto:feedback365@microsoft.com) para notificar un problema con la aplicación. También puede enviar comentarios en la parte inferior de este artículo. 
+Enviar [feedback365@microsoft.com](mailto:feedback365@microsoft.com) para informar de un problema con la aplicación. También puede enviar comentarios en la parte inferior de este artículo. 
   
 ## <a name="see-also"></a>Vea también
 

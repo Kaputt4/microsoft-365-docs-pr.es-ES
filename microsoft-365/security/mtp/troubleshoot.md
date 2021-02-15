@@ -1,6 +1,6 @@
 ---
 title: Solucionar problemas de servicio de Microsoft 365 Defender
-description: Buscar soluciones y soluciones para problemas conocidos de Microsoft 365 Defender
+description: Buscar soluciones y soluciones a problemas conocidos de Microsoft 365 Defender
 keywords: solucionar problemas de Protección contra amenazas de Microsoft, solucionar problemas, Azure ATP, problemas, complemento, página de configuración
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security

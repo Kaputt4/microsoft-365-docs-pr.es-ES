@@ -1,5 +1,5 @@
 ---
-title: Configurar la Seguridad de Movilidad Básica
+title: Configurar Movilidad y seguridad básicas
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -25,7 +25,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/15/2021
 ms.locfileid: "49876869"
 ---
-# <a name="set-up-basic-mobility-and-security"></a>Configurar la Seguridad de Movilidad Básica
+# <a name="set-up-basic-mobility-and-security"></a>Configurar Movilidad y seguridad básicas
 
 La movilidad y seguridad básica integrada para Microsoft 365 le ayuda a proteger y administrar los dispositivos móviles de los usuarios, como iPhone, iPad, Android y teléfonos Windows. Puede crear y administrar directivas de seguridad de dispositivo, borrar un dispositivo de forma remota y ver informes detallados del dispositivo.
 
@@ -43,13 +43,13 @@ La administración de dispositivos forma parte del Centro de seguridad & cumplim
 
 ## <a name="set-up-mobile-device-management"></a>Configurar la administración de dispositivos móviles
 
-Cuando el servicio esté listo, siga los pasos siguientes para finalizar la instalación.
+Cuando el servicio esté listo, siga estos pasos para finalizar la instalación.
 
 ### <a name="step-1-required-configure-domains-for-basic-mobility-and-security"></a>Paso 1: (Obligatorio) Configurar dominios para movilidad y seguridad básicas
 
 Si no tiene un dominio personalizado asociado a Microsoft 365 o si no está administrando dispositivos Windows, puede omitir esta sección. De lo contrario, deberá agregar registros DNS para el dominio en el host DNS. Si ya ha agregado los registros, como parte de la configuración de su dominio con Microsoft 365, está todo configurado. Después de agregar los registros, los usuarios de Microsoft 365 de su organización que inicien sesión en su dispositivo Windows con una dirección de correo electrónico que use su dominio personalizado se redirigirán para inscribirse en Movilidad y seguridad básicas.
 
-¿Necesita ayuda para configurar los registros? Busque su registrador de dominios y seleccione el nombre del registrador para ir a la ayuda paso a paso para crear un registro DNS en la lista proporcionada en Agregar registros DNS para conectar [su dominio.](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) Usa esas instrucciones para crear registros CNAME descritos en Simplificar la inscripción [de Windows sin Azure AD Premium.](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium)
+¿Necesita ayuda para configurar los registros? Busque su registrador de dominios y seleccione el nombre del registrador para ir a la ayuda paso a paso para crear un registro DNS en la lista proporcionada en Agregar registros DNS para conectar [su dominio.](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) Usa esas instrucciones para crear registros CNAME que se describen en Simplificar la inscripción [de Windows sin Azure AD Premium.](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium)
 
 Después de agregar los dos registros CNAME, vuelva al Centro de seguridad y cumplimiento de & y vaya a Administración de **dispositivos** de prevención de pérdida de datos para  >     completar el paso siguiente.
 
@@ -106,21 +106,21 @@ El siguiente paso es crear e implementar directivas de seguridad de dispositivos
 
 3. Ve a **Directivas de dispositivo.**
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Configuración de directiva de movilidad y seguridad básica":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Configuración de directivas básicas de seguridad y movilidad":::
 
-4. Cree e implemente directivas de seguridad de dispositivos adecuadas para su organización siguiendo los pasos descritos en Crear directivas de seguridad de [dispositivos en Movilidad y seguridad básicas.](create-device-security-policies.md)
+4. Cree e implemente directivas de seguridad de dispositivos adecuadas para su organización siguiendo los pasos descritos en Crear directivas de seguridad de dispositivos en Movilidad y [Seguridad básicas.](create-device-security-policies.md)
 
 > [!TIP]
 >
 > - Al crear una nueva directiva, es posible que quieras establecer la directiva para permitir el acceso y notificar la infracción de la directiva cuando un dispositivo de usuario no cumple con la directiva. Esto le permite ver cuántos dispositivos móviles se ven afectados por la directiva sin bloquear el acceso a Microsoft 365.
 >
-> - Antes de implementar una nueva directiva para todos los usuarios de la organización, te recomendamos que la pruebes en los dispositivos usados por un número reducido de usuarios.
+> - Antes de implementar una nueva directiva para todos los usuarios de la organización, te recomendamos que la pruebes en los dispositivos usados por un pequeño número de usuarios.
 >
 > - Además, antes de implementar directivas, haga que su organización conozca las posibles consecuencias de inscribir un dispositivo en movilidad y seguridad básicas. Según cómo configure las directivas, los dispositivos que no cumplan con las directivas (dispositivos no compatibles) podrían bloquearse para que no tengan acceso a Microsoft 365. Los dispositivos no compatibles también pueden tener aplicaciones instaladas, fotos y otra información personal que, en un dispositivo inscrito, podrían eliminarse si se elimina el dispositivo. Para obtener más información, consulta [Borrar un dispositivo móvil en Movilidad y seguridad básicas.](wipe-mobile-device.md)
 
 ## <a name="make-sure-users-enroll-their-devices"></a>Asegurarse de que los usuarios inscriban sus dispositivos
 
-Después de crear e implementar una directiva de administración de dispositivos móviles, cada usuario con licencia de Microsoft 365 de su organización que aplique la directiva de dispositivo recibirá un mensaje de inscripción la próxima vez que inicie sesión en Microsoft 365 desde su dispositivo móvil. Deben completar los pasos de inscripción y activación para poder acceder al correo electrónico y los documentos de Microsoft 365. Para obtener más información, consulta [Inscribir el dispositivo móvil con movilidad y seguridad básicas.](enroll-your-mobile-device.md)
+Después de crear e implementar una directiva de administración de dispositivos móviles, cada usuario con licencia de Microsoft 365 de su organización que aplique la directiva de dispositivo recibirá un mensaje de inscripción la próxima vez que inicie sesión en Microsoft 365 desde su dispositivo móvil. Deben completar los pasos de inscripción y activación para poder acceder a documentos y correo electrónico de Microsoft 365. Para obtener más información, consulta [Inscribir el dispositivo móvil con movilidad y seguridad básicas.](enroll-your-mobile-device.md)
 
 > [!IMPORTANT]
 > Si el proceso de inscripción no admite el idioma preferido de un usuario, es posible que los usuarios reciban notificaciones de inscripción y pasos en sus dispositivos móviles en otro idioma. Actualmente, no todos los idiomas admitidos en Microsoft 365 son compatibles con el proceso de inscripción en dispositivos móviles.

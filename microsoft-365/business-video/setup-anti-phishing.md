@@ -41,13 +41,13 @@ La suplantación de identidad (phishing) es un ataque malintencionado en el que 
 1. En el centro de administración en [https://admin.microsoft.com](https://admin.microsoft.com) , seleccione **Seguridad**, Administración **de amenazas**, **Directiva** y, a continuación, **Protección contra suplantación de identidad de ATP.**
 1. Seleccione **Directiva predeterminada para** refinarla.
 1. En la **sección Suplantación,** seleccione **Editar**.
-1. Vaya a **Agregar dominios para proteger y** seleccione el botón de alternancia para incluir automáticamente los dominios que posee.
-1. Vaya a **Acciones,** abra la lista desplegable Si un usuario suplantado envía correo electrónico y elija la acción que desee.
+1. Vaya a **Agregar dominios para proteger y** seleccione el botón de alternancia para incluir automáticamente los dominios de su propiedad.
+1. Vaya a **Acciones,** abra la lista desplegable Si un usuario suplantado envía el correo electrónico y elija la acción que desee.
 
-    Abra la lista desplegable Si un dominio **suplantado** envía el correo electrónico y elige la acción que quieras.
+    Abra la lista desplegable Si un dominio **suplantado** envía correo electrónico y elige la acción que quieras.
 1. Seleccione **Activar sugerencias de seguridad de suplantación.** Elija si se deben proporcionar sugerencias a los usuarios cuando el sistema detecte usuarios suplantados, dominios o caracteres inusuales. Seleccione **Guardar**.
 1. Seleccione **inteligencia de** buzones de correo y compruebe que está activada. Esto permite que el correo electrónico sea más eficaz mediante el aprendizaje de patrones de uso.
 1. Elija **Agregar remitentes y dominios de confianza.** Aquí puede agregar direcciones de correo electrónico o dominios que no deben clasificarse como suplantación.
-1. Elija **Revisar la configuración,** asegúrese de que todo sea correcto, seleccione **Guardar** y, a continuación, **Cerrar.**
+1. Elija **Revisar la configuración,** asegúrese de que todo sea correcto, seleccione **Guardar** y, a continuación, **cerrar.**
 
     Su organización ahora tiene una mejor protección contra las amenazas de suplantación de identidad.

@@ -39,7 +39,7 @@ Antes de mover su organización a Microsoft 365, hay requisitos que debe cumplir
   
 ## <a name="info-to-have-on-hand-before-you-run-the-setup-wizard"></a>Información que se debe tener a mano antes de ejecutar el asistente de configuración
 
-Cuando estés listo para ejecutar el asistente para la instalación y mover tu dominio a Microsoft 365, esta es la información que necesitarás tener a mano:
+Cuando estés listo para ejecutar el asistente para instalación y mover tu dominio a Microsoft 365, esta es la información que necesitarás tener a mano:
   
 - Lista de personas que desea agregar a Microsoft 365. Incluso si ya los ha agregado a Microsoft 365, si va a actualizar la información del dominio, debe escribir sus nombres aquí.
 
@@ -49,7 +49,7 @@ Cuando estés listo para ejecutar el asistente para la instalación y mover tu d
 
 ## <a name="what-happens-when-you-run-the-microsoft-365-setup-wizard"></a>Qué sucede al ejecutar el Asistente para instalación de Microsoft 365
 
-El asistente de configuración le guiará a través de la instalación de las aplicaciones de Microsoft 365 en el equipo, la adición y comprobación de su dominio, la adición de usuarios y la asignación de licencias a ellos y la conexión de su dominio.
+El asistente de configuración le guiará a través de la instalación de las aplicaciones de Microsoft 365 en el equipo, la adición y comprobación de su dominio, la adición de usuarios y la asignación de licencias a ellos, y la conexión de su dominio.
 
 > [!NOTE]
 > Si necesita asignar roles de administrador en [Microsoft 365](../add-users/assign-admin-roles.md) para empresas a los usuarios que agregue en el asistente, puede hacerlo más adelante en la página **Usuarios.** 
@@ -70,7 +70,7 @@ Hay un par de escenarios que incluyen la migración de datos o usuarios desde en
 
 ## <a name="move-to-microsoft-365-all-at-once-or-in-stages"></a>Cambiar a Microsoft 365 a la vez o por fases
 
-- **¿Desea mover su organización a Microsoft 365 a la vez?** Si es así, planee mover su dominio a Microsoft 365 inmediatamente. Para empezar, ejecute el Asistente para instalación de Microsoft 365; le pedirá que configure su dominio.
+- **¿Desea mover su organización a Microsoft 365 a la vez?** Si es así, planee mover su dominio a Microsoft 365 inmediatamente. Comience ejecutando el Asistente para instalación de Microsoft 365; le pedirá que configure su dominio.
 
 - **¿Desea pasar a Microsoft 365 gradualmente?** Si desea pasar a Microsoft 365 por fases, omita la ejecución del Asistente para instalación de Microsoft 365 y considere la posibilidad de adoptar las características de Microsoft 365 en el orden siguiente:
 
@@ -80,7 +80,7 @@ Hay un par de escenarios que incluyen la migración de datos o usuarios desde en
 
     3. [Configurar Microsoft Teams para](#plan-for-teams) usarlo en las reuniones.
 
-    4. Mueva el contenido al almacenamiento en [la nube de Microsoft 365](set-up-file-storage-and-sharing.md) (sitios de grupo de OneDrive o SharePoint).
+    4. [Mueva el contenido al almacenamiento en la nube de Microsoft 365](set-up-file-storage-and-sharing.md) (sitios de grupo de OneDrive o SharePoint).
 
     5. Cuando esté listo, en el centro  de [administración,](https://go.microsoft.com/fwlink/p/?linkid=2024339)seleccione El  programa de instalación en el panel de navegación izquierdo y use la página De instalación para mover el dominio y [el correo electrónico.](add-domain.md)
 
@@ -123,13 +123,13 @@ Microsoft 365 proporciona almacenamiento en la nube para personas, pequeñas org
   
 ## <a name="plan-for-teams"></a>Planeación de Teams
 
-Puede usar Microsoft Teams para realizar llamadas a otras personas de su organización que estén en su suscripción. Por ejemplo, si su organización tiene 10 personas, puede llamarse y llamarse mutuamente mediante Teams sin ninguna configuración especial. Para obtener más información, consulte [Introducción a Microsoft Teams.](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start)
+Puede usar Microsoft Teams para realizar llamadas a otras personas de su organización que estén en su suscripción. Por ejemplo, si su organización tiene 10 personas, puede llamar y mensajería instantánea entre sí usando Teams sin ninguna configuración especial. Para obtener más información, consulte [Introducción a Microsoft Teams.](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start)
 
 For larger organizations or if you're starting from Skype for Business, on-premises, or hybrid deployments, see [How to roll out Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/how-to-roll-out-teams).
   
 ## <a name="plan-for-integration-with-active-directory-or-other-software"></a>Plan de integración con Active Directory u otro software
 
-- **¿Desea la integración con su entorno local de Active Directory?** Puede integrar su Active Directory local con Microsoft 365 mediante Azure Active Directory Connect. Para obtener instrucciones, [consulte Configurar la sincronización de directorios para Microsoft 365.](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization)
+- **¿Desea la integración con su entorno local de Active Directory?** Puede integrar su Active Directory local con Microsoft 365 con Azure Active Directory Connect. Para obtener instrucciones, [consulte Configurar la sincronización de directorios para Microsoft 365.](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization)
   
 - **¿Desea integrar Microsoft 365 con software creado por otras empresas?** Si necesita integrar Microsoft 365 con otro software de su organización, le recomendamos que considere la posibilidad de contratar [un partner](https://go.microsoft.com/fwlink/?linkid=391089) para ayudarle con su implementación.
   

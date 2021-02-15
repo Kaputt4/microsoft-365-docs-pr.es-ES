@@ -25,7 +25,7 @@ En el Escritorio administrado de Microsoft, los dispositivos se unen automática
 
 Azure Active Directory permite a los usuarios aprovechar las ventajas del Sign-On único (SSO), lo que significa que normalmente no tendrán que proporcionar credenciales cada vez que usen recursos.
 
-Para obtener información sobre cómo unirse a Azure Active Directory, consulte [How to: Plan your Azure AD join implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan). Para obtener información general sobre Sign-On de inicio de sesión único (SSO) en dispositivos unidos a Azure AD, vea cómo funciona el SSO en recursos locales en dispositivos unidos a [Azure AD.](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso#how-it-works)
+Para obtener información sobre cómo unirse a Azure Active Directory, consulte [How to: Plan your Azure AD join implementation](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan). Para obtener información general sobre Sign-On único (SSO) en dispositivos unidos a Azure AD, vea cómo funciona el SSO en recursos locales en dispositivos unidos a [Azure AD.](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso#how-it-works)
 
 
 En este artículo se explican los aspectos que debe comprobar para asegurarse de que las aplicaciones y otros recursos que dependen de la conectividad local de Active Directory funcionarán sin problemas con el Escritorio administrado de Microsoft.
@@ -35,7 +35,7 @@ En este artículo se explican los aspectos que debe comprobar para asegurarse de
 
 Single Sign-On (SSO) by using UPN and password is enabled by default on Microsoft Managed Desktop Devices. Pero los usuarios también pueden usar Windows Hello para empresas, lo que requiere algunos pasos de configuración adicionales. 
 
-### <a name="single-sign-on-by-using-upn-and-password"></a>Configuración Sign-On con UPN y contraseña
+### <a name="single-sign-on-by-using-upn-and-password"></a>Single Sign-On by using UPN and password
 
 En la mayoría de las organizaciones, los usuarios podrán usar SSO para autenticarse mediante UPN y contraseña en dispositivos de escritorio administrados de Microsoft. Sin embargo, para asegurarse de que esta función funcione, debe comprobar dos veces lo siguiente:
 
@@ -62,7 +62,7 @@ Consulte Comprender [las consideraciones para aplicaciones y](https://docs.micro
 
 - Si usa servicios federados de Active Directory, compruebe que SSO esté habilitado mediante los pasos descritos en Comprobar y administrar el inicio de sesión único [con AD FS.](https://docs.microsoft.com/previous-versions/azure/azure-services/jj151809(v=azure.100)) 
 
-- Para las aplicaciones que son locales y usan protocolos más **antiguos,** no se requiere ninguna configuración adicional, siempre y cuando los dispositivos tengan acceso a un controlador de dominio local para autenticarse. Sin embargo, para proporcionar acceso seguro a estas aplicaciones, debes implementar Azure AD Application Proxy. Para obtener más información, vea Acceso remoto a aplicaciones locales a través del Proxy de aplicación [de Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)
+- Para las aplicaciones que son locales y usan protocolos más **antiguos,** no se requiere ninguna configuración adicional, siempre y cuando los dispositivos tengan acceso a un controlador de dominio local para autenticarse. Sin embargo, para proporcionar acceso seguro a estas aplicaciones, debes implementar el Proxy de aplicación de Azure AD. Para obtener más información, vea Acceso remoto a aplicaciones locales a través del Proxy de aplicación [de Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)
 
 - Las aplicaciones que **se ejecutan localmente y dependen** de la autenticación del equipo no son compatibles, por lo que debes considerar reemplazarlas por versiones más recientes.
 

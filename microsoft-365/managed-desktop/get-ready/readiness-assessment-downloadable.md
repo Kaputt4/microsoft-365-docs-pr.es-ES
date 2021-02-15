@@ -1,5 +1,5 @@
 ---
-title: Herramienta de comprobación de evaluación de preparación descargable
+title: Comprobador de la evaluación de preparación descargable
 description: Comprueba la configuración de dispositivo y red, incluidos los puntos de conexión necesarios
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
@@ -16,7 +16,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/21/2021
 ms.locfileid: "49922025"
 ---
-# <a name="downloadable-readiness-assessment-checker"></a>Herramienta de comprobación de evaluación de preparación descargable
+# <a name="downloadable-readiness-assessment-checker"></a>Comprobador de la evaluación de preparación descargable
 
 Para funcionar bien con el Escritorio administrado de Microsoft, los dispositivos deben cumplir ciertos requisitos de hardware y configuración. Además, cada dispositivo debe ser capaz de alcanzar puntos de conexión clave. Descargue y ejecute esta herramienta para obtener un informe HTML, ver los resultados y, a continuación, tomar medidas. Deberás descargar la herramienta y los archivos de soporte técnico y, a continuación, ejecutarla manualmente en cada dispositivo que quieras inscribir en el Escritorio administrado de Microsoft.
 
@@ -78,11 +78,11 @@ Un **resultado de** aviso significa que estás usando una red privada virtual (V
 
 #### <a name="mapped-drives"></a>Unidades asignadas
 
-Un **resultado de aviso** significa que tienes algunas unidades asignadas, lo que no se recomienda. Para obtener más información, vea [Preparar unidades asignadas para escritorio administrado de Microsoft.](mapped-drives.md)
+Un **resultado de aviso** significa que tienes algunas unidades asignadas, lo cual no se recomienda. Para obtener más información, vea [Preparar unidades asignadas para escritorio administrado de Microsoft.](mapped-drives.md)
 
 #### <a name="print-queues"></a>Colas de impresión
 
-Un **resultado de aviso** significa que tiene algunas colas de impresión pendientes, lo que no se recomienda. Una solución es usar la impresión en la nube. Para obtener más información, vea [Preparar los recursos de impresión para escritorio administrado de Microsoft.](printing.md)
+Un **resultado de aviso** significa que tiene algunas colas de impresión pendientes, que no se recomiendan. Una solución es usar la impresión en la nube. Para obtener más información, vea [Preparar los recursos de impresión para escritorio administrado de Microsoft.](printing.md)
 
 #### <a name="proxies"></a>Proxies
 

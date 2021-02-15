@@ -63,7 +63,7 @@ Al elegir una suscripción en la nube para su empresa, tiene opciones sobre las 
 
 ## <a name="2-add-a-domain-name"></a>2. Agregar un nombre de dominio
 
-- Un nombre de dominio proporciona a su organización una identidad en línea profesional y fácil de recordar, como _rob@contoso.com_. Si ya tiene una, puede traerla con usted a Microsoft 365 o Microsoft 365:&#39;le ayudaremos con la transición.
+- Un nombre de dominio proporciona a su organización una identidad en línea profesional y fácil de recordar, como _rob@contoso.com_. Si ya tiene uno, puede traerlo con usted a Microsoft 365 o Microsoft 365:&#39;le ayudaremos con la transición.
 - ¿&#39;un dominio? Es&#39;obtener uno al mismo tiempo que se registra en Microsoft 365 o Microsoft 365.
 
 **Nota:**  Además de su correo electrónico, puede usar el dominio con un sitio web en varios hosts, como WordPress, GoDaddy o Wix.

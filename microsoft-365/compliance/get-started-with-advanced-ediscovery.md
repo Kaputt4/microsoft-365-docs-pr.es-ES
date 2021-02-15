@@ -29,7 +29,7 @@ ms.locfileid: "49841181"
 
 EDiscovery avanzado en Microsoft 365 proporciona un flujo de trabajo completo para conservar, recopilar, revisar, analizar y exportar datos que responden a las investigaciones internas y externas de su organización. [](overview-ediscovery-20.md#advanced-ediscovery-workflow) No se necesita nada para implementar eDiscovery avanzado, pero hay algunas tareas de requisitos previos que un administrador de TI y un administrador de exhibición de documentos electrónicos deben completar antes de que su organización pueda empezar a crear y usar casos de eDiscovery avanzados para administrar sus investigaciones.
 
-Este artículo describe los pasos necesarios para configurar eDiscovery avanzado. Esto incluye garantizar la licencia adecuada necesaria para acceder a eDiscovery avanzado y agregar administradores a los casos, y asignar permisos a su equipo legal e investigación para que puedan acceder a los casos y administrarlos.
+En este artículo se de abordan los pasos necesarios para configurar eDiscovery avanzado. Esto incluye garantizar la licencia adecuada necesaria para acceder a eDiscovery avanzado y agregar administradores a los casos, y asignar permisos a su equipo legal e investigación para que puedan acceder a los casos y administrarlos.
 
 ## <a name="step-1-verify-and-assign-appropriate-licenses"></a>Paso 1: Comprobar y asignar las licencias adecuadas
 
@@ -58,7 +58,7 @@ Las licencias para eDiscovery avanzado requieren la suscripción de la organizac
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>Paso 2: Asignar permisos de exhibición de documentos electrónicos
 
-Para obtener acceso a eDiscovery avanzado o agregarlo como miembro de un caso de eDiscovery avanzado, se deben asignar a un usuario los permisos adecuados. Específicamente, un usuario debe agregarse como miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de & cumplimiento. Los miembros de este grupo de roles pueden crear y administrar casos de eDiscovery avanzado. Pueden agregar y quitar miembros, colocar administradores y ubicaciones de contenido en espera, administrar notificaciones de retención legal, crear y editar búsquedas asociadas en un caso, agregar resultados de búsqueda a un conjunto de revisión, analizar datos en un conjunto de revisión y exportar y descargar desde un caso de eDiscovery avanzado.
+Para obtener acceso a eDiscovery avanzado o agregarlo como miembro de un caso de eDiscovery avanzado, se deben asignar a un usuario los permisos adecuados. Específicamente, un usuario debe agregarse como miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de & cumplimiento. Los miembros de este grupo de roles pueden crear y administrar casos de eDiscovery avanzados. Pueden agregar y quitar miembros, colocar administradores y ubicaciones de contenido en espera, administrar notificaciones de retención legal, crear y editar búsquedas asociadas en un caso, agregar resultados de búsqueda a un conjunto de revisión, analizar datos en un conjunto de revisión y exportar y descargar desde un caso de eDiscovery avanzado.
 
 Complete los siguientes pasos para agregar usuarios al grupo de roles administrador de exhibición de documentos electrónicos:
 
@@ -103,6 +103,6 @@ Para obtener más información acerca de cómo configurar y usar el modelo de de
 > [!NOTE]
 > Este es un paso opcional que puede realizar en cualquier momento. No implementar el modelo de detección de privilegios abogado-cliente no le impide crear y usar casos de eDiscovery avanzado.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de configurar eDiscovery avanzado, está listo para [crear un caso.](create-and-manage-advanced-ediscoveryv2-case.md)

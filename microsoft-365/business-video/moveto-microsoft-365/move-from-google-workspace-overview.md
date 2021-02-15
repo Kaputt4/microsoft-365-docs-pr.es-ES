@@ -31,7 +31,7 @@ ms.locfileid: "49924995"
 ---
 # <a name="switch-from-google-workspace---overview"></a>Cambiar de Google Workspace: información general
 
-Complete los pasos siguientes para mover los datos, el correo electrónico y los usuarios de Google Workspace a Microsoft 365 para empresas.
+Complete los siguientes pasos para mover los datos, el correo electrónico y los usuarios de Google Workspace a Microsoft 365 para empresas.
 
 
 | Paso  |Descripción  |
@@ -41,8 +41,8 @@ Complete los pasos siguientes para mover los datos, el correo electrónico y los
 |Paso 3 | [Configurar directivas de seguridad para dispositivos Windows.](../secure-win10-pcs.md)</br> La seguridad de Windows se configura por separado en la página de instalación del Centro de administración de Microsoft 365. |
 |Paso 4|[Agregar el dominio de Google Workspace a Microsoft 365](add-google-domain.md) </br> Después de comprobar que es el propietario del dominio que usa para el correo electrónico, usted y todos los demás usuarios pueden empezar a usar su correo electrónico antiguo para iniciar sesión en Microsoft 365 Empresa Premium. |
 |Paso 5 | [Instalar aplicaciones de Office y Microsoft Teams.](../install-office.md)</br> Todas las personas con licencias de Microsoft 365 deben instalar las aplicaciones de Office en sus dispositivos de trabajo.|
-|Paso 6 | [Migre los elementos de calendario y correo electrónico de todos los usuarios.](migrate-email.md)</br> En este paso, ejecutará una migración de Exchange Online para mover el correo electrónico, el calendario y los contactos de todos los usuarios desde Google Workspace.  |
-|Paso 7 | [Conectar el dominio a Microsoft 365.](connect-domain-tom365.md) </br> Después de conectar el correo electrónico del dominio, empezará a ir a Microsoft 365 y todos los servicios de Microsoft 365 funcionarán.|
+|Paso 6 | [Migrar el correo electrónico y los elementos de calendario de todos](migrate-email.md)los usuarios.</br> En este paso, ejecutará una migración de Exchange Online para mover el correo electrónico, el calendario y los contactos de todos los usuarios desde Google Workspace.  |
+|Paso 7 | [Conecte el dominio a Microsoft 365.](connect-domain-tom365.md) </br> Después de conectar el correo electrónico del dominio, empezará a ir a Microsoft 365 y todos los servicios de Microsoft 365 funcionarán.|
 |Paso 8|Use [Mover para mover los datos de](mover-migrate-files.md) todos los usuarios de Drive a OneDrive y de unidades compartidas a sitios de grupo.</br> En este paso, todos los datos de las unidades personales y compartidas se copian y se mueven a Microsoft 365.|
-|Paso 9| [Discontinue Google Workspace pero](cancel-google.md) conserve su dominio. </br> Si Google administra su dominio, puede guardarlo incluso después de interrumpir la suscripción a Google Workspace. También puede moverlo a otro host DNS si lo desea.|
+|Paso 9| [Discontinue Google Workspace pero](cancel-google.md) conserve su dominio. </br> Si Google administra su dominio, puede mantenerlo allí incluso después de interrumpir la suscripción a Google Workspace. También puede moverlo a otro host DNS si lo desea.|
 |||

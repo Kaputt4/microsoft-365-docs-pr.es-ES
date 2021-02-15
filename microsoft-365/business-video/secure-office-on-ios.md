@@ -34,14 +34,14 @@ ms.locfileid: "49928035"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FLvZ?autoplay=false]
 
-Puede configurar una directiva de acceso de usuario que requiera que los usuarios móviles escriban un PIN o huella digital para iniciar sesión y también cifre los archivos de trabajo almacenados en sus dispositivos.
+Puede configurar una directiva de acceso de usuario que requiera que los usuarios móviles escriban un PIN o huella digital para iniciar sesión, y también cifre los archivos de trabajo almacenados en sus dispositivos.
 
 ## <a name="try-it"></a>¿Se atreve?
 
 1. Inicie sesión en el Centro de administración de Microsoft 365.
 1. En **Directivas,** elija **Agregar directiva.**
 1. En el **panel Agregar directiva,** escriba un nombre en **Nombre** de directiva y elija el tipo de directiva que desee en Tipo **de directiva.**
-1. Active Administrar el **modo en que los usuarios acceden** a los archivos de Office en dispositivos móviles y, a continuación, asegúrese de que están activadas las tres opciones siguientes:
+1. Active Administrar el **modo en que los usuarios acceden a** los archivos de Office en dispositivos móviles y, a continuación, asegúrese de que están activadas las tres opciones siguientes:
     - **Requerir una huella digital o un PIN para obtener acceso a las aplicaciones de Office**
     - **Proteger los archivos de trabajo cuando se pierden o roban dispositivos**
     - **Cifrar archivos de trabajo**

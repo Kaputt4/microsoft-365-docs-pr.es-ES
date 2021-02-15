@@ -82,7 +82,7 @@ Siga estos pasos para activar el restablecimiento de contraseña de autoservicio
 
 4. En **Autoservicio de restablecimiento de contraseña,** seleccione Ir a Azure Portal para activar el autoservicio de **restablecimiento de contraseña.**
 
-5. En el panel de navegación izquierdo, seleccione **Usuarios** y, a continuación, en la **página | Página todos los** usuarios, seleccione **Restablecimiento de contraseña.**
+5. En el panel de navegación izquierdo, seleccione **Usuarios** y, a continuación, en la **página | Página Todos los** usuarios, seleccione **Restablecimiento de contraseña.**
   
 6. En la **página** Propiedades, seleccione **Todo** para habilitarlo para todos los usuarios de su empresa y, a continuación, **seleccione Guardar**.
   

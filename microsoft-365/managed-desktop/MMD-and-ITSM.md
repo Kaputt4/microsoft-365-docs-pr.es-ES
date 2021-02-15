@@ -22,13 +22,13 @@ Escritorio administrado de Microsoft permite a su organización cumplir con much
 Para obtener información más completa sobre ITIL y sus fases y procesos, consulte su [documentación.](https://www.axelos.com/best-practice-solutions/itil)
 
 
-## <a name="service-design"></a>Diseño del servicio
+## <a name="service-design"></a>Diseño de servicio
 
 En esta tabla se relacionan las fases y procesos clave de ITIL con las características de Escritorio administrado de Microsoft, con vínculos a nuestra documentación para obtener más información:
 
 
 
-|Proceso ITIL |Descripción  |Documentación |
+|Proceso ITIL |Description  |Documentación |
 |---------|---------|---------|
 |Administración de nivel de servicio     | Los tiempos de respuesta se definen para solicitudes e incidentes de soporte técnico de administrador.  |  [Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md)  |
 |Administración del catálogo de servicios     | La descripción del servicio que detalla los componentes del servicio se mantiene en el estado del servicio, disponible para todos los clientes actuales e interesados.<br><br>Requisitos previos detallados para comprender lo que se necesita para operar el servicio.  | - [Descripción del servicio de Escritorio administrado de Microsoft](service-description/index.md)<br><br>- [Prepararse para la inscripción en el Escritorio administrado de Microsoft](get-ready/index.md)  |
@@ -40,7 +40,7 @@ En esta tabla se relacionan las fases y procesos clave de ITIL con las caracter�
 ## <a name="service-transition"></a>Transición de servicio
 
 
-|Proceso ITIL |Descripción  |Documentación |
+|Proceso ITIL |Description  |Documentación |
 |---------|---------|---------|
 |Administración de cambios     | Equilibrio definido de responsabilidad, información general del proceso y tipos relacionados con la administración de cambios disponibles.  | [Supervisión y operaciones de Escritorio administrado de Microsoft](service-description/operations-and-monitoring.md#change-management) |
 |Administración de lanzamientos e implementación     |  Escritorio administrado de Microsoft administra las actualizaciones de los dispositivos inscritos en el servicio.  | [Cómo se controlan las actualizaciones en el Escritorio administrado de Microsoft](service-description/updates.md)        |
@@ -52,10 +52,10 @@ En esta tabla se relacionan las fases y procesos clave de ITIL con las caracter�
 ## <a name="service-operation"></a>Operación de servicio
 
 
-|Proceso ITIL |Descripción  |Documentación  |
+|Proceso ITIL |Description  |Documentación  |
 |---------|---------|---------|
 |Administración de eventos     |  Se proporcionan detalles sobre la supervisión de dispositivos.<br><br>Se detallan los procedimientos operativos estándar para el servicio de escritorio administrado de Microsoft. |  - [Seguridad en escritorio administrado de Microsoft](service-description/security.md)<br>- [Supervisión y operaciones de Escritorio administrado de Microsoft](service-description/operations-and-monitoring.md)       |
 |Administración de incidencias  | Escritorio administrado de Microsoft investigará y actuará en caso de incidentes según las definiciones de gravedad definidas.  |  [Admitir definiciones de gravedad de solicitud](working-with-managed-desktop/admin-support.md#support-request-severity-definitions)       |
 |Administración del suministro de solicitudes     |  Se define el proceso de solicitudes de información y solicitudes de cambio relacionadas con el servicio de escritorio administrado de Microsoft.         |[Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md)         |
 |Administración de problemas     | Cualquier problema con el servicio debe dirigirse a su equipo de cuenta local en este momento. | Documentación en desarrollo |
-|Administración de acceso     | Componentes de administración de acceso y responsabilidades del cliente para garantizar que se detalla la funcionalidad.  | [Administración de acceso e identidad  ](service-description/security.md#identity-and-access-management)        |
+|Administración de acceso     | Componentes de administración de acceso y responsabilidades del cliente para garantizar que se detalla la funcionalidad.  | [Administración de identidad y acceso](service-description/security.md#identity-and-access-management)        |

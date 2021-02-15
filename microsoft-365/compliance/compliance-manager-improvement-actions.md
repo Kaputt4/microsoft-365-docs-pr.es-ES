@@ -52,7 +52,7 @@ Para iniciar el trabajo de implementación en una acción de mejora, puede reali
 
 Una vez que identifique al usuario al que corresponde, asegúrese de que tiene un rol de Administrador de cumplimiento suficiente [para](compliance-manager-setup.md#set-user-permissions-and-assign-roles) realizar el trabajo. A continuación, siga los pasos siguientes para asignar la acción de mejora:
 
-1. En la página de detalles de las acciones de mejora, seleccione **Editar estado** cerca de la sección superior izquierda de la pantalla.
+1. En la página de detalles de acciones de mejora, seleccione **Editar estado** cerca de la sección superior izquierda de la pantalla.
 
 2. En el panel desplegable de estado de edición, seleccione el cuadro **Asignado** a para mostrar una **lista de usuarios sugeridos.** Puede seleccionar el usuario de la lista o escribir la dirección de correo electrónico de la persona a la que desea asignarla.
 
@@ -91,7 +91,7 @@ La **sección Notas y documentación** contiene campos para documentos cargados,
 #### <a name="implementation-notes-test-notes-and-additional-notes"></a>Notas de implementación, notas de prueba y notas adicionales
 
 - Para agregar notas en cualquiera de estos tres campos, seleccione Editar notas de **implementación debajo** de cualquiera de estos campos.
-- Cuando se abra el panel desplegable, escriba las notas en el campo de texto y, a continuación, **seleccione Guardar y cerrar.**
+- Cuando se abra el panel desplegable, escriba notas en el campo de texto y, a continuación, **seleccione Guardar y cerrar.**
 - Para editar notas, seleccione **Editar notas de implementación,** realice las modificaciones y, a continuación, **seleccione Guardar y cerrar.**
 
 No hay ningún límite de caracteres en los campos de notas. Se recomienda mantener las notas breves para que pueda verlas y editarlas fácilmente desde la página de detalles de las acciones de mejora.
@@ -118,7 +118,7 @@ Para editar el estado de una acción de mejora, **seleccione** Editar estado en 
     - **Fuera del ámbito:** la acción está fuera del ámbito de la evaluación y no contribuye a la puntuación
 - **Fecha de la** prueba: alternar entre la ventana emergente del calendario para seleccionar la fecha
 
-Las acciones comunes se sincronizan entre grupos. Cuando dos evaluaciones diferentes en el mismo grupo comparten acciones de mejora que usted administra, las actualizaciones que realice en los detalles de implementación o el estado de una acción se sincronizarán automáticamente con la misma acción en cualquier otra evaluación del grupo. Esta sincronización le permite implementar una acción de mejora y cumplir varios requisitos en varias normativas.
+Las acciones comunes se sincronizan entre grupos. Cuando dos evaluaciones diferentes en el mismo grupo comparten acciones de mejora que usted administra, cualquier actualización que realice en los detalles de implementación o el estado de una acción se sincronizará automáticamente con la misma acción en cualquier otra evaluación del grupo. Esta sincronización le permite implementar una acción de mejora y cumplir varios requisitos en varias normativas.
 
 ## <a name="assign-improvement-action-to-assessor-for-completion"></a>Asignar una acción de mejora al evaluador para su finalización
 
@@ -134,7 +134,7 @@ Cuando haya una actualización disponible para una acción de mejora, verás una
 
 #### <a name="what-causes-an-update"></a>Causas de una actualización
 
-Una actualización se produce cuando hay cambios relacionados con la puntuación, la automatización o el ámbito. Los cambios pueden implicar nuevas instrucciones para acciones de mejora basadas en cambios normativos, o pueden deberse a cambios en el producto. Solo las acciones de mejora administradas por las organizaciones reciben notificaciones de actualización.
+Una actualización se produce cuando hay cambios relacionados con la puntuación, la automatización o el ámbito. Los cambios pueden implicar nuevas instrucciones para las acciones de mejora basadas en cambios normativos o pueden deberse a cambios en el producto. Solo las acciones de mejora administradas por las organizaciones reciben notificaciones de actualización.
 
 #### <a name="where-youll-see-assessment-update-notifications"></a>Dónde verá las notificaciones de actualización de evaluación
 
@@ -149,7 +149,7 @@ Después de seleccionar La **actualización de revisión** en la página de deta
 Seleccione **Aceptar actualización** para aceptar todos los cambios en la acción de mejora. **Los cambios aceptados son permanentes.**
 
 > [!NOTE]
-> Cuando acepta una actualización de una acción, también acepta actualizaciones en cualquier otra versión o instancia de esta acción. Las actualizaciones se propagarán en todo el espacio empresarial para las acciones técnicas y se propagarán en todo el grupo para las acciones no técnicas.
+> Cuando aceptes una actualización de una acción, también aceptas actualizaciones de cualquier otra versión o instancia de esta acción. Las actualizaciones se propagarán en todo el espacio empresarial para las acciones técnicas y se propagarán en todo el grupo para las acciones no técnicas.
 
 Si selecciona **Cancelar,** la actualización no se aplicará a la acción de mejora. Sin embargo, seguirás consultando la notificación **De actualización** pendiente hasta que aceptes la actualización.
 

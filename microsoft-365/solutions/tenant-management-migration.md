@@ -13,7 +13,7 @@ ms.collection:
 - m365solution-tenantmanagement
 ms.custom:
 - Ent_Solutions
-description: Migre los dispositivos Windows, las aplicaciones cliente de Office y los servidores de Office para los inquilinos de Microsoft 365.
+description: Migre los dispositivos Windows, las aplicaciones cliente de Office y los servidores de Office para sus inquilinos de Microsoft 365.
 ms.openlocfilehash: 3230f7e1087b573691f04b9335a15b4ad6d20b65
 ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
 ms.translationtype: MT
@@ -44,7 +44,7 @@ Para obtener métodos adicionales para instalar Windows 10 Enterprise más allá
 
 Microsoft 365 para empresas incluye Aplicaciones de Microsoft 365 para empresas, una versión de los productos de cliente de Office (Word, PowerPoint, Excel y Outlook) que se instala y actualiza desde la nube de Microsoft. Para obtener más información, vea [Acerca de aplicaciones de Microsoft 365 para empresas.](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)
 
-En lugar de mantener los equipos al día para Office 2019 o versiones anteriores, siga estos pasos:
+En lugar de mantener los equipos actuales para Office 2019 o versiones anteriores, siga estos pasos:
 
 1. Obtenga y asigne una licencia de Microsoft 365 para los usuarios.
 2. Desinstale Office 2013 u Office 2016 en sus equipos.

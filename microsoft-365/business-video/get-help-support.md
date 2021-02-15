@@ -43,10 +43,10 @@ ms.locfileid: "49927180"
 - **En Canadá, llame al 1 800 865 9408**.
 - **En el Reino Unido, llame al 0800 032 6417**.
 
-El soporte técnico de facturación se proporciona en inglés de 9:00 a 17:00 (de 9:00 a 18:00 en Australia), de lunes a viernes.
+El soporte de facturación se proporciona en inglés de 9:00 a 17:00 (de 9:00 a 18:00 en Australia), de lunes a viernes.
 Se proporciona soporte técnico en inglés 24 horas al día, 7 días a la semana.
 
-Para encontrar el número de teléfono de soporte técnico de Microsoft 365 o Microsoft 365 Empresa Premium para su país o región, consulte Ponerse en contacto con el soporte técnico [para productos empresariales.](https://support.microsoft.com/office/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+Para encontrar el número de teléfono de soporte técnico de Microsoft 365 o Microsoft 365 Empresa Premium para su país o región, consulte Ponerse en contacto con el soporte técnico para [productos empresariales.](https://support.microsoft.com/office/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 ## <a name="try-it"></a>¿Se atreve?
 

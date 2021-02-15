@@ -45,8 +45,8 @@ Para inscribirse en el Escritorio administrado de Microsoft, un dispositivo debe
 |Dell Latitude 7300 / 7400 / 7400 2 en 1 | 256 GB / Intel i5 / 8 GB de RAM | Se requiere cámara IR | **1 de mayo de 2024**  |
 |Dell Latitude 7390 / 7390 2 en 1 / 7490 | 256 GB / Intel i5 / 8 GB de RAM   | Se requiere cámara IR | **9 de enero de 2023** |
 |Dell Optiplex 3070 | 128 GB / Intel i3 / 8 GB de RAM | Ninguno | **1 de mayo de 2025**  |
-|HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB de RAM | SKU con 5VS01AV, se requiere cámara IR o sensor de huella digital  | **15 de febrero de 2023** |
-|HP EliteBook 830 / 840 / 850 G6| 128 GB / Intel i5 / 8 GB de RAM | SKU con 5VS01AV, se requiere cámara IR o sensor de huella digital  | **30 de noviembre de 2023** |
+|HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB de RAM | SKU con 5VS01AV, cámara IR o sensor de huellas digitales necesarios  | **15 de febrero de 2023** |
+|HP EliteBook 830 / 840 / 850 G6| 128 GB / Intel i5 / 8 GB de RAM | SKU con 5VS01AV, cámara IR o sensor de huellas digitales necesarios  | **30 de noviembre de 2023** |
 |HP Elite x2 1013 G3| 256 GB / Intel i5 / 8 GB de RAM | SKU con 5VS03AV, se requiere cámara ir |**14 de mayo de 2023** |
 |HP EliteBook x360 1030 G5| 256 GB / Intel i5 / 8 GB de RAM | SKU con 5VS01AV, se requiere cámara IR |**14 de mayo de 2023** |
 |HP EliteBook x360 1030 G6| 256 GB / Intel i5 / 8 GB de RAM | SKU con 5VS01AV, se requiere cámara IR |**30 de noviembre de 2023** |
@@ -56,7 +56,7 @@ Para inscribirse en el Escritorio administrado de Microsoft, un dispositivo debe
 |HP EliteDesk 800 G4 DM | 128 GB / Intel i3 / 8 GB de RAM | SKU con 5VS04AV | **18 de julio de 2023** |
 |HP EliteDesk 800 G4 SFF | 128 GB / Intel i3 / 8 GB de RAM | SKU con 5VS04AV | **18 de julio de 2023** |
 |HP EliteOne 800 G4 23,8 in AIO |128 GB / Intel i3 / 8 GB de RAM |SKU con 5VS04AV| **18 de julio de 2023** |
-|HP ZBook 14u/15u G6 Mobile Workstation |256 GB / Intel i5 / 8 GB de RAM |SKU con 5VS04AV, se requiere cámara IR| **30 de noviembre de 2023** |
+|HP ZBook 14u/15u G6 Mobile Workstation |256 GB / Intel i5 / 8 GB de RAM |SKU con 5VS04AV, se requiere cámara ir| **30 de noviembre de 2023** |
 |Surface Book 2| 256 GB / Intel i5 / 8 GB de RAM | Ninguno | **16 de noviembre de 2022** |
 |Surface Go| 128 GB / Intel 4415Y / 8 GB de RAM | Ninguno | **2 de agosto de 2023** |
 |Surface Laptop| 256 GB / Intel i5 / 8 GB de RAM | Ninguno | **20 de mayo de 2022** |

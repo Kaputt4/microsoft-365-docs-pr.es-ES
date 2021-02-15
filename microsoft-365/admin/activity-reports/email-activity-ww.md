@@ -1,5 +1,5 @@
 ---
-title: 'Informes de Microsoft 365 en el Centro de administración: actividad de correo electrónico'
+title: 'Informes de Microsoft 365 en el centro de administración: actividad de correo electrónico'
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -26,14 +26,14 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/21/2021
 ms.locfileid: "49921992"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de correo electrónico
+# <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>Informes de Microsoft 365 en el centro de administración: actividad de correo electrónico
 
 El panel informes  de Microsoft 365 muestra la información general sobre la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general de los informes](activity-reports.md).
   
 Por ejemplo, puede obtener una vista de alto nivel del tráfico de correo electrónico de su organización desde la página Informes. Luego, puede desplazarse al widget Actividad de correo electrónico para consultar las tendencias y los detalles de nivel de usuario de la actividad de correo electrónico de su organización.
   
 > [!NOTE]
-> Debe ser un administrador global, un lector global o un lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams Service, Teams Communications o Skype Empresarial para ver informes. 
+> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams Service, Teams Communications o Skype Empresarial para ver informes. 
 
 ## <a name="how-to-get-to-the-email-activity-report"></a>Obtener acceso al informe de actividad de correo electrónico
 
@@ -47,10 +47,10 @@ Puede obtener una vista de la actividad de correo electrónico de su usuario con
   
 ![Informe de actividad de correo electrónico](../../media/5eb1d9e9-8106-4843-acb7-c0238c0da816.png)
   
-|Item|Descripción|
+|Elemento|Description|
 |:-----|:-----|
 |1.  <br/> |El informe **Actividad de correo electrónico** se puede visualizar para las tendencias de los últimos 7 días, 30 días, 90 días o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla (7) mostrará datos de hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).  <br/> |
-|2.  <br/> |Los datos de cada informe suelen abarcar hasta las últimas 24 o 48 horas.  <br/> |
+|2.  <br/> |Los datos de cada informe suelen abarcar hasta las últimas 24 a 48 horas.  <br/> |
 |3.  <br/> |El gráfico **Actividad** le permite consultar la tendencia de la actividad de correo electrónico presente en su organización. Puede comprender la división de las actividades de envío de correo electrónico, lectura de correo electrónico, correo electrónico recibido, reunión creada o reunión interaccionada.  <br/> |
 |4.  <br/> |El gráfico **Usuario** le permite consultar la tendencia de la cantidad de usuarios únicos que generan las actividades de correo electrónico. Puede ver la tendencia de los usuarios que realizan envíos de correo electrónico, lectura de correo electrónico, recepción de correo electrónico, creación de reuniones o actividades de interacción de reuniones.  <br/> |
 |5.  <br/> | En el **gráfico Actividad,** el eje Y es el recuento de actividad del tipo de correo electrónico enviado, correo electrónico recibido, lectura de correo electrónico, reunión creada e interacción de la reunión.  <br/>  En el **gráfico de** actividad Usuarios, el eje Y es la actividad que realiza el usuario del tipo de correo electrónico enviado, correo electrónico recibido, lectura de correo electrónico, reunión creada o reunión interactuada.  <br/>  En ambos gráficos, el eje X es el intervalo de fechas seleccionado para este informe específico.  <br/> |

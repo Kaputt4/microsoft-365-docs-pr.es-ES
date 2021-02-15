@@ -32,11 +32,11 @@ Usar su teléfono, tableta y otros dispositivos móviles para trabajar es una ex
 Las organizaciones eligen Movilidad y seguridad básicas para que los empleados puedan usar sus dispositivos móviles para acceder de forma segura al correo electrónico, calendarios y documentos del trabajo mientras la empresa protege los datos importantes y cumple sus requisitos de cumplimiento.Para obtener más información, consulte Información general sobre movilidad y [seguridad básicas para Microsoft 365.](overview.md) Para obtener más información, consulta [¿Qué información puede ver mi organización cuando inscribo mi dispositivo?](https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)
 
 >[!IMPORTANT] 
->Al inscribir el dispositivo en Movilidad y seguridad básica para Microsoft 365, es posible que deba configurar una contraseña, además de permitir que la organización del trabajo borre el dispositivo. Se puede realizar una eliminación del dispositivo desde el Centro de administración de Microsoft 365, por ejemplo, para quitar todos los datos del dispositivo si la contraseña se ha escrito incorrectamente demasiadas veces o si se rompen los términos de uso.
+>Al inscribir el dispositivo en movilidad básica y seguridad para Microsoft 365, es posible que deba configurar una contraseña, además de permitir que la organización del trabajo borre el dispositivo. Se puede realizar una eliminación del dispositivo desde el Centro de administración de Microsoft 365, por ejemplo, para quitar todos los datos del dispositivo si la contraseña se ha escrito incorrectamente demasiadas veces o si se rompen los términos de uso.
 
 ## <a name="supported-devices"></a>Dispositivos admitidos
 
-La movilidad y seguridad básicas de Microsoft 365 hospedada por el servicio intune funciona con la mayoría de los dispositivos móviles, pero no con todos. Los siguientes elementos son compatibles con la movilidad y la seguridad básicas:
+La movilidad y seguridad básicas para Microsoft 365 hospedada por el servicio intune funciona con la mayoría de los dispositivos móviles, pero no con todos. Los siguientes elementos son compatibles con la movilidad y la seguridad básicas:
 
 - iOS 10.0 o posterior
 
@@ -60,14 +60,14 @@ El Portal de empresa de Intune permite que Microsoft 365 y Basic Mobility and Se
 
 Vaya a La App Store de Apple y descargue e instale el Portal de empresa de Intune.
 
-Para conectar y configurar su teléfono o tableta iOS con el portal de empresa a Office 365, vea Configurar el acceso de [dispositivos iOS](https://go.microsoft.com/fwlink/?linkid=875316)a los recursos de su empresa.
+Para conectar y configurar su teléfono o tableta iOS con el portal de empresa a Office 365, consulte Configurar el acceso de [dispositivos iOS](https://go.microsoft.com/fwlink/?linkid=875316)a los recursos de su empresa.
 
 ### <a name="android-phone-or-tablet"></a>Teléfono o tableta Android
 
 >[!TIP]
 >No podrá enviar ni recibir correo electrónico hasta que complete este paso.
 
-Vaya a La Tienda Google Play y descargue e instale el Portal de empresa de Intune.
+Vaya a Google Play Store y descargue e instale el Portal de empresa de Intune.
 
 Para conectar y configurar su teléfono o tableta Android con el portal de empresa a Microsoft 365, consulte Inscribir el dispositivo [en el Portal de empresa.](https://go.microsoft.com/fwlink/?linkid=875317)
 
@@ -75,8 +75,8 @@ Para conectar y configurar su teléfono o tableta Android con el portal de empre
 
 Vaya a Microsoft Store y descargue e instale el Portal de empresa de Intune
 
-Para conectar y configurar su teléfono o pc Windows con el portal de la empresa a Microsoft 365, consulte Inscripción de [dispositivos Windows en el Portal de empresa de Intune.](https://docs.microsoft.com/intune-user-help/windows-enrollment-company-portal)
+Para conectar y configurar su teléfono o pc Windows con el portal de empresa a Microsoft 365, consulte Inscripción de [dispositivos Windows en el Portal de empresa de Intune.](https://docs.microsoft.com/intune-user-help/windows-enrollment-company-portal)
 
 ## <a name="whats-next"></a>¿Cuál es el siguiente paso?
 
-Después de inscribir el dispositivo en Movilidad y seguridad básica, puede empezar a usar aplicaciones de Office en el dispositivo para trabajar con correo electrónico, calendario, contactos y documentos.
+Después de inscribir el dispositivo en movilidad y seguridad básicas, puede empezar a usar las aplicaciones de Office en el dispositivo para trabajar con el correo electrónico, el calendario, los contactos y los documentos.

@@ -36,9 +36,9 @@ Para ayudarle a proteger y proteger los recursos de su organización, Microsoft 
 
 Si tiene Microsoft 365 E3 o E5, debe usar Intune.
 
-## <a name="microsoft-intune"></a>Microsoft Intune
+## <a name="microsoft-intune"></a>Microsoft Intune
 
-Usas [Microsoft Intune para](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide) administrar el acceso a tu organización mediante MDM o MAM. MDM es cuando los usuarios "inscriben" sus dispositivos en Intune. Después de inscribir un dispositivo, es un dispositivo administrado y puede recibir las directivas, reglas y configuración de la organización. Por ejemplo, puedes instalar aplicaciones específicas, crear una directiva de contraseña, instalar una conexión VPN y mucho más.
+Usa [Microsoft Intune para](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide) administrar el acceso a la organización mediante MDM o MAM. MDM es cuando los usuarios "inscriben" sus dispositivos en Intune. Después de inscribir un dispositivo, es un dispositivo administrado y puede recibir las directivas, reglas y configuración de la organización. Por ejemplo, puedes instalar aplicaciones específicas, crear una directiva de contraseña, instalar una conexión VPN y mucho más.
 
 Es posible que los usuarios con sus propios dispositivos personales no quieran inscribir sus dispositivos o que Intune y las directivas de la organización los administren. Pero aún necesita proteger los recursos y los datos de su organización. En este escenario, puedes proteger tus aplicaciones mediante MAM. Por ejemplo, puede usar una directiva MAM que requiera que un usuario escriba un PIN al acceder a SharePoint en el dispositivo.
 
