@@ -1,6 +1,6 @@
 ---
-title: Requisitos previos para las cuentas de invitado
-description: Instrucciones de configuración para cuentas de invitado y cómo ajustarlas
+title: Requisitos previos para cuentas de invitados
+description: Directrices de configuración para cuentas de invitado y cómo ajustarlas
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
@@ -16,15 +16,15 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 11/14/2020
 ms.locfileid: "49073247"
 ---
-# <a name="prerequisites-for-guest-accounts"></a>Requisitos previos para las cuentas de invitado
+# <a name="prerequisites-for-guest-accounts"></a>Requisitos previos para cuentas de invitados
 
-Microsoft Managed Desktop requiere la siguiente configuración en su organización de Azure AD para el acceso a la cuenta de invitado. Puede ajustar esta configuración en el [portal de Azure](https://portal.azure.com) en **identidades externas/colaboración externa** :
+Escritorio administrado de Microsoft requiere la siguiente configuración en la organización de Azure AD para el acceso a la cuenta de invitado. Puede ajustar esta configuración en [Azure Portal](https://portal.azure.com) en **Identidades externas/Colaboración externa:**
 
--   **Los administradores y los usuarios de la función invitador invitado pueden invitar** a que se establezcan en **yes**
--   Para las **restricciones de colaboración** , elija una de estas opciones:
-    -   Si selecciona **permitir que se envíen invitaciones a cualquier dominio (en la mayoría de los casos)** , no se requiere ninguna otra configuración.
-    -   Si selecciona **denegar invitaciones a los dominios especificados** , asegúrese de que Microsoft.com no aparezca en los dominios de destino.
-    -   Si selecciona **permitir invitaciones solo para los dominios especificados (más restrictivos)** , asegúrese de *que Microsoft.com aparezca* en los dominios de destino.
+-   **Los administradores y usuarios del rol de invitador de invitado** pueden invitar establecidos en **Sí**
+-   Para **las restricciones de colaboración,** elija cualquiera de estas opciones:
+    -   Si selecciona Permitir **que se envíen invitaciones a cualquier dominio (más inclusivo),** no se requiere ninguna otra configuración.
+    -   Si selecciona Denegar invitaciones a los dominios **especificados,** asegúrese de que Microsoft.com no aparece en los dominios de destino.
+    -   Si selecciona Permitir invitaciones solo a los dominios **especificados (más**  restrictivos), asegúrese de que Microsoft.com en los dominios de destino.
 
-Si establece restricciones que interactúan con esta configuración, asegúrese de excluir las cuentas de **servicio del área de trabajo moderna** de Azure Active Directory. Por ejemplo, si tiene una directiva de acceso condicional que impide que las cuentas de invitado obtengan acceso al portal de Intune, excluya el grupo de **cuentas de servicio del lugar de trabajo moderno** de esta Directiva.
+Si establece restricciones que interactúan con esta configuración, asegúrese de excluir las cuentas de servicio de Azure Active Directory **Modern Workplace .** Por ejemplo, si tiene una directiva de acceso condicional que impide que las cuentas de invitado accedan al portal de Intune, excluya el grupo Cuentas de servicio de **Modern Workplace** de esta directiva.
 

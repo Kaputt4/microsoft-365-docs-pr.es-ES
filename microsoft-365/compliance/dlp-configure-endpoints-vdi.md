@@ -1,5 +1,5 @@
 ---
-title: Dispositivos de infraestructura de escritorio virtual (VDI) no persistentes incorporados
+title: Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,7 +13,7 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Implemente el paquete de configuración en el dispositivo de infraestructura de escritorio virtual (VDI) para que estén integrados en el servicio de prevención de pérdida de datos de extremos de Microsoft 365.
+description: Implemente el paquete de configuración en el dispositivo de infraestructura de escritorio virtual (VDI) para que se incorpore al servicio de prevención de pérdida de datos del punto de conexión de Microsoft 365.
 ms.openlocfilehash: ce5ad0ba6af3e18a6f6c53e1860fc47a77c38770
 ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
@@ -21,74 +21,74 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "48769511"
 ---
-# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Dispositivos de infraestructura de escritorio virtual (VDI) no persistentes incorporados
+# <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente
 
 **Se aplica a:**
-- [Prevención de pérdida de datos (DLP) de Microsoft 365](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Prevención de pérdida de datos (DLP) de Punto de conexión de Microsoft 365](/microsoft-365/compliance/endpoint-dlp-learn-about)
 
 - Dispositivos de infraestructura de escritorio virtual (VDI)
 
 >[!WARNING]
-> La compatibilidad de prevención de pérdida de datos de extremos de Microsoft 365 para el escritorio virtual de Windows admite escenarios de sesión única. Actualmente no se admiten escenarios de sesiones múltiples en el escritorio virtual de Windows.
+> Microsoft 365 Endpoint data loss prevention support for Windows Virtual Desktop supports single session scenarios. Actualmente no se admiten escenarios de varias sesiones en Windows Virtual Desktop.
 
-## <a name="onboard-vdi-devices"></a>Dispositivos VDI incorporados
+## <a name="onboard-vdi-devices"></a>Incorporar dispositivos VDI
 
-La prevención de pérdida de datos de Microsoft 365 Endpoint admite la incorporación de sesiones de VDI no persistentes. 
+La prevención de pérdida de datos de puntos de conexión de Microsoft 365 admite la incorporación de sesiones de VDI no persistentes. 
 
 >[!Note]
->Para incorporar sesiones de VDI no persistentes, los dispositivos de VDI deben estar en Windows 10 1809 o versiones posteriores.
+>Para incorporar sesiones de VDI no persistentes, los dispositivos VDI deben estar en Windows 10 1809 o versiones posteriores.
 
-Es posible que se produzcan retos asociados al VDIs de la incorporación. Los siguientes son desafíos típicos para este escenario:
+Es posible que haya desafíos asociados al incorporar los VDIs. Los siguientes son los desafíos típicos para este escenario:
 
-- Incorporación rápida instantánea de sesiones de corta duración, que deben incorporarse a la prevención de pérdida de datos de Microsoft 365 Endpoint antes del aprovisionamiento real.
-- El nombre del dispositivo suele reutilizarse para las sesiones nuevas.
+- Incorporación anticipada instantánea de sesiones de corta duración, que deben incorporarse a la prevención de pérdida de datos del punto de conexión de Microsoft 365 antes del aprovisionamiento real.
+- El nombre del dispositivo se suele reutilizar para las sesiones nuevas.
 
-Los dispositivos de VDI pueden aparecer en el centro de cumplimiento de Microsoft 365 como:
+Los dispositivos VDI pueden aparecer en el Centro de cumplimiento de Microsoft 365 como:
 
 - Entrada única para cada dispositivo.  
-Tenga en cuenta que, en este caso, el *mismo* nombre de dispositivo debe configurarse cuando se crea la sesión (por ejemplo, mediante un archivo de respuesta de instalación desatendida).
-- Varias entradas para cada dispositivo: uno para cada sesión.
+Ten en cuenta que, en este caso, *debe* configurarse el mismo nombre de dispositivo cuando se crea la sesión, por ejemplo, mediante un archivo de respuesta desatendido.
+- Varias entradas para cada dispositivo: una para cada sesión.
 
-Los siguientes pasos le guiarán por los dispositivos VDI de incorporación y resaltarán los pasos para las entradas únicas y múltiples.
+Los siguientes pasos te guiarán a través de la incorporación de dispositivos VDI y resaltarán los pasos para entradas únicas y múltiples.
 
 >[!WARNING]
-> Para los entornos en los que hay configuraciones de recursos insuficientes, el procedimiento de arranque de VDI podría ralentizar la incorporación de prevención de pérdida de datos de extremos de Microsoft 365. 
+> Para entornos en los que hay configuraciones de recursos bajos, el procedimiento de arranque de VDI podría ralentizar la incorporación de la prevención de pérdida de datos de Puntos de conexión de Microsoft 365. 
 
-1.  Abra el archivo. zip del paquete de configuración de VDI ( *DeviceCompliancePackage.zip* ) que ha descargado desde el Asistente de incorporación de servicios.
+1.  Abre el archivo .zip del paquete de configuración VDI (*DeviceCompliancePackage.zip*) que descargaste desde el Asistente para la incorporación de servicios.
 
-2.  En el panel de navegación, seleccione la incorporación de la incorporación de dispositivos de **configuración**  >  **Device onboarding**  >  **Onboarding** .
+2.  En el panel de navegación, selecciona **Configuración**  >  **de incorporación de**  >  **dispositivos.**
 
-3. En el campo **método de implementación** , seleccione **scripts de incorporación de VDI para los extremos no persistentes** .
+3. En el **campo Método de** implementación, seleccione scripts de incorporación de **VDI para extremos no persistentes.**
 
-5. Haga clic en **Descargar paquete** y guarde el archivo. zip.
+5. Haz **clic en Descargar paquete** y guarda el archivo .zip.
 
-6. Copie los archivos de la carpeta DeviceCompliancePackage extraídos del archivo. zip en la `golden/master` imagen de la ruta de acceso `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` . 
+6. Copie los archivos de la carpeta DeviceCompliancePackage extraídos del archivo .zip en la `golden/master` imagen bajo la ruta de `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` acceso. 
 
-7. Si no va a implementar una entrada única para cada dispositivo, copie DeviceComplianceOnboardingScript. cmd.
+7. Si no vas a implementar una sola entrada para cada dispositivo, copia DeviceComplianceOnboardingScript.cmd.
 
-8. Si va a implementar una entrada única para cada dispositivo, copie tanto Onboard-NonPersistentMachine.ps1 como DeviceComplianceOnboardingScript. cmd.
+8. Si vas a implementar una sola entrada para cada dispositivo, copia tanto Onboard-NonPersistentMachine.ps1 como DeviceComplianceOnboardingScript.cmd.
     
     > [!NOTE]
-    > Si no ve la `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` carpeta, es posible que esté oculta. Deberá elegir la opción **Mostrar todos los archivos y carpetas ocultos** en el explorador de archivos.
+    > Si no ve la `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` carpeta, es posible que esté oculta. Tendrás que elegir la opción Mostrar archivos **y** carpetas ocultos en el Explorador de archivos.
 
-9. Abra una ventana del editor de directivas de grupo local y desplácese hasta **configuración del equipo**  >  **Windows**  >  **scripts**  >  **Startup** .
+9. Abra una ventana del Editor de directivas de grupo local y vaya a Configuración **del** equipo Inicio de scripts  >  **de configuración**  >  **de**  >  **Windows**.
 
    > [!NOTE]
-   > La Directiva de grupo de dominio también puede usarse para incorporar dispositivos no persistentes de VDI no persistentes.
+   > La directiva de grupo de dominio también se puede usar para incorporar dispositivos VDI no persistentes.
 
-4. Según el método que quiera implementar, siga los pasos apropiados:
+4. En función del método que quieras implementar, sigue los pasos adecuados:
 
-   **Para una entrada única para cada dispositivo**
+   **Para una sola entrada para cada dispositivo**
    
-   Seleccione la pestaña **scripts de PowerShell** y haga clic en **Agregar** (el explorador de Windows se abrirá directamente en la ruta de acceso donde copió anteriormente el script de incorporación). Navegue al script de PowerShell de incorporación `Onboard-NonPersistentMachine.ps1` .
+   Selecciona la pestaña Scripts de **PowerShell** y, a continuación, haz clic en Agregar **(el** Explorador de Windows se abrirá directamente en la ruta de acceso donde has copiado el script de incorporación anteriormente). Vaya al script de PowerShell de `Onboard-NonPersistentMachine.ps1` incorporación.
    
-   **Para varias entradas para cada dispositivo** :
+   **Para varias entradas para cada dispositivo:**
    
-   Seleccione la pestaña **scripts** y, a continuación, haga clic en **Agregar** (el explorador de Windows se abrirá directamente en la ruta de acceso donde copió el script de incorporación, anteriormente). Navegue hasta el script de la bash de incorporación `DeviceComplianceOnboardingScript.cmd` .
+   Selecciona la **pestaña Scripts** y, a continuación, haz clic en Agregar **(el** Explorador de Windows se abrirá directamente en la ruta de acceso donde has copiado el script de incorporación anteriormente). Navegue al script bash de `DeviceComplianceOnboardingScript.cmd` incorporación.
 
 5. Pruebe la solución:
 
-   1. Cree un grupo de servidores con un dispositivo.
+   1. Crea un grupo de servidores con un dispositivo.
       
    1. Inicie sesión en el dispositivo.
       
@@ -96,16 +96,16 @@ Los siguientes pasos le guiarán por los dispositivos VDI de incorporación y re
 
    1. Inicie sesión en el dispositivo con otro usuario.
       
-   1. **Para una entrada única para cada dispositivo** : Compruebe solo una entrada en el centro de seguridad de Microsoft defender.<br>
-      **Para varias entradas para cada dispositivo** : Compruebe varias entradas en el centro de seguridad de Microsoft defender.
+   1. **Para una sola entrada para cada dispositivo:** compruebe solo una entrada en el Centro de seguridad de Microsoft Defender.<br>
+      **Para varias entradas para cada dispositivo:** compruebe varias entradas en el Centro de seguridad de Microsoft Defender.
 
-6. Haga clic en **lista de dispositivos** en el panel de navegación.
+6. Haga **clic en la lista Dispositivos** en el panel de navegación.
 
-7. Use la función de búsqueda escribiendo el nombre del dispositivo y seleccione **dispositivo** como tipo de búsqueda.
+7. Para usar la función de búsqueda, escribe el nombre del dispositivo y selecciona **Dispositivo** como tipo de búsqueda.
 
-## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Actualización de imágenes de infraestructura de escritorio virtual (VDI) no persistentes
-Como procedimiento recomendado, se recomienda el uso de herramientas de servicio sin conexión para aplicar revisiones a imágenes maestras o en oro.<br>
-Por ejemplo, puede usar los comandos siguientes para instalar una actualización mientras la imagen permanece sin conexión:
+## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>Actualización de imágenes de infraestructura de escritorio virtual (VDI) no persistente
+Como procedimiento recomendado, se recomienda usar herramientas de mantenimiento sin conexión para aplicar revisiones a imágenes maestras o de oro.<br>
+Por ejemplo, puedes usar los siguientes comandos para instalar una actualización mientras la imagen permanece sin conexión:
 
 ```console
 DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing" 
@@ -113,16 +113,16 @@ DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\
 DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
-Para obtener más información acerca de los comandos de DISM y el servicio sin conexión, consulte los artículos siguientes:
-- [Modificación de una imagen de Windows mediante DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
-- [Opciones de Command-Line de administración de imágenes de DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
+Para obtener más información sobre los comandos DISM y el mantenimiento sin conexión, consulta los artículos siguientes:
+- [Modificar una imagen de Windows con DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [Opciones de administración de imágenes Command-Line DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
 - [Reducir el tamaño del almacén de componentes en una imagen de Windows sin conexión](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
-Si el mantenimiento sin conexión no es una opción viable para el entorno de la VDI no persistente, debe seguir estos pasos para garantizar la coherencia y el estado de los sensores:
+Si el mantenimiento sin conexión no es una opción viable para el entorno de VDI no persistente, se deben realizar los siguientes pasos para garantizar la coherencia y el estado del sensor:
 
-1. Después de arrancar la imagen maestra para el servicio en línea o la revisión, ejecute un script de descarga para desactivar el sensor de prevención de pérdida de datos de extremos de Microsoft 365. Para obtener más información, vea [desincorpora dispositivos con un script local](dlp-configure-endpoints-script.md#offboard-devices-using-a-local-script).
+1. Después de arrancar la imagen maestra para el mantenimiento en línea o la revisión, ejecute un script de descarga para desactivar el sensor de prevención de pérdida de datos del punto de conexión de Microsoft 365. Para obtener más información, vea [Dispositivos de fuera de la oficina con un script local.](dlp-configure-endpoints-script.md#offboard-devices-using-a-local-script)
 
-2. Asegúrese de detener el sensor ejecutando el comando siguiente en una ventana de CMD:
+2. Asegúrate de que el sensor se detiene ejecutando el siguiente comando en una ventana cmd:
 
    ```console
    sc query sense
@@ -130,7 +130,7 @@ Si el mantenimiento sin conexión no es una opción viable para el entorno de la
 
 3. Servicio de la imagen según sea necesario.
 
-4. Ejecute los siguientes comandos con PsExec.exe (que se puede descargar de https://download.sysinternals.com/files/PSTools.zip) para limpiar el contenido de la carpeta Cyber que el sensor puede haber acumulado desde el inicio:
+4. Ejecuta los siguientes comandos con PsExec.exe (que se pueden descargar para limpiar el contenido de la carpeta cibernética que el sensor haya acumulado https://download.sysinternals.com/files/PSTools.zip) desde el arranque:
 
     ```console
     PsExec.exe -s cmd.exe
@@ -140,11 +140,11 @@ Si el mantenimiento sin conexión no es una opción viable para el entorno de la
     exit
     ```
 
-5. Vuelva a sellar la imagen Golden/Master como lo haría normalmente.
+5. Vuelva a sellar la imagen de patrón o dorado como lo haría normalmente.
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Dispositivos de Windows 10 incorporados mediante la Directiva de grupo](dlp-configure-endpoints-gp.md)
-- [Dispositivos con Windows 10 en placa mediante el administrador de configuración de Microsoft Endpoint](dlp-configure-endpoints-sccm.md)
-- [Dispositivos de Windows 10 en placa con herramientas de administración de dispositivos móviles](dlp-configure-endpoints-mdm.md)
-- [Dispositivos de Windows 10 incorporados que usan un script local](dlp-configure-endpoints-script.md)
-- [Solucionar problemas de incorporación de la protección contra amenazas avanzada de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Incorporar dispositivos Windows 10 mediante la directiva de grupo](dlp-configure-endpoints-gp.md)
+- [Incorporar dispositivos Windows 10 con Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
+- [Incorporar dispositivos Windows 10 con herramientas de Administración de dispositivos móviles](dlp-configure-endpoints-mdm.md)
+- [Incorporar dispositivos Windows 10 mediante un script local](dlp-configure-endpoints-script.md)
+- [Solucionar problemas de incorporación de Protección contra amenazas avanzada de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

@@ -32,14 +32,14 @@ ms.locfileid: "48754545"
 Puede usar PowerShell para Microsoft 365 para eliminar y restaurar cuentas de usuario.
 
 >[!Note]
->Obtenga información sobre cómo [restaurar una cuenta de usuario](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) mediante el centro de administración de Microsoft 365.
+>Obtenga información sobre [cómo restaurar una cuenta de usuario](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) mediante el Centro de administración de Microsoft 365.
 >
->Para obtener una lista de recursos adicionales, consulte [Manage Users and Groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).
+>Para obtener una lista de recursos adicionales, vea [Administrar usuarios y grupos.](https://docs.microsoft.com/microsoft-365/admin/add-users/)
 >   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+En primer [lugar, conéctese a su espacio empresarial de Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 Después de conectarse, use la siguiente sintaxis para quitar una cuenta de usuario individual:
   
@@ -47,14 +47,14 @@ Después de conectarse, use la siguiente sintaxis para quitar una cuenta de usua
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
 
-En este ejemplo se quita la cuenta de usuario *fabricec \@ litwareinc.com*.
+En este ejemplo se quita la cuenta de *usuario fabricec \@ litwareinc.com*.
   
 ```powershell
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> El parámetro *-objectId* en el cmdlet **Remove-AzureADUser** acepta tanto el nombre de inicio de sesión de la cuenta, también conocido como el nombre principal de usuario o el identificador de objeto de la cuenta.
+> El *parámetro -ObjectID* del cmdlet **Remove-AzureADUser** acepta el nombre de inicio de sesión de la cuenta, también conocido como nombre principal de usuario o el identificador de objeto de la cuenta.
   
 Para mostrar el nombre de cuenta según el nombre de usuario, use los comandos siguientes:
   
@@ -63,7 +63,7 @@ $userName="<User name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-En este ejemplo se muestra el nombre de la cuenta del usuario *Caleb alféizares*.
+En este ejemplo se muestra el nombre de cuenta del usuario *Caleb Sills*.
   
 ```powershell
 $userName="Caleb Sills"
@@ -79,9 +79,9 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
-Cuando se elimina una cuenta de usuario mediante el módulo Microsoft Azure Active Directory para Windows PowerShell, la cuenta no se elimina de forma permanente. Puede restaurar la cuenta de usuario eliminada durante los siguientes 30 días.
+Al eliminar una cuenta de usuario a través del módulo microsoft Azure Active Directory para Windows PowerShell, la cuenta no se elimina permanentemente. Puede restaurar la cuenta de usuario eliminada durante los siguientes 30 días.
 
-En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+En primer [lugar, conéctese a su espacio empresarial de Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 Para eliminar una cuenta de usuario, utilice la siguiente sintaxis:
   
@@ -90,10 +90,10 @@ Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 >[!Note]
->PowerShell Core no es compatible con el módulo Microsoft Azure Active Directory para el módulo y los cmdlets de Windows PowerShell con *msol* en su nombre. Ejecute estos cmdlets de Windows PowerShell.
+>PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory para Windows PowerShell ni los cmdlet sque llevan *Msol* en su nombre. Ejecute estos cmdlets desde Windows PowerShell.
 >
 
-En este ejemplo se elimina la cuenta de usuario *BelindaN@litwareinc.com*.
+En este ejemplo se elimina la cuenta de *BelindaN@litwareinc.com*.
   
 ```powershell
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
@@ -105,7 +105,7 @@ Para restaurar una cuenta de usuario eliminada dentro del periodo de gracia de 3
 Restore-MsolUser -UserPrincipalName <sign-in name>
 ```
 
-En este ejemplo se restaura la cuenta eliminada * \@ litwareinc.com*.
+En este ejemplo se restaura la cuenta *eliminada BelindaN \@ litwareinc.com*.
   
 ```powershell
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com

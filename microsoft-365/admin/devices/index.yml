@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Proteger y administrar los datos de dispositivos y aplicaciones
-summary: Consulte estos recursos para ayudar a los administradores a elegir entre los métodos de administración de datos de dispositivos y aplicaciones.
+title: Proteger y administrar dispositivos y datos de aplicaciones
+summary: Echa un vistazo a estos recursos para ayudar a los administradores a elegir entre los métodos de administración de datos de dispositivos y aplicaciones.
 metadata:
-  title: Proteger y administrar los datos de dispositivos y aplicaciones
-  description: Administrar y proteger los datos de dispositivos y aplicaciones
+  title: Proteger y administrar dispositivos y datos de aplicaciones
+  description: Administrar y proteger dispositivos y datos de aplicaciones
   ms.service: O365-administration
   ms.topic: landing-page
   author: Sirkkuw
@@ -18,13 +18,13 @@ metadata:
   ms.lasthandoff: 11/06/2020
   ms.locfileid: "48930278"
 landingContent:
-- title: Diferentes métodos de MDM y MAM
+- title: Diferentes métodos MDM y MAM
   linkLists:
   - linkListType: overview
     links:
     - text: Revisar las opciones de protección de datos de dispositivos y aplicaciones
       url: choose-device-security.md
-- title: Administrar los datos de aplicaciones y dispositivos con Microsoft Intune
+- title: Administrar dispositivos y datos de aplicaciones con Microsoft Intune
   linkLists:
   - linkListType: overview
     links:
@@ -32,13 +32,13 @@ landingContent:
       url: https://docs.microsoft.com/mem/intune/enrollment/device-enrollment
   - linkListType: how-to-guide
     links:
-    - text: Configurar la inscripción automática para dispositivos con Windows 10
+    - text: Configurar la inscripción automática para dispositivos Windows 10
       url: https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment
     - text: Configurar la inscripción de Android
       url: https://docs.microsoft.com/mem/intune/enrollment/android-enroll
-    - text: Configurar la inscripción en iOS/iPados
+    - text: Configurar la inscripción en iOS/iPadOS
       url: https://docs.microsoft.com/mem/intune/enrollment/ios-enroll
-- title: Administración de datos de dispositivos y aplicaciones con Microsoft 365 Business Premium
+- title: Administrar dispositivos y datos de aplicaciones con Microsoft 365 Empresa Premium
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -46,23 +46,23 @@ landingContent:
       url: ../../business/view-policies-and-devices.md
     - text: Eliminar datos de la empresa de dispositivos
       url: ../../business/remove-company-data.md
-    - text: Restablecer los dispositivos Windows a la configuración de fábrica
+    - text: Restablecer la configuración de fábrica de los dispositivos Windows
       url: ../../business/reset-devices-to-factory-settings.md
-- title: Administrar los datos de dispositivos y aplicaciones con Microsoft 365 para empresas
+- title: Administrar dispositivos y datos de aplicaciones con Microsoft 365 para empresas
   linkLists:
   - linkListType: overview
     links:
-    - text: Información general de Microsoft 365 para empresas
+    - text: Información general sobre Microsoft 365 para empresas
       url: ../../enterprise/microsoft-365-overview.md
-    - text: Guía de la administración de dispositivos para Microsoft 365 para empresas
+    - text: Mapa de ruta de administración de dispositivos para Microsoft 365 para empresas
       url: ../../enterprise/device-management-roadmap-microsoft-365.md
-- title: Administrar los datos de dispositivos y aplicaciones con la movilidad y la seguridad básicas
+- title: Administrar dispositivos y datos de aplicaciones con movilidad y seguridad básicas
   linkLists:
   - linkListType: overview
     links:
-    - text: Introducción a la movilidad y la seguridad básicas
+    - text: Información general sobre Movilidad y seguridad básicas
       url: ../basic-mobility-security/overview.md
-    - text: Configurar la movilidad y la seguridad básicas
+    - text: Configurar la movilidad básica y la seguridad
       url: ../basic-mobility-security/set-up.md
-    - text: Capacidades de movilidad y seguridad básicas
+    - text: Funcionalidades de movilidad y seguridad básicas
       url: ../basic-mobility-security/capabilities.md

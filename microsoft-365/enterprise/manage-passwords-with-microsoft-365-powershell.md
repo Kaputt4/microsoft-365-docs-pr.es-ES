@@ -1,5 +1,5 @@
 ---
-title: Administración de contraseñas con PowerShell
+title: Administrar contraseñas con PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -24,21 +24,21 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 11/14/2020
 ms.locfileid: "49073217"
 ---
-# <a name="manage-passwords-with-powershell"></a>Administración de contraseñas con PowerShell
+# <a name="manage-passwords-with-powershell"></a>Administrar contraseñas con PowerShell
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Puede usar PowerShell para Microsoft 365 como una alternativa al centro de administración de Microsoft 365 para administrar contraseñas en Microsoft 365. 
+Puede usar PowerShell para Microsoft 365 como alternativa al Centro de administración de Microsoft 365 para administrar contraseñas en Microsoft 365. 
 
-Cuando un bloque de comandos de este artículo requiere que especifique valores de variables, siga estos pasos.
+Cuando un bloque de comandos de este artículo requiera que especifique valores de variable, siga estos pasos.
 
-1. Copie el bloque de comandos en el portapapeles y péguelo en el Bloc de notas o en el entorno de scripting integrado (ISE) de PowerShell.
-2. Rellene los valores de la variable y quite los caracteres "<" y ">".
+1. Copie el bloque de comandos en el Portapapeles y péguelo en el Bloc de notas o en el Entorno de scripts integrado (ISE) de PowerShell.
+2. Rellene los valores de variable y quite los caracteres "<" y ">".
 3. Ejecute los comandos en la ventana de PowerShell o en PowerShell ISE.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Use el módulo de PowerShell Azure Active Directory para Graph
 
-En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+En primer [lugar, conéctese a su espacio empresarial de Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 ### <a name="set-a-password"></a>Establecer una contraseña
 
@@ -50,9 +50,9 @@ $newPassword="<new password>"
 $secPassword = ConvertTo-SecureString $newPassword -AsPlainText -Force
 Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword
 ```
-### <a name="force-a-user-to-change-their-password"></a>Obligar a un usuario a cambiar su contraseña
+### <a name="force-a-user-to-change-their-password"></a>Forzar a un usuario a cambiar su contraseña
 
-Use estos comandos para establecer una contraseña y obligar a un usuario a cambiar la nueva contraseña.
+Use estos comandos para establecer una contraseña y forzar a un usuario a cambiar su nueva contraseña.
 
 ```powershell
 $userUPN="<user account sign in name, such as belindan@contoso.com>"
@@ -61,7 +61,7 @@ $secPassword = ConvertTo-SecureString $newPassword -AsPlainText -Force
 Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword -EnforceChangePasswordPolicy $true
 ```
 
-Use estos comandos para establecer una contraseña y obligar a un usuario a cambiar su nueva contraseña la próxima vez que inicie sesión.
+Use estos comandos para establecer una contraseña y forzar a un usuario a cambiar su nueva contraseña la próxima vez que inicie sesión.
 
 ```powershell
 $userUPN="<user account sign in name, such as belindan@contoso.com>"
@@ -72,7 +72,7 @@ Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword -ForceChangeP
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Use el Módulo Microsoft Azure Active Directory para Windows PowerShell
 
-En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+En primer [lugar, conéctese a su inquilino de Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 ### <a name="set-a-password"></a>Establecer una contraseña
 
@@ -84,16 +84,16 @@ $newPassword="<new password>"
 Set-MsolUserPassword -UserPrincipalName $userUPN -NewPassword $newPassword
 ```
 
-### <a name="force-a-user-to-change-their-password"></a>Obligar a un usuario a cambiar su contraseña
+### <a name="force-a-user-to-change-their-password"></a>Forzar a un usuario a cambiar su contraseña
 
-Use estos comandos para obligar a un usuario a cambiar su contraseña.
+Use estos comandos para forzar a un usuario a cambiar su contraseña.
 
 ```powershell
 $userUPN="<user account sign in name>"
 Set-MsolUserPassword -UserPrincipalName $userUPN -ForceChangePassword $true
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

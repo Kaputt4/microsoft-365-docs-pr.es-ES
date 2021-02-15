@@ -69,13 +69,13 @@ Microsoft 365 Empresa Premium le ayuda a proteger los datos en cada uno de esto
 
 ## <a name="how-your-data-and-devices-are-protected"></a>Protección de datos y dispositivos
 
-Microsoft 365 Empresa Premium aplica varias medidas que ayudan a **protegerse contra las amenazas** :
+Microsoft 365 Empresa Premium aplica varias medidas que ayudan a **protegerse contra las amenazas**:
 
-- Exploración de vínculos en mensajes de correo electrónico y documentos en tiempo real para bloquear sitios web no seguros (vínculos seguros).
+- Examinar vínculos en correos electrónicos y documentos en tiempo real para bloquear sitios web no seguros (vínculos seguros).
 
-- Realizar un análisis avanzado de datos adjuntos de correo electrónico en un entorno de espacio aislado para detectar malware recientemente desarrollado (datos adjuntos seguros). 
+- Realizar un análisis avanzado de los datos adjuntos de correo electrónico en un entorno de espacio aislado para detectar malware recién desarrollado (datos adjuntos seguros). 
 
-- Habilitación de las directivas antiphishing que usan modelos de aprendizaje automático y detección de suplantación para proporcionar protección contra ataques avanzados (antiphishing en defender para Office 365 Intelligence). 
+- Habilitar directivas contra la suplantación de identidad que usan modelos de aprendizaje automático y detección de suplantación para proporcionar protección contra ataques avanzados (protección contra suplantación de identidad en la inteligencia de Defender para Office 365). 
 
 - Directivas avanzadas que deshabilitan el acceso desde ubicaciones en las que no se confía o que omiten la autenticación multifactor en sitios de confianza como la red de su oficina (Azure MFA, incluido IP de confianza y Acceso condicional). 
 
