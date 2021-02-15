@@ -1,5 +1,5 @@
 ---
-title: Información de pago para Surinam
+title: Información de pago de Surinam
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48648472"
 ---
-# <a name="payment-information-for-suriname"></a><span data-ttu-id="756e4-103">Información de pago para Surinam</span><span class="sxs-lookup"><span data-stu-id="756e4-103">Payment information for Suriname</span></span>
+# <a name="payment-information-for-suriname"></a><span data-ttu-id="88fee-103">Información de pago de Surinam</span><span class="sxs-lookup"><span data-stu-id="88fee-103">Payment information for Suriname</span></span>
 
-<span data-ttu-id="756e4-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="756e4-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="88fee-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="88fee-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="756e4-105">Pague solo en USD y haga referencia al número de factura en su reenvío de factura.</span><span class="sxs-lookup"><span data-stu-id="756e4-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
+<span data-ttu-id="88fee-105">Pagar solo en USD y hacer referencia a los números de factura en la remesa de la factura.</span><span class="sxs-lookup"><span data-stu-id="88fee-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="756e4-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="756e4-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="88fee-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="88fee-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="756e4-107">**Banco:** Banco de América</span><span class="sxs-lookup"><span data-stu-id="756e4-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="756e4-108">**Bifurcación** Dallas</span><span class="sxs-lookup"><span data-stu-id="756e4-108">**Branch** Dallas</span></span>  
-<span data-ttu-id="756e4-109">**Código SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="756e4-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="756e4-110">**Número de cuenta:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="756e4-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="756e4-111">**Nombre de cuenta:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="756e4-111">**Account Name:** Microsoft</span></span>  
+<span data-ttu-id="88fee-107">**Banco:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="88fee-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="88fee-108">**Rama** Dallas</span><span class="sxs-lookup"><span data-stu-id="88fee-108">**Branch** Dallas</span></span>  
+<span data-ttu-id="88fee-109">**Código SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="88fee-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="88fee-110">**Número de cuenta:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="88fee-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="88fee-111">**Nombre de cuenta:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="88fee-111">**Account Name:** Microsoft</span></span>  

@@ -1,5 +1,5 @@
 ---
-title: Información de pago para Iraq
+title: Información de pago para Irak
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48647176"
 ---
-# <a name="payment-information-for-iraq"></a><span data-ttu-id="2571e-103">Información de pago para Iraq</span><span class="sxs-lookup"><span data-stu-id="2571e-103">Payment information for Iraq</span></span>
+# <a name="payment-information-for-iraq"></a><span data-ttu-id="75c14-103">Información de pago para Irak</span><span class="sxs-lookup"><span data-stu-id="75c14-103">Payment information for Iraq</span></span>
 
-<span data-ttu-id="2571e-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="2571e-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="75c14-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="75c14-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="2571e-105">Pague solo en USD y haga referencia al número de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="2571e-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="75c14-105">Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="75c14-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="2571e-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="2571e-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="75c14-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="75c14-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="2571e-107">**Banco:** Citibank, Londres</span><span class="sxs-lookup"><span data-stu-id="2571e-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="2571e-108">**Código SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="2571e-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="2571e-109">**Iban:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="2571e-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="2571e-110">**Número de cuenta:** 12510049</span><span class="sxs-lookup"><span data-stu-id="2571e-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="2571e-111">**Nombre de cuenta:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="2571e-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="75c14-107">**Banco:** Bank, Londres</span><span class="sxs-lookup"><span data-stu-id="75c14-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="75c14-108">**Código SWIFT:** GBGB2L</span><span class="sxs-lookup"><span data-stu-id="75c14-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="75c14-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="75c14-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="75c14-110">**Número de cuenta:** 12510049</span><span class="sxs-lookup"><span data-stu-id="75c14-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="75c14-111">**Nombre de cuenta:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="75c14-111">**Account Name:** MICROSOFT</span></span>  

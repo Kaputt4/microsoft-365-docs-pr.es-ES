@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-description: Obtenga más información sobre la aplicación de Microsoft Office para iOS para Office 365 operado por 21Vianet y cómo descargarla para clientes en China.
+description: Obtenga más información sobre Microsoft Office aplicación para iOS para Office 365 operado por 21Vianet y cómo descargarla para los clientes de China.
 monikerRange: o365-21vianet
 ms.openlocfilehash: f1179b21b8db9b6ba7ff9016d575e687d802fbda
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -27,30 +27,30 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48644800"
 ---
-# <a name="office-app-for-ios-for-office-365-operated-by-21vianet"></a><span data-ttu-id="114a4-103">Aplicación de Office para iOS para Office 365 operado por 21Vianet</span><span class="sxs-lookup"><span data-stu-id="114a4-103">Office app for iOS for Office 365 operated by 21Vianet</span></span>
+# <a name="office-app-for-ios-for-office-365-operated-by-21vianet"></a><span data-ttu-id="3ba5b-103">Aplicación de Office para iOS para Office 365 operado por 21Vianet</span><span class="sxs-lookup"><span data-stu-id="3ba5b-103">Office app for iOS for Office 365 operated by 21Vianet</span></span>
 
-<span data-ttu-id="114a4-104">La aplicación de Microsoft Office para iOS combina aplicaciones móviles de Word, Excel y PowerPoint en una sola aplicación que se puede descargar para teléfonos con iOS.</span><span class="sxs-lookup"><span data-stu-id="114a4-104">The Microsoft Office app for iOS combines Word, Excel, and PowerPoint mobile apps into a single app available for download for iOS phones.</span></span> <span data-ttu-id="114a4-105">Con la aplicación de Office para iOS, puede conectarse a Office 365 de la misma manera que lo haría con las aplicaciones móviles de Word, Excel y PowerPoint.</span><span class="sxs-lookup"><span data-stu-id="114a4-105">With the Office app for iOS, you can connect to Office 365 just as you would with the Word, Excel, and PowerPoint mobile apps.</span></span> <span data-ttu-id="114a4-106">La descarga de la aplicación de Office para iOS no afectará a las instalaciones existentes de Word, Excel y PowerPoint.</span><span class="sxs-lookup"><span data-stu-id="114a4-106">The Office app for iOS download won't affect any existing installations of Word, Excel, and PowerPoint.</span></span>
+<span data-ttu-id="3ba5b-104">La Microsoft Office para iOS combina las aplicaciones móviles de Word, Excel y PowerPoint en una sola aplicación disponible para su descarga para teléfonos iOS.</span><span class="sxs-lookup"><span data-stu-id="3ba5b-104">The Microsoft Office app for iOS combines Word, Excel, and PowerPoint mobile apps into a single app available for download for iOS phones.</span></span> <span data-ttu-id="3ba5b-105">Con la aplicación de Office para iOS, puede conectarse a Office 365 como lo haría con las aplicaciones móviles de Word, Excel y PowerPoint.</span><span class="sxs-lookup"><span data-stu-id="3ba5b-105">With the Office app for iOS, you can connect to Office 365 just as you would with the Word, Excel, and PowerPoint mobile apps.</span></span> <span data-ttu-id="3ba5b-106">La descarga de la aplicación de Office para iOS no afectará a las instalaciones existentes de Word, Excel y PowerPoint.</span><span class="sxs-lookup"><span data-stu-id="3ba5b-106">The Office app for iOS download won't affect any existing installations of Word, Excel, and PowerPoint.</span></span>
 
-<span data-ttu-id="114a4-107">Algunas de las características de aplicaciones de Office para iOS no están disponibles para los clientes de Office 365 operado por 21Vianet:</span><span class="sxs-lookup"><span data-stu-id="114a4-107">A few Office app for iOS features isn't available for Office 365 operated by 21Vianet customers:</span></span>
+<span data-ttu-id="3ba5b-107">Algunas características de la aplicación de Office para iOS no están disponibles para los clientes de Office 365 operado por 21Vianet:</span><span class="sxs-lookup"><span data-stu-id="3ba5b-107">A few Office app for iOS features isn't available for Office 365 operated by 21Vianet customers:</span></span>
 
-- <span data-ttu-id="114a4-108">Imagen a texto e imagen en tabla</span><span class="sxs-lookup"><span data-stu-id="114a4-108">Image to text and Image to table</span></span> 
-- <span data-ttu-id="114a4-109">Conversión de fotos a documentos de Word desde un objetivo</span><span class="sxs-lookup"><span data-stu-id="114a4-109">Converting photos to Word documents from Lens</span></span> 
-- <span data-ttu-id="114a4-110">Acción transferir archivos</span><span class="sxs-lookup"><span data-stu-id="114a4-110">Transfer files action</span></span> 
-- <span data-ttu-id="114a4-111">Las notas siguen siendo locales y no se sincronizan con el servidor</span><span class="sxs-lookup"><span data-stu-id="114a4-111">Notes remain local and don't sync to server</span></span>
-- <span data-ttu-id="114a4-112">Vista previa de vínculo en el recorrido QR</span><span class="sxs-lookup"><span data-stu-id="114a4-112">Link preview within Scan QR</span></span>
-- <span data-ttu-id="114a4-113">Tarjetas de roles en directo en la sección yo</span><span class="sxs-lookup"><span data-stu-id="114a4-113">Live persona cards in the Me section</span></span>
-- <span data-ttu-id="114a4-114">Clasificación, etiquetado y protección (CLP)</span><span class="sxs-lookup"><span data-stu-id="114a4-114">Classification, labeling, and protection (CLP)</span></span>
+- <span data-ttu-id="3ba5b-108">Imagen a texto e Imagen a tabla</span><span class="sxs-lookup"><span data-stu-id="3ba5b-108">Image to text and Image to table</span></span> 
+- <span data-ttu-id="3ba5b-109">Convertir fotos en documentos de Word desde Lens</span><span class="sxs-lookup"><span data-stu-id="3ba5b-109">Converting photos to Word documents from Lens</span></span> 
+- <span data-ttu-id="3ba5b-110">Acción transferir archivos</span><span class="sxs-lookup"><span data-stu-id="3ba5b-110">Transfer files action</span></span> 
+- <span data-ttu-id="3ba5b-111">Las notas permanecen locales y no se sincronizan con el servidor</span><span class="sxs-lookup"><span data-stu-id="3ba5b-111">Notes remain local and don't sync to server</span></span>
+- <span data-ttu-id="3ba5b-112">Vista previa de vínculos dentro de Scan QR</span><span class="sxs-lookup"><span data-stu-id="3ba5b-112">Link preview within Scan QR</span></span>
+- <span data-ttu-id="3ba5b-113">Tarjetas de persona en directo en la sección Yo</span><span class="sxs-lookup"><span data-stu-id="3ba5b-113">Live persona cards in the Me section</span></span>
+- <span data-ttu-id="3ba5b-114">Clasificación, etiquetado y protección (CLP)</span><span class="sxs-lookup"><span data-stu-id="3ba5b-114">Classification, labeling, and protection (CLP)</span></span>
 
 
-## <a name="download-the-office-app-for-ios"></a><span data-ttu-id="114a4-115">Descargar la aplicación de Office para iOS</span><span class="sxs-lookup"><span data-stu-id="114a4-115">Download the Office app for iOS</span></span>
+## <a name="download-the-office-app-for-ios"></a><span data-ttu-id="3ba5b-115">Descargar la aplicación de Office para iOS</span><span class="sxs-lookup"><span data-stu-id="3ba5b-115">Download the Office app for iOS</span></span>
 
-- <span data-ttu-id="114a4-116">Descargue la aplicación de Office para iPhone desde la [App Store](https://products.office.com/mobile/office?rtc=2).</span><span class="sxs-lookup"><span data-stu-id="114a4-116">Download the Office app for iPhones from the [App Store](https://products.office.com/mobile/office?rtc=2).</span></span> 
+- <span data-ttu-id="3ba5b-116">Descargue la aplicación de Office para iPhones desde [la Tienda de aplicaciones.](https://products.office.com/mobile/office?rtc=2)</span><span class="sxs-lookup"><span data-stu-id="3ba5b-116">Download the Office app for iPhones from the [App Store](https://products.office.com/mobile/office?rtc=2).</span></span> 
 
 > [!NOTE]
-> <span data-ttu-id="114a4-117">Actualmente, la aplicación de Office para iOS solo está disponible para iPhone.</span><span class="sxs-lookup"><span data-stu-id="114a4-117">The Office app for iOS is currently available for iPhone only.</span></span> <span data-ttu-id="114a4-118">La compatibilidad con iPad se agregará en un momento posterior.</span><span class="sxs-lookup"><span data-stu-id="114a4-118">Support for iPad will be added at a later time.</span></span> 
+> <span data-ttu-id="3ba5b-117">La aplicación de Office para iOS solo está disponible actualmente para iPhone.</span><span class="sxs-lookup"><span data-stu-id="3ba5b-117">The Office app for iOS is currently available for iPhone only.</span></span> <span data-ttu-id="3ba5b-118">La compatibilidad con iPad se agregará más adelante.</span><span class="sxs-lookup"><span data-stu-id="3ba5b-118">Support for iPad will be added at a later time.</span></span> 
 
-## <a name="security-considerations"></a><span data-ttu-id="114a4-119">Consideraciones acerca de la seguridad</span><span class="sxs-lookup"><span data-stu-id="114a4-119">Security considerations</span></span>
+## <a name="security-considerations"></a><span data-ttu-id="3ba5b-119">Consideraciones acerca de la seguridad</span><span class="sxs-lookup"><span data-stu-id="3ba5b-119">Security considerations</span></span>
 
-<span data-ttu-id="114a4-120">Si su organización inserta aplicaciones en dispositivos móviles para empleados, se recomienda reemplazar las aplicaciones de Word, Excel y PowerPoint con la aplicación de Office para iOS.</span><span class="sxs-lookup"><span data-stu-id="114a4-120">If your organization pushes apps to employee mobile devices, we suggest replacing the Word, Excel, and PowerPoint apps with the Office app for iOS.</span></span>  
+<span data-ttu-id="3ba5b-120">Si su organización inserta aplicaciones en dispositivos móviles de los empleados, le sugerimos que reemplace las aplicaciones de Word, Excel y PowerPoint por la aplicación de Office para iOS.</span><span class="sxs-lookup"><span data-stu-id="3ba5b-120">If your organization pushes apps to employee mobile devices, we suggest replacing the Word, Excel, and PowerPoint apps with the Office app for iOS.</span></span>  
 
 

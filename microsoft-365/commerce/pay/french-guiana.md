@@ -1,5 +1,5 @@
 ---
-title: Información de pago para la Guyana francesa
+title: Información de pago para la Guiana Francesa
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48647596"
 ---
-# <a name="payment-information-for-french-guiana"></a><span data-ttu-id="708e0-103">Información de pago para la Guyana francesa</span><span class="sxs-lookup"><span data-stu-id="708e0-103">Payment information for French Guiana</span></span>
+# <a name="payment-information-for-french-guiana"></a><span data-ttu-id="60e57-103">Información de pago para la Guiana Francesa</span><span class="sxs-lookup"><span data-stu-id="60e57-103">Payment information for French Guiana</span></span>
 
-<span data-ttu-id="708e0-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="708e0-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="60e57-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="60e57-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="708e0-105">Pague solo en USD y haga referencia al número de factura en su reenvío de factura.</span><span class="sxs-lookup"><span data-stu-id="708e0-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
+<span data-ttu-id="60e57-105">Pagar solo en USD y hacer referencia a los números de factura en la remesa de la factura.</span><span class="sxs-lookup"><span data-stu-id="60e57-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="708e0-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="708e0-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="60e57-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="60e57-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="708e0-107">**Banco:** Banco de América</span><span class="sxs-lookup"><span data-stu-id="708e0-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="708e0-108">**Bifurcación** Dallas</span><span class="sxs-lookup"><span data-stu-id="708e0-108">**Branch** Dallas</span></span>  
-<span data-ttu-id="708e0-109">**Código SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="708e0-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="708e0-110">**Número de cuenta:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="708e0-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="708e0-111">**Nombre de cuenta:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="708e0-111">**Account Name:** Microsoft</span></span>  
+<span data-ttu-id="60e57-107">**Banco:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="60e57-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="60e57-108">**Rama** Dallas</span><span class="sxs-lookup"><span data-stu-id="60e57-108">**Branch** Dallas</span></span>  
+<span data-ttu-id="60e57-109">**Código SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="60e57-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="60e57-110">**Número de cuenta:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="60e57-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="60e57-111">**Nombre de cuenta:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="60e57-111">**Account Name:** Microsoft</span></span>  

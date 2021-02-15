@@ -1,5 +1,5 @@
 ---
-title: Información de pago para Mauricio
+title: Información de pago de Mauricio
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48649269"
 ---
-# <a name="payment-information-for-mauritius"></a><span data-ttu-id="0238b-103">Información de pago para Mauricio</span><span class="sxs-lookup"><span data-stu-id="0238b-103">Payment information for Mauritius</span></span>
+# <a name="payment-information-for-mauritius"></a><span data-ttu-id="32056-103">Información de pago de Mauricio</span><span class="sxs-lookup"><span data-stu-id="32056-103">Payment information for Mauritius</span></span>
 
-<span data-ttu-id="0238b-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="0238b-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="32056-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="32056-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="0238b-105">Pague solo en USD y haga referencia al número de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="0238b-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="32056-105">Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="32056-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="0238b-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="0238b-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="32056-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="32056-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="0238b-107">**Banco:** Citibank, Londres</span><span class="sxs-lookup"><span data-stu-id="0238b-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="0238b-108">**Código SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="0238b-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="0238b-109">**Iban:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="0238b-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="0238b-110">**Número de cuenta:** 12510049</span><span class="sxs-lookup"><span data-stu-id="0238b-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="0238b-111">**Nombre de cuenta:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="0238b-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="32056-107">**Banco:** Bank, Londres</span><span class="sxs-lookup"><span data-stu-id="32056-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="32056-108">**Código SWIFT:** GBGB2L</span><span class="sxs-lookup"><span data-stu-id="32056-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="32056-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="32056-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="32056-110">**Número de cuenta:** 12510049</span><span class="sxs-lookup"><span data-stu-id="32056-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="32056-111">**Nombre de cuenta:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="32056-111">**Account Name:** MICROSOFT</span></span>  

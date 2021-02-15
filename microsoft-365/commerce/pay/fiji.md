@@ -1,5 +1,5 @@
 ---
-title: Información de pago para Fiji
+title: Información de pago para Fiyi
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,15 +20,15 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48647651"
 ---
-# <a name="payment-information-for-fiji"></a><span data-ttu-id="00ebe-103">Información de pago para Fiji</span><span class="sxs-lookup"><span data-stu-id="00ebe-103">Payment information for Fiji</span></span>
+# <a name="payment-information-for-fiji"></a><span data-ttu-id="3cbfa-103">Información de pago para Fiyi</span><span class="sxs-lookup"><span data-stu-id="3cbfa-103">Payment information for Fiji</span></span>
 
-<span data-ttu-id="00ebe-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="00ebe-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="3cbfa-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="3cbfa-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="00ebe-105">Pague solo en USD y haga referencia al número de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="00ebe-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="3cbfa-105">Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="3cbfa-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="00ebe-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="00ebe-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="3cbfa-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="3cbfa-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="00ebe-107">**Banco:** Citibank, Singapur</span><span class="sxs-lookup"><span data-stu-id="00ebe-107">**Bank:** Citibank, Singapore</span></span>  
-<span data-ttu-id="00ebe-108">**Código SWIFT:** CITISGSG</span><span class="sxs-lookup"><span data-stu-id="00ebe-108">**SWIFT Code:** CITISGSG</span></span>  
-<span data-ttu-id="00ebe-109">**Número de cuenta:** 0-817543-138</span><span class="sxs-lookup"><span data-stu-id="00ebe-109">**Account Number:** 0-817543-138</span></span>  
-<span data-ttu-id="00ebe-110">**Nombre de cuenta:** VENTAS REGIONALES DE MICROSOFT CORP</span><span class="sxs-lookup"><span data-stu-id="00ebe-110">**Account Name:** MICROSOFT REGIONAL SALE CORP</span></span>  
+<span data-ttu-id="3cbfa-107">**Banco:** Bank, Singapur</span><span class="sxs-lookup"><span data-stu-id="3cbfa-107">**Bank:** Citibank, Singapore</span></span>  
+<span data-ttu-id="3cbfa-108">**Código SWIFT:** DAGSG</span><span class="sxs-lookup"><span data-stu-id="3cbfa-108">**SWIFT Code:** CITISGSG</span></span>  
+<span data-ttu-id="3cbfa-109">**Número de cuenta:** 0-817543-138</span><span class="sxs-lookup"><span data-stu-id="3cbfa-109">**Account Number:** 0-817543-138</span></span>  
+<span data-ttu-id="3cbfa-110">**Nombre de cuenta:** MICROSOFT REGIONAL SALE CORP</span><span class="sxs-lookup"><span data-stu-id="3cbfa-110">**Account Name:** MICROSOFT REGIONAL SALE CORP</span></span>  

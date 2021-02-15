@@ -1,5 +1,5 @@
 ---
-title: Información de pago para Nueva Zelanda
+title: Información de pago de Nueva Zelanda
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,19 +20,19 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48649048"
 ---
-# <a name="payment-information-for-new-zealand"></a><span data-ttu-id="f373a-103">Información de pago para Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="f373a-103">Payment information for New Zealand</span></span>
+# <a name="payment-information-for-new-zealand"></a><span data-ttu-id="74c4c-103">Información de pago de Nueva Zelanda</span><span class="sxs-lookup"><span data-stu-id="74c4c-103">Payment information for New Zealand</span></span>
 
-<span data-ttu-id="f373a-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="f373a-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="74c4c-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="74c4c-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="f373a-105">Pague solo en NZD y haga referencia al número de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="f373a-105">Please pay in NZD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="74c4c-105">Pagar solo en NZD y hacer referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="74c4c-105">Please pay in NZD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="f373a-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="f373a-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="74c4c-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="74c4c-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="f373a-107">**Banco:** Citibank</span><span class="sxs-lookup"><span data-stu-id="f373a-107">**Bank:** Citibank</span></span>  
-<span data-ttu-id="f373a-108">**Código bancario:** 31</span><span class="sxs-lookup"><span data-stu-id="f373a-108">**Bank Code:** 31</span></span>  
-<span data-ttu-id="f373a-109">**Código de sucursal:** 2840</span><span class="sxs-lookup"><span data-stu-id="f373a-109">**Branch Code:** 2840</span></span>  
-<span data-ttu-id="f373a-110">**Código SWIFT:** CITINZ2X</span><span class="sxs-lookup"><span data-stu-id="f373a-110">**SWIFT Code:** CITINZ2X</span></span>  
-<span data-ttu-id="f373a-111">**Sufijo (3 dígitos):** 004</span><span class="sxs-lookup"><span data-stu-id="f373a-111">**Suffix (3-digit):** 004</span></span>    
-<span data-ttu-id="f373a-112">**Sufijo (2 dígitos):** 04</span><span class="sxs-lookup"><span data-stu-id="f373a-112">**Suffix (2-digit):** 04</span></span>  
-<span data-ttu-id="f373a-113">**Número de cuenta:** 0026181</span><span class="sxs-lookup"><span data-stu-id="f373a-113">**Account Number:** 0026181</span></span>  
-<span data-ttu-id="f373a-114">**Nombre de cuenta:** VENTAS REGIONALES DE MICROSOFT CORP.</span><span class="sxs-lookup"><span data-stu-id="f373a-114">**Account Name:** MICROSOFT REGIONAL SALES CORP</span></span>  
+<span data-ttu-id="74c4c-107">**Banco:** Bank</span><span class="sxs-lookup"><span data-stu-id="74c4c-107">**Bank:** Citibank</span></span>  
+<span data-ttu-id="74c4c-108">**Código bancario:** 31</span><span class="sxs-lookup"><span data-stu-id="74c4c-108">**Bank Code:** 31</span></span>  
+<span data-ttu-id="74c4c-109">**Código de sucursal:** 2840</span><span class="sxs-lookup"><span data-stu-id="74c4c-109">**Branch Code:** 2840</span></span>  
+<span data-ttu-id="74c4c-110">**Código SWIFT:** NZ2X</span><span class="sxs-lookup"><span data-stu-id="74c4c-110">**SWIFT Code:** CITINZ2X</span></span>  
+<span data-ttu-id="74c4c-111">**Sufijo (3 dígitos):** 004</span><span class="sxs-lookup"><span data-stu-id="74c4c-111">**Suffix (3-digit):** 004</span></span>    
+<span data-ttu-id="74c4c-112">**Sufijo (2 dígitos):** 04</span><span class="sxs-lookup"><span data-stu-id="74c4c-112">**Suffix (2-digit):** 04</span></span>  
+<span data-ttu-id="74c4c-113">**Número de cuenta:** 0026181</span><span class="sxs-lookup"><span data-stu-id="74c4c-113">**Account Number:** 0026181</span></span>  
+<span data-ttu-id="74c4c-114">**Nombre de cuenta:** MICROSOFT REGIONAL SALES CORP</span><span class="sxs-lookup"><span data-stu-id="74c4c-114">**Account Name:** MICROSOFT REGIONAL SALES CORP</span></span>  

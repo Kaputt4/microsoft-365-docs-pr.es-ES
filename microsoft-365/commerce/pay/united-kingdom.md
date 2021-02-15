@@ -20,17 +20,17 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48648160"
 ---
-# <a name="payment-information-for-united-kingdom"></a><span data-ttu-id="a0131-103">Información de pago para Reino Unido</span><span class="sxs-lookup"><span data-stu-id="a0131-103">Payment information for United Kingdom</span></span>
+# <a name="payment-information-for-united-kingdom"></a><span data-ttu-id="53c4a-103">Información de pago para Reino Unido</span><span class="sxs-lookup"><span data-stu-id="53c4a-103">Payment information for United Kingdom</span></span>
 
-<span data-ttu-id="a0131-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="a0131-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="53c4a-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="53c4a-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="a0131-105">Pague solo en GBP y haga referencia al número de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="a0131-105">Please pay in GBP only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="53c4a-105">Pagar solo en GBP y hacer referencia a los números de factura en la remesa de pago.</span><span class="sxs-lookup"><span data-stu-id="53c4a-105">Please pay in GBP only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="a0131-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="a0131-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="53c4a-106">Transferencia electrónica de fondos</span><span class="sxs-lookup"><span data-stu-id="53c4a-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="a0131-107">**Banco:** Citibank, Londres</span><span class="sxs-lookup"><span data-stu-id="a0131-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="a0131-108">**Código SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="a0131-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="a0131-109">**Iban:** GB41CITI18500812207605</span><span class="sxs-lookup"><span data-stu-id="a0131-109">**IBAN:** GB41CITI18500812207605</span></span>  
-<span data-ttu-id="a0131-110">**Código de ordenación:** 185008</span><span class="sxs-lookup"><span data-stu-id="a0131-110">**SORT Code:** 185008</span></span>  
-<span data-ttu-id="a0131-111">**Número de cuenta:** 12207605</span><span class="sxs-lookup"><span data-stu-id="a0131-111">**Account Number:** 12207605</span></span>  
-<span data-ttu-id="a0131-112">**Nombre de cuenta:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="a0131-112">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="53c4a-107">**Banco:** Bank, Londres</span><span class="sxs-lookup"><span data-stu-id="53c4a-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="53c4a-108">**Código SWIFT:** GBGB2L</span><span class="sxs-lookup"><span data-stu-id="53c4a-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="53c4a-109">**IBAN:** GB41CITI18500812207605</span><span class="sxs-lookup"><span data-stu-id="53c4a-109">**IBAN:** GB41CITI18500812207605</span></span>  
+<span data-ttu-id="53c4a-110">**Código sort:** 185008</span><span class="sxs-lookup"><span data-stu-id="53c4a-110">**SORT Code:** 185008</span></span>  
+<span data-ttu-id="53c4a-111">**Número de cuenta:** 12207605</span><span class="sxs-lookup"><span data-stu-id="53c4a-111">**Account Number:** 12207605</span></span>  
+<span data-ttu-id="53c4a-112">**Nombre de cuenta:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="53c4a-112">**Account Name:** MICROSOFT</span></span>  
