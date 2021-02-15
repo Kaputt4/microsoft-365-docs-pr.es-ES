@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
-ms.openlocfilehash: f5ab0b0cd4ef5c2bf1a799043af94a0938a53783
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 6207ae117f06a0e5f10d4a7a47a251137c51df05
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114900"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233584"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de la versión de prueba de Microsoft Defender para Office 365
 
@@ -41,7 +41,7 @@ Una prueba de Microsoft Defender para Office 365 es la forma más sencilla de pr
 
 ## <a name="terms-and-conditions"></a>Términos y condiciones
 
-La versión de prueba de Defender para Office 365 está disponible durante 90 días y se puede iniciar para todos los usuarios. Para obtener más información, vea los términos de uso de la versión de prueba de [Microsoft Defender para Office 365.](terms-of-use-defender-for-office-365-trial.md)
+La versión de prueba de Defender para Office 365 está disponible durante 90 días y se puede iniciar para todos los usuarios. Para obtener más información, vea Los términos de prueba de [Microsoft Defender para Office 365 & condiciones.](defender-for-office-365-trial-terms-and-conditions.md)
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>Configurar una versión de prueba de Defender para Office 365
 
@@ -55,7 +55,7 @@ Durante la instalación, la funcionalidad de respuesta de MDO (que se encuentra 
 
 Como parte de la configuración de prueba, las licencias de Defender para Office 365 se aplican automáticamente a la organización. Las licencias son gratuitas durante los primeros 90 días.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 Para iniciar o finalizar la prueba, debe ser miembro de los **roles** Administrador **global** o Administrador de seguridad en Azure Active Directory. Para obtener más información, consulte [Acerca de los roles de administrador.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
 

@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: Tanto si va a agregar nuevas soluciones al centro de cumplimiento, actualizar las características existentes en función de sus comentarios o implementar documentación actualizada y actualizada, Microsoft 365 le ayuda a mantenerse al día del cambiante panorama de cumplimiento. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 682f736456ebe822ee5a34de0175003fd7516920
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 40140c950bb42078cb1e72ae74762db00a4516b6
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50113979"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233168"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
-Ya sea agregar nuevas soluciones al Centro de cumplimiento de [Microsoft 365,](microsoft-365-compliance-center.md)actualizar las características existentes en función de sus comentarios o implementar documentación actualizada y actualizada, Microsoft 365 le ayuda a mantenerse al día del cambiante panorama de cumplimiento. Echa un vistazo a continuación para ver las novedades actuales del cumplimiento de Microsoft 365.
+Ya sea agregar nuevas soluciones al Centro de cumplimiento de [Microsoft 365,](microsoft-365-compliance-center.md)actualizar las características existentes en función de sus comentarios o implementar documentación actualizada y actualizada, Microsoft 365 le ayuda a mantenerse al día del cambiante panorama de cumplimiento. Echa un vistazo a continuación para ver las novedades del cumplimiento de Microsoft 365 en la actualidad.
 
 > [!NOTE]
 > Algunas características de cumplimiento se implantan a distintas velocidades para nuestros clientes. Si aún no ve una característica, pruebe a agregarse a [la versión dirigida.](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365)
@@ -36,13 +36,32 @@ Ya sea agregar nuevas soluciones al Centro de cumplimiento de [Microsoft 365,](m
 > ¿Te interesa lo que sucede en otros centros de administración? Consulte estos artículos:<br>[Novedades del Centro de administración de Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview)<br>[Novedades del Centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Novedades de Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Y visite el mapa de ruta de [Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) para obtener información sobre las características de Microsoft 365 que se iniciaron, se están implementando, están en desarrollo, se han cancelado o publicado anteriormente.
 
+## <a name="january-2021"></a>Enero de 2021
+
+### <a name="support-for-card-content-in-teams"></a>Compatibilidad con el contenido de tarjetas en Teams
+
+Las siguientes soluciones de cumplimiento de Microsoft 365 ahora admiten la detección de contenido de [tarjetas](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards) generada a través de aplicaciones en mensajes de Teams:
+
+- **EDiscovery básico y avanzado.** El contenido de la tarjeta ahora [se puede colocar en retención](create-ediscovery-holds.md#preserve-card-content) o incluirse en las [búsquedas](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#search-for-card-content) (también se aplica a la búsqueda de contenido).
+- **Auditar**. La actividad de la tarjeta se [registra ahora en el registro de auditoría.](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities)
+- **Directivas de retención**. Ahora puede usar directivas de retención para [conservar y eliminar el contenido de la tarjeta.](retention-policies-teams.md#whats-included-for-retention-and-deletion)
+
+### <a name="information-governance-and-records-management"></a>Gobierno de la información y administración de registros
+
+[Nueva evaluación para](retention-regulatory-requirements.md#new-zealand-public-records-act) abordar el uso del gobierno de la información y la administración de registros para ayudar a cumplir las obligaciones de cumplimiento de la Ley de registros públicos de Nueva Zelanda.
+
+### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
+
+- Las etiquetas de confidencialidad ahora se admiten para los inquilinos de Us Government (GCC y GCC-H).
+- Nueva [compatibilidad con el etiquetado](sensitivity-labels-office-apps.md) automático para macOS.
+
 ## <a name="december-2020"></a>Diciembre de 2020
 
 ### <a name="spotlight-new-content-for-insider-risk-solutions"></a>Contenido destacado: nuevo contenido para soluciones de riesgo interno
 
-El equipo de contenido de cumplimiento de Microsoft 365 está trabajando en la creación de documentos de "solución de contenido" para promover el uso conjunto de las capacidades de cumplimiento para ayudar a cumplir los objetivos de cumplimiento.
+El equipo de contenido de cumplimiento de Microsoft 365 está trabajando mucho en la creación de documentos de "solución de contenido" para promover el uso conjunto de las capacidades de cumplimiento para ayudar a cumplir los objetivos de cumplimiento.
 
-En primer lugar, se ofrece contenido que une nuestras soluciones de riesgo interno: cumplimiento de comunicaciones, administración de riesgos interno, barreras de información y administración de acceso con privilegios. Aquí tiene un vistazo a lo que encontrará:
+En primer lugar, se ofrece contenido que une nuestras soluciones de riesgo interno: cumplimiento de comunicaciones, administración de riesgos interno, barreras de información y administración de acceso con privilegios. Este es un vistazo a lo que encontrará:
 
 - [Nueva página de aterrizaje para soluciones de riesgo interno.](insider-risk-solution-overview.md) Incluye detalles sobre los riesgos que las soluciones pueden ayudar a mitigar, los requisitos de licencia, la secuencia de implementación, las ilustraciones de arquitectura, los recursos de aprendizaje y mucho más.
 - Nuevos artículos de información general para cada solución de riesgo interno. Instrucciones y vínculos a artículos que le ayudarán a obtener información sobre, planear, implementar y administrar cada solución:
@@ -103,7 +122,7 @@ Para facilitar la administración del contenido cifrado en el flujo de trabajo d
 
 ### <a name="data-connectors"></a>Conectores de datos
 
-[Cinco nuevos conectores globanet en versión preliminar.](archiving-third-party-data.md#third-party-data-connectors) Los nuevos conectores incluyen Reuters Dealing, Reuters FX, CellTrust, XIP, generic MS SQL Database.
+[Cinco nuevos conectores globanet en versión preliminar.](archiving-third-party-data.md#third-party-data-connectors) Entre los nuevos conectores se incluyen Reuters Dealing, Reuters FX, CellTrust, XIP, MS SQL Database.
 
 ### <a name="retention-labels-disposition-review"></a>Etiquetas de retención (revisión de disposición)
 
@@ -151,7 +170,7 @@ Vea el vídeo siguiente para obtener información sobre cómo el Administrador d
 ### <a name="data-connectors"></a>Conectores de datos
 
 - [Nuevos conectores de datos de terceros.](archiving-third-party-data.md#third-party-data-connectors) 25 nuevos conectores de datos, incluidos 14 conectores de Globanet y 8 de Telemessage.
-- [Conector de badging físico.](import-physical-badging-data.md) Importe datos de error físicos, como los eventos de acceso físico sin procesar de los empleados o las alarmas de acceso físico generadas por el sistema de gobierno de su organización. Algunos ejemplos son las entradas a edificios, salas de servidores o centros de datos. La solución de administración de riesgos de Insider puede usar los datos de daños físicos para ayudar a proteger su organización contra actividad malintencionada o robo de datos dentro de la organización.
+- [Conector de badging físico.](import-physical-badging-data.md) Importe datos de error físicos, como los eventos de acceso físico sin procesar de los empleados o las alarmas de acceso físico generadas por el sistema de protección de la organización. Algunos ejemplos son las entradas a edificios, salas de servidores o centros de datos. La solución de administración de riesgos de Insider puede usar los datos de daños físicos para ayudar a proteger su organización contra actividad malintencionada o robo de datos dentro de la organización.
 
 ### <a name="insider-risk-management"></a>Administración de riesgos internos
 
@@ -182,7 +201,7 @@ Esta nueva funcionalidad se incluye en las siguientes características:
 > Para todas las características, si proporcionas al menos 30 respuestas de comentarios, crearemos una versión reentrenada de ese clasificador que puedes revisar. Si hay mejoras, puede volver a publicar el clasificador.
 
 - [Clasificadores que se pueden entrenar.](classifier-learn-about.md#retraining-classifiers) Para mejorar la precisión de los clasificadores publicados, puedes proporcionar comentarios sobre si los elementos detectados coinciden con el clasificador.
-- [Cumplimiento de comunicaciones.](classifier-how-to-retrain-comms-compliance.md) La nueva **acción de corrección** mejorar la clasificación le permite proporcionar comentarios si un elemento de una alerta de cumplimiento de comunicación coincide con el clasificador configurado en la directiva de cumplimiento de comunicaciones.
+- [Cumplimiento de comunicaciones.](classifier-how-to-retrain-comms-compliance.md) La nueva **acción de corrección** mejorar la clasificación le permite proporcionar comentarios si un elemento de una alerta de cumplimiento de comunicaciones coincide con el clasificador configurado en la directiva de cumplimiento de comunicaciones.
 - [Explorador de contenido.](classifier-how-to-retrain-content-explorer.md) Si configura una directiva de etiquetado automático de retención para aplicar automáticamente etiquetas a los mensajes de correo electrónico que coinciden con clasificadores que se pueden entrenar, puede usar el explorador de contenido para revisar los elementos etiquetados y proporcionar comentarios si los elementos coinciden con el clasificador.
 
 ## <a name="august-2020"></a>Agosto de 2020
@@ -204,10 +223,10 @@ Varias características nuevas y mejoradas alcanzaron la versión preliminar pú
 - La integración [con Microsoft Defender para endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) le permite importar y filtrar alertas de Puntos de conexión de Microsoft Defender para actividades detectadas por directivas creadas a partir de las nuevas plantillas de directiva de infracción de seguridad. También hay una [](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview) configuración de riesgos interno relacionada en la que puedes elegir importar alertas de seguridad a la administración de riesgos de Insider en función del estado de evaluación de alertas de Microsoft Defender para puntos de conexión.
 
     > [!NOTE]
-    > Para aprovechar la integración de Microsoft Defender para puntos de conexión (incluidas las nuevas plantillas de infracción de directivas de seguridad), deberá configurar Microsoft Defender para Endpoint en su organización. También tendrás que habilitar Microsoft Defender para Endpoint para la integración de la administración de riesgos interno mediante la configuración de características avanzadas en [Microsoft Defender para Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)
+    > Para aprovechar la integración de Microsoft Defender para puntos de conexión (incluidas las nuevas plantillas de infracción de directivas de seguridad), debes configurar Microsoft Defender para Endpoint en tu organización. También tendrás que habilitar Microsoft Defender para Endpoint para la integración de la administración de riesgos interno mediante la configuración de características avanzadas en [Microsoft Defender para Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)
  
 - Personalizar umbrales de indicador al [crear una directiva](insider-risk-management-policies.md#create-a-new-policy).
-- Configure grupos [de](insider-risk-management-settings.md#priority-user-groups-preview) usuarios prioritarios para definir usuarios de su organización cuya actividad requiera una inspección más detallada en función de factores como su posición, el nivel de acceso a información confidencial o el historial de riesgos.
+- Configure grupos [de](insider-risk-management-settings.md#priority-user-groups-preview) usuarios de prioridad para definir usuarios de su organización cuya actividad requiera una inspección más detallada en función de factores como su posición, nivel de acceso a información confidencial o historial de riesgos.
 - Use las API de actividad de [](insider-risk-management-settings.md#export-alerts-preview) administración de Office 365 para exportar detalles de alertas de riesgo interno a otras aplicaciones que su organización pueda usar para administrar o agregar datos de riesgo interno.
 - Las [nuevas configuraciones de](insider-risk-management-settings.md#domains-preview) dominio le ayudan a definir y controlar los niveles de riesgo de la actividad en dominios específicos.
 
@@ -215,9 +234,9 @@ Varias características nuevas y mejoradas alcanzaron la versión preliminar pú
 
 - Al [revisar los mensajes en una](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)alerta, ahora puede quitar mensajes inapropiados en los canales de Microsoft Teams, 1:1 y los chats de grupo. Los mensajes y el contenido eliminados se reemplazan por una sugerencia de directiva que explica que se quitó debido a contenido confidencial.
 - Nuevas [funciones de comunicación](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) (también se incluirán en los nuevos grupos de roles de cumplimiento de comunicaciones que se publicarán en septiembre).
-- Nueva experiencia de configuración de cumplimiento de comunicaciones que incluye la configuración de [las plantillas de](communication-compliance-feature-reference.md#privacy) privacidad y [aviso.](communication-compliance-feature-reference.md#notice-templates)
-- Nuevos [clasificadores para](communication-compliance-feature-reference.md#classifiers) ayudar a detectar imágenes para adultos, racy y gory.
-- La nueva notificación "Patrón [](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details) detectado" que aparece al revisar mensajes en una alerta le permite saber si un usuario vuelve a detectar instancias del mismo comportamiento.
+- Nueva experiencia de configuración de cumplimiento de comunicaciones que incluye la configuración de [la privacidad y](communication-compliance-feature-reference.md#privacy) las plantillas de [aviso.](communication-compliance-feature-reference.md#notice-templates)
+- Nuevos [clasificadores para ayudar](communication-compliance-feature-reference.md#classifiers) a detectar imágenes para adultos, racy y gory.
+- La nueva notificación "Patrón [](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details) detectado" que aparece al revisar los mensajes de una alerta le permite saber si un usuario vuelve a detectar instancias del mismo comportamiento.
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
@@ -240,29 +259,3 @@ La actividad de administración relacionada con la retención ahora se registra 
 
 - Al [agregar una colección a un conjunto](add-data-to-review-set.md#define-options-to-scope-your-collection-for-review)de revisión, ahora puede incluir datos adjuntos modernos (también denominados "datos adjuntos en la nube") y versiones de documentos de SharePoint.
 - Nueva [experiencia de exportación de descarga directa,](export-documents-from-review-set.md)lo que elimina la necesidad de usar el Explorador de Azure Storage para descargar el contenido de casos.
-
-## <a name="july-2020"></a>Julio de 2020
-
-### <a name="spotlight-on-help-docs"></a>Foco de luz sobre documentos de ayuda
-
-Para ayudarle a comprender qué soluciones de cumplimiento se usan para proteger y gobernar los datos confidenciales de su organización, hemos creado dos nuevas páginas de aterrizaje con información general sobre cómo funcionan conjuntamente las soluciones para lograr esos objetivos, incluidos vínculos a documentos relacionados para que pueda profundizar.
-
-[Microsoft Information Protection en Microsoft 365.](information-protection.md)<br>
-[Gobierno de la información de Microsoft en Microsoft 365](manage-Information-governance.md)
-
-### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Exhibición avanzada de documentos electrónicos: agregar orígenes de datos que no son de custodia a sus casos
-
-Agregue datos a un caso sin tener que asociarlos con un administrador (conocido como orígenes de datos no [administradores).](non-custodial-data-sources.md) Y si necesita poner estos datos no custodiados en retención, podrá hacerlo con nuestra nueva característica de indización avanzada.
-
-### <a name="data-connectors-hr-connector-enhancements"></a>Conectores de datos: mejoras del conector de RECURSOS
-
-(En versión preliminar) Una nueva versión del conector [de RECURSOS](import-hr-data.md) humanos le permite importar datos relacionados con los cambios en el nivel de trabajo, las revisiones de rendimiento y los planes de mejora del rendimiento. A continuación, estos datos se pueden usar en varias directivas de [riesgo interno](insider-risk-management-policies.md) para detectar actividad relacionada.
-
-### <a name="retention-labels-new-support-for-email"></a>Etiquetas de retención: nueva compatibilidad con el correo electrónico
-
-Ahora puede crear una etiqueta [de retención para](retention.md#retention-labels) empezar a conservar el correo electrónico en función de cuándo se etiquetaron los mensajes. Esto no se aplica a los elementos de calendario, que se conservarán en función de cuándo se envíe el elemento.
-
-### <a name="sensitivity-labels-new-feature-and-an-improvement"></a>Etiquetas de confidencialidad: nueva característica y una mejora
-
-- (En versión preliminar) Al configurar las opciones de cifrado para una [](encryption-sensitivity-labels.md#double-key-encryption) etiqueta, busque la nueva opción para usar cifrado de doble clave para proteger aún más los archivos y mensajes de correo electrónico etiquetados.
-- Al crear o eliminar etiquetas de confidencialidad o crear, editar o eliminar sus directivas de etiquetas, los cambios ahora se sincronizan en un plazo de 1 hora para todos los usuarios, aplicaciones y servicios.

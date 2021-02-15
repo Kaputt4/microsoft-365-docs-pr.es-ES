@@ -28,10 +28,10 @@ ms.locfileid: "50150090"
 
 **Se aplica a**
 - [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender para Office 365 plan 1 y plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Las directivas de seguridad preestablecidas proporcionan una ubicación centralizada para aplicar todas las directivas recomendadas de correo no deseado, malware y suplantación de identidad a los usuarios a la vez. La configuración de directiva no se puede configurar. En su lugar, se establecen por nosotros y se basan en nuestras observaciones y experiencias en los centros de datos para un equilibrio entre mantener contenido peligroso lejos de los usuarios sin interrumpir su trabajo.
+Las directivas de seguridad preestablecidas proporcionan una ubicación centralizada para aplicar todas las directivas recomendadas de correo no deseado, malware y suplantación de identidad a los usuarios a la vez. La configuración de directiva no se puede configurar. En su lugar, se establecen por nosotros y se basan en nuestras observaciones y experiencias en los centros de datos para un equilibrio entre mantener el contenido peligroso lejos de los usuarios sin interrumpir su trabajo.
 
 En el resto de este tema se describen las directivas de seguridad preestablecidas y cómo configurarlas.
 
@@ -70,7 +70,7 @@ Las directivas de seguridad preestablecidas usan las directivas correspondientes
 
   - [Directivas contra correo no deseado denominadas](configure-your-spam-filter-policies.md) **Directiva de seguridad preestablecida estándar** y Directiva de seguridad **preestablecida estricta.**
   - [Directivas antimalware](configure-anti-malware-policies.md) **denominadas Directiva de seguridad preestablecida estándar** y **Directiva de seguridad preestablecida estricta.**
-  - [Directivas de protección contra suplantación de](set-up-anti-phishing-policies.md#spoof-settings) identidad de EOP denominadas Directiva de seguridad preestablecida **estándar** y Directiva de seguridad preestablecida **estricta** (configuración de suplantación de identidad).
+  - [Directivas contra la suplantación](set-up-anti-phishing-policies.md#spoof-settings) de identidad de EOP denominadas Directiva de seguridad preestablecida **estándar** y Directiva de seguridad preestablecida **estricta** (configuración de suplantación de identidad).
 
 - Directivas de Microsoft Defender para **Office 365:** esto incluye las organizaciones con suscripciones de complemento de Microsoft 365 E5 o Defender para Office 365:
 
@@ -84,7 +84,7 @@ Las directivas de seguridad preestablecidas usan las directivas correspondientes
 
   - [Directivas de datos adjuntos seguros](set-up-atp-safe-attachments-policies.md) **denominadas Directiva de seguridad preestablecida estándar** y **Directiva de seguridad preestablecida estricta.**
 
-Tenga en cuenta que puede aplicar protecciones de EOP a distintos usuarios que a Microsoft Defender para las protecciones de Office 365.
+Tenga en cuenta que puede aplicar protecciones de EOP a usuarios distintos de Microsoft Defender para las protecciones de Office 365.
 
 ### <a name="policy-settings-in-preset-security-policies"></a>Configuración de directiva en directivas de seguridad preestablecidas
 
@@ -99,7 +99,7 @@ Cuando se aplican varias directivas a un usuario, se aplica el siguiente orden d
 3. Directivas de seguridad personalizadas
 4. Directivas de seguridad predeterminadas
 
-En otras palabras, la configuración de la  directiva de protección **Estricta** invalida la configuración de la directiva de protección estándar, que reemplaza la configuración de una directiva personalizada, que invalida la configuración de la directiva predeterminada.
+En otras palabras, la configuración de la  directiva de protección **Estricta** invalida la configuración de la directiva de protección estándar, que invalida la configuración de una directiva personalizada, que invalida la configuración de la directiva predeterminada.
 
 ## <a name="assign-preset-security-policies-to-users"></a>Asignar directivas de seguridad preestablecidas a los usuarios
 
@@ -113,7 +113,7 @@ En otras palabras, la configuración de la  directiva de protección **Estricta*
   - Para configurar directivas de seguridad preestablecidas, debe ser miembro de los grupos de roles Administración de la organización o **Administrador de** seguridad. 
   - Para obtener acceso de solo lectura a las directivas de seguridad preestablecidas, debe ser miembro del grupo de roles **Lector** global.
 
-  Para más información, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+  Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
   **Nota:** agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft  365 proporciona a los usuarios los permisos necesarios en el Centro de seguridad & Cumplimiento y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
@@ -133,7 +133,7 @@ En otras palabras, la configuración de la  directiva de protección **Estricta*
 
       Solo puede usar una condición una vez, pero puede especificar varios valores para la condición. Varios valores de la misma condición usan lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_ ).
 
-   2. La condición seleccionada aparece en una sección sombreada. En esa sección, haga clic en **el cuadro Cualquiera de estos.** Si espera un momento, aparecerá una lista para que pueda seleccionar un valor. O bien, puede empezar a escribir un valor para filtrar la lista y seleccionar un valor. Repita este paso tantas veces como sea necesario. Para quitar un valor individual, haga clic **en el** icono Quitar ![ del ](../../media/scc-remove-icon.png) valor. Para quitar toda la condición, haga clic **en el** icono Quitar de ![ la ](../../media/scc-remove-icon.png) condición.
+   2. La condición seleccionada aparece en una sección sombreada. En esa sección, haga clic en el **cuadro Cualquiera de estos.** Si espera un momento, aparecerá una lista para que pueda seleccionar un valor. O bien, puede empezar a escribir un valor para filtrar la lista y seleccionar un valor. Repita este paso tantas veces como sea necesario. Para quitar un valor individual, haga clic **en el** icono Quitar ![ del ](../../media/scc-remove-icon.png) valor. Para quitar toda la condición, haga clic **en el** icono Quitar de ![ la ](../../media/scc-remove-icon.png) condición.
 
    3. Para agregar otra condición, haga clic **en Agregar una condición** y seleccione entre las condiciones restantes. Diferentes condiciones usan lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_ ).
 

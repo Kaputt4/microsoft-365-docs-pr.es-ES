@@ -30,7 +30,7 @@ ms.locfileid: "50150801"
 
 **Se aplica a**
 - [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender para Office 365 plan 1 y plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 El perímetro de seguridad moderno de la organización ahora se extiende más allá de la red para incluir a los usuarios que acceden a aplicaciones basadas en la nube desde cualquier ubicación con una variedad de dispositivos. La infraestructura de seguridad debe determinar si se debe conceder una solicitud de acceso determinada y en qué condiciones.
 
@@ -81,7 +81,7 @@ Cada sector además tiene su propio conjunto de normas especializadas. En lugar 
 
 ![Cono de seguridad: todos los > algunos clientes > específicos. Aplicación general a una aplicación específica](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
-En esta guía se muestra cómo implementar la protección de identidades y dispositivos para cada uno de estos niveles de protección. Use esta guía como punto de partida para su organización y ajuste las directivas para satisfacer los requisitos específicos de su organización.
+En estas instrucciones se muestra cómo implementar la protección de identidades y dispositivos para cada uno de estos niveles de protección. Use esta guía como punto de partida para su organización y ajuste las directivas para satisfacer los requisitos específicos de su organización.
 
 Es importante usar niveles coherentes de protección en los datos, identidades y dispositivos. Por ejemplo, si implementa esta guía, asegúrese de proteger los datos en niveles comparables.
 
@@ -89,7 +89,7 @@ El modelo de protección de identidades y dispositivos para la arquitectura de *
 
 [![Imagen en miniatura para la protección de dispositivos e identidades para el póster de Microsoft 365](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [Ver como pdf](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Descargar como PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Descargar como visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
-Además, vea la solución Implementar la protección [de la información para las](../../solutions/information-protection-deploy.md) regulaciones de privacidad de datos para proteger la información almacenada en Microsoft 365.
+Además, vea la solución implementar la protección [de la información para las regulaciones](../../solutions/information-protection-deploy.md) de privacidad de datos para proteger la información almacenada en Microsoft 365.
 
 ## <a name="security-and-productivity-trade-offs"></a>Equilibrio entre seguridad y productividad
 
@@ -100,7 +100,7 @@ La implementación de cualquier estrategia de seguridad requiere equilibrios ent
 Las recomendaciones proporcionadas se basan en los siguientes principios:
 
 - Conozca a los usuarios y sea flexible a sus requisitos funcionales y de seguridad.
-- Aplique una directiva de seguridad justo a tiempo y asegúrese de que sea significativa.
+- Aplicar una directiva de seguridad justo a tiempo y asegurarse de que sea significativa.
 
 ## <a name="services-and-concepts-for-identity-and-device-access-protection"></a>Servicios y conceptos para la protección de acceso a dispositivos e identidades
 
@@ -135,7 +135,7 @@ Estos son los componentes del acceso a dispositivos e identidades, incluidos los
 
 [Las directivas de protección de](https://docs.microsoft.com/intune/app-protection-policy) aplicaciones de Intune se pueden usar para proteger los datos de la organización en aplicaciones móviles, con o sin inscribir dispositivos en la administración. Intune ayuda a proteger la información, garantizar que los empleados puedan seguir siendo productivos y evitar la pérdida de datos. Al implementar directivas de nivel de aplicación, puede restringir el acceso a los recursos de la empresa y mantener los datos bajo el control de su departamento de TI.
 
-En esta guía se muestra cómo crear directivas recomendadas para aplicar el uso de aplicaciones aprobadas y determinar cómo se pueden usar estas aplicaciones con los datos empresariales.
+En estas instrucciones se muestra cómo crear directivas recomendadas para aplicar el uso de aplicaciones aprobadas y determinar cómo se pueden usar estas aplicaciones con los datos empresariales.
 
 ### <a name="microsoft-365"></a>Microsoft 365
 
@@ -151,7 +151,7 @@ En esta guía se muestra cómo implementar un conjunto de directivas para proteg
 
 ### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Aplicaciones de Microsoft 365 para empresas y Windows 10
 
-Windows 10 con Aplicaciones de Microsoft 365 para empresas es el entorno de cliente recomendado para equipos. Te recomendamos Windows 10 porque Azure está diseñado para proporcionar la experiencia más fluida posible tanto para el entorno local como para Azure AD. Windows 10 también incluye funcionalidades de seguridad avanzadas que se pueden administrar a través de Intune. Aplicaciones de Microsoft 365 para empresas incluye las últimas versiones de las aplicaciones de Office. Usan la autenticación moderna, que es más segura y un requisito para el acceso condicional. Estas aplicaciones también incluyen herramientas de seguridad y cumplimiento mejoradas.
+Windows 10 con Aplicaciones de Microsoft 365 para empresas es el entorno de cliente recomendado para equipos. Te recomendamos Windows 10 porque Azure está diseñado para proporcionar la experiencia más fluida posible tanto para el entorno local como para Azure AD. Windows 10 también incluye funciones de seguridad avanzadas que se pueden administrar a través de Intune. Aplicaciones de Microsoft 365 para empresas incluye las últimas versiones de las aplicaciones de Office. Usan la autenticación moderna, que es más segura y un requisito para el acceso condicional. Estas aplicaciones también incluyen herramientas de seguridad y cumplimiento mejoradas.
 
 ## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>Aplicar estas funcionalidades en los tres niveles de protección
 

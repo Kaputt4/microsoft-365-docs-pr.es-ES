@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Más información sobre el procesamiento de formularios en Microsoft SharePoint Syntex
-ms.openlocfilehash: 9a979e0f7e45694f1cc7f98bbe2012c773698297
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 4a6ecc9e6eaca6f0b61f8c04b67eabb29674f6bd
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976488"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242451"
 ---
 # <a name="form-processing-overview"></a>Información general del procesamiento de formularios
 
@@ -42,9 +42,13 @@ Una vez que haya entrenado y publicado el modelo, el modelo crea un [flujo de Po
 
 Los administradores de Office 365 deben [habilitar el procesamiento de formularios](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding#to-set-up-content-understanding) para la biblioteca de documentos de SharePoint para que los usuarios puedan [crear un modelo de procesamiento de formularios](create-a-form-processing-model.md) en ella. Puede seleccionar los sitios durante la instalación o después de la misma, en la configuración de administración.
 
+### <a name="file-limitations"></a>Limitaciones de archivos
+
+Al usar modelos de procesamiento de formularios, asegúrese de tener en cuenta las [limitaciones específicas para el uso de archivos](https://docs.microsoft.com/ai-builder/form-processing-model-requirements).
 
 
-## <a name="see-also"></a>Consulte también
+
+## <a name="see-also"></a>Vea también
   
 [Documentación de Power Automate](https://docs.microsoft.com/power-automate/)
 

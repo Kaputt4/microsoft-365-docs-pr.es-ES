@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: Obtenga información sobre el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 2e54ad576b944153332aaec2012538e84c444db1
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: da2b54e5f69fcc1209459b02220c0ead3f564067
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645076"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233391"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Acerca del centro de administración de Microsoft 365
 
@@ -37,7 +37,7 @@ El Centro de administración de Microsoft 365 es el punto de entrada común para
 
 ::: moniker range="o365-21vianet"
 
-El Centro de administración de Microsoft 365 está diseñado para equipos de TI como una forma simplificada de administrar los servicios de Microsoft 365. El centro de administración proporciona una experiencia personalizada basada en las necesidades únicas de su rol u organización, mejora la eficiencia de las tareas cotidianas y proporciona información accionable que le ayudará a tomar decisiones controladas por datos para ofrecer una mejor experiencia a los usuarios.
+El Centro de administración de Microsoft 365 está diseñado para equipos de TI como una forma simplificada de administrar los servicios de Microsoft 365. El Centro de administración proporciona una experiencia personalizada basada en las necesidades únicas de su rol u organización, mejora la eficacia de las tareas cotidianas y proporciona información accionable que le ayudará a tomar decisiones controladas por datos para ofrecer una mejor experiencia a los usuarios.
 
 El Centro de administración de Microsoft 365 es el punto de entrada común para todos los administradores de Microsoft 365 y se puede acceder iniciando sesión en [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627) . Además, las áreas de trabajo especializadas, como Azure Active Directory y Exchange, permiten un control más detallado. Puede acceder a las áreas de trabajo de especialistas desde el panel de navegación del Centro de administración de Microsoft 365.
 
@@ -55,7 +55,7 @@ A medida que las nuevas características estén disponibles en el Centro de admi
 
 1. Inicie sesión en [admin.microsoft.com](https://admin.microsoft.com), vaya al panel de navegación y seleccione **Configuración del perfil** de \> **organización.**
 
-2. Vaya a la **tarjeta de preferencias de** versión y, a continuación, seleccione **Editar**. 
+2. Vaya a la **tarjeta de preferencias** de versión y, a continuación, **seleccione Editar**. 
     
 3. Seleccione la **versión dirigida para todos los usuarios o** la versión dirigida para los usuarios **seleccionados.** Si elige la versión dirigida para los usuarios seleccionados, asegúrese de agregar su cuenta de administrador (y cualquier otro administrador de su organización que quiera participar) a la lista de usuarios seleccionados.
     
@@ -95,11 +95,11 @@ Microsoft 365 es una solución completa e inteligente que incluye Office 365, Wi
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
     
-Para obtener más información, [vea Probar o comprar una suscripción de Microsoft 365.](../commerce/try-or-buy-microsoft-365.md)
+Para obtener más información, [vea Probar o comprar una suscripción a Microsoft 365.](../commerce/try-or-buy-microsoft-365.md)
 
 ## <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>He encontrado un error o quiero solicitar una mejora de características. ¿Cómo se lo digo a Microsoft?
 
-Nos encantaría escucharle. Informar de errores y compartir comentarios nos ayuda a mejorar el Centro de administración de Microsoft 365. Para enviar comentarios, seleccione el **botón** Comentarios en la parte inferior de la página y use el formulario para enviarnos sus comentarios. Active la casilla y confirme su dirección de correo electrónico si desea que alguien del equipo del Centro de administración de Microsoft 365 realice un seguimiento de sus comentarios. We can't promise to follow up on every piece of feedback, but we're going to try! 
+Nos encantaría escucharle. Informar de errores y compartir comentarios nos ayuda a mejorar el Centro de administración de Microsoft 365. Para enviar comentarios, seleccione el **botón** Comentarios en la parte inferior de la página y use el formulario para enviarnos sus ideas. Active la casilla y confirme su dirección de correo electrónico si desea que alguien del equipo del Centro de administración de Microsoft 365 realice un seguimiento de sus comentarios. We can't promise to follow up on every piece of feedback, but we're going to try! 
   
 También puede enviar comentarios desde fuera del centro de administración en nuestro foro de UserVoice. Puede usar esta página para hacer sugerencias de características que puedan ser votadas por otros usuarios del foro: foro [de UserVoice](https://go.microsoft.com/fwlink/?linkid=2024994)para el nuevo centro de administración.
 
@@ -116,5 +116,53 @@ La actualización de todos los centros de administración para que tengan una ex
 - [Información general sobre la administración de dispositivos de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2006262)
     
 - [Presentación del Centro de seguridad y cumplimiento de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2025413)
+
+## <a name="what-language-options-are-available-the-admin-center"></a>¿Qué opciones de idioma están disponibles en el Centro de administración?
+
+El Centro de administración de Microsoft 365 está totalmente localizado en 40 idiomas.
+
+|Idioma |Locale |
+|---------|---------|
+|Árabe | ar |
+|Búlgaro | bg |
+|Catalán | ca |
+|Checo | cs |
+|Danés | da |
+|Alemán | de |
+|Griego | el |
+|Español | es |
+|Inglés | en |
+|Estonio | et |
+|Euskera | eu |
+|Finés | fi |
+|Francés | fr |
+|Gallego | gl |
+|Hebreo | he |
+|Croata | hr |
+|Húngaro | hu |
+|Indonesio  | id |
+|Italiano | it |
+|Japonés | ja |
+|Coreano | ko |
+|Lituano | lt |
+|Letón | lv |
+|Neerlandés | nl |
+|Noruego | no |
+|Polaco | pl |
+|Portugués (Brasil) | pt |
+|Portugués (Portugal) | pt-pt |
+|Rumano | ro |
+|Ruso | ru |
+|Eslovaco | sk |
+|Esloveno | sl |
+|Serbio (cirílico)  | sr-cyrl |
+|Serbian Latin | sr |
+|Sueco | sv |
+|Tailandés | th |
+|Turco | tr |
+|Ucraniano | uk |
+|Vietnamita | vi |
+|Chinese Simplified | zh-hans |
+|Chinese Traditional | zh-hant |
 
 ::: moniker-end

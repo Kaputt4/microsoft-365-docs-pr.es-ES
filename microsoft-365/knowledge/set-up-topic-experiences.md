@@ -21,7 +21,7 @@ ms.locfileid: "50150505"
 
 Puede usar el Centro de administración de Microsoft 365 para configurar y configurar [temas.](topic-experiences-overview.md) 
 
-Es importante planear la mejor manera de configurar y configurar temas en su entorno. Asegúrese de leer [Plan for Microsoft Viva Topics](plan-topic-experiences.md) antes de comenzar los procedimientos de este artículo.
+Es importante planear la mejor manera de configurar y configurar los temas en su entorno. Asegúrese de leer [Plan for Microsoft Viva Topics](plan-topic-experiences.md) antes de comenzar los procedimientos de este artículo.
 
 Debe estar suscrito a [Temas Viva](https://www.microsoft.com/microsoft-viva/topics) y ser administrador global o administrador de SharePoint para acceder al Centro de administración de Microsoft 365 y configurar Temas.
 
@@ -39,14 +39,14 @@ En este vídeo se muestra el proceso para configurar temas en Microsoft 365.
 
 Para configurar temas
 
-1. En el [Centro de administración de Microsoft 365,](https://admin.microsoft.com)seleccione **Configuración** y, a continuación, vea la sección **Archivos y** contenido.
-2. En la **sección Archivos y** contenido, haga clic en Conectar personas al **conocimiento.**
+1. En el [Centro de administración de Microsoft 365,](https://admin.microsoft.com)seleccione **Configuración** y, a continuación, vea la sección Archivos **y** contenido.
+2. En la **sección Archivos y contenido,** haga clic **en Conectar personas al conocimiento.**
 
     ![Conectar a las personas con el conocimiento](../media/admin-org-knowledge-options.png) 
 
 3. En la página **Conectar a personas con conocimientos,** haga clic **en** Introducción para que le guía por el proceso de configuración.
 
-    ![Comenzar](../media/k-get-started.png) 
+    ![Introducción](../media/k-get-started.png) 
 
 4. En la **página Elegir cómo pueden encontrar temas Temas Viva,** configurará la detección de temas. En la sección Seleccionar orígenes de temas **de SharePoint,** seleccione los sitios de SharePoint que se rastrearán como orígenes de los temas durante la detección. Elija entre:
     - **Todos los sitios:** todos los sitios de SharePoint de la organización. Esto incluye los sitios actuales y futuros.
@@ -54,7 +54,7 @@ Para configurar temas
     - **Solo los sitios seleccionados:** escriba los nombres de los sitios que desea incluir. También puede cargar una lista de sitios. Los sitios creados en el futuro no se incluirán como orígenes para la detección de temas.
     - **Ningún sitio:** no incluya ningún sitio de SharePoint.
 
-    ![Elegir cómo buscar temas](../media/ksetup1.png) 
+    ![Elegir cómo encontrar temas](../media/ksetup1.png) 
    
 5. En la **sección Excluir temas por** nombre, puede agregar nombres de los temas que desea excluir de la detección de temas. Use esta configuración para evitar que la información confidencial se incluya como temas. Las opciones son:
     - **No excluir ningún tema** 
@@ -62,7 +62,7 @@ Para configurar temas
 
     ![Excluir temas](../media/topics-excluded-by-name.png) 
 
-    (Los administradores de conocimientos también pueden excluir los temas del centro de temas después de la detección).
+    (Los administradores de conocimientos también pueden excluir temas en el centro de temas después de la detección).
 
     #### <a name="how-to-exclude-topics-by-name"></a>Cómo excluir temas por nombre    
 
@@ -78,7 +78,7 @@ Para configurar temas
     - **Significa (opcional):** si desea excluir un acrónimo, escriba las palabras que significa el acrónimo.
     - **MatchType-Exact/Partial**: Escriba si el nombre que escribió fue *un tipo de* coincidencia exacta *o* parcial.
 
-    Una vez que haya completado y guardado el archivo .csv, **seleccione** Examinar para buscarlo y selecciónelo.
+    Después de completar y guardar el archivo .csv, **seleccione** Examinar para buscarlo y selecciónelo.
     
     Seleccione **Siguiente**.
 
@@ -92,7 +92,7 @@ Para configurar temas
     > [!Note] 
     > Aunque esta configuración le permite seleccionar cualquier usuario de su organización, solo los usuarios que tengan asignadas licencias de Experiencias de tema podrán ver los temas.
 
-7. En la **página Permisos para la administración de** temas, elija quién podrá crear, editar o administrar temas. En la **sección Quién puede crear y editar temas,** puede seleccionar:
+7. En la **página Permisos para la** administración de temas, elija quién podrá crear, editar o administrar temas. En la **sección Quién puede crear y editar temas,** puede seleccionar:
     - **Todos los miembros de mi organización**
     - **Solo personas o grupos de seguridad seleccionados**
     - **Nadie**
@@ -144,6 +144,6 @@ Una vez que haya configurado Temas, puede cambiar la configuración que eligió 
 - [Administrar permisos de temas en temas de Microsoft Viva](topic-experiences-user-permissions.md)
 - [Cambiar el nombre del centro de temas en Temas de Microsoft Viva](topic-experiences-administration.md)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
-[Introducción a las experiencias del tema](topic-experiences-overview.md)
+[Introducción a las experiencias de tema](topic-experiences-overview.md)

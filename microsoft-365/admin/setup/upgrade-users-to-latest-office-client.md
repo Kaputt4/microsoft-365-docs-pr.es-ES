@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Obtenga información sobre cómo actualizar Microsoft Office el cliente de Office más reciente para los usuarios de su organización.
-ms.openlocfilehash: 596dfc8f4a005d01c0bf330243bf1fb3c639f97e
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 3f8ea0d16e1c27414b5f3e11e842e336fadb3e75
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906446"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233323"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Actualizar los usuarios de Microsoft 365 para empresas al cliente de Office más reciente
 
@@ -102,6 +102,9 @@ Cambie a una suscripción que incluya Office. Vea [Cambiar a otro plan de Micros
 Antes de instalar la versión más reciente de Office, le recomendamos que desinstale todas las versiones anteriores de Office. Sin embargo, si cambia de opinión sobre la actualización de Office, tenga en cuenta las siguientes instancias en las que no podrá volver a instalar Office después de desinstalarlo.
   
 Si tiene complementos de terceros, póngase en contacto con el fabricante para ver si hay una actualización que funcione con la versión más reciente de Office.
+
+> [!TIP]
+> Si tiene problemas al desinstalar Office, puede usar la herramienta Asistente para soporte y recuperación de Microsoft para ayudarle a quitar Office: Descargue y ejecute el Asistente para soporte técnico y [recuperación de Microsoft.](https://go.microsoft.com/fwlink/?LinkID=2155008)
 
 ### <a name="select-the-version-of-office-you-want-to-uninstall"></a>Seleccione la versión de Office que desea desinstalar
 

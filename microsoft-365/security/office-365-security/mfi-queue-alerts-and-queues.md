@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: Los administradores pueden aprender a usar el widget Colas en el panel flujo de correo del Centro de seguridad & y cumplimiento para supervisar el flujo de correo fallido a sus organizaciones locales o asociadas a través de conectores salientes.
+description: Los administradores pueden aprender a usar el widget Colas en el panel flujo de correo del Centro de seguridad & y cumplimiento para supervisar el flujo de correo fallido a las organizaciones locales o asociadas a través de conectores salientes.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 94e8a1f3b54c3738c21e94ba85ae4f1d3f953498
@@ -25,7 +25,7 @@ ms.locfileid: "50150176"
 
 **Se aplica a**
 - [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender para Office 365 plan 1 y plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Cuando los mensajes no se pueden enviar desde su organización a los servidores de correo electrónico locales o asociados mediante conectores, los mensajes se ponen en cola en Microsoft 365. Algunos ejemplos comunes que provocan esta condición son:
@@ -37,19 +37,19 @@ Microsoft 365 seguirá reintentar la entrega durante 24 horas. Después de 24 ho
 
 Si el volumen de correo electrónico en cola supera el umbral predefinido (el valor predeterminado es 200 mensajes), la información está disponible en las siguientes ubicaciones:
 
-- La **información de colas** en el panel flujo de [correo](mail-flow-insights-v2.md) en el Centro de [& cumplimiento.](https://protection.office.com) Para obtener más información, vea la información [sobre colas en la sección del](#queues-insight-in-the-mail-flow-dashboard) panel de flujo de correo de este artículo.
+- La **información de colas** en el panel flujo de [correo](mail-flow-insights-v2.md) en el Centro de [& cumplimiento.](https://protection.office.com) Para obtener más información, vea la información [sobre colas en la sección del](#queues-insight-in-the-mail-flow-dashboard) panel flujo de correo de este artículo.
 
 - Se muestra una alerta en **alertas** recientes en el panel Alertas del Centro de [seguridad & cumplimiento](https://protection.office.com) (Panel **de** \> **alertas** o <https://protection.office.com/alertsdashboard> ).
 
-  ![Alertas recientes en el panel alertas del Centro de & cumplimiento](../../media/mfi-queued-messages-alert.png)
+  ![Alertas recientes en el panel Alertas del Centro de & cumplimiento](../../media/mfi-queued-messages-alert.png)
 
 - Los administradores recibirán una notificación por correo electrónico en función de la configuración de la directiva de alerta predeterminada denominada **Mensajes.** Para configurar las opciones de notificación de esta alerta, consulta la sección siguiente.
 
-  Para obtener más información acerca de las directivas de alerta, vea [Directivas de alerta en el Centro de & cumplimiento.](../../compliance/alert-policies.md)
+  Para obtener más información acerca de las directivas de alerta, vea Directivas de alerta en el [Centro de & cumplimiento.](../../compliance/alert-policies.md)
 
 ## <a name="customize-queue-alerts"></a>Personalizar alertas de cola
 
-1. En el [Centro de & cumplimiento,](https://protection.office.com)vaya **a** Directivas de \> **alertas o** abra <https://protection.office.com/alertpolicies> .
+1. En el [Centro de & cumplimiento,](https://protection.office.com)vaya **a** Directivas \> **de alertas o** abra <https://protection.office.com/alertpolicies> .
 
 2. En la **página Directivas de** alerta, busque y seleccione la directiva denominada Mensajes que se ha **retrasado.**
 
@@ -87,7 +87,7 @@ Si hace clic en el número de mensajes del widget, aparecerá un **control** flo
 - **Servidor de destino**
 - **Última dirección IP**
 - **Último error**
-- **Cómo corregir:** hay problemas y soluciones comunes disponibles. Si está disponible **un vínculo Corregirlo** ahora, haga clic en él para solucionar el problema. De lo contrario, haga clic en los vínculos disponibles para obtener más información sobre el error y las posibles soluciones.
+- **Cómo corregir:** hay problemas y soluciones comunes disponibles. If is a **Fix it now** link is available, click it to fix the problem. De lo contrario, haga clic en los vínculos disponibles para obtener más información sobre el error y las posibles soluciones.
 
 ![Detalles después de hacer clic en la información de colas en el panel de flujo de correo](../../media/mfi-queues-details.png)
 
@@ -95,6 +95,6 @@ Se muestra el mismo menú desplegable después de hacer clic en Ver **cola** en 
 
 ![Se han retrasado los detalles de las alertas en el Centro de & cumplimiento](../../media/mfi-queued-messages-alert-details.png)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 Para obtener información sobre otras perspectivas en el panel de flujo de correo, vea Información sobre el flujo de correo en el Centro de [& cumplimiento.](mail-flow-insights-v2.md)

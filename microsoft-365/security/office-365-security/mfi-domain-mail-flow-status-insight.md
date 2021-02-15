@@ -27,7 +27,7 @@ ms.locfileid: "50150212"
 
 **Se aplica a**
 - [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender para Office 365 plan 1 y plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 La información sobre el estado [](mail-flow-insights-v2.md) **del** flujo de correo de dominio superior en el panel flujo de correo del Centro de seguridad y cumplimiento de [&](https://protection.office.com) le proporciona el estado actual del flujo de correo de su organización.
@@ -44,12 +44,12 @@ Al hacer clic **en Ver**  detalles en el widget, aparece un control flotante de 
 - **Estado de recepción de correo electrónico**
 - **Estado del** dominio: una marca de verificación verde indica que el registro MX actual (en el momento en que hizo clic en el widget) coincide con el valor que tenemos en el registro y que el dominio ha recibido correo electrónico durante las últimas dos horas.
 
-  Una X roja indica que se ha cambiado el registro MX y que el dominio no ha recibido ningún correo electrónico en las últimas 6 horas. Esto probablemente indica que el dominio ha expirado o que el registro MX se ha actualizado incorrectamente. Consulte con el registrador de dominios o el servicio de hospedaje DNS para ver si el dominio ha expirado o si el registro MX del dominio es incorrecto.
+  Una X roja indica que se ha cambiado el registro MX y que el dominio no ha recibido ningún correo electrónico durante las últimas 6 horas. Esto probablemente indica que el dominio ha expirado o que el registro MX se ha actualizado incorrectamente. Consulte con el registrador de dominios o el servicio de hospedaje DNS para ver si el dominio ha expirado o si el registro MX del dominio es incorrecto.
 
 Puede hacer clic **en Ver más** para ver la misma información para más dominios.
 
 ![Control de detalles en la información de estado del flujo de correo de dominio superior](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 Para obtener información sobre otras perspectivas en el panel de flujo de correo, vea Información sobre el flujo de correo en el Centro de [& cumplimiento.](mail-flow-insights-v2.md)

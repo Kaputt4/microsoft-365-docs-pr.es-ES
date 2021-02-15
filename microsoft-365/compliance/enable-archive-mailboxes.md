@@ -19,20 +19,20 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
-description: Obtenga información sobre cómo usar el Centro de seguridad y cumplimiento en Office 365 para permitir que los buzones de archivo sean compatibles con los requisitos de retención, eDiscovery y conservación de mensajes de su organización.
-ms.openlocfilehash: 6ecd84e36c39a90bf6df57286ef1559431c8dda1
-ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
+description: Aprenda a usar el centro de cumplimiento para habilitar los buzones de correo de archivo a fin de respaldar los requisitos de retención de mensajes, eDiscovery y retención de su organización.
+ms.openlocfilehash: d7506b92cc16120f1d40a6d5a1744ab38d446a76
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47407944"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233820"
 ---
-# <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Habilitar buzones de archivo en el Centro de seguridad y cumplimiento
+# <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Habilitar los buzones de archivo en el centro de cumplimiento
 
-El archivado en Office 365 (también denominado archivado local) proporciona a los usuarios espacio de almacenamiento adicional en el buzón. Después de habilitar los buzones de archivo, los usuarios pueden obtener acceso a los mensajes y almacenarlos en los buzones de archivo con Microsoft Outlook y Outlook en la Web (anteriormente denominada Outlook Web App). Los usuarios también pueden mover o copiar mensajes entre su buzón de correo principal y el buzón de archivo. También pueden recuperar elementos eliminados de la carpeta de Elementos recuperables en su buzón de archivo mediante la herramienta Recuperar elementos eliminados.
+El archivado en Microsoft 365 (también llamado *archivado local*) proporciona a los usuarios un espacio de almacenamiento adicional en el buzón. Después de habilitar los buzones de archivo, los usuarios pueden obtener acceso a los mensajes y almacenarlos en los buzones de archivo con Microsoft Outlook y Outlook en la Web (anteriormente denominada Outlook Web App). Los usuarios también pueden mover o copiar mensajes entre su buzón de correo principal y el buzón de archivo. También pueden recuperar elementos eliminados de la carpeta de Elementos recuperables en su buzón de archivo mediante la herramienta Recuperar elementos eliminados.
 
 > [!NOTE]
-> La característica de archivado de ampliación automática en Office 365 ofrece almacenamiento adicional en buzones de archivo. Cuando se activa el archivado de ampliación automática y, a continuación, se alcanzado la cuota de almacenamiento inicial en el buzón de archivo de un usuario, Office 365 agrega automáticamente espacio de almacenamiento adicional. Esto significa que los usuarios no se quedan sin espacio de almacenamiento en el buzón y que no tendrá que administrar nada después de habilitar el buzón de archivo por primera vez y activar el archivado de ampliación automática para su organización. Para obtener más información, vea [Información general sobre el archivado ilimitado en Office 365](unlimited-archiving.md).
+> La función de archivado de expansión automática de Microsoft 365 proporciona almacenamiento adicional en los buzones de archivo. Cuando se activa el archivo de ampliación automática y se alcanza la cuota de almacenamiento inicial en el buzón de archivo de un usuario, Microsoft 365 agrega automáticamente espacio de almacenamiento adicional. Esto significa que los usuarios no se quedan sin espacio de almacenamiento en el buzón y que no tendrá que administrar nada después de habilitar el buzón de archivo por primera vez y activar el archivado de ampliación automática para su organización. Para obtener más información, consulte [Información general del archivado ilimitado](unlimited-archiving.md).
 
 ## <a name="get-the-necessary-permissions"></a>Obtener los permisos necesarios
 
@@ -70,7 +70,7 @@ Debe tener asignado el rol de Destinatarios de correo de Exchange Online para ha
 
 También puede usar la página **Archivo** en el Centro de seguridad y cumplimiento para deshabilitar el buzón de archivo del usuario. Después de deshabilitar un buzón de archivo, puede volver a conectarlo al buzón de correo principal del usuario en un plazo de 30 días tras la deshabilitación. En este caso, se restaura el contenido original del buzón de archivo. Transcurridos los 30 días, el contenido del buzón de archivo original se elimina definitivamente y no se puede recuperar. Así, si vuelve a habilitar el archivo después de los 30 días posteriores a la deshabilitación, se crea un buzón de archivo nuevo.
 
-Tenga en cuenta que la directiva de archivo predeterminada asignada a buzones de usuarios mueve elementos al buzón de archivo dos años después de la fecha en que el elemento se entregó. Si deshabilita un buzón de archivo de un usuario, no se realizará ninguna acción en los elementos del buzón y permanecerán en el buzón principal del usuario.
+La directiva de archivo de forma predeterminada asignada a los buzones de los usuarios mueve los elementos al buzón de archivo dos años después de la fecha de entrega del elemento. Si deshabilita un buzón de archivo de un usuario, no se realizará ninguna acción en los elementos del buzón y permanecerán en el buzón principal del usuario.
 
 Para deshabilitar un buzón de archivo:
 
@@ -117,7 +117,7 @@ Enable-Mailbox -Identity <username> -Archive
 Ejecute el comando siguiente para habilitar el buzón de archivo para todos los usuarios de su organización (cuyo buzón de archivo no está habilitado en este momento).
 
 ```powershell
-Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
+Get-Mailbox -Filter {ArchiveGuid -Eq "00000000-0000-0000-0000-000000000000" -AND RecipientTypeDetails -Eq "UserMailbox"} | Enable-Mailbox -Archive
 ```
 
 ### <a name="disable-archive-mailboxes"></a>Deshabilitar los buzones de archivo
@@ -131,7 +131,7 @@ Disable-Mailbox -Identity <username> -Archive
 Ejecute el comando siguiente para deshabilitar el buzón de archivo para todos los usuarios de su organización (cuyo buzón de archivo está habilitado en este momento).
 
 ```powershell
-Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
+Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND RecipientTypeDetails -Eq "UserMailbox"} | Disable-Mailbox -Archive
 ```
 
 ## <a name="more-information"></a>Más información

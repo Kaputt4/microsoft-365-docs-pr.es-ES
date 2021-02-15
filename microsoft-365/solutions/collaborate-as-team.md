@@ -17,18 +17,18 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre los pasos de configuración de Microsoft 365 necesarios para configurar un equipo para la colaboración de tareas, conversaciones y documentación con invitados en Teams.
-ms.openlocfilehash: 34b7d5d47d7fb0c9196beda70184fa6510b6cc33
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: 66c5692dd8cd233d8b3639f8ce0755ce51b60c0a
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780549"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233079"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
 Si necesita colaborar con invitados en documentos, tareas y conversaciones, se recomienda usar Microsoft Teams. Teams proporciona todas las características de colaboración disponibles en Office y SharePoint con chat persistente y un conjunto personalizable y extensible de herramientas de colaboración en una experiencia de usuario unificada.
 
-En este artículo, veremos los pasos de configuración de Microsoft 365 necesarios para configurar un equipo para la colaboración con invitados.
+En este artículo, veremos los pasos de configuración de Microsoft 365 necesarios para configurar un equipo para la colaboración con invitados. Una vez que haya configurado el acceso de invitado, puede invitar a invitados a equipos siguiendo los pasos descritos en Agregar [invitados a un equipo en Teams.](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)
 
 ## <a name="video-demonstration"></a>Vídeo de demostración
 

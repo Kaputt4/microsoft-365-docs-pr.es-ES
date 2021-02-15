@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establecer roles y permisos de usuario del Administrador de cumplimiento de Microsoft y configurar pruebas automatizadas de acciones. Administrar el historial de usuarios y filtrar la vista de panel.
-ms.openlocfilehash: e130fc3438fc8b4674b752e25fc473ee0dd55ae4
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: c032f537dd0a24632cc702f8363697b85df7e7ca
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870915"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233778"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -49,16 +49,16 @@ El Administrador de cumplimiento usa un modelo de permisos de control de acceso 
 
 ### <a name="where-to-set-permissions"></a>Dónde establecer permisos
 
-La persona que tiene el rol de administrador global de su organización puede establecer permisos de usuario para el administrador de COmpliance. Los permisos se pueden establecer en el Centro de seguridad y & cumplimiento de Office 365, así como en Azure Active Directory (Azure AD).
+La persona que tiene el rol de administrador global de su organización puede establecer permisos de usuario para el Administrador de cumplimiento. Los permisos se pueden establecer en el Centro de seguridad y & cumplimiento de Office 365, así como en Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> Los clientes de entornos de us Government Community (GCC) High solo pueden establecer permisos de usuario y roles para el Administrador de cumplimiento en Azure AD. Consulta a continuación las instrucciones de Azure AD y las definiciones de tipo de rol.
+> Los clientes de entornos altos de la comunidad gubernamental de Estados Unidos (GCC) solo pueden establecer permisos de usuario y roles para el Administrador de cumplimiento en Azure AD. Consulta a continuación las instrucciones de Azure AD y las definiciones de tipo de rol.
 
 Para establecer permisos y asignar roles en el Centro de seguridad y & cumplimiento de Office 365, siga los pasos siguientes:
 
 1. Vaya al Centro de seguridad y & cumplimiento de [Office 365](https://protection.office.com/) y seleccione **Permisos** en el panel de navegación izquierdo.
 
-2. Busque el grupo de roles al que desea agregar uno o más usuarios y active la casilla a la izquierda del nombre del grupo. (Vea la lista [de roles y funciones relacionadas a continuación.](#role-types) Los nombres de los grupos de roles imitan el nombre del rol).
+2. Busque el grupo de roles al que desea agregar uno o más usuarios y active la casilla a la izquierda del nombre del grupo. (Vea la [lista de roles y funciones relacionadas a continuación.](#role-types) Los nombres de los grupos de roles imitan el nombre del rol).
 
 3. En el panel desplegable de ese grupo, seleccione **Editar en** el **encabezado** Miembros.
 
@@ -66,7 +66,7 @@ Para establecer permisos y asignar roles en el Centro de seguridad y & cumplimie
 
 5. Seleccione **+ Agregar** para elegir uno o más usuarios para agregar al grupo.
 
-6. Seleccione la casilla situada junto a los nombres que desea agregar y, a continuación, seleccione el botón **Agregar** en la parte inferior.
+6. Seleccione la casilla situada junto a los nombres que desea agregar y, a continuación, seleccione **el** botón Agregar en la parte inferior.
 
 7. Cuando haya terminado de asignar usuarios, seleccione **Listo** y, a continuación, seleccione **Guardar** y, a continuación, **Cerrar.**
 
@@ -106,7 +106,7 @@ La configuración del Administrador de cumplimiento en el Centro de cumplimiento
 
 Algunas acciones de mejora en el Administrador de cumplimiento también se supervisan mediante [la puntuación de seguridad de Microsoft.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) Puede configurar pruebas automatizadas de acciones que se supervisan conjuntamente, lo que significa que cuando una acción se prueba y actualiza en puntuación segura, esos resultados se sincronizan con las mismas acciones en el Administrador de cumplimiento y cuentan para su puntuación de cumplimiento.
 
-Las pruebas automáticas están activadas de forma predeterminada para las organizaciones nuevas en el Administrador de cumplimiento. Cuando implementa Microsoft 365 u Office 365 por primera vez, la puntuación de seguridad tarda aproximadamente siete días en recopilar completamente los datos y factor guardarlos en la puntuación de cumplimiento.  Cuando las pruebas automatizadas están activadas, la fecha de prueba de la acción no se actualizará, pero su estado de prueba se actualizará. Cuando se crean nuevas evaluaciones, las puntuaciones incluyen automáticamente las puntuaciones de control de Microsoft y la integración de puntuación segura.
+Las pruebas automáticas están activadas de forma predeterminada para las organizaciones nuevas en el Administrador de cumplimiento. Cuando implementa Microsoft 365 u Office 365 por primera vez, la puntuación de seguridad tarda aproximadamente siete días en recopilar completamente los datos y factores en la puntuación de cumplimiento.  Cuando las pruebas automatizadas están activadas, la fecha de prueba de la acción no se actualizará, pero su estado de prueba se actualizará. Cuando se crean nuevas evaluaciones, las puntuaciones incluyen automáticamente las puntuaciones de control de Microsoft y la integración de puntuación segura.
 
 El administrador global de su organización puede cambiar la configuración de las pruebas automatizadas en cualquier momento. Puedes desactivar las pruebas automatizadas para acciones de mejora comunes o activarla para acciones individuales. Siga las instrucciones siguientes para cambiar la configuración de las pruebas automatizadas.
 
@@ -120,7 +120,7 @@ El administrador global de su organización puede cambiar la configuración de l
 
 4. Selecciona el botón aplicable para activar las pruebas automáticas de todas las acciones de mejora, desactivarla para todas las acciones o activarla mediante una acción individual.
 
-5. Si selecciona Activar **por acción de mejora,** una lista mostrará todas las acciones de mejora disponibles para elegir.  Activa la casilla situada junto a cualquier acción que quieras probar automáticamente.
+5. Si selecciona Activar **por acción de mejora,** una lista mostrará todas las acciones de mejora disponibles entre las que elegir.  Activa la casilla situada junto a cualquier acción que quieras probar automáticamente.
 
 6. Seleccione **Guardar para** guardar la configuración. Recibirá un mensaje de confirmación en la parte superior de la pantalla en el que se guardará la selección. Si recibe un aviso de error, inténtelo de nuevo.
 
@@ -140,7 +140,7 @@ La configuración del historial de usuarios también le permite reasignar todas 
 
 3. Seleccione **Administrar el historial de usuarios** en el panel de navegación izquierdo.
 
-La **página administrar el historial de** usuarios muestra una lista de todos los usuarios por dirección de correo electrónico que están asignados a una acción de mejora. Use el **botón** Buscar para buscar rápidamente un usuario específico escribiendo en su dirección de correo electrónico.
+La **página administrar el historial de** usuarios muestra una lista de todos los usuarios por dirección de correo electrónico que están asignados a una acción de mejora. Use el **botón** Buscar para encontrar rápidamente un usuario específico escribiendo en su dirección de correo electrónico.
 
 A la derecha de la dirección  de correo electrónico de cada usuario, el menú desplegable Seleccionar proporciona opciones para exportar un informe, reasignar acciones de mejora o eliminar el historial. Consulta cada sección a continuación para obtener más información sobre cada opción.
 
@@ -193,7 +193,7 @@ El nuevo usuario al que se asigna recibe un correo electrónico que se le ha asi
 
 #### <a name="delete-user-history"></a>Eliminar historial de usuarios
 
-Al eliminar el historial de un usuario, se quitarán como propietarios de las acciones de mejora y se quitará su nombre de todos los demás campos del Administrador de cumplimiento. Al eliminar el historial de un usuario, las acciones  de mejora que poseen no mostrarán un valor Asignado a hasta que se asigne un nuevo usuario. Los documentos cargados en la acción de mejora mostrarán el usuario **quitado** en lugar del nombre del usuario eliminado. La eliminación del historial de usuarios es permanente.
+Al eliminar el historial de un usuario, se quitará como propietario de las acciones de mejora y se quitará su nombre de todos los demás campos del Administrador de cumplimiento. Al eliminar el historial de un usuario, las acciones  de mejora que poseen no mostrarán un valor Asignado a hasta que se asigne un nuevo usuario. Los documentos cargados en la acción de mejora mostrarán el usuario **quitado** en lugar del nombre del usuario eliminado. La eliminación del historial de usuarios es permanente.
 
 Para eliminar el historial de un usuario, siga los pasos siguientes:
 
@@ -207,9 +207,9 @@ Para eliminar el historial de un usuario, siga los pasos siguientes:
 
 5. En el **menú** desplegable Seleccionar, elija **Eliminar historial.**
 
-6. Aparece una ventana que le pide que confirme la eliminación permanente del historial del usuario. Para continuar con la eliminación, seleccione **Eliminar historial.** Para salir sin eliminar el historial, seleccione **Cancelar**.
+6. Aparece una ventana que te pide que confirmes la eliminación permanente del historial del usuario. Para continuar con la eliminación, seleccione **Eliminar historial.** Para salir sin eliminar el historial, seleccione **Cancelar**.
 
-7. Volverá a la página  Administrar historial de usuarios con un mensaje de confirmación en la parte superior que indica que se eliminó el historial del usuario.
+7. Volverá a la página  Administrar el historial de usuarios con un mensaje de confirmación en la parte superior que indica que se eliminó el historial del usuario.
 
 ## <a name="understand-the-compliance-manager-dashboard"></a>Información sobre el panel del Administrador de cumplimiento
 
@@ -262,7 +262,7 @@ Para quitar filtros:
 
 ### <a name="view-your-improvement-actions"></a>Ver las acciones de mejora
 
-El panel del Administrador de cumplimiento muestra las **acciones de mejora clave.** Para ver todas las acciones de mejora, seleccione la pestaña Acciones de mejora en el panel, que le lleva a la página de acciones de mejora. También puedes seleccionar Ver todas las acciones de mejora debajo de la lista de acciones de mejora clave en el panel para acceder a la página de acciones de mejora.
+El panel del Administrador de cumplimiento muestra las **principales acciones de mejora.** Para ver todas las acciones de mejora, seleccione la pestaña Acciones de mejora en el panel, que le lleva a la página de acciones de mejora. También puedes seleccionar Ver todas las acciones de mejora debajo de la lista de acciones de mejora clave en el panel para acceder a la página de acciones de mejora.
 
 La página de acciones de mejora muestra todas las acciones de mejora que administra la organización. Las acciones administradas por Microsoft se pueden ver en cada evaluación (obtenga más información sobre [las acciones de Microsoft).](compliance-manager-assessments.md#microsoft-actions-tab)
 
@@ -290,13 +290,13 @@ La página de acciones de mejora muestra los siguientes puntos de datos para cad
     - **No se pudo detectar:** no se puede determinar el estado automatizado
     - **Parcialmente probado:** puntuación automatizada que otorga puntos parciales
 
-**Obtenga más información:** [Vea cómo asignar y realizar el trabajo en acciones de mejora.](compliance-manager-improvement-actions.md)
+**Obtenga más información: Vea** [cómo asignar y realizar el trabajo en acciones de mejora.](compliance-manager-improvement-actions.md)
 
 ## <a name="solutions-page"></a>Página soluciones
 
 La página de soluciones muestra el recurso compartido de puntos ganados y posibles organizados por solución. Ver los puntos restantes y las acciones de mejora desde esta vista le ayuda a comprender qué soluciones necesitan una atención más inmediata.
 
-Busque la página soluciones seleccionando la **pestaña Soluciones** en el panel del Administrador de cumplimiento. También puedes seleccionar Ver todas **las soluciones debajo** de **Soluciones que afectan a tu puntuación** en la sección superior derecha del panel.
+Busque la página soluciones seleccionando la **pestaña Soluciones** en el panel del Administrador de cumplimiento. También puedes seleccionar Ver todas **las soluciones debajo** de Soluciones que afectan a tu **puntuación** en la sección superior derecha del panel.
 
 ### <a name="filtering-your-solutions-view"></a>Filtrar la vista de soluciones
 

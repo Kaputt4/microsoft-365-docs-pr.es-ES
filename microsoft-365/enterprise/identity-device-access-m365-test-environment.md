@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 04/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +14,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Crear un entorno de Microsoft 365 para probar el acceso de dispositivos e identidades.
-ms.openlocfilehash: b8e91a58bb6e1c00013b963c77151080a419b836
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: ed143341079a55d6bdd1d4a68feea68acb86ef85
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398812"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233733"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Acceso de dispositivos e identidades en el entorno de prueba de Microsoft 365
 
 *Esta guía del entorno de pruebas solo se puede usar para Entornos de prueba de Microsoft 365 para empresas.*
 
-[Las configuraciones de acceso](../security/office-365-security/microsoft-365-policies-configurations.md) a dispositivos e identidades son un conjunto de características y directivas de acceso condicional para proteger el acceso a todos los servicios integrados con Azure Active Directory (Azure AD).
+[Las configuraciones de](../security/office-365-security/microsoft-365-policies-configurations.md) acceso a dispositivos e identidades son un conjunto de configuraciones recomendadas y directivas de acceso condicional para proteger el acceso a todos los servicios integrados con Azure Active Directory (Azure AD).
 
 Para crear un entorno de prueba que tenga las configuraciones comunes de acceso a dispositivos e identidades:
 

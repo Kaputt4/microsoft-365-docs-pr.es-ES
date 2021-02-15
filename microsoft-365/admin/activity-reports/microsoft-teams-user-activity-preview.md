@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener el informe de actividad de usuario de Microsoft Teams y obtener información sobre la actividad de Teams en su organización.
-ms.openlocfilehash: 7e32ca6b665cab9da93dec9632ef25176db0e839
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: e8e4ab6fd78fb290243d8fdc780b5a7a14ca2ee0
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611405"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233415"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Informes de Microsoft 365 en el Centro de administración: actividad de usuario de Microsoft Teams
 
 El panel informes  de Microsoft 365 muestra la información general sobre la actividad en todos los productos de la organización. Le permite explorar informes individuales de nivel de producto para proporcionarle información más pormenorizada sobre la actividad dentro de cada producto. Consulte [el tema de información general sobre los informes](activity-reports.md). En el informe de actividad de los usuarios de Microsoft Teams puede obtener estadísticas sobre la actividad de Microsoft Teams en su organización.
   
 > [!NOTE]
-> Debe ser un administrador global, un lector global o un lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams Service, Teams Communications o Skype Empresarial para ver informes.  
+> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams Service, Teams Communications o Skype Empresarial para ver informes.  
  
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Cómo obtener el informe de actividad de los usuarios de Microsoft Teams
 
@@ -46,9 +46,11 @@ Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/
 
 También puede exportar los datos del informe a un archivo .csv de Excel seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. El formato exportado para **el tiempo de audio,** **el tiempo de vídeo** y el tiempo de uso compartido de pantalla sigue **el** formato de duración ISO8601.
 
+Puede visualizar el informe **Actividad de los usuarios en Microsoft Teams** para ver las tendencias de los últimos 7, 30, 90 o 180 días. Sin embargo, si selecciona un día determinado en el informe, la tabla (7) mostrará datos de hasta 28 días a partir de la fecha actual (no la fecha en que se generó el informe).
+
 Para garantizar la calidad de los datos, se realizan comprobaciones diarias de validación de datos de los últimos tres días y se rellenarán las diferencias detectadas. Es posible que observe diferencias en los datos históricos durante el proceso.
 
-|Elemento|Description|
+|Elemento|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo.   <br/> |
@@ -57,7 +59,7 @@ Para garantizar la calidad de los datos, se realizan comprobaciones diarias de v
 |Total de reuniones   <br/> |El número de reuniones en línea en las que participó el usuario durante el período de tiempo especificado.  <br/> |
 |1:1 llamadas   <br/> | El número de llamadas de 1:1 en las que participó el usuario durante el período de tiempo especificado.  <br/> |
 |Fecha de la última actividad (UTC)  <br/> |La última fecha en la que el usuario participó en una actividad de Microsoft Teams.<br/> |
-|Reuniones en las que participó adhoc   <br/> | El número de reuniones no programadas en el calendario en las que participó el usuario durante el período de tiempo especificado.  <br/> |
+|Reuniones en las que ha participado   <br/> | El número de reuniones no programadas en el calendario en las que participó el usuario durante el período de tiempo especificado.  <br/> |
 |Reuniones organizadas <br/> |El número de reuniones no programadas en el calendario que organizó el usuario durante el período de tiempo especificado. <br/>|
 |Reuniones organizadas programadas  <br/> |El número de reuniones programadas que organizó un usuario durante el período de tiempo especificado.  <br/> |
 |Tiene licencia |Se selecciona si el usuario tiene licencia para usar Teams.|

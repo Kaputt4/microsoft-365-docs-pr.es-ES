@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Más información sobre los tipos de explicación en Microsoft SharePoint Syntex
-ms.openlocfilehash: 2c2997fd165339cc43f7f007050f343794021a23
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: caba92b635feaf8f87e2c487559f70be3fab6df9
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080613"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242626"
 ---
 # <a name="introduction-to-explanation-types"></a>Introducción a los tipos de explicación
 
@@ -147,43 +147,65 @@ En el visor, puede ajustar manualmente el cuadro de selección para que incluya 
    ![Intervalo personalizado](../media/content-understanding/custom-file.png)</br>
 En el visor, puede ajustar manualmente el cuadro de selección para que incluya la ubicación donde aparezca la fase. Para esta opción, necesita seleccionar una posición <b>Inicio</b> y una posición <b>Fin</b>. Estos valores representan el número de tokens desde el principio del documento. Aunque puede especificar estos valores manualmente, es más fácil ajustar manualmente el cuadro de selección en el visor.</br> 
    
-
-
 ## <a name="use-explanation-templates"></a>Usar plantillas de explicación
 
-Aunque se pueden agregar manualmente varios valores de la lista de patrones para la explicación, puede resultar más fácil usar las plantillas que se le proporcionan en la biblioteca de explicación.
+Aunque se pueden agregar manualmente varios valores de la lista de frases para la explicación, puede resultar más fácil usar las plantillas que se le proporcionan en la biblioteca de explicación.
 
-Por ejemplo, en lugar de añadir manualmente todas las variaciones para *Fecha*, se puede utilizar la plantilla de la lista de patrones para *Fecha* que ya incluye una serie de valores de la lista de patrones:</br>
+Por ejemplo, en lugar de añadir manualmente todas las variaciones para *Fecha*, puede utilizar la plantilla de la lista de frases para *Fecha* que ya incluye una serie de valores de la lista de frases:</br>
 
    ![Biblioteca de explicación](../media/content-understanding/explanation-template.png)</br>
  
-La biblioteca de explicación incluye varias explicaciones de la lista de patrones más utilizados, entre las que se incluyen:</br>
+La biblioteca de explicación incluye varias explicaciones de la lista de frases más utilizadas, entre las que se incluyen:</br>
 
 - Fecha</br>
 - Fecha (numérica)</br>
 - Hora</br>
 - Número</br>
+- Porcentaje</br>
 - Número de teléfono</br>
 - Código postal</br>
 - Primera palabra de la frase</br>
+- Final de la oración</br>
 - Tarjeta de crédito</br>
 - Número de la seguridad social</br>
+- Casilla</br>
+- Divisa</br>
+- CC de correo electrónico</br>
+- Fecha del correo electrónico</br>
+- Saludo del correo electrónico</br>
+- Destinatario de correo electrónico</br>
+- Directrices de calidad del remitente de correo electrónico</br>
+- Asunto del correo electrónico</br>
 
-Tenga en cuenta que la biblioteca de explicación también incluye plantillas para las explicaciones de la lista de frases:
-- Final de la oración
-- Divisa
+La biblioteca de explicación también incluye tres tipos de plantillas automáticas que funcionan con los datos que ha etiquetado en los archivos de ejemplo:
 
+- Después de la etiqueta: las palabras o caracteres que aparecen después de las etiquetas en los archivos de ejemplo.</br>
+- Antes de la etiqueta: las palabras o caracteres que aparecen antes de las etiquetas en los archivos de ejemplo.</br>
+- Etiquetas: hasta las 10 primeras etiquetas de los archivos de ejemplo.</br>
+
+Para ilustrar cómo funcionan las plantillas automáticas, en el siguiente archivo de ejemplo usaremos la plantilla de explicación Antes de la etiqueta para dar más información al modelo y obtener una coincidencia más precisa.
+
+   ![Archivos de ejemplo](../media/content-understanding/before-label.png)</br>
+
+Al seleccionar la plantilla de explicación Antes de la etiqueta, buscará el primer conjunto de palabras que aparezcan antes de la etiqueta en los archivos de ejemplo. Como puede ver en la imagen, las palabras que se identifican en el primer archivo de ejemplo son "As of".
+
+   ![Plantilla Antes de la etiqueta](../media/content-understanding/before-label-explanation.png)</br>
+
+Puede seleccionar <b>Agregar</b> para crear una explicación a partir de la plantilla.  A medida que agregue más archivos de ejemplo, se identificarán y agregarán palabras adicionales a la lista de frases.
+
+   ![Agregar la etiqueta](../media/content-understanding/before-label-add.png)</br>
+ 
 #### <a name="to-use-a-template-from-the-explanation-library"></a>Para usar una plantilla de la biblioteca de explicación
 
 1. En la sección de **Explicaciones** de la página de **Entrenamiento** de su modelo, seleccione **Nuevo**, y luego seleccione **De Una Plantilla**.</br>
 
-   ![Crear desde plantilla](../media/content-understanding/from-template.png)</br>
+   ![Agregar Antes de etiqueta](../media/content-understanding/from-template.png)</br>
 
 2.  En la página **Plantillas de explicación**, seleccione la explicación que desee usar y, a continuación, seleccione **Agregar**.</br>
 
        ![Seleccionar una plantilla](../media/content-understanding/phone-template.png)</br>
 
-3. La información de la plantilla que ha seleccionado se mostrará en la página **Crear una explicación**. Si es necesario, edite el nombre de la explicación y agregue o elimine elementos de la lista de patrones. </br> 
+3. La información de la plantilla que ha seleccionado se mostrará en la página **Crear una explicación**. Si es necesario, edite el nombre de la explicación y agregue o elimine elementos de la lista de frases. </br> 
 
    ![Editar plantilla](../media/content-understanding/phone-template-live.png)</br>
 

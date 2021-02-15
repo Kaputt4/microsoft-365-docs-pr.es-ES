@@ -32,7 +32,7 @@ En este artículo analizaremos estas decisiones de planeación:
 
 Se respeta la seguridad y privacidad de los datos, y las experiencias de tema no conceden a los usuarios acceso adicional a los archivos a los que no tienen derechos. Le recomendamos que lea también la seguridad y privacidad de [Microsoft Viva Topics](topic-experiences-security-privacy.md) como parte de su proceso de planeación.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 Debe estar suscrito a [Temas Viva](https://www.microsoft.com/microsoft-viva/topics) y ser administrador global o administrador de SharePoint para acceder al Centro de administración de Microsoft 365 y configurar Temas.
 
@@ -40,7 +40,7 @@ Todos los usuarios que van a usar Temas requieren una licencia **de Experiencias
 
 ## <a name="topic-discovery"></a>Detección de temas
 
-La configuración de detección de temas especifica qué sitios de SharePoint se usan como orígenes para los temas. Puede elegir incluir todos los sitios de SharePoint, una lista específica de sitios o ningún sitio. Se recomienda elegir todos los sitios para que las experiencias de tema puedan detectar una gran cantidad de temas buenos para los usuarios.
+La configuración de detección de temas especifica qué sitios de SharePoint se usan como orígenes para los temas. Puede elegir incluir todos los sitios de SharePoint, una lista específica de sitios o ningún sitio. Se recomienda elegir todos los sitios para que las experiencias de tema puedan detectar un gran número de temas buenos para los usuarios.
 
 Al configurar Temas, puede elegir entre las siguientes opciones:
 
@@ -49,7 +49,7 @@ Al configurar Temas, puede elegir entre las siguientes opciones:
 - **Solo los sitios seleccionados:** solo los sitios que especifique. Los sitios creados en el futuro no se incluirán como orígenes para la detección de temas.
 - **Ningún sitio:** no incluya ningún sitio de SharePoint.
 
-Si elige **Todos, excepto los** sitios seleccionados o solo los sitios seleccionados, puede cargar un archivo .csv con una lista de sitios. Estas opciones son útiles si está realizando una prueba piloto y desea incluir un número limitado de sitios para iniciar.
+Si elige **Todos,** excepto los sitios seleccionados o solo los sitios seleccionados, puede cargar un archivo .csv con una lista de sitios. Estas opciones son útiles si está realizando una prueba piloto y desea incluir un número limitado de sitios para iniciar.
 
 Puede copiar la plantilla .csv a continuación:
 
@@ -67,7 +67,7 @@ Los permisos de usuario que especifique determinan qué personas de la organizac
 
 *Administrar temas*
 
-Los administradores de conocimientos supervisan la calidad de la información, cómo se estructura y otros procedimientos recomendados en su organización. Pueden confirmar y rechazar temas.
+Los administradores de conocimientos supervisan la calidad de la información, su estructura y otros procedimientos recomendados en su organización. Pueden confirmar y rechazar temas.
 
 Aunque puede especificar administradores de temas individuales, le recomendamos que cree un grupo de seguridad (o use uno existente) que contenga las personas que desea que sean administradores de conocimientos. Puede especificar este grupo de seguridad durante el proceso de instalación.
 
@@ -91,7 +91,7 @@ Al configurar visores de temas, puede elegir entre:
 - **Solo personas o grupos de seguridad seleccionados**
 - **Nadie**
 
-Recomendamos **todos los usuarios de mi** organización, pero si está realizando una prueba piloto, es posible que desee elegir solo a personas o grupos de seguridad seleccionados. También puede elegir **No hay nadie** si desea configurar Temas, pero no permitir que los usuarios vean temas todavía. (Los administradores de conocimientos seguirán teniendo acceso para permitirles ver los temas y ayudar con la decisión de hacer que los temas estén ampliamente disponibles).
+Recomendamos **todos los usuarios de mi** organización, pero si está realizando una prueba piloto, es posible que desee elegir solo a personas o grupos de seguridad seleccionados. También puede elegir **No hay nadie** si desea configurar Temas, pero no permitir que los usuarios vean los temas todavía. (Los administradores de conocimientos seguirán teniendo acceso para permitirles ver los temas y ayudar con la decisión de hacer que los temas estén ampliamente disponibles).
 
 ## <a name="knowledge-rules"></a>Reglas de conocimiento
 
@@ -104,7 +104,7 @@ El archivo .csv debe contener los siguientes parámetros:
 - **Nombre:** escriba el nombre del tema que desea excluir. Puede realizar esto de dos maneras:
 - **MatchType-Exact/Partial**: Escriba si el nombre que escribió fue *un tipo de* coincidencia exacta *o* parcial.
     - Coincidencia exacta: puede incluir el nombre exacto o el acrónimo (por ejemplo, *Contoso* o *ATL*).
-    - Coincidencia parcial: puede excluir todos los temas que tengan una palabra específica.  Por ejemplo, *el arco* excluirá  todos los temas con la palabra arco en él, como el círculo de *arco,* el arco de *plasma y* el arco *de aprendizaje.* Tenga en cuenta que no excluirá los temas en los que se incluye el texto como parte de una palabra, como *Arquitectura*.
+    - Coincidencia parcial: puede excluir todos los temas que tengan una palabra específica.  Por ejemplo, *el arco* excluirá  todos los temas con la palabra arco en él, como el círculo de *arco,* el arco de *plasma y* el arco *de aprendizaje.* Tenga en cuenta que no excluirá los temas en los que el texto se incluye como parte de una palabra, como *Arquitectura*.
 - **Significa (opcional):**(también conocido como expansión) Si desea excluir un acrónimo, escriba las palabras que el acrónimo significa.
 
     ![Excluir temas de la plantilla CSV](../media/exclude-topics-csv.png) 
@@ -131,7 +131,7 @@ Al configurar experiencias de tema, necesitará los siguientes elementos a medid
 > * Lista de temas confidenciales que se excluirán de la detección de temas
 > * Un nombre para el sitio del centro de temas
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Configurar las experiencias temáticas](set-up-topic-experiences.md)
 

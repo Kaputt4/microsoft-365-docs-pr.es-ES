@@ -25,14 +25,14 @@ ms.locfileid: "50150260"
 
 **Se aplica a**
 - [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender para Office 365 plan 1 y plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Es sospechoso cuando las nuevas cuentas de usuario de su organización comienzan de pronto a reenviar mensajes de correo electrónico a dominios externos.
 
 La **información sobre nuevos** dominios que se reenvía de correo electrónico en el Centro de seguridad y cumplimiento de [&](https://protection.office.com) le notifica cuándo los usuarios recién creados de su organización están reenviando mensajes a dominios externos. Esta condición podría indicar que se usaron cuentas de administrador comprometidas para crear los nuevos usuarios. Si sospecha que las cuentas se han visto comprometidas, consulte [Responder a una cuenta de correo electrónico en peligro.](responding-to-a-compromised-email-account.md)
 
-Esta información solo aparece cuando se detecta el problema y aparece en la [página del informe de reenvío.](view-mail-flow-reports.md#forwarding-report)
+Esta información solo aparece cuando se detecta el problema y aparece en la página del informe [de reenvío.](view-mail-flow-reports.md#forwarding-report)
 
 ![Información de nuevos usuarios que reenvían correo electrónico](../../media/mfi-new-users-forwarding-email.png)
 
@@ -46,7 +46,7 @@ Puede hacer clic en el **vínculo Ver informe asociado con** información para i
 
 ## <a name="forwarding-modifications-report"></a>Informe de modificaciones de reenvío
 
-El **informe de modificaciones de reenvío** muestra detalles sobre los mensajes que se reenván automáticamente de los remitentes de su organización:
+El **informe de modificaciones de reenvío** muestra detalles sobre los mensajes que se reenvía automáticamente de los remitentes de su organización:
 
 - Cuentas recién creadas que reenvía mensajes a dominios externos.
 - Cuentas que reenvía mensajes a dominios externos que nunca han sido reenviados por otros remitentes de la organización.
@@ -55,7 +55,7 @@ Estos tipos de mensajes reenviados pueden suponer un riesgo de seguridad o cumpl
 
 El informe contiene datos de hasta 90 días. De forma predeterminada, el informe muestra los datos de los últimos 7 días.
 
-Este informe no está disponible directamente en el [panel](mail-flow-insights-v2.md) flujo de correo o en el panel [informes.](view-mail-flow-reports.md) Además de hacer clic en el vínculo  Ver **informe asociado** a la información en la información de nuevos usuarios que reenvía correo electrónico, puede obtener acceso al informe mediante:
+Este informe no está disponible directamente en el panel flujo de [correo](mail-flow-insights-v2.md) o en el panel [informes.](view-mail-flow-reports.md) Además de hacer clic en el vínculo  Ver **informe asociado** a la información en la información de nuevos usuarios que reenvía correo electrónico, puede obtener acceso al informe mediante:
 
 - Haga clic **en el vínculo informe de notificaciones de** reenvío en los detalles de la información de correo electrónico de nuevos dominios que se [reenvía.](mfi-new-domains-being-forwarded-email.md)
 - Abrir <https://protection.office.com/reportv2?id=MailFlowNewForwarding> .
@@ -114,4 +114,4 @@ Para volver a la vista informes, haga clic **en Ver informe.**
 
 ## <a name="related-topics"></a>Temas relacionados
 
-Para obtener información sobre otras perspectivas en el panel de flujo de correo, vea Información sobre el flujo de correo en el Centro de [& cumplimiento.](mail-flow-insights-v2.md)
+Para obtener información acerca de otras perspectivas en el panel de flujo de correo, vea Información sobre el flujo de correo en el Centro de [& cumplimiento.](mail-flow-insights-v2.md)

@@ -1,6 +1,6 @@
 ---
-title: Desuso de TLS 1.0 y 1.1 para Office 365
-description: Describe el desuso de TLS 1.0 y 1.1 para Office 365.
+title: Deshabilitar TLS 1.0 y 1.1 para Microsoft 365
+description: Describe el desuso y la deshabilitación de TLS 1.0 y 1.1 para Microsoft 365.
 author: workshay
 manager: laurawi
 localization_priority: Normal
@@ -9,7 +9,7 @@ search.appverid:
 audience: ITPro
 ms.service: O365-seccomp
 ms.topic: article
-ms.author: shmehta
+ms.author: fasqiu
 ms.reviewer: krowley
 appliesto:
 - Microsoft 365 Apps for enterprise
@@ -17,20 +17,23 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 622d783011defcf9c84061087b7d05f2a117172e
-ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
+ms.openlocfilehash: 669ab53739bfd108bdbe9077762272e6a4901865
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777063"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233102"
 ---
-# <a name="tls-10-and-11-deprecation-for-office-365"></a>Desuso de TLS 1.0 y 1.1 para Office 365
+# <a name="disabling-tls-10-and-11-for-microsoft-365"></a>Deshabilitar TLS 1.0 y 1.1 para Microsoft 365
+
 > [!IMPORTANT]
-> Hemos detenido temporalmente la aplicación de desuso de TLS 1.0 y 1.1 para los clientes comerciales debido a COVID-19, pero a medida que las cadenas de suministro se han ajustado y se abre una copia de seguridad en determinados países, estamos restablecendo la aplicación de TLS para que comience el 15 de octubre de 2020 y la implementación continuará en las siguientes semanas y meses. 
+> Hemos detenido temporalmente la deshabilitación de TLS 1.0 y 1.1 para los clientes comerciales debido a COVID-19. A medida que las cadenas de suministro se han ajustado y se abren algunos países, reiniciamos el lanzamiento de aplicación de TLS 1.2 el 15 de octubre de 2020. El lanzamiento continuará en las siguientes semanas y meses.
 
-A partir del 31 de octubre de 2018, los protocolos Seguridad de la capa de transporte (TLS) 1.0 y 1.1 están en desuso para el servicio de Office 365. Se espera que el efecto para los usuarios finales sea mínimo. Este cambio se ha hecho público durante más de dos años, con el primer anuncio público realizado en diciembre de 2017. Este artículo solo está pensado para cubrir el cliente local de Office 365 en relación con el servicio de Office 365, pero también puede aplicarse a problemas de TLS locales con Office y Office Online Server/Office Web Apps.
+A partir del 31 de octubre de 2018, los protocolos Seguridad de la capa de transporte (TLS) 1.0 y 1.1 están en desuso para el servicio de Microsoft 365. El efecto para los usuarios finales es mínimo. Este cambio se ha hecho público durante más de dos años, con el primer anuncio público realizado en diciembre de 2017. Este artículo solo está pensado para cubrir el cliente local de Office 365 en relación con el servicio de Office 365, pero también puede aplicarse a problemas de TLS locales con Office y Office Online Server/Office Web Apps.
 
-## <a name="office-and-tls-overview"></a>Información general sobre Office y TLS
+Para SharePoint y OneDrive, tendrá que actualizar y configurar .NET para que admita TLS 1.2. Para obtener información, [consulte Cómo habilitar TLS 1.2 en los clientes.](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
+
+## <a name="office-365-and-tls-overview"></a>Información general sobre Office 365 y TLS
 
 El cliente de Office se basa en el servicio web de Windows (WINHTTP) para enviar y recibir tráfico a través de protocolos TLS. El cliente de Office puede usar TLS 1.2 si el servicio web del equipo local puede usar TLS 1.2. Todos los clientes de Office pueden usar protocolos TLS, ya que los protocolos TLS y SSL forman parte del sistema operativo y no son específicos del cliente de Office.
 
@@ -63,7 +66,7 @@ El valor de la clave del Registro **DefaultSecureProtocols** que describe el art
 
 ## <a name="office-clients-and-tls-registry-keys"></a>Clientes de Office y claves del Registro TLS
 
-Puede consultar KB 4057306 Preparación para el uso obligatorio de [TLS 1.2 en Office 365.](https://support.microsoft.com/help/4057306) Este es un artículo general para administradores de TI y su documentación oficial sobre el cambio de TLS 1.2.
+Puede consultar [KB 4057306 Preparación](https://support.microsoft.com/help/4057306)para el uso obligatorio de TLS 1.2 en Office 365 . Este es un artículo general para administradores de TI y es documentación oficial sobre el cambio de TLS 1.2.
 
 En la tabla siguiente se muestran los valores de clave del Registro adecuados en los clientes de Office 365 después del 31 de octubre de 2018.
 
@@ -75,8 +78,16 @@ En la tabla siguiente se muestran los valores de clave del Registro adecuados en
 |TLS 1.2|0x00000800|
 
 > [!IMPORTANT]
-> No se recomienda usar los protocolos SSL 2.0 y 3.0, que también se pueden establecer mediante la clave **DefaultSecureProtocols.** SSL 2.0 y 3.0 se consideran protocolos en desuso. El procedimiento recomendado es finalizar el uso de SSL 2.0 y SSL 3.0, aunque la decisión de hacerlo depende en última instancia de lo que mejor se adapte a las necesidades de su producto. Para obtener más información acerca de las vulnerabilidades de SSL 3.0, consulte [KB 3009008](https://support.microsoft.com/help/3009008).
+> No use los protocolos SSL 2.0 y 3.0, que también se pueden establecer mediante la clave **DefaultSecureProtocols.** SSL 2.0 y 3.0 se consideran protocolos obsoletos e inseguros. El procedimiento recomendado es finalizar el uso de SSL 2.0 y SSL 3.0, aunque la decisión de hacerlo depende en última instancia de lo que mejor se adapte a las necesidades de su producto. Para obtener más información acerca de las vulnerabilidades de SSL 3.0, consulte [KB 3009008](https://support.microsoft.com/help/3009008).
 
 Puedes usar la Calculadora de Windows predeterminada en modo programador para configurar los mismos valores de clave del Registro de referencia. Para obtener más información, consulte [KB 3140245 Update para habilitar TLS 1.1 y TLS 1.2](https://support.microsoft.com/help/3140245)como protocolos seguros predeterminados en WinHTTP en Windows.
 
-Independientemente de si la actualización de Windows 7 ([KB 3140245](https://support.microsoft.com/help/3140245)) está instalada o no, la subclave del Registro DefaultSecureProtocols no está presente y debe agregarse manualmente o a través de un objeto de directiva de grupo (GPO). Es decir, a menos que tenga que personalizar qué protocolos seguros están habilitados o restringidos, esta clave no es necesaria. Solo necesitas la actualización de Windows 7 SP1 ([KB 3140245).](https://support.microsoft.com/help/3140245)
+Independientemente de si la actualización de Windows 7 ([KB 3140245](https://support.microsoft.com/help/3140245)) está instalada o no, la subclave del Registro DefaultSecureProtocols no está presente y debe agregarse manualmente o a través de un objeto de directiva de grupo (GPO). Es decir, a menos que tenga que personalizar qué protocolos seguros están habilitados o restringidos, esta clave no es necesaria. Solo necesita la actualización de Windows 7 SP1 ([KB 3140245).](https://support.microsoft.com/help/3140245)
+
+## <a name="update-and-configure-the-net-framework-to-support-tls-12"></a>Actualizar y configurar .NET Framework para admitir TLS 1.2
+
+Deberá actualizar las aplicaciones que llaman a las API de Microsoft 365 a través de TLS 1.0 o TLS 1.1 para usar TLS 1.2. .NET 4.5 tiene el valor predeterminado TLS 1.1. Para actualizar la configuración de .NET, consulte Cómo habilitar seguridad de la capa de transporte [(TLS) 1.2 en los clientes.](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2-client)
+
+## <a name="more-information"></a>Más información
+
+Para obtener más información, vea Prepararse para el uso obligatorio de [TLS 1.2 en Office 365.](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)

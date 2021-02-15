@@ -16,16 +16,18 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo configurar la colaboración de contenido segura en Teams para proteger los datos en función de su confidencialidad.
-ms.openlocfilehash: f65657125fef8b8cf7e4e229d70d8fe211153392
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: c92dc6dbf62d3fa0cb00307447b3d5a793830394
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613589"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233861"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurar la colaboración moderna con Microsoft 365
 
 Poder compartir fácilmente información con las personas correctas a la vez que se evita el uso compartido en exceso es clave para el éxito de una organización. Esto incluye poder compartir datos confidenciales de forma segura solo con aquellos que deberían tener acceso a ellos. Según el proyecto, esto puede incluir el uso compartido de datos confidenciales con personas ajenas a la organización.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 Esta guía de soluciones de colaboración incluye dos componentes que le ayudarán:
 - Implementar Microsoft Teams con el nivel de protección adecuado para cada proyecto
@@ -83,7 +85,7 @@ Estos niveles (línea  *base,* confidencial y altamente confidencial) aumentan g
 |Equipo público o privado|Ambos|Private|Private|
 |Uso compartido no autenticado|Blocked|Blocked|Blocked|
 |Uso compartido de archivos|Permitido|Permitido|Solo los propietarios del equipo pueden compartir.|
-|Pertenencia al equipo|Cualquier persona puede unirse a equipos públicos.<br>La aprobación del propietario del equipo necesaria para unirse a equipos privados.|Se requiere la aprobación del propietario del equipo para unirse.|Se requiere la aprobación del propietario del equipo para unirse.|
+|Pertenencia al equipo|Cualquier persona puede unirse a equipos públicos.<br>Se requiere la aprobación del propietario del equipo para unirse a equipos privados.|Se requiere la aprobación del propietario del equipo para unirse.|Se requiere la aprobación del propietario del equipo para unirse.|
 |Cifrado de documentos|||Disponible con etiqueta de confidencialidad|
 |Uso compartido de invitados|Permitido|Se puede permitir o bloquear|Se puede permitir o bloquear|
 |Dispositivos no administrados|Sin restricciones|Acceso solo web|Blocked|

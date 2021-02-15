@@ -30,7 +30,7 @@ ms.locfileid: "50150494"
 
 Habilite las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive para que los usuarios puedan aplicar las [etiquetas](sensitivity-labels.md) de confidencialidad en Office en la Web. Cuando esta característica está habilitada,  los usuarios verán el botón Confidencialidad en la cinta de opciones para que puedan aplicar etiquetas y ver cualquier nombre de etiqueta aplicado en la barra de estado. 
 
-Si habilita esta característica, SharePoint y OneDrive también podrán procesar el contenido de los archivos cifrados con una etiqueta de confidencialidad. La etiqueta se puede aplicar en Office para la Web o en las aplicaciones de escritorio de Office y cargarse o guardarse en SharePoint y OneDrive. Hasta que habilite esta característica, estos servicios no podrán procesar archivos cifrados, lo que significa que la coautoría, la exhibición de documentos electrónicos, la prevención de pérdida de datos, la búsqueda y otras características de colaboración no funcionarán para estos archivos.
+Habilitar esta característica también da como resultado que SharePoint y OneDrive puedan procesar el contenido de los archivos cifrados mediante una etiqueta de confidencialidad. La etiqueta se puede aplicar en Office para la Web o en las aplicaciones de escritorio de Office y cargarse o guardarse en SharePoint y OneDrive. Hasta que habilite esta característica, estos servicios no podrán procesar archivos cifrados, lo que significa que la coautoría, la exhibición de documentos electrónicos, la prevención de pérdida de datos, la búsqueda y otras características de colaboración no funcionarán para estos archivos.
 
 Después de habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive, para los archivos nuevos y modificados que tienen una etiqueta de confidencialidad que aplica cifrado con una clave basada en la nube (y no usa cifrado de doble [clave):](double-key-encryption.md)
 
@@ -38,9 +38,9 @@ Después de habilitar las etiquetas de confidencialidad para los archivos de Off
 
 - Cuando los usuarios descargan o acceden a estos archivos desde SharePoint o OneDrive, la etiqueta de confidencialidad y cualquier configuración de cifrado de la etiqueta se aplican y permanecen con el archivo, dondequiera que se almacene. Asegúrese de proporcionar instrucciones al usuario para usar solo etiquetas para proteger documentos. Para obtener más información, vea [Opciones de Information Rights Management (IRM) y etiquetas de confidencialidad.](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels)
 
-- Cuando los usuarios cargan archivos etiquetados y cifrados en SharePoint o OneDrive, deben tener al menos derechos de visualización para esos archivos. Por ejemplo, pueden abrir los archivos fuera de SharePoint. Si no tienen este derecho de uso mínimo, la carga se realiza correctamente, pero el servicio no reconoce la etiqueta y no puede procesar el contenido del archivo.
+- Cuando los usuarios cargan archivos cifrados y etiquetados en SharePoint o OneDrive, deben tener al menos derechos de visualización para esos archivos. Por ejemplo, pueden abrir los archivos fuera de SharePoint. Si no tienen este derecho de uso mínimo, la carga se realiza correctamente, pero el servicio no reconoce la etiqueta y no puede procesar el contenido del archivo.
 
-- Use Office en la Web (Word, Excel, PowerPoint) para abrir y editar archivos de Office que tienen etiquetas de confidencialidad que aplican cifrado. Se aplican los permisos asignados con el cifrado. También puede usar el [etiquetado automático](apply-sensitivity-label-automatically.md) para estos documentos.
+- Use Office en la Web (Word, Excel, PowerPoint) para abrir y editar archivos de Office que tienen etiquetas de confidencialidad que aplican cifrado. Se aplican los permisos asignados con el cifrado. También puede usar el [etiquetado automático para](apply-sensitivity-label-automatically.md) estos documentos.
 
 - Los usuarios externos pueden tener acceso a documentos etiquetados con cifrado mediante cuentas de invitado. Para obtener más información, vea [Compatibilidad con usuarios externos y contenido etiquetado.](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content) 
 
@@ -64,7 +64,7 @@ Siempre tiene la opción de deshabilitar las etiquetas de confidencialidad para 
 
 Si actualmente está protegiendo documentos en SharePoint mediante SharePoint Information Rights Management (IRM), asegúrese de comprobar la sección de Etiquetas de confidencialidad y [Information Rights Management (IRM)](#sharepoint-information-rights-management-irm-and-sensitivity-labels) de SharePoint en esta página. 
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 Estas nuevas funcionalidades solo funcionan con [etiquetas de confidencialidad.](sensitivity-labels.md) Si actualmente tiene etiquetas de Azure Information Protection, migre primero a etiquetas de confidencialidad para poder habilitar estas características para los nuevos archivos que cargue. Para obtener instrucciones, consulte [Cómo migrar etiquetas de Azure Information Protection a etiquetas de confidencialidad unificadas.](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
 
@@ -83,7 +83,7 @@ Use la versión 19.002.0121.0008 o posterior de la aplicación de sincronizació
     - **El acceso del usuario al contenido expira** y se establece en un valor distinto de **Nunca**.
     - **Se ha seleccionado Cifrado de** clave doble.
     
-    Para las etiquetas con cualquiera de estas configuraciones de cifrado, las etiquetas no se muestran a los usuarios de Office en la Web. Además, las nuevas funcionalidades no se pueden usar con documentos etiquetados que ya tengan esta configuración de cifrado. Por ejemplo, estos documentos no se devolverán en los resultados de la búsqueda, incluso si se actualizan.
+    Para las etiquetas con cualquiera de estas configuraciones de cifrado, las etiquetas no se muestran a los usuarios de Office en la Web. Además, las nuevas funcionalidades no se pueden usar con documentos etiquetados que ya tengan esta configuración de cifrado. Por ejemplo, estos documentos no se devolverán en los resultados de búsqueda, incluso si se actualizan.
 
 - Para un documento cifrado que concede permisos de edición a un usuario, la copia no se puede bloquear en las versiones web de las aplicaciones de Office.
 
@@ -93,18 +93,18 @@ Use la versión 19.002.0121.0008 o posterior de la aplicación de sincronizació
 
 - Si un administrador cambia la configuración de una etiqueta publicada que ya se ha aplicado a los archivos descargados en el cliente de sincronización de los usuarios, es posible que los usuarios no puedan guardar los cambios que realicen en el archivo en su carpeta de sincronización de OneDrive. Este escenario se aplica a los archivos etiquetados con cifrado y también cuando el cambio de etiqueta es de una etiqueta que no agregó cifrado a una etiqueta que sí aplica cifrado. Los usuarios ven [un círculo rojo con un error de](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)icono de cruz blanca y se les pide que guarden los cambios nuevos como una copia independiente. En su lugar, pueden cerrar y volver a abrir el archivo, o usar Office en la Web.
 
-- Si un documento con etiqueta se carga en SharePoint o OneDrive y la etiqueta aplica cifrado mediante una cuenta de un nombre principal de servicio, el documento no se puede abrir en Office en la Web. Entre los escenarios de ejemplo se incluyen Microsoft Cloud App Security y un archivo enviado a Teams por correo electrónico.
+- Si un documento con etiqueta se carga en SharePoint o OneDrive y la etiqueta aplica cifrado mediante una cuenta de un nombre principal de servicio, el documento no se puede abrir en Office en la Web. Los escenarios de ejemplo incluyen Microsoft Cloud App Security y un archivo enviado a Teams por correo electrónico.
 
 - Los usuarios pueden experimentar problemas de guardado después de desconectarse o pasar a un modo de suspensión cuando, en lugar de usar Office para la web, usan las aplicaciones de escritorio y móviles para Word, Excel o PowerPoint. Para estos usuarios, cuando reanudan la sesión de la aplicación de Office e intentan guardar los cambios, ven un mensaje de error de carga con la opción de guardar una copia en lugar de guardar el archivo original. 
 
 - Los documentos cifrados de las siguientes maneras no se pueden abrir en Office en la Web:
     - Cifrado que usa una clave local ("mantener su propia clave" o HYOK)
     - Cifrado que se aplicó mediante [cifrado de doble clave](double-key-encryption.md)
-    - Cifrado que se aplicó independientemente de una etiqueta, por ejemplo, aplicando directamente una plantilla de protección de Rights Management.
+    - Cifrado que se aplicó independientemente de una etiqueta, por ejemplo, mediante la aplicación directa de una plantilla de Protección de Administración de derechos.
 
 - Las etiquetas [configuradas para otros idiomas](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-center-powershell) no son compatibles y solo muestran el idioma original.
 
-- Las capturas de pantalla no se pueden evitar para documentos cifrados. Para obtener más información, consulta [¿Puede Rights Management impedir capturas de pantalla?](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)
+- Las capturas de pantalla no se pueden evitar para documentos cifrados. Para obtener más información, vea [¿Puede Rights Management impedir capturas de pantalla?](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)
 
 - Si elimina una etiqueta que se ha aplicado a un documento en SharePoint o OneDrive, en lugar de quitar la etiqueta de la directiva de etiqueta aplicable, el documento cuando se descargue no se etiquetará ni se cifrará. En comparación, si el documento etiquetado se almacena fuera de SharePoint o OneDrive, el documento permanece cifrado si se elimina la etiqueta. Tenga en cuenta que aunque puede eliminar etiquetas durante una fase de prueba, es muy raro eliminar una etiqueta en un entorno de producción.
 
@@ -159,7 +159,7 @@ Antes de ejecutar el comando de PowerShell para habilitar las etiquetas de confi
 
 Para habilitar las nuevas funcionalidades, use el cmdlet [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) con el *parámetro EnableAIPIntegration:*
 
-1. Con una cuenta profesional o educativa que tenga privilegios de administrador global o de administrador de SharePoint en Microsoft 365, conéctese a SharePoint. Para saber cómo hacerlo, consulte [Introducción al Shell de administración de SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+1. Con una cuenta profesional o educativa que tenga privilegios de administrador global o administrador de SharePoint en Microsoft 365, conéctese a SharePoint. Para saber cómo hacerlo, consulte [Introducción al Shell de administración de SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
     
     Nota: Si tiene Microsoft 365 Multi-Geo, use el parámetro -Url con [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice)y especifique la dirección URL del sitio del Centro de administración de SharePoint Online para una de las ubicaciones geográficas.
 
@@ -178,9 +178,9 @@ Por ejemplo: creas y publicas una nueva etiqueta de confidencialidad que aplica 
 
 Los siguientes cambios se replican en una hora: etiquetas de confidencialidad nuevas y eliminadas, y configuraciones de directiva de etiquetas de confidencialidad que incluyen las etiquetas que están en la directiva.
 
-Los siguientes cambios se replican en un plazo de 24 horas: cambios en la configuración de etiquetas de confidencialidad para las etiquetas existentes.
+Los siguientes cambios se replican en 24 horas: Cambios en la configuración de etiquetas de confidencialidad para las etiquetas existentes.
 
-Dado que el retraso de replicación es de solo una hora para las nuevas etiquetas de confidencialidad, es poco probable que se produzca el escenario en el ejemplo. Pero, como medida de seguridad, se recomienda publicar nuevas etiquetas primero para unos pocos usuarios de prueba, esperar una hora y, a continuación, comprobar el comportamiento de las etiquetas en SharePoint y OneDrive. Como último paso, haga que la etiqueta esté disponible para más usuarios agregando más usuarios a la directiva de etiqueta existente o agregue la etiqueta a una directiva de etiqueta existente para los usuarios estándar. En el momento en que los usuarios estándar ven la etiqueta, ya se ha sincronizado con SharePoint y OneDrive.
+Dado que el retraso de replicación es de solo una hora para las nuevas etiquetas de confidencialidad, es poco probable que se produzca el escenario en el ejemplo. Pero, como medida de seguridad, se recomienda publicar nuevas etiquetas solo para unos pocos usuarios de prueba primero, esperar una hora y, a continuación, comprobar el comportamiento de las etiquetas en SharePoint y OneDrive. Como último paso, haga que la etiqueta esté disponible para más usuarios agregando más usuarios a la directiva de etiqueta existente o agregue la etiqueta a una directiva de etiqueta existente para los usuarios estándar. En el momento en que los usuarios estándar ven la etiqueta, ya se ha sincronizado con SharePoint y OneDrive.
 
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint Information Rights Management (IRM) y etiquetas de confidencialidad
 
@@ -188,7 +188,7 @@ Dado que el retraso de replicación es de solo una hora para las nuevas etiqueta
 
 En comparación, las etiquetas de confidencialidad proporcionan la configuración de protección de los marcados visuales (encabezados, pies de página, marcas de agua) además del cifrado. La configuración de cifrado [](https://docs.microsoft.com/azure/information-protection/configure-usage-rights) admite toda la gama de derechos de uso para restringir lo que los usuarios pueden hacer con el contenido y se admiten las mismas etiquetas de confidencialidad en [muchos escenarios.](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels) El uso del mismo método de protección con una configuración coherente entre cargas de trabajo y aplicaciones da como resultado una estrategia de protección coherente.
 
-Sin embargo, puede usar ambas soluciones de protección juntas y el comportamiento es el siguiente: 
+Sin embargo, puede usar soluciones de protección juntas y el comportamiento es el siguiente: 
 
 - Si carga un archivo con una etiqueta de confidencialidad que aplica cifrado, SharePoint no puede procesar el contenido de estos archivos, por lo que la coautoría, la exhibición de documentos electrónicos, DLP y la búsqueda no son compatibles con estos archivos.
 
@@ -257,7 +257,7 @@ Set-SPOTenant -EnableAIPIntegration $false
 
 Si tiene Microsoft 365 Multi-Geo, debe ejecutar este comando para cada una de las ubicaciones geográficas.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive, considere la posibilidad de etiquetar automáticamente estos archivos mediante directivas de etiquetado automático. Para obtener más información, vea [Aplicar automáticamente una etiqueta de confidencialidad al contenido.](apply-sensitivity-label-automatically.md)
 

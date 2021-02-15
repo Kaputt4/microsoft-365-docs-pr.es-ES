@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga información general sobre la comprensión des documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: c0396c8e702d3e32db93d26dba23ab038546bea0
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: d2bf581468eeee008d09a242876bed5ad07ae01f
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976524"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242415"
 ---
 # <a name="document-understanding-overview"></a>Información general sobre la comprensión de documentos
 
@@ -46,10 +46,45 @@ Agregue *clasificadores* y *extractores* a los modelos de comprensión del docum
 
 Puede usar archivos de ejemplo para entrenarlos y probarlos en el modelo. Los archivos de ejemplo proporcionan ejemplos al modelo de lo que debe buscar al intentar identificar y extraer datos de archivos. Por ejemplo, entrenaría los clasificadores y extracciones de renovación de contrato con ejemplos de documentos de renovación de contratos con los que trabaja su empresa. También puede usar archivos de ejemplo para probar la efectividad del modelo.
 
-> [!NOTE]
-> Si utiliza la tecnología de reconocimiento óptico de caracteres (OCR) para digitalizar documentos, Syntex dispone de un límite de 15 páginas para la formación de modelos.
-
 Después de publicar el modelo, utilice el centro de contenido para aplicarlo a cualquier biblioteca de documentos de SharePoint a la que tenga acceso.  
+
+### <a name="file-limitations"></a>Limitaciones de archivos
+
+En los modelos de comprensión mediante documentos se usa la tecnología de reconocimiento óptico de caracteres (OCR) para digitalizar archivos PDF, imágenes y archivos TIFF, tanto al entrenar un modelo con archivos de ejemplo como al ejecutar el modelo en archivos de una biblioteca de documentos.
+
+Tenga en cuenta las siguientes diferencias en relación con los archivos de texto basados en Microsoft Office y los archivos digitalizados con OCR (PDF, imagen o TIFF):
+
+- Archivos de Office: el límite para truncar archivos es 64 000 caracteres (durante el entrenamiento y cuando se ejecuta en archivos de una biblioteca de documentos).
+- Archivos digitalizados con OCR: hay un límite de 20 páginas.  
+
+#### <a name="supported-file-types"></a>Tipos de archivo compatibles
+
+Los modelos de comprensión mediante documentos admiten los siguientes tipos de archivo:
+
+- doc
+- docx
+- eml
+- heic
+- heif
+- htm
+- html
+- jpeg
+- jpg
+- markdown
+- md
+- msg
+- pdf
+- png
+- ppt
+- pptx
+- rtf
+- tif
+- tiff
+- txt
+- xls
+- xlsx
+
+
 
 ## <a name="see-also"></a>Consulte también
 [Crear un clasificador](create-a-classifier.md)
@@ -65,3 +100,5 @@ Después de publicar el modelo, utilice el centro de contenido para aplicarlo a 
 [Diferencia entre un modelo de comprensión de documentos y un modelo de procesamiento de formularios](difference-between-document-understanding-and-form-processing-model.md)
   
 [Información general del procesamiento de formularios](form-processing-overview.md)
+
+[Modo de accesibilidad de SharePoint Syntex](accessibility-mode.md)

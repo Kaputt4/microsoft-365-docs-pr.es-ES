@@ -27,7 +27,7 @@ ms.locfileid: "50150236"
 
 **Se aplica a**
 - [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender para Office 365 plan 1 y plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Los bucles de correo son malos porque:
@@ -40,7 +40,7 @@ La información **de** corrección  de posibles [](mail-flow-insights-v2.md) buc
 
 Esta información aparece solo después de que se detecte la condición (si no tiene bucles de correo, no verá la información).
 
-![Corregir información de reglas de flujo de correo lentas en el área Recomendado para el panel de flujo de correo](../../media/mfi-fix-possible-mail-loop.png)
+![Corregir información de reglas de flujo de correo lentas en el área Recomendada para el panel de flujo de correo](../../media/mfi-fix-possible-mail-loop.png)
 
 Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con más información:
 
@@ -50,8 +50,8 @@ Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con 
 - **Registro MX:** el host (**servidor de correo)** y los valores **de** prioridad del registro MX para el dominio.
 - **Motivo del** bucle **y cómo corregir:** identificaremos los escenarios de bucle de correo más comunes y proporcionaremos las acciones recomendadas para corregir el bucle.
 
-![Control desplegable de detalles que aparece después de hacer clic en Ver detalles en la información de corregir posible bucle de correo](../../media/mfi-fix-possible-mail-loop-details.png)
+![Control desplegable de detalles que aparece después de hacer clic en Ver detalles en la información corregir posible bucle de correo](../../media/mfi-fix-possible-mail-loop-details.png)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 Para obtener información acerca de otras perspectivas en el panel de flujo de correo, vea Información sobre el flujo de correo en el Centro de [& cumplimiento.](mail-flow-insights-v2.md)

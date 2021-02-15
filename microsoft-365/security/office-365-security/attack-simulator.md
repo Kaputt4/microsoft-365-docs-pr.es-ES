@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el simulador de ataques para ejecutar ataques simulados de suplantación de identidad y contraseña en sus organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 824ee04e2fcf0757a7eb32b48246bf1a1c638926
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 9d3d55c17e5d77ee18bd822899fea2f64136e1a3
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175895"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233605"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulador de ataques en Microsoft Defender para Office 365
 
@@ -34,6 +34,10 @@ ms.locfileid: "50175895"
 **Se aplica a** [Microsoft Defender para Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
 
 Si su organización tiene Microsoft Defender para Office 365 Plan 2, que incluye capacidades de investigación y respuesta de [amenazas,](office-365-ti.md)puede usar el Simulador de ataques en el Centro de seguridad & Cumplimiento para ejecutar escenarios de ataque realistas en su organización. Estos ataques simulados pueden ayudarte a identificar y encontrar usuarios vulnerables antes de que un ataque real repercuta en la línea inferior. Lea este artículo para obtener más información.
+
+> [!NOTE]
+> La experiencia del simulador de ataque v1 se ha cambiado al modo de solo lectura y se ha reemplazado por la formación del simulador de ataque que se describe en Introducción al entrenamiento [de simulación de ataques.](attack-simulation-training-get-started.md)
+> Se ha deshabilitado la capacidad de iniciar nuevas simulaciones desde este sitio. Sin embargo, aún puede tener acceso a los informes de simulaciones que se ejecutan durante un período de 90 días a partir del 24 de enero de 2021.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -53,7 +57,7 @@ Si su organización tiene Microsoft Defender para Office 365 Plan 2, que incluye
 
 ## <a name="spear-phishing-campaigns"></a>Campañas de suplantación de identidad
 
-*La suplantación* de identidad es un término genérico para los ataques de correo electrónico que intentan robar información confidencial en mensajes que parecen ser de remitentes legítimos o de confianza. La suplantación de identidad *(phishing)* es un ataque de suplantación de identidad dirigido que usa contenido centrado y personalizado que se adapta específicamente a los destinatarios de destino (normalmente, después de que el atacante los reconoce).
+*La suplantación* de identidad es un término genérico para los ataques de correo electrónico que intentan robar información confidencial en mensajes que parecen ser de remitentes legítimos o de confianza. La suplantación de identidad *(phishing)* es un ataque de suplantación de identidad dirigido que usa contenido centrado y personalizado que se adapta específicamente a los destinatarios de destino (normalmente, después del reconocimiento del atacante a los destinatarios).
 
 En el Simulador de ataques, hay disponibles dos tipos diferentes de campañas de suplantación de identidad de lanza:
 
@@ -61,7 +65,7 @@ En el Simulador de ataques, hay disponibles dos tipos diferentes de campañas de
 
   - Una página predeterminada que explica que se trata de una prueba y ofrece sugerencias para reconocer mensajes de suplantación de identidad.
 
-    ![Qué verán los usuarios si hacen clic en el vínculo de suplantación de identidad y escriben sus credenciales](../../media/attack-simulator-phishing-result.png)
+    ![Qué ven los usuarios si hacen clic en el vínculo de suplantación de identidad (phishing) y escriben sus credenciales](../../media/attack-simulator-phishing-result.png)
 
   - Una página personalizada (URL) que especifique.
 
@@ -145,9 +149,9 @@ Si va a usar una de las plantillas integradas o crear el mensaje de correo elect
 
 2. En la **página Simular ataques,** realiza una de las siguientes selecciones en función del tipo de campaña que quieras crear:
 
-   - En la sección Phishing de lanza **(recolección** de credenciales), haga clic en **Iniciar** ataque o en Ataque de inicio **de detalles** \> **de ataque.**
+   - En la sección Phishing de lanza **(recolección** de credenciales), haga clic en **Iniciar** ataque o en Ataque de inicio **de detalles** de \> **ataque.**
 
-   - En la sección Phishing de lanza **(datos adjuntos),** haga clic en **Iniciar** ataque o en Ataque de inicio **de detalles** \> **de ataque.**
+   - En la sección Phishing de lanza **(datos adjuntos),** haga clic en **Iniciar** ataque o en Ataque de inicio **de detalles** de \> **ataque.**
 
 3. El **Asistente para configurar ataques de** suplantación de identidad se inicia en un nuevo menú desplegable. En el **paso** Inicio, siga uno de estos pasos:
 
@@ -215,7 +219,7 @@ Si va a usar una de las plantillas integradas o crear el mensaje de correo elect
 
    - `${username}` inserta el nombre del destinatario.
 
-   - `${loginserverurl}` inserta el valor de **la dirección URL del servidor de inicio de sesión de suplantación de** identidad ( Phishing Login Server).
+   - `${loginserverurl}` inserta el valor de **la dirección URL del servidor de inicio de sesión de suplantación de** identidad .
 
    En el caso de las campañas de **phishing (datos adjuntos),** debe quitar el  vínculo del cuerpo del mensaje (de lo contrario, el mensaje contendrá un vínculo y datos adjuntos, y los clics de vínculo no se realizarán en una campaña de datos adjuntos).
 
@@ -267,7 +271,7 @@ En el Simulador de ataques, hay dos tipos diferentes de campañas de ataque de c
 
    - **Contraseña de fuerza bruta (ataque de diccionario):** siga uno de estos pasos:
 
-     - **Escriba las contraseñas manualmente:** en el **cuadro Presione Entrar para agregar** una contraseña, escriba una contraseña y, a continuación, presione ENTRAR. Repita este paso tantas veces como sea necesario.
+     - **Escriba contraseñas manualmente:** en el cuadro **Presione Entrar** para agregar una contraseña, escriba una contraseña y, a continuación, presione ENTRAR. Repita este paso tantas veces como sea necesario.
 
      - **Cargar contraseñas desde un archivo de diccionario:** haga clic en Cargar para importar un archivo de texto existente que contenga una contraseña en cada línea y una última línea en blanco.  El archivo de texto debe tener un tamaño de 10 MB o menos y no puede contener más de 30000 contraseñas.
 
@@ -291,9 +295,9 @@ Cuando finaliza la campaña, el estado cambia a **Ataque completado.** Puedes ve
 
 Cualquiera de las acciones anteriores te llevará a una página denominada **Detalles de ataque.** La información disponible en esta página para cada tipo de campaña se describe en las secciones siguientes.
 
-### <a name="spear-phishing-credentials-harvest-campaign-results"></a>Resultados de la campaña de phishing de punta (recolección de credenciales)
+### <a name="spear-phishing-credentials-harvest-campaign-results"></a>Resultados de la campaña de phishing (recolección de credenciales)
 
-La siguiente información está disponible en la página Detalles **de ataque** para cada campaña:
+La siguiente información está disponible en la página Detalles **de ataques** de cada campaña:
 
 - Duración (fecha/hora de inicio y fecha/hora de finalización) de la campaña.
 
@@ -301,25 +305,25 @@ La siguiente información está disponible en la página Detalles **de ataque** 
 
 - **Intentos correctos:** el número de usuarios que han hecho clic en el vínculo y han **escrito** sus credenciales (cualquier *valor* de nombre de usuario y contraseña).
 
-- **Tasa de éxito general:** porcentaje calculado por **intentos**  /  **correctos.**
+- **Tasa de éxito general:** porcentaje calculado por **intentos correctos.** Total de usuarios a los que se  /  **ha dirigido .**
 
 - **Clic más rápido:** cuánto tiempo tardó el primer usuario en hacer clic en el vínculo después de iniciar la campaña.
 
-- **Promedio de clic:** la suma de cuánto tiempo tardó todo el mundo en hacer clic en el vínculo dividido por el número de usuarios que hizo clic en el vínculo.
+- **Promedio de clic:** la suma del tiempo que tardó todo el mundo en hacer clic en el vínculo dividido por el número de usuarios que hizo clic en el vínculo.
 
 - **Porcentaje de éxito de** clic: porcentaje calculado por (número de usuarios que han hecho clic en el vínculo) / **Total de usuarios a los que se ha dirigido**.
 
 - **Credenciales más rápidas:** cuánto tiempo tardó el primer usuario en escribir sus credenciales después de iniciar la campaña.
 
-- **Promedio de credenciales:** la suma del tiempo que todos tardaron en escribir sus credenciales divididas por el número de usuarios que especificaron sus credenciales.
+- **Credenciales promedio:** la suma del tiempo que todos tardaron en escribir sus credenciales divididas por el número de usuarios que especificaron sus credenciales.
 
 - **Porcentaje de éxito de credenciales:** porcentaje calculado por (número de usuarios que especificaron sus credenciales) / **Total de usuarios a los** que se ha dirigido .
 
 - Gráfico de barras que muestra el vínculo en el que se **hizo** clic y los números proporcionados **por credenciales** por día.
 
-- Gráfico de círculo que muestra el vínculo en el que se **hizo** clic, **la** credencial proporcionada y los **porcentajes** ninguno de la campaña.
+- Gráfico de círculo que muestra los porcentajes Vínculo en el que se **hizo** clic, **Credencial** proporcionada y **Ninguno** para la campaña.
 
-- La **sección Usuarios comprometidos** muestra los detalles de los usuarios que han hecho clic en el vínculo:
+- La **sección Usuarios en peligro** muestra los detalles de los usuarios que han hecho clic en el vínculo:
 
   - La dirección de correo electrónico del usuario
 
@@ -333,7 +337,7 @@ La siguiente información está disponible en la página Detalles **de ataque** 
 
 ### <a name="spear-phishing-attachment-campaign-results"></a>Resultados de la campaña de phishing (datos adjuntos)
 
-La siguiente información está disponible en la página Detalles **de ataque** para cada campaña:
+La siguiente información está disponible en la página Detalles **de ataques** de cada campaña:
 
 - Duración (fecha/hora de inicio y fecha/hora de finalización) de la campaña.
 
@@ -341,17 +345,17 @@ La siguiente información está disponible en la página Detalles **de ataque** 
 
 - **Intentos** correctos: el número de usuarios que abrieron, descargaron y abrieron los datos adjuntos (la vista previa no cuenta).
 
-- **Tasa de éxito general:** porcentaje calculado por **intentos**  /  **correctos.**
+- **Tasa de éxito general:** porcentaje calculado por **intentos correctos.** Total de usuarios a los que se  /  **ha dirigido .**
 
 - **Tiempo de apertura de datos** adjuntos más rápido: cuánto tiempo tardó el primer usuario en abrir los datos adjuntos después de iniciar la campaña.
 
-- **Tiempo medio de** apertura de datos adjuntos: la suma de cuánto tiempo tardó todo el mundo en abrir los datos adjuntos dividido por el número de usuarios que abrieron los datos adjuntos.
+- **Tiempo medio de** apertura de datos adjuntos: la suma del tiempo que todos tardaron en abrir los datos adjuntos dividido por el número de usuarios que abrieron los datos adjuntos.
 
 - **Tasa de éxito de** apertura de datos adjuntos: porcentaje calculado por (número de usuarios que abrieron los datos adjuntos) / **Total de usuarios a los** que se ha dirigido .
 
 ### <a name="brute-force-password-dictionary-attack-campaign-results"></a>Resultados de la campaña de fuerza bruta de contraseña (ataque de diccionario)
 
-La siguiente información está disponible en la página Detalles **de ataque** para cada campaña:
+La siguiente información está disponible en la página Detalles **de ataques** de cada campaña:
 
 - Duración (fecha/hora de inicio y fecha/hora de finalización) de la campaña.
 
@@ -359,13 +363,13 @@ La siguiente información está disponible en la página Detalles **de ataque** 
 
 - **Intentos** correctos: el número de usuarios que se encontraron con una de las contraseñas especificadas.
 
-- **Tasa de éxito general:** porcentaje calculado por **intentos**  /  **correctos.**
+- **Tasa de éxito general:** porcentaje calculado por **intentos correctos.** Total de usuarios a los que se  /  **ha dirigido .**
 
-- En **la sección Usuarios comprometidos** se enumeran las direcciones de correo electrónico de los usuarios afectados. Puede hacer clic **en Exportar** para exportar los resultados a un archivo CSV.
+- En **la sección Usuarios en peligro** se enumeran las direcciones de correo electrónico de los usuarios afectados. Puede hacer clic **en Exportar** para exportar los resultados a un archivo CSV.
 
 ### <a name="password-spray-attack-campaign-results"></a>Resultados de la campaña de ataques por aspersión de contraseñas
 
-La siguiente información está disponible en la página Detalles **de ataque** para cada campaña:
+La siguiente información está disponible en la página Detalles **de ataques** de cada campaña:
 
 - Duración (fecha/hora de inicio y fecha/hora de finalización) de la campaña.
 
@@ -373,4 +377,4 @@ La siguiente información está disponible en la página Detalles **de ataque** 
 
 - **Intentos** correctos: el número de usuarios que se encontraron con la contraseña especificada.
 
-- **Tasa de éxito general:** porcentaje calculado por **intentos**  /  **correctos.**
+- **Tasa de éxito general:** porcentaje calculado por **intentos correctos.** Total de usuarios a los que se  /  **ha dirigido .**
