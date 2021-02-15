@@ -1,5 +1,5 @@
 ---
-title: Aplicar una etiqueta de retención a un modelo de comprensión mediante documentos
+title: Aplicar una etiqueta de retención a un modelo
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -11,15 +11,15 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Este artículo muestra cómo aplicar una etiqueta de retención a un modelo de comprensión mediante documentos
-ms.openlocfilehash: 6dcd81b580b7bf0801641bbd019e1b99ecfe7338
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+description: Este artículo muestra cómo aplicar una etiqueta de retención a un modelo en SharePoint Syntex
+ms.openlocfilehash: 48c0b983316cfe29019d09cb20546fa4b325b3b0
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976560"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242776"
 ---
-# <a name="apply-a-retention-label-to-a-document-understanding-model"></a>Aplicar una etiqueta de retención a un modelo de comprensión mediante documentos
+# <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Puede aplicar fácilmente una etiqueta de retención a un modelo en SharePoint Syntex.
 
 </br>
 
@@ -28,11 +28,11 @@ ms.locfileid: "49976560"
 </br>
 
 
-Puede aplicar fácilmente una [etiqueta de retención](https://docs.microsoft.com/microsoft-365/compliance/retention) a un modelo de comprensión mediante documentos en Microsoft SharePoint Syntex.
+Puede aplicar fácilmente una [etiqueta de retención](https://docs.microsoft.com/microsoft-365/compliance/retention) a un modelo en Microsoft SharePoint Syntex. Puede hacerlo tanto para modelos de comprensión de documentos como para modelos de procesamiento de formularios
 
-Las etiquetas de retención le permiten aplicar la configuración de retención a los documentos que identifican sus modelos de comprensión mediante documentos.  Por ejemplo, si desea que el modelo no solo identifique cualquier documento de *Notificación de seguros* cargados en la biblioteca de documentos, sino que también pueda aplicar una etiqueta de retención de *negocios* para que estos documentos no se puedan eliminar de la biblioteca de documentos durante el período de tiempo especificado (por ejemplo, los próximos cinco meses).
+Las etiquetas de retención le permiten aplicar la configuración de retención a los documentos que identifican sus modelos.  Por ejemplo, si desea que el modelo no solo identifique cualquier documento de *Notificación de seguros* cargados en la biblioteca de documentos, sino que también pueda aplicar una etiqueta de retención de *negocios* para que estos documentos no se puedan eliminar de la biblioteca de documentos durante el período de tiempo especificado (por ejemplo, los próximos cinco meses).
 
-Puede aplicar una etiqueta de retención preexistente al modelo de comprensión mediante documentos en la página principal del modelo. 
+Puede aplicar una etiqueta de retención preexistente al modelo en la página principal del modelo. 
 
 > [!Important]
 > Para que las etiquetas de retención estén disponibles para aplicarlas a su modelo de comprensión mediante documentos, deben [crearse y publicarse en el Centro de cumplimiento de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
@@ -69,6 +69,62 @@ En la página de vista del modelo de la biblioteca de documentos, se mostrará u
 
 
 Por ejemplo, todos los documentos de *Avisos de seguros* que su modelo identifique también tendrán la etiqueta de retención *Negocios* aplicada para que no se eliminen de la biblioteca de documentos durante cinco meses. Si se intenta eliminar el archivo de la biblioteca de documentos, se mostrará un error que indica que no está permitido debido a la etiqueta de retención aplicada.
+
+## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>Agregar una etiqueta de retención a un modelo de comprensión mediante documentos
+
+> [!Important]
+> Para que las etiquetas de retención estén disponibles para aplicarlas a su modelo de procesamiento de formularios, deben [crearse y publicarse en el Centro de cumplimiento de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+
+Puede aplicar una etiqueta de retención a un modelo de procesamiento de formularios cuando cree el modelo, o bien aplicarlo a un modelo ya existente.
+
+### <a name="to-add-a-retention-label-when-you-create-a-form-processing-model"></a>Agregar una etiqueta de retención a un modelo de comprensión mediante documentos cuando se crea el modelo
+
+1. Cuando cree un [nuevo modelo de procesamiento de formularios](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model), seleccione la <b>Configuración avanzada.</b>
+2. En <b>Configuración avanzada</b>, en la sección <b>Etiqueta de retención</b>, seleccione el menú y, después, seleccione la etiqueta de retención que quiere aplicar al modelo.</b>
+
+ 
+     ![Agregar a un nuevo modelo de procesamiento de formularios](../media/content-understanding/retention-label-forms.png)</br>
+
+3.  Cuando haya completado la configuración del modelo restante, seleccione <b>Crear</b> para crear el modelo.
+
+### <a name="to-add-a-retention-label-to-an-existing-form-processing-model"></a>Agregar una etiqueta de retención a un modelo de comprensión mediante documentos existente
+
+Hay dos maneras de agregar una etiqueta de retención a un modelo de comprensión mediante documentos existente:
+- A través del menú Automatizar de la biblioteca de documentos
+- A través de la configuración del Modelo activo en la biblioteca de documentos 
+
+
+#### <a name="to-add-a-retention-label-to-an-existing-form-processing-model-through-the-automate-menu"></a>Agregar una etiqueta de retención a un modelo de comprensión mediante documentos existente con el menú Automatizar
+
+Puede agregar una etiqueta de retención a un modelo de procesamiento de formularios existente del que sea propietario mediante el menú Automatizar de la biblioteca de documentos en la que se aplica el modelo.
+
+
+1. En la biblioteca de documentos a la que se aplica el modelo de procesamiento de formularios, seleccione el menú <b>Automatizar</b>, luego <b>AI Builder</b> y finalmente <b>Ver detalles del modelo de procesamiento de formularios</b>.
+
+   ![Menú Automatizar](../media/content-understanding/automate-menu.png)</br>
+
+2. En los detalles del modelo, en <b>Etiqueta de retención</b>, seleccione la etiqueta de retención que quiera aplicar.  Después, seleccione <b>Guardar</b>.
+
+     ![Agregar a un modelo de procesamiento de formularios ya existente](../media/content-understanding/retention-label-model-details.png)</br> 
+
+#### <a name="to-add-a-retention-label-to-an-existing-form-processing-model-in-the-active-model-settings"></a>Agregar una etiqueta de retención a un modelo de procesamiento de formularios existente en la configuración del modelo activo
+
+Puede agregar una etiqueta de retención a un modelo de procesamiento de formulario existente del que sea propietario en la configuración del Modelo activo de la biblioteca de documentos en la que se aplica el modelo.
+
+1. En la biblioteca de documentos de SharePoint en la que se aplica el modelo, seleccione el icono <b>Ver modelos activos</b> y, después, seleccione <b>Ver modelos activos</b>.</b>
+
+   ![Ver modelos activos](../media/content-understanding/info-du.png)</br> 
+
+2. En <b>Modelos activos</b>, seleccione el modelo de procesamiento de formularios al que quiere aplicar la etiqueta de retención.
+
+     ![Detalles del modelo](../media/content-understanding/retention-label-model-details.png)</br> 
+
+
+3. En los detalles del modelo, en <b>Etiqueta de retención</b>, seleccione la etiqueta de retención que quiera aplicar.  Después, seleccione <b>Guardar</b>.
+
+> [!NOTE]
+> Debe ser el propietario del modelo del panel de configuración del modelo para poder editarlo. 
+
 
 ## <a name="see-also"></a>Consulte también
 [Crear un clasificador](create-a-classifier.md)

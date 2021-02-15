@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 675a98656655521095096a535d4ee8352885e70c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2541519ad9082383c5381452722d023f23760798
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166465"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242716"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -43,21 +43,22 @@ Los siguientes elementos de Teams se pueden retener y eliminar mediante directiv
 > [!NOTE]
 > La inclusión del contenido de tarjetas es una adición reciente y actualmente se está implementando en los inquilinos. Para obtener más información, consulte las [funcionalidades de cumplimiento de Microsoft 365 para contenido de tarjetas adaptables en las aplicaciones de Teams que están disponibles ahora](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-Los mensajes de Teams en canales privados no se incluyen, ni tampoco los fragmentos de código ni las reacciones de otras personas en forma de emoticonos.
+Los mensajes de Teams en canales privados no son compatibles actualmente con las directivas de retención. Los fragmentos de código, notas de voz grabadas del cliente móvil de Teams y las reacciones de otros usuarios en forma de emoticonos no se incluyen cuando usa las directivas de retención para Teams.
 
 Los mensajes de correo electrónico y los archivos que use con Teams no son incluidos en directivas de retención para Teams. Estos elementos tienen sus propias directivas de retención.
-
-Los buzones siguientes de RecipientTypeDetails son compatibles con las directivas de retención de Teams:
-
-- MailUser
-- UserMailbox
-- GroupMailbox
-- ArbitrationMailbox
-- SharedMailbox
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Cómo funciona la retención con Microsoft Teams
 
 Puede usar una directiva de retención para retener y eliminar datos de chats y de mensajes de los canales en Teams. En segundo plano, se usan buzones de Exchange para almacenar estos mensajes. Los datos de los chats de Teams se almacenan en una carpeta oculta en el buzón de cada usuario incluido en el chat y se usa una carpeta oculta similar en un buzón de grupo para los mensajes del canal de Teams.
+
+Estos buzones se muestran según su atributo RecipientTypeDetails:
+
+- **UserMailbox**: estos buzones almacenan los mensajes de los usuarios de Teams que tienen un buzón de Exchange Online.
+- **MailUser**: estos buzones almacenan los mensajes de los usuarios de Teams que tienen un buzón para un servidor de Exchange local y no Exchange Online.
+- **User**: estos buzones almacenan mensajes para los usuarios de Teams que no tienen un buzón para servidores de Exchange Online o servidores locales de Exchange.
+- **GroupMailbox**: estos buzones almacenan mensajes para los canales de Teams.
+
+Otros tipos de buzones, como RoomMailbox —que se usa en las salas de conferencias de Teams— no son compatibles con las directivas de retención de Teams.
 
 Es importante entender que Teams utilizan un servicio de chat impulsado por Azure que también almacena estos datos, y por defecto este servicio almacena los datos indefinidamente. Por este motivo, si necesita eliminar mensajes de Teams por motivos de cumplimiento, le recomendamos que use directivas de retención para Teams que puedan eliminar de forma permanente estos datos tanto de los buzones de Exchange como del servicio de chat subyacente con tecnología de Azure. Para obtener más información sobre la arquitectura subyacente, consulte[Seguridad y cumplimiento en Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258) y, específicamente, la sección [Arquitectura de protección de la información](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 

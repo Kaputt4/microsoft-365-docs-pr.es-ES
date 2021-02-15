@@ -275,6 +275,8 @@
                   href: mtp/device-profile.md
                 - name: Enviar comentarios
                   href: mtp/feedback.md
+                - name: Proporcionar acceso de proveedor de servicios administrados (MSSP)
+                  href: mtp/mssp-access.md
                 - name: Crear tareas y tickets de ServiceNow
                   items:
                     - name: Información general de la integración de ServiceNow

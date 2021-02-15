@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-topics
 localization_priority: None
 description: Obtenga información sobre cómo encontrar recursos para temas de Microsoft Viva.
-ms.openlocfilehash: 3e75dfcfa17e5604e04b6f5e49be9019b1679110
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: d5c54bda3432fc9a1ff5ce4342cc523544eb6e78
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107175"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242871"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Introducción a los temas de Microsoft Viva
 
@@ -42,6 +42,9 @@ Los recursos de esta sección le ayudarán a obtener más información sobre los
 |Obtener más información sobre Los temas de Viva|[Introducción a Los temas de Microsoft Viva](topic-experiences-overview.md)|
 |Obtenga información sobre cómo AI detecta y sugiere temas|[Detección de temas de Microsoft Viva](topic-experiences-discovery.md)|
 |Más información sobre la seguridad de los temas|[Seguridad y privacidad de Microsoft Viva](topic-experiences-security-privacy.md)|
+|Obtenga información sobre cómo obtener temas de Viva|[Página del producto Temas de Microsoft Viva](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
+|Consultar recursos en el Centro de recursos de Microsoft Tech Community|[Microsoft Viva Topics Tech Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
+
 
 
 ## <a name="adoption"></a>Adopción
@@ -60,7 +63,7 @@ Los recursos de esta sección ayudan a su administrador de su organización a co
 |:-----|:-----|
 |Obtenga información sobre cómo configurar y configurar Microsoft Viva|[Configurar Microsoft Viva](set-up-topic-experiences.md)|
 |Obtenga información sobre cómo configurar permisos de usuario|[Administrar los permisos por temas](topic-experiences-user-permissions.md)|
-|Obtenga información sobre cómo administrar quién puede ver los temas|[Administrar la visibilidad por temas](topic-experiences-knowledge-rules.md)|
+|Obtenga información sobre cómo administrar quién puede ver temas|[Administrar la visibilidad por temas](topic-experiences-knowledge-rules.md)|
 |Obtenga información sobre cómo administrar la configuración de detección de temas|[Administrar el descubrimiento por temas](topic-experiences-discovery.md)|
 
 ## <a name="work-with-topics"></a>Trabajar con temas

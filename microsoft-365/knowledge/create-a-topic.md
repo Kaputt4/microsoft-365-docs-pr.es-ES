@@ -14,22 +14,22 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 35d4615057deee81285ba950a157f28160b6eefa
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 2b543dbc8132f261814aec45e713874971b9b5d1
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107305"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242895"
 ---
 # <a name="create-a-new-topic"></a>Cree un equipo nuevo 
 
-En Temas Viva, puede crear un nuevo tema si no se detecta uno a través de la indización o si la tecnología de IA no encontró suficiente evidencia para establecerlo como un tema.
+En Temas Viva, puede crear un nuevo tema si no se detecta uno a través de la indización o si la tecnología de IA no encontró pruebas suficientes para establecerlo como un tema.
 
 > [!Note] 
 > Aunque la información de un tema recopilado por AI tiene recortes de [seguridad,](topic-experiences-security-trimming.md)tenga en cuenta que la información de un tema creado manualmente es visible para todos los usuarios que tienen permisos para ver el tema. 
 
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 Para crear un nuevo tema, debe:
 - Tener una licencia de Temas de Viva.
@@ -38,21 +38,33 @@ Para crear un nuevo tema, debe:
 > [!Note] 
 > Los usuarios que tienen permiso para administrar temas en el centro de temas (administradores de conocimientos) ya tienen permisos para crear y editar temas.
 
-## <a name="to-create-a-new-topic"></a>Para crear un tema nuevo:
+## <a name="to-create-a-topic"></a>Para crear un tema
+
+Puede crear un tema nuevo a partir de dos ubicaciones:
+
+- Página principal del centro de  temas: cualquier usuario con licencia con el permiso Quién puede crear o <b></b> editar temas (colaboradores) puede crear un nuevo tema desde el centro de temas seleccionando el menú Nuevo y seleccionando la página <b>Tema.</b></br> 
+
+    ![Nuevo tema del centro de temas](../media/knowledge-management/new-topic.png) </br> 
+
+- Página Administrar temas: cualquier  usuario con licencia que tenga el permiso Quién puede administrar temas (administradores de conocimientos) puede crear un nuevo tema desde la página Administrar temas en el Centro de temas seleccionando La página Nuevo <b>tema.</b></br> 
+
+    ![Nuevo tema de administración de temas](../media/knowledge-management/new-topic-topic-center.png) </br> 
+
+### <a name="to-create-a-new-topic"></a>Para crear un tema nuevo:
 
 1. En la **sección Nombre de este** tema, escriba el nombre del nuevo tema.
 
     ![Asigne un nombre a este tema](../media/knowledge-management/k-new-topic-page.png) </br> 
 
 
-2. En la <b>sección Nombres</b> alternativos, escriba cualquier otro nombre al que se pueda hacer referencia al tema. 
+2. En la <b>sección Nombres alternativos,</b> escriba cualquier otro nombre al que se pueda hacer referencia al tema. 
 
     ![Nombres alternativos](../media/knowledge-management/alt-names.png) </br> 
 3. En la <b>sección</b> Descripción, escriba un par de oraciones que describan el tema. 
 
     ![Descripción del tema](../media/knowledge-management/description.png)</br>
 
-4. En la <b>sección De</b> personas ancladas, puede "anclar" a una persona para mostrarla como experto en la materia sobre el tema. Comience por escribir su nombre o dirección de correo electrónico en el cuadro agregar un nuevo usuario y, <b>a</b> continuación, seleccione el usuario que desea agregar desde los resultados de búsqueda. También puede "desanclarlos" seleccionando el icono Quitar de <b>la</b> lista en la tarjeta de usuario. También puede arrastrar a la persona para cambiar el orden en que aparece la lista de personas.
+4. En la <b>sección De</b> personas ancladas, puede "anclar" a una persona para mostrarla como experto en la materia sobre el tema. Comience por escribir su nombre o dirección de correo electrónico en el cuadro agregar un nuevo usuario y, <b>a</b> continuación, seleccione el usuario que desea agregar desde los resultados de la búsqueda. También puede "desanclarlos" seleccionando el icono Quitar de <b>la</b> lista en la tarjeta de usuario. También puede arrastrar a la persona para cambiar el orden en que aparece la lista de personas.
  
     ![Personas ancladas](../media/knowledge-management/pinned-people.png)</br>
 
@@ -61,7 +73,7 @@ Para crear un nuevo tema, debe:
 
    ![Páginas y archivos anclados](../media/knowledge-management/pinned-files-and-pages.png)</br>
  
-    Para agregar un nuevo archivo, seleccione <b>Agregar</b>, seleccione el sitio de SharePoint de los sitios frecuentes o seguidos y, a continuación, seleccione el archivo de la biblioteca de documentos del sitio.
+    Para agregar un archivo nuevo, seleccione <b>Agregar</b>, seleccione el sitio de SharePoint de los sitios frecuentes o seguidos y, a continuación, seleccione el archivo de la biblioteca de documentos del sitio.
 
     También puede usar la opción <b>De un vínculo</b> para agregar un archivo o página proporcionando la dirección URL. 
 

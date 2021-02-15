@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La Auditoría avanzada en Microsoft 365 proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: f265a30a3d43b592a7d297e2137fd6b9ff4acfb4
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: 0ae67497829e69da92e9735cb68a84e75c517814
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097156"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242462"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Auditoría avanzada en Microsoft 365
 
@@ -107,7 +107,19 @@ También puede ejecutar los comandos [Search-UnifiedAuditLog -Operations Send](h
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
-El evento SearchQueryInitiatedExchange se activa cuando una persona usa la barra de búsqueda de Outlook en la Web (OWA) para buscar elementos en un buzón. Los investigadores pueden usar el evento SearchQueryInitiatedExchange para determinar si un atacante que pueda haber puesto en peligro una cuenta ha buscado o intentado tener acceso a información confidencial en el buzón de correo. El registro de auditoría para un evento SearchQueryInitiatedExchange contiene información como el texto real de la consulta de búsqueda. Al observar las consultas de búsqueda que un atacante pudiera haber realizado, un investigador puede comprender mejor el porqué se buscaron esos datos de correo.
+El evento SearchQueryInitiatedExchange se activa cuando una persona usa Outlook para buscar elementos en un buzón. Los eventos se activan cuando se realizan búsquedas en los siguientes entornos de Outlook:
+
+- Outlook (cliente de escritorio)
+
+- Outlook en la Web (OWA)
+
+- Outlook para iOS
+
+- Outlook para Android
+
+- Aplicación Correo para Windows 10
+
+Los investigadores pueden usar el evento SearchQueryInitiatedExchange para determinar si un atacante que pueda haber puesto en peligro una cuenta ha buscado o intentado tener acceso a información confidencial en el buzón de correo. El registro de auditoría para un evento SearchQueryInitiatedExchange contiene información como el texto real de la consulta de búsqueda. El registro de auditoría también indica el entorno de Outlook en el que se ha realizado la búsqueda. Al observar las consultas de búsqueda que un atacante pudiera haber realizado, un investigador puede comprender mejor el porqué se buscaron esos datos de correo.
 
 Para buscar registros de auditoría de SearchQueryInitiatedExchange, puede buscar la actividad de **Búsqueda de mensaje enviado** en la lista desplegable de **Actividades de búsqueda** de la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) en el centro de cumplimiento.
 
@@ -122,7 +134,17 @@ Si el comando `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` se ejecut�
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-Igual que ocurre en la búsqueda de elementos del buzón de correo, el evento SearchQueryInitiatedSharePoint se activa cuando una persona busca elementos en el sitio principal de SharePoint de la organización. Los investigadores pueden usar el evento SearchQueryInitiatedSharePoint para determinar si un atacante ha intentado encontrar información confidencial en SharePoint (y, posiblemente, haber accedido a ella). El registro de auditoría para un evento SearchQueryInitiatedSharePoint contendrá también el texto real de la consulta de búsqueda. Al observar las consultas de búsqueda que un atacante pudiera haber realizado, un investigador puede comprender mejor la intención y el ámbito de búsqueda sobre los datos de archivo que se buscan.
+De forma similar a la búsqueda de elementos del buzón, el evento SearchQueryInitiatedSharePoint se activa cuando una persona busca elementos en SharePoint. Los eventos se activan cuando se realizan búsquedas en los siguientes sitios de tipos de SharePoint:
+
+- Sitios principales
+
+- Sitios de comunicación
+
+- Sitios concentradores
+
+- Sitios asociados con Microsoft Teams
+
+Los investigadores pueden usar el evento SearchQueryInitiatedSharePoint para determinar si un atacante ha intentado encontrar información confidencial en SharePoint (y, posiblemente, haber accedido a ella). El registro de auditoría para un evento SearchQueryInitiatedSharePoint contendrá también el texto real de la consulta de búsqueda. El registro de auditoría también indica el tipo de sitio de SharePoint en el que se ha buscado. Al observar las consultas de búsqueda que un atacante pudiera haber realizado, un investigador puede comprender mejor la intención y el ámbito de búsqueda sobre los datos de archivo que se buscan.
 
 Para buscar registros de auditoría de SearchQueryInitiatedSharePoint, puede buscar la actividad de **Búsqueda de SharePoint realizada** en la lista desplegable de **Actividades de búsqueda** de la [herramienta de búsqueda de registros de auditoría](search-the-audit-log-in-security-and-compliance.md) en el centro de cumplimiento.
 
