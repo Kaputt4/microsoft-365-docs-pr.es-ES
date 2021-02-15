@@ -20,7 +20,7 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo usar diagnósticos de página para optimizar el rendimiento de elementos Web en las páginas de sitio modernas de SharePoint Online.
+description: Aprenda a usar el diagnóstico de páginas para optimizar el rendimiento de los elementos web en las páginas de sitio modernas de SharePoint Online.
 ms.openlocfilehash: f7b72aa8ed212147c06660585c4e58e548762c35
 ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
@@ -80,7 +80,7 @@ Existen tres tipos de causas por las que el elemento web puede tener problemas d
   - Reutilice marcos como _importaciones de Fabric_ y _React_ que forman parte de SharePoint Framework (SPFx). Para más información, vea [Información general de SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Asegúrese de que está usando la versión más reciente de SharePoint Framework y actualice a las nuevas versiones a medida que estén disponibles.
 - Búsqueda y almacenamiento en caché de datos
-  - Si el elemento Web se basa en llamadas de servidor adicionales para la búsqueda de datos para mostrar, asegúrese de que estas API de servidor son rápidas o implementan almacenamiento en caché del lado cliente (como el uso de _localStorage_ o _IndexedDB_ para conjuntos más grandes).
+  - Si el elemento web se basa en llamadas de servidor adicionales para capturar datos para mostrar, asegúrese de que esas API de servidor sean rápidas o implementen el almacenamiento en caché del lado cliente (por ejemplo, usar _localStorage_ o _IndexedDB_ para conjuntos más grandes).
   - Si se necesitan varias llamadas para representar datos fundamentales, considere la posibilidad de realizar el procesamiento por lotes en el servidor u otros métodos de consolidación de solicitudes en una sola llamada.
   - Por otra parte, si algunos elementos de datos requieren una API más lenta, pero no son fundamentales para la representación inicial, desacóplelos en una llamada diferente que se ejecuta después de que se representen los datos fundamentales.
   - Si varios elementos usan los mismos datos, utilice una capa de datos común para evitar las llamadas duplicadas.

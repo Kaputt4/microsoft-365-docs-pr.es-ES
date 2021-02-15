@@ -22,7 +22,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Obtenga información sobre cómo proteger los equipos con Windows 10 PC después de haber configurado Microsoft 365 empresa Premium.
+description: Obtenga información sobre cómo proteger equipos con Windows 10 después de configurar Microsoft 365 Empresa Premium.
 ms.openlocfilehash: 286393779eaa92d33432ff9ad4b21c0a1fb8612c
 ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
@@ -32,22 +32,22 @@ ms.locfileid: "49376285"
 ---
 # <a name="secure-windows-10-computers"></a>Proteger equipos con Windows 10
 
-Este artículo se aplica a Microsoft 365 empresa Premium.
+Este artículo se aplica a Microsoft 365 Empresa Premium.
 
-Una vez que haya [configurado](set-up.md) Microsoft 365 Business Premium, es el momento de proteger los equipos con Windows 10 de su organización contra robos y amenazas malintencionadas como virus y malware.
+Después de configurar [Microsoft](set-up.md) 365 Empresa Premium, es el momento de proteger los equipos con Windows 10 de su organización contra el robo y las amenazas malintencionadas como virus y malware.
 
 ## <a name="to-secure-your-windows-10-computers"></a>Para proteger los equipos con Windows 10
 
 1. Inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales de administrador global. 
-2. En el panel de navegación izquierdo, seleccione **configuración** y, a continuación, en **Inicio de sesión y seguridad**, elija **proteger los equipos con Windows 10**. Elija **Ver** para empezar.
-3. En la página **proteger los equipos con Windows 10** , lea toda la información para comprender lo que está convirtiendo y qué impacto tiene el usuario.
+2. En el panel de navegación izquierdo, seleccione **Configurar** y, a continuación, en Inicio de sesión y **seguridad,** elija Proteger los equipos con **Windows 10.** Elija **Ver** para empezar.
+3. En la **página Proteger los equipos con Windows 10,** lee toda la información para comprender qué estás activar y cuál es el impacto del usuario.
 
-    En la parte superior de la página, **Elija introducción**.
+    En la parte superior de la página, elija **Introducción.**
 
-4. En el panel **proteger los equipos con Windows 10** , seleccione las opciones que desee activar. Para obtener más información sobre la configuración, vea [proteger dispositivos Windows 10](secure-windows-10-devices.md). 
+4. En el **panel Proteger los equipos con Windows 10,** selecciona las opciones que quieras activar. Para obtener más información acerca de la configuración, consulta [Proteger dispositivos Windows 10.](secure-windows-10-devices.md) 
     
-    Para la mayoría de las organizaciones, las opciones aquí ofrecen un buen nivel de seguridad, pero si su organización tiene necesidades de seguridad más complejas, también puede usar líneas de base de seguridad predefinidas para proteger sus dispositivos con Windows 10. Para obtener más información, consulte [Baseline Security for Windows 10 Devices](https://docs.microsoft.com/mem/intune/protect/security-baselines).   
+    Para la mayoría de las organizaciones, las opciones aquí ofrecen un buen nivel de seguridad, pero si tu organización tiene necesidades de seguridad más complejas, también puedes usar líneas base de seguridad predefinidas para proteger los dispositivos Windows 10. Para obtener más información, consulta [las líneas base de seguridad para dispositivos Windows 10.](https://docs.microsoft.com/mem/intune/protect/security-baselines)   
 
-1. Elija **Aplicar configuración**.
+1. Elija **Aplicar configuración.**
 
-    Esta configuración se aplicará a todos los usuarios de la organización. Para configurar directivas distintas para los distintos grupos de seguridad, vea [establecer la configuración de protección de dispositivos para equipos PC con Windows 10](protection-settings-for-windows-10-pcs.md).
+    Esta configuración se aplicará a todos los usuarios de la organización. Para configurar diferentes directivas para diferentes grupos de seguridad, consulta Establecer la configuración de protección de [dispositivos para equipos con Windows 10.](protection-settings-for-windows-10-pcs.md)

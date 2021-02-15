@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
-description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Register365 para Microsoft.
+description: Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Register365 for Microsoft.
 ms.openlocfilehash: 6cefdeff3da1256911d80066b55b00f5bef24055
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -38,7 +38,7 @@ Estos son los registros principales que es necesario agregar.
   
 - [Agregar un registro TXT para verificación](#add-a-txt-record-for-verification)
     
-- [Agregar un registro MX para que el correo electrónico del dominio vaya a Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
+- [Agregar un registro MX para que el correo electrónico del dominio vaya a Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
     
 - [Agregar los seis registros CNAME necesarios para Microsoft](#add-the-six-cname-records-that-are-required-for-microsoft)
     
@@ -46,7 +46,7 @@ Estos son los registros principales que es necesario agregar.
     
 - [Agregar los dos registros SRV necesarios para Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-Después de agregar estos registros a Microsoft, su dominio estará configurado para trabajar con los servicios de Microsoft.
+Después de agregar estos registros a Microsoft, su dominio estará configurado para trabajar con los servicios Microsoft.
   
 > [!NOTE]
 >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -73,7 +73,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
     
     (Elija el valor **Tipo** de la lista desplegable). 
     
-    (Si necesita agregar una fila, seleccione **agregar registros a/CNAME (+)**).
+    (Si necesita agregar una fila, seleccione **AGREGAR REGISTROS A/CNAME (+).**
     
     (Es posible que tenga que desplazarse hacia abajo).
     
@@ -81,7 +81,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
     |:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![Especificar valores en la página Agregar o modificar zona DNS](../../media/22326005-de95-464d-8e33-08ea31a89b2d.png)
+    ![Escribir valores en la página Agregar o modificar zona DNS](../../media/22326005-de95-464d-8e33-08ea31a89b2d.png)
   
 4. Seleccione **Guardar**.
     
@@ -131,9 +131,9 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     |**Nombre de host**|**Prioridad**|**Resultado**|
     |:-----|:-----|:-----|
-    |(Deje este campo en blanco).  <br/> |1   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtén tu  *\<domain-key\>*  cuenta de Microsoft.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)     |
+    |(Deje este campo en blanco).  <br/> |1   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtenga su  *\<domain-key\>*  cuenta de Microsoft.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)     |
    
-    ![Especificar valores en la página Agregar o modificar zona DNS](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
+    ![Escribir valores en la página Agregar o modificar zona DNS](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
 4. Seleccione **Guardar**.
     
@@ -168,7 +168,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     (Elija el valor **Tipo** de la lista desplegable). 
     
-    (Si necesita agregar una fila, seleccione **agregar registros a/CNAME (+)**).
+    (Si necesita agregar una fila, seleccione **AGREGAR REGISTROS A/CNAME (+).**
     
     (Es posible que tenga que desplazarse hacia abajo).
     
@@ -180,7 +180,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![Especificar valores en la página Agregar o modificar zona DNS](../../media/3b79f0de-9cab-4c98-8fa8-c92b35241e8b.png)
+    ![Escribir valores en la página Agregar o modificar zona DNS](../../media/3b79f0de-9cab-4c98-8fa8-c92b35241e8b.png)
   
 4. Seleccione **Guardar**.
     
@@ -190,7 +190,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores necesarios de Microsoft al registro activo para que tenga un  *único*  registro de SPF que incluya ambos conjuntos de valores. 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *de*  SPF que incluya ambos conjuntos de valores. 
   
 1. Para empezar, vaya a su página de dominios en Register365 a través de [este vínculo](https://admin.register365.com/dns/). Se le pedirá que inicie sesión primero .
     
@@ -206,7 +206,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     (Elija el valor **Tipo** de la lista desplegable). 
     
-    (Si necesita agregar una fila, seleccione **agregar registros a/CNAME (+)**).
+    (Si necesita agregar una fila, seleccione **AGREGAR REGISTROS A/CNAME (+).**
     
     (Es posible que tenga que desplazarse hacia abajo).
     
@@ -214,7 +214,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     |:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |
    
-    ![Especificar valores en la página Agregar o modificar zona DNS](../../media/33976398-da8a-439b-8e3d-534503b20ee0.png)
+    ![Escribir valores en la página Agregar o modificar zona DNS](../../media/33976398-da8a-439b-8e3d-534503b20ee0.png)
   
 4. Seleccione **Guardar**.
     
@@ -244,7 +244,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
-    ![Introducción de valores en la sección de registros de servicio](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
+    ![Especificar valores en la sección Registros del servicio](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   
 4. Seleccione **Guardar**.
     

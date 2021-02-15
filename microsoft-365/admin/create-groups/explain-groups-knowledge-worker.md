@@ -1,5 +1,5 @@
 ---
-title: Explicación de los grupos de Microsoft 365 a los usuarios
+title: Explicar grupos de Microsoft 365 a los usuarios
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -15,7 +15,7 @@ ms.collection:
 - Adm_TOC
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo explicar los grupos de Microsoft 365 a los usuarios.
+description: Obtenga información sobre cómo explicar Grupos de Microsoft 365 a los usuarios.
 ms.openlocfilehash: 2f983d69f8b3138634739a82e35de9e62821d252
 ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
@@ -23,24 +23,24 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 12/09/2020
 ms.locfileid: "49613013"
 ---
-# <a name="explaining-microsoft-365-groups-to-your-users"></a>Explicación de los grupos de Microsoft 365 a los usuarios
+# <a name="explaining-microsoft-365-groups-to-your-users"></a>Explicar grupos de Microsoft 365 a los usuarios
 
-Los grupos de 365 de Microsoft le permiten configurar una colección de recursos para compartir, incluidos un buzón de correo y un calendario compartidos, un sitio de SharePoint con un bloc de notas de OneNote y un organizador de Microsoft entre otros. Microsoft Teams también puede incluirse cuando se crea un grupo o se puede agregar más adelante. Grupos de permisos los recursos se administran a través del grupo.
+Los grupos de Microsoft 365 le permiten configurar una colección de recursos para compartir, incluidos un buzón y un calendario compartidos, un sitio de SharePoint con un bloc de notas de OneNote y Microsoft Planner, entre otros. Microsoft Teams también se puede incluir al crear un grupo o se puede agregar más adelante. Los recursos de grupos de permisos se administran a través del grupo.
 
-Los grupos se pueden crear mediante la creación de cualquiera de los recursos compartidos. La creación de un grupo en Outlook produce el mismo resultado que cuando se crea un sitio de grupo de SharePoint conectado a un grupo o un plan en Planner. Si los usuarios no han sido familiarizados con los grupos de 365 de Microsoft, es posible que no se den cuenta de ello. Esto puede provocar confusión para los usuarios y la posibilidad de crear recursos duplicados. (Para obtener ejemplos, es posible que alguien cree un sitio de SharePoint para la colaboración en documentos y, posteriormente, cree una instancia independiente de Planner, pero la cuenta de Planner ya estaba disponible como parte del grupo).
+Los grupos se pueden crear creando cualquiera de los recursos compartidos. La creación de un grupo en Outlook produce el mismo resultado que crear un sitio de grupo de SharePoint conectado a un grupo o un plan en Planner. Si los usuarios no son nuevos en grupos de Microsoft 365, es posible que no se den cuenta. Esto puede causar confusión para los usuarios y la posibilidad de crear recursos duplicados. (Por ejemplo, alguien puede crear un sitio de SharePoint para la colaboración de documentos y, posteriormente, crear una instancia independiente de Planner, sin darse cuenta de que Planner ya estaba disponible como parte del grupo).
 
-Como los grupos se pueden crear de varias formas, recomendamos que los usuarios realicen una formación para que los usuarios usen el método que mejor se adapte a su organización:
+Dado que los grupos se pueden crear de varias maneras, se recomienda formar a los usuarios para que usen el método que mejor se adapte a su organización:
 
-- Si su organización realiza la mayor parte de su comunicación con el correo electrónico, indique a los usuarios que creen grupos en Outlook.
-- Si su organización usa mucho SharePoint o está migrando desde SharePoint local, indique a los usuarios que creen sitios de grupo de SharePoint para la colaboración.
-- Si su organización ha implementado Microsoft Teams, indique a los usuarios que creen un equipo cuando necesiten un espacio de colaboración.
+- Si su organización realiza la mayor parte de su comunicación mediante correo electrónico, indique a los usuarios que creen grupos en Outlook.
+- Si su organización usa en gran medida SharePoint o está migrando desde SharePoint local, indique a los usuarios que creen sitios de grupo de SharePoint para la colaboración.
+- Si su organización ha implementado Teams, indique a los usuarios que creen un equipo cuando necesiten un espacio de colaboración.
 
-[![DESC ](../../media/03.png) de imagen](../../media/03.png#lightbox)
+[![image desc ](../../media/03.png)](../../media/03.png#lightbox)
 
-Si entrena a los usuarios para que usen siempre el método de creación de grupos que más se alinee con su forma de trabajar cuando necesiten un espacio para colaborar con otros usuarios, puede ayudar a evitar la confusión y la duplicación de los recursos. A medida que los usuarios se hacen más experimentados, entenderán mejor la colección de servicios que se incluyen con un grupo y que los diferentes métodos de creación conducen al mismo resultado.
+Si entrena a los usuarios para que siempre usen el método de creación de grupos que más se alinee con su forma de trabajar cuando necesiten un espacio para colaborar con otros usuarios, puede ayudar a evitar confusiones y duplicaciones de recursos. A medida que los usuarios se vuelven más experimentados, comprenderán mejor la colección de servicios que vienen con un grupo y que distintos métodos de creación llevan al mismo resultado.
 
-Puede usar la [plantilla Microsoft 365 Groups for Business User-PowerPoint](https://www.microsoft.com/download/details.aspx?id=102396) como punto de partida para las presentaciones de aprendizaje para los usuarios.
+Puede usar la plantilla Usuarios de Grupos de [Microsoft 365 para empresas: PowerPoint](https://www.microsoft.com/download/details.aspx?id=102396) como punto de partida para las presentaciones de aprendizaje para los usuarios.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Obtenga información sobre los grupos de 365 de Microsoft](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Más información sobre grupos de Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)

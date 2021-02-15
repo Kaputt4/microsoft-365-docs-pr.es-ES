@@ -1,5 +1,5 @@
 ---
-title: Configurar un conector para archivar datos de una base de datos de MS SQL
+title: Configurar un conector para archivar datos de MS SQL Base de datos
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector para importar y archivar datos de MS SQL Database. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar las características de cumplimiento, como directivas de retención legal, búsqueda de contenido y retención para administrar datos de terceros.
+description: Los administradores pueden configurar un conector para importar y archivar datos de MS SQL Base de datos. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como suspensión legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
 ms.openlocfilehash: 686575877f788a2c2662024d5fac3e425d08c500
 ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
@@ -19,69 +19,69 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 12/10/2020
 ms.locfileid: "49620387"
 ---
-# <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>Configurar un conector para archivar datos de una base de datos de MS SQL
+# <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>Configurar un conector para archivar datos de MS SQL Base de datos
 
-Use un conector de Globanet en el centro de cumplimiento de Microsoft 365 para importar y archivar datos de MS SQL Database en buzones de usuario de la organización 365 de Microsoft. Globanet proporciona un conector de importador de bases de datos MS SQL que está configurado para capturar elementos de una base de datos mediante un archivo de configuración XML e importar dichos elementos a Microsoft 365. El conector convierte el contenido de la base de datos MS SQL a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a los buzones de usuario en Microsoft 365.
+Use un conector Globanet en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de MS SQL Database a los buzones de usuario de su organización de Microsoft 365. Globanet proporciona un conector MS SQL Database Importer que está configurado para capturar elementos de una base de datos mediante un archivo de configuración XML e importar esos elementos a Microsoft 365. El conector convierte el contenido de MS SQL Database a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos a buzones de usuario en Microsoft 365.
 
-Después de que el contenido de la base de datos de MS SQL se almacenó en buzones de usuario, puede aplicar las características de cumplimiento de Microsoft 365, como retención por juicio, eDiscovery, directivas de retención y etiquetas de retención. El uso de un conector de base de datos MS SQL para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y regulatorias.
+Después de que el contenido de la base de datos MS SQL se almacene en buzones de usuario, puede aplicar características de cumplimiento de Microsoft 365 como retención por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención. El uso de un conector de base de datos MS SQL para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
-## <a name="overview-of-archiving-the-ms-sql-data"></a>Información general sobre el archivado de los datos de MS SQL
+## <a name="overview-of-archiving-the-ms-sql-data"></a>Información general sobre el archivado de los datos de SQL MS
 
-En la siguiente introducción se explica el proceso de uso de un conector para archivar datos de MS SQL en Microsoft 365.
+En la siguiente introducción se explica el proceso de uso de un conector para archivar datos de SQL MS en Microsoft 365.
 
-![Flujo de trabajo de archivado para datos de MS SQL](../media/MSSQLDatabaseConnectorWorkflow.png)
+![Flujo de trabajo de archivado para datos de SQL MS](../media/MSSQLDatabaseConnectorWorkflow.png)
 
-1. La organización trabaja con un proveedor de bases de datos MS SQL para instalar y configurar un sitio de base de datos MS SQL.
+1. Su organización trabaja con un proveedor de base de SQL MS para configurar un sitio de base de datos de SQL MS.
 
-2. Una vez cada 24 horas, los elementos de la base de datos MS SQL se copian en el sitio Merge1 de Globanet. El conector también convierte este contenido a un formato de mensaje de correo electrónico.
+2. Una vez cada 24 horas, los elementos de SQL MS se copian en el sitio de Globanet Merge1. El conector también convierte este contenido en un formato de mensaje de correo electrónico.
 
-3. El conector de importador de bases de datos de MS SQL que se crea en el centro de cumplimiento de Microsoft 365, se conecta al sitio de Globanet Merge1 todos los días y transfiere los mensajes a una ubicación de almacenamiento seguro de Azure en la nube de Microsoft.
+3. El conector MS SQL Database Importer que crea en el Centro de cumplimiento de Microsoft 365, se conecta al sitio de Globanet Merge1 todos los días y transfiere los mensajes a una ubicación segura de Azure Storage en la nube de Microsoft.
 
-4. El conector importa los elementos convertidos de la base de datos MS SQL a los buzones de usuarios específicos mediante el valor de la propiedad *email* de la asignación automática de usuarios, como se describe en el [paso 3](#step-3-map-users-and-complete-the-connector-setup). Se crea una subcarpeta de la carpeta Bandeja de entrada denominada **MS SQL Database Importer** en los buzones de usuario y los elementos se importan a esa carpeta. El conector determina a qué buzón se importarán los elementos mediante el valor de la propiedad *email* . Cada elemento de la base de datos de MS SQL contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento.
+4. El conector importa los elementos convertidos de MS SQL Database a los buzones de usuarios específicos mediante el valor de la propiedad *Email* de la asignación automática de usuarios, tal como se describe en el paso [3.](#step-3-map-users-and-complete-the-connector-setup) Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **MS SQL Database Importer** en los buzones de usuario y los elementos se importan a esa carpeta. El conector determina a qué buzón se importarán los elementos mediante el valor de la *propiedad Email.* Cada elemento de la base de datos de SQL MS contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Cree una cuenta de Globanet Merge1 para Microsoft Connectors. Para crear una cuenta, póngase en contacto [con el soporte técnico de Globanet](https://globanet.com/contact-us/). Debe iniciar sesión en esta cuenta cuando cree el conector en el paso 1.
+- Cree una cuenta de Globanet Merge1 para los conectores de Microsoft. Para crear una cuenta, póngase en contacto [con el servicio de soporte al cliente de Globanet.](https://globanet.com/contact-us/) Debe iniciar sesión en esta cuenta cuando cree el conector en el paso 1.
 
-- El usuario que crea el conector de Microsoft SQL Database Importer en el paso 1 (y lo completa en el paso 3) debe asignarse a la función importación y exportación de buzones de correo en Exchange Online. Este rol es necesario para agregar conectores en la página conectores de datos del centro de cumplimiento de Microsoft 365. De forma predeterminada, este rol no está asignado a ningún grupo de roles en Exchange Online. Puede Agregar el rol importación y exportación de buzones al grupo de funciones de administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [crear grupos](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) de roles o [modificar grupos de roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo sobre la administración de grupos de roles en Exchange Online.
+- El usuario que crea el conector de importador de base de datos de MS SQL en el paso 1 (y lo completa en el paso 3) debe estar asignado al rol De importación y exportación de buzones en Exchange Online. Este rol es necesario para agregar conectores en la página Conectores de datos en el Centro de cumplimiento de Microsoft 365. De forma predeterminada, este rol no se asigna a ningún grupo de roles en Exchange Online. Puede agregar el rol De importación y exportación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones Crear grupos de [roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
-## <a name="step-1-set-up-the-ms-sql-database-importer-connector"></a>Paso 1: configurar el conector del importador de bases de datos de MS SQL
+## <a name="step-1-set-up-the-ms-sql-database-importer-connector"></a>Paso 1: Configurar el conector MS SQL Importador de base de datos
 
-El primer paso es obtener acceso a la página **conectores de datos** en el centro de cumplimiento de Microsoft365 y crear un conector para la base de datos de MS SQL.
+El primer paso es  obtener acceso a la página Conectores de datos en el Centro de cumplimiento de Microsoft365 y crear un conector para la base de datos de SQL MS.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, haga clic en **conectores de datos**  >  **MS SQL Database Importer**.
+1. Vaya a Conectores de datos y, a continuación, haga clic en [https://compliance.microsoft.com](https://compliance.microsoft.com)   >  **MS SQL Importador de base de datos.**
 
-2. En la página Descripción del producto del **importador de bases de datos MS SQL** , haga clic en **Agregar nuevo conector**.
+2. En la **página MS SQL descripción del producto importador** de base de datos, haga clic en Agregar nuevo **conector.**
 
-3. En la página **condiciones de servicio** , haga clic en **Aceptar**.
+3. En la **página Términos de** servicio, haga clic **en Aceptar.**
 
-4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **siguiente**.
+4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **Siguiente**.
 
-5. Inicie sesión en su cuenta de Merge1 para configurar el conector.
+5. Inicie sesión en su cuenta merge1 para configurar el conector.
 
-## <a name="step-2-configure-the-ms-sql-database-importer-connector-on-the-globanet-merge1-site"></a>Paso 2: configurar el conector del importador de bases de datos de MS SQL en el sitio de Merge1 de Globanet
+## <a name="step-2-configure-the-ms-sql-database-importer-connector-on-the-globanet-merge1-site"></a>Paso 2: Configurar el conector MS SQL Database Importer en el sitio de Globanet Merge1
 
-El segundo paso consiste en configurar el conector del importador de bases de datos MS SQL en el sitio Merge1. Para obtener información acerca de cómo configurar el importador de bases de datos de MS SQL, consulte [Guía del usuario de conectores de terceros de Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20MS%20SQL%20Database%20Importer%20User%20Guide%20.pdf).
+El segundo paso es configurar el conector MS SQL Importador de base de datos en el sitio Merge1. Para obtener información acerca de cómo configurar MS SQL Database Importer, consulte [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20MS%20SQL%20Database%20Importer%20User%20Guide%20.pdf).
 
-Después de hacer clic en **guardar & finalizar**, se muestra la página **asignación de usuarios** en el Asistente para conectores del centro de cumplimiento de Microsoft 365.
+Después de hacer clic en &  **finalizar,** se muestra la página Asignación de usuarios en el Asistente para conectores en el Centro de cumplimiento de Microsoft 365.
 
-## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: asignar usuarios y completar la configuración del conector
+## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: Asignar usuarios y completar la configuración del conector
 
 Para asignar usuarios y completar la configuración del conector, siga estos pasos:
 
-1. En la página **asignar usuarios del importador de bases de datos MS SQL a usuarios de Microsoft 365** , habilite la asignación automática de usuarios. Los elementos de la base de datos MS SQL incluyen una propiedad denominada *email*, que contiene las direcciones de correo electrónico de los usuarios de la organización. Si el conector puede asociar esta dirección con un usuario de Microsoft 365, los elementos se importan al buzón de correo del usuario.
+1. En la página Asignar usuarios de MS SQL Importador de base de datos a usuarios de **Microsoft 365,** habilite la asignación automática de usuarios. Los elementos de la base SQL MS incluyen una propiedad denominada *Correo* electrónico, que contiene direcciones de correo electrónico para los usuarios de su organización. Si el conector puede asociar esta dirección con un usuario de Microsoft 365, los elementos se importan al buzón de ese usuario.
 
-2. Haga clic en **siguiente**, revise la configuración y vaya a la página **conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
+2. Haga **clic en** Siguiente, revise  la configuración y vaya a la página Conectores de datos para ver el progreso del proceso de importación para el nuevo conector.
 
-## <a name="step-4-monitor-the-ms-sql-database-importer-connector"></a>Paso 4: supervisar el conector del importador de bases de datos de MS SQL
+## <a name="step-4-monitor-the-ms-sql-database-importer-connector"></a>Paso 4: Supervisar el conector MS SQL Importador de base de datos
 
-Después de crear el conector del importador de bases de datos MS SQL, puede ver el estado del conector en el centro de cumplimiento de Microsoft 365.
+Después de crear el conector MS SQL Database Importer, puede ver el estado del conector en el Centro de cumplimiento de Microsoft 365.
 
-1. Vaya a <https://compliance.microsoft.com/> y haga clic en **conectores de datos** en el panel de navegación izquierdo.
+1. Vaya a <https://compliance.microsoft.com/> conectores de **datos y haga clic en** conectores de datos en el panel de navegación izquierdo.
 
-2. Haga clic en la ficha **conectores** y, a continuación, seleccione el conector del **importador** de **bases de datos MS SQL** para mostrar la página de flotante, que contiene las propiedades y la información sobre el conector.
+2. Haga clic en la **pestaña** Conectores y, a continuación, seleccione el conector **MS SQL Database** **Importer** para mostrar la página desplegable, que contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene datos que se han importado a la nube de Microsoft.
+3. En Estado del conector  **con origen,** haga clic en el vínculo Descargar registro para abrir (o guardar) el registro de estado del conector. Este registro contiene datos que se han importado a la nube de Microsoft.
 
 ## <a name="known-issues"></a>Problemas conocidos
 

@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector para importar y archivar datos EML desde Globanet a Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar las características de cumplimiento, como directivas de retención legal, búsqueda de contenido y retención para administrar datos de terceros.
+description: Los administradores pueden configurar un conector para importar y archivar datos EML de Globanet en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como suspensión legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
 ms.openlocfilehash: 7c8649565df4e08fbdbdaf9c1cba0d890eb54b52
 ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
@@ -21,9 +21,9 @@ ms.locfileid: "49620447"
 ---
 # <a name="set-up-a-connector-to-archive-eml-data"></a>Configurar un conector para archivar datos EML
 
-Use un conector de Globanet en el centro de cumplimiento de Microsoft 365 para importar y archivar datos EML en buzones de usuario de la organización 365 de Microsoft. EML es la extensión de archivo de un mensaje de correo electrónico guardado en un archivo. El conector convierte el contenido de un elemento del formato de origen en un formato de mensaje de correo electrónico y, a continuación, importa el elemento a un buzón de usuario.
+Use un conector Globanet en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos EML en los buzones de usuario de su organización de Microsoft 365. EML es la extensión de archivo para un mensaje de correo electrónico guardado en un archivo. El conector convierte el contenido de un elemento del formato de origen en un formato de mensaje de correo electrónico y, a continuación, importa el elemento a un buzón de usuario.
 
-Una vez que los mensajes EML se almacenan en buzones de usuario, puede aplicar las características de cumplimiento de Microsoft 365, como retención por juicio, exhibición de documentos electrónicos y las etiquetas de retención y las directivas de retención. El uso de un conector EML para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y regulatorias.
+Después de almacenar los mensajes EML en buzones de usuario, puede aplicar características de cumplimiento de Microsoft 365, como retención por juicio, exhibición de documentos electrónicos y directivas de retención y etiquetas de retención. El uso de un conector EML para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
 ## <a name="overview-of-archiving-eml-data"></a>Información general sobre el archivado de datos EML
 
@@ -31,57 +31,57 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 ![Flujo de trabajo de archivado para datos EML](../media/EMLConnectorWorkflow.png)
 
-1. Su organización trabaja con el origen de EML para configurar y configurar un sitio EML.
+1. Su organización trabaja con el origen eml para configurar y configurar un sitio EML.
 
-2. Una vez cada 24 horas, los elementos de contenido del origen EML se copian en el sitio de Merge1 de Globanet. Durante este proceso, el contenido de un archivo EML se convierte en un formato de mensaje de correo electrónico.
+2. Una vez cada 24 horas, los elementos de contenido del origen EML se copian en el sitio de Globanet Merge1. Durante este proceso, el contenido de un archivo EML se convierte a un formato de mensaje de correo electrónico.
 
-3. El conector EML que crea en el centro de cumplimiento de Microsoft 365, se conecta al sitio de Globanet Merge1 todos los días y transfiere los mensajes a una ubicación de almacenamiento seguro de Azure en la nube de Microsoft.
+3. El conector EML que cree en el Centro de cumplimiento de Microsoft 365, se conecta al sitio de Globanet Merge1 todos los días y transfiere los mensajes a una ubicación segura de Azure Storage en la nube de Microsoft.
 
-4. El conector importa los elementos de mensaje convertidos a los buzones de usuarios específicos usando el valor de la propiedad *email* del proceso de asignación automática de usuarios que se describe en el [paso 3](#step-3-map-users-and-complete-the-connector-setup). Durante este proceso, se crea una subcarpeta de la carpeta Bandeja de entrada denominada **EML** en los buzones de usuario y los elementos EML se importan a esa carpeta. El conector determina a qué buzón se importarán los elementos mediante el valor de la propiedad *email* . Cada mensaje contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento de contenido.
+4. El conector importa los elementos de mensaje convertidos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* del proceso de asignación automática de usuarios que se describe en el [paso 3](#step-3-map-users-and-complete-the-connector-setup). Durante este proceso, se crea una subcarpeta de la carpeta Bandeja de entrada denominada **EML** en los buzones de usuario y los elementos EML se importan a esa carpeta. El conector determina a qué buzón se importarán los elementos mediante el valor de la *propiedad Email.* Cada mensaje contiene esta propiedad, que se rellena con la dirección de correo electrónico de todos los participantes del elemento de contenido.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Cree una cuenta de Globanet Merge1 para Microsoft Connectors. Para crear una cuenta, póngase en contacto [con el soporte técnico de Globanet](https://globanet.com/ms-connectors-contact). Iniciará sesión en esta cuenta cuando cree el conector en el paso 1.
+- Cree una cuenta de Globanet Merge1 para los conectores de Microsoft. Para crear una cuenta, póngase en contacto [con el servicio de soporte al cliente de Globanet.](https://globanet.com/ms-connectors-contact) Inicie sesión en esta cuenta cuando cree el conector en el paso 1.
 
-- El usuario que crea el conector EML en el paso 1 (y lo completa en el paso 3) debe asignarse a la función importación y exportación de buzones de correo en Exchange Online. Este rol es necesario para agregar conectores en la página **conectores de datos** del centro de cumplimiento de Microsoft 365. De forma predeterminada, este rol no está asignado a un grupo de roles en Exchange Online. Puede Agregar el rol importación y exportación de buzones al grupo de funciones de administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [crear grupos](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) de roles o [modificar grupos de roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo sobre la administración de grupos de roles en Exchange Online.
+- El usuario que crea el conector EML en el paso 1 (y lo completa en el paso 3) debe estar asignado al rol De importación y exportación de buzones en Exchange Online. Este rol es necesario para agregar conectores en la página **Conectores** de datos en el Centro de cumplimiento de Microsoft 365. De forma predeterminada, este rol no se asigna a un grupo de roles en Exchange Online. Puede agregar el rol Importación y exportación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones Crear grupos de [roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
-## <a name="step-1-set-up-an-eml-connector"></a>Paso 1: configurar un conector EML
+## <a name="step-1-set-up-an-eml-connector"></a>Paso 1: Configurar un conector EML
 
-El primer paso es obtener acceso a la página **conectores de datos** en el centro de cumplimiento de Microsoft 365 y crear un conector para datos EML.
+El primer paso es obtener acceso a la página **Conectores** de datos en el Centro de cumplimiento de Microsoft 365 y crear un conector para datos EML.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y, a continuación, haga clic en **conectores de datos**  >  **EML**.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y, a continuación, **haga clic en Conectores de datos**  >  **EML**.
 
-2. En la página de descripción de producto **EML** , haga clic en **Agregar conector**.
+2. En la página **de descripción del producto EML,** haga clic en Agregar **conector.**
 
-3. En la página **condiciones de servicio** , haga clic en **Aceptar**.
+3. En la **página Términos de** servicio, haga clic **en Aceptar.**
 
-4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **siguiente**.
+4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **Siguiente**.
 
-5. Inicie sesión en su cuenta de Merge1 para configurar el conector.
+5. Inicie sesión en su cuenta merge1 para configurar el conector.
 
-## <a name="step-2-configure-the-eml-connector-on-the-globanet-merge1-site"></a>Paso 2: configurar el conector EML en el sitio de Merge1 de Globanet
+## <a name="step-2-configure-the-eml-connector-on-the-globanet-merge1-site"></a>Paso 2: Configurar el conector EML en el sitio de Globanet Merge1
 
-El segundo paso consiste en configurar el conector EML en el sitio de Merge1 de Globanet. Para obtener información sobre cómo configurar el conector EML, consulte la [Guía del usuario de conectores de terceros de Merge1](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20EML%20User%20Guide%20.pdf).
+El segundo paso es configurar el conector EML en el sitio de Globanet Merge1. Para obtener información acerca de cómo configurar el conector EML, vea la Guía del usuario de [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20EML%20User%20Guide%20.pdf).
 
-Después de hacer clic en **guardar & finalizar**, se muestra la página **asignación de usuarios** en el Asistente para conectores del centro de cumplimiento de Microsoft 365.
+Después de hacer clic en &  **finalizar,** se muestra la página Asignación de usuarios en el Asistente para conectores en el Centro de cumplimiento de Microsoft 365.
 
-## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: asignar usuarios y completar la configuración del conector
+## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: Asignar usuarios y completar la configuración del conector
 
-Para asignar usuarios y completar la configuración del conector en el centro de cumplimiento de Microsoft 365, siga estos pasos:
+Para asignar usuarios y completar la configuración del conector en el Centro de cumplimiento de Microsoft 365, siga estos pasos:
 
-1. En la página **asignar usuarios externos a Microsoft 365 usuarios** , habilite la asignación automática de usuarios. Los elementos de origen de EML incluyen una propiedad denominada *email*, que contiene las direcciones de correo electrónico de los usuarios de la organización. Si el conector puede asociar esta dirección con un usuario de 365 de Microsoft, los elementos EML se importan al buzón de correo del usuario.
+1. En la **página Asignar usuarios externos a usuarios de Microsoft 365,** habilite la asignación automática de usuarios. Los elementos de origen de EML incluyen una propiedad denominada *Correo* electrónico , que contiene direcciones de correo electrónico para los usuarios de su organización. Si el conector puede asociar esta dirección con un usuario de Microsoft 365, los elementos EML se importan al buzón de ese usuario.
 
-2. Haga clic en **siguiente**, revise la configuración y, después, vaya a la página **conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
+2. Haga **clic en** Siguiente, revise la  configuración y, a continuación, vaya a la página Conectores de datos para ver el progreso del proceso de importación para el nuevo conector.
 
-## <a name="step-4-monitor-the-eml-connector"></a>Paso 4: supervisar el conector EML
+## <a name="step-4-monitor-the-eml-connector"></a>Paso 4: Supervisar el conector EML
 
-Después de crear el conector EML, puede ver el estado del conector en el centro de cumplimiento de Microsoft 365.
+Después de crear el conector EML, puede ver el estado del conector en el Centro de cumplimiento de Microsoft 365.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y haga clic en **conectores de datos** en el panel de navegación izquierdo.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) conectores de **datos y haga clic en** conectores de datos en el panel de navegación izquierdo.
 
-2. Haga clic en la pestaña **conectores** y, a continuación, seleccione el conector **EML** para mostrar la página de flotante. Esta página contiene las propiedades y la información sobre el conector.
+2. Haga clic **en la pestaña Conectores** y, a continuación, seleccione el conector **EML** para mostrar la página desplegable. Esta página contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft.
+3. En Estado del conector  **con origen,** haga clic en el vínculo Descargar registro para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft.
 
 ## <a name="known-issues"></a>Problemas conocidos
 

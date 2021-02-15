@@ -1,5 +1,5 @@
 ---
-title: Crear registros DNS en Yahoo! Small Business para Microsoft
+title: Crear registros DNS en Yahoo! Pequeña Empresa para Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
-description: Aprenda a comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Yahoo! Pequeña empresa para Microsoft.
+description: Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Yahoo! Pequeña Empresa para Microsoft.
 ms.openlocfilehash: 47b3b1f3a6e889d067d0166f872725aa3812a7b4
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -28,7 +28,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49656908"
 ---
-# <a name="create-dns-records-at-yahoo-small-business-for-microsoft"></a>Crear registros DNS en Yahoo! Small Business para Microsoft
+# <a name="create-dns-records-at-yahoo-small-business-for-microsoft"></a>Crear registros DNS en Yahoo! Pequeña Empresa para Microsoft
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
@@ -36,22 +36,22 @@ Si Yahoo! Small Business era su proveedor de host DNS, es importante que conozca
   
 Siga los pasos que se indican en este artículo para crear una cuenta en Aabaco, donde puede realizar cambios en la configuración DNS y renovar sus dominios.
   
-Debe crear una cuenta de Aabaco antes de poder [crear registros DNS](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+Debe crear su cuenta de Aabaco para poder [crear registros DNS.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
 
   
 ## <a name="create-an-aabaco-small-business-account"></a>Crear una cuenta de Aabaco Small Business
 
-1. Para empezar, vaya a su página de dominios en Aabaco con [este vínculo](https://www.luminate.com/services/)y seleccione **configurar la cuenta de Aabaco Small Business**.
+1. To get started, go to your domains page at Aabaco by using [this link](https://www.luminate.com/services/), and select Setup **your Aabaco Small Business account**.
     
-    ![Seleccione configurar la cuenta de Aabaco Small Business](../../media/d708f272-d42f-40a1-9aaf-d05d8cfd55cf.png)
+    ![Seleccione Configurar su cuenta de Aabaco Small Business](../../media/d708f272-d42f-40a1-9aaf-d05d8cfd55cf.png)
   
-2. Proporcionar a su Yahoo! Correo electrónico de pequeña empresa **/identificador de Yahoo** y, a continuación, seleccione **no soy un robot**.
+2. Proporcionar yahoo! Correo electrónico **de Pequeña Empresa/Id.** de Yahoo y, a continuación, seleccione **No soy un robot.**
     
     ![Select I am not a robot](../../media/ded4b5dd-4e04-4baa-ae31-8426b5799151.png)
   
-3. Seleccione **Introducción**.
+3. Seleccione **Introducción.**
     
-    ![Seleccione introducción](../../media/6674707d-c222-4f0d-bec4-229d39ab2499.png)
+    ![Seleccionar Introducción](../../media/6674707d-c222-4f0d-bec4-229d39ab2499.png)
   
 4. Inicie sesión en su cuenta de correo electrónico de Yahoo! Small Business y abra el nuevo correo electrónico de Aabaco Small Business.
     
@@ -60,9 +60,9 @@ Debe crear una cuenta de Aabaco antes de poder [crear registros DNS](../get-help
   
     ![The You've got mail page](../../media/2e02fc30-6cca-40d6-bb64-131a41b4a369.png)
   
-5. En el mensaje de correo electrónico **confirmar su dirección de correo electrónico para continuar** con la instalación, seleccione **Confirmar correo electrónico**.
+5. En el Aabaco, **confirme su dirección de correo electrónico para continuar con el mensaje** de correo electrónico de instalación, seleccione Confirmar correo **electrónico.**
     
-    ![Seleccionar confirmar correo electrónico](../../media/eb5f5526-6f90-4a10-83a7-5249a1ebd562.png)
+    ![Seleccionar Confirmar correo electrónico](../../media/eb5f5526-6f90-4a10-83a7-5249a1ebd562.png)
   
 6. En la página **Elija la contraseña**, escriba (o copie y pegue) la contraseña que quiera usar para su cuenta de Aabaco. 
     
@@ -71,7 +71,7 @@ Debe crear una cuenta de Aabaco antes de poder [crear registros DNS](../get-help
   
     ![The Choose your password page](../../media/cc592345-72d1-4a41-9410-a1f3345cfd1d.png)
   
-7. Seleccione Acepto **los términos y condiciones** y, a continuación, seleccione **Crear contraseña**.
+7. Seleccione **Acepto los términos y condiciones** y, a continuación, seleccione Crear **contraseña.**
     
     ![Seleccione Crear contraseña](../../media/434aa6a3-076e-4abf-a9cf-31145786e819.png)
   
@@ -82,13 +82,13 @@ Debe crear una cuenta de Aabaco antes de poder [crear registros DNS](../get-help
   
     ![The You're almost done page](../../media/1a4142a3-e140-48a8-9c80-aa126ff08179.png)
   
-9. En el mensaje de correo electrónico **casi ha terminado** de Aabaco, seleccione **activar mi cuenta**.
+9. In the Aabaco **You're almost there** email message, select **Activate my account**.
     
-    ![Seleccione activar mi cuenta](../../media/e76d5edc-d8ba-4d8d-872d-d916716c3618.png)
+    ![Seleccionar Activar mi recuento](../../media/e76d5edc-d8ba-4d8d-872d-d916716c3618.png)
   
 10. Inicie sesión en su cuenta de Aabaco Small Business.
     
     ![The sign-in page for Aabaco Small Business](../../media/4ef3cfc3-26da-4e03-932b-9346ef217848.png)
   
-Ahora que ha creado la cuenta de Aabaco, puede [crear registros DNS en Aabaco Small Business para Microsoft](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+Ahora que ha creado su cuenta de Aabaco, puede crear registros DNS en [Aabaco Small Business para Microsoft](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
   

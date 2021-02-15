@@ -15,7 +15,7 @@ ms.custom:
 - M365solutions
 - seo-marvel-jun2020
 f1.keywords: NOCSH
-description: Obtenga información sobre cómo configurar la colaboración segura de contenido en Microsoft Teams para proteger los datos en función de su sensibilidad.
+description: Obtenga información sobre cómo configurar la colaboración de contenido segura en Teams para proteger los datos en función de su confidencialidad.
 ms.openlocfilehash: f65657125fef8b8cf7e4e229d70d8fe211153392
 ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
@@ -25,107 +25,107 @@ ms.locfileid: "49613589"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Configurar la colaboración moderna con Microsoft 365
 
-Poder compartir fácilmente información con las personas adecuadas a la vez que evita el uso compartido es clave para el éxito de una organización. Esto incluye poder compartir datos confidenciales de manera segura con solo aquellos que deben tener acceso a él. Según el proyecto, esto podría incluir compartir datos confidenciales con personas fuera de la organización.
+Poder compartir fácilmente información con las personas correctas a la vez que se evita el uso compartido en exceso es clave para el éxito de una organización. Esto incluye poder compartir datos confidenciales de forma segura solo con aquellos que deberían tener acceso a ellos. Según el proyecto, esto puede incluir el uso compartido de datos confidenciales con personas ajenas a la organización.
 
-Esta guía de la solución de colaboración incluye dos componentes que le ayudarán a:
-- Implementación de Microsoft Teams con el nivel de protección adecuado para cada proyecto
-- Configurar el uso compartido externo con la configuración de seguridad adecuada para cada proyecto
+Esta guía de soluciones de colaboración incluye dos componentes que le ayudarán:
+- Implementar Microsoft Teams con el nivel de protección adecuado para cada proyecto
+- Configurar el uso compartido externo con las opciones de seguridad adecuadas para cada proyecto
 
-![Implemente Teams con la protección adecuada y configure el uso compartido externo con la configuración de seguridad adecuada](..\media\solutions-architecture-center\secure-collaboration-overview.png)
+![Implementar Teams con la protección adecuada y configurar el uso compartido externo con la configuración de seguridad adecuada](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
-Si no hay disponibles herramientas de colaboración de contenido versátil y fácil de usar, los usuarios suelen colaborar por correo electrónico en los documentos. Se trata de un método tedioso y proclive a errores de colaboración y puede aumentar el riesgo de uso compartido inadecuado de la información. Si los usuarios consideran que es muy difícil compartir información, podrían volver a usar productos de consumidores que no se rigen por ello. Esto puede suponer un riesgo aún mayor.
+Si las herramientas de colaboración de contenido versátiles y fáciles de usar no están disponibles, los usuarios a menudo colaborarán por correo electrónico con documentos. Este es un método de colaboración tedioso y propenso a errores y puede aumentar el riesgo de compartir información de forma inadecuada. Si a los usuarios les resulta demasiado difícil compartir información, podrían volver a usar productos de consumidor que no están regido por TI. Esto puede suponer un riesgo aún mayor.
 
-Con Microsoft 365, puede implementar Teams con una variedad de configuraciones que le ayuden a:
+Con Microsoft 365, puede implementar Teams con una variedad de configuraciones que le ayudarán a:
 
 - Proteger la propiedad intelectual
-- Facilitar la colaboración
-- Crear un equilibrio entre la seguridad y la facilidad de uso que aumenta la satisfacción del usuario y reduce el riesgo de sombra
+- Habilitar la colaboración sencilla
+- Crear un equilibrio entre la seguridad y la facilidad de uso que aumente la satisfacción del usuario y reduzca el riesgo de sombras de IT
 
-La mayoría de las organizaciones tienen una variedad de información, con diversos grados de sensibilidad y distintos grados de impacto en el negocio si la información se comparte de manera inadecuada. Según el carácter de una información determinada, es posible que desee permitir el uso compartido con:
+La mayoría de las organizaciones tienen una variedad de información, con distintos grados de confidencialidad y distintos grados de impacto en la empresa si la información se comparte de forma inadecuada. Dependiendo de la confidencialidad de un elemento de información determinado, es posible que desee permitir el uso compartido con:
 
-- Cualquiera (sin autenticar)
+- Cualquiera (no autenticado)
 - Personas dentro de la organización
 - Personas específicas dentro de la organización
 - Personas específicas dentro y fuera de la organización
 
-La información, como los folletos de marketing, se ha diseñado para compartir de forma general fuera de la organización. La información como los menús de cafetería no se pueden utilizar para uso compartido externo, pero no tendría impacto en la empresa si se compartían de forma externa. Estos tipos de información necesitan poca o ninguna protección.
+La información, como los folletos de marketing, está pensada para compartir ampliamente fuera de la organización. La información, como los menús de cafetería, no está destinada al uso compartido externo, pero no tendría ningún impacto en la empresa si se compartiese externamente. Estos tipos de información necesitan poca o ninguna protección.
 
-Los mismos folletos de marketing, mientras están en desarrollo, solo pueden compartirse dentro de la organización. En este caso, la configuración de uso compartido predeterminada en Microsoft Teams puede ser suficiente.
+Esos mismos folletos de marketing, mientras están en desarrollo, solo se pueden compartir dentro de la organización. En este caso, la configuración de uso compartido predeterminada en Teams puede ser suficiente.
 
-La información sobre un nuevo producto que está en desarrollo puede considerarse confidencial, incluso dentro de la organización. En este caso, podría ser adecuado un mayor grado de protección. Por ejemplo, puede restringir el acceso a esta información a los miembros de un equipo específico. Según el proyecto, es posible que deba colaborar con personas fuera de la organización, como un proveedor o una organización asociada.
+La información sobre un nuevo producto que está en desarrollo puede considerarse confidencial, incluso dentro de la organización. Un mayor grado de protección podría ser apropiado en este caso. Puede restringir el acceso a esta información a los miembros de un equipo específico, por ejemplo. Según el proyecto, es posible que deba colaborar con personas ajenas a la organización, como un proveedor o una organización asociada.
 
-La información esencial para el éxito de la organización o que tenga requisitos de seguridad o de cumplimiento estrictos puede requerir niveles de protección aún más elevados.
+La información que es fundamental para el éxito de su organización o que tiene requisitos de seguridad o cumplimiento estrictos puede requerir niveles de protección aún mayores.
 
-![Escala del riesgo de baja (folleto emitido) a alta (datos empresariales confidenciales)](../media/solutions-architecture-center/SecureCollaboration-SensitivityAndBusinessImpactofSharing-fromVisio.png)
+![Escala de riesgos de bajo (folleto publicado) a alto (datos empresariales confidenciales)](../media/solutions-architecture-center/SecureCollaboration-SensitivityAndBusinessImpactofSharing-fromVisio.png)
 
-Para todos los escenarios mencionados anteriormente, puede usar Teams en Microsoft Teams para almacenar, compartir y colaborar en la información. 
+Para todos los escenarios mencionados anteriormente, puede usar los equipos de Microsoft Teams para almacenar, compartir y colaborar en la información. 
 
-Para configurar una colaboración segura, use estas funciones y características de Microsoft 365.
+Para configurar la colaboración segura, use estas funciones y características de Microsoft 365.
 
 | Producto o componente | Funcionalidad o característica | Licencias |
 |:-------|:-----|:-------|
-| Microsoft defender para Office 365 | Datos adjuntos seguros para SPO, OneDrive y Teams; Documentos seguros; Vínculos seguros para Microsoft Teams    | Microsoft 365 E1, E3 y E5 |
-| SharePoint    | Directivas de uso compartido de sitios y archivos, permisos de uso compartido de sitios, vínculos para compartir, solicitudes de acceso, configuración de uso compartido del invitado del sitio | Microsoft 365 E1, E3 y E5 |
+| Microsoft Defender para Office 365 | Datos adjuntos seguros para SPO, OneDrive y Teams; Documentos seguros; Vínculos seguros para Teams    | Microsoft 365 E1, E3 y E5 |
+| SharePoint    | Directivas de uso compartido de sitios y archivos, permisos de uso compartido de sitios, vínculos para compartir, solicitudes de acceso, configuración de uso compartido de invitados del sitio | Microsoft 365 E1, E3 y E5 |
 | Microsoft Teams   | Acceso de invitado, equipos privados, canales privados | Microsoft 365 E1, E3 y E5 |
 | Cumplimiento de Microsoft 365  | Etiquetas de confidencialidad    | Microsoft 365 E3 y E5 |
 
 ### <a name="using-teams-for-all-kinds-of-data"></a>Uso de Teams para todo tipo de datos
 
-Para administrar el acceso a la información con diferentes sensitivities, hemos desarrollado [tres niveles distintos de protección para Microsoft Teams](configure-teams-three-tiers-protection.md). Puede personalizar cualquiera de estos niveles para tratar mejor las necesidades o su negocio. 
+Para administrar el acceso a la información con diferentes sensibilidades, hemos desarrollado tres niveles diferentes de [protección para Teams.](configure-teams-three-tiers-protection.md) Puede personalizar cualquiera de estos niveles para satisfacer mejor las necesidades o su empresa. 
 
 ![Imagen en miniatura para el póster de la arquitectura lógica de Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
-Estos niveles: *línea base*, *sensible* y *extremadamente sensible* : aumentan gradualmente las protecciones que ayudan a evitar el uso compartido y la fuga potencial de información, como se muestra en la siguiente tabla.
+Estos niveles (línea  *base,* confidencial y altamente confidencial) aumentan gradualmente las protecciones que ayudan a evitar el exceso de uso compartido y la posible fuga de información, como se muestra en la tabla siguiente. 
 
-|-|**Nivel de línea base**|**Nivel confidencial**|**Nivel muy confidencial**|
+|-|**Nivel de línea base**|**Nivel confidencial**|**Nivel altamente confidencial**|
 |:--|:-----------|:------------|:-------------------|
 |Equipo público o privado|Ambos|Private|Private|
 |Uso compartido no autenticado|Blocked|Blocked|Blocked|
-|Uso compartido de archivos|Permitido|Permitido|Solo pueden compartir los propietarios del equipo.|
-|Pertenencia al equipo|Cualquiera puede unirse a un equipo público.<br>Se requiere la aprobación del propietario del equipo para unirse a equipos privados.|Se necesita la aprobación del propietario del equipo para unirse.|Se necesita la aprobación del propietario del equipo para unirse.|
-|Cifrado de documentos|||Disponible con la etiqueta de confidencialidad|
+|Uso compartido de archivos|Permitido|Permitido|Solo los propietarios del equipo pueden compartir.|
+|Pertenencia al equipo|Cualquier persona puede unirse a equipos públicos.<br>La aprobación del propietario del equipo necesaria para unirse a equipos privados.|Se requiere la aprobación del propietario del equipo para unirse.|Se requiere la aprobación del propietario del equipo para unirse.|
+|Cifrado de documentos|||Disponible con etiqueta de confidencialidad|
 |Uso compartido de invitados|Permitido|Se puede permitir o bloquear|Se puede permitir o bloquear|
-|Dispositivos no administrados|Sin restricción|Acceso a través de Web|Blocked|
+|Dispositivos no administrados|Sin restricciones|Acceso solo web|Blocked|
 
-La configuración de estos niveles implica:
+La configuración de estos niveles implica lo siguiente:
 
-- Configuración de opciones en Microsoft Teams para el acceso de invitado y los canales privados
-- Configuración de opciones en el sitio de SharePoint asociado a un equipo para uso compartido e interno de invitado, solicitudes de acceso y vínculos de uso compartido
-- Para los niveles *confidenciales* y *muy sensibles* , configurar las etiquetas de confidencialidad para clasificar los equipos y controlar el uso compartido y el acceso de invitados desde dispositivos no administrados
-- Para el nivel *extremadamente sensible* , configure una etiqueta de confidencialidad para cifrar los documentos a los que se aplica
+- Configuración de opciones en Teams para el acceso de invitados y canales privados
+- Configuración de opciones en el sitio de SharePoint asociado a un equipo para el uso compartido interno e invitado, las solicitudes de acceso y los vínculos de uso compartido
+- Para los *niveles confidenciales* y *altamente* confidenciales, configurar etiquetas de confidencialidad para clasificar los equipos y controlar el uso compartido de invitados y el acceso desde dispositivos no administrados
+- Para el *nivel altamente* confidencial, configurar una etiqueta de confidencialidad para cifrar los documentos a los que se aplica
 
-Empiece con el nivel de línea base y, a continuación, agregue equipos que usen los niveles *Sensitive y sensiblemente* *confidenciales* según sea necesario para ayudar a proteger la información de la organización. Consulte estos recursos para empezar:
+Comience con el nivel de línea base  y, a continuación, agregue equipos que usen los niveles confidenciales y altamente confidenciales según sea necesario para ayudar a proteger la información de su organización.  Vea estos recursos para empezar:
 
 - [Configure equipos con la protección de base de referencia](configure-teams-baseline-protection.md)
 - [Configure equipos con protección de datos confidenciales](configure-teams-sensitive-protection.md)
 - [Configuración de equipos con protección de datos con un nivel de confidencialidad alto](configure-teams-highly-sensitive-protection.md)
 
-Si tiene un proyecto muy sensible que requiere protección adicional para compartir incluso dentro de su organización, puede configurar un equipo que use su propia etiqueta de confidencialidad para cifrar archivos de modo que solo los miembros del equipo puedan leerlos. Consulte [Configure a Team with Security Isolation](secure-teams-security-isolation.md) para obtener más información.
+Si tiene un proyecto altamente confidencial que requiere protección adicional contra el uso compartido incluso dentro de su organización, puede configurar un equipo que use su propia etiqueta de confidencialidad para cifrar archivos de modo que solo los miembros del equipo puedan leerlos. Consulte [Configurar un equipo con aislamiento de seguridad](secure-teams-security-isolation.md) para obtener más información.
 
 ### <a name="sharing-with-people-outside-your-organization"></a>Compartir con personas de fuera de la organización
 
-Es posible que necesite [compartir información de cualquier importancia con personas de fuera de la organización](collaborate-with-people-outside-your-organization.md). Esto puede abarcar desde compartir un solo documento con una sola persona para colaborar en un proyecto principal con una organización de asociados de gran tamaño o freelancers de todo el mundo. En Microsoft 365, esta gama de uso compartido externo puede realizarse fácilmente y con las protecciones adecuadas para ayudar a proteger la información confidencial.
+Es posible que tenga que [compartir información de cualquier confidencialidad con personas ajenas a su organización.](collaborate-with-people-outside-your-organization.md) Esto puede oscilar entre compartir un único documento con una sola persona o colaborar en un proyecto importante con una organización de socios de gran tamaño o escritores de todo el mundo. En Microsoft 365, esta gama de uso compartido externo se puede realizar fácilmente y con las medidas de seguridad adecuadas para ayudar a proteger su información confidencial.
 
-Estos recursos le ayudarán a configurar su entorno para colaborar con personas de fuera de su organización:
+Estos recursos le ayudarán a empezar a configurar el entorno para colaborar con personas ajenas a su organización:
 
-- [Colaborar en documentos](collaborate-on-documents.md) para compartir archivos individuales de carpetas.
-- [Colaborar en un sitio](collaborate-in-site.md) para colaborar con invitados en un sitio de SharePoint.
-- [Colabore como un equipo](collaborate-as-team.md) para colaborar con los invitados en un equipo.
+- [Colaborar en documentos para](collaborate-on-documents.md) compartir archivos individuales de carpetas.
+- [Colaborar en un sitio para](collaborate-in-site.md) colaborar con invitados en un sitio de SharePoint.
+- [Colaborar como equipo para](collaborate-as-team.md) colaborar con invitados en un equipo.
 
-En función de la confidencialidad de la información que se comparte, puede Agregar protecciones para ayudar a evitar el uso compartido. Estos recursos le ayudarán a configurar las protecciones que necesita para su organización:
+En función de la confidencialidad de la información que se comparta, puede agregar medidas de seguridad para ayudar a evitar el exceso de uso compartido. Estos recursos le ayudarán a configurar las protecciones que necesita para su organización:
 
 - [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](best-practices-anonymous-sharing.md)
 - [Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización](share-limit-accidental-exposure.md)
 - [Crear un entorno seguro de uso compartido para invitados](create-secure-guest-sharing-environment.md)
 
-Si tiene un proyecto principal con una organización asociada, puede usar la administración de derechos de Azure para administrar los invitados de esa organización en un equipo que haya configurado para el proyecto. Consulte [Create a B2B extranet with Managed Guests](b2b-extranet.md) para obtener más información.
+Si tiene un proyecto importante con una organización asociada, puede usar Azure Entitlement Management para administrar los invitados de esa organización en un equipo que haya configurado para el proyecto. Consulte [Crear una extranet B2B con invitados administrados para](b2b-extranet.md) obtener más información.
 
-## <a name="deploy-the-secure-collaboration-solution"></a>Implementación de la solución de colaboración segura
+## <a name="deploy-the-secure-collaboration-solution"></a>Implementar la solución de colaboración segura
 
-Cuando esté listo para implementar esta solución, continúe con estos pasos:
-1. Configure los [tres niveles de protección distintos para Microsoft Teams](configure-teams-three-tiers-protection.md).
-2. Configure las opciones para [compartir información de cualquier importancia con personas de fuera de la organización](collaborate-with-people-outside-your-organization.md).
+Cuando esté listo para implementar esta solución, siga estos pasos:
+1. Configure los [tres niveles diferentes de protección para Teams.](configure-teams-three-tiers-protection.md)
+2. Configure las opciones para [compartir información de cualquier confidencialidad con personas ajenas a su organización.](collaborate-with-people-outside-your-organization.md)
 
 ## <a name="see-also"></a>Vea también
 

@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector para importar y archivar datos de Reuters Eikon de Globanet en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar las características de cumplimiento, como directivas de retención legal, búsqueda de contenido y retención para administrar datos de terceros.
+description: Los administradores pueden configurar un conector para importar y archivar datos eikon de Reuters desde Globanet en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como suspensión legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
 ms.openlocfilehash: f790317fb8ed8f94601d7915b484015c4cdf6088
 ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
@@ -21,67 +21,67 @@ ms.locfileid: "49620367"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-eikon-data"></a>Configurar un conector para archivar datos de Reuters Eikon
 
-Use un conector de Globanet en el centro de cumplimiento de Microsoft 365 para importar y archivar datos desde la plataforma de Eikon de Reuters a los buzones de usuario de la organización 365 de Microsoft. Globanet proporciona un conector de [Reuters Eikon](https://globanet.com/eikon/) que está configurado para capturar elementos del origen de datos de terceros (de forma regular) e importar dichos elementos a Microsoft 365. El conector convierte el contenido, por ejemplo, los mensajes de persona a persona, chats de grupo, datos adjuntos y avisos de declinación de responsabilidad de la cuenta de Eikon de Reuters de un usuario en un formato de mensaje de correo electrónico y, a continuación, importa dichos elementos en el buzón del usuario en Microsoft 365.
+Use un conector Globanet en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos desde la plataforma Reuters Eikon a los buzones de usuario de su organización de Microsoft 365. Globanet proporciona un conector [Reuters Eikon](https://globanet.com/eikon/) que está configurado para capturar elementos del origen de datos de terceros (de forma periódica) e importar esos elementos a Microsoft 365. El conector convierte el contenido, como mensajes de persona a persona, chats grupales, datos adjuntos y avisos de declinación de responsabilidades de la cuenta de Reuters Eikon de un usuario a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 
-Una vez que los datos de Reuters Eikon se almacenan en buzones de usuario, puede aplicar características de cumplimiento de Microsoft 365, como retención por juicio, eDiscovery, directivas de retención y etiquetas de retención y cumplimiento de la comunicación. El uso de un conector Eikon de Reuters para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir las directivas gubernamentales y regulatorias.
+Después de almacenar los datos de Reuters Eikon en los buzones de usuario, puede aplicar características de cumplimiento de Microsoft 365, como retención por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención, y cumplimiento de comunicaciones. El uso de un conector Reuters Eikon para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
-## <a name="overview-of-archiving-reuters-eikon-data"></a>Información general sobre el archivado de datos de Eikon de Reuters
+## <a name="overview-of-archiving-reuters-eikon-data"></a>Información general sobre el archivado de datos eikon de Reuters
 
-La siguiente introducción explica el proceso de uso de un conector para archivar datos de Reuters Eikon en Microsoft 365.
+En la siguiente introducción se explica el proceso de uso de un conector para archivar datos eikon de Reuters en Microsoft 365.
 
-![Flujo de trabajo de archivado para datos de Reuters Eikon](../media/ReutersEikonConnectorWorkflow.png)
+![Flujo de trabajo de archivado para datos Eikon de Reuters](../media/ReutersEikonConnectorWorkflow.png)
 
-1. Su organización trabaja con Reuters Eikon para instalar y configurar un sitio de Reuters Eikon.
+1. Su organización trabaja con Reuters Eikon para configurar y configurar un sitio de Reuters Eikon.
 
-2. Una vez cada 24 horas, los elementos de Reuters Eikon se copian en el sitio Merge1 de Globanet. El conector también convierte los elementos de Reuters Eikon en un formato de mensaje de correo electrónico.
+2. Una vez cada 24 horas, los elementos eikon de Reuters se copian en el sitio de Globanet Merge1. El conector también convierte los elementos Eikon de Reuters a un formato de mensaje de correo electrónico.
 
-3. El conector de Reuters Eikon que se crea en el centro de cumplimiento de Microsoft 365 se conecta al sitio de Globanet Merge1 todos los días y transfiere el contenido a una ubicación de almacenamiento seguro de Azure en la nube de Microsoft.
+3. El conector Reuters Eikon que cree en el Centro de cumplimiento de Microsoft 365 se conecta al sitio de Globanet Merge1 todos los días y transfiere el contenido a una ubicación segura de Azure Storage en la nube de Microsoft.
 
-4. El conector importa elementos a los buzones de usuarios específicos mediante el valor de la propiedad *email* de la asignación automática de usuarios, como se describe en el [paso 3](#step-3-map-users-and-complete-the-connector-setup). Se crea una subcarpeta de la carpeta Bandeja de entrada denominada **Reuters Eikon** en los buzones de usuario y los elementos se importan a esa carpeta. El conector determina a qué buzón se importarán los elementos mediante el valor de la propiedad *email* . Cada elemento de Reuters Eikon contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento.
+4. El conector importa elementos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* de la asignación automática de usuarios, tal como se describe en el [paso 3.](#step-3-map-users-and-complete-the-connector-setup) Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **Reuters Eikon** en los buzones de usuario y los elementos se importan a esa carpeta. El conector determina a qué buzón se importarán los elementos mediante el valor de la *propiedad Email.* Cada elemento Eikon de Reuters contiene esta propiedad, que se rellena con la dirección de correo electrónico de todos los participantes del elemento.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Cree una cuenta de Globanet Merge1 para Microsoft Connectors. Para crear una cuenta, póngase en contacto [con el soporte técnico de Globanet](https://globanet.com/ms-connectors-contact). Iniciará sesión en esta cuenta cuando cree el conector en el paso 1.
+- Cree una cuenta de Globanet Merge1 para los conectores de Microsoft. Para crear una cuenta, póngase en contacto [con el servicio de soporte al cliente de Globanet.](https://globanet.com/ms-connectors-contact) Inicie sesión en esta cuenta cuando cree el conector en el paso 1.
 
-- El usuario que crea el conector de Reuters Eikon en el paso 1 (y lo completa en el paso 3) debe asignarse a la función importación y exportación de buzones de correo en Exchange Online. Este rol es necesario para agregar conectores en la página **conectores de datos** del centro de cumplimiento de Microsoft 365. De forma predeterminada, este rol no está asignado a un grupo de roles en Exchange Online. Puede Agregar el rol importación y exportación de buzones al grupo de funciones de administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea las secciones [crear grupos](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) de roles o [modificar grupos de roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) en el artículo sobre la administración de grupos de roles en Exchange Online.
+- El usuario que crea el conector Reuters Eikon en el paso 1 (y lo completa en el paso 3) debe estar asignado al rol De importación y exportación de buzones en Exchange Online. Este rol es necesario para agregar conectores en la página **Conectores** de datos en el Centro de cumplimiento de Microsoft 365. De forma predeterminada, este rol no se asigna a un grupo de roles en Exchange Online. Puede agregar el rol De importación y exportación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol de importación y exportación de buzones de correo y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones Crear grupos de [roles](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
-## <a name="step-1-set-up-the-reuters-eikon-connector"></a>Paso 1: configurar el conector de Reuters Eikon
+## <a name="step-1-set-up-the-reuters-eikon-connector"></a>Paso 1: Configurar el conector Reuters Eikon
 
-El primer paso es obtener acceso a la página **conectores de datos** en el centro de cumplimiento de Microsoft 365 y crear un conector para los datos de Reuters Eikon.
+El primer paso es acceder a la página **Conectores** de datos en el Centro de cumplimiento de Microsoft 365 y crear un conector para los datos de Reuters Eikon.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y, a continuación, haga clic en **conectores de datos**  >  **Reuters Eikon**.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y, a continuación, haga clic **en Conectores** de  >  **datos Reuters Eikon**.
 
-2. En la página de Descripción del producto **Reuters Eikon** , haga clic en **Agregar conector**.
+2. En la **página Descripciones del producto Reuters Eikon,** haga clic **en Agregar conector.**
 
-3. En la página **condiciones de servicio** , haga clic en **Aceptar**.
+3. En la **página Términos de** servicio, haga clic **en Aceptar.**
 
-4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **siguiente**.
+4. Escriba un nombre único que identifique el conector y, a continuación, haga clic en **Siguiente**.
 
-5. Inicie sesión en su cuenta de Merge1 para configurar el conector.
+5. Inicie sesión en su cuenta merge1 para configurar el conector.
 
-## <a name="step-2-configure-the-reuters-eikon-connector-on-the-globanet-merge1-site"></a>Paso 2: configurar el conector de Reuters Eikon en el sitio de Merge1 de Globanet
+## <a name="step-2-configure-the-reuters-eikon-connector-on-the-globanet-merge1-site"></a>Paso 2: Configurar el conector Reuters Eikon en el sitio de Globanet Merge1
 
-El segundo paso consiste en configurar el conector Reuters Eikon en el sitio Merge1. Para obtener información sobre cómo configurar el conector Reuters Eikon en el sitio de Globanet Merge1, consulte [Merge1 guía del usuario de conectores de terceros](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Reuters%20Eikon%20User%20Guide%20.pdf).
+El segundo paso es configurar el conector Reuters Eikon en el sitio Merge1. Para obtener información sobre cómo configurar el conector Reuters Eikon en el sitio de Globanet Merge1, vea la Guía del usuario de Conectores [de terceros Merge1.](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Reuters%20Eikon%20User%20Guide%20.pdf)
 
-Después de hacer clic en **guardar & finalizar**, se muestra la página **asignación de usuarios** en el Asistente para conectores del centro de cumplimiento de Microsoft 365.
+Después de hacer clic en &  **finalizar,** se muestra la página Asignación de usuarios en el Asistente para conectores en el Centro de cumplimiento de Microsoft 365.
 
-## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: asignar usuarios y completar la configuración del conector
+## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Paso 3: Asignar usuarios y completar la configuración del conector
 
-Para asignar usuarios y completar la configuración del conector en el centro de cumplimiento de Microsoft 365, siga estos pasos:
+Para asignar usuarios y completar la configuración del conector en el Centro de cumplimiento de Microsoft 365, siga estos pasos:
 
-1. En la página **asignar usuarios externos a Microsoft 365 usuarios** , habilite la asignación automática de usuarios. Los elementos Eikon de Reuters incluyen una propiedad denominada *email*, que contiene las direcciones de correo electrónico de los usuarios de su organización. Si el conector puede asociar esta dirección con un usuario de Microsoft 365, los elementos se importan al buzón de correo del usuario.
+1. En la **página Asignar usuarios externos a usuarios de Microsoft 365,** habilite la asignación automática de usuarios. Los elementos Eikon de Reuters incluyen una propiedad denominada *Correo* electrónico, que contiene direcciones de correo electrónico para los usuarios de su organización. Si el conector puede asociar esta dirección con un usuario de Microsoft 365, los elementos se importan al buzón de ese usuario.
 
-2. Haga clic en **siguiente**, revise la configuración y, después, vaya a la página **conectores de datos** para ver el progreso del proceso de importación del nuevo conector.
+2. Haga **clic en** Siguiente, revise la  configuración y, a continuación, vaya a la página Conectores de datos para ver el progreso del proceso de importación para el nuevo conector.
 
-## <a name="step-4-monitor-the-reuters-eikon-connector"></a>Paso 4: supervisar el conector de Reuters Eikon
+## <a name="step-4-monitor-the-reuters-eikon-connector"></a>Paso 4: Supervisar el conector Reuters Eikon
 
-Después de crear el conector de Reuters EIKON, puede ver el estado del conector en el centro de cumplimiento de Microsoft 365.
+Después de crear el conector Reuters Eikon, puede ver el estado del conector en el Centro de cumplimiento de Microsoft 365.
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) y haga clic en **conectores de datos** en el panel de navegación izquierdo.
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) conectores de **datos y haga clic en** conectores de datos en el panel de navegación izquierdo.
 
-2. Haga clic en la pestaña **conectores** y, a continuación, seleccione el conector de **Reuters Eikon** para mostrar la página de flotante. Esta página contiene las propiedades y la información sobre el conector.
+2. Haga clic **en la pestaña Conectores** y, a continuación, seleccione el conector **Reuters Eikon** para mostrar la página desplegable. Esta página contiene las propiedades y la información sobre el conector.
 
-3. En **Estado del conector con origen**, haga clic en el vínculo **Descargar registro** para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft.
+3. En Estado del conector  **con origen,** haga clic en el vínculo Descargar registro para abrir (o guardar) el registro de estado del conector. Este registro contiene información sobre los datos que se han importado a la nube de Microsoft.
 
 ## <a name="known-issues"></a>Problemas conocidos
 

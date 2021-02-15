@@ -1,5 +1,5 @@
 ---
-title: Infraestructura de ti y necesidades empresariales de Contoso
+title: Infraestructura de TI de Contoso y necesidades empresariales
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -13,7 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Comprenda la estructura básica de la infraestructura de ti local de Contoso y cómo se satisfacen las necesidades empresariales de Microsoft 365 para la empresa.
+description: Comprenda la estructura básica de la infraestructura de TI local de Contoso y cómo Microsoft 365 para empresas cumple las necesidades empresariales de la empresa.
 ms.openlocfilehash: 72d502b5078a1e572eeba27832550af52907e209
 ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
@@ -21,21 +21,21 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 12/02/2020
 ms.locfileid: "49558411"
 ---
-# <a name="contoso-it-infrastructure-and-business-needs"></a>Infraestructura de ti y necesidades empresariales de Contoso
+# <a name="contoso-it-infrastructure-and-business-needs"></a>Infraestructura de TI de Contoso y necesidades empresariales
 
-Contoso está pasando de una infraestructura de ti centralizada local a una configuración de nube inclusiva que incorpora las cargas de trabajo y aplicaciones de productividad personal basadas en la nube.
+Contoso está pasando de una infraestructura de TI centralizada local a una configuración de nube inclusiva que incorpora aplicaciones y cargas de trabajo de productividad personal basadas en la nube.
 
-## <a name="existing-contoso-it-infrastructure"></a>Infraestructura de TI existente de Contoso
+## <a name="existing-contoso-it-infrastructure"></a>Infraestructura de TI de Contoso existente
 
 Contoso usa una infraestructura de TI local mayoritariamente centralizada, con centros de datos de aplicaciones en la sede de París.
 
-A continuación se muestra la oficina central con centros de aplicaciones, una red perimetral e Internet.
+Esta es la oficina central con centros de datos de aplicaciones, una red perimetral e Internet.
 
-![Infraestructura de TI existente de Contoso](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
+![Infraestructura de TI de Contoso existente](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 En los centros de datos de aplicaciones locales se hospeda lo siguiente: 
 
-- Aplicaciones de línea de negocio personalizadas que usan SQL Server y otras bases de datos de Linux.
+- Aplicaciones de línea de negocio personalizadas que usan SQL Server y otras bases de datos linux.
 - Un conjunto de servidores de SharePoint heredados.
 - Servidores de nivel de equipo y de la organización para el almacenamiento de archivos.
 
@@ -43,24 +43,24 @@ Además, cada una de las oficinas centrales regionales es compatible con un conj
 
 La capacidad de búsqueda entre las aplicaciones y los datos de todos estos centros de datos separados geográficamente sigue siendo un desafío.
 
-En la DMZ de la sede central de Contoso, los distintos conjuntos de servidores proporcionan lo siguiente:
+En la red perimetral de la sede de Contoso, distintos conjuntos de servidores proporcionan:
 
-- Hospedaje para el sitio web público de Contoso, desde el que los clientes pueden solicitar productos, piezas, suministros y servicio.
+- Hospedaje para el sitio web público de Contoso, desde el que los clientes pueden pedir productos, elementos, suministros y servicio.
 - Hospedaje de la extranet de partners de Contoso para la colaboración y comunicación de los partners.
 - Acceso remoto a la intranet de Contoso basado en VPN (Red privada virtual) y proxy web para los trabajadores de la sede de París.
 
 ## <a name="contoso-business-needs"></a>Necesidades empresariales de Contoso
 
-Las necesidades empresariales de Contoso se dividen en cinco categorías principales:
+Las necesidades empresariales de Contoso se divide en cinco categorías principales:
 
 **Productividad**
 
 - Facilitar la colaboración
 
-  Reemplace el correo electrónico y la colaboración basada en recursos compartidos de archivos con un modelo en línea que permita cambios en tiempo real en documentos, reuniones en línea más sencillas y conversaciones de conversación capturadas.
+  Reemplace la colaboración basada en el uso compartido de archivos y el correo electrónico con un modelo en línea que permita cambios en tiempo real en documentos, reuniones en línea más fáciles y conversaciones capturadas.
 - Mejorar la productividad de los trabajadores remotos y móviles
 
-  Con muchos empleados que trabajan desde casa o en el campo, reemplace la solución VPN con cuellos de botella por el acceso de tipo de Contoso a los datos y recursos de la nube.
+  Con muchos empleados trabajando desde casa o en el campo, reemplace la solución VPN con cuellos de botella por un acceso eficaz a los datos y recursos de Contoso en la nube.
 - Aumentar la creatividad y la innovación
 
   Aproveche las ventajas de los métodos más recientes de aprendizaje visual y desarrollo de ideas, como la entrada manuscrita y la visualización 3D.
@@ -69,7 +69,7 @@ Las necesidades empresariales de Contoso se dividen en cinco categorías princip
 
 - Administración de identidad y acceso
 
-  Exigir la autenticación multifactor y otras formas de autenticación y proteger las credenciales de las cuentas de usuario y administrador.
+  Exigir multifactor y otras formas de autenticación y proteger las credenciales de cuenta de usuario y administrador.
 
 - Protección contra amenazas
 
@@ -81,63 +81,63 @@ Las necesidades empresariales de Contoso se dividen en cinco categorías princip
 
 - Administración de seguridad
 
-  Supervise el postura de seguridad y detecte y responda a amenazas en tiempo real.
+  Supervise la posición de seguridad y detecte y responda a las amenazas en tiempo real.
 
 **Acceso móvil y remoto, y socios comerciales**
 
 - Mejorar la seguridad de los trabajadores remotos y móviles
 
-  Implemente su propio dispositivo (BYOD) y la administración de dispositivos de propiedad de la empresa para garantizar el acceso seguro, el comportamiento correcto de las aplicaciones y la protección de datos de la empresa.
+  Implementa bring your own device (BYOD) and company-owned device management to ensure secured access, correct application behavior, and company data protection.
 
 - Reducir la infraestructura de acceso remoto para los empleados
 
-  Reducir los costos de mantenimiento y soporte técnico y mejorar el rendimiento de la solución de acceso remoto moviendo los recursos a los que se accede habitualmente a la nube.
+  Reduzca los costos de mantenimiento y soporte técnico y mejore el rendimiento de la solución de acceso remoto moviendo los recursos de acceso frecuente a la nube.
 
-- Proporcionar mejor conectividad y menor overhead para las transacciones de negocio a susiness (B2B)
+- Proporcionar una mejor conectividad y una menor sobrecarga para las transacciones de negocio a suspenso (B2B)
 
-  Reemplace una extranet de asociados con una detección de asociados con una solución basada en la nube que use la autenticación federada.
+  Reemplace una extranet de asociados costosa y con vencimiento por una solución basada en la nube que use la autenticación federada.
 
 **Cumplimiento**
 
 - Cumplir los requisitos normativos regionales
 
-  Garantizar el cumplimiento de las regulaciones de la industria y la regional para el almacenamiento de datos, el cifrado, la privacidad de datos y las regulaciones de datos personales, como el Reglamento General de protección de datos (RGPD) para la Unión Europea.
+  Garantizar el cumplimiento de las normativas regionales y del sector para el almacenamiento de datos, el cifrado, la privacidad de los datos y las normativas de datos personales, como el Reglamento general de protección de datos (RGPD) para la Unión Europea.
 
 **Administración**
 
 - Reducir la sobrecarga de TI para administrar el software que se ejecuta en equipos y dispositivos cliente
 
-  Automatizar la instalación de actualizaciones para el sistema operativo Windows y las aplicaciones de Microsoft 365 para empresas en toda la organización.
+  Automatice la instalación de actualizaciones en el sistema operativo Windows y aplicaciones de Microsoft 365 para empresas en toda la organización.
 
 ## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>Asignación de las necesidades empresariales de Contoso a Microsoft 365 para empresas
 
-El Departamento de TI de Contoso determinó la siguiente asignación de necesidades empresariales a las características de Microsoft 365 E5 antes de la implementación:
+El departamento de TI de Contoso determinó la siguiente asignación de las necesidades empresariales a las características de Microsoft 365 E5 antes de la implementación:
 
 
-| Categoría | Necesidad empresarial | Microsoft 365 para productos o características de empresa |
+| Categoría | Necesidad empresarial | Características o productos de Microsoft 365 para empresas |
 |:-------|:-----|:-----|
 | Productividad |  |  |
 |  | Facilitar la colaboración | Microsoft Teams, SharePoint, OneDrive |
 |  | Mejorar la productividad de los trabajadores remotos y móviles | Cargas de trabajo de Microsoft 365 y datos basados en la nube |
 |  | Aumentar la creatividad y la innovación | Windows Ink, Cortana en el trabajo, PowerPoint |
 | Seguridad |  |  |
-|  | Administración de identidad y acceso | Cuentas de administrador global dedicadas con Azure AD multi-factor Authentication (MFA) y Azure AD privileged Identity Management (PIM) <BR> MFA para todas las cuentas de usuario <BR> Acceso condicional <BR> Windows Hello <BR> Credential Guard de Windows Defender |
-|  | Protección contra amenazas | Advanced Threat Analytics <BR> Windows Defender <BR> Defender para Office 365 <BR> Microsoft defender para Office 365 <BR> Respuesta y investigación de amenazas de Microsoft 365 <BR> |
+|  | Administración de identidad y acceso | Cuentas de administrador global dedicadas con Azure AD Multi-Factor Authentication (MFA) y Azure AD Privileged Identity Management (PIM) <BR> MFA para todas las cuentas de usuario <BR> Acceso condicional <BR> Windows Hello <BR> Credential Guard de Windows Defender |
+|  | Protección contra amenazas | Advanced Threat Analytics <BR> Windows Defender <BR> Defender para Office 365 <BR> Microsoft Defender para Office 365 <BR> Investigación y respuesta de amenazas de Microsoft 365 <BR> |
 |  | Protección de la información | Azure Information Protection <BR> Prevención de pérdida de datos (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
-|  | Administración de seguridad | Azure defender  <BR> Centro de seguridad de Windows Defender |
+|  | Administración de seguridad | Azure Defender  <BR> Centro de seguridad de Windows Defender |
 | Acceso móvil y remoto, y socios comerciales |  |  |
 |  | Mejorar la seguridad de los trabajadores remotos y móviles | Microsoft Intune |
 |  | Reducir la infraestructura de acceso remoto para los empleados | Cargas de trabajo de Microsoft 365 y datos basados en la nube |
 |  | Mejorar la conectividad y reducir la sobrecarga para las transacciones B2B | Autenticación federada y recursos basados en la nube |
 | Cumplimiento |  |  |
-|  | Cumplir los requisitos normativos regionales | Características de RGPD en Microsoft 365 |
+|  | Cumplir los requisitos normativos regionales | Características del RGPD en Microsoft 365 |
 | Administración |  |  |
 |  | Reducir la sobrecarga de TI para instalar actualizaciones de cliente | Actualizaciones de Windows 10 Enterprise <BR> Actualizaciones para las aplicaciones de Microsoft 365 para empresas |
 ||||
 
 ## <a name="next-step"></a>Paso siguiente
 
-Obtenga información sobre la [red local de](contoso-networking.md) contoso Corporation y cómo se optimizó para el acceso y la latencia de los recursos basados en la nube de Microsoft 365.
+Obtenga información sobre la red local de Contoso [Corporation](contoso-networking.md) y cómo se optimizó para el acceso y la latencia a los recursos basados en la nube de Microsoft 365.
 
 ## <a name="see-also"></a>Vea también
 

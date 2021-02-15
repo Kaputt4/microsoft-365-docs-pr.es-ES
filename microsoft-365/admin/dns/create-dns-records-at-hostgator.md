@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
-description: Obtenga información sobre cómo comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype empresarial online y otros servicios en Hostgator para Microsoft.
+description: Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Hostgator for Microsoft.
 ms.openlocfilehash: 3fe13df9b7e41d88c9bf06149eb894a028c4e350
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -35,9 +35,9 @@ ms.locfileid: "49658092"
 Si Hostgator es su proveedor de host DNS, siga los pasos de este artículo para comprobar el dominio y configurar los registros DNS para el correo electrónico, Skype Empresarial Online, etc.
   
 > [!IMPORTANT]
-> Debe realizar la primera procedurebelow, [apuntar su dominio a su cuenta de hospedaje](#point-your-domain-to-your-hosting-account), antes de agregar los registros DNS mediante cualquiera de los otros procedimientos de este artículo. 
+> Debe realizar el primer procedimiento, apuntar el dominio a su cuenta de [hospedaje,](#point-your-domain-to-your-hosting-account)antes de agregar registros DNS mediante cualquiera de los demás procedimientos de este artículo. 
 
-Después de realizar todos estos cambios en Hostgator, su dominio estará configurado para funcionar con los servicios de Microsoft.
+Después de realizar todos estos cambios en Hostgator, el dominio estará configurado para funcionar con los servicios Microsoft.
   
 
   
@@ -54,15 +54,15 @@ Siga estos pasos para asociar el dominio y las cuentas de hospedaje.
   
 1. Para empezar, vaya a su página de administración de dominios en Hostgator con [este vínculo](https://portal.hostgator.com/). Se le pedirá que inicie sesión.
     
-2. Seleccione **dominios** en el lado izquierdo.
+2. Seleccione **Dominios** a la izquierda.
   
-3. En la página **administrar dominios** , seleccione el dominio que desea actualizar. 
+3. En la **página Administrar dominios,** seleccione el dominio que desea actualizar. 
   
-4. En el menú emergente de la izquierda, seleccione servidores de **nombres**.
+4. En el menú emergente de la izquierda, seleccione **Servidores dns.**
   
-5. En la página **servidores DNS** del dominio, en la lista desplegable **apuntar automáticamente este dominio a mi cuenta de hospedaje** , elija la cuenta de hospedaje asociada con el dominio. 
+5. En la **página Servidores** dns de  su dominio, en la lista desplegable Apuntar automáticamente este dominio a mi cuenta de hospedaje, elija la cuenta de hospedaje asociada a su dominio. 
   
-6. Seleccione **Guardar servidores de nombres**.
+6. Seleccione **Guardar servidores dns.**
     
   
 ## <a name="add-a-txt-record-for-verification"></a>Agregar un registro TXT para verificación
@@ -78,14 +78,14 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
   
 1. Para empezar, vaya a la página cPanel en Hostgator. Se le pedirá que inicie sesión primero.
     
-    (Cada cuenta alojada en Hostgator se le asigna una única dirección CPanel. La dirección cPanel debe tener un aspecto parecido a este: https://YourSiteAddress:secure-port-number. El correo electrónico de suscripción que ha recibido de Hostgator especificará esa dirección y un vínculo de cPanel también está disponible en la página de **hospedaje** ).
+    (Cada cuenta alojada en Hostgator se le asigna una única dirección CPanel. La dirección cPanel debe tener un aspecto parecido a este: https://YourSiteAddress:secure-port-number. El correo electrónico de registro que recibió de Hostgator especificará esa dirección y un vínculo cPanel también está disponible en la página **de** hospedaje).
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Para empezar a trabajar con Microsoft, puede comprar una cuenta de hospedaje en Hostgator o volver a [delegar los servidores de nombres para que apunten a Microsoft](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started with Microsoft, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft](change-nameservers-at-hostgator.md). 
   
-2. En la página **Panel de control** , en el área **dominios** , seleccione **Advanced Zone editor**.
+2. En la **página Panel de control,** en el área **Dominios,** seleccione **Editor de zona avanzada.**
     
-3. En la página **Editor de zonas avanzadas** , en el área **Agregar un registro** , en los cuadros para el nuevo registro, escriba o copie y pegue los valores de la tabla siguiente. 
+3. En la **página Editor** de  zona avanzada, en el área Agregar un registro, en los cuadros para el nuevo registro, escriba o copie y pegue los valores de la tabla siguiente. 
     
     (Elija el valor **Tipo** de la lista desplegable). 
     
@@ -94,7 +94,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
     |**Nombre** <br/> |**TTL** <br/> |**Tipo** <br/> |**Datos TXT** <br/> |
     |Use su  *domain_name*. (por ejemplo, fourthcoffee.com.)  <br/> **Este valor DEBE terminar en punto (.).** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
    
-4. Seleccione **Agregar registro**.
+4. Seleccione **Agregar registro.**
     
 5. Espere unos minutos antes de continuar para que el registro que acaba de crear pueda actualizarse en Internet.
     
@@ -121,28 +121,28 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 1. Para empezar, vaya a la página cPanel en Hostgator. Se le pedirá que inicie sesión primero.
     
-    (Cada cuenta alojada en Hostgator se le asigna una única dirección CPanel. La dirección cPanel debe tener un aspecto parecido a este: https://YourSiteAddress:secure-port-number. El correo electrónico de suscripción que ha recibido de Hostgator especificará esa dirección y un vínculo de cPanel también está disponible en la página de **hospedaje** ).
+    (Cada cuenta alojada en Hostgator se le asigna una única dirección CPanel. La dirección cPanel debe tener un aspecto parecido a este: https://YourSiteAddress:secure-port-number. El correo electrónico de registro que recibió de Hostgator especificará esa dirección y un vínculo cPanel también está disponible en la página **de** hospedaje).
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Para empezar a trabajar con Microsoft, puede comprar una cuenta de hospedaje en Hostgator o volver a [delegar los servidores de nombres para que apunten a Microsoft](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started with Microsoft, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft](change-nameservers-at-hostgator.md). 
   
-2. En la página **Panel de control** , en el área **correo electrónico** , seleccione **entrada MX**.
+2. En la **página Panel de control,** en el área **Correo** electrónico, seleccione **Entrada MX**.
     
  
 3. En el área **Enrutamiento de correo electrónico**, seleccione **Agente de intercambio de correo remoto**.
 
 4. Seleccione **Cambiar**.
   
-5. En el área **Agregar un nuevo registro** , en los cuadros para el nuevo registro, escriba (o copie y pegue) los valores de la tabla siguiente. 
+5. En el **área Agregar un nuevo** registro, en los cuadros para el nuevo registro, escriba o copie y pegue los valores de la tabla siguiente. 
     
     |**Prioridad**|**Destino**|
     |:-----|:-----|
-    |comprendi  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtenga la \< *domain-key*  \> desde su cuenta de Microsoft.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtenga la \< *domain-key*  \> desde su cuenta de Microsoft.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
   
-6. Seleccione **Agregar nuevo registro**.
+6. Seleccione **Agregar nuevo registro.**
    
  
-7. Si hay otros registros MX en la sección **registros MX** , quítelos. 
+7. Si hay otros registros MX en la sección **Registros MX,** quítelos. 
 
     
 ## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Agregar los seis registros CNAME necesarios para Microsoft
@@ -153,16 +153,16 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 1. Para empezar, vaya a la página cPanel en Hostgator. Se le pedirá que inicie sesión primero.
     
-    (Cada cuenta alojada en Hostgator se le asigna una única dirección CPanel. La dirección cPanel debe tener un aspecto parecido a este: https://YourSiteAddress:secure-port-number. El correo electrónico de suscripción que ha recibido de Hostgator especificará esa dirección y un vínculo de cPanel también está disponible en la página de **hospedaje** ).
+    (Cada cuenta alojada en Hostgator se le asigna una única dirección CPanel. La dirección cPanel debe tener un aspecto parecido a este: https://YourSiteAddress:secure-port-number. El correo electrónico de registro que recibió de Hostgator especificará esa dirección y un vínculo cPanel también está disponible en la página **de** hospedaje).
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Para empezar a trabajar con Microsoft, puede comprar una cuenta de hospedaje en Hostgator o volver a [delegar los servidores de nombres para que apunten a Microsoft](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started with Microsoft, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft](change-nameservers-at-hostgator.md). 
   
-2. En la página **Panel de control** , en el área **dominios** , seleccione **Advanced Zone editor**.
+2. En la **página Panel de control,** en el área **Dominios,** seleccione **Editor de zona avanzada.**
     
 3. Agregue el primero de los seis registros CNAME.
     
-    En la página **Editor de zonas avanzadas** , en el área **Agregar un registro** , en los cuadros para el nuevo registro, escriba o copie y pegue los valores de la primera fila en la tabla siguiente. 
+    En la **página Editor** de  zona avanzada, en el área Agregar un registro, en los cuadros para el nuevo registro, escriba o copie y pegue los valores de la primera fila de la tabla siguiente. 
     
     (Elija el valor **Tipo** de la lista desplegable). 
     
@@ -175,11 +175,11 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     |enterpriseenrollment. *domain_name*. (por ejemplo, enterpriseregistration.fourthcoffee.com.)  <br/> **Este valor DEBE terminar en punto (.).** <br/> |3600  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
 
   
-4. Seleccione **Agregar registro**.
+4. Seleccione **Agregar registro.**
 
 5. Agregue los otros cinco registros CNAME.
     
-    En la sección **Agregar un registro** , cree un registro (para hacerlo, use los valores de la siguiente fila de la tabla y, después, vuelva a seleccionar **Agregar registro** para completar ese registro). 
+    En la **sección Agregar un** registro, cree un registro con los valores de  la siguiente fila de la tabla y, a continuación, vuelva a seleccionar Agregar registro para completar ese registro. 
     
     Repita este proceso hasta crear los seis registros CNAME.
     
@@ -194,12 +194,12 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 1. Para empezar, vaya a la página cPanel en Hostgator. Se le pedirá que inicie sesión primero.
     
-    (Cada cuenta alojada en Hostgator se le asigna una única dirección CPanel. La dirección cPanel debe tener un aspecto parecido a este: https://YourSiteAddress:secure-port-number. El correo electrónico de suscripción que ha recibido de Hostgator especificará esa dirección y un vínculo de cPanel también está disponible en la página de **hospedaje** ).
+    (Cada cuenta alojada en Hostgator se le asigna una única dirección CPanel. La dirección cPanel debe tener un aspecto parecido a este: https://YourSiteAddress:secure-port-number. El correo electrónico de registro que recibió de Hostgator especificará esa dirección y un vínculo cPanel también está disponible en la página **de** hospedaje).
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Para empezar a trabajar con Microsoft, puede comprar una cuenta de hospedaje en Hostgator o volver a [delegar los servidores de nombres para que apunten a Microsoft](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started with Microsoft, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft](change-nameservers-at-hostgator.md). 
   
-2. En la página **Panel de control** , en el área **dominios** , seleccione **Advanced Zone editor**.
+2. En la **página Panel de control,** en el área **Dominios,** seleccione **Editor de zona avanzada.**
     
 3. On the **Advanced DNS Zone Editor** page, in the **Add a Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -209,7 +209,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     |:-----|:-----|:-----|:-----|
     |Use su  *domain_name*. (por ejemplo, fourthcoffee.com.)  <br/> **Este valor DEBE terminar en punto (.).** <br/> |3600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |
   
-4. Seleccione **Agregar registro**.
+4. Seleccione **Agregar registro.**
     
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Agregar los dos registros SRV necesarios para Microsoft
 <a name="BKMK_add_SRV"> </a>
@@ -219,12 +219,12 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 1. Para empezar, vaya a la página cPanel en Hostgator. Se le pedirá que inicie sesión primero.
     
-    (Cada cuenta alojada en Hostgator se le asigna una única dirección CPanel. La dirección cPanel debe tener un aspecto parecido a este: https://YourSiteAddress:secure-port-number. El correo electrónico de suscripción que ha recibido de Hostgator especificará esa dirección y un vínculo de cPanel también está disponible en la página de **hospedaje** ).
+    (Cada cuenta alojada en Hostgator se le asigna una única dirección CPanel. La dirección cPanel debe tener un aspecto parecido a este: https://YourSiteAddress:secure-port-number. El correo electrónico de registro que recibió de Hostgator especificará esa dirección y un vínculo cPanel también está disponible en la página **de** hospedaje).
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Para empezar a trabajar con Microsoft, puede comprar una cuenta de hospedaje en Hostgator o volver a [delegar los servidores de nombres para que apunten a Microsoft](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started with Microsoft, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft](change-nameservers-at-hostgator.md). 
   
-2. En la página **Panel de control** , en el área **dominios** , seleccione **Advanced Zone editor**.
+2. En la **página Panel de control,** en el área **Dominios,** seleccione **Editor de zona avanzada.**
 
     
 3. Agregue el primero de los dos registros SRV.
@@ -235,16 +235,16 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     |**Nombre**|**TTL**|**Tipo**|**Prioridad**|**Grosor**|**Puerto**|**Destino**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _sip._tls. *domain_name*. (por ejemplo, _sip._tls.fourthcoffee.com.)  <br/> **Este valor DEBE terminar en punto (.).** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _sipfederationtls._tcp. *domain_name*. (por ejemplo, _sipfederationtls._tcp.fourthcoffee.com.)  <br/> **Este valor DEBE terminar en punto (.).** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls. *domain_name*. (por ejemplo, _sip._tls.fourthcoffee.com.)  <br/> **Este valor DEBE terminar en punto (.).** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp. *domain_name*. (por ejemplo, _sipfederationtls._tcp.fourthcoffee.com.)  <br/> **Este valor DEBE terminar en punto (.).** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
 
-4. Seleccione **Agregar registro**.
+4. Seleccione **Agregar registro.**
 
   
 5. Agregue el otro registro SRV.
     
-    En la sección **Agregar un registro** , cree un registro (para hacerlo, use los valores de la siguiente fila de la tabla y, después, vuelva a seleccionar **Agregar registro** para completar ese registro). 
+    En la **sección Agregar un** registro, cree un registro con los valores de  la siguiente fila de la tabla y, a continuación, vuelva a seleccionar Agregar registro para completar ese registro. 
     
 > [!NOTE]
 > Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, vea [Encontrar y solucionar problemas después de agregar el dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 

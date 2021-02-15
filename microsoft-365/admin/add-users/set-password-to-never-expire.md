@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: Obtenga información sobre cómo establecer contraseñas de usuario individuales para que no expiren nunca, mediante Windows PowerShell.
+description: Aprenda a establecer algunas contraseñas de usuario individuales para que nunca expiren, con Windows PowerShell.
 ms.openlocfilehash: 2d60a8312be070d3f56cfef7cfb93e6c5da32991
 ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
@@ -37,22 +37,22 @@ En este artículo se explica cómo establecer una contraseña para que un usuari
 
 Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?](../admin-overview/admin-overview.md). 
 
-Debe ser [administrador global o administrador de contraseñas](about-admin-roles.md) para poder realizar estos pasos.
+Debe ser administrador global o administrador de [contraseñas](about-admin-roles.md) para realizar estos pasos.
 
-Un administrador global de un servicio de nube de Microsoft puede usar [Azure Active Directory PowerShell para Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) para establecer que las contraseñas no expiren para determinados usuarios. También puede usar cmdlets de [AzureAD](https://docs.microsoft.com/powershell/module/Azuread) para quitar la configuración nunca expirada o para ver las contraseñas de usuario que están configuradas para que no expiren nunca.
+Un administrador global de un servicio en la nube de Microsoft puede usar [Azure Active Directory PowerShell para Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) para establecer que las contraseñas no expiren para usuarios específicos. También puede usar los cmdlets [de AzureAD](https://docs.microsoft.com/powershell/module/Azuread) para quitar la configuración que nunca expira o para ver qué contraseñas de usuario están configuradas para que nunca expiren.
 
-Esta guía se aplica a otros proveedores, como Intune y Microsoft 365, que también dependen de Azure AD para los servicios de identidad y directorio. La expiración de la contraseña es la única parte de la Directiva que se puede cambiar.
+Esta guía se aplica a otros proveedores, como Intune y Microsoft 365, que también dependen de Azure AD para la identidad y los servicios de directorio. La expiración de la contraseña es la única parte de la directiva que se puede cambiar.
 
 > [!NOTE]
-> Solo se pueden configurar para que no expiren las contraseñas de las cuentas de usuario que no se sincronizan mediante la sincronización de directorios. Para obtener más información acerca de la sincronización de directorios, consulte [conectar ad con Azure ad](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
+> Solo las contraseñas de las cuentas de usuario que no se sincronizan a través de la sincronización de directorios pueden configurarse para que no expiren. Para obtener más información acerca de la sincronización de directorios, [vea Conectar AD con Azure AD.](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
 
-## <a name="how-to-check-the-expiration-policy-for-a-password"></a>Cómo comprobar la Directiva de expiración de una contraseña
+## <a name="how-to-check-the-expiration-policy-for-a-password"></a>Cómo comprobar la directiva de expiración de una contraseña
 
-Para obtener más información acerca del comando Get-AzureADUser en el módulo AzureAD, vea el artículo de referencia [Get-AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0).
+Para obtener más información sobre el Get-AzureADUser en el módulo AzureAD, vea el artículo de referencia [Get-AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0).
 
 Ejecute uno de los siguientes comandos:
 
-- Para ver si la contraseña de un solo usuario está configurada para que no expire nunca, ejecute el siguiente cmdlet mediante el UPN (por ejemplo, *user@contoso.onmicrosoft.com*) o el identificador de usuario del usuario que desea comprobar:
+- Para ver si la contraseña de un único usuario está configurada para que nunca expire, ejecute el siguiente cmdlet mediante el UPN (por ejemplo, *user@contoso.onmicrosoft.com)* o el identificador de usuario del usuario que desea comprobar:
 
     ```powershell
     Get-AzureADUser -ObjectId <user id or UPN> | Select-Object UserprincipalName,@{
@@ -68,7 +68,7 @@ Ejecute uno de los siguientes comandos:
     }
     ```  
 
-- Para ver la configuración de la **contraseña nunca caduca** para todos los usuarios, ejecute el siguiente cmdlet:
+- Para ver que **la configuración contraseña nunca expira** para todos los usuarios, ejecute el siguiente cmdlet:
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -76,7 +76,7 @@ Ejecute uno de los siguientes comandos:
      }
     ```
 
-- Para obtener un informe de todos los usuarios con PasswordNeverExpires en HTML en el escritorio del usuario actual con el nombre  **ReportPasswordNeverExpires.html**
+- Para obtener un informe de todos los usuarios con PasswordNeverExpires en Html en el escritorio del usuario actual con el nombre  **ReportPasswordNeverExpires.html**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -84,7 +84,7 @@ Ejecute uno de los siguientes comandos:
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
     ```  
 
-- Para obtener un informe de todos los usuarios con PasswordNeverExpires en CSV en el escritorio del usuario actual con el nombre **ReportPasswordNeverExpires.csv**
+- Para obtener un informe de todos los usuarios con PasswordNeverExpires en CSV en el escritorio del usuario actual con nombre **ReportPasswordNeverExpires.csv**
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -101,20 +101,20 @@ Run one of the following commands:
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies DisablePasswordExpiration
     ```
 
-- Para configurar las contraseñas de todos los usuarios de una organización para que no expiren nunca, ejecute el siguiente cmdlet:
+- Para establecer que las contraseñas de todos los usuarios de una organización no expiren nunca, ejecute el siguiente cmdlet:
 
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
 > [!WARNING]
-> Las cuentas de usuario configuradas con el `-PasswordPolicies DisablePasswordExpiration` parámetro vigencia aún en función del `pwdLastSet` atributo. Según el `pwdLastSet` atributo, si cambia la expiración a `-PasswordPolicies None` , todas las contraseñas que tienen un pwdLastSet de más de 90 días requieren que el usuario los cambie la próxima vez que inicie sesión. Este cambio puede afectar a un gran número de usuarios.
+> Las cuentas de usuario configuradas con `-PasswordPolicies DisablePasswordExpiration` el parámetro siguen teniendo una antigüedad basada en el `pwdLastSet` atributo. Según el atributo, si cambia la expiración a , todas las contraseñas con `pwdLastSet` un pwdLastSet de más de 90 días requieren que el usuario las cambie la próxima vez que inicie `-PasswordPolicies None` sesión. Este cambio puede afectar a un gran número de usuarios.
 
-### <a name="set-a-password-to-expire"></a>Establecer una contraseña de expiración
+### <a name="set-a-password-to-expire"></a>Establecer una contraseña para que expire
 
 Ejecute uno de los siguientes comandos:
 
-- Para establecer la contraseña de un usuario para que expire la contraseña, ejecute el siguiente cmdlet mediante el UPN o el identificador de usuario del usuario:
+- Para establecer la contraseña de un usuario para que la contraseña expire, ejecute el siguiente cmdlet mediante el UPN o el identificador de usuario del usuario:
 
     ```powershell
     Set-AzureADUser -ObjectId <user ID> -PasswordPolicies None
