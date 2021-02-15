@@ -27,104 +27,104 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 10/24/2020
 ms.locfileid: "48754545"
 ---
-# <a name="delete-microsoft-365-user-accounts-with-powershell"></a><span data-ttu-id="31ae1-103">Eliminar cuentas de usuario de Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="31ae1-103">Delete Microsoft 365 user accounts with PowerShell</span></span>
+# <a name="delete-microsoft-365-user-accounts-with-powershell"></a><span data-ttu-id="8d7c1-103">Eliminar cuentas de usuario de Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="8d7c1-103">Delete Microsoft 365 user accounts with PowerShell</span></span>
 
-<span data-ttu-id="31ae1-104">Puede usar PowerShell para Microsoft 365 para eliminar y restaurar cuentas de usuario.</span><span class="sxs-lookup"><span data-stu-id="31ae1-104">You can use PowerShell for Microsoft 365 to delete and restore user accounts.</span></span>
+<span data-ttu-id="8d7c1-104">Puede usar PowerShell para Microsoft 365 para eliminar y restaurar cuentas de usuario.</span><span class="sxs-lookup"><span data-stu-id="8d7c1-104">You can use PowerShell for Microsoft 365 to delete and restore user accounts.</span></span>
 
 >[!Note]
-><span data-ttu-id="31ae1-105">Obtenga información sobre cómo [restaurar una cuenta de usuario](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) mediante el centro de administración de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="31ae1-105">Learn how to [restore a user account](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) by using the Microsoft 365 admin center.</span></span>
+><span data-ttu-id="8d7c1-105">Obtenga información sobre [cómo restaurar una cuenta de usuario](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) mediante el Centro de administración de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="8d7c1-105">Learn how to [restore a user account](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) by using the Microsoft 365 admin center.</span></span>
 >
-><span data-ttu-id="31ae1-106">Para obtener una lista de recursos adicionales, consulte [Manage Users and Groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).</span><span class="sxs-lookup"><span data-stu-id="31ae1-106">For a list of additional resources, see [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).</span></span>
+><span data-ttu-id="8d7c1-106">Para obtener una lista de recursos adicionales, vea [Administrar usuarios y grupos.](https://docs.microsoft.com/microsoft-365/admin/add-users/)</span><span class="sxs-lookup"><span data-stu-id="8d7c1-106">For a list of additional resources, see [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).</span></span>
 >   
    
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="31ae1-107">Use el módulo de PowerShell Azure Active Directory para Graph</span><span class="sxs-lookup"><span data-stu-id="31ae1-107">Use the Azure Active Directory PowerShell for Graph module</span></span>
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="8d7c1-107">Use el módulo de PowerShell Azure Active Directory para Graph</span><span class="sxs-lookup"><span data-stu-id="8d7c1-107">Use the Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="31ae1-108">En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span><span class="sxs-lookup"><span data-stu-id="31ae1-108">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="8d7c1-108">En primer [lugar, conéctese a su espacio empresarial de Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)</span><span class="sxs-lookup"><span data-stu-id="8d7c1-108">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
 
-<span data-ttu-id="31ae1-109">Después de conectarse, use la siguiente sintaxis para quitar una cuenta de usuario individual:</span><span class="sxs-lookup"><span data-stu-id="31ae1-109">After you connect, use the following syntax to remove an individual user account:</span></span>
+<span data-ttu-id="8d7c1-109">Después de conectarse, use la siguiente sintaxis para quitar una cuenta de usuario individual:</span><span class="sxs-lookup"><span data-stu-id="8d7c1-109">After you connect, use the following syntax to remove an individual user account:</span></span>
   
 ```powershell
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
 
-<span data-ttu-id="31ae1-110">En este ejemplo se quita la cuenta de usuario *fabricec \@ litwareinc.com*.</span><span class="sxs-lookup"><span data-stu-id="31ae1-110">This example removes the user account *fabricec\@litwareinc.com*.</span></span>
+<span data-ttu-id="8d7c1-110">En este ejemplo se quita la cuenta de *usuario fabricec \@ litwareinc.com*.</span><span class="sxs-lookup"><span data-stu-id="8d7c1-110">This example removes the user account *fabricec\@litwareinc.com*.</span></span>
   
 ```powershell
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> <span data-ttu-id="31ae1-111">El parámetro *-objectId* en el cmdlet **Remove-AzureADUser** acepta tanto el nombre de inicio de sesión de la cuenta, también conocido como el nombre principal de usuario o el identificador de objeto de la cuenta.</span><span class="sxs-lookup"><span data-stu-id="31ae1-111">The *-ObjectID* parameter in the **Remove-AzureADUser** cmdlet accepts either the account's sign-in name, also known as the User Principal Name or the account's object ID.</span></span>
+> <span data-ttu-id="8d7c1-111">El *parámetro -ObjectID* del cmdlet **Remove-AzureADUser** acepta el nombre de inicio de sesión de la cuenta, también conocido como nombre principal de usuario o el identificador de objeto de la cuenta.</span><span class="sxs-lookup"><span data-stu-id="8d7c1-111">The *-ObjectID* parameter in the **Remove-AzureADUser** cmdlet accepts either the account's sign-in name, also known as the User Principal Name or the account's object ID.</span></span>
   
-<span data-ttu-id="31ae1-112">Para mostrar el nombre de cuenta según el nombre de usuario, use los comandos siguientes:</span><span class="sxs-lookup"><span data-stu-id="31ae1-112">To display the account name based on the user's name, use the following commands:</span></span>
+<span data-ttu-id="8d7c1-112">Para mostrar el nombre de cuenta según el nombre de usuario, use los comandos siguientes:</span><span class="sxs-lookup"><span data-stu-id="8d7c1-112">To display the account name based on the user's name, use the following commands:</span></span>
   
 ```powershell
 $userName="<User name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-<span data-ttu-id="31ae1-113">En este ejemplo se muestra el nombre de la cuenta del usuario *Caleb alféizares*.</span><span class="sxs-lookup"><span data-stu-id="31ae1-113">This example displays the account name for the user *Caleb Sills*.</span></span>
+<span data-ttu-id="8d7c1-113">En este ejemplo se muestra el nombre de cuenta del usuario *Caleb Sills*.</span><span class="sxs-lookup"><span data-stu-id="8d7c1-113">This example displays the account name for the user *Caleb Sills*.</span></span>
   
 ```powershell
 $userName="Caleb Sills"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-<span data-ttu-id="31ae1-114">Para eliminar una cuenta según el nombre para mostrar del usuario, use los comandos siguientes:</span><span class="sxs-lookup"><span data-stu-id="31ae1-114">To remove an account based on the user's display name, use the following commands:</span></span>
+<span data-ttu-id="8d7c1-114">Para eliminar una cuenta según el nombre para mostrar del usuario, use los comandos siguientes:</span><span class="sxs-lookup"><span data-stu-id="8d7c1-114">To remove an account based on the user's display name, use the following commands:</span></span>
   
 ```powershell
 $userName="<display name>"
 Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="31ae1-115">Use el Módulo Microsoft Azure Active Directory para Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="31ae1-115">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="8d7c1-115">Use el Módulo Microsoft Azure Active Directory para Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="8d7c1-115">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="31ae1-116">Cuando se elimina una cuenta de usuario mediante el módulo Microsoft Azure Active Directory para Windows PowerShell, la cuenta no se elimina de forma permanente.</span><span class="sxs-lookup"><span data-stu-id="31ae1-116">When you delete a user account through the Microsoft Azure Active Directory Module for Windows PowerShell, the account isn't permanently deleted.</span></span> <span data-ttu-id="31ae1-117">Puede restaurar la cuenta de usuario eliminada durante los siguientes 30 días.</span><span class="sxs-lookup"><span data-stu-id="31ae1-117">You can restore the deleted user account within 30 days.</span></span>
+<span data-ttu-id="8d7c1-116">Al eliminar una cuenta de usuario a través del módulo microsoft Azure Active Directory para Windows PowerShell, la cuenta no se elimina permanentemente.</span><span class="sxs-lookup"><span data-stu-id="8d7c1-116">When you delete a user account through the Microsoft Azure Active Directory Module for Windows PowerShell, the account isn't permanently deleted.</span></span> <span data-ttu-id="8d7c1-117">Puede restaurar la cuenta de usuario eliminada durante los siguientes 30 días.</span><span class="sxs-lookup"><span data-stu-id="8d7c1-117">You can restore the deleted user account within 30 days.</span></span>
 
-<span data-ttu-id="31ae1-118">En primer lugar, [Conéctese a su inquilino de Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="31ae1-118">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+<span data-ttu-id="8d7c1-118">En primer [lugar, conéctese a su espacio empresarial de Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)</span><span class="sxs-lookup"><span data-stu-id="8d7c1-118">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
 
-<span data-ttu-id="31ae1-119">Para eliminar una cuenta de usuario, utilice la siguiente sintaxis:</span><span class="sxs-lookup"><span data-stu-id="31ae1-119">To delete a user account, use the following syntax:</span></span>
+<span data-ttu-id="8d7c1-119">Para eliminar una cuenta de usuario, utilice la siguiente sintaxis:</span><span class="sxs-lookup"><span data-stu-id="8d7c1-119">To delete a user account, use the following syntax:</span></span>
   
 ```powershell
 Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 >[!Note]
-><span data-ttu-id="31ae1-120">PowerShell Core no es compatible con el módulo Microsoft Azure Active Directory para el módulo y los cmdlets de Windows PowerShell con *msol* en su nombre.</span><span class="sxs-lookup"><span data-stu-id="31ae1-120">PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name.</span></span> <span data-ttu-id="31ae1-121">Ejecute estos cmdlets de Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="31ae1-121">Run these cmdlets from Windows PowerShell.</span></span>
+><span data-ttu-id="8d7c1-120">PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory para Windows PowerShell ni los cmdlet sque llevan *Msol* en su nombre.</span><span class="sxs-lookup"><span data-stu-id="8d7c1-120">PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name.</span></span> <span data-ttu-id="8d7c1-121">Ejecute estos cmdlets desde Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="8d7c1-121">Run these cmdlets from Windows PowerShell.</span></span>
 >
 
-<span data-ttu-id="31ae1-122">En este ejemplo se elimina la cuenta de usuario *BelindaN@litwareinc.com*.</span><span class="sxs-lookup"><span data-stu-id="31ae1-122">This example deletes the user account *BelindaN@litwareinc.com*.</span></span>
+<span data-ttu-id="8d7c1-122">En este ejemplo se elimina la cuenta de *BelindaN@litwareinc.com*.</span><span class="sxs-lookup"><span data-stu-id="8d7c1-122">This example deletes the user account *BelindaN@litwareinc.com*.</span></span>
   
 ```powershell
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
 ```
 
-<span data-ttu-id="31ae1-123">Para restaurar una cuenta de usuario eliminada dentro del periodo de gracia de 30 días, utilice la sintaxis siguiente:</span><span class="sxs-lookup"><span data-stu-id="31ae1-123">To restore a deleted user account within the 30-day grace period, use the following syntax:</span></span>
+<span data-ttu-id="8d7c1-123">Para restaurar una cuenta de usuario eliminada dentro del periodo de gracia de 30 días, utilice la sintaxis siguiente:</span><span class="sxs-lookup"><span data-stu-id="8d7c1-123">To restore a deleted user account within the 30-day grace period, use the following syntax:</span></span>
   
 ```powershell
 Restore-MsolUser -UserPrincipalName <sign-in name>
 ```
 
-<span data-ttu-id="31ae1-124">En este ejemplo se restaura la cuenta eliminada \* \@ litwareinc.com\*.</span><span class="sxs-lookup"><span data-stu-id="31ae1-124">This example restores the deleted account *BelindaN\@litwareinc.com*.</span></span>
+<span data-ttu-id="8d7c1-124">En este ejemplo se restaura la cuenta *eliminada BelindaN \@ litwareinc.com*.</span><span class="sxs-lookup"><span data-stu-id="8d7c1-124">This example restores the deleted account *BelindaN\@litwareinc.com*.</span></span>
   
 ```powershell
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ```
 
 >[!Note]
-> <span data-ttu-id="31ae1-125">Para ver la lista de usuarios eliminados que pueden restaurarse, ejecute el siguiente comando:</span><span class="sxs-lookup"><span data-stu-id="31ae1-125">To see the list of deleted users that can be restored, run the following command:</span></span>
+> <span data-ttu-id="8d7c1-125">Para ver la lista de usuarios eliminados que pueden restaurarse, ejecute el siguiente comando:</span><span class="sxs-lookup"><span data-stu-id="8d7c1-125">To see the list of deleted users that can be restored, run the following command:</span></span>
 >    
 > ```powershell
 > Get-MsolUser -All -ReturnDeletedUsers
 > ```
 >
-> <span data-ttu-id="31ae1-126">Si otra cuenta usa el nombre principal de usuario original de la cuenta de usuario, use el parámetro _NewUserPrincipalName_ en vez de _UserPrincipalName_ para especificar un nombre principal de usuario al restaurar la cuenta de usuario.</span><span class="sxs-lookup"><span data-stu-id="31ae1-126">If the user account's original user principal name is used by another account, use the _NewUserPrincipalName_ parameter instead of _UserPrincipalName_ to specify a different user principal name when you restore the user account.</span></span>
+> <span data-ttu-id="8d7c1-126">Si otra cuenta usa el nombre principal de usuario original de la cuenta de usuario, use el parámetro _NewUserPrincipalName_ en vez de _UserPrincipalName_ para especificar un nombre principal de usuario al restaurar la cuenta de usuario.</span><span class="sxs-lookup"><span data-stu-id="8d7c1-126">If the user account's original user principal name is used by another account, use the _NewUserPrincipalName_ parameter instead of _UserPrincipalName_ to specify a different user principal name when you restore the user account.</span></span>
 
 
-## <a name="see-also"></a><span data-ttu-id="31ae1-127">Vea también</span><span class="sxs-lookup"><span data-stu-id="31ae1-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8d7c1-127">Vea también</span><span class="sxs-lookup"><span data-stu-id="8d7c1-127">See also</span></span>
 
-[<span data-ttu-id="31ae1-128">Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="31ae1-128">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
+[<span data-ttu-id="8d7c1-128">Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="8d7c1-128">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
-[<span data-ttu-id="31ae1-129">Administrar Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="31ae1-129">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
+[<span data-ttu-id="8d7c1-129">Administrar Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="8d7c1-129">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[<span data-ttu-id="31ae1-130">Introducción a PowerShell para Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="31ae1-130">Get started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
+[<span data-ttu-id="8d7c1-130">Introducción a PowerShell para Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="8d7c1-130">Get started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
