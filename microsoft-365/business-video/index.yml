@@ -21,7 +21,7 @@ metadata:
   ms.locfileid: "49794165"
 productDirectory:
   items:
-  - title: Comenzar
+  - title: Introducción
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
     summary: Planee su cambio a Microsoft 365 para empresas.
     url: what-is-microsoft-365.md
