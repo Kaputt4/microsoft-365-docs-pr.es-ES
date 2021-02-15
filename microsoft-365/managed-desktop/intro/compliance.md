@@ -44,7 +44,7 @@ Escritorio administrado de Microsoft ha logrado las siguientes certificaciones:
 Puede encontrar información relevante, incluidos los requisitos técnicos y de control, en el Portal de confianza de servicios [(STP),](https://servicetrust.microsoft.com/)el repositorio central para dicha información sobre las ofertas de Servicios en la nube de Microsoft. Puede descargar informes de auditores, certificados [](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) de cumplimiento y mucho más desde la sección Informes de auditoría del STP.
 
 > [!NOTE]
-> Dado que El Escritorio administrado de Microsoft se ejecuta en Azure, los documentos relevantes normalmente tienen nombres de archivo como "Microsoft Azure, Dynamics 365 y otros servicios en línea". En esos documentos, normalmente puede encontrar Escritorio administrado de Microsoft en la categoría "Microsoft Online Services" o "Supervisión y administración".
+> Dado que El Escritorio administrado de Microsoft se ejecuta en Azure, los documentos relevantes normalmente tienen nombres de archivo como "Microsoft Azure, Dynamics 365 y otros servicios en línea". En esos documentos, normalmente puede encontrar escritorio administrado de Microsoft en la categoría "Microsoft Online Services" o "Supervisión y administración".
 
 ## <a name="shared-responsibility"></a>Responsabilidad compartida
 

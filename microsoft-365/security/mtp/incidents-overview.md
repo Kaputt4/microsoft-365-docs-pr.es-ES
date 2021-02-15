@@ -37,7 +37,7 @@ ms.locfileid: "49929287"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-> ¿Desea experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio o](https://aka.ms/mtp-trial-lab) ejecutar el proyecto piloto en [producción.](https://aka.ms/m365d-pilotplaybook)
+> ¿Desea experimentar Con Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio o](https://aka.ms/mtp-trial-lab) ejecutar el proyecto piloto en [producción.](https://aka.ms/m365d-pilotplaybook)
 >
 
 
@@ -60,7 +60,7 @@ Los defensores de seguridad también pueden cambiar el nombre de los incidentes,
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Priorizar incidentes](incident-queue.md)
 - [Investigar incidentes](investigate-incidents.md)
 - [Administrar incidentes](manage-incidents.md)

@@ -19,7 +19,7 @@ ms.locfileid: "49939289"
 # <a name="install-intune-company-portal-on-devices"></a>Instalar el Portal de empresa de Intune en dispositivos
 
 Escritorio administrado de Microsoft requiere que los administradores de TI instalen el Portal de empresa de Intune para sus usuarios con dispositivos de Escritorio administrado de Microsoft. Estas son algunas ventajas para su organización:
-- Los usuarios tienen un lugar para examinar e instalar las aplicaciones disponibles. 
+- Los usuarios tienen un lugar donde examinar e instalar las aplicaciones disponibles. 
 - Los administradores de TI pueden organizar las aplicaciones por categorías para sus usuarios.  
 - Algunas aplicaciones (como Microsoft Project y Microsoft Visio) requieren que el Portal de empresa se implemente con escritorio administrado de Microsoft.
 - Los administradores de TI pueden personalizar el Portal de empresa para su organización. Esto incluye la creación de imágenes de marca, la adición de contactos de soporte técnico local y mucho más. Para obtener más información, [vea Cómo configurar la aplicación Portal de empresa de Microsoft Intune.](https://docs.microsoft.com/intune/company-portal-app)   
@@ -29,7 +29,7 @@ En este tema se documenta el proceso para implementar el Portal de empresa de In
 2. Asignar el Portal de empresa a los usuarios
 3. Comunicar el cambio a los usuarios
 
-## <a name="step-1---purchase-company-portal-from-microsoft-store-for-business-and-sync-with-intune"></a>Paso 1: Comprar el portal de empresa en la Microsoft Store para Empresas y sincronizar con Intune
+## <a name="step-1---purchase-company-portal-from-microsoft-store-for-business-and-sync-with-intune"></a>Paso 1: Comprar el Portal de empresa en la Microsoft Store para Empresas y sincronizar con Intune
 Para obtener información sobre cómo comprar las aplicaciones y sincronizarlas con Intune, consulta Aplicaciones de la [Microsoft Store](deploy-apps.md#msfb-apps) para Empresas en Implementar aplicaciones en dispositivos de Escritorio administrado *de Microsoft.*
 
 En este tema se proporciona información sobre cómo: 

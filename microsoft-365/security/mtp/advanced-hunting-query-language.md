@@ -76,7 +76,7 @@ La consulta en sí suele comenzar con un nombre de tabla seguido de varios eleme
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### <a name="set-the-time-range"></a>Establecer el intervalo de tiempo
-El primer elemento canalado es un filtro de tiempo con ámbito de los siete días anteriores. Limitar el intervalo de tiempo ayuda a garantizar que las consultas tienen un buen rendimiento, devuelven resultados administrables y no se ha pasado el tiempo de espera.
+El primer elemento canalado es un filtro de tiempo con ámbito de los siete días anteriores. Limitar el intervalo de tiempo ayuda a garantizar que las consultas tienen un buen rendimiento, devuelven resultados manejables y no se ha pasado el tiempo de espera.
 
 ```kusto
 | where Timestamp > ago(7d)
@@ -175,7 +175,7 @@ La sección **Comenzar** ofrece algunas consultas sencillas con operadores de us
 ![Imagen de la ventana de búsqueda avanzada](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
->Además de los ejemplos de consultas básicas, también puede acceder a [consultas compartidas](advanced-hunting-shared-queries.md) done encontrará escenarios específicos de búsqueda de amenazas. Explore las consultas compartidas en el lado izquierdo de la página o el repositorio de [consultas de GitHub](https://aka.ms/hunting-queries).
+>Además de los ejemplos de consultas básicas, también puede acceder a [consultas compartidas](advanced-hunting-shared-queries.md) done encontrará escenarios específicos de búsqueda de amenazas. Explore las consultas compartidas en el lado izquierdo de la página o en el [repositorio de consultas de GitHub.](https://aka.ms/hunting-queries)
 
 ## <a name="access-query-language-documentation"></a>Acceso a documentación del lenguaje de consulta
 

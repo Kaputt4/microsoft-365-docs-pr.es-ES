@@ -38,9 +38,9 @@ ms.locfileid: "49928732"
 
 ## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-premium-users"></a>Requisitos previos para configurar dispositivos Windows para usuarios de Microsoft 365 Empresa Premium
 
-Antes de configurar dispositivos Windows para usuarios de Microsoft 365 Empresa Premium, asegúrate de que todos los dispositivos Windows ejecutan Windows 10 Pro, versión 1703 (Creators Update). Windows 10 Pro es un requisito previo para implementar Windows 10 Business, que es un conjunto de servicios en la nube y funcionalidades de administración de dispositivos que complementan Windows 10 Pro y habilitan los controles de seguridad y administración centralizados de Microsoft 365 Empresa Premium.
+Antes de configurar dispositivos Windows para los usuarios de Microsoft 365 Empresa Premium, asegúrate de que todos los dispositivos Windows ejecutan Windows 10 Pro, versión 1703 (Creators Update). Windows 10 Pro es un requisito previo para implementar Windows 10 Business, que es un conjunto de servicios en la nube y capacidades de administración de dispositivos que complementan Windows 10 Pro y habilitan los controles de seguridad y administración centralizados de Microsoft 365 Empresa Premium.
   
-Si tienes dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, tu suscripción a Microsoft 365 Empresa Premium te da derecho a una actualización de Windows 10.
+Si tienes dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, la suscripción a Microsoft 365 Empresa Premium te da derecho a una actualización de Windows 10.
   
 Para obtener más información sobre cómo actualizar los dispositivos Windows a Windows 10 Pro Creators Update, siga los pasos indicados en este tema: [Actualizar dispositivos Windows a Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
   
@@ -116,7 +116,7 @@ Para empezar a usar la cuenta de Microsoft 365 Empresa Premium, vaya al botón I
   
 ## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>Comprobar que el equipo está actualizado a Windows 10 Business
 
-Comprueba que los dispositivos Windows 10 unidos a Azure AD se han actualizado a Windows 10 Business como parte de la suscripción a Microsoft 365 Empresa Premium.
+Comprueba que los dispositivos Windows 10 unidos a Azure AD se han actualizado a Windows 10 Business como parte de tu suscripción a Microsoft 365 Empresa Premium.
   
 1. Vaya a **Configuración** \> **Sistema** \> **Acerca de**.
     
@@ -124,7 +124,7 @@ Comprueba que los dispositivos Windows 10 unidos a Azure AD se han actualizado a
     
     ![Verify that Windows edition is Windows 10 Business.](../media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Para configurar sus dispositivos móviles, consulte Configurar dispositivos móviles para usuarios de [Microsoft 365 Empresa Premium](set-up-mobile-devices.md), Para establecer directivas de protección de dispositivos o de protección de aplicaciones, consulte Administrar Microsoft [365](manage.md)para empresas.
   

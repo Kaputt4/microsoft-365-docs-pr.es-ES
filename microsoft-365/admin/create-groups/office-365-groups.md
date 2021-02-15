@@ -49,7 +49,7 @@ Cualquier usuario puede crear un grupo a menos que limite la creación [de grupo
 Los grupos tienen los siguientes roles:
 
 - **Propietarios:** los propietarios del grupo pueden agregar o quitar miembros y tener permisos únicos, como la capacidad de eliminar conversaciones de la bandeja de entrada compartida o cambiar diferentes configuraciones sobre el grupo. Los propietarios del grupo pueden cambiar el nombre del grupo, actualizar la descripción o la imagen, etc.
-- **Miembros:** los miembros pueden acceder a todo el grupo, pero no pueden cambiar la configuración del grupo. De forma predeterminada, los miembros del grupo pueden invitar a invitados a unirse a su grupo, aunque [puede controlar esa configuración.](manage-guest-access-in-groups.md)
+- **Miembros:** los miembros pueden acceder a todo el grupo, pero no pueden cambiar la configuración del grupo. De forma predeterminada, los miembros del grupo pueden invitar a invitados a unirse al grupo, aunque puede [controlar esa configuración.](manage-guest-access-in-groups.md)
 - **Invitados:** los invitados del grupo son miembros que son de fuera de la organización.
 
 Solo los administradores globales, los administradores de usuarios y los administradores de grupos pueden crear y administrar grupos en el Centro de administración de Microsoft 365. No puede ser un administrador delegado (por ejemplo, un consultor que sea un administrador en nombre de alguien).
@@ -84,7 +84,7 @@ Los siguientes límites se aplican a los Grupos de Microsoft 365:
 
 El número máximo predeterminado de grupos de Microsoft 365 que una organización puede tener es 500.000. Para superar el límite predeterminado, debe ponerse en contacto con el Soporte técnico de Microsoft. Para obtener más información sobre los límites de Grupos de Microsoft 365, vea Grupos de [Microsoft 365: ayuda para administradores.](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-La administración de los grupos de Microsoft 365 es más eficaz cuando se tiene información que puede actuar sobre el uso de grupos. El Centro de administración de Microsoft 365 tiene una herramienta de informes que le permite ver el uso del almacenamiento, cuántos grupos activos tiene y cómo los usuarios usan los grupos. Vea: [Informes de Microsoft 365 en el centro de administración](../activity-reports/office-365-groups.md) para obtener más información.
+La administración de los grupos de Microsoft 365 es más eficaz cuando se tiene información que puede actuar sobre el uso de grupos. El Centro de administración de Microsoft 365 tiene una herramienta de informes que le permite ver el uso de almacenamiento, cuántos grupos activos tiene y cómo los usuarios usan los grupos. Vea: [Informes de Microsoft 365 en el centro de administración](../activity-reports/office-365-groups.md) para obtener más información.
 
 ## <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
@@ -118,7 +118,7 @@ Los grupos de Microsoft 365 funcionan con Azure Active Directory. Las caracterí
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Más información sobre Grupos de Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Más información sobre grupos de Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Actualizar listas de distribución a Grupos de Microsoft 365](../manage/upgrade-distribution-lists.md)
 

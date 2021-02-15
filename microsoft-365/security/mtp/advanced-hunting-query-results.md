@@ -47,7 +47,7 @@ Aunque puede crear [](advanced-hunting-overview.md) consultas de búsqueda avanz
 ## <a name="view-query-results-as-a-table-or-chart"></a>Ver los resultados de la consulta como una tabla o un gráfico
 De forma predeterminada, la búsqueda avanzada muestra los resultados de la consulta como datos tabulares. También puede mostrar los mismos datos que un gráfico. La búsqueda avanzada admite las siguientes vistas:
 
-| Tipo de vista | Descripción |
+| Tipo de vista | Description |
 | -- | -- |
 | **Table** | Muestra los resultados de la consulta en formato tabular |
 | **Gráfico de columnas** | Representa una serie de elementos únicos en el eje X como barras verticales cuyos altos representan valores numéricos de otro campo |
@@ -56,7 +56,7 @@ De forma predeterminada, la búsqueda avanzada muestra los resultados de la cons
 | **Gráfico de donas** | Representa arcos de sección que representan elementos únicos. La longitud de cada arco representa valores numéricos de otro campo. |
 | **Gráfico de líneas** | Traza valores numéricos para una serie de elementos únicos y conecta los valores trazados |
 | **Gráfico de dispersión** | Traza valores numéricos para una serie de elementos únicos |
-| **Gráfico de áreas** | Traza los valores numéricos de una serie de elementos únicos y rellena las secciones debajo de los valores trazados |
+| **Gráfico de áreas** | Traza valores numéricos para una serie de elementos únicos y rellena las secciones debajo de los valores trazados |
 
 ### <a name="construct-queries-for-effective-charts"></a>Crear consultas para gráficos efectivos
 Al representar gráficos, la búsqueda avanzada identifica automáticamente las columnas de interés y los valores numéricos que se agregan. Para obtener gráficos significativos, cree las consultas para devolver los valores específicos que desea ver visualizados. Estas son algunas consultas de ejemplo y los gráficos resultantes.
@@ -90,7 +90,7 @@ Estos resultados se visualizan mejor con un gráfico de columnas apiladas:
  *como un gráfico apilado*
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>Mensajes de correo electrónico de suplantación de identidad (phishing) en los diez principales dominios de remitente
-Si está trabajando con una lista de valores que no es finita, puede usar el operador para crear un gráfico solo de los valores con `Top` la mayoría de las instancias. Por ejemplo, para obtener los diez dominios de remitente con más correos electrónicos de suplantación de identidad( phishing), use la siguiente consulta:
+Si está trabajando con una lista de valores que no es finita, puede usar el operador para crear un gráfico solo de los valores con `Top` la mayoría de las instancias. Por ejemplo, para obtener los diez dominios de remitente con más correos electrónicos de suplantación de identidad (phishing), use la siguiente consulta:
 
 ```kusto
 EmailEvents
@@ -100,11 +100,11 @@ EmailEvents
 ```
 Use la vista de gráfico circular para mostrar de forma eficaz la distribución entre los dominios principales:
 
-![Imagen de los resultados de la consulta de búsqueda avanzada que se muestra como gráfico circular con una distribución de correos electrónicos de suplantación de identidad ](../../media/advanced-hunting-pie-chart.jpg)
- *entre los principales dominios de remitentes*
+![Imagen de resultados de consulta de búsqueda avanzada que se muestran como gráfico circular con distribución de correos electrónicos de suplantación de identidad ](../../media/advanced-hunting-pie-chart.jpg)
+ *en dominios de remitentes principales*
 
 #### <a name="file-activities-over-time"></a>Actividades de archivos a lo largo del tiempo
-Si usas el operador con la función, puedes comprobar si hay eventos `summarize` relacionados con un indicador determinado a lo largo del `bin()` tiempo. La consulta siguiente cuenta los eventos relacionados con el archivo en intervalos de 30 minutos para mostrar picos de `invoice.doc` actividad relacionados con ese archivo:
+Con el operador con la función, puede comprobar si hay eventos relacionados `summarize` con un indicador determinado a lo largo del `bin()` tiempo. La consulta siguiente cuenta los eventos relacionados con el archivo en intervalos de 30 minutos para mostrar picos de `invoice.doc` actividad relacionados con ese archivo:
 
 ```kusto
 AppFileEvents
@@ -124,8 +124,8 @@ Después de ejecutar una consulta, **seleccione Exportar** para guardar los resu
 - **Vista de tabla:** los resultados de la consulta se exportan en formato tabular como un libro de Microsoft Excel
 - **Cualquier gráfico:** los resultados de la consulta se exportan como una imagen JPEG del gráfico representado
 
-## <a name="drill-down-from-query-results"></a>Explorar en profundidad los resultados de la consulta
-Para inspeccionar rápidamente un registro en los resultados de la consulta, seleccione la fila correspondiente para abrir el panel **Inspeccionar registro.** El panel proporciona la siguiente información en función del registro seleccionado:
+## <a name="drill-down-from-query-results"></a>Obtención de detalles de los resultados de la consulta
+Para inspeccionar rápidamente un registro en los resultados de la consulta, seleccione la fila correspondiente para abrir el panel **Inspeccionar registro.** El panel proporciona la siguiente información basada en el registro seleccionado:
 
 - **Activos:** vista resumida de los activos principales (buzones, dispositivos y usuarios) que se encuentran en el registro, enriquecida con la información disponible, como los niveles de riesgo y exposición.
 - **Árbol de procesos:** generado para registros con información de procesos y enriquecido mediante información contextual disponible; En general, las consultas que devuelven más columnas pueden dar como resultado árboles de proceso más enriquecidos.

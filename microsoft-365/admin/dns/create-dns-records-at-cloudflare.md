@@ -217,7 +217,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 
     En la **página de administración de DNS,** haga clic en Agregar **registro** y, a continuación, seleccione los valores de la primera fila de la tabla siguiente.
         
-    | Tipo | Servicio | Protocolo | Name | TTL | Priority | Peso | Puerto | Target |
+    | Tipo | Servicio | Protocolo | Nombre | TTL | Priority | Peso | Puerto | Target |
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV|_sip |TLS |Use su *domain_name*; por ejemplo, contoso.com  |30 minutos | 100|1  |443 |sipfed.online.lync.com  |
     |SRV|_sipfederationtls | TCP|Use su *domain_name*; por ejemplo, contoso.com   |30 minutos |100 |1  |5061 | sipfed.online.lync.com |

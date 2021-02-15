@@ -32,9 +32,9 @@ ms.locfileid: "49930599"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Para que La puntuación de seguridad de Microsoft sea un mejor representante de su posición de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte ¿Qué viene en puntuación de [seguridad de Microsoft?](microsoft-secure-score-whats-coming.md)
+Para que La puntuación de seguridad de Microsoft sea un mejor representante de su posición de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte [¿Qué viene en la puntuación de seguridad de Microsoft?](microsoft-secure-score-whats-coming.md)
 
-La puntuación de seguridad de Microsoft puede encontrarse en el Centro de seguridad https://security.microsoft.com/securescore [de Microsoft 365.](overview-security-center.md)
+La puntuación de seguridad de Microsoft puede encontrarse https://security.microsoft.com/securescore en el Centro de seguridad de Microsoft [365.](overview-security-center.md)
 
 ## <a name="january-2021"></a>Enero de 2021
 
@@ -44,7 +44,7 @@ Los clientes de Microsoft Teams verán "Impedir que los usuarios anónimos se un
 
 ## <a name="december-2020"></a>Diciembre de 2020
 
-### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Se agregaron seis acciones de mejora relacionadas con cuentas para Microsoft Defender para endpoint (anteriormente ATP de Microsoft Defender):
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Se agregaron seis acciones de mejora relacionadas con cuentas para Microsoft Defender para Endpoint (anteriormente ATP de Microsoft Defender):
 
 - Establecer "Longitud mínima de contraseña" en "14 o más caracteres"
 - Establecer "Exigir historial de contraseñas" en "24 o más contraseñas"
@@ -61,7 +61,7 @@ La capacidad de crear vales de ServiceNow a través de puntuación de seguridad 
 
 ### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Se agregaron tres acciones de mejora relacionadas con los servicios para Microsoft Defender para Endpoint (anteriormente ATP de Microsoft Defender):
 
-- Corregir la ruta de acceso de servicio sin comillas para los servicios de Windows
+- Corregir la ruta de servicio sin comillas para los servicios de Windows
 - Cambiar la ruta del archivo ejecutable del servicio a una ubicación protegida común
 - Cambiar la cuenta de servicio para evitar la contraseña almacenada en caché en el Registro de Windows
 
@@ -101,7 +101,7 @@ Con el tiempo, la puntuación de seguridad de identidad y la API de Graph adopta
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos escuchar sus comentarios
 
-Si tiene algún problema, háganoslo saber publicando en la comunidad [seguridad, privacidad & cumplimiento.](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) Estamos supervisando la comunidad y proporcionaremos ayuda.
+Si tiene algún problema, háganoslo saber publicando en la comunidad [seguridad, privacidad & cumplimiento.](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) Estamos supervisando la comunidad y le proporcionaremos ayuda.
 
 ## <a name="related-resources"></a>Recursos relacionados
 

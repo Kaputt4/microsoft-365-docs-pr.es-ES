@@ -51,7 +51,7 @@ Si la solicitud está limitada, devolverá un código `429` de respuesta. El cue
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea Obtener acceso a las API de [Microsoft 365 Defender.](api-access.md)
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea Obtener acceso a las [API de Microsoft 365 Defender.](api-access.md)
 
 Tipo de permiso | Permiso | Nombre para mostrar de permisos
 -|-|-
@@ -78,7 +78,7 @@ Content-Type | Cadena | application/json. **Necesario**.
 
 En el cuerpo de la solicitud, proporcione los valores de los campos que se deben actualizar. Las propiedades existentes que no se incluyen en el cuerpo de la solicitud mantendrán sus valores, a menos que tengan que volver a calcularse debido a cambios en los valores relacionados. Para obtener el mejor rendimiento, debe omitir los valores existentes que no han cambiado.
 
-Propiedad | Tipo | Descripción
+Propiedad | Tipo | Description
 -|-|-
 status | Enum | Especifica el estado actual de la alerta. Los valores posibles son: ```Active``` ```Resolved``` , y ```Redirected``` .
 assignedTo | string | Propietario del incidente.

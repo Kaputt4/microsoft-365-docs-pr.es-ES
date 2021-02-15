@@ -26,9 +26,9 @@ ms.locfileid: "50029436"
 ---
 # <a name="overview-of-unlimited-archiving"></a>Información general sobre el archivado ilimitado
 
-En Office 365, los buzones de archivo proporcionan a los usuarios espacio de almacenamiento adicional. Una vez habilitado el buzón de archivo de un usuario, hay disponible hasta 100 GB de almacenamiento adicional. En el pasado, cuando se alcanzaba la cuota de almacenamiento de 100 GB, las organizaciones tenían que ponerse en contacto con Microsoft para solicitar espacio de almacenamiento adicional para un buzón de archivo. Ese ya no es el caso.
+En Office 365, los buzones de archivo proporcionan a los usuarios espacio de almacenamiento adicional en el buzón. Una vez habilitado el buzón de archivo de un usuario, hay disponible hasta 100 GB de almacenamiento adicional. En el pasado, cuando se alcanzaba la cuota de almacenamiento de 100 GB, las organizaciones tenían que ponerse en contacto con Microsoft para solicitar espacio de almacenamiento adicional para un buzón de archivo. Ese ya no es el caso.
 
-La característica de archivado ilimitado de Microsoft 365 (denominada *archivado* de expansión automática) proporciona almacenamiento adicional en los buzones de archivo. Cuando se alcanza la cuota de almacenamiento en el buzón de archivo, Microsoft 365 aumenta automáticamente el tamaño del archivo, lo que significa que los usuarios no se queda sin espacio de almacenamiento del buzón y los administradores no tendrán que solicitar almacenamiento adicional para los buzones de archivo.
+La característica de archivado ilimitado de Microsoft 365 (denominada *archivado* de expansión automática) proporciona almacenamiento adicional en los buzones de archivo. Cuando se alcanza la cuota de almacenamiento en el buzón de archivo, Microsoft 365 aumenta automáticamente el tamaño del archivo, lo que significa que los usuarios no se quedas sin espacio de almacenamiento del buzón y los administradores no tendrán que solicitar almacenamiento adicional para los buzones de archivo.
 
 Para obtener instrucciones paso a paso para activar el archivado de expansión automática, vea [Habilitar archivado ilimitado.](enable-unlimited-archiving.md)
 
@@ -37,7 +37,7 @@ Para obtener instrucciones paso a paso para activar el archivado de expansión a
 
 ## <a name="how-auto-expanding-archiving-works"></a>Cómo funciona el archivado de expansión automática
 
-Como se ha explicado anteriormente, se crea espacio de almacenamiento de buzones de correo adicional cuando se habilita el buzón de archivo de un usuario. Cuando el archivado de expansión automática está habilitado, Microsoft 365 comprueba periódicamente el tamaño del buzón de archivo. Cuando un buzón de archivo se acerca a su límite de almacenamiento, Microsoft 365 crea automáticamente espacio de almacenamiento adicional para el archivo. Si el usuario se queda sin este espacio de almacenamiento adicional, Microsoft 365 agrega más espacio de almacenamiento al archivo del usuario. Este proceso se produce automáticamente, lo que significa que los administradores no tienen que solicitar almacenamiento de archivo adicional ni administrar el archivado de expansión automática.
+Como se ha explicado anteriormente, se crea espacio de almacenamiento adicional en el buzón cuando se habilita el buzón de archivo de un usuario. Cuando el archivado de expansión automática está habilitado, Microsoft 365 comprueba periódicamente el tamaño del buzón de archivo. Cuando un buzón de archivo se acerca a su límite de almacenamiento, Microsoft 365 crea automáticamente espacio de almacenamiento adicional para el archivo. Si el usuario se queda sin este espacio de almacenamiento adicional, Microsoft 365 agrega más espacio de almacenamiento al archivo del usuario. Este proceso se produce automáticamente, lo que significa que los administradores no tienen que solicitar almacenamiento de archivo adicional ni administrar el archivado de expansión automática.
 
 Esta es una introducción rápida del proceso.
 
@@ -57,7 +57,7 @@ Esta es una introducción rápida del proceso.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>¿Qué se mueve al espacio de almacenamiento de archivo adicional?
 
-Para hacer un uso eficaz del almacenamiento de archivo de expansión automática, las carpetas pueden moverse. Microsoft 365 determina qué carpetas se mueven cuando se agrega almacenamiento adicional al archivo. A veces, cuando se mueve una carpeta, se crean automáticamente una o varias subcarpetas y los elementos de la carpeta original se distribuyen a estas carpetas para facilitar el proceso de movimiento. Al ver la parte de archivo de la lista de carpetas en Outlook, estas subcarpetas se muestran en la carpeta original.  La convención de nomenclatura que Microsoft 365 usa para nombrar estas subcarpetas es _yyyy (creado en **\<folder name\> mmm dd, yyyy h_mm)**, donde:
+Para hacer un uso eficaz del almacenamiento de archivo de expansión automática, las carpetas pueden moverse. Microsoft 365 determina qué carpetas se mueven cuando se agrega almacenamiento adicional al archivo. A veces, cuando se mueve una carpeta, se crean automáticamente una o varias subcarpetas y los elementos de la carpeta original se distribuyen a estas carpetas para facilitar el proceso de movimiento. Al ver la parte de archivo de la lista de carpetas en Outlook, estas subcarpetas se muestran en la carpeta original.  La convención de nomenclatura que Microsoft 365 usa para nombrar estas subcarpetas es _yyyy (creado en **\<folder name\> mmm dd, yyyy h_mm),** donde:
 
 - **yyyy es** el año en que se recibieron los mensajes de la carpeta.
 
@@ -90,7 +90,7 @@ Estos son algunos aspectos que se deben tener en cuenta al usar Outlook o Outloo
 
 - Puede tener acceso a cualquier carpeta del buzón de archivo, incluidas las que se movieron al área de almacenamiento expandida automáticamente.
 
-- La búsqueda de archivado expandido automáticamente está disponible en Outlook para la Web. Al igual que el Archivo en línea, puede buscar elementos que se movieron a un área de almacenamiento adicional solo buscando en la carpeta actual. Esto significa que debe seleccionar la carpeta de archivo en la lista de carpetas y, a continuación, seleccionar una sola carpeta como ámbito de búsqueda. De forma similar, si una carpeta de un área de almacenamiento expandida automáticamente contiene subcarpetas, debe buscar cada subcarpeta por separado.
+- La búsqueda de archivado expandido automáticamente está disponible en Outlook para la Web. Al igual que el Archivo en línea, puede buscar elementos que se movieron a un área de almacenamiento adicional solo buscando en la propia carpeta actual. Esto significa que debe seleccionar la carpeta de archivo en la lista de carpetas y, a continuación, seleccionar una sola carpeta como ámbito de búsqueda. De forma similar, si una carpeta de un área de almacenamiento expandida automáticamente contiene subcarpetas, debe buscar cada subcarpeta por separado.
 - La búsqueda de archivo expandido automáticamente está disponible en el escritorio de Outlook en canal actual (versión preliminar). En esta versión preliminar, el ámbito buzón actual está disponible, lo que le permite buscar en el archivo expandido automáticamente. Para obtener más información sobre esta y otras características de soporte técnico de Microsoft Search, vea Cómo Outlook para Windows conectado a [Exchange Online usa Microsoft Search.](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045) 
 
 - Es posible que los recuentos de elementos en Outlook y los recuentos de lectura y no leídos (en Outlook y Outlook en la Web) en un archivo expandido automáticamente no sean precisos.
@@ -105,11 +105,11 @@ En esta sección se explica la funcionalidad entre el archivado de expansión au
 
 - **Exhibición de documentos electrónicos:** Cuando se usa una herramienta de exhibición de documentos electrónicos, como la búsqueda de contenido o la exhibición de documentos electrónicos de In-Place, también se buscan las áreas de almacenamiento adicionales de un archivo expandido automáticamente.
 
-- **Retención:** Cuando pone un buzón en suspensión mediante herramientas como retención por juicio en Exchange Online o retenciones de casos de exhibición de documentos electrónicos y directivas de retención en el centro de seguridad y cumplimiento, el contenido ubicado en un archivo expandido automáticamente también se coloca en suspensión.
+- **Retención:** Cuando pone un buzón en suspensión mediante herramientas como retención por juicio en Exchange Online o retenciones de casos de exhibición de documentos electrónicos y directivas de retención en el centro de seguridad y cumplimiento, el contenido ubicado en un archivo expandido automáticamente también se pone en suspensión.
 
 - **Administración de registros de mensajería (MRM):** Si usa directivas de eliminación de MRM en Exchange Online para eliminar permanentemente los elementos de buzón expirados, también se eliminarán los elementos expirados ubicados en el archivo expandido automáticamente.
 
-- **Servicio de importación:** Puede usar el servicio de importación de Office 365 para importar archivos PST al archivo expandido automáticamente de un usuario. Puede importar hasta 100 GB de datos desde archivos PST al buzón de archivo del usuario.
+- **Servicio de importación:** Puede usar el servicio de importación de Office 365 para importar archivos PST al archivo expandido automáticamente de un usuario. Puede importar hasta 100 GB de datos de archivos PST al buzón de archivo del usuario.
 
 ## <a name="more-information"></a>Más información
 

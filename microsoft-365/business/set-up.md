@@ -94,7 +94,7 @@ A los usuarios que agregues en el asistente se les asignará automáticamente un
   
 Para configurar servicios, es necesario actualizar algunos registros en su registrador de dominio o host DNS.
   
-1. Normalmente, el asistente para configuración detecta el registrador y le proporciona un vínculo con instrucciones paso a paso para actualizar los registros NS en el sitio web del registrador. Si no lo hace, [cambie los servidores dns para configurar Microsoft 365 con cualquier registrador de dominios.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar) 
+1. Normalmente, el asistente para configuración detecta el registrador y le proporciona un vínculo con instrucciones paso a paso para actualizar los registros NS en el sitio web del registrador. Si no es así, [cambie los servidores dns para configurar Microsoft 365 con cualquier registrador de dominios.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar) 
 
     - Si tiene registros DNS existentes (por ejemplo, un sitio web existente), pero el host DNS está habilitado para usar la [conexión de dominio](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), elija **Agregar registros para mí**. En la página **Seleccione sus servicios en línea**, acepte todos los valores predeterminados, haga clic en **Siguiente** y elija **Autorizar** en la página del host DNS.
     - Si tiene registros DNS en otros hosts (que no están habilitados para usar la conexión de dominio), le recomendamos administrar sus propios registros DNS para asegurarse de que los servicios existentes permanezcan conectados. Para obtener más información, consulte [Conceptos básicos sobre DNS](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics).
@@ -112,7 +112,7 @@ Las directivas configuradas en el asistente se aplican automáticamente a un gru
     ![Captura de pantalla de la página Aumentar protección.](../media/increasetreatprotection.png)
 
 
-2. En la página Evitar **pérdidas** de datos confidenciales, acepte los valores predeterminados para activar la Prevención de pérdida de datos (DLP) de Office 365 para realizar un seguimiento de los datos confidenciales en las aplicaciones de Office y evitar el uso compartido accidental de estos fuera de la organización.
+2. En la página Evitar **pérdidas** de datos confidenciales, acepte los valores predeterminados para activar la Prevención de pérdida de datos (DLP) de Office 365 para realizar un seguimiento de los datos confidenciales en las aplicaciones de Office y evitar el uso compartido accidental de estos fuera de su organización.
 
 3. En la **página Proteger datos en Office** para dispositivos móviles, deje la administración de aplicaciones móviles, expanda la configuración y repase y, a continuación, seleccione Crear directiva de administración de aplicaciones **móviles.**
 
@@ -125,9 +125,9 @@ En el panel de navegación izquierdo, seleccione **Configurar** y, a continuaci�
 
 ## <a name="deploy-office-365-client-apps"></a>Implementar aplicaciones cliente de Office 365
 
-Si decidió instalar automáticamente las aplicaciones de Office durante la instalación, las aplicaciones se instalarán en los dispositivos Windows 10 una vez que los usuarios iniciaron sesión en Azure AD desde sus dispositivos Windows, con sus credenciales de trabajo.
+Si decidió instalar automáticamente las aplicaciones de Office durante la instalación, las aplicaciones se instalarán en los dispositivos Windows 10 una vez que los usuarios iniciaron sesión en Azure AD desde sus dispositivos Windows con sus credenciales de trabajo.
 
-Para instalar Office en dispositivos móviles iOS o Android, vea Configurar dispositivos móviles para usuarios [de Microsoft 365 Empresa Premium.](set-up-mobile-devices.md)
+Para instalar Office en dispositivos móviles iOS o Android, consulte Configurar dispositivos móviles para usuarios [de Microsoft 365 Empresa Premium.](set-up-mobile-devices.md)
 
 También puede instalar Office individualmente. Consulte [instalar Office en un equipo PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) para obtener instrucciones.
 

@@ -45,11 +45,11 @@ En la tabla siguiente se enumeran las directivas que debe crear y actualizar. La
 
 |Nivel de protección|Directivas|Más información|
 |---|---|---|
-|**Baseline**|[Requerir MFA siempre para invitados y usuarios externos](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Cree esta nueva directiva y configure: <ul><li>Para **Tareas > Usuarios** y grupos > Incluir , elija Seleccionar usuarios y grupos y, a continuación, seleccione Todos los **usuarios invitados y externos.**</li><li>Para las > de > inicio de sesión, deje todas las opciones **desactivadas** para aplicar siempre la autenticación multifactor (MFA).</li></ul>|
+|**Baseline**|[Requerir MFA siempre para invitados y usuarios externos](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Cree esta nueva directiva y configure: <ul><li>Para **Tareas > Usuarios** y grupos > Incluir , elija Seleccionar usuarios y grupos y, a continuación, seleccione Todos los usuarios invitados y **externos.** </li><li>Para las > de > inicio de sesión, deje todas las opciones **desactivadas** para aplicar siempre la autenticación multifactor (MFA).</li></ul>|
 ||[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modifique esta directiva para excluir invitados y usuarios externos.|
 ||[Exigir equipos PC compatibles](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Modifique esta directiva para excluir invitados y usuarios externos.|
 
-Para incluir o excluir invitados y usuarios externos en las directivas de acceso condicional, para Asignaciones > Usuarios y grupos > Incluir o excluir **,** compruebe Todos los usuarios **invitados** y **externos.**
+Para incluir o excluir invitados y usuarios externos en las directivas de acceso condicional, para Asignaciones > Usuarios y grupos > Incluir o excluir **,** active Todos los usuarios **invitados** y **externos.**
 
 ![captura de pantalla de controles para excluir invitados y usuarios externos](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
@@ -63,9 +63,9 @@ Microsoft Teams define los siguientes usuarios:
 
 - **El acceso** externo es para un usuario externo que no tiene una cuenta B2B. El acceso de usuarios externos incluye invitaciones, llamadas, chats y reuniones, pero no incluye la pertenencia al equipo ni el acceso a los recursos del equipo.
 
-Para obtener más información, vea la [comparación entre invitados y el acceso de usuarios externos para equipos.](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)
+Para obtener más información, vea [la comparación entre invitados y el acceso de usuarios externos para equipos.](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)
 
-Para obtener más información sobre cómo proteger las directivas de acceso a dispositivos e identidades para Teams, vea recomendaciones de directivas para proteger los [chats,](teams-access-policies.md)grupos y archivos de Teams.
+Para obtener más información sobre cómo proteger las directivas de acceso a dispositivos e identidades para Teams, vea recomendaciones de directivas para proteger [los chats,](teams-access-policies.md)grupos y archivos de Teams.
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>Requerir MFA siempre para usuarios invitados y externos
 
@@ -85,7 +85,7 @@ Solo una organización puede administrar un dispositivo. Si no excluye invitados
 
 ![Paso 4: Directivas para aplicaciones en la nube de Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
-Configurar directivas de acceso condicional para:
+Configure las directivas de acceso condicional para:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)

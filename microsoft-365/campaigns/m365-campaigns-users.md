@@ -57,7 +57,7 @@ Todos los usuarios que agregue a su entorno tendrán que tardar unos minutos en 
 - Use aplicaciones móviles de Microsoft, como Outlook Mobile, Word, OneDrive y otras aplicaciones de Microsoft del almacén de aplicaciones. No se admiten las aplicaciones de correo nativas que se incluyen en dispositivos iPhone y Android. 
 - Requerir un PIN para que los usuarios desbloqueen su dispositivo.
 
-Después de configurar estos, se pedirá a los usuarios que usen la aplicación autenticador al acceder a los datos de su organización en estos dispositivos, incluido el correo.
+Después de configurar estas opciones, se pedirá a los usuarios que usen la aplicación autenticador al acceder a los datos de su organización en estos dispositivos, incluido el correo.
 
 ## <a name="keep-byod-macs-and-windows-10-pcs-fresh"></a>Mantener los equipos MAC BYOD y Windows 10 nuevos
 
@@ -72,13 +72,13 @@ Para [dispositivos Windows 10 y Mac](m365-campaigns-protect-pcs-macs.md)no admin
 
 | |**Windows 10**|**Mac**|
 |:-----|:-----|:------|
-|Capacidades de seguridad|Activar la protección de dispositivos BitLocker<p><p> Asegurarse Windows Defender permanece en <p>Activar Firewall de Windows| Usar FileVault para cifrar el disco Mac <p><p>Usar un software antivirus confiable <p>Activar la protección del firewall|
+|Capacidades de seguridad|Activar la protección de dispositivos BitLocker<p><p> Asegurarse de Windows Defender permanece en <p>Activar Firewall de Windows| Usar FileVault para cifrar el disco Mac <p><p>Usar un software antivirus confiable <p>Activar la protección del firewall|
 
 Para obtener más información sobre estas recomendaciones, vea Proteger su cuenta y dispositivos [de hackers y malware.](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)
 
 ## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Colaborar con Microsoft Teams, OneDrive, SharePoint Online y otras herramientas
 
-Es posible que los usuarios puedan tener la tentación de compartir y almacenar los archivos de su organización en lugares distintos de Microsoft 365. Microsoft 365 facilita la colaboración y el uso compartido de forma segura. Puede compartir [archivos y vídeos](share-files-and-videos.md) directamente desde Microsoft Teams, OneDrive, Stream e incluso desde dentro de un archivo. El uso compartido desde estas herramientas ayuda a evitar que los datos se filtre. Puede agregar protección adicional a los datos confidenciales para evitar el uso compartido fuera de la organización.
+Es posible que los usuarios puedan tener la tentación de compartir y almacenar los archivos de su organización en lugares distintos de Microsoft 365. Microsoft 365 facilita la colaboración y el uso compartido de forma segura. Puede compartir [archivos y vídeos directamente](share-files-and-videos.md) desde Microsoft Teams, OneDrive, Stream e incluso desde dentro de un archivo. El uso compartido desde estas herramientas ayuda a evitar que los datos se filtre. Puede agregar protección adicional a los datos confidenciales para evitar el uso compartido fuera de su organización.
 
 ## <a name="set-up-managed-windows-10-devices"></a>Configurar dispositivos windows 10 administrados
 

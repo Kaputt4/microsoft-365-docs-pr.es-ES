@@ -35,7 +35,7 @@ ms.locfileid: "49932987"
 - Microsoft 365 Defender 
 
 
-Crear un entorno de prueba o piloto de Microsoft 365 Defender e implementarlo es un proceso de tres fases:
+Crear un entorno piloto o laboratorio de prueba de Microsoft 365 Defender e implementarlo es un proceso de tres fases:
 
 |[![Fase 1: Preparar](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[Fase 1: Preparar](prepare-mtpeval.md) |![Fase 2: Configurar](../../media/phase-diagrams/setup.png)<br/>Fase 2: Configurar |[![Fase 3: Incorporación](../../media/phase-diagrams/onboard.png)](config-mtpeval.md)<br/>[Fase 3: Incorporación](config-mtpeval.md) | [![Volver al piloto](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[Volver al libro de reproducción piloto](mtp-pilot.md) |
 |--|--|--|--|
@@ -77,7 +77,7 @@ En esta fase, se te guiará a:
 
    ![Imagen of_Office página de configuración de registro de prueba de 365 E5 que solicita la preferencia de verificación](../../media/mtp-eval-12.png)
 
-5. Establezca el nombre de dominio personalizado para su espacio empresarial y, a continuación, haga clic **en Siguiente.**
+5. Establezca el nombre de dominio personalizado para su inquilino y, a continuación, haga clic **en Siguiente.**
 
    ![Página of_Office configuración de registro de prueba de 365 E5 en la que puede configurar el nombre de dominio personalizado](../../media/mtp-eval-13.png)
  
@@ -124,7 +124,7 @@ En esta fase, se te guiará a:
 ## <a name="enable-microsoft-365-trial-subscription"></a>Habilitar la suscripción de prueba de Microsoft 365
 
 >[!NOTE]
->Registrarse para obtener una versión de prueba le ofrece 25 licencias de usuario para usarlas durante un mes. Consulta [Probar o comprar una suscripción a M365](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365#try-or-buy-a-microsoft-365-subscription-1) para obtener más información.
+>Registrarse para obtener una versión de prueba le ofrece 25 licencias de usuario para usarlas durante un mes. Consulta [Probar o comprar una suscripción a M365 para](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365#try-or-buy-a-microsoft-365-subscription-1) obtener más información.
 
 1. En el Centro de administración de [Microsoft 365,](https://admin.microsoft.com/)haga clic en **Facturación** y, a continuación, vaya **a Servicios de compra.**
 
@@ -132,17 +132,17 @@ En esta fase, se te guiará a:
 
    ![Página de of_Microsoft 365 E5 Start free trial](../../media/mtp-eval-24.png)
 
-3. Elija su preferencia de verificación: a través de un mensaje de texto o una llamada. Una vez que lo haya decidido, escriba el número de teléfono, seleccione **Enviarme** un mensaje de texto o **Llamarme** en función de su selección.
+3. Elija su preferencia de verificación: a través de un mensaje de texto o una llamada. Una vez que lo haya decidido, escriba el número de teléfono, seleccione **Enviarme** texto o **Llamarme** en función de su selección.
 
    ![Imagen of_Microsoft 365 E5 Página de prueba gratuita que pide detalles de contacto para enviar código para demostrar que no es un robot](../../media/mtp-eval-25.png)
  
 4. Escribe el código de verificación y haz clic **en Iniciar la prueba gratuita.**
 
-   ![Imagen of_Microsoft página de prueba gratuita inicio 365 E5 donde puede rellenar el código de verificación que el sistema envió para demostrar que no es un robot](../../media/mtp-eval-26.png)
+   ![Imagen of_Microsoft 365 E5 Página de prueba gratuita en la que puedes rellenar el código de verificación que el sistema envió para demostrar que no eres un robot](../../media/mtp-eval-26.png)
 
 5. Haga **clic en Probar ahora** para confirmar la versión de prueba de Microsoft 365 E5.
 
-   ![Imagen of_Microsoft 365 E5 Página de prueba gratuita en la que debería reloj el botón Probar ahora para iniciar](../../media/mtp-eval-27.png)
+   ![Imagen of_Microsoft página de prueba gratuita inicio 365 E5 en la que debería reloj el botón Probar ahora para iniciar](../../media/mtp-eval-27.png)
  
 6. Vaya a los usuarios activos del Centro de administración de **Microsoft 365.**  >    >   Seleccione su cuenta de usuario, **seleccione** Administrar licencias de producto y, a continuación, cambie la licencia de Office 365 E5 a **Microsoft 365 E5.** Haga clic en **Guardar**.
 
@@ -159,5 +159,5 @@ En esta fase, se te guiará a:
 
 
 ## <a name="next-step"></a>Paso siguiente
-|[Fase 3: Configurar & incorporación](config-mtpeval.md) | Configure cada pilar de Microsoft 365 Defender para su entorno piloto o laboratorio de prueba de Microsoft 365 Defender e incorpore sus puntos de conexión.
+|[Fase 3: Configurar & incorporación](config-mtpeval.md) | Configure cada pilar de Microsoft 365 Defender para su entorno piloto o laboratorio de prueba de Microsoft 365 Defender e incorpore los puntos de conexión.
 |:-------|:-----|

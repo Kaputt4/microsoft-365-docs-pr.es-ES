@@ -38,7 +38,7 @@ Aunque el Centro de seguridad de [Microsoft 365](overview-security-center.md) es
 Los administradores y operadores de seguridad pueden ir a los siguientes portales para administrar la configuración específica de la seguridad, investigar posibles actividades de amenazas, responder a amenazas activas y colaborar con los administradores de TI para solucionar problemas.
 <p></p>
 
-| Nombre del portal | Descripción | Vínculo |
+| Nombre del portal | Description | Vínculo |
 |---|---|---| 
 | Centro de seguridad de Microsoft 365 | Supervisar y responder a la actividad de amenazas y reforzar la posición de seguridad en las identidades, el correo electrónico, los datos, los puntos de conexión y las aplicaciones con [Microsoft 365 Defender](microsoft-threat-protection.md) | [security.microsoft.com](https://security.microsoft.com/) |
 | Centro de seguridad de Microsoft Defender | Supervisar y responder a la actividad de amenazas en los puntos de conexión con las funcionalidades proporcionadas [con Microsoft Defender para endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
@@ -53,7 +53,7 @@ Los administradores y operadores de seguridad pueden ir a los siguientes portale
 Aunque estos portales no son específicos para administrar la seguridad, admiten diversas cargas de trabajo y tareas que pueden afectar a la seguridad. Visite estos portales para administrar identidades, permisos, configuración de dispositivos y directivas de control de datos.
 <p></p>
 
-| Nombre del portal | Descripción | Vínculo | 
+| Nombre del portal | Description | Vínculo | 
 |---|---|---| 
 | Azure Portal | Ver y administrar [Azure Active Directory y](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) todos los recursos de [Azure](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
 | Centro de cumplimiento de Microsoft 365 | Administrar directivas de tratamiento de datos y garantizar [el cumplimiento de normativas](https://docs.microsoft.com/microsoft-365/compliance/offering-home?view=o365-worldwide) | [compliance.microsoft.com](https://compliance.microsoft.com/) |

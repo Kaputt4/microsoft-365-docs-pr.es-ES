@@ -25,15 +25,15 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/29/2021
 ms.locfileid: "50053806"
 ---
-# <a name="choose-between-basic-mobility-and-security-or-intune"></a>Elegir entre movilidad y seguridad básicas o Intune
+# <a name="choose-between-basic-mobility-and-security-or-intune"></a>Elegir entre Movilidad y seguridad básica o Intune
 
-[Microsoft Intune](https://docs.microsoft.com/mem/intune/) es un producto independiente que se incluye con determinados planes de Microsoft 365, mientras que Movilidad y seguridad básica forma parte de los planes de Microsoft 365.
+[Microsoft Intune](https://docs.microsoft.com/mem/intune/) es un producto independiente incluido en determinados planes de Microsoft 365, mientras que Movilidad y seguridad básica forma parte de los planes de Microsoft 365.
 
  ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>Disponibilidad de movilidad y seguridad básicas e Intune
 
 La movilidad básica y la seguridad y Intune se incluyen en una variedad de planes, que se describen en la tabla siguiente.
 
-| Plan | Movilidad y seguridad básicas | Microsoft Intune |
+| Plan | Movilidad y seguridad básicas | Microsoft Intune |
 |:-----|:-----|:-----|
 |Aplicaciones de Microsoft 365|Sí|No|
 |Microsoft 365 Empresa Básico|Sí|No|
@@ -62,11 +62,11 @@ La movilidad básica y la seguridad y Intune se incluyen en una variedad de plan
 Microsoft Intune y la movilidad básica y la seguridad integradas le dan la capacidad de administrar dispositivos móviles en su organización, pero existen diferencias clave en la funcionalidad, que se describen en la tabla siguiente.
 
 >[!NOTE]
->Puede administrar usuarios y sus dispositivos móviles con Intune y movilidad y seguridad básicas en la misma organización de Microsoft 365 Empresa Standard configurando primero movilidad básica y seguridad *y,* a continuación, agregando Microsoft Intune . Esto te permite elegir movilidad y seguridad básicas o la solución intune más completa de características. Asignar una licencia de Intune para habilitar las características de Intune.
+>Puede administrar usuarios y sus dispositivos móviles con Intune y Movilidad básica y Seguridad en la misma organización de Microsoft 365 Empresa Standard configurando primero Movilidad y seguridad básicas y, a continuación, agregando *Microsoft Intune.* Esto te permite elegir movilidad y seguridad básicas o la solución intune más completa de características. Asignar una licencia de Intune para habilitar las características de Intune.
 
-| Área de característica | Resaltados de características | Movilidad y seguridad básicas | Microsoft Intune |
+| Área de característica | Resaltados de características | Movilidad y seguridad básicas | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
-|Tipos de dispositivo|Administración de distintas plataformas del sistema operativo y variantes principales del modo de administración. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS, iPad OS|
+|Tipos de dispositivo|Administrar distintas plataformas del sistema operativo y variantes principales del modo de administración. |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS, iPad OS|
 |Cumplimiento de dispositivos|Establecer y administrar directivas de seguridad, como el bloqueo de PIN de nivel de dispositivo y la detección de jailbreak. |Limitaciones en dispositivos Android 9 y posteriores. Vea [los detalles.](capabilities.md) |Sí|
 |Acceso condicional basado en el cumplimiento del dispositivo |Impedir que los dispositivos no compatibles accedan al correo electrónico corporativo y a los datos desde la nube. |No se admite en Windows 10.<br/>Limitado a controlar el acceso a Exchange Online, SharePoint Online y Outlook. |Sí |
 |Configuración de dispositivos  |Configurar las opciones del dispositivo (por ejemplo, deshabilitar la cámara)|Conjunto limitado de opciones de configuración.|Sí|
@@ -80,13 +80,13 @@ Microsoft Intune y la movilidad básica y la seguridad integradas le dan la capa
 |Programa de inscripción táctil cero Autopilot) |Inscríbete un gran número de dispositivos corporativos, a la vez que simplificas la configuración del usuario. |No|Sí|
 |||
 
-Además de las características enumeradas en la tabla anterior, Movilidad y seguridad básica e Intune incluyen un conjunto de acciones remotas que envían comandos a dispositivos a través de Internet. Por ejemplo, puede quitar datos de Office del dispositivo de un empleado mientras deja datos personales en su lugar (retirar), quitar aplicaciones de Office del dispositivo de un empleado (borrar) o restablecer un dispositivo a su configuración de fábrica (borrado completo). 
+Además de las características enumeradas en la tabla anterior, movilidad y seguridad básicas e Intune incluyen un conjunto de acciones remotas que envían comandos a dispositivos a través de Internet. Por ejemplo, puede quitar datos de Office del dispositivo de un empleado mientras deja datos personales en su lugar (retirar), quitar aplicaciones de Office del dispositivo de un empleado (borrar) o restablecer un dispositivo a su configuración de fábrica (borrado completo). 
 
 Las acciones remotas básicas de movilidad y seguridad incluyen retirar, borrar y borrar completamente. Para obtener más información sobre las acciones básicas de movilidad y seguridad, vea [las funciones de Movilidad y seguridad básicas.](capabilities.md)
 
 Con Intune tiene el siguiente conjunto de acciones:
 
--   Restablecimiento de Autopilot (solo Windows)
+-   Restablecimiento de Autopilot (solo Windows
 -  [Rotación de claves de](https://docs.microsoft.com/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)   BitLocker (Solo Windows)
 -  [Usar borrar, retirar o deshacer manualmente la inscripción del dispositivo](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)
 -  [Deshabilitar loc de activación](https://docs.microsoft.com/mem/intune/remote-actions/device-activation-lock-disable)   (solo iOS)

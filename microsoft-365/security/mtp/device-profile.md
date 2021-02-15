@@ -1,7 +1,7 @@
 ---
 title: Perfil de dispositivo en el portal de seguridad de Microsoft 365
 description: Ver los niveles de riesgo y exposición de un dispositivo de la organización. Analiza las amenazas pasadas y actuales, y protege el dispositivo con las últimas actualizaciones.
-keywords: seguridad, malware, Microsoft 365, M365, Protección contra amenazas de Microsoft, MTP, centro de seguridad, ATP de Microsoft Defender, ATP de Office 365, Azure ATP, página del dispositivo, perfil de dispositivo, página de la máquina, perfil de máquina
+keywords: seguridad, malware, Microsoft 365, M365, Protección contra amenazas de Microsoft, MTP, centro de seguridad, ATP de Microsoft Defender, ATP de Office 365, Azure ATP, página de dispositivo, perfil de dispositivo, página de máquina, perfil de máquina
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -58,15 +58,15 @@ En la barra lateral se muestra el nombre completo y el nivel de exposición del 
 > [!TIP]
 > El nivel de exposición se relaciona con cuánto cumple el dispositivo con las recomendaciones de seguridad, mientras que el nivel de riesgo se calcula en función de una serie de factores, incluidos los tipos y la gravedad de las alertas activas.
 
-* **Detalles del** dispositivo: dominio, sistema operativo, marca de tiempo de la primera vez que se vio el dispositivo, direcciones IP, recursos. Los dispositivos inscritos en Microsoft Defender para Endpoint también muestran el estado de mantenimiento. Los dispositivos inscritos en Microsoft Defender para Identity mostrarán el nombre SAM y una marca de tiempo de la primera vez que se creó el dispositivo.
-* **Actividad de red:** marcas de tiempo por primera vez y por última vez que se vio el dispositivo en la red.
+* **Detalles del** dispositivo: dominio, sistema operativo, marca de tiempo de la primera vez que se vio el dispositivo, direcciones IP, recursos. Los dispositivos inscritos en Microsoft Defender para Endpoint también muestran el estado de mantenimiento. Los dispositivos inscritos en Microsoft Defender para Identity mostrarán el nombre SAM y una marca de tiempo para la primera vez que se creó el dispositivo.
+* **Actividad de red:** marcas de tiempo por primera vez y la última vez que se vio el dispositivo en la red.
 * **Datos de directorio** *(solo para dispositivos* inscritos en Microsoft Defender para identidad): marcas [UAC,](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) [SPN](https://docs.microsoft.com/windows/win32/ad/service-principal-names)y pertenencias a grupos.
 
 ## <a name="response-actions"></a>Acciones de respuesta
 
 Las acciones de respuesta ofrecen una forma rápida de defenderse y analizar las amenazas.
 
-![Imagen de la barra de acciones para el perfil del dispositivo](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
+![Imagen de la barra de acciones para el perfil de dispositivo](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
 > * [Las acciones de](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) respuesta solo están disponibles si el dispositivo está inscrito en Microsoft Defender para Endpoint.
@@ -81,7 +81,7 @@ Las acciones disponibles en la página de perfil de dispositivo incluyen:
 * **Ejecutar análisis antivirus:** actualiza Windows Defender definiciones de Antivirus y ejecuta inmediatamente un examen antivirus. Elige entre examen rápido o examen completo.
 * **Recopilar paquete de investigación:** recopila información sobre el dispositivo. Cuando se complete la investigación, puede descargarla.
 * **Iniciar sesión de respuesta en directo:** carga un shell remoto en el dispositivo para investigaciones de [seguridad detalladas.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
-* **Iniciar una investigación automatizada:** investiga y corrige automáticamente [las amenazas.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) Aunque puedes activar manualmente las investigaciones automatizadas para que se ejecuten desde esta [página,](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) determinadas directivas de alerta desencadenan investigaciones automáticas por sí solas.
+* **Iniciar investigación automatizada:** investiga y corrige automáticamente [las amenazas.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) Aunque puedes activar manualmente las investigaciones automatizadas para que se ejecuten desde esta [página,](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) determinadas directivas de alerta desencadenan investigaciones automáticas por sí solas.
 * **Centro de actividades:** muestra información sobre las acciones de respuesta que se están ejecutando actualmente.
 
 ## <a name="tabs-section"></a>Sección Tabulaciones
@@ -128,7 +128,7 @@ Tanto el número de elementos mostrados como las columnas de la lista se pueden 
 
 Al seleccionar un elemento de esta lista, se abrirá un control desplegable que muestra un gráfico de entidades de eventos, que muestra los procesos primarios y secundarios implicados en el evento.
 
-La lista se puede filtrar por el tipo de evento específico; por ejemplo, eventos del Registro o eventos de pantalla inteligente.
+La lista se puede filtrar por el tipo específico de evento; por ejemplo, eventos del Registro o eventos de pantalla inteligente.
 
 La lista también se puede exportar a un archivo CSV para su descarga. Aunque el archivo no está limitado por el número de eventos, el intervalo de tiempo máximo que puede elegir exportar es de siete días.
 
@@ -148,9 +148,9 @@ La **pestaña Inventario de** software muestra el software instalado en el dispo
 
 ![Imagen de la pestaña de inventario de software para el perfil del dispositivo](../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png)
 
-La vista predeterminada muestra el proveedor de software, el número de versión instalado, el número de puntos débiles conocidos del software, las perspectivas de amenazas, el código del producto y las etiquetas. El número de elementos mostrados y las columnas que se muestran se pueden personalizar.
+La vista predeterminada muestra el proveedor de software, el número de versión instalado, el número de puntos débiles de software conocidos, la información sobre amenazas, el código del producto y las etiquetas. El número de elementos mostrados y las columnas que se muestran se pueden personalizar.
 
-Al seleccionar un elemento de esta lista, se abre un menú desplegable que contiene más detalles sobre el software seleccionado, así como la ruta de acceso y la marca de tiempo de la última vez que se encontró el software.
+Al seleccionar un elemento de esta lista se abre un menú desplegable que contiene más detalles sobre el software seleccionado, así como la ruta de acceso y la marca de tiempo de la última vez que se encontró el software.
 
 Esta lista se puede filtrar por código de producto.
 
@@ -160,7 +160,7 @@ La **pestaña Vulnerabilidades detectadas** enumera las vulnerabilidades y vulne
 
 ![Imagen de la pestaña vulnerabilidades detectadas para el perfil del dispositivo](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
 
-La vista predeterminada enumera la gravedad de CVE, la puntuación de vulnerabilidad común (CVS), el software relacionado con CVE, cuándo se publicó la CVE, cuándo se actualizó por última vez y las amenazas asociadas con cve.
+La vista predeterminada muestra la gravedad de CVE, la puntuación de vulnerabilidad común (CVS), el software relacionado con CVE, cuándo se publicó la CVE, cuándo se actualizó por última vez y las amenazas asociadas con cve.
 
 Al igual que con las pestañas anteriores, se puede personalizar el número de elementos mostrados y las columnas visibles.
 

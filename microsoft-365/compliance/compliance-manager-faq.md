@@ -29,7 +29,7 @@ Ahora solo hay una solución: administrador de cumplimiento. Esta sección le gu
 
 - [Su organización usó principalmente el Administrador de cumplimiento (ya sea las versiones clásicas o públicas de la versión preliminar), que se encuentra en el Portal de confianza de servicios de Microsoft](#your-organization-regularly-used-compliance-manager-in-the-service-trust-portal)
 
-- [Su organización usó principalmente la Puntuación de cumplimiento (versión preliminar pública), ubicada en el Centro de cumplimiento de Microsoft 365](#your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center)
+- [Su organización usó principalmente la puntuación de cumplimiento (versión preliminar pública), ubicada en el Centro de cumplimiento de Microsoft 365](#your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center)
 
 - [Su organización es nueva en el Administrador de cumplimiento](#youre-new-to-compliance-manager
 )
@@ -57,7 +57,7 @@ A continuación se muestran algunos recursos útiles:
 
 #### <a name="your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center"></a>Su organización usó la puntuación de cumplimiento (versión preliminar pública) en el Centro de cumplimiento de Microsoft 365
 
-Si usó la puntuación de cumplimiento en la versión preliminar pública, observará que el Administrador de cumplimiento es prácticamente el mismo, con la puntuación destacada en el panel. Con la versión de ga, ya no necesita salir del Centro de cumplimiento de Microsoft 365 para realizar determinadas funciones de administración de evaluaciones, como crear y modificar plantillas para evaluaciones. Todas las funciones ahora residen en un solo lugar. Los datos que tenía en la versión preliminar de la puntuación de cumplimiento permanecen en la versión ga del Administrador de cumplimiento.
+Si usó la puntuación de cumplimiento en la versión preliminar pública, observará que el Administrador de cumplimiento es prácticamente el mismo, con la puntuación destacada en el panel. Con la versión ga, ya no necesita salir del Centro de cumplimiento de Microsoft 365 para realizar determinadas funciones de administración de evaluaciones, como crear y modificar plantillas para evaluaciones. Todas las funciones ahora residen en un solo lugar. Los datos que tenía en la versión preliminar de la puntuación de cumplimiento permanecen en la versión ga del Administrador de cumplimiento.
 
 Tenga en cuenta que si filtró la vista del panel de puntuación de cumplimiento, esos filtros se restableceron cuando implementamos el nuevo Administrador de cumplimiento en septiembre. Tendrá que volver a aplicar los filtros que tenía.
 
@@ -73,7 +73,7 @@ El Administrador de cumplimiento es una solución integral en el Centro de cumpl
 
 ## <a name="are-there-licensing-requirements-for-using-compliance-manager"></a>¿Existen requisitos de licencia para usar el Administrador de cumplimiento?
 
-Sí. La versión ga del Administrador de cumplimiento contiene nuevos términos de licencia. Todas las organizaciones con licencias de Office 365 y Microsoft 365, y los clientes moderados de la comunidad gubernamental (GCC) y GCC High de EE. UU., tienen acceso al Administrador de cumplimiento. Sin embargo, las evaluaciones disponibles para su organización y la forma en que administra las plantillas de evaluación dependen del contrato de licencia. Para obtener más información, visite la guía de licencias de [Microsoft 365 sobre](https://go.microsoft.com/fwlink/?linkid=2132371) seguridad y cumplimiento.
+Sí. La versión ga del Administrador de cumplimiento contiene nuevos términos de licencia. Todas las organizaciones con licencias de Office 365 y Microsoft 365, y los clientes moderados de la comunidad gubernamental (GCC) y GCC High de EE. UU., tienen acceso al Administrador de cumplimiento. Sin embargo, las evaluaciones disponibles para su organización y la forma en que administra las plantillas de evaluación dependen del contrato de licencia. Para obtener más información, visite la guía de licencias de [Microsoft 365 sobre seguridad y cumplimiento.](https://go.microsoft.com/fwlink/?linkid=2132371)
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>Si tengo una puntuación alta, ¿significa que soy totalmente compatible?
 

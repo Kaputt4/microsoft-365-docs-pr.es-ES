@@ -32,7 +32,7 @@ ms.locfileid: "50044527"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Aumentar la protección contra amenazas para la suscripción de Microsoft 365
 
-Este artículo le ayuda a aumentar la protección en su suscripción de Microsoft 365 para protegerse contra suplantación de identidad, malware y otras amenazas. Estas recomendaciones son adecuadas para las organizaciones con mayor necesidad de seguridad, como campañas políticas, oficinas de abogados y centros de salud.
+Este artículo le ayuda a aumentar la protección de su suscripción de Microsoft 365 para protegerse contra suplantación de identidad( phishing), malware y otras amenazas. Estas recomendaciones son adecuadas para las organizaciones con una mayor necesidad de seguridad, como campañas políticas, oficinas de abogados y centros de salud.
 
 Antes de empezar, compruebe la puntuación de seguridad de Microsoft. La puntuación de seguridad de Microsoft analiza la seguridad de la organización en función de las actividades y la configuración de seguridad habituales y asigna una puntuación. Empiece por tomar nota de la puntuación actual. Tomar las acciones recomendadas en este artículo aumenta la puntuación. El objetivo no es lograr la puntuación máxima, sino tener en cuenta las oportunidades para proteger su entorno que no afectan negativamente a la productividad de los usuarios.
 
@@ -82,9 +82,9 @@ Para crear una regla de transporte de correo:
 
 6. Haga clic en **Guardar**.
 
-|Configuración|Advertir a los usuarios antes de abrir los datos adjuntos de los archivos de Office|
+|Setting|Advertir a los usuarios antes de abrir los datos adjuntos de los archivos de Office|
 |---|---|
-|Name|Regla anti ransomware: advertir a los usuarios|
+|Nombre|Regla anti ransomware: advertir a los usuarios|
 |Aplique esta regla si . . .|Los datos adjuntos. . . la extensión de archivo coincide con . . .|
 |Especificar palabras o frases|Agregue estos tipos de archivo: <br/> `dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm`|
 |Haga lo siguiente. . .|Notificar al destinatario con un mensaje|
@@ -114,9 +114,9 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](https://su
 
 6. Haga clic en **Guardar**.
 
-|Configuración|Advertir a los usuarios antes de abrir los datos adjuntos de los archivos de Office|
+|Setting|Advertir a los usuarios antes de abrir los datos adjuntos de los archivos de Office|
 |---|---|
-|Name|Impedir el reenvío automático de correo electrónico a dominios externos|
+|Nombre|Impedir el reenvío automático de correo electrónico a dominios externos|
 |Aplique esta regla si ...|El remitente . . . es externo/interno. . . Dentro de la organización|
 |Agregar condición|Las propiedades del mensaje . . . incluir el tipo de mensaje . . . Reenvío automático|
 |Haga lo siguiente...|Bloquear el mensaje . . . rechazar el mensaje e incluir una explicación.|
@@ -144,8 +144,8 @@ Para crear una directiva contra suplantación de identidad [](https://support.of
 
 |Configuración u opción|Valor recomendado|
 |---|---|
-|Name|Dominio y personal más valioso|
-|Descripción|Asegúrese de que el personal más importante y nuestro dominio no se suplantan.|
+|Nombre|Dominio y personal más valioso|
+|Description|Asegúrese de que el personal más importante y nuestro dominio no se suplantan.|
 |Agregar usuarios que proteger|Seleccione **+ Agregar una condición, El destinatario es**. Escriba nombres de usuario o escriba la dirección de correo electrónico de los propietarios, socios o candidatos, administradores y otros miembros importantes del personal. Puede agregar hasta 20 direcciones internas y externas que desee proteger contra la suplantación.|
 |Agregar dominios que proteger|Seleccione **+ Agregar una condición, el dominio del destinatario es**. Escriba el dominio personalizado asociado a su suscripción de Microsoft 365, si ha definido uno. Puede escribir más de un dominio.|
 |Elegir acciones|Si un usuario suplantado envía correo electrónico: elija Redirigir mensaje a otra dirección de correo electrónico y, a continuación, escriba la dirección de correo electrónico del administrador de seguridad; por ejemplo, *Alicia <span> <span> @contoso.com*. <br/> Si el correo electrónico lo envía un dominio suplantado: elija **Mensaje en cuarentena**.|
@@ -165,13 +165,13 @@ En primer lugar, asegúrese de que, en el centro de administración, tiene activ
 
 Si aún no ve  la página de instalación con tarjetas en su espacio empresarial, consulte cómo completar estos pasos en el Centro de seguridad & cumplimiento. Consulte [Configurar datos adjuntos](#set-up-safe-attachments-in-the-security--compliance-center) seguros en el Centro de seguridad & cumplimiento y Configurar vínculos seguros en el Centro de [& cumplimiento.](#set-up-safe-links-in-the-security--compliance-center)
 
-1. En el panel de navegación izquierdo, elija **Setup**.
+1. En el panel de navegación izquierdo, elija **Configurar.**
 2. En la **página De instalación,** elija **Ver en** la tarjeta Aumentar protección **contra amenazas** avanzadas.
 
    ![Elija Ver en Aumentar la protección contra amenazas avanzadas.](../media/startatp.png)
 
 3. En la **página Aumentar la protección contra amenazas avanzadas,** elija **Introducción.**
-4. En el panel que se abre, active las casillas junto a Vínculos y datos adjuntos en el correo **electrónico,** Examinar archivos en **SharePoint, OneDrive** y Teams, y examinar vínculos en el escritorio de Office y aplicaciones de **Office Online** en Examinar elementos de contenido **malintencionado.**
+4. En el panel que se abre, active las casillas situadas junto a Vínculos y datos adjuntos en el correo **electrónico,** Examinar archivos en **SharePoint, OneDrive** y Teams, y examinar vínculos en el escritorio de Office y aplicaciones de **Office Online** en Examinar elementos para buscar contenido **malintencionado.**
 
    En **Vínculos y datos adjuntos del correo** electrónico, escriba Todos los usuarios o los usuarios específicos cuyo correo electrónico desea examinar.
 
@@ -181,7 +181,7 @@ Si aún no ve  la página de instalación con tarjetas en su espacio empresarial
 
 ### <a name="set-up-safe-attachments-in-the-security--compliance-center"></a>Configurar datos adjuntos seguros en el Centro de & cumplimiento
 
-Las personas envían, reciben y comparten datos adjuntos periódicamente, como documentos, presentaciones, hojas de cálculo y mucho más. No siempre es fácil saber si un archivo adjunto es seguro o malintencionado con solo mirar un mensaje de correo electrónico. Microsoft Defender para Office 365 incluye protección de datos adjuntos seguros, pero esta protección no está activada de forma predeterminada. Se recomienda crear una nueva regla para empezar a usar esta protección. Esta protección se extiende a los archivos de SharePoint, OneDrive y Microsoft Teams.
+Las personas envían, reciben y comparten datos adjuntos periódicamente, como documentos, presentaciones, hojas de cálculo y mucho más. No siempre es fácil saber si los datos adjuntos son seguros o malintencionados con solo mirar un mensaje de correo electrónico. Microsoft Defender para Office 365 incluye protección de datos adjuntos seguros, pero esta protección no está activada de forma predeterminada. Se recomienda crear una nueva regla para empezar a usar esta protección. Esta protección se extiende a los archivos de SharePoint, OneDrive y Microsoft Teams.
 
 Para crear una directiva de datos adjuntos seguros, vea [este breve vídeo](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)o siga estos pasos:
 
@@ -201,10 +201,10 @@ Para crear una directiva de datos adjuntos seguros, vea [este breve vídeo](http
 
 |Configuración u opción|Valor recomendado|
 |---|---|
-|Name|Bloquear correos electrónicos actuales y futuros con malware detectado.|
-|Descripción|Bloquear correos electrónicos y datos adjuntos actuales y futuros con malware detectado.|
+|Nombre|Bloquear correos electrónicos actuales y futuros con malware detectado.|
+|Description|Bloquear correos electrónicos y datos adjuntos actuales y futuros con malware detectado.|
 |Guardar datos adjuntos respuesta de malware desconocido|Seleccione **Bloquear: bloquee los correos electrónicos y** los datos adjuntos actuales y futuros con malware detectado.|
-|Redirigir datos adjuntos al detectarse|Habilitar redirección (seleccione este cuadro) <br/> Escriba la cuenta de administrador o una configuración de buzón para la cuarentena. <br/> Aplica la selección anterior si se ha finalizado el análisis de malware para datos adjuntos o si se produce un error (selecciona este cuadro).|
+|Redirigir datos adjuntos al detectarse|Habilitar redirección (seleccione este cuadro) <br/> Escriba la cuenta de administrador o una configuración de buzón para la cuarentena. <br/> Aplica la selección anterior si se ha finalizado el análisis de malware para datos adjuntos o si se produce un error (selecciona esta casilla).|
 |Aplicado a|El dominio del destinatario es . . . seleccione su dominio.|
 
 Para obtener más información, vea [Configurar directivas contra suplantación de identidad en Defender para Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)
@@ -219,7 +219,7 @@ Le recomendamos que haga lo siguiente:
 
 - Agregue una nueva directiva destinada a todos los destinatarios de su dominio.
 
-Para configurar Vínculos seguros, vea [este breve vídeo](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)de aprendizaje o siga estos pasos:
+Para configurar Vínculos seguros, vea [este breve vídeo de aprendizaje](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)o siga estos pasos:
 
 1. Ve e <https://protection.office.com> inicia sesión con tu cuenta de administrador.
 
@@ -245,8 +245,8 @@ Para crear una nueva directiva destinada a todos los destinatarios de su dominio
 
 |Configuración u opción|Valor recomendado|
 |---|---|
-|Name|Directiva de vínculos seguros para todos los destinatarios del dominio|
-|Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes|Seleccionar activado: las direcciones URL se reescribirán y se comprobarán con una lista de **vínculos malintencionados** conocidos cuando el usuario haga clic en el vínculo.|
+|Nombre|Directiva de vínculos seguros para todos los destinatarios del dominio|
+|Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes|Seleccionar Activado: las direcciones URL se reescribirán y se comprobarán con una lista de **vínculos malintencionados** conocidos cuando el usuario haga clic en el vínculo.|
 |Usar datos adjuntos seguros para examinar el contenido descargable|Seleccione este cuadro.|
 |Aplicado a|El dominio del destinatario es . . . seleccione su dominio.|
 
@@ -263,7 +263,7 @@ Debe tener asignado el rol Registros de auditoría en Exchange Online para activ
 
     ![Choose Open on the security & compliance cars.](../media/gotosecandcomp.png)
 3. En la página seguridad y cumplimiento, elija **Buscar** y, a continuación, **Búsqueda de registro de auditoría.**
-4. En la parte superior de la página búsqueda del **registro de** auditoría, elija **Activar auditoría.**
+4. En la parte superior de la página **búsqueda del registro de** auditoría, elija Activar **auditoría.**
 
 Una vez activada la característica, puede buscar archivos, carpetas y muchas actividades. Para obtener más información, [vea buscar en el registro de auditoría.](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 
@@ -271,7 +271,7 @@ Una vez activada la característica, puede buscar archivos, carpetas y muchas ac
 
 (cambie la expiración predeterminada del vínculo anónimo a 14 días, cambie el tipo de uso compartido predeterminado a "Personas específicas") Para cambiar la configuración de uso compartido de OneDrive y SharePoint:
 
-1. Vaya al centro de administración en <https://admin.microsoft.com> y, a continuación, **elija SharePoint** en **Centros de administración** en el panel de navegación izquierdo.
+1. Vaya al centro de administración en <https://admin.microsoft.com> y, a continuación, **elija SharePoint en** **Centros de administración** en el panel de navegación izquierdo.
 2. En el Centro de administración de SharePoint, vaya **a Uso compartido de** \> **directivas.**
 3. En  la página Uso compartido, en Vínculos de archivos y carpetas, seleccione Personas específicas y, en Configuración avanzada para vínculos **"Cualquiera",** seleccione Estos vínculos deben expirar en este número de días y escribir en 14 (u otro número de días al que desee restringir la duración del vínculo). 
 
@@ -289,8 +289,8 @@ En la figura siguiente se muestran las directivas predeterminadas que se incluye
 
 Puede impedir que los usuarios de su organización compartan sus calendarios o también puede administrar lo que pueden compartir. Por ejemplo, puede restringir el uso compartido solo a los tiempos de disponibilidad.
 
-1. Vaya al centro de administración en <https://admin.microsoft.com> y elija **Configuración** de \> **la organización.**
-2. En **la** página Servicios, elija Calendario y elija si los usuarios de su organización pueden compartir sus calendarios con personas externas que tengan Office 365 o Exchange, o con cualquier persona.
+1. Vaya al centro de administración en <https://admin.microsoft.com> y elija Configuración **de** \> **la organización.**
+2. En la **página** Servicios, elija Calendario y elija si los usuarios de su organización pueden compartir sus calendarios con personas externas que tengan Office 365 o Exchange, o con cualquier persona.
 
    Si elige la opción compartir con cualquiera, también puede decidir compartir solo la información de disponibilidad.
 

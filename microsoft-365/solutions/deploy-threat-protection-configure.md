@@ -64,8 +64,8 @@ Microsoft Defender for Identity permite a los analistas y profesionales de segur
 
 ![Proceso para implementar Microsoft Defender for Identity](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
 
-1. [Configure Microsoft Defender for Identity para](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) proteger los entornos principales.
-2. Proteja todos los controladores [de dominio y](https://docs.microsoft.com/azure-advanced-threat-protection/atp-sensor-monitoring) [bosques.](https://docs.microsoft.com/azure-advanced-threat-protection/atp-multi-forest)
+1. [Configure Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) para proteger los entornos principales.
+2. Proteja todos los [controladores de dominio](https://docs.microsoft.com/azure-advanced-threat-protection/atp-sensor-monitoring) y [bosques.](https://docs.microsoft.com/azure-advanced-threat-protection/atp-multi-forest)
 3. Integre [alertas de Microsoft Defender para Identidad](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide?tabs=external) en el flujo de trabajo de operaciones de seguridad (SecOps).
 
 ### <a name="more-information-about-microsoft-defender-for-identity"></a>Más información sobre Microsoft Defender para Identidad
@@ -95,7 +95,7 @@ Microsoft 365 Defender unifica alertas, incidentes, investigación y respuesta a
 
 ## <a name="step-4-configure-microsoft-defender-for-office-365"></a>Paso 4: Configurar Microsoft Defender para Office 365
 
-[Microsoft Defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) protege su organización contra amenazas malintencionadas en mensajes de correo electrónico (datos adjuntos y DIRECCIONES URL), documentos de Office y herramientas de colaboración. En la siguiente tabla se enumeran las características y capacidades de Microsoft Defender para Office 365 que se incluyen en Microsoft 365 E5:
+[Microsoft Defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) protege su organización contra amenazas malintencionadas en mensajes de correo electrónico (datos adjuntos y direcciones URL), documentos de Office y herramientas de colaboración. En la siguiente tabla se enumeran las características y capacidades de Microsoft Defender para Office 365 que se incluyen en Microsoft 365 E5:
 
 |Capacidades de configuración, protección y detección|Capacidades de automatización, investigación, corrección y educación|
 |---|---|
@@ -119,7 +119,7 @@ Con Microsoft Defender para Office 365, las personas de su organización pueden 
 
 ## <a name="step-5-configure-microsoft-defender-for-endpoint"></a>Paso 5: Configurar Microsoft Defender para endpoint
 
-[Microsoft Defender para puntos](https://docs.microsoft.com/windows/security/threat-protection) de conexión protege los dispositivos de la organización (también denominados puntos de conexión) de ciberamenazas, ataques avanzados e infracciones de datos. Los equipos de seguridad pueden ser más eficientes en la administración de la seguridad de sus puntos de conexión. Las herramientas sólidas ayudan a las organizaciones a mantenerse al día con los sistemas sin corregir mediante la detección de vulnerabilidades con la administración de [amenazas y vulnerabilidades.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) Las capacidades automatizadas de detección y corrección, [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)como reducción [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) de superficie de [ataque,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)protección de última generación, [](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)detección y respuesta de puntos de conexión e investigación y corrección automatizadas ayudan a mantener los dispositivos a salvo de malware. Además de estas capacidades, los clientes pueden recibir notificaciones proactivas y consultar a los expertos en amenazas de Microsoft a petición, como parte del servicio de búsqueda administrada de participación. 
+[Microsoft Defender para puntos](https://docs.microsoft.com/windows/security/threat-protection) de conexión protege los dispositivos de la organización (también denominados puntos de conexión) de ciberamenazas, ataques avanzados e infracciones de datos. Los equipos de seguridad pueden ser más eficientes en la administración de la seguridad de sus puntos de conexión. Las herramientas sólidas ayudan a las organizaciones a mantenerse al día con los sistemas no detectados mediante la detección de vulnerabilidades con la administración de [amenazas y vulnerabilidades.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) Las capacidades automatizadas de detección y corrección, [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)como reducción [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) de superficie de [ataque,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)protección de última generación, [](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)detección y respuesta de puntos de conexión e investigación y corrección automatizadas ayudan a mantener los dispositivos a salvo de malware. Además de estas capacidades, los clientes pueden recibir notificaciones proactivas y consultar a los expertos en amenazas de Microsoft a petición, como parte del servicio de búsqueda administrada de participación. 
 
 
 ### <a name="set-up-microsoft-defender-for-endpoint"></a>Configurar Microsoft Defender para endpoint
@@ -161,7 +161,7 @@ Después de configurar e implementar los servicios y capacidades de protección 
 ![Centro de seguridad de Microsoft 365](../media/solutions-architecture-center/m365-security-center.png)
 
 El Centro de seguridad de Microsoft 365 está diseñado específicamente para administradores de seguridad y equipos de operaciones de seguridad. En el Centro de seguridad de Microsoft 365, puede:
-- Vea el estado de seguridad general de su organización con [puntuación de seguridad.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)
+- Ver el estado de seguridad general de su organización con [puntuación de seguridad.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)
 - [Supervise y vea informes](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting) sobre el estado de las identidades, los datos, los dispositivos, las aplicaciones y la infraestructura.
 - Conecte los puntos en alertas a través [de incidentes.](https://docs.microsoft.com/microsoft-365/security/mtp/incident-queue)
 - Use [la investigación automatizada y la corrección para](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir) abordar las amenazas.
@@ -194,6 +194,6 @@ Además de esta guía, Microsoft recomienda que los usuarios tomen las acciones 
 - Protección de dispositivos 
 - Habilitación de características de seguridad en equipos Windows 10 y Mac (para dispositivos no administrados)
     
-Microsoft también recomienda que los usuarios protejan sus cuentas de correo electrónico personales mediante las acciones recomendadas en los artículos siguientes:
+Microsoft también recomienda que los usuarios protejan sus cuentas de correo electrónico personales mediante las acciones recomendadas en los siguientes artículos:
 - [Ayudar a proteger su Outlook.com de correo electrónico](https://support.microsoft.com/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 - [Proteger su cuenta de Gmail con verificación en dos pasos](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)

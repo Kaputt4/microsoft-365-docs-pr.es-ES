@@ -45,7 +45,7 @@ Con este nivel de visibilidad, puede buscar rápidamente las amenazas que atravi
 Estas son técnicas generales y consultas de ejemplo basadas en diversos escenarios de búsqueda que pueden ayudarle a explorar cómo puede crear consultas al buscar amenazas sofisticadas.
 
 ## <a name="get-entity-info"></a>Obtener información de entidad
-Usa estas consultas para obtener información sobre cómo obtener rápidamente información sobre las cuentas de usuario, los dispositivos y los archivos. 
+Usa estas consultas para obtener información sobre cómo obtener rápidamente información sobre cuentas de usuario, dispositivos y archivos. 
 
 ### <a name="obtain-user-accounts-from-email-addresses"></a>Obtener cuentas de usuario a través de las direcciones de correo electrónico
 Al crear consultas a través de [tablas que cubran dispositivos y mensajes de correo electrónico](advanced-hunting-schema-tables.md), puede que necesite obtener los nombres de las cuentas de usuario en las direcciones de correo electrónico del remitente o destinatario. Por lo general, puede hacerlo para la dirección del destinatario o del remitente mediante el *host local* de la dirección de correo electrónico.
@@ -66,7 +66,7 @@ EmailEvents
 
 ### <a name="merge-the-identityinfo-table"></a>Combinar la tabla IdentityInfo
 
-Puede obtener nombres de cuenta y otra información de cuenta si combina o se une a la [tabla IdentityInfo](advanced-hunting-identityinfo-table.md). La consulta siguiente obtiene la lista de detecciones de suplantación de identidad y malware de la tabla [EmailEvents](advanced-hunting-emailevents-table.md) y, a continuación, une esa información con la tabla para obtener información detallada sobre `IdentityInfo` cada destinatario. 
+Puede obtener nombres de cuenta y otra información de cuenta si combina o se une a la [tabla IdentityInfo](advanced-hunting-identityinfo-table.md). La consulta siguiente obtiene la lista de detecciones de suplantación de identidad (phishing) y malware de la tabla [EmailEvents](advanced-hunting-emailevents-table.md) y, a continuación, une esa información con la tabla para obtener información detallada sobre `IdentityInfo` cada destinatario. 
 
 ```kusto
 EmailEvents
@@ -121,7 +121,7 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 ```
 
 ### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>Obtener intentos de inicio de sesión por cuentas de dominio destinadas al robo de credenciales
-Esta consulta identifica primero todas las alertas de acceso a credenciales de la `AlertInfo` tabla. A continuación, combina o une la tabla, que analiza para los nombres de las cuentas de destino y filtra solo para las cuentas unidas `AlertEvidence` a un dominio. Por último, comprueba la tabla para obtener todas las actividades de inicio de sesión de las cuentas de destino unidas `IdentityLogonEvents` al dominio.
+Esta consulta identifica primero todas las alertas de acceso a credenciales de la `AlertInfo` tabla. A continuación, combina o une la tabla, que analiza los nombres de las cuentas de destino y filtra solo para las cuentas unidas `AlertEvidence` a un dominio. Por último, comprueba la tabla para obtener todas las actividades de inicio de sesión de las cuentas de destino unidas `IdentityLogonEvents` al dominio.
 
 ```kusto
 AlertInfo

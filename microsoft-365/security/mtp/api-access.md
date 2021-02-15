@@ -1,7 +1,7 @@
 ---
 title: Obtener acceso a las API de Microsoft 365 Defender
 description: Obtenga información sobre cómo obtener acceso a las API de Microsoft 365 Defender
-keywords: access, api, contexto de aplicación, contexto de usuario, aplicación de aad, token de acceso
+keywords: access, api, contexto de aplicación, contexto de usuario, aplicación aad, token de acceso
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -89,6 +89,6 @@ Para obtener más información, vea Crear una aplicación con acceso de asociado
 ## <a name="related-articles"></a>Artículos relacionados
 
 - [Introducción a las API de Microsoft 365 Defender](api-overview.md)
-- [Autorización de OAuth 2.0 para el inicio de sesión de usuario y el acceso a la API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+- [Autorización de OAuth 2.0 para el inicio de sesión del usuario y el acceso a la API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 - [Administrar secretos en las aplicaciones de servidor con Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
 - [Crear una aplicación "Hola a todos" que acceda a las API de Microsoft 365](api-hello-world.md)

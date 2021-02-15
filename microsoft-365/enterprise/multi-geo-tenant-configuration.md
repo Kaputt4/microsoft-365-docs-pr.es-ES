@@ -113,7 +113,7 @@ Se recomienda incluir el establecimiento de la ubicación de datos preferida del
 Si el usuario ya ha creado un sitio de OneDrive en el espacio empresarial, el establecimiento de su PDL no trasladará automáticamente su instancia de OneDrive existente. Para mover el OneDrive de un usuario, vea [OneDrive para la Empresa Geo Move](move-onedrive-between-geo-locations.md).
 
 > [!NOTE]
-> Exchange Online reubica automáticamente el buzón del usuario si el PLD cambia y MailboxRegion ya no coincide con el código de ubicación geográfica de la base de datos de buzones. Para obtener más información, consulte [Administración de buzones de Exchange Online en un entorno multige geográfico.](https://docs.microsoft.com/microsoft-365/enterprise/administering-exchange-online-multi-geo)
+> Exchange Online reubica automáticamente el buzón del usuario si el PLD cambia y MailboxRegion ya no coincide con el código de ubicación geográfica de la base de datos de buzones. Para obtener más información, consulte [Administración de buzones de Exchange Online en un entorno multigemico.](https://docs.microsoft.com/microsoft-365/enterprise/administering-exchange-online-multi-geo)
 
 Si el usuario no tiene un sitio de OneDrive en el espacio empresarial, se le aprovisionará OneDrive de acuerdo con el valor de PDL, suponiendo que la PDL del usuario coincida con una de las ubicaciones satélite de la empresa.
 

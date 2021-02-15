@@ -37,7 +37,7 @@ ms.locfileid: "49929555"
 
 La función es una función de enriquecimiento en la búsqueda avanzada que agrega los siguientes datos a `FileProfile()` los archivos encontrados por la consulta. [](advanced-hunting-overview.md)
 
-| Columna | Tipo de datos | Descripción |
+| Columna | Tipo de datos | Description |
 |------------|-------------|-------------|
 | SHA1 | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
 | SHA256 | string | SHA-256 del archivo al que se aplicó la acción grabada |

@@ -29,13 +29,13 @@ ms.locfileid: "50032627"
 > [!IMPORTANT]
 > El 28 de febrero de 2021, Microsoft dejará de admitir AD RMS en Exchange Online. Si ha implementado un entorno híbrido en el que los buzones de Exchange están en línea y usa IRM con Active Directory RMS local, tendrá que migrar a Azure. Las organizaciones que se han implementado en el entorno de GCC Moderado también se ven afectadas. Consulte "Información general sobre el desuso de AD RMS en Exchange Online" en este artículo para obtener información.
 
-En el resto de este artículo se compara el cifrado de mensajes de Office 365 (OME) heredado con las nuevas capacidades de OME y el cifrado de mensajes avanzado de Office 365. Las nuevas funcionalidades son una fusión y una versión más reciente de OME e Information Rights Management (IRM). También se describen las características únicas de la implementación en GCC High. Los dos pueden coexistir en la organización. Para obtener información sobre cómo funcionan las nuevas funcionalidades, vea Cifrado de mensajes [de Office 365 (OME).](ome.md)
+El resto de este artículo compara el cifrado de mensajes de Office 365 (OME) heredado con las nuevas capacidades de OME y el cifrado de mensajes avanzado de Office 365. Las nuevas funcionalidades son una fusión y una versión más reciente de OME e Information Rights Management (IRM). También se describen las características únicas de la implementación en GCC High. Los dos pueden coexistir en la organización. Para obtener información sobre cómo funcionan las nuevas funcionalidades, vea Cifrado de mensajes [de Office 365 (OME).](ome.md)
 
-Este artículo forma parte de una serie más amplia de artículos sobre el cifrado de mensajes de Office 365. Este artículo está pensado para administradores y profesionales de TI. Si solo busca información sobre el envío o recepción de un mensaje cifrado, consulte la lista de artículos en Cifrado de mensajes de [Office 365 (OME)](ome.md) y busque el artículo que mejor se adapte a sus necesidades.
+Este artículo forma parte de una serie más amplia de artículos sobre el cifrado de mensajes de Office 365. Este artículo está destinado a administradores y profesionales de TI. Si solo busca información sobre el envío o recepción de un mensaje cifrado, consulte la lista de artículos en Cifrado de mensajes de [Office 365 (OME)](ome.md) y busque el artículo que mejor se adapte a sus necesidades.
 
 ## <a name="overview-of-ad-rms-deprecation-in-exchange-online"></a>Información general sobre el desuso de AD RMS en Exchange Online
 
-Exchange Online incluye la funcionalidad information Rights Management (IRM) que proporciona protección en línea y sin conexión de mensajes de correo electrónico y datos adjuntos. De forma predeterminada, Exchange Online usa Azure Information Protection. Sin embargo, es posible que su organización haya configurado Exchange Online IRM para usar Active Directory Rights Management Service (AD RMS) local. La compatibilidad con AD RMS en Exchange Online se está retirando. En su lugar, Azure Information Protection reemplazará a AD RMS por completo.
+Exchange Online incluye la funcionalidad information Rights Management (IRM) que proporciona protección en línea y sin conexión de mensajes de correo electrónico y datos adjuntos. De forma predeterminada, Exchange Online usa Azure Azure Information Protection. Sin embargo, es posible que su organización haya configurado Exchange Online IRM para usar Active Directory Rights Management Service (AD RMS) local. La compatibilidad con AD RMS en Exchange Online se está retirando. En su lugar, Azure Information Protection reemplazará a AD RMS por completo.
 
 Antes de comenzar, revise y evalúe el impacto para su organización. Si su organización ya usa Azure Information Protection para cifrar el correo electrónico en Exchange Online, no hay nada que hacer. Si cifra el correo electrónico mediante reglas de flujo de correo de Exchange, por ejemplo mediante el cifrado de mensajes de Office 365, no tendrá que cambiar el correo electrónico seguro. De lo contrario, tendrá que prepararse para el desuso de AD RMS cambiando a Azure Information Protection.
 
@@ -49,7 +49,7 @@ Para habilitar Azure Information Protection, use Set-IrmConfiguration cmdlet esc
 Set-IrmConfiguration -AzureRMSLicensingEnabled $true
 ```
 
-Si su organización aún no ha configurado Azure Information Protection, tendrá que migrar de AD RMS a Azure Information Protection. Para obtener instrucciones, [consulte Migración de AD RMS a Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms)
+Si su organización aún no ha configurado Azure Information Protection, tendrá que migrar de AD RMS a Azure Information Protection. Para obtener instrucciones, [consulte Migrar de AD RMS a Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="side-by-side-comparison-of-features-and-capabilities"></a>Comparación en paralelo de características y funcionalidades
 
@@ -78,7 +78,7 @@ Las nuevas funcionalidades ofrecen las siguientes ventajas:
 
 ## <a name="office-365-advanced-message-encryption-capabilities"></a>Capacidades avanzadas de cifrado de mensajes de Office 365
 
-El cifrado de mensajes avanzado de Office 365 ofrece capacidades adicionales además de las nuevas funcionalidades de OME. Debe tener configuradas las nuevas capacidades de cifrado de mensajes de Office 365 en su organización para poder usar las capacidades de cifrado de mensajes avanzado. Además, para poder usar estas funcionalidades, los destinatarios deben ver y responder a correo seguro a través del Portal de OME. Las funcionalidades avanzadas incluyen:
+El cifrado de mensajes avanzado de Office 365 ofrece capacidades adicionales además de las nuevas funcionalidades de OME. Debe tener configuradas las nuevas capacidades de cifrado de mensajes de Office 365 en su organización para poder usar las capacidades de cifrado de mensajes avanzado. Además, para poder usar estas funcionalidades, los destinatarios deben ver y responder correo seguro a través del Portal de OME. Las funcionalidades avanzadas incluyen:
 
 - Revocación de mensajes
 
@@ -108,7 +108,7 @@ Todos los destinatarios externos a GCC High, incluidos los usuarios comerciales 
 
 ## <a name="coexistence-of-legacy-ome-and-the-new-capabilities-in-the-same-tenant"></a>Coexistencia de OME heredado y las nuevas funcionalidades en el mismo inquilino
 
-Puede usar OME heredado y las nuevas funcionalidades en el mismo espacio empresarial. Como administrador, para ello, elija la versión de OME que desea usar al crear las reglas de flujo de correo.
+Puede usar OME heredado y las nuevas funcionalidades en el mismo espacio empresarial. Como administrador, debe elegir qué versión de OME desea usar al crear las reglas de flujo de correo.
 
 - Para especificar la versión heredada de OME, use la acción de regla de flujo de correo de Exchange **Aplicar la versión anterior de OME**.
 
@@ -126,4 +126,4 @@ Normalmente, las nuevas funcionalidades de OME se habilitan automáticamente par
 
 La versión heredada de OME se habilita automáticamente para su organización si ha habilitado Azure Information Protection. En el pasado, OME heredado funcionaba incluso si Azure Information Protection no estaba habilitado. Ya no es así.
 
-Para empezar a usar OME heredado, si ha habilitado Azure Information Protection, configure las reglas de flujo de correo que usan la acción de regla Aplicar la versión anterior **de OME**. Para obtener instrucciones, vea [Definir reglas de flujo de correo para cifrar mensajes de correo electrónico.](define-mail-flow-rules-to-encrypt-email.md)
+Para empezar a usar OME heredado, si ha habilitado Azure Information Protection, configure las reglas de flujo de correo que usan la acción de regla Aplicar la versión anterior **de OME.** Para obtener instrucciones, vea [Definir reglas de flujo de correo para cifrar mensajes de correo electrónico.](define-mail-flow-rules-to-encrypt-email.md)

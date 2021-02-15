@@ -50,7 +50,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `Signer` | string | Información sobre el firmante del archivo |
 | `SignerHash` | string | Valor hash único que identifica al firmante |
 | `Issuer` | string | Información sobre la entidad de certificación (CA) emisora |
-| `IssuerHash` | string | Valor hash único que identifica la entidad emisora de certificados (CA) |
+| `IssuerHash` | string | Valor hash único que identifica la entidad de certificación (CA) emisora |
 | `CertificateSerialNumber` | string | Identificador del certificado que es único para la entidad de certificación (CA) emisora |
 | `CrlDistributionPointUrls` | string |  Matriz JSON que enumera las direcciones URL de recursos compartidos de red que contienen certificados y listas de revocación de certificados (CRL) |
 | `CertificateCreationTime` | datetime | Fecha y hora en que se creó el certificado |

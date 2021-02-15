@@ -21,9 +21,9 @@ ms.locfileid: "49933071"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Obtenga información a través de la formación de simulación de ataques
 
-Dentro del entrenamiento de simulación de ataques, Microsoft proporciona información basada en los resultados de simulaciones y cursos que los empleados han pasado. Estas conclusiones te ayudarán a mantenerte informado sobre el progreso de preparación de amenazas de los empleados, así como a recomendar los siguientes pasos para preparar mejor a los empleados y a tu entorno para los ataques.
+Dentro del aprendizaje de simulación de ataques, Microsoft proporciona información basada en los resultados de simulaciones y cursos que los empleados han pasado. Estas conclusiones te ayudarán a mantenerte informado sobre el progreso de preparación de amenazas de los empleados, así como a recomendar los siguientes pasos para preparar mejor a los empleados y a tu entorno para los ataques.
 
-Estamos trabajando continuamente en la expansión de las conclusiones que están disponibles para usted. El impacto en el comportamiento y las acciones recomendadas están disponibles actualmente. To start, head over to [Attack simulation training in the Microsoft 365 security center](https://security.microsoft.com/attacksimulator?viewid=overview).
+We are continuously working on expanding the insights that are available to you. El impacto en el comportamiento y las acciones recomendadas están disponibles actualmente. Para empezar, diríjase a la [formación de simulación de ataques en el Centro de seguridad de Microsoft 365.](https://security.microsoft.com/attacksimulator?viewid=overview)
 
 ## <a name="behavior-impact-on-compromise-rate"></a>Impacto del comportamiento en la tasa de peligro
 
@@ -48,7 +48,7 @@ En la [ **pestaña Simulaciones,**](https://security.microsoft.com/attacksimulat
 En la sección de acciones recomendadas se detallan las recomendaciones según la [puntuación de seguridad de Microsoft.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) Estas recomendaciones se basan en la carga usada en la simulación y le ayudarán a proteger a los empleados y a su entorno. Al hacer clic en cada acción de mejora, se mostrarán sus detalles.
 
 > [!div class="mx-imgBorder"]
-> ![Sección de acciones de recomendación sobre el aprendizaje de simulación de ataques](../../media/attack-sim-preview-recommended-actions.png)
+> ![Sección de acciones de recomendación sobre el entrenamiento de simulación de ataques](../../media/attack-sim-preview-recommended-actions.png)
 
 ## <a name="related-links"></a>Vínculos relacionados
 

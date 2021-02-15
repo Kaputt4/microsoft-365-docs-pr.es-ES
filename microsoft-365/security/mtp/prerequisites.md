@@ -61,7 +61,7 @@ Para obtener más información, vea los planes de servicio de [Microsoft 365 Ent
 Vaya al Centro de administración de Microsoft 365 ([admin.microsoft.com](https://admin.microsoft.com/)) para ver las licencias existentes. En el Centro de administración, vaya a **Facturación** > **Licencias**.
 
 >[!NOTE]
-> Debe tener asignado el rol de administrador **de** facturación o lector **global** en [Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) para poder ver la información de licencia. Si tiene problemas de acceso, póngase en contacto con un administrador global.
+> Debe tener asignado el  rol de administrador de facturación o lector **global** en [Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) para poder ver la información de licencia. Si tiene problemas de acceso, póngase en contacto con un administrador global.
 
 ## <a name="required-permissions"></a>Permisos necesarios
 Debe ser administrador **global o** **administrador** de seguridad en Azure Active Directory para activar Microsoft 365 Defender. Para obtener la lista de roles necesarios para usar Microsoft 365 Defender e información sobre cómo se regula el acceso a los datos, lea acerca de cómo administrar el acceso a [Microsoft 365 Defender.](mtp-permissions.md)
@@ -74,7 +74,7 @@ Actualmente, Microsoft 365 Defender *no está* disponible para:
 - Us Government Community Cloud (GCC)
 - US Government Community Cloud High (GCC High)
 - Departamento de Defensa de EE. UU.
-- Todas las instituciones gubernamentales estadounidenses con licencias comerciales
+- Todas las instituciones gubernamentales de EE. UU. con licencias comerciales
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Introducción a Microsoft 365 Defender](microsoft-threat-protection.md)

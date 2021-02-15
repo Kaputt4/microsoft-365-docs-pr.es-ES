@@ -40,7 +40,7 @@ Aplique estas recomendaciones para obtener resultados más rápidos y evitar tie
 ## <a name="understand-cpu-resource-quotas"></a>Comprender las cuotas de recursos de CPU
 Según su tamaño, cada inquilino tiene acceso a una cantidad establecida de recursos de CPU asignados para ejecutar consultas de búsqueda avanzada. Para obtener información detallada acerca de los distintos límites de servicio, [lea acerca de las cuotas de búsqueda avanzada y los parámetros de uso.](advanced-hunting-limits.md)
 
-Los clientes que ejecutan varias consultas con regularidad deben realizar un seguimiento del consumo y aplicar las instrucciones de optimización de este artículo para minimizar las interrupciones resultantes de la superación de cuotas o parámetros de uso.
+Los clientes que ejecutan varias consultas con regularidad deben realizar un seguimiento del consumo y aplicar las instrucciones de optimización de este artículo para minimizar la interrupción resultante del exceso de cuotas o parámetros de uso.
 
 ## <a name="general-optimization-tips"></a>Sugerencias generales de optimización
 
@@ -81,7 +81,7 @@ El [operador join](https://docs.microsoft.com/azure/data-explorer/kusto/query/jo
     on AccountSid
     ```
 
-- **Use** el tipo de combinación [](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors) interna: el tipo de combinación predeterminado o [la](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor) combinación interna desduplica las filas de la tabla izquierda por la tecla de combinación antes de devolver una fila para cada coincidencia a la tabla derecha. Si la tabla izquierda tiene varias filas con el mismo valor para la clave, dichas filas se desduplicarán para dejar una sola fila aleatoria `join` para cada valor único.
+- **Use** el tipo de combinación [](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors) interna: el tipo de combinación predeterminado o [innerunique-join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor) deduplica las filas de la tabla izquierda por la tecla join antes de devolver una fila para cada coincidencia a la tabla derecha. Si la tabla izquierda tiene varias filas con el mismo valor para la clave, dichas filas se desduplicarán para dejar una sola fila aleatoria `join` para cada valor único.
 
     Este comportamiento predeterminado puede dejar fuera información importante de la tabla izquierda que puede proporcionar información útil. Por ejemplo, la consulta siguiente solo mostrará un correo electrónico que contiene datos adjuntos concretos, incluso si el mismo archivo adjunto se envió con varios mensajes de correo electrónico:
 
@@ -102,7 +102,7 @@ El [operador join](https://docs.microsoft.com/azure/data-explorer/kusto/query/jo
     ```
 - **Unir registros desde una ventana de tiempo:** al investigar eventos de seguridad, los analistas buscan eventos relacionados que se producen alrededor del mismo período de tiempo. Aplicar el mismo enfoque al usar también `join` beneficia el rendimiento al reducir el número de registros que se deben comprobar.
     
-    La siguiente consulta comprueba si hay eventos de inicio de sesión en un plazo de 30 minutos desde la recepción de un archivo malintencionado:
+    La consulta siguiente comprueba si hay eventos de inicio de sesión en un plazo de 30 minutos desde la recepción de un archivo malintencionado:
 
     ```kusto
     EmailEvents
@@ -127,7 +127,7 @@ El [operador join](https://docs.microsoft.com/azure/data-explorer/kusto/query/jo
 
 - **Usa sugerencias para el rendimiento:** usa sugerencias con el operador para indicar al back-end que distribuya la carga al ejecutar operaciones `join` que consumen muchos recursos. [Más información sobre las sugerencias de unión](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-hints)
 
-    Por ejemplo, **[](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery)** la sugerencia de aleatorio ayuda a mejorar el rendimiento de las consultas al unir tablas con una clave con una cardinalidad alta (una clave con muchos valores únicos), como la de la `AccountObjectId` consulta siguiente:
+    Por ejemplo, **[](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery)** la sugerencia de aleatorio ayuda a mejorar el rendimiento de las consultas al unir tablas mediante una clave con una cardinalidad alta (una clave con muchos valores únicos), como la de la `AccountObjectId` consulta siguiente:
 
     ```kusto
     IdentityInfo
@@ -139,7 +139,7 @@ El [operador join](https://docs.microsoft.com/azure/data-explorer/kusto/query/jo
     on AccountObjectId 
     ```
     
-    La **[sugerencia de](https://docs.microsoft.com/azure/data-explorer/kusto/query/broadcastjoin)** difusión ayuda cuando la tabla izquierda es pequeña (hasta 100.000 registros) y la tabla derecha es extremadamente grande. Por ejemplo, la consulta siguiente está intentando unirse  a algunos correos electrónicos que tienen asuntos específicos con todos los mensajes que contienen vínculos en la `EmailUrlInfo` tabla:
+    La **[sugerencia de difusión](https://docs.microsoft.com/azure/data-explorer/kusto/query/broadcastjoin)** ayuda cuando la tabla izquierda es pequeña (hasta 100.000 registros) y la tabla derecha es extremadamente grande. Por ejemplo, la consulta siguiente está intentando unirse  a algunos correos electrónicos que tienen asuntos específicos con todos los mensajes que contienen vínculos en la `EmailUrlInfo` tabla:
 
     ```kusto
     EmailEvents 
@@ -148,11 +148,11 @@ El [operador join](https://docs.microsoft.com/azure/data-explorer/kusto/query/jo
     ```
 
 ## <a name="optimize-the-summarize-operator"></a>Optimizar el `summarize` operador
-El [operador de resumen](https://docs.microsoft.com/azure/data-explorer/kusto/query/summarizeoperator) agrega el contenido de una tabla. Aplica estas sugerencias para optimizar las consultas que usan este operador.
+El [operador de resumen](https://docs.microsoft.com/azure/data-explorer/kusto/query/summarizeoperator) agrega el contenido de una tabla. Aplique estas sugerencias para optimizar las consultas que usan este operador.
 
 - **Buscar valores distintos:** en general, se usan para buscar valores `summarize` distintos que pueden ser repetitivos. No es necesario usarlo para agregar columnas que no tienen valores repetitivos.
 
-    Aunque un solo correo electrónico puede formar parte  de varios eventos, el ejemplo siguiente no es un uso eficaz porque un identificador de mensaje de red para un correo electrónico individual siempre incluye una dirección `summarize` de remitente única.
+    Aunque un solo correo electrónico puede formar parte  de varios eventos, el siguiente ejemplo no es un uso eficaz porque un identificador de mensaje de red para un correo electrónico individual siempre incluye una dirección `summarize` de remitente única.
  
     ```kusto
     EmailEvents  
@@ -235,7 +235,7 @@ DeviceProcessEvents
 ```
 
 ### <a name="ingest-data-from-external-sources"></a>Ingerir datos de orígenes externos
-Para incorporar listas largas o tablas grandes en la consulta, use el operador [externaldata](https://docs.microsoft.com/azure/data-explorer/kusto/query/externaldata-operator) para ingerir datos de un URI especificado. Puede obtener datos de archivos en formato TXT, CSV, JSON u [otros formatos.](https://docs.microsoft.com/azure/data-explorer/ingestion-supported-formats) En el siguiente ejemplo se muestra cómo puede usar la amplia lista de hash sha-256 de malware proporcionado por MalwareBazaar (abuse.ch) para comprobar los datos adjuntos de los correos electrónicos:
+Para incorporar listas largas o tablas grandes en la consulta, use el operador [externaldata](https://docs.microsoft.com/azure/data-explorer/kusto/query/externaldata-operator) para ingerir datos de un URI especificado. Puede obtener datos de archivos en formato TXT, CSV, JSON u [otros formatos.](https://docs.microsoft.com/azure/data-explorer/ingestion-supported-formats) En el ejemplo siguiente se muestra cómo puede usar la amplia lista de hash sha-256 de malware proporcionado por MalwareBazaar (abuse.ch) para comprobar los datos adjuntos de los correos electrónicos:
 
 ```kusto
 let abuse_sha256 = (externaldata(sha256_hash: string )
@@ -258,7 +258,7 @@ Hay varias funciones que puedes usar para controlar de forma eficaz las cadenas 
 |--|--|--|
 | Líneas de comandos | [parse_command_line()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) | Extraiga el comando y todos los argumentos. | 
 | Paths | [parse_path()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsepathfunction) | Extraiga las secciones de una ruta de acceso de archivo o carpeta. |
-| Números de versión | [parse_version()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-versionfunction) | Deconstruye un número de versión con hasta cuatro secciones y hasta ocho caracteres por sección. Use los datos analizados para comparar la antigüedad de la versión. |
+| Números de versión | [parse_version()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-versionfunction) | Deconstruir un número de versión con hasta cuatro secciones y hasta ocho caracteres por sección. Use los datos analizados para comparar la antigüedad de la versión. |
 | Direcciones IPv4 | [parse_ipv4()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv4function) | Convertir una dirección IPv4 en un entero largo. Para comparar direcciones IPv4 sin convertirlas, use [ipv4_compare()](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv4-comparefunction). |
 | Direcciones IPv6 | [parse_ipv6()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv6function)  | Convierte una dirección IPv4 o IPv6 en la notación IPv6 canónica. Para comparar direcciones IPv6, use [ipv6_compare()](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv6-comparefunction). |
 

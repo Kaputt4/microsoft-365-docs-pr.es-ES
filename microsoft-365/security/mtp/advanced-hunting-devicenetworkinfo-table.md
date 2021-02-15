@@ -1,7 +1,7 @@
 ---
 title: Tabla DeviceNetworkInfo en el esquema de búsqueda avanzada
 description: Obtenga información sobre la configuración de red en la tabla DeviceNetworkInfo del esquema de búsqueda avanzada
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, machinenetworkinfo, DeviceNetworkInfo, dispositivo, máquina, mac, ip, adaptador, dns, dhcp, puerta de enlace, túnel
+keywords: búsqueda avanzada, búsqueda de amenazas, ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, machinenetworkinfo, DeviceNetworkInfo, dispositivo, máquina, mac, ip, adaptador, dns, dhcp, puerta de enlace, túnel
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -51,7 +51,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `MacAddress` | string | Dirección MAC del adaptador de red |
 | `NetworkAdapterType` | string | Tipo de adaptador de red. Para los valores posibles, consulte [esta enumeración](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
 | `NetworkAdapterStatus` | string | Estado operativo del adaptador de red. Para los valores posibles, consulte [esta enumeración](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
-| `TunnelType` | string | Protocolo de túnel, si la interfaz se usa para este propósito, por ejemplo 6to4, Teredo, ISATAP, PPTP, SSTP y SSH |
+| `TunnelType` | string | Protocolo de túnel, si la interfaz se usa para este propósito, por ejemplo, 6to4, Teredo, ISATAP, PPTP, SSTP y SSH |
 | `ConnectedNetworks` | string | Redes a las que está conectado el adaptador. Cada matriz JSON contiene el nombre de red, la categoría (público, privado o dominio), una descripción y una marca que indica si está conectada públicamente a Internet. |
 | `DnsAddresses` | string | Direcciones de servidor DNS en formato de matriz JSON |
 | `IPv4Dhcp` | string | Dirección IPv4 del servidor DHCP |

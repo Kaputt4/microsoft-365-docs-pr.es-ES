@@ -1,8 +1,8 @@
 ---
-title: Configurar y administrar las funcionalidades de Microsoft Defender para puntos de conexión
+title: Configurar y administrar Las funcionalidades de Microsoft Defender para puntos de conexión
 ms.reviewer: ''
 description: Configurar y administrar Microsoft Defender para las funcionalidades de puntos de conexión, como reducción de superficie de ataque y protección de próxima generación
-keywords: configurar, administrar, funcionalidades, reducción de superficie de ataque, protección de próxima generación, controles de seguridad, detección y respuesta de puntos de conexión, investigación y corrección automática, controles de seguridad, controles
+keywords: configurar, administrar, funcionalidades, reducción de superficie de ataque, protección de próxima generación, controles de seguridad, detección y respuesta de puntos de conexión, investigación y corrección automáticas, controles de seguridad, controles
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -43,7 +43,7 @@ Tema | Descripción
 [Configurar las capacidades de reducción de superficie de ataque](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-attack-surface-reduction) |  Al garantizar que las opciones de configuración se establecen correctamente y se aplican técnicas de mitigación de vulnerabilidades, este conjunto de funcionalidades se resiste a ataques y ataques. 
 [Configurar la protección de próxima generación](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) | Configurar la protección de próxima generación para capturar todos los tipos de amenazas emergentes.
 [Configurar las capacidades de Los expertos en amenazas de Microsoft](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts) | Configurar y administrar cómo quieres obtener la inteligencia de amenazas de ciberseguridad de los expertos en amenazas de Microsoft.
-[Configurar la integración de Microsoft 365 Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-protection-integration)| Configure otras soluciones que se integren con Microsoft Defender para Endpoint.
+[Configurar la integración de Microsoft 365 Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-protection-integration)| Configurar otras soluciones que se integran con Microsoft Defender para Endpoint.
 [Administración y compatibilidad con API](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis)| Extrae alertas en siem o usa las API para crear alertas personalizadas. Crear y crear informes de Power BI. 
 [Configurar las opciones del Centro de seguridad de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preferences-setup) |  Configure las opciones relacionadas con el portal, como la configuración general, las características avanzadas, habilite la experiencia de vista previa y otras.
 

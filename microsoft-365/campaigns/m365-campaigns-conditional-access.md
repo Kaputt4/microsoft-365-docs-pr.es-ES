@@ -70,7 +70,7 @@ Para requerir que todos los usuarios inicien sesión con una segunda forma de id
 
 ## <a name="set-up-baseline-policies"></a>Configurar directivas de línea base
 
-1. Vaya a [Azure Portal y](https://portal.azure.com)vaya a Acceso condicional de Azure Active **Directory** para crear una \>  nueva **directiva.**
+1. Vaya a [Azure Portal y,](https://portal.azure.com)a continuación, vaya a Acceso condicional de **Azure Active Directory** para crear una nueva \>  **directiva.**
 
 Vea las siguientes instrucciones específicas para cada directiva: <br>
     - [Requerir MFA para administradores](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>

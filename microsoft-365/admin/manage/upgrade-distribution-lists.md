@@ -41,11 +41,11 @@ Debe ser administrador global o administrador de Exchange para actualizar una li
 
 2. En el Centro de administración de Exchange, vaya **a Grupos de** \> **destinatarios.**<br/>Verá un aviso que indica que tiene listas de distribución (también denominadas grupos de **distribución)** que pueden actualizarse a Grupos de Microsoft 365.<br/> ![Seleccionar el botón Introducción](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
-3. Seleccione una o más listas de distribución (también denominadas **grupos de distribución)** en la **página de** grupos.<br/>![Seleccionar un grupo de distribución](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
+3. Seleccione una o más listas de distribución (también denominadas grupos **de distribución)** en la **página de** grupos.<br/>![Seleccionar un grupo de distribución](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
 4. Seleccione el icono de actualización.<br/>![Actualizar al icono grupos de Microsoft 365](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
-5. En el cuadro de diálogo de información, **seleccione Sí** para confirmar la actualización. El proceso comienza inmediatamente. Según el tamaño y el número de DLs que actualice, el proceso puede tardar minutos u horas.<br/>Si la lista de distribución no se puede actualizar, aparece un cuadro de diálogo que lo dice. Vea [¿Qué listas de distribución no se pueden actualizar?](#which-distribution-lists-cant-be-upgraded)
+5. En el cuadro de diálogo de información, **seleccione Sí** para confirmar la actualización. El proceso comienza inmediatamente. Según el tamaño y el número de DLs que actualice, el proceso puede tardar minutos u horas.<br/>Si la lista de distribución no se puede actualizar, aparece un cuadro de diálogo que lo dice. Vea [¿Qué listas de distribución no se pueden actualizar?](#which-distribution-lists-cant-be-upgraded).
 
 6. Si va a actualizar varias listas de distribución, use la lista desplegable para filtrar qué listas de distribución se han actualizado. Si la lista no está completa, espere  un poco más y, a continuación, seleccione Actualizar para ver qué se ha actualizado correctamente.<br/>No hay ningún aviso que le indique cuándo se ha completado el proceso de actualización para todas las direcciones URL que seleccionó. Puede averiguarlo si quiere ver lo que aparece en Disponible para la **actualización** o las **DLL actualizadas.**
 
@@ -103,7 +103,7 @@ Hay dos formas de actualizar todas las DLs aptas.
 > [!NOTE]
 > El Upgrade-DistributionGroup cmdlet no recibe datos de la canalización, por este motivo es necesario usar el operador "foreach-object" para {} ejecutarse correctamente.
 
-1. Obtenga las DLs aptas en el espacio empresarial y actualícotas mediante el comando de actualización:
+1. Obtenga las DLs aptas en el inquilino y actualícórlas con el comando de actualización:
 
 ```PowerShell
 Get-EligibleDistributionGroupForMigration | Foreach-Object{
@@ -138,7 +138,7 @@ Solo puede actualizar listas de distribución sencillas y no anidadas administra
 |Grupos de seguridad  <br/> |No  <br/> |
 |Listas de distribución dinámica  <br/> |No  <br/> |
 |Listas de distribución que se han convertido a **RoomLists**  <br/> |No  <br/> |
-|Listas de distribución **en las que MemberJoinRestriction** o **MemberDepartRestriction** están **cerrados**  <br/> |No  <br/> |
+|Listas de distribución **donde MemberJoinRestriction** o **MemberDepartRestriction** está **cerrado**  <br/> |No  <br/> |
 
 ### <a name="check-which-dls-are-eligible-for-upgrade"></a>Comprobar qué DLs son aptas para la actualización
 
@@ -174,4 +174,4 @@ Hay algunos casos en los que dl es apto pero no se puede actualizar. La DL no se
 
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>¿Qué sucede con la DL si se produce un error en la actualización desde el EAC?
 
-La actualización solo se realizará cuando se envía la llamada al servidor. Si se produce un error en la actualización, las DLs estarán intactas. Funcionarán como antes.
+La actualización solo se realizará cuando se envía la llamada al servidor. Si se produce un error en la actualización, las DL estarán intactas. Funcionarán como antes.

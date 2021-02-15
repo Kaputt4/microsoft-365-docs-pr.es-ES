@@ -52,19 +52,19 @@ Si tu equipo Windows 10 o Mac no está administrado por tu organización, asegú
 
 **Activar el cifrado de dispositivos**<p>
 
-El cifrado de dispositivos está disponible en una amplia variedad de dispositivos Windows y ayuda a proteger los datos mediante su cifrado. Si activas el cifrado del dispositivo, solo las personas autorizadas podrán acceder a tu dispositivo y datos. Consulta [activar el cifrado del dispositivo](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) para obtener instrucciones.
+El cifrado de dispositivos está disponible en una amplia gama de dispositivos Windows y ayuda a proteger los datos mediante su cifrado. Si activas el cifrado de dispositivos, solo las personas autorizadas podrán acceder a tu dispositivo y datos. Consulta [activar el cifrado del dispositivo](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) para obtener instrucciones.
 
  Si el cifrado del dispositivo no está disponible en el dispositivo, puedes activar el cifrado [de BitLocker](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) estándar en su lugar. (BitLocker no está disponible en Windows 10 Home Edition). 
 
 **Proteger el dispositivo con seguridad de Windows**<p>
-Si tienes Windows 10, tendrás la protección antivirus más reciente con Seguridad de Windows. Cuando inicias Windows 10 por primera vez, Seguridad de Windows está activado y ayuda activamente a proteger tu equipo mediante el análisis de malware (software malintencionado), virus y amenazas de seguridad. Seguridad de Windows usa la protección en tiempo real para examinar todo lo que descargues o ejecutes en el equipo.
+Si tienes Windows 10, tendrás la protección antivirus más reciente con Seguridad de Windows. Cuando inicias Windows 10 por primera vez, Seguridad de Windows está activado y ayuda activamente a proteger tu equipo mediante el análisis de malware (software malintencionado), virus y amenazas de seguridad. Seguridad de Windows usa protección en tiempo real para examinar todo lo que descargas o ejecutas en tu EQUIPO.
 
 Windows Update descarga automáticamente las actualizaciones de Seguridad de Windows para ayudar a mantener su equipo seguro y protegerlo contra amenazas.
 
 Si tienes una versión anterior de Windows y usas Microsoft Security Essentials, es una buena idea pasar a Seguridad de Windows. Para obtener más información, [consulta la ayuda para proteger mi dispositivo con Seguridad de Windows.](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)
 
 **Activar Firewall de Windows**<p>
-Siempre debe ejecutar Firewall de Windows incluso si tiene otro firewall activado. Desactivar Firewall de Windows puede hacer que tu dispositivo (y tu red, si tienes uno) sean más vulnerables al acceso no autorizado. Consulta [Activar o desactivar Firewall de Windows para](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) obtener instrucciones
+Siempre debes ejecutar Firewall de Windows incluso si tienes otro firewall activado. Desactivar Firewall de Windows puede hacer que tu dispositivo (y tu red, si tienes uno) sean más vulnerables al acceso no autorizado. Consulta [Activar o desactivar Firewall de Windows para](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) obtener instrucciones
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
 

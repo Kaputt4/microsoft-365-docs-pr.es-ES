@@ -1,6 +1,6 @@
 ---
 title: Buscar ransomware con búsqueda avanzada
-description: Usa la búsqueda avanzada para localizar dispositivos potencialmente afectados por ransomware.
+description: Usa la búsqueda avanzada para buscar dispositivos potencialmente afectados por ransomware.
 keywords: búsqueda avanzada, ransomware, búsqueda de amenazas, búsqueda de ciberamenazas, búsqueda, consulta, telemetría, Microsoft 365, Protección contra amenazas de Microsoft, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -56,7 +56,7 @@ Los investigadores de seguridad de Microsoft han observado varios artefactos com
 ## <a name="check-for-individual-signs-of-ransomware-activity"></a>Comprobar si hay signos individuales de actividad ransomware
 Muchas actividades que constituyen el comportamiento de ransomware, incluidas las actividades descritas en la sección anterior, pueden ser benignas. Al usar las siguientes consultas para localizar ransomware, ejecute más de una consulta para comprobar si los mismos dispositivos muestran varios signos de posible actividad ransomware.
 
-### <a name="stopping-multiple-processes-using-_taskkillexe_"></a>Detención de varios procesos mediante _taskkill.exe_
+### <a name="stopping-multiple-processes-using-_taskkillexe_"></a>Detención de varios procesos _mediantetaskkill.exe_
 Esta consulta busca intentos de detener al menos 10 procesos independientes mediante _la utilidadtaskkill.exe_ búsqueda. [Ejecutar consulta](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
@@ -96,7 +96,7 @@ CipherList = make_set(ProcessCommandLine) by DeviceId, bin(Timestamp, 1m)
 ```
 
 ### <a name="clearing-of-forensic-evidence-from-event-logs-using-_wevtutil_"></a>Borrar evidencias forenses de registros de eventos _mediante wevtutil_
-Esta consulta comprueba si hay intentos de borrar al menos 10 entradas de registro de los registros de eventos mediante _wevtutil_. [Ejecutar consulta](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
+Esta consulta busca intentos de borrar al menos 10 entradas de registro de los registros de eventos mediante _wevtutil_. [Ejecutar consulta](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Look for use of wevtutil to clear multiple logs
@@ -120,7 +120,7 @@ DeviceProcessEvents
 ```
 
 ### <a name="turning-off-system-restore"></a>Desactivar la restauración del sistema
-Esta consulta identifica los intentos de detener la restauración del sistema e impedir que el sistema cree puntos de restauración, que se pueden usar para recuperar datos cifrados por ransomware. [Ejecutar consulta](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAK2S3UrDQBCFz7XgO6y9id4o6HWvrIVCkaJPENOYFNumZGO1ID673w4xJA1isbJMZnZ-zpzM7EiptlooQc9UqjDLc-7wp1qrwj7Via44MzK35FTotTI5PXMr0aVe8cy15NzoGo-zqg_0m3KQSsRpQtbC6uMGpdt3jHeJfU_GymqG-uQb9XpcEn1HIuvmGpZT0Aq99Dim4G3ousNO8K04sSE6EEN22kL6jvzO-LaDNW2QzqxLmGBsPo9vUMt_oA8Na3DQv3vwcmPiifpmds48jkhut8T2FLikxm_T4bI_m_6uQt-wrXO28lPPSBcdziOqPFlP9RYy47tDKtuZM07hVtSvaJ_HYRPL63-NyMgtmtWv5684jy2WDx2O0ZEM562ZBLQvURxur6gDAAA&runQuery=true&timeRangeId=week)
+Esta consulta identifica los intentos de detener la restauración del sistema e impide que el sistema cree puntos de restauración, que se pueden usar para recuperar datos cifrados por ransomware. [Ejecutar consulta](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAK2S3UrDQBCFz7XgO6y9id4o6HWvrIVCkaJPENOYFNumZGO1ID673w4xJA1isbJMZnZ-zpzM7EiptlooQc9UqjDLc-7wp1qrwj7Via44MzK35FTotTI5PXMr0aVe8cy15NzoGo-zqg_0m3KQSsRpQtbC6uMGpdt3jHeJfU_GymqG-uQb9XpcEn1HIuvmGpZT0Aq99Dim4G3ousNO8K04sSE6EEN22kL6jvzO-LaDNW2QzqxLmGBsPo9vUMt_oA8Na3DQv3vwcmPiifpmds48jkhut8T2FLikxm_T4bI_m_6uQt-wrXO28lPPSBcdziOqPFlP9RYy47tDKtuZM07hVtSvaJ_HYRPL63-NyMgtmtWv5684jy2WDx2O0ZEM562ZBLQvURxur6gDAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 DeviceProcessEvents

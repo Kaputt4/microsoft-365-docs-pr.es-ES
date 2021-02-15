@@ -1,6 +1,6 @@
 ---
 title: Microsoft Report Message and Report Phishing Add-In license terms
-description: Describe el mensaje de informe de Microsoft y los términos de la licencia Add-In de informes
+description: Describe los términos de licencia de los mensajes de informe de Microsoft y la suplantación Add-In de identidad
 keywords: microsoft, informe, phishing, seguridad, estafa, pirateo, licencia, términos, aplicación, uso, instalación, servicio, comentarios
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -27,7 +27,7 @@ ms.locfileid: "50032711"
 ## <a name="microsoft-software-license-terms-microsoft-report-message-and-report-phishing-add-in"></a>Términos de licencia de software de Microsoft: mensaje de informe de Microsoft e complemento de suplantación de identidad de informes
 
 > [!IMPORTANT]
-> Si vive o es una empresa con un lugar de empresa principal basado en los Estados Unidos, lea la Sección 7, Arbitraje de enlace y renuncia a *la acción de clase.* Describe cómo se resuelven las disputas.
+> Si vive o es una empresa con un lugar de empresa principal basado en Los Estados Unidos, lea la Sección 7, Arbitraje de enlace y renuncia a *la acción de clase.* Describe cómo se resuelven las disputas.
 
 > [!NOTE]
 > *En inglés:* Como este software se distribuye en Canadá, algunas de las cláusulas de este contrato (específicamente en las secciones 10, 11 y 12) se proporcionan en francés.
@@ -62,7 +62,7 @@ Si cumple con estos términos de licencia, tiene los siguientes derechos. Al usa
 
 6. **UPDATES.** The software may periodically check for updates, and download and install them for you. You may obtain updates only from Microsoft or authorized sources. Microsoft may need to update your system to provide you with updates. You agree to receive these automatic updates without any additional notice. Updates may not include or support all existing software features, services, or peripheral devices.
 
-7. **ARBITRAJE DE ENLACE Y RENUNCIA A LA ACCIÓN DE CLASE.** **Esta sección se aplica si se encuentra en Estados Unidos (o, si es una empresa, su lugar de empresa principal).** If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. Si usted y Microsoft no pueden, usted y Microsoft aceptan enlazar el arbitraje **individual** ante la Asociación estadounidense de arbitraje en virtud de la Ley federal de arbitraje ("FAA") y no demandar ante un tribunal delante de un abogado o un **jurado.** Instead, a neutral arbitrator will decide. **No se permiten demandas** por acciones de clase, arbitrajes de clase, acciones del abogado general privado y cualquier otro procedimiento en el que alguien actúe con una capacidad **representativa;** ni la combinación de procedimientos individuales sin el consentimiento de todas las partes. El contrato de arbitraje completo contiene más términos y se encuentra en [https://aka.ms/arb-agreement-1](https://aka.ms/arb-agreement-1) . You and Microsoft agree to these terms.
+7. **ARBITRAJE DE ENLACE Y RENUNCIA A LA ACCIÓN DE CLASE.** **Esta sección se aplica si se encuentra en Estados Unidos (o, si es una empresa, su lugar de trabajo principal).** If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. Si usted y Microsoft no pueden, usted y Microsoft aceptan enlazar el arbitraje **individual** ante la Asociación estadounidense de arbitraje en virtud de la Ley federal de arbitraje ("FAA") y no demandar ante un tribunal delante de un abogado o un **jurado.** Instead, a neutral arbitrator will decide. **No se permiten demandas** por acciones de clase, arbitrajes de clase, acciones del abogado general privado y cualquier otro procedimiento en el que alguien actúe con una capacidad **representativa;** ni la combinación de procedimientos individuales sin el consentimiento de todas las partes. El contrato de arbitraje completo contiene más términos y se encuentra en [https://aka.ms/arb-agreement-1](https://aka.ms/arb-agreement-1) . You and Microsoft agree to these terms.
 
 8. **ENTIRE AGREEMENT.** This agreement, and any other terms Microsoft may provide for supplements, updates, or third-party applications, is the entire agreement for the software.
 
@@ -82,11 +82,11 @@ Si cumple con estos términos de licencia, tiene los siguientes derechos. Al usa
 
             Subject to the foregoing clause ii., Microsoft will only be liable for slight negligence if Microsoft is in breach of such material contractual obligations, the fulfillment of which facilitate the due performance of this agreement, the breach of which would endanger the purpose of this agreement and the compliance with which a party may constantly trust in (so-called "cardinal obligations"). In other cases of slight negligence, Microsoft will not be liable for slight negligence.
 
-11. *En inglés: AVISO* **DE DECLINACIÓN DE RESPONSABILIDADES DE GARANTÍA.** El software tiene licencia "tal como está". El uso que haga de ese contenido es su responsabilidad. Microsoft no ofrece ninguna garantía, garantía o condiciones expresas. En la medida en que lo permita la legislación aplicable, Microsoft excluye todas las garantías implícitas, incluida la comerciabilidad, la idoneidad para un propósito determinado y la no infracción.
+11. *En inglés: AVISO* **DE DECLINACIÓN DE RESPONSABILIDADES DE GARANTÍA.** El software tiene licencia "tal como está". El uso que haga de ese contenido es su responsabilidad. Microsoft no ofrece ninguna garantía, garantía o condiciones expresas. En la medida permitida por la legislación aplicable, Microsoft excluye todas las garantías implícitas, incluida la comerciabilidad, la idoneidad para un propósito determinado y la no infracción.
 
     *En Français*: **EXONÉRATION DE GARANTIE.** Le logiciel visé par une licence est offert « tel quel ». Toute utilisation de ce logiciel est à votre seule risque et péril. Microsoft n’accorde aucune autre garantie expresse. Vous pouvez bénéficier de droits additionnels en vertu du droit local sur la protection des consommateurs, que ce contrat ne peut modifier. La ou elles sont permises par le droit locale, les garanties implicites de qualité marchande, d’adéquation à un usage particulier et d’absence de contrefaçon sont exclues.
 
-12. *En inglés:* **LIMITACIÓN Y EXCLUSIÓN DE DAÑOS.** Si tiene base para recuperar daños a pesar de la declinación de responsabilidades anterior de la garantía, puede recuperar de Microsoft y sus proveedores solo daños directos de hasta 5,00 USD. No puede recuperar otros daños, incluidos los consecuenciables, las pérdidas de beneficios, los daños especiales, indirectos o incidentales.
+12. *En inglés:* **LIMITACIÓN Y EXCLUSIÓN DE DAÑOS.** Si tiene base para recuperar daños a pesar de la declinación de responsabilidades anterior de la garantía, puede recuperar de Microsoft y sus proveedores solo daños directos de hasta 5,00 USD. No puede recuperar ningún otro daño, incluidos los consiguientes, pérdidas de beneficios, daños especiales, indirectos o incidentales.
 
     Esta limitación se aplica a (a) todo lo relacionado con el software, los servicios, el contenido (incluido el código) en sitios de Internet de terceros o aplicaciones de terceros; y (b) reclamaciones por incumplimiento de contrato, garantía, garantía o condición; responsabilidad estricta, negligencia u otro agravio; o cualquier otra notificación; en cada caso en la medida permitida por la legislación aplicable.
 

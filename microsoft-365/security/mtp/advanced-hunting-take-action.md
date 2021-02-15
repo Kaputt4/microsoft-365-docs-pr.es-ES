@@ -54,11 +54,11 @@ Puede realizar las siguientes acciones en dispositivos identificados por la `Dev
 - Recopilar el paquete de investigación para obtener más información forense
 - Ejecutar un examen antivirus para buscar y quitar amenazas con las últimas actualizaciones de inteligencia de seguridad
 - Iniciar una investigación automatizada para comprobar y corregir las amenazas en el dispositivo y, posiblemente, en otros dispositivos afectados
-- Restringir la ejecución de la aplicación solo a archivos ejecutables firmados por Microsoft, evitando la actividad de amenaza posterior a través de malware u otros ejecutables que no son de confianza
+- Restringir la ejecución de la aplicación solo a archivos ejecutables firmados por Microsoft, evitando la actividad de amenaza posterior a través de malware u otros archivos ejecutables que no son de confianza
 
-Para obtener más información sobre cómo se realizan estas acciones de respuesta a través de Microsoft Defender para endpoint, lea acerca [de las acciones de respuesta en dispositivos.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
+Para obtener más información sobre cómo se realizan estas acciones de respuesta a través de Microsoft Defender para endpoint, lea sobre las [acciones de respuesta en los dispositivos.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)
    
-## <a name="quarantine-files"></a>Archivos en cuarentena
+## <a name="quarantine-files"></a>Cuarentena de archivos
 Puedes implementar la acción *de cuarentena* en los archivos para que se pongan automáticamente en cuarentena cuando se encuentren. Al seleccionar esta acción, puede elegir entre las siguientes columnas para identificar qué archivos de los resultados de la consulta se ponen en cuarentena:
 
 - `SHA1` — En la mayoría de las tablas de búsqueda avanzadas, este es el SHA-1 del archivo que se ha visto afectado por la acción grabada. Por ejemplo, si se copió un archivo, este sería el archivo copiado.

@@ -42,7 +42,7 @@ Los códigos de error pueden devolverse mediante una operación en cualquiera de
 
 ## <a name="error-codes"></a>Códigos de error
 
-Código de error | Código de estado HTTP | Message
+Código de error | Código de estado HTTP | Mensaje
 -|-|-
 BadRequest | BadRequest (400) | Mensaje de error General Bad Request.
 ODataError | BadRequest (400) | Consulta URI de OData no \<the specific error is specified\> válida.

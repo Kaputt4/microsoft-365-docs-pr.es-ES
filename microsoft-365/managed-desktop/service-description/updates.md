@@ -65,7 +65,7 @@ Este proceso de implementación se aplica a las actualizaciones de característi
     <tr><th colspan="5">Actualizar la configuración de implementación</th></tr>
     <tr><th>Tipo de actualización</th><th>Prueba</th><th>Primero</th><th>Rápida</th><th>Amplias</th></tr>
     <tr><td>Actualizaciones de calidad para el sistema operativo</td><td>0 días</td><td>0 días</td><td>0 días</td><td>3 días</td></tr>
-    <tr><td>Actualizaciones de características para el sistema operativo</td><td>0 días</td><td>30 días</td><td>60 días</td><td>90 días</td></tr>
+    <tr><td>Actualizaciones de características para el sistema operativo</td><td>0 días</td><td>30 días</td><td>60 días</td><td>90 días</td></tr>
     <tr><td>Controladores/firmware</td><td colspan="4">Sigue la programación de actualizaciones de calidad</td></tr>
     <tr><td>Definición de antivirus</td><td colspan="4">Actualizado con cada examen</td></tr>
     <tr><td>Aplicaciones de Microsoft 365 para empresas</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">Más información</a></td></tr>
@@ -82,7 +82,7 @@ Este proceso de implementación se aplica a las actualizaciones de característi
 
 Escritorio administrado de Microsoft no admite dispositivos que forman parte del programa Windows Insider. El programa Windows Insider se usa para validar el software de Windows de versión previa y está pensado para dispositivos que no son esenciales. Aunque es una iniciativa importante de Microsoft, no está pensada para una implementación amplia en entornos de producción. 
 
-Todos los dispositivos que se encuentran con compilaciones de Windows Insider pueden colocarse en el grupo de pruebas y estarán exentos de los contratos de nivel de servicio de actualización y la compatibilidad con usuarios del Escritorio administrado de Microsoft.
+Los dispositivos que se encuentran con compilaciones de Windows Insider pueden colocarse en el grupo de pruebas y estarán exentos de los contratos de nivel de servicio de actualización y la compatibilidad con usuarios del Escritorio administrado de Microsoft.
 
 ## <a name="bandwidth-management"></a>Administración de ancho de banda
 

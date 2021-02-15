@@ -55,9 +55,9 @@ Las siguientes condiciones se relacionan con todas las consultas.
 > [!NOTE]
 > Todas las cuotas enumeradas anteriormente (por ejemplo, 15 llamadas por minuto) son por tamaño de espacio empresarial. Estas cuotas son las mínimas.
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
-Se requiere uno de los siguientes permisos para llamar a la API de búsqueda avanzada. Para obtener más información, incluido cómo elegir permisos, vea Acceso a las API [de Protección de Microsoft 365 Defender](api-access.md)
+Se requiere uno de los siguientes permisos para llamar a la API de búsqueda avanzada. Para obtener más información, incluido cómo elegir permisos, consulte Acceso a las API [de Protección de Microsoft 365 Defender](api-access.md)
 
 Tipo de permiso | Permiso | Nombre para mostrar de permisos
 -|-|-
@@ -87,7 +87,7 @@ Content-Type | application/json
 
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:
 
-Parámetro | Tipo | Descripción
+Parámetro | Tipo | Description
 -|-|-
 Consulta | Texto | Consulta que se ejecutará. **Nota: obligatorio**
 

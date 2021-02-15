@@ -38,14 +38,14 @@ ms.locfileid: "49930167"
 
 
 
-|[![Planificación](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[Planeación](mtp-pilot-plan.md) |[![Preparación](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Preparación](prepare-mtpeval.md) | [![Simular ataque](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[Simular ataque](mtp-pilot-simulate.md) | ![Cerrar y resumir](../../media/phase-diagrams/4-summary.png)<br/>Cerrar y resumir|
+|[![Planeación](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[Planeación](mtp-pilot-plan.md) |[![Preparación](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[Preparación](prepare-mtpeval.md) | [![Simular ataque](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[Simular ataque](mtp-pilot-simulate.md) | ![Cerrar y resumir](../../media/phase-diagrams/4-summary.png)<br/>Cerrar y resumir|
 |--|--|--|--|
 || | |*¡Estás aquí!*|
 
 
-Actualmente se encuentra en la fase de cierre y resumen.
+Actualmente está en la fase de cierre y resumen.
 
-Acaba de ejecutar una simulación avanzada de ataques solo de memoria que ejecuta código de forma remota en un controlador de dominio. Ha visto cómo Microsoft Defender para Endpoint y Microsoft Defender para Identity detectan y crean alertas sobre actividad malintencionada y furtiva. También ha visto cómo las alertas de diferentes orígenes se entregan junto con otra información contextual en un único incidente en el portal del Centro de seguridad de Microsoft 365. Esta integración permite a los analistas de SOC investigar y tomar las medidas necesarias. También ha creado una consulta de búsqueda avanzada que identificará los correos electrónicos entrantes en los que el usuario abrió o guardó los datos adjuntos y creó la detección en función de esa consulta.
+Acaba de ejecutar una simulación avanzada de ataques solo de memoria que ejecuta código de forma remota en un controlador de dominio. Ha visto cómo Microsoft Defender para Endpoint y Microsoft Defender para Identity detectan y crean alertas sobre actividad malintencionada y furtiva. También ha visto cómo las alertas de diferentes orígenes se entregan junto con otra información contextual en un único incidente en el portal del Centro de seguridad de Microsoft 365. La experiencia de esta integración permite a los analistas de SOC investigar y tomar las medidas necesarias. También ha creado una consulta de búsqueda avanzada que identificará los correos electrónicos entrantes en los que el usuario abrió o guardó los datos adjuntos y creó la detección en función de esa consulta.
 
 Ha llegado al final del proceso una vez que todas las pruebas han finalizado.
 
@@ -57,11 +57,11 @@ El resultado final debe ser:
 
 Presente los informes de los resultados finales a las [](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) partes interesadas internas (que ha identificado durante la fase de preparación) y a los contactos de Microsoft. Este esfuerzo garantiza que se puedan usar los comentarios para mejorar los productos y la documentación.
 
-Esperamos que haya disfrutado de esta simulación. Empiece a implementar lo que ha aprendido a mayor escala en su organización para sacar el máximo partido a la solución de seguridad integrada.
+Esperamos que haya disfrutado de esta simulación. Empiece a implementar lo que ha aprendido a gran escala en su organización para sacar el máximo partido a la solución de seguridad integrada.
 
 ## <a name="next-step"></a>Paso siguiente
 Obtenga más información sobre los pilares de Microsoft 365 Defender a través de las siguientes guías interactivas:
 - [Proteger su organización con Microsoft Defender para Office 365](https://aka.ms/O365ATP-Interactive-Guide)
-- [Detectar actividades sospechosas y posibles ataques con Microsoft Defender for Identity](https://aka.ms/AATP-Interactive-Guide)
+- [Detectar actividades y posibles ataques con Microsoft Defender for Identity](https://aka.ms/AATP-Interactive-Guide)
 - [Detectar amenazas y administrar alertas con Microsoft Cloud App Security](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
 - [Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)

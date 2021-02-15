@@ -35,13 +35,13 @@ ms.locfileid: "49929485"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Ahora que ha completado la configuración y configuración del laboratorio de evaluación de Microsoft 365 Defender, puede ejecutar una simulación de ataques de amenazas para experimentar las capacidades de detección, correlación de alertas y corrección de recuperación automática de la solución de seguridad integrada.  
+Ahora que ha completado la configuración y configuración del laboratorio de evaluación de Microsoft 365 Defender, puede ejecutar una simulación de ataque de amenazas para experimentar las capacidades de detección, correlación de alertas y corrección de recuperación automática de la solución de seguridad integrada.  
 
 1. Inicie sesión en https://security.microsoft.com
 2. En la página principal, busque un icono titulado **Simulación.**  Revise la guía del tutorial para ver los pasos necesarios para crear un incidente de prueba en Microsoft 365 Defender.
 <br>![Imagen de tarjeta de simulación en el panel de seguridad de Microsoft 365](../../media/mtp-eval-73.png) <br>
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-Examine el Centro de arquitectura y soluciones de [Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) para comprender cómo diseñar la solución y la arquitectura adecuada para su organización.
+Examine el Centro de arquitectura y soluciones de [Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) para comprender cómo diseñar la solución y la arquitectura que sea adecuada para su organización.
 

@@ -44,7 +44,7 @@ Las API de Microsoft 365 Defender se rigen por la licencia de las API de [Micros
 
 ## <a name="legal-notices"></a>Avisos legales
 
-Microsoft y todos los colaboradores le conceden una licencia para la documentación de Microsoft y otro contenido de este [repositorio,](https://github.com/MicrosoftDocs/microsoft-365-docs)en virtud de la licencia pública internacional de Creative Commons Attribution 4.0. Para obtener más información, vea el [archivo LICENSE.](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/LICENSE)
+Microsoft y cualquier colaborador le conceden una licencia para la documentación de Microsoft y otro contenido de este [repositorio,](https://github.com/MicrosoftDocs/microsoft-365-docs)en virtud de la licencia pública internacional de Creative Commons Attribution 4.0. Para obtener más información, vea el [archivo LICENSE.](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/LICENSE)
 
 Microsoft, Windows, Microsoft Azure u otros productos y servicios de Microsoft a los que se hace referencia en la documentación pueden ser marcas comerciales o marcas registradas de Microsoft en Estados Unidos u otros países.
 
@@ -56,7 +56,7 @@ Microsoft y todos los colaboradores se reservan todos los demás derechos, ya se
 
 ## <a name="other-restrictions"></a>Otras restricciones
 
-La API de búsqueda avanzada tiene algunas limitaciones en el número de [resultados](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-api#limitations) devueltos y los datos que se pueden consultar.
+La API de búsqueda avanzada tiene algunas [limitaciones en](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-api#limitations) el número de resultados devueltos y los datos que se pueden consultar.
 
 1. Solo puede consultar datos de los últimos 30 días.
 1. Los resultados incluirán un máximo de 100 000 filas.

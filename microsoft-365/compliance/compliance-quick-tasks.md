@@ -22,7 +22,7 @@ ms.locfileid: "49928634"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tareas rápidas para empezar a usar el Centro de cumplimiento de Microsoft 365
 
-Si no está al tanto del cumplimiento de Microsoft 365 y se pregunta por dónde empezar, en este artículo se proporcionan instrucciones sobre los conceptos básicos y se priorizan las tareas de cumplimiento importantes. Este artículo le ayudará a empezar rápidamente a administrar y supervisar los datos, proteger la información y minimizar los riesgos de insider.
+Si no está al tanto del cumplimiento de Microsoft 365 y se pregunta por dónde empezar, en este artículo se proporcionan instrucciones sobre los conceptos básicos y se da prioridad a las tareas de cumplimiento importantes. Este artículo le ayudará a empezar rápidamente a administrar y supervisar los datos, proteger la información y minimizar los riesgos de insider.
 
 Este artículo también es útil si está averiguando la mejor manera de administrar los riesgos, proteger los datos y cumplir con las normativas y estándares con un nuevo personal remoto. Los empleados ahora colaboran y se conectan entre sí de nuevas maneras, lo que significa que es posible que los controles y procesos de cumplimiento existentes deban adaptarse. Identificar y administrar estos nuevos riesgos de cumplimiento dentro de la organización es fundamental para proteger los datos y minimizar las amenazas y riesgos.
 
@@ -38,7 +38,7 @@ Para obtener instrucciones paso a paso para configurar permisos y asignar person
 
 ## <a name="task-2-know-your-state-of-compliance"></a>Tarea 2: Conocer su estado de cumplimiento
 
-Es difícil saber dónde ir si no sabe dónde está. El cumplimiento de sus necesidades de cumplimiento incluye comprender el nivel de riesgo actual y las actualizaciones que pueden ser necesarias en estos momentos cambiantes. Tanto si su organización es nueva en los requisitos de cumplimiento normativo como si tiene una amplia experiencia con los estándares y normativas que rigen su sector, lo mejor que puede hacer para mejorar el cumplimiento es comprender dónde se encuentra su organización.
+Es difícil saber dónde ir si no sabe dónde está. Satisfacer sus necesidades de cumplimiento incluye comprender su nivel actual de riesgo y qué actualizaciones pueden ser necesarias en estos momentos cambiantes. Tanto si su organización es nueva en los requisitos de cumplimiento normativo como si tiene una amplia experiencia con los estándares y normativas que rigen su sector, lo mejor que puede hacer para mejorar el cumplimiento es comprender dónde se encuentra su organización.
 
 [El Administrador de cumplimiento de Microsoft](compliance-manager.md) puede ayudarle a comprender la posición de cumplimiento de su organización y resaltar las áreas que pueden necesitar mejoras. El Administrador de cumplimiento usa un panel centralizado para calcular una puntuación basada en riesgos, midiendo su progreso en la realización de acciones que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. También puede usar el Administrador de cumplimiento como herramienta para realizar un seguimiento de todas las evaluaciones de riesgos. Proporciona capacidades de flujo de trabajo para ayudarle a completar eficazmente las evaluaciones de riesgos a través de una herramienta común.
 
@@ -72,15 +72,15 @@ Para obtener instrucciones paso a paso para crear directivas de alerta personali
 
 Para realizar su trabajo, las personas de su organización colaboran con otras tanto dentro como fuera de la organización. Esto significa que el contenido ya no se queda detrás de un firewall, sino que puede desplazarse a todas partes, a través de dispositivos, aplicaciones y servicios. Y cuando se desplaza, usted quiere que lo haga de una forma segura y protegida que cumpla con las directivas empresariales y de cumplimiento de normas de su organización.
 
-[Las etiquetas](sensitivity-labels.md) de confidencialidad le permiten clasificar y proteger los datos de su organización, a la vez que se asegura de que la productividad de los usuarios y su capacidad de colaboración no se ve obstaculizada. Use etiquetas de confidencialidad para aplicar el cifrado y las restricciones de uso, aplicar marcados visuales y proteger la información en plataformas y dispositivos, locales y en la nube.
+[Las etiquetas](sensitivity-labels.md) de confidencialidad le permiten clasificar y proteger los datos de su organización, a la vez que se asegura de que la productividad de los usuarios y su capacidad de colaboración no se ve obstaculizada. Use etiquetas de confidencialidad para aplicar el cifrado y las restricciones de uso aplican marcas visuales y protegen la información en plataformas y dispositivos, locales y en la nube.
 
 Para obtener instrucciones paso a paso para configurar y usar etiquetas de confidencialidad, vea Introducción a [las etiquetas de confidencialidad.](get-started-with-sensitivity-labels.md) Para obtener información sobre las licencias de etiquetas de confidencialidad, consulte las instrucciones de licencias de [Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)para la seguridad & cumplimiento.
 
 ## <a name="task-6-configure-a-retention-policy"></a>Tarea 6: Configurar una directiva de retención
 
-Una [directiva de](retention.md) retención le permite decidir de forma proactiva si desea retener contenido, eliminar contenido o ambos: retener y eliminar el contenido al final de un período de retención especificado. Estas acciones pueden ser necesarias para cumplir con las normativas del sector y las directivas internas, así como reducir el riesgo en caso de litigio o una infracción de seguridad.
+Una [directiva de](retention.md) retención le permite decidir de forma proactiva si desea retener contenido, eliminar contenido o ambos: retener y, a continuación, eliminar el contenido al final de un período de retención especificado. Estas acciones pueden ser necesarias para cumplir con las normativas del sector y las directivas internas, así como reducir el riesgo en caso de litigio o una infracción de seguridad.
 
-Cuando el contenido está sujeto a una directiva de retención, los usuarios pueden seguir editando y trabajando con el contenido como si nada hubiera cambiado. El contenido se conserva en su ubicación original. Pero si alguien edita o elimina el contenido que está sujeto a la directiva de retención, se guarda una copia del contenido original en una ubicación segura donde se conserva mientras la directiva de retención para ese contenido está en vigor.
+Cuando el contenido está sujeto a una directiva de retención, los usuarios pueden seguir editando y trabajando con el contenido como si nada hubiera cambiado. El contenido se conserva en su ubicación original. Pero si alguien edita o elimina contenido que está sujeto a la directiva de retención, se guarda una copia del contenido original en una ubicación segura donde se conserva mientras la directiva de retención para ese contenido está en vigor.
 
 Puede establecer rápidamente una directiva de retención para varias ubicaciones en su entorno de Microsoft 365, como correo de Exchange, sitios de SharePoint, cuentas de OneDrive y grupos de Microsoft 365. No hay límites en el número de buzones o sitios que esta directiva puede incluir automáticamente. Pero si necesita ser más selectivo, puede hacerlo configurando una directiva de retención para ubicaciones específicas e incluir o excluir sitios o usuarios.
 
@@ -98,10 +98,10 @@ Para obtener instrucciones paso a paso para planear y configurar el cumplimiento
 
 ## <a name="task-8-see-whats-happening-with-your-sensitive-items"></a>Tarea 8: Ver lo que ocurre con los elementos confidenciales
 
-Las etiquetas de confidencialidad, los tipos de información confidencial, las etiquetas y directivas de retención y los clasificadores que se pueden entrenar se pueden usar para clasificar y etiquetar elementos confidenciales en Exchange, SharePoint y OneDrive como ha visto en las tareas anteriores. El último paso de su recorrido de tareas rápido es ver qué elementos se etiquetaron y qué acciones están llevando a cabo los usuarios en esos elementos confidenciales. [el explorador de contenido](data-classification-content-explorer.md) [y el explorador de actividades](data-classification-activity-explorer.md) proporcionan esta visibilidad.
+Las etiquetas de confidencialidad, los tipos de información confidencial, las etiquetas y directivas de retención y los clasificadores que se pueden entrenar se pueden usar para clasificar y etiquetar elementos confidenciales en Exchange, SharePoint y OneDrive, como ha visto en las tareas anteriores. El último paso de su recorrido de tareas rápido es ver qué elementos se etiquetaron y qué acciones están llevando a cabo los usuarios en esos elementos confidenciales. [el explorador de contenido](data-classification-content-explorer.md) [y el explorador de actividades](data-classification-activity-explorer.md) proporcionan esta visibilidad.
 
 ### <a name="content-explorer"></a>Explorador de contenido
- El explorador de contenido le permite ver, en su formato nativo, todos los elementos que se han clasificado como un tipo de información confidencial o que pertenecen a una clasificación determinada por un clasificador que se puede entrenar, así como todos los elementos a los que se ha aplicado una etiqueta de confidencialidad o retención.
+ El explorador de contenido le permite ver, en su formato nativo, todos los elementos que se han clasificado como un tipo de información confidencial o que pertenecen a una clasificación determinada por un clasificador que se puede entrenar, así como todos los elementos que tienen aplicada la etiqueta de confidencialidad o retención.
 
 Para obtener instrucciones paso a paso para [](data-classification-overview.md)usar el explorador de contenido, vea Información general sobre la clasificación de datos y Introducción al explorador [de contenido.](data-classification-content-explorer.md)
 
@@ -124,7 +124,7 @@ Hay más de 30 filtros diferentes disponibles, estos son algunos:
 
 Para obtener instrucciones paso a paso para usar el explorador de actividades, vea [Introducción al explorador de actividades.](data-classification-activity-explorer.md)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que ha configurado los conceptos básicos para la administración de cumplimiento para su organización, tenga en cuenta las siguientes soluciones de cumplimiento en Microsoft 365 para ayudarle a proteger la información confidencial y detectar y actuar sobre riesgos adicionales de insider.
 
@@ -148,7 +148,7 @@ Para obtener instrucciones paso a paso para definir tipos personalizados de info
 
 ### <a name="prevent-data-loss"></a>Prevenir la pérdida de datos
 
-[Las directivas de prevención](data-loss-prevention-policies.md) de pérdida de datos (DLP) le permiten identificar, supervisar y proteger automáticamente información confidencial en toda la organización de Microsoft 365. Use directivas DLP para identificar elementos confidenciales en los servicios Microsoft, evitar el uso compartido accidental de elementos confidenciales y ayudar a los usuarios a aprender a cumplir las normas sin interrumpir su flujo de trabajo.
+[Las directivas de prevención](data-loss-prevention-policies.md) de pérdida de datos (DLP) permiten identificar, supervisar y proteger automáticamente información confidencial en toda la organización de Microsoft 365. Use directivas DLP para identificar elementos confidenciales en los servicios Microsoft, evitar el uso compartido accidental de elementos confidenciales y ayudar a los usuarios a aprender a cumplir las normas sin interrumpir su flujo de trabajo.
 
 Para obtener instrucciones paso a paso para configurar directivas DLP, [crear, probar y ajustar una directiva DLP](create-test-tune-dlp-policy.md). Para obtener información sobre las licencias de administración de pérdida de datos, vea las instrucciones de licencias de [Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)para la seguridad & cumplimiento.
 
@@ -158,4 +158,4 @@ Cada vez más, los empleados tienen cada vez más acceso para crear, administrar
 
 La administración de riesgos de [Insider](insider-risk-management-policies.md) en Microsoft 365 usa toda la amplitud del servicio y los indicadores de terceros para ayudarle a identificar, recortar y actuar rápidamente en actividades de usuario de riesgo. Mediante el uso de registros de Microsoft 365 y Microsoft Graph, la administración de riesgos de Insider le permite definir directivas específicas para identificar indicadores de riesgo y tomar medidas para mitigar estos riesgos.
 
-Para obtener instrucciones paso a paso para planear y configurar directivas de administración de riesgos internas, vea [Plan for insider risk management](insider-risk-management-plan.md) y Get started with [insider risk management](insider-risk-management-configure.md). Para obtener información acerca de las licencias de administración de riesgos de Insider, consulte la guía de licencias de [Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management)para la seguridad & cumplimiento.
+Para obtener instrucciones paso a paso para planear y configurar directivas de administración de riesgos internas, vea [Plan for insider risk management](insider-risk-management-plan.md) and Get started with [insider risk management](insider-risk-management-configure.md). Para obtener información acerca de las licencias de administración de riesgos de Insider, consulte la guía de licencias de [Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management)para la seguridad & cumplimiento.

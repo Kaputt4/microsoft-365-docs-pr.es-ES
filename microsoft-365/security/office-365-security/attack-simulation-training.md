@@ -25,7 +25,7 @@ La formación de simulación de ataques en Microsoft Defender para Office 365 le
 
 Para obtener información de introducción sobre el aprendizaje de simulación de ataques, consulta [Introducción al entrenamiento de simulación de ataques.](attack-simulation-training-get-started.md)
 
-Para iniciar un ataque de suplantación de identidad simulado, abra el Centro de seguridad de [Microsoft 365,](https://security.microsoft.com/)vaya & formación de simulación de ataques de colaboración de Correo electrónico y cambie **a** la pestaña \>  [**Simulaciones.**](https://security.microsoft.com/attacksimulator?viewid=simulations)
+Para iniciar un ataque de suplantación de identidad simulado, abra el Centro de seguridad de [Microsoft 365,](https://security.microsoft.com/)vaya a Formación de simulación de ataques de colaboración de correo electrónico & y cambie **a** la pestaña \>  [**Simulaciones.**](https://security.microsoft.com/attacksimulator?viewid=simulations)
 
 En **Simulaciones,** seleccione **+ Iniciar una simulación.**
 
@@ -36,7 +36,7 @@ En **Simulaciones,** seleccione **+ Iniciar una simulación.**
 
 ## <a name="selecting-a-social-engineering-technique"></a>Selección de una técnica de ingeniería social
 
-Seleccione entre 4 técnicas diferentes, conservadas en el marco de trabajo&[CK ® MITRE ATT.](https://attack.mitre.org/techniques/enterprise/) Hay diferentes cargas disponibles para diferentes técnicas:
+Selecciona entre 4 técnicas diferentes, seleccionadas en el marco de trabajo&[CK ® MITRE ATT.](https://attack.mitre.org/techniques/enterprise/) Hay diferentes cargas disponibles para diferentes técnicas:
 
 - **La recolección de** credenciales intenta recopilar credenciales llevando a los usuarios a un sitio web de aspecto conocido con cuadros de entrada para enviar un nombre de usuario y una contraseña.
 - **Los datos adjuntos** de malware agregan datos adjuntos malintencionados a un mensaje. Cuando el usuario abre los datos adjuntos, se ejecuta código arbitrario que ayudará al atacante a poner en peligro el dispositivo del destino.
@@ -54,11 +54,11 @@ Después de seleccionar la técnica y hacer clic **en** Siguiente, asigne a la s
 
 A continuación, tendrás que seleccionar una carga del catálogo de carga ya existente.
 
-Las cargas tienen varios puntos de datos que le ayudarán a elegir:
+Las cargas de trabajo tienen una serie de puntos de datos que le ayudarán a elegir:
 
 - **La tasa de clics** cuenta cuántas personas han hecho clic en esta carga.
 - **La tasa de peligro** previsto predice el porcentaje de personas que se verán comprometidas por esta carga en función de los datos históricos de la carga en Microsoft Defender para los clientes de Office 365.
-- **Las simulaciones iniciadas** cuentan el número de veces que esta carga se usó en otras simulaciones.
+- **Las simulaciones iniciadas** cuentan el número de veces que se usó esta carga en otras simulaciones.
 - **La** complejidad, disponible **a través de** filtros, se calcula en función del número de indicadores dentro de la carga en la que se dirige la pista en que se trata de un ataque. Si hay más indicadores, la complejidad es menor.
 - **Source**, available through **filters**, indicates whether the payload was created on your tenant or is a part of Microsoft's pre-existing payload catalog (global).
 
@@ -97,6 +97,6 @@ En los pasos siguientes,  tendrá que agregar cursos de aprendizaje si optó por
 
 Ahora que todo está configurado, puede iniciar esta simulación inmediatamente o programarla para una fecha posterior. También tendrá que elegir cuándo finalizar esta simulación. Dejaremos de capturar la interacción con esta simulación más allá de la hora seleccionada.
 
-**Habilita la entrega de zona horaria consciente de** la región para entregar mensajes de ataque simulado a los empleados durante sus horas de trabajo en función de su región.
+**Habilitar la entrega de zona horaria consciente de** la región para entregar mensajes de ataque simulado a los empleados durante sus horas de trabajo en función de su región.
 
 Una vez que haya terminado, haga clic en **Siguiente** y revise los detalles de la simulación. Haga clic **en Editar** en cualquiera de los elementos para volver atrás y cambiar los detalles que necesiten cambiar. Una vez hecho esto, haga clic **en Enviar**.

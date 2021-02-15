@@ -35,10 +35,10 @@ ms.locfileid: "50053840"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Aumente su conocimiento de la búsqueda avanzada rápidamente con seguimiento del _adversario,_ una serie de difusión por web para nuevos analistas de seguridad y agentes de amenazas expertos. La serie le guiará a través de los conceptos básicos hasta la creación de sus propias consultas sofisticadas. Empieza con el primer vídeo sobre conceptos básicos o salta a vídeos más avanzados que se adapten a tu nivel de experiencia.
+Aumente su conocimiento de la búsqueda avanzada rápidamente con El seguimiento del _adversario,_ una serie de difusión por web para nuevos analistas de seguridad y agentes de amenazas expertos. La serie le guiará a través de los conceptos básicos hasta la creación de sus propias consultas sofisticadas. Empieza con el primer vídeo sobre conceptos básicos o salta a vídeos más avanzados que se adapten a tu nivel de experiencia.
 
 
-| El título | Descripción | Reloj | Consultas | 
+| El título | Description | Reloj | Consultas | 
 |--|--|--|--|
 | Episodio 1: Conceptos básicos de KQL | En este episodio se tratan los conceptos básicos de la búsqueda avanzada en Microsoft 365 Defender. Obtenga información sobre los datos de búsqueda avanzada disponibles y la sintaxis y los operadores básicos de KQL. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [Archivo CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | Episodio 2: Combinaciones | Continúe con el aprendizaje sobre los datos en la búsqueda avanzada y sobre cómo unir tablas. Obtenga información sobre , y las combinaciones, y comprenda los matices de la unión `inner` `outer` predeterminada a `unique` `semi` Kusto. `innerunique` | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [Archivo CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
@@ -48,13 +48,13 @@ Aumente su conocimiento de la búsqueda avanzada rápidamente con seguimiento de
 
 Obtenga más formación de expertos con *L33TSP3AK:* búsqueda avanzada en Microsoft 365 Defender , una serie de difusión por web para analistas que buscan ampliar sus conocimientos técnicos y habilidades prácticas para llevar a cabo investigaciones de seguridad mediante la búsqueda avanzada en Microsoft 365 Defender. 
 
-| El título | Descripción | Reloj | Consultas | 
+| El título | Description | Reloj | Consultas | 
 |--|--|--|--|
 | Episodio 1  | En este episodio, aprenderás diferentes procedimientos recomendados para ejecutar consultas de búsqueda avanzada. Entre los temas tratados se encuentran: cómo optimizar las consultas, usar la búsqueda avanzada para ransomware, controlar JSON como un tipo dinámico y trabajar con operadores de datos externos. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [Archivo CSL](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.csl)
 
 
 ## <a name="how-to-use-the-csl-file"></a>Cómo usar el archivo CSL
-Antes de iniciar un episodio, accede al archivo [CSL de Kusto](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/tree/master/Webcasts/TrackingTheAdversary) correspondiente en GitHub y copia su contenido en el editor de consultas de búsqueda avanzada. Al ver un episodio, puede usar el contenido copiado para seguir al orador y ejecutar consultas. 
+Antes de iniciar un episodio, accede al archivo [Kusto CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/tree/master/Webcasts/TrackingTheAdversary) correspondiente en GitHub y copia su contenido en el editor de consultas de búsqueda avanzada. Al ver un episodio, puede usar el contenido copiado para seguir al orador y ejecutar consultas. 
 
 El siguiente fragmento de un archivo CSL muestra un conjunto completo de instrucciones marcadas como comentarios con `//` .
 

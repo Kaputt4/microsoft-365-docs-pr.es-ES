@@ -57,7 +57,7 @@ La API admite los siguientes operadores **de OData:**
 
 ## <a name="permissions"></a>Permisos
 
-Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea Las API [de Access de Microsoft 365 Defender](api-access.md)
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, vea Las API de [Access de Microsoft 365 Defender](api-access.md)
 
 Tipo de permiso | Permiso | Nombre para mostrar de permisos
 -|-|-
@@ -104,8 +104,8 @@ redirectIncidentId | Solo se rellena en caso de que un incidente se esté agrupa
 incidentName | Valor de cadena disponible para cada incidente. | Actividad de ransomware
 createdTime | Hora en que se creó el incidente por primera vez. | 2020-09-06T14:46:57.0733333Z
 lastUpdateTime | Hora en que el incidente se actualizó por última vez en el back-end.<br /><br /> Este campo se puede usar al establecer el parámetro de solicitud para el intervalo de tiempo que se recuperan los incidentes. | 2020-09-06T14:46:57.29Z
-assignedTo | Propietario del incidente o *null* si no se asigna ningún propietario. | secop2@contoso.com
-classification | Especificación del incidente. Los valores de propiedad son: *Unknown*, *FalsePositive*, *TruePositive* | Unknown
+assignedTo | Propietario del incidente o *nulo* si no se asigna ningún propietario. | secop2@contoso.com
+classification | La especificación del incidente. Los valores de propiedad son: *Unknown*, *FalsePositive*, *TruePositive* | Unknown
 determinación | Especifica la determinación del incidente. Los valores de propiedad son: *NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* | NotAvailable
 status | Clasifice los incidentes *(como Activos* o *Resueltos).* Puede ayudarle a organizar y administrar la respuesta a incidentes. | Activo
 severity | Indica el posible impacto en los activos. Cuanto mayor sea la gravedad, mayor será el impacto. Normalmente, los elementos de mayor gravedad requieren la atención más inmediata.<br /><br />Uno de los siguientes valores: *Informational*, *Low*, *Medium y *High*. | Mediano
@@ -124,40 +124,40 @@ lastUpdatedTime | Hora en que la alerta se actualizó por última vez en el back
 resolvedTime | Hora en que se resolvió la alerta. | 2020-09-10T05:22:59Z
 firstActivity | Hora en la que la alerta informó por primera vez de que la actividad se actualizó en el back-end.| 2020-09-04T05:22:59Z
 title | Valor de cadena de identificación breve disponible para cada alerta. | Actividad de ransomware
-description | Valor de cadena que describe cada alerta. | El usuario Test User2 (testUser2@contoso.com) manipuló 99 archivos con varias extensiones que terminaron con la extensión poco común *herunterladen*. Este es un número inusual de manipulaciones de archivos y es una señal de un posible ataque de ransomware.
+description | Valor de cadena que describe cada alerta. | El usuario Probar usuario2 (testUser2@contoso.com) manipuló 99 archivos con varias extensiones que terminan con la extensión poco común *herunterladen*. Este es un número inusual de manipulaciones de archivos y es una señal de un posible ataque de ransomware.
 categoría | Vista visual y numérica de cuánto ha progresado el ataque a lo largo de la cadena de eliminación. Alineado con el [marco mitre att&CK™ .](https://attack.mitre.org/) | Impacto
-status | Clasifice las *alertas (como Nueva,* *Activa* o *Resuelta).* Puede ayudarle a organizar y administrar la respuesta a las alertas. | Nuevo
+status | Clasifice las *alertas (como Nuevo,* *Activo* o *Resuelto).* Puede ayudarle a organizar y administrar la respuesta a las alertas. | Nuevo
 severity | Indica el posible impacto en los activos. Cuanto mayor sea la gravedad, mayor será el impacto. Normalmente, los elementos de mayor gravedad requieren la atención más inmediata.<br>Uno de los siguientes valores: *Informational*, *Low*, *Medium y *High*. | Mediano
 investigationId | El id. de investigación automatizado desencadenado por esta alerta. | 1234
 investigationState | Información sobre el estado actual de la investigación. Uno de los siguientes valores: *Unknown*, *Terminated*, *SuccessfullyRemediated*, *Benign*, *Failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyInvestigated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*. | UnsupportedAlertType
 classification | La especificación del incidente. Los valores de propiedad son: *Unknown*, *FalsePositive*, *TruePositive* o *null* | Unknown
 determinación | Especifica la determinación del incidente. Los valores de propiedad son: *NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other* o  *null* | Apt
-assignedTo | Propietario del incidente o *null* si no se asigna ningún propietario. | secop2@contoso.com
+assignedTo | Propietario del incidente o *nulo* si no se asigna ningún propietario. | secop2@contoso.com
 actorName | El grupo de actividades, si lo hay, el asociado a esta alerta. | BORON
 threatFamilyName | Familia de amenazas asociada a esta alerta. | nulo
 mitreTechniques | Las técnicas de ataque, tal como se alinean con el marco de trabajo&[CK ™ MITRE ATT.](https://attack.mitre.org/) | \[\]
-dispositivos | Todos los dispositivos en los que se enviaron alertas relacionadas con el incidente. | \[\] (consulta los detalles de los campos de entidad a continuación)
+dispositivos | Todos los dispositivos en los que se enviaron alertas relacionadas con el incidente. | \[\] (Consulta los detalles de los campos de entidad a continuación)
 
 ### <a name="device-format"></a>Formato de dispositivo
 
 Nombre del campo | Description | Valor de ejemplo
 -|-|-
-DeviceId | El id. de dispositivo como se designa en ATP de Microsoft Defender. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
-aadDeviceId |  El id. de dispositivo como se ha designado [en Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) Solo está disponible para dispositivos unidos a un dominio. | nulo
+DeviceId | El id. del dispositivo como se designa en ATP de Microsoft Defender. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
+aadDeviceId |  El id. del dispositivo como se ha designado [en Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) Solo está disponible para dispositivos unidos a un dominio. | nulo
 deviceDnsName | El nombre de dominio completo del dispositivo. | user5cx.middleeast.corp.contoso.com
-osPlatform | La plataforma del sistema operativo que está ejecutando el dispositivo.| WindowsServer2016
+osPlatform | La plataforma del sistema operativo en la que se ejecuta el dispositivo.| WindowsServer2016
 osBuild | La versión de compilación del sistema operativo que está ejecutando el dispositivo. | 14393
 rbacGroupName | El [grupo de control de acceso basado en roles](https://docs.microsoft.com/azure/role-based-access-control/overview) (RBAC) asociado al dispositivo. | WDATP-Ring0
 firstSeen | Hora en que se vio el dispositivo por primera vez. | 2020-02-06T14:16:01.9330135Z
 healthStatus | El estado de mantenimiento del dispositivo. | Activo
 riskScore | La puntuación de riesgo del dispositivo. | Alto
-entidades | Todas las entidades que se han identificado como parte o relacionadas con una alerta determinada. | \[\] (consulta los detalles de los campos de entidad a continuación)
+entidades | Todas las entidades que se han identificado como parte o relacionadas con una alerta determinada. | \[\] (Consulta los detalles de los campos de entidad a continuación)
 
 ### <a name="entity-format"></a>Formato de entidad
 
 Nombre del campo | Description | Valor de ejemplo
 -|-|-
-entityType | Entidades que se han identificado como parte o relacionadas con una alerta determinada.<br>Los valores de las propiedades son: *User*, *Ip*, *Url*, *File*, *Process*, *MailBox*, *MailMessage*, *MailCluster*, *Registry* | User
+entityType | Entidades que se han identificado como parte de una alerta determinada o relacionadas con dicha alerta.<br>Los valores de las propiedades son: *User*, *Ip*, *Url*, *File*, *Process*, *MailBox*, *MailMessage*, *MailCluster*, *Registry* | Usuario
 sha1 | Disponible si entityType es *File*.<br>El hash de archivo para las alertas asociadas a un archivo o proceso. | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
 sha256 | Disponible si entityType es *File*.<br>El hash de archivo para las alertas asociadas a un archivo o proceso. | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
 fileName | Disponible si entityType es *File*.<br>El nombre de archivo de las alertas asociadas a un archivo o proceso | Detector.UnitTests.dll

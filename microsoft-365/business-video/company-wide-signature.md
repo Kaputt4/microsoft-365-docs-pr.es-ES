@@ -51,4 +51,4 @@ Aparece una firma de correo electrónico en toda la empresa en todos los correos
     1. Desplácese hacia abajo y deje el modo establecido **en Aplicar** y, a continuación, **seleccione Guardar**.
 1. Aparecerá un mensaje de advertencia. Seleccione **Sí** para aplicar la regla a todos los mensajes futuros.
 
-    Se ha creado la firma. Cuando envíe su siguiente correo electrónico, no verá la firma que acaba de crear, pero los destinatarios de correo electrónico la verán.
+    Se ha creado la firma. Cuando envíe el siguiente correo electrónico, no verá la firma que acaba de crear, pero los destinatarios de correo electrónico la verán.

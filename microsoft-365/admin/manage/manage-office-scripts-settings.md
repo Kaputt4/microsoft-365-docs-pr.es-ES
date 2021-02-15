@@ -25,7 +25,7 @@ ms.locfileid: "50058428"
 ---
 # <a name="manage-office-scripts-settings"></a>Administrar la configuración de los Scripts de Office
 
-Los scripts de Office permiten a los usuarios automatizar tareas grabando, editando y ejecutando scripts en Excel en la Web. Scripts de Office funciona con Power Automate y los usuarios ejecutan scripts en libros mediante el conector de Excel Online (Empresa). Los administradores de Microsoft 365 pueden administrar la configuración de scripts de Office desde el Centro de administración de Microsoft 365.
+Los scripts de Office permiten a los usuarios automatizar tareas grabando, editando y ejecutando scripts en Excel en la Web. Scripts de Office funciona con Power Automate y los usuarios ejecutan scripts en libros mediante el conector de Excel Online (empresa). Los administradores de Microsoft 365 pueden administrar la configuración de scripts de Office desde el Centro de administración de Microsoft 365.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -43,7 +43,7 @@ Los scripts de Office permiten a los usuarios automatizar tareas grabando, edita
 
 ## <a name="manage-availability-of-office-scripts-and-sharing-of-scripts"></a>Administrar la disponibilidad de los scripts de Office y el uso compartido de scripts
 
-1. En el Centro de administración de Microsoft 365, vaya a la **pestaña** Configuración de servicios de \> **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">de la</a> organización.
+1. En el Centro de administración de Microsoft  365, vaya a la pestaña Configuración de servicios de \> **configuración de** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">la</a> organización.
 
 2. Seleccione **Scripts de Office**.
 
@@ -61,7 +61,7 @@ Los scripts de Office permiten a los usuarios automatizar tareas grabando, edita
     
         Para obtener más información sobre los distintos tipos de grupos, vea [Comparar grupos.](../create-groups/compare-groups.md)
 
-5. Para permitir que los usuarios con acceso a scripts de Office compartan sus scripts con otros usuarios de su organización, seleccione Permitir que los usuarios con acceso a scripts de Office compartan sus scripts con otros usuarios de **la organización.** No se permite el uso compartido de scripts fuera de una organización.
+5. Para permitir que los usuarios con acceso a scripts de Office compartan sus scripts con otros usuarios de la organización, seleccione Permitir que los usuarios con acceso a scripts de Office compartan sus scripts con otros usuarios de **la organización.** No se permite compartir scripts fuera de una organización.
  
     > [!NOTE]
     > Si más adelante desactiva el uso compartido de scripts para su organización, los usuarios seguirán siendo capaces de ejecutar scripts compartidos anteriormente.

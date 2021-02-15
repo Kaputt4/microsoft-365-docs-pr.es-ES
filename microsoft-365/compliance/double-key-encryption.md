@@ -35,7 +35,7 @@ Para obtener más información acerca de las claves raíz de inquilino predeterm
 
 ## <a name="when-your-organization-should-adopt-dke"></a>Cuándo debe adoptar su organización DKE
 
-El cifrado de doble clave está pensado para los datos más confidenciales que están sujetos a los requisitos de protección más estrictos. DKE no está pensado para todos los datos. En general, va a usar cifrado de doble clave para proteger solo una pequeña parte de los datos generales. Debe realizar la debida diligencia a la hora de identificar los datos adecuados que se deben cubrir con esta solución antes de implementar. En algunos casos, es posible que deba restringir el ámbito y usar otras soluciones para la mayoría de los datos, como Microsoft Information Protection con claves administradas por Microsoft o BYOK. Estas soluciones son suficientes para documentos que no están sujetos a protecciones mejoradas y requisitos normativos. Además, estas soluciones le permiten usar los servicios más eficaces de Office 365; que no puede usar con contenido cifrado DKE. Por ejemplo:
+El cifrado de doble clave está pensado para los datos más confidenciales que están sujetos a los requisitos de protección más estrictos. DKE no está pensado para todos los datos. En general, va a usar cifrado de doble clave para proteger solo una pequeña parte de los datos generales. Debe realizar las diligencias necesarias para identificar los datos adecuados que se deben cubrir con esta solución antes de implementarla. En algunos casos, es posible que deba restringir el ámbito y usar otras soluciones para la mayoría de los datos, como Microsoft Information Protection con claves administradas por Microsoft o BYOK. Estas soluciones son suficientes para documentos que no están sujetos a protecciones mejoradas y requisitos normativos. Además, estas soluciones le permiten usar los servicios más eficaces de Office 365; que no puede usar con contenido cifrado DKE. Por ejemplo:
 
 - Reglas de transporte como antimalware y correo no deseado que requieren visibilidad de los datos adjuntos
 - Microsoft Delve
@@ -45,19 +45,19 @@ El cifrado de doble clave está pensado para los datos más confidenciales que e
 
 Las aplicaciones o servicios externos que no están integrados con DKE a través del SDK de MIP no podrán realizar acciones en los datos cifrados.
 
-Microsoft Information Protection SDK 1.7+ admite el cifrado de doble clave; las aplicaciones que se integran con nuestro SDK podrán realizar una razón sobre estos datos con permisos e integraciones suficientes en su lugar.
+Microsoft Information Protection SDK 1.7+ admite el cifrado de doble clave; las aplicaciones que se integran con nuestro SDK podrán realizar una razón sobre estos datos con permisos e integraciones suficientes.
 
-Se recomienda que las organizaciones usen las capacidades de Protección de la información de Microsoft (clasificación y etiquetado) para proteger la mayoría de sus datos confidenciales y usar solo DKE para sus datos fundamentales. El cifrado de doble clave es relevante para datos confidenciales en sectores altamente regulados, como servicios financieros y sanidad.
+Se recomienda que las organizaciones usen las capacidades de Protección de la información de Microsoft (clasificación y etiquetado) para proteger la mayoría de sus datos confidenciales y solo usen DKE para sus datos fundamentales. El cifrado de doble clave es relevante para datos confidenciales en sectores altamente regulados, como servicios financieros y sanidad.
 
 Si su organización tiene cualquiera de los siguientes requisitos, puede usar DKE para ayudar a proteger su contenido:
 
 - Desea asegurarse de que *solo usted pueda* descifrar el contenido protegido, en todas las circunstancias.
-- No quiere que Microsoft tenga acceso a datos protegidos por sí mismo.
-- Tiene requisitos normativos para contener claves dentro de un límite geográfico. Todas las claves que conserva para el cifrado y descifrado de datos se mantienen en el centro de datos.
+- No quiere que Microsoft tenga acceso a los datos protegidos por sí mismo.
+- Tiene requisitos normativos para mantener las claves dentro de un límite geográfico. Todas las claves que conserva para el cifrado y descifrado de datos se mantienen en el centro de datos.
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>Requisitos de sistema y licencias para DKE
 
-**Cifrado de doble clave para Microsoft 365** viene con Microsoft 365 E5. Si no tiene una licencia de Microsoft 365 E5, puede registrarse para obtener una [versión de prueba.](https://aka.ms/M365E5ComplianceTrial) Para obtener más información acerca de estas licencias, vea la guía de licencias de [Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)para la seguridad & cumplimiento.
+**Cifrado de clave doble para Microsoft 365** viene con Microsoft 365 E5. Si no tiene una licencia de Microsoft 365 E5, puede registrarse para obtener una [versión de prueba.](https://aka.ms/M365E5ComplianceTrial) Para obtener más información acerca de estas licencias, vea la guía de licencias de [Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)para la seguridad & cumplimiento.
 
 **Azure Information Protection**. DKE funciona con etiquetas de confidencialidad y requiere Azure Information Protection.
 
@@ -73,17 +73,17 @@ Las etiquetas de confidencialidad DKE están disponibles para los usuarios final
 
 **Compatibilidad con contenido en línea.** Se admiten documentos y archivos almacenados en línea en Microsoft SharePoint y OneDrive para la Empresa. Puede compartir contenido cifrado por correo electrónico, pero no puede ver documentos y archivos cifrados en línea. En su lugar, debes ver el contenido protegido mediante las aplicaciones de escritorio del equipo local.
 
-## <a name="overview-of-deploying-dke"></a>Información general sobre la implementación de DKE
+## <a name="overview-of-deploying-dke"></a>Introducción a la implementación de DKE
 
 Siga estos pasos generales para configurar DKE. Una vez que haya completado estos pasos, los usuarios finales podrán proteger los datos altamente confidenciales con cifrado de doble clave.
 
 1. Implemente el servicio DKE como se describe en este artículo.
 
-2. Cree una etiqueta con cifrado de doble clave. Vaya a Protección de la información en el Centro [de cumplimiento de Microsoft 365](https://compliance.microsoft.com) y cree una nueva etiqueta con cifrado de doble clave. Vea [Restringir el acceso al contenido mediante etiquetas de confidencialidad para aplicar el cifrado.](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)
+2. Cree una etiqueta con cifrado de doble clave. Vaya a Protección de la información en el Centro de cumplimiento de [Microsoft 365](https://compliance.microsoft.com) y cree una nueva etiqueta con cifrado de doble clave. Vea [Restringir el acceso al contenido mediante etiquetas de confidencialidad para aplicar el cifrado.](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)
 
 3. Use etiquetas de cifrado de doble clave. Proteja los datos seleccionando la etiqueta Cifrado de doble clave en la cinta de opciones de confidencialidad Microsoft Office.
 
-Hay varias maneras de completar algunos de los pasos para implementar el cifrado de doble clave. En este artículo se proporcionan instrucciones detalladas para que los administradores menos experimentados implemente correctamente el servicio. Si se siente cómodo al hacerlo, puede elegir usar sus propios métodos.
+Hay varias formas de completar algunos de los pasos para implementar el cifrado de doble clave. En este artículo se proporcionan instrucciones detalladas para que los administradores menos experimentados implemente correctamente el servicio. Si se siente cómodo al hacerlo, puede elegir usar sus propios métodos.
 
 ## <a name="deploy-dke"></a>Implementar DKE
 
@@ -113,7 +113,7 @@ Instale estos requisitos previos en el equipo donde desea instalar el servicio D
 
 **.NET Core 3.1 SDK**. Descargue e instale el SDK desde [Descargar .NET Core 3.1.](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 
-**Visual Studio código.** Descargar Visual Studio código de [https://code.visualstudio.com/](https://code.visualstudio.com) . Una vez instalado, ejecute Visual Studio  código y seleccione \> **Ver extensiones**. Instale estas extensiones.
+**Visual Studio código**. Descargar Visual Studio código de [https://code.visualstudio.com/](https://code.visualstudio.com) . Una vez instalado, ejecute Visual Studio  código y seleccione \> **Ver extensiones**. Instale estas extensiones.
 
 - C# para Visual Studio código
 
@@ -151,7 +151,7 @@ Las siguientes instrucciones están pensadas para usuarios de git o Visual Studi
 
 4. En el cuadro de texto, pegue la dirección URL que copió de Git y seleccione **Clonar desde GitHub**.
 
-5. En el **cuadro de diálogo Seleccionar** carpeta que aparece, busque y seleccione una ubicación para almacenar el repositorio. En el símbolo del sistema, seleccione **Abrir**.
+5. En el **cuadro de diálogo** Seleccionar carpeta que aparece, busque y seleccione una ubicación para almacenar el repositorio. En el símbolo del sistema, seleccione **Abrir**.
 
     El repositorio se abre en Visual Studio código y muestra la rama de Git actual en la parte inferior izquierda. Por ejemplo, la rama debe ser **principal.** Por ejemplo:
 
@@ -160,7 +160,7 @@ Las siguientes instrucciones están pensadas para usuarios de git o Visual Studi
 6. Si no estás en la rama principal, tendrás que seleccionarla. En Visual Studio código, seleccione la rama y elija **principal** en la lista de sucursales que se muestra.
 
    > [!IMPORTANT]
-   > La selección de la rama principal garantiza que tiene los archivos correctos para compilar el proyecto. Si no elige la rama correcta, se producirá un error en la implementación.
+   > Seleccionar la rama principal garantiza que tiene los archivos correctos para compilar el proyecto. Si no elige la rama correcta, se producirá un error en la implementación.
 
 Ahora tiene el repositorio de origen de DKE configurado localmente. A [continuación, modifique la configuración de](#modify-application-settings) la aplicación para su organización.
 
@@ -177,7 +177,7 @@ La configuración de la aplicación se modifica en el appsettings.jsdel archivo.
 
 #### <a name="key-access-settings"></a>Configuración de acceso de teclas
 
-Elija si desea usar la autorización de correo electrónico o rol. DKE solo admite uno de estos métodos de autenticación a la vez.
+Elija si desea usar la autorización de roles o correo electrónico. DKE solo admite uno de estos métodos de autenticación a la vez.
 
 - **Autorización de correo electrónico.** Permite que su organización autorice el acceso a las claves solo en función de las direcciones de correo electrónico.
 
@@ -235,7 +235,7 @@ La configuración del inquilino y la clave de DKE se encuentran **enappsettings.
 
 1. Abra el **appsettings.jsen el** archivo.
 
-2. Busque la `ValidIssuers` configuración y reempláctela `<tenantid>` por su id. de espacio empresarial. Puede buscar su id. de inquilino yendo a Azure Portal y viendo las propiedades [del espacio empresarial.](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) Por ejemplo:
+2. Busque la `ValidIssuers` configuración y reempláctela `<tenantid>` por su id. de inquilino. Puede encontrar su id. de inquilino yendo a Azure Portal y viendo las propiedades [del espacio empresarial.](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) Por ejemplo:
 
    ```json
    "ValidIssuers": [
@@ -243,10 +243,10 @@ La configuración del inquilino y la clave de DKE se encuentran **enappsettings.
    ]
    ```
 
-Busque el `JwtAudience` archivo . Reemplace `<yourhostname>` por el nombre de host de la máquina donde se ejecutará el servicio DKE. Por ejemplo:
+Busque el `JwtAudience` archivo . Reemplace por el nombre de host de la máquina donde se ejecutará el `<yourhostname>` servicio DKE. Por ejemplo:
 
   > [!IMPORTANT]
-  > El valor debe `JwtAudience` coincidir exactamente con el nombre del host. Puede usar **localhost:5001** durante la depuración. Sin embargo, cuando haya terminado la depuración, asegúrese de actualizar este valor al nombre de host del servidor.
+  > El valor debe `JwtAudience` coincidir exactamente con el nombre del host. Puede usar **localhost:5001 durante** la depuración. Sin embargo, cuando haya terminado la depuración, asegúrese de actualizar este valor al nombre de host del servidor.
 
 - `TestKeys:Name`. Escriba un nombre para la clave. Por ejemplo: `TestKey1`
 - `TestKeys:Id`. Crear un GUID y escribirlo como `TestKeys:ID` el valor. Por ejemplo, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. Puede usar un sitio como [el generador guid en](https://guidgenerator.com/) línea para generar aleatoriamente un GUID.
@@ -271,7 +271,7 @@ Para generar claves:
    openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
    ```
 
-4. Genera la clave privada.
+4. Genere la clave privada.
 
    ```console
    openssl rsa -in key.pem -out privkeynopass.pem
@@ -314,7 +314,7 @@ Para generar claves:
 
     ![startup.cs de vista previa pública](../media/dke-startupcs-usetestkeys.png)
 
-Ahora ya está listo para compilar [el proyecto DKE.](#build-the-project)
+Ahora ya está listo para crear [el proyecto DKE](#build-the-project).
 
 ### <a name="build-the-project"></a>Compile el proyecto.
 
@@ -362,7 +362,7 @@ La configuración ya está completa. Antes de publicar el almacén de claves, en
 
 ### <a name="deploy-the-dke-service-and-publish-the-key-store"></a>Implementar el servicio DKE y publicar el almacén de claves
 
-Para implementaciones de producción, implemente el servicio en una nube de terceros o [publeméntelo en un sistema local.](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&preserve-view=true&tabs=netcore-cli)
+Para implementaciones de producción, implemente el servicio en una nube de terceros o [publique en un sistema local.](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&preserve-view=true&tabs=netcore-cli)
 
 Es posible que prefieras otros métodos para implementar las claves. Seleccione el método que mejor se adapte a su organización.
 
@@ -463,7 +463,7 @@ El nombre de la clave distingue mayúsculas de minúsculas. Escriba el nombre de
 
 ## <a name="register-your-key-store"></a>Registrar el almacén de claves
 
-Los siguientes pasos permiten registrar el servicio DKE. El último paso para implementar DKE es registrar el servicio DKE antes de empezar a crear etiquetas.
+Los siguientes pasos le permiten registrar el servicio DKE. El último paso para implementar DKE es registrar el servicio DKE antes de empezar a crear etiquetas.
 
 Para registrar el servicio DKE:
 
@@ -471,7 +471,7 @@ Para registrar el servicio DKE:
 
 2. Seleccione **Nuevo registro** y escriba un nombre significativo.
 
-3. Seleccione un tipo de cuenta de las opciones mostradas.
+3. Seleccione un tipo de cuenta en las opciones mostradas.
 
    Si usa Microsoft Azure con un dominio no personalizado, como **onmicrosoft.com,** seleccione Solo cuentas en este directorio de la organización **(Solo Microsoft - Inquilino único).**
 
@@ -506,7 +506,7 @@ Para registrar el servicio DKE:
 
 12. Still on the **Expose an API** page, in the **Scopes defined by this API** area, select Add a **scope**. En el nuevo ámbito:
 
-    1. Defina el nombre del ámbito **como user_impersonation**.
+    1. Defina el nombre del ámbito como **user_impersonation**.
 
     2. Seleccione los administradores y usuarios que pueden dar su consentimiento.
 

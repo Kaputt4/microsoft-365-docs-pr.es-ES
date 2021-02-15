@@ -39,12 +39,12 @@ Para mantener el servicio con rendimiento y capacidad de respuesta, la búsqueda
 
 Consulte la tabla siguiente para comprender las cuotas existentes y los parámetros de uso.
 
-| Cuota o parámetro | Size | Ciclo de actualización | Descripción |
+| Cuota o parámetro | Size | Ciclo de actualización | Description |
 |--|--|--|--|
 | Rango de datos | 30 días | Cada consulta | Cada consulta puede buscar datos de hasta los últimos 30 días. |
 | Conjunto de resultados | 10 000 filas | Cada consulta | Cada consulta puede devolver hasta 10.000 registros. |
 | Timeout | 10 minutos | Cada consulta | Cada consulta puede ejecutarse durante un máximo de 10 minutos. Si no se completa en 10 minutos, el servicio muestra un error.
-| Recursos de CPU | En función del tamaño del espacio empresarial | - En la hora y, a continuación, cada 15 minutos<br>- Diariamente a las 12 medianoche | El servicio aplica la cuota diaria y la cuota de 15 minutos por separado. Para cada cuota, el [portal muestra](advanced-hunting-errors.md) un error siempre que se ejecuta una consulta y el inquilino ha consumido más del 10 % de los recursos asignados. Las consultas se bloquean si el inquilino ha alcanzado el 100 % hasta después del siguiente ciclo diario o de 15 minutos. |
+| Recursos de CPU | En función del tamaño del espacio empresarial | - En la hora y, a continuación, cada 15 minutos<br>- Diariamente a las 12 medianoche | El servicio aplica la cuota diaria y la cuota de 15 minutos por separado. Por cada cuota, el [portal muestra](advanced-hunting-errors.md) un error siempre que se ejecuta una consulta y el espacio empresarial ha consumido más del 10 % de los recursos asignados. Las consultas se bloquean si el inquilino ha alcanzado el 100 % hasta después del siguiente ciclo diario o de 15 minutos. |
 
 >[!NOTE] 
 >Se aplica un conjunto independiente de cuotas y parámetros a las consultas de búsqueda avanzada realizadas a través de la API. [Leer sobre las API de búsqueda avanzada](https://docs.microsoft.com/microsoft-365/security/mtp/api-advanced-hunting)

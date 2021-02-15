@@ -40,7 +40,7 @@ ms.locfileid: "49929403"
 
 En esta página se describe cómo crear una aplicación de Azure Active Directory que tenga acceso mediante programación a Microsoft 365 Defender, en nombre de los usuarios de varios inquilinos. Las aplicaciones multiinquilino son útiles para atender grandes grupos de usuarios.
 
-Si necesita acceso mediante programación a Microsoft 365 Defender en nombre de un único usuario, vea Crear una aplicación para obtener acceso a las API de [Microsoft 365 Defender](api-create-app-user-context.md)en nombre de un usuario. Si necesita acceso sin un usuario definido explícitamente (por ejemplo, si está escribiendo una aplicación en segundo plano o un demonio), vea Crear una aplicación para obtener acceso a [Microsoft 365 Defender](api-create-app-web.md)sin un usuario. Si no está seguro del tipo de acceso que necesita, vea [Introducción.](api-access.md)
+Si necesita acceso mediante programación a Microsoft 365 Defender en nombre de un único usuario, vea Crear una aplicación para obtener acceso a las API de [Microsoft 365 Defender](api-create-app-user-context.md)en nombre de un usuario. Si necesita acceso sin un usuario definido explícitamente (por ejemplo, si está escribiendo una aplicación en segundo plano o un demonio), vea Crear una aplicación para tener acceso a [Microsoft 365 Defender](api-create-app-web.md)sin un usuario. Si no está seguro del tipo de acceso que necesita, vea [Introducción.](api-access.md)
 
 Microsoft 365 Defender expone gran parte de sus datos y acciones a través de un conjunto de API mediante programación. Estas API le ayudan a automatizar flujos de trabajo y a usar las capacidades de Microsoft 365 Defender. Este acceso a la API requiere la autenticación OAuth2.0. Para obtener más información, vea [OAuth 2.0 Flujo de código de autorización.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
@@ -88,7 +88,7 @@ Los siguientes pasos le guiarán a crear una aplicación multiinquilino de Azure
 
    ![Imagen del formulario Registrar una aplicación](../..//media/atp-api-new-app-partner.png)
 
-4. En la página de la aplicación, seleccione Permisos de **API** Agregar API de permisos que mi organización usa >, escriba Protección contra amenazas de Microsoft y  >    >   seleccione Protección **contra amenazas de Microsoft.**  La aplicación ahora puede acceder a Microsoft 365 Defender.
+4. En la página de la aplicación, seleccione Permisos de **API** Agregar API de permisos que mi organización usa >, escriba Protección contra amenazas de  >    >   **Microsoft** y seleccione **Protección contra amenazas de Microsoft.** La aplicación ahora puede acceder a Microsoft 365 Defender.
 
    > [!TIP]
    > *La Protección contra amenazas* de Microsoft es un nombre anterior de Microsoft 365 Defender y no aparecerá en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para que aparezca.
@@ -100,7 +100,7 @@ Los siguientes pasos le guiarán a crear una aplicación multiinquilino de Azure
    ![Imagen de acceso api y selección de API](../../media/request-api-permissions.PNG)
 
     > [!NOTE]
-    > Debe seleccionar los permisos relevantes para su escenario. *Leer todos los incidentes* es solo un ejemplo. Para determinar qué permiso necesita, consulte la **sección Permisos** de la API a la que desea llamar.
+    > Debe seleccionar los permisos relevantes para su escenario. *Leer todos los incidentes* es solo un ejemplo. Para determinar qué permiso necesita, consulte la **sección Permisos** en la API a la que desea llamar.
     >
     > Por ejemplo, para [ejecutar consultas avanzadas,](api-advanced-hunting.md)seleccione el permiso "Ejecutar consultas avanzadas"; para [aislar un dispositivo,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/isolate-machine)seleccione el permiso "Aislar máquina".
 
@@ -113,7 +113,7 @@ Los siguientes pasos le guiarán a crear una aplicación multiinquilino de Azure
     > [!TIP]
     > Después de seleccionar **Agregar**, seleccione **copiar el valor secreto generado.** No podrá recuperar el valor secreto después de salir.
 
-    ![Imagen de la clave de creación de la aplicación](../../media/webapp-create-key2.png)
+    ![Imagen de crear clave de aplicación](../../media/webapp-create-key2.png)
 
 8. Registre el id. de aplicación y el id. de espacio empresarial en algún lugar seguro. Aparecen en Información **general en** la página de la aplicación.
 
@@ -294,4 +294,4 @@ En el ejemplo siguiente se muestra cómo enviar una solicitud para obtener una l
 - [Más información sobre los límites de la API y las licencias](api-terms.md)
 - [Comprender los códigos de error](api-error-codes.md)
 - [Administrar secretos en las aplicaciones de servidor con Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
-- [Autorización de OAuth 2.0 para el inicio de sesión de usuario y el acceso a la API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+- [Autorización de OAuth 2.0 para el inicio de sesión del usuario y el acceso a la API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

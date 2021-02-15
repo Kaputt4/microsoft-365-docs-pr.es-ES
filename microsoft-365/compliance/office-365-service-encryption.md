@@ -35,13 +35,13 @@ El cifrado de servicio proporciona varias ventajas:
 
 - Proporciona una capa de protección adicional sobre BitLocker.
 
-- Proporciona una separación entre los administradores del sistema operativo Windows y el acceso a los datos de la aplicación almacenados o procesados por el sistema operativo.
+- Proporciona la separación de los administradores del sistema operativo Windows del acceso a los datos de la aplicación almacenados o procesados por el sistema operativo.
 
 - Incluye una opción de clave de cliente que permite que los servicios multiinquilino proporcionen administración de claves por inquilino.
 
 - Mejora la capacidad de Microsoft 365 para satisfacer las demandas de los clientes que tienen requisitos de cumplimiento específicos relacionados con el cifrado.
 
-Con la clave de cliente, puede generar sus propias claves criptográficas mediante un módulo de servicio de hardware (MATE) local o Azure Key Vault (AKV). Independientemente de cómo genere la clave, use AKV para controlar y administrar las claves criptográficas que usa Office 365. Una vez que las claves se almacenan en AKV, se pueden usar como la raíz de una de las cadenas de claves que cifra los archivos o datos del buzón.
+Con la clave de cliente, puede generar sus propias claves criptográficas mediante un módulo de servicio de hardware (MATE) local o Azure Key Vault (AKV). Independientemente de cómo genere la clave, use AKV para controlar y administrar las claves criptográficas que usa Office 365. Una vez que las claves se almacenan en AKV, se pueden usar como la raíz de una de las cadenas de claves que cifra los datos o archivos del buzón.
 
 Otra ventaja de la clave de cliente es el control que tiene sobre la capacidad de Microsoft para procesar los datos. Si desea quitar datos de Office 365, como si desea finalizar el servicio con Microsoft o quitar una parte de los datos almacenados en la nube, puede hacerlo y usar la clave de cliente como control técnico. La eliminación de datos garantiza que nadie, incluido Microsoft, pueda acceder o procesar los datos. La clave de cliente es además y complementaria de la Caja de seguridad del cliente que se usa para controlar el acceso a los datos por parte del personal de Microsoft.
 

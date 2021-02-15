@@ -29,10 +29,10 @@ ms.locfileid: "49976333"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>Activar o desactivar la búsqueda de registros de auditoría
 
-El registro de auditoría está activado de forma predeterminada para las organizaciones empresariales de Microsoft 365 y Office 365. Esto incluye las organizaciones con suscripciones E3/G3 o E5/G5. Cuando la búsqueda de registros de auditoría en el centro de cumplimiento está activada, la actividad de usuario y administrador de su organización se registra en el registro de auditoría y se conserva durante 90 días y hasta un año, según la licencia asignada a los usuarios. Sin embargo, es posible que su organización tenga motivos para no desear registrar y conservar los datos del registro de auditoría. En esos casos, un administrador global puede decidir desactivar la auditoría en Microsoft 365.
+El registro de auditoría está activado de forma predeterminada para organizaciones de Microsoft 365 y Office 365 Enterprise. Esto incluye las organizaciones con suscripciones a E3/G3 o E5/G5. Cuando la búsqueda de registros de auditoría en el centro de cumplimiento está activada, la actividad de usuario y administrador de su organización se registra en el registro de auditoría y se conserva durante 90 días y hasta un año, según la licencia asignada a los usuarios. Sin embargo, es posible que su organización tenga motivos para no desear registrar y conservar los datos del registro de auditoría. En esos casos, un administrador global puede decidir desactivar la auditoría en Microsoft 365.
 
 > [!IMPORTANT]
-> Si desactiva la búsqueda de registros de auditoría en Microsoft 365, no puede usar la API de actividad de administración de Office 365 ni Azure Sentinel para obtener acceso a los datos de auditoría de su organización. Desactivar la búsqueda de registros de auditoría siguiendo los pasos de este artículo significa que no se devolverá ningún resultado cuando busque en el registro de auditoría mediante el Centro de seguridad y cumplimiento de & o cuando ejecute el cmdlet **Search-UnifiedAuditLog** en Exchange Online PowerShell. Esto también significa que los registros de auditoría no estarán disponibles a través de la API de actividad de administración de Office 365 o Azure Sentinel.
+> Si desactiva la búsqueda de registros de auditoría en Microsoft 365, no puede usar la API de actividad de administración de Office 365 ni Azure Sentinel para obtener acceso a los datos de auditoría de su organización. Desactivar la búsqueda de registros de auditoría siguiendo los pasos de este artículo significa que no se devolverán resultados cuando busque en el registro de auditoría mediante el Centro de seguridad y cumplimiento de & o cuando ejecute el cmdlet **Search-UnifiedAuditLog** en Exchange Online PowerShell. Esto también significa que los registros de auditoría no estarán disponibles a través de la API de actividad de administración de Office 365 o Azure Sentinel.
   
 ## <a name="before-you-turn-audit-log-search-on-or-off"></a>Antes de activar o desactivar la búsqueda de registros de auditoría
 
@@ -41,9 +41,9 @@ El registro de auditoría está activado de forma predeterminada para las organi
     > [!NOTE]
     > Los usuarios deben tener asignados permisos en Exchange Online para activar o desactivar la búsqueda de registros de auditoría. Si asigna a los usuarios  el rol Registros de auditoría en la página Permisos del Centro de seguridad y cumplimiento de &, no podrán activar o desactivar la búsqueda del registro de auditoría. Esto se debe a que el cmdlet subyacente es un cmdlet de Exchange Online PowerShell. 
     
-- Para obtener instrucciones paso a paso sobre la búsqueda en el registro de auditoría, consulte Buscar en el registro de auditoría en el Centro de [& cumplimiento.](search-the-audit-log-in-security-and-compliance.md) Para obtener más información acerca de la API de actividad de administración de Microsoft 365, vea Introducción a las API de administración de [Microsoft 365.](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)
+- Para obtener instrucciones paso a paso sobre cómo buscar en el registro de auditoría, consulte Buscar en el registro de auditoría en el Centro de [& cumplimiento.](search-the-audit-log-in-security-and-compliance.md) Para obtener más información acerca de la API de actividad de administración de Microsoft 365, vea Introducción a las API de administración de [Microsoft 365.](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)
 
-- Para comprobar que la búsqueda del registro de auditoría está activada, puede ejecutar el siguiente comando en Exchange Online PowerShell:
+- Para comprobar que la búsqueda de registros de auditoría está activada, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
 
     ```powershell
     Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled

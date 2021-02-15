@@ -34,7 +34,7 @@ ms.locfileid: "50044257"
 ---
 # <a name="set-up-microsoft-365"></a>Configurar Microsoft 365
 
-En este artículo se describe el proceso de configuración de Microsoft 365. Cualquier usuario con Microsoft 365 Empresa Premium puede usar esta guía para dar un paso más en la seguridad.
+En este artículo se describe el proceso de configuración de Microsoft 365. Cualquier persona con Microsoft 365 Empresa Premium puede usar esta guía para dar un paso más en la seguridad.
 
 ## <a name="admins-set-up-microsoft-365"></a>Administradores: Configurar Microsoft 365
 
@@ -50,7 +50,7 @@ Para todas las organizaciones, aumente la protección de seguridad protegiendo l
 
 ## <a name="everyone-set-up-your-devices"></a>Todos: configurar los dispositivos
 
-Los usuarios tendrán que tardar unos minutos en configurar dispositivos para que funcionen con este entorno. Para los usuarios clave (aquellos que son los destinos de mayor valor para hackers), puedes configurar y preconfigurar nuevos dispositivos. Esto les ayuda a empezar a trabajar cuando inician sesión con sus credenciales de Microsoft 365.
+Los usuarios tendrán que tardar unos minutos en configurar los dispositivos para que funcionen con este entorno. Para los usuarios clave (aquellos que son los destinos de mayor valor para hackers), puedes configurar y preconfigurar nuevos dispositivos. Esto les ayuda a empezar a trabajar cuando inician sesión con sus credenciales de Microsoft 365.
 
 ![Proceso de configuración de dispositivos de usuario](../media/m365-democracy-user-device-setup.png)
   
@@ -61,7 +61,7 @@ Para configurar dispositivos de usuario:
 Para el personal clave, se recomienda usar dispositivos [administrados](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) para una protección aún mejor. Para todos los dispositivos, querrá configurar la [autenticación multifactor.](m365-campaigns-multifactor-authenication.md)
 3. Todos los usuarios deben aprender a protegerse a sí mismos y a su campaña al aprender sobre [la suplantación de identidad (phishing) y otros ataques.](m365-campaigns-phishing-and-attacks.md) Esta [infografía también](m365-campaigns-protect-campaign-infographic.md) puede ayudar a los usuarios a comprender cómo proteger la campaña contra amenazas en línea.
 
-## <a name="contact-support"></a>Contactar soporte
+## <a name="contact-support"></a>Ponerse en contacto con el soporte técnico
 
  **Si necesita ponerse en contacto con soporte técnico:**
   

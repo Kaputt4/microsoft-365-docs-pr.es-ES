@@ -80,7 +80,7 @@ Si recibe este error, le recomendamos que compruebe las ubicaciones en las que s
 
 ## <a name="errorissue-file-not-found"></a>Error/problema: no se encontró el archivo
 
-Al ejecutar una búsqueda de exhibición de documentos electrónicos que incluya ubicaciones de SharePoint Online y One Drive para empresas, es posible que reciba el error aunque el archivo se encuentra `File Not Found` en el sitio. Este error aparecerá en las advertencias de exportación y se errors.csv o omitido items.csv. Esto puede ocurrir si el archivo no se encuentra en el sitio o si el índice está des actualizado. Este es el texto de un error real (con énfasis agregado).
+Al ejecutar una búsqueda de exhibición de documentos electrónicos que incluya ubicaciones de SharePoint Online y One Drive para empresas, es posible que reciba el error aunque el archivo se encuentra `File Not Found` en el sitio. Este error se producirá en las advertencias de exportación errors.csv o omitido items.csv. Esto puede ocurrir si el archivo no se encuentra en el sitio o si el índice está des actualizado. Este es el texto de un error real (con énfasis agregado).
 
 > 28.06.2019 10:02:19_FailedToExportItem_Failed descargar contenido. Información de diagnóstico adicional: Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: No se pudo descargar desde el contenido 6ea52149-91cd-4965-b5bb-82ca6a3ec9be de tipo Document. Identificador de correlación: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft.SharePoint.Client.ServerException: ***Archivo no encontrado.*** at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse() --- End of inner exception stack trace ---
 
@@ -104,7 +104,7 @@ Se produce un error en una búsqueda de exhibición de documentos electrónicos 
    Get-Recipient <userId> | FL
    ```
 
-3. Debe haber un objeto de usuario de correo para la pregunta del usuario. Si no se devuelve nada, investigue el objeto de usuario. Póngase en contacto con el soporte técnico de Microsoft si el objeto no se puede sincronizar.
+3. Debe haber un objeto de usuario de correo para la pregunta del usuario. Si no se devuelve nada, investigue el objeto de usuario. Póngase en contacto con el soporte técnico de Microsoft si no se puede sincronizar el objeto.
 
 ## <a name="errorissue-exporting-search-results-is-slow"></a>Error o problema: exportar los resultados de la búsqueda es lento
 
@@ -132,7 +132,7 @@ Al exportar los resultados de la búsqueda desde la exhibición de documentos el
 
 6. Si aún tiene problemas, considere dividir las búsquedas que devuelven un gran conjunto de resultados en búsquedas más pequeñas. Por ejemplo, puede usar intervalos de fechas en consultas de búsqueda para devolver un conjunto más pequeño de resultados que se pueden descargar más rápido.
 
-## <a name="errorissue-internal-server-error-500-occurred"></a>Error o problema: "Error interno del servidor (500) "
+## <a name="errorissue-internal-server-error-500-occurred"></a>Error/problema: "Error interno del servidor (500) "
 
 Al ejecutar una búsqueda de exhibición de documentos electrónicos, si la búsqueda falla continuamente con un error similar a "Error interno del servidor (500)", puede que necesite volver a ejecutar la búsqueda solo en ubicaciones de buzones específicas.
 
@@ -176,7 +176,7 @@ Error de distribución de la directiva de retención de casos de eDiscovery. El 
 
 2. Examine el valor del parámetro DistributionDetail para ver si hay errores como los siguientes:
 
-   > Error: Recursos: la implementación de la directiva tarda más de lo esperado. Puede tardar 2 horas adicionales en actualizar el estado de implementación final, así que vuelva a consultarlo en un par de horas".
+   > Error: Recursos: la implementación de la directiva tarda más de lo esperado. Podría tardar 2 horas adicionales en actualizar el estado de implementación final, así que vuelva a consultarlo en un par de horas".
 
 3. Intente ejecutar el parámetro RetryDistribution en la directiva en cuestión:
 
@@ -196,7 +196,7 @@ Error de distribución de la directiva de retención de casos de eDiscovery. El 
 
 ## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>Error: "No se cumple la condición especificada mediante encabezados condicionales HTTP"
 
-Al descargar resultados de búsqueda con la herramienta de exportación de exhibición de documentos electrónicos, es posible que reciba el siguiente error: Este es un error transitorio, que normalmente se produce en la ubicación de `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` Azure Storage.
+Al descargar los resultados de búsqueda con la herramienta de exportación de exhibición de documentos electrónicos, es posible que reciba el siguiente error: este es un error transitorio, que normalmente se produce en la ubicación de `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` Azure Storage.
 
 ### <a name="resolution"></a>Solución
 
@@ -212,7 +212,7 @@ Este es un problema del lado cliente y, para corregirlo, intente los siguientes 
 
 1. Intenta usar otro cliente o máquina para descargar.
 
-2. Asegúrate de descargar en una unidad local.
+2. Asegúrese de descargar en una unidad local.
 
 3. Asegúrese de que el antivirus no se está ejecutando.
 

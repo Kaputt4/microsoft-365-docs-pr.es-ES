@@ -35,7 +35,7 @@ ms.locfileid: "49930575"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-> ¿Desea experimentar Con Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio o](https://aka.ms/mtp-trial-lab) ejecutar el proyecto piloto en [producción.](https://aka.ms/m365d-pilotplaybook)
+> ¿Desea experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio o](https://aka.ms/mtp-trial-lab) ejecutar el proyecto piloto en [producción.](https://aka.ms/m365d-pilotplaybook)
 >
 
 Microsoft 365 Defender es un conjunto unificado de defensa empresarial anterior y posterior a la infracción que coordina de forma nativa la detección, prevención, investigación y respuesta entre puntos de conexión, identidades, correo electrónico y aplicaciones para proporcionar protección integrada contra ataques sofisticados.
@@ -64,7 +64,7 @@ El conjunto de aplicaciones de Microsoft 365 Defender protege:
 - **Endpoints with Microsoft Defender for Endpoint** - Microsoft Defender for Endpoint is a unified endpoint platform for preventative protection, post-breach detection, automated investigation, and response. 
 - El correo electrónico y la colaboración con Microsoft Defender para **Office 365:** Defender para Office 365 protege su organización contra las amenazas malintencionadas que suponen los mensajes de correo electrónico, los vínculos (URL) y las herramientas de colaboración. 
 - Identidades con Microsoft Defender para Identidad y **Azure AD Identity Protection:** Microsoft Defender para Identidad usa señales de Active Directory para identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones internas malintencionadas dirigidas a su organización. 
-- **Aplicaciones con Microsoft Cloud App Security:** La seguridad de Microsoft Cloud App es una solución completa de SaaS cruzada que ofrece visibilidad profunda, controles de datos sólidos y protección contra amenazas mejorada para las aplicaciones en la nube. 
+- **Aplicaciones con Microsoft Cloud App Security:** Microsoft Cloud App Security es una solución completa entre SaaS que ofrece visibilidad profunda, controles de datos sólidos y protección contra amenazas mejorada para las aplicaciones en la nube. 
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
 
@@ -92,7 +92,7 @@ Las características entre productos de Microsoft 365 Defender incluyen:
 - **Búsqueda** de amenazas entre productos: los equipos de seguridad pueden aprovechar sus conocimientos organizativos únicos para buscar signos de peligro mediante la creación de sus propias consultas personalizadas sobre los datos sin procesar recopilados por los distintos productos de protección. Microsoft 365 Defender proporciona acceso basado en consultas a 30 días de señales históricas sin procesar y datos de alerta en el punto de conexión y Microsoft Defender para datos de Office 365. 
 
 
-## <a name="get-started"></a>Comenzar
+## <a name="get-started"></a>Introducción
 Se deben cumplir los requisitos de licencia de Microsoft 365 Defender para poder habilitar el servicio en el Centro de seguridad de Microsoft 365 [en security.microsoft.com](https://security.microsoft.com). Para obtener más información, lea:
 - [Requisitos de licencia](prerequisites.md#licensing-requirements)
 - [Activar Microsoft 365 Defender](mtp-enable.md)

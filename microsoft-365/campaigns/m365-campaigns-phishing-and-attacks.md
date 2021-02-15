@@ -65,7 +65,7 @@ Lea acerca de cinco tipos comunes de estafas en [Tratar con el abuso, la suplant
 
 Ayude a sus clientes a confiar en sus comunicaciones agregando una firma digital para demostrar que viene de usted. Vea [Mensajes seguros mediante una firma digital.](https://support.office.com/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6)
 
-## <a name="help-protect-your-campaign-from-online-threats"></a>Ayudar a proteger la campaña contra amenazas en línea
+## <a name="help-protect-your-campaign-from-online-threats"></a>Ayudar a proteger su campaña de amenazas en línea
 
 Descargue esta infografía con sugerencias para usted y los miembros de su equipo de campaña:
 

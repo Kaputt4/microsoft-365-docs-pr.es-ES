@@ -65,7 +65,7 @@ Escriba su dirección de  correo electrónico del trabajo en la pantalla Agregar
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
-Si tu organización protege los archivos de las aplicaciones, verás un cuadro de diálogo que indica que la organización está protegiendo ahora los datos de la aplicación y que necesitas reiniciar la aplicación para seguir usarla. Pulse **Aceptar** y cierre Outlook. 
+Si tu organización protege los archivos de las aplicaciones, verás un cuadro de diálogo que indica que la organización ahora protege los datos de la aplicación y necesitas reiniciar la aplicación para seguir usarla. Pulse **Aceptar** y cierre Outlook. 
   
 ![Captura de pantalla que muestra que su organización está protegiendo su aplicación de Outlook](../media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
   
@@ -85,7 +85,7 @@ Para comenzar la configuración en tu teléfono Android, ve a Play Store.
   
 ![On the Android home screen, tap Play Store](../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-Escriba Microsoft Outlook en el cuadro de búsqueda de Google Play y pulse **Instalar.** Una vez que Outlook haya terminado de instalarse, pulse **Abrir**.
+Escriba Microsoft Outlook en el cuadro de búsqueda de Google Play y pulse **Instalar**. Una vez que Outlook haya terminado de instalarse, pulse **Abrir**.
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
@@ -97,7 +97,7 @@ En el cuadro de diálogo que indica que debe instalar la aplicación Portal de e
   
 ![Tap on Go to store to get Intune Company Portal app](../media/a702d712-5622-45dd-a511-b1adaee63071.png)
   
-En Play Store, instala el Portal de empresa de Intune.
+En Play Store, instale el Portal de empresa de Intune.
   
 ![Screenshot that shows the install button for Intune Company Portal in Google Play Store](../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   

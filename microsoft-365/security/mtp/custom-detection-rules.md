@@ -48,7 +48,7 @@ Para administrar las detecciones personalizadas, debe tener asignado uno de esto
 Para administrar los permisos necesarios, un **administrador global** puede:
 
 - Asigne el rol **de administrador de seguridad** o operador **de** seguridad en el Centro de administración de [Microsoft 365](https://admin.microsoft.com/) en **Administración** de seguridad  >  **de roles.**
-- Compruebe la configuración de RBAC de Microsoft Defender para endpoint en el Centro [de seguridad de Microsoft Defender](https://securitycenter.windows.com/) en Roles **de** permisos  >  **de**  >  **configuración.** Seleccione el rol correspondiente para asignar el permiso **administrar la configuración de** seguridad.
+- Compruebe la configuración de RBAC de Microsoft Defender para Endpoint en el Centro [de seguridad de Microsoft Defender](https://securitycenter.windows.com/) en Roles **de** permisos  >  **de**  >  **configuración.** Seleccione el rol correspondiente para asignar el permiso **administrar la configuración de** seguridad.
 
 > [!NOTE]
 > Para administrar detecciones personalizadas,  los operadores de seguridad necesitarán el permiso administrar la configuración de seguridad en Microsoft Defender para Endpoint si RBAC está activado. 
@@ -66,7 +66,7 @@ En el Centro de seguridad de Microsoft 365, vaya a Búsqueda **avanzada** y sele
 Para crear una regla de detección personalizada, la consulta debe devolver las siguientes columnas:
 
 - `Timestamp`Se usa para establecer la marca de tiempo de las alertas generadas
-- `ReportId`Habilita las búsquedas de los registros originales
+- `ReportId`Habilita las búsquedas para los registros originales
 - Una de las siguientes columnas que identifican dispositivos, usuarios o buzones específicos:
     - `DeviceId`
     - `DeviceName`
@@ -116,7 +116,7 @@ Con la consulta en el editor de consultas, seleccione **Crear regla de detecció
 - **Acciones recomendadas:** acciones adicionales que los respondedores pueden realizar en respuesta a una alerta
 
 #### <a name="rule-frequency"></a>Frecuencia de regla
-Cuando guarda o edita una regla nueva, se ejecuta y comprueba si hay coincidencias de los últimos 30 días de datos. A continuación, la regla se ejecuta de nuevo a intervalos fijos, aplicando una duración de recuperación en función de la frecuencia que elija:
+Cuando guarda o edita una regla nueva, se ejecuta y comprueba si hay coincidencias de los últimos 30 días de datos. A continuación, la regla se ejecuta de nuevo a intervalos fijos, aplicando una duración de recuperación según la frecuencia que elija:
 
 - **Cada 24 horas:** se ejecuta cada 24 horas, comprobando los datos de los últimos 30 días
 - **Cada 12 horas:** se ejecuta cada 12 horas, comprobando los datos de las últimas 24 horas
@@ -145,10 +145,10 @@ Estas acciones se aplican a los dispositivos de la `DeviceId` columna de los res
 - **Restringir la ejecución de** la aplicación: establece restricciones en el dispositivo para permitir que solo se ejecuten los archivos firmados con un certificado emitido por Microsoft. [Más información sobre las restricciones de la aplicación con Microsoft Defender para puntos de conexión](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
 #### <a name="actions-on-files"></a>Acciones en archivos
-Cuando se selecciona, puede optar por aplicar la **acción** De poner en cuarentena archivo en los archivos de la `SHA1` , , o columna de los `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` resultados de la consulta. Esta acción elimina el archivo de su ubicación actual y coloca una copia en cuarentena.
+Cuando se selecciona, puede  aplicar la acción De poner en cuarentena archivo en los archivos de `SHA1` la , , o columna de los `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` resultados de la consulta. Esta acción elimina el archivo de su ubicación actual y coloca una copia en cuarentena.
 
 #### <a name="actions-on-users"></a>Acciones en los usuarios
-Cuando se selecciona, la acción Marcar **usuario** como comprometida se toma en los usuarios de la columna , o en la `AccountObjectId` columna de los `InitiatingProcessAccountObjectId` `RecipientObjectId` resultados de la consulta. Esta acción establece el nivel de riesgo de los usuarios en "alto" en Azure Active Directory, lo que desencadena las directivas de [protección de identidades correspondientes.](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+Cuando se selecciona, el usuario de marca **como acción** comprometida se toma en los usuarios de la columna , o en la columna de `AccountObjectId` los `InitiatingProcessAccountObjectId` `RecipientObjectId` resultados de la consulta. Esta acción establece el nivel de riesgo de los usuarios en "alto" en Azure Active Directory, lo que desencadena las directivas de [protección de identidades correspondientes.](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
 
 > [!NOTE]
 > La acción permitir o bloquear para reglas de detección personalizadas no se admite actualmente en Microsoft 365 Defender.
@@ -207,7 +207,7 @@ En la pantalla de detalles de la regla **(** detecciones personalizadas de búsq
 >[!TIP]
 >Para ver rápidamente la información y realizar una acción en un elemento de una tabla, use la columna de selección [&#10003;] a la izquierda de la tabla.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Introducción a las detecciones personalizadas](custom-detections-overview.md)
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Conozca el lenguaje de consulta de búsqueda avanzada](advanced-hunting-query-language.md)

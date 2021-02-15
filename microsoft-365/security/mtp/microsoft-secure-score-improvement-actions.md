@@ -43,7 +43,7 @@ Para ayudarle a obtener la información que necesita más rápidamente, las acci
 >[!NOTE]
 >En la versión reciente de Puntuación de seguridad de Microsoft, se publicó un modelo de puntuación mejorado que hizo que la puntuación de seguridad de Microsoft fuera temporalmente incompatible con la puntuación de seguridad de identidad y la API de Graph. [Ver detalles](microsoft-secure-score-whats-new.md)
 
-En la página de información general de puntuación de seguridad de Microsoft, vea cómo se dividen los puntos entre estos grupos y qué puntos están disponibles. También puede obtener una vista general de la puntuación total, la tendencia histórica de su puntuación segura con comparaciones de pruebas comparativas y acciones de mejora prioritarios que se pueden realizar para mejorar la puntuación.
+En la página de información general de puntuación de seguridad de Microsoft, vea cómo se dividen los puntos entre estos grupos y qué puntos están disponibles. También puede obtener una vista general de la puntuación total, la tendencia histórica de su puntuación segura con comparaciones de indicadores y acciones de mejora prioritarios que se pueden realizar para mejorar la puntuación.
 
 ![Página principal de puntuación segura](../../media/secure-score/secure-score-homepage-new.png)
 
@@ -51,7 +51,7 @@ En la página de información general de puntuación de seguridad de Microsoft, 
 
 Para comprobar la puntuación actual, vaya a la página de información general de Puntuación de seguridad de Microsoft y busque el icono que indica **La puntuación segura.** La puntuación se mostrará como un porcentaje, junto con el número de puntos que has logrado del total de puntos posibles.
 
-Además, si selecciona el botón **Incluir** junto a la puntuación, puede elegir diferentes vistas de la puntuación. Estas distintas vistas de puntuación se mostrarán en el gráfico en el icono de puntuación y en el gráfico de desglose de puntos.
+Además, si selecciona  el botón Incluir junto a la puntuación, puede elegir diferentes vistas de la puntuación. Estas distintas vistas de puntuación se mostrarán en el gráfico en el icono de puntuación y en el gráfico de desglose de puntos.
 
 Las siguientes son puntuaciones que puede agregar a su vista de la puntuación general para darle una imagen más completa de la puntuación general:
 
@@ -79,7 +79,7 @@ Cuando seleccionas una acción de mejora específica, aparece un control despleg
 
 Para completar la acción, tienes algunas opciones:
 
-- Seleccione **Administrar** para ir a la pantalla de configuración y realizar el cambio. A continuación, obtendrás los puntos que vale la acción, visibles en el control de salida. Los puntos suelen tardar unas 24 horas en actualizarse.
+- Selecciona **Administrar** para ir a la pantalla de configuración y realizar el cambio. A continuación, obtendrás los puntos que vale la acción, visibles en el control de salida. Los puntos suelen tardar unas 24 horas en actualizarse.
 
 - Seleccione **Compartir** para copiar el vínculo directo a la acción de mejora. También puede elegir la plataforma para compartir el vínculo, como correo electrónico, Microsoft Teams, Microsoft Planner o ServiceNow. Si selecciona ServiceNow, podrá crear un vale de cambio que estará visible en ServiceNow y en la página principal del Centro de seguridad de Microsoft 365. Para obtener más información, vea el Centro [de seguridad de Microsoft 365 y la integración de ServiceNow](tickets-security-center.md).
 
@@ -104,7 +104,7 @@ Las acciones de mejora tienen un estado "completado" una vez que se han logrado 
 
 ### <a name="assess-information-and-review-user-impact"></a>Evaluar la información y revisar el impacto del usuario
 
-La sección denominada **De un vistazo** te mostrará la categoría, los ataques contra los que puede protegerse y el producto.
+La sección denominada **De un vistazo** te mostrará la categoría, los ataques contra los que puede proteger y el producto.
 
 **El impacto en** el usuario es lo que experimentarán  los usuarios si se aprueba la acción de mejora y los usuarios afectados son las personas que se verán afectadas.
 

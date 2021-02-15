@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/29/2021
 ms.locfileid: "50054159"
 ---
-# <a name="search-in-the-microsoft-365-admin-center"></a>Buscar en el Centro de administración de Microsoft 365
+# <a name="search-in-the-microsoft-365-admin-center"></a>Búsqueda en el Centro de administración de Microsoft 365
 
 Como administrador de una organización de Microsoft 365, puede usar la búsqueda para buscar usuarios, realizar acciones, navegar a diferentes configuraciones y leer documentación. Con la nueva funcionalidad de búsqueda, la velocidad de búsqueda ha mejorado y ahora puede buscar desde todas las páginas del centro de administración. El cuadro de búsqueda se ha movido al área de banner en la parte superior del centro de administración. Puede usar el acceso **directo Alt+S** para usar la búsqueda desde cualquier página.
 
@@ -36,7 +36,7 @@ En las secciones siguientes se describen las distintas áreas y categorías del 
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser administrador para buscar en el centro de administración. Los resultados de la búsqueda tienen como ámbito los permisos de administrador que tiene el usuario que ha iniciado sesión. Por ejemplo, si el administrador de SharePoint no ve un área o una categoría en el centro de administración, no lo verán en la búsqueda.
+Debe ser administrador para buscar en el centro de administración. Los resultados de la búsqueda se encuentran en el ámbito de los permisos de administrador que tiene el usuario que ha iniciado sesión. Por ejemplo, si el administrador de SharePoint no ve un área o categoría en el centro de administración, no lo verá en la búsqueda.
 
 ## <a name="users"></a>Usuarios
 
@@ -75,9 +75,9 @@ Los resultados proporcionan una forma de navegar rápidamente a una página espe
 
 :::image type="content" source="../../media/search-for-navigation-mac.png" alt-text="Screenshot: Search results showing navigation path in the admin center":::
 
-## <a name="settings"></a>Configuraciones
+## <a name="settings"></a>Configuración
 
-Busque la configuración de nivel de aplicación compatible relacionada con su organización, los servicios a los que se suscribe y la configuración de seguridad y privacidad.
+Busque la configuración de nivel de aplicación compatible relacionada con su organización, los servicios a los que se suscriba y la configuración de seguridad y privacidad.
 
 :::image type="content" source="../../media/search-for-settings-mac.png" alt-text="Screenshot: Search results showing settings in the admin center":::
 
@@ -95,6 +95,6 @@ Una búsqueda de documentación proporciona documentación de ayuda relevante ba
 
 ## <a name="send-us-feedback"></a>Envíenos sus comentarios
 
-Use esta sección para enviar comentarios sobre la experiencia de búsqueda. No podemos responder a todos los comentarios, pero lo leemos todo y usamos sus comentarios para mejorar la experiencia de búsqueda. Asegúrate de proporcionar tantos detalles como puedas en tus comentarios.
+Use esta sección para enviar comentarios sobre la experiencia de búsqueda. No podemos responder a todos los comentarios, pero lo leymos todo y usamos sus comentarios para mejorar la experiencia de búsqueda. Asegúrate de proporcionar tantos detalles como puedas en tus comentarios.
 
 :::image type="content" source="../../media/search-feedback-mac.png" alt-text="Screenshot: Send feedback on search in the admin center":::

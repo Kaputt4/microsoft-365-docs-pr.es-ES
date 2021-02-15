@@ -50,7 +50,7 @@ Para continuar con un cambio manual, lea [el Paso 2: Comprar una nueva suscripci
 
 **¿Ya se ha comprado?** Si ya tiene una suscripción a la que quiere mover usuarios, omita este paso y vaya al paso [3:](#step-3-check-your-new-subscription-and-licenses) Compruebe la nueva suscripción y las licencias en este tema.
 
-OR
+O
 
 **Compre una nueva suscripción y licencias:** Siga los pasos descritos en Comprar otra suscripción de [Microsoft 365](../buy-another-subscription.md) para empresas para comprar una nueva suscripción.
 
@@ -61,7 +61,7 @@ Incluya una licencia para cada usuario que desee mover.
 
 1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 
-2. **Comprobar que ambas suscripciones están enumeradas y activas** La suscripción desde la que mueve los usuarios y la suscripción a la que va a mover los usuarios deben aparecer juntas. Si la nueva suscripción no está ahí cuando se comprueba por primera vez, inténtelo de nuevo más tarde. Comprueba que ambas suscripciones están activas. [La nueva suscripción no aparece o no está activa.](#the-new-subscription-isnt-listed-or-isnt-active)
+2. **Comprobar que ambas suscripciones están enumeradas y activas** La suscripción desde la que va a mover usuarios y la suscripción a la que mueve los usuarios deben aparecer juntas. Si la nueva suscripción no está ahí cuando se comprueba por primera vez, inténtelo de nuevo más tarde. Comprueba que ambas suscripciones están activas. [La nueva suscripción no aparece o no está activa.](#the-new-subscription-isnt-listed-or-isnt-active)
 
 3. **Compruebe que tiene suficientes licencias para cada usuario** Cada usuario necesita una licencia que coincida con su suscripción. Por lo tanto, si desea mover diez usuarios a Microsoft 365 Empresa Premium, deberá asegurarse de que hay diez licencias disponibles.
 
@@ -72,13 +72,13 @@ Incluya una licencia para cada usuario que desee mover.
 
 ### <a name="the-new-subscription-isnt-listed-or-isnt-active"></a>La nueva suscripción no aparece en la lista o no está activa
 
-- **Si compró dos suscripciones y** no aparecen en la lista aquí, es posible que se hayan comprado para distintas organizaciones (para dominios diferentes). Las suscripciones no pueden cruzar los límites de la organización.
+- **Si compró dos suscripciones y** no aparecen en la lista aquí, es posible que se hayan comprado para diferentes organizaciones (para dominios diferentes). Las suscripciones no pueden cruzar los límites de la organización.
 
 - **Si sabe que tiene una suscripción adicional** y no aparece aquí, o no está activa, llame al soporte técnico de [Microsoft.](../../admin/contact-support-for-business-products.md)
 
 ### <a name="what-about-the-old-licenses"></a>¿Qué pasa con las licencias antiguas?
 
-Las licencias de la suscripción actual se quitarán más adelante; Solo tendrá que pagar las licencias de usuario nuevas a partir de ese momento.
+Las licencias de la suscripción actual se quitarán más adelante; Solo tendrás que pagar las licencias de usuario nuevas a partir de ese momento.
 
 ## <a name="step-4-reassign-licenses"></a>Paso 4: Reasignar licencias
 
@@ -88,7 +88,7 @@ Las licencias de la suscripción actual se quitarán más adelante; Solo tendrá
 
 2. En la **página Usuarios activos,** seleccione el usuario al que desea asignar una licencia.
 
-3. En la **pestaña Licencias y aplicaciones,** expanda **Licencias,** seleccione las casillas de las licencias que desea asignar y, a continuación, **seleccione Guardar cambios.**
+3. En la **pestaña Licencias y** aplicaciones, expanda Licencias , seleccione las **casillas** de las licencias que desea asignar y, a continuación, **seleccione Guardar cambios.**
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>Reasignar licencias para varios usuarios a la vez
 
@@ -103,7 +103,7 @@ Las licencias de la suscripción actual se quitarán más adelante; Solo tendrá
 5. Cambie el botón de alternancia a **la posición On** de los productos que desea asignar a estos usuarios.
 
     > [!TIP]
-    > - Para limitar los servicios que están disponibles para  el usuario, cambie a la posición Desactivado para los servicios que desea quitar para ese usuario. Por ejemplo, si desea que el usuario tenga acceso a todos los servicios disponibles excepto Skype Empresarial Online, puede cambiar el botón de alternancia del servicio Skype Empresarial Online a la posición **Desactivado.**
+    > - Para limitar los servicios que están disponibles para  el usuario, cambie a la posición Desactivado para los servicios que desea quitar para ese usuario. Por ejemplo, si desea que el usuario tenga acceso a todos los servicios disponibles excepto Skype Empresarial Online, puede cambiar el botón de alternancia del servicio Skype Empresarial Online a la **posición** Desactivado.
     > - Cualquier asignación de licencia anterior para los usuarios seleccionados se quitará.
 
 6. En la parte inferior del panel **Reemplazar productos existentes**, seleccione **Reemplazar** \> **Cerrar**.

@@ -46,13 +46,13 @@ Puede solicitar hasta 50 llamadas por minuto o 1500 llamadas por hora. Cada mét
 
 Un código de respuesta HTTP indica que ha alcanzado una cuota, ya sea por número de solicitudes enviadas o por tiempo `429` de ejecución asignado. El cuerpo de la respuesta incluirá el tiempo hasta que se restablezca la cuota alcanzada.
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
 La API de incidentes requiere diferentes tipos de permisos para cada uno de sus métodos. Para obtener más información acerca de los permisos necesarios, vea el artículo del método respectivo.
 
 ## <a name="methods"></a>Methods
 
-Método | Tipo de valor devuelto | Descripción
+Método | Tipo de valor devuelto | Description
 -|-|-
 [Lista de Incidentes](api-list-incidents.md) | [Lista de](api-incident.md) incidentes | Obtener una lista de incidentes.
 [Incidente de actualización](api-update-incidents.md) | [Incidente](api-incident.md) | Actualizar un incidente específico.
@@ -63,11 +63,11 @@ Consulte los artículos de métodos respectivos para obtener más información s
 
 ## <a name="common-properties"></a>Propiedades comunes
 
-Propiedad | Tipo | Descripción
+Propiedad | Tipo | Description
 -|-|-
 incidentId | largo | Identificador único del incidente.
 redirectIncidentId | long que admite valores NULL | El identificador de incidente con el que se ha combinado el incidente actual.
-incidentName | string | Nombre del incidente.
+incidentName | string | El nombre del incidente.
 createdTime | DateTimeOffset | Fecha y hora (en UTC) en que se creó el incidente.
 lastUpdateTime | DateTimeOffset | Fecha y hora (en UTC) en que se actualizó por última vez el incidente.
 assignedTo | string | Propietario del incidente.
@@ -82,5 +82,5 @@ alerts | Lista de alertas | Lista de alertas relacionadas. Vea ejemplos en la [d
 
 - [Introducción a las API de Microsoft 365 Defender](api-overview.md)
 - [Información general sobre incidentes](incidents-overview.md)
-- [Enumerar la API de incidentes](api-list-incidents.md)
+- [ENUMERAR LA API de incidentes](api-list-incidents.md)
 - [ACTUALIZAR API de incidentes](api-update-incidents.md)

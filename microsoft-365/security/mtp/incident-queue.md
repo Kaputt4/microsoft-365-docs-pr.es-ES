@@ -39,7 +39,7 @@ ms.locfileid: "49929299"
 
 
 
-Microsoft 365 Defender aplica análisis de correlación y agrega todas las alertas e investigaciones relacionadas de diferentes productos en un incidente. Microsoft 365 Defender también desencadena alertas únicas en actividades que solo se pueden identificar como malintencionadas dada la visibilidad de un extremo a otro que Microsoft 365 Defender tiene en todo el conjunto de productos y el conjunto de productos. Esta vista ofrece a su analista de operaciones de seguridad la historia de ataques más amplia, lo que les ayuda a comprender mejor y tratar las amenazas complejas en toda la organización.
+Microsoft 365 Defender aplica análisis de correlación y agrega todas las alertas e investigaciones relacionadas de diferentes productos en un incidente. Microsoft 365 Defender también activa alertas únicas en actividades que solo se pueden identificar como malintencionadas dada la visibilidad de un extremo a otro que Microsoft 365 Defender tiene en toda la propiedad y conjunto de productos. Esta vista ofrece a su analista de operaciones de seguridad la historia de ataques más amplia, lo que les ayuda a comprender mejor y enfrentarse a amenazas complejas en toda la organización.
 
 
 La **cola de incidentes** muestra un conjunto de incidentes que se han marcado desde diferentes dispositivos, usuarios y buzones de correo. Le ayuda a ordenar los incidentes para asignar prioridades y crear una decisión de respuesta de ciberseguridad fundamentada.
@@ -84,7 +84,7 @@ Filtra por grupos de dispositivos definidos.
 Filtrar incidentes por el estado de la investigación automatizada. 
 
 ### <a name="multiple-categories"></a>Varias categorías 
-Puede elegir ver solo los incidentes que se han asignado a varias categorías y, por lo tanto, puede causar más daños. 
+Puede elegir ver solo los incidentes que se han asignado a varias categorías y, por lo tanto, pueden causar más daños. 
 
 ### <a name="multiple-service-sources"></a>Múltiples orígenes del servicio 
 Filtra para ver solo los incidentes que contienen alertas de diferentes orígenes (Microsoft Defender para Endpoint, Microsoft Cloud App Security, Microsoft Defender para Identity, Microsoft Defender para Office 365).
@@ -109,7 +109,7 @@ Una vez que haya determinado qué incidente tiene mayor prioridad, puede seguir 
 - [Investigar incidentes](investigate-incidents.md)
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)
 - [Administrar incidentes](manage-incidents.md)

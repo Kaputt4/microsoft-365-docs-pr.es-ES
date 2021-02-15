@@ -1,5 +1,5 @@
 ---
-title: Crear una carga para el entrenamiento de simulación de ataques
+title: Crear una carga útil para el entrenamiento de simulación de ataques
 ms.author: daniha
 author: danihalfin
 manager: dansimp
@@ -59,10 +59,10 @@ Agrega una descripción personalizada para describir el indicador y haz clic en 
 
 ## <a name="review-payload"></a>Revisar la carga
 
-Has terminado de compilar la carga útil. Ahora es el momento de revisar los detalles y ver una vista previa de la carga. La vista previa incluirá todos los indicadores que hayas creado. Puedes editar cada parte de la carga a partir de este paso. Una vez satisfecho, puedes **enviar la** carga.
+Ha terminado de compilar la carga. Ahora es el momento de revisar los detalles y ver una vista previa de la carga. La vista previa incluirá todos los indicadores que hayas creado. Puedes editar cada parte de la carga a partir de este paso. Una vez satisfecho, puedes **enviar la** carga.
 
 > [!IMPORTANT]
-> Las cargas que haya creado tendrán **tenant** como origen. Al seleccionar cargas, asegúrese de que no filtra el espacio **empresarial.**
+> Las cargas que haya creado tendrán **tenant** como origen. Al seleccionar cargas, asegúrese de no filtrar el espacio **empresarial.**
 
 ## <a name="related-links"></a>Vínculos relacionados
 

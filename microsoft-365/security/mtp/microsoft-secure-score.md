@@ -40,7 +40,7 @@ Puntuación segura ayuda a las organizaciones:
 
 * Informe sobre el estado actual de la posición de seguridad de la organización.
 * Mejorar su posición de seguridad proporcionando detectabilidad, visibilidad, orientación y control.  
-* Comparar con indicadores y establecer indicadores clave de rendimiento (KPI).
+* Compare con los indicadores y establezca indicadores clave de rendimiento (KPI).
 
 Las organizaciones obtienen acceso a visualizaciones sólidas de métricas y tendencias, integración con otros productos de Microsoft, comparación de puntuaciones con organizaciones similares y mucho más. La puntuación también puede reflejar cuándo las soluciones de terceros han abordado las acciones recomendadas.
 
@@ -90,7 +90,7 @@ Próximamente se ofrece una serie de recomendaciones para otros productos de seg
 
 La puntuación de seguridad de Microsoft ha actualizado las acciones de mejora para admitir los valores predeterminados de seguridad en [Azure Active Directory,](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)lo que facilita la protección de su organización con opciones de seguridad preconfiguradas para ataques comunes.
 
-Si activas los valores predeterminados de seguridad, se te concederán puntos completos para las siguientes acciones de mejora:
+Si activas los valores predeterminados de seguridad, se te concederán puntos completos por las siguientes acciones de mejora:
 
 - Asegurarse de que todos los usuarios pueden completar la autenticación multifactor para el acceso seguro (9 puntos)
 - Requerir MFA para roles administrativos (10 puntos)

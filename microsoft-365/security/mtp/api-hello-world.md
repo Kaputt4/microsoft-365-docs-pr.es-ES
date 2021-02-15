@@ -40,7 +40,7 @@ ms.locfileid: "49928383"
 
 ## <a name="get-incidents-using-a-simple-powershell-script"></a>Obtener incidentes con un script de PowerShell simple
 
-Este proyecto debe tardar entre 5 y 10 minutos. Esta estimación de tiempo incluye el registro de la aplicación y la aplicación del código desde el script de ejemplo de PowerShell.
+Este proyecto debe tardar entre 5 y 10 minutos. Esta estimación de tiempo incluye registrar la aplicación y aplicar el código desde el script de ejemplo de PowerShell.
 
 ### <a name="register-an-app-in-azure-active-directory"></a>Registrar una aplicación en Azure Active Directory
 
@@ -50,9 +50,9 @@ Este proyecto debe tardar entre 5 y 10 minutos. Esta estimación de tiempo inclu
 
    ![Imagen de Microsoft Azure y navegación al registro de aplicaciones](../../media/atp-azure-new-app2.png)
 
-3. En el formulario de registro, elija un nombre para la aplicación y, a continuación, **seleccione Registrar.** Seleccionar un URI de redireccionamiento es opcional. No necesitarás uno para completar este ejemplo.
+3. En el formulario de registro, elija un nombre para la aplicación y, a continuación, **seleccione Registrar**. Seleccionar un URI de redireccionamiento es opcional. No necesitarás uno para completar este ejemplo.
 
-4. En la página de la aplicación, seleccione Permisos de **API** Agregar API de permisos que mi organización usa >, escriba Protección contra amenazas de  >    >   **Microsoft** y seleccione **Protección contra amenazas de Microsoft.** La aplicación ahora puede acceder a Microsoft 365 Defender.
+4. En la página de la aplicación, seleccione Permisos de **API** Agregar API de permisos que mi organización usa >, escriba Protección contra amenazas de Microsoft y  >    >   seleccione Protección **contra amenazas de Microsoft.**  La aplicación ahora puede acceder a Microsoft 365 Defender.
 
    > [!TIP]
    > *La Protección contra amenazas* de Microsoft es un nombre anterior de Microsoft 365 Defender y no aparecerá en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para que aparezca.
@@ -71,13 +71,13 @@ Este proyecto debe tardar entre 5 y 10 minutos. Esta estimación de tiempo inclu
     > [!TIP]
     > Después de seleccionar **Agregar**, seleccione **copiar el valor secreto generado.** No podrá recuperar el valor secreto después de salir.
 
-    ![Imagen de crear clave de aplicación](../../media/webapp-create-key2.png)
+    ![Imagen de la clave de creación de la aplicación](../../media/webapp-create-key2.png)
 
 7. Registre el id. de aplicación y el id. de espacio empresarial en algún lugar seguro. Aparecen en Información **general en** la página de la aplicación.
 
    ![Imagen del id. de aplicación creado](../../media/app-and-tenant-ids.png)
 
-### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>Obtener un token con la aplicación y usar el token para acceder a la API
+### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>Obtener un token con la aplicación y usar el token para obtener acceso a la API
 
 Para obtener más información sobre los tokens de Azure Active Directory, vea el [tutorial de Azure AD.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 

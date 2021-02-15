@@ -1,6 +1,6 @@
 ---
 title: Casos de administración de riesgos de Insider
-description: Más información sobre los casos de administración de riesgos interno en Microsoft 365
+description: Más información sobre los casos de administración de riesgos de Insider en Microsoft 365
 keywords: Microsoft 365, administración de riesgos interno, administración de riesgos, cumplimiento
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -58,7 +58,7 @@ Use el control **de** búsqueda para buscar nombres de casos para texto específ
 
 ## <a name="filter-cases"></a>Filtrar casos
 
-Según el número y el tipo de directivas activas de administración de riesgos de Insider en su organización, revisar una gran cola de casos puede ser complicado. El uso de filtros de casos puede ayudar a los analistas e investigadores a ordenar los casos por varios atributos. Para filtrar alertas en el **panel Casos,** seleccione el control **Filtro.** Puede filtrar los casos por uno o varios atributos:
+Según el número y el tipo de directivas de administración de riesgos internas activas de la organización, revisar una gran cola de casos puede ser complicado. El uso de filtros de casos puede ayudar a los analistas e investigadores a ordenar los casos por varios atributos. Para filtrar alertas en el **panel Casos,** seleccione el control **Filtro.** Puede filtrar los casos por uno o varios atributos:
 
 - **Estado:** seleccione uno o más valores de estado para filtrar la lista de casos. Las opciones son *Active* y *Closed*.
 - **Caso de hora abierto:** seleccione las fechas de inicio y finalización para cuando se abrió el caso.
@@ -72,16 +72,16 @@ La selección de un caso abre las herramientas de administración de casos y per
 
 ### <a name="case-overview"></a>Información general sobre casos
 
-La **pestaña Información general sobre** casos resume la actividad de alerta y el historial de nivel de riesgo del caso. 
+La **pestaña Información general** sobre casos resume la actividad de alerta y el historial de nivel de riesgo del caso. 
 
-- El  widget Alertas muestra las coincidencias de directiva para el caso, incluido el estado de la alerta, la gravedad del riesgo de alerta y cuándo se detectó la alerta. 
+- El  widget Alertas muestra las coincidencias de directiva para el caso, incluido el estado de la alerta, la gravedad de riesgo de alerta y cuándo se detectó la alerta. 
 - El **gráfico de historial de nivel** de riesgo muestra el nivel de riesgo de usuario en los últimos 30 días. El gráfico de líneas permite a los analistas e investigadores ver rápidamente la tendencia en el riesgo general de los usuarios a lo largo del tiempo. 
 - El **widget Contenido de actividad** de riesgo resume los tipos de datos y contenido contenidos en las alertas agregadas al caso. Este widget ofrece una vista completa de todos los datos y el contenido establecido en riesgo en el caso.
 
 El **panel de detalles del** caso está disponible en todas las pestañas de administración de casos y resume los detalles del caso para analistas de riesgos e investigadores. Incluye las siguientes áreas:
 
 - **Nombre de** caso: nombre del caso, con el prefijo de un número de secuencia de caso generado automáticamente y el nombre del riesgo asociado con la plantilla de directiva con la que coincide la primera alerta confirmada. 
-- **Estado del** caso: el estado actual del caso, ya sea *Activo* o *Cerrado.*
+- **Estado del** caso: el estado actual del caso, *activo* o *cerrado.*
 - **Puntuación de riesgo del usuario:** el nivel de riesgo calculado actual del usuario para el caso. Esta puntuación se calcula cada 24 horas y usa las puntuaciones de riesgo de alerta de todas las alertas activas asociadas al usuario.
 - **Alertas confirmadas:** lista de alertas para el usuario confirmadas para el caso.
 - **Contenido relacionado:** lista de contenido, ordenada por tipos y orígenes de contenido. Por ejemplo, para el contenido de alertas de casos en SharePoint Online, es posible que vea nombres de archivo o carpetas que están asociados con la actividad de riesgo para alertas en el caso.
@@ -106,8 +106,8 @@ Use el control de búsqueda para buscar nombres de alerta para texto específico
 
 Use el control de filtro para filtrar alertas por varios atributos, incluidos:
 
-- **Estado:** seleccione uno o más valores de estado para filtrar la lista de alertas. Las opciones son *Confirmado,* *Descartado,* *Necesita revisión* y *Resuelto.*
-- **Gravedad: seleccione** uno o más niveles de gravedad de riesgo de alerta para filtrar la lista de alertas. Las opciones son *Alta,* *Media* y *Baja.*
+- **Estado:** seleccione uno o más valores de estado para filtrar la lista de alertas. Las opciones son *Confirmado,* *Descartado*, *Necesita revisión* y *Resuelto.*
+- **Gravedad:** seleccione uno o más niveles de gravedad de riesgo de alerta para filtrar la lista de alertas. Las opciones son *Alta,* *Media* y *Baja.*
 - **Hora detectada:** seleccione las fechas de inicio y finalización para cuando se creó la alerta.
 - **Directiva:** seleccione una o más directivas para filtrar las alertas generadas por las directivas seleccionadas.
 
@@ -120,10 +120,10 @@ La **pestaña Actividad del** usuario es una de las herramientas más eficaces p
 1. **Filtros de fecha y** hora de la ventana: de forma predeterminada, los últimos seis meses de alertas confirmadas en el caso se muestran en el gráfico de actividad de usuario. Puedes filtrar fácilmente la vista de gráfico con los controles deslizantes en ambos extremos de la ventana del gráfico o definiendo fechas de inicio y finalización específicas en el control de filtro de gráfico.
 2. **Actividad y detalles de alertas de** riesgo: las actividades de riesgo se muestran visualmente como burbujas de color en el gráfico actividad del usuario. Las burbujas se crean para diferentes categorías de riesgo y el tamaño de la burbuja es proporcional al número de actividades de riesgo para la categoría. Seleccione una burbuja para mostrar los detalles de cada actividad de riesgo. Entre los detalles se incluyen:
     - **Fecha** de la actividad de riesgo.
-    - La categoría **de actividad de riesgo**. Por ejemplo, correo electrónico con datos adjuntos *enviados fuera* de la organización o archivos descargados *de SharePoint Online*.
+    - La **categoría de actividad de riesgo**. Por ejemplo, correo electrónico con datos adjuntos *enviados fuera* de la organización o archivos descargados *de SharePoint Online*.
     - **Puntuación de** riesgo de la alerta. Esta puntuación es la puntuación numérica para el nivel de gravedad de riesgo de alerta.
     - Número de eventos asociados a la alerta. También están disponibles vínculos a cada archivo o correo electrónico asociado con la actividad de riesgo.
-3. **Leyenda de actividad de** riesgo: en la parte inferior del gráfico de actividad de usuario, una leyenda codificada por colores ayuda a determinar rápidamente la categoría de riesgo de cada alerta.
+3. **Leyenda de actividad de** riesgo: en la parte inferior del gráfico de actividad de usuario, una leyenda codificada por colores le ayuda a determinar rápidamente la categoría de riesgo de cada alerta.
 4. **Cronómetro de** actividad de riesgo: se muestra el crono de todas las alertas de riesgo asociadas con el caso, incluidos todos los detalles disponibles en la burbuja de alerta correspondiente.
 5. **Acciones de caso:** las opciones para resolver el caso se encuentran en la barra de herramientas de acciones de caso. Puede resolver un caso, enviar un aviso por correo electrónico al usuario o escalar el caso para una investigación de datos o usuarios.
 
@@ -146,7 +146,7 @@ El Explorador de contenido es una herramienta eficaz con características básic
 
 ### <a name="case-notes"></a>Notas del caso
 
-La **pestaña Notas del** caso es donde analistas e investigadores de riesgos comparten comentarios, comentarios e información sobre su trabajo en el caso. Las notas son adiciones permanentes a un caso y no se pueden editar ni eliminar después de guardar la nota. Cuando se crea un caso a partir  de una alerta, los comentarios introducidos en el cuadro de diálogo Confirmar alerta y crear casos de riesgo interno se agregan automáticamente como nota de caso.
+La **pestaña Notas del** caso en el caso es donde analistas de riesgos e investigadores comparten comentarios, comentarios e información sobre su trabajo para el caso. Las notas son adiciones permanentes a un caso y no se pueden editar ni eliminar después de guardar la nota. Cuando se crea un caso a partir  de una alerta, los comentarios introducidos en el cuadro de diálogo Confirmar alerta y crear casos de riesgo interno se agregan automáticamente como nota de caso.
 
 El panel de notas del caso muestra las notas del usuario que creó la nota y el tiempo transcurrido desde que se guardó la nota. Para buscar una palabra clave específica en  el campo de texto de nota de caso, use el botón Buscar en el panel de casos y escriba una palabra clave específica.
 
@@ -161,7 +161,7 @@ Para agregar una nota a un caso:
 
 La **pestaña Colaboradores** en el caso es donde los analistas de riesgos y los investigadores pueden agregar otros revisores al caso. De forma predeterminada, todos los usuarios asignados a los roles Analistas de administración de riesgos de **Insider** e Investigadores de administración de riesgos de **Insider** aparecen como colaboradores para cada caso activo y cerrado. Solo los usuarios asignados al rol Investigadores de administración de riesgos **de Insider** tienen permiso para ver archivos y mensajes en el Explorador de contenido.
 
-Se puede conceder acceso temporal a un caso agregando un usuario como colaborador. Los colaboradores tienen todo el control de administración de casos en el caso específico excepto:
+Se puede conceder acceso temporal a un caso agregando un usuario como colaborador. Los colaboradores tienen control de administración de casos en el caso específico excepto:
 
 - Permiso para confirmar o descartar alertas
 - Permiso para editar los colaboradores para casos
@@ -181,7 +181,7 @@ Los analistas e investigadores de riesgos pueden tomar medidas en un caso en uno
 
 ### <a name="send-email-notice"></a>Enviar aviso de correo electrónico
 
-En la mayoría de los casos, las acciones del usuario que crean alertas de riesgo interno son involuntarias o accidentales. Enviar un aviso al usuario por correo electrónico es un método eficaz para documentar la revisión de casos y la acción, y es un método para recordar a los usuarios las directivas corporativas o señalarles que actualicen el aprendizaje. Los avisos se generan a partir de plantillas de [aviso que se crean](insider-risk-management-notices.md) para la infraestructura de administración de riesgos de Insider.
+En la mayoría de los casos, las acciones de usuario que crean alertas de riesgo interno son involuntarias o accidentales. Enviar un aviso al usuario por correo electrónico es un método eficaz para documentar la revisión de casos y la acción, y es un método para recordar a los usuarios las directivas corporativas o señalarles que actualicen el aprendizaje. Los avisos se generan a [partir de plantillas de aviso que se crean](insider-risk-management-notices.md) para la infraestructura de administración de riesgos interno.
 
 Es importante recordar que enviar un aviso de correo electrónico a un usuario *_*_* no _ resuelve el caso como _Closed*. En algunos casos, es posible que desee dejar un caso abierto después de enviar un aviso a un usuario para buscar más actividades de riesgo sin abrir un nuevo caso. Si desea resolver un caso después de enviar un aviso, debe seleccionar **Resolver** caso como paso siguiente después de enviar un aviso.
 
@@ -193,7 +193,7 @@ Para enviar un aviso al usuario asignado a un caso:
 4. Revise los campos de aviso y actualice según corresponda. Los valores especificados aquí invalidarán los valores de la plantilla.
 5. Seleccione **Enviar** para enviar el aviso  al usuario o cancelar el cuadro de diálogo sin enviar el aviso al usuario. Todos los avisos enviados se agregan a la cola de notas del caso en el panel **de notas del** caso.
 
-### <a name="escalate-for-investigation"></a>Escalar para investigación
+### <a name="escalate-for-investigation"></a>Escalación para investigación
 
 Escalar el caso para la investigación de usuarios en situaciones en las que se necesite una revisión legal adicional para la actividad de riesgo del usuario. Esta escalación abre un nuevo caso de eDiscovery avanzado en su organización de Microsoft 365. EDiscovery avanzado proporciona un flujo de trabajo completo para conservar, recopilar, revisar, analizar y exportar contenido que responde a las investigaciones legales internas y externas de su organización. También permite al equipo legal administrar todo el flujo de trabajo de notificación de retención legal para comunicarse con los administradores implicados en un caso. La asignación de un revisor como administrador en un caso de eDiscovery avanzado creado a partir de un caso de administración de riesgos interno ayuda a su equipo legal a tomar las medidas adecuadas y administrar la conservación de contenido. Para obtener más información sobre los casos de eDiscovery avanzado, vea Información general sobre [eDiscovery avanzado en Microsoft 365.](overview-ediscovery-20.md)
 
@@ -226,15 +226,15 @@ Para obtener más información sobre los flujos de Power Automate para la admini
 
 ### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Ver o crear un equipo de Microsoft Teams para el caso
 
-Cuando la integración de Microsoft Teams para la administración de riesgos interno está habilitada en la configuración, se crea automáticamente un equipo de Microsoft Teams cada vez que se confirma una alerta y se crea un caso. Los analistas y los investigadores de riesgos pueden abrir rápidamente Microsoft Teams y navegar directamente al equipo en busca de un caso seleccionando Ver equipo de **Microsoft Teams** en la barra de herramientas de acciones del caso.
+Cuando se habilita la integración de Microsoft Teams para la administración de riesgos interno en la configuración, se crea automáticamente un equipo de Microsoft Teams cada vez que se confirma una alerta y se crea un caso. Los analistas y los investigadores de riesgos pueden abrir rápidamente Microsoft Teams y navegar directamente al equipo en busca de un caso seleccionando Ver equipo de **Microsoft Teams** en la barra de herramientas de acciones del caso.
 
 Para los casos abiertos antes de habilitar la integración de Microsoft Team, los investigadores de riesgos y analistas pueden crear un nuevo equipo de Microsoft Teams para un caso seleccionando Crear equipo de **Microsoft Teams** en la barra de herramientas de acciones del caso.
 
-Cuando se resuelve un caso, microsoft team asociado se archivará automáticamente (oculto y se volverá a solo lectura).
+Cuando se resuelve un caso, el equipo de Microsoft Team asociado se archivará automáticamente (oculto y se volverá de solo lectura).
 
-Para obtener más información sobre Microsoft Teams para la administración de riesgos interno, consulte Introducción a la configuración de administración [de riesgos de Insider.](insider-risk-management-settings.md#microsoft-teams-preview)
+Para obtener más información sobre Microsoft Teams para la administración de riesgos de insider, consulte Introducción a la configuración de administración [de riesgos de Insider.](insider-risk-management-settings.md#microsoft-teams-preview)
 
-### <a name="share-the-case"></a>Compartir el caso
+### <a name="share-the-case"></a>Compartir casos
 
 Compartir un caso de administración de riesgos interno permite a los investigadores de riesgos y analistas colaborar fácilmente con otras partes interesadas de cumplimiento de la organización. Puede compartir rápidamente un vínculo a un caso de administración de riesgos internos con partes interesadas externas desde el área de administración de casos. Para obtener acceso al caso de administración de riesgos interno desde el vínculo, las partes interesadas deben incluirse en cualquiera de los grupos de roles de administración de riesgos de Insider.
 
@@ -246,7 +246,7 @@ Están disponibles las siguientes opciones de uso compartido:
 - **ServiceNow:** después de configurar el conector ServiceNow de Microsoft 365 para su organización de Microsoft 365, puede compartir fácilmente un vínculo al caso, abrir un incidente o solicitar un cambio con su organización ServiceNow. Para compartir el caso con ServiceNow, seleccione **Compartir**  >  **ServiceNow** en la acción de caso. La integración de ServiceNow con la administración de riesgos de Insider incluye la siguiente información de casos y acciones:
     - **Nombre de la** tarea: el nombre de la nueva tarea ServiceNow.
     - **Descripción de** la tarea: descripción de la nueva tarea ServiceNow. Este campo de descripción editable incluye automáticamente un vínculo al caso de administración de riesgos de Insider.
-    - **Tipo de tarea:** tipo de tarea para la nueva tarea ServiceNow, ya sea *incidente* o *solicitud de cambio*.
+    - **Tipo de** tarea: el tipo de tarea para la nueva tarea ServiceNow, ya sea *incidente* o solicitud *de cambio*.
     - **Prioridad:** la prioridad de la nueva tarea ServiceNow, ya sea *Planeación,* Baja, *Moderada,* *Alta* o *Crítica.*
     - **Fecha de vencimiento:** la fecha solicitada para completar la tarea ServiceNow.
 

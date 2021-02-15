@@ -66,7 +66,7 @@ En este artículo se explica cómo:
 
 3. En el formulario, elija un nombre para la aplicación y, a continuación, **seleccione Registrar**.
 
-4. En la página de la aplicación, seleccione Permisos de **API** Agregar API de permisos que mi organización usa >, escriba Protección contra amenazas de Microsoft y  >    >   seleccione Protección **contra amenazas de Microsoft.**  La aplicación ahora puede acceder a Microsoft 365 Defender.
+4. En la página de la aplicación, seleccione Permisos de **API** Agregar API de permisos que mi organización usa >, escriba Protección contra amenazas de  >    >   **Microsoft** y seleccione **Protección contra amenazas de Microsoft.** La aplicación ahora puede acceder a Microsoft 365 Defender.
 
    > [!TIP]
    > *La Protección contra amenazas* de Microsoft es un nombre anterior de Microsoft 365 Defender y no aparecerá en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para que aparezca.
@@ -78,7 +78,7 @@ En este artículo se explica cómo:
    ![Imagen de acceso api y selección de API](../../media/request-api-permissions.PNG)
 
     > [!NOTE]
-    > Debe seleccionar los permisos relevantes para su escenario. *Leer todos los incidentes* es solo un ejemplo. Para determinar qué permiso necesita, consulte la **sección Permisos** de la API a la que desea llamar.
+    > Debe seleccionar los permisos relevantes para su escenario. *Leer todos los incidentes* es solo un ejemplo. Para determinar qué permiso necesita, consulte la **sección Permisos** en la API a la que desea llamar.
     >
     > Por ejemplo, para [ejecutar consultas avanzadas,](api-advanced-hunting.md)seleccione el permiso "Ejecutar consultas avanzadas"; para [aislar un dispositivo,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/isolate-machine)seleccione el permiso "Aislar máquina".
 
@@ -91,17 +91,17 @@ En este artículo se explica cómo:
     > [!TIP]
     > Después de seleccionar **Agregar**, seleccione **copiar el valor secreto generado.** No podrá recuperar el valor secreto después de salir.
 
-    ![Imagen de crear clave de aplicación](../../media/webapp-create-key2.png)
+    ![Imagen de la clave de creación de la aplicación](../../media/webapp-create-key2.png)
 
 8. Registre el id. de aplicación y el id. de espacio empresarial en algún lugar seguro. Aparecen en Información **general en** la página de la aplicación.
 
    ![Imagen del id. de aplicación creado](../../media/app-and-tenant-ids.png)
 
-9. Solo para partners de Microsoft [](https://docs.microsoft.com/microsoft-365/security/mtp/api-partner-access) **365 Defender:** siga estas instrucciones para el acceso de asociados a través de las API de Microsoft 365 Defender, establezca la aplicación como multiinquilino para que pueda estar disponible en todos los inquilinos una vez que reciba el consentimiento del administrador. El acceso de **partners es** necesario para aplicaciones de terceros, por ejemplo, si creas una aplicación que está pensada para ejecutarse en los inquilinos de varios clientes. No es **necesario si** crea un servicio que desea ejecutar solo en su espacio empresarial, como una aplicación para su propio uso que solo interactuará con sus propios datos. Para establecer la aplicación como multiinquilino:
+9. Solo para partners de Microsoft [](https://docs.microsoft.com/microsoft-365/security/mtp/api-partner-access) **365 Defender:** siga estas instrucciones para el acceso de partners a través de las API de Microsoft 365 Defender, establezca la aplicación como multiinquilino para que pueda estar disponible en todos los inquilinos una vez que reciba el consentimiento del administrador. El acceso de **partners es** necesario para aplicaciones de terceros, por ejemplo, si creas una aplicación que está pensada para ejecutarse en los inquilinos de varios clientes. No es **necesario si** crea un servicio que desea ejecutar solo en su espacio empresarial, como una aplicación para su propio uso que solo interactuará con sus propios datos. Para establecer la aplicación como multiinquilino:
 
     - Vaya a **Autenticación** y agregue https://portal.azure.com como uri de **redireccionamiento.**
 
-    - En la parte inferior de la página,  **en** Tipos de cuenta admitidos, seleccione las cuentas en cualquier consentimiento de aplicación de directorio de la organización para la aplicación multiinquilino.
+    - En la parte inferior de la página,  en **Tipos** de cuenta compatibles, seleccione las cuentas en cualquier consentimiento de aplicación de directorio de la organización para la aplicación multiinquilino.
 
     Dado que la aplicación interactúa con Microsoft 365 Defender en nombre de los usuarios, debe aprobarse para todos los inquilinos en los que se va a usar.
 

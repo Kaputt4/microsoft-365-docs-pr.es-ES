@@ -17,7 +17,7 @@ ID | Categoría | EMERGENCIA | Addresses | Puertos
 ID | Categoría | EMERGENCIA | Addresses | Puertos
 -- | -------------------- | --- | ------------------------------------------------------------------------------------------------------------------- | ----------------
 9  | Optimizar<BR>Obligatorio | Sí | `*.dps.mil, *.sharepoint-mil.us`<BR>`20.34.12.0/22, 104.212.48.0/23, 2001:489a:2204::/63, 2001:489a:2204:c00::/54` | **TCP:** 443, 80
-10  | Predeterminada<BR>Obligatorio | No | `*.wns.windows.com, g.live.com, odc.officeapps.live.com, officeclient.microsoft.com, oneclient.sfx.ms` | **TCP:** 443, 80
+10   | Predeterminada<BR>Obligatorio | No | `*.wns.windows.com, g.live.com, odc.officeapps.live.com, officeclient.microsoft.com, oneclient.sfx.ms` | **TCP:** 443, 80
 19 | Permitir<BR>Obligatorio | Sí | `*.od.apps.mil, od.apps.mil` | **TCP:** 443, 80
 20 | Predeterminada<BR>Obligatorio | No | `*.svc.ms, az741266.vo.msecnd.net, pf.pipe.aria.microsoft.com, spoprod-a.akamaihd.net, static.sharepointonline.com` | **TCP:** 443, 80
 
@@ -33,9 +33,9 @@ ID | Categoría | EMERGENCIA | Addresses | Puertos
 
 ID | Categoría | EMERGENCIA | Addresses | Puertos
 -- | ------------------- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------
-11 | Permitir<BR>Obligatorio | Sí | `*.dod.online.office365.us`<BR>`52.127.80.0/23, 52.181.164.39/32, 52.182.95.191/32` | **TCP:** 443
+11  | Permitir<BR>Obligatorio | Sí | `*.dod.online.office365.us`<BR>`52.127.80.0/23, 52.181.164.39/32, 52.182.95.191/32` | **TCP:** 443
 12  | Predeterminada<BR>Obligatorio | Sí | `*.dod.cdn.office365.us`<BR>`52.181.164.39/32, 52.182.95.191/32` | **TCP:** 443
-13 | Permitir<BR>Obligatorio | Sí | `*.gov.us.microsoftonline.com, adminwebservice.gov.us.microsoftonline.com, becws.gov.us.microsoftonline.com, dod-graph.microsoft.us, graph.microsoftazure.us, login.microsoftonline.us, provisioningapi.gov.us.microsoftonline.com`<BR>`20.140.232.0/23, 52.126.194.0/23` | **TCP:** 443
+13  | Permitir<BR>Obligatorio | Sí | `*.gov.us.microsoftonline.com, adminwebservice.gov.us.microsoftonline.com, becws.gov.us.microsoftonline.com, dod-graph.microsoft.us, graph.microsoftazure.us, login.microsoftonline.us, provisioningapi.gov.us.microsoftonline.com`<BR>`20.140.232.0/23, 52.126.194.0/23` | **TCP:** 443
 14  | Predeterminada<BR>Obligatorio | No | `*.msauth.net, *.msauthimages.us, *.msftauth.net, *.msftauthimages.us, clientconfig.microsoftonline-p.net, graph.windows.net, login.microsoftonline.com, login.microsoftonline-p.com, login.windows.net, loginex.microsoftonline.com, login-us.microsoftonline.com, mscrl.microsoft.com, nexus.microsoftonline-p.com, secure.aadcdn.microsoftonline-p.com` | **TCP:** 443
 15  | Permitir<BR>Obligatorio | Sí | `portal.apps.mil, reports.apps.mil, webshell.dodsuite.office365.us, www.ohome.apps.mil`<BR>`52.127.72.42/32, 52.127.76.42/32, 52.180.251.166/32, 52.181.24.112/32, 52.181.160.19/32, 52.181.160.113/32, 52.181.160.236/32, 52.182.24.200/32, 52.182.54.237/32, 52.182.92.132/32` | **TCP:** 443
 16  | Permitir<BR>Obligatorio | Sí | `*.osi.apps.mil, dod.loki.office365.us`<BR>`52.127.72.0/21, 2001:489a:2206::/48` | **TCP:** 443

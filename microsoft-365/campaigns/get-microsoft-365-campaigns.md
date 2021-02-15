@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Obtenga Microsoft 365 for Campaigns para que pueda proteger su campaña de las amenazas de ciberseguridad al correo electrónico, los datos y las comunicaciones.
+description: Obtenga Microsoft 365 para campañas para que pueda proteger su campaña de las amenazas de ciberseguridad al correo electrónico, los datos y las comunicaciones.
 ms.openlocfilehash: 5a7c0e0a31d6a456d405093f8da32ae557563d1f
 ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "50044647"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>Obtener Microsoft 365 para campañas
 
-Cualquier persona con Microsoft 365 Empresa Premium puede usar esta guía para configurar seguridad adicional para el correo electrónico y la colaboración. Sin embargo, las campañas y los partidos políticas de Los Estados Unidos son aptos para precios especiales para Microsoft 365. Actualmente, este precio especial está disponible para:
+Cualquier persona con Microsoft 365 Empresa Premium puede usar esta guía para configurar seguridad adicional para el correo electrónico y la colaboración. Sin embargo, las campañas y los partidos políticas de los Estados Unidos pueden optar a precios especiales para Microsoft 365. Actualmente, este precio especial está disponible para:
 
 - Partidos políticas de nivel nacional en Estados Unidos, Canadá y Nueva Zelanda
 - Campañas políticas nacionales o federales en Estados Unidos y Nueva Zelanda

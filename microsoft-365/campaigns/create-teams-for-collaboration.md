@@ -51,8 +51,8 @@ Por ejemplo, una empresa, una empresa legal o una práctica sanitaria podrían c
 
 Además, las campañas pueden crear los siguientes equipos para comunicarse y colaborar de forma segura:
 
-1. **Un equipo de clientes potenciales de campaña:** Configura esto como un equipo privado para que solo los miembros clave de la campaña puedan acceder a él y analizar posibles problemas confidenciales.
-2. **Un equipo de campaña general:** Esto es para que todos los usuarios puedan usar para las comunicaciones diarias y el trabajo. Los individuos, grupos o comités pueden configurar canales en este equipo para realizar su trabajo. Por ejemplo, los usuarios de planeación de eventos pueden configurar un canal para chatear y coordinar la logística de los eventos de campaña.
+1. **Un equipo de clientes potenciales de campaña:** Configura esto como un equipo privado para que solo los miembros clave de la campaña puedan acceder a él y tratar posibles problemas confidenciales.
+2. **Un equipo de campaña general:** Esto es para que todos los usuarios puedan usar para las comunicaciones diarias y el trabajo. Los individuos, grupos o comités pueden configurar canales en este equipo para realizar su trabajo. Por ejemplo, los usuarios de planeación de eventos pueden configurar un canal para chatear y coordinar la logística para los eventos de campaña.
 3. **Un equipo asociado:** Coordine con sus proveedores, socios o voluntarios sin permitirles entrar en nada confidencial.
 
 ![Diagrama de una ventana de Microsoft Teams con tres equipos independientes para permitir la comunicación segura y la colaboración dentro de una campaña](../media/m365-democracy-teams-collab.png)
@@ -72,7 +72,7 @@ Dentro de Microsoft Teams, puede encontrar:
 3. **Llamadas:** En algunos casos, si su organización la tiene configurada, puede llamar a cualquiera desde Microsoft Teams, incluso si no usa Microsoft Teams.
 4. **Actividad:** Ponerse al día con todos los mensajes no leídos, @mentions respuestas y mucho más.
 
-Usa el cuadro de comandos de la parte superior para buscar elementos o personas específicos, realizar acciones rápidas e iniciar aplicaciones.
+Usa el cuadro de comando de la parte superior para buscar elementos o personas específicos, realizar acciones rápidas e iniciar aplicaciones.
 
 ## <a name="set-it-up"></a>Configúrelo
 
@@ -92,4 +92,4 @@ Obtenga más información sobre Microsoft Teams en [la documentación técnica d
 
 ## <a name="admin-settings"></a>Configuración de administrador
 
-Debe ser administrador para crear un equipo en toda la organización. Para obtener más información, vea [¿Qué es un administrador en Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
+Debe ser administrador para crear un equipo de toda la organización. Para obtener más información, vea [¿Qué es un administrador en Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).

@@ -70,7 +70,7 @@ Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/
     
 6. Para agregar usuarios a la lista de distribución, vea Agregar un usuario o [contacto a un grupo de distribución.](../email/add-user-or-contact-to-distribution-list.md)
     
-Consulte cómo usar grupos en Outlook 2016 y Outlook en la Web en el tema Usar grupos de contactos (anteriormente listas [de distribución) en Outlook.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
+Consulte cómo usar grupos en Outlook 2016 y Outlook en la web en el tema Usar grupos de contactos (anteriormente listas [de distribución) de Outlook.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
   
 Consulte los [problemas del grupo de distribución](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) para obtener ayuda con los problemas de la lista de distribución. 
   

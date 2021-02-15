@@ -27,7 +27,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/22/2021
 ms.locfileid: "49932051"
 ---
-# <a name="microsoft-365-defender-data-security-and-privacy"></a>Seguridad y privacidad de los datos de Microsoft 365 Defender
+# <a name="microsoft-365-defender-data-security-and-privacy"></a>Privacidad y seguridad de datos de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

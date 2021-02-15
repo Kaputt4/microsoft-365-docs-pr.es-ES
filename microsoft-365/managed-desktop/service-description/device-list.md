@@ -1,5 +1,5 @@
 ---
-title: Dispositivos de escritorio administrado de Microsoft
+title: Dispositivos de Escritorio administrado de Microsoft
 description: En este artículo se enumeran las especificaciones de los dispositivos aprobados para escritorio administrado de Microsoft.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
@@ -15,7 +15,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/28/2021
 ms.locfileid: "50032662"
 ---
-# <a name="microsoft-managed-desktop-devices"></a>Dispositivos de escritorio administrado de Microsoft 
+# <a name="microsoft-managed-desktop-devices"></a>Dispositivos de Escritorio administrado de Microsoft 
 
 Escritorio administrado de Microsoft evalúa periódicamente los dispositivos que se incluirán en el servicio. En este artículo se enumeran los dispositivos específicos que se admiten actualmente. Para obtener una declaración más general de los requisitos de dispositivo, consulta [Requisitos de dispositivo.](device-requirements.md)
 
@@ -75,7 +75,7 @@ Los vínculos a los dispositivos aquí son solo para tu referencia. Si desea sol
 
 Además, el dispositivo también debe cumplir estos criterios:     
 
-- Si aparece una SKU específica en los requisitos del dispositivo, asegúrate de usarla cuando realices el pedido. Al hacerlo, se garantiza que los dispositivos cumplan con los requisitos de software de Escritorio administrado de Microsoft. 
+- Si una SKU específica aparece en los requisitos del dispositivo, asegúrate de usarla cuando realices el pedido. Al hacerlo, se garantiza que los dispositivos cumplan con los requisitos de software de Escritorio administrado de Microsoft. 
 - No se ha completado la experiencia de primera ejecución de Windows.
 - Estar registrado con escritorio administrado de Microsoft mediante la [característica registro de](https://aka.ms/mmddrhelp) dispositivos
 

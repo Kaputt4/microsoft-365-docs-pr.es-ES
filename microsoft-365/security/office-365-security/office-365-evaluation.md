@@ -42,7 +42,7 @@ Si aún no tiene una licencia compatible con Microsoft Defender para Office 365,
 
 Defender para Office 365 en modo de evaluación crea directivas de correo electrónico de Defender para Office 365 que registra veredictos, como malware, pero no actúan en mensajes. No es necesario cambiar la configuración del registro MX.
 
-Con el modo de evaluación, [los datos](atp-safe-attachments.md)adjuntos seguros, [los](atp-safe-links.md)vínculos seguros y las directivas de suplantación contra [suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) de identidad se establecen en su nombre. Todas las directivas de Defender para Office 365 se crean en modo de no aplicación en segundo plano y no son visibles para usted.
+Con el modo de evaluación, [las directivas de](atp-safe-attachments.md)suplantación de identidad ( Safe Attachments , [Vínculos](atp-safe-links.md)seguros y [suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) de identidad) están configuradas en su nombre. Todas las directivas de Defender para Office 365 se crean en modo de no aplicación en segundo plano y no son visibles para usted.
 
 Como parte de la configuración, el modo de evaluación también configura el [filtrado mejorado para conectores.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Mejora la precisión del filtrado al conservar la dirección IP y la información del remitente, que de lo contrario se pierden cuando el correo pasa a través de una puerta de enlace de seguridad de correo electrónico (ESG) delante de Defender para Office 365. El filtrado mejorado también mejora la precisión de filtrado de las directivas contra correo electrónico no deseado y contra suplantación de identidad de Exchange Online Protection (EOP).
 
@@ -83,11 +83,11 @@ Tendrá una ventana de 30 días con la evaluación para supervisar e informar so
 Los roles de Exchange Online son necesarios para configurar Defender para Office 365 en modo de evaluación.
 
 - [Más información sobre los permisos en Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
-- [Obtenga información sobre cómo asignar roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
+- [Más información sobre la asignación de roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
 
 Se necesitan los siguientes roles:
 
-|Task|Role|
+|Task|Función|
 |---|---|
 |Obtener una prueba gratuita o comprar Microsoft Defender para Office 365 (Plan 2)|Rol de administrador de facturación O rol de administrador global|
 |Crear directiva de evaluación|Rol Dominios remotos y aceptados; Rol de administrador de seguridad|
@@ -107,7 +107,7 @@ El filtrado mejorado para los conectores permitirá a los inquilinos usar la pro
 
 Las direcciones URL se detonarán durante el flujo de correo. Si no desea que se detonan direcciones URL específicas, administre la lista de direcciones URL permitidas correctamente. Consulte [Administrar la lista de permitidos o bloqueados del espacio empresarial](tenant-allow-block-list.md) para obtener más información.
 
-Los vínculos url de los cuerpos de mensajes de correo electrónico no se encapsulan para reducir el impacto del cliente.
+Los vínculos url de los cuerpos de los mensajes de correo electrónico no se encapsulan para reducir el impacto en el cliente.
 
 ### <a name="email-routing"></a>Enrutamiento de correo electrónico
 
@@ -158,7 +158,7 @@ El informe de evaluación de Microsoft Defender para Office 365 se genera una ve
 
 ### <a name="exchange-rules-optional"></a>Reglas de Exchange (opcional)
 
-Si tiene una puerta de enlace existente, al habilitar el modo de evaluación se activará el filtrado mejorado para los conectores. Esto mejora la precisión de filtrado modificando la dirección IP del remitente entrante. Esto puede cambiar los veredictos de filtro y, si no omite Exchange Online Protection, esto puede alterar la entrega de determinados mensajes. En este caso, es posible que desee omitir temporalmente el filtrado para analizar el impacto. Para omitir, vaya al Centro de administración de Exchange y cree una directiva de SCL -1 (si aún no la tiene). Para obtener más información sobre los componentes de regla y cómo funcionan, consulte Reglas de flujo de correo (reglas de transporte) en Exchange Online.
+Si tiene una puerta de enlace existente, al habilitar el modo de evaluación se activará el filtrado mejorado para los conectores. Esto mejora la precisión de filtrado modificando la dirección IP del remitente entrante. Esto puede cambiar los veredictos de filtro y, si no omite Exchange Online Protection, esto puede alterar la entrega de determinados mensajes. En este caso, es posible que desee omitir temporalmente el filtrado para analizar el impacto. Para omitir, vaya al Centro de administración de Exchange y cree una directiva de SCL -1 (si aún no tiene una). Para obtener más información sobre los componentes de regla y cómo funcionan, consulte Reglas de flujo de correo (reglas de transporte) en Exchange Online.
 
 ## <a name="evaluate-capabilities"></a>Funcionalidades de evaluación
 

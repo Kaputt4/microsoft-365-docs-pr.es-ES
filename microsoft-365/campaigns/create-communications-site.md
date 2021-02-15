@@ -39,7 +39,7 @@ Una forma excelente de comunicar prioridades, compartir documentos de estrategia
 Incluya los siguientes elementos en el sitio de comunicaciones:
 
 1. Agrega el logotipo y los colores como una imagen de encabezado y un tema.
-2. Guía con su estrategia, mensaje, documentos importantes, un directorio y preguntas más frecuentes en un **elemento web hero**.
+2. Dirigir con su estrategia, mensaje, documentos importantes, un directorio y preguntas más frecuentes en un **elemento web hero**.
 3. Incluir una declaración de presidente ejecutivo o candidato para el equipo en un **elemento web de texto**.
 4. Agregue eventos a un **elemento web de eventos** para que todos puedan ver lo que está sucediendo.
 5. Agregue fotos que los usuarios pueden usar o compartir en un elemento **web de la galería de imágenes.**
@@ -57,7 +57,7 @@ Los siguientes vínculos para PowerPoint y PDF se pueden descargar e imprimir en
 ## <a name="set-it-up"></a>Configúrelo
 
 1. Inicie sesión en https://Office.com.
-2. En la esquina superior izquierda de la página, seleccione el icono del iniciador de aplicaciones y, a continuación, seleccione el icono **de SharePoint.** Si no ve el icono de **SharePoint,** haga clic en el icono Sitios o en Todos **si** SharePoint no está visible. 
+2. En la esquina superior izquierda de la página, seleccione el icono del iniciador de aplicaciones y, a continuación, seleccione el icono **de SharePoint.** Si no ve el icono de **SharePoint,**  haga clic en el icono Sitios o En todos si SharePoint no está visible. 
 3. En la parte superior de la página principal de SharePoint, haga clic en + Crear **sitio** y elija la **opción Sitio de** comunicación.
 
 Obtenga información [sobre los sitios de comunicaciones](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) y cómo crear un sitio de comunicación en [SharePoint Online.](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)

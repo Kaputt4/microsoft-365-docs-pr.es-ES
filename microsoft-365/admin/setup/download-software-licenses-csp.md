@@ -1,5 +1,5 @@
 ---
-title: Descargar claves de licencia de producto y software perpetuas compradas a través del programa Proveedor de soluciones en la nube (CSP)
+title: Descargar claves de licencia de software y producto perpetuas compradas a través del programa Proveedor de soluciones en la nube (CSP)
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -37,7 +37,7 @@ Debe ser administrador global para realizar los pasos de este artículo. Para ob
 
 1. En el Centro de administración de Microsoft 365, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la **pestaña** Productos, en la **sección Software,** seleccione el software que desea descargar.
-3. En la página de detalles de la suscripción, en la sección Descargas **& claves,** elija la versión del **producto,** el idioma y el tipo de archivo & cpu y, **a** continuación, **seleccione Descargar**.
+3. En la página de detalles de la suscripción, en la sección Descargas **& claves,** elija la versión del **producto,** el idioma y el tipo de archivo & de CPU y, **a** continuación, **seleccione Descargar**.
 4. Para descargar la clave, seleccione **Copiar clave en el Portapapeles.**
 5. En el panel derecho, seleccione **Copiar** y, a continuación, cierre el panel.
 6. Pegue la clave en un archivo en una ubicación segura y, a continuación, escriba la clave como se indica durante la instalación del software. La clave es necesaria para activar el software descargado.

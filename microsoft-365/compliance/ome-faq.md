@@ -68,7 +68,7 @@ No. OME y la opción de proporcionar y controlar sus propias claves de cifrado, 
 
 Las nuevas capacidades para el cifrado de mensajes de Office 365 son una evolución de las soluciones existentes de IRM y OME heredadas. En la tabla siguiente se proporcionan más detalles.
   
-**Comparación de las funcionalidades OME, IRM y nuevas de OME heredadas**
+**Comparación de funcionalidades OME, IRM y nuevas de OME heredadas**
 
 | Funcionalidad | Versiones anteriores de OME | IRM | Nuevas funcionalidades de OME |
 |:-----|:-----|:-----|:-----|
@@ -92,7 +92,7 @@ No. Si usa Exchange Online con el servicio Active Directory Rights Management (A
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>Mi organización tiene una implementación híbrida de Exchange. ¿Puedo usar esta característica?
 
-Los usuarios locales pueden enviar correo cifrado mediante reglas de flujo de correo de Exchange Online. Para ello, debe enrutar el correo electrónico a través de Exchange Online. Para obtener más información, vea la parte 2: Configurar el correo para que fluya desde el servidor [de correo electrónico a Microsoft 365.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)
+Los usuarios locales pueden enviar correo cifrado mediante reglas de flujo de correo de Exchange Online. Para ello, debe enrutar el correo electrónico a través de Exchange Online. Para obtener más información, vea la parte 2: Configurar el correo para que fluya desde el servidor de correo electrónico [a Microsoft 365.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>¿Qué cliente de correo electrónico necesito usar para crear un mensaje cifrado de OME? ¿Qué aplicaciones se admiten para enviar mensajes protegidos?
 
@@ -118,11 +118,11 @@ Si se admite un formato de archivo, como un archivo de Word, Excel o PowerPoint,
   
 ## <a name="are-pdf-file-attachments-supported"></a>¿Se admiten los datos adjuntos de archivos PDF?
 
-La respuesta corta es sí. El cifrado de PDF le permite proteger documentos PDF confidenciales a través de una comunicación segura o una colaboración segura. Al enviar correo electrónico, el servicio office 365 cifra los datos adjuntos de los archivos PDF, no el cliente de Outlook.
+La respuesta breve es sí. El cifrado de PDF le permite proteger documentos PDF confidenciales a través de una comunicación segura o una colaboración segura. Al enviar correo electrónico, el servicio Office 365 cifra los datos adjuntos de archivos PDF, no el cliente de Outlook.
 
 Para Outlook en la Web, Outlook para iOS y Outlook para Android, puede cifrar los archivos PDF que envíe sin pasos adicionales. Estos clientes admiten de forma nativa el cifrado pdf.
 
-El escritorio de Outlook no admite de forma nativa el cifrado de datos adjuntos de archivos PDF. En su lugar, deberá configurar las reglas de flujo de correo de Exchange o DLP para aplicar primero el cifrado a los datos adjuntos de PDF. Al enviar correo desde el escritorio de Outlook con datos adjuntos en PDF, el cliente envía primero el mensaje con los datos adjuntos al servicio. Cuando el servicio recibe el archivo, el servicio aplica la protección OME de la directiva de prevención de pérdida de datos (DLP) o regla de flujo de correo en Exchange Online. A continuación, Exchange Online envía el mensaje con los datos adjuntos del archivo PDF protegido.
+El escritorio de Outlook no admite de forma nativa el cifrado de datos adjuntos de archivos PDF. En su lugar, tendrá que configurar primero las reglas de flujo de correo de Exchange o DLP para aplicar el cifrado a los datos adjuntos de PDF. Al enviar correo desde el escritorio de Outlook con datos adjuntos en PDF, el cliente envía primero el mensaje con los datos adjuntos al servicio. Cuando el servicio recibe el archivo, el servicio aplica la protección OME de la directiva de prevención de pérdida de datos (DLP) o regla de flujo de correo en Exchange Online. A continuación, Exchange Online envía el mensaje con los datos adjuntos del archivo PDF protegido.
 
 Para habilitar el cifrado de datos adjuntos en PDF, ejecute el siguiente comando en [Exchange Online PowerShell:](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
 
@@ -180,7 +180,7 @@ Los administradores pueden configurar una regla de flujo de correo para quitar e
 
 No en este momento.
 
-## <a name="can-i-send-as-a-shared-mailbox-and-encrypt-emails"></a>¿Puedo enviar como un buzón compartido y cifrar correos electrónicos?
+## <a name="can-i-send-as-a-shared-mailbox-and-encrypt-emails"></a>¿Puedo enviar como un buzón compartido y cifrar mensajes de correo electrónico?
 
 Cuando alguien envía un mensaje de correo electrónico que coincide con una regla de flujo de correo de cifrado, el mensaje se cifra antes de que se envíe.
 
@@ -207,19 +207,19 @@ Actualmente hay dos limitaciones conocidas:
 
 - No puede abrir datos adjuntos a los correos electrónicos que recibe en dispositivos móviles mediante Outlook Mobile.
 
-- No se admite la asignación a través de un grupo de seguridad habilitado para correo electrónico. Solo se admite el acceso proporcionado por la asignación directa de usuarios al buzón compartido y que la asignación automática está habilitada para Exchange Online. La autoapping está habilitada de forma predeterminada para Exchange Online.
+- No se admite la asignación a través de un grupo de seguridad habilitado para correo electrónico. Solo se admite el acceso proporcionado por la asignación directa de usuarios al buzón compartido y que la asignación automática está habilitada para Exchange Online. La automapping está habilitada de forma predeterminada para Exchange Online.
 
 **Para asignar un usuario al buzón compartido**
 
 1. [Conéctese a Exchange Online con PowerShell remoto.](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx)
 
-2. Ejecute el Add-MailboxPermission cmdlet con el parámetro Automapping. En este ejemplo se conceden permisos de acceso completo a Ayla a un buzón de soporte técnico.
+2. Ejecute el cmdlet Add-MailboxPermission con el parámetro Automapping. En este ejemplo se conceden permisos de acceso completo a Ayla a un buzón de soporte técnico.
 
    ```powershell
    Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
    ```
    
- ## <a name="can-i-open-encrypted-messages-sent-to-another-users-mailbox-with-fullaccess"></a>¿Puedo abrir los mensajes cifrados enviados al buzón de otro usuario con Fullaccess?
+ ## <a name="can-i-open-encrypted-messages-sent-to-another-users-mailbox-with-fullaccess"></a>¿Puedo abrir mensajes cifrados enviados al buzón de otro usuario con Fullaccess?
 
 Los usuarios pueden abrir mensajes cifrados siempre que se les proporciona acceso directo y la automapping está activada. No se permite el acceso si el acceso se concede a través de un grupo de seguridad habilitado para correo electrónico.
 

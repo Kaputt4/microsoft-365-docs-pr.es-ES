@@ -80,7 +80,7 @@ Si ha quitado licencias de una suscripción, lo siguiente que debe hacer es elim
 
 1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 2. En la **página Suscripciones,** seleccione la suscripción a la que desea comprar o quitar licencias y, a continuación, seleccione **Agregar o quitar licencias.** [¿Qué ocurre si no veo los botones Comprar licencias o Quitar licencias?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. En el **cuadro Total de** licencias, escriba el número total de licencias que desea para esta suscripción y, a continuación, seleccione **Enviar** \> **cerrar.** Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105. Si desea quitar 5 de ellos, escriba 95.
+3. En el **cuadro Total de** licencias, escriba el número total de licencias que desea para esta suscripción y, a continuación, seleccione **Enviar** \> **cerrar**. Por ejemplo, si tiene 100 licencias y necesita agregar 5 más, escriba 105. Si desea quitar 5 de ellos, escriba 95.
 
 ::: moniker-end
 
@@ -91,9 +91,9 @@ Si ha quitado licencias de una suscripción, lo siguiente que debe hacer es elim
 
 En esta tabla se describen los motivos por los que los **botones** Comprar licencias o Quitar licencias no están disponibles y las **posibles** soluciones.
 
-|Reason  |Descripción  |Solución  |
+|Reason  |Description  |Solución  |
 |---------|---------|---------|
-|Hay pendiente una comprobación de crédito. |Si hay una comprobación de crédito pendiente, no podrá comprar ni quitar licencias hasta que se complete la comprobación de crédito.  | Vuelva a consultar más adelante para ver si la comprobación de crédito se ha completado. Las comprobaciones de crédito suelen tardar unos dos días laborables.<br/>Una vez completada la comprobación de crédito, debería ver los **botones** Comprar licencias y **Quitar** licencias. |
+|Hay pendiente una comprobación de crédito. |Si hay una comprobación de crédito pendiente, no podrá comprar ni quitar licencias hasta que se complete la comprobación de crédito.  | Vuelva a comprobarlo más tarde para ver si la comprobación de crédito se ha completado. Las comprobaciones de crédito suelen tardar unos dos días laborables.<br/>Una vez completada la comprobación de crédito, debería ver los **botones** Comprar licencias y **Quitar** licencias. |
 |Ha activado la suscripción mediante una clave de producto.| Si la suscripción se compró y activó con una clave de producto  de 25 caracteres, verá la palabra "Prepago" en la columna Canal de compra de la página **Sus** productos.  |Vea [Agregar licencias a una suscripción pagada por usar una clave de producto.](add-licenses-using-product-key.md) |
 |Ha comprado la suscripción a través de un revendedor.| Verá la palabra "Revendedor" en la **columna Canal de** compra de la página **Sus** productos. | Si la suscripción se compró a través de un partner de proveedor de soluciones en la nube (CSP), ponte en contacto con tu partner de CSP para comprar más licencias.        |
 |Tiene una suscripción de prueba. | Para ver las suscripciones de prueba, seleccione el botón de filtro y, a continuación, **elija Prueba.** | En primer lugar, compre su suscripción de prueba y, a continuación, puede comprar más licencias.|
@@ -107,7 +107,7 @@ Si ha pagado por adelantado su suscripción con una clave de producto, puede agr
 ## <a name="how-does-buying-or-removing-licenses-affect-my-billing-statements"></a>¿Cómo afecta la compra o eliminación de licencias a mis extractos de facturación?
 
 - Las licencias agregadas en mitad del período de facturación aparecen en la siguiente factura. Si paga anualmente, se le factura en un mes por estos cambios.
-- En el siguiente extracto de facturación, se deduce el cargo anterior para el número original de licencias. Agregamos un cargo prorrateado para el período de tiempo con el número original de licencias y agregamos un cargo para el nuevo recuento de licencias. También hay un cargo para el recuento de licencias actual durante el resto del período de facturación.
+- En el siguiente extracto de facturación, se resta el cargo anterior para el número original de licencias. Agregamos un cargo prorrateado para el período de tiempo con el número original de licencias y agregamos un cargo para el nuevo recuento de licencias. También hay un cargo para el recuento de licencias actual durante el resto del período de facturación.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

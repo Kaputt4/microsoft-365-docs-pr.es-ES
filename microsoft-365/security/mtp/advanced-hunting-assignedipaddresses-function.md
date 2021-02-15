@@ -1,7 +1,7 @@
 ---
 title: Función AssignedIPAddresses() en la búsqueda avanzada para Microsoft 365 Defender
 description: Obtenga información sobre cómo usar la función AssignedIPAddresses() para obtener las direcciones IP más recientes asignadas a un dispositivo
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, FileProfile, perfil de archivo, función, enriquecimiento
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, FileProfile, perfil de archivo, función, enriquecimiento
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -43,7 +43,7 @@ Esta función devuelve una tabla con las siguientes columnas:
 |------------|-------------|-------------|
 | `Timestamp` | datetime | Última hora en la que se observó el dispositivo con la dirección IP |
 | `IPAddress` | string | Dirección IP usada por el dispositivo |
-| `IPType` | string | Indica si la dirección IP es una dirección pública o privada. |
+| `IPType` | string | Indica si la dirección IP es una dirección pública o privada |
 | `NetworkAdapterType` | entero | Tipo de adaptador de red usado por el dispositivo al que se ha asignado la dirección IP. Para los valores posibles, consulte [esta enumeración](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) |
 | `ConnectedNetworks` | entero | Redes a las que está conectado el adaptador con la dirección IP asignada. Cada matriz JSON contiene el nombre de red, la categoría (público, privado o dominio), una descripción y una marca que indica si está conectada públicamente a Internet. |
 
@@ -55,7 +55,7 @@ AssignedIPAddresses(x, y)
 
 ## <a name="arguments"></a>Argumentos
 
-- **x** o `DeviceId` valor que identifica el `DeviceName` dispositivo
+- **x:** `DeviceId` o valor que identifica el `DeviceName` dispositivo
 - **y:** valor (fecha y hora) que indica a la función que debe obtener las direcciones IP asignadas más `Timestamp` recientes de una hora específica. Si no se especifica, la función devuelve las direcciones IP más recientes.
 
 ## <a name="examples"></a>Ejemplos

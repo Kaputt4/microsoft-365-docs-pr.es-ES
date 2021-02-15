@@ -63,7 +63,7 @@ Para crear cuentas de administrador adicionales:
 
 ## <a name="create-an-emergency-admin-account"></a>Crear una cuenta de administrador de emergencia
 
-También debes crear una cuenta de copia de seguridad que no esté configurada con la autenticación multifactor (MFA) para que no te bloquees accidentalmente (por ejemplo, si pierdes el teléfono que estás usando como una segunda forma de verificación). Asegúrese de que la contraseña de esta cuenta es una frase o al menos 16 caracteres de longitud. Esto se conoce a menudo como una "cuenta de break-glass".
+También debe crear una cuenta de copia de seguridad que no esté configurada con la autenticación multifactor (MFA) para que no se bloquee accidentalmente (por ejemplo, si pierde el teléfono que está usando como una segunda forma de comprobación). Asegúrese de que la contraseña de esta cuenta es una frase o al menos 16 caracteres de longitud. Esto se conoce a menudo como una "cuenta de break-glass".
 
 ## <a name="create-a-user-account-for-yourself"></a>Crear una cuenta de usuario para usted mismo
 

@@ -57,11 +57,11 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `IPAddress` | string | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas |
 | `IsAnonymousProxy` | string | Indica si la dirección IP pertenece a un proxy anónimo conocido |
 | `CountryCode` | string | Código de dos letras que indica el país donde se geolocalización la dirección IP del cliente |
-| `City` | string | Ciudad en la que se geolocalización de la dirección IP del cliente |
+| `City` | string | Ciudad donde la dirección IP del cliente está geolocalada |
 | `Isp` | string | Proveedor de servicios de Internet (ISP) asociado a la dirección IP |
 | `UserAgent` | string | Información de agente de usuario del explorador web u otra aplicación cliente |
 | `ActivityType` | string | Tipo de actividad que desencadenó el evento |
-| `ActivityObjects` | string | Lista de objetos, como archivos o carpetas, que participaron en la actividad grabada |
+| `ActivityObjects` | string | Lista de objetos, como archivos o carpetas, que participaron en la actividad registrada |
 | `ObjectName` | string | Nombre del objeto al que se aplicó la acción grabada |
 | `ObjectType` | string | Tipo de objeto, como un archivo o una carpeta, al que se aplicó la acción grabada |
 | `ObjectId` | string | Identificador único del objeto al que se aplicó la acción grabada |

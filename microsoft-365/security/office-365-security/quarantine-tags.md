@@ -33,7 +33,7 @@ Las etiquetas de cuarentena en Exchange Online Protection (EOP) permiten a los a
 
 EOP ha permitido o impedido tradicionalmente ciertos niveles de interactividad para mensajes en cuarentena y en notificaciones [de correo no deseado para el usuario final.](use-spam-notifications-to-release-and-report-quarantined-messages.md) [](find-and-release-quarantined-messages-as-a-user.md) Por ejemplo, los usuarios finales pueden ver y liberar mensajes que el filtrado contra correo no deseado ha puesto en cuarentena como correo no deseado o masivo, pero no pueden ver ni liberar mensajes que se han puesto en cuarentena como suplantación de identidad de confianza alta.
 
-Para [](#step-2-assign-a-quarantine-tag-to-supported-features)las características de protección admitidas, las etiquetas de cuarentena especifican lo que los usuarios pueden hacer en los mensajes de notificación de correo no deseado del usuario final y en los mensajes en cuarentena en cuarentena (mensajes en los que el usuario es un destinatario). Las etiquetas de cuarentena predeterminadas se asignan automáticamente para aplicar las capacidades históricas para los usuarios finales en los mensajes en cuarentena. O bien, puede crear y asignar etiquetas de cuarentena personalizadas para permitir o impedir que los usuarios finales realicen acciones específicas en los mensajes en cuarentena.
+Para [](#step-2-assign-a-quarantine-tag-to-supported-features)las características de protección admitidas, las etiquetas de cuarentena especifican lo que los usuarios pueden hacer en los mensajes de notificación de correo no deseado para el usuario final y en los mensajes en cuarentena en cuarentena (mensajes en los que el usuario es un destinatario). Las etiquetas de cuarentena predeterminadas se asignan automáticamente para aplicar las capacidades históricas para los usuarios finales en los mensajes en cuarentena. O bien, puede crear y asignar etiquetas de cuarentena personalizadas para permitir o impedir que los usuarios finales realicen acciones específicas en los mensajes en cuarentena.
 
 Los permisos individuales se combinan en los siguientes grupos de permisos preestablecidos:
 
@@ -87,7 +87,7 @@ Puede crear y asignar etiquetas de cuarentena en el Centro de seguridad y cumpli
        - **Permitir que los destinatarios liberen un mensaje de la cuarentena**
        - **Permitir que los destinatarios soliciten que un mensaje se libera de la cuarentena**
 
-     - **Seleccione acciones adicionales que los destinatarios pueden realizar en** mensajes en cuarentena: seleccione algunos, todos o ninguno de los siguientes valores:
+     - **Seleccione acciones adicionales que los destinatarios pueden realizar en** los mensajes en cuarentena: seleccione algunos, todos o ninguno de los siguientes valores:
        - **Eliminar**
        - **Versión preliminar**
        - **Permitir remitente**
@@ -141,7 +141,7 @@ El orden y los valores necesarios para cada permiso individual en grupos de perm
 |Valor binario|00000000|01101010|11101100|
 |Valor decimal que se debe usar|0|106|236|
 
-<sup>\*</sup> Actualmente, este valor es siempre 0. Para PermissionToViewHeader, el valor 0  no oculta el botón Ver encabezado del mensaje en los detalles del mensaje en cuarentena (el botón siempre está disponible).
+<sup>\*</sup> Actualmente, este valor siempre es 0. Para PermissionToViewHeader, el valor 0  no oculta el botón Ver encabezado del mensaje en los detalles del mensaje en cuarentena (el botón siempre está disponible).
 
 <sup>\*\*</sup> No establezca ambos valores en 1. Establezca uno en 1 y el otro en 0, o establezca ambos en 0.
 
@@ -159,7 +159,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, [co
 
 #### <a name="use-the-enduserquarantinepermissions-parameter"></a>Usar el parámetro EndUserQuarantinePermissions
 
-Para crear una etiqueta de cuarentena con el parámetro _EndUserQuarantinePermissionsValue,_ siga estos pasos:
+Para crear una etiqueta de cuarentena mediante el _parámetro EndUserQuarantinePermissionsValue,_ siga estos pasos:
 
 A. Almacene un objeto de permisos de cuarentena en una variable mediante el cmdlet **New-QuarantinePermissions.**
 
@@ -434,7 +434,7 @@ Si la etiqueta de cuarentena asigna los permisos **de acceso** limitado, los usu
 
   ![Botones disponibles en los detalles del mensaje en cuarentena si la etiqueta de cuarentena concede al usuario permisos de acceso limitado](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
-- **Notificaciones de correo no deseado para el usuario** final: están disponibles los siguientes botones:
+- **Notificaciones de correo no deseado para el usuario final:** están disponibles los siguientes botones:
   - **Bloquear remitente**
   - **Revisar**
 
@@ -454,9 +454,9 @@ Si la etiqueta de cuarentena asigna los permisos de **acceso** completo (todos l
 
   ![Botones disponibles en los detalles del mensaje en cuarentena si la etiqueta de cuarentena concede al usuario permisos de acceso completo](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
-- **Notificaciones de correo no deseado para el usuario** final: están disponibles los siguientes botones:
+- **Notificaciones de correo no deseado para el usuario final:** están disponibles los siguientes botones:
   - **Bloquear remitente**
-  - **Versión**
+  - **Release**
   - **Revisar**
 
   ![Botones disponibles en la notificación de correo no deseado para el usuario final si la etiqueta de cuarentena concede al usuario permisos de acceso completo](../../media/quarantine-tags-esn-full-access.png)
@@ -471,30 +471,30 @@ Si la etiqueta de cuarentena asigna los permisos de **acceso** completo (todos l
 El **permiso** Permitir remitente (_PermissionToAllowSender_) controla el acceso al botón que permite a los usuarios agregar cómodamente el remitente del mensaje en cuarentena a su lista de remitentes seguros.
 
 - **Detalles del mensaje en cuarentena:**
-  - **Permitir permiso de** remitente habilitado: el **botón** Permitir remitente está disponible.
+  - **Permitir permiso de** remitente habilitado: **el botón** Permitir remitente está disponible.
   - **Permitir permiso de** remitente deshabilitado: el **botón** Permitir remitente no está disponible.
 
 - **Notificaciones de correo no deseado para el usuario** final: sin efecto.
 
-Para obtener más información acerca de la lista de remitentes seguros, vea Impedir que los remitentes de confianza se bloqueen y [Usar Exchange Online PowerShell](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)para configurar la colección de listas [seguras](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) en un buzón.
+Para obtener más información acerca de la lista de remitentes seguros, vea Impedir que los remitentes de confianza se bloqueen y [usar Exchange Online PowerShell](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)para configurar la colección de listas [seguras](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) en un buzón.
 
 #### <a name="block-sender-permission"></a>Bloquear el permiso del remitente
 
 El **permiso bloquear remitente** (_PermissionToBlockSender_) controla el acceso al botón que permite a los usuarios agregar cómodamente el remitente del mensaje en cuarentena a su lista de remitentes bloqueados.
 
 - **Detalles del mensaje en cuarentena:**
-  - **Permiso bloquear remitente** habilitado: el botón Bloquear **remitente** está disponible.
+  - **Bloquear permiso de** remitente habilitado: el botón Bloquear **remitente** está disponible.
   - **Bloquear permiso de** remitente deshabilitado: **el botón** Bloquear remitente no está disponible.
 
 - **Notificaciones de correo no deseado para el usuario final:**
   - **Bloquear permiso de** remitente deshabilitado: **el botón** Bloquear remitente no está disponible.
-  - **Permiso bloquear remitente** habilitado: el botón Bloquear **remitente** está disponible.
+  - **Bloquear permiso de** remitente habilitado: el botón Bloquear **remitente** está disponible.
 
 Para obtener más información acerca de la lista de remitentes bloqueados, vea [Bloquear](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) mensajes de alguien y [Usar Exchange Online PowerShell](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)para configurar la colección de listas seguras en un buzón.
 
 #### <a name="delete-permission"></a>Permiso de eliminación
 
-El **permiso** Eliminar (_PermissionToDelete_) controla la capacidad de los usuarios para eliminar sus mensajes (mensajes en los que el usuario es un destinatario) de la cuarentena.
+El **permiso** Eliminar (_PermissionToDelete_) controla la capacidad de los usuarios de eliminar sus mensajes (mensajes en los que el usuario es un destinatario) de la cuarentena.
 
 - **Detalles del mensaje en cuarentena:**
   - **Permiso** de eliminación habilitado: el botón Quitar **de cuarentena** está disponible.
@@ -526,7 +526,7 @@ El permiso Permitir a los destinatarios para liberar un mensaje de cuarentena _(
 
 #### <a name="allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission"></a>Permitir que los destinatarios soliciten que se libera un mensaje del permiso de cuarentena
 
-El **permiso Permitir que** los destinatarios soliciten que un mensaje se libere del permiso  de cuarentena _(PermissionToRequestRelease)_ controla la capacidad de los usuarios para solicitar la publicación de sus mensajes en cuarentena. El mensaje solo se libera después de que un administrador apruebe la solicitud.
+El **permiso Permitir que** los destinatarios soliciten que un mensaje se libere del permiso  de cuarentena _(PermissionToRequestRelease)_ controla la capacidad de los usuarios para solicitar la liberación de sus mensajes en cuarentena. El mensaje solo se libera después de que un administrador apruebe la solicitud.
 
 - **Detalles del mensaje en cuarentena:**
   - Permiso habilitado: el **botón Solicitar versión** está disponible.

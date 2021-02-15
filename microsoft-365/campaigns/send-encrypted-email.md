@@ -34,14 +34,14 @@ ms.locfileid: "50044221"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>Cifre o etiquete su correo electrónico confidencial
 
-Los datos y la información de la campaña son importantes y suelen ser confidenciales. Ayude a proteger esta información confidencial mediante el cifrado y las etiquetas de confidencialidad para que usted y los destinatarios de correo electrónico traten la información con la confidencialidad que requiere.
+Los datos y la información de la campaña son importantes y suelen ser confidenciales. Ayude a proteger esta información confidencial mediante el cifrado y las etiquetas de confidencialidad para que usted y sus destinatarios de correo electrónico traten la información con la confidencialidad que requiere.
 
 ## <a name="best-practices"></a>Procedimientos recomendados
 
 Antes de enviar correo electrónico con información confidencial, considere la posibilidad de activar:
 
-- **Cifrado:** Puede cifrar el correo electrónico para proteger la privacidad de la información del correo electrónico. Cuando se cifra un mensaje de correo electrónico, se convierte de texto sin formato legible en texto desenlazado. Solo el destinatario que tiene la clave privada que coincide con la clave pública usada para cifrar el mensaje puede descifrarlo para leerlo. Sin embargo, cualquier destinatario sin la clave privada correspondiente ve texto indescifrable. El administrador puede definir reglas para cifrar automáticamente los mensajes que cumplen ciertos criterios. Por ejemplo, el administrador puede crear una regla que cifre todos los mensajes enviados fuera de su organización o todos los mensajes que mencionen palabras o frases específicas. Las reglas de cifrado se aplicarán automáticamente.
-- **Etiquetas de confidencialidad:** Tu campaña también puede configurar etiquetas de confidencialidad que puedes aplicar a tus archivos y correo electrónico para que cumplan con las directivas de protección de la información de tu campaña. Cuando se establece una etiqueta, la etiqueta persiste con el correo electrónico, incluso cuando se envía, por ejemplo, al aparecer como un encabezado en el mensaje.
+- **Cifrado:** Puede cifrar el correo electrónico para proteger la privacidad de la información del correo electrónico. Cuando se cifra un mensaje de correo electrónico, se convierte de texto sin formato legible en texto desenlazado. Solo el destinatario que tiene la clave privada que coincide con la clave pública usada para cifrar el mensaje puede descifrarlo para leerlo. Sin embargo, cualquier destinatario sin la clave privada correspondiente ve texto indescifrable. El administrador puede definir reglas para cifrar automáticamente los mensajes que cumplen ciertos criterios. Por ejemplo, el administrador puede crear una regla que cifre todos los mensajes enviados fuera de la organización o todos los mensajes que mencionen palabras o frases específicas. Las reglas de cifrado se aplicarán automáticamente.
+- **Etiquetas de confidencialidad:** Tu campaña también puede configurar etiquetas de confidencialidad que puedes aplicar a tus archivos y correo electrónico para que cumplan las directivas de protección de la información de tu campaña. Cuando se establece una etiqueta, la etiqueta persiste con el correo electrónico, incluso cuando se envía, por ejemplo, al aparecer como un encabezado en el mensaje.
 
 ![Diagrama de un correo electrónico con llamadas para etiquetas y cifrado](../media/m365-campaign-email-encrypt.png)
 
@@ -67,4 +67,4 @@ Para obtener más información, vea [Definir reglas de flujo de correo para cifr
 
 ### <a name="brand-your-encryption-messages"></a>Personal de marca de los mensajes de cifrado
 
-También puede aplicar la personalización de marca de la campaña para personalizar la apariencia y el texto de los mensajes de correo electrónico. Para obtener más información, [vea Agregar la marca de su organización a los mensajes cifrados.](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)
+También puedes aplicar la personalización de marca de la campaña para personalizar el aspecto y el texto de los mensajes de correo electrónico. Para obtener más información, [vea Agregar la marca de su organización a los mensajes cifrados.](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)

@@ -1,6 +1,6 @@
 ---
 title: Obtener información relevante sobre una entidad con go hunt
-description: Aprenda a usar la herramienta de búsqueda de ir para consultar rápidamente información relevante sobre una entidad o evento mediante la búsqueda avanzada.
+description: Aprenda a usar la herramienta de búsqueda go para consultar rápidamente información relevante sobre una entidad o evento mediante la búsqueda avanzada.
 keywords: búsqueda avanzada, incidente, pivot, entidad, ir a la búsqueda, eventos relevantes, búsqueda de amenazas, búsqueda de ciberamenazas, búsqueda, consulta, telemetría, Microsoft 365, Protección contra amenazas de Microsoft
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -27,7 +27,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 01/22/2021
 ms.locfileid: "49929516"
 ---
-# <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Búsqueda rápida de información de entidad o evento con go hunt
+# <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Búsqueda rápida de información de entidad o evento con la búsqueda go
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ Con la *acción de búsqueda* go, puede investigar rápidamente eventos y varios
 
 La *acción de búsqueda* de ir está disponible en varias secciones del centro de seguridad siempre que se muestren detalles de eventos o entidades. Por ejemplo, puede usar *ir a la búsqueda* en las secciones siguientes:
 
-- En la [página de incidentes,](investigate-incidents.md#incident-overview)puede revisar los detalles sobre usuarios, dispositivos y muchas otras entidades asociadas a un incidente. A medida que selecciona una entidad, obtiene información adicional, así como diversas acciones que puede llevar a cabo en esa entidad. En el siguiente ejemplo, se selecciona un buzón que muestra detalles sobre el buzón, así como la opción de buscar más información sobre el buzón.
+- En la [página de incidentes,](investigate-incidents.md#incident-overview)puede revisar los detalles sobre usuarios, dispositivos y muchas otras entidades asociadas a un incidente. A medida que selecciona una entidad, obtiene información adicional, así como diversas acciones que puede llevar a cabo en esa entidad. En el siguiente ejemplo, se selecciona un buzón, que muestra detalles sobre el buzón, así como la opción de buscar más información sobre el buzón.
 
     ![Imagen que muestra los detalles del buzón con la opción ir a la búsqueda](../../media/mtp-ah/go-hunt-email.png)
 
@@ -57,7 +57,7 @@ Al seleccionar **La búsqueda o** **la** búsqueda para eventos relacionados, se
 ## <a name="query-for-entity-information"></a>Consulta de información de entidad
 Al usar *la* búsqueda go para consultar información sobre un usuario, dispositivo o cualquier otro tipo de entidad, la consulta comprueba todas las tablas de esquema relevantes en busca de eventos relacionados con esa entidad. Para que los resultados se puedan administrar, la consulta se dirige al mismo período de tiempo que la actividad más temprana de los últimos 30 días que implica a la entidad y está asociada con el incidente.
 
-Este es un ejemplo de la consulta de búsqueda de destino para un dispositivo:
+Este es un ejemplo de la consulta de búsqueda go para un dispositivo:
 
 ```kusto
 let selectedTimestamp = datetime(2020-06-02T02:06:47.1167157Z);

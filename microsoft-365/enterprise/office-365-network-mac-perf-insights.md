@@ -23,11 +23,11 @@ ms.locfileid: "50055478"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 Network Insights (versión preliminar)
 
-**Las perspectivas de** red son métricas de rendimiento recopiladas de su inquilino de Microsoft 365 y disponibles para que las puedan ver solo los usuarios administrativos de su espacio empresarial. Las conclusiones se muestran en el Centro de administración de Microsoft 365 en <https://portal.microsoft.com/adminportal/home#/networkperformance> .
+**La información de red** son métricas de rendimiento recopiladas de su inquilino de Microsoft 365 y disponibles para que solo las puedan ver los usuarios administrativos de su espacio empresarial. Las conclusiones se muestran en el Centro de administración de Microsoft 365 en <https://portal.microsoft.com/adminportal/home#/networkperformance> .
 
-Insights está pensado para ayudar a diseñar perímetros de red para las ubicaciones de las oficinas. Cada información proporciona detalles en directo sobre las características de rendimiento de un problema común específico para cada ubicación geográfica en la que los usuarios acceden a su espacio empresarial.
+La información está pensada para ayudar a diseñar perímetros de red para las ubicaciones de las oficinas. Cada información proporciona detalles en directo sobre las características de rendimiento de un problema común específico para cada ubicación geográfica en la que los usuarios acceden a su espacio empresarial.
 
-Hay seis perspectivas de red específicas que se pueden mostrar para cada ubicación de la oficina:
+Hay seis información de red específica que se pueden mostrar para cada ubicación de la oficina:
 
 - [Salida de red contralada](#backhauled-network-egress)
 - [Dispositivo intermediario de red](#network-intermediary-device)
@@ -55,13 +55,13 @@ Esta información se abrevia como "Salida" en algunas vistas de resumen.
 
 ### <a name="what-does-this-mean"></a>Escenario
 
-Esto identifica que la distancia entre la ubicación de la oficina y la salida de red es de más de 500 millas (800 kilómetros). La ubicación de la oficina se identifica mediante una ubicación de máquina cliente oculta y la ubicación de salida de red se identifica mediante la dirección IP inversa a las bases de datos de ubicación. La ubicación de la oficina puede ser inexacta si los Servicios de ubicación de Windows están deshabilitados en las máquinas. La ubicación de salida de red puede ser inexacta si la información de la base de datos de direcciones IP inversas es inexacta.
+Esto identifica que la distancia entre la ubicación de la oficina y la salida de la red es de más de 500 millas (800 kilómetros). La ubicación de la oficina se identifica mediante una ubicación de máquina cliente oculta y la ubicación de salida de red se identifica mediante la dirección IP inversa a las bases de datos de ubicación. La ubicación de la oficina puede ser inexacta si los Servicios de ubicación de Windows están deshabilitados en las máquinas. La ubicación de salida de red puede ser inexacta si la información de la base de datos de direcciones IP inversas es inexacta.
 
 Los detalles de esta información incluyen la ubicación de la oficina, el porcentaje estimado del usuario del espacio empresarial total en la ubicación, la ubicación de salida de red actual, la relevancia de la ubicación de salida, la distancia entre la ubicación y el punto de salida actual, la fecha en que se detectó por primera vez la condición y la fecha en que se resolvió la condición.
 
 ### <a name="what-should-i-do"></a>¿Qué tengo que hacer?
 
-Para esta información, recomendamos la salida de red más cerca de la ubicación de la oficina para que la conectividad pueda enrutar de forma óptima a la red global de Microsoft y a la puerta principal del servicio de Microsoft 365 más cercana. Cerrar la salida de red a las ubicaciones de oficina de los usuarios también permite mejorar el rendimiento en el futuro, ya que Microsoft expande los puntos de presencia de red y las puertas frontales del servicio de Microsoft 365 en el futuro.
+Para esta información, recomendamos la salida de red más cerca de la ubicación de la oficina para que la conectividad pueda enrutar de forma óptima a la red global de Microsoft y a la puerta principal del servicio de Microsoft 365 más cercana. Tener una salida de red cercana a las ubicaciones de oficina de los usuarios también permite mejorar el rendimiento en el futuro, ya que Microsoft expande los puntos de presencia de red y las puertas frontales del servicio de Microsoft 365 en el futuro.
 
 Para obtener más información acerca de cómo resolver este problema, consulte [Conexiones](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) de red de salida localmente en principios de conectividad de red de [Office 365.](microsoft-365-network-connectivity-principles.md)
 
@@ -95,7 +95,7 @@ Puede haber muchas razones para esta condición, incluida la latencia en la red 
 
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>Uso de una puerta de servicio de Exchange Online no óptima
 
-Esta información se mostrará si el servicio de información de red detecta que los usuarios de una ubicación específica no se conectan a una puerta de servicio de Exchange Online óptima.
+Esta información se mostrará si el servicio de información de red detecta que los usuarios de una ubicación específica no se conectan a un servicio de Exchange Online óptimo.
 
 Esta información se abrevia como "Enrutamiento" en algunas vistas de resumen.
 
@@ -154,15 +154,15 @@ Si su organización tiene conectividad WAN privada, le recomendamos que configur
 - Singapur
 - Malasia
 
-La salida de Internet más alejada de los usuarios que estas ubicaciones reducirá el rendimiento, y la salida en China puede causar problemas de conectividad y latencia alta debido a la congestión entre fronteras.
+La salida de Internet más lejos de los usuarios que estas ubicaciones reducirá el rendimiento, y la salida en China puede causar problemas de conectividad y latencia alta debido a la congestión entre fronteras.
 
 ### <a name="what-should-i-do"></a>¿Qué tengo que hacer?
 
-Para obtener más información acerca de cómo mitigar los problemas de rendimiento relacionados con esta información, vea Optimización del rendimiento global de los inquilinos de [Microsoft 365 para los usuarios de China.](microsoft-365-networking-china.md)
+Para obtener más información acerca de cómo mitigar los problemas de rendimiento relacionados con esta información, vea Optimización del rendimiento global de inquilinos de [Microsoft 365 para usuarios de China.](microsoft-365-networking-china.md)
 
 ## <a name="exchange-sampled-connections-impacted-by-connectivity-issues"></a>Conexiones de ejemplo de Exchange afectadas por problemas de conectividad
 
-Esta información mostrará cuándo se verán afectadas el 50 % o más de las conexiones muestreadas. El impacto lo define la evaluación de Exchange por debajo del 60 % para cada muestra.
+Esta información mostrará cuándo se verán afectadas el 50 % o más de las conexiones muestreadas. El impacto se define por la evaluación de Exchange por debajo del 60 % para cada muestra.
 
 ### <a name="what-does-this-mean"></a>Escenario
 

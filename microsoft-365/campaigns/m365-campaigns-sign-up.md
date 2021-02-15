@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Registro paso a paso para Microsoft 365 para campañas. Proteja su campaña de las amenazas de ciberseguridad para el correo electrónico, los datos y la comunicación.
+description: Registro paso a paso para Microsoft 365 for Campaigns. Proteja su campaña de las amenazas de ciberseguridad al correo electrónico, los datos y la comunicación.
 ms.openlocfilehash: 8920cb28881d884413a8d30c0edb75f96a77cf1e
 ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
@@ -46,7 +46,7 @@ Aquí te explicamos cómo completar el registro de Microsoft 365 para campañas.
 
 ## <a name="steps-to-sign-up"></a>Pasos para registrarse
 
-1. En su invitación al correo electrónico de Microsoft 365 para campañas, seleccione **INSCRIBIR SU ORGANIZACIÓN >**. Esto le llevará al registro de Microsoft 365.
+1. En la invitación al correo electrónico de Microsoft 365 para campañas, seleccione **INSCRIBIR SU ORGANIZACIÓN >**. Esto le llevará al registro de Microsoft 365.
     > [!NOTE]
     > Si ya tiene una suscripción a Microsoft 365 para empresas existente y desea agregarle la oferta de Microsoft 365 para campañas, vaya a agregar [Microsoft 365](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)para campañas a una suscripción existente.
 1. **En la página Microsoft 365 Empresa,** escriba los detalles de su empresa. Dirección **de correo electrónico para empresas,** use una dirección de correo electrónico actual. Solo necesitamos esta dirección para estar en contacto contigo durante el proceso de configuración. Seleccione **Siguiente**.
@@ -58,7 +58,7 @@ Aquí te explicamos cómo completar el registro de Microsoft 365 para campañas.
     > [!NOTE]
     > Si la campaña o la fiesta no son propietarios de un dominio y has decidido qué dominio quieres, puedes comprar uno ahora seleccion guardarlo.
 
-4. **Demostrar. Lo está. No. A. Robot. página:**
+4. **Demostrar. Está. No. A. Robot. página:**
     1. Tenga el teléfono listo y seleccione **Enviarme un** mensaje **(o Llamarme** si lo prefiere). A continuación, escriba su número de teléfono. 
     2. Cuando seleccione **Enviarme un** mensaje de texto, le enviaremos un código de verificación. O bien, le llamaremos con un código si selecciona **Llamarme.**
     3. Escriba el código del mensaje de texto (o llamada) y seleccione **Siguiente.** Espere una breve espera. 
@@ -78,11 +78,11 @@ Si ya tiene una suscripción existente a Microsoft 365 para empresas, por ejempl
 > [!IMPORTANT]
 > No puede agregar la oferta de Microsoft 365 para campañas a una cuenta de Microsoft 365 existente.
 
-1. En su invitación al correo electrónico de Microsoft 365 para campañas, seleccione **INSCRIBIR SU ORGANIZACIÓN >**. Esto le llevará al registro de Microsoft 365.
-2. En la **página principal, vamos** a conocer su página, haga clic o pulse ¿Desea **agregar esto a una suscripción existente? Inicie sesión.**
+1. En la invitación al correo electrónico de Microsoft 365 para campañas, seleccione **INSCRIBIR SU ORGANIZACIÓN >**. Esto le llevará al registro de Microsoft 365.
+2. En la **página principal, vamos** a conocer su página, haga clic o pulse **¿Desea agregar esto a una suscripción existente? Inicie sesión.**
     
     ![Elija Iniciar sesión en la esquina superior derecha.](../media/addtoexisting.png)
-3. En la página de inicio de sesión, escriba el alias de administrador de su suscripción existente, por ejemplo *Alice@VoteContoso <span></span> .org*, elija **Siguiente,** escriba su contraseña y, a continuación, elija **Iniciar sesión.**
+3. En la página de inicio de sesión, escriba el alias de administrador de su suscripción existente, por *ejemplo, Alice@VoteContoso <span></span> .org*, elija **Siguiente,** escriba su contraseña y, a continuación, elija **Iniciar sesión.**
 4. On the **How does this look?** enter the number of users you have and choose **Next**. No tienes que escribir un código de promoción aquí porque ya está incluido en la dirección URL de la invitación.
 5. On the **How do you want to pay?** page, enter your payment method and choose Place **order**.
 

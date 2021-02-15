@@ -34,11 +34,11 @@ ms.locfileid: "50044185"
 ---
 # <a name="share-files-and-videos"></a>Compartir archivos y vídeos
 
-Cuando necesite controlar quién puede ver y quién puede editar los archivos, debe almacenar los archivos en una ubicación segura, donde puede asegurarse de que los permisos se aplican correctamente. Puede usar Microsoft Teams para almacenar los archivos y, a continuación, compartir los archivos dentro o fuera de su empresa, práctica o campaña mediante Microsoft Teams o enviando vínculos de SharePoint. Enviar un vínculo en lugar de un archivo adjunto de correo electrónico significa que sabe quién está viendo y modificando los archivos, y no se pueden ver ni modificar sin su permiso.
+Cuando necesite controlar quién puede ver y quién puede editar los archivos, debe almacenar los archivos en una ubicación segura, donde puede asegurarse de que los permisos se aplican correctamente. Puede usar Microsoft Teams para almacenar los archivos y, a continuación, compartir los archivos dentro o fuera de su empresa, práctica o campaña mediante Microsoft Teams o mediante el envío de vínculos de SharePoint. Enviar un vínculo en lugar de un archivo adjunto de correo electrónico significa que sabe quién está viendo y modificando los archivos, y no se pueden ver ni modificar sin su permiso.
 
-![Diagrama de una ventana de Microsoft Teams que muestra la pestaña Archivos y el vínculo Obtener en el menú](../media/m365-democracy-teams-sharefiles.png)
+![Diagrama de una ventana de Microsoft Teams, que muestra la pestaña Archivos y el vínculo Obtener en el menú](../media/m365-democracy-teams-sharefiles.png)
 
-Con los archivos de Microsoft Teams y SharePoint, también puede trabajar en los archivos juntos y revisar los cambios del otro. Use Microsoft Teams para compartir archivos dentro de una empresa, práctica o campaña. Si necesita compartir externamente con personas de fuera de su organización, puede agregarlas como invitados a un equipo o enviarles un vínculo seguro de SharePoint.
+Con los archivos de Microsoft Teams y SharePoint, también puede trabajar juntos en los archivos y revisar los cambios de los demás. Use Microsoft Teams para compartir archivos dentro de una empresa, práctica o campaña. Si necesita compartir externamente con personas de fuera de su organización, puede agregarlas como invitados a un equipo o enviarles un vínculo seguro de SharePoint.
 
 También puede usar Microsoft Stream para almacenar y compartir vídeos internamente. Estos vídeos no son visualizables para el público, por lo que son ideales para la mensajería de campaña interna.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Adopción de Microsoft SharePoint Syntex: introducción'
+title: 'Adopción de Microsoft SharePoint Syntex: Introducción'
 description: Aprenda a usar e implementar SharePoint Syntex en su organización para ayudarle a resolver sus problemas empresariales.
 ms.author: samanro
 author: samanro
@@ -29,7 +29,7 @@ Piense que los servicios de contenido inteligente disponibles en SharePoint Synt
 - **Procesamiento de contenido:** Automatice la captura, la ingesta y la categorización del contenido y optimice los procesos centrados en el contenido mediante Power Automate. Obtenga más información sobre [el procesamiento de contenido.](form-processing-overview.md)
 - **Cumplimiento de contenido:** Controlar y administrar el contenido para mejorar la seguridad y el gobierno con la integración con Microsoft Information Protection.
 
-Con las nuevas funcionalidades y servicios de IA, puede crear aplicaciones de descripción y clasificación de contenido directamente en el flujo de administración de contenido mediante SharePoint Syntex. Hay dos formas diferentes de comprender el contenido. El tipo de modelo que use se basa en el formato de archivo y el uso de mayúsculas y minúsculas:
+Con las nuevas funcionalidades y servicios de IA, puede crear aplicaciones de descripción y clasificación de contenido directamente en el flujo de administración de contenido con SharePoint Syntex. Hay dos formas diferentes de comprender el contenido. El tipo de modelo que use se basa en el formato de archivo y el caso de uso:
 
 | Procesamiento de formularios | Comprensión de documentos |
 |:-------|:-------|
@@ -44,7 +44,7 @@ En la siguiente tabla se explica la disponibilidad y las licencias de SharePoint
 
 | Procesamiento de formularios | Comprensión de documentos |
 |:-------|:-------|
-| El procesamiento de formularios se basa en Power Platform. <br>Para obtener información acerca de la disponibilidad global para Power Platform y el Generador de IA, vea [La disponibilidad de la plataforma de energía.](https://dynamics.microsoft.com/geographic-availability/) | Disponible en todas las regiones. |
+| El procesamiento de formularios se basa en Power Platform. <br>Para obtener información acerca de la disponibilidad global para Power Platform y el Generador de IA, consulte [Disponibilidad de La plataforma de energía.](https://dynamics.microsoft.com/geographic-availability/) | Disponible en todas las regiones. |
 | Usa créditos del Generador de IA.<br>Los créditos se pueden comprar en lotes de 1M.<br>Se incluyen créditos de 1M cuando se compran más de 300 licencias de SharePoint Syntex.<br>Los créditos 1M permitirán el procesamiento de 2000 páginas de archivo. | Los modelos funcionan en todos los idiomas del alfabeto latino. Además de inglés: alemán, sueco, francés, español, italiano y portugués. |
 | Aprovisionado en el entorno de servicio de datos común predeterminado. | No tiene restricciones de capacidad. |
 
@@ -61,10 +61,10 @@ Los usuarios pueden aplicar etiquetas o los pueden aplicar automáticamente los 
 
 Para prepararse para usar SharePoint Syntex en su organización, primero debe comprender los escenarios en los que será útil. El motivo ayuda a determinar qué modelo se necesita y cómo estructurar la organización en función de dónde se aplicará el modelo. Estos son algunos escenarios en los que la comprensión de documentos puede ayudar a su organización:
 
-- Procesamiento de contenido: procesar contratos, instrucciones de trabajo y otros documentos de tipo formulario. Admisión de los formularios, entrena el modelo para comprender y asignar los campos y, a continuación, ejecuta los formularios para recopilar automáticamente los datos. Para obtener más información, vea [Información general sobre el procesamiento de formularios.](form-processing-overview.md)
+- Procesamiento de contenido: procesar contratos, declaraciones de trabajo y otros documentos de tipo formulario. Admisión de los formularios, entrena el modelo para comprender y asignar los campos y, a continuación, ejecuta los formularios para recopilar automáticamente los datos. Para obtener más información, vea [Información general sobre el procesamiento de formularios.](form-processing-overview.md)
 - Análisis de facturas: extraiga los detalles relevantes de las facturas y asegúrese de que cumplen con la directiva o se están procesando correctamente.
 
-Piense en formas en que SharePoint Syntex puede ayudar a su organización:
+Piense en las formas en que SharePoint Syntex puede ayudar a su organización:
 
 - Automatizar procesos de negocio
 - Mejorar la precisión de búsqueda
@@ -96,7 +96,7 @@ Como otro ejemplo, puede configurar un proceso para identificar los contratos qu
 1. Empiece en el centro de contenido y cree un nuevo modelo de comprensión de documentos para los contratos.
 1. Cargue documentos de ejemplo para obtener ejemplos positivos y negativos y, a continuación, ejecute la formación para identificar los documentos del contrato y revisar los resultados.
 1. Entrena al extractor para identificar los campos de los contratos, como el nombre del cliente, la tarifa y la fecha, y luego prueba el extractor.
-1. Una vez completado el modelo, aplique el modelo a una biblioteca en la que puede cargar contratos.
+1. Una vez completado el modelo, aplique el modelo a una biblioteca donde pueda cargar contratos.
 1. Aplique una etiqueta de retención al campo de fecha para que los contratos se conserven en la biblioteca durante el tiempo que su organización requiera para los contratos.
 
 ![Seguimiento y supervisión de contratos con SharePoint Syntex y etiquetas de retención](../media/content-understanding/process-contracts-flow.png)
@@ -119,7 +119,7 @@ Priorizar escenarios en función del impacto y la facilidad de implementación. 
 
 ## <a name="identify-roles--responsibilities"></a>Identificar roles & responsabilidades
 
-Determinar quién de la organización compilará y administrará los modelos. Pueden estar implicados los siguientes roles:
+Determinar quién de la organización compilará y administrará los modelos? Pueden estar implicados los siguientes roles:
 
 | Administrador de SharePoint/Knowledge | Administrador de Power Platform | Administrador de conocimientos | Propietario del modelo |
 |:-------|:-------|:-------|:-------|
@@ -143,7 +143,7 @@ Trabaje con las partes interesadas para asegurarse de que están alineadas en la
   - Posibles resultados fiscales
   - Posibles resultados de agilidad
   - Plantilla de resultados empresariales
-- Buy-in/alignment de patrocinadores de partes interesadas/ejecutivos
+- Buy-in/alignment de patrocinadores para participantes/ejecutivos
   - Presentación de casos empresariales
   - Modelos financieros
   - Preparación de la empresa: cultura
@@ -152,9 +152,9 @@ Trabaje con las partes interesadas para asegurarse de que están alineadas en la
 
 Identifique las partes interesadas de su proyecto.
 
-|Role |Responsibilities |Department |
+|Función |Responsibilities |Department |
 |:-------|:-------|:--------|
-| Patrocinadores ejecutivos   | Comunicar valores y visión de alto nivel a la empresa   |  Dirección ejecutiva   |
+| Patrocinadores ejecutivos   | Comunicar valores y visión de alto nivel a la empresa   |  Liderazgo ejecutivo   |
 | Clientes potenciales del proyecto | Supervisar todo el proceso de lanzamiento y ejecución de inicio | Administración de proyectos |
 | Administradores de conocimientos| Crear y administrar los centros de contenido | TI u otro departamento|
 | Administradores de contenido y propietarios de modelos| Recopilar casos de uso y crear y aplicar modelos | Cualquier departamento|

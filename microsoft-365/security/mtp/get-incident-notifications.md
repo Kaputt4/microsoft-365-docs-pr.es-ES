@@ -60,8 +60,8 @@ Para configurar la primera notificación por correo electrónico para incidentes
     ![Crear ventana de regla para notificaciones de correo electrónico de incidentes](../../media/incidentemailnotif1.png) 
 4. Seleccione **Siguiente para** ir a Configuración de **notificaciones.** Aquí puede especificar:
     - **Gravedad de alerta:** elige la gravedad de alerta que desencadenará una notificación de incidente. Por ejemplo, si solo desea que se le informe sobre incidentes de gravedad alta, seleccione Alta.
-    - **Ámbito de grupo de** dispositivos: esta lista desplegable muestra todos los grupos de dispositivos a los que el usuario puede acceder. Selecciona para qué grupos de dispositivos vas a crear las reglas de notificación de incidentes.
-    - **Notificar solo en la primera aparición por** incidente: al seleccionar esta opción, solo se enviará una notificación por correo electrónico en la primera alerta que coincida con las otras selecciones. Las actualizaciones o alertas posteriores relacionadas con el incidente no desencadenarán una notificación.
+    - **Ámbito de grupo de** dispositivos: este desplegable muestra todos los grupos de dispositivos a los que el usuario puede acceder. Selecciona para qué grupos de dispositivos vas a crear las reglas de notificación de incidentes.
+    - **Notificar solo en la primera aparición por incidente:** al seleccionar esta opción, solo se enviará una notificación por correo electrónico en la primera alerta que coincida con las otras selecciones. Las actualizaciones o alertas posteriores relacionadas con el incidente no desencadenarán una notificación.
     - **Incluir el nombre de** la organización: indica si el nombre del cliente aparece en la notificación por correo electrónico o no.
     - **Incluir el vínculo del portal específico del inquilino:** agrega un vínculo con el id. de inquilino para permitir el acceso a un inquilino específico.
     
@@ -72,7 +72,7 @@ Para configurar la primera notificación por correo electrónico para incidentes
 
 6. Por último, seleccione **Siguiente** para ir a Revisar **regla** para que pueda ver toda la configuración asociada a la nueva regla. Los destinatarios empezarán a recibir notificaciones de incidentes por correo electrónico en función de la configuración.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Información general sobre incidentes en Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview)
 - [Priorizar incidentes en Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/incident-queue)
 - [Investigar incidentes en Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/investigate-incidents)
