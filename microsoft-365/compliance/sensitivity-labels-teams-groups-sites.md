@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 9276288bc05abebe864a4465f69284372fa0baab
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: 7eea07b91647af2b0b7121f9d9c1f018bc9fc630
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868028"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261463"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -271,6 +271,7 @@ Las siguientes aplicaciones y servicios son compatibles con etiquetas de confide
 
   - Centro de administración de SharePoint
   - Portal de Azure Active Directory
+  - Centro de administración de Microsoft 365
   - Centro de cumplimiento de Microsoft 365, Centro de seguridad de Microsoft 365 y Centro de seguridad y cumplimiento
 
 - Servicios y aplicaciones de usuario:
@@ -280,13 +281,12 @@ Las siguientes aplicaciones y servicios son compatibles con etiquetas de confide
   - Outlook en la Web y para Windows, macOS, iOS y Android
   - Forms
   - Stream
-  - Planner (lanzando) 
+  - Planner 
 
 Las siguientes aplicaciones y servicios actualmente no son compatibles con las etiquetas de confidencialidad establecidas para la configuración de sitios y grupos:
 
 - Centros de administración:
 
-  - Centro de administración de Microsoft 365
   - Centro de administración de Teams
   - Centro de administración de Exchange
 

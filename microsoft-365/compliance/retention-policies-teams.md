@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 2541519ad9082383c5381452722d023f23760798
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: b3b0451f2f1b0950f2b2ee723025a796f1814038
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242716"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261507"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -55,7 +55,6 @@ Estos buzones se muestran según su atributo RecipientTypeDetails:
 
 - **UserMailbox**: estos buzones almacenan los mensajes de los usuarios de Teams que tienen un buzón de Exchange Online.
 - **MailUser**: estos buzones almacenan los mensajes de los usuarios de Teams que tienen un buzón para un servidor de Exchange local y no Exchange Online.
-- **User**: estos buzones almacenan mensajes para los usuarios de Teams que no tienen un buzón para servidores de Exchange Online o servidores locales de Exchange.
 - **GroupMailbox**: estos buzones almacenan mensajes para los canales de Teams.
 
 Otros tipos de buzones, como RoomMailbox —que se usa en las salas de conferencias de Teams— no son compatibles con las directivas de retención de Teams.
