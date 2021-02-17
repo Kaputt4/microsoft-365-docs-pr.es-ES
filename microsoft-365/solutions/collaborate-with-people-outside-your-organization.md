@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo configurar aplicaciones de Microsoft 365 como Teams, OneDrive y SharePoint para colaborar con personas ajenas a su organización.
-ms.openlocfilehash: 374ad8f5ec37fc0900fb38cb4e0f4743a02c4da4
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 7b8e5e30d8222d055fc5f64472c4083db614d4bd
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613459"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261518"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Colaborar con personas ajenas a la organización
 
@@ -31,18 +31,18 @@ Las capacidades de uso compartido externo de Microsoft 365 proporcionan una opor
 
 La colaboración con personas ajenas a la organización consta de dos componentes principales:
 
-- **Habilitar el uso** compartido: configure los controles de uso compartido en Azure Active Directory, Teams, Grupos de Microsoft 365 y SharePoint para permitir el nivel de uso compartido que desea para su organización.
+- **Habilitar el uso** compartido: configure los controles de uso compartido en Azure Active Directory, Teams, Grupos de Microsoft 365 y SharePoint para permitir el nivel de uso compartido que desee para su organización.
 - Habilitar seguridad **adicional:** aunque las características básicas de uso compartido se pueden configurar para requerir que las personas fuera de su organización se autentiquen, Microsoft 365 proporciona muchas características adicionales de seguridad y cumplimiento para ayudarle a proteger los datos y mantener las directivas de gobierno mientras se comparten externamente.
 
 ## <a name="enable-sharing"></a>Habilitar el uso compartido
 
-De forma predeterminada, en Microsoft 365, el uso compartido con personas de fuera de su organización está habilitado para SharePoint y OneDrive, pero deshabilitado para Teams. Muchos escenarios de uso compartido externo de SharePoint y OneDrive funcionan sin ninguna configuración adicional. Para confirmar la configuración de un escenario que está usando o habilitar una nueva, elija una de las siguientes opciones:
+De forma predeterminada, en Microsoft 365, el uso compartido con personas de fuera de su organización está habilitado. Muchos escenarios de uso compartido externo funcionan sin ninguna configuración adicional. Para confirmar la configuración de un escenario que está usando o habilitar una nueva, elija una de las siguientes opciones:
 
 - [Colaborar en](collaborate-on-documents.md) documentos: obtenga información sobre cómo configurar Microsoft 365 para permitir el uso compartido y la colaboración con personas ajenas a la organización (invitados y usuarios no autenticados) en archivos y carpetas.
 - [Colaborar en un sitio:](collaborate-in-site.md) aprenda a configurar Microsoft 365 para habilitar el uso compartido de sitios de SharePoint con invitados.
 - [Colaborar como equipo:](collaborate-as-team.md) obtenga información sobre cómo configurar Microsoft 365 para habilitar la colaboración de invitados en Teams.
 
-Para obtener una visión completa de la configuración de uso compartido de invitados disponible en Microsoft 365, consulte la referencia de configuración de uso compartido de [invitados de Microsoft 365.](microsoft-365-guest-settings.md)
+Para obtener un vistazo completo a la configuración de uso compartido de invitados disponible en Microsoft 365, consulte la referencia de configuración de uso compartido de [invitados de Microsoft 365.](microsoft-365-guest-settings.md)
 
 ## <a name="enable-additional-security"></a>Habilitar seguridad adicional
 

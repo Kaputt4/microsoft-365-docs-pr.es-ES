@@ -20,12 +20,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre la característica Datos adjuntos seguros en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5e85695a6d0fba221f3c614ec33b3552d37153e2
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 5d2d348856dbd51cabe2b320d315406076921fee
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175852"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261542"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Datos adjuntos seguros en Microsoft Defender para Office 365
 
@@ -54,7 +54,7 @@ En la siguiente tabla se describen escenarios para datos adjuntos seguros en org
 El examen de datos adjuntos seguros tiene lugar en la misma región donde residen los datos de Microsoft 365. Para obtener más información acerca de la geografía del centro de datos, [consulte ¿Dónde se encuentran los datos?](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
-> Las siguientes características se encuentran en la configuración global de las directivas de datos adjuntos seguros en el Centro de seguridad y cumplimiento de &, pero estas opciones están habilitadas o deshabilitadas globalmente y no requieren directivas de datos adjuntos seguros:
+> Las siguientes características se encuentran en la configuración global de las directivas de datos adjuntos seguros en el Centro de & cumplimiento. Sin embargo, estas opciones de configuración están habilitadas o deshabilitadas globalmente y no requieren directivas de datos adjuntos seguros:
 >
 > - [Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams.](atp-for-spo-odb-and-teams.md)
 >
@@ -130,10 +130,10 @@ Hay escenarios en los que la entrega dinámica no puede reemplazar los datos adj
 
 - [S/MIME)](s-mime-for-message-signing-and-encryption.md) mensajes cifrados.
 
-- Configuró la acción entrega dinámica en una directiva de datos adjuntos seguros, pero el destinatario no admite la entrega dinámica (por ejemplo, el destinatario es un buzón de una organización de Exchange local). Sin embargo, Vínculos seguros en Microsoft Defender para [Office 365](set-up-atp-safe-links-policies.md) es capaz de examinar los datos adjuntos de archivos de Office que contienen direcciones URL (dependiendo de cómo se configuren las opciones [globales](configure-global-settings-for-safe-links.md) de vínculos seguros).
+- Configuró la acción entrega dinámica en una directiva de datos adjuntos seguros, pero el destinatario no admite la entrega dinámica (por ejemplo, el destinatario es un buzón de una organización de Exchange local). Sin embargo, Vínculos seguros en Microsoft Defender para [Office 365](set-up-atp-safe-links-policies.md) es capaz de examinar los datos adjuntos de archivos de Office que contienen direcciones URL (en función de cómo se configuren las opciones [globales](configure-global-settings-for-safe-links.md) de vínculos seguros).
 
 ## <a name="submitting-files-for-malware-analysis"></a>Envío de archivos para análisis de malware
 
 - Si recibe un archivo que desea enviar a Microsoft para su análisis, vea Enviar malware y no malware a [Microsoft para su análisis.](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
 
-- Si recibe un mensaje de correo electrónico (con o sin datos adjuntos) que desea enviar a Microsoft para su análisis, vea Notificar mensajes y [archivos a Microsoft.](report-junk-email-messages-to-microsoft.md)
+- Si recibe un mensaje de correo electrónico (con o sin datos adjuntos) que desea enviar a Microsoft para su análisis, consulte Notificar mensajes y [archivos a Microsoft.](report-junk-email-messages-to-microsoft.md)

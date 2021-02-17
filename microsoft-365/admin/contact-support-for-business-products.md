@@ -22,19 +22,19 @@ search.appverid:
 description: Obtenga asistencia técnica y de facturación utilizando los números de teléfono que figuran para su país o región, o enviando su solicitud de servicio en línea.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 06f78d50901f279bf27f55f1b8f7ad867682d784
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 7679539e64588827b6dcc20f6f98bc67e613aae6
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925583"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261340"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Formas de contactar al soporte técnico para productos empresariales: ayuda para administradores
 
 ::: moniker range="o365-worldwide"
 
 > [!IMPORTANT]
-> Debe ser el administrador de una suscripción de empresa para usar estos métodos de soporte. Si no es el administrador empresarial, use [esta página de soporte](https://support.microsoft.com/help/contactus).
+> Debe ser el administrador de una suscripción de empresa para usar estos métodos de soporte. Si no es el administrador empresarial, use [esta página de soporte](https://support.microsoft.com/contactus).
 
 Comience por [comprobar el estado actual de los servicios](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health). Puede ver información detallada sobre los problemas actuales y anteriores en el <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Panel de estado del servicio</a>. Si tiene un problema que no se muestra en la lista, puede obtener soporte con uno de los siguientes métodos:
 

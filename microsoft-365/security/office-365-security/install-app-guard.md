@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Obtenga lo último en aislamiento basado en hardware. Impedir que ataques actuales y emergentes como vulnerabilidades de seguridad o vínculos malintencionados interrumpan la productividad de los empleados y la seguridad de la empresa.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cf02f6776eb68537486b49c4fe45e8f88eeb38c6
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 50065c4c0b9cbac9dee29892d9ebb0c7ce5f20f8
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094884"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261530"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Protección de aplicaciones para Office para administradores
 
@@ -33,14 +33,14 @@ La Protección de aplicaciones de Microsoft Defender para Office (Protección de
 
 ### <a name="minimum-hardware-requirements"></a>Requisitos mínimos de hardware
 
-* **CPU:** 64 bits, 4 núcleos (físico o virtual), extensiones de virtualización (Intel VT-x O AMD-V), core i5 equivalente o superior recomendado
+* **CPU:** 64 bits, 4 núcleos (físico o virtual), extensiones de virtualización (Intel VT-x O AMD-V), equivalente core i5 o superior recomendado
 * **Memoria física:** 8 GB de RAM
 * **Disco duro:** 10 GB de espacio libre en la unidad del sistema (se recomienda SSD)
 
 ### <a name="minimum-software-requirements"></a>Requisitos mínimos de software
 
 * **Windows 10:** Windows 10 Enterprise Edition, versión de compilación de cliente 2004 (20H1) compilación 19041 o posterior
-* **Office:** compilación del canal actual de Office versión 2011 16.0.13530.10000 o posterior. Se admiten las versiones de 32 y 64 bits de Office.
+* **Office**: Compilación del canal actual de Office versión 2011 16.0.13530.10000 o posterior. Se admiten las versiones de 32 y 64 bits de Office.
 * **Paquete de actualización:** actualización de seguridad mensual acumulativa de Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 Para obtener información detallada sobre los requisitos del sistema, consulte [Requisitos del sistema para la Protección de](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)aplicaciones de Microsoft Defender. Para obtener más información sobre los canales de actualización de Office, vea Información general sobre los canales [de actualización de Microsoft 365.](https://docs.microsoft.com/deployoffice/overview-update-channels)
@@ -77,7 +77,7 @@ Para obtener información detallada sobre los requisitos del sistema, consulte [
 
 ### <a name="set-diagnostics--feedback-to-send-full-data"></a>Establecer comentarios de & diagnóstico para enviar datos completos
 
-Este paso garantiza que los datos necesarios para identificar y solucionar problemas lleguen a Microsoft. Sigue estos pasos para habilitar el diagnóstico en tu dispositivo Windows:
+Este paso garantiza que los datos necesarios para identificar y solucionar problemas lleguen a Microsoft. Sigue estos pasos para habilitar el diagnóstico en el dispositivo Windows:
 
 1. Abra **Configuración** desde el menú Inicio.
 
@@ -95,7 +95,7 @@ Para obtener más información sobre cómo configurar las opciones de diagnósti
 
 ### <a name="confirm-that-application-guard-for-office-is-enabled-and-working"></a>Confirmar que la Protección de aplicaciones para Office está habilitada y funcionando
 
-Antes de confirmar que la Protección de aplicaciones para Office está habilitada, inicie Word, Excel o PowerPoint en un dispositivo donde se hayan implementado las directivas. Asegúrese de que Office está activado. Es posible que primero deba usar su identidad de trabajo para activar el producto de Office.
+Antes de confirmar que la Protección de aplicaciones para Office está habilitada, inicie Word, Excel o PowerPoint en un dispositivo donde se hayan implementado las directivas. Asegúrese de que Office está activado. Es posible que primero deba usar la identidad del trabajo para activar el producto de Office.
 
 Para confirmar que la Protección de aplicaciones para Office está habilitada, inicie Word, Excel o PowerPoint y, a continuación, abra un documento que no sea de confianza. Por ejemplo, puede abrir un documento que se descargó de Internet o un archivo adjunto de correo electrónico de alguien externo a su organización.
 
@@ -115,7 +115,7 @@ Al abrirse, el archivo debe mostrar algunos indicadores visuales de que el archi
 
 ## <a name="configure-application-guard-for-office"></a>Configurar la Protección de aplicaciones para Office
 
-Office admite las siguientes directivas para permitirle configurar las capacidades de protección de aplicaciones para Office. Estas directivas se pueden configurar a través de directivas de grupo o a través del servicio de directivas de nube de Office.
+Office admite las siguientes directivas para permitirle configurar las funcionalidades de protección de aplicaciones para Office. Estas directivas se pueden configurar a través de directivas de grupo o a través del servicio de directivas de nube de Office.
 
 > [!NOTE]
 > La configuración de estas directivas puede deshabilitar algunas funcionalidades de los archivos abiertos en la Protección de aplicaciones para Office.
@@ -123,13 +123,13 @@ Office admite las siguientes directivas para permitirle configurar las capacidad
 |Policy|Description|
 |---|---|
 |No usar la Protección de aplicaciones para Office|Habilitar esta directiva forzará a Word, Excel y PowerPoint a usar el contenedor de aislamiento vista protegida en lugar de la Protección de aplicaciones para Office. Esta directiva se puede usar para deshabilitar temporalmente la Protección de aplicaciones para Office cuando haya problemas al dejarla habilitada para Microsoft Edge.|
-|Configurar la Protección de aplicaciones para la creación previa del contenedor de Office|Esta directiva determina si el contenedor de protección de aplicaciones para Office, para aislar archivos que no son de confianza, se ha creado previamente para mejorar el rendimiento en tiempo de ejecución. Si habilita esta configuración, puede especificar el número de días para continuar creando previamente un contenedor o permitir que office integrado heurístico cree previamente el contenedor.
+|Configurar la Protección de aplicaciones para la creación previa del contenedor de Office|Esta directiva determina si el contenedor de protección de aplicaciones para Office, para aislar archivos que no son de confianza, se ha creado previamente para mejorar el rendimiento en tiempo de ejecución. Si habilita esta opción, puede especificar el número de días que debe seguir creando previamente un contenedor o dejar que Office cree previamente el contenedor heurístico integrado.
 |No permitir copiar o pegar documentos de Office abiertos en la Protección de aplicaciones para Office|Si se habilita esta directiva, el usuario no podrá copiar y pegar contenido de un documento abierto en la Protección de aplicaciones para Office en un documento abierto fuera de él.|
-|Deshabilitar la aceleración de hardware en la Protección de aplicaciones para Office|Esta directiva controla si la Protección de aplicaciones para Office usa la aceleración de hardware para representar gráficos. Si habilita esta configuración, la Protección de aplicaciones para Office usa la representación basada en software (CPU) y no cargará ningún controlador de gráficos de terceros ni interactuará con ningún hardware gráfico conectado.
-|Deshabilitar la protección de tipos de archivo no compatibles en la Protección de aplicaciones para Office|Esta directiva controla si la Protección de aplicaciones para Office bloqueará la apertura de tipos de archivo no compatibles o si habilitará el redireccionamiento a vista protegida.
-|Desactivar el acceso a cámara y micrófono para los documentos abiertos en la Protección de aplicaciones para Office|Si se habilita esta directiva, se quitará el acceso de Office a la cámara y al micrófono dentro de la Protección de aplicaciones para Office.|
+|Deshabilitar la aceleración de hardware en la Protección de aplicaciones para Office|Esta directiva controla si la Protección de aplicaciones para Office usa la aceleración de hardware para representar gráficos. Si habilita esta opción, la Protección de aplicaciones para Office usa la representación basada en software (CPU) y no cargará ningún controlador de gráficos de terceros ni interactuará con ningún hardware gráfico conectado.
+|Deshabilitar la protección de tipos de archivo no compatibles en la Protección de aplicaciones para Office|Esta directiva controla si la Protección de aplicaciones para Office bloqueará la apertura de tipos de archivo no admitidos o si habilitará la redirección a vista protegida.
+|Desactivar el acceso a cámara y micrófono para documentos abiertos en la Protección de aplicaciones para Office|Si se habilita esta directiva, se quitará el acceso de Office a la cámara y al micrófono dentro de la Protección de aplicaciones para Office.|
 |Restringir la impresión de documentos abiertos en la Protección de aplicaciones para Office|Si se habilita esta directiva, se limitarán las impresoras en las que un usuario puede imprimir desde un archivo abierto en la Protección de aplicaciones para Office. Por ejemplo, puede usar esta directiva para restringir a los usuarios que solo impriman en PDF.|
-|Impedir que los usuarios quiten la protección de aplicaciones para Office en archivos|Si se habilita esta directiva, se quitará la opción (dentro de la experiencia de la aplicación de Office) para deshabilitar la Protección de aplicaciones para Office o para abrir un archivo fuera de la Protección de aplicaciones para Office. <p> **Nota:** Los usuarios aún pueden omitir esta directiva quitando manualmente la propiedad mark-of-the-web del archivo o moviendo un documento a una ubicación de confianza.|
+|Impedir que los usuarios quiten la protección de aplicaciones para Office en archivos|Si habilita esta directiva, se quitará la opción (dentro de la experiencia de la aplicación de Office) para deshabilitar la Protección de aplicaciones para Office o para abrir un archivo fuera de la Protección de aplicaciones para Office. <p> **Nota:** Los usuarios aún pueden omitir esta directiva quitando manualmente la propiedad mark-of-the-web del archivo o moviendo un documento a una ubicación de confianza.|
 |
 
 > [!NOTE]
@@ -153,15 +153,15 @@ Si se produce algún problema al iniciar la Protección de aplicaciones para Off
 
 4. Escriba una descripción detallada del problema que experimentó y  los pasos que realizó en el cuadro Explicar con más detalle y, a continuación, **seleccione Siguiente**.
 
-5. Seleccione la burbuja junto a **Problema.** Asegúrese de que la categoría seleccionada es Protección de aplicaciones de Microsoft Defender seguridad y privacidad **\> – Office** y, a continuación, seleccione **Siguiente**.
+5. Seleccione la burbuja junto a **Problema.** Asegúrese de que la categoría seleccionada es Seguridad y privacidad protección de aplicaciones de **Microsoft Defender – \> Office** y, a continuación, **seleccione Siguiente**.
 
-6. Seleccione **Nuevos comentarios y,** a **continuación, Siguiente.**
+6. Seleccione **Nuevos comentarios** y, a **continuación, Siguiente.**
 
-7. Recopile seguimientos sobre el problema:
+7. Recopilar seguimientos sobre el problema:
 
    1. Expande **el icono Volver a crear mi** problema.
 
-   2. Si el problema que estás experimentando se produce mientras se ejecuta la Protección de aplicaciones, abre una instancia de Protección de aplicaciones. Abrir una instancia permite recopilar seguimientos adicionales desde dentro del contenedor de protección de aplicaciones.
+   2. Si el problema que estás experimentando se produce mientras se ejecuta la Protección de aplicaciones, abre una instancia de Protección de aplicaciones. Abrir una instancia permite recopilar seguimientos adicionales desde dentro del contenedor de la Protección de aplicaciones.
 
    3. Seleccione **Iniciar grabación** y espere a que el icono deje de girar y diga Detener *grabación.*
 
@@ -169,7 +169,7 @@ Si se produce algún problema al iniciar la Protección de aplicaciones para Off
 
    5. Selecciona el **icono Detener grabación.**
 
-   6. Mantén abiertas todas las instancias de protección de aplicaciones en ejecución, incluso durante unos minutos después del envío, para que también se puedan recopilar diagnósticos de contenedor.
+   6. Mantenga abiertas todas las instancias de protección de aplicaciones en ejecución, incluso durante unos minutos después del envío, para que también se pueda recopilar el diagnóstico del contenedor.
 
 8. Adjunte capturas de pantalla o archivos relevantes relacionados con el problema.
 
@@ -181,15 +181,15 @@ También puede enviar comentarios desde Office si el problema se produce cuando 
 
 ## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>Integración con Microsoft Defender para Endpoint y Microsoft Defender para Office 365
 
-Protección de aplicaciones para Office se integra con Microsoft Defender para endpoint para proporcionar supervisión y alertas sobre actividad malintencionada que se produce en el entorno aislado.
+Protección de aplicaciones para Office se integra con Microsoft Defender para Endpoint para proporcionar supervisión y alertas sobre actividad malintencionada que se produce en el entorno aislado.
 
-Microsoft Defender para Endpoint es una plataforma de seguridad diseñada para ayudar a las redes empresariales a prevenir, detectar, investigar y responder a amenazas avanzadas. Para obtener más información sobre esta plataforma, vea [Microsoft Defender para Endpoint.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) Para obtener más información sobre la incorporación de dispositivos a esta plataforma, consulta Incorporar dispositivos al servicio [Microsoft Defender para puntos de conexión.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)
+Microsoft Defender para endpoint es una plataforma de seguridad diseñada para ayudar a las redes empresariales a prevenir, detectar, investigar y responder a amenazas avanzadas. Para obtener más información sobre esta plataforma, vea [Microsoft Defender para Endpoint.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) Para obtener más información sobre la incorporación de dispositivos a esta plataforma, consulta Incorporar dispositivos al servicio [Microsoft Defender para puntos de conexión.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)
 
 También puede configurar Microsoft Defender para Office 365 para que funcione con Defender for Endpoint. Para obtener más información, consulta [Integrar Defender para Office 365 con Microsoft Defender para Endpoint.](integrate-office-365-ti-with-wdatp.md)
 
 ## <a name="limitations-and-considerations"></a>Limitaciones y consideraciones
 
-* Protección de aplicaciones para Office es un modo restringido que aísla documentos que no son de confianza para que no puedan acceder a recursos corporativos de confianza, una intranet, la identidad del usuario y archivos arbitrarios en el equipo. Como resultado, si un usuario intenta obtener acceso a una característica que tiene una dependencia en dicho acceso (por ejemplo, insertar una imagen desde un archivo local en el disco), se producirá un error en el acceso y se producirá un mensaje como el siguiente ejemplo. Para permitir que un documento que no es de confianza obtenga acceso a los recursos de confianza, los usuarios deben quitar la protección de protección de aplicaciones del documento.
+* Protección de aplicaciones para Office es un modo restringido que aísla documentos que no son de confianza para que no puedan acceder a recursos corporativos de confianza, una intranet, la identidad del usuario y archivos arbitrarios en el equipo. Como resultado, si un usuario intenta obtener acceso a una característica que depende de dicho acceso (por ejemplo, insertar una imagen desde un archivo local en el disco), el acceso producirá un error y se producirá un mensaje como el siguiente ejemplo. Para permitir que un documento que no es de confianza obtenga acceso a los recursos de confianza, los usuarios deben quitar la protección de protección de aplicaciones del documento.
 
   ![Cuadro de diálogo que le ayudará a mantener la seguridad, esta característica no está disponible](../../media/ag10-limitations.png)
 
@@ -227,4 +227,4 @@ Cuando se cumple esta heurística, Office creará previamente un contenedor de p
 
 * La selección de vínculos web ( `http` o ) no abre el `https` explorador.
 * Por el momento, no se admite pegar contenido o imágenes en formato de texto enriquecido (RTF) en documentos de Office abiertos con la Protección de aplicaciones.
-* Las actualizaciones de .NET hacen que los archivos no se abran en la Protección de aplicaciones. Como solución alternativa, los usuarios pueden reiniciar su dispositivo cuando se den cuenta de este error. Obtenga más información sobre el problema al recibir un mensaje de error al intentar abrir Windows Defender protección de aplicaciones [o espacio aislado de Windows.](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)
+* Las actualizaciones de .NET hacen que los archivos no se abran en la Protección de aplicaciones. Como solución alternativa, los usuarios pueden reiniciar el dispositivo cuando se encuentra con este error. Obtenga más información sobre el problema al recibir un mensaje de error al intentar abrir Windows Defender protección de aplicaciones [o espacio aislado de Windows.](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)
