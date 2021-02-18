@@ -20,34 +20,34 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: Explica cómo usar PowerShell para quitar licencias de Microsoft 365 asignadas anteriormente a los usuarios.
-ms.openlocfilehash: 7651f300dbf7a57ce163096d500401365e624663
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 8ae7ca1013e26a60f16177f2dab7ced4cc8b97a8
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235459"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289598"
 ---
-# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a><span data-ttu-id="67840-103">Quitar licencias de Microsoft 365 de cuentas de usuario con PowerShell</span><span class="sxs-lookup"><span data-stu-id="67840-103">Remove Microsoft 365 licenses from user accounts with PowerShell</span></span>
+# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a><span data-ttu-id="cdb63-103">Quitar licencias de Microsoft 365 de cuentas de usuario con PowerShell</span><span class="sxs-lookup"><span data-stu-id="cdb63-103">Remove Microsoft 365 licenses from user accounts with PowerShell</span></span>
 
-<span data-ttu-id="67840-104">*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*</span><span class="sxs-lookup"><span data-stu-id="67840-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
+<span data-ttu-id="cdb63-104">*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*</span><span class="sxs-lookup"><span data-stu-id="cdb63-104">*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*</span></span>
 
 >[!Note]
-><span data-ttu-id="67840-105">[Obtenga información sobre cómo quitar licencias de cuentas de usuario](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users) con el Centro de administración de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="67840-105">[Learn how to remove licenses from user accounts](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users) with the Microsoft 365 admin center.</span></span> <span data-ttu-id="67840-106">Para obtener una lista de recursos adicionales, vea [Administrar usuarios y grupos.](https://docs.microsoft.com/microsoft-365/admin/add-users/)</span><span class="sxs-lookup"><span data-stu-id="67840-106">For a list of additional resources, see [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).</span></span>
+><span data-ttu-id="cdb63-105">[Obtenga información sobre cómo quitar licencias de cuentas de usuario](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users) con el Centro de administración de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="cdb63-105">[Learn how to remove licenses from user accounts](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users) with the Microsoft 365 admin center.</span></span> <span data-ttu-id="cdb63-106">Para obtener una lista de recursos adicionales, vea [Administrar usuarios y grupos.](https://docs.microsoft.com/microsoft-365/admin/add-users/)</span><span class="sxs-lookup"><span data-stu-id="cdb63-106">For a list of additional resources, see [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/).</span></span>
 >
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="67840-107">Use el módulo de PowerShell Azure Active Directory para Graph</span><span class="sxs-lookup"><span data-stu-id="67840-107">Use the Azure Active Directory PowerShell for Graph module</span></span>
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a><span data-ttu-id="cdb63-107">Use el módulo de PowerShell Azure Active Directory para Graph</span><span class="sxs-lookup"><span data-stu-id="cdb63-107">Use the Azure Active Directory PowerShell for Graph module</span></span>
 
-<span data-ttu-id="67840-108">En primer [lugar, conéctese a su espacio empresarial de Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)</span><span class="sxs-lookup"><span data-stu-id="67840-108">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
+<span data-ttu-id="cdb63-108">En primer [lugar, conéctese a su espacio empresarial de Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)</span><span class="sxs-lookup"><span data-stu-id="cdb63-108">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).</span></span>
 
-<span data-ttu-id="67840-109">A continuación, haga una lista de los planes de licencia de su espacio empresarial con este comando.</span><span class="sxs-lookup"><span data-stu-id="67840-109">Next, list the license plans for your tenant with this command.</span></span>
+<span data-ttu-id="cdb63-109">A continuación, haga una lista de los planes de licencia de su espacio empresarial con este comando.</span><span class="sxs-lookup"><span data-stu-id="cdb63-109">Next, list the license plans for your tenant with this command.</span></span>
 
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-<span data-ttu-id="67840-110">A continuación, obtenga el nombre de inicio de sesión de la cuenta de la que desea quitar una licencia, también conocida como el nombre principal de usuario (UPN).</span><span class="sxs-lookup"><span data-stu-id="67840-110">Next, get the sign-in name of the account for which you want remove a license, also known as the user principal name (UPN).</span></span>
+<span data-ttu-id="cdb63-110">A continuación, obtenga el nombre de inicio de sesión de la cuenta de la que desea quitar una licencia, también conocida como el nombre principal de usuario (UPN).</span><span class="sxs-lookup"><span data-stu-id="cdb63-110">Next, get the sign-in name of the account for which you want remove a license, also known as the user principal name (UPN).</span></span>
 
-<span data-ttu-id="67840-111">Por último, especifique los nombres del plan de licencias y el inicio de sesión del usuario, quite los caracteres "<" y ">" y ejecute estos comandos.</span><span class="sxs-lookup"><span data-stu-id="67840-111">Finally, specify the user sign-in and license plan names, remove the "<" and ">" characters, and run these commands.</span></span>
+<span data-ttu-id="cdb63-111">Por último, especifique los nombres del plan de licencias y el inicio de sesión del usuario, quite los caracteres "<" y ">" y ejecute estos comandos.</span><span class="sxs-lookup"><span data-stu-id="cdb63-111">Finally, specify the user sign-in and license plan names, remove the "<" and ">" characters, and run these commands.</span></span>
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
@@ -57,73 +57,65 @@ $License.RemoveLicenses = (Get-AzureADSubscribedSku | Where-Object -Property Sku
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $license
 ```
 
-<span data-ttu-id="67840-112">Para quitar todas las licencias de una cuenta de usuario específica, especifique el nombre de inicio de sesión del usuario, quite los caracteres "<" y ">" y ejecute estos comandos.</span><span class="sxs-lookup"><span data-stu-id="67840-112">To remove all of the licenses for a specific user account, specify the user sign-in name, remove the "<" and ">" characters, and run these commands.</span></span>
+<span data-ttu-id="cdb63-112">Para quitar todas las licencias de una cuenta de usuario específica, especifique el nombre de inicio de sesión del usuario, quite los caracteres "<" y ">" y ejecute estos comandos.</span><span class="sxs-lookup"><span data-stu-id="cdb63-112">To remove all of the licenses for a specific user account, specify the user sign-in name, remove the "<" and ">" characters, and run these commands.</span></span>
 
 ```powershell
 $userUPN="<user sign-in name (UPN)>"
-$licensePlanList = Get-AzureADSubscribedSku
-$userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty AssignedLicenses | Select SkuID
+$userList = Get-AzureADUser -ObjectID $userUPN
+$Skus = $userList | Select -ExpandProperty AssignedLicenses | Select SkuID
 if($userList.Count -ne 0) {
-if($userList -is [array]) {
-for ($i=0; $i -lt $userList.Count; $i++) {
-$license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$license.SkuId = $userList[$i].SkuId
-$licenses.AddLicenses = $license
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
-$Licenses.AddLicenses = @()
-$Licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuID -Value $userList[$i].SkuId -EQ).SkuID
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
+    if($Skus -is [array])
+    {
+        $licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+        for ($i=0; $i -lt $Skus.Count; $i++) {
+            $Licenses.RemoveLicenses +=  (Get-AzureADSubscribedSku | Where-Object -Property SkuID -Value $Skus[$i].SkuId -EQ).SkuID   
+        }
+        Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
+    } else {
+        $licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+        $Licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuID -Value $Skus.SkuId -EQ).SkuID
+        Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
+    }
 }
-} else {
-$license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
-$licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$license.SkuId = $userList.SkuId
-$licenses.AddLicenses = $license
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
-$Licenses.AddLicenses = @()
-$Licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuID -Value $userList.SkuId -EQ).SkuID
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
-}}
 ```
 
-## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="67840-113">Use el Módulo Microsoft Azure Active Directory para Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="67840-113">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
+## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a><span data-ttu-id="cdb63-113">Use el Módulo Microsoft Azure Active Directory para Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="cdb63-113">Use the Microsoft Azure Active Directory Module for Windows PowerShell</span></span>
 
-<span data-ttu-id="67840-114">En primer [lugar, conéctese a su inquilino de Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)</span><span class="sxs-lookup"><span data-stu-id="67840-114">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+<span data-ttu-id="cdb63-114">En primer [lugar, conéctese a su espacio empresarial de Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)</span><span class="sxs-lookup"><span data-stu-id="cdb63-114">First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
    
-<span data-ttu-id="67840-115">Para ver la información del plan de licencias (**AccountSkuID**) de su organización, vea los temas siguientes:</span><span class="sxs-lookup"><span data-stu-id="67840-115">To view the licensing plan (**AccountSkuID**) information in your organization, see the following topics:</span></span>
+<span data-ttu-id="cdb63-115">Para ver la información del plan de licencias (**AccountSkuID**) de su organización, vea los temas siguientes:</span><span class="sxs-lookup"><span data-stu-id="cdb63-115">To view the licensing plan (**AccountSkuID**) information in your organization, see the following topics:</span></span>
     
-  - [<span data-ttu-id="67840-116">Ver licencias y servicios con PowerShell</span><span class="sxs-lookup"><span data-stu-id="67840-116">View licenses and services with PowerShell</span></span>](view-licenses-and-services-with-microsoft-365-powershell.md)
+  - [<span data-ttu-id="cdb63-116">Ver licencias y servicios con PowerShell</span><span class="sxs-lookup"><span data-stu-id="cdb63-116">View licenses and services with PowerShell</span></span>](view-licenses-and-services-with-microsoft-365-powershell.md)
     
-  - [<span data-ttu-id="67840-117">Ver la licencia de cuenta y los detalles del servicio con PowerShell</span><span class="sxs-lookup"><span data-stu-id="67840-117">View account license and service details with PowerShell</span></span>](view-account-license-and-service-details-with-microsoft-365-powershell.md)
+  - [<span data-ttu-id="cdb63-117">Ver la licencia de cuenta y los detalles del servicio con PowerShell</span><span class="sxs-lookup"><span data-stu-id="cdb63-117">View account license and service details with PowerShell</span></span>](view-account-license-and-service-details-with-microsoft-365-powershell.md)
     
-<span data-ttu-id="67840-118">Si usa el cmdlet **Get-MsolUser** sin usar el parámetro _All_, solo se devuelven las 500 primeras cuentas.</span><span class="sxs-lookup"><span data-stu-id="67840-118">If you use the **Get-MsolUser** cmdlet without using the _-All_ parameter, only the first 500 accounts are returned.</span></span>
+<span data-ttu-id="cdb63-118">Si usa el cmdlet **Get-MsolUser** sin usar el parámetro _All_, solo se devuelven las 500 primeras cuentas.</span><span class="sxs-lookup"><span data-stu-id="cdb63-118">If you use the **Get-MsolUser** cmdlet without using the _-All_ parameter, only the first 500 accounts are returned.</span></span>
     
-### <a name="removing-licenses-from-user-accounts"></a><span data-ttu-id="67840-119">Quitar licencias de cuentas de usuario</span><span class="sxs-lookup"><span data-stu-id="67840-119">Removing licenses from user accounts</span></span>
+### <a name="removing-licenses-from-user-accounts"></a><span data-ttu-id="cdb63-119">Quitar licencias de cuentas de usuario</span><span class="sxs-lookup"><span data-stu-id="cdb63-119">Removing licenses from user accounts</span></span>
 
-<span data-ttu-id="67840-120">Para quitar licencias de una cuenta de usuario existente, utilice la sintaxis siguiente:</span><span class="sxs-lookup"><span data-stu-id="67840-120">To remove licenses from an existing user account, use the following syntax:</span></span>
+<span data-ttu-id="cdb63-120">Para quitar licencias de una cuenta de usuario existente, utilice la sintaxis siguiente:</span><span class="sxs-lookup"><span data-stu-id="cdb63-120">To remove licenses from an existing user account, use the following syntax:</span></span>
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1>", "<AccountSkuId2>"...
 ```
 
 >[!Note]
-><span data-ttu-id="67840-121">PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory para Windows PowerShell ni los cmdlet que llevan **Msol** en su nombre.</span><span class="sxs-lookup"><span data-stu-id="67840-121">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="67840-122">Para seguir usando estos cmdlets, debe ejecutarlos desde Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="67840-122">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
+><span data-ttu-id="cdb63-121">PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory para Windows PowerShell ni los cmdlet que llevan **Msol** en su nombre.</span><span class="sxs-lookup"><span data-stu-id="cdb63-121">PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name.</span></span> <span data-ttu-id="cdb63-122">Para seguir usando estos cmdlets, debe ejecutarlos desde Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="cdb63-122">To continue using these cmdlets, you must run them from Windows PowerShell.</span></span>
 >
 
-<span data-ttu-id="67840-123">En este ejemplo se quita **la licencia litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) de la cuenta de usuario BelindaN@litwareinc.com.</span><span class="sxs-lookup"><span data-stu-id="67840-123">This example removes the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) license from the user account BelindaN@litwareinc.com.</span></span>
+<span data-ttu-id="cdb63-123">En este ejemplo se quita **la licencia litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) de la cuenta de usuario BelindaN@litwareinc.com.</span><span class="sxs-lookup"><span data-stu-id="cdb63-123">This example removes the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) license from the user account BelindaN@litwareinc.com.</span></span>
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
 >[!Note]
-><span data-ttu-id="67840-124">No puede usar el `Set-MsolUserLicense` cmdlet para desasignación de licencias *canceladas a* los usuarios.</span><span class="sxs-lookup"><span data-stu-id="67840-124">You cannot use the `Set-MsolUserLicense` cmdlet to unassign users from *canceled* licenses.</span></span> <span data-ttu-id="67840-125">Debe hacerlo individualmente para cada cuenta de usuario en el Centro de administración de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="67840-125">You must do this individually for each user account in the Microsoft 365 admin center.</span></span>
+><span data-ttu-id="cdb63-124">No puede usar el `Set-MsolUserLicense` cmdlet para desasignación de licencias *canceladas a* los usuarios.</span><span class="sxs-lookup"><span data-stu-id="cdb63-124">You cannot use the `Set-MsolUserLicense` cmdlet to unassign users from *canceled* licenses.</span></span> <span data-ttu-id="cdb63-125">Debe hacerlo individualmente para cada cuenta de usuario en el Centro de administración de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="cdb63-125">You must do this individually for each user account in the Microsoft 365 admin center.</span></span>
 >
 
-<span data-ttu-id="67840-126">Para quitar todas las licencias de un grupo de usuarios con licencia existentes, use uno de los métodos siguientes:</span><span class="sxs-lookup"><span data-stu-id="67840-126">To remove all licenses from a group of existing licensed users, use either of the following methods:</span></span>
+<span data-ttu-id="cdb63-126">Para quitar todas las licencias de un grupo de usuarios con licencia existentes, use uno de los métodos siguientes:</span><span class="sxs-lookup"><span data-stu-id="cdb63-126">To remove all licenses from a group of existing licensed users, use either of the following methods:</span></span>
   
-- <span data-ttu-id="67840-127">**Filtrar las cuentas en función de un atributo de cuenta existente** Para ello, use la siguiente sintaxis:</span><span class="sxs-lookup"><span data-stu-id="67840-127">**Filter the accounts based on an existing account attribute** To do this, use the following syntax:</span></span>
+- <span data-ttu-id="cdb63-127">**Filtrar las cuentas en función de un atributo de cuenta existente** Para ello, use la siguiente sintaxis:</span><span class="sxs-lookup"><span data-stu-id="cdb63-127">**Filter the accounts based on an existing account attribute** To do this, use the following syntax:</span></span>
     
 ```powershell
 $userArray = Get-MsolUser -All <FilterableAttributes> | where {$_.isLicensed -eq $true}
@@ -133,7 +125,7 @@ Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveL
 }
 ```
 
-<span data-ttu-id="67840-128">En este ejemplo se quitan todas las licencias de todas las cuentas de usuario del departamento de ventas de Estados Unidos.</span><span class="sxs-lookup"><span data-stu-id="67840-128">This example removes all licenses from all user accounts in the Sales department in the United States.</span></span>
+<span data-ttu-id="cdb63-128">En este ejemplo se quitan todas las licencias de todas las cuentas de usuario del departamento de ventas de Estados Unidos.</span><span class="sxs-lookup"><span data-stu-id="cdb63-128">This example removes all licenses from all user accounts in the Sales department in the United States.</span></span>
     
 ```powershell
 $userArray = Get-MsolUser -All -Department "Sales" -UsageLocation "US" | where {$_.isLicensed -eq $true}
@@ -143,9 +135,9 @@ Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveL
 }
 ```
 
-- <span data-ttu-id="67840-129">**Usar una lista de cuentas específicas para una licencia específica** Para ello, siga estos pasos:</span><span class="sxs-lookup"><span data-stu-id="67840-129">**Use a list of specific accounts for a specific license** To do this, perform the following steps:</span></span>
+- <span data-ttu-id="cdb63-129">**Usar una lista de cuentas específicas para una licencia específica** Para ello, siga estos pasos:</span><span class="sxs-lookup"><span data-stu-id="cdb63-129">**Use a list of specific accounts for a specific license** To do this, perform the following steps:</span></span>
     
-1. <span data-ttu-id="67840-130">Cree y guarde un archivo de texto que contenga una cuenta en cada línea de esta manera:</span><span class="sxs-lookup"><span data-stu-id="67840-130">Create and save a text file that contains one account on each line like this:</span></span>
+1. <span data-ttu-id="cdb63-130">Cree y guarde un archivo de texto que contenga una cuenta en cada línea de esta manera:</span><span class="sxs-lookup"><span data-stu-id="cdb63-130">Create and save a text file that contains one account on each line like this:</span></span>
     
   ```powershell
 akol@contoso.com
@@ -153,7 +145,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-2. <span data-ttu-id="67840-131">Utilice la sintaxis siguiente:</span><span class="sxs-lookup"><span data-stu-id="67840-131">Use the following syntax:</span></span>
+2. <span data-ttu-id="cdb63-131">Utilice la sintaxis siguiente:</span><span class="sxs-lookup"><span data-stu-id="cdb63-131">Use the following syntax:</span></span>
     
   ```powershell
   $x=Get-Content "<FileNameAndPath>"
@@ -162,7 +154,7 @@ kakers@contoso.com
   Set-MsolUserLicense -UserPrincipalName $x[$i] -RemoveLicenses "<AccountSkuId1>","<AccountSkuId2>"...
   }
   ```
-<span data-ttu-id="67840-132">En este ejemplo se quita la licencia **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) de las cuentas de usuario definidas en el archivo de texto C:\My Documents\Accounts.txt.</span><span class="sxs-lookup"><span data-stu-id="67840-132">This example removes the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) license from the user accounts defined in the text file C:\My Documents\Accounts.txt.</span></span>
+<span data-ttu-id="cdb63-132">En este ejemplo se quita la licencia **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) de las cuentas de usuario definidas en el archivo de texto C:\My Documents\Accounts.txt.</span><span class="sxs-lookup"><span data-stu-id="cdb63-132">This example removes the **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) license from the user accounts defined in the text file C:\My Documents\Accounts.txt.</span></span>
     
   ```powershell
   $x=Get-Content "C:\My Documents\Accounts.txt"
@@ -172,7 +164,7 @@ kakers@contoso.com
   }
   ```
 
-<span data-ttu-id="67840-133">Para quitar todas las licencias de todas las cuentas de usuario existentes, use la siguiente sintaxis:</span><span class="sxs-lookup"><span data-stu-id="67840-133">To remove all licenses from all existing user accounts, use the following syntax:</span></span>
+<span data-ttu-id="cdb63-133">Para quitar todas las licencias de todas las cuentas de usuario existentes, use la siguiente sintaxis:</span><span class="sxs-lookup"><span data-stu-id="cdb63-133">To remove all licenses from all existing user accounts, use the following syntax:</span></span>
   
 ```powershell
 $userArray = Get-MsolUser -All | where {$_.isLicensed -eq $true}
@@ -182,13 +174,13 @@ Set-MsolUserLicense -UserPrincipalName $userArray[$i].UserPrincipalName -RemoveL
 }
 ```
 
-<span data-ttu-id="67840-134">Otra forma de liberar una licencia consiste en eliminar la cuenta de usuario.</span><span class="sxs-lookup"><span data-stu-id="67840-134">Another way to free up a license is by deleting the user account.</span></span> <span data-ttu-id="67840-135">Para obtener más información, vea [Eliminar y restaurar cuentas de usuario con PowerShell.](delete-and-restore-user-accounts-with-microsoft-365-powershell.md)</span><span class="sxs-lookup"><span data-stu-id="67840-135">For more information, see [Delete and restore user accounts with PowerShell](delete-and-restore-user-accounts-with-microsoft-365-powershell.md).</span></span>
+<span data-ttu-id="cdb63-134">Otra forma de liberar una licencia consiste en eliminar la cuenta de usuario.</span><span class="sxs-lookup"><span data-stu-id="cdb63-134">Another way to free up a license is by deleting the user account.</span></span> <span data-ttu-id="cdb63-135">Para obtener más información, vea [Eliminar y restaurar cuentas de usuario con PowerShell.](delete-and-restore-user-accounts-with-microsoft-365-powershell.md)</span><span class="sxs-lookup"><span data-stu-id="cdb63-135">For more information, see [Delete and restore user accounts with PowerShell](delete-and-restore-user-accounts-with-microsoft-365-powershell.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="67840-136">Vea también</span><span class="sxs-lookup"><span data-stu-id="67840-136">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cdb63-136">Vea también</span><span class="sxs-lookup"><span data-stu-id="cdb63-136">See also</span></span>
 
-[<span data-ttu-id="67840-137">Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="67840-137">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
+[<span data-ttu-id="cdb63-137">Administrar cuentas de usuario, licencias y grupos de Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="cdb63-137">Manage Microsoft 365 user accounts, licenses, and groups with PowerShell</span></span>](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
-[<span data-ttu-id="67840-138">Administrar Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="67840-138">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
+[<span data-ttu-id="cdb63-138">Administrar Microsoft 365 con PowerShell</span><span class="sxs-lookup"><span data-stu-id="cdb63-138">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[<span data-ttu-id="67840-139">Introducción a PowerShell para Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="67840-139">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
+[<span data-ttu-id="cdb63-139">Introducción a PowerShell para Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="cdb63-139">Getting started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
 
