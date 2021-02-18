@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: d0bd5770f347766638af0f0e66b9f961b3721697
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d71e33aa0a04bd52f707038ac31e98bef68f27b0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926599"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287238"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
@@ -81,6 +81,30 @@ Antes de crear un buzón compartido, asegúrese de leer [acerca de los buzones c
 7. Seleccione **Cerrar**.
 
 Tiene un buzón compartido que incluye un calendario compartido. Ahora, vaya al siguiente paso: bloquear el inicio para la cuenta de buzón compartido.
+
+## <a name="which-permissions-should-you-use"></a>¿Qué permisos debe usar?
+
+Puede usar los siguientes permisos con un buzón compartido:
+
+- **Acceso completo**: el permiso Acceso completo permite al usuario iniciar sesión en el buzón compartido y actuar como el propietario de ese buzón. Después de acceder al buzón compartido, un usuario puede crear elementos de calendario, leer, ver, eliminar y cambiar los mensajes de correo electrónico, y crear tareas y contactos de calendario. Sin embargo, un usuario con un permiso de Acceso total no puede enviar mensajes de correo electrónico desde el buzón compartido a menos que tenga un permiso para Enviar como o En nombre de.
+
+- **Enviar como**: el permiso para Enviar como le permite al usuario suplantar el buzón compartido al enviar un mensaje de correo. Por ejemplo, si Carlos inicia sesión en el buzón compartido del departamento de marketing y envía un correo electrónico, el remitente de dicho correo será el departamento de marketing.
+
+- **Enviar en nombre de**: el permiso Enviar en nombre de le permite al usuario enviar mensajes en nombre del buzón compartido. Por ejemplo, si Sergio inicia sesión en el buzón compartido del Edificio de recepción 32 y envía un mensaje de correo electrónico, los destinatarios verán el mensaje como enviado por “Sergio en nombre del Edificio de recepción 32”. No puede usar el CEF para conceder permisos de Enviar en nombre de. En este caso, debe utilizar el cmdlet **Set-Mailbox** con el parámetro _GrantSendonBehalf_.
+
+### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>Usar el EAC para editar la delegación de buzones compartidos
+
+1. En el EAC, vaya a **Destinatarios** \> **Compartidos**. Seleccione el buzón de correo compartido y, después, **Editar** ![Icono de edición](../../media/ITPro-EAC-EditIcon.png)
+
+2. Seleccione **Delegación de buzón**.
+
+3. Para conceder o quitar los permisos de Acceso total y Enviar como, seleccione **Agregar** ![Icono Agregar](../../media/ITPro-EAC-AddIcon.png) o **Quitar** ![Icono de Quitar](../../media/ITPro-EAC-RemoveIcon.gif) y seleccione los usuarios a los que quiera conceder los permisos.
+
+   > [!NOTE]
+   > El permiso de Acceso completo permite a los usuarios abrir el buzón, así como crear y modificar sus elementos. El permiso Enviar como permite a cualquiera que no sea el propietario del buzón enviar correo electrónico desde este buzón compartido. Ambos permisos son necesarios para que el buzón compartido funcione correctamente.
+
+4. Seleccione **Guardar** para guardar los cambios.
+
 
 ## <a name="block-sign-in-for-the-shared-mailbox-account"></a>Bloquear el inicio de sesión de la cuenta de buzón compartido
 
@@ -185,8 +209,5 @@ Cuando creó el buzón compartido, creó automáticamente un calendario comparti
 [Quitar la licencia de un buzón compartido](remove-license-from-shared-mailbox.md)
 
 [Resolver problemas con los buzones compartidos](resolve-issues-with-shared-mailboxes.md)
-
-
-
 
 
