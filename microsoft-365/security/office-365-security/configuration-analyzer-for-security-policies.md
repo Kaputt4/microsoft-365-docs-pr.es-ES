@@ -18,21 +18,21 @@ ms.collection:
 description: Los administradores pueden aprender a usar el analizador de configuración para buscar y corregir directivas de seguridad que están por debajo de las directivas de seguridad preestablecidas Protección estándar y Protección estricta.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a78452cb3a7e4cb65c72d98b9322f217309a6d6f
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 6daa3ef2c3cd758022fc9dad325df4c5e4f38647
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165912"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288926"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizador de configuración para directivas de protección en EOP y Microsoft Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 El analizador de configuración del Centro de seguridad y cumplimiento de & proporciona una ubicación central para buscar y corregir directivas de seguridad en las que la configuración se encuentra por debajo de la configuración de protección estándar y de perfil de protección estricta en directivas de seguridad [preestablecidas.](preset-security-policies.md)
 
@@ -41,7 +41,7 @@ El analizador de configuración analiza los siguientes tipos de directivas:
 - **Directivas de Exchange Online Protection (EOP):** esto incluye organizaciones de Microsoft 365 con buzones de Exchange Online y organizaciones EOP independientes sin buzones de Exchange Online:
 
   - [Directivas contra correo no deseado.](configure-your-spam-filter-policies.md)
-  - [Directivas antimalware](configure-anti-malware-policies.md).
+  - [Directivas antimalware.](configure-anti-malware-policies.md)
   - [Directivas de protección contra suplantación de identidad de EOP.](set-up-anti-phishing-policies.md#spoof-settings)
 
 - Directivas de Microsoft Defender para **Office 365:** esto incluye las organizaciones con suscripciones de complemento de Microsoft 365 E5 o Defender para Office 365:
@@ -68,12 +68,12 @@ Los **valores de** configuración **de** directiva Estándar y Estricto que se u
   - Para usar el analizador de configuración **y** realizar actualizaciones de  las directivas de seguridad, debe ser miembro de los grupos de roles Administración de la organización o **Administrador de** seguridad.
   - Para obtener acceso de solo lectura al analizador de configuración, debe ser miembro de los grupos de roles Lector **global** o **Lector de** seguridad.
 
-  Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+  Para más información, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
   > [!NOTE]
   >  
-  > - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  > 
+  > - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  >
   > - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 ## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>Usar el analizador de configuración en el Centro de & cumplimiento
@@ -86,7 +86,7 @@ El analizador de configuración tiene dos pestañas principales:
 
 - **Configuración y recomendaciones:** elige Estándar o Estricto y compara dicha configuración con las directivas de seguridad existentes. En los resultados, puedes ajustar los valores de la configuración para que suban al mismo nivel que Estándar o Estricto.
 
-- **Historial y análisis de deriva de** configuración: esta vista le permite realizar un seguimiento de los cambios de directiva con el tiempo.
+- **Historial y análisis de deriva de** configuración: esta vista le permite realizar un seguimiento de los cambios de directiva a lo largo del tiempo.
 
 ### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Ficha Configuración y recomendaciones en el analizador de configuración
 
@@ -94,7 +94,7 @@ De forma predeterminada, la pestaña se abre en la comparación con el perfil de
 
 ![Vista Configuración y recomendaciones en el analizador de configuración](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
-De forma predeterminada, la columna Nombre de grupo **o** configuración de directiva contiene una vista contraida de los distintos tipos de directivas de seguridad y el número de configuraciones que deben mejorarse (si las hay). Los tipos de directivas son:
+De forma predeterminada, la columna Nombre de grupo **o** configuración de directiva contiene una vista contraida de los distintos tipos de directivas de seguridad y el número de configuraciones que necesitan mejora (si las hay). Los tipos de directivas son:
 
 - **Contra correo no deseado**
 - **Anti-phishing**
@@ -108,7 +108,7 @@ En la vista predeterminada, todo está contraído. Junto a cada directiva, hay u
 - **Ámbar:** un número reducido de configuraciones en las directivas existentes no son tan seguras como el perfil de protección.
 - **Rojo:** un número significativo de configuraciones en las directivas existentes no son tan seguras como el perfil de protección. Puede ser unas pocas opciones de configuración en muchas directivas o muchas opciones de configuración en una directiva.
 
-Para comparaciones favorables, verá el texto: **Todas las opciones de configuración siguen las** \<**Standard** or **Strict**\> **recomendaciones.** De lo contrario, verás el número de opciones de configuración recomendadas para cambiar.
+Para comparaciones favorables, verá el texto: Todas **las opciones de configuración siguen las** \<**Standard** or **Strict**\> **recomendaciones.** De lo contrario, verás el número de opciones de configuración recomendadas para cambiar.
 
 Si expandes el **nombre de configuración o** grupo de directivas, se revelan todas las directivas y la configuración asociada en cada directiva específica que requiera atención. O bien, puede expandir un tipo específico de directiva (por **ejemplo,** Contra correo electrónico no deseado) para ver solo la configuración de esos tipos de directivas que requieren su atención.
 

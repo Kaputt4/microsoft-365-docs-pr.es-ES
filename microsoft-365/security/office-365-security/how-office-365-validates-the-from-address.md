@@ -19,21 +19,21 @@ description: Los administradores pueden obtener información sobre los tipos de 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7c2cbec49082fbded857dde13f73516fd3e0fd5
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: f8ced200c2e521533c1dec8a9d0917add7ca058f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167520"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287824"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Cómo EOP valida la dirección De para evitar la suplantación de identidad
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Los ataques de suplantación de identidad son una amenaza constante para cualquier organización de correo electrónico. Además de usar direcciones de correo electrónico de remitente suplantadas [(falsificadas),](anti-spoofing-protection.md)los atacantes suelen usar valores en la dirección De que infringen los estándares de Internet. Para ayudar a evitar este tipo de suplantación de identidad, Exchange Online Protection (EOP) y Outlook.com ahora requieren que los mensajes entrantes incluyan una dirección De compatible con RFC, como se describe en este artículo. Esta aplicación se habilitó en noviembre de 2017.
 
@@ -41,7 +41,7 @@ Los ataques de suplantación de identidad son una amenaza constante para cualqui
 
 - Si recibe periódicamente correo electrónico de organizaciones que tienen direcciones De con formato no conforme a lo descrito en este artículo, anime a estas organizaciones a actualizar sus servidores de correo electrónico para que cumplan con los estándares de seguridad modernos.
 
-- El campo Remitente relacionado (usado por Enviar en nombre de y las listas de distribución de correo) no se ve afectado por estos requisitos. Para obtener más información, consulte la siguiente entrada de blog: ¿Qué queremos decir cuando nos referimos al ["remitente" de un correo electrónico?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
+- El campo Remitente relacionado (usado por Enviar en nombre de y las listas de distribución de correo) no se ve afectado por estos requisitos. Para obtener más información, consulte la siguiente entrada de blog: ¿Qué queremos decir cuando nos referimos al ["remitente" de un correo electrónico?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)
 
 ## <a name="an-overview-of-email-message-standards"></a>Información general sobre los estándares de mensajes de correo electrónico
 
@@ -49,7 +49,7 @@ Un mensaje de correo electrónico SMTP estándar está compuesto por el *sobre d
 
 - La dirección (también conocida como dirección MAIL FROM, remitente P1 o remitente del sobre) es la dirección de correo electrónico que se usa en la transmisión `5321.MailFrom` SMTP del mensaje.  Esta dirección de correo electrónico normalmente se registra en el campo de encabezado **Return-Path** en el encabezado del mensaje (aunque es posible que el remitente designe una dirección de correo electrónico de **return-path** diferente).
 
-- La dirección de correo electrónico (también conocida como la dirección De o el remitente P2) es la dirección de correo electrónico del campo de encabezado De y es la dirección de correo electrónico del remitente que se muestra en los clientes de `5322.From` correo electrónico.  La dirección De es el tema central de los requisitos de este artículo.
+- El (también conocido como la dirección De o el remitente P2) es la dirección de correo electrónico en el campo de encabezado De y es la dirección de correo electrónico del remitente que se muestra en los clientes de `5322.From` correo electrónico.  La dirección De es el tema central de los requisitos de este artículo.
 
 La dirección De se define en detalle en varias RFC (por ejemplo, RFC 5322 secciones 3.2.3, 3.4 y 3.4.1, y [RFC 3696](https://tools.ietf.org/html/rfc3696)). Hay muchas variaciones en el direccionamiento y lo que se considera válido o no válido. Para que sea sencillo, se recomienda el siguiente formato y definiciones:
 
@@ -61,20 +61,20 @@ La dirección De se define en detalle en varias RFC (por ejemplo, RFC 5322 secci
   - Si la dirección De incluye un nombre para mostrar, el valor EmailAddress debe ir entre corchetes angulares (< >) como se muestra.
   - Microsoft recomienda encarecidamente que inserte un espacio entre el nombre para mostrar y la dirección de correo electrónico.
 
-- **EmailAddress**: una dirección de correo electrónico tiene el `local-part@domain` formato:
+- **EmailAddress**: Una dirección de correo electrónico tiene el `local-part@domain` formato:
 
-  - **elemento local:** cadena que identifica el buzón asociado con la dirección. Este valor es único dentro del dominio. A menudo, se usa el nombre de usuario o GUID del propietario del buzón.
+  - **elemento local:** cadena que identifica el buzón asociado a la dirección. Este valor es único dentro del dominio. A menudo, se usa el nombre de usuario o GUID del propietario del buzón.
   - **dominio:** el nombre de dominio completo (FQDN) del servidor de correo electrónico que hospeda el buzón identificado por la parte local de la dirección de correo electrónico.
 
   Estas son algunas consideraciones adicionales para el valor EmailAddress:
 
   - Solo una dirección de correo electrónico.
   - Se recomienda no separar los corchetes angulares con espacios.
-  - No incluya texto adicional después de la dirección de correo electrónico.
+  - No incluyas texto adicional después de la dirección de correo electrónico.
 
 ## <a name="examples-of-valid-and-invalid-from-addresses"></a>Ejemplos de direcciones From válidas e no válidas
 
-Las siguientes direcciones de correo electrónico De son válidas:
+Las siguientes direcciones de correo electrónico de Origen son válidas:
 
 - `From: sender@contoso.com`
 
@@ -114,7 +114,7 @@ Las siguientes direcciones de correo electrónico de Origen no son válidas:
 
 No puede usar el valor para `From: <>` suprimir las respuestas automáticas. En su lugar, debe configurar un registro MX nulo para su dominio personalizado. Las respuestas automáticas (y todas las respuestas) se suprimen de forma natural porque no hay ninguna dirección publicada a la que el servidor de respuesta pueda enviar mensajes.
 
-- Elija un dominio de correo electrónico que no pueda recibir correo electrónico. Por ejemplo, si el dominio principal es contoso.com, puede elegir noreply.contoso.com.
+- Elija un dominio de correo electrónico que no pueda recibir correo electrónico. Por ejemplo, si el dominio principal está contoso.com, puede elegir noreply.contoso.com.
 
 - El registro MX nulo para este dominio consta de un único punto.
 

@@ -15,21 +15,21 @@ ms.custom:
 description: Obtenga información sobre cómo Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos híbridos e independientes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b84ac26333163caec6117cf042044b9bbfad0a4f
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e8e3d44cb39e3569179d4155e32a8c11e0a5be56
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165468"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286890"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
--    [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
--    [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Exchange Online Protection (EOP) es el servicio de filtrado basado en la nube que ayuda a proteger su organización contra correo no deseado y malware. EOP se incluye en todas las organizaciones de Microsoft 365 con buzones de Exchange Online. Sin embargo, EOP también está disponible en los siguientes escenarios locales:
 
@@ -47,11 +47,11 @@ Para comprender el funcionamiento de EOP, es muy útil ver cómo se procesa el c
 
 :::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="Gráfico de correo electrónico de Internet o comentarios de clientes que pasan a EOP y a través de la conexión, antimalware, filtrado de directivas de barra diagonal de flujo de correo y filtrado de contenido, antes del veredicto de correo no deseado, cuarentena o entrega de correo del usuario final.":::
 
-- Cuando un mensaje entrante entra en EOP, pasa inicialmente a través del filtrado de conexiones, que comprueba la reputación del remitente. La mayoría del correo no deseado se detiene en este punto y EOP lo rechaza. Para obtener más información, consulte [Configurar filtrado de la conexión](configure-the-connection-filter-policy.md).
+- Cuando un mensaje entrante entra en EOP, inicialmente pasa a través del filtrado de conexiones, lo que comprueba la reputación del remitente. La mayoría del correo no deseado se detiene en este punto y EOP lo rechaza. Para obtener más información, consulte [Configurar filtrado de la conexión](configure-the-connection-filter-policy.md).
 
 - A continuación, se inspecciona el mensaje en busca de signos de malware. Si se encuentra malware en el mensaje o en los datos adjuntos, el mensaje se enruta a un almacén de cuarentena de solo administrador. Puede obtener más información sobre cómo configurar antimalware [aquí.](configure-anti-malware-policies.md)
 
-- Los mensajes continúan mediante el filtrado de directivas, donde se evalúan con las reglas de flujo de correo personalizadas (también conocidas como reglas de transporte) que se crean o aplican a partir de una plantilla. Por ejemplo, puede tener una regla que envíe una notificación a un administrador cuando llegue el correo de un remitente específico. Las comprobaciones de prevención de pérdida de datos (DLP) también se realizan en este momento (Exchange Enterprise CAL con servicios).
+- Los mensajes continúan mediante el filtrado de directivas, donde se evalúan con las reglas de flujo de correo personalizadas (también conocidas como reglas de transporte) que se crean o aplican desde una plantilla. Por ejemplo, puede tener una regla que envíe una notificación a un administrador cuando llegue el correo de un remitente específico. Las comprobaciones de prevención de pérdida de datos (DLP) también se realizan en este momento (Exchange Enterprise CAL con servicios).
 
 - A continuación, el mensaje pasa por el filtrado de contenido (también conocido como correo no deseado). Un mensaje que este filtro determina que es correo no deseado o *suplantación* de identidad se puede enviar a la cuarentena, o la carpeta de correo no deseado de un usuario, entre otras opciones. Para obtener más información, vea [Configure anti-spam policies](configure-your-spam-filter-policies.md) and [Configure anti-phishing policies](configure-anti-phishing-policies-eop.md).
 
@@ -93,7 +93,7 @@ EOP realiza el equilibrio de carga entre los centros de datos, pero solo dentro 
 
   - Canadá: los buzones de Exchange Online se encuentran en centros de datos de Canadá. Todos los mensajes se enrutar a través de centros de datos locales para el filtrado de EOP. Los mensajes en cuarentena se almacenan en el centro de datos donde se encuentra el espacio empresarial.
 
-  - Estados Unidos: los buzones de Exchange Online se encuentran en centros de datos de Estados Unidos. Todos los mensajes se enrutar a través de centros de datos locales para el filtrado de EOP. Los mensajes en cuarentena se almacenan en el centro de datos donde se encuentra el inquilino.
+  - Estados Unidos: los buzones de Exchange Online se encuentran en centros de datos de Estados Unidos. Todos los mensajes se enrutar a través de centros de datos locales para el filtrado de EOP. Los mensajes en cuarentena se almacenan en el centro de datos donde se encuentra el espacio empresarial.
 
 - Para la nube de la comunidad de organismos oficiales (GCC), todos los buzones de Exchange Online están ubicados en centros de datos de Estados Unidos y los mensajes se enrutan a través de centros de datos de Estados Unidos para el filtrado de EOP.
 

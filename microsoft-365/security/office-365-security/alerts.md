@@ -21,20 +21,20 @@ description: Obtenga información sobre cómo usar las características de alert
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f4af23ac1fd3c7272fc60b2228bf808351cb4d2b
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: d4c92a0bccded461d272d84e0f5b4d06a3b44713
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176032"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287094"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>Alertas en el Centro de & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
 
 Use las características de alertas del Centro de seguridad & cumplimiento para ver y administrar alertas para su organización, incluida la administración de alertas avanzadas como parte de la información general de [Microsoft Cloud App Security.](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
 
@@ -48,7 +48,7 @@ Las alertas se encuentran en el Centro de & cumplimiento. Aquí te explicamos c�
 
 2. Inicie sesión con su cuenta profesional o educativa.
 
-3. En el panel izquierdo, haga clic en **Alertas** para ver las características de alertas.
+3. En el panel izquierdo, haz clic en **Alertas** para ver las características de alertas.
 
 ### <a name="to-go-to-the-security--compliance-center-using-the-app-launcher"></a>Para ir al Centro de seguridad & cumplimiento con el iniciador de aplicaciones
 

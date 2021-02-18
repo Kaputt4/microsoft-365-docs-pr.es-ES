@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c0bb1701cf030692bc98218b38be00cae57a2bd
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 1d16c0afc675ba759e392c9fe9a44c42b89dbad0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080706"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287658"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Evaluar Microsoft Defender para Office 365
 
@@ -36,13 +36,13 @@ Llevar a cabo una evaluación completa del producto de seguridad puede ayudarte 
 
 La experiencia de evaluación de Microsoft Defender para [Office 365](office-365-atp.md) está diseñada para eliminar las complejidades de la configuración de dispositivos y entornos para que pueda centrarse en evaluar las capacidades de la solución de seguridad. Solo se aplica a la protección de correo electrónico y no a SharePoint, Clientes de Office o Teams.
 
-Si aún no tiene una licencia compatible con Microsoft Defender para Office 365, puede iniciar una evaluación gratuita de [30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) días y probar las capacidades en el Centro de seguridad y cumplimiento de Office 365 & ( https://protection.office.com/homepage) . Disfrutará de la configuración rápida y podrá desactivarla fácilmente si es necesario.
+Si aún no tiene una licencia compatible con Microsoft Defender para Office 365, puede iniciar una evaluación gratuita de [30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) días y probar las capacidades en el Centro de seguridad y cumplimiento de Office 365 & ( https://protection.office.com/homepage) . Podrá disfrutar de la configuración rápida y puede desactivarla fácilmente si es necesario.
 
 ## <a name="how-the-evaluation-works"></a>Cómo funciona la evaluación
 
 Defender para Office 365 en modo de evaluación crea directivas de correo electrónico de Defender para Office 365 que registra veredictos, como malware, pero no actúan en mensajes. No es necesario cambiar la configuración del registro MX.
 
-Con el modo de evaluación, [las directivas de](atp-safe-attachments.md)suplantación de identidad ( Safe Attachments , [Vínculos](atp-safe-links.md)seguros y [suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) de identidad) están configuradas en su nombre. Todas las directivas de Defender para Office 365 se crean en modo de no aplicación en segundo plano y no son visibles para usted.
+Con el modo de evaluación, [los datos](atp-safe-attachments.md)adjuntos seguros, [los](atp-safe-links.md)vínculos seguros y las directivas de suplantación contra [suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) de identidad se establecen en su nombre. Todas las directivas de Defender para Office 365 se crean en modo de no aplicación en segundo plano y no son visibles para usted.
 
 Como parte de la configuración, el modo de evaluación también configura el [filtrado mejorado para conectores.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Mejora la precisión del filtrado al conservar la dirección IP y la información del remitente, que de lo contrario se pierden cuando el correo pasa a través de una puerta de enlace de seguridad de correo electrónico (ESG) delante de Defender para Office 365. El filtrado mejorado también mejora la precisión de filtrado de las directivas contra correo electrónico no deseado y contra suplantación de identidad de Exchange Online Protection (EOP).
 
@@ -68,7 +68,7 @@ Para obtener acceso a la evaluación, debe cumplir los requisitos de licencia. C
 - Microsoft 365 E5, Seguridad de Microsoft 365 E5
 - Office 365 E5
 
-Si no tiene ninguna de estas licencias, deberá obtener una licencia de prueba.
+Si no tiene una de estas licencias, necesitará obtener una licencia de prueba.
 
 #### <a name="trial"></a>Prueba
 
@@ -83,7 +83,7 @@ Tendrá una ventana de 30 días con la evaluación para supervisar e informar so
 Los roles de Exchange Online son necesarios para configurar Defender para Office 365 en modo de evaluación.
 
 - [Más información sobre los permisos en Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
-- [Más información sobre la asignación de roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
+- [Más información sobre la asignación de roles de administrador](../../admin/add-users/assign-admin-roles.md)
 
 Se necesitan los siguientes roles:
 
@@ -107,7 +107,7 @@ El filtrado mejorado para los conectores permitirá a los inquilinos usar la pro
 
 Las direcciones URL se detonarán durante el flujo de correo. Si no desea que se detonan direcciones URL específicas, administre la lista de direcciones URL permitidas correctamente. Consulte [Administrar la lista de permitidos o bloqueados del espacio empresarial](tenant-allow-block-list.md) para obtener más información.
 
-Los vínculos url de los cuerpos de los mensajes de correo electrónico no se encapsulan para reducir el impacto en el cliente.
+Los vínculos url de los cuerpos de mensajes de correo electrónico no se encapsulan para reducir el impacto del cliente.
 
 ### <a name="email-routing"></a>Enrutamiento de correo electrónico
 
@@ -116,7 +116,7 @@ Prepare los detalles correspondientes que necesitará para configurar cómo se e
 Entre los escenarios de enrutamiento de correo electrónico admitidos se incluyen:
 
 - **Asociado** de terceros o proveedor de servicios local: el conector de entrada que desea evaluar usa un proveedor de terceros o está usando una solución para la seguridad de correo electrónico local.
-- **Microsoft Exchange Online protección** de correo electrónico: el espacio empresarial que desea evaluar usa Office 365 para la seguridad del correo electrónico y el registro de Mail Exchange (MX) apunta a Microsoft.
+- **Microsoft Exchange Online protección** de correo electrónico: el inquilino que desea evaluar usa Office 365 para la seguridad de correo electrónico y el registro de Exchange de correo (MX) apunta a Microsoft.
 
 ### <a name="email-security-gateway"></a>Puerta de enlace de seguridad de correo electrónico
 
@@ -158,7 +158,7 @@ El informe de evaluación de Microsoft Defender para Office 365 se genera una ve
 
 ### <a name="exchange-rules-optional"></a>Reglas de Exchange (opcional)
 
-Si tiene una puerta de enlace existente, al habilitar el modo de evaluación se activará el filtrado mejorado para los conectores. Esto mejora la precisión de filtrado modificando la dirección IP del remitente entrante. Esto puede cambiar los veredictos de filtro y, si no omite Exchange Online Protection, esto puede alterar la entrega de determinados mensajes. En este caso, es posible que desee omitir temporalmente el filtrado para analizar el impacto. Para omitir, vaya al Centro de administración de Exchange y cree una directiva de SCL -1 (si aún no tiene una). Para obtener más información sobre los componentes de regla y cómo funcionan, consulte Reglas de flujo de correo (reglas de transporte) en Exchange Online.
+Si tiene una puerta de enlace existente, al habilitar el modo de evaluación se activará el filtrado mejorado para los conectores. Esto mejora la precisión de filtrado modificando la dirección IP del remitente entrante. Esto puede cambiar los veredictos de filtro y si no omite Exchange Online Protection, esto puede alterar la entrega de determinados mensajes. En este caso, es posible que desee omitir temporalmente el filtrado para analizar el impacto. Para omitir, vaya al Centro de administración de Exchange y cree una directiva de SCL -1 (si aún no tiene una). Para obtener más información sobre los componentes de regla y cómo funcionan, consulte Reglas de flujo de correo (reglas de transporte) en Exchange Online.
 
 ## <a name="evaluate-capabilities"></a>Funcionalidades de evaluación
 
@@ -170,6 +170,6 @@ Puede ir a Configuración **para** actualizar el enrutamiento o desactivar la ev
 
 ## <a name="provide-feedback"></a>Enviar comentarios
 
-Sus comentarios nos ayudan a mejorar la protección de su entorno frente a ataques avanzados. Comparta su experiencia e impresiones de las capacidades del producto y los resultados de la evaluación.
+Sus comentarios nos ayudan a mejorar la protección de su entorno frente a ataques avanzados. Comparta su experiencia y impresiones de las capacidades del producto y los resultados de la evaluación.
 
 Seleccione **Enviar comentarios** para que sepamos lo que piensa.

@@ -15,21 +15,21 @@ ms.custom:
 description: En este artículo, aprenderá sobre los informes y las herramientas de solución de problemas disponibles para los administradores de Microsoft Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86c9eb0ee050c4c1a40ef7f29ea3d01dc202be9a
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 783c7ea0aca47c805daf66592b401a98f739d071
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166680"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288084"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Informes y seguimiento de mensajes en EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 En organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP ofrece muchos informes diferentes que pueden ayudarle a determinar el estado general y el estado de su organización. También hay herramientas para ayudarle a solucionar problemas de eventos específicos (por ejemplo, un mensaje que no llegue a sus destinatarios) e informes de auditoría para ayudar con los requisitos de cumplimiento.
 
@@ -45,13 +45,13 @@ En organizaciones de Microsoft 365 con buzones en Exchange Online o organizacion
 
 Consulte los siguientes recursos para obtener más información:
 
-- [Informes de Microsoft 365 en el centro de administración: grupos de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
+- [Informes de Microsoft 365 en el centro de administración: grupos de Microsoft 365](../../admin/activity-reports/office-365-groups.md)
 
-- [Informes de Microsoft 365 en el centro de administración: actividad de correo electrónico](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
+- [Informes de Microsoft 365 en el centro de administración: actividad de correo electrónico](../../admin/activity-reports/email-activity.md)
 
-- [Informes de Microsoft 365 en el centro de administración: uso de aplicaciones de correo electrónico](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
+- [Informes de Microsoft 365 en el centro de administración: uso de aplicaciones de correo electrónico](../../admin/activity-reports/email-apps-usage.md)
 
-- [Informes de Microsoft 365 en el centro de administración: uso del buzón](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
+- [Informes de Microsoft 365 en el centro de administración: uso del buzón](../../admin/activity-reports/mailbox-usage.md)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Informes de & cumplimiento normativo en el Centro de administración de Microsoft 365
 

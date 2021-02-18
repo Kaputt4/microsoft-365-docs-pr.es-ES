@@ -17,20 +17,20 @@ ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: Use esta guía de implementación paso a paso para crear y configurar un sitio de grupo aislado de SharePoint Online en Microsoft Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b1f0342afc92b4540330417ad0fc9cabe1dc8a8
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d226a545c3f8dc274f02e5d54d39739fe5d981ea
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165504"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288352"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Implementar un sitio de grupo de SharePoint Online aislado
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
  **Resumen:** Implemente un nuevo sitio de grupo aislado de SharePoint Online con estas instrucciones paso a paso.
 
@@ -41,7 +41,7 @@ Este artículo es una guía de implementación paso a paso para crear y configur
 En esta fase, creará los tres grupos de acceso basados en Azure AD para los tres grupos de SharePoint predeterminados y los rellenará con las cuentas de usuario adecuadas.
 
 > [!NOTE]
-> En los pasos siguientes se supone que ya existen todas las cuentas de usuario necesarias y que se les asignan las licencias correspondientes. Si no es así, agrédalos y asigne licencias antes de continuar con el paso 1.
+> En los pasos siguientes se supone que ya existen todas las cuentas de usuario necesarias y que se les asignan las licencias correspondientes. Si no es así, agrégrelas y asigne licencias antes de continuar con el paso 1.
 
 ### <a name="step-1-list-the-sharepoint-online-admins-for-the-site"></a>Paso 1: Enumerar los administradores de SharePoint Online para el sitio
 
@@ -92,7 +92,7 @@ Debe crear los siguientes grupos de acceso en Azure AD:
 6. Repita los pasos del 3 al 5 para los grupos adicionales.
 
 > [!NOTE]
-> Debe usar Azure Portal para crear los grupos de modo que tengan habilitadas las características de Office. Si un sitio aislado de SharePoint Online se configura más adelante como un sitio extremadamente confidencial con una etiqueta de Azure Information Protection para cifrar archivos y asignar permisos a grupos específicos, los grupos permitidos deben haber sido creados con las características de Office habilitadas. No puede cambiar la configuración de características de Office de un grupo de Azure AD después de crearlo.
+> Debe usar Azure Portal para crear los grupos de modo que tengan habilitadas las características de Office. Si un sitio aislado de SharePoint Online se configura más adelante como un sitio extremadamente confidencial con una etiqueta de Azure Information Protection para cifrar archivos y asignar permisos a grupos específicos, los grupos permitidos deben haber sido creados con características de Office habilitadas. No puede cambiar la configuración de características de Office de un grupo de Azure AD después de crearlo.
 
 Esta es la configuración resultante con los tres grupos de acceso al sitio.
 
@@ -112,7 +112,7 @@ Si administra cuentas de usuario y grupos a través de Office 365, puede usar el
 
 Para el Centro de administración de Microsoft 365, inicie sesión con una cuenta de usuario que tenga asignado el rol Administrador de cuentas de usuario o Administrador de la compañía y use Grupos para agregar las cuentas de usuario y los grupos adecuados a los grupos de acceso adecuados.
 
-Para PowerShell, primero [conéctese con el módulo Azure Active Directory PowerShell para Graph.](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Para PowerShell, primero [conéctese con el módulo Azure Active Directory PowerShell para Graph.](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 A continuación, use el siguiente bloque de comandos para agregar una cuenta de usuario individual a un grupo de acceso:
 
@@ -164,7 +164,7 @@ En primer lugar, cree el sitio de grupo de SharePoint Online con estos pasos.
 
 1. Inicie sesión en el Centro de administración de Microsoft 365 con una cuenta que también se usará para administrar el sitio de grupo de SharePoint Online (un administrador de SharePoint Online). Para obtener ayuda, vea [Where to sign in to Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
 
-2. En el Centro de administración de Microsoft 365, en **Centros de administración,** haga clic **en SharePoint.**
+2. En el Centro de administración de Microsoft 365, en Centros **de administración,** haga clic **en SharePoint.**
 
 3. En el Centro de administración de SharePoint, expanda **Sitios** y haga clic **en Sitios activos.**
 
@@ -182,9 +182,9 @@ A continuación, desde el nuevo sitio de grupo de SharePoint Online, configure l
 
 1. En la barra de herramientas, haga clic en el icono de configuración y, luego, en **Permisos del sitio**.
 
-2. En **Uso compartido de sitios,** haga clic en Cambiar cómo pueden compartir los **miembros.**
+2. En **Uso compartido del** sitio, haga clic en Cambiar cómo pueden compartir los **miembros.**
 
-3. Elija el **único sitio que los propietarios pueden compartir archivos, carpetas y el sitio.**
+3. Elija los **únicos propietarios de sitios que pueden compartir archivos, carpetas y el sitio.**
 
 4. Establezca **Permitir solicitudes de acceso** en **Desactivado.**
 
@@ -204,7 +204,7 @@ A continuación, desde el nuevo sitio de grupo de SharePoint Online, configure l
 
 12. En **Personas y grupos**, haga clic en **Nuevo**.
 
-13. En el **cuadro de** diálogo Compartir, escriba el nombre del grupo de acceso de administradores del sitio, selecciónelo y, a continuación, haga clic en **Compartir.**
+13. En el **cuadro de** diálogo Compartir, escriba el nombre del grupo de acceso de administradores del sitio, selecciónelo y, a continuación, haga clic en **Compartir**.
 
 14. Haga clic en el botón Atrás del explorador.
 
@@ -225,7 +225,7 @@ Los resultados de esta configuración de permisos son los siguientes:
 
 Esta es la configuración resultante con los tres grupos de SharePoint para el sitio configurados para usar los tres grupos de acceso, que se rellenan con cuentas de usuario o grupos de Azure AD.
 
-![La configuración final del sitio aislado de SharePoint Online con grupos de acceso y cuentas de usuario.](../../media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
+![La configuración final del sitio de SharePoint Online aislado con grupos de acceso y cuentas de usuario.](../../media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
 
 Usted y los miembros del sitio, a través de la pertenencia a grupos en uno de los grupos de acceso, ahora pueden colaborar con los recursos del sitio.
 
@@ -233,7 +233,7 @@ Usted y los miembros del sitio, a través de la pertenencia a grupos en uno de l
 
 Cuando necesite cambiar la pertenencia al grupo de acceso al sitio o crear una carpeta de documentos con permisos personalizados, vea Administrar un sitio de grupo de [SharePoint Online aislado.](manage-an-isolated-sharepoint-online-team-site.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Sitios de grupo de SharePoint Online aislados](isolated-sharepoint-online-team-sites.md)
 

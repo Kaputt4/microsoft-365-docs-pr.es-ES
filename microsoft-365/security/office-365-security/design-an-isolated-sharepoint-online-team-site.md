@@ -19,20 +19,20 @@ ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: Diseñe sitios de grupo aislados de SharePoint Online, incluidos los niveles de permisos, asigne permisos a usuarios con grupos de acceso y grupos anidados de Azure AD.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0f92a925948dbf6c8c5c1beb6b9c709f508c4b3
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 0d53f3b45e3f406dfb0b38bcc910bd34876acb08
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165516"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288340"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Diseñar un sitio de grupo de SharePoint Online aislado
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
  **Resumen:** Paso a paso por el proceso de diseño para sitios de grupo aislados de SharePoint Online.
@@ -62,7 +62,7 @@ El conjunto de permisos específicos que determina lo que un miembro de un grupo
 |\<site name> Propietarios|Control total|
 |
 
- **Procedimiento recomendado:** Puede crear grupos y niveles de permisos de SharePoint adicionales. Sin embargo, se recomienda usar los grupos y niveles de permisos predeterminados de SharePoint para el sitio aislado de SharePoint Online.
+ **Procedimiento recomendado:** Puede crear grupos y niveles de permisos adicionales de SharePoint. Sin embargo, se recomienda usar los grupos y niveles de permisos predeterminados de SharePoint para el sitio aislado de SharePoint Online.
 
 Estos son los grupos y niveles de permisos predeterminados de SharePoint.
 
@@ -80,17 +80,17 @@ Usar los grupos de SharePoint predeterminados como ejemplo:
 
 - A los miembros del **\<site name> grupo propietarios** de SharePoint, que pueden incluir tanto cuentas de usuario como grupos, se les asigna el nivel de **permiso Control** total
 
- **Procedimiento recomendado:** Aunque puede administrar permisos a través de cuentas de usuario individuales, le recomendamos que use un único grupo de Azure AD, conocido como grupo de acceso, en su lugar. Esto simplifica la administración de permisos mediante la pertenencia al grupo de acceso, en lugar de administrar la lista de cuentas de usuario para cada grupo de SharePoint.
+ **Procedimiento recomendado:** Aunque puede administrar permisos a través de cuentas de usuario individuales, se recomienda usar un único grupo de Azure AD, conocido como grupo de acceso, en su lugar. Esto simplifica la administración de permisos mediante la pertenencia al grupo de acceso, en lugar de administrar la lista de cuentas de usuario para cada grupo de SharePoint.
 
 Los grupos de Azure AD para Microsoft 365 son diferentes, por ejemplo, grupos de Microsoft 365. Los grupos de Azure AD aparecen en el  Centro  de administración de Microsoft 365 con su tipo establecido en Seguridad y no tienen una dirección de correo electrónico. Los grupos de Azure AD se pueden administrar en:
 
 - Servicios de dominio de Active Directory (AD DS)
 
-    Se trata de grupos que se han creado en la infraestructura local de AD DS y se han sincronizado con su suscripción a Microsoft 365. En el Centro de administración de Microsoft  365, estos grupos tienen un estado **de sincronización con Active Directory.**
+    Se trata de grupos que se han creado en la infraestructura local de AD DS y se han sincronizado con su suscripción a Microsoft 365. En el Centro de administración de Microsoft 365, estos grupos tienen un estado **de** sincronización con **Active Directory.**
 
 - Office 365
 
-    Se trata de grupos que se han creado con el Centro de administración de Microsoft 365, Azure Portal o PowerShell de Microsoft. En el Centro de administración de Microsoft 365, estos grupos tienen un **estado** de **nube.**
+    Se trata de grupos creados con el Centro de administración de Microsoft 365, Azure Portal o PowerShell de Microsoft. En el Centro de administración de Microsoft 365, estos grupos tienen un **estado** de **nube.**
 
  **Procedimiento recomendado:** Si usa AD DS local y se sincroniza con su suscripción de Microsoft 365, realice la administración de usuarios y grupos con AD DS.
 
@@ -125,7 +125,7 @@ Este es un ejemplo de los grupos de SharePoint y grupos de acceso para un sitio 
 
 Para un proyecto limitado a un número reducido de personas, la mayoría de los escenarios se ajustarán a la mayoría de los escenarios con un solo nivel de grupos de acceso basados en Azure AD agregados a los grupos de SharePoint del sitio. Sin embargo, si tiene un gran número de personas y esas personas ya son miembros de grupos de Azure AD establecidos, puede asignar más fácilmente permisos de SharePoint mediante grupos anidados o grupos que contienen otros grupos como miembros.
 
-Por ejemplo, desea crear un sitio de grupo aislado de SharePoint Online para la colaboración entre los ejecutivos de los departamentos de ventas, marketing, ingeniería, legal y soporte técnico, y esos departamentos ya tienen sus propios grupos con la pertenencia a cuentas de usuario ejecutivo. En lugar de crear un nuevo grupo para los nuevos miembros del sitio y colocar todas las cuentas de usuario ejecutivo individuales en él, coloque los grupos ejecutivos existentes para cada departamento en el nuevo grupo.
+Por ejemplo, desea crear un sitio de grupo aislado de SharePoint Online para la colaboración entre los ejecutivos de los departamentos de ventas, marketing, ingeniería, legal y soporte técnico, y esos departamentos ya son sus propios grupos con la pertenencia a cuentas de usuario ejecutivo. En lugar de crear un nuevo grupo para los nuevos miembros del sitio y colocar todas las cuentas de usuario ejecutivo individuales en él, coloque los grupos ejecutivos existentes para cada departamento en el nuevo grupo.
 
  Si comparte una suscripción de Microsoft 365 entre varias organizaciones, es posible que sea difícil administrar un solo nivel de pertenencia a grupos para un sitio aislado de una organización debido al gran número de cuentas de usuario. En este caso, puede usar grupos anidados de Azure AD para cada organización que contenga los grupos dentro de sus organizaciones para administrar los permisos.
 
@@ -150,7 +150,7 @@ Dado que todas las cuentas de usuario de los equipos de investigación, ingenier
 
 Cuando esté listo para crear y configurar un sitio aislado en producción, vea Implementar un sitio de grupo de [SharePoint Online aislado.](deploy-an-isolated-sharepoint-online-team-site.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Sitios de grupo de SharePoint Online aislados](isolated-sharepoint-online-team-sites.md)
 

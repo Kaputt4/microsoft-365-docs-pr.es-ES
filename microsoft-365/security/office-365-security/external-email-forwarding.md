@@ -1,5 +1,5 @@
 ---
-title: Configurar y controlar el reenvío de correo electrónico externo, reenvío automático, 5.7.520 Acceso denegado, deshabilitar el reenvío externo, El administrador ha deshabilitado el reenvío externo, la directiva contra correo no deseado saliente
+title: Configurar y controlar el reenvío de correo electrónico externo, el reenvío automático, el acceso 5.7.520 denegado, deshabilitar el reenvío externo, El administrador ha deshabilitado el reenvío externo, la directiva contra correo no deseado saliente
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,21 +15,21 @@ ms.custom:
 description: .
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e578cadf6687e02c900299a75bdd00a9d6e5b2ee
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 77f666e5eeceee3f5b324e5b9b6fac721c10e410
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166152"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286878"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Controlar el reenvío automático de correo electrónico externo en Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Como administrador, es posible que tenga requisitos de la empresa para restringir o controlar los mensajes reenviados automáticamente a destinatarios externos (destinatarios fuera de la organización). El reenvío de correo electrónico puede ser útil, pero también puede suponer un riesgo para la seguridad debido a la posible divulgación de información. Los atacantes pueden usar esta información para atacar a su organización o socios.
 
@@ -72,8 +72,8 @@ La configuración del dominio remoto y las reglas de flujo de correo son indepen
 
 Esta independencia de características le permite (por ejemplo) permitir el reenvío automático en directivas de filtro de correo no deseado saliente, pero usar dominios remotos para controlar los dominios externos a los que los usuarios pueden reenviar mensajes.
 
-## <a name="the-blocked-email-forwarding-message"></a>Mensaje de reenvío de correo electrónico bloqueado
+## <a name="blocked-email-forwarding-messages"></a>Mensajes de reenvío de correo electrónico bloqueados
 
-Cuando se detecta que un mensaje se reenvía automáticamente y la directiva organizativa bloquea esa actividad, el mensaje se devuelve al remitente en un NDR que contiene la siguiente información: 
+Cuando se detecta que un mensaje se [](configure-the-outbound-spam-policy.md) reenvía automáticamente y la directiva de filtro de correo no deseado saliente bloquea esa actividad, el mensaje se devuelve al remitente en un NDR que contiene la siguiente información: 
 
 `5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)`

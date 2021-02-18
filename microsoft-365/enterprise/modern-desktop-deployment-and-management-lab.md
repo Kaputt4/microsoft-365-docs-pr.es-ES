@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 459b0fd246455f46a1c1ff497379487de9fdb61d
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 9b558ad20a84bc902dd9a4a78ebafdbcecd8a9bb
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142270"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288268"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación de Windows y Office
 
@@ -56,7 +56,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 ### <a name="plan-and-prepare-infrastructure"></a>Planeación y preparación de la infraestructura 
 - Análisis de escritorio 
 - Cloud Management Gateway & Cloud Distribution Point 
-- Cargas de trabajo de conmutación, administración y asociación de inquilinos 
+- Cargas de trabajo de conexión, administración y conmutación de inquilinos 
 - Acceso remoto (VPN) 
 
 ### <a name="prepare-configuration"></a>Preparar la configuración   
@@ -99,7 +99,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 [Descargar el kit de laboratorio de implementación de Office y Windows](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* La versión de línea base instalada 2002 se puede actualizar a la versión 2010 mediante la actualización en la consola. Use una conexión a Internet de ancho de banda amplio para descargar este contenido y espere entre 30 y 45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El kit expira el 11 de febrero de 2021. Se publicará una nueva versión antes de la expiración.
+* La versión de línea base instalada 2002 se puede actualizar a la versión 2010 mediante la actualización en la consola. Use una conexión a Internet de ancho de banda amplio para descargar este contenido y permita entre 30 y 45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para obtener un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El kit expira el 2 de mayo de 2021. Se publicará una nueva versión antes de la expiración.
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 

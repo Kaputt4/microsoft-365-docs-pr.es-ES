@@ -13,19 +13,19 @@ ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: La tabla siguiente proporciona una lista de las características que están disponibles en el servicio de filtrado de correo hospedado Exchange Online Protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2c66c1cd8715717bae92ac81fbefe050f5e485eb
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 7dbdf30df0659565d775bfba2cf968ac56f6a4ac
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166176"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286854"
 ---
 # <a name="eop-features"></a>Características de EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
--  [Exchange Online Protection independiente](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection independiente](exchange-online-protection-overview.md)
 
 La tabla siguiente proporciona una lista de las características que están disponibles en el servicio de filtrado de correo hospedado Exchange Online Protection.
 
@@ -39,7 +39,7 @@ La tabla siguiente proporciona una lista de las características que están disp
 |**Protección contra correo no deseado**||
 |Detección de correo no deseado de entrada|Para obtener más información, vea [Protección contra correo no deseado en Microsoft 365.](anti-spam-protection.md) <p> En entornos de EOP independientes en los que EOP protege los buzones de Exchange locales, tiene que configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtro de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta de correo electrónico no deseado. Para obtener más información, vea Configurar EOP independiente para entregar correo no deseado a la carpeta correo no deseado [en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
 |Detección de correo no deseado de salida|La protección contra correo no deseado saliente siempre está habilitada si usa el servicio para enviar correo saliente. Para obtener más información, vea [Protección contra correo no deseado saliente.](outbound-spam-controls.md)|
-|Protección contra el sistema de protección contra el desaprotección|Para obtener más información, [vea Backscatter y EOP.](backscatter-messages-and-eop.md)|
+|Protección contra el sistema de protección contra el sistema de seguridad|Para obtener más información, [vea Backscatter y EOP](backscatter-messages-and-eop.md).|
 |Filtrado de correo masivo|EOP usa el umbral de quejas masivas (BCL) para marcar los mensajes de correo electrónico masivo como correo no deseado. Para obtener más información, vea los siguientes temas: <p> [¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?](what-s-the-difference-between-junk-email-and-bulk-email.md) <p> [Nivel de queja masiva (BCL) en EOP](bulk-complaint-level-values.md) <p> [Configurar directivas contra correo electrónico no deseado](configure-your-spam-filter-policies.md)|
 |Listas de bloque de direcciones URL malintencionadas|EOP usa varias listas de bloqueo de URL que ayudan a detectar vínculos malintencionados conocidos dentro de los mensajes.|
 |Protección contra suplantación de identidad|EOP incluye 750.000 dominios de remitentes de correo no deseado conocidos.|
@@ -67,11 +67,11 @@ La tabla siguiente proporciona una lista de las características que están disp
 |Enrutamiento de correo condicional|Para obtener más información, consulte [Escenario: Enrutamiento de correo condicional en Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).|
 |TLS oportunista o forzada|La TLS oportunista o forzada está disponible con conectores. La TLS oportunista intenta una conexión TLS, pero usa una conexión SMTP si la conexión TLS no se realiza correctamente. Forzar TLS exige conexiones TLS, lo que significa que el mensaje se rechaza si la conexión TLS no se realiza correctamente. Para obtener más información sobre la seguridad TLS, consulte [Set up connectors for secure mail flow with a partner organization](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner).|
 |Enrutamiento regional (restricción de flujo de correo a una región específica)|Para obtener más información, vea la sección de "Centros de datos de EOP" en [Información general de Exchange Online Protection](exchange-online-protection-overview.md).|
-|Herramienta Comprobador de conectividad SMTP|Para obtener más información acerca del uso de esta herramienta para probar el flujo de correo, consulte Probar el flujo de correo mediante la validación de los conectores de [Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).|
+|Herramienta Comprobador de conectividad SMTP|Para obtener más información acerca del uso de esta herramienta para probar el flujo de correo, consulte Probar el flujo de correo mediante la validación de los conectores [de Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow).|
 |Subdominios coincidentes|Para obtener más información acerca de cómo habilitar el flujo de correo hacia y desde subdominios de los dominios aceptados, vea Flujo de [correo en EOP.](mail-flow-in-eop.md)|
 |**Reglas de flujo de correo**||
 |Filtrado y acciones basados en directivas|Las directivas personalizadas se basan en reglas de flujo de correo de Exchange (también conocidas como reglas de transporte). Puede filtrar por dominio, palabra clave, nombre de archivo, tipo de archivo, línea de asunto, cuerpo del mensaje, remitente, destinatario, encabezado y dirección IP. Para obtener más información, consulte [Reglas de flujo de correo (reglas de transporte) en Exchange Online Protection.](mail-flow-rules-transport-rules-0.md)|
-|Filtrar por patrones de texto|Las reglas de flujo de correo pueden usar una matriz o expresiones regulares para que coincidan con el texto. También puede usar una cadena o una matriz de cadenas para buscar por varias propiedades de mensaje, como dirección, asunto, cuerpo o nombres de datos adjuntos. Para obtener más información, consulte [Reglas de flujo de correo (reglas de transporte) en Exchange Online Protection](mail-flow-rules-transport-rules-0.md)|
+|Filtrar por patrones de texto|Las reglas de flujo de correo pueden usar una matriz o expresiones regulares para que coincidan con el texto. También puede usar una cadena o una matriz de cadenas para buscar por varias propiedades de mensaje, como dirección, asunto, cuerpo o nombres de datos adjuntos. Para obtener más información, vea [Reglas de flujo de correo (reglas de transporte) en Exchange Online Protection](mail-flow-rules-transport-rules-0.md)|
 |Diccionarios personalizados|Las reglas de flujo de correo pueden incluir largas listas de texto y palabras clave, lo que proporciona la misma funcionalidad que un diccionario personalizado.|
 |Reglas de directiva por dominio|El ámbito de una regla de flujo de correo se puede personalizar para que coincida con nombres de dominio de remitente o destinatario, intervalos de direcciones IP, palabras clave o patrones de dirección, pertenencias a grupos y otras condiciones.|
 |Examen de archivos adjuntos|Se pueden crear reglas para examinar el nombre de archivo, la extensión y el contenido de los datos adjuntos.|

@@ -21,19 +21,19 @@ ms.custom:
 description: Obtenga información sobre la investigación de amenazas y las capacidades de respuesta en El plan de Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 32b23dca0d4cb70407ce91a652e458b729b3c12f
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 2a772ed3016bebc8f380cf384257e12497e9eb7c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150741"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287682"
 ---
 # <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Aplicación**
--    [Microsoft Defender para Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
 
 
 Las capacidades de investigación y respuesta de amenazas en Microsoft Defender para [Office 365](office-365-atp.md) ayudan a los analistas y administradores de seguridad a proteger Microsoft 365 para usuarios empresariales de su organización mediante:
@@ -65,7 +65,7 @@ Para ver y usar este panel, en el Centro de seguridad & cumplimiento, vaya al Pa
 
 ### <a name="threat-explorer"></a>Explorador de amenazas
 
-Usa el Explorador de amenazas (y las detecciones en tiempo real) para analizar amenazas, ver el volumen de [ataques](threat-explorer.md) a lo largo del tiempo y analizar datos por familias de amenazas, infraestructura de atacantes y mucho más. El Explorador de amenazas (también conocido como Explorer) es el punto de partida para el flujo de trabajo de investigación de cualquier analista de seguridad.
+Usa el Explorador de amenazas (y las detecciones en tiempo real) para analizar amenazas, ver el volumen de [ataques](threat-explorer.md) a lo largo del tiempo y analizar datos por familias de amenazas, infraestructura de atacantes y mucho más. El Explorador de amenazas (también conocido como Explorador) es el punto de partida para el flujo de trabajo de investigación de cualquier analista de seguridad.
 
 ![Explorador de amenazas](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
 
@@ -121,11 +121,11 @@ Microsoft Defender para Office 365 usa el control de acceso basado en roles. Los
 |Integrar Microsoft Defender para Office 365 Plan 2 con Microsoft Defender para endpoint  <p> Integrar Microsoft Defender para Office 365 Plan 2 con un servidor SIEM|El rol Administrador  **global o** Administrador de seguridad asignado en Azure Active Directory ( ) o en el Centro de administración de <https://portal.azure.com> Microsoft 365 ( <https://admin.microsoft.com> ). <p> --- **más** --- <p> Un rol adecuado asignado en aplicaciones adicionales (como el Centro de seguridad de [Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) o el servidor SIEM).|
 |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Más información sobre los rastreadores de amenazas: nuevos y notables](threat-trackers.md)
 
-- [Buscar e investigar correo electrónico malintencionado que se entregó (investigación y respuesta de amenazas de Office 365)](investigate-malicious-email-that-was-delivered.md)
+- [Buscar e investigar correo electrónico malintencionado que se entregó (Investigación y respuesta de amenazas de Office 365)](investigate-malicious-email-that-was-delivered.md)
 
 - [Integrar la investigación y respuesta de amenazas de Office 365 con Microsoft Defender para puntos de conexión](integrate-office-365-ti-with-wdatp.md)
 

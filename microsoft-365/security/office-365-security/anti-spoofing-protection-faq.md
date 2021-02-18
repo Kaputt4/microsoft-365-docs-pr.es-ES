@@ -18,25 +18,25 @@ ms.collection:
 description: Los administradores pueden ver las preguntas más frecuentes y sus respuestas sobre la protección contra la suplantación en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d0805b5ca9e951234679ed8b3d03b6bdfced2be
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: d2d307d201af8ad09a4faf7a865a29da8942bdf8
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175900"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288914"
 ---
 # <a name="anti-spoofing-protection-faq"></a>Preguntas frecuentes sobre la protección contra la suplantación de identidad
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 En este artículo se proporcionan preguntas y respuestas más frecuentes sobre la protección contra la suplantación de documentos para organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online.
 
-Para obtener preguntas y respuestas acerca de la protección contra correo no deseado, consulte preguntas más frecuentes sobre protección contra [correo no deseado.](anti-spam-protection-faq.md)
+Para obtener preguntas y respuestas acerca de la protección contra correo no deseado, consulte preguntas más frecuentes sobre protección [contra correo no deseado.](anti-spam-protection-faq.md)
 
 Para obtener preguntas y respuestas acerca de la protección antimalware, vea preguntas más frecuentes sobre protección [antimalware](anti-malware-protection-faq-eop.md)
 
@@ -64,7 +64,7 @@ Vea [Que no conoce todos los orígenes de su correo electrónico.](email-validat
 
 ## <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization"></a>¿Qué sucede si deshabilito la protección contra la suplantación de mi organización?
 
-No se recomienda deshabilitar la protección contra la suplantación. Deshabilitar la protección permitirá que se entreguen más mensajes de suplantación de identidad y correo no deseado en su organización. No toda la suplantación de identidad es la suplantación de identidad y no se pierden todos los mensajes suplantados. Sin embargo, el riesgo será mayor.
+No se recomienda deshabilitar la protección contra la suplantación. Deshabilitar la protección permitirá que se entreguen más mensajes de suplantación de identidad y correo no deseado en la organización. No todo el phishing es suplantación de identidad y no se pierden todos los mensajes suplantados. Sin embargo, el riesgo será mayor.
 
 Ahora que el filtrado mejorado para conectores está disponible, ya no [recomendamos](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) desactivar la protección contra la suplantación cuando el correo electrónico se enruta a través de otro servicio antes de EOP.
 
@@ -78,7 +78,7 @@ Casi todos los servicios de correo electrónico grandes implementan comprobacion
 
 ## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>¿Necesito habilitar la configuración del filtro de correo no deseado avanzado "Registro SPF: error" (_MarkAsSpamSpfRecordHardFail_) si se habilita la protección contra la suplantación de documentos?
 
-No. Esta configuración de ASF ya no es necesaria. La protección contra la suplantación considera tanto errores de SPF como un conjunto de criterios mucho más amplio. Si habilita la protección contra la suplantación y la opción de **Registro de SPF: error grave** (_MarkAsSpamSpfRecordHardFail_), es probable que reciba más falsos positivos.
+No. Esta configuración de ASF ya no es necesaria. La protección contra la suplantación considera tanto errores de SPF como un conjunto mucho más amplio de criterios. Si habilita la protección contra la suplantación y la opción de **Registro de SPF: error grave** (_MarkAsSpamSpfRecordHardFail_), es probable que reciba más falsos positivos.
 
 Le recomendamos que deshabilite esta característica, ya que no proporciona casi ninguna ventaja adicional para detectar correo no deseado o mensajes de suplantación de identidad y, en su lugar, generaría principalmente falsos positivos. Para obtener más información, vea configuración del filtro de correo no [deseado avanzado (ASF) en EOP.](advanced-spam-filtering-asf-options.md)
 

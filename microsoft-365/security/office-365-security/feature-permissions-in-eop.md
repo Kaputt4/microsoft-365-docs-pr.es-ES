@@ -10,28 +10,28 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
-description: Obtenga información sobre los permisos necesarios para las tareas de Exchange Online Protection independiente
+description: Obtenga información sobre el permiso necesario para las tareas de Exchange Online Protection independiente
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4f1f364e684f2d1d76f26f573e66fbd50bf5138b
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 9c24c6f57ea9a7c0e1b3332d2f4b518b232ec0c2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167400"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288304"
 ---
 # <a name="permissions-in-standalone-eop"></a>Permisos en EOP independiente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
--  [Exchange Online Protection independiente](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection independiente](exchange-online-protection-overview.md)
 
-La protección independiente de Exchange Online (EOP) sin buzones de Exchange Online usa el modelo de permisos de control de acceso basado en roles (RBAC) para conceder permisos fácilmente a los administradores. Puede usar las características de permisos de EOP independiente para que la nueva organización se ejecute rápidamente.
+La protección independiente de Exchange Online (EOP) sin buzones de Exchange Online usa el modelo de permisos de control de acceso basado en roles (RBAC) para conceder permisos fácilmente a los administradores. Puede usar las características de permisos de EOP independiente para que su nueva organización se ejecute rápidamente.
 
 Para conceder permisos a los usuarios, vea [Administrar grupos de roles de administrador en EOP.](manage-admin-role-group-permissions-in-eop.md)
 
-Para obtener más información acerca de los permisos en Microsoft 365, vea [Acerca de los roles de administrador.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
+Para obtener más información acerca de los permisos en Microsoft 365, vea [Acerca de los roles de administrador.](../../admin/add-users/about-admin-roles.md)
 
 ## <a name="role-based-permissions"></a>Permisos basados en roles
 
@@ -59,13 +59,13 @@ Los grupos de roles disponibles en EOP independiente se describen en la tabla si
 |HelpDesk|Ver y administrar usuarios de correo.|Restablecer contraseña <p> Opciones de usuario <p> Destinatarios con permiso de vista|
 |HygieneManagement|Administrar características de protección (contra correo no deseado, antimalware, etc.).|Higiene de transporte <p> Configuración con permiso de vista <p> Destinatarios con permiso de vista|
 |MailFlowAdministrator|Ver y administrar los dominios y conectores aceptados|Dominios remotos y aceptados <p> Destinatarios con permiso de vista|
-|OrganizationManagement|Acceso de administrador a toda la organización y la capacidad de realizar casi cualquier tarea. <p> Los miembros del [rol de administrador global](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) en Azure AD obtienen automáticamente los permisos de este grupo de roles. <p> **Importante:** Dado que el grupo de roles OrganizationManagement es un rol eficaz, solo los usuarios que realizan tareas administrativas de nivel organizativo deben ser miembros de este grupo de funciones.|AntiMalware <p> Contra correo electrónico no deseado <p> Registros de auditoría <p> Administrador de cumplimiento <p> Grupos de distribución dinámicos <p> Information Rights Management <p> Creación de destinatario de correo <p> Destinatarios de correo <p> Seguimiento de mensajes <p> Migración <p> Acceso de cliente de la organización <p> Configuración de la organización <p> Configuración de transporte de la organización <p> Cuarentena <p> Directivas de destinatarios <p> Dominios remotos y aceptados <p> Restablecer contraseña <p> Administración de retención <p> Administración de roles <p> Administrador de seguridad <p> Pertenencia y creación de grupos de seguridad <p> Lector de seguridad <p> Administrador de etiquetas de confidencialidad <p> Supervisión <p> Higiene de transporte <p> Reglas de transporte <p> Opciones de usuario <p> View-Only AntiMalware <p> View-Only contra correo no deseado <p> View-Only registros de auditoría <p> Configuración con permiso de vista <p> View-Only cuarentena <p> Destinatarios con permiso de vista <p> View-Only de amenazas|
+|OrganizationManagement|Acceso de administrador a toda la organización y la capacidad de realizar casi cualquier tarea. <p> Los miembros del [rol de administrador global](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) en Azure AD obtienen automáticamente los permisos de este grupo de roles. <p> **Importante:** Dado que el grupo de roles OrganizationManagement es un rol eficaz, solo los usuarios que realizan tareas administrativas de nivel organizativo deben ser miembros de este grupo de roles.|AntiMalware <p> Contra correo electrónico no deseado <p> Registros de auditoría <p> Administrador de cumplimiento <p> Grupos de distribución dinámicos <p> Information Rights Management <p> Creación de destinatario de correo <p> Destinatarios de correo <p> Seguimiento de mensajes <p> Migración <p> Acceso de cliente de la organización <p> Configuración de la organización <p> Configuración de transporte de la organización <p> Cuarentena <p> Directivas de destinatarios <p> Dominios remotos y aceptados <p> Restablecer contraseña <p> Administración de retención <p> Administración de roles <p> Administrador de seguridad <p> Pertenencia y creación de grupos de seguridad <p> Lector de seguridad <p> Administrador de etiquetas de confidencialidad <p> Supervisión <p> Higiene de transporte <p> Reglas de transporte <p> Opciones de usuario <p> View-Only AntiMalware <p> View-Only contra correo no deseado <p> View-Only registros de auditoría <p> Configuración con permiso de vista <p> View-Only cuarentena <p> Destinatarios con permiso de vista <p> View-Only de amenazas|
 |QuarantineAdministrator|Administrar mensajes en cuarentena para todos los destinatarios.|Cuarentena|
 |RecipientManagement|Crear, administrar y quitar objetos de destinatario en la organización.|Grupos de distribución dinámicos <p> Creación de destinatario de correo <p> Destinatarios de correo <p> Seguimiento de mensajes <p> Migración <p> Directivas de destinatarios <p> Restablecer contraseña|
 |RecordsManagement|Configurar características de cumplimiento, como etiquetas de directiva de retención, clasificaciones de mensajes y reglas de flujo de correo (también conocidas como reglas de transporte).|Seguimiento de mensajes <p> Administración de retención <p> Reglas de transporte|
-|SecurityAdministrator|Configurar todos los aspectos de protección de la organización (contra correo no deseado, antimalware, anti-spoofing, cuarentena, etc.). <p> Los miembros del [rol administrador de](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) seguridad en Azure AD obtienen automáticamente los permisos de este grupo de roles.|AntiMalware <p> Contra correo electrónico no deseado <p> Registros de auditoría <p> Cuarentena <p> Administrador de seguridad <p> Administrador de etiquetas de confidencialidad <p> View-Only AntiMalware <p> View-Only contra correo no deseado <p> View-Only registros de auditoría <p> View-Only cuarentena <p> View-Only de amenazas|
+|SecurityAdministrator|Configurar todos los aspectos de protección de la organización (correo no deseado, antimalware, anti-spoofing, cuarentena, etc.). <p> Los miembros del [rol administrador de](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) seguridad en Azure AD obtienen automáticamente los permisos de este grupo de roles.|AntiMalware <p> Contra correo electrónico no deseado <p> Registros de auditoría <p> Cuarentena <p> Administrador de seguridad <p> Administrador de etiquetas de confidencialidad <p> View-Only AntiMalware <p> View-Only contra correo no deseado <p> View-Only registros de auditoría <p> View-Only cuarentena <p> View-Only de amenazas|
 |SecurityReader|Acceso de solo vista a todos los aspectos de protección de la organización (contra correo no deseado, antimalware, protección contra la suplantación de documentos, cuarentena, etc.). <p> Los miembros del [rol Lector de](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader) seguridad en Azure AD obtienen automáticamente los permisos de este grupo de roles.|Lector de seguridad <p> View-Only AntiMalware <p> View-Only contra correo no deseado <p> View-Only cuarentena <p> View-Only de amenazas|
-|TenantAdmins|La pertenencia a este grupo de roles se sincroniza en todos los servicios y se administra de forma centralizada. De forma predeterminada, este grupo de roles no tiene asignado ningún rol. Sin embargo, será miembro del grupo de roles Administración de la organización y heredará esos permisos.|none|
+|TenantAdmins|La pertenencia a este grupo de roles se sincroniza entre servicios y se administra de forma centralizada. De forma predeterminada, a este grupo de roles no se le asignan roles. Sin embargo, será miembro del grupo de roles Administración de la organización y heredará esos permisos.|none|
 |ViewOnlyOrganizationManagement|Ver los objetos de destinatario, protección y configuración y sus propiedades en la organización.|Administrador de cumplimiento <p> Administrador de seguridad <p> Lector de seguridad <p> Administrador de etiquetas de confidencialidad <p> Configuración con permiso de vista <p> Destinatarios con permiso de vista|
 |
 
@@ -124,12 +124,12 @@ Los roles integrados que están disponibles en EOP independiente se describen en
 
 ## <a name="microsoft-365-permissions-in-standalone-eop"></a>Permisos de Microsoft 365 en EOP independiente
 
-Al crear un usuario en el Centro de administración de Microsoft 365, puede elegir si desea asignar varios roles administrativos, como administrador global, administrador de servicio, administrador de contraseñas, entre otros, al usuario. Algunos roles de Microsoft 365, aunque no todos, conceden al usuario permisos administrativos en EOP.
+Al crear un usuario en el Centro de administración de Microsoft 365, puede elegir si desea asignar varios roles administrativos, como administrador global, administrador de servicio, administrador de contraseñas, entre otros, al usuario. Algunos roles de Microsoft 365 conceden al usuario permisos administrativos en EOP, pero no todos.
 
 > [!NOTE]
 > La cuenta que usó para crear la organización independiente de EOP se asigna automáticamente al rol de administrador global.
 
-En la tabla siguiente se enumeran los roles de Microsoft 365 y los grupos de roles de EOP independientes a los que corresponden. Para obtener más información acerca de estos roles, vea [Acerca de los roles de administrador.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
+En la tabla siguiente se enumeran los roles de Microsoft 365 y los grupos de roles de EOP independientes a los que corresponden. Para obtener más información acerca de estos roles, vea [Acerca de los roles de administrador.](../../admin/add-users/about-admin-roles.md)
 
 ****
 
@@ -143,11 +143,11 @@ En la tabla siguiente se enumeran los roles de Microsoft 365 y los grupos de rol
 |Lector de seguridad|SecurityReader|
 |
 
-Otros roles de Microsoft 365 no tienen un grupo de roles de EOP correspondiente y no concederán permisos administrativos en EOP. Para obtener más información acerca de cómo asignar un rol de Microsoft 365 a un usuario, vea [Asignar roles de administrador.](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
+Otros roles de Microsoft 365 no tienen un grupo de roles de EOP correspondiente y no concederán permisos administrativos en EOP. Para obtener más información acerca de cómo asignar un rol de Microsoft 365 a un usuario, vea [Asignar roles de administrador.](../../admin/add-users/assign-admin-roles.md)
 
 Los usuarios pueden obtener derechos administrativos en EOP sin agregarlos a los roles de Microsoft 365. Para ello, agregue el usuario como miembro de un grupo de roles de EOP. El usuario recibirá permisos en EOP, pero no recibirá permisos en otras cargas de trabajo de Microsoft 365.
 
-### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Para comprobar que copió correctamente un grupo de roles, siga uno de estos pasos:
 

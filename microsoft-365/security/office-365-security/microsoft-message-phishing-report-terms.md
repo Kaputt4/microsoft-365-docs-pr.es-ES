@@ -1,6 +1,6 @@
 ---
 title: Microsoft Report Message and Report Phishing Add-In license terms
-description: Describe los términos de licencia de los mensajes de informe de Microsoft y la suplantación Add-In de identidad
+description: Describe el mensaje de informe de Microsoft y los términos de la licencia Add-In de informes
 keywords: microsoft, informe, phishing, seguridad, estafa, pirateo, licencia, términos, aplicación, uso, instalación, servicio, comentarios
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
-ms.openlocfilehash: a6c28bad5b79bc7459a1a00fabb6713b1759201d
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: 2b2b8a6215a653cee7ea67bafaadddc096abb911
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032711"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288162"
 ---
 # <a name="microsoft-report-message-and-report-phishing-add-in-license-terms"></a>Microsoft Report Message and Report Phishing Add-In license terms
 
@@ -42,11 +42,11 @@ Si cumple con estos términos de licencia, tiene los siguientes derechos. Al usa
 
     1. **General.** You may install and use any number of copies of the software.
     1. **Third Party Software.** El software puede incluir aplicaciones de terceros que Microsoft, no el tercero, le haya puesto bajo licencia en virtud de este contrato. Los avisos incluidos para aplicaciones de terceros son solo para su información.
-    1. **Contrato de servicios de Microsoft.** Algunas características del software proporcionan acceso a los servicios en línea o dependen de ellos. El uso de estos servicios (pero no el software) se rige por los términos y directivas de privacidad independientes del Contrato de servicios de Microsoft en [https://go.microsoft.com/fwlink/?linkid=398923](https://go.microsoft.com/fwlink/?linkid=398923) . Léalas. Es posible que los servicios no estén disponibles en todas las regiones.
+    1. **Contrato de servicios de Microsoft.** Algunas características del software proporcionan acceso a los servicios en línea o dependen de ellos. El uso de estos servicios (pero no el software) se rige por los términos y directivas de privacidad independientes del Contrato de servicios de Microsoft en <https://www.microsoft.com/servicesagreement/> . Léalas. Es posible que los servicios no estén disponibles en todas las regiones.
 
-2. **DATA COLLECTION.** El software puede recopilar información sobre usted y su uso del software y enviarlo a Microsoft. Microsoft puede usar esta información para proporcionar servicios y mejorar los productos y servicios de Microsoft. Los derechos de no participar, si los hay, se describen en la documentación del producto. Algunas características del software pueden habilitar la recopilación de datos de los usuarios de las aplicaciones que acceden o usan el software. 
+2. **DATA COLLECTION.** El software puede recopilar información sobre usted y su uso del software y enviarlo a Microsoft. Microsoft puede usar esta información para proporcionar servicios y mejorar los productos y servicios de Microsoft. Los derechos de no participar, si los hay, se describen en la documentación del producto. Algunas características del software pueden habilitar la recopilación de datos de los usuarios de las aplicaciones que acceden o usan el software.
 
-    Si usa estas características para habilitar la recopilación de datos en sus aplicaciones, debe cumplir con la legislación aplicable, incluida la obtención de cualquier consentimiento de usuario necesario, y mantener una directiva de privacidad destacada que informe de forma precisa a los usuarios sobre cómo usa, recopila y comparte sus datos. Puede obtener más información sobre la recopilación de datos de Microsoft y su uso en la documentación del producto y en la Declaración de privacidad de Microsoft en [https://go.microsoft.com/fwlink/?LinkId=512132](https://go.microsoft.com/fwlink/?LinkId=512132) . Usted acepta cumplir con todas las disposiciones aplicables de la Declaración de privacidad de Microsoft.
+    Si usa estas características para habilitar la recopilación de datos en sus aplicaciones, debe cumplir con la legislación aplicable, incluida la obtención de cualquier consentimiento de usuario necesario, y mantener una directiva de privacidad destacada que informe de forma precisa a los usuarios sobre cómo usa, recopila y comparte sus datos. Puede obtener más información sobre la recopilación de datos de Microsoft y su uso en la documentación del producto y en la Declaración de privacidad de Microsoft en <https://privacy.microsoft.com/privacystatement> . Usted acepta cumplir con todas las disposiciones aplicables de la Declaración de privacidad de Microsoft.
 
 3. **SCOPE OF LICENSE.** The software is licensed, not sold. Microsoft reserves all other rights. Unless applicable law gives you more rights despite this limitation, you will not (and have no right to):
     1. work around any technical limitations in the software that only allow you to use it in certain ways;
@@ -62,7 +62,7 @@ Si cumple con estos términos de licencia, tiene los siguientes derechos. Al usa
 
 6. **UPDATES.** The software may periodically check for updates, and download and install them for you. You may obtain updates only from Microsoft or authorized sources. Microsoft may need to update your system to provide you with updates. You agree to receive these automatic updates without any additional notice. Updates may not include or support all existing software features, services, or peripheral devices.
 
-7. **ARBITRAJE DE ENLACE Y RENUNCIA A LA ACCIÓN DE CLASE.** **Esta sección se aplica si se encuentra en Estados Unidos (o, si es una empresa, su lugar de trabajo principal).** If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. Si usted y Microsoft no pueden, usted y Microsoft aceptan enlazar el arbitraje **individual** ante la Asociación estadounidense de arbitraje en virtud de la Ley federal de arbitraje ("FAA") y no demandar ante un tribunal delante de un abogado o un **jurado.** Instead, a neutral arbitrator will decide. **No se permiten demandas** por acciones de clase, arbitrajes de clase, acciones del abogado general privado y cualquier otro procedimiento en el que alguien actúe con una capacidad **representativa;** ni la combinación de procedimientos individuales sin el consentimiento de todas las partes. El contrato de arbitraje completo contiene más términos y se encuentra en [https://aka.ms/arb-agreement-1](https://aka.ms/arb-agreement-1) . You and Microsoft agree to these terms.
+7. **ARBITRAJE DE ENLACE Y RENUNCIA A LA ACCIÓN DE CLASE.** **Esta sección se aplica si se encuentra en Estados Unidos (o, si es una empresa, su lugar de empresa principal).** If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. Si usted y Microsoft no pueden, usted y Microsoft aceptan enlazar el arbitraje **individual** ante la Asociación estadounidense de arbitraje en virtud de la Ley federal de arbitraje ("FAA") y no demandar ante un tribunal delante de un abogado o un **jurado.** Instead, a neutral arbitrator will decide. **No se permiten demandas** por acciones de clase, arbitrajes en toda la clase, acciones del abogado general privado y cualquier otro procedimiento en el que alguien actúe con una capacidad **representativa;** ni la combinación de procedimientos individuales sin el consentimiento de todas las partes. El contrato de arbitraje completo contiene más términos y se encuentra en [https://aka.ms/arb-agreement-1](https://aka.ms/arb-agreement-1) . You and Microsoft agree to these terms.
 
 8. **ENTIRE AGREEMENT.** This agreement, and any other terms Microsoft may provide for supplements, updates, or third-party applications, is the entire agreement for the software.
 
@@ -86,7 +86,7 @@ Si cumple con estos términos de licencia, tiene los siguientes derechos. Al usa
 
     *En Français*: **EXONÉRATION DE GARANTIE.** Le logiciel visé par une licence est offert « tel quel ». Toute utilisation de ce logiciel est à votre seule risque et péril. Microsoft n’accorde aucune autre garantie expresse. Vous pouvez bénéficier de droits additionnels en vertu du droit local sur la protection des consommateurs, que ce contrat ne peut modifier. La ou elles sont permises par le droit locale, les garanties implicites de qualité marchande, d’adéquation à un usage particulier et d’absence de contrefaçon sont exclues.
 
-12. *En inglés:* **LIMITACIÓN Y EXCLUSIÓN DE DAÑOS.** Si tiene base para recuperar daños a pesar de la declinación de responsabilidades anterior de la garantía, puede recuperar de Microsoft y sus proveedores solo daños directos de hasta 5,00 USD. No puede recuperar ningún otro daño, incluidos los consiguientes, pérdidas de beneficios, daños especiales, indirectos o incidentales.
+12. *En inglés:* **LIMITACIÓN Y EXCLUSIÓN DE DAÑOS.** Si tiene base para recuperar daños a pesar de la declinación de responsabilidades anterior de la garantía, puede recuperar de Microsoft y sus proveedores solo daños directos de hasta 5,00 USD. No puede recuperar otros daños, incluidos los consecuenciables, las pérdidas de beneficios, los daños especiales, indirectos o incidentales.
 
     Esta limitación se aplica a (a) todo lo relacionado con el software, los servicios, el contenido (incluido el código) en sitios de Internet de terceros o aplicaciones de terceros; y (b) reclamaciones por incumplimiento de contrato, garantía, garantía o condición; responsabilidad estricta, negligencia u otro agravio; o cualquier otra notificación; en cada caso en la medida permitida por la legislación aplicable.
 

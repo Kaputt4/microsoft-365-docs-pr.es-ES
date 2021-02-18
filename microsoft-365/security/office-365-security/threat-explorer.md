@@ -15,23 +15,23 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Use las detecciones en tiempo real y del Explorador en el Centro de cumplimiento de seguridad para investigar y &amp; responder a las amenazas de forma eficaz.
+description: Use las detecciones de Explorador y en tiempo real en el Centro de cumplimiento de seguridad para investigar y &amp; responder a las amenazas de forma eficaz.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5cbb8bd57a2e9bde8d19c960a71066d3ea5531c1
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: daa7b4014d1302743578d79c2e1e0e1d2d5ac61f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233647"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288902"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
 
 **Se aplica a**
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Si su organización tiene Microsoft Defender para Office [365](office-365-atp.md)y tiene los permisos necesarios, tiene detecciones [](#new-features-in-threat-explorer-and-real-time-detections)en tiempo **real** o **explorer** (anteriormente informes en tiempo *real,* vea las novedades). [](#required-licenses-and-permissions) En el Centro de & cumplimiento, vaya a Administración de amenazas y, a continuación, elija  **Detecciones en** tiempo real o Explorador.  
 
@@ -72,7 +72,7 @@ La **columna** Etiquetas de la cuadrícula de correo electrónico contiene todas
 
 #### <a name="filtering"></a>Filtrado
 
-Puede usar etiquetas como filtro. Busca solo entre cuentas de prioridad o escenarios de etiquetas de usuario específicos. También puede excluir los resultados que tienen determinadas etiquetas. Combine esta funcionalidad con otros filtros para restringir el ámbito de investigación.
+Puede usar etiquetas como filtro. Buscar solo entre cuentas de prioridad o escenarios de etiquetas de usuario específicos. También puede excluir los resultados que tienen determinadas etiquetas. Combine esta funcionalidad con otros filtros para restringir el ámbito de investigación.
 
 [![Etiquetas de filtro](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
@@ -95,7 +95,7 @@ La información de etiquetas también se muestra en el control desplegable de cl
 
 ### <a name="updated-threat-information-for-emails"></a>Información de amenazas actualizada para correos electrónicos
 
-Nos hemos centrado en las mejoras de la plataforma y la calidad de los datos para aumentar la precisión y la coherencia de los datos para los registros de correo electrónico. Entre las mejoras se incluye la consolidación de la información de entrega previa y posterior a la entrega, como las acciones ejecutadas en un correo electrónico como parte del proceso ZAP, en un único registro. También se incluyen detalles adicionales como el veredicto de correo no deseado, las amenazas de nivel de entidad (por ejemplo, la dirección URL malintencionada) y las ubicaciones de entrega más recientes.
+Nos hemos centrado en las mejoras de la plataforma y la calidad de los datos para aumentar la precisión y la coherencia de los datos para los registros de correo electrónico. Entre las mejoras se incluye la consolidación de la información de entrega previa y posterior a la entrega, como las acciones ejecutadas en un correo electrónico como parte del proceso ZAP, en un único registro. También se incluyen detalles adicionales como el veredicto de correo no deseado, las amenazas de nivel de entidad (por ejemplo, qué dirección URL era malintencionada) y las ubicaciones de entrega más recientes.
 
 Después de estas actualizaciones, verá una sola entrada para cada mensaje, independientemente de los diferentes eventos posteriores a la entrega que afectan al mensaje. Las acciones pueden incluir ZAP, corrección manual (lo que significa acción de administrador), entrega dinámica, entre otras.
 
@@ -130,7 +130,7 @@ La vista escala de tiempo identifica todos los eventos de entrega y posterior a 
 
 Actualmente, se muestra la ubicación de entrega en la cuadrícula de correo electrónico y el control desplegable de correo electrónico. El **campo Ubicación de** entrega cambia su nombre a Ubicación de entrega **_original_*_. Y estamos introduciendo otro campo, _*_Ubicación de entrega más reciente._**
 
-**La ubicación de entrega original** dará más información sobre dónde se entregó un correo electrónico inicialmente. **La ubicación de entrega más** reciente mostrará dónde aterrizó un correo electrónico después de acciones del sistema como *ZAP* o acciones de administración como Mover a *elementos eliminados.* La ubicación de entrega más reciente está pensada para proporcionar a los administradores la última ubicación conocida posterior a la entrega del mensaje o cualquier acción del sistema o administrador. No incluye ninguna acción del usuario final en el correo electrónico. Por ejemplo, si un usuario eliminó un mensaje o movió el mensaje a archivo/pst, la ubicación del mensaje "entrega" no se actualizará. Pero si una acción del sistema actualiza la ubicación (por ejemplo, ZAP da como resultado un correo electrónico que pasa a **cuarentena),** la ubicación de entrega más reciente se mostrará como "cuarentena".
+**La ubicación de entrega original** dará más información sobre dónde se entregó un correo electrónico inicialmente. **La ubicación de entrega más** reciente mostrará dónde aterrizó un correo electrónico después de acciones del sistema como *ZAP* o acciones de administración como Mover a *elementos eliminados.* La ubicación de entrega más reciente está pensada para proporcionar a los administradores la última ubicación conocida posterior a la entrega del mensaje o cualquier acción del sistema o administrador. No incluye ninguna acción del usuario final en el correo electrónico. Por ejemplo, si un usuario eliminó un mensaje o movió el mensaje a archivo/pst, la ubicación de "entrega" del mensaje no se actualizará. Pero si una acción del sistema actualiza la ubicación (por ejemplo, ZAP da como resultado un correo electrónico que pasa a **cuarentena),** la ubicación de entrega más reciente se mostrará como "cuarentena".
 
 > [!div class="mx-imgBorder"]
 > ![Ubicaciones de entrega actualizadas](../../media/Updated_Delivery_Location.png)
@@ -179,7 +179,7 @@ Entre las mejoras se incluyen:
 
 - Muestra la dirección URL con clics completos (incluidos los parámetros de consulta que forman parte de la dirección URL) en la sección **Clics** del control desplegable url. Actualmente, el dominio de dirección URL y la ruta de acceso aparecen en la barra de título. Estamos ampliando esa información para mostrar la dirección URL completa.
 
-- Correcciones entre filtros de dirección URL (dirección *URL* frente a dominio de dirección *URL* frente a dominio y ruta de acceso de dirección *URL):* las actualizaciones afectan a la búsqueda de mensajes que contienen un veredicto de dirección URL/clic. Habilitamos la compatibilidad con búsquedas independientes del protocolo, por lo que puede buscar una dirección URL sin usar `http` . De forma predeterminada, la búsqueda de dirección URL se asigna a http, a menos que se especifique explícitamente otro valor. Por ejemplo:
+- Correcciones entre filtros de dirección *URL* (dirección *URL* frente a dominio de dirección *URL* frente a dominio y ruta de acceso url): las actualizaciones afectan a la búsqueda de mensajes que contienen un veredicto de dirección URL/clic. Habilitamos la compatibilidad con búsquedas independientes del protocolo, por lo que puede buscar una dirección URL sin usar `http` . De forma predeterminada, la búsqueda de dirección URL se asigna a http, a menos que se especifique explícitamente otro valor. Por ejemplo:
 
    -  Busque con y sin el prefijo en los campos de filtro Dirección URL, Dominio de dirección URL y `http://` Dominio y Ruta de acceso de la dirección **URL.**   Las búsquedas deben mostrar los mismos resultados.
 
@@ -201,7 +201,7 @@ Para mejorar el proceso de búsqueda, hemos actualizado el Explorador de amenaza
 
 - [Mejoras en la zona horaria](#timezone-improvements)
 - [Actualización en el proceso de actualización](#update-in-the-refresh-process)
-- [Obtención de detalles del gráfico para agregar a filtros](#chart-drilldown-to-add-to-filters)
+- [Obtención de detalles de gráficos para agregar a filtros](#chart-drilldown-to-add-to-filters)
 - [En las actualizaciones de información del producto](#in-product-information-updates)
 
 ### <a name="filter-by-user-tags"></a>Filtrar por etiquetas de usuario
@@ -229,7 +229,7 @@ Desde el punto de vista de la experiencia, el usuario puede aplicar y quitar los
 > [!div class="mx-imgBorder"]
 > ![Seleccionar Actualizar para filtrar los resultados](../../media/ManualRefresh.png)
 
-### <a name="chart-drilldown-to-add-to-filters"></a>Obtención de detalles del gráfico para agregar a filtros
+### <a name="chart-drilldown-to-add-to-filters"></a>Obtención de detalles de gráficos para agregar a filtros
 
 Ahora puede crear gráficos de valores de leyenda para agregarlos como filtros. Seleccione el **botón Actualizar** para filtrar los resultados.
 
@@ -247,7 +247,7 @@ Ahora hay detalles adicionales disponibles en el producto, como el número total
 
 ### <a name="top-targeted-users"></a>Principales usuarios de destino
 
-Hoy exponemos la lista de los principales usuarios de destino en la vista Malware de los correos electrónicos, en la sección Principales familias **de malware.** También ampliaremos esta vista en las vistas Suplantación de identidad y Todo el correo electrónico. Podrás ver los cinco primeros usuarios de destino, junto con el número de intentos de cada usuario para la vista correspondiente. Por ejemplo, para la vista de suplantación de identidad, verá el número de intentos de suplantación de identidad.
+Hoy exponemos la lista de los principales usuarios de destino en la vista Malware para correos electrónicos, en la sección Principales familias **de malware.** También ampliaremos esta vista en las vistas Suplantación de identidad y Todo el correo electrónico. Podrás ver los cinco primeros usuarios de destino, junto con el número de intentos de cada usuario para la vista correspondiente. Por ejemplo, para la vista de suplantación de identidad, verá el número de intentos de suplantación de identidad.
 
 Podrá exportar la lista de usuarios de destino, hasta un límite de 3.000, junto con el número de intentos de análisis sin conexión para cada vista de correo electrónico. Además, al seleccionar el número de intentos (por ejemplo, 13 intentos en la imagen siguiente) se abrirá una vista filtrada en el Explorador de amenazas, para que pueda ver más detalles entre correos electrónicos y amenazas para ese usuario.
 
@@ -256,7 +256,7 @@ Podrá exportar la lista de usuarios de destino, hasta un límite de 3.000, junt
 
 ### <a name="exchange-transport-rules"></a>Reglas de transporte de Exchange
 
-Como parte del enriquecimiento de datos, podrá ver todas las diferentes reglas de transporte de Exchange (ETR) que se aplicaron a un mensaje. Esta información estará disponible en la vista de cuadrícula de correo electrónico. Para verlo, seleccione **Opciones de columna en** la cuadrícula y, a continuación, Agregue regla de transporte de **Exchange** desde las opciones de columna. También estará visible en el **menú** desplegable Detalles del correo electrónico.
+Como parte del enriquecimiento de datos, podrá ver todas las diferentes reglas de transporte de Exchange (ETR) que se aplicaron a un mensaje. Esta información estará disponible en la vista Cuadrícula de correo electrónico. Para verlo, seleccione **Opciones de columna en** la cuadrícula y, a continuación, Agregue regla de transporte de **Exchange** desde las opciones de columna. También estará visible en el **menú** desplegable Detalles del correo electrónico.
 
 Podrá ver el GUID y el nombre de las reglas de transporte que se aplicaron al mensaje. Podrá buscar los mensajes con el nombre de la regla de transporte. Se trata de una búsqueda "Contiene", lo que significa que también puede realizar búsquedas parciales.
 
@@ -278,7 +278,7 @@ Dentro de la cuadrícula de correo electrónico, el control desplegable Detalles
 
 ### <a name="inbound-connectors"></a>Conectores de entrada
 
-Los conectores son una colección de instrucciones que personalizan cómo fluye el correo electrónico hacia y desde su organización de Microsoft 365 u Office 365. Permiten aplicar cualquier restricción o control de seguridad. En el Explorador de amenazas, ahora puede ver los conectores relacionados con un correo electrónico y buscar correos electrónicos mediante el uso de nombres de conectores.
+Los conectores son una colección de instrucciones que personalizan cómo fluye el correo electrónico hacia y desde su organización de Microsoft 365 u Office 365. Permiten aplicar restricciones o controles de seguridad. En el Explorador de amenazas, ahora puede ver los conectores relacionados con un correo electrónico y buscar correos electrónicos mediante el uso de nombres de conectores.
 
 La búsqueda de conectores tiene un carácter "contiene", lo que significa que las búsquedas parciales de palabras clave también deberían funcionar. Dentro de la vista de cuadrícula principal, el control desplegable Detalles y el CSV exportado, los conectores se muestran en el formato Nombre/GUID, como se muestra aquí:
 
@@ -299,7 +299,7 @@ Estas nuevas características se describen a continuación.
 
 Ahora puede obtener una vista previa de un encabezado de correo electrónico y descargar el cuerpo del correo electrónico en Los administradores del Explorador de amenazas pueden analizar los encabezados descargados o los mensajes de correo electrónico en busca de amenazas. Dado que la descarga de mensajes de correo electrónico puede correr el riesgo de exposición de información, este proceso se controla mediante el control de acceso basado en roles (RBAC). Se debe agregar un nuevo *rol,* vista previa, a otro grupo de roles (como Operaciones de seguridad o Administrador de seguridad) para conceder la capacidad de descargar correos en la vista de todos los mensajes de correo electrónico. Sin embargo, ver el encabezado de correo electrónico no requiere ningún rol adicional (aparte de lo necesario para ver mensajes en el Explorador de amenazas).
 
-Las detecciones de explorador y en tiempo real también recibirán nuevos campos que proporcionan una imagen más completa de dónde llegarán los mensajes de correo electrónico. Estos cambios facilitan la búsqueda de operaciones de seguridad. Pero el resultado principal es que puede conocer la ubicación de los mensajes de correo electrónico con problemas de un vistazo.
+Las detecciones de explorador y en tiempo real también recibirán nuevos campos que proporcionan una imagen más completa de dónde llegarán los mensajes de correo electrónico. Estos cambios facilitan la búsqueda de Operaciones de seguridad. Pero el resultado principal es que puede conocer la ubicación de los mensajes de correo electrónico con problemas de un vistazo.
 
 ¿Cómo se hace? El estado de entrega ahora se divide en dos columnas:
 
@@ -371,7 +371,7 @@ Supongamos que desea ver malware detectado en el correo electrónico ordenado po
    > [!div class="mx-imgBorder"]
    > ![Tecnologías de detección de malware](../../media/ExplorerEmailMalwareDetectionTech.png)
 
-4. Elija una opción. A continuación, **seleccione** el botón Actualizar para aplicar ese filtro.
+4. Elija una opción. A continuación, **seleccione el** botón Actualizar para aplicar ese filtro.
 
    > [!div class="mx-imgBorder"]
    > ![Tecnología de detección seleccionada](../../media/ExplorerEmailMalwareDetectionTechATP.png)
@@ -404,7 +404,7 @@ Para revisar las direcciones URL de suplantación de identidad [   >   ](threat-
 
    - **Los clics principales** son las direcciones URL ajustadas por vínculos seguros en las que se hizo clic, ordenadas por recuento total de clics. Esta columna tampoco se muestra para simplificar la vista. Los recuentos totales por columna indican el recuento de veredictos de clic de Vínculos seguros para cada dirección URL en la que se ha hecho clic. En la vista de correo electrónico de suplantación de identidad, normalmente son direcciones URL sospechosas o malintencionadas. Pero la vista podría incluir direcciones URL que no son amenazas pero que están en mensajes de suplantación de identidad. Los clics de url en vínculos sin envolver no se muestran aquí.
 
-   Las dos tablas url muestran las direcciones URL principales en los mensajes de correo electrónico de suplantación de identidad por acción de entrega y ubicación. Las tablas muestran los clics de la dirección URL que se bloquearon o visitaron a pesar de una advertencia, para que pueda ver qué posibles vínculos no se mostraron a los usuarios y en los que se hizo clic en el usuario. Desde aquí, puede realizar más análisis. Por ejemplo, debajo del gráfico puede ver las direcciones URL principales de los mensajes de correo electrónico bloqueados en el entorno de su organización.
+   Las dos tablas url muestran las direcciones URL principales en los mensajes de correo electrónico de suplantación de identidad por acción de entrega y ubicación. En las tablas se muestran los clics de dirección URL que se bloquearon o visitaron a pesar de una advertencia, para que pueda ver qué posibles vínculos no se mostraron a los usuarios y en los que se hizo clic en el usuario. Desde aquí, puede realizar más análisis. Por ejemplo, debajo del gráfico puede ver las direcciones URL principales de los mensajes de correo electrónico bloqueados en el entorno de su organización.
 
    > [!div class="mx-imgBorder"]
    > ![Direcciones URL del explorador bloqueadas](../../media/ExplorerPhishClickVerdictURLs.png)
@@ -445,7 +445,7 @@ Supongamos que desea ver los mensajes de correo electrónico que los usuarios de
    > [!div class="mx-imgBorder"]
    > ![Suplantación de identidad notificada por el usuario](../../media/EmailUserReportedReportType.png)
 
-El informe se actualiza para mostrar datos sobre los mensajes de correo electrónico que las personas de su organización han notificado como intento de suplantación de identidad. Puede usar esta información para realizar más análisis y, si es necesario, ajustar las directivas contra suplantación de identidad en [Microsoft Defender para Office 365.](configure-atp-anti-phishing-policies.md)
+El informe se actualiza para mostrar datos sobre los mensajes de correo electrónico que las personas de su organización han notificado como un intento de suplantación de identidad. Puede usar esta información para realizar más análisis y, si es necesario, ajustar las directivas contra suplantación de identidad en [Microsoft Defender para Office 365.](configure-atp-anti-phishing-policies.md)
 
 ## <a name="start-automated-investigation-and-response"></a>Iniciar investigación y respuesta automatizadas
 
@@ -462,7 +462,7 @@ Además de los escenarios descritos en este artículo, tienes muchas más opcion
 - [Ver archivos malintencionados detectados en SharePoint Online, OneDrive y Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
 - [Obtener información general sobre las vistas en el Explorador de amenazas (y detecciones en tiempo real)](threat-explorer-views.md)
 - [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report)
-- [Investigación y respuesta automatizada en la Protección contra amenazas de Microsoft](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Investigación y respuesta automatizada en la Protección contra amenazas de Microsoft](../mtp/mtp-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>Permisos y licencias necesarios
 

@@ -15,19 +15,19 @@ ms.custom:
 description: Los administradores pueden obtener información sobre los diferentes tipos de objetos de destinatario en Exchange Online Protection (EOP) independiente.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20d1c3e77c916e2c04a9c35eceb410859eb85ba0
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 045146b0c8676398482e813d6986fd64dda3aa6d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150272"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287766"
 ---
 # <a name="manage-recipients-in-standalone-eop"></a>Administrar destinatarios en EOP independiente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
--  [Exchange Online Protection independiente](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection independiente](exchange-online-protection-overview.md)
 
 Las organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online admiten los siguientes tipos de destinatarios:
 

@@ -22,20 +22,20 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 451a6b19139502a3765795694860e884a7a469bf
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 48d7e1a7497f9bc2a07a84b36fb07939d25609bf
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175756"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289154"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Cómo notificar falsos positivos/negativos en las capacidades automatizadas de investigación y respuesta
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Microsoft Defender para Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Si las capacidades de investigación y respuesta [automatizadas (AIR) en Office 365](automated-investigation-response-office.md) no se detectaron o detectaron algo incorrectamente, hay pasos que el equipo de operaciones de seguridad puede seguir para solucionarlo. Estas acciones incluyen:
 
@@ -84,7 +84,7 @@ En el Centro de actividades, puede ver las acciones de corrección que se han re
 4. Seleccione un elemento. Se abre el panel desplegable. 
 5. En el panel desplegable, seleccione **Deshacer**. (Solo las acciones que se pueden deshacer tendrán un **botón** Deshacer).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Microsoft Defender para Office 365](office-365-atp.md)
 - [Investigaciones automatizadas en Microsoft Defender para Office 365](office-365-air.md)

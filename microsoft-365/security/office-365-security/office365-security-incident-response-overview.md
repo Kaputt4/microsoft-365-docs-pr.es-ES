@@ -19,25 +19,25 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8dd7a90255fdd3e083a5d7306cac2e9ca6411024
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: d37fb232b717485c40218fd8a3c3117ba9b8322b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150188"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287646"
 ---
 # <a name="security-incident-response"></a>Respuesta a incidentes de seguridad
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender para Office 365 plan 1 y plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
- **Resumen:** Esta solución le indica cuáles son los indicadores de los ataques de ciberseguridad más comunes en Office 365, cómo confirmar positivamente cualquier ataque dado y cómo responder a él.
+ **Resumen:** Esta solución le indica cuáles son los indicadores para los ataques de ciberseguridad más comunes en Office 365, cómo confirmar positivamente cualquier ataque dado y cómo responder a él.
 
-## <a name="learn-how-to-respond-to-cyberattacks"></a>Obtenga información sobre cómo responder a los ciberataques
+## <a name="learn-how-to-respond-to-cyberattacks"></a>Obtenga información sobre cómo responder a ciberataques
 
 No todos los ciberataques pueden frustrarse. Los atacantes buscan constantemente nuevos puntos débiles en la estrategia de defensa o aprovechan los antiguos. Saber cómo reconocer un ataque le permite responder a él con mayor rapidez, lo que acorta la duración del incidente de seguridad.
 

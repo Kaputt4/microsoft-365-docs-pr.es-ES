@@ -21,20 +21,26 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 039ec1c3f9b0ba233f950d11b9d58be341b28121
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 520a5627d2cd280f28c4e2c3db0e565640a1eace
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930599"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289166"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de la puntuación de seguridad de Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Para que La puntuación de seguridad de Microsoft sea un mejor representante de su posición de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte [¿Qué viene en la puntuación de seguridad de Microsoft?](microsoft-secure-score-whats-coming.md)
+Para que La puntuación de seguridad de Microsoft sea un mejor representante de su posición de seguridad, hemos realizado algunos cambios. Para obtener información sobre los cambios planeados, consulte ¿Qué viene en puntuación de [seguridad de Microsoft?](microsoft-secure-score-whats-coming.md)
 
-La puntuación de seguridad de Microsoft puede encontrarse https://security.microsoft.com/securescore en el Centro de seguridad de Microsoft [365.](overview-security-center.md)
+La puntuación de seguridad de Microsoft puede encontrarse en el Centro de seguridad https://security.microsoft.com/securescore [de Microsoft 365.](overview-security-center.md)
+    
+## <a name="february-2021"></a>Febrero de 2021
+
+### <a name="compatibility-with-graph-api"></a>Compatibilidad con la API de Graph
+
+Las recomendaciones de puntuación de seguridad de Microsoft que se entregan a través de la API de Graph tendrán el mismo aspecto que las recomendaciones que ve actualmente en el Centro de seguridad de Microsoft 365.
 
 ## <a name="january-2021"></a>Enero de 2021
 
@@ -61,7 +67,7 @@ La capacidad de crear vales de ServiceNow a través de puntuación de seguridad 
 
 ### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Se agregaron tres acciones de mejora relacionadas con los servicios para Microsoft Defender para Endpoint (anteriormente ATP de Microsoft Defender):
 
-- Corregir la ruta de servicio sin comillas para los servicios de Windows
+- Corregir la ruta de acceso de servicio sin comillas para los servicios de Windows
 - Cambiar la ruta del archivo ejecutable del servicio a una ubicación protegida común
 - Cambiar la cuenta de servicio para evitar la contraseña almacenada en caché en el Registro de Windows
 
@@ -77,11 +83,11 @@ La capacidad de crear vales de ServiceNow a través de puntuación de seguridad 
 
 - Habilitar la directiva para bloquear la autenticación heredada
 
-## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Incompatibilidad con la puntuación de seguridad de identidad y la API de Graph
+## <a name="incompatibility-with-identity-secure-score"></a>Incompatibilidad con la puntuación de seguridad de identidad
 
-En la versión reciente de Puntuación de seguridad de Microsoft, se ha publicado un modelo de puntuación mejorado. Estos cambios permiten una vista más flexible y precisa de su posición de seguridad. Sin embargo, estas actualizaciones han hecho que la puntuación de seguridad de Microsoft sea temporalmente incompatible con la puntuación de seguridad de identidad y la API de Graph.
+En la versión reciente de Puntuación de seguridad de Microsoft, se ha publicado un modelo de puntuación mejorado. Estos cambios permiten una vista más flexible y precisa de su posición de seguridad. Sin embargo, estas actualizaciones han hecho que la puntuación de seguridad de Microsoft sea temporalmente incompatible con la puntuación de seguridad de identidad.
 
-Con el tiempo, la puntuación de seguridad de identidad y la API de Graph adoptarán el nuevo modelo de puntuación. Hasta entonces, los clientes verán diferencias en las puntuaciones notificadas por la puntuación de seguridad de Microsoft, la puntuación de seguridad de identidad y la API de Graph. We apologize for any inconvenience this causes, and are working to ensure these experiences are more compatible in the future.
+Con el tiempo, la puntuación de seguridad de identidad adoptará el nuevo modelo de puntuación. Hasta entonces, los clientes verán diferencias en las puntuaciones notificadas por la puntuación de seguridad de Microsoft y la puntuación de seguridad de identidad. We apologize for any inconvenience this causes, and are working to ensure these experiences are more compatible in the future.
 
 ## <a name="updated-improvement-actions"></a>Acciones de mejora actualizadas
 
@@ -101,7 +107,7 @@ Con el tiempo, la puntuación de seguridad de identidad y la API de Graph adopta
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos escuchar sus comentarios
 
-Si tiene algún problema, háganoslo saber publicando en la comunidad [seguridad, privacidad & cumplimiento.](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) Estamos supervisando la comunidad y le proporcionaremos ayuda.
+Si tiene algún problema, háganoslo saber publicando en la comunidad [seguridad, privacidad & cumplimiento.](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) Estamos supervisando la comunidad y proporcionaremos ayuda.
 
 ## <a name="related-resources"></a>Recursos relacionados
 

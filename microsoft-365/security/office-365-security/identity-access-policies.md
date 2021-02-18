@@ -6,6 +6,7 @@ author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: m365-security
 ms.topic: article
+audience: Admin
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -19,23 +20,23 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: e70274f5718d1c8e8fca1be780649cdb0fcef851
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 87f064627446a0e41f5ed864c2ae37a2f0e60ba4
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142902"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286818"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
 - Azure
 
 En este artículo se describen las directivas recomendadas comunes para proteger el acceso a los servicios en la nube de Microsoft 365, incluidas las aplicaciones locales publicadas con El proxy de aplicación de Azure Active Directory (Azure AD).
 
-En esta guía se describe cómo implementar las directivas recomendadas en un entorno recién aprovisionado. La configuración de estas directivas en un entorno de laboratorio independiente le permite comprender y evaluar las directivas recomendadas antes de realizar la implementación en los entornos de preproducción y producción. El entorno recién aprovisionado puede ser híbrido o solo en la nube para reflejar sus necesidades de evaluación.
+En esta guía se describe cómo implementar las directivas recomendadas en un entorno recién aprovisionado. La configuración de estas directivas en un entorno de laboratorio independiente le permite comprender y evaluar las directivas recomendadas antes de realizar la implementación en los entornos de preproducción y producción. El entorno recién aprovisionado puede ser solo en la nube o híbrido para reflejar sus necesidades de evaluación.
 
 ## <a name="policy-set"></a>Conjunto de directivas
 
@@ -74,7 +75,7 @@ Para darle tiempo para realizar estas tareas, se recomienda implementar las dire
 
 Antes de configurar directivas, identifica los grupos de Azure AD que usas para cada nivel de protección. Normalmente, la protección de línea base se aplica a todos los usuarios de la organización. A un usuario que se incluye para la línea base y la protección confidencial se le aplicarán todas las directivas de línea base además de las directivas confidenciales. La protección es acumulativa y se aplica la directiva más restrictiva.
 
-Una práctica recomendada es crear un grupo de Azure AD para la exclusión de acceso condicional. Agregue este grupo a todas las  directivas de  acceso condicional en el valor Excluir de la configuración Usuarios y grupos en la **sección Asignaciones.** Esto le proporciona un método para proporcionar acceso a un usuario mientras soluciona problemas de acceso. Esto se recomienda como una solución temporal únicamente. Supervise este grupo en busca de cambios y asegúrese de que el grupo de exclusión se usa únicamente según lo previsto.
+Una práctica recomendada es crear un grupo de Azure AD para la exclusión de acceso condicional. Agregue este grupo a todas las  directivas de  acceso condicional en el valor Excluir de la configuración Usuarios y grupos de la **sección Asignaciones.** Esto le proporciona un método para proporcionar acceso a un usuario mientras soluciona problemas de acceso. Esto se recomienda como una solución temporal únicamente. Supervise este grupo en busca de cambios y asegúrese de que el grupo de exclusión se usa únicamente según lo previsto.
 
 Este es un ejemplo de asignación de grupo y exclusiones para requerir MFA.
 
@@ -92,7 +93,7 @@ Estos son los resultados:
 
   En este caso, los miembros del grupo Secreto superior de Project X coinciden con las directivas de línea base y de acceso condicional altamente regulado. Se combinan los controles de acceso para ambas directivas. Dado que el control de acceso de la directiva de acceso condicional altamente regulado es más restrictivo, se usa.
 
-Tenga cuidado al aplicar niveles más altos de protección a grupos y usuarios. Por ejemplo, los miembros del grupo Secreto superior de Project X tendrán que usar MFA cada vez que inicien sesión, incluso si no están trabajando en el contenido altamente regulado para el Proyecto X.
+Tenga cuidado al aplicar niveles más altos de protección a grupos y usuarios. Por ejemplo, los miembros del grupo Secreto superior de Project X tendrán que usar MFA cada vez que inicien sesión, incluso si no están trabajando en el contenido altamente regulado para Project X.
 
 Todos los grupos de Azure AD creados como parte de estas recomendaciones deben crearse como grupos de Microsoft 365. Esto es importante para la implementación de etiquetas de confidencialidad al proteger documentos en Microsoft Teams y SharePoint.
 
@@ -100,7 +101,7 @@ Todos los grupos de Azure AD creados como parte de estas recomendaciones deben c
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Requerir MFA en función del riesgo de inicio de sesión
 
-Debe hacer que los usuarios se registren para MFA antes de requerir su uso. Si tiene microsoft 365 E5, Microsoft 365 E3 con el complemento de protección contra amenazas de identidad &, Office 365 con EMS E5 o licencias individuales de Azure AD Premium P2, puede usar la directiva de registro de MFA con Azure AD Identity Protection para requerir que los usuarios se registren para MFA. El [trabajo de requisitos](identity-access-prerequisites.md) previos incluye el registro de todos los usuarios con MFA.
+Debe hacer que los usuarios se registren para MFA antes de requerir su uso. Si tiene Microsoft 365 E5, Microsoft 365 E3 con el complemento de Protección contra amenazas de Identity &, Office 365 con EMS E5 o licencias individuales de Azure AD Premium P2, puede usar la directiva de registro de MFA con Azure AD Identity Protection para requerir que los usuarios se registren para MFA. El [trabajo de requisitos previos](identity-access-prerequisites.md) incluye el registro de todos los usuarios con MFA.
 
 Después de registrar a los usuarios, puede requerir MFA para iniciar sesión con una nueva directiva de acceso condicional.
 
@@ -113,7 +114,7 @@ En las tablas siguientes se describe la configuración de la directiva de acceso
 
 En la **sección Asignaciones:**
 
-|Setting|Propiedades|Valores|Notas|
+|Configuración|Propiedades|Valores|Notas|
 |---|---|---|---|
 |Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos:** seleccione grupos específicos que contengan cuentas de usuario de destino.|Comience con el grupo que incluye cuentas de usuario piloto.|
 ||Excluir|**Usuarios y grupos:** seleccione el grupo de excepciones de acceso condicional; cuentas de servicio (identidades de aplicación).|La pertenencia debe modificarse según sea necesario y temporalmente.|
@@ -135,7 +136,7 @@ Aplicar la configuración del nivel de riesgo en función del nivel de protecci�
 
 En la sección **Controles de** acceso:
 
-|Setting|Propiedades|Valores|Action|
+|Configuración|Propiedades|Valores|Action|
 |---|---|---|---|
 |Conceder|**Conceder acceso**||Select|
 |||**Requerir autenticación multifactor**|Cheque|
@@ -156,7 +157,7 @@ Vea [este artículo para](../../enterprise/microsoft-365-client-support-multi-fa
 
 En la **sección Asignaciones:**
 
-|Setting|Propiedades|Valores|Notas|
+|Configuración|Propiedades|Valores|Notas|
 |---|---|---|---|
 |Usuarios y grupos|Incluir|**Seleccione usuarios y grupos > usuarios y grupos:** seleccione grupos específicos que contengan cuentas de usuario de destino.|Comience con el grupo que incluye cuentas de usuario piloto.|
 ||Excluir|**Usuarios y grupos:** seleccione el grupo de excepciones de acceso condicional; cuentas de servicio (identidades de aplicación).|La pertenencia debe modificarse según sea necesario y temporalmente.|
@@ -166,7 +167,7 @@ En la **sección Asignaciones:**
 
 En la sección **Controles de** acceso:
 
-|Setting|Propiedades|Valores|Action|
+|Configuración|Propiedades|Valores|Action|
 |---|---|---|---|
 |Conceder|**Bloquear acceso**||Select|
 ||**Exigir todos los controles seleccionados**||Select|
@@ -178,7 +179,7 @@ Por último, **seleccione Activar** para **habilitar directiva** y, a continuaci
 
 Considere la posibilidad de [usar la herramienta What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) para probar la directiva.
 
-Para Exchange Online, puede usar directivas de autenticación [para](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)deshabilitar la autenticación básica, lo que obliga a todas las solicitudes de acceso de cliente a usar la autenticación moderna.
+Para Exchange Online, puede usar directivas de autenticación para deshabilitar [la](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)autenticación básica, lo que obliga a todas las solicitudes de acceso de cliente a usar la autenticación moderna.
 
 ## <a name="high-risk-users-must-change-password"></a>Los usuarios de riesgo alto tienen que cambiar la contraseña
 
@@ -198,7 +199,7 @@ En la segunda **sección Asignaciones:**
 
 |Tipo|Propiedades|Valores|Action|
 |---|---|---|---|
-|Acceso|**Permitir acceso**||Select|
+|Access|**Permitir acceso**||Select|
 |||**Exigir cambio de contraseña**|Cheque|
 |
 
@@ -208,7 +209,7 @@ Por último, seleccione **Activar** para **Aplicar directiva** y, a continuació
 
 Considere la posibilidad de [usar la herramienta What if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) para probar la directiva.
 
-Use esta directiva junto con Configurar la protección con contraseña de [Azure AD,](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)que detecta y bloquea contraseñas débiles conocidas y sus variantes y términos débiles adicionales específicos de su organización. El uso de la protección con contraseña de Azure AD garantiza que las contraseñas modificadas sean seguras.
+Use esta directiva junto con Configurar la protección con contraseña de [Azure AD,](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)que detecta y bloquea contraseñas no seguras conocidas y sus variantes y términos débiles adicionales específicos de su organización. El uso de la protección con contraseña de Azure AD garantiza que las contraseñas modificadas sean seguras.
 
 ## <a name="apply-app-data-protection-policies"></a>Aplicar directivas de protección de datos de APP
 
@@ -216,9 +217,9 @@ Las directivas de protección de aplicaciones (APP) definen qué aplicaciones se
 
 El marco de protección de datos de APP se organiza en tres niveles de configuración distintos, cada uno de los niveles se genera en el nivel anterior:
 
-- **La protección de datos básica** de empresa (nivel 1) garantiza que las aplicaciones están protegidas con un PIN y cifradas, y realiza operaciones de eliminación selectiva. Para dispositivos Android, este nivel valida la atestación de dispositivos Android. Se trata de una configuración de nivel de entrada que proporciona un control de protección de datos similar en las directivas de buzón de Exchange Online e introduce el personal de IT y la población de usuarios en APP.
+- **La protección de datos básica** de empresa (nivel 1) garantiza que las aplicaciones estén protegidas con un PIN y cifradas, y realiza operaciones de borrado selectivo. Para dispositivos Android, este nivel valida la atestación de dispositivos Android. Se trata de una configuración de nivel de entrada que proporciona un control de protección de datos similar en las directivas de buzón de Exchange Online e introduce el personal de IT y la población de usuarios en APP.
 - **La protección de datos mejorada de empresa** (nivel 2) presenta mecanismos de prevención de fuga de datos de APP y requisitos mínimos del sistema operativo. Esta es la configuración que se aplica a la mayoría de los usuarios móviles que acceden a datos de trabajo o escuela.
-- **Enterprise High Data Protection** (Nivel 3) presenta mecanismos avanzados de protección de datos, configuración mejorada de PIN y APP Mobile Threat Defense. Esta configuración es deseable para los usuarios que tienen acceso a datos de alto riesgo.
+- **Enterprise High Data Protection** (Nivel 3) presenta mecanismos avanzados de protección de datos, configuración de PIN mejorada y APP Mobile Threat Defense. Esta configuración es deseable para los usuarios que tienen acceso a datos de alto riesgo.
 
 Para ver las recomendaciones específicas para cada nivel de configuración y las aplicaciones mínimas que deben protegerse, revisa el marco de protección de datos [mediante directivas de protección de aplicaciones.](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)
 
@@ -227,7 +228,7 @@ Con los principios descritos en las configuraciones de identidad y acceso a [dis
 |Nivel de protección|Directiva de protección de aplicaciones|Más información|
 |---|---|---|
 |Línea base|[Protección de datos mejorada de nivel 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|La configuración de directiva aplicada en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la siguiente configuración de directiva para implementar más controles y una configuración más sofisticada que el nivel 1.|
-|Confidencial|[Protección de datos mejorada de nivel 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|La configuración de directiva que se aplica en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la siguiente configuración de directiva para implementar más controles y una configuración más sofisticada que el nivel 1.|
+|Confidencial|[Protección de datos mejorada de nivel 2](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|La configuración de directiva aplicada en el nivel 2 incluye todas las configuraciones de directiva recomendadas para el nivel 1 y solo agrega o actualiza la siguiente configuración de directiva para implementar más controles y una configuración más sofisticada que el nivel 1.|
 |Altamente regulado|[Nivel 3 de protección de datos empresarial alta](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|La configuración de directiva aplicada en el nivel 3 incluye todas las configuraciones de directiva recomendadas para los niveles 1 y 2 y solo agrega o actualiza la siguiente configuración de directiva para implementar más controles y una configuración más sofisticada que el nivel 2.|
 |
 
@@ -240,14 +241,14 @@ Para crear una nueva directiva de protección de aplicaciones para cada platafor
 
 Para aplicar las directivas de protección de aplicaciones que aplicó en Intune, debe crear una directiva de acceso condicional para requerir aplicaciones cliente aprobadas y las condiciones establecidas en las directivas de protección de aplicaciones.
 
-La aplicación de directivas de protección de aplicaciones requiere un conjunto de directivas descritas en Requerir directiva de protección de aplicaciones para el acceso a aplicaciones en la nube [con acceso condicional.](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) Estas directivas se incluyen en este conjunto recomendado de directivas de configuración de identidad y acceso.
+La aplicación de directivas de protección de APLICACIONES requiere un conjunto de directivas descritas en Requerir la directiva de protección de aplicaciones para el acceso a aplicaciones en la nube [con acceso condicional.](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) Estas directivas se incluyen en este conjunto recomendado de directivas de configuración de identidad y acceso.
 
 Para crear la directiva de acceso condicional que requiere aplicaciones aprobadas y protección de aplicaciones, siga el "Paso 1: Configurar una directiva de acceso condicional de Azure AD para Microsoft 365" en el escenario 1: las aplicaciones de [Microsoft 365](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)requieren aplicaciones aprobadas con directivas de protección de aplicaciones , lo que permite a Outlook para iOS y Android, pero bloquea la conexión de clientes de Exchange ActiveSync compatibles con OAuth a Exchange Online.
 
    > [!NOTE]
    > Esta directiva garantiza que los usuarios móviles puedan acceder a todos los puntos de conexión de Office mediante las aplicaciones aplicables.
 
-Si está habilitando el acceso móvil a Exchange Online, implemente bloquear clientes [de ActiveSync,](secure-email-recommended-policies.md#block-activesync-clients)lo que impide que los clientes de Exchange ActiveSync que aprovechan la autenticación básica se conecten a Exchange Online. Esta directiva no se muestra en la ilustración de la parte superior de este artículo. Se describe y se muestra en las recomendaciones [de directiva para proteger el correo electrónico.](secure-email-recommended-policies.md)
+Si está habilitando el acceso móvil a Exchange Online, implemente bloquear los clientes [de ActiveSync,](secure-email-recommended-policies.md#block-activesync-clients)lo que impide que los clientes de Exchange ActiveSync que aprovechan la autenticación básica se conecten a Exchange Online. Esta directiva no se muestra en la ilustración de la parte superior de este artículo. Se describe y se muestra en las recomendaciones [de directiva para proteger el correo electrónico.](secure-email-recommended-policies.md)
 
 Para crear la directiva de acceso condicional que requiere Edge para iOS y Android, siga el "Paso 2: Configurar una directiva de acceso condicional de Azure AD para Microsoft 365" en el escenario [2:](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies)Las aplicaciones de explorador requieren aplicaciones aprobadas con directivas de protección de aplicaciones , lo que permite Que Edge para iOS y Android, pero bloquee la conexión de otros exploradores web de dispositivo móvil a puntos de conexión de Microsoft 365.
 
@@ -285,13 +286,13 @@ Debes crear una directiva para cada plataforma de PC, teléfono o tableta:
 
 Para crear directivas de cumplimiento de dispositivos, inicie sesión en el  Centro de administración de [Microsoft Endpoint Manager](https://endpoint.microsoft.com) con sus credenciales de administrador y, a continuación, vaya a Directivas de cumplimiento \> **de** \> **dispositivos.** Seleccione **Crear directiva.**
 
-Para que se implementen directivas de cumplimiento de dispositivos, deben asignarse a grupos de usuarios. Asigna una directiva después de crearla y guardarla. En el Centro de administración, seleccione la directiva y, a continuación, **seleccione Asignaciones.** Después de seleccionar los grupos que desea  recibir la directiva, seleccione Guardar para guardar esa asignación de grupo e implementar la directiva.
+Para que se implementen directivas de cumplimiento de dispositivos, deben asignarse a grupos de usuarios. Asigna una directiva después de crearla y guardarla. En el centro de administración, seleccione la directiva y, a continuación, **seleccione Asignaciones.** Después de seleccionar los grupos que desea  recibir la directiva, seleccione Guardar para guardar esa asignación de grupo e implementar la directiva.
 
 Para obtener instrucciones paso a paso sobre la creación de directivas de cumplimiento en Intune, consulte Crear una directiva de cumplimiento en [Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) en la documentación de Intune.
 
 ### <a name="recommended-settings-for-windows-10-and-later"></a>Configuración recomendada para Windows 10 y versiones posteriores
 
-Se recomiendan las siguientes opciones para equipos que ejecutan Windows 10 y versiones posteriores, tal como se configura en el paso **2:** Configuración de cumplimiento, del proceso de creación de directivas.
+Se recomiendan las siguientes opciones de configuración para equipos que ejecutan Windows 10 y versiones posteriores, tal como se configuró en el paso **2:** Configuración de cumplimiento, del proceso de creación de directivas.
 
 Para **ver las reglas de evaluación > servicio de atestación** de estado de Windows, consulta esta tabla.
 
@@ -304,9 +305,9 @@ Para **ver las reglas de evaluación > servicio de atestación** de estado de Wi
 
 Para **las propiedades de dispositivo,** especifique los valores adecuados para las versiones del sistema operativo en función de las directivas de TI y seguridad.
 
-Para **El cumplimiento de Configuration Manager,** seleccione **Requerir**.
+Para **el cumplimiento de Configuration Manager,** seleccione **Requerir**.
 
-Para **seguridad del** sistema, vea esta tabla.
+Para **seguridad del sistema,** vea esta tabla.
 
 |Tipo|Propiedades|Valor|Action|
 |---|---|---|---|
@@ -323,7 +324,7 @@ Para **seguridad del** sistema, vea esta tabla.
 ||Antivirus|Obligatoria|Select|
 ||Antispyware|Obligatoria|Select <p> Esta configuración requiere una solución anti spyware registrada con Windows Security Center.|
 |Defender|Microsoft Defender Antimalware|Obligatoria|Select|
-||Versión mínima de Antimalware de Microsoft Defender||Tipo <p> Solo se admite para el escritorio de Windows 10. Microsoft recomienda versiones no superiores a cinco versiones posteriores a la versión más reciente.|
+||Versión mínima de Antimalware de Microsoft Defender||Tipo <p> Solo se admite para el escritorio de Windows 10. Microsoft recomienda versiones no más de cinco detrás de la versión más reciente.|
 ||Firma antimalware de Microsoft Defender actualizada|Obligatoria|Select|
 ||Protección en tiempo real|Obligatoria|Select <p> Solo se admite para el escritorio de Windows 10|
 |
@@ -358,7 +359,7 @@ Para requerir equipos compatibles:
 
 10. Elija **Conceder acceso y,** a continuación, **compruebe Requerir que el dispositivo se marque como compatible.** Para varios controles, seleccione **Requerir todos los controles seleccionados.** Cuando haya terminado, elija **Seleccionar**.
 
-11. Seleccione **Activar** para **habilitar directiva** y, a continuación, elija **Crear**.
+11. Seleccione **Activar para** habilitar **directiva** y, a continuación, elija **Crear**.
 
 > [!NOTE]
 > Asegúrate de que el dispositivo es compatible antes de habilitar esta directiva. De lo contrario, podría bloquearse y no podrá cambiar esta directiva hasta que su cuenta de usuario se haya agregado al grupo de exclusión de acceso condicional.
@@ -382,7 +383,7 @@ Para exigir el cumplimiento de todos los dispositivos:
 
 9. Elija **Conceder acceso y,** a continuación, **compruebe Requerir que el dispositivo se marque como compatible.** Para varios controles, seleccione **Requerir todos los controles seleccionados.** Cuando haya terminado, elija **Seleccionar**.
 
-10. Seleccione **Activar** para **habilitar directiva** y, a continuación, elija **Crear**.
+10. Seleccione **Activar para** habilitar **directiva** y, a continuación, elija **Crear**.
 
 > [!NOTE]
 > Asegúrate de que el dispositivo es compatible antes de habilitar esta directiva. De lo contrario, podría bloquearse y no podrá cambiar esta directiva hasta que su cuenta de usuario se haya agregado al grupo de exclusión de acceso condicional.

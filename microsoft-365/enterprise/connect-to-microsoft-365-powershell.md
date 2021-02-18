@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Conéctese a su espacio empresarial de Microsoft 365 mediante PowerShell para Microsoft 365 de forma que pueda realizar tareas desde el Centro de administración desde la línea de comandos.
-ms.openlocfilehash: 33f9af45418ae8a1f126d2b321e7246201bd1f6e
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 0691304a2d40f7ae4262e6761902f16b4f6d5ee2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002410"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288118"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Conectarse a Microsoft 365 con PowerShell
 
@@ -117,7 +117,7 @@ PowerShell Core no es compatible con el Módulo Microsoft Azure Active Directory
 
 Estos pasos son necesarios solo una vez en el equipo. Pero es probable que tenga que actualizar el software periódicamente.
   
-1.  Si no ejecuta Windows 10, instale la versión de 64 bits del asistente para inicio de sesión de Microsoft Online Services: [Ayudante para el inicio de sesión de Microsoft Online Services para profesionales de TI (RTW)](https://go.microsoft.com/fwlink/p/?LinkId=286152).
+1.  Si no ejecuta Windows 10, instale la versión de 64 bits del asistente para inicio de sesión de Microsoft Online Services: [Ayudante para el inicio de sesión de Microsoft Online Services para profesionales de TI (RTW)](https://www.microsoft.com/Download/details.aspx?id=28177).
     
 2. Siga estos pasos para instalar el Módulo Microsoft Azure Active Directory para Windows PowerShell:
     

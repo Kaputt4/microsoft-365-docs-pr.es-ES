@@ -17,21 +17,21 @@ ms.custom:
 description: Los administradores pueden obtener información sobre el orden de aplicación de las protecciones en Exchange Online Protection (EOP) y cómo el valor de prioridad de las directivas de protección determina qué directiva se aplica.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7f3d4a607f702349d3a8e43c1eceba5ecbb697d7
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ec21be03280a8b7da122569d51186efc1f756a69
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167484"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286842"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Orden y prioridad de la protección de correo electrónico
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 En organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, el correo electrónico entrante puede estar marcado por varias formas de protección. Por ejemplo, las directivas contra suplantación de identidad integradas en EOP que están disponibles para todos los clientes de Microsoft 365 y las directivas anti-phishing más sólidas que están disponibles para Microsoft Defender para los clientes de Office 365. Los mensajes también pasan a través de varios exámenes de detección de malware, correo no deseado, suplantación de identidad, etc. Dada toda esta actividad, puede haber cierta confusión en cuanto a la directiva que se aplica.
 
@@ -73,7 +73,7 @@ Por ejemplo, considere las siguientes directivas contra suplantación de identid
 
 1. El mensaje se marca y se trata como suplantación de identidad, ya que la suplantación de identidad tiene una prioridad mayor (4) que la suplantación de usuario (5).
 2. La directiva A se aplica a los usuarios porque tiene una prioridad mayor que la directiva B.
-3. Según la configuración de la directiva A, no se hace ninguna acción en el mensaje, ya que la protección contra la suplantación está desactivada en la directiva.
+3. En función de la configuración de la directiva A, no se toma ninguna acción en el mensaje, porque la protección contra la suplantación está desactivada en la directiva.
 4. El procesamiento de directivas se detiene, por lo que la directiva B nunca se aplica a los usuarios.
 
 Dado que es posible que los mismos usuarios se incluyan intencionadamente o sin querer en varias directivas personalizadas del mismo tipo, use las siguientes directrices de diseño para las directivas personalizadas:

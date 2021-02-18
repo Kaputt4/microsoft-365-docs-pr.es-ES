@@ -16,20 +16,20 @@ ms.collection:
 description: Obtenga información sobre documentos seguros en Microsoft 365 E5 o Microsoft 365 E5 Security.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47bb6c66d51575c91b829e9688a074aaf9a18ab5
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: a3f4ed3535c7e53774b9b567b50f7c06e99cef9d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166656"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288590"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documentos seguros en Microsoft 365 E5
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Microsoft Defender para Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Documentos seguros es una característica de Microsoft 365 E5 o Microsoft 365 E5 Security que usa [Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para endpoint para examinar documentos y archivos que se abren en la vista [protegida.](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)
 
@@ -47,17 +47,17 @@ Documentos seguros es una característica de Microsoft 365 E5 o Microsoft 365 E5
   - Para configurar la configuración de documentos seguros,  debe ser miembro de los grupos de roles Administración de la organización o **Administrador de** seguridad.
   - Para obtener acceso de solo lectura a la configuración de documentos seguros, debe ser miembro de los grupos de roles Lector **global** o **Lector de** seguridad.
 
-  Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+  Para más información, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
   > [!NOTE]
-  > 
-  > - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  >
+  > - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   >
   > - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 ### <a name="how-does-microsoft-handle-your-data"></a>¿Cómo controla Microsoft los datos?
 
-Para mantenerte protegido, Documentos seguros envía archivos a la nube [de Microsoft Defender para endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para su análisis. Los detalles sobre cómo Microsoft Defender para puntos de conexión controla los datos se pueden encontrar aquí: Microsoft Defender para el almacenamiento de datos y [la privacidad de los puntos de conexión.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+Para mantenerte protegido, Documentos seguros envía archivos a la nube [de Microsoft Defender para endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para su análisis. Los detalles sobre cómo Microsoft Defender para puntos de conexión controla los datos se pueden encontrar aquí: Microsoft Defender para el almacenamiento de datos y la privacidad de los [puntos de conexión.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 
 Los archivos enviados por documentos seguros no se conservan en Defender más allá del tiempo necesario para el análisis (normalmente, menos de 24 horas).
 
@@ -98,7 +98,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, [co
 
 Para comprobar que ha habilitado y configurado Documentos seguros, siga uno de estos pasos:
 
-- En el Centro de seguridad &  Cumplimiento, vaya a Directiva de administración de amenazas \>  \> Datos **adjuntos** seguros de **ATP,** haga clic en Configuración global y compruebe la opción Activar documentos seguros para clientes de **Office** y Permitir a los usuarios hacer clic a través de la vista protegida incluso si Documentos seguros identifica el archivo como configuración malintencionada.
+- En el Centro de seguridad y  cumplimiento de &, vaya a Directiva de administración de amenazas \>  \> Datos **adjuntos** seguros de **ATP,** haga clic en Configuración global y compruebe la opción Activar documentos seguros para clientes de **Office** y Permitir a los usuarios hacer clic en vista protegida incluso si Documentos seguros identifica el archivo como configuración malintencionada.
 
 - Ejecute el siguiente comando en Exchange Online PowerShell y compruebe los valores de propiedad:
 

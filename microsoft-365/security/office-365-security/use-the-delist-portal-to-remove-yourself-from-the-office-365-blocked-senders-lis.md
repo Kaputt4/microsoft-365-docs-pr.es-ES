@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 04/18/2016
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -19,23 +18,29 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: En este artículo, aprenderá a usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Microsoft 365.
-ms.openlocfilehash: 0c87d467db004a50502402b05eb0fa3283aa46c5
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: c11fced30ef52315ecb44dda51e6825d36b57c7e
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614767"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287526"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-¿Recibe un mensaje de error cuando intenta enviar un correo electrónico a un destinatario cuya dirección de correo electrónico se encuentra en Microsoft 365? Si cree que no debe recibir el mensaje de error, puede usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados.
+¿Recibe un mensaje de error cuando intenta enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Microsoft 365? Si cree que no debería recibir el mensaje de error, puede usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados.
 
 ## <a name="what-is-the-blocked-senders-list"></a>¿Qué es la lista de remitentes bloqueados?
 
-Microsoft usa la lista de remitentes bloqueados para proteger a sus clientes contra el spam, la suplantación de identidad y los ataques de phishing. La dirección IP de su servidor de correo, es decir, la dirección que su servidor de correo usa para identificarse en Internet, se ha etiquetado como una amenaza potencial para Microsoft 365 por uno de varios motivos. Cuando Microsoft 365 agrega la dirección IP a la lista, impide todas las comunicaciones entre la dirección IP y cualquiera de nuestros clientes a través de nuestros centros de recursos.
+Microsoft usa la lista de remitentes bloqueados para proteger a sus clientes contra el spam, la suplantación de identidad y los ataques de phishing. La dirección IP del servidor de correo, es decir, la dirección que usa el servidor de correo para identificarse en Internet, se etiquetó como una amenaza potencial para Microsoft 365 por una variedad de motivos. Cuando Microsoft 365 agrega la dirección IP a la lista, impide toda comunicación adicional entre la dirección IP y cualquiera de nuestros clientes a través de nuestros centros de datos.
 
 Sabrá que lo hemos agregado a la lista cuando reciba una respuesta a un mensaje de correo que incluya un error similar al siguiente:
 
@@ -59,9 +64,9 @@ donde _dirección IP_ es la dirección IP del equipo en el que se ejecuta el ser
 
 5. En el portal de eliminación de la lista, haga clic en **Quitar de la lista una IP**.
 
-    Una vez quitada la dirección IP de la lista de remitentes bloqueados, los mensajes de correo electrónico de esa dirección IP se entregarán a los destinatarios que usen Microsoft 365. Por lo tanto, asegúrese de que el correo electrónico enviado desde esa dirección IP no es ofensivo ni malintencionado; de lo contrario, es posible que se vuelva a bloquear la dirección IP.
+    Después de quitar la dirección IP de la lista de remitentes bloqueados, los mensajes de correo electrónico de esa dirección IP se entregarán a los destinatarios que usen Microsoft 365. Por lo tanto, asegúrese de que el correo electrónico enviado desde esa dirección IP no es ofensivo ni malintencionado; de lo contrario, es posible que se vuelva a bloquear la dirección IP.
 
     > [!NOTE]
     > Pueden pasar hasta 24 horas o los resultados pueden variar ampliamente antes de eliminar las restricciones.
 
-Consulte [Create Safe Sender lists in EOP](create-safe-sender-lists-in-office-365.md) and [Outbound spam Protection in EOP](outbound-spam-controls.md) para evitar que se bloquee una IP.
+Vea [Crear listas de remitentes seguros en EOP](create-safe-sender-lists-in-office-365.md) y protección contra correo no deseado saliente en [EOP](outbound-spam-controls.md) para evitar que se bloquee una dirección IP.

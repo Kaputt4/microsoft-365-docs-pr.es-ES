@@ -19,22 +19,22 @@ ms.custom:
 description: En este artículo se explican los cambios que se están implantando en las características de protección de Azure Information Protection
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0769306c3aa2d1a357e1d5999d1a1406c02aa5f3
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: fe85a46e3f20cda62cd8a52bd5df92257f8fee57
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261566"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286674"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Características de protección de Azure Information Protection que se implementarán para los inquilinos existentes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Para ayudar con el paso inicial en la protección de la información, a partir de julio de 2018 todos los inquilinos elegibles de Azure Information Protection tendrán las características de protección de Azure Information Protection activadas de forma predeterminada. Las características de protección de Azure Information Protection anteriormente se conocían en Office 365 como Rights Management o Azure RMS. Si su organización tiene un plan de servicio de Office E3 o un plan de servicio superior, ahora podrá empezar a proteger la información a través de Azure Information Protection al implantar estas características.
+Para ayudarle con el paso inicial en la protección de su información, a partir de julio de 2018 todos los inquilinos elegibles de Azure Information Protection tendrán las características de protección de Azure Information Protection activadas de forma predeterminada. Las características de protección de Azure Information Protection anteriormente se conocían en Office 365 como Rights Management o Azure RMS. Si su organización tiene un plan de servicio de Office E3 o un plan de servicio superior, ahora podrá empezar a proteger la información a través de Azure Information Protection al implantar estas características.
 
 ## <a name="changes-beginning-july-1-2018"></a>Cambios a partir del 1 de julio de 2018
 
@@ -46,7 +46,7 @@ A partir del 1 de julio de 2018, Microsoft habilitará la funcionalidad de prote
 
 - Cada usuario que se beneficie del cifrado de mensajes de Office 365 debe tener una licencia para que esté cubierto por la característica.
 
-- Para obtener la lista completa, consulte las [descripciones del](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) servicio de Exchange Online para el cifrado de mensajes de Office 365.
+- Para obtener la lista completa, consulte las descripciones del servicio [de Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) para el cifrado de mensajes de Office 365.
 
 Los administradores de inquilinos pueden comprobar el estado de protección en el portal de administradores de Office 365.
 
@@ -61,11 +61,11 @@ El cifrado de mensajes de Office 365 aprovecha las capacidades de protección de
 Si su organización ha adquirido una licencia válida de Office 365, este cambio afectará a su espacio empresarial.
 
 > [!IMPORTANT]
-> Si usa Active Directory Rights Management Services (AD RMS) en su entorno local, debe optar por no participar en este cambio inmediatamente o migrar a Azure Information Protection antes de que se realice este cambio en los próximos 30 días. Para obtener información sobre cómo optar por no participar, consulte "Uso AD RMS, ¿cómo puedo optar por no participar?". más adelante en este artículo. Si prefiere migrar, consulte [Migración de AD RMS a Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+> Si usa Active Directory Rights Management Services (AD RMS) en su entorno local, debe optar por no participar en este cambio inmediatamente o migrar a Azure Information Protection antes de que se realice este cambio en los próximos 30 días. Para obtener información sobre cómo no participar, consulte "Uso AD RMS, ¿cómo puedo optar por no participar?". más adelante en este artículo. Si prefiere migrar, consulte [Migración de AD RMS a Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>¿Puedo usar Azure Information Protection con Active Directory Rights Management Services (AD RMS)?
 
-No. Este no es un escenario de implementación compatible. Sin realizar los pasos adicionales de no participación, es posible que algunos equipos empiecen automáticamente a usar el servicio Azure Rights Management y también se conecten al clúster de AD RMS. Este escenario no es compatible y tiene resultados no confiables, por lo que es importante que opte por no participar en este cambio en los próximos 30 días antes de que se presenten estas nuevas características. Para obtener información sobre cómo optar por no participar, consulte "Uso AD RMS, ¿cómo puedo optar por no participar?". más adelante en este artículo. Si prefiere migrar, consulte [Migración de AD RMS a Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+No. Este no es un escenario de implementación compatible. Sin realizar los pasos adicionales de no participación, es posible que algunos equipos empiecen automáticamente a usar el servicio Azure Rights Management y también se conecten al clúster de AD RMS. Este escenario no es compatible y tiene resultados no confiables, por lo que es importante que opte por no participar en este cambio en los próximos 30 días antes de que se presenten estas nuevas características. Para obtener información sobre cómo no participar, consulte "Uso AD RMS, ¿cómo puedo optar por no participar?". más adelante en este artículo. Si prefiere migrar, consulte [Migración de AD RMS a Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
 
 ## <a name="how-do-i-know-if-im-using-ad-rms"></a>¿Cómo sé si estoy usando AD RMS?
 

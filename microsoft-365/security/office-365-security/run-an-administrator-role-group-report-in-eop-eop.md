@@ -15,34 +15,34 @@ ms.custom:
 description: Los administradores pueden aprender a ejecutar un informe de grupo de roles de administrador en Exchange Online Protection (EOP) independiente. Este informe registra cuándo un administrador agrega miembros a grupos de roles de administrador o los quita.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 507fbe6fb6c99677cf91b6eb824bf110f1c826f3
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d778e807a087a5e29b31645457d4a81bd05c5649
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166632"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288024"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Ejecutar un informe de grupo de roles de administrador en EOP independiente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
--  [Exchange Online Protection independiente](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection independiente](exchange-online-protection-overview.md)
 
 En organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, cuando un administrador agrega o quita miembros de grupos de roles administrativos, el servicio registra cada repetición. Para obtener más información acerca de los grupos de roles en EOP independiente, vea [Permisos en EOP independiente.](feature-permissions-in-eop.md)
 
-Al ejecutar un informe de grupo de roles de administrador en el Centro de administración de Exchange (EAC), las entradas se muestran como resultados de búsqueda e incluyen los grupos de roles afectados, quién cambió la pertenencia al grupo de roles y cuándo y qué actualizaciones de pertenencia se realizaron. Use este informe para supervisar los cambios en los permisos administrativos asignados a los usuarios de la organización.
+Cuando ejecuta un informe de grupo de roles de administrador en el Centro de administración de Exchange (EAC), las entradas se muestran como resultados de búsqueda e incluyen los grupos de roles afectados, quién cambió la pertenencia al grupo de roles y cuándo y qué actualizaciones de pertenencia se realizaron. Use este informe para supervisar los cambios en los permisos administrativos asignados a los usuarios de la organización.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
 - Para abrir el Centro de administración de Exchange, consulte [El Centro de administración de Exchange en EOP independiente.](exchange-admin-center-in-exchange-online-protection-eop.md)
 
-- Deberá tener asignados permisos en Exchange Online Protection antes de poder realizar los procedimientos descritos en este artículo. Específicamente, necesita  el rol  Registros de auditoría o Registros de auditoría de solo  vista, que se asignan de forma predeterminada a los grupos de roles Administración de la **organización,** Administración de cumplimiento y Administrador de seguridad. Para obtener más información, vea [Permisos en EOP](feature-permissions-in-eop.md) independiente y Usar el EAC modificar la lista [de miembros en grupos de roles.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+- Deberá tener asignados permisos en Exchange Online Protection para poder realizar los procedimientos descritos en este artículo. Específicamente, necesita  el rol  Registros de auditoría o Registros de auditoría de solo  vista, que se asignan de forma predeterminada a los grupos de roles Administración de la **organización,** Administración de cumplimiento y Administrador de seguridad. Para obtener más información, vea [Permisos en EOP](feature-permissions-in-eop.md) independiente y Usar el EAC modificar la lista [de miembros en grupos de roles.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
 - Para obtener información acerca de los métodos abreviados de teclado que pueden aplicarse a los procedimientos de este artículo, vea [Métodos abreviados](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)de teclado para el Centro de administración de Exchange en Exchange Online.
 
 > [!TIP]
-> ¿Problemas? Pida ayuda en el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
+> ¿Problemas? Pida ayuda en el foro de [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) .
 
 ## <a name="use-the-eac-to-run-an-administrator-role-group-report"></a>Usar el EAC para ejecutar un informe de grupo de roles de administrador
 
@@ -50,17 +50,17 @@ Ejecute el informe del grupo de roles de administrador para buscar los cambios e
 
 1. En el EAC, vaya a Auditoría **de** administración de cumplimiento y, a continuación, elija Ejecutar un informe de \> grupo de roles de **administrador.**
 
-2. En la **página Buscar cambios en grupos de roles** de administrador que se abre, configure las siguientes opciones:
+2. En la **página Buscar cambios en grupos** de roles de administrador que se abre, configure las siguientes opciones:
 
    - **Fecha de inicio** y **fecha de finalización:** escriba un intervalo de fechas. De manera predeterminada, el informe busca los cambios efectuados en los grupos de roles de administrador en las últimas dos semanas.
 
-   - **Seleccionar grupos de roles:** de forma predeterminada, se buscan todos los grupos de roles. Para filtrar los resultados por grupos de roles específicos, haga clic **en Seleccionar grupos de roles.** En el cuadro de diálogo que aparece, seleccione un grupo de roles y haga clic **en agregar ->**. Repita este paso tantas veces como sea necesario y, a continuación, haga clic en **Aceptar** cuando haya terminado.
+   - **Seleccionar grupos de roles:** de forma predeterminada, se busca en todos los grupos de roles. Para filtrar los resultados por grupos de roles específicos, haga clic **en Seleccionar grupos de roles.** En el cuadro de diálogo que aparece, seleccione un grupo de roles y haga clic **en agregar ->**. Repita este paso tantas veces como sea necesario y, a continuación, haga clic en **Aceptar** cuando haya terminado.
 
 3. Cuando haya terminado, haga clic en **Buscar.**
 
 Si se encuentran cambios con los criterios especificados, aparecerán en el panel de resultados. Haga clic en un grupo de roles de los resultados de la búsqueda para ver los cambios en el panel de detalles.
 
-## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Si se ejecutó correctamente un informe de grupo de roles de administrador, los grupos de roles que cambiaron dentro del intervalo de fechas se muestran en el panel de resultados de la búsqueda. Si no hay resultados, entonces no se hicieron cambios a los grupos de funciones dentro del intervalo de fechas especificado. Si cree que debería haber resultados, cambie el intervalo de fechas y vuelva a ejecutar el informe.
 

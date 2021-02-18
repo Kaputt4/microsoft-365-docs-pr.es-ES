@@ -15,24 +15,24 @@ ms.date: 02/25/2020
 description: Obtenga información sobre cómo acelerar el proceso de detección y tratamiento de cuentas de usuario comprometidas con capacidades automatizadas de investigación y respuesta en Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2159ab7ad7e13c4cd4c2c428317ee7d99f78158c
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 1dda8c9b4aec30fd35efa153aaf032eee23b5e8a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176068"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288746"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Solucionar cuentas de usuario comprometidas con investigación y respuesta automatizadas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
-El Plan 2 de Microsoft Defender para [Office 365](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) incluye potentes capacidades de investigación y [respuesta](office-365-air.md) automatizadas (AIR). Estas funcionalidades pueden ahorrarle mucho tiempo y esfuerzo al equipo de operaciones de seguridad que se enfrenta a las amenazas. Microsoft continúa mejorando las capacidades de seguridad. Recientemente, las capacidades de AIR se han mejorado para incluir un libro de juegos de seguridad de usuario comprometido (actualmente en versión preliminar). Lea este artículo para obtener más información sobre el libro de juegos de seguridad de usuario comprometido. Vea la entrada de blog Acelerar el tiempo para detectar y responder al compromiso del usuario y limitar el ámbito de infracción con [Microsoft Defender para Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) para obtener más información.
+El Plan 2 de Microsoft Defender para [Office 365](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) incluye potentes capacidades de investigación y [respuesta automatizadas](office-365-air.md) (AIR). Estas funcionalidades pueden ahorrarle mucho tiempo y esfuerzo al equipo de operaciones de seguridad que se enfrenta a las amenazas. Microsoft continúa mejorando las capacidades de seguridad. Recientemente, las capacidades de AIR se han mejorado para incluir un libro de juegos de seguridad de usuario comprometido (actualmente en versión preliminar). Lea este artículo para obtener más información sobre el libro de juegos de seguridad de usuario comprometido. Vea la entrada de blog Acelerar el tiempo para detectar y responder al compromiso del usuario y limitar el ámbito de infracción con [Microsoft Defender para Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) para obtener más información.
 
 ![Investigación automatizada de un usuario comprometido](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -50,7 +50,7 @@ Cuando una cuenta de usuario está en peligro, se producen comportamientos atíp
 
 Por ejemplo, esta es una alerta que se desencadenó debido al envío sospechoso de correo electrónico:
 
-![Alerta desencadenada debido al envío sospechoso de correo electrónico](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
+![Alerta activada debido al envío sospechoso de correo electrónico](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
 
 Y este es un ejemplo de una alerta que se desencadenó cuando se alcanzó un límite de envío para un usuario:
 
@@ -93,13 +93,13 @@ Para obtener más información, [vea Ver detalles de una investigación.](air-vi
 
 ## <a name="keep-the-following-points-in-mind"></a>Tenga en cuenta lo siguiente
 
-- **Manténgase al tanto de las alertas.** Como ya sabe, cuanto más tiempo no se detecte un compromiso, mayor será el potencial de un impacto y costo generalizados para la organización, los clientes y los partners. La detección temprana y la respuesta oportuna son fundamentales para mitigar las amenazas, especialmente cuando la cuenta de un usuario está en peligro.
+- **Manténgase al tanto de las alertas.** Como ya sabe, cuanto más tiempo no se detecte un compromiso, mayor será el potencial de un impacto y costo generalizados para su organización, clientes y partners. La detección temprana y la respuesta oportuna son fundamentales para mitigar las amenazas, especialmente cuando la cuenta de un usuario está en peligro.
 
 - **La automatización ayuda, pero no reemplaza,** al equipo de operaciones de seguridad. Las capacidades automatizadas de investigación y respuesta pueden detectar un usuario comprometido desde el principio, pero es probable que el equipo de operaciones de seguridad deba implicarse y realizar alguna investigación y corrección. ¿Necesita ayuda con esto? Vea [Revisar y aprobar acciones.](air-review-approve-pending-completed-actions.md)
 
-- **No se base en una alerta de inicio de sesión sospechoso como su único indicador.** Cuando una cuenta de usuario está en peligro, es posible que desencadene o no una alerta de inicio de sesión sospechoso. A veces, es la serie de actividades que se producen después de que se pone en peligro una cuenta que desencadena una alerta. ¿Desea obtener más información sobre las alertas? Vea [Directivas de alerta.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+- **No confíes en una alerta de inicio de sesión sospechoso como tu único indicador.** Cuando una cuenta de usuario está en peligro, es posible que desencadene o no una alerta de inicio de sesión sospechoso. A veces, es la serie de actividades que se producen después de que una cuenta está en peligro que desencadena una alerta. ¿Desea obtener más información sobre las alertas? Vea [Directivas de alerta.](../../compliance/alert-policies.md)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Revisar los permisos necesarios para usar las funcionalidades de AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 

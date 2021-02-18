@@ -17,19 +17,19 @@ ms.collection:
 description: Obtenga información sobre la interfaz de administración web en Exchange Online Protection (EOP) independiente.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81af6c64d2ec3204d0c9d46888bbfe21335955bd
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ec9dcbccbee734ea7c475b1ac0a5f9a92a0b401b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166224"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286962"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Centro de administración de Exchange en EOP independiente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
--  [Exchange Online Protection independiente](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection independiente](exchange-online-protection-overview.md)
 
 El Centro de administración de Exchange (EAC) es una consola de administración basada en web para Exchange Online Protection (EOP) independiente.
 
@@ -72,11 +72,11 @@ Este es el primer nivel de navegación para la mayoría de las tareas que realiz
 - **Protección:** aquí es donde puede administrar directivas antimalware, la directiva de filtro de conexión predeterminada y DKIM.
 
   > [!NOTE]
-  > Debe administrar las directivas antimalware y la directiva de filtro de conexión predeterminada en el Centro de & cumplimiento. Para obtener más información, vea [Configurar directivas antimalware en EOP](configure-anti-malware-policies.md) y Configurar el filtrado [de conexiones en EOP.](configure-the-connection-filter-policy.md)
+  > Debe administrar directivas antimalware y la directiva de filtro de conexión predeterminada en el Centro de seguridad & cumplimiento. Para obtener más información, vea [Configurar directivas antimalware en EOP](configure-anti-malware-policies.md) y Configurar el filtrado [de conexiones en EOP.](configure-the-connection-filter-policy.md)
 
 - **Flujo de** correo: aquí es donde administrará las reglas de flujo de correo (también conocidas como reglas de transporte), los dominios aceptados y los conectores, así como dónde puede ir a ejecutar el seguimiento de mensajes.
 
-- **Híbrido:** aquí es donde puede ejecutar [el](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)Asistente para la configuración híbrida y donde puede instalar el módulo [de PowerShell de Exchange Online.](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)
+- **Híbrido:** aquí es donde puede ejecutar el [Asistente](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)para la configuración híbrida y donde puede instalar el módulo [de PowerShell de Exchange Online.](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)
 
 ### <a name="tabs"></a>Pestañas
 

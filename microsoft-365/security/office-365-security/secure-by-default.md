@@ -17,12 +17,12 @@ ms.collection:
 description: Obtenga más información sobre la configuración segura de forma predeterminada en Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 51b33afa6b07c040e6aa18abe996c78b770f0773
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 4a507abce8c18657794b56570241570e5048b89d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166584"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288518"
 ---
 # <a name="secure-by-default-in-office-365"></a>Proteger de forma predeterminada en Office 365
 
@@ -30,9 +30,9 @@ ms.locfileid: "50166584"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 "Seguro de forma predeterminada" es un término que se usa para definir la configuración predeterminada más segura posible.
 
@@ -49,7 +49,7 @@ Las organizaciones de Microsoft 365 con buzones en Exchange Online están proteg
 
 Para obtener más información acerca de EOP, vea [información general sobre Exchange Online Protection.](exchange-online-protection-overview.md)
 
-Dado que Microsoft quiere mantener seguros a nuestros clientes de forma predeterminada, algunos reemplazos de inquilinos no se aplican para malware o suplantación de identidad de confianza alta. Estos reemplazos incluyen:
+Dado que Microsoft quiere mantener seguros nuestros clientes de forma predeterminada, algunos reemplazos de inquilinos no se aplican para malware o suplantación de identidad de confianza alta. Estos reemplazos incluyen:
 
 - Listas de remitentes permitidos o listas de dominios permitidos (directivas contra correo no deseado)
 - Remitentes seguros de Outlook
@@ -58,13 +58,13 @@ Dado que Microsoft quiere mantener seguros a nuestros clientes de forma predeter
 Puede encontrar más información sobre estos reemplazos en [Crear listas de remitentes seguros.](create-safe-sender-lists-in-office-365.md)
 
 > [!NOTE]
-> Estamos en proceso de desuso  de la acción Mover mensaje a la carpeta Correo no deseado para un veredicto de correo electrónico de **suplantación** de identidad de confianza alta en las directivas contra correo no deseado de EOP. Las directivas contra correo no deseado que usan esta acción para mensajes de suplantación de identidad de alta confianza se convertirán en mensajes **de cuarentena.** El **mensaje de redireccionamiento a la acción de dirección** de correo electrónico para mensajes de suplantación de identidad de alta confianza no se ven afectados.
+> Estamos en el proceso de desuso de la acción Mover mensaje a la carpeta Correo no deseado para un veredicto de correo electrónico de **suplantación** de identidad de confianza alta en las directivas contra correo no deseado de EOP.  Las directivas contra correo no deseado que usan esta acción para mensajes de suplantación de identidad de alta confianza se convertirán en mensajes **de cuarentena.** El **mensaje de redireccionamiento a la acción de dirección** de correo electrónico para mensajes de suplantación de identidad de alta confianza no se ven afectados.
 
 De forma predeterminada, la seguridad no es una opción que se puede activado o desactivado, pero es la forma en que nuestro filtrado funciona de forma predeterminada para mantener mensajes potencialmente peligrosos o no deseados fuera de sus buzones. Los mensajes de suplantación de identidad (phishing) de malware y de confianza alta deben ponerse en cuarentena. Solo los administradores pueden administrar los mensajes que se ponen en cuarentena como malware o phishing de confianza alta, y también pueden notificar falsos positivos a Microsoft desde allí. Para obtener más información, vea Administrar mensajes y archivos en cuarentena [como administrador en EOP](manage-quarantined-messages-and-files.md)
 
-## <a name="more-on-why-were-doing-this"></a>Más información sobre por qué estamos haciendo esto
+## <a name="more-on-why-were-doing-this"></a>Más información sobre por qué lo estamos haciendo
 
-De forma predeterminada, el estado de seguridad es: estamos tomando la misma acción en el mensaje que realizaría si supo que el mensaje era malintencionado, incluso cuando una excepción configurada permitiría entregar el mensaje de otro modo. Este es el mismo enfoque que siempre hemos usado en malware y ahora estamos ampliando este mismo comportamiento a los mensajes de suplantación de identidad de confianza alta.
+De forma predeterminada, la razón de ser segura es: estamos llevando a través del mensaje la misma acción que realizaría si supo que el mensaje era malintencionado, incluso cuando una excepción configurada permitiría la entrega del mensaje. Este es el mismo enfoque que siempre hemos usado en malware y ahora estamos ampliando este mismo comportamiento a los mensajes de suplantación de identidad de confianza alta.
 
 Nuestros datos indican que un usuario tiene 30 veces más probabilidades de hacer clic en un vínculo malintencionado en los mensajes de la carpeta Correo no deseado frente a Cuarentena. Nuestros datos también indican que la tasa de falsos positivos (mensajes buenos marcados como falsos) para mensajes de suplantación de identidad de confianza alta es muy baja y los administradores pueden resolver los falsos positivos con envíos de administrador.
 

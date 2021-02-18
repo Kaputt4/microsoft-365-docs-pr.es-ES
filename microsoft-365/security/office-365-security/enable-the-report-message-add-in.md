@@ -17,28 +17,28 @@ ms.collection:
 description: Obtenga información sobre cómo habilitar el complemento De mensaje de informe para Outlook y Outlook en la Web, para usuarios individuales o para toda la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fe47bcb4db42514f3a5252a567421ad792967cd1
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 08ad2f61cc5dcd2e59af89ca788319c81e2f6bdb
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167580"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287370"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar el complemento Notificar mensajes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
 > Si es administrador de una organización de Microsoft 365 con buzones de Exchange Online, le recomendamos que use el portal de envíos en el Centro de & cumplimiento. Para obtener más información, vea Usar envío de administrador para enviar correos sospechosos de correo no [deseado, phishing, direcciones URL y archivos a Microsoft.](admin-submission.md)
 
 Los complementos de notificación de suplantación de identidad (phishing) para Outlook y Outlook en la Web (anteriormente conocido como Outlook Web App) permiten a los usuarios notificar fácilmente falsos positivos (correo electrónico bueno marcado como negativo) o falsos negativos (correo electrónico no deseado permitido) a Microsoft y sus filiales para su análisis.
 
-Microsoft usa estos envíos para mejorar la eficacia de las tecnologías de protección de correo electrónico. Por ejemplo, si los usuarios informan de una gran cantidad de mensajes que se marcaron como correo no deseado mediante el complemento Mensaje de informe, es posible que el equipo de seguridad de su organización necesite ajustar las directivas contra correo no [deseado.](configure-your-spam-filter-policies.md)
+Microsoft usa estos envíos para mejorar la eficacia de las tecnologías de protección de correo electrónico. Por ejemplo, si los usuarios informan de una gran cantidad de mensajes que se marcaron como correo no deseado mediante el complemento Informar de mensaje, es posible que el equipo de seguridad de su organización necesite ajustar las directivas contra correo no [deseado.](configure-your-spam-filter-policies.md)
 
 Puede instalar el complemento Mensaje de informe o Informar de suplantación de identidad. Si desea que los usuarios informen solo de mensajes de suplantación de identidad, implemente el complemento Detección de suplantación de identidad en su organización. Para obtener más información, vea Habilitar el complemento [de suplantación de identidad de informes.](enable-the-report-phish-add-in.md)
 
@@ -46,7 +46,7 @@ El complemento Mensaje de informe ofrece la opción de notificar mensajes de cor
 
 Si es un usuario individual, puede habilitar el complemento Mensaje [de informe para usted mismo.](#get-the-report-message-add-in-for-yourself)
 
-Si es un administrador global o un administrador de Exchange Online y Exchange está configurado para usar la autenticación de OAuth, puede habilitar el complemento Mensaje de [informe para su organización.](#get-and-enable-the-report-message-add-in-for-your-organization) El mensaje de informe Add-In ahora está disponible a través [de la implementación centralizada.](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)
+Si es un administrador global o un administrador de Exchange Online y Exchange está configurado para usar la autenticación de OAuth, puede habilitar el complemento Mensaje de [informe para su organización.](#get-and-enable-the-report-message-add-in-for-your-organization) El mensaje de Add-In ahora está disponible a través [de la implementación centralizada.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
@@ -58,15 +58,15 @@ Si es un administrador global o un administrador de Exchange Online y Exchange e
   - Outlook incluido con aplicaciones de Microsoft 365 para empresas
   - Aplicación de Outlook para iOS y Android
 
-- El complemento De mensaje de informe no está disponible para los buzones de las organizaciones de Exchange locales.
+- El complemento De mensaje de informe no está disponible para buzones en organizaciones de Exchange locales.
 
 - Puede configurar los mensajes notificados para que se copien o redirijan a un buzón que especifique. Para obtener más información, consulta [Directivas de envío de usuarios.](user-submission.md)
 
-- El explorador web existente debe funcionar con el complemento Mensaje de informe. Pero, si observa que el complemento no está disponible o no funciona como se esperaba, pruebe un explorador diferente.
+- El explorador web existente debe funcionar con el complemento Mensaje de informe. Pero, si observa que el complemento no está disponible o no funciona como se esperaba, pruebe con un explorador diferente.
 
-- Para las instalación de la organización, la organización debe configurarse para usar la autenticación de OAuth. Para obtener más información, vea Determinar si la implementación centralizada de complementos [funciona para su organización.](../../admin/manage/centralized-deployment-of-add-ins.md)
+- Para las instalaciones organizativas, la organización debe configurarse para usar la autenticación de OAuth. Para obtener más información, vea Determinar si la implementación centralizada de complementos [funciona para su organización.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
-- Los administradores deben ser miembros del grupo de roles Administradores globales. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Los administradores deben ser miembros del grupo de roles Administradores globales. Para más información, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>Obtener el complemento de mensaje de informe por sí mismo
 
@@ -131,15 +131,15 @@ Para obtener información sobre cómo usar el complemento, vea Usar el complemen
 
    ![Configurar la página del complemento](../../media/configure-add-in.png)
 
-   Cuando haya terminado, haga clic **en Implementar.**
+   Cuando haya terminado, haga clic en **Implementar.**
 
-8. En la **página Implementar mensaje de** informe que aparece, verá un informe de progreso seguido de una confirmación de que se implementó el complemento. Después de leer la información, haga clic **en Siguiente.**
+8. En la **página Implementar mensaje de** informe que aparece, verá un informe de progreso seguido de una confirmación de que el complemento se implementó. Después de leer la información, haga clic **en Siguiente**.
 
    ![Página Implementar mensaje de informe](../../media/deploy-report-message-page.png)
 
 9. En la **página Anunciar complemento que** aparece, revise la información y, a continuación, haga clic en **Cerrar**.
 
-   ![Página Anunciar complemento](../../media/announce-add-in-page.png)
+   ![Anunciar página de complemento](../../media/announce-add-in-page.png)
 
 ## <a name="learn-how-to-use-the-report-message-add-in"></a>Obtenga información sobre cómo usar el complemento Mensaje de informe
 
@@ -165,12 +165,12 @@ Cuando notifique a los usuarios sobre el complemento Mensaje de informe, incluya
 
 3. En el **control desplegable Editar mensaje** de informe que aparece, revise y edite la configuración según corresponda a su organización. Cuando haya terminado, haga clic en **Guardar**.
 
-   ![Configuración del complemento Mensaje de informe](../../media/EditReportMessageAddIn.png)
+   ![Configuración del complemento De mensaje de informe](../../media/EditReportMessageAddIn.png)
 
 ## <a name="view-and-review-reported-messages"></a>Ver y revisar los mensajes notificados
 
 Para revisar los mensajes que los usuarios envían a Microsoft, tiene estas opciones:
 
-- Usa el portal de envíos de administrador. Para obtener más información, vea [Ver envíos de usuarios a Microsoft.](admin-submission.md#view-user-submissions-to-microsoft)
+- Usa el portal de envíos de administrador. Para obtener más información, vea [Ver envíos de usuario a Microsoft.](admin-submission.md#view-user-submissions-to-microsoft)
 
 - Cree una regla de flujo de correo (también conocida como regla de transporte) para enviar copias de los mensajes notificados. Para obtener instrucciones, consulte Usar reglas de flujo de correo para ver lo que los [usuarios están informando a Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).

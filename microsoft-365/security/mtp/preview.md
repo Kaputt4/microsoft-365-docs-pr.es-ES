@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 9156025990e8da61006ac1d3b81a71be5580e00c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1636b1deb5f35d8286b33238a8f4bbfff0b33521
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167388"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288130"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Características de vista previa de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->[!IMPORTANT]
->Las versiones preliminares se proporcionan sin un contrato de nivel de servicio y no se recomienda para cargas de trabajo de producción. Es posible que algunas características no sean compatibles o que tengan funcionalidades restringidas.
+> [!IMPORTANT]
+> Las versiones preliminares se proporcionan sin un contrato de nivel de servicio y no se recomienda para cargas de trabajo de producción. Es posible que algunas características no sean compatibles o que tengan funcionalidades restringidas.
 
 **Se aplica a:**
 - Microsoft 365 Defender
@@ -43,22 +43,29 @@ Obtenga información sobre las nuevas características de la versión preliminar
 
 Para obtener más información sobre las nuevas funcionalidades que están generalmente disponibles, consulte Novedades [de Microsoft 365 Defender.](whats-new.md)
 
+## <a name="required-permissions"></a>Permisos necesarios
+
+Las cuentas asignadas a los siguientes roles de Azure Active Directory (Azure AD) pueden activar las características de Vista previa de Microsoft 365 Defender:
+
+- Administrador global
+- Administrador de seguridad
+- Operador de seguridad
+
 ## <a name="turn-on-preview-features"></a>Activar la versión preliminar de las características
+
 Tendrás acceso a las próximas características sobre las que puedes proporcionar comentarios para ayudar a mejorar la experiencia general antes de que las características estén generalmente disponibles.
 
 Active la configuración de la experiencia de la versión preliminar para estar entre los primeros en probar las próximas características.
 
 1. En el panel de navegación, seleccione **Configuración**.
-
 2. Seleccione **Microsoft 365 Defender.**
-
 3. Seleccione **Versión preliminar de las características** > **Activar la versión preliminar de las características**. 
-
 4. Seleccione **Guardar**.
 
 Sabrá que tiene activada la versión preliminar de las características cuando vea que la casilla **Activar versión preliminar de las características** está seleccionada. 
 
 ## <a name="preview-features"></a>Versión preliminar de las características
+
 Las siguientes características y mejoras están disponibles actualmente en la versión preliminar:
 
 ### <a name="improved-microsoft-365-security-center"></a>Centro de seguridad de Microsoft 365 mejorado

@@ -19,19 +19,19 @@ description: 'Resumen: Cree suscripciones de evaluación de Office 365 y Enterpr
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d23539951e4d51fcd29417ab71ce599853d7537
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e600b3baf012d416a7b5de974b94111bb6cf90a2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165708"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287454"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurar grupos y usuarios en un entorno de desarrollo y prueba de campaña política
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
 
  **Resumen:** Cree suscripciones de evaluación de Office 365 y Enterprise Mobility + Security (EMS) que incluyan usuarios y grupos en un entorno de desarrollo y prueba para una campaña política.
 
@@ -41,7 +41,7 @@ Siga las instrucciones de este artículo para crear un entorno de desarrollo y p
 
 En esta fase se obtienen suscripciones de evaluación para Office 365 E5 y Enterprise Mobility + Security (EMS) E5 para una organización ficticia que representa una campaña política.
 
-Primero, siga las instrucciones en la **Fase 2** de [la configuración de base ligera](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
+Primero, siga las instrucciones en la **Fase 2** de [la configuración de base ligera](../../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md).
 
 Después, inscríbase en la suscripción de evaluación de EMS E5 y la agregará a la misma organización de la suscripción de evaluación.
 
@@ -139,7 +139,7 @@ Después, configure los grupos para que a los miembros se les asignen automátic
 
 En esta fase se agregan las cuentas de usuario de ejemplo para la campaña política.
 
-Primero, [Conéctese al módulo de PowerShell de Azure Active Directory para Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell).
+Primero, [Conéctese al módulo de PowerShell de Azure Active Directory para Graph](../../enterprise/connect-to-microsoft-365-powershell.md).
 
 Después, rellene el nombre de la organización, su ubicación y una contraseña común y, luego, ejecute estos comandos en el entorno de script integrado (ISE) o el símbolo del sistema de PowerShell:
 
@@ -212,6 +212,6 @@ Cree los cuatro tipos distintos de sitios de grupo de SharePoint Online en este 
 
 [Crear sitios de grupo en un entorno de desarrollo y prueba de campaña política](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
-[Guías del entorno de pruebas de adopción de la nube (TLG)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Guías del entorno de pruebas de adopción de la nube (TLG)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
 [Adopción de la nube y soluciones híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

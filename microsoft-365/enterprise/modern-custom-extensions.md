@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo optimizar el rendimiento de extensiones personalizadas en páginas de sitio modernas de SharePoint Online.
-ms.openlocfilehash: 3f9474bcfa3266742d2e01af2f1df6eb5c0d017c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 92d328c64c89a1a01bbcd50fb7ad04affdf69af8
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694018"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287202"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimizar el rendimiento de extensiones personalizadas en páginas del sitio modernas de SharePoint Online
 
@@ -45,16 +45,17 @@ Puede encontrarse con los siguientes resultados:
 - **Posibilidades de mejora** (amarillo) Si se usan **cinco** o más extensiones, se mostrarán en esta sección como una advertencia hasta que se utilicen siete o más, lo que se mostrará como Atención necesaria.
 - **No es necesario realizar ninguna acción** (en verde): No hay ninguna extensión que tarde más de un segundo en cargarse.
 
-Si una extensión afecta al tiempo de carga de la página o hay demasiadas extensiones en la página, el resultado aparece en la sección **Atención necesaria** de los resultados. Haga clic en el resultado para ver los detalles sobre la extensión que está demorando en cargar o la advertencia sobre la existencia de demasiadas extensiones. Las actualizaciones futuras de la herramienta Diagnóstico de páginas para SharePoint pueden incluir actualizaciones de las reglas de análisis, así que asegúrese de que siempre tiene la versión más reciente de la herramienta.
+Si una extensión afecta al tiempo de carga de la página o hay  demasiadas extensiones en la página, el resultado aparece en la sección Atención necesaria de los resultados. Haga clic en el resultado para ver los detalles sobre la extensión que está demorando en cargar o la advertencia sobre la existencia de demasiadas extensiones. Las actualizaciones futuras de la herramienta Diagnóstico de páginas para SharePoint pueden incluir actualizaciones de las reglas de análisis, así que asegúrese de que siempre tiene la versión más reciente de la herramienta.
 
 ![Resultados de tiempo de carga de la página](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
 La información disponible en los resultados incluye lo siguiente:
 
 - **Nombre e identificador** muestra información de identificación que puede ayudarle a encontrar la extensión en la página
-- **Total** muestra el tiempo total para que se inicialice y cargue la extensión
-- **Carga de módulos** muestra el tiempo que se tarda en recuperar y cargar la extensión
-- **Inicialización** muestra el tiempo necesario para que se inicialice la extensión
+- **En total** se muestra el tiempo total de carga e inicialización de la extensión al módulo. Es el tiempo relativo total que la extensión ha tomado para ejecutarse en la página, desde el principio hasta el final.
+- **La carga de** módulos muestra el tiempo que se ha necesitado para descargar, evaluar y cargar los archivos CSS y JavaScript de extensiones. A continuación, se iniciará el proceso init.
+- **Init** muestra el tiempo que se ha necesitado para que la extensión inicialice los datos.
+    Es una llamada asincrónica y el tiempo de init es el cálculo del tiempo para la función onInit cuando se resuelve la promesa devuelta.
 
 Se proporciona esta información para que los diseñadores y desarrolladores puedan solucionar problemas. Debe proporcionar esta información a su equipo de diseño y desarrollo.
 

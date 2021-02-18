@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Aprenda a usar el diagnóstico de páginas para optimizar el rendimiento de los elementos web en las páginas de sitio modernas de SharePoint Online.
-ms.openlocfilehash: f7b72aa8ed212147c06660585c4e58e548762c35
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: ca1b9328ad71fdd4a3f3c6c6be47eaa3993d4fc7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519756"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287154"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimizar el rendimiento de elementos web en páginas del sitio modernas de SharePoint Online
 
@@ -56,13 +56,16 @@ Si el resultado **Los elementos web afectan al tiempo de carga de la página** a
 
 La información disponible en los resultados incluye lo siguiente:
 
-- **Hecho por** muestra si el elemento web es personalizado o de fábrica de Microsoft
-- **Nombre e identificador** muestra información de identificación que puede ayudarle a encontrar el elemento web en la página
-- **Total** muestra el tiempo total en el que carga el elemento web
-- **Carga de módulos** muestra el tiempo que tarda en recuperar y cargar los componentes de elementos web
-- **Carga diferida** muestra el tiempo de carga aplazada de elementos web que no se ven en la sección principal de la página
-- **Inicialización** muestra el tiempo que tarda en inicializar los elementos web
-- **Representación** muestra el tiempo que tarda el elemento web en recuperar y procesar resultados
+- **Se realiza mediante** la muestra si el elemento web es personalizado o microsoft OOTB.
+- **El nombre y el** identificador muestran información de identificación que puede ayudarle a encontrar el elemento web en la página.
+- **En total** se muestra el tiempo total para que el elemento web cargue, inicialice y represente el módulo. Es el tiempo relativo total que el elemento web ha tomado representar en la página, desde el principio hasta el final.
+- **La carga de** módulos muestra el tiempo que se ha necesitado para descargar, evaluar y cargar los archivos CSS y JavaScript de extensiones. A continuación, se iniciará el proceso init.
+- **La carga diferida** muestra el tiempo para la carga diferida de elementos web que no se ve en la sección principal de la página. Existen ciertas condiciones en las que hay demasiados elementos web para representar y se ponen en cola para representarse para minimizar el tiempo de carga de la página.
+- **Init** muestra el tiempo que el elemento web ha necesitado para inicializar los datos.
+    Es una llamada asincrónica y el tiempo de init es el cálculo del tiempo para la función onInit cuando se resuelve la promesa devuelta.
+- **La** representación muestra el tiempo que se ha necesitado para representar la interfaz de usuario (interfaz de usuario) una vez que el módulo se carga y se completa.
+    Es el tiempo de ejecución de JavaScript para montar el DOM en el documento (página).
+    La representación de recursos asincrónicos, por ejemplo, imágenes, puede tardar más tiempo en completarse.
 
 Se proporciona esta información para que los diseñadores y desarrolladores puedan solucionar problemas. Debe proporcionar esta información a su equipo de diseño y desarrollo.
 

@@ -12,18 +12,18 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender cómo el aprendizaje de simulación de ataques en el Centro de seguridad de Microsoft 365 afecta a los empleados y puede obtener información a partir de resultados de simulación y aprendizaje.
 ms.technology: mdo
-ms.openlocfilehash: b7fd414cc355e768077198eb5215720c4d4a9444
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 43319089f604d32bf295392dd223cf65af8bd4be
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49933071"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288662"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Obtenga información a través de la formación de simulación de ataques
 
 Dentro del aprendizaje de simulación de ataques, Microsoft proporciona información basada en los resultados de simulaciones y cursos que los empleados han pasado. Estas conclusiones te ayudarán a mantenerte informado sobre el progreso de preparación de amenazas de los empleados, así como a recomendar los siguientes pasos para preparar mejor a los empleados y a tu entorno para los ataques.
 
-We are continuously working on expanding the insights that are available to you. El impacto en el comportamiento y las acciones recomendadas están disponibles actualmente. Para empezar, diríjase a la [formación de simulación de ataques en el Centro de seguridad de Microsoft 365.](https://security.microsoft.com/attacksimulator?viewid=overview)
+Estamos trabajando continuamente en la expansión de las conclusiones que están disponibles para usted. El impacto en el comportamiento y las acciones recomendadas están disponibles actualmente. To start, head over to [Attack simulation training in the Microsoft 365 security center](https://security.microsoft.com/attacksimulator?viewid=overview).
 
 ## <a name="behavior-impact-on-compromise-rate"></a>Impacto del comportamiento en la tasa de peligro
 
@@ -45,7 +45,7 @@ Para ver un informe más detallado, haga clic en **Ver simulaciones y el informe
 
 En la [ **pestaña Simulaciones,**](https://security.microsoft.com/attacksimulator?viewid=simulations)seleccionar una simulación le llevará a los detalles de la simulación, donde encontrará la **sección Acciones recomendadas.**
 
-En la sección de acciones recomendadas se detallan las recomendaciones según la [puntuación de seguridad de Microsoft.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) Estas recomendaciones se basan en la carga usada en la simulación y le ayudarán a proteger a los empleados y a su entorno. Al hacer clic en cada acción de mejora, se mostrarán sus detalles.
+En la sección de acciones recomendadas se detallan las recomendaciones según la [puntuación de seguridad de Microsoft.](../mtp/microsoft-secure-score.md) Estas recomendaciones se basan en la carga usada en la simulación y le ayudarán a proteger a los empleados y a su entorno. Al hacer clic en cada acción de mejora, se mostrarán sus detalles.
 
 > [!div class="mx-imgBorder"]
 > ![Sección de acciones de recomendación sobre el entrenamiento de simulación de ataques](../../media/attack-sim-preview-recommended-actions.png)

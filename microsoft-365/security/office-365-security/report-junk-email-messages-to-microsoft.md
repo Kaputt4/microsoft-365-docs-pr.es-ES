@@ -17,21 +17,21 @@ ms.collection:
 description: Los administradores pueden obtener información sobre las distintas formas de informar a Microsoft de los mensajes y archivos buenos y los que no son buenos para su análisis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b75b05f33ab6c6a5827101ad2f5b14c94b932135
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 21c733945256386ff9543b372badaa6f2302171b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166692"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288096"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Notificar mensajes y archivos a Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 En las organizaciones de Microsoft 365 con buzones en Exchange Online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, tanto los usuarios como los administradores tienen varios métodos diferentes para notificar mensajes de correo electrónico y archivos a Microsoft.
 
@@ -44,7 +44,7 @@ En las organizaciones de Microsoft 365 con buzones en Exchange Online o en organ
 |[Habilitar el complemento Informe de suplantación de identidad (phishing)](enable-the-report-phish-add-in.md)|Funciona con Outlook y Outlook en la Web (anteriormente conocido como Outlook Web App). <p> Según la suscripción, los mensajes que los usuarios notificaron con el complemento están disponibles en el [](view-email-security-reports.md#user-reported-messages-report)portal de envíos de administración, en los resultados de investigación y respuesta [automatizadas (AIR),](air-view-investigation-results.md)en el informe de mensajes [notificados](admin-submission.md)por el usuario y en el Explorador de [amenazas.](threat-explorer-views.md#email--submissions) <p> Puede configurar los mensajes notificados para que se copien o redirijan a un buzón que especifique. Para obtener más información, consulta [Directivas de envío de usuarios.](user-submission.md)|
 |[Instalar y usar el complemento de notificación de correo no deseado para Microsoft Outlook](junk-email-reporting-add-in-for-microsoft-outlook.md)|Solo funciona en Outlook.|
 |[Notificar correo electrónico no deseado y de suplantación de identidad en Outlook en la Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Use las funciones integradas en Outlook en la Web para organizaciones con buzones de Exchange Online (no disponible en EOP independiente). <p> Los mensajes que informan los usuarios están disponibles [en el portal de envíos de administrador.](admin-submission.md) <p> Puede configurar los mensajes notificados para que se copien o redirijan a un buzón que especifique. Para obtener más información, consulta [Directivas de envío de usuarios.](user-submission.md)|
-|[Notificar correo electrónico no deseado y de suplantación de identidad en Outlook para iOS y Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|Use las funcionalidades integradas en Outlook para iOS y Android para organizaciones con buzones de Exchange Online (no disponible en EOP independiente). <p> Los mensajes que los usuarios informan están disponibles [en el portal de envíos de administrador.](admin-submission.md) <p> Puede configurar los mensajes notificados para que se copien o redirijan a un buzón que especifique. Para obtener más información, consulta [Directivas de envío de usuarios.](user-submission.md)|
+|[Notificar correo electrónico no deseado y de suplantación de identidad en Outlook para iOS y Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|Use las funcionalidades integradas en Outlook para iOS y Android para organizaciones con buzones de Exchange Online (no disponible en EOP independiente). <p> Los mensajes que informan los usuarios están disponibles [en el portal de envíos de administrador.](admin-submission.md) <p> Puede configurar los mensajes notificados para que se copien o redirijan a un buzón que especifique. Para obtener más información, consulta [Directivas de envío de usuarios.](user-submission.md)|
 |[Enviar manualmente mensajes a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|Enviar manualmente mensajes adjuntos a direcciones de correo electrónico específicas de Microsoft para correo no deseado, no correo no deseado y suplantación de identidad.|
 |[Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|Obtenga información sobre cómo crear una regla de flujo de correo (también conocida como regla de transporte) que le notifica cuando los usuarios notifican mensajes a Microsoft para su análisis.|
 |[Enviar malware y no malware a Microsoft para su análisis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Use el sitio de inteligencia de seguridad de Microsoft para enviar datos adjuntos y otros archivos.|

@@ -23,24 +23,24 @@ ms.custom:
 description: Obtenga información sobre Microsoft Defender para Office 365 para archivos en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 640867cb38dab650bca990fe36c0b7cea7f6a0d8
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: ce73e1fd5c8ecb63bee1db2e9e64aade305b37e9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175732"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287058"
 ---
 # <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams en Microsoft Defender para [Office 365](office-365-atp.md) proporciona una capa adicional de protección para los archivos que el motor de detección de virus común de [Microsoft 365](virus-detection-in-spo.md)ya ha analizado durante la carga. Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams ayuda a detectar y bloquear archivos existentes identificados como malintencionados en sitios de grupo y bibliotecas de documentos.
 
-Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams no está habilitado de forma predeterminada. Para activarlo, vea [Activar datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams.](turn-on-atp-for-spo-odb-and-teams.md)
+Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams no está habilitado de forma predeterminada. Para activarlo, vea Activar datos adjuntos [seguros para SharePoint, OneDrive y Microsoft Teams.](turn-on-atp-for-spo-odb-and-teams.md)
 
 ## <a name="how-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-works"></a>Cómo funcionan los datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams
 

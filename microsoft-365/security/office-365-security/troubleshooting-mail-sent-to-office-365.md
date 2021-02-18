@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,24 +16,29 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: En este artículo se proporciona información para solucionar problemas con el envío de correo electrónico a los buzones de correo de Microsoft 365 & procedimientos recomendados para el envío masivo de correo a los clientes de Microsoft 365.
-ms.openlocfilehash: 3504d7518073826f3979c3c837c58d4406886b41
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+description: En este artículo se proporciona información de solución de problemas relacionados con el envío de correo electrónico a bandejas de entrada de Microsoft 365 & procedimientos recomendados para el envío masivo de correo a clientes de Microsoft 365.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1e4a91f70b59debc770a5811638bd64a1eef36dd
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760487"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286386"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Correo de solución de problemas enviado a Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
 
-En este artículo se proporciona información de solución de problemas para los remitentes que experimentan problemas al intentar enviar correo electrónico a las bandejas de correo de Microsoft 365 y los procedimientos recomendados para el envío masivo de correo a los clientes.
+En este artículo se proporciona información de solución de problemas para remitentes que tienen problemas al intentar enviar correo electrónico a bandejas de entrada en Microsoft 365 y procedimientos recomendados para el envío masivo de correo a los clientes.
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>¿Está administrando la reputación de envío de dominios e IP?
 
-Las tecnologías de filtrado de EOP están diseñadas para proporcionar protección contra correo no deseado para Microsoft 365, además de otros productos de Microsoft como Exchange Server. También aprovechamos SPF, DKIM y DMARC; tecnologías de autenticación de correo electrónico que ayudan a solucionar el problema de la suplantación de identidad y phishing al comprobar que el dominio que envía el correo electrónico está autorizado a hacerlo. El filtrado de EOP se ve influenciado por una serie de factores relacionados con la IP de envío, dominio, autenticación, precisión de lista, tasas de denuncia, contenido, etc. De estos factores, uno de los que más empeora la reputación del remitente y su capacidad para entregar correo electrónico es su tasa de denuncia de correo electrónico no deseado.
+Las tecnologías de filtrado de EOP están diseñadas para proporcionar protección contra correo no deseado para Microsoft 365, así como para otros productos de Microsoft como Exchange Server. También aprovechamos SPF, DKIM y DMARC; tecnologías de autenticación de correo electrónico que ayudan a solucionar el problema de la suplantación de identidad y phishing al comprobar que el dominio que envía el correo electrónico está autorizado a hacerlo. El filtrado de EOP se ve influenciado por una serie de factores relacionados con la IP de envío, dominio, autenticación, precisión de lista, tasas de denuncia, contenido, etc. De estos factores, uno de los que más empeora la reputación del remitente y su capacidad para entregar correo electrónico es su tasa de denuncia de correo electrónico no deseado.
 
 ## <a name="are-you-sending-email-from-new-ip-addresses"></a>¿Está enviando correo electrónico desde direcciones IP nuevas?
 
@@ -58,15 +62,15 @@ No podemos aceptar correo electrónico de los remitentes que no logran una búsq
 
 Algunos problemas de entrega se deben a que Microsoft ha bloqueado la dirección IP del remitente o a que la cuenta de usuario se identifica como remitente prohibido debido a una actividad precedente de correo no deseado. Si cree que ha recibido el NDR por error, en primer lugar, siga las instrucciones del mensaje de NDR para resolver el problema.
 
-Para obtener más información sobre el error que ha recibido, consulte la lista de códigos de error en [informes de no entrega de correo electrónico en Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+Para obtener más información sobre el error recibido, vea la lista de códigos de error en los informes de no entrega de correo electrónico [en Exchange Online.](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)
 
- Por ejemplo, si recibe el NDR siguiente, indica que Microsoft ha bloqueado la dirección IP de envío:
+ Por ejemplo, si recibe el siguiente NDR, indica que Microsoft bloqueó la dirección IP de envío:
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
-Para solicitar la eliminación de esta lista, puede [usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Para solicitar la eliminación de esta lista, puede usar el portal de eliminación de la lista para quitarse de [la lista de remitentes bloqueados.](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
 
-## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>Mi correo electrónico descargado en la carpeta de correo no deseado del destinatario
+## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>Mi correo electrónico aterrizó en la carpeta de correo no deseado del destinatario
 
 Si EOP identificó incorrectamente un mensaje como correo no deseado, puede hablar con el destinatario para enviar este mensaje falso positivo al equipo de análisis de correo no deseado de Microsoft, que lo evaluará y analizará. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -80,19 +84,19 @@ Ha recibido el NDR porque se ha detectado actividad sospechosa procedente de la 
 
 ## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>No puedo recibir correo electrónico de remitentes en Microsoft 365
 
- Para recibir mensajes de nuestros usuarios, asegúrese de que la red permite conexiones desde las direcciones IP que EOP usa en nuestros centros de datos. Para obtener más información, consulte [Exchange Online Protection IP addresses](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
+ Para recibir mensajes de nuestros usuarios, asegúrese de que la red permite conexiones desde las direcciones IP que EOP usa en nuestros centros de datos. Para obtener más información, consulte [Direcciones IP de Exchange Online Protection.](../../enterprise/urls-and-ip-address-ranges.md)
 
-## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Procedimientos recomendados para el correo electrónico masivo a los usuarios de Microsoft 365
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Procedimientos recomendados para el envío masivo de correo electrónico a usuarios de Microsoft 365
 
-Si suele llevar a cabo campañas de correo electrónico masivo a los usuarios de Microsoft 365 y desea asegurarse de que los mensajes llegan de manera oportuna y segura, siga las sugerencias de esta sección.
+Si a menudo realiza campañas de correo electrónico masivo a usuarios de Microsoft 365 y desea asegurarse de que los correos electrónicos lleguen de forma segura y oportuna, siga las sugerencias de esta sección.
 
-### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Asegurarse de que el nombre from refleja quién envía el mensaje
+### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Asegúrese de que el nombre De refleja quién envía el mensaje
 
 El Asunto debe ser un breve resumen del contenido del mensaje y el cuerpo del mensaje debe indicar clara y sucintamente de qué trata la oferta, servicio o producto. Por ejemplo:
 
 Correcto:
 
-> De: marketing@shoppershandbag.com <br> Asunto: ¡ Catálogo actualizado para la temporada de Navidad!
+> De: marketing@shoppershandbag.com <br> Asunto: Catálogo actualizado para la temporada de Navidad.
 
 Incorrecto:
 
@@ -128,7 +132,7 @@ Igual de importante que la forma en que se envían los mensajes de correo electr
 
 - Los redireccionamientos que se incluyen en el cuerpo del mensaje deben ser similares y coherentes, y no múltiples ni variados. Un redireccionamiento en este contexto es cualquier cosa que apunta fuera del mensaje, como vínculos y documentos. Si tiene mucha publicidad o vínculos de cancelación de suscripción o de actualización de perfiles, todo debe apuntar al mismo dominio. Por ejemplo:
 
-  Correcto (todos los dominios son los mismos):
+  Correcto (todos los dominios son iguales):
 
   `unsubscribe.bulkmailer.com`
 

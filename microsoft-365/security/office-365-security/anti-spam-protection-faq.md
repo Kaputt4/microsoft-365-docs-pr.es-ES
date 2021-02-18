@@ -19,23 +19,23 @@ ms.custom:
 description: Los administradores pueden ver las preguntas más frecuentes y sus respuestas sobre la protección contra correo no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8620ad3f99c45dae3442ec89d879124053c1a005
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 8abccdac73877c3f24114afaa78c13143e156868
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175984"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288974"
 ---
 # <a name="anti-spam-protection-faq"></a>Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-En este tema se proporcionan preguntas frecuentes y respuestas sobre la protección antimalware para organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online.
+En este tema se proporcionan preguntas y respuestas más frecuentes sobre la protección antimalware para organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online.
 
 Para ver las preguntas y sus correspondientes respuestas sobre la cuarentena, consulte [Preguntas más frecuentes sobre la cuarentena](quarantine-faq.md).
 
@@ -146,7 +146,7 @@ Las pautas presentadas a continuación son los procedimientos recomendados para 
 
   [Configurar SPF para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  [Preguntas más frecuentes de dominios](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+  [Preguntas más frecuentes de dominios](../../admin/setup/domains-faq.yml#how-can-i-validate-spf-records-for-my-domain)
 
 - **Firma de correo electrónico con DKIM, firma con la resolución de nombres canónicos relajada.**
 

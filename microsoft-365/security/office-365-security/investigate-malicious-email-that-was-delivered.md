@@ -20,12 +20,12 @@ description: Obtenga información sobre cómo usar la investigación de amenazas
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b1fd9af5267defd55025ca712b3e5f7c0cc3b56
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: b36e16f5351ab30ac8150fbc3e87feb9ca4a6453
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167364"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286638"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Investigar el correo electrónico malintencionado que se entregó en Office 365
 
@@ -33,10 +33,10 @@ ms.locfileid: "50167364"
 
 **Se aplica a**
 
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-[Microsoft Defender para Office 365](office-365-atp.md) le permite investigar las actividades que ponen en riesgo a las personas de su organización y tomar medidas para proteger su organización. Por ejemplo, si forma parte del equipo de seguridad de su organización, puede buscar e investigar mensajes de correo electrónico sospechosos que se entregaron. Puede hacerlo mediante el Explorador [de amenazas (o detecciones en](threat-explorer.md)tiempo real).
+[Microsoft Defender para Office 365](office-365-atp.md) le permite investigar actividades que ponen en riesgo a las personas de su organización y tomar medidas para proteger su organización. Por ejemplo, si forma parte del equipo de seguridad de su organización, puede buscar e investigar mensajes de correo electrónico sospechosos que se entregaron. Puede hacerlo mediante el Explorador [de amenazas (o detecciones en](threat-explorer.md)tiempo real).
 
 > [!NOTE]
 > Vaya al artículo de corrección [aquí.](remediate-malicious-email-delivered-office-365.md)
@@ -68,13 +68,13 @@ Para realizar determinadas acciones, como ver encabezados de mensajes o descarga
 
 > [!NOTE]
 > *La* vista previa es un rol y no un grupo de roles; El rol vista previa debe agregarse a un grupo de roles existente para Office 365 (en [https://protection.office.com](https://protection.office.com) ). Vaya a **Permisos y,** a continuación, edite un grupo de roles existente o agregue un nuevo grupo de roles con el rol **Vista** previa asignado.
-> El rol Administrador global se asigna al Centro de administración de Microsoft 365 ( ), y los roles Administrador de seguridad y Lector de seguridad se asignan en el Centro de <https://admin.microsoft.com> seguridad & Cumplimiento ( <https://protection.office.com> ). Para obtener más información acerca de los roles y permisos, vea Permisos en el Centro de [& cumplimiento.](permissions-in-the-security-and-compliance-center.md)
+> El rol Administrador global se asigna al Centro de administración de Microsoft 365 ( ), y los roles administrador de seguridad y lector de seguridad se asignan en el Centro de <https://admin.microsoft.com> seguridad & cumplimiento ( <https://protection.office.com> ). Para obtener más información acerca de los roles y permisos, vea Permisos en el Centro de [& cumplimiento.](permissions-in-the-security-and-compliance-center.md)
 
 Sabemos que la vista previa y la descarga de correo electrónico son actividades confidenciales, por lo que la auditoría está habilitada para estas. Una vez que un administrador realiza estas actividades en correos electrónicos, los registros de auditoría se generan para la misma y se pueden ver en el Centro de seguridad y & cumplimiento de Office 365 ( [https://protection.office.com](https://protection.office.com) ). Vaya a Búsqueda  >  **del registro de auditoría de** búsqueda y filtre por el nombre de administrador en la sección Búsqueda. Los resultados filtrados mostrarán la actividad **AdminMailAccess**. Seleccione una fila para ver los detalles en la **sección Más información** sobre el correo electrónico en versión preliminar o descargado.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Buscar correo electrónico sospechoso que se entregó
 
-El Explorador de amenazas es un informe eficaz que puede servir para varios propósitos, como buscar y eliminar mensajes, identificar la dirección IP de un remitente de correo electrónico malintencionado o iniciar un incidente para una investigación posterior. El siguiente procedimiento se centra en el uso del Explorador para buscar y eliminar correo electrónico malintencionado de los buzones de los destinatarios.
+El Explorador de amenazas es un informe eficaz que puede servir para varios propósitos, como buscar y eliminar mensajes, identificar la dirección IP de un remitente de correo electrónico malintencionado o iniciar un incidente para una investigación posterior. El siguiente procedimiento se centra en el uso del Explorador para buscar y eliminar correo electrónico malintencionado de los buzones del destinatario.
 
 > [!NOTE]
 > Actualmente, las búsquedas predeterminadas en el Explorador no incluyen elementos recortados.  Esto se aplica a todas las vistas, por ejemplo, vistas de malware o phishing. Para incluir elementos recortados, debe agregar un conjunto de acciones **de entrega** para incluir Quitado **por ZAP**. Si incluyes todas las opciones, verás todos los resultados de la acción de entrega, incluidos los elementos zapped.
@@ -91,11 +91,11 @@ El Explorador de amenazas es un informe eficaz que puede servir para varios prop
 
     ![Menú Vista del explorador de amenazas y Correo electrónico: malware, suplantación de identidad, envíos y todas las opciones de correo electrónico, también contenido : malware.](../../media/tp-InvestigateMalEmail-viewmenu.png)
 
-    La *vista de* malware es actualmente la predeterminada y captura correos electrónicos donde se detecta una amenaza de malware. La *vista de* suplantación de identidad funciona de la misma manera, para la suplantación de identidad.
+    La *vista de* malware es actualmente la predeterminada y captura mensajes de correo electrónico donde se detecta una amenaza de malware. La *vista de* suplantación de identidad funciona de la misma manera, para la suplantación de identidad.
 
     Sin embargo, *todas las vistas* de correo electrónico enumeran todos los correos recibidos por la organización, independientemente de si se detectaron o no amenazas. Como puede imaginar, se trata de una gran cantidad de datos, por lo que esta vista muestra un marcador de posición que pide que se aplique un filtro. (Esta vista solo está disponible para los clientes de Defender para Office 365 P2).
 
-    *La vista Envíos* muestra todos los correos enviados por el administrador o el usuario que se han notificado a Microsoft.
+    *La vista* de envíos muestra todos los correos enviados por el administrador o el usuario que se han notificado a Microsoft.
 
 4. **Buscar y filtrar en el Explorador de** amenazas: los filtros aparecen en la parte superior de la página en la barra de búsqueda para ayudar a los administradores en sus investigaciones. Observe que se pueden aplicar varios filtros al mismo tiempo y que se agregan varios valores separados por comas a un filtro para restringir la búsqueda. Recuerde:
 
@@ -105,9 +105,9 @@ El Explorador de amenazas es un informe eficaz que puede servir para varios prop
     - Los filtros de dominio de dirección URL, ruta de acceso url y dominio de dirección URL y ruta de acceso no requieren un protocolo para filtrar.
     - Debe hacer clic en el icono Actualizar cada vez que cambie los valores de filtro para obtener resultados relevantes.
 
-5. **Filtros avanzados:** con estos filtros, puede crear consultas complejas y filtrar el conjunto de datos. Al hacer *clic en Filtros avanzados,* se abre un control desplegable con opciones.
+5. **Filtros avanzados:** con estos filtros, puede crear consultas complejas y filtrar el conjunto de datos. Al hacer *clic en Filtros avanzados* se abre un control desplegable con opciones.
 
-   El filtrado avanzado es una gran adición a las capacidades de búsqueda. Se ha **introducido un** filtro BOOLEAN NOT en el dominio *Recipient*, *Sender* y *Sender* para permitir que los administradores investiguen excluyendo valores. Esta opción aparece en el parámetro de selección *No contiene ninguno de*. **NO** permitirá que los administradores excluyan los buzones de alerta, los buzones de respuesta predeterminados de sus investigaciones y es útil para los casos en los que los administradores buscan un asunto específico (subject="Attention") donde el destinatario puede establecerse en ninguno de *defaultMail \@ contoso.com*. Se trata de una búsqueda de valor exacta.
+   El filtrado avanzado es una gran adición a las capacidades de búsqueda. Se ha **introducido un** filtro BOOLEAN NOT en el dominio *Recipient*, *Sender* y *Sender* para permitir a los administradores investigar excluyendo valores. Esta opción aparece en el parámetro de selección *No contiene ninguno de*. **NO** permitirá que los administradores excluyan los buzones de alerta, los buzones de respuesta predeterminados de sus investigaciones y es útil para los casos en los que los administradores buscan un asunto específico (subject="Attention") donde el destinatario puede establecerse en ninguno de *defaultMail \@ contoso.com*. Se trata de una búsqueda de valor exacta.
 
    ![Destinatarios: "No contiene ninguno de" Filtro avanzado.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 
@@ -120,7 +120,7 @@ El Explorador de amenazas es un informe eficaz que puede servir para varios prop
     *La acción de* entrega es la acción realizada en un correo electrónico debido a directivas o detecciones existentes. Estas son las posibles acciones que un correo electrónico puede realizar:
 
     - **Entregado:** el correo electrónico se entregó a la bandeja de entrada o carpeta de un usuario y el usuario puede acceder directamente a él.
-    - **Correo no** deseado (entregado a correo no deseado): el correo electrónico se envió a la carpeta de correo no deseado del usuario o a la carpeta eliminada y el usuario tiene acceso a los mensajes de correo electrónico en su carpeta de correo no deseado o eliminada.
+    - **Correo** no deseado (entregado a correo no deseado): el correo electrónico se envió a la carpeta de correo no deseado del usuario o a la carpeta eliminada y el usuario tiene acceso a los mensajes de correo electrónico en su carpeta de correo no deseado o eliminada.
     - **Bloqueado:** todos los mensajes de correo electrónico que se ponen en cuarentena, que han fallado o que se han descartado. (Esto es completamente inaccesible para el usuario).
     - **Reemplazado:** cualquier correo electrónico en el que los datos adjuntos malintencionados se reemplazan por archivos .txt que dice que los datos adjuntos son malintencionados
 
@@ -163,7 +163,7 @@ El Explorador de amenazas es un informe eficaz que puede servir para varios prop
 
 ### <a name="check-the-delivery-action-and-location"></a>Comprobar la ubicación y la acción de entrega
 
-En [el Explorador de amenazas (y](threat-explorer.md)detecciones en  tiempo real), ahora tienes las columnas Acción de entrega y Ubicación de entrega en lugar de la columna Estado **de entrega** anterior.  Esto da como resultado una imagen más completa de dónde llegarán los mensajes de correo electrónico. Parte del objetivo de este cambio es facilitar las investigaciones para los equipos de operaciones de seguridad, pero el resultado neto es conocer de un vistazo la ubicación de los mensajes de correo electrónico con problemas.
+En [el Explorador de amenazas (y](threat-explorer.md)detecciones en  tiempo real), ahora tienes las columnas Acción de entrega y Ubicación de entrega en lugar de la columna Estado **de entrega** anterior.  Esto da como resultado una imagen más completa de dónde se desembarten los mensajes de correo electrónico. Parte del objetivo de este cambio es facilitar las investigaciones para los equipos de operaciones de seguridad, pero el resultado neto es conocer de un vistazo la ubicación de los mensajes de correo electrónico con problemas.
 
 El estado de entrega ahora se divide en dos columnas:
 
@@ -197,9 +197,9 @@ La ubicación de entrega muestra los resultados de las directivas y detecciones 
 
 - **Descartado:** el correo electrónico se pierde en algún lugar del flujo de correo.
 
-### <a name="view-the-timeline-of-your-email"></a>Ver la escala de tiempo del correo electrónico
+### <a name="view-the-timeline-of-your-email"></a>Ver la escala de tiempo de su correo electrónico
 
-**La escala de tiempo** de correo electrónico es un campo del Explorador de amenazas que facilita la búsqueda para el equipo de operaciones de seguridad. Cuando se suceden varios eventos al mismo tiempo o casi al mismo tiempo en un correo electrónico, estos eventos se muestran en una vista de escala de tiempo. Algunos eventos que se suceden después de la entrega al correo electrónico se capturan en la **columna Acciones** especiales. La combinación de información de la escala de tiempo de un mensaje de correo electrónico con cualquier acción especial que se llevara a cabo después de la entrega ofrece a los administradores información sobre las directivas y el tratamiento de amenazas (por ejemplo, dónde se enrutó el correo y, en algunos casos, cuál era la evaluación final).
+**La escala de tiempo** de correo electrónico es un campo del Explorador de amenazas que facilita la búsqueda para el equipo de operaciones de seguridad. Cuando se suceden varios eventos al mismo tiempo o casi al mismo tiempo en un correo electrónico, esos eventos se muestran en una vista de escala de tiempo. Algunos eventos que se suceden después de la entrega al correo electrónico se capturan en la **columna Acciones** especiales. La combinación de información de la escala de tiempo de un mensaje de correo electrónico con cualquier acción especial que se llevara a cabo después de la entrega ofrece a los administradores información sobre las directivas y el control de amenazas (por ejemplo, dónde se enrutó el correo y, en algunos casos, cuál era la evaluación final).
 
 > [!IMPORTANT]
 > Vaya a un tema de [corrección aquí.](remediate-malicious-email-delivered-office-365.md)

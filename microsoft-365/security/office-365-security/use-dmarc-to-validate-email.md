@@ -7,7 +7,6 @@ author: MSFTTracyP
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -16,17 +15,23 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Obtenga información sobre cómo configurar Domain-based Message Authentication, Reporting, and Conformance (DMARC) para validar mensajes enviados desde la organización.
-ms.openlocfilehash: bcf1c0b3dc0a1a8dd8a679af815fbdc2173cabb7
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 43290d7ba46774e6ec31d96aa14dbff4eb2b2cb9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759861"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286339"
 ---
 # <a name="use-dmarc-to-validate-email"></a>Usar DMARC para validar el correo electrónico
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Domain-based Message Authentication, Reporting, and Conformance ([DMARC](https://dmarc.org)) trabaja con el marco de directivas de remitente (SPF) y DomainKeys Identified Mail (DKIM) para autenticar a los remitentes de los correos y garantizar que los sistemas de correo electrónico de destino confíen en los mensajes enviados desde su dominio. Implementar DMARC con SPF y DKIM ofrece protección adicional contra el correo electrónico de suplantación de identidad. DMARC permite a los sistemas que reciben los correos determinar qué hacer con los mensajes enviados desde su dominio que no superan las comprobaciones SPF o DKIM.
 
@@ -172,7 +177,7 @@ Ejemplos:
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
-Una vez que haya formulado el registro, debe actualizarlo en el registrador del dominios. Para obtener instrucciones sobre cómo agregar el registro TXT de DMARC a los registros DNS para Microsoft 365, consulte [Crear registros DNS para Microsoft 365 al administrar los registros DNS](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Una vez que haya formulado el registro, debe actualizarlo en el registrador del dominios. Para obtener instrucciones sobre cómo agregar el registro TXT de DMARC a los registros DNS para Microsoft 365, consulte [Crear registros DNS para Microsoft 365 al administrar los registros DNS](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 ## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>Procedimientos recomendados para la implementación de DMARC en Microsoft 365
 

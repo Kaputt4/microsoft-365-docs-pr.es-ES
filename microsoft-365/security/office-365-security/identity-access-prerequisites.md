@@ -1,11 +1,12 @@
 ---
 title: 'Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades: Microsoft 365 para empresas | Microsoft Docs'
-description: En este artículo se describen los requisitos previos que debe cumplir para usar configuraciones y directivas de acceso a dispositivos e identidades.
+description: En este artículo se describen los requisitos previos que debe cumplir para usar configuraciones y directivas de acceso de dispositivos e identidades.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: m365-security
 ms.topic: article
+audience: Admin
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -18,21 +19,21 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 53d64d869b80c6fe5c6e0954a00af5b6f5359356
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: fa00427d9f950a996a52f88c1b12608707d7aa8d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233091"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288602"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Trabajo de requisitos previos para implementar directivas de acceso a dispositivos e identidades
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
 - Azure
 
-En este artículo se describen los requisitos previos que los administradores deben cumplir para usar directivas recomendadas de acceso a dispositivos e identidades, y para usar el acceso condicional. También se analizan los valores predeterminados recomendados para configurar plataformas cliente para la mejor experiencia de inicio de sesión único (SSO).
+En este artículo se describen los requisitos previos que los administradores deben cumplir para usar directivas de acceso de dispositivo e identidad recomendadas, así como para usar el acceso condicional. También se analizan los valores predeterminados recomendados para configurar plataformas cliente para la mejor experiencia de inicio de sesión único (SSO).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -47,7 +48,7 @@ En la tabla siguiente se detallan las características de requisitos previos y s
 
 |Configuración|Exceptions|
 |---|:---:|
-|[Configurar PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Esto debe habilitarse para detectar credenciales filtradas y actuar en ellas para el acceso condicional basado en riesgos. **Nota:** Esto es necesario independientemente de si su organización usa la autenticación federada.|Solo de nube|
+|[Configurar PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).  Esto debe habilitarse para detectar credenciales filtradas y actuar en ellas para el acceso condicional basado en riesgos. **Nota:** Esto es necesario independientemente de si la organización usa la autenticación federada.|Solo de nube|
 |[Habilitar el inicio de sesión único sin](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) problemas para iniciar sesión automáticamente a los usuarios cuando se encuentran en sus dispositivos de la organización conectados a la red de la organización.|Solo en la nube y federada|
 |[Configurar ubicaciones con nombre.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) Azure AD Identity Protection recopila y analiza todos los datos de sesión disponibles para generar una puntuación de riesgo. Se recomienda especificar los intervalos IP públicos de la organización para la red en la configuración de ubicaciones con nombre de Azure AD. El tráfico procedente de estos intervalos tiene una puntuación de riesgo reducida y el tráfico de fuera del entorno de la organización tiene una puntuación de riesgo más alta.||
 |[Registre todos los usuarios para el restablecimiento de contraseña de autoservicio (SSPR) y la autenticación multifactor (MFA).](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged) Te recomendamos que registres usuarios para Azure AD Multi-Factor Authentication con antelación. Azure AD Identity Protection usa Azure AD Multi-Factor Authentication para realizar comprobaciones de seguridad adicionales. Además, para obtener la mejor experiencia de inicio de sesión, se recomienda que los usuarios instalen la aplicación [Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) y la aplicación Portal de empresa de Microsoft en sus dispositivos. Estos se pueden instalar desde la tienda de aplicaciones para cada plataforma.||
@@ -85,7 +86,7 @@ Los siguientes clientes de correo electrónico admiten la autenticación moderna
 
 |Plataforma|Cliente|Versión/Notas|
 |---|---|---|
-|**Windows**|Outlook|2019, 2016, 2013 <p> [Habilitar la autenticación moderna](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication) <p> [Actualizaciones necesarias](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
+|**Windows**|Outlook|2019, 2016, 2013 <p> [Habilitar la autenticación moderna](../../admin/security-and-compliance/enable-modern-authentication.md) <p> [Actualizaciones necesarias](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|Outlook para iOS|[Más reciente](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook para Android|[Más reciente](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2019 y 2016|
@@ -108,7 +109,7 @@ Se recomiendan los siguientes clientes cuando se ha aplicado una directiva de do
 
 ### <a name="microsoft-365-client-support"></a>Soporte técnico para el cliente de Microsoft 365
 
-Para obtener más información acerca de la compatibilidad con clientes en Microsoft 365, vea los siguientes artículos:
+Para obtener más información acerca de la compatibilidad con clientes en Microsoft 365, vea los artículos siguientes:
 
 - [Compatibilidad con aplicaciones cliente de Microsoft 365: acceso condicional](../../enterprise/microsoft-365-client-support-conditional-access.md)
 - [Compatibilidad con aplicaciones cliente de Microsoft 365: autenticación multifactor](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
@@ -123,7 +124,7 @@ Estas son algunas recomendaciones adicionales:
 
 - Use [Azure AD Privileged Identity Management para](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) reducir el número de cuentas administrativas persistentes.
 - [Use la administración de acceso](../../compliance/privileged-access-management-overview.md) con privilegios para proteger su organización de infracciones que pueden usar cuentas de administrador con privilegios existentes con acceso permanente a datos confidenciales o acceso a opciones de configuración críticas.
-- Cree y use cuentas independientes a las que se asignan roles de [administrador de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *solo para la administración.* Los administradores deben tener su propia cuenta de usuario para uso no administrativo normal y usar solo una cuenta administrativa cuando sea necesario para completar una tarea asociada a su función de rol o trabajo.
+- Cree y use cuentas independientes a las que se asignan roles de [administrador de Microsoft 365](../../admin/add-users/about-admin-roles.md) *solo para la administración.* Los administradores deben tener su propia cuenta de usuario para uso no administrativo normal y usar solo una cuenta administrativa cuando sea necesario para completar una tarea asociada a su función de rol o trabajo.
 - Siga [los procedimientos recomendados](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) para proteger cuentas con privilegios en Azure AD.
 
 ## <a name="next-step"></a>Paso siguiente

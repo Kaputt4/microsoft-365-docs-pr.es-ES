@@ -15,19 +15,19 @@ ms.custom:
 description: En este artículo, aprenderá a usar PowerShell para aplicar opciones de configuración a los inquilinos en Microsoft Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b7d856a7cec3bddc32455ba3afadf0323ddce935
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 4823ed09cd8a9d72aef21df3d51213cb4512b4f9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166596"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288542"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Script de ejemplo para aplicar la configuración de EOP a varios inquilinos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
--  [Exchange Online Protection independiente](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection independiente](exchange-online-protection-overview.md)
 
 El siguiente script de ejemplo permite a los administradores de Microsoft Exchange Online Protection (EOP) que administran varios inquilinos (empresas) usar Exchange Online PowerShell para ver o aplicar opciones de configuración a sus inquilinos.
 
@@ -64,7 +64,7 @@ El siguiente script de ejemplo permite a los administradores de Microsoft Exchan
    & "c:\scripts\RunCmdletOnMultipleTenants.ps1" "c:\scripts\inputfile.csv"
    ```
 
-6. Cada inquilino tendrá una sesión iniciada y se ejecutará el script.
+6. Se inicia sesión en cada inquilino y se ejecutará el script.
 
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 

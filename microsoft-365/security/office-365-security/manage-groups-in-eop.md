@@ -15,19 +15,19 @@ ms.custom:
 description: Los administradores de organizaciones independientes de Exchange Online Protection (EOP) pueden aprender a crear, modificar y quitar grupos de distribución y grupos de seguridad habilitados para correo en el Centro de administración de Exchange (EAC) y en PowerShell de Exchange Online Protection (EOP) independiente.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01fe5c6ab1555749d38f9c092b05aca9befb67fe
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d03b8a5129eb3b070f30de46b9b9c7bcc8e9898d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166968"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286806"
 ---
 # <a name="manage-groups-in-eop"></a>Administrar grupos en EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
--  [Exchange Online Protection independiente](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection independiente](exchange-online-protection-overview.md)
 
 En organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, puede crear, modificar y quitar los siguientes tipos de grupos:
 
@@ -51,12 +51,12 @@ Puede administrar grupos en el Centro de administración de Exchange (EAC) y en 
 
 - Al administrar grupos en PowerShell de EOP independiente, es posible que se encuentre con limitaciones. Los procedimientos de PowerShell de este artículo usan un método de procesamiento por lotes que provoca un retraso de propagación de unos minutos antes de que los resultados de los comandos estén visibles.
 
-- Deberá tener asignados permisos en Exchange Online Protection para poder realizar los procedimientos descritos en este artículo. Específicamente, necesita el rol **Grupos** de distribución, que  se asigna a los grupos de roles Administración de la organización y Administración de destinatarios de forma predeterminada.  Para obtener más información, vea [Permisos en EOP](feature-permissions-in-eop.md) independiente y Usar el EAC modificar la lista [de miembros en grupos de roles.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+- Deberá tener asignados permisos en Exchange Online Protection antes de poder realizar los procedimientos descritos en este artículo. Específicamente, necesita el rol **Grupos** de distribución, que  se asigna a los grupos de roles Administración de la organización y Administración de destinatarios de forma predeterminada.  Para obtener más información, vea [Permisos en EOP](feature-permissions-in-eop.md) independiente y Usar el EAC modificar la lista [de miembros en grupos de roles.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- Para obtener información acerca de los métodos abreviados de teclado que pueden aplicarse a los procedimientos de este artículo, vea [Métodos abreviados](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)de teclado para el Centro de administración de Exchange en Exchange Online.
+- Para obtener información acerca de los métodos abreviados de teclado que pueden aplicarse a los procedimientos de este artículo, consulte [Métodos abreviados](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)de teclado para el Centro de administración de Exchange en Exchange Online.
 
 > [!TIP]
-> ¿Problemas? Pida ayuda en el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
+> ¿Problemas? Pida ayuda en el foro de [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) .
 
 ## <a name="use-the-exchange-admin-center-to-manage-distribution-groups"></a>Usar el Centro de administración de Exchange para administrar grupos de distribución
 
@@ -76,7 +76,7 @@ Puede administrar grupos en el Centro de administración de Exchange (EAC) y en 
 
    - <sup>\*</sup>**Alias:** use este cuadro para escribir el nombre del alias del grupo. El alias no puede superar los 64 caracteres y debe ser único. Cuando un usuario indica el alias en la línea Para de un mensaje de correo electrónico, se resuelve en el nombre para mostrar del grupo.
 
-   - <sup>\*</sup>**Dirección de** correo electrónico: la dirección de correo electrónico consta del alias en el lado izquierdo del símbolo (@) y un dominio en el lado derecho. De forma predeterminada, el valor de **Alias** se usa para el valor de alias, pero se puede cambiar. Para el valor de dominio, haga clic en la lista desplegable y seleccione y acepte el dominio de la organización.
+   - <sup>\*</sup>**Dirección de** correo electrónico: la dirección de correo electrónico consta del alias en el lado izquierdo del símbolo (@) y un dominio en el lado derecho. De forma predeterminada, el valor de **Alias** se usa para el valor de alias, pero se puede cambiar. Para el valor de dominio, haga clic en la lista desplegable y seleccione y acepte el dominio de su organización.
 
    - **Descripción:** esta descripción aparece en la libreta de direcciones y en el panel Detalles del EAC.
 
@@ -246,7 +246,7 @@ Para comprobar que ha creado, modificado o quitado correctamente un grupo de dis
   Get-Recipient -Identity <GroupIdentity> | Format-List
   ```
 
-- Para ver los miembros del grupo, reemplace por el nombre, el alias o la dirección de correo electrónico del grupo y \<GroupIdentity\> ejecute el siguiente comando:
+- Para ver los miembros del grupo, reemplace por el nombre, el alias o la dirección de correo electrónico del grupo \<GroupIdentity\> y ejecute el siguiente comando:
 
   ```PowerShell
   Get-DistributionGroupMember -Identity "<GroupIdentity>"

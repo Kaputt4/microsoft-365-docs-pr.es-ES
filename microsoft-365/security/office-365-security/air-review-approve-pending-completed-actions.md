@@ -19,12 +19,12 @@ description: Obtenga información sobre las acciones de corrección en las capac
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: 3fb77fa41ff3e9af995cf80b9f4024aa92a51212
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: a11e9ee6a4c2426951fe2b4aa4f2dd08d1931f1c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176020"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287118"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Revisar y administrar acciones de corrección en Office 365
 
@@ -37,14 +37,14 @@ A medida que las investigaciones automatizadas en el correo  & contenido de cola
 Estas acciones de corrección no se toman a menos que el equipo de operaciones de seguridad las apruebe y hasta que el equipo de operaciones de seguridad las apruebe. Se recomienda revisar y aprobar las acciones pendientes lo antes posible para que las investigaciones automatizadas se completen de forma oportuna. En algunos casos, puede deshacer una acción de corrección.
 
 **Se aplica a**
-- [Microsoft Defender para Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 ## <a name="approve-or-reject-pending-actions"></a>Aprobar (o rechazar) acciones pendientes
 
 1. Vaya al Centro de seguridad de Microsoft 365) [https://security.microsoft.com](https://security.microsoft.com) e inicie sesión.
 2. En el panel de navegación, seleccione **Centro de acciones.**
-3. En la **pestaña** Pendiente, revisa la lista de acciones que esperan la aprobación.
+3. En la **pestaña** Pendiente, revisa la lista de acciones que están a la espera de su aprobación.
 4. Seleccione un elemento de la lista. Se abre el panel desplegable. 
 5. Revise la información del panel desplegable y, a continuación, siga uno de estos pasos:
    - Seleccione **abrir la página de investigación** para ver más detalles sobre la investigación.
@@ -69,11 +69,11 @@ Estas acciones de corrección no se toman a menos que el equipo de operaciones d
 2. En la **pestaña** Historial, seleccione un archivo que tenga el tipo de acción **Quarantine file**.
 3. En el panel del lado derecho de la pantalla, seleccione Aplicar a **X más** instancias de este archivo y, a continuación, **seleccione Deshacer**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Usar el Explorador de amenazas](threat-explorer.md)
 - [Cómo notificar falsos positivos/negativos en las capacidades automatizadas de investigación y respuesta](air-report-false-positives-negatives.md)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Ver detalles y resultados de una investigación automatizada en Office 365](air-view-investigation-results.md)

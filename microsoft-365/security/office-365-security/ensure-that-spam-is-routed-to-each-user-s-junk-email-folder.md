@@ -18,24 +18,24 @@ description: Los administradores pueden aprender a enrutar el correo no deseado 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 926ac6dec33bf00fc8f0dcd292229e20ccc2b93f
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: b8fbc1b065e348f759806d80fd85421eb9d66098
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167124"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288878"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurar EOP independiente para entregar correo no deseado a la carpeta correo no deseado en entornos híbridos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
--  [Exchange Online Protection independiente](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection independiente](exchange-online-protection-overview.md)
 
 > [!IMPORTANT]
 > Este tema es solo para clientes de EOP independientes en entornos híbridos. Este tema no se aplica a los clientes de Microsoft 365 con buzones de Exchange Online.
 
-Si es un cliente independiente de Exchange Online Protection (EOP) en un entorno híbrido, debe configurar la organización de Exchange local para que reconozca y traduzca los veredictos de filtrado de correo no deseado de EOP, de modo que la regla de correo no deseado del buzón local pueda mover mensajes a la carpeta correo no deseado.
+Si es un cliente independiente de Exchange Online Protection (EOP) en un entorno híbrido, debe configurar su organización de Exchange local para que reconozca y traduzca los veredictos de filtrado de correo no deseado de EOP, de modo que la regla de correo no deseado del buzón local pueda mover mensajes a la carpeta correo no deseado.
 
 En concreto, debe crear reglas de flujo de correo (también conocidas como reglas de transporte) en su organización de Exchange local con condiciones que encuentren mensajes con cualquiera de los siguientes encabezados y valores de correo no deseado de EOP, y acciones que establezcan el nivel de confianza contra correo no deseado (SCL) de esos mensajes en 6:
 
@@ -45,7 +45,7 @@ En concreto, debe crear reglas de flujo de correo (también conocidas como regla
 
 - `X-Forefront-Antispam-Report: SFV:SKB` (Mensaje marcado como correo no deseado por el filtrado de correo no deseado debido a que la dirección de correo electrónico o el dominio de correo electrónico del remitente se encuentra en la lista de remitentes bloqueados o en la lista de dominios bloqueados en EOP)
 
-Para obtener más información acerca de estos valores de encabezado, consulte [Encabezados de mensajes contra correo no deseado.](anti-spam-message-headers.md)
+Para obtener más información acerca de estos valores de encabezado, consulte Encabezados de mensajes contra [correo no deseado.](anti-spam-message-headers.md)
 
 En este tema se describe cómo crear estas reglas de flujo de correo en el Centro de administración de Exchange (EAC) y en el Shell de administración de Exchange (Exchange PowerShell) en la organización local de Exchange.
 

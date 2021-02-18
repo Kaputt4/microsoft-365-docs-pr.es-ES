@@ -15,19 +15,19 @@ ms.custom:
 description: En este artículo, aprenderá a mover dominios y configuraciones de una organización de Microsoft Exchange Online Protection (EOP) (inquilino) a otra.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4cfb5c31728174f7f7307e9492abc03a62f8bf9a
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 42a212c1826f63f9e7ed8395fe1d6b6564625b7b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150765"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287778"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Mover dominios y opciones de configuración de una organización de EOP a otra
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
--  [Exchange Online Protection independiente](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection independiente](exchange-online-protection-overview.md)
 
 El cambio de requisitos empresariales a veces puede requerir dividir una organización de Microsoft Exchange Online Protection (EOP) (inquilino) en dos organizaciones separadas, combinar dos organizaciones en una, o mover sus dominios y opciones de configuración de EOP desde una organización hacia otra organización. El movimiento desde una organización de EOP a una segunda organización de EOP puede ser todo un desafío, pero con unos pocos scripts básicos de Windows PowerShell remoto y un poco de preparación, esto se puede lograr con una ventana de mantenimiento relativamente pequeña.
 
@@ -193,7 +193,7 @@ Ahora puede revisar y recopilar la información del Centro de administración de
 
 5. Registre el registro MX o TXT que usará para comprobar su dominio, y termine con el asistente para la instalación.
 
-6. Agregue los registros TXT de comprobación a sus registros DNS. Esto le permite comprobar con más rapidez los dominios en la organización de origen después de que se quitan de la organización de destino. Para obtener más información acerca de la configuración de DNS, vea Crear registros DNS en cualquier proveedor de [hospedaje DNS para Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+6. Agregue los registros TXT de comprobación a sus registros DNS. Esto le permite comprobar con más rapidez los dominios en la organización de origen después de que se quitan de la organización de destino. Para obtener más información acerca de la configuración de DNS, vea Crear registros DNS en cualquier proveedor de [hospedaje DNS para Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>Paso 3: forzar a los remitentes para que pongan en cola el correo
 
@@ -203,7 +203,7 @@ Una opción para forzar a los remitentes para que pongan en cola el correo es ac
 
 Otra opción es colocar un registro MX no válido en cada dominio donde se conservan los registros DNS para el dominio (también conocido como servicio de hospedaje DNS). Esto hará que el remitente ponga en cola el correo y vuelva a intentarlo (los reintentos típicos son de 48 horas, pero esto podría variar de un proveedor a otro). Puede usar invalid.outlook.com como destino de MX no válido. La reducción del valor de período de vida (TTL) a cinco minutos en el registro MX ayudará a que el cambio se propague con más rapidez a los proveedores de DNS.
 
-Para obtener más información acerca de la configuración de DNS, vea Crear registros DNS en cualquier proveedor de [hospedaje DNS para Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Para obtener más información acerca de la configuración de DNS, vea Crear registros DNS en cualquier proveedor de [hospedaje DNS para Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 > [!IMPORTANT]
 > Diferentes proveedores ponen en cola el correo durante diferentes períodos de tiempo. Deberá configurar su nuevo inquilino rápidamente y revertir la configuración de DNS para impedir que los informes de no entrega (NDR) se envíen al remitente si caduca el tiempo en cola.
@@ -933,4 +933,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Paso 8: revertir la configuración de DNS para detener la cola de correo
 
-Si decidió establecer los registros MX en una dirección no válida para hacer que los remitentes poner en cola el correo durante la transición, tendrá que volver a establecerlos en el valor correcto como se especifica en el centro de [administración.](https://admin.microsoft.com) Para obtener más información acerca de la configuración de DNS, vea Crear registros DNS en cualquier proveedor de [host DNS para Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Si decidió establecer los registros MX en una dirección no válida para hacer que los remitentes poner en cola el correo durante la transición, tendrá que volver a establecerlos en el valor correcto como se especifica en el centro de [administración.](https://admin.microsoft.com) Para obtener más información acerca de la configuración de DNS, vea Crear registros DNS en cualquier proveedor de [hospedaje DNS para Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).

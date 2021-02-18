@@ -19,21 +19,21 @@ ms.custom:
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de correo no deseado salientes en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6b7ba1e398466c448de37060db340c1d20cb1504
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 742c58a8a94938c5896382a6d53acac127974f02
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165769"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288938"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurar el filtrado de correo no deseado saliente en EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 En organizaciones de Microsoft 365 con buzones en Exchange Online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, los mensajes de correo electrónico salientes que se envían a través de EOP se comprueban automáticamente en busca de correo no deseado y actividad de envío inusual.
 
@@ -52,7 +52,7 @@ Los elementos básicos de una directiva de correo no deseado saliente en EOP son
 
 La diferencia entre estos dos elementos no es obvia cuando administra directivas de correo no deseado salientes en el Centro de & cumplimiento:
 
-- Cuando crea una directiva, realmente está creando una regla de filtro de correo no deseado saliente y la directiva de filtro de correo no deseado saliente asociada al mismo tiempo con el mismo nombre para ambos.
+- Al crear una directiva, realmente está creando una regla de filtro de correo no deseado saliente y la directiva de filtro de correo no deseado saliente asociada al mismo tiempo con el mismo nombre para ambos.
 - Al modificar una directiva, la configuración relacionada con el nombre, la prioridad, la habilitada o deshabilitada, y los filtros de destinatarios modifican la regla de filtro de correo no deseado saliente. Todas las demás opciones modifican la directiva de filtro de correo no deseado saliente asociada.
 - Al quitar una directiva, se quitan la regla de filtro de correo no deseado saliente y la directiva de filtro de correo no deseado de salida asociada.
 
@@ -80,7 +80,7 @@ Para aumentar la eficacia del filtrado de correo no deseado saliente, puede crea
 
   **Notas**:
 
-  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para obtener la configuración recomendada para las directivas de correo no deseado saliente, consulte configuración de directiva de filtro de correo no [deseado saliente de EOP.](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)
@@ -126,13 +126,13 @@ La creación de una directiva de correo no deseado saliente personalizada en el 
 
         Para deshabilitar esta configuración, desactive la casilla.
 
-   - **Notificar a determinadas personas si un remitente está bloqueado debido al envío de correo no deseado saliente:**
+   - **Notificar a personas específicas si un remitente está bloqueado debido al envío de correo no deseado saliente:**
 
      > [!IMPORTANT]
      >
      > - Esta configuración está en proceso de desuso de las directivas de correo no deseado saliente.
      >
-     > - La [](../../compliance/alert-policies.md) directiva de alerta predeterminada denominada User **restricted from sending email** already sends email notifications to members of the **TenantAdmins** (**Global admins**) group when users are blocked due to exceeding the limits in the **Recipient Limits** section. Se recomienda encarecidamente usar la directiva de alerta en lugar de esta configuración en la directiva de correo no deseado saliente para notificar a los **administradores y otros usuarios.** Para obtener instrucciones, [consulte Comprobar la configuración de alerta para usuarios restringidos.](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)
+     > - La [](../../compliance/alert-policies.md) directiva de alerta predeterminada denominada User **restricted from sending email** already sends email notifications to members of the **TenantAdmins** (**Global admins**) group when users are blocked due to exceeding the limits in the **Recipient Limits** section. **Se recomienda encarecidamente usar la directiva** de alerta en lugar de esta configuración en la directiva de correo no deseado saliente para notificar a los administradores y otros usuarios. Para obtener instrucciones, [consulte Comprobar la configuración de alerta para usuarios restringidos.](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)
 
 5. (Opcional) Expanda la **sección Límites de** destinatarios para configurar los límites y las acciones de los mensajes de correo electrónico saliente sospechosos:
 
@@ -149,17 +149,17 @@ La creación de una directiva de correo no deseado saliente personalizada en el 
 
      - **Límite diario:** el número total máximo de destinatarios por día.
 
-   - **Acción cuando un usuario supera los límites** anteriores: Configure la acción para realizar cuando se supere alguno de los límites **de** destinatarios. Para todas las acciones, los  destinatarios especificados en el usuario restringían el envío de la directiva de alerta de correo electrónico (y en la ahora redundante notificar a determinadas personas si un remitente está bloqueado debido **a** la configuración de correo no deseado saliente en la directiva de correo no deseado saliente reciben notificaciones de correo electrónico.
+   - **Acción cuando un usuario supera los límites** anteriores: Configure la acción para realizar cuando se supere alguno de los límites **de** destinatarios. Para todas las acciones, los  destinatarios especificados en la directiva de alerta de correo no deseado de usuario restringían el envío de la directiva de alerta de correo electrónico (y en la ahora redundante notificar a determinadas personas si un remitente está bloqueado debido **a** la configuración de envío de correo no deseado saliente en la directiva de correo no deseado saliente recibe notificaciones por correo electrónico.
 
-     - **Restrinja al usuario el envío de correo hasta el día siguiente:** este es el valor predeterminado. Se envían notificaciones por correo electrónico y el usuario no podrá enviar más mensajes hasta el día siguiente, según la hora UTC. No hay ninguna manera de que el administrador invalide este bloque.
+     - **Restrinja al usuario el envío de correo hasta** el día siguiente: este es el valor predeterminado. Se envían notificaciones por correo electrónico y el usuario no podrá enviar más mensajes hasta el día siguiente, según la hora UTC. No hay ninguna forma de que el administrador invalide este bloque.
 
        - La alerta de actividad denominada **Usuario restringido para enviar correo electrónico** se lo comunica a los administradores (por correo electrónico y en la página Ver **alertas).**
 
-       - También se notifica a los destinatarios especificados en la notificación a personas específicas si un remitente está bloqueado debido al envío de **correo** no deseado saliente en la directiva.
+       - También se notifica a los destinatarios especificados en la directiva notificar a personas específicas si un remitente está bloqueado debido al envío de **correo** no deseado saliente en la directiva.
 
        - El usuario no podrá enviar más mensajes hasta el día siguiente, según la hora UTC. No hay ninguna manera de que el administrador invalide este bloque.
 
-     - Impedir que el usuario envíe **correo:** se envían notificaciones por correo electrónico, el usuario se agrega al portal **[Usuarios restringidos] <https://sip.protection.office.com/restrictedusers>** en el Centro de seguridad & Cumplimiento y el usuario no puede enviar correo electrónico hasta que un administrador los quite del **portal** de usuarios restringidos. Después de que un administrador quite el usuario de la lista, el usuario no volverá a estar restringido para ese día. Para obtener instrucciones, consulte Quitar un usuario del portal de usuarios restringidos [después de enviar correo no deseado.](removing-user-from-restricted-users-portal-after-spam.md)
+     - Impedir que el usuario envíe **correo:** se envían notificaciones por correo electrónico, el usuario se agrega al portal **[Usuarios restringidos] <https://sip.protection.office.com/restrictedusers>** en el Centro de seguridad & Cumplimiento y el usuario no puede enviar correo electrónico hasta que un administrador los quite del **portal** de usuarios restringidos. Después de que un administrador quite al usuario de la lista, el usuario no volverá a estar restringido para ese día. Para obtener instrucciones, consulte Quitar un usuario del portal de usuarios restringidos [después de enviar correo no deseado.](removing-user-from-restricted-users-portal-after-spam.md)
 
      - **Sin acción, solo alerta:** se envían notificaciones por correo electrónico.
 
@@ -255,7 +255,7 @@ Para cambiar la prioridad de una directiva, suba o baje la directiva en la lista
 
    - La directiva personalizada de correo no deseado saliente con la prioridad más baja tiene el valor flecha arriba icono ![ ](../../media/ITPro-EAC-UpArrowIcon.png) **n** (por ejemplo, icono de ![ flecha arriba ](../../media/ITPro-EAC-UpArrowIcon.png) **3**).
 
-   - Si tiene tres o más directivas personalizadas de correo no deseado saliente, las directivas entre la prioridad más alta y la más baja tienen valores de icono flecha arriba icono flecha ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ abajo ](../../media/ITPro-EAC-DownArrowIcon.png) **n** (por ejemplo, icono flecha arriba icono flecha abajo ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ icono ](../../media/ITPro-EAC-DownArrowIcon.png) **2**).
+   - Si tiene tres o más directivas personalizadas de correo no deseado saliente, las directivas entre la prioridad más alta y la más baja tienen valores de icono flecha arriba icono flecha ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ abajo ](../../media/ITPro-EAC-DownArrowIcon.png) **n** (por ejemplo, icono flecha arriba flecha abajo ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ icono ](../../media/ITPro-EAC-DownArrowIcon.png) **2**).
 
 3. Haga clic en ![Icono flecha arriba](../../media/ITPro-EAC-UpArrowIcon.png) o ![Icono flecha abajo](../../media/ITPro-EAC-DownArrowIcon.png) para mover la directiva personalizada de correo no deseado saliente hacia arriba o hacia abajo en la lista de prioridades.
 
@@ -337,7 +337,7 @@ En este ejemplo se crea una nueva regla de filtro de correo no deseado saliente 
 New-HostedOutboundSpamFilterRule -Name "Contoso Executives" -HostedOutboundSpamFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [New-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterrule).
+Para obtener información detallada acerca de la sintaxis y los parámetros, [consulte New-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterrule).
 
 ### <a name="use-powershell-to-view-outbound-spam-filter-policies"></a>Usar PowerShell para ver directivas de filtro de correo no deseado saliente
 
@@ -347,7 +347,7 @@ Para devolver una lista resumida de todas las directivas de filtro de correo no 
 Get-HostedOutboundSpamFilterPolicy
 ```
 
-Para devolver información detallada sobre una directiva de filtro de correo no deseado saliente específica, use esta sintaxis:
+Para devolver información detallada sobre una directiva de filtro de correo no deseado saliente específica, use la sintaxis siguiente:
 
 ```PowerShell
 Get-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" | Format-List [<Specific properties to view>]
@@ -418,7 +418,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, [co
 
 La única configuración que no está disponible al modificar una regla de filtro de correo no deseado saliente en PowerShell es el parámetro _Enabled_ que permite crear una regla deshabilitada. Para habilitar o deshabilitar las reglas de filtro de correo no deseado saliente existentes, consulte la sección siguiente.
 
-De lo contrario, no hay opciones de configuración adicionales disponibles al modificar una regla de filtro de correo no deseado saliente en PowerShell. La misma configuración está disponible cuando se crea una regla tal como se describe en el paso [2: Usar PowerShell](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule) para crear una sección de regla de filtro de correo no deseado saliente anteriormente en este artículo.
+De lo contrario, no hay opciones de configuración adicionales disponibles al modificar una regla de filtro de correo no deseado saliente en PowerShell. La misma configuración está disponible al crear una regla tal como se describe en el paso [2: Usar PowerShell](#step-2-use-powershell-to-create-an-outbound-spam-filter-rule) para crear una sección de regla de filtro de correo no deseado saliente anteriormente en este artículo.
 
 Para modificar una regla de filtro de correo no deseado saliente, use esta sintaxis:
 

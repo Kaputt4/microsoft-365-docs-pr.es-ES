@@ -20,21 +20,21 @@ description: Los administradores pueden obtener información sobre la protecció
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cb2866fd3e60c021ae89ffabe7149f4b415d63bc
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: c9ca420609628476faba6262fe7ed412b8fa5746
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150717"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288806"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender para Office 365 plan 1 y plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Esta es una guía de inicio rápido que divide la configuración de Defender para Office 365 en fragmentos. Si no está seguro de dónde empezar a usar las características de protección contra amenazas en Office 365, o si aprende mejor haciendo *esto,* use estas instrucciones como una lista de comprobación y un punto de partida.
 
@@ -71,7 +71,7 @@ Para configurar las directivas de Defender para Office 365, debe tener asignado 
 
 |Rol o grupo de roles|Dónde obtener más información|
 |---|---|
-|administrador global|[Acerca de los roles de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|administrador global|[Acerca de los roles de administración de Microsoft 365](../../admin/add-users/about-admin-roles.md)|
 |Administrador de seguridad|[Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Administración de la organización en Exchange Online|[Permisos de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> y <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
@@ -86,9 +86,9 @@ Inicie el registro de auditoría de forma anticipada. Necesitarás que la audito
 
 [La protección antimalware](anti-malware-protection.md) está disponible en las suscripciones que incluyen [EOP.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
 
-1. En el [Centro de & cumplimiento,](https://protection.office.com)elija **Directiva de administración de** \> **amenazas** \> **antimalware.**
+1. En el [Centro de seguridad & cumplimiento,](https://protection.office.com)elija Directiva **antimalware de administración** de \>  \> **amenazas.**
 
-2. Haga doble clic en la **directiva** predeterminada y, a continuación, **elija configuración.**
+2. Haga doble clic en la **directiva** predeterminada y, a continuación, elija **configuración.**
 
 3. Especifique la siguiente configuración:
 
@@ -116,7 +116,7 @@ El siguiente procedimiento describe cómo configurar una directiva contra suplan
 
    - On the **Add domains to protect tab,** turn on **Automatically include the domains I own**. Si tiene dominios personalizados, agrégrélos ahora.
 
-   - En la **pestaña Acciones,** seleccione **Poner** en cuarentena el mensaje tanto para el usuario suplantado como para las opciones de **dominio suplantado.**  Además, activa las sugerencias de seguridad de suplantación.
+   - En la **pestaña Acciones,** seleccione Poner  en cuarentena **el** mensaje tanto para el usuario suplantado como para las opciones de **dominio suplantado.** Además, activa las sugerencias de seguridad de suplantación.
 
    - En la pestaña **Inteligencia de** buzones de correo, asegúrese de que la inteligencia de buzones esté activada y active la protección de suplantación basada en inteligencia de buzones. In the **If email is sent by an suersonated user** list, choose Quarantine the **message**.
 
@@ -152,11 +152,11 @@ Para obtener más información sobre las opciones de directiva contra suplantaci
 
 4. Haga clic en **Guardar**.
 
-Para obtener más información sobre las opciones de directiva contra correo no deseado, vea Configurar directivas contra correo no deseado [en EOP.](configure-your-spam-filter-policies.md)
+Para obtener más información sobre las opciones de directiva contra correo no deseado, consulte Configurar directivas contra correo no deseado [en EOP.](configure-your-spam-filter-policies.md)
 
 ## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Parte 4: Protección contra archivos y direcciones URL malintencionadas (vínculos seguros y datos adjuntos seguros en Defender para Office 365)
 
-La protección con el tiempo de clic contra archivos y direcciones URL malintencionadas está disponible en suscripciones que incluyen [Microsoft Defender para Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) Se configura mediante directivas de datos [adjuntos seguros](atp-safe-attachments.md) [y vínculos](atp-safe-links.md) seguros.
+La protección con el tiempo de clic contra archivos y direcciones URL malintencionadas está disponible en suscripciones que incluyen [Microsoft Defender para Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) Se configura a través de las directivas [de datos](atp-safe-attachments.md) adjuntos seguros [y vínculos](atp-safe-links.md) seguros.
 
 ### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Directivas de datos adjuntos seguros en Microsoft Defender para Office 365
 
@@ -170,7 +170,7 @@ Para configurar datos [adjuntos seguros,](atp-safe-attachments.md)cree al menos 
 
    - En la **página** Configuración, configure las siguientes opciones:
      - En la sección Datos adjuntos seguros de respuesta **de malware desconocido,** elija **Bloquear**.
-     - En la sección **Redirigir datos adjuntos,** seleccione la opción **Habilitar redireccionamiento.** Especifique la dirección de correo electrónico del operador o administrador de seguridad de su organización, que revisará los archivos detectados.
+     - En la sección **Redirigir datos adjuntos,** seleccione la opción **Habilitar redireccionamiento.** Especifique la dirección de correo electrónico del administrador u operador de seguridad de su organización, que revisará los archivos detectados.
 
      Haga clic en **Siguiente**.
 
@@ -180,7 +180,7 @@ Para configurar datos [adjuntos seguros,](atp-safe-attachments.md)cree al menos 
 
 ### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Directivas de vínculos seguros en Microsoft Defender para Office 365
 
-Para configurar [vínculos seguros,](atp-safe-links.md)revise y edite la configuración global de vínculos seguros y cree al menos una directiva de vínculos seguros.
+Para configurar [vínculos](atp-safe-links.md)seguros, revise y edite la configuración global de vínculos seguros y cree al menos una directiva de vínculos seguros.
 
 1. En el [Centro de & cumplimiento,](https://protection.office.com)elija Vínculos seguros de ATP de directiva de administración de amenazas, haga clic en Configuración global y, a  \>  \> continuación, configure las siguientes opciones: 
 
@@ -198,7 +198,7 @@ Para configurar [vínculos seguros,](atp-safe-links.md)revise y edite la configu
 
    - En la **página** Configuración, configure las siguientes opciones:
      - **Seleccione la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes:** **Elegir.**
-     - **Seleccione la acción para direcciones URL desconocidas o potencialmente malintencionadas dentro de Microsoft Teams:** **Elegir.**
+     - **Seleccione la acción para direcciones URL desconocidas o potencialmente malintencionadas en Microsoft Teams:** **Elegir.**
      - **Aplicar vínculos seguros a los mensajes de correo electrónico enviados dentro de la organización**
      - **Esperar a que se complete el examen de direcciones URL antes de entregar el mensaje**
      - **Aplicar vínculos seguros a los mensajes de correo electrónico enviados dentro de la organización**
@@ -231,13 +231,13 @@ Las cargas de trabajo como SharePoint, OneDrive y Teams se han creado para la co
    - `$false` bloquea todas las acciones excepto Eliminar y Descargar. Los usuarios pueden elegir aceptar el riesgo y descargar un archivo detectado.
 
    > [!TIP]
-   > Para obtener más información sobre cómo usar PowerShell con Microsoft 365, vea [Administrar Microsoft 365 con PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)
+   > Para obtener más información sobre cómo usar PowerShell con Microsoft 365, vea [Administrar Microsoft 365 con PowerShell.](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)
 
 5. Espere hasta 30 minutos para que los cambios se extienda a todos los centros de datos de Microsoft 365.
 
 ### <a name="now-set-up-alerts-for-detected-files"></a>Ahora configurar alertas para los archivos detectados
 
-Para recibir una notificación cuando un archivo en SharePoint Online, OneDrive para la Empresa o Microsoft Teams se haya identificado como malintencionado, puede configurar una alerta.
+Para recibir una notificación cuando un archivo de SharePoint Online, OneDrive para la Empresa o Microsoft Teams se haya identificado como malintencionado, puede configurar una alerta.
 
 1. En el [Centro de & cumplimiento,](https://protection.office.com)elija  \> **Alertas administrar alertas.**
 
@@ -249,7 +249,7 @@ Para recibir una notificación cuando un archivo en SharePoint Online, OneDrive 
 
 5. En la **sección Enviar esta alerta cuando...** establezca:
 
-   a. En la lista **Actividades,** elija **Malware detectado en el archivo.**
+   a. En la **lista Actividades,** elija **Malware detectado en el archivo.**
 
    b. Deje vacío **el campo** Usuarios.
 
@@ -291,5 +291,5 @@ Después de configurar las características de protección contra amenazas, aseg
 |---|---|
 |Ver cómo funcionan las características de protección contra amenazas para su organización mediante la visualización de informes|[Panel de seguridad](security-dashboard.md) <p> [Informes de seguridad de correo electrónico](view-email-security-reports.md) <p> [Informes de Microsoft Defender para Office 365](view-reports-for-atp.md) <p> [Explorador de amenazas](threat-explorer.md)|
 |Revisar y revisar periódicamente las directivas de protección contra amenazas según sea necesario|[Puntuación de seguridad](../mtp/microsoft-secure-score.md) <p> [Informes e información inteligentes](reports-and-insights-in-security-and-compliance.md) <p> [Características de investigación y respuesta de amenazas de Microsoft 365](keep-users-safe-with-office-365-ti.md)|
-|Buscar nuevas características y actualizaciones de servicio|[Opciones de versión estándar y dirigida](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365) <p> [Centro de mensajes](https://docs.microsoft.com/microsoft-365/admin/manage/message-center) <p> [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Descripciones de servicio](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
-|Obtenga información sobre las configuraciones de seguridad estándar y estrictas recomendadas para EOP y Defender para Office 365|[Configuración recomendada para EOP y Microsoft Defender para la seguridad de Office 365](recommended-settings-for-eop-and-office365-atp.md)|
+|Buscar nuevas características y actualizaciones de servicio|[Opciones de versión estándar y dirigida](../../admin/manage/release-options-in-office-365.md) <p> [Centro de mensajes](../../admin/manage/message-center.md) <p> [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [Descripciones de servicio](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
+|Obtenga más información sobre las configuraciones de seguridad estándar y estrictas recomendadas para EOP y Defender para Office 365|[Configuración recomendada para EOP y Microsoft Defender para la seguridad de Office 365](recommended-settings-for-eop-and-office365-atp.md)|

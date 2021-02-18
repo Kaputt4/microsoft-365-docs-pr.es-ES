@@ -20,24 +20,24 @@ ms.collection:
 description: Los administradores pueden obtener información sobre la característica Datos adjuntos seguros en Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d2d348856dbd51cabe2b320d315406076921fee
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: f0d7028f33e7a9259d12930631f259ae1cedc4fe
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261542"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287034"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Datos adjuntos seguros en Microsoft Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Datos adjuntos seguros en Microsoft Defender para [Office 365](office-365-atp.md) proporciona una capa adicional de protección para los datos adjuntos de correo electrónico que ya han sido analizados por la protección antimalware en [Exchange Online Protection (EOP).](anti-malware-protection.md) En concreto, Datos adjuntos seguros usa un entorno virtual para comprobar los datos adjuntos de los mensajes de correo electrónico antes de entregarse a los destinatarios (un proceso conocido como _detonación)._
 
-La protección de datos adjuntos seguros para los mensajes de correo electrónico se controla mediante directivas de datos adjuntos seguros. No hay ninguna directiva de datos adjuntos seguros predeterminada, por lo que para obtener la protección de datos adjuntos seguros, debe crear una o más directivas de datos **adjuntos seguros.** Para obtener instrucciones, [vea Configurar directivas de datos adjuntos seguros en Defender para Office 365.](set-up-atp-safe-attachments-policies.md)
+La protección de datos adjuntos seguros para los mensajes de correo electrónico se controla mediante directivas de datos adjuntos seguros. No hay ninguna directiva predeterminada de datos adjuntos seguros, por lo que para obtener la protección de datos adjuntos seguros, debe crear una o más directivas de datos **adjuntos seguros.** Para obtener instrucciones, [vea Configurar directivas de datos adjuntos seguros en Defender para Office 365.](set-up-atp-safe-attachments-policies.md)
 
 En la siguiente tabla se describen escenarios para datos adjuntos seguros en organizaciones de Microsoft 365 y Office 365 que incluyen Microsoft Defender para Office 365 (es decir, la falta de licencias nunca es un problema en los ejemplos).
 
@@ -46,7 +46,7 @@ En la siguiente tabla se describen escenarios para datos adjuntos seguros en org
 |Escenario|Resultado|
 |---|---|
 |La organización de Microsoft 365 E5 de Pat no tiene configuradas directivas de datos adjuntos seguros.|Pat no está protegido por datos adjuntos seguros. <p> Un administrador debe crear al menos una directiva de datos adjuntos seguros para que la protección de datos adjuntos seguros esté activa. Además, las condiciones de la directiva deben incluir Pat si Pat se va a proteger con datos adjuntos seguros.|
-|La organización de Lee tiene una directiva de datos adjuntos seguros que solo se aplica a los empleados de finanzas. Lee es miembro del departamento de ventas.|Lee no está protegido por datos adjuntos seguros. <p> Los empleados de finanzas están protegidos por datos adjuntos seguros, pero los empleados de ventas (y otros empleados) no lo están.|
+|La organización de Lee tiene una directiva de datos adjuntos seguros que se aplica solo a los empleados de finanzas. Lee es miembro del departamento de ventas.|Lee no está protegido por datos adjuntos seguros. <p> Los empleados de finanzas están protegidos por datos adjuntos seguros, pero los empleados de ventas (y otros empleados) no lo están.|
 |Ayer, un administrador de la organización de Juan creó una directiva de datos adjuntos seguros que se aplica a todos los empleados. Hoy mismo, Juan recibió un mensaje de correo electrónico que incluía datos adjuntos.|Juan está protegido por datos adjuntos seguros. <p> Normalmente, una nueva directiva tarda unos 30 minutos en tener efecto.|
 |La organización de Chris tiene directivas de datos adjuntos seguros de larga duración para todos los usuarios de la organización. Chris recibe un correo electrónico que tiene datos adjuntos y, a continuación, reenvía el mensaje a destinatarios externos.|Chis está protegido por datos adjuntos seguros. <p> Si los destinatarios externos también tienen directivas de datos adjuntos seguros en su organización, los mensajes reenviados están sujetos a dichas directivas.|
 |
@@ -70,7 +70,7 @@ En esta sección se describe la configuración de las directivas de datos adjunt
 
   |Opción|Efecto|Úselo cuando desee:|
   |---|---|---|
-  |**Desactivado**|Datos adjuntos seguros no examina los datos adjuntos en busca de malware. Los mensajes aún se examinan en busca de malware [mediante la protección antimalware en EOP.](anti-malware-protection.md)|Desactive el examen de los destinatarios seleccionados. <p> Evite retrasos innecesarios en el enrutamiento del correo interno. <p> **Esta opción no se recomienda para la mayoría de los usuarios. Solo debe usar esta opción para desactivar el examen de datos adjuntos seguros para los destinatarios que solo reciben mensajes de remitentes de confianza.**|
+  |**Desactivado**|Datos adjuntos seguros no examina los datos adjuntos en busca de malware. Los mensajes aún se examinan en busca de malware mediante la [protección antimalware en EOP.](anti-malware-protection.md)|Desactive el examen de los destinatarios seleccionados. <p> Evite retrasos innecesarios en el enrutamiento del correo interno. <p> **Esta opción no se recomienda para la mayoría de los usuarios. Solo debe usar esta opción para desactivar el examen de datos adjuntos seguros para los destinatarios que solo reciben mensajes de remitentes de confianza.**|
   |**Monitor**|Entrega mensajes con datos adjuntos y, a continuación, realiza un seguimiento de lo que sucede con el malware detectado. <p> Es posible que la entrega de mensajes seguros se retrase debido al examen de datos adjuntos seguros.|Ver dónde va el malware detectado en la organización.|
   |**Bloquear**|Impide que se entreguen los mensajes con datos adjuntos de malware detectados. <p> Los mensajes [se ponen en cuarentena](manage-quarantined-messages-and-files.md) donde solo los administradores (no los usuarios finales) pueden revisar, liberar o eliminar los mensajes. <p> Bloquea automáticamente las instancias futuras de los mensajes y datos adjuntos. <p> Es posible que la entrega de mensajes seguros se retrase debido al examen de datos adjuntos seguros.|Protege su organización de ataques repetidos con los mismos datos adjuntos de malware. <p> Este es el valor predeterminado y el valor recomendado en las directivas de seguridad preestablecidas Estándar y [Estricto.](preset-security-policies.md)|
   |**Replace**|Quita los datos adjuntos de malware detectados. <p> Notifica a los destinatarios que se han quitado los datos adjuntos. <p>  Los mensajes [se ponen en cuarentena](manage-quarantined-messages-and-files.md) donde solo los administradores (no los usuarios finales) pueden revisar, liberar o eliminar los mensajes. <p> Es posible que la entrega de mensajes seguros se retrase debido al examen de datos adjuntos seguros.|Aumentar la visibilidad a los destinatarios de que se quitaron los datos adjuntos debido al malware detectado.|
@@ -118,7 +118,7 @@ Hay escenarios en los que la entrega dinámica no puede reemplazar los datos adj
 
 - Mensajes en carpetas públicas.
 
-- Mensajes que se enruten fuera y, a continuación, de nuevo en el buzón de un usuario mediante reglas personalizadas.
+- Mensajes que se enruta fuera y, a continuación, de nuevo en el buzón de un usuario mediante reglas personalizadas.
 
 - Mensajes que se mueven (de forma automática o manual) fuera de los buzones de la nube a otras ubicaciones, incluidas las carpetas de archivo.
 

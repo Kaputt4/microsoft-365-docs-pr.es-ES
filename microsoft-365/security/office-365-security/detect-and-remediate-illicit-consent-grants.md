@@ -18,26 +18,26 @@ description: Obtenga información sobre cómo reconocer y corregir el ataque de 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1c724bb3b201e0ddf1edea4794606c7083605e8
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2a50ce58d91d2ff7b2e31e57830289c870364d9b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165444"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288292"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Detectar y corregir las concesiones ilegales de consentimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-**Resumen**  Obtenga información sobre cómo reconocer y corregir el ataque de concesión de consentimiento ilícito en Office 365.
+**Resumen**  Obtenga información sobre cómo reconocer y corregir el ataque de concesión ilegal de consentimiento en Office 365.
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>¿Cuál es el ataque ilícito de concesión de consentimiento en Office 365?
 
-En un ataque de concesión de consentimiento ilegal, el atacante crea una aplicación registrada en Azure que solicita acceso a datos como información de contacto, correo electrónico o documentos. A continuación, el atacante trucosa al usuario final para conceder a esa aplicación el consentimiento para acceder a sus datos a través de un ataque de suplantación de identidad o mediante la inyección de código ilícito en un sitio web de confianza. Después de conceder el consentimiento a la aplicación ilegal, tiene acceso a los datos en el nivel de cuenta sin necesidad de una cuenta organizativa. Los pasos de corrección normales, como el restablecimiento de contraseñas para cuentas vulneradas o la necesidad de autenticación multifactor (MFA) en las cuentas, no son efectivos contra este tipo de ataque, ya que se trata de aplicaciones de terceros y son externas a la organización.
+En un ataque de concesión de consentimiento ilegal, el atacante crea una aplicación registrada en Azure que solicita acceso a datos como información de contacto, correo electrónico o documentos. A continuación, el atacante hace un trucos al usuario final para conceder a esa aplicación el consentimiento para acceder a sus datos a través de un ataque de suplantación de identidad (phishing) o mediante la inyección de código ilícito en un sitio web de confianza. Después de conceder el consentimiento a la aplicación ilegal, tiene acceso a los datos en el nivel de cuenta sin necesidad de una cuenta organizativa. Los pasos de corrección normales, como el restablecimiento de contraseñas para cuentas vulneradas o la necesidad de autenticación multifactor (MFA) en las cuentas, no son efectivos contra este tipo de ataque, ya que se trata de aplicaciones de terceros y son externas a la organización.
 
 Estos ataques aprovechan un modelo de interacción que supone que la entidad que llama a la información es la automatización y no una persona.
 
@@ -52,7 +52,7 @@ Debe buscar en el registro **de auditoría** signos, también denominados Indica
 
 1. Abra el **Centro de & cumplimiento en** <https://protection.office.com> .
 
-2. Vaya a **Buscar y** seleccione Búsqueda del registro **de auditoría.**
+2. Vaya a **Búsqueda y** seleccione Búsqueda del registro **de auditoría.**
 
 3. Busque (todas las actividades y todos los usuarios) y escriba la fecha de inicio y la fecha de finalización si es necesario y, a continuación, haga clic en **Buscar.**
 
@@ -143,12 +143,12 @@ El script genera un archivo denominado Permissions.csv. Siga estos pasos para bu
 
 ## <a name="determine-the-scope-of-the-attack"></a>Determinar el ámbito del ataque
 
-Cuando haya terminado de realizar un inventario del acceso a la aplicación, revise el registro de **auditoría** para determinar el ámbito completo de la infracción. Buscar en los usuarios afectados, los plazos de tiempo a los que la aplicación ilegal tuvo acceso a la organización y los permisos que tenía la aplicación. Puede buscar el registro **de auditoría en** el Centro de seguridad y cumplimiento de Microsoft [365.](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+Cuando haya terminado de realizar un inventario del acceso a la aplicación, revise el registro de **auditoría** para determinar el ámbito completo de la infracción. Buscar en los usuarios afectados, los plazos de tiempo a los que la aplicación ilegal tuvo acceso a la organización y los permisos que tenía la aplicación. Puede buscar el registro **de auditoría en** el Centro de seguridad y cumplimiento de Microsoft [365.](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 > [!IMPORTANT]
-> [La auditoría de buzones](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) de correo y la auditoría de actividad para administradores y usuarios deben estar [habilitadas](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) antes del ataque para que pueda obtener esta información.
+> [La auditoría de buzones](../../compliance/enable-mailbox-auditing.md) de correo y la auditoría de actividad para administradores y usuarios deben estar [habilitadas](../../compliance/turn-audit-log-search-on-or-off.md) antes del ataque para poder obtener esta información.
 
-## <a name="how-to-stop-and-remediate-an-illicit-consent-grant-attack"></a>Cómo detener y corregir un ataque ilegal de concesión de consentimiento
+## <a name="how-to-stop-and-remediate-an-illicit-consent-grant-attack"></a>Cómo detener y corregir un ataque ilícito de concesión de consentimiento
 
 Después de identificar una aplicación con permisos ilícitos, tiene varias formas de quitar ese acceso.
 
@@ -166,9 +166,9 @@ Después de identificar una aplicación con permisos ilícitos, tiene varias for
 
 - Puede revocar la asignación de roles de aplicación de servicio con PowerShell siguiendo los pasos descritos en [Remove-AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment).
 
-- También puedes deshabilitar el inicio de sesión de la cuenta afectada por completo, lo que a su vez deshabilitará el acceso de la aplicación a los datos de esa cuenta. Esto no es ideal para la productividad del usuario final, por supuesto, pero si está trabajando para limitar el impacto rápidamente, puede ser una corrección viable a corto plazo.
+- También puedes deshabilitar el inicio de sesión para la cuenta afectada por completo, lo que a su vez deshabilitará el acceso de la aplicación a los datos de esa cuenta. Esto no es ideal para la productividad del usuario final, por supuesto, pero si está trabajando para limitar el impacto rápidamente, puede ser una corrección viable a corto plazo.
 
-- Puede desactivar las aplicaciones integradas para su arrendamiento. Este es un paso drástico que deshabilita la capacidad de los usuarios finales para conceder consentimiento en todo el espacio empresarial. Esto impide que los usuarios concedan acceso a una aplicación malintencionada de forma involuntaria. Esto no es muy recomendable, ya que afecta gravemente a la capacidad de los usuarios de ser productivos con aplicaciones de terceros. Para ello, siga los pasos descritos en Activar o desactivar aplicaciones [integradas.](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps)
+- Puede desactivar las aplicaciones integradas para su arrendamiento. Este es un paso drástico que deshabilita la capacidad de los usuarios finales para conceder consentimiento en todo el espacio empresarial. Esto impide que los usuarios concedan acceso a una aplicación malintencionada de forma involuntaria. Esto no es muy recomendable, ya que afecta gravemente a la capacidad de los usuarios de ser productivos con aplicaciones de terceros. Para ello, siga los pasos descritos en Activar o desactivar aplicaciones [integradas.](../../admin/misc/user-consent.md)
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteger Microsoft 365 como un profesional de la ciberseguridad
 

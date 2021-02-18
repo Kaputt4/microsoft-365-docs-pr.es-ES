@@ -21,30 +21,30 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3544f1ccb760c461b7ab72c6dc037fd653136db9
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 5934abb3afec3253da78c680735730b63ddb5701
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988165"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287358"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-**Se aplica a:**
-
-- [Microsoft Defender para Office 365](office-365-atp.md)
+**Se aplica a**
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 En este artículo se enumeran las nuevas características de la versión más reciente de Microsoft Defender para Office 365. Las características que están actualmente en versión preliminar se indican con **(versión preliminar).**
 
 > [!TIP]
-> ¿Aún no tiene Microsoft Defender para Office 365? [Póngase en contacto con ventas para iniciar una versión de prueba.](https://go.microsoft.com/fwlink/p/?LinkId=518644)
+> ¿Aún no tiene Microsoft Defender para Office 365? [Póngase en contacto con ventas para iniciar una versión de prueba.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
 ## <a name="december-2020"></a>Diciembre de 2020
 
 - [Proteger de forma predeterminada en Office 365](secure-by-default.md)
+- Mejoras en la investigación automatizada para: alertas generales para investigaciones de correo electrónico desencadenadas manualmente, tratar los cambios de buzones como una categoría de entidad independiente, quitar acciones redundantes de bloqueo de direcciones URL y crear clústeres de correo electrónico saliente para investigaciones de usuario comprometidas.
 
 ## <a name="november-2020"></a>Noviembre de 2020
 
@@ -53,7 +53,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 ## <a name="septemberoctober-2020"></a>Septiembre/octubre de 2020
 
 - [Comprobar las directivas con el Analizador de configuración](configuration-analyzer-for-security-policies.md)
-- Capacidades [extendidas](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) en el Explorador de amenazas, incluidos los principales usuarios de destino, las reglas de transporte y los conectores (información de Defender para Office 365 en el Explorador de amenazas [(el](threat-explorer.md) correo electrónico se permitió o bloqueó por la directiva de inquilino/usuario) (Defender para Office 365 Plan 2)
+- Capacidades [extendidas](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) en el Explorador de amenazas, incluidos los principales usuarios objetivo, las reglas de transporte y los conectores (información de Defender para Office 365 en el Explorador de amenazas [(el](threat-explorer.md) correo electrónico fue permitido/bloqueado por la directiva de inquilino o usuario) (Defender para Office 365 Plan 2)
 - Amenazas de url en el Explorador [de](threat-explorer.md#threats-in-urls) amenazas (malware, phishing, correo no deseado o ninguno) (Defender para Office 365 Plan 2)
 - [Mejoras en el Explorador de amenazas de](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) la experiencia de búsqueda con actualizaciones sobre amenazas, acciones adicionales, ubicaciones de entrega y vista de escala de tiempo actualizada (Defender para Office 365 Plan 2)
 
@@ -69,7 +69,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 ## <a name="januaryfebruary-2020"></a>Enero/febrero de 2020
 
 - [Disponibilidad general de vistas de campaña en Microsoft Defender para Office 365](campaigns.md) (Microsoft Defender para Office 365 Plan 2)
-- Mejoras en el [Explorador de](threat-explorer.md) amenazas para permitir que los equipos de operaciones de seguridad busquen y filtren en varios campos mientras investigan el correo [electrónico](investigate-malicious-email-that-was-delivered.md): (Microsoft Defender para Office 365 Plan 2)
+- Mejoras en el [Explorador de](threat-explorer.md) amenazas para permitir que los equipos de operaciones de seguridad busquen y filtren en varios campos mientras investigan el correo [electrónico:](investigate-malicious-email-that-was-delivered.md)(Microsoft Defender para Office 365 Plan 2)
   - Ubicación de entrega y acciones especiales
   - Direccionalidad (entrante, saliente o dentro de la organización)
   - Filtros NOT avanzados (son opciones avanzadas de filtrado que incluyen que no contienen, no incluyen, etc.)
@@ -87,7 +87,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 ## <a name="november-2019"></a>Noviembre de 2019
 
-- [Consulte las nuevas capacidades de detección](address-compromised-users-quickly.md) y respuesta de usuarios **comprometidas**(versión preliminar) (Microsoft Defender para Office 365 Plan 2)
+- [Consulte las nuevas capacidades de detección](address-compromised-users-quickly.md) y respuesta de usuarios comprometidas **(versión** preliminar) (Microsoft Defender para Office 365 Plan 2)
 
 ## <a name="september-2019"></a>Septiembre de 2019
 
@@ -107,13 +107,13 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 ## <a name="june-2019"></a>Junio de 2019
 
-- [Ver direcciones URL de suplantación](threat-explorer.md#view-phishing-url-and-click-verdict-data) de identidad (phishing) y hacer clic en datos de veredicto (Microsoft Defender para Office 365 Plan 1 o Plan 2)
+- [Ver las direcciones URL de suplantación](threat-explorer.md#view-phishing-url-and-click-verdict-data) de identidad y los datos del veredicto de clic (Microsoft Defender para Office 365 Plan 1 o Plan 2)
 
 ## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Plan 1 y Plan 2 de Microsoft Defender para Office 365
 
 ¿Sabe que Microsoft Defender para Office 365 está disponible en dos planes? [Obtenga más información sobre lo que incluye cada plan.](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Guía básica de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 

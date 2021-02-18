@@ -15,21 +15,21 @@ ms.collection:
 description: Obtenga información sobre cómo instalar y usar el complemento de notificación de correo no deseado de Microsoft para notificar mensajes de correo no deseado, correo no deseado y suplantación de identidad a Microsoft.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 171bdc43e565a0890cddcd1e48208b49774a5315
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e22a1364e8d7a1447bbcf518cc339a681c57a8af
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167352"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286626"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Instalar y usar el complemento de notificación de correo no deseado para Microsoft Outlook
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
 > Si actualmente no usa el complemento de informes de correo electrónico [](enable-the-report-message-add-in.md) no deseado, le recomendamos que use el complemento Informar de mensajes o el complemento Detección de suplantación de identidad de [informes.](enable-the-report-phish-add-in.md) Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
@@ -51,7 +51,7 @@ En este tema se explica cómo instalar y usar el complemento de notificación de
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a>Usar el complemento de notificación de correo no deseado para notificar mensajes de correo no deseado y de suplantación de identidad
 
-1. Para los mensajes de la Bandeja de entrada o cualquier otra carpeta de correo electrónico excepto correo no deseado, use cualquiera de los siguientes métodos para informar de mensajes de correo no deseado y de suplantación de identidad:
+1. Para los mensajes de la Bandeja de entrada o cualquier otra carpeta de correo electrónico excepto correo no deseado, use cualquiera de los siguientes métodos para notificar mensajes de correo no deseado y de suplantación de identidad:
 
    - Seleccione el mensaje o ábralo. En la pestaña **Inicio** **o** Mensaje de la  cinta de opciones, haga clic en Correo no deseado y, a continuación, seleccione Informar como correo no deseado o Informar **como suplantación de identidad**.
 
@@ -61,15 +61,15 @@ En este tema se explica cómo instalar y usar el complemento de notificación de
 
      ![Informar de correo no deseado o de suplantación de identidad (phishing) al hacer clic con el botón secundario](../../media/junk-email-reporting-right-click.png)
 
-   - Seleccione varios mensajes, haga clic con el botón secundario y, a continuación, seleccione Informar como correo no deseado **o** Informar **como suplantación de identidad**.
+   - Seleccione varios mensajes, haga clic  con el botón secundario y, a continuación, seleccione Informar como correo no deseado o **Informar como suplantación de identidad**.
 
-     ![Informar de varios mensajes de correo no deseado o de suplantación de identidad (phishing) a partir de un clic con el botón secundario](../../media/junk-email-reporting-right-click-multiple.png)
+     ![Informar de varios mensajes de correo no deseado o de suplantación de identidad (phishing) al hacer clic con el botón secundario](../../media/junk-email-reporting-right-click-multiple.png)
 
 2. En el cuadro de diálogo que aparece, lea la información y haga clic en **Informe.** Si cambia de opinión, haga clic **en No informar.**
 
    ![Cuadro de diálogo Informar como correo no deseado](../../media/junk-email-reporting-report-as-junk-dialog.png)
 
-   ![Cuadro de diálogo Informar como suplantación de identidad](../../media/junk-email-reporting-report-as-phishing-dialog.png)
+   ![Cuadro de diálogo Informar como suplantación de identidad (phishing)](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
 3. Los mensajes seleccionados se enviarán a Microsoft para su análisis y:
 
@@ -92,13 +92,13 @@ En este tema se explica cómo instalar y usar el complemento de notificación de
 
    - Seleccione varios mensajes, haga clic  con el botón secundario y, a continuación, seleccione Informar como correo no deseado o **Informar como suplantación de identidad**.
 
-     ![Informar de varios mensajes de correo no deseado o de suplantación de identidad (phishing) al hacer clic con el botón secundario en la carpeta Correo no deseado](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
+     ![Informar de varios mensajes de correo electrónico no deseado o de suplantación de identidad (phishing) al hacer clic con el botón secundario en la carpeta Correo no deseado](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
 2. En el cuadro de diálogo que aparece, lea la información y haga clic en **Informe.** Si cambia de opinión, haga clic **en No informar.**
 
    ![Cuadro de diálogo Informar como correo no deseado](../../media/junk-email-reporting-report-as-not-junk-dialog.png)
 
-   ![Cuadro de diálogo Informar como suplantación de identidad](../../media/junk-email-reporting-report-as-phishing-dialog.png)
+   ![Cuadro de diálogo Informar como suplantación de identidad (phishing)](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
 3. Los mensajes seleccionados se enviarán a Microsoft para su análisis y:
 
@@ -173,7 +173,7 @@ Elija la flecha abajo que aparece junto a **Correo no deseado** para ver más op
    msiexec /qn /i "C:\Downloads\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi" MaxMessageSelection=20 BccEmailAddress="junkreports@contoso.com; hollyd@treyresearch.net"
    ```
 
-### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Para comprobar que ha instalado correctamente el complemento de notificación de correo no deseado, siga uno de los pasos siguientes en Outlook:
 
@@ -200,7 +200,7 @@ Para comprobar que ha instalado correctamente el complemento de notificación de
   - **Informar como correo no deseado**
   - **Informar como suplantación de identidad**
 
-  ![Informar de varios mensajes de correo no deseado o de suplantación de identidad (phishing) a partir de un clic con el botón secundario](../../media/junk-email-reporting-right-click-multiple.png)
+  ![Informar de varios mensajes de correo no deseado o de suplantación de identidad (phishing) al hacer clic con el botón secundario](../../media/junk-email-reporting-right-click-multiple.png)
 
 - Realice las acciones anteriores en la carpeta  **Correo** no deseado y compruebe que las opciones anteriores de notificación de correo no deseado sean ahora Correo no **deseado.**
 
@@ -208,13 +208,13 @@ Para comprobar que ha instalado correctamente el complemento de notificación de
 
   ![Informar de correo no deseado o de suplantación de identidad (phishing) al hacer clic con el botón secundario en la carpeta Correo no deseado](../../media/junk-email-reporting-junk-folder-right-click.png)
 
-  ![Informar de varios mensajes de correo no deseado o de suplantación de identidad (phishing) al hacer clic con el botón secundario en la carpeta Correo no deseado](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
+  ![Informar de varios mensajes de correo electrónico no deseado o de suplantación de identidad (phishing) al hacer clic con el botón secundario en la carpeta Correo no deseado](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
 ## <a name="uninstall-the-junk-email-reporting-add-in"></a>Desinstalar el complemento de notificación de correo no deseado
 
 Después de cerrar Outlook, use cualquiera de los procedimientos siguientes para desinstalar el complemento de notificación de correo no deseado:
 
-- **Panel de** control: presione la tecla Windows + R. En el **cuadro de** diálogo Ejecutar que se abre, escriba `control appwiz.cpl` y, a continuación, haga clic en **Aceptar.**
+- **Panel de control:** presione la tecla Windows + R. En el **cuadro de** diálogo Ejecutar que se abre, escriba `control appwiz.cpl` y, a continuación, haga clic en **Aceptar.**
 
   Busque y seleccione **complemento de notificación** de correo no deseado de Microsoft en la lista y, a continuación, haga clic en **Desinstalar**.
 
@@ -260,7 +260,7 @@ Para solucionar este problema, siga estos pasos:
 2. Cree y envíe un mensaje de prueba y compruebe que el destinatario recibió el mensaje.
 3. Si el problema persiste, póngase en contacto con el administrador.
 
-Para obtener otros métodos que puede usar para enviar mensajes a Microsoft, vea Notificar mensajes [y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
+Para otros métodos que puede usar para enviar mensajes a Microsoft, vea Notificar mensajes [y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ### <a name="troubleshooting-for-admins"></a>Solución de problemas para administradores
 
@@ -303,7 +303,7 @@ Para obtener otros métodos que puede usar para enviar mensajes a Microsoft, vea
 
 4. Póngase en contacto con el soporte técnico de Protección en línea de Exchange y proporcione la información de registro.
 
-#### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>Problema: los usuarios seleccionados para no recibir un mensaje de confirmación cuando informan de mensajes y ahora desean que se vuelva a enviar el mensaje.
+#### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>Problema: los usuarios seleccionados para no recibir un mensaje de confirmación cuando informan de los mensajes y ahora desean que se vuelva a enviar la solicitud.
 
 1. Cree la `ConfirmReportJunk` clave del Registro con el valor "True":
 

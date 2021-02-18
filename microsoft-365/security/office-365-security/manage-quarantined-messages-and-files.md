@@ -19,21 +19,21 @@ ms.custom:
 description: Los administradores pueden aprender a ver y administrar mensajes en cuarentena para todos los usuarios en Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a91f53f8efe4fa6944f0debff472da87b7f17e0c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 22bcf0cefb746e92ccadf8254f4076b47ee475c4
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167496"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287790"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 En las organizaciones de Microsoft 365 que tienen buzones de Exchange Online o en las organizaciones con Exchange Online Protection (EOP) independientes sin buzones de Exchange Online, la cuarentena retiene los mensajes que pueden ser peligrosos o no deseados. Para obtener más información, vea [Mensajes de correo electrónico en cuarentena en EOP.](quarantine-email-messages.md)
 
@@ -57,7 +57,7 @@ Puede ver y administrar los mensajes en cuarentena en el Centro de seguridad y c
 
   **Notas**:
 
-  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
   - <sup>\*</sup> Los miembros del grupo **de** roles Administrador de cuarentena también deben ser miembros del grupo de roles **Administración** de higiene en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) para poder realizar procedimientos de cuarentena en Exchange Online PowerShell.
 
@@ -106,7 +106,7 @@ Puede ver y administrar los mensajes en cuarentena en el Centro de seguridad y c
    - **Motivo de la cuarentena**:
      - **Directiva:** el mensaje coincidía con las condiciones de una regla de flujo de correo (también conocida como regla de transporte).
      - **Correo masivo**
-     - **Phish:** el veredicto del filtro de correo no deseado [](set-up-anti-phishing-policies.md#spoof-settings) era correo electrónico de suplantación de identidad **(phishing)** o protección contra suplantación de identidad (protección contra suplantación [de](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)identidad).
+     - **Suplantación** de identidad : el veredicto del filtro de correo no deseado era correo electrónico de suplantación de identidad o protección contra suplantación de identidad **(phishing)** pone en cuarentena el mensaje [(configuración](set-up-anti-phishing-policies.md#spoof-settings) de suplantación de identidad o protección [contra suplantación).](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
      - **Malware**
      - **Correo no deseado**
      - **Suplantación de identidad de confianza alta**
@@ -170,7 +170,7 @@ Cuando selecciona un mensaje de correo electrónico de la lista, aparecen los de
 
 Después de seleccionar un mensaje, tiene varias opciones para  saber qué hacer con los mensajes en el panel desplegable Detalles:
 
-- **Mensaje de versión:** en el panel desplegable que aparece, elija las siguientes opciones:
+- **Mensaje de** versión: en el panel desplegable que aparece, elija las siguientes opciones:
 
   - **Notificar mensajes a Microsoft para su** análisis: esta opción está seleccionada de forma predeterminada e informa de que el mensaje en cuarentena erróneamente a Microsoft es un falso positivo. Si el mensaje se ha puesto en cuarentena como correo no deseado, masivo, suplantación de identidad (phishing) o que contiene malware, el mensaje también se notifica al equipo de análisis de correo no deseado de Microsoft. Según su análisis, las reglas de filtro de correo no deseado de todo el servicio podrían ajustarse para permitir que pase el mensaje.
 
@@ -199,7 +199,7 @@ Después de seleccionar un mensaje, tiene varias opciones para  saber qué hacer
 
 - **Enviar mensaje:** en el panel desplegable que aparece, elija las siguientes opciones:
 
-  - **Tipo de objeto**: **Correo** electrónico (predeterminado), **DIRECCIÓN URL** o **Datos adjuntos.**
+  - **Tipo de objeto**: **Correo** electrónico (predeterminado), **dirección URL** o **datos adjuntos.**
 
   - **Formato de** envío: **Id.** de mensaje de  red (predeterminado, con el valor correspondiente en el cuadro Id. de mensaje de red) o **Archivo** (vaya a un archivo .eml o .msg local). Tenga en cuenta que si selecciona **Archivo** y, a continuación, selecciona **Id.** de mensaje de red, el valor inicial se ha perdido.
 
@@ -218,7 +218,7 @@ Al seleccionar varios mensajes en cuarentena de la lista (hasta 100), se mostrar
 - **Liberar mensajes**: Las opciones son las mismas que cuando libera un único mensaje, salvo que no puede seleccionar **Liberar mensajes para destinatarios específicos**; solo puede seleccionar **Liberar mensaje para todos los destinatarios** o **Liberar mensajes para otras personas**.
 
   > [!NOTE]
-  > Tenga en cuenta el siguiente escenario: john@gmail.com un mensaje a faith@contoso.com y john@subsidiary.contoso.com. Gmail bifurca este mensaje en dos copias que se enruta a cuarentena como suplantación de identidad en Microsoft. Un administrador libera estos dos mensajes para admin@contoso.com. Se entrega el primer mensaje publicado que llega al buzón de administrador. El segundo mensaje publicado se identifica como entrega duplicada y se omite. Los mensajes se identifican como duplicados si tienen el mismo identificador de mensaje y la misma hora de recibido.
+  > Tenga en cuenta el siguiente escenario: john@gmail.com envía un mensaje a faith@contoso.com y john@subsidiary.contoso.com. Gmail bifurca este mensaje en dos copias que se enruta a cuarentena como suplantación de identidad en Microsoft. Un administrador libera estos dos mensajes para admin@contoso.com. Se entrega el primer mensaje publicado que llega al buzón de administrador. El segundo mensaje publicado se identifica como entrega duplicada y se omite. Los mensajes se identifican como duplicados si tienen el mismo identificador de mensaje y la misma hora de recibido.
 
 - **Eliminar mensajes:** después de hacer clic en **Sí** en la advertencia que aparece, los mensajes se eliminan inmediatamente sin que se envíen a los destinatarios originales.
 
@@ -284,7 +284,7 @@ Al seleccionar un archivo en la lista, los siguientes detalles del archivo apare
 
 Al seleccionar un archivo en la lista, puede realizar las siguientes acciones en el archivo en el **panel** desplegable Detalles:
 
-- **Archivos de versión:** seleccione (predeterminado) o anule la selección de archivos de informe a **Microsoft** para su análisis y, a continuación, haga clic **en Liberar archivos**.
+- **Release files**: Select (default) or unselect **Report files to Microsoft for analysis**, and then click Release **files**.
 - **Descargar archivo**
 - **Quitar archivo de cuarentena**
 

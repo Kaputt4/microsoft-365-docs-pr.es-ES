@@ -20,21 +20,21 @@ search.appverid:
 description: Aprenda a reconocer y responder a una cuenta de correo electrónico comprometida utilizando las herramientas disponibles en Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a34780b260a6e4bbc2d8b3f53af6b67de04fbdcd
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1bbd607386b49b45ebd7444c4a91d05e4cee475b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166668"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288614"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Responder a una cuenta de correo electrónico en peligro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 **Resumen** Aprenda a reconocer y responder a una cuenta de correo electrónico en peligro en Microsoft 365.
 
@@ -90,7 +90,7 @@ Debe realizar todos los pasos siguientes para volver a tener acceso a su cuenta 
 
 ### <a name="step-1-reset-the-users-password"></a>Paso 1 Restablecer la contraseña del usuario
 
-Siga los procedimientos que se describen en [Restablecer una contraseña de empresa para un usuario](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password).
+Siga los procedimientos que se describen en [Restablecer una contraseña de empresa para un usuario](../../admin/add-users/reset-passwords.md#reset-my-admin-password).
 
 > [!IMPORTANT]
 >
@@ -104,7 +104,7 @@ Siga los procedimientos que se describen en [Restablecer una contraseña de empr
 >
 > - Asegúrese de actualizar las contraseñas de aplicación. Las contraseñas de aplicación no se revocan automáticamente cuando se restablece la contraseña de una cuenta de usuario. El usuario debe eliminar las contraseñas de aplicación existentes y crear otras nuevas. Para obtener instrucciones, consulte [Crear y eliminar contraseñas de aplicación de la página de Comprobación de seguridad adicional](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
 >
-> - Se recomienda que habilite la autenticación multifactor (MFA) para evitar los robos de cuenta, especialmente para las cuentas con privilegios de administrador. Para obtener más información sobre MFA, vaya a [Configurar la autenticación multifactor](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> - Se recomienda que habilite la autenticación multifactor (MFA) para evitar los robos de cuenta, especialmente para las cuentas con privilegios de administrador. Para obtener más información sobre MFA, vaya a [Configurar la autenticación multifactor](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Paso 2 Eliminar direcciones de reenvío de correo electrónico sospechosas
 
