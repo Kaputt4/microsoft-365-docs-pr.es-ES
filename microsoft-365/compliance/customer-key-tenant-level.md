@@ -3,7 +3,7 @@ title: Clave de cliente para Microsoft 365 en el nivel de espacio empresarial (v
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/17/2020
+ms.date: 2/17/2021
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente para todos los datos de su inquilino de Microsoft 365.
-ms.openlocfilehash: 682eed7eb2e80535af1acf68808c708e1a25d80f
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 60704f77e17222de790cb397653a2275144d770e
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242380"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288151"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Introducción a la clave de cliente de Microsoft 365 en el nivel de inquilino (versión preliminar pública)
 
@@ -34,7 +34,7 @@ Con las claves que proporcione, puede crear una directiva de cifrado de datos (D
 - Mensajes de estado de Teams
 - Información de usuario y señal para Exchange Online
 
-Para Microsoft Teams, la clave de cliente en el nivel de inquilino cifra los nuevos datos desde el momento en que se asigna el DEP al inquilino. La versión preliminar pública no admite el cifrado de datos anteriores. Para Exchange Online, la clave de cliente cifra todos los datos nuevos y existentes.
+Para Microsoft Teams, la clave de cliente en el nivel de inquilino cifra nuevos datos desde el momento en que se asigna el DEP al inquilino. La versión preliminar pública no admite el cifrado de datos anteriores. Para Exchange Online, la clave de cliente cifra todos los datos nuevos y existentes.
 
 Puede crear varios DEP por inquilino, pero solo puede asignar un DEP en cualquier momento. Cuando asigna el DEP, el cifrado comienza automáticamente, pero puede tardar algún tiempo en completarse según el tamaño de su espacio empresarial.
 
@@ -52,20 +52,20 @@ Para Exchange Online, puede crear un DEP que cifre uno o más buzones de usuario
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>Configurar la clave de cliente en el nivel de inquilino (versión preliminar pública)
 
-Estos pasos son similares pero no idénticos a los pasos para configurar la clave de cliente en el nivel de aplicación. Solo debe usar esta versión preliminar pública con datos de prueba en espacios empresariales de prueba. No use esta versión con datos de producción o en su entorno de producción. Si ya tiene una implementación de producción de clave de cliente, siga estos pasos para configurar la clave de cliente en el nivel de inquilino en un entorno de prueba.
+Estos pasos son similares, pero no idénticos, a los pasos para configurar la clave de cliente en el nivel de aplicación. Solo debe usar esta versión preliminar pública con datos de prueba en espacios empresariales de prueba. No use esta versión con datos de producción o en su entorno de producción. Si ya tiene una implementación de producción de clave de cliente, siga estos pasos para configurar la clave de cliente en el nivel de inquilino en un entorno de prueba.
 
 You'll complete most of these tasks by remotely connecting to Azure PowerShell. Para obtener mejores resultados, use la versión 4.4.0 o posterior de Azure PowerShell.
 
 Antes de empezar, asegúrese de lo siguiente:
 
 - Deberá usar una cuenta profesional o educativa que tenga el rol de administrador de cumplimiento para configurar la clave de cliente en el nivel de inquilino.
-- Asegúrese de que tiene las licencias adecuadas para su organización. Usa una suscripción de Azure facturada y de pago con un Contrato Enterprise o un proveedor de servicios en la nube. Las suscripciones de Azure adquiridas con planes de Pago a medida que vaya o con una tarjeta de crédito no se admiten para la clave de cliente. A partir del 1 de abril de 2020, la clave de cliente en Office 365 se ofrece en Office 365 E5, M365 E5, cumplimiento de M365 E5 y M365 E5 Information Protection & GOVERNANCE SKU. Sku de cumplimiento avanzado de Office 365 ya no está disponible para adquirir nuevas licencias. Las licencias de Cumplimiento avanzado de Office 365 existentes seguirán siendo compatibles. Aunque el servicio se puede habilitar con un mínimo de una licencia en el espacio empresarial que tenga la licencia adecuada, debe asegurarse de que todos los usuarios que se benefician del servicio tengan las licencias adecuadas.
+- Asegúrese de que tiene las licencias adecuadas para su organización. Use una suscripción de Azure facturada y de pago con un proveedor Contrato Enterprise o un proveedor de servicios en la nube. Las suscripciones de Azure adquiridas con planes de Pago a medida que vaya o con una tarjeta de crédito no se admiten para la clave de cliente. A partir del 1 de abril de 2020, la clave de cliente en Office 365 se ofrece en Office 365 E5, M365 E5, cumplimiento de M365 E5 y M365 E5 Information Protection & GOVERNANCE SKU. Sku de cumplimiento avanzado de Office 365 ya no está disponible para adquirir nuevas licencias. Las licencias de Cumplimiento avanzado de Office 365 existentes seguirán siendo compatibles. Aunque el servicio se puede habilitar con un mínimo de una licencia en el espacio empresarial que tenga la licencia adecuada, debe asegurarse de que todos los usuarios que se benefician del servicio tengan las licencias adecuadas.
 
 ### <a name="create-two-new-azure-subscriptions"></a>Crear dos nuevas suscripciones de Azure
 
-La clave de cliente requiere dos claves para cada directiva de cifrado de datos (DEP). Para ello, debe crear dos suscripciones de Azure. Como procedimiento recomendado, Microsoft recomienda que tenga miembros independientes de su organización que configuren una clave en cada suscripción. Use solo estas suscripciones de Azure para administrar claves de cifrado para Microsoft 365. Esto protege la organización en caso de que uno de los operadores elimine o desajuste las claves de las que son responsables de forma accidental, intencionada o malintencionada.
+La clave de cliente requiere dos claves para cada directiva de cifrado de datos (DEP). Para ello, debe crear dos suscripciones de Azure. Como práctica recomendada, Microsoft recomienda tener miembros independientes de la organización que configuren una clave en cada suscripción. Use solo estas suscripciones de Azure para administrar claves de cifrado para Microsoft 365. Esto protege la organización en caso de que uno de los operadores elimine o desajuste las claves de las que son responsables de forma accidental, intencionada o malintencionada.
 
-No hay ningún límite práctico para el número de suscripciones de Azure que puede crear para su organización. Seguir este procedimiento recomendado ayuda a minimizar el impacto del error humano y a administrar los recursos usados por la clave de cliente.
+No hay ningún límite práctico para el número de suscripciones de Azure que puede crear para su organización. Siguiendo este procedimiento recomendado, se ayuda a minimizar el impacto de errores humanos y a administrar los recursos usados por la clave de cliente.
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>Registrar suscripciones de Azure para usar un período de retención obligatorio
 
@@ -82,7 +82,7 @@ Antes de ponerse en contacto con el equipo de Microsoft 365, debe realizar los s
    Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.Resources
    ```
 
-3. Póngase en contacto con Microsoft para que el proceso se haya finalizado en [m365ck@microsoft.com](mailto:m365ck@microsoft.com). Incluya lo siguiente en el correo electrónico:
+3. Póngase en contacto con Microsoft para que el proceso se haya finalizado [en m365ck@microsoft.com](mailto:m365ck@microsoft.com). Incluya lo siguiente en el correo electrónico:
 
    **Asunto:** clave de cliente para \<*Your tenant's fully-qualified domain name*\>
 
@@ -91,7 +91,7 @@ Antes de ponerse en contacto con el equipo de Microsoft 365, debe realizar los s
 
    El Contrato de nivel de servicio (SLA) para la finalización de este proceso es de cinco días laborables una vez que Se haya notificado (y comprobado) a Microsoft que ha registrado sus suscripciones para usar un período de retención obligatorio.
 
-4. Una vez que reciba la notificación de Microsoft de que el registro se ha completado, compruebe el estado del registro ejecutando el Get-AzProviderFeature siguiente. Si se comprueba, Get-AzProviderFeature comando devuelve un valor **de Registered** para la propiedad **Registration State.** Realice esta acción para cada suscripción.
+4. Una vez que reciba la notificación de Microsoft de que el registro se ha completado, ejecute el Get-AzProviderFeature comando como se muestra a continuación. Si se comprueba, Get-AzProviderFeature comando devuelve un valor **de Registered** para la propiedad **Registration State.** Realice esta acción para cada suscripción.
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
@@ -109,14 +109,14 @@ Antes de ponerse en contacto con el equipo de Microsoft 365, debe realizar los s
 
 Los pasos para crear un almacén de claves se documentan en Introducción a [Azure Key Vault,](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)que le guiará a través de la instalación y el inicio de Azure PowerShell, la conexión a su suscripción de Azure, la creación de un grupo de recursos y la creación de un almacén de claves en ese grupo de recursos.
   
-Al crear un almacén de claves, debes elegir una SKU: Standard o Premium. La SKU estándar permite proteger las claves de Azure Key Vault con software (no hay protección de claves del Módulo de seguridad de hardware ( OEM) y la SKU premium permite el uso de HSMs para la protección de claves del almacén de claves. Clave de cliente acepta almacenes de claves que usan cualquiera de las SKU, aunque Microsoft recomienda encarecidamente usar solo la SKU Premium. El costo de las operaciones con claves de cualquiera de los tipos es el mismo, por lo que la única diferencia en el costo es el costo por mes de cada clave protegida con HSM. Consulte los [precios del Almacén de claves](https://azure.microsoft.com/pricing/details/key-vault/) para obtener más información.
+Al crear un almacén de claves, debes elegir una SKU: Standard o Premium. La SKU estándar permite proteger las claves de Azure Key Vault con software (no hay protección de claves del Módulo de seguridad de hardware ( OEM) y la SKU premium permite el uso de HSMs para la protección de claves del almacén de claves. Clave de cliente acepta almacenes de claves que usan cualquier SKU, aunque Microsoft recomienda encarecidamente usar solo la SKU Premium. El costo de las operaciones con claves de cualquiera de los tipos es el mismo, por lo que la única diferencia en el costo es el costo por mes de cada clave protegida con HSM. Consulte los [precios del Almacén de claves](https://azure.microsoft.com/pricing/details/key-vault/) para obtener más información.
   
 > [!IMPORTANT]
 > Usa los almacenes de claves de SKU premium y las claves protegidas por HSM para los datos de producción, y solo usa las claves y almacenes de claves de SKU estándar con fines de prueba y validación.
 
-Use un prefijo común para almacenes de claves e incluya una abreviatura del uso y el ámbito del almacén de claves y las claves. Por ejemplo, para el servicio Contoso donde se ubicarán las cámaras en Norteamérica, un posible par de nombres es Contoso-O365-NA-VaultA1 y Contoso-O365-NA-VaultA2. Los nombres de las cámaras son cadenas únicas globalmente en Azure, por lo que es posible que deba probar las variaciones de los nombres deseados en caso de que otros clientes de Azure ya reclamaran los nombres deseados. Una vez configurados, los nombres de las cámaras no se pueden cambiar, por lo que el procedimiento recomendado es tener un plan escrito para la instalación y usar una segunda persona para comprobar que el plan se ejecuta correctamente.
+Use un prefijo común para almacenes de claves e incluya una abreviatura del uso y el ámbito del almacén de claves y las claves. Por ejemplo, para el servicio Contoso donde se ubicarán las cámaras en Norteamérica, un posible par de nombres es Contoso-O365-NA-VaultA1 y Contoso-O365-NA-VaultA2. Los nombres de las cámaras son cadenas únicas globalmente en Azure, por lo que es posible que deba probar las variaciones de los nombres deseados en caso de que otros clientes de Azure ya reclamaran los nombres deseados. Una vez configurado, los nombres de las cámaras no se pueden cambiar, por lo que el procedimiento recomendado es tener un plan escrito para la instalación y usar una segunda persona para comprobar que el plan se ejecuta correctamente.
 
-Si es posible, cree las cámaras en regiones no emparejadas. Las regiones de Azure emparejadas proporcionan alta disponibilidad entre dominios de error de servicio. Por lo tanto, los pares regionales se pueden pensar como la región de copia de seguridad del otro. Esto significa que un recurso de Azure que se coloca en una región obtiene automáticamente tolerancia a errores a través de la región emparejada. Por este motivo, elegir regiones para dos almacenes usados en una directiva de cifrado de datos en la que las regiones están emparejadas significa que solo están en uso un total de dos regiones de disponibilidad. La mayoría de las regiones geográficas solo tienen dos regiones, por lo que aún no es posible seleccionar regiones no emparejadas. Si es posible, elija dos regiones no emparejadas para los dos almacenes usados con una directiva de cifrado de datos. Esto se beneficia de un total de cuatro regiones de disponibilidad. Para obtener más información, vea Continuidad empresarial y recuperación ante [desastres (BCDR): Azure Paired Regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) para obtener una lista actual de pares regionales.
+Si es posible, cree las cámaras en regiones no emparejadas. Las regiones de Azure emparejadas proporcionan alta disponibilidad entre dominios de error de servicio. Por lo tanto, los pares regionales se pueden pensar como la región de copia de seguridad del otro. Esto significa que un recurso de Azure que se coloca en una región obtiene automáticamente tolerancia a errores a través de la región emparejada. Por este motivo, elegir regiones para dos almacenes usados en una directiva de cifrado de datos en la que las regiones están emparejadas significa que solo están en uso un total de dos regiones de disponibilidad. La mayoría de las regiones geográficas solo tienen dos regiones, por lo que aún no es posible seleccionar regiones no emparejadas. Si es posible, elija dos regiones no emparejadas para los dos almacenes usados con una directiva de cifrado de datos. Esto se beneficia de un total de cuatro regiones de disponibilidad. Para obtener más información, consulte Continuidad empresarial y recuperación ante [desastres (BCDR): Azure Paired Regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) para obtener una lista actual de pares regionales.
 
 ### <a name="assign-permissions-to-each-key-vault"></a>Asignar permisos a cada almacén de claves
 
@@ -151,7 +151,7 @@ Para cada almacén de claves, deberá definir tres conjuntos de permisos indepen
 
   Donde:
 
-  - *el nombre del* almacén es el nombre del almacén de claves que ha creado.
+  - *nombre del almacén* es el nombre del almacén de claves que creó.
 
   Ejemplo: para el servicio cifrado de datos en reposo de Microsoft 365, reemplace el appID de  *Microsoft 365* por `c066d759-24ae-40e7-a56f-027002b5d3e4`
 
@@ -167,7 +167,7 @@ Para habilitar la eliminación soft en los almacenes de claves, siga estos pasos
   
 1. Inicie sesión en su suscripción de Azure con Windows PowerShell. Para obtener instrucciones, [vea Iniciar sesión con Azure PowerShell.](https://docs.microsoft.com/powershell/azure/authenticate-azureps)
 
-2. Ejecuta el cmdlet [Get-AzKeyVault.](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) En este ejemplo, el *nombre del almacén* es el nombre del almacén de claves para el que está habilitando la eliminación de forma flexible:
+2. Ejecuta el cmdlet [Get-AzKeyVault.](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) En este ejemplo, el *nombre de la* cámara es el nombre del almacén de claves para el que está habilitando la eliminación de forma flexible:
 
    ```powershell
    $v = Get-AzKeyVault -VaultName <vault name>
@@ -184,7 +184,7 @@ Para habilitar la eliminación soft en los almacenes de claves, siga estos pasos
 
 ### <a name="add-a-key-to-each-key-vault-either-by-creating-or-importing-a-key"></a>Agregar una clave a cada almacén de claves mediante la creación o importación de una clave
 
-Hay dos maneras de agregar claves a un Almacén de claves de Azure; puede crear una clave directamente en el Almacén de claves o puede importar una clave. La creación de una clave directamente en el Almacén de claves es el método menos complicado, mientras que la importación de una clave proporciona control total sobre cómo se genera la clave. Usa las claves RSA. Azure Key Vault no admite el ajuste ni el desencapsulado con teclas de curva elíptica.
+Hay dos formas de agregar claves a un Almacén de claves de Azure; puede crear una clave directamente en el Almacén de claves o puede importar una clave. La creación de una clave directamente en el Almacén de claves es el método menos complicado, mientras que la importación de una clave proporciona control total sobre cómo se genera la clave. Use las claves RSA. Azure Key Vault no admite el ajuste ni el desencapsulado con teclas de curva elíptica.
   
 Para crear una clave directamente en el almacén de claves, ejecute el cmdlet [Add-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey) de la siguiente manera:
   
@@ -199,7 +199,7 @@ Donde:
 - *nombre de* clave es el nombre que desea dar a la nueva clave.
 
   > [!TIP]
-  > Nombre de las claves mediante una convención de nomenclatura similar, como se describió anteriormente para almacenes de claves. De este modo, en las herramientas que muestran solo el nombre de la clave, la cadena es autodescripta.
+  > Las claves de nombre usan una convención de nomenclatura similar como se describió anteriormente para almacenes de claves. De este modo, en las herramientas que muestran solo el nombre de la clave, la cadena es autodescripta.
   
 Si desea proteger la clave con un RELA, asegúrese de especificar **HSM** como el valor del parámetro _Destination;_ de lo contrario, especifique **Software**.
 
@@ -313,7 +313,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Default_Policy" -AzureKeyIDs "https://
 Parámetros:
 
 | Nombre | Descripción | Opcional (Y/N) |
-|--|--|--|
+|----------|----------|---------|
 |Nombre|Nombre descriptivo de la directiva de cifrado de datos|N|
 |AzureKeyIDs|Especifica dos valores uri de las claves de Azure Key Vault, separadas por comas, para asociar con la directiva de cifrado de datos|N|
 |Descripción|Descripción de la directiva de cifrado de datos|N|
@@ -334,7 +334,7 @@ Set-M365DataAtRestEncryptionPolicyAssignment -Policy “Tenant default policy”
 
 Parámetros:
 | Nombre | Descripción | Opcional (Y/N) |
-|--|--|--|
+|----------|----------|---------|
 -Policy|Especifica la directiva de cifrado de datos que debe asignarse; especifique el nombre de la directiva o el identificador de directiva.|N|
 
 ### <a name="modify-or-refresh-policy"></a>Modificar o actualizar directiva
@@ -361,12 +361,12 @@ Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
 
 Parámetros:
 | Nombre | Descripción | Opcional (Y/N) |
-|--|--|--|
+|----------|----------|---------|
 |-Identidad|Especifica la directiva de cifrado de datos que desea modificar.|N|
 |-Refresh|Use el modificador Refresh para actualizar la directiva de cifrado de datos después de girar cualquiera de las claves asociadas en azure Key Vault. No es necesario especificar un valor con este modificador.|v|
 |-Enabled|El parámetro Enabled habilita o deshabilita la directiva de cifrado de datos. Antes de deshabilitar una directiva, debe desasignla del espacio empresarial. Los valores válidos son:</br > $true: la directiva está habilitada</br > $true: la directiva está habilitada. Es el valor predeterminado.
 |v|
-|- Name|El parámetro Name especifica el nombre único de la directiva de cifrado de datos.|v
+|-Name|El parámetro Name especifica el nombre único de la directiva de cifrado de datos.|v
 |-Description|El parámetro Description especifica una descripción opcional para la directiva de cifrado de datos.|v|
 
 ### <a name="get-policy-details"></a>Obtener detalles de la directiva
@@ -394,7 +394,7 @@ Get-M365DataAtRestEncryptionPolicy -Identity "NAM Policy"
 Parámetros:
 
 | Nombre | Descripción | Opcional (Y/N) |
-|--|--|--|
+|----------|----------|---------|
 |-Identidad|Especifica la directiva de cifrado de datos para la que desea enumerar los detalles.|v|
 
 ### <a name="get-policy-assignment-info"></a>Obtener información de asignación de directivas
@@ -420,7 +420,7 @@ Para obtener información acerca de la clave de disponibilidad, [vea Más inform
 
 ## <a name="key-rotation"></a>Rotación de teclas
 
-Para obtener información sobre la rotación o la rotación de claves usadas con la clave de cliente, vea Roll [o rotate a Customer Key or an availability key](customer-key-availability-key-roll.md). Cuando actualice el DEP para que use la nueva versión de las claves, ejecutará el cmdlet Set-M365DataAtRestEncryptionPolicy como se describe anteriormente en este artículo.
+Para obtener información sobre la rotación o la rotación de claves usadas con la clave de cliente, vea Roll [o rotate a Customer Key or an availability key](customer-key-availability-key-roll.md). Cuando actualice el DEP para que use la nueva versión de las claves, ejecutará el cmdlet Set-M365DataAtRestEncryptionPolicy como se describió anteriormente en este artículo.
 
 ## <a name="related-articles"></a>Artículos relacionados:
 
