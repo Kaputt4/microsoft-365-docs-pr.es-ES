@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.article: how-to
+ms.topic: article
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,21 +15,21 @@ ms.collection:
 description: Los administradores de Microsoft 365 pueden aprender a recuperarse de un ataque de ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b834adb3d9ba5f85984e09b4bb1e4b48673c32f2
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 120dd9ae71f04d6921fae95965f56f0a08f1280c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166908"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289310"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Recuperarse de un ataque de ransomware en Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Incluso si toma todas las precauciones para proteger su organización, todavía puede ser víctima de un [ataque de ransomware.](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) Ransomware es una gran empresa y los ataques son muy sofisticados.
 
@@ -53,17 +53,17 @@ Si no tiene copias de seguridad o si las copias de seguridad también se vieron 
 
 El punto clave aquí es detener la propagación del cifrado de datos por el ransomware.
 
-Si sospecha que el correo electrónico es un destino del cifrado de ransomware, deshabilite temporalmente el acceso de los usuarios a los buzones. Exchange ActiveSync sincroniza datos entre dispositivos y buzones de Exchange Online.
+Si sospecha que el correo electrónico es un destino del cifrado ransomware, deshabilite temporalmente el acceso de los usuarios a los buzones. Exchange ActiveSync sincroniza datos entre dispositivos y buzones de Exchange Online.
 
 Para deshabilitar Exchange ActiveSync para un buzón de correo, consulte Cómo deshabilitar Exchange ActiveSync [para los usuarios de Exchange Online](https://support.microsoft.com/help/2795303).
 
 Para deshabilitar otros tipos de acceso a un buzón, consulte:
 
-- [Habilitar o deshabilitar MAPI para un buzón.](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi)
+- [Habilitar o deshabilitar MAPI para un buzón](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi)de correo.
 
 - [Habilitar o deshabilitar el acceso a POP3 o IMAP4 para un usuario](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-Pausar la sincronización de OneDrive le ayudará a proteger los datos de la nube de ser actualizados por dispositivos potencialmente infectados. Para obtener más información, [vea Cómo pausar y reanudar la sincronización en OneDrive.](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)
+Pausar la sincronización de OneDrive le ayudará a proteger los datos de la nube de que los dispositivos potencialmente infectados se actualicen. Para obtener más información, [vea Cómo pausar y reanudar la sincronización en OneDrive.](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Paso 3: Quitar el malware de los dispositivos afectados
 
@@ -129,7 +129,7 @@ Los sitios web de informes de estafas proporcionan información sobre cómo evit
 
 - Nueva Zelanda: [estafas de asuntos del consumidor](http://www.consumeraffairs.govt.nz/scams)
 
-- Reino Unido: fraude [de acción](http://www.actionfraud.police.uk/)
+- Reino Unido: Fraude [de acciones](http://www.actionfraud.police.uk/)
 
 - Estados Unidos: [On Guard Online](http://www.onguardonline.gov/)
 
@@ -139,7 +139,7 @@ Si su país no aparece en la lista, pregúntele a los organismos de seguridad lo
 
 Puede notificar mensajes de suplantación de identidad que contienen ransomware mediante uno de varios métodos. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 - [Ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 

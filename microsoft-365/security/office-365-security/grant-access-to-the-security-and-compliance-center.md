@@ -20,21 +20,21 @@ description: Los usuarios deben tener asignados permisos en el Centro de segurid
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e19825ce0f8224b2aee8e1419ef5d1ad425aadb
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e1a619b184c575e3750b2499adc661627b4d27d6
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165420"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289882"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Los usuarios deben tener asignados permisos en el Centro de seguridad & cumplimiento para poder administrar cualquiera de sus características de seguridad o cumplimiento. Como administrador global o miembro del grupo de roles OrganizationManagement en el Centro de seguridad & cumplimiento, puede conceder estos permisos a los usuarios. Los usuarios solo podrán administrar las características de seguridad o cumplimiento a las que les proporcione acceso.
 
@@ -52,9 +52,9 @@ Para obtener más información acerca de los diferentes permisos que puede conce
 
 ## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>Usar el Centro de & cumplimiento para proporcionar a otro usuario acceso al Centro de & cumplimiento
 
-1. Abra el Centro de seguridad & cumplimiento <https://protection.office.com> y, a continuación, vaya **a Permisos.** Para ir directamente a la **pestaña Permisos,** abra <https://protection.office.com/permissions> .
+1. Abra el Centro de & cumplimiento en el centro de seguridad y, a <https://protection.office.com> continuación, vaya a **Permisos.** Para ir directamente a la **pestaña Permisos,** abra <https://protection.office.com/permissions> .
 
-2. En la lista de grupos de roles, elija el grupo de roles y, a continuación, haga clic **en el icono** Editar ![ ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) edición.
+2. En la lista de grupos de roles, elija el grupo de roles y, a continuación, haga clic **en el icono** ![ ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) Editar.
 
 3. En la página de propiedades del grupo de roles, en Miembros, haga clic en Agregar icono y seleccione el nombre del usuario ![ ](../../media/ITPro-EAC-AddIcon.gif) (o usuarios) que desea agregar.
 
@@ -64,7 +64,7 @@ Para obtener más información acerca de los diferentes permisos que puede conce
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Usar PowerShell del Centro & seguridad y cumplimiento para proporcionar a otro usuario acceso al Centro de & cumplimiento
 
-1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. [Conéctese al Centro de seguridad y cumplimiento de PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
 
 2. Utilice la sintaxis siguiente:
 
@@ -82,7 +82,7 @@ Para obtener más información acerca de los diferentes permisos que puede conce
 
 Para obtener información detallada acerca de la sintaxis y los problemas de parámetros, [consulte Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)
 
-### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Para comprobar que ha concedido acceso correctamente al Centro de seguridad & cumplimiento, siga uno de estos pasos:
 

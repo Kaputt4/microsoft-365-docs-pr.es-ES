@@ -1,5 +1,5 @@
 ---
-title: Introducción al aprendizaje de simulación de ataques
+title: Introducción al uso de aprendizaje de simulación de ataques
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -19,33 +18,35 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Los administradores pueden aprender a usar la formación de simulación de ataques para ejecutar ataques simulados de suplantación de identidad y contraseña en sus organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2.
-ms.openlocfilehash: 2c00fb27748887c6b8e2fa1458b10f0c3405eef7
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1ec5b8175db6eb03e59a31a4dc21d9649c5e7616
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877169"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289901"
 ---
-# <a name="get-started-using-attack-simulation-training"></a>Introducción al aprendizaje de simulación de ataques
+# <a name="get-started-using-attack-simulation-training"></a>Introducción al uso de aprendizaje de simulación de ataques
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 Si su organización tiene Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2, que incluye capacidades de investigación y respuesta de [amenazas,](office-365-ti.md)puede usar la formación de simulación de ataques en el Centro de seguridad de Microsoft para ejecutar escenarios de ataque realistas en su organización. Estos ataques simulados pueden ayudarte a identificar y encontrar usuarios vulnerables antes de que un ataque real repercuta en la línea inferior. Lea este artículo para obtener más información.
 
 > [!NOTE]
-> El entrenamiento de simulación de ataque reemplaza la experiencia anterior del simulador de ataques v1 que se describe en el Simulador de ataques de [Microsoft Defender para Office 365.](attack-simulator.md)
+> El entrenamiento de simulación de ataque reemplaza la experiencia anterior del simulador de ataque v1 que se describe en el Simulador de ataques de [Microsoft Defender para Office 365.](attack-simulator.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-- Para abrir el Centro de seguridad de Microsoft, vaya a <https://security.microsoft.com/> . La formación de simulación de ataques está disponible en el aprendizaje **de simulación** de ataques de colaboración \> **y correo electrónico.** Para ir directamente al entrenamiento de simulación de ataques, abra <https://security.microsoft.com/attacksimulator> .
+- Para abrir el Centro de seguridad de Microsoft, vaya a <https://security.microsoft.com/> . La formación de simulación de ataques está disponible en **el aprendizaje de simulación** de ataques de colaboración y correo \> **electrónico.** Para ir directamente al entrenamiento de simulación de ataques, abra <https://security.microsoft.com/attacksimulator> .
 
 - Para obtener más información sobre la disponibilidad de aprendizaje de simulación de ataques en diferentes suscripciones de Microsoft 365, vea la descripción del servicio de [Microsoft Defender para Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-- Deberá tener asignados permisos en el Centro de seguridad & cumplimiento o en Azure Active Directory para poder realizar los procedimientos descritos en este artículo. En concreto, debe ser miembro de administración de la **organización,** administrador de **seguridad** o uno de los siguientes roles:
+- Deberá tener asignados permisos en el Centro de seguridad & cumplimiento o en Azure Active Directory para poder realizar los procedimientos descritos en este artículo. En concreto, debe ser miembro de administración de la **organización,** administrador de seguridad **o** uno de los siguientes roles:
   - **Administradores del simulador de ataques:** crea y administra todos los aspectos de las campañas de simulación de ataques.
   - **Autores de carga del simulador de ataque:** crea cargas de ataque que un administrador puede iniciar más adelante.
 
-  Para obtener más información, vea [Permisos en el Centro](permissions-in-the-security-and-compliance-center.md) de seguridad & cumplimiento o Acerca de los roles de [administrador.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
+  Para obtener más información, vea [Permisos en el Centro](permissions-in-the-security-and-compliance-center.md) de seguridad & cumplimiento o Acerca de los roles de [administrador.](../../admin/add-users/about-admin-roles.md)
 
 - No hay ningún cmdlet de PowerShell correspondiente para la formación de simulación de ataques.
 
@@ -57,11 +58,11 @@ Si su organización tiene Microsoft 365 E5 o Microsoft Defender para Office 365 
 
 En el aprendizaje de simulación de ataques, hay disponibles varios tipos de técnicas de ingeniería social:
 
-- **Recolección de credenciales:** un atacante envía al destinatario un mensaje que contiene una dirección URL. Cuando el destinatario hace clic en la dirección URL, se le redirige a un sitio web que normalmente muestra un cuadro de diálogo que pide al usuario su nombre de usuario y contraseña. Normalmente, la página de destino tiene un formato que representa un sitio web conocido para generar confianza en el usuario.
+- **Recolección de credenciales:** un atacante envía al destinatario un mensaje que contiene una dirección URL. Cuando el destinatario hace clic en la dirección URL, se le redirige a un sitio web que normalmente muestra un cuadro de diálogo que pide al usuario su nombre de usuario y contraseña. Por lo general, la página de destino tiene un formato que representa un sitio web conocido para generar confianza en el usuario.
 
-- **Datos adjuntos de malware:** un atacante envía al destinatario un mensaje que contiene datos adjuntos. Cuando el destinatario abre los datos adjuntos, se ejecuta código arbitrario (por ejemplo, una macro) en el dispositivo del usuario para ayudar al atacante a instalar código adicional o a atrincherarse aún más.
+- **Datos adjuntos de** malware: un atacante envía al destinatario un mensaje que contiene datos adjuntos. Cuando el destinatario abre los datos adjuntos, se ejecuta código arbitrario (por ejemplo, una macro) en el dispositivo del usuario para ayudar al atacante a instalar código adicional o a reforzarse aún más.
 
-- **Vínculo en datos adjuntos:** se trata de un híbrido de una recolección de credenciales. Un atacante envía al destinatario un mensaje que contiene una dirección URL dentro de un archivo adjunto. Cuando el destinatario abre los datos adjuntos y hace clic en la dirección URL, se les redirige a un sitio web que normalmente muestra un cuadro de diálogo que pide al usuario su nombre de usuario y contraseña. Normalmente, la página de destino tiene un formato que representa un sitio web conocido para generar confianza en el usuario.
+- **Vínculo en datos adjuntos:** se trata de un híbrido de una recolección de credenciales. Un atacante envía al destinatario un mensaje que contiene una dirección URL dentro de un archivo adjunto. Cuando el destinatario abre los datos adjuntos y hace clic en la dirección URL, se les redirige a un sitio web que normalmente muestra un cuadro de diálogo que pide al usuario su nombre de usuario y contraseña. Por lo general, la página de destino tiene un formato que representa un sitio web conocido para generar confianza en el usuario.
 
 - **Vínculo a malware:** un atacante envía al destinatario un mensaje que contiene un vínculo a datos adjuntos en un sitio de uso compartido de archivos conocido (por ejemplo, SharePoint Online o Dropbox). Cuando el destinatario hace clic en la dirección URL, se abren los datos adjuntos y se ejecuta código arbitrario (por ejemplo, una macro) en el dispositivo del usuario para ayudar al atacante a instalar código adicional o a atrincherarse aún más.
 
@@ -107,4 +108,4 @@ Para obtener instrucciones paso a paso sobre cómo crear una carga para usarla e
 
 ### <a name="gaining-insights"></a>Obtener información
 
-Para obtener instrucciones paso a paso sobre cómo obtener información con los informes, consulta Obtener información a través de [la formación de simulación de ataques.](attack-simulation-training-insights.md)
+Para obtener instrucciones paso a paso sobre cómo obtener información con los informes, consulta Obtener información a través de la formación [de simulación de ataques.](attack-simulation-training-insights.md)

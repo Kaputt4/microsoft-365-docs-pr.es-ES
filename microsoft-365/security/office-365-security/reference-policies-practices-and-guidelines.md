@@ -17,21 +17,21 @@ ms.collection:
 description: Microsoft ha desarrollado varias directivas, procedimientos y adoptado varios procedimientos recomendados del sector para ayudar a proteger a nuestros usuarios del correo electrónico abusivo, no deseado o malintencionado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01df2e8c1cc8a8ca68688377c4cad6ade91b5623
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1065fdef5f804214ca48f7ca54170e6e417490d7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166860"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289214"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referencia: Políticas, prácticas y directrices
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Microsoft se centra en ayudarle a que disfrute de la experiencia web de usuario más confiable. Por ello, Microsoft ha desarrollado diversas políticas y procedimientos, y adoptado varias prácticas recomendadas del sector para ayudar a proteger a nuestros usuarios de correo electrónico abusivo, no deseado o malintencionado. Los remitentes que intentan enviar correo electrónico a los usuarios deben asegurarse de que comprenden completamente y que están siguiendo las instrucciones de este artículo para ayudar en este esfuerzo y para ayudar a evitar posibles problemas de entrega.
 
@@ -97,7 +97,7 @@ Microsoft trabaja activamente con los organismos de la industria y los proveedor
 
 ## <a name="abuse-and-spam-reporting"></a>Informar sobre abusos y correo no deseado
 
-Para informar de correo electrónico ilegal, abusivo, no deseado o malintencionado, consulte Notificar mensajes [y archivos a Microsoft.](report-junk-email-messages-to-microsoft.md) Enviar estos tipos de comunicaciones es una infracción de la directiva de Microsoft y se tomarán las medidas adecuadas en los informes confirmados.
+Para informar de correo electrónico ilegal, abusivo, no deseado o malintencionado, vea Notificar mensajes [y archivos a Microsoft.](report-junk-email-messages-to-microsoft.md) Enviar estos tipos de comunicaciones es una infracción de la directiva de Microsoft y se tomarán las medidas adecuadas en los informes confirmados.
 
 ## <a name="law-enforcement"></a>Cumplimiento de la ley
 

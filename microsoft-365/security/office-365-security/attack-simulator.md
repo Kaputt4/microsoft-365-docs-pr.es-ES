@@ -20,18 +20,18 @@ ms.custom:
 description: Los administradores pueden aprender a usar el simulador de ataques para ejecutar ataques simulados de suplantación de identidad y contraseña en sus organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9d3d55c17e5d77ee18bd822899fea2f64136e1a3
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 1e877900698d033cb99154b31e32fa04ff7d1010
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233605"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289586"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulador de ataques en Microsoft Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Se aplica a** [Microsoft Defender para Office 365 plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+**Se aplica a** [Microsoft Defender para Office 365 plan 2](office-365-atp.md)
 
 Si su organización tiene Microsoft Defender para Office 365 Plan 2, que incluye capacidades de investigación y respuesta de [amenazas,](office-365-ti.md)puede usar el Simulador de ataques en el Centro de seguridad & Cumplimiento para ejecutar escenarios de ataque realistas en su organización. Estos ataques simulados pueden ayudarte a identificar y encontrar usuarios vulnerables antes de que un ataque real repercuta en la línea inferior. Lea este artículo para obtener más información.
 
@@ -43,11 +43,11 @@ Si su organización tiene Microsoft Defender para Office 365 Plan 2, que incluye
 
 - Para abrir el Centro de seguridad y cumplimiento, vaya a <https://protection.office.com/>. El simulador de ataques está disponible en **el simulador de** \> **ataques de administración de amenazas.** Vaya directamente al simulador de ataques, abra <https://protection.office.com/attacksimulator> .
 
-- Para obtener más información sobre la disponibilidad del Simulador de ataques en distintas suscripciones de Microsoft 365, vea la descripción del servicio [de Microsoft Defender para Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- Para obtener más información sobre la disponibilidad del Simulador de ataques en distintas suscripciones de Microsoft 365, vea la descripción del servicio de [Microsoft Defender para Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
 - Debe ser miembro de los grupos de roles **Administración** de la organización o **Administrador de** seguridad. Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-- Tu cuenta debe configurarse para la autenticación multifactor (MFA) para crear y administrar campañas en el Simulador de ataques. Para obtener instrucciones, [vea Configurar la autenticación multifactor.](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)
+- Tu cuenta debe configurarse para la autenticación multifactor (MFA) para crear y administrar campañas en el Simulador de ataques. Para obtener instrucciones, [vea Configurar la autenticación multifactor.](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)
 
 - Las campañas de suplantación de identidad recopilarán y procesarán eventos durante 30 días. Los datos históricos de la campaña estarán disponibles hasta 90 días después de iniciar la campaña.
 
@@ -57,7 +57,7 @@ Si su organización tiene Microsoft Defender para Office 365 Plan 2, que incluye
 
 ## <a name="spear-phishing-campaigns"></a>Campañas de suplantación de identidad
 
-*La suplantación* de identidad es un término genérico para los ataques de correo electrónico que intentan robar información confidencial en mensajes que parecen ser de remitentes legítimos o de confianza. La suplantación de identidad *(phishing)* es un ataque de suplantación de identidad dirigido que usa contenido centrado y personalizado que se adapta específicamente a los destinatarios de destino (normalmente, después del reconocimiento del atacante a los destinatarios).
+*La suplantación* de identidad es un término genérico para los ataques de correo electrónico que intentan robar información confidencial en mensajes que parecen ser de remitentes legítimos o de confianza. La suplantación de identidad *(phishing)* es un ataque de suplantación de identidad dirigido que usa contenido centrado y personalizado que se adapta específicamente a los destinatarios de destino (normalmente, después de que el atacante los reconoce).
 
 En el Simulador de ataques, hay disponibles dos tipos diferentes de campañas de suplantación de identidad de lanza:
 
@@ -65,7 +65,7 @@ En el Simulador de ataques, hay disponibles dos tipos diferentes de campañas de
 
   - Una página predeterminada que explica que se trata de una prueba y ofrece sugerencias para reconocer mensajes de suplantación de identidad.
 
-    ![Qué ven los usuarios si hacen clic en el vínculo de suplantación de identidad (phishing) y escriben sus credenciales](../../media/attack-simulator-phishing-result.png)
+    ![Qué verán los usuarios si hacen clic en el vínculo de suplantación de identidad y escriben sus credenciales](../../media/attack-simulator-phishing-result.png)
 
   - Una página personalizada (URL) que especifique.
 
@@ -201,7 +201,7 @@ Si va a usar una de las plantillas integradas o crear el mensaje de correo elect
      >
      > - Un servicio de reputación de dirección URL puede identificar una o varias de estas direcciones URL como no seguras. Compruebe la disponibilidad de la dirección URL en los exploradores web compatibles antes de usar la dirección URL en una campaña de suplantación de identidad.
      >
-     > - Debe seleccionar una dirección URL. En el caso de las campañas de **phishing (datos adjuntos),** puede quitar el vínculo del  cuerpo del mensaje en el siguiente paso (de lo contrario, el mensaje contendrá un vínculo y un archivo adjunto).
+     > - Debe seleccionar una dirección URL. Para **campañas de phishing (datos adjuntos),** puede quitar el vínculo del cuerpo del mensaje en  el siguiente paso (de lo contrario, el mensaje contendrá un vínculo y un archivo adjunto).
 
    - **Tipo de datos** adjuntos: esta configuración solo está disponible en las campañas **de phishing (datos adjuntos).** Haga clic en la lista desplegable y seleccione **. DOCX** o **. PDF** de la lista.
 
@@ -240,7 +240,7 @@ En el Simulador de ataques, hay dos tipos diferentes de campañas de ataque de c
 
   Para el ataque de diccionario, puede especificar una o varias contraseñas para probar (introducidas manualmente o en un archivo cargado) y puede especificar uno o varios usuarios.
 
-- **Ataque de aspersión** de contraseña: un ataque de *aspersión* de contraseña usa la misma contraseña que se considera cuidadosamente en una lista de cuentas de usuario (una contraseña frente a muchas cuentas). Los ataques de distribución de contraseñas son más difíciles de detectar que los ataques de contraseña por fuerza bruta (la probabilidad de éxito aumenta cuando un atacante intenta una contraseña en decenas o cientos de cuentas sin el riesgo de que se desenlace el bloqueo de contraseña incorrecto del usuario).
+- **Ataque de aspersión** de contraseña: un ataque de *aspersión* de contraseña usa la misma contraseña que se considera cuidadosamente en una lista de cuentas de usuario (una contraseña contra muchas cuentas). Los ataques de aspersión de contraseña son más difíciles de detectar que los ataques de contraseña por fuerza bruta (la probabilidad de éxito aumenta cuando un atacante intenta una contraseña en decenas o cientos de cuentas sin el riesgo de que el usuario no pueda bloquear la contraseña incorrecta).
 
   Para el ataque de aspersión de contraseña, solo puede especificar una contraseña para probar y puede especificar uno o varios usuarios.
 
@@ -271,7 +271,7 @@ En el Simulador de ataques, hay dos tipos diferentes de campañas de ataque de c
 
    - **Contraseña de fuerza bruta (ataque de diccionario):** siga uno de estos pasos:
 
-     - **Escriba contraseñas manualmente:** en el cuadro **Presione Entrar** para agregar una contraseña, escriba una contraseña y, a continuación, presione ENTRAR. Repita este paso tantas veces como sea necesario.
+     - **Escriba las contraseñas manualmente:** en el **cuadro Presione Entrar para agregar** una contraseña, escriba una contraseña y, a continuación, presione ENTRAR. Repita este paso tantas veces como sea necesario.
 
      - **Cargar contraseñas desde un archivo de diccionario:** haga clic en Cargar para importar un archivo de texto existente que contenga una contraseña en cada línea y una última línea en blanco.  El archivo de texto debe tener un tamaño de 10 MB o menos y no puede contener más de 30000 contraseñas.
 
@@ -309,21 +309,21 @@ La siguiente información está disponible en la página Detalles **de ataques**
 
 - **Clic más rápido:** cuánto tiempo tardó el primer usuario en hacer clic en el vínculo después de iniciar la campaña.
 
-- **Promedio de clic:** la suma del tiempo que tardó todo el mundo en hacer clic en el vínculo dividido por el número de usuarios que hizo clic en el vínculo.
+- **Promedio de clic:** la suma de cuánto tiempo tardó todo el mundo en hacer clic en el vínculo dividido por el número de usuarios que hizo clic en el vínculo.
 
 - **Porcentaje de éxito de** clic: porcentaje calculado por (número de usuarios que han hecho clic en el vínculo) / **Total de usuarios a los que se ha dirigido**.
 
 - **Credenciales más rápidas:** cuánto tiempo tardó el primer usuario en escribir sus credenciales después de iniciar la campaña.
 
-- **Credenciales promedio:** la suma del tiempo que todos tardaron en escribir sus credenciales divididas por el número de usuarios que especificaron sus credenciales.
+- **Promedio de credenciales:** la suma del tiempo que todos tardaron en escribir sus credenciales divididas por el número de usuarios que especificaron sus credenciales.
 
 - **Porcentaje de éxito de credenciales:** porcentaje calculado por (número de usuarios que especificaron sus credenciales) / **Total de usuarios a los** que se ha dirigido .
 
-- Gráfico de barras que muestra el vínculo en el que se **hizo** clic y los números proporcionados **por credenciales** por día.
+- Gráfico de barras que muestra el vínculo en el que se **hizo** clic y los números **proporcionados por credenciales** por día.
 
-- Gráfico de círculo que muestra los porcentajes Vínculo en el que se **hizo** clic, **Credencial** proporcionada y **Ninguno** para la campaña.
+- Gráfico de círculo que muestra el vínculo en el que se **hizo** clic, **la** credencial proporcionada y los **porcentajes** ninguno de la campaña.
 
-- La **sección Usuarios en peligro** muestra los detalles de los usuarios que han hecho clic en el vínculo:
+- La **sección Usuarios comprometidos** muestra los detalles de los usuarios que han hecho clic en el vínculo:
 
   - La dirección de correo electrónico del usuario
 
@@ -347,7 +347,7 @@ La siguiente información está disponible en la página Detalles **de ataques**
 
 - **Tasa de éxito general:** porcentaje calculado por **intentos correctos.** Total de usuarios a los que se  /  **ha dirigido .**
 
-- **Tiempo de apertura de datos** adjuntos más rápido: cuánto tiempo tardó el primer usuario en abrir los datos adjuntos después de iniciar la campaña.
+- **Tiempo de apertura de datos adjuntos más** rápido: cuánto tiempo tardó el primer usuario en abrir los datos adjuntos después de iniciar la campaña.
 
 - **Tiempo medio de** apertura de datos adjuntos: la suma del tiempo que todos tardaron en abrir los datos adjuntos dividido por el número de usuarios que abrieron los datos adjuntos.
 

@@ -7,7 +7,7 @@ author: msfttracyp
 manager: dansimp
 ms.date: 01/21/2021
 audience: ITPro
-ms.topic: How-to
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los clientes de Microsoft Defender para Office 365 E5 y ATP P1 y ATP P2 ahora pueden obtener una vista de 360 grados de cada correo electrónico con la página de entidad de correo electrónico.
-ms.openlocfilehash: 3b9198c9d91969d3b57f379d17de33a1c00d37f6
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 0a866b4d635e5c9e26b6fc065503b44ee2063e9f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50143212"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289490"
 ---
 # <a name="the-email-entity-page"></a>La página Entidad de correo electrónico
 
@@ -30,7 +30,7 @@ ms.locfileid: "50143212"
 - [Usar pestañas de página de entidad de correo electrónico](#use-email-entity-page-tabs)
 - [Nuevo en la página de entidad de correo electrónico](#new-to-the-email-entity-page)
 
-Los administradores de Microsoft Defender para Office 365 (o MDO) E5, y MDO P1 y P2 tienen una vista de 360 grados del correo electrónico mediante la página entidad correo **electrónico.** Esta página de correo electrónico de ir se creó para mejorar la información que se entrega en el menú desplegable "Detalles de correo electrónico" del Explorador [de amenazas.](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer-views)
+Los administradores de Microsoft Defender para Office 365 (o MDO) E5, y MDO P1 y P2 tienen una vista de 360 grados del correo electrónico mediante la página entidad correo **electrónico.** Esta página de correo electrónico de ir se creó para mejorar la información que se entrega en el menú desplegable "Detalles de correo electrónico" del Explorador [de amenazas.](threat-explorer-views.md)
 
 ## <a name="reach-the-email-entity-page"></a>Llegar a la página de entidad de correo electrónico
 
@@ -39,7 +39,7 @@ Tanto el Centro de seguridad y cumplimiento de Office (protection.office.com) co
 |Hacia el centro  |URL  |Navegación  |
 |---------|---------|---------|
 |Seguridad y cumplimiento |protection.office.com | Explorador de administración > amenazas   |
-|Centro de seguridad de Microsoft 365 |security.microsoft.com | Explorador de & colaboración > correo electrónico |
+|Centro de seguridad de Microsoft 365 |security.microsoft.com | Explorador de & colaboración > correo electrónico |
 
 En el Explorador de amenazas, seleccione el asunto de un correo electrónico que está investigando. Se mostrará una barra de oro en la parte superior del menú desplegable de correo electrónico para ese correo. Esta invitación a la nueva página, dice "Pruebe nuestra nueva página de entidad de correo electrónico con datos enriquecidos...". Seleccione esta opción para ver la nueva página.
 
@@ -54,7 +54,7 @@ En el Explorador de amenazas, seleccione el asunto de un correo electrónico que
 
 La estructura está diseñada para que sea fácil de leer y navegar de un vistazo. Varias pestañas en la parte superior de la página permiten investigar con más detalle. Así es como funciona el diseño:
 
-1. Los campos más obligatorios están en el lado izquierdo del menú desplegable. Estos detalles son "permanentes", lo que significa que se anclan a la izquierda, independientemente de la pestaña a la que navegues en el resto del control desplegable.
+1. Los campos más obligatorios están en el lado izquierdo del menú desplegable. Estos detalles son "permanentes", lo que significa que están anclados a la izquierda, independientemente de la pestaña a la que navegues en el resto del control desplegable.
 
     :::image type="content" source="../../media/email-entities-3-left-panel.png" alt-text="Gráfico de la página de entidad de correo electrónico con el lado izquierdo resaltado. El título y los datos sobre la entrega de correo están aquí.":::
 
@@ -71,17 +71,17 @@ La estructura está diseñada para que sea fácil de leer y navegar de un vistaz
 Las pestañas de la parte superior de la página de la entidad le permitirán investigar el correo electrónico de forma eficaz.
 
 1. **Escala** de tiempo: la vista de escala de tiempo de un correo electrónico (según la escala de tiempo del Explorador de amenazas) muestra la entrega original a los eventos posteriores a la entrega que se suceden en un correo electrónico. Para los correos electrónicos que no tienen acciones posteriores a la entrega, la vista muestra la fila de entrega original en la vista escala de tiempo. Eventos como: Purga automática de cero horas (ZAP), Corrección, clics de URL, etc., de orígenes como: sistema, administrador y usuario, se muestran aquí, en el orden en que se produjeron.
-2. **Análisis:** el análisis muestra campos que ayudan a los administradores a analizar un correo electrónico en profundidad. Para los casos en los que los administradores necesitan comprender más sobre la detección, el remitente o el destinatario y los detalles de autenticación de correo electrónico, deben usar la pestaña Análisis. También se encuentran vínculos para datos adjuntos y direcciones URL en esta página, en "Entidades relacionadas". Aquí se numeran los datos adjuntos y las amenazas identificadas, y hacer clic le llevará directamente a las páginas de datos adjuntos y url. Esta pestaña también tiene una opción ver encabezado para *mostrar el encabezado de correo electrónico*. Los administradores pueden comparar cualquier detalle de los encabezados de correo electrónico, en paralelo con la información del panel principal, para mayor claridad.
+2. **Análisis:** el análisis muestra campos que ayudan a los administradores a analizar un correo electrónico en profundidad. Para los casos en los que los administradores necesitan comprender más sobre la detección, el remitente o el destinatario y los detalles de autenticación de correo electrónico, deben usar la pestaña Análisis. También se encuentran vínculos para datos adjuntos y direcciones URL en esta página, en "Entidades relacionadas". Aquí se numeran los datos adjuntos y las amenazas identificadas y, al hacer clic, se le llevará directamente a las páginas de datos adjuntos y url. Esta pestaña también tiene una opción ver encabezado para *mostrar el encabezado de correo electrónico*. Los administradores pueden comparar cualquier detalle de los encabezados de correo electrónico, en paralelo con la información del panel principal, para mayor claridad.
 3. **Datos** adjuntos: examina los datos adjuntos que se encuentran en el correo electrónico con otros detalles que se encuentran en los datos adjuntos. Actualmente, el número de datos adjuntos mostrados está limitado a 10. Observe que aquí también se muestran los detalles de detonación de los datos adjuntos que se encuentran como malintencionados.
 4. **Direcciones URL:** en esta pestaña se enumeran las direcciones URL que se encuentran en el correo electrónico con otros detalles sobre las direcciones URL. El número de direcciones URL está limitado a 10 en este momento, pero estas 10 tienen prioridad para mostrar *primero direcciones URL malintencionadas.* La priorización ahorra tiempo y trabajo de conjetura. Las direcciones URL que se encontraron malintencionadas y detonadas también se mostrarán aquí.
-5. **Correos electrónicos similares:** en esta pestaña se enumeran todos los correos electrónicos similares a la combinación de *id. de* mensaje de red y destinatario específica de este correo electrónico. La similitud se basa *solo en el cuerpo del* mensaje. Las determinaciones tomadas en los correos para clasificarlos como "similares" no incluyen una consideración de datos *adjuntos.*
+5. **Mensajes de correo** electrónico similares: esta pestaña muestra todos los correos electrónicos similares a la combinación de *id. de* mensaje de red y destinatario específica de este correo electrónico. La similitud se basa *solo en el cuerpo del* mensaje. Las determinaciones tomadas en los correos para clasificarlos como "similares" no incluyen una consideración de datos *adjuntos.*
 
 ## <a name="new-to-the-email-entity-page"></a>Nuevo en la página de entidad de correo electrónico
 
 Hay nuevas funcionalidades que vienen con esta página de entidad de correo electrónico. Esta es la lista.
 
 ### <a name="email-preview-for-cloud-mailboxes"></a>Vista previa de correo electrónico para buzones en la nube
-Los administradores pueden obtener una vista previa de los correos electrónicos en ***los*** buzones en la nube, si los correos siguen presentes en la nube. En el caso de una eliminación de software (por parte de un administrador o usuario) o ZAP (para poner en cuarentena), los correos electrónicos ya no están presentes en la ubicación de la nube. En ese caso, los administradores no podrán obtener una vista previa de esos correos específicos. Los mensajes de correo electrónico que se descartaron o en los que se ha realizado un error en la entrega, nunca llegaron al buzón. Como resultado, los administradores tampoco podrán obtener una vista previa de esos correos electrónicos.
+Los administradores pueden obtener una vista previa de los correos electrónicos en ***los*** buzones en la nube, si los correos siguen presentes en la nube. En el caso de una eliminación de software (por parte de un administrador o usuario) o ZAP (para poner en cuarentena), los correos electrónicos ya no están presentes en la ubicación de la nube. En ese caso, los administradores no podrán obtener una vista previa de esos correos específicos. Los mensajes de correo electrónico que se descartaron, o en los que se ha fallado la entrega, nunca llegaron al buzón. Como resultado, los administradores tampoco podrán obtener una vista previa de esos correos electrónicos.
 
 > [!WARNING]
 >La vista previa de mensajes de correo electrónico requiere un rol especial denominado ***Preview** _ para asignarse a los administradores. Puede agregar este rol yendo a _ *Permisos & roles** > Correo electrónico & **roles** de colaboración en *security.microsoft.com* o **Permisos** en *protection.office.com*. Agrega el ***rol Vista*** previa a cualquiera de los grupos de roles o una copia de un grupo de roles que permita a los administradores de la organización trabajar en el Explorador de amenazas.
@@ -110,7 +110,7 @@ Los usuarios verán detalles enriquecidos de detonación para los datos adjuntos
 
 *Detalles del correo* electrónico: detalles necesarios para comprender mejor el correo electrónico disponible en la *pestaña Análisis.*
 
-- *Reglas de transporte de Exchange (ETR* o reglas de flujo de correo): estas reglas se aplican a un mensaje en la capa de transporte y tienen prioridad sobre los veredictos de suplantación de identidad y correo no deseado. Solo se pueden crear y modificar en el Centro de administración de Exchange, pero si algún ETR se aplica a un mensaje, aquí se mostrarán el nombre de ETR y el GUID. Información valiosa para fines de seguimiento.
+- *Reglas de transporte de Exchange (ETR* o reglas de flujo de correo): estas reglas se aplican a un mensaje en la capa de transporte y tienen prioridad sobre los veredictos de suplantación de identidad y correo no deseado. Solo se pueden crear y modificar en el Centro de administración de Exchange, pero si algún ETR se aplica a un mensaje, aquí se mostrarán el nombre de ETR y el GUID. Información valiosa para realizar un seguimiento.
     
 - *Invalidaciones del* sistema: se trata de una forma de hacer excepciones a la ubicación de entrega destinada a un mensaje mediante la invalidación de la ubicación de entrega dada por el sistema (según la técnica de amenazas y detección).
     

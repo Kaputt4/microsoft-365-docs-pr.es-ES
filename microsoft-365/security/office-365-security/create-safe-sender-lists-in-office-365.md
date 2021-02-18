@@ -17,25 +17,25 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las opciones disponibles y preferidas para permitir mensajes entrantes en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 92229f0324eb9c05b233e5c4b0bc9f1bd7ab2e39
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ddcd6240cfc80350920999f9fc1e8ea188834553
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165564"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289716"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Crear listas de remitentes seguros en EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Si es un cliente de Microsoft 365 con buzones en Exchange Online o un cliente independiente de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP ofrece varias formas de garantizar que los usuarios recibirán correo electrónico de remitentes de confianza. Estas opciones incluyen reglas de flujo de correo de Exchange (también conocidas como reglas de transporte), remitentes seguros de Outlook, la lista de direcciones IP permitidas (filtrado de conexiones) y listas de remitentes permitidos o listas de dominios permitidos en directivas contra correo no deseado. Colectivamente, puede pensar en estas opciones como listas _de remitentes seguros._
 
-Las listas de remitentes seguros disponibles se describen en la siguiente lista en orden de la más recomendada a la menos recomendada:
+Las listas de remitentes seguros disponibles se describen en la siguiente lista en orden de más recomendado a menos recomendado:
 
 1. Reglas de flujo de correo
 2. Remitentes seguros de Outlook
@@ -76,11 +76,11 @@ En el siguiente ejemplo se supone que necesita correo electrónico de contoso.co
 
    > [!IMPORTANT]
    >
-   > - No configure nunca reglas de flujo *de* correo solo con el dominio del remitente como la condición para omitir el filtrado de correo no deseado. Si lo  hace, aumentará considerablemente la probabilidad de que los atacantes puedan suplantar el dominio remitente (o suplantar la dirección de correo electrónico completa), omitir todo el filtrado de correo no deseado y omitir las comprobaciones de autenticación del remitente para que el mensaje llegue a la Bandeja de entrada del destinatario.
+   > - No configure nunca reglas de flujo de correo solo con *el* dominio del remitente como la condición para omitir el filtrado de correo no deseado. Si lo  hace, aumentará considerablemente la probabilidad de que los atacantes puedan suplantar el dominio remitente (o suplantar la dirección de correo electrónico completa), omitir todo el filtrado de correo no deseado y omitir las comprobaciones de autenticación del remitente para que el mensaje llegue a la Bandeja de entrada del destinatario.
    >
    > - No use dominios de su propiedad (también conocidos como dominios aceptados) o dominios populares (por ejemplo, microsoft.com) como condiciones en las reglas de flujo de correo. Si lo hace, se considera de alto riesgo porque crea oportunidades para que los atacantes envíen correo electrónico que, de lo contrario, se filtraría.
    >
-   > - Si permite una dirección IP que está detrás de una puerta de enlace de traducción de direcciones de red (NAT), debe conocer los servidores que están implicados en el grupo nat para conocer el ámbito de la lista de direcciones IP permitidos. Las direcciones IP y los participantes nat pueden cambiar. Debe comprobar periódicamente las entradas de la lista de direcciones IP permitidos como parte de los procedimientos de mantenimiento estándar.
+   > - Si permite una dirección IP que está detrás de una puerta de enlace de traducción de direcciones de red (NAT), debe conocer los servidores que participan en el grupo nat para conocer el ámbito de la lista de direcciones IP permitidos. Las direcciones IP y los participantes nat pueden cambiar. Debe comprobar periódicamente las entradas de la lista de direcciones IP permitidos como parte de los procedimientos de mantenimiento estándar.
 
 3. **Condiciones opcionales:**
 
@@ -152,7 +152,7 @@ Por ejemplo, supongamos que Blue Yonder Airlines ha contratado a Viajes Margie p
 
 - La `5322.From` dirección es blueyonder@news.blueyonderairlines.com, que es lo que verá en Outlook.
 
-Las listas de remitentes seguros y las listas de dominios seguros de las directivas contra correo no deseado de EOP inspeccionan solo las direcciones, lo que es similar a los remitentes seguros de Outlook que `5322.From` usan la `5322.From` dirección.
+Las listas de remitentes seguros y las listas de dominios seguros de las directivas contra correo no deseado de EOP inspeccionan solo las direcciones, lo que es similar a los remitentes seguros de `5322.From` Outlook que usan la `5322.From` dirección.
 
 Para evitar que este mensaje se filtre, puede realizar los siguientes pasos:
 

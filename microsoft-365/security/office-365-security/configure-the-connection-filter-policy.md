@@ -19,21 +19,21 @@ ms.custom:
 description: Los administradores pueden aprender a configurar el filtrado de conexiones en Exchange Online Protection (EOP) para permitir o bloquear correos electrónicos de servidores de correo electrónico.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef81d602e1f6da368e9d469bf1deaf0ef2c0a6af
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: c6ec8b4adcdda692ee561f7d50bacf0511642269
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165756"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290050"
 ---
 # <a name="configure-connection-filtering"></a>Configurar el filtrado de la conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
 Si es un cliente de Microsoft 365 con buzones en Exchange Online o un cliente independiente de Exchange Online Protection (EOP) sin buzones de Exchange Online, use el filtrado de conexiones en EOP (específicamente, la directiva de filtro de conexión predeterminada) para identificar servidores de correo electrónico de origen bueno o no deseado por sus direcciones IP. Los componentes clave de la directiva de filtro de conexión predeterminada son:
@@ -56,14 +56,14 @@ En este tema se describe cómo configurar la directiva de filtro de conexión pr
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
 - Necesita que se le asignen permisos en el Centro de seguridad y cumplimiento para poder realizar los procedimientos de este artículo:
-  - Para modificar la directiva de filtro de conexión  predeterminada, debe ser miembro de los grupos de roles Administración de la organización o Administrador **de** seguridad.
+  - Para modificar la directiva de filtro de conexión  predeterminada, debe ser miembro de los grupos de roles Administración de la organización o **Administrador de** seguridad.
   - Para obtener acceso de solo lectura a la directiva de filtro de conexión predeterminada, debe ser miembro de los grupos de roles Lector **global** o **Lector de** seguridad.
 
   Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
   **Notas**:
 
-  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para buscar las direcciones IP de origen de los servidores de correo electrónico (remitentes) que desea permitir o bloquear, puede comprobar el campo de encabezado IP **(CIP)** de conexión en el encabezado del mensaje. Para ver un encabezado de mensaje en varios clientes de correo electrónico, vea [Ver encabezados de mensajes de Internet en Outlook.](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)
@@ -78,9 +78,9 @@ En este tema se describe cómo configurar la directiva de filtro de conexión pr
 
 2. En la página **Configuración contra correo no** deseado, expanda Directiva de filtro de conexión haciendo clic en el icono Expandir y, a continuación, haga clic en Editar  ![ ](../../media/scc-expand-icon.png) **directiva.**
 
-3. En el **menú** desplegable Predeterminado que aparece, configura cualquiera de las siguientes opciones:
+3. En el **menú** desplegable Predeterminado que aparece, configure cualquiera de las siguientes opciones:
 
-   - **Descripción:** escriba texto descriptivo opcional.
+   - **Descripción:** escriba un texto descriptivo opcional.
 
    - **Lista de direcciones IP permitidos:** haga clic **en Editar**. En el **control desplegable Lista** de direcciones IP permitidos  que aparece, escriba una dirección IPV4 en el cuadro Dirección o intervalo de direcciones con la siguiente sintaxis:
 
@@ -92,7 +92,7 @@ En este tema se describe cómo configurar la directiva de filtro de conexión pr
 
      Para agregar la dirección IP o el intervalo de direcciones, haga clic **en Agregar** ![ ](../../media/ITPro-EAC-AddIcon.png) icono. Para quitar una entrada, seleccione la entrada en **Dirección IP permitida** y, a continuación, haga clic en  ![ ](../../media/scc-remove-icon.png) Quitar. Cuando haya terminado, haga clic en **Guardar**.
 
-   - **Lista de direcciones IP bloques:** haga clic **en Editar**. En el control desplegable Lista de direcciones **IP** no válidas que aparece, escriba una sola IP, un intervalo IP o una DIRECCIÓN CIDR en el cuadro Dirección o intervalo de direcciones, como se describió anteriormente en la configuración de la lista de direcciones **IP** permitidos. 
+   - **Lista de direcciones IP bloques:** haga clic **en Editar**. En el control desplegable Lista de direcciones **IP** no válidas que aparece, escriba una sola IP, intervalo IP o CIDR en el cuadro Dirección o intervalo de direcciones, tal como se describió anteriormente en la configuración lista de direcciones **IP** permitidos. 
 
      Para agregar la dirección IP o el intervalo de direcciones, haga clic **en Agregar** ![ ](../../media/ITPro-EAC-AddIcon.png) icono. Para quitar una entrada, seleccione la entrada en **Dirección IP bloqueada** y, a continuación, haga clic en  ![ ](../../media/scc-remove-icon.png) Quitar. Cuando haya terminado, haga clic en **Guardar**.
 
@@ -126,7 +126,7 @@ Set-HostedConnectionFilterPolicy -Identity Default [-AdminDisplayName <"Optional
 
   - IP CIDR: por ejemplo, 192.168.0.1/25. Los valores válidos de máscara de red son de /24 a /32.
 
-- Para *sobrescribir* las entradas existentes con los valores especificados, use la sintaxis siguiente: `IPAddressOrRange1,IPAddressOrRange2,...,IPAddressOrRangeN` .
+- Para *sobrescribir* las entradas existentes con los valores especificados, use la siguiente sintaxis: `IPAddressOrRange1,IPAddressOrRange2,...,IPAddressOrRangeN` .
 
 - Para *agregar o quitar direcciones* IP o intervalos de direcciones sin que ello afecte a otras entradas existentes, use la siguiente sintaxis: `@{Add="IPAddressOrRange1","IPAddressOrRange2",...,"IPAddressOrRangeN";Remove="IPAddressOrRange3","IPAddressOrRange4",...,"IPAddressOrRangeN"}` .
 
@@ -146,7 +146,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, [consulte Set-HostedConnectionFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedconnectionfilterpolicy).
 
-## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Para comprobar que ha modificado correctamente la directiva de filtro de conexión predeterminada, siga uno de estos pasos:
 
@@ -170,7 +170,7 @@ Como se ha descrito anteriormente en este artículo, solo puede usar una DIRECCI
 
 Ahora que conoce perfectamente los posibles problemas, puede crear una regla de flujo de correo con la siguiente configuración (como mínimo) para asegurarse de que los mensajes de estas direcciones IP omitirán el filtrado de correo no deseado:
 
-- Condición de **regla:** aplique esta regla si la dirección IP del remitente está en cualquiera de estos intervalos o coincide exactamente (escriba su IP CIDR con una máscara de red \>  \>  \> de /1 a /23).
+- Condición de **regla:** aplique esta regla si la dirección IP del remitente se encuentra en cualquiera de estos intervalos o coincide exactamente (escriba su IP CIDR con una máscara de red \>  \>  \> de /1 a /23).
 
 - Acción de regla: **modificar las propiedades del mensaje** Establecer el nivel de confianza contra correo no deseado \> **(SCL) Omitir** el filtrado de correo no \> **deseado.**
 
@@ -186,7 +186,7 @@ Por ejemplo, el servidor de correo electrónico de origen 192.168.1.25 envía co
 
 2. Configure una regla de flujo de correo con las siguientes opciones (como mínimo):
 
-   - Condición de **regla:** aplique esta regla si la dirección IP del remitente está en cualquiera de estos intervalos o coincide exactamente con \>  \> 192.168.1.25 (la misma dirección IP o intervalo de direcciones que agregó a la lista de direcciones IP **permitidos** en el paso \> anterior).
+   - Condición de **regla:** aplique esta regla si la dirección IP del remitente se encuentra en cualquiera de estos intervalos o coincide exactamente con \>  \> 192.168.1.25 (la misma dirección IP o intervalo de direcciones que agregó a la lista de direcciones IP **permitidos** en el paso \> anterior).
 
    - Acción de regla: **modificar las propiedades del mensaje** Establecer el nivel de confianza contra correo no deseado \> **(SCL)** \> **0**.
 
@@ -196,13 +196,13 @@ Por ejemplo, el servidor de correo electrónico de origen 192.168.1.25 envía co
 
 Los mensajes de un servidor de correo electrónico de la lista de direcciones IP permitidos siguen estando sujetos al filtrado de correo no deseado en los siguientes escenarios:
 
-- También se configura una dirección IP en la lista de direcciones IP  permitidos en un conector de entrada local basado en IP en cualquier inquilino de Microsoft 365 (vamos a llamar a este inquilino **A)** y el inquilino A y el servidor EOP que encuentra por primera vez el mensaje se encuentran en el mismo bosque de *Active* Directory en los centros de datos de Microsoft. En este escenario, **IPV:CAL**  se agrega a los encabezados de mensaje contra correo no deseado del mensaje [(lo](anti-spam-message-headers.md) que indica que el mensaje omitió el filtrado de correo no deseado), pero el mensaje sigue sujeto al filtrado de correo no deseado.
+- También se configura una dirección IP en la lista de direcciones IP  permitidos en un conector entrante local basado en IP en cualquier inquilino de Microsoft 365 (vamos a llamar a este inquilino **A)** y el inquilino A y el servidor EOP que primero encuentra el mensaje se encuentran en el mismo bosque de *Active* Directory en los centros de datos de Microsoft. En este escenario, **IPV:CAL**  se agrega a los encabezados de mensajes contra correo no deseado del mensaje [(lo](anti-spam-message-headers.md) que indica que el mensaje omitió el filtrado de correo no deseado), pero el mensaje sigue sujeto al filtrado de correo no deseado.
 
-- El inquilino que contiene la lista de direcciones IP permitidos y el servidor EOP que encuentra el mensaje por primera vez se encuentran en bosques de *Active* Directory diferentes en los centros de datos de Microsoft. En este escenario, **IPV:CAL** *no* se agrega a los encabezados del mensaje, por lo que el mensaje sigue sujeto al filtrado de correo no deseado.
+- El inquilino que contiene la lista de direcciones IP permitidos y el servidor de EOP que encuentra por primera vez el mensaje se encuentran en diferentes bosques de *Active* Directory en los centros de datos de Microsoft. En este escenario, **IPV:CAL** *no* se agrega a los encabezados del mensaje, por lo que el mensaje sigue sujeto al filtrado de correo no deseado.
 
 Si encuentra cualquiera de estos escenarios, puede crear una regla de flujo de correo con la siguiente configuración (como mínimo) para asegurarse de que los mensajes de las direcciones IP problemáticas omitirán el filtrado de correo no deseado:
 
-- Condición de regla: **aplique esta regla** si la dirección IP del remitente se encuentra en cualquiera de estos intervalos o coincide exactamente con \>  \>  \> (su dirección IP o direcciones).
+- Condición de regla: **aplique esta regla** si la dirección IP del remitente se encuentra en cualquiera de estos intervalos o coincide exactamente \>  \>  \> (su dirección IP o direcciones).
 
 - Acción de regla: **modificar las propiedades del mensaje** Establecer el nivel de confianza contra correo no deseado \> **(SCL) Omitir** el filtrado de correo no \> **deseado.**
 
@@ -210,4 +210,4 @@ Si encuentra cualquiera de estos escenarios, puede crear una regla de flujo de c
 
 ****
 
-![¿El icono corto de LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Nuevo en Microsoft 365?** Descubra cursos de vídeo gratuitos para administradores **de Microsoft 365** y profesionales de TI, que LinkedIn Learning le ofrece.
+![¿El icono corto de LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Nuevo en Microsoft 365?** Descubra cursos de vídeo gratuitos para administradores de **Microsoft 365** y profesionales de TI, que LinkedIn Learning le ofrece.

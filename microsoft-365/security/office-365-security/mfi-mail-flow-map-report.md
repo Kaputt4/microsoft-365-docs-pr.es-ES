@@ -14,23 +14,23 @@ ms.custom:
 description: Los administradores pueden aprender a usar el mapa de flujo de correo en el panel de flujo de correo del Centro de seguridad y cumplimiento de & para visualizar y realizar un seguimiento de cómo fluye el correo hacia y desde su organización a través de conectores y sin usar conectores.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 87a5780bd2485ba6ad3b295c09a30a4d7fc34277
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 2f507f7f01999492d17e168a2a56da906bfcb52d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150565"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290590"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>Mapa de flujo de correo en el Centro de & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender para Office 365 plan 1 y plan 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-El **mapa de flujo de correo** en el panel de [flujo](mail-flow-insights-v2.md) de correo del Centro de seguridad [& cumplimiento](https://protection.office.com) ofrece información sobre cómo fluye el correo a través de la organización. Puedes usar esta información para aprender patrones, identificar anomalías y solucionar problemas a medida que se producen.
+El **mapa de flujo de correo** en el panel [flujo](mail-flow-insights-v2.md) de correo del Centro de seguridad & [cumplimiento](https://protection.office.com) ofrece información sobre cómo fluye el correo a través de la organización. Puedes usar esta información para aprender patrones, identificar anomalías y solucionar problemas a medida que se producen.
 
 ![Widget Mapa de flujo de correo en el panel flujo de correo en el Centro de & cumplimiento](../../media/mfi-mail-flow-map-widget.png)
 
@@ -42,7 +42,7 @@ Al hacer clic en el widget **Mapa de flujo de** correo, se le llevará al inform
 
 Los siguientes gráficos están disponibles en la vista de informe:
 
-- **Mostrar datos para: Información general:** Esta es básicamente una vista más grande del widget. Si mantiene el puntero sobre un color específico, se muestra el número de mensajes para ese tipo de conector.
+- **Mostrar datos para: Información general:** Básicamente se trata de una vista más grande del widget. Si mueve el puntero sobre un color específico, se muestra el número de mensajes para ese tipo de conector.
 
   ![Vista de información general en el informe de mapa de flujo de correo](../../media/mfi-mail-flow-map-report-overview.png)
 
@@ -76,6 +76,6 @@ Para enviar por correo electrónico el informe de un intervalo de fechas especí
 
 Para volver a la vista informes, haga clic **en Ver informe.**
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 Para obtener información sobre otras perspectivas en el panel de flujo de correo, vea Información sobre el flujo de correo en el Centro de [& cumplimiento.](mail-flow-insights-v2.md)

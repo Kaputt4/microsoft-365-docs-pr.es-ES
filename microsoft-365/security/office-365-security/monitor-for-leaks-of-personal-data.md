@@ -19,12 +19,12 @@ search.appverid:
 description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1425015843b2f444c6a410df449eeeaf4045ee5
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: a8fb8557d6cd2677aeb6dcda75d34e86ada8f68c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261430"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290674"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
 
@@ -65,7 +65,7 @@ Además, puede usar los informes DLP para ajustar las directivas DLP a medida qu
 
 Los informes DLP están en el centro de seguridad y el centro de cumplimiento. Vaya a Informes \> Ver informes. En Prevención de pérdida de datos (DLP), elija Coincidencias de regla y directiva DLP o Falsos positivos y reemplazos de DLP.
 
-Para obtener más información, consulte [Ver los informes de prevención de pérdida de datos](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).
+Para obtener más información, consulte [Ver los informes de prevención de pérdida de datos](../../compliance/view-the-dlp-reports.md).
 
 ![Informe que muestra coincidencias de directivas DLP](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -87,17 +87,17 @@ Existen soluciones que se adhieren a los Registros de auditoría unificados medi
 
 Más información sobre las directivas de alerta y buscar en el registro de auditoría:
 
-- [Directivas de alerta en los centros de seguridad y cumplimiento de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+- [Directivas de alerta en los centros de seguridad y cumplimiento de Microsoft 365](../../compliance/alert-policies.md)
 
-- [Buscar en el registro de auditoría de actividad de usuario y administración de Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (introducción)
+- [Buscar en el registro de auditoría de actividad de usuario y administración de Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (introducción)
 
-- [Activar o desactivar la búsqueda de registros de auditoría](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+- [Activar o desactivar la búsqueda de registros de auditoría](../../compliance/turn-audit-log-search-on-or-off.md)
 
-- [Buscar en el registro de auditoría](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+- [Buscar en el registro de auditoría](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
 
-- [Propiedades detalladas del registro de auditoría](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
+- [Propiedades detalladas del registro de auditoría](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 

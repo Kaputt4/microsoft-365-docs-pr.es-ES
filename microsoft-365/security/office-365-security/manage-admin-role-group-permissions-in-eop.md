@@ -13,21 +13,21 @@ ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: Los administradores pueden aprender a asignar o quitar permisos en el Centro de administración de Exchange (EAC) en Exchange Online Protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b53023521f477b5e864424ec648ccf7e5b749d0c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ce272985f195f44c57848e6861cefb64431698b9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166992"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289930"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>Administrar grupos de roles en EOP independiente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
--  [Exchange Online Protection independiente](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection independiente](exchange-online-protection-overview.md)
 
-En organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, puede usar el Centro de administración de Exchange (EAC) para agregar usuarios a grupos de roles. La adición de usuarios a un grupo de roles proporciona al usuario permisos para realizar tareas de administración específicas. También puede quitar usuarios de grupos de roles.
+En organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, puede usar el Centro de administración de Exchange (EAC) para agregar usuarios a grupos de roles. Agregar un usuario a un grupo de roles concede al usuario permisos para realizar tareas de administración específicas. También puede quitar usuarios de grupos de roles.
 
 Para obtener más información acerca de los roles y grupos de roles, vea [Permisos en EOP independiente.](feature-permissions-in-eop.md)
 
@@ -37,12 +37,12 @@ Para obtener más información acerca de los roles y grupos de roles, vea [Permi
 
 - Para abrir EOP PowerShell independiente, consulte Conectarse a [Exchange Online Protection PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)
 
-- Deberá tener asignados permisos en Exchange Online Protection antes de poder realizar los procedimientos descritos en este artículo. Específicamente, necesita la función **Administración de** roles, que se asigna al grupo de roles **Administración** de la organización de forma predeterminada. Para obtener más información, vea [Permisos en EOP](feature-permissions-in-eop.md) independiente y Usar el EAC modificar la lista [de miembros en grupos de roles.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+- Deberá tener asignados permisos en Exchange Online Protection antes de poder realizar los procedimientos descritos en este artículo. Específicamente, necesita el rol **Administración de** funciones, que se asigna al grupo de roles **Administración** de la organización de forma predeterminada. Para obtener más información, vea [Permisos en EOP](feature-permissions-in-eop.md) independiente y Usar el EAC modificar la lista [de miembros en grupos de roles.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- Para obtener información acerca de los métodos abreviados de teclado que pueden aplicarse a los procedimientos de este artículo, vea [Métodos abreviados](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)de teclado para el Centro de administración de Exchange en Exchange Online.
+- Para obtener información acerca de los métodos abreviados de teclado que pueden aplicarse a los procedimientos de este artículo, consulte [Métodos abreviados](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)de teclado para el Centro de administración de Exchange en Exchange Online.
 
 > [!TIP]
-> ¿Problemas? Pida ayuda en el foro de [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) .
+> ¿Problemas? Pida ayuda en el foro de [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) .
 
 ## <a name="use-the-eac-to-manage-role-groups"></a>Usar el EAC para administrar grupos de roles
 
@@ -60,7 +60,7 @@ Al crear un nuevo grupo de roles, puede configurar todas las opciones usted mism
 
    - **Cree manualmente un nuevo grupo de roles:** haga clic **en el icono** ![ ](../../media/ITPro-EAC-AddIcon.png) Agregar.
 
-   - **Copie un grupo de roles existente:** seleccione el grupo de funciones que desea copiar y, a continuación, haga clic **en el icono** Copiar ![ ](../../media/ITPro-EAC-CopyIcon.png) copia.
+   - **Copie un grupo de roles existente:** seleccione el grupo de funciones que desea copiar y, a continuación, haga clic en **el icono** ![ Copiar ](../../media/ITPro-EAC-CopyIcon.png) copia.
 
 2. En la **ventana Nuevo grupo de** roles que aparece, configure las siguientes opciones:
 
@@ -68,7 +68,7 @@ Al crear un nuevo grupo de roles, puede configurar todas las opciones usted mism
 
     - **Descripción:** escriba una descripción opcional para el grupo de roles.
 
-    - **Roles:** haga **clic en** agregar icono o quitar icono quitar para seleccionar o modificar los roles asignados ![ al grupo de ](../../media/ITPro-EAC-AddIcon.png)  ![ ](../../media/ITPro-EAC-RemoveIcon.gif) roles.
+    - **Roles:** haga **clic en** el icono Agregar agregar o quitar para seleccionar o modificar los roles asignados al ![ grupo de ](../../media/ITPro-EAC-AddIcon.png)  ![ ](../../media/ITPro-EAC-RemoveIcon.gif) roles.
 
     - **Miembros:** haga **clic en el** icono Agregar agregar ![ ](../../media/ITPro-EAC-AddIcon.png) **o** quitar para modificar la pertenencia al grupo ![ de ](../../media/ITPro-EAC-RemoveIcon.gif) roles.
 
@@ -90,7 +90,7 @@ Las mismas opciones están disponibles al modificar grupos de roles que al crear
 
 #### <a name="use-the-eac-modify-the-list-of-members-in-role-groups"></a>Usar el EAC modificar la lista de miembros en grupos de roles
 
-1. En el EAC,  vaya a Roles de administrador de permisos, seleccione el grupo de roles que desea modificar y, a continuación, haga clic en el icono \>   ![ Editar edición. ](../../media/ITPro-EAC-EditIcon.png)
+1. En el EAC, vaya **a** Roles de administrador de permisos, seleccione el grupo de roles que desea modificar y, a continuación, haga clic en el icono \> Editar  ![ ](../../media/ITPro-EAC-EditIcon.png) edición.
 
 2. En la página de propiedades del grupo de roles que se abre, en la sección **Miembros,** siga uno de estos pasos:
 

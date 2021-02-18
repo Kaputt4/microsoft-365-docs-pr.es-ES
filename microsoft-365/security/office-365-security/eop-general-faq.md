@@ -15,19 +15,19 @@ ms.custom:
 description: Obtenga respuestas a las preguntas generales más comunes sobre el servicio de filtrado de correo electrónico hospedado en la nube de Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0a5712d2bfb110c3292dee06b456161599d40b1
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1a1ce845ef50d7485113c211b0a8d7770ea57815
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165492"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290026"
 ---
 # <a name="eop-general-faq"></a>Preguntas más frecuentes sobre EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
--  [Exchange Online Protection independiente](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection independiente](exchange-online-protection-overview.md)
 
 Aquí respondemos a las preguntas generales más comunes sobre el servicio de filtrado de correo electrónico hospedado en la nube de Exchange Online Protection (EOP). Para ver otros temas sobre preguntas frecuentes (P+F), visite los siguientes enlaces:
 
@@ -65,7 +65,7 @@ Puede usar EOP para proteger los buzones locales sin usar otras características
 
 ## <a name="why-do-i-need-a-microsoft-365-tenant-when-signing-up-for-email-filtering-through-eop"></a>¿Por qué necesito un inquilino de Microsoft 365 al registrarse para el filtrado de correo electrónico a través de EOP?
 
-Microsoft 365 es el nombre dado a una colección de productos y servicios a los que se puede tener acceso a través de un inquilino de Microsoft 365. Piense en el inquilino de Microsoft 365 como el punto de partida al que puede agregar licencias para el filtrado de correo electrónico.
+Microsoft 365 es el nombre dado a una colección de productos y servicios a los que se puede acceder a través de un inquilino de Microsoft 365. Piense en el inquilino de Microsoft 365 como el punto de partida al que puede agregar licencias para el filtrado de correo electrónico.
 
 ## <a name="does-eop-have-a-communication-portal-where-i-can-find-out-about-known-issues-and-expected-resolutions-what-about-new-features"></a>¿Dispone EOP de un portal de comunicación donde pueda obtener información sobre problemas conocidos y soluciones previstas? ¿Qué pasa con las nuevas características?
 
@@ -95,4 +95,4 @@ Sí. Para más información sobre los límites de EOP, vea [Límites de Exchange
 
 ## <a name="does-eop-support-powershell"></a>¿Es EOP compatible con PowerShell?
 
-Sí, la funcionalidad completa de EOP está disponible a través de PowerShell: Exchange Online PowerShell para organizaciones con buzones de Exchange Online; EOP PowerShell independiente para organizaciones EOP independientes. Para obtener más información, [vea Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) y [Exchange Online Protection PowerShell.](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell)
+Sí, la funcionalidad completa de EOP está disponible a través de PowerShell: Exchange Online PowerShell para organizaciones con buzones de Exchange Online; EOP PowerShell independiente para organizaciones de EOP independientes. Para obtener más información, [vea Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) y [Exchange Online Protection PowerShell.](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell)

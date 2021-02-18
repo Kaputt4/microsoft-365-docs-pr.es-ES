@@ -13,27 +13,27 @@ ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Puede usar reglas de flujo de correo (reglas de transporte) para identificar y tomar medidas en los mensajes que pasan por la organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f873d4e46c9e3b7f085e03a9fbb19e5914317fa
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d189a9f4b21828fa4e23f7d5a325b4e9c56259bc
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167040"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289942"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Reglas de flujo de correo (reglas de transporte) en EOP independiente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 En organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, puede usar reglas de flujo de correo (también conocidas como reglas de transporte) para identificar y tomar medidas en los mensajes que pasan por la organización.
 
 En este tema se explican los componentes de las reglas de flujo de correo y cómo funcionan.
 
-Para obtener los pasos necesarios para crear, copiar y administrar reglas de flujo de correo, consulte Administrar reglas de flujo de [correo en Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) Para cada regla, tiene la posibilidad de aplicarla, probarla o probarla y notificar al remitente. Para obtener más información sobre las opciones de prueba, consulte [Probar](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) reglas de flujo de correo y [sugerencias de directivas en Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)
+Para obtener los pasos necesarios para crear, copiar y administrar reglas de flujo de correo, consulte Administrar reglas de flujo de [correo en Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) Para cada regla, tiene la posibilidad de aplicarla, probarla o probarla y notificar al remitente. Para obtener más información sobre las opciones de prueba, consulte [Probar reglas](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) de flujo de correo y [sugerencias de directivas en Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)
 
 Para obtener informes de resumen y detalles sobre los mensajes que coincidieron con las reglas de flujo de correo, vea Usar informes de protección de correo para ver datos sobre malware, correo no deseado y detecciones [de reglas.](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)
 
@@ -51,7 +51,7 @@ Para implementar directivas de mensajería específicas mediante el uso de regla
 
 - [Reducción de las amenazas de malware a través del bloqueo de datos adjuntos en Exchange Online Protection](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
-- [Definir reglas para cifrar o descifrar mensajes de correo electrónico en Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
+- [Definir reglas para cifrar o descifrar mensajes de correo electrónico en Office 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md)
 
 En el siguiente vídeo se proporciona una demostración de la configuración de reglas de flujo de correo en EOP independiente.
 
@@ -63,7 +63,7 @@ Una regla de flujo de correo consta de condiciones, excepciones, acciones y prop
 
 - **Condiciones:** identifique los mensajes a los que desea aplicar las acciones. Algunas condiciones examinan campos de encabezado del mensaje (por ejemplo, los campos Para, De o CC). Otras examinan propiedades del mensaje (por ejemplo, el asunto, el cuerpo, los datos adjuntos, el tamaño del mensaje o la clasificación del mensaje). La mayoría de las condiciones exigen que se especifique un operador de comparación (por ejemplo, es igual a, no es igual a o contiene) y un valor de coincidencia. En caso de que no haya condiciones o excepciones, la regla se aplica a todos los mensajes.
 
-Para obtener más información acerca de las condiciones de las reglas de flujo de correo en EOP independiente, vea Condiciones y excepciones de reglas de flujo de correo [(predicados) en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
+Para obtener más información acerca de las condiciones de regla de flujo de correo en EOP independiente, vea Condiciones y excepciones de reglas de flujo de correo [(predicados) en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
 
 - **Excepciones:** identifique opcionalmente los mensajes a los que no deben aplicarse las acciones. Los mismos identificadores de mensaje que están disponibles en las condiciones están también disponibles en las excepciones. Las excepciones invalidan las condiciones e impiden que se apliquen las acciones de regla a un mensaje, aunque este cumpla todas las condiciones configuradas.
 
@@ -122,13 +122,13 @@ Hay varios tipos de mensajes que pasan a través de una organización. En la tab
 |Hay varios tipos de mensajes que pasan a través de una organización. En la tabla siguiente se muestran los tipos de mensajes que se pueden procesar mediante reglas de transporte.|Tipo de mensaje|
 |---|---|
 |**Mensajes normales:** mensajes que contienen un único formato de texto enriquecido (RTF), HTML o cuerpo de mensaje de texto sin formato o un conjunto de varias partes o un conjunto alternativo de cuerpos de mensaje.|Sí|
-|**Cifrado de mensajes de Office 365:** mensajes cifrados por el cifrado de mensajes de Office 365 en Office 365. Para obtener más información, vea [Cifrado en Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Las reglas siempre pueden acceder a los encabezados de sobre y procesar los mensajes según las condiciones que se inspeccionan en los encabezados. <p> Para que una regla inspeccione o modifique el contenido de un mensaje cifrado, deberá comprobar que el descifrado de transporte está habilitado (como obligatorio u opcional; el valor predeterminado es Opcional). Para obtener más información, vea Definir reglas para cifrar o descifrar mensajes de correo [electrónico en Office 365.](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)|
+|**Cifrado de mensajes de Office 365:** mensajes cifrados por el cifrado de mensajes de Office 365 en Office 365. Para obtener más información, vea [Cifrado en Office 365](../../compliance/encryption.md).|Las reglas siempre pueden acceder a los encabezados de sobre y procesar los mensajes según las condiciones que se inspeccionan en los encabezados. <p> Para que una regla inspeccione o modifique el contenido de un mensaje cifrado, deberá comprobar que el descifrado de transporte está habilitado (como obligatorio u opcional; el valor predeterminado es Opcional). Para obtener más información, vea Definir reglas para cifrar o descifrar mensajes de correo [electrónico en Office 365.](../../compliance/define-mail-flow-rules-to-encrypt-email.md)|
 |**Mensajes cifrados S/MIME**|Las reglas solo pueden acceder a los encabezados de sobre y procesar los mensajes según las condiciones que se inspeccionan en los encabezados. <p> No se pueden procesar reglas con condiciones que requieran la inspección del contenido del mensaje ni acciones que pueden modificar dicho contenido.|
-|**Mensajes protegidos por RMS:** mensajes a los que se aplicó una directiva de Active Directory Rights Management Services (AD RMS) o Azure Rights Management (RMS).|Las reglas siempre pueden acceder a los encabezados de sobre y procesar los mensajes según las condiciones que se inspeccionan en los encabezados. <p> Para que una regla inspeccione o modifique el contenido de un mensaje protegido por RMS, deberá comprobar que el descifrado de transporte está habilitado (como obligatorio u opcional; el valor predeterminado es Opcional).|
-|**Mensajes con firma clara:** mensajes firmados pero no cifrados.|Sí|
+|**Mensajes protegidos por RMS:** mensajes a los que se ha aplicado una directiva de Active Directory Rights Management Services (AD RMS) o Azure Rights Management (RMS).|Las reglas siempre pueden acceder a los encabezados de sobre y procesar los mensajes según las condiciones que se inspeccionan en los encabezados. <p> Para que una regla inspeccione o modifique el contenido de un mensaje protegido por RMS, deberá comprobar que el descifrado de transporte está habilitado (como obligatorio u opcional; el valor predeterminado es Opcional).|
+|**Mensajes con firma clara:** mensajes que se han firmado pero no cifrado.|Sí|
 |Mensajes **de** mensajería unificada: mensajes creados o procesados por el servicio de mensajería unificada, como correo de voz, fax, notificaciones de llamadas perdidas y mensajes creados o reenviados mediante Microsoft Outlook Voice Access.|Sí|
 |**Mensajes anónimos:** mensajes enviados por remitentes anónimos.|Sí|
-|**Informes de lectura:** informes que se generan en respuesta a las solicitudes de confirmación de lectura de los remitentes. Los informes de lectura tienen una clase de mensaje `IPM.Note*.MdnRead` de o `IPM.Note*.MdnNotRead` .|Sí|
+|**Informes de lectura:** informes que se generan en respuesta a las solicitudes de confirmación de lectura de los remitentes. Los informes de lectura tienen una clase de `IPM.Note*.MdnRead` mensaje de o `IPM.Note*.MdnNotRead` .|Sí|
 |
 
 ## <a name="what-else-should-i-know"></a>¿Qué más debo saber?

@@ -20,30 +20,30 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la inteligencia de suplantación de identidad en Exchange Online Protection (EOP), donde puede permitir o bloquear remitentes suplantados específicos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55a744cf2d226e72e8d84f6eb125f2baf9b9d3a0
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2a65400d1b48abfc6ac0e4dd38a8245dd7b4f87b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167268"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289692"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurar la inteligencia de suplantación de seguridad en EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-En las organizaciones de Microsoft 365 con buzones en Exchange Online o en organizaciones de Exchange Online Protection (EOP) independientes sin buzones de Exchange Online, los mensajes de correo electrónico entrantes se protegen automáticamente contra la suplantación por parte de EOP a partir de octubre de 2018. EOP usa la inteligencia de suplantación de identidad como parte de la defensa general de su organización contra la suplantación de identidad. Para obtener más información, vea [Protección contra la suplantación en EOP.](anti-spoofing-protection.md)
+En las organizaciones de Microsoft 365 con buzones en Exchange Online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, los mensajes de correo electrónico entrantes se protegen automáticamente contra la suplantación por parte de EOP a partir de octubre de 2018. EOP usa la inteligencia de suplantación de identidad como parte de la defensa general de su organización contra la suplantación de identidad. Para obtener más información, vea [Protección contra la suplantación en EOP.](anti-spoofing-protection.md)
 
 Cuando un remitente suplanta una dirección de correo electrónico, parece que es un usuario de uno de los dominios de su organización o un usuario de un dominio externo que envía correo electrónico a su organización. Los atacantes que suplanten a los remitentes para enviar correo no deseado o correo de suplantación de identidad deben bloquearse. Sin embargo, existen escenarios en los que los remitentes legítimos están suplantando la identidad. Por ejemplo:
 
 - Escenarios legítimos para suplantar dominios internos:
 
   - Los remitentes de terceros usan su dominio para enviar correo masivo a sus propios empleados para los sondeos de la empresa.
-  - Una empresa externa genera y envía actualizaciones de publicidad o productos en tu nombre.
+  - Una empresa externa genera y envía actualizaciones de productos o publicidad en tu nombre.
   - Un asistente debe enviar periódicamente correo electrónico a otra persona de la organización.
   - Una aplicación interna envía notificaciones por correo electrónico.
 
@@ -52,7 +52,7 @@ Cuando un remitente suplanta una dirección de correo electrónico, parece que e
   - El remitente se encuentra en una lista de distribución de correo (también conocida como lista de discusión) y la lista de distribución retransmite el correo electrónico del remitente original a todos los participantes de la lista de distribución de correo.
   - Una compañía externa envía correo electrónico en nombre de otra compañía (por ejemplo, un informe automatizado o una compañía de software como servicio).
 
-La inteligencia de suplantación de identidad y, específicamente, la directiva de inteligencia de suplantación de identidad predeterminada (y única), ayuda a garantizar que el correo electrónico suplantado enviado por remitentes legítimos no se detecta en filtros de correo no deseado de EOP o sistemas de correo electrónico externos, a la vez que protege a los usuarios contra ataques de correo no deseado o de suplantación de identidad.
+La inteligencia de suplantación de identidad y, específicamente, la directiva de inteligencia de suplantación de identidad predeterminada (y única), ayuda a garantizar que el correo electrónico suplantado enviado por remitentes legítimos no se detecta en filtros de correo no deseado de EOP o sistemas de correo electrónico externos, a la vez que protege a los usuarios de los ataques de correo no deseado o de suplantación de identidad.
 
 Puede administrar la inteligencia de suplantación en el Centro de seguridad y cumplimiento de & o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; EOP PowerShell independiente para organizaciones sin buzones de Exchange Online).
 
@@ -70,7 +70,7 @@ Puede administrar la inteligencia de suplantación en el Centro de seguridad y c
 
   **Notas**:
 
-  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para obtener la configuración recomendada para la inteligencia de suplantación de identidad, vea la configuración predeterminada de la directiva [contra suplantación de identidad de EOP.](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)
@@ -93,7 +93,7 @@ Puede administrar la inteligencia de suplantación en el Centro de seguridad y c
 
 4. En el menú Decidir si estos remitentes pueden **suplantar** la identidad de los usuarios en el control desplegable que aparece, seleccione una de las siguientes pestañas:
 
-   - **Dominios:** remitentes que suplanta a los usuarios en sus dominios internos.
+   - **Sus dominios:** remitentes que suplanta a los usuarios en sus dominios internos.
    - **Dominios externos:** remitentes que suplanta a los usuarios en dominios externos.
 
 5. Haga clic en el icono Expandir de la columna ¿Se ![ ](../../media/scc-expand-icon.png) permite **suplantación de identidad?** Elija **Sí** para permitir al remitente suplantado o **elija No** para marcar el mensaje como suplantado. La acción se controla mediante la directiva contra suplantación de identidad predeterminada o las directivas personalizadas contra suplantación de identidad (el valor predeterminado es Mover mensaje a la carpeta **correo no deseado).** Para obtener más información, vea [Configuración de suplantación de identidad en directivas contra suplantación de identidad](set-up-anti-phishing-policies.md#spoof-settings).
@@ -151,7 +151,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, [consulte Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-phishfilterpolicy).
 
-Para configurar remitentes permitidos y bloqueados en la inteligencia de suplantación de identidad, siga estos pasos:
+Para configurar remitentes permitidos y bloqueados en inteligencia de suplantación de identidad, siga estos pasos:
 
 1. Capture la lista actual de remitentes suplantados detectados escribiendo el resultado del cmdlet **Get-PhishFilterPolicy** en un archivo CSV:
 

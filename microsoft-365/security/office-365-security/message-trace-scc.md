@@ -14,21 +14,21 @@ ms.custom:
 description: Los administradores pueden usar el seguimiento de mensajes en el Centro de & cumplimiento para averiguar qué ha ocurrido con los mensajes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b0c27d8e0f43557be537d6e7c9fa096441cc229
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 1ce26f7a6cdad15019e2b40eb6f8746e5723d4f0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150284"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290662"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 ## <a name="message-trace-features"></a>Características de seguimiento de mensajes
 
@@ -38,7 +38,7 @@ El seguimiento de mensajes en el Centro de & cumplimiento mejora el seguimiento 
 
 > [!NOTE]
 >
-> - Para realizar un seguimiento de mensajes, debe ser miembro de los grupos de roles Administración de la organización, Administración de cumplimiento o Servicio de ayuda. Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+> - Para realizar un seguimiento de mensajes, debe ser miembro de los grupos de roles Administración de la organización, Administración de cumplimiento o Servicio de ayuda. Para más información, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 >
 > - El número máximo de mensajes que se muestran en los resultados depende del tipo de informe seleccionado (vea la sección Elegir tipo [de](#choose-report-type) informe para obtener más información). El [cmdlet Get-HistoricalSearch en](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) Exchange Online PowerShell o EOP PowerShell independiente devuelve todos los mensajes de los resultados.
 
@@ -50,15 +50,15 @@ El seguimiento de mensajes en el Centro de & cumplimiento mejora el seguimiento 
 
 ## <a name="message-trace-page"></a>Página de seguimiento de mensajes
 
-Desde aquí puede iniciar un nuevo seguimiento predeterminado haciendo clic en el **botón Iniciar un** seguimiento. Esto buscará todos los mensajes de todos los remitentes y destinatarios de los dos últimos días. O bien, puede usar una de las consultas almacenadas de las categorías de consulta disponibles y ejecutarlas tal y como están o usarlas como puntos de partida para sus propias consultas:
+Desde aquí, puede iniciar un nuevo seguimiento predeterminado haciendo clic en **el botón Iniciar un** seguimiento. Esto buscará todos los mensajes de todos los remitentes y destinatarios de los dos últimos días. O bien, puede usar una de las consultas almacenadas de las categorías de consulta disponibles y ejecutarlas tal y como están o usarlas como puntos de partida para sus propias consultas:
 
 - **Consultas predeterminadas:** consultas integradas proporcionadas por Microsoft 365.
 
 - **Consultas personalizadas:** consultas guardadas por los administradores de la organización para su uso futuro.
 
-- **Consultas autoguardadas:** las últimas diez consultas ejecutadas más recientemente. Esta lista hace que sea fácil retogar donde lo dejó.
+- **Consultas autoguardadas:** las últimas diez consultas ejecutadas más recientemente. Esta lista hace que sea más fácil retogar donde lo dejó.
 
-También en esta página hay una sección **de** informes descargables para las solicitudes que ha enviado, así como los informes en sí cuando están disponibles para su descarga.
+También en esta  página hay una sección de informes descargables para las solicitudes que ha enviado, así como los informes en sí cuando están disponibles para su descarga.
 
 ## <a name="options-for-a-new-message-trace"></a>Opciones para un nuevo seguimiento de mensajes
 
@@ -95,7 +95,7 @@ El valor predeterminado es **2 días,** pero puede especificar intervalos de fec
   > [!NOTE]
   > El resumen mejorado y los informes extendidos se prepara con datos de seguimiento de mensajes archivados y pueden tardar hasta varias horas antes de que el informe esté disponible para su descarga. Dependiendo del número de administradores que también han enviado solicitudes de informe al mismo tiempo, es posible que también observe un retraso antes de que se inicie el procesamiento de la solicitud en cola.
 
-- Guardar una consulta en la **vista Deslizante** guarda el intervalo de tiempo relativo (por ejemplo, 3 días a partir de hoy). Guardar una  consulta en la vista personalizada guarda el intervalo de fecha y hora absoluto (por ejemplo, 2018-05-06 13:00 a 2018-05-08 18:00).
+- Guardar una consulta en la **vista** Deslizante guarda el intervalo de tiempo relativo (por ejemplo, 3 días a partir de hoy). Guardar una  consulta en la vista personalizada guarda el intervalo de fecha y hora absoluto (por ejemplo, 2018-05-06 13:00 a 2018-05-08 18:00).
 
 ### <a name="more-search-options"></a>Más opciones de búsqueda
 
@@ -149,7 +149,7 @@ Los tipos de informes disponibles son:
 
 > [!NOTE]
 > 
-> - El resumen mejorado y los informes extendidos se prepara con datos de seguimiento de mensajes archivados y pueden tardar hasta varias horas antes de que el informe esté disponible para su descarga. Dependiendo del número de administradores que también han enviado solicitudes de informe al mismo tiempo, es posible que también observe un retraso antes de que la solicitud en cola comience a procesarse.
+> - El resumen mejorado y los informes extendidos se prepararon con datos de seguimiento de mensajes archivados y pueden tardar hasta varias horas antes de que el informe esté disponible para su descarga. Dependiendo del número de administradores que también han enviado solicitudes de informe al mismo tiempo, es posible que también observe un retraso antes de que la solicitud en cola comience a procesarse.
 > 
 > - Aunque puede seleccionar un resumen mejorado o un informe extendido para cualquier intervalo de fecha y hora, normalmente las últimas cuatro horas de datos archivados aún no estarán disponibles para estos dos tipos de informes.
 
@@ -159,7 +159,7 @@ Para obtener más información acerca de la información que se devuelve en los 
 
 ## <a name="message-trace-results"></a>Resultados de seguimiento de mensajes
 
-Los distintos tipos de informes devuelven distintos niveles de información. La información que está disponible en los diferentes informes se describe en las secciones siguientes.
+Los distintos tipos de informes devuelven diferentes niveles de información. La información que está disponible en los diferentes informes se describe en las secciones siguientes.
 
 ### <a name="summary-report-output"></a>Resultado del informe de resumen
 
@@ -191,9 +191,9 @@ Puede exportar los resultados después de seleccionar una  o más filas haciendo
 
 Los registros de mensajes relacionados son registros que compartieron el mismo id. de mensaje. Recuerde que incluso un solo mensaje enviado entre dos personas puede generar varios registros. El número de registros aumenta cuando el mensaje se ve afectado por la expansión del grupo de distribución, el reenvío, las reglas de flujo de correo (también conocidas como reglas de transporte), etc.
 
-Después de activar la casilla de verificación de una fila,  puede buscar registros relacionados para  el mensaje haciendo clic en el botón Buscar relacionado que aparece o seleccionando Más opciones Más buscar registros relacionados para ![ este ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **mensaje**).
+Después de activar la casilla de verificación de una fila,  puede encontrar registros relacionados para  el mensaje haciendo clic en el botón Buscar relacionado que aparece o seleccionando Más opciones Más registros relacionados para este ![ ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **mensaje**).
 
-Para obtener más información acerca del Id. de mensaje, consulte la sección Id. de mensaje anteriormente en este artículo.
+Para obtener más información acerca del id. de mensaje, consulte la sección Id. de mensaje anteriormente en este artículo.
 
 #### <a name="message-trace-details"></a>Detalles del seguimiento de mensajes
 
@@ -301,9 +301,9 @@ Los informes extendidos disponibles (completados) están disponibles en la secci
 
   - `SMTP`
 
-- **event_id:** se corresponden con los valores del evento **Message** que se explican en la sección [Buscar registros relacionados para este](#find-related-records-for-this-message) mensaje.
+- **event_id:** se corresponden con los valores **del** evento Message que se explican en la sección Buscar registros [relacionados para este](#find-related-records-for-this-message) mensaje.
 
-- **internal_message_id:** identificador de mensaje asignado por el servidor de Exchange Online que está procesando el mensaje.
+- **internal_message_id:** identificador de mensaje asignado por el servidor de Exchange Online que procesa actualmente el mensaje.
 
 - **recipient_address:** las direcciones de correo electrónico de los destinatarios del mensaje. Si hay varias direcciones de correo electrónico, se separan por punto y coma (;).
 
@@ -333,7 +333,7 @@ Los informes extendidos disponibles (completados) están disponibles en la secci
 
   - Fecha y hora de origen del mensaje en UTC y `DELIVER` `SEND` eventos. La fecha y hora de origen es la hora en que el mensaje entró por primera vez en la organización de Exchange Online. La fecha y hora UTC se representa en el formato de fecha y hora ISO 8601: , donde = año, = mes, = día, indica el principio del componente de `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` `mm` `dd` `T` hora, `hh` = hora, `mm` = minuto, = segundo, `ss` = `fff` `Z` `Zulu` fracciones de segundo y significa , que es otra forma de indicar UTC.
 
-  - Errores de autenticación. Por ejemplo, es posible que vea el valor y el tipo de autenticación `11a` que se usó cuando se produjo el error de autenticación.
+  - Errores de autenticación. Por ejemplo, es posible que vea el valor y el tipo de autenticación que se `11a` usó cuando se produjo el error de autenticación.
 
 - **tenant_id:** un valor GUID que representa la organización de Exchange Online (por ejemplo, `39238e87-b5ab-4ef6-a559-af54c6b07b42` ).
 
@@ -351,7 +351,7 @@ Un **custom_data** que comienza con `S:SFA` es del agente de filtro de correo no
 
 ****
 
-|Valor|Description|
+|Valor|Descripción|
 |---|---|
 |`SFV=NSPM`|El mensaje se marcó como correo seguro y se envió a los destinatarios correspondientes.|
 |`SFV=SPM`|El mensaje se marcó como correo no deseado mediante el filtrado contra correo no deseado (también conocido como filtrado de contenido).|
@@ -381,7 +381,7 @@ Un **custom_data** que comienza con `S:AMA` es del agente de filtro de malware. 
 
 ****
 
-|Valor|Description|
+|Valor|Descripción|
 |---|---|
 |`AMA=SUM|v=1|` o `AMA=EV|v=1`|Se determinó que el mensaje contiene malware. `SUM` indica que el malware podría haber sido detectado por cualquier número de motores. `EV` indica que un motor específico detectó el malware. Cuando un motor detecta el malware, se activan las acciones siguientes.|
 |`Action=r`|El mensaje se reemplazó.|
@@ -407,11 +407,11 @@ Un **custom_data** que comienza con es del agente de regla de transporte para la
 
 ****
 
-|Valor|Description|
+|Valor|Descripción|
 |---|---|
 |`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y la hora en UTC en que se produjo la coincidencia de regla.|
-|`Action=<ActionDefinition>`|La acción que se aplicó. Para obtener una lista de acciones disponibles, consulte [Acciones de regla de flujo de correo en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
+|`Action=<ActionDefinition>`|La acción que se aplicó. Para obtener una lista de las acciones disponibles, consulte [Acciones de regla de flujo de correo en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
 |`Mode=<Mode>`|El modo de la regla. Los valores válidos son:<ul><li>**Exigir:** se aplicarán todas las acciones de la regla.</li><li>**Prueba con sugerencias de directiva:**: se enviará cualquier acción de sugerencia de directiva, pero no se actuará sobre otras acciones de aplicación.</li><li>**Prueba sin sugerencias** de directiva: las acciones se mostrarán en un archivo de registro, pero los remitentes no recibirán ninguna notificación y no se actuará sobre las acciones de aplicación.</li></ul>|
 |
 

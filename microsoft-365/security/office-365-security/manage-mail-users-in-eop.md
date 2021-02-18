@@ -14,19 +14,19 @@ description: Obtenga información sobre cómo administrar usuarios de correo en 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34edafea7567da04094ea386d469d3d27937eee5
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 6a0dc1c0c343be77c6d6f713ee6b68a08a4fe5be
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166398"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289918"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Administrar usuarios de correo en EOP independiente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
--  [Exchange Online Protection independiente](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection independiente](exchange-online-protection-overview.md)
 
 En organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, los usuarios de correo son el tipo fundamental de cuenta de usuario. Un usuario de correo tiene credenciales de cuenta en su organización independiente de EOP y puede tener acceso a los recursos (tener permisos asignados). La dirección de correo electrónico de un usuario de correo es externa (por ejemplo, en su entorno de correo electrónico local).
 
@@ -39,18 +39,18 @@ Para las organizaciones de EOP independientes con un número reducido de usuario
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 
-- Para abrir el Centro de administración de Exchange (EAC), consulte [Centro de administración de Exchange en EOP independiente.](exchange-admin-center-in-exchange-online-protection-eop.md)
+- Para abrir el Centro de administración de Exchange (EAC), consulte Centro de administración [de Exchange en EOP independiente.](exchange-admin-center-in-exchange-online-protection-eop.md)
 
 - Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Al crear usuarios de correo en EOP PowerShell, es posible que se encuentre con una limitación. Además, los cmdlets de PowerShell de EOP usan un método de procesamiento por lotes que provoca un retraso de propagación de unos minutos antes de que se puedan ver los resultados de los comandos.
+- Al crear usuarios de correo en PowerShell de EOP, es posible que se encuentre con una limitación. Además, los cmdlets de PowerShell de EOP usan un método de procesamiento por lotes que provoca un retraso de propagación de unos minutos antes de que se puedan ver los resultados de los comandos.
 
 - Deberá tener asignados permisos en Exchange Online Protection para poder realizar los procedimientos descritos en este artículo. En concreto, necesita los roles Creación de destinatarios de correo **(crear)** y Destinatarios de correo **(modificar),** que se asignan a los grupos de roles Administración de la organización **(administradores** globales) y Administración de destinatarios de forma predeterminada.  Para obtener más información, vea [Permisos en EOP](feature-permissions-in-eop.md) independiente y Usar el EAC modificar la lista [de miembros en grupos de roles.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- Para obtener información acerca de los métodos abreviados de teclado que pueden aplicarse a los procedimientos de este artículo, consulte [Métodos abreviados](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)de teclado para el Centro de administración de Exchange en Exchange Online.
+- Para obtener información acerca de los métodos abreviados de teclado que pueden aplicarse a los procedimientos de este artículo, vea [Métodos abreviados](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)de teclado para el Centro de administración de Exchange en Exchange Online.
 
 > [!TIP]
-> ¿Problemas? Solicite ayuda en los foros de Exchange. Visite el foro [de Exchange Online Protection.](https://go.microsoft.com/fwlink/p/?linkId=285351)
+> ¿Problemas? Solicite ayuda en los foros de Exchange. Visite el foro [de Exchange Online Protection.](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)
 
 ## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a>Usar el Centro de administración de Exchange para administrar usuarios de correo
 
@@ -62,7 +62,7 @@ Para las organizaciones de EOP independientes con un número reducido de usuario
 
    - **Nombre**
 
-   - **Iniciales:** inicial media de la persona.
+   - **Iniciales:** inicial del medio de la persona.
 
    - **Apellidos**
 
@@ -241,7 +241,7 @@ Para comprobar que ha creado, modificado o quitado correctamente usuarios de cor
   Get-Recipient -RecipientType MailUser -ResultSize unlimited
   ```
 
-- Reemplace por el nombre, alias o nombre de cuenta del usuario de correo y ejecute los \<MailUserIdentity\> siguientes comandos para comprobar la configuración:
+- Reemplace por el nombre, alias o nombre de cuenta del usuario de correo y ejecute los siguientes \<MailUserIdentity\> comandos para comprobar la configuración:
 
   ```powershell
   Get-Recipient -Identity <MailUserIdentity> | Format-List
@@ -263,9 +263,9 @@ En EOP independiente, la sincronización de directorios está disponible para lo
 
   - **Listas de remitentes seguros de Outlook** y listas de remitentes bloqueados: cuando se sincronizan con el servicio, estas listas tendrán prioridad sobre el filtrado de correo no deseado en el servicio. Esto permite a los usuarios administrar su propia lista de remitentes seguros y la lista de remitentes bloqueados con entradas individuales de remitente y dominio. Para más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
 
-  - **Bloqueo perimetral basado en directorios (DBEB):** para obtener más información acerca de DBEB, vea Usar bloqueo perimetral basado en directorios para rechazar mensajes enviados a [destinatarios no válidos.](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)
+  - **Bloqueo perimetral basado en directorios (DBEB):** para obtener más información acerca de DBEB, vea Usar bloqueo perimetral basado en directorios para rechazar mensajes [enviados a destinatarios no válidos.](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)
 
-  - **Acceso de usuario final** a cuarentena: para obtener acceso a sus mensajes en cuarentena, los destinatarios deben tener un identificador de usuario y una contraseña válidos en el servicio. Para obtener más información acerca de la cuarentena, vea Buscar y [liberar mensajes en cuarentena como un usuario.](find-and-release-quarantined-messages-as-a-user.md)
+  - **Acceso de usuario final a** cuarentena: para obtener acceso a sus mensajes en cuarentena, los destinatarios deben tener un identificador de usuario y una contraseña válidos en el servicio. Para obtener más información acerca de la cuarentena, vea Buscar y [liberar mensajes en cuarentena como un usuario.](find-and-release-quarantined-messages-as-a-user.md)
 
   - Reglas de flujo de correo (también conocidas como reglas de **transporte):** al usar la sincronización de directorios, los usuarios y grupos de Active Directory existentes se cargan automáticamente en la nube y, a continuación, puede crear reglas de flujo de correo destinadas a usuarios o grupos específicos sin tener que agregarlos manualmente al servicio. Tenga en cuenta que los [grupos de distribución dinámicos](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) no se pueden sincronizar mediante la sincronización de directorios.
 
@@ -273,7 +273,7 @@ Obtenga los permisos necesarios y prepárese para la sincronización de director
 
 ### <a name="synchronize-directories-with-azure-active-directory-connect-aad-connect"></a>Sincronizar directorios con Azure Active Directory Connect (AAD Connect)
 
-1. Active la sincronización de directorios como se describe en [la sincronización de Azure AD Connect: comprenda y personalice la sincronización.](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis)
+1. Active la sincronización de directorios tal como se describe en [la sincronización de Azure AD Connect: comprenda y personalice la sincronización.](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis)
 
 2. Instale y configure un equipo local para ejecutar AAD Connect como se describe en [Requisitos previos para Azure AD Connect.](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
 

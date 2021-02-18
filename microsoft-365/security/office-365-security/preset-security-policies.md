@@ -15,23 +15,23 @@ ms.collection:
 description: Los administradores pueden aprender a aplicar la configuración de directiva estándar y estricta en las características de protección de Exchange Online Protection (EOP) y Microsoft Defender para Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f57b388716eca02741ba48b3e6b47b7cf9f28884
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: e8f254f2a1ea2dcf1a4b51594a5c340e91cb3f15
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150090"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290780"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Directivas de seguridad preestablecidas en EOP y Microsoft Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Las directivas de seguridad preestablecidas proporcionan una ubicación centralizada para aplicar todas las directivas recomendadas de correo no deseado, malware y suplantación de identidad a los usuarios a la vez. La configuración de directiva no se puede configurar. En su lugar, se establecen por nosotros y se basan en nuestras observaciones y experiencias en los centros de datos para un equilibrio entre mantener el contenido peligroso lejos de los usuarios sin interrumpir su trabajo.
+Las directivas de seguridad preestablecidas proporcionan una ubicación centralizada para aplicar todas las directivas recomendadas de correo no deseado, malware y suplantación de identidad a los usuarios a la vez. La configuración de directiva no se puede configurar. En su lugar, se establecen por nosotros y se basan en nuestras observaciones y experiencias en los centros de datos para un equilibrio entre mantener contenido peligroso lejos de los usuarios sin interrumpir su trabajo.
 
 En el resto de este tema se describen las directivas de seguridad preestablecidas y cómo configurarlas.
 
@@ -70,7 +70,7 @@ Las directivas de seguridad preestablecidas usan las directivas correspondientes
 
   - [Directivas contra correo no deseado denominadas](configure-your-spam-filter-policies.md) **Directiva de seguridad preestablecida estándar** y Directiva de seguridad **preestablecida estricta.**
   - [Directivas antimalware](configure-anti-malware-policies.md) **denominadas Directiva de seguridad preestablecida estándar** y **Directiva de seguridad preestablecida estricta.**
-  - [Directivas contra la suplantación](set-up-anti-phishing-policies.md#spoof-settings) de identidad de EOP denominadas Directiva de seguridad preestablecida **estándar** y Directiva de seguridad preestablecida **estricta** (configuración de suplantación de identidad).
+  - [Directivas de protección contra suplantación de](set-up-anti-phishing-policies.md#spoof-settings) identidad de EOP denominadas Directiva de seguridad preestablecida **estándar** y Directiva de seguridad preestablecida **estricta** (configuración de suplantación de identidad).
 
 - Directivas de Microsoft Defender para **Office 365:** esto incluye las organizaciones con suscripciones de complemento de Microsoft 365 E5 o Defender para Office 365:
 
@@ -84,7 +84,7 @@ Las directivas de seguridad preestablecidas usan las directivas correspondientes
 
   - [Directivas de datos adjuntos seguros](set-up-atp-safe-attachments-policies.md) **denominadas Directiva de seguridad preestablecida estándar** y **Directiva de seguridad preestablecida estricta.**
 
-Tenga en cuenta que puede aplicar protecciones de EOP a usuarios distintos de Microsoft Defender para las protecciones de Office 365.
+Tenga en cuenta que puede aplicar protecciones de EOP a distintos usuarios que a Microsoft Defender para las protecciones de Office 365.
 
 ### <a name="policy-settings-in-preset-security-policies"></a>Configuración de directiva en directivas de seguridad preestablecidas
 
@@ -113,9 +113,9 @@ En otras palabras, la configuración de la  directiva de protección **Estricta*
   - Para configurar directivas de seguridad preestablecidas, debe ser miembro de los grupos de roles Administración de la organización o **Administrador de** seguridad. 
   - Para obtener acceso de solo lectura a las directivas de seguridad preestablecidas, debe ser miembro del grupo de roles **Lector** global.
 
-  Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+  Para más información, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-  **Nota:** agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft  365 proporciona a los usuarios los permisos necesarios en el Centro de seguridad & Cumplimiento y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  **Nota:** agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft  365 proporciona a los usuarios los permisos necesarios en el Centro de seguridad & Cumplimiento y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Usar el Centro de & cumplimiento para asignar directivas de seguridad preestablecidas a los usuarios
 
@@ -133,7 +133,7 @@ En otras palabras, la configuración de la  directiva de protección **Estricta*
 
       Solo puede usar una condición una vez, pero puede especificar varios valores para la condición. Varios valores de la misma condición usan lógica OR (por ejemplo, _\<recipient1\>_ o _\<recipient2\>_ ).
 
-   2. La condición seleccionada aparece en una sección sombreada. En esa sección, haga clic en el **cuadro Cualquiera de estos.** Si espera un momento, aparecerá una lista para que pueda seleccionar un valor. O bien, puede empezar a escribir un valor para filtrar la lista y seleccionar un valor. Repita este paso tantas veces como sea necesario. Para quitar un valor individual, haga clic **en el** icono Quitar ![ del ](../../media/scc-remove-icon.png) valor. Para quitar toda la condición, haga clic **en el** icono Quitar de ![ la ](../../media/scc-remove-icon.png) condición.
+   2. La condición seleccionada aparece en una sección sombreada. En esa sección, haga clic en **el cuadro Cualquiera de estos.** Si espera un momento, aparecerá una lista para que pueda seleccionar un valor. O bien, puede empezar a escribir un valor para filtrar la lista y seleccionar un valor. Repita este paso tantas veces como sea necesario. Para quitar un valor individual, haga clic **en el** icono Quitar ![ del ](../../media/scc-remove-icon.png) valor. Para quitar toda la condición, haga clic **en el** icono Quitar de ![ la ](../../media/scc-remove-icon.png) condición.
 
    3. Para agregar otra condición, haga clic **en Agregar una condición** y seleccione entre las condiciones restantes. Diferentes condiciones usan lógica AND (por ejemplo, _\<recipient1\>_ y _\<member of group 1\>_ ).
 

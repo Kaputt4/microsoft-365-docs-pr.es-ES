@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
-ms.openlocfilehash: 6207ae117f06a0e5f10d4a7a47a251137c51df05
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 0f45379bec52b54059c743823e2c8eb366f9bd59
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233584"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289394"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de la versión de prueba de Microsoft Defender para Office 365
 
@@ -34,10 +34,10 @@ Microsoft Defender para Office 365 protege su organización contra las amenazas 
 - **Investigación de amenazas y capacidades de respuesta**: use las herramientas más avanzadas para investigar, entender, simular y evitar las amenazas.
 - **Investigación y respuestas automáticas**: ahorre tiempo y esfuerzo al investigar y mitigar amenazas.
 
-Una prueba de Microsoft Defender para Office 365 es la forma más sencilla de probar las funcionalidades de Defender para Office 365 y configurarla solo requiere un par de clics. Una vez completada la configuración de prueba, todas las funcionalidades de Defender para Office 365 Plan 1 y Plan 2 estarán disponibles en la organización durante un máximo de 90 días.
+Una prueba de Microsoft Defender para Office 365 es la forma más sencilla de probar las funcionalidades de Defender para Office 365 y configurarla solo requiere un par de clics. Una vez completada la configuración de prueba, todas las funciones de Defender para Office 365 Plan 1 y Plan 2 estarán disponibles en la organización durante un máximo de 90 días.
 
 > [!NOTE]
-> La configuración automatizada que se describe en este artículo se encuentra actualmente en la versión preliminar pública y es posible que no esté disponible en su ubicación.
+> La configuración automatizada que se describe en este artículo se encuentra actualmente en versión preliminar pública y es posible que no esté disponible en su ubicación.
 
 ## <a name="terms-and-conditions"></a>Términos y condiciones
 
@@ -57,7 +57,7 @@ Como parte de la configuración de prueba, las licencias de Defender para Office
 
 ## <a name="permissions"></a>Permisos
 
-Para iniciar o finalizar la prueba, debe ser miembro de los **roles** Administrador **global** o Administrador de seguridad en Azure Active Directory. Para obtener más información, consulte [Acerca de los roles de administrador.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
+Para iniciar o finalizar la prueba, debe ser miembro de los **roles** Administrador **global** o Administrador de seguridad en Azure Active Directory. Para obtener más información, consulte [Acerca de los roles de administrador.](../../admin/add-users/about-admin-roles.md)
 
 ## <a name="additional-information"></a>Información adicional
 
@@ -98,7 +98,7 @@ Las experiencias eficaces ayudan a identificar, priorizar e investigar amenazas,
 - [Explorador de amenazas y detecciones en tiempo real](threat-explorer.md)
 - [Informes en tiempo real en Defender para Office 365](view-reports-for-atp.md)
 - [Rastreadores de amenazas: nuevos y destacables](threat-trackers.md)
-- Integración con [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+- Integración con [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 ### <a name="response-and-remediation"></a>Respuesta y corrección
 

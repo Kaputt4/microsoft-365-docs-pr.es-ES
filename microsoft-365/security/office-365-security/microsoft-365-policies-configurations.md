@@ -6,6 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: m365-security
 ms.topic: article
+audience: Admin
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -18,18 +19,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 0f6e3d7bef0f09dc922a7c1878e6ea7ce0aad3d7
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: e4b85091366927596a2c8f52c579c369fc9697c3
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233157"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290722"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
 
 El perímetro de seguridad moderno de la organización ahora se extiende más allá de la red para incluir a los usuarios que acceden a aplicaciones basadas en la nube desde cualquier ubicación con una variedad de dispositivos. La infraestructura de seguridad debe determinar si se debe conceder una solicitud de acceso determinada y en qué condiciones.
 
@@ -42,7 +43,7 @@ La configuración y las directivas de acceso a dispositivos e identidades se rec
 Estas funcionalidades y sus recomendaciones:
 
 - Son compatibles con Microsoft 365 E3 y Microsoft 365 E5.
-- Se alinean con [la puntuación de seguridad de Microsoft,](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) así como con la [puntuación de identidad](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)en Azure AD, y aumentarán estas puntuaciones para su organización.
+- Se alinean con [la puntuación de seguridad de Microsoft,](../mtp/microsoft-secure-score.md) así como con la [puntuación de identidad](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)en Azure AD, y aumentarán estas puntuaciones para su organización.
 - Le ayudará a implementar estos [cinco pasos para proteger su infraestructura de identidad.](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)
 
 Si su organización tiene requisitos o complejidades de entorno únicos, use estas recomendaciones como punto de partida. Sin embargo, la mayoría de las organizaciones pueden implementar estas recomendaciones según lo indicado.
@@ -119,7 +120,7 @@ Azure AD proporciona un conjunto completo de funcionalidades de administración 
 |Funcionalidad o característica|Description|Licencias|
 |---|---|---|
 |[Autenticación multifactor (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA requiere que los usuarios proporcionen dos formas de verificación, como una contraseña de usuario más una notificación de la aplicación Microsoft Authenticator o una llamada telefónica. MFA reduce en gran medida el riesgo de que se puedan usar credenciales robadas para acceder a su entorno. Microsoft 365 usa el servicio Multi-Factor Authentication de Azure AD para inicios de sesión basados en MFA.|Microsoft 365 E3 o E5|
-|[Acceso condicional](/azure/active-directory/conditional-access/overview)|Azure AD evalúa las condiciones del inicio de sesión del usuario y usa directivas de acceso condicional para determinar el acceso permitido. Por ejemplo, en esta guía le mostramos cómo crear una directiva de acceso condicional para requerir el cumplimiento del dispositivo para obtener acceso a datos confidenciales. Esto reduce en gran medida el riesgo de que un hacker con su propio dispositivo y credenciales robadas pueda acceder a los datos confidenciales. También protege los datos confidenciales de los dispositivos, ya que los dispositivos deben cumplir requisitos específicos de seguridad y estado.|Microsoft 365 E3 o E5|
+|[Acceso condicional](/azure/active-directory/conditional-access/overview)|Azure AD evalúa las condiciones del inicio de sesión del usuario y usa directivas de acceso condicional para determinar el acceso permitido. Por ejemplo, en esta guía le mostramos cómo crear una directiva de acceso condicional para requerir el cumplimiento del dispositivo para obtener acceso a datos confidenciales. Esto reduce en gran medida el riesgo de que un hacker con su propio dispositivo y credenciales robadas pueda acceder a los datos confidenciales. También protege los datos confidenciales de los dispositivos, ya que los dispositivos deben cumplir requisitos específicos de salud y seguridad.|Microsoft 365 E3 o E5|
 |[Grupos de Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups)|Las directivas de acceso condicional, la administración de dispositivos con Intune e incluso los permisos para archivos y sitios de la organización dependen de la asignación a cuentas de usuario o grupos de Azure AD. Te recomendamos que crees grupos de Azure AD que se correspondan con los niveles de protección que estás implementando. Por ejemplo, es probable que el personal ejecutivo sea objetivo de mayor valor para los hackers. Por lo tanto, tiene sentido agregar las cuentas de usuario de estos empleados a un grupo de Azure AD y asignar este grupo a directivas de acceso condicional y otras directivas que aplican un mayor nivel de protección para el acceso.|Microsoft 365 E3 o E5|
 |[Inscripción de dispositivos](/azure/active-directory/devices/overview)|Inscribe un dispositivo en Azure AD para crear una identidad para el dispositivo. Esta identidad se usa para autenticar el dispositivo cuando un usuario inicia sesión y para aplicar directivas de acceso condicional que requieren equipos unidos a un dominio o compatibles. Para esta guía, usamos la inscripción de dispositivos para inscribir automáticamente equipos Windows unidos a un dominio. La inscripción de dispositivos es un requisito previo para administrar dispositivos con Intune.|Microsoft 365 E3 o E5|
 |[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Permite detectar posibles vulnerabilidades que afectan a las identidades de su organización y configurar una directiva de corrección automatizada en riesgo de inicio de sesión bajo, medio y alto y riesgo de usuario. Esta guía se basa en esta evaluación de riesgos para aplicar directivas de acceso condicional para la autenticación multifactor. Esta guía también incluye una directiva de acceso condicional que requiere que los usuarios cambien su contraseña si se detecta actividad de alto riesgo para su cuenta.|Licencias de Microsoft 365 E5, Microsoft 365 E3 con la identidad & Threat Protection, EMS E5 o Azure Premium P2|
@@ -155,7 +156,7 @@ En esta guía se muestra cómo implementar un conjunto de directivas para proteg
 
 ### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Aplicaciones de Microsoft 365 para empresas y Windows 10
 
-Windows 10 con Aplicaciones de Microsoft 365 para empresas es el entorno de cliente recomendado para equipos. Te recomendamos Windows 10 porque Azure está diseñado para proporcionar la experiencia más fluida posible tanto para el entorno local como para Azure AD. Windows 10 también incluye funcionalidades de seguridad avanzadas que se pueden administrar a través de Intune. Aplicaciones de Microsoft 365 para empresas incluye las últimas versiones de las aplicaciones de Office. Usan la autenticación moderna, que es más segura y un requisito para el acceso condicional. Estas aplicaciones también incluyen herramientas de seguridad y cumplimiento mejoradas.
+Windows 10 con Aplicaciones de Microsoft 365 para empresas es el entorno de cliente recomendado para equipos. Te recomendamos Windows 10 porque Azure está diseñado para proporcionar la experiencia más fluida posible tanto para el entorno local como para Azure AD. Windows 10 también incluye funciones de seguridad avanzadas que se pueden administrar a través de Intune. Aplicaciones de Microsoft 365 para empresas incluye las últimas versiones de las aplicaciones de Office. Usan la autenticación moderna, que es más segura y un requisito para el acceso condicional. Estas aplicaciones también incluyen herramientas de seguridad y cumplimiento mejoradas.
 
 ## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>Aplicar estas funcionalidades en los tres niveles de protección
 
@@ -199,7 +200,7 @@ Microsoft recomienda no crear conjuntos de directivas que se apliquen a todas la
 ![Pasos para configurar el acceso a dispositivos e identidades.](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 
 1. Configure las características de identidad de los requisitos previos y su configuración.
-2. Configure las directivas comunes de acceso y identidad de acceso condicional.
+2. Configure las directivas comunes de acceso condicional de identidad y acceso.
 3. Configurar directivas de acceso condicional para usuarios invitados y externos.
 4. Configurar directivas de acceso condicional para aplicaciones en la nube de Microsoft 365 como Microsoft Teams, Exchange Online y SharePoint.
 

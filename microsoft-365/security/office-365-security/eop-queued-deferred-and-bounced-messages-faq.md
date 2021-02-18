@@ -15,21 +15,21 @@ ms.custom:
 description: Encuentre respuestas a las preguntas más comunes sobre los mensajes que se han puesto en cola, aplazado o devuelto durante el proceso de filtrado de Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 854e954e3ebb995ba23db2afc6f2ca9ab19de508
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e54a260a70a9c68a94412243308bffe60d989e99
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165432"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289704"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>Preguntas más frecuentes sobre mensajes devueltos, aplazados y en cola de EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 En este tema se proporcionan respuestas a las preguntas más frecuentes sobre los mensajes que se han puesto en cola, aplazado o devuelto durante el proceso de filtrado de Exchange Online Protection (EOP).
 

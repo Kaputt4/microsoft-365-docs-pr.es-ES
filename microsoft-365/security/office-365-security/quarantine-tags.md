@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Los administradores pueden aprender a usar etiquetas de cuarentena para controlar lo que los usuarios pueden hacer con sus mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f18ad6ce1c8b12d38aef377ab663ca679a703e5
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 207f22c9acaa183e195f5a2ee33be65cdf4991dd
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928907"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289418"
 ---
 # <a name="quarantine-tags"></a>Etiquetas de cuarentena
 
@@ -31,7 +31,7 @@ ms.locfileid: "49928907"
 
 Las etiquetas de cuarentena en Exchange Online Protection (EOP) permiten a los administradores controlar lo que los usuarios pueden hacer con sus mensajes en cuarentena en función de cómo el mensaje llegó a la cuarentena.
 
-EOP ha permitido o impedido tradicionalmente ciertos niveles de interactividad para mensajes en cuarentena y en notificaciones [de correo no deseado para el usuario final.](use-spam-notifications-to-release-and-report-quarantined-messages.md) [](find-and-release-quarantined-messages-as-a-user.md) Por ejemplo, los usuarios finales pueden ver y liberar mensajes que el filtrado contra correo no deseado ha puesto en cuarentena como correo no deseado o masivo, pero no pueden ver ni liberar mensajes que se han puesto en cuarentena como suplantación de identidad de confianza alta.
+EOP ha permitido o impedido tradicionalmente ciertos niveles de interactividad para mensajes en cuarentena y en notificaciones de correo no deseado [para el usuario final.](use-spam-notifications-to-release-and-report-quarantined-messages.md) [](find-and-release-quarantined-messages-as-a-user.md) Por ejemplo, los usuarios finales pueden ver y liberar mensajes que el filtrado contra correo no deseado ha puesto en cuarentena como correo no deseado o masivo, pero no pueden ver ni liberar mensajes que se han puesto en cuarentena como suplantación de identidad de confianza alta.
 
 Para [](#step-2-assign-a-quarantine-tag-to-supported-features)las características de protección admitidas, las etiquetas de cuarentena especifican lo que los usuarios pueden hacer en los mensajes de notificación de correo no deseado para el usuario final y en los mensajes en cuarentena en cuarentena (mensajes en los que el usuario es un destinatario). Las etiquetas de cuarentena predeterminadas se asignan automáticamente para aplicar las capacidades históricas para los usuarios finales en los mensajes en cuarentena. O bien, puede crear y asignar etiquetas de cuarentena personalizadas para permitir o impedir que los usuarios finales realicen acciones específicas en los mensajes en cuarentena.
 
@@ -87,7 +87,7 @@ Puede crear y asignar etiquetas de cuarentena en el Centro de seguridad y cumpli
        - **Permitir que los destinatarios liberen un mensaje de la cuarentena**
        - **Permitir que los destinatarios soliciten que un mensaje se libera de la cuarentena**
 
-     - **Seleccione acciones adicionales que los destinatarios pueden realizar en** los mensajes en cuarentena: seleccione algunos, todos o ninguno de los siguientes valores:
+     - **Seleccione acciones adicionales que los destinatarios pueden realizar en** mensajes en cuarentena: seleccione algunos, todos o ninguno de los siguientes valores:
        - **Eliminar**
        - **Versión preliminar**
        - **Permitir remitente**
@@ -159,7 +159,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, [co
 
 #### <a name="use-the-enduserquarantinepermissions-parameter"></a>Usar el parámetro EndUserQuarantinePermissions
 
-Para crear una etiqueta de cuarentena mediante el _parámetro EndUserQuarantinePermissionsValue,_ siga estos pasos:
+Para crear una etiqueta de cuarentena con el parámetro _EndUserQuarantinePermissionsValue,_ siga estos pasos:
 
 A. Almacene un objeto de permisos de cuarentena en una variable mediante el cmdlet **New-QuarantinePermissions.**
 
@@ -230,10 +230,10 @@ En _las características_ de protección admitidas que ponen en cuarentena mensa
 |Característica|¿Se admiten etiquetas de cuarentena?|Etiquetas de cuarentena predeterminadas usadas|
 |---|:---:|---|
 |[Directivas contra correo no deseado:](configure-your-spam-filter-policies.md) <ul><li>**Correo no** deseado (_SpamAction_)</li><li>**Correo no deseado de** confianza alta (_HighConfidenceSpamAction_)</li><li>**Correo electrónico de suplantación** de identidad _(PhishSpamAction)_</li><li>**Correo electrónico de suplantación de** identidad de confianza alta (_HighConfidencePhishAction_)</li><li>**Correo electrónico masivo** (_BulkSpamAction_)</li></ul>|Sí|<ul><li>DefaultSpamTag (acceso completo)</li><li>DefaultHighConfSpamTag (acceso completo)</li><li>DefaultPhishTag (acceso completo)</li><li>DefaultHighConfPhishTag (sin acceso)</li><li>DefaultBulkTag (acceso completo)</li></ul>
-|Directivas contra la suplantación de identidad: <ul><li>[Protección de inteligencia de suplantación](set-up-anti-phishing-policies.md#spoof-settings) de documentos (_AuthenticationFailAction_)</li><li>[Protección de suplantación:](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)<sup>\*</sup> <ul><li>**Si un usuario suplantado envía correo** electrónico (_TargetedUserProtectionAction_)</li><li>**Si un dominio suplantado envía correo** electrónico (_TargetedDomainProtectionAction_)</li><li>**Inteligencia de buzones de correo** \> **Si un usuario suplantado envía correo** electrónico (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|No|No aplicable|
-|[Directivas antimalware:](configure-anti-malware-policies.md)todos los mensajes detectados siempre se ponen en cuarentena.|No|No aplicable|
-|[Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)|No|No aplicable|
-|[Reglas de flujo de](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la **cuarentena** hospedada (_Cuarentena_).|No|No aplicable|
+|Directivas contra la suplantación de identidad: <ul><li>[Protección de inteligencia de suplantación](set-up-anti-phishing-policies.md#spoof-settings) de documentos (_AuthenticationFailAction_)</li><li>[Protección de suplantación:](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)<sup>\*</sup> <ul><li>**Si un usuario suplantado envía correo** electrónico (_TargetedUserProtectionAction_)</li><li>**Si un dominio suplantado envía correo** electrónico (_TargetedDomainProtectionAction_)</li><li>**Inteligencia de buzones** \> **Si un usuario suplantado envía correo** electrónico (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|No|n/a|
+|[Directivas antimalware:](configure-anti-malware-policies.md)todos los mensajes detectados siempre se ponen en cuarentena.|No|n/a|
+|[Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)|No|n/a|
+|[Reglas de flujo de](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la **cuarentena** hospedada (_Cuarentena_).|No|n/a|
 |
 
 <sup>\*</sup> La configuración de protección de suplantación solo está disponible en las directivas contra suplantación de identidad en Microsoft Defender para Office 365.
@@ -248,9 +248,9 @@ Las instrucciones completas para crear y modificar directivas contra correo no d
 
 2. Busque y seleccione una directiva contra correo no deseado existente para editarla o cree una nueva directiva contra correo no deseado.
 
-3. En el control desplegable de detalles de directiva, expanda la sección Correo no deseado **y acciones masivas.**
+3. En el control desplegable de detalles de la directiva, expanda la sección Correo no deseado **y acciones masivas.**
 
-4. Si ha seleccionado  un mensaje de cuarentena para la acción  de un veredicto de filtrado de correo no deseado disponible, el cuadro de etiqueta Aplicar directiva de cuarentena está disponible para que seleccione la etiqueta de cuarentena para ese veredicto.
+4. Si ha seleccionado  el mensaje de cuarentena para la acción  de un veredicto de filtrado de correo no deseado disponible, el cuadro de etiqueta Aplicar directiva de cuarentena estará disponible para que seleccione la etiqueta de cuarentena para ese veredicto.
 
    **Nota:** Al crear una nueva directiva, se usa un valor de etiqueta de cuarentena en blanco para un veredicto de filtrado de correo no deseado que indica la etiqueta de cuarentena predeterminada para ese veredicto. Cuando más adelante edite la directiva, los valores en blanco se reemplazan por los nombres de etiqueta de cuarentena predeterminados reales, como se describe en la tabla anterior.
 
@@ -311,7 +311,7 @@ La configuración global de las etiquetas de cuarentena permite personalizar las
 
 3. En el **control desplegable de configuración de** notificación de cuarentena que se abre, configure algunas o todas las opciones siguientes:
 
-   - **Use el logotipo de mi** compañía: seleccione esta opción para reemplazar el logotipo predeterminado de Microsoft que se usa en la parte superior de las notificaciones de correo no deseado para el usuario final. Antes de hacerlo, debe seguir las instrucciones de Personalizar el tema de [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) para que su organización cargue el logotipo personalizado.
+   - **Use el logotipo de mi** compañía: seleccione esta opción para reemplazar el logotipo predeterminado de Microsoft que se usa en la parte superior de las notificaciones de correo no deseado para el usuario final. Antes de hacerlo, debe seguir las instrucciones de Personalizar el tema de [Microsoft 365](../../admin/setup/customize-your-organization-theme.md) para que su organización cargue el logotipo personalizado.
 
      La siguiente captura de pantalla muestra un logotipo personalizado en una notificación de correo no deseado para el usuario final:
 
@@ -323,7 +323,7 @@ La configuración global de las etiquetas de cuarentena permite personalizar las
 
      ![Idiomas seleccionados en el segundo cuadro de idioma en la configuración de notificación de cuarentena global de etiquetas de cuarentena](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
-   - **Nombre para mostrar:** personalizar el nombre para mostrar del remitente que se usa en las notificaciones de correo no deseado para el usuario final.
+   - **Nombre para** mostrar: personalizar el nombre para mostrar del remitente que se usa en las notificaciones de correo no deseado para el usuario final.
 
      Para cada idioma que haya agregado, seleccione el idioma en el segundo cuadro de idioma (no haga clic en la X) y escriba el valor de texto que desee en el cuadro Nombre para **mostrar.**
 
@@ -403,7 +403,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, [co
 
 ## <a name="quarantine-tag-permission-details"></a>Detalles del permiso de etiqueta de cuarentena
 
-En las secciones siguientes se describen los efectos de los grupos de permisos preestablecidos y los permisos individuales en los detalles de los mensajes en cuarentena y en las notificaciones de correo no deseado para el usuario final.
+En las secciones siguientes se describen los efectos de los grupos de permisos preestablecidos y los permisos individuales en los detalles de los mensajes en cuarentena y en las notificaciones de correo no deseado del usuario final.
 
 ### <a name="preset-permissions-groups"></a>Grupos de permisos preestablecidos
 
@@ -434,7 +434,7 @@ Si la etiqueta de cuarentena asigna los permisos **de acceso** limitado, los usu
 
   ![Botones disponibles en los detalles del mensaje en cuarentena si la etiqueta de cuarentena concede al usuario permisos de acceso limitado](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
-- **Notificaciones de correo no deseado para el usuario final:** están disponibles los siguientes botones:
+- **Notificaciones de correo no deseado para el usuario** final: están disponibles los siguientes botones:
   - **Bloquear remitente**
   - **Revisar**
 
@@ -452,11 +452,11 @@ Si la etiqueta de cuarentena asigna los permisos de **acceso** completo (todos l
   - **Permitir remitente**
   - **Quitar de la cuarentena**
 
-  ![Botones disponibles en los detalles del mensaje en cuarentena si la etiqueta de cuarentena concede al usuario permisos de acceso completo](../../media/quarantine-tags-quarantined-message-details-full-access.png)
+  ![Botones disponibles en los detalles del mensaje en cuarentena si la etiqueta de cuarentena concede al usuario permisos de acceso total](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
-- **Notificaciones de correo no deseado para el usuario final:** están disponibles los siguientes botones:
+- **Notificaciones de correo no deseado para el usuario** final: están disponibles los siguientes botones:
   - **Bloquear remitente**
-  - **Release**
+  - **Versión**
   - **Revisar**
 
   ![Botones disponibles en la notificación de correo no deseado para el usuario final si la etiqueta de cuarentena concede al usuario permisos de acceso completo](../../media/quarantine-tags-esn-full-access.png)
@@ -476,7 +476,7 @@ El **permiso** Permitir remitente (_PermissionToAllowSender_) controla el acceso
 
 - **Notificaciones de correo no deseado para el usuario** final: sin efecto.
 
-Para obtener más información acerca de la lista de remitentes seguros, vea Impedir que los remitentes de confianza se bloqueen y [usar Exchange Online PowerShell](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)para configurar la colección de listas [seguras](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) en un buzón.
+Para obtener más información acerca de la lista de remitentes seguros, vea Impedir que los remitentes de confianza se bloqueen y [Usar Exchange Online PowerShell](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)para configurar la colección de listas [seguras](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) en un buzón.
 
 #### <a name="block-sender-permission"></a>Bloquear el permiso del remitente
 
@@ -488,13 +488,13 @@ El **permiso bloquear remitente** (_PermissionToBlockSender_) controla el acceso
 
 - **Notificaciones de correo no deseado para el usuario final:**
   - **Bloquear permiso de** remitente deshabilitado: **el botón** Bloquear remitente no está disponible.
-  - **Bloquear permiso de** remitente habilitado: el botón Bloquear **remitente** está disponible.
+  - **Permiso bloquear remitente** habilitado: el botón Bloquear **remitente** está disponible.
 
 Para obtener más información acerca de la lista de remitentes bloqueados, vea [Bloquear](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) mensajes de alguien y [Usar Exchange Online PowerShell](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)para configurar la colección de listas seguras en un buzón.
 
 #### <a name="delete-permission"></a>Permiso de eliminación
 
-El **permiso** Eliminar (_PermissionToDelete_) controla la capacidad de los usuarios de eliminar sus mensajes (mensajes en los que el usuario es un destinatario) de la cuarentena.
+El **permiso** Eliminar (_PermissionToDelete_) controla la capacidad de los usuarios para eliminar sus mensajes (mensajes en los que el usuario es un destinatario) de la cuarentena.
 
 - **Detalles del mensaje en cuarentena:**
   - **Permiso** de eliminación habilitado: el botón Quitar **de cuarentena** está disponible.
@@ -521,7 +521,7 @@ El permiso Permitir a los destinatarios para liberar un mensaje de cuarentena _(
   - Permiso deshabilitado: el **botón Liberar mensaje** no está disponible.
 
 - **Notificaciones de correo no deseado para el usuario final:**
-  - Permiso habilitado: el **botón** Liberar está disponible.
+  - Permiso habilitado: el **botón Liberar** está disponible.
   - Permiso deshabilitado: el **botón Liberar** no está disponible.
 
 #### <a name="allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission"></a>Permitir que los destinatarios soliciten que se libera un mensaje del permiso de cuarentena

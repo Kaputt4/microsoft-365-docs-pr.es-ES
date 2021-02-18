@@ -22,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: En este artículo se proporciona información sobre cómo proteger el acceso de administrador global a su suscripción de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 15c497e02b139ea6af4aabba9f3e9ab65a1205be
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 1f84ca33a620c3ea3c24f46eb29c1a39c28840e7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445412"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289644"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Proteger las cuentas de administrador global de Microsoft 365
 
@@ -39,7 +39,7 @@ Las infracciones de seguridad de una suscripción de Microsoft 365, incluidos lo
     
 - Usted es el propietario de sus datos e identidades y la responsabilidad de protegerlos, la seguridad de los recursos locales y la seguridad de los componentes de la nube que controla.
     
-Microsoft proporciona funcionalidades para ayudar a proteger su organización, pero solo son eficaces si las usa. Si no los usa, es posible que sea vulnerable a ataques. Para proteger sus cuentas de administrador global, Microsoft está aquí para ayudarle con instrucciones detalladas para:
+Microsoft proporciona funcionalidades para ayudar a proteger su organización, pero solo son eficaces si las usa. Si no los usas, es posible que seas vulnerable a ataques. Para proteger sus cuentas de administrador global, Microsoft está aquí para ayudarle con instrucciones detalladas para:
   
 1. Cree cuentas de administrador global de Microsoft 365 dedicadas y úselas solo cuando sea necesario.
     
@@ -55,7 +55,7 @@ Hay relativamente pocas tareas administrativas, como la asignación de roles a c
 1. Determinar el conjunto de cuentas de usuario a las que se ha asignado el rol de administrador global. Puede hacerlo en el Centro de administración de Microsoft 365 o con el siguiente comando de Azure Active (Azure AD) Directory PowerShell para Graph:
   
   ```powershell
-  Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
+  Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Global Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
 2. Inicie sesión en su suscripción a Microsoft 365 con una cuenta de usuario a la que se le haya asignado el rol de administrador global.
@@ -106,14 +106,14 @@ La autenticación multifactor (MFA) requiere información adicional más allá d
 - Un dispositivo biométrico
     
 >[!Note]
->Para las organizaciones que deben cumplir con los estándares del Instituto Nacional de Estándares y Tecnología (NIST), se restringe el uso de una llamada telefónica o métodos de verificación adicionales basados en mensajes de texto. Haga [clic aquí](https://pages.nist.gov/800-63-FAQ/#q-b01) para obtener más información.
+>Para las organizaciones que deben cumplir con los estándares del Instituto Nacional de Estándares y Tecnología (NIST), se restringe el uso de métodos de verificación adicionales basados en mensajes de texto o llamadas telefónicas. Haga [clic aquí](https://pages.nist.gov/800-63-FAQ/#q-b01) para obtener los detalles.
 >
 
 Si es una pequeña empresa que usa cuentas de usuario almacenadas solo en la nube (el modelo de identidad solo en la nube), configure MFA para configurar [MFA](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) mediante una llamada telefónica o un código de verificación de mensajes de texto enviado a un teléfono inteligente para cada cuenta de administrador global dedicada.
     
 Si es una organización más grande que usa un modelo de identidad híbrido de Microsoft 365, tiene más opciones de verificación. Si ya tiene la infraestructura de seguridad para un método de autenticación secundario más sólido, configure [MFA](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) y configure cada cuenta de administrador global dedicada para el método de comprobación adecuado.
   
-Si la infraestructura de seguridad del método de comprobación más seguro deseado no está en su lugar y funciona para MFA de Microsoft 365, se recomienda encarecidamente configurar cuentas de administrador global dedicadas con MFA mediante la aplicación Microsoft Authenticator, una llamada telefónica o un código de verificación de mensajes de texto enviado a un smartphone para sus cuentas de administrador global como medida de seguridad provisional. No deje sus cuentas de administrador global dedicadas sin la protección adicional proporcionada por MFA.
+Si la infraestructura de seguridad del método de comprobación más seguro deseado no está en su lugar y funciona para MFA de Microsoft 365, se recomienda encarecidamente configurar cuentas de administrador global dedicadas con MFA con la aplicación Microsoft Authenticator, una llamada telefónica o un código de verificación de mensajes de texto enviado a un smartphone para sus cuentas de administrador global como medida de seguridad provisional. No deje sus cuentas de administrador global dedicadas sin la protección adicional proporcionada por MFA.
   
 Para obtener más información, vea [MFA para Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
   
@@ -170,7 +170,7 @@ Para obtener más información, vea [Privileged access management](https://docs.
 
 ### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Software de administración de eventos e información de seguridad (SIEM) para el registro de Microsoft 365
 
-El software SIEM que se ejecuta en un servidor realiza un análisis en tiempo real de alertas de seguridad y eventos creados por aplicaciones y hardware de red. Para permitir que el servidor SIEM incluya alertas y eventos de seguridad de Microsoft 365 en sus funciones de análisis e informes, integre Azure AD en seim. Consulte [Introducción a la integración de registros de Azure.](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview)
+El software SIEM que se ejecuta en un servidor realiza un análisis en tiempo real de los eventos y alertas de seguridad creados por las aplicaciones y el hardware de red. Para permitir que el servidor SIEM incluya alertas y eventos de seguridad de Microsoft 365 en sus funciones de análisis e informes, integre Azure AD en seim. Vea [introducción a la integración de registros de Azure.](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview)
 
 ## <a name="next-step"></a>Paso siguiente
 

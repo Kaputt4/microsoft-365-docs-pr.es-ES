@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Los usuarios pueden aprender a ver y actuar en mensajes en cuarentena que se enviaron a buzones compartidos para los que tienen permisos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3efccca375745b0850c91039165b72a7d6f0bcb3
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 31fbf9c54c3f28e439f444dde872469918dc29d4
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931451"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290146"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Ver y liberar mensajes en cuarentena de buzones compartidos
 
@@ -35,19 +35,19 @@ Anteriormente, la capacidad de los usuarios para administrar los mensajes en cua
 
 Ahora, ya no es necesaria la autoapping para que los usuarios administren los mensajes en cuarentena que se enviaron a buzones compartidos. Simplemente funciona. Existen dos métodos diferentes para tener acceso a los mensajes en cuarentena que se enviaron a un buzón compartido:
 
-- Si el [](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies) administrador ha habilitado las notificaciones de correo no deseado para el usuario final en directivas contra correo  no deseado, cualquier usuario que tenga acceso a las notificaciones de correo no deseado del usuario final en el buzón compartido puede hacer clic en el botón Revisar de la notificación para pasar a cuarentena en el Centro de seguridad & Cumplimiento. Tenga en cuenta que este método solo permite a los usuarios administrar los mensajes en cuarentena que se enviaron al buzón compartido. Los usuarios no pueden administrar sus propios mensajes de cuarentena en este contexto.
+- Si el [](configure-your-spam-filter-policies.md) administrador ha habilitado notificaciones de correo no deseado para el usuario final en directivas contra correo no  deseado, cualquier usuario que tenga acceso a las notificaciones de correo no deseado del usuario final en el buzón compartido puede hacer clic en el botón Revisar de la notificación para pasar a cuarentena en el Centro de seguridad & Cumplimiento. Tenga en cuenta que este método solo permite a los usuarios administrar los mensajes en cuarentena que se enviaron al buzón compartido. Los usuarios no pueden administrar sus propios mensajes de cuarentena en este contexto.
 
 - El usuario puede ir a la cuarentena en el Centro de [& cumplimiento.](find-and-release-quarantined-messages-as-a-user.md) De forma predeterminada, solo se muestran los mensajes que se enviaron al usuario. Sin embargo, el usuario puede  cambiar los resultados de la ordenación **(el** botón Id.  de mensaje de forma predeterminada) a la dirección de correo electrónico del **destinatario,** escribir la dirección de correo electrónico del buzón compartido y, a continuación, hacer clic en Actualizar para ver los mensajes en cuarentena que se enviaron al buzón compartido.
 
   ![Ordenar los mensajes en cuarentena por dirección de correo electrónico del destinatario.](../../media/quarantine-sort-results-by-recipient-email-address.png)
 
-Independientemente del método, los usuarios pueden evitar confusiones si incluyen la **columna Recipient** para los mensajes en cuarentena. El número máximo de columnas que se van a mostrar es 7, por lo que el usuario tendrá  que hacer clic en Modificar **columnas,** quitar una columna existente (por **ejemplo,** Tipo de directiva), seleccionar Destinatario y, a continuación, hacer clic en Guardar o Guardar como **predeterminado.**
+Independientemente del método, los usuarios pueden evitar confusiones si incluyen la columna **Recipient** para los mensajes en cuarentena. El número máximo de columnas que se van a mostrar es 7, por lo que el usuario tendrá  que hacer clic en Modificar **columnas,** quitar una columna existente (por **ejemplo,** Tipo de directiva), seleccionar Destinatario y, a continuación, hacer clic en Guardar o Guardar como **predeterminado.**
 
   ![Quite la columna Tipo de directiva y agregue la columna Destinatario a la cuarentena.](../../media/quarantine-add-recipient-column.png)
 
 ## <a name="things-to-keep-in-mind"></a>Aspectos importantes
 
-- El primer usuario que actúa en el mensaje en cuarentena decide el destino del mensaje para todos los usuarios que usan el buzón compartido. Por ejemplo, si 10 usuarios tienen acceso a un buzón compartido y un usuario decide eliminar el mensaje en cuarentena, el mensaje se elimina para los 10 usuarios. Del mismo modo, si un usuario decide liberar el mensaje, se libera en el buzón compartido y es accesible para todos los demás usuarios del buzón compartido.
+- El primer usuario que actúa en el mensaje en cuarentena decide el destino del mensaje para todos los usuarios que usan el buzón compartido. Por ejemplo, si 10 usuarios acceden a un buzón compartido y un usuario decide eliminar el mensaje en cuarentena, el mensaje se elimina para los 10 usuarios. Del mismo modo, si un usuario decide liberar el mensaje, se libera en el buzón compartido y es accesible para todos los demás usuarios del buzón compartido.
 
 - Actualmente, el **botón Bloquear remitente** no está disponible en el control desplegable Detalles para los mensajes en cuarentena que se enviaron al buzón compartido. 
 
@@ -59,7 +59,7 @@ Independientemente del método, los usuarios pueden evitar confusiones si incluy
 
   A continuación, el usuario final puede seleccionar un mensaje en cuarentena de la lista para ver o tomar medidas.
 
-  En este ejemplo se muestran todos los mensajes en cuarentena que se enviaron al buzón compartido y, a continuación, se libera el primer mensaje de la lista de la cuarentena (el primer mensaje de la lista es 0, el segundo es 1, y así sucesivamente).
+  En este ejemplo se muestran todos los mensajes en cuarentena que se enviaron al buzón compartido y, a continuación, se libera el primer mensaje de la lista de cuarentena (el primer mensaje de la lista es 0, el segundo es 1, y así sucesivamente).
 
   ```powershell
   $SharedMessages = Get-QuarantinedMessage -RecipientAddress officeparty@contoso.com | select -ExpandProperty Identity

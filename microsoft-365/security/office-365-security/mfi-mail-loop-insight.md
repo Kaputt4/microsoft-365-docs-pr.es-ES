@@ -14,21 +14,21 @@ ms.custom:
 description: Los administradores pueden aprender a usar la información de corregir posibles bucles de correo en el panel de flujo de correo del Centro de seguridad & y cumplimiento para identificar y corregir bucles de correo en su organización.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3c9607f053fb5011b8c8af3c8bb2073a9d022909
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 7fde0041dfb9901cb0a327eafec78d98a40b4cb9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150236"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290566"
 ---
-# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Corregir la posible información del bucle de correo en el Centro de seguridad & cumplimiento
+# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Corregir posibles perspectivas del bucle de correo en el Centro de & cumplimiento
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Los bucles de correo son malos porque:
 
@@ -40,7 +40,7 @@ La información **de** corrección  de posibles [](mail-flow-insights-v2.md) buc
 
 Esta información aparece solo después de que se detecte la condición (si no tiene bucles de correo, no verá la información).
 
-![Corregir información de reglas de flujo de correo lentas en el área Recomendada para el panel de flujo de correo](../../media/mfi-fix-possible-mail-loop.png)
+![Corregir información de reglas de flujo de correo lentas en el área Recomendado para el panel de flujo de correo](../../media/mfi-fix-possible-mail-loop.png)
 
 Al hacer clic **en Ver detalles** en el widget, aparece un control flotante con más información:
 

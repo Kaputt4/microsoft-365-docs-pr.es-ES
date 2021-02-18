@@ -15,22 +15,22 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 - seo-marvel-apr2020
-description: Obtenga información general sobre la integración del servidor de administración de eventos e información de seguridad (SIEM) con las aplicaciones y servicios en la nube de Microsoft 365
+description: Obtener información general sobre la integración del servidor de administración de eventos e información de seguridad (SIEM) con las aplicaciones y servicios en la nube de Microsoft 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f29da87aa6eab1852330092d93187a27b2d36eb2
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: b4490d52cbd403bf4ce2cc3f3fb3c5a91c5646b9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167148"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290386"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integración del servidor de administración de eventos e información de seguridad (SIEM) con servicios y aplicaciones de Microsoft 365
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

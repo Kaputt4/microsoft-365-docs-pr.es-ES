@@ -14,27 +14,27 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Los administradores pueden obtener información sobre los códigos de error asociados con la entrega de mensajes mediante conectores (también conocidos como inteligencia de flujo de correo).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 864b69bf650a4e460376ae988a9ce4abc4c61ad4
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 32a98459ce3d3494e576b10d5c5b097393ee2335
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167076"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289668"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Inteligencia de flujo de correo en EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 En las organizaciones de Microsoft 365 con buzones en Exchange Online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, normalmente se usa un conector para enrutar mensajes de correo electrónico desde EOP a su entorno de correo electrónico local. También puede usar un conector para enrutar mensajes de Microsoft 365 a una organización asociada. Cuando Microsoft 365 no puede entregar estos mensajes a través del conector, se ponen en cola en Microsoft 365. Microsoft 365 seguirá reintentiendo la entrega de cada mensaje durante 24 horas. Después de 24 horas, el mensaje en cola expirará y el mensaje se devolverá al remitente original en un informe de no entrega (también conocido como NDR o mensaje de devolución).
 
 Microsoft 365 genera un error cuando no se puede entregar un mensaje mediante un conector. Los errores más comunes y sus soluciones se describen en este artículo. Colectivamente, los errores de colas y notificación de mensajes no entregados enviados a través de conectores se conocen como inteligencia _de flujo de correo._
 
-## <a name="error-code-450-44312-dns-query-failed"></a>Código de error: error en la consulta DNS 4.4.4.312
+## <a name="error-code-450-44312-dns-query-failed"></a>Código de error: error en la consulta DNS 4.4.312 4.4
 
 Normalmente, este error significa que Microsoft 365 intentó conectarse al host inteligente especificado en el conector, pero se produjo un error en la consulta DNS para encontrar las direcciones IP del host inteligente. Las causas posibles de este error son:
 
@@ -70,9 +70,9 @@ Normalmente, este error significa que Microsoft 365 encontró un error de conexi
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>¿Cómo puedo corregir el código de error 450 4.4.316?
 
-- Si tiene buzones en su entorno local, debe modificar la configuración del firewall para permitir conexiones desde las direcciones IP de Microsoft 365 en el puerto TCP 25 a los servidores de correo electrónico locales. Para obtener una lista de las direcciones IP de Microsoft 365, vea las direcciones URL e intervalos de direcciones [IP de Microsoft 365.](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
+- Si tiene buzones en su entorno local, debe modificar la configuración del firewall para permitir conexiones desde las direcciones IP de Microsoft 365 en el puerto TCP 25 a los servidores de correo electrónico locales. Para obtener una lista de las direcciones IP de Microsoft 365, vea las direcciones URL de [Microsoft 365](../../enterprise/urls-and-ip-address-ranges.md)y los intervalos de direcciones IP.
 
-- Si no se deben entregar más mensajes a  su entorno local, haga clic en Corregir ahora en la alerta para que Microsoft 365 pueda rechazar inmediatamente los mensajes con destinatarios no válidos. Esto reducirá el riesgo de superar la cuota de su organización para destinatarios no válidos, lo que podría afectar a la entrega normal de mensajes. O bien, puede usar las siguientes instrucciones para corregir manualmente el problema:
+- Si no se deben entregar más mensajes a  su entorno local, haga clic en Corregir ahora en la alerta para que Microsoft 365 pueda rechazar inmediatamente los mensajes con destinatarios no válidos. Esto reducirá el riesgo de superar la cuota de su organización para destinatarios no válidos, lo que podría afectar a la entrega normal de mensajes. O bien, puede usar las siguientes instrucciones para solucionar el problema manualmente:
 
   - En el Centro de administración de [Exchange (EAC),](https://docs.microsoft.com/Exchange/exchange-admin-center)deshabilite o elimine el conector que entrega correo electrónico de Microsoft 365 a su entorno de correo electrónico local:
 

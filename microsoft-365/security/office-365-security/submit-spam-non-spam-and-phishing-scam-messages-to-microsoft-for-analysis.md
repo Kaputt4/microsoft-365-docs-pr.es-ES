@@ -18,17 +18,21 @@ description: Los administradores y los usuarios finales pueden aprender a enviar
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d5d3b7a51c39b85af8a6fae84f525da6d806789c
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 98964d17c41222fa708bdf0059c0e67151582ef1
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029589"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290374"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Enviar manualmente mensajes a Microsoft para su análisis
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Se aplica a**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
 > Si es administrador de una organización con buzones de Exchange Online, le recomendamos que use el portal de envíos en el Centro de & cumplimiento. Para obtener más información, vea Usar envío de administrador para enviar correos sospechosos de correo no [deseado, phishing, direcciones URL y archivos a Microsoft.](admin-submission.md)
@@ -53,7 +57,7 @@ Si recibe un mensaje que pasó por el filtrado de correo no deseado que debería
 
    - **Suplantación de identidad**: `phish@office365.microsoft.com`
 
-2. Arrastre y coloque el mensaje de correo no deseado o de suplantación de identidad en el nuevo mensaje. Esto guardará el mensaje de correo no deseado o de suplantación de identidad (phishing) como datos adjuntos en el nuevo mensaje. No copie ni pegue el contenido del mensaje ni reenvía el mensaje (necesitamos el mensaje original para que podamos inspeccionar los encabezados del mensaje).
+2. Arrastre y coloque el mensaje de correo no deseado o de suplantación de identidad en el nuevo mensaje. Esto guardará el mensaje de correo no deseado o de suplantación de identidad como datos adjuntos en el nuevo mensaje. No copie ni pegue el contenido del mensaje ni reenvía el mensaje (necesitamos el mensaje original para que podamos inspeccionar los encabezados del mensaje).
 
    > [!NOTE]
    >
@@ -66,12 +70,12 @@ Si recibe un mensaje que pasó por el filtrado de correo no deseado que debería
 3. Cuando haya terminado, haga clic en **Enviar**.
 
 > [!TIP]
-> Los administradores tienen varias formas diferentes de bloquear mensajes específicos que se están identificar erróneamente como correo no deseado. Para obtener más información, vea [Crear listas de remitentes bloqueados en EOP.](create-block-sender-lists-in-office-365.md)
+> Los administradores tienen varias formas diferentes de bloquear mensajes específicos que se están identificar erróneamente como correo no deseado. Para obtener más información, [vea Crear listas de remitentes bloqueados en EOP.](create-block-sender-lists-in-office-365.md)
 
 ## <a name="submit-false-positives-to-microsoft"></a>Enviar falsos positivos a Microsoft
 
 > [!TIP]
-> En lugar de usar los siguientes procedimientos para informar de falsos positivos, los usuarios de Outlook y Outlook en la Web (anteriormente conocidos como Outlook Web App) pueden usar el complemento de mensaje de informe o el complemento de suplantación de identidad de informes. Para obtener información acerca de cómo [](enable-the-report-message-add-in.md) instalar y usar estas herramientas, vea Habilitar el complemento Mensaje de informe y Habilitar el complemento de suplantación de identidad [de informes.](enable-the-report-phish-add-in.md)
+> En lugar de usar los siguientes procedimientos para informar de falsos positivos, los usuarios de Outlook y Outlook en la Web (anteriormente conocidos como Outlook Web App) pueden usar el complemento de mensaje de informe o el complemento de suplantación de identidad de informes. Para obtener información acerca de cómo [](enable-the-report-message-add-in.md) instalar y usar estas herramientas, vea Habilitar el complemento De informe de mensajes y Habilitar el complemento de suplantación de identidad [de informes.](enable-the-report-phish-add-in.md)
 
 
 Si un mensaje se identificó incorrectamente como correo no deseado, puede enviarlo al equipo de análisis de correo no deseado de Microsoft. Los analistas evaluarán el mensaje y, según los resultados del análisis, los filtros de todo el servicio se pueden ajustar para permitir que pase el mensaje.

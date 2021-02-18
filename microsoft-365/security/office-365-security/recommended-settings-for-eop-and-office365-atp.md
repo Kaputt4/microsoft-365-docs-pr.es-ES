@@ -19,23 +19,23 @@ ms.collection:
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y Defender para Office 365? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué debe usarse si desea ser más estricto? ¿Y qué extra obtiene si también usa Defender para Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7a609a069e0e35b673b0902f2600f9c5433a14bb
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d635a28c41c9aceb0e3c499301156e53a1e2fa68
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166944"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289358"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada para EOP y Microsoft Defender para la seguridad de Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-**Exchange Online Protection (EOP)** es el núcleo de seguridad de las suscripciones de Microsoft 365 y ayuda a evitar que los correos electrónicos malintencionados lleguen a las bandejas de entrada de los empleados. Sin embargo, con los nuevos ataques más sofisticados que surgen cada día, a menudo se requieren protecciones mejoradas. **Microsoft Defender para Office 365** El plan 1 o el plan 2 contienen características adicionales que dan a los administradores más niveles de seguridad, control e investigación.
+**Exchange Online Protection (EOP)** es el núcleo de seguridad de las suscripciones de Microsoft 365 y ayuda a evitar que los correos electrónicos malintencionados lleguen a las bandejas de entrada de los empleados. Pero con nuevos ataques más sofisticados cada día, a menudo se requieren protecciones mejoradas. **Microsoft Defender para Office 365** El plan 1 o el plan 2 contienen características adicionales que dan a los administradores más niveles de seguridad, control e investigación.
 
 Aunque habilitamos a los administradores de seguridad para personalizar su configuración de seguridad, hay dos niveles de seguridad en EOP y Microsoft Defender para Office 365 que recomendamos: **Estándar** y **Estricto.** El entorno y las necesidades de cada cliente son diferentes, pero creemos que estos niveles de filtrado ayudarán a evitar que el correo no deseado llegue a la Bandeja de entrada de los empleados en la mayoría de las situaciones.
 
@@ -67,10 +67,10 @@ Para crear y configurar directivas contra correo no deseado, vea Configurar dire
 |**Acción de detección de correo electrónico de suplantación de identidad de** alta confianza <p> _HighConfidencePhishAction_|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
 |**Acción de detección de correo** electrónico masivo <p> _BulkSpamAction_|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Mover mensaje a la carpeta Correo no deseado** <p> `MoveToJmf`|**Colocar el mensaje en cuarentena** <p> `Quarantine`||
 |Umbral de correo electrónico masivo <p> _BulkThreshold_|7 |6 |4 |Para obtener más información, consulte [Nivel de quejas masivas (BCL) en Office 365.](bulk-complaint-level-values.md)|
-|Período de retención de cuarentena <p> _QuarantineRetentionPeriod_|15 días|30 días|30 días||
+|Período de retención en cuarentena <p> _QuarantineRetentionPeriod_|15 días|30 días|30 días||
 |**Sugerencias de seguridad** <p> _InlineSafetyTipsEnabled_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
 |Remitentes permitidos <p> _AllowedSenders_|Ninguno|Ninguno|Ninguno||
-|Dominios de remitente permitidos <p> _AllowedSenderDomains_|Ninguno|Ninguno|Ninguno|Agregar dominios a la lista de remitentes permitidos es una idea muy mala. Los atacantes podrían enviarle un correo electrónico que, de lo contrario, se filtraría. <p> Use [](learn-about-spoof-intelligence.md) la inteligencia de suplantación de identidad  en el Centro de seguridad y cumplimiento de & en la página de configuración contra correo no deseado para revisar todos los remitentes que suplantar direcciones de correo electrónico de remitentes en los dominios de correo electrónico de su organización o suplantar direcciones de correo electrónico del remitente en dominios externos.|
+|Dominios de remitente permitidos <p> _AllowedSenderDomains_|Ninguno|Ninguno|Ninguno|Agregar dominios a la lista de remitentes permitidos es una idea muy mala. Los atacantes podrían enviarle un correo electrónico que, de lo contrario, se filtraría. <p> Use [](learn-about-spoof-intelligence.md) la inteligencia de suplantación de identidad  en el Centro de seguridad y cumplimiento de & en la página configuración contra correo no deseado para revisar todos los remitentes que suplanta las direcciones de correo electrónico de remitentes en los dominios de correo electrónico de su organización o las direcciones de correo electrónico del remitente de suplantación de identidad en dominios externos.|
 |Remitentes bloqueados <p> _BlockedSenders_|Ninguno|Ninguno|Ninguno||
 |Dominios de remitente bloqueados <p> _BlockedSenderDomains_|Ninguno|Ninguno|Ninguno||
 |**Habilitar las notificaciones de correo no deseado para el usuario final** <p> _EnableEndUserSpamNotifications_|Deshabilitado <p> `$false`|Habilitado <p> `$true`|Habilitado <p> `$true`||
@@ -82,7 +82,7 @@ Para crear y configurar directivas contra correo no deseado, vea Configurar dire
 
 Existen otras opciones de configuración del Filtro de correo no deseado avanzado (ASF) en las directivas contra correo no deseado que están en proceso de desuso. Se comunicará más información sobre las escalas de tiempo para la depreciación de estas características fuera de este artículo.
 
-Te recomendamos que desactives esta configuración **de** ASF para los **niveles Estándar** **y Estricto.** Para obtener más información acerca de la configuración de ASF, vea la configuración del filtro de correo no deseado [avanzado (ASF) en Office 365.](advanced-spam-filtering-asf-options.md)
+Te recomendamos que desactives esta configuración **de** ASF para los **niveles Estándar** **y Estricto.** Para obtener más información acerca de la configuración de ASF, vea configuración del filtro de correo no deseado [avanzado (ASF) en Office 365.](advanced-spam-filtering-asf-options.md)
 
 ****
 
@@ -145,8 +145,8 @@ Para obtener más información acerca de esta configuración, vea [Configuració
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
 |**Habilitar la protección contra la suplantación** <p> _EnableSpoofIntelligence_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
-|**Habilitar remitente no autenticado** <p> _EnableUnauthenticatedSender_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para remitentes suplantados no identificados. Para obtener más información, consulte [Configuración de suplantación de identidad en directivas contra suplantación de identidad](set-up-anti-phishing-policies.md).|
-|**Si alguien que no tiene permiso para suplantación de su dominio envía correo electrónico** <p> _AuthenticationFailAction_|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Poner en cuarentena el mensaje** <p> `Quarantine`|Esta configuración se aplica a los remitentes bloqueados en la [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md).|
+|**Habilitar remitente no autenticado** <p> _EnableUnauthenticatedSender_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para remitentes suplantados no identificados. Para obtener más información, vea [Configuración de suplantación de identidad en directivas contra suplantación de identidad](set-up-anti-phishing-policies.md).|
+|**Si alguien que no tiene permiso para suplantación de su dominio envía un correo electrónico** <p> _AuthenticationFailAction_|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Poner en cuarentena el mensaje** <p> `Quarantine`|Esta configuración se aplica a los remitentes bloqueados en la [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md).|
 |
 
 ## <a name="microsoft-defender-for-office-365-security"></a>Seguridad de Microsoft Defender para Office 365
@@ -165,7 +165,7 @@ Si su suscripción incluye Microsoft Defender para Office 365 o si ha comprado D
 
 ### <a name="anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Configuración de directiva contra suplantación de identidad en Microsoft Defender para Office 365
 
-Los clientes de EOP obtienen la protección contra suplantación de identidad básica como se describió anteriormente, pero Microsoft Defender para Office 365 incluye más características y control para ayudar a evitar, detectar y corregir ataques. Para crear y configurar estas directivas, vea [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
+Los clientes de EOP obtienen anti-phishing básico como se describió anteriormente, pero Microsoft Defender para Office 365 incluye más características y control para ayudar a evitar, detectar y corregir ataques. Para crear y configurar estas directivas, vea [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 #### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configuración de suplantación en directivas contra suplantación de identidad en Microsoft Defender para Office 365
 
@@ -192,15 +192,15 @@ Para obtener más información acerca de esta configuración, vea la configuraci
 
 #### <a name="spoof-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configuración de suplantación de identidad en directivas contra suplantación de identidad en Microsoft Defender para Office 365
 
-Tenga en cuenta que estas son las mismas opciones que están disponibles en la configuración de directiva contra correo no [deseado en EOP.](#eop-anti-spam-policy-settings)
+Tenga en cuenta que estas son las mismas opciones que están disponibles en la configuración de directiva [contra correo no deseado en EOP.](#eop-anti-spam-policy-settings)
 
 ****
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|---|---|---|---|
 |**Habilitar la protección contra la suplantación** <p> _EnableSpoofIntelligence_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
-|**Habilitar remitente no autenticado** <p> _EnableUnauthenticatedSender_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para remitentes suplantados no identificados. Para obtener más información, consulte [Configuración de suplantación de identidad en directivas contra suplantación de identidad](set-up-anti-phishing-policies.md).|
-|**Si alguien que no tiene permiso para suplantación de su dominio envía correo electrónico** <p> _AuthenticationFailAction_|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Poner en cuarentena el mensaje** <p> `Quarantine`|Esta configuración se aplica a los remitentes bloqueados en la [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md).|
+|**Habilitar remitente no autenticado** <p> _EnableUnauthenticatedSender_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`|Agrega un signo de interrogación (?) a la foto del remitente en Outlook para remitentes suplantados no identificados. Para obtener más información, vea [Configuración de suplantación de identidad en directivas contra suplantación de identidad](set-up-anti-phishing-policies.md).|
+|**Si alguien que no tiene permiso para suplantación de su dominio envía un correo electrónico** <p> _AuthenticationFailAction_|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Mover el mensaje a las carpetas de correo no deseado de los destinatarios** <p> `MoveToJmf`|**Poner en cuarentena el mensaje** <p> `Quarantine`|Esta configuración se aplica a los remitentes bloqueados en la [inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md).|
 |
 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configuración avanzada en directivas contra suplantación de identidad en Microsoft Defender para Office 365
@@ -211,7 +211,7 @@ Para obtener más información acerca de esta configuración, vea Umbrales avanz
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
-|**Umbrales avanzados de suplantación de identidad** <p> _PhishThresholdLevel_|**1- Estándar** <p> `1`|**2: agresivo** <p> `2`|**3- Más agresivo** <p> `3`||
+|**Umbrales avanzados de suplantación de identidad** <p> _PhishThresholdLevel_|**1- Estándar** <p> `1`|**2- Agresivo** <p> `2`|**3- Más agresivo** <p> `3`||
 |
 
 ### <a name="safe-links-settings"></a>Configuración de vínculos seguros
@@ -257,7 +257,7 @@ En PowerShell, use los cmdlets [New-SafeLinksPolicy](https://docs.microsoft.com/
 
 ### <a name="safe-attachments-settings"></a>Configuración de datos adjuntos seguros
 
-Datos adjuntos seguros en Microsoft Defender para Office 365 incluye la configuración global que no tiene relación con las directivas de datos adjuntos seguros y la configuración específica de cada directiva de vínculos seguros. Para obtener más información, vea [Datos adjuntos seguros en Defender para Office 365.](atp-safe-attachments.md)
+Datos adjuntos seguros en Microsoft Defender para Office 365 incluye la configuración global que no tiene ninguna relación con las directivas de datos adjuntos seguros y la configuración específica de cada directiva de vínculos seguros. Para obtener más información, vea [Datos adjuntos seguros en Defender para Office 365.](atp-safe-attachments.md)
 
 #### <a name="global-settings-for-safe-attachments"></a>Configuración global de datos adjuntos seguros
 
@@ -289,7 +289,7 @@ En PowerShell, use los cmdlets [New-SafeAttachmentPolicy](https://docs.microsoft
 |---|:---:|:---:|:---:|---|
 |**Respuesta de malware desconocido de datos adjuntos seguros** <p> _Acción_|Bloquear <p> `Block`|Bloquear <p> `Block`|Bloquear <p> `Block`||
 |**Redirigir datos adjuntos al detectar:** **habilitar el redireccionamiento** <p> _Redirigir_ <p> _RedirectAddress_|Desactivado y sin dirección de correo electrónico especificada. <p> `$true` <p> none|On y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|On y especifica una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Redirigir mensajes a un administrador de seguridad para su revisión.|
-|**Aplica la selección anterior si se ha producido un error o si se ha producido un error en la detección de malware en busca de datos adjuntos.** <p> _ActionOnError_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
+|**Aplica la selección anterior si se ha finalizado el análisis de malware para datos adjuntos o si se produce un error.** <p> _ActionOnError_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
 |
 
 ## <a name="related-articles"></a>Artículos relacionados
@@ -298,6 +298,6 @@ En PowerShell, use los cmdlets [New-SafeAttachmentPolicy](https://docs.microsoft
 
 - Los administradores y usuarios pueden enviar falsos positivos (correo electrónico bueno marcado como negativo) y falsos negativos (correo electrónico no deseado permitido) a Microsoft para su análisis. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-- Use estos vínculos para obtener información sobre cómo **configurar el** servicio [EOP](set-up-your-eop-service.md)y **configurar** Microsoft Defender para [Office 365.](office-365-atp.md) No olvide las instrucciones útiles en "Proteger[contra amenazas en Office 365".](protect-against-threats.md)
+- Use estos vínculos para obtener información sobre cómo **configurar** el servicio [EOP](set-up-your-eop-service.md)y **configurar** [Microsoft Defender para Office 365.](office-365-atp.md) No olvide las instrucciones útiles en "Proteger[contra amenazas en Office 365".](protect-against-threats.md)
 
-- Las líneas base de seguridad para **Windows** se encuentran aquí: ¿Dónde puedo obtener las líneas base de [seguridad?](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) para las opciones de GPO/locales y Usar líneas base de seguridad para configurar [dispositivos Windows 10](https://docs.microsoft.com/intune/protect/security-baselines) en Intune para la seguridad basada en Intune. Por último, hay disponible una comparación entre las líneas base de seguridad de Microsoft Defender para Endpoint y Microsoft Intune en Comparar Microsoft Defender para Endpoint y las líneas base de seguridad [de Windows Intune.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)
+- Las líneas base de seguridad para **Windows** se encuentran aquí: ¿Dónde puedo obtener las líneas base de [seguridad?](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) para las opciones de GPO/locales y Usar líneas base de seguridad para configurar [dispositivos Windows 10](https://docs.microsoft.com/intune/protect/security-baselines) en Intune para la seguridad basada en Intune. Por último, hay una comparación entre las líneas base de seguridad de Microsoft Defender para Endpoint y Microsoft Intune en Comparar Microsoft Defender para Endpoint y las líneas base de seguridad [de Windows Intune.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)
