@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevención de pérdida de datos en punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento de Microsoft 365 '
-ms.openlocfilehash: 1dac32505144c3966ad2219cc69a33ba29f194dc
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: d5394499b5514e6e0a49f958a62e70cde61ebf44
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682631"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279314"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
@@ -34,8 +34,7 @@ Puede usar la prevención de pérdida de datos (DLP) de Microsoft 365 para super
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Actividades en punto de conexión que puede supervisar y sobre las que puede tomar medidas
 
-DLP en punto de conexión de Microsoft le permite auditar y administrar los siguientes tipos de actividades que los usuarios llevan a cabo en elementos confidenciales de los dispositivos que ejecutan Windows 10.
-
+DLP en punto de conexión de Microsoft le permite auditar y administrar los siguientes tipos de actividades que los usuarios llevan a cabo en elementos confidenciales de los dispositivos que ejecutan Windows 10. 
 
 |actividad |description  | auditables/restictable|
 |---------|---------|---------|
@@ -47,6 +46,28 @@ DLP en punto de conexión de Microsoft le permite auditar y administrar los sigu
 |crear un elemento|Detecta cuándo un usuario crea un elemento| auditable|
 |cambiar el nombre de un elemento|Detecta cuando un usuario cambia el nombre de un elemento| auditable|
 
+ ## <a name="monitored-files"></a>Archivos supervisados
+
+La DLP en punto de conexión admite la supervisión de estos tipos de archivo:
+
+- archivos de Word
+- archivos de PowerPoint
+- archivos de Excel
+- archivos PDF
+- archivos .csv
+- archivos .tsv
+- archivos .txt
+- archivos .rtf
+- archivos .c
+- archivos .class
+- archivos .cpp
+- archivos .cs
+- archivos .h
+- archivos .java
+ 
+De forma predeterminada, la DLP en punto de conexión audita las actividades para estos tipos de archivo, incluso si no hay una coincidencia de directiva. Si solo quiere supervisar los datos de las coincidencias de directivas, puede desactivar **Auditar siempre para la actividad de archivos de los dispositivos** en la configuración global de DLP en punto de conexión. Independientemente de qué seleccione, las actividades de cualquier archivo Word, PowerPoint, Excel, PDF y .csv siempre se auditan.
+
+DLP en punto de conexión supervisa la actividad basada en un tipo de extensiones multipropósito de correo Internet (MIME), por lo que las actividades se capturan incluso si se cambia la extensión de archivo. 
 
 ## <a name="whats-different-in-endpoint-dlp"></a>¿Qué es diferente en DLP en punto de conexión?
 
@@ -79,25 +100,7 @@ Si incorporó dispositivos a través de [Protección contra amenazas avanzada de
 
 ### <a name="viewing-endpoint-dlp-data"></a>Visualizar datos de DLP en punto de conexión
 
- DLP en punto de conexión supervisa la actividad basada en un tipo de extensiones multipropósito de correo Internet (MIME), por lo que las actividades se capturan incluso si se cambia la extensión de archivo. Actualmente, se admiten los siguientes tipos de archivo:
 
-- archivos de Word
-- archivos de PowerPoint
-- archivos de Excel
-- archivos PDF
-- archivos .csv
-- archivos .tsv
-- archivos .txt
-- archivos .rtf
-- archivos .c
-- archivos .class
-- archivos .cpp
-- archivos .cs
-- archivos .h
-- archivos .java
-
-> [!NOTE]
-> La DLP en punto de conexión evalúa todos los tipos de archivo anteriores según la directiva DLP y aplica las acciones de protección correspondientes. Todos los archivos que coinciden con una directiva DLP, estén o no bloqueados, se auditan para todas las acciones admitidas. Además, la actividad de archivo que se lleva a cabo en cualquier archivo de Word, PowerPoint, Excel, PDF o archivo .csv se audita de forma predeterminada, independientemente de si existe una directiva DLP o si estos archivos coinciden.
 
 Puede ver las alertas relacionadas con las directivas DLP ejecutadas en los dispositivos de punto de conexión si va al [Panel de administración de alertas de DLP](dlp-configure-view-alerts-policies.md).
 
