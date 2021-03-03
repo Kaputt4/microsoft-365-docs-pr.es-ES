@@ -1,8 +1,8 @@
 ---
 title: Información de pago para Francia
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -11,26 +11,36 @@ ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre dónde enviar el pago de la suscripción.
+description: Obtén información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ef7691bc44f4822eb84463a8c7afd1fd7a61b444
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d76ea3d53abe193a421687944dc27d6fb78ffe77
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647632"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406948"
 ---
 # <a name="payment-information-for-france"></a>Información de pago para Francia
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pagar solo en EUR y hacer referencia a los números de factura en la remesa de pago.
-
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Bank, Londres  
-**Código SWIFT/BIC:** GBGB2L  
-**IBAN:** GB31CITI18500812207591  
-**Código sort:** 185008  
-**Número de cuenta:** 12207591  
-**Nombre de cuenta:** MICROSOFT  
+**Paga en EUR y haz referencia a los números de factura en tu remesa de pago.**
+
+Si tiene una factura facturada por **Microsoft Ireland Operations Limited,** use esta información bancaria:
+
+Banco: Citibank, Londres\
+Código SWIFT: CITIGB2L\
+Código IBAN: GB31CITI18500812207591\
+Código SORT: 185008\
+Número de cuenta: 12207591\
+Nombre de cuenta: MICROSOFT
+
+Si tiene una factura facturada por **Microsoft France SAS** para pedidos y consumo a partir del 1 de marzo de 2021, use esta información bancaria:
+
+Banco: Citibank Europe plc\
+Código SWIFT: CITIIE2X\
+Código IBAN: IE11CITI99005170000123\
+Número de cuenta: 70000123\
+Nombre de cuenta: MICROSOFT

@@ -1,8 +1,8 @@
 ---
-title: Información de pago de Suecia
-author: cmcatee-MSFT
+title: Información de pago para Suecia
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -11,26 +11,35 @@ ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre dónde enviar el pago de la suscripción.
+description: Obtén información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d654d3797340876d359bccc8279e2021a1f2a6be
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a448b11156770dac5cfe0d273fc75183a5aca8fd
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648436"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405754"
 ---
-# <a name="payment-information-for-sweden"></a>Información de pago de Suecia
+# <a name="payment-information-for-sweden"></a>Información de pago para Suecia
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pagar solo en SEK y hacer referencia a los números de factura en la remesa de pago.
-
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Bank, Londres  
-**Código SWIFT/BIC:** GBGB2L  
-**IBAN:** GB22CITI18500812207656  
-**Código sort:** 185008  
-**Número de cuenta:** 12207656  
-**Nombre de cuenta:** MICROSOFT 
+**Pague en SEK y haga referencia a los números de factura en su remesa de pago.**
+
+Si tiene una factura facturada por **Microsoft Ireland Operations Limited,** use esta información bancaria:
+
+Banco: Citibank, Londres\
+Código SWIFT: CITIGB2L\
+Código IBAN: GB22CITI18500812207656\
+Número de cuenta: 12207656\
+Nombre de cuenta: MICROSOFT
+
+Si tiene una factura facturada por **Microsoft AB** para pedidos y consumo a partir del 1 de marzo de 2021, use esta información bancaria:
+
+Banco: Citibank Europe plc\
+Código SWIFT: CITIIE2X\
+Código IBAN: IE86CITI99005170000131\
+Número de cuenta: 70000131\
+Nombre de cuenta: MICROSOFT

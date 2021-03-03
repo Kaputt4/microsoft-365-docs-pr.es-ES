@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
-description: Microsoft ha desarrollado varias directivas, procedimientos y adoptado varios procedimientos recomendados del sector para ayudar a proteger a nuestros usuarios del correo electrónico abusivo, no deseado o malintencionado.
+description: Microsoft ha desarrollado varias directivas, procedimientos y adoptado varios procedimientos recomendados del sector para ayudar a proteger a nuestros usuarios de correo electrónico abusivo, no deseado o malintencionado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1065fdef5f804214ca48f7ca54170e6e417490d7
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: f53b1c36417b15e366b527dd1c12e4f23c06f632
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289214"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406601"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referencia: Políticas, prácticas y directrices
 
@@ -33,21 +33,21 @@ ms.locfileid: "50289214"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Microsoft se centra en ayudarle a que disfrute de la experiencia web de usuario más confiable. Por ello, Microsoft ha desarrollado diversas políticas y procedimientos, y adoptado varias prácticas recomendadas del sector para ayudar a proteger a nuestros usuarios de correo electrónico abusivo, no deseado o malintencionado. Los remitentes que intentan enviar correo electrónico a los usuarios deben asegurarse de que comprenden completamente y que están siguiendo las instrucciones de este artículo para ayudar en este esfuerzo y para ayudar a evitar posibles problemas de entrega.
+Microsoft se centra en ayudarle a que disfrute de la experiencia web de usuario más confiable. Por ello, Microsoft ha desarrollado diversas políticas y procedimientos, y adoptado varias prácticas recomendadas del sector para ayudar a proteger a nuestros usuarios de correo electrónico abusivo, no deseado o malintencionado. Los remitentes que intenten enviar correo electrónico a los usuarios deben asegurarse de que comprenden completamente y que están siguiendo las instrucciones de este artículo para ayudar en este esfuerzo y ayudar a evitar posibles problemas de entrega.
 
-Si no cumple estas políticas y directrices, es posible que nuestro equipo de soporte técnico no pueda ayudarle. Si cumple las directrices, prácticas y políticas que se presentan en este artículo y sigue experimentando problemas de entrega basados en su dirección IP de remitente, siga los pasos para enviar una solicitud de eliminación de la lista. Para obtener instrucciones, vea Usar el portal de eliminación de la lista para quitarse [de la lista de remitentes bloqueados.](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
+Si no cumple estas políticas y directrices, es posible que nuestro equipo de soporte técnico no pueda ayudarle. Si cumple las directrices, prácticas y políticas que se presentan en este artículo y sigue experimentando problemas de entrega basados en su dirección IP de remitente, siga los pasos para enviar una solicitud de eliminación de la lista. Para obtener instrucciones, [consulte Use the delist portal to remove yourself from the blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## <a name="general-microsoft-policies"></a>Directivas generales de Microsoft
 
 El correo electrónico enviado a los usuarios de Microsoft 365 debe cumplir con todas las directivas de Microsoft que rigen la transmisión de correo electrónico y el uso de Microsoft 365.
 
-- Términos de servicios aplicables a Microsoft 365; en particular, la prohibición de usar el servicio para enviar correo no deseado o distribuir malware.
+- Términos de servicios aplicables a Microsoft 365; en particular, la prohibición de usar el servicio para correo no deseado o distribuir malware.
 
 - [Acuerdo de servicios de Microsoft](https://www.microsoft.com/servicesagreement/)
 
 ## <a name="governmental-regulations"></a>Regulaciones gubernamentales
 
-El correo electrónico enviado a los usuarios de Microsoft 365 debe cumplir todas las leyes y normativas aplicables que rigen las comunicaciones por correo electrónico en la jurisdicción aplicable.
+El correo electrónico enviado a los usuarios de Microsoft 365 debe cumplir todas las leyes y reglamentos aplicables que rigen las comunicaciones de correo electrónico en la jurisdicción aplicable.
 
 - [Ley estadounidense CAN-SPAM: guía de cumplimiento para empresas](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -83,7 +83,7 @@ Los remitentes, ISP y otros proveedores de servicios deben administrar activamen
 
 ## <a name="microsoft-365-limits"></a>Límites de Microsoft 365
 
-Los remitentes deben cumplir los límites de Microsoft 365 enumerados en los límites [de Exchange Online Protection.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
+Los remitentes deben cumplir los límites de Microsoft 365 enumerados [en Límites](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)de Exchange Online Protection .
 
 ## <a name="email-delivery-resources-and-organizations"></a>Organizaciones y recursos de entrega de correo electrónico
 
@@ -91,13 +91,13 @@ Microsoft trabaja activamente con los organismos de la industria y los proveedor
 
 - [Messaging Malware Mobile Anti-Abuse Working Group](https://www.m3aawg.org/)
 
-- [Online Trust Alliance](https://www.otalliance.org/resources)
+- [Online Trust Alliance](https://www.internetsociety.org/ota/)
 
 - [Email Sender & Provider Coalition](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>Informar sobre abusos y correo no deseado
 
-Para informar de correo electrónico ilegal, abusivo, no deseado o malintencionado, vea Notificar mensajes [y archivos a Microsoft.](report-junk-email-messages-to-microsoft.md) Enviar estos tipos de comunicaciones es una infracción de la directiva de Microsoft y se tomarán las medidas adecuadas en los informes confirmados.
+Para informar de correo electrónico ilegal, abusivo, no deseado o malintencionado, vea Informar de [mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md). Enviar estos tipos de comunicaciones es una infracción de la directiva de Microsoft y se tomarán las medidas adecuadas en los informes confirmados.
 
 ## <a name="law-enforcement"></a>Cumplimiento de la ley
 

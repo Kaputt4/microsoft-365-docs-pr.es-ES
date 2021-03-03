@@ -16,22 +16,22 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 91366e8f255d277d4d40de4c4cd3330283da718c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e125a6dfb35b7018b5f85100184c842da9231327
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166455"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407330"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
-Identificar y clasificar elementos confidenciales que están bajo el control de su organización es el primer paso de la disciplina [de Protección de la información.](protect-information.md)  Microsoft 365 ofrece tres formas de identificar elementos para que se puedan clasificar:
+Identificar y clasificar elementos confidenciales que están bajo el control de las organizaciones es el primer paso de la disciplina [de Protección de la información.](protect-information.md)  Microsoft 365 proporciona tres formas de identificar elementos para que se puedan clasificar:
 
 - manualmente por los usuarios
-- reconocimiento de patrones automatizado, como los tipos de información confidencial
+- reconocimiento automatizado de patrones, como tipos de información confidencial
 - [aprendizaje automático](classifier-learn-about.md)
 
-Los tipos de información confidencial son clasificadores basados en patrones. Detectan información confidencial, como números de cuentas bancarias, tarjetas de crédito o seguridad social, para identificar elementos confidenciales, ver definiciones de entidad de [tipos de información confidencial](sensitive-information-type-entity-definitions.md)
+Los tipos de información confidencial son clasificadores basados en patrones. Detectan información confidencial como seguridad social, tarjeta de crédito o números de cuenta bancaria para identificar elementos confidenciales, consulte [Definiciones](sensitive-information-type-entity-definitions.md) de entidades de tipos de información confidencial
 
 ## <a name="sensitive-information-types-are-used-in"></a>Los tipos de información confidencial se usan en
 
@@ -46,12 +46,12 @@ Los tipos de información confidencial son clasificadores basados en patrones. D
 Cada entidad de tipo de información confidencial se define mediante estos campos:
 
 - nombre: cómo se hace referencia al tipo de información confidencial
-- description: describe lo que busca el tipo de información confidencial
+- descripción: describe lo que busca el tipo de información confidencial
 - patrón: un patrón define lo que detecta un tipo de información confidencial. Consta de los siguientes componentes
-    - Elemento principal: el elemento principal que busca el tipo de información confidencial. Puede ser una expresión **regular con o** sin una validación de suma de comprobación, una lista de palabras clave, un diccionario de palabras clave o una **función**.  
-    - Elemento de apoyo: elementos que actúan como evidencia de apoyo que ayudan a aumentar la confianza de la coincidencia. Por ejemplo, la palabra clave "SSN" cerca de un número de SSN. Puede ser una expresión regular con o sin una validación de suma de comprobación, lista de palabras clave, diccionario de palabras clave.
-    - Nivel de confianza: los niveles de confianza (alto, medio, bajo) reflejan cuánta evidencia de apoyo se detectó junto con el elemento principal. Cuanto más evidencia de apoyo contenga un elemento, mayor será la confianza de que un elemento coincidente contenga la información confidencial que buscas.
-    - Proximidad: número de caracteres entre el elemento principal y el elemento de apoyo
+    - Elemento principal: el elemento principal que busca el tipo de información confidencial. Puede ser una expresión **regular con** o sin una validación de suma de comprobación, una lista de palabras **clave,** un **diccionario** de palabras clave o una **función**.
+    - Elemento de soporte: elementos que actúan como pruebas de soporte que ayudan a aumentar la confianza de la coincidencia. Por ejemplo, la palabra clave "SSN" cerca de un número SSN. Puede ser una expresión regular con o sin validación de suma de comprobación, lista de palabras clave, diccionario de palabras clave.
+    - Nivel de confianza: los niveles de confianza (altos, medianos, bajos) reflejan la cantidad de evidencia de soporte que se detectó junto con el elemento principal. Cuanto más evidencia de soporte técnico contenga un elemento, mayor será la confianza de que un elemento coincidente contenga la información confidencial que está buscando.
+    - Proximidad: número de caracteres entre el elemento principal y el elemento de soporte técnico
 
 ![Diagrama de prueba corroboradora y ventana de proximidad](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
@@ -60,7 +60,7 @@ Obtenga más información sobre los niveles de confianza en este vídeo
 
  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]  
 
-### <a name="example-sensitive-information-type"></a>Ejemplo de tipo de información confidencial
+### <a name="example-sensitive-information-type"></a>Tipo de información confidencial de ejemplo
 
 
 ## <a name="argentina-national-identity-dni-number"></a>Número de identidad nacional (DNI) de Argentina
@@ -84,7 +84,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_argentina_national_id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_argentina_national_id.
 
@@ -104,9 +104,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 - Número de identidad nacional de Argentina 
 - Identidad 
-- Tarjeta de identidad nacional de identificación 
+- Identificación tarjeta de identidad nacional 
 - DNI 
-- Registro nacional de personas nic 
+- Registro nacional de personas de NIC 
 - Documento Nacional de Identidad 
 - Registro nacional de las personas 
 - Identidad 
@@ -114,15 +114,15 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ### <a name="more-on-confidence-levels"></a>Más información sobre los niveles de confianza
 
-En una definición de entidad de tipo de información **confidencial,** el nivel de confianza refleja cuánta evidencia de apoyo se detecta además del elemento principal. Cuanto más evidencia de apoyo contenga un elemento, mayor será la confianza de que un elemento coincidente contenga la información confidencial que buscas. Por ejemplo, las coincidencias con un nivel de confianza alto contendrán más evidencias de apoyo cerca del elemento principal, mientras que las coincidencias con un nivel de confianza bajo contendrán poca o ninguna evidencia de apoyo en proximidad. 
+En una definición de entidad de tipo de información **confidencial,** el nivel de confianza refleja la cantidad de evidencia compatible que se detecta además del elemento principal. Cuanto más evidencia de soporte técnico contenga un elemento, mayor será la confianza de que un elemento coincidente contenga la información confidencial que está buscando. Por ejemplo, las coincidencias con un nivel de confianza alto contendrán evidencias más compatibles cerca del elemento principal, mientras que las coincidencias con un nivel de confianza bajo contendrán poca o ninguna evidencia compatible en proximidad. 
 
-Un nivel de confianza alto devuelve el menor número de falsos positivos, pero puede dar como resultado más falsos negativos. Los niveles de confianza bajos o medianos devuelven más falsos positivos, pero algunos a cero falsos negativos.
+Un nivel de confianza alto devuelve el menor número de falsos positivos, pero puede dar como resultado más falsos negativos. Los niveles de confianza bajos o medianos devuelven más falsos positivos, pero de pocos a cero falsos negativos.
 
-- **confianza baja:** valor de 65, los elementos coincidentes contendrán el menor número de falsos negativos, pero los más falsos positivos.  
-- **confianza media:** valor de 75, los elementos coincidentes contendrán una cantidad media de falsos positivos y falsos negativos.  
-- **confianza alta:** valor de 85, los elementos coincidentes contendrán el menor número de falsos positivos, pero los más falsos negativos.  
+- **confianza baja:** valor de 65, los elementos coincidentes contendrán el menor número de falsos negativos, pero los más falsos positivos. La confianza baja devuelve todas las coincidencias de confianza baja, media y alta.
+- **confianza media:** valor de 75, los elementos coincidentes contendrán una cantidad promedio de falsos positivos y falsos negativos. La confianza media devuelve todas las coincidencias de confianza media y alta.  
+- **elevada confianza:** valor de 85, los elementos coincidentes contendrán el menor número de falsos positivos, pero los negativos más falsos. La confianza alta solo devuelve coincidencias de confianza alta.  
 
-Debes usar patrones de nivel de confianza alto con recuentos bajos, por ejemplo, de cinco a diez, y patrones de confianza baja con recuentos más altos, por ejemplo, 20 o más.
+Debe usar patrones de alto nivel de confianza con recuentos bajos, por ejemplo, de cinco a diez, y patrones de confianza bajos con recuentos más altos, por ejemplo, 20 o más.
 
 ## <a name="creating-custom-sensitive-information-types"></a>Crear tipos de información confidencial personalizados
 
@@ -137,7 +137,7 @@ Para crear tipos de información confidencial personalizados en el Centro de seg
 
 
 > [!NOTE]
-> Los niveles de confianza mejorados están disponibles para su uso inmediato en prevención de pérdida de datos para los servicios de Microsoft 365, Microsoft Information Protection para servicios de Microsoft 365, cumplimiento de comunicaciones, gobierno de información y administración de registros.
+> Los niveles de confianza mejorados están disponibles para su uso inmediato en Prevención de pérdida de datos para servicios de Microsoft 365, Microsoft Information Protection para servicios de Microsoft 365, Cumplimiento de comunicaciones, Gobierno de la información y Administración de registros.
 
 > Microsoft 365 Information Protection ahora es compatible con la vista previa de idiomas con conjunto de caracteres de doble byte para:
 > - Chino (simplificado)
@@ -150,6 +150,6 @@ Para crear tipos de información confidencial personalizados en el Centro de seg
 ## <a name="for-further-information"></a>Para obtener más información
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 - [Crear un tipo personalizado de información confidencial](create-a-custom-sensitive-information-type.md)
-- [Crear un tipo personalizado de información confidencial en PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Crear un tipo de información confidencial personalizada en PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->

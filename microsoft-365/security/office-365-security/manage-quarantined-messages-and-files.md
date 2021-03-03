@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden aprender a ver y administrar mensajes en cuarentena para todos los usuarios en Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
+description: Los administradores pueden aprender a ver y administrar mensajes en cuarentena para todos los usuarios de Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 22bcf0cefb746e92ccadf8254f4076b47ee475c4
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b0515d610b38986c2b5339c1cb967a7b150914a2
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287790"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405823"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -35,13 +35,13 @@ ms.locfileid: "50287790"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-En las organizaciones de Microsoft 365 que tienen buzones de Exchange Online o en las organizaciones con Exchange Online Protection (EOP) independientes sin buzones de Exchange Online, la cuarentena retiene los mensajes que pueden ser peligrosos o no deseados. Para obtener más información, vea [Mensajes de correo electrónico en cuarentena en EOP.](quarantine-email-messages.md)
+En las organizaciones de Microsoft 365 que tienen buzones de Exchange Online o en las organizaciones con Exchange Online Protection (EOP) independientes sin buzones de Exchange Online, la cuarentena retiene los mensajes que pueden ser peligrosos o no deseados. Para obtener más información, vea [Quarantined email messages in EOP](quarantine-email-messages.md).
 
-Los administradores pueden ver, liberar y eliminar todos los tipos de mensajes en cuarentena para todos los usuarios. Solo los administradores pueden administrar mensajes que se han puesto en cuarentena como malware, suplantación de identidad de confianza alta o como resultado de reglas de flujo de correo (también conocidas como reglas de transporte). Los administradores también pueden notificar falsos positivos a Microsoft.
+Los administradores pueden ver, liberar y eliminar todos los tipos de mensajes en cuarentena para todos los usuarios. Solo los administradores pueden administrar mensajes que se han puesto en cuarentena como malware, phishing de elevada confianza o como resultado de reglas de flujo de correo (también conocidas como reglas de transporte). Los administradores también pueden notificar falsos positivos a Microsoft.
 
 Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden ver, descargar y eliminar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 
-Puede ver y administrar los mensajes en cuarentena en el Centro de seguridad y cumplimiento de & o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; EOP PowerShell independiente para organizaciones sin buzones de Exchange Online).
+Puede ver y administrar mensajes en cuarentena en el Centro de seguridad y cumplimiento de & o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin buzones de Exchange Online).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -49,32 +49,32 @@ Puede ver y administrar los mensajes en cuarentena en el Centro de seguridad y c
 
 - Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Necesita que se le asignen permisos en el Centro de seguridad y cumplimiento para poder realizar los procedimientos de este artículo:
-  - Para realizar acciones en los mensajes en cuarentena para todos los usuarios, debe  ser miembro de los grupos de roles Administración de la **organización,** Administrador de seguridad o Administrador <sup>\*</sup> de cuarentena.
-  - Para obtener acceso de solo lectura a los mensajes en cuarentena para todos los usuarios, debe ser miembro de los grupos de roles Lector **global** o **Lector de** seguridad.
+- Debe tener asignados permisos en **Exchange Online** para poder realizar los procedimientos descritos en este artículo:
+  - Para realizar acciones en los mensajes en cuarentena para todos los usuarios, debe ser miembro de los grupos de roles Administración de la **organización,** Administrador de seguridad **o** Administrador <sup>\*</sup> de cuarentena.
+  - Para obtener acceso de solo lectura a mensajes en cuarentena para todos los usuarios, debe ser miembro de los grupos de roles Lector **global** o Lector **de** seguridad.
 
-  Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+  Para obtener más información, consulte los [permisos en Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
   **Notas**:
 
-  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  - Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos y permisos necesarios para _otras_ características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
-  - <sup>\*</sup> Los miembros del grupo **de** roles Administrador de cuarentena también deben ser miembros del grupo de roles **Administración** de higiene en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) para poder realizar procedimientos de cuarentena en Exchange Online PowerShell.
+  - <sup>\*</sup> Los miembros **del** grupo de roles Administrador de cuarentena también deben ser miembros del grupo de roles **Administración** de higiene en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) para poder realizar procedimientos de cuarentena en Exchange Online PowerShell.
 
 - Los mensajes en cuarentena se conservan durante un período de tiempo predeterminado antes de que se eliminen automáticamente:
-  - 30 días para los mensajes en cuarentena por directivas contra correo no deseado (correo no deseado, suplantación de identidad y correo electrónico masivo). Este es el valor predeterminado y máximo. Para configurar (inferior) este valor, consulte [Configurar directivas contra correo no deseado.](configure-your-spam-filter-policies.md)
+  - 30 días para los mensajes en cuarentena por directivas contra correo no deseado (correo no deseado, suplantación de identidad y correo electrónico masivo). Este es el valor predeterminado y máximo. Para configurar (inferior) este valor, vea [Configure anti-spam policies](configure-your-spam-filter-policies.md).
   - 15 días para los mensajes que contienen malware.
-  - 15 días para los archivos en cuarentena por datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams en Defender para Office 365.
+  - 15 días para archivos en cuarentena por datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams en Defender para Office 365.
 
   Cuando un mensaje expira de la cuarentena, no se puede recuperar.
 
 ## <a name="use-the-security--compliance-center-to-manage-quarantined-email-messages"></a>Usar el Centro de seguridad & cumplimiento para administrar mensajes de correo electrónico en cuarentena
 
-### <a name="view-quarantined-email"></a>Ver el correo electrónico en cuarentena
+### <a name="view-quarantined-email"></a>Ver correo electrónico en cuarentena
 
 1. En el Centro de seguridad y cumplimiento, vaya a **Administración de amenazas** \> **Revisar** \> **Cuarentena**.
 
-2. Compruebe que **La vista en cuarentena** está establecida en el valor predeterminado correo **electrónico.**
+2. Compruebe que **View quarantined** está establecido en el valor **predeterminado** email .
 
 3. Para ordenar los resultados, haga clic en un encabezado de columna disponible. Haga clic en **Modificar columnas** para mostrar un máximo de siete columnas. Los valores predeterminados están marcados con un asterisco (<sup>\*</sup>):
 
@@ -104,12 +104,12 @@ Puede ver y administrar los mensajes en cuarentena en el Centro de seguridad y c
    - **Hora de recepción**: Introduzca **Fecha de inicio** y **Fecha de finalización**.
 
    - **Motivo de la cuarentena**:
-     - **Directiva:** el mensaje coincidía con las condiciones de una regla de flujo de correo (también conocida como regla de transporte).
+     - **Directiva:** el mensaje coincide con las condiciones de una regla de flujo de correo (también conocida como regla de transporte).
      - **Correo masivo**
-     - **Suplantación** de identidad : el veredicto del filtro de correo no deseado era correo electrónico de suplantación de identidad o protección contra suplantación de identidad **(phishing)** pone en cuarentena el mensaje [(configuración](set-up-anti-phishing-policies.md#spoof-settings) de suplantación de identidad o protección [contra suplantación).](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+     - **Phish:** el veredicto de filtro de correo no deseado era **correo** electrónico de suplantación de identidad o protección contra suplantación de identidad en cuarentena el mensaje [(](set-up-anti-phishing-policies.md#spoof-settings) configuración de suplantación o protección [de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
      - **Malware**
      - **Correo no deseado**
-     - **Suplantación de identidad de confianza alta**
+     - **Phish de elevada confianza**
 
    - **Tipo de directiva**: Filtrar mensajes por tipo de directiva:
      - **Directiva antimalware**
@@ -118,7 +118,7 @@ Puede ver y administrar los mensajes en cuarentena en el Centro de seguridad y c
      - **Directiva de filtro de contenido alojado** (directiva anti-spam)
      - **Regla de transporte**
 
-   - **Destinatario de correo** electrónico: todos los usuarios o solo los mensajes que se le envíen. Los usuarios finales solo pueden administrar los mensajes en cuarentena que se les envían.
+   - **Destinatario de correo** electrónico: todos los usuarios o solo los mensajes que se le envíen. Los usuarios finales solo pueden administrar los mensajes en cuarentena que se les envíen.
 
    Para borrar el filtro, haga clic en **Borrar**. Para ocultar el control flotante del filtro, haga clic de nuevo en **Filtrar**.
 
@@ -126,7 +126,7 @@ Puede ver y administrar los mensajes en cuarentena en el Centro de seguridad y c
 
    - **Id. de mensaje**: El identificador único global del mensaje.
 
-     Por ejemplo, [](message-trace-scc.md) usó el seguimiento de mensajes para buscar un mensaje que se envió a un usuario de su organización y determinar que el mensaje se ha puesto en cuarentena en lugar de entregarse. Asegúrese de incluir el valor completo del identificador de mensaje, que puede incluir corchetes angulares ( \<\> ). Por ejemplo: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
+     Por ejemplo, usó [el](message-trace-scc.md) seguimiento de mensajes para buscar un mensaje que se envió a un usuario de la organización y se determina que el mensaje se ha puesto en cuarentena en lugar de entregarse. Asegúrese de incluir el valor de identificador de mensaje completo, que puede incluir corchetes angulares ( \<\> ). Por ejemplo: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
 
    - **Dirección de correo electrónico del remitente**: Una única dirección de correo electrónico de remitente.
 
@@ -154,9 +154,9 @@ Cuando selecciona un mensaje de correo electrónico de la lista, aparecen los de
 
 - **Asunto**
 
-- **Motivo de la** cuarentena: muestra si un mensaje se ha identificado como correo no deseado **,** masivo **,** suplantación de identidad **,** coincide con una regla de flujo de correo **(** regla de transporte ) o se identificó como que contiene **malware**.
+- **Motivo de cuarentena:** muestra si un mensaje se ha identificado como **Correo** no deseado **,** Masivo , **Phish**, coincide con una regla de flujo de correo (**regla** de transporte ), o si se identificó como que contiene **malware**.
 
-- **Número de destinatarios**
+- **Recuento de destinatarios**
 
 - **Destinatarios**: Si el mensaje contiene varios destinatarios, deberá hacer clic en **Vista previa del mensaje** o **Ver encabezado del mensaje** para ver la lista completa de destinatarios.
 
@@ -168,22 +168,22 @@ Cuando selecciona un mensaje de correo electrónico de la lista, aparecen los de
 
 ### <a name="take-action-on-quarantined-email"></a>Llevar a cabo una acción en un correo electrónico en cuarentena
 
-Después de seleccionar un mensaje, tiene varias opciones para  saber qué hacer con los mensajes en el panel desplegable Detalles:
+Después de seleccionar un mensaje, tiene varias opciones para qué hacer con los mensajes en el **panel** desplegable Detalles:
 
-- **Mensaje de** versión: en el panel desplegable que aparece, elija las siguientes opciones:
+- **Mensaje de versión:** en el panel desplegable que aparece, elija las siguientes opciones:
 
-  - **Notificar mensajes a Microsoft para su** análisis: esta opción está seleccionada de forma predeterminada e informa de que el mensaje en cuarentena erróneamente a Microsoft es un falso positivo. Si el mensaje se ha puesto en cuarentena como correo no deseado, masivo, suplantación de identidad (phishing) o que contiene malware, el mensaje también se notifica al equipo de análisis de correo no deseado de Microsoft. Según su análisis, las reglas de filtro de correo no deseado de todo el servicio podrían ajustarse para permitir que pase el mensaje.
+  - **Notificar mensajes a Microsoft para su** análisis: está seleccionado de forma predeterminada e informa el mensaje erróneamente en cuarentena a Microsoft como falso positivo. Si el mensaje se ha puesto en cuarentena como correo no deseado, masivo, suplantación de identidad (phishing) o que contiene malware, el mensaje también se notifica al equipo de análisis de correo no deseado de Microsoft. Según su análisis, las reglas de filtro de correo no deseado de todo el servicio podrían ajustarse para permitir la entrada del mensaje.
 
   - Elija una de las siguientes opciones:
-    - **Liberar mensajes para todos los destinatarios**
+    - **Liberar mensajes a todos los destinatarios**
     - **Liberar mensajes a destinatarios específicos**
-    - **Liberar mensajes a otras personas:** tenga en cuenta que no se admite liberar mensajes de malware para personas que no son destinatarios originales.
+    - **Liberar mensajes a otras personas:** tenga en cuenta que no se admite liberar mensajes de malware a personas que no son destinatarios originales.
 
   Cuando haya terminado, haga clic en **Liberar mensajes**.
 
-  Notas sobre la publicación de mensajes:
+  Notas sobre cómo liberar mensajes:
 
-  - No puede liberar un mensaje para el mismo destinatario más de una vez.
+  - No puede liberar un mensaje al mismo destinatario más de una vez.
   - Solo los destinatarios que no hayan recibido el mensaje aparecerán en la lista de posibles destinatarios.
 
 - **Ver encabezado del mensaje**: Seleccione este vínculo para ver el texto del encabezado del mensaje. Copie el texto del encabezado del mensaje en el portapapeles para analizar los campos y valores del encabezado en profundidad y luego elija **Analizador de encabezados de mensaje de Microsoft** para desplazarse hasta el Analizador de conectividad remota (haga clic con el botón derecho y elija **Abrir en una nueva pestaña** si no desea que Microsoft 365 complete esta tarea). Pegue el encabezado del mensaje en la página en la sección del Analizador de encabezados de mensaje y seleccione **Analizar encabezados**:
@@ -193,21 +193,21 @@ Después de seleccionar un mensaje, tiene varias opciones para  saber qué hacer
   - **Vista de código fuente**: Muestra la versión HTML del cuerpo del mensaje con todos los vínculos desactivados.
   - **Vista de texto**: Muestra el cuerpo del mensaje como texto sin formato.
 
-- **Quitar de cuarentena:** después de hacer clic **en** Sí en la advertencia que aparece, el mensaje se elimina inmediatamente sin enviarse a los destinatarios originales.
+- **Quitar de la cuarentena:** después de hacer clic en **Sí** en la advertencia que aparece, el mensaje se elimina inmediatamente sin enviarse a los destinatarios originales.
 
 - **Descargar mensaje**: En el panel de flotante que aparece, seleccione **Entiendo los riesgos de descargar este mensaje** para guardar una copia local del mensaje en formato .eml.
 
 - **Enviar mensaje:** en el panel desplegable que aparece, elija las siguientes opciones:
 
-  - **Tipo de objeto**: **Correo** electrónico (predeterminado), **dirección URL** o **datos adjuntos.**
+  - **Tipo de objeto**: **Correo electrónico** (predeterminado), **DIRECCIÓN URL** o **Datos adjuntos**.
 
-  - **Formato de** envío: **Id.** de mensaje de  red (predeterminado, con el valor correspondiente en el cuadro Id. de mensaje de red) o **Archivo** (vaya a un archivo .eml o .msg local). Tenga en cuenta que si selecciona **Archivo** y, a continuación, selecciona **Id.** de mensaje de red, el valor inicial se ha perdido.
+  - **Formato de envío:** **Id.** de mensaje de red (predeterminado, con el valor correspondiente en el cuadro **Id.** de mensaje de red) o **Archivo** (vaya a un archivo .eml o .msg local). Tenga en cuenta que si selecciona **Archivo** y, a continuación, selecciona **Id. de mensaje** de red, el valor inicial se ha ido.
 
-  - **Destinatarios:** escriba al concesión un destinatario original del mensaje o haga clic en Seleccionar todo **para** identificar a todos los destinatarios. También puede hacer clic **en Seleccionar todo** y, a continuación, quitar destinatarios individuales de forma selectiva.
+  - **Destinatarios:** escriba en concesión un destinatario original del mensaje o haga clic en **Seleccionar** todo para identificar todos los destinatarios. También puede hacer clic en **Seleccionar todo y,** a continuación, quitar selectivamente los destinatarios individuales.
 
-  - **Motivo del envío:** **no debería haber sido bloqueado** (predeterminado) o debería haber sido **bloqueado.**
+  - **Motivo del envío:** **no debería haber sido bloqueado** (predeterminado) o debería haber sido **bloqueado**.
 
-  Cuando haya terminado, haga clic en **Enviar.**
+  Cuando haya terminado, haga clic en **Enviar**.
 
 Si no libera o elimina el mensaje, se eliminará cuando expire el período de retención en cuarentena predeterminado.
 
@@ -218,31 +218,31 @@ Al seleccionar varios mensajes en cuarentena de la lista (hasta 100), se mostrar
 - **Liberar mensajes**: Las opciones son las mismas que cuando libera un único mensaje, salvo que no puede seleccionar **Liberar mensajes para destinatarios específicos**; solo puede seleccionar **Liberar mensaje para todos los destinatarios** o **Liberar mensajes para otras personas**.
 
   > [!NOTE]
-  > Tenga en cuenta el siguiente escenario: john@gmail.com envía un mensaje a faith@contoso.com y john@subsidiary.contoso.com. Gmail bifurca este mensaje en dos copias que se enruta a cuarentena como suplantación de identidad en Microsoft. Un administrador libera estos dos mensajes para admin@contoso.com. Se entrega el primer mensaje publicado que llega al buzón de administrador. El segundo mensaje publicado se identifica como entrega duplicada y se omite. Los mensajes se identifican como duplicados si tienen el mismo identificador de mensaje y la misma hora de recibido.
+  > Tenga en cuenta el siguiente escenario: john@gmail.com envía un mensaje a faith@contoso.com y john@subsidiary.contoso.com. Gmail bifurca este mensaje en dos copias que se enrutan a la cuarentena como phishing en Microsoft. Un administrador libera ambos mensajes para admin@contoso.com. Se entrega el primer mensaje publicado que llega al buzón de administración. El segundo mensaje liberado se identifica como entrega duplicada y se omite. Los mensajes se identifican como duplicados si tienen el mismo identificador de mensaje y el mismo tiempo recibido.
 
 - **Eliminar mensajes:** después de hacer clic en **Sí** en la advertencia que aparece, los mensajes se eliminan inmediatamente sin que se envíen a los destinatarios originales.
 
 Cuando haya terminado, haga clic en **Cerrar**.
 
-## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>Solo Microsoft Defender para Office 365: Usar el Centro de seguridad & cumplimiento para administrar archivos en cuarentena
+## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>Solo Microsoft Defender para Office 365: Use el Centro de seguridad & cumplimiento para administrar archivos en cuarentena
 
 > [!NOTE]
-> Los procedimientos para archivos en cuarentena de esta sección solo están disponibles para suscriptores de Microsoft Defender para Office 365 Plan 1 y Plan 2.
+> Los procedimientos para los archivos en cuarentena de esta sección solo están disponibles para suscriptores de Microsoft Defender para Office 365 Plan 1 y Plan 2.
 
-En organizaciones con Defender para Office 365, los administradores pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams. Para habilitar la protección de estos archivos, vea Activar datos adjuntos seguros [para SharePoint, OneDrive y Microsoft Teams.](turn-on-atp-for-spo-odb-and-teams.md)
+En organizaciones con Defender para Office 365, los administradores pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams. Para habilitar la protección de estos archivos, vea Activar datos adjuntos seguros para [SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>Ver archivos en cuarentena
 
 1. En el Centro de seguridad y cumplimiento, vaya a **Administración de amenazas** \> **Revisar** \> **Cuarentena**.
 
-2. Cambiar **vista en cuarentena a** los archivos de **valor.** Puede ordenar un campo haciendo clic en un encabezado de columna disponible.
+2. Cambiar **Vista en cuarentena a** los archivos de **valor**. Puede ordenar un campo haciendo clic en un encabezado de columna disponible.
 
 3. Para ordenar los resultados, haga clic en un encabezado de columna disponible. Haga clic en **Modificar columnas** para mostrar un máximo de siete columnas. Las columnas predeterminadas se marcan con un asterisco ( <sup>\*</sup> ):
 
    - **Usuario**<sup>\*</sup>
    - **Ubicación**<sup>\*</sup>
    - **Nombre de archivo**<sup>\*</sup>
-   - **Dirección URL del archivo**<sup>\*</sup>
+   - **DIRECCIÓN URL de archivo**<sup>\*</sup>
    - **Tamaño de archivo**<sup>\*</sup>
    - **Expira**<sup>\*</sup>
    - **¿Liberado?**<sup>\*</sup>
@@ -256,35 +256,35 @@ En organizaciones con Defender para Office 365, los administradores pueden admin
      - **Próximos 2 días**
      - **Próximos 7 días**
      - Un intervalo de fecha y hora personalizado.
-   - **Tiempo de recibido**
-   - **Motivo de la** cuarentena: el único valor disponible es **Malware**.
+   - **Tiempo recibido**
+   - **Motivo de cuarentena:** el único valor disponible es **Malware**.
    - **Tipo de directiva**
 
-Después de encontrar un archivo en cuarentena específico, seleccione el archivo para ver los detalles sobre él y para realizar acciones en él (por ejemplo, ver, liberar, descargar o eliminar el mensaje).
+Después de encontrar un archivo en cuarentena específico, seleccione el archivo para ver detalles sobre él y para realizar acciones sobre él (por ejemplo, ver, liberar, descargar o eliminar el mensaje).
 
 #### <a name="view-quarantined-file-details"></a>Ver detalles del archivo en cuarentena
 
-Al seleccionar un archivo en la lista, los siguientes detalles del archivo aparecen en el **panel** desplegable Detalles:
+Al seleccionar un archivo en la lista, los siguientes detalles de archivo aparecen en el **panel** desplegable Detalles:
 
 - **Nombre de archivo**
-- **Dirección URL del** archivo: dirección URL que define la ubicación del archivo (por ejemplo, en SharePoint Online).
+- **Dirección URL de** archivo: dirección URL que define la ubicación del archivo (por ejemplo, en SharePoint Online).
 - **Contenido malintencionado detectado en** La fecha y hora en que el archivo se ha puesto en cuarentena.
 - **Expira:** la fecha en la que el archivo se eliminará de la cuarentena.
 - **Detectado por**: Defender para Office 365 o el motor antimalware de Microsoft.
 - **¿Liberado?**
 - **Nombre de malware**
-- **Identificador de** documento: identificador único del documento.
+- **Id. de** documento: identificador único del documento.
 - **Tamaño de archivo:** en kilobytes (KB).
-- **Organización** Identificador único de su organización.
+- **Organización** Id. único de la organización.
 - **Última modificación**
-- **Modificado por:** el usuario que modificó por última vez el archivo.
-- Valor de algoritmo hash seguro de **256 bits (SHA-256):** puede usar este valor hash para identificar el archivo en otros almacenes de reputación o en otras ubicaciones de su entorno.
+- **Modified By:** el usuario que modificó por última vez el archivo.
+- Valor de algoritmo hash seguro de **256 bits (SHA-256):** puede usar este valor hash para identificar el archivo en otros almacenes de reputación o en otras ubicaciones del entorno.
 
 ### <a name="take-action-on-quarantined-files"></a>Realizar acciones en archivos en cuarentena
 
-Al seleccionar un archivo en la lista, puede realizar las siguientes acciones en el archivo en el **panel** desplegable Detalles:
+Al seleccionar un archivo en la lista, puede realizar las siguientes acciones en el archivo en el panel **desplegable** Detalles:
 
-- **Release files**: Select (default) or unselect **Report files to Microsoft for analysis**, and then click Release **files**.
+- **Liberar archivos:** seleccione (predeterminado) o anule la selección de Archivos de informe en **Microsoft** para su análisis y, a continuación, haga clic **en Liberar archivos**.
 - **Descargar archivo**
 - **Quitar archivo de cuarentena**
 
@@ -292,12 +292,12 @@ Si no libera o quita los archivos, se eliminarán después de que expire el per�
 
 #### <a name="actions-on-multiple-quarantined-files"></a>Acciones en varios archivos en cuarentena
 
-Cuando selecciona varios archivos en cuarentena en la lista (hasta 100), aparece el panel desplegable Acciones masivas, donde puede realizar las siguientes acciones: 
+Al seleccionar varios archivos en cuarentena en la lista (hasta 100), aparece el panel desplegable Acciones masivas donde puede realizar las siguientes acciones: 
 
 - **Liberar archivos**
 - **Eliminar archivos:** después de hacer clic en **Sí** en la advertencia que aparece, los archivos se eliminan inmediatamente.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Usar Exchange Online PowerShell o EOP PowerShell independiente para ver y administrar mensajes y archivos en cuarentena
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Usar PowerShell de Exchange Online o PowerShell EOP independiente para ver y administrar mensajes y archivos en cuarentena
 
 Los cmdlets que usa para ver y administrar mensajes y archivos en cuarentena son:
 

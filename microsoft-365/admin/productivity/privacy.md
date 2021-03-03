@@ -19,28 +19,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Cómo se protege la privacidad con la puntuación de productividad.
-ms.openlocfilehash: ceb19fcb7bbf2f6a58e38684604ed3b0dac2a5d4
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: b522c40cba746f3a4ede2404cf671607d62a3282
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604331"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406565"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>Controles de privacidad para la puntuación de productividad
 
-La puntuación de productividad proporciona información sobre el recorrido de transformación digital de su organización a través del uso de Microsoft 365 y las experiencias tecnológicas que lo admiten.  La puntuación de su organización refleja las mediciones de experiencia de personas y tecnología y se puede comparar con los indicadores de organizaciones similares a los tuyos. Para obtener más información, vea la información general [sobre la puntuación de productividad.](productivity-score.md)
+Productivity Score proporciona información sobre el recorrido de transformación digital de su organización a través del uso de Microsoft 365 y las experiencias tecnológicas que lo admiten.  La puntuación de su organización refleja las mediciones de la experiencia de personas y tecnología y se puede comparar con los puntos de referencia de organizaciones similares al tuyo. Para obtener más información, vea la información general [sobre la puntuación de productividad](productivity-score.md).
 
-Su privacidad es importante para Microsoft. Para obtener información sobre cómo protegemos su privacidad, consulte la [declaración de privacidad de Microsoft.](https://privacy.microsoft.com/privacystatement) La puntuación de productividad le proporciona, como administrador de TI de su organización, acceso a la configuración de privacidad para ayudar a asegurarse de que cualquier información de puntuación de productividad que vea sea útil, sin poner en peligro la confianza que su organización coloca en Microsoft.
+Su privacidad es importante para Microsoft. Para obtener información sobre cómo protegemos su privacidad, vea [la declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement). La puntuación de productividad le ofrece, como administrador de TI de su organización, acceso a la configuración de privacidad para asegurarse de que cualquier información de puntuación de productividad que vea sea útil, sin comprometer la confianza que su organización deposita en Microsoft.
 
-Dentro del área de experiencias de personas, las métricas solo están disponibles en el nivel organizativo. En esta área se analiza cómo los usuarios usan Microsoft 365 al ver las categorías de colaboración de contenido, movilidad, reuniones, trabajo en equipo y comunicación. Le habilitamos con varios niveles de controles para ayudarle a satisfacer sus necesidades de directiva de privacidad interna.
-Los controles te dan:
+Dentro del área de experiencias de personas, las métricas solo están disponibles en el nivel organizativo. En esta área se analiza cómo los usuarios usan Microsoft 365 analizando las categorías de colaboración de contenido, movilidad, reuniones, trabajo en equipo y comunicación. Le habilitamos con varios niveles de controles para ayudarle a satisfacer sus necesidades de directiva de privacidad interna.
+Los controles le dan:
 
-- Roles de administrador flexibles para controlar quién puede ver la información en la puntuación de productividad.
-- La capacidad de optar por no participar en el área de experiencias de personas.
+- Roles de administrador flexibles para controlar quién puede ver la información en La puntuación de productividad.
+- La capacidad de no participar en el área de experiencias de personas.
 
-## <a name="flexible-admin-roles-to-control-who-can-see-the-information-in-productivity-score"></a>Roles de administrador flexibles para controlar quién puede ver la información en la puntuación de productividad
+## <a name="flexible-admin-roles-to-control-who-can-see-the-information-in-productivity-score"></a>Roles de administrador flexibles para controlar quién puede ver la información en La puntuación de productividad
 
-Para ver la puntuación de productividad completa, debe ser uno de los siguientes roles de administrador:
+Para ver toda la puntuación de productividad, debe ser uno de los siguientes roles de administrador:
 
 - Administrador global
 - Administrador de Exchange
@@ -51,11 +51,11 @@ Para ver la puntuación de productividad completa, debe ser uno de los siguiente
 - Lector de informes
 - Resumen de uso de Lector de informes
 
-Asigne el lector de informes o el rol lector de informes de resumen de uso a cualquier persona responsable de la administración y adopción de cambios, pero no necesariamente un administrador de TI. Este rol les proporciona acceso a la experiencia completa de la puntuación de productividad en el Centro de administración de Microsoft 365.
+Asigna el lector de informes o el rol lector de informes de resumen de uso a cualquier persona responsable de la administración y adopción de cambios, pero no necesariamente un administrador de TI. Este rol les da acceso a la experiencia completa de puntuación de productividad en el Centro de administración de Microsoft 365.
 
-El rol lector de informes de resumen de uso tendrá que asignarse a través de los cmdlets de PowerShell hasta que se pueda asignar desde el Centro de administración de Microsoft 365 más adelante en 2020.
+El rol Lector de informes de resumen de uso tendrá que asignarse a través de cmdlets de PowerShell hasta que se pueda asignar desde el Centro de administración de Microsoft 365 más adelante en 2020.
 
-Para asignar el rol lector de informes de resumen de uso con PowerShell:
+Para asignar el rol Lector de informes de resumen de uso con PowerShell:
 
 - Ejecute el siguiente PowerShell:
 
@@ -71,14 +71,14 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 </br>
 
 
-## <a name="capability-to-opt-out-of-people-experiences"></a>Capacidad de optar por no participar en experiencias de personas
+## <a name="capability-to-opt-out-of-people-experiences"></a>Capacidad para excluirse de las experiencias de las personas
 
-También puede optar por no participar en el área de experiencias de personas de la puntuación de productividad. Si opta por no participar, nadie de su organización podrá ver estas métricas y su organización se quitará de los cálculos que impliquen comunicación, reuniones, trabajo en equipo, colaboración de contenido y movilidad. Debe ser un administrador global para excluir a su organización de los informes de experiencias de personas.
+También puede optar por no participar en el área de experiencias de personas de La puntuación de productividad. Si opta por no participar, nadie de su organización podrá ver estas métricas y su organización se quitará de los cálculos que impliquen comunicación, reuniones, trabajo en equipo, colaboración de contenido y movilidad. Debe ser un administrador global para excluir la organización de los informes de experiencias de personas.
 
-Para optar por poner:
+Para optar por no participar:
 
-1. En el centro de administración, vaya a **Configuración** de la organización y, en la pestaña   >   Servicios, seleccione **Informes.** 
-2. Des marque la casilla que indica Permitir que los datos de uso de  **Microsoft 365 se** usen para obtener información sobre las experiencias de las personas. Para comprender cómo modificar la configuración de uso compartido de datos para Endpoint Analytics en el Administrador de configuración de Intune, seleccione **Más información.**
+1. En el Centro de administración, vaya a **Configuración**   >   **Configuración de la organización Puntuación**  >  **de productividad**.
+2. Des active la casilla que indica Permitir que los datos de uso de  **Microsoft 365** se usen para las experiencias de personas. Para comprender cómo modificar la configuración de uso compartido de datos para Endpoint Analytics en el administrador de configuración de Intune, seleccione **Obtener más información.**
 3. Seleccione  **Guardar**.
 
-:::image type="content" source="../../media/orgsettingspageoptout.png" alt-text="Página de configuración de la organización en la que puede optar por no participar en las experiencias de las personas.":::
+:::image type="content" source="../../media/orgsettingspageoptout.png" alt-text="Página de configuración de la organización en la que puedes excluirte de las experiencias de las personas.":::

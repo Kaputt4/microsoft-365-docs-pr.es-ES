@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 15a540c323c8f49cfa6c15358cfec89034667378
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 6723f3f0903ba6a0e1833bfae1f3dea2362e2c30
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094801"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406214"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -115,7 +115,7 @@ Esta configuración garantizará que sus datos estén seguros, evitando así las
 
 ## <a name="endpoint-dlp-policy-scenarios"></a>Escenarios de directiva DLP de los puntos de conexión
 
-Para ayudarle a familiarizarse con las características de DLP de los puntos de conexión y cómo se muestran en las directivas DLP, hemos recopilado algunos escenarios para que los siga. Todo el contenido de DLP de los puntos de conexión se incorporará al conjunto de contenido principal de DLP cuando la DLP de los puntos de conexión esté disponible de manera general.
+Para ayudarle a familiarizarse con las características de DLP de los puntos de conexión y cómo se muestran en las directivas DLP, hemos recopilado algunos escenarios para que los siga.
 
 > [!IMPORTANT]
 > Estos escenarios DLP de los puntos de conexión no son los procedimientos oficiales para crear y optimizar directivas DLP. Consulte los temas siguientes cuando necesite trabajar con directivas DLP en situaciones generales:
