@@ -237,6 +237,8 @@
               href: data-loss-prevention-policies.md
             - name: Obtener información sobre la Prevención de pérdida de datos en punto de conexión
               href: endpoint-dlp-learn-about.md
+            - name: Obtenga más información sobre el examinador de prevención de pérdida de datos locales de Microsoft 365 (versión preliminar)
+              href: dlp-on-premises-scanner-learn.md
         - name: Introducción a DLP
           items:
             - name: Introducción a la directiva predeterminada de DLP
@@ -245,6 +247,8 @@
               href: create-a-dlp-policy-from-a-template.md
             - name: 'Crear, probar y optimizar una directiva DLP'
               href: create-test-tune-dlp-policy.md
+            - name: Introducción al examinador de prevención de pérdida de datos locales de Microsoft 365 (versión preliminar)
+              href: dlp-on-premises-scanner-get-started.md
             - name: Introducción a la prevención de pérdida de datos en punto de conexión
               href: endpoint-dlp-getting-started.md
             - name: Configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión
@@ -269,6 +273,8 @@
               href: dlp-microsoft-teams.md
             - name: Uso de la prevención de pérdida de datos en punto de conexión
               href: endpoint-dlp-using.md
+            - name: Usar el examinador de prevención de pérdida de datos locales de Microsoft 365 (versión preliminar)
+              href: dlp-on-premises-scanner-use.md
             - name: Usar notificaciones y sugerencias de directiva en directivas DLP
               href: use-notifications-and-policy-tips.md
             - name: Qué incluyen las plantillas de directiva DLP
