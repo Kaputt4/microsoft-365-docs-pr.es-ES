@@ -1,12 +1,12 @@
-- name: Introducción a Microsoft Viva
+- name: Temas de Microsoft Viva
+  href: index.md
+- name: Introducción a los temas de Microsoft Viva
   items:
-    - name: Introducción a Microsoft Viva
-      href: index.md
-    - name: Información general de Microsoft Viva
+    - name: Información general de los temas de Microsoft Viva
       href: topic-experiences-overview.md
-    - name: Detección y conservación de Microsoft Viva
+    - name: Detección y conservación de los temas de Microsoft Viva
       href: topic-experiences-discovery-curation.md
-    - name: Roles de Microsoft Viva
+    - name: Roles de los temas de Microsoft Viva
       href: topic-experiences-roles.md
     - name: Preparar el entorno
       href: topic-experiences-get-ready.md
@@ -28,6 +28,8 @@
       href: topic-experiences-administration.md
 - name: Trabajar con temas
   items:
+    - name: Introducción a los temas de Viva
+      href: get-started-with-viva-topics.md
     - name: Información general del Centro de temas
       href: topic-center-overview.md
     - name: Administrar temas en el Centro de temas
