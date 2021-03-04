@@ -17,16 +17,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: b3b0451f2f1b0950f2b2ee723025a796f1814038
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 5c992a988dbffc12824b2b64c1ea9a8fb6d22d67
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261507"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406530"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+
+> [!NOTE]
+> Si ve como usuario un mensaje en Teams que indica que los chats y los mensajes se han eliminado debido a una directiva de retención, vea [Mensajes de Teams sobre directivas de retención](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+> 
+> La información de esta página es para los administradores de TI que gestionan estas directivas de retención.
 
 La información de este artículo complementa [Obtenga más información sobre la retención](retention.md) porque tiene información específica para los mensajes de Microsoft Teams.
 
@@ -43,7 +48,7 @@ Los siguientes elementos de Teams se pueden retener y eliminar mediante directiv
 > [!NOTE]
 > La inclusión del contenido de tarjetas es una adición reciente y actualmente se está implementando en los inquilinos. Para obtener más información, consulte las [funcionalidades de cumplimiento de Microsoft 365 para contenido de tarjetas adaptables en las aplicaciones de Teams que están disponibles ahora](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-Los mensajes de Teams en canales privados no son compatibles actualmente con las directivas de retención. Los fragmentos de código, notas de voz grabadas del cliente móvil de Teams y las reacciones de otros usuarios en forma de emoticonos no se incluyen cuando usa las directivas de retención para Teams.
+Los mensajes de Teams en canales privados no son compatibles actualmente con las directivas de retención. Los fragmentos de código, notas de voz grabadas del cliente móvil de Teams, las miniaturas, las imágenes de anuncios y las reacciones de otros usuarios en forma de emoticonos no se incluyen cuando usa las directivas de retención para Teams.
 
 Los mensajes de correo electrónico y los archivos que use con Teams no son incluidos en directivas de retención para Teams. Estos elementos tienen sus propias directivas de retención.
 

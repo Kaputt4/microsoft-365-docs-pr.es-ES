@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: a5c3e84e4ca8874f99a07294dccfd2e4ad7ed81f
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 3946fa5a08011cc98e8dfad921a08ca0fa77af7a
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417415"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423867"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -89,7 +89,7 @@ Asegúrese de entender los siguientes requisitos previos antes de activar esta c
         - Android: aún no compatible
     
     - **Cliente de etiquetado unificado de Azure Information Protection para Windows y escáner** 
-        - Una versión preliminar pública (versión mínima de 2.10.45.0) que puede instalar desde el [Centro de descarga de Microsoft](https://aka.ms/aip-coauth-pp) y una de las versiones de Aplicaciones de Microsoft 365 para empresas para Windows que aparecen en el elemento anterior.
+        - Una versión preliminar pública (con el nombre de instalación de AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe) que puede instalar desde el [Centro de descarga de Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018) y una de las versiones de las Aplicaciones de Microsoft 365 para empresas para Windows indicadas en el elemento anterior.
     
     - **Aplicación de Sincronización de Microsoft OneDrive para Windows o macOS:**
         - Versión mínima de 19.002.0121.0008
@@ -122,6 +122,8 @@ Antes de habilitar la configuración de espacio empresarial para la coautoría d
     - **Cifrado de clave doble** seleccionado.
     
     Para las etiquetas con cualquiera de estas configuraciones de cifrado, las etiquetas se muestran en las aplicaciones de Office. Sin embargo, cuando los usuarios seleccionan estas etiquetas y nadie más está editando el documento, se les advierte de que la coautoría y el Autoguardado no estarán disponibles. Si alguien más está editando el documento, los usuarios verán un mensaje que indica que no se pueden aplicar las etiquetas.
+
+- Si usa el cliente de etiquetado unificado de Azure Information Protection: Compruebe la documentación de este cliente de etiquetado para ver [otros requisitos o limitaciones](https://docs.microsoft.com/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview).
 
 ## <a name="known-issues-for-this-preview"></a>Problemas conocidos para esta versión preliminar
 

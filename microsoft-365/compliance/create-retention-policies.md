@@ -17,22 +17,25 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 1806000b47a19c07da11a6a732eeacf5d60a7da0
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 02d3fd17e4aac34546e545ec10621bc99b945b31
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261329"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405718"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
 >*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
-Utilice una directiva de retención para decidir de forma pro activa si desea retener el contenido, eliminarlo o ambas cosas, retener y luego eliminar el contenido.
+Use una directiva de retención con el fin de administrar los datos de su organización. Para ello, decida proactivamente si se retiene el contenido, se elimina o si primero se retiene y después se elimina.
 
-Una directiva de retención le permite hacer esto de manera muy eficiente al asignar la misma configuración de retención para el contenido por ubicación, en el nivel de sitio o de buzón de correo. Si no está seguro sobre si debe usar una directiva de retención o una etiqueta de retención, consulte [Directivas de retención y etiquetas de retención](retention.md#retention-policies-and-retention-labels).
+Una directiva de retención le permite hacerlo de manera muy eficaz. Solo tiene que asignar la misma configuración de retención a nivel del contenedor al contenido de ese contenedor, que lo hereda de forma automática. Por ejemplo, todos los elementos de los sitios de SharePoint, todos los mensajes de correo electrónico de los buzones de Exchange de los usuarios, todos los mensajes de canal de los equipos que se usan con Microsoft Teams. Si no está seguro sobre si debe usar una directiva de retención o una etiqueta de retención, consulte [Directivas de retención y etiquetas de retención](retention.md#retention-policies-and-retention-labels).
 
-Para obtener más información sobre las directivas de retención y cómo funciona la retención, vea [Obtener información sobre las directivas de retención y las etiquetas de retención](retention.md).
+Para obtener más información sobre las directivas de retención y cómo funciona la retención en Microsoft 365, vea [Obtener información sobre las directivas de retención y las etiquetas de retención](retention.md).
+
+> [!NOTE]
+> La información de esta página es para los administradores de cumplimiento normativo. Si no es administrador y quiere entender cómo se configuraron las directivas de retención para las aplicaciones que usa, póngase en contacto con el departamento de soporte técnico, el departamento de TI o el administrador. Si ve mensajes sobre directivas de retención en los chats de Teams y en los mensajes de canal, puede serle útil revisar [Mensajes de Teams sobre directivas de retención](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -40,7 +43,7 @@ El administrador global de su organización tiene permisos totales para crear y 
 
 ## <a name="create-and-configure-a-retention-policy"></a>Crear y configurar una directiva de retención
 
-Si bien una directiva de retención es compatible con varias ubicaciones, no se puede crear una única directiva de retención que incluya todas las ubicaciones compatibles:
+Aunque una directiva de retención puede admitir varios servicios identificados como "ubicaciones" en la directiva de retención, no puede crear una sola directiva de retención que incluya todas las ubicaciones compatibles:
 
 - Correo electrónico de Exchange
 - Sitio de SharePoint
@@ -53,7 +56,7 @@ Si bien una directiva de retención es compatible con varias ubicaciones, no se 
 - Mensajes de la comunidad de Yammer
 - Mensajes privados de Yammer
 
-Cuando selecciona una de las ubicaciones de Teams o Yammer durante la creación de una directiva de retención, las demás ubicaciones quedan excluidas automáticamente. Por lo tanto, las instrucciones que debe seguir dependen de si necesita incluir las ubicaciones de Teams o Yammer:
+Cuando selecciona una de las ubicaciones de Teams o Yammer durante la creación de una directiva de retención, las demás ubicaciones quedan excluidas automáticamente. Por lo tanto, las instrucciones que debe seguir dependerán de si necesita incluir las ubicaciones de Teams o de Yammer:
 
 - [Instrucciones para crear una directiva de retención para ubicaciones de Teams](#retention-policy-for-teams-locations)
 - [Instrucciones para crear una directiva de retención para ubicaciones de Yammer](#retention-policy-for-yammer-locations)

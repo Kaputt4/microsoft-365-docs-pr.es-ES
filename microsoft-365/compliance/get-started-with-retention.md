@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de directivas de retención y de etiquetas de retención para controlar los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: 26568d2a603e447156aead751178555fa400db5e
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: bb73f0871bfc2ad707d31ef6d4d57e18218842a5
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682535"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406520"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Introducción a las directivas de retención y las etiquetas de retención
 
@@ -82,9 +82,11 @@ Use la siguiente tabla para ayudarle a asignar los requisitos de su organizació
 
 Si usa etiquetas de retención para la administración de registros, hay escenarios adicionales que son únicos para las etiquetas de retención que marcan el contenido como un registro. Consulte [Escenarios comunes para la administración de registros](get-started-with-records-management.md#common-scenarios-for-records-management).
 
-## <a name="end-user-documentation-for-retention-labels"></a>Documentación de usuario final para las etiquetas de retención
+## <a name="end-user-documentation-for-retention"></a>Documentación de usuario final para la retención
 
-Las etiquetas de retención, a diferencia de las directivas de retención, tienen presencia de interfaz de usuario en las aplicaciones de Microsoft 365. Asegúrese de proporcionar instrucciones a los usuarios finales y a su servicio de asistencia antes de implementar etiquetas de retención en la red de producción.
+La mayoría de las directivas de retención funcionan de forma discreta en segundo plano y no requieren interacción del usuario. Por ello, los usuarios no necesitan apenas documentación. Las directivas de retención de Teams informan a los usuarios cuando se han eliminado sus mensajes con un vínculo a los mensajes de [Teams sobre las directivas de retención](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+
+Dado que las etiquetas de retención tienen una presencia de interfaz de usuario en las aplicaciones de Microsoft 365, asegúrese de que proporciona instrucciones a los usuarios finales y al servicio de asistencia antes de implementar estas etiquetas en la red de producción.
 
 La documentación más eficaz para los usuarios finales serán las instrucciones personalizadas que proporcione para los nombres de etiquetas de retención y para las configuraciones que elija. Consulte la siguiente entrada de blog para obtener un paquete de descarga que puede usar para entrenar a los usuarios e impulsar la adopción: [Formación de usuarios finales para las etiquetas de retención en M365: Cómo acelerar la adopción](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
 

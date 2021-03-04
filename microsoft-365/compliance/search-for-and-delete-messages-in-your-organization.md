@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el Centro de seguridad y cumplimiento para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: f4bcd012708c0b7e9fa37b06288cda18ad4766cf
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 52871fc85a4d5aec1754c1957f2087552b442daf
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546538"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423701"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Buscar y eliminar mensajes de correo electrónico
 
@@ -47,7 +47,7 @@ Puede usar la característica de búsqueda de contenido para buscar y eliminar u
 
 - Se puede eliminar un máximo de 10 elementos por buzón a la vez. Como la función de buscar y quitar mensajes está diseñada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes se quitan rápidamente de los buzones. Esta característica no está diseñada para limpiar buzones de usuarios.
 
-- El número máximo de buzones en una búsqueda de contenido en los que puede eliminar elementos mediante una acción de búsqueda y depuración es 50 000. Si la búsqueda de contenido (que ha creado en el [paso 1](#step-1-create-a-content-search-to-find-the-message-to-delete)) tiene más de 50 000 buzones de origen, la acción de depuración (que ha creado en el paso 3) no se realizará correctamente. En la sección [Más información](#more-information) se muestra una sugerencia para realizar una operación de búsqueda y depuración en más de 50 000 buzones.
+- El número máximo de buzones en una búsqueda de contenido que puede usar para eliminar elementos al realizar una acción de búsqueda y depuración es 50 000. Si la búsqueda (creada en el [Paso 1](#step-1-create-a-content-search-to-find-the-message-to-delete)) se realiza en más de 50 000 buzones, la acción de depuración (creada en el Paso 3) no se realizará correctamente. Hacer la búsqueda en más de 50 000 buzones en una sola búsqueda suele ocurrir cuando se configura para que incluya a todos los buzones de la organización. Esta restricción aplica incluso cuando haya menos de 50 000 buzones que contengan elementos que coincidan con la consulta de la búsqueda. Consulte la sección de [Más información](#more-information) para obtener instrucciones sobre el uso de los filtros de permisos de búsqueda para buscar y depurar elementos de más de 50 000 buzones.
 
 - El procedimiento descrito en este artículo solo se puede usar para eliminar elementos de buzones y carpetas públicas de Exchange Online. No se puede usar para eliminar el contenido de los sitios de SharePoint o OneDrive para la Empresa.
 
@@ -131,7 +131,7 @@ Para obtener más información, vea [ New-ComplianceSearchAction](https://docs.m
 
 ## <a name="more-information"></a>Más información
 
-- **¿Cómo se obtiene el estado de la operación de búsqueda y eliminación? **
+- **¿Cómo se obtiene el estado de la operación de búsqueda y eliminación?**
 
   Ejecute **Get-ComplianceSearchAction** para obtener el estado de la operación de eliminación.  El objeto que se crea al ejecutar el cmdlet **New-ComplianceSearchAction** se denomina con este formato: `<name of Content Search>_Purge`.
 
@@ -143,7 +143,7 @@ Para obtener más información, vea [ New-ComplianceSearchAction](https://docs.m
 
 - **¿Qué ocurre si tiene que eliminar un mensaje de más de 50 000 buzones?**
 
-  Como se ha mencionado anteriormente, puede realizar una operación de búsqueda y depuración en un máximo de 50 000 buzones. Si tiene que realizar una operación de búsqueda y depuración en más de 50 000 buzones de correo, considere la posibilidad de crear filtros de permisos de búsqueda temporales que reduzcan el número de buzones en los que se buscaría a menos de 50 000 buzones. Por ejemplo, si su organización contiene buzones de diferente departamentos, comunidades autónomas o países, puede crear un filtro de permisos de búsqueda de buzón en función de una de esas propiedades de buzón para buscar en un subconjunto de buzones de su organización. Después de crear el filtro de permisos de búsqueda, debe crear la búsqueda (como se describe en el paso 1) y, después, eliminar el mensaje (como se describe en el paso 3). Luego, puede editar el filtro para buscar y depurar mensajes en un conjunto de buzones diferente. Para obtener más información sobre cómo crear filtros de permisos de búsqueda, vea [Configurar el filtrado de permisos para la búsqueda de contenido](permissions-filtering-for-content-search.md).
+  Como se indicó anteriormente, puede realizar una operación de búsqueda y depuración en un máximo de 50 000 buzones (incluso si menos de 50 000 contienen elementos que coincidan con la consulta de la búsqueda). Si tiene que realizar una operación de búsqueda y depuración en más de 50 000 buzones, considere la posibilidad de crear filtros de permisos de búsqueda temporales que reduzcan el número de buzones en los que se buscará a menos de 50 000 buzones. Por ejemplo, si su organización contiene buzones de diferente departamentos, comunidades autónomas o países, puede crear un filtro de permisos de búsqueda de buzón en función de una de esas propiedades de buzón para buscar en un subconjunto de buzones de su organización. Después de crear el filtro de permisos de búsqueda, debe crear la búsqueda (como se describe en el paso 1) y, después, eliminar el mensaje (como se describe en el paso 3). Luego, puede editar el filtro para buscar y depurar mensajes en un conjunto de buzones diferente. Para obtener más información sobre cómo crear filtros de permisos de búsqueda, vea [Configurar el filtrado de permisos para la búsqueda de contenido](permissions-filtering-for-content-search.md).
 
 - **¿Se eliminarán los elementos sin indexar incluidos en los resultados de la búsqueda?**
 

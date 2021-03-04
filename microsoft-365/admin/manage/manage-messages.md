@@ -2,8 +2,8 @@
 title: Administrar mensajes en el Centro de mensajes
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Obtenga información sobre cómo administrar mensajes del Centro de mensajes para ayudarle con la administración de cambios.
-ms.openlocfilehash: 42dc00a1347f5455f2d607da9f2677c58ace34e9
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: 3f0a3c5fe20e76d0fff63cefe7e6eaa687696426
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787768"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405965"
 ---
 # <a name="manage-messages-in-message-center"></a>Administrar mensajes en el Centro de mensajes
 
@@ -33,7 +33,7 @@ Las publicaciones del Centro de mensajes son anuncios importantes sobre caracter
   
 ## <a name="read-a-message"></a>Leer un mensaje
 
-Para ir al Centro de mensajes, vaya a [Centro de administración](https://go.microsoft.com/fwlink/p/?linkid=2024339) y seleccione **Mantenimiento** > **Centro de mensajes**. 
+Para ir al Centro de mensajes, vaya a [Centro de administración](https://go.microsoft.com/fwlink/p/?linkid=2024339) y seleccione **Mantenimiento** > **Centro de mensajes**.
 
 Seleccione un título de mensaje para abrirlo en el panel de lectura. Cada mensaje contiene un resumen del cambio, una explicación sobre el modo en que el cambio puede afectarle, información sobre cómo puede preparar a su organización para el cambio y (en la mayoría de los casos) un vínculo de información adicional donde puede obtener más información. La información adicional seguirá estando disponible, incluso después de que expire un mensaje.
 
@@ -41,31 +41,29 @@ Seleccione un título de mensaje para abrirlo en el panel de lectura. Cada mensa
 
 ::: moniker range="o365-worldwide"
 
-Utilice el menú desplegable **Filtrar** para seleccionar una vista filtrada de los mensajes.
+Use los menús desplegables **Servicio**, **Etiqueta** y **Estado del mensaje**  para seleccionar una vista filtrada de los mensajes. Por ejemplo, en este diagrama los mensajes se etiquetan con la etiqueta **Impacto en el administrador**.
 
-Puede seleccionar cualquier encabezado de columna para ordenar los mensajes en orden ascendente o descendente. Por ejemplo, en este diagrama los mensajes se ordenan por fecha en **Acción hecha el**.
+Puede seleccionar cualquier encabezado de columna, salvo **Servicio** y **Etiqueta** para ordenar los mensajes en orden ascendente o descendente.
 
-![Vista del centro de mensajes ordenada por fecha en Acción hecha el.](../../media/message-center-filter-act-by.png)
+:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Vista del Centro de mensajes ordenada por Impacto del administrador.":::
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Utilice el menú desplegable **Vista** para seleccionar una vista filtrada de los mensajes. 
- 
+Utilice el menú desplegable **Vista** para seleccionar una vista filtrada de los mensajes.
+
 Puede seleccionar cualquier encabezado de columna para ordenar los mensajes en orden ascendente o descendente. Por ejemplo, en esta ilustración los mensajes se ordenan por fecha en **Acción hecha el**.
 
-![Vista del centro de mensajes ordenada por fecha en Acción hecha el.](../../media/message-center-old-admin-center1.png)
+![Vista del Centro de mensajes ordenada por la etiqueta del Impacto del administrador](../../media/message-center-filter-act-by.png)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Utilice el menú desplegable **Vista** para seleccionar una vista filtrada de los mensajes. 
- 
-Puede seleccionar cualquier encabezado de columna para ordenar los mensajes en orden ascendente o descendente. Por ejemplo, en esta ilustración los mensajes se ordenan por fecha en **Acción hecha el**.
+Use los menús desplegables **Servicio**, **Etiqueta** y **Estado del mensaje**  para seleccionar una vista filtrada de los mensajes. Por ejemplo, en este diagrama los mensajes se etiquetan con **Impacto en el administrador**.
 
-![Vista del centro de mensajes ordenada por fecha en Acción hecha el.](../../media/message-center-old-admin-center1.png)
+Puede seleccionar cualquier encabezado de columna, salvo **Servicio** y **Etiquetas** para ordenar los mensajes en orden ascendente o descendente.
 
 ::: moniker-end
 
@@ -73,7 +71,7 @@ Puede seleccionar cualquier encabezado de columna para ordenar los mensajes en o
 
 En el Centro de mensajes, puede seleccionar un mensaje para ver los detalles.
 
-Si desea enviar comentarios en el mensaje, seleccione el icono **Me gusta** o **No me gusta** y proporcione los comentarios en el cuadro de texto que aparece. La información personal no debe ser proporcionada. De manera opcional, **Puede ponerse en contacto conmigo para obtener estos comentarios** y después seleccionar **Enviar**.
+Si quiere enviar comentarios en el mensaje, en el panel de detalles seleccione el icono **Me gusta** o **No me gusta** en la parte inferior del panel de detalles del mensaje y proporcione comentarios opcionales en el cuadro de texto que aparece. La información personal no debe ser proporcionada. De manera opcional, **Puede ponerse en contacto conmigo para obtener estos comentarios** y después seleccionar **Enviar**.
 
 ## <a name="share-a-message"></a>Compartir un mensaje
 
@@ -84,20 +82,18 @@ Si desea enviar comentarios en el mensaje, seleccione el icono **Me gusta** o **
 2. Para compartir el mensaje, escriba hasta dos direcciones de correo electrónico separadas por dos puntos. Puede enviar a direcciones de correo electrónico de forma individual o de grupo. Opcionalmente, puede optar por recibir una copia del mensaje en el correo electrónico (el mensaje irá a su dirección de correo electrónico principal) o bien agregar un mensaje personal para proporcionar a los destinatarios más contexto.
   
 3. Seleccione **Compartir** para enviar el correo electrónico.
-    
+
 ## <a name="get-a-link"></a>Obtener un vínculo
 
-¿Necesita realizar un seguimiento con otro administrador para asegurarse de que es consciente de un cambio y de tomar medidas? Puede generar un vínculo para compartir mediante correo electrónico o mensajería instantánea, por ejemplo, que conectará al usuario directamente a ese mensaje. La persona con la que comparte el vínculo tiene que ser administrador de Microsoft 365 para su organización o no tendrá acceso al mensaje vinculado.
+¿Necesita realizar un seguimiento con otro administrador para asegurarse de que es consciente de un cambio y de tomar medidas? Puede generar un vínculo para compartir mediante correo electrónico o mensajería instantánea, por ejemplo, que conectará al usuario directamente a ese mensaje. La persona con la que comparta el vínculo debe tener acceso al Centro de mensajes. Consulte [Roles de administrador que no tienen acceso al Centro de mensajes](message-center.md#admin-roles-that-dont-have-access-to-the-message-center) para obtener más información.
 
 ::: moniker range="o365-worldwide"
 
 1. Seleccione el mensaje para abrirlo.
 
-2. Seleccione el icono **Copiar enlace al portapapeles** (vínculo).
+2. Seleccione **Copiar vínculo**.
 
-3. Permita que la página web pueda acceder a su Portapapeles. Un vínculo directo se ha copiado en su Portapapeles.
-
-4. Use Ctrl+V o haga clic con el botón derecho y seleccione **Pegar** para insertar el vínculo.
+3. Use Ctrl+V o haga clic con el botón derecho y seleccione **Pegar** para insertar el vínculo en el documento que quiera.
 
 ::: moniker-end
 
@@ -117,11 +113,9 @@ Si desea enviar comentarios en el mensaje, seleccione el icono **Me gusta** o **
 
 1. Seleccione el mensaje para abrirlo.
 
-2. Elija **Más** \> **Obtener un vínculo** en la barra de acciones.
+2. Seleccione **Copiar vínculo**.
 
-3. Permita que la página web pueda acceder a su Portapapeles. Un vínculo directo se ha copiado en su Portapapeles.
-
-4. Use Ctrl+V o haga clic con el botón derecho y seleccione **Pegar** para insertar el vínculo.
+3. Use Ctrl+V o haga clic con el botón derecho y seleccione **Pegar** para insertar el vínculo en el documento que quiera.
 
 ::: moniker-end
 
@@ -131,9 +125,9 @@ Todos los mensajes del Centro de mensajes no leídos se mostrarán en negrita. A
 
 ::: moniker range="o365-worldwide"
 
-1. En la página principal del centro de mensajes, seleccione un mensaje.
+- En la página principal del Centro de mensajes, seleccione el icono de puntos suspensivos **Más opciones** junto a un mensaje y, después, seleccione **Marcar como no leído**.
 
-2. Seleccione el icono **Marcar como no leído** (sobre) en la parte superior del mensaje.
+También puede abrir un mensaje y marcarlo como no leído en el panel de detalles.
   
 ::: moniker-end
 
@@ -149,68 +143,34 @@ Todos los mensajes del Centro de mensajes no leídos se mostrarán en negrita. A
 
 ::: moniker range="o365-21vianet"
 
-1. Seleccione el mensaje para abrirlo.
-
-2. Seleccione **Más** \> **Marcar como no leído**.
-
-3. Cierre el mensaje.
+- En la página principal del Centro de mensajes, seleccione el icono de puntos suspensivos **Más opciones** junto a un mensaje y, después, seleccione **Marcar como no leído**.
 
 ::: moniker-end
 
 ## <a name="archive-and-restore"></a>Archivar y restaurar
 
-Si ve un mensaje cuyo contenido no le concierne, o quizás ya ha actuado sobre él, puede archivar el mensaje para eliminarlo de la vista del Centro de mensajes. La vista que se ve en el centro de mensajes es específica de su cuenta de usuario, por lo que archivar desde su vista no afecta a otros administradores.
-
-::: moniker range="o365-worldwide"
+Si ve un mensaje cuyo contenido no le concierne, o sobre el cual ya realizara una acción, puede archivar el mensaje para eliminarlo de la Bandeja de entrada. La vista que se ve en el centro de mensajes es específica de su cuenta de usuario, por lo que archivar desde su vista no afecta a otros administradores. Hay dos formas de archivar un mensaje.
 
 - En la página principal del Centro de mensajes, seleccione un mensaje y después **Archivar** encima de la lista de mensajes.
 
-- Abra el mensaje y, después, **Archivar** en la parte inferior del mensaje.
+- Abra el mensaje y después seleccione **Archivar** en la parte superior del panel de mensajes.
 
 ¿Necesita recuperar un mensaje archivado? No pasa nada.
   
-1. Seleccione la **Mensajes archivados** pestaña en la parte superior del Centro de mensajes. Aparece una lista de mensajes archivados. 
+1. Seleccione la pestaña **Archivar** en la parte superior del Centro de mensajes. Aparecerá una lista de mensajes archivados.
 
-2. Seleccione el mensaje, haga clic en **Restaurar** y el mensaje se restaurará a los mensajes activos.
+2. Seleccione el mensaje, haga clic en **Restaurar** y el mensaje se restaurará a la Bandeja de entrada.
 
-::: moniker-end
+## <a name="favorite-messages"></a>Mensajes favoritos
 
-::: moniker range="o365-germany"
+Para marcar un mensaje como favorito, mueva el puntero sobre el título del mensaje y verá una estrella de **Favorito** :::image type="icon" source="../../media/favorite-star.png" border="false"::: que puede seleccionar justo después del signo de puntos suspensivos **Más opciones**. Una vez que haya marcado los mensajes como favoritos, también puede ordenarlos y filtrarlos.
 
-Hay dos formas de archivar un mensaje.
-  
-- Seleccione la X que aparece a la derecha del Id. de mensaje. El mensaje se ha eliminado de su lista. O bien
+## <a name="scroll-messages-in-the-message-pane"></a>Desplazarse por los mensajes en el panel de mensajes
 
-- Abra el mensaje y después seleccione **Archivar** en la parte superior del mensaje.
-
-¿Necesita recuperar un mensaje descartado? No pasa nada.
-  
-1. Seleccione el filtro de **Mensajes archivados** en el menú desplegable **Vistas**. Aparece una lista de mensajes archivados.
-
-2. Seleccione **Restaurar** a la derecha del Id. del mensaje, y el mensaje se restaurará a los mensajes activos.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-Hay dos formas de archivar un mensaje.
-  
-- Seleccione la X que aparece a la derecha del Id. de mensaje. El mensaje se ha eliminado de su lista. O bien
-
-- Abra el mensaje y después seleccione **Archivar** en la parte superior del mensaje.
-
-¿Necesita recuperar un mensaje archivado? No pasa nada.
-  
-1. Seleccione el filtro de **Mensajes archivados** en el menú desplegable **Vistas**. Aparece una lista de mensajes archivados.
-
-2. Seleccione **Restaurar** a la derecha del Id. del mensaje, y el mensaje se restaurará a los mensajes activos.
-
-::: moniker-end
+Al abrir un mensaje en un panel de lectura, puede usar las flechas de **arriba** y **abajo** :::image type="icon" source="../../media/updownarrows.png" border="false"::: de la parte superior del panel para ir al siguiente mensaje o al mensaje anterior de la lista.
 
 ## <a name="track-your-message-center-tasks-in-planner"></a>Seguir las tareas del Centro de mensajes en Planner
 
 En el Centro de mensajes de Microsoft 365 no deja de llegarle información útil sobre los cambios en los servicios de Microsoft 365. Puede resultar difícil hacer un seguimiento de los cambios que requieren tareas, cuándo y por quién, y seguir cada tarea hasta su finalización. También puede anotar algo y etiquetarlo para comprobarlo más adelante. Puede hacer todo esto y más si sincroniza sus mensajes del Centro de administración de Microsoft 365 con Microsoft Planner. Para obtener más información, vea [Seguir sus tareas del centro de mensajes en Planner](https://docs.microsoft.com/office365/planner/track-message-center-tasks-planner).
 
-
 Para obtener información general sobre el Centro de mensajes, vea [Centro de mensajes en Microsoft 365](message-center.md). O bien, para obtener información sobre cómo establecer sus preferencias de idioma para habilitar la traducción automática para publicaciones del Centro de mensajes, vea [Traducción de idioma para publicaciones del Centro de mensajes](language-translation-for-message-center-posts.md). Si desea programar una forma alternativa para obtener información sobre el estado del servicio en tiempo real y las comunicaciones del Centro de mensajes, vea [Información general de la API de comunicaciones del servicio de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=848507).
-  
