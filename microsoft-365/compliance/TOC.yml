@@ -158,6 +158,8 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Administrar etiquetas de confidencialidad en las aplicaciones de Office
           href: sensitivity-labels-office-apps.md
+        - name: Habilitar la coautoría para documentos cifrados por etiquetas de confidencialidad (versión preliminar)
+          href: sensitivity-labels-coauthoring.md
     - name: Cifrado
       items:
         - name: Entender el cifrado
