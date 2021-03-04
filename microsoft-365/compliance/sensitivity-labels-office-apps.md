@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren etiquetas de confidencialidad en aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1834e1071c56e03ef20ae0e87b63fc4c03a6921b
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: b7d3c436030c0db3faa7834ed0153396048c0ec6
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407310"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423691"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -64,8 +64,8 @@ Los números enumerados son la versión mínima de la aplicación de Office nece
 |[Marcados dinámicos con variables](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | En revisión |
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Sí: participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | En revisión   | En revisión         | En revisión                                                        |
-|[Introducción a la clasificación de datos](data-classification-overview.md) y envío de datos para administradores                      | 2011+ | 16.43+ | Vista previa: [Canal actual (versión preliminar)](https://office.com/insider) | Vista previa: [Canal actual (versión preliminar)](https://office.com/insider) | Sí <sup>\*</sup>                                                        |
-|[Requerir que los usuarios apliquen una etiqueta a su correo electrónico y documentos](#require-users-to-apply-a-label-to-their-email-and-documents)   | Vista previa: [Canal actual (versión preliminar)](https://office.com/insider)             | Vista previa: [Canal actual (versión preliminar)](https://office.com/insider)         | En revisión   | Implementar: 16.0.13628+ | En revisión                                            
+|[Introducción a la clasificación de datos](data-classification-overview.md) y envío de datos para administradores                      | 2011+ | 16.43+ | Implementar: 2,46+ | Implementar: 16.0.13628+ | Sí <sup>\*</sup>                                                        |
+|[Requerir que los usuarios apliquen una etiqueta a su correo electrónico y documentos](#require-users-to-apply-a-label-to-their-email-and-documents)   | Implementar: 2101+             | Implementar: 16,45+         | Lanzamiento en versión preliminar: [Canal beta](https://office.com/insider) | Implementar: 16.0.13628+ | En revisión                                            
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Implementar: 16.44+ | En revisión | En revisión | [Sí: participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Compatibilidad con la co-autoría y autoguardado](sensitivity-labels-coauthoring.md) para documentos etiquetados y cifrados | Vista previa: [Canal actual (versión preliminar)](https://office.com/insider) | Vista previa: [Canal beta](https://office.com/insider) | En revisión | En revisión | [Sí: participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -88,7 +88,7 @@ Los números enumerados son la versión mínima de la aplicación de Office nece
 |[Marcados dinámicos con variables](#dynamic-markings-with-variables)                                              | En revisión                     | En revisión                 | En revisión         | En revisión           | En revisión               |
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
 |[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
-|[Requerir que los usuarios apliquen una etiqueta a su correo electrónico y documentos](#require-users-to-apply-a-label-to-their-email-and-documents)   | Vista previa: [Canal actual (versión preliminar)](https://office.com/insider)                        | 16.43+ <sup>\*</sup>                    | En revisión            | En revisión                | Sí                |
+|[Requerir que los usuarios apliquen una etiqueta a su correo electrónico y documentos](#require-users-to-apply-a-label-to-their-email-and-documents)   | Implementar: 2101+                        | 16.43+ <sup>\*</sup>                    | En revisión            | En revisión                | Sí                |
 |[Introducción a la clasificación de datos](data-classification-overview.md) y envío de datos para administradores                      | 2011+ | En revisión | En revisión           | En revisión               | En revisión |
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | En revisión           | En revisión               | Sí |
 |

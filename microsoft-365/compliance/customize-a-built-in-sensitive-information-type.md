@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información acerca de cómo crear un tipo de información confidencial personalizado que le permita usar reglas que cumplan con las necesidades de su organización.
-ms.openlocfilehash: 745cea9a0851168999335e27b970276726b516d0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 40584b430af6e822b115e014c20481c027222aae
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546668"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423409"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizar un tipo de información confidencial integrado
 
@@ -201,7 +201,7 @@ Para cargar la regla, siga el procedimiento siguiente.
   
 1. Guárdela como un archivo .xml con codificación Unicode. Es importante porque la regla no funcionará si se guarda con una codificación diferente.
     
-2. [Conectarse al Centro de seguridad y cumplimiento con PowerShell remoto.](https://go.microsoft.com/fwlink/?linkid=799771)
+2. [Conectarse al Centro de seguridad y cumplimiento con PowerShell remoto.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
     
 3. En el símbolo del sistema de PowerShell, escriba lo siguiente.
 
