@@ -9,32 +9,30 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo cambiar el nombre o la dirección de correo electrónico de un usuario.
-ms.openlocfilehash: c54665a774803c0386801b226b3f76f019b20321
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f45f0bb2f2243a6105f6b5f3de89dd4693acbe17
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927411"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422956"
 ---
 # <a name="change-a-users-name-or-email-address"></a>Cambiar el nombre o la dirección de correo electrónico de un usuario
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc?autoplay=false]
 
-En ocasiones, es posible que deba cambiar el nombre o la dirección de correo electrónico de un usuario. Puede hacerlo cambiando su nombre para mostrar, su alias o su dirección de correo electrónico. 
+En ocasiones, es posible que deba cambiar el nombre o la dirección de correo electrónico de un usuario. Para ello, cambie su nombre para mostrar, su alias o su dirección de correo electrónico. 
 
 ## <a name="try-it"></a>¿Se atreve?
 
@@ -42,23 +40,23 @@ En ocasiones, es posible que deba cambiar el nombre o la dirección de correo el
 
 1. En el Centro de administración de Microsoft 365, seleccione **Usuarios** y, a continuación, **Usuarios activos.**
 1. Seleccione el usuario de la lista de usuarios activos.
-1. Seleccione **Administrar información de contacto.**
-1. Cambie el nombre para mostrar y seleccione **Guardar cambios.**
+1. Seleccione **Administrar información de contacto**.
+1. Cambie el nombre para mostrar y seleccione **Guardar cambios**.
 
-    El nuevo nombre se mostrará ahora en Outlook y otras aplicaciones de Microsoft 365.
+    El nuevo nombre ahora se mostrará en Outlook y otras aplicaciones de Microsoft 365.
 
 ### <a name="add-an-email-alias"></a>Agregar un alias de correo electrónico
 
 1. En el Centro de administración de Microsoft 365, seleccione **Usuarios** y, a continuación, **Usuarios activos.**
 1. Seleccione el usuario de la lista de usuarios activos.
-1. Seleccione **Administrar alias de correo electrónico.**
-1. Escriba el nuevo alias, compruebe el dominio y seleccione **Guardar cambios.**
+1. Seleccione **Administrar alias de correo** electrónico .
+1. Escriba el nuevo alias, compruebe el dominio y seleccione **Guardar cambios**.
 
 ### <a name="change-a-username"></a>Cambiar un nombre de usuario
 
 1. En el Centro de administración de Microsoft 365, seleccione **Usuarios** y, a continuación, **Usuarios activos.**
 1. Seleccione el usuario de la lista de usuarios activos.
-1. Seleccione **Administrar nombre de usuario.**
-1. Escriba el nuevo nombre de usuario, compruebe el dominio y seleccione **Guardar cambios.**
+1. Seleccione **Administrar nombre de usuario**.
+1. Escriba el nuevo nombre de usuario, compruebe el dominio y seleccione **Guardar cambios**.
 
     Como resultado de este cambio, el usuario tendrá que iniciar sesión en Microsoft 365 con este nuevo nombre de usuario y agregar la nueva cuenta de correo electrónico a Outlook.

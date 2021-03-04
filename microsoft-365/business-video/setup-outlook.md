@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar Outlook para su correo electrónico de Microsoft 365.
-ms.openlocfilehash: 9ccb654daf8e7cf9748de4213b9a07ecdff9edbb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: b27f59e50190a4f355ff1f4c346161b8efc4219e
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925927"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421996"
 ---
 # <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>Configurar el correo electrónico de Outlook para Microsoft 365 para empresas 
 
@@ -35,13 +33,13 @@ ms.locfileid: "49925927"
 
 ## <a name="try-it"></a>¿Se atreve?
 
-Después de instalar las aplicaciones de Office,&#39;configurar Outlook para que empiece a usar el correo electrónico, el calendario y los contactos. Aquí&#39;cómo hacerlo.
+Después de instalar las aplicaciones de Office,&#39;configurar Outlook para empezar a usar el correo electrónico, el calendario y los contactos. Aquí&#39;cómo.
 
-1. Abra el menú Inicio. Busque Outlook y eli elija.
-2. Escriba su dirección de correo electrónico de Microsoft 365 y seleccione **Conectar.**
+1. Abra el menú Inicio. Busque Outlook y elidlo.
+2. Escriba su dirección de correo electrónico de Microsoft 365 y seleccione  **Conectar**.
 3. Escriba las direcciones de correo electrónico adicionales que desee usar, como su dirección de correo electrónico anterior o personal. Seleccione  **Siguiente**.
-4. Si se le solicita, escriba una contraseña y, a continuación, **seleccione Iniciar sesión.**
-5. Después de agregar todas las cuentas, elija si desea configurar Outlook Mobile o esperar hasta más tarde.
-6. Seleccione **Listo.** Outlook puede tardar varios minutos en descargar el correo electrónico y otros datos.
+4. Si se le solicita, escriba una contraseña y, a continuación,  **seleccione Iniciar sesión**.
+5. Después de agregar todas las cuentas, elija si desea configurar Outlook mobile o esperar hasta más tarde.
+6. Seleccione  **Listo**. Outlook puede tardar varios minutos en descargar el correo electrónico y otros datos.
 
 Ahora puede ver el correo electrónico de las cuentas que agregó. También puede ver el calendario, los contactos y las tareas.

@@ -9,37 +9,35 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Ayude a sus empleados a aprender a configurar las aplicaciones de Office que obtienen con Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 1715562a648af42bff07ab9a3e62647e386125cb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Ayude a los empleados a aprender a configurar las aplicaciones de Office que obtienen con Microsoft 365 Empresa Premium.
+ms.openlocfilehash: c336e12e05a0bb2f0967c7e7591913cbb2ce6742
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927255"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422764"
 ---
 # <a name="employee-quick-setup"></a>Configuración rápida para empleados
 
 ¿Es nuevo en Microsoft 365 para empresas? :::image type="icon" source="../media/video-call-icon.png" border="false":::[Vea este vídeo](https://support.microsoft.com/office/d6466f0d-5d13-464a-adcb-00906ae87029) para obtener información sobre él. Después, siga estos pasos.
 
-:::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="Imagen que muestra los pasos rápidos de configuración de empleados.":::
+:::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="Imagen que muestra los pasos rápidos de configuración de los empleados.":::
 
-## <a name="1-sign-in-to-office"></a>1. Iniciar sesión en Office
+## <a name="1-sign-in-to-office"></a>1. Inicie sesión en Office
 
 1. Vaya a [Office.com](https://office.com) y seleccione **Iniciar sesión**.
-1. Escriba su correo electrónico y contraseña de Microsoft 365 y, a continuación, **inicie sesión.**
+1. Escriba el correo electrónico y la contraseña de Microsoft 365 y, a continuación, **inicie sesión**.
 
 ## <a name="2-download-and-install-office-apps"></a>2. Descargar e instalar aplicaciones de Office
 
@@ -48,9 +46,9 @@ ms.locfileid: "49927255"
     - En Microsoft Edge/IE, elija **Guardar** y, después, **Ejecutar**.
     
         Si se le solicita que permita que la aplicación pueda realizar cambios, elija **Sí**. Deje que se inicie el programa de instalación de Office.
-    - En un equipo Mac, abra Microsoft **Office_2016_Installer.pkg**
+    - En mac, abra Microsoft **Office_2016_Installer.pkg**
 
-## <a name="3-open-outlook-and-add-your-account"></a>3. Abrir Outlook y agregar su cuenta
+## <a name="3-open-outlook-and-add-your-account"></a>3. Abra Outlook y agregue su cuenta
 
 1. Abra **Outlook** en el equipo. En el campo Información, escriba **cuenta** y, después, **Agregar cuenta**.
 
@@ -64,7 +62,7 @@ ms.locfileid: "49927255"
 ## <a name="4-save-or-copy-files-to-onedrive"></a>4. Guardar o copiar archivos en OneDrive
 
 - Guarde documentos en **OneDrive desde** el **menú Guardar como** en aplicaciones de Office.
-    :::image type="content" source="../media/save-onedrive.png" alt-text="Imge that who's how to Save As to OneDrive.":::
+    :::image type="content" source="../media/save-onedrive.png" alt-text="Inge that who's how to Save As to OneDrive.":::
 
 - O copie archivos desde el Escritorio o Documentos a **OneDrive**.
 
@@ -84,7 +82,7 @@ ms.locfileid: "49927255"
 
 ## <a name="6-get-outlook-on-your-phone"></a>6. Obtener Outlook en el teléfono
 
-- Obtenga **Outlook** en su teléfono desde la Tienda de aplicaciones o Google Play Store. Ábralo y elija **Introducción y** agregue el correo electrónico y la contraseña.
+- Obtén **Outlook en** tu teléfono desde la Tienda de aplicaciones o la Tienda Google Play. Ábralo y elija **Introducción** y agregue el correo electrónico y la contraseña.
 - O bien, abra Outlook en un dispositivo Android o iOS y vaya a **Configuración**.
 
     Elija **Agregar cuenta**, después **Agregar cuenta de correo electrónico** y, a continuación, escriba su correo electrónico y contraseña.

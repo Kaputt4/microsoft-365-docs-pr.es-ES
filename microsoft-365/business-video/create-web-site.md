@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo crear un sitio web de GoDaddy para su empresa.
-ms.openlocfilehash: 44f1a82706ff2dc025fc9dcc6f74a71dc0a987e5
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 64b8b7bacaf218f95a0fb89d03eb280f755f1f2f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927339"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422740"
 ---
 # <a name="create-a-website"></a>Crear un sitio web
 
@@ -35,11 +33,11 @@ ms.locfileid: "49927339"
 
 ## <a name="try-it"></a>¿Se atreve?
 
-Microsoft 365 no incluye un sitio web público para su empresa. Para configurar uno, considere la posibilidad de usar una empresa de hospedaje web como GoDaddy, Wix o WordPress.
+Microsoft 365 no incluye un sitio web público para su empresa. Para configurar uno, considere la posibilidad de usar una compañía de hospedaje web como GoDaddy, Wix o WordPress.
 
 1. Busque un proveedor de hospedaje web donde pueda crear su sitio web.
 
-     Es posible que le resulte más fácil elegir el generador de sitios web en la misma empresa donde está registrado su nombre de dominio.
-1. Diseñe su sitio web empresarial y asegúrese de incluir el logotipo de su empresa, propósito empresarial, texto, imágenes y vínculos.
+     Es posible que le resulte más fácil elegir el generador de sitios web en la misma compañía donde está registrado el nombre de dominio.
+1. Diseña el sitio web de tu empresa, asegurándote de incluir el logotipo de la empresa, el propósito de la empresa, el texto, las imágenes y los vínculos.
 1. Para integrar el sitio web con Microsoft 365, puede agregar su correo electrónico empresarial al sitio web y un vínculo a Microsoft Teams, SharePoint u otra herramienta de colaboración.
-1. Asegúrese de conectar su sitio web a su nombre de dominio, que también&#39;usa para el correo electrónico en Microsoft 365.
+1. Asegúrese de conectar el sitio web al nombre de dominio, que&#39;también usa para correo electrónico en Microsoft 365.

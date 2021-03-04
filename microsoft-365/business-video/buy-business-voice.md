@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -17,38 +16,37 @@ monikerRange: o365-worldwide
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo comprar el complemento de Microsoft 365 Business Voice.
-ms.openlocfilehash: b52d10587ce00cc2a9cd3bdb5364a0ba54cd2dbf
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Obtenga información sobre cómo comprar el complemento microsoft 365 Business Voice.
+ms.openlocfilehash: 90d0aae474fa3bd95ffeb1d0ec104268af5edc27
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927483"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422992"
 ---
-# <a name="buy-business-voice"></a>Comprar Business Voice
+# <a name="buy-business-voice"></a>Comprar voz empresarial
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Gryk?autoplay=false]
 
-Con Microsoft 365 Business Voice, puede realizar y recibir llamadas, usar audioconferencias y configurar un sistema de menús de llamadas para enrutar a los clientes al departamento adecuado. Para empezar, debe comprar el complemento de Business Voice.
+Con Microsoft 365 Business Voice, puede realizar y recibir llamadas, usar audioconferencias y configurar un sistema de menús de llamadas para enrutar a los clientes al departamento correcto. Para empezar, debes comprar el complemento de Business Voice.
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. En el Centro de administración de Microsoft 365, vaya **a** Facturación y seleccione Servicios **de compra.**
-1. Desplácese hacia abajo y elija **Complementos.** 
+1. En el Centro de administración de Microsoft 365, vaya a **Facturación** y seleccione **Servicios de compra.**
+1. Desplácese hacia abajo y **elija Complementos**. 
 1. Seleccione **Microsoft 365 Business Voice**.
 
     Si no lo ve, primero debe comprar una suscripción empresarial que incluya Microsoft Teams.
-1. Escribe el número de usuarios para los que quieres licencias y selecciona **Des check out now**.
-1. Seleccione **Recarga automática para** comprar créditos de comunicación si es necesario y evitar interrupciones del servicio.
+1. Escriba el número de usuarios para los que desea obtener licencias y seleccione **Des check-out now**.
+1. Selecciona **Recarga automática para** comprar créditos de comunicación si es necesario y evitar interrupciones del servicio.
 
     Los créditos de comunicación se usan para llamadas internacionales, números gratuitos y minutos de llamadas adicionales.
 1. Seleccione **Siguiente**.
-1. Compruebe el método de pago.
-1. Seleccione **Realizar pedido** y **Continuar.**
+1. Compruebe el método Payment.
+1. Seleccione **Realizar pedido** y **Continuar**.
 
-Ha agregado correctamente el complemento de Business Voice.
+Has agregado correctamente el complemento de Business Voice.

@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo usar Outlook y Microsoft Teams para colaborar.
-ms.openlocfilehash: 3d5ac6dd157b0469800a3dd6f841ec1a5c1d1ed9
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 14a3cdf28c4e0c855671c67af36fa25ac47c6568
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927351"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422836"
 ---
 # <a name="use-outlook-and-teams-together"></a>Usar Outlook y Teams conjuntamente
 
@@ -35,22 +33,22 @@ Cuando se comunique con sus empleados, socios, clientes y otros usuarios de su p
 
 ## <a name="microsoft-outlook"></a>Microsoft Outlook
 
-- Compruebe los mensajes de dentro y fuera de la empresa, incluidos los nuevos clientes potenciales de su empresa.
+- Compruebe los mensajes de dentro y fuera de la empresa, incluidos los nuevos clientes potenciales para su empresa.
 - Compruebe los calendarios, agregue citas y programe reuniones.
 - Agregue los nombres, números y correos electrónicos de las personas con las que trabaja como contactos.
-- Cree tareas, notas y otras formas de mantenerse al día de sus proyectos a corto y largo plazo.
+- Cree tareas, notas y otras formas de mantenerse al tanto de sus proyectos a corto y largo plazo.
 
-:::image type="content" source="../media/outlook-model.png" alt-text="Imagen stylized de la página principal de Outlook.":::
+:::image type="content" source="../media/outlook-model.png" alt-text="Una imagen estilizada de la página principal de Outlook.":::
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-- Tener conversaciones enriquecciones en tiempo real con su equipo e invitar a clientes o invitados a la conversación.
-- Tener chats o llamadas privados y compartir la pantalla entre sí.
+- Tenga conversaciones enriquecciones en tiempo real con su equipo e invite a clientes o invitados a la conversación.
+- Tener chats o llamadas privadas y compartir la pantalla entre sí.
 - Programar y unirse a reuniones con empleados e invitados.
 - Agregar o compartir archivos desde el sitio de SharePoint asociado o OneDrive para la Empresa.
-- Agregue más aplicaciones como Planner, Power BI o GitHub a Teams.
+- Agrega más aplicaciones como Planner, Power BI o GitHub a Teams.
 
-:::image type="content" source="../media/teams-model.png" alt-text="Una imagen stylized de la página principal de Microsoft Teams."::: 
+:::image type="content" source="../media/teams-model.png" alt-text="Una imagen estilizada de la página principal de Microsoft Teams."::: 
 
 ## <a name="related-articles"></a>Artículos relacionados
 

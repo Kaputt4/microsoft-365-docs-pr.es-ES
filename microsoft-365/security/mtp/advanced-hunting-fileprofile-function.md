@@ -1,7 +1,7 @@
 ---
-title: Función FileProfile() en la búsqueda avanzada para Microsoft 365 Defender
-description: Obtenga información sobre cómo usar FileProfile() para enriquecer información sobre archivos en los resultados de consulta de búsqueda avanzada
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, FileProfile, perfil de archivo, función, enriquecimiento
+title: Función FileProfile() en búsqueda avanzada para Microsoft 365 Defender
+description: Obtenga información sobre cómo usar FileProfile() para enriquecer información sobre los archivos de los resultados avanzados de la consulta de búsqueda
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, FileProfile, perfil de archivo, función, enriquecimiento
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 68196f126ac470088d7ba5e2923accc492d8764c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f2e92967b8951cd0f5a3c394a537404db1d53819
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929555"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50424028"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -35,7 +35,7 @@ ms.locfileid: "49929555"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-La función es una función de enriquecimiento en la búsqueda avanzada que agrega los siguientes datos a `FileProfile()` los archivos encontrados por la consulta. [](advanced-hunting-overview.md)
+La `FileProfile()` función es una función de enriquecimiento en búsqueda [avanzada](advanced-hunting-overview.md) que agrega los siguientes datos a los archivos encontrados por la consulta.
 
 | Columna | Tipo de datos | Description |
 |------------|-------------|-------------|
@@ -45,14 +45,14 @@ La función es una función de enriquecimiento en la búsqueda avanzada que agre
 | FileSize | entero | Tamaño del archivo en bytes |
 | GlobalPrevalence | entero | Número de instancias de la entidad observadas por Microsoft globalmente |
 | GlobalFirstSeen | datetime | Fecha y hora en que Microsoft observó por primera vez la entidad globalmente |
-| GlobalLastSeen | datetime | Fecha y hora en que Microsoft observó la entidad por última vez globalmente |
+| GlobalLastSeen | datetime | Fecha y hora en que Microsoft observó por última vez la entidad globalmente |
 | Firmante | string | Información sobre el firmante del archivo |
-| Emisor | string | Información sobre la entidad de certificación (CA) emisora |
-| SignerHash | string | Valor hash único que identifica al firmante |
+| Emisor | string | Información sobre la entidad emisora de certificados (CA) |
+| SignerHash | string | Valor hash único que identifica el firmante |
 | IsCertificateValid | boolean | Si el certificado usado para firmar el archivo es válido |
 | IsRootSignerMicrosoft | boolean | Indica si el firmante del certificado raíz es Microsoft |
-| IsExecutable | boolean | Si el archivo es un archivo portable ejecutable (PE) |
-| ThreatName | string | Nombre de la detección de cualquier malware u otras amenazas encontradas |
+| IsExecutable | boolean | Si el archivo es un archivo ejecutable portátil (PE) |
+| ThreatName | string | Nombre de detección de cualquier malware u otras amenazas encontradas |
 | Publisher | string | Nombre de la organización que publicó el archivo |
 | SoftwareName | cadena | Nombre del producto de software |
 
@@ -64,12 +64,16 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>Argumentos
 
-- **x**: columna de id. de archivo que se usa: `SHA1` , , o ; la función usa si no se `SHA256` `InitiatingProcessSHA1` `InitiatingProcessSHA256` `SHA1` especifica
-- **y:** límite al número de registros que se enriquecerán, de 1 a 1000; usa 100 si no se especifica
+- **x**—columna de id. de archivo para usar: `SHA1` , , o ; función usa si no se `SHA256` `InitiatingProcessSHA1` `InitiatingProcessSHA256` `SHA1` especifica
+- **y**—limite al número de registros que se enriquecerán, de 1 a 1000; función usa 100 si no se especifica
+
+
+>[!TIP]
+> Las funciones de enriquecimiento mostrarán información adicional solo cuando estén disponibles. La disponibilidad de información es variada y depende de muchos factores. Asegúrese de tener esto en cuenta al usar FileProfile() en las consultas o al crear detecciones personalizadas. Para obtener los mejores resultados, se recomienda usar la función FileProfile() con SHA1.
 
 ## <a name="examples"></a>Ejemplos
 
-### <a name="project-only-the-sha1-column-and-enrich-it"></a>Proyectar solo la columna SHA1 y enriquecer
+### <a name="project-only-the-sha1-column-and-enrich-it"></a>Proyecte solo la columna SHA1 y enriquezcala
 
 ```kusto
 DeviceFileEvents

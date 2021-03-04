@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtén información sobre cómo instalar Microsoft Office aplicaciones.
-ms.openlocfilehash: abbeb8fdaa36956014ef955f853616cdb7d4e83c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: c4df808f366095c5e0d21d177bb40bcff56488cd
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925019"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422512"
 ---
 # <a name="install-office-apps"></a>Instalar aplicaciones de Office 
 
@@ -38,9 +36,9 @@ ms.locfileid: "49925019"
 Microsoft Office aplicaciones se pueden encontrar en el  **menú** Inicio. Si no los&#39;, puede instalarlos usted mismo.
 
 1. Vaya a office.com. Es posible que deba iniciar sesión con su cuenta de trabajo.
-2. Seleccione **Instalar aplicaciones** de Office Microsoft   >   **365**   >   **Ejecutar** y, a continuación, seleccione **Sí**.
-3. Se instalarán las aplicaciones de Office. El proceso puede tardar varios minutos. Cuando finalice, seleccione  **Cerrar**.
-4. Para instalar Microsoft Teams, vaya a la office.com y elija **Teams.**
-5. Obtenga la aplicación de Windows y, a continuación,  **seleccione Ejecutar**. Teams muestra un mensaje cuando se completa la instalación.
+2. Seleccione **Instalar aplicaciones** de Office Microsoft   >   **365** Ejecutar y, a   >    continuación, seleccione **Sí**.
+3. Se instalarán las aplicaciones de Office. El proceso puede tardar varios minutos. Cuando se complete, seleccione  **Cerrar**.
+4. Para instalar Microsoft Teams, vaya a la office.com y elija  **Teams**.
+5. Obtiene la aplicación de Windows y, a continuación, selecciona  **Ejecutar**. Teams muestra un mensaje cuando se completa la instalación.
 
-Las aplicaciones de Office que ha instalado ahora aparecen en el  **menú** Inicio.
+Las aplicaciones de Office que instaló ahora aparecen en el  **menú** Inicio.

@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo mover los archivos a OneDrive.
-ms.openlocfilehash: 5a708ba797dbb735c71f181fc287fb831004112b
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f5795ba907e2ac88136887410b5b713bd7d56d81
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927219"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422728"
 ---
 # <a name="move-files-to-onedrive"></a>Mover archivos a OneDrive
 
@@ -39,13 +37,13 @@ Después de registrarse en Microsoft 365 Empresa Premium,&#39;deseará copiar lo
 
 1. En Windows, selecciona el  **botón** Inicio.
 2. Busque OneDrive y selecciónelo.
-3. Escriba su dirección de correo electrónico del trabajo.
+3. Escriba su dirección de correo electrónico de trabajo.
 4. Seleccione  **Iniciar sesión** y, a continuación, seleccione  **Siguiente**.
-5. Vaya a través del tutorial breve y, a continuación, **seleccione Abrir mi carpeta de OneDrive.** Si también usa la versión personal de OneDrive,&#39;verá aquí.
+5. Vaya al tutorial breve y, a continuación,  **seleccione Abrir mi carpeta de OneDrive**. Si también usa la versión personal de OneDrive,&#39;verá aquí.
 6. En el Explorador de archivos, vaya a los archivos que desea copiar.
-7. Seleccione los archivos y, a continuación, arrástrelos y suélelos en la carpeta de OneDrive. Las flechas circulares azules situadas junto a los archivos&#39;se sincronizan con la nube. Cuando se&#39;la sincronización, se muestran las marcas de verificación verde.
+7. Seleccione los archivos y, a continuación, arrástrelos y suélelos en la carpeta de OneDrive. Las flechas circulares azules situadas junto a los archivos&#39;que se vuelvan a sincronizar con la nube. Cuando se&#39;la sincronización, se muestran las marcas de verificación verdes.
 
 Además de trabajar en los archivos de OneDrive localmente, puede acceder a ellos desde el explorador web:
 
-1. En el explorador web, inicie sesión en office.com con el correo electrónico del trabajo.
-2. Elija  **OneDrive**. Se muestran todos los archivos y puede trabajar en ellos en el explorador desde cualquier equipo.
+1. En el explorador web, inicie sesión para office.com con el correo electrónico de trabajo.
+2. Elija  **OneDrive**. Todos los archivos aparecen en la lista y puede trabajar en ellos en el explorador desde cualquier equipo.

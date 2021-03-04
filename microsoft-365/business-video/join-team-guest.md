@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Obtenga información sobre cómo unirse a un equipo como invitado en Microsoft Teams.
-ms.openlocfilehash: 31d5acb1a0294a54bcb5b5c7c74d76dbba7124f7
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 8ed7b8c92fa9fbe22c8a4f74b89916266a4af46f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925031"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422488"
 ---
 # <a name="join-a-team-as-a-guest"></a>Unirse a un equipo como invitado
 
@@ -37,16 +35,16 @@ ms.locfileid: "49925031"
 
 Si recibe una invitación de Microsoft Teams para unirse a un equipo, hay un par de pasos para aceptar la invitación.
 
-1. Abra la invitación por correo electrónico y seleccione **Abrir Microsoft Teams.** Si no ve la invitación, compruebe la carpeta de correo no deseado.
-  1. Si su dirección de correo electrónico no se ha usado previamente para crear una cuenta de Microsoft, tendrá que crear una.
+1. Abra la invitación por correo electrónico y  **seleccione Abrir Microsoft Teams**. Si no ve la invitación, compruebe la carpeta de correo no deseado o correo no deseado.
+  1. Si su dirección de correo electrónico no se ha usado anteriormente para crear una cuenta de Microsoft, tendrá que crear una.
 
-     En el  **cuadro de diálogo**  Crear cuenta, seleccione  **Siguiente,** cree una contraseña y seleccione  **Siguiente**.
+     En el  **cuadro de diálogo**  Crear cuenta, seleccione  **Siguiente** , cree una contraseña y seleccione  **Siguiente**.
   1. Para comprobar la dirección de correo electrónico, abra el correo electrónico de verificación y copie el código de seguridad.
-  1. Escriba el código  de seguridad en el cuadro de diálogo  Comprobar correo electrónico, seleccione Siguiente **,** escriba la CAPTCHA en la línea Escribir los caracteres que ve, seleccione Siguiente **y,** a continuación, **Acepte**.
-1. Si no desea descargar la aplicación de Microsoft Teams, **seleccione Usar la aplicación web en su lugar.**
-1. En la aplicación web de Teams puede ver o responder a  las publicaciones, o crear sus propias publicaciones, y seleccionar la pestaña Archivos para ver o editar documentos del equipo.
+  1. Escriba el código de seguridad en el cuadro de diálogo Comprobar  **correo**  electrónico, seleccione Siguiente  **,** escriba el CAPTCHA en la línea  **Escribir**  los caracteres que ve, seleccione  **Siguiente** y, a continuación,  **Aceptar**.
+1. Si no quieres descargar la aplicación de Microsoft Teams, selecciona **Usar la aplicación web en su lugar.**
+1. En la aplicación web de Teams puedes ver o responder a las publicaciones, o crear tus propias publicaciones, y seleccionar la pestaña  **Archivos**  para ver o editar documentos de equipo.
 
-    Si ya usa la aplicación Teams en su organización para unirse a un equipo como invitado, es mucho más sencillo.
+    Si ya usas la aplicación Teams en tu organización unirte a un equipo como invitado es mucho más sencillo.
 
-1. Simplemente abra la aplicación de Microsoft Teams y elija  **Sí**  para cambiar al equipo al que está invitado.  Ahora puede colaborar en el proyecto en Teams.
-2. Para volver al equipo de su empresa, selecciónelo en  **la**  lista desplegable Organización.
+1. Simplemente abre la aplicación de Microsoft Teams y elige  **Sí**  para cambiar al equipo al que estás invitado.  Ahora puede colaborar en el proyecto en Teams.
+2. Para volver al equipo de su empresa, selecciónelo en la  **lista**  desplegable Organización.
