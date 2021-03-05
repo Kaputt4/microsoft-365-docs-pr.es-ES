@@ -1,7 +1,7 @@
 ---
 title: Cambios de nomenclatura en el esquema de búsqueda avanzada de Microsoft 365 Defender
-description: Realizar un seguimiento y revisar las tablas y columnas de cambios de nomenclatura en el esquema de búsqueda avanzada
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, datos, cambios de nomenclatura, cambiar el nombre, Protección contra amenazas de Microsoft
+description: Seguimiento y revisión de cambios de nomenclatura en tablas y columnas en el esquema de búsqueda avanzada
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, datos, cambios de nomenclatura, cambio de nombre, Protección contra amenazas de Microsoft
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3f03543b03dca5fe426700ffff4f5c6edb8fa3c7
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: cd06286083297d0930270868b99a14f8ddb2f4b2
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066874"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461672"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Esquema de búsqueda avanzada: cambios de nomenclatura
 
@@ -37,15 +37,15 @@ ms.locfileid: "50066874"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-El [esquema de búsqueda avanzada se](advanced-hunting-schema-tables.md) actualiza periódicamente para agregar nuevas tablas y columnas. En algunos casos, se cambia el nombre de los nombres de las columnas existentes o se reemplazan para mejorar la experiencia del usuario. Consulte este artículo para revisar los cambios de nomenclatura que podrían afectar a las consultas.
+El [esquema de búsqueda avanzada](advanced-hunting-schema-tables.md) se actualiza regularmente para agregar nuevas tablas y columnas. En algunos casos, los nombres de columnas existentes se renombran o reemplazan para mejorar la experiencia del usuario. Consulte este artículo para revisar los cambios de nomenclatura que podrían afectar a las consultas.
 
-Los cambios de nomenclatura se aplican automáticamente a las consultas que se guardan en el centro de seguridad, incluidas las consultas usadas por reglas de detección personalizadas. No es necesario actualizar estas consultas manualmente. Sin embargo, tendrá que actualizar las siguientes consultas:
+Los cambios de nomenclatura se aplican automáticamente a las consultas que se guardan en el centro de seguridad, incluidas las consultas usadas por las reglas de detección personalizadas. No es necesario actualizar estas consultas manualmente. Sin embargo, deberá actualizar las siguientes consultas:
 - Consultas que se ejecutan con la API
 - Consultas que se guardan en otro lugar fuera del centro de seguridad
 
 ## <a name="december-2020"></a>Diciembre de 2020
 
-| Nombre de tabla | Nombre de columna original | Nombre de columna nueva | Motivo de la modificación
+| Nombre de tabla | Nombre de columna original | Nuevo nombre de columna | Motivo del cambio
 |--|--|--|--|
 | [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailAction` | `EmailAction` | Comentarios del cliente |
 | [EmailEvents](advanced-hunting-emailevents-table.md) | `FinalEmailActionPolicy` | `EmailActionPolicy` | Comentarios del cliente |
@@ -53,26 +53,57 @@ Los cambios de nomenclatura se aplican automáticamente a las consultas que se g
 
 ## <a name="january-2021"></a>Enero de 2021
 
-| Nombre de columna | Nombre del valor original | Nuevo nombre de valor | Motivo de la modificación
+| Nombre de columna | Nombre del valor original | Nuevo nombre de valor | Motivo del cambio
 |--|--|--|--|
-| `DetectionSource` | MCAS |    Microsoft Cloud App Security | Cambio de marca |
-| `DetectionSource` | WindowsDefenderAtp|   EDR| Cambio de marca |
-| `DetectionSource` | WindowsDefenderAv | Antivirus | Cambio de marca |
-| `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | Cambio de marca |
-| `DetectionSource` | CustomerTI |  TI personalizada | Cambio de marca |
-| `DetectionSource` | OfficeATP | Microsoft Defender para Office 365 | Cambio de marca |
-| `DetectionSource` | MTP   | Microsoft 365 Defender | Cambio de marca |
-| `DetectionSource` | AzureATP |    Microsoft Defender for Identity | Cambio de marca |
-| `DetectionSource` | CustomDetection   | Detección personalizada | Cambio de marca |
-| `DetectionSource` | AutomatedInvestigation |Investigación automatizada | Cambio de marca |
-| `DetectionSource` | ThreatExperts | Expertos en amenazas de Microsoft | Cambio de marca |
-| `DetectionSource` | TI de terceros | Sensores de terceros | Cambio de marca |
-| `ServiceSource` | inquilino dedicado| Microsoft Defender para punto de conexión | Cambio de marca |
-|`ServiceSource` |Protección contra amenazas de Microsoft   | Microsoft 365 Defender | Cambio de marca |
-| `ServiceSource` | ATP de Office 365  |Microsoft Defender para Office 365 | Cambio de marca |
-| `ServiceSource` |Azure ATP    |Microsoft Defender for Identity | Cambio de marca |
+| `DetectionSource` | MCAS |    Microsoft Cloud App Security | Rebranding |
+| `DetectionSource` | WindowsDefenderAtp|   EDR| Rebranding |
+| `DetectionSource` | WindowsDefenderAv | Antivirus | Rebranding |
+| `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | Rebranding |
+| `DetectionSource` | CustomerTI |  TI personalizada | Rebranding |
+| `DetectionSource` | OfficeATP | Microsoft Defender para Office 365 | Rebranding |
+| `DetectionSource` | MTP   | Microsoft 365 Defender | Rebranding |
+| `DetectionSource` | AzureATP |    Microsoft Defender for Identity | Rebranding |
+| `DetectionSource` | CustomDetection   | Detección personalizada | Rebranding |
+| `DetectionSource` | AutomatedInvestigation |Investigación automatizada | Rebranding |
+| `DetectionSource` | ThreatExperts | Expertos en amenazas de Microsoft | Rebranding |
+| `DetectionSource` | TI de terceros | Sensores de terceros | Rebranding |
+| `ServiceSource` | inquilino dedicado| Microsoft Defender para punto de conexión | Rebranding |
+|`ServiceSource` |Protección contra amenazas de Microsoft   | Microsoft 365 Defender | Rebranding |
+| `ServiceSource` | ATP de Office 365  |Microsoft Defender para Office 365 | Rebranding |
+| `ServiceSource` |Azure ATP    |Microsoft Defender for Identity | Rebranding |
 
 `DetectionSource`está disponible en la [tabla AlertInfo.](advanced-hunting-alertinfo-table.md) `ServiceSource`está disponible en las [tablas AlertEvidence](advanced-hunting-alertevidence-table.md) [y AlertInfo.](advanced-hunting-alertinfo-table.md) 
+
+## <a name="february-2021"></a>Febrero de 2021
+
+1. En las [tablas EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) y [EmailEvents, desusó](advanced-hunting-emailevents-table.md) las columnas y las `MalwareFilterVerdict` `PhishFilterVerdict` reemplazó por la `ThreatTypes` columna. También desusó las `MalwareDetectionMethod` columnas y `PhishDetectionMethod` las reemplazó por la `DetectionMethods` columna. Esta racionalización nos permite proporcionar más información debajo de las nuevas columnas. La asignación se proporciona a continuación.
+
+| Nombre de tabla | Nombre de columna original | Nuevo nombre de columna | Motivo del cambio
+|--|--|--|--|
+| `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Incluir más métodos de detección |
+| `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Incluir más tipos de amenazas |
+| `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Incluir más métodos de detección |
+| `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Incluir más tipos de amenazas |
+
+
+2. En las `EmailAttachmentInfo` tablas `EmailEvents` y, agregamos la columna `ThreatNames` para proporcionar más información sobre la amenaza de correo electrónico. Esta columna contiene valores como Correo no deseado o Phish.
+
+3. En la [tabla DeviceInfo,](advanced-hunting-deviceinfo-table.md) reemplazamos la `DeviceObjectId` columna por `AadDeviceId` basándonos en los comentarios de los clientes.
+
+4. En la [tabla DeviceEvents,](advanced-hunting-deviceevents-table.md) actualizamos varios nombres ActionType para reflejar mejor la descripción de la acción. Los detalles se pueden encontrar a continuación.
+
+| Nombre de tabla | Nombre ActionType original | Nuevo nombre actionType | Motivo del cambio
+|--|--|--|--|
+| `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | Comentarios del cliente |
+| `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Comentarios del cliente |
+| `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Comentarios del cliente |
+| `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Comentarios del cliente |
+| `DeviceEvents` | `AntivirusDetection` | `EdrBlock` | Comentarios del cliente |
+
+
+
+
+
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)

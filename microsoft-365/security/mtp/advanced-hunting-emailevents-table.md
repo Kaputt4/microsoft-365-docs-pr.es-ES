@@ -1,7 +1,7 @@
 ---
 title: La tabla EmailEvents en el esquema de búsqueda avanzada
 description: Obtenga información sobre los eventos asociados con los correos electrónicos de Microsoft 365 en la tabla EmailEvents del esquema de búsqueda avanzada
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, EmailEvents, id. de mensaje de red, remitente, destinatario, id. de datos adjuntos, nombre de datos adjuntos, veredicto de malware, veredicto de suplantación de identidad, recuento de datos adjuntos, recuento de vínculos, recuento de direcciones URL
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, EmailEvents, id. de mensaje de red, remitente, destinatario, id. de datos adjuntos, nombre de datos adjuntos, veredicto de malware, veredicto de phishing, recuento de datos adjuntos, recuento de vínculos, recuento de direcciones URL
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f39e8f77a53b018fdf9c96981524e12f9aface65
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: a0892e03e0ac4c6fc6bcda1b7b159ce403a7ce2e
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145048"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461629"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -35,10 +35,10 @@ ms.locfileid: "50145048"
 
 - Microsoft 365 Defender
 
-La tabla del esquema de búsqueda avanzada contiene información sobre eventos relacionados con el procesamiento de correos electrónicos en `EmailEvents` Microsoft Defender para Office 365. [](advanced-hunting-overview.md) Use esta referencia para crear consultas que devuelvan información de esta tabla.
+La tabla del esquema de búsqueda avanzada contiene información sobre eventos relacionados con el procesamiento de correos electrónicos `EmailEvents` en Microsoft Defender para Office 365. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 >[!TIP]
-> Para obtener información detallada acerca de los tipos de eventos (valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en el centro de seguridad. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+> Para obtener información detallada acerca de los tipos de eventos ( valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en el centro de seguridad. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
@@ -49,7 +49,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `InternetMessageId` | cadena | Identificador público para el correo electrónico que establece el sistema de correo electrónico de envío. |
 | `SenderMailFromAddress` | cadena | Dirección de correo electrónico del remitente en el encabezado MAIL FROM, que también se conoce como remitente del sobre o la dirección de Ruta de devolución. |
 | `SenderFromAddress` | cadena | Dirección de correo electrónico del remitente en el encabezado DE, que es visible para los destinatarios de correo electrónico de sus clientes. |
-| `SenderDisplayName` | cadena | Nombre del remitente que se muestra en la libreta de direcciones, normalmente una combinación de un nombre o un nombre, una inicial intermedia y un apellido o apellido |
+| `SenderDisplayName` | cadena | Nombre del remitente que se muestra en la libreta de direcciones, normalmente una combinación de un nombre o nombre determinado, una inicial intermedia y un apellido o apellido |
 | `SenderObjectId` | string |Identificador único de la cuenta del remitente en Azure AD |
 | `SenderMailFromDomain` | cadena | Dominio de remitente en el encabezado MAIL FROM, que también se conoce como remitente del sobre o la dirección de Ruta de devolución. |
 | `SenderFromDomain` | cadena | Dominio del remitente en el encabezado FROM, que es visible para los destinatarios del correo electrónico en los clientes de correo. |
@@ -62,14 +62,10 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `EmailDirection` | cadena | Dirección del correo electrónico relativo a su red: entrante, saliente, dentro de la organización. |
 | `DeliveryAction` | cadena | Acción de entrega del correo electrónico: entregado, marcado como correo no deseado, bloqueado o reemplazado. |
 | `DeliveryLocation` | cadena | Ubicación en la que se entregó el correo electrónico: bandeja de entrada / carpeta, local / externo, correo no deseado, cuarentena, erróneo, descartado, elementos eliminados. |
-| `PhishFilterVerdict` | cadena | Veredicto sobre la pila de correos electrónicos filtrados para determinar si el correo es para suplantar la identidad: suplantar identidad o no suplantar identidad. |
-| `PhishDetectionMethod` | cadena | Método usado para detectar el correo electrónico como suplantación de identidad: reputación de la dirección URL malintencionada, detonación de url de vínculos seguros, filtro de suplantación de identidad avanzado, filtro de suplantación de identidad general, anti-suplantación de identidad: dentro de la organización, contra la suplantación de identidad: dominio externo, suplantación de dominio, suplantación de usuario, suplantación de marca |
-| `MalwareFilterVerdict` | cadena | Veredicto sobre la pila de mensajes de correo electrónico filtrados para determinar si los correos contienen código malintencionado: Malware, no malware |
-| `MalwareDetectionMethod` | cadena | Método usado para detectar malware en el correo electrónico: motor de antimalware, reputación del archivo, datos adjuntos seguros |
-| `ThreatTypes` | string | Veredicto de la pila de filtrado de correo electrónico sobre si el correo electrónico contiene malware, suplantación de identidad u otras amenazas |
+| `ThreatTypes` | cadena | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
 | `ThreatNames` | string |Nombre de detección de malware u otras amenazas encontradas |
 | `DetectionMethods` | string | Métodos usados para detectar malware, phishing u otras amenazas encontradas en el correo electrónico |
-| `ConfidenceLevel` | string | Lista de niveles de confianza de los veredictos de correo no deseado o de suplantación de identidad. En el caso del correo no deseado, en esta columna se muestra el nivel de confianza contra correo no deseado (SCL), que indica si se omitió el correo electrónico (-1), si se encontró que no es correo no deseado (0,1), si se encontró como correo no deseado con confianza moderada (5,6) o si se encontró como correo no deseado con confianza alta (9). Para la suplantación de identidad, esta columna muestra si el nivel de confianza es "Alto" o "Bajo". |
+| `ConfidenceLevel` | string | Lista de niveles de confianza de los veredictos de correo no deseado o suplantación de identidad. En el caso del correo no deseado, esta columna muestra el nivel de confianza de correo no deseado (SCL), que indica si se omitió el correo electrónico (-1), se encontró que no es correo no deseado (0,1), se encontró que es correo no deseado con confianza moderada (5,6) o si se encontró que es correo no deseado con elevada confianza (9). Para la suplantación de identidad, esta columna muestra si el nivel de confianza es "Alto" o "Bajo". |
 | `EmailAction` | cadena | Acción final tomada sobre el correo electrónico basada en el veredicto del filtro, las directivas y las acciones del usuario: mover el mensaje a la carpeta correo no deseado, agregar encabezado X, modificar el asunto, redirigir mensaje, eliminar mensaje, enviar a cuarentena, no realizar ninguna acción, enviar mensaje con CCO. |
 | `EmailActionPolicy` | cadena | Directiva de acciones que entró en vigor: correo electrónico no deseado con alto nivel de confianza, correo electrónico no deseado, correo electrónico no deseado masivo, correo electrónico no deseado de suplantación de identidad, suplantación de un dominio protegido contra la suplantación de identidad, suplantación de un usuario protegido contra la suplantación de identidad, suplantación de identidad en contra de las medidas contra la suplantación de identidad, suplantación del gráfico contra la suplantación de identidad, contra el software malintencionado, datos adjuntos seguros, reglas de transporte empresarial (RTE). |
 | `EmailActionPolicyGuid` | cadena | Identificador único de la directiva que determinó la acción final tomada sobre el correo electrónico. |

@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2fd999c27598db6f17073cfe82e4c4f91ffb1667
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7b6175f507f54adf357e40ea44c39f5e495a1b14
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407209"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454494"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -46,6 +46,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 - Integración de id. de alerta (búsqueda mediante identificador de alerta y Alert-Explorer navegación) en [experiencias de búsqueda](threat-explorer.md)
 - Aumentar los límites de exportación de registros de 9990 a 200.000 en [experiencias de búsqueda](threat-explorer.md)
 - Ampliar el límite de búsqueda y retención de datos del Explorador (y detecciones en tiempo real) para los inquilinos de prueba de 7 (límite anterior) a 30 días en experiencias de [búsqueda](threat-explorer.md)
+- Nuevos pivotes de búsqueda denominados **Dominio** suplantado y Usuario suplantado en el Explorador (y detecciones en tiempo real) para buscar ataques de suplantación contra usuarios o dominios protegidos.  Para obtener más información, vea [detalles](threat-explorer.md#view-phishing-emails-sent-to-impersonated-users-and-domains). (Microsoft Defender para Office 365 Plan 1 o Plan 2)
 
 ## <a name="december-2020"></a>Diciembre de 2020
 
@@ -119,7 +120,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 ¿Sabía que Microsoft Defender para Office 365 está disponible en dos planes? [Obtenga más información sobre lo que cada plan incluye](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Guía básica de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
