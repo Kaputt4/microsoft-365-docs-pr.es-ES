@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 4bbea7810c20d72ef75bbb5602b1daddfce45576
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: 4eeedca64d1b2244355bb3e0e233969bdd02810c
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084681"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461895"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -60,7 +60,7 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
     
     Específico para el etiquetado automático para SharePoint y OneDrive:
     - Son compatibles los archivos de Office para Word, PowerPoint y Excel. El formato Open XML es compatible (como .docx y .xlsx), pero el formato de Microsoft Office 97-2003 (como .doc y .xls) no lo es.
-        - Estos archivos se pueden etiquetar automáticamente cuando no forman parte de una sesión abierta y si han sido creados, cargados o modificados desde que creó directivas de etiquetado automático o si son archivos existentes que no han sido modificados desde que creó las directivas de eitquetado automático.
+        - Estos archivos se pueden etiquetar automáticamente en reposo antes o después de que se creen las políticas de etiquetado automático. Tenga en cuenta que los archivos no se pueden etiquetar automáticamente si forman parte de una sesión abierta (el archivo está abierto).
     - Máximo 25 000 archivos etiquetados automáticamente en su espacio empresarial por día
     - Máximo de 10 directivas de etiquetado automático por espacio empresarial, cada una con un máximo de 10 sitios (SharePoint o OneDrive).
     - Los valores existentes para modificado, modificado por y la fecha no se cambian como resultado de las directivas de etiquetado automático, tanto en el modo de simulación como al aplicar las etiquetas.
