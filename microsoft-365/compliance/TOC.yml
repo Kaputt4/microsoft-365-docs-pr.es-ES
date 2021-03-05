@@ -36,10 +36,6 @@
           href: communication-compliance-feature-reference.md
         - name: 'Caso práctico: Contoso configura rápidamente una directiva de lenguaje ofensivo'
           href: communication-compliance-case-study.md
-        - name: Directivas de supervisión en Office 365
-          href: supervision-policies.md
-        - name: Configurar directivas de supervisión para Office 365
-          href: configure-supervision-policies.md
     - name: Administración de riesgos internos
       items:
         - name: Información general
