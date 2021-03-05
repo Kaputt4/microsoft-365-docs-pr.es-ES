@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Utilice el Centro de cumplimiento y seguridad de Office 365 o el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado y ver la actividad del usuario y del administrador en su organización.
+description: Use el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e95c2f3627a6bb0c28b736437012a92107b3533
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: a751ffea9fa184faf90bfe7c43b44c5d4e53bfbf
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976251"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461821"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -61,6 +61,8 @@ ms.locfileid: "49976251"
 - Actividad de usuario y administrador en Microsoft Forms
 
 - Actividad de administrador y usuario para las etiquetas de confidencialidad de los sitios que usan SharePoint Online o Microsoft Teams
+
+- Actividad de administrador en el correo de Informe de tareas pendientes y MyAnalytics
 
 ## <a name="requirements-to-search-the-audit-log"></a>Requisitos para realizar búsquedas en el registro de auditoría
 
@@ -178,7 +180,7 @@ Aquí se muestra el proceso para buscar el registro de auditoría en Office 365.
 
       Se registran más de 100 actividades de usuario y de administrador en el registro de auditoría. Haga clic en la pestaña de **Actividades auditadas** en el tema de este artículo para ver las descripciones de todas las actividades en cada uno de los diferentes servicios.
 
-   1. **Fecha de inicio** y **Fecha de finalización**: los últimos siete días se seleccionan de manera predeterminada. Seleccione un intervalo de fecha y hora para mostrar los eventos que han sucedido en ese período. La fecha y la hora se presentan en formato de Hora universal coordinada (UTC). El intervalo máximo de fecha que puede especificar es 90 días. Se muestra un error si el intervalo de fecha seleccionado es superior a 90 días.
+   1. **Fecha de inicio** y **Fecha de finalización**: los últimos siete días se seleccionan de manera predeterminada. Seleccione un intervalo de fecha y hora para mostrar los eventos que han sucedido en ese período. La fecha y la hora se muestran en hora local. El intervalo máximo de fecha que puede especificar es 90 días. Se muestra un error si el intervalo de fecha seleccionado es superior a 90 días.
 
       > [!TIP]
       > Si está usando el intervalo de fecha máximo de 90 días, seleccione la hora actual para la **Fecha de inicio**. De otro modo, recibirá un error que dice que la fecha de inicio es anterior a la fecha de finalización. Si ha activado la auditoría en los últimos 90 días, el intervalo máximo de fecha no puede comenzar antes de la fecha en la que se ha activado la auditoría.
@@ -221,7 +223,7 @@ Los resultados de una búsqueda de registro de auditoría se muestran en **Resul
 
 Los resultados contienen la siguiente información sobre cada evento que la búsqueda ha devuelto:
 
-- **Fecha**: la fecha y la hora (en formato UTC) cuando se ha realizado el evento.
+- **Fecha**: la fecha y la hora (en su hora local) cuando se ha realizado el evento.
 
 - **Dirección IP**: la dirección IP del dispositivo que se ha usado cuando la actividad se ha registrado. La dirección IP se muestra en el formato de dirección IPv4 o IPv6.
 
@@ -368,7 +370,7 @@ Haga clic en uno de los vínculos siguientes para ir a una tabla en particular.
         [Actividades de Power BI](#power-bi-activities)
     :::column-end:::
     :::column:::
-        [Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)
+        [Microsoft Workplace Analytics](#workplace-analytics-activities)
     :::column-end:::
     :::column:::
         [Actividades de Microsoft Teams](#microsoft-teams-activities)
@@ -417,6 +419,18 @@ Haga clic en uno de los vínculos siguientes para ir a una tabla en particular.
     :::column-end:::
     :::column:::
         [Actividades de las directivas y etiquetas de retención](#retention-policy-and-retention-label-activities).
+    :::column-end:::
+    :::column:::
+        [Actividades de correo de informe de tareas pendientes](#briefing-email-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Actividades de MyAnalytics](#myanalytics-activities)
+    :::column-end:::
+    :::column:::
+        [Actividades de barreras de información](#information-barriers-activities)
     :::column-end:::
     :::column:::
         [Actividades de administración de Exchange](#exchange-admin-audit-log)
@@ -790,7 +804,7 @@ Puede buscar el registro de auditoría actividades en Power BI. Para obtener inf
 
 El registro de auditoría de Power BI no está habilitado de forma predeterminada. Para buscar actividades de Power BI en el registro de auditoría, debe habilitar la auditoría en el portal de administración de Power BI. Para obtener instrucciones, consulte la sección "registros de auditoría"[en el portal de administración de Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
 
-### <a name="microsoft-workplace-analytics-activities"></a>Actividades de Microsoft Workplace Analytics
+### <a name="workplace-analytics-activities"></a>Actividades de Workplace Analytics
 
 Workplace Analytics ofrece información sobre cómo colaboran los grupos en la organización. En la siguiente tabla se enumeran las actividades realizadas por los usuarios que tengan asignado el rol de administrador o de analista en Workplace Analytics. Los usuarios a los que se les ha asignado el rol de Analista tienen acceso total a todas las características del servicio y usan el producto para realizar el análisis. Los usuarios que tengan asignado el rol de administrador pueden configurar las opciones de privacidad y los valores predeterminados del sistema y podrán preparar, cargar y comprobar datos en la organización en Workplace Analytics Para obtener más información, consulte[Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
@@ -969,6 +983,42 @@ En la tabla siguiente se enumeran los eventos que se producen a partir de las ta
 | Configuración actualizada para una directiva de retención | SetRetentionComplianceRule | El administrador cambió la configuración de retención de una directiva de retención existente. La configuración de retención incluye cuánto tiempo se retienen los elementos y qué sucede con los elementos cuando expira el período de retención (como eliminar elementos, retener elementos o retenerlos y luego eliminarlos). Esta actividad también corresponde a la ejecución del cmdlet [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule). |
 | Etiqueta de retención actualizada |SetComplianceTag  | El administrador actualizó una etiqueta de retención existente.|
 | Directiva de retención actualizada |SetRetentionCompliancePolicy |El administrador actualizó una directiva de retención existente. Las actualizaciones que desencadenan este evento incluyen agregar o excluir ubicaciones de contenido a las que se aplica la directiva de retención.|
+||||
+
+### <a name="briefing-email-activities"></a>Actividades de correo de informe de tareas pendientes
+
+En la tabla siguiente se enumeran las actividades del correo de informe de tareas pendientes de contenido que se registran en el registro de auditoría de Office 365. Para obtener más información acerca del correo de informe de tareas pendientes, consulte:
+
+- [Información general sobre el correo de informe de tareas pendientes](https://docs.microsoft.com/Briefing/be-overview)
+
+- [Configurar el correo de informe de tareas pendientes](https://docs.microsoft.com/Briefing/be-admin)
+
+|**Nombre descriptivo**|**Operación**|**Descripción**|
+|:-----|:-----|:-----|
+|Configuración actualizada de privacidad de la organización|UpdatedOrganizationBriefingSettings|El administrador actualiza la configuración de privacidad de la organización para el correo de informe de tareas pendientes. |
+|Configuración actualizada de privacidad del usuario|UpdatedUserBriefingSettings|Configuración de privacidad del usuario de actualizaciones de administrador para el correo de informe de tareas pendientes.
+||||
+
+### <a name="myanalytics-activities"></a>Actividades de MyAnalytics
+
+En la tabla siguiente se enumeran las actividades de MyAnalytics que se registran en el registro de auditoría de Office 365. Para más información sobre MyAnalytics, consulte [MyAnalytics para administradores](https://docs.microsoft.com/workplace-analytics/myanalytics/overview/mya-for-admins).
+
+|**Nombre descriptivo**|**Operación**|**Descripción**|
+|:-----|:-----|:-----|
+|Configuración actualizada de MyAnalytics de la organización|UpdatedOrganizationMyAnalyticsSettings|Configuración a nivel de la organización de actualizaciones de administrador para MyAnalytics. |
+|Actualización de la configuración de MyAnalytics del usuario|UpdatedUserMyAnalyticsSettings|Configuración de usuario de actualizaciones de administrador para MyAnalytics|
+||||
+
+### <a name="information-barriers-activities"></a>Actividades de barreras de información
+
+En la tabla siguiente se enumeran las actividades en las barreras de información que se registran en el registro de auditoría de Office 365. Para mayor información sobre las barreras de información, consulte [Aprender sobre las barreras de información en Microsoft 365](information-barriers.md).
+
+|**Nombre descriptivo**|**Operación**|**Descripción**|
+|:----------------|:------------|:--------------|
+| Añadir segmentos a un sitio | SegmentsAdded | Un SharePoint, administrador global o propietario de un sitio agregó uno o más segmentos de barreras de información a un sitio. |
+| Segmentos cambiados de un sitio | SegmentsChanged | Un administrador global o SharePoint cambió uno o más segmentos de barreras de información para un sitio. |
+| Segmentos quitados de un sitio | SegmentsRemoved | Un administrador global o SharePoint quitó uno o más segmentos de barreras de información desde un sitio. |
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Registro de auditoría de administración de Exchange
 
