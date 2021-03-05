@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4cd6e62fd236bf9fd3683425b1e98315fc26dd71
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: e2d0f4f4abbe538d11d61869f52285f19c23a253
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421697"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461811"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
@@ -50,7 +50,7 @@ Las plantillas de directiva son configuraciones de directiva predefinidas que pu
 
 Las comunicaciones se examinan cada 24 horas a partir del momento en que se crean las directivas. Por ejemplo, si crea una directiva de idioma ofensivo a las 11:00 a.m., la directiva recopilará señales de cumplimiento de comunicaciones cada 24 horas a las 11:00 a.m. todos los días. La edición de una directiva no cambia esta vez. Para ver la última fecha y hora de examen de una directiva, vaya a la columna Último *examen de* directivas de la **página** Directiva. Después de crear una nueva directiva, puede tardar hasta 24 horas en ver la primera fecha y hora del examen de directivas. La fecha y hora del último examen se convertirán en la zona horaria del sistema local.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 >[!Important]
 >De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de la comunicación. Los roles asignados en este paso son necesarios antes de que se pueda acceder a las características de cumplimiento de comunicaciones.
@@ -131,16 +131,6 @@ Debe presentar una solicitud al Soporte técnico de Microsoft para que su organi
 - **Orígenes** de terceros: puede examinar las comunicaciones en busca de datos importados en buzones de correo de su organización de Microsoft 365 desde orígenes de terceros como [Instant Bloomberg,](archive-instant-bloomberg-data.md) [Slack,](archive-slack-data.md) [Zoom,](archive-zoommeetings-data.md)SMS y muchos otros. Para obtener una lista completa de conectores compatibles con el cumplimiento de comunicaciones, vea [Archivar datos de terceros](archiving-third-party-data.md).
 
     Debe configurar un conector de terceros para su organización de Microsoft 365 antes de poder asignar el conector a una directiva de cumplimiento de comunicaciones. La **sección Orígenes de terceros** del Asistente para directivas de cumplimiento de comunicaciones solo muestra los conectores de terceros configurados actualmente.
-
-## <a name="transitioning-from-supervision-in-office-365"></a>Transición de supervisión en Office 365
-
-Las organizaciones que usan directivas de supervisión en Office 365 y planean la transición a directivas de cumplimiento de comunicaciones en Microsoft 365 deben comprender estos puntos importantes:
-
-- Ambas soluciones pueden usarse en paralelo en la organización, pero las directivas usadas en cada solución deben tener nombres de directiva únicos. Los grupos y diccionarios de palabras clave personalizadas se pueden compartir entre soluciones durante un período de transición.
-- Los mensajes guardados en supervisión en coincidencias de directivas de Office 365 no se pueden mover ni compartir en el cumplimiento de la comunicación en Microsoft 365.
-- La solución de supervisión en Office 365 se reemplazará completamente por la solución de cumplimiento de comunicaciones en Microsoft 365. Se recomienda crear nuevas directivas en el cumplimiento de comunicaciones que tengan la misma configuración que las directivas de supervisión existentes para usar las nuevas mejoras de investigación y corrección. Al realizar la transición al cumplimiento de comunicaciones en Microsoft 365, debe planear la exportación de datos de informes desde la supervisión en Office 365 si tiene requisitos de directiva de retención de cumplimiento interno.
-
-Para obtener información sobre la retirada para la supervisión en Office 365, consulte el Plan de desarrollo de [Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para obtener más información.
 
 ## <a name="policy-settings"></a>Configuración de directivas
 
@@ -530,6 +520,16 @@ En este ejemplo se devuelven las actividades de actualización de las directivas
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Discovery -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeleted
 ```
+
+## <a name="transitioning-from-supervision-in-office-365"></a>Transición de supervisión en Office 365
+
+Las organizaciones que usan directivas de supervisión en Office 365 deben planear inmediatamente la transición a directivas de cumplimiento de comunicaciones en Microsoft 365 y deben comprender estos puntos importantes:
+
+- La solución de supervisión en Office 365 se ha reemplazado completamente por la solución de cumplimiento de comunicaciones en Microsoft 365. Se recomienda crear nuevas directivas en el cumplimiento de comunicaciones que tengan la misma configuración que las directivas de supervisión existentes para usar las nuevas mejoras de investigación y corrección. Al realizar la transición al cumplimiento de comunicaciones en Microsoft 365, debe planear la exportación de datos de informes desde la supervisión en Office 365 si tiene requisitos de directiva de retención de cumplimiento interno.
+- Los mensajes guardados en supervisión en coincidencias de directivas de Office 365 no se pueden mover ni compartir en el cumplimiento de la comunicación en Microsoft 365.
+- Para las organizaciones con ambas soluciones usadas en paralelo durante el proceso de transición, las directivas usadas en cada solución deben tener nombres de directiva únicos. Los grupos y diccionarios de palabras clave personalizadas se pueden compartir entre soluciones durante un período de transición.
+
+Para obtener información sobre la retirada para la supervisión en Office 365, consulte el Plan de desarrollo de [Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para obtener más información.
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 

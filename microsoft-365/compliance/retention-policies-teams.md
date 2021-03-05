@@ -17,19 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 5c992a988dbffc12824b2b64c1ea9a8fb6d22d67
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 137fcdad514e8272b99ab735a0cf1ed6f6e3e00e
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406530"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461801"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
 
 > [!NOTE]
-> Si ve como usuario un mensaje en Teams que indica que los chats y los mensajes se han eliminado debido a una directiva de retención, vea [Mensajes de Teams sobre directivas de retención](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+> Si ve un mensaje en Teams que indica que los chats y los mensajes se han eliminado debido a una directiva de retención, vea [Mensajes de Teams sobre directivas de retención](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
 > 
 > La información de esta página es para los administradores de TI que gestionan estas directivas de retención.
 

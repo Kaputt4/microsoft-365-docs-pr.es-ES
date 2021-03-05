@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo usar El analizador de configuración de cumplimiento de Microsoft para rápida ejecución con El Administrador de cumplimiento de Microsoft.
-ms.openlocfilehash: 41315dd072e089bd61767181b17dffd5fba88281
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 272477251efed7ebf13bd2e644869eaf2aad1bc2
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423431"
+ms.locfileid: "50454691"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analizador de configuración de cumplimiento de Microsoft para el Administrador de cumplimiento (versión preliminar)
 
@@ -64,6 +64,7 @@ Después de instalar MCCA, puede ejecutar MCCA y generar un informe. Para ejecut
     ```powershell
     Get-MCCAReport
     ```
+
    Si es cliente de GCC High, deberá proporcionar un parámetro de entrada adicional para ejecutar el informe:
 
     ```powershell

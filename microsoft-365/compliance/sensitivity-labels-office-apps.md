@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren etiquetas de confidencialidad en aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7d3c436030c0db3faa7834ed0153396048c0ec6
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 2e0fc96c1bb7b077df50f4f1c3c52ffa0dd49bef
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423691"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461865"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -64,7 +64,7 @@ Los números enumerados son la versión mínima de la aplicación de Office nece
 |[Marcados dinámicos con variables](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | En revisión |
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Sí: participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | En revisión   | En revisión         | En revisión                                                        |
-|[Introducción a la clasificación de datos](data-classification-overview.md) y envío de datos para administradores                      | 2011+ | 16.43+ | Implementar: 2,46+ | Implementar: 16.0.13628+ | Sí <sup>\*</sup>                                                        |
+|[Auditar actividad de usuario relacionada con etiquetas](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | Implementar: 2,46+ | Implementar: 16.0.13628+ | Sí <sup>\*</sup>                                                        |
 |[Requerir que los usuarios apliquen una etiqueta a su correo electrónico y documentos](#require-users-to-apply-a-label-to-their-email-and-documents)   | Implementar: 2101+             | Implementar: 16,45+         | Lanzamiento en versión preliminar: [Canal beta](https://office.com/insider) | Implementar: 16.0.13628+ | En revisión                                            
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Implementar: 16.44+ | En revisión | En revisión | [Sí: participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Compatibilidad con la co-autoría y autoguardado](sensitivity-labels-coauthoring.md) para documentos etiquetados y cifrados | Vista previa: [Canal actual (versión preliminar)](https://office.com/insider) | Vista previa: [Canal beta](https://office.com/insider) | En revisión | En revisión | [Sí: participar](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -89,7 +89,7 @@ Los números enumerados son la versión mínima de la aplicación de Office nece
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
 |[Permitir a los usuarios asignar permisos](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
 |[Requerir que los usuarios apliquen una etiqueta a su correo electrónico y documentos](#require-users-to-apply-a-label-to-their-email-and-documents)   | Implementar: 2101+                        | 16.43+ <sup>\*</sup>                    | En revisión            | En revisión                | Sí                |
-|[Introducción a la clasificación de datos](data-classification-overview.md) y envío de datos para administradores                      | 2011+ | En revisión | En revisión           | En revisión               | En revisión |
+|[Auditar actividad de usuario relacionada con etiquetas](data-classification-activity-explorer.md) | 2011+ | En revisión | En revisión           | En revisión               | En revisión |
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | En revisión           | En revisión               | Sí |
 |
 
@@ -237,7 +237,7 @@ Sin embargo, la cuenta de invitado automática no se crea inmediatamente en este
 
 ### <a name="conditional-access-policies"></a>Directivas de acceso condicional
 
-Si su organización ha implementado directivas de acceso condicional de [Azure Active Directory,](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)compruebe la configuración de dichas directivas. Si las directivas incluyen Azure Information Protection y la directiva se extiende a usuarios externos, esos usuarios externos deben tener una cuenta de invitado en el inquilino incluso si tienen una cuenta de Azure AD en su propio inquilino.
+Si su organización ha implementado directivas de acceso condicional de [Azure Active Directory,](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)compruebe la configuración de dichas directivas. Si las directivas incluyen **Microsoft Azure Information Protection** y la directiva se extiende a usuarios externos, esos usuarios externos deben tener una cuenta de invitado en el inquilino incluso si tienen una cuenta de Azure AD en su propio inquilino.
 
 Sin esta cuenta de invitado, no pueden abrir el documento cifrado y ver un mensaje de error. El texto del mensaje puede informarles de que su cuenta debe agregarse como usuario externo en el inquilino, con la instrucción incorrecta para este escenario de cerrar sesión e iniciar sesión de nuevo con una cuenta de usuario de **Azure Active Directory** diferente.
 
