@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: información adicional de la experiencia del cliente al pasar de Microsoft Cloud Germany (Microsoft Cloud Deutschland) a los servicios de Office 365 en la nueva región del centro de datos alemán.'
-ms.openlocfilehash: 26db69583bac68723d5d57b07abb856c8190d9b1
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 152e9e8d8f4550b9095a7b22e1bcd4cf30fa620f
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454472"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515201"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>Fases de migración acciones e impactos para la migración desde Microsoft Cloud Deutschland (avanzado) 
 
@@ -52,7 +52,7 @@ Si usa **Set-UserPhoto**:
 
 | Pasos | Descripción | Se aplica a | Impacto |
 |:-------|:-----|:-------|:-------|
-| La nueva región de Alemania se agrega a una configuración de organización existente y los buzones se mueven a los servicios de Office 365. | La configuración de Exchange Online agrega la nueva región alemana local a la organización de transición. Esta región de servicios de Office 365 se establece como predeterminada, lo que permite al servicio de equilibrio de carga interno redistribuir buzones a la región predeterminada adecuada en los servicios de Office 365. En esta transición, los usuarios de ambos lados (servicios de Alemania u Office 365) están en la misma organización y pueden usar cualquier extremo de dirección URL. |  Exchange Online | Si se ha migrado un buzón de usuario pero no se ha migrado un buzón de administrador, o viceversa, los administradores no podrán ejecutar **Set-UserPhoto**, un cmdlet de PowerShell. En esta situación, un administrador debe pasar una cadena adicional durante la configuración de la conexión `ConnectionUri` mediante la sintaxis siguiente: <br><br> `https://outlook.office.de/PowerShell-LiveID?email=<user_email>` <br><br> donde es el marcador de posición del identificador de correo electrónico del usuario cuya foto debe `<user_email>` cambiarse mediante **Set-UserPhoto**. |
+| La nueva región de Alemania se agrega a una configuración de organización existente y los buzones se mueven a los servicios de Office 365. | La configuración de Exchange Online agrega la nueva región alemana local a la organización de transición. Esta región de servicios de Office 365 se establece como predeterminada, lo que permite al servicio de equilibrio de carga interno redistribuir buzones a la región predeterminada adecuada en los servicios de Office 365. En esta transición, los usuarios de ambos lados (servicios de Alemania u Office 365) están en la misma organización y pueden usar cualquier extremo de dirección URL. |  Exchange en línea | Si se ha migrado un buzón de usuario pero no se ha migrado un buzón de administrador, o viceversa, los administradores no podrán ejecutar **Set-UserPhoto**, un cmdlet de PowerShell. En esta situación, un administrador debe pasar una cadena adicional durante la configuración de la conexión `ConnectionUri` mediante la sintaxis siguiente: <br><br> `https://outlook.office.de/PowerShell-LiveID?email=<user_email>` <br><br> donde es el marcador de posición del identificador de correo electrónico del usuario cuya foto debe `<user_email>` cambiarse mediante **Set-UserPhoto**. |
 |||||
 
 Si usa una implementación híbrida local:
@@ -61,27 +61,6 @@ Si usa una implementación híbrida local:
 |:-------|:-----|:-------|:-------|
 |Detenga o elimine los movimientos de incorporación u offboarding de los buzones.  | Esto garantiza que las solicitudes de movimiento no fallen con un error. | Clientes de Exchange Online con implementaciones híbridas (locales) | Acción necesaria. Si no lo hace, puede producirse un error en el servicio o en clientes de software. |
 |||||
-
-### <a name="dynamics-phase-8-of-9"></a>Dynamics (fase 8 de 9)
-
-| Pasos | Descripción | Se aplica a | Impacto |
-|:-------|:-----|:-------|:-------|
-| Recursos de Microsoft Dynamics | Los clientes con Microsoft Dynamics estarán contratados por Ingeniería o FastTrack para realizar la transición de Dynamics a la instancia de servicios de Office 365.* | Clientes de Microsoft Dynamics 365 | - Después de la migración, el administrador valida la organización. <br><br> - El administrador modifica los flujos de trabajo según sea necesario. <br><br> - El administrador borra el modo AdminOnly según corresponda. <br><br> - El administrador cambia el tipo de organización de _Espacio aislado_, según corresponda <br><br> - Notificar a los usuarios finales de la nueva dirección URL para obtener acceso a la instancia (org). <br><br> - Actualizar las conexiones entrantes a la nueva dirección URL del extremo. <br><br> - El servicio Dynamics no estará disponible para los usuarios durante la transición. <br><br> - Los usuarios deben validar el estado de la organización y las características después de la migración de cada organización.  |
-|||||
-
-\* (i) Los clientes con Microsoft Dynamics 365 deben tomar medidas en este escenario de migración según se define en el proceso de migración proporcionado. (ii) Si el cliente no toma medidas, Microsoft no podrá completar la migración. (iii) Cuando Microsoft no puede completar la migración debido a la inacción del cliente, la suscripción del cliente expirará el 29 de octubre de 2021. 
-
-
-### <a name="power-bi-phase-8-of-9"></a>Power BI (fase 8 de 9)
-
-| Pasos | Descripción | Se aplica a | Impacto |
-|:-------|:-----|:-------|:-------|
-| Migración de recursos de Power BI | Los clientes con Microsoft Power BI serán contratados por Ingeniería o FastTrack después de desencadenar manualmente una herramienta de migración de PBI existente para realizar la transición de Power BI a la instancia de servicios de Office 365.\*\* | Clientes de Microsoft Power BI | - Los siguientes elementos de Power BI _no se_ transiciónrán y tendrán que volver a crearse: <br><br> - Conjuntos de datos en tiempo real (por ejemplo, conjuntos de datos de streaming o inserción). <br> - Configuración de puerta de enlace de datos local de Power BI y origen de datos. <br> - Los informes creados sobre los conjuntos de datos en tiempo real no estarán disponibles después de la migración y deben volver a crearse. <br><br> - Los servicios de Power BI no estarán disponibles para los usuarios durante la transición. La indisponibilidad del servicio no debe ser superior a 24 horas. <br><br> - Los usuarios tendrán que volver a configurar los orígenes de datos y sus puertas de enlace de datos locales con el servicio Power BI después de la migración.  Hasta que lo hagan, los usuarios no podrán usar estos orígenes de datos para realizar actualizaciones programadas o consultas directas en estos orígenes de datos. <br><br> - No se pueden migrar las capacidades y las áreas de trabajo premium. Los clientes deben eliminar todas las capacidades antes de la migración y volver a crearlas después de la migración. Vuelva a mover las áreas de trabajo a las capacidades deseadas.  |
-|||||
-
-\*\* (i) Los clientes con Microsoft Power BI deben tomar medidas en este escenario de migración, tal como se define en el proceso de migración proporcionado. (ii) Si el cliente no toma medidas, Microsoft no podrá completar la migración. (iii) Cuando Microsoft no puede completar la migración debido a la inacción del cliente, la suscripción del cliente expirará el 29 de octubre de 2021. 
-
-
 
 ## <a name="during-migration"></a>Durante la migración
 
@@ -115,18 +94,18 @@ Para exhibición de documentos electrónicos:
 
 ### <a name="azure-ad-phase-9-of-9"></a>Azure AD (fase 9 de 9)
 
-Para híbrido:
+Para clientes híbridos de Azure:
 
 | Pasos | Descripción | Se aplica a | Impacto |
 |:-------|:-----|:-------|:-------|
 | Actualice Azure AD Connect. | Una vez completado el recorte a Azure AD, la organización usa completamente los servicios de Office 365 y ya no está conectada a Microsoft Cloud Deutschland. En este momento, el cliente debe asegurarse de que el proceso de sincronización delta se ha finalizado y, después, cambiar el valor de cadena de `AzureInstance` 3 (Microsoft Cloud Deutschland) a 0 en la ruta de acceso del Registro `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` . | Organizaciones híbridas conectadas a Azure AD | Cambie el valor de `AzureInstance` , la clave del Registro. Si no lo hace, los objetos no se sincronizarán después de que los puntos de conexión de Microsoft Cloud Deutschland ya no estén disponibles. |
 |||||
 
-Para la autenticación federada:
+Para clientes que utilizan la autenticación federada:
 
 | Pasos | Descripción | Se aplica a | Impacto |
 |:-------|:-----|:-------|:-------|
-| Quitar confianzas de usuario de confianza de Microsoft Cloud Deutschland AD FS. | Una vez completado el recorte a Azure AD, la organización usa completamente los servicios de Office 365 y ya no está conectada a Microsoft Cloud Deutschland. En este punto, el cliente debe quitar la confianza de usuario de confianza a los puntos de conexión de Microsoft Cloud Deutschland. Esto solo se puede hacer cuando ninguna aplicación del cliente apunta a puntos de conexión de Microsoft Cloud Deutschland cuando Azure AD se aprovecha como proveedor de identidades (IdP). | Organizaciones de autenticación federada | Ninguna. |
+| Quitar confianzas de usuario de confianza de Microsoft Cloud Deutschland AD FS. | Una vez completado el recorte a Azure AD, la organización usa completamente los servicios de Office 365 y ya no está conectada a Microsoft Cloud Deutschland. En este punto, el cliente debe quitar la confianza de usuario de confianza a los puntos de conexión de Microsoft Cloud Deutschland. Esto solo se puede hacer cuando ninguna aplicación del cliente apunta a puntos de conexión de Microsoft Cloud Deutschland cuando Azure AD se aprovecha como proveedor de identidades (IdP). | Organizaciones de autenticación federada | Ninguno. |
 |||||
 
 Para Azure AD:
@@ -136,7 +115,7 @@ Para Azure AD:
 | Las solicitudes para unirse a un grupo de Azure AD en los últimos 30 días antes de la migración tendrán que volver a solicitarse si la solicitud original no se aprobó. | Los clientes del usuario final tendrán que usar el panel de Access para enviar una solicitud para unirse de nuevo a un grupo de Azure AD si dichas solicitudes no se aprobaron en los últimos 30 días antes de la migración. | Usuarios finales cuyas solicitudes de aprobación de grupo de Azure AD no se aprobaron en los últimos 30 días antes de la migración |  Como usuario final: <ol><li>Vaya al [panel De acceso](https://account.activedirectory.windowsazure.com/r#/joinGroups).</li><li>Busque un grupo de Azure AD para el que la aprobación de pertenencia estaba pendiente en 30 días antes de la migración.</li><li>Solicitar unirse de nuevo al grupo de Azure AD.</li></ol> Las solicitudes para unirse a un grupo que están activos menos de 30 días antes de la migración no se pueden aprobar, a menos que se vuelvan a solicitar después de la migración. |
 |||||
 
-Para DNS:
+Para zonas DNS administradas por el cliente:
 
 | Pasos | Descripción | Se aplica a | Impacto |
 |:-------|:-----|:-------|:-------|
@@ -155,7 +134,7 @@ Para servicios de terceros para puntos de conexión de servicios de Office 365:
 | Pasos | Descripción | Se aplica a | Impacto |
 |:-------|:-----|:-------|:-------|
 | Vuelva a publicar flujos de trabajo de SharePoint 2013. | En el trabajo previo a la migración, se redujo el número de flujos de trabajo de SharePoint 2013. Ahora, una vez completada la migración, el cliente puede volver a publicar los flujos de trabajo. | Todos los clientes de Office | Se trata de una acción necesaria. Si no lo hace, puede provocar confusión del usuario y llamadas al servicio de ayuda. |
-| Compartir elementos a través de Outlook | El uso compartido de elementos a través de Outlook ya no funciona después de la transferencia del espacio empresarial. | SharePoint Online y OneDrive para la Empresa | - En SharePoint Online y OneDrive para la Empresa, puede compartir elementos a través de Outlook. Después de presionar el botón de Outlook, se crea un vínculo que se puede compartir y se inserta en un nuevo mensaje en Outlook Web App. <br><br> - Después de la succión del espacio empresarial, este método de uso compartido no funcionará. Reconocemos que se trata de un problema conocido. Sin embargo, dado que esta característica de Outlook está en la ruta de desuso, no se planea solucionar el problema hasta que se desaproteje. |
+| Compartir elementos a través de Outlook | El uso compartido de elementos a través de Outlook ya no funciona después de la transferencia del espacio empresarial. | SharePoint en línea y OneDrive para Empresas | - En SharePoint Online y OneDrive para la Empresa, puede compartir elementos a través de Outlook. Después de presionar el botón de Outlook, se crea un vínculo que se puede compartir y se inserta en un nuevo mensaje en Outlook Web App. <br><br> - Después de la succión del espacio empresarial, este método de uso compartido no funcionará. Reconocemos que se trata de un problema conocido. Sin embargo, dado que esta característica de Outlook está en la ruta de desuso, no se planea solucionar el problema hasta que se desaproteje. |
 
 
 ### <a name="exchange-online-phase-5-of-9"></a>Exchange Online (fase 5 de 9)
@@ -170,8 +149,8 @@ Para exhibición de documentos electrónicos:
 
 | Pasos | Descripción | Se aplica a | Impacto |
 |:-------|:-----|:-------|:-------|
-|  Todas las ubicaciones de SharePoint Online, OneDrive para la Empresa y Exchange Online se han migrado junto con el Centro de seguridad y cumplimiento (SCC). | Toda la actividad de exhibición de documentos electrónicos debe ejecutarse desde el espacio empresarial mundial. Las búsquedas ahora serán 100% correctas.  Cualquier error o error debe seguir los canales de soporte técnico normales. | Todos los clientes que usan eDiscovery | Ninguna. |
-| Quitar directivas de retención de toda la organización que se crearon durante los pasos previos a la migración | Los clientes pueden quitar las directivas de retención de toda la organización que se crearon durante el trabajo previo a la migración de los clientes. | Todos los clientes que aplicaron una directiva de retención como parte de los pasos previos a la migración. | Ninguna. |
+|  Todas las ubicaciones de SharePoint Online, OneDrive para la Empresa y Exchange Online se han migrado junto con el Centro de seguridad y cumplimiento (SCC). | Toda la actividad de exhibición de documentos electrónicos debe ejecutarse desde el espacio empresarial mundial. Las búsquedas ahora serán 100% correctas.  Cualquier error o error debe seguir los canales de soporte técnico normales. | Todos los clientes que usan eDiscovery | Ninguno. |
+| Quitar directivas de retención de toda la organización que se crearon durante los pasos previos a la migración | Los clientes pueden quitar las directivas de retención de toda la organización que se crearon durante el trabajo previo a la migración de los clientes. | Todos los clientes que aplicaron una directiva de retención como parte de los pasos previos a la migración. | Ninguno. |
 |||||
 
 

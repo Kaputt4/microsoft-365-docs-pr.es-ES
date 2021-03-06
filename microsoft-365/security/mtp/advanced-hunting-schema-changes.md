@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cd06286083297d0930270868b99a14f8ddb2f4b2
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 31a2f647351c05842f36198ad05b149086b53b1f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461672"
+ms.locfileid: "50509307"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Esquema de búsqueda avanzada: cambios de nomenclatura
 
@@ -76,7 +76,7 @@ Los cambios de nomenclatura se aplican automáticamente a las consultas que se g
 
 ## <a name="february-2021"></a>Febrero de 2021
 
-1. En las [tablas EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) y [EmailEvents, desusó](advanced-hunting-emailevents-table.md) las columnas y las `MalwareFilterVerdict` `PhishFilterVerdict` reemplazó por la `ThreatTypes` columna. También desusó las `MalwareDetectionMethod` columnas y `PhishDetectionMethod` las reemplazó por la `DetectionMethods` columna. Esta racionalización nos permite proporcionar más información debajo de las nuevas columnas. La asignación se proporciona a continuación.
+1. En las [tablas EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) y [EmailEvents,](advanced-hunting-emailevents-table.md) las columnas y se han `MalwareFilterVerdict` reemplazado por la `PhishFilterVerdict` `ThreatTypes` columna. Las `MalwareDetectionMethod` columnas y también se `PhishDetectionMethod` reemplazaron por la `DetectionMethods` columna. Esta racionalización nos permite proporcionar más información debajo de las nuevas columnas. La asignación se proporciona a continuación.
 
 | Nombre de tabla | Nombre de columna original | Nuevo nombre de columna | Motivo del cambio
 |--|--|--|--|
@@ -86,11 +86,11 @@ Los cambios de nomenclatura se aplican automáticamente a las consultas que se g
 | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Incluir más tipos de amenazas |
 
 
-2. En las `EmailAttachmentInfo` tablas `EmailEvents` y, agregamos la columna `ThreatNames` para proporcionar más información sobre la amenaza de correo electrónico. Esta columna contiene valores como Correo no deseado o Phish.
+2. En las `EmailAttachmentInfo` tablas `EmailEvents` y, la `ThreatNames` columna se agregó para proporcionar más información sobre la amenaza de correo electrónico. Esta columna contiene valores como Correo no deseado o Phish.
 
-3. En la [tabla DeviceInfo,](advanced-hunting-deviceinfo-table.md) reemplazamos la `DeviceObjectId` columna por `AadDeviceId` basándonos en los comentarios de los clientes.
+3. En la [tabla DeviceInfo,](advanced-hunting-deviceinfo-table.md) la `DeviceObjectId` columna se reemplazó por la `AadDeviceId` columna en función de los comentarios de los clientes.
 
-4. En la [tabla DeviceEvents,](advanced-hunting-deviceevents-table.md) actualizamos varios nombres ActionType para reflejar mejor la descripción de la acción. Los detalles se pueden encontrar a continuación.
+4. En la [tabla DeviceEvents,](advanced-hunting-deviceevents-table.md) se modificaron varios nombres ActionType para reflejar mejor la descripción de la acción. Los detalles de los cambios se pueden encontrar a continuación.
 
 | Nombre de tabla | Nombre ActionType original | Nuevo nombre actionType | Motivo del cambio
 |--|--|--|--|
