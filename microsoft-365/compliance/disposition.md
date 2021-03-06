@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, independientemente de si usa una revisión para eliminación o el contenido se elimina automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: 9c2e9055d0468270df4e46fe39115708762052f3
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 092067e676c1cbae3fae6e9d6a5ff77099ce4631
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682673"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461885"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -52,15 +52,13 @@ Asegúrese de que la auditoría está activada al menos un día antes de la prim
 
 ## <a name="disposition-reviews"></a>Revisiones para eliminación
 
-Cuando el contenido llega al final de su período de retención, hay varios motivos por los que es posible que quiera revisar el contenido para decidir si se puede borrar de forma segura ("eliminar"). Por ejemplo, puede que necesite:
+Cuando el contenido llega al final de su período de retención, hay varios motivos por los que es posible que quiera revisar el contenido y confirmar si se puede borrar de forma permanente ("eliminar"). Por ejemplo, en vez de borrar el contenido, podría necesitar:
   
 - Suspender la eliminación de contenido relevante en caso de litigio o una auditoría.
-    
-- Quitar el contenido de la lista de eliminación para almacenarlo en un archivo, si el contenido tiene un valor histórico o para investigación.
-    
+
 - Asignar un periodo de retención diferente al contenido, por ejemplo, porque las configuraciones de retención originales eran una solución temporal o provisional.
-    
-- Devolver el contenido a los clientes o transferirlo a otra organización.
+
+- Mover el contenido desde su ubicación existente a una ubicación de archivo. Por ejemplo, si ese contenido tiene valor histórico o de investigación.
 
 Cuando se activa una revisión para eliminación al final del período de retención:
   

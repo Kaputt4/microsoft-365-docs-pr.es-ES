@@ -19,16 +19,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 3d317a0a26d69eb46b8bb84253571b7d14f9836b
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: a716e3dd8138d5f7f9b5f8d8abbdb401211db9ae
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242494"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461875"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+
+> [!NOTE]
+> Si ve mensajes sobre directivas de retención en sus aplicaciones, contacte con el departamento de TI para obtener información sobre cómo lo han configurado para usted. Si estos mensajes son para el chat de Teams o los mensajes de canal, consulte [Mensajes de Teams sobre la retención de directivas](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+>
+> La información de esta página es para administradores de TI que pueden crear directivas y etiquetas de retención por motivos de cumplimiento.
 
 Para la mayoría de las organizaciones, el volumen y la complejidad de los datos se incrementa diariamente: correo electrónico, documentos, mensajes instantáneos y mucho más. Administrar o gobernar esta información es importante, ya que necesita:
   
