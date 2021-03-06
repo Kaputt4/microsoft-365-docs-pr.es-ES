@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 02f12174ef3b8a55f9642bba41c845952b1c1c48
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 141eb16ae77c44c51358c07a74f5050eb07dc26f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950549"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509283"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Introducción al Escritorio administrado de Microsoft
 
@@ -21,7 +21,7 @@ Ahora que se ha inscrito en el servicio, siga estos pasos para confirmar los con
 > Este es el orden recomendado para seguir, pero tiene cierta flexibilidad en la secuencia.
 
 1. [Agregar y verificar los contactos de administración en el portal de administración ](add-admin-contacts.md)
-2. [Ajustar el acceso condicional](conditional-access.md)
+2. [Ajustar la configuración después de la inscripción](conditional-access.md)
 3. [Asignar licencias](assign-licenses.md)
 4. [Desplegar el portal de empresa de Intune](company-portal.md)
 5. [Habilitar Enterprise State Roaming](enterprise-state-roaming.md)

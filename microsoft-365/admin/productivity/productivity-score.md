@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Información general de Puntuación de productividad de Microsoft
-ms.openlocfilehash: 9f3e24d4af6858f106cde937940d5f0be1a4f85f
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 0ce25175b3307e986c079c1614e38e8d87828e04
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988073"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509091"
 ---
 # <a name="microsoft-productivity-score"></a>Puntuación de productividad de Microsoft 
 
@@ -129,6 +129,7 @@ Las páginas de detalles son:
 - [Movilidad: experiencias de personas](mobility.md)
 - [Trabajo en equipo: experiencias de personas](teamwork.md)
 - [Estado de Aplicaciones de Microsoft 365: experiencias tecnológicas](apps-health.md)
+- [Análisis de puntos de conexión](https://docs.microsoft.com/mem/analytics/productivity-score)
 
 ## <a name="business-continuity-special-report"></a>Informe especial de continuidad empresarial
 

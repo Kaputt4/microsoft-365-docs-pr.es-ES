@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información sobre cómo implementar equipos con la protección de datos con un nivel de confidencialidad alto.
-ms.openlocfilehash: 2679a8a0bd8cf5cc3d35d517e8a44921fc4fdbc1
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 7e746ebc81d1ccd9aea2953fd42004715f8d7819
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921139"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509271"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configuración de equipos con protección de datos con un nivel de confidencialidad alto
 
@@ -42,7 +42,7 @@ El nivel de confidencialidad alto ofrece las siguientes protecciones adicionales
 
 Según la naturaleza de su empresa, es posible que quiera habilitar o no el uso compartido de invitados para equipos que contienen datos con un nivel de confidencialidad alto. Si tiene previsto colaborar con personas ajenas a su organización en el equipo, le recomendamos que habilite el uso compartido de invitados. Microsoft 365 incluye una variedad de características de seguridad y cumplimiento para ayudarle a compartir contenido confidencial de forma segura. Por lo general, se trata de una opción más segura que enviar correo directamente a las personas de fuera de su organización.
 
-Para más información sobre el uso compartido con invitados de forma segura, vea los recursos siguientes:
+Para más información sobre el uso compartido de invitados de forma segura, vea los recursos siguientes:
 
 - [Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
 - [Crear un entorno seguro de uso compartido para invitados](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
@@ -79,7 +79,7 @@ Crear una etiqueta de confidencialidad
 17. Haga clic en **Siguiente**.
 18. En la página **Definir el uso compartido externo y el acceso al dispositivo**, seleccione **Controlar el uso compartido externo en sitios de SharePoint etiquetados**.
 19. En **El contenido se puede compartir con**, elija **Invitados nuevos y existentes** si va a permitir el acceso de invitado o **Solo los usuarios de su organización** en caso contrario.
-20. En **Equipos no administrados**, elija **Bloquear el acceso**.
+20. En **Equipos no administrados**, elija **Bloquear el acceso**. (Si está permitiendo invitados y no tienen dispositivos administrados, es posible que quiera elegir **Permitir acceso limitado, solo Web**).
 21. Haga clic en **Siguiente**.
 22. En la página **Etiquetado automático para las columnas de la base de datos**, haga clic en **Siguiente**.
 23. Haga clic en **Crear etiqueta** y después en **Listo**.
