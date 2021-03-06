@@ -231,6 +231,8 @@
               href: productivity/meetings.md
             - name: Estado de las Aplicaciones de Microsoft 365
               href: productivity/apps-health.md
+            - name: Análisis de puntos de conexión
+              href: 'https://docs.microsoft.com/mem/analytics/productivity-score'
         - name: Cambiar la información de contacto de la organización
           href: manage/change-address-contact-and-more.md
         - name: Actualizar la información de contacto de administrador
