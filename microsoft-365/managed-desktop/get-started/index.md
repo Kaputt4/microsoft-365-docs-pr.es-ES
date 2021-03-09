@@ -6,25 +6,27 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 141eb16ae77c44c51358c07a74f5050eb07dc26f
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 49cf658c7d146f75d54d1f74f0034db64c3cc5dc
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509283"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572557"
 ---
-# <a name="get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="a9424-104">Introducción al Escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="a9424-104">Get started with Microsoft Managed Desktop</span></span>
+# <a name="get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="028c0-104">Introducción al Escritorio administrado de Microsoft</span><span class="sxs-lookup"><span data-stu-id="028c0-104">Get started with Microsoft Managed Desktop</span></span>
 
-<span data-ttu-id="a9424-105">Ahora que se ha inscrito en el servicio, siga estos pasos para confirmar los contactos de administración, ajustar la configuración de acceso condicional, asignar licencias a usuarios, habilitar Enterprise State Roaming, obtener y configurar dispositivos, preparar usuarios e implementar aplicaciones en los dispositivos.</span><span class="sxs-lookup"><span data-stu-id="a9424-105">Now that you've enrolled in the service, follow these steps to confirm admin contacts, adjust conditional access settings, assign licenses to users, enable Enterprise State Roaming,  obtain and set up devices, prepare users, and deploy apps to devices.</span></span>
+<span data-ttu-id="028c0-105">Ahora qu está listo para inscribirse, abra [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya a **Administración de espacio empresarial**.</span><span class="sxs-lookup"><span data-stu-id="028c0-105">Now that you’re ready to enroll, open [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to **Tenant Administration**.</span></span> <span data-ttu-id="028c0-106">Seleccione **Inscripción de espacio empresarial** en la subsección **Escritorio administrado de Microsoft** y, a continuación, siga el asistente para inscribir su espacio empresarial en el Escritorio administrado de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="028c0-106">Select **Tenant enrollment** under the **Microsoft Managed Desktop** subsection then follow the wizard to enroll your tenant with Microsoft Managed Desktop.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="a9424-106">Este es el orden recomendado para seguir, pero tiene cierta flexibilidad en la secuencia.</span><span class="sxs-lookup"><span data-stu-id="a9424-106">This is the recommended order to follow, but you do have some flexibility in the sequence.</span></span>
+> <span data-ttu-id="028c0-107">Debe iniciar sesión como Administrador global para completar la inscripción.</span><span class="sxs-lookup"><span data-stu-id="028c0-107">You must be logged in as a Global Administrator to complete enrollment.</span></span> <span data-ttu-id="028c0-108">Para más información, consulte [acceder al portal de administrador](access-admin-portal.md).</span><span class="sxs-lookup"><span data-stu-id="028c0-108">For more information, see [access the admin portal](access-admin-portal.md) for details.</span></span>
 
-1. [<span data-ttu-id="a9424-107">Agregar y verificar los contactos de administración en el portal de administración </span><span class="sxs-lookup"><span data-stu-id="a9424-107">Add and verify admin contacts in the Admin portal</span></span>](add-admin-contacts.md)
-2. [<span data-ttu-id="a9424-108">Ajustar la configuración después de la inscripción</span><span class="sxs-lookup"><span data-stu-id="a9424-108">Adjust settings after enrollment</span></span>](conditional-access.md)
-3. [<span data-ttu-id="a9424-109">Asignar licencias</span><span class="sxs-lookup"><span data-stu-id="a9424-109">Assign licenses</span></span>](assign-licenses.md)
-4. [<span data-ttu-id="a9424-110">Desplegar el portal de empresa de Intune</span><span class="sxs-lookup"><span data-stu-id="a9424-110">Deploy Intune Company Portal</span></span>](company-portal.md)
-5. [<span data-ttu-id="a9424-111">Habilitar Enterprise State Roaming</span><span class="sxs-lookup"><span data-stu-id="a9424-111">Enable Enterprise State Roaming</span></span>](enterprise-state-roaming.md)
-6. [<span data-ttu-id="a9424-112">Instalar dispositivos</span><span class="sxs-lookup"><span data-stu-id="a9424-112">Set up devices</span></span>](set-up-devices.md)
-7. [<span data-ttu-id="a9424-113">Prepare a los usuarios para que usen los dispositivos</span><span class="sxs-lookup"><span data-stu-id="a9424-113">Get your users ready to use devices</span></span>](get-started-devices.md)
-8. [<span data-ttu-id="a9424-114">Implementar aplicaciones</span><span class="sxs-lookup"><span data-stu-id="a9424-114">Deploy apps</span></span>](deploy-apps.md)
+<span data-ttu-id="028c0-109">Una vez finalizada la inscripción, siga los siguientes pasos para configurar el servicio.</span><span class="sxs-lookup"><span data-stu-id="028c0-109">Once you’ve finished enrollment, follow the steps below to configure the service.</span></span> <span data-ttu-id="028c0-110">Este es el orden recomendado para seguir, pero tiene cierta flexibilidad en la secuencia.</span><span class="sxs-lookup"><span data-stu-id="028c0-110">This is the recommended order to follow, but you do have some flexibility in the sequence.</span></span> 
+
+1. [<span data-ttu-id="028c0-111">Agregar y verificar los contactos de administración en el portal de administración </span><span class="sxs-lookup"><span data-stu-id="028c0-111">Add and verify admin contacts in the Admin portal</span></span>](add-admin-contacts.md)
+2. [<span data-ttu-id="028c0-112">Ajustar la configuración después de la inscripción</span><span class="sxs-lookup"><span data-stu-id="028c0-112">Adjust settings after enrollment</span></span>](conditional-access.md)
+3. [<span data-ttu-id="028c0-113">Asignar licencias</span><span class="sxs-lookup"><span data-stu-id="028c0-113">Assign licenses</span></span>](assign-licenses.md)
+4. [<span data-ttu-id="028c0-114">Desplegar el portal de empresa de Intune</span><span class="sxs-lookup"><span data-stu-id="028c0-114">Deploy Intune Company Portal</span></span>](company-portal.md)
+5. [<span data-ttu-id="028c0-115">Habilitar Enterprise State Roaming</span><span class="sxs-lookup"><span data-stu-id="028c0-115">Enable Enterprise State Roaming</span></span>](enterprise-state-roaming.md)
+6. [<span data-ttu-id="028c0-116">Instalar dispositivos</span><span class="sxs-lookup"><span data-stu-id="028c0-116">Set up devices</span></span>](set-up-devices.md)
+7. [<span data-ttu-id="028c0-117">Prepare a los usuarios para que usen los dispositivos</span><span class="sxs-lookup"><span data-stu-id="028c0-117">Get your users ready to use devices</span></span>](get-started-devices.md)
+8. [<span data-ttu-id="028c0-118">Implementar aplicaciones</span><span class="sxs-lookup"><span data-stu-id="028c0-118">Deploy apps</span></span>](deploy-apps.md)
