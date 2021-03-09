@@ -9,22 +9,21 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre dónde enviar el pago de la suscripción.
+description: Obtén información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ad2356e1e1437ee6a6d727615922dc63ae7bae95
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 66b617f3812fdc73120471692c877bd257809dbb
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637936"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549585"
 ---
 # <a name="payment-information-for-bahamas"></a>Información de pago para Bahamas
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pagar solo en USD y hacer referencia a los números de factura en la remesa de la factura.
+Pague solo en USD y haga referencia a los números de factura en la remesa de factura.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 

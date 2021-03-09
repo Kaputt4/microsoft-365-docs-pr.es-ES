@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 31a2f647351c05842f36198ad05b149086b53b1f
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 948c8bb5c1e6b67f6de355bc532c6b14d5a83933
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509307"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551877"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Esquema de búsqueda avanzada: cambios de nomenclatura
 
@@ -98,7 +98,7 @@ Los cambios de nomenclatura se aplican automáticamente a las consultas que se g
 | `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Comentarios del cliente |
 | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Comentarios del cliente |
 | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Comentarios del cliente |
-| `DeviceEvents` | `AntivirusDetection` | `EdrBlock` | Comentarios del cliente |
+
 
 
 

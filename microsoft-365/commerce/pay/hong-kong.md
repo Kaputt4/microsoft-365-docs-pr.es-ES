@@ -9,22 +9,21 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre dónde enviar el pago de la suscripción.
+description: Obtén información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9d0b6cb118005ae7e3ae8e110a436faa9829e4b5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dcab44878f1627f17a20859f92eec2964ee0b4a8
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647260"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550965"
 ---
 # <a name="payment-information-for-hong-kong"></a>Información de pago para Hong Kong
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Siga las instrucciones de pago de la factura y haga referencia a los números de factura en la remesa de pago.
+Siga las instrucciones de pago de la factura y los números de factura de referencia en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
@@ -33,4 +32,4 @@ Siga las instrucciones de pago de la factura y haga referencia a los números de
 **Código de sucursal:** 848  
 **Código SWIFT:** HSBCHKHH  
 **Número de cuenta:** 848342259001    
-**Nombre de cuenta:** Microsoft Payments Pte Ltd-Payco Invoice
+**Nombre de cuenta:** Microsoft Payments Pte Ltd-Payco Factura
