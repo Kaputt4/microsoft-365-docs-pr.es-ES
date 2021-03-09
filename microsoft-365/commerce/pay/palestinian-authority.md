@@ -1,5 +1,5 @@
 ---
-title: Información de pago de la Autoridad Desaoy de Israel
+title: Información de pago de la Autoridad Palestina
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre dónde enviar el pago de la suscripción.
+description: Obtén información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5e87b4e2378facaeb2aec339a99516fa991c6a73
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e67cf964734103b93ffa4295edb3e213101acf03
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648856"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542841"
 ---
-# <a name="payment-information-for-palestinian-authority"></a>Información de pago de la Autoridad Desaoy de Israel
+# <a name="payment-information-for-palestinian-authority"></a>Información de pago de la Autoridad Palestina
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.
+Pague solo en USD y haga referencia a los números de factura en su remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Bank, Londres  
-**Código SWIFT:** GBGB2L  
+**Banco:** Citibank, Londres  
+**Código SWIFT:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
 **Número de cuenta:** 12510049  
 **Nombre de cuenta:** MICROSOFT  

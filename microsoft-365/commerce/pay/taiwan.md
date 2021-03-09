@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre dónde enviar el pago de la suscripción.
+description: Obtén información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 015ae550440db87215148e6d65b98f64fea54963
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4b47325f466da829ff35af5f7354d19ccfc2129b
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648376"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542483"
 ---
 # <a name="payment-information-for-taiwan"></a>Información de pago para Taiwán
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md). 
 
-Pagar en N.T. Solo dólares y números de factura de referencia en la remesa de pago.
+Por favor, pague en N.T. Solo dólares y haga referencia a los números de factura en su remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco de beneficiarios:** BANK TAIWAN LIMITED  
+**Banco beneficiario:** CITIBANK TAIWAN LIMITED  
 **Código bancario y código de sucursal:** 0210018  
-**Código SWIFT:** TXTWTX  
+**Código SWIFT:** CITITWTX  
 **Número de cuenta:** 5038946139  
 **Nombre de cuenta:** MICROSOFT TAIWAN CORPORATION    

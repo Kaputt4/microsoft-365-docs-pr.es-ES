@@ -9,26 +9,25 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre dónde enviar el pago de la suscripción.
+description: Obtén información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 709a908af6020b6b9ce43097abef1bcfddb04e01
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e158105380949a021598a5b5fbd7395cfc73bfbf
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648340"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542531"
 ---
 # <a name="payment-information-for-thailand"></a>Información de pago para Tailandia
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pagar solo en USD y hacer referencia a los números de factura en la remesa de la factura.
+Pague solo en USD y haga referencia a los números de factura en la remesa de factura.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Bank, Singapur  
-**CÓDIGO SWIFT:** DAGGSG  
+**Banco:** Citibank, Singapur  
+**CÓDIGO SWIFT:** CITISGSG  
 **Número de cuenta:** 0-817543-138  
 **Nombre de cuenta:** MICROSOFT REGIONAL SALES CORP  

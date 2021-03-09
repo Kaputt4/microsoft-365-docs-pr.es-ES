@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para las Islas Pitcairn
+title: Información de soporte técnico para islas Pitcairn
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b410b4452b462133e1217eb4c11c571964ab9ff4
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b13e310d08cc158ff70861c18c7ea47ac82fcfa7
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640324"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545025"
 ---
-# <a name="contact-support-for-pitcairn-islands"></a>Ponerse en contacto con el soporte técnico para las Islas Pitcairn
+# <a name="contact-support-for-pitcairn-islands"></a>Póngase en contacto con el soporte técnico para islas Pitcairn
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 

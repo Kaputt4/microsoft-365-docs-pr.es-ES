@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3154c0a84e4f9efe947a57a4ac646d916dc6c13a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 162aa205e7c58e5ea8c4b041e84e5863e5711701
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639208"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543981"
 ---
 # <a name="contact-support-for-timor-leste"></a>Póngase en contacto con el soporte técnico Timor-Leste
 
@@ -30,9 +29,9 @@ ms.locfileid: "48639208"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Portugués: Mon-Fri 9 p.m. a 5 a. m.
+Portugués: Mon-Fri 9 PM-5 AM
 
-Inglés: Mon-Fri 9 p.m. a 5 a. m.
+Inglés: Mon-Fri 9 PM-5 AM
 
 ### <a name="technical-support"></a>Soporte técnico:
 

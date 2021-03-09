@@ -9,30 +9,29 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 47e865428f26e605f626092dbdcab0504baaf610
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3c22e1830567c2063c6ba05eca4276038feab04c
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640540"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545229"
 ---
-# <a name="contact-support-for-pakistan"></a>Ponerse en contacto con el soporte técnico para Pakistán
+# <a name="contact-support-for-pakistan"></a>Póngase en contacto con el soporte técnico de Pakistán
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 021 111 674 357
 
-Selección de la opción 3
+Seleccionar la opción 3
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Inglés: Mon-Fri 10:00 a 18:00
+Inglés: Mon-Fri 10 AM-6 PM
 
 ### <a name="technical-support"></a>Soporte técnico:
 

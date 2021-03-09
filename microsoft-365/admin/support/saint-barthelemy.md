@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para San Abahelé
+title: Información de soporte técnico para San Bartolomé
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 12c74b0ff6554261239f5a738d038f614c3cc106
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 53e453e6bb96666c4a5eda30efad1c30c17b71f5
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640072"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544785"
 ---
-# <a name="contact-support-for-saint-barthelemy"></a>Ponerse en contacto con el soporte técnico de San Ándes
+# <a name="contact-support-for-saint-barthelemy"></a>Póngase en contacto con el soporte técnico de San Bartolomé
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -30,13 +29,13 @@ ms.locfileid: "48640072"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Francés: Mon-Fri 16:00 a 12:00
+Francés: Mon-Fri 4 AM-12 PM
 
-Inglés: Mon-Fri 16:00 a 12:00
+Inglés: Mon-Fri 4 AM-12 PM
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Francés: Mon-Fri 3:00 a 16:00
+Francés: Mon-Fri 3 AM-4 PM
 
 Inglés: 24 horas al día, 7 días a la semana
 

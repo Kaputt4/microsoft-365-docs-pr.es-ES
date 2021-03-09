@@ -9,42 +9,41 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8a815c4605094b10d210e35ab5eabb4b7f7fd9ca
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: aa3250f530fd37454f28e22457c731264e0bfdbb
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640864"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545673"
 ---
-# <a name="contact-support-for-morocco"></a>Ponerse en contacto con el soporte técnico de Marruecos
+# <a name="contact-support-for-morocco"></a>Póngase en contacto con el soporte técnico de Marruecos
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 0801 000 809
 
-Selección de la opción 9
+Seleccionar la opción 9
 
-Escribir código 7700
+Escriba el código 7700
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Árabe: Sun-Thu 8:00 a 16:00
+Árabe: Sun-Thu 8 AM-4 PM
 
-Francés: Mon-Fri 8:00 a 16:00
+Francés: Mon-Fri 8 AM-4 PM
 
-Inglés: Mon-Fri 8:00 a 16:00
+Inglés: Mon-Fri 8 AM-4 PM
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Árabe: Sun-Thu 8:00 a 16:00
+Árabe: Sun-Thu 8 AM-4 PM
 
-Francés: Mon-Fri 7:00 a 20:00
+Francés: Mon-Fri 7 AM-8 PM
 
 Inglés: 24 horas al día, 7 días a la semana
 

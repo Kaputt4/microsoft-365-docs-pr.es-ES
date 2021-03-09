@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d87f85e8ccc826f7e87352fcb236a1d82ad6be09
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cfcc66e15a21971a8baa3546fb45fd013da94ce4
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640828"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545529"
 ---
-# <a name="contact-support-for-namibia"></a>Ponerse en contacto con el soporte técnico de Namibia
+# <a name="contact-support-for-namibia"></a>Póngase en contacto con el soporte técnico de Namibia
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 061 292 5016
 
-Selección de la opción 9
+Seleccionar la opción 9
 
-Escribir código 7705
+Escriba el código 7705
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:

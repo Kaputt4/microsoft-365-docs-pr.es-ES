@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para islas Turcos y Caicos
+title: Información de soporte técnico para islas turcas y caicos
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 924f097cbc07a1b1289cb1cf5efeb5ea41080683
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0c23823b76a6cdf262b43aef1a581f59d2c69b4e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638956"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543753"
 ---
-# <a name="contact-support-for-turks-and-caicos-islands"></a>Ponerse en contacto con el soporte técnico para islas Turcos y Caicos
+# <a name="contact-support-for-turks-and-caicos-islands"></a>Póngase en contacto con el soporte técnico para islas Turcas y Caicos
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para Emiratos Árabes Unidos
+title: Información de soporte técnico para EMI (Emiratos Árabes Unidos)
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 07df79c2225cece94fc70c97565481f1b627bb5a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: da2150d14328de83648f84913cf5edbb89a57ccc
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638896"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543597"
 ---
-# <a name="contact-support-for-uae-united-arab-emirates"></a>Ponerse en contacto con el soporte técnico de EAU (Emiratos Árabes Unidos)
+# <a name="contact-support-for-uae-united-arab-emirates"></a>Póngase en contacto con el soporte técnico de EMI (Emiratos Árabes Unidos)
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -30,13 +29,13 @@ ms.locfileid: "48638896"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Árabe: Sun-Thu 10:00 a 18:00
+Árabe: Sun-Thu 10 AM-6 PM
 
-Inglés: Mon-Fri 10:00 a 18:00
+Inglés: Mon-Fri 10 AM-6 PM
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Árabe: Sun-Thu 11:00 a 20:00
+Árabe: Sun-Thu 11 AM-8 PM
 
 Inglés: 24 horas al día, 7 días a la semana
 

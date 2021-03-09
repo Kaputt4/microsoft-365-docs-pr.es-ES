@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para la isla Norfolk
+title: Información de soporte técnico de Norfolk Island
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8daff97110ba9c13dd56a4da8d373340113a7924
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ff5170c9285b166ba11de169fdd7a6045b65a580
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640588"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545289"
 ---
-# <a name="contact-support-for-norfolk-island"></a>Ponerse en contacto con el soporte técnico para la isla Norfolk
+# <a name="contact-support-for-norfolk-island"></a>Póngase en contacto con el soporte técnico de Norfolk Island
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -30,7 +29,7 @@ ms.locfileid: "48640588"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Inglés: Mon-Fri 12 p.m. a 8 p. m.
+Inglés: Mon-Fri 12 PM-8 PM
 
 ### <a name="technical-support"></a>Soporte técnico:
 

@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cbe9db6e9c1ce4c3d98f1118a2e19da1314d4301
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 34389dce004a5908be0fe5e238ed8a4c40057ade
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639160"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543849"
 ---
-# <a name="contact-support-for-tokelau"></a>Ponerse en contacto con el soporte técnico de Tokelau
+# <a name="contact-support-for-tokelau"></a>Póngase en contacto con el soporte técnico de Tokelau
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -30,7 +29,7 @@ ms.locfileid: "48639160"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Inglés: Mon-Fri 14:00 a 10:00
+Inglés: Mon-Fri 2 PM-10 PM
 
 ### <a name="technical-support"></a>Soporte técnico:
 
