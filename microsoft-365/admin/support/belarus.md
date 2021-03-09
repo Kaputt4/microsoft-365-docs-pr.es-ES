@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 307822bb952d968ff16bf1313a656dcc85dca451
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b590a1fee8b3ac556d472afe71ce1dc45b8158b4
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643936"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548709"
 ---
-# <a name="contact-support-for-belarus"></a>Ponerse en contacto con el soporte técnico para Belarús
+# <a name="contact-support-for-belarus"></a>Póngase en contacto con el soporte técnico de Belarús
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -29,17 +28,17 @@ ms.locfileid: "48643936"
 
 Seleccionar la opción 9
 
-Escribir código 7707
+Escriba el código 7707
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Ruso: Mon-Fri 10 a. m. a 7 p. m. de Rusia
+Ruso: Mon-Fri 10 AM-7 PM Moscú
 
-Inglés: Mon-Fri 9:00 a 17:00 Londres
+Inglés: Mon-Fri 9 AM-5 PM London
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Ruso: Mon-Fri 7 a.m. a 8 p. m. de Rusia
+Ruso: Mon-Fri 7 AM-8 PM Moscú
 
 Inglés: 24 horas al día, 7 días a la semana

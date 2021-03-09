@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5babc628894e43788756a3df94bcddf11a83fa0e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9e0b2614012e8a9b122cadd2771fb5006550aee0
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638668"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549321"
 ---
-# <a name="contact-support-for-wallis-and-futuna"></a>Ponerse en contacto con el soporte técnico para Wallis y Futuna
+# <a name="contact-support-for-wallis-and-futuna"></a>Póngase en contacto con el soporte técnico para Wallis y Futuna
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -30,13 +29,13 @@ ms.locfileid: "48638668"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Francés: Sun-Fri 8 p.m. a 4 a.m.
+Francés: Sun-Fri 8 PM-4 AM
 
-Inglés: Sun-Fri 8 p.m. a 4 a.m.
+Inglés: Sun-Fri 8 PM-4 AM
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Francés: Mon-Fri 19:00 a 20:00
+Francés: Mon-Fri 7 PM-8 AM
 
 Inglés: 24 horas al día, 7 días a la semana
 

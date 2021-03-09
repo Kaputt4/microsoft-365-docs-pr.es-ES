@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0a331059a9b565b2c5de8b4104d6d578714adc92
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e9250b2829cb495a7aca341eeb772776afac5d25
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644176"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548901"
 ---
-# <a name="contact-support-for-aruba"></a>Ponerse en contacto con el soporte técnico de Aruba
+# <a name="contact-support-for-aruba"></a>Póngase en contacto con el soporte técnico de Aruba
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 

@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1a294fb38e0617dfc7ec5052d2a91359ec53d975
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3a07a0ad62b3553476ac682aac225b3c4a13d2a9
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641697"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546405"
 ---
-# <a name="contact-support-for-kosovo"></a>Ponerse en contacto con el soporte técnico de Kosovo
+# <a name="contact-support-for-kosovo"></a>Póngase en contacto con el soporte técnico de Kosovo
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -30,7 +29,7 @@ ms.locfileid: "48641697"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Inglés: Mon-Fri 11:00 a 19:00
+Inglés: Mon-Fri 11 AM-7 PM
 
 ### <a name="technical-support"></a>Soporte técnico:
 

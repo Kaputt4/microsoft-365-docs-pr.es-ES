@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para islas Heard y McDonald
+title: Información de soporte técnico para Islas Heard y McDonald
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 365d92d4ae21913860e1ba95b7948ce4a2d1776c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cc497cd7452a0502af40d1466ae1480c8b6f8cc0
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642261"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546909"
 ---
-# <a name="contact-support-for-heard-island-and-mcdonald-islands"></a>Ponerse en contacto con el soporte técnico para Islas Heard y McDonald
+# <a name="contact-support-for-heard-island-and-mcdonald-islands"></a>Póngase en contacto con el soporte técnico de Heard Island y McDonald Islands
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 

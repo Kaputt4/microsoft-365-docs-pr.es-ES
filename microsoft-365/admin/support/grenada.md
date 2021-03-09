@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para Granado
+title: Información de soporte técnico para Granada
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2f65d1be7525bac63d04f578c28578e84c4e0f2f
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7ab6ec1ac3cdbcaea3ae7732ed49a4418376f801
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642424"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547149"
 ---
-# <a name="contact-support-for-grenada"></a>Ponerse en contacto con el soporte técnico de Granados
+# <a name="contact-support-for-grenada"></a>Póngase en contacto con el soporte técnico de Granada
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 

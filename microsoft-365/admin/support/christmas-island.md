@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para isla Christmas
+title: Información de soporte técnico para isla de Navidad
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b24d7e7682c71d24d326282e16e987dda0dac128
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: eda1fad6f618bd3fb1acaa9159c4be1f63dcfc18
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643377"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548109"
 ---
-# <a name="contact-support-for-christmas-island"></a>Ponerse en contacto con el soporte técnico para Isla Christmas
+# <a name="contact-support-for-christmas-island"></a>Póngase en contacto con el soporte técnico de Christmas Island
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 

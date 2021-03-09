@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 19319f643e4da40e217aa8405a8340961eaa5858
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bcf357cc47b2ab0fb06553b117c0dd3fa117e76b
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642208"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546969"
 ---
 # <a name="contact-support-for-guinea-bissau"></a>Póngase en contacto con el soporte técnico Guinea-Bissau
 
@@ -34,7 +33,7 @@ Inglés: lunes a viernes de 9:00 a 17:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Portugués: 8:00 a 21:00
+Portugués: 8 AM-9 PM
 
 Inglés: 24 horas al día, 7 días a la semana
 

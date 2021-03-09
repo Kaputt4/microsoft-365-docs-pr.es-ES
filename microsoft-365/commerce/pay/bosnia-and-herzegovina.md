@@ -1,5 +1,5 @@
 ---
-title: Información de pago de Bosnia y Herzegovina
+title: Información de pago para Bosnia y Herzegovina
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre dónde enviar el pago de la suscripción.
+description: Obtén información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3a4cfaeadff1f623ba4825db7ea1e0cb1e841324
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e60024b369a8b18135d35a365bd1670ba9346523
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637708"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549369"
 ---
-# <a name="payment-information-for-bosnia-and-herzegovina"></a>Información de pago de Bosnia y Herzegovina
+# <a name="payment-information-for-bosnia-and-herzegovina"></a>Información de pago para Bosnia y Herzegovina
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pagar solo en USD y hacer referencia a los números de factura en la remesa de la factura.
+Pague solo en USD y haga referencia a los números de factura en la remesa de factura.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Bank, Londres  
-**Código SWIFT:** GBGB2L  
+**Banco:** Citibank, Londres  
+**Código SWIFT:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
 **Número de cuenta:** 12510049  
 **Nombre de cuenta:** MICROSOFT  
