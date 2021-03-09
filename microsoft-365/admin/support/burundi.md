@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico paraUndés
+title: Información de soporte técnico para Burundi
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 94c5834b7ca6dd172f602e49589183c4e7bddb47
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 46f596d3782940f5fbf7c04e2ff9a30e560afe6d
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643624"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548373"
 ---
-# <a name="contact-support-for-burundi"></a>Ponerse en contacto con el soporte técnico de Burundi
+# <a name="contact-support-for-burundi"></a>Póngase en contacto con el soporte técnico de Burundi
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -30,13 +29,13 @@ ms.locfileid: "48643624"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Francés: Mon-Fri 10:00 a 18:00
+Francés: Mon-Fri 10 AM-6 PM
 
-Inglés: Mon-Fri 10:00 a 18:00
+Inglés: Mon-Fri 10 AM-6 PM
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Francés: Mon-Fri 9:00 a 10:00
+Francés: Mon-Fri 9 AM-10 PM
 
 Inglés: 24 horas al día, 7 días a la semana
 

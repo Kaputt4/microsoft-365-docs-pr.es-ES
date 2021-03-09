@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 268ebe93b54fc07122cb88dd42392783cd3895d1
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1ad1e34f2a30fade2b46ccf0b4a4f7ceaa16cc36
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643600"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548301"
 ---
-# <a name="contact-support-for-cameroon"></a>Ponerse en contacto con el soporte técnico de Camerún
+# <a name="contact-support-for-cameroon"></a>Póngase en contacto con el soporte técnico de Camerún
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -29,18 +28,18 @@ ms.locfileid: "48643600"
 
 Seleccionar la opción 9
 
-Escribir código 7703
+Escriba el código 7703
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Francés: Mon-Fri 8:00 a 16:00
+Francés: Mon-Fri 8 AM-4 PM
 
-Inglés: Mon-Fri 8:00 a 16:00
+Inglés: Mon-Fri 8 AM-4 PM
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Francés: Mon-Fri 8:00 a 21:00
+Francés: Mon-Fri 8 AM-9 PM
 
 Inglés: 24 horas al día, 7 días a la semana
 

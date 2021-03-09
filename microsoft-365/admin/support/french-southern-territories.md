@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para territorios australes (territorios australes)
+title: Información de soporte técnico de los territorios sureños franceses (tierras de la Antártida)
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 44254ec22595cc2fbbb8f35b923eec3f1d137c86
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 41ff35009ea33b5011d0bf2e97c210a9435da531
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642652"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547365"
 ---
-# <a name="contact-support-for-french-southern-territories-antarctic-lands"></a>Ponerse en contacto con el soporte técnico para territorios australes francés (territorios australes)
+# <a name="contact-support-for-french-southern-territories-antarctic-lands"></a>Contact support for French Southern Territories (Antarctic Lands)
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -30,13 +29,13 @@ ms.locfileid: "48642652"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Francés: Mon-Fri 1 p.m. a 9 p. m.
+Francés: Mon-Fri 1 PM-9 PM
 
-Inglés: Mon-Fri 1 p.m. a 9 p. m.
+Inglés: Mon-Fri 1 PM-9 PM
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Francés: Mon-Fri 12 p.m. a 11 p. m.
+Francés: Mon-Fri 12 PM-11 PM
 
 Inglés: 24 horas al día, 7 días a la semana
 

@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6d5dac2a5796c1c342aead0d4b8433d1eb2d5bc7
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 400a14b6a4c0a8e1c7ca1ab9eaeb4358f13a7396
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640312"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545001"
 ---
-# <a name="contact-support-for-poland"></a>Ponerse en contacto con el soporte técnico de Polonia
+# <a name="contact-support-for-poland"></a>Póngase en contacto con el soporte técnico de Polonia
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -30,13 +29,13 @@ ms.locfileid: "48640312"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Polaco: Mon-Fri 8:00 a 18:00
+Polaco: Mon-Fri 8 AM-6 PM
 
-Inglés: Mon-Fri 8:00 a 18:00
+Inglés: Mon-Fri 8 AM-6 PM
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Polaco: Mon-Fri 8:00 a 18:00
+Polaco: Mon-Fri 8 AM-6 PM
 
 Inglés: 24 horas al día, 7 días a la semana
 

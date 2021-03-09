@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e2d0f4f4abbe538d11d61869f52285f19c23a253
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 82dfab193277744c9a7888e7f9ac1d7b7293d843
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461811"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542542"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
@@ -50,7 +50,7 @@ Las plantillas de directiva son configuraciones de directiva predefinidas que pu
 
 Las comunicaciones se examinan cada 24 horas a partir del momento en que se crean las directivas. Por ejemplo, si crea una directiva de idioma ofensivo a las 11:00 a.m., la directiva recopilará señales de cumplimiento de comunicaciones cada 24 horas a las 11:00 a.m. todos los días. La edición de una directiva no cambia esta vez. Para ver la última fecha y hora de examen de una directiva, vaya a la columna Último *examen de* directivas de la **página** Directiva. Después de crear una nueva directiva, puede tardar hasta 24 horas en ver la primera fecha y hora del examen de directivas. La fecha y hora del último examen se convertirán en la zona horaria del sistema local.
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
 >[!Important]
 >De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de la comunicación. Los roles asignados en este paso son necesarios antes de que se pueda acceder a las características de cumplimiento de comunicaciones.
@@ -78,7 +78,7 @@ Para ayudar a planear la migración, tenga en cuenta el siguiente ejemplo. Actua
 - Administrador de revisión de supervisión
 - Administración de casos
 - Administrador de cumplimiento
-- Revisar
+- Review
 
 Para actualizar los roles de estos usuarios para la nueva estructura de grupos de roles y separar los permisos de acceso y administración para los usuarios, puede considerar tres nuevos grupos y las asignaciones de nuevos grupos de roles asociadas:
 
@@ -525,7 +525,7 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Disco
 
 Las organizaciones que usan directivas de supervisión en Office 365 deben planear inmediatamente la transición a directivas de cumplimiento de comunicaciones en Microsoft 365 y deben comprender estos puntos importantes:
 
-- La solución de supervisión en Office 365 se ha reemplazado completamente por la solución de cumplimiento de comunicaciones en Microsoft 365. Se recomienda crear nuevas directivas en el cumplimiento de comunicaciones que tengan la misma configuración que las directivas de supervisión existentes para usar las nuevas mejoras de investigación y corrección. Al realizar la transición al cumplimiento de comunicaciones en Microsoft 365, debe planear la exportación de datos de informes desde la supervisión en Office 365 si tiene requisitos de directiva de retención de cumplimiento interno.
+- La solución de supervisión en Office 365 se ha reemplazado completamente por la solución de cumplimiento de comunicaciones en Microsoft 365. Se recomienda crear nuevas directivas en el cumplimiento de comunicaciones que tengan la misma configuración que las directivas de supervisión existentes para usar las nuevas mejoras de investigación y corrección.
 - Los mensajes guardados en supervisión en coincidencias de directivas de Office 365 no se pueden mover ni compartir en el cumplimiento de la comunicación en Microsoft 365.
 - Para las organizaciones con ambas soluciones usadas en paralelo durante el proceso de transición, las directivas usadas en cada solución deben tener nombres de directiva únicos. Los grupos y diccionarios de palabras clave personalizadas se pueden compartir entre soluciones durante un período de transición.
 

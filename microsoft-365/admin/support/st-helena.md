@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para St. Aldes
+title: Información de soporte técnico para Santa Elena
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 09e07437b029de928360d410c2301c1a33f3b5ed
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: daddff831f88916ec40e058cb83a2e8b1593b73c
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639448"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544233"
 ---
-# <a name="contact-support-for-st-helena"></a>Ponerse en contacto con el soporte técnico de St. Almeda
+# <a name="contact-support-for-st-helena"></a>Póngase en contacto con el soporte técnico de Santa Elena
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 

@@ -9,38 +9,37 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3ef9cfe761b705669e4499b0a0df1f17785638f7
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 928a6d42bea45be63f705209b4cd05139cc39c56
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643192"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547881"
 ---
-# <a name="contact-support-for-cte-divoire"></a>Ponerse en contacto con el soporte técnico de Côte d'Ivoire
+# <a name="contact-support-for-cte-divoire"></a>Póngase en contacto con el soporte técnico de Côte d'Ivoire
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 020 24 24 90
 
-Selección de la opción 9
+Seleccionar la opción 9
 
-Escribir código 7703
+Escriba el código 7703
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Francés: Mon-Fri 8:00 a 16:00
+Francés: Mon-Fri 8 AM-4 PM
 
-Inglés: Mon-Fri 8:00 a 16:00
+Inglés: Mon-Fri 8 AM-4 PM
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Francés: Mon-Fri 7:00 a 20:00
+Francés: Mon-Fri 7 AM-8 PM
 
 Inglés: 24 horas al día, 7 días a la semana
 

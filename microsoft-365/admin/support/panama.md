@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f011f3ac514367500834b057e85592b1d26c5c3a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 5a3d21ba5a62e966c86b0f4e707db12fb6a40d43
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640396"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545193"
 ---
-# <a name="contact-support-for-panama"></a>Ponerse en contacto con el soporte técnico para Panamá
+# <a name="contact-support-for-panama"></a>Póngase en contacto con el soporte técnico de Panamá
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -29,7 +28,7 @@ ms.locfileid: "48640396"
 
 Seleccionar la opción 4
 
-Escribir código 7007
+Escriba el código 7007
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:

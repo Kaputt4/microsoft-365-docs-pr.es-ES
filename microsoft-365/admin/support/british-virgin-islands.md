@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para islas Vírgenes Inglesas
+title: Información de soporte técnico para islas vírgenes británicas
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6156cd390d66303ae5c37a767b5d35935f77d32f
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fe03d0a211ad0f197b95c048eb62e423701f0927
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643672"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548399"
 ---
-# <a name="contact-support-for-british-virgin-islands"></a>Ponerse en contacto con el soporte técnico de las Islas Vírgenes Inglesas
+# <a name="contact-support-for-british-virgin-islands"></a>Póngase en contacto con el soporte técnico de islas vírgenes británicas
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 

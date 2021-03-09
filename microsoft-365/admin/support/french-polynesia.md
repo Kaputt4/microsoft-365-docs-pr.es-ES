@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para polinesia francesa
+title: Información de soporte técnico para la Polinesia francesa
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fff0648fcf1744dfe65eea12efe2cf04fd7c67b1
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cbd4f0eca0ee4e8b2d171b6de160b18cfaa50a78
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642676"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547377"
 ---
-# <a name="contact-support-for-french-polynesia"></a>Ponerse en contacto con el soporte técnico para polinesia francesa
+# <a name="contact-support-for-french-polynesia"></a>Póngase en contacto con el soporte técnico de la Polinesia francesa
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -30,13 +29,13 @@ ms.locfileid: "48642676"
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:
 
-Francés: Sun-Fri 10:00 a 18:00
+Francés: Sun-Fri 10 PM-6 AM
 
-Inglés: Sun-Fri 10 p.m. a 6 a.m.
+Inglés: Sun-Fri 10 PM-6 AM
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Francés: Mon-Fri 9 p.m. a 10 a.m.
+Francés: Mon-Fri 9 PM-10 AM
 
 Inglés: 24 horas al día, 7 días a la semana
 

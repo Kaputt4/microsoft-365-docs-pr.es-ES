@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ea02f5ff95baea42bf57c01c939afe4d3e4c13a2
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 4f0be1b416bb80bc5cd2b43f5e4c95f0dbc24142
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423481"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542328"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
@@ -102,7 +102,7 @@ Independientemente de dónde empiece a revisar las alertas o el filtrado que con
 Después de revisar los conceptos básicos del mensaje, es el momento de abrir un mensaje para examinar los detalles y determinar acciones de corrección adicionales. Seleccione un mensaje para ver la información completa del encabezado y el cuerpo del mensaje. Hay varias vistas diferentes disponibles para ayudarle a decidir el curso de acción correcto:
 
 - **Vista de origen:** esta vista es la vista de mensajes estándar que se ve habitualmente en la mayoría de las plataformas de mensajería basadas en web. La información del encabezado tiene formato en el estilo normal y el cuerpo del mensaje admite archivos gráficos y texto ajustado por palabras. Si el reconocimiento óptico de caracteres [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) está habilitado para la directiva, las imágenes que contienen texto impreso o escrito a mano que coinciden con la directiva condicional se ven como un elemento secundario para el mensaje asociado en esta vista.
-- **Vista** de texto: la vista Texto muestra una vista de solo texto numerada de línea del mensaje e incluye resaltado de palabras clave en mensajes y datos adjuntos para los términos coincidentes en la directiva de cumplimiento de comunicación asociada. El resaltado de palabras clave puede ayudarle a examinar rápidamente mensajes largos y datos adjuntos para el área de interés. En algunos casos, el texto resaltado puede estar solo en los datos adjuntos de los mensajes que coinciden con las condiciones de la directiva. Los archivos incrustados no se muestran y la numeración de línea de esta vista es útil para hacer referencia a detalles pertinentes entre varios revisores.
+- **Vista** de texto: la vista Texto muestra una vista de solo texto numerada de línea del mensaje e incluye resaltado de palabras clave en mensajes y datos adjuntos para términos de tipo de información confidencial o palabras clave coincidentes en la directiva de cumplimiento de comunicación asociada. El resaltado de palabras clave puede ayudarle a examinar rápidamente mensajes largos y datos adjuntos para el área de interés. En algunos casos, el texto resaltado puede estar solo en los datos adjuntos de los mensajes que coinciden con las condiciones de la directiva. El resaltado de palabras clave no es compatible con los términos identificados por clasificadores integrados asignados a una directiva. Los archivos incrustados no se muestran y la numeración de línea de esta vista es útil para hacer referencia a detalles pertinentes entre varios revisores.
 - **Vista anotar:** esta vista permite a los revisores agregar anotaciones directamente en el mensaje que se guardan en la vista del mensaje. Si [OCR está](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) habilitado para la directiva, las imágenes que contienen texto impreso o escrito a mano que coinciden con el condicional de la directiva se ven como un elemento secundario para el mensaje asociado en esta vista y pueden anotarse.
 - **Historial de usuarios:** la vista Historial de usuarios muestra todas las demás alertas generadas por cualquier directiva de cumplimiento de comunicaciones para el usuario que envía el mensaje.
 - **Vista de detalles del mensaje:** vista avanzada de los metadatos del mensaje y la información de configuración.

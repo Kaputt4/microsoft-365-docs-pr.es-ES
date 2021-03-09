@@ -9,27 +9,26 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 066a0833eb82ca3561014461c239b98df6ab4ac7
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 674c5c2c0f5cfbf8b4c0ca9d6a6806a00bb7fa68
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643840"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548541"
 ---
-# <a name="contact-support-for-bosnia-and-herzegovnia"></a>Ponerse en contacto con el soporte técnico de Bosnia y Herzegovnia
+# <a name="contact-support-for-bosnia-and-herzegovnia"></a>Póngase en contacto con el soporte técnico para Bosnia y Herzegovnia
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 0800 20 230
 
-Selección de la opción 9
+Seleccionar la opción 9
 
-Escribir código 7700
+Escriba el código 7700
 
 ## <a name="hours"></a>Horas
 ### <a name="billing-support"></a>Soporte de facturación:

@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 75b84a4246a3be3f7a23e61d7e1b664c071636a2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7dbeefb53e484a2b4f61d56c970a86239d6336ed
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643864"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548589"
 ---
-# <a name="contact-support-for-bolivia"></a>Ponerse en contacto con el soporte técnico de Bolivia
+# <a name="contact-support-for-bolivia"></a>Póngase en contacto con el soporte técnico de Bolivia
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
