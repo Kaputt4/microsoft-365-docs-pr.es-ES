@@ -1,5 +1,5 @@
 ---
-title: Información de pago para San Pedro y las Granadinas
+title: Información de pago de San Vicente y las Granadinas
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,22 +9,21 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre dónde enviar el pago de la suscripción.
+description: Obtén información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b39113d31b08eb60a72a2dbd21d2a4fd25473ab9
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 815d8126db7fa4ad742c6352c199fed90c47ad72
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648700"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550281"
 ---
-# <a name="payment-information-for-saint-vincent-and-the-grenadines"></a>Información de pago para San Pedro y las Granadinas
+# <a name="payment-information-for-saint-vincent-and-the-grenadines"></a>Información de pago de San Vicente y las Granadinas
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pagar solo en USD y hacer referencia a los números de factura en la remesa de la factura.
+Pague solo en USD y haga referencia a los números de factura en la remesa de factura.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 

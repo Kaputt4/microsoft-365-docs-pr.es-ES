@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para Sao Tome y Almeda
+title: Información de soporte técnico para Santo Tome y Príncipe
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 10ce19845201f40f25728867ea2768c37d40f84d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f8bd77592506892213c97105db34c6c53c19e601
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639868"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544581"
 ---
-# <a name="contact-support-for-sao-tome-and-principe"></a>Ponerse en contacto con el soporte técnico de Sao Tome y Almeda
+# <a name="contact-support-for-sao-tome-and-principe"></a>Póngase en contacto con el soporte técnico de Santo Tomé y Príncipe
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
@@ -34,7 +33,7 @@ Inglés: lunes a viernes de 9:00 a 17:00
 
 ### <a name="technical-support"></a>Soporte técnico:
 
-Portugués: Mon-Fri 8:00 a 21:00
+Portugués: Mon-Fri 8 AM-9 PM
 
 Inglés: 24 horas al día, 7 días a la semana
 

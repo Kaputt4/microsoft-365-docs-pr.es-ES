@@ -9,22 +9,21 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre dónde enviar el pago de la suscripción.
+description: Obtén información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2eb3434873811a3466bdf5ec3fe0526cbbab4f41
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 313a2383868f28469695b27248be0601391b1445
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648832"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550376"
 ---
 # <a name="payment-information-for-paraguay"></a>Información de pago para Paraguay
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.
+Pague solo en USD y haga referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 

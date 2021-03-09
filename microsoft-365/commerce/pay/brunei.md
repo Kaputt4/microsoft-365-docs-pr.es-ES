@@ -1,5 +1,5 @@
 ---
-title: Información de pago de Brunéi
+title: Información de pago para Brunei
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,26 +9,25 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre dónde enviar el pago de la suscripción.
+description: Obtén información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 246894282c5b32be904768de76f0313949bf895d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a50dca481ce5fabebbd67970a3f8045a93fe1559
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637675"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551841"
 ---
-# <a name="payment-information-for-brunei"></a>Información de pago de Brunéi
+# <a name="payment-information-for-brunei"></a>Información de pago para Brunei
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.
+Pague solo en USD y haga referencia a los números de factura en su remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Bank, Singapur   
-**Código SWIFT:** DAGGSG  
+**Banco:** Citibank, Singapur   
+**Código SWIFT:** CITISGSG  
 **Número de** cuenta 0-817543-138,  
 **Nombre de cuenta:** MICROSOFT REGIONAL SALES CORP  
