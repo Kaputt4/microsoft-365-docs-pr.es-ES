@@ -9,33 +9,32 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6cf844a97d29a2cb2fed3a6bd2cdbdbe95d6285f
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d19a08b85f4f102fd4f56e41ab9c070961eb9846
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643408"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548133"
 ---
-# <a name="contact-support-for-chile"></a><span data-ttu-id="4ff13-103">Ponerse en contacto con el soporte técnico de Chile</span><span class="sxs-lookup"><span data-stu-id="4ff13-103">Contact support for Chile</span></span>
+# <a name="contact-support-for-chile"></a><span data-ttu-id="0bb9c-103">Póngase en contacto con el soporte técnico de Chile</span><span class="sxs-lookup"><span data-stu-id="0bb9c-103">Contact support for Chile</span></span>
 
-<span data-ttu-id="4ff13-104">[Buscar otro país o región](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="4ff13-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="0bb9c-104">[Buscar otro país o región](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="0bb9c-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="4ff13-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="4ff13-105">Phone number</span></span>
-<span data-ttu-id="4ff13-106">800 226 826</span><span class="sxs-lookup"><span data-stu-id="4ff13-106">800 226 826</span></span>
+## <a name="phone-number"></a><span data-ttu-id="0bb9c-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="0bb9c-105">Phone number</span></span>
+<span data-ttu-id="0bb9c-106">800 226 826</span><span class="sxs-lookup"><span data-stu-id="0bb9c-106">800 226 826</span></span>
 
-## <a name="hours"></a><span data-ttu-id="4ff13-107">Horas</span><span class="sxs-lookup"><span data-stu-id="4ff13-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="4ff13-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="4ff13-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="0bb9c-107">Horas</span><span class="sxs-lookup"><span data-stu-id="0bb9c-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="0bb9c-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="0bb9c-108">Billing Support:</span></span>
 
-<span data-ttu-id="4ff13-109">Español: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="4ff13-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="0bb9c-109">Español: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="0bb9c-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="4ff13-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="4ff13-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="0bb9c-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="0bb9c-110">Technical Support:</span></span>
 
-<span data-ttu-id="4ff13-111">Español: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="4ff13-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="0bb9c-111">Español: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="0bb9c-111">Spanish: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="4ff13-112">Número de teléfono alternativo: 123 002 000 05</span><span class="sxs-lookup"><span data-stu-id="4ff13-112">Alternative Phone Number: 123 002 000 05</span></span>
+<span data-ttu-id="0bb9c-112">Número de teléfono alternativo: 123 002 000 05</span><span class="sxs-lookup"><span data-stu-id="0bb9c-112">Alternative Phone Number: 123 002 000 05</span></span>
 
-<span data-ttu-id="4ff13-113">Se aplican tarifas de llamada local</span><span class="sxs-lookup"><span data-stu-id="4ff13-113">Local call charges apply</span></span>
+<span data-ttu-id="0bb9c-113">Se aplican tarifas de llamada local</span><span class="sxs-lookup"><span data-stu-id="0bb9c-113">Local call charges apply</span></span>
