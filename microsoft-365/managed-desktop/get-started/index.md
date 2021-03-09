@@ -6,19 +6,21 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 141eb16ae77c44c51358c07a74f5050eb07dc26f
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 49cf658c7d146f75d54d1f74f0034db64c3cc5dc
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509283"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572557"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Introducción al Escritorio administrado de Microsoft
 
-Ahora que se ha inscrito en el servicio, siga estos pasos para confirmar los contactos de administración, ajustar la configuración de acceso condicional, asignar licencias a usuarios, habilitar Enterprise State Roaming, obtener y configurar dispositivos, preparar usuarios e implementar aplicaciones en los dispositivos.
+Ahora qu está listo para inscribirse, abra [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) y vaya a **Administración de espacio empresarial**. Seleccione **Inscripción de espacio empresarial** en la subsección **Escritorio administrado de Microsoft** y, a continuación, siga el asistente para inscribir su espacio empresarial en el Escritorio administrado de Microsoft.
 
 > [!NOTE]
-> Este es el orden recomendado para seguir, pero tiene cierta flexibilidad en la secuencia.
+> Debe iniciar sesión como Administrador global para completar la inscripción. Para más información, consulte [acceder al portal de administrador](access-admin-portal.md).
+
+Una vez finalizada la inscripción, siga los siguientes pasos para configurar el servicio. Este es el orden recomendado para seguir, pero tiene cierta flexibilidad en la secuencia. 
 
 1. [Agregar y verificar los contactos de administración en el portal de administración ](add-admin-contacts.md)
 2. [Ajustar la configuración después de la inscripción](conditional-access.md)

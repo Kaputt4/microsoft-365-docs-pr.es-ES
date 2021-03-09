@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre dónde enviar el pago de la suscripción.
+description: Obtén información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f731997e87be377453bc0eb4d73cf0c44d6ae3be
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fed29b7152593647399db4d5b5b4638b54f27d3e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636832"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551337"
 ---
 # <a name="payment-information-for-estonia"></a>Información de pago para Estonia
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pagar solo en EUR y hacer referencia a los números de factura en la remesa de pago.
+Paga solo en EUR y haz referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Bank, Londres  
-**Código SWIFT:** GBGB2L  
+**Banco:** Citibank, Londres  
+**Código SWIFT:** CITIGB2L  
 **IBAN:** GB31CITI18500812207591  
-**Código sort:** 185008  
+**Código SORT:** 185008  
 **Número de cuenta:** 12207591  
 **Nombre de cuenta:** MICROSOFT  

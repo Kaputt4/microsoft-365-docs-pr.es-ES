@@ -1,5 +1,5 @@
 ---
-title: Información de pago para Islas Feroe
+title: Información de pago para islas Feroe
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,28 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre dónde enviar el pago de la suscripción.
+description: Obtén información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f6d73996ce538b457067a1cfabd2440eaf4a2891
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3c8521dc2096e32cd80b5cafec07060a8c80bf2f
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647668"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551349"
 ---
-# <a name="payment-information-for-faroe-islands"></a>Información de pago para Islas Feroe
+# <a name="payment-information-for-faroe-islands"></a>Información de pago para islas Feroe
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pagar solo en EUR y hacer referencia a los números de factura en la remesa de pago.
+Paga solo en EUR y haz referencia a los números de factura en la remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Bank, Londres  
-**Código SWIFT/BIC:** GBGB2L  
+**Banco:** Citibank, Londres  
+**Código SWIFT/BIC:** CITIGB2L  
 **IBAN:** GB31CITI18500812207591  
-**Código sort:** 185008  
+**Código SORT:** 185008  
 **Número de cuenta:** 12207591  
 **Nombre de cuenta:** MICROSOFT  

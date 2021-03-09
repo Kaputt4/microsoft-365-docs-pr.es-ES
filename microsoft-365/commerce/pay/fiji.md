@@ -1,5 +1,5 @@
 ---
-title: Información de pago para Fiyi
+title: Información de pago para Fiji
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,26 +9,25 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-description: Obtenga información sobre dónde enviar el pago de la suscripción.
+description: Obtén información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3764d468b66fc46ad1b0bca29d1a090f303217a8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ee6d154d5cd4e201b55d810ba302f46fad0a8f48
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647651"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551301"
 ---
-# <a name="payment-information-for-fiji"></a>Información de pago para Fiyi
+# <a name="payment-information-for-fiji"></a>Información de pago para Fiji
 
 [Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).
 
-Pagar solo en USD y hacer referencia a los números de factura en la remesa de pago.
+Pague solo en USD y haga referencia a los números de factura en su remesa de pago.
 
 ## <a name="electronic-funds-transfer"></a>Transferencia electrónica de fondos
 
-**Banco:** Bank, Singapur  
-**Código SWIFT:** DAGSG  
+**Banco:** Citibank, Singapur  
+**Código SWIFT:** CITISGSG  
 **Número de cuenta:** 0-817543-138  
 **Nombre de cuenta:** MICROSOFT REGIONAL SALE CORP  
