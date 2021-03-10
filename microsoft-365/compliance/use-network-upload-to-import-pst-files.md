@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para administradores: obtenga información sobre cómo usar la carga en la red para importar en bloque varios archivos PST a buzones de usuario en Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c126a8e00ae5182d42122fb98f95ffd585360412
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 6248fcb96468ecfbb2b5454e40badc6293770003
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662294"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597087"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Usar la carga en la red para importar los archivos PST de su organización a Microsoft 365
 
@@ -98,7 +98,7 @@ El primer paso es descargar e instalar la herramienta AzCopy, que es la herramie
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con las credenciales de una cuenta de administrador de su organización.
     
-2. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **gobernanza de información**\>** Importar **\>** archivos PST**.
+2. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **gobernanza de información**\>**Importar**\>**archivos PST**.
     
     > [!NOTE]
     > Es necesario que tenga asignados los permisos adecuados para tener acceso a la página **Importar** en el Centro de seguridad y cumplimiento. Vea la sección **Antes de empezar** para obtener más información. 
@@ -182,23 +182,19 @@ Para instalar el Explorador de Azure Storage y conectarse al área de Azure Stor
   
 1. Descargue e instale la [herramienta Explorador de Microsoft Azure Storage](https://go.microsoft.com/fwlink/p/?LinkId=544842).
     
-2. Inicie el Explorador de Microsoft Azure Storage, haga clic derecho en **Cuentas de almacenamiento** en el panel izquierdo y, después, haga clic en **Conectar con Azure Storage**.
-    
-    ![Haga clic derecho en Cuentas de almacenamiento y, después, en Conectar a Azure Storage](../media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
+2. Inicie el Explorador de Microsoft Azure Storage.
+
+3. En la página **Seleccionar recurso** del cuadro de diálogo **Conectarse a Azure Storage**, haga clic en **Contenedor de blobs**.
   
-3. Haga clic en **Usar un URI de Firma de acceso compartido (SAS) o cadena de conexión** y, luego, en **Siguiente**.
+4. En la página **Seleccionar método de autenticación**, seleccione la opción **Firma de acceso compartido (SAS)** y haga clic en **Siguiente**.
     
-4. Haga clic en **Usar un URI de SAS**, pegue la dirección URL de SAS que obtuvo en el paso 1 en el cuadro situado bajo **URI** y, después, haga clic en **Siguiente**.
+5. En la página **Escriba la información de conexión**, pegue la dirección URL SAS que obtuvo en el paso 1 en el cuadro que hay debajo de Dirección **URL SAS del contenedor de blobs** y haga clic en **Siguiente**. Después de pegar la dirección URL SAS, el cuadro situado debajo de **Nombre para mostrar** se rellena automáticamente con **ingestiondata**.
     
-5. En la página **Resumen de conexión**, puede revisar la información de conexión y, después, haga clic en **Conectar**.
+6. En la página **Resumen**, puede revisar la información de conexión y, después, haga clic en **Conectar**.
     
-    El contenedor **ingestiondata** está abierto. Contiene los archivos PST que ha cargado en el paso 2. El contenedor **ingestiondata** se encuentra en **Cuentas de almacenamiento** \> **(servicios vinculados de SAS)** \> **Contenedores de blob**. 
-    
-    ![El Explorador de Azure Storage muestra una lista de los archivos PST que ha cargado](../media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
+    El contenedor **ingestiondata** está abierto. Contiene los archivos PST que ha cargado en el paso 2. El contenedor **ingestiondata** se encuentra en **Cuentas de almacenamiento** \> **(contenedores vinculados)** \> **Contenedores de blob**. 
   
-6. Cuando termine de usar el Explorador de Microsoft Azure Storage, haga clic derecho en **ingestiondata** y, después, en **Desasociar** para desconectarse del área de Azure Storage. En caso contrario, recibirá un error la próxima vez que intente vincularse. 
-    
-    ![Haga clic derecho en Ingesta y, luego, seleccione Desasociar para desconectarse de su área de Azure Storage](../media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
+7. Cuando termine de usar el Explorador de Microsoft Azure Storage, haga clic derecho en **ingestiondata** y, después, en **Desasociar** para desconectarse del área de Azure Storage. En caso contrario, recibirá un error la próxima vez que intente vincularse.
   
 ## <a name="step-4-create-the-pst-import-mapping-file"></a>Paso 4: crear el archivo de asignación de importación de PST
 

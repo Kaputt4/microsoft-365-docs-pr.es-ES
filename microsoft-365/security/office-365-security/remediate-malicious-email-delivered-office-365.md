@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6c5c94ce3994424a6d4b6f4a4ac587f5cc5e33ca
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 0c52b80ffe30da259672e5862d0fa73a8445aa59
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454702"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50604047"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corregir el correo electrónico malintencionado entregado en Office 365
 
@@ -136,5 +136,7 @@ Abra cualquier elemento de corrección para ver detalles sobre él, incluido su 
   Seleccione cualquier elemento del registro de acciones para mostrar los detalles de corrección. Si los detalles dicen "correcto" o "no se encontró en el buzón de correo", ese elemento ya se quitó del buzón. A veces hay un error sistémico durante la corrección. En esos casos, es una buena idea volver a intentar la corrección.
 
   En caso de corregir lotes grandes, también puede exportar los mensajes enviados para su corrección a través del envío de correo y los mensajes que se han corregido a través de registros de acciones. El límite de exportación se aumenta a 100.000 registros.
+
+El equipo de seguridad puede llevar hasta 50 correcciones manuales simultáneas; sin embargo, no hay ningún límite establecido para las acciones automatizadas de investigación y respuesta.
 
   Remediation is a powerful tool to mitigate threats and address suspicious emails. Ayuda a mantener una organización segura.

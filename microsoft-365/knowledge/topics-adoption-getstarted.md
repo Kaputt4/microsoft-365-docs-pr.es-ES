@@ -11,12 +11,12 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 28dc86bbc2d844110610cd8a884af5313b7d8cfa
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: e8d7ca4786893fb5eb39090d9a271ace1c62d321
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453986"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50596973"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-viva-topics"></a>Introducción a la adopción de temas de Microsoft Viva
 
@@ -73,17 +73,21 @@ Para planear la adopción de Viva Topics, debe:
     - Próximamente, vídeos de aprendizaje y ayuda para los usuarios finales.
 
 4. [Crear una red de campeones:](#build-a-champion-network)
-    - Es posible que ya haya comunidades de prácticas o redes de campeones. Estas son excelentes maneras de socializar y evangelizar y hacer que los compañeros participen en la ayuda mutua. Y pueden compartir historias de éxito que pueden ser realmente valiosas. Pueden ofrecer consejos y generar entusiasmo.
+    - Es posible que ya haya comunidades de prácticas o redes de campeones. Estas son excelentes maneras de socializar y evangelizar y hacer que los compañeros participen en la ayuda mutua. Y pueden compartir historias de éxito que pueden ser valiosas. Pueden ofrecer consejos y generar entusiasmo.
 
 ### <a name="target-scenarios"></a>Escenarios de destino
 
-Debe determinar cómo desea usar Viva Topics en su organización para poder tener éxito con los temas. Estos son algunos escenarios en los que la administración del conocimiento y los temas pueden ayudar a su organización:
+Determine cómo desea usar Viva Topics en su organización para usarlos correctamente. Estos son algunos escenarios en los que la administración del conocimiento y los temas pueden ayudar a su organización:
 
 - Incorporación de roles & aprendizaje: comprender la terminología, los proyectos clave y la cultura de una nueva organización son pasos importantes en la incorporación. La detección sencilla de temas puede ayudar a los nuevos empleados a aumentar rápidamente los nuevos trabajos, roles o proyectos.
 - Búsqueda de experiencia y uso compartido de información: cuando los temas se administran y comparten, los usuarios de sus organizaciones pueden encontrar más fácilmente información y expertos para ayudarles en su trabajo diario.
 - Toma de decisiones expandida y tiempo de salida al mercado mejorado: cuando la información y los expertos son fáciles de alcanzar, puedes tomar decisiones con mayor facilidad y apurar el tiempo de espera de los proyectos.
 
-Por ejemplo, este es un escenario para la incorporación de roles:
+#### <a name="example-scenario-for-role-onboarding"></a>Escenario de ejemplo para la incorporación de roles
+
+Un administrador de recursos humanos debe proporcionar información a los nuevos empleados que les ayudará a incorporarse rápidamente a la empresa y sus equipos. Quieren apuntarlos a los recursos, documentos y miembros del equipo correctos que necesitarán incorporar de forma rápida y eficaz. Están buscando una solución que permita al nuevo empleado encontrar rápidamente la información que necesitan sin tener que buscar en varios repositorios o dejar las aplicaciones que ya están usando.
+
+Por ejemplo:
 
 - Un empleado (Jordania) está tomando un nuevo rol, o ha sido recién contratado y está empezando por un rol. Jordania quiere implicarse y ser productivo lo más rápido posible. Pero Jordania también necesita ayuda para encontrar un lugar de partida.
 - Un compañero (Kim) que estaba en el rol antes de que Jordan creara páginas de temas que puedan ayudar a los nuevos empleados y a cualquier otra persona que busque esa información.
@@ -91,13 +95,35 @@ Por ejemplo, este es un escenario para la incorporación de roles:
 - A medida que Jordan lee una nueva publicación en SharePoint, ven un tema destacado y mantienen el mouse sobre él para obtener rápidamente una definición del término y con quién ponerse en contacto con más preguntas. Antes, Jordan podría haber tenido que buscar esta información y ponerse en contacto con compañeros para ver a quién preguntar sobre algo.
 - Exponer esta información a través de temas puede ser eficaz, ya que aunque esta información puede haber estado disponible antes, podría haber sido siloada y difícil de encontrar. Incorporarlo a las aplicaciones que Jordan usa y ayudarles a encontrar a estos expertos también puede impulsar una sensación de compromiso y comunidad. También puede ayudarles a sentirse más potenciados al tratar con el nuevo rol.
 
+Al automatizar este escenario, puede asegurarse de que:
+
+- Los nuevos empleados pueden conectarse rápidamente con las personas correctas en los proyectos adecuados.
+- Los nuevos empleados tienen acceso instantáneo a la información más reciente del proyecto dentro del flujo de su trabajo.
+- Los tiempos de búsqueda se reducen considerablemente.
+- Los tiempos de incorporación se reducen considerablemente.
+
+#### <a name="example-scenario-for-customer-call-center"></a>Escenario de ejemplo para el centro de llamadas de cliente
+
+Puede permitir que el servicio de atención al cliente encuentre rápidamente archivos y expertos para ayudar con preguntas fiscales inusuales y documentar rápidamente la respuesta para que otros puedan acceder fácilmente con Temas de Viva.
+
+Por ejemplo, un representante de soporte técnico debe encontrar rápidamente artículos, documentos y directivas de knowledge base para que puedan dar soporte a los clientes. Quieren encontrar la información correcta en el momento adecuado, sin tener que realizar un control manual a través de varias bases de datos, repositorios o aplicaciones, ni enviar una llamada. Y están buscando una solución que les permita permanecer dentro de sus principales directivas de solicitud de llamada y acceso a las directivas, reglamentos y directrices en el flujo de sus conversaciones, para que puedan responder rápidamente a las preguntas y actualizar el caso.
+
+Al automatizar este escenario con Temas de Viva, puede asegurarse de que:
+
+- Se reducen los tiempos de llamadas de soporte técnico.
+- Se reducen las escalaciones a la compatibilidad con los niveles 2 y 3.
+- Se reduce el número de llamadas en un caso determinado.
+- La satisfacción del cliente aumenta.
+
+#### <a name="prioritize-your-scenarios"></a>Priorizar los escenarios
+
 Después de identificar los escenarios, puede priorizar los escenarios:
 
 Una forma de priorizarlos es trazar los escenarios en una cuadrícula que muestre el impacto frente a la facilidad de implementación. Busque escenarios que tengan un alto impacto y que sean fáciles de implementar y hagan de esos escenarios su prioridad principal. Los escenarios de bajo impacto y difíciles de implementar son su prioridad más baja. Cuando tienes una victoria rápida con un escenario de alto impacto y fácil de implementar, ayuda a los usuarios a emocionarse y ver las posibilidades de usar temas.
 
 ![Los escenarios de alto impacto y fáciles de implementar son de alta prioridad](../media/knowledge-management/topics-prioritize-scenarios.png)
 
-Elija un par de escenarios clave en los que centrarse inicialmente, trabaje con los primeros usuarios para obtener algunos comentarios y, a continuación, descúese por fases. De esta forma, puede iterar, realizar mejoras y obtener comentarios para que pueda aumentar la adopción con el tiempo. 
+Elija un par de escenarios clave en los que centrarse inicialmente, trabaje con los primeros usuarios para obtener algunos comentarios y, a continuación, descúese por fases. De esta forma, puede iterar, realizar mejoras y obtener comentarios para que pueda aumentar la adopción con el tiempo.
 
 ### <a name="identify-stakeholders"></a>Identificación de las partes interesadas
 
