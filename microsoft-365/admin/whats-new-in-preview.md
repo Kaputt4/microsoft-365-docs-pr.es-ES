@@ -21,12 +21,12 @@ description: 'Centro de administración de Microsoft 365: obtenga información s
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: e8e743c0f3de0d7ac2eb8ebb9995596783d2d31a
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 2ecf9ddbd1257e7273da36371abb9f9e38df3f4a
+ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461839"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50717640"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades del Centro de administración de Microsoft 365
 
@@ -62,6 +62,12 @@ Hemos renovado el Centro de mensajes para ayudarle a descubrir mensajes relevant
 :::image type="content" source="../media/message-center.png" alt-text="Captura de pantalla: página principal del centro de mensajes que muestra la bandeja de entrada y los mensajes":::
 
 Para obtener más información sobre las nuevas características, consulte [Administrar mensajes en el Centro de mensajes.](manage/manage-messages.md)
+
+### <a name="whats-new-features"></a>Novedades
+
+Hemos realizado mejoras en la forma de ver las características "Novedades" para los usuarios de las aplicaciones de Office. Ahora puede ver el contenido enriquecido en el nuevo panel Whats' que los usuarios pueden ver. También puedes obtener más información sobre la característica antes de decidir que los usuarios sepan acerca de la característica. For more info, check out [Manage which Office‎ features appear in What's New](manage/show-hide-new-features.md).
+
+:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot: Office apps what's new page showing improvements to Power BI":::
 
 ## <a name="ignite-2020-august--september"></a>Ignite 2020 (agosto & septiembre)
 

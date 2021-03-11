@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar Attack Simulator para ejecutar ataques simulados de suplantación de identidad y contraseña en sus organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 85b376701ffa0c567fd66aa629371e9f69b354e9
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7c88a5df6fae61e1ffe70214ad4a73deef4b380e
+ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407482"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50717607"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulador de ataques en Microsoft Defender para Office 365
 
@@ -36,8 +36,10 @@ ms.locfileid: "50407482"
 Si su organización tiene Microsoft Defender para Office 365 Plan 2, que incluye capacidades de investigación de amenazas y [respuesta,](office-365-ti.md)puede usar Attack Simulator en el Centro de seguridad & Cumplimiento para ejecutar escenarios de ataque realistas en su organización. Estos ataques simulados pueden ayudarte a identificar y encontrar usuarios vulnerables antes de que un ataque real impacte en la línea de fondo. Lea este artículo para obtener más información.
 
 > [!NOTE]
-> La experiencia de Attack Simulator v1 se cambió al modo de solo lectura y se reemplazó por el entrenamiento del simulador de ataque que se describe en Introducción al entrenamiento [de simulación de ataque.](attack-simulation-training-get-started.md)
-> Se ha deshabilitado la capacidad de iniciar nuevas simulaciones desde este sitio. Sin embargo, aún puede tener acceso a los informes de simulaciones que se ejecutan durante un período de 90 días a partir del 24 de enero de 2021.
+>
+> Attack Simulator, tal como se describe en este  artículo, es ahora de solo lectura y ha sido reemplazado por el aprendizaje de simulación de ataque en el nodo de colaboración Email **&** en el Centro de seguridad de [Microsoft 365](https://security.microsoft.com). Para obtener más información, vea [Get started using Attack simulation training](attack-simulation-training-get-started.md).
+>
+> Se ha deshabilitado la capacidad de iniciar nuevas simulaciones desde esta versión de Attack Simulator. Sin embargo, aún puede acceder a informes durante un máximo de 90 días a partir del 24 de enero de 2021.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 

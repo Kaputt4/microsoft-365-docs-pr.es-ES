@@ -1,7 +1,7 @@
 ---
-title: Trabajar con resultados de consulta de búsqueda avanzada en Microsoft 365 Defender
-description: Obtener el máximo partido de los resultados de la consulta devueltos por la búsqueda avanzada en Microsoft 365 Defender
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, detecciones personalizadas, esquema, kusto, microsoft 365, Protección contra amenazas de Microsoft, visualización, gráfico, filtros, exploración en profundidad
+title: Trabajar con resultados avanzados de consulta de búsqueda en Microsoft 365 Defender
+description: Obtener el máximo partido de los resultados de consulta devueltos por la búsqueda avanzada en Microsoft 365 Defender
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, detecciones personalizadas, esquema, kusto, microsoft 365, Protección contra amenazas de Microsoft, visualización, gráfico, filtros, exploración en profundidad
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 462ba35f584b45bbfeb0d8a3de3b118ba1c9e17c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3481190a615cfa8914b3623f09d4079468bd431f
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932327"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712119"
 ---
-# <a name="work-with-advanced-hunting-query-results"></a>Trabajar con resultados de consulta de búsqueda avanzada
+# <a name="work-with-advanced-hunting-query-results"></a>Trabajar con resultados avanzados de consulta de búsqueda
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,32 +37,32 @@ ms.locfileid: "49932327"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Aunque puede crear [](advanced-hunting-overview.md) consultas de búsqueda avanzada para devolver información muy precisa, también puede trabajar con los resultados de la consulta para obtener más información e investigar actividades e indicadores específicos. Puede realizar las siguientes acciones en los resultados de la consulta:
+Aunque puede crear [](advanced-hunting-overview.md) las consultas de búsqueda avanzadas para devolver información muy precisa, también puede trabajar con los resultados de la consulta para obtener más información e investigar actividades e indicadores específicos. Puede realizar las siguientes acciones en los resultados de la consulta:
 
 - Ver resultados como una tabla o gráfico
 - Exportar tablas y gráficos
-- Explorar en profundidad la información detallada de la entidad
-- Retocar las consultas directamente desde los resultados o aplicar filtros
+- Profundizar en la información detallada de la entidad
+- Ajustar las consultas directamente desde los resultados o aplicar filtros
 
-## <a name="view-query-results-as-a-table-or-chart"></a>Ver los resultados de la consulta como una tabla o un gráfico
+## <a name="view-query-results-as-a-table-or-chart"></a>Ver resultados de consulta como tabla o gráfico
 De forma predeterminada, la búsqueda avanzada muestra los resultados de la consulta como datos tabulares. También puede mostrar los mismos datos que un gráfico. La búsqueda avanzada admite las siguientes vistas:
 
-| Tipo de vista | Description |
+| Tipo de vista | Descripción |
 | -- | -- |
 | **Table** | Muestra los resultados de la consulta en formato tabular |
-| **Gráfico de columnas** | Representa una serie de elementos únicos en el eje X como barras verticales cuyos altos representan valores numéricos de otro campo |
-| **Gráfico de columnas apiladas** | Representa una serie de elementos únicos en el eje X como barras verticales apiladas cuyos altos representan valores numéricos de uno o más campos |
-| **Gráfico circular** | Representa los pies de sección que representan elementos únicos. El tamaño de cada gráfico circular representa valores numéricos de otro campo. |
-| **Gráfico de donas** | Representa arcos de sección que representan elementos únicos. La longitud de cada arco representa valores numéricos de otro campo. |
+| **Gráfico de columnas** | Representa una serie de elementos únicos en el eje X como barras verticales cuyas alturas representan valores numéricos de otro campo |
+| **Gráfico de columnas apiladas** | Representa una serie de elementos únicos en el eje X como barras verticales apiladas cuyas alturas representan valores numéricos de uno o más campos |
+| **Gráfico circular** | Representa los pies seccionales que representan elementos únicos. El tamaño de cada circular representa valores numéricos de otro campo. |
+| **Gráfico de donas** | Representa arcos seccionales que representan elementos únicos. La longitud de cada arco representa valores numéricos de otro campo. |
 | **Gráfico de líneas** | Traza valores numéricos para una serie de elementos únicos y conecta los valores trazados |
 | **Gráfico de dispersión** | Traza valores numéricos para una serie de elementos únicos |
 | **Gráfico de áreas** | Traza valores numéricos para una serie de elementos únicos y rellena las secciones debajo de los valores trazados |
 
 ### <a name="construct-queries-for-effective-charts"></a>Crear consultas para gráficos efectivos
-Al representar gráficos, la búsqueda avanzada identifica automáticamente las columnas de interés y los valores numéricos que se agregan. Para obtener gráficos significativos, cree las consultas para devolver los valores específicos que desea ver visualizados. Estas son algunas consultas de ejemplo y los gráficos resultantes.
+Al representar gráficos, la búsqueda avanzada identifica automáticamente las columnas de interés y los valores numéricos que se agregan. Para obtener gráficos significativos, construya las consultas para devolver los valores específicos que desea ver visualizados. Estas son algunas consultas de ejemplo y los gráficos resultantes.
 
 #### <a name="alerts-by-severity"></a>Alertas por gravedad
-Use el `summarize` operador para obtener un recuento numérico de los valores que desea gráficos. La consulta siguiente usa el `summarize` operador para obtener el número de alertas por gravedad.
+Use el `summarize` operador para obtener un recuento numérico de los valores que desea gráfico. La consulta siguiente usa el `summarize` operador para obtener el número de alertas por gravedad.
 
 ```kusto
 AlertInfo
@@ -70,13 +70,13 @@ AlertInfo
 ```
 Al representar los resultados, un gráfico de columnas muestra cada valor de gravedad como una columna independiente:
 
-![Imagen de resultados de consulta de búsqueda avanzada que se muestran como un gráfico de columnas Resultados de consulta para alertas por gravedad mostradas ](../../media/advanced-hunting-column-chart.jpg)
- *como un gráfico de columnas*
+![Imagen de resultados avanzados de consulta de búsqueda que se muestran como un gráfico de columnas Resultados de consulta para alertas por gravedad mostradas ](../../media/advanced-hunting-column-chart.jpg)
+ *como gráfico de columnas*
 
 #### <a name="alert-severity-by-operating-system"></a>Gravedad de alerta por sistema operativo
-También puede usar el operador `summarize` para preparar los resultados de los gráficos de valores de varios campos. Por ejemplo, es posible que quieras comprender cómo se distribuyen las gravedades de alerta entre sistemas operativos (SO). 
+También puede usar el operador para `summarize` preparar los resultados de los valores de gráfico de varios campos. Por ejemplo, es posible que desee comprender cómo se distribuyen las gravedades de alerta entre sistemas operativos (SO). 
 
-La consulta siguiente usa un operador para extraer información del sistema operativo de la tabla y, a continuación, usa para contar los valores de `join` las columnas y las `DeviceInfo` `summarize` `OSPlatform` `Severity` columnas:
+La consulta siguiente usa un operador para extraer información del sistema operativo de la tabla y, a continuación, usa para contar los valores `join` `DeviceInfo` de las columnas `summarize` `OSPlatform` `Severity` y:
 
 ```kusto
 AlertInfo
@@ -86,25 +86,25 @@ AlertInfo
 ```
 Estos resultados se visualizan mejor con un gráfico de columnas apiladas:
 
-![Imagen de resultados de consulta de búsqueda avanzada que se muestran como un gráfico apilado Resultados de consulta para alertas por sistema operativo y gravedad mostradas ](../../media/advanced-hunting-stacked-chart.jpg)
+![Imagen de resultados avanzados de consulta de búsqueda que se muestran como un gráfico apilado Resultados de consulta para alertas por sistema operativo y gravedad mostradas ](../../media/advanced-hunting-stacked-chart.jpg)
  *como un gráfico apilado*
 
-#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Mensajes de correo electrónico de suplantación de identidad (phishing) en los diez principales dominios de remitente
-Si está trabajando con una lista de valores que no es finita, puede usar el operador para crear un gráfico solo de los valores con `Top` la mayoría de las instancias. Por ejemplo, para obtener los diez dominios de remitente con más correos electrónicos de suplantación de identidad (phishing), use la siguiente consulta:
+#### <a name="phishing-emails-across-top-ten-sender-domains"></a>Correos electrónicos de suplantación de identidad (phishing) en los diez dominios de remitente principales
+Si está trabajando con una lista de valores que no es finita, puede usar el operador para mostrar solo los valores con más `Top` instancias. Por ejemplo, para obtener los diez dominios de remitente con más correos electrónicos de suplantación de identidad, use la consulta siguiente:
 
 ```kusto
 EmailEvents
-| where PhishFilterVerdict == "Phish"
-| summarize Count = count() by SenderFromDomain
+| where ThreatTypes has "Phish" 
+| summarize Count = count() by SenderFromDomain 
 | top 10 by Count
 ```
-Use la vista de gráfico circular para mostrar de forma eficaz la distribución entre los dominios principales:
+Use la vista gráfico circular para mostrar de forma eficaz la distribución en los dominios superiores:
 
-![Imagen de resultados de consulta de búsqueda avanzada que se muestran como gráfico circular con distribución de correos electrónicos de suplantación de identidad ](../../media/advanced-hunting-pie-chart.jpg)
- *en dominios de remitentes principales*
+![Imagen de resultados avanzados de consulta de búsqueda que se muestran como gráfico circular gráfico circular que muestra la distribución de correos electrónicos de suplantación de identidad ](../../media/advanced-hunting-pie-chart.jpg)
+ *(phishing) en los dominios principales del remitente*
 
-#### <a name="file-activities-over-time"></a>Actividades de archivos a lo largo del tiempo
-Con el operador con la función, puede comprobar si hay eventos relacionados `summarize` con un indicador determinado a lo largo del `bin()` tiempo. La consulta siguiente cuenta los eventos relacionados con el archivo en intervalos de 30 minutos para mostrar picos de `invoice.doc` actividad relacionados con ese archivo:
+#### <a name="file-activities-over-time"></a>Actividades de archivo con el tiempo
+Con el operador con la función, puede comprobar si hay eventos que impliquen un indicador determinado a lo `summarize` largo del `bin()` tiempo. La consulta siguiente cuenta los eventos que implican el archivo en intervalos de 30 minutos para mostrar picos de `invoice.doc` actividad relacionados con ese archivo:
 
 ```kusto
 AppFileEvents
@@ -112,24 +112,24 @@ AppFileEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
 ```
-El siguiente gráfico de líneas resalta claramente los períodos de tiempo con más actividad que `invoice.doc` implica: 
+El siguiente gráfico de líneas resalta claramente los períodos de tiempo con más actividad que implica `invoice.doc` : 
 
-![Imagen de los resultados de la consulta de búsqueda avanzada que se muestra como un gráfico de líneas del gráfico de líneas que muestra el número de eventos relacionados ](../../media/advanced-hunting-line-chart.jpg)
- *con un archivo a lo largo del tiempo*
+![Imagen de resultados avanzados de consulta de búsqueda que se muestran como un gráfico de líneas Gráfico de líneas que muestra el número de eventos ](../../media/advanced-hunting-line-chart.jpg)
+ *que implican un archivo a lo largo del tiempo*
 
 
 ## <a name="export-tables-and-charts"></a>Exportar tablas y gráficos
 Después de ejecutar una consulta, **seleccione Exportar** para guardar los resultados en un archivo local. La vista elegida determina cómo se exportan los resultados:
 
-- **Vista de tabla:** los resultados de la consulta se exportan en formato tabular como un libro de Microsoft Excel
+- **Vista tabla:** los resultados de la consulta se exportan en forma tabular como un libro de Microsoft Excel
 - **Cualquier gráfico:** los resultados de la consulta se exportan como una imagen JPEG del gráfico representado
 
-## <a name="drill-down-from-query-results"></a>Obtención de detalles de los resultados de la consulta
+## <a name="drill-down-from-query-results"></a>Profundizar en los resultados de la consulta
 Para inspeccionar rápidamente un registro en los resultados de la consulta, seleccione la fila correspondiente para abrir el panel **Inspeccionar registro.** El panel proporciona la siguiente información basada en el registro seleccionado:
 
-- **Activos:** vista resumida de los activos principales (buzones, dispositivos y usuarios) que se encuentran en el registro, enriquecida con la información disponible, como los niveles de riesgo y exposición.
-- **Árbol de procesos:** generado para registros con información de procesos y enriquecido mediante información contextual disponible; En general, las consultas que devuelven más columnas pueden dar como resultado árboles de proceso más enriquecidos.
-- **Todos los** detalles: todos los valores de las columnas del registro  
+- **Activos:** vista resumida de los principales activos (buzones, dispositivos y usuarios) que se encuentran en el registro, enriquecidos con información disponible, como los niveles de riesgo y exposición
+- **Árbol de procesos:** generado para registros con información del proceso y enriquecido mediante información contextual disponible; en general, las consultas que devuelven más columnas pueden dar como resultado árboles de proceso más enriquecidos.
+- **Todos los detalles:** todos los valores de las columnas del registro  
 
 ![Imagen del registro seleccionado con panel para inspeccionar el registro](../../media/mtp-ah/inspect-record.png)
 
@@ -147,7 +147,7 @@ Haga clic con el botón derecho en un valor en el conjunto de resultados para me
 ## <a name="filter-the-query-results"></a>Filtrar los resultados de la consulta
 Los filtros que aparecen a la derecha proporcionan un resumen del conjunto de resultados. Cada columna tiene una sección en la que se muestra una lista de los valores de la columna y el número de instancias.
 
-Para refinar la consulta, seleccione los botones o los valores que desee incluir o excluir y, a `+` `-` continuación, seleccione Ejecutar **consulta.**
+Para refinar la consulta, seleccione los botones o de los valores que desea incluir o excluir y, a `+` `-` continuación, seleccione Ejecutar **consulta**.
 
 ![Imagen del filtro de búsqueda avanzada](../../media/advanced-hunting-filter.png)
 

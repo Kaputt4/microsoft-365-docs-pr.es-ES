@@ -1,7 +1,7 @@
 ---
-title: Tabla IdentityQueryEvents en el esquema de búsqueda avanzada
+title: Tabla IdentityQueryEvents en el esquema de búsqueda avanzado
 description: Obtenga información sobre los eventos de consulta de Active Directory en la tabla IdentityQueryEvents del esquema de búsqueda avanzada
-keywords: búsqueda avanzada, búsqueda de amenazas, ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, IdentityQueryEvents, Azure AD, Active Directory, Azure ATP, identidades, consultas LDAP
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, IdentityQueryEvents, Azure AD, Active Directory, ATP de Azure, identidades, consultas LDAP
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 48a1520e9fc6239fd3105f01a32a03e5e58df174
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: eb1f408b61444771f5d450b46dbc9c2b4a009e4c
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145300"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712335"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -38,17 +38,17 @@ ms.locfileid: "50145300"
 La tabla del esquema de búsqueda avanzada contiene información sobre las consultas realizadas en objetos de Active Directory, como usuarios, grupos, dispositivos `IdentityQueryEvents` y dominios. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
 >[!TIP]
-> Para obtener información detallada acerca de los tipos de eventos (valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en el centro de seguridad. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+> Para obtener información detallada acerca de los tipos de eventos ( valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en el centro de seguridad.
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `ActionType` | cadena | Tipo de actividad que desencadenó el evento. Consulta la [referencia del esquema del portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información |
+| `ActionType` | cadena | Tipo de actividad que desencadenó el evento. Vea la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información |
 | `Application` | string | Aplicación que realizó la acción grabada |
 | `QueryType` | string | Tipo de consulta, como QueryGroup, QueryUser o EnumerateUsers |
-| `QueryTarget` | string | Nombre del usuario, grupo, dispositivo, dominio o cualquier otro tipo de entidad que se esté consultando |
+| `QueryTarget` | string | Nombre del usuario, grupo, dispositivo, dominio o cualquier otro tipo de entidad que se está consultando |
 | `Query` | string | Cadena usada para ejecutar la consulta |
 | `Protocol` | string | Protocolo usado durante la comunicación |
 | `AccountName` | string | Nombre de usuario de la cuenta |
@@ -56,12 +56,12 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
 | `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
 | `AccountObjectId` | string | Identificador único de la cuenta en Azure AD |
-| `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o nombre, una iniciación intermedia y un apellido o apellido. |
+| `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
 | `DeviceName` | string | Nombre de dominio completo (FQDN) del extremo |
 | `IPAddress` | string | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas |
 | `Port` | string | Puerto TCP usado durante la comunicación |
-| `DestinationDeviceName` | string | Nombre del dispositivo que ejecuta la aplicación servidor que procesó la acción grabada |
-| `DestinationIPAddress` | string | Dirección IP del dispositivo que ejecuta la aplicación servidor que procesó la acción grabada |
+| `DestinationDeviceName` | string | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
+| `DestinationIPAddress` | string | Dirección IP del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
 | `DestinationPort` | string | Puerto de destino de comunicaciones de red relacionadas |
 | `TargetDeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo al que se aplicó la acción grabada |
 | `TargetAccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta a la que se aplicó la acción grabada |

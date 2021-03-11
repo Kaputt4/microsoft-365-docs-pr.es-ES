@@ -1,7 +1,7 @@
 ---
 title: Tabla AppFileEvents en el esquema de búsqueda avanzada
-description: Obtenga información sobre eventos relacionados con archivos asociados con servicios y aplicaciones en la nube en la tabla AppFileEvents del esquema de búsqueda avanzada
-keywords: búsqueda avanzada, búsqueda de amenazas, ciberamenazas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, AppFileEvents, Cloud App Security, MCAS
+description: Obtenga información sobre los eventos relacionados con archivos asociados con aplicaciones y servicios en la nube en la tabla AppFileEvents del esquema de búsqueda avanzada
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, descripción, AppFileEvents, Cloud App Security, MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8406d1f9e3d56555b1699d191933c6f9735c9574
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 9eb2f195959409ad25b9a401a44425cc4af7f97e
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145492"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712503"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -37,15 +37,16 @@ ms.locfileid: "50145492"
 
 La tabla del esquema de búsqueda avanzada contiene información sobre las actividades relacionadas con archivos en aplicaciones y servicios en la nube `AppFileEvents` supervisados por Microsoft Cloud App Security. [](advanced-hunting-overview.md) Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.
 
->[!TIP]
-> Para obtener información detallada acerca de los tipos de eventos (valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en el centro de seguridad. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+>[!WARNING]
+>Esta tabla se retirará pronto. A partir del 7 de marzo de 2021, la tabla ya no es `AppFileEvents` registros. Los usuarios que desprotegán las actividades relacionadas con archivos en los servicios en la nube en y más allá de esa fecha deben usar la [tabla CloudAppEvents](advanced-hunting-cloudappevents-table.md) en su lugar. <br><br>Asegúrese de buscar consultas y reglas de detección personalizadas que aún usan la tabla y `AppFileEvents` editarlas para usar la `CloudAppEvents` tabla. Encontrará más instrucciones sobre la conversión de consultas afectadas en [Hunt across cloud app activities with Microsoft 365 Defender advanced hunting](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857).
+
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `ActionType` | cadena | Tipo de actividad que desencadenó el evento. Consulta la [referencia del esquema del portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información |
+| `ActionType` | cadena | Tipo de actividad que desencadenó el evento. Vea la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información |
 | `Application` | string | Aplicación que realizó la acción grabada |
 | `FileName` | cadena | Nombre del archivo donde se aplicó la acción registrada |
 | `FolderPath` | cadena | Carpeta que contiene el archivo al que se aplicó la acción grabada |
@@ -57,19 +58,23 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
 | `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
 | `AccountObjectId` | string | Identificador único de la cuenta en Azure AD |
-| `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o nombre, una iniciación intermedia y un apellido o apellido. |
+| `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
 | `DeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo |
 | `DeviceType` | string | Tipo de dispositivo | 
 | `OSPlatform` | string | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. |
 | `IPAddress` | cadena | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas |
 | `Port` | string | Puerto TCP usado durante la comunicación  |
-| `DestinationDeviceName` | string | Nombre del dispositivo que ejecuta la aplicación servidor que procesó la acción grabada |
-| `DestinationIPAddress` | string | Dirección IP del dispositivo que ejecuta la aplicación servidor que procesó la acción grabada |
+| `DestinationDeviceName` | string | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
+| `DestinationIPAddress` | string | Dirección IP del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
 | `DestinationPort` | string | Puerto de destino de comunicaciones de red relacionadas |
 | `Location` | string | Ciudad, país u otra ubicación geográfica asociada al evento |
-| `Isp` | string | Proveedor de servicios de Internet (ISP) asociado a la dirección IP del extremo |
+| `Isp` | string | Proveedor de servicios de Internet (ISP) asociado con la dirección IP del extremo |
 | `ReportId` | largo | Identificador único del evento |
 | `AdditionalFields` | string | Información adicional sobre la entidad o el evento |
+
+>[!TIP]
+> Para obtener información detallada acerca de los tipos de eventos ( valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en el centro de seguridad.
+
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)

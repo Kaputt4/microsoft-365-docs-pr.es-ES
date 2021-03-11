@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Summary: Understand the migration phases actions and impacts of moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: 045e29cba293dd74d3a77beae80d78380eaa4147
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 98a547a9af772e880465f75d9a3b01b1795639e1
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/10/2021
-ms.locfileid: "50604013"
+ms.locfileid: "50711957"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Fases de migración acciones e impactos para la migración desde Microsoft Cloud Deutschland (general)
 
@@ -55,9 +55,10 @@ Las secciones siguientes contienen acciones y efectos para las cargas de trabajo
 ## <a name="opt-in"></a>Opt-In
 
 **Se aplica a**: Todos los clientes con un inquilino de Office 365 hospedado en Microsoft Cloud Deutschland (MCD)
+
 | Pasos | Descripción | Impacto |
 |:-------|:-----|:-------|
-| No podemos migrar inquilinos de Office 365 hospedados en mcd sin consentimiento. | Microsoft obtiene el derecho de migrar de dos maneras, lo que permite a Microsoft organizar la transición de datos y servicios a la instancia de servicios globales de Office 365. <ol><li>El administrador de inquilinos de Office 365 opta por la migración controlada por Microsoft. </li><li> Los clientes renuevan cualquier suscripción en su inquilino de MCD Office 365 después del 1 de mayo de 2020. Notificaremos a estos clientes sobre el derecho de migración cada mes, esperaremos 30 días para dar a los clientes la oportunidad de cancelar y, a continuación, participaremos directamente.</li></ol> | <ul><li>El espacio empresarial se marca como consentido para la migración y el Centro de administración muestra la confirmación. </li><li>La confirmación se publica en el Centro de mensajes del inquilino de Office 365. La configuración del servicio continúa desde los puntos de conexión de Microsoft Cloud Deutschland. </li><li>El administrador de inquilinos debe supervisar el Centro de mensajes de Office 365 para obtener actualizaciones sobre el estado de la fase de igración. </li></ul>|
+| No podemos migrar inquilinos de Office 365 hospedados en mcd sin consentimiento. | Microsoft obtiene el derecho de migrar de dos maneras, lo que permite a Microsoft organizar la transición de datos y servicios a la instancia de servicios globales de Office 365. <ol><li>El administrador de inquilinos de Office 365 opta por la migración controlada por Microsoft. </li><li> Los clientes renuevan cualquier suscripción en su inquilino de MCD Office 365 después del 1 de mayo de 2020. Notificaremos a estos clientes sobre el derecho de migración cada mes, esperaremos 30 días para dar a los clientes la oportunidad de cancelar y, a continuación, participaremos directamente.</li></ol> | <ul><li>El espacio empresarial se marca como consentido para la migración y el Centro de administración muestra la confirmación. </li><li>La confirmación se publica en el Centro de mensajes del inquilino de Office 365. La configuración del servicio continúa desde los puntos de conexión de Microsoft Cloud Deutschland. </li><li>El administrador de inquilinos debe supervisar el Centro de mensajes de Office 365 para obtener actualizaciones sobre el estado de la fase de migración. </li></ul>|
 
 ## <a name="subscription-phase-3"></a>Suscripción (fase 3)
 
@@ -89,9 +90,9 @@ Consideraciones adicionales:
 
 **Se aplica a:** Todos los clientes que usan Exchange Online
 
-Si usa Exchange Online híbrido: los administradores híbridos de Exchange Online deben ejecutar el Asistente para configuración híbrida  **(HCW)** varias veces como parte de esta transición. Vea los [pasos de migración avanzados de pretrabajo para Exchange](ms-cloud-germany-transition-add-experience.md#Exchange-Online-before-phase-5)
+Si usa Exchange Online híbrido: los administradores híbridos de Exchange Online deben ejecutar el Asistente para configuración híbrida  **(HCW)** varias veces como parte de esta transición. Vea los [pasos de migración avanzados de pretrabajo para Exchange](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
 
-Como se describe en el trabajo previo de [migración,](ms-cloud-germany-transition-add-pre-work.md#exchange-online)antes de que comience la fase 5 del paso de **migración,** los clientes híbridos de Exchange Online deben ejecutar la versión más reciente del Asistente para configuración híbrida de Exchange (HCW) en modo "Office 365 Germany" para preparar la configuración local para la migración a los servicios globales de Office 365.
+Como se describe en el trabajo previo de [migración,](ms-cloud-germany-transition-add-pre-work.md#exchange-online)antes de que comience la fase 5 del paso de **migración,** los clientes híbridos de Exchange Online deben ejecutar la versión más reciente del Asistente para la configuración híbrida de Exchange (HCW) en modo "Office 365 Germany" para preparar la configuración local para la migración a los servicios globales de Office 365.
 
 Una vez completada la fase de migración **5** (cuando se publica el aviso del Centro de mensajes), debe ejecutar el HCW de nuevo con la configuración de Office 365 Worldwide para apuntar los sistemas locales a los servicios globales de Office 365. Es posible que se requieran actualizaciones adicionales de DNS si usa dominios personalizados.
 
@@ -177,7 +178,7 @@ Los clientes con Dynamics 365 requieren una participación adicional para migrar
 
 **Se aplica a:** Todos los clientes que usan aplicaciones de escritorio de Office (Word, Excel, PowerPoint, Outlook, ...)
 
-Los inquilinos de Office 365 que transiciónn a la región "Alemania" requieren que todos los usuarios cierren, cierren sesión desde Office 365 y vuelvan a iniciar sesión para todas las aplicaciones de escritorio de Office (Word, Excel, PowerPoint, Outlook, etc.) y el cliente de OneDrive para la Empresa después de que la migración del inquilino haya alcanzado la fase 9 . Al iniciar sesión, permite a los servicios de Office obtener nuevos tokens de autenticación del servicio global de Azure AD.
+Los inquilinos de Office 365 que transiciónn a la región "Alemania" requieren que todos los usuarios cierren, cierren sesión desde Office 365 y vuelvan a iniciar sesión para todas las aplicaciones de escritorio de Office (Word, Excel, PowerPoint, Outlook, etc.) y el cliente de OneDrive para la Empresa después de que la migración de inquilinos haya alcanzado la fase 9. Al iniciar sesión, permite a los servicios de Office obtener nuevos tokens de autenticación del servicio global de Azure AD.
 
 | Pasos | Descripción | Impacto |
 |:-------|:-------|:-------|
