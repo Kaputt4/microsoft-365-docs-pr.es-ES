@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo regular las características relacionadas en grupos de Microsoft 365, Teams, SharePoint y Yammer.
-ms.openlocfilehash: 8f1341b3b3bab1e9ae7219f01124983aefb022b1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a9b4767c450ffc775fb84711e48b9f6c775419e5
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50424063"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741602"
 ---
 # <a name="what-is-collaboration-governance"></a>¿Qué es la gobernanza de la colaboración?
 
@@ -41,7 +41,7 @@ Esta serie de artículos le ayudará a comprender cómo interactúan los grupos,
 
 Existen muchas opciones para implementar Grupos de Microsoft 365 y Teams para una colaboración segura en su organización. Se recomienda usar este contenido de gobierno junto con Configurar la colaboración segura con [Microsoft 365](setup-secure-collaboration-with-teams.md) y sus artículos asociados para crear la mejor solución de colaboración para su organización.
 
-## <a name="what-are-microsoft-365-groups"></a>¿Qué son los grupos de Microsoft 365?
+## <a name="why-microsoft-365-groups-are-important"></a>Por qué los grupos de Microsoft 365 son importantes
 
 Los grupos de Microsoft 365 te permiten elegir un conjunto de personas con las que quieres colaborar y configurar fácilmente una colección de recursos para que esas personas compartan. Agregar miembros al grupo concede automáticamente los permisos necesarios a todos los activos proporcionados por el grupo. Tanto Teams como Yammer usan grupos de Microsoft 365 para administrar su pertenencia.
 
@@ -240,7 +240,7 @@ Vea un ejemplo en segundo plano de cómo los grupos de Microsoft 365, SharePoint
 
 - [Encontrar el lugar ideal de colaboración con Grupos de Office 365, SharePoint, Teams y Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Documentación de Seguridad de Microsoft 365](https://docs.microsoft.com/microsoft-365/security)
 

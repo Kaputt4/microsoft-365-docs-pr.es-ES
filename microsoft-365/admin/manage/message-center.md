@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenga información general sobre el Centro de mensajes de Microsoft 365 y su rol en la administración de cambios.
-ms.openlocfilehash: 6a7c547a0423a7e2bda2d3ced45d285ee55075ca
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 905aa411e931f802735c913922a6431e7466cdb5
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405917"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727228"
 ---
 # <a name="message-center"></a>Centro de mensajes
 
@@ -72,7 +72,7 @@ También puedes usar la aplicación de administración de [Microsoft 365](https:
 
 ### <a name="messages"></a>Mensajes
 
-El centro de mensajes presenta una vista de todos los mensajes activos en un formato de tabla. De forma predeterminada, muestra el mensaje más reciente en la parte superior de la lista. Puede seleccionar **Servicio para ver** los mensajes de varios servicios, como Aplicaciones de Microsoft 365, SharePoint Online, etc.   En **Etiqueta** puede seleccionar **Impacto** de administrador , **Privacidad de** datos, Actualización de **características,** **Actualización principal,** **Nueva característica** o Mensajes de **impacto del** usuario. En **Estado de mensaje,** puede seleccionar **Favoritos**, **No leídos** o **Mensajes actualizados.**
+El centro de mensajes presenta una vista de todos los mensajes activos en un formato de tabla. De forma predeterminada, muestra el mensaje más reciente en la parte superior de la lista. Puede seleccionar **Servicio para ver** los mensajes de varios servicios, como Aplicaciones de Microsoft 365, SharePoint Online, etc.   En **Etiqueta** puede seleccionar **Impacto** de administrador **,** Privacidad de datos **,** Actualización de características , Actualización **principal,** **Nueva característica,** Retiro **o** Mensajes de **impacto del** usuario. En **Estado de mensaje,** puede seleccionar **Favoritos**, **No leídos** o **Mensajes actualizados.**
 
 La pestaña Archivo muestra los mensajes que ha archivado. Para archivar un mensaje, en el panel de mensajes, seleccione **Archivo**.
 
@@ -90,7 +90,7 @@ Esta es una introducción rápida a la información que verá en cada columna.
 |Título del mensaje  <br/> |Los títulos de los mensajes son breves descripciones de los próximos cambios. Si no se muestra el título completo, coloca el cursor sobre él y todo el título aparecerá en un cuadro emergente.  <br/> |
 |Servicio <br/> |Los iconos indican la aplicación a la que se aplica el mensaje.<br/> |
 |Más opciones <br/> |Más opciones te permiten descartar un mensaje, marcarlo como leído o no leído, o compartirlo con otro administrador. Para restaurar un mensaje archivado, seleccione **la** pestaña Archivo, seleccione la marca de verificación situada junto al mensaje y **seleccione Restaurar**. <br/> |
-|Etiquetas <br/> |Puede elegir etiquetas en **la** lista desplegable Etiqueta para filtrar mensajes. Las etiquetas disponibles son: **Impacto de administrador,** **Actualización principal**, **Privacidad de** datos , Actualización **de características,** **Nueva característica** e Impacto **del usuario.** <br/> |
+|Etiquetas <br/> |Puede elegir etiquetas en **la** lista desplegable Etiqueta para filtrar mensajes. Las etiquetas disponibles son: **Impacto de administrador**, Actualización **principal** **,** Privacidad de datos , Actualización de **características**, **Nueva característica,** Retiro **e** Impacto del **usuario.** <br/> |
 |Categoría  <br/> | Esto no se muestra de forma predeterminada, pero se puede especificar en el panel **Elegir** columnas. Los mensajes se identifican mediante una de las tres categorías siguientes: <br/><br/> **Evitar o solucionar problemas:** le informa de los problemas conocidos que afectan a su organización y puede requerir que tome medidas para evitar interrupciones en el servicio. Evitar o solucionar problemas son diferentes de los mensajes de mantenimiento del servicio porque le piden que sea proactivo para evitar problemas. <br/> <br/> **Planear el cambio:** le informa de los cambios en Microsoft 365 que pueden requerir que actúe para evitar interrupciones en el servicio. Por ejemplo, le haremos saber sobre los cambios en los requisitos del sistema o sobre las características que se están quitando. Intentamos proporcionar al menos 30 días de aviso de cualquier cambio que requiera que un administrador actúe para mantener el servicio funcionando con normalidad. <br/> <br/> **Mantenerse informado:** le informa sobre las características nuevas o actualizadas que estamos activar en su organización. Las características normalmente se anuncian primero en la [guía básica de Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2070821). <br/><br/>También puede que le permita saber sobre el mantenimiento planeado de acuerdo con nuestro Contrato de nivel de servicio. El mantenimiento planeado puede dar lugar a tiempo de inatención, donde usted o sus usuarios no pueden tener acceso a Microsoft 365, una característica específica o un servicio como el correo electrónico o OneDrive para la Empresa.  <br/> |
 |Actuar por  <br/> |Solo tendremos fechas aquí si estamos realizando un cambio que requiere que hagas una acción antes de una fecha límite determinada. Dado que rara vez usamos **la ley por** columna, si ves algo aquí, debes prestarle más atención.  <br/> |
 |Actualizado por última vez  <br/> |Fecha en que el mensaje se publicó o se actualizó por última vez.  <br/> |

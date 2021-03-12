@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Describe las diferencias clave entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios
-ms.openlocfilehash: 555dfa7d76335a3b943e860e5f41ed64c9d3e874
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: a50941ec117480be586ba828e7b49c4a88a310ab
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50596985"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712299"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Diferencias entre los modelos de comprensión de documentos y los modelos de procesamiento de formularios 
 
@@ -72,17 +72,17 @@ Use la siguiente tabla para comprender cuándo se usa el procesamiento de formul
 
 | Característica | Procesamiento de formularios | Comprensión mediante documentos |
 | ------- | ------- | ------- |
-| Tipo de modelo según cuándo se usa cada uno | Se utilizaba para formatos de archivo semiestructurados, por ejemplo documentos de Office en los que hay diferencias en el diseño pero del que se extrae igualmente información parecida. | Se utilizaba para formatos de archivo no estructurados, por ejemplo PDF con contenido de formularios como facturas u órdenes de encargo en los que el diseño y el formato son parecidos. |
-| Creación de modelos | Modelo creado en AI Builder con un acceso directo desde la biblioteca de documentos de SharePoint.| Modelo creado en una compilación de interfaz nativa en el Centro de contenido de SharePoint.|
-| Tipo de clasificación| Clasificador configurable en el que el aprendizaje automático se usa para proporcionar sugerencias a los sistemas en el que se extraen datos.| Clasificador que se puede entrenar con extractores opcionales mediante el aprendizaje automático para diseñar la ubicación de documentos en los que se extrae datos.|
-| Ubicaciones | Restringido a una única biblioteca de documentos simple al menos que se use Power Platform para recuperar del CDS.| Se puede aplicar a múltiples bibliotecas.|
+| Tipo de modelo; cuándo se usa cada uno | Se usa para formatos de archivo semiestructurados, como PDF con contenido de formularios como facturas u pedidos de compra en los que el diseño y el formato son parecidos.  | Se usa para formatos de archivo semiestructurados, como documentos de Office en los que hay diferencias en el diseño pero de los que se extrae igualmente información parecida. |
+| Creación de modelos | Modelo creado en generador de IA con un acceso directo desde la biblioteca de documentos de SharePoint.| Modelo creado en SharePoint en un sitio nuevo, el centro de contenido. |
+| Tipo de clasificación| El clasificador configurable se usa para proporcionar sugerencias a los sistemas sobre los datos que se extraen.| Clasificador que se puede entrenar con extractores opcionales mediante el aprendizaje automático para asignar la ubicación de documentos en los que se extraen datos.|
+| Ubicaciones | Capacitado para una única biblioteca de documentos.| Se puede aplicar a múltiples bibliotecas.|
 | Tipos de archivo compatibles| Entrenado en formatos PDF, JPG y PNG, 50 MB y 500 páginas.| Entrenado en 5-10 archivos de PDF, Office o correo electrónico, incluyendo ejemplos negativos.<br>Los archivos de Office están truncados a 64 k caracteres. Los archivos escaneados por OCR están limitados a 20 páginas.|
-| Integrar con Metadatos administrados | No | Sí, a través de la configuración de las columnas de la biblioteca de documentos antes del modelo de aprendizaje.|
-| Integración de las características de cumplimiento cuando Microsoft Information Protection está habilitado | Conjunto de etiquetas de retención<br>El conjunto de etiquetas de confidencialidad estará disponible próximamente | Conjunto de etiquetas de retención<br>El conjunto de etiquetas de confidencialidad estará disponible próximamente |
+| Integrar con Metadatos administrados | No | Sí, mediante la formación del extractor de entidades que hace referencia a un campo de metadatos administrados configurados.|
+| Integración de las características de cumplimiento cuando Microsoft Information Protection está habilitado | Establecer etiquetas de retención publicadas.<br>La opción de establecer etiquetas de confidencialidad estará disponible próximamente | Establecer etiquetas de retención publicadas.<br>La opción de establecer etiquetas de confidencialidad estará disponible próximamente |
 | Regiones compatibles| Procesamiento de formularios basado en Power Platform. Para obtener información sobre la disponibilidad global para Power Platform y AI Builder, consulta [disponibilidad de Power Platform](https://dynamics.microsoft.com/geographic-availability/). | Disponible en todas las regiones.|
-| Gastos transaccionales | Usar créditos de AI Builder.<br>Los créditos se pueden comprar en los de 1 M.<br>Los créditos de 1 M están incluidos en la compra de más de 300 licencias de SharePoint Syntex.<br>Los créditos de 1 M permitirán procesar 2000 páginas de archivos.| N/D |
-| Capacidad | Aprovisionado contra el entorno de servicios predeterminado de los datos comunes.| No hay restricciones de capacidad.|
-| Idiomas admitidos| Inglés <br>Próximamente, en 2021: español, alemán, francés e italiano| Trabajo de modelos en todos los lenguajes con alfabeto latino. Además de inglés: alemán, sueco, francés, español, italiano y portugués.|
+| Gastos transaccionales | Usar créditos de AI Builder.<br>Los créditos se pueden comprar en los de 1 M.<br>Los créditos de 1 M están incluidos en la compra de más de 300 licencias de SharePoint Syntex.<br>Los créditos de 1 M permitirán procesar 2000 páginas de archivos.<br>| N/D |
+| Capacidad | Usa el entorno de Power Platform predeterminado (entornos personalizados con soporte para la base de datos de Dataverse). | No tiene restricciones de capacidad.|
+| Idiomas admitidos| Inglés <br>Próximamente en 2021: Idiomas del alfabeto latino | Los modelos funcionan en todos los idiomas del alfabeto latino. Además de inglés: alemán, sueco, francés, español, italiano y portugués.|
 
 ## <a name="see-also"></a>Consulte también
 [Aprendizaje: mejorar el rendimiento empresarial con AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
