@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente para todos los datos de su inquilino de Microsoft 365.
-ms.openlocfilehash: 7bc5403f73e2d61f47e92ab5c94509f3fe9f3e33
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 7ffa9a8148a8ae699711b62da48cd2c856d48cac
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454651"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727483"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Introducción a la clave de cliente de Microsoft 365 en el nivel de inquilino (versión preliminar pública)
 
@@ -33,6 +33,7 @@ Con las claves que proporcione, puede crear una directiva de cifrado de datos (D
 - Sugerencias de chat de Teams por Cortana
 - Mensajes de estado de Teams
 - Información de usuario y señal para Exchange Online
+- Buzones de Exchange Online que no están cifrados ya en el nivel de aplicación
 
 Para Microsoft Teams, la clave de cliente en el nivel de inquilino cifra los nuevos datos desde el momento en que se asigna el DEP al inquilino. La vista previa pública no admite el cifrado de datos anteriores. Para Exchange Online, la clave de cliente cifra todos los datos nuevos y existentes.
 
@@ -42,13 +43,9 @@ Puede crear varios DEP por inquilino, pero solo puede asignar un DEP en cualquie
 
 Si ya tiene la clave de cliente configurada para Exchange Online y Sharepoint Online, aquí se muestra cómo encaja la nueva versión preliminar pública de nivel de inquilino.
 
-La directiva de cifrado de nivel de inquilino que crea cifra todos los datos de las cargas de trabajo de Microsoft Teams y Exchange Online en Microsoft 365. Esta directiva no interfiere con los DEP ajustados correctamente que ya ha creado en clave de cliente.
+La directiva de cifrado de nivel de inquilino que crea cifra todos los datos de las cargas de trabajo de Microsoft Teams y Exchange Online en Microsoft 365. Sin embargo, para Exchange Online, si ya ha asignado DEP de clave de cliente a buzones individuales, la directiva de nivel de inquilino no invalidará esos DEP. La directiva de nivel de inquilino solo cifrará los buzones a los que aún no se haya asignado un DEP de clave de cliente de nivel de buzón.
 
-Ejemplos:
-
-Los archivos de Microsoft Teams y algunas grabaciones de llamadas y reuniones de Teams que se guardan en OneDrive para la Empresa y SharePoint están cifrados por un DEP de SharePoint Online. Un solo DEP de SharePoint Online cifra el contenido dentro de una única ubicación geográfica.
-
-Para Exchange Online, puede crear un DEP que cifre uno o más buzones de usuario con clave de cliente. Al crear una directiva de nivel de inquilino, esa directiva no cifrará los buzones cifrados. Sin embargo, la clave de nivel de inquilino cifrará los buzones que no se ven afectados por un DEP ya.
+Por ejemplo, los archivos de Microsoft Teams y algunas grabaciones de llamadas y reuniones de Teams que se guardan en OneDrive para la Empresa y SharePoint están cifrados por un DEP de SharePoint Online. Un solo DEP de SharePoint Online cifra el contenido dentro de una única ubicación geográfica.
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>Configurar clave de cliente en el nivel de inquilino (versión preliminar pública)
 
@@ -274,7 +271,7 @@ Para comprobar que no se ha establecido una fecha de expiración para las claves
 Get-AzKeyVaultKey -VaultName <vault name>
 ```
 
-La clave de cliente no puede usar una clave expirada y las operaciones que se intentan con una clave expirada producirán un error y posiblemente provocarán una interrupción del servicio. Se recomienda encarecidamente que las claves usadas con la clave de cliente no tengan una fecha de expiración. Una fecha de expiración, una vez establecida, no se puede quitar, pero se puede cambiar a una fecha diferente. Si se debe usar una clave que tenga un conjunto de fechas de expiración, cambie el valor de expiración a 12/31/9999. Las claves con una fecha de expiración establecida en una fecha que no sea 12/31/9999 no pasarán la validación de Microsoft 365.
+La clave de cliente no puede usar una clave expirada y las operaciones que se intentan con una clave expirada producirán un error y posiblemente provocarán una interrupción del servicio. Se recomienda encarecidamente que las claves usadas con la clave de cliente no tengan una fecha de expiración. Una fecha de expiración, una vez establecida, no se puede quitar, pero se puede cambiar a una fecha diferente. Si se debe usar una clave que tenga un conjunto de fechas de expiración, cambie el valor de expiración a 12/31/9999. Las claves con una fecha de expiración establecida en una fecha que no sea 12/31/9999 no superarán la validación de Microsoft 365.
   
 Para cambiar una fecha de expiración que se haya establecido en cualquier valor distinto del 12/31/9999, ejecute el cmdlet [Update-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey) de la siguiente manera:
   
@@ -299,10 +296,10 @@ Debe tener asignados permisos antes de poder ejecutar estos cmdlets. Aunque en e
 ### <a name="create-policy"></a>Crear directiva
 
 ```powershell
-   New-M365DataAtRestEncryptionPolicy [-Name] <String> -AzureKeyIDs <MultiValuedProperty> [-Description <String>] [-Enabled <Boolean>]
+   New-M365DataAtRestEncryptionPolicy [-Name] <String> -AzureKeyIDs <MultiValuedProperty> [-Description <String>]
 ```
 
-Descripción: habilite al administrador de cumplimiento para crear una nueva directiva de cifrado de datos (DEP) con dos claves raíz de AKV. Una vez creada, se puede asignar una directiva mediante Set-M365DataAtRestEncryptionPolicy cmdlet. Tras la primera asignación de claves o después de girar las teclas, las nuevas claves pueden tardar hasta 24 horas en tener efecto. Si el nuevo DEP tarda más de 24 horas en tener efecto, póngase en contacto con Microsoft.
+Descripción: habilite al administrador de cumplimiento para crear una nueva directiva de cifrado de datos (DEP) con dos claves raíz de AKV. Una vez creada, se puede asignar una directiva mediante Set-M365DataAtRestEncryptionPolicyAssignment cmdlet. Tras la primera asignación de claves o después de girar las teclas, las nuevas claves pueden tardar hasta 24 horas en tener efecto. Si el nuevo DEP tarda más de 24 horas en tener efecto, póngase en contacto con Microsoft.
 
 Ejemplo:
 
@@ -321,7 +318,7 @@ Parámetros:
 ### <a name="assign-policy"></a>Asignar directiva
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -Policy “<Default_PolicyName or Default_PolicyID>”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “<Default_PolicyName or Default_PolicyID>”
 ```
 
 Descripción: este cmdlet se usa para configurar la directiva de cifrado de datos predeterminada. Esta directiva se usará para cifrar los datos en todas las cargas de trabajo de soporte técnico. 
@@ -329,18 +326,19 @@ Descripción: este cmdlet se usa para configurar la directiva de cifrado de dato
 Ejemplo:
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -Policy “Tenant default policy”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “Default_PolicyName”
 ```
 
 Parámetros:
+
 | Nombre | Descripción | Opcional (Y/N) |
 |----------|----------|---------|
--Policy|Especifica la directiva de cifrado de datos que debe asignarse; especifique el nombre de la directiva o el identificador de directiva.|N|
+-DataEncryptionPolicy|Especifica la directiva de cifrado de datos que debe asignarse; especifique el nombre de la directiva o el identificador de directiva.|N|
 
 ### <a name="modify-or-refresh-policy"></a>Modificar o actualizar directiva
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicy [-Identity] < M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter> -Refresh [-Enabled <Boolean>] [-Name <String>] [-Description <String>]
+Set-M365DataAtRestEncryptionPolicy [-Identity] <M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter> -Refresh [-Enabled <Boolean>] [-Name <String>] [-Description <String>]
 ```
 
 Descripción: el cmdlet se puede usar para modificar o actualizar una directiva existente. También se puede usar para habilitar o deshabilitar una directiva. Tras la primera asignación de claves o después de girar las teclas, las nuevas claves pueden tardar hasta 24 horas en tener efecto. Si el nuevo DEP tarda más de 24 horas en tener efecto, póngase en contacto con Microsoft.
@@ -360,19 +358,20 @@ Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
 ```
 
 Parámetros:
+
 | Nombre | Descripción | Opcional (Y/N) |
 |----------|----------|---------|
 |-Identidad|Especifica la directiva de cifrado de datos que desea modificar.|N|
 |-Refresh|Use el modificador Refresh para actualizar la directiva de cifrado de datos después de girar cualquiera de las claves asociadas en el Almacén de claves de Azure. No es necesario especificar un valor con este modificador.|v|
-|-Enabled|El parámetro Enabled habilita o deshabilita la directiva de cifrado de datos. Antes de deshabilitar una directiva, debe desasignla del espacio empresarial. Los valores válidos son:</br > $true: la directiva está habilitada</br > $true: la directiva está habilitada. Es el valor predeterminado.
+|-Enabled|El parámetro Enabled habilita o deshabilita la directiva de cifrado de datos. Antes de deshabilitar una directiva, debe desasignla del espacio empresarial. Los valores admitidos son:</br > $true: la directiva está habilitada</br > $true: la directiva está habilitada. Es el valor predeterminado.
 |v|
-|-Name|El parámetro Name especifica el nombre único de la directiva de cifrado de datos.|v
+|-Name|El parámetro Name especifica el nombre único de la directiva de cifrado de datos.|v|
 |-Description|El parámetro Description especifica una descripción opcional para la directiva de cifrado de datos.|v|
 
 ### <a name="get-policy-details"></a>Obtener detalles de la directiva
 
 ```powershell
-Get-M365DataAtRestEncryptionPolicy [-Identity] < M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter>
+Get-M365DataAtRestEncryptionPolicy [-Identity] <M365DataAtRestEncryptionPolicy DataEncryptionPolicyIdParameter>
 ```
 
 Descripción: este cmdlet enumera todas las directivas de cifrado M365DataAtRest que se crean para el inquilino o detalles sobre una directiva específica.

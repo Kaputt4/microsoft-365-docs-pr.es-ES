@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas funcionalidades de protección de mensajes? Busca una respuesta aquí.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1bb5e93b08b74f5691c76e9a59bf9fa970e08f36
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 09d9293cfb1b574b4c179a0b486d436dab99edf2
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597200"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741351"
 ---
 # <a name="message-encryption-faq"></a>Preguntas más frecuentes sobre cifrado de mensajes
 
@@ -145,8 +145,7 @@ Cuando los datos adjuntos están protegidos con un correo protegido, los cliente
 
 ## <a name="what-email-clients-support-revocation-of-protected-emails"></a>¿Qué clientes de correo electrónico admiten la revocación de correos electrónicos protegidos?
 
-Outlook en la web admite la revocación de correo protegido.  Consulte [How to revoke an encrypted message that you sent](https://docs.microsoft.com/microsoft-365/compliance/revoke-ome-encrypted-mail?view=o365-worldwide#how-to-revoke-an-encrypted-message-that-you-sent) for details.
-
+Outlook en la web admite la revocación de correo protegido.  Consulte [How to revoke an encrypted message that you sent](revoke-ome-encrypted-mail.md#how-to-revoke-an-encrypted-message-that-you-sent) for details.
 
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>¿Puedo cifrar automáticamente los mensajes configurando directivas?
 
@@ -218,8 +217,8 @@ Actualmente hay dos limitaciones conocidas:
    ```powershell
    Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
    ```
-   
- ## <a name="can-i-open-encrypted-messages-sent-to-another-users-mailbox-with-fullaccess"></a>¿Puedo abrir los mensajes cifrados enviados al buzón de otro usuario con Fullaccess?
+
+## <a name="can-i-open-encrypted-messages-sent-to-another-users-mailbox-with-fullaccess"></a>¿Puedo abrir los mensajes cifrados enviados al buzón de otro usuario con Fullaccess?
 
 Los usuarios pueden abrir mensajes cifrados siempre que se les proporciona acceso directo y la automapping está activada. No se permite el acceso si el acceso se concede a través de un grupo de seguridad habilitado para correo electrónico.
 

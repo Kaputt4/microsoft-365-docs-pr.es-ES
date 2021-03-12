@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear reglas de flujo de correo (reglas de transporte) para cifrar y descifrar mensajes con cifrado de mensajes de Office 365.
-ms.openlocfilehash: 8060309f350b50c2aadc9a703e7a57a4caf8808c
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 58b5e592ee8da92a2dbfd10f533aad3240b7a484
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597232"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741559"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Definir reglas de flujo de correo para cifrar mensajes de correo electrónico
 
@@ -86,7 +86,7 @@ Puede definir reglas de flujo de correo para desencadenar el cifrado de mensajes
 
 6. Para habilitar el cifrado con las nuevas funcionalidades  de OME, en **Hacer** lo siguiente, elija Modificar la seguridad del mensaje y, a continuación, elija Aplicar cifrado de mensajes de **Office 365 y** protección de derechos. Seleccione una plantilla RMS de la lista, elija **Guardar** y, a continuación, elija **Aceptar**.
 
-   La lista de plantillas incluye todas las plantillas y opciones predeterminadas, así como todas las plantillas personalizadas que haya creado para su uso por Office 365. Si la lista está vacía, asegúrese de configurar el cifrado de mensajes de Office 365 con las nuevas funcionalidades, tal como se describe en Configurar nuevas funcionalidades de cifrado de mensajes de [Office 365](set-up-new-message-encryption-capabilities.md)integradas en Azure Information Protection. Para obtener información sobre las plantillas predeterminadas, vea [Configuring and managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Para obtener información acerca **de la opción No** reenviar, vea Do Not Forward option for [emails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Para obtener información acerca de la **opción cifrar solo,** vea [Cifrar solo opción para correos electrónicos.](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
+   La lista de plantillas incluye todas las plantillas y opciones predeterminadas, así como todas las plantillas personalizadas que haya creado para su uso por Office 365. Si la lista está vacía, asegúrese de configurar el cifrado de mensajes de Office 365 con las nuevas funcionalidades, tal como se describe en Configurar nuevas funcionalidades de cifrado de mensajes de [Office 365](set-up-new-message-encryption-capabilities.md)integradas en Azure Information Protection. Para obtener información sobre las plantillas predeterminadas, vea [Configuring and managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Para obtener información acerca de la opción No reenviar, vea [Do Not Forward option for emails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Para obtener información acerca de la opción de solo cifrado, vea [Encrypt Only option for emails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
    Puede elegir **agregar acción** si desea especificar otra acción.
 
@@ -116,7 +116,7 @@ Puede quitar el cifrado al que su organización tiene acceso. Esto significa que
 
 7. En **Hacer lo siguiente,** seleccione **Modificar la seguridad del** mensaje Quitar el cifrado de mensajes de Office \> **365 y la protección de derechos**.
 
-8. Haga clic en **Guardar**.
+8. Seleccione **Guardar**.
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>Crear reglas de flujo de correo para cifrado de mensajes de Office 365 sin las nuevas funcionalidades
 

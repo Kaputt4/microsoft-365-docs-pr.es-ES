@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: e125a6dfb35b7018b5f85100184c842da9231327
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 90b545f60c68ac6b76509e14daf1258df66e1c63
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407330"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741537"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
@@ -69,7 +69,7 @@ Obtenga más información sobre los niveles de confianza en este vídeo
 
 Ocho dígitos separados por puntos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Ocho dígitos:
 - dos dígitos
@@ -103,7 +103,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Número de identidad nacional de Argentina 
-- Identidad 
+- Identity 
 - Identificación tarjeta de identidad nacional 
 - DNI 
 - Registro nacional de personas de NIC 
@@ -124,6 +124,11 @@ Un nivel de confianza alto devuelve el menor número de falsos positivos, pero p
 
 Debe usar patrones de alto nivel de confianza con recuentos bajos, por ejemplo, de cinco a diez, y patrones de confianza bajos con recuentos más altos, por ejemplo, 20 o más.
 
+> [!NOTE]
+> Si tiene directivas existentes o tipos de información confidencial personalizados (SIT) definidos con niveles de confianza basados en números (también conocidos como precisión), se asignarán automáticamente a los tres niveles de confianza discretos; confianza baja, confianza media y confianza alta, en toda la interfaz de usuario del Centro de seguridad y cumplimiento.
+> - Todas las directivas con precisión mínima o patrones SIT personalizados con niveles de confianza de entre 76 y 100 se asignarán a una elevada confianza. 
+> - Todas las directivas con precisión mínima o patrones SIT personalizados con niveles de confianza de entre 66 y 75 se asignarán a confianza mediana.
+> - Todas las directivas con precisión mínima o patrones SIT personalizados con niveles de confianza inferiores o iguales a 65 se asignarán a una confianza baja. 
 ## <a name="creating-custom-sensitive-information-types"></a>Crear tipos de información confidencial personalizados
 
 Para crear tipos de información confidencial personalizados en el Centro de seguridad y cumplimiento, puede elegir una de estas opciones:
