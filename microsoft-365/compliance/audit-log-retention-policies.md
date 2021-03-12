@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Las directivas de retención de registros de auditoría forman parte de las nuevas capacidades de Auditoría avanzada en Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización.
-ms.openlocfilehash: eeddf4c963284acaa908e07ddfdae77ec0bb080c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: fd7e5dc37daad220257b4203679c6bb765140385
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114947"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712050"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Administrar directivas de retención de registros de auditoría
 
@@ -47,7 +47,7 @@ Auditoría avanzada en Microsoft 365 proporciona una directiva de retención de 
 
 - Puede tener un máximo de 50 directivas de retención de registros de auditoría en su organización.
 
-- Para conservar un registro de auditoría durante más de 90 días, el usuario que lo ha generado debe tener asignada una licencia de Office 365 E5 o Microsoft 365 E5, o una licencia de complemento de Cumplimiento de Microsoft 365 E5 o E5 eDiscovery y Auditoría.
+- Para conservar un registro de auditoría durante más de 90 días (y hasta un año), el usuario que ha generado dicho registro (mediante una actividad de auditoría) debe tener asignada una licencia de Office 365 E5 o Microsoft 365 E5, o tener una licencia de complemento de Cumplimiento de Microsoft 365 E5 o E5 eDiscovery y Auditoría. Para conservar los registros de auditoría durante 10 años, el usuario que genera el registro de auditoría también debe tener asignada una licencia del complemento de retención de registro de auditoría de 10 años además de una licencia E5.
 
 - Todas las directivas de retención de registros de auditoría personalizadas (creadas por la organización) tienen prioridad ante la directiva de retención predeterminada. Por ejemplo, si crea una directiva de retención de registros de auditoría para la actividad del buzón de Exchange que tiene un período de retención inferior a un año, los registros de auditoría de las actividades de buzón de Exchange se conservarán por la duración más corta especificada en la directiva personalizada.
 

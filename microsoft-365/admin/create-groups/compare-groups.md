@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Obtenga más información sobre los tipos de grupos que puede usar.
-ms.openlocfilehash: 4cbc7f15632026babec3640f021c09e901ad20b9
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: dfb726fadbfbcf69a8ff57fa3d9025cd8811e617
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925535"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727252"
 ---
 # <a name="compare-groups"></a>Comparar grupos
 
@@ -41,7 +41,7 @@ En la sección **Grupos** del Centro de administración de Microsoft 365, puede 
 
 ## <a name="microsoft-365-groups"></a>Grupos de Microsoft 365
 
-Los grupos de Microsoft 365 se usan para la colaboración entre usuarios, tanto dentro como fuera de la compañía. Con cada grupo de Microsoft 365, los miembros obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario y un Planner.
+Los grupos de Microsoft 365 se usan para la colaboración entre usuarios, tanto dentro como fuera de la compañía. Con cada grupo de Microsoft 365, los miembros obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, Stream y un Planner.
 
 Puede agregar personas externas a su empresa a un grupo siempre y cuando esta opción se haya [habilitado por parte del administrador](manage-guest-access-in-groups.md). También puede permitir que los remitentes externos puedan enviar correos electrónicos a la dirección de correo electrónico del grupo.
 

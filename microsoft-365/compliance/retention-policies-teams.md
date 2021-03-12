@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: 137fcdad514e8272b99ab735a0cf1ed6f6e3e00e
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 4296924684e13e163f28e0f952b2cd380cdcc047
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461801"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712016"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -58,8 +58,8 @@ Puede usar una directiva de retención para retener y eliminar datos de chats y 
 
 Estos buzones se muestran según su atributo RecipientTypeDetails:
 
-- **UserMailbox**: estos buzones almacenan los mensajes de los usuarios de Teams que tienen un buzón de Exchange Online.
-- **MailUser**: estos buzones almacenan los mensajes de los usuarios de Teams que tienen un buzón para un servidor de Exchange local y no Exchange Online.
+- **MailUser**: estos buzones almacenan mensajes para los usuarios de Teams basados en la nube.
+- **UserMailbox**: estos buzones almacenan mensajes para los [usuarios locales de Teams](search-cloud-based-mailboxes-for-on-premises-users.md).
 - **GroupMailbox**: estos buzones almacenan mensajes para los canales de Teams.
 
 Otros tipos de buzones, como RoomMailbox —que se usa en las salas de conferencias de Teams— no son compatibles con las directivas de retención de Teams.

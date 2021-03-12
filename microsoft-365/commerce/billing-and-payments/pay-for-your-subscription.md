@@ -1,5 +1,5 @@
 ---
-title: Pagar por la suscripción
+title: Pagar la suscripción
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -8,25 +8,25 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 search.appverid:
 - MET150
 ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: Obtenga información sobre las opciones de pago disponibles para pagar su suscripción a Microsoft 365 para empresas.
+description: Obtenga información sobre qué opciones de pago están disponibles para pagar por su suscripción a Microsoft 365 para empresas.
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 7b2b433d94915d16cd0f5a3611f8fc17d6254e97
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
-ms.translationtype: MT
+ms.openlocfilehash: 21aad23b849db76acb1bcc98bb37ff0d8b6fc1ce
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142090"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741450"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
 
@@ -37,28 +37,28 @@ ms.locfileid: "50142090"
 
 ::: moniker-end
 
-Puede usar una tarjeta de crédito o débito, o una cuenta bancaria para pagar la suscripción. En algunos casos, puede pagar mediante factura mediante cheque o transferencia electrónica de fondos (EFT). Si tiene un perfil de facturación, las opciones son ligeramente diferentes. Para obtener más información, vea [Cómo pagar la suscripción con un perfil de facturación.](pay-for-subscription-billing-profile.md) Si no está seguro de si su cuenta tiene un perfil de facturación, consulte [Comprender los perfiles de facturación.](manage-billing-profiles.md)
+Puede pagar la suscripción con tarjeta de crédito, débito o una cuenta bancaria. En algunos casos, puede pagar mediante factura, mediante cheque o transferencia electrónica de fondos (EFT). Si tiene un perfil de facturación, sus opciones son algo diferentes. Para más información, consulte [Cómo pagar la suscripción con un perfil de facturación](pay-for-subscription-billing-profile.md). Si no está seguro de si su cuenta tiene un perfil de facturación, consulte [Información de perfiles de facturación](manage-billing-profiles.md).
 
-**¿Solo quiere saber dónde enviar el pago de la factura?** Si paga la factura mediante cheque o transferencia electrónica de fondos (EFT), consulte ¿Dónde envío el cheque o [el pago de EFT?](#where-do-i-send-my-check-or-eft-payment)
+**¿Solo quiere saber dónde enviar el pago de la factura?** Si paga la factura mediante cheque o transferencia electrónica de fondos (EFT), vea [¿Dónde envío mi cheque o pago por EFT?](#where-do-i-send-my-check-or-eft-payment)
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser un administrador global o de facturación para realizar los pasos descritos en este artículo. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
-- El método de pago que elijas durante la desprotección es el método de pago que usamos para todos los períodos de facturación futuros. Puede cambiarlo en cualquier momento.
+- Debe ser un administrador global o de facturación para realizar los pasos descritos en este artículo. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+- El método de pago que elija durante la finalización de la compra es el método de pago que usamos para todos los períodos de facturación futuros. Puede cambiarlo en cualquier momento.
 
-## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Pagar con tarjeta de crédito o débito o cuenta bancaria
+## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Pagar con tarjeta de crédito/débito o cuenta bancaria
 
 > [!IMPORTANT]
 > El pago a través de una cuenta bancaria no está disponible en algunos países o regiones.
 
 Puede pagar la suscripción con tarjeta de crédito/débito o cuenta bancaria. Al pagar con uno de estos métodos de pago, seguiremos cobrando con ese método de pago hasta que la suscripción expire o se cancele. Puede [administrar los métodos de pago](manage-payment-methods.md) siempre que lo necesite. También tiene la posibilidad de [recibir una copia del extracto de facturación por correo electrónico](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).
 
-## <a name="paying-by-invoice"></a>Pagar con factura
+## <a name="paying-by-invoice"></a>Pagar mediante factura
 
-En algunos casos, puede pagar la suscripción mediante factura con un cheque o EFT. Para poder pagar mediante factura, debe:
+En algunos casos, puede pagar la suscripción mediante factura con un cheque o EFT. Para poder pagar con factura, debe:
 
 - Ser un cliente establecido
-- Tener un costo de suscripción que supere una cantidad determinada (esta cantidad varía según la ubicación del servicio)
+- Tener un coste de suscripción que supere una cantidad determinada (esta cantidad varía según la ubicación del servicio)
 - Pasar una comprobación de crédito
 
 Si se requiere una comprobación de crédito, se le notificará al comprar su suscripción. Si permite que nos pongamos en contacto con usted, recibirá un correo electrónico con más información sobre la solicitud de aprobación de crédito. Las comprobaciones de crédito se suelen completar en dos días laborables.
@@ -72,23 +72,23 @@ Si paga su suscripción mediante factura, recibirá un correo electrónico que i
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>¿Qué debo hacer si tengo un saldo pendiente?
 
-Si no podemos cobrar el método de pago en el archivo, enviamos un correo electrónico que le permite saber que hay un problema. El correo electrónico indica brevemente cuál es el problema e incluye un vínculo donde puede comprobar el saldo pendiente. Seguimos reintentar la transacción cada pocos días durante 30 días, durante el cual la suscripción está en un período de gracia. Cada vez que se produce un error en una transacción, recibe una alerta por correo electrónico sobre el error.
+Si no podemos cargar el método de pago en el archivo, le enviaremos un correo electrónico para informarle de que hay un problema. El correo electrónico le indica brevemente cuál es el problema e incluye un vínculo en el que puede comprobar el saldo pendiente. Seguimos intentando de nuevo la transacción cada varios días durante 30 días, período durante el cual la suscripción se encuentra en un período de gracia. Cada vez que se produce un error en una transacción, recibe una alerta de correo electrónico sobre el error.
 
-Si agregó personalmente el método de pago que tiene un importe pendiente pasado, puede usar **Liquidar saldo** para realizar un pago. El método de pago que use para pagar el saldo vencido se convertirá en el nuevo método de pago para todas las suscripciones que usaban el método de pago rechazado.
+Si ha agregado personalmente dicho método de pago, puede usar **Liquidar saldo** para realizar un pago. El método de pago que use para pagar el saldo vencido se convertirá en el nuevo método de pago para todas las suscripciones que usaban el método de pago rechazado.
 
-1. En el centro de administración, ve a la página **Facturación**&  >  **pagos** y, a continuación, selecciona la <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">pestaña Métodos de</a> pago.
-1. Un mensaje de advertencia indica qué método de pago se ha rechazado. Seleccione **Liquidar saldo.**
-1. En el panel derecho, elija un método de pago diferente o seleccione **Agregar un nuevo método de pago.**
+1. En el Centro de administración, vaya a la página **Facturación** > **Facturación y pagos** y seleccione la pestaña <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Métodos de pago</a>.
+1. Un mensaje de advertencia indica qué método de pago se ha rechazado. Seleccione **Liquidar saldo**.
+1. En el panel derecho, elija otro método de pago o seleccione la opción **Agregar un nuevo método de pago**.
 1. Después de actualizar la información del método de pago, seleccione **Guardar**.
 
 Si no agregó el método de pago usado para pagar la suscripción, debe reemplazar el método de pago por uno que agregó anteriormente o por uno nuevo.
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>¿Dónde envío mi cheque o pago por EFT?
 
-[Consulte las instrucciones de](view-your-bill-or-invoice.md) pago en la factura. También puedes usar la lista desplegable siguiente para encontrar instrucciones de pago para tu país o región. Si no está seguro de cuánto debe, puede comprobar el historial de facturación y facturación en línea en la pestaña **Facturas** de la página Facturas <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& pagos.</a>
+[Consulte la factura](view-your-bill-or-invoice.md) para ver las instrucciones de pago. También puede usar la siguiente lista desplegable para obtener instrucciones de pago para su país o región. Si no está seguro de la cantidad que debe, puede comprobar su factura y el historial de facturación en línea en la pestaña **Facturas** de la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
 
 > [!NOTE]
-> El pago mediante cheque solo está disponible en algunos países.
+> El pago con cheque solo está disponible en algunos países.
 
  **Elija su país o región de facturación del menú desplegable siguiente.**
 
@@ -248,18 +248,18 @@ Si no agregó el método de pago usado para pagar la suscripción, debe reemplaz
 
 ## <a name="can-i-pay-my-invoice-online"></a>¿Puedo pagar mi factura en línea?
 
-No puede pagar la factura en línea. Debe remitir el pago mediante cheque o EFT.
+No puede pagar la factura en línea. Debe enviar el pago mediante cheque o EFT.
 
-## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>¿Puedo cambiar de mi método de pago actual a pagar mediante factura?
+## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>¿Puedo cambiar del método de pago actual al pago mediante factura?
 
-Solo puede cambiar al pago mediante factura si su suscripción cuesta por encima de un importe determinado. Primero debe pagar el saldo pendiente en la tarjeta de crédito, débito o cuenta bancaria antes de cambiar a pagar mediante factura. Para obtener información sobre cómo cambiar los métodos de pago, vea [Cambiar un método de pago para una única suscripción.](manage-payment-methods.md#change-a-payment-method-for-a-single-subscription)
+Solo puede cambiar al pago con factura si el precio de su suscripción es superior a una cantidad determinada. Primero debe pagar los saldos pendientes en la tarjeta de crédito o débito o cuenta bancaria antes de cambiar al pago mediante factura. Para obtener información sobre cómo cambiar los métodos de pago, vea [Cambiar un método de pago para una única suscripción](manage-payment-methods.md#change-a-payment-method-for-a-single-subscription).
 
-## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>¿Puedo cambiar de pagar mediante factura a usar un método de pago diferente?
+## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>¿Puedo cambiar del pago con factura a otro método de pago?
 
 No puede cambiar automáticamente del pago con factura al pago con un método de pago diferente. En su lugar, debe [comprar otra suscripción](../try-or-buy-microsoft-365.md#buy-a-different-subscription) con otra tarjeta de crédito/débito o cuenta bancaria, [mover a todos los usuarios a la nueva suscripción](../subscriptions/move-users-different-subscription.md) y [cancelar la suscripción antigua](../subscriptions/cancel-your-subscription.md).
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Administrar métodos de](manage-payment-methods.md) pago (artículo)\
-[Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)
-[Comprender la factura (artículo)](understand-your-invoice2.md)
+[Administrar métodos de pago](manage-payment-methods.md) (artículo)\
+[Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)\
+[Entender su factura o recibo](understand-your-invoice2.md) (artículo)

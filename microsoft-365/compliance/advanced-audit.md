@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La Auditoría avanzada en Microsoft 365 proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: 0ae67497829e69da92e9735cb68a84e75c517814
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 012361e8ebbf1961d5ca21cef97357d5150523d5
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242462"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712060"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Auditoría avanzada en Microsoft 365
 
@@ -199,11 +199,11 @@ Para los clientes que cumplan los requisitos y los usuarios a los que se les asi
 
 **¿Cuándo estará disponible la nueva licencia del complemento de retención de registros de auditoría de 10 años?**
 
-La compra del nuevo complemento de retención de registro de auditoría de 10 años estará disponible para los clientes que tengan suscripciones a E5 a principios de 2021.
+La compra del nuevo complemento de retención de registro de auditoría de 10 años está ahora disponible para los clientes que tengan suscripciones a E5.
 
-**¿Qué ocurre con los datos de registro de auditoría de mi organización si creo una directiva de retención de registro de auditoría de 10 años, la característica se ha publicado para disponibilidad general, pero antes de que esté disponible la licencia de complemento necesaria a principios de 2021?**
+**¿Qué ocurre con los datos de registro de auditoría de mi organización si creé una directiva de retención de registros de auditoría de 10 años cuando la característica se publicó para su disponibilidad general, pero antes de que la licencia del complemento necesaria estuviera disponible en febrero de 2021?**
 
-Todos los datos del registro de auditoría cubiertos por una directiva de retención de registro de auditoría de 10 años creada después de la disponibilidad general se conservarán durante 10 años. Cuando la licencia del complemento de retención del registro de auditoría de 10 años esté disponible a principios de 2021, tendrá que adquirir licencias de complemento para los usuarios cuyos datos de auditoria se retengan por una directiva de retención de auditoria existente de 10 años. Asimismo, una vez que la licencia del complemento esté disponible a principios de 2021, las licencias adecuadas se aplicarán cuando cree nuevas directivas de retención de registro de auditoría de 10 años.
+Todos los datos del registro de auditoría cubiertos por una directiva de retención de registro de auditoría de 10 años creada después de la disponibilidad general se conservarán durante 10 años. Cuando la licencia del complemento de retención del registro de auditoría de 10 años esté disponible a principios de 2021, tendrá que adquirir licencias de complemento para los usuarios cuyos datos de auditoria se retengan por una directiva de retención de auditoria existente de 10 años.
 
 **¿Están disponibles los nuevos eventos de la auditoría avanzada en la API de Actividad de administración de Office 365?**
 
