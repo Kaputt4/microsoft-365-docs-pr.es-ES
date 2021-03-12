@@ -53,6 +53,8 @@
               href: mtp/microsoft-365-security-center-mdo.md
             - name: Redirigiendo Defender para punto de conexión al Centro de seguridad de Microsoft 365.
               href: mtp/microsoft-365-security-mde-redirection.md
+            - name: Redirigiendo Defender para Office 365 al Centro de seguridad de Microsoft 365.
+              href: mtp/microsoft-365-security-mdo-redirection.md
             - name: Versión preliminar de las características
               href: mtp/preview.md
             - name: Solucionar problemas
