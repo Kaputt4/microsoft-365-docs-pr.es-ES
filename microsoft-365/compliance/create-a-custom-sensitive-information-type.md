@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date: 04/17/2019
+ms.date: ''
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en la interfaz gráfica de usuario del Centro de seguridad y cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 94f0f6b68e9f952e0d52ce7cb71ccf03913584f4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 049c3c123053b4bd833ea95a2413b81366586870
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929356"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766371"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introducción a los tipos de información confidencial personalizados
 
@@ -65,7 +65,7 @@ Use este procedimiento para crear un nuevo tipo de información confidencial y d
 5. Elegir y definir el **Elemento principal**. El elemento principal puede ser una **Expresión regular** con un validador opcional, una **lista de palabras clave**, un **diccionario de palabras clave** o una de las **funciones preconfiguradas**. Para obtener más información sobre las funciones DLP, vea [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md).
 6. Rellene un valor para **Proximidad de caracteres**.
 7. (Opcional) Si los tiene, agregue elementos de soporte. Los elementos de soporte pueden ser una expresión regular con un validador opcional, una lista de palabras clave, un diccionario de palabras clave o una de las funciones predefinidas. 
-8.  (Opcional) Agregar comprobaciones adicionales de la lista de comprobaciones disponibles
+8.  (Opcional) Agregar [**comprobaciones adicionales**](#more-information-on-additional-checks) de la lista de comprobaciones disponibles.
 9. Seleccione **Crear**.
 10. Elija **Siguiente**.
 11. Elija el **nivel de confianza recomendado** de este tipo de información confidencial.
@@ -74,7 +74,7 @@ Use este procedimiento para crear un nuevo tipo de información confidencial y d
 > [!IMPORTANT]
 > Microsoft 365 usa el rastreador de búsqueda para identificar y clasificar información confidencial en los sitios de SharePoint Online y OneDrive para la Empresa. Para identificar el nuevo tipo de información confidencial personalizado en el contenido existente, se necesita volver a rastrear el contenido. El contenido se rastrea en función de una programación, pero puede volver a rastrear de forma manual el contenido de una colección de sitios, lista o biblioteca. Para obtener más información, vea [Solicitar manualmente el rastreo y una nueva indexación de un sitio, una biblioteca o una lista](https://docs.microsoft.com/sharepoint/crawl-site-content).
 
-13. En la **clasificación de datos**, verá todos los tipos de información confidencial. Elija **Actualizar** y luego encuentre el tipo de información confidencial que acaba de crear con la herramienta de búsqueda o explorando.
+13. En la **clasificación de datos**, verá todos los tipos de información confidencial. Elija **Actualizar** y luego encuentre el tipo de información confidencial que ha creado con la herramienta de búsqueda o explorando.
 
 ## <a name="test-a-sensitive-information-type"></a>Cómo probar un tipo de información confidencial personalizado
 
@@ -88,7 +88,7 @@ Puede probar cualquier tipo de información confidencial en la lista. Le recomen
 ## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>Modificar tipos personalizados de información confidencial en el Centro de cumplimiento
 
 1. En el Centro de cumplimiento, vaya a **Clasificación de datos** \> **Tipos de información confidencial**. Elija el tipo de información confidencial de la lista que desee modificar y seleccione **Editar**.
-2. Puede agregar otros patrones, con elementos únicos principales y compatibles, niveles de confianza, proximidad de caracteres y comprobaciones adicionales, o editar o quitar los existentes. Para obtener más información, consulte [Crear un tipo de información confidencial](#create-a-custom-sensitive-information-type).
+2. Puede agregar otros patrones, con elementos únicos principales y compatibles, niveles de confianza, proximidad de caracteres y [**comprobaciones adicionales**](#more-information-on-additional-checks), o editar o quitar los existentes.
 
 ## <a name="remove-custom-sensitive-information-types-in-the-compliance-center"></a>Quitar tipos personalizados de información confidencial en el Centro de cumplimiento 
 
@@ -114,7 +114,7 @@ Use este procedimiento para crear un nuevo tipo de información confidencial que
 7. Puede elegir editar o quitar los patrones existentes y agregar otros nuevos. Elija el valor predeterminado del Nivel de confianza para el nuevo patrón. Los valores son **Confianza baja**, **Confianza media** y **Confianza alta**.
 8. Elegir y definir el **Elemento principal**. El elemento principal puede ser una **Expresión regular**, una **lista de palabras clave**, un **diccionario de palabras clave** o una de las **funciones preconfiguradas**. Consulte [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md).
 9. Rellene un valor para **Proximidad de caracteres**.
-10. (Opcional) Si tiene **Elementos de apoyo** o **Controles adicionales**, agruégelos. Si es necesario, puede agrupar los **Elementos de apoyo**.
+10. (Opcional) Si tiene **Elementos de apoyo** o [**Controles adicionales**](#more-information-on-additional-checks), agruégelos. Si es necesario, puede agrupar los **Elementos de apoyo**.
 11. Seleccione **Crear**.
 12. Elija **Siguiente**.
 13. Elija el **nivel de confianza recomendado** de este tipo de información confidencial.
@@ -123,7 +123,24 @@ Use este procedimiento para crear un nuevo tipo de información confidencial que
 También puede crear tipos de información confidencial con PowerShell y usar las funciones de coincidencia de datos exacta. Para obtener más información sobre estos métodos, vea:
 - [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimientol](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Cree un tipo de información confidencial personalizada para DLP con Exact Data Match (EDM) ](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
- 
+
+## <a name="more-information-on-additional-checks"></a>Más información sobre comprobaciones adicionales
+
+Aquí tiene las definiciones y algunos ejemplos de las comprobaciones adicionales disponibles.
+
+**Excluir coincidencias específicas**: Esta comprobación le permite definir palabras clave para excluir al detectar coincidencias del patrón que esté editando. Por ejemplo, puede excluir números de prueba de tarjeta de crédito como "4111111111111111", para que no aparezcan como número válido.
+
+**Empezar o no empezar con caracteres**: Esta comprobación le permite definir los caracteres con que los elementos coincidentes pueden o no pueden empezar. Por ejemplo, si quiere que el patrón detecte solo números de tarjeta de crédito que empiece con 41, 42 o 43, seleccione **Empieza con** y agregue 41, 42 y 43 a la lista, separados por comas. 
+
+**Terminar o no terminar con caracteres**: Esta comprobación le permite definir los caracteres con que los elementos coincidentes pueden o no pueden terminar. Por ejemplo, si su número de Id. de empleado no puede terminar con 0 o 1, seleccione **No termina con** y agregue 0 y 1 a la lista, separados por comas.
+
+**Excluir caracteres duplicados**: esta comprobación le permite ignorar coincidencias en las que todos los dígitos son los mismos. Por ejemplo, si el número de Id. de empleado tiene seis dígitos y no son iguales, puede seleccionar **Excluir caracteres duplicados** para excluir 111111, 222222, 333333, 444444, 555555, 666666, 777777, 888888, 999999, y 000000 de la lista de coincidencias válidas para la Id. del empleado.
+
+**Incluir o excluir prefijos**: Esta comprobación le permite definir las palabras clave que deben o no deben aparecer inmediatamente antes de la entidad coincidente. En función de su selección, las entidades aparecerán o no como coincidencias si son precedidas por los prefijos que incluya aquí. Por ejemplo, si **Excluye** el prefijo **GUID:**, toda entidad precedida por **GUID:** no se considerará una coincidencia.
+
+**Incluir o excluir sufijos**: Esta comprobación le permite definir las palabras clave que deben o no deben aparecer inmediatamente después de la entidad coincidente. En función de su selección, las entidades aparecerán o no como coincidencias si aparecen seguidas de los sufijos que incluya aquí. Por ejemplo, si **Excluye** el sufijo **GUID:**, cualquier texto seguido de **GUID:** no se considerará una coincidencia.
+
+
 > [!NOTE]
 > Information Protection de Microsoft 365 es compatible, en modo de versión preliminar, con el conjunto de caracteres de doble byte para:
 > - Chino (simplificado)
