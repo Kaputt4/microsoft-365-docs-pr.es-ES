@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: landing-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -21,25 +21,25 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: Ahora que ha configurado Microsoft 365, obtenga información sobre cómo instalar aplicaciones de Office individuales en sus dispositivos Mac, PC o móviles y configurar el correo electrónico en Outlook.
-ms.openlocfilehash: dc8a4c3670dacf4b3cc85637c3e18c51a8c8e350
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+description: Ahora que ha configurado Microsoft 365, obtenga información sobre cómo instalar aplicaciones de Office individuales en su Mac, PC o dispositivos móviles y configurar el correo electrónico en Outlook.
+ms.openlocfilehash: c1d88aa1e754424e7a4ef3e486efc8a9618d3e9b
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988037"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766360"
 ---
 # <a name="install-office-applications"></a>Instalar aplicaciones de Office
 
-Ahora que ha configurado Microsoft 365, puede instalar aplicaciones de Office individuales en su Equipo Mac, PC o dispositivos móviles.
+Ahora que ha configurado Microsoft 365, puede instalar aplicaciones de Office individuales en su Mac, PC o dispositivos móviles.
   
 Siga estos vínculos para obtener información sobre cómo:
   
-- Instalar aplicaciones de Office:  [instalar Office en su PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+- Instalar aplicaciones de Office:  [Instalar Office en su PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
 - Instalar otras aplicaciones: [Project,](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281) [Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710)o [Skype Empresarial](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
 
-- Configurar dispositivos móviles: [configuración móvil de Microsoft 365 - Ayuda](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
+- Configurar dispositivos móviles: configuración móvil de [Microsoft 365 : Ayuda](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
 
 - Configurar el correo electrónico en Outlook: [Windows](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) o [Mac](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)
  
@@ -47,7 +47,7 @@ Siga estos vínculos para obtener información sobre cómo:
 
 ::: moniker range="o365-21vianet"
 
-Si ha adquirido Azure Active Directory Premium (AADP) Plan 1 o Plan 2, puede optar a Microsoft Identity Manager (MIM). Para descargar MIM, vaya al Centro [de descarga.](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498)
+Si compró Azure Active Directory Premium (AADP) Plan 1 o Plan 2, puede optar a Microsoft Identity Manager (MIM). Para descargar MIM, vaya al Centro [de descarga](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498).
 
 ::: moniker-end
 

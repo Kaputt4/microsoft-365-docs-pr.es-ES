@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a identificar grupos específicos de usuarios con etiquetas de usuario en Microsoft Defender para Office 365 Plan 2. El filtrado de etiquetas está disponible en alertas, informes e investigaciones en Microsoft Defender para Office 365 para identificar rápidamente a los usuarios etiquetados.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e5ddffad6405f48a9af55b5123729eb256064a7
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 80bd360888be3aeea42da6f9b58a119a9752d382
+ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453650"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50758897"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Etiquetas de usuario en Microsoft Defender para Office 365
 
@@ -45,6 +45,8 @@ Después de aplicar etiquetas del sistema o etiquetas personalizadas a los usuar
 
 En este artículo se explica cómo configurar las etiquetas de usuario en el Centro de seguridad & cumplimiento. No hay cmdlets en el Centro de seguridad & cumplimiento para administrar etiquetas de usuario.
 
+Para ver cómo las etiquetas de usuario forman parte de la estrategia para ayudar a proteger las cuentas de usuario de alto impacto, vea Recomendaciones de seguridad para cuentas de prioridad [en Microsoft 365](security-recommendations-for-priority-accounts.md).
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la **página Etiquetas de** usuario, abra <https://protection.office.com/userTags> .
@@ -58,14 +60,14 @@ En este artículo se explica cómo configurar las etiquetas de usuario en el Cen
 
   **Notas**:
 
-  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  - Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   - La administración de etiquetas de usuario está controlada por los roles **Lector de** etiquetas y **Administrador de etiquetas.**
 
 - También puede administrar y supervisar cuentas de prioridad en el Centro de administración de Microsoft 365. Para obtener instrucciones, vea [Administrar y supervisar cuentas de prioridad](../../admin/setup/priority-accounts.md).
 
-## <a name="use-the-security-center-to-create-user-tags"></a>Usar el Centro de seguridad para crear etiquetas de usuario
+## <a name="use-the-security--compliance-center-to-create-user-tags"></a>Usar el Centro de seguridad & cumplimiento para crear etiquetas de usuario
 
-1. En el Centro de seguridad, vaya a **Administración de amenazas** \> **Etiquetas de usuario**.
+1. En el Centro de seguridad & cumplimiento, vaya a **Administración de amenazas** \> **Etiquetas de usuario**.
 
 2. En la **página Etiquetas de** usuario que se abre, haga clic **en Crear etiqueta**.
 
@@ -94,9 +96,9 @@ En este artículo se explica cómo configurar las etiquetas de usuario en el Cen
 
    Cuando haya terminado, haga clic en **Enviar**.
 
-## <a name="use-the-security-center-to-view-user-tags"></a>Usar el Centro de seguridad para ver etiquetas de usuario
+## <a name="use-the-security--compliance-center-to-view-user-tags"></a>Usar el Centro de seguridad & cumplimiento para ver etiquetas de usuario
 
-1. En el Centro de seguridad, vaya a **Administración de amenazas** \> **Etiquetas de usuario**.
+1. En el Centro de seguridad & cumplimiento, vaya a **Administración de amenazas** \> **Etiquetas de usuario**.
 
 2. En la **página Etiquetas de** usuario que se abre, seleccione la etiqueta de usuario que desea ver (no haga clic en la casilla).
 
@@ -104,9 +106,9 @@ En este artículo se explica cómo configurar las etiquetas de usuario en el Cen
 
    Cuando haya terminado, haga clic en **Cerrar**.
 
-## <a name="use-the-security-center-to-modify-user-tags"></a>Usar el Centro de seguridad para modificar etiquetas de usuario
+## <a name="use-the-security--compliance-center-to-modify-user-tags"></a>Usar el Centro de seguridad & cumplimiento para modificar las etiquetas de usuario
 
-1. En el Centro de seguridad, vaya a **Administración de amenazas** \> **Etiquetas de usuario**.
+1. En el Centro de seguridad & cumplimiento, vaya a **Administración de amenazas** \> **Etiquetas de usuario**.
 
 2. En la **página Etiquetas de** usuario que se abre, seleccione la etiqueta de usuario que desea ver y, a continuación, haga clic **en Editar etiqueta**.
 
@@ -114,10 +116,10 @@ En este artículo se explica cómo configurar las etiquetas de usuario en el Cen
 
    Cuando haya terminado, haga clic en **Enviar**.
 
-## <a name="use-the-security-center-to-remove-user-tags"></a>Usar el Centro de seguridad para quitar etiquetas de usuario
+## <a name="use-the-security--compliance-center-to-remove-user-tags"></a>Usar el Centro de seguridad & cumplimiento para quitar etiquetas de usuario
 
 **Nota:** No puede quitar la etiqueta de cuenta de **prioridad** integrada.
 
-1. En el Centro de seguridad, vaya a **Administración de amenazas** \> **Etiquetas de usuario**.
+1. En el Centro de seguridad & cumplimiento, vaya a **Administración de amenazas** \> **Etiquetas de usuario**.
 
 2. En la **página Etiquetas de** usuario que se abre, seleccione la etiqueta de usuario que desea quitar, haga clic en **Eliminar** etiqueta y, a continuación, seleccione **Sí,** quite en la advertencia que aparece.

@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
-description: Aprende a establecer claves del Registro para habilitar la autenticación moderna para los dispositivos que Microsoft Office 2013 instalados.
-ms.openlocfilehash: 34078291fa237b63c391a7e90ba06ea0085c37cb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Aprenda a establecer claves del Registro para habilitar la autenticación moderna para dispositivos que Microsoft Office 2013 instalados.
+ms.openlocfilehash: 2a4be82328d391db7808cb9197ce259275b567c6
+ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926563"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50758933"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Habilitar autenticación moderna para Office 2013 en dispositivos Windows
 
@@ -42,10 +42,10 @@ Para habilitar la autenticación moderna para cualquier dispositivo con Windows 
   
 |**Clave del registro**|**Tipo**|**Valor** |
 |:-------|:------:|--------:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
    
-Una vez que haya establecido las claves del Registro, puede configurar las aplicaciones de dispositivos de Office 2013 para que usen la autenticación [multifactor (MFA)](set-up-multi-factor-authentication.md) con Microsoft 365. 
+Una vez establecidas las claves del Registro, puede establecer aplicaciones de dispositivos de Office 2013 para que usen la autenticación [multifactor (MFA)](set-up-multi-factor-authentication.md) con Microsoft 365. 
   
 Si ha iniciado sesión actualmente con cualquiera de las aplicaciones de cliente, tendrá que cerrar sesión y volver a iniciarla para que el cambio surta efecto. En caso contrario, la configuración usada recientemente y de itinerancia no estará disponible hasta que se establezca la identidad ADAL.
   
@@ -60,5 +60,6 @@ Para deshabilitar la autenticación moderna en un dispositivo, establezca las si
 ## <a name="related-articles"></a>Artículos relacionados
 [Inicie sesión en Office 2013 con un segundo método de verificación](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 
-  
+[Outlook solicita contraseña y no usa la autenticación moderna para conectarse a Office 365](https://docs.microsoft.com/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)
 
+  
