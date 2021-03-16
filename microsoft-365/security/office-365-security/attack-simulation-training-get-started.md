@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el aprendizaje de simulación de ataques para ejecutar ataques simulados de suplantación de identidad y contraseña en sus organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a33c212f7d0fd6b0617a8059b03ac90de03fba16
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 38e16ecd8185b9e8542f58613790585b5aab73ee
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407485"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50820239"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Introducción al uso de aprendizaje de simulación de ataques
 
@@ -109,3 +109,6 @@ Para obtener instrucciones paso a paso sobre cómo crear una carga para su uso e
 ### <a name="gaining-insights"></a>Obtener información
 
 Para obtener instrucciones paso a paso sobre cómo obtener información con los informes, consulte Obtener información a través del aprendizaje [de simulación de ataques.](attack-simulation-training-insights.md)
+
+> [!NOTE]
+> Attack Simulator usa vínculos seguros en Defender para Office 365 para realizar un seguimiento seguro de los datos de clics de la dirección URL en el mensaje de carga que se envía a los destinatarios dirigidos de una campaña de suplantación de identidad( phishing), incluso si la configuración No realizar seguimiento de los clics del usuario en las directivas de **vínculos** seguros está activada.

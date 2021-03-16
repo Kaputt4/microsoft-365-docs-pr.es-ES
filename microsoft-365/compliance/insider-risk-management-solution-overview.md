@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 644fe1894cddcfea5bd45fcbd68e168ea8a1dca8
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0cca5c517bf72601b469411bf83bedbbd8e50cdc
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423581"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50819752"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Administración de riesgos de Insider en Microsoft 365
 
@@ -38,8 +38,8 @@ Siga estos pasos para configurar la administración de riesgos de insider para s
 1. Información sobre [la administración de riesgos de insider](insider-risk-management.md) en Microsoft 365
 2. Planear la administración [de riesgos de insider y comprobar licencias](insider-risk-management-plan.md)
 3. Configurar [la configuración de administración de riesgos de insider](insider-risk-management-settings.md)
-4. Configurar [permisos y requisitos](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) [previos de directivas & conectores](insider-risk-management-configure.md#step-3-configure-prerequisites-for-templates)
-5. Crear y configurar directivas [de administración de riesgos internas](insider-risk-management-configure.md#step-5-create-an-insider-risk-management-policy)
+4. Configurar [permisos y requisitos](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) [previos de directivas & conectores](insider-risk-management-configure.md#step-4-configure-prerequisites-for-policies)
+5. Crear y configurar directivas [de administración de riesgos internas](insider-risk-management-configure.md#step-6-create-an-insider-risk-management-policy)
 
 ## <a name="more-information-about-insider-risk-management"></a>Más información sobre la administración de riesgos de insider
 

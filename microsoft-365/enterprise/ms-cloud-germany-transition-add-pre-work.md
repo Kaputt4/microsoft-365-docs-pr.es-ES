@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: Pre-work when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: e922cf3b5599e81905499db60000c5b5f34b69ad
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 5110c6bd86d5df35a7ceccb4abfedf059cb826d0
+ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712275"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "50826181"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Trabajo previo para la migración desde Microsoft Cloud Deutschland
 
@@ -49,6 +49,7 @@ Use estos vínculos para obtener acceso a los pasos previos al trabajo relevante
 | Cancelar cualquier suscripción de prueba. | Las suscripciones de prueba no se migrarán y bloquearán la transferencia de suscripciones de pago. | Los servicios de prueba expiran y no funcionan si los usuarios acceden después de la cancelación. |
 | Analice las diferencias en las características de licencia entre Microsoft Cloud Deutschland y Office 365 Services. | Los servicios de Office 365 incluyen características y servicios adicionales que no están disponibles en el Microsoft Cloud Deutschland actual. Durante la transferencia de suscripción, las nuevas características estarán disponibles para los usuarios. | <ul><li> Analice las distintas características proporcionadas por las licencias de Microsoft Cloud Deutschland y Office 365 Services. Comience con la descripción del servicio de la [plataforma office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description). </li><li> Determine si las nuevas características de los servicios de Office 365 deben deshabilitarse inicialmente para limitar los efectos en los usuarios o en la administración de cambios de usuario y modificar las asignaciones de licencias de usuario según sea necesario. </li><li>Prepare a los usuarios y al personal de servicio de ayuda para los nuevos servicios y características proporcionados por los servicios de Office 365. |
 | Cree directivas de retención en toda [la](https://docs.microsoft.com/microsoft-365/compliance/retention) organización para protegerse de la eliminación involuntaria de contenido durante la migración.  |<ul><li>Para asegurarse de que los usuarios finales no eliminan accidentalmente el contenido durante la migración, los clientes pueden optar por habilitar una directiva de retención en toda la organización. </li><li>Aunque la retención no es necesaria, dado que las retenciones realizadas en cualquier momento durante la migración deben funcionar según lo esperado, tener una directiva de retención es un mecanismo de seguridad de copia de seguridad. Al mismo tiempo, es posible que todos los clientes no utilicen una directiva de retención, especialmente aquellos que están preocupados por la conservación.</li></ul>| Aplicar la directiva de retención tal como se describe [en Obtenga información sobre las directivas de retención y las etiquetas de retención.](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) Los errores del servicio o del software cliente pueden producirse si esto no se realiza antes de la fase 4 de 9. </li></ul>|
+| Corregir los excesos de licencia | En determinadas circunstancias, los clientes pueden consumir más servicios de los que se compran. Esta condición se conoce como exceso de licencia. Microsoft no puede migrar clientes en una condición de exceso de licencia de Microsoft Cloud Deutschland a las regiones del centro de datos alemán. Para garantizar el acceso continuo al servicio y a los datos, cada usuario asignado requiere una licencia. | Todos los clientes | Los clientes deben evaluar y resolver la condición de exceso de licencias a través de la compra de licencias adicionales o mediante la desasignación de licencias de los usuarios. |
 |||||
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Servicios de federación de Active Directory (ADFS)
