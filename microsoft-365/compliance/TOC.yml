@@ -44,16 +44,18 @@
           href: insider-risk-management.md
         - name: Planificar la administración de riesgos internos
           href: insider-risk-management-plan.md
-        - name: Introducción a la configuración de riesgos internos
-          href: insider-risk-management-settings.md
         - name: Introducción a la administración de riesgos internos
           href: insider-risk-management-configure.md
+        - name: Introducción a la configuración de riesgo interno
+          href: insider-risk-management-settings.md
         - name: Crear y administrar directivas de riesgos internos
           href: insider-risk-management-policies.md
         - name: Investigar alertas de riesgos internos
           href: insider-risk-management-alerts.md
         - name: Tomar medidas en casos de riesgos internos
           href: insider-risk-management-cases.md
+        - name: Revisar actividades con el registro de auditoría de riesgo interno
+          href: insider-risk-management-audit-log.md
         - name: Revisar datos con el explorador de contenido de riesgos internos
           href: insider-risk-management-content-explorer.md
         - name: Administrar el flujo de trabajo con el panel usuarios
@@ -237,8 +239,12 @@
               href: data-loss-prevention-policies.md
             - name: Obtener información sobre la Prevención de pérdida de datos en punto de conexión
               href: endpoint-dlp-learn-about.md
+            - name: Obtener información sobre la directiva de prevención de pérdida de datos predeterminada en Microsoft Teams (versión preliminar)
+              href: dlp-teams-default-policy.md
             - name: Obtenga más información sobre el examinador de prevención de pérdida de datos locales de Microsoft 365 (versión preliminar)
               href: dlp-on-premises-scanner-learn.md
+            - name: Obtenga información sobre el Centro de cumplimiento de Microsoft (versión preliminar).
+              href: dlp-chrome-learn-about.md
         - name: Introducción a DLP
           items:
             - name: Introducción a la directiva predeterminada de DLP
@@ -253,6 +259,8 @@
               href: endpoint-dlp-getting-started.md
             - name: Configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión
               href: endpoint-dlp-configure-proxy.md
+            - name: Introducción al Centro de cumplimiento de Microsoft (versión preliminar).
+              href: dlp-chrome-get-started.md
             - name: "Herramientas y métodos de incorporación de la prevención de pérdida de datos en punto de conexión para dispositivos Windows\_10"
               items:
                 - name: "Herramientas y métodos de incorporación para dispositivos Windows\_10"
