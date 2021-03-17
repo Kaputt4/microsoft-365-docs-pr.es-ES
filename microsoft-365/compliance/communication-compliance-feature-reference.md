@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 82dfab193277744c9a7888e7f9ac1d7b7293d843
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 30ad9bf968fa91218d15a6f71785d5299e664ddc
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50542542"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838503"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
@@ -50,7 +50,7 @@ Las plantillas de directiva son configuraciones de directiva predefinidas que pu
 
 Las comunicaciones se examinan cada 24 horas a partir del momento en que se crean las directivas. Por ejemplo, si crea una directiva de idioma ofensivo a las 11:00 a.m., la directiva recopilará señales de cumplimiento de comunicaciones cada 24 horas a las 11:00 a.m. todos los días. La edición de una directiva no cambia esta vez. Para ver la última fecha y hora de examen de una directiva, vaya a la columna Último *examen de* directivas de la **página** Directiva. Después de crear una nueva directiva, puede tardar hasta 24 horas en ver la primera fecha y hora del examen de directivas. La fecha y hora del último examen se convertirán en la zona horaria del sistema local.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 >[!Important]
 >De forma predeterminada, los administradores globales no tienen acceso a las características de cumplimiento de la comunicación. Los roles asignados en este paso son necesarios antes de que se pueda acceder a las características de cumplimiento de comunicaciones.
@@ -507,7 +507,7 @@ Para ver las actividades de revisión de cumplimiento de comunicación de una di
 | **Operations** | Las operaciones de revisión realizadas en la directiva. |
 | **AuditData** | Este campo es el origen de datos principal de todas las actividades de revisión de directivas. Todas las actividades de revisión se registran y se separan por delimitadores por comas. |
 
-También puede ver las actividades de auditoría en el registro de auditoría unificado o con el cmdlet [de PowerShell Search-UnifiedAuditLog.](/powershell/module/exchange/search-unifiedauditlog)
+También puede ver las actividades de auditoría en el registro de auditoría unificado o con el cmdlet [de PowerShell Search-UnifiedAuditLog.](/powershell/module/exchange/search-unifiedauditlog) Para obtener más información sobre las directivas de retención de registros de auditoría, vea [Manage audit log retention policies](audit-log-retention-policies.md).
 
 Por ejemplo, el siguiente ejemplo devuelve las actividades de todas las actividades de revisión de supervisión (directivas y reglas):
 
@@ -519,6 +519,12 @@ En este ejemplo se devuelven las actividades de actualización de las directivas
 
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Discovery -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeleted
+```
+
+En este ejemplo se devuelven actividades que coinciden con las directivas de cumplimiento de comunicaciones actuales:
+
+```PowerShell
+Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch 
 ```
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transición de supervisión en Office 365

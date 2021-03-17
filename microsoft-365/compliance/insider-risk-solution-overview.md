@@ -1,5 +1,5 @@
 ---
-title: Solución de riesgo insider
+title: Soluciones de riesgo de Insider
 description: Obtenga información sobre cómo ayudar a minimizar los riesgos en su organización con soluciones de riesgo de insider en Microsoft 365.
 keywords: Microsoft 365, riesgo interno, cumplimiento
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-overview
-ms.openlocfilehash: 858b4a05dd65b0a32d672882e6ec18188c0cce81
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: c40c30c44e5b8010112adc11d7faee49563761bf
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423945"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838275"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Soluciones de riesgos internos en Microsoft 365
 
@@ -130,7 +130,7 @@ Para ayudar a proteger su organización contra riesgos de insider, configure e i
 
 Para ayudarle a planear una estrategia integrada para implementar las capacidades de riesgo interno de Microsoft 365, descargue el conjunto de ilustraciones de las capacidades de protección de la información y cumplimiento de *Microsoft 365.* Para obtener funciones de riesgo interno, consulte las páginas de ilustración de arquitectura 5-7. Siéntase libre de adaptar estas ilustraciones para su propio uso.
 
-| Elemento | Descripción |
+| Item | Descripción |
 |:-----|:------------|
 |[![Póster modelo: capacidades de protección y cumplimiento de la información de Microsoft 365](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Descargar como pdf](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \| [Descargar como Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> Actualizado en octubre de 2020|Incluye: <ul><li>  Protección de la información y prevención de la pérdida de datos de Microsoft</li><li>Directivas y etiquetas de retención </li><li>Barreras de información</li><li>Cumplimiento de comunicaciones</li><li>Administración de riesgos internos</li><li>Ingesta de datos de terceros</li>|
 

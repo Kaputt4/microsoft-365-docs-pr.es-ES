@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365. En este artículo se proporciona información general sobre la exhibición de documentos electrónicos avanzada en Microsoft 365, una herramienta que le ayudará a administrar investigaciones internas y externas. También enmarca las razones empresariales para usar eDiscovery avanzado para administrar las investigaciones legales.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6623682dedd0342f1e88478127d23bbbd4ab9dbb
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 80a1505bf19beb954c0746efb7fb29f99d6a916b
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727591"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838232"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Información general sobre la exhibición de documentos electrónicos avanzada de Microsoft 365
 
@@ -103,7 +103,7 @@ Al agregar un custodio y los orígenes de datos de custodia correspondientes a u
 
 ### <a name="collecting-case-data"></a>Recopilar datos de casos
 
-Use la **pestaña Búsquedas** para crear búsquedas para buscar contenido relevante en los orígenes de datos de custodia local y no custodial. Puede crear y ejecutar búsquedas basadas en consultas (con palabras clave y condiciones) para identificar un conjunto de mensajes de correo electrónico y documentos que son relevantes para el caso y que desea revisar y analizar en pasos posteriores en el flujo de trabajo de exhibición de documentos electrónicos. Puede crear una o más búsquedas asociadas con el caso. También puede usar la herramienta de búsqueda para obtener una vista previa de documentos de ejemplo y ver estadísticas de búsqueda para ayudarle a refinar y mejorar los resultados de la búsqueda. Una vez que esté satisfecho, los resultados de la búsqueda contienen todos los datos relevantes para el caso, se agregan los resultados de búsqueda a un conjunto de revisión para su posterior revisión, análisis y selección. Para obtener más información, vea [Recopilar datos para un caso](collecting-data-for-ediscovery.md).
+Use la **pestaña Colecciones** para crear búsquedas de exhibición de documentos electrónicos para buscar contenido relevante en los orígenes de datos locales y no custodiales. Puede crear y ejecutar colecciones basadas en consultas (con palabras clave y condiciones) para identificar un conjunto de mensajes de correo electrónico y documentos relevantes para el caso y que desea revisar y analizar en pasos posteriores en el flujo de trabajo de exhibición de documentos electrónicos. Puede crear una o más colecciones asociadas con el caso. También puede usar la herramienta de colección para obtener una vista previa de documentos de ejemplo y ver estadísticas de búsqueda para ayudarle a refinar y mejorar los resultados de la búsqueda. Una vez que esté satisfecho, los resultados de la colección contienen los datos relevantes para el caso, puede confirmar la colección en un conjunto de revisión para su posterior revisión, análisis y selección. Para obtener más información, vea [Recopilar datos para un caso](collecting-data-for-ediscovery.md).
 
 ### <a name="reviewing-and-analyzing-case-data"></a>Revisión y análisis de datos de casos
 

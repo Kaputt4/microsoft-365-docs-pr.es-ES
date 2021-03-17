@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo regular las características relacionadas en grupos de Microsoft 365, Teams, SharePoint y Yammer.
-ms.openlocfilehash: a9b4767c450ffc775fb84711e48b9f6c775419e5
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 01dea57504bf5d68c0bb13376379379f29044191
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741602"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838472"
 ---
 # <a name="what-is-collaboration-governance"></a>¿Qué es la gobernanza de la colaboración?
 
@@ -40,6 +40,10 @@ Esta serie de artículos le ayudará a comprender cómo interactúan los grupos,
 ### <a name="setting-up-secure-collaboration-with-microsoft-365"></a>Configurar la colaboración segura con Microsoft 365
 
 Existen muchas opciones para implementar Grupos de Microsoft 365 y Teams para una colaboración segura en su organización. Se recomienda usar este contenido de gobierno junto con Configurar la colaboración segura con [Microsoft 365](setup-secure-collaboration-with-teams.md) y sus artículos asociados para crear la mejor solución de colaboración para su organización.
+
+### <a name="data-residency"></a>Residencia de datos
+
+Si su organización es multinacional y tiene requisitos de residencia de datos para distintas geografías, incluya [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) como parte de su plan de gobierno de colaboración.
 
 ## <a name="why-microsoft-365-groups-are-important"></a>Por qué los grupos de Microsoft 365 son importantes
 
@@ -109,6 +113,8 @@ Al iniciar el proceso de planeación de gobierno, tenga en cuenta estos procedim
 - **Alinearse con las prioridades empresariales:** los objetivos empresariales le ayudarán a definir cuánto tiempo y energía necesita invertir en gobierno.
 
 - **Inserte las decisiones de** gobierno directamente en las soluciones que cree: muchas decisiones de gobierno se pueden implementar al activar o desactivar las características de Microsoft 365.
+
+- **Usar un enfoque por fases:** primero, revierte las características de colaboración a un pequeño grupo de usuarios. Obtén comentarios de ellos, busca vales de ayuda y actualiza cualquier configuración o proceso necesario antes de continuar con un grupo más grande.
 
 - **Reforzar con la formación:** adapte soluciones como las rutas de aprendizaje de [Microsoft 365](https://docs.microsoft.com/office365/customlearning) para garantizar que las expectativas específicas de la organización se refuercen con la formación proporcionada por Microsoft.
 
@@ -214,7 +220,7 @@ Microsoft 365 incluye un amplio conjunto de capacidades de protección de la inf
 Este conjunto de ilustraciones usa uno de los sectores más regulados, los servicios financieros, para demostrar cómo se pueden aplicar estas capacidades para cumplir los requisitos normativos comunes. Siéntase libre de adaptar estas ilustraciones para su propio uso. 
 
 
-| Elemento | Descripción |
+| Item | Descripción |
 |:-----|:-----|
 |[![Póster modelo: capacidades de protección y cumplimiento de la información de Microsoft 365](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> Inglés: [Descargar como PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japonés: [Descargar como PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Actualizado en noviembre de 2020|Incluye: <ul><li>  Protección de la información y prevención de la pérdida de datos de Microsoft</li><li>Directivas y etiquetas de retención </li><li>Barreras de información</li><li>Cumplimiento de comunicaciones</li><li>Riesgo de Insider</li><li>Ingesta de datos de terceros</li>|
 
@@ -240,7 +246,7 @@ Vea un ejemplo en segundo plano de cómo los grupos de Microsoft 365, SharePoint
 
 - [Encontrar el lugar ideal de colaboración con Grupos de Office 365, SharePoint, Teams y Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Documentación de Seguridad de Microsoft 365](https://docs.microsoft.com/microsoft-365/security)
 

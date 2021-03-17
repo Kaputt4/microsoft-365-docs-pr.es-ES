@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente para todos los datos de su inquilino de Microsoft 365.
-ms.openlocfilehash: 7ffa9a8148a8ae699711b62da48cd2c856d48cac
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 2fed4730e79f6e2ace827eab338bf9da8fe55260
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727483"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838245"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Introducción a la clave de cliente de Microsoft 365 en el nivel de inquilino (versión preliminar pública)
 
@@ -49,7 +49,7 @@ Por ejemplo, los archivos de Microsoft Teams y algunas grabaciones de llamadas y
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>Configurar clave de cliente en el nivel de inquilino (versión preliminar pública)
 
-Estos pasos son similares pero no idénticos a los pasos para configurar la clave de cliente en el nivel de aplicación. Solo debe usar esta vista previa pública con datos de prueba en inquilinos de prueba. No use esta versión con datos de producción o en el entorno de producción. Si ya tiene una implementación de producción de clave de cliente, siga estos pasos para configurar la clave de cliente en el nivel de inquilino en un entorno de prueba.
+Estos pasos son similares pero no idénticos a los pasos para configurar la clave de cliente en el nivel de aplicación. Solo debe usar esta vista previa pública con datos de prueba en inquilinos de prueba. No use esta versión con datos de producción o en el entorno de producción. Si ya tiene una implementación de producción de clave de cliente, siga estos pasos para configurar la clave de cliente en el nivel de inquilino en un entorno de prueba. Una vez que haya asignado un DEP de nivel de inquilino a su inquilino, puede iniciar el proceso de validación y comunicarse con m365ck@microsoft.com cualquier pregunta o preocupación. También puede encontrar pasos de validación documentados en la versión preliminar pública de Instrucciones de validación para cifrado de datos en reposo [para Microsoft 365](https://aka.ms/CustomerKey/PublicPreviewValidation).
 
 Para completar la mayoría de estas tareas, conéctese de forma remota a Azure PowerShell. Para obtener los mejores resultados, use la versión 4.4.0 o posterior de Azure PowerShell.
 
@@ -311,14 +311,14 @@ Parámetros:
 
 | Nombre | Descripción | Opcional (Y/N) |
 |----------|----------|---------|
-|Nombre|Nombre descriptivo de la directiva de cifrado de datos|N|
+|Name|Nombre descriptivo de la directiva de cifrado de datos|N|
 |AzureKeyIDs|Especifica dos valores uri de las claves de Azure Key Vault, separadas por una coma, para asociar con la directiva de cifrado de datos|N|
 |Descripción|Descripción de la directiva de cifrado de datos|N|
 
 ### <a name="assign-policy"></a>Asignar directiva
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “<Default_PolicyName or Default_PolicyID>”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "<Default_PolicyName or Default_PolicyID>"
 ```
 
 Descripción: este cmdlet se usa para configurar la directiva de cifrado de datos predeterminada. Esta directiva se usará para cifrar los datos en todas las cargas de trabajo de soporte técnico. 
@@ -326,7 +326,7 @@ Descripción: este cmdlet se usa para configurar la directiva de cifrado de dato
 Ejemplo:
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “Default_PolicyName”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Default_PolicyName"
 ```
 
 Parámetros:
@@ -354,7 +354,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity "NAM Policy" -Enabled $false
 Actualice una directiva de cifrado de datos.
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
+Set-M365DataAtRestEncryptionPolicy -Identity "EUR Policy" -Refresh
 ```
 
 Parámetros:
