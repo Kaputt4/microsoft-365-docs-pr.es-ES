@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7dcd0ce9b439d78b79d95b3eca39d80ca440726c
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 782c4fdda7e515d921063937f59b199510beaf08
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826192"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838622"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -352,6 +352,11 @@ Información adicional para el etiquetado incorporado:
 - Cuando el etiquetado obligatorio está en vigor, los usuarios no pueden eliminar las etiquetas de confidencialidad de los documentos, pero pueden cambiar una etiqueta existente.
 
 Para obtener orientación sobre cuándo utilizar esta configuración, consulte la información sobre la [configuración de directivas](sensitivity-labels.md#what-label-policies-can-do).
+
+> [!NOTE]
+> Si usa la configuración de directiva de etiquetado predeterminada para documentos y correos electrónicos, además del etiquetado obligatorio: 
+>
+> La etiqueta predeterminada siempre tiene prioridad sobre el etiquetado obligatorio. Pero en el caso de los documentos, el cliente de etiquetado unificado de Azure Information Protection aplica la etiqueta predeterminada a todos los documentos sin etiquetar, mientras que las etiquetas integradas aplican la etiqueta predeterminada a los documentos nuevos y no a los documentos existentes sin etiqueta. Esta diferencia en el comportamiento significa que cuando usa etiquetado obligatorio con la configuración de etiquetas predeterminadas, se pide a los usuarios que apliquen una etiqueta de confidencialidad más a menudo cuando usan el etiquetado integrado que cuando usan el cliente de etiquetado unificado de Azure Information Protection.
 
 ## <a name="end-user-documentation"></a>Documentación para el usuario final
 
