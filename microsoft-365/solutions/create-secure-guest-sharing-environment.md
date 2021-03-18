@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Obtenga más información sobre las opciones disponibles para crear un entorno seguro de uso compartido para invitados en Microsoft 365, al proporcionar accesos de invitado para mejorar la colaboración.
-ms.openlocfilehash: c52feeb8e5c85d38dfa1623ecdd7c2ee2a381fbd
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 28b2efba9f0c4ba17811a9871b05ab9f5a7a4839
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667710"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838692"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Crear un entorno seguro de uso compartido para invitados
 
@@ -45,7 +45,7 @@ Tenga en cuenta que este artículo no describe cómo habilitar la configuración
 
 ## <a name="set-up-multi-factor-authentication-for-guests"></a>Configurar autenticación multifactor para invitados
 
-La autenticación multifactor reduce considerablemente la probabilidad de que una cuenta sea atacada. Dado que los invitados pueden usar cuentas de correo personales que no cumplan con las directivas de la empresa o los procedimientos recomendados, es especialmente importante exigirles que usen una autenticación multifactor. Si se roba el nombre de usuario y la contraseña de un usuario invitado, tener un segundo factor de autenticación reduce considerablemente las posibilidades de que terceros obtengan acceso a sus sitios y archivos.
+La autenticación multifactor reduce considerablemente la probabilidad de que una cuenta sea atacada. Dado es posible que los invitados usen cuentas de correo personales que no cumplan con las directivas de la empresa o los procedimientos recomendados, es especialmente importante exigirles que usen una autenticación multifactor. Si se roba el nombre de usuario y la contraseña de un invitado, tener un segundo factor de autenticación reduce considerablemente las posibilidades de que terceros obtengan acceso a sus sitios y archivos.
 
 En este ejemplo, configuraremos la autenticación multifactor para invitados mediante el uso de una directiva de acceso condicional en Azure Active Directory.
 
@@ -89,7 +89,7 @@ Para crearlos, primero elabore el documento en Word u otro programa de creación
 9. En **Acceso condicional**, de la lista **Exigir con plantillas de directiva de acceso condicional** elija **Crear directiva de acceso condicional más adelante**.
 10. Haga clic en **Crear**.
 
-Una vez haya creado los términos de uso, el siguiente paso es crear una directiva de acceso condicional que muestre los términos a los invitados.
+Una vez que haya creado los términos de uso, el siguiente paso es crear una directiva de acceso condicional que muestre los términos de uso a los invitados.
 
 Para crear una nueva directiva de acceso condicional, haga lo siguiente:
 
@@ -105,7 +105,7 @@ Para crear una nueva directiva de acceso condicional, haga lo siguiente:
 10. En la hoja **Conceder**, seleccione **Términos de uso de invitado** y, a continuación, haga clic en **Seleccionar**.
 11. En la hoja **Nuevo**, en **Habilitar directiva**, haga clic en **Activar** y, luego, haga clic **Crear**.
 
-A partir de ahora, cuando un usuario invitado acceda por primera vez al contenido, a un grupo o a un sitio de su organización, se le pedirá que acepte los términos de uso.
+A partir de ahora, cuando un invitado acceda por primera vez al contenido, a un grupo o a un sitio de su organización, se le pedirá que acepte los términos de uso.
 
 > [!NOTE]
 > El uso del acceso condicional requiere una licencia de Azure AD Premium P1. Para más información, consulte [Qué es el acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
@@ -118,35 +118,28 @@ A partir de ahora, cuando un usuario invitado acceda por primera vez al contenid
 
 Con las revisiones de acceso en Azure AD, puede realizar automáticamente revisiones periódicas del acceso de usuarios a diversos equipos y grupos. Al requerir una revisión de acceso específicamente para invitados, se asegura de que los invitados no tengan acceso a información confidencial de su organización durante más tiempo del necesario.
 
-Las revisiones de acceso se pueden organizar en distintos programas. Un programa es una agrupación de revisiones de acceso similares. Sirve para organizar las revisiones de acceso para propósitos como la creación de informes o auditorías.
-
-Para crear un programa:
-
-1. Inicie sesión en Azure Portal y abra la página [Identity Governance](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade).
-2. En el menú de la izquierda, haga clic en **Programas**.
-3. Haga clic en **Nuevo programa**.
-4. Escriba un **Nombre** y una **Descripción**.
-5. Haga clic en **Crear**.
-
-Una vez que haya creado el programa, puede crear una revisión de acceso de invitados y asociarla a él.
-
 Crear una revisión de acceso de invitados
 
 1. En la página [Identity Governance](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade), en el menú de la izquierda, haga clic en **Revisiones de acceso**.
 2. Haga clic en **Nueva revisión de acceso**.
+3. Elija la opción **Equipos + Grupos**.
+4. Elija la opción **Todos los grupos de Microsoft 365 con usuarios invitados**. Haga clic en **Seleccionar grupo(s) para excluir** si quiere excluir algún grupo.
+5. Elija la opción **Usuarios invitados solo** y, a continuación, haga clic en **Siguiente: revisiones**.
+6. En **Seleccionar revisores**, elija **Propietario(s) de grupo**.
+7. Haga clic en **Seleccionar revisores de reserva**, elija quiénes serán revisores de reserva y haga entonces clic en **Seleccionar**.
+8. En **Especificar periodicidad de la revisión**, elija **Trimestral**.
+9. Seleccione una fecha de inicio y duración.
+10. Para **Finalizar**, elija **Nunca** y haga clic en **Siguiente: configuración**.
 
-   ![Captura de pantalla de la configuración de revisión de acceso en Azure AD](../media/azure-ad-create-access-review.png)
+    ![Captura de pantalla de la pestaña de revisión de acceso en Azure AD](../media/azure-ad-create-access-review.png)
 
-3. En el cuadro **Nombre**, escriba un nombre.
-4. En **Frecuencia**, elija **Trimestral**.
-5. En **Finalización**, elija **Nunca**.
-6. En **Ámbito**, elija **Solo usuarios invitados**.
-7. Haga clic en **Agrupar**, seleccione los grupos que desea incluir en la revisión de acceso y, a continuación, haga clic en **Seleccionar**.
-8. En **Programas**, haga clic en **Vincular al programa**.
-9. En la hoja **Seleccionar un programa**, elija **Programa de revisión de acceso para invitados**
-10. Haga clic en **Iniciar**.
+11. En la pestaña **Configuración**, revise la configuración de cumplimiento con las normas de su empresa.
 
-Se creará una revisión de acceso independiente para cada grupo que especifique. Los propietarios de cada grupo recibirán un correo cada trimestre para aprobar o denegar el acceso de los invitados a sus grupos.
+    ![Captura de pantalla de la configuración de revisión de acceso en Azure AD](../media/azure-ad-create-access-review-settings.png)
+
+12. Haga clic en **Siguiente: Revisar + Crear**.
+13. Escriba un **Nombre de revisión** y revise la configuración.
+14. Haga clic en **Crear**.
 
 Hay que tener en cuenta que los invitados pueden recibir acceso tanto a equipos o grupos, como a archivos y carpetas individuales. Cuando se da acceso a archivos y carpetas, es posible que los invitados no se agreguen a un grupo específico. Si desea realizar revisiones de acceso para invitados que no pertenezcan a un equipo o grupo, puede crear un grupo dinámico en Azure AD que contenga todos los invitados y, a continuación, crear una revisión de acceso para ese grupo. Los propietarios del sitio también pueden administrar una [expiración para invitados del sitio](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
 
@@ -156,9 +149,9 @@ Hay que tener en cuenta que los invitados pueden recibir acceso tanto a equipos 
 
 [Cree una revisión de acceso de grupos o aplicaciones con las revisiones de acceso de Azure AD](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
 
-## <a name="set-up-web-only-access-for-guest-users"></a>Establezca que los usuarios invitados solo puedan acceder a través de la web
+## <a name="set-up-web-only-access-for-guests"></a>Establezca que los invitados solo puedan acceder a través de la web
 
-Puede limitar sus zonas vulnerables a un ataque y facilitar las tareas de administración si obliga a los invitados a que accedan a sus equipos, sitios y archivos a través de un navegador web.
+Puede limitar sus zonas vulnerables a un ataque y facilitar las tareas de administración si obliga a los invitados a acceder a sus equipos, sitios y archivos a través de un navegador web exclusivamente.
 
 Para Grupos de Microsoft 365 y Teams, esto se realiza mediante una directiva de acceso condicional de Azure AD. En el caso de SharePoint, se configura en el Centro de administración de SharePoint. (También puede [usar etiquetas de confidencialidad para restringir el acceso de invitados a solo web](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites))
 
@@ -192,9 +185,9 @@ Cómo restringir el acceso de los invitados a solo web para SharePoint
 
 Tenga en cuenta que esta configuración del Centro de administración de SharePoint crea una directiva de apoyo de acceso condicional en Azure AD.
 
-## <a name="configure-a-session-timeout-for-guest-users"></a>Configurar un tiempo de espera de sesión para los usuarios invitados
+## <a name="configure-a-session-timeout-for-guests"></a>Configurar una directiva de tiempo de espera de sesión para invitados
 
-Requerir que los invitados se autentiquen periódicamente puede reducir la posibilidad de que usuarios desconocidos accedan al contenido de la organización si el usuario invitado no protege su dispositivo correctamente. Azure AD le permite configurar una directiva de acceso condicional de tiempo de espera de sesión para usuarios invitados.
+Requerir que los invitados se autentiquen periódicamente puede reducir la posibilidad de que usuarios desconocidos accedan al contenido de la organización si el invitado no protege su dispositivo correctamente. Azure AD le permite configurar una directiva de acceso condicional de tiempo de espera de sesión para invitados.
 
 Cómo configurar una directiva de tiempo de espera de sesión para invitado
 

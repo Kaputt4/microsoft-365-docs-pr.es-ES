@@ -2,8 +2,8 @@
 title: Puntuación de productividad de Microsoft
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Información general de Puntuación de productividad de Microsoft
-ms.openlocfilehash: 0ce25175b3307e986c079c1614e38e8d87828e04
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 72f9bcfb273912629744ec25ad9c0be720e76081
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509091"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838430"
 ---
 # <a name="microsoft-productivity-score"></a>Puntuación de productividad de Microsoft 
 
@@ -72,7 +72,7 @@ La Puntuación de productividad incluye datos de Exchange, SharePoint, OneDrive,
 La puntuación de su organización se actualiza todos los días y refleja las acciones de usuarios completadas en los últimos 28 días (incluido el día actual).
 
 
-## <a name="pre-requisites"></a>Requisitos previos 
+## <a name="prerequisites"></a>Requisitos previos 
 
 Para los datos de experiencias de personas, necesitará una suscripción a Microsoft 365 para empresas u Office 365 para empresas. Para los datos de análisis de punto de conexión de su espacio empresarial, necesita agregar Microsoft Intune a la suscripción. Intune le ayuda a proteger los datos de su organización mediante la administración de dispositivos y aplicaciones. Cuando tenga Intune, puede activar el análisis de punto de conexión en la experiencia de Intune. Más información sobre [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
 > [!NOTE]
@@ -92,7 +92,7 @@ La Puntuación de productividad solo está disponible en el Centro de administra
 > [!NOTE]
 > Solo un profesional de TI con el rol de administrador global puede registrarse u inscribir un espacio empresarial para la Puntuación de productividad.
 
-Tenga en cuenta que la información está pensada para que se use solo para realizar transformaciones digitales con Microsoft 365 y, por lo tanto, es necesario compartirlas con prudencia. 
+El modelo de control de acceso basado en roles para la Puntuación de productividad ayuda a las organizaciones a impulsar esfuerzos de transformación digital con Microsoft 365, ya que les ofrece flexibilidad para asignar roles a profesionales de TI dentro de una organización.
 
 Microsoft se compromete a proteger la privacidad individual. Este [documento de privacidad](privacy.md)  explica los controles que le proporcionamos, como administrador de TI de su organización, con el fin de asegurar que la información se pueda accionar sin comprometer la confianza que ha depositado en Microsoft.
 
