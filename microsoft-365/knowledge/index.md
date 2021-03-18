@@ -12,7 +12,7 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-description: Aprenda cómo encontrar recursos para los temas de Microsoft Viva
+description: Aprenda cómo encontrar recursos para Temas Microsoft Viva
 ms.openlocfilehash: 31031697b7825b725c020952a6217b278aa09f02
 ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: HT
@@ -39,7 +39,7 @@ Los recursos de esta sección le ayudan a obtener más información acerca de Te
 
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|
-|Obtener más información acerca de Temas Microsoft Viva|[Información general de los Temas Microsoft Viva](topic-experiences-overview.md)|
+|Obtener más información acerca de Temas Microsoft Viva|[Información general de Temas Microsoft Viva](topic-experiences-overview.md)|
 |Obtenga información sobre cómo los temas son descubiertos y sugeridos por AI|[Detección de Temas Microsoft Viva ](topic-experiences-discovery.md)|
 |Obtener información acerca de la seguridad de temas|[Seguridad y privacidad de Microsoft Viva](topic-experiences-security-privacy.md)|
 |Obtener información sobre cómo obtener Temas Microsoft Viva|[Página del producto Temas Microsoft Viva](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
@@ -57,7 +57,7 @@ Obtenga más información sobre cómo usar e implementar Temas Microsoft Viva en
 
 ## <a name="set-up-and-administration"></a>Configuración y administración
 
-Los recursos de esta sección ayudan al administrador de su organización a instalar y configurar Temas Microsoft Viva en el entorno de Microsoft 365.
+Los recursos de esta sección ayudan al administrador de su organización a instalar y configurar Temas Viva en el entorno de Microsoft 365.
 
 | Si busca esta información: | Vea este recurso: |
 |:-----|:-----|
@@ -74,7 +74,7 @@ Los recursos de esta sección ayudan a los usuarios a aprender a usar y administ
 |:-----|:-----|
 |Obtenga información sobre cómo trabajar con temas|[Información general del centro de temas](topic-center-overview.md)<br><br>[Administrar temas](manage-topics.md)<br><br>[Cree un equipo nuevo](create-a-topic.md)<br><br>[Editar un tema existente](edit-a-topic.md)<br><br>[Buscar temas con Búsqueda de Microsoft](search.md)<br><br>|
 |Comprender los roles de usuario|[Roles de Temas Viva](topic-experiences-roles.md)|
-|Entender por qué los temas pueden diferir de diferentes usuarios|[Recorte de seguridad de Temas Microsoft Viva](topic-experiences-security-trimming.md)|
+|Entender por qué los temas pueden diferir de diferentes usuarios|[Recorte de seguridad de Temas Viva](topic-experiences-security-trimming.md)|
 |Obtenga información sobre cómo evitar que determinados temas se identifiquen y visualizó|[Restringir el acceso a temas](restrict-access-to-topics.md)|
 
 
