@@ -22,22 +22,22 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Obtenga información sobre cómo administrar cuentas de usuario de Microsoft 365.
-ms.openlocfilehash: a7b6d89a0f66605dde168b85d74fcd8e513afc15
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c0387bf50228e0eeb763b4807b15c8d57e02eeac
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327764"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909567"
 ---
 # <a name="manage-microsoft-365-user-accounts"></a>Administrar cuentas de usuario de Microsoft 365
 
-Puede administrar las cuentas de usuario de Microsoft 365 de varias maneras, según la configuración. Puede administrar cuentas de usuario en el Centro de administración de [Microsoft 365,](https://docs.microsoft.com/microsoft-365/admin/add-users/) [PowerShell,](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)en Servicios de dominio de Active Directory (AD DS) o en el portal de administración de Azure Active Directory (Azure AD). 
+Puede administrar cuentas de usuario de Microsoft 365 de varias maneras, según la configuración. Puede administrar cuentas de usuario en el Centro de administración de [Microsoft 365](../admin/add-users/index.yml), [PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md), en Servicios de dominio de Active Directory (AD DS) o en el portal de administración de Azure Active Directory (Azure AD). 
 
-Tan pronto como compre Microsoft 365, el Centro de administración de Microsoft 365 y PowerShell se pueden usar para administrar cuentas. Al administrar identidades de nube, cada persona de la organización tiene un nombre de cuenta de usuario y una contraseña independientes. Si desea integrarse con la infraestructura local y hacer que las cuentas de usuario se sincronicen con Microsoft 365, puede usar Azure AD Connect para proporcionar sincronización de identidades y contraseñas para la funcionalidad de inicio de sesión único (SSO).
+Tan pronto como compre Microsoft 365, el Centro de administración de Microsoft 365 y PowerShell se pueden usar para administrar cuentas. Al administrar identidades en la nube, cada persona de la organización tiene un nombre de cuenta de usuario y una contraseña independientes. Si desea integrarse con la infraestructura local y tener cuentas de usuario sincronizadas con Microsoft 365, puede usar Azure AD Connect para proporcionar sincronización de identidades y contraseñas para la funcionalidad de inicio de sesión único (SSO).
   
-## <a name="plan-for-where-and-how-you-will-manage-your-user-accounts"></a>Planear dónde y cómo administrará las cuentas de usuario
+## <a name="plan-for-where-and-how-you-will-manage-your-user-accounts"></a>Planear dónde y cómo administrará sus cuentas de usuario
 
-El lugar y la forma en que puede administrar las cuentas de usuario depende del modelo de identidad que desee usar para Microsoft 365. Los dos modelos generales son híbridos y solo en la nube.
+Dónde y cómo puede administrar sus cuentas de usuario depende del modelo de identidad que desee usar para Su Microsoft 365. Los dos modelos generales son híbridos y solo en la nube.
   
 ### <a name="cloud-only"></a>Solo de nube
 
@@ -45,15 +45,15 @@ Puede crear y administrar usuarios en el Centro de administración de Microsoft 
     
 ### <a name="hybrid"></a>Híbrido
 
-Las cuentas de usuario se sincronizan con Microsoft 365 desde AD DS, por lo que debe usar las herramientas locales de AD DS para administrar cuentas de usuario. 
+Las cuentas de usuario se sincronizan con Microsoft 365 desde AD DS, por lo que debes usar las herramientas locales de AD DS para administrar cuentas de usuario. 
     
 ## <a name="managing-accounts"></a>Administración de cuentas
 
-Al decidir la forma en que la organización creará y administrará las cuentas, tenga en cuenta los siguientes requisitos:
+Al decidir la forma en que la organización creará y administrará cuentas, tenga en cuenta los siguientes requisitos:
   
-- El software de sincronización de directorios debe instalarse en los servidores del entorno local para conectar las identidades entre Microsoft 365 y AD DS.
+- El software de sincronización de directorios debe instalarse en servidores dentro del entorno local para conectar las identidades entre Microsoft 365 y ad DS.
     
-- Cualquier opción de sincronización de directorios, incluidas las opciones de SSO, requiere que los atributos de AD DS cumplan los estándares. Los detalles de qué atributos se usan en el directorio y qué limpieza (si es necesario) se describen en Preparar la sincronización de directorios [con Microsoft 365.](prepare-for-directory-synchronization.md) 
+- Cualquier opción de sincronización de directorios, incluidas las opciones de SSO, requiere que los atributos de AD DS cumplan los estándares. En Prepare [for directory synchronization to Microsoft 365](prepare-for-directory-synchronization.md)se describen los detalles específicos de los atributos que se usan en el directorio y qué limpieza (si es necesario) . 
     
 - Planee cómo va a crear cuentas de Microsoft 365.
     
@@ -61,22 +61,22 @@ En la tabla siguiente se enumeran las distintas herramientas de administración 
     
 |Herramienta|Notas|
 |:-----|:-----|
-|Centro de administración de Microsoft 365  <br/> |[Agregar usuarios individualmente o de forma masiva](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) <br/>  Proporciona una interfaz web sencilla para agregar y cambiar cuentas de usuario.  <br/>  No se puede usar para cambiar usuarios si la sincronización de directorios está habilitada (se puede establecer la asignación de licencias y ubicación).  <br/>  No se puede usar con opciones de SSO.  <br/> |
-|Windows PowerShell  <br/> |[Administrar Microsoft 365 con Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=698471) <br/>  Permite agregar usuarios en usuarios masivos mediante un script Windows PowerShell usuario.  <br/>  Se puede usar para asignar licencias y ubicación a las cuentas, independientemente de cómo se crean las cuentas.  <br/> |
+|Centro de administración de Microsoft 365  <br/> |[Agregar usuarios de forma individual o masiva](../admin/add-users/add-users.md) <br/>  Proporciona una interfaz web sencilla para agregar y cambiar cuentas de usuario.  <br/>  No se puede usar para cambiar los usuarios si la sincronización de directorios está habilitada (se puede establecer la asignación de ubicación y licencia).  <br/>  No se puede usar con opciones de SSO.  <br/> |
+|Windows PowerShell  <br/> |[Administrar Microsoft 365 con Windows PowerShell](./manage-microsoft-365-with-microsoft-365-powershell.md) <br/>  Permite agregar usuarios en usuarios masivos mediante un script Windows PowerShell usuario.  <br/>  Se puede usar para asignar ubicación y licencias a cuentas, independientemente de cómo se crean las cuentas.  <br/> |
 |Importación masiva  <br/> |[Agregar varios usuarios al mismo tiempo](add-several-users-at-the-same-time.md) <br/>  Permite importar un archivo CSV para agregar un grupo de usuarios a Microsoft 365.  <br/>  No se puede usar con opciones de SSO.  <br/> |
-|Azure AD  <br/> |Obtiene una edición gratuita de Azure AD con su suscripción a Microsoft 365. Puede realizar funciones como el restablecimiento de contraseña de autoservicio para los usuarios de la nube y la personalización de las páginas de inicio de sesión y del Panel de acceso mediante la edición gratuita. Para obtener una funcionalidad mejorada, puedes actualizar a la edición básica, Azure AD Premium P1 o Azure AD Premium P2. Consulta [las ediciones de Azure AD](https://go.microsoft.com/fwlink/p/?LinkId=698465) para obtener la lista de características compatibles.  <br/> |
-|Sincronización de directorios  <br/> |[Integración de las identidades locales con Azure AD](https://go.microsoft.com/fwlink/p/?LinkID=624168) <br/>  Para la sincronización de directorios con o sin sincronización de contraseñas, use [Azure AD Connect con la configuración expresa.](https://go.microsoft.com/fwlink/p/?LinkID=698537)  <br/>  Para varios bosques y opciones de SSO, use [La instalación personalizada de Azure AD Connect](https://go.microsoft.com/fwlink/p/?LinkId=698430).  <br/>  Proporciona la infraestructura necesaria para habilitar SSO.  <br/>  Necesario para muchos escenarios híbridos, como la migración por fases y Exchange híbrido  <br/>  Sincroniza la seguridad y los grupos habilitados para correo desde AD DS.  <br/> |
+|Azure AD  <br/> |Obtiene una edición gratuita de Azure AD con su suscripción a Microsoft 365. Puede realizar funciones como el restablecimiento de contraseñas de autoservicio para los usuarios de la nube y la personalización de las páginas del Panel de acceso y inicio de sesión mediante la edición gratuita. Para obtener funcionalidad mejorada, puede actualizar a la edición básica, Azure AD Premium P1 o Azure AD Premium P2. Consulta [Ediciones de Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) para obtener la lista de características admitidas.  <br/> |
+|Sincronización de directorios  <br/> |[Integración de identidades locales con Azure AD](/azure/active-directory/hybrid/whatis-hybrid-identity) <br/>  Para la sincronización de directorios con o sin sincronización de contraseñas, use [Azure AD Connect con la configuración express](/azure/active-directory/hybrid/how-to-connect-install-express).  <br/>  Para varios bosques y opciones de SSO, use [Instalación personalizada de Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-custom).  <br/>  Proporciona la infraestructura necesaria para habilitar SSO.  <br/>  Necesario para muchos escenarios híbridos, como la migración por fases y Exchange híbrido  <br/>  Sincroniza la seguridad y los grupos habilitados para correo desde su AD DS.  <br/> |
 |||
    
-- Independientemente de cómo desee agregar las cuentas de usuario a Microsoft 365, debe administrar varias características de cuenta, como asignar licencias, especificar la ubicación, entre otras. Estas características se pueden administrar a largo plazo desde el Centro de administración de Microsoft 365 o también puede crear cuentas de [usuario con PowerShell.](https://go.microsoft.com/fwlink/p/?LinkId=717083)
+- Independientemente de cómo desee agregar las cuentas de usuario a Microsoft 365, debe administrar varias características de cuenta, como asignar licencias, especificar la ubicación, entre otras. Estas características se pueden administrar a largo plazo desde el Centro de administración de Microsoft 365 o también puede crear cuentas [de usuario con PowerShell.](./create-user-accounts-with-microsoft-365-powershell.md)
     
-    Si decide agregar y administrar todos los usuarios a través del centro de administración, especificará la ubicación y asignará licencias al mismo tiempo que crea la cuenta de Microsoft 365. Como resultado, no se requiere mucha planeación.
+    Si decide agregar y administrar todos los usuarios a través del Centro de administración, especificará la ubicación y asignará licencias al mismo tiempo que crea la cuenta de Microsoft 365. Como resultado, no se requiere mucha planeación.
     
     > [!IMPORTANT]
-    > Crear cuentas en Microsoft 365 sin asignar una licencia (por ejemplo, a SharePoint Online) significa que el propietario de la cuenta puede ver el Centro de Microsoft 365, pero no puede acceder a ninguno de los servicios de la suscripción de su empresa. Después de asignar una ubicación y la licencia, la cuenta se replica en el servicio o servicios que asignó. El usuario puede iniciar sesión en su cuenta y usar los servicios que le haya asignado. 
+    > Crear cuentas en Microsoft 365 sin asignar una licencia (por ejemplo, a SharePoint Online) significa que el propietario de la cuenta puede ver el centro de Microsoft 365, pero no puede acceder a ninguno de los servicios de la suscripción de su empresa. Después de asignar una ubicación y la licencia, la cuenta se replica en el servicio o los servicios que asignó. El usuario puede iniciar sesión en su cuenta y usar los servicios que les asignó. 
   
 ## <a name="see-also"></a>Vea también
 
-[Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users)
+[Centro de administración de Microsoft 365](../admin/add-users/index.yml)
 
-[PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)  
+[PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)

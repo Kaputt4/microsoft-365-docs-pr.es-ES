@@ -1,5 +1,5 @@
 ---
-title: Crear registros DNS en name.com para Microsoft
+title: Crear registros DNS en name.com microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
-description: Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at name.com for Microsoft.
-ms.openlocfilehash: 2330755412abfe262ac79c4acbfc12e33af76fe2
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Aprenda a comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en name.com microsoft.
+ms.openlocfilehash: 97cc83fe060f8fbfe78decff584bded3102b09b5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657832"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910179"
 ---
-# <a name="create-dns-records-at-namecom-for-microsoft"></a>Crear registros DNS en name.com para Microsoft
+# <a name="create-dns-records-at-namecom-for-microsoft"></a>Crear registros DNS en name.com microsoft
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
 Si name.com es su proveedor de hosting DNS, siga los pasos de este artículo para comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype Empresarial Online, etc.
   
-Después de agregar estos registros a name.com, el dominio estará configurado para funcionar con los servicios Microsoft.
+Después de agregar estos registros en name.com, el dominio se configurará para que funcione con los servicios de Microsoft.
 
   
 > [!NOTE]
@@ -71,7 +71,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
    
     ![Name-BP-Verify-1-1](../../media/0c352fd3-cf84-439f-a481-0705e225cc54.png)
   
-5. Seleccione **Agregar registro.**
+5. Seleccione **Agregar registro**.
     
     ![Name-BP-Verify-1-2](../../media/816fc60b-17ab-4982-8849-6c3fcf3ca3d6.png)
   
@@ -119,21 +119,21 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     |**Tipo**|**Host**|**Respuesta**|**TTL**|**Prio**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(Deje este campo en blanco).  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtenga la  *\<domain-key\>*  información de su cuenta de Microsoft.           [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |Use el valor predeterminado (300).  <br/> |0  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |MX  <br/> |(Deje este campo en blanco).  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtener el  *\<domain-key\>*  de su cuenta de Microsoft.           [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |Use el valor predeterminado (300).  <br/> |0  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/> |
    
    ![Name-BP-Configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   
-5. Seleccione **Agregar registro.**
+5. Seleccione **Agregar registro**.
     
     ![Name-BP-Configure-2-2](../../media/fd09f161-7cc4-4723-aec2-5fa801bd19e9.png)
   
 6. Si existen otros registros MX, elimine cada uno de ellos usando el procedimiento de dos pasos siguiente:
     
-    Para cada otro registro MX, seleccione **Eliminar en** la **columna** Acciones. 
+    Para el otro registro MX, seleccione **Eliminar en** la **columna** Acciones. 
     
     ![Name-BP-Configure-2-3](../../media/16734a98-31c4-4023-a2a5-10b7c95bc58e.png)
   
-    Para confirmar cada eliminación, vuelva a seleccionar **Eliminar** en la **columna** Acciones. 
+    Para confirmar cada eliminación, vuelva **a seleccionar Eliminar** en la **columna** Acciones. 
     
     ![Name-BP-Configure-2-4](../../media/409c21c5-51f4-4244-bb84-5d32084224b2.png)
   
@@ -176,7 +176,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 6. Agregue el segundo registro CNAME.
     
-    Use los valores de la segunda fila de la tabla anterior y, a continuación, seleccione **Agregar** registro para agregar el segundo registro. 
+    Use los valores de la segunda fila de la tabla anterior y, a continuación, seleccione **Agregar registro** para agregar el segundo registro. 
     
     Agregue los registros restantes de la misma manera, usando los valores de la tercera, la cuarta, la quinta y la sexta fila de la tabla.
     
@@ -184,7 +184,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *de*  SPF que incluya ambos conjuntos de valores. 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *SPF*  que incluya ambos conjuntos de valores. 
   
 1. Para empezar, vaya a su página de dominios en name.com a través de [este vínculo](https://www.name.com/account/domain). Se le pedirá que primero inicie sesión.
     
@@ -208,7 +208,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
    
    ![Name-BP-Configure-4-1](../../media/cbbfc071-840a-4ffa-a59e-0dfce03063cc.png)
   
-5. Seleccione **Agregar registro.**
+5. Seleccione **Agregar registro**.
     
     ![Name-BP-Configure-4-2](../../media/db1e0e09-2b95-4fc1-88bd-e86da536921f.png)
   
@@ -235,18 +235,18 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     |**Tipo**|**Servicio**|**Grosor**|**TTL**|**Prio**|**Protocolo**|**Puerto**|**Destino**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|1 |Use el valor predeterminado (300).|100|tls|443|sipdir.online.lync.com <br> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |
-    |SRV|sipfederationtls|1 |Use el valor predeterminado (300).|100|tcp|5061|sipfed.online.lync.com <br>**Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |
+    |SRV|sip|1|Use el valor predeterminado (300).|100|tls|443|sipdir.online.lync.com <br> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |
+    |SRV|sipfederationtls|1|Use el valor predeterminado (300).|100|tcp|5061|sipfed.online.lync.com <br>**Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto.           |
    
    ![Name-BP-Configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   
-5. Seleccione **Agregar registro.**
+5. Seleccione **Agregar registro**.
 
     ![Name-BP-Configure-5-2](../../media/a804d51d-8f57-4b0b-8bd6-a52eb1c87a97.png)
   
 6. Agregue el segundo registro SRV:
 
-Use los valores de la siguiente fila de la tabla anterior y, a continuación, seleccione **Agregar** registro para agregar el segundo registro.
+Use los valores de la siguiente fila de la tabla anterior y, a continuación, seleccione **Agregar registro** para agregar el segundo registro.
 
 >[!NOTE]
 >Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).

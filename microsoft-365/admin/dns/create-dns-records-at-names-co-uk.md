@@ -1,5 +1,5 @@
 ---
-title: Crear registros DNS en Names.co.uk para Microsoft
+title: Crear registros DNS en Names.co.uk microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
-description: Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Names.co.uk for Microsoft.
-ms.openlocfilehash: 51dc9b3271468d42e82f98a1b85de5104416b015
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en Names.co.uk microsoft.
+ms.openlocfilehash: ddd7286d983a0f180c9aefdbf5218eb9765c8669
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657820"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910047"
 ---
-# <a name="create-dns-records-at-namescouk-for-microsoft"></a>Crear registros DNS en Names.co.uk para Microsoft
+# <a name="create-dns-records-at-namescouk-for-microsoft"></a>Crear registros DNS en Names.co.uk microsoft
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
 Si Names.co.uk es su proveedor de host DNS, siga los pasos de este artículo para comprobar el dominio y configurar los registros DNS para el correo electrónico, Skype Empresarial Online, etc.
     
-Después de agregar estos registros a Names.co.uk, el dominio se configurará para funcionar con los servicios Microsoft.
+Después de agregar estos registros en Names.co.uk, el dominio se configurará para que funcione con los servicios de Microsoft.
   
 
   
@@ -63,7 +63,7 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
     
     (Elija el valor **Tipo** de la lista desplegable). 
     
-    (Si necesita agregar una fila, seleccione **AGREGAR REGISTROS A/CNAME (+).**
+    (Si necesita agregar una fila, seleccione **AGREGAR REGISTROS A/CNAME (+)**.)
     
     (Es posible que tenga que desplazarse hacia abajo).
         
@@ -121,7 +121,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     |**Nombre de host**|**Prioridad**|**Resultado**|
     |:-----|:-----|:-----|
-    |(Deje este campo en blanco).  <br/> |1   <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> Obtener la  *\<domain-key\>*  cuenta de Microsoft.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
+    |(Deje este campo en blanco).  <br/> |1  <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> Obtener el  *\<domain-key\>*  de su cuenta de Microsoft.           [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-BP-Configure-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
@@ -158,7 +158,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     (Elija el valor **Tipo** de la lista desplegable). 
     
-    (Si necesita agregar una fila, seleccione **AGREGAR REGISTROS A/CNAME (+).**
+    (Si necesita agregar una fila, seleccione **AGREGAR REGISTROS A/CNAME (+)**.)
     
     (Es posible que tenga que desplazarse hacia abajo).
     
@@ -180,7 +180,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *de*  SPF que incluya ambos conjuntos de valores.
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *SPF*  que incluya ambos conjuntos de valores.
   
 1. Para empezar, vaya a su página de dominios en Names.co.uk a través de [este vínculo](https://account.names.co.uk/dashboard#/). Se le pedirá que inicie sesión primero.
     
@@ -192,7 +192,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     ![NamesUK-BP-Configure-1-2](../../media/b618f8e5-404e-466a-9e71-acd7479f3994.png)
   
-3. En la página Zonas DNS  de **la** cuenta, en la columna Nombre de dominio, seleccione el nombre del dominio que va a actualizar. 
+3. En la **página Zonas DNS en cuenta,** en la columna **Nombre** de dominio, seleccione el nombre del dominio que va a actualizar. 
     
     ![NamesUK-BP-Configure-1-2-1](../../media/20254eec-6952-47ba-b12b-da32860ee7ef.png)
   
@@ -200,7 +200,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     (Elija el valor **Tipo** de la lista desplegable). 
     
-    (Si necesita agregar una fila, seleccione **AGREGAR REGISTROS A/CNAME (+).**
+    (Si necesita agregar una fila, seleccione **AGREGAR REGISTROS A/CNAME (+)**.)
     
     (Es posible que tenga que desplazarse hacia abajo).
     
@@ -235,8 +235,8 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     |**Nombre**|**Prioridad**|**Grosor**|**Puerto**|**Resultado**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![NamesUK-BP-Configure-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   
@@ -248,4 +248,3 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 > [!NOTE]
 >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  

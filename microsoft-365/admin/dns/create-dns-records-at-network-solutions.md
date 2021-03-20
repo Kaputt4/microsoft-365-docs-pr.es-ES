@@ -1,5 +1,5 @@
 ---
-title: Crear registros DNS en Network Solutions para Microsoft
+title: Crear registros DNS en Soluciones de red para Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,15 +20,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
-description: Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Network Solutions for Microsoft.
-ms.openlocfilehash: 9cb403bb8b469f2d7f4e6138ba5833120ea53585
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en Network Solutions for Microsoft.
+ms.openlocfilehash: f25e21037695c99489adc9038bf70629a103ec7a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657796"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910143"
 ---
-# <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Crear registros DNS en Network Solutions para Microsoft
+# <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Crear registros DNS en Soluciones de red para Microsoft
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
@@ -46,7 +46,7 @@ Estos son los registros principales que agregar. Siga los pasos siguientes o [ve
     
 - [Agregar los dos registros SRV necesarios para Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-Después de agregar estos registros a Network Solutions, el dominio estará configurado para funcionar con los servicios Microsoft.
+Después de agregar estos registros en Network Solutions, el dominio se configurará para que funcione con los servicios de Microsoft.
   
 
   
@@ -66,7 +66,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 0:47)](https://support.mi
 1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). Se le pedirá que inicie sesión.
     
     > [!IMPORTANT]
-    > Antes de seleccionar el botón **Iniciar** sesión, elija Primero **Administrar** mis nombres de dominio en la lista desplegable Iniciar sesión **para:** 
+    > Antes de seleccionar el botón **Inicio** de sesión, elija primero **Administrar mis** nombres de dominio en la lista desplegable Iniciar sesión **en:** . 
   
     ![Elija Administrar mis nombres de dominio e inicie sesión en Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -78,11 +78,11 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 0:47)](https://support.mi
     
     ![Seleccionar Editar DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Seleccione **Administrar registros DNS avanzados.**
+4. Seleccione **Administrar registros DNS avanzados**.
     
     (Es posible que tenga que desplazarse hacia abajo).
     
-    ![Seleccionar Administrar registros DNS avanzados](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![Seleccione Administrar registros DNS avanzados](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
 5. Desplácese hacia abajo hasta **la sección Texto (registros TXT)** y, a continuación, **seleccione Editar registros TXT**.
     
@@ -94,13 +94,13 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 0:47)](https://support.mi
     |:-----|:-----|:-----|
     |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Nota:** esto es un ejemplo. Utilice aquí su valor de **Dirección de destino**, desde la tabla.  [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)   |
        
-    ![Escribir o pegar valores en los cuadros para el nuevo registro](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
+    ![Escriba o pegue valores en los cuadros del nuevo registro](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
 7. Seleccione **Continuar**.
     
     ![Seleccionar Continuar](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
-8. Seleccione **Guardar cambios.**
+8. Seleccione **Guardar cambios**.
     
     ![Seleccionar Guardar cambios](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
   
@@ -135,7 +135,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 3:51)](https://support.mi
 1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). Se le pedirá que inicie sesión.
     
     > [!IMPORTANT]
-    > Antes de seleccionar el botón  **Iniciar** sesión, elija primero Administrar mis nombres de dominio en la lista desplegable Iniciar sesión **en:** 
+    > Antes de seleccionar el botón **Inicio** de sesión, elija primero **Administrar mis** nombres de dominio en la lista desplegable Iniciar sesión **en:** . 
   
     ![Elija Administrar mis nombres de dominio e inicie sesión en Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -147,11 +147,11 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 3:51)](https://support.mi
     
     ![Seleccionar Editar DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Seleccione **Administrar registros DNS avanzados.**
+4. Seleccione **Administrar registros DNS avanzados**.
     
     (Es posible que tenga que desplazarse hacia abajo).
     
-    ![Seleccionar Administrar registros DNS avanzados](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![Seleccione Administrar registros DNS avanzados](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
 5. Desplácese hacia abajo hasta la sección Servidores de correo **(registros MX)** y, a continuación, **seleccione Editar registros MX**.
     
@@ -161,15 +161,15 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 3:51)](https://support.mi
     
     |**Prioridad**|**TTL**|**Servidor de correo**|
     |:-----|:-----|:-----|
-    |10    <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> **Nota:** Obtenga su  *\<domain-key\>*  cuenta de Microsoft. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
+    |10    <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/> |3600  <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> **Nota:** Obtener el  *\<domain-key\>*  de su cuenta de Microsoft. [¿Cómo puedo encontrar esto?](../get-help-with-domains/information-for-dns-records.md)          |
        
-    ![Escribir o pegar valores en los cuadros para el nuevo registro](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
+    ![Escriba o pegue valores en los cuadros del nuevo registro](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
 7. Seleccione **Continuar**.
     
     ![Seleccionar Continuar](../../media/963f758b-e79d-4452-8340-7eba8a3972c9.png)
   
-8. Seleccione **Guardar cambios.**
+8. Seleccione **Guardar cambios**.
     
     ![Seleccionar Guardar cambios](../../media/7c2f784a-6dee-4364-866c-ad7202ef1fc2.png)
   
@@ -181,7 +181,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 3:51)](https://support.mi
     
     ![Seleccionar Continuar](../../media/4710f988-0bbc-4ba7-bf31-ca2392b2900e.png)
   
-11. Seleccione **Guardar cambios.**
+11. Seleccione **Guardar cambios**.
     
     ![Seleccionar Guardar cambios](../../media/24432ec6-666b-4612-9488-37c06437959b.png)
   
@@ -193,7 +193,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 4:43)](https://support.mi
 1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). Se le pedirá que inicie sesión.
     
     > [!IMPORTANT]
-    > Antes de seleccionar el botón **Iniciar** sesión, elija Primero **Administrar** mis nombres de dominio en la lista desplegable Iniciar sesión **para:** 
+    > Antes de seleccionar el botón **Inicio** de sesión, elija primero **Administrar mis** nombres de dominio en la lista desplegable Iniciar sesión **en:** . 
   
     ![Elija Administrar mis nombres de dominio e inicie sesión en Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -205,15 +205,15 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 4:43)](https://support.mi
     
     ![Seleccionar Editar DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Seleccione **Administrar registros DNS avanzados.**
+4. Seleccione **Administrar registros DNS avanzados**.
     
     (Es posible que tenga que desplazarse hacia abajo).
     
-    ![Seleccionar Administrar registros DNS avanzados](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![Seleccione Administrar registros DNS avanzados](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
 5. Desplácese hacia abajo hasta la **sección Alias de host (registros CNAME)** y, a continuación, seleccione Editar registros **CNAME**.
     
-    ![Seleccionar Editar registros CNAME en Alias de host](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
+    ![Seleccione Editar registros CNAME en Alias de host](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
   
 6. En los cuadros de los cuatro nuevos registros, escriba (o copie y pegue) los valores de la tabla siguiente.
     
@@ -225,13 +225,13 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 4:43)](https://support.mi
     |enterpriseregistration  <br/> |3600  <br/> |(Sin configuración)  <br/> |enterpriseregistration.windows.net  <br/> **Este valor DEBE terminar en punto (.)** <br/> |
     |enterpriseenrollment  <br/> |3600  <br/> |(Sin configuración)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **Este valor DEBE terminar en punto (.)** <br/> |
     
-    ![Escribir o pegar valores para los nuevos registros](../../media/5ce0b30c-b46c-4778-aa5a-fb5e2f0961c1.png)
+    ![Escriba o pegue valores para los nuevos registros](../../media/5ce0b30c-b46c-4778-aa5a-fb5e2f0961c1.png)
   
-7. Cuando haya agregado todos los registros CNAME que necesita, seleccione **Continuar**.
+7. Cuando haya agregado todos los registros CNAME que necesite, seleccione **Continuar**.
     
     ![Seleccionar Continuar](../../media/4978bd8b-f6a6-458d-9522-ad612b301c4a.png)
   
-8. Seleccione **Guardar cambios.**
+8. Seleccione **Guardar cambios**.
     
     ![Seleccionar Guardar cambios](../../media/f005c38a-0d8d-4c61-bec6-15e60c89aa5a.png)
   
@@ -239,14 +239,14 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 4:43)](https://support.mi
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *de*  SPF que incluya ambos conjuntos de valores. 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *SPF*  que incluya ambos conjuntos de valores. 
   
 Siga los pasos siguientes o [vea el vídeo (empieza en 5:35)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099).
   
 1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). Se le pedirá que inicie sesión.
     
     > [!IMPORTANT]
-    > Antes de seleccionar el botón **Iniciar** sesión, elija Primero **Administrar** mis nombres de dominio en la lista desplegable Iniciar sesión **para:** 
+    > Antes de seleccionar el botón **Inicio** de sesión, elija primero **Administrar mis** nombres de dominio en la lista desplegable Iniciar sesión **en:** . 
   
     ![Elija Administrar mis nombres de dominio e inicie sesión en Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -258,11 +258,11 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 5:35)](https://support.mi
     
     ![Seleccionar Editar DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Seleccione **Administrar registros DNS avanzados.**
+4. Seleccione **Administrar registros DNS avanzados**.
     
     (Es posible que tenga que desplazarse hacia abajo).
     
-    ![Seleccionar Administrar registros DNS avanzados](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![Seleccione Administrar registros DNS avanzados](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
 5. Desplácese hacia abajo hasta **la sección Texto (registros TXT)** y, a continuación, **seleccione Editar registros TXT**.
     
@@ -274,13 +274,13 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 5:35)](https://support.mi
     |:-----|:-----|:-----|
     |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** recomendamos copiar y pegar esta entrada, para que todo el espacio sea correcto. |
        
-    ![Escribir o pegar valores para el nuevo registro](../../media/11564eca-e2ee-4f17-af2b-a00eb7c157db.png)
+    ![Escriba o pegue valores para el nuevo registro](../../media/11564eca-e2ee-4f17-af2b-a00eb7c157db.png)
   
 7. Seleccione **Continuar**.
     
     ![Seleccionar Continuar](../../media/482a8dae-0c79-47c4-8bd8-87965683de24.png)
   
-8. Seleccione **Guardar cambios.**
+8. Seleccione **Guardar cambios**.
     
     ![Seleccionar Guardar cambios](../../media/600b8c6d-184f-4213-a50e-8f119ebf3ff0.png)
   
@@ -292,7 +292,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 6:18)](https://support.mi
 1. Para empezar, vaya a la página de dominios en Network Solutions mediante [este vínculo](https://www.networksolutions.com/manage-it). Se le pedirá que inicie sesión.
     
     > [!IMPORTANT]
-    > Antes de seleccionar el botón **Iniciar** sesión, elija Primero **Administrar** mis nombres de dominio en la lista desplegable Iniciar sesión **para:** 
+    > Antes de seleccionar el botón **Inicio** de sesión, elija primero **Administrar mis** nombres de dominio en la lista desplegable Iniciar sesión **en:** . 
   
     ![Elija Administrar mis nombres de dominio e inicie sesión en Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -304,15 +304,15 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 6:18)](https://support.mi
     
     ![Seleccionar Editar DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Seleccione **Administrar registros DNS avanzados.**
+4. Seleccione **Administrar registros DNS avanzados**.
     
     (Es posible que tenga que desplazarse hacia abajo).
     
-    ![Seleccionar Administrar registros DNS avanzados](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
+    ![Seleccione Administrar registros DNS avanzados](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
 5. Desplácese hacia abajo hasta **la sección Servicio (registros SRV)** y, a continuación, **seleccione Editar registros SRV**.
     
-    ![Seleccionar Editar registros SRV en Servicio](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
+    ![Seleccione Editar registros SRV en Servicio](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
   
 6. En los cuadros de los dos nuevos registros, escriba (o copie y pegue) los valores de la tabla siguiente.
     
@@ -320,19 +320,18 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 6:18)](https://support.mi
     
     |**Servicio**|**Protocolo**|**TTL**|**Prioridad**|**Grosor**|**Puerto**|**Destino**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.).** <br/> |
+    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.).** <br/> |
        
-    ![Escribir o pegar valores para los nuevos registros](../../media/86968d1c-8e43-4e61-aeaa-37fc7d7ef7a7.png)
+    ![Escriba o pegue valores para los nuevos registros](../../media/86968d1c-8e43-4e61-aeaa-37fc7d7ef7a7.png)
   
 7. Seleccione **Continuar**.
     
     ![Seleccionar Continuar](../../media/bfe2c778-5d2b-4bb6-a79d-c3ff9caf9e1e.png)
   
-8. Seleccione **Guardar cambios.**
+8. Seleccione **Guardar cambios**.
     
     ![Seleccionar Guardar cambios](../../media/6d323126-0ebe-45ab-8567-c234711d84c7.png)
   
 > [!NOTE]
 >  Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  

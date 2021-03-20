@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Utilice estas guías de laboratorio de pruebas para configurar una demostración, prueba de concepto o entornos de desarrollo/prueba en Microsoft 365 para empresas.
-ms.openlocfilehash: fefbb18fd108dceba6f387fb8244619c4bb1c167
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: a006f549d0ac68562faee9c935df7f15161b2f12
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487475"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909603"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Guías de laboratorio para pruebas de Microsoft 365 para empresas
 
@@ -31,23 +31,23 @@ ms.locfileid: "48487475"
 
 Las Guías del laboratorio de pruebas (TLG) le ayudan a obtener información rápidamente sobre productos de Microsoft. Proporcionan instrucciones prescriptivas para configurar entornos de pruebas representativos pero simplificados. Puede usar estos entornos para la demostración, la personalización o la creación de pruebas de concepto complejas durante el tiempo que dure una suscripción de prueba o de pago.
 
-Las TLD están diseñadas para ser modulares. Se crean entre sí para crear varias configuraciones que se asemejen más a sus necesidades de configuración de aprendizaje o prueba. La experiencia práctica "Lo he creado yo mismo y funciona" le ayudará a comprender los requisitos de implementación de un nuevo producto o escenario, de modo que pueda planear mejor su hospedaje en producción.
+Los TLG están diseñados para ser modulares. Se crean entre sí para crear varias configuraciones que coincidan más estrechamente con sus necesidades de configuración de aprendizaje o prueba. La experiencia práctica "Lo construí yo mismo y funciona", le ayuda a comprender los requisitos de implementación de un nuevo producto o escenario, de modo que pueda planear mejor su hospedaje en producción.
 
-También puede usar TLD para crear entornos representativos para desarrollar y probar aplicaciones, también conocidas como entornos de desarrollo y pruebas.
+También puede usar tlgs para crear entornos representativos para desarrollar y probar aplicaciones, también conocidas como entornos de desarrollo y prueba.
   
-![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Para obtener un mapa visual de todos los artículos de la pila de guía del entorno de pruebas de Microsoft 365 para empresas, expanda el siguiente gráfico o vaya a La pila de guía del laboratorio de pruebas de [Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf)para empresas.
+Para obtener un mapa visual de todos los artículos de la pila guía del laboratorio de pruebas de Microsoft 365 para empresas, expanda el siguiente gráfico o vaya a [Microsoft 365 para](../downloads/Microsoft365EnterpriseTLGStack.pdf)enterprise Test Lab Guide Stack .
 
 [![Pila de guías de laboratorio para pruebas de Microsoft 365 Enterprise](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>Configuración básica
 
-En primer lugar, cree un entorno de prueba [para Microsoft 365 para empresas.](https://docs.microsoft.com/microsoft-365-enterprise/) Puede crear dos tipos diferentes de configuraciones base:
+En primer lugar, cree un entorno de prueba [para Microsoft 365 para empresas.](/microsoft-365-enterprise/) Puede crear dos tipos diferentes de configuraciones base:
 
-- [Configuración básica ligera:](lightweight-base-configuration-microsoft-365-enterprise.md) úsese esto cuando desee configurar y demostrar las características y capacidades de Microsoft 365 para empresas en un entorno solo de nube, que no incluye ningún componente local.
+- [Configuración base ligera:](lightweight-base-configuration-microsoft-365-enterprise.md) use esta opción cuando desee configurar y demostrar las características y capacidades de Microsoft 365 para empresas en un entorno solo en la nube, que no incluye componentes locales.
 
-- [](simulated-ent-base-configuration-microsoft-365-enterprise.md) Configuración básica empresarial simulada: úsese esto cuando quiera configurar y demostrar las características y capacidades de Microsoft 365 para empresas en un entorno de nube híbrida, que usa componentes locales, como un dominio de Servicios de dominio de Active Directory (AD DS).
+- [Configuración base](simulated-ent-base-configuration-microsoft-365-enterprise.md) de empresa simulada: use esta opción cuando desee configurar y demostrar las características y capacidades de Microsoft 365 para empresas en un entorno de nube híbrida, que usa componentes locales, como un dominio de Servicios de dominio de Active Directory (AD DS).
 
 También puede crear entornos de prueba para Office 365 E5 al no agregar la licencia de Microsoft 365 E5 a su prueba o entorno de prueba de producción.
     
@@ -69,7 +69,7 @@ Para mostrar características y funciones relacionadas con identidades, vea:
 
 - [Inicio de sesión único de conexión directa de Azure AD](single-sign-on-m365-ent-test-environment.md)
   
-   Habilitar y probar el inicio de sesión único de conexión directa de Azure AD (SSO de conexión directa) con un controlador de dominio de AD DS.
+   Habilitar y probar el inicio de sesión único de Azure AD Seamless (SSO de conexión directa) con un controlador de dominio de AD DS.
 
 - [Autenticación multifactor](multi-factor-authentication-microsoft-365-test-environment.md)
   
@@ -85,7 +85,7 @@ Para mostrar características y funciones relacionadas con identidades, vea:
 
 - [Restablecimiento de contraseña](password-reset-m365-ent-test-environment.md)
 
-   Use el restablecimiento de contraseña de autoservicio para restablecer la contraseña.
+   Use el restablecimiento de contraseñas de autoservicio para restablecer la contraseña.
 
 - [Licencias automáticas y pertenencia a grupos](automate-licenses-group-membership-microsoft-365-test-environment.md)
 

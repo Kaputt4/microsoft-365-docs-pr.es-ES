@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: En este artículo, busque procedimientos para usar PowerShell para Microsoft 365 para administrar grupos de sitios de SharePoint Online.
-ms.openlocfilehash: fa9aff769ff84f8567c45b20c7b6c8a078b4a70c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: bcc7a00a6114a6fa2ba8aa02520267bd03a0abf5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694084"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909543"
 ---
 # <a name="manage-sharepoint-online-site-groups-with-powershell"></a>Administrar grupos de sitio de SharePoint Online con PowerShell
 
@@ -35,14 +35,14 @@ Aunque puede usar el Centro de administración de Microsoft 365, también puede 
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Los procedimientos de este artículo requieren que se conecte a SharePoint Online. Para obtener instrucciones, consulte [Connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
+Los procedimientos de este artículo requieren que se conecte a SharePoint Online. Para obtener instrucciones, consulte [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
 ## <a name="view-sharepoint-online-with-powershell-for-microsoft-365"></a>Ver SharePoint Online con PowerShell para Microsoft 365
 
-El Centro de administración de SharePoint Online tiene algunos métodos fáciles de usar para administrar grupos de sitios. Por ejemplo, supongamos que desea buscar en el sitio los grupos y los miembros del `https://litwareinc.sharepoint.com/sites/finance` grupo. Esto es lo que tiene que hacer para:
+El Centro de administración de SharePoint Online tiene algunos métodos fáciles de usar para administrar grupos de sitios. Por ejemplo, supongamos que desea ver los grupos y los miembros del grupo para el `https://litwareinc.sharepoint.com/sites/finance` sitio. Esto es lo que tiene que hacer para:
 
-1. En el Centro de administración de SharePoint, haga clic en **Sitios activos** y, a continuación, haga clic en la dirección URL del sitio.
-2. En la página del  sitio, haga clic en el icono Configuración (ubicado en la esquina superior derecha de la página) y, a continuación, haga clic en **Permisos del sitio.**
+1. En el Centro de administración de SharePoint, haga clic **en Sitios activos** y, a continuación, haga clic en la dirección URL del sitio.
+2. En la página del  sitio, haga clic en el icono Configuración (ubicado en la esquina superior derecha de la página) y, a continuación, haga clic en **Permisos del sitio**.
 
 Y, así, repita el proceso con el siguiente sitio que quiera ver.
 
@@ -61,7 +61,7 @@ foreach ($y in $x)
 
 Hay dos formas de ejecutar este conjunto de comandos en el símbolo del sistema del Shell de administración de SharePoint Online:
 
-- Copie los comandos en el Bloc de notas (u otro editor de texto), modifique el valor de la variable **$siteURL,** seleccione los comandos y, a continuación, péguelos en el símbolo del sistema del Shell de administración de SharePoint Online. Cuando lo haga, PowerShell se detendrá en un **>>** símbolo del sistema. Presione ENTRAR para ejecutar el `foreach` comando.<br/>
+- Copie los comandos en el Bloc de notas (u otro editor de texto), modifique el valor de la variable **$siteURL,** seleccione los comandos y, a continuación, péguelos en el símbolo del sistema del Shell de administración de SharePoint Online. Cuando lo haga, PowerShell se detendrá en un **>>** mensaje. Presione Entrar para ejecutar el `foreach` comando.<br/>
 - Copie los comandos en el Bloc de notas (u otro editor de texto), modifique el valor de la variable **$siteURL** y después guarde este archivo de texto con un nombre y la extensión. ps1 en la carpeta adecuada. A continuación, ejecute el script desde el símbolo del sistema del Shell de administración de SharePoint Online especificando su ruta de acceso y nombre de archivo. A continuación se muestra un ejemplo:
 
 ```powershell
@@ -72,7 +72,7 @@ En ambos casos, el resultado será parecido a lo siguiente:
 
 ![Grupos de sitios de SharePoint Online](../media/SPO-site-groups.png)
 
-Estos son todos los grupos que se han creado para el sitio y `https://litwareinc.sharepoint.com/sites/finance` todos los usuarios asignados a esos grupos. Los nombres de grupo están en amarillo para ayudarle a separar los nombres de grupo de sus miembros.
+Estos son todos los grupos que se han creado para el sitio `https://litwareinc.sharepoint.com/sites/finance` y todos los usuarios asignados a esos grupos. Los nombres de grupo están en amarillo para ayudarle a separar los nombres de grupo de sus miembros.
 
 Como otro ejemplo, este es un conjunto de comandos que enumera los grupos y todas las pertenencias a grupos para todos los sitios de SharePoint Online.
 
@@ -94,7 +94,7 @@ foreach ($y in $x)
     
 ## <a name="see-also"></a>Vea también
 
-[Conectarse a SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+[Conectarse a SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 [Crear sitios de SharePoint Online y agregar usuarios con PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
 
@@ -103,4 +103,3 @@ foreach ($y in $x)
 [Administrar Microsoft 365 con PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Introducción a PowerShell para Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
-description: Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at eNomCentral for Microsoft.
-ms.openlocfilehash: e6e05b987a893da582ea7fb062eafe421861b970
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en eNomCentral para Microsoft.
+ms.openlocfilehash: 528659667ee062c8cf767bed0989558020032924
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658116"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910371"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>Crear registros DNS en eNomCentral para Microsoft
 
@@ -34,7 +34,7 @@ ms.locfileid: "49658116"
 
 Si eNomCentral es su proveedor de host DNS, siga los pasos de este artículo para comprobar el dominio y configurar los registros DNS para el correo electrónico, Skype Empresarial Online, etc.
 
-Después de agregar estos registros a eNomCentral, el dominio estará configurado para funcionar con los servicios Microsoft.
+Después de agregar estos registros en eNomCentral, el dominio se configurará para que funcione con los servicios de Microsoft.
 
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -63,7 +63,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 0:46)](https://support.mi
 
 4. En los cuadros para el nuevo registro, escriba o copie y pegue los valores de la tabla siguiente.
 
-   Elija el **valor tipo de** registro de la lista desplegable.
+   Elija el **valor Tipo de** registro de la lista desplegable.
 
    |Nombre de host|Record Type|Address|
    |---|---|---|
@@ -117,7 +117,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 3:40)](https://support.mi
 
    |Nombre de host|Address|Pref.|
    |---|---|---|
-   |@| *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> **Nota:** Obtenga la  *\<domain-key\>*  información de su cuenta de Microsoft. [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)|10    <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)|
+   |@| *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Este valor DEBE terminar en punto (.)** <br/> **Nota:** Obtener el  *\<domain-key\>*  de su cuenta de Microsoft. [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)|10    <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml)|
 
    ![eNom-BP-Configure-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
 
@@ -129,7 +129,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 3:40)](https://support.mi
 
    ![eNom-BP-Configure-2-3](../../media/5017ed03-ca76-4c5c-93a7-84ffe24125dc.png)
 
-8. Seleccione **eliminar activada.**
+8. Seleccione **eliminar activado**.
 
    ![eNom-BP-Configure-2-4](../../media/072dc039-bddb-4c1f-bb44-5660e77f14b0.png)
 
@@ -156,7 +156,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 4:24)](https://support.mi
 
 5. En los cuadros para los seis nuevos registros, escriba o copie y pegue los valores siguientes.
 
-   Elija el **valor tipo de** registro de la lista desplegable.
+   Elija el **valor Tipo de** registro de la lista desplegable.
 
    |Nombre de host|Record Type|Address|
    |---|---|---|
@@ -176,7 +176,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 4:24)](https://support.mi
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *de*  SPF que incluya ambos conjuntos de valores.
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *SPF*  que incluya ambos conjuntos de valores.
 
 Siga los pasos siguientes o [vea el vídeo (empieza en 5:12)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).
 
@@ -194,7 +194,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 5:12)](https://support.mi
 
 4. En los cuadros del nuevo registro, escriba (o copie y pegue) los valores de la tabla siguiente.
 
-   Elija el **valor tipo de** registro de la lista desplegable.
+   Elija el **valor Tipo de** registro de la lista desplegable.
 
    |Nombre de host|Record Type|Address|
    |---|---|---|
@@ -223,7 +223,7 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 5:50)](https://support.mi
 
    ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
 
-4. A la derecha de **la nueva fila,** seleccione **agregar registro SRV o SPF**.
+4. A la derecha de la **nueva fila,** seleccione **agregar registro SRV o SPF**.
 
    ![eNom-BP-Configure-5-1](../../media/c73c154d-5aa0-41ef-be25-f43129eb178c.png)
 
@@ -231,8 +231,8 @@ Siga los pasos siguientes o [vea el vídeo (empieza en 5:50)](https://support.mi
 
    |Servicio|Protocolo|Priority|Peso|Puerto|Destino (nombre de host)|
    |---|---|---|---|---|---|
-   |_sip|_tls|100|1 |443|sipdir.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.)**|
-   |_sipfederationtls|_tcp|100|1 |5061|sipfed.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.).**|
+   |_sip|_tls|100|1|443|sipdir.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.)**|
+   |_sipfederationtls|_tcp|100|1|5061|sipfed.online.lync.com.  <br/> **Este valor DEBE terminar en punto (.).**|
 
    ![eNom-BP-Configure-5-2](../../media/4d478f40-780f-43b9-940b-712b09da8c63.png)
 

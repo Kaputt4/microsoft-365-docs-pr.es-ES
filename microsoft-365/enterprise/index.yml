@@ -13,12 +13,12 @@ metadata:
   author: robmazz
   ms.author: robmazz
   ms.date: 07/28/2020
-  ms.openlocfilehash: 0fb4b195ebe6175afcc32291325b70848cc53901
-  ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+  ms.openlocfilehash: 5482763b15aaab7e35bb25135a7c406975d9382e
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/14/2020
-  ms.locfileid: "46686675"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50909755"
 highlightedContent:
   items:
   - title: Más información sobre Microsoft 365 Enterprise
@@ -29,7 +29,7 @@ highlightedContent:
     url: https://www.microsoft.com/fasttrack/microsoft-365
   - title: Entrenar a los profesionales de TI y administradores
     itemType: learn
-    url: https://docs.microsoft.com/learn/m365/
+    url: /learn/m365/
 conceptualContent:
   title: Obtener ayuda con Microsoft 365 para empresas y otros recursos
   summary: Explore Microsoft 365 para empresas para obtener instrucciones de implementación empresarial, características y servicios.
@@ -39,27 +39,27 @@ conceptualContent:
     - url: identity-roadmap-microsoft-365.md
       itemType: how-to-guide
       text: Infraestructura de identidad
-    - url: https://docs.microsoft.com/windows/deployment/
+    - url: /windows/deployment/
       itemType: get-started
       text: Windows 10 Enterprise
-    - url: https://docs.microsoft.com/deployoffice/plan-microsoft-365-apps
+    - url: /deployoffice/plan-microsoft-365-apps
       itemType: deploy
       text: Aplicaciones de Microsoft 365 para empresas
-    - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
+    - url: /intune/fundamentals/planning-guide
       itemType: deploy
       text: Microsoft Intune
   - title: Administrar Microsoft 365 Enterprise
     links:
-    - url: https://docs.microsoft.com/windows/deployment/update/
+    - url: /windows/deployment/update/
       itemType: how-to-guide
       text: Windows 10 Enterprise
-    - url: https://docs.microsoft.com/deployoffice/overview-update-channels
+    - url: /deployoffice/overview-update-channels
       itemType: concept
       text: Aplicaciones de Microsoft 365 para empresas
-    - url: https://docs.microsoft.com/intune/apps/app-management
+    - url: /intune/apps/app-management
       itemType: get-started
       text: Aplicaciones con Intune
-    - url: https://docs.microsoft.com/office365/
+    - url: /office365/
       itemType: get-started
       text: Servicios de Microsoft 365
 additionalContent:
@@ -69,10 +69,10 @@ additionalContent:
     items:
     - title: Cumplimiento de Microsoft 365
       summary: Ayuda a su organización a controlar información, protegerse frente a los riesgos y cumplir con los estándares jurídicos o normativos.
-      url: https://docs.microsoft.com/microsoft-365/compliance/index
+      url: ../compliance/index.yml
     - title: Seguridad de Microsoft 365
       summary: Proteja su organización en las superficies de ataque con sólidos servicios y soluciones de seguridad.
-      url: https://docs.microsoft.com/microsoft-365/security/index
+      url: ../security/index.yml
     - title: Comunidad técnica de Microsoft 365
       summary: Conecte y colabore con compañeros y expertos de la Comunidad técnica de Microsoft y comparta las mejores prácticas de Microsoft 365.
       url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

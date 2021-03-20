@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
-description: Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at GoDaddy for Microsoft.
-ms.openlocfilehash: 2b53985dc17f3d124ec2b37dbf0047bce229385c
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en GoDaddy para Microsoft.
+ms.openlocfilehash: d0163447abdc7b9fe5afd4f471f24ee09de40d50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126454"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910251"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>Crear registros DNS en GoDaddy para Microsoft
 
@@ -35,7 +35,7 @@ ms.locfileid: "50126454"
 
 Si GoDaddy es su proveedor de hosting DNS, siga los pasos de este artículo para comprobar su dominio y configurar los registros DNS para el correo electrónico, Skype Empresarial Online, etc.
 
-Después de agregar estos registros a GoDaddy, su dominio estará configurado para trabajar con los servicios Microsoft.
+Después de agregar estos registros en GoDaddy, el dominio se configurará para que funcione con los servicios de Microsoft.
 
 > [!NOTE]
 > Por lo general, los cambios de DNS tardan unos 15 minutos en aplicarse. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, consulte [Solucionar problemas después de cambiar el nombre del dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -54,7 +54,7 @@ Siga estos pasos.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. En **Dominios,** seleccione DNS en el dominio que desea editar.
+2. En **Dominios**, seleccione DNS en el dominio que desea editar.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -105,7 +105,7 @@ Siga estos pasos.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. En **Dominios,** seleccione DNS en el dominio que desea editar.
+2. En **Dominios**, seleccione DNS en el dominio que desea editar.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -119,11 +119,11 @@ Siga estos pasos.
 
 5. En los cuadros para el nuevo registro, escriba o copie y pegue los valores de la tabla siguiente.
 
-    (Elija el **valor TTL** en la lista desplegable).
+    (Elija el **valor TTL** de la lista desplegable).
 
     |**Tipo de registro**|**Host**|**Señala a**|**Prioridad**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (intercambiador de correo)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtenga la  *\<domain-key\>*  información de su cuenta de Microsoft.           [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 hora  <br/> |
+    |MX (intercambiador de correo)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Obtener el  *\<domain-key\>*  de su cuenta de Microsoft.           [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Para obtener más información sobre la prioridad, consulte [¿Qué es una prioridad de MX?](../setup/domains-faq.yml) <br/> |1 hora  <br/> |
 
 6. Seleccione **Guardar**.
 
@@ -136,7 +136,7 @@ Siga estos pasos.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. En **Dominios,** seleccione DNS en el dominio que desea editar.
+2. En **Dominios**, seleccione DNS en el dominio que desea editar.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -153,7 +153,7 @@ Siga estos pasos.
 
     En los cuadros para el nuevo registro, escriba o copie y pegue los valores de la primera fila de la tabla siguiente.
 
-    (Elija el **valor TTL** en la lista desplegable).
+    (Elija el **valor TTL** de la lista desplegable).
 
     |**Tipo de registro**|**Host**|**Señala a**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -171,7 +171,7 @@ Siga estos pasos.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *de*  SPF que incluya ambos conjuntos de valores.
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *SPF*  que incluya ambos conjuntos de valores.
 
 Siga estos pasos.
 
@@ -179,7 +179,7 @@ Siga estos pasos.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. En **Dominios,** seleccione DNS en el dominio que desea editar.
+2. En **Dominios**, seleccione DNS en el dominio que desea editar.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -213,7 +213,7 @@ Siga estos pasos.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. En **Dominios,** seleccione DNS en el dominio que desea editar.
+2. En **Dominios**, seleccione DNS en el dominio que desea editar.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -229,12 +229,12 @@ Siga estos pasos.
 
     En los cuadros para el nuevo registro, escriba o copie y pegue los valores de la primera fila de la tabla siguiente.
 
-    (Elija el **tipo de registro** y los valores **TTL** de las listas desplegables).
+    (Elija los **valores Record type** y **TTL** de las listas desplegables).
 
     |**Tipo de registro**|**Nombre**|**Destino**|**Protocolo**|**Servicio**|**Prioridad**|**Grosor**|**Puerto**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (servicio)  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1   <br/> |443  <br/> |1 hora  <br/> |
-    |SRV (servicio)  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1   <br/> |5061  <br/> |1 hora  <br/> |
+    |SRV (servicio)  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hora  <br/> |
+    |SRV (servicio)  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 hora  <br/> |
 
     ![GoDaddy-BP-Configure-5-1](../../media/a1b15ab1-eb6a-4672-90d1-7ac3e0beb223.png)
 

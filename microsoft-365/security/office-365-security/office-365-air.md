@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 250fba7bdf89425bce601112c7863eb9d1c952be
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 3ba9dd3dac97456479b2191ee7f0eb7d97f79fed
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407449"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909051"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigación y respuesta automatizadas (AIR) en Microsoft Defender para Office 365
 
@@ -108,10 +108,10 @@ Microsoft 365 proporciona muchas directivas de alerta integradas que ayudan a id
 
 Los permisos se conceden a través de determinados roles, como los que se describen en la tabla siguiente:
 
-|Task|Rol(s) obligatorio(s)|
+|Tarea|Rol(s) obligatorio(s)|
 |---|---|
-|Configurar características de AIR|Uno de los siguientes roles: <ul><li>Administrador global</li><li>Administrador de seguridad</li></ul> <p> Estos roles se pueden asignar en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el Centro de seguridad & [cumplimiento](permissions-in-the-security-and-compliance-center.md).|
-|Iniciar una investigación automatizada <p> --- o --- <p> Aprobar o rechazar acciones recomendadas|Uno de los siguientes roles, asignados en [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el Centro de seguridad y & [cumplimiento:](permissions-in-the-security-and-compliance-center.md) <ul><li>Administrador global</li><li>Administrador de seguridad</li><li>Operador de seguridad</li><li>Lector de seguridad <br> --- y --- </li><li>Buscar y purgar (este rol solo se asigna en el Centro de [seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md). Es posible que tenga que crear un nuevo grupo de roles allí y agregar el rol Buscar y purgar a ese nuevo grupo de roles.</li></ul>|
+|Configurar características de AIR|Uno de los siguientes roles: <ul><li>Administrador global</li><li>Administrador de seguridad</li></ul> <p> Estos roles se pueden asignar en [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el Centro de seguridad & [cumplimiento](permissions-in-the-security-and-compliance-center.md).|
+|Iniciar una investigación automatizada <p> --- o --- <p> Aprobar o rechazar acciones recomendadas|Uno de los siguientes roles, asignados en [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o en el Centro de seguridad y & [cumplimiento:](permissions-in-the-security-and-compliance-center.md) <ul><li>Administrador global</li><li>Administrador de seguridad</li><li>Operador de seguridad</li><li>Lector de seguridad <br> --- y --- </li><li>Buscar y purgar (este rol solo se asigna en el Centro de [seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md). Es posible que tenga que crear un nuevo grupo de roles allí y agregar el rol Buscar y purgar a ese nuevo grupo de roles.</li></ul>|
 
 ## <a name="required-licenses"></a>Licencias necesarias
 
@@ -128,7 +128,7 @@ Si ya está usando las capacidades de AIR en Microsoft Defender para Office 365,
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro de acciones unificadas":::
 
-El nuevo y mejorado centro de seguridad reúne las capacidades de AIR en [Microsoft Defender para Office 365](office-365-atp.md) y en Microsoft Defender para [endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) Con estas actualizaciones y mejoras, el equipo de operaciones de seguridad podrá ver detalles sobre las investigaciones automatizadas y las acciones de corrección en el correo electrónico, el contenido de colaboración, las cuentas de usuario y los dispositivos, todo en un solo lugar.
+El nuevo y mejorado centro de seguridad reúne las capacidades de AIR en [Microsoft Defender para Office 365](office-365-atp.md) y en Microsoft Defender para [endpoint.](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) Con estas actualizaciones y mejoras, el equipo de operaciones de seguridad podrá ver detalles sobre las investigaciones automatizadas y las acciones de corrección en el correo electrónico, el contenido de colaboración, las cuentas de usuario y los dispositivos, todo en un solo lugar.
 
 > [!TIP]
 > El nuevo centro de seguridad de Microsoft 365 ( <https://security.microsoft.com> ) reemplaza a los siguientes centros:
@@ -142,12 +142,12 @@ El nuevo y mejorado centro de seguridad reúne las capacidades de AIR en [Micros
 
 En la tabla siguiente se enumeran los cambios y mejoras que llegan a AIR en Microsoft Defender para Office 365.
 
-|Elemento|¿Qué está cambiando?|
+|Item|¿Qué está cambiando?|
 |---|---|
-|**Página Investigaciones**|La página **Investigaciones actualizada es** más coherente con lo que se ve en [Microsoft Defender para endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). Verá algunos cambios generales de formato y estilo que se alinean con la nueva vista **Investigaciones unificada.** Por ejemplo, el gráfico de investigación tiene un formato más unificado.|
+|**Página Investigaciones**|La página **Investigaciones actualizada es** más coherente con lo que se ve en [Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations). Verá algunos cambios generales de formato y estilo que se alinean con la nueva vista **Investigaciones unificada.** Por ejemplo, el gráfico de investigación tiene un formato más unificado.|
 |**Pestaña Usuarios**|La **pestaña Usuarios** ahora es la pestaña **Buzones.** Los detalles sobre los usuarios se enumeran en la **pestaña Buzón** de correo.|
 |**Pestaña Correo** electrónico|Se **ha quitado** la pestaña Correo electrónico; visite la **pestaña Entidades** para ver una lista de elementos del clúster de correo electrónico y correo electrónico.|
-|**Pestaña Entidades**|La **pestaña Entidades** tiene un estilo de pestaña en pestaña que incluye una vista de resumen total y la capacidad de filtrar por tipo de entidad. La **pestaña Entidades** ahora incluye una opción **Ir** a buscar, además de la opción Abrir **en el** Explorador. Ahora puedes usar el Explorador [de amenazas](threat-explorer.md) o la búsqueda [avanzada](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) para buscar entidades y amenazas y filtrar los resultados.|
+|**Pestaña Entidades**|La **pestaña Entidades** tiene un estilo de pestaña en pestaña que incluye una vista de resumen total y la capacidad de filtrar por tipo de entidad. La **pestaña Entidades** ahora incluye una opción **Ir** a buscar, además de la opción Abrir **en el** Explorador. Ahora puedes usar el Explorador [de amenazas](threat-explorer.md) o la búsqueda [avanzada](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) para buscar entidades y amenazas y filtrar los resultados.|
 |**Pestaña Acciones**|La pestaña **Acciones** actualizada ahora incluye **una pestaña Acciones pendientes** y una **pestaña Historial de** acciones. Las acciones se pueden aprobar (o rechazar) en un panel lateral que se abre al seleccionar una acción pendiente.|
 |**Ficha Evidencia**|Una nueva **pestaña Evidencia** muestra los resultados clave de la entidad relacionados con las acciones. Las acciones relacionadas con cada elemento de evidencia se pueden aprobar (o rechazar) en un panel lateral que se abre al seleccionar una acción pendiente.|
 |**Centro de acciones**|El Centro **de acciones** actualizado ( ) reúne acciones pendientes y completadas en <https://security.microsoft.com/action-center> correo electrónico, dispositivos e identidades. Para obtener más información, consulte Centro de acciones. (Para obtener más información, vea [The Action center](../mtp/mtp-action-center.md).)|

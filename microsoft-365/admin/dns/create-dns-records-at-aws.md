@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
-description: Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Amazon Web Services (AWS) for Microsoft.
-ms.openlocfilehash: bb687b8685aed79f5f768c12d652205bbbed0f59
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en Amazon Web Services (AWS) para Microsoft.
+ms.openlocfilehash: 12f9341ab381324266cf2da1ca6b5423df9973dd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657977"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910419"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>Crear registros DNS en Amazon Web Services (AWS) para Microsoft
 
  **[Consulte Preguntas más frecuentes acerca de los dominios](../setup/domains-faq.yml)** si no encuentra lo que busca. 
   
-Si AWS es su proveedor de host DNS, siga los pasos de este artículo para comprobar su dominio y configurar registros DNS para correo electrónico, Skype Online para empresas, entre otros.
+Si AWS es su proveedor de hospedaje DNS, siga los pasos descritos en este artículo para comprobar su dominio y configurar registros DNS para correo electrónico, Skype Online para empresas, entre otros.
   
-Después de agregar estos registros a AWS, el dominio estará configurado para funcionar con los servicios Microsoft.
+Después de agregar estos registros en AWS, el dominio se configurará para que funcione con los servicios de Microsoft.
   
 
   
@@ -51,11 +51,11 @@ Antes de utilizar el dominio con Microsoft, tenemos que asegurarnos de que sea e
   
 1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero.
     
-2. En la **página Recursos,** seleccione **Zonas hospedadas.**
+2. En la **página Recursos,** seleccione **Zonas hospedadas**.
     
 3. En la **página Zonas hospedadas,** en la columna **Nombre** de dominio, seleccione el nombre del dominio que desea editar. 
     
-4. Seleccione **Crear conjunto de registros.**
+4. Seleccione **Crear conjunto de registros**.
     
 5. In the **Create Record Set** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -94,11 +94,11 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 
 1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero.
     
-2. En la **página Recursos,** seleccione **Zonas hospedadas.**
+2. En la **página Recursos,** seleccione **Zonas hospedadas**.
     
 3. En la **página Zonas hospedadas,** en la columna **Nombre** de dominio, seleccione el nombre del dominio que desea editar. 
     
-4. Seleccione **Crear conjunto de registros.**
+4. Seleccione **Crear conjunto de registros**.
     
 5. In the **Create Record Set** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -106,7 +106,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     |**Nombre**|**Tipo**|**Alias**|**TTL (segundos)**|**Valor**|**Directiva de enrutamiento**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |(Deje este campo en blanco).  <br/> |MX - Registro de intercambio de correo  <br/> |No  <br/> |300  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> El 0 es el valor de prioridad MX. Agréguelo al principio del valor MX, separado del resto del valor por un espacio.  <br/> **Este valor DEBE terminar en punto (.).** <br/> **Nota:** Obtenga la \<*domain-key*\> información de su cuenta de Microsoft 365. [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |Simple  <br/> |
+    |(Deje este campo en blanco).  <br/> |MX - Registro de intercambio de correo  <br/> |No  <br/> |300  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> El 0 es el valor de prioridad MX. Agréguelo al principio del valor MX, separado del resto del valor por un espacio.  <br/> **Este valor DEBE terminar en punto (.).** <br/> **Nota:** Obtenga el \<*domain-key*\> de su cuenta de Microsoft 365. [¿Cómo puedo encontrarla?](../get-help-with-domains/information-for-dns-records.md)          |Simple  <br/> |
        
     ![AWS-BP-Configure-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
@@ -127,7 +127,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
     
     ![AWS-BP-Configure-2-4](../../media/c3b0c1bc-21ab-44cc-84b7-f504725c5540.png)
   
-8. Seleccione **Guardar conjunto de registros.**
+8. Seleccione **Guardar conjunto de registros**.
     
     ![AWS-BP-Configure-2-5](../../media/86f0998d-f5d4-4750-a93d-ac13b318c40b.png)
   
@@ -136,11 +136,11 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 
 1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero.
     
-2. En la **página Recursos,** seleccione **Zonas hospedadas.**
+2. En la **página Recursos,** seleccione **Zonas hospedadas**.
     
 3. En la **página Zonas hospedadas,** en la columna **Nombre** de dominio, seleccione el nombre del dominio que desea editar. 
     
-4. Seleccione **Crear conjunto de registros.**
+4. Seleccione **Crear conjunto de registros**.
     
 5. Agregue el primer registro CNAME.
     
@@ -164,7 +164,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 7. Agregue los otros cuatro registros CNAME.
     
-    En la **página Zonas hospedadas,** seleccione Crear conjunto de **registros,** cree un registro con  los valores de la siguiente fila de la tabla y, a continuación, vuelva a seleccionar Crear para completar ese registro. 
+    En la **página Zonas hospedadas,** seleccione **Crear** conjunto de registros, cree un registro con los valores de la siguiente fila de la tabla y, a continuación, vuelva a seleccionar **Crear** para completar dicho registro. 
     
     Repita este proceso hasta que haya creado los cinco registros CNAME.
     
@@ -172,11 +172,11 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *de*  SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Para validar el registro de SPF, puede usar una de estas herramientas de[validación de SPF.](../setup/domains-faq.yml) 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En su lugar, agregue los valores de Microsoft necesarios al registro actual para que tenga un único registro  *SPF*  que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](../../enterprise/external-domain-name-system-records.md). Para validar el registro SPF, puede usar una de estas herramientas[de validación de SPF](../setup/domains-faq.yml). 
   
 1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero.
     
-2. En la **página Recursos,** seleccione **Zonas hospedadas.**
+2. En la **página Recursos,** seleccione **Zonas hospedadas**.
     
 3. En la **página Zonas hospedadas,** en la columna **Nombre** de dominio, seleccione el nombre del dominio que desea editar. 
     
@@ -192,7 +192,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
    
     ![AWS-BP-Configure-4-2](../../media/beb3c086-eaf8-4245-9860-18512a3ff72e.png)
   
-6. Seleccione **Guardar conjunto de registros.**
+6. Seleccione **Guardar conjunto de registros**.
     
     ![AWS-BP-Configure-4-3](../../media/94b9306c-bdc9-4f84-ad6f-6d12edbfde90.png)
   
@@ -201,11 +201,11 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 
 1. Para empezar, vaya a su página de dominios en AWS a través de [este vínculo](https://console.aws.amazon.com/route53/home). Se le pedirá que inicie sesión primero.
     
-2. En la **página Recursos,** seleccione **Zonas hospedadas.**
+2. En la **página Recursos,** seleccione **Zonas hospedadas**.
     
 3. En la **página Zonas hospedadas,** en la columna **Nombre** de dominio, seleccione el nombre del dominio que desea editar. 
     
-4. Seleccione **Crear conjunto de registros.**
+4. Seleccione **Crear conjunto de registros**.
     
 5. Agregue el primer registro SRV.
     
@@ -226,8 +226,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
   
 7. Para agregar el otro registro SRV:
     
-    En la **página Zonas hospedadas,** seleccione Crear conjunto de **registros,** cree un registro con  los valores de la siguiente fila de la tabla y, a continuación, vuelva a seleccionar Crear para completar ese registro. 
+    En la **página Zonas hospedadas,** seleccione **Crear** conjunto de registros, cree un registro con los valores de la siguiente fila de la tabla y, a continuación, vuelva a seleccionar **Crear** para completar dicho registro. 
     
 > [!NOTE]
 > Normalmente, se necesitan unos 15 minutos para que los cambios de DNS surtan efecto. Sin embargo, a veces los cambios pueden necesitar más tiempo para aplicarse en todo el sistema DNS de Internet. Si tiene problemas con el flujo de correo u otros problemas después de agregar registros DNS, vea [Encontrar y solucionar problemas después de agregar el dominio o los registros DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  

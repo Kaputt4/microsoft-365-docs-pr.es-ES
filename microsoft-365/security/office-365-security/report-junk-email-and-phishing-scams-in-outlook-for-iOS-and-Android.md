@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre las opciones de informes de correo electrónico de correo no deseado integrado, no correo no deseado y suplantación de identidad en Outlook para iOS y Android.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e6e63f534a9f9516c6e1a87ff82d5b0916d25778
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: eda0d8d43244834236a70374df6b7d6ccf0b69ab
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509331"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908823"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Notificar correo electrónico no deseado y suplantación de identidad en Outlook para iOS y Android en Exchange Online
 
@@ -37,7 +37,7 @@ En las organizaciones de Microsoft 365 con buzones en Exchange Online o buzones 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Para obtener la mejor experiencia de envío de usuarios, se recomienda usar el mensaje de informe y los complementos de suplantación de identidad de informes. Vea [Habilitar el complemento Mensaje de informe y](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) Habilitar el complemento de suplantación de identidad [de informes](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-phish-add-in) para obtener más información.
+- Para obtener la mejor experiencia de envío de usuarios, se recomienda usar el mensaje de informe y los complementos de suplantación de identidad de informes. Vea [Habilitar el complemento Mensaje de informe y](./enable-the-report-message-add-in.md) Habilitar el complemento de suplantación de identidad [de informes](./enable-the-report-phish-add-in.md) para obtener más información.
 
 - Si es administrador de una organización con buzones de Exchange Online, le recomendamos que use el portal de envíos en el Centro de seguridad & cumplimiento. Para obtener más información, vea [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 

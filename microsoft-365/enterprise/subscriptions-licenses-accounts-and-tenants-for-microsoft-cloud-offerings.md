@@ -3,7 +3,6 @@ title: Suscripciones, licencias, cuentas y espacios empresariales para las ofert
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/25/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -21,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: Información sobre las relaciones de las organizaciones, las suscripciones, las licencias, las cuentas de usuario y los espacios empresariales en las ofertas de la nube de Microsoft.
-ms.openlocfilehash: c48e2ecc321f4b6e06ced13f029e344faf12650b
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: eaf1c2399b5d44ea8d6000042b3258d0e8b5a7de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446036"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909519"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Suscripciones, licencias, cuentas y espacios empresariales para las ofertas de la nube de Microsoft
 
@@ -66,7 +65,11 @@ Para las ofertas de la nube de SaaS de Microsoft, una licencia permite a una cue
 **Ilustración 2: Licencias en las suscripciones basadas en SaaS para una organización**
 
 ![Un ejemplo de varias licencias de suscripciones para las ofertas de la nube de Microsoft basadas en SaaS.](../media/Subscriptions/Subscriptions-Fig2.png)
-  
+
+>[!Note]
+>Un procedimiento recomendado de seguridad es usar cuentas de usuario separadas a las que se les asignen roles específicos para funciones administrativas. No es necesario que a estas cuentas de administrador dedicadas se les asigne una licencia para los servicios en la nube que administran. Por ejemplo, no es necesario que se asigne una cuenta de administrador de SharePoint a una licencia de Microsoft 365.
+>
+
 Para los servicios en la nube basados en PaaS de Azure, las licencias de software están integradas en los precios del servicio.
   
 Para las máquinas virtuales basadas en IaaS de Azure, podrían necesitarse licencias adicionales para utilizar el software o la aplicación instalada en una imagen de la máquina virtual. Algunas imágenes de máquina virtual tienen versiones con licencia de software instalado y el costo está incluido en la tarifa por minuto para el servidor. Algunos ejemplos son las imágenes de la máquina virtual para SQL Server 2014 y SQL Server 2016. 
@@ -153,7 +156,7 @@ Para agregar una suscripción de Azure con la misma organización y espacio empr
     
 3. En la página **Agregar suscripción**, seleccione una oferta y complete la información de pago y el contrato.
     
-Si compró suscripciones de Microsoft 365 y Azure por separado y quiere acceder al espacio empresarial de Azure AD de Microsoft 365 desde su suscripción de Azure, vea las instrucciones en [Añadir una suscripción existente de Azure a su espacio empresarial de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+Si compró suscripciones de Microsoft 365 y Azure por separado y quiere acceder al espacio empresarial de Azure AD de Microsoft 365 desde su suscripción de Azure, vea las instrucciones en [Añadir una suscripción existente de Azure a su espacio empresarial de Azure Active Directory](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
  
 ## <a name="see-also"></a>Ver también
 
@@ -166,4 +169,3 @@ Si compró suscripciones de Microsoft 365 y Azure por separado y quiere acceder 
 ## <a name="next-step"></a>Paso siguiente
 
 [Evaluar la conectividad de red de Microsoft 365](assessing-network-connectivity.md)
-  
