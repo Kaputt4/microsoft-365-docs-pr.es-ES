@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b6175f507f54adf357e40ea44c39f5e495a1b14
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 0e2885f4db67f1508f4e7a3f354e11fb361265a3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454494"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907957"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -100,7 +100,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 - [Emplear capacidades automatizadas de](automated-investigation-response-office.md) investigación y respuesta (Microsoft Defender para Office 365 Plan 2)
 
-- Integrar con Eventos de investigación y respuesta automatizados de Microsoft Defender para Office 365 con la API de actividad de administración de [Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Defender para Office 365 Plan 2)
+- Integrar con Eventos de investigación y respuesta automatizados de Microsoft Defender para Office 365 con la API de actividad de administración de [Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Defender para Office 365 Plan 2)
 
 - [Ver los encabezados de correo electrónico y descargar el cuerpo](investigate-malicious-email-that-was-delivered.md) del correo electrónico (Microsoft Defender para Office 365 Plan 1 o Plan 2)
 
@@ -120,8 +120,8 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 ¿Sabía que Microsoft Defender para Office 365 está disponible en dos planes? [Obtenga más información sobre lo que cada plan incluye](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Guía básica de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
-[Descripción del servicio de Microsoft Defender para Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+[Descripción del servicio de Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

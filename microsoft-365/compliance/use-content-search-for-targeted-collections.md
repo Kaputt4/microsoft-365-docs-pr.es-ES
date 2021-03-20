@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Use búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para realizar colecciones dirigidas, lo que garantiza que los elementos se encuentran en un buzón o carpeta de sitio específico.
-ms.openlocfilehash: 9c549b3ae418d13b6e1aafbf0cc171c52f89e621
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 376adfd1bec20d3b1ec11dac5e775eb386ea6317
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423461"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907702"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Usar búsqueda de contenido para colecciones específicas
 
@@ -37,9 +37,9 @@ La característica búsqueda de contenido en el Centro de cumplimiento de Micros
 
 - Debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos en el Centro de seguridad & cumplimiento para ejecutar el script en el paso 1. Para obtener más información, consulte [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
 
-    Además, debe tener asignado el rol Destinatarios de correo en su organización de Exchange Online. Esto es necesario para ejecutar el cmdlet **Get-MailboxFolderStatistics,** que se incluye en el script. De forma predeterminada, el rol Destinatarios de correo se asigna a los grupos de roles Administración de la organización y Administración de destinatarios en Exchange Online. Para obtener más información acerca de la asignación de permisos en Exchange Online, vea [Manage role group members](https://go.microsoft.com/fwlink/p/?linkid=692102). También puede crear un grupo de roles personalizado, asignarle el rol Destinatarios de correo y, a continuación, agregar los miembros que necesitan ejecutar el script en el paso 1. Para obtener más información, consulte [Administrar grupos de roles](https://go.microsoft.com/fwlink/p/?linkid=730688).
+    Además, debe tener asignado el rol Destinatarios de correo en su organización de Exchange Online. Esto es necesario para ejecutar el cmdlet **Get-MailboxFolderStatistics,** que se incluye en el script. De forma predeterminada, el rol Destinatarios de correo se asigna a los grupos de roles Administración de la organización y Administración de destinatarios en Exchange Online. Para obtener más información acerca de la asignación de permisos en Exchange Online, vea [Manage role group members](/exchange/manage-role-group-members-exchange-2013-help). También puede crear un grupo de roles personalizado, asignarle el rol Destinatarios de correo y, a continuación, agregar los miembros que necesitan ejecutar el script en el paso 1. Para obtener más información, consulte [Administrar grupos de roles](/Exchange/permissions-exo/role-groups).
 
-- El script de este artículo admite la autenticación moderna. Puede usar el script tal como está si es una organización de Microsoft 365 o una organización GCC de Microsoft 365. Si es una organización de Office 365 Germany, una organización de Microsoft 365 GCC High o una organización de Microsoft 365 DoD, tendrá que editar el script para ejecutarlo correctamente. En concreto, debe editar la línea y usar el parámetro `Connect-ExchangeOnline` *ExchangeEnvironmentName* (y el valor adecuado para el tipo de organización) para conectarse a Exchange Online PowerShell.  Además, debe editar la línea y usar los parámetros ConnectionUri y `Connect-IPPSSession` *AzureADAuthorizationEndpointUri* (y los valores adecuados para el tipo de organización) para conectarse a *PowerShell* del Centro de seguridad & cumplimiento. Para obtener más información, vea los ejemplos de [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?#connect-to-exchange-online-powershell-without-using-mfa) y Connect to Security & Compliance Center [PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
+- El script de este artículo admite la autenticación moderna. Puede usar el script tal como está si es una organización de Microsoft 365 o una organización GCC de Microsoft 365. Si es una organización de Office 365 Germany, una organización de Microsoft 365 GCC High o una organización de Microsoft 365 DoD, tendrá que editar el script para ejecutarlo correctamente. En concreto, debe editar la línea y usar el parámetro `Connect-ExchangeOnline` *ExchangeEnvironmentName* (y el valor adecuado para el tipo de organización) para conectarse a Exchange Online PowerShell.  Además, debe editar la línea y usar los parámetros ConnectionUri y `Connect-IPPSSession` *AzureADAuthorizationEndpointUri* (y los valores adecuados para el tipo de organización) para conectarse a *PowerShell* del Centro de seguridad & cumplimiento. Para obtener más información, vea los ejemplos de [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa) y Connect to Security & Compliance Center [PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa).
 
 - Cada vez que ejecuta el script, se crea una nueva sesión remota de PowerShell. Esto significa que puede usar todas las sesiones remotas de PowerShell disponibles. Para evitar que esto suceda, ejecute el siguiente comando para desconectar las sesiones de PowerShell remotas activas.
 
@@ -47,7 +47,7 @@ La característica búsqueda de contenido en el Centro de cumplimiento de Micros
   Get-PSSession | Remove-PSSession
   ```
 
-    Para obtener más información, vea [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+    Para obtener más información, vea [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - El script incluye un control de errores mínimo. El propósito principal del script es mostrar rápidamente una lista de los IDs de carpeta de buzones o rutas de acceso de sitio que se pueden usar en la sintaxis de consulta de búsqueda de una búsqueda de contenido para realizar una colección de destino.
 

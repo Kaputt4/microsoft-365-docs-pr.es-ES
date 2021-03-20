@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: En este artículo, aprenderá a exportar, configurar y ver registros de registro de auditoría de Microsoft 365.
-ms.openlocfilehash: a7f731bb30ffdddfe7898ee4051060b8e22c093e
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 4cea867b46d3bda7d3b3a8cd38f3d01938da8764
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454671"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906872"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Exportar, configurar y ver registros de registro de auditoría
 
@@ -104,7 +104,7 @@ El siguiente paso es usar la característica de transformación JSON en el Edito
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>Usar PowerShell para buscar y exportar registros de registro de auditoría
 
-En lugar de usar la herramienta de búsqueda de registro de auditoría en el Centro de seguridad y cumplimiento de &, puede usar el cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell para exportar los resultados de una búsqueda de registro de auditoría a un archivo CSV. A continuación, puede seguir el mismo procedimiento descrito en el paso 2 para dar formato al registro de auditoría mediante el editor de Power Query. Una ventaja de usar el cmdlet de PowerShell es que puede buscar eventos de un servicio específico mediante el *parámetro RecordType.* Estos son algunos ejemplos de uso de PowerShell para exportar registros de auditoría a un archivo CSV para que pueda usar el editor de Power Query para transformar el objeto JSON en la columna **AuditData** tal como se describe en el paso 2.
+En lugar de usar la herramienta de búsqueda de registro de auditoría en el Centro de seguridad y cumplimiento de &, puede usar el cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell para exportar los resultados de una búsqueda de registro de auditoría a un archivo CSV. A continuación, puede seguir el mismo procedimiento descrito en el paso 2 para dar formato al registro de auditoría mediante el editor de Power Query. Una ventaja de usar el cmdlet de PowerShell es que puede buscar eventos de un servicio específico mediante el *parámetro RecordType.* Estos son algunos ejemplos de uso de PowerShell para exportar registros de auditoría a un archivo CSV para que pueda usar el editor de Power Query para transformar el objeto JSON en la columna **AuditData** tal como se describe en el paso 2.
 
 En este ejemplo, ejecute los siguientes comandos para devolver todos los registros relacionados con las operaciones de uso compartido de SharePoint.
 
@@ -118,7 +118,7 @@ $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | 
 
 Los resultados de la búsqueda se exportan a un archivo CSV denominado *PowerShellAuditlog* que contiene cuatro columnas: CreationDate, UserIds, RecordType, AuditData).
 
-También puede usar el nombre o el valor de enumeración para el tipo de registro como el valor del *parámetro RecordType.* Para obtener una lista de nombres de tipo de registro y sus valores de enumeración correspondientes, vea la *tabla AuditLogRecordType* en el esquema de la API de actividad de administración [de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32).
+También puede usar el nombre o el valor de enumeración para el tipo de registro como el valor del *parámetro RecordType.* Para obtener una lista de nombres de tipo de registro y sus valores de enumeración correspondientes, vea la *tabla AuditLogRecordType* en el esquema de la API de actividad de administración [de Office 365](/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32).
 
 Solo puede incluir un solo valor para el *parámetro RecordType.* Para buscar registros de auditoría para otros tipos de registros, debe volver a ejecutar los dos comandos anteriores para especificar un tipo de registro diferente y anexar esos resultados al archivo CSV original. Por ejemplo, ejecutaría los dos comandos siguientes para agregar actividades de archivo de SharePoint desde el mismo intervalo de fechas al PowerShellAuditlog.csv archivo.
 

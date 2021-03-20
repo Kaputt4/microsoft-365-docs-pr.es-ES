@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: Obtenga información sobre cómo cambiar a una nueva suscripción de Microsoft 365 para empresas.
-ms.openlocfilehash: 1cbdcafc2ef337546f31d2d8f8fc9ef0bf7722f8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fb0ab9d26a7fe32796307d35af0ed1fc28735fa9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647752"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906233"
 ---
 # <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>Cambiar a otro plan de Microsoft 365 para empresas
 
@@ -41,46 +41,46 @@ La manera más sencilla de cambiar de plan es usar el botón **Cambiar de planes
 
 **¿Necesita algo más?**
 - [Cancelar la suscripción](cancel-your-subscription.md)
-- [Actualizar la familia de Microsoft 365 a una suscripción empresarial](https://support.microsoft.com/office/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
+- [Actualizar Microsoft 365 Family a una suscripción empresarial](https://support.microsoft.com/office/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [Llamar al soporte técnico de Microsoft](../../admin/contact-support-for-business-products.md)
 
-## <a name="use-the-switch-plans-button"></a>Usar el botón Cambiar de plan
+## <a name="use-the-switch-plans-button"></a>Usar el botón Cambiar planes
 
 Cuando use el botón **Cambiar de plan**, se le guiará por el proceso de comprar un plan al cual podrá cambiar su plan actual. Se asignarán licencias del nuevo plan a todos los usuarios y se cancelará su antiguo plan de forma automática.
 
 ::: moniker range="o365-worldwide"
 
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Suscripciones</a>.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Suscripciones</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
+1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
+1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
 
 ::: moniker-end
 
-2. Seleccione **Cambiar de plan** para ver la lista de nuevos planes que están disponibles.
+2. Seleccione **Cambiar planes** para ver la lista de nuevos planes que están disponibles.
 
     [No aparece el botón Cambiar de plan](#the-switch-plans-button-isnt-there) | [No veo el plan que quiero](#i-dont-see-the-plan-i-want)
 
-3. Seleccione un plan para ver el nuevo costo total por mes. Asegúrese de leer la información **de clave** y, a continuación, seleccione **Siguiente** para des check out.
+3. Seleccione un plan para ver el nuevo costo total por mes. Asegúrese de leer la información **de la clave** y, a continuación, seleccione **Siguiente** para des check-out.
 
     [Deseo obtener ayuda para elegir un nuevo plan](https://go.microsoft.com/fwlink/p/?linkid=842056).
 
 4. Seleccione **Chatear ahora** en la página **Finalización de la compra** si necesita ayuda.
 
-    Cuando termine de realizar la compra, Microsoft 365 tarda unos minutos en finalizar el cambio. Podrá empezar a usar inmediatamente la nueva suscripción.
+    Al finalizar la desprotección, Microsoft 365 tarda unos minutos en finalizar el cambio. Podrá empezar a usar inmediatamente la nueva suscripción.
 
 ## <a name="the-switch-plans-button-isnt-there"></a>No aparece el botón Cambiar de plan
 
-Si el **botón Cambiar de plan** no está disponible, puede intentar cambiar de plan [manualmente](switch-plans-manually.md) o llamar al [soporte técnico.](../../admin/contact-support-for-business-products.md) Para obtener más información, consulte [¿Por qué no puedo cambiar de plan?](why-can-t-i-switch-plans.md)
+Si el **botón Cambiar planes** no está disponible, puede intentar cambiar los planes [manualmente](switch-plans-manually.md) o llamar al [soporte técnico.](../../admin/contact-support-for-business-products.md) Para obtener más información, vea [Why can't I switch plans?](why-can-t-i-switch-plans.md)
   
 A continuación, le indicamos los posibles motivos de esto:
   
@@ -92,15 +92,15 @@ A continuación, le indicamos los posibles motivos de esto:
 
 Cuando usa el botón **Cambiar de plan**, se muestran los planes a los que puede cambiar en función de los servicios de su plan actual. Solo puede usar el botón **Cambiar de plan** para cambiar a un plan que tenga los servicios relacionados con los mismos datos o una versión superior. Esto garantiza que los usuarios no perderán los datos relacionados con esos servicios durante el cambio.
   
-Para comparar planes antes de cambiar, consulte la página de comparación de productos de [Microsoft 365 para](https://go.microsoft.com/fwlink/p/?linkid=842056) empresas. Para obtener especificaciones técnicas, [consulte Descripciones de servicio de Microsoft 365.](https://go.microsoft.com/fwlink/p/?linkid=842275)
+Para comparar planes antes de cambiar, consulte la página de comparación de productos de [Microsoft 365 para](https://go.microsoft.com/fwlink/p/?linkid=842056) empresas. Para obtener especificaciones técnicas, consulte [Microsoft 365 Service Descriptions](/office365/servicedescriptions/office-365-service-descriptions-technet-library).
   
-Si desea cambiar a un plan con menos servicios, puede cambiar de plan [manualmente](switch-plans-manually.md)o llamar al soporte técnico de [Microsoft](../../admin/contact-support-for-business-products.md) para obtener ayuda.
+Si desea cambiar a un plan con menos servicios, puede cambiar los planes [manualmente](switch-plans-manually.md)o llamar al soporte técnico de [Microsoft](../../admin/contact-support-for-business-products.md) para obtener ayuda.
   
 ## <a name="why-some-switches-take-longer"></a>¿Por qué algunos cambios tardan más en completarse?
 
- **Comprobaciones de crédito al cambiar de plan:** si paga mediante factura o alcanza un determinado nivel de costo, es posible que se requiera una comprobación de crédito. Una comprobación de crédito puede tardar hasta dos días laborables en completarse. Los usuarios seguirán teniendo acceso completo a su plan actual hasta que no se les cambie al nuevo.
+ **Comprobaciones de crédito al cambiar de plan:** si paga por factura o alcanza un determinado nivel de costo, es posible que se requiera una comprobación de crédito. Una comprobación de crédito puede tardar hasta dos días laborables en completarse. Los usuarios seguirán teniendo acceso completo a su plan actual hasta que no se les cambie al nuevo.
   
- **Comprobación del estado de las** organizaciones sin ánimo de lucro: normalmente se tardan 30 días en completar el proceso de comprobación de su estado sin ánimo de lucro. Si han pasado más de 30 días, póngase en contacto con el soporte técnico.
+ **Comprobación del estado sin** ánimo de lucro: normalmente tarda 30 días en completar el proceso de verificación de su estado sin ánimo de lucro. Si han pasado más de 30 días, póngase en contacto con el soporte técnico.
   
 ## <a name="call-support-to-help-you-switch-plans"></a>Llame al soporte técnico para ayudarle a cambiar de plan
 

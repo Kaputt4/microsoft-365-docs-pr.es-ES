@@ -15,24 +15,24 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: 9b558ad20a84bc902dd9a4a78ebafdbcecd8a9bb
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: dd066339ccfefdc58eb241bb9fdb69cdd5a458d8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288268"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907461"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación de Windows y Office
 
-El kit de laboratorio de implementación de Windows y Office está diseñado para ayudarle a planear, probar y validar la implementación y administración de escritorios que ejecutan Windows 10 Enterprise y Aplicaciones de Microsoft 365 para empresas. Los laboratorios del kit cubren el uso de Microsoft Endpoint Configuration Manager, Análisis de escritorio, la Herramienta de personalización de Office, OneDrive, Windows Autopilot y mucho más.
+El kit de laboratorio de implementación de Windows y Office está diseñado para ayudarle a planear, probar y validar la implementación y administración de escritorios que ejecutan Aplicaciones de Windows 10 Enterprise y Microsoft 365 para empresas. Los laboratorios de la cubierta del kit usan Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot y mucho más.
 
-Este kit es muy recomendable para las organizaciones que se preparen para las actualizaciones de Windows 8.1 a Windows 10. También se aplica si actualmente usa Windows 10, Aplicaciones de Microsoft 365 para empresas (anteriormente Office 365 ProPlus) u Office 2019. Como entorno aislado, el laboratorio resultante es ideal para explorar las actualizaciones de las herramientas de implementación y probar la automatización relacionada con la implementación.
+Este kit es muy recomendable para las organizaciones que se preparan para las actualizaciones de Windows 8.1 a Windows 10. También se aplica si actualmente usa Windows 10, Aplicaciones de Microsoft 365 para empresas (anteriormente Office 365 ProPlus) u Office 2019. Como entorno aislado, el laboratorio resultante es ideal para explorar las actualizaciones de herramientas de implementación y probar la automatización relacionada con la implementación.
 
 [Descargar el kit de laboratorio de implementación de Office y Windows](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
 ## <a name="a-complete-lab-environment"></a>Un entorno de laboratorio completo
 
-El kit proporciona un entorno de laboratorio virtual aprovisionado automáticamente, incluidos los clientes de escritorio unidos a un dominio, un controlador de dominio, una puerta de enlace de Internet y una instancia de Configuration Manager totalmente configurada. El kit contiene las versiones de evaluación más recientes de los productos siguientes:
+El kit le proporciona un entorno de laboratorio virtual aprovisionado automáticamente, incluidos los clientes de escritorio unidos a un dominio, un controlador de dominio, una puerta de enlace de Internet y una instancia de Configuration Manager totalmente configurada. El kit contiene las versiones de evaluación más recientes de los siguientes productos:
 
   - ¡NUEVO! Windows 10 Enterprise, versión 20H2
   - Windows 7 Enterprise
@@ -53,26 +53,26 @@ El laboratorio resultante está diseñado para conectarse a pruebas para:
 
 Las guías de laboratorio detalladas le llevarán a través de varios escenarios de implementación y administración. Se han actualizado las prácticas para las versiones más recientes de Intune y Configuration Manager 
 
-### <a name="plan-and-prepare-infrastructure"></a>Planeación y preparación de la infraestructura 
+### <a name="plan-and-prepare-infrastructure"></a>Planeación y preparación de infraestructura 
 - Análisis de escritorio 
 - Cloud Management Gateway & Cloud Distribution Point 
 - Cargas de trabajo de conexión, administración y conmutación de inquilinos 
 - Acceso remoto (VPN) 
 
-### <a name="prepare-configuration"></a>Preparar la configuración   
+### <a name="prepare-configuration"></a>Preparar configuración   
 
 - Optimizar la entrega de actualizaciones de Windows 10   
 - Mantenimiento de Windows 10 mediante la directiva de grupo
 - Mantenimiento de Windows 10 con Microsoft Intune   
 - Mantenimiento de Windows 10 con Configuration Manager   
-- Mantenimiento de Aplicaciones de Microsoft 365 para empresas con Configuration Manager   
-- Mantenimiento de Aplicaciones de Microsoft 365 para empresas con Intune  
+- Mantenimiento de aplicaciones de Microsoft 365 para empresas con Configuration Manager   
+- Mantenimiento de aplicaciones de Microsoft 365 para empresas con Intune  
 - Seguridad y cumplimiento   
 
 ### <a name="prepare-applications"></a>Preparar aplicaciones    
 
 - Kit de herramientas de preparación para Office  
-- Empaquetado y conversión MSIX de aplicaciones Win32   
+- Empaquetado y conversión MSIX de aplicaciones win32   
 
 ### <a name="deploy-windows-10"></a>Implementar Windows 10   
 
@@ -85,9 +85,9 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 - Implementación administrada en la nube  
 - Implementación administrada localmente    
-- Implementación de Aplicaciones de Microsoft 365 para empresas en dispositivos no unidos a AD 
-- Implementación administrada empresarial con Configuration Manager
-- Implementación administrada empresarial con Microsoft Intune  
+- Aplicaciones de Microsoft 365 para la implementación empresarial en dispositivos no unidos a AD 
+- Implementación administrada por empresas con Configuration Manager
+- Implementación administrada por empresas con Microsoft Intune  
 - Implementación y administración de LOB con Microsoft Intune
 - Implementar Microsoft Teams
 
@@ -99,19 +99,19 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 [Descargar el kit de laboratorio de implementación de Office y Windows](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* La versión de línea base instalada 2002 se puede actualizar a la versión 2010 mediante la actualización en la consola. Use una conexión a Internet de ancho de banda amplio para descargar este contenido y permita entre 30 y 45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para obtener un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El kit expira el 2 de mayo de 2021. Se publicará una nueva versión antes de la expiración.
+* La versión de línea base instalada 2002 se puede actualizar a la versión 2010 mediante y la actualización en la consola. Use una conexión a Internet de ancho de banda amplio para descargar este contenido y permitir de 30 a 45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El kit expira el 2 de mayo de 2021. Antes de la expiración, se publicará una nueva versión.
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 
   - [Vídeos de la serie de implementación de escritorios de Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 
-  - [Implementación de sistema operativo de Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
+  - [Implementación de sistema operativo de Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
-  - [Plan de implementación de Windows 10](https://docs.microsoft.com/windows/deployment/planning/index)
+  - [Plan de implementación de Windows 10](/windows/deployment/planning/index)
 
-  - [Guía de implementación de Aplicaciones de Microsoft 365](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
+  - [Guía de implementación de Aplicaciones de Microsoft 365](/deployoffice/deployment-guide-microsoft-365-apps)
 
-  - [Introducción a Intune](https://docs.microsoft.com/intune/get-started-evaluation)
+  - [Introducción a Intune](/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>Recursos relacionados
 

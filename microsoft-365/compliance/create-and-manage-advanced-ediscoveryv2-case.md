@@ -12,31 +12,31 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365solution-ediscovery
+- m365solution-aed
 - m365initiative-compliance
-- m365initiative-scenario
+- m365solution-scenario
 search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo crear y administrar casos de exhibición de documentos electrónicos avanzados. El primer paso es crear un caso y empezar a usar características y funcionalidades avanzadas de exhibición de documentos electrónicos.
-ms.openlocfilehash: 0301213cf6d7e3c30b98ad5125468c6c75ed95b1
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: d0f63bca90945c3dfe13b08fa0f1d139da8a9189
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838263"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908370"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>Crear y administrar un caso de exhibición de documentos electrónicos avanzada
 
 Después de configurar eDiscovery avanzado y asignar permisos a los administradores de exhibición de documentos electrónicos de la organización que administrarán los [casos,](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) el siguiente paso es crear y administrar un caso.
 
-En este artículo también se proporciona información general de alto nivel sobre el uso de casos para administrar el flujo de trabajo de exhibición de documentos electrónicos avanzados para una investigación legal.
+En este artículo también se proporciona información general de alto nivel sobre el uso de casos para administrar el flujo de trabajo de exhibición de documentos electrónicos avanzado para un caso legal u otros tipos de investigaciones.
 
 ## <a name="create-a-case"></a>Crear un caso
 
-Complete los pasos siguientes para crear un caso y agregar miembros. El usuario que crea el caso se agrega automáticamente como miembro.
+Complete los pasos siguientes para crear un caso y agregar miembros. El usuario que crea el caso se agrega automáticamente como miembro. Los miembros del caso pueden tener acceso al caso en el Centro de cumplimiento de Microsoft 365 y realizar tareas avanzadas de exhibición de documentos electrónicos.
 
-1. Vaya a e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado permisos de [https://compliance.microsoft.com](https://compliance.microsoft.com) exhibición de documentos electrónicos. Los miembros del grupo de roles Administración de la organización también pueden crear casos de exhibición de documentos electrónicos avanzados.
+1. Vaya a e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado permisos de <https://compliance.microsoft.com> exhibición de documentos electrónicos. Los miembros del grupo de roles Administración de la organización también pueden crear casos de exhibición de documentos electrónicos avanzados.
 
 2. En el panel de navegación izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en Mostrar todo y, a continuación, haga clic en Exhibición **de documentos electrónicos > avanzadas**.
 
@@ -82,7 +82,7 @@ Para empezar a usar eDiscovery avanzada, este es un flujo de trabajo básico que
 
    - Puede usar el flujo de [trabajo de comunicaciones](managing-custodian-communications.md) en eDiscovery avanzado para enviar una notificación de retención legal a los custodios.
 
-2. **[Recopilar datos relevantes de orígenes de datos](create-draft-collection.md)**. Después de agregar custodios y orígenes de datos no custodiados a un caso, use la herramienta de colecciones integradas para buscar en estos orígenes de datos contenido que pueda ser relevante para el caso. Se usan palabras clave, propiedades [](building-search-queries.md) y condiciones para crear consultas de búsqueda que devuelvan resultados de búsqueda con los datos que probablemente sean relevantes para el caso. También puede:
+2. **[Recopilar contenido relevante de orígenes de datos](create-draft-collection.md)**. Después de agregar custodios y orígenes de datos no custodiados a un caso, use la herramienta de colecciones integradas para buscar en estos orígenes de datos contenido que pueda ser relevante para el caso. Se usan palabras clave, propiedades [](building-search-queries.md) y condiciones para crear consultas de búsqueda que devuelvan resultados de búsqueda con los datos que probablemente sean relevantes para el caso. También puede:
 
    - Ver [estadísticas de colección que](collection-statistics-reports.md) pueden ayudarle a refinar una colección para restringir los resultados.
 
@@ -107,3 +107,15 @@ Para empezar a usar eDiscovery avanzada, este es un flujo de trabajo básico que
    - [Analizar datos de casos](analyzing-data-in-review-set.md). La funcionalidad de análisis de eDiscovery avanzada es eficaz. Después de ejecutar el análisis en los datos del conjunto de revisión, llevamos a cabo análisis como detección de duplicados cercanos, subprocesos de correo electrónico y temas que pueden ayudar a reducir el volumen de documentos que debe revisar. También generamos informes de Analytics que resumen el resultado de la ejecución de análisis. Como se explicó anteriormente, la ejecución de análisis también ejecuta el modelo de detección de privilegios [abogado-cliente](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model).
 
 5. **Exportar y descargar datos de casos**. Un último paso después de recopilar, revisar y analizar datos de casos es exportarlos fuera de eDiscovery avanzado para revisión externa o para revisión por parte de personas externas al equipo de investigación. La exportación de datos es un proceso de dos pasos. El primer paso es [exportar](export-documents-from-review-set.md) datos fuera del conjunto de revisión y copiarlos en una ubicación diferente de Azure Storage (una proporcionada por Microsoft o una administrada por su organización). A continuación, use el Explorador de Azure Storage [para descargar](download-export-jobs.md) los datos en un equipo local. Además de los archivos de datos exportados, el contenido del paquete de exportación también contiene un informe de exportación, un informe de resumen y un informe de errores.
+
+## <a name="advanced-ediscovery-architecture"></a>Arquitectura avanzada de exhibición de documentos electrónicos
+
+Este es un diagrama de arquitectura que muestra el flujo de trabajo de un extremo a otro de exhibición de documentos electrónicos avanzado en un entorno de una sola geo y en un entorno multige geográfico, y el flujo de datos de extremo a extremo alineado con el modelo de referencia de detección [electrónica.](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)
+
+[![Póster del modelo: Arquitectura avanzada de exhibición de documentos electrónicos en Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[Ver como una imagen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[Descargar como archivo PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
+
+[Descargar como archivo de Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos principal para conservar contenido que pueda ser relevante para una investigación.
-ms.openlocfilehash: 377a9e7a31864f177f0ccbdc4cf2789fdc1cf373
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ca87b1b2ad35949de01622771b1ae78c5b3038e9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423471"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908344"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -134,11 +134,11 @@ Como alternativa, las conversaciones que forman parte de la lista chat de Teams 
 > [!IMPORTANT]
 > En una organización basada en la nube, los usuarios que participan en conversaciones que forman parte de la lista de chat en Teams deben tener un buzón de Exchange Online para conservar las conversaciones de chat cuando el buzón se coloca en una retención de exhibición de documentos electrónicos. Esto se debe a que las conversaciones que forman parte de la lista de chat se almacenan en los buzones basados en la nube de los participantes de chat. Si un participante de chat no tiene un buzón de Exchange Online, no podrá conservar esas conversaciones de chat. Por ejemplo, en una implementación híbrida de Exchange, los usuarios con un buzón local pueden participar en conversaciones que forman parte de la lista de chat en Teams. Pero en este caso, el contenido de estas conversaciones no se puede conservar porque estos usuarios no tienen buzones basados en la nube que se pueden colocar en espera.
 
-Para obtener más información acerca de cómo conservar el contenido de Teams, vea Colocar un usuario o equipo de [Microsoft Teams en retención legal.](https://docs.microsoft.com/MicrosoftTeams/legal-hold)
+Para obtener más información acerca de cómo conservar el contenido de Teams, vea Colocar un usuario o equipo de [Microsoft Teams en retención legal.](/MicrosoftTeams/legal-hold)
 
 ### <a name="preserve-card-content"></a>Conservar el contenido de la tarjeta
 
-Del mismo modo, el contenido de tarjeta generado por aplicaciones en canales de Teams, chats 1:1 y chats de grupo 1:N se almacena en buzones y se conserva cuando un buzón se coloca en una retención de exhibición de documentos electrónicos. Una *tarjeta* es un contenedor de IU para pequeños fragmentos de contenido. Las tarjetas pueden tener varias propiedades y datos adjuntos, y pueden incluir botones que desencadenan acciones de tarjeta. Para obtener más información, vea [Tarjetas](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards). Igual que el resto de contenido de Teams, el lugar donde se almacena el contenido de las tarjetas depende de dónde se haya usado. El contenido de tarjetas usado en un canal de Teams se almacena en el buzón del grupo de Teams. El contenido de tarjetas de los chats 1x1 y 1xN se almacena en los buzones de los participantes de los chats.
+Del mismo modo, el contenido de tarjeta generado por aplicaciones en canales de Teams, chats 1:1 y chats de grupo 1:N se almacena en buzones y se conserva cuando un buzón se coloca en una retención de exhibición de documentos electrónicos. Una *tarjeta* es un contenedor de IU para pequeños fragmentos de contenido. Las tarjetas pueden tener varias propiedades y datos adjuntos, y pueden incluir botones que desencadenan acciones de tarjeta. Para obtener más información, vea [Tarjetas](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Igual que el resto de contenido de Teams, el lugar donde se almacena el contenido de las tarjetas depende de dónde se haya usado. El contenido de tarjetas usado en un canal de Teams se almacena en el buzón del grupo de Teams. El contenido de tarjetas de los chats 1x1 y 1xN se almacena en los buzones de los participantes de los chats.
 
 ### <a name="preserve-meeting-and-call-information"></a>Conservar información de reuniones y llamadas
 
@@ -163,7 +163,7 @@ Tenga en cuenta lo siguiente al colocar grupos de Teams y Office 365 en una rete
 
 - Como se explicó anteriormente, para poner contenido ubicado en Teams y Grupos de Office 365 en espera, debe especificar el buzón y el sitio de SharePoint asociados con un grupo o equipo.
 
-- Ejecute el cmdlet **Get-UnifiedGroup** en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) para ver las propiedades de Teams y Grupos de Office 365. Esta es una buena forma de obtener la dirección URL del sitio que está asociado con un grupo de Office 365 o un grupo de Office 365. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Office365 denominado Senior Leadership Team:
+- Ejecute el cmdlet **Get-UnifiedGroup** en [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) para ver las propiedades de Teams y Grupos de Office 365. Esta es una buena forma de obtener la dirección URL del sitio que está asociado con un grupo de Office 365 o un grupo de Office 365. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Office365 denominado Senior Leadership Team:
 
     ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -190,10 +190,10 @@ Tenga en cuenta lo siguiente al colocar grupos de Teams y Office 365 en una rete
 
 ## <a name="preserve-content-in-onedrive-accounts"></a>Conservar contenido en cuentas de OneDrive
 
-Para recopilar una lista de las direcciones URL de los sitios de OneDrive para la Empresa de la organización para que pueda agregarlas a una retención o búsqueda asociada a un caso de exhibición de documentos electrónicos, vea [Create a list of all OneDrive locations in your organization](https://docs.microsoft.com/onedrive/list-onedrive-urls). El script de este artículo crea un archivo de texto que contiene una lista de todos los sitios de OneDrive de la organización. Para ejecutar este script, tiene que instalar y usar el Shell de SharePoint Online Management. Asegúrese de anexar la dirección URL para el dominio MiSitio de su organización a cada sitio de OneDrive que quiera buscar. Este es el dominio que contiene todos los sitios OneDrive; por ejemplo, `https://contoso-my.sharepoint.com`. Este es un ejemplo de una dirección URL para un sitio de usuario de OneDrive: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
+Para recopilar una lista de las direcciones URL de los sitios de OneDrive para la Empresa de la organización para que pueda agregarlas a una retención o búsqueda asociada a un caso de exhibición de documentos electrónicos, vea [Create a list of all OneDrive locations in your organization](/onedrive/list-onedrive-urls). El script de este artículo crea un archivo de texto que contiene una lista de todos los sitios de OneDrive de la organización. Para ejecutar este script, tiene que instalar y usar el Shell de SharePoint Online Management. Asegúrese de anexar la dirección URL para el dominio MiSitio de su organización a cada sitio de OneDrive que quiera buscar. Este es el dominio que contiene todos los sitios OneDrive; por ejemplo, `https://contoso-my.sharepoint.com`. Este es un ejemplo de una dirección URL para un sitio de usuario de OneDrive: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
 
 > [!IMPORTANT]
-> La dirección URL de la cuenta de OneDrive de un usuario incluye su nombre principal de usuario (UPN) (por ejemplo, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). En el caso poco frecuente de que se cambie el UPN de una persona, la dirección URL de OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta de OneDrive de un usuario forma parte de una retención de exhibición de documentos electrónicos, antigua y se cambia su UPN, debe actualizar la retención y tendrá que actualizar la retención y agregar la nueva dirección URL de OneDrive del usuario y quitar la anterior. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
+> La dirección URL de la cuenta de OneDrive de un usuario incluye su nombre principal de usuario (UPN) (por ejemplo, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). En el caso poco frecuente de que se cambie el UPN de una persona, la dirección URL de OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta de OneDrive de un usuario forma parte de una retención de exhibición de documentos electrónicos, antigua y se cambia su UPN, debe actualizar la retención y tendrá que actualizar la retención y agregar la nueva dirección URL de OneDrive del usuario y quitar la anterior. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](/onedrive/upn-changes).
 
 ## <a name="removing-content-locations-from-an-ediscovery-hold"></a>Quitar ubicaciones de contenido de una retención de exhibición de documentos electrónicos
 
@@ -231,7 +231,7 @@ En la tabla siguiente se enumeran los límites para los casos de exhibición de 
    > [!NOTE]
    > <sup>1</sup> Para ver una lista de más de 1.000 casos, retenciones, búsquedas o exportaciones, puede usar el cmdlet de PowerShell de office 365 Security & Compliance:
    >
-   > - [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)
-   > - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
-   > - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
-   > - [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+   > - [Get-ComplianceCase](/powershell/module/exchange/get-compliancecase)
+   > - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
+   > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
+   > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)

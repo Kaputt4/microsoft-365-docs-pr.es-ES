@@ -19,12 +19,12 @@ description: Los administradores pueden aprender cómo funciona la información 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8ca40e2cde08e5ea213d4c19366f038f1da19fa7
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: cc53d49401afe3a0d7871bf5f294126315aacfec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407221"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908099"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>Tutorial: información sobre la suplantación de inteligencia en Microsoft Defender para Office 365
 
@@ -43,7 +43,7 @@ Para obtener más información sobre informes e información, vea Informes e inf
 Este tutorial es uno de varios para el Centro de seguridad & cumplimiento. Para obtener información sobre cómo navegar por informes e información, consulte los tutoriales de la [sección Temas relacionados.](#related-topics)
 
 > [!NOTE]
-> La información de inteligencia suplantación muestra datos de los últimos 7 días. La [directiva de inteligencia](learn-about-spoof-intelligence.md) suplantación de identidad y el cmdlet [Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-phishfilterpolicy) correspondiente en Exchange Online PowerShell muestran datos de los últimos 30 días. [Get-SpoofMailReport](https://docs.microsoft.com/powershell/module/exchange/get-spoofmailreport) muestra datos durante un máximo de 90 días.
+> La información de inteligencia suplantación muestra datos de los últimos 7 días. La [directiva de inteligencia](learn-about-spoof-intelligence.md) suplantación de identidad y el cmdlet [Get-PhishFilterPolicy](/powershell/module/exchange/get-phishfilterpolicy) correspondiente en Exchange Online PowerShell muestran datos de los últimos 30 días. [Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport) muestra datos durante un máximo de 90 días.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -59,7 +59,7 @@ Este tutorial es uno de varios para el Centro de seguridad & cumplimiento. Para 
 
   Para más información, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-  **Nota:** Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft  365 proporciona a los usuarios los permisos necesarios en el Centro de seguridad & cumplimiento y permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  **Nota:** Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft  365 proporciona a los usuarios los permisos necesarios en el Centro de seguridad & cumplimiento y permisos para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 - Habilita y deshabilita la inteligencia de suplantación de identidad en directivas contra suplantación de identidad en Microsoft Defender para Office 365. La inteligencia de suplantación está habilitada de forma predeterminada. Para obtener más información, vea [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 

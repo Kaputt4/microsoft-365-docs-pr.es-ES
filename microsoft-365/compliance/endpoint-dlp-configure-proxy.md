@@ -19,19 +19,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión.
-ms.openlocfilehash: 1e723adfbf16ba1180558e34b0fe4867e6337c57
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 3b8ebdbb08a6a866cc84df2031e77378925eaa0e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841654"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907010"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión
 
 La DLP de punto de conexión de Microsoft usa Microsoft Windows HTTP (WinHTTP) para notificar datos y comunicarse con el servicio en la nube del punto de conexión de Microsoft. La DLP de punto de conexión insertada se ejecuta en el contexto del sistema con la cuenta LocalSystem.
 
 > [!TIP]
-> Para las organizaciones que usan servidores proxy de reenvío como puerta de enlace a Internet, puede usar la protección de red para investigar lo que ocurre detrás de un servidor proxy. Para obtener más información, vea [Investigar eventos de conexión que ocurren detrás de los servidores proxy de reenvío](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy).
+> Para las organizaciones que usan servidores proxy de reenvío como puerta de enlace a Internet, puede usar la protección de red para investigar lo que ocurre detrás de un servidor proxy. Para obtener más información, vea [Investigar eventos de conexión que ocurren detrás de los servidores proxy de reenvío](/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy).
 
 La configuración de WinHTTP es independiente de la configuración de proxy de exploración de Internet de Windows Internet (WinINet) y solo puede detectar un servidor proxy mediante los siguientes métodos de detección automática:
 
@@ -89,7 +89,7 @@ Use netsh para configurar un proxy estático en todo el sistema.
 
      `netsh winhttp reset proxy`
 
-Para obtener más información, vea [Sintaxis de comando Netsh, contextos y formatos](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-contexts).
+Para obtener más información, vea [Sintaxis de comando Netsh, contextos y formatos](/windows-server/networking/technologies/netsh/netsh-contexts).
 
 
 ## <a name="enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server"></a>Habilitar el acceso a las direcciones URL del servicio en la nube de DLP de punto de conexión en el servidor proxy
@@ -129,7 +129,7 @@ Reemplace *HardDrivePath* por la ruta de acceso en la que se descargó la herram
 Si al menos una de las opciones de conectividad devuelve un estado (200), el cliente de Defender para punto de conexión puede comunicarse con la URL probada correctamente con este método de conectividad. 
 
 Pero si los resultados de la comprobación de conectividad indican un error, se mostrará un error HTTP (vea los códigos de estado HTTP). Luego, puede usar las direcciones URL de la tabla que se muestra en [Habilitar el acceso a las direcciones URL del servicio en la nube de DLP de punto de conexión en el servidor proxy](#enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server). Las direcciones URL que vaya a usar dependerán de la región seleccionada durante el procedimiento de incorporación.
-[!NOTE] La herramienta Analizador de conectividad no es compatible con la regla ASR [Bloquear las creaciones de procesos procedentes de comandos PSExec y WMI](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). Tendrá que deshabilitar temporalmente esta regla para ejecutar la herramienta de conectividad.
+[!NOTE] La herramienta Analizador de conectividad no es compatible con la regla ASR [Bloquear las creaciones de procesos procedentes de comandos PSExec y WMI](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). Tendrá que deshabilitar temporalmente esta regla para ejecutar la herramienta de conectividad.
 
 [!NOTE] Cuando se establece TelemetryProxyServer, en el registro o a través de la directiva de grupo, Defender para punto de conexión se revertirá a directo si no puede obtener acceso al proxy definido.
 Temas relacionados • Dispositivos de Windows 10 integrados • Solucionar problemas de incorporación de DLP de punto de conexión de Microsoft
@@ -145,8 +145,8 @@ Temas relacionados • Dispositivos de Windows 10 integrados • Solucionar prob
 - [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
-- [Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Herramientas y métodos de incorporación para equipos con Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+- [Microsoft Defender para punto de conexión](/windows/security/threat-protection/)
+- [Herramientas y métodos de incorporación para equipos con Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 - [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Dispositivos de Azure AD Unidos](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Dispositivos de Azure AD Unidos](/azure/active-directory/devices/concept-azure-ad-join)
 - [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

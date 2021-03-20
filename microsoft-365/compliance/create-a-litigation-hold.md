@@ -16,39 +16,39 @@ description: Obtenga información sobre cómo colocar un buzón en retención po
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 4bcb857095a63c06caa6e9762496ca74afeead04
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 046ee6fdc7c42026b1a69805883175982e3100b7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546992"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908404"
 ---
 # <a name="create-a-litigation-hold"></a>Crear una retención por juicio
 
-Puede poner un buzón en retención por juicio para conservar todo el contenido del buzón, incluidos los elementos eliminados y las versiones originales de los elementos modificados. Cuando se coloca un buzón de usuario en retención por juicio, también se conserva el contenido del buzón de archivo del usuario (si está habilitado). Al crear una retención, puede especificar una duración de retención (también denominada retención basada en *tiempo)* para que los elementos eliminados y modificados se conserven durante un período especificado y, a continuación, se eliminen permanentemente del buzón. O bien, puede conservar el contenido indefinidamente (denominada suspensión *infinita)* o hasta que se quite la retención por juicio. Si especifica un período de duración de retención, se calcula a partir de la fecha en que se recibe un mensaje o se crea un elemento de buzón. 
+Puede colocar un buzón en retención por juicio para conservar todo el contenido del buzón, incluidos los elementos eliminados y las versiones originales de los elementos modificados. Al colocar un buzón de usuario en retención por juicio, también se conserva el contenido del buzón de archivo del usuario (si está habilitado). Al crear una retención, puede especificar una duración de retención (también denominada retención basada en *tiempo)* para que los elementos eliminados y modificados se conserven durante un período especificado y, a continuación, se eliminen permanentemente del buzón. O puede conservar el contenido de forma indefinida (denominada suspensión *infinita)* o hasta que se quite la retención por juicio. Si especifica un período de duración de retención, se calcula a partir de la fecha en que se recibe un mensaje o se crea un elemento de buzón. 
   
 Esto es lo que sucede al crear una retención por juicio.
   
-- Los elementos eliminados permanentemente por el usuario se conservan en la carpeta Elementos recuperables del buzón del usuario durante la duración de la retención.
+- Los elementos eliminados permanentemente por el usuario se conservan en la carpeta Elementos recuperables del buzón del usuario durante la conservación.
     
-- Los elementos que el usuario purga de la carpeta Elementos recuperables se conservan durante la retención.
+- Los elementos que el usuario purga de la carpeta Elementos recuperables se conservan durante la conservación.
     
 - La cuota de almacenamiento de la carpeta Elementos recuperables aumenta de 30 GB a 110 GB.
     
-- Se conservan los elementos del buzón de archivo y principal del usuario
+- Los elementos de los buzones de correo principal y de archivo del usuario se conservan
     
 ## <a name="assign-an-exchange-online-plan-2-license"></a>Asignar una licencia de Exchange Online Plan 2
 
-- Para poner un buzón de Exchange Online en retención por juicio, debe tener asignada una licencia de Exchange Online Plan 2. Si a un buzón se le asigna una licencia de Exchange Online Plan 1, tendría que asignarle una licencia de Archivado de Exchange Online independiente para ponerla en retención.
+- Para colocar un buzón de Exchange Online en retención por juicio, debe tener asignada una licencia de Exchange Online Plan 2. Si a un buzón se le asigna una licencia del Plan 1 de Exchange Online, tendría que asignarle una licencia de Archivado de Exchange Online independiente para ponerla en espera.
     
 
 ## <a name="place-a-mailbox-on-litigation-hold"></a>Poner un buzón en retención por juicio
 
-Estos son los pasos para poner un buzón en retención por juicio mediante el Centro de administración de Exchange.
+Estos son los pasos para colocar un buzón en retención por juicio mediante el Centro de administración de Exchange.
 
-1. Vaya e [https://outlook.office.com/ecp](https://outlook.office.com/ecp) inicie sesión con su cuenta de administrador global.
+1. Vaya a [https://outlook.office.com/ecp](https://outlook.office.com/ecp) e inicie sesión con su cuenta de administrador global.
 
-2. Haga **clic en Destinatarios > buzones de correo** en el panel de navegación izquierdo.
+2. Haga **clic en Destinatarios > buzones en** el panel de navegación izquierdo.
 
 3. Seleccione el buzón que desea colocar en retención por juicio y, a continuación, haga clic **en Editar**.
 
@@ -58,29 +58,29 @@ Estos son los pasos para poner un buzón en retención por juicio mediante el Ce
     
 6. En la **página Retención por** juicio, escriba la siguiente información opcional: 
     
-    - Duración de retención por juicio **(días):** use este cuadro para crear una retención basada en tiempo y especificar durante cuánto tiempo se mantienen los elementos del buzón cuando el buzón se coloca en retención por juicio. La duración se calcula desde la fecha en que un elemento de buzón se recibe o se crea. Cuando la duración de retención expira para un elemento específico, ese elemento ya no se conservará. Si deja este cuadro en blanco, los elementos se conservan indefinidamente o hasta que se quite la retención. Use días para especificar la duración.
+    - **Duración de retención por juicio (días):** use este cuadro para crear una retención basada en tiempo y especificar cuánto tiempo se mantienen los elementos de buzón cuando el buzón se coloca en retención por juicio. La duración se calcula desde la fecha en que un elemento de buzón se recibe o se crea. Cuando la duración de retención expire para un elemento específico, ese elemento ya no se conservará. Si deja este cuadro en blanco, los elementos se conservan indefinidamente o hasta que se quita la retención. Use días para especificar la duración.
     
-    - **Nota:** Use este cuadro para informar al usuario de que su buzón está en retención por juicio. La nota aparecerá en la página Información de la cuenta en el buzón del usuario si usa Outlook 2010 o posterior. Para obtener acceso a esta página, los usuarios pueden hacer **clic en Archivo** en Outlook.
+    - **Nota:** use este cuadro para informar al usuario de que su buzón está en retención por juicio. La nota aparecerá en la página Información de la cuenta en el buzón del usuario si está usando Outlook 2010 o posterior. Para obtener acceso a esta página, los usuarios pueden hacer clic **en Archivo** en Outlook.
     
-    - **DIRECCIÓN URL:** use este cuadro para dirigir al usuario a un sitio web para obtener más información sobre la retención por juicio. Esta dirección URL aparece en la página Información de la cuenta en el buzón del usuario si usa Outlook 2010 o versiones posteriores. Para obtener acceso a esta página, los usuarios pueden hacer **clic en Archivo** en Outlook.
+    - **DIRECCIÓN URL:** use este cuadro para dirigir al usuario a un sitio web para obtener más información acerca de la retención por juicio. Esta dirección URL aparece en la página Información de la cuenta en el buzón del usuario si usa Outlook 2010 o posterior. Para obtener acceso a esta página, los usuarios pueden hacer clic **en Archivo** en Outlook.
 
-7. Haga **clic en Guardar** en la página **retención** por juicio y, a continuación, haga clic en **Guardar** en la página de propiedades del buzón.
+7. Haga **clic en Guardar** en la página **Retención** por juicio y, a continuación, haga clic en **Guardar** en la página de propiedades del buzón.
 
 ### <a name="create-a-litigation-hold-using-powershell"></a>Crear una retención por juicio con PowerShell
 
-También puede crear una retención por juicio ejecutando el siguiente comando en [Exchange Online PowerShell:](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+También puede crear una retención por juicio ejecutando el siguiente comando en [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true
 ```
 
-El comando anterior conserva los elementos indefinidamente porque no se especifica la duración de retención. Para crear una retención basada en tiempo, use el siguiente comando:
+El comando anterior conserva los elementos indefinidamente porque no se especifica la duración de la retención. Para crear una retención basada en tiempo, use el siguiente comando:
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-Para obtener más información, vea [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+Para obtener más información, vea [Set-Mailbox](/powershell/module/exchange/set-mailbox).
 
 ## <a name="how-does-litigation-hold-work"></a>¿Cómo funciona la retención por juicio?
 
@@ -93,5 +93,4 @@ En la ilustración siguiente se muestran las subcarpetas en las carpetas Element
 ![Ciclo de vida de retención por juicio](../media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
-> Si se coloca una retención asociada a un caso de exhibición de documentos electrónicos en un buzón, los elementos purgados se mueven de la subcarpeta Eliminaciones a la subcarpeta Retenciones de detección y se conservan hasta que el buzón se libera de la retención de exhibición de documentos electrónicos.
-  
+> Si se coloca una retención asociada a un caso de exhibición de documentos electrónicos en un buzón, los elementos purgados se mueven de la subcarpeta Eliminaciones a la subcarpeta DiscoveryHolds y se conservan hasta que el buzón se libera de la retención de exhibición de documentos electrónicos.

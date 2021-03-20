@@ -22,12 +22,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre cómo la purga automática de cero horas (ZAP) puede mover retroactivamente los mensajes entregados en un buzón de Exchange Online a la carpeta de correo no deseado o la cuarentena que se han detectado retroactivamente como correo no deseado o suplantación de identidad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: be47d8dfda68bfb6819b6423542970c7768c6ffb
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b5744fdd4ce371f62fcb4b07a4cbcd003405c3db
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820263"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907981"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Purga automática de hora cero (ZAP) en Exchange Online
 
@@ -121,4 +121,4 @@ ZAP sigue funcionando siempre y cuando el mensaje no se haya eliminado o mientra
 
 ZAP no pone en cuarentena los mensajes de los buzones de correo en espera. ZAP puede mover mensajes a la carpeta correo no deseado en función de la acción configurada para un veredicto de correo no deseado o suplantación de identidad (phishing) en directivas contra correo no deseado.
 
-Para obtener más información acerca de las retenciones en Exchange Online, vea Retención local y retención por juicio [en Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds).
+Para obtener más información acerca de las retenciones en Exchange Online, vea Retención local y retención por juicio [en Exchange Online](/Exchange/security-and-compliance/in-place-and-litigation-holds).

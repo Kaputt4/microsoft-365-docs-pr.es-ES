@@ -12,12 +12,12 @@ ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: normal
-ms.openlocfilehash: e98d42e79ac270e6ccce46e88e3b8ff00f8bfc0a
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 3f1a251d98be5b3a9fefa5c1f6d5d5562516d5d5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712311"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908179"
 ---
 # <a name="privacy-and-personal-data"></a>Privacidad y datos personales
 
@@ -32,7 +32,7 @@ Cuando los usuarios inscriben dispositivos corporativos en el Escritorio adminis
 Microsoft Managed Desktop no recopila datos por sí mismo para proporcionar su servicio (excepto para la información de contacto [del administrador de TI.](#it-admin-contact-information) En su lugar, Microsoft Managed Desktop reutiliza los datos que otros orígenes, como Windows y Microsoft Intune, ya han recopilado. Microsoft Managed Desktop usa datos que estos servicios recopilan de dispositivos inscritos:
 
 - Los datos de diagnóstico de Windows de dispositivos administrados por Microsoft Managed Desktop se envían a los almacenes de datos de diagnóstico de Windows de Microsoft.
-- Microsoft Managed Desktop usa [la administración moderna](https://docs.microsoft.com/learn/modules/introduction-to-modern-management-in-microsoft-365/) para administrar los dispositivos inscritos. Como parte de la "administración moderna", los dispositivos deben estar inscritos en Azure Active Directory del inquilino.
+- Microsoft Managed Desktop usa [la administración moderna](/learn/modules/introduction-to-modern-management-in-microsoft-365/) para administrar los dispositivos inscritos. Como parte de la "administración moderna", los dispositivos deben estar inscritos en Azure Active Directory del inquilino.
 - Para distribuir su configuración altamente optimizada y segura a los dispositivos inscritos, Microsoft Managed Desktop usa Microsoft Intune.
 - Microsoft Managed Desktop usa datos de inteligencia de seguridad de Protección avanzada de subprocesos de Microsoft Defender para aquellos clientes que usan ese servicio.
 
@@ -92,11 +92,11 @@ Para obtener más información acerca de las regiones que Azure usa para el alma
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
-Los datos de Intune se pueden almacenar en algunas regiones diferentes, como Europa Norte (Irlanda) y Europa Occidental (Países Bajos). El administrador de TI crea una cuenta de inquilino y elige el país donde se almacenarán los datos cuando se inscriban inicialmente en los servicios de Intune. Para obtener una lista de las ubicaciones de centros de datos usadas por Intune, vea [Microsoft Intune: ¿Dónde están mis datos de cliente?](http://intunedatacentermap.azurewebsites.net/). Para obtener más información sobre el almacenamiento y el uso de datos por Intune, vea [Data collection in Intune](https://docs.microsoft.com/intune/privacy-data-collect).
+Los datos de Intune se pueden almacenar en algunas regiones diferentes, como Europa Norte (Irlanda) y Europa Occidental (Países Bajos). El administrador de TI crea una cuenta de inquilino y elige el país donde se almacenarán los datos cuando se inscriban inicialmente en los servicios de Intune. Para obtener una lista de las ubicaciones de centros de datos usadas por Intune, vea [Microsoft Intune: ¿Dónde están mis datos de cliente?](http://intunedatacentermap.azurewebsites.net/). Para obtener más información sobre el almacenamiento y el uso de datos por Intune, vea [Data collection in Intune](/intune/privacy-data-collect).
 
 ### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
-Los datos de Microsoft Defender para puntos de conexión se pueden almacenar en varias regiones diferentes. Por este motivo, Defender for Endpoint opera en los centros de datos de Microsoft Azure en la Unión Europea, el Reino Unido y en los Estados Unidos, como se indica en [Microsoft Defender para endpoint:](http://intunedatacentermap.azurewebsites.net/)ubicaciones de almacenamiento de datos . Para obtener más información sobre el almacenamiento de datos y el uso de Defender para endpoint, vea ¿Qué datos recopila [Microsoft Defender para Endpoint?](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
+Los datos de Microsoft Defender para puntos de conexión se pueden almacenar en varias regiones diferentes. Por este motivo, Defender for Endpoint opera en los centros de datos de Microsoft Azure en la Unión Europea, el Reino Unido y en los Estados Unidos, como se indica en [Microsoft Defender para endpoint:](http://intunedatacentermap.azurewebsites.net/)ubicaciones de almacenamiento de datos . Para obtener más información sobre el almacenamiento de datos y el uso de Defender para endpoint, vea ¿Qué datos recopila [Microsoft Defender para Endpoint?](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
 
 ### <a name="windows-10"></a>Windows 10
 
@@ -126,7 +126,7 @@ Microsoft Managed Desktop no usa datos personales recopilados como parte de la p
 
 El Reglamento general de protección de datos [(RGPD)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) de la Unión Europea concede derechos a las personas (conocidas en el reglamento como interesados) para administrar los datos personales recopilados por un empleador u otro tipo de agencia u organización (conocido como controlador de datos o simplemente controlador). Los datos personales se definen ampliamente en el RGPD como cualquier dato que guarde relación con una persona física identificada o identificable. El RGPD ofrece a los interesados derechos específicos sobre sus datos personales, como la obtención de copias de ellos, la solicitud de modificaciones, la restricción de tratamiento, la eliminación o la recepción en un formato electrónico que permita su transferencia a otro responsable. Una solicitud formal de un interesado a un responsable para que realice una acción sobre sus datos personales se denomina Solicitud del interesado o DSR.
 
-Del mismo modo, el CCPA proporciona derechos y obligaciones de privacidad a los consumidores de California, incluidos derechos similares a los derechos del interesado del RGPD, como el derecho a eliminar, acceder y recibir (portabilidad) su información personal. El CCPA también proporciona ciertas divulgaciones, protecciones contra la discriminación al elegir derechos de ejercicio y requisitos de "no participar o no participar" para determinadas transferencias de datos clasificadas como "ventas". Las ventas se definen de forma amplia para incluir el uso compartido de datos con ánimo de lucro. Para obtener más información sobre la CCPA, consulte la [Ley de Privacidad de los Consumidores California](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa?view=o365-worldwide) y las [Preguntas más frecuentes sobre la privacidad del consumidor de California](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?view=o365-worldwide).
+Del mismo modo, el CCPA proporciona derechos y obligaciones de privacidad a los consumidores de California, incluidos derechos similares a los derechos del interesado del RGPD, como el derecho a eliminar, acceder y recibir (portabilidad) su información personal. El CCPA también proporciona ciertas divulgaciones, protecciones contra la discriminación al elegir derechos de ejercicio y requisitos de "no participar o no participar" para determinadas transferencias de datos clasificadas como "ventas". Las ventas se definen de forma amplia para incluir el uso compartido de datos con ánimo de lucro. Para obtener más información sobre la CCPA, consulte la [Ley de Privacidad de los Consumidores California](/compliance/regulatory/offering-ccpa?view=o365-worldwide) y las [Preguntas más frecuentes sobre la privacidad del consumidor de California](/compliance/regulatory/ccpa-faq?view=o365-worldwide).
 
 En la siguiente sección se describe cómo Microsoft Managed Desktop ayuda a los controladores a buscar, acceder y actuar sobre los datos personales o la información personal que usa Microsoft Managed Desktop.
 
@@ -143,11 +143,11 @@ Los administradores de seguridad pueden solicitar una extracción o eliminación
 
 ### <a name="user-related-personal-data"></a>Datos personales relacionados con el usuario
 
-Aparte de esto, Microsoft Managed Desktop no recopila datos personales por sí solo. En su lugar, se basa en y usa datos personales recopilados por otros Servicios en línea de Microsoft Enterprise. Los administradores de TI que buscan responder a sus solicitudes de usuario para ver, corregir y eliminar sus datos personales pueden usar la funcionalidad respectiva de los servicios subyacentes de los que depende Microsoft Managed Desktop. Si está interesado en ver o eliminar datos personales [usados](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure) por estos servicios, consulte primero el artículo Solicitudes del interesado de Azure para el RGPD.
+Aparte de esto, Microsoft Managed Desktop no recopila datos personales por sí solo. En su lugar, se basa en y usa datos personales recopilados por otros Servicios en línea de Microsoft Enterprise. Los administradores de TI que buscan responder a sus solicitudes de usuario para ver, corregir y eliminar sus datos personales pueden usar la funcionalidad respectiva de los servicios subyacentes de los que depende Microsoft Managed Desktop. Si está interesado en ver o eliminar datos personales [usados](/compliance/regulatory/gdpr-dsr-Azure) por estos servicios, consulte primero el artículo Solicitudes del interesado de Azure para el RGPD.
 
 Además, use las siguientes instrucciones para ejercer las DSR para los servicios de los que depende Microsoft Managed Desktop para la recopilación de datos personales:
 
-- [Azure Active Directory](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure?view=o365-worldwide)
-- [Microsoft Intune](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-intune?view=o365-worldwide)
-- [Microsoft Defender para endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
-- [Windows 10](https://docs.microsoft.com/windows/privacy/windows-10-and-privacy-compliance)
+- [Azure Active Directory](/compliance/regulatory/gdpr-dsr-Azure?view=o365-worldwide)
+- [Microsoft Intune](/compliance/regulatory/gdpr-dsr-Intune?view=o365-worldwide)
+- [Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- [Windows 10](/windows/privacy/windows-10-and-privacy-compliance)

@@ -23,16 +23,16 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: Obtenga información sobre cómo configurar y usar Microsoft 365 en su equipo, teléfono y tableta.
-ms.openlocfilehash: 437e644190017a0031d7c91d239f5b4f0a8d3773
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 8df5170190a464c71030c938be61df591032c45c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142078"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906293"
 ---
 # <a name="get-started"></a>Introducción
 
-Su organización acaba de obtener Microsoft 365 y ahora necesita usarlo para que pueda empezar a leer el correo electrónico, compartir documentos y mucho más. Obtenga información sobre cómo configurar y usar Microsoft 365 en su equipo, teléfono y tableta.
+Su organización acaba de obtener Microsoft 365 y ahora debe usarlo para que pueda empezar a leer correo electrónico, compartir documentos y mucho más. Obtenga información sobre cómo configurar y usar Microsoft 365 en su equipo, teléfono y tableta.
   
 ::: moniker range="o365-worldwide"
 
@@ -44,7 +44,7 @@ Su organización acaba de obtener Microsoft 365 y ahora necesita usarlo para que
 ## <a name="training-resources-for-your-users"></a>Recursos de aprendizaje para sus usuarios
 
 
-- [Inicio rápido para empleados](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)
+- [Inicio rápido de empleados](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)
     
 - [Centro de aprendizaje de Office](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
@@ -58,13 +58,12 @@ Su organización acaba de obtener Microsoft 365 y ahora necesita usarlo para que
 
 Estos son algunos recursos que le ayudarán a empezar.
   
-- [Aprendizaje para administradores:](https://docs.microsoft.com/microsoft-365/admin)obtenga vínculos a clases en línea gratuitas para administradores.
+- [Formación para administradores:](../index.yml)obtener vínculos a clases en línea gratuitas para administradores.
     
-- [Ayuda para administradores:](https://docs.microsoft.com/microsoft-365/admin/admin-home)obtenga información sobre las tareas principales, introducción a las herramientas de administración y solución de problemas.
+- [Ayuda de administración:](./admin-overview.md)obtenga información sobre las tareas principales, introducción a las herramientas de administración y solución de problemas.
     
-- [Póngase en contacto con el soporte técnico: Ayuda](../contact-support-for-business-products.md) para administradores: llámenos, abra una solicitud en línea o deje que la comunidad le ayude. 
+- [Póngase en contacto con el soporte técnico:](../contact-support-for-business-products.md) Ayuda de administrador: llámenos, abra una solicitud en línea o deje que la comunidad le ayude. 
     
 ## <a name="related-articles"></a>Artículos relacionados
 
 [Configurar Microsoft 365 para empresas: Ayuda para administradores](../setup/setup.md)
-

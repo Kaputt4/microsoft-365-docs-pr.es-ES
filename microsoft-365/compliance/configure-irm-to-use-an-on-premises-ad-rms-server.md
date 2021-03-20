@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar Information Rights Management (IRM) en Exchange Online para usar un servidor de Active Directory Rights Management Service (AD RMS).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 92bf92427ed9a0ba55a0f059859d59c11023ea33
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a520a3e55ae1137a0a4cc417dc68097d0793d978
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166121"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908570"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurar IRM para usar un servidor de AD RMS local
   
 Para su uso con implementaciones locales, Information Rights Management (IRM) en Exchange Online usa Active Directory Rights Management Services (AD RMS), una tecnología de protección de la información en Windows Server 2008 y versiones posteriores. La protección de IRM se implanta en el correo electrónico mediante la aplicación de una plantilla de directiva de permisos de AD RMS a un mensaje de correo electrónico. Los derechos se adjuntan al propio mensaje para que la protección se produzca en línea y sin conexión y dentro y fuera del firewall de la organización.
   
-En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS. Para obtener información sobre el uso de las nuevas funcionalidades para el cifrado de mensajes de Office 365 con Azure Active Directory y Azure Rights Management, consulte las preguntas más frecuentes sobre el cifrado de mensajes de [Office 365.](https://docs.microsoft.com/microsoft-365/compliance/ome-faq)
+En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS. Para obtener información acerca del uso de las nuevas funcionalidades para el cifrado de mensajes de Office 365 con Azure Active Directory y Azure Rights Management, vea las Preguntas más frecuentes sobre cifrado de mensajes de [Office 365.](./ome-faq.md)
   
 Para obtener más información sobre IRM en Exchange Online, consulte [Information Rights Management en Exchange Online](information-rights-management-in-exchange-online.md).
   
@@ -36,13 +36,13 @@ Para obtener más información sobre IRM en Exchange Online, consulte [Informati
 
 - Tiempo estimado para finalizar esta tarea: 30 minutos
 
-- Deberá tener asignados permisos antes de poder llevar a cabo este procedimiento o procedimientos. Para ver qué permisos necesita, consulte el entrada "Information Rights Management" en el tema [Messaging policy and compliance permissions](https://technet.microsoft.com/library/ec4d3b9f-b85a-4cb9-95f5-6fc149c3899b.aspx). 
+- Deberá tener asignados permisos antes de poder llevar a cabo este procedimiento o procedimientos. Para ver qué permisos necesita, consulte el entrada "Information Rights Management" en el tema [Messaging policy and compliance permissions](/Exchange/permissions/feature-permissions/policy-and-compliance-permissions). 
 
-- El servidor AD RMS debe estar ejecutando Windows Server 2008 o posterior. Para obtener información detallada sobre cómo implementar AD RMS, vea [Instalación de un clúster de AD RMS](https://go.microsoft.com/fwlink/?LinkId=210873).
+- El servidor AD RMS debe estar ejecutando Windows Server 2008 o posterior. Para obtener información detallada sobre cómo implementar AD RMS, vea [Instalación de un clúster de AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726041(v=ws.11)).
 
-- Para obtener información detallada sobre cómo instalar y configurar Windows PowerShell y conectarlo al servicio, vea [Conectarse a Exchange Online mediante PowerShell remoto](https://technet.microsoft.com/library/c8bea338-6c1a-4bdf-8de0-7895d427ee5b.aspx).
+- Para obtener información detallada sobre cómo instalar y configurar Windows PowerShell y conectarlo al servicio, vea [Conectarse a Exchange Online mediante PowerShell remoto](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Para obtener información acerca de los métodos abreviados de teclado que pueden aplicarse a los procedimientos de este tema, consulte [Métodos abreviados](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)de teclado para el Centro de administración de Exchange en Exchange Online.
+- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, vea [Keyboard shortcuts for the Exchange admin center in Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > ¿Problemas? Solicite ayuda en los foros de Exchange. Visite los foros en [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
@@ -94,15 +94,15 @@ Por ejemplo, el siguiente comando importa el dominio de publicación de confianz
 Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byte -Path C:\Users\Administrator\Desktop\ExportTPD.xml -ReadCount 0)) -Name "Exported TPD" -ExtranetLicensingUrl https://corp.contoso.com/_wmcs/licensing -IntranetLicensingUrl https://rmsserver/_wmcs/licensing
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Import-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/7c5e7a0f-9c9d-4863-bab8-bcc729cc16a6.aspx).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Import-RMSTrustedPublishingDomain](/powershell/module/exchange/import-rmstrustedpublishingdomain).
   
 #### <a name="how-do-you-know-this-step-worked"></a>¿Cómo sabe si este paso funcionó?
 
-Para comprobar que el dominio de publicación de confianza se haya importado correctamente, ejecute el cmdlet **Get-RMSTrustedPublishingDomain** para recuperar los dominios de publicación de confianza de su organización de Exchange Online. Para obtener detalles, consulte los ejemplos en [Get-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/69499195-f08f-41bd-b0ed-443688410b12.aspx).
+Para comprobar que el dominio de publicación de confianza se haya importado correctamente, ejecute el cmdlet **Get-RMSTrustedPublishingDomain** para recuperar los dominios de publicación de confianza de su organización de Exchange Online. Para obtener detalles, consulte los ejemplos en [Get-RMSTrustedPublishingDomain](/powershell/module/exchange/get-rmstrustedpublishingdomain).
   
 ### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>Paso 3: use el Shell de administración de Exchange para distribuir una plantilla de directiva de permisos AD RMS
 
-Después de importar el dominio de publicación de confianza, debe asegurarse de que la plantilla de directiva de permisos AD RMS esté distribuida. Una plantilla distribuida es visible para los usuarios de Outlook en la Web (anteriormente conocido como Outlook Web App), que pueden aplicar las plantillas a un mensaje de correo electrónico.
+Después de importar el dominio de publicación de confianza, debe asegurarse de que la plantilla de directiva de permisos AD RMS esté distribuida. Una plantilla distribuida es visible para los usuarios de Outlook en la web (anteriormente conocido como Outlook Web App), que pueden aplicar las plantillas a un mensaje de correo electrónico.
   
 Para obtener una lista de todas las plantillas que incluye el TPD predeterminado, ejecute el comando siguiente:
   
@@ -110,7 +110,7 @@ Para obtener una lista de todas las plantillas que incluye el TPD predeterminado
 Get-RMSTemplate -Type All | fl
 ```
 
-Si el valor del parámetro  _Type_ es  `Archived`, la plantilla no está visible para los usuarios. Solo las plantillas distribuidas en el TPD predeterminado están disponibles en Outlook en la Web.
+Si el valor del parámetro  _Type_ es  `Archived`, la plantilla no está visible para los usuarios. Solo las plantillas distribuidas en el TPD predeterminado están disponibles en Outlook en la web.
   
 Para distribuir una plantilla, ejecute el comando siguiente:
   
@@ -124,7 +124,7 @@ Por ejemplo, el siguiente comando importa la plantilla Company Confidential.
 Set-RMSTemplate -Identity "Company Confidential" -Type Distributed
 ```
 
-Para obtener más información acerca de la sintaxis y los parámetros, consulte [Get-RMSTemplate](https://technet.microsoft.com/library/4a5066e8-b770-4aa2-b464-0d2190914f71.aspx) y [Set-RMSTemplate](https://technet.microsoft.com/library/4637f6b8-751a-4f5e-8869-428250230382.aspx).
+Para obtener más información acerca de la sintaxis y los parámetros, consulte [Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate) y [Set-RMSTemplate](/powershell/module/exchange/set-rmstemplate).
   
 **Plantilla No reenviar**
   
@@ -145,7 +145,7 @@ Puede crear plantillas de directiva de permisos AD RMS adicionales en el servido
   
 #### <a name="how-do-you-know-this-step-worked"></a>¿Cómo sabe si este paso funcionó?
 
-Para comprobar que una plantilla de directiva de permisos AD RMS se distribuyó correctamente, ejecute el cmdlet **Get-RMSTemplate** para comprobar las propiedades de la plantilla. Para obtener detalles, consulte los ejemplos en [Get-RMSTemplate](https://technet.microsoft.com/library/4a5066e8-b770-4aa2-b464-0d2190914f71.aspx).
+Para comprobar que una plantilla de directiva de permisos AD RMS se distribuyó correctamente, ejecute el cmdlet **Get-RMSTemplate** para comprobar las propiedades de la plantilla. Para obtener detalles, consulte los ejemplos en [Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate).
   
 ### <a name="step-4-use-the-exchange-management-shell-to-enable-irm"></a>Paso 4: use el Shell de administración de Exchange para habilitar IRM
 
@@ -155,17 +155,17 @@ Después de importar el dominio de publicación de confianza y distribuir una pl
 Set-IRMConfiguration -InternalLicensingEnabled $true
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Set-IRMConfiguration](https://technet.microsoft.com/library/5df0b56a-7bcc-4be2-b4b8-4de16720476c.aspx).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration).
   
 #### <a name="how-do-you-know-this-step-worked"></a>¿Cómo sabe si este paso funcionó?
 
-Para comprobar que IRM se haya habilitado correctamente, ejecute el cmdlet [Get-IRMConfiguration](https://technet.microsoft.com/library/e1821219-fe18-4642-a9c2-58eb0aadd61a.aspx) para comprobar la configuración de IRM en la organización de Exchange Online.
+Para comprobar que IRM se haya habilitado correctamente, ejecute el cmdlet [Get-IRMConfiguration](/powershell/module/exchange/get-irmconfiguration) para comprobar la configuración de IRM en la organización de Exchange Online.
   
 ## <a name="how-do-you-know-this-task-worked"></a>¿Cómo sabe si esta tarea funcionó?
 <a name="sectionSection2"> </a>
 
 Para comprobar si ha importado el TPD y ha habilitado IRM correctamente, haga lo siguiente:
   
-- Use el cmdlet **Test-IRMConfiguration** para probar si IRM funciona. Para obtener más información, vea "Ejemplo 1" en [Test-IRMConfiguration](https://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
+- Use el cmdlet **Test-IRMConfiguration** para probar si IRM funciona. Para obtener más información, vea "Ejemplo 1" en [Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration).
 
-- Redacte un nuevo mensaje en Outlook en la Web  y protéjalo con IRM seleccionando la opción Establecer permisos en el menú extendido (icono Más ![ ](../media/ITPro-EAC-MoreOptionsIcon.gif) opciones).
+- Redacte un nuevo mensaje en Outlook en la web  y protéjalo con IRM seleccionando la opción Establecer permisos en el menú extendido ( ![ Icono Más opciones ](../media/ITPro-EAC-MoreOptionsIcon.gif) ).

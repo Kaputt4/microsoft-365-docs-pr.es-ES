@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: El plan de archivos ofrece funciones avanzadas de administración para las etiquetas de retención.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: c56f71032ccf154e5d9f416b42df1345da03d9a4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 422a76db5705e80c67803b798275e1faedd1d7aa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199021"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906880"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Use el plan de archivos para administrar las etiquetas de retención
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Aunque puede crear y administrar las etiquetas de retención desde **Gobierno de la información** en el centro de cumplimiento de Microsoft 365, el plan de archivos de **Administración de registros** tiene capacidades de administración adicionales:
 
@@ -52,7 +52,7 @@ Para acceder al plan de archivos, debe tener uno de los siguientes roles de admi
 
 - Administrador de retención con permiso de vista
 
-En el Centro de cumplimiento de Microsoft 365, vaya a **Soluciones** > **Administración de registros** > ** Plan de archivos**. 
+En el Centro de cumplimiento de Microsoft 365, vaya a **Soluciones** > **Administración de registros** > **Plan de archivos**. 
 
 Si **Administración de registros** no se muestra en el panel de navegación, desplácese hacia abajo y seleccione **Mostrar todo**.
 
@@ -99,7 +99,7 @@ A excepción de la etiqueta **Nombre**, todas las columnas se pueden mostrar u o
 
 El plan de archivos le permite incluir más información como parte de las etiquetas de retención. Estos descriptores del plan de archivos proporcionan más opciones para mejorar la facilidad de uso y la organización del contenido que necesite etiquetar.
 
-De forma predeterminada, empezando por el**Reference Id**, en las siguientes columnas se muestran estos descriptores del plan de archivos que puede especificar al crear una etiqueta de retención, o editar una etiqueta existente. 
+De forma predeterminada, empezando por el **Reference Id**, en las siguientes columnas se muestran estos descriptores del plan de archivos que puede especificar al crear una etiqueta de retención, o editar una etiqueta existente. 
 
 Para empezar, hay algunos valores predeterminados para los siguientes descriptores del plan de archivos: 
 - Departamento o función empresarial
@@ -133,7 +133,7 @@ En el plan de archivos, puede importar en masa nuevas etiquetas de retención y 
 
 Para importar nuevas etiquetas de retención y modificar las existentes: 
 
-1. En la página **Plan de archivos**, haga clic en **Importar** para usar la página**Rellenar e importar su plan de archivos**:
+1. En la página **Plan de archivos**, haga clic en **Importar** para usar la página **Rellenar e importar su plan de archivos**:
 
    ![Opción para importar el plan de archivos](../media/compliance-file-plan-import-labels.png)
 
@@ -143,8 +143,13 @@ Para importar nuevas etiquetas de retención y modificar las existentes:
 
    ![Plantilla en blanco del plan de archivos abierta en Excel](../media/file-plan-blank-template.png)
 
-3. Rellene la plantilla con la siguiente información, que describe las propiedades y los valores válidos para cada propiedad. Para la importación, cada valor tiene una longitud máxima de 64 caracteres. <br/>
-
+3. Rellene la plantilla con la siguiente información, que describe las propiedades y los valores válidos para cada propiedad. Para la importación, algunos valores tienen una longitud máxima:
+    
+    - **LabelName**: longitud máxima de 64 caracteres
+    - **Comment** y **Notes**: longitud máxima de 1024 caracteres
+    - Todos los demás valores: longitud ilimitada
+    <br/>
+    
    |Propiedad|Tipo|Valores válidos|
    |:-----|:-----|:-----|
    |LabelName|Cadena|Esta propiedad especifica el nombre de la etiqueta de retención.|
@@ -152,10 +157,10 @@ Para importar nuevas etiquetas de retención y modificar las existentes:
    |Notas|Cadena|Use esta propiedad para agregar una descripción sobre la etiqueta de retención para usuarios. Esta descripción aparece cuando los usuarios mueven el puntero sobre la etiqueta en aplicaciones como Outlook, SharePoint y OneDrive. Si deja esta propiedad en blanco, se muestra una descripción predeterminada que explica la configuración de retención de la etiqueta. |
    |IsRecordLabel|Cadena|Esta propiedad especifica si la etiqueta marca el contenido como un registro. Los valores válidos son: </br>**TRUE**: la etiqueta marca el elemento como un registro y, por lo tanto, no se puede eliminar el elemento. </br>**FALSE**: la etiqueta no marca el contenido como un registro. Este es el valor predeterminado.|
    |RetentionAction|Cadena|Esta propiedad especifica la acción que se llevará a cabo cuando expire el valor especificado por la propiedad RetentionDuration. Los valores válidos son: </br>**Delete**: se eliminan los elementos anteriores al valor especificado por la propiedad RetentionDuration.</br>**Keep**: se conservan los elementos durante el tiempo que especifica la propiedad RetentionDuration y no se ejecuta ninguna acción cuando expira el período de duración. </br>**KeepAndDelete**: se conservan los elementos durante el tiempo que especifica la propiedad RetentionDuration y, al expirar el período de duración, se eliminan   |
-   |RetentionDuration|Cadena|Esta propiedad especifica la cantidad de días que se va a conservar el contenido. Los valores válidos son: </br>**Unlimited**: los elementos se conservarán de forma indefinida. </br>***n***: un entero positivo, por ejemplo,**365**. 
+   |RetentionDuration|Cadena|Esta propiedad especifica la cantidad de días que se va a conservar el contenido. Los valores válidos son: </br>**Unlimited**: los elementos se conservarán de forma indefinida. </br>**_n_*_: un entero positivo, por ejemplo, _* 365**. 
    |RetentionType|Cadena|Esta propiedad especifica si se calcula la duración de la retención desde la fecha de creación del contenido, la fecha del evento, la fecha de etiquetado o la última fecha de modificación. Los valores válidos son: </br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
    |ReviewerEmail|SmtpAddress|Al rellenar esta propiedad, se activará una revisión de disposición cuando expire la duración de la retención. Esta propiedad especifica la dirección de correo electrónico del revisor para las acción de retención **KeepAndDelete**. Puede incluir la dirección de correo electrónico de usuarios individuales, grupos de seguridad o grupos de distribución. Puede especificar varias direcciones de correo electrónico separadas por punto y coma.|
-   |ReferenceId|Cadena|Esta propiedad especifica el valor que se muestra en el descriptor de plan de archivos**Reference Id**, que puede usar como un valor único para su organización.| 
+   |ReferenceId|Cadena|Esta propiedad especifica el valor que se muestra en el descriptor de plan de archivos **Reference Id**, que puede usar como un valor único para su organización.| 
    |DepartmentName|Cadena|Esta propiedad especifica el valor que se muestra en el descriptor del plan de archivos **Function/Department**.|
    |Categoría|Cadena|Esta propiedad especifica el valor que se muestra en el descriptor **Categoría** del plan de archivos.|
    |SubCategory|Cadena|Esta propiedad especifica el valor que se muestra en el descriptor del plan de archivos **Sub category**.|
@@ -164,7 +169,7 @@ Para importar nuevas etiquetas de retención y modificar las existentes:
    |CitationUrl|Cadena|Esta propiedad especifica el valor que se muestra en el descriptor del plan de archivos **Provision/citation**.|
    |CitationJurisdiction|Cadena|Esta propiedad especifica la jurisdicción o agencia que se muestra en el descriptor del plan de archivos **Provision/citation**. Por ejemplo, "Comisión de Bolsa y Valores​​ de Estados Unidos (SEC)".|
    |Regulatory|Cadena|Se deja en blanco. Esta propiedad no se usa en este momento.|
-   |EventType|Cadena|Esta propiedad especifica la regla de retención que está asociada a la etiqueta. Puede usar cualquier valor que identifique de forma exclusiva la regla. Por ejemplo:</br>**Nombre**</br>**Nombre distintivo (DN)**</br>**GUID** </br>Puede usar el cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule) para ver las reglas de retención disponibles. Tenga en cuenta que, como los valores de EventType son únicos para una organización, si exporta etiquetas desde una organización, no podrá usar los valores de la propiedad EventType de esa organización para importar las etiquetas en otra.|
+   |EventType|Cadena|Esta propiedad especifica la regla de retención que está asociada a la etiqueta. Puede usar cualquier valor que identifique de forma exclusiva la regla. Por ejemplo:</br>**Nombre**</br>**Nombre distintivo (DN)**</br>**GUID** </br>Puede usar el cmdlet [Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule) para ver las reglas de retención disponibles. Tenga en cuenta que, como los valores de EventType son únicos para una organización, si exporta etiquetas desde una organización, no podrá usar los valores de la propiedad EventType de esa organización para importar las etiquetas en otra.|
    |||
 
    Este es un ejemplo de la plantilla que contiene información sobre las etiquetas de retención.

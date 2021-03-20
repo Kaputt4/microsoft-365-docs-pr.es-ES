@@ -22,12 +22,12 @@ search.appverid:
 description: Obtenga asistencia técnica y de facturación utilizando los números de teléfono que figuran para su país o región, o enviando su solicitud de servicio en línea.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 7679539e64588827b6dcc20f6f98bc67e613aae6
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: aa843f0c81f38e53b525b6e56d7f3fa69696de79
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261340"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907043"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Formas de contactar al soporte técnico para productos empresariales: ayuda para administradores
 
@@ -36,7 +36,7 @@ ms.locfileid: "50261340"
 > [!IMPORTANT]
 > Debe ser el administrador de una suscripción de empresa para usar estos métodos de soporte. Si no es el administrador empresarial, use [esta página de soporte](https://support.microsoft.com/contactus).
 
-Comience por [comprobar el estado actual de los servicios](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health). Puede ver información detallada sobre los problemas actuales y anteriores en el <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Panel de estado del servicio</a>. Si tiene un problema que no se muestra en la lista, puede obtener soporte con uno de los siguientes métodos:
+Comience por [comprobar el estado actual de los servicios](../enterprise/view-service-health.md). Puede ver información detallada sobre los problemas actuales y anteriores en el <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Panel de estado del servicio</a>. Si tiene un problema que no se muestra en la lista, puede obtener soporte con uno de los siguientes métodos:
 
 ## <a name="online-support"></a>Soporte en línea
 
@@ -214,7 +214,7 @@ La función del soporte de 21Vianet es:
 
 ## <a name="feature-availability"></a>Disponibilidad de características
 
-Para ver la disponibilidad de características entre planes de Office 365, consulte [Descripción del servicio de Office 365](https://go.microsoft.com/fwlink/p/?linkid=846911).
+Para ver la disponibilidad de características entre planes de Office 365, consulte [Descripción del servicio de Office 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
 
 ## <a name="follow-us-on-wechat"></a>Síganos en WeChat
 
