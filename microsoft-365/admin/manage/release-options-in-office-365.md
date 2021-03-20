@@ -21,45 +21,45 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
-description: Obtenga información sobre cómo configurar la opción de lanzamiento para nuevas actualizaciones de productos y características en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 99a2660af9d8756bf4faf1cf3eddfe142a7c87bf
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: Obtenga información sobre cómo configurar la opción de lanzamiento para actualizaciones de nuevos productos y características en el Centro de administración de Microsoft 365.
+ms.openlocfilehash: f500aac89495c55d27fc4afb699254653786422d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114494"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915211"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurar las opciones de versión estándar o dirigida
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
 > [!IMPORTANT]
-> Las actualizaciones de Microsoft 365 descritas en este artículo se aplican a Microsoft 365, SharePoint Online y Exchange Online. Estas opciones de versión están destinadas a las mejores formas de liberar cambios en Microsoft 365, pero no se pueden garantizar en todo momento ni para todas las actualizaciones. No se aplican a aplicaciones de Microsoft 365, Skype Empresarial, Microsoft Teams y servicios relacionados. Para obtener información acerca de las opciones de lanzamiento de Aplicaciones de Microsoft 365, vea Información general sobre los canales de actualización de [Aplicaciones de Microsoft 365.](https://docs.microsoft.com/deployoffice/overview-update-channels)
+> Las actualizaciones de Microsoft 365 descritas en este artículo se aplican a Microsoft 365, SharePoint Online y Exchange Online. Estas opciones de versión son formas dirigidas y de mayor esfuerzo para liberar cambios en Microsoft 365, pero no se pueden garantizar en todo momento ni para todas las actualizaciones. No se aplican a aplicaciones de Microsoft 365, Skype Empresarial, Microsoft Teams y servicios relacionados. Para obtener información sobre las opciones de lanzamiento de Aplicaciones de Microsoft 365, vea [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels).
 
 Con Microsoft 365, recibirá nuevas actualizaciones de productos y características a medida que estén disponibles en lugar de realizar actualizaciones costosas cada pocos años. Puede administrar cómo su organización recibe estas actualizaciones. Por ejemplo, puede registrarse para obtener una versión anticipado y que su organización reciba actualizaciones en primer lugar. Puede elegir que solo determinados individuos reciban las actualizaciones. También puede elegir permanecer en el calendario de publicaciones predeterminado y recibir las actualizaciones más tarde. En este artículo se explican las distintas opciones de versión y cómo puede usarlas para su organización.
 
 ## <a name="how-it-works---release-validation"></a>Cómo funciona: validación de versiones
 
-El equipo de características prueba y valida primero cualquier nueva versión, después todo el equipo de características de Microsoft 365, seguido de todo Microsoft. Después de la validación y las pruebas internas, el siguiente paso es una **Versión dirigida** (anteriormente conocida como First Release) para los clientes que hayan decidido participar. En cada anillo de versión, Microsoft recopila comentarios y valida posteriormente la calidad mediante la supervisión de métricas de uso claves. Esta serie de validaciones progresivas se realiza de forma local para asegurar que la versión publicada mundialmente es tan sólida como sea posible. Las versiones se representan en la siguiente ilustración. 
+Cualquier nueva versión primero es probada y validada por el equipo de características, después por todo el equipo de características de Microsoft 365, seguido de todo Microsoft. Después de la validación y las pruebas internas, el siguiente paso es una **Versión dirigida** (anteriormente conocida como First Release) para los clientes que hayan decidido participar. En cada anillo de versión, Microsoft recopila comentarios y valida posteriormente la calidad mediante la supervisión de métricas de uso claves. Esta serie de validaciones progresivas se realiza de forma local para asegurar que la versión publicada mundialmente es tan sólida como sea posible. Las versiones se representan en la siguiente ilustración. 
   
-![Liberar anillos de validación para Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
+![Anillos de validación de lanzamiento para Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-Para actualizaciones significativas, los clientes son notificados inicialmente por el mapa de [ruta de Microsoft 365.](https://products.office.com/business/office-365-roadmap) A medida que se acerca la implementación de una actualización, se comunica a través del Centro de mensajes de [Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
+Para actualizaciones significativas, el Plan de desarrollo de [Microsoft 365](https://products.office.com/business/office-365-roadmap)notifica inicialmente a los clientes . A medida que se acerca la implementación de una actualización, se comunica a través del Centro de mensajes de [Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
 > [!NOTE]
-> Necesita una cuenta de Microsoft 365 o Azure AD para acceder al Centro de mensajes a través del [centro de administración.](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center) Los usuarios del plan hogar de Microsoft 365 no tienen un centro de administración.
+> Necesita una cuenta de Microsoft 365 o Azure AD para tener acceso a su Centro de mensajes a través del [Centro de administración.](/office365/admin/admin-overview/about-the-admin-center) Los usuarios del plan principal de Microsoft 365 no tienen un centro de administración.
 
 
 ## <a name="standard-release"></a>Versión estándar
 
-Esta es la opción predeterminada en la que tú y tus usuarios reciben las últimas actualizaciones cuando se lanzan ampliamente para todos los clientes.
+Esta es la opción predeterminada en la que usted y sus usuarios reciben las actualizaciones más recientes cuando se lanzan ampliamente a todos los clientes.
   
-Un procedimiento recomendado es dejar a la mayoría de los usuarios  en la versión **Standard** y a los profesionales de IT y usuarios avanzados en la versión dirigida para evaluar nuevas características y preparar equipos para dar soporte a los usuarios empresariales y ejecutivos. 
+Una buena práctica es dejar a  la mayoría de los usuarios  en la versión estándar y a los profesionales de IT y usuarios avanzados en la versión dirigida para evaluar nuevas características y preparar equipos para admitir a los usuarios y ejecutivos empresariales. 
   
 > [!NOTE]
 > Si cambia de la versión dirigida a la versión estándar, es posible que los usuarios pierdan el acceso a características que aún no han llegado a la versión estándar. 
@@ -73,15 +73,15 @@ Con esta opción, usted y sus usuarios pueden ser los primeros en ver las últim
   
 ### <a name="targeted-release-for-entire-organization"></a>Versión dirigida para toda la organización
 
-Si configura [la opción de versión en](#set-up-the-release-option-in-the-admin-center) el centro de administración para esta opción, todos los usuarios tendrán la experiencia de versión dirigida. Para organizaciones con más de 300 usuarios, le recomendamos usar una suscripción de prueba para esta opción. Para obtener información acerca de las suscripciones de prueba, póngase en contacto con Microsoft. 
+Si configura [la opción de versión en](#set-up-the-release-option-in-the-admin-center) el Centro de administración para esta opción, todos los usuarios tendrán la experiencia de versión dirigida. Para organizaciones con más de 300 usuarios, le recomendamos usar una suscripción de prueba para esta opción. Para obtener información acerca de las suscripciones de prueba, póngase en contacto con Microsoft. 
   
 ### <a name="targeted-release-for-selected-users"></a>Versión dirigida para usuarios seleccionados
 
-Si configura [la opción](#set-up-the-release-option-in-the-admin-center) de lanzamiento en el centro de administración para esta opción, puede definir usuarios específicos, normalmente usuarios avanzados, para recibir acceso anticipado a características y funcionalidades. 
+Si configura [la opción de](#set-up-the-release-option-in-the-admin-center) versión en el Centro de administración para esta opción, puede definir usuarios específicos, normalmente usuarios avanzados, para recibir acceso anticipado a características y funcionalidades. 
   
 ## <a name="benefits-of-targeted-release"></a>Ventajas de la Versión dirigida
 
-La versión dirigida permite a los administradores, administradores de cambios o cualquier otra persona responsable de las actualizaciones de Microsoft 365 prepararse para los próximos cambios, ya que les permite:
+La versión dirigida permite a los administradores, los administradores de cambios o cualquier otra persona responsable de las actualizaciones de Microsoft 365 prepararse para los próximos cambios al permitirles:
   
 - Prueba y validación de nuevas actualizaciones antes de publicarlas para todos los usuarios de la organización.
     
@@ -93,27 +93,27 @@ La versión dirigida permite a los administradores, administradores de cambios o
     
 - Uso de controles de características, donde se pueda, para controlar la publicación de características para los usuarios finales.
     
-## <a name="set-up-the-release-option-in-the-admin-center"></a>Configurar la opción de versión en el centro de administración
+## <a name="set-up-the-release-option-in-the-admin-center"></a>Configurar la opción de versión en el Centro de administración
 
-Puede cambiar la forma en que su organización recibe las actualizaciones de Microsoft 365 siguiendo estos pasos. Debe ser administrador global de Microsoft 365 para participar.
+Puede cambiar el modo en que su organización recibe actualizaciones de Microsoft 365 siguiendo estos pasos. Debe ser administrador global en Microsoft 365 para participar.
   
 > [!IMPORTANT]
 > Los cambios siguientes pueden tardar hasta 24 horas en tener efecto en Microsoft 365. Si opta por una opción distinta a la versión dirigida después de activarlo, puede que los usuarios pierdan el acceso a características que todavía no han alcanzado la versión programada. 
   
-1. En el centro de administración, vaya a Configuración de la organización y, en la pestaña Perfil de la  >  organización, elija **Preferencias de versión.** 
+1. En el Centro de administración, vaya a **Configuración** de la organización y, en la pestaña Perfil de la  >  organización, elija  **Preferencias de versión.**
 
-5. Para deshabilitar la versión dirigida, seleccione **Versión estándar** y, a continuación, seleccione **Guardar cambios.** 
+5. Para deshabilitar la versión dirigida, seleccione **Versión estándar** y, a continuación, seleccione **Guardar cambios**. 
     
-6. Para habilitar la versión dirigida para todos los usuarios de la organización, seleccione La versión dirigida para todos los usuarios **y,** a continuación, **seleccione Guardar cambios.** 
+6. Para habilitar la versión dirigida para todos los usuarios de la organización, seleccione **Versión dirigida** para todos los usuarios y, a continuación, seleccione **Guardar cambios**. 
     
-7. Para habilitar la versión dirigida para algunas personas de la organización, seleccione La versión dirigida para los usuarios seleccionados **y,** a continuación, **seleccione Guardar cambios.** 
+7. Para habilitar la versión dirigida para algunas personas de la organización, seleccione **Versión dirigida** para usuarios seleccionados y, a continuación, seleccione **Guardar cambios**. 
     
-8. Elija **Seleccionar usuarios** para agregar usuarios de uno en uno o Cargar usuarios para agregarlos de forma masiva. 
+8. Elija **Seleccionar usuarios** para agregar usuarios uno a la vez o **Cargar** usuarios para agregarlos en masa.
     
-9. Cuando haya terminado de agregar usuarios, seleccione **Guardar cambios.**
+9. Cuando haya terminado de agregar usuarios, seleccione **Guardar cambios**.
 
 
   
 ## <a name="learn-more"></a>Más información
 
-Descubra cómo administrar [mensajes en](https://docs.microsoft.com/office365/admin/manage/message-center) el Centro de mensajes de [Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) para recibir notificaciones sobre las próximas actualizaciones y versiones de Microsoft 365.
+Descubra cómo administrar [mensajes en](/office365/admin/manage/message-center) el Centro de mensajes de [Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) para obtener notificaciones sobre próximas actualizaciones y versiones de Microsoft 365.

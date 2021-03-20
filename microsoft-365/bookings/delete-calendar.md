@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: Use el Centro de administración de Microsoft 365 o Windows PowerShell para eliminar calendarios de Bookings.
-ms.openlocfilehash: 7407298adb402de79a1010b51544deee4b94cf5a
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 7b79628327797d2e315d31e1b1a2671f0b24e447
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50604025"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913783"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Eliminar un calendario de reserva en Bookings
 
@@ -46,7 +46,7 @@ El calendario de reserva es donde se almacena toda la información relevante sob
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Eliminar un calendario de reserva con Exchange Online PowerShell
 
-Consulte [Conectarse a Exchange Online PowerShell para](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) obtener requisitos previos y instrucciones para conectarse a Exchange Online PowerShell.
+Consulte [Conectarse a Exchange Online PowerShell para](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) obtener requisitos previos y instrucciones para conectarse a Exchange Online PowerShell.
 
 Para realizar estos pasos, debe usar una ventana de comandos activa de PowerShell de Microsoft que ejecutó seleccionando la opción "Ejecutar como administrador".
 
@@ -57,7 +57,7 @@ Para realizar estos pasos, debe usar una ventana de comandos activa de PowerShel
    ```
 
    > [!NOTE]
-   > Si ya [instaló el módulo EXO V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module), el comando anterior funcionará como está escrito.
+   > Si ya [instaló el módulo EXO V2](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exo-v2-module), el comando anterior funcionará como está escrito.
    
 2. El comando que necesita ejecutar usa la sintaxis siguiente:
 

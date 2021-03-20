@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: 'Obtenga información sobre cómo el análisis de uso se conecta a una API y proporciona una tendencia mensual de uso de varios servicios de Microsoft 365.  '
-ms.openlocfilehash: 7d1e797fc388934f66ddc45d2e7f51566e89ad23
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: 1975fc0bdba279b281fb45c8aec22255579ef414
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50758945"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913855"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modelo de datos de análisis de uso de Microsoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "50758945"
 El análisis de uso de Microsoft 365 se conecta a una API que expone un modelo de datos multidimensional. Las API que usa el análisis de uso de Microsoft 365 para generar sus datos son de las distintas API de Graph, generalmente disponibles. Por lo general, la función de la API de análisis de uso de Microsoft 365 no está disponible.
   
 > [!NOTE]
-> Para obtener más información, vea Trabajar con informes de uso de [Microsoft 365 en Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=864336). 
+> Para obtener más información, vea Trabajar con informes de uso de [Microsoft 365 en Microsoft Graph](/graph/api/resources/report). 
   
 Esta API proporciona información sobre la tendencia mensual de uso de los distintos servicios de Microsoft 365. Para obtener los datos exactos de la API, vea la tabla en la sección siguiente.
   
@@ -295,5 +295,3 @@ La tabla proporciona datos sobre el número de activaciones de suscripción de O
 |WinRtCount  <br/> |Número de activaciones por plan de servicio de dispositivos con Windows Mobile al final del período de tiempo.  <br/> |
 |Timeframe  <br/> |Esta columna tiene el valor de fecha. Se usa como una relación de varios a uno para la tabla Calendario.  <br/> |
 |ContentDate  <br/> |Si en el período de tiempo se muestra el mes actual, este valor representará la fecha más reciente del mes actual para los que están disponibles los datos.  <br/> Si en el período de tiempo se muestra el mes anterior, este valor representará la última fecha del mes del período de tiempo.  <br/> |
-   
-

@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
-description: Siga esta lista de comprobación al eliminar la cuenta de Microsoft 365 de un usuario.
-ms.openlocfilehash: 2fcd675bef7dbc5b38ee45b050dca5dacb4fd386
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Siga esta lista de comprobación mientras elimina la cuenta de Microsoft 365 de un usuario.
+ms.openlocfilehash: de0c69c0a785787491d60f5fe6d17c0129b929db
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399379"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914767"
 ---
 # <a name="quick-help-deleted-users-checklist"></a>Ayuda rápida: Lista de comprobación de usuarios eliminados
 
@@ -34,11 +34,11 @@ Por lo tanto, ha decidido eliminar un usuario de su organización. Por ejemplo, 
   
 ## <a name="remove-the-microsoft-365-license-from-the-user"></a>Quitar la licencia de Microsoft 365 del usuario
 
-Puede quitar una licencia de un usuario si busca el usuario  en la página principal o en la página Usuarios activos y, a continuación, selecciónelo. En la **pestaña Licencias y aplicaciones,** desactive la casilla de la licencia que desea quitar del usuario. [Lea el artículo completo](../manage/remove-licenses-from-users.md).
+Para quitar una licencia de un usuario, busque el usuario en la página principal o en la página **Usuarios** activos y, a continuación, selecciónelos. En la **pestaña Licencias y aplicaciones,** desactive la casilla de la licencia que desea quitar del usuario. [Lea el artículo completo](../manage/remove-licenses-from-users.md).
   
 ## <a name="block-sign-in"></a>Bloquear inicio de sesión
 
-Puede bloquear al usuario para que no pueda iniciar sesión en su organización. Puede buscar el usuario en la página principal o en la página **Usuarios** activos y, a continuación, seleccionarlo. En la parte superior del panel, bajo el  nombre del usuario, seleccione el icono Bloquear este usuario y, a continuación, active la casilla Bloquear a este usuario para que no **inicie** sesión. [Lea el artículo completo](../add-users/assign-admin-roles.md).
+Puede bloquear al usuario para que no pueda iniciar sesión en su organización. Puede buscar al usuario en la página principal o en la **página Usuarios activos** y, a continuación, seleccionarlos. En la parte superior del panel, bajo el  nombre del usuario, seleccione el icono Bloquear este usuario y, a continuación, active la casilla Bloquear a este usuario **para** que no inicie sesión. [Lea el artículo completo](../add-users/assign-admin-roles.md).
   
 ## <a name="get-their-data"></a>Obtener sus datos
 
@@ -46,12 +46,12 @@ Puede enviar el correo electrónico de este usuario a otro empleado o usuario de
   
 ## <a name="delete-user"></a>Eliminar usuario
 
-Puede eliminar el usuario buscando el usuario en la página principal o desde la **página Usuarios eliminados.** Seleccione el usuario y seleccione **Eliminar usuario.** [Lea el artículo completo](../add-users/delete-a-user.md).
+Puede eliminar el usuario buscando el usuario en la página principal o desde la **página Usuarios eliminados.** Seleccione el usuario y seleccione **Eliminar usuario**. [Lea el artículo completo](../add-users/delete-a-user.md).
   
-## <a name="what-to-do-with-the-unassigned-license"></a>Qué hacer con la licencia sin signo
+## <a name="what-to-do-with-the-unassigned-license"></a>Qué hacer con la licencia sin asignár
 
-Si tiene un nuevo empleado o persona que se une a su organización, puede asignarles esta licencia para que puedan usar Microsoft 365. Puede buscar el usuario en la página principal o en la página **Usuarios** activos y, a continuación, seleccionarlo. En la **pestaña Licencias y aplicaciones,** active la casilla de la licencia que desea agregar al nuevo usuario. [Lea el artículo completo](../manage/assign-licenses-to-users.md).
+Si tiene un nuevo empleado o persona que se une a su organización, puede asignarles esta licencia para que puedan usar Microsoft 365. Puede buscar al usuario en la página principal o en la **página Usuarios activos** y, a continuación, seleccionarlos. En la **pestaña Licencias y aplicaciones,** active la casilla de la licencia que desea agregar al nuevo usuario. [Lea el artículo completo](../manage/assign-licenses-to-users.md).
   
 ## <a name="remove-license-so-you-dont-have-to-pay-for-it"></a>Quitar la licencia para que no tenga que pagarla
 
-También puede quitar la licencia de su suscripción para que no tenga que pagarla. En la página principal del centro de administración, escriba **suscripción** y seleccione **Ver suscripciones.** Seleccione **Agregar o quitar licencias.** En el **cuadro Total de licencias,** escriba el número total de licencias que necesita para esta suscripción y, a continuación, **seleccione Enviar cambio.** Por ejemplo, si tuviera 5 licencias y necesita quitar una de ellas, escribiría **4**. [Lea artículo completo](../../commerce/licenses/remove-licenses-from-subscription.md).
+También puedes quitar la licencia de la suscripción para no tener que pagarla. En la página principal del Centro de administración, escriba **suscripción** y seleccione **Ver suscripciones.** Seleccione **Agregar o quitar licencias**. En el **cuadro Licencias totales,** escriba el número total de licencias que necesita para esta suscripción y, a continuación, seleccione **Enviar cambio**. Por ejemplo, si tuviera 5 licencias y necesita quitar 1 de ellas, escribiría **4**. [Lea artículo completo](../../commerce/licenses/buy-licenses.md).

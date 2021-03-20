@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Preguntas frecuentes de Microsoft Bookings.
-ms.openlocfilehash: a293bf86225731917068712c2887ea79c2540039
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: c7bf14c35626eeeec781f6a9f45769e0ead1730e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454294"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913831"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Preguntas más frecuentes de Microsoft Bookings
 
@@ -184,7 +184,7 @@ No hay ninguna disposición para establecer la zona horaria para el personal en 
 
 ### <a name="can-email-notifications-be-sent-as-the-tenant-domain-name"></a>¿Se pueden enviar notificaciones de correo electrónico como el nombre de dominio del inquilino?
 
-Las direcciones de correo electrónico se controlan y administran en el nivel de configuración de Microsoft 365 y dependen de las opciones de configuración de dominio allí. Encontrará más información [aquí.](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
+Las direcciones de correo electrónico se controlan y administran en el nivel de configuración de Microsoft 365 y dependen de las opciones de configuración de dominio allí. Encontrará más información [aquí.](/powershell/module/exchange/get-accepteddomain)
 
 ### <a name="is-the-ability-to-send-sms-messages-dependent-on-a-different-service-or-specific-configuration"></a>¿La capacidad de enviar mensajes SMS depende de un servicio o configuración específica diferente?
 
@@ -218,7 +218,7 @@ El tiempo de espera de grabación en la aplicación web de Bookings siempre dese
 
 ### <a name="can-bookings-calendars-be-cloned-or-duplicated-and-can-they-be-templatized-for-easy-scaling"></a>¿Se pueden clonar o duplicar calendarios de Bookings y se pueden templar para facilitar el escalado?
 
-El proceso sería usar la API de Graph para obtener detalles del buzón y, a continuación, usar esos detalles para crear un nuevo buzón. La documentación de la API [está aquí.](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta)
+El proceso sería usar la API de Graph para obtener detalles del buzón y, a continuación, usar esos detalles para crear un nuevo buzón. La documentación de la API [está aquí.](/graph/api/resources/booking-api-overview?view=graph-rest-beta)
 
 ### <a name="what-reporting-is-available-in-bookings"></a>¿Qué informes están disponibles en Bookings?
 
@@ -360,19 +360,19 @@ Si sigue viendo este error después de un período prolongado de tiempo o lo ve 
 
   - [Activa o desactiva Microsoft Bookings](turn-bookings-on-or-off.md)
 
-  - [Agregar usuarios de forma individual o masiva](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users?view=o365-worldwide.)
+  - [Agregar usuarios de forma individual o masiva](../admin/add-users/add-users.md?view=o365-worldwide.)
 
   - [Agregar personal a Bookings](add-staff.md)
 
-  - [Componentes de API para automatizar una vez definida la plantilla](https://docs.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses)
+  - [Componentes de API para automatizar una vez definida la plantilla](/graph/api/bookingbusiness-post-bookingbusinesses)
 
   - [Dirección URL del calendario de bookings para mostrar](https://outlook.office.com/bookings/calendar)
 
-  - [Directivas de cumplimiento de bookings](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365?view=o365-worldwide#bookings)
+  - [Directivas de cumplimiento de bookings](/compliance/regulatory/gdpr-dsr-Office365?view=o365-worldwide#bookings)
 
   - [Personalizar y publicar la página de reserva](customize-booking-page.md)
 
-  - [Configuración del buzón de inquilino](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
+  - [Configuración del buzón de inquilino](/powershell/module/exchange/get-accepteddomain)
 
   - [Reservas de grupo](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 

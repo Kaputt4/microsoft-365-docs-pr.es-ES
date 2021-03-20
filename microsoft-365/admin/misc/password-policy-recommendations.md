@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Obtenga información acerca de cómo hacer que su organización sea más segura frente a ataques a contraseñas y por qué debe prohibir contraseñas comunes y habilitar la autenticación multifactor basada en riesgos.
-ms.openlocfilehash: 66a4048ac1add3a0d47f256dc29519a91ae6cb11
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ca9a88b0bb154416837254d785cf9cfee8876ae6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926719"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914731"
 ---
 # <a name="password-policy-recommendations"></a>Recomendaciones de directiva de contraseñas
 
@@ -136,10 +136,10 @@ La autenticación multifactor basada en riesgos garantiza que, cuando nuestro si
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Restablecer contraseñas](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
+[Restablecer contraseñas](../add-users/reset-passwords.md)
 
-[Establecer la contraseña de un usuario individual que nunca caduque](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
+[Establecer la contraseña de un usuario individual que nunca caduque](../add-users/set-password-to-never-expire.md)
 
-[Permitir que los usuarios puedan restablecer sus propias contraseñas](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
+[Permitir que los usuarios puedan restablecer sus propias contraseñas](../add-users/let-users-reset-passwords.md)
 
-[Volver a enviar la contraseña de un usuario: ayuda para administradores](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)
+[Volver a enviar la contraseña de un usuario: ayuda para administradores](../add-users/resend-user-password.md)

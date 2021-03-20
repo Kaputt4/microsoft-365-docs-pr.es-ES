@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Información general de Puntuación de productividad de Microsoft
-ms.openlocfilehash: 72f9bcfb273912629744ec25ad9c0be720e76081
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: d818bd766f76f3df6c67a740d6ad1994a2be66de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838430"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914587"
 ---
 # <a name="microsoft-productivity-score"></a>Puntuación de productividad de Microsoft 
 
@@ -44,7 +44,7 @@ Proporcionamos métricas, información y recomendaciones en dos áreas:
 
 - **Experiencias tecnológicas:** la organización depende de una tecnología confiable y de buen rendimiento, así como del uso eficiente de Microsoft 365. [El Análisis de punto de conexión](https://aka.ms/endpointanalytics) le ayuda a comprender cómo los problemas de rendimiento y estado del software y el hardware pueden afectar a la organización. El estado de las aplicaciones de Microsoft 365 le ayuda a comprender si los dispositivos de su organización ejecutan las aplicaciones de Microsoft 365 en canales recomendados.
 
-Consulte [Qué es el Análisis de punto de conexión](https://docs.microsoft.com/mem/analytics/overview) para obtener una descripción general y los detalles de los requisitos previos. Para más información sobre la información de conectividad de red de Microsoft 365, consulte [la descripción general de la conectividad de red](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
+Consulte [Qué es el Análisis de punto de conexión](/mem/analytics/overview) para obtener una descripción general y los detalles de los requisitos previos. Para más información sobre la información de conectividad de red de Microsoft 365, consulte [la descripción general de la conectividad de red](../../enterprise/microsoft-365-networking-overview.md).
   
 
 ## <a name="how-the-score-is-calculated"></a>Cómo se calcula la puntuación
@@ -74,7 +74,8 @@ La puntuación de su organización se actualiza todos los días y refleja las ac
 
 ## <a name="prerequisites"></a>Requisitos previos 
 
-Para los datos de experiencias de personas, necesitará una suscripción a Microsoft 365 para empresas u Office 365 para empresas. Para los datos de análisis de punto de conexión de su espacio empresarial, necesita agregar Microsoft Intune a la suscripción. Intune le ayuda a proteger los datos de su organización mediante la administración de dispositivos y aplicaciones. Cuando tenga Intune, puede activar el análisis de punto de conexión en la experiencia de Intune. Más información sobre [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
+Para los datos de experiencias de personas, necesitará una suscripción a Microsoft 365 para empresas u Office 365 para empresas. Para los datos de análisis de punto de conexión de su espacio empresarial, necesita agregar Microsoft Intune a la suscripción. Intune le ayuda a proteger los datos de su organización mediante la administración de dispositivos y aplicaciones. Cuando tenga Intune, puede activar el análisis de punto de conexión en la experiencia de Intune. Más información sobre [Microsoft Intune](/mem/intune/). 
+
 > [!NOTE]
 > No es necesario disponer de una licencia de Workplace Analytics para obtener las características de Puntuación de productividad.
 
@@ -129,7 +130,7 @@ Las páginas de detalles son:
 - [Movilidad: experiencias de personas](mobility.md)
 - [Trabajo en equipo: experiencias de personas](teamwork.md)
 - [Estado de Aplicaciones de Microsoft 365: experiencias tecnológicas](apps-health.md)
-- [Análisis de puntos de conexión](https://docs.microsoft.com/mem/analytics/productivity-score)
+- [Análisis de puntos de conexión](/mem/analytics/productivity-score)
 
 ## <a name="business-continuity-special-report"></a>Informe especial de continuidad empresarial
 
@@ -143,12 +144,12 @@ Este informe permite a las organizaciones entender:
 
 - Si las reuniones remotas permiten una toma de decisiones eficaz.
 
-[Más información sobre el Informe de continuidad empresarial](https://aka.ms/bcrps)
+[Más información sobre el Informe de continuidad empresarial](/Workplace-Analytics/tutorials/bcrps)
 
-[Más información sobre Microsoft Graph](https://docs.microsoft.com/graph/)
+[Más información sobre Microsoft Graph](/graph/)
 
 > [!NOTE]
-> Los usuarios tan solo tienen la opción de obtener conclusiones de productividad desde el [panel de MyAnalytics](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2).
+> Los usuarios tan solo tienen la opción de obtener conclusiones de productividad desde el [panel de MyAnalytics](/workplace-analytics/myanalytics/use/dashboard-2).
 
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos escuchar sus comentarios

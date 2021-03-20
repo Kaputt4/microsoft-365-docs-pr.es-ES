@@ -21,12 +21,12 @@ description: 'Centro de administración de Microsoft 365: obtenga información s
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 2ecf9ddbd1257e7273da36371abb9f9e38df3f4a
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+ms.openlocfilehash: 833f782e071e06d837ca5eacfcb72e2d6e16c8fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717640"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913939"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades del Centro de administración de Microsoft 365
 
@@ -41,13 +41,13 @@ Estamos agregando continuamente nuevas características al Centro de administrac
 
 Y si quiere saber las novedades de otros servicios en la nube de Microsoft:
 
-- [Novedades de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
-- [Novedades del Centro de administración de Exchange](https://docs.microsoft.com/Exchange/whats-new)
-- [Novedades de Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [Novedades del Centro de cumplimiento de Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
-- [Novedades de Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
-- [Novedades del Centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
-- [Actualizaciones de Office](https://docs.microsoft.com/OfficeUpdates/)
+- [Novedades de Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
+- [Novedades del Centro de administración de Exchange](/Exchange/whats-new)
+- [Novedades de Microsoft Intune](/mem/intune/fundamentals/whats-new)
+- [Novedades del Centro de cumplimiento de Microsoft 365](/Office365/SecurityCompliance/whats-new)
+- [Novedades de Microsoft 365 Defender](../security/mtp/whats-new.md)
+- [Novedades del Centro de administración de SharePoint](/sharepoint/what-s-new-in-admin-center)
+- [Actualizaciones de Office](/OfficeUpdates/)
 
 ## <a name="ignite-2021-march"></a>Ignite 2021 (marzo)
 
@@ -104,7 +104,7 @@ Hay dos formas de empezar:
 - Vaya a **Usuarios** y, a continuación, en el menú "Más acciones", seleccione Administrar cuentas **de** prioridad para agregar usuarios a la lista.
 - Vaya a **Configuración**, busque la tarea de configuración **Supervisar las cuentas más importantes** y, a continuación, seleccione **Introducción.**
 
-Para obtener más información sobre las cuentas de prioridad, consulta [Supervisión de cuentas de prioridad](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).
+Para obtener más información sobre las cuentas de prioridad, consulta [Supervisión de cuentas de prioridad](./setup/priority-accounts.md).
 
 ### <a name="search-faster-and-get-better-results-from-any-page"></a>Buscar más rápido y obtener mejores resultados desde cualquier página
 
@@ -163,13 +163,13 @@ In May, we announced that you'll soon be able to sync Message center posts to Mi
 
 ![Página del centro de mensajes con "sincronización de planner" resaltada en la barra de comandos junto al botón preferencias.](../media/MAC-WN-MCPlannerSync.png)
 
-Para obtener más información, consulte este artículo y vídeo para ver cómo funciona: Realizar un seguimiento de las [publicaciones](https://docs.microsoft.com/Office365/Planner/track-message-center-tasks-planner) del centro de mensajes en Planner
+Para obtener más información, consulte este artículo y vídeo para ver cómo funciona: Realizar un seguimiento de las [publicaciones](/Office365/Planner/track-message-center-tasks-planner) del centro de mensajes en Planner
 
 ### <a name="documentation-training-and-videos"></a>Documentación, aprendizaje y vídeos
 
 - Nuevo y justo a tiempo para Microsoft Ignite:[El concentrador virtual](https://adoption.microsoft.com/virtual-hub/). Profundizar en el aprendizaje técnico para profesionales y desarrolladores de TI. Encuentre rápidamente alrededor de 20 vídeos nuevos como parte de #SIDETRACKED, el nombre de la pista de administración de Ignite este año.
 - Novedades de la serie de vídeos de [Microsoft 365:](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) este mes, tratamos las nuevas características disponibles en whiteboard para Teams y en la web, cómo automatizar el aprovisionamiento de usuarios en Azure AD, nuevos desencadenadores y acciones de Power Automate en Teams, etc. Y permanece atento para el mes que viene, donde tendremos un resumen de todas las cosas geniales que suceden en Ignite.
-- Hicimos un rediseño de la [página de documentación de Microsoft 365](https://docs.microsoft.com/microsoft-365) que se centra en las soluciones en primer lugar. Destacaremos las nuevas soluciones a medida que estén disponibles en esta página, así que no te des cuenta.
+- Hicimos un rediseño de la [página de documentación de Microsoft 365](/microsoft-365) que se centra en las soluciones en primer lugar. Destacaremos las nuevas soluciones a medida que estén disponibles en esta página, así que no te des cuenta.
 
 ![Nueva página de aterrizaje para la documentación de soluciones de Microsoft 365 con soluciones como "Empower remote workers".](../media/MAC-WN-M365Docspage.png)
 
@@ -221,7 +221,7 @@ Si permite que los usuarios instalen Office automáticamente desde el portal, pu
 
 Junto con la versión de Monthly Enterprise Channel, también estamos revisando los nombres de los canales de actualización existentes. Por ejemplo, el canal mensual se cambia a Canal actual. Los nuevos nombres tienen efecto el 9 de junio de 2020.
 
-Para obtener más información, vea [Changes to update channels for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/update-channels-changes).
+Para más información, consulte [Cambios en canales de actualización para las Aplicaciones de Microsoft 365](/DeployOffice/update-channels-changes).
 
 ### <a name="new-admin-roles"></a>Nuevos roles de administrador
 
@@ -231,7 +231,7 @@ Hemos agregado algunos nuevos roles de administrador de Azure Active Directory a
 - El rol de administrador de red permite a los usuarios administrar ubicaciones de red y revisar los conocimientos de red para el software de Microsoft 365 como aplicaciones de servicio.
 - El rol de administrador de impresoras concede permiso para administrar todos los aspectos de las impresoras y las conexiones de impresora.
 - El técnico de impresora es un subconjunto de la función de administrador de impresora donde los usuarios pueden registrar y anular el registro de impresoras, y actualizar el estado de la impresora.
-Para obtener más información acerca de estos roles, vea [Acerca de los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+Para obtener más información acerca de estos roles, vea [Acerca de los roles de administrador](./add-users/about-admin-roles.md).
 
 ### <a name="export-groups-list"></a>Exportar lista de grupos
 
@@ -239,7 +239,7 @@ Hemos escuchado a muchos administradores que necesitan compartir información so
 
 ### <a name="microsoft-365-solution-and-architecture-center"></a>Centro de soluciones y arquitectura de Microsoft 365
 
-Justo este mes, lanzamos un nuevo sitio en el centro de soluciones y arquitectura de [https://docs.microsoft.com](https://docs.microsoft.com) [Microsoft 365,](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)que reúne las instrucciones técnicas que necesita para comprender, planear e implementar soluciones integradas de Microsoft 365 para una colaboración segura y compatible. En este centro, encontrará:
+Justo este mes, lanzamos un nuevo sitio en el centro de soluciones y arquitectura de [https://docs.microsoft.com]() [Microsoft 365,](../solutions/index.yml)que reúne las instrucciones técnicas que necesita para comprender, planear e implementar soluciones integradas de Microsoft 365 para una colaboración segura y compatible. En este centro, encontrará:
 
 - Guía de soluciones fundamentales
 - Soluciones de carga de trabajo y instrucciones para escenarios
@@ -250,7 +250,7 @@ Justo este mes, lanzamos un nuevo sitio en el centro de soluciones y arquitectur
 ### <a name="docs-training-and-videos-may"></a>Documentos, aprendizaje y vídeos (mayo)
 
 - Novedades de la serie de vídeos de **Microsoft 365:** este mes, tratamos la nueva experiencia de soporte técnico en los Centros de administración y seguridad y cumplimiento de Teams, la integración de Planner con el Centro de mensajes y el nuevo diseño de vídeo 3x3 en Microsoft Teams. 
-- La página del centro de ayuda del Centro de administración de [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/) se actualizó para ayudarle a encontrar lo que necesita más rápidamente. Y si ves esa página ahora mismo, hemos agregado una tarjeta para informarle de actualizaciones y cambios importantes.
+- La página del centro de ayuda del Centro de administración de [Microsoft 365](./index.yml) se actualizó para ayudarle a encontrar lo que necesita más rápidamente. Y si ves esa página ahora mismo, hemos agregado una tarjeta para informarle de actualizaciones y cambios importantes.
 
 ## <a name="april-2020"></a>Abril de 2020
 
@@ -360,9 +360,9 @@ Los nuevos nombres de producto entraron en vigor el 21 de abril de 2020. Solo se
 |Nombre actual |Nuevo nombre  |
 |---------|---------|
 |Office 365 Empresa Essentials     |   Microsoft 365 Empresa Básico      |
-|Office 365 Empresa Premium     |    Microsoft 365 Empresa Estándar     |
+|Office 365 Business Premium     |    Microsoft 365 Empresa Estándar     |
 |Microsoft 365 Empresa     |    Microsoft 365 Empresa Premium     |
-|Office 365 Empresa     |    Aplicaciones de Microsoft 365 para negocios       |
+|Office 365 Business     |    Aplicaciones de Microsoft 365 para negocios       |
 |Office 365 ProPlus    |   Aplicaciones de Microsoft 365 para empresas      |
 
 ### <a name="videos-training-and-docs"></a>Vídeos, aprendizaje y documentos

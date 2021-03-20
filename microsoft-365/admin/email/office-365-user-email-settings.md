@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: Este artículo le proporciona información sobre cómo administrar la configuración de los usuarios.
-ms.openlocfilehash: ca57d536794ffde4865ec86f34c8dc644ff3c1f1
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: db7a7f01fdd5a6bd657bb04f9aaf4491959e0558
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080008"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915727"
 ---
 # <a name="user-email-settings"></a>Configuración del correo electrónico del usuario
 
@@ -40,7 +40,7 @@ Esta tabla explica las distintas opciones de configuración del correo electrón
 |Mostrar en la lista global de direcciones| Mostrar en la lista global de direcciones permite habilitar o deshabilitar la visibilidad del buzón del usuario en la lista de direcciones de la organización. |
 |Reenvío de correo|El reenvío de correo electrónico le permite agregar una dirección de correo electrónico de reenvío a un usuario. Esto puede serle útil si la persona tiene varias direcciones de correo electrónico y quiere recibir correos en todas ellas. Consulte [Configurar el reenvío de correo electrónico en Microsoft 365](configure-email-forwarding.md) para obtener más información.|
 |Respuestas automáticas|Puede establecer una respuesta automática cuando alguien envía un correo electrónico a la dirección de correo de la persona. Puede ser útil si un empleado deja la empresa y usted quiere que el remitente de correo electrónico lo sepa.|
-|Más acciones| **Convertir a un buzón compartido** le permite convertir el buzón del usuario en un buzón compartido. Puede hacerlo si la persona deja la organización y desea mantener los datos de sus buzones durante un tiempo. Consulte [Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md) y [Abrir y usar un buzón compartido](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd).</br>**Editar propiedades de Exchange** le permite administrar tareas adicionales de Exchange Online en el Centro de administración de Exchange. Infórmese sobre cómo [Crear buzones de usuario en Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).|
+|Más acciones| **Convertir a un buzón compartido** le permite convertir el buzón del usuario en un buzón compartido. Puede hacerlo si la persona deja la organización y desea mantener los datos de sus buzones durante un tiempo. Consulte [Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md) y [Abrir y usar un buzón compartido](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd).</br>**Editar propiedades de Exchange** le permite administrar tareas adicionales de Exchange Online en el Centro de administración de Exchange. Infórmese sobre cómo [Crear buzones de usuario en Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).|
 
 > [!NOTE]
 >

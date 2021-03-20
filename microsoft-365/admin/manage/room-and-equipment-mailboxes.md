@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: 'Cree un buzón de sala o equipamiento para que todos los usuarios de su organización puedan reservarlo para reuniones o eventos con Outlook. '
-ms.openlocfilehash: ab48a0177acd212ff330a4a772ef84843406a3d5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6960f93e8c1978f94776f067dcd0f502f0665718
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399607"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915175"
 ---
 # <a name="room-and-equipment-mailboxes"></a>Buzones de sala y equipamiento
 
@@ -88,7 +88,7 @@ Para configurar un buzón de sala o equipamiento, vaya al Centro de administraci
 6. Si ha realizado cambios, seleccione **Guardar** y, después, **Cerrar**.
 
 > [!Note]
-> Para garantizar la seguridad de sus buzones de sala y equipamiento, bloquee el inicio de sesión en estos buzones. Para obtener más información, consulte [Bloquear el inicio de sesión de la cuenta de buzón compartido](https://docs.microsoft.com/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account).
+> Para garantizar la seguridad de sus buzones de sala y equipamiento, bloquee el inicio de sesión en estos buzones. Para obtener más información, consulte [Bloquear el inicio de sesión de la cuenta de buzón compartido](/office365/admin/email/create-a-shared-mailbox?view=o365-worldwide#block-sign-in-for-the-shared-mailbox-account).
 
 ## <a name="common-questions-about-room-and-equipment-mailboxes"></a>Preguntas comunes sobre los buzones de sala y equipamiento.
 
@@ -110,4 +110,4 @@ No. Aunque la mayoría de los usuarios de su organización necesita una licencia
   
 ### <a name="do-i-need-an-owner-in-charge-of-booking-the-rooms-or-equipment"></a>¿Necesito un propietario que se encargue de reservar las salas o el equipamiento?
 
- No, no necesita que nadie se encargue del buzón de sala o del buzón de correo de equipamiento. 
+ No, no necesita que nadie se encargue del buzón de sala o del buzón de correo de equipamiento.

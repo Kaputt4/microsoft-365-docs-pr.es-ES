@@ -24,20 +24,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: 'Cambie su dirección de correo electrónico inicial a una dirección de correo electrónico de fácil uso como tom@fourthcoffee.com. Para ello, debe comprar un nombre de dominio y agregarlo a Microsoft 365. '
-ms.openlocfilehash: 445b78f759cee79a794f9656afd5b26051534e26
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: 'Cambie la dirección de correo electrónico inicial a una dirección de correo electrónico de fácil acceso como tom@fourthcoffee.com. Para ello, debe comprar un nombre de dominio y agregarlo a Microsoft 365. '
+ms.openlocfilehash: 10dff4e0523062ae763c08a972563dc8b5582038
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114026"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915931"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Cambiar la dirección de correo electrónico para usar el dominio personalizado
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -51,19 +51,19 @@ La dirección de correo electrónico inicial de Microsoft 365 incluye .onmicroso
 
 ::: moniker range="o365-germany"
 
-Su dirección de correo electrónico inicial en Office 365 Germany incluye .onmicrosoft.de, como tom@fourthcoffee.onmicrosoft.de. Puede cambiarla a una dirección más sencilla como tom@fourthcoffee.de. Necesitará su propio nombre de dominio, como fourthcoffee.de primero. Si ya tiene uno, ¡genial! Si no es así, puede obtener información sobre cómo [comprar uno en un registrador de dominios](../get-help-with-domains/buy-a-domain-name.md).
+Su dirección de correo electrónico inicial en Office 365 Germany incluye .onmicrosoft.de, como tom@fourthcoffee.onmicrosoft.de. Puedes cambiarla a una dirección más sencilla como tom@fourthcoffee.de. Necesitará su propio nombre de dominio, como fourthcoffee.de primero. Si ya tiene uno, ¡genial! Si no es así, puede obtener información sobre cómo [comprar uno en un registrador de dominios](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Su dirección de correo electrónico inicial en Office 365 operado por 21Vianet incluye partner.onmschina.cn, como tom@fourthcoffee.partner.onmschina.cn. Puede cambiarla a una dirección más sencilla como tom@fourthcoffee.cn. Necesitará su propio nombre de dominio, como fourthcoffee.cn primero. Si ya tiene uno, ¡genial! Si no es así, puede obtener información sobre cómo [comprar uno en un registrador de dominios](../get-help-with-domains/buy-a-domain-name.md).
+La dirección de correo electrónico inicial de Office 365 operado por 21Vianet incluye partner.onmschina.cn, como tom@fourthcoffee.partner.onmschina.cn. Puedes cambiarla a una dirección más fácil como tom@fourthcoffee.cn. Necesitará su propio nombre de dominio, como fourthcoffee.cn primero. Si ya tiene uno, ¡genial! Si no es así, puede obtener información sobre cómo [comprar uno en un registrador de dominios](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
-Cuando cambie el correo electrónico de su dominio para que llegue a Microsoft 365, al actualizar el registro MX de su dominio durante la instalación, todo el correo electrónico enviado a ese dominio empezará a llegar a Microsoft 365. Asegúrese de que ha agregado usuarios y creado buzones en Microsoft 365 para todos los usuarios que tienen correo electrónico en su dominio ANTES de cambiar el registro MX. ¿No quiere mover el correo electrónico de todos los usuarios de su dominio a Microsoft 365? Puede tomar medidas para [realizar pruebas piloto de Microsoft 365 con solo unas pocas direcciones de correo electrónico en su lugar.](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain?view=o365-worldwide)
+Cuando cambie el correo electrónico de su dominio para que llegue a Microsoft 365, al actualizar el registro MX de su dominio durante la instalación, todo el correo electrónico enviado a ese dominio empezará a llegar a Microsoft 365. Asegúrese de que ha agregado usuarios y creado buzones en Microsoft 365 para todos los usuarios que tienen correo electrónico en su dominio ANTES de cambiar el registro MX. ¿No quiere mover el correo electrónico de todos los usuarios de su dominio a Microsoft 365? Puede tomar medidas para [pilotar Microsoft 365 con solo unas cuantas direcciones de correo electrónico](../misc/pilot-microsoft-365-from-my-custom-domain.md?view=o365-worldwide)en su lugar.
   
-## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Cambiar la dirección de correo electrónico para usar su dominio personalizado mediante el Centro de administración de Microsoft 365
+## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Cambiar la dirección de correo electrónico para usar el dominio personalizado mediante el Centro de administración de Microsoft 365
 
 Debe tener una cuenta de administrador global para realizar estos pasos. 
 
@@ -81,11 +81,11 @@ Debe tener una cuenta de administrador global para realizar estos pasos.
 
 ::: moniker range="o365-21vianet"
 
-1. Vaya al centro <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>de administración en . 
+1. Vaya al Centro <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>de administración en . 
 
 ::: moniker-end 
 
-2. Vaya a la **página Dominios**  >  **de** configuración. 
+2. Vaya a la **página Dominios**  >  **de** instalación. 
 
 3. En la página **Dominios**, seleccione **Agregar dominio**.
     
@@ -99,4 +99,3 @@ Se le guiará para que todo esté configurado correctamente con su dominio en Mi
 ## <a name="related-articles"></a>Artículos relacionados
 
 [Comprar un dominio personalizado con Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
- 

@@ -19,44 +19,44 @@ search.appverid:
 - MET150
 - GEA150
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
-description: Obtenga información sobre cómo enviar su solicitud de Fapiao al sistema de administración de Fapiao 21Vianet después de realizar un pago en Office 365 operado por 21Vianet en China.
+description: Obtenga información sobre cómo enviar su solicitud de Fapiao al sistema de administración 21Vianet Fapiao después de realizar un pago en Office 365 operado por 21Vianet en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7145b4c223e7cb9347d38d6399fc8a3338651d42
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 681d2d79c510c773d7597c62811256458e3d166d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114374"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914479"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Solicitar un Fapiao para Office 365 operado por 21Vianet
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
-Puede enviar su solicitud de Fapiao al sistema de administración de Fapiao de 21Vianet unos tres días después de haber pagado. Después de enviar la solicitud fapiao, se procesará en dos días.
+Puede enviar su solicitud de Fapiao al sistema de administración de Fapiao de 21Vianet unos tres días después de haber pagado. Después de enviar la solicitud de Fapiao, se procesará en dos días.
   
-![Diagrama de flujo que muestra el proceso de la aplicación Fapiao.](../../media/bf14884a-53f9-4c53-971c-b9b8ad6ec8d3.png)
+![Diagrama de flujo que muestra el proceso de aplicación fapiao.](../../media/bf14884a-53f9-4c53-971c-b9b8ad6ec8d3.png)
   
 ## <a name="step-1-apply-for-a-fapiao"></a>Paso 1: Solicitar un Fapiao
 
-Hay dos formas de aplicar un Fapiao:
+Hay dos formas de solicitar un Fapiao:
   
-1. After making a payment in the Office 365 operated by 21Vianet website, you'll receive an order confirmation email that contains your order number and a link to the Fapiao management system. Puede usar el vínculo del correo electrónico para crear una cuenta en el sistema de administración de información <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao</a>.
+1. Después de realizar un pago en el sitio web de Office 365 operado por 21Vianet, recibirá un correo electrónico de confirmación de pedido que contiene el número de pedido y un vínculo al sistema de administración de Fapiao. Puede usar el vínculo del correo electrónico para crear una cuenta en el sistema de administración de información <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao</a>.
 
     O bien
 
-2. Puede solicitar un Fapiao desde el centro <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">de administración.</a>
+2. Puede solicitar un Fapiao desde el Centro <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">de administración.</a>
 
     ![La página Facturas del Centro de administración de Microsoft 365.](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
   
 ## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>Paso 2: Registrarse con el sistema de administración de Fapiao de 21Vianet
 
 > [!NOTE]
-> Puede usar el mismo nombre de correo electrónico y contraseña que su cuenta de Office 365, o puede usar algo diferente.
+> Puede usar el mismo nombre de correo electrónico y contraseña que su cuenta de Office 365 o puede usar algo diferente.
   
-1. Vaya al sistema de administración de información <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao</a>.
+1. Vaya al sistema de administración <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">de información 21Vianet Fapiao</a>.
 
-2. En el formulario de registro, escriba su número de pedido, dirección de correo electrónico y contraseña y, a continuación, seleccione **Registro.**
+2. En el formulario de registro, escriba el número de pedido, la dirección de correo electrónico y la contraseña y, a continuación, seleccione **Registro**.
 
     ![Página de registro del sistema de administración de Fapioa 21Vianet.](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
   
@@ -64,9 +64,9 @@ Hay dos formas de aplicar un Fapiao:
 
 ## <a name="step-3-submit-your-bill-for-a-fapiao"></a>Paso 3: Enviar la factura de un Fapiao
 
-1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">sistema de administración de Fapiao.</a>
+1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">sistema de administración de Fapiao</a>.
 
-2. Seleccione el registro de facturación y, a **continuación, seleccione Aplicar factura.**
+2. Seleccione el registro de facturación y, a continuación, **seleccione Aplicar factura**.
 
     > [!NOTE]
     > El sistema de pago está en una plataforma de terceros y tarda tres días en sincronizar el pedido y el registro de pago.
@@ -75,25 +75,25 @@ Hay dos formas de aplicar un Fapiao:
   
 3. Seleccione el tipo Fapiao, escriba la información necesaria y, a continuación, **seleccione Siguiente**.
 
-    ![Formulario de solicitud fapiao en el que se selecciona el tipo fapiao.](../../media/56fe3db1-c20f-4082-a39d-02d7ac41fec8.png)
+    ![Formulario de solicitud de Fapiao en el que se selecciona el tipo Fapiao.](../../media/56fe3db1-c20f-4082-a39d-02d7ac41fec8.png)
   
     > [!NOTE]
-    > - Para un fapiao de IVA normal, solo tienes que escribir el nombre del comprador.
-    > - Si es necesario, puedes solicitar un Fapiao con un título diferente. Sin embargo, solo puedes aplicar un título fapiao para una factura en el sistema. Si quieres dividir fapiao en diferentes cantidades o títulos, envía tu solicitud <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">en el centro de administración.</a>
-    > - La próxima vez que solicites un Fapiao, el sistema presenta automáticamente la información de Fapiao anterior.
+    > - Para un Fapiao de IVA normal, solo tiene que escribir el nombre del comprador.
+    > - Si es necesario, puedes solicitar un Fapiao con un título diferente. Sin embargo, solo puede aplicar un título Fapiao para una factura en el sistema. Si desea dividir el Fapiao en diferentes cantidades o títulos, envíe su solicitud <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">en el Centro de administración.</a>
+    > - La próxima vez que solicite un Fapiao, el sistema presenta automáticamente la información anterior de Fapiao.
     > - Si necesitas un certificado de compra o un reembolso, el nombre del pagador y el título de Fapiao deben coincidir.
 
-4. Seleccione un método de envío y escriba la información de envío. Puede elegir Yunda o SF (recolección de gastos). También puedes ir a la rama 21Vianet De Shanghai para obtener fapiao. seleccione **Siguiente**.
+4. Seleccione un método de envío y escriba la información de correo. Puede elegir Yunda o SF (recolección de carga). También puede ir a la rama 21Vianet Shanghai para obtener el Fapiao. seleccione **Siguiente**.
 
     ![Formulario de solicitud fapiao que muestra información de correo.](../../media/bba500b4-a51d-477b-81a7-9113b08d39f1.png)
   
     **21Vianet Dirección de la compañía de la sucursal de Shanghai:**
 
-    Shanghai, Pudong New Area Keyuan Road No. 88, Centro alemán, edificio 3, 657
+    Shanghai, Pudong Nueva área Keyuan Road No. 88, Centro alemán, edificio 3, 657
 
     **Información de contacto:**
 
-    Qin qin 021-28986102
+    Zhu qin qin 021-28986102
 
 5. Compruebe que la información es correcta y, a continuación, **seleccione Confirmar**.
 
@@ -103,13 +103,13 @@ Hay dos formas de aplicar un Fapiao:
 
 La aplicación se transmite automáticamente al Centro de servicios de 21Vianet y se completará en dos días laborables.
   
-Después de enviar la aplicación, puede comprobar el progreso en cualquier momento. Actualizaremos el estado de la aplicación con comentarios como **Emitido** o **Enviado por correo.**
+Después de enviar la aplicación, puede comprobar el progreso en cualquier momento. Actualizaremos el estado de la aplicación con comentarios como **Emitido** o **Enviado por correo**.
   
-![Página del sistema de administración de Fapiao 21Vianet que muestra el estado de la solicitud.](../../media/6cd696ec-d630-4fce-9f27-935a0d5f0ebe.png)
+![La página 21Vianet Fapiao management system que muestra el estado de la solicitud.](../../media/6cd696ec-d630-4fce-9f27-935a0d5f0ebe.png)
   
-Cuando Fapiao esté fuera de uso, el sistema mostrará un aviso e indicará el tiempo esperado para emitir el Fapiao.
+Cuando Fapiao está fuera de uso, el sistema mostrará un aviso e indicará el tiempo esperado para emitir el Fapiao.
   
-![Mensaje de error que se muestra cuando el sistema de administración de Fapiao 21Vianet está fuera de uso.](../../media/effe0796-83aa-4a91-a488-15d6f58c01dc.png)
+![Mensaje de error que se muestra cuando el sistema de administración de Fapiao de 21Vianet está fuera de uso.](../../media/effe0796-83aa-4a91-a488-15d6f58c01dc.png)
   
 ## <a name="faqs"></a>Preguntas frecuentes
 
@@ -117,36 +117,36 @@ Cuando Fapiao esté fuera de uso, el sistema mostrará un aviso e indicará el t
 
 Puedes comprobar el progreso de tu solicitud de Fapiao y averiguar por qué no has recibido el Fapiao.
   
-Si quieres cambiar el título de Fapiao, envíanos el Fapiao de nuevo y volveremos a emitir el Fapiao. Puede enviar la solicitud a través del <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">centro de administración.</a>
+Si quieres cambiar el título de Fapiao, envíanos el Fapiao de vuelta y volveremos a emitir el Fapiao. Puede enviar la solicitud a través del <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">Centro de administración.</a>
   
-![El formulario de soporte técnico del centro de administración que se usa para enviar un Fapiao de vuelta para solicitar un cambio de título.](../../media/2a413e9e-f30b-4f26-adbf-6287cc217a0f.png)
+![El formulario de soporte técnico del Centro de administración usado para devolver un Fapiao para solicitar un cambio de título.](../../media/2a413e9e-f30b-4f26-adbf-6287cc217a0f.png)
   
-### <a name="how-do-i-change-my-login-email-address-and-password"></a>¿Cómo puedo cambiar la dirección de correo electrónico y la contraseña de inicio de sesión?
+### <a name="how-do-i-change-my-login-email-address-and-password"></a>¿Cómo cambio mi dirección de correo electrónico y contraseña de inicio de sesión?
 
-1. Inicie sesión en el sistema <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">de administración de Fapiao</a>y seleccione **Cambiar dirección de correo electrónico.**
+1. Inicie sesión en el sistema de <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">administración de Fapiao</a>y, a continuación, **seleccione Cambiar dirección de correo electrónico**.
 
-    ![El menú desplegable después de que un usuario haya iniciado sesión en el sistema de administración de Fapiao 21Vianet.](../../media/ee6de24b-6be2-41e6-8aec-e0c3cb0ea35e.png)
+    ![Menú desplegable después de que un usuario haya iniciado sesión en el sistema de administración de Fapiao de 21Vianet.](../../media/ee6de24b-6be2-41e6-8aec-e0c3cb0ea35e.png)
   
-2. Si ha olvidado la contraseña de inicio de sesión, puede usar su dirección de correo electrónico de inicio de sesión para restablecer la contraseña. El sistema de administración de Fapiao enviará una nueva contraseña a la dirección de correo electrónico. Puede usar la nueva contraseña para iniciar sesión.
+2. Si ha olvidado la contraseña de inicio de sesión, puede usar su dirección de correo electrónico de inicio de sesión para restablecer la contraseña. El sistema de administración de Fapiao enviará una nueva contraseña a su dirección de correo electrónico. Puede usar la nueva contraseña para iniciar sesión.
 
-    ![Imágenes secuenciales que muestran cómo restablecer la contraseña en el sistema de administración de Fapiao 21Vianet.](../../media/2edb0a47-1286-4792-804d-7e84534c8370.png)
+    ![Imágenes secuenciales que muestran cómo restablecer la contraseña en el sistema de administración de Fapiao de 21Vianet.](../../media/2edb0a47-1286-4792-804d-7e84534c8370.png)
   
-3. If you forgot your login email address, please contact 21Vianet customer service at (86) 400-089-0365.
+3. Si ha olvidado su dirección de correo electrónico de inicio de sesión, póngase en contacto con el servicio de atención al cliente de 21Vianet al (86) 400-089-0365.
 
-### <a name="how-do-i-find-my-order-id"></a>¿Cómo puedo encontrar mi id. de pedido?
+### <a name="how-do-i-find-my-order-id"></a>¿Cómo puedo encontrar el identificador de mi pedido?
 
-1. En el [centro de administración,](https://go.microsoft.com/fwlink/p/?linkid=850627)vaya a la página  \> **Facturación & pagos.**
+1. En el [Centro de administración,](https://go.microsoft.com/fwlink/p/?linkid=850627)vaya a la página  \> **Facturación & pagos.**
 
-2. Busque la factura que desee, seleccione para ver o elija descargar el PDF.
+2. Busca la factura que quieras, selecciona para ver o elige descargar el PDF.
 
 ### <a name="what-if-i-enter-the-wrong-email-address-when-i-register"></a>¿Qué ocurre si escribo la dirección de correo electrónico incorrecta al registrarme?
 
-Si escribe la dirección de correo electrónico incorrecta al registrarse, no recibirá el correo electrónico de activación. El vínculo de registro del correo electrónico expirará automáticamente después de 24 horas. Puede volver a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">de registro y</a> volver a registrarse con la dirección de correo electrónico correcta.
+Si escribe la dirección de correo electrónico incorrecta al registrarse, no recibirá el correo electrónico de activación. El vínculo de registro en el correo electrónico expirará automáticamente después de 24 horas. Puede volver a la página <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">de registro y</a> volver a registrarse con la dirección de correo electrónico correcta.
   
 ### <a name="what-if-i-dont-receive-an-activation-email"></a>¿Qué ocurre si no recibo un correo electrónico de activación?
 
-Si no recibe un correo electrónico de activación de cuenta en un plazo de 24 horas después de registrarse, vaya al sistema de administración de información <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao,</a>escriba su dirección de correo electrónico y, a continuación, seleccione Volver a enviar el correo electrónico de **activación.** El sistema reenviará el correo electrónico de activación de la cuenta a su dirección de correo electrónico registrada.
+Si no recibe un correo electrónico de activación de cuenta dentro de las 24 horas 24 horas después de registrarse, vaya al sistema de administración de información <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao</a>, escriba su dirección de correo electrónico y, a continuación, seleccione **Reenviar** el correo electrónico de activación. El sistema reenviará el correo electrónico de activación de la cuenta a su dirección de correo electrónico registrada.
   
 ![Página de registro del sistema de administración de Fapioa 21Vianet.](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
   
-If you still don't receive an activation email, please contact 21Vianet customer service at (86) 400-089-0365.
+Si aún no recibe un correo electrónico de activación, póngase en contacto con el servicio de atención al cliente de 21Vianet al (86) 400-089-0365.

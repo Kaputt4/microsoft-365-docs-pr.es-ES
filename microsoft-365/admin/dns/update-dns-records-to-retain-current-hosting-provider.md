@@ -20,26 +20,26 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: Learn how to route traffic to an existing public website hosted outside of Microsoft, if you have set Microsoft to manage DNS records for your custom domain.
-ms.openlocfilehash: 5d2bf23d4052815fae210d0fdf6635288ff46b57
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Obtenga información sobre cómo enrutar el tráfico a un sitio web público existente hospedado fuera de Microsoft, si ha establecido Microsoft para administrar registros DNS para su dominio personalizado.
+ms.openlocfilehash: ceef82345e562e2aa4c291f416c454fb831ee45b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645568"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915979"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Actualizar registros DNS para conservar su sitio web con su proveedor de hospedaje actual
 
- **Si administra los registros de Microsoft** de su dominio en su proveedor de hospedaje DNS, no tiene que preocuparse por los pasos de este tema. El sitio web permanece en su ubicación y los usuarios pueden obtener acceso a él. 
+ **Si administra los registros de Microsoft** de su dominio en su proveedor de hospedaje DNS, no tiene que preocuparse por los pasos descritos en este tema. El sitio web permanece en su ubicación y los usuarios pueden obtener acceso a él. 
   
- **Si Microsoft administra los** registros DNS, para enrutar el tráfico a un sitio web público existente hospedado fuera de Microsoft, después de agregar su dominio a Microsoft, haga lo siguiente: 
+ **Si Microsoft administra los** registros DNS , para enrutar el tráfico a un sitio web público existente hospedado fuera de Microsoft, después de agregar el dominio a Microsoft, haga lo siguiente: 
   
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Actualizar registros DNS en el Centro de administración de Microsoft 365
 1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
 
-2. En la **página Dominios,** seleccione el dominio y, a continuación, elija **Registros DNS.**
+2. En la **página Dominios,** seleccione el dominio y, a continuación, elija **Registros DNS**.
 
-3. En **Configuración dns,** seleccione **Registros personalizados.**
+3. En **Configuración dns,** seleccione **Registros personalizados**.
 
 4. Seleccione **Nuevo registro personalizado** y escriba lo siguiente: 
     
@@ -67,7 +67,6 @@ Además, puede crear un registro CNAME para ayudar a los clientes a encontrar su
     
 Por último, haga lo siguiente:
   
-[Actualice los registros NS de su dominio](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) para que apunten a Microsoft. 
+[Actualice los registros NS de su dominio](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) para que apunten a Microsoft. 
   
-Cuando los registros NS se hayan actualizado para que apunten a Microsoft, el dominio está todo configurado. El correo electrónico se enruta a Microsoft y el tráfico a la dirección de su sitio web continuará en el host de su sitio web actual.
- 
+Cuando los registros NS se hayan actualizado para que apunten a Microsoft, el dominio está configurado. El correo electrónico se enruta a Microsoft y el tráfico a la dirección de su sitio web continuará en el host del sitio web actual.

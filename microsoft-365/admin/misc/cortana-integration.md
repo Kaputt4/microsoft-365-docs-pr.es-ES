@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Cuando inicien sesión con cuentas válidas profesionales o educativas, los usuarios podrán obtener servicios de asistencia basados en la nube con Cortana en experiencias Microsoft 365 que cumplen las promesas de Office 365 a nivel empresarial de privacidad, seguridad y cumplimiento.
-ms.openlocfilehash: 72d7eb2e4195e3941c382d96c7e7319b94202707
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
-ms.translationtype: HT
+ms.openlocfilehash: 00702724a44cd75bc68e9f7adac7170d81c080fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454366"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914803"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -37,7 +37,7 @@ De ahora en adelante, vamos a centrar Cortana en la productividad empresarial.
 
 - En conformidad con otros servicios de Office 365, los servicios de empresas de Cortana cumplen las mismas promesas de privacidad, seguridad y cumplimiento de nivel empresarial, tal como se refleja en los [Términos de los servicios en línea (OST)](https://www.microsoft.com/licensing/product-licensing/products).
 
-- Las nuevas experiencias de Microsoft 365, como Correo de Informe de tareas pendientes y Reproducir mis correos electrónicos, se habilitarán mediante los servicios de empresas de Cortana y cumplirán todas las promesas mencionadas. En estos momentos, estas características están disponibles a nivel mundial (multiempresa estándar). Para más información sobre cómo encontrar la ubicación de uso, visite [Ver valores adicionales de propiedad para cuentas](https://docs.microsoft.com/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#view-additional-property-values-for-accounts).
+- Las nuevas experiencias de Microsoft 365, como Correo de Informe de tareas pendientes y Reproducir mis correos electrónicos, se habilitarán mediante los servicios de empresas de Cortana y cumplirán todas las promesas mencionadas. En estos momentos, estas características están disponibles a nivel mundial (multiempresa estándar). Para más información sobre cómo encontrar la ubicación de uso, visite [Ver valores adicionales de propiedad para cuentas](../../enterprise/view-user-accounts-with-microsoft-365-powershell.md?view=o365-worldwide#view-additional-property-values-for-accounts).
 
 - Los usuarios pueden conectarse a los servicios de empresas de Cortana aquí descritos mediante Cortana en Windows 10 (versión 2004 y posteriores), así como aplicaciones cliente, como Outlook para iOS y Android, sujetas a términos de licencia independientes. 
 
@@ -77,9 +77,9 @@ Cortana en Windows 10, versión 2004 y posteriores, cumple las mismas promesas d
 
 Los administradores pueden configurar Cortana en Windows 10 para su organización mediante la directiva MDM Experience\AllowCortana o mediante la directiva de grupo: Configuración del equipo\Plantillas Administrativas\Componentes de Windows\Búsqueda\Permitir Cortana.
 
-Cortana empezó con Windows 10, versión 2004, y es una aplicación de Plataforma universal de Windows (UWP) preinstalada con Windows y actualizada con regularidad a través de Microsoft Store. Para recibir las últimas actualizaciones de Cortana, deberá [habilitar las actualizaciones a través de Microsoft Store](https://docs.microsoft.com/windows/configuration/stop-employees-from-using-microsoft-store).
+Cortana empezó con Windows 10, versión 2004, y es una aplicación de Plataforma universal de Windows (UWP) preinstalada con Windows y actualizada con regularidad a través de Microsoft Store. Para recibir las últimas actualizaciones de Cortana, deberá [habilitar las actualizaciones a través de Microsoft Store](/windows/configuration/stop-employees-from-using-microsoft-store).
 
-[Más información sobre Cortana en Windows 10](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview)
+[Más información sobre Cortana en Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview)
 
 ### <a name="cortana-voice-assistance-in-teams"></a>Asistente de voz de Cortana en Teams
 
@@ -101,7 +101,7 @@ Los usuarios individuales pueden probar el asistente de voz de Cortana en la apl
 
 4. Cambie el botón de alternancia entre **Activado** o **Desactivado**, según si quiere tener el asistente de voz de Cortana en el dispositivo.
 
-[Obtener más información sobre el asistente de voz de Cortana en Teams](https://docs.microsoft.com/microsoftteams/cortana-in-teams)
+[Obtener más información sobre el asistente de voz de Cortana en Teams](/microsoftteams/cortana-in-teams)
 
 ### <a name="conversational-ai-in-outlook-for-ios-with-cortana"></a>Inteligencia artificial de conversación en Outlook para iOS con Cortana
 
@@ -144,13 +144,13 @@ Cortana envía un breve correo electrónico personalizado con tareas y compromis
 
 ### <a name="how-to-opt-out-of-briefing-email"></a>Cómo optar por no usar el correo de Informe de tareas pendientes
 
-Los administradores pueden configurar el correo de Informe de tareas pendientes de su organización mediante [PowerShell](https://docs.microsoft.com/briefing/be-admin) en Exchange Online. Los usuarios pueden optar por no usar el correo de Informe de tareas pendientes de Cortana. Para ello, pueden seleccionar **Cancelar suscripción** en el pie de página del mensaje.
+Los administradores pueden configurar el correo de Informe de tareas pendientes de su organización mediante [PowerShell](/briefing/be-admin) en Exchange Online. Los usuarios pueden optar por no usar el correo de Informe de tareas pendientes de Cortana. Para ello, pueden seleccionar **Cancelar suscripción** en el pie de página del mensaje.
 
 [Más información sobre el correo de Informe de tareas pendientes](https://support.microsoft.com/help/4558259)
 
 Seguiremos introduciendo más experiencias como la anterior para contribuir a aumentar la productividad de su organización.
 
-[Más información sobre las ofertas de cumplimiento de Microsoft](https://docs.microsoft.com/microsoft-365/compliance/offering-home)
+[Más información sobre las ofertas de cumplimiento de Microsoft](/compliance/regulatory/offering-home)
 
 ## <a name="how-is-the-delivery-of-cortana-enterprise-services-different-from-the-delivery-of-other-cortana-features-i-may-have-previously-experienced"></a>¿En qué se diferencia la prestación de servicios de empresas de Cortana de la prestación de otras características de Cortana que ya he experimentado?
 

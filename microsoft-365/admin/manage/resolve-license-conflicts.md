@@ -20,24 +20,24 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
-description: Obtenga información sobre cómo resolver conflictos de licencias con su suscripción a Microsoft 365 para empresas.
-ms.openlocfilehash: 284a6b169c02314dd2bbd0e13c10c081cb50f58d
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: Obtenga información sobre cómo resolver conflictos de licencias con su suscripción de Microsoft 365 para empresas.
+ms.openlocfilehash: e2b5daa71164b41825282bd5652549347b8307c1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114458"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915187"
 ---
 # <a name="resolve-license-conflicts"></a>Resolver conflictos de licencia
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
-Le recomendamos que compre las licencias que necesita para su suscripción antes de crear nuevos usuarios. De esa forma, se puede asignar una licencia a los nuevos usuarios al crear cuentas de usuario. Si ya asignó todas las licencias a los usuarios, pero algunas de las licencias han expirado, o si intenta quitar una licencia que ya se asignó a un usuario, se producirán conflictos de licencias. Para obtener más información, vea [Quitar licencias de la suscripción.](../../commerce/licenses/remove-licenses-from-subscription.md)
+Se recomienda comprar las licencias que necesita para la suscripción antes de crear nuevos usuarios. De esa forma, se puede asignar una licencia a los nuevos usuarios al crear cuentas de usuario. Si ya asignó todas las licencias a los usuarios, pero algunas de las licencias han expirado, o si intenta quitar una licencia que ya se asignó a un usuario, se producirán conflictos de licencias. Para obtener más información, vea [Remove licenses from your subscription](../../commerce/licenses/buy-licenses.md).
   
 ## <a name="how-do-i-view-license-conflicts"></a>¿Cómo puedo ver los conflictos de licencia?
 
@@ -66,7 +66,7 @@ Le recomendamos que compre las licencias que necesita para su suscripción antes
 
 ## <a name="how-do-i-resolve-license-conflicts"></a>¿Cómo puedo resolver los conflictos de licencia?
 
-Puede resolver los conflictos de licencias comprando [más](../../commerce/licenses/buy-licenses.md) licencias o quitando licencias de los usuarios [que ya no las necesitan.](remove-licenses-from-users.md) De manera opcional, puede [eliminar una cuenta de usuario para liberar una licencia](../add-users/delete-a-user.md).
+Puede resolver conflictos de licencias comprando [más](../../commerce/licenses/buy-licenses.md) licencias o quitando licencias de usuarios [que ya no las necesitan.](remove-licenses-from-users.md) De manera opcional, puede [eliminar una cuenta de usuario para liberar una licencia](../add-users/delete-a-user.md).
   
 ## <a name="related-articles"></a>Artículos relacionados
 

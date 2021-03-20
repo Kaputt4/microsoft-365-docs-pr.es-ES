@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Obtenga información acerca de cómo configurar Teams para mejorar la seguridad del uso compartido de sus archivos al usar tres niveles de protección y equilibrar la seguridad con la simplicidad en la colaboración.
-ms.openlocfilehash: d41effb6db9f8995c3c878523babf200ab9af762
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 37d59d968d3a8e83a5b42fcce4c0400940314a41
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509247"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916219"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurar Teams con tres niveles de protección
 
@@ -42,7 +42,7 @@ Las configuraciones que se explican en este artículo concuerdan con las recomen
 
 - Protección altamente confidencial
 
-Para más información sobre estos niveles y capacidades recomendadas para cada nivel, vea[ Ilustraciones de la nube de Microsoft para arquitectos empresariales](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
+Para más información sobre estos niveles y capacidades recomendadas para cada nivel, vea[ Ilustraciones de la nube de Microsoft para arquitectos empresariales](./cloud-architecture-models.md)
 
 
 ## <a name="three-tiers-at-a-glance"></a>Tres niveles de un vistazo
@@ -68,11 +68,11 @@ Los equipos para la protección confidencial y altamente confidencial son equipo
 
 ## <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 
-Los niveles confidenciales y muy confidenciales usan etiquetas de confidencialidad para ayudar a proteger el equipo y sus archivos. Para implementar estos niveles, debe habilitar [etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Office 365 y sitios de SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Los niveles confidenciales y muy confidenciales usan etiquetas de confidencialidad para ayudar a proteger el equipo y sus archivos. Para implementar estos niveles, debe habilitar [etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Office 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Aunque el nivel de línea base no requiere etiquetas de confidencialidad, considere la posibilidad de crear una etiqueta "general" y requerir que todos los equipos tengan la etiqueta. Esto ayudará a garantizar que los usuarios hagan una elección consciente sobre la confidencialidad cuando creen un equipo. Si tiene previsto implementar niveles confidenciales o altamente confidenciales, le recomendamos que cree una etiqueta "general" que pueda usar para los equipos de línea base y para los archivos que no son confidenciales.
 
-Si es nuevo en el uso de etiquetas de confidencialidad, le recomendamos que lea [Empezar a usar las etiquetas de confidencialidad](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels) para comenzar. 
+Si es nuevo en el uso de etiquetas de confidencialidad, le recomendamos que lea [Empezar a usar las etiquetas de confidencialidad](../compliance/get-started-with-sensitivity-labels.md) para comenzar. 
 
 Si ya ha implementado etiquetas de confidencialidad en la organización, tenga en cuenta que las etiquetas utilizadas en los niveles confidenciales y muy confidenciales se ajustan a la estrategia general de la etiqueta. 
 
@@ -95,7 +95,7 @@ De forma predeterminada, los propietarios y miembros del equipo pueden compartir
 
 ## <a name="guest-sharing"></a>Uso compartido de invitado
 
-Si necesita colaborar con personas de fuera de su organización, le recomendamos que configure la [integración de SharePoint y OneDrive con Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) para obtener la mejor experiencia de uso compartido y administración.
+Si necesita colaborar con personas de fuera de su organización, le recomendamos que configure la [integración de SharePoint y OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) para obtener la mejor experiencia de uso compartido y administración.
 
 El uso compartido de invitado de Teams está desactivado de forma predeterminada, aunque el uso compartido para grupos de Office 365 (donde se almacenan los miembros del equipo) y SharePoint está activado. Activamos el uso compartido de Teams en el nivel de línea base, y puede desactivarlo si es necesario en los niveles confidenciales y altamente confidenciales mediante el uso de una etiqueta de confidencialidad.
 
@@ -113,7 +113,7 @@ Vea las siguientes referencias para crear un entorno de uso compartido de invita
 
 ## <a name="access-from-unmanaged-devices"></a>Acceso desde dispositivos no administrados
 
-Para los niveles confidenciales y altamente confidenciales, restringimos el acceso al contenido de SharePoint con etiquetas de confidencialidad. El acceso condicional de Azure AD ofrece muchas opciones para determinar cómo los usuarios acceden a Microsoft 365, incluyendo limitaciones basadas en la ubicación, el riesgo, el cumplimiento de dispositivos y otros factores. Se recomienda leer [¿Qué es el acceso condicional?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) y considerar otras directivas que podrían ser adecuadas para su organización.
+Para los niveles confidenciales y altamente confidenciales, restringimos el acceso al contenido de SharePoint con etiquetas de confidencialidad. El acceso condicional de Azure AD ofrece muchas opciones para determinar cómo los usuarios acceden a Microsoft 365, incluyendo limitaciones basadas en la ubicación, el riesgo, el cumplimiento de dispositivos y otros factores. Se recomienda leer [¿Qué es el acceso condicional?](/azure/active-directory/conditional-access/overview) y considerar otras directivas que podrían ser adecuadas para su organización.
 
 Tenga en cuenta que los invitados a menudo no tienen dispositivos administrados por su organización. Si permite invitados en cualquiera de los niveles, tenga en cuenta qué tipos de dispositivos usarán para acceder a equipos y sitios y establezca las directivas de dispositivo no administrados en consecuencia.
 
@@ -123,6 +123,6 @@ Comience por [configurar el nivel de línea base de protección](configure-teams
 
 ## <a name="see-also"></a>Consulte también
 
-[Seguridad y cumplimiento en Microsoft Teams](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+[Seguridad y cumplimiento en Microsoft Teams](/microsoftteams/security-compliance-overview)
 
-[Directivas de alerta en el Centro de seguridad y cumplimiento](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+[Directivas de alerta en el Centro de seguridad y cumplimiento](../compliance/alert-policies.md)

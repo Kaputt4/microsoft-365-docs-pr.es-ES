@@ -20,24 +20,24 @@ search.appverid:
 - MOE150
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
-description: 'Aprenda a compartir sitios y archivos con personas ajenas a la organización. '
-ms.openlocfilehash: 3857cee3073950bbb9c130368abdd7df68d0da2a
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: 'Obtenga información sobre cómo compartir sitios y archivos con personas fuera de la organización. '
+ms.openlocfilehash: 585034580fd18d9584b4df3d0bec7026cf207f50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114470"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915042"
 ---
 # <a name="share-sites-and-files-with-guest-users"></a>Compartir archivos y sitios con usuarios invitados
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
-Para colaborar con personas ajenas a la organización, puede compartir sitios completos o archivos específicos externamente. Si quiere ir directamente a la configuración del uso compartido, elija el escenario que quiera activar:
+Para colaborar con personas fuera de la organización, puede compartir sitios completos o archivos específicos externamente. Si quiere ir directamente a la configuración del uso compartido, elija el escenario que quiera activar:
 
 - [Colaborar con invitados en un documento](../../solutions/collaborate-on-documents.md)
 - [Colaborar con invitados en un sitio](../../solutions/collaborate-in-site.md)
@@ -47,7 +47,7 @@ Para colaborar con personas ajenas a la organización, puede compartir sitios co
 
 Cuando se plantee si quiere compartir contenido de forma externa y cómo debe hacerlo, considere lo siguiente:
   
-- ¿A quién desea conceder acceso al contenido del sitio y a cualquier subsitio y qué desea que puedan hacer?
+- ¿A quién quiere conceder acceso al contenido del sitio y a los subsitios, y qué desea que puedan hacer?
     
 - ¿A qué persona de su organización desea conceder permiso para compartir contenido externamente? 
     
@@ -57,30 +57,28 @@ Las respuestas a estas preguntas le facilitarán la panificación de la estrateg
   
 |**Pruebe esto:**|**Si necesita...**|
 |:-----|:-----|
-|Agregar un invitado a un grupo  <br/> |Proporcionar a alguien externo a la organización acceso continuo a la información y al contenido de un sitio de grupo. Dicha persona debe poder actuar como miembro de pleno derecho de su sitio y crear, editar y ver contenido.  <br/> |
-|Compartir un documento y requerir que los invitados se autentiquen.  <br/> |Proporcionar acceso seguro a un documento para revisión o colaboración a personas específicas fuera de la organización, pero estas personas no requieren acceso a otro contenido del sitio.  <br/> |
+|Agregar un invitado a un grupo  <br/> |Proporcionar a alguien fuera de la organización acceso continuo a la información y el contenido de un sitio de grupo. Dicha persona debe poder actuar como miembro de pleno derecho de su sitio y crear, editar y ver contenido.  <br/> |
+|Compartir un documento y requerir que los invitados se autentiquen.  <br/> |Proporcione a personas específicas fuera de su organización acceso seguro a un documento para su revisión o colaboración, pero estas personas no requieren acceso a otro contenido del sitio.  <br/> |
 |Comparta un documento, pero no requiera autenticación.  <br/> |Comparta un vínculo a un documento que no contenga información personal ni confidencial con personas ajenas a la organización para que puedan verlo o actualizarlo con comentarios al respecto. Estas personas no requieren acceso al contenido del sitio.  <br/> |
    
 > [!IMPORTANT]
-> Al deshabilitar el uso compartido externo, las personas fuera de la organización que actualmente tienen acceso ya no tendrán acceso. Si más adelante vuelve a activar el uso compartido externo, se restaurará el acceso para estas personas. Para impedir que un usuario tenga acceso a un contenido compartido, quítelos del grupo de [Microsoft 365,](/office365/admin/create-groups/add-or-remove-members-from-groups)quite sus permisos del sitio o deje de compartir el archivo o carpeta [con ellos.](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323) 
+> Al deshabilitar el uso compartido externo, las personas fuera de la organización que tienen acceso actualmente ya no tendrán acceso. Si más adelante vuelve a activar el uso compartido externo, se restaurará el acceso para estas personas. Para evitar que un usuario tenga acceso a un contenido compartido, quítelos del grupo [de Microsoft 365,](/office365/admin/create-groups/add-or-remove-members-from-groups)quite sus permisos del sitio o deje de compartir el archivo o la carpeta [con ellos](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323). 
   
-## <a name="enable-external-sharing-at-the-organization-level"></a>Habilitar el uso compartido externo en el nivel de organización
+## <a name="enable-external-sharing-at-the-organization-level"></a>Habilitar el uso compartido externo en el nivel de la organización
 
-El uso compartido externo está activado de forma predeterminada en el nivel de organización, pero no para todos los sitios nuevos. Para obtener información, consulta [Introducción al uso compartido externo.](/sharepoint/external-sharing-overview) 
+El uso compartido externo está activado de forma predeterminada en el nivel de la organización, pero no para todos los sitios nuevos. Para obtener información, consulta [Introducción al uso compartido externo.](/sharepoint/external-sharing-overview) 
 
 > [!NOTE]
->  Para permitir el uso compartido externo para cualquier sitio, debe permitirlo en el nivel de organización. 
+>  Para permitir el uso compartido externo para cualquier sitio, debe permitirlo en el nivel de la organización. 
   
-1. En el [centro de administración,](https://go.microsoft.com/fwlink/p/?linkid=2024339)escriba "externo" en el cuadro de búsqueda de la página principal y elija **Sitios para uso compartido externo.**
+1. En el [Centro de administración,](https://go.microsoft.com/fwlink/p/?linkid=2024339)escriba "externo" en el cuadro de búsqueda de la página principal y elija **Sitios compartidos externos.**
   
 2. En la página que se abre, elija si los usuarios solo pueden compartir con invitados existentes, invitados nuevos y existentes, o cualquier persona. 
     
 3. Seleccione **Guardar**.
     
-Después de habilitar el uso compartido externo en el nivel de organización, puede ajustar la configuración de uso compartido para deshabilitar el uso compartido externo para determinados sitios. Para obtener información, vea Activar o desactivar el uso compartido [externo para un sitio.](/sharepoint/change-external-sharing-site)
+Después de habilitar el uso compartido externo en el nivel de la organización, puede ajustar la configuración de uso compartido para deshabilitar el uso compartido externo para sitios determinados. Para obtener información, consulta Activar o desactivar el uso compartido [externo de un sitio.](/sharepoint/change-external-sharing-site)
   
 
   
-
-    
 

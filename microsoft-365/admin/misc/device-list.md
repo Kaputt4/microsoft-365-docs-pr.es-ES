@@ -1,5 +1,5 @@
 ---
-title: Archivo CSV de lista de dispositivos
+title: Lista de dispositivos CSV-file
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,14 +23,14 @@ search.appverid:
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
 description: Obtenga información sobre cómo crear un archivo CSV para AutoPilot en Microsoft 365 para empresas.
-ms.openlocfilehash: 030fb96e9e60c792fb685af57d34eacd6670645a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 78a9012bac054329bdb87b02757f49f30dd44f65
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399367"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914743"
 ---
-# <a name="device-list-csv-file"></a>Archivo CSV de lista de dispositivos
+# <a name="device-list-csv-file"></a>Lista de dispositivos CSV-file
 
 ## <a name="device-list-csv-file-format"></a>Formato de archivo .csv de lista de dispositivos
 
@@ -46,13 +46,12 @@ Las columnas del archivo de lista de dispositivos deben tener los siguientes enc
 
 Puede obtener esta información de su proveedor de hardware o puede usar el [script de PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo), que generará un archivo CSV. 
 
-Al agregar dispositivos, también debes agregarlos a un perfil. Un perfil se usa para aplicar perfiles de implementación de AutoPilot a un dispositivo o a un grupo de dispositivos.
+Al agregar dispositivos, también debes agregarlos a un perfil. Un perfil se usa para aplicar perfiles de implementación de AutoPilot a un dispositivo o un grupo de dispositivos.
   
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Documentación y recursos de Microsoft 365 para empresas](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Documentación y recursos de Microsoft 365 para empresas](../../business/index.yml)
   
-[Introducción a Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview)
+[Introducción a Microsoft 365 para empresas](../../business/microsoft-365-business-overview.md)
   
-[Administrar Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365/business/manage)
-  
+[Administrar Microsoft 365 para empresas](../../business/manage.md)

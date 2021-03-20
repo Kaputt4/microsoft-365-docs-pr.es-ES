@@ -13,12 +13,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Microsoft 365 ayuda a las organizaciones de energía a mudarse a una plataforma de colaboración moderna, mientras las ayuda a mantener sus datos y sistemas seguros y conforme a las normativas.
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 1e5acc09c72b47f583c2ee9330f78bf3e68aaa33
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 086cc176190549f2ec8e49ea992744059c5d9005
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558495"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916123"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Consideraciones clave de cumplimiento y seguridad para la Industria energética
 ![Metáfora ilustrativa de una visión global de varias industrias que utilizan la nube](../media/solution-arch-center/MSC17_global_016.png)
@@ -38,7 +38,7 @@ Entre las normas reglamentarias que se recomiendan para su examen por las organi
 - Se ha concedido para Azure y Azure Government una FedRAMP Alta P-ATO (Autorización Provisional para Operar), que representa el nivel más alto de autorización de la FedRAMP. 
 
 Para obtener información sobre los servicios de nube de Microsoft y FedRAMP, consulte los siguientes recursos:
-- [Información general Microsoft FedRAMP](https://docs.microsoft.com/microsoft-365/compliance/offering-fedramp?view=o365-worldwide)
+- [Información general Microsoft FedRAMP](/compliance/regulatory/offering-FedRAMP?view=o365-worldwide)
 - [Informes Office 365 FedRAMP](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FedRAMP_Reports)
 
 

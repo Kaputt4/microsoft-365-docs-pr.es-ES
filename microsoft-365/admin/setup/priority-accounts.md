@@ -12,50 +12,50 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
-description: Supervisar mensajes de correo electrónico con errores y retrasos enviados a o desde cuentas que tienen un alto impacto en la empresa.
-ms.openlocfilehash: dbdd692a41d341564376960788054e70623daf5a
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+description: Supervisar los mensajes de correo electrónico con errores y retrasos enviados a o desde cuentas que tienen un alto impacto empresarial.
+ms.openlocfilehash: b31cbf79b5b1b8f882c4c7bc8926779410baefe3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233367"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914059"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Administrar y supervisar cuentas de prioridad
 
-En todas las organizaciones de Microsoft 365, hay personas que son esenciales, como ejecutivos, líderes, administradores u otros usuarios que tienen acceso a información confidencial, propietaria o de prioridad alta.
+En todas las organizaciones de Microsoft 365, hay personas que son esenciales, como ejecutivos, líderes, administradores u otros usuarios que tienen acceso a información confidencial, propietaria o de alta prioridad.
 
-Para ayudar a su organización a proteger estas cuentas, ahora puede designar usuarios específicos como cuentas de prioridad y aprovechar las características específicas de la aplicación que les proporcionan protección adicional. En el futuro, más aplicaciones y características admitirán cuentas de prioridad y, para empezar, hemos anunciado dos **funcionalidades:** protección de cuentas de prioridad y supervisión del flujo de correo **premium.**
+Para ayudar a su organización a proteger estas cuentas, ahora puede designar usuarios específicos como cuentas de prioridad y aprovechar las características específicas de la aplicación que les proporcionan protección adicional. En el futuro, más aplicaciones y características admitirán cuentas de prioridad y, para empezar, hemos anunciado dos **funcionalidades:** protección de cuentas prioritarias y supervisión de flujo de correo **premium.**
 
-- **Protección** de cuentas de prioridad: Microsoft Defender para Office 365 (anteriormente Protección contra amenazas avanzada de Office 365) admite cuentas de prioridad como etiquetas que se pueden usar en filtros en alertas, informes e investigaciones. Para obtener más información, consulte [Etiquetas de usuario en Microsoft Defender para Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags)
-- **Supervisión del flujo de correo premium:** un flujo de correo correcto puede ser fundamental para el éxito de la empresa y los retrasos o errores en la entrega pueden tener un impacto negativo en el negocio. Puede elegir un umbral para mensajes de correo electrónico con errores o retrasos, recibir alertas cuando se supera ese umbral y ver un informe de problemas de correo electrónico para cuentas de prioridad. Para obtener más información, consulte el informe problemas de correo electrónico para cuentas [de prioridad en el EAC moderno](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
+- **Protección** de cuentas de prioridad: Microsoft Defender para Office 365 (anteriormente Protección contra amenazas avanzada de Office 365) admite cuentas de prioridad como etiquetas que se pueden usar en filtros en alertas, informes e investigaciones. Para obtener más información, consulte [Etiquetas de usuario en Microsoft Defender para Office 365](../../security/office-365-security/user-tags.md).
+- **Supervisión del flujo de** correo premium: el flujo de correo correcto puede ser fundamental para el éxito empresarial y los retrasos o errores de entrega pueden tener un impacto negativo en la empresa. Puede elegir un umbral para mensajes de correo electrónico con errores o retrasos, recibir alertas cuando se supere ese umbral y ver un informe de problemas de correo electrónico para cuentas de prioridad. Para obtener más información, consulte Problemas de correo electrónico para el informe de cuentas [de prioridad en el EAC moderno](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
 
-Para obtener los procedimientos recomendados de seguridad para las cuentas de prioridad, vea [Recomendaciones de seguridad para cuentas de prioridad.](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-recommendations-for-priority-accounts)
+Para obtener información sobre los procedimientos recomendados de seguridad para cuentas de prioridad, vea [Recomendaciones de seguridad para cuentas de prioridad.](../../security/office-365-security/security-recommendations-for-priority-accounts.md)
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 La **característica de protección de** cuentas de prioridad que se describe en este tema solo está disponible para las organizaciones que cumplen los siguientes requisitos:
 
-- Microsoft Defender para Office 365 Plan 2, incluidos aquellos con Office 365 E3, Office 365 E5, Microsoft 365 E5 o Microsoft 365 E5 Security.
+- Microsoft Defender para Office 365 Plan 2, incluidos los que tienen Office 365 E3, Office 365 E5, Microsoft 365 E5 o Microsoft 365 E5 Security.
 
-La **característica de supervisión del** flujo de correo premium que se describe en este tema solo está disponible para las organizaciones que cumplen los siguientes requisitos:
+La **característica de supervisión de flujo de** correo premium que se describe en este tema solo está disponible para las organizaciones que cumplen los siguientes requisitos:
 
-- Su organización debe tener un recuento de licencias de al menos 10 000, ya sea de uno de los siguientes productos o una combinación de ellos: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. Por ejemplo, su organización puede tener 3000 licencias de Office 365 E3 y 8500 Microsoft 365 E5, para un total de 11.500 licencias de los productos elegibles.
+- Su organización debe tener un recuento de licencias de al menos 10 000, desde uno de los siguientes productos o una combinación de los siguientes: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. Por ejemplo, su organización puede tener 3000 licencias de Office 365 E3 y 8500 Microsoft 365 E5, para un total de 11.500 licencias de los productos calificados.
 - Su organización necesita tener al menos 50 usuarios activos de Exchange Online mensuales.
 
 > [!NOTE]
 > Puede supervisar hasta 250 cuentas de prioridad.
 
-### <a name="add-priority-accounts-from-the-setup-page"></a>Agregar cuentas de prioridad desde la página de instalación
+### <a name="add-priority-accounts-from-the-setup-page"></a>Agregar cuentas de prioridad desde la página Configuración
 
-Agregue cuentas de prioridad desde la **página de instalación.**
+Agregue cuentas de prioridad desde la **página De instalación**.
 
 1. Vaya al Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
-2. Vaya a **Configurar**  >  **conocimientos de** la organización y elija **Ver en** Supervisar las cuentas **más importantes.**
+2. Vaya a **Configurar**  >  **conocimientos de** la organización y elija Ver **en** Supervisar las cuentas **más importantes.**
 
-3. Seleccione **Introducción o** **Administrar.**
+3. Seleccione **Introducción o** **Administrar**.
 
-4. En la **página Agregar cuentas de** prioridad, en el campo de búsqueda, escriba el nombre o la dirección de correo electrónico de la persona que desea agregar a la lista de cuentas de prioridad. También puede establecer su umbral de correo electrónico para mensajes de correo electrónico con errores o retrasos y obtener un informe semanal de problemas para cuentas de prioridad.
+4. En la **página Agregar cuentas de** prioridad, en el campo de búsqueda, escriba el nombre o la dirección de correo electrónico de la persona que desea agregar a la lista de cuentas de prioridad. También puede establecer el umbral de correo electrónico para mensajes de correo electrónico con errores o retrasos y obtener un informe semanal de problemas para cuentas de prioridad.
 
 5. Seleccione el usuario y elija **Guardar**.
 
@@ -67,9 +67,9 @@ Agregue cuentas de prioridad desde la página Usuarios activos.
 
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
-2. Vaya a **Usuarios**  >  **activos y** elija **...** en la parte superior de la página. Seleccione **Administrar cuentas de prioridad.**
+2. Vaya a **Usuarios**  >  **Usuarios activos** y elija **...** en la parte superior de la página. Seleccione **Administrar cuentas de prioridad**.
 
-3. Seleccione **Agregar cuentas y,** en la página Agregar cuentas de prioridad, en el campo de búsqueda, escriba el nombre de la persona que desea agregar a la lista de cuentas de prioridad. 
+3. Seleccione **Agregar cuentas** y, en la página Agregar cuentas de prioridad, en el campo de búsqueda, escriba el nombre de la persona que desea agregar a la lista de cuentas de prioridad. 
 
 4. Seleccione el usuario y elija **Guardar**.
 
@@ -77,7 +77,7 @@ Agregue cuentas de prioridad desde la página Usuarios activos.
 
 1. Vaya al Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
-2. Vaya a **Configurar**  >  **conocimientos de** la organización y elija **Ver en** Supervisar las cuentas **más importantes.**
+2. Vaya a **Configurar**  >  **conocimientos de** la organización y elija Ver **en** Supervisar las cuentas **más importantes.**
 
 3. En la **página Supervisar la mayoría de las cuentas,** elija Cuentas de **prioridad** en Administrar **esta característica.**
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo encontrar ayuda de administrador para Microsoft 365 Empresa Premium.
-ms.openlocfilehash: cf81ae934a35dadc895a1fc836ef1bd28f5000e0
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 5f09d74a5447b5023b2b3286a3aae504f707d44e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422596"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913639"
 ---
 # <a name="find-answers-and-help-for-admins"></a>Buscar respuestas y ayuda para los administradores
 
@@ -47,6 +47,6 @@ Si tiene una pregunta o necesita ayuda con Microsoft 365 Empresa Premium, tiene 
 
 También puede usar los siguientes recursos para obtener ayuda con su problema:
 
-- [aka.ms/learn365admin](https://aka.ms/learn365admin), para buscar todas las tareas y ayuda relacionadas con el administrador, como restablecer contraseñas y asignar suscripciones de Microsoft.
+- [aka.ms/learn365admin](../admin/index.yml), para buscar todas las tareas y ayuda relacionadas con el administrador, como restablecer contraseñas y asignar suscripciones de Microsoft.
 - [answers.microsoft.com](https://answers.microsoft.com), para buscar respuestas, iniciar una discusión y hacer preguntas de otros usuarios.
 - [techcommunity.microsoft.com](https://techcommunity.microsoft.com), para unirse a una comunidad de expertos y encontrar procedimientos recomendados con Microsoft 365 para su empresa.
