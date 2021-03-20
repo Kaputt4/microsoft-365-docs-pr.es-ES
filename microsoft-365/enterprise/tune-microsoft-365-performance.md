@@ -16,24 +16,22 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: fce71911-5c54-455d-b937-1b5a0b674620
-description: Vínculos a cursos de aprendizaje, blogs, artículos y otros recursos que le dicen cómo mejorar el rendimiento de Microsoft 365.
-ms.openlocfilehash: bf1ee635ef4d021149ac43ae706b4503154342ec
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Vínculos a cursos de formación, blogs, artículos y otros recursos que te dicen cómo mejorar el rendimiento de Microsoft 365.
+ms.openlocfilehash: 6e6e224eb1f08effeae6c6189f61699834897172
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694064"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909351"
 ---
-# <a name="tune-microsoft-365-performance"></a><span data-ttu-id="5ab8e-103">Optimizar el rendimiento de Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="5ab8e-103">Tune Microsoft 365 performance</span></span>
+# <a name="tune-microsoft-365-performance"></a><span data-ttu-id="192fb-103">Optimizar el rendimiento de Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="192fb-103">Tune Microsoft 365 performance</span></span>
 
-<span data-ttu-id="5ab8e-104">En este artículo se incluyen vínculos a cursos de aprendizaje, blogs, artículos y otros recursos que le dicen cómo mejorar el rendimiento de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="5ab8e-104">This article links to training courses, blogs, articles, and other resources that tell you how to improve performance of Microsoft 365.</span></span>
+<span data-ttu-id="192fb-104">En este artículo se incluyen cursos de formación, blogs, artículos y otros recursos que le dicen cómo mejorar el rendimiento de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="192fb-104">This article links to training courses, blogs, articles, and other resources that tell you how to improve performance of Microsoft 365.</span></span>
   
-<span data-ttu-id="5ab8e-105">Este artículo forma parte del plan de red y el ajuste [del rendimiento para el proyecto de Microsoft 365.](https://aka.ms/tune)</span><span class="sxs-lookup"><span data-stu-id="5ab8e-105">This article is part of the [Network planning and performance tuning for Microsoft 365](https://aka.ms/tune) project.</span></span>
+<span data-ttu-id="192fb-105">Este artículo forma parte del proyecto Planeación de red y ajuste del rendimiento [para Microsoft 365.](./network-planning-and-performance.md)</span><span class="sxs-lookup"><span data-stu-id="192fb-105">This article is part of the [Network planning and performance tuning for Microsoft 365](./network-planning-and-performance.md) project.</span></span>
    
-## <a name="articles-about-fine-tuning-microsoft-365-and-office-365-performance"></a><span data-ttu-id="5ab8e-106">Artículos sobre cómo ajustar el rendimiento de Microsoft 365 y Office 365</span><span class="sxs-lookup"><span data-stu-id="5ab8e-106">Articles about fine tuning Microsoft 365 and Office 365 performance</span></span>
+## <a name="articles-about-fine-tuning-microsoft-365-and-office-365-performance"></a><span data-ttu-id="192fb-106">Artículos sobre cómo ajustar el rendimiento de Microsoft 365 y Office 365</span><span class="sxs-lookup"><span data-stu-id="192fb-106">Articles about fine tuning Microsoft 365 and Office 365 performance</span></span>
 
-<span data-ttu-id="5ab8e-107">Echa un vistazo a las 10 sugerencias principales para optimizar y solucionar problemas de conectividad de red de [Office 365](https://blogs.technet.microsoft.com/onthewire/2014/06/18/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity/) de Paul Collinge.</span><span class="sxs-lookup"><span data-stu-id="5ab8e-107">Take a look at the [top 10 tips for optimizing and troubleshooting your Office 365 network connectivity](https://blogs.technet.microsoft.com/onthewire/2014/06/18/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity/) by Paul Collinge.</span></span> 
+<span data-ttu-id="192fb-107">Echa un vistazo a las 10 sugerencias principales para optimizar y solucionar problemas de conectividad de red de [Office 365](/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity) de Paul Collinge.</span><span class="sxs-lookup"><span data-stu-id="192fb-107">Take a look at the [top 10 tips for optimizing and troubleshooting your Office 365 network connectivity](/archive/blogs/onthewire/top-10-tips-for-optimising-troubleshooting-your-office-365-network-connectivity) by Paul Collinge.</span></span> 
   
-<span data-ttu-id="5ab8e-108">Para obtener información acerca del uso de la traducción de direcciones de red con Microsoft 365, consulte [compatibilidad con NAT con Microsoft 365.](nat-support-with-microsoft-365.md)</span><span class="sxs-lookup"><span data-stu-id="5ab8e-108">For information about using network address translation with Microsoft 365, see [NAT support with Microsoft 365](nat-support-with-microsoft-365.md).</span></span>
-  
-
+<span data-ttu-id="192fb-108">Para obtener información acerca del uso de la traducción de direcciones de red con Microsoft 365, vea [Compatibilidad con NAT con Microsoft 365](nat-support-with-microsoft-365.md).</span><span class="sxs-lookup"><span data-stu-id="192fb-108">For information about using network address translation with Microsoft 365, see [NAT support with Microsoft 365](nat-support-with-microsoft-365.md).</span></span>
