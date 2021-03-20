@@ -25,48 +25,46 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Aprende a comprobar que la configuración de protección de aplicaciones de Microsoft 365 para empresas ha tenido efecto en los dispositivos Windows 10 de los usuarios.
-ms.openlocfilehash: 39aee3bc811cb0090d58f9a282de7a8162c097b3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Obtén información sobre cómo comprobar que la configuración de protección de aplicaciones de Microsoft 365 para empresas ha tenido efecto en los dispositivos Windows 10 de los usuarios.
+ms.openlocfilehash: ff99b3a4fce49aebdb5c72f51e46678a7821e186
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403598"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912422"
 ---
-# <a name="validate-device-protection-settings-on-windows-10-pcs"></a><span data-ttu-id="466cd-103">Validar la configuración de protección de dispositivos en equipos con Windows 10</span><span class="sxs-lookup"><span data-stu-id="466cd-103">Validate device protection settings on Windows 10 PCs</span></span>
+# <a name="validate-device-protection-settings-on-windows-10-pcs"></a><span data-ttu-id="13d99-103">Validar la configuración de protección de dispositivos en equipos con Windows 10</span><span class="sxs-lookup"><span data-stu-id="13d99-103">Validate device protection settings on Windows 10 PCs</span></span>
 
-## <a name="verify-that-windows-10-device-policies-are-set"></a><span data-ttu-id="466cd-104">Comprobar que las directivas de dispositivo de Windows 10 están establecidas</span><span class="sxs-lookup"><span data-stu-id="466cd-104">Verify that Windows 10 device policies are set</span></span>
+## <a name="verify-that-windows-10-device-policies-are-set"></a><span data-ttu-id="13d99-104">Comprobar que las directivas de dispositivo de Windows 10 están establecidas</span><span class="sxs-lookup"><span data-stu-id="13d99-104">Verify that Windows 10 device policies are set</span></span>
 
-<span data-ttu-id="466cd-105">Después de [configurar las directivas de dispositivos,](protection-settings-for-windows-10-pcs.md)la directiva puede tardar hasta unas horas en tener efecto en los dispositivos de los usuarios.</span><span class="sxs-lookup"><span data-stu-id="466cd-105">After you [set up devices policies](protection-settings-for-windows-10-pcs.md), it may take up to a few hours for the policy to take effect on users' devices.</span></span> <span data-ttu-id="466cd-106">Para confirmar que las directivas se han hecho efectivas, mira varias pantallas de configuración de Windows en los dispositivos de los usuarios.</span><span class="sxs-lookup"><span data-stu-id="466cd-106">You can confirm that the policies took effect by looking at various Windows Settings screens on the users' devices.</span></span> <span data-ttu-id="466cd-107">Dado que los usuarios no podrán modificar la configuración de Windows Update y antivirus de Windows Defender en sus dispositivos Windows 10, muchas opciones aparecerán atenuadas.</span><span class="sxs-lookup"><span data-stu-id="466cd-107">Because the users won't be able to modify the Windows Update and Windows Defender Antivirus settings on their Windows 10 devices, many options will be grayed out.</span></span>
+<span data-ttu-id="13d99-105">Después de [configurar directivas de dispositivos,](protection-settings-for-windows-10-pcs.md)la directiva puede tardar hasta unas horas en tener efecto en los dispositivos de los usuarios.</span><span class="sxs-lookup"><span data-stu-id="13d99-105">After you [set up devices policies](protection-settings-for-windows-10-pcs.md), it may take up to a few hours for the policy to take effect on users' devices.</span></span> <span data-ttu-id="13d99-106">Puedes confirmar que las directivas se han hecho efectivas si ves varias pantallas de configuración de Windows en los dispositivos de los usuarios.</span><span class="sxs-lookup"><span data-stu-id="13d99-106">You can confirm that the policies took effect by looking at various Windows Settings screens on the users' devices.</span></span> <span data-ttu-id="13d99-107">Dado que los usuarios no podrán modificar la configuración de Windows Update y Windows Defender Antivirus en sus dispositivos Windows 10, muchas opciones se atenuarán.</span><span class="sxs-lookup"><span data-stu-id="13d99-107">Because the users won't be able to modify the Windows Update and Windows Defender Antivirus settings on their Windows 10 devices, many options will be grayed out.</span></span>
   
-1. <span data-ttu-id="466cd-108">Ve a Opciones **de** seguridad de Actualización de configuración de Reinicio de Windows \> **&amp;** \> **Update** y confirma que \>  todas las opciones están atenuadas.</span><span class="sxs-lookup"><span data-stu-id="466cd-108">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Restart options** and confirm that all settings are grayed out.</span></span> 
+1. <span data-ttu-id="13d99-108">Ve a **Configuración Actualizar** seguridad Opciones de reinicio de Windows Update y confirma que todas las opciones \> **&amp;** están \>  \>  atenuadas.</span><span class="sxs-lookup"><span data-stu-id="13d99-108">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Restart options** and confirm that all settings are grayed out.</span></span> 
     
-    ![Todas las opciones de reinicio están atenuadas.](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
+    ![Todas las opciones reiniciar están atenuadas.](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. <span data-ttu-id="466cd-110">Ve a Opciones **avanzadas de** Windows Update de seguridad de La actualización de configuración y confirma que todas las opciones \> **&amp;** están \>  \>  atenuadas.</span><span class="sxs-lookup"><span data-stu-id="466cd-110">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** and confirm that all settings are grayed out.</span></span> 
+2. <span data-ttu-id="13d99-110">Ve a **Configuración** Actualizar seguridad Opciones avanzadas de Windows Update y confirma que todas las opciones \> **&amp;** \>  \>  están atenuadas.</span><span class="sxs-lookup"><span data-stu-id="13d99-110">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** and confirm that all settings are grayed out.</span></span> 
     
-    ![Todas las opciones de actualizaciones avanzadas de Windows están atenuadas.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Las opciones de actualizaciones avanzadas de Windows están atenuadas.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
-3. <span data-ttu-id="466cd-112">Ve a Opciones **avanzadas** de Windows Update \> **&amp; de** seguridad de La actualización \>  \> **de configuración** \> **Elige cómo se entregan las actualizaciones.**</span><span class="sxs-lookup"><span data-stu-id="466cd-112">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.</span></span>
+3. <span data-ttu-id="13d99-112">Ve a **Configuración** Actualizar seguridad Opciones avanzadas de Windows \> **&amp;** \> **Update** \>  \> **Elegir cómo se entregan las actualizaciones.**</span><span class="sxs-lookup"><span data-stu-id="13d99-112">Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.</span></span>
     
-    <span data-ttu-id="466cd-113">Confirme que puede ver el mensaje (en rojo) en el que se indica que algunas opciones de configuración están ocultas o administradas por su organización y que todas las opciones están atenuadas.</span><span class="sxs-lookup"><span data-stu-id="466cd-113">Confirm that you can see the message (in red) that some settings are hidden or managed by your organization, and all the options are grayed out.</span></span>
+    <span data-ttu-id="13d99-113">Confirme que puede ver el mensaje (en rojo) de que algunas opciones de configuración están ocultas o administradas por la organización y todas las opciones están atenuadas.</span><span class="sxs-lookup"><span data-stu-id="13d99-113">Confirm that you can see the message (in red) that some settings are hidden or managed by your organization, and all the options are grayed out.</span></span>
     
     ![Elegir cómo se entregan las actualizaciones en la página indica que la configuración está oculta o administrada por la organización.](../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. <span data-ttu-id="466cd-115">Para abrir el Centro de seguridad  Windows Defender, vaya a Configuración de actualización de seguridad Windows Defender haga clic en Abrir \> **&amp;** \>  \> **Windows Defender** \> **Protección &amp;** \> **&amp;** antivirus del Centro de seguridad.</span><span class="sxs-lookup"><span data-stu-id="466cd-115">To open the Windows Defender Security Center, go to **Settings** \> **Update &amp; security** \> **Windows Defender** \> click **Open Windows Defender Security Center** \> **Virus &amp; thread protection** \> **Virus &amp; threat protection settings**.</span></span> 
+4. <span data-ttu-id="13d99-115">Para abrir el Centro Windows Defender seguridad,  vaya a Configuración Actualizar seguridad Windows Defender haga clic en Abrir Windows Defender Protección contra virus del Centro de seguridad Configuración de protección contra amenazas \> **&amp;** \>  \>  \> **&amp;** \> **&amp; de virus**.</span><span class="sxs-lookup"><span data-stu-id="13d99-115">To open the Windows Defender Security Center, go to **Settings** \> **Update &amp; security** \> **Windows Defender** \> click **Open Windows Defender Security Center** \> **Virus &amp; thread protection** \> **Virus &amp; threat protection settings**.</span></span> 
     
-5. <span data-ttu-id="466cd-116">Compruebe que todas las opciones están atenuadas.</span><span class="sxs-lookup"><span data-stu-id="466cd-116">Verify that all options are grayed out.</span></span> 
+5. <span data-ttu-id="13d99-116">Compruebe que todas las opciones están atenuadas.</span><span class="sxs-lookup"><span data-stu-id="13d99-116">Verify that all options are grayed out.</span></span> 
     
     ![La configuración de protección contra virus y amenazas está atenuada.](../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
-## <a name="related-topics"></a><span data-ttu-id="466cd-118">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="466cd-118">Related Topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="13d99-118">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="13d99-118">Related Topics</span></span>
 
-[<span data-ttu-id="466cd-119">Documentación y recursos de Microsoft 365 para empresas</span><span class="sxs-lookup"><span data-stu-id="466cd-119">Microsoft 365 for business documentation and resources</span></span>](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[<span data-ttu-id="13d99-119">Documentación y recursos de Microsoft 365 para empresas</span><span class="sxs-lookup"><span data-stu-id="13d99-119">Microsoft 365 for business documentation and resources</span></span>](./index.yml)
   
-[<span data-ttu-id="466cd-120">Introducción a Microsoft 365 para empresas</span><span class="sxs-lookup"><span data-stu-id="466cd-120">Get started with Microsoft 365 for business</span></span>](microsoft-365-business-overview.md)
+[<span data-ttu-id="13d99-120">Introducción a Microsoft 365 para empresas</span><span class="sxs-lookup"><span data-stu-id="13d99-120">Get started with Microsoft 365 for business</span></span>](microsoft-365-business-overview.md)
   
-[<span data-ttu-id="466cd-121">Administrar Microsoft 365 para empresas</span><span class="sxs-lookup"><span data-stu-id="466cd-121">Manage Microsoft 365 for business</span></span>](manage.md)
+[<span data-ttu-id="13d99-121">Administrar Microsoft 365 para empresas</span><span class="sxs-lookup"><span data-stu-id="13d99-121">Manage Microsoft 365 for business</span></span>](manage.md)
   
-[<span data-ttu-id="466cd-122">Establecer configuraciones de dispositivo para equipos PC con Windows 10</span><span class="sxs-lookup"><span data-stu-id="466cd-122">Set device configurations for Windows 10 PCs</span></span>](protection-settings-for-windows-10-pcs.md)
-  
-
+[<span data-ttu-id="13d99-122">Establecer configuraciones de dispositivo para equipos PC con Windows 10</span><span class="sxs-lookup"><span data-stu-id="13d99-122">Set device configurations for Windows 10 PCs</span></span>](protection-settings-for-windows-10-pcs.md)
