@@ -18,12 +18,12 @@ ms.custom:
 - commerce
 search.appverid:
 - MET150
-ms.openlocfilehash: c1715d2420315c6e645303c959512a45d47fddfe
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: bf3f79e425b3f7cd86f1a5ab95a337ef5127e345
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759215"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911477"
 ---
 # <a name="manage-auto-claim-policies"></a>Administrar directivas de notificación automática
 
@@ -43,7 +43,7 @@ Después de crear una directiva de notificación automática, puede realizar las
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global, de facturación o de usuario para crear y administrar directivas de notificación automática. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global para crear y administrar directivas de notificación automática. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>Activar o desactivar la característica de directiva de notificación automática
 
@@ -154,7 +154,7 @@ Si tienes productos de copia de seguridad asignados a la directiva, puedes cambi
 2. Seleccione **Ver informe**. La **página Informe de directiva de notificación** automática enumera todas las licencias asignadas de cada directiva en los últimos 90 días. De forma predeterminada, la página muestra los últimos 90 días.
 3. Para cambiar el período de tiempo que se muestra, seleccione la **lista desplegable Pasados 30** días. Puede ver informes de los últimos 1, 7, 30 y 90 días.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Puede volver periódicamente a la pestaña **Directiva** de notificación automática para ver una lista de usuarios que han reclamado licencias en las directivas que creó.
 

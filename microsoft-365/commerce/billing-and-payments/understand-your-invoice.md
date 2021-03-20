@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 description: Obtenga información acerca de cómo leer y comprender su factura o recibo de productos empresariales de Microsoft.
 keywords: cuentas de facturación, información de la organización, facturas
-ms.openlocfilehash: 521ef49e7f2292f8ea09210fb0edcce0d56e1b76
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 2b11cca810b17ae2dacc3ddab723725608ffceb5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126578"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911703"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Entender su factura o recibo
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -60,13 +60,13 @@ El **Resumen de facturación** muestra el resumen de los cargos desde el períod
 | --- | --- |
 | Cargos|El número total de productos comprados para este periodo de facturación con sus impuestos y tarifas correspondientes. Las compras se suman para ofrecer una vista concisa de la factura. |
 | Créditos |Créditos recibidos por devoluciones |
-| Créditos de Azure aplicados |Los créditos de Azure que se aplican automáticamente a los cargos de Azure en cada período de facturación. Si no tiene ningún crédito de Azure, este campo permanece oculto. Para obtener más información sobre los créditos de Azure, consulte [Realizar seguimiento del saldo crediticio de Azure del Contrato de cliente de Microsoft](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance). |
+| Créditos de Azure aplicados |Los créditos de Azure que se aplican automáticamente a los cargos de Azure en cada período de facturación. Si no tiene ningún crédito de Azure, este campo permanece oculto. Para obtener más información sobre los créditos de Azure, consulte [Realizar seguimiento del saldo crediticio de Azure del Contrato de cliente de Microsoft](/azure/billing/billing-mca-check-azure-credits-balance). |
 | Subtotal |El monto adeudado antes de los impuestos |
 | Impuestos |El tipo y la cantidad de impuestos que paga de acuerdo con el país del perfil de facturación. Si no tiene que pagar impuestos, no se mostrará ningún impuesto en la factura. |
 
 ### <a name="understand-your-charges"></a>Entender los cargos
 
-Las páginas de los cargos muestran el costo desglosado por producto. Para los clientes de Azure, los cargos podrían estar organizados por sección de la factura. Para obtener más información sobre cómo se usan las secciones de la factura con los productos de Azure, consulte [Secciones de la factura](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) en [Introducción a su cuenta de facturación de Contrato de cliente de Microsoft](https://docs.microsoft.com/azure/billing/billing-mca-overview). En cada orden de producto, el costo se desglosa por familia de servicios.
+Las páginas de los cargos muestran el costo desglosado por producto. Para los clientes de Azure, los cargos podrían estar organizados por sección de la factura. Para obtener más información sobre cómo se usan las secciones de la factura con los productos de Azure, consulte [Secciones de la factura](/azure/billing/billing-mca-overview#invoice-sections) en [Introducción a su cuenta de facturación de Contrato de cliente de Microsoft](/azure/billing/billing-mca-overview). En cada orden de producto, el costo se desglosa por familia de servicios.
 
 | Término |Descripción |
 | --- | --- |
@@ -86,7 +86,7 @@ El monto total adeudado por cada familia de servicios se calcula al restar los c
 
 > Total = Cargos/créditos - Crédito de Azure + impuestos
 
-Si hay cargos de Azure en su factura de los cuales desea obtener más información, consulte [Revisar la factura del Contrato de cliente de Microsoft](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
+Si hay cargos de Azure en su factura de los cuales desea obtener más información, consulte [Revisar la factura del Contrato de cliente de Microsoft](/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
 ## <a name="understand-the-last-invoice-page"></a>Entender la última página de la factura
 

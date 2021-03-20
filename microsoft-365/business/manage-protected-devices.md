@@ -27,17 +27,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
-description: Aprende a quitar datos de la empresa de dispositivos administrados a través de directivas de protección, así como a restablecer los dispositivos Windows 10 a su configuración de fábrica.
-ms.openlocfilehash: 88311a2cf08ee0b1ceb4ef3eb599efe5ebccdb05
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+description: Aprende a quitar los datos de la empresa de dispositivos administrados a través de directivas de protección, así como a restablecer los dispositivos Windows 10 a la configuración de fábrica.
+ms.openlocfilehash: 8c5472eada4cded3a6869c031ab902928876095f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101629"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913222"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Administrar dispositivos protegidos con Microsoft 365 Empresa Premium
 
-Después de que un usuario conecte su dispositivo a su organización iniciando sesión con su cuenta de trabajo en el dispositivo o en las aplicaciones de Office del dispositivo, puede proteger el dispositivo con las directivas que configure. Los dispositivos conectados aparecen en la **página Dispositivos.** En caso de la pérdida o robo de un dispositivo, podrá administrarlo desde esta página para eliminar los datos de la compañía. También puede restablecer a su configuración de fábrica los dispositivos con Windows 10 para borrar la configuración personalizada. 
+Después de que un usuario conecte su dispositivo a la organización iniciando sesión con su cuenta de trabajo en el dispositivo o con las aplicaciones de Office en el dispositivo, puede proteger el dispositivo con las directivas configuradas. Los dispositivos conectados aparecen en la **página Dispositivos.** En caso de la pérdida o robo de un dispositivo, podrá administrarlo desde esta página para eliminar los datos de la compañía. También puede restablecer a su configuración de fábrica los dispositivos con Windows 10 para borrar la configuración personalizada. 
 
 Para obtener más información sobre las tareas que puedes usar para administrar dispositivos, consulta estos artículos: 
   
@@ -45,6 +45,4 @@ Para obtener más información sobre las tareas que puedes usar para administrar
   
 [Restablecer a su configuración de fábrica dispositivos con Windows 10](reset-devices-to-factory-settings.md)
 
-[Agregar un dispositivo administrado](https://docs.microsoft.com/microsoft-365/business/app-protection-settings-for-android-and-ios)
-  
-
+[Agregar un dispositivo administrado](./app-protection-settings-for-android-and-ios.md)

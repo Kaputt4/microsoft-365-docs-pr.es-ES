@@ -12,13 +12,13 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Obtenga información sobre cómo configurar la búsqueda en un entorno multigemico. Solo algunos clientes, como OneDrive para la Empresa, pueden devolver resultados en un entorno multige geográfico.
-ms.openlocfilehash: e213e93cfbc967a723b4d27f4b36a83fe6687da9
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+description: Obtenga información sobre cómo configurar la búsqueda en un entorno multige geográfico. Solo algunos clientes, como OneDrive para la Empresa, pueden devolver resultados en un entorno multigeónico.
+ms.openlocfilehash: b3a96b1d0652cb954c58ae410583befa078460d9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547157"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911167"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurar la búsqueda para Microsoft 365 Multi-Geo
 
@@ -84,7 +84,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, f
 <tr class="odd">
 <td align="left"></td>
 <td align="left">La búsqueda multigeográfica no admite la creación dinámica de cubos para refinadores numéricos.</td>
-<td align="left">Use el <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">parámetro "Discretize" para</a> refinadores numéricos.</td>
+<td align="left">Use el <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">parámetro "Discretize" para</a> refinadores numéricos.</td>
 </tr>
 <tr class="even">
 <td align="left">Identificadores de documento</td>
@@ -98,7 +98,7 @@ Algunas características de búsqueda con las que tal vez esté familiarizado, f
 </tr>
 <tr class="even">
 <td align="left">Búsqueda híbrida</td>
-<td align="left">En un entorno de SharePoint híbrido con <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">búsqueda de nube híbrida</a>, el contenido local se agrega al índice de Microsoft 365 de la ubicación central.</td>
+<td align="left">En un entorno de SharePoint híbrido con <a href="/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">búsqueda de nube híbrida</a>, el contenido local se agrega al índice de Microsoft 365 de la ubicación central.</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -168,7 +168,7 @@ Cada Centro de búsqueda tiene varios sectores verticales y hay que configurar i
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Obtener aplicaciones de búsqueda personalizada que muestren los resultados de todas o algunas de las ubicaciones geográficas
 
-Las aplicaciones de búsqueda personalizada obtienen resultados de todas o algunas de las ubicaciones geográficas especificando parámetros de consulta con la solicitud a la API REST de SharePoint Search. En función de los parámetros de consulta, se efectúa una distribución ramificada de la consulta a todas o a algunas de las ubicaciones geográficas. Por ejemplo, si solo tiene que consultar un subconjunto de las ubicaciones geográficas para encontrar información relevante, puede controlar la distribución ramificada a solo estas. Si la solicitud se realiza correctamente, la API REST de SharePoint Search devuelve datos de respuesta.
+Las aplicaciones de búsqueda personalizadas obtienen resultados de todas o algunas ubicaciones geográficas especificando parámetros de consulta con la solicitud a la API de REST de Búsqueda de SharePoint. Según los parámetros de consulta, la consulta se abate a todas las ubicaciones geográficas o a algunas ubicaciones geográficas. Por ejemplo, si solo necesita consultar un subconjunto de ubicaciones geográficas para encontrar información relevante, puede controlar el ventilador solo a estas. Si la solicitud se realiza correctamente, la API de REST de Búsqueda de SharePoint devuelve datos de respuesta.
 
 ### <a name="requirement"></a>Requisito
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration: lista opcional de las ubicaciones geográficas del 
 </tbody>
 </table>
 
-Si omite DataLocation o EndPoint, o si una DataLocation se duplica, la solicitud no se realiza. [Puede obtener información sobre el punto de conexión de las ubicaciones geográficas de un espacio empresarial con Microsoft Graph](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-discovery).
+Si omite DataLocation o EndPoint, o si una DataLocation se duplica, la solicitud no se realiza. [Puede obtener información sobre el punto de conexión de las ubicaciones geográficas de un espacio empresarial con Microsoft Graph](/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>Datos de respuesta
 

@@ -25,35 +25,35 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Aprende a comprobar que la configuración de protección de aplicaciones de Microsoft 365 para empresas ha tenido efecto en los dispositivos Windows 10 de los usuarios.
-ms.openlocfilehash: 39aee3bc811cb0090d58f9a282de7a8162c097b3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Obtén información sobre cómo comprobar que la configuración de protección de aplicaciones de Microsoft 365 para empresas ha tenido efecto en los dispositivos Windows 10 de los usuarios.
+ms.openlocfilehash: ff99b3a4fce49aebdb5c72f51e46678a7821e186
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403598"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912422"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Validar la configuración de protección de dispositivos en equipos con Windows 10
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>Comprobar que las directivas de dispositivo de Windows 10 están establecidas
 
-Después de [configurar las directivas de dispositivos,](protection-settings-for-windows-10-pcs.md)la directiva puede tardar hasta unas horas en tener efecto en los dispositivos de los usuarios. Para confirmar que las directivas se han hecho efectivas, mira varias pantallas de configuración de Windows en los dispositivos de los usuarios. Dado que los usuarios no podrán modificar la configuración de Windows Update y antivirus de Windows Defender en sus dispositivos Windows 10, muchas opciones aparecerán atenuadas.
+Después de [configurar directivas de dispositivos,](protection-settings-for-windows-10-pcs.md)la directiva puede tardar hasta unas horas en tener efecto en los dispositivos de los usuarios. Puedes confirmar que las directivas se han hecho efectivas si ves varias pantallas de configuración de Windows en los dispositivos de los usuarios. Dado que los usuarios no podrán modificar la configuración de Windows Update y Windows Defender Antivirus en sus dispositivos Windows 10, muchas opciones se atenuarán.
   
-1. Ve a Opciones **de** seguridad de Actualización de configuración de Reinicio de Windows \> **&amp;** \> **Update** y confirma que \>  todas las opciones están atenuadas. 
+1. Ve a **Configuración Actualizar** seguridad Opciones de reinicio de Windows Update y confirma que todas las opciones \> **&amp;** están \>  \>  atenuadas. 
     
-    ![Todas las opciones de reinicio están atenuadas.](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
+    ![Todas las opciones reiniciar están atenuadas.](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. Ve a Opciones **avanzadas de** Windows Update de seguridad de La actualización de configuración y confirma que todas las opciones \> **&amp;** están \>  \>  atenuadas. 
+2. Ve a **Configuración** Actualizar seguridad Opciones avanzadas de Windows Update y confirma que todas las opciones \> **&amp;** \>  \>  están atenuadas. 
     
-    ![Todas las opciones de actualizaciones avanzadas de Windows están atenuadas.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Las opciones de actualizaciones avanzadas de Windows están atenuadas.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
-3. Ve a Opciones **avanzadas** de Windows Update \> **&amp; de** seguridad de La actualización \>  \> **de configuración** \> **Elige cómo se entregan las actualizaciones.**
+3. Ve a **Configuración** Actualizar seguridad Opciones avanzadas de Windows \> **&amp;** \> **Update** \>  \> **Elegir cómo se entregan las actualizaciones.**
     
-    Confirme que puede ver el mensaje (en rojo) en el que se indica que algunas opciones de configuración están ocultas o administradas por su organización y que todas las opciones están atenuadas.
+    Confirme que puede ver el mensaje (en rojo) de que algunas opciones de configuración están ocultas o administradas por la organización y todas las opciones están atenuadas.
     
     ![Elegir cómo se entregan las actualizaciones en la página indica que la configuración está oculta o administrada por la organización.](../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. Para abrir el Centro de seguridad  Windows Defender, vaya a Configuración de actualización de seguridad Windows Defender haga clic en Abrir \> **&amp;** \>  \> **Windows Defender** \> **Protección &amp;** \> **&amp;** antivirus del Centro de seguridad. 
+4. Para abrir el Centro Windows Defender seguridad,  vaya a Configuración Actualizar seguridad Windows Defender haga clic en Abrir Windows Defender Protección contra virus del Centro de seguridad Configuración de protección contra amenazas \> **&amp;** \>  \>  \> **&amp;** \> **&amp; de virus**. 
     
 5. Compruebe que todas las opciones están atenuadas. 
     
@@ -61,12 +61,10 @@ Después de [configurar las directivas de dispositivos,](protection-settings-for
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Documentación y recursos de Microsoft 365 para empresas](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Documentación y recursos de Microsoft 365 para empresas](./index.yml)
   
 [Introducción a Microsoft 365 para empresas](microsoft-365-business-overview.md)
   
 [Administrar Microsoft 365 para empresas](manage.md)
   
 [Establecer configuraciones de dispositivo para equipos PC con Windows 10](protection-settings-for-windows-10-pcs.md)
-  
-

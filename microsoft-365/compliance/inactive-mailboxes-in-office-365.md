@@ -20,12 +20,12 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo conservar el contenido del buzón de correo para antiguos empleados convirtiendo el buzón en un buzón inactivo.
-ms.openlocfilehash: 7a10b3327dda148c3328f53826a81464b86a7a0a
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 6aeb10f1557a991523b60b8e8e85a99fc61f4b87
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423621"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911256"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>Información general sobre buzones inactivos
 
@@ -71,7 +71,7 @@ Es posible que considere la posibilidad de crear una directiva de retención de 
 
 Si una retención asociada a un caso de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento de & se coloca en un buzón y, a continuación, se elimina el buzón o la cuenta del usuario, el buzón se convierte en un buzón inactivo. Sin embargo, no recomendamos usar retenciones de casos de exhibición de documentos electrónicos para hacer que un buzón sea inactivo. Esto se debe a que los casos de exhibición de documentos electrónicos están destinados a casos específicos con límite de tiempo relacionados con un problema legal. En algún momento, un caso legal probablemente finalizará y se quitarán las retenciones asociadas al caso y se cerrará el caso de exhibición de documentos electrónicos. De hecho, si una retención que se coloca en un buzón inactivo está asociada a un caso de exhibición de documentos electrónicos y, a continuación, la retención se libera o el caso de exhibición de documentos electrónicos se cierra (o elimina), el buzón inactivo se eliminará permanentemente. Además, no puede crear una retención de exhibición de documentos electrónicos basada en tiempo. Esto significa que el contenido de un buzón inactivo se conserva para siempre o hasta que se quita la retención y se elimina el buzón inactivo. Por lo tanto, se recomienda usar una retención por juicio o una directiva de retención para buzones inactivos.
 
-Para obtener más información acerca de los casos y las retenciones de exhibición de documentos electrónicos, vea [casos de exhibición de documentos electrónicos](ediscovery-cases.md).
+Para obtener más información acerca de los casos y las retenciones de exhibición de documentos electrónicos, vea [casos de exhibición de documentos electrónicos](./get-started-core-ediscovery.md).
 
 ## <a name="inactive-mailboxes-and-labels"></a>Buzones y etiquetas inactivos
 

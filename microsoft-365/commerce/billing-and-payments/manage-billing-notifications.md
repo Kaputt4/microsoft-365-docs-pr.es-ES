@@ -1,5 +1,5 @@
 ---
-title: Administrar notificaciones de facturación y datos adjuntos de facturación
+title: Administrar las notificaciones de facturación y los datos adjuntos en las facturas
 f1.keywords:
 - CSH
 ms.author: cmcatee
@@ -19,20 +19,20 @@ ms.custom:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo administrar quién recibe correos electrónicos de notificación de facturación y datos adjuntos de facturación.
-ms.openlocfilehash: f0811c5d027d042b5114c9e05c698dab1e08763b
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 8997a4d3ca575c60214adbedccc018e6768850cd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515232"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911859"
 ---
-# <a name="manage-billing-notifications-and-invoice-attachments"></a>Administrar notificaciones de facturación y datos adjuntos de facturación
+# <a name="manage-billing-notifications-and-invoice-attachments"></a>Administrar las notificaciones de facturación y los datos adjuntos en las facturas
 
 La **página Notificaciones de facturación** le permite administrar quién recibe correos electrónicos de notificación de facturación de su organización. La página también proporciona la opción de recibir las facturas de su organización [como datos adjuntos de correo electrónico.](#receive-your-organizations-invoices-as-email-attachments)
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global para realizar los pasos descritos en este artículo. Los administradores de facturación pueden realizar algunos de estos cambios, como se indica en las secciones siguientes. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global para realizar los pasos descritos en este artículo. Los administradores de facturación pueden realizar algunos de estos cambios, como se indica en las secciones siguientes. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="change-the-language-you-receive-email-in"></a>Cambiar el idioma en el que recibe el correo electrónico
 
@@ -56,7 +56,7 @@ Las notificaciones de facturación de su organización se envían a la direcció
 3. En el panel derecho, en la **pestaña Administradores asignados,** seleccione **Agregar**.
 4. En el **panel Agregar administradores,** escriba el nombre para mostrar o el nombre de usuario del usuario y, a continuación, seleccione el usuario en la lista de sugerencias.
 5. Agregue varios usuarios hasta que haya terminado.
-6. Haga clic en **Guardar**. El usuario se agrega a la lista de administradores asignados.
+6. Seleccione **Guardar**. El usuario se agrega a la lista de administradores asignados.
 
 ### <a name="remove-admin-roles-by-using-the-billing-notifications-page"></a>Quitar roles de administrador mediante la página Notificaciones de facturación
 
@@ -109,7 +109,7 @@ Los correos electrónicos de notificación de facturación se envían a las dire
 - Colaborador de perfiles de facturación
 - Administrador de facturas
 
-Para obtener más información sobre los roles de perfil de facturación y cómo administrarlos, vea [Understand Microsoft Customer Agreement administrative roles in Azure](https://docs.microsoft.com/azure/cost-management-billing/manage/understand-mca-roles).
+Para obtener más información sobre los roles de perfil de facturación y cómo administrarlos, vea [Understand Microsoft Customer Agreement administrative roles in Azure](/azure/cost-management-billing/manage/understand-mca-roles).
 
 Para cambiar quién recibe las notificaciones de facturación de su organización, siga estos pasos para cambiar los roles asignados a los usuarios.
 

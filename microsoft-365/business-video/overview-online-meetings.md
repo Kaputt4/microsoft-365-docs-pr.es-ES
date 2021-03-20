@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo hospedar reuniones en línea para su empresa.
-ms.openlocfilehash: 18a142700e8b83545219ddabf17be7d562037140
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 85163990d65126cc3d9d6c11627e63aa975b2924
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422320"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913615"
 ---
 # <a name="host-online-meetings-for-your-business"></a>Hospedar reuniones en línea para su empresa
 
@@ -75,7 +75,7 @@ Puedes convertir fácilmente un chat en Microsoft Teams en una reunión. Solo ti
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Reuniones en Microsoft Teams](https://docs.microsoft.com/microsoftteams/tutorial-meetings-in-teams)
+[Reuniones en Microsoft Teams](/microsoftteams/tutorial-meetings-in-teams)
 
 [6 formas de hacer más eficientes las reuniones virtuales](https://products.office.com/en-us/business/articles/6-ways-to-make-virtual-meetings-more-efficient)
 

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: Obtenga información sobre los requisitos para configurar su organización con Microsoft 365 para empresas y proteger los datos de trabajo en los dispositivos de los usuarios.
-ms.openlocfilehash: 237825d2c2683bb6e71ae2fd31f8a25b1aa85ff7
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: c0fca0e038d15b19cb2a37eb5705296ed3da3746
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785900"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912910"
 ---
 # <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-for-business"></a>Requisitos previos para proteger datos en dispositivos con Microsoft 365 para empresas
 
@@ -43,10 +43,10 @@ El primer paso para configurar su organización con Microsoft 365 para empresas 
     
     Si estás ejecutando Windows 10 Home, debes **comprar** Windows 10 Pro. Consulta [actualizar Windows 10 Home a Windows 10 Pro](https://support.microsoft.com/office/0aee10c1-4d34-43ee-a325-579c6c2df90e) para obtener instrucciones. 
     
-- Quitar dispositivos de soluciones de administración de dispositivos móviles (Mobile Iron, AirWatch, entre otros). Inscribirá a todas las personas de su organización en la administración móvil de Microsoft 365 para empresas.
+- Quite los dispositivos de las soluciones de administración móvil (Mobile Iron, AirWatch, y así sucesivamente). Inscribirá a todas las personas de su organización en Microsoft 365 para la administración móvil empresarial.
     
 - Apple iOS 8.0 y versiones posteriores.
     
-    Google Android 4.0 y versiones posteriores (incluido Samsung KNOX Standard 4.0 y versiones superiores). Para obtener más información, vea [dispositivos compatibles con Intune.](https://go.microsoft.com/fwlink/p/?linkid=852307)
+    Google Android 4.0 y versiones posteriores (incluido Samsung KNOX Standard 4.0 y versiones superiores). Para obtener más información, consulta [Dispositivos compatibles con Intune.](/mem/intune/fundamentals/supported-devices-browsers)
     
-- Si tiene aplicaciones de Office existentes en los equipos de los usuarios, lea "Prepararse para la instalación del cliente de [Office"](prepare-for-office-client-deployment.md) para comprender los pasos que debe seguir antes de configurar Microsoft 365 para empresas para instalar Office 2016 en los equipos de los usuarios. 
+- Si tiene aplicaciones de Office existentes en equipos de usuario, lea Prepare [for Office client installation](prepare-for-office-client-deployment.md) to understand steps you might need to take before you can set up Microsoft 365 for business to install Office 2016 on user computers.

@@ -14,57 +14,57 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-description: Obtenga información sobre las opciones de pago disponibles para pagar la suscripción con un perfil de facturación.
+description: Obtén información sobre las opciones de pago disponibles para pagar tu suscripción con un perfil de facturación.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 15feb1b806b46d147d427256ce2416ea75b48bbe
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 750420b6fac8fff16130710ef96a9ceb6345a87a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50143192"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911835"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Cómo pagar la suscripción con un perfil de facturación
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
-Al comprar una suscripción, se paga con un perfil de facturación. El perfil de facturación está vinculado a un método de pago específico y puede ser una tarjeta de crédito o débito, o una factura, pero no una cuenta bancaria.
+Cuando compras una suscripción, pagas por ella con un perfil de facturación. El perfil de facturación está vinculado a un método de pago específico y puede ser una tarjeta de crédito o débito, o una factura, pero no una cuenta bancaria.
 
-Si no está seguro de si su cuenta tiene un perfil de facturación, consulte [Comprender los perfiles de facturación.](manage-billing-profiles.md) Si no tiene un perfil de facturación, consulte [Cómo pagar la suscripción.](pay-for-your-subscription.md)
+Si no está seguro de si su cuenta tiene un perfil de facturación, consulte [Información de perfiles de facturación](manage-billing-profiles.md). Si no tienes un perfil de facturación, consulta [How to pay for your subscription](pay-for-your-subscription.md).
 
 ## <a name="paying-with-recurring-billing-turned-on-or-off"></a>Pagar con facturación periódica activada o desactivada
 
-De forma predeterminada, la facturación periódica se activa automáticamente para todas las suscripciones de pago que usan facturación periódica. Cada período de facturación, cobramos automáticamente el método de pago asociado con el perfil de facturación para pagar las suscripciones que usan ese perfil de facturación. Si se rechaza el método de  pago, puedes usar el botón Pagar ahora en la factura para realizar un pago único para tu suscripción.
+De forma predeterminada, la facturación periódica se activa automáticamente para todas las suscripciones de pago que usan facturación periódica. Cada período de facturación, cobramos automáticamente el método de pago asociado con el perfil de facturación para pagar las suscripciones que usan ese perfil de facturación. Si se rechaza el método de  pago, puedes usar el botón Pagar ahora en la factura para realizar un pago único para la suscripción.
 
-Si la facturación periódica está desactivada para un  perfil de facturación, puedes usar el botón Pagar ahora de la factura para pagarla cada período de facturación, independientemente del método de pago que esté vinculado con el perfil de facturación. También puede pagar mediante cheque o transferencia electrónica de fondos (EFT). Las instrucciones para hacerlo se incluyen en la copia en PDF de la factura.
+Si la facturación periódica está desactivada para un  perfil de facturación, puedes usar el botón Pagar ahora de la factura para pagarla en cada período de facturación, independientemente del método de pago vinculado al perfil de facturación. También puede pagar mediante cheque o transferencia electrónica de fondos (EFT). Las instrucciones para hacerlo se incluyen en la copia PDF de la factura.
 
-## <a name="paying-by-invoice"></a>Pagar con factura
+## <a name="paying-by-invoice"></a>Pagar mediante factura
 
-Si tiene un perfil de facturación configurado para pagar con factura, puede pagar la suscripción con un cheque o EFT. También puedes usar una tarjeta de crédito para realizar un pago en línea mediante el botón **Pagar** ahora de la factura.
+Si tienes un perfil de facturación configurado para que se pague mediante factura, puedes pagar la suscripción con una comprobación o EFT. También puedes usar una tarjeta de crédito para realizar un pago en línea mediante el botón **Pagar ahora** de la factura.
 
-Para poder pagar mediante factura, debe:
+Para poder pagar con factura, debe:
 
 - Ser un cliente establecido
-- Tener un costo de suscripción que supere una cantidad determinada (esta cantidad varía según la ubicación del servicio)
+- Tener un coste de suscripción que supere una cantidad determinada (esta cantidad varía según la ubicación del servicio)
 - Pasar una comprobación de crédito
 
 Si se requiere una comprobación de crédito, se le notificará al comprar su suscripción. Si permite que nos pongamos en contacto con usted, recibirá un correo electrónico con más información sobre la solicitud de aprobación de crédito. Las comprobaciones de crédito se suelen completar en dos días laborables.
 
-Si el perfil de facturación está a favor de una factura, recibe un correo electrónico cuando el extracto de facturación está listo para ver. Este correo electrónico no contiene una copia del extracto de facturación. Pero también tiene la posibilidad de [recibir una copia del extracto de facturación por correo electrónico](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). El extracto de facturación incluye información sobre las opciones de pago, además de dónde debe enviarse. Si escribe un número de pedido de compra (PO) en su perfil de facturación, el número aparecerá en el extracto de facturación. Para información sobre cómo acceder a los extractos de facturación, vea [Ver su factura](view-your-bill-or-invoice.md).
+Si tu perfil de facturación está con el respaldo de una factura, recibes un correo electrónico cuando el extracto de facturación esté listo para ver. Este correo electrónico no contiene una copia del extracto de facturación. Pero también tiene la posibilidad de [recibir una copia del extracto de facturación por correo electrónico](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). El extracto de facturación incluye información sobre las opciones de pago, además de dónde debe enviarse. Si escribe un número de pedido de compra (PO) en su perfil de facturación, el número aparecerá en el extracto de facturación. Para información sobre cómo acceder a los extractos de facturación, vea [Ver su factura](view-your-bill-or-invoice.md).
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>¿Dónde envío mi cheque o pago por EFT?
 
-[Consulte las instrucciones de](view-your-bill-or-invoice.md) pago en la factura. También puedes usar la lista desplegable siguiente para encontrar instrucciones de pago para tu país. Si no está seguro de cuánto debe, puede comprobar el historial de facturación y facturación en línea en la pestaña **Facturas** de la página Facturas <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& pagos.</a>
+[Consulte la factura](view-your-bill-or-invoice.md) para ver las instrucciones de pago. También puede usar la lista desplegable siguiente para encontrar instrucciones de pago para su país. Si no está seguro de la cantidad que debe, puede comprobar su factura y el historial de facturación en línea en la pestaña **Facturas** de la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
 
 > [!NOTE]
-> El pago mediante cheque solo está disponible en algunos países.
+> El pago con cheque solo está disponible en algunos países.
 
  **Elija su país o región de facturación del menú desplegable siguiente.**
 
@@ -224,18 +224,18 @@ Si el perfil de facturación está a favor de una factura, recibe un correo elec
 
 ## <a name="can-i-pay-my-invoice-online"></a>¿Puedo pagar mi factura en línea?
 
-Si la facturación periódica está desactivada para su perfil de facturación, puede usar una tarjeta de crédito para pagar la factura en línea. Para realizar un pago, use el **botón Pagar ahora** en la factura en el Centro de administración de Microsoft 365. Para encontrar la factura, vea [Ver la factura.](view-your-bill-or-invoice.md)
+Si la facturación periódica está desactivada para tu perfil de facturación, puedes usar una tarjeta de crédito para pagar la factura en línea. Para realizar un pago, usa el **botón Pagar ahora** en tu factura en el Centro de administración de Microsoft 365. Para buscar la factura, vea [Ver la factura o factura](view-your-bill-or-invoice.md).
 
-## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>¿Puedo cambiar de mi método de pago actual a pagar mediante factura?
+## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>¿Puedo cambiar del método de pago actual al pago mediante factura?
 
-Si tu perfil de facturación está respaldo con tarjeta de crédito o débito, solo puedes cambiar el método de pago a otra tarjeta de crédito o débito. No puede cambiar a pagar mediante factura.
+Si tu perfil de facturación tiene el respaldo de una tarjeta de crédito o débito, solo puedes cambiar el método de pago a otra tarjeta de crédito o débito. No puedes cambiar a pagar por factura.
 
-## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>¿Puedo cambiar de pagar mediante factura a usar un método de pago diferente?
+## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>¿Puedo cambiar del pago con factura a otro método de pago?
 
-Si tu perfil de facturación está respaldo en los pagos de factura, no puedes cambiar el método de pago. Puedes usar el botón **Pagar ahora** en tu factura para pagar con una tarjeta de crédito o débito, o mediante cheque o EFT.
+Si el perfil de facturación tiene el respaldo de pagos de facturación, no puedes cambiar el método de pago. Puede usar el botón **Pagar ahora** en la factura para pagar con una tarjeta de crédito o débito, o mediante cheque o EFT.
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Administrar métodos de](manage-payment-methods.md) pago (artículo)\
-[Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)
-[Comprender la factura (artículo)](understand-your-invoice.md)
+[Administrar métodos de pago](manage-payment-methods.md) (artículo)\
+[Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)\
+[Entender su factura o recibo](understand-your-invoice.md) (artículo)

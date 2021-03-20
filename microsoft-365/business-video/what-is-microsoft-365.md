@@ -20,12 +20,12 @@ search.appverid:
 description: Información acerca de Microsoft 365 Empresa
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 2183c3c865b618d71e15b366f7eaed091101bbc7
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: b92e3790e83c5da62d65e6c98bf448d33862df54
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421628"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913543"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Empresa Premium
 
@@ -46,4 +46,4 @@ Cuando se suscribe a Microsoft 365 Empresa Premium, obtiene todas las mismas her
 | Proteger sus dispositivos | Para proteger los archivos de trabajo en dispositivos, restrinja el acceso móvil, como copiar y pegar. También puede borrar de forma selectiva los datos comerciales de los dispositivos móviles registrados en caso de pérdida o robo. |
 | Características de seguridad adicionales | Las características avanzadas de Microsoft 365 Empresa Premium están disponibles para ayudarle a proteger su empresa frente a amenazas cibernéticos y proteger la información confidencial. Entre las características se incluyen Office 365, la protección contra amenazas avanzada, las directivas de prevención de pérdida de datos (DLP), archivado de Exchange Online, Azure Information Protection y Intune. |
 
-Para obtener los detalles completos, consulte [Contenido de Microsoft 365 Empresa](https://docs.microsoft.com/microsoft-365/business/).
+Para obtener los detalles completos, consulte [Contenido de Microsoft 365 Empresa](../business/index.yml).

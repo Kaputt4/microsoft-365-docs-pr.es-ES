@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Aprende a habilitar Microsoft 365 para proteger dispositivos Windows 10 locales unidos a Active Directory en solo unos pasos.
-ms.openlocfilehash: 0b597110447272be128bfe1866234ac25a8e67e6
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 82d4ac3f1d6aba9489f9ea153de3a3d2083b47ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407086"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913202"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Habilitar dispositivos Windows 10 unidos a un dominio para que los administra Microsoft 365 Empresa Premium
 
@@ -78,7 +78,7 @@ Vaya a [Endpoint Manager y,](https://endpoint.microsoft.com/#blade/Microsoft_Int
 
 ## <a name="4-create-the-required-resources"></a>4. Crear los recursos necesarios 
 
-La realización de las tareas necesarias para configurar la combinación híbrida de [Azure AD](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) se ha simplificado mediante el uso del cmdlet [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) que se encuentra en el módulo [De PowerShell de SecMgmt.](https://www.powershellgallery.com/packages/SecMgmt) Al invocar este cmdlet, creará y configurará el punto de conexión de servicio y la directiva de grupo necesarios.
+La realización de las tareas necesarias para configurar la combinación híbrida de [Azure AD](/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) se ha simplificado mediante el uso del cmdlet [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) que se encuentra en el módulo [De PowerShell de SecMgmt.](https://www.powershellgallery.com/packages/SecMgmt) Al invocar este cmdlet, creará y configurará el punto de conexión de servicio y la directiva de grupo necesarios.
 
 Puede instalar este módulo invocando lo siguiente desde una instancia de PowerShell:
 

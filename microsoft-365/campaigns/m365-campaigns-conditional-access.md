@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo requerir MFA y configurar directivas de acceso condicional para Microsoft 365 para empresas.
-ms.openlocfilehash: e16b7f4ff7d215ee749435806be214a807cc60a4
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: dcb79ed060dd15fd288cdcfb9e3739a788f5fbc2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453674"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912191"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Requerir autenticación multifactor y configurar directivas de acceso condicional
 
@@ -48,7 +48,7 @@ Actualmente, las directivas de línea base incluyen las siguientes directivas:
 
 Se recomienda habilitar todas estas directivas de línea base. Una vez habilitadas estas directivas, se pedirá a los administradores y usuarios que se registren para la autenticación multifactor de Azure AD.
 
-Para obtener más información acerca de estas directivas, vea [¿Qué son las directivas de línea base?](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)
+Para obtener más información acerca de estas directivas, vea [¿Qué son las directivas de línea base?](/azure/active-directory/conditional-access/concept-baseline-protection)
 
 ## <a name="require-mfa"></a>Requerimiento de la MFA
 
@@ -73,12 +73,12 @@ Para requerir que todos los usuarios inicien sesión con una segunda forma de id
 1. Vaya a [Azure Portal](https://portal.azure.com)y, a continuación, vaya a Acceso condicional de seguridad de Azure Active **Directory** para crear una nueva \>  \>  **directiva.**
 
 Vea las siguientes instrucciones específicas para cada directiva: <br>
-    - [Requerir MFA para administradores](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
-    - [Requerir MFA para usuarios](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
-    - [Bloquear la autenticación heredada](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
-    - [Requerir MFA para la administración de servicios](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+    - [Requerir MFA para administradores](/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
+    - [Requerir MFA para usuarios](/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
+    - [Bloquear la autenticación heredada](/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
+    - [Requerir MFA para la administración de servicios](/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 > [!NOTE]
 > Las directivas de vista previa ya no existen y los usuarios tendrán que crear sus propias directivas.
 
-Puedes configurar directivas adicionales, como requerir aplicaciones cliente aprobadas. Para obtener más información, consulte la [documentación de acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/).
+Puedes configurar directivas adicionales, como requerir aplicaciones cliente aprobadas. Para obtener más información, consulte la [documentación de acceso condicional](/azure/active-directory/conditional-access/).

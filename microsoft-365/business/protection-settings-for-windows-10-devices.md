@@ -28,13 +28,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: Aprende a crear o editar directivas de administración de aplicaciones y a proteger archivos de trabajo en los dispositivos personales de Windows 10 de los usuarios.
-ms.openlocfilehash: f85a59649e43c141b62091337b842a490d411833
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+description: Aprende a crear o editar directivas de administración de aplicaciones y a proteger los archivos de trabajo en los dispositivos personales de Windows 10 de los usuarios.
+ms.openlocfilehash: 64c6aa620171a373cd7564c7de3abbf4a4546c4e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289207"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912830"
 ---
 # <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>Establecer o editar la configuración de protección de aplicaciones para dispositivos Windows 10
 
@@ -43,25 +43,25 @@ Este artículo se aplica a Microsoft 365 Empresa Premium.
 ## <a name="edit-an-app-management-policy-for-windows-10"></a>Editar una directiva de administración de aplicaciones para Windows 10
 
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.     
-2. En el panel de navegación izquierdo, elija **Directivas de** \> **dispositivos.**
+2. En el panel de navegación izquierdo, elija **Directivas de** \> **dispositivos** .
 1. Elija una directiva de aplicación de Windows existente y, a **continuación, Edit**.
-1. Elija **Editar** junto a la configuración que desea cambiar y, a continuación, **Guarde**.
+1. Elija **Editar** junto a una configuración que desea cambiar y, a continuación, **Guardar**.
 
 ## <a name="create-an-app-management-policy-for-windows-10"></a>Crear una directiva de administración de aplicaciones para Windows 10
 
 Si los usuarios tienen dispositivos de Windows 10 personales en los que realizan tareas de trabajo, también puede proteger los datos en ellos.
   
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
-2. En el panel de navegación izquierdo, elija **Directivas** \> **de** \> **dispositivos agregar.**
+2. En la navegación izquierda, elija **Directivas** \> **de** \> **dispositivos Agregar**.
 3. En el panel **Agregar directiva**, escriba un nombre único para esta directiva. 
 4. En **Tipo de directiva**, elija **Administración de aplicaciones para Windows 10**.
-5. En **Tipo de dispositivo,** elija **Personal** o Propiedad de **la compañía.**
+5. En **Tipo de dispositivo**, elija **Personal** o Propiedad de **la empresa**.
 6. La opción **Cifrar archivos de trabajo** se activa automáticamente. 
 7. Establezca la opción **Impedir que los usuarios copien datos de la empresa en archivos personales y obligarlos a guardar los archivos de trabajo en OneDrive para la Empresa** en **Activado** si no quiere que los usuarios guarden archivos de trabajo en su equipo. 
-9. Expanda **Recuperar datos en dispositivos Windows.** Se recomienda **activarlo.**
-    Para poder examinar la ubicación del certificado de Agente de recuperación de datos, primero debe crear uno. Para obtener instrucciones, consulte Crear y comprobar un certificado del Agente de recuperación de datos (DRA) del Sistema de cifrado de archivos [(EFS).](https://go.microsoft.com/fwlink/p/?linkid=853700)
+9. Expande **Recuperar datos en dispositivos Windows**. Se recomienda **activarlo**.
+    Para poder examinar la ubicación del certificado de Agente de recuperación de datos, primero debe crear uno. Para obtener instrucciones, vea [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](/windows/security/information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate).
     
-    De forma predeterminada, los archivos de trabajo están cifrados con una clave secreta que se almacena en el dispositivo y está asociada con el perfil de usuario. Solo el usuario puede abrir y descifrar el archivo. Sin embargo, si un dispositivo se pierde o se elimina un usuario, un archivo puede permanecer es estado cifrado. Un administrador puede usar el certificado del Agente de recuperación de datos (DRA) para descifrar el archivo.
+    De forma predeterminada, los archivos de trabajo están cifrados con una clave secreta que se almacena en el dispositivo y está asociada con el perfil de usuario. Solo el usuario puede abrir y descifrar el archivo. Sin embargo, si un dispositivo se pierde o se elimina un usuario, un archivo puede permanecer es estado cifrado. Un administrador puede usar el certificado agente de recuperación de datos (DRA) para descifrar el archivo.
     
     ![Browse to Data Recovery Agent certificate.](../media/7d7d664f-b72f-4293-a3e7-d0fa7371366c.png)
   
@@ -70,4 +70,4 @@ Si los usuarios tienen dispositivos de Windows 10 personales en los que realizan
     ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](../media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
   
 11. Después, decida **a qué usuarios se aplica esta configuración**. Si no quiere usar el grupo de seguridad predeterminado **Todos los usuarios**, elija **Cambiar**, elija los grupos de seguridad que recibirán esta configuración \> **Seleccionar**.
-12. Por último, elija **Agregar** para guardar la directiva y asignarla a los dispositivos. 
+12. Por último, elija **Agregar** para guardar la directiva y asignarla a los dispositivos.

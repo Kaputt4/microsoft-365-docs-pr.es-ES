@@ -26,19 +26,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: Obtén información sobre cómo configurar las opciones de la directiva de dispositivo predeterminada que recibirá cualquier dispositivo con Windows 10 al iniciar sesión en su cuenta de trabajo o escuela.
-ms.openlocfilehash: 85448507835b6310ca4136849be6a40caf6bb919
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+description: Obtén información sobre cómo configurar la configuración de la directiva de dispositivo predeterminada que cualquier dispositivo Windows 10 recibirá al iniciar sesión en su cuenta laboral o educativa.
+ms.openlocfilehash: 85383b1e1d2f2af3fd49d4a0c56c5d99586d607d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289085"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912618"
 ---
 # <a name="secure-windows-10-devices"></a>Proteger dispositivos con Windows 10
 
 Este artículo se aplica a Microsoft 365 Empresa Premium.
 
-Las opciones que configure aquí forman parte de la directiva de dispositivo predeterminada para Windows 10. Todos los usuarios que conecten un dispositivo Windows 10, incluidos los dispositivos móviles y los equipos pc, al iniciar sesión con su cuenta de trabajo recibirán automáticamente esta configuración. Recomendamos que acepte la directiva predeterminada durante la configuración y que, posteriormente, agregue directivas para grupos de usuarios específicos.
+Las opciones que configure aquí forman parte de la directiva de dispositivo predeterminada para Windows 10. Todos los usuarios que conecten un dispositivo Windows 10, incluidos los dispositivos móviles y los equipos, al iniciar sesión con su cuenta de trabajo recibirán automáticamente esta configuración. Recomendamos que acepte la directiva predeterminada durante la configuración y que, posteriormente, agregue directivas para grupos de usuarios específicos.
   
 ## <a name="settings-to-secure-windows-10-devices"></a>Configuración para proteger dispositivos con Windows 10
 
@@ -49,6 +49,6 @@ De forma predeterminada, todas las opciones de configuración están **activadas
 |Configuración  <br/> |Descripción  <br/> |
 |Proteger los equipos PC de virus y otras amenazas con el antivirus Windows Defender  <br/> |Es necesario que el antivirus Windows Defender esté activado para proteger los equipos PC de los peligros de estar conectados a Internet.  <br/> |
 |Proteger los equipos PC de amenazas basadas en web en Microsoft Edge  <br/> |Activa opciones de configuración en Edge para proteger a los usuarios de sitios y descargas malintencionados.  <br/> |
-|Ayudar a proteger archivos y carpetas en equipos PC ante el acceso no autorizado con BitLocker  <br/> |BitLocker protege los datos al cifrar los discos duros del equipo y proteger ante la exposición de datos en caso del robo o pérdida de un equipo. Para obtener más información, consulta preguntas [más frecuentes sobre Bitlocker.](https://go.microsoft.com/fwlink/?linkid=871000)  <br/> |
+|Ayudar a proteger archivos y carpetas en equipos PC ante el acceso no autorizado con BitLocker  <br/> |BitLocker protege los datos al cifrar los discos duros del equipo y proteger ante la exposición de datos en caso del robo o pérdida de un equipo. Para obtener más información, consulta [Preguntas más frecuentes de Bitlocker](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions).  <br/> |
 |Apagar la pantalla del dispositivo cuando esté inactivo durante esta cantidad de tiempo  <br/> |Garantiza que los datos de la compañía estén protegidos si un usuario está inactivo. Puede que un usuario trabaje en una ubicación pública, como una cafetería, y se aparte o se distraiga durante un momento, lo que dejaría su dispositivo vulnerable ante miradas indiscretas. Esta configuración le permite controlar cuánto tiempo puede estar inactivo un usuario antes de que se apague la pantalla.  <br/> |
 |
