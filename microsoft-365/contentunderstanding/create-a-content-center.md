@@ -12,14 +12,14 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga información sobre cómo crear un centro de contenido.
-ms.openlocfilehash: 3544bbef7cf2f898733c7aaad620487098a2dd24
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 34ba45cd62214743e5a6784893e0f24e9815fdfb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515141"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905829"
 ---
-# <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a><span data-ttu-id="5bc45-103">Crear un centro de contenido en Microsoft SharePoint Syntex</span><span class="sxs-lookup"><span data-stu-id="5bc45-103">Create a content center in Microsoft SharePoint Syntex</span></span>
+# <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a><span data-ttu-id="4f85b-103">Crear un centro de contenido en Microsoft SharePoint Syntex</span><span class="sxs-lookup"><span data-stu-id="4f85b-103">Create a content center in Microsoft SharePoint Syntex</span></span>
 
 
 </br>
@@ -28,52 +28,52 @@ ms.locfileid: "50515141"
 
 </br>
 
-<span data-ttu-id="5bc45-104">Para crear y administrar modelos de comprensión de documentos, primero necesita un centro de contenido.</span><span class="sxs-lookup"><span data-stu-id="5bc45-104">To create and manage document understanding models, you first need a content center.</span></span> <span data-ttu-id="5bc45-105">El centro de contenido es la interfaz de creación de modelos y también contiene información sobre los modelos publicados de bibliotecas de documentos que se han aplicado.</span><span class="sxs-lookup"><span data-stu-id="5bc45-105">The content center is the model creation interface and also contains information about which document libraries published models have been applied to.</span></span></br>
+<span data-ttu-id="4f85b-104">Para crear y administrar modelos de comprensión de documentos, primero necesita un centro de contenido.</span><span class="sxs-lookup"><span data-stu-id="4f85b-104">To create and manage document understanding models, you first need a content center.</span></span> <span data-ttu-id="4f85b-105">El centro de contenido es la interfaz de creación de modelos y también contiene información sobre los modelos publicados de bibliotecas de documentos que se han aplicado.</span><span class="sxs-lookup"><span data-stu-id="4f85b-105">The content center is the model creation interface and also contains information about which document libraries published models have been applied to.</span></span></br>
 
    ![Seleccione una biblioteca de documentos](../media/content-understanding/content-center-page.png)</br>
 
-<span data-ttu-id="5bc45-107">Puede crear un centro de contenido predeterminado durante la [configuración](set-up-content-understanding.md).</span><span class="sxs-lookup"><span data-stu-id="5bc45-107">You create a default content center during [setup](set-up-content-understanding.md).</span></span> <span data-ttu-id="5bc45-108">Sin embargo, un administrador de SharePoint también puede optar por crear centros adicionales según sea necesario.</span><span class="sxs-lookup"><span data-stu-id="5bc45-108">But a SharePoint admin can also choose to create additional centers as needed.</span></span> <span data-ttu-id="5bc45-109">Mientras que un único centro de contenido puede ser apropiado para entornos en los que quiera realizar una implementación de todas las actividades del modelo, es posible que quiera disponer de centros adicionales para los distintos departamentos de su organización, que pueden tener distintos requisitos de permisos y necesidades para sus modelos.</span><span class="sxs-lookup"><span data-stu-id="5bc45-109">While a single content center may be fine for environments for which you want a roll-up of all model activity, you may want to have additional centers for multiple departments within your organization, which may have different needs and permission requirements for their models.</span></span>
+<span data-ttu-id="4f85b-107">Puede crear un centro de contenido predeterminado durante la [configuración](set-up-content-understanding.md).</span><span class="sxs-lookup"><span data-stu-id="4f85b-107">You create a default content center during [setup](set-up-content-understanding.md).</span></span> <span data-ttu-id="4f85b-108">Sin embargo, un administrador de SharePoint también puede optar por crear centros adicionales según sea necesario.</span><span class="sxs-lookup"><span data-stu-id="4f85b-108">But a SharePoint admin can also choose to create additional centers as needed.</span></span> <span data-ttu-id="4f85b-109">Mientras que un único centro de contenido puede ser apropiado para entornos en los que quiera realizar una implementación de todas las actividades del modelo, es posible que quiera disponer de centros adicionales para los distintos departamentos de su organización, que pueden tener distintos requisitos de permisos y necesidades para sus modelos.</span><span class="sxs-lookup"><span data-stu-id="4f85b-109">While a single content center may be fine for environments for which you want a roll-up of all model activity, you may want to have additional centers for multiple departments within your organization, which may have different needs and permission requirements for their models.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="5bc45-110">En un [entorno de Microsoft 365 Multi-Geo](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo), si tiene un único centro de contenido predeterminado en su ubicación central, solo puede proporcionar una implementación de la actividad del modelo desde esa ubicación.</span><span class="sxs-lookup"><span data-stu-id="5bc45-110">In a [Microsoft 365 Multi-Geo environment](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo), if you have a single default content center in your central location, you can only provide a roll-up of model activity from within that location.</span></span> <span data-ttu-id="5bc45-111">Actualmente no puede obtener una implementación de la actividad del modelo fuera de los límites de la granja de servidores en entorno Multi-Geo.</span><span class="sxs-lookup"><span data-stu-id="5bc45-111">You currently cannot get a roll-up of model activity across farm-boundaries in Multi-Geo environment.</span></span> 
+> <span data-ttu-id="4f85b-110">En un [entorno de Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md), si tiene un único centro de contenido predeterminado en su ubicación central, solo puede proporcionar una implementación de la actividad del modelo desde esa ubicación.</span><span class="sxs-lookup"><span data-stu-id="4f85b-110">In a [Microsoft 365 Multi-Geo environment](../enterprise/microsoft-365-multi-geo.md), if you have a single default content center in your central location, you can only provide a roll-up of model activity from within that location.</span></span> <span data-ttu-id="4f85b-111">Actualmente no puede obtener una implementación de la actividad del modelo fuera de los límites de la granja de servidores en entorno Multi-Geo.</span><span class="sxs-lookup"><span data-stu-id="4f85b-111">You currently cannot get a roll-up of model activity across farm-boundaries in Multi-Geo environment.</span></span> 
 
 
-## <a name="create-a-content-center"></a><span data-ttu-id="5bc45-112">Crear un centro de contenido</span><span class="sxs-lookup"><span data-stu-id="5bc45-112">Create a content center</span></span>
+## <a name="create-a-content-center"></a><span data-ttu-id="4f85b-112">Crear un centro de contenido</span><span class="sxs-lookup"><span data-stu-id="4f85b-112">Create a content center</span></span>
 
-<span data-ttu-id="5bc45-113">Un administrador de SharePoint puede crear un sitio del centro de contenido del mismo modo en que puede [crear cualquier otro sitio de SharePoint](https://docs.microsoft.com/sharepoint/create-site-collection) a través del panel de aprovisionamiento del sitio del centro de administración.</span><span class="sxs-lookup"><span data-stu-id="5bc45-113">A SharePoint admin can create a content center site like they would [create any other SharePoint site](https://docs.microsoft.com/sharepoint/create-site-collection) through the admin center site provisioning panel.</span></span>
+<span data-ttu-id="4f85b-113">Un administrador de SharePoint puede crear un sitio del centro de contenido del mismo modo en que puede [crear cualquier otro sitio de SharePoint](/sharepoint/create-site-collection) a través del panel de aprovisionamiento del sitio del centro de administración.</span><span class="sxs-lookup"><span data-stu-id="4f85b-113">A SharePoint admin can create a content center site like they would [create any other SharePoint site](/sharepoint/create-site-collection) through the admin center site provisioning panel.</span></span>
 
-<span data-ttu-id="5bc45-114">Para crear un nuevo centro de contenido:</span><span class="sxs-lookup"><span data-stu-id="5bc45-114">To create a new content center:</span></span>
+<span data-ttu-id="4f85b-114">Para crear un nuevo centro de contenido:</span><span class="sxs-lookup"><span data-stu-id="4f85b-114">To create a new content center:</span></span>
 
-1. <span data-ttu-id="5bc45-115">En el Centro de administración de Microsoft 365, vaya al Centro de administración de SharePoint.</span><span class="sxs-lookup"><span data-stu-id="5bc45-115">On the Microsoft 365 admin center, go to the SharePoint admin center.</span></span>
+1. <span data-ttu-id="4f85b-115">En el Centro de administración de Microsoft 365, vaya al Centro de administración de SharePoint.</span><span class="sxs-lookup"><span data-stu-id="4f85b-115">On the Microsoft 365 admin center, go to the SharePoint admin center.</span></span>
 
-2. <span data-ttu-id="5bc45-116">En el nuevo Centro de administración de SharePoint, en **Sitios**, seleccione **Sitios activos**.</span><span class="sxs-lookup"><span data-stu-id="5bc45-116">On the SharePoint admin center, under **Sites**, select **Active Sites**.</span></span>
+2. <span data-ttu-id="4f85b-116">En el nuevo Centro de administración de SharePoint, en **Sitios**, seleccione **Sitios activos**.</span><span class="sxs-lookup"><span data-stu-id="4f85b-116">On the SharePoint admin center, under **Sites**, select **Active Sites**.</span></span>
 
-3. <span data-ttu-id="5bc45-117">En la página **Sitios activos**, haga clic en **Crear** y seleccione **Otras opciones**.</span><span class="sxs-lookup"><span data-stu-id="5bc45-117">On the **Active Sites** page, click **Create**, and then select **Other options**.</span></span>
+3. <span data-ttu-id="4f85b-117">En la página **Sitios activos**, haga clic en **Crear** y seleccione **Otras opciones**.</span><span class="sxs-lookup"><span data-stu-id="4f85b-117">On the **Active Sites** page, click **Create**, and then select **Other options**.</span></span>
 
-4. <span data-ttu-id="5bc45-118">En el menú **Elegir una plantilla**, seleccione **Centro de contenido**.</span><span class="sxs-lookup"><span data-stu-id="5bc45-118">On the **Choose a template** menu, select **Content Center**.</span></span>
+4. <span data-ttu-id="4f85b-118">En el menú **Elegir una plantilla**, seleccione **Centro de contenido**.</span><span class="sxs-lookup"><span data-stu-id="4f85b-118">On the **Choose a template** menu, select **Content Center**.</span></span>
 
-5. <span data-ttu-id="5bc45-119">Para el nuevo sitio, proporcione un **Nombre del sitio**, **Administrador principal** e **Idioma**.</span><span class="sxs-lookup"><span data-stu-id="5bc45-119">For the new site, provide a **Site Name**, **Primary administrator**, and a **Language**.</span></span></br>
+5. <span data-ttu-id="4f85b-119">Para el nuevo sitio, proporcione un **Nombre del sitio**, **Administrador principal** e **Idioma**.</span><span class="sxs-lookup"><span data-stu-id="4f85b-119">For the new site, provide a **Site Name**, **Primary administrator**, and a **Language**.</span></span></br>
 
    > [!NOTE] 
-   > <span data-ttu-id="5bc45-120">Puede seleccionar un sitio de centro de contenido para que se procese en cualquiera de los idiomas disponibles, pero tenga en cuenta que actualmente los modelos solo se pueden crear para archivos en inglés.</span><span class="sxs-lookup"><span data-stu-id="5bc45-120">You can select a content center site to render in any of the available languages, but note that currently models can only be created for English files.</span></span> <span data-ttu-id="5bc45-121">Además, tenga en cuenta que, al igual que otras plantillas de sitio, el idioma predeterminado del sitio no se puede modificar una vez creado el sitio.</span><span class="sxs-lookup"><span data-stu-id="5bc45-121">Also note that like other site templates, the default site language isn't editable after the site is created.</span></span></br>
+   > <span data-ttu-id="4f85b-120">Puede seleccionar un sitio de centro de contenido para que se procese en cualquiera de los idiomas disponibles, pero tenga en cuenta que actualmente los modelos solo se pueden crear para archivos en inglés.</span><span class="sxs-lookup"><span data-stu-id="4f85b-120">You can select a content center site to render in any of the available languages, but note that currently models can only be created for English files.</span></span> <span data-ttu-id="4f85b-121">Además, tenga en cuenta que, al igual que otras plantillas de sitio, el idioma predeterminado del sitio no se puede modificar una vez creado el sitio.</span><span class="sxs-lookup"><span data-stu-id="4f85b-121">Also note that like other site templates, the default site language isn't editable after the site is created.</span></span></br>
 
-6. <span data-ttu-id="5bc45-122">Seleccione **Terminado**.</span><span class="sxs-lookup"><span data-stu-id="5bc45-122">Select **Finished**.</span></span>
+6. <span data-ttu-id="4f85b-122">Seleccione **Terminado**.</span><span class="sxs-lookup"><span data-stu-id="4f85b-122">Select **Finished**.</span></span>
  
-<span data-ttu-id="5bc45-123">Después de crear un sitio del centro de contenido, verá que aparece en la página **Sitios activos** en el Centro de administración de SharePoint.</span><span class="sxs-lookup"><span data-stu-id="5bc45-123">After you create a content center site, you will see it listed on the **Active sites** page in the SharePoint admin center.</span></span> 
+<span data-ttu-id="4f85b-123">Después de crear un sitio del centro de contenido, verá que aparece en la página **Sitios activos** en el Centro de administración de SharePoint.</span><span class="sxs-lookup"><span data-stu-id="4f85b-123">After you create a content center site, you will see it listed on the **Active sites** page in the SharePoint admin center.</span></span> 
 
-### <a name="give-access-to-additional-users"></a><span data-ttu-id="5bc45-124">Conceder acceso a otros usuarios</span><span class="sxs-lookup"><span data-stu-id="5bc45-124">Give access to additional users</span></span>
+### <a name="give-access-to-additional-users"></a><span data-ttu-id="4f85b-124">Conceder acceso a otros usuarios</span><span class="sxs-lookup"><span data-stu-id="4f85b-124">Give access to additional users</span></span>
  
-<span data-ttu-id="5bc45-125">Después de crear el sitio, puede conceder acceso a usuarios adicionales al sitio a través del [modelo de permisos del sitio de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions) estándar.</span><span class="sxs-lookup"><span data-stu-id="5bc45-125">After you create the site, you can give additional users access to the site through the standard [SharePoint site permissions model](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions).</span></span>
+<span data-ttu-id="4f85b-125">Después de crear el sitio, puede conceder acceso a usuarios adicionales al sitio a través del [modelo de permisos del sitio de SharePoint](/sharepoint/modern-experience-sharing-permissions) estándar.</span><span class="sxs-lookup"><span data-stu-id="4f85b-125">After you create the site, you can give additional users access to the site through the standard [SharePoint site permissions model](/sharepoint/modern-experience-sharing-permissions).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="5bc45-126">Consulte también</span><span class="sxs-lookup"><span data-stu-id="5bc45-126">See Also</span></span>
-[<span data-ttu-id="5bc45-127">Crear un clasificador</span><span class="sxs-lookup"><span data-stu-id="5bc45-127">Create a classifier</span></span>](create-a-classifier.md)
+## <a name="see-also"></a><span data-ttu-id="4f85b-126">Consulte también</span><span class="sxs-lookup"><span data-stu-id="4f85b-126">See Also</span></span>
+[<span data-ttu-id="4f85b-127">Crear un clasificador</span><span class="sxs-lookup"><span data-stu-id="4f85b-127">Create a classifier</span></span>](create-a-classifier.md)
 
-[<span data-ttu-id="5bc45-128">Crear un extractor</span><span class="sxs-lookup"><span data-stu-id="5bc45-128">Create an extractor</span></span>](create-an-extractor.md)
+[<span data-ttu-id="4f85b-128">Crear un extractor</span><span class="sxs-lookup"><span data-stu-id="4f85b-128">Create an extractor</span></span>](create-an-extractor.md)
 
-[<span data-ttu-id="5bc45-129">Crear un centro de contenido</span><span class="sxs-lookup"><span data-stu-id="5bc45-129">Create a content center</span></span>](create-a-content-center.md)
+[<span data-ttu-id="4f85b-129">Crear un centro de contenido</span><span class="sxs-lookup"><span data-stu-id="4f85b-129">Create a content center</span></span>](create-a-content-center.md)
 
-[<span data-ttu-id="5bc45-130">Información general sobre la comprensión de documentos</span><span class="sxs-lookup"><span data-stu-id="5bc45-130">Document understanding overview</span></span>](document-understanding-overview.md)
+[<span data-ttu-id="4f85b-130">Información general sobre la comprensión de documentos</span><span class="sxs-lookup"><span data-stu-id="4f85b-130">Document understanding overview</span></span>](document-understanding-overview.md)
 
-[<span data-ttu-id="5bc45-131">Crear un modelo de procesamiento de formularios</span><span class="sxs-lookup"><span data-stu-id="5bc45-131">Create a form processing model</span></span>](create-a-form-processing-model.md)
+[<span data-ttu-id="4f85b-131">Crear un modelo de procesamiento de formularios</span><span class="sxs-lookup"><span data-stu-id="4f85b-131">Create a form processing model</span></span>](create-a-form-processing-model.md)
 
-[<span data-ttu-id="5bc45-132">Aplicar un modelo</span><span class="sxs-lookup"><span data-stu-id="5bc45-132">Apply a model</span></span>](apply-a-model.md)    
+[<span data-ttu-id="4f85b-132">Aplicar un modelo</span><span class="sxs-lookup"><span data-stu-id="4f85b-132">Apply a model</span></span>](apply-a-model.md)
