@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre las propiedades de correo electrónico y archivo que puede buscar mediante las herramientas de búsqueda y exhibición de documentos electrónicos en Microsoft 365.
-ms.openlocfilehash: d5b558df15cde6be6f87663dcb999efc6ec66f7e
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: e3282cd5b8bcc493e7c423db72c086f953d114ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50604036"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903588"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>Consultas de palabras clave y condiciones de búsqueda para búsqueda de contenido y exhibición de documentos electrónicos
 
@@ -42,7 +42,7 @@ En este tema se describen las propiedades de correo electrónico y documentos qu
 Para obtener instrucciones paso a paso sobre cómo crear una búsqueda de contenido, vea [Búsqueda de contenido](content-search.md).
 
 > [!NOTE]
-> La búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 y los cmdlets **\* -ComplianceSearch** correspondientes en PowerShell del Centro de seguridad & cumplimiento usan el lenguaje de consulta de palabras clave (KQL). Para obtener información más detallada, vea [Keyword Query Language syntax reference](https://go.microsoft.com/fwlink/?LinkId=269603). 
+> La búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 y los cmdlets **\* -ComplianceSearch** correspondientes en PowerShell del Centro de seguridad & cumplimiento usan el lenguaje de consulta de palabras clave (KQL). Para obtener información más detallada, vea [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). 
   
 ## <a name="searchable-email-properties"></a>Propiedades del correo electrónico que permiten búsquedas
 
@@ -91,7 +91,7 @@ Sin embargo, tenga en cuenta que impedir la expansión de destinatarios en la co
 
 En la tabla siguiente se enumeran algunas de las propiedades de SharePoint y OneDrive para la Empresa que se pueden buscar mediante la característica búsqueda de contenido en el Centro de cumplimiento de & de seguridad o mediante **new-compliancesearch** o el cmdlet **Set-ComplianceSearch.** La tabla incluye un ejemplo de la sintaxis  _propiedad:valor_ de cada propiedad y una descripción de los resultados de búsqueda devueltos por los ejemplos. 
   
-Para obtener una lista completa de las propiedades de SharePoint que se pueden buscar, vea [Overview of crawled and managed properties in SharePoint](https://go.microsoft.com/fwlink/p/?LinkId=331599). Se pueden buscar propiedades  **marcadas con un sí** en la columna Consultable. 
+Para obtener una lista completa de las propiedades de SharePoint que se pueden buscar, vea [Overview of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Se pueden buscar propiedades  **marcadas con un sí** en la columna Consultable. 
   
 | Propiedad | Descripción de la propiedad | Ejemplo | Resultados de la búsqueda devueltos por los ejemplos |
 |:-----|:-----|:-----|:-----|
@@ -109,7 +109,7 @@ Para obtener una lista completa de las propiedades de SharePoint que se pueden b
 |SharedWithUsersOWSUser|Documentos que se han compartido con el usuario especificado y que se muestran en la página **Compartidos conmigo** en el sitio de OneDrive para la Empresa del usuario. Se trata de documentos que otras personas de la organización han compartido explícitamente con el usuario especificado. Al exportar documentos que coinciden con una consulta de búsqueda que usa la propiedad SharedWithUsersOWSUser, los documentos se exportan desde la ubicación de contenido original de la persona que compartió el documento con el usuario especificado. Para obtener más información, vea [Searching for site content shared within your organization](#searching-for-site-content-shared-within-your-organization).|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|Ambos ejemplos devuelven todos los documentos internos que se han compartido explícitamente con Garth Fort y que aparecen en la página **Compartido conmigo** en la cuenta de OneDrive para la Empresa de Garth Fort.|
 |Site|La dirección URL de un sitio o grupo de sitios de la organización.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|El primer ejemplo devuelve elementos de los sitios de OneDrive para la Empresa para todos los usuarios de la organización. El segundo ejemplo devuelve los elementos de todos los sitios del equipo.|
 |Size|El tamaño de un elemento, en bytes.|`size>=1`  <br/> `size:1..10000`|El primer ejemplo devuelve elementos mayores de 1 byte. El segundo ejemplo devuelve elementos que tienen un tamaño de entre 1 y 10 000 bytes.|
-|El título|El título del documento. La propiedad Title es metadatos que se especifican en Microsoft Office documentos. Es diferente del nombre de archivo del documento.|`title:"communication plan"`|Cualquier documento que contenga la frase "plan de comunicación" en la propiedad Título de metadatos de un documento de Office.|
+|Título|El título del documento. La propiedad Title es metadatos que se especifican en Microsoft Office documentos. Es diferente del nombre de archivo del documento.|`title:"communication plan"`|Cualquier documento que contenga la frase "plan de comunicación" en la propiedad Título de metadatos de un documento de Office.|
 |||||
 
 ## <a name="searchable-contact-properties"></a>Propiedades de contacto que se pueden buscar
@@ -138,7 +138,7 @@ En la tabla siguiente se enumeran las propiedades de contacto indizadas y que pu
 |OfficeLocation|Valor de **la propiedad de ubicación** de Office **u** Office.|
 |OtherAddress|Valor de la **propiedad Other** address.|
 |Surname|El nombre de la **propiedad Apellido.**|
-|El título|El título de la **propiedad Job title.**|
+|Título|El título de la **propiedad Job title.**|
 |||||
 
 ## <a name="searchable-sensitive-data-types"></a>Tipos de datos confidenciales que se pueden buscar
@@ -161,13 +161,13 @@ Para obtener más información acerca de cómo crear consultas con la propiedad,
 
   A continuación, puede usar el identificador de la propiedad de búsqueda para devolver documentos que contengan el tipo de datos `SensitiveType` confidencial personalizado; por ejemplo, `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
   
-- No puede usar tipos de información confidencial y la propiedad de búsqueda para buscar datos confidenciales en reposo en `SensitiveType` buzones de Exchange Online. Esto incluye mensajes de chat 1:1, mensajes de chat de grupo 1:N y conversaciones de canal de equipo en microsoft teams porque todo este contenido se almacena en buzones. Sin embargo, puede usar directivas de prevención de pérdida de datos (DLP) para proteger los datos confidenciales de correo electrónico en tránsito. Para obtener más información, vea [Overview of data loss prevention policies](data-loss-prevention-policies.md) y Search for and find personal [data](search-for-and-find-personal-data.md).
+- No puede usar tipos de información confidencial y la propiedad de búsqueda para buscar datos confidenciales en reposo en `SensitiveType` buzones de Exchange Online. Esto incluye mensajes de chat 1:1, mensajes de chat de grupo 1:N y conversaciones de canal de equipo en microsoft teams porque todo este contenido se almacena en buzones. Sin embargo, puede usar directivas de prevención de pérdida de datos (DLP) para proteger los datos confidenciales de correo electrónico en tránsito. Para obtener más información, vea [Overview of data loss prevention policies](data-loss-prevention-policies.md) y Search for and find personal [data](/compliance/regulatory/gdpr).
   
 ## <a name="search-operators"></a>Operadores de búsqueda
 
 Los operadores de búsqueda booleanos, como **AND**, **OR** y **NOT**, le ayudan a definir búsquedas más precisas al incluir o excluir palabras específicas en la consulta de búsqueda. Otras técnicas, como el uso de operadores de propiedades (como o ), comillas, paréntesis y caracteres comodín, le ayudan `>=` `..` a refinar una consulta de búsqueda. En la siguiente tabla se muestran los operadores que puede usar para restringir o ampliar los resultados de la búsqueda. 
   
-| Operador | Uso | Descripción |
+| Operador | Uso | Description |
 |:-----|:-----|:-----|
 |AND|palabra clave 1 AND palabra clave 2|Devuelve elementos que incluyen todas las palabras clave o  `property:value` expresiones especificadas. Por ejemplo, devolvería todos los mensajes enviados por Ann Beebe que contenían la  `from:"Ann Beebe" AND subject:northwind` palabra northwind en la línea de asunto. <sup>2</sup>|
 |+|keyword1 + keyword2 + keyword3|Devuelve elementos que contienen  *o*  `keyword2` o  `keyword3` *y*  que también contienen  `keyword1`. Por tanto, este ejemplo es equivalente a la consulta  `(keyword2 OR keyword3) AND keyword1`.  <br/> La consulta `keyword1 + keyword2` (con un espacio después del **+** símbolo) no es lo mismo que usar el **operador AND.** This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
@@ -223,11 +223,11 @@ Cree una condición mediante propiedades comunes al buscar en buzones y sitios d
 
 Cree una condición con propiedades de correo al buscar buzones o carpetas públicas. En la tabla siguiente se enumeran las propiedades de correo electrónico que puede usar para una condición. Estas propiedades son un subconjunto de las propiedades de correo electrónico descritas anteriormente. Estas descripciones se repiten para su comodidad.
   
-| Condition | Descripción |
+| Condition | Description |
 |:-----|:-----|
 |Tipo de mensaje| El tipo de mensaje para buscar. Se trata de la misma propiedad que la propiedad de correo electrónico Tipo. Valores posibles:  <br/><br/>  contactos  <br/>  documentos  <br/>  correo electrónico  <br/>  externaldata  <br/>  faxes  <br/>  mensajería instantánea  <br/>  diarios  <br/>  reuniones  <br/>  microsoftteams  <br/>  notas  <br/>  entradas  <br/>  fuentes rss  <br/>  tareas  <br/>  correo de voz|
 |Participantes|Todos los campos de personas de un mensaje de correo electrónico. Estos campos son From, To, Cc y CCO.|
-|Tipo|La propiedad de clase de mensaje para un elemento de correo electrónico. Esta es la misma propiedad que la propiedad de correo electrónico ItemClass. También es una condición de varios valores. Por lo tanto, para seleccionar varias clases de mensaje, mantenga presionada la tecla **CTRL** y, a continuación, haga clic en dos o más clases de mensaje en la lista desplegable que desea agregar a la condición. Cada clase de mensaje que seleccione en la lista estará conectada lógicamente por el operador **OR** en la consulta de búsqueda correspondiente.  <br/> Para obtener una lista de las clases de mensaje (y su identificador de  clase de mensaje correspondiente) que usa Exchange y que puede seleccionar en la lista Clase de mensaje, vea Tipos de elementos y [Clases de mensaje](https://go.microsoft.com/fwlink/?linkid=848143).|
+|Tipo|La propiedad de clase de mensaje para un elemento de correo electrónico. Esta es la misma propiedad que la propiedad de correo electrónico ItemClass. También es una condición de varios valores. Por lo tanto, para seleccionar varias clases de mensaje, mantenga presionada la tecla **CTRL** y, a continuación, haga clic en dos o más clases de mensaje en la lista desplegable que desea agregar a la condición. Cada clase de mensaje que seleccione en la lista estará conectada lógicamente por el operador **OR** en la consulta de búsqueda correspondiente.  <br/> Para obtener una lista de las clases de mensaje (y su identificador de  clase de mensaje correspondiente) que usa Exchange y que puede seleccionar en la lista Clase de mensaje, vea Tipos de elementos y [Clases de mensaje](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).|
 |Received|La fecha en la que un destinatario recibió un mensaje de correo electrónico. Se trata de la misma propiedad que la propiedad de correo electrónico Recibido.|
 |Recipientes|Todos los campos de destinatario de un mensaje de correo electrónico. Estos campos son Para, Cc y CCO.|
 |Remitente|El remitente de un mensaje de correo electrónico.|
@@ -240,10 +240,10 @@ Cree una condición con propiedades de correo al buscar buzones o carpetas públ
 
 Cree una condición mediante propiedades de documento al buscar documentos en sitios de SharePoint y OneDrive para la Empresa. En la tabla siguiente se enumeran las propiedades del documento que puede usar para una condición. Estas propiedades son un subconjunto de las propiedades del sitio descritas anteriormente. Estas descripciones se repiten para su comodidad.
   
-| Condition | Descripción |
+| Condition | Description |
 |:-----|:-----|
 |Autor|El campo de autor de los documentos de Office, que persiste si se copia un documento. Por ejemplo, si un usuario crea un documento y lo envía por correo electrónico a otra persona que, a continuación, lo carga en SharePoint, el documento conservará el autor original.|
-|El título|El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento.|
+|Título|El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento.|
 |Created|La fecha en la que se creó el documento.|
 |Última modificación|La fecha en la que el documento se modificó por última vez.|
 |Tipo de archivo|La extensión de un archivo; por ejemplo, docx, uno, pptx o xlsx. Se trata de la misma propiedad que la propiedad del sitio FileExtension.|
@@ -253,7 +253,7 @@ Cree una condición mediante propiedades de documento al buscar documentos en si
 
 Cuando se agrega una condición, puede seleccionar un operador que sea pertinente para el tipo de propiedad de la condición. En la tabla siguiente se describen los operadores que se usan con condiciones y se enumera el equivalente que se usa en la consulta de búsqueda.
   
-| Operador | Equivalente de consulta | Descripción |
+| Operador | Equivalente de consulta | Description |
 |:-----|:-----|:-----|
 |After|`property>date`|Se usa con condiciones de fecha. Devuelve los elementos que se enviaron, recibieron o modificaron después de la fecha especificada. |
 |Antes|`property<date`|Se usa con condiciones de fecha. Devuelve los elementos que se enviaron, recibieron o modificaron antes de la fecha especificada.|

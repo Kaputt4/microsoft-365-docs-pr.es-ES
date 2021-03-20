@@ -26,27 +26,27 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
-description: Obtenga información sobre cómo asignar roles de administrador a un usuario o a varios usuarios de su empresa para que puedan realizar tareas específicas en el centro de administración.
-ms.openlocfilehash: c0dfef0860e5729a135a142383bdb60aa9d310be
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+description: Obtenga información sobre cómo asignar roles de administrador a un usuario o varios usuarios de su empresa para que puedan realizar tareas específicas en el Centro de administración.
+ms.openlocfilehash: cfc4a7e106ca343435777aba1d0b9836f90a6f44
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906256"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904509"
 ---
 # <a name="assign-admin-roles"></a>Asignar roles de administrador
 
-Si es la persona que compró su suscripción empresarial de Microsoft, usted es el administrador global. Esto significa que tienes control ilimitado sobre los productos de tus suscripciones y puedes acceder a la mayoría de los datos.
+Si eres la persona que compró tu suscripción a Microsoft Business, eres el administrador global. Esto significa que tienes un control ilimitado sobre los productos de tus suscripciones y puedes acceder a la mayoría de los datos.
 
-Para obtener más información, vea [Sobre los roles de administrador](about-admin-roles.md).
+Para más información, consulte[Sobre los roles de administrador](about-admin-roles.md).
 
-Al agregar nuevos usuarios, si no les asigna un rol  de administrador, entonces están en el rol de usuario y no tienen privilegios de administrador en ninguno de los centros de administración de Microsoft. Pero si necesita ayuda para realizar las cosas, puede asignar un rol de administrador a un usuario. Por ejemplo, si necesita que alguien le ayude a restablecer contraseñas, no debe asignarles el rol de administrador global, debe asignarles el rol de administrador de contraseñas. Tener demasiados administradores globales, con acceso ilimitado a los datos y a la empresa en línea, es un riesgo para la seguridad.
+Cuando agregas nuevos usuarios, si no les asignas un  rol de administrador, entonces están en el rol de usuario y no tienen privilegios de administrador en ninguno de los centros de administración de Microsoft. Pero si necesitas ayuda para hacer las cosas, puedes asignar un rol de administrador a un usuario. Por ejemplo, si necesita que alguien le ayude a restablecer las contraseñas, no debe asignarles el rol de administrador global, debe asignarles el rol de administrador de contraseñas. Tener demasiados administradores globales, con acceso ilimitado a los datos y a la empresa en línea, es un riesgo para la seguridad.
 
 ## <a name="watch-add-an-adminbrbr"></a>Vea: Agregar un administrador.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## <a name="assign-admin-roles"></a>Asignar roles de administrador 
 
@@ -54,25 +54,25 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 
 Puede asignar usuarios a un rol de dos maneras diferentes:
 
-- Puede ir a los detalles del usuario y administrar **roles** para asignar un rol al usuario.
-- O bien, puede ir **a Roles,** seleccionar el rol y, a continuación, agregarle varios usuarios.
+- Puede ir a los detalles del usuario y Administrar **roles** para asignar un rol al usuario.
+- O bien, puede ir a **Roles** y seleccionar el rol y, a continuación, agregarle varios usuarios.
 
-### <a name="assign-admin-roles-to-users-using-roles"></a>Asignar roles de administrador a usuarios que usan roles
+### <a name="assign-admin-roles-to-users-using-roles"></a>Asignar roles de administrador a usuarios mediante roles
 
-1. En el centro de administración, vaya **a Roles** Roles para ver todos los roles de administrador disponibles para su >  organización.
+1. En el Centro de administración, vaya **a Roles** Roles para ver todos los roles de administración disponibles para su >  organización.
 2. Seleccione el rol de administrador al que desea asignar el usuario.
-3. Seleccione **Agregar administradores** > **asignados.**
-4. Escriba el nombre para  **mostrar** o el nombre de usuario del usuario y, a continuación, selecciónelo en la lista de sugerencias.
+3. Seleccione **Administradores asignados** > **Agregar**.
+4. Escriba el nombre para  **mostrar** o el nombre de usuario del usuario y, a continuación, seleccione el usuario en la lista de sugerencias.
 5. Agregue varios usuarios hasta que haya terminado.
 6. Seleccione **Guardar** y, a continuación, el usuario se agregará a la lista de administradores asignados.
 
 ### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>Asignar un usuario a un rol de administrador de usuarios activos
 
-1. En el centro de administración, vaya a la **página Usuarios** > [activos.](https://go.microsoft.com/fwlink/p/?linkid=834822)
+1. En el Centro de administración, vaya a **La página Usuarios** usuarios > [activos.](https://go.microsoft.com/fwlink/p/?linkid=834822)
 
-2. En la **página Usuarios activos,** seleccione el usuario cuyo rol de administrador desea cambiar. En el panel desplegable, junto **a Roles,** seleccione **Administrar roles.**
+2. En la **página Usuarios activos,** seleccione el usuario cuyo rol de administrador desea cambiar. En el panel desplegable, junto a **Roles,** seleccione **Administrar roles**.
 
-3. Seleccione el rol de administrador que desea asignar al usuario. Si no ve el rol que busca, seleccione **Mostrar todo** en la parte inferior de la lista.
+3. Seleccione el rol de administrador que desea asignar al usuario. Si no ve el rol que está buscando, seleccione **Mostrar todo** en la parte inferior de la lista.
 
 ::: moniker-end
 
@@ -80,11 +80,11 @@ Puede asignar usuarios a un rol de dos maneras diferentes:
 
 1. En el centro de administración, vaya a la página **Usuarios** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
 
-2. En la **página Usuarios activos,** seleccione el usuario cuyo rol de administrador desea cambiar. En el panel desplegable, junto a **Roles,** seleccione **Editar**. 
+2. En la **página Usuarios activos,** seleccione el usuario cuyo rol de administrador desea cambiar. En el panel desplegable, junto a **Roles**, seleccione **Editar**. 
 
-    Si no ve la  opción Editar, no tiene permiso para editar y no puede asignar roles de administrador a otras personas. Pida a un administrador global de su empresa que le asigne roles. En una pequeña empresa, el propietario de la empresa (la persona que compró la suscripción) es un administrador global. En una empresa grande, las personas clave del departamento de TI son administradores globales.
+    Si no ve la  opción Editar, no tiene permiso para editar y no puede asignar roles de administrador a otras personas. Pida a un administrador global de su empresa que le asigne roles. En una pequeña empresa, el propietario de la empresa (la persona que compró la suscripción) es un administrador global. En una gran empresa, las personas clave del departamento de TI son administradores globales.
 
-3. Seleccione **Administrador personalizado** para ver una lista de los roles que hemos personalizado. Para obtener una descripción de cada rol, vea [Acerca de los roles de administrador.](about-admin-roles.md)
+3. Seleccione **Administrador personalizado** para ver una lista de roles que hemos personalizado para usted. Para obtener una descripción de cada rol, vea [Acerca de los roles de administrador.](about-admin-roles.md)
 
 ::: moniker-end
 
@@ -92,30 +92,30 @@ Puede asignar usuarios a un rol de dos maneras diferentes:
 
 1. En el centro de administración, vaya a la página **Usuarios** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
 
-2. En la **página Usuarios activos,** seleccione el usuario cuyo rol de administrador desea cambiar. En el panel desplegable, junto a **Roles,** seleccione **Editar**.
+2. En la **página Usuarios activos,** seleccione el usuario cuyo rol de administrador desea cambiar. En el panel desplegable, junto a **Roles**, seleccione **Editar**.
 
-    Si no ve la  opción Editar, no tiene permiso para editar y no puede asignar roles de administrador a otras personas. Pida a un administrador global de su empresa que le asigne roles. En una pequeña empresa, el propietario de la empresa (la persona que compró la suscripción) es un administrador global. En una empresa grande, las personas clave del departamento de TI son administradores globales.
+    Si no ve la  opción Editar, no tiene permiso para editar y no puede asignar roles de administrador a otras personas. Pida a un administrador global de su empresa que le asigne roles. En una pequeña empresa, el propietario de la empresa (la persona que compró la suscripción) es un administrador global. En una gran empresa, las personas clave del departamento de TI son administradores globales.
 
-3. Seleccione **Administrador personalizado** para ver una lista de los roles que hemos personalizado. Para obtener una descripción de cada rol, vea [Acerca de los roles de administrador.](about-admin-roles.md)
+3. Seleccione **Administrador personalizado** para ver una lista de roles que hemos personalizado para usted. Para obtener una descripción de cada rol, vea [Acerca de los roles de administrador.](about-admin-roles.md)
 
 ::: moniker-end
 
 ## <a name="assign-admin-roles-to-multiple-users"></a>Asignar roles de administrador a varios usuarios
 
-Si conoce PowerShell, vea [Asignar roles a cuentas de usuario con PowerShell.](https://go.microsoft.com/fwlink/?linkid=854257) Es ideal para asignar roles a cientos de usuarios.
+Si conoce PowerShell, vea [Asignar roles a cuentas de usuario con PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md). Es ideal para asignar roles a cientos de usuarios.
   
 Use las siguientes instrucciones para asignar roles a decenas de usuarios.
 
 ::: moniker range="o365-worldwide"
 
-## <a name="check-admin-roles-in-your-organization"></a>Comprobar los roles de administrador de la organización
+## <a name="check-admin-roles-in-your-organization"></a>Comprobar roles de administrador en la organización
 
 Es posible que no tenga los permisos correctos para asignar roles de administrador a otros usuarios. Compruebe que tiene los permisos correctos o pida a otro administrador que le asigne roles.
 
-Puede comprobar los permisos de rol de administrador de dos maneras diferentes:
+Puede comprobar los permisos de roles de administración de dos maneras diferentes:
 
-- Puede ir a los detalles del usuario y buscar en **Roles** en la **página Cuenta.**
-- O bien, puede ir a **Roles,** seleccionar el rol de administrador y seleccionar los administradores asignados para ver qué usuarios están asignados.
+- Puede ir a los detalles del usuario y buscar en **Roles** en la **página** Cuenta.
+- O bien, puede ir a **Roles** y seleccionar el rol de administrador y seleccionar administradores asignados para ver qué usuarios están asignados.
 
 ::: moniker-end
 
@@ -123,8 +123,8 @@ Puede comprobar los permisos de rol de administrador de dos maneras diferentes:
 
 [Acerca de los roles de administración de Microsoft 365](about-admin-roles.md)
 
-[Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+[Permisos de roles de administrador en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
-[Asignar roles a cuentas de usuario con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell)
+[Asignar roles a cuentas de usuario con PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md)
 
-[Autorizar o quitar relaciones de asociados](../misc/add-partner.md)
+[Autorizar o quitar relaciones de partner](../misc/add-partner.md)

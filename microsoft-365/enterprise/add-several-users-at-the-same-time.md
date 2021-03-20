@@ -23,17 +23,17 @@ search.appverid:
 - MBS150
 - GEA150
 - BCS160
-description: 'Obtenga información sobre cómo agregar varios usuarios a Microsoft 365 para empresas desde una lista en una hoja de cálculo u otro archivo con formato CSV. Vea un vídeo en YouTube que explica cómo agregar cuentas a Microsoft 365. Al final de este proceso, cada usuario con una cuenta tendrá un buzón de Microsoft 365. '
-ms.openlocfilehash: 7629879990facbce57a6fbca1aa543471ad1b05b
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+description: 'Obtenga información sobre cómo agregar varios usuarios a Microsoft 365 para empresas desde una lista de una hoja de cálculo u otro archivo con formato CSV. Vea un vídeo en YouTube que explica cómo agregar cuentas a Microsoft 365. Al final de este proceso, cada usuario con una cuenta tendrá un buzón de Microsoft 365. '
+ms.openlocfilehash: 6b3e8d885466e44a4aa23427a54cfc98b2eebdf3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877217"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905625"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Agregar varios usuarios al mismo tiempo a Microsoft 365: Ayuda para administradores
 
-Cada persona de su equipo necesita una cuenta de usuario para poder iniciar sesión y acceder a los servicios de Microsoft 365, como el correo electrónico y Office. Si son muchas personas, puede agregar sus cuentas de una vez desde una hoja de cálculo de Excel u otro archivo guardado en formato CSV. [¿No está seguro de qué es el formato CSV?](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)
+Cada persona de su equipo necesita una cuenta de usuario antes de poder iniciar sesión y acceder a los servicios de Microsoft 365, como correo electrónico y Office. Si son muchas personas, puede agregar sus cuentas de una vez desde una hoja de cálculo de Excel u otro archivo guardado en formato CSV. [¿No está seguro de qué formato CSV es?](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)
   
 > [!NOTE]
 > Si no usa el nuevo Centro de administración de Microsoft 365, puede activarlo seleccionando **Probar el nuevo centro de administración** ubicado en la parte superior de la página de inicio.
@@ -42,13 +42,13 @@ Cada persona de su equipo necesita una cuenta de usuario para poder iniciar sesi
 
 1. Inicie sesión en Microsoft 365 con su cuenta profesional o educativa.
 
-2. En el centro de administración, elija **Usuarios** \> **activos.**
+2. En el Centro de administración, elija **Usuarios** \> **usuarios activos.**
 
-3. Seleccione **Agregar varios usuarios.**
+3. Seleccione **Agregar varios usuarios**.
 
 4. En el panel **Importar varios usuarios**, tiene la opción de descargar un archivo CSV de ejemplo con datos de ejemplo o sin rellenar.
 
-    La hoja de cálculo debe incluir exactamente los **mismos encabezados** de columna que el de ejemplo (Nombre de usuario, Nombre, entre otros). Si usa la plantilla, ábrala en una herramienta de edición de texto, como el Bloc de notas, y considere la posibilidad de dejar solos todos los datos de la fila 1 y solo escribir datos en las filas 2 y adicionales.
+    La hoja de cálculo debe incluir exactamente los **mismos encabezados de** columna que el de ejemplo (Nombre de usuario, Nombre, y así sucesivamente). Si usa la plantilla, ábrala en una herramienta de edición de texto, como bloc de notas, y considere la posibilidad de dejar solos todos los datos de la fila 1 y solo escribir datos en las filas 2 y siguientes.
 
     La hoja de cálculo también debe incluir valores para el nombre de usuario (por ejemplo, alberto@contoso.com) y un nombre para mostrar (por ejemplo, Alberto Hermosilla) para cada usuario.
 
@@ -72,11 +72,11 @@ Cada persona de su equipo necesita una cuenta de usuario para poder iniciar sesi
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- Ahora que estas personas tienen cuentas, necesitan descargar e instalar o reinstalar [Microsoft 365 u Office 2016 en un equipo PC o Mac.](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) Cada persona de su equipo puede instalar Microsoft 365 en hasta 5 equipos PC o Mac.
+- Ahora que estas personas tienen cuentas, deben descargar e instalar o reinstalar [Microsoft 365 u Office 2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)en un pc o Mac . Cada persona del equipo puede instalar Microsoft 365 en hasta 5 equipos PC o Mac.
 
-- Cada persona también puede configurar aplicaciones de [Office](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) y correo electrónico en un dispositivo móvil en hasta 5 tabletas y 5 teléfonos, como iPhone, iPad y teléfonos y tabletas Android. De esta forma, puede editar archivos de Office desde cualquier lugar.
+- Cada persona también puede configurar aplicaciones de [Office](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) y correo electrónico en un dispositivo móvil en hasta 5 tabletas y 5 teléfonos, como iPhones, iPads y teléfonos y tabletas Android. De esta forma, puede editar archivos de Office desde cualquier lugar.
 
-    Consulte [Configurar Microsoft 365 para empresas](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) para obtener una lista completa de los pasos de configuración.
+    Consulte [Configurar Microsoft 365 para](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) empresas para obtener una lista completa de los pasos de configuración.
 
 ## <a name="more-information-about-how-to-add-users-to-microsoft-365"></a>Más información sobre cómo agregar usuarios a Microsoft 365
 
@@ -84,7 +84,7 @@ Cada persona de su equipo necesita una cuenta de usuario para poder iniciar sesi
 
 Un archivo CSV es un archivo con valores separados por comas. Puede crear o editar un archivo como este con cualquier editor de textos o programa de hojas de cálculo, como Excel.
   
-Puede descargar [esta hoja de cálculo de muestra](https://www.microsoft.com/download/details.aspx?id=45485) como punto de partida. Recuerde que Microsoft 365 requiere encabezados de columna en la primera fila, así que no los reemplace por otra cosa. 
+Puede descargar [esta hoja de cálculo de muestra](https://www.microsoft.com/download/details.aspx?id=45485) como punto de partida. Recuerde que Microsoft 365 requiere encabezados de columna en la primera fila, por lo que no los reemplace por otra cosa. 
   
 Guarde el archivo con un nuevo nombre y especifique el formato CSV.
   
@@ -96,13 +96,13 @@ Cuando guarde el archivo, probablemente recibirá un mensaje que le informará d
   
 ### <a name="tips-for-formatting-your-spreadsheet"></a>Consejos para aplicar formato a la hoja de cálculo
 
-- **¿Debo mantener los mismos encabezados de columna que en la hoja de cálculo de muestra?** Sí. La hoja de cálculo de muestra contiene los encabezados de columna en la primera fila. Estos encabezados son necesarios. Para cada usuario que quiera agregar a Microsoft 365, cree una fila bajo el encabezado. Si agrega, cambia o elimina cualquiera de los encabezados de columna, Es posible que Microsoft 365 no pueda crear usuarios a partir de la información del archivo.
+- **¿Debo mantener los mismos encabezados de columna que en la hoja de cálculo de muestra?** Sí. La hoja de cálculo de muestra contiene los encabezados de columna en la primera fila. Estos encabezados son necesarios. Para cada usuario que desee agregar a Microsoft 365, cree una fila bajo el encabezado. Si agrega, cambia o elimina cualquiera de los encabezados de columna, Es posible que Microsoft 365 no pueda crear usuarios a partir de la información del archivo.
 
 - **¿Qué ocurre si no tengo toda la información requerida para cada usuario?** El nombre de usuario y el nombre para mostrar son obligatorios, y no puede agregar un nuevo usuario sin esta información. Si le falta parte de la información, como el fax, puede usar un espacio más una coma para indicar que el campo debe dejarse en blanco.
 
-- **¿Qué tamaño puede tener la hoja de cálculo?** La hoja de cálculo debe tener al menos dos filas. One is for the column headings (the user data column label) and one for the user. You cannot have more than 251 rows. If you need to import more than 250 users, you can create more than one spreadsheet.
+- **¿Cuán pequeña o grande puede ser la hoja de cálculo?** La hoja de cálculo debe tener al menos dos filas. One is for the column headings (the user data column label) and one for the user. You cannot have more than 251 rows. If you need to import more than 250 users, you can create more than one spreadsheet.
 
-- **¿Qué idiomas puedo usar?** Al crear la hoja de cálculo, puede escribir etiquetas de columna de datos de usuario en cualquier idioma o carácter, pero no debe cambiar el orden de las etiquetas, como se muestra en el ejemplo. You can then make entries into the fields, using any language or characters, and save your file in a Unicode or UTF-8 format.
+- **¿Qué idiomas puedo usar?** Al crear la hoja de cálculo, puede escribir etiquetas de columna de datos de usuario en cualquier idioma o caracteres, pero no debe cambiar el orden de las etiquetas, como se muestra en el ejemplo. You can then make entries into the fields, using any language or characters, and save your file in a Unicode or UTF-8 format.
 
 - **¿Qué ocurre si voy a agregar usuarios de diferentes países o regiones?** Cree una hoja de cálculo para cada área. Deberá seguir los pases del asistente para agregar usuarios en bloque para cada una de las hojas de cálculo y dar una única ubicación a todos los usuarios incluidos en el archivo con los que trabaja.
 
@@ -110,7 +110,7 @@ Cuando guarde el archivo, probablemente recibirá un mensaje que le informará d
 
 |**Etiquetas columnas datos usuarios**|**Longitud máxima (en caracteres)**|
 |:-----|:-----|
-|Nombre de usuario (obligatorio)  <br/> |79, incluido el signo (@), con el formato name@domain. \<extension\> . El alias del usuario no puede superar los 50 caracteres y el nombre de dominio no puede superar los 48 caracteres.  <br/> |
+|Nombre de usuario (obligatorio)  <br/> |79, incluido el signo at (@), con el formato name@domain. \<extension\> . El alias del usuario no puede superar los 50 caracteres y el nombre de dominio no puede superar los 48 caracteres.  <br/> |
 |Nombre  <br/> |64  <br/> |
 |Apellido  <br/> |64  <br/> |
 |Nombre para mostrar (obligatorio)  <br/> |256  <br/> |
@@ -130,8 +130,8 @@ Cuando guarde el archivo, probablemente recibirá un mensaje que le informará d
 
 - **Asegúrese una vez más de que el archivo tenga un formato correcto.** Compruebe que los encabezados de las columnas coincidan con los encabezados del archivo de muestra. Asegúrese de haber respetado los límites de longitud y de que los campos estén separados por comas.
 
-- **Si no ve los nuevos usuarios de Microsoft 365 inmediatamente, espere unos minutos.** Los cambios pueden tardar un poco en realizarse en todos los servicios de Microsoft 365. 
+- **Si no ve los nuevos usuarios en Microsoft 365 inmediatamente, espere unos minutos.** Los cambios pueden tardar un poco en realizarse en todos los servicios de Microsoft 365. 
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-[Agregar usuarios individualmente o de forma masiva a Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users)
+[Agregar usuarios de forma individual o masiva a Microsoft 365](/office365/admin/add-users/add-users)

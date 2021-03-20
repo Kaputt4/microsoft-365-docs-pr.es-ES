@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: Obtenga información acerca de cómo renovar la suscripción de Microsoft 365 al activar o desactivar la facturación periódica.
-ms.openlocfilehash: 3bde3cc6d62e89e3339c268b9e3f9be5d657c467
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 8b38336ccb7a0a29b5782e55117389f6a19a0d80
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114614"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903529"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renovar Microsoft 365 para empresas
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -112,4 +112,4 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 
 [Especificar la clave de producto](../enter-your-product-key.md)
   
-[Comprar la versión de prueba de Microsoft 365 para empresas](../buy-a-subscription-from-your-free-trial.md)
+[Comprar la versión de prueba de Microsoft 365 para empresas](../try-or-buy-microsoft-365.md)

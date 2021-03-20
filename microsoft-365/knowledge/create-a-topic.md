@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: c3ba9ce6675e81a99309243db251b34a21a4b43f
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: d6e953c86939d732632e87573fc2aa5392f09aa2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454164"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904941"
 ---
 # <a name="create-a-new-topic"></a>Cree un equipo nuevo 
 
@@ -29,11 +29,11 @@ En Temas de Viva, puede crear un nuevo tema si uno no se detecta a través de la
 > Aunque la información de un tema recopilado por AI está recortada en [seguridad,](topic-experiences-security-trimming.md)tenga en cuenta que la descripción del tema y la información de personas de un tema creado manualmente es visible para todos los usuarios que tienen permisos para ver el tema. 
 
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 Para crear un nuevo tema, debe:
 - Tener una licencia de Viva Topics.
-- Tener permisos para [**quién puede crear o editar temas**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Los administradores de conocimientos pueden conceder a los usuarios este permiso en la configuración de permisos del tema Temas de Viva. 
+- Tener permisos para [**quién puede crear o editar temas**](./topic-experiences-user-permissions.md). Los administradores de conocimientos pueden conceder a los usuarios este permiso en la configuración de permisos del tema Temas de Viva. 
 
 > [!Note] 
 > Los usuarios que tienen permiso para administrar temas en el centro de temas (administradores de conocimientos) ya tienen permisos para crear y editar temas.
@@ -126,13 +126,6 @@ Después de publicar la página, el nombre del tema, el nombre alternativo, la d
 
 
 ## <a name="see-also"></a>Consulte también
-
-
-
-  
-
-
-
 
 
 

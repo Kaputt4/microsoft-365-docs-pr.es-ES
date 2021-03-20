@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 26e62d6e59f1f90e35d9e18e6eed917a66876645
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: f8dd666c41863192d866693c6860a64064f846e6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453926"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904857"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Aplicaciones de Microsoft 365 para empresas
 
@@ -28,7 +28,7 @@ Microsoft Managed Desktop garantiza que las aplicaciones de Microsoft 365 para e
 - PowerPoint
 - Outlook
 - Publisher
-- Acceso
+- Access
 - Skype Empresarial
 - OneNote
 
@@ -47,7 +47,7 @@ Microsoft Managed Desktop no admite la implementación de la versión de 32 bits
 
 ## <a name="updates-to-microsoft-365-apps"></a>Actualizaciones de Aplicaciones de Microsoft 365
 
-Las aplicaciones de Microsoft 365 se establecen para actualizarse en el Canal [mensual de empresa.](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) Esta práctica proporciona a los usuarios nuevas características de Office cada mes, pero solo recibirán una actualización al mes en una programación de lanzamiento predecible. Las actualizaciones se lanzan el segundo martes del mes; estas actualizaciones pueden incluir actualizaciones de características, seguridad y calidad. Estas actualizaciones se producen automáticamente y se sacan directamente de la red CDN de Office para ese canal específico.
+Las aplicaciones de Microsoft 365 se establecen para actualizarse en el Canal [mensual de empresa.](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) Esta práctica proporciona a los usuarios nuevas características de Office cada mes, pero solo recibirán una actualización al mes en una programación de lanzamiento predecible. Las actualizaciones se lanzan el segundo martes del mes; estas actualizaciones pueden incluir actualizaciones de características, seguridad y calidad. Estas actualizaciones se producen automáticamente y se sacan directamente de la red CDN de Office para ese canal específico.
 
 Microsoft Managed Desktop escalona cada versión para identificar posibles problemas en el entorno. Completamos el lanzamiento 28 días después de la versión del grupo de productos de Microsoft 365 App. Microsoft Managed Desktop programa las versiones de actualización a diferentes grupos para dar tiempo a la validación y las pruebas de la siguiente manera: 
 
@@ -56,7 +56,7 @@ Microsoft Managed Desktop escalona cada versión para identificar posibles probl
 - Rápido: 3 días
 - Ancho: 7 días
 
-Microsoft Managed Desktop establece una fecha límite de actualización de siete [días](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) para dispositivos. Una vez que la actualización está disponible, debe instalarse en un plazo de siete días. Se [](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) notifica a los usuarios que las actualizaciones son necesarias en varias ubicaciones: la aplicación, en la bandeja del sistema 12 horas antes de la fecha límite, y reciben una advertencia de 15 minutos antes de la fecha límite. Todas las aplicaciones de Microsoft 365 deben cerrarse para que se complete la actualización.
+Microsoft Managed Desktop establece una fecha límite de actualización de siete [días](/deployoffice/configure-update-settings-microsoft-365-apps) para dispositivos. Una vez que la actualización está disponible, debe instalarse en un plazo de siete días. Se [](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) notifica a los usuarios que las actualizaciones son necesarias en varias ubicaciones: la aplicación, en la bandeja del sistema 12 horas antes de la fecha límite, y reciben una advertencia de 15 minutos antes de la fecha límite. Todas las aplicaciones de Microsoft 365 deben cerrarse para que se complete la actualización.
 
 ### <a name="pausing-or-rolling-back-an-update"></a>Pausar o revertir una actualización
 
@@ -68,7 +68,7 @@ Durante una versión, Microsoft Managed Desktop supervisa las tasas de error de 
 
 Optimización de distribución es una tecnología de distribución punto a punto disponible en Windows 10. Permite a los dispositivos compartir contenido, como las actualizaciones, que los dispositivos han descargado de Microsoft a través de Internet. Su uso puede ayudar a reducir el ancho de banda de red porque un dispositivo puede obtener partes de la actualización de otro dispositivo en su red local en lugar de tener que descargar la actualización por completo de Microsoft.
 
-[Optimización de](https://docs.microsoft.com/deployoffice/delivery-optimization) entrega está habilitada de forma predeterminada en dispositivos que ejecutan las ediciones windows 10 Enterprise o Windows 10 Education. 
+[Optimización de](/deployoffice/delivery-optimization) entrega está habilitada de forma predeterminada en dispositivos que ejecutan las ediciones windows 10 Enterprise o Windows 10 Education. 
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Configuración administrada por Microsoft Managed Desktop
 
@@ -76,7 +76,7 @@ Microsoft administra algunas opciones de configuración como parte del servicio.
 
 ### <a name="update-settings"></a>Actualizar configuración
 
-Microsoft Managed Desktop mantiene toda la configuración [de actualización para](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) dispositivos administrados y debe modificar esta configuración.
+Microsoft Managed Desktop mantiene toda la configuración [de actualización para](/deployoffice/configure-update-settings-microsoft-365-apps) dispositivos administrados y debe modificar esta configuración.
 
 ### <a name="set-updates-to-occur-automatically"></a>Establecer actualizaciones para que se produzcan automáticamente
 
@@ -88,7 +88,7 @@ Esta directiva se configura para garantizar que todos los dispositivos de Office
 
 **Valor predeterminado:** 7 días
 
-La **directiva UpdateDeadline** se usa para configurar el período de gracia que tienen los usuarios antes de que se aplique una actualización en el dispositivo. Esta directiva de fecha límite también desencadena [notificaciones](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) al usuario para informarle de los cambios necesarios en su dispositivo.  
+La **directiva UpdateDeadline** se usa para configurar el período de gracia que tienen los usuarios antes de que se aplique una actualización en el dispositivo. Esta directiva de fecha límite también desencadena [notificaciones](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) al usuario para informarle de los cambios necesarios en su dispositivo.  
 
 ### <a name="defer-updates-on-a-device-for-a-period"></a>Aplazar actualizaciones en un dispositivo durante un período
 
@@ -103,7 +103,7 @@ Esta directiva se configura de forma diferente para cada grupo de dispositivos d
 
 **Valor predeterminado**: False
 
-La configuración "ocultar notificaciones de actualización" se establece en **False** en dispositivos [](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) de Escritorio administrado de Microsoft para proporcionar la mejor experiencia de actualización para los usuarios notificándolos cuando se necesitan actualizaciones.
+La configuración "ocultar notificaciones de actualización" se establece en **False** en dispositivos [](/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) de Escritorio administrado de Microsoft para proporcionar la mejor experiencia de actualización para los usuarios notificándolos cuando se necesitan actualizaciones.
 
 ### <a name="specify-a-location-to-look-for-updates"></a>Especificar una ubicación para buscar actualizaciones
 
@@ -150,7 +150,7 @@ Algunas organizaciones están preocupadas por que los usuarios tengan acceso a a
 
 ## <a name="settings-you-manage"></a>Configuración que administra
 
-Hay muchas otras directivas que Microsoft Managed Desktop aún no establece como parte de nuestro servicio. Puede configurar estas directivas mediante Microsoft Intune, que usa el servicio de directivas en la nube [de Office.](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) Para establecer estas directivas, siga estos pasos:
+Hay muchas otras directivas que Microsoft Managed Desktop aún no establece como parte de nuestro servicio. Puede configurar estas directivas mediante Microsoft Intune, que usa el servicio de directivas en la nube [de Office.](/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) Para establecer estas directivas, siga estos pasos:
 
 1.  Inicie sesión en el Centro de administración de Microsoft Endpoint Manager.
 2.  Seleccione **Aplicaciones > directivas para aplicaciones de Office > Crear**

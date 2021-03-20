@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 4d29f4f3df3d65ad72a19f059763523d7f7cba31
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 5f356c5861586d4435a619a056a6fa1a0afc53f0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597010"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904143"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrar consultas de búsqueda avanzada desde Microsoft Defender para endpoint
 
@@ -178,8 +178,8 @@ AlertInfo
 | where EntityType == "Ip" and RemoteIP == "192.88.99.01" 
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 - [Activar Microsoft 365 Defender](advanced-hunting-query-language.md)
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)
-- [Búsqueda avanzada en Microsoft Defender para endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+- [Búsqueda avanzada en Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)

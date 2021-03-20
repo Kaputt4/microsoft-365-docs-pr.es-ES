@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las opciones disponibles y preferidas para permitir mensajes entrantes en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 33f4e9ac33f7952612e8b469345e38507ece5f4b
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 88c70eea4952eda9315687ae90e2f6834f1edaf8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453746"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903825"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Crear listas de remitentes seguros en EOP
 
@@ -58,7 +58,7 @@ En cambio, también tiene varias opciones para bloquear el correo electrónico d
 
 ## <a name="recommended-use-mail-flow-rules"></a>(Recomendado) Usar reglas de flujo de correo
 
-Las reglas de flujo de correo en Exchange Online y EOP independientes usan condiciones y excepciones para identificar mensajes y acciones para especificar qué se debe hacer con esos mensajes. Para obtener más información, vea [Reglas de flujo de correo (reglas de transporte) en Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+Las reglas de flujo de correo en Exchange Online y EOP independientes usan condiciones y excepciones para identificar mensajes y acciones para especificar qué se debe hacer con esos mensajes. Para obtener más información, vea [Reglas de flujo de correo (reglas de transporte) en Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
 En el siguiente ejemplo se supone que necesita correo electrónico contoso.com omitir el filtrado de correo no deseado. Para ello, configure las siguientes opciones:
 

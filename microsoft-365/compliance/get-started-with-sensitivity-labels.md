@@ -19,22 +19,22 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Está listo para iniciar la implementación de etiquetas de confidencialidad para ayudar a proteger los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: ef89cadc09dea7c2186fbf4a0d76d2c690aa8acc
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: b88e32ccfc0f82749ede2b0919001e9c29f7f7be
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597222"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906022"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Para obtener información sobre qué son las etiquetas de confidencialidad y cómo pueden ayudarle a proteger los datos de su organización, vea [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md).
 
-Si tiene [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection), determine si necesita migrar etiquetas a la plataforma de etiquetado unificado y qué cliente de etiquetado usar:
-- [¿Cómo puedo saber si mi espacio empresarial está en la plataforma de etiquetado unificado?](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
-- [Elegir su solución de etiquetado de Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
+Si tiene [Azure Information Protection](/azure/information-protection/what-is-information-protection), determine si necesita migrar etiquetas a la plataforma de etiquetado unificado y qué cliente de etiquetado usar:
+- [¿Cómo puedo saber si mi espacio empresarial está en la plataforma de etiquetado unificado?](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
+- [Elegir su solución de etiquetado de Windows](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
 
 Cuando esté listo para empezar a proteger los datos de la organización mediante etiquetas de confidencialidad:
 
@@ -54,7 +54,7 @@ Flujo básico para la implementación y aplicación de etiquetas de confidencial
 
 Distintas suscripciones admiten diferentes etiquetas de confidencialidad y los requisitos de licencias para los usuarios dependen de las características que use.
 
-Para ver las opciones para que los usuarios puedan beneficiarse de las características de cumplimiento de Microsoft 365, consulte la [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD). Para las etiquetas de confidencialidad, vea la sección [Protección de la información](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) y la descarga relacionada de archivos PDF o Excel.
+Para ver las opciones para que los usuarios puedan beneficiarse de las características de cumplimiento de Microsoft 365, consulte la [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Para las etiquetas de confidencialidad, vea la sección [Protección de la información](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) y la descarga relacionada de archivos PDF o Excel.
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>Permisos necesarios para crear y administrar etiquetas de confidencialidad
 
@@ -64,7 +64,7 @@ De forma predeterminada, los administradores globales de su espacio empresarial 
 
 Como alternativa a los roles predeterminados, puede crear un nuevo grupo de roles y agregar los roles de **Administrador de etiquetas de confidencialidad** o **Configuración de la organización** a este grupo. Para un rol de solo lectura, utilice el **Lector de etiquetas de confidencialidad**. 
 
-Para obtener instrucciones sobre cómo agregar usuarios a los roles predeterminados o crear sus propios grupos de roles, consulte [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+Para obtener instrucciones sobre cómo agregar usuarios a los roles predeterminados o crear sus propios grupos de roles, consulte [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Estos permisos son necesarios solo para crear y configurar etiquetas de confidencialidad y sus directivas de etiquetado. No son necesarios para aplicar las etiquetas en aplicaciones o servicios. Si se necesitan permisos adicionales para configuraciones específicas relacionadas con las etiquetas de confidencialidad, estos permisos se especificarán en las instrucciones de la documentación correspondientes.
 
@@ -82,19 +82,19 @@ Todos los escenarios requieren que [Crear y configurar etiquetas de confidencial
 |Quiero...|Documentación|
 |----------------|---------------|
 |Administrar etiquetas de confidencialidad para las aplicaciones de Office para que el contenido se etiquete a medida que se crea (incluye la compatibilidad con el etiquetado manual en todas las plataformas) |[Administrar etiquetas de confidencialidad en las aplicaciones de Office](sensitivity-labels-office-apps.md)|
-|Permitir que los usuarios etiqueten y protejan archivos de equipos Windows con las aplicaciones de Office, el Explorador de archivos y PowerShell|[Cliente de etiquetado unificado de Azure Information Protection para Windows](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
+|Permitir que los usuarios etiqueten y protejan archivos de equipos Windows con las aplicaciones de Office, el Explorador de archivos y PowerShell|[Cliente de etiquetado unificado de Azure Information Protection para Windows](/azure/information-protection/rms-client/aip-clientv2)|
 |Cifre documentos y mensajes de correo electrónico con etiquetas de confidencialidad y restrinja quién puede tener acceso a ellos y cómo puede usar el contenido |[Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado](encryption-sensitivity-labels.md)|
 |Habilite las etiquetas de confidencialidad para Office en la web, con soporte para coautoría, eDiscovery, la prevención de pérdida de datos y búsqueda, incluso cuando los documentos estén cifrados. | [Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 |Usar la coautoría y guardar automáticamente en las aplicaciones de escritorio de Office cuando los documentos están cifrados | [Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad](sensitivity-labels-coauthoring.md)
 |Aplicar automáticamente etiquetas de confidencialidad a documentos y mensajes de correo electrónico | [Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)|
 |Use etiquetas de confidencialidad para proteger el contenido de Teams y SharePoint |[Usar etiquetas de confidencialidad con Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](sensitivity-labels-teams-groups-sites.md)|
 |Prevenir o advertir a los usuarios sobre el uso compartido de archivos o correos electrónicos con una etiqueta de confidencialidad específica |[Usar etiquetas de sensibilidad como condiciones en las directivas de DLP (versión preliminar)](dlp-sensitivity-label-as-condition.md) |
-|Detecte, etiquete y proteja los archivos almacenados en almacenes de datos locales |[Implementación del escáner de Azure Information Protection para clasificar y proteger los archivos automáticamente](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
-|Detecte, etiquete y proteja los archivos almacenados en almacenes de datos que están en la nube|[Descubrir, clasificar, etiquetar y proteger la información regulada y confidencialidad almacenada en la nube](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|Aplicar y ver las etiquetas de confidencialidad en Power BI y proteger los datos cuando se guarden fuera del servicio.|[Etiquetas de confidencialidad en Power BI](https://docs.microsoft.com/power-bi/admin/service-security-sensitivity-label-overview)|
+|Detecte, etiquete y proteja los archivos almacenados en almacenes de datos locales |[Implementación del escáner de Azure Information Protection para clasificar y proteger los archivos automáticamente](/azure/information-protection/deploy-aip-scanner)|
+|Detecte, etiquete y proteja los archivos almacenados en almacenes de datos que están en la nube|[Descubrir, clasificar, etiquetar y proteger la información regulada y confidencialidad almacenada en la nube](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|Aplicar y ver las etiquetas de confidencialidad en Power BI y proteger los datos cuando se guarden fuera del servicio.|[Etiquetas de confidencialidad en Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|
 |Supervisar y comprender cómo se usan las etiquetas de confidencialidad en la organización|[Información general sobre la clasificación de datos](data-classification-overview.md) <br /><br /> [Introducción a la clasificación de datos](data-classification-overview.md)|
-|Amplíe las etiquetas de confidencialidad a los servicios y aplicaciones de terceros.|[SDK de Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
-|Amplíe las etiquetas de confidencialidad en todo el contenido de Azure Blob Storage, archivos de Azure, Azure Data Lake Storage Gen1 y Azure Data Lake Storage Gen12|[Etiquete automáticamente su contenido en Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label) |
+|Amplíe las etiquetas de confidencialidad a los servicios y aplicaciones de terceros.|[SDK de Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk)|
+|Amplíe las etiquetas de confidencialidad en todo el contenido de Azure Blob Storage, archivos de Azure, Azure Data Lake Storage Gen1 y Azure Data Lake Storage Gen12|[Etiquete automáticamente su contenido en Azure Purview](/azure/purview/create-sensitivity-label) |
 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Documentación de usuario final para las etiquetas de confidencialidad
@@ -111,6 +111,6 @@ También puede usar los siguientes recursos para obtener instrucciones básicas:
 - [Aplicar o recomendar automáticamente etiquetas de confidencialidad para sus archivos y correos electrónicos en Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [Problemas conocidos al aplicar o recomendar automáticamente etiquetas de confidencialidad](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
 
-- [Guía del usuario de etiquetado unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-user-guide)
+- [Guía del usuario de etiquetado unificado de Azure Information Protection](/azure/information-protection/rms-client/clientv2-user-guide)
 
-Si las etiquetas de confidencialidad aplican el cifrado para documentos PDF, estos se pueden abrir con Microsoft Edge en Windows o Mac. Para obtener más información y para lectores alternativos, vea [¿Cuáles son los lectores de PDF compatibles para archivos PDF protegidos?](https://docs.microsoft.com/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+Si las etiquetas de confidencialidad aplican el cifrado para documentos PDF, estos se pueden abrir con Microsoft Edge en Windows o Mac. Para obtener más información y para lectores alternativos, vea [¿Cuáles son los lectores de PDF compatibles para archivos PDF protegidos?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)

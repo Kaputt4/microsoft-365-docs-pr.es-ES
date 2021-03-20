@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use la acción de auditoría del buzón MailItemsAccessed para realizar investigaciones forenses de cuentas de usuarios comprometidas.
-ms.openlocfilehash: 15379a5c24ee222cf097e94d46dc46de0e385820
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: e9dda101b330f6632e66c226156df3497ac38453
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868008"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903486"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Usar auditoría avanzada para investigar cuentas comprometidas
 
@@ -31,7 +31,7 @@ Para ayudarle con la investigación de las cuentas de correo electrónico, ahora
 
 ## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>La acción de auditoría del buzón MailItemsAccessed
 
-La nueva acción MailItemsAccessed forma parte de la nueva función de [auditoría avanzada](advanced-audit.md). Forma parte de las [auditorías del buzón de Exchange](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) y está habilitada de forma predeterminada para los usuarios que tienen asignada una licencia de Office 365 o Microsoft 365 E5 o para las organizaciones con una suscripción al complemento de Cumplimiento de Microsoft 365 E5.
+La nueva acción MailItemsAccessed forma parte de la nueva función de [auditoría avanzada](advanced-audit.md). Forma parte de las [auditorías del buzón de Exchange](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) y está habilitada de forma predeterminada para los usuarios que tienen asignada una licencia de Office 365 o Microsoft 365 E5 o para las organizaciones con una suscripción al complemento de Cumplimiento de Microsoft 365 E5.
 
 La acción de auditoría del buzón MailItemsAccessed abarca todos los protocolos de correo: POP, IMAP, MAPI, EWS, Exchange ActiveSync y REST. También cubre los dos tipos de acceso al correo: *sincronización* y *enlace*.
 
@@ -67,7 +67,7 @@ Vea el paso 1 de la sección [usar registros de auditoría de MailItemsAccessed 
 
 La auditoría del buzón genera registros de auditoría para obtener acceso a los mensajes de correo electrónico para que pueda asegurarse de que los mensajes de correo electrónico no se han visto comprometidos. Por este motivo, en los casos en los que no se está seguro de que se haya tenido acceso a ciertos datos, damos por sentado que ha sido así, registrando toda la actividad de acceso al correo.
 
-El uso de registros de auditoría de MailItemsAccessed para propósitos forenses suele realizarse después de que se haya resuelto la violación de datos y se haya eliminado el atacante. Para comenzar la investigación, debe identificar el conjunto de buzones que se han visto comprometidos y determinar el período de tiempo en el que el atacante ha tenido acceso a los buzones de su organización. Después, puede usar los cmdlets **Search-UnifiedAuditLog** o **Search-MailboxAuditLog** en el [PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) para buscar registros de auditoría que correspondan a la violación de datos. 
+El uso de registros de auditoría de MailItemsAccessed para propósitos forenses suele realizarse después de que se haya resuelto la violación de datos y se haya eliminado el atacante. Para comenzar la investigación, debe identificar el conjunto de buzones que se han visto comprometidos y determinar el período de tiempo en el que el atacante ha tenido acceso a los buzones de su organización. Después, puede usar los cmdlets **Search-UnifiedAuditLog** o **Search-MailboxAuditLog** en el [PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) para buscar registros de auditoría que correspondan a la violación de datos. 
 
 Puede ejecutar uno de los siguientes comandos para buscar registros de auditoría de MailItemsAccessed:
 
@@ -192,4 +192,4 @@ Sintaxis para el comando del recorte de pantalla antarior:
 
 ```powershell
 Search-MailboxAuditLog -Identity admin -ShowDetails -Operations MailItemsAccessed -ResultSize 2000 | Select LastAccessed,Operation,AuditOperationsCountInAggregatedRecord,ClientInfoString
-``` 
+```

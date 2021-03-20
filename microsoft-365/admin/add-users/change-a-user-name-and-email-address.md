@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Obtenga información acerca de cómo un administrador global puede cambiar la dirección de correo electrónico y el nombre para mostrar de un usuario. '
-ms.openlocfilehash: 7f894af3778964dfa6c696c1f467bc0dd8313f32
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: 6a5498f4e480802f8770f7b7adde55fe7c996dc8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585299"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904485"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiar un nombre de usuario y una dirección de correo electrónico
 
@@ -221,7 +221,7 @@ Este cambio puede tardar hasta 24 horas en surtir efecto en todos los servicios.
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>"No se encuentra ningún parámetro que coincida con el nombre de parámetro `EmailAddresses´"
 
-Si recibe el mensaje de error "**No se encuentra ningún parámetro que coincida con el nombre de parámetro ‘EmailAddresses’"**, significa que la configuración de su espacio empresarial o de su dominio personalizado, si ha agregado alguno recientemente, está tardando un poco más de lo normal. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al [soporte técnico](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) y pídales que hagan una sincronización completa.
+Si recibe el mensaje de error "**No se encuentra ningún parámetro que coincida con el nombre de parámetro ‘EmailAddresses’"**, significa que la configuración de su espacio empresarial o de su dominio personalizado, si ha agregado alguno recientemente, está tardando un poco más de lo normal. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al [soporte técnico](../contact-support-for-business-products.md) y pídales que hagan una sincronización completa.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"No se pudo modificar el usuario. Revise la información de usuario y vuelva a intentarlo"
 
@@ -249,7 +249,7 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
 > [!TIP]
 > Esto cambia el atributo **userPrincipalName** de la persona y no influirá en su dirección de correo electrónico Microsoft Online Email Routing Address (MOERA). Sin embargo, es recomendable, que el inicio de sesión del usuario UPN coincida con su dirección SMTP principal. 
   
-Para obtener información sobre cómo cambiar el nombre de usuario de una persona en Active Directory, en Windows Server 2003 y en las versiones anteriores, vea [Cambiar el nombre de una cuenta de usuario](https://go.microsoft.com/fwlink/?LinkId=809091).
+Para obtener información sobre cómo cambiar el nombre de usuario de una persona en Active Directory, en Windows Server 2003 y en las versiones anteriores, vea [Cambiar el nombre de una cuenta de usuario](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10)).
   
 ## <a name="related-articles"></a>Artículos relacionados
 

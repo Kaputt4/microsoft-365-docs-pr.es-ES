@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Obtenga información sobre los límites vigentes para la característica de búsqueda de contenido en el Centro de cumplimiento de Microsoft 365, como el número máximo de búsquedas simultáneas. Estos límites de búsqueda también se aplican a las búsquedas asociadas con casos de exhibición de documentos electrónicos principales.
-ms.openlocfilehash: 7212175dece6956ac825cef273b06603230736ee
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+ms.openlocfilehash: fd77b12fe8cfc8a53876a3e95ba8f48434ae77b8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717600"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905882"
 ---
 # <a name="limits-for-content-search"></a>Límites de búsqueda de contenido 
 Se aplican varios límites a la herramienta de búsqueda de contenido en el Centro de cumplimiento de Microsoft 365. Esto incluye las búsquedas que se ejecutan en la página **Búsqueda** de contenido y las búsquedas asociadas con un caso de exhibición de documentos electrónicos en la **página eDiscovery** principal. Estos límites ayudan a mantener el estado y la calidad de los servicios proporcionados a las organizaciones. También hay límites relacionados con la indización de mensajes de correo electrónico en Exchange Online para la búsqueda. No puede modificar los límites de la búsqueda de contenido o la indización de correo electrónico, pero debe tener en cuenta estos límites para planear, ejecutar y solucionar problemas de búsquedas de contenido.
@@ -35,7 +35,7 @@ En la tabla siguiente se enumeran los límites de búsqueda al usar la herramien
 |:-----|:-----|
 |El número máximo de buzones o sitios que se pueden buscar en una sola búsqueda  <br/> |Sin límite <sup>1</sup> <br/> |
 |El número máximo de búsquedas que se pueden ejecutar al mismo tiempo en la organización.  <br/> |30  <br/> |
-|El número máximo de búsquedas en toda la organización que se pueden ejecutar al mismo tiempo. <br/> |3   <br/> |
+|El número máximo de búsquedas en toda la organización que se pueden ejecutar al mismo tiempo. <br/> |3  <br/> |
 |El número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo. Este límite es más probable que se cumpla cuando el usuario intente iniciar varias búsquedas mediante el comando **Get-ComplianceSearch \| Start-ComplianceSearch** en PowerShell del Centro de seguridad & cumplimiento.  <br/> |10    <br/> |
 |Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa al obtener una vista previa de los resultados de búsqueda de contenido.  <br/> |100  <br/> |
 |El número máximo de elementos encontrados en todos los buzones de usuario que se muestran en la página de vista previa al obtener una vista previa de los resultados de la búsqueda. Se muestran los elementos más recientes.  <br/> |1,000  <br/> |
@@ -47,7 +47,7 @@ En la tabla siguiente se enumeran los límites de búsqueda al usar la herramien
 |El número máximo de buzones públicos que se pueden obtener una vista previa de los resultados de búsqueda. Si hay más de 500 buzones de carpetas públicas que contienen contenido que coincide con la consulta de búsqueda, solo los 500 buzones de carpetas públicas con más resultados de búsqueda estarán disponibles para la vista previa.  <br/> |500  <br/> |
 |Número máximo de caracteres para la consulta de búsqueda (incluidos los operadores y las condiciones) de una búsqueda.  <br/><br/> **Nota:** Este límite tiene efecto después de expandir la consulta, lo que significa que la consulta se expandirá con cada una de las palabras clave. Por ejemplo, si una consulta de búsqueda tiene 15 palabras clave y parámetros y condiciones adicionales, la consulta se expande 15 veces, cada una con los demás parámetros y condiciones de la consulta. Por lo tanto, aunque el número de caracteres de la consulta de búsqueda puede estar por debajo del límite, es la consulta expandida la que puede contribuir a superar este límite.  <br/> |**Buzones:** 10 000  <br/> **Sitios:** 4.000 al buscar en todos los sitios o 2.000 al buscar hasta 20 sitios <sup>2</sup> <br/> |
 |Número máximo de variantes devueltas al usar un prefijo comodín para buscar una frase exacta en una consulta de búsqueda o cuando se usa un prefijo comodín y el **operador booleano NEAR.**  <br/> |10 000 <sup>3</sup> <br/> |
-|Número mínimo de caracteres alfa para caracteres comodín de prefijo; por ejemplo,  `time*` ,  `one*` o  `set*` .  <br/> |3   <br/> |
+|Número mínimo de caracteres alfa para caracteres comodín de prefijo; por ejemplo,  `time*` ,  `one*` o  `set*` .  <br/> |3  <br/> |
 |Número máximo de buzones de una búsqueda en la que puede eliminar elementos mediante una acción de "búsqueda y purga" (mediante el comando **New-ComplianceSearchAction -Purge).** Si la búsqueda para la que está realizando una acción de purga tiene más buzones de origen que este límite, se producirá un error en la acción de purga. Para obtener más información acerca de la búsqueda y la purga, vea Buscar y eliminar mensajes de correo electrónico [en la organización.](search-for-and-delete-messages-in-your-organization.md)  <br/> |50 000  <br/> |
 |El número máximo de ubicaciones de una búsqueda desde la que se pueden exportar elementos. Si la búsqueda que está exportando tiene más ubicaciones que este límite, se producirá un error en la exportación. Para obtener más información, vea [Exportar resultados de búsqueda de contenido](export-search-results.md).  <br/> |100 000  <br/> |
 |||
@@ -76,7 +76,7 @@ En la tabla siguiente se enumeran los límites al exportar los resultados de una
 |Cantidad máxima de datos exportables de una sola búsqueda  <br/><br/> **Nota:** Si los resultados de la búsqueda son superiores a 2 TB, considere la posibilidad de usar intervalos de fechas u otros tipos de filtros para reducir el tamaño total de los resultados de búsqueda. <br/>  |2 TB  <br/> | 
 |Máximo que una organización puede exportar en un solo día <br/><br/> **Nota:** Este límite se restablece diariamente a las 12:00 UTC <br/> |2 TB <br/> |
 |Máximo de exportaciones simultáneas que se pueden ejecutar al mismo tiempo en la organización <br/><br/> **Nota:** La ejecución de **una exportación de solo** informe cuenta con el total de exportaciones simultáneas de la organización. Si tres usuarios realizan tres exportaciones cada uno, solo se puede realizar otra exportación. Independientemente de si exporta un informe o resultados de búsqueda, no se pueden realizar otras exportaciones hasta que se haya completado.   <br/> |10   <br/> |
-|Exportaciones máximas que un solo usuario puede ejecutar en cualquier momento <br/> |3  <br/> |
+|Exportaciones máximas que un solo usuario puede ejecutar en cualquier momento <br/> |3 <br/> |
 |Número máximo de buzones de correo para los resultados de búsqueda que se pueden descargar con la herramienta de exportación de exhibición de documentos electrónicos <br/><br/> **Nota:** Para descargar los resultados de la búsqueda de más de 100 000 buzones, debe usar PowerShell del Centro de seguridad & cumplimiento. Para obtener instrucciones, [vea Exporting results from more than 100,000 mailboxes](export-search-results.md#exporting-results-from-more-than-100000-mailboxes). <br/> | 100 000 <br/>|
 |Tamaño máximo del archivo PST que se puede exportar <br/><br/> **Nota:** Si los resultados de la búsqueda del buzón de un usuario son superiores a 10 GB, los resultados de búsqueda del buzón se exportarán en dos (o más) archivos PST independientes. Si decide exportar todos los resultados de búsqueda en un único archivo PST, el archivo PST se mostrará en archivos PST adicionales si el tamaño total de los resultados de búsqueda es mayor que 10 GB. Si quieres cambiar este tamaño predeterminado, puedes editar el Registro de Windows en el equipo que usas para exportar los resultados de la búsqueda. Vea [Cambiar el tamaño de los archivos PST al exportar resultados](change-the-size-of-pst-files-when-exporting-results.md)de búsqueda de exhibición de documentos electrónicos . Los resultados de la búsqueda de un buzón específico no se dividirán entre varios archivos PST a menos que el contenido de un único buzón tenga más de 10 GB. Si optó por exportar los resultados de la búsqueda en un archivo PST para que contenga todos los mensajes de una sola carpeta y los resultados de la búsqueda superen los 10 GB, los elementos siguen organizados en orden cronológico, por lo que se enviarán a archivos PST adicionales en función de la fecha enviada.<br/> | 10 GB <br/> |
 |Velocidad a la que se cargan los resultados de búsqueda de buzones y sitios en una ubicación de Azure Storage proporcionada por Microsoft. |Máximo de 2 GB por hora|
@@ -86,7 +86,7 @@ En la tabla siguiente se enumeran los límites al exportar los resultados de una
 
 En la tabla siguiente se describen los límites de indización que pueden provocar que se devuelva un mensaje de correo electrónico como un elemento no indexado o un elemento parcialmente indizado en los resultados de una búsqueda de contenido.
   
-| Límite de indización | Valor máximo | Descripción |
+| Límite de indización | Valor máximo | Description |
 |:-----|:-----|:-----|
 |Tamaño máximo de datos adjuntos|150 MB  <br/> |El tamaño máximo de un archivo adjunto de correo electrónico que analizará la indización. Los datos adjuntos que sean mayores que este límite no se analizarán para la indización y el mensaje con los datos adjuntos se marcará como parcialmente indizado.  <br/> <br/>**Nota:** El análisis es el proceso en el que el servicio de indización extrae texto de los datos adjuntos, quita caracteres innecesarios como signos de puntuación y espacios y, a continuación, divide el texto en palabras (en un proceso denominado tokenización), que luego se almacenan en el índice.           |
 |Número máximo de datos adjuntos  <br/> |250  <br/> |El número máximo de archivos adjuntos a un mensaje de correo electrónico que se analizarán para la indización. Si un mensaje tiene más de 250 datos adjuntos, los primeros 250 datos adjuntos se analizan e indizan y el mensaje se marca como parcialmente indizado porque tenía datos adjuntos adicionales que no se analizaron.  <br/> |
@@ -107,7 +107,7 @@ Hay límites adicionales relacionados con diferentes aspectos de la búsqueda de
 
 - [Investigar elementos parcialmente indizados en eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
 
-- [Límites de búsqueda para SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits)
+- [Límites de búsqueda para SharePoint Online](/sharepoint/search-limits)
 
 Para obtener información acerca de las búsquedas de contenido, vea:
   

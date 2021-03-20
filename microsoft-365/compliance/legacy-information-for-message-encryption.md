@@ -17,91 +17,91 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Aprenda a realizar la transición de archivos heredados a Office 365 cifrado de mensajes (OME) para su organización.
-ms.openlocfilehash: bf64d7991a843d2fd3d4f5f927eaa5c4bfef921c
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+description: Comprenda cómo realizar la transición de archivos heredados a Cifrado de mensajes (OME) de Office 365 para su organización.
+ms.openlocfilehash: 0b9c32b8b30753b02a5a0cdaa40b644ca89cfba3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49738037"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905922"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Información heredada para el cifrado de mensajes de Office 365
 
-Si todavía no ha movido su organización a las nuevas capacidades de OME, pero ya ha implementado OME, la información de este artículo se aplica a su organización. Microsoft recomienda que cree un plan para cambiar a las nuevas funciones de OME en cuanto sea razonable para su organización. Para obtener instrucciones, vea [configurar las nuevas funciones de cifrado de mensajes de Office 365 basadas en Azure Information Protection](set-up-new-message-encryption-capabilities.md). Si desea obtener más información sobre cómo funcionan las nuevas funciones en primer lugar, consulte [Office 365 Message Encryption](ome.md). En el resto de este artículo se hace referencia al comportamiento OME antes de la publicación de las nuevas capacidades de OME.
+Si aún no ha movido la organización a las nuevas funcionalidades de OME, pero ya ha implementado OME, la información de este artículo se aplica a su organización. Microsoft recomienda realizar un plan para pasar a las nuevas funcionalidades de OME tan pronto como sea razonable para su organización. Para obtener instrucciones, vea [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](set-up-new-message-encryption-capabilities.md). Si desea obtener más información sobre cómo funcionan primero las nuevas funcionalidades, vea Cifrado de mensajes de [Office 365](ome.md). El resto de este artículo hace referencia al comportamiento de OME antes del lanzamiento de las nuevas funcionalidades de OME.
   
-Con el cifrado de mensajes de Office 365, su organización puede enviar y recibir mensajes de correo electrónico cifrados entre usuarios de dentro y fuera de la organización. El cifrado de mensajes de Office 365 funciona con Outlook.com, Yahoo, gmail y otros servicios de correo electrónico. El cifrado de mensajes de correo electrónico ayuda a garantizar que solo los destinatarios deseados puedan ver el contenido de los mensajes.
+Con el cifrado de mensajes de Office 365, la organización puede enviar y recibir mensajes de correo electrónico cifrados entre personas dentro y fuera de la organización. El cifrado de mensajes de Office 365 funciona con Outlook.com, Yahoo, Gmail y otros servicios de correo electrónico. El cifrado de mensajes de correo electrónico ayuda a garantizar que solo los destinatarios previstos puedan ver el contenido del mensaje.
   
 Aquí le mostramos otros ejemplos:
   
-- Un empleado del Banco envía extractos de tarjeta de crédito a los clientes
+- Un empleado del banco envía extractos de tarjeta de crédito a los clientes
 
-- Un representante de la compañía de seguros proporciona detalles de directivas a los clientes
+- Un representante de la compañía de seguros proporciona detalles de la directiva a los clientes
 
-- Un intermediario de hipoteca solicita información financiera a un cliente para una solicitud de préstamo
+- Un agente de hipotecas solicita información financiera a un cliente para una solicitud de préstamo
 
-- Un proveedor de asistencia sanitaria envía información sobre el cuidado de la salud a los pacientes
+- Un proveedor de atención médica envía información de atención médica a los pacientes
 
-- Un abogado envía información confidencial a un cliente o a otro abogado
+- Un abogado envía información confidencial a un cliente u otro abogado
 
-## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>Cómo funciona el cifrado de mensajes de Office 365 sin las nuevas funciones
+## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>Cómo funciona el cifrado de mensajes de Office 365 sin las nuevas funcionalidades
 
-El cifrado de mensajes de Office 365 es un servicio en línea que se basa en Microsoft Azure Rights Management (Azure RMS). Con Azure RMS, los administradores pueden definir reglas de flujo de correo para determinar las condiciones de cifrado. Por ejemplo, una regla puede requerir el cifrado de todos los mensajes dirigidos a un destinatario específico.
+Cifrado de mensajes de Office 365 es un servicio en línea que se basa en Microsoft Azure Rights Management (Azure RMS). Con Azure RMS, los administradores pueden definir reglas de flujo de correo para determinar las condiciones del cifrado. Por ejemplo, una regla puede requerir el cifrado de todos los mensajes dirigidos a un destinatario específico.
   
-Cuando alguien envía un mensaje de correo electrónico en Exchange online que coincide con una regla de cifrado, el mensaje se envía con un archivo adjunto HTML. El destinatario abre los datos adjuntos HTML y sigue las instrucciones para ver el mensaje cifrado en el portal de cifrado de mensajes de Office 365. El destinatario puede elegir ver el mensaje iniciando sesión con una cuenta Microsoft o una escuela o un trabajo asociado con Office 365, o mediante un código de acceso único. El proceso de inicio de sesión ayuda a garantizar que solo los destinatarios previstos puedan ver los mensajes cifrados. Este proceso es muy diferente para las nuevas capacidades de OME.
+Cuando alguien envía un mensaje de correo electrónico en Exchange Online que coincide con una regla de cifrado, el mensaje se envía con datos adjuntos HTML. El destinatario abre los datos adjuntos HTML y sigue las instrucciones para ver el mensaje cifrado en el portal de cifrado de mensajes de Office 365. El destinatario puede elegir ver el mensaje iniciando sesión con una cuenta de Microsoft o un trabajo o escuela asociados con Office 365, o mediante un código de pase único. El proceso de inicio de sesión ayuda a garantizar que solo los destinatarios previstos puedan ver los mensajes cifrados. Este proceso es muy diferente para las nuevas funcionalidades de OME.
   
 En el siguiente diagrama se resume el paso de un mensaje de correo electrónico a través del proceso de cifrado y descrifrado.
   
 ![Diagrama que muestra la ruta de acceso de un correo electrónico cifrado](../media/O365-Office365MessageEncryption-Concept.png)
   
-Para obtener más información, vea [información de servicio para el cifrado de mensajes de Office 365 heredado antes de la publicación de las nuevas capacidades de OME](legacy-information-for-message-encryption.md#LegacyServiceInfo).
+Para obtener más información, vea [Service information for legacy Office 365 Message Encryption prior to the release of the new OME capabilities](legacy-information-for-message-encryption.md#LegacyServiceInfo).
   
-## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities"></a>Definición de reglas de flujo de correo para el cifrado de mensajes de Office 365 que no usan las nuevas funciones de OME
+## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities"></a>Definición de reglas de flujo de correo para el cifrado de mensajes de Office 365 que no usan las nuevas funcionalidades de OME
 
-Para habilitar el cifrado de mensajes de Office 365 sin las nuevas funciones, los administradores de Exchange Online y Exchange Online Protection definen las reglas de flujo de correo de Exchange. Estas reglas determinan en qué condiciones se deben cifrar los mensajes de correo electrónico, así como las condiciones para quitar el cifrado de mensajes. Cuando se establece una acción de cifrado para una regla, el servicio realiza la acción en todos los mensajes que coinciden con las condiciones de la regla antes de enviar los mensajes.
+Para habilitar el cifrado de mensajes de Office 365 sin las nuevas funcionalidades, los administradores de Exchange Online y Exchange Online Protection definen reglas de flujo de correo de Exchange. Estas reglas determinan en qué condiciones deben cifrarse los mensajes de correo electrónico, así como las condiciones para quitar el cifrado de mensajes. Cuando se establece una acción de cifrado para una regla, el servicio realiza la acción en los mensajes que coinciden con las condiciones de la regla antes de enviar los mensajes.
 
-Las reglas de flujo de correo son flexibles, lo que permite combinar condiciones para que pueda cumplir requisitos de seguridad específicos en una sola regla. Por ejemplo, puede crear una regla para cifrar todos los mensajes que contengan palabras clave especificadas y que estén dirigidos a destinatarios externos. El cifrado de mensajes de Office 365 también cifra las respuestas de destinatarios de correo electrónico cifrado y puede crear una regla que descifre esas respuestas como comodidad para los usuarios de correo electrónico. De este modo, los usuarios de la organización no tendrán que iniciar sesión en el portal de cifrado para ver las respuestas.
+Las reglas de flujo de correo son flexibles, lo que le permite combinar condiciones para que pueda cumplir requisitos de seguridad específicos en una sola regla. Por ejemplo, puede crear una regla para cifrar todos los mensajes que contienen palabras clave especificadas y están dirigidos a destinatarios externos. El cifrado de mensajes de Office 365 también cifra las respuestas de los destinatarios del correo electrónico cifrado y puede crear una regla que descifra esas respuestas para comodidad de los usuarios de correo electrónico. De este modo, los usuarios de la organización no tendrán que iniciar sesión en el portal de cifrado para ver las respuestas.
   
-Para obtener más información acerca de cómo crear reglas de flujo de correo de Exchange, vea [definir reglas para el cifrado de mensajes de Office 365](define-mail-flow-rules-to-encrypt-email.md).
+Para obtener más información acerca de cómo crear reglas de flujo de correo de Exchange, vea [Define Rules for Office 365 Message Encryption](define-mail-flow-rules-to-encrypt-email.md).
   
-### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Usar el EAC para crear una regla de flujo de correo para cifrar mensajes de correo electrónico sin las nuevas funciones OME
+### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Usar el EAC para crear una regla de flujo de correo para cifrar mensajes de correo electrónico sin las nuevas funcionalidades de OME
 
-1. En un explorador Web, con una cuenta profesional o educativa a la que se le han concedido permisos de administrador global, [inicie sesión en Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
+1. En un explorador web, con una cuenta laboral o educativa a la que se han concedido permisos de administrador global, [inicie sesión en Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. Elija el icono **Administración** .
+2. Elija el **icono** Administrador.
 
-3. En el centro de administración de Microsoft 365, elija centro de **Administración** , \> **Exchange**.
+3. En el Centro de administración de Microsoft 365, elija **Centros de administración** \> **exchange**.
 
-4. En el EAC, vaya a reglas de **flujo de correo** \>  y seleccione **nuevo** icono nuevo para ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. En el EAC, vaya a **Flujo de correo** \> **Reglas** y **seleccione Nuevo** icono Nuevo ![ Crear una nueva ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **regla**. Para obtener más información acerca del uso del EAC, vea [Centro de administración de Exchange en Exchange Online](/exchange/exchange-admin-center).
 
-5. En **nombre**, escriba un nombre para la regla, como cifrar correo para DrToniRamos@hotmail.com.
+5. En **Nombre**, escriba un nombre para la regla, como Cifrar correo para DrToniRamos@hotmail.com.
 
-6. En **aplicar esta regla si** selecciona una condición, escriba un valor si es necesario. Por ejemplo, para cifrar los mensajes dirigidos a DrToniRamos@hotmail.com:
+6. En **Aplicar esta regla si** selecciona una condición y escribe un valor si es necesario. Por ejemplo, para cifrar mensajes que van a DrToniRamos@hotmail.com:
 
-   1. En **aplicar esta regla si**, seleccione **el destinatario es**.
+   1. En **Aplicar esta regla si**, seleccione el destinatario **es**.
 
-   2. Seleccione un nombre existente de la lista de contactos o escriba una nueva dirección de correo electrónico en el cuadro **Comprobar nombres** .
+   2. Seleccione un nombre existente de la lista de contactos o escriba una nueva dirección de correo electrónico en la **casilla nombres.**
 
       - Para seleccionar un nombre existente, selecciónelo en la lista y, a continuación, haga clic en **Aceptar**.
 
-      - Para escribir un nuevo nombre, escriba una dirección de correo electrónico en el cuadro **Comprobar nombres** y, a continuación, seleccione **Comprobar nombres** \> **correctos**.
+      - Para escribir un nuevo nombre, escriba una dirección de correo electrónico en la casilla **nombres** y, a continuación, seleccione **nombres de casilla** \> **Aceptar**.
 
-7. Para agregar más condiciones, elija **más opciones** y, a continuación, seleccione **Agregar condición** y seleccione en la lista.
+7. Para agregar más condiciones, elija **Más opciones y,** a continuación, **seleccione Agregar condición** y seleccione en la lista.
 
-   Por ejemplo, para aplicar la regla solo si el destinatario está fuera de la organización, seleccione **Agregar condición** y, a continuación, seleccione **el destinatario es externo o interno** \> **fuera de la organización** \> .
+   Por ejemplo, para aplicar la regla solo si  el destinatario está fuera de la organización, seleccione agregar condición y, a continuación, seleccione El destinatario es **externo/interno** Fuera de \> **la organización** \> **Aceptar**.
 
-8. Para habilitar el cifrado sin usar las nuevas funciones de OME, en **hacer lo siguiente**, seleccione **modificar la seguridad** \> **de mensajes aplique la versión anterior de OME** y, a continuación, elija **Guardar**.
+8. Para habilitar el cifrado sin usar las nuevas funcionalidades de OME, en Hacer lo **siguiente,** seleccione Modificar la seguridad del mensaje Aplicar la versión anterior de  OME y, a \> continuación, elija **Guardar**.
 
-   Si recibe un error que indica que las licencias de IRM no están habilitadas, no está usando OME heredados.
+   Si recibe un error de que las licencias de IRM no están habilitadas, no está usando OME heredada.
 
-9. Opcional Elija **Agregar acción** para especificar otra acción.
+9. (Opcional) Elija **Agregar acción** para especificar otra acción.
 
-### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Usar Exchange Online PowerShell para crear una regla de flujo de correo para cifrar mensajes de correo electrónico sin las nuevas funciones OME
+### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Usar Exchange Online PowerShell para crear una regla de flujo de correo para cifrar mensajes de correo electrónico sin las nuevas funcionalidades de OME
 
-1. Conéctese a Exchange Online PowerShell. Para obtener más información, vea [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. Conéctese a Exchange Online PowerShell. Para obtener más información, vea [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Cree una regla con el cmdlet **New-TransportRule** y establezca el parámetro _ApplyOME_ en `$true` .
+2. Cree una regla mediante el cmdlet **New-TransportRule** y establezca el _parámetro ApplyOME_ en `$true` .
 
-   En este ejemplo, es necesario que todos los mensajes de correo electrónico enviados a DrToniRamos@hotmail.com se cifren.
+   Este ejemplo requiere que todos los mensajes de correo electrónico enviados DrToniRamos@hotmail.com deben cifrarse.
 
    ```powershell
    New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
@@ -109,39 +109,39 @@ Para obtener más información acerca de cómo crear reglas de flujo de correo d
 
    Donde,
 
-   - El nombre único de la nueva regla es "cifrar regla para recuperación ante desastres Toni Ramos".
-   - El parámetro _sentto_ especifica los destinatarios del mensaje (identificados por nombre, dirección de correo electrónico, nombre distintivo, etc.). En este ejemplo, el destinatario se identifica mediante la dirección de correo electrónico "DrToniRamos@hotmail.com".
-   - El parámetro _SentToScope_ especifica la ubicación de los destinatarios del mensaje. En este ejemplo, el buzón de correo del destinatario está en hotmail y no forma parte de la organización, por lo que `NotInOrganization` se usa el valor.
+   - El nombre único de la nueva regla es "Encrypt rule for Dr Toni Ramos".
+   - El _parámetro SentTo_ especifica los destinatarios del mensaje (identificados por nombre, dirección de correo electrónico, nombre distintivo, etc.). En este ejemplo, el destinatario se identifica mediante la dirección de correo electrónico "DrToniRamos@hotmail.com".
+   - El _parámetro SentToScope_ especifica la ubicación de los destinatarios del mensaje. En este ejemplo, el buzón del destinatario está en hotmail y no forma parte de la organización, por lo que se `NotInOrganization` usa el valor.
 
-   Para obtener información detallada acerca de la sintaxis y los parámetros, vea [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule).
+   Para obtener información detallada acerca de la sintaxis y los parámetros, vea [New-TransportRule](/powershell/module/exchange/New-TransportRule).
 
-### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Quitar el cifrado de las respuestas de correo electrónico cifradas sin las nuevas funciones OME
+### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Quitar el cifrado de las respuestas de correo electrónico cifradas sin las nuevas funcionalidades de OME
 
-Cuando los usuarios de correo electrónico envían mensajes cifrados, los destinatarios de esos mensajes pueden responder con respuestas cifradas. Puede crear reglas de flujo de correo para quitar automáticamente el cifrado de las respuestas para que los usuarios de correo electrónico de la organización no tengan que iniciar sesión en el portal de cifrado para verlos. Puede usar el EAC o los cmdlets de Windows PowerShell para definir estas reglas. Puede descifrar los mensajes que se envían desde dentro de la organización o los mensajes que son respuestas a los mensajes enviados desde dentro de la organización. No se pueden descifrar los mensajes cifrados que se originan fuera de la organización.
+Cuando los usuarios de correo electrónico envían mensajes cifrados, los destinatarios de esos mensajes pueden responder con respuestas cifradas. Puede crear reglas de flujo de correo para quitar automáticamente el cifrado de las respuestas para que los usuarios de correo electrónico de su organización no tengan que iniciar sesión en el portal de cifrado para verlos. Puede usar el EAC o los cmdlets Windows PowerShell para definir estas reglas. Puede descifrar los mensajes que se envían desde dentro de la organización o los mensajes que son respuestas a los mensajes enviados desde dentro de la organización. No se pueden descifrar mensajes cifrados procedentes de fuera de la organización.
 
-#### <a name="use-the-eac-to-create-a-rule-for-removing-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Usar el EAC para crear una regla para quitar el cifrado de las respuestas de correo electrónico cifradas sin las nuevas funciones de OME
+#### <a name="use-the-eac-to-create-a-rule-for-removing-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Usar el EAC para crear una regla para quitar el cifrado de las respuestas de correo electrónico cifradas sin las nuevas funcionalidades de OME
 
-1. En un explorador Web, con una cuenta profesional o educativa a la que se le han concedido permisos de administrador, [inicie sesión en Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
+1. En un explorador web, con una cuenta laboral o educativa a la que se han concedido permisos de administrador, [inicie sesión en Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
-2. Elija el icono **Administración** .
+2. Elija el **icono** Administrador.
 
-3. En el centro de administración de Microsoft 365, elija centro de **Administración** , \> **Exchange**.
+3. En el Centro de administración de Microsoft 365, elija **Centros de administración** \> **exchange**.
 
-4. En el EAC, vaya a reglas de **flujo de correo** \>  y seleccione **nuevo** icono nuevo para ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+4. En el EAC, vaya a **Flujo de correo** \> **Reglas** y **seleccione Nuevo** icono Nuevo ![ Crear una nueva ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **regla**. Para obtener más información acerca del uso del EAC, vea [Centro de administración de Exchange en Exchange Online](/exchange/exchange-admin-center).
 
-5. En **nombre**, escriba un nombre para la regla, como quitar el cifrado del correo entrante.
+5. En **Nombre**, escriba un nombre para la regla, como Quitar cifrado del correo entrante.
 
-6. En **aplicar esta regla si** selecciona las condiciones en las que se debe quitar el cifrado de los mensajes, como **el destinatario se encuentra** \> **dentro de la organización**.
+6. In **Apply this rule if** select the conditions where encryption should be removed from messages, such as The recipient is **located** Inside \> **the organization**.
 
-7. En **hacer lo siguiente**, seleccione **modificar la seguridad de los mensajes** \> **Quite la versión anterior de OME**.
+7. En **Hacer lo siguiente,** seleccione **Modificar la seguridad del mensaje** Quitar la versión anterior \> **de OME**.
 
 8. Seleccione **Guardar**.
 
-#### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Usar Exchange Online PowerShell para crear una regla para quitar el cifrado de las respuestas de correo electrónico cifradas sin las nuevas funciones de OME
+#### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Usar Exchange Online PowerShell para crear una regla para quitar el cifrado de las respuestas de correo electrónico cifradas sin las nuevas funcionalidades de OME
 
-1. Conéctese a Exchange Online PowerShell. Para obtener más información, vea [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. Conéctese a Exchange Online PowerShell. Para obtener más información, vea [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Cree una regla con el cmdlet **New-TransportRule** y establezca el parámetro _RemoveOME_ en `$true` .
+2. Cree una regla mediante el cmdlet **New-TransportRule** y establezca el _parámetro RemoveOME_ en `$true` .
 
    En este ejemplo se quita el cifrado de todo el correo enviado a los destinatarios de la organización.
 
@@ -151,103 +151,103 @@ Cuando los usuarios de correo electrónico envían mensajes cifrados, los destin
 
    Donde,
 
-   - El nombre único de la nueva regla es "quitar el cifrado del correo entrante".
-   - El parámetro _SentToScope_ especifica la ubicación de los destinatarios del mensaje. En este ejemplo, `InOrganization` se usa el valor Value, que indica una de las siguientes opciones:
-     - El destinatario es un buzón, un usuario de correo, un grupo o una carpeta pública habilitada para correo en la organización.
-     - La dirección de correo electrónico del destinatario está en un dominio aceptado que está configurado como un dominio autoritativo o un dominio de retransmisión interno en su organización, _y_ el mensaje se ha enviado o recibido a través de una conexión autenticada.
+   - El nombre único de la nueva regla es "Quitar el cifrado del correo entrante".
+   - El _parámetro SentToScope_ especifica la ubicación de los destinatarios del mensaje. En este ejemplo, se usa `InOrganization` el valor, que indica una de las siguientes opciones:
+     - El destinatario es un buzón, un usuario de correo, un grupo o una carpeta pública habilitada para correo de la organización.
+     - La dirección de correo electrónico del destinatario se encuentra en un dominio aceptado que está configurado como un dominio autoritativo o un dominio de retransmisión interna de la _organización,_ y el mensaje se envió o recibió a través de una conexión autenticada.
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, vea [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule).
+Para obtener información detallada acerca de la sintaxis y los parámetros, vea [New-TransportRule](/powershell/module/exchange/New-TransportRule).
 
-## <a name="sending-viewing-and-replying-to-messages-encrypted-without-the-new-capabilities"></a>Enviar, ver y responder mensajes cifrados sin las nuevas funciones
+## <a name="sending-viewing-and-replying-to-messages-encrypted-without-the-new-capabilities"></a>Enviar, ver y responder a mensajes cifrados sin las nuevas funcionalidades
 
-Con el cifrado de mensajes de Office 365, los mensajes de correo electrónico se cifran automáticamente en función de las reglas definidas por el administrador. Un correo electrónico que lleva un mensaje cifrado llega a la bandeja de entrada del destinatario con un archivo HTML adjunto.
+Con el cifrado de mensajes de Office 365, los mensajes de correo electrónico se cifran automáticamente en función de las reglas definidas por el administrador. Un correo electrónico que lleva un mensaje cifrado llega a la Bandeja de entrada del destinatario con un archivo HTML adjunto.
   
-Los destinatarios siguen las instrucciones del mensaje para abrir los datos adjuntos y autenticarse con una cuenta de Microsoft o una escuela o trabajo asociado con Office 365. Si los destinatarios no tienen ninguna cuenta, se les conducirá a crear una cuenta de Microsoft que les permitirá iniciar sesión para ver el mensaje cifrado. Como alternativa, los destinatarios pueden elegir obtener un código de acceso único para ver el mensaje. Después de iniciar sesión o usar un código de acceso único, los destinatarios pueden ver el mensaje descifrado y enviar una respuesta cifrada.
+Los destinatarios siguen las instrucciones del mensaje para abrir los datos adjuntos y autenticarse mediante una cuenta de Microsoft o un trabajo o escuela asociados con Office 365. Si los destinatarios no tienen ninguna cuenta, se les dirige a crear una cuenta de Microsoft que les permita iniciar sesión para ver el mensaje cifrado. Como alternativa, los destinatarios pueden elegir obtener un código de paso único para ver el mensaje. Después de iniciar sesión o usar un código de paso único, los destinatarios pueden ver el mensaje descifrado y enviar una respuesta cifrada.
   
-## <a name="customize-encrypted-messages-with-office-365-message-encryption"></a>Personalizar mensajes cifrados con el cifrado de mensajes de Office 365
+## <a name="customize-encrypted-messages-with-office-365-message-encryption"></a>Personalizar mensajes cifrados con cifrado de mensajes de Office 365
 
-Como administrador de Exchange Online y Exchange Online Protection, puede personalizar los mensajes cifrados. Por ejemplo, puede Agregar la marca y el logotipo de su compañía, especificar una introducción y agregar texto de declinación de responsabilidades en los mensajes cifrados y en el portal donde los destinatarios ven los mensajes cifrados. Con los cmdlets de Windows PowerShell, puede personalizar los siguientes aspectos de la experiencia de visualización para los destinatarios de los mensajes de correo electrónico cifrados:
+Como administrador de Exchange Online y Exchange Online Protection, puede personalizar los mensajes cifrados. Por ejemplo, puede agregar la marca y el logotipo de su empresa, especificar una introducción y agregar texto de declinación de responsabilidades en mensajes cifrados y en el portal donde los destinatarios ven los mensajes cifrados. Con Windows PowerShell cmdlets, puede personalizar los siguientes aspectos de la experiencia de visualización para los destinatarios de mensajes de correo electrónico cifrados:
 
-- Texto de introducción del correo electrónico que contiene el mensaje cifrado
+- Texto introductorio del correo electrónico que contiene el mensaje cifrado
 
 - Texto de declinación de responsabilidades del correo electrónico que contiene el mensaje cifrado
 
 - Texto del portal que aparecerá en el portal de visualización de mensajes
 
-- Logotipo que aparecerá en el mensaje de correo electrónico y en el portal de visualización
+- Logotipo que aparecerá en el mensaje de correo electrónico y el portal de visualización
 
 También puede volver a la apariencia predeterminada en cualquier momento.
   
-El siguiente ejemplo muestra un logotipo personalizado para ContosoPharma en los datos adjuntos de correo electrónico:
+En el siguiente ejemplo se muestra un logotipo personalizado para ContosoPharma en los datos adjuntos de correo electrónico:
 
 > [!div class="mx-imgBorder"]
 > ![Ejemplo de la página de visualización del mensaje cifrado](../media/TA-OME-3attachment2.jpg)
   
-**Para personalizar los mensajes de correo electrónico de cifrado y el portal de cifrado con la marca de la organización**
+**Para personalizar los mensajes de correo electrónico de cifrado y el portal de cifrado con la marca de su organización**
   
-1. Conéctese a Exchange online mediante PowerShell remoto, tal como se describe en [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. Conéctese a Exchange Online con PowerShell remoto, tal como se describe en Conectarse a [Exchange Online mediante PowerShell remoto.](/powershell/exchange/connect-to-exchange-online-powershell)
 
-2. Use el cmdlet Set-OMEConfiguration como se describe aquí: [set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) o use la siguiente tabla para obtener instrucciones.
+2. Use el cmdlet Set-OMEConfiguration como se describe aquí: [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration) o use la tabla siguiente para obtener instrucciones.
 
    **Opciones de personalización de cifrado**
 
-   | Para personalizar esta característica de la experiencia de cifrado | Usar estos comandos de Windows PowerShell |
+   | Para personalizar esta característica de la experiencia de cifrado | Use estos Windows PowerShell comandos |
    |:-----|:-----|
-   |Texto predeterminado que acompaña a los mensajes de correo electrónico cifrados  <br/> El texto predeterminado aparece por encima de las instrucciones para ver los mensajes cifrados  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **Ejemplo:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
+   |Texto predeterminado que acompaña a los mensajes de correo electrónico cifrados  <br/> El texto predeterminado aparece encima de las instrucciones para ver mensajes cifrados  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **Ejemplo:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
    |Declaración de declinación de responsabilidades en el correo electrónico que contiene el mensaje cifrado  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **Ejemplo:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
    |Texto que aparece en la parte superior del portal de visualización de correo cifrado  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **Ejemplo:** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
-   |Logotipo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Ejemplo:** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formatos de archivo compatibles: .png, .jpg, .bmp o .tiff  <br/> Tamaño óptimo del archivo de logotipo: menos de 40 KB  <br/> Tamaño óptimo de la imagen de logotipo: 170 píxeles  <br/> |
+   |Logotipo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Ejemplo:** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formatos de archivo compatibles: .png, .jpg, .bmp o .tiff  <br/> Tamaño óptimo del archivo de logotipo: menos de 40 KB  <br/> Tamaño óptimo de la imagen del logotipo: 170 x 70 píxeles  <br/> |
 
-**Para quitar personalizaciones de marca de los mensajes de correo electrónico de cifrado y el portal de cifrado**
+**Para quitar personalizaciones de marca de mensajes de correo electrónico de cifrado y el portal de cifrado**
   
-1. Conéctese a Exchange online mediante PowerShell remoto, tal como se describe en [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
+1. Conéctese a Exchange Online con PowerShell remoto, tal como se describe en Conectarse a [Exchange Online mediante PowerShell remoto.](/powershell/exchange/connect-to-exchange-online-powershell)
 
-2. Use el cmdlet Set-OMEConfiguration tal como se describe aquí: [set-OMEConfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b). Para quitar las personalizaciones de marca de la organización de los valores de DisclaimerText, EmailText y PortalText, establezca el valor en una cadena vacía  `""` . Para todos los valores de imagen, como el logotipo, establezca el valor en  `"$null"` .
+2. Use el cmdlet Set-OMEConfiguration como se describe aquí: [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration). Para quitar las personalizaciones de marca de la organización de los valores DisclaimerText, EmailText y PortalText, establezca el valor en una cadena vacía,  `""` . Para todos los valores de imagen, como Logo, establezca el valor en  `"$null"` .
 
    **Opciones de personalización de cifrado**
 
-   | Para revertir esta característica de la experiencia de cifrado de nuevo a la imagen y el texto predeterminados | Usar estos comandos de Windows PowerShell |
+   | Para revertir esta característica de la experiencia de cifrado al texto e imagen predeterminados | Use estos Windows PowerShell comandos |
    |:-----|:-----|
-   |Texto predeterminado que acompaña a los mensajes de correo electrónico cifrados  <br/> El texto predeterminado aparece por encima de las instrucciones para ver los mensajes cifrados  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Ejemplo:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""` <br/> |
+   |Texto predeterminado que acompaña a los mensajes de correo electrónico cifrados  <br/> El texto predeterminado aparece encima de las instrucciones para ver mensajes cifrados  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Ejemplo:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""` <br/> |
    |Declaración de declinación de responsabilidades en el correo electrónico que contiene el mensaje cifrado  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Ejemplo:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
-   |Texto que aparece en la parte superior del portal de visualización de correo cifrado  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Ejemplo de volver a su valor predeterminado:**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
-   |Logotipo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Ejemplo de volver a su valor predeterminado:**`Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
+   |Texto que aparece en la parte superior del portal de visualización de correo cifrado  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Ejemplo de reversión al valor predeterminado:**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
+   |Logotipo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Ejemplo de reversión al valor predeterminado:**`Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
 
-## <a name="service-information-for-legacy-office-365-message-encryption-prior-to-the-release-of-the-new-ome-capabilities"></a>Información de servicio para el cifrado de mensajes de Office 365 heredado antes de la publicación de las nuevas capacidades de OME
+## <a name="service-information-for-legacy-office-365-message-encryption-prior-to-the-release-of-the-new-ome-capabilities"></a>Información de servicio para el cifrado de mensajes heredado de Office 365 antes del lanzamiento de las nuevas funcionalidades de OME
 <a name="LegacyServiceInfo"> </a>
 
-En la siguiente tabla se proporcionan detalles técnicos para el servicio de cifrado de mensajes de Office 365 antes de la publicación de las nuevas capacidades de OME.
+En la tabla siguiente se proporcionan detalles técnicos para el servicio de cifrado de mensajes de Office 365 antes del lanzamiento de las nuevas funcionalidades de OME.
   
-| Detalles del servicio | Descripción |
+| Detalles del servicio | Description |
 |:-----|:-----|
 |Requisitos de dispositivo de cliente  <br/> |Los mensajes cifrados se pueden ver en cualquier dispositivo de cliente, siempre y cuando los datos adjuntos HTML puedan abrirse en un explorador moderno que admita el envío de formularios.  <br/> |
-|Algoritmo de cifrado y compatibilidad con FIPS (Estándar federal de procesamiento de información)  <br/> |El Cifrado de mensajes de Office 365 emplea las mismas claves de cifrado que Microsoft Azure Information Rights Management (IRM) y admite el modo criptográfico 2 (clave de 2048 bits para RSA y de 256 bits para sistemas SHA-1). Para obtener más información acerca de los modos criptográficos de IRM subyacentes, consulte [modos criptográficos de AD RMS](https://technet.microsoft.com/library/hh867439%28WS.10%29.aspx).  <br/> |
-|Tipos de mensaje admitidos  <br/> |Solo se admite el cifrado de mensajes de Office 365 para los elementos que tienen un identificador de clase de mensaje de **IPM.Note**. Para obtener más información, vea [tipos de elementos y clases de mensajes](https://msdn.microsoft.com/library/office/ff861573.aspx).  <br/> |
-|Límites de tamaño de mensaje  <br/> |El Cifrado de mensajes de Office 365 es capaz de cifrar mensajes de hasta 25 megabytes. Para obtener más información sobre los límites de tamaño de los mensajes, vea [límites de Exchange Online](https://technet.microsoft.com/library/exchange-online-limits.aspx).  <br/> |
-|Directivas de retención de correo electrónico de Exchange Online  <br/> |Exchange online no almacena los mensajes cifrados.  <br/> |
-|Compatibilidad de idiomas en el cifrado de mensajes de Office 365  <br/> | El cifrado de mensajes de Office 365 admite los idiomas de 365 de Microsoft, como se indica a continuación:  <br/>  Los mensajes de correo electrónico entrantes y los archivos HTML adjuntos se localizan según la configuración de idioma del remitente.  <br/>  El portal de visualización se localiza en función de la configuración del explorador del destinatario.  <br/>  El cuerpo (contenido) del mensaje cifrado no se localiza.  <br/> |
+|Algoritmo de cifrado y compatibilidad con FIPS (Estándar federal de procesamiento de información)  <br/> |El Cifrado de mensajes de Office 365 emplea las mismas claves de cifrado que Microsoft Azure Information Rights Management (IRM) y admite el modo criptográfico 2 (clave de 2048 bits para RSA y de 256 bits para sistemas SHA-1). Para obtener más información acerca de los modos criptográficos subyacentes de IRM, vea [Modos criptográficos de AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10)).  <br/> |
+|Tipos de mensaje admitidos  <br/> |Solo se admite el cifrado de mensajes de Office 365 para los elementos que tienen un identificador de clase de mensaje de **IPM.Note**. Para obtener más información, vea [Tipos de elementos y clases de mensaje](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).  <br/> |
+|Límites de tamaño de mensaje  <br/> |El Cifrado de mensajes de Office 365 es capaz de cifrar mensajes de hasta 25 megabytes. Para obtener más información acerca de los límites de tamaño del mensaje, vea [Límites de Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).  <br/> |
+|Directivas de retención de correo electrónico de Exchange Online  <br/> |Exchange Online no almacena los mensajes cifrados.  <br/> |
+|Compatibilidad de idiomas en el cifrado de mensajes de Office 365  <br/> | El cifrado de mensajes de Office 365 admite idiomas de Microsoft 365 de la siguiente manera:  <br/>  Los mensajes de correo electrónico entrantes y los archivos HTML adjuntos se localizan en función de la configuración de idioma del remitente.  <br/>  El portal de visualización se localiza en función de la configuración del explorador del destinatario.  <br/>  El cuerpo (contenido) del mensaje cifrado no se localiza.  <br/> |
 |Información de privacidad del Portal OME y la aplicación Visor OME  <br/> |El vínculo [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/privacystatement) proporciona más información sobre el uso de su información privada por parte de Microsoft.  <br/> |
 
-## <a name="frequently-asked-questions-about-legacy-ome"></a>Preguntas más frecuentes acerca de OME heredados
+## <a name="frequently-asked-questions-about-legacy-ome"></a>Preguntas más frecuentes sobre la OME heredada
 <a name="LegacyServiceInfo"> </a>
 
-¿Tiene alguna pregunta sobre el cifrado de mensajes de Office 365? Aquí encontrará algunas respuestas. Si no encuentra lo que necesita, consulte los [foros de Microsoft Tech Community para Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365).
+¿Tiene preguntas sobre el cifrado de mensajes de Office 365? Aquí encontrará algunas respuestas. Si no encuentra lo que necesita, consulte los foros de [microsoft Tech Community para Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365).
   
- **T. Mis usuarios envían mensajes de correo electrónico cifrados a destinatarios fuera de la organización. ¿Hay algo que los destinatarios externos tengan que hacer para leer y responder a los mensajes de correo electrónico cifrados con el cifrado de mensajes de Office 365?**
+ **P. Mis usuarios envían mensajes de correo electrónico cifrados a destinatarios fuera de nuestra organización. ¿Hay algo que los destinatarios externos tengan que hacer para leer y responder a los mensajes de correo electrónico cifrados con cifrado de mensajes de Office 365?**
   
-Los destinatarios externos a la organización que reciben mensajes cifrados de Microsoft 365 pueden verlos de dos maneras:
+Los destinatarios fuera de la organización que reciben mensajes cifrados de Microsoft 365 pueden verlos de dos maneras:
   
-- Iniciando sesión con una cuenta de Microsoft o una cuenta profesional o educativa asociada con Office 365.
+- Al iniciar sesión con una cuenta de Microsoft o una cuenta laboral o educativa asociada a Office 365.
 
 - Mediante un código de paso único.
 
- **T. ¿Los mensajes cifrados de Microsoft 365 se almacenan en la nube o en servidores de Microsoft?**
+ **P. ¿Los mensajes cifrados de Microsoft 365 se almacenan en la nube o en servidores de Microsoft?**
   
-No, los mensajes cifrados se conservan en el sistema de correo electrónico del destinatario y, cuando el destinatario abre el mensaje, se publica temporalmente para verlo en los servidores de Microsoft. Pero los mensajes no se almacenan ahí.
+No, los mensajes cifrados se mantienen en el sistema de correo electrónico del destinatario y, cuando el destinatario abre el mensaje, se publica temporalmente para su visualización en servidores Microsoft. Pero los mensajes no se almacenan ahí.
   
  **P. ¿Puedo personalizar los mensajes de correo electrónico cifrado con mi marca?**
   
-Sí. Puede usar cmdlets de Windows PowerShell para personalizar el texto predeterminado que aparece en la parte superior de los mensajes de correo electrónico cifrados, el texto de aviso de declinación de responsabilidades y el logotipo que quiera usar para el mensaje de correo electrónico y el portal de cifrado. Esta característica ahora está disponible en OMEv2. Para más información, consulte [Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
+Sí. Puede usar cmdlets de Windows PowerShell para personalizar el texto predeterminado que aparece en la parte superior de los mensajes de correo electrónico cifrados, el texto de aviso de declinación de responsabilidades y el logotipo que quiera usar para el mensaje de correo electrónico y el portal de cifrado. Esta característica ya está disponible en OMEv2. Para más información, consulte [Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md).
   
  **P. ¿Requiere el servicio una licencia para cada usuario de la organización?**
   
@@ -257,66 +257,66 @@ Se requiere una licencia para cada usuario de la organización que envíe correo
   
 No, los destinatarios externos no requieren una suscripción para leer o responder los mensajes cifrados.
   
- **T. ¿En qué se diferencia el cifrado de mensajes de Office 365 de Rights Management Services (RMS)?**
+ **P. ¿En qué se diferencia el cifrado de mensajes de Office 365 de Rights Management Services (RMS)?**
   
-RMS proporciona funciones de protección de derechos de la información para los correos electrónicos internos de una organización al proporcionar plantillas integradas, como: no reenviar y confidencial de la empresa. El cifrado de mensajes de Office 365 es compatible con el cifrado para los mensajes de correo electrónico que se envían a destinatarios externos, así como destinatarios internos.
+RMS proporciona funcionalidades de Information Rights Protection para los correos electrónicos internos de una organización proporcionando plantillas integradas, como: No reenviar y Confidencial de la empresa. El cifrado de mensajes de Office 365 es compatible con el cifrado para los mensajes de correo electrónico que se envían a destinatarios externos, así como destinatarios internos.
   
- **T. ¿En qué se diferencia el cifrado de mensajes de Office 365 de S/MIME?**
+ **P. ¿En qué se diferencia el cifrado de mensajes de Office 365 de S/MIME?**
   
 S/MIME es básicamente una tecnología de cifrado del lado cliente y requiere la administración de certificados complicados y la publicación de infraestructura. El cifrado de mensajes de Office 365 usa reglas de flujo de correo (también conocidas como reglas de transporte) y no depende de la publicación de certificados.
   
  **P. ¿Puedo leer los mensajes cifrados en dispositivos móviles?**
   
-Sí, puede ver los mensajes en Android y iOS descargando las aplicaciones del visor de OME de Google Play Store y de la App Store de Apple. Abra los datos adjuntos en formato HTML en la aplicación del Visor de OME y, a continuación, siga las instrucciones para abrir el mensaje cifrado. Para otros dispositivos móviles, puede abrir los datos adjuntos en formato HTML siempre que el cliente de correo permita la publicación de formularios.
+Sí, puedes ver mensajes en Android e iOS descargando las aplicaciones visor de OME desde la Tienda Google Play y la Tienda de aplicaciones de Apple. Abra los datos adjuntos en formato HTML en la aplicación del Visor de OME y, a continuación, siga las instrucciones para abrir el mensaje cifrado. Para otros dispositivos móviles, puede abrir los datos adjuntos en formato HTML siempre que el cliente de correo permita la publicación de formularios.
   
  **P. ¿Se cifran las respuestas y los mensajes reenviados?**
   
 Sí. Las respuestas se siguen cifrando durante todo el período de la conversación.
   
- **T. ¿El cifrado de mensajes de Office 365 proporciona localización?**
+ **P. ¿El cifrado de mensajes de Office 365 proporciona localización?**
   
 El correo electrónico entrante y el contenido HTML se localiza según la configuración de correo electrónico del remitente. El portal de visualización se localiza según la configuración del explorador del destinatario. Sin embargo, el cuerpo (contenido) del mensaje cifrado no se localiza.
   
- **T. ¿Qué método de cifrado se usa para el cifrado de mensajes de Office 365?**
+ **P. ¿Qué método de cifrado se usa para el cifrado de mensajes de Office 365?**
   
-El cifrado de mensajes de Office 365 usa Rights Management Services (RMS) como infraestructura de cifrado. El método de cifrado utilizado depende de dónde obtiene las claves de RMS utilizadas para cifrar y descifrar mensajes.
+El cifrado de mensajes de Office 365 usa Rights Management Services (RMS) como su infraestructura de cifrado. El método de cifrado utilizado depende de dónde obtiene las claves de RMS utilizadas para cifrar y descifrar mensajes.
   
 - Si usa Microsoft Azure RMS para obtener las claves, se usa el modo criptográfico 2. El modo criptográfico 2 es una implementación criptográfica de AD RMS actualizada y mejorada. Es compatible con RSA 2048 para firma y cifrado, y admite SHA-256 para firma.
 
 - Si usa Active Directory (AD) RMS para obtener las claves, se utiliza el modo criptográfico 1 o el modo criptográfico 2. El método empleado depende de la implementación local de AD RMS. El modo criptográfico 1 es la implementación criptográfica original de AD RMS. Es compatible con RSA 1024 para firma y cifrado, y admite SHA-1 para firma. Este modo sigue siendo compatible con todas las versiones actuales de RMS.
 
-Para obtener más información, consulte [modos criptográficos de AD RMS](https://go.microsoft.com/fwlink/p/?LinkId=398616).
+Para obtener más información, [vea Modos criptográficos de AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10)).
   
-**P. ¿Por qué algunos mensajes cifrados dicen que provienen de** Office365@messaging.microsoft.com?
+**P. ¿Por qué algunos mensajes cifrados dicen que proceden de** Office365@messaging.microsoft.com?
   
 Cuando se envía una respuesta cifrada desde el portal de cifrado o a través de la aplicación del Visor de OME, la dirección de correo electrónico de envío se establece en Office365@messaging.microsoft.com porque el mensaje cifrado se envía a través de un extremo de Microsoft. Esto ayuda a evitar que los mensajes cifrados se marquen como correo no deseado. El nombre mostrado en el correo electrónico y la dirección del portal de cifrado no se modifican a causa de este etiquetado. Además, este etiquetado solo se aplica a los mensajes enviados a través del portal, no a través de cualquier otro cliente de correo electrónico.
   
- **T. Soy suscriptor de Exchange Hosted Encryption (EHE). ¿Dónde puedo obtener más información sobre la actualización al cifrado de mensajes de Office 365?**
+ **P. Soy suscriptor de Cifrado hospedado (EHE) de Exchange. ¿Dónde puedo obtener más información sobre la actualización al cifrado de mensajes de Office 365?**
   
-Todos los clientes de EHE se han actualizado a Cifrado de mensajes de Office 365. Para obtener más información, visite el [centro de actualización de Exchange Hosted Encryption](https://go.microsoft.com/fwlink/p/?LinkID=511077).
+Todos los clientes de EHE se han actualizado a Cifrado de mensajes de Office 365. Para obtener más información, visite el [Centro de actualización de](../security/office-365-security/exchange-online-protection-overview.md)cifrado hospedado de Exchange .
   
- **T. ¿Es necesario que abra las direcciones URL, las direcciones IP o los puertos del firewall de mi organización para admitir el cifrado de mensajes de Office 365?**
+ **P. ¿Necesito abrir direcciones URL, direcciones IP o puertos en el firewall de mi organización para admitir el cifrado de mensajes de Office 365?**
   
-Sí. Debe agregar direcciones URL para Exchange Online para que la lista de permitidos de la organización habilite la autenticación de los mensajes cifrados por parte del servicio de cifrado de mensajes de Office 365. Para obtener una lista de direcciones URL de Exchange Online, consulte [direcciones URL e intervalos de direcciones IP de 365 de Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges).
+Sí. Debe agregar direcciones URL para Exchange Online para que la lista de permitidos de la organización habilite la autenticación de los mensajes cifrados por parte del servicio de cifrado de mensajes de Office 365. Para obtener una lista de direcciones URL de Exchange Online, vea Direcciones URL e intervalos de [direcciones IP de Microsoft 365](../enterprise/urls-and-ip-address-ranges.md).
   
- **T. ¿A cuántos destinatarios puedo enviar un mensaje cifrado de Microsoft 365?**
+ **P. ¿A cuántos destinatarios puedo enviar un mensaje cifrado de Microsoft 365?**
   
-El límite de destinatarios es de 500 destinatarios por mensaje o, cuando se combina después de la expansión de la lista de distribución, 11.980 caracteres en el campo para, lo **que** ocurra primero.
+El límite de destinatarios es de 500 destinatarios por mensaje o, cuando se combina después de la expansión de la lista de distribución, 11.980 caracteres en el campo **Para** del mensaje, lo que sea primero.
   
  **P. ¿Es posible revocar un mensaje enviado a un destinatario concreto?**
   
-No. No puede revocar un mensaje a una persona determinada después de enviarlo.
+No. No puede revocar un mensaje a una persona determinada después de que se envíe.
   
  **P. ¿Puedo ver un informe de los mensajes cifrados que se han recibido y leído?**
   
-No hay un informe que muestre si se ha visto un mensaje cifrado, pero hay disponibles informes de Microsoft 365 que puede aprovechar para determinar el número de mensajes que coincidieron con una regla de flujo de correo específica (también denominada regla de transporte), por ejemplo.
+No hay un informe que muestre si se ha visto un mensaje cifrado, pero hay informes de Microsoft 365 disponibles que puede aprovechar para determinar el número de mensajes que coinciden con una regla de flujo de correo específica (también conocida como regla de transporte), por ejemplo.
   
  **P. ¿Qué hace Microsoft con la información que proporciono a través del Portal OME y la aplicación Visor OME?**
   
-La [declaración de privacidad del portal de cifrado de Office 365 Messaging](https://privacy.microsoft.com/privacystatement) proporciona información detallada sobre lo que Microsoft hace y qué no hace con la información privada.
+La declaración de privacidad del Portal de cifrado de mensajería de [Office 365](https://privacy.microsoft.com/privacystatement) proporciona información detallada sobre lo que Microsoft hace y no hace con su información privada.
 
-**T. ¿Qué hago si no recibo el código de un solo paso después de solicitarlo?**
+**P. ¿Qué hago si no recibo el código de paso de una sola vez después de solicitarlo?**
 
-En primer lugar, Compruebe la carpeta de correo no deseado o no deseado en el cliente de correo electrónico. La configuración de DKIM y DMARC para su organización puede hacer que estos mensajes de correo electrónico terminen filtrados como correo no deseado.
+En primer lugar, compruebe la carpeta de correo no deseado o correo no deseado en el cliente de correo electrónico. La configuración de DKIM y DMARC para su organización puede hacer que estos correos electrónicos terminen filtrados como correo no deseado.
 
-A continuación, Compruebe la cuarentena en el centro de seguridad & cumplimiento. A menudo, los mensajes que contienen un código de acceso único, en especial los primeros que recibe la organización, terminan en cuarentena.
+A continuación, compruebe la cuarentena en el Centro de seguridad & cumplimiento. A menudo, los mensajes que contienen un código de paso único, especialmente los primeros que recibe la organización, terminan en cuarentena.

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determine dónde se almacenan los datos del cliente de Microsoft 365 dentro de la Unión Europea
-ms.openlocfilehash: 78c2ae75656df017631fce0a189f6e25ee44f20f
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 28bfa7c18aff485e084e4d77bb2a36f0f5b7e95f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527690"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905685"
 ---
 # <a name="data-locations-for-the-european-union"></a>Ubicaciones de datos en la Unión Europea
 
@@ -47,7 +47,7 @@ Tenemos ubicaciones para los centros de datos en Alemania y Francia, que le perm
 |:-------|:-----|:-------|:-------|
 | Exchange Online | Francia | Alemania | Unión Europea |
 | OneDrive para la Empresa | Francia | Alemania | Unión Europea |
-| SharePoint Online | Francia | Alemania | Unión Europea |
+| SharePoint Online | Francia | Alemania | Unión Europea |
 | Skype Empresarial | Unión Europea | Unión Europea | Unión Europea |
 | Microsoft Teams | Francia | Alemania | Unión Europea |
 | Office Online y Office Mobile | Francia | Alemania | Unión Europea |
@@ -74,14 +74,14 @@ Cuando usted comienza a usar cualquiera de los servicios anteriores, los cálcul
 
 Si se requiere una transferencia temporal, emplearemos siempre un cifrado de última generación para la transferencia, y sus datos siempre volverán, inmediatamente después del proceso, a la ubicación de almacenamiento de datos que haya elegido. Confiamos en nuestro cumplimiento de la legislación europea a través de las cláusulas contractuales estándares (SCCs) para estas transferencias temporales, junto con nuestras medidas complementarias para asegurar que los datos estén protegidos. 
 
-Para obtener más información, consulte [Cláusulas modelo de la Unión Europea](https://docs.microsoft.com/microsoft-365/compliance/offering-eu-model-clauses).
+Para obtener más información, consulte [Cláusulas modelo de la Unión Europea](/compliance/regulatory/offering-EU-Model-Clauses).
 
 >[!Note]
 >Los datos del cliente de Sway y Workplace Analytics se almacenarán y calcularán en Estados Unidos en caso decida usar estos servicios.
 >
 
 >[!Note]
->Los servicios de Microsoft 365 pueden consultar y almacenar partes de información de datos de identidad o directorio de espacios empresariales en regiones que no sean la Unión Europea, en caso de que sea necesario para facilitar determinados escenarios. Por ejemplo, en escenarios de enrutamiento de correo electrónico entre regiones, enrutamiento de llamada, y autenticación, los sistemas de Microsoft 365 podrían necesitar cierta información acerca de los destinatarios en la Unión Europea para redirigir estas solicitudes correctamente. Los sistemas de Microsoft 365 también dependen de Azure Active Directory para las funciones de identidad y autenticación. Para obtener más información, consulte [Almacenamiento de datos de identidad para clientes europeos en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-data-storage-eu).
+>Los servicios de Microsoft 365 pueden consultar y almacenar partes de información de datos de identidad o directorio de espacios empresariales en regiones que no sean la Unión Europea, en caso de que sea necesario para facilitar determinados escenarios. Por ejemplo, en escenarios de enrutamiento de correo electrónico entre regiones, enrutamiento de llamada, y autenticación, los sistemas de Microsoft 365 podrían necesitar cierta información acerca de los destinatarios en la Unión Europea para redirigir estas solicitudes correctamente. Los sistemas de Microsoft 365 también dependen de Azure Active Directory para las funciones de identidad y autenticación. Para obtener más información, consulte [Almacenamiento de datos de identidad para clientes europeos en Azure Active Directory](/azure/active-directory/fundamentals/active-directory-data-storage-eu).
 >
 
 ## <a name="how-microsoft-protects-your-data"></a>Cómo Microsoft protege sus datos
@@ -126,8 +126,7 @@ Para obtener más información, consulte [Preguntas más frecuentes](https://blo
 ## <a name="additional-resources"></a>Recursos adicionales
  
 - [Protección de datos de confianza](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FhZn) ofrece información general sobre cómo Microsoft protege sus datos al usar los servicios en línea de Microsoft y los servicios profesionales de Microsoft. También se sugiere que consulte los [Términos de servicios en línea de Microsoft (OST) y el anexo de protección de datos (DPA)](https://www.microsoft.com/licensing/product-licensing/products) que rigen el uso de estos servicios.
-- Las [solicitudes de datos de Office 365 para el Reglamento general de protección de datos](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365) le ayuda a encontrar los datos personales o información personal y actuar sobre la base de estos para responder a los derechos sobre los datos (DSR) mediante productos, servicios y herramientas administrativas de Microsoft 365. 
-- La guía [Evaluaciones de impacto en la protección de datos (EIPD): Guía para los controladores de datos que usan Microsoft Office 365](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365) le ayuda a determinar si su organización necesita redactar una EIPD, ofrece instrucciones de "cómo" hacerlo, incluye una plantilla de documento EIPD personalizable, y proporciona una matriz de elementos de servicio de EIPD para varios servicios de Microsoft 365.
-- [Los módulos informativos](https://docs.microsoft.com/learn/paths/audit-safeguard-customer-data/) están diseñados para las personas con roles de auditoria, cumplimiento, riesgo y jurídicos que buscan tener un conocimiento general. Además, proporcionan una revisión en profundidad de las prácticas básicas de seguridad y privacidad de Microsoft 365 para salvaguardar los datos del cliente.
-- Las [Ofertas de cumplimiento de Microsoft](https://docs.microsoft.com/microsoft-365/compliance/offering-home) muestran cómo los servicios de Microsoft 365 ayudan a que su organización cumpla con los estándares de cumplimiento normativo. 
-
+- Las [solicitudes de datos de Office 365 para el Reglamento general de protección de datos](/compliance/regulatory/gdpr-dsr-Office365) le ayuda a encontrar los datos personales o información personal y actuar sobre la base de estos para responder a los derechos sobre los datos (DSR) mediante productos, servicios y herramientas administrativas de Microsoft 365. 
+- La guía [Evaluaciones de impacto en la protección de datos (EIPD): Guía para los controladores de datos que usan Microsoft Office 365](/compliance/regulatory/gdpr-dpia-office365) le ayuda a determinar si su organización necesita redactar una EIPD, ofrece instrucciones de "cómo" hacerlo, incluye una plantilla de documento EIPD personalizable, y proporciona una matriz de elementos de servicio de EIPD para varios servicios de Microsoft 365.
+- [Los módulos informativos](/learn/paths/audit-safeguard-customer-data/) están diseñados para las personas con roles de auditoria, cumplimiento, riesgo y jurídicos que buscan tener un conocimiento general. Además, proporcionan una revisión en profundidad de las prácticas básicas de seguridad y privacidad de Microsoft 365 para salvaguardar los datos del cliente.
+- Las [Ofertas de cumplimiento de Microsoft](/compliance/regulatory/offering-home) muestran cómo los servicios de Microsoft 365 ayudan a que su organización cumpla con los estándares de cumplimiento normativo.

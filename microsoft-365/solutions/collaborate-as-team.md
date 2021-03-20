@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Obtenga información sobre los pasos de configuración necesarios para Microsoft 365 para configurar un equipo para la colaboración en tareas, conversaciones y documentación con invitados en Teams.
-ms.openlocfilehash: 986f9c1f343c8ccc3d76557291938d170923c89b
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 4e734af198563d0bc4599b4476b3823384989212
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712323"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904665"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -38,7 +38,7 @@ En este vídeo se muestran los pasos de configuración descritos en este documen
 
 ## <a name="azure-external-collaboration-settings"></a>Configuración de colaboración externa de Azure
 
-El uso compartido en Microsoft 365 se rige en su nivel más alto por la [configuración de colaboración externa B2B en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Si el uso compartido con invitados está deshabilitado o restringido en Azure AD, esta configuración invalida cualquier configuración de uso compartido que configure en Microsoft 365.
+El uso compartido en Microsoft 365 se rige en su nivel más alto por la [configuración de colaboración externa B2B en Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). Si el uso compartido con invitados está deshabilitado o restringido en Azure AD, esta configuración invalida cualquier configuración de uso compartido que configure en Microsoft 365.
 
 Compruebe la configuración de colaboración externa B2B para asegurarse de que no se bloquea el uso compartido con invitados.
 
@@ -74,7 +74,7 @@ Para establecer la configuración de acceso de invitados de Teams
 5. Asegúrese de que **Permitir el acceso de invitados en Teams** se haya establecido en **Activado**.
 6. Realice los cambios que quiera en la configuración de invitado adicional y luego haga clic en **Guardar**.
 
-Una vez activado el acceso de invitado de Teams, de manera opcional puede controlar el acceso de invitado a equipos individuales y sus sitios de SharePoint asociados mediante etiquetas de confidencialidad. Para más información, consulte [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Una vez activado el acceso de invitado de Teams, de manera opcional puede controlar el acceso de invitado a equipos individuales y sus sitios de SharePoint asociados mediante etiquetas de confidencialidad. Para más información, consulte [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 > [!NOTE]
 > La configuración de invitado de Teams puede tardar hasta veinticuatro horas en activarse después de activarla.
@@ -187,6 +187,6 @@ Para añadir invitados a un equipo
 
 [Crear una extranet B2B con invitados administrados](b2b-extranet.md)
 
-[Integración de SharePoint y OneDrive con Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+[Integración de SharePoint y OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
 
-[Las opciones de uso compartido están atenuadas al compartir desde SharePoint o OneDrive](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)
+[Las opciones de uso compartido están atenuadas al compartir desde SharePoint o OneDrive](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

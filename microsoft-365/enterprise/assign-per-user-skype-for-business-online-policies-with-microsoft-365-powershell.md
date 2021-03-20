@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
 description: 'Summary: Use PowerShell for Microsoft 365 to assign per-user communication settings with Skype for Business Online policies.'
-ms.openlocfilehash: 6ee237e5d2ee0c9f472f372a6aa66c9612336265
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50514985"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905409"
 ---
 # <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Asignar directivas de Skype Empresarial Online por usuario con PowerShell para Microsoft 365
 
@@ -34,7 +34,7 @@ Use estas instrucciones para configurarse para ejecutar los comandos (omita los 
   > [!Note]
    > El conector en línea del cliente de Skype® Empresarial actualmente forma parte del módulo más reciente de Windows PowerShell de Teams. Si usa la versión pública más reciente de Teams PowerShell, no es necesario que instale el conector en línea de cliente de Skype® Empresarial.
 
-1. Instale el [módulo de PowerShell de Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
+1. Instale el [Módulo de PowerShell de Teams](/microsoftteams/teams-powershell-install).
     
 2. Abra el símbolo del sistema de Windows PowerShell y ejecute los siguientes comandos: 
     
@@ -71,7 +71,7 @@ EnablePublicCloudAudioVideoAccess : False
 EnableOutsideAccess               : True
 ```
 
-Ahora que sabe qué directiva asignar a Alex, podemos asignar esa directiva mediante el cmdlet [Grant-CsExternalAccessPolicy.](https://go.microsoft.com/fwlink/?LinkId=523974) Aquí le mostramos un ejemplo:
+Ahora que sabe qué directiva asignar a Alex, podemos asignar esa directiva mediante el cmdlet [Grant-CsExternalAccessPolicy.](/powershell/module/skype/Get-CsExternalAccessPolicy) Aquí le mostramos un ejemplo:
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"
@@ -106,7 +106,7 @@ Este comando establece el nombre de la directiva de acceso externo asignada a Al
 
 ## <a name="managing-large-numbers-of-users"></a>Administración de un gran número de usuarios
 
-Para administrar un gran número de usuarios (1000 o más), debe procesar por lotes los comandos a través de un bloque de script mediante el cmdlet [Invoke-Command.](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)  En ejemplos anteriores, cada vez que se ejecuta un cmdlet, debe configurar la llamada y, a continuación, esperar el resultado antes de enviarlo de vuelta.  Al usar un bloque de script, esto permite que los cmdlets se ejecuten de forma remota y, una vez completados, envíen los datos de vuelta. 
+Para administrar un gran número de usuarios (1000 o más), debe procesar por lotes los comandos a través de un bloque de script mediante el cmdlet [Invoke-Command.](/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)  En ejemplos anteriores, cada vez que se ejecuta un cmdlet, debe configurar la llamada y, a continuación, esperar el resultado antes de enviarlo de vuelta.  Al usar un bloque de script, esto permite que los cmdlets se ejecuten de forma remota y, una vez completados, envíen los datos de vuelta. 
 
 ```powershell
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
@@ -135,7 +135,7 @@ $count = 0
 
 Esto encontrará 500 usuarios a la vez que no tienen una directiva de cliente. Se les concederá la directiva de cliente "ClientPolicyNoIMURL" y la directiva de acceso externo "FederationAndPicDefault". Los resultados se agrupan por lotes en grupos de 50 y, a continuación, cada lote de 50 se envía al equipo remoto.
   
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 [Administrar Skype Empresarial Online con PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md)
   

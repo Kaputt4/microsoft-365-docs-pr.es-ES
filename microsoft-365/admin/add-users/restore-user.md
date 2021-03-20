@@ -23,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Obtenga información sobre cómo restaurar cuentas de usuario eliminadas y todos los datos asociados.
-ms.openlocfilehash: d14995c8ee2d62c1d722ef0bcc7577745a747082
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: f3986ed1ba007dcac87bdfb9322ba5c5bf081b35
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114002"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903717"
 ---
 # <a name="restore-a-user"></a>Restaurar un usuario
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
    
@@ -54,19 +54,19 @@ Debe ser administrador global de Microsoft 365 o administrador de administració
  
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la **página Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados.</a>
+1. En el Centro de administración, vaya a la **página Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados usuarios.</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Vaya al centro [de administración y,](https://go.microsoft.com/fwlink/p/?linkid=848041)a continuación, seleccione **Usuarios** \> **eliminados.**
+1. Vaya al Centro [de administración](https://go.microsoft.com/fwlink/p/?linkid=848041)y, a continuación, **seleccione Usuarios** \> **eliminados usuarios**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Vaya al centro [de administración y,](https://go.microsoft.com/fwlink/p/?linkid=850627)a continuación, seleccione **Usuarios** \> **eliminados.**
+1. Vaya al Centro [de administración](https://go.microsoft.com/fwlink/p/?linkid=850627)y, a continuación, **seleccione Usuarios** \> **eliminados usuarios**.
 
 ::: moniker-end
 
@@ -77,7 +77,7 @@ Debe ser administrador global de Microsoft 365 o administrador de administració
     
 4. Si el usuario se restaura correctamente, seleccione **Enviar correo electrónico y cierre**. Si se produce un conflicto de nombres o un conflicto de direcciones de proxy, vea las instrucciones a continuación sobre cómo restaurar esas cuentas.
     
-Después de restaurar un usuario, asegúrese de notificarle que su contraseña cambió y que sigue con ellos.
+Después de restaurar un usuario, asegúrate de notificarles que su contraseña cambió y sigues con ellos.
   
 ## <a name="restore-a-user-that-has-a-user-name-conflict"></a>Restaurar un usuario con un conflicto de nombre de usuario
 <a name="RestoreUserNameConflict"> </a>
@@ -89,19 +89,19 @@ Para resolverlo, puede cambiar la cuenta de usuario activa por la que vaya a res
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la **página Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados.</a>
+1. En el Centro de administración, vaya a la **página Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados usuarios.</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Vaya al centro [de administración y,](https://go.microsoft.com/fwlink/p/?linkid=848041)a continuación, seleccione **Usuarios** \> **eliminados.**
+1. Vaya al Centro [de administración](https://go.microsoft.com/fwlink/p/?linkid=848041)y, a continuación, **seleccione Usuarios** \> **eliminados usuarios**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Vaya al centro [de administración y,](https://go.microsoft.com/fwlink/p/?linkid=850627)a continuación, seleccione **Usuarios** \> **eliminados.**
+1. Vaya al Centro [de administración](https://go.microsoft.com/fwlink/p/?linkid=850627)y, a continuación, **seleccione Usuarios** \> **eliminados usuarios**.
 
 ::: moniker-end
 
@@ -111,7 +111,7 @@ Para resolverlo, puede cambiar la cuenta de usuario activa por la que vaya a res
     > [!NOTE]
     > Si se produce un error al restaurar dos o más usuarios, un mensaje de error le advierte sobre ello. Vea el registro para comprobar qué usuarios no se restauraron y, después, restaure las cuentas en las que se haya producido el error de una en una. 
   
-3. Siga las instrucciones para establecer la contraseña y seleccione **Restaurar**.
+3. Siga las indicaciones para establecer la contraseña y seleccione **Restaurar**.
     
 4. Aparece un mensaje que le avisa de que se ha producido un problema al restaurar la cuenta. Realice una de las acciones siguientes:
     
@@ -125,24 +125,24 @@ Para resolverlo, puede cambiar la cuenta de usuario activa por la que vaya a res
 
 Se produce un conflicto de direcciones de proxy al eliminar una cuenta de usuario que contiene una dirección de proxy, asignar la misma dirección de proxy a otra cuenta y, después, intentar restaurar la cuenta eliminada. Siga los pasos que se indican a continuación para solucionar este problema.
   
-Para [ello, debe tener permisos de](about-admin-roles.md) administrador en Microsoft 365. 
+Para [ello, debe](about-admin-roles.md) tener permisos de administrador en Microsoft 365. 
   
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la **página Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados.</a>
+1. En el Centro de administración, vaya a la **página Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados usuarios.</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Vaya al centro [de administración y,](https://go.microsoft.com/fwlink/p/?linkid=848041)a continuación, seleccione **Usuarios** \> **eliminados.**
+Vaya al Centro [de administración](https://go.microsoft.com/fwlink/p/?linkid=848041)y, a continuación, **seleccione Usuarios** \> **eliminados usuarios**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Vaya al centro [de administración y,](https://go.microsoft.com/fwlink/p/?linkid=850627)a continuación, seleccione **Usuarios** \> **eliminados.**
+1. Vaya al Centro [de administración](https://go.microsoft.com/fwlink/p/?linkid=850627)y, a continuación, **seleccione Usuarios** \> **eliminados usuarios**.
 
 ::: moniker-end
 
@@ -155,4 +155,3 @@ Vaya al centro [de administración y,](https://go.microsoft.com/fwlink/p/?linkid
 ## <a name="related-articles"></a>Artículos relacionados
 
 [Eliminar un usuario](delete-a-user.md)
-  

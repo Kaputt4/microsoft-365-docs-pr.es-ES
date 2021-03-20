@@ -21,34 +21,34 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Obtenga información sobre cómo administrar contraseñas de cuentas de usuario de Microsoft 365.
-ms.openlocfilehash: af64002ad54b517a6e8f0b687a00d6bed9ab0214
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+description: Obtenga información sobre cómo administrar las contraseñas de cuentas de usuario de Microsoft 365.
+ms.openlocfilehash: 2062da49310121ec18f7ce21f523531f10d6df9b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328542"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905097"
 ---
 # <a name="manage-microsoft-365-user-account-passwords"></a>Administrar contraseñas de cuentas de usuario de Microsoft 365
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Puede administrar las contraseñas de cuentas de usuario de Microsoft 365 de varias maneras, según la configuración de identidad. Puede administrar cuentas de usuario en el Centro de administración de [Microsoft 365,](https://docs.microsoft.com/microsoft-365/admin/add-users/)en Servicios de dominio de Active Directory (AD DS) o en el Centro de administración de Azure Active Directory (Azure AD).
+Puede administrar las contraseñas de cuentas de usuario de Microsoft 365 de varias maneras diferentes, según la configuración de identidad. Puede administrar cuentas de usuario en el Centro de administración de [Microsoft 365,](../admin/add-users/index.yml)en Servicios de dominio de Active Directory (AD DS) o en el Centro de administración de Azure Active Directory (Azure AD).
 
-## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planear dónde y cómo administrará las contraseñas de las cuentas de usuario
+## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planear dónde y cómo administrará las contraseñas de la cuenta de usuario
 
-El lugar y la forma en que puede administrar las cuentas de usuario depende del modelo de identidad que desee usar para Microsoft 365. Los dos modelos son híbridos y solo en la nube.
+Dónde y cómo puede administrar sus cuentas de usuario depende del modelo de identidad que desee usar para Su Microsoft 365. Los dos modelos son híbridos y solo en la nube.
   
 ### <a name="cloud-only"></a>Solo de nube
 
 Las contraseñas de cuentas de usuario se administran en:
 
-- [Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/)
+- [Centro de administración de Microsoft 365](../admin/add-users/index.yml)
 - Centro de administración de Azure AD
     
 ### <a name="hybrid"></a>Híbrido
 
-Con la identidad híbrida, las contraseñas se almacenan en AD DS, por lo que debe usar las herramientas locales de AD DS para administrar las contraseñas de cuentas de usuario. Incluso cuando se usa la sincronización de hash de contraseña (PHS), en la que Azure AD almacena una versión con hash de la versión ya con hash en AD DS, usted y los usuarios deben administrar sus contraseñas en AD DS.
+Con la identidad híbrida, las contraseñas se almacenan en AD DS, por lo que debes usar las herramientas locales de AD DS para administrar las contraseñas de cuentas de usuario. Incluso cuando se usa la sincronización de hash de contraseña (PHS), en la que Azure AD almacena una versión hash de la versión ya hash en AD DS, usted y los usuarios deben administrar sus contraseñas en AD DS.
 
 Con [la reescribición de](#pw_writeback)contraseñas, los usuarios pueden cambiar sus contraseñas de AD DS a través de Azure AD.
 
@@ -64,13 +64,13 @@ Para evitar que los usuarios creen una contraseña que se pueda determinar con f
 - Términos internos específicos de la empresa
 - Abreviaturas que tienen un significado específico en la empresa
 
-Puede prohibir contraseñas [incorrectas en la nube](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) y para [su AD DS local.](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises)
+Puede prohibir las contraseñas [incorrectas en la nube](/azure/active-directory/authentication/concept-password-ban-bad) y para su [AD DS local.](/azure/active-directory/authentication/concept-password-ban-bad-on-premises)
 
 ## <a name="simplify-user-sign-in"></a>Simplificar el inicio de sesión de usuario
 
-Azure AD Seamless Single Sign-On (SSO de conexión directa de Azure AD) funciona con PHS y Pass-Through Authentication (PTA), para permitir que los usuarios inicien sesión en los servicios que usan cuentas de usuario de Azure AD sin tener que escribir sus contraseñas y, en muchos casos, sus nombres de usuario. Esto ofrece facilita a los usuarios el acceso a aplicaciones en la nube, como Office 365, sin necesidad de componentes locales adicionales, como los servidores de federación de identidades.
+Azure AD Seamless Single Sign-On (SSO de conexión directa de Azure AD) funciona con PHS y autenticación Pass-Through (PTA), para permitir que los usuarios inicien sesión en los servicios que usan cuentas de usuario de Azure AD sin tener que escribir sus contraseñas y, en muchos casos, sus nombres de usuario. Esto ofrece facilita a los usuarios el acceso a aplicaciones en la nube, como Office 365, sin necesidad de componentes locales adicionales, como los servidores de federación de identidades.
 
-Configure el SSO de conexión directa de Azure AD con la herramienta Azure AD Connect. Vea las [instrucciones para configurar el SSO de conexión directa de Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
+Configure el SSO de conexión directa de Azure AD con la herramienta Azure AD Connect. Vea las [instrucciones para configurar el SSO de conexión directa de Azure AD](/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
 
 <a name="pw_writeback"></a>
 ## <a name="simplify-password-updates-to-ad-ds"></a>Simplificar las actualizaciones de contraseñas en AD DS
@@ -79,15 +79,14 @@ Con la reescribición de contraseñas, puede permitir que los usuarios restablez
 
 La escritura diferida de contraseñas es necesaria para utilizar por completo las capacidades de Azure AD Identity Protection, como solicitar a los usuarios que cambien sus contraseñas locales cuando se haya detectado un alto riesgo de que la cuenta se haya visto comprometida.
 
-Para obtener más información e instrucciones de configuración, vea [Azure AD SSPR with password writeback](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback) (SSPR de Azure AD con escritura diferida de contraseñas).
+Para obtener más información e instrucciones de configuración, vea [Azure AD SSPR with password writeback](/azure/active-directory/active-directory-passwords-writeback) (SSPR de Azure AD con escritura diferida de contraseñas).
 
 >[!Note]
->Actualice a la última versión de Azure AD Connect para garantizar que tiene la mejor experiencia posible y nuevas características cuando se publican. Para obtener más información, vea [Instalación personalizada de Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
+>Actualice a la última versión de Azure AD Connect para garantizar que tiene la mejor experiencia posible y nuevas características cuando se publican. Para obtener más información, vea [Instalación personalizada de Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
 >
 
 ## <a name="simplify-password-resets"></a>Simplificar los restablecimientos de contraseña
 
-El autoservicio de restablecimiento de contraseña (SSPR) permite a los usuarios restablecer o desbloquear sus contraseñas o cuentas. Para alertarle acerca de abusos o usos indebidos, el sistema incluye informes detallados del seguimiento de acceso de los usuarios al sistema, además de notificaciones. Debe habilitar la [reescribición de contraseñas](#pw_writeback) para poder implementar restablecimientos de contraseña.
+El restablecimiento de contraseñas de autoservicio (SSPR) permite a los usuarios restablecer o desbloquear sus contraseñas o cuentas. Para alertarle acerca de abusos o usos indebidos, el sistema incluye informes detallados del seguimiento de acceso de los usuarios al sistema, además de notificaciones. Debe habilitar la [reescribición de contraseñas](#pw_writeback) para poder implementar restablecimientos de contraseña.
 
-Consulte las [instrucciones para habilitar el restablecimiento de contraseña](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
-
+Consulte las [instrucciones para habilitar el restablecimiento de contraseña](/azure/active-directory/authentication/howto-sspr-deployment).

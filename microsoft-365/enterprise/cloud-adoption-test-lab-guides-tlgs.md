@@ -1,5 +1,5 @@
 ---
-title: Probar Microsoft 365 con guías del laboratorio de pruebas (TLD)
+title: Probar Microsoft 365 con guías de laboratorio de prueba (TLG)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,15 +19,15 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Resumen: use estas guías del entorno de pruebas (TLD) para configurar entornos de demostración, prueba de concepto o desarrollo y pruebas para Microsoft 365.'
-ms.openlocfilehash: 9a8c13cfc89eff0852cc0589448e7745220e47b9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 'Resumen: use estas guías del laboratorio de pruebas (TG) para configurar entornos de demostración, prueba de concepto o desarrollo y pruebas para Microsoft 365.'
+ms.openlocfilehash: 6d6beccf450f3c03e4503bdcb18a189658a1af13
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693772"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905181"
 ---
-# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Probar Microsoft 365 con guías del laboratorio de pruebas (TLD)
+# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Probar Microsoft 365 con guías de laboratorio de prueba (TLG)
 
 Las TLG le permiten conocer los productos Microsoft de manera rápida. Son ideales para situaciones en las que necesita evaluar una tecnología o configuración antes de decidir si es adecuada y comenzar el diseño, planeación y lanzamiento para los usuarios. Esta experiencia práctica, que consiste en desarrollar la herramienta por sus propios medios y lograr que funcione, le permitirá entender los requisitos de implementación de un nuevo producto o solución, de modo que pueda planear mejor el hospedaje en la producción.
   
@@ -41,7 +41,7 @@ Use estos artículos para crear su entorno de desarrollo y pruebas de Microsoft 
   
 - [Configuración básica ligera](lightweight-base-configuration-microsoft-365-enterprise.md)
     
-    Cree una suscripción de prueba de Microsoft 365 Enterprise E5.
+    Crear una suscripción de prueba de Microsoft 365 Enterprise E5.
 
 - [Configuración básica empresarial simulada](simulated-ent-base-configuration-microsoft-365-enterprise.md)
     
@@ -49,10 +49,10 @@ Use estos artículos para crear su entorno de desarrollo y pruebas de Microsoft 
 
     Este es un paso opcional y necesario si desea crear una configuración de la empresa simulada para una identidad híbrida.
     
-Para obtener TLD adicionales que se aplican a Office 365 y Microsoft 365, vaya a Guías [del laboratorio de pruebas.](m365-enterprise-test-lab-guides.md)  
+Para obtener TG adicionales que se aplican a Office 365 y Microsoft 365, vaya a [Guías del laboratorio de pruebas.](m365-enterprise-test-lab-guides.md)  
     
 ## <a name="related-topics"></a>Temas relacionados
 
-[Centro de soluciones y arquitectura de Microsoft 365](../solutions/solution-architecture-center.md)
+[Centro de soluciones y arquitectura de Microsoft 365](../solutions/index.yml)
   
 [Soluciones híbridas](hybrid-solutions.md)

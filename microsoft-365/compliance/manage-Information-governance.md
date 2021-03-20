@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Implemente las funciones de Gobierno de la información de Microsoft para regir los datos de acuerdo a los requisitos normativos o de cumplimiento.
-ms.openlocfilehash: 6b06de54f18ce4081c3b13d108a5c0ceae6d24a7
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 8a104775cd9bfc75af5b5af9840274f5f84509f0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087119"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903496"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Gobierno de la información de Microsoft en Microsoft 365
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Use las funciones de Gobierno de la información de Microsoft (a veces abreviado como MIG) para regir los datos de acuerdo a los requisitos normativos o de cumplimiento.
 
@@ -49,4 +49,3 @@ Para administrar contenido de gran valor sobre obligaciones legales, comerciales
 |Funcionalidad|¿Qué problemas se solucionan?|Introducción|
 |:------|:------------|---------------------|:----------------------------|
 |[Administración de registros](records-management.md)| Una única solución para el correo electrónico y los documentos que incorpora a los programas de retención y a los requerimientos en un plan de archivos que sea compatible con el ciclo de vida completo de su contenido con la declaración, retención y eliminación de los registros. <br /><br />Escenario de ejemplo: [Disposición de registros](disposition.md#disposition-of-records)|[Introducción a la administración de registros](get-started-with-records-management.md) |
-

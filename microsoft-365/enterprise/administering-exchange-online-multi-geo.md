@@ -12,16 +12,16 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: Obtenga información sobre cómo administrar la configuración multige geográfica de Exchange Online en su entorno de Microsoft 365 con PowerShell.
-ms.openlocfilehash: 83889b4582d2e305b2cb9f07a64307e85d30be77
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: c8f06318313c4192fc2b3a289727933c5a54f3ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406047"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905589"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Administración de buzones de correo de Exchange Online en un entorno multigeográfico
 
-Exchange Online PowerShell es necesario para ver y configurar propiedades multige geográficas en el entorno de Microsoft 365. Para conectarse a PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+Exchange Online PowerShell es necesario para ver y configurar propiedades multige geográficas en el entorno de Microsoft 365. Para conectarse a PowerShell de Exchange Online, consulte [Conectarse a PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Necesitará la v1.1.166.0 o una versión posterior en la v1.x del [módulo PowerShell de Microsoft Azure Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) para ver la propiedad **PreferredDataLocation** en los objetos de usuario. No se puede modificar el valor de **PreferredDataLocation** directamente a través del PowerShell de AAD en los objetos de usuario que se sincronizan en AAD a través de AAD Connect. Solo se pueden modificar objetos basados en la nube a través del PowerShell de AAD. Para conectarse al PowerShell de Azure AD, consulte [Conectarse al PowerShell](connect-to-microsoft-365-powershell.md).
 
@@ -31,7 +31,7 @@ En entornos multige geográficos de Exchange Online, no es necesario realizar ni
 
 Normalmente, el PowerShell de Exchange Online se conecta a la ubicación geográfica central. Sin embargo, también puede conectarse directamente a las ubicaciones geográficas satélite. Debido a las mejoras en el rendimiento, se recomienda conectarse directamente a la ubicación satélite si únicamente administra usuarios en esa ubicación.
 
-Los requisitos para instalar y usar el módulo EXO V2 se describen en [Instalar y mantener el módulo EXO V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+Los requisitos para instalar y usar el módulo EXO V2 se describen en [Instalar y mantener el módulo EXO V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
 Para conectar Exchange Online PowerShell a una ubicación geográfica específica, el parámetro *ConnectionUri* es diferente de las instrucciones de conexión normales. El resto de comandos y valores son los mismos.
 
@@ -136,7 +136,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 > [!NOTE]
 >
-> - Como se mencionó anteriormente, no puede usar este procedimiento para objetos de usuario sincronizados de Active Directory local. Tiene que cambiar el valor de **PreferredDataLocation** en Active Directory y sincronizarlo con AAD Connect. Para obtener más información, consulte [Sincronización de Azure Active Directory Connect: configurar la ubicación de datos preferida para recursos de Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+> - Como se mencionó anteriormente, no puede usar este procedimiento para objetos de usuario sincronizados de Active Directory local. Tiene que cambiar el valor de **PreferredDataLocation** en Active Directory y sincronizarlo con AAD Connect. Para obtener más información, consulte [Sincronización de Azure Active Directory Connect: configurar la ubicación de datos preferida para recursos de Microsoft 365](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 >
 > - El tiempo que se tarda en reubicar un buzón a una nueva ubicación geográfica depende de varios factores:
 >
@@ -148,29 +148,29 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 No puede mover buzones inactivos que se conservan con fines de cumplimiento (por ejemplo, buzones en retención por juicio) cambiando su **valor PreferredDataLocation.** Para mover un buzón inactivo a una ubicación geográfica diferente, siga estos pasos:
 
-1. Recupere el buzón inactivo. Para obtener instrucciones, vea [Recuperar un buzón inactivo.](https://docs.microsoft.com/microsoft-365/compliance/recover-an-inactive-mailbox)
+1. Recupere el buzón inactivo. Para obtener instrucciones, vea [Recuperar un buzón inactivo.](../compliance/recover-an-inactive-mailbox.md)
 
-2. Impedir que el Asistente para carpeta administrada procese el buzón recuperado reemplazando por el nombre, alias, cuenta o dirección de correo electrónico del buzón y ejecutando el siguiente comando en \<MailboxIdentity\> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
+2. Impedir que el Asistente para carpeta administrada procese el buzón recuperado reemplazando por el nombre, alias, cuenta o dirección de correo electrónico del buzón y ejecutando el siguiente comando en \<MailboxIdentity\> [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
     ```
 
-3. Asigne una **licencia de Exchange Online Plan 2** al buzón recuperado. Este paso es necesario para volver a colocar el buzón en retención por juicio. Para obtener instrucciones, vea [Assign licenses to users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
+3. Asigne una **licencia de Exchange Online Plan 2** al buzón recuperado. Este paso es necesario para volver a colocar el buzón en retención por juicio. Para obtener instrucciones, vea [Assign licenses to users](../admin/manage/assign-licenses-to-users.md).
 
 4. Configure el **valor PreferredDataLocation** en el buzón como se describe en la sección anterior.
 
-5. Después de confirmar que el buzón se ha movido a la nueva ubicación geográfica, vuelva a colocar el buzón recuperado en retención por juicio. Para obtener instrucciones, vea [Colocar un buzón en retención por juicio](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold#place-a-mailbox-on-litigation-hold).
+5. Después de confirmar que el buzón se ha movido a la nueva ubicación geográfica, vuelva a colocar el buzón recuperado en retención por juicio. Para obtener instrucciones, vea [Colocar un buzón en retención por juicio](../compliance/create-a-litigation-hold.md#place-a-mailbox-on-litigation-hold).
 
-6. Después de comprobar que la retención por juicio está en su lugar, permita que el Asistente para carpetas administradas vuelva a procesar el buzón reemplazando por el nombre, alias, cuenta o dirección de correo electrónico del buzón y ejecutando el siguiente comando en \<MailboxIdentity\> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
+6. Después de comprobar que la retención por juicio está en su lugar, permita que el Asistente para carpetas administradas vuelva a procesar el buzón reemplazando por el nombre, alias, cuenta o dirección de correo electrónico del buzón y ejecutando el siguiente comando en \<MailboxIdentity\> [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
     ```
 
-7. Vuelva a hacer que el buzón esté inactivo quitando la cuenta de usuario asociada al buzón. Para obtener instrucciones, [vea Delete a user from your organization](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user). Este paso también libera la licencia de Exchange Online Plan 2 para otros usos.
+7. Vuelva a hacer que el buzón esté inactivo quitando la cuenta de usuario asociada al buzón. Para obtener instrucciones, [vea Delete a user from your organization](../admin/add-users/delete-a-user.md). Este paso también libera la licencia de Exchange Online Plan 2 para otros usos.
 
-**Nota:** Al mover un buzón inactivo a una ubicación geográfica diferente, puede afectar a los resultados de búsqueda de contenido o a la capacidad de buscar en el buzón desde la ubicación geográfica anterior. Para obtener más información, vea [Searching and exporting content in Multi-Geo environments](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments).
+**Nota:** Al mover un buzón inactivo a una ubicación geográfica diferente, puede afectar a los resultados de búsqueda de contenido o a la capacidad de buscar en el buzón desde la ubicación geográfica anterior. Para obtener más información, vea [Searching and exporting content in Multi-Geo environments](../compliance/set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments).
 
 ## <a name="create-new-cloud-mailboxes-in-a-specific-geo-location"></a>Crear nuevos buzones basados en la nube en una ubicación geográfica específica
 
@@ -207,11 +207,11 @@ Para obtener más información sobre cómo crear nuevas cuentas de usuario y có
 
 ## <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo-location"></a>Incorporar buzones existentes en el entorno local a una ubicación geográfica específica
 
-Puede usar las herramientas y procesos de incorporación estándar para migrar un buzón del entorno local de una organización de Exchange a Exchange Online, incluidos el [Panel de migración en el EAC](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331) y el cmdlet [New-MigrationBatch](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch) del PowerShell de Exchange Online.
+Puede usar las herramientas y procesos de incorporación estándar para migrar un buzón del entorno local de una organización de Exchange a Exchange Online, incluidos el [Panel de migración en el EAC](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331) y el cmdlet [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) del PowerShell de Exchange Online.
 
 El primer paso consiste en comprobar que existe un objeto de usuario para que cada buzón se quiere incorporar y comprobar que el valor de **PreferredDataLocation** está configurado correctamente en Azure AD. Las herramientas de incorporación respetarán el valor de **PreferredDataLocation** y migrarán los buzones directamente a la ubicación geográfica especificada.
 
-Como alternativa, puede seguir los pasos a continuación para incorporar buzones directamente a una ubicación geográfica específica con el cmdlet [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/new-moverequest) del PowerShell de Exchange Online.
+Como alternativa, puede seguir los pasos a continuación para incorporar buzones directamente a una ubicación geográfica específica con el cmdlet [New-MoveRequest](/powershell/module/exchange/new-moverequest) del PowerShell de Exchange Online.
 
 1. Compruebe que existe el objeto de usuario para cada buzón que se va a incorporar y que **PreferredDataLocation** está definido en el valor deseado en Azure AD. El valor de **PreferredDataLocation** se sincronizará con el atributo **MailboxRegion** del objeto de usuario del correo correspondiente en Exchange Online.
 

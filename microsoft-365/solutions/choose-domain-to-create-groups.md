@@ -16,40 +16,40 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
-description: Learn to choose the domain to use when creating Microsoft 365 groups by configuring email address policies using PowerShell.
-ms.openlocfilehash: 1e56268c3994b1ac822869d154be826326039bfc
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+description: Aprenda a elegir el dominio que se usará al crear grupos de Microsoft 365 configurando directivas de direcciones de correo electrónico con PowerShell.
+ms.openlocfilehash: 4908d5bd58ca6d0fbb50151983ddb459f0732284
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49612945"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904689"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Elegir el dominio que se usará al crear grupos de Microsoft 365
 
 Algunas organizaciones utilizan dominios de correo electrónico diferentes para segmentar diferentes partes de la empresa. Puede especificar qué dominio debe usarse cuando los usuarios creen grupos de Microsoft 365.
   
-Si su organización necesita que los usuarios creen sus grupos en dominios distintos del dominio aceptado predeterminado de su empresa, puede permitir esto configurando directivas de direcciones de correo electrónico (EPE) con PowerShell.
+Si su organización necesita que los usuarios creen sus grupos en dominios distintos del dominio aceptado predeterminado de su empresa, puede permitirlo configurando directivas de direcciones de correo electrónico (APE) con PowerShell.
 
-Antes de ejecutar los cmdlets de PowerShell, descargue e instale un módulo que le permitirá hablar con su organización. Consulte [Conectarse a Exchange Online con PowerShell remoto.](https://go.microsoft.com/fwlink/p/?LinkId=785881)
+Antes de poder ejecutar los cmdlets de PowerShell, descargue e instale un módulo que le permitirá hablar con su organización. Consulte [Conectarse a Exchange Online con PowerShell remoto.](/powershell/exchange/connect-to-exchange-online-powershell)
 
 ## <a name="example-scenarios"></a>Escenarios de ejemplo
 
-Supongamos que el dominio principal de su empresa es Contoso.com. Pero el dominio aceptado predeterminado de su organización es service.contoso.com. Esto significa que se crearán grupos en service.contoso.com (por ejemplo, jimsteam@service.contoso.com).
+Supongamos que el dominio principal de su empresa es Contoso.com. Pero el dominio aceptado predeterminado de la organización es service.contoso.com. Esto significa que los grupos se crearán en service.contoso.com (por ejemplo, jimsteam@service.contoso.com).
   
-Supongamos que también tiene subdominios configurados en su organización. También desea que los grupos se cree en estos dominios:
+Supongamos que también tiene subdominios configurados en su organización. También desea que los grupos se creen en estos dominios:
   
 - students.contoso.com para estudiantes
     
-- faculty.contoso.com para miembros del profesorado
+- faculty.contoso.com para profesores
     
-Los dos escenarios siguientes explican cómo se lograría esto.
+Los dos escenarios siguientes explican cómo lograr esto.
 
 > [!NOTE]
-> Cuando tienes EAP de mulas, se evalúan en el orden de prioridad. Un valor de 1 significa la prioridad más alta. Una vez que un EAP coincide, no se evalúa ningún EAP adicional y las direcciones que se marcan en el grupo son según el EAP coincidente. > si no hay EAP que coincidan con los criterios especificados, el grupo se aprovisiona en el dominio aceptado predeterminado de la organización. Consulte [Administrar dominios aceptados en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=785428) para obtener más información sobre cómo agregar un dominio aceptado.
+> Cuando se tienen EAP de mulitple, se evalúan en el orden de prioridad. Un valor de 1 significa la prioridad más alta. Una vez que un EAP coincide, no se evalúa ningún EAP más y las direcciones que se marcan en el grupo son según el EAP coincidente. > Si ningún AED coincide con los criterios especificados, el grupo se aprovisiona en el dominio aceptado predeterminado de la organización. Consulte [Administrar dominios aceptados en Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) para obtener más información sobre cómo agregar un dominio aceptado.
   
 ### <a name="scenario-1"></a>Escenario 1
 
-En el siguiente ejemplo se muestra cómo aprovisionar todos los grupos de Microsoft 365 de su organización en el groups.contoso.com local.
+En el ejemplo siguiente se muestra cómo aprovisionar todos los grupos de Microsoft 365 de la organización en el groups.contoso.com usuario.
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -59,62 +59,62 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 Supongamos que desea controlar en qué subdominios se crean los grupos de Microsoft 365. Quieres:
   
-- Grupos creados por alumnos (usuarios que tienen **Departamento** establecido en **Estudiantes)** en el students.groups.contoso.com local. Use este comando:
+- Grupos creados por alumnos (usuarios que tienen **Departamento** establecido en **Estudiantes)** en el students.groups.contoso.com de correo. Use este comando:
     
   ```
   New-EmailAddressPolicy -Name StudentsGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Students'} -Priority 1
   ```
 
-- Grupos creados por miembros del profesorado (usuarios que tienen **Departamento** establecido en Profesores o la dirección de correo electrónico contiene **faculty.contoso.com)** en el faculty.groups.contoso.com principal. Use este comando:
+- Grupos creados por miembros del  profesorado (usuarios que tienen departamento establecido en Profesor o dirección de correo electrónico contiene **faculty.contoso.com)**) en el faculty.groups.contoso.com. Use este comando:
     
   ```
   New-EmailAddressPolicy -Name FacultyGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@faculty.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Faculty' -or EmailAddresses -like "*faculty.contoso.com*"} -Priority 2
   ```
 
-- Los grupos creados por cualquier otro usuario se crean en el groups.contoso.com usuario. Use este comando:
+- Los grupos creados por cualquier otra persona se crean en el groups.contoso.com usuario. Use este comando:
     
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3
   ```
 
-## <a name="change-email-address-policies"></a>Cambiar las directivas de direcciones de correo electrónico
+## <a name="change-email-address-policies"></a>Cambiar directivas de direcciones de correo electrónico
 
-Para cambiar la prioridad o las plantillas de dirección de correo electrónico para un EAP existente, use el cmdlet Set-EmailAddressPolicy.
+Para cambiar las plantillas de prioridad o dirección de correo electrónico para un EAP existente, use el cmdlet Set-EmailAddressPolicy correo electrónico.
   
 ```
 Set-EmailAddressPolicy -Name StudentsGroups -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com", "smtp:@students.contoso.com" ManagedByFilter {Department -eq 'Students'} -Priority 2
 
 ```
 
-Cambiar un EAP no afecta a los grupos que ya se han aprovisionado.
+Cambiar un EAP no tiene ningún impacto en los grupos que ya se han aprovisionado.
   
 ## <a name="delete-email-address-policies"></a>Eliminar directivas de direcciones de correo electrónico
 
-Para eliminar un EAP, use el cmdlet Remove-EmailAddressPolicy datos.
+Para eliminar un EAP, use el cmdlet Remove-EmailAddressPolicy.
   
 ```
 Remove-EmailAddressPolicy -Identity StudentsGroups
 ```
 
-Cambiar un EAP no afecta a los grupos que ya se han aprovisionado.
+Cambiar un EAP no tiene ningún impacto en los grupos que ya se han aprovisionado.
   
 ## <a name="hybrid-requirements"></a>Requisitos híbridos
 
-Si su organización está configurada en un escenario híbrido, consulte Configurar grupos de [Microsoft 365](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-microsoft-365-groups) con Exchange híbrido local para asegurarse de que su organización cumple los requisitos para crear grupos de Microsoft 365. 
+Si su organización está configurada en un escenario híbrido, consulte Configurar grupos de [Microsoft 365](/exchange/hybrid-deployment/set-up-microsoft-365-groups) con exchange híbrido local para asegurarse de que su organización cumple los requisitos para crear grupos de Microsoft 365. 
   
-## <a name="additional-info-about-using-email-address-policies-groups"></a>Información adicional sobre el uso de grupos de directivas de direcciones de correo electrónico:
+## <a name="additional-info-about-using-email-address-policies-groups"></a>Información adicional sobre cómo usar grupos de directivas de direcciones de correo electrónico:
 
-Hay algunas cosas más que debe saber:
+Hay que saber algunas cosas más:
   
-- La rapidez con la que se crean los grupos depende del número de EPE configurados en la organización.
+- La forma en que se crean los grupos rápidos depende del número de EPE configurados en la organización.
     
-- Los administradores y usuarios también pueden modificar dominios cuando crean grupos.
+- Los administradores y los usuarios también pueden modificar dominios al crear grupos.
     
-- El grupo de usuarios se determina mediante las consultas estándar (propiedades de usuario) que ya están disponibles. Des check [out Filterable properties for the -RecipientFilter parameter](https://docs.microsoft.com/powershell/exchange/recipientfilter-properties) for supported filterable properties. 
+- El grupo de usuarios se determina mediante las consultas estándar (propiedades de usuario) que ya están disponibles. Consulte [Propiedades filtrables para el parámetro -RecipientFilter](/powershell/exchange/recipientfilter-properties) para las propiedades filtrables admitidas. 
     
-- Si no configuras ningún EAP para grupos, se selecciona el dominio aceptado predeterminado para la creación de grupos.
+- Si no configura ningún EAP para grupos, se selecciona el dominio aceptado predeterminado para la creación de grupos.
     
-- Si quitas un dominio aceptado, debes actualizar primero las EPE; de lo contrario, el aprovisionamiento de grupos se verá afectado.
+- Si quita un dominio aceptado, primero debe actualizar los EPE, de lo contrario, el aprovisionamiento de grupos se verá afectado.
     
 - Se puede configurar un límite máximo de 100 directivas de direcciones de correo electrónico para una organización.
     
@@ -122,6 +122,6 @@ Hay algunas cosas más que debe saber:
 
 [Planeación paso a paso de gobierno de colaboración](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Crear un plan de gobierno de colaboración](collaboration-governance-first.md)
+[Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 
-[Crear un grupo de Microsoft 365 en el Centro de administración](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)
+[Crear un grupo de Microsoft 365 en el Centro de administración](../admin/create-groups/create-groups.md)

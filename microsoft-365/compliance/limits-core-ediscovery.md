@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describen los límites del caso principal de exhibición de documentos electrónicos en Microsoft 365.
-ms.openlocfilehash: 2699e9b2511c742bb295f69611a976f6a3955980
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: e18e1e6c1d9d7ecd78deaf267be72ccdc9d1ba5d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423451"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905892"
 ---
 # <a name="limits-in-core-ediscovery"></a>Límites en eDiscovery principal
 
-En la tabla siguiente se enumeran los límites de los casos principales de exhibición de documentos electrónicos y las retenciones asociadas a un caso de exhibición de documentos electrónicos principal. Para obtener más información acerca de la exhibición de documentos electrónicos principales, vea [Overview of Core eDiscovery](ediscovery-cases.md).
+En la tabla siguiente se enumeran los límites de los casos principales de exhibición de documentos electrónicos y las retenciones asociadas a un caso de exhibición de documentos electrónicos principal. Para obtener más información acerca de la exhibición de documentos electrónicos principales, vea [Overview of Core eDiscovery](./get-started-core-ediscovery.md).
     
   | Descripción del límite | Límite |
   |:-----|:-----|
@@ -40,9 +40,9 @@ En la tabla siguiente se enumeran los límites de los casos principales de exhib
    > [!NOTE]
    > <sup>1</sup> Para ver una lista de más de 1.000 casos, retenciones, búsquedas o exportaciones, puede usar los cmdlets de PowerShell de seguridad de Office 365 correspondientes & cumplimiento:
    > 
-   > - [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)
-   > - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
-   > - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
-   > - [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+   > - [Get-ComplianceCase](/powershell/module/exchange/get-compliancecase)
+   > - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
+   > - [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)
+   > - [Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)
 
 Para obtener más información acerca de los límites relacionados con las búsquedas de contenido y las exportaciones asociadas con un caso de exhibición de documentos electrónicos principales, vea [Limits for Content Search and Core eDiscovery](limits-for-content-search.md).

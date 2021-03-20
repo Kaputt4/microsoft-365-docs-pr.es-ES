@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtener información sobre cómo crear un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: b0b03d0e8804097f34f9cd5b17504263097d8696
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 8218d04d2f5cb4e8f8f67bdcd744b7f1a4a4d18a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242505"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905817"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Crear un extractor en Microsoft SharePoint Syntex
 
@@ -86,12 +86,12 @@ Para ayudar a identificar la *Fecha de inicio del servicio*, puede crear una exp
 4. Seleccione **Guardar**.
 
 > [!NOTE]
-> Para obtener más información sobre los tipos de explicación, consulte [Tipos de explicación](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview)..  
+> Para obtener más información sobre los tipos de explicación, consulte [Tipos de explicación](./explanation-types-overview.md)..  
 
 
 ### <a name="use-the-explanation-library"></a>Usar la biblioteca de explicación
 
-Para crear explicaciones para elementos como las fechas, es más fácil [utilizar la biblioteca de explicaciones ](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-the-explanation-library)que introducir manualmente todas las variaciones. La biblioteca de explicaciones es un conjunto de explicaciones de frases y patrones pre generados. La biblioteca trata de proporcionar todos los formatos de listas, frases o patrones comunes, como fechas, números de teléfono, códigos postales y muchos otros. 
+Para crear explicaciones para elementos como las fechas, es más fácil [utilizar la biblioteca de explicaciones ](./explanation-types-overview.md#use-the-explanation-library)que introducir manualmente todas las variaciones. La biblioteca de explicaciones es un conjunto de explicaciones de frases y patrones pre generados. La biblioteca trata de proporcionar todos los formatos de listas, frases o patrones comunes, como fechas, números de teléfono, códigos postales y muchos otros. 
 
 Para la muestra de la *Fecha de inicio del servicio*, es más eficiente usar la explicación pre generada para *Fecha* en la biblioteca de explicaciones:
 

@@ -16,16 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Administre estos roles de administrador de Azure en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 7a4e28667bc16d6619fe87451cd48ea77d89c81d
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: b07174763384150a7ae8cda6709f5d0ec5cb40ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126110"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904497"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Roles de Azure Active Directory en el Centro de administración de Microsoft 365
 
-El Centro de administración de Microsoft 365 le permite administrar más de 30 roles de Azure AD. Sin embargo, estos roles son un subconjunto de los roles disponibles en el portal de Azure. Si tiene una empresa grande, es posible que haya roles en el portal de Azure que cubran las necesidades de su organización. ¿Busca las descripciones detalladas de los roles para Azure AD? Consulte [Permisos de rol de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+El Centro de administración de Microsoft 365 le permite administrar más de 30 roles de Azure AD. Sin embargo, estos roles son un subconjunto de los roles disponibles en el portal de Azure. Si tiene una empresa grande, es posible que haya roles en el portal de Azure que cubran las necesidades de su organización. ¿Busca las descripciones detalladas de los roles para Azure AD? Consulte [Permisos de rol de administrador en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 Un usuario que tenga asignado un rol de administrador tendrá el mismo nivel de acceso a los servicios en la nube a los que esté suscrita la organización, independientemente de si asigna el rol en el Centro de administración de Microsoft 365 o en el portal de Azure, o bien mediante el módulo de Azure AD para Windows PowerShell.
 
@@ -37,7 +37,7 @@ En el Centro de administración de Microsoft 365, puede ir a **Roles** y selecci
 
 ## <a name="all-azure-ad-roles"></a>Todos los roles de Azure AD
 
-A continuación, presentamos una lista de todos los roles de administrador disponibles en el Centro de administración de Microsoft 365. ¿Busca descripciones detalladas de los roles de administrador de Microsoft 365? Consulte [Acerca de los roles de administrador](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+A continuación, presentamos una lista de todos los roles de administrador disponibles en el Centro de administración de Microsoft 365. ¿Busca descripciones detalladas de los roles de administrador de Microsoft 365? Consulte [Acerca de los roles de administrador](./about-admin-roles.md?view=o365-worldwide).
 
 |Rol de administrador     |Descripción  |
 |---------|---------|
@@ -57,7 +57,7 @@ A continuación, presentamos una lista de todos los roles de administrador dispo
 |Administrador de Exchange     |  Posee acceso completo a Exchange Online, crea y administra grupos, administra solicitudes de servicio y supervisa el estado del servicio.    |
 |Administrador del proveedor de identidad externa    |     Configura los proveedores de identidades para su uso en federación directa.    |
 |Administrador global     |    Tiene acceso ilimitado a todas las características de administración y a la mayoría de los datos en todos los centros de administración.     |
-|Lector global     |    Tiene acceso de solo lectura a todas las características de administración y a la mayoría de los datos en los centros de administración. Para obtener una descripción detallada de los derechos de acceso y las limitaciones de este rol, consulte [Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).    |
+|Lector global     |    Tiene acceso de solo lectura a todas las características de administración y a la mayoría de los datos en los centros de administración. Para obtener una descripción detallada de los derechos de acceso y las limitaciones de este rol, consulte [Permisos de roles de administrador en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).    |
 |Administrador de grupos   |Permite crear grupos y administrar la configuración de todos los grupos en los centros de administración.|
 |Invitador de usuarios invitados     |    Administra las invitaciones de usuarios invitados B2B de Azure Active Directory.     |
 |Administrador del departamento de soporte técnico     | Restablece las contraseñas y vuelve a autenticarlas para todos los usuarios que no sean administradores y para algunos roles de administrador. Administra solicitudes de servicio y supervisa el estado del servicio.      |
@@ -99,7 +99,7 @@ Un partner puede asignar estos roles:
 
 - Administración limitada, que tiene privilegios equivalentes a los de un administrador del departamento de soporte técnico.
 
-Antes de que el partner pueda asignar estos roles a los usuarios, usted debe agregarlo como un administrador delegado a su cuenta. Este proceso puede iniciarlo un partner autorizado. El partner le envía un correo electrónico para preguntarle si quiere concederle permiso para actuar como administrador delegado. Para obtener instrucciones, consulte [Autorizar o quitar relaciones de partner](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
+Antes de que el partner pueda asignar estos roles a los usuarios, usted debe agregarlo como un administrador delegado a su cuenta. Este proceso puede iniciarlo un partner autorizado. El partner le envía un correo electrónico para preguntarle si quiere concederle permiso para actuar como administrador delegado. Para obtener instrucciones, consulte [Autorizar o quitar relaciones de partner](../misc/add-partner.md).
   
 ## <a name="related-articles"></a>Artículos relacionados
 

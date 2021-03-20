@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a12b2dcf2de472f43e782e2064944ec774bdb9e1
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 1149d8fa614854bdbbd2c154f0e92f6a9c28ce00
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727264"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904072"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Buscar amenazas en dispositivos, correos electrónicos, aplicaciones e identidades
 
@@ -50,7 +50,7 @@ Use estas consultas para obtener información sobre las cuentas de usuario, los 
 ### <a name="obtain-user-accounts-from-email-addresses"></a>Obtener cuentas de usuario a través de las direcciones de correo electrónico
 Al crear consultas a través de [tablas que cubran dispositivos y mensajes de correo electrónico](advanced-hunting-schema-tables.md), puede que necesite obtener los nombres de las cuentas de usuario en las direcciones de correo electrónico del remitente o destinatario. Por lo general, puede hacerlo para la dirección de destinatario o remitente mediante el *host local* desde la dirección de correo electrónico.
 
-En el fragmento de código siguiente, usamos la función [Kusto tostring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) para extraer el host local justo antes de las direcciones de correo electrónico del destinatario de `@` la columna `RecipientEmailAddress` .
+En el fragmento de código siguiente, usamos la función [Kusto tostring()](/azure/data-explorer/kusto/query/tostringfunction) para extraer el host local justo antes de las direcciones de correo electrónico del destinatario de `@` la columna `RecipientEmailAddress` .
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
@@ -86,7 +86,7 @@ Department, City, Country
 El [esquema de búsqueda avanzada](advanced-hunting-schema-tables.md) proporciona información extensa del dispositivo en varias tablas. Por ejemplo, la [tabla DeviceInfo proporciona](advanced-hunting-deviceinfo-table.md) información completa del dispositivo basada en datos de eventos agregados periódicamente. Esta consulta usa la tabla para comprobar si un usuario potencialmente comprometido ( ) ha iniciado sesión en cualquier dispositivo y, a continuación, enumera las alertas que se han desencadenado `DeviceInfo` `<account-name>` en esos dispositivos.
 
 >[!Tip]
-> Esta consulta se `kind=inner` usa para especificar una combinación [interna](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), que evita la desduplicación de los valores del lado izquierdo para `DeviceId` .
+> Esta consulta se `kind=inner` usa para especificar una combinación [interna](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), que evita la desduplicación de los valores del lado izquierdo para `DeviceId` .
 
 ```kusto
 DeviceInfo
