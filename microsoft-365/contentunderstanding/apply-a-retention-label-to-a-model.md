@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Este artículo muestra cómo aplicar una etiqueta de retención a un modelo en SharePoint Syntex
-ms.openlocfilehash: 48c0b983316cfe29019d09cb20546fa4b325b3b0
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 796130bfa967663b5696f49279154cfe9b16f703
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242776"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925373"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Puede aplicar fácilmente una etiqueta de retención a un modelo en SharePoint Syntex.
 
@@ -28,14 +28,14 @@ ms.locfileid: "50242776"
 </br>
 
 
-Puede aplicar fácilmente una [etiqueta de retención](https://docs.microsoft.com/microsoft-365/compliance/retention) a un modelo en Microsoft SharePoint Syntex. Puede hacerlo tanto para modelos de comprensión de documentos como para modelos de procesamiento de formularios
+Puede aplicar fácilmente una [etiqueta de retención](../compliance/retention.md) a un modelo en Microsoft SharePoint Syntex. Puede hacerlo tanto para modelos de comprensión de documentos como para modelos de procesamiento de formularios
 
 Las etiquetas de retención le permiten aplicar la configuración de retención a los documentos que identifican sus modelos.  Por ejemplo, si desea que el modelo no solo identifique cualquier documento de *Notificación de seguros* cargados en la biblioteca de documentos, sino que también pueda aplicar una etiqueta de retención de *negocios* para que estos documentos no se puedan eliminar de la biblioteca de documentos durante el período de tiempo especificado (por ejemplo, los próximos cinco meses).
 
 Puede aplicar una etiqueta de retención preexistente al modelo en la página principal del modelo. 
 
 > [!Important]
-> Para que las etiquetas de retención estén disponibles para aplicarlas a su modelo de comprensión mediante documentos, deben [crearse y publicarse en el Centro de cumplimiento de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+> Para que las etiquetas de retención estén disponibles para aplicarlas a su modelo de comprensión mediante documentos, deben [crearse y publicarse en el Centro de cumplimiento de Microsoft 365](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels).
 
 ## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>Aplicar una etiqueta de retención a un modelo de comprensión mediante documentos
 
@@ -73,13 +73,13 @@ Por ejemplo, todos los documentos de *Avisos de seguros* que su modelo identifiq
 ## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>Agregar una etiqueta de retención a un modelo de comprensión mediante documentos
 
 > [!Important]
-> Para que las etiquetas de retención estén disponibles para aplicarlas a su modelo de procesamiento de formularios, deben [crearse y publicarse en el Centro de cumplimiento de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+> Para que las etiquetas de retención estén disponibles para aplicarlas a su modelo de procesamiento de formularios, deben [crearse y publicarse en el Centro de cumplimiento de Microsoft 365](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels).
 
 Puede aplicar una etiqueta de retención a un modelo de procesamiento de formularios cuando cree el modelo, o bien aplicarlo a un modelo ya existente.
 
 ### <a name="to-add-a-retention-label-when-you-create-a-form-processing-model"></a>Agregar una etiqueta de retención a un modelo de comprensión mediante documentos cuando se crea el modelo
 
-1. Cuando cree un [nuevo modelo de procesamiento de formularios](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model), seleccione la <b>Configuración avanzada.</b>
+1. Cuando cree un [nuevo modelo de procesamiento de formularios](./create-a-form-processing-model.md), seleccione la <b>Configuración avanzada.</b>
 2. En <b>Configuración avanzada</b>, en la sección <b>Etiqueta de retención</b>, seleccione el menú y, después, seleccione la etiqueta de retención que quiere aplicar al modelo.</b>
 
  
@@ -132,5 +132,3 @@ Puede agregar una etiqueta de retención a un modelo de procesamiento de formula
 [Crear un extractor](create-an-extractor.md)
 
 [Información general de la comprensión mediante documentos ](document-understanding-overview.md)
-
-

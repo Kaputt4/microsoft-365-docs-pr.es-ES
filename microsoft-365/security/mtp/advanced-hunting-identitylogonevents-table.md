@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 08dd78c7648126717113066e3c87b05e624f57d0
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 7426e22fd617e93fbf63748ba38fc705e4c995a9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712359"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924415"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -41,7 +41,7 @@ La tabla del esquema de búsqueda avanzada contiene información sobre las activ
 > Para obtener información detallada acerca de los tipos de eventos ( valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en el centro de seguridad.
 
 >[!NOTE]
->En esta tabla se tratan las actividades de inicio de sesión de Azure Active Directory (AD) rastreadas por Cloud App Security, especialmente las actividades de autenticación y inicios de sesión interactivos con ActiveSync y otros protocolos heredados. Los inicios de sesión no interactivos que no están disponibles en esta tabla se pueden ver en el registro de auditoría de Azure AD. [Más información sobre cómo conectar Cloud App Security a Microsoft 365](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+>En esta tabla se tratan las actividades de inicio de sesión de Azure Active Directory (AD) rastreadas por Cloud App Security, especialmente las actividades de autenticación y inicios de sesión interactivos con ActiveSync y otros protocolos heredados. Los inicios de sesión no interactivos que no están disponibles en esta tabla se pueden ver en el registro de auditoría de Azure AD. [Más información sobre cómo conectar Cloud App Security a Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).
 

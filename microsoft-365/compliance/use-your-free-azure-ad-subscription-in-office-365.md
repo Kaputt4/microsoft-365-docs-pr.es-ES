@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Obtenga información sobre cómo obtener acceso a Azure Active Directory, que se incluye en la suscripción de pago de su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c968d4ae8cc5f0798b6ba7d5bcb52ca6fe7d6116
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 5bc1c57c0c40df03d27471aafd222908ba9d5887
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528156"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925456"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>Usar su suscripción gratuita de Azure Active Directory
 
@@ -48,8 +48,8 @@ Use una sesión de navegación privada (no una sesión normal) para obtener acce
 
 ## <a name="more-information"></a>Más información
 
-- Una suscripción gratuita de Azure Active Directory no incluye el informe de actividad de inicio de sesión. Para grabar la actividad de inicio de sesión (que puede resultar útil en caso de una vulneración de datos), necesita una suscripción de Azure Active Directory Premium. Para obtener más información, consulte [¿Durante cuánto tiempo Azure AD almacena los datos?](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
+- Una suscripción gratuita de Azure Active Directory no incluye el informe de actividad de inicio de sesión. Para grabar la actividad de inicio de sesión (que puede resultar útil en caso de una vulneración de datos), necesita una suscripción de Azure Active Directory Premium. Para obtener más información, consulte [¿Durante cuánto tiempo Azure AD almacena los datos?](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
 - También puede tener acceso al centro de administración de **Azure Active Directory** desde el centro de administración de Microsoft 365. En el panel de navegación de la izquierda del centro de administración de Microsoft 365, haga clic en **Centros de administración** \> **Azure Active Directory**.
 
-- Para obtener información sobre cómo administrar usuarios y grupos, así como realizar otras tareas de administración de directorio, vea [Administrar el directorio de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-administer).
+- Para obtener información sobre cómo administrar usuarios y grupos, así como realizar otras tareas de administración de directorio, vea [Administrar el directorio de Azure AD](/azure/active-directory/active-directory-administer).

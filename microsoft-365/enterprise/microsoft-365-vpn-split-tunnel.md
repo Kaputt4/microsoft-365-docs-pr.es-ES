@@ -18,12 +18,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Guía para usar el túnel dividido VPN con Office 365 para optimizar la conectividad de Office 365 para usuarios remotos.
-ms.openlocfilehash: 103a5cc36c9e981ccef5717971e32330078ed721
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 9f54d8836105896d8d00afc4a622975c007bda85
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456392"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924193"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Optimizar la conectividad de Office 365 para usuarios remotos usando el túnel dividido de VPN
 <!---
@@ -43,7 +43,7 @@ La meta de este enfoque es ofrecer un método sencillo para que las empresas pue
 
 - Atenúa de inmediato la causa principal de la mayoría de los problemas de rendimiento y de capacidad de red detectados en clientes con arquitecturas VPN empresariales que afectan a la experiencia de usuario de Office 365.
   
-  La solución recomendada se dirige específicamente a los puntos de conexión de servicio de Office 365 categorizados como **Optimizar** en el tema [URL e intervalos de direcciones IP de Office 365](https://aka.ms/o365ips). El tráfico hacia estos puntos de conexión es muy sensible a la latencia y a los límites de ancho de banda. Por ello, que eludan el túnel de VPN puede mejorar considerablemente la experiencia de usuario final y reducir la carga de la red corporativa. Las conexiones de Office 365 que no supongan la mayor parte del ancho de banda o no dejen una gran huella en la experiencia de usuario se pueden enrutar a través del túnel VPN junto con el resto del tráfico vinculado a Internet. Para obtener más información, consulte [La estrategia de túnel dividido de VPN](#the-vpn-split-tunnel-strategy).
+  La solución recomendada se dirige específicamente a los puntos de conexión de servicio de Office 365 categorizados como **Optimizar** en el tema [URL e intervalos de direcciones IP de Office 365](./urls-and-ip-address-ranges.md). El tráfico hacia estos puntos de conexión es muy sensible a la latencia y a los límites de ancho de banda. Por ello, que eludan el túnel de VPN puede mejorar considerablemente la experiencia de usuario final y reducir la carga de la red corporativa. Las conexiones de Office 365 que no supongan la mayor parte del ancho de banda o no dejen una gran huella en la experiencia de usuario se pueden enrutar a través del túnel VPN junto con el resto del tráfico vinculado a Internet. Para obtener más información, consulte [La estrategia de túnel dividido de VPN](#the-vpn-split-tunnel-strategy).
 
 - Se pueden configurar, probar e implementar rápidamente por parte de los clientes y sin requerimientos adicionales de aplicaciones o infraestructura.
 

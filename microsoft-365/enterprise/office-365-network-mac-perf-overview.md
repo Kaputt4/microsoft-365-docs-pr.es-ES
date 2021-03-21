@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Información general sobre la conectividad de red en el Centro de administración de Microsoft 365 (versión preliminar)
-ms.openlocfilehash: 159edf6f95910625c3f924d02c8307d681164df7
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 0bfcebff4ebbefdb77049119fef2402af1ca8f90
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454246"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926101"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Conectividad de red en el Centro de administración de Microsoft 365 (versión preliminar)
 
@@ -97,7 +97,7 @@ Muchas empresas tienen configuraciones perimetrales de red que han aumentado con
 
 ## <a name="how-we-can-solve-these-challenges"></a>Cómo podemos resolver estos desafíos
 
-Las empresas pueden mejorar la experiencia general del usuario y proteger su entorno siguiendo los principios de conectividad de [Office 365](https://aka.ms/pnc) y usando la característica de conectividad de red del Centro de administración de Microsoft 365. En la mayoría de los casos, seguir estos principios generales tendrá un impacto positivo significativo en la latencia del usuario final, la confiabilidad del servicio y el rendimiento general de Microsoft 365.
+Las empresas pueden mejorar la experiencia general del usuario y proteger su entorno siguiendo los principios de conectividad de [Office 365](./microsoft-365-network-connectivity-principles.md) y usando la característica de conectividad de red del Centro de administración de Microsoft 365. En la mayoría de los casos, seguir estos principios generales tendrá un impacto positivo significativo en la latencia del usuario final, la confiabilidad del servicio y el rendimiento general de Microsoft 365.
 
 A veces se pide a Microsoft que investigue los problemas de rendimiento de red con Microsoft 365 para los clientes de grandes empresas, y estos suelen tener una causa raíz relacionada con la infraestructura perimetral de red de clientes. Cuando se encuentra una causa raíz común de un problema perimetral de red de clientes, buscamos identificar medidas de prueba sencillas que lo identifiquen. Una prueba con un umbral de medida que identifique un problema específico es valiosa porque podemos probar la misma medida en cualquier ubicación, saber si esta causa raíz está presente allí y compartirla como información de red con el administrador.
 
@@ -185,7 +185,7 @@ En el archivo CSV, una ubicación de ciudad detectada se muestra en la columna u
    > [!div class="mx-imgBorder"]
    > ![Mensaje listo para importar CSV](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>Preguntas frecuentes
+## <a name="faq"></a>Preguntas más frecuentes
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>¿Qué es una puerta principal de servicio de Microsoft 365?
 

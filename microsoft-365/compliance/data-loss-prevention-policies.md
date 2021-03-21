@@ -22,18 +22,18 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información acerca de cómo identificar, supervisar y proteger automáticamente la información confidencial de su organización en Office 365.
-ms.openlocfilehash: 75c2f4d81b3378d031adc394a9c8f7615d51079c
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 7d526d5eeb74f0d31f375974824e7a76344bcd76
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682803"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925814"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Información general sobre la prevención de pérdida de datos
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
-> Las funciones de prevención de pérdida de datos se han agregado recientemente a los mensajes de conversaciones y canales de Microsoft Teams para usuarios con licencia de Cumplimiento avanzado de Office 365, que está disponible como opción independiente y se incluye en Cumplimiento de Microsoft 365 E5 y Office 365 E5. Para obtener más información sobre los requisitos de licencias, consulte [Instrucciones de licencias de Microsoft 365 del nivel de espacio empresarial](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
+> Las funciones de prevención de pérdida de datos se han agregado recientemente a los mensajes de conversaciones y canales de Microsoft Teams para usuarios con licencia de Cumplimiento avanzado de Office 365, que está disponible como opción independiente y se incluye en Cumplimiento de Microsoft 365 E5 y Office 365 E5. Para obtener más información sobre los requisitos de licencias, consulte [Instrucciones de licencias de Microsoft 365 del nivel de espacio empresarial](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 Para cumplir con los estándares de la empresa y las normativas del sector, las organizaciones deben proteger información confidencial e impedir su divulgación involuntaria. La información confidencial puede incluir datos financieros o información de identificación personal (PII), tales como números de tarjeta de crédito, números de seguridad social o registros médicos. Con una directiva de prevención de pérdida de datos (DLP) del Centro de seguridad y cumplimiento de Office 365, puede identificar, supervisar y proteger automáticamente información confidencial en todo Office 365.
   
@@ -204,7 +204,7 @@ Además, también puede enviar un informe de incidentes con detalles sobre el ev
   
 ![Página para configurar informes de incidentes](../media/Alerts-and-incident-report.png)
 
-DLP analiza el correo electrónico de forma diferente desde elementos en SharePoint Online o en OneDrive para la Empresa. En SharePoint Online y OneDrive para la Empresa, DLP analiza los elementos existentes, así como los nuevos, y genera un informe de incidentes y una alerta cada vez que se encuentra una coincidencia. En Exchange Online, DLP solo analiza los nuevos mensajes de correo electrónico y genera un informe si hay una coincidencia de directiva. DLP **_no_* _configurarlas o buscar elementos de correo electrónico existentes que estén almacenados en un buzón o archivo.
+DLP analiza el correo electrónico de forma diferente desde elementos en SharePoint Online o en OneDrive para la Empresa. En SharePoint Online y OneDrive para la Empresa, DLP analiza los elementos existentes, así como los nuevos, y genera un informe de incidentes y una alerta cada vez que se encuentra una coincidencia. En Exchange Online, DLP solo analiza los nuevos mensajes de correo electrónico y genera un informe si hay una coincidencia de directiva. DLP ***no*** analiza ni busca coincidencias en elementos de correo electrónico anteriormente existentes que estén almacenados en un buzón de correo o archivo.
   
 ## <a name="grouping-and-logical-operators"></a>Operadores lógicos y de agrupación
 
@@ -240,7 +240,7 @@ Puede agregar rápidamente un grupo, que puede tener sus propias condiciones y o
 
 Entre los grupos, puede elegir si se deben cumplir las condiciones de un solo grupo o de todos los grupos para que el contenido coincida con la regla.
   
-Por ejemplo, la directiva incorporada _ *HIPAA** de Estados Unidos tiene una regla que usa un **Y** un operador entre los grupos para identificar el contenido que contiene lo siguiente: 
+Por ejemplo, la directiva **HIPAA de Estados Unidos** tiene una regla que usa un operador **Y** entre los grupos para identificar el contenido que incluya lo siguiente: 
   
 - del grupo **Identificadores PII** (por lo menos un número de SSN **O** número DEA) 
     
@@ -354,20 +354,20 @@ Al usar una [etiqueta de retención](retention.md#retention-labels) que haya cre
 
 - Antes de intentar usarla como una condición en una directiva DLP, debe haber creado, publicado y aplicado previamente la etiqueta de retención.
 - Las etiquetas de retención publicadas pueden tardar de uno a siete días en sincronizarse. Para obtener más información, consulte [¿Cuándo están disponibles las etiquetas de retención para su aplicación?](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) para las etiquetas de retención publicadas en una directiva de retención y [¿Cuánto tardarán las etiquetas de retención en surtir efecto?](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect) para las etiquetas de retención que se publiquen automáticamente.
-- El uso de una etiqueta de retención en una directiva **solo es compatible con los elementos de SharePoint y OneDrive**.
+- El uso de una etiqueta de retención en una directiva **solo es compatible con los elementos de SharePoint y OneDrive***.
 
   ![Etiquetas como una condición](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
   Es posible que quiera usar una etiqueta de retención en una directiva DLP si tiene elementos en retención y eliminación, y también desea aplicarles otros controles, por ejemplo:
 
-  - Publicó una etiqueta de retención denominada año fiscal 2018, que, cuando es aplicada a los documentos de impuestos de 2018 que se almacenan en SharePoint, los retiene durante 10 años, para después eliminarlos. Tampoco quiere que los elementos se compartan fuera de la organización, lo que puede hacer con una directiva DLP.
+  - Publicó una etiqueta de retención denominada **año fiscal 2018**, que, cuando se aplica a los documentos de impuestos de 2018 que se almacenan en SharePoint, los retiene durante 10 años, para después eliminarlos. Tampoco quiere que los elementos se compartan fuera de la organización, lo que puede hacer con una directiva DLP.
 
   > [!IMPORTANT]
   > Si especifica una etiqueta de retención como una condición en una directiva DLP e incluye también Exchange y/o Teams como una ubicación, recibirá el siguiente mensaje de error: **"No se admite la protección del contenido etiquetado en mensajes de correo electrónico y de Teams. Quite la etiqueta siguiente o desactive Exchange y Teams como una ubicación".** Esto se debe a que el transporte de Exchange no evalúa los metadatos de la etiqueta durante el envío y entrega de mensajes. 
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>Usar una etiqueta de confidencialidad como condición en una directiva DLP
 
-La etiqueta de confidencialidad como condición en las directivas DLP actualmente es una versión preliminar. [Más información](https://docs.microsoft.com/microsoft-365/compliance/dlp-sensitivity-label-as-condition).
+La etiqueta de confidencialidad como condición en las directivas DLP actualmente es una versión preliminar. [Más información](./dlp-sensitivity-label-as-condition.md).
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Cómo esta característica se relaciona con otras características
 
@@ -497,10 +497,10 @@ A medida que los usuarios agregan o cambian documentos en sus sitios, el motor d
   
 <!-- conflict with a DLP policy is bad wording --> Por último, los documentos pueden entrar en conflicto con una directiva DLP, pero también pueden cumplir con una directiva DLP. Por ejemplo, si una persona agrega números de tarjeta de crédito a un documento, podría hacer que una directiva DLP bloquee el acceso al documento de forma automática. Pero si la persona elimina más adelante la información confidencial, la acción (en este caso, el bloqueo) se deshace automáticamente la próxima vez que se evalúa el documento con la directiva.
   
-DLP evalúa el contenido que se puede indexar. Para obtener más información sobre los tipos de archivo que se rastrean de forma predeterminada, consulte [Extensiones de nombre de archivo y tipos de archivo analizados predeterminados en SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
+DLP evalúa el contenido que se puede indexar. Para obtener más información sobre los tipos de archivo que se rastrean de forma predeterminada, consulte [Extensiones de nombre de archivo y tipos de archivo analizados predeterminados en SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 > [!NOTE]
-> El uso compartido externo de archivos nuevos en SharePoint se puede bloquear de forma predeterminada, hasta que al menos una directiva DLP explore el elemento nuevo. Para obtener más información, consulte [Marcar archivos nuevos como confidenciales de forma predeterminada](https://docs.microsoft.com/sharepoint/sensitive-by-default). 
+> El uso compartido externo de archivos nuevos en SharePoint se puede bloquear de forma predeterminada, hasta que al menos una directiva DLP explore el elemento nuevo. Para obtener más información, consulte [Marcar archivos nuevos como confidenciales de forma predeterminada](/sharepoint/sensitive-by-default). 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Evaluación de la directiva en Exchange Online, Outlook y Outlook en la Web
 
@@ -542,19 +542,19 @@ Estos permisos son necesarios solo para crear y aplicar una directiva de DLP. La
 
 Para usar la mayoría de los cmdlets para el Centro de seguridad y cumplimiento, necesita:
   
-1. [Conectarse al &amp;Centro de seguridad y cumplimiento de Office 365 mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [Conectarse al &amp;Centro de seguridad y cumplimiento de Office 365 mediante PowerShell remoto](/powershell/exchange/connect-to-scc-powershell)
     
-2. Usar cualquiera de estos [cmdlets policy-and-compliance-dlp](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection)
+2. Usar cualquiera de estos [cmdlets policy-and-compliance-dlp](/powershell/module/exchange/export-dlppolicycollection)
     
 Sin embargo, los informes de DLP necesitan extraer datos de todo Microsoft 365, incluido Exchange Online. Por este motivo, **los cmdlets para los informes de DLP están disponibles en el PowerShell de Exchange Online. no en el PowerShell del Centro de seguridad y cumplimiento**. Por lo tanto, para usar los cmdlets para los informes de DLP, debe:
   
-1. [Conectarse a Exchange Online mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Conectarse a Exchange Online mediante PowerShell remoto](/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. Use cualquiera de estos cmdlets para los informes de DLP:
     
-    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetectionsReport)
+    - [Get-DlpDetectionsReport](/powershell/module/exchange/Get-DlpDetectionsReport)
 
-    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetailReport)
+    - [Get-DlpDetailReport](/powershell/module/exchange/Get-DlpDetailReport)
     
 ## <a name="more-information"></a>Más información
 

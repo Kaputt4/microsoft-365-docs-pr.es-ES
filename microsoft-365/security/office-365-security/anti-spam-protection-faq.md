@@ -16,15 +16,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden ver las preguntas más frecuentes y sus respuestas sobre la protección contra correo no deseado en Exchange Online Protection (EOP).
+description: Los administradores pueden ver preguntas y respuestas más frecuentes sobre la protección contra correo no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8abccdac73877c3f24114afaa78c13143e156868
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: cc1aa26832830dce4f529566a589cb8bf3e1df01
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288974"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925225"
 ---
 # <a name="anti-spam-protection-faq"></a>Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 
@@ -35,32 +35,32 @@ ms.locfileid: "50288974"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-En este tema se proporcionan preguntas y respuestas más frecuentes sobre la protección antimalware para organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online.
+En este tema se proporcionan preguntas y respuestas más frecuentes sobre la protección contra malware para organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online.
 
 Para ver las preguntas y sus correspondientes respuestas sobre la cuarentena, consulte [Preguntas más frecuentes sobre la cuarentena](quarantine-faq.md).
 
-Para obtener preguntas y respuestas acerca de la protección antimalware, consulte preguntas más frecuentes sobre protección [antimalware.](anti-malware-protection-faq-eop.md)
+Para obtener preguntas y respuestas acerca de la protección contra malware, vea Preguntas más frecuentes sobre protección [contra malware.](anti-malware-protection-faq-eop.md)
 
-Para obtener preguntas y respuestas acerca de la protección contra la suplantación, consulte preguntas más frecuentes sobre la protección contra la [suplantación de seguridad.](anti-spoofing-protection-faq.md)
+Para obtener preguntas y respuestas acerca de la protección contra la suplantación, vea Preguntas más frecuentes sobre la protección contra la [suplantación de seguridad](anti-spoofing-protection-faq.md).
 
-## <a name="by-default-what-happens-to-a-spam-detected-message"></a>De forma predeterminada, ¿qué sucede con un mensaje detectado como correo no deseado?
+## <a name="by-default-what-happens-to-a-spam-detected-message"></a>De forma predeterminada, ¿qué sucede con un mensaje detectado por correo no deseado?
 
-**Para los mensajes entrantes:** La mayor parte del correo no deseado se elimina mediante el filtrado de conexiones, que se basa en la dirección IP del servidor de correo electrónico de origen. Las directivas contra correo no deseado (también conocidas como directivas de filtro de correo no deseado o directivas de filtro de contenido) inspeccionan y clasifican los mensajes como correo no deseado, masivo o phishing. De forma predeterminada, los mensajes clasificados como correo no deseado o masivo se entregan en la carpeta de correo no deseado del destinatario, mientras que los mensajes clasificados como suplantación de identidad se ponen en cuarentena. Puede modificar la directiva contra correo no deseado predeterminada (se aplica a todos los destinatarios) o puede crear directivas contra correo electrónico no deseado personalizadas con una configuración más estricta para grupos específicos de usuarios (por ejemplo, puede poner en cuarentena el correo no deseado que se envía a los ejecutivos). Para obtener más información, consulte [Configuración de directivas contra correo no deseado](configure-your-spam-filter-policies.md) y configuración de directiva contra correo no deseado [recomendada.](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
+**Para mensajes entrantes:** La mayoría del correo no deseado se elimina a través del filtrado de conexiones, que se basa en la dirección IP del servidor de correo electrónico de origen. Las directivas contra correo no deseado (también conocidas como directivas de filtro de correo no deseado o directivas de filtro de contenido) inspeccionan y clasifican los mensajes como correo no deseado, masivo o phishing. De forma predeterminada, los mensajes clasificados como correo no deseado o masivo se entregan a la carpeta de correo no deseado del destinatario, mientras que los mensajes clasificados como suplantación de identidad (phishing) se ponen en cuarentena. Puede modificar la directiva contra correo no deseado predeterminada (se aplica a todos los destinatarios) o puede crear directivas contra correo no deseado personalizadas con una configuración más estricta para grupos específicos de usuarios (por ejemplo, puede poner en cuarentena el correo no deseado que se envía a los ejecutivos). Para obtener más información, vea [Configure anti-spam policies](configure-your-spam-filter-policies.md) y [Recommended anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 > [!IMPORTANT]
-> En implementaciones híbridas en las que EOP protege los buzones locales, debe configurar dos reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) en la organización de Exchange local para detectar los encabezados de filtrado de correo no deseado de EOP que se agregan a los mensajes. Para obtener información, consulte [Configuración de un EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+> En implementaciones híbridas donde EOP protege los buzones locales, debe configurar dos reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) en la organización local de Exchange para detectar los encabezados de filtrado de correo no deseado de EOP que se agregan a los mensajes. Para obtener información, consulte [Configuración de un EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
- **Para los mensajes salientes:** El mensaje se enruta a través del grupo de entrega de alto riesgo o se devuelve al remitente en un informe de no entrega (también conocido como NDR o mensaje de devolución). [](high-risk-delivery-pool-for-outbound-messages.md) Para obtener más información acerca de la protección contra correo no deseado saliente, consulte [Controles de correo no deseado saliente.](outbound-spam-controls.md)
+ **Para mensajes salientes:** El mensaje se enruta a través del grupo de entrega de alto riesgo o se devuelve al remitente en un informe de no entrega (también conocido como NDR o mensaje de devolución). [](high-risk-delivery-pool-for-outbound-messages.md) Para obtener más información acerca de la protección contra correo no deseado saliente, vea [Controles de correo no deseado saliente.](outbound-spam-controls.md)
 
-## <a name="whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>¿Qué es una variante de correo no deseado de día cero y cómo la controla el servicio?
+## <a name="whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>¿Qué es una variante de correo no deseado de día cero y cómo lo controla el servicio?
 
-Una variante de correo no deseado de día cero es una variante de correo no deseado de primera generación, hasta ahora desconocida, que nunca se ha capturado ni analizado, por lo que nuestros filtros contra correo no deseado aún no tienen información disponible para detectarlo. Después de que nuestros analistas de correo no deseado capturan y analizan una muestra de correo no deseado de día cero, si cumple los criterios de clasificación de correo no deseado, nuestros filtros contra correo no deseado se actualizan para detectarlo y ya no se consideran "día cero".
+Una variante de correo no deseado de día cero es una variante de correo no deseado de primera generación, hasta ahora desconocida, que nunca se ha capturado ni analizado, por lo que nuestros filtros contra correo no deseado aún no tienen información disponible para detectarlo. Después de que nuestros analistas de correo no deseado capturan y analizan una muestra de correo no deseado de día cero, si cumple los criterios de clasificación de correo no deseado, nuestros filtros contra correo no deseado se actualizan para detectarlo y ya no se considera "día cero".
 
-**Nota:** Si recibe un mensaje que puede ser una variante de correo no deseado de día cero, para ayudarnos a mejorar el servicio, envíe el mensaje a Microsoft mediante uno de los métodos descritos en Los mensajes y archivos de informes a [Microsoft](report-junk-email-messages-to-microsoft.md).
+**Nota:** Si recibe un mensaje que puede ser una variante de correo no deseado de día cero, para ayudarnos a mejorar el servicio, envíe el mensaje a Microsoft mediante uno de los métodos descritos en Notificar mensajes y archivos a [Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="do-i-need-to-configure-the-service-to-provide-anti-spam-protection"></a>¿Necesito configurar el servicio para proporcionar protección contra correo no deseado?
 
-Después de registrarse en el servicio y agregar su dominio, el filtrado de correo no deseado se habilita automáticamente. De forma predeterminada, el filtrado de correo no deseado está ajustado para protegerle sin necesidad de ninguna configuración adicional (aparte de la excepción anteriormente señalada para los clientes independientes de EOP en entornos híbridos). Como administrador, puede editar la configuración predeterminada del filtrado de correo no deseado para satisfacer mejor las necesidades de su organización. Para mayor granularidad, también puede crear directivas contra correo no deseado y directivas salientes contra correo no deseado que se aplican a usuarios, grupos o dominios específicos de su organización. Las directivas personalizadas siempre tienen prioridad con respecto a la directiva predeterminada, pero puede cambiar la prioridad (es decir, el orden de ejecución) de las directivas personalizadas.
+Después de registrarse en el servicio y agregar el dominio, el filtrado de correo no deseado se habilita automáticamente. De forma predeterminada, el filtrado de correo no deseado está ajustado para protegerlo sin necesidad de ninguna configuración adicional (aparte de la excepción anteriormente señalada para clientes independientes de EOP en entornos híbridos). Como administrador, puede editar la configuración predeterminada de filtrado de correo no deseado para satisfacer mejor las necesidades de su organización. Para mayor granularidad, también puede crear directivas contra correo no deseado y directivas salientes contra correo no deseado que se aplican a usuarios, grupos o dominios especificados de su organización. Las directivas personalizadas siempre tienen prioridad con respecto a la directiva predeterminada, pero puede cambiar la prioridad (es decir, el orden de ejecución) de las directivas personalizadas.
 
 Para obtener más información, consulte los siguientes temas:
 
@@ -76,15 +76,15 @@ Para obtener más información, consulte los siguientes temas:
 
 Los cambios pueden tardar hasta una hora en surtir efecto.
 
-## <a name="is-bulk-email-filtering-automatically-enabled"></a>¿Está habilitado automáticamente el filtrado de correo masivo?
+## <a name="is-bulk-email-filtering-automatically-enabled"></a>¿El filtrado masivo de correo electrónico está habilitado automáticamente?
 
-Sí. Para obtener más información acerca del correo electrónico masivo, consulte ¿Cuál es la diferencia entre el correo electrónico no deseado [y el correo electrónico masivo?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+Sí. Para obtener más información acerca del correo masivo, vea ¿Cuál es la diferencia entre el correo no deseado [y el correo masivo?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
 ## <a name="does-the-service-provide-url-filtering"></a>¿El servicio proporciona filtrado de direcciones URL?
 
-Sí, el servicio tiene un filtro de dirección URL que comprueba las direcciones URL dentro de los mensajes. Si se detectan direcciones URL asociadas a correo no deseado o a contenido malintencionado conocido, el mensaje se marcará como correo no deseado.
+Sí, el servicio tiene un filtro de dirección URL que busca direcciones URL dentro de los mensajes. Si se detectan direcciones URL asociadas a correo no deseado o a contenido malintencionado conocido, el mensaje se marcará como correo no deseado.
 
-## <a name="how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>¿Cómo pueden los clientes que usan el servicio enviar mensajes falsos negativos (correo no deseado) y falsos positivos (correo no deseado) a Microsoft?
+## <a name="how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>¿Cómo pueden los clientes que usan el servicio enviar mensajes falsos negativos (correo no deseado) y falsos positivos (no deseados) a Microsoft?
 
 Los mensajes de correo no deseado y los mensajes seguros se pueden enviar a Microsoft para su análisis de varias maneras. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -92,29 +92,29 @@ Los mensajes de correo no deseado y los mensajes seguros se pueden enviar a Micr
 
 Sí, por ejemplo, puede obtener un informe de detección de correo no deseado en el Centro de administración de Microsoft 365. Este informe muestra el volumen de correo no deseado como un recuento de mensajes únicos. Para obtener más información sobre los informes, consulte los siguientes vínculos:
 
-Clientes de Exchange Online: [supervisión, informes y seguimiento de mensajes en Exchange Online](https://docs.microsoft.com/exchange/monitoring/monitoring)
+Clientes de Exchange Online: [supervisión, informes y seguimiento](/exchange/monitoring/monitoring) de mensajes en Exchange Online
 
-Clientes independientes de EOP: informes [y seguimiento de mensajes en Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
+Clientes de EOP independientes: [informes y seguimiento de mensajes en Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md)
 
-## <a name="someone-sent-me-a-message-and-i-cant-find-it-i-suspect-that-it-may-have-been-detected-as-spam-is-there-a-tool-that-i-can-use-to-find-out"></a>Alguien me envió un mensaje y no lo encuentro. Sospecho que se ha detectado como correo no deseado. ¿Hay una herramienta que pueda usar para averiguarlo?
+## <a name="someone-sent-me-a-message-and-i-cant-find-it-i-suspect-that-it-may-have-been-detected-as-spam-is-there-a-tool-that-i-can-use-to-find-out"></a>Alguien me envió un mensaje y no lo encuentro. Sospecho que puede haber sido detectado como correo no deseado. ¿Hay una herramienta que pueda usar para averiguarlo?
 
-Consulte Was a message marked as spam?  Para obtener más información acerca de cómo usar la herramienta de seguimiento de mensajes para averiguar por qué un mensaje se marcó como correo no deseado, vea ¿Se marcó un mensaje [como correo no deseado?](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
+Consulte Was a message marked as spam?  Para obtener más información acerca de cómo usar la herramienta de seguimiento de mensajes para averiguar por qué se marcó un mensaje como correo no deseado, vea ¿Se marcó un [mensaje como correo no deseado?](/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
 
 ## <a name="will-the-service-throttle-rate-limit-my-mail-if-my-users-send-outbound-spam"></a>¿Limitará el servicio (límite de velocidad) mi correo si mis usuarios envían correo no deseado saliente?
 
-Si EOP determina que más de la mitad del correo enviado por un usuario a través del servicio en un período de tiempo determinado (por ejemplo, por hora) es correo no deseado, se bloqueará al usuario para que no envíe mensajes. En la mayoría de los casos, si se determina que un mensaje saliente es correo no deseado, se redirige a través del grupo de entrega de alto riesgo, lo cual reduce la probabilidad de que el grupo de IP saliente normal se agregue a una lista de bloqueados.
+Si EOP determina que más de la mitad del correo que se envía desde un usuario a través del servicio en un período de tiempo determinado (por ejemplo, por hora), EOP determina que es correo no deseado, el usuario no podrá enviar mensajes. En la mayoría de los casos, si se determina que un mensaje saliente es correo no deseado, se redirige a través del grupo de entrega de alto riesgo, lo cual reduce la probabilidad de que el grupo de IP saliente normal se agregue a una lista de bloqueados.
 
 Puede enviar una notificación a la dirección de correo electrónico especificada cuando se bloquee un remitente por enviar correo electrónico no deseado. Para más información sobre esta configuración, consulte [Configurar la directiva de correo no deseado saliente](configure-the-outbound-spam-policy.md).
 
 ## <a name="can-i-use-a-third-party-anti-spam-and-anti-malware-provider-in-conjunction-with-exchange-online"></a>¿Puedo usar un proveedor contra correo no deseado y contra malware de terceros junto con Exchange Online?
 
-Sí. Aunque le recomendamos que apunte su registro MX a Microsoft, nos damos cuenta de que existen motivos empresariales legítimos para enrutar el correo electrónico a otro lugar que no sea Microsoft primero.
+Sí. Aunque te recomendamos que señales tu registro MX a Microsoft, nos damos cuenta de que existen motivos empresariales legítimos para enrutar el correo electrónico a otro lugar que no sea Microsoft primero.
 
-- **Entrante:** cambie los registros MX para que apunten al proveedor de terceros y, a continuación, redirija los mensajes a EOP para su procesamiento adicional. Para obtener más información, consulte [Filtrado mejorado para conectores en Exchange Online.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
+- **Entrante:** cambie los registros MX para que apunten al proveedor de terceros y, a continuación, redirija los mensajes a EOP para su procesamiento adicional. Para obtener más información, vea [Enhanced Filtering for connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
 - **Saliente:** configure el enrutamiento de host inteligente de Microsoft 365 al proveedor de terceros de destino.
 
-## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>¿Microsoft tiene documentación sobre cómo puedo protegerme de las estafas de suplantación de identidad?
+## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>¿Microsoft tiene documentación sobre cómo protegerme de las estafas de phishing?
 
 Sí. Para obtener más información, vea [Proteger su privacidad en Internet](https://support.microsoft.com/help/4091455)
 
@@ -128,11 +128,11 @@ Las pautas presentadas a continuación son los procedimientos recomendados para 
 
 - **El dominio de correo electrónico de origen debe resolverse en DNS.**
 
-  Por ejemplo, si el remitente user@fabrikam, el dominio fabrikam se resuelve en la dirección IP 192.0.43.10.
+  Por ejemplo, si el remitente user@fabrikam, la fabrikam de dominio se resuelve en la dirección IP 192.0.43.10.
 
-  Si un dominio de envío no tiene registro A ni registro MX en DNS, el servicio enrutará el mensaje a través de su grupo de entrega de mayor riesgo, independientemente de si el contenido del mensaje es correo no deseado o no. Para obtener más información acerca del grupo de entrega de mayor riesgo, consulte [Grupo de entrega de alto riesgo para mensajes salientes.](high-risk-delivery-pool-for-outbound-messages.md)
+  Si un dominio de envío no tiene registro A ni registro MX en DNS, el servicio enrutará el mensaje a través de su grupo de entrega de mayor riesgo, independientemente de si el contenido del mensaje es correo no deseado o no. Para obtener más información sobre el grupo de entrega de mayor riesgo, vea Grupo de entrega de alto riesgo [para mensajes salientes.](high-risk-delivery-pool-for-outbound-messages.md)
 
-- **El servidor de correo saliente debe tener una entrada dns inversa (PTR).**
+- **El servidor electrónico de correo saliente debe tener una entrada DNS inversa (PTR).**
 
   Por ejemplo, si la dirección IP de origen de correo electrónico es 192.0.43.10, la entrada DNS inversa sería `43-10.any.icann.org` .'
 
@@ -192,9 +192,9 @@ Las pautas presentadas a continuación son los procedimientos recomendados para 
 
   4. Cuando utilice píxeles de seguimiento (errores o señalizaciones web), especifique claramente su presencia en su directiva de privacidad o configuración de P3P.
 
-- **Dar formato a los mensajes de de rebote salientes.**
+- **Dar formato a los mensajes de rebote salientes.**
 
-  Al generar mensajes de notificación de estado de entrega (también conocidos como informes de no entrega, NDRs o mensajes de de rebote), los remitentes deben seguir el formato de un rebote tal como se especifica en [RFC 3464](https://www.ietf.org/rfc/rfc3464.txt).
+  Al generar mensajes de notificación de estado de entrega (también conocidos como informes de no entrega, NDR o mensajes de rebote), los remitentes deben seguir el formato de un rebote tal como se especifica en [RFC 3464](https://www.ietf.org/rfc/rfc3464.txt).
 
 - **Elimine las direcciones de correo electrónico rebotadas de los usuarios inexistentes.**
 

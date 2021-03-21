@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de retención para declarar registros.
-ms.openlocfilehash: 34b5272a8bed9be01c3965dae258c88facec0145
-ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
+ms.openlocfilehash: fd88858c8d5cd1870f594050607b784a9dc5b78c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "48830609"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925666"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Usar etiquetas de retención para declarar registros
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Para declarar documentos y correos electrónicos como [registros](records-management.md#records), use las [etiquetas de retención](retention.md#retention-labels) que marcan el contenido como **registro** o como **registro normativo**.
 
@@ -41,7 +41,7 @@ Podrá entonces, o bien publicar dichas etiquetas en una directiva de etiquetas 
 
 De forma predeterminada, la opción de etiqueta de retención para marcar contenido como un registro normativo no se muestra en el asistente de etiquetas de retención. Para mostrar esta opción, primero tiene que ejecutar un comando de PowerShell:
 
-1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 2. Ejecute el siguiente cmdlet:
     

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y roles de usuario del Administrador de cumplimiento de Microsoft y configure las pruebas automatizadas de las acciones. Administrar el historial de usuarios y filtrar la vista de panel.
-ms.openlocfilehash: 3c8f3f30741d4b0fac5c940bc6ec3fb56ea4f79e
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: d8eb1d7d8245aa31cb5429452128cedc0adf4684
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405800"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925708"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -30,7 +30,7 @@ ms.locfileid: "50405800"
 
 ## <a name="who-can-access-compliance-manager"></a>Quién puede tener acceso al Administrador de cumplimiento
 
-El Administrador de cumplimiento está disponible para las organizaciones con licencias de Office 365 y Microsoft 365 y para los clientes moderados y GCC High de us Government Community Cloud (GCC). La disponibilidad de evaluación y las capacidades de administración dependen del contrato de licencia.  [Ver detalles de descripción del servicio](https://go.microsoft.com/fwlink/?linkid=2132371).
+El Administrador de cumplimiento está disponible para las organizaciones con licencias de Office 365 y Microsoft 365 y para los clientes moderados y GCC High de us Government Community Cloud (GCC). La disponibilidad de evaluación y las capacidades de administración dependen del contrato de licencia.  [Ver detalles de descripción del servicio](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -72,19 +72,19 @@ Para establecer permisos y asignar roles en el Centro de seguridad y & cumplimie
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>Más información sobre el Centro de seguridad de Office 365 & cumplimiento
 
-Obtenga más información sobre los permisos en el Centro de seguridad y [& de Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+Obtenga más información sobre los permisos en el Centro de seguridad y [& de Office 365.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 
 Si no tiene acceso al Centro de seguridad y cumplimiento de Office 365 o si necesita tener acceso a la versión clásica del Administrador de cumplimiento en el Portal de confianza de servicio de Microsoft, la configuración de administración en el Portal de confianza de servicio proporciona otra forma de asignar roles[(](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)ver instrucciones ). Tenga en cuenta que estos roles son más limitados en su funcionalidad.
 
 ##### <a name="more-about-azure-ad"></a>Más información sobre Azure AD
 
-Para asignar roles y establecer permisos en Azure AD, consulte [Assign administrator and non-administrator roles to users with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
+Para asignar roles y establecer permisos en Azure AD, consulte [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 Los usuarios con identidades de Azure AD que no tienen suscripciones a Office 365 o Microsoft 365 no podrán acceder al Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365. Para obtener ayuda para obtener acceso al Administrador de cumplimiento, póngase en [contacto cmresearch@microsoft.com](mailto:cmresearch@microsoft.com).
 
 ### <a name="role-types"></a>Tipos de función
 
-En la tabla siguiente se muestran las funciones permitidas por cada rol en el Administrador de cumplimiento. En la tabla también se muestra cómo cada rol [de Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) se asigna a los roles del Administrador de cumplimiento. Los usuarios necesitarán al menos el rol de lector administrador de cumplimiento o el rol de lector global de Azure AD para tener acceso al Administrador de cumplimiento.
+En la tabla siguiente se muestran las funciones permitidas por cada rol en el Administrador de cumplimiento. En la tabla también se muestra cómo cada rol [de Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) se asigna a los roles del Administrador de cumplimiento. Los usuarios necesitarán al menos el rol de lector administrador de cumplimiento o el rol de lector global de Azure AD para tener acceso al Administrador de cumplimiento.
 
 
 | El usuario puede: | Rol Administrador de cumplimiento | Rol de Azure AD | 
@@ -104,7 +104,7 @@ La configuración del Administrador de cumplimiento en el Centro de cumplimiento
 
 ### <a name="set-up-automated-testing"></a>Configurar pruebas automatizadas
 
-Algunas acciones de mejora en el Administrador de cumplimiento también son supervisadas por [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score). Puede configurar pruebas automatizadas de acciones que se supervisan conjuntamente, lo que significa que cuando una acción se prueba y actualiza en Puntuación segura, esos resultados se sincronizan con las mismas acciones en el Administrador de cumplimiento y cuentan para su puntuación de cumplimiento.
+Algunas acciones de mejora en el Administrador de cumplimiento también son supervisadas por [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md). Puede configurar pruebas automatizadas de acciones que se supervisan conjuntamente, lo que significa que cuando una acción se prueba y actualiza en Puntuación segura, esos resultados se sincronizan con las mismas acciones en el Administrador de cumplimiento y cuentan para su puntuación de cumplimiento.
 
 Las pruebas automáticas están activadas de forma predeterminada para organizaciones nuevas en el Administrador de cumplimiento. Cuando implemente Microsoft 365 u Office 365 por primera vez, la puntuación segura tarda aproximadamente siete días en recopilar completamente los datos y tener en cuenta la puntuación de cumplimiento.  Cuando las pruebas automatizadas están activadas, la fecha de prueba de la acción no se actualizará, pero su estado de prueba se actualizará. Cuando se crean nuevas evaluaciones, las puntuaciones incluyen automáticamente las puntuaciones de control de Microsoft y la integración de puntuación segura.
 

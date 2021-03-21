@@ -17,16 +17,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 'Resumen: cree una red virtual entre locales simulada en Microsoft Azure como entorno de prueba de Microsoft 365.'
-ms.openlocfilehash: ce8b1963e97decc58820bff7b563bb835a843772
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 545cce668df66b594de6b45ddd506b87afcf44ac
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487656"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926037"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Red virtual entre locales simulada en un entorno de prueba de Microsoft 365
 
-*Esta Guía del entorno de pruebas se puede usar tanto para entornos de prueba de Microsoft 365 para empresas como de Office 365 Enterprise.*
+*Esta guía del laboratorio de pruebas se puede usar para entornos de prueba de Microsoft 365 para empresas y office 365 Enterprise.*
 
 En este artículo se le indicará el proceso de creación de un entorno de nube híbrida simulado con Microsoft Azure mediante dos redes virtuales de Azure. Esta es la configuración resultante. 
   
@@ -59,12 +59,12 @@ Existen tres fases principales para configurar el entorno de pruebas:
 > [!NOTE]
 > Esta configuración necesita una suscripción de pago de Azure. 
 
-Puede usar el entorno resultante para probar las características y funcionalidades de [Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise) para empresas con guías del entorno de pruebas adicionales [o](m365-enterprise-test-lab-guides.md) por su cuenta.
+Puede usar el entorno resultante para probar las características y funcionalidades de [Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise) para empresas con guías de laboratorio de prueba adicionales [o](m365-enterprise-test-lab-guides.md) por su cuenta.
 
-![Guías del laboratorio de pruebas para la nube de Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Guías de laboratorio de pruebas para Microsoft Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Vaya a La pila de guía del entorno de pruebas de [Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf) para empresas para obtener un mapa visual de todos los artículos de la pila de guía del entorno de pruebas de Microsoft 365 para empresas.
+> Vaya a [Microsoft 365](../downloads/Microsoft365EnterpriseTLGStack.pdf) para enterprise Test Lab Guide Stack para obtener un mapa visual de todos los artículos de la pila guía del laboratorio de pruebas de Microsoft 365 para empresas.
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>Fase 1: configurar la red virtual TestLab
 
@@ -81,7 +81,7 @@ En esta fase, creará y configurará la nueva red virtual XPrem y la conectará 
 En primer lugar, inicie un símbolo del sistema de Azure PowerShell en el equipo local.
   
 > [!NOTE]
-> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Visite [Get started with Azure PowerShell cmdlets (Introducción a los cmdlets de Azure)](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
+> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Visite [Get started with Azure PowerShell cmdlets (Introducción a los cmdlets de Azure)](/powershell/azureps-cmdlets-docs/). 
   
 Inicie sesión en su cuenta de Azure con este comando.
   
@@ -221,4 +221,4 @@ Explore estos conjuntos adicionales de guías de laboratorio de pruebas:
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 
-[Documentación para Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentación para Microsoft 365 Enterprise](/microsoft-365-enterprise/)

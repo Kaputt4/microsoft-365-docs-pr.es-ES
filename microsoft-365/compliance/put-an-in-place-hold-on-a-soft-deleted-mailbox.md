@@ -14,12 +14,12 @@ ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo crear una conservación local en un buzón eliminado temporalmente para que se convierta en inactivo y se conserve su contenido.
-ms.openlocfilehash: 638cc0554f216a0cb552c1f8eacef3d692d9f792
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 4cca34ab2ca3a946245f34a9b0d898a07537a722
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423771"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925526"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Colocar una conservación local en un buzón eliminado temporalmente en Exchange Online
 
@@ -37,7 +37,7 @@ You might have a situation where a person has left your organization, and their 
 
 - Tiene que usar el cmdlet **New-MailboxSearch** en Windows PowerShell para colocar una conservación local en un buzón eliminado temporalmente. No puede usar el Centro de administración de Exchange (EAC) ni el Centro de eDiscovery en SharePoint Online. 
 
-- Para obtener información sobre cómo usar Windows PowerShell para conectarse a Exchange Online, vea [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- Para obtener información sobre cómo usar Windows PowerShell para conectarse a Exchange Online, vea [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Ejecute el siguiente comando para obtener información de identidad sobre los buzones eliminados temporalmente en la organización. 
 
@@ -49,7 +49,7 @@ You might have a situation where a person has left your organization, and their 
 
 ## <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-to-make-it-an-inactive-mailbox"></a>Colocar una conservación local en un buzón eliminado temporalmente para convertirlo en un buzón inactivo
 
-Use el cmdlet **New-MailboxSearch** para convertir un buzón eliminado temporalmente en un buzón inactivo. Para obtener más información, vea [New-MailboxSearch](https://technet.microsoft.com/library/74303b47-bb49-407c-a43b-590356eae35c.aspx).
+Use el cmdlet **New-MailboxSearch** para convertir un buzón eliminado temporalmente en un buzón inactivo. Para obtener más información, vea [New-MailboxSearch](/powershell/module/exchange/new-mailboxsearch).
   
 1. Cree una variable que contenga las propiedades del buzón eliminado temporalmente.
 

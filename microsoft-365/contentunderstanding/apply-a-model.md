@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Aprenda a aplicar un modelo publicado a una biblioteca de documentos de SharePoint
-ms.openlocfilehash: 17da1e37f72504ac5e0e26c0dd190efced08d285
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 42168537c8d449a075b5e29ef9905b6b98b8d714
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080783"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925405"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Aplicar un modelo de comprensión mediante documentos en la sintaxis de Microsoft SharePoint
 
@@ -94,7 +94,7 @@ Cuando se aplica un modelo de procesamiento de formularios o información de doc
 
    ![Columna Fecha de clasificación](../media/content-understanding/class-date-column.png)</br> 
 
-El desencadenador [<b>Cuando un modelo de comprensión de contenidos clasifica un archivo</b>](https://docs.microsoft.com/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) usa el campo Fecha de clasificación para ejecutar un flujo de Power Automate después de que un modelo de comprensión de contenidos de Syntex haya terminado de procesar un archivo y haya actualizado el campo "Fecha de clasificación".
+El desencadenador [<b>Cuando un modelo de comprensión de contenidos clasifica un archivo</b>](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) usa el campo Fecha de clasificación para ejecutar un flujo de Power Automate después de que un modelo de comprensión de contenidos de Syntex haya terminado de procesar un archivo y haya actualizado el campo "Fecha de clasificación".
 
    ![Desencadenador de flujo](../media/content-understanding/trigger.png)</br>
 
@@ -108,5 +108,3 @@ El desencadenador <b>Cuando un modelo de comprensión de contenidos clasifica un
 [Crear un extractor](create-an-extractor.md)
 
 [Información general de la comprensión mediante documentos ](document-understanding-overview.md)
-
-

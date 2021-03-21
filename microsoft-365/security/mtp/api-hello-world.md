@@ -1,7 +1,7 @@
 ---
-title: Hello World para la API de REST de Microsoft 365 Defender
+title: Hello World para api de REST de Microsoft 365 Defender
 description: Obtenga información sobre cómo crear una aplicación y usar un token para obtener acceso a las API de Microsoft 365 Defender
-keywords: aplicación, token, acceso, aad, aplicación, registro de aplicaciones, powershell, script, administrador global, permiso, microsoft 365 defender
+keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 66afa27d0fa7a092d3f9e9ed6c3b6abc6020cb8d
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 65319d46871282c454287af225647f89e3535c78
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928383"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924343"
 ---
-# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World para la API de REST de Microsoft 365 Defender
+# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Hello World para api de REST de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "49928383"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Parte de la información está relacionada con el producto de versión preliminar que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Parte de la información está relacionada con el producto predefinido que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## <a name="get-incidents-using-a-simple-powershell-script"></a>Obtener incidentes con un script de PowerShell simple
 
@@ -44,47 +44,47 @@ Este proyecto debe tardar entre 5 y 10 minutos. Esta estimación de tiempo inclu
 
 ### <a name="register-an-app-in-azure-active-directory"></a>Registrar una aplicación en Azure Active Directory
 
-1. Inicie sesión en [Azure](https://portal.azure.com) como usuario con el rol **de administrador** global.
+1. Inicie sesión en [Azure](https://portal.azure.com) como usuario con el **rol De administrador** global.
 
-2. Vaya a **Registros de aplicaciones de Azure Active Directory** Nuevo  >    >  **registro.**
+2. Vaya a **Azure Active Directory** App  >  **registrations** New  >  **registration**.
 
    ![Imagen de Microsoft Azure y navegación al registro de aplicaciones](../../media/atp-azure-new-app2.png)
 
-3. En el formulario de registro, elija un nombre para la aplicación y, a continuación, **seleccione Registrar**. Seleccionar un URI de redireccionamiento es opcional. No necesitarás uno para completar este ejemplo.
+3. En el formulario de registro, elija un nombre para la aplicación y, a continuación, **seleccione Registrar**. Seleccionar un URI de redireccionamiento es opcional. No necesitará uno para completar este ejemplo.
 
-4. En la página de la aplicación, seleccione Permisos de **API** Agregar API de permisos que mi organización usa >, escriba Protección contra amenazas de Microsoft y  >    >   seleccione Protección **contra amenazas de Microsoft.**  La aplicación ahora puede acceder a Microsoft 365 Defender.
+4. En la página de la aplicación, seleccione **Permisos** de API Agregar API de permisos que mi organización usa  >    >   >, escriba Protección contra amenazas de Microsoft y seleccione **Protección contra** amenazas de Microsoft . La aplicación ahora puede acceder a Microsoft 365 Defender.
 
    > [!TIP]
-   > *La Protección contra amenazas* de Microsoft es un nombre anterior de Microsoft 365 Defender y no aparecerá en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para que aparezca.
+   > *Microsoft Threat Protection* es un nombre antiguo de Microsoft 365 Defender y no aparecerá en la lista original. Debe empezar a escribir su nombre en el cuadro de texto para verlo aparecer.
    ![Imagen de selección de permisos de API](../../media/apis-in-my-org-tab.PNG)
 
-   - Elija **Permisos de aplicación**  >  **Incident.Read.All** y seleccione Agregar **permisos.**
+   - Elija **Permisos de aplicación**  >  **Incident.Read.All** y seleccione Agregar **permisos**.
 
-   ![Imagen de acceso api y selección de API](../../media/request-api-permissions.PNG)
+   ![Imagen de acceso a api y selección de API](../../media/request-api-permissions.PNG)
 
-5. Seleccione **Conceder consentimiento de administrador.** Cada vez que agregue un permiso, debe seleccionar Conceder consentimiento **de administrador** para que su efecto.
+5. Seleccione **Conceder consentimiento de administrador**. Cada vez que agregue un permiso, debe seleccionar Conceder consentimiento **de administrador** para que su efecto.
 
-    ![Imagen de Concesión de permisos](../../media/grant-consent.PNG)
+    ![Imagen de concesión de permisos](../../media/grant-consent.PNG)
 
 6. Agregue un secreto a la aplicación. Seleccione **Certificados & secretos,** agregue una descripción al secreto y, a continuación, **seleccione Agregar**.
 
     > [!TIP]
-    > Después de seleccionar **Agregar**, seleccione **copiar el valor secreto generado.** No podrá recuperar el valor secreto después de salir.
+    > Después de seleccionar **Agregar**, seleccione **copiar el valor secreto generado**. No podrá recuperar el valor secreto después de salir.
 
-    ![Imagen de la clave de creación de la aplicación](../../media/webapp-create-key2.png)
+    ![Imagen de crear clave de aplicación](../../media/webapp-create-key2.png)
 
-7. Registre el id. de aplicación y el id. de espacio empresarial en algún lugar seguro. Aparecen en Información **general en** la página de la aplicación.
+7. Registre el identificador de la aplicación y el identificador de inquilino en un lugar seguro. Aparecen en Información **general en** la página de la aplicación.
 
-   ![Imagen del id. de aplicación creado](../../media/app-and-tenant-ids.png)
+   ![Imagen del identificador de aplicación creado](../../media/app-and-tenant-ids.png)
 
 ### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>Obtener un token con la aplicación y usar el token para obtener acceso a la API
 
-Para obtener más información sobre los tokens de Azure Active Directory, vea el [tutorial de Azure AD.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Para obtener más información sobre los tokens de Azure Active Directory, consulte el [tutorial de Azure AD](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
-> Aunque el ejemplo de esta aplicación de demostración te anima a  pegar el valor secreto con fines de prueba, nunca debes codificar secretos en una aplicación que se ejecuta en producción. Un tercero podría usar su secreto para obtener acceso a los recursos. Puede ayudar a proteger los secretos de la aplicación con [Azure Key Vault.](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates) Para obtener un ejemplo práctico de cómo proteger la aplicación, vea Administrar secretos en las aplicaciones [de servidor con Azure Key Vault.](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+> Aunque el ejemplo de esta aplicación de demostración te anima a  pegar el valor secreto con fines de prueba, nunca debes codificar los secretos en una aplicación que se ejecute en producción. Un tercero podría usar el secreto para obtener acceso a los recursos. Puedes ayudar a proteger los secretos de la aplicación con [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). Para obtener un ejemplo práctico de cómo proteger la aplicación, consulta Administrar secretos en las aplicaciones de servidor [con Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
 
-1. Copie el script siguiente y péguelo en su editor de texto favorito. Guardar como **Get-Token.ps1**. También puede ejecutar el código tal como está en PowerShell ISE, pero debe guardarlo, ya que tendremos que volver a ejecutarlo cuando usemos el script de captura de incidentes en la siguiente sección.
+1. Copie el script siguiente y péguelo en el editor de texto favorito. Guardar como **Get-Token.ps1**. También puede ejecutar el código tal como está en PowerShell ISE, pero debe guardarlo, ya que tendremos que volver a ejecutarlo cuando usemos el script de captura de incidentes en la siguiente sección.
 
     Este script generará un token y lo guardará en la carpeta de trabajo bajo el nombre, *Latest-token.txt*.
 
@@ -113,15 +113,15 @@ Para obtener más información sobre los tokens de Azure Active Directory, vea e
 #### <a name="validate-the-token"></a>Validar el token
 
 1. Copie y pegue el token que recibió en [JWT](https://jwt.ms) para descodificarlo.
-1. *JWT significa* *json web token*. El token descodificado contendrá una serie de notificaciones o elementos con formato JSON. Asegúrese de que la *notificación de roles* dentro del token descodificado contiene los permisos deseados.
+1. *JWT* significa *token web JSON*. El token descodificado contendrá una serie de notificaciones o elementos con formato JSON. Asegúrese de que la notificación *de roles* dentro del token descodificado contiene los permisos deseados.
 
-    En la siguiente imagen, puede ver un token descodificado adquirido desde una aplicación, con ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` , y ```AdvancedHunting.Read.All``` permisos:
+    En la siguiente imagen, puedes ver un token descodificado adquirido desde una aplicación, con ```Incidents.Read.All``` , ```Incidents.ReadWrite.All``` y ```AdvancedHunting.Read.All``` permisos:
 
     ![Imagen jwt.ms](../../media/api-jwt-ms.png)
 
 ### <a name="get-a-list-of-recent-incidents"></a>Obtener una lista de incidentes recientes
 
-El script siguiente usará **Get-Token.ps1** acceso a la API. A continuación, recupera una lista de incidentes que se actualizaron por última vez en las últimas 48 horas y guarda la lista como un archivo JSON.
+El script siguiente **usará** Get-Token.ps1para obtener acceso a la API. A continuación, recupera una lista de incidentes que se actualizaron por última vez en las últimas 48 horas y guarda la lista como un archivo JSON.
 
 > [!IMPORTANT]
 > Guarde este script en la misma carpeta que **guardóGet-Token.ps1**.
@@ -163,7 +163,7 @@ $outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"
 Out-File -FilePath $outputJsonPath -InputObject $incidents
 ```
 
-Ya ha terminado. Ha realizado correctamente lo siguiente:
+¡Ya ha terminado! Ha realizado correctamente lo siguiente:
 
 - Creó y registró una aplicación.
 - Se ha concedido permiso para que esa aplicación lea alertas.
@@ -174,8 +174,8 @@ Ya ha terminado. Ha realizado correctamente lo siguiente:
 
 - [Introducción a las API de Microsoft 365 Defender](api-overview.md)
 - [Obtener acceso a las API de Microsoft 365 Defender](api-access.md)
-- [Crear una aplicación para acceder a Microsoft 365 Defender sin un usuario](api-create-app-web.md)
-- [Crear una aplicación para acceder a las API de Microsoft 365 Defender en nombre de un usuario](api-create-app-user-context.md)
+- [Crear una aplicación para tener acceso a Microsoft 365 Defender sin un usuario](api-create-app-web.md)
+- [Crear una aplicación para tener acceso a las API de Microsoft 365 Defender en nombre de un usuario](api-create-app-user-context.md)
 - [Crear una aplicación con acceso de asociado multiinquilino a las API de Microsoft 365 Defender](api-partner-access.md)
-- [Administrar secretos en las aplicaciones de servidor con Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
-- [Autorización de OAuth 2.0 para el inicio de sesión de usuario y el acceso a la API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+- [Administrar secretos en las aplicaciones de servidor con Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/)
+- [Autorización de OAuth 2.0 para el inicio de sesión de usuario y el acceso a la API](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

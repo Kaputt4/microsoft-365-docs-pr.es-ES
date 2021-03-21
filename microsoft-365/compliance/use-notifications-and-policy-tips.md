@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que entra en conflicto con una directiva DLP.
-ms.openlocfilehash: 79435343df2d2cb3bc027a92acce44eb74b4d91c
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 63909be2f88ef5f9c42dcd07e127309b4b5b17e9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454535"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925476"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
@@ -285,8 +285,8 @@ Puede personalizar el texto de las sugerencias de directiva de forma independien
 
 - [Información general sobre las directivas de prevención de pérdida de datos](data-loss-prevention-policies.md)
     
-- [Crear una directiva DLP a partir de una plantilla](create-a-dlp-policy-from-a-template.md)
-- [Condiciones de directiva DLP, excepciones y acciones (versión preliminar)](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide)
+- [Crear una directiva DLP desde una plantilla](create-a-dlp-policy-from-a-template.md)
+- [Condiciones de directiva DLP, excepciones y acciones (versión preliminar)](./dlp-microsoft-teams.md?view=o365-worldwide)
     
 - [Crear una directiva DLP para proteger documentos con FCI u otras propiedades](protect-documents-that-have-fci-or-other-properties.md)
     

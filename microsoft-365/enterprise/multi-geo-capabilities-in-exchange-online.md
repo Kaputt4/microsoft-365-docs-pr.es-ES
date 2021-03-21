@@ -11,13 +11,13 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
-description: Obtenga información sobre las capacidades multige geográficas de Exchange Online, como las limitaciones de características y la colocación de buzones.
-ms.openlocfilehash: ca7203c72f23fd03512bf23eaa5a4687e4bac1b5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Obtenga información sobre las funcionalidades multige geográficas en Exchange Online, como las limitaciones de características y la colocación de buzones.
+ms.openlocfilehash: bf1c3c8f510c57f47cbfc7b2609d97f5932e05d3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693942"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923737"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Capacidades multigeográficas en Exchange Online
 
@@ -59,4 +59,4 @@ Exchange Online sincroniza la propiedad **PreferredDataLocation** de Azure AD en
 
 - Las carpetas públicas se admiten en organizaciones multigeográficas. Sin embargo, las carpetas públicas deben permanecer en la ubicación geográfica central. No puede mover carpetas públicas a ubicaciones geográficas satélite.
 
-- En un entorno multigeográfico, la auditoría de buzón multigeográfico no es compatible. Por ejemplo, si se asignan permisos a un usuario para tener acceso a un buzón compartido en una ubicación geográfica diferente, las acciones de buzón que realiza el usuario no se registran en el registro de auditoría del buzón de correo compartido. Para más información, consulte [Administrar auditoría del buzón](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing?view=o365-worldwide)..
+- En un entorno multigeográfico, la auditoría de buzón multigeográfico no es compatible. Por ejemplo, si se asignan permisos a un usuario para tener acceso a un buzón compartido en una ubicación geográfica diferente, las acciones de buzón que realiza el usuario no se registran en el registro de auditoría del buzón de correo compartido. Para más información, consulte [Administrar auditoría del buzón](../compliance/enable-mailbox-auditing.md?view=o365-worldwide)..

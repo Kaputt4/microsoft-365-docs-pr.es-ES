@@ -17,12 +17,12 @@ ms.collection:
 description: Microsoft ha desarrollado varias directivas, procedimientos y adoptado varios procedimientos recomendados del sector para ayudar a proteger a nuestros usuarios de correo electrónico abusivo, no deseado o malintencionado.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f53b1c36417b15e366b527dd1c12e4f23c06f632
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 8ed78e4a0f233e8d04fbcfb7d7fa7b3859bc0e17
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406601"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925237"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referencia: Políticas, prácticas y directrices
 
@@ -83,7 +83,7 @@ Los remitentes, ISP y otros proveedores de servicios deben administrar activamen
 
 ## <a name="microsoft-365-limits"></a>Límites de Microsoft 365
 
-Los remitentes deben cumplir los límites de Microsoft 365 enumerados [en Límites](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)de Exchange Online Protection .
+Los remitentes deben cumplir los límites de Microsoft 365 enumerados [en Límites](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)de Exchange Online Protection .
 
 ## <a name="email-delivery-resources-and-organizations"></a>Organizaciones y recursos de entrega de correo electrónico
 

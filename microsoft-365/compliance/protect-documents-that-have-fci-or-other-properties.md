@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar una directiva de prevención de pérdida de datos (DLP) para proteger los documentos que tienen propiedades de un sistema de terceros.
-ms.openlocfilehash: 971d2a1dd4f69f7bbd2598e31fc99c9c5cfe1eda
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 2d66a0a863b2076044a5c1d1cb9c3d4e8c29a186
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423803"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925566"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Crear una directiva DLP para proteger documentos con FCI u otras propiedades
 
@@ -55,7 +55,7 @@ Ejemplos
 
 Esto es importante porque DLP usa el rastreador de búsqueda para identificar y clasificar información confidencial en los sitios y, a continuación, almacenar esa información confidencial en una parte segura del índice de búsqueda. Al cargar un documento en Office 365, SharePoint crea automáticamente propiedades rastreadas en función de las propiedades del documento. Pero para usar una FCI u otra propiedad en una directiva DLP, la propiedad rastreada debe asignarse a una propiedad administrada para que el contenido con esa propiedad se conserve en el índice.
 
-Para obtener más información sobre las propiedades administradas y de búsqueda, vea [Manage the search schema in SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=627454).
+Para obtener más información sobre las propiedades administradas y de búsqueda, vea [Manage the search schema in SharePoint Online](/sharepoint/manage-search-schema).
 
 ### <a name="step-1-upload-a-document-with-the-needed-property-to-office-365"></a>Paso 1: Cargar un documento con la propiedad necesaria en Office 365
 
@@ -105,9 +105,9 @@ A continuación, crean una directiva DLP con dos reglas que usan la condición *
 
 La condición **Propiedades del** documento que contienen cualquiera de estos valores no está disponible temporalmente en la interfaz de usuario del Centro de cumplimiento de seguridad, pero aún puede usar esta condición mediante &amp; PowerShell. Puede usar los cmdlets para trabajar con una directiva DLP y usar los cmdlets con el parámetro para agregar la condición Las propiedades del documento  `New\Set\Get-DlpCompliancePolicy` contienen cualquiera de estos  `New\Set\Get-DlpComplianceRule`  `ContentPropertyContainsWords` **valores**.
 
-Para obtener más información sobre estos cmdlets, consulte [Security &amp; Compliance Center cmdlets](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
+Para obtener más información sobre estos cmdlets, consulte [Security &amp; Compliance Center cmdlets](/powershell/exchange/exchange-online-powershell).
 
-1. [Conectarse al Centro de &amp; cumplimiento de seguridad con PowerShell remoto](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [Conectarse al Centro de &amp; cumplimiento de seguridad con PowerShell remoto](/powershell/exchange/connect-to-scc-powershell)
 
 2. Cree la directiva mediante  `New-DlpCompliancePolicy` .
 
@@ -125,7 +125,7 @@ Este PowerShell crea una directiva DLP que se aplica a todas las ubicaciones.
    New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
    ```
 
-   Windows Server FCI incluye muchas propiedades integradas, incluida la información de identificación **personal** usada en este ejemplo. Los valores posibles para cada propiedad pueden ser diferentes para cada organización. Los **valores High**, **Moderate** y **Low** usados aquí son solo un ejemplo. Para tu organización, puedes ver las propiedades de clasificación fci de Windows Server con sus valores posibles en el Administrador de recursos del servidor de archivos en el servidor de archivos basado en Windows Server. Para obtener más información, vea [Create a classification property](https://go.microsoft.com/fwlink/p/?LinkID=627456).
+   Windows Server FCI incluye muchas propiedades integradas, incluida la información de identificación **personal** usada en este ejemplo. Los valores posibles para cada propiedad pueden ser diferentes para cada organización. Los **valores High**, **Moderate** y **Low** usados aquí son solo un ejemplo. Para tu organización, puedes ver las propiedades de clasificación fci de Windows Server con sus valores posibles en el Administrador de recursos del servidor de archivos en el servidor de archivos basado en Windows Server. Para obtener más información, vea [Create a classification property](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11)).
 
 Cuando termine, la directiva debe tener dos reglas nuevas que usen las propiedades **Document que contengan cualquiera de estos valores.** Esta condición no aparecerá en la interfaz de usuario, aunque aparecerán las demás condiciones, acciones y configuración.
 
@@ -142,7 +142,7 @@ Para detectar contenido con esa propiedad en todas partes, tal vez le convenga s
 > [!CAUTION]
 > Volver a indexar un sitio puede provocar una carga masiva en el sistema de búsqueda. No vuelva a indizar el sitio a menos que el escenario lo requiera absolutamente.
 
-Para obtener más información, vea [Solicitar manualmente el rastreo y una nueva indexación de un sitio, una biblioteca o una lista](https://go.microsoft.com/fwlink/p/?LinkID=627457).
+Para obtener más información, vea [Solicitar manualmente el rastreo y una nueva indexación de un sitio, una biblioteca o una lista](/sharepoint/crawl-site-content).
 
 ### <a name="reindex-a-site-optional"></a>Reindexar un sitio (opcional)
 

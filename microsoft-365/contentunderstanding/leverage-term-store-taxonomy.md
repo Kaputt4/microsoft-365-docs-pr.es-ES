@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Use la taxonomía al crear un extractor en el modelo de comprensión mediante documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: aff2df6a96fdfee7380651f68e647019e9485658
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: b8dfc028e0a18f3345fec466ec5e0079ed2d11ce
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975744"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925349"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>Aprovechar la taxonomía del almacén de términos al crear un extractor
 
@@ -27,7 +27,7 @@ ms.locfileid: "49975744"
 
 </br>
 
-Cuando se crea un extractor en el modelo de comprensión de documentos en SharePoint Syntex, puede aprovechar los conjuntos de términos globales en el [almacén de términos](https://docs.microsoft.com/sharepoint/managed-metadata) para mostrar los términos preferidos para los datos que extraiga.  
+Cuando se crea un extractor en el modelo de comprensión de documentos en SharePoint Syntex, puede aprovechar los conjuntos de términos globales en el [almacén de términos](/sharepoint/managed-metadata) para mostrar los términos preferidos para los datos que extraiga.  
 
 Por ejemplo, el modelo identifica y clasifica todos los documentos de **Contrato** cargados en la biblioteca de documentos.  Además, el modelo también extrae un valor de **Servicio de contrato** de cada contrato, y lo mostrará en una columna de la vista de la biblioteca. Entre los distintos valores de Servicios de contrato en los contratos, hay varios valores anteriores que la empresa ya no usa y a los que se les ha cambiado el nombre. Por ejemplo, todas las referencias a los términos de los servicios de contratos *Diseño*, *Gráficos* o *Topografía* ahora deberían llamarse *Creativo*. Siempre que el modelo extrae uno de los términos desactualizado de un documento de contrato, quiere que muestre el término actual, "Creativo", en la vista de la biblioteca. En el ejemplo siguiente, al entrenar el modelo, observamos que un documento de muestra contiene el término desactualizado de *Diseño*.
 
@@ -35,7 +35,7 @@ Por ejemplo, el modelo identifica y clasifica todos los documentos de **Contrato
 
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>Usar una columna de metadatos administrados en el extractor
 
-Los conjuntos de términos están configurados en el almacén de términos de los servicios de metadatos administrados (MMS) en el Centro de Administración de SharePoint. En el ejemplo siguiente, el *conjunto de términos* de [Servicios de contrato](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) se configura para incluir varios términos, incluido *Creativo*.  En los detalles, se muestra que el término tiene tres sinónimos (*Diseño*, *Gráficos* y *Topografía*) y los sinónimos se deberían traducir como *Creativo*. 
+Los conjuntos de términos están configurados en el almacén de términos de los servicios de metadatos administrados (MMS) en el Centro de Administración de SharePoint. En el ejemplo siguiente, el *conjunto de términos* de [Servicios de contrato](/sharepoint/managed-metadata#term-set) se configura para incluir varios términos, incluido *Creativo*.  En los detalles, se muestra que el término tiene tres sinónimos (*Diseño*, *Gráficos* y *Topografía*) y los sinónimos se deberían traducir como *Creativo*. 
 
    ![Conjunto de términos](../media/content-understanding/term-store.png)</br>
 
@@ -52,13 +52,8 @@ Después de aplicar el modelo a la biblioteca de documentos, cuando los document
 
 
 ## <a name="see-also"></a>Consulte también
-[Introducción a los metadatos administrados](https://docs.microsoft.com/sharepoint/managed-metadata#terms)
+[Introducción a los metadatos administrados](/sharepoint/managed-metadata#terms)
 
 [Crear un extractor](create-an-extractor.md)
 
 [Crear una columna de metadatos administrados](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)
-
-
-
-
-
