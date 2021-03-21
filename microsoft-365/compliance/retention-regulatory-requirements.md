@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Recursos para ayudarle a cumplir los requisitos normativos para la gobernanza de información y la administración de registros.
-ms.openlocfilehash: e46abc4efec356cfd058414063d3e76ffe8ff224
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: a2629dbd9df4b582b2aeb7726de87d81eb726a76
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50109939"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917786"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Requisitos normativos para la gobernanza de información y la administración de registros
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Use los recursos de esta página como ayuda para cumplir los requisitos normativos específicos para la gobernanza de información y la administración de registros en Microsoft 365. Todas las secciones de este documento se centran en una o varias normativas relacionadas y en ellas se incluyen las evaluaciones de terceros o instrucciones existentes sobre cómo configurar Microsoft 365 para ayudarle a cumplir los requisitos descritos.
 

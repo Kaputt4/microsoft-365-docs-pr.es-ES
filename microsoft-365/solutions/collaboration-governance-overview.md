@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo regular las características relacionadas en grupos de Microsoft 365, Teams, SharePoint y Yammer.
-ms.openlocfilehash: 01dea57504bf5d68c0bb13376379379f29044191
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: b31e9bf1cd46f94343a489497fb5eb00e138ce60
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838472"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916447"
 ---
 # <a name="what-is-collaboration-governance"></a>¿Qué es la gobernanza de la colaboración?
 
@@ -59,7 +59,7 @@ Los grupos de Microsoft 365 incluyen un conjunto de recursos vinculados que los 
 |[Bandeja de entrada](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|Para conversaciones de correo electrónico entre miembros del grupo. Esta bandeja de entrada tiene una dirección de correo electrónico y se puede configurar para aceptar mensajes de personas fuera del grupo e incluso fuera de la organización, como una lista de distribución tradicional.|
 |[Bloc de notas de OneNote](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|Para recopilar ideas, investigación e información|
 |[Planificador](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|Para asignar y administrar tareas de proyecto entre los miembros del grupo|
-|[Área de trabajo de Power BI](https://docs.microsoft.com/power-bi/collaborate-share/service-new-workspaces)|Un espacio de colaboración de datos con paneles e informes|
+|[Área de trabajo de Power BI](/power-bi/collaborate-share/service-new-workspaces)|Un espacio de colaboración de datos con paneles e informes|
 |[Proyecto y guía básica](https://support.microsoft.com/project)|Herramientas de administración de proyectos basadas en web|
 |[Sitio de grupo de SharePoint](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|Un repositorio central para información, vínculos y contenido relacionado con el grupo|
 |[Secuencia](https://support.microsoft.com/microsoft-stream)|Un servicio de streaming de vídeo|
@@ -114,9 +114,10 @@ Al iniciar el proceso de planeación de gobierno, tenga en cuenta estos procedim
 
 - **Inserte las decisiones de** gobierno directamente en las soluciones que cree: muchas decisiones de gobierno se pueden implementar al activar o desactivar las características de Microsoft 365.
 
+
 - **Usar un enfoque por fases:** primero, revierte las características de colaboración a un pequeño grupo de usuarios. Obtén comentarios de ellos, busca vales de ayuda y actualiza cualquier configuración o proceso necesario antes de continuar con un grupo más grande.
 
-- **Reforzar con la formación:** adapte soluciones como las rutas de aprendizaje de [Microsoft 365](https://docs.microsoft.com/office365/customlearning) para garantizar que las expectativas específicas de la organización se refuercen con la formación proporcionada por Microsoft.
+- **Reforzar con la formación:** adapte soluciones como las rutas de aprendizaje de [Microsoft 365](/office365/customlearning) para garantizar que las expectativas específicas de la organización se refuercen con la formación proporcionada por Microsoft.
 
 - **Tener una estrategia para** comunicar directivas de gobierno y directrices en su organización: cree un Centro de adopción de Microsoft 365 en un sitio de comunicación de SharePoint para comunicar directivas y procedimientos.
 
@@ -175,7 +176,7 @@ Estos módulos de aprendizaje de Microsoft Learn pueden ayudarle a aprender las 
 |![Icono de aprendizaje de protección de la información](../media/information-protection-governance.svg)|La cantidad de datos que se generan hoy en día está creciendo más rápido que nunca, los empleados quieren realizar el trabajo en todas partes y el panorama normativo está cambiando constantemente. Las soluciones de Microsoft para la protección de la información y el gobierno ayudan a las organizaciones a lograr el equilibrio adecuado entre mantener sus datos protegidos y sus personas productivas. Esta ruta de aprendizaje puede ayudarle a preparar los certificados Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<br><br>5 horas 13 min - Ruta de aprendizaje - 7 módulos|
 
 > [!div class="nextstepaction"]
-> [Iniciar >](https://docs.microsoft.com/learn/modules/m365-compliance-information-governance/introduction/)
+> [Iniciar >](/learn/modules/m365-compliance-information-governance/introduction/)
 
 <br><br>
 
@@ -184,16 +185,16 @@ Estos módulos de aprendizaje de Microsoft Learn pueden ayudarle a aprender las 
 |![Icono de aprendizaje de Teams](../media/protect-enterprise-information-microsoft-365.svg)|Proteger y asegurar la información de su organización es más difícil que nunca. La ruta de aprendizaje Proteger la información de la empresa con Microsoft 365 analiza cómo proteger su información confidencial de un uso excesivo o indebido accidental, cómo descubrir y clasificar los datos, cómo protegerlos con etiquetas de sensibilidad y cómo supervisar y analizar su información confidencial para protegerla contra su pérdida. Esta ruta de aprendizaje puede ayudarle a prepararse para las certificaciones Microsoft 365 Certified: Security Administrator Associate y Microsoft 365 Certified: Enterprise Administration Expert.<br><br>1 hora - Ruta de aprendizaje: 5 módulos|
 
 > [!div class="nextstepaction"]
-> [Iniciar >](https://docs.microsoft.com/learn/modules/m365-security-info-overview/introduction/)
+> [Iniciar >](/learn/modules/m365-security-info-overview/introduction/)
 
 #### <a name="security-and-compliance"></a>Seguridad y cumplimiento
 
 |Aprendizaje:|Demuestre conocimientos básicos de las funciones del Centro de seguridad y cumplimiento normativo de Microsoft 365|
 |:---|:---|
-|![Icono de aprendizaje de seguridad y cumplimiento](../media/microsoft-365-security-and-compliance-capabilities.svg)|Obtenga información sobre las áreas de soluciones de seguridad y cumplimiento de Microsoft 365 y las capacidades disponibles para ayudar a las empresas a proteger su empresa y cumplir los requisitos normativos. Si no está familiarizado con los conceptos básicos de informática en la nube, le recomendamos que tome Conceptos de [nube: principios de informática en la nube.](https://docs.microsoft.com/learn/modules/principles-cloud-computing/index)<br><br>3 h 11 min - Ruta de aprendizaje - 8 módulos|
+|![Icono de aprendizaje de seguridad y cumplimiento](../media/microsoft-365-security-and-compliance-capabilities.svg)|Obtenga información sobre las áreas de soluciones de seguridad y cumplimiento de Microsoft 365 y las capacidades disponibles para ayudar a las empresas a proteger su empresa y cumplir los requisitos normativos. Si no está familiarizado con los conceptos básicos de informática en la nube, le recomendamos que tome Conceptos de [nube: principios de informática en la nube.](/learn/modules/principles-cloud-computing/index)<br><br>3 h 11 min - Ruta de aprendizaje - 8 módulos|
 
 > [!div class="nextstepaction"]
-> [Iniciar >](https://docs.microsoft.com/learn/modules/what-is-m365/1-introduction/)
+> [Iniciar >](/learn/modules/what-is-m365/1-introduction/)
 
 ## <a name="illustrations"></a>Ilustraciones
 
@@ -246,8 +247,8 @@ Vea un ejemplo en segundo plano de cómo los grupos de Microsoft 365, SharePoint
 
 - [Encontrar el lugar ideal de colaboración con Grupos de Office 365, SharePoint, Teams y Yammer](https://www.youtube.com/watch?v=Rx9eVwqXeQk)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
-[Documentación de Seguridad de Microsoft 365](https://docs.microsoft.com/microsoft-365/security)
+[Documentación de Seguridad de Microsoft 365](../security/index.yml)
 
-[Documentación de cumplimiento de Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance)
+[Documentación de cumplimiento de Microsoft 365](../compliance/index.yml)

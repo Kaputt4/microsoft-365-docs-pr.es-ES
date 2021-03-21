@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurar el examinador de prevención de pérdida de datos de Microsoft 365 en el entorno local
-ms.openlocfilehash: e0d7bc9eeae7d701c14aaaeeed7a01cab33829ea
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7e190a1d6e902af3406f7e8f317efe80e825e7f2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417400"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917836"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>Introducción al examinador de prevención de pérdida de datos en el entorno local (versión preliminar)
 
@@ -41,7 +41,7 @@ Antes de empezar con el examinador de DLP local, debe confirmar su [Suscripción
 - Gobernanza y protección de la información de Microsoft 365 E5 
 
 
-Para más información sobre las licencias, vea: [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+Para más información sobre las licencias, vea: [Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 ### <a name="permissions"></a>Permisos
 
@@ -56,13 +56,13 @@ Los datos del examinador DLP en el entorno local se pueden ver en el [Explorador
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>Requisitos previos del examinador de DLP en el entorno local
 
 - El examinador de Azure Information Protection (AIP) implementa la coincidencia de directivas DLP y la aplicación de directivas. El examinador se instala como parte del cliente de AIP, por lo que la instalación debe cumplir todos los requisitos previos para AIP, el cliente AIP y el examinador de etiquetas unificado de AIP.
-- Implementar el examinador y el cliente de AIP. Para obtener más información [Instale el cliente de etiquetas unificado de AIP](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) y [], vea [Configurar e instalar el examinador de etiquetas unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install).
+- Implementar el examinador y el cliente de AIP. Para obtener más información [Instale el cliente de etiquetas unificado de AIP](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) y [], vea [Configurar e instalar el examinador de etiquetas unificado de Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install).
 - Debe haber al menos una etiqueta y una directiva publicadas en el espacio empresarial, incluso si todas sus reglas de detección se basan únicamente en tipos de información confidenciales.
 
 ## <a name="deploy-the-dlp-on-premises-scanner"></a>Implementar el examinador local de DLP
 
-1. Siga los procedimientos descritos en [Instalar el cliente de etiquetas unificado de AIP](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). 
-2. Siga los procedimientos descritos en [Configurar e instalar el examinador de etiquetas unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install) para completar la instalación del examinador.
+1. Siga los procedimientos descritos en [Instalar el cliente de etiquetas unificado de AIP](/azure/information-protection/rms-client/install-unifiedlabelingclient-app). 
+2. Siga los procedimientos descritos en [Configurar e instalar el examinador de etiquetas unificado de Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install) para completar la instalación del examinador.
     1. La configuración de los trabajos de detección de red es un paso opcional. Puede omitirlo y definir repositorios específicos que se examinarán en su trabajo de examen de contenido.
     2. Debe crear un trabajo de examen de contenido y especificar los repositorios que alojan archivos que deben ser evaluados por el motor de DLP.
     3. Habilite las reglas de DLP en el trabajo de examen de contenido creado y establezca la opción **Aplicar** en **Desactivar**, a menos que desee avanzar directamente a la fase de aplicación de DLP.
@@ -115,7 +115,7 @@ Los datos del examinador DLP en el entorno local se pueden ver en el [Explorador
 
 2. Vea los procedimientos descritos en [Introducción al explorador de actividad](data-classification-activity-explorer.md) para acceder y filtrar todos los datos de las ubicaciones de los examinadores locales.
 
-3. Abra el Buscar el [Registro de auditoría en el Centro de cumplimiento](https://security.microsoft.com/auditlogsearch). Durante la versión preliminar pública, las coincidencias de reglas de DLP están disponibles en la interfaz de usuario del registro del registro de auditoría o mediante el PowerShell [Search-UnifiedAudLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps). 
+3. Abra el Buscar el [Registro de auditoría en el Centro de cumplimiento](https://security.microsoft.com/auditlogsearch). Durante la versión preliminar pública, las coincidencias de reglas de DLP están disponibles en la interfaz de usuario del registro del registro de auditoría o mediante el PowerShell [Search-UnifiedAudLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps). 
 
 
 ## <a name="next-steps"></a>Siguientes pasos

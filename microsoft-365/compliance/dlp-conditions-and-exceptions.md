@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: obtenga información sobre las condiciones y excepciones de la directiva dlp
-ms.openlocfilehash: 93311ec369f8dd240b1e76c9e29ef8cc0a144cc2
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 02880a89bf580d94bad4a5dbdce5027b0a194487
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741373"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918016"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions-preview"></a>Condiciones de directiva DLP, excepciones y acciones (versión preliminar)
 
@@ -105,7 +105,7 @@ Las tablas de las secciones siguientes describen las condiciones y excepciones q
 |Tamaño del mensaje sobre|condición: *MessageSizeOver* <br/> excepción: *ExceptIfMessageSizeOver*| Size    |Mensajes en los que el tamaño total (mensaje más archivos adjuntos) es mayor o igual al valor especificado. <br/>**Nota**: Los límites de tamaño de los mensajes en los buzones se evalúan antes de las reglas de flujo de correo. Un mensaje que es demasiado grande para un buzón se rechazará antes de que una regla con esta condición sea capaz de actuar en el mensaje.  |
 | Con importancia    | condición: *WithImportance* <br/> *excepción: ExceptIfWithImportance*    | Importance    | Mensajes marcados con el nivel de importancia especificado.    |
 | El juego de caracteres de contenido contiene palabras    | condición: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*    | CharacterSets    | Mensajes que contienen alguno de los nombres de juego de caracteres especificados.    |
-| Tiene invalidación de remitente    | condición: *HasSenderOverride* <br/> *excepción: ExceptIfHasSenderOverride*    | N/D    | Mensajes en los que el remitente ha elegido invalidar una directiva de prevención de pérdida de datos (DLP). Para obtener más información acerca de las directivas DLP, [vea Prevención de pérdida de datos](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies).   |
+| Tiene invalidación de remitente    | condición: *HasSenderOverride* <br/> *excepción: ExceptIfHasSenderOverride*    | N/D    | Mensajes en los que el remitente ha elegido invalidar una directiva de prevención de pérdida de datos (DLP). Para obtener más información acerca de las directivas DLP, [vea Prevención de pérdida de datos](./data-loss-prevention-policies.md).   |
 | Coincidencias de tipo de mensaje    | condición: *MessageTypeMatches* <br/> excepción: *ExceptIfMessageTypeMatches*    | MessageType    | Mensajes del tipo especificado.    |
 
 ## <a name="actions-for-dlp-policies"></a>Acciones para directivas DLP
@@ -124,7 +124,3 @@ En esta tabla se describen las acciones disponibles en DLP.
 |Agregar el administrador del remitente como destinatario|AddRecipients | Primera propiedad: *AddedManagerAction*</br>Segunda propiedad: *Field* | Agrega el administrador del remitente al mensaje como el tipo de destinatario especificado ( To, Cc o Bcc ) o redirige el mensaje al administrador del remitente sin notificar al remitente ni al destinatario. Esta acción solo funciona si el atributo Manager del remitente se define en Active Directory. Este parámetro usa la sintaxis: @{AddManagerAsRecipientType = "<Para \| cc \| cco>"}|    
 Asunto de anteponer    |PrependSubject    |Cadena    |Agrega el texto especificado al principio del campo Subject del mensaje. Considere la posibilidad de usar un espacio o un signo de dos puntos (:) como último carácter del texto especificado para diferenciarlo del texto del asunto original.</br>Para evitar que se agregue la misma cadena a los mensajes que ya contienen el texto del asunto (por ejemplo, respuestas), agregue la excepción "El asunto contiene palabras" (ExceptIfSubjectContainsWords) a la regla.    |
 Aplicar declinación de responsabilidades HTML    |ApplyHtmlDisclaimer    |Primera propiedad: *Text*</br>Segunda propiedad: *Location*</br>Tercera propiedad: *Acción de reserva*    |Aplica la declinación de responsabilidades HTML especificada a la ubicación necesaria del mensaje.</br>Este parámetro usa la sintaxis: @{ Text = " " ; Location = <Append \| Prepend>; FallbackAction = <Wrap \| Ignore \| Reject> }
-
-
-
-

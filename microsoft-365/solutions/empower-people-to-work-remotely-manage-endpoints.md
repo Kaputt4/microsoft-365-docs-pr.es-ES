@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use Microsoft Endpoint Manager para administrar sus dispositivos, equipos y otros puntos de conexión.
-ms.openlocfilehash: bca3e8e79264a2218dd1036e50be1c9ab29d2b8a
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: db06c7d65da1939ffbb04db64ea901e211b074f6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749604"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918343"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Paso 4. Implementar la administración de puntos de conexión para dispositivos, equipos y otros puntos de conexión
 
 Con los trabajadores remotos, hay que dar soporte a un número cada vez mayor de dispositivos personales. La administración de puntos de conexión es un planteamiento de seguridad basado en directivas que requiere que los dispositivos cumplan determinados criterios antes de que se les conceda acceso a los recursos. Microsoft Endpoint Manager ofrece funcionalidades de administración modernas para proteger los datos en la nube y en los entornos locales. 
 
-[Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) proporciona servicios y herramientas para administrar dispositivos móviles, equipos de escritorio, equipos virtuales, dispositivos incorporados y servidores mediante la combinación de los siguientes servicios, los cuales puede que ya conozca o esté usando.
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) proporciona servicios y herramientas para administrar dispositivos móviles, equipos de escritorio, equipos virtuales, dispositivos incorporados y servidores mediante la combinación de los siguientes servicios, los cuales puede que ya conozca o esté usando.
 
 ![Los componentes de Endpoint Management para Microsoft 365](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
@@ -40,13 +40,13 @@ Microsoft Intune es un servicio basado en la nube que se centra en la administra
 
 - **MAM:** Es posible que los trabajadores remotos no quieran que usted tenga el control total de sus dispositivos personales, conocidos también como dispositivos Bring Your Own Device (BYOD). Puede ofrecer opciones a los trabajadores remotos y seguir protegiendo su organización. Por ejemplo, los trabajadores remotos pueden inscribir sus dispositivos si quieren acceso total a los recursos de la organización. O bien, si estos usuarios solo quieren tener acceso al correo electrónico o a Microsoft Teams, entonces use las directivas de protección de aplicaciones que requieren la autenticación multifactor (MFA) para usar estas aplicaciones.
 
-Para obtener más información, vea esta [introducción a Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune).
+Para obtener más información, vea esta [introducción a Microsoft Intune](/intune/fundamentals/what-is-intune).
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
 Configuration Manager es una solución de administración local que permite administrar equipos de escritorio, servidores y portátiles en la red o en Internet. Puede usar Configuration Manager para implementar aplicaciones, actualizaciones de software y sistemas operativos. También puede supervisar el cumplimiento, hacer consultas y realizar acciones en los clientes en tiempo real, y mucho más. Puede habilitarlo en la nube para integrarlo con Intune, Azure AD, Microsoft Defender para punto de conexión y otros servicios en la nube. 
 
-Para obtener más información, vea esta [introducción a Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction).
+Para obtener más información, vea esta [introducción a Configuration Manager](/mem/configmgr/core/understand/introduction).
 
 ## <a name="co-management"></a>Administración conjunta
 
@@ -54,7 +54,7 @@ La coadministración combina la inversión local existente de Configuration Mana
 
 La administración conjunta usa las características en la nube basadas en Intune, incluyendo el acceso condicional y la aplicación de la conformidad con los dispositivos. Puede mantener algunas de las tareas en el entorno local y ejecutar las demás en la nube.
 
-Para obtener más información, vea esta [introducción a la administración conjunta](https://docs.microsoft.com/mem/configmgr/comanage/overview).
+Para obtener más información, vea esta [introducción a la administración conjunta](/mem/configmgr/comanage/overview).
 
 ## <a name="desktop-analytics"></a>Análisis de escritorio
 
@@ -68,7 +68,7 @@ Con el análisis de escritorio, puede:
 - Crear grupos piloto que representen toda la aplicación y el estado del controlador a través de un conjunto mínimo de dispositivos.
 - Implementar Windows 10 en los dispositivos de prueba piloto y en producción.
 
-Para obtener más información, vea esta [introducción a Análisis de escritorio](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview).
+Para obtener más información, vea esta [introducción a Análisis de escritorio](/mem/configmgr/desktop-analytics/overview).
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 
@@ -79,13 +79,13 @@ Windows Autopilot le permite a un departamento de TI preconfigurar los dispositi
 - Desde el punto de vista del usuario, solo se requieren algunas operaciones sencillas para que el dispositivo esté listo para su uso. 
 - Desde el punto de vista de los profesionales de TI, la única interacción necesaria por parte del usuario final es conectarse a una red y comprobar sus credenciales.
 
-Para obtener más información, vea esta [introducción a Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot).
+Para obtener más información, vea esta [introducción a Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot).
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>Recursos técnicos administrativos para la administración de puntos de conexión
 
 - [Guía básica de administración de dispositivos para Microsoft 365](../enterprise/device-management-roadmap-microsoft-365.md)
-- [Cómo inscribir diferentes tipos de dispositivos para la administración de dispositivos móviles](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
-- [Cómo instruir a los usuarios finales sobre Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
+- [Cómo inscribir diferentes tipos de dispositivos para la administración de dispositivos móviles](/mem/intune/enrollment/device-enrollment)
+- [Cómo instruir a los usuarios finales sobre Microsoft Intune](/mem/intune/fundamentals/end-user-educate)
  
 ## <a name="results-of-step-4"></a>Resultados del paso 4
 

@@ -17,44 +17,44 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo elegir e implementar la solución de voz de Teams adecuada para su organización.
-ms.openlocfilehash: b5dda0ed3d9310c3c43052b9bac4996802e0ed2f
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+ms.openlocfilehash: ede8075767e9d0a80123ac742403f8a4d171392e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580916"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918387"
 ---
 # <a name="plan-and-deploy-a-teams-voice-solution"></a>Planear e implementar una solución de voz de Teams
 
-Una solución de voz de Teams permite a los usuarios de su organización realizar llamadas tanto dentro como fuera de su organización. Una solución de voz completa consta de Teams, El sistema telefónico de Microsoft y una selección de opciones para conectarse a la red telefónica conmutada (RTC).
+Una solución de voz de Teams permite a los usuarios de la organización realizar llamadas tanto dentro como fuera de la organización. Una solución de voz completa consta de Teams, Microsoft Phone System y una selección de opciones para conectarse a la red telefónica conmutada (RTC).
 
 ![Introducción a las soluciones de voz de Teams](..\media\solutions-architecture-center\voice-concepts.png)
 
-Sistema telefónico proporciona capacidades completas de central de conmutación (PBX) para su organización. Las llamadas entre los usuarios de su organización, independientemente de su ubicación geográfica, se administran internamente en el Sistema telefónico, lo que elimina los costos de larga distancia en estas llamadas internas.  
+Phone System proporciona funcionalidades completas de Central de conmutación (PBX) para su organización. Las llamadas entre usuarios de la organización, independientemente de su ubicación geográfica, se controlan internamente en el Sistema telefónico, lo que elimina los costos de larga distancia en estas llamadas internas.  
 
-Al conectar el sistema telefónico a la red telefónica conmutada (RTC), los usuarios de Teams también pueden realizar llamadas fuera de su organización.
+Al conectar el sistema telefónico a la red telefónica conmutada (RTC), los usuarios de Teams también pueden realizar llamadas fuera de la organización.
 
 Esta guía de solución le ayuda a:
 
-- Elegir la solución de voz adecuada para su organización
+- Elija la solución de voz adecuada para su organización
 - Implementar la solución de voz seleccionada
 
 Siga estos pasos para elegir, planear y configurar la solución de voz:
 
 ![Elija su solución de voz](..\media\solutions-architecture-center\voice-solutions-overview-1.png)
 
-1. [Elija su solución de voz](https://docs.microsoft.com/MicrosoftTeams/cloud-voice-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+1. [Elija su solución de voz](/MicrosoftTeams/cloud-voice-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)
 
-2. [Configurar el Sistema telefónico](https://docs.microsoft.com/microsoftteams/setting-up-your-phone-system?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+2. [Configurar el Sistema telefónico](/microsoftteams/setting-up-your-phone-system?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json)
 
-3. Configure la conectividad con RTC eligiendo una o una combinación de las siguientes opciones:
-   - [Plan de](https://docs.microsoft.com/microsoftteams/set-up-calling-plans?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json) llamadas: solución todo en la nube de Microsoft con Microsoft como operador de RTC
-   - [Enrutamiento directo:](https://docs.microsoft.com/microsoftteams/direct-routing-configure?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json) usar enrutamiento directo para conectar su propio operador de RTC a Teams 
+3. Configure la conectividad RTC eligiendo una o una combinación de las siguientes opciones:
+   - [Plan de llamadas:](/microsoftteams/set-up-calling-plans?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json) la solución todo en la nube de Microsoft con Microsoft como proveedor de RTC
+   - [Enrutamiento directo:](/microsoftteams/direct-routing-configure?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json) usar enrutamiento directo para conectar su propio proveedor de RTC a Teams 
 
-Además, es posible que desee leer acerca de cómo una gran empresa multinacional migró a una solución de voz de Teams en el caso práctico [de Contoso.](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+Además, es posible que desee leer acerca de cómo una gran corporación multinacional migró a una solución de voz de Teams en el [caso práctico contoso](/MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json).
 
 Para obtener información acerca de las licencias necesarias, vea lo siguiente:
 
-- [Licencias de complementos de Teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing?tabs=enterprise#what-voice-features-are-available-with-my-plan/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+- [Licencias de complementos de Teams](/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&tabs=enterprise#what-voice-features-are-available-with-my-plan/toc.json)
 
-- [Requisitos de licencias de enrutamiento directo](https://docs.microsoft.com/microsoftteams/direct-routing-plan#licensing-and-other-requirements/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json)
+- [Requisitos de licencias de enrutamiento directo](/microsoftteams/direct-routing-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json#licensing-and-other-requirements/toc.json)

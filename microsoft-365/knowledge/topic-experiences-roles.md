@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Obtenga información sobre los roles de usuario en Temas de Viva.
-ms.openlocfilehash: d5b57e768a1de8bc0447492067371630b2d045f6
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 6d93046a96b60779c3cd3bd6c6aa600cb443118f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453949"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917361"
 ---
 # <a name="microsoft-viva-topics-roles"></a>Roles de los temas de Microsoft Viva 
 
@@ -34,7 +34,7 @@ Al usar Temas de Viva en el entorno de Microsoft 365, los usuarios pueden tener 
 Los visores de temas son usuarios de su organización que pueden ver los temas resaltados en su sitio moderno de SharePoint, Microsoft Search a través de SharePoint y Office.com y el centro de temas. Pueden ver más detalles sobre un tema en la página del tema. 
 
 Para que los resaltados de temas y sus páginas de temas sean visibles para un visor de temas, el usuario debe:
--   [Su administrador de Microsoft](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) 365 le asignará una licencia de Viva Topics.
+-   [Su administrador de Microsoft](./set-up-topic-experiences.md#assign-licenses) 365 le asignará una licencia de Viva Topics.
 -   Tenga permiso para tener visibilidad de los temas. Esta tarea la realiza el administrador de conocimientos en la página de configuración de Temas de Viva en el Centro de administración de Microsoft 365.
 
 
@@ -48,8 +48,8 @@ Un colaborador de temas también puede crear y publicar un nuevo tema a través 
 
 Para crear y editar un tema, el usuario debe:
 
--   [Su administrador de Microsoft](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) 365 le asignará una licencia de Viva Topics.
--   [Tener asignados permisos para crear y editar temas](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center). Esta tarea la realiza el administrador de conocimientos en la página de configuración de Temas de Viva en el Centro de administración de Microsoft 365.
+-   [Su administrador de Microsoft](./set-up-topic-experiences.md#assign-licenses) 365 le asignará una licencia de Viva Topics.
+-   [Tener asignados permisos para crear y editar temas](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center). Esta tarea la realiza el administrador de conocimientos en la página de configuración de Temas de Viva en el Centro de administración de Microsoft 365.
 
 ## <a name="knowledge-managers"></a>Administradores de conocimientos
 
@@ -63,8 +63,8 @@ En la página Administrar temas, los administradores de conocimientos pueden rea
 Además, un administrador de conocimientos puede editar temas existentes o crear otros nuevos.
 
 Para administrar temas, el usuario debe:
--   [Su administrador de Microsoft](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) 365 le asignará una licencia de Viva Topics.
--   [Tener asignados permisos para administrar temas](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions#change-who-has-permissions-to-do-tasks-on-the-topic-center)). Esta tarea la realiza el administrador de conocimientos en la página de configuración de Temas de Viva en el Centro de administración de Microsoft 365.
+-   [Su administrador de Microsoft](./set-up-topic-experiences.md#assign-licenses) 365 le asignará una licencia de Viva Topics.
+-   [Tener asignados permisos para administrar temas](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center)). Esta tarea la realiza el administrador de conocimientos en la página de configuración de Temas de Viva en el Centro de administración de Microsoft 365.
 
 Los usuarios que tienen un buen conocimiento general de su empresa pueden ser buenos candidatos para el rol de administrador de conocimientos. Es posible que estas personas no solo tengan conocimientos para saber si los temas son válidos o no, sino que también pueden conocer a personas dentro de la empresa relacionadas con esos temas.
 
@@ -85,4 +85,3 @@ Los administradores de conocimientos deben poder coordinarse con todas las parte
 
 
 ## <a name="see-also"></a>Consulte también
-

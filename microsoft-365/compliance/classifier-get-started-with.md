@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Un clasificador de Microsoft 365 es una herramienta que puede entrenar para reconocer varios tipos de contenido, ya que le proporciona ejemplos para que los vea. En este artículo se muestra cómo crear y entrenar un clasificador personalizado y cómo volver a entrenarlos para aumentar la precisión.
-ms.openlocfilehash: a73acd7665cd23f13329bb5db4e890b0f3b0d861
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 90e47ec94528bbadeb98dc9eb590929e25ae6ff1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423299"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918184"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Introducción a los clasificadores que se pueden entrenar
 
@@ -46,7 +46,7 @@ Vea este vídeo para ver un resumen rápido de la creación de un clasificador q
 
 Los clasificadores son una característica de cumplimiento de Microsoft 365 E5 o E5. Debe tener una de estas suscripciones para poder usarlas.
 
-### <a name="permissions"></a>Permissions
+### <a name="permissions"></a>Permisos
 
 Para obtener acceso a clasificadores en la interfaz de usuario: 
 
@@ -95,7 +95,7 @@ Una vez que el clasificador capacitado haya procesado suficientes ejemplos posit
 
 ## <a name="how-to-create-a-trainable-classifier"></a>Cómo crear un clasificador que se puede entrenar
 
-1. Recopilar entre 50 y 500 elementos de contenido de ed. Estos deben ser solo ejemplos que representen fuertemente el tipo de contenido que desea que el clasificador capacitado identifique positivamente como en la categoría de clasificación. Consulte Extensiones de nombre de archivo rastreadas predeterminadas y tipos de archivo analizadas en [SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) para los tipos de archivo admitidos.
+1. Recopilar entre 50 y 500 elementos de contenido de ed. Estos deben ser solo ejemplos que representen fuertemente el tipo de contenido que desea que el clasificador capacitado identifique positivamente como en la categoría de clasificación. Consulte Extensiones de nombre de archivo rastreadas predeterminadas y tipos de archivo analizadas en [SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) para los tipos de archivo admitidos.
 
    > [!IMPORTANT]
    > Los elementos de ejemplo de seed y test no deben cifrarse y deben estar en inglés.
@@ -127,7 +127,7 @@ Una vez que el clasificador capacitado haya procesado suficientes ejemplos posit
     > [!div class="mx-imgBorder"]
     > ![clasificador trainable listo para pruebas](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. Recopile al menos 200 elementos de contenido de prueba (10 000 como máximo) para obtener mejores resultados. Estos deben ser una combinación de elementos que son positivos fuertes, negativos fuertes y algunos que son un poco menos obvios en su naturaleza. Consulte Extensiones de nombre de archivo rastreadas predeterminadas y tipos de archivo analizadas en [SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) para los tipos de archivo admitidos.
+11. Recopile al menos 200 elementos de contenido de prueba (10 000 como máximo) para obtener mejores resultados. Estos deben ser una combinación de elementos que son positivos fuertes, negativos fuertes y algunos que son un poco menos obvios en su naturaleza. Consulte Extensiones de nombre de archivo rastreadas predeterminadas y tipos de archivo analizadas en [SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) para los tipos de archivo admitidos.
 
     > [!IMPORTANT]
     > Los elementos de ejemplo no deben cifrarse y deben estar en inglés.

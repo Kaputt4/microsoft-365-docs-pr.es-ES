@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: El explorador local de prevención de pérdida de datos de Microsoft 365 amplía la supervisión de actividades de archivo y acciones de protección de esos archivos a recursos compartidos de archivos locales y carpetas y bibliotecas de documentos de SharePoint. El examinador de Azure Information Protection (AIP) examina y protege los archivos.
-ms.openlocfilehash: 996de5ea640a16ef2a250830d7167aa316b54a21
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: fa1c14520c8ad0afa4856fdd8a1c59a0f71f400d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417392"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917816"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Obtenga más información sobre el examinador de prevención de pérdida de datos locales de Microsoft 365 (versión preliminar)
 
@@ -36,12 +36,12 @@ El **examinador de DLP local** rastrea datos en reposo a nivel local en recursos
 
 El examinador DLP local se basa en una implementación completa del examinador de Azure Information Protection (AIP) para supervisar, etiquetar y proteger elementos confidenciales. Si no conoce bien el examinador de AIP, le recomendamos que se familiarice con él. Vea estos artículos para obtener más información:
 
-- [¿Qué es Azure Information Protection?](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)
-- [Qué es el examinador de etiquetas unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)
-- [Requisitos para instalar e implementar el examinador de etiquetas unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-prereqs)
-- [Tutorial de instalación del examinador de etiquetas unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/tutorial-install-scanner)
-- [Configuración e instalación del examinador de etiquetas unificado de Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)
-- [Cliente de etiquetas unificado de Azure Information Protection: historial de versiones y directiva de soporte técnico](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
+- [¿Qué es Azure Information Protection?](/azure/information-protection/what-is-information-protection)
+- [Qué es el examinador de etiquetas unificado de Azure Information Protection](/azure/information-protection/deploy-aip-scanner)
+- [Requisitos para instalar e implementar el examinador de etiquetas unificado de Azure Information Protection](/azure/information-protection/deploy-aip-scanner-prereqs)
+- [Tutorial de instalación del examinador de etiquetas unificado de Azure Information Protection](/azure/information-protection/tutorial-install-scanner)
+- [Configuración e instalación del examinador de etiquetas unificado de Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install)
+- [Cliente de etiquetas unificado de Azure Information Protection: historial de versiones y directiva de soporte técnico](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
 
 ## <a name="dlp-on-premises-scanner-actions"></a>Acciones de examinador DLP local
 
@@ -56,7 +56,7 @@ Cuando un archivo detectado constituya, de ser filtrado, un riesgo en potencia o
 
 |Acción |Descripción  |
 |---------|---------|
-|**Impedir a estas personas que accedan al archivo almacenado en el examinador local: Todos los usuarios** | Cuando se aplica, esta acción bloquea el acceso a todas las cuentas excepto al propietario del contenido, la última cuenta que modificó el elemento y el administrador. Para ello, quita todas las cuentas de los permisos NTFS/SharePoint a nivel de archivo excepto para el propietario del archivo, el propietario del repositorio (establecido en la configuración [Establecer el propietario del repositorio](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) en el trabajo de análisis de contenido), el último modificador (se puede identificar solo en SharePoint) y el administrador. A la cuenta del examinador también se le conceden derechos FC sobre el archivo.|
+|**Impedir a estas personas que accedan al archivo almacenado en el examinador local: Todos los usuarios** | Cuando se aplica, esta acción bloquea el acceso a todas las cuentas excepto al propietario del contenido, la última cuenta que modificó el elemento y el administrador. Para ello, quita todas las cuentas de los permisos NTFS/SharePoint a nivel de archivo excepto para el propietario del archivo, el propietario del repositorio (establecido en la configuración [Establecer el propietario del repositorio](/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) en el trabajo de análisis de contenido), el último modificador (se puede identificar solo en SharePoint) y el administrador. A la cuenta del examinador también se le conceden derechos FC sobre el archivo.|
 |**Impedir que estas personas accedan al archivo almacenado en el examinador local: bloquear el acceso a toda la organización (público)**    |Cuando se aplica, esta acción quita los SID **_Todo el mundo_*_, _*_NT AUTHORITY\authenticated users_*_ y _*_Usuarios de dominio_** de la lista de control de acceso a archivos (ACL). Solo los usuarios y grupos a los que se hayan concedido derechos explícitamente para la carpeta principal o el archivo podrán tener acceso al archivo.|
 |**Establecer permisos en el archivo**|Cuando se aplica, esta acción obliga al archivo a heredar los permisos de su carpeta principal. De forma predeterminada, esta acción solo se aplicará si los permisos de la carpeta principal son más restrictivos que los permisos que ya están en el archivo. Por ejemplo, si la ACL del archivo se establece para permitir solo **_usuarios específicos_*_ y la carpeta principal está configurada para permitir el grupo _*_Usuarios del dominio_*_, el archivo no heredará los permisos de la carpeta principal. Puede invalidar este comportamiento seleccionando la opción _* Heredar aunque los permisos de elemento primario sean menos restrictivos**.|
 |**Quitar el archivo de una ubicación incorrecta**|Cuando se aplica, esta acción reemplaza el archivo original con un archivo auxiliar con la extensión .txt y coloca una copia del archivo original en una carpeta en cuarentena. 

@@ -17,12 +17,12 @@ ms.collection:
 description: Obtenga información sobre la interfaz de administración web en Exchange Online Protection (EOP) independiente.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec9dcbccbee734ea7c475b1ac0a5f9a92a0b401b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: ab834d14673370a39e148aefa568591ff4c50b8f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286962"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916999"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Centro de administración de Exchange en EOP independiente
 
@@ -33,23 +33,23 @@ ms.locfileid: "50286962"
 
 El Centro de administración de Exchange (EAC) es una consola de administración basada en web para Exchange Online Protection (EOP) independiente.
 
-¿Está buscando la versión de Exchange Online de este tema? Vea [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+¿Está buscando la versión de Exchange Online de este tema? Vea [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 
 ## <a name="open-the-eac-in-eop"></a>Abrir el EAC en EOP
 
-Los clientes independientes de EOP pueden acceder al EAC mediante los métodos siguientes:
+Los clientes independientes de EOP pueden tener acceso al EAC mediante los siguientes métodos:
 
-- **Desde el Centro de administración de Microsoft 365:**
+- **Desde el Centro de administración de Microsoft 365**:
 
-  1. Vaya a <https://admin.microsoft.com> Mostrar todo y haga clic en Mostrar **todo.**
+  1. Vaya a <https://admin.microsoft.com> y haga clic en Mostrar **todo**.
 
      ![Haga clic en Mostrar todo en el Centro de administración de Microsoft 365](../../media/m365-center-show-all.png)
 
-  2. En la sección **Centros de** administración que aparece, haga clic en Todos los centros **de administración.**
+  2. En la **sección Centros de administración** que aparece, haga clic en Todos los centros de **administración.**
 
      ![Haga clic en Todos los centros de administración en el Centro de administración de Microsoft 365](../../media/m365-center-select-all-admin-centers.png)
 
-  3. En la **página Todos los centros de** administración que aparece, haga clic en Exchange Online **Protection.**
+  3. En la **página Todos los centros de administración** que aparece, haga clic en Exchange Online **Protection**.
 
 - Vaya directamente a `https://admin.protection.outlook.com/ecp/` .
 
@@ -57,7 +57,7 @@ Los clientes independientes de EOP pueden acceder al EAC mediante los métodos s
 
 En esta sección se describen los elementos de la interfaz de usuario del EAC.
 
-![El Centro de administración de Exchange en Exchange Online Protection](../../media/EOP-AdminCenter.png)
+![Centro de administración de Exchange en Exchange Online Protection](../../media/EOP-AdminCenter.png)
 
 ### <a name="feature-pane"></a>Panel de características
 
@@ -67,16 +67,16 @@ Este es el primer nivel de navegación para la mayoría de las tareas que realiz
 
 - **Permisos:** aquí donde administrará los roles de administrador.
 
-- **Administración de** cumplimiento: aquí es donde encontrará el informe de grupo de roles de administrador y el informe de registro de auditoría de administrador.
+- **Administración de cumplimiento:** aquí es donde encontrará el informe de grupo de roles de administrador y el informe de registro de auditoría de administrador.
 
 - **Protección:** aquí es donde puede administrar directivas antimalware, la directiva de filtro de conexión predeterminada y DKIM.
 
   > [!NOTE]
-  > Debe administrar directivas antimalware y la directiva de filtro de conexión predeterminada en el Centro de seguridad & cumplimiento. Para obtener más información, vea [Configurar directivas antimalware en EOP](configure-anti-malware-policies.md) y Configurar el filtrado [de conexiones en EOP.](configure-the-connection-filter-policy.md)
+  > Debe administrar directivas antimalware y la directiva de filtro de conexión predeterminada en el Centro de seguridad & cumplimiento. Para obtener más información, vea [Configure anti-malware policies in EOP](configure-anti-malware-policies.md) y [Configure connection filtering in EOP](configure-the-connection-filter-policy.md).
 
-- **Flujo de** correo: aquí es donde administrará las reglas de flujo de correo (también conocidas como reglas de transporte), los dominios aceptados y los conectores, así como dónde puede ir a ejecutar el seguimiento de mensajes.
+- **Flujo de** correo: aquí es donde administrará las reglas de flujo de correo (también conocidas como reglas de transporte), los dominios aceptados y los conectores, así como dónde puede ir para ejecutar el seguimiento de mensajes.
 
-- **Híbrido:** aquí es donde puede ejecutar el [Asistente](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)para la configuración híbrida y donde puede instalar el módulo [de PowerShell de Exchange Online.](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)
+- **Híbrido:** aquí es donde puede ejecutar [el](/Exchange/hybrid-configuration-wizard)Asistente para configuración híbrida y donde puede instalar el módulo [de PowerShell](/powershell/exchange/mfa-connect-to-exchange-online-powershell)de Exchange Online .
 
 ### <a name="tabs"></a>Pestañas
 
@@ -112,10 +112,10 @@ Cuando seleccione un objeto de la vista de lista, la información acerca del obj
 
 El mosaico **Yo** permite cerrar sesión en el EAC e iniciar sesión como un usuario diferente. En el **menú** ![ desplegable Icono de ](../../media/ITPro-EAC-HelpIcon.gif) ayuda, puede realizar las siguientes acciones:
 
-- **Ayuda:** haga clic ![ en el icono de ayuda para ver el contenido de la ayuda en ](../../media/ITPro-EAC-HelpIcon.gif) línea.
+- **Ayuda:** haga ![ clic en Icono de ayuda para ver el contenido de la ayuda en ](../../media/ITPro-EAC-HelpIcon.gif) línea.
 - **Comentarios:** deje comentarios.
-- **Comunidad:** publique una pregunta para encontrar respuestas en los foros de la comunidad.
-- **Deshabilitar burbuja de Ayuda:** la burbuja de Ayuda muestra ayuda contextual para los campos al crear o editar un objeto. Puede desactivar el globo de Ayuda o activarlo si estaba deshabilitado.
+- **Comunidad:** publique una pregunta para buscar respuestas en los foros de la comunidad.
+- **Deshabilitar burbuja de ayuda:** la burbuja de ayuda muestra ayuda contextual para los campos al crear o editar un objeto. Puede desactivar el globo de Ayuda o activarlo si estaba deshabilitado.
 - **Mostrar registro de comandos:** se abre una nueva ventana que muestra los comandos equivalentes de PowerShell en función de lo que configuró en EAC.
 
 ## <a name="supported-browsers"></a>Exploradores compatibles

@@ -18,16 +18,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar PowerShell para crear y publicar etiquetas de retención desde la línea de comandos, de manera independiente del centro de cumplimiento de Microsoft 365.
-ms.openlocfilehash: 5b8bb7a08c9794139e840d59f9238d858e15dd4e
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: 1c3a1e1b9e363659b276d2f11a929308f43737b3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47426987"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918226"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Crear y publicar etiquetas de retención con PowerShell
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Si decide usar [etiquetas de retención](retention.md) para ayudarle a guardar o eliminar documentos y mensajes de correo electrónico en Microsoft 365, puede que advierta que dispone de una gran cantidad de etiquetas de retención (quizá incluso cientos de ellas) para crear y publicar. Se recomienda crear etiquetas de retención a escala mediante el uso del [plan de archivos](file-plan-manager.md) del centro de cumplimiento de Microsoft 365. Sin embargo, también puede usar [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
   
@@ -51,7 +51,7 @@ Los scripts de ejemplo que aparecen en este artículo no son compatibles con nin
 
 2. Convierta el texto en columnas: **Pestaña de datos**\>**Texto en columnas**\>**Delimitado**\>**Coma**\>**General**
 
-2. Reemplace los ejemplos con entradas para su configuración y etiquetas de retención. Para más información sobre los valores de parámetro, consulte [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).
+2. Reemplace los ejemplos con entradas para su configuración y etiquetas de retención. Para más información sobre los valores de parámetro, consulte [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).
 
 3. Guarde la hoja de cálculo como un archivo .csv en una ubicación que resulte fácil de encontrar en un paso posterior. Por ejemplo: C:\>Scripts\Etiquetas.csv
 
@@ -78,7 +78,7 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 2. Convierta el texto en columnas: **Pestaña de datos**\>**Texto en columnas**\>**Delimitado**\>**Coma**\>**General**
 
-2. Reemplace los ejemplos con entradas para sus directivas de etiquetas de retención y la configuración de las mismas. Para más información sobre los valores de parámetro para este cmdlet, consulte [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy)
+2. Reemplace los ejemplos con entradas para sus directivas de etiquetas de retención y la configuración de las mismas. Para más información sobre los valores de parámetro para este cmdlet, consulte [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)
 
 3. Guarde la hoja de cálculo como un archivo .csv en una ubicación que resulte fácil de encontrar en un paso posterior. Por ejemplo: `<path>Policies.csv`
 
@@ -736,7 +736,7 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>Paso 4: Ejecute el script de PowerShell
 
-En primer lugar, [Conéctese a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+En primer lugar, [Conéctese a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
 
 A continuación, ejecute el script que crea y publica las etiquetas de retención:
   
@@ -761,5 +761,3 @@ Encontrará el archivo de registro en la siguiente ubicación, aunque los dígit
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
 ```
-
-

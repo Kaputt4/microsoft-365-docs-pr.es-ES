@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información sobre cómo implementar equipos con la protección de datos con un nivel de confidencialidad alto.
-ms.openlocfilehash: 7e746ebc81d1ccd9aea2953fd42004715f8d7819
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: fdc3c1ab2c780289b7405623779b8af89da8ba17
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509271"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916291"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configuración de equipos con protección de datos con un nivel de confidencialidad alto
 
@@ -44,8 +44,8 @@ Según la naturaleza de su empresa, es posible que quiera habilitar o no el uso 
 
 Para más información sobre el uso compartido de invitados de forma segura, vea los recursos siguientes:
 
-- [Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [Crear un entorno seguro de uso compartido para invitados](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización](./share-limit-accidental-exposure.md)
+- [Crear un entorno seguro de uso compartido para invitados](./create-secure-guest-sharing-environment.md)
 
 Para permitir o bloquear el uso compartido de invitados, utilizamos una combinación de una etiqueta de confidencialidad para el equipo y controles de uso compartido a nivel de sitio para el sitio de SharePoint asociado, ambos tratados más adelante.
 
@@ -53,7 +53,7 @@ Para permitir o bloquear el uso compartido de invitados, utilizamos una combinac
 
 Para el nivel de protección de confidencialidad alta, usaremos una etiqueta de confidencialidad para clasificar al equipo. Esta etiqueta también se puede usar para clasificar y cifrar archivos individuales en este o en otros equipos, o en otras ubicaciones de archivo como SharePoint o OneDrive. 
 
-Como primer paso, debe habilitar las etiquetas de confidencialidad para los equipos. Consulte [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de Microsoft 365 y los sitios de SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) para más información.
+Como primer paso, debe habilitar las etiquetas de confidencialidad para los equipos. Consulte [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, los grupos de Microsoft 365 y los sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md) para más información.
 
 Si ya tiene las etiquetas de confidencialidad implementadas en la organización, tenga en cuenta que se adapta a la estrategia general de etiquetas. Si es necesario, puede cambiar el nombre o la configuración para satisfacer las necesidades de su organización.
 
@@ -84,7 +84,7 @@ Crear una etiqueta de confidencialidad
 22. En la página **Etiquetado automático para las columnas de la base de datos**, haga clic en **Siguiente**.
 23. Haga clic en **Crear etiqueta** y después en **Listo**.
 
-Una vez que haya creado la etiqueta, debe comunicarla a los usuarios que la van a usar. Para la protección confidencial, haremos que la etiqueta esté disponible para todos los usuarios. Publique la etiqueta en el Centro de cumplimiento de Microsoft 365, en la pestaña **Directivas de etiqueta** de la página **Protección de la información**. Si tiene una directiva existente que se aplica a todos los usuarios, agregue esta etiqueta a esa directiva. Si necesita crear una directiva nueva, vea [Publicar etiquetas de confidencialidad creando una directiva de etiqueta](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
+Una vez que haya creado la etiqueta, debe comunicarla a los usuarios que la van a usar. Para la protección confidencial, haremos que la etiqueta esté disponible para todos los usuarios. Publique la etiqueta en el Centro de cumplimiento de Microsoft 365, en la pestaña **Directivas de etiqueta** de la página **Protección de la información**. Si tiene una directiva existente que se aplica a todos los usuarios, agregue esta etiqueta a esa directiva. Si necesita crear una directiva nueva, vea [Publicar etiquetas de confidencialidad creando una directiva de etiqueta](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
 ## <a name="create-a-team"></a>Crear un equipo
 
@@ -108,7 +108,7 @@ Para restringir la creación de un canal privado
 2. En la pestaña **Configuración**, expanda **Permisos de los miembros**.
 3. Desactive la casilla de verificación **Permitir a los miembros crear canales privados**.
 
-También puede usar [Directivas de equipos](https://docs.microsoft.com/MicrosoftTeams/teams-policies) para controlar quién puede crear canales privados.
+También puede usar [Directivas de equipos](/MicrosoftTeams/teams-policies) para controlar quién puede crear canales privados.
 
 ## <a name="sharepoint-settings"></a>Configuración de SharePoint
 
@@ -135,7 +135,7 @@ Para actualizar la configuración del sitio
 6. En Tipo de vínculo de uso compartido predeterminado, desactive la casilla de verificación **Igual que la configuración de nivel de organización** y seleccione **Usuarios con acceso existente**.
 7. Haga clic en **Guardar**.
 
-Si quiere realizar scripts como parte del proceso de creación de su equipo, puede usar [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) con los parámetros siguientes:
+Si quiere realizar scripts como parte del proceso de creación de su equipo, puede usar [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) con los parámetros siguientes:
 
 - `-SharingCapability Disabled` para desactivar el uso compartido de invitados (está activado de forma predeterminada)
 - `-DefaultSharingLinkType Internal` para cambiar el vínculo para compartir predeterminado a *Usuarios específicos*
@@ -159,5 +159,4 @@ Para configurar el uso compartido del sitio solo para propietarios
 
 ## <a name="see-also"></a>Consulte también
 
-[Crear y configurar etiquetas de confidencialidad y sus directivas](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels)
-
+[Crear y configurar etiquetas de confidencialidad y sus directivas](../compliance/create-sensitivity-labels.md)

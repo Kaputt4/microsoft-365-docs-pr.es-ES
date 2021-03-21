@@ -20,12 +20,12 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: Después de que un buzón de Office 365 esté inactivo, cambie la duración de la retención u directiva de retención de Office 365 asignada al buzón inactivo.
-ms.openlocfilehash: ec8a4cac7d2ee8e40bd791bd531556d1151c1ad1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 49d133c64763cee12cb26e27d372a16ba4ad7e94
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421639"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918206"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Cambiar la duración de retención para un buzón inactivo
 
@@ -40,9 +40,9 @@ Un buzón inactivo se usa para conservar el correo electrónico de un antiguo em
     
 - Para conectarse a PowerShell de Exchange Online o PowerShell & centro de cumplimiento, consulte uno de los temas siguientes:
     
-  - [Conectarse a Exchange Online mediante PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+  - [Conectarse a Exchange Online mediante PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
     
-  - [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+  - [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell)
     
 - Las retenciones asociadas con casos de exhibición de documentos electrónicos son retenciones infinitas, lo que significa que no hay ninguna duración de retención que se pueda cambiar. Los elementos se mantienen para siempre o hasta que se quita la retención y se elimina el buzón inactivo.
     

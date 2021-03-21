@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 'Resumen: use PowerShell para administrar las propiedades de la cuenta de usuario de Skype Empresarial Online con directivas.'
-ms.openlocfilehash: ca945bc05e76525b4b2df6fb0b982a8468d87810
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: a10929bbdce499ad26f9714127f675beeef58765
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515057"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916707"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>Administrar las directivas de Skype Empresarial Online con PowerShell
 
@@ -34,7 +34,7 @@ Use estas instrucciones para configurarse para ejecutar los comandos (omita los 
   > [!Note]
   > El conector en línea del cliente de Skype® Empresarial actualmente forma parte del módulo más reciente de Windows PowerShell de Teams. Si usa la versión pública más reciente de Teams PowerShell, no es necesario que instale el conector en línea de cliente de Skype® Empresarial.
 
-1. Instale el [módulo de PowerShell de Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
+1. Instale el [Módulo de PowerShell de Teams](/microsoftteams/teams-powershell-install).
     
 2. Abra el símbolo del sistema de Windows PowerShell y ejecute los siguientes comandos: 
 
@@ -90,11 +90,11 @@ Este comando busca la directiva asignada al usuario y, a continuación, busca la
   
 Para administrar directivas de Skype Empresarial Online con PowerShell, vea los cmdlets para:
 
-- [Directiva de cliente](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
-- [Directiva de conferencia](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
-- [Directiva móvil](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
-- [Directiva de correo de voz en línea](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
-- [Directiva de enrutamiento de voz](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
+- [Directiva de cliente](/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
+- [Directiva de conferencia](/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
+- [Directiva móvil](/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
+- [Directiva de correo de voz en línea](/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
+- [Directiva de enrutamiento de voz](/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
 
 
 > [!NOTE]
@@ -107,7 +107,7 @@ Get-CsVoicePolicy
 ```
 
 > [!NOTE]
-> Eso devuelve una lista de todas las directivas de voz disponibles para usted. Sin embargo, tenga en cuenta que no todas las directivas se pueden asignar a todos los usuarios. Esto se debe a varias restricciones relacionadas con las licencias y la ubicación geográfica. (La llamada "[ubicación de uso](https://msdn.microsoft.com/library/azure/dn194136.aspx).") Si desea conocer las directivas de acceso externo y las directivas de conferencia que se pueden asignar a un usuario determinado, use comandos similares a estos: 
+> Eso devuelve una lista de todas las directivas de voz disponibles para usted. Sin embargo, tenga en cuenta que no todas las directivas se pueden asignar a todos los usuarios. Esto se debe a varias restricciones relacionadas con las licencias y la ubicación geográfica. (La llamada "[ubicación de uso](/previous-versions/azure/dn194136(v=azure.100)).") Si desea conocer las directivas de acceso externo y las directivas de conferencia que se pueden asignar a un usuario determinado, use comandos similares a estos: 
 
 ```powershell
 Get-CsConferencingPolicy -ApplicableTo "Alex Darrow"
@@ -124,11 +124,10 @@ Con Skype Empresarial Online, los usuarios deben administrarse mediante una dire
 Get-CsClientPolicy -Identity "Global"
 ```
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 [Administrar Skype Empresarial Online con PowerShell](manage-skype-for-business-online-with-microsoft-365-powershell.md)
   
 [Administrar Microsoft 365 con PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Introducción a PowerShell para Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

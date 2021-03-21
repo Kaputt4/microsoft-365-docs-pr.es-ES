@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 54e513fc12a42d2779ee5f35628781676adc0f48
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 558d0fc9279c4b0d9e8c287fe4d99f5ac5884606
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453998"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917493"
 ---
 # <a name="topic-center-overview"></a>Información general del Centro de temas
 
@@ -32,7 +32,7 @@ Aunque todos los usuarios con licencia que puedan ver temas tendrán acceso al c
 
 ## <a name="where-is-my-topic-center"></a>Dónde está mi Centro de temas
 
-El centro de temas se crea durante la instalación de Viva Topics. Una vez completada la instalación, un administrador puede encontrar la dirección URL en la [página de administración del centro de temas.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings)
+El centro de temas se crea durante la instalación de Viva Topics. Una vez completada la instalación, un administrador puede encontrar la dirección URL en la [página de administración del centro de temas.](./topic-experiences-administration.md#to-access-topics-management-settings)
 
 
 1. En el Centro de administración de Microsoft 365, haga clic **en Configuración** y, a continuación, en Configuración de **la organización.**
@@ -94,13 +94,6 @@ Si tiene permisos **crear y editar temas,** puede:
 
 
 ## <a name="see-also"></a>Consulte también
-
-
-
-  
-
-
-
 
 
 

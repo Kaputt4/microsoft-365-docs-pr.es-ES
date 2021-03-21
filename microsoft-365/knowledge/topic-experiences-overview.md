@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Información general de Temas Viva.
-ms.openlocfilehash: 91442ba12b3d5df1d9934022751f4bc381cd40e8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
-ms.translationtype: HT
+ms.openlocfilehash: 68a88e74a674a7bbc290ae0e8f88bfbe0277d910
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453974"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917385"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Información general de Temas Microsoft Viva 
 
@@ -66,7 +66,7 @@ Cuando se identifica un tema y la inteligencia artificial determina que tiene su
 
 Los administradores de información pueden rastrear todos los sitios de SharePoint de su espacio empresarial por temas o seleccionar algunos determinados.
 
-Consulte [Detección y conservación de los temas](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+Consulte [Detección y conservación de los temas](./topic-experiences-discovery-curation.md)
 
 ## <a name="roles"></a>Funciones
 
@@ -108,7 +108,7 @@ Los controles de administración del Centro de administración de Microsoft 365
 - Controlar qué usuarios pueden crear y editar temas.
 - Controlar qué usuarios pueden ver temas.
 
-Vea [asignar permisos de usuario](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions), [administrar visibilidad de tema](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules) y [administrar detección de temas](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery) para obtener más información sobre los controles de administración.
+Vea [asignar permisos de usuario](./plan-topic-experiences.md#user-permissions), [administrar visibilidad de tema](./topic-experiences-knowledge-rules.md) y [administrar detección de temas](./topic-experiences-discovery.md) para obtener más información sobre los controles de administración.
 
 ## <a name="topic-curation--feedback"></a>Comentarios y conservación de temas
 
@@ -120,8 +120,7 @@ Es posible que se pregunte a los usuarios a los que permite acceder a ver temas 
 
 Además, los usuarios con los permisos adecuados pueden etiquetar elementos, como la conversación de Yammer, que sean relevantes para un tema y agregarlos a un tema específico. 
 
-Consulte [Detección y conservación de los temas](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+Consulte [Detección y conservación de los temas](./topic-experiences-discovery-curation.md)
 
 
 ## <a name="see-also"></a>Consulte también
-

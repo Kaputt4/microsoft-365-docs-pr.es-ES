@@ -16,12 +16,12 @@ ms.collection:
 description: Los administradores pueden aprender a usar reglas de flujo de correo (también conocidas como reglas de transporte) para recibir copias de los mensajes que los usuarios informan a Microsoft.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 40e87fec3bfd8ed4402713ca7ec45499bb50c68e
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 34857c368fc910eeb43f6a78c490b9ad7568db1c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287610"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918635"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft
 
@@ -32,55 +32,55 @@ ms.locfileid: "50287610"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-En las organizaciones de Microsoft 365 con buzones en Exchange Online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, hay varias formas de que los usuarios informen de mensajes a Microsoft para su análisis, tal como se describe en Notificar mensajes y archivos a [Microsoft.](report-junk-email-messages-to-microsoft.md)
+En las organizaciones de Microsoft 365 con buzones en Exchange Online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, hay varias maneras de que los usuarios informen mensajes a Microsoft para su análisis, tal como se describe en Notificar mensajes y archivos a [Microsoft](report-junk-email-messages-to-microsoft.md).
 
 Puede crear una regla de flujo de correo (también conocida como regla de transporte) que busca los mensajes que los usuarios notifican a Microsoft y puede configurar destinatarios CCO para que reciban copias de estos mensajes notificados.
 
-Puede crear la regla de flujo de correo en el Centro de administración de Exchange (EAC) y PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; EOP PowerShell independiente para organizaciones sin buzones de Exchange Online).
+Puede crear la regla de flujo de correo en el Centro de administración de Exchange (EAC) y PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell EOP independiente para organizaciones sin buzones de Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Deberá tener asignados permisos en Exchange Online o Exchange Online Protection antes de poder realizar los procedimientos descritos en este artículo. Específicamente, necesita  el rol Reglas de transporte, que se asigna a los  grupos de roles Administración de la **organización,** Administración de cumplimiento **(administradores** globales) y Administración de registros de forma predeterminada.
+- Debe tener asignados permisos en Exchange Online o Exchange Online Protection antes de poder realizar los procedimientos descritos en este artículo. En concreto, necesita el rol **Reglas** de transporte, que se asigna a los grupos de roles **Administración** de la **organización,** Administración de cumplimiento (administradores globales) y Administración **de** registros de forma predeterminada.
 
   Para obtener más información, consulte los siguientes temas:
 
-  - [Permisos de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+  - [Permisos de Exchange Online](/exchange/permissions-exo/permissions-exo)
   - [Permisos en EOP independiente](feature-permissions-in-eop.md)
   - [Usar el EAC modificar la lista de miembros en grupos de roles](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- Para abrir el EAC en Exchange Online, consulte [Centro de administración de Exchange en Exchange Online.](https://docs.microsoft.com/Exchange/exchange-admin-center) Para abrir el EAC en EOP independiente, vea el Centro de administración [de Exchange en EOP independiente.](exchange-admin-center-in-exchange-online-protection-eop.md)
+- Para abrir el EAC en Exchange Online, vea [Centro de administración de Exchange en Exchange Online](/Exchange/exchange-admin-center). Para abrir el EAC en EOP independiente, vea Centro de [administración de Exchange en EOP independiente.](exchange-admin-center-in-exchange-online-protection-eop.md)
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Para obtener más información acerca de las reglas de flujo de correo en Exchange Online y EOP independiente, consulte los siguientes temas:
-  - [Reglas de flujo de correo (reglas de transporte) en Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
-  - [Excepciones y condiciones de regla de flujo de correo (predicados) en Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
-  - [Acciones de regla de flujo de correo en Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+- Para obtener más información acerca de las reglas de flujo de correo en Exchange Online y EOP independiente, consulte los temas siguientes:
+  - [Reglas de flujo de correo (reglas de transporte) en Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+  - [Condiciones y excepciones de reglas de flujo de correo (predicados) en Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
+  - [Acciones de regla de flujo de correo en Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-## <a name="use-the-eac-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>Usar el EAC para crear una regla de flujo de correo para recibir copias de los mensajes notificados
+## <a name="use-the-eac-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>Usar el EAC para crear una regla de flujo de correo para recibir copias de mensajes notificados
 
 1. En el EAC, vaya a **Flujo de correo** \> **Reglas**.
 
-2. Haga **clic en** el icono Agregar ![ ](../../media/ITPro-EAC-AddIcon.png) y, a **continuación, seleccione Crear una nueva regla.**
+2. Haga **clic en** Agregar icono Agregar ![ ](../../media/ITPro-EAC-AddIcon.png) **y, a continuación, seleccione Crear una nueva regla.**
 
 3. En la ventana **Nueva regla** que se abre, configure las siguientes opciones:
 
-   - **Nombre:** escriba un nombre único y descriptivo para la regla. Por ejemplo, mensajes CCO notificados a Microsoft.
+   - **Nombre:** escriba un nombre descriptivo único para la regla. Por ejemplo, Mensajes CCO notificados a Microsoft.
 
    - Haga clic en **Más opciones**.
 
-   - Aplique esta regla  **si:** Seleccione La dirección del destinatario incluye cualquiera de estas palabras: en el cuadro de diálogo Especificar palabras o frases que aparece, escriba uno de los siguientes valores, haga clic en Agregar icono y repita hasta que haya escrito todos los \>    ![ ](../../media/ITPro-EAC-AddIcon.png) valores.
+   - **Aplique** esta regla si : **Seleccione** La dirección del destinatario incluye cualquiera de estas palabras: en el cuadro de diálogo Especificar palabras o frases que aparece, escriba uno de los siguientes valores, haga clic en Agregar icono y repita hasta que haya escrito todos los \>    ![ ](../../media/ITPro-EAC-AddIcon.png) valores.
 
      - `junk@office365.microsoft.com`
      - `abuse@messaging.microsoft.com`
      - `phish@office365.microsoft.com`
      - `not_junk@office365.microsoft.com`
 
-     Para editar una entrada, selecciónelo y haga clic **en el icono** ![ ](../../media/ITPro-EAC-EditIcon.png) Editar. Para quitar una entrada, selecciónelo y haga clic **en Quitar** ![ ](../../media/ITPro-EAC-DeleteIcon.png) icono.
+     Para editar una entrada, selecciónelo y haga clic **en Editar** icono ![ Editar ](../../media/ITPro-EAC-EditIcon.png) . Para quitar una entrada, selecciónelo y haga clic **en Quitar** icono ![ Quitar ](../../media/ITPro-EAC-DeleteIcon.png) .
 
      Cuando haya terminado, haga clic en **Aceptar**.
 
-   - **Haga lo siguiente:** Seleccione **Agregar destinatarios** \> **al cuadro CCO.** En el cuadro de diálogo que aparece, busque y seleccione los destinatarios que desea agregar. Cuando haya terminado, haga clic en **Aceptar**.
+   - **Haga lo siguiente:** Seleccione **Agregar destinatarios** \> **al cuadro CCO**. En el cuadro de diálogo que aparece, busque y seleccione los destinatarios que desea agregar. Cuando haya terminado, haga clic en **Aceptar**.
 
 4. Puede realizar selecciones adicionales para auditar la regla, probarla, activarla durante un período de tiempo específico y otras opciones de configuración. Se recomienda probar la regla antes de aplicarla.
 
@@ -88,19 +88,19 @@ Puede crear la regla de flujo de correo en el Centro de administración de Excha
 
 ## <a name="use-powershell-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>Usar PowerShell para crear una regla de flujo de correo para recibir copias de mensajes notificados
 
-En este ejemplo se crea una regla de flujo de correo denominada CCO Messages Reported to Microsoft que busca los mensajes de correo electrónico que se notifican a Microsoft mediante los métodos descritos en este artículo y agrega los usuarios laura@contoso.com y julia@contoso.com como destinatarios CCO.
+En este ejemplo se crea una nueva regla de flujo de correo denominada Mensajes CCO notificados a Microsoft que busca mensajes de correo electrónico notificados a Microsoft mediante los métodos descritos en este artículo y agrega los usuarios laura@contoso.com y julia@contoso.com como destinatarios CCO.
 
 ```powershell
 New-TransportRule -Name "Bcc Messages Reported to Microsoft" -RecipientAddressContainsWords "junk@office365.microsoft.com","abuse@messaging.microsoft.com","phish@office365.microsoft.com","false_positive@messaging.microsoft.com" -BlindCopyTo "laura@contoso.com","julia@contoso.com".
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, vea [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
+Para obtener información detallada acerca de la sintaxis y los parámetros, vea [New-TransportRule](/powershell/module/exchange/new-transportrule).
 
 ## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
-Para comprobar que ha configurado una regla de flujo de correo para recibir copias de los mensajes notificados, siga uno de estos pasos:
+Para comprobar que ha configurado una regla de flujo de correo para recibir copias de los mensajes notificados, siga estos pasos:
 
-- En el EAC, vaya **a** Reglas de flujo de correo para seleccionar la regla, haga clic en el icono Editar \>  \> y \> compruebe la  ![ ](../../media/ITPro-EAC-EditIcon.png) configuración.
+- En el EAC, vaya a **Flujo** de correo Reglas seleccione la regla haga clic en \>  \> \> **Editar** icono Editar y compruebe ![ la ](../../media/ITPro-EAC-EditIcon.png) configuración.
 
 - En PowerShell, ejecute el siguiente comando para comprobar la configuración:
 
@@ -108,4 +108,4 @@ Para comprobar que ha configurado una regla de flujo de correo para recibir copi
   Get-TransportRule -Identity "Bcc Messages Reported to Microsoft" | Format-List
   ```
 
-- Envíe mensajes de prueba a una de las direcciones de correo electrónico de informes y compruebe los resultados.
+- Enviar mensajes de prueba a una de las direcciones de correo electrónico de informes y comprobar los resultados.

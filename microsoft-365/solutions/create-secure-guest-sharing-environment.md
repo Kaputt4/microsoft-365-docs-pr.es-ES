@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Obtenga más información sobre las opciones disponibles para crear un entorno seguro de uso compartido para invitados en Microsoft 365, al proporcionar accesos de invitado para mejorar la colaboración.
-ms.openlocfilehash: 28b2efba9f0c4ba17811a9871b05ab9f5a7a4839
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 0eb999d48bc0976d7c2bb32ff1bdba8d63409d81
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838692"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918471"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Crear un entorno seguro de uso compartido para invitados
 
@@ -39,7 +39,7 @@ En este artículo se incluyen:
 - Asignación automática de una etiqueta de confidencialidad a los documentos que contengan un tipo de información confidencial.
 - Retirar automáticamente el acceso de invitado a los archivos con una etiqueta de confidencialidad.
 
-Algunas de las opciones analizadas en este artículo requieren que los invitados tengan una cuenta de Azure Active Directory. Para asegurarse de que los invitados estén en el directorio cuando comparta archivos y carpetas con ellos, use la [Integración de SharePoint y OneDrive con la vista previa de Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
+Algunas de las opciones analizadas en este artículo requieren que los invitados tengan una cuenta de Azure Active Directory. Para asegurarse de que los invitados estén en el directorio cuando comparta archivos y carpetas con ellos, use la [Integración de SharePoint y OneDrive con la vista previa de Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 Tenga en cuenta que este artículo no describe cómo habilitar la configuración de uso compartido para invitados. Consulte [Colaborar con personas de fuera de su organización](collaborate-with-people-outside-your-organization.md) para obtener más información sobre cómo habilitar el uso compartido para invitados en diferentes situaciones.
 
@@ -66,7 +66,7 @@ Ahora, el invitado deberá inscribirse en la autenticación multifactor para acc
 
 ### <a name="more-information"></a>Más información
 
-[Planificar una implementación de autenticación multifactor de Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+[Planificar una implementación de autenticación multifactor de Azure AD](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>Configurar condiciones de uso para invitados
 
@@ -108,11 +108,11 @@ Para crear una nueva directiva de acceso condicional, haga lo siguiente:
 A partir de ahora, cuando un invitado acceda por primera vez al contenido, a un grupo o a un sitio de su organización, se le pedirá que acepte los términos de uso.
 
 > [!NOTE]
-> El uso del acceso condicional requiere una licencia de Azure AD Premium P1. Para más información, consulte [Qué es el acceso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+> El uso del acceso condicional requiere una licencia de Azure AD Premium P1. Para más información, consulte [Qué es el acceso condicional](/azure/active-directory/conditional-access/overview).
 
 ### <a name="more-information"></a>Más información
 
-[Términos de uso de Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)
+[Términos de uso de Azure Active Directory.](/azure/active-directory/conditional-access/terms-of-use)
 
 ## <a name="set-up-guest-access-reviews"></a>Configurar revisiones de acceso de invitados
 
@@ -145,15 +145,15 @@ Hay que tener en cuenta que los invitados pueden recibir acceso tanto a equipos 
 
 ### <a name="more-information"></a>Más información
 
-[Administre el acceso de los invitados con las revisiones de acceso de Azure AD](https://docs.microsoft.com/azure/active-directory/governance/manage-guest-access-with-access-reviews)
+[Administre el acceso de los invitados con las revisiones de acceso de Azure AD](/azure/active-directory/governance/manage-guest-access-with-access-reviews)
 
-[Cree una revisión de acceso de grupos o aplicaciones con las revisiones de acceso de Azure AD](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
+[Cree una revisión de acceso de grupos o aplicaciones con las revisiones de acceso de Azure AD](/azure/active-directory/governance/create-access-review)
 
 ## <a name="set-up-web-only-access-for-guests"></a>Establezca que los invitados solo puedan acceder a través de la web
 
 Puede limitar sus zonas vulnerables a un ataque y facilitar las tareas de administración si obliga a los invitados a acceder a sus equipos, sitios y archivos a través de un navegador web exclusivamente.
 
-Para Grupos de Microsoft 365 y Teams, esto se realiza mediante una directiva de acceso condicional de Azure AD. En el caso de SharePoint, se configura en el Centro de administración de SharePoint. (También puede [usar etiquetas de confidencialidad para restringir el acceso de invitados a solo web](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites))
+Para Grupos de Microsoft 365 y Teams, esto se realiza mediante una directiva de acceso condicional de Azure AD. En el caso de SharePoint, se configura en el Centro de administración de SharePoint. (También puede [usar etiquetas de confidencialidad para restringir el acceso de invitados a solo web](../compliance/sensitivity-labels-teams-groups-sites.md))
 
 Cómo restringir el acceso de los invitados a solo web para Grupos y Equipos:
 
@@ -222,7 +222,7 @@ Cómo crear un tipo de información confidencial
 
 ### <a name="more-information"></a>Más información
 
-[Tipos de información confidencial personalizados](https://docs.microsoft.com/Office365/SecurityCompliance/custom-sensitive-info-types)
+[Tipos de información confidencial personalizados](/Office365/SecurityCompliance/custom-sensitive-info-types)
 
 ## <a name="create-an-auto-labeling-policy-to-assign-a-sensitivity-label-based-on-a-sensitive-information-type"></a>Crear una directiva de etiquetado automático para asignar una etiqueta de confidencialidad basada en un tipo de información confidencial
 
@@ -252,11 +252,11 @@ Con la directiva en vigor, cuando un usuario escriba "Proyecto Saturno" en un do
 
 ### <a name="more-information"></a>Más información
 
-[Aplicar una etiqueta de confidencialidad automáticamente al contenido](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
+[Aplicar una etiqueta de confidencialidad automáticamente al contenido](../compliance/apply-sensitivity-label-automatically.md)
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Crear una directiva DLP para retirar el acceso de un invitado a archivos altamente confidenciales
 
-Puede usar la [prevención de pérdida de datos (DLP)](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) para evitar que los invitados realicen un uso compartido no deseado de contenido confidencial. La prevención de pérdida de datos puede actuar en función de la etiqueta de confidencialidad de un archivo y eliminar el acceso de invitado.
+Puede usar la [prevención de pérdida de datos (DLP)](../compliance/data-loss-prevention-policies.md) para evitar que los invitados realicen un uso compartido no deseado de contenido confidencial. La prevención de pérdida de datos puede actuar en función de la etiqueta de confidencialidad de un archivo y eliminar el acceso de invitado.
 
 Crear una regla DLP
 
@@ -287,9 +287,9 @@ Es importante tener en cuenta que esta directiva no retira el acceso si el invit
 
 Hay algunas opciones adicionales de Microsoft 365 y Azure Active Directory que pueden ayudar a proteger el entorno de uso compartido de invitados.
 
-- Puede crear una lista de dominios permitidos o prohibidos para limitar los dominios con los que los usuarios podrán compartir. Consulte [restringir el uso compartido de contenido de SharePoint y OneDrive por dominio](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) y [permitir o bloquear las invitaciones a los usuarios B2B de organizaciones específicas](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list) para obtener más información.
-- Puede limitar el resto de los espacios empresariales de Azure Active Directory a los que se pueden conectar los usuarios. Consulte [Usar restricciones de espacio empresarial para administrar el acceso a aplicaciones en la nube de SaaS](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions) para obtener más información.
-- Puede crear un entorno administrado donde los asociados pueden ayudar a administrar cuentas de invitado. Para obtener más información, consulte [crear una extranet de B2B con invitados administrados](https://docs.microsoft.com/Office365/Enterprise/b2b-extranet).
+- Puede crear una lista de dominios permitidos o prohibidos para limitar los dominios con los que los usuarios podrán compartir. Consulte [restringir el uso compartido de contenido de SharePoint y OneDrive por dominio](/sharepoint/restricted-domains-sharing) y [permitir o bloquear las invitaciones a los usuarios B2B de organizaciones específicas](/azure/active-directory/b2b/allow-deny-list) para obtener más información.
+- Puede limitar el resto de los espacios empresariales de Azure Active Directory a los que se pueden conectar los usuarios. Consulte [Usar restricciones de espacio empresarial para administrar el acceso a aplicaciones en la nube de SaaS](/azure/active-directory/manage-apps/tenant-restrictions) para obtener más información.
+- Puede crear un entorno administrado donde los asociados pueden ayudar a administrar cuentas de invitado. Para obtener más información, consulte [crear una extranet de B2B con invitados administrados](/Office365/Enterprise/b2b-extranet).
 
 ## <a name="see-also"></a>Consulta también
 

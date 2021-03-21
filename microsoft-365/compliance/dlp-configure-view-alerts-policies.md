@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo definir y administrar alertas para directivas DLP.
-ms.openlocfilehash: 7bc9d9b59c0424792f995be42591548b758c99ec
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 0594cee5208049aef16dee6fa03954faae2a1cdd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766425"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917866"
 ---
 # <a name="configure-and-view-alerts-for-dlp-polices-preview"></a>Configurar y ver alertas para las directivas DLP (versión preliminar)
 
@@ -50,13 +50,13 @@ Antes de comenzar, asegúrese de que tiene los requisitos previos necesarios:
 
 -   Licencias para el panel de administración de alertas DLP
 -   Licencias para opciones de configuración de alertas
--   Roles
+-   Funciones
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>Licencias para el panel de administración de alertas DLP
 
-Todos los inquilinos elegibles para DLP de Office 365 pueden tener acceso al nuevo panel de administración de alertas DLP. Para empezar, debe ser elegible para Dlp de Office 365 para Exchange Online, SharePoint Online y OneDrive para la Empresa. Para obtener más información acerca de los requisitos de licencias para DLP de Office 365, vea ¿Qué licencias proporcionan los derechos para que un usuario se beneficie [del servicio?](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
+Todos los inquilinos elegibles para DLP de Office 365 pueden tener acceso al nuevo panel de administración de alertas DLP. Para empezar, debe ser elegible para Dlp de Office 365 para Exchange Online, SharePoint Online y OneDrive para la Empresa. Para obtener más información acerca de los requisitos de licencias para DLP de Office 365, vea ¿Qué licencias proporcionan los derechos para que un usuario se beneficie [del servicio?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
 
-Los clientes que [](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide) participan en la vista previa pública dlp de extremo o que son aptos para DLP de Teams verán sus alertas de directiva [DLP](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide) de extremo y las alertas de directiva DLP de Teams en el panel de administración de alertas dlp.
+Los clientes que [](./endpoint-dlp-learn-about.md?view=o365-worldwide) participan en la vista previa pública dlp de extremo o que son aptos para DLP de Teams verán sus alertas de directiva [DLP](./dlp-microsoft-teams.md?view=o365-worldwide) de extremo y las alertas de directiva DLP de Teams en el panel de administración de alertas dlp.
 
 ### <a name="licensing-for-alert-configuration-options"></a>Licencias para opciones de configuración de alertas
 
@@ -68,7 +68,7 @@ Los clientes que [](https://docs.microsoft.com/microsoft-365/compliance/endpoint
         -   Cumplimiento de Microsoft 365 E5
         -   Licencia de complemento de exhibición de documentos electrónicos y auditoría de Microsoft 365
 
-### <a name="roles"></a>Roles
+### <a name="roles"></a>Funciones
 
 Si desea ver el panel de administración de alertas DLP o editar las opciones de configuración de alertas en una directiva DLP, debe ser miembro de uno de estos grupos de roles:
 
@@ -111,7 +111,7 @@ Para trabajar con el panel de administración de alertas DLP:
 1.  Seleccione la **pestaña Eventos** para ver todos los eventos asociados con la alerta. Puede elegir un evento en particular para ver sus detalles.
     En la tabla siguiente se muestran algunos de los detalles del evento.
     
-    | Categoría          | Nombre de propiedad                 | Descripción                                                                | Tipos de eventos aplicables                   |
+    | Categoría          | Nombre de propiedad                 | Description                                                                | Tipos de eventos aplicables                   |
     |-------------------|-------------------------------|----------------------------------------------------------------------------|------------------------------------------|
     |*Detalles del evento*||
     |      | Id                            | Identificador único asociado al evento                                        | Todos los eventos                               |

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 17ac5506b6445854b1d9fe8ba6b5f5356f6a3827
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 96d265a7b909b439f960c951b10c84f4bc7a63b0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819831"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916834"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos de Insider
 
@@ -278,7 +278,7 @@ Siga estos pasos para crear una nueva directiva:
 
 11. Si seleccionó Quiero especificar sitios de **SharePoint,** etiquetas de confidencialidad o tipos de información confidencial como contenido prioritario en el paso anterior, verá las páginas de detalles de sitios de *SharePoint,* tipos de información confidencial y etiquetas de confidencialidad.  Use estas páginas de detalles para definir sharepoint, tipos de información confidencial y etiquetas de confidencialidad para priorizar en la directiva.
 
-    - **Sitios de SharePoint:** seleccione **Agregar sitio de SharePoint** y seleccione las organizaciones de SharePoint a las que tiene acceso y desea priorizar. Por ejemplo, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **Sitios de SharePoint:** seleccione **Agregar sitio de SharePoint** y seleccione los sitios de SharePoint a los que tiene acceso y desea priorizar. Por ejemplo, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Tipo de información confidencial:** selecciona **Agregar tipo de información confidencial** y selecciona los tipos de confidencialidad que quieres priorizar. Por ejemplo, *"Número de cuenta* bancaria de ESTADOS UNIDOS" y *"Número de tarjeta de crédito".*
     - **Etiquetas de confidencialidad:** seleccione Agregar etiqueta **de confidencialidad** y seleccione las etiquetas que desea priorizar. Por ejemplo, *"Confidencial"* y *"Secreto".*
 
@@ -323,7 +323,7 @@ Siga estos pasos para administrar una directiva existente:
 
 11. Si seleccionó Quiero especificar sitios de **SharePoint,** etiquetas de confidencialidad o tipos de información confidencial como contenido prioritario en el paso anterior, verá las páginas de detalles de sitios de *SharePoint,* tipos de información confidencial y etiquetas de confidencialidad.  Use estas páginas de detalles para definir sharepoint, tipos de información confidencial y etiquetas de confidencialidad para priorizar en la directiva.
 
-    - **Sitios de SharePoint:** seleccione **Agregar sitio de SharePoint** y seleccione las organizaciones de SharePoint a las que tiene acceso y desea priorizar. Por ejemplo, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **Sitios de SharePoint:** seleccione **Agregar sitio de SharePoint** y seleccione los sitios de SharePoint a los que tiene acceso y desea priorizar. Por ejemplo, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Tipo de información confidencial:** selecciona **Agregar tipo de información confidencial** y selecciona los tipos de confidencialidad que quieres priorizar. Por ejemplo, *"Número de cuenta* bancaria de ESTADOS UNIDOS" y *"Número de tarjeta de crédito".*
     - **Etiquetas de confidencialidad:** seleccione Agregar etiqueta **de confidencialidad** y seleccione las etiquetas que desea priorizar. Por ejemplo, *"Confidencial"* y *"Secreto".*
 
@@ -354,14 +354,20 @@ Siga estos pasos para copiar una directiva existente:
 3. En la página de detalles de la directiva, seleccione Copiar.
 4. En el asistente para directivas, asigne un nombre a la nueva directiva y actualice la configuración de la directiva según sea necesario.
 
-## <a name="add-users-to-a-policy"></a>Agregar usuarios a una directiva
+## <a name="immediately-start-scoring-user-activity"></a>Iniciar inmediatamente la puntuación de la actividad del usuario
 
-Puede haber escenarios en los que necesite agregar usuarios temporalmente a directivas de riesgo de insider después de que se haya notificado un evento inusual fuera del flujo de trabajo de administración de riesgos de insider. Use Iniciar la actividad de puntuación para los usuarios en la pestaña Directivas para agregar manualmente un usuario (o usuarios) a una o más directivas de riesgo internas durante un período de tiempo específico, para empezar inmediatamente a asignar puntuaciones de riesgo a su actividad y para omitir el requisito de que un usuario tenga un indicador de activación (como una coincidencia de directiva DLP). También puede agregar un motivo para agregar el usuario a la directiva. Los usuarios agregados manualmente a las directivas se muestran en el panel Usuarios.
+Puede haber escenarios en los que necesite empezar inmediatamente a asignar puntuaciones de riesgo a los usuarios con directivas de riesgo internas fuera del flujo de trabajo de eventos desencadenante de la administración de riesgos insider. Use  Iniciar la actividad  de puntuación para los usuarios en la pestaña Directivas para agregar manualmente un usuario (o usuarios) a una o más directivas de riesgo internas durante un período de tiempo específico, para empezar inmediatamente a asignar puntuaciones de riesgo a su actividad y para omitir el requisito de que un usuario tenga un indicador de activación (como una coincidencia de directiva DLP). También puedes agregar un motivo para agregar el usuario a la directiva, que aparecerá en la escala de tiempo de actividad de los usuarios. Los usuarios agregados manualmente a las  directivas se muestran en el panel Usuarios y las alertas se crean si la actividad cumple los umbrales de alerta de directiva.
+
+Algunos escenarios en los que es posible que desee iniciar inmediatamente la puntuación de actividades de usuario:
+
+- Cuando los usuarios se identifican con problemas de riesgo y desea empezar inmediatamente a asignar puntuaciones de riesgo a su actividad para una o varias de sus directivas
+- Cuando hay un incidente que puede requerir que comience inmediatamente a asignar puntuaciones de riesgo a la actividad de los usuarios implicados para una o varias de sus directivas
+- Cuando aún no haya configurado el conector de recursos humanos, pero desea empezar a asignar puntuaciones de riesgo a las actividades del usuario para eventos de RECURSOS mediante la carga de un archivo .csv para los usuarios
 
 >[!NOTE]
->Los nuevos usuarios agregados manualmente pueden tardar varias horas en aparecer en el panel Usuarios. Las actividades de los 90 días anteriores para estos usuarios pueden tardar hasta 24 horas en mostrarse. Para ver las actividades de los usuarios agregados manualmente, vaya a la pestaña Usuarios y seleccione el usuario en el panel Usuarios y abra la pestaña Actividad de usuario en el panel de detalles.
+>Los nuevos usuarios agregados manualmente pueden tardar varias horas en aparecer en el panel **Usuarios.** Las actividades de los 90 días anteriores para estos usuarios pueden tardar hasta 24 horas en mostrarse. Para ver las actividades de los usuarios  agregados manualmente, vaya  a la pestaña Usuarios y seleccione el usuario en el panel Usuarios y abra la pestaña **Actividad** de usuario en el panel de detalles.
 
-Para agregar manualmente un usuario a una o más directivas de administración de riesgos internas, siga estos pasos:
+Para iniciar manualmente la actividad de puntuación de los usuarios en una o más directivas de administración de riesgos internas, siga estos pasos:
 
 1. En el [Centro de cumplimiento de Microsoft 365,](https://compliance.microsoft.com)vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Directivas.
 2. En el panel de directivas, seleccione la directiva o directivas a las que desea agregar usuarios.

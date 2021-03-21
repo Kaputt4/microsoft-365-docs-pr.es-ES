@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información acerca de cómo implementar equipos con un nivel de protección de base de referencia.
-ms.openlocfilehash: 11554dbd7e33a77c9f6397ae9c5e91669f537081
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 4f38bf286b8ebd3edf6f7705299008566d2b7c8f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921875"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916339"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configure equipos con la protección de base de referencia
 
@@ -37,9 +37,9 @@ También recomendamos activar las características básicas de Microsoft Defende
 
 |Opción|Información|
 |:------|:-----------|
-|Archivos adjuntos seguros para SPO, OneDrive y Teams|[Archivos adjuntos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Microsoft Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams).|
-|Documentos seguros|[Documentos seguros en Microsoft Defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-|Vínculos seguros en Teams|[Vínculos seguros de Office 365 en Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Vínculos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
+|Archivos adjuntos seguros para SPO, OneDrive y Teams|[Archivos adjuntos seguros](../security/office-365-security/atp-safe-attachments.md)<br>[Microsoft Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams](../security/office-365-security/atp-for-spo-odb-and-teams.md).|
+|Documentos seguros|[Documentos seguros en Microsoft Defender para Office 365](../security/office-365-security/safe-docs.md)|
+|Vínculos seguros en Teams|[Vínculos seguros de Office 365 en Teams](../security/office-365-security/atp-safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[Vínculos seguros](../security/office-365-security/atp-safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Uso compartido de invitados en Teams
 
@@ -59,7 +59,7 @@ Para establecer la configuración de acceso de invitados de Teams
 > [!NOTE]
 > La configuración de invitado de Teams puede tardar hasta veinticuatro horas en activarse después de activarla.
 
-El uso compartido de invitados está activado de forma predeterminada para los grupos de Office 365 y SharePoint, pero si ha cambiado anteriormente alguna de las configuraciones de uso compartido de invitado en su organización, le recomendamos que revise [Colaborar con invitados en un equipo](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team) para asegurarse de que el uso compartido de invitados estará disponible en Teams.
+El uso compartido de invitados está activado de forma predeterminada para los grupos de Office 365 y SharePoint, pero si ha cambiado anteriormente alguna de las configuraciones de uso compartido de invitado en su organización, le recomendamos que revise [Colaborar con invitados en un equipo](./collaborate-as-team.md) para asegurarse de que el uso compartido de invitados estará disponible en Teams.
 
 ## <a name="site-and-file-sharing"></a>Uso compartido de sitios y archivos
 
@@ -71,7 +71,7 @@ Para cambiar el vínculo para compartir predeterminado
 3. En **Vínculos de archivos y carpetas**, seleccione **Solo personas de la organización**.
 4. Haga clic en **Guardar**.
 
-Para disfrutar de la mejor experiencia de uso compartido de invitados, también le recomendamos que habilite la [Integración de SharePoint y OneDrive con B2B de Azure AD](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
+Para disfrutar de la mejor experiencia de uso compartido de invitados, también le recomendamos que habilite la [Integración de SharePoint y OneDrive con B2B de Azure AD](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 ## <a name="create-a-team"></a>Crear un equipo
 
@@ -94,12 +94,12 @@ Para actualizar la configuración de uso compartido del sitio
 
 Microsoft 365 ofrece otros métodos para proteger el contenido. Considere si las siguientes opciones ayudarían a mejorar la seguridad de su organización.
 
-- Hacer que los invitados acepten las [condiciones de uso](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
-- Configurar una [directiva de tiempo de espera de sesión](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) para invitados
-- Crear [tipos de información confidencial](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) y usar [protección de pérdida de datos](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) para establecer directivas en relación con el acceso a información confidencial.
+- Hacer que los invitados acepten las [condiciones de uso](/azure/active-directory/conditional-access/terms-of-use).
+- Configurar una [directiva de tiempo de espera de sesión](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) para invitados
+- Crear [tipos de información confidencial](../compliance/sensitive-information-type-learn-about.md) y usar [protección de pérdida de datos](../compliance/data-loss-prevention-policies.md) para establecer directivas en relación con el acceso a información confidencial.
 
 ## <a name="see-also"></a>Consulte también
 
-[Administración de directivas de reunión en Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams)
+[Administración de directivas de reunión en Teams](/microsoftteams/meeting-policies-in-teams)
 
-[Introducción a la administración de riesgos internos](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-configure)
+[Introducción a la administración de riesgos internos](../compliance/insider-risk-management-configure.md)
