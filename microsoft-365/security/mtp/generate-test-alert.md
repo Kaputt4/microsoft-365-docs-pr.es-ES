@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 10d4a0af9c3ae766e95b34187d2ba3c9958db28f
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 258a210fe875d0399d1a97ba77cdf340dcc1670e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929485"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928825"
 ---
 # <a name="generate-a-test-alert-in-your-microsoft-365-defender-evaluation-lab"></a>Generar una alerta de prueba en el laboratorio de evaluación de Microsoft 365 Defender  
 
@@ -38,10 +38,9 @@ ms.locfileid: "49929485"
 Ahora que ha completado la configuración y configuración del laboratorio de evaluación de Microsoft 365 Defender, puede ejecutar una simulación de ataque de amenazas para experimentar las capacidades de detección, correlación de alertas y corrección de recuperación automática de la solución de seguridad integrada.  
 
 1. Inicie sesión en https://security.microsoft.com
-2. En la página principal, busque un icono titulado **Simulación.**  Revise la guía del tutorial para ver los pasos necesarios para crear un incidente de prueba en Microsoft 365 Defender.
-<br>![Imagen de tarjeta de simulación en el panel de seguridad de Microsoft 365](../../media/mtp-eval-73.png) <br>
+2. En la página principal, busque un icono titulado **Simulation**.  Revise la guía del tutorial para ver los pasos para crear un incidente de prueba en Microsoft 365 Defender.
+<br>![Imagen de la tarjeta de simulación en el panel seguridad de Microsoft 365](../../media/mtp-eval-73.png) <br>
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Examine el Centro de arquitectura y soluciones de [Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) para comprender cómo diseñar la solución y la arquitectura que sea adecuada para su organización.
-
+Explore el Centro de arquitectura y soluciones de [Microsoft 365](../../solutions/index.yml) para comprender cómo diseñar la solución y la arquitectura adecuada para su organización.

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Migre los dispositivos Windows, las aplicaciones cliente de Office y los servidores de Office para sus inquilinos de Microsoft 365.
-ms.openlocfilehash: 85f1c0d927b881c4d1526ce538ae54f5954a0664
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 336dee2e62c6d0917c437252ba1d741c304998fa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406365"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929149"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 4. Migración para los inquilinos de Microsoft 365 para empresas
 
@@ -40,17 +40,17 @@ Para maximizar el valor empresarial del conjunto de productos integrado de Micro
 
 Cada licencia de Microsoft 365 para empresas incluye una licencia para Windows 10 Enterprise. Para migrar los dispositivos que ejecutan Windows 7 o Windows 8.1, puedes realizar una actualización local. El soporte técnico finalizó para Windows 7 *el 14 de enero de 2020*. 
 
-Para obtener métodos adicionales para instalar Windows 10 Enterprise más allá de una actualización local, consulta Escenarios de implementación de [Windows 10](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). También puede [planear la implementación de Windows 10](https://aka.ms/planforwin10deployment) por su cuenta.
+Para obtener métodos adicionales para instalar Windows 10 Enterprise más allá de una actualización local, consulta Escenarios de implementación de [Windows 10](/windows/deployment/windows-10-deployment-scenarios). También puede [planear la implementación de Windows 10](/windows/deployment/planning/) por su cuenta.
 
 ## <a name="migrating-to-microsoft-365-apps-for-enterprise"></a>Migración a Aplicaciones de Microsoft 365 para empresas
 
-Microsoft 365 para empresas incluye Aplicaciones de Microsoft 365 para empresas, una versión de los productos cliente de Office (Word, PowerPoint, Excel y Outlook) que se instala y actualiza desde la nube de Microsoft. Para obtener más información, vea [About Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
+Microsoft 365 para empresas incluye Aplicaciones de Microsoft 365 para empresas, una versión de los productos cliente de Office (Word, PowerPoint, Excel y Outlook) que se instala y actualiza desde la nube de Microsoft. Para obtener más información, vea [About Microsoft 365 Apps for enterprise](/deployoffice/about-microsoft-365-apps).
 
 En lugar de mantener los equipos actuales para Office 2019 o versiones anteriores, siga estos pasos:
 
 1. Obtener y asignar una licencia de Microsoft 365 para los usuarios.
 2. Desinstale Office 2013 u Office 2016 en sus equipos.
-3. Instale Aplicaciones de Microsoft 365 para empresas, ya sea individualmente o durante un lanzamiento de TI. Para obtener más información, vea [Deployment guide for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
+3. Instale Aplicaciones de Microsoft 365 para empresas, ya sea individualmente o durante un lanzamiento de TI. Para obtener más información, vea [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
 
 Aplicaciones de Microsoft 365 para empresas instala actualizaciones de seguridad y actualizaciones de nuevas características automáticamente y puede aprovechar los servicios basados en la nube en Microsoft 365 para mejorar la seguridad y la productividad.
 
@@ -60,9 +60,9 @@ Microsoft 365 para empresas incluye versiones basadas en la nube de servicios de
 
 Use los siguientes recursos para obtener información sobre la migración de usuarios y datos para cargas de trabajo específicas de Microsoft 365:
 
-- [Mover buzones de correo de Exchange Server local a Exchange Online](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes)
-- [Migrar datos de SharePoint desde SharePoint Server a SharePoint Online](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
-- [Migrar Skype Empresarial Online a Microsoft Teams](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype)
+- [Mover buzones de correo de Exchange Server local a Exchange Online](/exchange/hybrid-deployment/move-mailboxes)
+- [Migrar datos de SharePoint desde SharePoint Server a SharePoint Online](/sharepointmigration/migrate-to-sharepoint-online)
+- [Migrar Skype Empresarial Online a Microsoft Teams](/microsoftteams/migration-interop-guidance-for-teams-with-skype)
 
 ## <a name="transition-your-entire-organization"></a>Realizar la transición en toda la organización
 

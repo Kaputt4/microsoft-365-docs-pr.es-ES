@@ -14,12 +14,12 @@ ms.custom:
 description: Los administradores pueden usar el seguimiento de mensajes en el Centro de seguridad & cumplimiento para averiguar lo que sucedió con los mensajes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c3f7e4bc9624b9fae48074203da525d7a504a12
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 587e111a71b321c131d0e63a0510ec7e1afa289a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741580"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929401"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
@@ -40,7 +40,7 @@ El seguimiento de mensajes en el Centro de & seguridad mejora en el seguimiento 
 >
 > - Para realizar un seguimiento de mensajes, debe ser miembro de los grupos de roles Administración de la organización, Administración de cumplimiento o Servicio de ayuda. Para más información, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 >
-> - El número máximo de mensajes que se muestran en los resultados depende del tipo de informe seleccionado (vea la sección Elegir tipo [de](#choose-report-type) informe para obtener más información). El cmdlet [Get-HistoricalSearch en](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) PowerShell de Exchange Online o powerShell de EOP independiente devuelve todos los mensajes de los resultados.
+> - El número máximo de mensajes que se muestran en los resultados depende del tipo de informe seleccionado (vea la sección Elegir tipo [de](#choose-report-type) informe para obtener más información). El cmdlet [Get-HistoricalSearch en](/powershell/module/exchange/get-historicalsearch) PowerShell de Exchange Online o powerShell de EOP independiente devuelve todos los mensajes de los resultados.
 
 ## <a name="open-message-trace"></a>Seguimiento de mensajes abierto
 
@@ -231,7 +231,7 @@ Los detalles de seguimiento de mensajes contienen la siguiente información adic
   > 
   > - Un mensaje sin incidentes que se entregue correctamente generará varias entradas **de** evento en el seguimiento del mensaje.
   > 
-  > - Esta lista no está pensada para ser exhaustiva. Para obtener descripciones de más eventos, vea [Tipos de eventos en el registro de seguimiento de mensajes.](https://docs.microsoft.com/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log) Tenga en cuenta que este vínculo es Exchange Server tema (Exchange local).
+  > - Esta lista no está pensada para ser exhaustiva. Para obtener descripciones de más eventos, vea [Tipos de eventos en el registro de seguimiento de mensajes.](/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log) Tenga en cuenta que este vínculo es Exchange Server tema (Exchange local).
 
 - **Más información:** Esta sección contiene los siguientes detalles:
 
@@ -271,7 +271,7 @@ Los informes de resumen mejorados disponibles (completados) están disponibles e
 
 - **direccionalidad:** indica si el mensaje se envió de entrada (1) a la organización o si se envió saliente (2) desde la organización.
 
-- **connector_id:** el nombre del conector de origen o de destino. Para obtener más información acerca de los conectores en Exchange Online, vea [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
+- **connector_id:** el nombre del conector de origen o de destino. Para obtener más información acerca de los conectores en Exchange Online, vea [Configure mail flow using connectors in Office 365](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 - **delivery_priority:** <sup>*</sup> si el mensaje se envió con **prioridad Alta,** Baja o **Normal.**
 
@@ -413,8 +413,8 @@ Un **custom_data** que empieza por es del agente de regla de transporte para las
 |---|---|
 |`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y hora en UTC cuando se produjo la coincidencia de reglas.|
-|`Action=<ActionDefinition>`|La acción que se aplicó. Para obtener una lista de acciones disponibles, vea [Acciones de regla de flujo de correo en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
-|`Mode=<Mode>`|El modo de la regla. Los valores admitidos son:<ul><li>**Exigir:** se aplicarán todas las acciones de la regla.</li><li>**Prueba con sugerencias de directiva:**: se enviarán todas las acciones de sugerencia de directiva, pero no se actuarán otras acciones de aplicación.</li><li>**Probar sin sugerencias de** directiva: las acciones aparecerán en un archivo de registro, pero los remitentes no recibirán ninguna notificación y las acciones de aplicación no se actuarán.</li></ul>|
+|`Action=<ActionDefinition>`|La acción que se aplicó. Para obtener una lista de acciones disponibles, vea [Acciones de regla de flujo de correo en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
+|`Mode=<Mode>`|El modo de la regla. Los valores válidos son:<ul><li>**Exigir:** se aplicarán todas las acciones de la regla.</li><li>**Prueba con sugerencias de directiva:**: se enviarán todas las acciones de sugerencia de directiva, pero no se actuarán otras acciones de aplicación.</li><li>**Probar sin sugerencias de** directiva: las acciones aparecerán en un archivo de registro, pero los remitentes no recibirán ninguna notificación y las acciones de aplicación no se actuarán.</li></ul>|
 |
 
 Un ejemplo **custom_data** valor de un mensaje que coincide con las condiciones de una regla de flujo de correo tiene este aspecto:

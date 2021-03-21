@@ -15,12 +15,12 @@ ms.custom:
 description: Los administradores pueden ver preguntas y respuestas más frecuentes sobre las tareas de administración delegadas en Microsoft 365 para partners y revendedores de Microsoft.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 304fbba16d6c8e81e965462e3405824bd22982c9
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 82fa70a8025f67610032ba59368bc74789b60f84
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405941"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929377"
 ---
 # <a name="delegated-administration-faq"></a>Preguntas más frecuentes sobre administración delegada
 
@@ -53,4 +53,4 @@ No. Microsoft 365 no tiene actualmente esta funcionalidad.
 
 ## <a name="can-i-get-consolidated-reporting-across-all-of-my-subtenants"></a>¿Puedo obtener informes consolidados en todos mis subterfugios?
 
-Los informes consolidados en todas las empresas que administra no están disponibles en los informes del Centro de administración de Microsoft 365. Sin embargo, puede obtener informes mediante [Microsoft Graph](https://docs.microsoft.com/graph/overview).
+Los informes consolidados en todas las empresas que administra no están disponibles en los informes del Centro de administración de Microsoft 365. Sin embargo, puede obtener informes mediante [Microsoft Graph](/graph/overview).

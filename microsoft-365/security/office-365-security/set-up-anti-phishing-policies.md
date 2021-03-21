@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fe7d986c537cbc5da31811e0b49cf6224815d32c
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: eeb15040f0e47f7d51852dadf68c4b0c37de0975
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509319"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929233"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra suplantación de identidad en Microsoft 365
 
@@ -103,7 +103,7 @@ La siguiente configuración de suplantación de identidad está disponible en la
   >
   > - La protección contra la suplantación de identidad está habilitada de forma predeterminada en la directiva contra suplantación de identidad predeterminada y en cualquier nueva directiva contra suplantación de identidad personalizada que cree.
   >
-  > - No es necesario deshabilitar la protección contra la suplantación si el registro MX no apunta a Microsoft 365; habilitar el filtrado mejorado para conectores en su lugar. Para obtener instrucciones, consulte [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > - No es necesario deshabilitar la protección contra la suplantación si el registro MX no apunta a Microsoft 365; habilitar el filtrado mejorado para conectores en su lugar. Para obtener instrucciones, consulte [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
   >
   > - Deshabilitar la protección contra la suplantación solo deshabilita la protección de suplantación implícita de las comprobaciones de [autenticación](email-validation-and-authentication.md#composite-authentication) compuesta. Si el remitente produce un error en las comprobaciones [de DMARC](use-dmarc-to-validate-email.md) explícitas en las que la directiva está establecida en cuarentena o rechazada, el mensaje sigue en cuarentena o rechazado.
 
@@ -173,7 +173,7 @@ La siguiente configuración de suplantación solo está disponible en las direct
 
   Al agregar direcciones de correo electrónico internas o externas a la **lista Usuarios** para proteger, los mensajes de esos **remitentes** están sujetos a comprobaciones de protección de suplantación. El mensaje se comprueba para suplantación si **el** mensaje se envía **a** un destinatario al que se aplica la directiva (todos los destinatarios de la directiva predeterminada; **Se aplica a** destinatarios en directivas personalizadas). Si se detecta suplantación en la dirección de correo electrónico del remitente, las acciones de protección de suplantación para los usuarios se aplican al mensaje (qué hacer con el mensaje, si se muestran sugerencias de seguridad de usuarios suplantados, etc.).
 
-- **Dominios para proteger:** evita que los dominios especificados se suplanten **en el dominio del remitente del mensaje**. Por ejemplo, todos los dominios que posee ([dominios](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)aceptados ) o dominios específicos (dominios que posee o dominios asociados). Esta lista  de dominios de remitente que están protegidos contra la suplantación es diferente de la lista de destinatarios a los que se [](#policy-settings) aplica la directiva (todos los destinatarios de la directiva predeterminada; destinatarios específicos configurados en la configuración Aplicado a en la sección Configuración de directiva).  
+- **Dominios para proteger:** evita que los dominios especificados se suplanten **en el dominio del remitente del mensaje**. Por ejemplo, todos los dominios que posee ([dominios](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)aceptados ) o dominios específicos (dominios que posee o dominios asociados). Esta lista  de dominios de remitente que están protegidos contra la suplantación es diferente de la lista de destinatarios a los que se [](#policy-settings) aplica la directiva (todos los destinatarios de la directiva predeterminada; destinatarios específicos configurados en la configuración Aplicado a en la sección Configuración de directiva).  
 
   > [!NOTE]
   > El número máximo de dominios protegidos que puede definir en todas las directivas contra suplantación de identidad es 50.

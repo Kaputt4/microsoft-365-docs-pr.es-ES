@@ -19,12 +19,12 @@ ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: Recomendaciones principales del equipo de ciberseguridad de Microsoft para implementar capacidades de seguridad para proteger su entorno de Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 728519b4285cf9345052540a0207948f80c18cd2
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: bd86262cd36d9482cd9a54e7fd7c336a6f0700dd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407413"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929269"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Hoja de ruta de seguridad: prioridades principales para los primeros 30 días, 90 días y más allá
 
@@ -64,9 +64,9 @@ Estas tareas pueden realizarse rápidamente y tienen un impacto menor para los u
 |Área|Tareas|
 |---|---|
 |Administración de seguridad|<ul><li>Compruebe Puntuación segura y tome nota de la puntuación actual ( <https://securescore.office.com> ).</li><li>Active el registro de auditoría para Office 365. Consulte [Buscar en el registro de auditoría](../../compliance/search-the-audit-log-in-security-and-compliance.md).</li><li>[Configurar Microsoft 365 para aumentar la seguridad.](tenant-wide-setup-for-increased-security.md)</li><li>Revise periódicamente los paneles e informes en el Centro de seguridad de Microsoft 365 y Cloud App Security.</li></ul>|
-|Protección contra amenazas|[Conecte Microsoft 365 a Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) para iniciar la supervisión con las directivas predeterminadas de detección de amenazas para comportamientos anómalos. Se tardan siete días en crear una línea base para la detección de anomalías. <p>  Implementar la protección para cuentas de administrador:<ul><li>Usa cuentas de administrador dedicadas para la actividad de administración.</li><li>Exigir la autenticación multifactor (MFA) para cuentas de administrador.</li><li>Usa un [dispositivo Windows 10 altamente](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure) seguro para la actividad de administración.</li></ul>|
-|Administración de identidad y acceso|<ul><li>[Habilitar Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable).</li><li>Para entornos de identidad federada, aplique la seguridad de la cuenta (longitud de contraseña, antigüedad, complejidad, etc.).</li></ul>|
-|Protección de la información|Revise recomendaciones de protección de información de ejemplo. La protección de la información requiere coordinación en toda la organización. Empiece con estos recursos:<ul><li>[Information Protection de Office 365 para RGPD](https://docs.microsoft.com/compliance/regulatory/gdpr)</li><li>[Configurar Teams con tres niveles de protección](../../solutions/configure-teams-three-tiers-protection.md) (incluye uso compartido, clasificación, prevención de pérdida de datos y Azure Information Protection)</li></ul>|
+|Protección contra amenazas|[Conecte Microsoft 365 a Microsoft Cloud App Security](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) para iniciar la supervisión con las directivas predeterminadas de detección de amenazas para comportamientos anómalos. Se tardan siete días en crear una línea base para la detección de anomalías. <p>  Implementar la protección para cuentas de administrador:<ul><li>Usa cuentas de administrador dedicadas para la actividad de administración.</li><li>Exigir la autenticación multifactor (MFA) para cuentas de administrador.</li><li>Usa un [dispositivo Windows 10 altamente](/windows-hardware/design/device-experiences/oem-highly-secure) seguro para la actividad de administración.</li></ul>|
+|Administración de identidad y acceso|<ul><li>[Habilitar Azure Active Directory Identity Protection](/azure/active-directory/active-directory-identityprotection-enable).</li><li>Para entornos de identidad federada, aplique la seguridad de la cuenta (longitud de contraseña, antigüedad, complejidad, etc.).</li></ul>|
+|Protección de la información|Revise recomendaciones de protección de información de ejemplo. La protección de la información requiere coordinación en toda la organización. Empiece con estos recursos:<ul><li>[Information Protection de Office 365 para RGPD](/compliance/regulatory/gdpr)</li><li>[Configurar Teams con tres niveles de protección](../../solutions/configure-teams-three-tiers-protection.md) (incluye uso compartido, clasificación, prevención de pérdida de datos y Azure Information Protection)</li></ul>|
 |
 
 ## <a name="90-days--enhanced-protections"></a>90 días: protecciones mejoradas
@@ -76,12 +76,12 @@ Estas tareas necesitan un poco más de tiempo para planearlas e implementarlas, 
 
 ****
 
-|Área|Task|
+|Área|Tarea|
 |---|---|
 |Administración de seguridad|<ul><li>Compruebe Puntuación segura para las acciones recomendadas para su entorno ( <https://securescore.office.com> ).</li><li>Continúe revisando periódicamente los paneles y los informes en el Centro de seguridad de Microsoft 365, Cloud App Security y las herramientas SIEM.</li><li>Busque e implemente actualizaciones de software.</li><li>Realice simulaciones de ataques para ataques de suplantación de identidad (phishing), espionaje de contraseñas y contraseñas de fuerza bruta con [Attack Simulator](attack-simulator.md) (incluido con Inteligencia de amenazas de [Office 365).](office-365-ti.md)</li><li>Busque el riesgo de uso compartido revisando los informes integrados en Cloud App Security (en la pestaña Investigar).</li><li>Compruebe [el Administrador de cumplimiento](../../compliance/compliance-manager.md) para revisar el estado de las normativas que se aplican a su organización (como RGPD, NIST 800-171).</li></ul>|
-|Protección contra amenazas|Implementar protecciones mejoradas para cuentas de administrador: <ul><li>Configurar [estaciones de trabajo de acceso privilegiado](https://docs.microsoft.com/security/compass/privileged-access-devices) (PAW) para la actividad de administración.</li><li>Configurar [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure).</li><li>Configure una herramienta de administración de eventos y información de seguridad (SIEM) para recopilar datos de registro de Office 365, Cloud App Security y otros servicios, incluido AD FS. El registro de auditoría almacena datos solo durante 90 días. Capturar estos datos en la herramienta SIEM permite almacenar datos durante un período más largo.</li></ul>|
+|Protección contra amenazas|Implementar protecciones mejoradas para cuentas de administrador: <ul><li>Configurar [estaciones de trabajo de acceso privilegiado](/security/compass/privileged-access-devices) (PAW) para la actividad de administración.</li><li>Configurar [Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure).</li><li>Configure una herramienta de administración de eventos y información de seguridad (SIEM) para recopilar datos de registro de Office 365, Cloud App Security y otros servicios, incluido AD FS. El registro de auditoría almacena datos solo durante 90 días. Capturar estos datos en la herramienta SIEM permite almacenar datos durante un período más largo.</li></ul>|
 |Administración de identidad y acceso|<ul><li>Habilitar y aplicar MFA para todos los usuarios.</li><li>Implementar un conjunto de [directivas relacionadas y de acceso condicional.](microsoft-365-policies-configurations.md)</li></ul>|
-|Protección de la información| Adaptar e implementar directivas de protección de la información. Estos recursos incluyen ejemplos: <ul><li>[Information Protection de Office 365 para RGPD](https://docs.microsoft.com/compliance/regulatory/gdpr)</li><li>[Configurar Teams con tres niveles de protección](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> Use directivas de prevención de pérdida de datos y herramientas de supervisión en Microsoft 365 para los datos almacenados en Microsoft 365 (en lugar de Cloud App Security). <p> Usa Cloud App Security con Microsoft 365 para las características avanzadas de alertas (aparte de la prevención de pérdida de datos).|
+|Protección de la información| Adaptar e implementar directivas de protección de la información. Estos recursos incluyen ejemplos: <ul><li>[Information Protection de Office 365 para RGPD](/compliance/regulatory/gdpr)</li><li>[Configurar Teams con tres niveles de protección](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> Use directivas de prevención de pérdida de datos y herramientas de supervisión en Microsoft 365 para los datos almacenados en Microsoft 365 (en lugar de Cloud App Security). <p> Usa Cloud App Security con Microsoft 365 para las características avanzadas de alertas (aparte de la prevención de pérdida de datos).|
 |
 
 ## <a name="beyond"></a>Más allá
@@ -91,10 +91,10 @@ Estas son medidas de seguridad importantes que se basa en el trabajo anterior.
 
 ****
 
-|Área|Task|
+|Área|Tarea|
 |---|---|
 |Administración de seguridad|<ul><li>Siga planeando las siguientes acciones mediante puntuación segura ( <https://securescore.office.com> ).</li><li>Continúe revisando periódicamente los paneles y los informes en el Centro de seguridad de Microsoft 365, Cloud App Security y las herramientas SIEM.</li><li>Siga buscando e implementando actualizaciones de software.</li><li>Integre la exhibición de documentos electrónicos en los procesos legales y de respuesta a amenazas.</li></ul>|
-|Protección contra amenazas|<ul><li>Implementar [acceso con privilegios seguros](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access) (SPA) para componentes de identidad locales (AD, AD FS).</li><li>Usa Cloud App Security para supervisar las amenazas internas.</li><li>Descubra el uso de SaaS de IT de sombra mediante Cloud App Security.</li></ul>|
+|Protección contra amenazas|<ul><li>Implementar [acceso con privilegios seguros](/windows-server/identity/securing-privileged-access/securing-privileged-access) (SPA) para componentes de identidad locales (AD, AD FS).</li><li>Usa Cloud App Security para supervisar las amenazas internas.</li><li>Descubra el uso de SaaS de IT de sombra mediante Cloud App Security.</li></ul>|
 |Administración de identidad y acceso|<ul><li>Refinar directivas y procesos operativos.</li><li>Use Azure AD Identity Protection para identificar las amenazas internas.</li></ul>|
 |Protección de la información|Refinar directivas de protección de la información: <ul><li>Etiquetas de confidencialidad de Microsoft 365 y Office 365 y prevención de pérdida de datos (DLP) o Azure Information Protection.</li><li>Alertas y directivas de Cloud App Security.</li></ul>|
 |

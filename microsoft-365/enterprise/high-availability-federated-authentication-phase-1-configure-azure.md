@@ -1,5 +1,5 @@
 ---
-title: Fase 1 de la autenticación federada de alta disponibilidad Configurar Azure
+title: Fase 1 de autenticación federada de alta disponibilidad Configurar Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -14,16 +14,16 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 'Resumen: configure la infraestructura de Microsoft Azure para hospedar la autenticación federada de alta disponibilidad para Microsoft 365.'
-ms.openlocfilehash: d2a9fe3c31468cd53576a82639e0e61901192d8e
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 7f9a935648fedd2c6235c443f7398f97c0a06e06
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332345"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929113"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 de la autenticación federada de alta disponibilidad: Configurar Azure
 
-En esta fase, creará los grupos de recursos, la red virtual (VNet) y los conjuntos de disponibilidad en Azure que hospedarán las máquinas virtuales en las fases 2, 3 y 4. Debe completar esta fase para poder pasar a la [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Consulte Implementar la autenticación federada de alta [disponibilidad para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) para todas las fases.
+En esta fase, se crean los grupos de recursos, la red virtual (VNet) y los conjuntos de disponibilidad en Azure que hospedarán las máquinas virtuales en las fases 2, 3 y 4. Debe completar esta fase para poder pasar a la [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Consulte Implementar la autenticación federada de alta disponibilidad [para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) para todas las fases.
   
 Azure debe aprovisionarse con estos componentes básicos:
   
@@ -57,13 +57,13 @@ Para las primeras tres subredes, especifique un nombre y un espacio de direccion
     
 2. Convierta los bits resultantes a decimales y expréselo como un espacio de direcciones con la longitud de prefijo establecida en el tamaño de la subred de puerta de enlace.
     
-Vea [la calculadora de espacio](address-space-calculator-for-azure-gateway-subnets.md) de direcciones para subredes de puerta de enlace de Azure para un bloque de comandos de PowerShell y una aplicación de consola C# o Python que realiza este cálculo por usted.
+Consulte [Calculadora de espacio de](address-space-calculator-for-azure-gateway-subnets.md) direcciones para subredes de puerta de enlace de Azure para obtener un bloque de comandos de PowerShell y una aplicación de consola C# o Python que realice este cálculo por usted.
   
 Trabaje con su departamento de TI para determinar estos espacios de direcciones a partir del espacio de direcciones de la red virtual.
   
 |**Elemento**|**Nombre de la subred**|**Espacio de direcciones de la subred**|**Finalidad**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![línea](../media/Common-Images/TableLine.png)  <br/> |![línea](../media/Common-Images/TableLine.png)  <br/> |La subred usada por el controlador de dominio de Active Directory Domain Services (AD DS) y las máquinas virtuales (VM) del servidor de sincronización de directorios.  <br/> |
+|1.  <br/> |![línea](../media/Common-Images/TableLine.png)  <br/> |![línea](../media/Common-Images/TableLine.png)  <br/> |La subred usada por el controlador de dominio de Servicios de dominio de Active Directory (AD DS) y las máquinas virtuales (VM) del servidor de sincronización de directorios.  <br/> |
 |2.  <br/> |![línea](../media/Common-Images/TableLine.png)  <br/> |![línea](../media/Common-Images/TableLine.png)  <br/> |Subred usada por las máquinas virtuales de AD FS.  <br/> |
 |3.  <br/> |![línea](../media/Common-Images/TableLine.png)  <br/> |![línea](../media/Common-Images/TableLine.png)  <br/> |Subred usada por las máquinas virtuales del proxy de aplicación web.  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![línea](../media/Common-Images/TableLine.png)  <br/> |Subred usada por las máquinas virtuales de la puerta de enlace de Azure.  <br/> |
@@ -94,7 +94,7 @@ Para dos servidores de Sistema de nombres de dominio (DNS) en la red local que q
    
  **Tabla D: Servidores DNS locales**
   
-Para enrutar paquetes desde la red entre locales a la red de la organización a través de la conexión VPN de sitio a sitio, debe configurar la red virtual con una red local que tenga una lista de los espacios de direcciones (en notación CIDR) para todas las ubicaciones accesibles en la red local de su organización. La lista de espacios de direcciones que definen la red local tiene que ser única y no puede superponerse con el espacio de direcciones usado para otras redes virtuales ni otras redes locales.
+Para enrutar paquetes de la red entre locales a la red de la organización a través de la conexión VPN de sitio a sitio, debe configurar la red virtual con una red local que tenga una lista de los espacios de direcciones (en notación CIDR) para todas las ubicaciones accesibles en la red local de la organización. La lista de espacios de direcciones que definen la red local tiene que ser única y no puede superponerse con el espacio de direcciones usado para otras redes virtuales ni otras redes locales.
   
 Para el conjunto de espacios de direcciones de la red local, rellene la Tabla L. Fíjese en que aparecen tres entradas en blanco, pero lo normal es que necesite más. Colabore con su departamento de TI para determinar esta lista de espacios de direcciones.
   
@@ -109,7 +109,7 @@ Para el conjunto de espacios de direcciones de la red local, rellene la Tabla L.
 Ahora empecemos a crear la infraestructura de Azure para hospedar la autenticación federada para Microsoft 365.
   
 > [!NOTE]
-> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Vea [Introducción a Azure PowerShell.](https://docs.microsoft.com/powershell/azure/get-started-azureps) 
+> Los siguientes conjuntos de comandos utilizan la última versión de Azure PowerShell. Consulte [Introducción a Azure PowerShell](/powershell/azure/get-started-azureps). 
   
 Primero, abra un símbolo del sistema de Azure PowerShell e inicie sesión con su cuenta.
   
@@ -118,7 +118,7 @@ Connect-AzAccount
 ```
 
 > [!TIP]
-> Para generar bloques de comandos de PowerShell listos para ejecutarse en función de la configuración personalizada, use este libro [de configuración de Microsoft Excel.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
+> Para generar bloques de comandos de PowerShell listos para ejecutarse en función de la configuración personalizada, use este libro [de configuración de Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
 
 Obtenga su nombre de suscripción mediante el comando siguiente.
   
@@ -132,7 +132,7 @@ Para versiones anteriores de Azure PowerShell, use este comando en su lugar.
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Configure su suscripción de Azure. Reemplace todo el texto entrecomillado, \< and > incluidos los caracteres, por el nombre correcto.
+Configure su suscripción de Azure. Reemplace todo dentro de las comillas, \< and > incluidos los caracteres, por el nombre correcto.
   
 ```powershell
 $subscrName="<subscription name>"
@@ -199,7 +199,7 @@ New-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locNa
 
 ```
 
-A continuación, cree grupos de seguridad de red para cada subred que tenga máquinas virtuales. Para realizar el aislamiento de la subred, puede agregar reglas para tipos específicos de tráfico permitido o denegado para el grupo de seguridad de red de una subred.
+A continuación, se crean grupos de seguridad de red para cada subred que tenga máquinas virtuales. Para realizar el aislamiento de la subred, puede agregar reglas para tipos específicos de tráfico permitido o denegado para el grupo de seguridad de red de una subred.
   
 ```powershell
 # Create network security groups
@@ -253,7 +253,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> La autenticación federada de los usuarios individuales no se basa en los recursos locales. Sin embargo, si esta conexión VPN de sitio a sitio deja de estar disponible, los controladores de dominio de la red virtual no recibirán actualizaciones de cuentas de usuario y grupos realizados en los Servicios de dominio de Active Directory locales. Para asegurarse de que esto no sucede, puede configurar la alta disponibilidad para la conexión VPN de sitio a sitio. Para obtener más información, consulte [Conectividad de red virtual a red virtual y con alta disponibilidad entre locales](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> La autenticación federada de los usuarios individuales no se basa en los recursos locales. Sin embargo, si esta conexión VPN de sitio a sitio deja de estar disponible, los controladores de dominio de la red virtual no recibirán actualizaciones de cuentas de usuario y grupos realizados en los Servicios de dominio de Active Directory locales. Para asegurarse de que esto no sucede, puede configurar la alta disponibilidad para la conexión VPN de sitio a sitio. Para obtener más información, consulte [Conectividad de red virtual a red virtual y con alta disponibilidad entre locales](/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 El paso siguiente es anotar la dirección IPv4 pública de Azure VPN Gateway para la red virtual después de ejecutar este comando:
   
@@ -261,7 +261,7 @@ El paso siguiente es anotar la dirección IPv4 pública de Azure VPN Gateway par
 Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-Después, configure el dispositivo VPN local para que se conecte a Azure VPN Gateway. Para obtener más información, vea [Configurar un dispositivo VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Después, configure el dispositivo VPN local para que se conecte a Azure VPN Gateway. Para obtener más información, vea [Configurar un dispositivo VPN](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
 Para configurar el dispositivo VPN local necesita lo siguiente:
   
@@ -306,16 +306,14 @@ Esta es la configuración que se muestra después de la finalización correcta d
   
 ## <a name="next-step"></a>Paso siguiente
 
-Use [la fase 2: Configurar controladores de dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) para continuar con la configuración de esta carga de trabajo.
+Usar [la fase 2: Configurar controladores de dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) para continuar con la configuración de esta carga de trabajo.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Implementar la autenticación federada de alta disponibilidad para Microsoft 365 en Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
 [Identidad federada para el entorno de desarrollo y pruebas de Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Centro de soluciones y arquitectura de Microsoft 365](../solutions/solution-architecture-center.md)
+[Centro de soluciones y arquitectura de Microsoft 365](../solutions/index.yml)
 
 [Descripción de la identidad de Microsoft 365 y Azure Active Directory](about-microsoft-365-identity.md)
-
-

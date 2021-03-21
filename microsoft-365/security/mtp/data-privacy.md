@@ -20,27 +20,27 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 70a3c881c2f68aacdeac00e615f3d09ed90c9f1e
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 0e90a1e8eed376fc267c044e54419e0de01934fd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932051"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928921"
 ---
 # <a name="microsoft-365-defender-data-security-and-privacy"></a>Privacidad y seguridad de datos de Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**Aplica para:**
+**Se aplica a:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender opera en centros de datos de Microsoft Azure en la Unión Europea, Reino Unido y Estados Unidos. Los datos de clientes recopilados por el servicio se almacenan en reposo en (a) la ubicación geográfica del espacio empresarial como se identificó durante el aprovisionamiento o, (b) si Microsoft 365 Defender usa otro servicio en línea de Microsoft para procesar dichos datos, la geolocalización según se define en las reglas de almacenamiento de datos de ese otro servicio en línea.
+Microsoft 365 Defender opera en centros de datos de Microsoft Azure en la Unión Europea, Reino Unido y Estados Unidos. Los datos de cliente recopilados por el servicio se almacenan en reposo en (a) la ubicación geográfica del inquilino identificada durante el aprovisionamiento o, (b) si Microsoft 365 Defender usa otro servicio en línea de Microsoft para procesar dichos datos, la geolocalización definida por las reglas de almacenamiento de datos de ese otro servicio en línea.
 
-Los datos de los clientes en forma seudonimizada también pueden almacenarse en sistemas de almacenamiento y procesamiento centrales en Los Estados Unidos.
+Los datos de los clientes con seudónimo también pueden almacenarse en sistemas de almacenamiento y procesamiento centrales en los Estados Unidos.
 
 
 Para obtener más información sobre el almacenamiento de datos y la información de privacidad de los productos específicos, vea:
-- [Privacidad y almacenamiento de datos de Microsoft Defender para puntos de conexión](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
-- [Seguridad y privacidad de los datos de Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/cas-compliance-trust)
-- [Privacidad, seguridad y transparencia de Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)
+- [Privacidad y almacenamiento de datos de Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- [Seguridad y privacidad de los datos de Microsoft Cloud App Security](/cloud-app-security/cas-compliance-trust)
+- [Privacidad, seguridad y transparencia de Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)

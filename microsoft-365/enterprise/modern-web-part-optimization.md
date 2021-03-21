@@ -20,20 +20,20 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Aprenda a usar el diagnóstico de páginas para optimizar el rendimiento de los elementos web en las páginas de sitio modernas de SharePoint Online.
-ms.openlocfilehash: ca1b9328ad71fdd4a3f3c6c6be47eaa3993d4fc7
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+description: Obtenga información sobre cómo usar diagnósticos de página para optimizar el rendimiento de los elementos web en las páginas de sitio modernas de SharePoint Online.
+ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287154"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929065"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Optimizar el rendimiento de elementos web en páginas del sitio modernas de SharePoint Online
 
 Las páginas del sitio de SharePoint Online modernas contienen elementos web que pueden contribuir a los tiempos de carga totales de la página. En este artículo se mostrará cómo los elementos web de sus páginas afectan a la latencia que percibe el usuario y cómo corregir los problemas más comunes.
 
 >[!NOTE]
->Para obtener más información sobre el rendimiento de los portales modernos de SharePoint Online, vea [Rendimiento en la experiencia moderna de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance).
+>Para obtener más información sobre el rendimiento de los portales modernos de SharePoint Online, vea [Rendimiento en la experiencia moderna de SharePoint](/sharepoint/modern-experience-performance).
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Usar la herramienta de Diagnóstico de páginas para SharePoint para analizar los elementos web
 
@@ -56,14 +56,14 @@ Si el resultado **Los elementos web afectan al tiempo de carga de la página** a
 
 La información disponible en los resultados incluye lo siguiente:
 
-- **Se realiza mediante** la muestra si el elemento web es personalizado o microsoft OOTB.
-- **El nombre y el** identificador muestran información de identificación que puede ayudarle a encontrar el elemento web en la página.
-- **En total** se muestra el tiempo total para que el elemento web cargue, inicialice y represente el módulo. Es el tiempo relativo total que el elemento web ha tomado representar en la página, desde el principio hasta el final.
-- **La carga de** módulos muestra el tiempo que se ha necesitado para descargar, evaluar y cargar los archivos CSS y JavaScript de extensiones. A continuación, se iniciará el proceso init.
-- **La carga diferida** muestra el tiempo para la carga diferida de elementos web que no se ve en la sección principal de la página. Existen ciertas condiciones en las que hay demasiados elementos web para representar y se ponen en cola para representarse para minimizar el tiempo de carga de la página.
+- **Made by** muestra si el elemento web es personalizado o Microsoft OOTB.
+- **El nombre y el identificador** muestran información de identificación que puede ayudarle a encontrar el elemento web en la página.
+- **Total** muestra el tiempo total para que el elemento web cargue, inicialice y represente el módulo. Es el tiempo relativo total que el elemento web debe representar en la página, desde el principio hasta el final.
+- **Carga de** módulos muestra el tiempo que se necesita para descargar, evaluar y cargar las extensiones de archivos JavaScript y CSS. A continuación, se iniciará el proceso Init.
+- **Carga diferida** muestra el tiempo para la carga diferida de elementos web no vistos en la sección principal de la página. Hay ciertas condiciones en las que hay demasiados elementos web para representar y se ponen en cola para representarse para minimizar el tiempo de carga de la página.
 - **Init** muestra el tiempo que el elemento web ha necesitado para inicializar los datos.
-    Es una llamada asincrónica y el tiempo de init es el cálculo del tiempo para la función onInit cuando se resuelve la promesa devuelta.
-- **La** representación muestra el tiempo que se ha necesitado para representar la interfaz de usuario (interfaz de usuario) una vez que el módulo se carga y se completa.
+    Es una llamada asincrónica y el tiempo de init es el cálculo del tiempo de la función onInit cuando se resuelve la promesa devuelta.
+- **Render** muestra el tiempo que se necesita para representar la interfaz de usuario (interfaz de usuario) una vez completada la carga del módulo e Init.
     Es el tiempo de ejecución de JavaScript para montar el DOM en el documento (página).
     La representación de recursos asincrónicos, por ejemplo, imágenes, puede tardar más tiempo en completarse.
 
@@ -80,10 +80,10 @@ Existen tres tipos de causas por las que el elemento web puede tener problemas d
   - Mueva los escenarios menos frecuentes y el código de modo de edición (como el panel de propiedades) para separar fragmentos con la instrucción _import()_.
   - Revise las dependencias del archivo _package.json_ para quitar por completo todos los códigos no alcanzados. Mueva todas las dependencias de solo prueba o compilación a devDependencies.
   - El uso de la red CDN de Office 365 es necesario para una descarga de recursos estática óptima. Se prefieren los orígenes de la red CDN pública para los archivos _js/css_. Para obtener información sobre cómo usar la CDN de Office 365, vea [Usar la red de entrega de contenido (CDN) de Office 365 con SharePoint Online](use-microsoft-365-cdn-with-spo.md).
-  - Reutilice marcos como _importaciones de Fabric_ y _React_ que forman parte de SharePoint Framework (SPFx). Para más información, vea [Información general de SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
+  - Reutilice marcos como _importaciones de Fabric_ y _React_ que forman parte de SharePoint Framework (SPFx). Para más información, vea [Información general de SharePoint Framework](/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Asegúrese de que está usando la versión más reciente de SharePoint Framework y actualice a las nuevas versiones a medida que estén disponibles.
 - Búsqueda y almacenamiento en caché de datos
-  - Si el elemento web se basa en llamadas de servidor adicionales para capturar datos para mostrar, asegúrese de que esas API de servidor sean rápidas o implementen el almacenamiento en caché del lado cliente (por ejemplo, usar _localStorage_ o _IndexedDB_ para conjuntos más grandes).
+  - Si el elemento web se basa en llamadas de servidor adicionales para capturar datos para mostrar, asegúrese de que dichas API de servidor sean rápidas o implemente el almacenamiento en caché del lado cliente (por ejemplo, usar _localStorage_ o _IndexedDB_ para conjuntos más grandes).
   - Si se necesitan varias llamadas para representar datos fundamentales, considere la posibilidad de realizar el procesamiento por lotes en el servidor u otros métodos de consolidación de solicitudes en una sola llamada.
   - Por otra parte, si algunos elementos de datos requieren una API más lenta, pero no son fundamentales para la representación inicial, desacóplelos en una llamada diferente que se ejecuta después de que se representen los datos fundamentales.
   - Si varios elementos usan los mismos datos, utilice una capa de datos común para evitar las llamadas duplicadas.
@@ -107,7 +107,7 @@ Antes de realizar revisiones de página para corregir problemas de rendimiento, 
 
 [Ajustar el rendimiento de Office 365](tune-microsoft-365-performance.md)
 
-[Rendimiento en la experiencia moderna de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Rendimiento en la experiencia moderna de SharePoint](/sharepoint/modern-experience-performance)
 
 [Redes de entrega de contenido](content-delivery-networks.md)
 
