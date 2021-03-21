@@ -13,55 +13,55 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Guía básica para configurar los servicios en la nube para Microsoft 365.
-ms.openlocfilehash: 9d28b03f17aa0b9de955af824939d0db28faa057
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 5049d24a2cff696ee44429f809b2b91c15a4b4d1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775140"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928265"
 ---
-# <a name="cloud-services-roadmap-for-microsoft-365"></a><span data-ttu-id="70617-103">Guía básica de servicios en la nube para Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="70617-103">Cloud services roadmap for Microsoft 365</span></span>
+# <a name="cloud-services-roadmap-for-microsoft-365"></a><span data-ttu-id="e5de2-103">Guía básica de servicios en la nube para Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="e5de2-103">Cloud services roadmap for Microsoft 365</span></span>
 
-<span data-ttu-id="70617-104">Para obtener los beneficios de creatividad, trabajo en equipo y productividad de Microsoft 365 para empresas, implemente los servicios en la nube que mejor se adapten a las necesidades de su organización.</span><span class="sxs-lookup"><span data-stu-id="70617-104">To get the creativity, teamwork, and productivity benefits of Microsoft 365 for enterprise, deploy the cloud services that best fit your organization's needs.</span></span>
+<span data-ttu-id="e5de2-104">Para obtener los beneficios de creatividad, trabajo en equipo y productividad de Microsoft 365 para empresas, implemente los servicios en la nube que mejor se adapten a las necesidades de su organización.</span><span class="sxs-lookup"><span data-stu-id="e5de2-104">To get the creativity, teamwork, and productivity benefits of Microsoft 365 for enterprise, deploy the cloud services that best fit your organization's needs.</span></span>
 
-<span data-ttu-id="70617-105">Si tiene implementaciones basadas en servidor existentes para Exchange, SharePoint o Skype Empresarial y desea migrar toda la organización a Microsoft 365 para empresas, consulte la guía básica de [software](client-server-software-roadmap-microsoft-365.md)de cliente y servidor.</span><span class="sxs-lookup"><span data-stu-id="70617-105">If you have existing server-based deployments for Exchange, SharePoint, or Skype for Business and want to migrate your entire organization to Microsoft 365 for enterprise, see the [client and server software roadmap](client-server-software-roadmap-microsoft-365.md).</span></span> <span data-ttu-id="70617-106">Esta guía básica incluye Microsoft Office de cliente, productos locales de Office Server y dispositivos basados en Microsoft &ndash; Windows.</span><span class="sxs-lookup"><span data-stu-id="70617-106">This roadmap includes Microsoft Office client products, on-premises Office Server products, and Microsoft Windows&ndash;based devices.</span></span>
+<span data-ttu-id="e5de2-105">Si tiene implementaciones basadas en servidor existentes para Exchange, SharePoint o Skype Empresarial y desea migrar toda la organización a Microsoft 365 para empresas, vea la guía básica de [software](client-server-software-roadmap-microsoft-365.md)de cliente y servidor.</span><span class="sxs-lookup"><span data-stu-id="e5de2-105">If you have existing server-based deployments for Exchange, SharePoint, or Skype for Business and want to migrate your entire organization to Microsoft 365 for enterprise, see the [client and server software roadmap](client-server-software-roadmap-microsoft-365.md).</span></span> <span data-ttu-id="e5de2-106">Esta guía básica incluye Microsoft Office cliente, productos locales de Office Server y dispositivos basados en Microsoft &ndash; Windows.</span><span class="sxs-lookup"><span data-stu-id="e5de2-106">This roadmap includes Microsoft Office client products, on-premises Office Server products, and Microsoft Windows&ndash;based devices.</span></span>
 
-## <a name="deploy"></a><span data-ttu-id="70617-107">Implementar</span><span class="sxs-lookup"><span data-stu-id="70617-107">Deploy</span></span>
+## <a name="deploy"></a><span data-ttu-id="e5de2-107">Implementar</span><span class="sxs-lookup"><span data-stu-id="e5de2-107">Deploy</span></span>
 
-<span data-ttu-id="70617-108">Para implementar los servicios en la nube:</span><span class="sxs-lookup"><span data-stu-id="70617-108">To deploy your cloud services:</span></span>
+<span data-ttu-id="e5de2-108">Para implementar los servicios en la nube:</span><span class="sxs-lookup"><span data-stu-id="e5de2-108">To deploy your cloud services:</span></span>
 
-- [<span data-ttu-id="70617-109">Preparar los servicios</span><span class="sxs-lookup"><span data-stu-id="70617-109">Get your services ready</span></span>](configure-services-and-applications.md)
-- [<span data-ttu-id="70617-110">Migrar los datos locales a Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="70617-110">Migrate your on-premises data to Microsoft 365</span></span>](migrate-data-to-office-365.md)
-- <span data-ttu-id="70617-111">Configurar los servicios en la nube para los usuarios</span><span class="sxs-lookup"><span data-stu-id="70617-111">Get your cloud services set up for your users</span></span>
-  - [<span data-ttu-id="70617-112">Exchange Online</span><span class="sxs-lookup"><span data-stu-id="70617-112">Exchange Online</span></span>](https://docs.microsoft.com/Exchange/exchange-online)
-  - [<span data-ttu-id="70617-113">SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="70617-113">SharePoint Online</span></span>](https://docs.microsoft.com/sharepoint/sharepoint-online)
-  - [<span data-ttu-id="70617-114">Skype Empresarial</span><span class="sxs-lookup"><span data-stu-id="70617-114">Skype for Business</span></span>](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
-  - [<span data-ttu-id="70617-115">Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="70617-115">Microsoft Teams</span></span>](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
-  - [<span data-ttu-id="70617-116">Yammer</span><span class="sxs-lookup"><span data-stu-id="70617-116">Yammer</span></span>](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
-- [<span data-ttu-id="70617-117">Proporcionar formación a los usuarios</span><span class="sxs-lookup"><span data-stu-id="70617-117">Train your users</span></span>](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
+- [<span data-ttu-id="e5de2-109">Preparar los servicios</span><span class="sxs-lookup"><span data-stu-id="e5de2-109">Get your services ready</span></span>](configure-services-and-applications.md)
+- [<span data-ttu-id="e5de2-110">Migrar los datos locales a Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="e5de2-110">Migrate your on-premises data to Microsoft 365</span></span>](migrate-data-to-office-365.md)
+- <span data-ttu-id="e5de2-111">Configurar los servicios en la nube para los usuarios</span><span class="sxs-lookup"><span data-stu-id="e5de2-111">Get your cloud services set up for your users</span></span>
+  - [<span data-ttu-id="e5de2-112">Exchange Online</span><span class="sxs-lookup"><span data-stu-id="e5de2-112">Exchange Online</span></span>](/Exchange/exchange-online)
+  - [<span data-ttu-id="e5de2-113">SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="e5de2-113">SharePoint Online</span></span>](/sharepoint/sharepoint-online)
+  - [<span data-ttu-id="e5de2-114">Skype Empresarial</span><span class="sxs-lookup"><span data-stu-id="e5de2-114">Skype for Business</span></span>](/SkypeForBusiness/skype-for-business-online)
+  - [<span data-ttu-id="e5de2-115">Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="e5de2-115">Microsoft Teams</span></span>](/MicrosoftTeams/Teams-overview)
+  - [<span data-ttu-id="e5de2-116">Yammer</span><span class="sxs-lookup"><span data-stu-id="e5de2-116">Yammer</span></span>](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
+- [<span data-ttu-id="e5de2-117">Proporcionar formación a los usuarios</span><span class="sxs-lookup"><span data-stu-id="e5de2-117">Train your users</span></span>](/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users)
 
-## <a name="manage"></a><span data-ttu-id="70617-118">Administrar</span><span class="sxs-lookup"><span data-stu-id="70617-118">Manage</span></span>
+## <a name="manage"></a><span data-ttu-id="e5de2-118">Administrar</span><span class="sxs-lookup"><span data-stu-id="e5de2-118">Manage</span></span>
 
-<span data-ttu-id="70617-119">Para administrar los servicios en la nube:</span><span class="sxs-lookup"><span data-stu-id="70617-119">To manage your cloud services:</span></span> 
+<span data-ttu-id="e5de2-119">Para administrar los servicios en la nube:</span><span class="sxs-lookup"><span data-stu-id="e5de2-119">To manage your cloud services:</span></span> 
 
-- [<span data-ttu-id="70617-120">Comprobar el estado del servicio</span><span class="sxs-lookup"><span data-stu-id="70617-120">Check your service health</span></span>](view-service-health.md)
-- [<span data-ttu-id="70617-121">Comprender las opciones de soporte técnico</span><span class="sxs-lookup"><span data-stu-id="70617-121">Understand your support options</span></span>](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-- <span data-ttu-id="70617-122">Administrar los servicios en la nube</span><span class="sxs-lookup"><span data-stu-id="70617-122">Administer your cloud services</span></span>
-  - [<span data-ttu-id="70617-123">Exchange Online</span><span class="sxs-lookup"><span data-stu-id="70617-123">Exchange Online</span></span>](https://docs.microsoft.com/Exchange/exchange-online)
-  - [<span data-ttu-id="70617-124">SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="70617-124">SharePoint Online</span></span>](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a)
-  - [<span data-ttu-id="70617-125">Skype Empresarial</span><span class="sxs-lookup"><span data-stu-id="70617-125">Skype for Business</span></span>](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
-  - [<span data-ttu-id="70617-126">Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="70617-126">Microsoft Teams</span></span>](https://docs.microsoft.com//MicrosoftTeams/quality-of-experience-review-guide)
-  - [<span data-ttu-id="70617-127">Yammer</span><span class="sxs-lookup"><span data-stu-id="70617-127">Yammer</span></span>](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
-- [<span data-ttu-id="70617-128">Realizar el ajuste del rendimiento para los servicios en la nube</span><span class="sxs-lookup"><span data-stu-id="70617-128">Perform performance tuning for your cloud services</span></span>](tune-microsoft-365-performance.md)
+- [<span data-ttu-id="e5de2-120">Comprobar el estado del servicio</span><span class="sxs-lookup"><span data-stu-id="e5de2-120">Check your service health</span></span>](view-service-health.md)
+- [<span data-ttu-id="e5de2-121">Comprender las opciones de soporte técnico</span><span class="sxs-lookup"><span data-stu-id="e5de2-121">Understand your support options</span></span>](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+- <span data-ttu-id="e5de2-122">Administrar los servicios en la nube</span><span class="sxs-lookup"><span data-stu-id="e5de2-122">Administer your cloud services</span></span>
+  - [<span data-ttu-id="e5de2-123">Exchange Online</span><span class="sxs-lookup"><span data-stu-id="e5de2-123">Exchange Online</span></span>](/Exchange/exchange-online)
+  - [<span data-ttu-id="e5de2-124">SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="e5de2-124">SharePoint Online</span></span>](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a)
+  - [<span data-ttu-id="e5de2-125">Skype Empresarial</span><span class="sxs-lookup"><span data-stu-id="e5de2-125">Skype for Business</span></span>](/SkypeForBusiness/skype-for-business-online)
+  - [<span data-ttu-id="e5de2-126">Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="e5de2-126">Microsoft Teams</span></span>](//MicrosoftTeams/quality-of-experience-review-guide)
+  - [<span data-ttu-id="e5de2-127">Yammer</span><span class="sxs-lookup"><span data-stu-id="e5de2-127">Yammer</span></span>](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
+- [<span data-ttu-id="e5de2-128">Realizar la optimización del rendimiento de los servicios en la nube</span><span class="sxs-lookup"><span data-stu-id="e5de2-128">Perform performance tuning for your cloud services</span></span>](tune-microsoft-365-performance.md)
 
-## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a><span data-ttu-id="70617-129">Cómo Microsoft hace los servicios en la nube para Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="70617-129">How Microsoft does cloud services for Microsoft 365</span></span>
+## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a><span data-ttu-id="e5de2-129">Cómo Microsoft hace los servicios en la nube para Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="e5de2-129">How Microsoft does cloud services for Microsoft 365</span></span>
 
-<span data-ttu-id="70617-130">Para obtener información sobre cómo Microsoft TI ha implementado o está administrando los servicios en la nube de Microsoft 365:</span><span class="sxs-lookup"><span data-stu-id="70617-130">For information about how Microsoft IT has deployed or is managing Microsoft 365 cloud services:</span></span>
+<span data-ttu-id="e5de2-130">Para obtener información sobre cómo Microsoft TI ha implementado o está administrando los servicios en la nube de Microsoft 365:</span><span class="sxs-lookup"><span data-stu-id="e5de2-130">For information about how Microsoft IT has deployed or is managing Microsoft 365 cloud services:</span></span>
 
-1. <span data-ttu-id="70617-131">Vaya a [Microsoft IT Showcase.](https://www.microsoft.com/itshowcase)</span><span class="sxs-lookup"><span data-stu-id="70617-131">Go to [Microsoft IT Showcase](https://www.microsoft.com/itshowcase).</span></span>
-2. <span data-ttu-id="70617-132">Seleccione **Buscar contenido.**</span><span class="sxs-lookup"><span data-stu-id="70617-132">Select **Search content**.</span></span>
-3. <span data-ttu-id="70617-133">En **Refinar resultados,** seleccione **Profesional de IT** en **Audiencia** y, a continuación, **en Producto,** seleccione un servicio en la nube.</span><span class="sxs-lookup"><span data-stu-id="70617-133">Under **Refine results**, select **IT Pro** under **Audience**, and then under **Product**, select a cloud service.</span></span>
+1. <span data-ttu-id="e5de2-131">Vaya a [Microsoft IT Showcase](https://www.microsoft.com/itshowcase).</span><span class="sxs-lookup"><span data-stu-id="e5de2-131">Go to [Microsoft IT Showcase](https://www.microsoft.com/itshowcase).</span></span>
+2. <span data-ttu-id="e5de2-132">Seleccione **Buscar contenido**.</span><span class="sxs-lookup"><span data-stu-id="e5de2-132">Select **Search content**.</span></span>
+3. <span data-ttu-id="e5de2-133">En **Refinar resultados,** seleccione Profesionales de **IT** en **Audiencia** y, a continuación, **en Producto**, seleccione un servicio en la nube.</span><span class="sxs-lookup"><span data-stu-id="e5de2-133">Under **Refine results**, select **IT Pro** under **Audience**, and then under **Product**, select a cloud service.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="70617-134">Paso siguiente</span><span class="sxs-lookup"><span data-stu-id="70617-134">Next step</span></span>
+## <a name="next-step"></a><span data-ttu-id="e5de2-134">Paso siguiente</span><span class="sxs-lookup"><span data-stu-id="e5de2-134">Next step</span></span>
 
-<span data-ttu-id="70617-135">Inicia la implementación de servicios en la nube.</span><span class="sxs-lookup"><span data-stu-id="70617-135">Start your cloud services implementation.</span></span> <span data-ttu-id="70617-136">Para obtener instrucciones, consulte [Configurar aplicaciones y servicios de Microsoft 365 Enterprise.](configure-services-and-applications.md)</span><span class="sxs-lookup"><span data-stu-id="70617-136">For guidance, see [Configure Microsoft 365 Enterprise services and applications](configure-services-and-applications.md).</span></span>
+<span data-ttu-id="e5de2-135">Inicie la implementación de los servicios en la nube.</span><span class="sxs-lookup"><span data-stu-id="e5de2-135">Start your cloud services implementation.</span></span> <span data-ttu-id="e5de2-136">Para obtener instrucciones, vea [Configure Microsoft 365 Enterprise services and applications](configure-services-and-applications.md).</span><span class="sxs-lookup"><span data-stu-id="e5de2-136">For guidance, see [Configure Microsoft 365 Enterprise services and applications](configure-services-and-applications.md).</span></span>
