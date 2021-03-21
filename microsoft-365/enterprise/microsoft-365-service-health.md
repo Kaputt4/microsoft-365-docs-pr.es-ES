@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Estado de mantenimiento del servicio de Microsoft 365
-ms.openlocfilehash: f7bb310452f841c04eabdd683d3ec82b4ad2b57a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d0e32fb34cf1d14a5da8c10a07551cee00e2421a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686607"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923117"
 ---
 # <a name="microsoft-365-network-health-status"></a>Estado de mantenimiento de la red de Microsoft 365
 
@@ -44,5 +44,5 @@ Cuando detectemos problemas importantes en la red global de Microsoft o con la c
 Use estos recursos para mejorar el uso de la red en servicios Microsoft.
 
 - [Optimizar la conectividad de Microsoft 365 para usuarios remotos que usan el túnel dividido VPN](microsoft-365-vpn-split-tunnel.md)
-- [Principios de conectividad de red de Microsoft 365](https://aka.ms/pnc)
-- [Trabajar de forma remota con servicios de Conexión de red de Azure](https://docs.microsoft.com/azure/networking/working-remotely-support)
+- [Principios de conectividad de red de Microsoft 365](./microsoft-365-network-connectivity-principles.md)
+- [Trabajar de forma remota con servicios de Conexión de red de Azure](/azure/networking/working-remotely-support)

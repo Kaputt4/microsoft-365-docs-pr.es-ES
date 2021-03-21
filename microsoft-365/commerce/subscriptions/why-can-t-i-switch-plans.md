@@ -24,36 +24,36 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Comprenda los motivos por los que, a veces, el cambio de planes debe realizarse manualmente o llamando al soporte técnico.
-ms.openlocfilehash: 8e217ad59e6436641af3b2f0151a760da5239839
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d13b7290f4b5f9aede7406cf76ee60cac262c814
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646756"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922273"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>¿Por qué no puedo cambiar los planes de Microsoft 365 para empresas?
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> Este artículo se aplica al antiguo centro de administración. Para ver el artículo sobre el centro de administración (versión preliminar), consulte ¿Por qué no puedo [actualizar planes?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) La vista previa está disponible para todos los administradores de Microsoft 365, puede participar seleccionando **Probar** el botón de alternancia de vista previa ubicado en la parte superior de la página principal. Para obtener más información, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+> Este artículo se aplica al antiguo centro de administración. Para ver el artículo sobre el Centro de administración (versión preliminar), vea ¿Por qué [no puedo actualizar los planes?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans). La vista previa está disponible para todos los administradores de  Microsoft 365, puedes participar seleccionando Probar el botón de alternancia de vista previa ubicado en la parte superior de la página principal. Para obtener más información, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
-Si no ve el botón Cambiar **de** plan, el plan no se puede cambiar automáticamente. En algunos casos, es posible que pueda resolver el problema para poder usar el botón **Cambiar de plan**, o también podría [cambiar de plan manualmente](switch-plans-manually.md). Coloque el mouse sobre el icono de información para ver un mensaje que explica por qué el botón **Cambiar de plan** no está disponible. Use la información de este artículo para solucionar el problema.
+Si no ve el botón **Cambiar planes,** el plan no se puede cambiar automáticamente. En algunos casos, es posible que pueda resolver el problema para poder usar el botón **Cambiar de plan**, o también podría [cambiar de plan manualmente](switch-plans-manually.md). Coloque el mouse sobre el icono de información para ver un mensaje que explica por qué el botón **Cambiar de plan** no está disponible. Use la información de este artículo para solucionar el problema.
   
 ::: moniker range="o365-worldwide"
 
- **¿Necesita algo más?** [Comprar otra suscripción](../buy-another-subscription.md)  |  [Cancelar la suscripción](cancel-your-subscription.md)  |  [Suscripciones y facturación](../index.yml)  |  [Llamar al soporte técnico](../../admin/contact-support-for-business-products.md)
+ **¿Necesita algo más?** [Comprar otra suscripción](../try-or-buy-microsoft-365.md)  |  [Cancelar la suscripción](cancel-your-subscription.md)  |  [Suscripciones y facturación](../index.yml)  |  [Soporte técnico de llamadas](../../admin/contact-support-for-business-products.md)
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **¿Necesita algo más?** [Comprar otra suscripción](../buy-another-subscription.md)  |  [Cancelar la suscripción](cancel-your-subscription.md)  |  [Suscripciones y facturación](../index.yml)  |  [Llamar al soporte técnico](../../admin/contact-support-for-business-products.md)
+ **¿Necesita algo más?** [Comprar otra suscripción](../try-or-buy-microsoft-365.md)  |  [Cancelar la suscripción](cancel-your-subscription.md)  |  [Suscripciones y facturación](../index.yml)  |  [Soporte técnico de llamadas](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- **¿Necesita algo más?** [Comprar o probar suscripciones para Office 365 operado por 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md)  |  [Cancelar la suscripción](cancel-your-subscription.md)  |  [Llamar al soporte técnico](../../admin/contact-support-for-business-products.md)
+ **¿Necesita algo más?** [Comprar o probar suscripciones para Office 365 operado por 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md)  |  [Cancelar la suscripción](cancel-your-subscription.md)  |  [Soporte técnico de llamadas](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
@@ -63,19 +63,19 @@ Si no ve el botón Cambiar **de** plan, el plan no se puede cambiar automáticam
 
 ::: moniker range="o365-worldwide"
 
-Para usar el botón **Cambiar de plan** para cambiar de plan automáticamente, todos los usuarios deben tener asignadas licencias válidas. Si ha asignado más licencias que las que ha comprado, verá una alerta en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencias</a> que indica que tiene un conflicto de licencias que debe resolverse. [Obtenga información sobre cómo resolver conflictos de licencia](../../admin/manage/resolve-license-conflicts.md). Después de que se hayan resuelto los conflictos de licencias, debería ver el botón **Cambiar de plan**. Si no es así, puede [cambiar de plan manualmente](switch-plans-manually.md)o llamar al soporte [técnico.](../../admin/contact-support-for-business-products.md)
+Para usar el botón **Cambiar de plan** para cambiar de plan automáticamente, todos los usuarios deben tener asignadas licencias válidas. Si ha asignado más licencias que las que ha comprado, verá una alerta en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencias</a> que indica que tiene un conflicto de licencias que debe resolverse. [Obtenga información sobre cómo resolver conflictos de licencia](../../admin/manage/resolve-license-conflicts.md). Después de que se hayan resuelto los conflictos de licencias, debería ver el botón **Cambiar de plan**. Si no es así, puede [cambiar los planes manualmente](switch-plans-manually.md)o llamar al soporte [técnico](../../admin/contact-support-for-business-products.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Para usar el botón **Cambiar de plan** para cambiar de plan automáticamente, todos los usuarios deben tener asignadas licencias válidas. Si ha asignado más licencias que las que ha comprado, verá una alerta en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licencias</a> que indica que tiene un conflicto de licencias que debe resolverse. [Obtenga información sobre cómo resolver conflictos de licencia](../../admin/manage/resolve-license-conflicts.md). Después de que se hayan resuelto los conflictos de licencias, debería ver el botón **Cambiar de plan**. Si no es así, puede [cambiar de plan manualmente](switch-plans-manually.md)o llamar al soporte [técnico.](../../admin/contact-support-for-business-products.md)
+Para usar el botón **Cambiar de plan** para cambiar de plan automáticamente, todos los usuarios deben tener asignadas licencias válidas. Si ha asignado más licencias que las que ha comprado, verá una alerta en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licencias</a> que indica que tiene un conflicto de licencias que debe resolverse. [Obtenga información sobre cómo resolver conflictos de licencia](../../admin/manage/resolve-license-conflicts.md). Después de que se hayan resuelto los conflictos de licencias, debería ver el botón **Cambiar de plan**. Si no es así, puede [cambiar los planes manualmente](switch-plans-manually.md)o llamar al soporte [técnico](../../admin/contact-support-for-business-products.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Para usar el botón **Cambiar de plan** para cambiar de plan automáticamente, todos los usuarios deben tener asignadas licencias válidas. Si ha asignado más licencias que las que ha comprado, verá una alerta en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licencias</a> que indica que tiene un conflicto de licencias que debe resolverse. [Obtenga información sobre cómo resolver conflictos de licencia](../../admin/manage/resolve-license-conflicts.md). Después de que se hayan resuelto los conflictos de licencias, debería ver el botón **Cambiar de plan**. Si no es así, puede [cambiar de plan manualmente](switch-plans-manually.md)o llamar al soporte [técnico.](../../admin/contact-support-for-business-products.md)
+Para usar el botón **Cambiar de plan** para cambiar de plan automáticamente, todos los usuarios deben tener asignadas licencias válidas. Si ha asignado más licencias que las que ha comprado, verá una alerta en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licencias</a> que indica que tiene un conflicto de licencias que debe resolverse. [Obtenga información sobre cómo resolver conflictos de licencia](../../admin/manage/resolve-license-conflicts.md). Después de que se hayan resuelto los conflictos de licencias, debería ver el botón **Cambiar de plan**. Si no es así, puede [cambiar los planes manualmente](switch-plans-manually.md)o llamar al soporte [técnico](../../admin/contact-support-for-business-products.md).
 
 ::: moniker-end
 
@@ -84,23 +84,23 @@ Para usar el botón **Cambiar de plan** para cambiar de plan automáticamente, t
 
 ::: moniker range="o365-worldwide"
 
-Para ver si hay problemas de aprovisionamiento o estado <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> del servicio, en  el centro de administración, vaya a la página Estado del servicio o seleccione Estado \> **del servicio de mantenimiento.**
+Para ver si hay problemas de aprovisionamiento o estado <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> del servicio, en el Centro de administración, vaya a la página Estado del servicio o seleccione **Estado** \> **del servicio de mantenimiento.**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Para ver si hay problemas de aprovisionamiento o estado del servicio, <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank"></a> en el Centro  de administración de Microsoft 365, vaya a la página Estado del servicio o seleccione Estado del servicio \> **de mantenimiento.**
+Para ver si hay problemas de aprovisionamiento o estado del servicio, <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank"></a> en el Centro de administración de Microsoft 365, vaya a la página Estado del servicio o seleccione **Estado** \> **del servicio de mantenimiento**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Para ver si hay problemas de aprovisionamiento o estado del servicio, <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank"></a> en el Centro  de administración de Microsoft 365, vaya a la página Estado del servicio o seleccione Estado del servicio \> **de mantenimiento.**
+Para ver si hay problemas de aprovisionamiento o estado del servicio, <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank"></a> en el Centro de administración de Microsoft 365, vaya a la página Estado del servicio o seleccione **Estado** \> **del servicio de mantenimiento**.
 
 ::: moniker-end
 
-Si encuentra que un servicio no está completamente preparado o un problema de estado del servicio, espere unas pocas horas para que el servicio se encuentre disponible y vuelva a intentarlo. Si todavía tiene un problema, llame [al soporte técnico.](../../admin/contact-support-for-business-products.md)
+Si encuentra que un servicio no está completamente preparado o un problema de estado del servicio, espere unas pocas horas para que el servicio se encuentre disponible y vuelva a intentarlo. Si todavía tiene un problema, llame [al soporte técnico](../../admin/contact-support-for-business-products.md).
   
 ### <a name="you-cant-switch-plans-because-another-plan-is-in-the-process-of-being-switched-and-is-pending-a-credit-check"></a>No puede cambiar de plan porque hay otro plan en proceso de cambio y hay pendiente una comprobación de crédito.
 
@@ -108,11 +108,11 @@ Espere a que la comprobación de crédito se haya completado para cambiar de pla
   
 ### <a name="currently-this-subscription-is-not-eligible-to-switch-plans"></a>Actualmente, esta suscripción no es apta para cambiar de plan.
 
-Puede cambiar [de plan manualmente o](switch-plans-manually.md) llamar al soporte [técnico.](../../admin/contact-support-for-business-products.md)
+Puede cambiar [los planes manualmente o](switch-plans-manually.md) llamar al soporte [técnico.](../../admin/contact-support-for-business-products.md)
   
 ### <a name="i-see-a-different-message-than-whats-listed-here"></a>Veo un mensaje distinto de lo que se ha incluido aquí.
 
-Puede cambiar [de plan manualmente o](switch-plans-manually.md) llamar al soporte [técnico.](../../admin/contact-support-for-business-products.md)
+Puede cambiar [los planes manualmente o](switch-plans-manually.md) llamar al soporte [técnico.](../../admin/contact-support-for-business-products.md)
   
 ## <a name="additional-reasons-the-switch-plans-button-is-unavailable"></a>Otras razones por las que el botón Cambiar de plan no está disponible
 
@@ -124,7 +124,7 @@ También puede llamar [al soporte técnico](../../admin/contact-support-for-busi
   
 ### <a name="you-have-a-government-or-non-profit-plan"></a>Tiene un plan para la administración pública o para una institución sin ánimo de lucro
 
-Si tiene un plan gubernamental o sin ánimo de lucro, puede cambiar de plan [manualmente](switch-plans-manually.md) o llamar al [soporte técnico](../../admin/contact-support-for-business-products.md) para obtener ayuda.
+Si tiene un plan gubernamental o sin ánimo de lucro, puede cambiar los planes [manualmente](switch-plans-manually.md) o llamar [al soporte técnico](../../admin/contact-support-for-business-products.md) para obtener ayuda.
   
 ### <a name="3000-or-more-licenses-have-been-purchased-and-assigned-for-the-subscription"></a>Se han comprado y asignado 3000 licencias o más para la suscripción
 

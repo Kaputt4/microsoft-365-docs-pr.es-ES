@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Las directivas de retención de registros de auditoría forman parte de las nuevas capacidades de Auditoría avanzada en Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización.
-ms.openlocfilehash: fd7e5dc37daad220257b4203679c6bb765140385
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 53449b6b83373eb2f749a4547845866dbea4a2af
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712050"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922856"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Administrar directivas de retención de registros de auditoría
 
@@ -104,7 +104,7 @@ Para editar una directiva, selecciónela para mostrar la página de control flot
 
 
 > [!IMPORTANT]
-> Si usa el cmdlet **New-UnifiedAuditLogRetentionPolicy**, es posible crear una directiva de retención de registros de auditoría para las actividades y los tipos de registros que no están disponibles en la herramienta **Crear directivas de retención de auditoría** en el panel. En este caso, no podrá editar la directiva (por ejemplo, cambiar la duración de la retención o agregar y quitar actividades) desde el panel **Directivas de retención de auditoría**. Solo podrá ver y eliminar la directiva en el centro de cumplimiento. Para editar la Directiva, tendrá que usar el cmdlet [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) en el centro de seguridad y cumplimiento de PowerShell.<br/><br/>**Sugerencia:** se muestra un mensaje en la parte superior de la página de salida para las directivas que se deben editar con PowerShell.
+> Si usa el cmdlet **New-UnifiedAuditLogRetentionPolicy**, es posible crear una directiva de retención de registros de auditoría para las actividades y los tipos de registros que no están disponibles en la herramienta **Crear directivas de retención de auditoría** en el panel. En este caso, no podrá editar la directiva (por ejemplo, cambiar la duración de la retención o agregar y quitar actividades) desde el panel **Directivas de retención de auditoría**. Solo podrá ver y eliminar la directiva en el centro de cumplimiento. Para editar la Directiva, tendrá que usar el cmdlet [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) en el centro de seguridad y cumplimiento de PowerShell.<br/><br/>**Sugerencia:** se muestra un mensaje en la parte superior de la página de salida para las directivas que se deben editar con PowerShell.
 
 ### <a name="delete-policies-in-the-dashboard"></a>Eliminar directivas en el panel
 
@@ -118,7 +118,7 @@ También puede usar PowerShell del Centro de seguridad y cumplimiento para crear
 
 Siga estos pasos para crear una directiva de retención de registros de auditoría en PowerShell:
 
-1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
 
 2. Ejecute el siguiente comando para crear una directiva de retención de registros de auditoría.
 
@@ -142,11 +142,11 @@ Este es otro ejemplo para la creación de una directiva de retención de registr
 New-UnifiedAuditLogRetentionPolicy -Name "SixMonth retention for admin logons" -RecordTypes AzureActiveDirectoryStsLogon -Operations UserLoggedIn -UserIds admin@contoso.onmicrosoft.com -RetentionDuration SixMonths -Priority 25
 ```
 
-Para obtener más información, consulte [New-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-unifiedauditlogretentionpolicy).
+Para obtener más información, consulte [New-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/new-unifiedauditlogretentionpolicy).
 
 ### <a name="view-policies-in-powershell"></a>Ver directivas en PowerShell
 
-Use el cmdlet [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy) en PowerShell del Centro de seguridad y cumplimiento para ver directivas de retención de registros de auditoría.
+Use el cmdlet [Get-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/get-unifiedauditlogretentionpolicy) en PowerShell del Centro de seguridad y cumplimiento para ver directivas de retención de registros de auditoría.
 
 Este es un comando de ejemplo para mostrar la configuración para todas directivas de retención de registros de auditoría en su organización. Este comando ordena las directivas de mayor a menor prioridad.
 
@@ -159,11 +159,11 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 
 ### <a name="edit-policies-in-powershell"></a>Editar directivas en PowerShell
 
-Use el cmdlet [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) en PowerShell del Centro de seguridad y cumplimiento para editar una directiva de retención de registros de auditoría existente.
+Use el cmdlet [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) en PowerShell del Centro de seguridad y cumplimiento para editar una directiva de retención de registros de auditoría existente.
 
 ### <a name="delete-policies-in-powershell"></a>Eliminar directivas en PowerShell
 
-Use el cmdlet [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) en PowerShell del Centro de seguridad y cumplimiento para eliminar una directiva de retención de registros de auditoría. La directiva puede tardar hasta 30 minutos para eliminarse por completo de su organización.
+Use el cmdlet [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) en PowerShell del Centro de seguridad y cumplimiento para eliminar una directiva de retención de registros de auditoría. La directiva puede tardar hasta 30 minutos para eliminarse por completo de su organización.
 
 ## <a name="more-information"></a>Más información
 

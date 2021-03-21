@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo optimizar el rendimiento de extensiones personalizadas en páginas de sitio modernas de SharePoint Online.
-ms.openlocfilehash: 92d328c64c89a1a01bbcd50fb7ad04affdf69af8
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 05d9b9cd9ad70630169595dc42080c718b39dbc8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287202"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923067"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Optimizar el rendimiento de extensiones personalizadas en páginas del sitio modernas de SharePoint Online
 
@@ -45,17 +45,17 @@ Puede encontrarse con los siguientes resultados:
 - **Posibilidades de mejora** (amarillo) Si se usan **cinco** o más extensiones, se mostrarán en esta sección como una advertencia hasta que se utilicen siete o más, lo que se mostrará como Atención necesaria.
 - **No es necesario realizar ninguna acción** (en verde): No hay ninguna extensión que tarde más de un segundo en cargarse.
 
-Si una extensión afecta al tiempo de carga de la página o hay  demasiadas extensiones en la página, el resultado aparece en la sección Atención necesaria de los resultados. Haga clic en el resultado para ver los detalles sobre la extensión que está demorando en cargar o la advertencia sobre la existencia de demasiadas extensiones. Las actualizaciones futuras de la herramienta Diagnóstico de páginas para SharePoint pueden incluir actualizaciones de las reglas de análisis, así que asegúrese de que siempre tiene la versión más reciente de la herramienta.
+Si una extensión afecta al tiempo de carga de la página o hay  demasiadas extensiones en la página, el resultado aparece en la sección Atención requerida de los resultados. Haga clic en el resultado para ver los detalles sobre la extensión que está demorando en cargar o la advertencia sobre la existencia de demasiadas extensiones. Las actualizaciones futuras de la herramienta Diagnóstico de páginas para SharePoint pueden incluir actualizaciones de las reglas de análisis, así que asegúrese de que siempre tiene la versión más reciente de la herramienta.
 
 ![Resultados de tiempo de carga de la página](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
 La información disponible en los resultados incluye lo siguiente:
 
 - **Nombre e identificador** muestra información de identificación que puede ayudarle a encontrar la extensión en la página
-- **En total** se muestra el tiempo total de carga e inicialización de la extensión al módulo. Es el tiempo relativo total que la extensión ha tomado para ejecutarse en la página, desde el principio hasta el final.
-- **La carga de** módulos muestra el tiempo que se ha necesitado para descargar, evaluar y cargar los archivos CSS y JavaScript de extensiones. A continuación, se iniciará el proceso init.
-- **Init** muestra el tiempo que se ha necesitado para que la extensión inicialice los datos.
-    Es una llamada asincrónica y el tiempo de init es el cálculo del tiempo para la función onInit cuando se resuelve la promesa devuelta.
+- **Total** muestra el tiempo total de la extensión a la carga e inicialización del módulo. Es el tiempo relativo total que la extensión ha tomado para ejecutarse en la página, desde el principio hasta el final.
+- **Carga de** módulos muestra el tiempo que se necesita para descargar, evaluar y cargar las extensiones de archivos JavaScript y CSS. A continuación, se iniciará el proceso Init.
+- **Init** muestra el tiempo que ha tomado la extensión para inicializar los datos.
+    Es una llamada asincrónica y el tiempo de init es el cálculo del tiempo de la función onInit cuando se resuelve la promesa devuelta.
 
 Se proporciona esta información para que los diseñadores y desarrolladores puedan solucionar problemas. Debe proporcionar esta información a su equipo de diseño y desarrollo.
 
@@ -88,7 +88,7 @@ Los autores de páginas también pueden usar el resultado de auditoría para ver
 
 - **Tamaño de extensión y dependencias**
   - El uso de la red CDN de Office 365 es necesario para una descarga de recursos estática óptima. Se prefieren los orígenes de la red CDN pública para los archivos _js/css_. Para obtener información sobre cómo usar la CDN de Office 365, vea [Usar la red de entrega de contenido (CDN) de Office 365 con SharePoint Online](use-microsoft-365-cdn-with-spo.md).
-  - Reutilice marcos como _importaciones de Fabric_ y _React_ que forman parte de SharePoint Framework (SPFx). Para más información, vea [Información general de SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
+  - Reutilice marcos como _importaciones de Fabric_ y _React_ que forman parte de SharePoint Framework (SPFx). Para más información, vea [Información general de SharePoint Framework](/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Asegúrese de que está usando la versión más reciente de SharePoint Framework y actualice a las nuevas versiones a medida que estén disponibles.
 - **Búsqueda y almacenamiento en caché de datos**
   - Si la extensión se basa en llamadas de servidor adicionales para obtener datos para mostrar, asegúrese de que las API del servidor son rápidas o implementan el almacenamiento en caché del lado cliente (como _localStorage_ o _IndexDB_ para conjuntos más grandes).
@@ -115,7 +115,7 @@ Antes de realizar revisiones de página para corregir problemas de rendimiento, 
 
 [Ajustar el rendimiento de Office 365](tune-microsoft-365-performance.md)
 
-[Rendimiento en la experiencia moderna de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Rendimiento en la experiencia moderna de SharePoint](/sharepoint/modern-experience-performance)
 
 [Redes de entrega de contenido](content-delivery-networks.md)
 

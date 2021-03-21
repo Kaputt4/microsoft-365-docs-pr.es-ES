@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Obtenga información sobre lo que sucede con sus datos cuando su suscripción de Microsoft 365 para empresas expira, está deshabilitada o la cancela.
-ms.openlocfilehash: a9e2e68c0eee119126af93552a50f1859f708c1f
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 7560e715a9b1951915866f96c8df3bd1f884a475
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741362"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921821"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?
 
 Si su suscripción finaliza, ya sea porque expira o porque decide cancelarla, el acceso a los servicios, aplicaciones y datos de clientes de Microsoft 365 pasa por varios estados antes de que la suscripción se desactive por completo o se *elimine*. Si está al tanto de esta progresión, estará más preparado para devolver su suscripción a un estado activo antes de que sea tarde o, si decide abandonar Microsoft 365, realizar una copia de seguridad de sus datos antes de que se eliminen finalmente.
 
-Lea esta información importante antes de ponerse en contacto con el [soporte técnico de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+Lea esta información importante antes de ponerse en contacto con el [soporte técnico de Microsoft 365](../../admin/contact-support-for-business-products.md).
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>¿Qué ocurre con los datos cuando una suscripción expira?
 
@@ -51,7 +51,7 @@ La siguiente tabla muestra qué sucederá cuando expira una suscripción de pago
 *Para la mayoría de las ofertas, en la mayoría de los países y las regiones.
   
 > [!NOTE]
-> **¿Qué son los "datos del cliente"?** Los datos del cliente, tal y como se indica en los [Términos de Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkId=613649), hacen referencia a todos los datos, incluidos todos los archivos de texto, sonido e imagen que el cliente, o alguien en su nombre, proporciona a Microsoft a través del uso de los servicios de Microsoft 365. Para obtener más información acerca de la protección de los datos del cliente, vea [Introducción al Portal de confianza de servicios de Microsoft](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal).
+> **¿Qué son los "datos del cliente"?** Los datos del cliente, tal y como se indica en los [Términos de Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkId=613649), hacen referencia a todos los datos, incluidos todos los archivos de texto, sonido e imagen que el cliente, o alguien en su nombre, proporciona a Microsoft a través del uso de los servicios de Microsoft 365. Para obtener más información acerca de la protección de los datos del cliente, vea [Introducción al Portal de confianza de servicios de Microsoft](../../compliance/get-started-with-service-trust-portal.md).
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>¿Qué pasa si cancelo una suscripción?
 
@@ -210,13 +210,13 @@ Cuando termine la versión de prueba, no podrá continuar usando Microsoft 365 d
 
 ::: moniker range="o365-worldwide"
 
-- **Compre Microsoft 365.** Al expirar la prueba, entrará en un período de gracia que le dará otros 30 días (para la mayoría de las pruebas, en la mayoría de los países y regiones) para comprar Microsoft 365. Para obtener información sobre cómo convertir su versión de prueba en una suscripción de pago, vea [Comprar su versión de prueba de Microsoft 365 para empresas](../buy-a-subscription-from-your-free-trial.md).
+- **Compre Microsoft 365.** Al expirar la prueba, entrará en un período de gracia que le dará otros 30 días (para la mayoría de las pruebas, en la mayoría de los países y regiones) para comprar Microsoft 365. Para obtener información sobre cómo convertir su versión de prueba en una suscripción de pago, vea [Comprar su versión de prueba de Microsoft 365 para empresas](../try-or-buy-microsoft-365.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-- **Compre Microsoft 365.** Al expirar la prueba, entrará en un período de gracia que le dará otros 30 días (para la mayoría de las pruebas, en la mayoría de los países y regiones) para comprar Microsoft 365. Para obtener información sobre cómo convertir su versión de prueba en una suscripción de pago, vea [Comprar su versión de prueba de Microsoft 365 para empresas](../buy-a-subscription-from-your-free-trial.md).
+- **Compre Microsoft 365.** Al expirar la prueba, entrará en un período de gracia que le dará otros 30 días (para la mayoría de las pruebas, en la mayoría de los países y regiones) para comprar Microsoft 365. Para obtener información sobre cómo convertir su versión de prueba en una suscripción de pago, vea [Comprar su versión de prueba de Microsoft 365 para empresas](../try-or-buy-microsoft-365.md).
 
 ::: moniker-end
 
@@ -235,7 +235,6 @@ Cuando termine la versión de prueba, no podrá continuar usando Microsoft 365 d
 
 ## <a name="related-content"></a>Contenido relacionado 
 
-[Cancelar su suscripción](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (artículo)\
-[Renovar Microsoft 365 para empresas](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (artículo)\
-[Reactivar su suscripción](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (artículo)
-
+[Cancelar su suscripción](./cancel-your-subscription.md) (artículo)\
+[Renovar Microsoft 365 para empresas](./renew-your-subscription.md) (artículo)\
+[Reactivar su suscripción](./reactivate-your-subscription.md) (artículo)

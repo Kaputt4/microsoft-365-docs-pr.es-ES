@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información acerca de cómo funciona la retención para Exchange.
-ms.openlocfilehash: 4e8a536aaa81b0117f40b0ce330491fa8430f97c
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 0763b8bdab75ac76197b8c89f187bb573a3e4bb1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754440"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922514"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Más información sobre la retención para Exchange
 
 La información de este artículo complementa el contenido de [Más información sobre la retención](retention.md) porque tiene información que es específica de Exchange.  Para otras cargas de trabajo, vea:
 
-- [Más información sobre las directivas de retención de SharePoint y OneDrive](retention-policies-sharepoint.md)
+- [Obtenga más información sobre la retención de SharePoint y OneDrive](retention-policies-sharepoint.md)
 - [Más información sobre las directivas de retención para Microsoft Teams](retention-policies-teams.md)
 - [Más información sobre la retención para Yammer](retention-policies-yammer.md)
 
@@ -44,7 +44,7 @@ Otros elementos almacenados en un buzón de correo, como los mensajes de Skype y
 
 ## <a name="how-retention-works-for-exchange"></a>Cómo funciona la retención para Exchange
 
-Tanto un buzón como una carpeta pública utilizan la [carpeta Elementos recuperables](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) para retener elementos. Sólo las personas a las que se les han asignado permisos de eDiscovery pueden ver los elementos de la carpeta Elementos recuperables de otro usuario.
+Tanto un buzón como una carpeta pública utilizan la [carpeta Elementos recuperables](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) para retener elementos. Sólo las personas a las que se les han asignado permisos de eDiscovery pueden ver los elementos de la carpeta Elementos recuperables de otro usuario.
   
 Cuando una persona elimina un mensaje en una carpeta distinta de la carpeta Elementos eliminados, de forma predeterminada, el mensaje pasa a la carpeta Elementos eliminados. Cuando una persona elimina un elemento de la carpeta Elementos eliminados, el mensaje se mueve a la carpeta Elementos recuperables. Sin embargo, un usuario puede borrar un elemento (Mayús+Supr) en cualquier carpeta, lo que evita la carpeta Elementos eliminados y mueve el elemento directamente a la carpeta Elementos recuperables.
   
@@ -84,7 +84,7 @@ Si un usuario deja la organización y su buzón está incluido en una directiva 
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
-Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y las etiquetas de retención](get-started-with-retention.md).
+Si va a configurar la retención en Microsoft 365 por primera vez, consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md).
 
 Si está listo para configurar una directiva de retención o etiqueta de retención para Exchange, consulte las siguientes instrucciones:
 - [Crear y configurar directivas de retención](create-retention-policies.md)

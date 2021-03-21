@@ -1,5 +1,5 @@
 ---
-title: Consideraciones de implementación de entrenamiento de simulación de ataques y preguntas frecuentes
+title: 'Implementación y preguntas más frecuentes del aprendizaje de simulación de ataques  '
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,14 +20,14 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las consideraciones de implementación y las preguntas más frecuentes sobre la simulación de ataques y el aprendizaje en organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b57252252d8a22ade4b8e1a18f42d7fdce91324e
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: f404e2a47756a611135fc70026bf0cce3eec62c4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454739"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921377"
 ---
-# <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Consideraciones de implementación de entrenamiento de simulación de ataques y preguntas frecuentes
+# <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Implementación y preguntas más frecuentes del aprendizaje de simulación de ataques  
 
 El entrenamiento de simulación de ataques [ya está disponible en general.](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291) El aprendizaje de simulación de ataques permite a las organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2 medir y administrar los riesgos de ingeniería social al permitir la creación y administración de simulaciones de suplantación de identidad (phishing) que funcionan con cargas de suplantación de identidad sin armas reales. El aprendizaje hiperespacio, impartido en asociación con la seguridad de Terranova, ayuda a mejorar el conocimiento y cambiar el comportamiento de los empleados.
 
@@ -72,7 +72,7 @@ Es posible que el número de usuarios que reciben realmente los mensajes de corr
 - Usuarios invitados.
 - Usuarios que ya no están activos en Azure Active Directory (Azure AD).
 
-Solo se incluirán en las simulaciones los usuarios válidos que no sean invitados con un buzón válido. Si usa grupos de distribución o grupos de seguridad habilitados para correo para dirigirse a los usuarios, puede usar el cmdlet [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroupmember) en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) para ver y validar miembros del grupo de distribución.
+Solo se incluirán en las simulaciones los usuarios válidos que no sean invitados con un buzón válido. Si usa grupos de distribución o grupos de seguridad habilitados para correo para dirigirse a los usuarios, puede usar el cmdlet [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) en [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) para ver y validar miembros del grupo de distribución.
 
 ## <a name="issues-with-attack-simulation-training-reporting"></a>Problemas con los informes de aprendizaje de simulación de ataques
 

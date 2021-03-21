@@ -19,12 +19,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Use la herramienta Diagnóstico de página para SharePoint para analizar el portal moderno de SharePoint Online y las páginas de publicación clásicas con un conjunto predefinido de criterios de rendimiento.
-ms.openlocfilehash: a6616a7d3f9f27365c7b96bbfb08a17c6d2be030
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b55e5c04f56bac4e6313284de60753d1beaaaed1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820216"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921635"
 ---
 # <a name="use-the-page-diagnostics-for-sharepoint-tool"></a>Usar la herramienta Diagnóstico de página para SharePoint
 
@@ -177,7 +177,7 @@ No hay ningún cambio visible, excepto que se le notificará que lo ha habilitad
 
 [Ajustar el rendimiento de Office 365](tune-microsoft-365-performance.md)
 
-[Rendimiento en la experiencia moderna de SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Rendimiento en la experiencia moderna de SharePoint](/sharepoint/modern-experience-performance)
 
 [Redes de entrega de contenido](content-delivery-networks.md)
 

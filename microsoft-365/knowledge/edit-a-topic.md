@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: ac8e4b8cdcdfd4d2de0c48a22500338c7a8480a8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 34c6551dd3a40852368b40d960bf921c52f46372
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454176"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921521"
 ---
 # <a name="edit-an-existing-topic"></a>Editar un tema existente 
 
@@ -34,11 +34,11 @@ En Temas de Viva, puede editar un tema existente. Es posible que deba hacerlo si
 > [!Note] 
 > Aunque la información de un tema recopilado por AI está recortada en [seguridad,](topic-experiences-security-trimming.md)tenga en cuenta que la descripción del tema y la información de personas que agrega manualmente al editar un tema existente es visible para todos los usuarios que tienen permisos para ver temas. 
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 Para editar un tema existente, debe:
 - Tener una licencia de Viva Topics.
-- Tener permisos para [**quién puede crear o editar temas**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Los administradores de conocimientos pueden conceder a los usuarios este permiso en la configuración de permisos del tema Temas de Viva. 
+- Tener permisos para [**quién puede crear o editar temas**](./topic-experiences-user-permissions.md). Los administradores de conocimientos pueden conceder a los usuarios este permiso en la configuración de permisos del tema Temas de Viva. 
 
 > [!Note] 
 > Los usuarios que tienen permiso para administrar temas en el Centro de temas (administradores de conocimientos) ya tienen permisos para crear y editar temas.
@@ -130,13 +130,6 @@ Los administradores de conocimientos también pueden editar temas directamente d
 
 
 ## <a name="see-also"></a>Consulte también
-
-
-
-  
-
-
-
 
 
 

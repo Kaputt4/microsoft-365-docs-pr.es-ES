@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente para todos los datos de su inquilino de Microsoft 365.
-ms.openlocfilehash: 2fed4730e79f6e2ace827eab338bf9da8fe55260
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: f50986b4e72808d4a1cd4dc8ee0182eb9c0a2455
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838245"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922694"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Introducción a la clave de cliente de Microsoft 365 en el nivel de inquilino (versión preliminar pública)
 
@@ -68,9 +68,9 @@ No hay ningún límite práctico en el número de suscripciones de Azure que pue
 
 La pérdida temporal o permanente de claves de cifrado raíz puede ser perjudicial o incluso catastrófica para la operación del servicio y puede provocar la pérdida de datos. Por este motivo, los recursos usados con la clave de cliente requieren una protección sólida. Todos los recursos de Azure que se usan con clave de cliente ofrecen mecanismos de protección más allá de la configuración predeterminada. Las suscripciones de Azure se pueden etiquetar o registrar de forma que se evite la cancelación inmediata e irrevocable. Esto se conoce como registro para un período de retención obligatorio. Los pasos necesarios para registrar suscripciones de Azure durante un período de retención obligatorio requieren colaboración con Microsoft. Este proceso puede tardar hasta cinco días laborables. Anteriormente, esto a veces se denominaba "No cancelar".
   
-Antes de ponerse en contacto con el equipo de Microsoft 365, debe realizar los siguientes pasos para cada suscripción de Azure que use con la clave de cliente. Asegúrese de que tiene instalado el módulo [Azure PowerShell Az](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) antes de empezar.
+Antes de ponerse en contacto con el equipo de Microsoft 365, debe realizar los siguientes pasos para cada suscripción de Azure que use con la clave de cliente. Asegúrese de que tiene instalado el módulo [Azure PowerShell Az](/powershell/azure/new-azureps-module-az) antes de empezar.
 
-1. Inicie sesión con Azure PowerShell. Para obtener instrucciones, vea [Iniciar sesión con Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
+1. Inicie sesión con Azure PowerShell. Para obtener instrucciones, vea [Iniciar sesión con Azure PowerShell](/powershell/azure/authenticate-azureps).
 
 2. Ejecute el cmdlet Register-AzProviderFeature para registrar las suscripciones para usar un período de retención obligatorio. Realice esta acción para cada suscripción.
 
@@ -104,7 +104,7 @@ Antes de ponerse en contacto con el equipo de Microsoft 365, debe realizar los s
 
 ### <a name="create-a-premium-azure-key-vault-in-each-subscription"></a>Crear un Almacén de claves de Azure premium en cada suscripción
 
-Los pasos para crear un almacén de claves se documentan en Introducción a [Azure Key Vault,](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)que le guía a través de la instalación y el inicio de Azure PowerShell, la conexión a la suscripción de Azure, la creación de un grupo de recursos y la creación de un almacén de claves en ese grupo de recursos.
+Los pasos para crear un almacén de claves se documentan en Introducción a [Azure Key Vault,](/azure/key-vault/general/overview)que le guía a través de la instalación y el inicio de Azure PowerShell, la conexión a la suscripción de Azure, la creación de un grupo de recursos y la creación de un almacén de claves en ese grupo de recursos.
   
 Al crear un almacén de claves, debe elegir una SKU: Standard o Premium. La SKU estándar permite proteger las claves de Azure Key Vault con software (no hay protección de claves del Módulo de seguridad de hardware (HSM) y la SKU premium permite el uso de HSM para proteger las claves del almacén de claves. Clave de cliente acepta almacenes de claves que usan cualquiera de las SKU, aunque Microsoft recomienda encarecidamente que use solo la SKU Premium. El costo de las operaciones con claves de cualquier tipo es el mismo, por lo que la única diferencia en el costo es el costo por mes de cada clave protegida por HSM. Consulta [Precios de Key Vault](https://azure.microsoft.com/pricing/details/key-vault/) para obtener más información.
   
@@ -113,7 +113,7 @@ Al crear un almacén de claves, debe elegir una SKU: Standard o Premium. La SKU 
 
 Use un prefijo común para los almacenes de claves e incluya una abreviatura del uso y el ámbito del almacén de claves y las claves. Por ejemplo, para el servicio Contoso donde se ubicarán los almacenes en Norteamérica, un posible par de nombres es Contoso-O365-NA-VaultA1 y Contoso-O365-NA-VaultA2. Los nombres de almacén son cadenas únicas globalmente en Azure, por lo que es posible que deba probar las variaciones de los nombres deseados en caso de que otros clientes de Azure ya resonan los nombres deseados. Una vez configurado, los nombres de almacén no se pueden cambiar, por lo que lo más recomendado es tener un plan escrito para la instalación y usar una segunda persona para comprobar que el plan se ejecuta correctamente.
 
-Si es posible, cree los almacenes en regiones no emparejadas. Las regiones de Azure emparejadas proporcionan alta disponibilidad entre dominios de error de servicio. Por lo tanto, los pares regionales se pueden pensar como la región de copia de seguridad del otro. Esto significa que un recurso de Azure que se coloca en una región obtiene automáticamente tolerancia a errores a través de la región emparejada. Por este motivo, elegir regiones para dos almacenes usados en una directiva de cifrado de datos en la que las regiones están emparejadas significa que solo se usa un total de dos regiones de disponibilidad. La mayoría de las zonas geográficas solo tienen dos regiones, por lo que aún no es posible seleccionar regiones no emparejadas. Si es posible, elija dos regiones no emparejadas para los dos almacenes usados con una directiva de cifrado de datos. Esto se beneficia de un total de cuatro regiones de disponibilidad. Para obtener más información, vea Continuidad empresarial y recuperación ante [desastres (BCDR): Regiones emparejadas](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) de Azure para obtener una lista actual de pares regionales.
+Si es posible, cree los almacenes en regiones no emparejadas. Las regiones de Azure emparejadas proporcionan alta disponibilidad entre dominios de error de servicio. Por lo tanto, los pares regionales se pueden pensar como la región de copia de seguridad del otro. Esto significa que un recurso de Azure que se coloca en una región obtiene automáticamente tolerancia a errores a través de la región emparejada. Por este motivo, elegir regiones para dos almacenes usados en una directiva de cifrado de datos en la que las regiones están emparejadas significa que solo se usa un total de dos regiones de disponibilidad. La mayoría de las zonas geográficas solo tienen dos regiones, por lo que aún no es posible seleccionar regiones no emparejadas. Si es posible, elija dos regiones no emparejadas para los dos almacenes usados con una directiva de cifrado de datos. Esto se beneficia de un total de cuatro regiones de disponibilidad. Para obtener más información, vea Continuidad empresarial y recuperación ante [desastres (BCDR): Regiones emparejadas](/azure/best-practices-availability-paired-regions) de Azure para obtener una lista actual de pares regionales.
 
 ### <a name="assign-permissions-to-each-key-vault"></a>Asignar permisos a cada almacén de claves
 
@@ -124,7 +124,7 @@ Para cada almacén de claves, deberá definir tres conjuntos de permisos indepen
   > [!IMPORTANT]
   > El conjunto de permisos asignados a los administradores del almacén de claves no incluye el permiso para eliminar claves. Esto es intencionado y una práctica importante. Normalmente, la eliminación de claves de cifrado no se realiza, ya que al hacerlo se destruyen datos de forma permanente. Como procedimiento recomendado, no conceda este permiso a los administradores del almacén de claves de forma predeterminada. En su lugar, reserve esto para los colaboradores del almacén de claves y asígnelo solo a un administrador a corto plazo una vez que se comprenda claramente las consecuencias.
   
-  Para asignar estos permisos a un usuario de la organización, inicie sesión en su suscripción de Azure con Azure PowerShell. Para obtener instrucciones, vea [Iniciar sesión con Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
+  Para asignar estos permisos a un usuario de la organización, inicie sesión en su suscripción de Azure con Azure PowerShell. Para obtener instrucciones, vea [Iniciar sesión con Azure PowerShell](/powershell/azure/authenticate-azureps).
 
    Ejecute el cmdlet Set-AzKeyVaultAccessPolicy para asignar los permisos necesarios.
 
@@ -138,7 +138,7 @@ Para cada almacén de claves, deberá definir tres conjuntos de permisos indepen
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- **Colaboradores del almacén de** claves que pueden cambiar los permisos en el propio Almacén de claves de Azure. Deberá cambiar estos permisos a medida que los empleados se vayan o se unan a su equipo, o en la rara situación en la que los administradores del almacén de claves necesitan permiso legítimamente para eliminar o restaurar una clave. Este conjunto de colaboradores del almacén de claves debe tener el rol Colaborador en el almacén de claves. Puede asignar este rol con Azure Resource Manager. Para obtener instrucciones detalladas, consulte [Use Role-Based Access Control](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure) para administrar el acceso a los recursos de suscripción de Azure. El administrador que crea una suscripción tiene este acceso de forma predeterminada y la capacidad de asignar otros administradores al rol Colaborador.
+- **Colaboradores del almacén de** claves que pueden cambiar los permisos en el propio Almacén de claves de Azure. Deberá cambiar estos permisos a medida que los empleados se vayan o se unan a su equipo, o en la rara situación en la que los administradores del almacén de claves necesitan permiso legítimamente para eliminar o restaurar una clave. Este conjunto de colaboradores del almacén de claves debe tener el rol Colaborador en el almacén de claves. Puede asignar este rol con Azure Resource Manager. Para obtener instrucciones detalladas, consulte [Use Role-Based Access Control](/azure/active-directory/role-based-access-control-configure) para administrar el acceso a los recursos de suscripción de Azure. El administrador que crea una suscripción tiene este acceso de forma predeterminada y la capacidad de asignar otros administradores al rol Colaborador.
 
 - Servicio de cifrado de datos en reposo de **Microsoft 365** que realiza el trabajo de clave de cliente en el nivel de inquilino. Para conceder permiso a Microsoft 365, ejecute el cmdlet **Set-AzKeyVaultAccessPolicy** con la siguiente sintaxis:
 
@@ -162,9 +162,9 @@ Cuando puede recuperar rápidamente las claves, es menos probable que experiment
   
 Para habilitar la eliminación suave en los almacenes de claves, siga estos pasos:
   
-1. Inicie sesión en su suscripción de Azure con Windows PowerShell. Para obtener instrucciones, vea [Iniciar sesión con Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
+1. Inicie sesión en su suscripción de Azure con Windows PowerShell. Para obtener instrucciones, vea [Iniciar sesión con Azure PowerShell](/powershell/azure/authenticate-azureps).
 
-2. Ejecute el cmdlet [Get-AzKeyVault.](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) En este ejemplo, *el nombre del almacén* es el nombre del almacén de claves para el que está habilitando la eliminación suave:
+2. Ejecute el cmdlet [Get-AzKeyVault.](/powershell/module/az.keyvault/get-azkeyvault) En este ejemplo, *el nombre del almacén* es el nombre del almacén de claves para el que está habilitando la eliminación suave:
 
    ```powershell
    $v = Get-AzKeyVault -VaultName <vault name>
@@ -183,7 +183,7 @@ Para habilitar la eliminación suave en los almacenes de claves, siga estos paso
 
 Hay dos formas de agregar claves a un Almacén de claves de Azure; puede crear una clave directamente en Key Vault o puede importar una clave. La creación de una clave directamente en Key Vault es el método menos complicado, mientras que la importación de una clave proporciona un control total sobre cómo se genera la clave. Use las claves RSA. Azure Key Vault no admite ajustar y desenvolver con claves de curva elípticas.
   
-Para crear una clave directamente en el almacén de claves, ejecute el cmdlet [Add-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey) de la siguiente manera:
+Para crear una clave directamente en el almacén de claves, ejecute el cmdlet [Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-azkeyvaultkey) de la siguiente manera:
   
 ```powershell
 Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
@@ -222,7 +222,7 @@ Si la propiedad _Nivel_ de recuperación devuelve algo distinto de un valor de *
 
 Inmediatamente después de la creación o cualquier cambio en una clave, realice una copia de seguridad y almacene copias de la copia de seguridad, tanto en línea como sin conexión. No conecte copias sin conexión a ninguna red. En su lugar, guárdalos en una instalación de almacenamiento física segura o comercial. Al menos una copia de la copia de seguridad debe almacenarse en una ubicación a la que se pueda acceder si se produce un desastre. Los blobs de copia de seguridad son el único medio para restaurar el material de clave en caso de que una clave del almacén de claves se destruya permanentemente o se represente de otro modo inoperable. Las claves externas a Azure Key Vault y que se importaron a Azure Key Vault no califican como copia de seguridad porque los metadatos necesarios para que la clave de cliente use la clave no existen con la clave externa. Solo se puede usar una copia de seguridad tomada de Azure Key Vault para operaciones de restauración con clave de cliente. Por lo tanto, es esencial que realice una copia de seguridad de Azure Key Vault una vez que se cargue o cree una clave.
   
-Para crear una copia de seguridad de una clave de Azure Key Vault, ejecute el cmdlet [Backup-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/backup-azkeyvaultkey) de la siguiente manera:
+Para crear una copia de seguridad de una clave de Azure Key Vault, ejecute el cmdlet [Backup-AzKeyVaultKey](/powershell/module/az.keyvault/backup-azkeyvaultkey) de la siguiente manera:
 
 ```powershell
 Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
@@ -245,7 +245,7 @@ Realizar la validación antes de usar claves en un DEP es opcional, pero muy rec
   
 Para comprobar que las claves tienen habilitadas las operaciones get, wrapKey y unwrapKey:
   
-Ejecute el cmdlet [Get-AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) de la siguiente manera:
+Ejecute el cmdlet [Get-AzKeyVault](/powershell/module/az.keyvault/get-azkeyvault) de la siguiente manera:
   
 ```powershell
 Get-AzKeyVault -VaultName <vault name>
@@ -265,7 +265,7 @@ Ejemplo: para el servicio de cifrado de datos de Microsoft 365 en reposo, reempl
   Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName c066d759-24ae-40e7-a56f-027002b5d3e4
   ```
 
-Para comprobar que no se ha establecido una fecha de expiración para las claves, ejecute el cmdlet [Get-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) de la siguiente manera:
+Para comprobar que no se ha establecido una fecha de expiración para las claves, ejecute el cmdlet [Get-AzKeyVaultKey](/powershell/module/az.keyvault/get-azkeyvault) de la siguiente manera:
   
 ```powershell
 Get-AzKeyVaultKey -VaultName <vault name>
@@ -273,7 +273,7 @@ Get-AzKeyVaultKey -VaultName <vault name>
 
 La clave de cliente no puede usar una clave expirada y las operaciones que se intentan con una clave expirada producirán un error y posiblemente provocarán una interrupción del servicio. Se recomienda encarecidamente que las claves usadas con la clave de cliente no tengan una fecha de expiración. Una fecha de expiración, una vez establecida, no se puede quitar, pero se puede cambiar a una fecha diferente. Si se debe usar una clave que tenga un conjunto de fechas de expiración, cambie el valor de expiración a 12/31/9999. Las claves con una fecha de expiración establecida en una fecha que no sea 12/31/9999 no superarán la validación de Microsoft 365.
   
-Para cambiar una fecha de expiración que se haya establecido en cualquier valor distinto del 12/31/9999, ejecute el cmdlet [Update-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey) de la siguiente manera:
+Para cambiar una fecha de expiración que se haya establecido en cualquier valor distinto del 12/31/9999, ejecute el cmdlet [Update-AzKeyVaultKey](/powershell/module/az.keyvault/update-azkeyvaultkey) de la siguiente manera:
   
 ```powershell
 Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date -Date "12/31/9999")
@@ -291,7 +291,7 @@ En Azure PowerShell:
 
 ## <a name="set-up-the-customer-key-encryption-policy-for-your-tenant"></a>Configurar la directiva de cifrado de clave de cliente para el inquilino
 
-Debe tener asignados permisos antes de poder ejecutar estos cmdlets. Aunque en este artículo se enumeran todos los parámetros de los cmdlets, es posible que no tenga acceso a algunos parámetros si no están incluidos en los permisos asignados. Para obtener los permisos necesarios para ejecutar cualquier cmdlet o parámetro en su organización, consulte [Find the permissions required to run any Exchange cmdlet](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
+Debe tener asignados permisos antes de poder ejecutar estos cmdlets. Aunque en este artículo se enumeran todos los parámetros de los cmdlets, es posible que no tenga acceso a algunos parámetros si no están incluidos en los permisos asignados. Para obtener los permisos necesarios para ejecutar cualquier cmdlet o parámetro en su organización, consulte [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
 
 ### <a name="create-policy"></a>Crear directiva
 
@@ -311,9 +311,9 @@ Parámetros:
 
 | Nombre | Descripción | Opcional (Y/N) |
 |----------|----------|---------|
-|Name|Nombre descriptivo de la directiva de cifrado de datos|N|
+|Nombre|Nombre descriptivo de la directiva de cifrado de datos|N|
 |AzureKeyIDs|Especifica dos valores uri de las claves de Azure Key Vault, separadas por una coma, para asociar con la directiva de cifrado de datos|N|
-|Descripción|Descripción de la directiva de cifrado de datos|N|
+|Description|Descripción de la directiva de cifrado de datos|N|
 
 ### <a name="assign-policy"></a>Asignar directiva
 
@@ -363,7 +363,7 @@ Parámetros:
 |----------|----------|---------|
 |-Identidad|Especifica la directiva de cifrado de datos que desea modificar.|N|
 |-Refresh|Use el modificador Refresh para actualizar la directiva de cifrado de datos después de girar cualquiera de las claves asociadas en el Almacén de claves de Azure. No es necesario especificar un valor con este modificador.|v|
-|-Enabled|El parámetro Enabled habilita o deshabilita la directiva de cifrado de datos. Antes de deshabilitar una directiva, debe desasignla del espacio empresarial. Los valores admitidos son:</br > $true: la directiva está habilitada</br > $true: la directiva está habilitada. Es el valor predeterminado.
+|-Enabled|El parámetro Enabled habilita o deshabilita la directiva de cifrado de datos. Antes de deshabilitar una directiva, debe desasignla del espacio empresarial. Los valores válidos son:</br > $true: la directiva está habilitada</br > $true: la directiva está habilitada. Es el valor predeterminado.
 |v|
 |-Name|El parámetro Name especifica el nombre único de la directiva de cifrado de datos.|v|
 |-Description|El parámetro Description especifica una descripción opcional para la directiva de cifrado de datos.|v|

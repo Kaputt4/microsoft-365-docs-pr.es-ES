@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: La Auditoría avanzada en Microsoft 365 proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: 012361e8ebbf1961d5ca21cef97357d5150523d5
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 0a77a5c54ce328a3966a952fc8fef08553f42462
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712060"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923490"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Auditoría avanzada en Microsoft 365
 
 La [funcionalidad de auditoría unificada](search-the-audit-log-in-security-and-compliance.md) en Microsoft 365 proporciona a las organizaciones la visibilidad de muchos tipos de actividades auditadas a través de los distintos servicios de Microsoft 365. La auditoría avanzada permite a las organizaciones dirigir investigaciones forenses y de cumplimiento incrementando la retención necesaria de registros de auditoría para dirigir una investigación, ofreciendo acceso a eventos fundamentales que ayuden a determinar el alcance del compromiso y agilizar el acceso a la API de Actividad de administración de Office 365.
 
 > [!NOTE]
-> Auditoría avanzada está disponible para organizaciones con una suscripción a Office 365 E5/G5 o Microsoft 365 Enterprise. Además, se puede asignar a los usuarios una licencia al complemento Cumplimiento de Microsoft 365 E5 o eDiscovery E5 y auditoría para cuando se requiera una licencia por usuario para las funciones de Auditoría avanzada, como es el caso de la conservación a largo plazo de los registros de auditoría y el acceso a eventos fundamentales para las investigaciones. Para obtener más información sobre las licencias, consulte la [Guía de licencias de Microsoft 365 para la seguridad y cumplimiento](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
+> Auditoría avanzada está disponible para organizaciones con una suscripción a Office 365 E5/G5 o Microsoft 365 Enterprise. Además, se puede asignar a los usuarios una licencia al complemento Cumplimiento de Microsoft 365 E5 o eDiscovery E5 y auditoría para cuando se requiera una licencia por usuario para las funciones de Auditoría avanzada, como es el caso de la conservación a largo plazo de los registros de auditoría y el acceso a eventos fundamentales para las investigaciones. Para obtener más información sobre las licencias, consulte la [Guía de licencias de Microsoft 365 para la seguridad y cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
 
 Este artículo proporciona una descripción general de las funciones de Auditoría avanzada y muestra cómo configurar usuarios para Auditoría avanzada.
 
@@ -85,7 +85,7 @@ Para buscar registros de auditoría de MailItemsAccessed, puede buscar la activi
 
 ![Buscar acciones MailItemsAccessed en la herramienta de búsqueda de registros de auditoría](../media/AdvAudit_MailItemsAccessed.png)
 
-También puede ejecutar los comandos [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) o [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) en Exchange Online PowerShell.
+También puede ejecutar los comandos [Search-UnifiedAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-unifiedauditlog) o [Search-MailboxAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-mailboxauditlog) en Exchange Online PowerShell.
 
 ### <a name="send"></a>Enviar
 
@@ -103,7 +103,7 @@ Para buscar registros de auditoría de Send, puede buscar la actividad de **Mens
 
 ![Buscar acciones de mensaje enviado en la herramienta de búsqueda de registros de auditoría](../media/AdvAudit_SentMessage.png)
 
-También puede ejecutar los comandos [Search-UnifiedAuditLog -Operations Send](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) o [Search-MailboxAuditLog -Operations Send](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) en Exchange Online PowerShell.
+También puede ejecutar los comandos [Search-UnifiedAuditLog -Operations Send](/powershell/module/exchange/search-unifiedauditlog) o [Search-MailboxAuditLog -Operations Send](/powershell/module/exchange/search-mailboxauditlog) en Exchange Online PowerShell.
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
@@ -125,7 +125,7 @@ Para buscar registros de auditoría de SearchQueryInitiatedExchange, puede busca
 
 ![Buscar acciones de búsqueda de mensaje enviado en la herramienta de búsqueda de registros de auditoría](../media/AdvAudit_SearchExchange.png)
 
-También puede ejecutar [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell.
+También puede ejecutar [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell.
 
 > [!NOTE]
 > Debe ejecutar el comando siguiente en Exchange Online PowerShell para que los eventos SearchQueryInitiatedExchange (llevados a cabo por el usuario de E5 especificado) se incluyan en los resultados de la búsqueda en el registro de auditoría: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.<br/><br/>
@@ -150,7 +150,7 @@ Para buscar registros de auditoría de SearchQueryInitiatedSharePoint, puede bus
 
 ![Buscar acciones de búsqueda de SharePoint realizadas en la herramienta de búsqueda de registros de auditoría](../media/AdvAudit_SearchSharePoint.png)
 
-También puede ejecutar [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell.
+También puede ejecutar [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) en Exchange Online PowerShell.
 
 > [!NOTE]
 > Debe ejecutar el comando siguiente en Exchange Online PowerShell para que los eventos SearchQueryInitiatedExchange (llevados a cabo por el usuario de E5 especificado) se incluyan en los resultados de la búsqueda en el registro de auditoría: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.<br/><br/>
@@ -165,7 +165,7 @@ Con el lanzamiento de la Auditoría avanzada, estamos pasando de un límite de n
 
 Se asigna inicialmente una línea base de 2000 solicitudes por minuto a todas las organizaciones. Este límite se incrementará de forma dinámica dependiendo del número de puestos de la organización y su suscripción de licencias. Las organizaciones E5 obtendrán, aproximadamente, el doble de ancho de banda que las organizaciones que no son E5. También habrá un límite en el ancho de banda máximo para proteger el estado del servicio.
 
-Para obtener más información, vea la sección "límite de la API" en la [referencia de la API de Actividad de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
+Para obtener más información, vea la sección "límite de la API" en la [referencia de la API de Actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
 
 ## <a name="set-up-advanced-audit-for-users"></a>Configurar Auditoría avanzada para usuarios
 
@@ -183,7 +183,7 @@ Las características de Auditoría avanzada, como la capacidad para registrar ev
 
    El registro de los registros de auditoría para MailItemsAccessed, Send y otros eventos fundamentales para el usuario empezará en 24 horas.
 
-En el caso de las organizaciones que asignan licencias a grupos de usuarios mediante licencias basadas en grupos, tiene que desactivar la asignación de licencias para la Auditoría avanzada de Microsoft 365 para el grupo. Una vez que haya guardado los cambios, compruebe que está desactivada la Auditoría avanzada de Microsoft 365 para el grupo. Después, vuelva a activar la asignación de licencias para el grupo. Para obtener instrucciones sobre las licencias basadas en grupos, vea [Asignar licencias a usuarios por la pertenencia a grupos en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).
+En el caso de las organizaciones que asignan licencias a grupos de usuarios mediante licencias basadas en grupos, tiene que desactivar la asignación de licencias para la Auditoría avanzada de Microsoft 365 para el grupo. Una vez que haya guardado los cambios, compruebe que está desactivada la Auditoría avanzada de Microsoft 365 para el grupo. Después, vuelva a activar la asignación de licencias para el grupo. Para obtener instrucciones sobre las licencias basadas en grupos, vea [Asignar licencias a usuarios por la pertenencia a grupos en Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
 Además, si ha personalizado las acciones de buzón de correo que se registran en buzones de usuario o compartidos, las nuevas acciones de buzón predeterminadas como MailItemsAccessed no se auditarán automáticamente en esos buzones de correo. Para información sobre cómo cambiar las acciones de buzón de correo que se auditan para cada tipo de inicio de sesión, consulte la sección "Cambiar o restaurar acciones de buzón registradas de forma predeterminada" en [Administrar la auditoría de buzón](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
 

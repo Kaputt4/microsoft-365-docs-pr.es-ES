@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 8a91a55d9598b5e780474315ddf1f7019e593fed
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 755be1dde256bc612ba85e1b1af485cfaacf7da9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406167"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921869"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Cómo notificar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
@@ -53,9 +53,9 @@ También puede enviar [un archivo a Microsoft para el análisis de malware.](htt
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Ajustar una alerta para evitar que los falsos positivos se repitan
 
-Si una alerta se desencadena por uso legítimo o la alerta es inexacta, puede administrar [alertas en el portal de Cloud App Security](https://docs.microsoft.com/cloud-app-security/managing-alerts).
+Si una alerta se desencadena por uso legítimo o la alerta es inexacta, puede administrar [alertas en el portal de Cloud App Security](/cloud-app-security/managing-alerts).
 
-Si su organización usa [Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection) para endpoint además de Office 365 y un archivo, dirección IP, dirección URL o dominio se trata como malware en un dispositivo, aunque sea seguro, puede crear un indicador personalizado con una acción ["Permitir"](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)para el dispositivo .
+Si su organización usa [Microsoft Defender](/windows/security/threat-protection) para endpoint además de Office 365 y un archivo, dirección IP, dirección URL o dominio se trata como malware en un dispositivo, aunque sea seguro, puede crear un indicador personalizado con una acción ["Permitir"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)para el dispositivo .
 
 ## <a name="undo-a-remediation-action"></a>Deshacer una acción de corrección
 

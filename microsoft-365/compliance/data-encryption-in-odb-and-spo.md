@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: Entienda los elementos básicos del cifrado de seguridad de datos en OneDrive para la Empresa y SharePoint Online.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f0c78a9ca6e6bad1e4aea707f8be5dec818b7a27
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ca93d04fa21487ad054cd9cb924dff1fc15abfbd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817929"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922634"
 ---
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>Cifrado de datos en OneDrive para la Empresa y SharePoint Online
 
@@ -32,7 +32,7 @@ Entienda los elementos básicos del cifrado de seguridad de datos en OneDrive pa
   
 ## <a name="security-and-data-encryption-in-office-365"></a>Seguridad y cifrado de datos en Office 365
 
-Microsoft 365 es un entorno altamente seguro que ofrece una protección amplia en varias capas: seguridad del centro de datos físico, seguridad de red, seguridad de acceso, seguridad de aplicaciones y seguridad de datos. Este artículo se centra específicamente en el lado del cifrado en tránsito y en reposo de la seguridad de datos para OneDrive para la Empresa y SharePoint Online.
+Microsoft 365 es un entorno altamente seguro que ofrece una protección extensa en varias capas: seguridad del centro de datos físico, seguridad de red, seguridad de acceso, seguridad de aplicaciones y seguridad de datos. Este artículo se centra específicamente en el lado del cifrado en tránsito y en reposo de la seguridad de datos para OneDrive para la Empresa y SharePoint Online.
   
 Vea cómo funciona el cifrado de datos en el siguiente vídeo.
   
@@ -50,11 +50,11 @@ En OneDrive para la Empresa y SharePoint Online, hay dos escenarios en los que l
 
 El cifrado en reposo incluye dos componentes: cifrado de nivel de disco de BitLocker y cifrado por archivo del contenido del cliente.
   
-BitLocker se implementa para OneDrive para la Empresa y SharePoint Online en todo el servicio. El cifrado por archivo también está en OneDrive para la Empresa y SharePoint Online en Microsoft 365 multiinquilino y en nuevos entornos dedicados que se han creado con tecnología multiinquilino.
+BitLocker se implementa para OneDrive para la Empresa y SharePoint Online en todo el servicio. El cifrado por archivo también está en OneDrive para la Empresa y SharePoint Online en Microsoft 365 multiinquilino y en nuevos entornos dedicados basados en tecnología multiinquilino.
   
 Mientras que BitLocker cifra todos los datos en un disco, el cifrado por archivo va más allá al incluir una clave de cifrado única para cada archivo. Además, la actualización de cada archivo se cifra mediante su propia clave de cifrado. Antes de almacenarse, las claves del contenido cifrado se almacenan en una ubicación físicamente independiente del contenido. Cada paso de este cifrado usa el Estándar de cifrado avanzado (AES) con claves de 256 bits y cumple el Estándar federal de procesamiento de información (FIPS) 140-2. El contenido cifrado se distribuye entre varios contenedores en el centro de datos y cada contenedor tiene credenciales exclusivas. Estas credenciales se almacenan en una ubicación física independiente del contenido o de las claves de contenido.
   
-Para obtener información adicional sobre el cumplimiento de FIPS 140-2, vea [FIPS 140-2 Compliance](https://go.microsoft.com/fwlink/?LinkId=517625).
+Para obtener información adicional sobre el cumplimiento de FIPS 140-2, vea [FIPS 140-2 Compliance](/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105)).
   
 El cifrado de nivel de archivo en reposo saca provecho del almacenamiento de blobs para ofrecer aumento de almacenamiento prácticamente ilimitado y habilitar una protección sin precedentes. Todo el contenido de clientes en OneDrive para la Empresa y SharePoint Online se migrará al almacenamiento de blobs. A continuación, se muestra cómo se protegen los datos:
   

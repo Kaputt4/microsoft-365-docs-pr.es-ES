@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 37b473e2cfffff3984ff81245f09e98ee18685ea
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 0ac1028ca3485f75518ccca298a1fd85a7bf40ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826203"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922395"
 ---
 # <a name="user-submissions-policy"></a>Directiva de envíos de usuarios
 
@@ -75,7 +75,7 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 - Para modificar la configuración de envíos de usuarios, debe ser miembro de uno de los siguientes grupos de roles:
 
   - **Administración de la organización** o **Administrador de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
-  - **Administración de la** organización [en Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Administración de la** organización [en Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - Necesita acceso a Exchange Online PowerShell. Si la cuenta que está intentando usar no tiene acceso a Exchange Online PowerShell, recibirá un error similar al especificar el buzón de envíos:
 
@@ -83,8 +83,8 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
   Para obtener más información sobre cómo habilitar o deshabilitar el acceso a Exchange Online PowerShell, consulte los siguientes temas:
 
-  - [Habilitar o deshabilitar el acceso a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell) 
-  - [Reglas de acceso de cliente en Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+  - [Habilitar o deshabilitar el acceso a Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Reglas de acceso de cliente en Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>Usar el Centro de seguridad & cumplimiento para configurar el buzón de envíos de usuario
 
@@ -155,4 +155,3 @@ En el siguiente ejemplo:
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 Los mensajes que no siguen este formato no se mostrarán correctamente en el portal de envíos.
-

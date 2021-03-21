@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar Attack Simulator para ejecutar ataques simulados de suplantación de identidad y contraseña en sus organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c88a5df6fae61e1ffe70214ad4a73deef4b380e
-ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
+ms.openlocfilehash: 105ca66cdfacaab3b73d8bf89c3a05207b673a3c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50717607"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921365"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulador de ataques en Microsoft Defender para Office 365
 
@@ -45,7 +45,7 @@ Si su organización tiene Microsoft Defender para Office 365 Plan 2, que incluye
 
 - Para abrir el Centro de seguridad y cumplimiento, vaya a <https://protection.office.com/>. El simulador de ataque está disponible en **el simulador de ataque de administración** de \> **amenazas.** Vaya directamente al simulador de ataque, abra <https://protection.office.com/attacksimulator> .
 
-- Para obtener más información sobre la disponibilidad de Attack Simulator en diferentes suscripciones de Microsoft 365, vea Descripción del servicio de [Microsoft Defender para Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- Para obtener más información sobre la disponibilidad de Attack Simulator en diferentes suscripciones de Microsoft 365, vea Descripción del servicio de [Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 - Debe ser miembro de los grupos de roles **Administración** de la organización o Administrador **de** seguridad. Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
@@ -55,7 +55,7 @@ Si su organización tiene Microsoft Defender para Office 365 Plan 2, que incluye
 
 - Las campañas de suplantación de identidad recopilarán y procesarán eventos durante 30 días. Los datos históricos de la campaña estarán disponibles hasta 90 días después de iniciar la campaña.
 
-- Los datos relacionados con la simulación de ataques y el aprendizaje se almacenan con otros datos de clientes para los servicios de Microsoft 365. Para obtener más información, [vea Ubicaciones de datos de Microsoft 365](/microsoft-365/enterprise/o365-data-locations).
+- Los datos relacionados con la simulación de ataques y el aprendizaje se almacenan con otros datos de clientes para los servicios de Microsoft 365. Para obtener más información, [vea Ubicaciones de datos de Microsoft 365](../../enterprise/o365-data-locations.md).
 
 - No hay cmdlets de PowerShell correspondientes para Attack Simulator.
 

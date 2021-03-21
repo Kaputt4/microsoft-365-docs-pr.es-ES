@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información acerca de cómo crear un tipo de información confidencial personalizado que le permita usar reglas que cumplan con las necesidades de su organización.
-ms.openlocfilehash: 40584b430af6e822b115e014c20481c027222aae
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 79d79a220e0cd8de0755f6cdac99cf7cceb2997f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423409"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922664"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizar un tipo de información confidencial integrado
 
@@ -33,7 +33,7 @@ Puede usar este ejemplo y aplicarlo en otros tipos de información confidencial 
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>Exportar el archivo XML de las reglas actuales
 
-Para exportar el archivo XML, necesita [conectarse al Centro de seguridad y cumplimiento mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+Para exportar el archivo XML, necesita [conectarse al Centro de seguridad y cumplimiento mediante PowerShell remoto](/powershell/exchange/connect-to-scc-powershell).
   
 1. En el símbolo del sistema de PowerShell, escriba lo siguiente para mostrar en pantalla las reglas de la organización. Si no creó sus propias reglas, solo verá las reglas integradas y predeterminadas con la etiqueta “Paquete de reglas de Microsoft”.
 
@@ -201,7 +201,7 @@ Para cargar la regla, siga el procedimiento siguiente.
   
 1. Guárdela como un archivo .xml con codificación Unicode. Es importante porque la regla no funcionará si se guarda con una codificación diferente.
     
-2. [Conectarse al Centro de seguridad y cumplimiento con PowerShell remoto.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+2. [Conectarse al Centro de seguridad y cumplimiento con PowerShell remoto.](/powershell/exchange/connect-to-scc-powershell)
     
 3. En el símbolo del sistema de PowerShell, escriba lo siguiente.
 

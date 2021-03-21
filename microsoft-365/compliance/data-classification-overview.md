@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: 7bf9a7151f8df45716ab032dd3c62a33f4f5adc8
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 8f3bb2da1e7011fef334ec345a02d7facedc25fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999400"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922684"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Información general sobre la clasificación de datos
 
@@ -37,7 +37,7 @@ Como administrador de Microsoft 365 o administrador de cumplimiento, puede evalu
 
 También puede administrar estas características en la página de clasificación de datos:
 - [clasificadores que se pueden entrenar](classifier-learn-about.md)
-- [tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+- [tipos de información confidencial](./sensitive-information-type-entity-definitions.md)
 
 Puede encontrar la clasificación de los datos en el **Centro de cumplimiento de Microsoft 365** o en el **Centro de seguridad de Microsoft 365** > **Clasificación** > **Clasificación de datos**.
 
@@ -49,7 +49,7 @@ La clasificación de datos analizará su contenido confidencial y el contenido e
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Un numero de diferentes suscripciones admite punto de conexión DLP. Para ver las opciones de licencia para el punto de conexión DLP, vea [Concesión de licencias de protección de la información para obtener instrucciones](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
+Un numero de diferentes suscripciones admite punto de conexión DLP. Para ver las opciones de licencia para el punto de conexión DLP, vea [Concesión de licencias de protección de la información para obtener instrucciones](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
 
 ### <a name="permissions"></a>Permissions
 
@@ -97,7 +97,7 @@ La tarjeta de la etiqueta de confidencialidad muestra el número de elementos (c
 
 > [!NOTE]
 > Si no ha creado ni publicado ninguna etiqueta de confidencialidad o si el contenido no tiene ninguna etiqueta de confidencialidad aplicada, esta tarjeta mostrará el mensaje "No se ha detectado ninguna etiqueta de confidencialidad". Para empezar a usar las etiquetas de confidencialidad, consulte:
->- [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md) o, para AIP, [Configuración de la directiva de Information Protection de Azure](https://docs.microsoft.com/azure/information-protection/configure-policy)
+>- [Introducción a las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md) o, para AIP, [Configuración de la directiva de Information Protection de Azure](/azure/information-protection/configure-policy)
 
 ## <a name="top-retention-labels-applied-to-content"></a>Etiquetas principales de retención que se aplican al contenido
 

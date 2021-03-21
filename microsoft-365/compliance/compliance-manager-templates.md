@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en El Administrador de cumplimiento de Microsoft. Cree y modifique plantillas con un archivo de Excel con formato.
-ms.openlocfilehash: 9f76ff6202ff9ad4a876c57209748dd7c98877b4
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 2d95aa4172d80a81e8c635edb01ab56579513c53
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405834"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922790"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Trabajar con plantillas de evaluación en el Administrador de cumplimiento
 
 **En este artículo:** Comprenda **cómo funcionan las plantillas** y cómo **administrarlas desde** la página de plantillas de evaluación. Obtenga instrucciones para **crear nuevas** plantillas, **modificar** plantillas existentes, dar formato a los datos de la plantilla **con Excel** y exportar informes de **plantilla**.
 
 > [!IMPORTANT]
-> Las plantillas de evaluación que están disponibles para su organización dependen del contrato de licencia. [Revise los detalles](https://go.microsoft.com/fwlink/?linkid=2132371).
+> Las plantillas de evaluación que están disponibles para su organización dependen del contrato de licencia. [Revise los detalles](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="templates-overview"></a>Introducción a plantillas
 
@@ -38,7 +38,7 @@ Una plantilla es un marco de controles para crear una evaluación en el Administ
 
 #### <a name="included-and-premium-templates"></a>Plantillas incluidas y premium
 
-Las plantillas disponibles para su uso se basan en el contrato de licencia de su organización ([ver detalles de licencias](https://go.microsoft.com/fwlink/?linkid=2132371)). Hay dos categorías de plantillas: incluidas y premium.
+Las plantillas disponibles para su uso se basan en el contrato de licencia de su organización ([ver detalles de licencias](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)). Hay dos categorías de plantillas: incluidas y premium.
 
 1. **Las plantillas incluidas** están disponibles para su uso como parte del contrato de licencia de su organización.
 2. **Las plantillas** Premium deben adquirirse para crear evaluaciones a partir de ellas. Una vez comprado, puede crear tantas evaluaciones de una plantilla como sea necesario.
@@ -60,7 +60,7 @@ Por ejemplo, si el contador muestra 2/5, esto significa que su organización ha 
 
 Si el contador muestra 5/2, esto indica que su organización supera sus límites y necesita comprar 3 de las plantillas premium en uso.
 
-Consulte [Compliance Manager licensing guidance (Guía de licencias del Administrador de cumplimiento)](https://go.microsoft.com/fwlink/?linkid=2132371) para obtener más información.
+Consulte [Compliance Manager licensing guidance (Guía de licencias del Administrador de cumplimiento)](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) para obtener más información.
 
 ## <a name="viewing-and-managing-templates-from-the-assessment-templates-page"></a>Visualización y administración de plantillas desde la página plantillas de evaluación
 
