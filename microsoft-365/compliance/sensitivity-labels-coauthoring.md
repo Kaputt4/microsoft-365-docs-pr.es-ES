@@ -13,16 +13,16 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: d26696530ed86e6608b6473fead0775fb07a060b
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 90c00eb448d6d8f02170a37062af05cb0c0db59d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454641"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919576"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Esta característica se encuentra en versión preliminar y está sujeta a cambios. 
@@ -58,7 +58,7 @@ Puede obtener más información sobre este cambio de metadatos en los siguientes
 
 - Entrada de blog: [Próximos cambios del almacenamiento de metadatos de Microsoft Information Protection](https://techcommunity.microsoft.com/t5/microsoft-security-and/upcoming-changes-to-microsoft-information-protection-metadata/ba-p/1904418)
 
-- Especificaciones abiertas: [2.6.3 Diferencias entre Labelinfo y Propiedades de documento personalizado](https://docs.microsoft.com/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
+- Especificaciones abiertas: [2.6.3 Diferencias entre Labelinfo y Propiedades de documento personalizado](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
 Debido a estos cambios, no habilite esta configuración si tiene aplicaciones, servicios, scripts o herramientas en la organización que lean o escriban metadatos de etiquetado en la ubicación anterior. Si lo hace, estas son algunas de las consecuencias:
 
@@ -68,7 +68,7 @@ Debido a estos cambios, no habilite esta configuración si tiene aplicaciones, s
 
 - La coautoría y el autoguardado no funcionarán en un documento etiquetado y cifrado si otro usuario lo tiene abierto en una aplicación de escritorio de Office que no es compatible con los nuevos metadatos de etiquetación
 
-- Una regla de flujo de correo de Exchange Online que [identifica etiquetas como propiedades personalizadas en datos adjuntos de Office](https://docs.microsoft.com/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) no puede cifrar el correo electrónico y los datos adjuntos o las cifra incorrectamente
+- Una regla de flujo de correo de Exchange Online que [identifica etiquetas como propiedades personalizadas en datos adjuntos de Office](/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) no puede cifrar el correo electrónico y los datos adjuntos o las cifra incorrectamente
 
 Consulte en la siguiente sección una lista de aplicaciones y servicios compatibles con esta configuración y los cambios en los metadatos de etiquetado.
 
@@ -108,7 +108,7 @@ Los servicios de Microsoft 365 admiten automáticamente los nuevos metadatos de 
 
 - [Directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [Directivas DLP que usan etiquetas de confidencialidad como condiciones](dlp-sensitivity-label-as-condition.md)
-- [Microsoft Cloud App Security configurado para aplicar etiquetas de confidencialidad](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
+- [Microsoft Cloud App Security configurado para aplicar etiquetas de confidencialidad](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
 ## <a name="limitations"></a>Limitaciones
 
@@ -125,7 +125,7 @@ Antes de habilitar la configuración de espacio empresarial para la coautoría d
     
     Para las etiquetas con cualquiera de estas configuraciones de cifrado, las etiquetas se muestran en las aplicaciones de Office. Sin embargo, cuando los usuarios seleccionan estas etiquetas y nadie más está editando el documento, se les advierte de que la coautoría y el Autoguardado no estarán disponibles. Si alguien más está editando el documento, los usuarios verán un mensaje que indica que no se pueden aplicar las etiquetas.
 
-- Si usa el cliente de etiquetado unificado de Azure Information Protection: Compruebe la documentación de este cliente de etiquetado para ver [otros requisitos o limitaciones](https://docs.microsoft.com/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview).
+- Si usa el cliente de etiquetado unificado de Azure Information Protection: Compruebe la documentación de este cliente de etiquetado para ver [otros requisitos o limitaciones](/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview).
 
 ## <a name="known-issues-for-this-preview"></a>Problemas conocidos para esta versión preliminar
 
@@ -171,7 +171,7 @@ Cuando haya habilitado la coautoría para archivos con etiquetas de confidencial
 
 ![Opción que muestra la coautoría activada para etiquetas de confidencialidad](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-Como puede ver en la captura de pantalla cuando esta configuración se ha activado, puede ponerse en contacto con el [Soporte técnico de Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) y solicitar desactivar esta configuración. Esta solicitud puede tardar varios días y necesitará demostrar que es un administrador global de su espacio empresarial. Se aplicarán los cargos de soporte técnico habituales. 
+Como puede ver en la captura de pantalla cuando esta configuración se ha activado, puede ponerse en contacto con el [Soporte técnico de Microsoft](/office365/admin/contact-support-for-business-products) y solicitar desactivar esta configuración. Esta solicitud puede tardar varios días y necesitará demostrar que es un administrador global de su espacio empresarial. Se aplicarán los cargos de soporte técnico habituales. 
 
 Si un ingeniero de soporte técnico deshabilita esta configuración para su espacio empresarial:
 

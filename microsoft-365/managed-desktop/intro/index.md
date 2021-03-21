@@ -9,17 +9,17 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8e95eb0fd0e03dc718affa7e7cf044beb654bb56
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 07d3d50f012b2d93e9f7a75f47b0c35514b51350
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840940"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920625"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el Escritorio administrado de Microsoft?
 
 
-El Escritorio administrado de Microsoft es un servicio basado en la nube que reúne [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (incluido [Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise y [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) y agrega estas características:
+El Escritorio administrado de Microsoft es un servicio basado en la nube que reúne [Microsoft 365 Enterprise](../../enterprise/microsoft-365-overview.md) (incluido [Windows 10](/windows/windows-10/) Enterprise y [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) y agrega estas características:
 
 - Implementación de dispositivo de usuario
 - Operaciones y administración de servicios de TI
@@ -44,7 +44,7 @@ Nuestras directivas y la línea base de seguridad proporcionan a los usuarios es
 - Tiempos de arranque de los dispositivos de Escritorio administrado de Microsoft de una cuarta parte.
 - Como mínimo, el doble de duración de la batería.
 - Alrededor de un tercio del número de bloqueos de dispositivo por año.
-- Movilidad de dispositivos a través de [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), que permite que los usuarios tener la misma experiencia, independientemente del dispositivo en el que inicien sesión.
+- Movilidad de dispositivos a través de [Enterprise State Roaming](/azure/active-directory/devices/enterprise-state-roaming-overview), que permite que los usuarios tener la misma experiencia, independientemente del dispositivo en el que inicien sesión.
 
 Los administradores de TI se benefician de estas características:
 
@@ -58,7 +58,7 @@ El Escritorio administrado de Microsoft asume la carga de administración de dis
 
 - **Hardware:** en lugar de que su departamento de TI tenga que investigar y probar dispositivos (y sus controladores), Escritorio administrado de Microsoft prueba cuidadosamente los dispositivos específicos, lo que da como resultado una [lista de dispositivos](../service-description/device-list.md) específicos que cumplen los requisitos de rendimiento de nivel empresarial y que se garantiza que funcionan con el servicio. Puede obtener sus propios dispositivos (o trabajar con un partner) o volver a usar dispositivos que ya tiene, siempre que se encuentren en la lista de aprobados. El registro de dispositivos es claro y sencillo, y antes de que se implementen, también puede [personalizar](../working-with-managed-desktop/config-setting-overview.md) determinados aspectos de la experiencia del dispositivo para los usuarios.
 - **Actualizaciones:** el Escritorio administrado de Microsoft configura y administra todos los aspectos de [grupos de implementación](../service-description/updates.md) para las actualizaciones de características y calidad de Windows 10, controladores, firmware, definiciones de antivirus y actualizaciones de Aplicaciones de Microsoft 365 para empresas. Esto incluye una amplia comprobación y verificación de todas las actualizaciones, asegurando que los dispositivos registrados siempre estén actualizados y minimizando las interrupciones, lo que libera al departamento de TI de esa tarea constante.
-- **Apps:** como parte de Microsoft 365 Enterprise, Microsoft le proporciona (y administra) varias aplicaciones clave de Microsoft. Pero seguramente también tendrá otras aplicaciones que necesita para su empresa. En lugar de que su departamento de TI tenga que probar, empaquetar e implementar esas aplicaciones, Microsoft le ayuda a implementarlos y puede ayudar con [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) si es necesario. Más información en [Aplicaciones en Escritorio administrado de Microsoft](../get-ready/apps.md)
+- **Apps:** como parte de Microsoft 365 Enterprise, Microsoft le proporciona (y administra) varias aplicaciones clave de Microsoft. Pero seguramente también tendrá otras aplicaciones que necesita para su empresa. En lugar de que su departamento de TI tenga que probar, empaquetar e implementar esas aplicaciones, Microsoft le ayuda a implementarlos y puede ayudar con [Desktop App Assure](/fasttrack/win-10-desktop-app-assure) si es necesario. Más información en [Aplicaciones en Escritorio administrado de Microsoft](../get-ready/apps.md)
 
 
 ## <a name="device-monitoring"></a>Supervisión de dispositivos
@@ -79,7 +79,7 @@ Si Escritorio administrado de Microsoft parece adecuado para su organización, p
 - [Tecnologías del Escritorio administrado de Microsoft](technologies.md)
 - [Escritorio administrado de Microsoft e ITIL](../MMD-and-ITSM.md)
 - [Cumplimiento](compliance.md)
-- [Descripción del servicio Escritorio administrado de Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
+- [Descripción del servicio Escritorio administrado de Microsoft](../service-description/index.md)
 
 **Prepárese para la inscripción** Estos temas le indicarán los pasos que necesitará llevar a cabo en su organización para preparar la inscripción, incluida la comprobación de que su entorno cumple los requisitos previos clave, la configuración de redes, la configuración de certificados y la preparación de las aplicaciones.
 
@@ -114,4 +114,3 @@ Si Escritorio administrado de Microsoft parece adecuado para su organización, p
 <!--When you enroll in Microsoft Managed Desktop, Microsoft provides you with devices that are configured to join your Azure Active Directory tenant. Windows 10, Office 365, and some apps and features associated with [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) are installed (by Microsoft) on your devices. When your employees who are using these devices need help, they contact Microsoft Managed Desktop support (provided by Microsoft) through a custom chat app.--> 
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
- 

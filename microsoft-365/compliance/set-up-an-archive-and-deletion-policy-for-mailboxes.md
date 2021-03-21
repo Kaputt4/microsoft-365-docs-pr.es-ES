@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo crear una directiva de archivado y eliminación en Microsoft 365 que mueva automáticamente los elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: cfe14b0821230831517e78ca6a56175a94d81eec
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: ae48335203968b25a00fda61bfe65ffde85649ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597148"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919536"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>Configurar una directiva de archivo y eliminación de buzones en la organización
 
@@ -54,7 +54,7 @@ Puede seguir algunos o todos los pasos de este artículo para configurar una dir
 
 - Al crear una nueva cuenta de usuario y asignar al usuario una licencia de Exchange Online, se crea automáticamente un buzón para el usuario. Cuando se crea el buzón, se asigna automáticamente una directiva de retención predeterminada, denominada Directiva de MRM predeterminada. En este artículo, creará una nueva directiva de retención y, a continuación, la asignará a los buzones de usuario, reemplazando la directiva de MRM predeterminada. Un buzón solo puede tener asignada una directiva de retención a la vez.
 
-- Para obtener más información sobre las etiquetas de retención y las directivas de retención en Exchange Online, vea [Retention tags and retention policies](https://go.microsoft.com/fwlink/p/?LinkId=404424).
+- Para obtener más información sobre las etiquetas de retención y las directivas de retención en Exchange Online, vea [Retention tags and retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies).
 
 ## <a name="step-1-enable-archive-mailboxes-for-users"></a>Paso 1: Habilitar buzones de archivo para usuarios
 
@@ -237,7 +237,7 @@ Después de aplicar la nueva directiva de retención a los buzones en el paso 4,
   
 Estos son los pasos para conectarse a Exchange Online PowerShell y, a continuación, ejecutar el Asistente para carpetas administradas en todos los buzones de la organización.
 
-1. [Conéctese al PowerShell de Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=517283).
+1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
   
 2. Ejecute los dos comandos siguientes para iniciar el Asistente para carpetas administradas para todos los buzones de usuario de la organización.
 
@@ -258,7 +258,7 @@ Y eso es todo. Ha configurado una directiva de archivo y eliminación para la or
 
 En el paso 4, debe asignar la nueva directiva de retención a los buzones existentes. Pero puede configurar Exchange Online para que la nueva directiva de retención se asigne a los nuevos buzones que se crean en el futuro. Para ello, use Exchange Online PowerShell para actualizar el plan de buzones predeterminado de la organización. Un *plan de buzón* de correo es una plantilla que configura automáticamente las propiedades en los buzones nuevos.  En este paso opcional, puede reemplazar la directiva de retención actual que está asignada al plan de buzones de correo (de forma predeterminada, la directiva de MRM predeterminada) por la directiva de retención que creó en el paso 3. Después de actualizar el plan de buzones, la nueva directiva de retención se asignará a nuevos buzones.
 
-1. [Conéctese al PowerShell de Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=517283).
+1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Ejecute el siguiente comando para mostrar información sobre los planes de buzón de correo de la organización.
 
@@ -296,4 +296,4 @@ En el paso 4, debe asignar la nueva directiva de retención a los buzones existe
 
     > <sup>\*</sup> Los usuarios pueden usar la herramienta Recuperar elementos eliminados en Outlook y Outlook en la web (anteriormente conocido como Outlook Web App) para recuperar un elemento eliminado dentro del período de retención de elementos eliminados, que de forma predeterminada es de 14 días en Exchange Online. Un administrador puede usar Windows PowerShell para aumentar el período de retención de elementos eliminados a un máximo de 30 días. Para obtener más información, vea: Recuperar elementos [eliminados en Outlook para Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce) y Cambiar el período de retención de elementos eliminados para un buzón en Exchange [Online](https://www.microsoft.com/?ref=go)
   
-- El uso de la etiqueta de retención Mover a archivo de elementos recuperables **durante 14** días ayuda a liberar espacio de almacenamiento en la carpeta Elementos recuperables del buzón principal del usuario. Esto resulta útil cuando el buzón de un usuario está en espera, lo que significa que nunca se elimina permanentemente el buzón del usuario. Sin mover elementos al buzón de archivo, es posible que se alcance la cuota de almacenamiento para la carpeta Elementos recuperables en el buzón principal. Para obtener más información sobre esto y cómo evitarlo, vea Aumentar la cuota de elementos recuperables para [buzones en espera.](https://go.microsoft.com/fwlink/p/?LinkId=786479)
+- El uso de la etiqueta de retención Mover a archivo de elementos recuperables **durante 14** días ayuda a liberar espacio de almacenamiento en la carpeta Elementos recuperables del buzón principal del usuario. Esto resulta útil cuando el buzón de un usuario está en espera, lo que significa que nunca se elimina permanentemente el buzón del usuario. Sin mover elementos al buzón de archivo, es posible que se alcance la cuota de almacenamiento para la carpeta Elementos recuperables en el buzón principal. Para obtener más información sobre esto y cómo evitarlo, vea Aumentar la cuota de elementos recuperables para [buzones en espera.](./increase-the-recoverable-quota-for-mailboxes-on-hold.md)

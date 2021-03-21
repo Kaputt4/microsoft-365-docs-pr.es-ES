@@ -17,17 +17,17 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
-description: La prevención de pérdida de datos (DLP) en el Centro de cumplimiento de seguridad incluye 80 tipos de información confidencial listos para su uso &amp; en las directivas DLP. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo.
-ms.openlocfilehash: d23c6900e9aeb9ad9b550bb069b7a9592faa9b10
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+description: La prevención de pérdida de datos (DLP) en el Centro de cumplimiento de seguridad incluye 80 tipos de información confidencial que están listos para su uso &amp; en las directivas dlp. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo.
+ms.openlocfilehash: 341ded0c4c7f6ff31074d17624c029e7f6187480
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288141"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919716"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
-La prevención de pérdida de datos (DLP) en el Centro de cumplimiento incluye muchos tipos de información confidencial que están listos para usarse en las directivas DLP. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo. Un tipo de información confidencial se define por medio de un patrón que puede identificarse mediante una expresión regular o una función. Las evidencias corroborativas, como palabras clave y sumas de comprobación, se pueden usar para identificar un tipo de información confidencial. El nivel de confianza y la proximidad también se usan en el proceso de evaluación.
+La prevención de pérdida de datos (DLP) en el Centro de cumplimiento incluye muchos tipos de información confidencial que están listos para usarse en las directivas dlp. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo. Un tipo de información confidencial se define por medio de un patrón que puede identificarse mediante una expresión regular o una función. Se pueden usar pruebas corroborativas, como palabras clave y sumas de comprobación, para identificar un tipo de información confidencial. El nivel de confianza y la proximidad también se usan en el proceso de evaluación.
 
 Los tipos de información confidencial requieren una de estas suscripciones:
 - Microsoft 365 E3
@@ -41,13 +41,13 @@ Los tipos de información confidencial se usan en:
 - [Cumplimiento de las comunicaciones](communication-compliance.md)
 - [Directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
-## <a name="aba-routing-number"></a>Número de enrutamiento ABA
+## <a name="aba-routing-number"></a>Número de enrutamiento de ABA
 
 ### <a name="format"></a>Formato
 
 nueve dígitos que pueden estar en un patrón con formato o sin formato
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Con formato:
 - cuatro dígitos a partir de 0, 1, 2, 3, 6, 7 u 8
@@ -56,7 +56,7 @@ Con formato:
 - un guión
 - un dígito
 
-Sin formato: nueve dígitos consecutivos que comienzan por 0, 1, 2, 3, 6, 7 u 8 
+Sin formato: nueve dígitos consecutivos a partir de 0, 1, 2, 3, 6, 7 u 8 
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -64,11 +64,11 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_aba_routing encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_ABA_Routing.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_aba_routing encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -99,7 +99,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - bankrouting #
 - bankroutingnumber
 - enrutamiento #
-- routing no
+- enrutamiento no
 - número de enrutamiento
 - routing transit number
 - enrutamiento #
@@ -112,7 +112,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 Ocho dígitos con o sin puntos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Ocho dígitos:
 - dos dígitos
@@ -127,7 +127,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_argentina_national_id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_argentina_national_id.
 
@@ -159,9 +159,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ### <a name="format"></a>Formato
 
-de seis a diez dígitos con o sin un número de sucursal de estado bancario
+de seis a diez dígitos con o sin un número de sucursal de estado de banco
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 El número de cuenta es de 6 a 10 dígitos.
 
@@ -176,13 +176,13 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La expresión regular Regex_australia_bank_account_number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular Regex_australia_bank_account_number encuentra contenido que coincida con el patrón.
 - Se encuentra una palabra clave de Keyword_australia_bank_account_number.
 - La expresión regular Regex_australia_bank_account_number_bsb encuentra contenido que coincide con el patrón.
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La expresión regular Regex_australia_bank_account_number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular Regex_australia_bank_account_number encuentra contenido que coincida con el patrón.
 
 - Se encuentra una palabra clave de Keyword_australia_bank_account_number.
 
@@ -219,7 +219,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - full names
 - iaea
 
-## <a name="australia-business-number"></a>Número comercial de Australia
+## <a name="australia-business-number"></a>Número de negocio de Australia
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -232,16 +232,16 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 11 dígitos con delimitadores opcionales
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos con delimitadores opcionales:
 
 - dos dígitos
-- un espacio o un guión opcional
+- un guión o espacio opcional
 - tres dígitos
-- un espacio o un guión opcional
+- un guión o espacio opcional
 - tres dígitos
-- un espacio o un guión opcional
+- un guión o espacio opcional
 - tres dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -250,12 +250,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_australian_business_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_australian_business_number búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_australian_business_number encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra clave Keywords_australian_business_number se encuentra.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_australian_business_number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_australian_business_number encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- Australia Business Number -->
@@ -277,7 +277,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - número de negocio
 - abn #
 - businessid #
-- id. de negocio
+- id. de empresa
 - abn
 - businessno #
 
@@ -293,7 +293,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 nueve dígitos con delimitadores
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos con delimitadores:
 
@@ -310,12 +310,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_Australian_Company_Number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keyword_Australian_Company_Number búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_Australian_Company_Number encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra Keyword_Australian_Company_Number de la página.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_Australian_Company_Number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_Australian_Company_Number encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- Australia Company Number -->
@@ -336,33 +336,33 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - can
 - australia company no
 - australia company no #
-- número de empresa de Australia
-- australian company no
-- australian company no #
+- número de empresa de australia
+- compañía australiana no
+- compañía australiana no #
 - número de compañía australiana
 
-## <a name="australia-drivers-license-number"></a>Número de licencia de conductor de Australia
+## <a name="australia-drivers-license-number"></a>Número de licencia de conducir de Australia
 
 ### <a name="format"></a>Formato
 
 nueve letras y dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve letras y dígitos: 
 
-- dos dígitos o letras (no distinguen mayúsculas de minúsculas) 
+- dos dígitos o letras (no distingue mayúsculas de minúsculas) 
 - dos dígitos 
-- cinco dígitos o letras (no distingue entre mayúsculas y minúsculas)
+- cinco dígitos o letras (no distingue mayúsculas de minúsculas)
 
 O
 
-- de una a dos letras opcionales (no distingue entre mayúsculas y minúsculas) 
+- de una a dos letras opcionales (no distingue mayúsculas de minúsculas) 
 - de cuatro a nueve dígitos
 
 O
 
-- nueve dígitos o letras (no distingue entre mayúsculas y minúsculas)
+- nueve dígitos o letras (no distingue mayúsculas de minúsculas)
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -370,7 +370,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_australia_drivers_license_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_australia_drivers_license_number.
 - No se encuentra ninguna palabra clave de Keyword_australia_drivers_license_number_exclusions.
@@ -410,7 +410,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - Driver'Lic
 - Driver'Lics
 - Driver'Licence
-- Driver'Licences
+- Licencias de conductor
 - Driver' Lic
 - Driver' Lics
 - Driver' Licence
@@ -442,7 +442,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - Driver'Lic #
 - Driver'Lics #
 - Driver'Licence #
-- Driver'Licences #
+- Licencias de conductor #
 - Driver' Lic#
 - Driver' Lics#
 - Driver' Licence#
@@ -467,8 +467,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - DriversLicenses
 - Drivers License
 - Drivers Licenses
-- Driver'License
-- Driver'Licenses
+- Licencia de conducir
+- Licencias de conducir
 - Driver' License
 - Driver' Licenses
 - Driver'sLicense
@@ -483,8 +483,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - DriversLicenses #
 - Drivers License#
 - Drivers Licenses#
-- Driver'License #
-- Driver'Licenses #
+- Licencia de conducir #
+- Licencias de conducir #
 - Driver' License#
 - Driver' Licenses#
 - Driver'sLicense #
@@ -498,7 +498,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 Entre 10 y 11 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Entre 10 y 11 dígitos:
 - el primer dígito está en el intervalo de 2 a 6
@@ -512,7 +512,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_australian_medical_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_Australia_Medical_Account_Number.
 - Se supera la suma de comprobación.
@@ -540,7 +540,7 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - credit card loan
 - department of human services
 - local service
-- dalo
+- medicare
 
    
 ## <a name="australia-passport-number"></a>Número de pasaporte de Australia
@@ -549,9 +549,9 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 
 Una letra seguida de siete dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-Una letra (sin distingue mayúsculas de minúsculas) seguida de siete dígitos
+Una letra (no distingue mayúsculas de minúsculas) seguida de siete dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -559,9 +559,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_australia_passport_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keyword_passport o Keyword_australia_passport_number búsqueda.
+- Se encuentra una palabra Keyword_passport o Keyword_australia_passport_number.
 
 ```xml
 <!-- Australia Passport Number -->
@@ -589,7 +589,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - passportnumber
 - パスポート
 - パスポート番号
-- (en la ポ)
+- la ポー
 - パスポート ＃ 
 - Numéro de passeport
 - Passeport n °
@@ -620,9 +620,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 de ocho a nueve dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-de ocho a nueve dígitos que normalmente se presentan con espacios de la siguiente manera:
+de ocho a nueve dígitos normalmente se presentan con espacios de la siguiente manera:
 - tres dígitos 
 - un espacio opcional 
 - tres dígitos 
@@ -635,7 +635,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_australian_tax_file_number encuentra contenido que coincide con el patrón.
 - No se encuentra ninguna palabra clave de Keyword_Australia_Tax_File_Number ni Keyword_number_exclusions.
 - Se supera la suma de comprobación.
@@ -664,13 +664,13 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - tax file number
 - tfn
 
-## <a name="austria-drivers-license-number"></a>Número de licencia de conducción de Austria
+## <a name="austria-drivers-license-number"></a>Número de licencia de conducir de Austria
 
 ### <a name="format"></a>Formato
 
-ocho dígitos sin espacios y delimitadores
+ocho dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 ocho dígitos
   
@@ -680,10 +680,10 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
-- La expresión regular  `Regex_austria_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_austria_eu_driver's_license_number` clave. 
+- La expresión regular  `Regex_austria_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_austria_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Austria Driver's License Number -->
@@ -712,8 +712,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -725,31 +725,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -760,9 +760,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -771,55 +771,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
 #### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver de s_license_number
@@ -842,13 +842,13 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Una combinación de 24 caracteres de letras, dígitos y caracteres especiales
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 24 caracteres:
   
--  22 letras (no distingue entre mayúsculas y minúsculas), dígitos, barras diagonales inversas, barras diagonales o signos más 
+-  22 letras (no distingue entre mayúsculas y minúsculas), dígitos, barras diagonales inversas, barras diagonales hacia delante o signos más 
     
-- dos letras (sin distingue entre mayúsculas y minúsculas), dígitos, barras diagonales inversas, barras diagonales, signos más o signos iguales
+- dos letras (no distingue entre mayúsculas y minúsculas), dígitos, barras diagonales inversas, barras diagonales, signos más o signos iguales
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -856,9 +856,9 @@ No aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
-- La expresión regular  `Regex_austria_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+- La expresión regular  `Regex_austria_eu_national_id_card` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_austria_eu_national_id_card` clave de. 
    
 ```xml
@@ -877,7 +877,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 - número de identidad
 - national id
-- personalausblis republik österreich
+- personalausweis republik österreich
 
 ## <a name="austria-passport-number"></a>Número de pasaporte de Austria
 
@@ -885,7 +885,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 Una letra seguida de un espacio opcional y siete dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Una combinación de una letra, siete dígitos y un espacio:
   
@@ -899,14 +899,14 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_austria_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_austria_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_austria_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_austria_eu_passport_number` se encuentra. 
+- La expresión regular `Regex_eu_passport_date1` busca la fecha con el formato DD.MM.YYYY o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_austria_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_austria_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_austria_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_austria_eu_passport_number` se encuentra. 
     
 ```xml
       <!-- Austria Passport Number -->
@@ -959,16 +959,16 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
-## <a name="austria-social-security-number"></a>Número de la seguridad social de Austria
+## <a name="austria-social-security-number"></a>Número de seguridad social de Austria
 
 ### <a name="format"></a>Formato
 
 10 dígitos en el formato especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos:
   
@@ -982,12 +982,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_austria_eu_ssn_or_equivalent` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_austria_eu_ssn_or_equivalent` busca contenido que coincida con el patrón. 
 - se encuentra una  `Keywords_austria_eu_ssn_or_equivalent` palabra clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_austria_eu_ssn_or_equivalent` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_austria_eu_ssn_or_equivalent` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Austria Social Security Number -->
@@ -1010,28 +1010,28 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_austria_eu_ssn_or_equivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
-- ssn de indeste
+- ssn austriaco
 - número ehic
 - ehic no
-- código de seguros
+- código de seguro
 - insurancecode #
 - número de seguro
-- insurance no
+- seguro no
 - krankenkassennummer
-- krankenversrique
+- krankenversicherung
 - socialsecurityno
 - socialsecurityno #
-- social security no
+- seguridad social no
 - social security number
 - social security code
-- sozialversálisissnummer
-- sozialversálisissnummer #
+- sozialversicherungsnummer
+- sozialversicherungsnummer #
 - soziale sicherheit kein
 - sozialesicherheitkein #
 - ssn #
 - ssn
-- versiquemutscode
-- versálisissnummer
+- versicherungscode
+- versicherungsnummer
 - zdravstveno zavarovanje
 
 ## <a name="austria-tax-identification-number"></a>Número de identificación fiscal de Austria
@@ -1040,14 +1040,14 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 nueve dígitos con guión opcional y barra diagonal
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos con guión opcional y barra diagonal:
   
 - dos dígitos
 - un guión (opcional)
 - tres dígitos
-- una barra diagonal (opcional)
+- barra diagonal (opcional)
 - cuatro dígitos
     
 ### <a name="checksum"></a>Suma de comprobación
@@ -1056,12 +1056,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_austria_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_austria_eu_tax_file_number` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_austria_eu_tax_file_number` clave de. 
     
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_austria_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_austria_eu_tax_file_number` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Austria Tax Identification Number -->
@@ -1089,19 +1089,19 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 - número de impuestos
  
-## <a name="austria-value-added-tax"></a>Austria value added tax
+## <a name="austria-value-added-tax"></a>Impuesto sobre el valor agregado de Austria
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -1113,7 +1113,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón alfanumérico de 11 caracteres
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Patrón alfanumérico de 11 caracteres:
 
@@ -1134,12 +1134,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_Austria_Value_Added_Tax encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keyword_Austria_Value_Added_Tax búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_Austria_Value_Added_Tax encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra Keyword_Austria_Value_Added_Tax de la página.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_Austria_Value_Added_Tax encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_Austria_Value_Added_Tax encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- Austria Value Added Tax -->
@@ -1159,17 +1159,17 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 - número de iva
 - vat #
-- número de iva de indeste
+- número de iva de austriaco
 - vat no.
 - vatno #
-- número de impuestos del valor agregado
-- iva de resa lodo
+- número de impuestos de valor agregado
+- vat austriaco
 - mwst
 - umsatzsteuernummer
 - mwstnummer
 - ust.-identifikationsnummer
 - umsatzsteuer-identifikationsnummer
-- número de identificación de iva
+- Número de identificación de iva
 - número atu
 - número uid
 
@@ -1178,12 +1178,12 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ### <a name="format"></a>Formato
 
-La cadena "DocumentDb" seguida de los caracteres y cadenas descritos en el siguiente patrón.
+La cadena "DocumentDb" seguida de los caracteres y cadenas descritos en el patrón siguiente.
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - La cadena "DocumentDb"
-- Cualquier combinación de entre 3 y 200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- Cualquier combinación de entre 3-200 letras en minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
 - Un símbolo mayor que (>), un signo igual (=), una comilla (") o un apóstrofe (')
 - Cualquier combinación de 86 letras minúsculas o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
 - Dos signos iguales (=)
@@ -1194,8 +1194,8 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular CEP_Regex_AzureDocumentDBAuthKey encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzureDocumentDBAuthKey encuentra contenido que coincida con el patrón.
 - La expresión regular CEP_CommonExampleKeywords no encuentra contenido que coincida con el patrón.
 
 ```xml
@@ -1226,27 +1226,27 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Cadena de conexión de base de datos IAAS de Azure y cadena de conexión SQL azure
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Cadena de conexión de base de datos IAAS de Azure y cadena SQL de conexión de Azure
 
 ### <a name="format"></a>Formato
 
-La cadena "Server", "server" o "data source" seguida de los caracteres y cadenas descritos en el patrón siguiente, incluida la cadena "cloudapp.azure.<!--no-hyperlink-->com" o "cloudapp.azure.<!--no-hyperlink-->net" o "database.windows.<!--no-hyperlink-->net" y la cadena "Password" o "password" o "pwd".
+La cadena "Server", "server" o "data source" seguida de los caracteres y cadenas descritos en el patrón siguiente, incluida la cadena "cloudapp.azure.<!--no-hyperlink-->com" o "cloudapp.azure.<!--no-hyperlink-->net" o "database.windows.<!--no-hyperlink-->net", y la cadena "Password" o "password" o "pwd".
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - la cadena "Server", "server" o "data source"
-- de cero a dos caracteres de espacios en blanco
+- de cero a dos caracteres de espacio en blanco
 - un signo igual (=)
-- de cero a dos caracteres de espacios en blanco
-- cualquier combinación de entre 1 y 200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
-- La cadena "cloudapp.azure.<!--no-hyperlink-->com", "cloudapp.azure.<!--no-hyperlink-->net" o "database.windows.<!--no-hyperlink-->net"
-- cualquier combinación de entre 1 y 300 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- de cero a dos caracteres de espacio en blanco
+- cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- La cadena "cloudapp.azure.<!--no-hyperlink-->com", "cloudapp.azure.<!--no-hyperlink-->net", o "database.windows.<!--no-hyperlink-->net"
+- cualquier combinación de entre 1-300 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
 - la cadena "Password", "password" o "pwd"
-- de cero a dos caracteres de espacios en blanco
+- de cero a dos caracteres de espacio en blanco
 - un signo igual (=)
-- de cero a dos caracteres de espacios en blanco
-- uno o más caracteres que no son un punto y coma (;), comillas (") o apóstrofe (')
-- punto y coma (;), comillas (") o apóstrofe (')
+- de cero a dos caracteres de espacio en blanco
+- uno o varios caracteres que no son punto y coma (;), comillas (") o apóstrofe (')
+- punto y coma (;), comillas (") o apóstrofo (')
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -1254,8 +1254,8 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular CEP_Regex_AzureConnectionString encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzureConnectionString encuentra contenido que coincida con el patrón.
 - La expresión regular CEP_CommonExampleKeywords no encuentra contenido que coincida con el patrón.
 
 ```xml
@@ -1290,21 +1290,21 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 
 ### <a name="format"></a>Formato
 
-La cadena "HostName" seguida de los caracteres y cadenas descritos en el siguiente patrón, incluidas las cadenas "azure-devices.<!--no-hyperlink-->net" y "SharedAccessKey".
+La cadena "HostName" seguida de los caracteres y cadenas descritos en el patrón siguiente, incluidas las cadenas "azure-devices.<!--no-hyperlink-->net" y "SharedAccessKey".
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - la cadena "HostName"
-- de cero a dos caracteres de espacios en blanco
+- de cero a dos caracteres de espacio en blanco
 - un signo igual (=)
-- de cero a dos caracteres de espacios en blanco
-- cualquier combinación de entre 1 y 200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- de cero a dos caracteres de espacio en blanco
+- cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
 - la cadena "azure-devices.<!--no-hyperlink-->net"
-- cualquier combinación de entre 1 y 200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
 - la cadena "SharedAccessKey"
-- de cero a dos caracteres de espacios en blanco
+- de cero a dos caracteres de espacio en blanco
 - un signo igual (=)
-- de cero a dos caracteres de espacios en blanco
+- de cero a dos caracteres de espacio en blanco
 - cualquier combinación de 43 letras minúsculas o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
 - un signo igual (=)
 
@@ -1314,8 +1314,8 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular CEP_Regex_AzureIoTConnectionString encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzureIoTConnectionString encuentra contenido que coincida con el patrón.
 - La expresión regular CEP_CommonExampleKeywords no encuentra contenido que coincida con el patrón.
 
 ```xml
@@ -1350,9 +1350,9 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 
 ### <a name="format"></a>Formato
 
-Cadena "userpwd=" seguida de una cadena alfanumérica.
+La cadena "userpwd=" seguida de una cadena alfanumérica.
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - la cadena "userpwd="
 - cualquier combinación de 60 letras minúsculas o dígitos
@@ -1364,8 +1364,8 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular CEP_Regex_AzurePublishSettingPasswords encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzurePublishSettingPasswords encuentra contenido que coincida con el patrón.
 - La expresión regular CEP_CommonExampleKeywords no encuentra contenido que coincida con el patrón.
 
 
@@ -1397,21 +1397,21 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="azure-redis-cache-connection-string"></a>Cadena de conexión de caché redis de Azure
+## <a name="azure-redis-cache-connection-string"></a>Cadena de conexión de caché de Azure Redis
 
 ### <a name="format"></a>Formato
 
-La cadena "redis.cache.windows.<!--no-hyperlink-->net" seguido de los caracteres y cadenas descritos en el siguiente patrón, incluida la cadena "password" o "pwd".
+La cadena "redis.cache.windows.<!--no-hyperlink-->net" seguido de los caracteres y cadenas descritos en el patrón siguiente, incluida la cadena "password" o "pwd".
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - la cadena "redis.cache.windows.<!--no-hyperlink-->net"
-- cualquier combinación de entre 1 y 200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
 - la cadena "password" o "pwd"
-- de cero a dos caracteres de espacios en blanco
+- de cero a dos caracteres de espacio en blanco
 - un signo igual (=)
-- de cero a dos caracteres de espacios en blanco
-- cualquier combinación de 43 caracteres con letras minúsculas o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
+- de cero a dos caracteres de espacio en blanco
+- cualquier combinación de 43 caracteres que sean letras inferiores o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
 - un signo igual (=)
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -1420,8 +1420,8 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La expresión regular CEP_Regex_AzureRedisCacheConnectionString encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzureRedisCacheConnectionString encuentra contenido que coincida con el patrón.
 - La expresión regular CEP_CommonExampleKeywords no encuentra contenido que coincida con el patrón.
 
 ```xml
@@ -1456,15 +1456,15 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="format"></a>Formato
 
-La cadena "sig" seguida de los caracteres y cadenas descritos en el siguiente patrón.
+La cadena "sig" seguida de los caracteres y cadenas descritos en el patrón siguiente.
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - la cadena "sig"
-- de cero a dos caracteres de espacios en blanco
+- de cero a dos caracteres de espacio en blanco
 - un signo igual (=)
-- de cero a dos caracteres de espacios en blanco
-- cualquier combinación de entre 43 y 53 caracteres con letras minúsculas o mayúsculas, dígitos o el signo de porcentaje (%)
+- de cero a dos caracteres de espacio en blanco
+- cualquier combinación de entre 43 y 53 caracteres que sean letras inferiores o mayúsculas, dígitos o el signo de porcentaje (%)
 - la cadena "%3d"
 - cualquier carácter que no sea una letra, dígito o signo de porcentaje en minúsculas o mayúsculas (%)
 
@@ -1474,8 +1474,8 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular CEP_Regex_AzureSAS encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzureSAS encuentra contenido que coincida con el patrón.
 
 ```xml
 <!--Azure SAS-->
@@ -1490,22 +1490,22 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 
 ### <a name="format"></a>Formato
 
-La cadena "EndPoint" seguida de los caracteres y cadenas descritos en el siguiente patrón, incluidas las cadenas "servicebus.windows.<!--no-hyperlink-->net" y "SharedAccesKey".
+La cadena "EndPoint" seguida de los caracteres y cadenas descritos en el patrón siguiente, incluidas las cadenas "servicebus.windows.<!--no-hyperlink-->net" y "SharedAccesKey".
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - la cadena "EndPoint"
-- de cero a dos caracteres de espacios en blanco
+- de cero a dos caracteres de espacio en blanco
 - un signo igual (=)
-- de cero a dos caracteres de espacios en blanco
-- cualquier combinación de entre 1 y 200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- de cero a dos caracteres de espacio en blanco
+- cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
 - la cadena "servicebus.windows.<!--no-hyperlink-->net"
-- cualquier combinación de entre 1 y 200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
 - la cadena "SharedAccessKey"
-- de cero a dos caracteres de espacios en blanco
+- de cero a dos caracteres de espacio en blanco
 - un signo igual (=)
-- de cero a dos caracteres de espacios en blanco
-- cualquier combinación de 43 caracteres con letras minúsculas o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
+- de cero a dos caracteres de espacio en blanco
+- cualquier combinación de 43 caracteres que sean letras inferiores o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
 - un signo igual (=)
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -1514,8 +1514,8 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La expresión regular CEP_Regex_AzureServiceBusConnectionString encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzureServiceBusConnectionString encuentra contenido que coincida con el patrón.
 - La expresión regular CEP_CommonExampleKeywords no encuentra contenido que coincida con el patrón.
 
 ```xml
@@ -1550,20 +1550,20 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="format"></a>Formato
 
-La cadena "DefaultEndpointsProtocol" seguida de los caracteres y cadenas descritos en el siguiente patrón, incluida la cadena "AccountKey".
+La cadena "DefaultEndpointsProtocol" seguida de los caracteres y cadenas descritos en el patrón siguiente, incluida la cadena "AccountKey".
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - la cadena "DefaultEndpointsProtocol"
-- de cero a dos caracteres de espacios en blanco
+- de cero a dos caracteres de espacio en blanco
 - un signo igual (=)
-- de cero a dos caracteres de espacios en blanco
-- cualquier combinación de entre 1 y 200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- de cero a dos caracteres de espacio en blanco
+- cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
 - la cadena "AccountKey"
-- de cero a dos caracteres de espacios en blanco
+- de cero a dos caracteres de espacio en blanco
 - un signo igual (=)
-- de cero a dos caracteres de espacios en blanco
-- cualquier combinación de 86 caracteres con letras minúsculas o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
+- de cero a dos caracteres de espacio en blanco
+- cualquier combinación de 86 caracteres que sean letras inferiores o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
 - dos signos iguales (=)
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -1572,8 +1572,8 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular CEP_Regex_AzureStorageAccountKey encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzureStorageAccountKey encuentra contenido que coincida con el patrón.
 - La expresión regular CEP_AzureEmulatorStorageAccountFilter no encuentra contenido que coincida con el patrón.
 - La expresión regular CEP_CommonExampleKeywords no encuentra contenido que coincida con el patrón.
 
@@ -1618,10 +1618,10 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 
 Cualquier combinación de 86 letras minúsculas o mayúsculas, dígitos, la barra diagonal (/) o signo más (+), precedida o seguida de los caracteres descritos en el patrón siguiente.
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-- de cero a uno del símbolo mayor que (>), apóstrofe ('), signo igual (=), comillas (") o signo de número (#)
-- cualquier combinación de 86 caracteres con letras minúsculas o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
+- cero a uno del símbolo mayor que (>), apóstrofe ('), signo igual (=), comilla (") o signo de número (#)
+- cualquier combinación de 86 caracteres con letras inferiores o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
 - dos signos iguales (=)
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -1630,8 +1630,8 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular CEP_Regex_AzureStorageAccountKeyGeneric encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzureStorageAccountKeyGeneric encuentra contenido que coincida con el patrón.
 
 ```xml
 <!--Azure Storage Account Key (Generic)-->
@@ -1641,13 +1641,13 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
   </Pattern>
 </Entity>
 ```
-## <a name="belgium-drivers-license-number"></a>Número de licencia de conductor de Bélgica
+## <a name="belgium-drivers-license-number"></a>Número de licencia de conducir de Bélgica
 
 ### <a name="format"></a>Formato
 
-10 dígitos sin espacios y delimitadores
+10 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos
   
@@ -1657,9 +1657,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_belgium_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_belgium_eu_driver's_license_number` clave.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_belgium_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave `Keywords_eu_driver's_license_number` de o `Keywords_belgium_eu_driver's_license_number` se encuentra.
     
 ```xml
       <!-- Belgium Driver's License Number -->
@@ -1689,8 +1689,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -1702,31 +1702,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -1737,9 +1737,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -1748,55 +1748,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 #### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver de s_license_number
 
@@ -1819,12 +1819,12 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 11 dígitos más delimitadores opcionales
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos más delimitadores:
-- seis dígitos y dos puntos opcionales en el formato AA. MM.DD fecha de nacimiento 
+- seis dígitos y dos períodos opcionales en el formato YY. MM.DD para la fecha de nacimiento 
 - Delimitador opcional de punto, guión, espacio 
-- tres dígitos secuenciales (impares para hombres, incluso para mujer) 
+- tres dígitos secuenciales (impares para los machos, incluso para las hembras) 
 - Delimitador opcional de punto, guión, espacio 
 - dos dígitos de comprobación
 
@@ -1834,12 +1834,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_belgium_national_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_belgium_national_number.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_belgium_national_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -1875,7 +1875,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - identiteit
 - identiteitskaart
 - identity
-- indeste
+- inscripciones
 - número nacional
 - registro nacional
 - nationalnumber #
@@ -1889,13 +1889,13 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - numéro d'immatriculation
 - numéro national
 - numéronational #
-- número de identificación personal
+- número de id. personal
 - personalausweis
 - personalidnumber #
 - registratie
-- registration
+- registro
 - registrationsnumme
-- registros
+- registrierung
 - social security number
 - ssn #
 - ssn
@@ -1906,16 +1906,16 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 
 ## <a name="belgium-passport-number"></a>Número de pasaporte de Bélgica
 
@@ -1923,9 +1923,9 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 dos letras seguidas de seis dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-dos letras y seguidas de seis dígitos
+dos letras y seguido de seis dígitos
   
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -1933,14 +1933,14 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
- Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_belgium_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_belgium_eu_passport_number` clave. 
-- La expresión regular `Regex_eu_passport_date2` encuentra la fecha con el formato DD MM AA o una palabra clave de o se `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` encuentra
+ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_belgium_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_belgium_eu_passport_number` se encuentra. 
+- La expresión regular `Regex_eu_passport_date2` busca la fecha con el formato DD MM YY o una palabra clave de o se `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` encuentra
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_belgium_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_belgium_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_belgium_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_belgium_eu_passport_number` se encuentra. 
 
 ```xml
       <!-- Belgium Passport Number -->
@@ -1991,14 +1991,14 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - paspoortnummer
 - paspoortnummers
 - Passeport carte
-- Passeport trasporte
+- Passeport livre
 - Pass-Nr
 - Passnummer
-- reisepass kein
+- kein reisepass
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 ## <a name="belgium-value-added-tax-number"></a>Número de impuestos sobre el valor agregado de Bélgica
@@ -2013,7 +2013,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón alfanumérico de 12 caracteres
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Patrón alfanumérico de 12 caracteres:
 
@@ -2034,12 +2034,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_belgium_value_added_tax_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_belgium_value_added_tax_number búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_belgium_value_added_tax_number encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra clave Keywords_belgium_value_added_tax_number se encuentra.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_belgium_value_added_tax_number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_belgium_value_added_tax_number encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- Belgium Value Added Tax Number -->
@@ -2069,13 +2069,13 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - vat #
 
 
-## <a name="brazil-cpf-number"></a>Número CPF de Brasil
+## <a name="brazil-cpf-number"></a>Número de CPF de Brasil
 
 ### <a name="format"></a>Formato
 
 11 dígitos incluido un dígito de control y que pueden tener o no formato
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Con formato:
 - tres dígitos
@@ -2095,12 +2095,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_brazil_cpf encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_brazil_cpf.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_brazil_cpf encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -2138,7 +2138,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 14 dígitos que incluyen un número de registro, número de sucursal y dígitos de comprobación, además de delimitadores
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 14 dígitos más delimitadores:
 
@@ -2148,7 +2148,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - un punto 
 - tres dígitos (estos primeros ocho dígitos son el número de registro) 
 - una barra diagonal 
-- número de rama de cuatro dígitos 
+- Número de rama de cuatro dígitos 
 - un guión 
 - dos dígitos que son dígitos de comprobación
 
@@ -2158,12 +2158,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_brazil_cnpj encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_brazil_cnpj.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_brazil_cnpj encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -2209,11 +2209,11 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ### <a name="format"></a>Formato
 
-Registro Geral (formato antiguo): Nueve dígitos
+Registro Geral (formato antiguo): nueve dígitos
 
 Registro de Identidade (RIC) (nuevo formato): 11 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Registro de Geral (formato antiguo):
 - dos dígitos 
@@ -2235,7 +2235,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_brazil_rg encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_brazil_rg.
 - Se supera la suma de comprobación.
@@ -2265,13 +2265,13 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - RIC (esta palabra clave distingue mayúsculas de minúsculas) 
 
 
-## <a name="bulgaria-drivers-license-number"></a>Número de licencia de conductor de Bulgaria
+## <a name="bulgaria-drivers-license-number"></a>Número de licencia de conducir de Bulgaria
 
 ### <a name="format"></a>Formato
 
-nueve dígitos sin espacios y delimitadores
+nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos
   
@@ -2281,9 +2281,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_bulgaria_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_bulgaria_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_bulgaria_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_bulgaria_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Bulgaria Driver's License Number -->
@@ -2312,8 +2312,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -2325,31 +2325,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -2360,9 +2360,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -2371,58 +2371,58 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
-#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver de s_license_number
+#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver está s_license_number
 
 - свидетелство за управление на мпс
 - свидетелство за управление на моторно превозно средство
@@ -2440,13 +2440,13 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ### <a name="format"></a>Formato
 
-10 dígitos sin espacios y delimitadores
+10 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-10 dígitos sin espacios y delimitadores
+10 dígitos sin espacios ni delimitadores
   
-- seis dígitos que corresponden a la fecha de nacimiento (AAMMDD) 
+- seis dígitos que corresponden a la fecha de nacimiento (YYMMDD) 
 - dos dígitos que corresponden al orden de nacimiento
 - un dígito que corresponde al género: un dígito par para el varón y un dígito impar para la mujer
 - un dígito de comprobación
@@ -2457,12 +2457,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_bulgaria_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_bulgaria_eu_national_id_card` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_bulgaria_eu_national_id_card` clave de. 
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_bulgaria_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_bulgaria_eu_national_id_card` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Bulgaria Uniform Civil Number -->
@@ -2487,9 +2487,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 - bnn #
 - bnn
-- indeste #
-- indeste
-- edinenhdanski nomer
+- bucn #
+- bucn
+- edinen grazhdanski nomer
 - egn #
 - egn
 - identification number
@@ -2497,7 +2497,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - número nacional
 - nationalnumber #
 - nationalnumber
-- id. personal
+- id personal
 - personal no
 - número personal
 - personalidnumber #
@@ -2511,7 +2511,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - uniformcivilno
 - uniformcivilnumber #
 - uniformcivilnumber
-- número de ciudadano único
+- número único de ciudadanía
 - егн #
 - егн
 - единен граждански номер
@@ -2521,11 +2521,11 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - лично не
 - национален номер
 - номер на гражданството
-- униформ id
-- униформ граждански id
+- Id. de униформ
+- унизорм граздански id.
 - униформ граждански не
 - униформ граждански номер
-- униформгражданскиid #
+- унизормгразданскиid #
 - униформгражданскине. #
 
 
@@ -2533,9 +2533,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ### <a name="format"></a>Formato
 
-nueve dígitos sin espacios y delimitadores
+nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos 
   
@@ -2545,14 +2545,14 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_bulgaria_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_bulgaria_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_bulgaria_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_bulgaria_eu_passport_number` se encuentra. 
+- La expresión regular `Regex_eu_passport_date1` busca la fecha con el formato DD.MM.YYYY o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_bulgaria_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_bulgaria_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_bulgaria_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_bulgaria_eu_passport_number` se encuentra. 
 
 ```xml
       <!-- Bulgaria Passport Number -->
@@ -2600,7 +2600,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 ## <a name="canada-bank-account-number"></a>Número de cuenta bancaria de Canadá
@@ -2609,7 +2609,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 7 o 12 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Un número de cuenta bancaria de Canadá tiene 7 o 12 dígitos.
 
@@ -2626,12 +2626,12 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_canada_bank_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_canada_bank_account_number.
 - La expresión regular Regex_canada_bank_account_transit_number encuentra contenido que coincide con el patrón.
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_canada_bank_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_canada_bank_account_number.
 
@@ -2677,13 +2677,13 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - direct deposit
 
    
-## <a name="canada-drivers-license-number"></a>Número de licencia de conductor de Canadá
+## <a name="canada-drivers-license-number"></a>Número de licencia de conducir de Canadá
 
 ### <a name="format"></a>Formato
 
 Varía según la provincia
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Varios patrones que cubren Alberta, British Columbia, Manitoba, New Brunswick, Terranova y Labrador, Nueva Escocia, Ontario, Isla del Príncipe Eduardo, Quebec y Saskatchewan
 
@@ -2693,7 +2693,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_[province_name]_drivers_license_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_[province_name]_drivers_license_name.
 - Se encuentra una palabra clave de Keyword_canada_drivers_license.
@@ -2793,10 +2793,10 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - Drivers Licences
 - Driver'Lic
 - Driver'Lics
-- Driver'License
-- Driver'Licenses
+- Licencia de conducir
+- Licencias de conducir
 - Driver'Licence
-- Driver'Licences
+- Licencias de conductor
 - Driver' Lic
 - Driver' Lics
 - Driver' License
@@ -2862,10 +2862,10 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - Drivers Licences# 
 - Driver'Lic # 
 - Driver'Lics # 
-- Driver'License # 
-- Driver'Licenses # 
+- Licencia de conducir # 
+- Licencias de conducir # 
 - Driver'Licence # 
-- Driver'Licences # 
+- Licencias de conductor # 
 - Driver' Lic# 
 - Driver' Lics# 
 - Driver' License# 
@@ -2901,7 +2901,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
  10 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos
 
@@ -2911,7 +2911,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_canada_health_service_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_canada_health_service_number.
 
@@ -2937,7 +2937,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - speciality services
 - automobile accident
 - patient hospital
-- desatraba
+- psiquiatra
 - workers compensation
 - discapacidad
 
@@ -2948,7 +2948,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 dos letras mayúsculas seguidas de seis dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 dos letras mayúsculas seguidas de seis dígitos
 
@@ -2958,9 +2958,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_canada_passport_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keyword_canada_passport_number o Keyword_passport búsqueda.
+- Se encuentra una palabra Keyword_canada_passport_number o Keyword_passport.
 
 ```xml 
 <!-- Canada Passport Number -->
@@ -2999,7 +2999,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - passportnumber
 - パスポート
 - パスポート番号
-- (en la ポ)
+- la ポー
 - パスポート＃
 - Numéro de passeport
 - Passeport n °
@@ -3010,13 +3010,13 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - Passeportn °
 
    
-## <a name="canada-personal-health-identification-number-phin"></a>Número de identificación personal de salud de Canadá (PHIN)
+## <a name="canada-personal-health-identification-number-phin"></a>Número de identificación de salud personal (PHIN) de Canadá
 
 ### <a name="format"></a>Formato
 
 nueve dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos
 
@@ -3026,9 +3026,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_canada_phin encuentra contenido que coincide con el patrón.
-- Se encuentran al menos dos palabras clave Keyword_canada_phin o Keyword_canada_provinces búsqueda.
+- Se encuentran al menos dos palabras clave Keyword_canada_phin o Keyword_canada_provinces se encuentran.
 
 ```xml
 <!-- Canada PHIN -->
@@ -3068,9 +3068,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - Nunavut
 - Quebec
 - Northwest Territories
-- Toronto
+- Ontario
 - British Columbia
-- Alberta
+- Alberto
 - Saskatchewan
 - Manitoba
 - Yukon
@@ -3087,13 +3087,13 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 nueve dígitos con guiones o espacios opcionales
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Con formato:
 - tres dígitos 
-- un guión o espacio 
+- un guión o un espacio 
 - tres dígitos 
-- un guión o espacio 
+- un guión o un espacio 
 - tres dígitos
 
 Sin formato: nueve dígitos
@@ -3104,7 +3104,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_canadian_sin encuentra contenido que coincide con el patrón.
 - Al menos dos de cualquier combinación de lo siguiente:
     - Se encuentra una palabra clave de Keyword_sin.
@@ -3112,7 +3112,7 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
     - La función Func_eu_date encuentra una fecha en el formato de fecha correcto.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_unformatted_canadian_sin encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_sin.
 - Se supera la suma de comprobación.
@@ -3142,7 +3142,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - sin 
 - social insurance 
 - numero d'assurance sociale 
-- sins 
+- pecados 
 - ssn 
 - ssns 
 - social security 
@@ -3169,9 +3169,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ### <a name="format"></a>Formato
 
-siete a ocho dígitos más delimitadores de un dígito de comprobación o una letra
+de siete a ocho dígitos más delimitadores de un dígito de comprobación o una letra
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 de siete a ocho dígitos más delimitadores:
 - de uno a dos dígitos 
@@ -3180,7 +3180,7 @@ de siete a ocho dígitos más delimitadores:
 - un período opcional 
 - tres dígitos 
 - un guión 
-- un dígito o letra (no distingue entre mayúsculas y minúsculas), que es un dígito de comprobación
+- un dígito o una letra (no distingue mayúsculas de minúsculas) que es un dígito de comprobación
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -3188,12 +3188,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_chile_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_chile_id_card.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_chile_id_card encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -3221,12 +3221,12 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - national id
 - número de identificación nacional
 - rol único nacional
-- rol único resalte
+- rol único tributario
 - RUN
 - RUT
 - tarjeta de identificación
 - Rol Unico Nacional
-- Rol Unico Desaconsejo
+- Rol Unico Tributario
 - RUN #
 - RUT #
 - nationaluniqueroleID #
@@ -3235,28 +3235,28 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - identidad número
 - numero identificacion
 - identidad numero
-- Identidad de chileno no.
-- Número de identidad de chileno
-- Identidad de chilena #
-- Registro de impuestos único
-- Rol exclusivo de rese?a
+- Identidad chilena no.
+- Número de identidad chileno
+- Identidad chilena #
+- Registro fiscal único
+- Función de afluente única
 - Rol fiscal único
-- Número de reeste único
+- Número de afluente único
 - Número nacional único
 - Rol nacional único
 - Rol único nacional
-- Chile identity no.
+- Identidad de Chile no.
 - Número de identidad de Chile
 - Identidad de Chile #
 
    
-## <a name="china-resident-identity-card-prc-number"></a>Número de tarjeta de identidad residente (PRC) de China
+## <a name="china-resident-identity-card-prc-number"></a>Número de tarjeta de identidad de residente de China (PRC)
 
 ### <a name="format"></a>Formato
 
 18 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 18 dígitos:
 - seis dígitos que son un código de dirección 
@@ -3270,12 +3270,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_china_resident_id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_china_resident_id.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_china_resident_id encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -3312,11 +3312,11 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ### <a name="format"></a>Formato
 
-De 14 a 16 dígitos que pueden tener formato o sin formato (dddddddd) y que deben superar la prueba de Luhn.
+De 14 a 16 dígitos que se pueden dar formato o sin formato (ddddddddddd) y que deben pasar la prueba de Luhn.
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-Patrón complejo y sólido que detecta tarjetas de todas las principales marcas de todo el mundo, incluidas Visa, MasterCard, Discover Card, JCB, American Express, tarjetas de obsequios y tarjetas de carta.
+Patrón complejo y robusto que detecta tarjetas de todas las principales marcas del mundo, incluidas Visa, MasterCard, Discover Card, JCB, American Express, tarjetas de regalo y tarjetas de comensal.
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -3324,7 +3324,7 @@ Sí, la suma de comprobación de Luhn
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_credit_card encuentra contenido que coincide con el patrón.
 - Una de las siguientes opciones es verdadera:
     - Se encuentra una palabra clave de Keyword_cc_verification.
@@ -3332,7 +3332,7 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
     - La función Func_expiration_date encuentra una fecha en el formato de fecha correcto.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_credit_card encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -3381,20 +3381,20 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- cod. sicurezza
+- bacalao. sicurezza
 - cod sicurezza
 - n autorizzazione
 - código
 - codigo
-- cod. seg
+- bacalao. seg
 - cod seg
 - código de segurança
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
 - cód. segurança
-- cod. seguranca
-- cod. segurança
+- bacalao. seguranca
+- bacalao. segurança
 - cód. seguranca
 - cód segurança
 - cod seguranca
@@ -3437,15 +3437,15 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - americanexpress
 - americano espresso
 - Visa
-- y ahora
+- mastercard
 - master card
 - mc
-- y ahora
+- mastercards
 - master cards
 - diner's Club
 - diners club
-- restaurantsclub
-- discover
+- dinersclub
+- descubrir
 - discover card
 - discovercard
 - discover cards
@@ -3453,7 +3453,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - BrandSmart
 - japanese card bureau
 - carte blanche
-- carte cartehe
+- carteblanche
 - credit card
 - cc #
 - cc#:
@@ -3481,7 +3481,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - check card
 - checkcard
 - check cards
-- checkcards
+- tarjetas de verificación
 - debit card
 - debitcard
 - debit cards
@@ -3489,7 +3489,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - atm card
 - atmcard
 - atm cards
-- atmcards
+- tarjetas atmcards
 - enroute
 - en route
 - card type
@@ -3514,9 +3514,9 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - nº de carte
 - kreditkarte
 - karte
-- karteniriber
-- karteniribers
-- kreditkarteniriber
+- karteninhaber
+- karteninhabers
+- kreditkarteninhaber
 - kreditkarteninstitut
 - kreditkartentyp
 - eigentümername
@@ -3549,7 +3549,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - numero de tarjeta
 - número de tarjeta
 - tarjeta no
-- tarjetacabiente
+- tarjetahabiente
 - cartão de crédito
 - cartão de credito
 - cartao de crédito
@@ -3587,7 +3587,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - アメックス
 - アメリカンエクスプレス
 - アメリカン エクスプレス
-- Visa que se puede ver
+- Visa que se ha
 - Visa
 - マスターカード
 - マスター カード
@@ -3606,13 +3606,13 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - デビットカード
 
 
-## <a name="croatia-drivers-license-number"></a>Número de licencia de conductor de Croacia
+## <a name="croatia-drivers-license-number"></a>Número de licencia de conducir de Croacia
 
 ### <a name="format"></a>Formato
 
-ocho dígitos sin espacios y delimitadores
+ocho dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 ocho dígitos
   
@@ -3622,10 +3622,10 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
-- La expresión regular  `Regex_croatia_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_croatia_eu_driver's_license_number` clave. 
+- La expresión regular  `Regex_croatia_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave `Keywords_eu_driver's_license_number` de o `Keywords_croatia_eu_driver's_license_number` se encuentra. 
 
 ```xml
       <!-- Croatia Driver's License Number -->
@@ -3654,8 +3654,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -3667,31 +3667,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -3702,9 +3702,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -3713,55 +3713,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
 #### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver de s_license_number
@@ -3771,13 +3771,13 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 
 ## <a name="croatia-identity-card-number"></a>Número de tarjeta de identidad de Croacia
-Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial Número de identificación nacional de la UE. Está disponible como una entidad independiente de tipo de información confidencial.
+Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial Número de identificación nacional de la UE. Está disponible como una entidad de tipo de información confidencial independiente.
 
 ### <a name="format"></a>Formato
 
 nueve dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos consecutivos
 
@@ -3787,7 +3787,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_croatia_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_croatia_id_card.
 
@@ -3805,7 +3805,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
-- alojarstorski broj građana
+- majstorski broj građana
 - número de ciudadano maestro
 - nacionalni identifikacijski broj
 - national identification number
@@ -3823,25 +3823,25 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 
 
 ## <a name="croatia-passport-number"></a>Número de pasaporte de Croacia
 
 ### <a name="format"></a>Formato
 
-nueve dígitos sin espacios y delimitadores
+nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos 
   
@@ -3851,14 +3851,14 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_croatia_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_croatia_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_croatia_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_croatia_eu_passport_number` se encuentra. 
+- La expresión regular `Regex_eu_passport_date1` busca la fecha con el formato DD.MM.YYYY o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_croatia_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_croatia_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_croatia_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_croatia_eu_passport_number` se encuentra. 
     
 ```xml
       <!-- Croatia Passport Number -->
@@ -3904,17 +3904,17 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - br. Putovnice
 - br putovnice
    
-## <a name="croatia-personal-identification-oib-number"></a>Número de identificación personal de Croacia (OIB)
+## <a name="croatia-personal-identification-oib-number"></a>Número de identificación personal (OIB) de Croacia
 
 ### <a name="format"></a>Formato
 
 11 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos:
 - 10 dígitos 
-- dígito final es un dígito de comprobación
+- el dígito final es un dígito de comprobación
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -3922,12 +3922,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_croatia_oib_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_croatia_eu_tax_file_number búsqueda.
+- Se encuentra una palabra Keywords_croatia_eu_tax_file_number de la página.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_croatia_oib_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -3948,7 +3948,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
-- alojarstorski broj građana
+- majstorski broj građana
 - número de ciudadano maestro
 - nacionalni identifikacijski broj
 - national identification number
@@ -3966,85 +3966,24 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 
-## <a name="croatia-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de Croacia o identificación equivalente
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial Número de la Seguridad Social de la UE o Identificador equivalente.
-
-### <a name="format"></a>Formato
-
-11 dígitos sin espacios y delimitadores
-  
-### <a name="pattern"></a>Patrón
-
-11 dígitos:
-  
-- 10 dígitos
-- un dígito de comprobación
-    
-### <a name="checksum"></a>Suma de comprobación
-
-Sí
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-  
-- La función  `Func_croatia_eu_ssn_or_equivalent` encuentra contenido que coincide con el patrón. 
-- Se encuentra una palabra  `Keywords_croatia_eu_ssn_or_equivalent` clave de. 
-    
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-  
-- La función  `Func_croatia_eu_ssn_or_equivalent` encuentra contenido que coincide con el patrón. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_croatia_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Palabras clave
-
-#### <a name="keywords_croatia_eu_ssn_or_equivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
-
-- número de identificación personal
-- número de ciudadano maestro
-- national identification number
-- social security number
-- nationalnumber #
-- ssn #
-- ssn
-- nationalnumber
-- bnn #
-- bnn
-- número de identificación personal
-- personalidnumber #
-- oib
-- osobni identifikacijski broj
-
-## <a name="cyprus-drivers-license-number"></a>Número de licencia de controladores de Chipre
+## <a name="cyprus-drivers-license-number"></a>Número de licencia de conducir de Chipre
 
 ### <a name="format"></a>Formato
 
-12 dígitos sin espacios y delimitadores
+12 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 dígitos
   
@@ -4054,9 +3993,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_cyprus_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_cyprus_eu_driver's_license_number` clave.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_cyprus_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_cyprus_eu_driver's_license_number` se encuentra.
 
 ```xml
       <!-- Cyprus Driver's License Number -->
@@ -4085,8 +4024,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -4098,31 +4037,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -4133,9 +4072,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -4144,55 +4083,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 #### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver de s_license_number
 
@@ -4211,9 +4150,9 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ### <a name="format"></a>Formato
 
-10 dígitos sin espacios y delimitadores
+10 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos 
   
@@ -4223,8 +4162,8 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_cyprus_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_cyprus_eu_national_id_card` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_cyprus_eu_national_id_card` clave de. 
     
 ```xml 
@@ -4241,11 +4180,11 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
-- número de tarjeta de identificación
+- número de tarjeta id
 - número de tarjeta de identidad
 - kimlik karti
 - national identification number
-- número de identificación personal
+- número de id. personal
 - ταυτοτητασ
 
 
@@ -4253,9 +4192,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ### <a name="format"></a>Formato
 
-una letra seguida de 6 a 8 dígitos sin espacios ni delimitadores
+una letra seguida de 6-8 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 una letra seguida de seis a ocho dígitos
   
@@ -4265,14 +4204,14 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_cyprus_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_cyprus_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el formato `Regex_cyprus_eu_passport_date` DD/MM/YYYY o se encuentra una palabra clave de `Keywords_cyprus_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_cyprus_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_cyprus_eu_passport_number` se encuentra. 
+- La expresión regular `Regex_cyprus_eu_passport_date` busca la fecha con el formato DD/MM/YYYY o se encuentra una palabra clave `Keywords_cyprus_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_cyprus_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_cyprus_eu_passport_number` clave.  
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_cyprus_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_cyprus_eu_passport_number` se encuentra.  
     
 ```xml
       <!-- Cyprus Passport Number -->
@@ -4323,8 +4262,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - διαβατήριο
 - αριθμός διαβατηρίου
 - Pasaport Kimliği
-- pasaport nuujsı
-- Pasaporte no.
+- pasaport numarası
+- Pasaport no.
 - Αρ. Διαβατηρίου
 
 #### <a name="keywords_cyprus_eu_passport_date"></a>Keywords_cyprus_eu_passport_date
@@ -4345,11 +4284,11 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ocho dígitos y una letra en el patrón especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 ocho dígitos y una letra:
   
-- "0" o "9"
+- a "0" o "9"
 - siete dígitos
 - una letra (no distingue mayúsculas de minúsculas)
     
@@ -4359,12 +4298,12 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_cyprus_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_cyprus_eu_tax_file_number` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_cyprus_eu_tax_file_number` clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_cyprus_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_cyprus_eu_tax_file_number` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Cyprus Tax Identification Number -->
@@ -4390,10 +4329,10 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -4401,22 +4340,22 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - tic
 - tin id
 - tin no
-- tin #
+- estaño #
 - vergi kimlik kodu
-- vergi kimlik nuanessı
+- vergi kimlik numarası
 - αριθμός φορολογικού μητρώου
 - κωδικός φορολογικού μητρώου
 - φορολογική ταυτότητα
 - φορολογικού κωδικού
 
 
-## <a name="czech-drivers-license-number"></a>Número de licencia de conductor checo
+## <a name="czech-drivers-license-number"></a>Número de licencia de conducir checo
 
 ### <a name="format"></a>Formato
 
 dos letras seguidas de seis dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 ocho letras y dígitos:
   
@@ -4431,9 +4370,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_czech_republic_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_czech_republic_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_czech_republic_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_czech_republic_eu_driver's_license_number` se encuentra. 
 
 ```xml
       <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
@@ -4462,8 +4401,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -4475,31 +4414,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -4510,9 +4449,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -4521,55 +4460,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 #### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver de s_license_number
 
@@ -4585,7 +4524,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ocho dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 ocho dígitos sin espacios ni delimitadores
   
@@ -4595,14 +4534,14 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_czech_republic_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_czech_republic_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_czech_republic_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_czech_republic_eu_passport_number` se encuentra. 
+- La expresión regular `Regex_eu_passport_date1` busca la fecha con el formato DD.MM.YYYY o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_czech_republic_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_czech_republic_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_czech_republic_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_czech_republic_eu_passport_number` se encuentra. 
     
 ```xml
       <!-- Czech Republic Passport Number -->
@@ -4653,7 +4592,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
@@ -4663,7 +4602,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 nueve dígitos con barra diagonal opcional (formato antiguo) 10 dígitos con barra diagonal opcional (nuevo formato)
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos (formato antiguo):
 - seis dígitos que representan la fecha de nacimiento
@@ -4681,15 +4620,15 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 
 - La función Func_czech_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_czech_id_card.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 
-- La función Func_czech_id_card_new_format encuentra contenido que coincide con el patrón.
+- La función Func_czech_id_card_new_format encuentra contenido que coincida con el patrón.
 - Se supera la suma de comprobación.
 
 ```xml
@@ -4726,7 +4665,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - número nacional
 - osobní číslo
 - personalidnumber #
-- número de identificación personal
+- número de id. personal
 - número de identificación personal
 - número personal
 - pid #
@@ -4744,86 +4683,26 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 - número de identificación único
 
-## <a name="czech-social-security-number-or-equivalent-identification"></a>Número de la seguridad social checa o identificación equivalente
 
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial Número de la Seguridad Social de la UE o Identificador equivalente.
-
-### <a name="format"></a>Formato
-
-10 dígitos y una barra diagonal inversa en el patrón especificado
-  
-### <a name="pattern"></a>Patrón
-
-10 dígitos y una barra diagonal inversa:
-  
-- seis dígitos que corresponden a la fecha de nacimiento (AAMMDD): 
-- una barra diagonal inversa
-- tres dígitos que corresponden a un número de serie que separa a las personas que han nado en la misma fecha
-- un dígito de comprobación
-    
-### <a name="checksum"></a>Suma de comprobación
-
-Sí
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_czech_republic_eu_ssn_or_equivalent` encuentra contenido que coincide con el patrón. 
-- Se encuentra una palabra  `Keywords_czech_republic_eu_ssn_or_equivalent` clave de. 
-    
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_czech_republic_eu_ssn_or_equivalent` encuentra contenido que coincide con el patrón. 
-
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Palabras clave
-
-#### <a name="keywords_czech_republic_eu_ssn_or_equivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
-
-- número de nacimiento
-- national identification number
-- número de identificación personal
-- social security number
-- nationalnumber #
-- ssn #
-- ssn
-- número nacional
-- número de identificación personal
-- personalidnumber #
-- rč
-- rodné číslo
-- rodne cislo
-
-## <a name="denmark-drivers-license-number"></a>Número de licencia de conductor de Dinamarca
+## <a name="denmark-drivers-license-number"></a>Número de licencia de conducir de Dinamarca
 
 ### <a name="format"></a>Formato
 
-ocho dígitos sin espacios y delimitadores
+ocho dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 ocho dígitos
   
@@ -4833,9 +4712,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_denmark_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_denmark_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_denmark_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_denmark_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Denmark Driver's License Number -->
@@ -4864,8 +4743,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -4877,31 +4756,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -4912,9 +4791,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -4923,55 +4802,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 #### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver de s_license_number
 
@@ -4983,9 +4862,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ### <a name="format"></a>Formato
 
-nueve dígitos sin espacios y delimitadores
+nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos 
   
@@ -4995,14 +4874,14 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_denmark_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_denmark_eu_passport_number` clave. 
-- La expresión regular `Regex_eu_passport_date2` encuentra la fecha con el formato DD MM AA o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_denmark_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_denmark_eu_passport_number` se encuentra. 
+- La expresión regular `Regex_eu_passport_date2` busca la fecha con el formato DD MM YY o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_denmark_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_denmark_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_denmark_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_denmark_eu_passport_number` se encuentra. 
     
 ```xml
       <!-- Denmark Passport Number -->
@@ -5052,7 +4931,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
@@ -5062,7 +4941,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 10 dígitos que contienen un guión
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos:
 - seis dígitos en el formato DDMMYY, que son la fecha de nacimiento 
@@ -5075,13 +4954,13 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular Func_denmark_eu_tax_file_number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular Func_denmark_eu_tax_file_number encuentra contenido que coincida con el patrón.
 - Se encuentra una palabra clave de Keyword_denmark_id.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular Func_denmark_eu_tax_file_number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular Func_denmark_eu_tax_file_number encuentra contenido que coincida con el patrón.
 - Se supera la suma de comprobación.
 
 ```xml
@@ -5106,8 +4985,8 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - civilt registreringssystem
 - cpr
 - cpr #
-- geheiheitskarte nummer
-- geheiheitsverskarkarte nummer
+- gesundheitskarte nummer
+- gesundheitsversicherungkarte nummer
 - tarjeta de estado
 - número de tarjeta de seguro de salud
 - número de seguro de salud
@@ -5121,10 +5000,10 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - número nacional
 - personalidnumber #
 - personalidentityno #
-- número de identificación personal
+- número de id. personal
 - personnummer
 - personnummer #
-- reise krankenversálisisskartenummer
+- reisekrankenversicherungskartenummer
 - rejsesygesikringskort
 - ssn
 - ssn #
@@ -5143,18 +5022,18 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - tarjeta de seguro de salud de viajes
 - uniqueidentityno #
 - número de impuestos
-- número de registro de impuestos
+- número de registro fiscal
 - tax id
 - número de identificación fiscal
-- y ahora #
+- taxid #
 - taxnumber #
 - tax no
 - taxno #
 - taxnumber
 - identificación fiscal no
-- tin #
-- y ahora #
-- numeración #
+- estaño #
+- taxidno #
+- taxidnumber #
 - tax no #
 - tin id
 - tin no
@@ -5172,74 +5051,18 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - sygesikringsnr
 - sygesikringsnummer
 
-## <a name="denmark-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de Dinamarca o identificación equivalente
-Esta entidad de tipo de información confidencial solo está disponible el tipo de información confidencial Número de la Seguridad Social de la UE o Identificador equivalente.
 
-### <a name="format"></a>Formato
-
-10 dígitos y un guión en el patrón especificado
-  
-### <a name="pattern"></a>Patrón
-
-10 dígitos y un guión:
-  
-- seis dígitos que corresponden a la fecha de nacimiento (DDMMYY) 
-- un guión
-- cuatro dígitos que corresponden a un número de secuencia
-
-### <a name="checksum"></a>Suma de comprobación
-
-Sí
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_denmark_eu_ssn_or_equivalent` encuentra contenido que coincide con el patrón. 
-- Se encuentra una palabra  `Keywords_denmark_eu_ssn_or_equivalent` clave de. 
-    
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_denmark_eu_ssn_or_equivalent` encuentra contenido que coincide con el patrón. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_denmark_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Palabras clave
-
-#### <a name="keywords_denmark_eu_ssn_or_equivalent"></a>Keywords_denmark_eu_ssn_or_equivalent
-
-- número de identificación personal
-- national identification number
-- social security number
-- nationalnumber #
-- ssn #
-- ssn
-- número nacional
-- número de identificación personal
-- personalidnumber #
-- cpr-nummer
-- personnummer
-
-## <a name="drug-enforcement-agency-dea-number"></a>Número de la Agencia Antidrogas (DEA)
+## <a name="drug-enforcement-agency-dea-number"></a>Número de agencia antidrogas (DEA)
 
 ### <a name="format"></a>Formato
 
 dos letras seguidas de siete dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 El patrón debe incluir todo lo siguiente:
 - una letra (no distingue mayúsculas de minúsculas) de este conjunto de letras posibles: abcdefghjklmnprstux, que es un código de registrador 
-- una letra (no distingue entre mayúsculas y minúsculas), que es la primera letra del apellido o dígito "9" del registrador.
+- una letra (no distingue mayúsculas de minúsculas), que es la primera letra del apellido o dígito '9' del registrador
 - siete dígitos, el último de los cuales es el dígito de comprobación
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -5248,12 +5071,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_dea_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra `Keyword_dea_number` clave de
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_dea_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -5283,21 +5106,21 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 - dea
 - dea #
-- administración de la aplicación de antidrogas
+- administración de la aplicación de drogas
 - agencia antidrogas
 
 
-## <a name="estonia-drivers-license-number"></a>Número de licencia de conductor de Estonia
+## <a name="estonia-drivers-license-number"></a>Número de licencia de conducir de Estonia
 
 ### <a name="format"></a>Formato
 
 dos letras seguidas de seis dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 dos letras y seis dígitos:
   
-- las letras "ET" (no distingue entre mayúsculas y minúsculas) 
+- las letras "ET" (no distingue mayúsculas de minúsculas) 
 - seis dígitos
     
 ### <a name="checksum"></a>Suma de comprobación
@@ -5306,9 +5129,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_estonia_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_estonia_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_estonia_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_estonia_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Estonia Driver's License Number -->
@@ -5337,8 +5160,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -5350,31 +5173,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -5385,9 +5208,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -5396,62 +5219,62 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 #### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver de s_license_number
 
 -- permis de conduire
-- juhilrovde desenlazadorrid
+- yhilubade numbrid
 - número de juhiloa
-- juhilrov
+- juhiluba
 
 
 ## <a name="estonia-personal-identification-code"></a>Código de identificación personal de Estonia
@@ -5464,15 +5287,15 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ### <a name="format"></a>Formato
 
-11 dígitos sin espacios y delimitadores
+11 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos:
   
-- un dígito que corresponde al sexo y al siglo de nacimiento (número impar varón, número par femenil; 1-2: s. 19; 3-4: 20; 5-6: s. 21)
-- seis dígitos que corresponden a la fecha de nacimiento (AAMMDD)
-- tres dígitos que corresponden a un número de serie que separa a las personas que han nado en la misma fecha
+- un dígito que corresponde al sexo y al siglo de nacimiento (número impar varón, número par mujer; 1-2: 19. s.; 3-4: 20th century; 5-6: 21st century)
+- seis dígitos que corresponden a la fecha de nacimiento (AYMMDD)
+- tres dígitos que corresponden a un número de serie que separa a las personas que nacen en la misma fecha
 - un dígito de comprobación
     
 ### <a name="checksum"></a>Suma de comprobación
@@ -5481,12 +5304,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_estonia_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_estonia_eu_national_id_card` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_estonia_eu_national_id_card` clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_estonia_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_estonia_eu_national_id_card` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Estonia Personal Identification Code -->
@@ -5519,7 +5342,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - national identification number
 - número nacional
 - código personal
-- número de identificación personal
+- número de id. personal
 - código de identificación personal
 - número de identificación personal
 - personalidnumber #
@@ -5529,16 +5352,16 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 
 
 ## <a name="estonia-passport-number"></a>Número de pasaporte de Estonia
@@ -5547,7 +5370,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 una letra seguida de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 una letra seguida de siete dígitos
   
@@ -5557,14 +5380,14 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_estonia_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_estonia_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_estonia_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_estonia_eu_passport_number` se encuentra. 
+- La expresión regular `Regex_eu_passport_date1` busca la fecha con el formato DD.MM.YYYY o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_estonia_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_estonia_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_estonia_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_estonia_eu_passport_number` se encuentra. 
     
 ```xml
       <!-- Estonia Passport Number -->
@@ -5607,11 +5430,11 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
-eesti kodaniku passi number passinumbrid document number document no dokumendi nr
+eesti kodaniku passi number passinumbrid document number document document no dokumendi nr
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
@@ -5621,7 +5444,7 @@ eesti kodaniku passi number passinumbrid document number document no dokumendi n
 
 16 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Patrón complejo y sólido
 
@@ -5631,7 +5454,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_eu_debit_card encuentra contenido que coincide con el patrón.
 - Al menos una de las siguientes opciones es verdadera:
     - Se encuentra una palabra clave de Keyword_eu_debit_card.
@@ -5680,7 +5503,7 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - atm cards 
 - atm kaart 
 - atmcard 
-- atmcards 
+- tarjetas atmcards 
 - atmkaart 
 - atmkaarten 
 - bancontact 
@@ -5710,7 +5533,7 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - carte de credit 
 - carte de crédit 
 - carte di credito 
-- carte cartehe 
+- carteblanche 
 - cartão de credito 
 - cartão de crédito 
 - cartão de debito 
@@ -5720,7 +5543,7 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - check card 
 - check cards 
 - checkcard
-- checkcards 
+- tarjetas de verificación 
 - chequekaart 
 - cirrus 
 - cirrus-edc-maestro 
@@ -5738,8 +5561,8 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - debitcards 
 - debito automatico 
 - diners club 
-- restaurantsclub 
-- discover 
+- dinersclub 
+- descubrir 
 - discover card 
 - discover cards 
 - discovercard 
@@ -5761,21 +5584,21 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - kaarthouder 
 - kaarthouders 
 - karte  
-- karteniriber 
-- karteniribers
+- karteninhaber 
+- karteninhabers
 - kartennr 
 - kartennummer 
 - kreditkarte 
 - kreditkarten-nummer 
-- kreditkarteniriber 
+- kreditkarteninhaber 
 - kreditkarteninstitut 
 - kreditkartennummer 
 - kreditkartentyp 
 - maestro 
 - master card 
 - master cards 
-- y ahora 
-- y ahora 
+- mastercard 
+- mastercards 
 - mc 
 - mister cash 
 - n carta 
@@ -5835,7 +5658,7 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - tarjeta de debito 
 - tarjeta debito 
 - tarjeta no
-- tarjetacabiente 
+- tarjetahabiente 
 - tipo della scheda 
 - ufficio giapponese della 
 - scheda 
@@ -5858,10 +5681,10 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - cod seguranca 
 - cod segurança 
 - cod sicurezza 
-- cod. seg 
-- cod. seguranca 
-- cod. segurança 
-- cod. sicurezza 
+- bacalao. seg 
+- bacalao. seguranca 
+- bacalao. segurança 
+- bacalao. sicurezza 
 - codice di sicurezza 
 - codice di verifica 
 - codigo 
@@ -5939,10 +5762,10 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - espira 
 - exp date 
 - exp datum 
-- expiration 
+- expiración 
 - expire 
 - expira 
-- expiry 
+- expiración 
 - fecha de expiracion 
 - fecha de venc 
 - gultig bis 
@@ -5965,9 +5788,9 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - válido hasta 
 
 
-## <a name="eu-drivers-license-number"></a>Número de licencia de conductor de la UE
+## <a name="eu-drivers-license-number"></a>Número de licencia de conducir de la UE
 
-Estas entidades se encuentran en el número de licencia de conductor de la UE y son tipos de información confidencial.
+Estas entidades están en el número de licencia de conducir de la UE y son tipos de información confidencial.
 
 - [Austria](#austria-drivers-license-number) 
 - [Bélgica](#belgium-drivers-license-number)
@@ -6066,9 +5889,9 @@ Estas entidades están en el número de pasaporte de la UE y son tipos de inform
 - [Reino Unido](#us--uk-passport-number)
 
 
-## <a name="eu-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de la UE o identificación equivalente
+## <a name="eu-social-security-number-or-equivalent-identification"></a>Número de seguridad social de la UE o identificación equivalente
 
-Estas entidades que están en el número de la Seguridad Social de la UE o una identificación equivalente y son tipos de información confidencial.
+Estas entidades que se encuentran en el número de seguridad social de la UE o en una identificación equivalente y son tipos de información confidencial.
 
 - [Austria](#austria-social-security-number)
 - [Bélgica](#belgium-national-number)
@@ -6076,7 +5899,7 @@ Estas entidades que están en el número de la Seguridad Social de la UE o una i
 - [Checo](#czech-personal-identity-number)
 - [Dinamarca](#denmark-personal-identification-number)
 - [Finlandia](#finland-national-id)
-- [Francia](#france-social-security-number-insee-or-equivalent-identification)
+- [Francia](#france-social-security-number-insee)
 - [Alemania](#germany-identity-card-number)
 - [Grecia](#greece-national-id-card)
 - [Hungría](#hungary-social-security-number-taj)
@@ -6087,7 +5910,7 @@ Estas entidades que están en el número de la Seguridad Social de la UE o una i
 
 ## <a name="eu-tax-identification-number"></a>Número de identificación fiscal de la UE
 
-Estas entidades se encuentran en el tipo de información confidencial del número de identificación fiscal de la UE.
+Estas entidades se encuentran en el tipo de información confidencial número de identificación fiscal de la UE.
 
 - [Austria](#austria-tax-identification-number)
 - [Bélgica](#belgium-national-number)
@@ -6119,13 +5942,13 @@ Estas entidades se encuentran en el tipo de información confidencial del númer
 - [Reino Unido](#uk-unique-taxpayer-reference-number)
 
 
-## <a name="finland-drivers-license-number"></a>Número de licencia de conductor de Finlandia
+## <a name="finland-drivers-license-number"></a>Número de licencia de conducir de Finlandia
 
 ### <a name="format"></a>Formato
 
 10 dígitos que contienen un guión
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos que contienen un guión:
   
@@ -6140,9 +5963,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_finland_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_finland_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_finland_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_finland_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Finland Driver's License Number -->
@@ -6171,8 +5994,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -6184,31 +6007,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -6219,9 +6042,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -6230,55 +6053,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
 #### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver de s_license_number
@@ -6294,7 +6117,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - ajokortin numerot
 
 
-## <a name="finland-european-health-insurance-number"></a>Número de seguro médico europeo de Finlandia
+## <a name="finland-european-health-insurance-number"></a>Número de seguro de salud europeo de Finlandia
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -6306,12 +6129,12 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Número de 20 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Número de 20 dígitos:
 
 - 10 dígitos - 8024680246
-- un espacio opcional o un guión
+- un espacio o guión opcional
 - 10 dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -6320,9 +6143,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- El elemento regex Regex_Finland_European_Health_Insurance_Number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keyword_Finland_European_Health_Insurance_Number búsqueda.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- El objeto regex Regex_Finland_European_Health_Insurance_Number encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra clave Keyword_Finland_European_Health_Insurance_Number se encuentra.
 
 ```xml
       <!-- Finland European Health Insurance Number -->
@@ -6340,7 +6163,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - ehic #
 - ehic
 - finlandehicnumber #
-- finska bootukförsäkringskort
+- finska sjukförsäkringskort
 - tarjeta de estado
 - tarjeta de seguro de salud
 - número de seguro de salud
@@ -6348,25 +6171,25 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - sairaanhoitokortin
 - sairausvakuutuskortti
 - sairausvakuutusnumero
-- bootukförsäkring nummer
-- bootukförsäkringskort
+- sjukförsäkring nummer
+- sjukförsäkringskort
 - suomen sairausvakuutuskortti
 - terveyskortti
 
 
-## <a name="finland-national-id"></a>Identificación nacional de Finlandia
+## <a name="finland-national-id"></a>Id. nacional de Finlandia
 
 ### <a name="format"></a>Formato
 
 seis dígitos más un carácter que indica un siglo más tres dígitos más un dígito de comprobación
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 El patrón debe incluir todo lo siguiente:
 - seis dígitos en el formato DDMMYY, que son una fecha de nacimiento 
 - marcador de century (ya sea '-', '+' o 'a') 
-- número de identificación personal de tres dígitos 
-- un dígito o una letra (no se puede tener en cuenta mayúsculas de minúsculas) que es un dígito de comprobación
+- Número de identificación personal de tres dígitos 
+- un dígito o una letra (no tiene mayúsculas de minúsculas) que es un dígito de comprobación
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -6374,14 +6197,14 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- la función Func_finnish_national_id encuentra contenido que coincide con el patrón
-- se encuentra una palabra clave Keyword_finnish_national_id búsqueda
-- la suma de comprobación pasa
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- la función Func_finnish_national_id encuentra contenido que coincida con el patrón
+- se encuentra una palabra clave Keyword_finnish_national_id se encuentra
+- las pasadas de suma de comprobación
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- la función Func_finnish_national_id encuentra contenido que coincide con el patrón
-- la suma de comprobación pasa
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- la función Func_finnish_national_id encuentra contenido que coincida con el patrón
+- las pasadas de suma de comprobación
 
 ```xml
       <!-- Finnish National ID-->
@@ -6407,14 +6230,14 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - id no
 - id number
 - identification number
-- identiteetti numero
+- número de identiteetti
 - número de identidad
 - idnumber
 - kansallinen henkilötunnus
 - kansallisen henkilökortin
 - tarjeta de identificación nacional
 - national id no.
-- id. personal
+- id personal
 - código de identidad personal
 - personalidnumber #
 - personbeteckning
@@ -6427,21 +6250,21 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
-- tutensiónstenumero
+- estaño #
+- tunnistenumero
 - tunnus numero
-- tunnuslálisis
+- tunnusluku
 - tunnusnumero
-- vertitartti
+- verokortti
 - veronumero
 - verotunniste
 - verotunnus
@@ -6449,14 +6272,14 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ## <a name="finland-passport-number"></a>Número de pasaporte de Finlandia
 
-Esta entidad de tipo de información confidencial está disponible en el tipo de información confidencial Número de pasaporte de la UE y está disponible como una entidad independiente de tipo de información confidencial.
+Esta entidad de tipo de información confidencial está disponible en el tipo de información confidencial Número de pasaporte de la UE y está disponible como una entidad de tipo de información confidencial independiente.
 
 ### <a name="format"></a>Formato
 combinación de nueve letras y dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 combinación de nueve letras y dígitos:
-- dos letras (no distingue entre mayúsculas y minúsculas) 
+- dos letras (no distingue mayúsculas de minúsculas) 
 - siete dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -6465,14 +6288,14 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular `Regex_finland_passport_number` encuentra contenido que coincide con el patrón.
-- Se encuentra una `Keywords_eu_passport_number` palabra clave o una palabra `Keyword_finland_passport_number` clave.
-- La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular `Regex_finland_passport_number` busca contenido que coincida con el patrón.
+- Una palabra clave `Keywords_eu_passport_number` de o `Keyword_finland_passport_number` se encuentra.
+- La expresión regular `Regex_eu_passport_date1` busca la fecha con el formato DD.MM.YYYY o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular `Regex_finland_passport_number` encuentra contenido que coincide con el patrón.
-- Se encuentra una `Keywords_eu_passport_number` palabra clave o una palabra `Keyword_finland_passport_number` clave.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular `Regex_finland_passport_number` busca contenido que coincida con el patrón.
+- Una palabra clave `Keywords_eu_passport_number` de o `Keyword_finland_passport_number` se encuentra.
 
 ```xml
       <!-- Finland Passport Number -->
@@ -6524,18 +6347,18 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
-## <a name="france-drivers-license-number"></a>Número de licencia de conductor de Francia
+## <a name="france-drivers-license-number"></a>Número de licencia de conducir de Francia
 
-Esta entidad de tipo de información confidencial está disponible en el tipo de información confidencial Número de licencia de conductor de la UE y está disponible como una entidad independiente de tipo de información confidencial.
+Esta entidad de tipo de información confidencial está disponible en el tipo de información confidencial Número de licencia de conducir de la UE y está disponible como una entidad de tipo de información confidencial independiente.
 
 ### <a name="format"></a>Formato
 
 12 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 dígitos con validación para descontar patrones similares como los números de teléfono franceses
 
@@ -6545,9 +6368,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- la función Func_french_drivers_license encuentra contenido que coincide con el patrón.
-- se encuentra una palabra clave Keyword_french_drivers_license búsqueda.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- la función Func_french_drivers_license encuentra contenido que coincida con el patrón.
+- se encuentra una palabra Keyword_french_drivers_license de la página.
 
 ```xml
     <!-- France Driver's License Number -->
@@ -6573,8 +6396,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -6586,31 +6409,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -6621,9 +6444,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -6632,55 +6455,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 - permis de conduire
 - licence number
 - license number
@@ -6701,7 +6524,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Número de 21 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Número de 21 dígitos:
 
@@ -6718,9 +6541,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- el archivo regex Regex_France_Health_Insurance_Number encuentra contenido que coincide con el patrón.
-- se encuentra una palabra clave Keyword_France_Health_Insurance_Number búsqueda.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- el objeto regex Regex_France_Health_Insurance_Number encuentra contenido que coincida con el patrón.
+- se encuentra una palabra Keyword_France_Health_Insurance_Number de la página.
 
 ```xml
       <!-- France Health Insurance Number -->
@@ -6735,7 +6558,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keyword_france_health_insurance_number"></a>Keyword_France_health_insurance_number
 
-- insurance card
+- tarjeta de seguro
 - carte vitale
 - carte d'assuré social
 
@@ -6746,7 +6569,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 12 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 dígitos
 
@@ -6756,9 +6579,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_france_cni encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_france_eu_national_id_card búsqueda.
+- Se encuentra una palabra Keywords_france_eu_national_id_card de la página.
 
 ```xml
     <!-- France CNI -->
@@ -6788,17 +6611,17 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
    
 ## <a name="france-passport-number"></a>Número de pasaporte de Francia
-Esta entidad de tipo de información confidencial está disponible en el tipo de información confidencial Número de pasaporte de la UE. Está disponible como una entidad independiente de tipo de información confidencial.
+Esta entidad de tipo de información confidencial está disponible en el tipo de información confidencial Número de pasaporte de la UE. Está disponible como una entidad de tipo de información confidencial independiente.
 
 ### <a name="format"></a>Formato
 
 nueve dígitos y letras
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos y letras:
 - dos dígitos 
-- dos letras (no distingue entre mayúsculas y minúsculas) 
+- dos letras (no distingue mayúsculas de minúsculas) 
 - cinco dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -6807,14 +6630,14 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función `Func_fr_passport` encuentra contenido que coincide con el patrón.
-- Se encuentra una `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_france_eu_passport_number` clave.
-- La expresión regular `Regex_eu_passport_date3` encuentra la fecha con el formato DD MM YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_fr_passport` busca contenido que coincida con el patrón.
+- Una palabra clave `Keywords_eu_passport_number` de o `Keywords_france_eu_passport_number` se encuentra.
+- La expresión regular `Regex_eu_passport_date3` busca la fecha con el formato DD MM YYYY o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función `Func_fr_passport` encuentra contenido que coincide con el patrón.
-- Se encuentra una `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_france_eu_passport_number` clave.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_fr_passport` busca contenido que coincida con el patrón.
+- Una palabra clave `Keywords_eu_passport_number` de o `Keywords_france_eu_passport_number` se encuentra.
 
 
 ```xml
@@ -6866,7 +6689,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - passeportnon
 - passeportn °
 - passeport français
-- passeport comodórdo
+- passeport livre
 - passeport carte
 - numéro passeport
 - passeport n°
@@ -6875,17 +6698,17 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
-## <a name="france-social-security-number-insee-or-equivalent-identification"></a>Número de la seguridad social de Francia (INSEE) o identificación equivalente
+## <a name="france-social-security-number-insee"></a>Número de seguridad social de Francia (INSEE)
 
 ### <a name="format"></a>Formato
 
 15 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Debe coincidir uno de los dos patrones:
 - 13 dígitos seguidos de un espacio seguido de dos dígitos<br/>
@@ -6898,13 +6721,13 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función `Func_french_insee` encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_french_insee` busca contenido que coincida con el patrón.
 - Se encuentra una palabra clave de Keyword_fr_insee.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_french_insee o Func_fr_insee encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_french_insee o Func_fr_insee encuentra contenido que coincida con el patrón.
 - Se supera la suma de comprobación.
 
 ```xml
@@ -6961,7 +6784,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 13 dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 13 dígitos
   
@@ -6983,12 +6806,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_france_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_france_eu_tax_file_number` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_france_eu_tax_file_number` clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_france_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_france_eu_tax_file_number` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- France Tax Identification Number (numéro SPI.) -->
@@ -7019,19 +6842,19 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 
 
-## <a name="france-value-added-tax-number"></a>Número de impuestos del valor agregado de Francia
+## <a name="france-value-added-tax-number"></a>Número de impuestos de valor agregado de Francia
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -7043,18 +6866,18 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón alfanumérico de 13 caracteres
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Patrón alfanumérico de 13 caracteres:
 
-- dos letras - FR (no se puede insensible a mayúsculas y minúsculas)
-- un espacio opcional o un guión
+- dos letras: FR (no tiene mayúsculas de minúsculas)
+- un espacio o guión opcional
 - dos letras o dígitos
-- un espacio opcional, punto, guión o coma
+- un espacio, un punto, un guión o una coma opcionales
 - tres dígitos
-- un espacio opcional, punto, guión o coma
+- un espacio, un punto, un guión o una coma opcionales
 - tres dígitos
-- un espacio opcional, punto, guión o coma
+- un espacio, un punto, un guión o una coma opcionales
 - tres dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -7063,12 +6886,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_france_value_added_tax_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_france_value_added_tax_number búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_france_value_added_tax_number encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra Keywords_france_value_added_tax_number de la página.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_france_value_added_tax_number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_france_value_added_tax_number encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- France Value Added Tax Number -->
@@ -7089,7 +6912,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - número de iva
 - vat no
 - vat #
-- impuesto sobre el valor agregado
+- impuesto al valor agregado
 - siren identification no numéro d'identification taxe sur valeur ajoutée
 - taxe valeur ajoutée
 - taxe sur la valeur ajoutée
@@ -7098,17 +6921,17 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - numéro d'identification siren
 
 
-## <a name="germany-drivers-license-number"></a>Número de licencia de conductor de Alemania
+## <a name="germany-drivers-license-number"></a>Número de licencia de conducir de Alemania
 
-Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial Número de licencia de conductor de la UE. Está disponible como una entidad independiente de tipo de información confidencial.
+Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial Número de licencia de conducir de la UE. Está disponible como una entidad de tipo de información confidencial independiente.
 
 ### <a name="format"></a>Formato
 
 combinación de 11 dígitos y letras
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-11 dígitos y letras (no distingue entre mayúsculas y minúsculas):
+11 dígitos y letras (no distingue mayúsculas de minúsculas):
 - un dígito o una letra 
 - dos dígitos 
 - seis dígitos o letras 
@@ -7121,7 +6944,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_german_drivers_license encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_german_drivers_license_number.
 - Se supera la suma de comprobación.
@@ -7140,8 +6963,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keyword_german_drivers_license_number"></a>Keyword_german_drivers_license_number
 
-- ausstelltonsdatum
-- ausstelltonsort
+- ausstellungsdatum
+- ausstellungsort
 - ausstellende behöde
 - ausstellende behorde
 - ausstellende behoerde
@@ -7180,8 +7003,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -7193,31 +7016,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -7228,9 +7051,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -7239,49 +7062,49 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
@@ -7292,17 +7115,17 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ### <a name="format"></a>Formato
 
-desde el 1 de noviembre de 2010: nueve letras y dígitos
+desde el 1 de noviembre de 2010: Nueve letras y dígitos
 
 del 1 de abril de 1987 al 31 de octubre de 2010: 10 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 desde el 1 de noviembre de 2010:
 - una letra (no distingue mayúsculas de minúsculas) 
 - ocho dígitos
 
-desde el 1 de abril de 1987 hasta el 31 de octubre de 2010:
+del 1 de abril de 1987 al 31 de octubre de 2010:
 - 10 dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -7311,7 +7134,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_germany_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_germany_id_card.
 
@@ -7329,7 +7152,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 #### <a name="keyword_germany_id_card"></a>Keyword_germany_id_card
 
-- austanos
+- ausweis
 - gpid
 - identificación
 - identifikation
@@ -7337,7 +7160,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - documento de identidad
 - número de identidad
 - id-nummer
-- id. personal
+- id personal
 - personalausweis
 - persönliche id nummer
 - persönliche identifikationsnummer
@@ -7346,13 +7169,13 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 ## <a name="germany-passport-number"></a>Número de pasaporte de Alemania
 
-Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial Número de pasaporte de la UE y está disponible como una entidad independiente de tipo de información confidencial.
+Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial Número de pasaporte de la UE y está disponible como una entidad de tipo de información confidencial independiente.
 
 ### <a name="format"></a>Formato
 
 10 dígitos o letras
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 El patrón debe incluir todo lo siguiente:
 - el primer carácter es un dígito o una letra de este conjunto (C, F, G, H, J, K) 
@@ -7366,14 +7189,14 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_german_passport encuentra contenido que coincide con el patrón.
-- Se encuentra una `Keyword_german_passport` palabra clave o una palabra `Keywords_eu_passport_number_common` clave.
+- Una palabra clave `Keyword_german_passport` de o `Keywords_eu_passport_number_common` se encuentra.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_german_passport_data encuentra contenido que coincide con el patrón.
-- Se encuentra una `Keyword_german_passport` palabra clave o una palabra `Keywords_eu_passport_number_common` clave.
+- Una palabra clave `Keyword_german_passport` de o `Keywords_eu_passport_number_common` se encuentra.
 - Se supera la suma de comprobación.
 
 ```xml
@@ -7428,9 +7251,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ### <a name="format"></a>Formato
 
-11 dígitos sin espacios y delimitadores
+11 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos
   
@@ -7449,12 +7272,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_germany_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_germany_eu_tax_file_number` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_germany_eu_tax_file_number` clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_germany_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_germany_eu_tax_file_number` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Germany Tax Identification Number -->
@@ -7483,19 +7306,19 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
-- z amazing #
-- z amazing
-- ztellonummer
+- estaño #
+- zinn #
+- zinn
+- zinnnummer
 
 
 ## <a name="germany-value-added-tax-number"></a>Número de impuestos sobre el valor agregado de Alemania
@@ -7510,7 +7333,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón alfanumérico de 11 caracteres
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Patrón alfanumérico de 11 caracteres:
 
@@ -7529,12 +7352,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_germany_value_added_tax_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_germany_value_added_tax_number búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_germany_value_added_tax_number encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra clave Keywords_germany_value_added_tax_number se encuentra.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_germany_value_added_tax_number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_germany_value_added_tax_number encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- Germany Value Added Tax Number -->
@@ -7561,15 +7384,15 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - mehrwertsteuer nummer
 
 
-## <a name="greece-drivers-license-number"></a>Número de licencia de conductor de Grecia
+## <a name="greece-drivers-license-number"></a>Número de licencia de conducir de Grecia
 
-Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial Número de licencia de conductor de la UE y está disponible como una entidad independiente de tipo de información confidencial.
+Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial Número de licencia de conducir de la UE y está disponible como una entidad de tipo de información confidencial independiente.
 
 ### <a name="format"></a>Formato
 
-nueve dígitos sin espacios y delimitadores
+nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos 
   
@@ -7579,9 +7402,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_greece_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_greece_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_greece_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_greece_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Greece Driver's License Number -->
@@ -7610,8 +7433,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -7623,31 +7446,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -7658,9 +7481,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -7669,55 +7492,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
 #### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver de s_license_number
@@ -7734,7 +7557,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 Combinación de 7 u 8 letras y números más un guión
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Siete letras y números (formato antiguo):
 - Una letra (cualquier letra del alfabeto griego)  
@@ -7752,11 +7575,11 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_greece_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_greece_id_card.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_greece_id_card encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -7778,8 +7601,8 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 - id. griego
 - id. nacional griego
-- tarjeta de identificación personal de griego
-- id. de la policía griego
+- tarjeta de identificación personal griega
+- id. de policía griego
 - documento de identidad
 - tautotita
 - ταυτότητα
@@ -7792,7 +7615,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 Dos letras seguidas de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras seguidas de siete dígitos
   
@@ -7802,14 +7625,14 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_greece_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_greece_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el formato `Regex_greece_eu_passport_date` DD MMM AA (ejemplo: 28 de agosto 19) o se encuentra una palabra clave de `Keywords_greece_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_greece_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_greece_eu_passport_number` se encuentra. 
+- La expresión regular busca la fecha con el formato `Regex_greece_eu_passport_date` DD MMM YY (Ejemplo - 28 de agosto 19) o se encuentra una palabra clave `Keywords_greece_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_greece_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_greece_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_greece_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_greece_eu_passport_number` se encuentra. 
     
 ```xml
       <!-- Greece Passport Number -->
@@ -7857,7 +7680,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - αριθμός διαβατηριο
 
 
-## <a name="greece-social-security-number-amka"></a>Número de la Seguridad Social de Grecia (AMKA)
+## <a name="greece-social-security-number-amka"></a>Número de seguridad social de Grecia (AMKA)
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -7867,11 +7690,11 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ### <a name="format"></a>Formato
 
-Once dígitos sin espacios y delimitadores
+Once dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-- 6 dígitos como fecha de nacimiento AAMMDD
+- 6 dígitos como fecha de nacimiento YYMMDD
 - 4 dígitos
 - un dígito de comprobación
   
@@ -7881,12 +7704,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_greece_eu_ssn` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_greece_eu_ssn` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_greece_eu_ssn_or_equivalent` clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_greece_eu_ssn` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_greece_eu_ssn` busca contenido que coincida con el patrón. 
 
 ```xml
       <!-- Greece Social Security Number (AMKA) -->
@@ -7907,7 +7730,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 - ssn
 - ssn #
-- social security no
+- seguridad social no
 - socialsecurityno #
 - social security number
 - amka
@@ -7925,9 +7748,9 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ### <a name="format"></a>Formato
 
-Nueve dígitos sin espacios y delimitadores
+Nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve dígitos
   
@@ -7937,9 +7760,9 @@ No aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
-- La expresión regular  `Regex_greece_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+- La expresión regular  `Regex_greece_eu_tax_file_number` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_greece_eu_tax_file_number` clave de. 
     
 ```xml
@@ -7958,27 +7781,27 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 - afm #
 - afm
-- aόμ|aόμ αριόμός
-- aφμ
+- a μ|aaμ αρι μις
+- a μ
 - tax id
 - identificación fiscal no
 - número de identificación fiscal
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- tax registry no
-- número del Registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- registro fiscal no
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - taxregistryno #
 - tin id
 - tin no
-- tin #
+- estaño #
 - αριθμός φορολογικού μητρώου
 - τον αριθμό φορολογικού μητρώου
 - φορολογικού μητρώου νο
@@ -7990,10 +7813,10 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 Combinación de 8 o 9 letras y números, más paréntesis opcionales alrededor del carácter final
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Combinación de 8 o 9 letras:
-- De 1 a 2 letras (no distingue entre mayúsculas y minúsculas) 
+- 1-2 letras (no distingue mayúsculas de minúsculas) 
 - Seis dígitos 
 - El último carácter (cualquier dígito o la letra A), que es el dígito de control y, opcionalmente, se incluye entre paréntesis.
 
@@ -8003,12 +7826,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_hong_kong_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_hong_kong_id_card.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_hong_kong_id_card encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -8034,7 +7857,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - HKIDC
 - id card
 - documento de identidad
-- hk identity card
+- tarjeta de identidad hk
 - hong kong id
 - 香港身份證
 - 香港永久性居民身份證
@@ -8068,17 +7891,17 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - 香港特別行政區非永久性居民身分証
 
    
-## <a name="hungary-drivers-license-number"></a>Número de licencia de conductor de Hungría
+## <a name="hungary-drivers-license-number"></a>Número de licencia de conducir de Hungría
 
 ### <a name="format"></a>Formato
 
 Dos letras seguidas de seis dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras y seis dígitos:
   
-- Dos letras (no distingue entre mayúsculas y minúsculas) 
+- Dos letras (no distingue mayúsculas de minúsculas) 
 - Seis dígitos
     
 ### <a name="checksum"></a>Suma de comprobación
@@ -8087,10 +7910,10 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
-- La expresión regular  `Regex_hungary_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_hungary_eu_driver's_license_number` clave. 
+- La expresión regular  `Regex_hungary_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_hungary_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
@@ -8118,8 +7941,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -8131,31 +7954,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -8166,9 +7989,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -8177,55 +8000,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
 #### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver de s_license_number
@@ -8247,12 +8070,12 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 11 dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos:
   
-- Un dígito que corresponde al sexo (1-varón, 2-mujer, otros números también son posibles para los ciudadanos que nazcan antes de 1900 o los ciudadanos con doble nacionalidad) 
-- Seis dígitos que corresponden a la fecha de nacimiento (AAMMDD)
+- Un dígito que corresponde al género (1 hombre, 2 mujeres, otros números también son posibles para los ciudadanos nacidos antes de 1900 o los ciudadanos con doble ciudadanía) 
+- Seis dígitos que corresponden a la fecha de nacimiento (AYMMDD)
 - Tres dígitos que corresponden a un número de serie
 - Un dígito de comprobación
     
@@ -8262,14 +8085,14 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
-- La función  `Func_hungary_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+- La función  `Func_hungary_eu_national_id_card` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_hungary_eu_national_id_card` clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
-- La función  `Func_hungary_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+- La función  `Func_hungary_eu_national_id_card` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Hungary Personal Identification Number -->
@@ -8297,7 +8120,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - sz ig
 - sz. ig.
 - sz.ig.
-- személyaganosító igazolvány
+- személyazonosító igazolvány
 - személyi igazolvány
 
 
@@ -8307,7 +8130,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 Dos letras seguidas de seis o siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras seguidas de seis o siete dígitos
   
@@ -8317,14 +8140,14 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_hungary_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_hungary_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el formato `Regex_hungary_eu_passport_date` DD MMM/MMM AA (ejemplo: 01 MÁR/MAR 12) o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_hungary_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_hungary_eu_passport_number` se encuentra. 
+- La expresión regular busca la fecha con el formato `Regex_hungary_eu_passport_date` DD MMM/MMM YY (Ejemplo - 01 MÁR/MAR 12) o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_hungary_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_hungary_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_hungary_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_hungary_eu_passport_number` se encuentra. 
     
 ```xml
       <!-- Hungary Passport Number -->
@@ -8372,7 +8195,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
@@ -8380,9 +8203,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ### <a name="format"></a>Formato
 
-Nueve dígitos sin espacios y delimitadores
+Nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nueve dígitos
   
@@ -8392,14 +8215,14 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
-- La función  `Func_hungary_eu_ssn_or_equivalent` encuentra contenido que coincide con el patrón. 
+- La función  `Func_hungary_eu_ssn_or_equivalent` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_hungary_eu_ssn_or_equivalent` clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
-- La función  `Func_hungary_eu_ssn_or_equivalent` encuentra contenido que coincide con el patrón. 
+- La función  `Func_hungary_eu_ssn_or_equivalent` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Hungarian Social Security Number (TAJ) -->
@@ -8418,7 +8241,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_hungary_eu_ssn_or_equivalent"></a>Keywords_hungary_eu_ssn_or_equivalent
 
-- número de seguridad social húngaro
+- Número de seguridad social húngaro
 - social security number
 - socialsecuritynumber #
 - hssn #
@@ -8428,7 +8251,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - taj #
 - ssn
 - ssn #
-- social security no
+- seguridad social no
 - áfa
 - közösségi adószám
 - általános forgalmi adó szám
@@ -8449,7 +8272,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 10 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos:
   
@@ -8463,14 +8286,14 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
-- La función  `Func_hungary_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+- La función  `Func_hungary_eu_tax_file_number` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_hungary_eu_tax_file_number` clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
-- La función  `Func_hungary_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+- La función  `Func_hungary_eu_tax_file_number` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Hungary Tax Identification Number -->
@@ -8493,10 +8316,10 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_hungary_eu_tax_file_number"></a>Keywords_hungary_eu_tax_file_number
 
-- adó quenosító szám
+- adóazonosító szám
 - adóhatóság szám
 - adószám
-- tinta húngaro
+- lata húngaro
 - hungatiantin #
 - autoridad fiscal no
 - tax id
@@ -8505,20 +8328,20 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 - número de iva
 
 
-## <a name="hungary-value-added-tax-number"></a>Número de impuestos del valor agregado de Hungría
+## <a name="hungary-value-added-tax-number"></a>Número de impuestos sobre el valor agregado de Hungría
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -8530,7 +8353,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón alfanumérico de 10 caracteres
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Patrón alfanumérico de 10 caracteres:
 
@@ -8544,14 +8367,14 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 
-- La función Func_hungarian_value_added_tax_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_hungarian_value_added_tax_number búsqueda.
+- La función Func_hungarian_value_added_tax_number encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra Keywords_hungarian_value_added_tax_number de la página.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 
-- La función Func_hungarian_value_added_tax_number encuentra contenido que coincide con el patrón.
+- La función Func_hungarian_value_added_tax_number encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- Hungarian Value Added Tax Number -->
@@ -8571,12 +8394,12 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 #### <a name="keyword_hungary_value_added_tax_number"></a>Keyword_Hungary_value_added_tax_number
 
 - vat
-- número de impuestos del valor agregado
+- número de impuestos de valor agregado
 - vat #
 - vatno #
 - hungarianvatno #
 - tax no.
-- value added tax áfa
+- áfa del impuesto al valor agregado
 - közösségi adószám
 - általános forgalmi adó szám
 - hozzáadottérték adó
@@ -8589,10 +8412,10 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 10 letras o dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 letras o dígitos:
-- Tres letras (no distingue entre mayúsculas y minúsculas) 
+- Tres letras (no distingue mayúsculas de minúsculas) 
 - Una letra en C, P, H, F, A, T, B, L, J, G (no distingue mayúsculas de minúsculas)
 - Una carta
 - Cuatro dígitos 
@@ -8604,11 +8427,11 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_india_permanent_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_india_permanent_account_number.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_india_permanent_account_number encuentra contenido que coincide con el patrón.
 
 
@@ -8640,7 +8463,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 12 dígitos que contienen espacios o guiones opcionales
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 dígitos:
 - Un dígito que no es 0 o 1
@@ -8656,12 +8479,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_india_aadhaar encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_india_aadhar.
 - Se supera la suma de comprobación.
 - 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 
 - La función Func_india_aadhaar encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
@@ -8688,13 +8511,13 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - आधार
 - uidai
    
-## <a name="indonesia-identity-card-ktp-number"></a>Número de tarjeta de identidad (KTP) de Indonesia
+## <a name="indonesia-identity-card-ktp-number"></a>Número de tarjeta de identidad de Indonesia (KTP)
 
 ### <a name="format"></a>Formato
 
 16 dígitos que contienen puntos opcionales
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 16 dígitos:
 - Código de la provincia de dos dígitos  
@@ -8712,7 +8535,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 
 - La expresión regular Regex_indonesia_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_indonesia_id_card.
@@ -8741,7 +8564,7 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 Código de país (dos letras) más dígitos de control (dos dígitos), más el número IBAN (hasta 30 caracteres)
 
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 El patrón debe incluir todo lo siguiente:
 
@@ -8760,7 +8583,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 
 - La función Func_iban encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
@@ -8778,13 +8601,13 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 Ninguno
 
    
-## <a name="international-classification-of-diseases-icd-10-cm"></a>Clasificación internacional de enfermedades (ICD-10-CM)
+## <a name="international-classification-of-diseases-icd-10-cm"></a>Clasificación internacional de las enfermedades (ICD-10-CM)
 
 ### <a name="format"></a>Formato
 
 Dictionary
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Palabra clave
 
@@ -8794,12 +8617,12 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- Se encuentra una palabra clave Dictionary_icd_10_updated búsqueda.
-- Se encuentra una palabra clave Dictionary_icd_10_codes búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- Se encuentra una palabra Dictionary_icd_10_updated de la página.
+- Se encuentra una palabra clave Dictionary_icd_10_codes se encuentra.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- Se encuentra una palabra clave Dictionary_icd_10_ se actualiza.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- Se encuentra una palabra clave Dictionary_icd_10_ actualizada.
 
 ```xml
       <!-- ICD-10 CM -->
@@ -8816,17 +8639,17 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ### <a name="keywords"></a>Palabras clave
 
-Cualquier término del diccionario de palabras clave Dictionary_icd_10_updated, que se basa en la clasificación internacional de enfermedades, la décima revisión, la modificación galo [(ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo solo busca el término, no los códigos de seguros.
+Cualquier término del diccionario de palabras clave Dictionary_icd_10_updated, que se basa en la clasificación internacional de las enfermedades, la décima revisión, la modificación clínica [(ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo solo busca el término, no los códigos de seguro.
 
-Cualquier término del diccionario de palabras clave Dictionary_icd_10_codes, que se basa en la clasificación internacional de enfermedades, la décimo revisión, la modificación de la infección [(ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo solo busca códigos de seguros, no la descripción.
+Cualquier término del diccionario de palabras clave Dictionary_icd_10_codes, que se basa en la clasificación internacional de las enfermedades, la décima revisión, la modificación clínica [(ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo solo busca códigos de seguro, no la descripción.
 
-## <a name="international-classification-of-diseases-icd-9-cm"></a>Clasificación internacional de enfermedades (ICD-9-CM)
+## <a name="international-classification-of-diseases-icd-9-cm"></a>Clasificación internacional de las enfermedades (ICD-9-CM)
 
 ### <a name="format"></a>Formato
 
 Dictionary
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Palabra clave
 
@@ -8836,12 +8659,12 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- Se encuentra una palabra clave Dictionary_icd_9_updated búsqueda.
-- Se encuentra una palabra clave Dictionary_icd_9_codes búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- Se encuentra una palabra Dictionary_icd_9_updated de la página.
+- Se encuentra una palabra clave Dictionary_icd_9_codes se encuentra.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- Se encuentra una palabra clave Dictionary_icd_9_updated búsqueda.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- Se encuentra una palabra Dictionary_icd_9_updated de la página.
 
 ```xml
     <Entity id="fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4" patternsProximity="300" recommendedConfidence="85">
@@ -8857,21 +8680,21 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ### <a name="keywords"></a>Palabras clave
 
-Cualquier término del diccionario de palabras clave Dictionary_icd_9_updated, que se basa en la clasificación internacional de enfermedades, la noveno revisión, la modificación de la infección [(ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). Este tipo solo busca el término, no los códigos de seguros.
+Cualquier término del diccionario de palabras clave Dictionary_icd_9_updated, que se basa en la clasificación internacional de las enfermedades,la noveno revisión, la modificación clínica [(ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). Este tipo solo busca el término, no los códigos de seguro.
 
-Cualquier término del diccionario de palabras clave Dictionary_icd_9_codes, que se basa en la clasificación internacional de enfermedades, la noveno revisión, la modificación [galo (ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). Este tipo solo busca códigos de seguros, no la descripción.
+Cualquier término del diccionario de palabras clave Dictionary_icd_9_codes, que se basa en la clasificación internacional de las enfermedades,la noveno revisión, la modificación clínica [(ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). Este tipo solo busca códigos de seguro, no la descripción.
 
 ## <a name="ip-address"></a>Dirección IP
 
 ### <a name="format"></a>Formato
 
 #### <a name="ipv4"></a>IPv4:
-Patrón complejo que representa las versiones con formato (puntos) y sin formato (sin puntos) de las direcciones IPv4
+Patrón complejo que representa versiones con formato (puntos) y sin formato (sin puntos) de las direcciones IPv4
 
 #### <a name="ipv6"></a>IPv6:
-Patrón complejo que representa los números IPv6 con formato (que incluyen dos puntos)
+Patrón complejo que representa números IPv6 con formato (que incluyen dos puntos)
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -8879,15 +8702,15 @@ No
 
 ### <a name="definition"></a>Definición
 
-Para IPv6, una directiva DLP tiene la confianza alta de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Para IPv6, una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_ipv6_address encuentra contenido que coincide con el patrón.
 - No se encuentra ninguna palabra clave de Keyword_ipaddress.
 
-Para IPv4, una directiva DLP está segura al 95% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Para IPv4, una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_ipv4_address encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_ipaddress.
 
-Para IPv6, una directiva DLP está segura al 95% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Para IPv6, una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_ipv6_address encuentra contenido que coincide con el patrón.
 - No se encuentra ninguna palabra clave de Keyword_ipaddress.
 
@@ -8925,18 +8748,18 @@ Para IPv6, una directiva DLP está segura al 95% de que este tipo de informació
 - internet protocol
 - IP-כתובת ה 
 
-## <a name="ireland-drivers-license-number"></a>Número de licencia de conductor de Irlanda
+## <a name="ireland-drivers-license-number"></a>Número de licencia de conducir de Irlanda
 
 ### <a name="format"></a>Formato
 
 Seis dígitos seguidos de cuatro letras
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Seis dígitos y cuatro letras:
   
 - Seis dígitos
-- Cuatro letras (no distingue entre mayúsculas y minúsculas)
+- Cuatro letras (no distingue mayúsculas de minúsculas)
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -8944,10 +8767,10 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
   
-- La expresión regular  `Regex_ireland_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_ireland_eu_driver's_license_number` clave. 
+- La expresión regular  `Regex_ireland_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_ireland_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Ireland Driver's License Number -->
@@ -8976,8 +8799,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -8989,31 +8812,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -9024,9 +8847,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -9035,58 +8858,58 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
-#### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver de s_license_number
+#### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver está s_license_number
 
 - ceadúnas tiomána
 - ceadúnais tiomána
@@ -9097,11 +8920,11 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 Dos letras o dígitos seguidos de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Dos letras o dígitos seguidos de siete dígitos:
   
-- Dos dígitos o letras (no distinguen mayúsculas de minúsculas)
+- Dos dígitos o letras (no distingue mayúsculas de minúsculas)
 - Siete dígitos
     
 ### <a name="checksum"></a>Suma de comprobación
@@ -9110,14 +8933,14 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_ireland_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_ireland_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el formato `Regex_ireland_eu_passport_date` DD MMM/MMM YYYY (ejemplo: 01 BEA/MAYO 1988) o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_ireland_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_ireland_eu_passport_number` se encuentra. 
+- La expresión regular busca la fecha con el formato `Regex_ireland_eu_passport_date` DD MMM/MMM YYYY (Ejemplo : 01 BEA/MAY 1988) o se encuentra una palabra clave de `Keywords_eu_passport_date`
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_ireland_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_ireland_eu_passport_number` clave.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_ireland_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_ireland_eu_passport_number` se encuentra.
     
 ```xml
       <!-- Ireland Passport Number -->
@@ -9170,7 +8993,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
@@ -9179,16 +9002,16 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 ### <a name="format"></a>Formato
 
 Formato antiguo (hasta el 31 de diciembre de 2012):
-- siete dígitos seguidos de 1 a 2 letras 
+- siete dígitos seguidos de 1-2 letras 
 
 Nuevo formato (1 de enero de 2013 y posterior):
 - siete dígitos seguidos de dos letras
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Formato antiguo (hasta el 31 de diciembre de 2012):
 - siete dígitos 
-- de una a dos letras (no distingue entre mayúsculas y minúsculas) 
+- de una a dos letras (no distingue mayúsculas de minúsculas) 
 
 Nuevo formato (1 de enero de 2013 y posterior):
 - siete dígitos 
@@ -9201,12 +9024,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_ireland_pps encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_ireland_eu_national_id_card búsqueda.
+- Se encuentra una palabra Keywords_ireland_eu_national_id_card de la página.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_ireland_pps encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -9229,7 +9052,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 - servicio de identidad de cliente
 - identification number
-- número de identificación personal
+- número de id. personal
 - número de servicio público personal
 - servicio personal no
 - phearsanta seirbhíse poiblí
@@ -9240,13 +9063,13 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - ppsn
 - ppsno #
 - ppsno
-- resalte
+- psp
 - servicio público no
 - publicserviceno #
 - publicserviceno
-- número de ingresos y seguros sociales
+- ingresos y número de seguro social
 - rsi no
-- rsi number
+- número rsi
 - rsin
 - seirbhís aitheantais client
 - uimh
@@ -9259,16 +9082,16 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 
 
 ## <a name="israel-bank-account-number"></a>Número de cuenta bancaria de Israel
@@ -9277,7 +9100,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 13 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Con formato:
 - dos dígitos 
@@ -9295,7 +9118,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_israel_bank_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_israel_bank_account_number.
 
@@ -9326,7 +9149,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 nueve dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos consecutivos
 
@@ -9336,7 +9159,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_israeli_national_id_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_Israel_National_ID.
 - Se supera la suma de comprobación.
@@ -9370,20 +9193,20 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 -   identity no        
 -   identitynumber #
 -   número de identidad
--   numberidentitynumber       
--   id. personal
--   identificador único  
+-   israelidentitynumber       
+-   id personal
+-   id único  
 
    
-## <a name="italy-drivers-license-number"></a>Número de licencia de conductor de Italia
+## <a name="italy-drivers-license-number"></a>Número de licencia de conducir de Italia
 
-Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial Número de licencia de conductor de la UE y está disponible como una entidad independiente de tipo de información confidencial.
+Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial Número de licencia de conducir de la UE y está disponible como una entidad de tipo de información confidencial independiente.
 
 ### <a name="format"></a>Formato
 
 una combinación de 10 letras y dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 una combinación de 10 letras y dígitos:
 - una letra (no distingue mayúsculas de minúsculas) 
@@ -9397,9 +9220,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular `Regex_italy_drivers_license_number` encuentra contenido que coincide con el patrón.
-- Se encuentra una `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keyword_italy_drivers_license_number` clave.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular `Regex_italy_drivers_license_number` busca contenido que coincida con el patrón.
+- Una palabra clave `Keywords_eu_driver's_license_number` de o `Keyword_italy_drivers_license_number` se encuentra.
 
 ```xml
     <!-- Italy Driver's license Number -->
@@ -9428,8 +9251,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -9441,31 +9264,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -9476,9 +9299,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -9487,55 +9310,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
@@ -9558,15 +9381,15 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 una combinación de 16 caracteres de letras y dígitos en el patrón especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Una combinación de 16 caracteres de letras y dígitos:
 - tres letras que corresponden a las tres primeras consonantes en el nombre de familia
-- tres letras que corresponden a la primera, tercera y cuarta consonantes del nombre
+- tres letras que corresponden a la primera, tercera y cuarta consonantes del primer nombre
 - dos dígitos que corresponden a los últimos dígitos del año de nacimiento
 - una letra que corresponde a la letra del mes de nacimiento: las letras se usan en orden alfabético, pero solo se usan las letras A a E, H, L, M, P, R a T (por lo tanto, enero es A y octubre es R)
-- dos dígitos que corresponden al día del mes de nacimiento: para diferenciar entre sexos, se agregan 40 al día de nacimiento para mujer
-- cuatro dígitos que corresponden al código de área específico del territorio en el que la persona ha nazca (los códigos de todo el país se usan para países extranjeros)
+- dos dígitos que corresponden al día del mes de nacimiento: para diferenciar entre sexos, se agregan 40 al día de nacimiento de las mujeres
+- cuatro dígitos que corresponden al código de área específico del municipio donde la persona ha nacido (los códigos de todo el país se usan para países extranjeros)
 - un dígito de paridad
     
 ### <a name="checksum"></a>Suma de comprobación
@@ -9575,12 +9398,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_italy_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_italy_eu_national_id_card` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_italy_eu_national_id_card` clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_italy_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_italy_eu_national_id_card` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Italy Fiscal Code -->
@@ -9607,11 +9430,11 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - numero certificato personale
 - numero di identificazione fiscale
 - numero id personale
-- numero Personale
+- numero personale
 - número de certificado personal
 - código personal
 - código de identificación personal
-- número de identificación personal
+- número de id. personal
 - personalcodeno #
 - código fiscal
 - tax id
@@ -9621,16 +9444,16 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 
 
 ## <a name="italy-passport-number"></a>Número de pasaporte de Italia
@@ -9639,11 +9462,11 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 dos letras o dígitos seguidos de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 dos letras o dígitos seguidos de siete dígitos:
   
-- dos dígitos o letras (no distinguen mayúsculas de minúsculas)
+- dos dígitos o letras (no distingue mayúsculas de minúsculas)
 - siete dígitos
     
 ### <a name="checksum"></a>Suma de comprobación
@@ -9652,14 +9475,14 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_italy_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_italy_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el formato `Regex_italy_eu_passport_date` DD MMM/MMM YYYY (ejemplo: 01 GEN/JAN 1988) o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_italy_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_italy_eu_passport_number` se encuentra. 
+- La expresión regular busca la fecha con el formato `Regex_italy_eu_passport_date` DD MMM/MMM YYYY (Ejemplo - 01 GEN/JAN 1988) o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_italy_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_italy_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_italy_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_italy_eu_passport_number` se encuentra. 
     
 ```xml
       <!-- Italy Passport Number -->
@@ -9702,8 +9525,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_italy_eu_passport_number"></a>Keywords_italy_eu_passport_number
 
-- italiano passaporto
-- passaporto italiano
+- italiana passaporto
+- passaporto italiana
 - passaporto numero
 - numéro passeport
 - numero di passaporto
@@ -9712,11 +9535,11 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
-## <a name="italy-value-added-tax-number"></a>Número de impuestos del valor agregado de Italia
+## <a name="italy-value-added-tax-number"></a>Número de impuestos de valor agregado de Italia
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -9728,7 +9551,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón alfanumérico de 13 caracteres con delimitadores opcionales
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Patrón alfanumérico de 13 caracteres con delimitadores opcionales:
 
@@ -9743,12 +9566,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_italy_value_added_tax_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_italy_value_added_tax_number búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_italy_value_added_tax_number encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra Keywords_italy_value_added_tax_number de la página.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_italy_value_added_tax_number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_italy_value_added_tax_number encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- Italy Value Added Tax -->
@@ -9780,7 +9603,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 siete u ocho dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 número de cuenta bancaria:
 - siete u ocho dígitos
@@ -9795,14 +9618,14 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_jp_bank_account encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_jp_bank_account.
 - Una de las siguientes opciones es verdadera:
 - La función Func_jp_bank_account_branch_code encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_jp_bank_branch_code.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_jp_bank_account encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_jp_bank_account.
 
@@ -9877,13 +9700,13 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - 支店コード
 - 店番号
 
-## <a name="japan-drivers-license-number"></a>Número de licencia de conductor de Japón
+## <a name="japan-drivers-license-number"></a>Número de licencia de conducir de Japón
 
 ### <a name="format"></a>Formato
 
 12 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 dígitos consecutivos
 
@@ -9893,7 +9716,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_jp_drivers_license_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_jp_drivers_license_number.
 
@@ -9948,7 +9771,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - 免許 #
 
 
-## <a name="japan-my-number---corporate"></a>Mi número de Japón: corporativo
+## <a name="japan-my-number---corporate"></a>Japan My Number - Corporate
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -9960,7 +9783,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Número de 13 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Número de 13 dígitos:
 
@@ -9973,12 +9796,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_japanese_my_number_corporate encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_japanese_my_number_corporate búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_japanese_my_number_corporate encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra Keywords_japanese_my_number_corporate de la página.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_japanese_my_number_corporate encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_japanese_my_number_corporate encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- Japanese My Number – Corporate -->
@@ -10009,7 +9832,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - 指定通知書
 
 
-## <a name="japan-my-number---personal"></a>Mi número de Japón: personal
+## <a name="japan-my-number---personal"></a>Japón Mi número: personal
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -10021,14 +9844,14 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Número de 12 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Número de 12 dígitos:
 
 - cuatro dígitos
-- un espacio, punto o guión opcionales
+- un espacio, un punto o un guión opcionales
 - cuatro dígitos
-- un espacio, punto o guión opcionales
+- un espacio, un punto o un guión opcionales
 - cuatro dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -10037,12 +9860,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_japanese_my_number_personal encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_japanese_my_number_personal búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_japanese_my_number_personal encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra clave Keywords_japanese_my_number_personal se encuentra.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_japanese_my_number_personal encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_japanese_my_number_personal encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- Japanese My Number – Personal -->
@@ -10079,9 +9902,9 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 dos letras seguidas de siete dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-dos letras (sin distingue entre mayúsculas y minúsculas) seguidas de siete dígitos
+dos letras (no distingue mayúsculas de minúsculas) seguidas de siete dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -10089,7 +9912,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_jp_passport encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_jp_passport.
 
@@ -10116,7 +9939,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - パスポートナンバー
 - パスポート＃
 - パスポート #
-- )ademásポースNo.
+- la ポー
 - 旅券番号
 - 旅券番号＃
 - 旅券番号♯
@@ -10129,12 +9952,12 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 12 letras y dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 letras y dígitos:
-- dos letras (no distingue entre mayúsculas y minúsculas)
+- dos letras (no distingue mayúsculas de minúsculas)
 - ocho dígitos 
-- dos letras (no distingue entre mayúsculas y minúsculas)
+- dos letras (no distingue mayúsculas de minúsculas)
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -10142,9 +9965,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular Regex_jp_residence_card_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keyword_jp_residence_card_number búsqueda.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular Regex_jp_residence_card_number encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra clave Keyword_jp_residence_card_number se encuentra.
 
 ```xml
 <!--Japan Residence Card Number-->
@@ -10173,7 +9996,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 11 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos consecutivos
 
@@ -10183,7 +10006,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_jp_resident_registration_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_jp_resident_registration_number.
 
@@ -10219,7 +10042,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 De 7 a 12 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 7-12 dígitos:
 - cuatro dígitos 
@@ -10233,11 +10056,11 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_jp_sin encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_jp_sin.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_jp_sin_pre_1997 encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_jp_sin.
 
@@ -10269,7 +10092,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - 雇用保険番号
 - 保険証番号
 - 社会保険番号
-- el 保険.
+- 0.保険 000.000.
 - 社会保険
 - 介護保険
 - 介護保険被保険者番号
@@ -10279,17 +10102,17 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - 厚生年金被保険者整理番号
 
 
-## <a name="latvia-drivers-license-number"></a>Número de licencia de conductor de Letonia
+## <a name="latvia-drivers-license-number"></a>Número de licencia de conducir de Letonia
 
 ### <a name="format"></a>Formato
 
 tres letras seguidas de seis dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 tres letras y seis dígitos:
   
-- tres letras (no distingue entre mayúsculas y minúsculas) 
+- tres letras (no distingue mayúsculas de minúsculas) 
 - seis dígitos
     
 ### <a name="checksum"></a>Suma de comprobación
@@ -10298,9 +10121,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_latvia_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_latvia_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_latvia_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_latvia_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Latvia Driver's License Number -->
@@ -10329,8 +10152,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -10342,31 +10165,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -10377,9 +10200,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -10388,55 +10211,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
 #### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver de s_license_number
@@ -10451,7 +10274,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 11 dígitos y un guión opcional
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Formato antiguo
 
@@ -10459,7 +10282,7 @@ Formato antiguo
   
 - seis dígitos que corresponden a la fecha de nacimiento (DDMMYY) 
 - un guión
-- un dígito que corresponde al s. de nacimiento ("0" para el s. 19, "1" para el s. XX y "2" para el s. 21)
+- un dígito que corresponde al siglo de nacimiento ("0" para el siglo 19, "1" para el siglo XX y "2" para el siglo 21)
 - cuatro dígitos, generados aleatoriamente
 
 Nuevo formato
@@ -10475,12 +10298,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_latvia_eu_national_id_card` o regex `Regex_latvia_eu_national_id_card_new_format` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_latvia_eu_national_id_card` o regex `Regex_latvia_eu_national_id_card_new_format` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_latvia_eu_national_id_card` clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_latvia_eu_national_id_card` o regex `Regex_latvia_eu_national_id_card_new_format` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_latvia_eu_national_id_card` o regex `Regex_latvia_eu_national_id_card_new_format` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Latvia Personal Code -->
@@ -10523,7 +10346,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - número de censo electrónico
 - número electrónico
 - código fiscal
-- número de usuario de sanidad
+- número de usuario de salud
 - id #
 - id-code
 - identification number
@@ -10531,7 +10354,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - id-number
 - número individual
 - latvija alva
-- identificador de nacionālais
+- id. de naciónālais
 - national id
 - número de identificación nacional
 - número de identidad nacional
@@ -10543,7 +10366,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - número de certificado personal
 - código personal
 - código de identificación personal
-- número de identificación personal
+- número de id. personal
 - código de identificación personal
 - identificador personal
 - número de identidad personal
@@ -10565,16 +10388,16 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - tax no #
 - tax no
 - número de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
-- número de votante
+- estaño #
+- número de elector
 
 ## <a name="latvia-passport-number"></a>Número de pasaporte de Letonia
 
@@ -10582,11 +10405,11 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 dos letras o dígitos seguidos de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 dos letras o dígitos seguidos de siete dígitos:
   
-- dos dígitos o letras (no distinguen mayúsculas de minúsculas)
+- dos dígitos o letras (no distingue mayúsculas de minúsculas)
 - siete dígitos
     
 ### <a name="checksum"></a>Suma de comprobación
@@ -10595,14 +10418,14 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_latvia_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_latvia_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_latvia_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_latvia_eu_passport_number` se encuentra. 
+- La expresión regular `Regex_eu_passport_date1` busca la fecha con el formato DD.MM.YYYY o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_latvia_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_latvia_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_latvia_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_latvia_eu_passport_number` se encuentra. 
     
 ```xml
       <!-- Latvia Passport Number -->
@@ -10654,17 +10477,17 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
-## <a name="lithuania-drivers-license-number"></a>Número de licencia de conductor de Lituania
+## <a name="lithuania-drivers-license-number"></a>Número de licencia de conducir de Lituania
 
 ### <a name="format"></a>Formato
 
-ocho dígitos sin espacios y delimitadores
+ocho dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 ocho dígitos 
   
@@ -10674,9 +10497,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_lithuania_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_lithuania_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_lithuania_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_lithuania_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Lithuania Driver's License Number -->
@@ -10705,8 +10528,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -10718,31 +10541,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -10753,9 +10576,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -10764,55 +10587,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
 #### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver de s_license_number
@@ -10831,14 +10654,14 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ### <a name="format"></a>Formato
 
-11 dígitos sin espacios y delimitadores
+11 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-11 dígitos sin espacios y delimitadores:
+11 dígitos sin espacios ni delimitadores:
   
-- un dígito (1-6) que corresponde al sexo y al siglo de nacimiento de la persona
-- seis dígitos que corresponden a la fecha de nacimiento (AAMMDD) 
+- un dígito (1-6) que corresponde al género y el siglo de nacimiento de la persona
+- seis dígitos que corresponden a la fecha de nacimiento (AYMMDD) 
 - tres dígitos que corresponden al número de serie de la fecha de nacimiento
 - un dígito de comprobación
     
@@ -10848,12 +10671,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_lithuania_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_lithuania_eu_tax_file_number` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_lithuania_eu_tax_file_number` clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_lithuania_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_lithuania_eu_tax_file_number` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Lithuania Personal Code -->
@@ -10878,8 +10701,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 - asmeninis skaitmeninis kodas
 - asmens kodas
-- número de servicio del ciudadano
-- id. mokesčių
+- número de servicio al ciudadano
+- id. de mokesčių
 - mokesčių identifikavimas numeris
 - mokesčių identifikavimo numeris
 - mokesčių numeris
@@ -10893,16 +10716,16 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 - unikalus identifikavimo kodas
 - unikalus identifikavimo numeris
 - número de identificación único
@@ -10915,9 +10738,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ocho dígitos o letras sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-ocho dígitos o letras (no distingue entre mayúsculas y minúsculas)
+ocho dígitos o letras (no distingue mayúsculas de minúsculas)
   
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -10925,14 +10748,14 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_lithuania_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_lithuania_eu_passport_number` clave. 
-- La expresión regular `Regex_eu_passport_date3` encuentra la fecha con el formato DD MM YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_lithuania_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_lithuania_eu_passport_number` se encuentra. 
+- La expresión regular `Regex_eu_passport_date3` busca la fecha con el formato DD MM YYYY o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_lithuania_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_lithuania_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_lithuania_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_lithuania_eu_passport_number` se encuentra. 
     
 ```xml
       <!-- Lithuania Passport Number -->
@@ -10981,17 +10804,17 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
-## <a name="luxemburg-drivers-license-number"></a>Número de licencia de conductor de Luxemburgo
+## <a name="luxemburg-drivers-license-number"></a>Número de licencia de conducir de Luxemburgo
 
 ### <a name="format"></a>Formato
 
-seis dígitos sin espacios y delimitadores
+seis dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 seis dígitos 
   
@@ -11001,9 +10824,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_luxemburg_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_luxemburg_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_luxemburg_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_luxemburg_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Luxemburg Driver's License Number -->
@@ -11032,8 +10855,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -11045,31 +10868,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -11080,9 +10903,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -11091,55 +10914,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
 #### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver de s_license_number
@@ -11159,7 +10982,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 13 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 13 dígitos:
   
@@ -11172,12 +10995,12 @@ sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_luxemburg_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_luxemburg_eu_tax_file_number` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_luxemburg_eu_national_id_card` clave de. 
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_luxemburg_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_luxemburg_eu_tax_file_number` busca contenido que coincida con el patrón. 
 
 
 ```xml
@@ -11208,17 +11031,17 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - idpersonnelle #
 - idpersonnelle
 - código individual
-- id. individual
+- id individual
 - identificación individual
 - identidad individual
-- numéro d'identification personnel
-- id. personal
+- personal de numéro d'identification
+- id personal
 - identificación personal
 - identidad personal
 - personalidno #
 - personalidnumber #
 - persönliche identifikationsnummer
-- identificador único
+- id único
 - identidad única
 - uniqueidkey #
 
@@ -11228,9 +11051,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ocho dígitos o letras sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-ocho dígitos o letras (no distingue entre mayúsculas y minúsculas)
+ocho dígitos o letras (no distingue mayúsculas de minúsculas)
   
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -11238,14 +11061,14 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_luxemburg_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_luxemburg_eu_passport_number` clave. 
-- La expresión regular `Regex_eu_passport_date3` encuentra la fecha con el formato DD MM YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_luxemburg_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_luxemburg_eu_passport_number` se encuentra. 
+- La expresión regular `Regex_eu_passport_date3` busca la fecha con el formato DD MM YYYY o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_luxemburg_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_luxemburg_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_luxemburg_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_luxemburg_eu_passport_number` se encuentra. 
     
 ```xml
       <!-- Luxemburg Passport Number -->
@@ -11287,10 +11110,10 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - números de pasaporte
 
 #### <a name="keywords_luxemburg_eu_passport_number"></a>Keywords_luxemburg_eu_passport_number
-- austanosnummer
-- luxemburgués
-- luxemburgo passeport
-- passport de Luxemburgo
+- ausweisnummer
+- pase de luxemburgo
+- luxembourg passeport
+- pasaporte luxemburgués
 - no de passeport
 - no-reisepass
 - nr-reisepass
@@ -11298,24 +11121,24 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - pass net
 - pass nr
 - passnummer
-- passeport nombre
+- nombre de passeport
 - reisepässe
 - reisepass-nr
 - reisepassnummer
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
-## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Número de identificación nacional de Luxemburgo (personas no naturales)
+## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Número de identificación nacional de Luxemburgo (personas no físicas)
 
 ### <a name="format"></a>Formato
 
 11 dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos
   
@@ -11334,12 +11157,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_luxemburg_eu_tax_file_number_non_natural` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_luxemburg_eu_tax_file_number_non_natural` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_luxemburg_eu_tax_file_number` clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_luxemburg_eu_tax_file_number_non_natural` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_luxemburg_eu_tax_file_number_non_natural` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Luxemburg National Identification Number (Non-natural persons) -->
@@ -11366,14 +11189,14 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - étain non
 - étain #
 - identifiant d'impôt
-- luxemburgo fiscal identifikatiounsnummer
+- luxemburgués fiscal identifikatiounsnummer
 - numéro d'étain
-- numéro d'identification fiscal luxemburgués
+- numéro d'identification fiscal luxembourgeois
 - numéro d'identification fiscale
 - social security
 - sozialunterstützung
 - sozialversécherung
-- sozialversiquemutsausmuts
+- sozialversicherungsausweis
 - id. de steier
 - steier identifikatiounsnummer
 - steier nummer
@@ -11386,18 +11209,18 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
-- z amazing #
-- z amazing
+- estaño #
+- zinn #
+- zinn
 - zinnzahl
 
 
@@ -11407,15 +11230,15 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 12 dígitos que contienen guiones opcionales
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 dígitos:
-- seis dígitos en el formato AAMMDD, que son la fecha de nacimiento 
+- seis dígitos en el formato YYMMDD, que son la fecha de nacimiento 
 - un guión (opcional) 
-- código de lugar de nacimiento de dos letras 
+- Código de lugar de nacimiento de dos letras 
 - un guión (opcional) 
 - tres dígitos aleatorios 
-- código de género de un dígito
+- Código de género de un dígito
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -11423,7 +11246,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_malaysia_id_card_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_malaysia_id_card_number.
 
@@ -11442,7 +11265,7 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
    
 #### <a name="keyword_malaysia_id_card_number"></a>Keyword_malaysia_id_card_number
 
-- tarjeta de aplicación digital
+- Tarjeta de aplicación digital
 - i/c
 - i/c no
 - ic
@@ -11462,22 +11285,22 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - mykid
 - mypr
 - mytentera
-- tarjeta de identidad de Malasia
+- tarjeta de identidad de malasia
 - tarjeta de identidad malasia
 - nric
 - tarjeta de identificación personal
 
-## <a name="malta-drivers-license-number"></a>Número de licencia de conductor de Malta
+## <a name="malta-drivers-license-number"></a>Número de licencia de conducir de Malta
 
 ### <a name="format"></a>Formato
 
 Combinación de dos caracteres y seis dígitos en el patrón especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 combinación de dos caracteres y seis dígitos:
   
-- dos caracteres (dígitos o letras, no distinguen mayúsculas de minúsculas)
+- dos caracteres (dígitos o letras, no distingue mayúsculas de minúsculas)
 - un espacio (opcional)
 - tres dígitos
 - un espacio (opcional)
@@ -11489,9 +11312,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_malta_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_malta_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_malta_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_malta_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Malta Driver's License Number -->
@@ -11520,8 +11343,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -11533,31 +11356,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -11568,9 +11391,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -11579,61 +11402,61 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
 #### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver de s_license_number
 
-- lioenzja tas-sewqan
-- lioenzji tas-sewwieq
+- lisenzja tas-sewqan
+- lisenzji tas-sewwieq
 
 
 ## <a name="malta-identity-card-number"></a>Número de tarjeta de identidad de Malta
@@ -11648,12 +11471,12 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 siete dígitos seguidos de una letra
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 siete dígitos seguidos de una letra:
   
 - siete dígitos 
-- una letra de "M, G, A, P, L, H, B, Z" (no se puede insensible a mayúsculas y minúsculas)
+- una letra en "M, G, A, P, L, H, B, Z" (no tiene mayúsculas de minúsculas)
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -11661,12 +11484,12 @@ No aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_malta_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_malta_eu_national_id_card` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_malta_eu_national_id_card` clave de. 
     
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_malta_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_malta_eu_national_id_card` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Malta Identity Card Number -->
@@ -11685,16 +11508,16 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 #### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
-- número de servicio del ciudadano
+- número de servicio al ciudadano
 - id tat-taxxa
 - identifika numru tal-biljett
-- kodicióni numerali personali
+- kodisi numerali personali
 - numru ta 'identifikazzjoni personali
 - numru ta 'identifikazzjoni tat-taxxa
 - numru ta 'identifikazzjoni uniku
 - numru ta' identità uniku
-- numru tas-servizz tas-ciónittadin
-- numru numru num-taxxa
+- numru tas-servizz ta
+- numru tat-taxxa
 - código numérico personal
 - número de identificación único
 - número de identidad único
@@ -11707,7 +11530,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 siete dígitos 
   
@@ -11717,14 +11540,14 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_malta_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_malta_eu_passport_number` clave. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_malta_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_malta_eu_passport_number` se encuentra. 
 - Se encuentra una palabra `Keywords_eu_passport_date` clave de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_malta_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_malta_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_malta_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_malta_eu_passport_number` se encuentra. 
     
 ```xml
       <!-- Malta Passport Number -->
@@ -11770,7 +11593,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
@@ -11781,17 +11604,17 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 Para nacionales maltés:
 - siete dígitos y una letra en el patrón especificado
   
-Entidades maltesas y nacionales no maltés:
+Nacionales no maltés y entidades maltesas:
 - nueve dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Nacionales maltés: siete dígitos y una letra
   
 - siete dígitos 
 - una letra (no distingue mayúsculas de minúsculas)
     
-Entidades maltesas y nacionales no maltés: nueve dígitos
+Nacionales no maltés y entidades maltesas: nueve dígitos
   
 - nueve dígitos 
     
@@ -11801,12 +11624,12 @@ No aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión  `Regex_malta_eu_tax_file_number`  regular o encuentra contenido que coincide con el `Regex_malta_eu_tax_file_number_non_maltese_national` patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- El regex  `Regex_malta_eu_tax_file_number`  o busca contenido que coincida con el `Regex_malta_eu_tax_file_number_non_maltese_national` patrón. 
 - Se encuentra una palabra  `Keywords_malta_eu_tax_file_number` clave de. 
     
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión  `Regex_malta_eu_tax_file_number` regular o encuentra contenido que coincide con el `Regex_malta_eu_tax_file_number_non_maltese_national` patrón. 
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- El regex  `Regex_malta_eu_tax_file_number` o busca contenido que coincida con el `Regex_malta_eu_tax_file_number_non_maltese_national` patrón. 
     
 ```xml
       <!-- Malta Tax ID Number -->
@@ -11832,16 +11655,16 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 #### <a name="keywords_malta_eu_tax_file_number"></a>Keywords_malta_eu_tax_file_number
 
-- número de servicio del ciudadano
+- número de servicio al ciudadano
 - id tat-taxxa
 - identifika numru tal-biljett
-- kodicióni numerali personali
+- kodisi numerali personali
 - numru ta 'identifikazzjoni personali
 - numru ta 'identifikazzjoni tat-taxxa
 - numru ta 'identifikazzjoni uniku
 - numru ta' identità uniku
-- numru tas-servizz tas-ciónittadin
-- numru numru num-taxxa
+- numru tas-servizz ta
+- numru tat-taxxa
 - código numérico personal
 - tax id
 - identificación fiscal no
@@ -11849,29 +11672,29 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 - número de identificación único
 - número de identidad único
 - uniqueidentityno #
 
-## <a name="netherlands-citizens-service-bsn-number"></a>Número de servicio del ciudadano (BSN) de Países Bajos
+## <a name="netherlands-citizens-service-bsn-number"></a>Número de servicio de ciudadanos neerlandeses (BSN)
 
 ### <a name="format"></a>Formato
 
 ocho o nueve dígitos que contienen espacios opcionales
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-ocho nueve dígitos:
+ocho y nueve dígitos:
 - tres dígitos 
 - un espacio (opcional) 
 - tres dígitos 
@@ -11884,7 +11707,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_netherlands_bsn encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_netherlands_bsn.
 - Se supera la suma de comprobación.
@@ -11905,14 +11728,14 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
   
 - bsn #
 - bsn
-- servicenummer
-- número de servicio del ciudadano
+- burgerservicenummer
+- número de servicio al ciudadano
 - número de persona
 - número personal
 - código numérico personal
 - número relacionado con la persona
 - persoonlijk nummer
-- código de numerieke persoonlijke
+- código numerieke persoonlijke
 - persoonsgebonden
 - persoonsnummer
 - sociaal-fiscaal nummer
@@ -11925,13 +11748,13 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - número de identidad único
 - uniqueidentityno #
 
-## <a name="netherlands-drivers-license-number"></a>Número de licencia de conductor de Países Bajos
+## <a name="netherlands-drivers-license-number"></a>Número de licencia de conducir neerlandés
 
 ### <a name="format"></a>Formato
 
-diez dígitos sin espacios y delimitadores
+diez dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 diez dígitos
   
@@ -11941,9 +11764,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_netherlands_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_netherlands_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_netherlands_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_netherlands_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Netherlands Driver's License Number -->
@@ -11972,8 +11795,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -11985,31 +11808,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -12020,9 +11843,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -12031,55 +11854,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
 #### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver de s_license_number
@@ -12092,13 +11915,13 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - rijbewijsnummers
 
 
-## <a name="netherlands-passport-number"></a>Número de pasaporte de Países Bajos
+## <a name="netherlands-passport-number"></a>Número de pasaporte neerlandés
 
 ### <a name="format"></a>Formato
 
 nueve letras o dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve letras o dígitos
   
@@ -12108,14 +11931,14 @@ no aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_netherlands_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_netherlands_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el formato `Regex_netherlands_eu_passport_date` DD MMM/MMM YYYY (ejemplo: 26 MAA/MAR 2012)
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_netherlands_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_netherlands_eu_passport_number` se encuentra. 
+- La expresión regular busca la fecha con el formato `Regex_netherlands_eu_passport_date` DD MMM/MMM YYYY (Ejemplo - 26 MAA/MAR 2012)
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_netherlands_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_netherlands_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_netherlands_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_netherlands_eu_passport_number` se encuentra. 
     
 ```xml
       <!-- Netherlands Passport Number -->
@@ -12172,7 +11995,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos 
   
@@ -12182,12 +12005,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_netherlands_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_netherlands_eu_tax_file_number` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_netherlands_eu_tax_file_number` clave de. 
     
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_netherlands_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_netherlands_eu_tax_file_number` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Netherlands Tax Identification Number -->
@@ -12207,43 +12030,43 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 #### <a name="keywords_netherlands_eu_tax_file_number"></a>Keywords_netherlands_eu_tax_file_number
 
 - btw nummer
-- identificaciones fiscales de lugar
+- identificación fiscal de hollânske
 - hulandes impuesto id number
-- hulandes impuesto identification
+- identificación de hulandes impuesto
 - identificatienummer belasting
 - identificatienummer van belasting
-- número de identificación del impuesto
-- número de impuesto
+- Número de identificación de impuesto
+- Número de impuesto
 - nederlands belasting id nummer
 - nederlands belasting identificatie
 - nederlands belasting identificatienummer
 - nederlands belastingnummer
 - nederlandse belasting identificatie
 - identificación fiscal de países bajos
-- identificación fiscal de Herherland
-- tinta neerlandesa
-- tinta de Herherland
+- Identificación fiscal de netherland
+- lata neerlandesa
+- lata de netherland
 - tax id
 - identificación fiscal no
 - número de identificación fiscal
-- cuenta de identificación fiscal
+- tal de identificación fiscal
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
+- número de registro fiscal
 - tax tal
-- y ahora #
-- y ahora #
-- numeración #
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 
 
-## <a name="netherlands-value-added-tax-number"></a>Número de impuestos sobre el valor agregado de Países Bajos
+## <a name="netherlands-value-added-tax-number"></a>Número de impuestos de valor agregado de Países Bajos
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -12255,7 +12078,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón alfanumérico de 14 caracteres
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Patrón alfanumérico de 14 caracteres:
 
@@ -12273,12 +12096,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_netherlands_value_added_tax_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_netherlands_value_added_tax_number búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_netherlands_value_added_tax_number encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra Keywords_netherlands_value_added_tax_number de la página.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_netherlands_value_added_tax_number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_netherlands_value_added_tax_number encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- Netherlands Value Added Tax Number -->
@@ -12301,7 +12124,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - vat no
 - vat #
 - wearde tafoege tax getal
-- btw núnmer
+- btw nûmer
 - btw-nummer
 
 
@@ -12317,18 +12140,18 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón de 14 a 16 dígitos con delimitador opcional
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Patrón de 14 a 16 dígitos con delimitador opcional:
 
 - dos dígitos
-- un espacio o un guión opcional
+- un guión o espacio opcional
 - de tres a cuatro dígitos
-- un espacio o un guión opcional
+- un guión o espacio opcional
 - siete dígitos
-- un espacio o un guión opcional
+- un guión o espacio opcional
 - de dos a tres dígitos
-- un guion de opciones o un espacio
+- un guión o espacio de opciones
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -12336,12 +12159,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_new_zealand_bank_account_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_new_zealand_bank_account_number búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_new_zealand_bank_account_number encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra clave Keywords_new_zealand_bank_account_number se encuentra.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_new_zealand_bank_account_number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_new_zealand_bank_account_number encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- New Zealand Bank Account Number -->
@@ -12367,7 +12190,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - bank_acct_nbr
 
 
-## <a name="new-zealand-drivers-license-number"></a>Número de licencia de conductor de Nueva Zelanda
+## <a name="new-zealand-drivers-license-number"></a>Número de licencia de conducir de Nueva Zelanda
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -12377,11 +12200,11 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ### <a name="format"></a>Formato
 
-patrón alfanumérico de ocho caracteres
+Patrón alfanumérico de ocho caracteres
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-patrón alfanumérico de ocho caracteres
+Patrón alfanumérico de ocho caracteres
 
 - dos letras 
 - seis dígitos
@@ -12392,12 +12215,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_newzealand_driver_license_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_newzealand_driver_license_number búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_newzealand_driver_license_number encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra clave Keywords_newzealand_driver_license_number se encuentra.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_newzealand_driver_license_number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_newzealand_driver_license_number encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- New Zealand Driver License Number -->
@@ -12419,70 +12242,70 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - driverlicence
 - driverlicences
 - driver lic
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslicence
 - driverslicences
 - drivers lic
 - drivers lics
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's licence
-- driver's licences
+- licencias de conductor
 - driverlic #
 - driverlics #
 - driverlicence #
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver licence #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicence #
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers licence #
-- drivers licences #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conductor #
 - international driving permit
 - international driving permits
-- Asociación de automóviles nz
-- asociación de automóviles de Nueva Zelanda
+- Asociación de automóviles de nz
+- Asociación de automóviles de Nueva Zelanda
 
 
-## <a name="new-zealand-inland-revenue-number"></a>Número de ingresos por el interior de Nueva Zelanda
+## <a name="new-zealand-inland-revenue-number"></a>Número de ingresos adicionales de Nueva Zelanda
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -12494,14 +12317,14 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ocho o nueve dígitos con delimitadores opcionales
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 ocho o nueve dígitos con delimitadores opcionales
 
 - dos o tres dígitos
-- un espacio opcional o un guión
+- un espacio o guión opcional
 - tres dígitos
-- un espacio opcional o un guión
+- un espacio o guión opcional
 - tres dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -12510,12 +12333,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_new_zealand_inland_revenue_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_new_zealand_inland_revenue_number búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_new_zealand_inland_revenue_number encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra Keywords_new_zealand_inland_revenue_number de la página.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_new_zealand_inland_revenue_number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_new_zealand_inland_revenue_number encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- New Zealand Inland Revenue Number -->
@@ -12537,20 +12360,20 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - ird no.
 - ird no #
 - nz ird
-- nueva Zelanda ird
+- nueva zelanda ird
 - número ird
 - número de ingresos del interior
 
 
-## <a name="new-zealand-ministry-of-health-number"></a>Número de salud del ministerio de Salud de Nueva Zelanda
+## <a name="new-zealand-ministry-of-health-number"></a>Número de ministerio de salud de Nueva Zelanda
 
 ### <a name="format"></a>Formato
 
 tres letras, un espacio (opcional) y cuatro dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-- tres letras (no distingue entre mayúsculas y minúsculas), excepto "I" y "O"
+- tres letras (no distingue mayúsculas de minúsculas) excepto 'I' y 'O'
 - un espacio (opcional) 
 - cuatro dígitos
 
@@ -12560,12 +12383,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_new_zealand_ministry_of_health_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_nz_terms.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_new_zealand_ministry_of_health_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -12594,11 +12417,11 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - nhi number
 - nhi no.
 - NHI #
-- Índice de mantenimiento nacional No.
-- Identificador del índice de estado nacional
-- Índice de salud nacional #
+- Índice nacional de salud No.
+- Id. de índice de estado nacional
+- Índice nacional de salud #
 
-## <a name="new-zealand-social-welfare-number"></a>Número de redes sociales de Nueva Zelanda
+## <a name="new-zealand-social-welfare-number"></a>Número de bienestar social de Nueva Zelanda
 
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
@@ -12611,7 +12434,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 nueve dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos
 
@@ -12627,12 +12450,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_newzealand_social_welfare_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_newzealand_social_welfare_number búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_newzealand_social_welfare_number encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra Keywords_newzealand_social_welfare_number de la página.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_newzealand_social_welfare_number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_newzealand_social_welfare_number encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- Newzealand Social Welfare Number -->
@@ -12652,10 +12475,10 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
-- social desa adoba #
-- social y social #
-- social y social No.
-- número de redes sociales
+- bienestar social #
+- bienestar social #
+- bienestar social No.
+- número de bienestar social
 - swn #
 
    
@@ -12665,11 +12488,11 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 11 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos:
 - seis dígitos en el formato DDMMYY que son la fecha de nacimiento 
-- número individual de tres dígitos 
+- Número individual de tres dígitos 
 - dos dígitos de comprobación
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -12678,12 +12501,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_norway_id_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_norway_id_number.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_norway_id_numbe encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -12718,7 +12541,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 12 dígitos separados por guiones
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 12 dígitos:
 - cuatro dígitos 
@@ -12733,7 +12556,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_philippines_unified_id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_philippines_id.
 
@@ -12757,13 +12580,13 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - Tarjeta de identidad 
 - Pinag-isang Multi-Layunin ID
 
-## <a name="poland-drivers-license-number"></a>Número de licencia de conductor de Polonia
+## <a name="poland-drivers-license-number"></a>Número de licencia de conducir de Polonia
 
 ### <a name="format"></a>Formato
 
 14 dígitos que contienen dos barras diagonales
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 14 dígitos y dos barras diagonales:
   
@@ -12779,9 +12602,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_poland_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_poland_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_poland_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_poland_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Poland Driver's License Number -->
@@ -12810,8 +12633,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -12823,31 +12646,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -12858,9 +12681,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -12869,61 +12692,61 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
 #### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver de s_license_number
 
-- prawo langdy
-- prawa langdy
+- prawo jazdy
+- prawa jazdy
 
 ## <a name="poland-identity-card"></a>Tarjeta de identidad de Polonia
 
@@ -12931,9 +12754,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 tres letras y seis dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-tres letras (sin distingue entre mayúsculas y minúsculas) seguidas de seis dígitos
+tres letras (no distingue mayúsculas de minúsculas) seguidas de seis dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -12941,7 +12764,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_polish_national_id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_polish_national_id_passport_number.
 - Se supera la suma de comprobación.
@@ -12975,9 +12798,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 11 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-- seis dígitos que representan la fecha de nacimiento en el formato AAMMDD
+- seis dígitos que representan la fecha de nacimiento con el formato YYMMDD
 - cuatro dígitos
 - un dígito de comprobación
 
@@ -12987,12 +12810,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_pesel_identification_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_pesel_identification_number.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_pesel_identification_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -13025,15 +12848,15 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
    
 ## <a name="poland-passport-number"></a>Número de pasaporte de Polonia
-Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial número de pasaporte de la UE. Está disponible como una entidad independiente de tipo de información confidencial.
+Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial Número de pasaporte de la UE. Está disponible como una entidad de tipo de información confidencial independiente.
 
 ### <a name="format"></a>Formato
 
 dos letras y siete dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-Dos letras (sin distingue entre mayúsculas y minúsculas) seguidas de siete dígitos
+Dos letras (no distinguen mayúsculas de minúsculas) seguidas de siete dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -13041,19 +12864,19 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función `Func_polish_passport_number_v2` encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_polish_passport_number_v2` busca contenido que coincida con el patrón.
 - Se supera la suma de comprobación.
-- Se encuentra una `Keywords_eu_passport_number` palabra clave o una palabra `Keyword_polish_national_passport_number` clave.
+- Una palabra clave `Keywords_eu_passport_number` de o `Keyword_polish_national_passport_number` se encuentra.
 - Se encuentra una palabra `Keywords_eu_passport_date` clave de.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función `Func_polish_passport_number_v2` encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_polish_passport_number_v2` busca contenido que coincida con el patrón.
 - Se supera la suma de comprobación.
-- Se encuentra una `Keywords_eu_passport_number` palabra clave o una palabra `Keyword_polish_national_passport_number` clave.
+- Una palabra clave `Keywords_eu_passport_number` de o `Keyword_polish_national_passport_number` se encuentra.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función `Func_polish_passport_number_v2` encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_polish_passport_number_v2` busca contenido que coincida con el patrón.
 - Se supera la suma de comprobación.
 
 ```xml
@@ -13108,7 +12931,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
@@ -13124,7 +12947,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Número de 9 o 14 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 número de nueve o 14 dígitos:
 
@@ -13139,12 +12962,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_polish_regon_number encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_polish_regon_number búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_polish_regon_number encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra Keywords_polish_regon_number de la página.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_polish_regon_number encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_polish_regon_number encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- Polish REGON Number  -->
@@ -13165,11 +12988,11 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - id. de regon
 - número estadístico
 - identificador estadístico
-- estadística no
+- no estadístico
 - número de regon
 - regonid #
 - regonno #
-- id. de compañía
+- id. de empresa
 - companyid #
 - companyidno #
 - numer statystyczny
@@ -13190,7 +13013,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 11 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos
   
@@ -13200,8 +13023,8 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_poland_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_poland_eu_tax_file_number` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_poland_eu_tax_file_number` clave de. 
     
   
@@ -13229,16 +13052,16 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 - vat id #
 - vat id
 - vat no
@@ -13254,7 +13077,7 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 
 ocho dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 ocho dígitos
 
@@ -13264,7 +13087,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_portugal_citizen_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_portugal_citizen_card.
 
@@ -13284,11 +13107,11 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 
 - bilhete de identidade
 - cartão de cidadão
-- tarjeta de ciudadano
+- tarjeta ciudadana
 - número de documento
 - documento de identificação
 - id number
-- identification no
+- identificación no
 - identification number
 - identity card no
 - número de tarjeta de identidad
@@ -13301,22 +13124,22 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - portugal bi number
 
 
-## <a name="portugal-drivers-license-number"></a>Número de licencia de conductor de Portugal
+## <a name="portugal-drivers-license-number"></a>Número de licencia de conducir de Portugal
 
 ### <a name="format"></a>Formato
 
-dos patrones: dos letras seguidas de 5 a 8 dígitos con caracteres especiales
+dos patrones: dos letras seguidas de 5-8 dígitos con caracteres especiales
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-Patrón 1: dos letras seguidas de 5/6 con caracteres especiales:
-- Dos letras (no distingue entre mayúsculas y minúsculas)
+Patrón 1: Dos letras seguidas de 5/6 con caracteres especiales:
+- Dos letras (no distingue mayúsculas de minúsculas)
 - Un guión 
 - Cinco o seis dígitos
 - Un espacio
 - Un dígito
 
-Patrón 2: una letra seguida de 6/8 dígitos con caracteres especiales:
+Patrón 2: Una letra seguida de 6/8 dígitos con caracteres especiales:
 - Una letra (no distingue mayúsculas de minúsculas)
 - Un guión 
 - Seis u ocho dígitos
@@ -13330,9 +13153,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_portugal_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_portugal_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_portugal_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_portugal_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Portugal Driver's License Number -->
@@ -13361,8 +13184,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -13374,31 +13197,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -13409,9 +13232,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -13420,55 +13243,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
 #### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver de s_license_number
@@ -13490,7 +13313,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 una letra seguida de seis dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 una letra seguida de seis dígitos:
   
@@ -13503,14 +13326,14 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_portugal_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_portugal_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_portugal_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_portugal_eu_passport_number` se encuentra. 
+- La expresión regular `Regex_eu_passport_date1` busca la fecha con el formato DD.MM.YYYY o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_portugal_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_portugal_eu_passport_number` clave.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_portugal_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_portugal_eu_passport_number` se encuentra.
     
 ```xml
       <!-- Portugal Passport Number -->
@@ -13566,7 +13389,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
@@ -13576,7 +13399,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 nueve dígitos con espacios opcionales
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - tres dígitos
 - un espacio opcional
@@ -13590,12 +13413,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_portugal_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_portugal_eu_tax_file_number` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_portugal_eu_tax_file_number` clave de. 
     
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_portugal_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_portugal_eu_tax_file_number` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Portugal Tax Identification Number -->
@@ -13626,28 +13449,28 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 
 
-## <a name="romania-drivers-license-number"></a>Número de licencia de conductor de Rumania
+## <a name="romania-drivers-license-number"></a>Número de licencia de conducir de Rumania
 
 ### <a name="format"></a>Formato
 
 un carácter seguido de ocho dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 un carácter seguido de ocho dígitos:
-- una letra (no distingue entre mayúsculas y minúsculas) o dígito 
+- una letra (no distingue mayúsculas de minúsculas) o dígito 
 - ocho dígitos
     
 ### <a name="checksum"></a>Suma de comprobación
@@ -13656,9 +13479,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_romania_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_romania_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_romania_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_romania_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Romania Driver's License Number -->
@@ -13687,8 +13510,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -13700,31 +13523,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -13735,9 +13558,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -13746,58 +13569,58 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
-#### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver de s_license_number
+#### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver está s_license_number
 
 - permis de conducere
 - permisului de conducere
@@ -13816,12 +13639,12 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ### <a name="format"></a>Formato
 
-13 dígitos sin espacios y delimitadores
+13 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - un dígito del 1 al 9
-- seis dígitos que representan la fecha de nacimiento (AAMMDD)
+- seis dígitos que representan la fecha de nacimiento (AYMMDD)
 - dos dígitos, que pueden ser 01-52 o 99
 - cuatro dígitos
 
@@ -13831,12 +13654,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_romania_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_romania_eu_national_id_card` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_romania_eu_national_id_card` clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_romania_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_romania_eu_national_id_card` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Romania Personal Numerical Code (CNP) -->
@@ -13858,7 +13681,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - cnp #
 - cnp
 - cod identificare personal
-- cod numeric personal
+- personal numérico de bacalao
 - cod unic identificare
 - codnumericpersonal #
 - codul fiscal nr.
@@ -13866,7 +13689,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - id-ul taxei
 - número de seguro
 - insurancenumber #
-- national id #
+- id nacional #
 - national id
 - national identification number
 - număr identificare personal
@@ -13881,7 +13704,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - código numérico personal
 - pin #
 - pin
-- tax file no
+- archivo fiscal no
 - tax file number
 - tax id
 - identificación fiscal no
@@ -13889,16 +13712,16 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 - número de identificación único
 - número de identidad único
 - uniqueidentityno #
@@ -13908,9 +13731,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ### <a name="format"></a>Formato
 
-ocho o nueve dígitos sin espacios y delimitadores
+ocho o nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 ocho o nueve dígitos
   
@@ -13920,14 +13743,14 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_romania_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_romania_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha en el formato `Regex_romania_eu_passport_date` DD MMM/MMM YY (ejemplo: 01 FEB/FEB 10) o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_romania_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_romania_eu_passport_number` se encuentra. 
+- La expresión regular busca la fecha con el formato `Regex_romania_eu_passport_date` DD MMM/MMM YY (Ejemplo: 01 FEB/FEB 10) o se encuentra una palabra `Keywords_eu_passport_date` clave de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_romania_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_romania_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_romania_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_romania_eu_passport_number` se encuentra. 
     
 ```xml
       <!-- Romania Passport Number -->
@@ -13970,15 +13793,15 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_romania_eu_passport_number"></a>Keywords_romania_eu_passport_number
 
-numărul pașaportului numarul pasaportului nuulule pașaportului Pașaport nr
+numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
-## <a name="russia-passport-number-domestic"></a>Número de pasaporte de Rusia nacionales
+## <a name="russia-passport-number-domestic"></a>Número de pasaporte de Rusia nacional
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -13990,12 +13813,12 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Número de 10 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Número de 10 dígitos:
 
 - dos dígitos
-- un espacio opcional o un guión
+- un espacio o guión opcional
 - dos dígitos
 - un espacio opcional
 - seis dígitos
@@ -14006,9 +13829,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- El elemento regex Regex_Russian_Passport_Number_Domestic encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keyword_Russian_Passport_Number búsqueda.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- El objeto regex Regex_Russian_Passport_Number_Domestic encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra clave Keyword_Russian_Passport_Number se encuentra.
 
 ```xml
       <!-- Russian Passport Number Domestic -->
@@ -14027,11 +13850,11 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - passport number
 - passport no
 - passport #
-- passport id
+- id. de passport
 - passportno #
 - passportnumber #
 - паспорт нет
-- паспорт id
+- Id. de паспорт
 - pоссийской паспорт
 - pусский номер паспорта
 - паспорт #
@@ -14040,7 +13863,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - номерпаспорта #
 
 
-## <a name="russia-passport-number-international"></a>Número de pasaporte internacional de Rusia
+## <a name="russia-passport-number-international"></a>Número de pasaporte de Rusia internacional
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -14050,14 +13873,14 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ### <a name="format"></a>Formato
 
-número de nueve dígitos
+Número de nueve dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 número de nueve dígitos:
 
 - dos dígitos
-- un espacio opcional o un guión
+- un espacio o guión opcional
 - siete dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -14066,9 +13889,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- El elemento regex Regex_Russian_Passport_Number_International encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keyword_Russian_Passport_Number búsqueda.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- El objeto regex Regex_Russian_Passport_Number_International encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra clave Keyword_Russian_Passport_Number se encuentra.
 
 ```xml
       <!-- Russian Passport Number International -->
@@ -14087,11 +13910,11 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - passport number
 - passport no
 - passport #
-- passport id
+- id. de passport
 - passportno #
 - passportnumber #
 - паспорт нет
-- паспорт id
+- Id. de паспорт
 - pоссийской паспорт
 - pусский номер паспорта
 - паспорт #
@@ -14106,7 +13929,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 10 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos consecutivos
 
@@ -14116,7 +13939,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_saudi_arabia_national_id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_saudi_arabia_national_id.
 
@@ -14148,7 +13971,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 nueve letras y dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - nueve letras y dígitos:
 - la letra "F", "G", "S" o "T" (no distingue mayúsculas de minúsculas) 
@@ -14161,12 +13984,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_singapore_nric encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_singapore_nric.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_singapore_nric encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -14196,17 +14019,17 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - 身份证 
 - 身份證 
 
-## <a name="slovakia-drivers-license-number"></a>Número de licencia de conductor de Eslovaquia
+## <a name="slovakia-drivers-license-number"></a>Número de licencia de conducir de Eslovaquia
 
 ### <a name="format"></a>Formato
 
 un carácter seguido de siete dígitos
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 un carácter seguido de siete dígitos
   
-- una letra (no distingue entre mayúsculas y minúsculas) o dígito
+- una letra (no distingue mayúsculas de minúsculas) o dígito
 - siete dígitos 
     
 ### <a name="checksum"></a>Suma de comprobación
@@ -14215,9 +14038,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_slovakia_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_slovakia_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_slovakia_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_slovakia_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Slovakia Driver's License Number -->
@@ -14246,8 +14069,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -14259,31 +14082,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -14294,9 +14117,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -14305,55 +14128,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
 #### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver de s_license_number
@@ -14373,9 +14196,9 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ### <a name="format"></a>Formato
 
-nueve o diez dígitos que contienen barras diagonales inversas opcionales
+nueve o diez dígitos que contienen barra diagonal inversa opcional
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - seis dígitos que representan la fecha de nacimiento
 - barra diagonal opcional (/)
@@ -14388,12 +14211,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_slovakia_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_slovakia_eu_national_id_card` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_slovakia_eu_national_id_card` clave de. 
     
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_slovakia_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_slovakia_eu_national_id_card` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Slovakia Personal Number -->
@@ -14415,20 +14238,20 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 - azonosító szám
 - número de nacimiento
-- číslo národnej identifikačnejej andy
+- číslo národnej identifikačnej karty
 - číslo občianského preukazu
 - daňové číslo
 - id number
-- identification no
+- identificación no
 - identification number
-- identifikačnáflua č
+- identifikačná karta č
 - identifikačné číslo
 - identity card no
 - número de tarjeta de identidad
 - národná identifikačná značka č
 - número nacional
 - nationalnumber #
-- nemzeti személyaganosító igazolvány
+- nemzeti személyazonosító igazolvány
 - personalidnumber #
 - rč
 - rodne cislo
@@ -14439,7 +14262,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - személyi igazolvány szám
 - személyi igazolvány száma
 - személyigazolvány szám
-- tax file no
+- archivo fiscal no
 - tax file number
 - tax id
 - identificación fiscal no
@@ -14447,16 +14270,16 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 
 ## <a name="slovakia-passport-number"></a>Número de pasaporte de Eslovaquia
 
@@ -14464,9 +14287,9 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 un dígito o letra seguido de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-un dígito o letra (no distingue entre mayúsculas y minúsculas) seguido de siete dígitos
+un dígito o letra (no distingue mayúsculas de minúsculas) seguido de siete dígitos
   
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -14474,14 +14297,14 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_slovakia_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_slovakia_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_slovakia_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_slovakia_eu_passport_number` se encuentra. 
+- La expresión regular `Regex_eu_passport_date1` busca la fecha con el formato DD.MM.YYYY o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_slovakia_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_slovakia_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_slovakia_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_slovakia_eu_passport_number` se encuentra. 
     
 ```xml
       <!-- Slovakia Passport Number -->
@@ -14532,17 +14355,17 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
-## <a name="slovenia-drivers-license-number"></a>Número de licencia de conductor de Eslovenia
+## <a name="slovenia-drivers-license-number"></a>Número de licencia de conducir de Eslovenia
 
 ### <a name="format"></a>Formato
 
-nueve dígitos sin espacios y delimitadores
+nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos
   
@@ -14552,9 +14375,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_slovenia_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_slovenia_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_slovenia_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_slovenia_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Slovenia Driver's License Number -->
@@ -14583,8 +14406,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -14596,31 +14419,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -14631,9 +14454,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -14642,66 +14465,66 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
 #### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver de s_license_number
 
 - vozniško dovoljenje
-- vozniška številka licence
+- licencia vozniška številka
 - vozniških dovoljenj
 - številka vozniškega dovoljenja
 - številke vozniških dovoljenj
 
-## <a name="slovenia-unique-master-citizen-number"></a>Número de ciudadano principal único de Eslovenia
+## <a name="slovenia-unique-master-citizen-number"></a>Número único de ciudadano principal de Eslovenia
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -14713,13 +14536,13 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 13 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 13 dígitos en el patrón especificado:
   
 - siete dígitos que corresponden a la fecha de nacimiento (DDMMLLL) donde "LLL" corresponde a los tres últimos dígitos del año de nacimiento 
 - dos dígitos que corresponden al área de nacimiento "50"
-- tres dígitos que corresponden a una combinación de sexo y número de serie para las personas que han nazca el mismo día (000-499 para los hombres y 500-999 para las mujeres)
+- tres dígitos que corresponden a una combinación de sexo y número de serie para las personas que nacen el mismo día (000-499 para los hombres y 500-999 para las mujeres)
 - un dígito de comprobación
     
 ### <a name="checksum"></a>Suma de comprobación
@@ -14728,12 +14551,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_slovenia_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_slovenia_eu_national_id_card` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_slovenia_eu_national_id_card` clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_slovenia_eu_national_id_card` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_slovenia_eu_national_id_card` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Slovenia Unique Master Citizen Number -->
@@ -14784,7 +14607,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 dos letras seguidas de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 dos letras seguidas de siete dígitos:
   
@@ -14798,14 +14621,14 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_slovenia_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_slovenia_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el `Regex_eu_passport_date1` formato DD.MM.YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_slovenia_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_slovenia_eu_passport_number` se encuentra. 
+- La expresión regular `Regex_eu_passport_date1` busca la fecha con el formato DD.MM.YYYY o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_slovenia_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_slovenia_eu_passport_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_slovenia_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_slovenia_eu_passport_number` se encuentra. 
     
 ```xml
       <!-- Slovenia Passport Number -->
@@ -14850,14 +14673,14 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 - številka potnega lista
 - potek veljavnosti
-- lista potni #
+- lista de potni #
 - datum rojstva
-- lista potni
+- lista de potni
 - številke potnih listov
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
@@ -14873,7 +14696,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ocho dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 - un dígito del 1 al 9
 - seis dígitos
@@ -14885,12 +14708,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_slovenia_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_slovenia_eu_tax_file_number` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_slovenia_eu_tax_file_number` clave de. 
     
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_slovenia_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_slovenia_eu_tax_file_number` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Slovenia Tax Identification Number -->
@@ -14912,7 +14735,7 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - davčna številka
 - identifikacijska številka davka
 - številka davčne datoteke
-- tax file no
+- archivo fiscal no
 - tax file number
 - tax id
 - identificación fiscal no
@@ -14920,16 +14743,16 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 
 
 ## <a name="south-africa-identification-number"></a>Número de identificación de Sudáfrica
@@ -14938,12 +14761,12 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 
 13 dígitos que pueden contener espacios
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 13 dígitos:
-- seis dígitos en el formato AAMMDD, que son la fecha de nacimiento 
+- seis dígitos en el formato YYMMDD, que son la fecha de nacimiento 
 - cuatro dígitos 
-- un indicador de nacionalidad de un solo dígito 
+- un indicador de ciudadanía de un solo dígito 
 - el dígito "8" o "9" 
 - un dígito, que es un dígito de suma de comprobación
 
@@ -14953,7 +14776,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_south_africa_identification_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_south_africa_identification_number.
 - Se supera la suma de comprobación.
@@ -14982,13 +14805,13 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 
 13 dígitos que contienen un guión
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 13 dígitos:
-- seis dígitos en el formato AAMMDD, que son la fecha de nacimiento 
+- seis dígitos en el formato YYMMDD, que son la fecha de nacimiento 
 - un guión 
 - un dígito determinado por el siglo y el género 
-- código de región de nacimiento de cuatro dígitos 
+- Código de región de nacimiento de cuatro dígitos 
 - un dígito usado para diferenciar a las personas para las que los números anteriores son idénticos 
 - un dígito de comprobación.
 
@@ -14998,12 +14821,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_south_korea_resident_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_south_korea_resident_number.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_south_korea_resident_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -15030,18 +14853,18 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - RRN 
 - 주민등록번호
 
-## <a name="spain-drivers-license-number"></a>Número de licencia de conductor de España
+## <a name="spain-drivers-license-number"></a>Número de licencia de conducir de España
 
 ### <a name="format"></a>Formato
 
 ocho dígitos seguidos de un carácter
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 ocho dígitos seguidos de un carácter:
   
 - ocho dígitos 
-- un dígito o letra (no distingue entre mayúsculas y minúsculas)
+- un dígito o una letra (no distingue mayúsculas de minúsculas)
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -15049,12 +14872,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_spain_eu_DL_and_NI_number_citizen` o encuentra contenido que coincide con el `Func_spain_eu_DL_and_NI_number_foreigner` patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_spain_eu_driver's_license_number` clave. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_spain_eu_DL_and_NI_number_citizen` o busca contenido que coincida con el `Func_spain_eu_DL_and_NI_number_foreigner` patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_spain_eu_driver's_license_number` se encuentra. 
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_spain_eu_DL_and_NI_number_citizen` o encuentra contenido que coincide con el `Func_spain_eu_DL_and_NI_number_foreigner` patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_spain_eu_DL_and_NI_number_citizen` o busca contenido que coincida con el `Func_spain_eu_DL_and_NI_number_foreigner` patrón. 
     
 ```xml
       <!-- Spain Driver's License Number -->
@@ -15096,8 +14919,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -15109,31 +14932,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -15144,9 +14967,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -15155,55 +14978,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
 #### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver de s_license_number
@@ -15216,8 +15039,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - permiso de conducir
 - permisos de conducir
 - permisos conducir
-- carrón
-- habat de conducir
+- carnet conducir
+- carnet de conducir
 - licencia de manejo
 - licencia manejo
 
@@ -15233,13 +15056,13 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ocho dígitos seguidos de un carácter
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 siete dígitos seguidos de un carácter
   
 - ocho dígitos
-- Un espacio o un guión opcionales
-- una letra de verificación (no distingue mayúsculas de minúsculas)
+- Un espacio o guión opcional
+- una letra de comprobación (no distingue mayúsculas de minúsculas)
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -15247,12 +15070,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_spain_eu_DL_and_NI_number_citizen` o encuentra contenido que coincide con el `Func_spain_eu_DL_and_NI_number_foreigner` patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_spain_eu_DL_and_NI_number_citizen` o busca contenido que coincida con el `Func_spain_eu_DL_and_NI_number_foreigner` patrón. 
 - Se encuentra una palabra  `Keywords_spain_eu_national_id_card"` clave de. 
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_spain_eu_DL_and_NI_number_citizen` o encuentra contenido que coincide con el `Func_spain_eu_DL_and_NI_number_foreigner` patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_spain_eu_DL_and_NI_number_citizen` o busca contenido que coincida con el `Func_spain_eu_DL_and_NI_number_foreigner` patrón. 
 
     
 ```xml
@@ -15307,9 +15130,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 una combinación de ocho o nueve caracteres de letras y números sin espacios ni delimitadores
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-una combinación de ocho o nueve caracteres de letras y números:
+una combinación de letras y números de ocho o nueve caracteres:
   
 - dos dígitos o letras 
 - un dígito o una letra (opcional)
@@ -15321,14 +15144,14 @@ No aplicable
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_spain_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_spain_eu_passport_number` clave. 
-- La expresión regular encuentra la fecha con el formato `Regex_spain_eu_passport_date` DD-MM-YYYY o se encuentra una palabra clave de `Keywords_eu_passport_date`
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_spain_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_spain_eu_passport_number` se encuentra. 
+- La expresión regular busca la fecha con el `Regex_spain_eu_passport_date` formato DD-MM-YYYY o se encuentra una palabra clave `Keywords_eu_passport_date` de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_spain_eu_passport_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_spain_eu_passport_number` clave.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_spain_eu_passport_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_passport_number` de o `Keywords_spain_eu_passport_number` se encuentra.
     
 ```xml
       <!-- Spain Passport Number -->
@@ -15386,24 +15209,24 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
 
-## <a name="spain-social-security-number-ssn"></a>Número de la seguridad social de España (SSN)
+## <a name="spain-social-security-number-ssn"></a>Número de seguridad social de España (SSN)
 
 
 ### <a name="format"></a>Formato
 
 11 o 12 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 De 11 a 12 dígitos:
 - dos dígitos 
-- una barra diagonal (opcional) 
+- barra diagonal (opcional) 
 - de siete a ocho dígitos 
-- una barra diagonal (opcional) 
+- barra diagonal (opcional) 
 - dos dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -15412,12 +15235,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_spanish_social_security_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 - - Se encuentra una palabra  `Keywords_spain_eu_ssn_or_equivalent` clave de. 
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_spanish_social_security_number encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -15441,7 +15264,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - ssn
 - ssn #
 - socialsecurityno
-- social security no
+- seguridad social no
 - social security number
 - número de la seguridad social
 
@@ -15457,32 +15280,32 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 siete u ocho dígitos y una o dos letras en el patrón especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-Personas físicas de España con una tarjeta de identidad nacional de España:
+Personas físicas españolas con un documento de identidad nacional de España:
   
 - ocho dígitos 
 - una letra mayúscula (distingue mayúsculas de minúsculas) 
     
-Españoles no residentes sin una tarjeta de identidad nacional de España
+Españoles no residentes sin tarjeta de identidad nacional de España
   
 - una letra mayúscula "L" (distingue mayúsculas de minúsculas)
 - siete dígitos
 - una letra mayúscula (distingue mayúsculas de minúsculas) 
     
-Españoles residentes menores de 14 años sin una tarjeta de identidad nacional de España:
+Españoles residentes menores de 14 años sin tarjeta de identidad nacional de España:
   
 - una letra mayúscula "K" (distingue mayúsculas de minúsculas)
 - siete dígitos 
 - una letra mayúscula (distingue mayúsculas de minúsculas)
     
-Con el número de identificación de un ciudadano
+Extranjeros con un número de identificación de extranjero
   
 - una letra mayúscula que es "X", "Y" o "Z" (distingue mayúsculas de minúsculas) 
 - siete dígitos
 - una letra mayúscula (distingue mayúsculas de minúsculas) 
     
-Personas que no tienen el número de identificación de un ciudadano
+Extranjeros sin número de identificación de extranjero
   
 - una letra mayúscula que es "M" (distingue mayúsculas de minúsculas) 
 - siete dígitos
@@ -15494,12 +15317,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_spain_eu_tax_file_number` o encuentra contenido que coincide con el `Func_spain_eu_DL_and_NI_number_citizen` patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_spain_eu_tax_file_number` o busca contenido que coincida con el `Func_spain_eu_DL_and_NI_number_citizen` patrón. 
 - Se encuentra una palabra  `Keywords_spain_eu_tax_file_number` clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_spain_eu_tax_file_number` o encuentra contenido que coincide con el `Func_spain_eu_DL_and_NI_number_citizen` patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_spain_eu_tax_file_number` o busca contenido que coincida con el `Func_spain_eu_DL_and_NI_number_citizen` patrón. 
     
 ```xml
       <!-- Spain Tax Identification Number -->
@@ -15535,7 +15358,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - spanishcifid
 - spanishcifno #
 - spanishcifno
-- tax file no
+- archivo fiscal no
 - tax file number
 - tax id
 - identificación fiscal no
@@ -15543,33 +15366,33 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 
 
-## <a name="sql-server-connection-string"></a>SQL Server cadena de conexión
+## <a name="sql-server-connection-string"></a>SQL Server de conexión
 
 ### <a name="format"></a>Formato
 
-La cadena "User Id", "User ID", "uid" o "UserId" seguida de los caracteres y cadenas descritos en el siguiente patrón.
+La cadena "Id. de usuario", "Id. de usuario", "uid" o "UserId" seguida de los caracteres y cadenas descritos en el patrón siguiente.
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-- la cadena "User Id", "User ID", "uid" o "UserId"
-- cualquier combinación de entre 1 y 200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- la cadena "Id. de usuario", "Id. de usuario", "uid" o "UserId"
+- cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
 - la cadena "Password" o "pwd" donde "pwd" no está precedida por una letra minúscula
 - un signo igual (=)
-- cualquier carácter que no sea un signo de dólar ($), símbolo de porcentaje (%), mayor que símbolo (>), símbolo (@), comillas ("), punto y coma (;), llave izquierda([) o corchete izquierdo ({)
-- cualquier combinación de 7 a 128 caracteres que no sean un punto y coma (;), barra diagonal (/) o comillas (")
-- punto y coma (;) o comillas (")
+- cualquier carácter que no sea un signo de dólar ($), símbolo de porcentaje (%), mayor que símbolo (>), símbolo (@), comilla ("), punto y coma (;), llave izquierda([) o corchete izquierdo ({)
+- cualquier combinación de 7 a 128 caracteres que no sean punto y coma (;), barra diagonal (/) o comillas (")
+- un punto y coma (;) o comillas (")
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -15577,9 +15400,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular CEP_Regex_SQLServerConnectionString encuentra contenido que coincide con el patrón.
-- No se encuentra CEP_GlobalFilter palabra clave de la página.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_SQLServerConnectionString encuentra contenido que coincida con el patrón.
+- No se encuentra CEP_GlobalFilter palabra clave del archivo.
 - La expresión regular CEP_PasswordPlaceHolder no encuentra contenido que coincida con el patrón.
 - La expresión regular CEP_CommonExampleKeywords no encuentra contenido que coincida con el patrón.
 
@@ -15601,7 +15424,7 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 
 #### <a name="cep_globalfilter"></a>CEP_GlobalFilter
 
-- alguna contraseña
+- some-password
 - somepassword
 - secretPassword
 - ejemplo
@@ -15613,9 +15436,9 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - Contraseña o pwd seguido de 0-2 espacios, un signo igual (=), 0-2 espacios y un asterisco (*) -OR-
 - Contraseña o pwd seguido de:
     - Signo igual (=)
-    - Símbolo menor que (<)
+    - Menor que símbolo (<)
     - Cualquier combinación de 1-200 caracteres con letras mayúsculas o minúsculas, dígitos, asterisco (*), guión (-), subrayado (_) o carácter de espacio en blanco
-    - Símbolo mayor que (>)
+    - Mayor que el símbolo (>)
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
@@ -15631,13 +15454,13 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="sweden-drivers-license-number"></a>Número de licencia de conductor de Suecia
+## <a name="sweden-drivers-license-number"></a>Número de licencia de conducir de Suecia
 
 ### <a name="format"></a>Formato
 
 diez dígitos que contienen un guión
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 diez dígitos que contienen un guión:
   
@@ -15651,9 +15474,9 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La expresión regular  `Regex_sweden_eu_driver's_license_number` encuentra contenido que coincide con el patrón. 
-- Se encuentra una  `Keywords_eu_driver's_license_number` palabra clave o una palabra `Keywords_sweden_eu_driver's_license_number` clave. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_sweden_eu_driver's_license_number` busca contenido que coincida con el patrón. 
+- Una palabra clave  `Keywords_eu_driver's_license_number` de o `Keywords_sweden_eu_driver's_license_number` se encuentra. 
     
 ```xml
       <!-- Sweden Driver's License Number -->
@@ -15682,8 +15505,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -15695,31 +15518,31 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -15730,9 +15553,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -15741,55 +15564,55 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
 
 #### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver de s_license_number
@@ -15806,13 +15629,13 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 -  דריווערס דערלויבעניש
 - körkortsnummer
 
-## <a name="sweden-national-id"></a>Identificación nacional de Suecia
+## <a name="sweden-national-id"></a>Id. nacional de Suecia
 
 ### <a name="format"></a>Formato
 
 10 o 12 dígitos y un delimitador opcional
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 o 12 dígitos y un delimitador opcional:
 - dos dígitos (opcional) 
@@ -15826,13 +15649,13 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función `Func_swedish_national_identifier` encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_swedish_national_identifier` busca contenido que coincida con el patrón.
 - Se encuentra una palabra `Keywords_swedish_national_identifier` clave de
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función `Func_swedish_national_identifier` encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_swedish_national_identifier` busca contenido que coincida con el patrón.
 - Se supera la suma de comprobación.
 
 
@@ -15856,7 +15679,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - id no
 - id number
 - id #
-- identification no
+- identificación no
 - identification number
 - identifikationsnumret #
 - identifikationsnumret
@@ -15865,7 +15688,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - identity no
 - número de identidad
 - id-nummer
-- id. personal
+- id personal
 - personnummer #
 - personnummer
 - skatteidentifikationsnummer
@@ -15876,7 +15699,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 ocho dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 ocho dígitos consecutivos
 
@@ -15886,14 +15709,14 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- la expresión regular Regex_sweden_passport_number encuentra contenido que coincide con el patrón.
-- o se encuentra `Keywords_eu_passport_number` `Keyword_sweden_passport` una palabra clave.
-- la expresión regular encuentra una fecha con el formato `Regex_sweden_eu_passport_date` DD MMM/MMM AA (01 ENE/ENE 12) o se encuentra una palabra `Keywords_eu_passport_date` clave de.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- la expresión regular Regex_sweden_passport_number encuentra contenido que coincida con el patrón.
+- una palabra clave `Keywords_eu_passport_number` de o `Keyword_sweden_passport` se encuentra.
+- la expresión regular busca una fecha con el formato `Regex_sweden_eu_passport_date` DD MMM/MMM YY (01 JAN/JAN 12) o se encuentra una palabra `Keywords_eu_passport_date` clave de.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- la expresión regular Regex_sweden_passport_number encuentra contenido que coincide con el patrón.
-- o se encuentra `Keywords_eu_passport_number` `Keyword_sweden_passport` una palabra clave.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- la expresión regular Regex_sweden_passport_number encuentra contenido que coincida con el patrón.
+- una palabra clave `Keywords_eu_passport_number` de o `Keyword_sweden_passport` se encuentra.
 
 
 ```xml
@@ -15937,8 +15760,8 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keyword_sweden_passport"></a>Keyword_sweden_passport
 
-- tarjeta de registro del extranjero
-- Tarifas de procesamiento g3
+- tarjeta de registro de extranjero
+- Tarifas de procesamiento de g3
 - varias entradas
 - Numéro de passeport
 - passeport n °
@@ -15949,80 +15772,19 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - passeportn °
 - passnummer
 - pass nr
-- visa visa
-- visas
+- visa de schengen
+- visas de schengen
 - entrada única
 - sverige pass
 - visa requirements
-- procesamiento de visa
+- procesamiento de visas
 - tipo de visa
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- fecha del problema
+- fecha de emisión
 - fecha de expiración
 
-
-## <a name="sweden-social-security-number-or-equivalent-identification"></a>Número de la seguridad social de Suecia o identificación equivalente
-Esta entidad de tipo de información confidencial solo está disponible en el tipo de información confidencial Número de la Seguridad Social de la UE o Identificador equivalente.
-
-### <a name="format"></a>Formato
-
-12 dígitos sin espacios y delimitadores
-  
-### <a name="pattern"></a>Patrón
-
-12 dígitos:
-  
-- ocho dígitos que corresponden a la fecha de nacimiento (AAAMMDD) 
-- tres dígitos que corresponden a un número de serie donde: 
-  - el último dígito del número de serie indica el sexo por la asignación de un número impar para el varón y un número par para la mujer
-  - Antes de 1990, la asignación de un número de serie correspondía al país en el que se encontraba el portador del número. O bien( si hubo antes de 1947) donde habían estado vivo, según los registros fiscales, el 1 de enero de 1947, con un código especial (normalmente 9 como el séptimo dígito) para los indocumentados.
-- un dígito de comprobación
-    
-### <a name="checksum"></a>Suma de comprobación
-
-Sí
-  
-### <a name="definition"></a>Definición
-
-Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_sweden_eu_ssn_or_equivalent` encuentra contenido que coincide con el patrón. 
-- Se encuentra una palabra  `Keywords_sweden_eu_ssn_or_equivalent` clave de. 
-    
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función  `Func_sweden_eu_ssn_or_equivalent` encuentra contenido que coincide con el patrón. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_sweden_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Palabras clave
-
-#### <a name="keywords_sweden_eu_ssn_or_equivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
-
-- número de identificación personal
-- identification number
-- id. personal no
-- identity no
-- identification no
-- identificación personal no
-- id. de personnummer
-- personligt id-nummer
-- unikt id-nummer
-- personnummer
-- identifikationsnumret
-- personnummer #
-- identifikationsnumret #
 
 ## <a name="sweden-tax-identification-number"></a>Número de identificación fiscal de Suecia
 Este tipo de información confidencial solo está disponible para su uso en:
@@ -16036,14 +15798,14 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 10 dígitos y un símbolo en el patrón especificado
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos y un símbolo:
   
-- seis dígitos que corresponden a la fecha de nacimiento (AAMMDD) 
-- un signo más o menos
-- tres dígitos que hacen que el número de identificación sea único, donde: 
-  - para números emitidos antes de 1990, el séptimo y octavo dígito identifican el país de nacimiento o las personas que han nado en el exterior
+- seis dígitos que corresponden a la fecha de nacimiento (YYMMDD) 
+- signo más o menos
+- tres dígitos que hacen que el número de identificación sea único donde: 
+  - para números emitidos antes de 1990, el séptimo y octavo dígito identifican el condado de nacimiento o las personas de origen extranjero
   - el dígito en la noveno posición indica el género por impar para el varón o incluso para la mujer
 - un dígito de comprobación
     
@@ -16053,12 +15815,12 @@ Sí
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_sweden_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_sweden_eu_tax_file_number` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_sweden_eu_tax_file_number` clave de. 
     
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_sweden_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_sweden_eu_tax_file_number` busca contenido que coincida con el patrón. 
     
 ```xml
       <!-- Sweden Tax Identification Number -->
@@ -16081,29 +15843,29 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_sweden_eu_tax_file_number"></a>Keywords_sweden_eu_tax_file_number
 
-- número de identificación personal
+- número de id. personal
 - personnummer
 - skatt id nummer
 - skatt identifikation
 - skattebetalarens identifikationsnummer
-- sverige tin
-- archivo de impuestos
+- estaño sverige
+- archivo fiscal
 - tax id
 - identificación fiscal no
 - número de identificación fiscal
 - tax no #
 - tax no
 - número de impuestos
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 
 
 ## <a name="swift-code"></a>Código SWIFT
@@ -16112,10 +15874,10 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 cuatro letras seguidas de 5 a 31 letras o dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-cuatro letras seguidas de 5 a 31 letras o dígitos:
-- código bancario de cuatro letras (no distingue mayúsculas de minúsculas) 
+cuatro letras seguidas de 5-31 letras o dígitos:
+- Código bancario de cuatro letras (no distingue mayúsculas de minúsculas) 
 - un espacio opcional 
 - 4-28 letras o dígitos (el número básico de cuenta bancaria (BBAN)) 
 - un espacio opcional 
@@ -16127,7 +15889,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_swift encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_swift.
 
@@ -16167,19 +15929,19 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - le numéro BIC
 - # <a name="bic"></a>BIC
 - code identificateur de banque
-- SWIFT(SWIFT)
+- SWIFT 2013
 - SWIFT番号
 - BIC番号
 - BIC
 - SWIFT
-- SWIFT 番号
+- Swift 番号
 - BIC 番号
 - BIC
 - 金融機関識別コード
 - 金融機関コード
 - 銀行コード
 
-## <a name="switzerland-ssn-ahv-number"></a>Número SSN AHV de Suiza
+## <a name="switzerland-ssn-ahv-number"></a>Número AHV del SSN de Suiza
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -16191,7 +15953,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Número de 13 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 Número de 13 dígitos:
 
@@ -16209,12 +15971,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_swiss_social_security_number_ahv encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keywords_swiss_social_security_number_ahv búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_swiss_social_security_number_ahv encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra Keywords_swiss_social_security_number_ahv de la página.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_swiss_social_security_number_ahv encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_swiss_social_security_number_ahv encuentra contenido que coincida con el patrón.
 
 ```xml
       <!-- Swiss SSN AHV Number -->
@@ -16239,16 +16001,16 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - número de seguro
 - personalidno #
 - social security number
-- número de identificación personal
+- número de id. personal
 - identificación personal no.
 - insuranceno #
 - uniqueidno #
 - identificación única no.
 - avs number
-- identidad personal no versálisissnummer
+- identidad personal sin versicherungsnummer
 - identifikationsnummer
 - einzigartige identität nicht
-- sozialversálisissnummer
+- sozialversicherungsnummer
 - id. de personal de identificación
 - numéro de sécurité sociale
 
@@ -16259,7 +16021,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 una letra (en inglés) seguida de nueve dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 una letra (en inglés) seguida de nueve dígitos:
 - una letra (en inglés, no distingue mayúsculas de minúsculas) 
@@ -16272,12 +16034,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_taiwanese_national_id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_taiwanese_national_id.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_taiwanese_national_id encuentra contenido que coincide con el patrón.
 - Se supera la suma de comprobación.
 
@@ -16318,9 +16080,9 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 ### <a name="format"></a>Formato
 
 - número de pasaporte biométrico: nueve dígitos
-- número de pasaporte no biométrico: nueve dígitos
+- Número de pasaporte no biométrico: nueve dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 número de pasaporte biométrico:
 - el carácter "3" 
 - ocho dígitos
@@ -16334,7 +16096,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_taiwan_passport encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_taiwan_passport.
 
@@ -16362,16 +16124,16 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - 中華民國護照 
 - Zhōnghuá Mínguó hùzhào
    
-## <a name="taiwan-resident-certificate-arctarc-number"></a>Número de certificado de residente en Taiwán (ARC/TARC)
+## <a name="taiwan-resident-certificate-arctarc-number"></a>Número de certificado residente en Taiwán (ARC/TARC)
 
 ### <a name="format"></a>Formato
 
 10 letras y dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 letras y dígitos:
-- dos letras (no distingue entre mayúsculas y minúsculas) 
+- dos letras (no distingue mayúsculas de minúsculas) 
 - ocho dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -16380,7 +16142,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_taiwan_resident_certificate encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_taiwan_resident_certificate.
 
@@ -16412,13 +16174,13 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - 外僑居留證 
 - 台灣地區居留證 
 
-## <a name="thai-population-identification-code"></a>Código de identificación de la población tailandesa
+## <a name="thai-population-identification-code"></a>Código de identificación de población tailandés
 
 ### <a name="format"></a>Formato
 
 13 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 13 dígitos:
 - el primer dígito no es cero o nueve 
@@ -16430,12 +16192,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_Thai_Citizen_Id encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keyword_Thai_Citizen_Id búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_Thai_Citizen_Id encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra clave Keyword_Thai_Citizen_Id se encuentra.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_Thai_Citizen_Id encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_Thai_Citizen_Id encuentra contenido que coincida con el patrón.
 
 ```xml
 <!-- Thai Citizen ID -->
@@ -16467,7 +16229,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 11 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 11 dígitos
 
@@ -16477,12 +16239,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_Turkish_National_Id encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keyword_Turkish_National_Id búsqueda.
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_Turkish_National_Id encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra clave Keyword_Turkish_National_Id se encuentra.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_Turkish_National_Id encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_Turkish_National_Id encuentra contenido que coincida con el patrón.
 
 ```xml
 <!-- Turkish National Identity -->
@@ -16502,22 +16264,22 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 #### <a name="keyword_turkish_national_id"></a>Keyword_turkish_national_id
 
 - TC Kimlik No
-- TC Kimlik nuanessı
-- Vatandaşlık nuanessı
+- TC Kimlik numarası
+- Vatandaşlık numarası
 - Vatandaşlık no
 
-## <a name="uk-drivers-license-number"></a>Reino Unido número de licencia de controlador
+## <a name="uk-drivers-license-number"></a>Reino Unido número de licencia del conductor
 
 ### <a name="format"></a>Formato
 
 Combinación de 18 letras y dígitos en el formato especificado
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 18 letras y dígitos:
-- Cinco letras (sin distingue entre mayúsculas y minúsculas) o el dígito "9" en lugar de una letra. 
+- Cinco letras (no distinguen mayúsculas de minúsculas) o el dígito "9" en lugar de una letra. 
 - Un dígito.
-- Cinco dígitos en el formato de fecha MMDDY para la fecha de nacimiento. El séptimo carácter se incrementa en 50 si el controlador es mujer; para examen, de 51 a 62 en lugar de 01 a 12.
+- Cinco dígitos en el formato de fecha MMDDY para la fecha de nacimiento. El séptimo carácter se incrementa en 50 si el controlador es mujer; para exampe, de 51 a 62 en lugar de 01 a 12.
 - Dos letras (no distinguen mayúsculas de minúsculas) o el dígito "9" en lugar de una letra. 
 - Cinco dígitos.
 
@@ -16527,13 +16289,13 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función `Func_uk_drivers_license` encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_uk_drivers_license` busca contenido que coincida con el patrón.
 - Se encuentra una palabra `Keywords_eu_driver's_license_number` clave de.
 - Se supera la suma de comprobación.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función `Func_uk_drivers_license` encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_uk_drivers_license` busca contenido que coincida con el patrón.
 - Se supera la suma de comprobación.
 
 ```xml
@@ -16563,8 +16325,8 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- licencia de conducir
+- licencias de conducir
 - driverslic
 - driverslics
 - driverslicence
@@ -16576,31 +16338,31 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- licencias de conductores
 - driver'lic
 - driver'lics
-- driver'license
-- driver'licenses
-- driver'licence
-- driver'licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conducir
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- licencia de conducir
+- licencias de conducir
+- licencia de conducir
+- licencias de conductor
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
-- slicence del controlador
-- slicences de controlador
+- segmentación de controladores
+- slicences del controlador
 - driver's lic
 - driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- licencias de conductor
 - dl #
 - dls #
 - driverlic #
@@ -16611,9 +16373,9 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver license #
-- driver licenses #
-- driver licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencias de conducir #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -16622,66 +16384,66 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- licencia de controladores #
-- licencias de controladores #
-- drivers licence #
-- drivers licences #
+- licencia de conducir #
+- licencias de conductores #
+- licencia de conductores #
+- licencias de conductores #
 - driver'lic #
 - driver'lics #
-- driver'license #
-- driver'licenses #
-- driver'licence #
-- driver'licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conducir #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driver'slic #
 - driver'slics #
 - driver'slicense #
 - driver'slicenses #
-- slicence del controlador #
-- slicences de controlador #
+- segmentación de controladores #
+- slicences del controlador #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- licencia de conducir #
+- licencias de conducir #
+- licencia de conducir #
+- licencias de conductor #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
-- driv licences
+- licencia de driv
+- licencias de driv
+- licencia de driv
+- licencias de driv
 - driver licen
 - drivers licen
-- driver's licen
-- driving lic
+- licen del controlador
+- conducir lic
 - driving licen
-- driving licenses
+- licencias de conducción
 - driving licence
 - driving licences
 - permiso de conducción
 - dl no
 - dlno
-- dl number
+- número dl
 
    
-## <a name="uk-electoral-roll-number"></a>Reino Unido número de lista de elecciones
+## <a name="uk-electoral-roll-number"></a>Reino Unido Número del censo electoral
 
 ### <a name="format"></a>Formato
 
 dos letras seguidas de 1-4 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-dos letras (sin distingue entre mayúsculas y minúsculas) seguidas de 1 a 4 números
+dos letras (no distingue mayúsculas de minúsculas) seguidas de números de 1 a 4
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -16689,7 +16451,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_uk_electoral encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_uk_electoral.
 
@@ -16715,13 +16477,13 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - electoral roll
 
    
-## <a name="uk-national-health-service-number"></a>Reino Unido número de servicio de salud nacional
+## <a name="uk-national-health-service-number"></a>Reino Unido Número de servicio nacional de salud
 
 ### <a name="format"></a>Formato
 
 De 10 a 17 dígitos separados por espacios
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10-17 dígitos:
 - 3 o 10 dígitos 
@@ -16736,7 +16498,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_uk_nhs_number encuentra contenido que coincide con el patrón.
 - Una de las siguientes opciones es verdadera:
     - Se encuentra una palabra clave de Keyword_uk_nhs_number.
@@ -16783,19 +16545,19 @@ Una directiva DLP confía en que se detecta este tipo de información confidenci
 - Fecha de nacimiento 
    
 ## <a name="uk-national-insurance-number-nino"></a>Reino Unido número de seguro nacional (NINO)
-Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial Número de identificación nacional de la UE. Está disponible como una entidad independiente de tipo de información confidencial.
+Esta entidad de tipo de información confidencial se incluye en el tipo de información confidencial Número de identificación nacional de la UE. Está disponible como una entidad de tipo de información confidencial independiente.
 
 ### <a name="format"></a>Formato
 
 siete caracteres o nueve caracteres separados por espacios o guiones
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 dos patrones posibles:
 
-- dos letras (los NINO válidos usan solo ciertos caracteres en este prefijo, que este patrón valida, no distingue entre mayúsculas y minúsculas)
+- dos letras (los NINO válidos solo usan ciertos caracteres en este prefijo, que este patrón valida; no distingue mayúsculas de minúsculas)
 - seis dígitos
-- ya sea 'A', 'B', 'C' o 'D' (como el prefijo, solo se permiten ciertos caracteres en el sufijo, no distinguen mayúsculas de minúsculas)
+- 'A', 'B', 'C' o 'D' (como el prefijo, solo se permiten determinados caracteres en el sufijo, no distingue mayúsculas de minúsculas)
 
 O
 
@@ -16815,11 +16577,11 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_uk_nino encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_uk_nino.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_uk_nino encuentra contenido que coincide con el patrón.
 
 ```xml
@@ -16842,7 +16604,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - national insurance number
 - national insurance contributions
 - protection act
-- insurance
+- seguro
 - social security number
 - insurance application
 - medical application
@@ -16850,11 +16612,11 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - medical attention
 - social security
 - great britain
-- Número ni
+- Número NI
 - NI No.
 - NI #
 - NI #
-- insurance #
+- seguro #
 - insurancenumber
 - nationalinsurance #
 - nationalinsurancenumber
@@ -16870,10 +16632,10 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ### <a name="format"></a>Formato
 
-10 dígitos sin espacios y delimitadores
+10 dígitos sin espacios ni delimitadores
  
   
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 10 dígitos
   
@@ -16883,8 +16645,8 @@ No
   
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función  `Func_uk_eu_tax_file_number` encuentra contenido que coincide con el patrón. 
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_uk_eu_tax_file_number` busca contenido que coincida con el patrón. 
 - Se encuentra una palabra  `Keywords_uk_eu_tax_file_number` clave de. 
     
 ```xml
@@ -16902,22 +16664,22 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 #### <a name="keywords_uk_eu_tax_file_number"></a>Keywords_uk_eu_tax_file_number
 
 - número de impuestos
-- archivo de impuestos
+- archivo fiscal
 - tax id
 - identificación fiscal no
 - número de identificación fiscal
 - tax no #
 - tax no
-- número de registro de impuestos
-- y ahora #
-- y ahora #
-- numeración #
+- número de registro fiscal
+- taxid #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
-- tin #
+- estaño #
 
 ## <a name="us-bank-account-number"></a>Número de cuenta bancaria de EE. UU.
 
@@ -16925,7 +16687,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 De 6 a 17 dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 De 6 a 17 dígitos consecutivos
 
@@ -16935,7 +16697,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_usa_bank_account_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_usa_Bank_Account.
 
@@ -16981,17 +16743,17 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - Debit Acct No. 
 - Debit Account No. 
 
-## <a name="us-drivers-license-number"></a>Número de licencia de conductor de EE. UU.
+## <a name="us-drivers-license-number"></a>Número de licencia de conducir de EE. UU.
 
 ### <a name="format"></a>Formato
 
 Depende del estado
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 depende del estado, por ejemplo, Nueva York:
 - nueve dígitos con formato como ddd ddd ddd coincidirán.
-- nueve dígitos como ddddddddd no coincidirán.
+- nueve dígitos como dddddddddd no coincidirán.
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -16999,12 +16761,12 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_new_york_drivers_license_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_[state_name]_drivers_license_name.
 - Se encuentra una palabra clave de Keyword_us_drivers_license.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_new_york_drivers_license_number encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_[state_name]_drivers_license_name.
 - Se encuentra una palabra clave de Keyword_us_drivers_license_abbreviations.
@@ -17069,8 +16831,8 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - Drivers Licenses 
 - Driver'Lic 
 - Driver'Lics 
-- Driver'License 
-- Driver'Licenses 
+- Licencia de conducir 
+- Licencias de conducir 
 - Driver' Lic 
 - Driver' Lics 
 - Driver' License 
@@ -17108,8 +16870,8 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - Drivers Licenses# 
 - Driver'Lic # 
 - Driver'Lics # 
-- Driver'License # 
-- Driver'Licenses # 
+- Licencia de conducir # 
+- Licencias de conducir # 
 - Driver' Lic# 
 - Driver' Lics# 
 - Driver' License# 
@@ -17133,13 +16895,13 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - abreviatura de estado (por ejemplo, "NY") 
 - nombre de estado (por ejemplo, "Nueva York")
 
-## <a name="us-individual-taxpayer-identification-number-itin"></a>Número de identificación de contribuyente individual (ITIN) de EE. UU.
+## <a name="us-individual-taxpayer-identification-number-itin"></a>Número de identificación de contribuyente individual (ITIN) de ESTADOS UNIDOS
 
 ### <a name="format"></a>Formato
 
-nueve dígitos que empiezan por "9" y contienen un "7" o "8" como cuarto dígito, con formato opcional con espacios o guiones
+nueve dígitos que comienzan con un "9" y contienen un "7" o "8" como el cuarto dígito, con formato opcional con espacios o guiones
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 con formato:
 - el dígito "9" 
@@ -17162,16 +16924,16 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_formatted_itin encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_itin.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_unformatted_itin encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_itin.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- La función Func_formatted_itin o Func_unformatted_itin encuentra contenido que coincide con el patrón.
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función Func_formatted_itin o Func_unformatted_itin encuentra contenido que coincida con el patrón.
 
 ```xml
     <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
@@ -17203,15 +16965,15 @@ Una directiva DLP tiene confianza baja en que se detecta este tipo de informaci�
 - itin 
 - i.t.i.n.
 - ssn 
-- tin 
+- estaño 
 - social security 
 - tax payer 
 - itins 
-- y ahora 
+- taxid 
 - individual taxpayer 
 
 
-## <a name="us-social-security-number-ssn"></a>Número de seguridad social (SSN) de EE. UU.
+## <a name="us-social-security-number-ssn"></a>Número de seguridad social (SSN) de Estados Unidos
 
 ### <a name="format"></a>Formato
 
@@ -17220,9 +16982,9 @@ nueve dígitos, que pueden estar en un patrón con formato o sin formato
 > [!NOTE]
 > Si se ha emitido antes de mediados de 2011, el SSN tiene un formato seguro en aquellas partes del número que deben incluirse dentro de ciertos rangos para que sean válidas (pero no hay ninguna suma de comprobación).
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-Cuatro funciones buscan SSN en cuatro patrones diferentes:
+cuatro funciones buscan SSN en cuatro patrones diferentes:
 - Func_ssn busca SSN con formato seguro anteriores a 2011 y formateados con guiones o espacios (ddd-dd-dddd O ddd dd dddd)
 - Func_unformatted_ssn busca SSN con formato seguro anteriores a 2011 y formateados de manera no específica como nueve dígitos consecutivos (ddddddddd)
 - Func_randomized_formatted_ssn busca SSN posteriores a 2011 y formateados con guiones o espacios (ddd-dd-dddd O ddd dd dddd)
@@ -17235,19 +16997,19 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_ssn encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_ssn.
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_unformatted_ssn busca contenido que coincida con el patrón.
 - Se encuentra una palabra clave de Keyword_ssn.
 
-Una directiva DLP tiene confianza baja en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_randomized_formatted_ssn encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_ssn.
 
-Una directiva DLP está segura al 55% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene poca confianza en que se detecte este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_randomized_unformatted_ssn encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_ssn.
 
@@ -17282,7 +17044,7 @@ Una directiva DLP está segura al 55% de que este tipo de información confidenc
 - social security number
 - seguridad social #
 - seguridad social #
-- social security no
+- seguridad social no
 - Social Security#
 - Soc Sec
 - SSN
@@ -17291,13 +17053,13 @@ Una directiva DLP está segura al 55% de que este tipo de información confidenc
 - SS #
 - SSID
    
-## <a name="us--uk-passport-number"></a>EE.UU. / Reino Unido passport number
+## <a name="us--uk-passport-number"></a>Ee.UU. / Reino Unido passport number
 
 ### <a name="format"></a>Formato
 
 nueve dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos consecutivos
 
@@ -17307,14 +17069,14 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP confía en que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_usa_uk_passport encuentra contenido que coincide con el patrón.
-- Se encuentra una `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_uk_eu_passport_number` clave.
+- Una palabra clave `Keywords_eu_passport_number` de o `Keywords_uk_eu_passport_number` se encuentra.
 - Se encuentra una palabra `Keywords_eu_passport_date` clave de
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_usa_uk_passport encuentra contenido que coincide con el patrón.
-- Se encuentra una `Keywords_eu_passport_number` palabra clave o una palabra `Keywords_uk_eu_passport_number` clave.
+- Una palabra clave `Keywords_eu_passport_number` de o `Keywords_uk_eu_passport_number` se encuentra.
 
 ```xml
     <!-- U.S. / U.K. Passport Number -->
@@ -17354,7 +17116,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keywords_uk_eu_passport_number"></a>Keywords_uk_eu_passport_number
 
-- british passport 
+- pasaporte británico 
 - uk passport 
 
 
@@ -17370,7 +17132,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 nueve dígitos
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
 nueve dígitos
 
@@ -17380,9 +17142,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- El elemento regex Regex_Ukraine_Passport_Domestic encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keyword_Ukraine_Passport_Domestic búsqueda.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- El objeto regex Regex_Ukraine_Passport_Domestic encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra Keyword_Ukraine_Passport_Domestic de la página.
 
 ```xml
       <!-- Ukraine Passport Domestic -->
@@ -17398,7 +17160,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keyword_ukraine_passport_domestic"></a>Keyword_ukraine_passport_domestic
 
-- passport de ucrania
+- pasaporte de ucrania
 - passport number
 - passport no
 - паспорт України
@@ -17406,7 +17168,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 - персональний
 
 
-## <a name="ukraine-passport-international"></a>Pasaporte internacional de Ucrania
+## <a name="ukraine-passport-international"></a>Ucrania passport international
 Este tipo de información confidencial solo está disponible para su uso en:
 - directivas de prevención de pérdida de datos
 - directivas de cumplimiento de comunicaciones
@@ -17416,11 +17178,11 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ### <a name="format"></a>Formato
 
-patrón alfanumérico de ocho caracteres
+Patrón alfanumérico de ocho caracteres
 
-### <a name="pattern"></a>Patrón
+### <a name="pattern"></a>Pattern
 
-patrón alfanumérico de ocho caracteres:
+Patrón alfanumérico de ocho caracteres:
 - dos letras o dígitos
 - seis dígitos
 
@@ -17430,9 +17192,9 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP tiene confianza media de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
-- El elemento regex Regex_Ukraine_Passport_International encuentra contenido que coincide con el patrón.
-- Se encuentra una palabra clave Keyword_Ukraine_Passport_International búsqueda.
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- El objeto regex Regex_Ukraine_Passport_International encuentra contenido que coincida con el patrón.
+- Se encuentra una palabra Keyword_Ukraine_Passport_International de la página.
 
 ```xml
       <!-- Ukraine Passport International -->
@@ -17448,7 +17210,7 @@ Una directiva DLP tiene confianza media de que se detecta este tipo de informaci
 
 #### <a name="keyword_ukraine_passport_international"></a>Keyword_ukraine_passport_international
 
-- passport de ucrania
+- pasaporte de ucrania
 - passport number
 - passport no
 - паспорт України

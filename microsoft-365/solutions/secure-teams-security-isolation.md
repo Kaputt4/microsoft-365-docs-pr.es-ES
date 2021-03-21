@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
-ms.openlocfilehash: 5ddd42f9e2f2779ca6bf864554140a3f18d2cdea
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 2ecd8e0458f6ebef9ebd1b0c3724195cc70f6378
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405707"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920933"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configuración de un equipo con aislamiento de seguridad
 
@@ -40,7 +40,7 @@ Los elementos de configuración para un equipo con aislamiento de seguridad son:
     - Cifra los documentos a los que se aplica la etiqueta
 
 > [!IMPORTANT]
-> Antes de proceder con los pasos de este artículo, asegúrese de que tiene habilitadas las [etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Office 365 y sitios de SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+> Antes de proceder con los pasos de este artículo, asegúrese de que tiene habilitadas las [etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Office 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Vea este vídeo para obtener información general del proceso.
 <br>
@@ -70,8 +70,8 @@ Según la naturaleza de su empresa, es posible que quiera habilitar o no el uso 
 
 Para más información sobre el uso compartido de invitados de forma segura, vea los recursos siguientes:
 
-- [Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [Crear un entorno seguro de uso compartido para invitados](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización](./share-limit-accidental-exposure.md)
+- [Crear un entorno seguro de uso compartido para invitados](./create-secure-guest-sharing-environment.md)
 
 Para permitir o bloquear el uso compartido de invitados, utilizamos una combinación de una etiqueta de confidencialidad para el equipo y controles de uso compartido a nivel de sitio para el sitio de SharePoint asociado, ambos tratados más adelante.
 
@@ -98,7 +98,7 @@ Para restringir la creación de un canal privado
 2. En la pestaña **Configuración**, expanda **Permisos de los miembros**.
 3. Desactive la casilla de verificación **Permitir a los miembros crear canales privados**.
 
-También puede usar [Directivas de equipos](https://docs.microsoft.com/MicrosoftTeams/teams-policies) para controlar quién puede crear canales privados.
+También puede usar [Directivas de equipos](/MicrosoftTeams/teams-policies) para controlar quién puede crear canales privados.
 
 ## <a name="create-a-sensitivity-label"></a>Creación de una etiqueta de confidencialidad
 
@@ -194,7 +194,7 @@ Para actualizar la configuración del sitio
 
 #### <a name="private-channels"></a>Canales privados
 
-Si agrega canales privados al equipo, cada canal privado crea un sitio de SharePoint nuevo con la configuración de uso compartido predeterminada. Estos sitios no están visibles en el Centro de administración de SharePoint, por lo que debe usar el cmdlet [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) de PowerShell con los siguientes parámetros para actualizar la configuración de uso compartido de invitados:
+Si agrega canales privados al equipo, cada canal privado crea un sitio de SharePoint nuevo con la configuración de uso compartido predeterminada. Estos sitios no están visibles en el Centro de administración de SharePoint, por lo que debe usar el cmdlet [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) de PowerShell con los siguientes parámetros para actualizar la configuración de uso compartido de invitados:
 
 - `-SharingCapability Disabled` para desactivar el uso compartido de invitados (está activado de forma predeterminada)
 - `-DefaultSharingLinkType Internal` para cambiar el vínculo para compartir predeterminado a *Usuarios específicos*
@@ -229,10 +229,10 @@ Para agregar a usuarios al sitio
 
 Microsoft 365 ofrece otros métodos para proteger el contenido. Considere si las siguientes opciones ayudarían a mejorar la seguridad de su organización.
 
-- Hacer que los invitados acepten los [términos de uso](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
-- Configurar una [directiva de tiempo de espera de sesión](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) para invitados
-- Crear [tipos de información confidencial](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) y usar [protección de pérdida de datos](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) para establecer directivas en relación con el acceso a información confidencial.
-- Use revisiones de [acceso de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) para revisar periódicamente el acceso al equipo y la afiliación.
+- Hacer que los invitados acepten los [términos de uso](/azure/active-directory/conditional-access/terms-of-use).
+- Configurar una [directiva de tiempo de espera de sesión](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) para invitados
+- Crear [tipos de información confidencial](../compliance/sensitive-information-type-learn-about.md) y usar [protección de pérdida de datos](../compliance/data-loss-prevention-policies.md) para establecer directivas en relación con el acceso a información confidencial.
+- Use revisiones de [acceso de Azure Active Directory](/azure/active-directory/governance/access-reviews-overview) para revisar periódicamente el acceso al equipo y la afiliación.
 
 ## <a name="drive-user-adoption-for-team-members"></a>Fomentar que los miembros del equipo usen las funcionalidades
 
@@ -266,4 +266,4 @@ Volver a dar formación a los usuarios que lo necesiten.
 
 ## <a name="see-also"></a>Consulte también
 
-[Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)
+[Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)

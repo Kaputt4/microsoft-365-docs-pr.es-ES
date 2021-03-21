@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: pasos de migración de Servicios de federación de Active Directory (AD FS) para la migración desde Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 852fc8f93158d7b6080f1add5a05e7367539f889
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 146f476a43e46925d87763a800467bf52adc73e5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838418"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918911"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>Pasos de migración de AD FS para la migración desde Microsoft Cloud Deutschland
 
@@ -89,7 +89,8 @@ Puedes usar la [Ayuda de AD FS](https://adfshelp.microsoft.com/AadTrustClaims/Cl
 
 ## <a name="ad-fs-disaster-recovery-wid-database"></a>Recuperación ante desastres de AD FS (base de datos WID)
 
-Para restaurar la granja de servidores de AD FS en una herramienta de restauración rápida de [AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) ante desastres, debe aprovecharse. Por lo tanto, la herramienta debe descargarse y antes del inicio de la migración se debe crear una copia de seguridad y almacenarla de forma segura. En este ejemplo, se han ejecutado los siguientes comandos para realizar una copia de seguridad de una granja de servidores que se ejecuta en una base de datos WID:
+
+Para restaurar la granja de servidores de AD FS en una herramienta de restauración rápida de [AD FS](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) ante desastres, debe aprovecharse. Por lo tanto, la herramienta debe descargarse y antes del inicio de la migración se debe crear una copia de seguridad y almacenarla de forma segura. En este ejemplo, se han ejecutado los siguientes comandos para realizar una copia de seguridad de una granja de servidores que se ejecuta en una base de datos WID:
 
 <h2 id="backup"></h2>
 
@@ -144,6 +145,6 @@ Pasar a través de la transición:
 
 Aplicaciones en la nube:
 
-- [Información del programa de migración de Dynamics 365](https://aka.ms/d365ceoptin)
-- [Información del programa de migración de Power BI](https://aka.ms/pbioptin)
-- [Introducción a su actualización de Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Información del programa de migración de Dynamics 365](/dynamics365/get-started/migrate-data-german-region)
+- [Información del programa de migración de Power BI](/power-bi/admin/service-admin-migrate-data-germany)
+- [Introducción a su actualización de Microsoft Teams](/microsoftteams/upgrade-start-here)

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 90dee316ee5bdc99b6a2386260a3be38728e7282
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 18422f74d87bbadf014de24849235ce5c25bd614
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453722"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920473"
 ---
 # <a name="device-requirements"></a>Requisitos del dispositivo
 
@@ -70,7 +70,7 @@ Los dispositivos deben cumplir o superar los siguientes límites de almacenamien
 - La unidad de arranque debe tener una capacidad de al menos 128 GB.
 - La memoria interna del dispositivo (RAM) debe ser igual o superior a 8 GB.
 
-Si el dispositivo se hizo después del 1 de julio de 2020, también debe tener una cámara IR, un lector de huellas digitales o ambos, para admitir [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security).
+Si el dispositivo se hizo después del 1 de julio de 2020, también debe tener una cámara IR, un lector de huellas digitales o ambos, para admitir [Windows Hello](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security).
 
 ## <a name="recommended-requirements"></a>Requisitos recomendados
 

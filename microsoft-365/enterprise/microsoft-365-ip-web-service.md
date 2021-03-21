@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Aprenda a usar la dirección IP de Office 365 y el servicio web URL para identificar y diferenciar mejor el tráfico de red de Office 365.
-ms.openlocfilehash: 03e6eac86e66db6f9e94c3f98e6d7b565ffa0f14
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 1948491e1d3db724e7b7b6a5275234acab4be08a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456464"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918959"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>El servicio web de URL y dirección IP de Office 365
 
@@ -66,7 +66,7 @@ Estos parámetros son comunes a todos los métodos de servicio web:
 - **format=<JSON | CSV>**: de forma predeterminada, el formato de datos devueltos es JSON. Use este parámetro opcional para devolver los datos en formato de valores separados por comas (CSV).
 - **ClientRequestId=\<guid>**: un GUID obligatorio que se genera para la asociación del cliente. Genere un GUID único para cada equipo que llama al servicio web (los scripts que se incluyen en esta página generan un GUID por usted). No use los GUID que se muestran en los ejemplos siguientes, puesto que el servicio web puede bloquearlos en el futuro. El formato GUID es _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, donde x representa un número hexadecimal.
 
-  Para generar un GUID, puede usar el comando de PowerShell [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) o usar un servicio en línea como el [Generador GUID en línea](https://www.guidgenerator.com/).
+  Para generar un GUID, puede usar el comando de PowerShell [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) o usar un servicio en línea como el [Generador GUID en línea](https://www.guidgenerator.com/).
 
 ## <a name="version-web-method"></a>Método web de versión
 
@@ -258,7 +258,7 @@ El resultado del método web de cambios es una matriz de registros en la que cad
 
 - id: el identificador inmutable del registro de cambios.
 - endpointSetId: el identificador del registro del conjunto de puntos de conexión que se ha modificado.
-- disposition: describe el resultado del cambio en el registro de conjuntos de puntos de conexión. Los valores _change_, _add_ o_remove_.
+- disposition: describe el resultado del cambio en el registro de conjuntos de puntos de conexión. Los valores _change_, _add_ o _remove_.
 - impact: no todos los cambios serán igualmente importantes para todos los entornos. Este elemento describe el impacto previsto en un entorno perimetral de red de empresa como resultado de este cambio. Este elemento solo se incluye en los registros de cambio de la versión **2018112800** y posteriores. Las opciones para el impacto son: AddedIp, una dirección IP se ha agregado a Office 365 y pronto estará disponible en el servicio. Este es un cambio que debe realizar en un firewall u otro dispositivo de red perimetral de nivel 3. Si no agrega esto antes de empezar a usarlo, puede experimentar una interrupción.
   AddedUrl: se ha agregado una URL a Office 365 y pronto estará disponible en el servicio. Esto representa un cambio que debe realizar en un servidor proxy u otro dispositivo de red perimetral de análisis de URL. Si no agrega esta URL antes de empezar a usarlo, puede experimentar una interrupción.
   AddedIpAndUrl: se han agregado una dirección IP y una URL. Este es un cambio que necesita llevar a cabo en un dispositivo de nivel 3 de firewall, en un servidor proxy o un dispositivo de análisis de URL. Si no agrega este par IP/URL antes de empezar a usarlo, puede experimentar una interrupción.
@@ -607,7 +607,7 @@ Puede usar algunos métodos diferentes para recibir notificaciones de correo ele
 
 - Para usar una solución de Microsoft Flow, vea [Usar Microsoft Flow para recibir un correo electrónico de cambios en las direcciones IP y URL de Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 - Para implementar una aplicación lógica de Azure con una plantilla de ARM, vea [Notificación de actualización de Office 365 (v1.1)](https://aka.ms/ipurlws-updates-template).
-- Para escribir su propio script de notificación con PowerShell, vea [Send-MailMessage](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/send-mailmessage).
+- Para escribir su propio script de notificación con PowerShell, vea [Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage).
 
 ## <a name="exporting-a-proxy-pac-file"></a>Exportar un archivo proxy PAC
 

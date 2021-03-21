@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Cómo activar o desactivar la característica de búsqueda de registro de auditoría en el Centro de seguridad y cumplimiento de & para habilitar o deshabilitar la capacidad de los administradores de buscar en el registro de auditoría.
-ms.openlocfilehash: 3f3e1b913dd163e74f9e5359de772dfcbf3bd786
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: aecd1d47592b9a5e2f134b1d9db9ff203b815b18
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423681"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919286"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>Activar o desactivar la búsqueda de registros de auditoría
 
@@ -41,7 +41,7 @@ El registro de auditoría está activado de forma predeterminada para organizaci
     > [!NOTE]
     > Los usuarios deben tener asignados permisos en Exchange Online para activar o desactivar la búsqueda del registro de auditoría. Si asigna a los usuarios  el rol Registros de auditoría en la página Permisos del Centro de seguridad y cumplimiento de &, no podrán activar o desactivar la búsqueda del registro de auditoría. Esto se debe a que el cmdlet subyacente es un cmdlet de PowerShell de Exchange Online. 
     
-- Para obtener instrucciones paso a paso sobre cómo buscar en el registro de auditoría, vea [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md). Para obtener más información acerca de la API de actividad de administración de Microsoft 365, vea Introducción a las API de administración de [Microsoft 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
+- Para obtener instrucciones paso a paso sobre cómo buscar en el registro de auditoría, vea [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md). Para obtener más información acerca de la API de actividad de administración de Microsoft 365, vea Introducción a las API de administración de [Microsoft 365](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 - Para comprobar que la búsqueda de registros de auditoría está activada, puede ejecutar el comando siguiente en PowerShell de Exchange Online:
 
@@ -71,7 +71,7 @@ Si la búsqueda del registro de auditoría no está activada para su organizaci�
 
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>Usar PowerShell para activar la búsqueda del registro de auditoría
 
-1. [Conectarse a Exchange Online mediante PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Conectarse a Exchange Online mediante PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Ejecute el siguiente comando de PowerShell para activar la búsqueda del registro de auditoría en Office 365.
 
@@ -85,7 +85,7 @@ Si la búsqueda del registro de auditoría no está activada para su organizaci�
 
 Debe usar Exchange Online PowerShell para desactivar la búsqueda del registro de auditoría.
   
-1. [Conectarse a Exchange Online mediante PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Conectarse a Exchange Online mediante PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Ejecute el siguiente comando de PowerShell para desactivar la búsqueda del registro de auditoría.
 

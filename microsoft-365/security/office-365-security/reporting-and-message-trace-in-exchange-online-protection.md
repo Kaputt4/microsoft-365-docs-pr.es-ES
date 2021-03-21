@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
-description: En este artículo, aprenderá sobre los informes y las herramientas de solución de problemas disponibles para los administradores de Microsoft Exchange Online Protection (EOP).
+description: En este artículo, aprenderá acerca de los informes y las herramientas de solución de problemas disponibles para los administradores de Microsoft Exchange Online Protección contra errores (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 783c7ea0aca47c805daf66592b401a98f739d071
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1307fa1431a4fdd46c9ab070a2986a015891568f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288084"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918683"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Informes y seguimiento de mensajes en EOP
 
@@ -37,51 +37,51 @@ En organizaciones de Microsoft 365 con buzones en Exchange Online o organizacion
 
 **Actividad de grupos de Microsoft 365:** ver información sobre el número de grupos de Microsoft 365 que se crean y usan.
 
-**Actividad de correo** electrónico: ver información sobre el número de mensajes enviados, recibidos y leídos en toda la organización y por usuarios específicos.
+**Actividad de correo** electrónico: vea información sobre el número de mensajes enviados, recibidos y leídos en toda la organización y por usuarios específicos.
 
 **Uso de la aplicación de** correo electrónico: ver información sobre las aplicaciones de correo electrónico que se usan. Esto incluye el número total de conexiones para cada aplicación y las versiones de Outlook que se conectan.
 
-**Uso del buzón:** ver información sobre el almacenamiento usado, el consumo de cuota, el recuento de elementos y la última actividad (actividad de envío o lectura) de los buzones.
+**Uso del** buzón: ver información sobre el almacenamiento usado, el consumo de cuota, el recuento de elementos y la última actividad (actividad de envío o lectura) de los buzones.
 
 Consulte los siguientes recursos para obtener más información:
 
 - [Informes de Microsoft 365 en el centro de administración: grupos de Microsoft 365](../../admin/activity-reports/office-365-groups.md)
 
-- [Informes de Microsoft 365 en el centro de administración: actividad de correo electrónico](../../admin/activity-reports/email-activity.md)
+- [Informes de Microsoft 365 en el Centro de administración: actividad de correo electrónico](../../admin/activity-reports/email-activity.md)
 
-- [Informes de Microsoft 365 en el centro de administración: uso de aplicaciones de correo electrónico](../../admin/activity-reports/email-apps-usage.md)
+- [Informes de Microsoft 365 en el Centro de administración: uso de aplicaciones de correo electrónico](../../admin/activity-reports/email-apps-usage.md)
 
-- [Informes de Microsoft 365 en el centro de administración: uso del buzón](../../admin/activity-reports/mailbox-usage.md)
+- [Informes de Microsoft 365 en el Centro de administración: uso de buzones](../../admin/activity-reports/mailbox-usage.md)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Informes de & cumplimiento normativo en el Centro de administración de Microsoft 365
 
-Estos informes mejorados proporcionan una experiencia interactiva de informes para los administradores de EOP, que incluye información resumida y la capacidad de explorar en profundidad para obtener más detalles.
+Estos informes mejorados proporcionan una experiencia interactiva de informes para los administradores de EOP, que incluye información de resumen y la capacidad de explorar más detalles.
 
 **Defender para Office 365:** ver información sobre vínculos seguros y datos adjuntos seguros que forman parte de Microsoft Defender para Office 365.
 
-**EOP:** ver información sobre detecciones de malware, correo suplantado, detecciones de correo no deseado y flujo de correo hacia y desde su organización.
+**EOP:** ver información sobre detecciones de malware, correo suplantado, detecciones de correo no deseado y flujo de correo desde y hacia su organización.
 
 [Ver informes de Defender para Office 365](view-reports-for-atp.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Informes personalizados con Microsoft Graph
 
-Cree mediante programación informes que estén disponibles en el centro de administración mediante Microsoft Graph. Para obtener más información, vea [Información general sobre Microsoft Graph](https://docs.microsoft.com/graph/overview) y trabajar con informes de uso de Office [365 en Microsoft Graph.](https://docs.microsoft.com/graph/api/resources/report)
+Cree informes disponibles en el Centro de administración mediante programación mediante Microsoft Graph. Para obtener más información, vea [Overview of Microsoft Graph](/graph/overview) and Working with Office [365 usage reports in Microsoft Graph](/graph/api/resources/report).
 
 ## <a name="message-trace"></a>Seguimiento de mensajes
 
-Sigue los mensajes de correo electrónico mientras viajan a través de EOP. Puede determinar si el servicio recibió, rechazó, aplazó o entregó un mensaje de correo electrónico. También muestra las acciones que se realizaron en el mensaje antes de alcanzar su estado final.
+Sigue los mensajes de correo electrónico mientras viajan a través de EOP. Puede determinar si el servicio recibió, rechazó, aplazó o entregó un mensaje de correo electrónico. También muestra qué acciones se realizaron en el mensaje antes de alcanzar su estado final.
 
-Puede usar esta información para responder eficazmente a las preguntas del usuario, solucionar problemas de flujo de correo, validar los cambios de directiva y mitigar la necesidad de ponerse en contacto con el soporte técnico para obtener ayuda.
+Puede usar esta información para responder eficazmente a las preguntas del usuario, solucionar problemas de flujo de correo, validar los cambios de directiva y aliviar la necesidad de ponerse en contacto con el soporte técnico para obtener asistencia.
 
-Consulte [Seguimiento de mensajes en el Centro de seguridad & cumplimiento.](message-trace-scc.md)
+Consulte [Seguimiento de mensajes en el Centro de seguridad & cumplimiento](message-trace-scc.md).
 
 ## <a name="audit-logging"></a>Registro de auditoría
 
-Realiza un seguimiento de los cambios específicos realizados por los administradores en su organización. Estos informes pueden ayudarle a solucionar problemas de configuración o a encontrar la causa de problemas relacionados con la seguridad o el cumplimiento. Vea [Informes de auditoría en EOP.](auditing-reports-in-eop.md)
+Realiza un seguimiento de los cambios específicos realizados por los administradores en su organización. Estos informes pueden ayudarle a solucionar problemas de configuración o a encontrar la causa de problemas relacionados con la seguridad o el cumplimiento. Vea [Informes de auditoría en EOP](auditing-reports-in-eop.md).
 
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>Informes, disponibilidad y latencia de los datos de seguimiento de mensajes
 
-En la tabla siguiente se describe cuándo están disponibles los datos de informes y seguimiento de mensajes de EOP y durante cuánto tiempo.
+En la tabla siguiente se describe cuándo los datos de seguimiento de mensajes y informes de EOP están disponibles y durante cuánto tiempo.
 
 ****
 
@@ -93,4 +93,4 @@ En la tabla siguiente se describe cuándo están disponibles los datos de inform
 |
 
 > [!NOTE]
-> La disponibilidad y la latencia de los datos son las mismas si se solicitan a través del Centro de administración o PowerShell remoto.
+> La disponibilidad y la latencia de los datos son las mismas si se solicitan a través del Centro de administración o powerShell remoto.

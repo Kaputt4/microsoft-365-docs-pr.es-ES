@@ -40,6 +40,8 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: Mover usuarios a una suscripción diferente
       href: subscriptions/move-users-different-subscription.md
+    - name: Administrar directivas de reclamación automática
+      href: licenses/manage-auto-claim-policies.md
     - name: Entender las suscripciones y licencias
       href: licenses/subscriptions-and-licenses.md
 - name: Facturas y pagos
@@ -67,7 +69,7 @@
     - name: Administrar cuentas de facturación
       href: manage-billing-accounts.md
     - name: Asociar un espacio empresarial con su cuenta de facturación
-      href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
+      href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
 - name: Administrar relaciones con los partners
   href: manage-partners.md
 - name: Cerrar la cuenta

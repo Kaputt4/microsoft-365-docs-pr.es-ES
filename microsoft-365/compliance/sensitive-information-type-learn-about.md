@@ -16,16 +16,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 13dee9d5744639149960a16adcf36b7ebe5718f7
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 12a4e8873cb7212bfa7dde12bba9e98528cd859a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766405"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919676"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
-Identificar y clasificar elementos confidenciales que están bajo el control de las organizaciones es el primer paso de la disciplina [de Protección de la información.](protect-information.md)  Microsoft 365 proporciona tres formas de identificar elementos para que se puedan clasificar:
+Identificar y clasificar elementos confidenciales que están bajo el control de las organizaciones es el primer paso de la disciplina [de Protección de la información.](./information-protection.md)  Microsoft 365 proporciona tres formas de identificar elementos para que se puedan clasificar:
 
 - manualmente por los usuarios
 - reconocimiento automatizado de patrones, como tipos de información confidencial

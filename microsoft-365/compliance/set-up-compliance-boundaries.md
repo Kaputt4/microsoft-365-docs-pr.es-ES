@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Obtenga información sobre cómo usar los límites de cumplimiento para crear límites lógicos que controlen las ubicaciones de contenido de usuario que un administrador de exhibición de documentos electrónicos puede buscar en Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: df582d46472bc7ca6d6e99e823ab94c0884d60a0
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 80f1c6705550d21ac54a0fb4dda2b605b497adbc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423901"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919506"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Configurar límites de cumplimiento para investigaciones de exhibición de documentos electrónicos
 
@@ -68,7 +68,7 @@ Debe cumplir los siguientes requisitos previos antes de que el atributo azure ac
 
 - Los buzones de usuario deben tener un tamaño mínimo de 10 MB. Si el buzón de un usuario es inferior a 10 MB, el atributo usado para definir las agencias no se sincronizará con la cuenta de OneDrive del usuario.
 
-- Los límites de cumplimiento y los atributos usados para crear filtros de permisos de búsqueda requieren que los atributos de Azure Active Directory (Azure AD) se sincronicen con los buzones de usuario. Para comprobar que los atributos que desea usar se han sincronizado, ejecute el cmdlet [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) en Exchange Online PowerShell. El resultado de este cmdlet muestra los atributos de Azure AD sincronizados con Exchange Online.
+- Los límites de cumplimiento y los atributos usados para crear filtros de permisos de búsqueda requieren que los atributos de Azure Active Directory (Azure AD) se sincronicen con los buzones de usuario. Para comprobar que los atributos que desea usar se han sincronizado, ejecute el cmdlet [Get-User](/powershell/module/exchange/get-user) en Exchange Online PowerShell. El resultado de este cmdlet muestra los atributos de Azure AD sincronizados con Exchange Online.
 
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>Paso 1: Identificar un atributo de usuario para definir las agencias
 
@@ -87,7 +87,7 @@ Esta es una lista de atributos de usuario de Azure AD que puede usar para los l�
 - C (código de país de dos letras) <sup>*</sup>
 
   > [!NOTE]
-  > <sup>*</sup> Este atributo se asigna a la propiedad CountryOrRegion que se devuelve ejecutando el cmdlet **Get-User** en Exchange Online PowerShell. El cmdlet devuelve el nombre de país localizado, que se traduce a partir del código de país de dos letras. Para obtener más información, vea la descripción del parámetro CountryOrRegion en el artículo de referencia del cmdlet [Set-User.](https://docs.microsoft.com/powershell/module/exchange/set-user)
+  > <sup>*</sup> Este atributo se asigna a la propiedad CountryOrRegion que se devuelve ejecutando el cmdlet **Get-User** en Exchange Online PowerShell. El cmdlet devuelve el nombre de país localizado, que se traduce a partir del código de país de dos letras. Para obtener más información, vea la descripción del parámetro CountryOrRegion en el artículo de referencia del cmdlet [Set-User.](/powershell/module/exchange/set-user)
 
 Aunque hay más atributos de usuario disponibles, especialmente para los buzones de Exchange, los atributos enumerados anteriormente son los únicos admitidos actualmente por OneDrive.
   
@@ -198,7 +198,7 @@ Para crear un caso y asignar miembros:
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Búsqueda y exportación de contenido en entornos multigeómicos
 
-Los filtros de permisos de búsqueda también permiten controlar dónde se enruta el contenido para su exportación y qué centro de datos se puede buscar al buscar ubicaciones de contenido en un entorno [multigeómico de SharePoint.](https://go.microsoft.com/fwlink/?linkid=860840)
+Los filtros de permisos de búsqueda también permiten controlar dónde se enruta el contenido para su exportación y qué centro de datos se puede buscar al buscar ubicaciones de contenido en un entorno [multigeómico de SharePoint.](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md)
   
 - **Exportar resultados de búsqueda:** Puede exportar los resultados de búsqueda de buzones de Exchange, sitios de SharePoint y cuentas de OneDrive desde un centro de datos específico. Esto significa que puede especificar la ubicación del centro de datos desde la que se exportarán los resultados de la búsqueda.
 
@@ -267,7 +267,7 @@ Tenga en cuenta lo siguiente al buscar y exportar contenido en entornos multige�
 
 ## <a name="using-compliance-boundaries-for-sharepoint-hub-sites"></a>Uso de límites de cumplimiento para sitios concentradores de SharePoint
 
-[Los sitios concentradores de SharePoint](https://docs.microsoft.com/sharepoint/dev/features/hub-site/hub-site-overview) a menudo se alinean con los mismos límites geográficos o de agencia que los límites de cumplimiento de exhibición de documentos electrónicos. Esto significa que puede usar la propiedad id. de sitio del sitio concentrador para crear un límite de cumplimiento. Para ello, use el cmdlet [Get-SPOHubSite](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spohubsite#examples) en PowerShell de SharePoint Online para obtener el SiteId para el sitio central y, a continuación, use este valor para la propiedad id. del departamento para crear un filtro de permisos de búsqueda.
+[Los sitios concentradores de SharePoint](/sharepoint/dev/features/hub-site/hub-site-overview) a menudo se alinean con los mismos límites geográficos o de agencia que los límites de cumplimiento de exhibición de documentos electrónicos. Esto significa que puede usar la propiedad id. de sitio del sitio concentrador para crear un límite de cumplimiento. Para ello, use el cmdlet [Get-SPOHubSite](/powershell/module/sharepoint-online/get-spohubsite#examples) en PowerShell de SharePoint Online para obtener el SiteId para el sitio central y, a continuación, use este valor para la propiedad id. del departamento para crear un filtro de permisos de búsqueda.
 
 Use la siguiente sintaxis para crear un filtro de permisos de búsqueda para un sitio concentrador de SharePoint:
 
@@ -309,7 +309,7 @@ Tenga en cuenta las siguientes limitaciones al administrar casos e investigacion
 
 - No se recomienda usar filtros de exclusión (como usar en un filtro de permisos de búsqueda) para un límite de cumplimiento `-not()` basado en contenido. El uso de un filtro de exclusión puede tener resultados inesperados si no se ha indizado el contenido con atributos actualizados recientemente. 
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Quién puede crear y administrar filtros de permisos de búsqueda (New-ComplianceSecurityFilter y Set-ComplianceSecurityFilter cmdlets)?**
   

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre las nuevas funcionalidades de cifrado de mensajes de Office 365 que permiten la comunicación por correo electrónico protegido con personas de dentro y fuera de su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4102611d3be43a5bedffc83fba5c83c0b648ca42
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1519748c4bd535e0a3ea1cc3ee653e2c81e807bd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547622"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919396"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Configurar las nuevas capacidades de cifrado de mensajes
 
@@ -33,14 +33,14 @@ Siga los pasos que se indican a continuación para asegurarse de que las nuevas 
 
 ## <a name="verify-that-azure-rights-management-is-active"></a>Verificar que Azure Rights Management está habilitada
 
-Las nuevas funcionalidades de OME aprovechan las características de protección de [Azure Rights Management Services (Azure RMS)](https://docs.microsoft.com/azure/information-protection/what-is-information-protection), la tecnología usada por [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) para proteger los correos electrónicos y los documentos mediante controles de acceso y encriptación.
+Las nuevas funcionalidades de OME aprovechan las características de protección de [Azure Rights Management Services (Azure RMS)](/azure/information-protection/what-is-information-protection), la tecnología usada por [Azure Information Protection](/azure/information-protection/what-is-azure-rms) para proteger los correos electrónicos y los documentos mediante controles de acceso y encriptación.
 
-El único requisito previo para usar las nuevas funcionalidades de OME es que la funcionalidad [Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) debe estar activada en el espacio empresarial de su organización. Si lo está, Microsoft 365 activa automáticamente las nuevas funcionalidades de OME y no es necesario realizar ninguna acción.
+El único requisito previo para usar las nuevas funcionalidades de OME es que la funcionalidad [Azure Rights Management](/azure/information-protection/what-is-azure-rms) debe estar activada en el espacio empresarial de su organización. Si lo está, Microsoft 365 activa automáticamente las nuevas funcionalidades de OME y no es necesario realizar ninguna acción.
 
-Azure RMS también se activa automáticamente en la mayoría de los planes compatibles, por lo que probablemente tampoco tendrá que hacer nada al respecto. Vea [Activar Azure Rights Management](https://docs.microsoft.com/azure/information-protection/activate-service) para obtener más información.
+Azure RMS también se activa automáticamente en la mayoría de los planes compatibles, por lo que probablemente tampoco tendrá que hacer nada al respecto. Vea [Activar Azure Rights Management](/azure/information-protection/activate-service) para obtener más información.
 
 >[!IMPORTANT]
->Si usa los servicios de Active Directory Rights Management (AD RMS) con Exchange Online, tendrá que [migrar a Azure Information Protection](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms) antes de poder usar las nuevas funcionalidades de OME. OME no es compatible con AD RMS.  
+>Si usa los servicios de Active Directory Rights Management (AD RMS) con Exchange Online, tendrá que [migrar a Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) antes de poder usar las nuevas funcionalidades de OME. OME no es compatible con AD RMS.  
 
 Para obtener más información, vea:
 
@@ -51,20 +51,20 @@ Para obtener más información, vea:
 
 Si deshabilitó Azure RMS, o si no se activó automáticamente por algún motivo, puede activarlo manualmente en:
 
-- **El Centro de administración de Microsoft 365**: vea [Cómo activar Azure Rights Management desde el centro de administración](https://docs.microsoft.com/azure/information-protection/activate-office365) para obtener instrucciones.
-- **Azure Portal**: vea [Cómo activar Azure Rights Management desde Azure Portal](https://docs.microsoft.com/azure/information-protection/activate-azure) para obtener instrucciones.
+- **El Centro de administración de Microsoft 365**: vea [Cómo activar Azure Rights Management desde el centro de administración](/azure/information-protection/activate-office365) para obtener instrucciones.
+- **Azure Portal**: vea [Cómo activar Azure Rights Management desde Azure Portal](/azure/information-protection/activate-azure) para obtener instrucciones.
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Configurar la administración del espacio empresarial de Azure Information Protection
 
 Este paso es opcional. Permitir que Microsoft administre la clave raíz de Azure Information Protection es la configuración predeterminada y el procedimiento recomendado para la mayoría de organizaciones. Si este es el caso, no es necesario que realice ninguna acción.
 
-Hay muchos motivos, por ejemplo, los requisitos de cumplimiento, que pueden requerir la creación y administración de su propia clave raíz (también conocido como Bring your own key (BYOK)). Si este es el caso, le recomendamos que complete los pasos requeridos antes de configurar las nuevas funcionalidades de OME. Vea [Planificar e implementar la clave de espacio empresarial de Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key) para obtener más información.
+Hay muchos motivos, por ejemplo, los requisitos de cumplimiento, que pueden requerir la creación y administración de su propia clave raíz (también conocido como Bring your own key (BYOK)). Si este es el caso, le recomendamos que complete los pasos requeridos antes de configurar las nuevas funcionalidades de OME. Vea [Planificar e implementar la clave de espacio empresarial de Azure Information Protection](/information-protection/plan-design/plan-implement-tenant-key) para obtener más información.
 
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Comprobar la nueva configuración de OME en PowerShell de Exchange Online
 
-Puede comprobar que su espacio empresarial de Microsoft 365 está configurado correctamente para usar las nuevas funcionalidades de OME en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
+Puede comprobar que su espacio empresarial de Microsoft 365 está configurado correctamente para usar las nuevas funcionalidades de OME en [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
   
-1. [Conectarse a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) usando una cuenta con permisos de administrador global en su espacio empresarial de Microsoft 365.
+1. [Conectarse a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) usando una cuenta con permisos de administrador global en su espacio empresarial de Microsoft 365.
 
 2. Ejecute el cmdlet Get-IRMConfiguration.
 
@@ -102,7 +102,7 @@ Puede comprobar que su espacio empresarial de Microsoft 365 está configurado co
 
    - El nombre de su organización reemplazará a *Contoso*.
 
-   - Los nombres de las plantillas predeterminadas pueden diferir de los que se muestran arriba. Vea [Configurar y administrar plantillas para Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-templates) para obtener más información.
+   - Los nombres de las plantillas predeterminadas pueden diferir de los que se muestran arriba. Vea [Configurar y administrar plantillas para Azure Information Protection](/azure/information-protection/configure-policy-templates) para obtener más información.
 
 4. Ejecute el cmdlet Remove-PSSession para desconectarse del servicio Rights Management.
 

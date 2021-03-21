@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Cómo una organización que implementa la versión más reciente usa canales para las aplicaciones de Windows 10 y Microsoft 365.
-ms.openlocfilehash: fd1d8ddd342b2781470378c879ef70d2ba304316
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 29bda1651a83f0e043cf8a0d2a102c6c2e461bfd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686171"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919079"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Ejemplo de una amplia implementación para las versiones más recientes
 
@@ -61,7 +61,7 @@ En función de las metas de implementación rápida de la última versión, en e
 
 El objetivo general es llevar a cabo una implementación amplia de la versión más reciente de canal semianual después de la validación de los cambios en el canal de vista previa de la versión de un grupo de usuarios representativos y sus dispositivos.
 
-Para más información sobre los métodos de implementación y estrategias de Windows 10, vea [Implementación de Windows 10](https://docs.microsoft.com/windows/deployment/).
+Para más información sobre los métodos de implementación y estrategias de Windows 10, vea [Implementación de Windows 10](/windows/deployment/).
 
 | Etapa | Canal | Grupo de implementación |
 |:-------|:-------|:-----|
@@ -85,7 +85,7 @@ Proceso de actualización continuada:
 
 El objetivo general es llevar a cabo una implementación amplia de la última versión del canal actual después de la validación de los cambios del canal actual (vista previa) por parte de un grupo de usuarios representativos.
 
-Para más información sobre las estrategias y los métodos de implementación de Aplicaciones 365 de Microsoft, vea [Implementación de Aplicaciones de Microsoft 365](https://docs.microsoft.com/deployoffice/plan-office-365-proplus).
+Para más información sobre las estrategias y los métodos de implementación de Aplicaciones 365 de Microsoft, vea [Implementación de Aplicaciones de Microsoft 365](/deployoffice/plan-office-365-proplus).
 
 | Etapa | Canal | Grupo de implementación |
 |:-------|:-------|:-----|

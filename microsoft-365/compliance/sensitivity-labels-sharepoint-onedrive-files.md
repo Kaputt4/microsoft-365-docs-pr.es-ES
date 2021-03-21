@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con etiquetas de confidencialidad para archivos de Word, Excel y PowerPoint en SharePoint y OneDrive.
-ms.openlocfilehash: 91322ff3a1dbe2e6b5506e1e3d8a49156b005d7b
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: b4c6a0e3bbe9bae60bc3ccc7fceea04c65382373
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407288"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919546"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Guía de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Habilite etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive para que los usuarios puedan aplicar [las](sensitivity-labels.md) etiquetas de confidencialidad en Office en la web. Cuando esta característica está habilitada,  los usuarios verán el botón Confidencialidad en la cinta de opciones para que puedan aplicar etiquetas y ver cualquier nombre de etiqueta aplicado en la barra de estado.
 
@@ -64,9 +64,9 @@ Siempre tiene la opción de deshabilitar las etiquetas de confidencialidad de lo
 
 Si actualmente está protegiendo documentos en SharePoint mediante SharePoint Information Rights Management (IRM), asegúrese de comprobar la sección Administración de derechos de información [(IRM)](#sharepoint-information-rights-management-irm-and-sensitivity-labels) de SharePoint y etiquetas de confidencialidad en esta página. 
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
-Estas nuevas funcionalidades solo funcionan con [etiquetas de](sensitivity-labels.md) confidencialidad. Si actualmente tiene etiquetas de Azure Information Protection, migre primero a etiquetas de confidencialidad para que pueda habilitar estas características para los nuevos archivos que cargue. Para obtener instrucciones, consulte [How to migrate Azure Information Protection labels to unified sensitivity labels](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
+Estas nuevas funcionalidades solo funcionan con [etiquetas de](sensitivity-labels.md) confidencialidad. Si actualmente tiene etiquetas de Azure Information Protection, migre primero a etiquetas de confidencialidad para que pueda habilitar estas características para los nuevos archivos que cargue. Para obtener instrucciones, consulte [How to migrate Azure Information Protection labels to unified sensitivity labels](/azure/information-protection/configure-policy-migrate-labels).
 
 Usa la versión 19.002.0121.0008 o posterior de la aplicación de sincronización de OneDrive en Windows y la versión 19.002.0107.0008 o posterior en Mac. Ambas versiones se lanzaron el 28 de enero de 2019 y actualmente se lanzan a todos los anillos. Para obtener más información, vea las [notas de la versión de OneDrive](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). Después de habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive, se pedirá a los usuarios que ejecuten una versión anterior de la aplicación de sincronización que la actualicen.
 
@@ -77,14 +77,14 @@ Usa la versión 19.002.0121.0008 o posterior de la aplicación de sincronizació
 
 - SharePoint y OneDrive no aplican automáticamente etiquetas de confidencialidad a archivos existentes que ya haya cifrado con etiquetas de Azure Information Protection. En su lugar, para que las características funcionen después de habilitar las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive, complete estas tareas:
     
-    1. Asegúrese de haber migrado las etiquetas de [](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) a etiquetas de confidencialidad y publicarlas desde el Centro de cumplimiento de Microsoft 365 o el Centro de administración de etiquetado equivalente.
+    1. Asegúrese de haber migrado las etiquetas de [](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) [Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels) a etiquetas de confidencialidad y publicarlas desde el Centro de cumplimiento de Microsoft 365 o el Centro de administración de etiquetado equivalente.
     
     2. Descargue los archivos y, a continuación, cárbalos en SharePoint.
 
 - SharePoint y OneDrive no pueden procesar archivos cifrados cuando la etiqueta que aplicó el cifrado tiene cualquiera de las siguientes [configuraciones para el cifrado:](encryption-sensitivity-labels.md#configure-encryption-settings)
-    - **Permitir que los usuarios asignen** permisos al aplicar la etiqueta y la casilla **En Word, PowerPoint** y Excel, pida a los usuarios que especifiquen permisos. Esta configuración a veces se conoce como "permisos definidos por el usuario".
-    - **El acceso de los usuarios** al contenido expira se establece en un valor distinto de **Never**.
-    - **El cifrado de clave doble** está seleccionado.
+    - **Permitir que los usuarios asignen permisos cuando apliquen la etiqueta** y la casilla **En Word, PowerPoint y Excel, pedir a los usuarios que especifiquen permisos** seleccionada. Esta configuración a veces se conoce como "permisos definidos por el usuario".
+    - **El acceso del usuario al contenido expira** establecido en un valor distinto de **Nunca**.
+    - **Cifrado de clave doble** seleccionado.
     
     Para las etiquetas con cualquiera de estas configuraciones de cifrado, las etiquetas no se muestran a los usuarios de Office en la web. Además, las nuevas funcionalidades no se pueden usar con documentos etiquetados que ya tienen esta configuración de cifrado. Por ejemplo, estos documentos no se devolverán en los resultados de búsqueda, incluso si se actualizan.
 
@@ -139,7 +139,7 @@ Esta opción es la forma más sencilla de habilitar etiquetas de confidencialida
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>Usar PowerShell para habilitar la compatibilidad con etiquetas de confidencialidad
 
-Como alternativa al uso del centro de cumplimiento, puede habilitar la compatibilidad con etiquetas de confidencialidad mediante el cmdlet [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) de PowerShell de SharePoint Online. 
+Como alternativa al uso del centro de cumplimiento, puede habilitar la compatibilidad con etiquetas de confidencialidad mediante el cmdlet [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) de PowerShell de SharePoint Online. 
 
 Si tiene Microsoft 365 Multi-Geo, debe usar PowerShell para habilitar esta compatibilidad para todas las ubicaciones geográficas.
 
@@ -165,11 +165,11 @@ Antes de ejecutar el comando de PowerShell para habilitar etiquetas de confidenc
 
 #### <a name="run-the-powershell-command-to-enable-support-for-sensitivity-labels"></a>Ejecute el comando de PowerShell para habilitar la compatibilidad con etiquetas de confidencialidad
 
-Para habilitar las nuevas funcionalidades, use el cmdlet [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) con el *parámetro EnableAIPIntegration:*
+Para habilitar las nuevas funcionalidades, use el cmdlet [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) con el *parámetro EnableAIPIntegration:*
 
-1. Con una cuenta profesional o educativa que tenga privilegios de administrador global o administrador de SharePoint en Microsoft 365, conéctese a SharePoint. Para saber cómo hacerlo, consulte [Introducción al Shell de administración de SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+1. Con una cuenta profesional o educativa que tenga privilegios de administrador global o administrador de SharePoint en Microsoft 365, conéctese a SharePoint. Para saber cómo hacerlo, consulte [Introducción al Shell de administración de SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
     
-    Nota: Si tiene Microsoft 365 Multi-Geo, use el parámetro -Url con [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice)y especifique la dirección URL del sitio del Centro de administración de SharePoint Online para una de las ubicaciones geográficas.
+    Nota: Si tiene Microsoft 365 Multi-Geo, use el parámetro -Url con [Connect-SPOService](/powershell/module/sharepoint-online/connect-sposervice)y especifique la dirección URL del sitio del Centro de administración de SharePoint Online para una de las ubicaciones geográficas.
 
 2. Ejecute el siguiente comando y presione **Y** para confirmar:
 
@@ -194,7 +194,7 @@ Dado que el retraso de replicación es de solo una hora para las nuevas etiqueta
 
 [SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md) es una tecnología anterior para proteger los archivos en el nivel de lista y biblioteca mediante la aplicación de cifrado y restricciones cuando se descargan archivos. Esta tecnología de protección anterior está diseñada para impedir que los usuarios no autorizados abran el archivo mientras están fuera de SharePoint.
 
-En comparación, las etiquetas de confidencialidad proporcionan la configuración de protección de los marcados visuales (encabezados, pies de página, marcas de agua) además del cifrado. La configuración de cifrado [](https://docs.microsoft.com/azure/information-protection/configure-usage-rights) admite toda la gama de derechos de uso para restringir lo que los usuarios pueden hacer con el contenido y se admiten las mismas etiquetas de confidencialidad para [muchos escenarios.](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels) El uso del mismo método de protección con una configuración coherente entre cargas de trabajo y aplicaciones da como resultado una estrategia de protección coherente.
+En comparación, las etiquetas de confidencialidad proporcionan la configuración de protección de los marcados visuales (encabezados, pies de página, marcas de agua) además del cifrado. La configuración de cifrado [](/azure/information-protection/configure-usage-rights) admite toda la gama de derechos de uso para restringir lo que los usuarios pueden hacer con el contenido y se admiten las mismas etiquetas de confidencialidad para [muchos escenarios.](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels) El uso del mismo método de protección con una configuración coherente entre cargas de trabajo y aplicaciones da como resultado una estrategia de protección coherente.
 
 Sin embargo, puede usar ambas soluciones de protección juntos y el comportamiento es el siguiente: 
 
@@ -219,7 +219,7 @@ Por ejemplo, para buscar todos los documentos etiquetados como "Confidencial" y 
 
 `InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`    
 
-Para obtener los GUID de las etiquetas de confidencialidad, use el cmdlet [Get-Label:](https://docs.microsoft.com/powershell/module/exchange/get-label)  
+Para obtener los GUID de las etiquetas de confidencialidad, use el cmdlet [Get-Label:](/powershell/module/exchange/get-label)    
 
 1. En primer lugar, [conéctese a PowerShell del Centro de seguridad y cumplimiento de Office 365](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
    
@@ -231,13 +231,13 @@ Para obtener los GUID de las etiquetas de confidencialidad, use el cmdlet [Get-L
     Get-Label |ft Name, Guid    
     ``` 
 
-Para obtener más información acerca del uso de propiedades administradas, vea [Manage the search schema in SharePoint](https://docs.microsoft.com/sharepoint/manage-search-schema).
+Para obtener más información acerca del uso de propiedades administradas, vea [Manage the search schema in SharePoint](/sharepoint/manage-search-schema).
 
 ## <a name="remove-encryption-for-a-labeled-document"></a>Quitar el cifrado de un documento etiquetado
 
-Es posible que haya raras ocasiones en las que un administrador de SharePoint necesite quitar el cifrado de un documento almacenado en SharePoint. Cualquier usuario que tenga asignado el derecho de uso de [Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) de Exportar o Control total para ese documento puede quitar el cifrado aplicado por el servicio Azure Rights Management de Azure Information Protection. Por ejemplo, los usuarios con cualquiera de estos derechos de uso pueden reemplazar una etiqueta que aplica cifrado con una etiqueta sin cifrado. Como alternativa, un [superusual](https://docs.microsoft.com/azure/information-protection/configure-super-users) podría descargar el archivo y guardar una copia local sin el cifrado.
+Es posible que haya raras ocasiones en las que un administrador de SharePoint necesite quitar el cifrado de un documento almacenado en SharePoint. Cualquier usuario que tenga asignado el derecho de uso de [Rights Management](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) de Exportar o Control total para ese documento puede quitar el cifrado aplicado por el servicio Azure Rights Management de Azure Information Protection. Por ejemplo, los usuarios con cualquiera de estos derechos de uso pueden reemplazar una etiqueta que aplica cifrado con una etiqueta sin cifrado. Como alternativa, un [superusual](/azure/information-protection/configure-super-users) podría descargar el archivo y guardar una copia local sin el cifrado.
 
-Como alternativa, un administrador global o un administrador de [SharePoint](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) pueden ejecutar el cmdlet [Unlock-SPOSensitivityLabelEncryptedFile,](https://docs.microsoft.com/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) que quita tanto la etiqueta de confidencialidad como el cifrado. Este cmdlet se ejecuta incluso si el administrador no tiene permisos de acceso al sitio o archivo, o si el servicio Azure Rights Management no está disponible. 
+Como alternativa, un administrador global o un administrador de [SharePoint](/sharepoint/sharepoint-admin-role) pueden ejecutar el cmdlet [Unlock-SPOSensitivityLabelEncryptedFile,](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) que quita tanto la etiqueta de confidencialidad como el cifrado. Este cmdlet se ejecuta incluso si el administrador no tiene permisos de acceso al sitio o archivo, o si el servicio Azure Rights Management no está disponible. 
 
 Por ejemplo:
 
@@ -251,13 +251,13 @@ Requisitos:
 
 - El cifrado se ha aplicado mediante una etiqueta de confidencialidad con la configuración de cifrado definida por el administrador (la configuración de etiqueta [Asignar permisos ahora).](encryption-sensitivity-labels.md#assign-permissions-now) [El cifrado de clave](encryption-sensitivity-labels.md#double-key-encryption) doble no es compatible con este cmdlet.
 
-El texto de justificación [](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) se agrega al evento de auditoría de **la** etiqueta de confidencialidad Quitado del archivo y la acción de descifrado también se registra en el registro de uso de protección de [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/log-analyze-usage).
+El texto de justificación [](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) se agrega al evento de auditoría de **la** etiqueta de confidencialidad Quitado del archivo y la acción de descifrado también se registra en el registro de uso de protección de [Azure Information Protection](/azure/information-protection/log-analyze-usage).
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>Cómo deshabilitar etiquetas de confidencialidad para SharePoint y OneDrive (no participar)
 
 Si deshabilita estas nuevas funcionalidades, los archivos que cargó después de habilitar las etiquetas de confidencialidad para SharePoint y OneDrive seguirán estando protegidos por la etiqueta porque la configuración de etiquetas se sigue aplicando. Al aplicar etiquetas de confidencialidad a los nuevos archivos después de deshabilitar estas nuevas funcionalidades, la búsqueda de texto completo, la exhibición de documentos electrónicos y la coautoría ya no funcionarán.
 
-Para deshabilitar estas nuevas funcionalidades, debe usar PowerShell. Mediante el Shell de administración de SharePoint Online y el cmdlet [Set-SPOTenant,](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) especifique el mismo parámetro *EnableAIPIntegration* como se describe en la sección [Usar PowerShell](#use-powershell-to-enable-support-for-sensitivity-labels) para habilitar la compatibilidad con etiquetas de confidencialidad. Pero esta vez, establece el valor del parámetro en false y presiona **Y** para confirmar:
+Para deshabilitar estas nuevas funcionalidades, debe usar PowerShell. Mediante el Shell de administración de SharePoint Online y el cmdlet [Set-SPOTenant,](/powershell/module/sharepoint-online/set-spotenant) especifique el mismo parámetro *EnableAIPIntegration* como se describe en la sección [Usar PowerShell](#use-powershell-to-enable-support-for-sensitivity-labels) para habilitar la compatibilidad con etiquetas de confidencialidad. Pero esta vez, establece el valor del parámetro en false y presiona **Y** para confirmar:
 
 ```PowerShell
 Set-SPOTenant -EnableAIPIntegration $false

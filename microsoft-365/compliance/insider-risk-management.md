@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: b98d2385ee0ae130df115c85010366a5100ab78d
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 30363b544d9016b10dd9aad463d33c40065da0f3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838451"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919816"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Información sobre la administración de riesgos de insider en Microsoft 365
 
@@ -118,14 +118,13 @@ Al seleccionar un caso en el panel de casos, se abre el caso para su investigaci
 
 Además, el nuevo registro de [auditoría (versión preliminar)](insider-risk-management-audit-log.md) permite mantenerse informado de las acciones realizadas en las características de administración de riesgos internas. Este recurso permite una revisión independiente de las acciones realizadas por los usuarios asignados a uno o varios grupos de roles de administración de riesgos insider.
 
-### <a name="action"></a>Acción
+### <a name="action"></a>Action
 
 Una vez que se investigan los casos, los revisores pueden actuar rápidamente para resolver el caso o colaborar con otras partes interesadas en riesgos de la organización. Si los usuarios infringen accidentalmente o inadvertidamente las condiciones de la directiva, se puede enviar un aviso simple al usuario desde plantillas de aviso que puede personalizar para su organización. Estos avisos pueden servir como recordatorios sencillos o pueden dirigir al usuario a cursos de actualización o instrucciones para ayudar a evitar comportamientos de riesgo futuros. Para obtener más información, vea Plantillas de aviso de [administración de riesgos de Insider](insider-risk-management-notices.md).
 
 En las situaciones más graves, es posible que deba compartir la información de casos de administración de riesgos confidenciales con otros revisores o servicios de su organización. La administración de riesgos de Insider está estrechamente integrada con otras soluciones de cumplimiento de Microsoft 365 para ayudarle con la resolución de riesgos de un extremo a otro.
 
 - Exhibición de documentos electrónicos avanzada: el escalado de un caso de investigación permite transferir datos y la administración del caso a **eDiscovery** avanzada en Microsoft 365. La exhibición de documentos electrónicos avanzada proporciona un flujo de trabajo completo para conservar, recopilar, revisar, analizar y exportar contenido que responde a las investigaciones internas y externas de la organización. Permite a los equipos legales administrar todo el flujo de trabajo de notificación de retención legal. Para obtener más información sobre los casos de exhibición de documentos electrónicos avanzados, vea [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
-- **ServiceNow (versión preliminar):** ServiceNow es una popular plataforma informática en la nube que ayuda a las organizaciones a administrar flujos de trabajo digitales para operaciones empresariales. La administración de riesgos de Insider admite el uso compartido de alertas de casos con su servicio ServiceNow y le permite crear incidentes y cambiar solicitudes relacionadas con casos de riesgo de insider individuales. Para obtener más información sobre cómo compartir información de alertas con ServiceNow, vea [Compartir un caso con ServiceNow](insider-risk-management-cases.md#share-the-case).
 - Integración de api de administración de **Office 365 (versión preliminar):** la administración de riesgos de Insider admite la exportación de información de alertas a los servicios de administración de eventos y de información de seguridad (SIEM) a través de las API de administración de Office 365. Tener acceso a la información de alertas en la plataforma lo mejor que se adapta a los procesos de riesgo de su organización le ofrece más flexibilidad en cómo actuar en las actividades de riesgo. Para obtener más información sobre cómo exportar información de alertas con api de administración de Office 365, vea [Exportar alertas](insider-risk-management-settings.md#export-alerts-preview).
 
 >[!NOTE]

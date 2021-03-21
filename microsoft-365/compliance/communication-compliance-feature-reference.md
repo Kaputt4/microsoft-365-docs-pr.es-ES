@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 30ad9bf968fa91218d15a6f71785d5299e664ddc
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 48cc75276e4e3791fa16520df5a4c392c23a0cd5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838503"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919916"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
@@ -88,7 +88,7 @@ Para actualizar los roles de estos usuarios para la nueva estructura de grupos d
 
 ## <a name="supervised-users"></a>Usuarios supervisados
 
-Antes de empezar a usar el cumplimiento de la comunicación, debe determinar quién necesita revisar sus comunicaciones. En la directiva, las direcciones de correo electrónico de usuario identifican personas o grupos de personas que se deben supervisar. Algunos ejemplos de estos grupos son Grupos de Microsoft 365, listas de distribución basadas en Exchange, comunidades de Yammer y canales de Microsoft Teams. También puede excluir usuarios o grupos específicos del examen con un grupo de exclusión específico o una lista de grupos.
+Antes de empezar a usar el cumplimiento de la comunicación, debe determinar quién necesita revisar sus comunicaciones. En la directiva, las direcciones de correo electrónico de usuario identifican personas o grupos de personas que se deben supervisar. Algunos ejemplos de estos grupos son Grupos de Microsoft 365, listas de distribución basadas en Exchange, comunidades de Yammer y canales de Microsoft Teams. También puede excluir usuarios o grupos específicos del examen con un grupo de exclusión específico o una lista de grupos. Para obtener más información acerca de los tipos de grupos admitidos en las directivas de cumplimiento de comunicaciones, vea [Introducción al cumplimiento de comunicaciones.](communication-compliance-configure.md#step-3-optional-set-up-groups-for-communication-compliance)
 
 >[!IMPORTANT]
 >Los usuarios cubiertos por directivas de cumplimiento de comunicaciones deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o estar incluidos en una suscripción a Office 365 Enterprise E5. Si no tiene un plan de Enterprise E5 existente y desea probar el cumplimiento de las comunicaciones, puede registrarse para obtener una versión de prueba de [Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
@@ -112,7 +112,7 @@ Con las directivas de cumplimiento de comunicaciones, puede elegir examinar mens
 - **Microsoft Teams:** se pueden examinar las comunicaciones de chat en canales públicos y privados de Microsoft Teams y chats individuales. Cuando los usuarios se asignan a una directiva de cumplimiento de comunicaciones con la cobertura de Microsoft Teams seleccionada, las comunicaciones de chat para los usuarios se supervisan automáticamente en todos los Microsoft Teams donde los usuarios son miembros. La cobertura de Microsoft Teams se incluye automáticamente para plantillas de directiva predefinidas y se selecciona de forma predeterminada en la plantilla de directiva personalizada. Los chats de Teams que coincidan con las condiciones de la directiva de cumplimiento de comunicaciones pueden tardar hasta 48 horas en procesarse. Use las siguientes configuraciones de administración de grupos para supervisar los chats de usuario individuales y las comunicaciones de canal en Teams:
 
     - **Para las comunicaciones de chat de Teams:** Asignar usuarios individuales o asignar un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la directiva de cumplimiento de comunicaciones. Esta configuración es para relaciones de usuario/chat de uno a uno o de uno a varios.
-    - **Para las comunicaciones del Canal de Teams:** Asigna todos los canales de Microsoft Teams o grupos de Microsoft 365 que quieras examinar que contengan un usuario específico a la directiva de cumplimiento de comunicaciones. Si agrega el mismo usuario a otros canales de Microsoft Teams o grupos de Microsoft 365, asegúrese de agregar estos nuevos canales y grupos a la directiva de cumplimiento de comunicaciones.
+    - **Para las comunicaciones del Canal de Teams:** Asigna todos los canales de Microsoft Teams o grupos de Microsoft 365 que quieras examinar que contengan un usuario específico a la directiva de cumplimiento de comunicaciones. Si agrega el mismo usuario a otros canales de Microsoft Teams o grupos de Microsoft 365, asegúrese de agregar estos nuevos canales y grupos a la directiva de cumplimiento de comunicaciones. Si algún miembro del canal es un usuario  supervisado dentro de una directiva y la dirección de entrada está configurada en una directiva, todos los mensajes enviados dentro del canal están sujetos a revisión y posibles coincidencias de directiva (incluso para los usuarios del canal que no están supervisados explícitamente). Por ejemplo, el usuario A es el propietario o miembro de un canal. El usuario B y el usuario C son miembros del mismo canal y usan un idioma que coincide con la directiva de idioma ofensivo que supervisa solo al usuario A. El usuario B y el usuario C crean coincidencias de directiva para las conversaciones dentro del canal aunque no estén supervisadas directamente en la directiva de idioma ofensivo. Las conversaciones de Teams entre el usuario B y el usuario C que están fuera del canal que incluye el usuario A no estarían sujetas a la directiva de idioma ofensivo que incluye el usuario A. Para excluir a los miembros del canal de la supervisión cuando  otros miembros del canal se supervisan explícitamente, desactive la configuración Dirección de comunicación entrante en la directiva de cumplimiento de comunicaciones aplicable.
     - Para las comunicaciones de chat de Teams con entornos de correo electrónico **híbridos:** el cumplimiento de las comunicaciones puede supervisar los mensajes de chat de los usuarios de organizaciones con una implementación local de Exchange o un proveedor de correo electrónico externo que haya habilitado Microsoft Teams. Debe crear un grupo de distribución para que los usuarios con buzones locales o externos supervisen. Al crear una directiva de cumplimiento de comunicaciones, asignará este grupo de distribución como la selección de usuarios y grupos supervisados en el asistente para directivas. 
 
     >[!IMPORTANT]
@@ -428,7 +428,7 @@ Siga estos pasos para eliminar un flujo de Power Automate:
 4. En la **página Flujos de Power Automate,** seleccione flujo para eliminar. Seleccione **Eliminar** en el menú control de flujo.
 5. En el cuadro de diálogo de confirmación de eliminación, seleccione **Eliminar** para quitar el flujo o **seleccione Cancelar** para salir de la acción de eliminación.
 
-## <a name="reports-preview"></a>Informes (versión preliminar)
+## <a name="reports"></a>Informes
 
 El nuevo **panel de** informes es la ubicación central para ver todos los informes de cumplimiento de comunicaciones. Los widgets de informe proporcionan una vista rápida de los conocimientos más necesarios para una evaluación general del estado de las actividades de cumplimiento de comunicaciones. La información contenida en los widgets del informe no es exportable. Los informes detallados proporcionan información detallada relacionada con áreas específicas de cumplimiento de comunicaciones y ofrecen la capacidad de filtrar, agrupar, ordenar y exportar información durante la revisión.
 

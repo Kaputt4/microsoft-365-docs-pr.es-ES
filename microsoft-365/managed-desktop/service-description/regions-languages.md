@@ -1,38 +1,38 @@
 ---
 title: Idiomas y regiones compatibles
-description: Regiones e idiomas admitidos por escritorio administrado de Microsoft
+description: Regiones e idiomas admitidos por Microsoft Managed Desktop
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d2aed005f0f1497cc9b545f48a8cb1dae3c90fb2
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 36766b162c703c87967a017eac84945dd936ca2b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841392"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920413"
 ---
-# <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Idiomas y regiones compatibles con escritorio administrado de Microsoft
+# <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Regiones e idiomas admitidos por Microsoft Managed Desktop
 
-En este artículo se proporcionan detalles sobre las regiones y los idiomas compatibles con el Escritorio administrado de Microsoft y las regiones donde puede usarlo.
+En este artículo se proporcionan detalles sobre las regiones y los idiomas admitidos por Microsoft Managed Desktop y las regiones donde puede usarlo.
 
 ## <a name="supported-languages"></a>Idiomas admitidos
 
-El inglés es el único idioma disponible para los usuarios de Escritorio administrado de Microsoft. Esta directiva incluye todas las interfaces de usuario para usuarios y administradores, así como todas las interacciones con el soporte técnico de [administradores](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) y [el soporte de usuarios.](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support)
+El inglés es el único idioma disponible para los usuarios de Microsoft Managed Desktop. Esta directiva incluye todas las interfaces de usuario para usuarios y administradores y todas las interacciones con el soporte técnico de administración [y](../working-with-managed-desktop/admin-support.md) la compatibilidad [con usuarios.](../working-with-managed-desktop/end-user-support.md)
 
 
-Puede seguir utilizando dispositivos administrados fuera de las regiones de habla inglesa sin interrupciones en el servicio de Escritorio administrado de Microsoft. Por ejemplo, un empleado basado en el Reino Unido puede trabajar de forma segura y recibir actualizaciones en su dispositivo administrado mientras viaja a Asia, Europa o América del Sur. 
+Todavía puede usar dispositivos administrados fuera de las regiones de habla inglesa sin interrumpir el servicio de Escritorio administrado de Microsoft. Por ejemplo, un empleado basado en el Reino Unido puede trabajar de forma segura y recibir actualizaciones en su dispositivo administrado mientras viaja a Asia, Europa o Sudamérica. 
 
-Para obtener más información acerca de la compatibilidad de usuarios con Escritorio administrado de Microsoft, vea [Soporte técnico para Escritorio administrado de Microsoft.](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support)
+Para obtener más información acerca de la compatibilidad de usuarios con Microsoft Managed Desktop, consulte [Support for Microsoft Managed Desktop](./support.md).
 
 ## <a name="availability-of-the-service"></a>Disponibilidad del servicio
 
-Las organizaciones de los siguientes países pueden suscribirse al Escritorio administrado de Microsoft:
+Las organizaciones de los siguientes países pueden suscribirse a Microsoft Managed Desktop:
 
 - Estados Unidos
-- Canadá (excluido Quebec)
+- Canadá (excluyendo Quebec)
 - Reino Unido
 - Irlanda
 - Bélgica
@@ -46,4 +46,4 @@ Las organizaciones de los siguientes países pueden suscribirse al Escritorio ad
 - Australia
 - Nueva Zelanda
 
-Tanto los usuarios como los administradores de estas regiones deben usar el inglés para sus dispositivos y herramientas de administración. 
+Tanto los usuarios como los administradores de estas regiones deben usar el inglés para sus dispositivos y herramientas de administración.

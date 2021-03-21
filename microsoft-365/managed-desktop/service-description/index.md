@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b5c5757c5e07e6edd546c0553028ccf56eb1b4f8
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: c51ebdbcd2a8d6d13f5ba0009d470581e317a365
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840318"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920437"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Descripción del servicio Escritorio administrado de Microsoft
 
@@ -23,13 +23,13 @@ Escritorio administrado de Microsoft es un servicio que proporciona a los usuari
 - Configuración de dispositivos
 - Características para proteger a los usuarios y los dispositivos, como Windows Hello, BitLocker, SecureBoot y el modo de seguridad basado en la virtualización de acuerdo con los procedimientos recomendados de Microsoft
 - Servicios de supervisión y corrección de seguridad de dispositivos
-- Compatibilidad de aplicaciones, a través de la aplicación [Desktop asegurar](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
+- Compatibilidad de aplicaciones, a través de la aplicación [Desktop asegurar](/fasttrack/win-10-desktop-app-assure)
 - Administración de actualizaciones para Windows 10 y Aplicaciones de Microsoft 365 para empresas
 - Datos de análisis sobre el uso de dispositivos y aplicaciones
 - Soporte técnico de TI para usuarios
 - Soporte operacional para profesionales de TI
 
-Para más información sobre los servicios específicos incluidos en el Escritorio administrado de Microsoft, vea otros artículos en esta sección. Si ya ha decidido que Escritorio administrado de Microsoft es para usted, los artículos de [Prepararse para la inscripción en el Escritorio administrado de Microsoft](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) le proporcionan los pasos necesarios para prepararse para unirse al servicio.
+Para más información sobre los servicios específicos incluidos en el Escritorio administrado de Microsoft, vea otros artículos en esta sección. Si ya ha decidido que Escritorio administrado de Microsoft es para usted, los artículos de [Prepararse para la inscripción en el Escritorio administrado de Microsoft](../get-ready/index.md) le proporcionan los pasos necesarios para prepararse para unirse al servicio.
 
 - [Regiones e idiomas admitidos para Escritorio administrado de Microsoft](regions-languages.md) explica qué idiomas y regiones son compatibles con el servicio.
 - Para garantizar la mejor experiencia para los usuarios, Escritorio administrado de Microsoft solo admite ciertos dispositivos. [Dispositivos de programa](device-list.md) especifica los modelos de dispositivos y configuraciones exactas que puede usar con el servicio, independientemente de si usted los proporciona o de si trabaja con un partner.

@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 774f03ebbf12a8bfbf4e2409735352b83e6963aa
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a5eab2aaecd3d0c339fdc2e58af17dcfd9feb199
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421547"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919886"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Información sobre el cumplimiento de la comunicación en Microsoft 365
 
@@ -38,6 +38,13 @@ Las directivas de cumplimiento de comunicaciones en Microsoft 365 le ayudan a su
 - Cumplimiento normativo y riesgo de multas
 
 Además, puede haber una separación de tareas entre los administradores de TI y el equipo de administración de cumplimiento. El cumplimiento de la comunicación admite la separación entre la configuración de directivas y la investigación y revisión de mensajes. Por ejemplo, el grupo de TI de su organización puede ser responsable de configurar los permisos de roles de cumplimiento de comunicación, los grupos y las directivas, y los investigadores y revisores pueden ser responsables de las acciones de evaluación, evaluación y mitigación de mensajes.
+
+Para obtener las últimas presentaciones de Ignite para el cumplimiento de las comunicaciones, vea los siguientes vídeos:
+
+- [Fomentar una cultura de seguridad e inclusión con el cumplimiento de las comunicaciones](https://www.youtube.com/watch?v=oLVzxcaef3w)
+- [Obtenga información sobre cómo reducir los riesgos de comunicación dentro de su organización](https://www.youtube.com/watch?v=vzARb1YaxGo)
+- [Cumplir los requisitos de cumplimiento normativo con el cumplimiento de las comunicaciones](https://www.youtube.com/watch?v=gagOhtCBfgU)
+- [Mejor con Microsoft Teams: obtenga más información sobre las últimas características integradas nativas de Teams en el cumplimiento de la comunicación](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
 Para obtener una introducción rápida al cumplimiento de la comunicación, vea el vídeo Detectar acoso en el lugar de trabajo y responder con el cumplimiento de la comunicación en [Microsoft 365](https://youtu.be/z33ji7a7Zho) en el canal [de Microsoft Mechanics](https://www.youtube.com/user/OfficeGarageSeries).
 
@@ -133,7 +140,7 @@ Puede elegir entre las siguientes plantillas de directiva en el Centro de cumpli
 - **Conflicto de interés:** use esta plantilla para crear rápidamente una directiva para supervisar las comunicaciones entre dos grupos o dos usuarios para ayudar a evitar conflictos de interés.
 - **Directiva personalizada:** use esta plantilla para configurar canales de comunicación específicos, condiciones de detección individuales y la cantidad de contenido que se va a supervisar y revisar en la organización.
 
-### <a name="investigate"></a>Investigar
+### <a name="investigate"></a>Investigación
 
 En este paso, profundizará en los problemas detectados como coincidencia de las directivas de cumplimiento de comunicación. Este paso incluye las siguientes acciones disponibles en el Centro de cumplimiento de Microsoft 365:
 

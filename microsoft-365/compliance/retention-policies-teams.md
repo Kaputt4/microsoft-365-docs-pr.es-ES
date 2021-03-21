@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: ec4ca9a79ee3b5674e1837d14cea4ee504cb57d5
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 985131900a5e07188c0af641fb86f794d558f80b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838215"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919786"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Si ve un mensaje en Teams que indica que los chats y los mensajes se han eliminado debido a una directiva de retención, vea [Mensajes de Teams sobre directivas de retención](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
@@ -43,7 +43,7 @@ Para otras cargas de trabajo, vea:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Qué se incluye para la retención y eliminación
 
-Los siguientes elementos de Teams se pueden retener y eliminar mediante directivas de retención para Teams: mensajes de chats y mensajes de canal, incluidas imágenes insertadas, tablas, vínculos de hipertexto y vínculos a otros mensajes y archivos de Teams, y [contenido de tarjetas](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards). Los mensajes de chat incluyen todos los nombres de los usuarios en el chat y los mensajes de canal incluyen el nombre del equipo y el título del mensaje (si se proporcionó). 
+Los siguientes elementos de Teams se pueden retener y eliminar mediante directivas de retención para Teams: mensajes de chats y mensajes de canal, incluidas imágenes insertadas, tablas, vínculos de hipertexto y vínculos a otros mensajes y archivos de Teams, y [contenido de tarjetas](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Los mensajes de chat incluyen todos los nombres de los usuarios en el chat y los mensajes de canal incluyen el nombre del equipo y el título del mensaje (si se proporcionó). 
 
 > [!NOTE]
 > Incluir contenido de tarjetas es una adición reciente y ahora se ha lanzado completamente a los inquilinos. Para obtener más información, consulte las [funcionalidades de cumplimiento de Microsoft 365 para contenido de tarjetas adaptables en las aplicaciones de Teams que están disponibles ahora](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
@@ -64,7 +64,7 @@ Estos buzones se muestran según su atributo RecipientTypeDetails:
 
 Otros tipos de buzones, como RoomMailbox —que se usa en las salas de conferencias de Teams— no son compatibles con las directivas de retención de Teams.
 
-Es importante entender que Teams utilizan un servicio de chat impulsado por Azure que también almacena estos datos, y por defecto este servicio almacena los datos indefinidamente. Por este motivo, si necesita eliminar mensajes de Teams por motivos de cumplimiento, le recomendamos que use directivas de retención para Teams que puedan eliminar de forma permanente estos datos tanto de los buzones de Exchange como del servicio de chat subyacente con tecnología de Azure. Para obtener más información sobre la arquitectura subyacente, consulte[Seguridad y cumplimiento en Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258) y, específicamente, la sección [Arquitectura de protección de la información](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
+Es importante entender que Teams utilizan un servicio de chat impulsado por Azure que también almacena estos datos, y por defecto este servicio almacena los datos indefinidamente. Por este motivo, si necesita eliminar mensajes de Teams por motivos de cumplimiento, le recomendamos que use directivas de retención para Teams que puedan eliminar de forma permanente estos datos tanto de los buzones de Exchange como del servicio de chat subyacente con tecnología de Azure. Para obtener más información sobre la arquitectura subyacente, consulte[Seguridad y cumplimiento en Microsoft Teams](/MicrosoftTeams/security-compliance-overview) y, específicamente, la sección [Arquitectura de protección de la información](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
 Aunque los chats de Teams y los mensajes de los canales se almacenan en los buzones de correo, estos datos de Teams se incluyen solo por una directiva de retención que está configurada para los **mensajes de los canales de Teams** y las ubicaciones de los **chats de Teams**. Los chats de Teams y los mensajes de los canales no se ven afectados por las directivas de retención que se configuran para los buzones de los usuarios o grupos de Exchange.
 

@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: d81e272cfe50aa8379135406cbe538fbc8a18cb5
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 7c3b4f82d94888cfa6c63b25f20130a38f8b4c9f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454234"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919205"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -45,7 +45,7 @@ Esta sección no incluye los pasos específicos necesarios para preparar los obj
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-La característica de movimiento de buzones entre inquilinos requiere que [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts) establezca una aplicación de Azure específica del par de inquilinos para almacenar y obtener acceso de forma segura al certificado o secreto usado para autenticar y autorizar la migración de buzones de correo de un inquilino a otro, eliminando los requisitos para compartir certificados o secretos entre inquilinos. 
+La característica de movimiento de buzones entre inquilinos requiere que [Azure Key Vault](/azure/key-vault/basic-concepts) establezca una aplicación de Azure específica del par de inquilinos para almacenar y obtener acceso de forma segura al certificado o secreto usado para autenticar y autorizar la migración de buzones de correo de un inquilino a otro, eliminando los requisitos para compartir certificados o secretos entre inquilinos. 
 
 Antes de empezar, asegúrese de que tiene los permisos necesarios para ejecutar los scripts de implementación con el fin de configurar Azure Key Vault, la aplicación Move Mailbox, exo Migration Endpoint y la relación de organización de EXO. Normalmente, el administrador global tiene permiso para realizar todos los pasos de configuración.
 
@@ -116,7 +116,7 @@ Preparar el espacio empresarial de origen:
     ||||
 
     >[!Note]
-    > Asegúrese de haber instalado el módulo de PowerShell de Azure AD antes de ejecutar los scripts. Consulte aquí ![ los pasos de ](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-5.1.0) instalación
+    > Asegúrese de haber instalado el módulo de PowerShell de Azure AD antes de ejecutar los scripts. Consulte aquí ![ los pasos de ](/powershell/azure/install-az-ps?view=azps-5.1.0) instalación
 
 6. El script se pausará y le pedirá que acepte o acepte la aplicación de migración de buzones de Exchange que se creó durante este proceso. Aquí le mostramos un ejemplo.
 
@@ -430,7 +430,7 @@ El envío por lotes de migración también se admite desde el nuevo Centro de ad
 
 Una vez que el buzón se mueve de origen a destino, debe asegurarse de que los usuarios de correo locales, tanto de origen como de destino, se actualicen con el nuevo targetAddress. En los ejemplos, el targetDeliveryDomain usado en el movimiento es **contoso.onmicrosoft.com**. Actualice los usuarios de correo con este targetAddress.
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 **¿Es necesario actualizar RemoteMailboxes en el origen local después del movimiento?**
 
@@ -590,7 +590,7 @@ No. Los nombres de dominio de inquilino de origen y de destino deben ser únicos
 
 Sí, pero solo guardamos los permisos de almacén como se describe en estos artículos:
 
-- [Microsoft Docs | Administrar permisos para destinatarios en Exchange Online](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
+- [Microsoft Docs | Administrar permisos para destinatarios en Exchange Online](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
 
 - [Soporte técnico de Microsoft | Cómo conceder permisos de buzón de Exchange y Outlook en Office 365 dedicado](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
@@ -604,11 +604,11 @@ No supere los 2000 buzones por lote. Recomendamos encarecidamente enviar lotes d
 
 **¿Qué ocurre si uso el cifrado de servicio con clave de cliente?**
 
-El buzón se descifrará antes de moverlo. Asegúrese de que la clave de cliente está configurada en el espacio empresarial de destino si aún es necesaria. Vea [aquí](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview) para obtener más información.  
+El buzón se descifrará antes de moverlo. Asegúrese de que la clave de cliente está configurada en el espacio empresarial de destino si aún es necesaria. Vea [aquí](../compliance/customer-key-overview.md) para obtener más información.  
 
 **¿Cuál es el tiempo estimado de migración?**
 
-Para ayudarle a planear la [](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) migración, la tabla que se muestra aquí muestra las directrices sobre cuándo esperar que se completen las migraciones masivas de buzones de correo o las migraciones individuales. Estas estimaciones se basan en un análisis de datos de migraciones de clientes anteriores. Dado que cada entorno es único, la velocidad exacta de migración puede variar.  
+Para ayudarle a planear la [](/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) migración, la tabla que se muestra aquí muestra las directrices sobre cuándo esperar que se completen las migraciones masivas de buzones de correo o las migraciones individuales. Estas estimaciones se basan en un análisis de datos de migraciones de clientes anteriores. Dado que cada entorno es único, la velocidad exacta de migración puede variar.  
 
 Recuerde que esta característica está actualmente en versión preliminar y el SLA y los niveles de servicio aplicables no se aplican a ningún problema de rendimiento o disponibilidad durante el estado de vista previa de esta característica.
 
@@ -733,4 +733,3 @@ Recuerde que esta característica está actualmente en versión preliminar y el 
    | Microsoft Defender para Office 365 (Plan 2)    |
    | Office 365 Privileged Access Management           |
    | Cifrado premium en Office 365                  |
-    

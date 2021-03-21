@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c82b0a84582d18f8b08b369ff76ba34046c40eba
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 96a4a8ae902f0b8e4767ea3fd42079322d661208
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727152"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918815"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>Comprender el informe de analistas en análisis de amenazas
 
@@ -35,7 +35,7 @@ ms.locfileid: "50727152"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-> ¿Desea experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio o](https://aka.ms/mtp-trial-lab) ejecutar el proyecto piloto en [producción.](https://aka.ms/m365d-pilotplaybook)
+> ¿Desea experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio o](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) ejecutar el proyecto piloto en [producción.](./mtp-pilot.md?ocid=cx-evalpilot)
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -68,7 +68,7 @@ Además de estas mitigaciones rastreadas, el informe del analista también anali
 - Bloquear correos electrónicos _con datos adjuntos .lnk_ u otros tipos de archivo sospechosos
 - Aleatorizar contraseñas de administrador local
 - Educar a los usuarios finales sobre el correo electrónico de suplantación de identidad (phishing) y otros vectores de amenazas
-- Activar reglas de [reducción de superficie de ataque específicas](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
+- Activar reglas de [reducción de superficie de ataque específicas](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
 
 Aunque puedes usar la pestaña Mitigaciones para evaluar la posición de seguridad frente a una amenaza, estas recomendaciones te permiten tomar **medidas** adicionales para mejorar la posición de seguridad. Lea atentamente todas las instrucciones de mitigación del informe del analista y apliquenlas siempre que sea posible.
 
@@ -76,13 +76,13 @@ Aunque puedes usar la pestaña Mitigaciones para evaluar la posición de segurid
 El informe del analista también proporciona las detecciones de Microsoft Defender para las capacidades de detección y respuesta _de_ puntos de conexión (EDR) y antivirus de extremo.
 
 ### <a name="antivirus-detections"></a>Detecciones de antivirus
-Estas detecciones están disponibles en dispositivos con [Antivirus de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) activado. Cuando estas detecciones se producen en dispositivos que se han incorporado a Microsoft Defender para Endpoint, también desencadenan alertas que encienden los gráficos del informe.
+Estas detecciones están disponibles en dispositivos con [Antivirus de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) activado. Cuando estas detecciones se producen en dispositivos que se han incorporado a Microsoft Defender para Endpoint, también desencadenan alertas que encienden los gráficos del informe.
 
 >[!NOTE]
 >El informe del analista también enumera detecciones **genéricas** que pueden identificar una amplia gama de amenazas, además de componentes o comportamientos específicos de la amenaza rastreada. Estas detecciones genéricas no se reflejan en los gráficos.
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>Alertas de detección y respuesta de extremos (EDR)
-Se genera alertas de EDR para dispositivos [incorporados a Microsoft Defender para endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure). Por lo general, estas alertas se basan en las señales de seguridad recopiladas por el sensor de Microsoft Defender para endpoints y otras capacidades de punto de conexión (como antivirus, protección de red, protección contra alteraciones) que sirven como orígenes de señales eficaces.
+Se genera alertas de EDR para dispositivos [incorporados a Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure). Por lo general, estas alertas se basan en las señales de seguridad recopiladas por el sensor de Microsoft Defender para endpoints y otras capacidades de punto de conexión (como antivirus, protección de red, protección contra alteraciones) que sirven como orígenes de señales eficaces.
 
 Al igual que la lista de detecciones antivirus, algunas alertas de EDR están diseñadas para marcar de forma genérica comportamiento sospechoso que podría no estar asociado con la amenaza rastreada. En tales casos, el informe identificará claramente la alerta como "genérica" y que no influye en ninguno de los gráficos del informe.
 
@@ -100,7 +100,7 @@ Los analistas de Microsoft han consultado consultas avanzadas de búsqueda en lo
 
 
 >[!NOTE]
-> El análisis de amenazas también está disponible en [Microsoft Defender para Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). Sin embargo, no tiene la integración de datos entre Microsoft Defender para Office y Microsoft Defender para endpoint que tiene el análisis de amenazas de Microsoft 365 Defender.
+> El análisis de amenazas también está disponible en [Microsoft Defender para Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). Sin embargo, no tiene la integración de datos entre Microsoft Defender para Office y Microsoft Defender para endpoint que tiene el análisis de amenazas de Microsoft 365 Defender.
 
 
 ## <a name="related-topics"></a>Temas relacionados

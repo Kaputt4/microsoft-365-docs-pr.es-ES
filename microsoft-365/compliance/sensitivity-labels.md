@@ -22,16 +22,16 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6cdf7a6b9e75b575abda2c93f7531c45d93a9a51
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 6c1f8b404ddcda45d782a6517880955a6199025d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838633"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919596"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
->*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](https://aka.ms/ComplianceSD).*
+>*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Si busca información acerca de las etiquetas de confidencialidad presentes en las aplicaciones de Office, consulte [Aplicar etiquetas de confidencialidad a sus archivos y correos electrónicos en Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
@@ -49,9 +49,9 @@ Ejemplo que muestra las etiquetas de confidencialidad disponibles en Excel, en l
 Para aplicar etiquetas de confidencialidad, los usuarios tienen que haber iniciado sesión en Microsoft 365 con su cuenta profesional o educativa.
 
 > [!NOTE]
-> Desde hace poco, las etiquetas de confidencialidad son compatibles con inquilinos de la Administración Pública de Estado Unidos (GCC y GCC-H). Para obtener más información, vea las notas de la versión para Aplicaciones de Microsoft 365 para empresas, [versión 2101: 26 de enero](https://docs.microsoft.com/officeupdates/current-channel#version-2101-january-26).
+> Desde hace poco, las etiquetas de confidencialidad son compatibles con inquilinos de la Administración Pública de Estado Unidos (GCC y GCC-H). Para obtener más información, vea las notas de la versión para Aplicaciones de Microsoft 365 para empresas, [versión 2101: 26 de enero](/officeupdates/current-channel#version-2101-january-26).
 >
-> Para el escáner y el cliente de etiquetas unificadas de Azure Information Protection, consulte la [Descripción del servicio de Administración Pública de Azure Information Protection Premium](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
+> Para el escáner y el cliente de etiquetas unificadas de Azure Information Protection, consulte la [Descripción del servicio de Administración Pública de Azure Information Protection Premium](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
 Puede usar etiquetas de confidencialidad para:
   
@@ -118,7 +118,7 @@ Después de aplicar una etiqueta de confidencialidad a un correo electrónico o 
     
     ![Aviso para asignar una etiqueta necesaria](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    Para obtener más información sobre la configuración para **Etiquetar automáticamente archivos y mensajes de correo electrónico** al crear o editar una etiqueta de confidencialidad, vea [Aplicar una etiqueta de confidencialidad al contenido automáticamente](apply-sensitivity-label-automatically.md) para las aplicaciones de Office y [Etiquetar automáticamente los datos en Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
+    Para obtener más información sobre la configuración para **Etiquetar automáticamente archivos y mensajes de correo electrónico** al crear o editar una etiqueta de confidencialidad, vea [Aplicar una etiqueta de confidencialidad al contenido automáticamente](apply-sensitivity-label-automatically.md) para las aplicaciones de Office y [Etiquetar automáticamente los datos en Azure Purview](/azure/purview/create-sensitivity-label).
 
 ### <a name="label-scopes"></a>Ámbitos de etiqueta
 
@@ -134,7 +134,7 @@ De forma predeterminada, el ámbito de **Archivos y correo electrónico** siempr
 
 - **Grupos y sitios**: [habilitar etiquetas de confidencialidad para contenedores y sincronizarlas](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Activos de Azure Purview (versión preliminar)**: [etiquetar automáticamente el contenido en Azure Purview](https://go.microsoft.com/fwlink/?linkid=2148989)
+- **Activos de Azure Purview (versión preliminar)**: [etiquetar automáticamente el contenido en Azure Purview](/azure/purview/create-sensitivity-label)
 
 Si cambia los valores predeterminados, de modo que no se seleccionen todos los ámbitos, verá la primera página de la configuración de los ámbitos que no ha seleccionado, pero no podrá establecer la configuración. Por ejemplo, si el ámbito para archivos y mensajes de correo electrónico no está seleccionado, no podrá seleccionar las opciones en la página siguiente:
 
@@ -178,7 +178,7 @@ A diferencia de las etiquetas de retención, que se publican en ubicaciones, com
 
 Cuando configura una directiva de etiqueta, puede:
 
-- **Elija qué usuarios y grupos ven las etiquetas.** Las etiquetas pueden publicarse para cualquier usuario específico o un grupo de seguridad activado por correo electrónico, un grupo de distribución o un grupo de Microsoft 365, que puede tener [suscripción dinámica](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) en Azure AD.
+- **Elija qué usuarios y grupos ven las etiquetas.** Las etiquetas pueden publicarse para cualquier usuario específico o un grupo de seguridad activado por correo electrónico, un grupo de distribución o un grupo de Microsoft 365, que puede tener [suscripción dinámica](/azure/active-directory/users-groups-roles/groups-create-rule) en Azure AD.
 
 - **Aplicar una etiqueta predeterminada** a todos los documentos y correos electrónicos nuevos sin etiqueta creados por los usuarios y grupos incluidos en la directiva de etiqueta y la misma etiqueta predeterminada a los contenedores (si ha habilitado [etiquetas de confidencialidad para Microsoft Teams, Grupos de Microsoft 365 y sitios de SharePoint](sensitivity-labels-teams-groups-sites.md)). Con esta configuración, el cliente de etiquetado unificado de Azure Information Protection también aplicará la etiqueta predeterminada a documentos ya existentes que no tengan etiqueta. Los usuarios siempre pueden cambiar la etiqueta predeterminada si no es la etiqueta adecuada para su documento o correo electrónico.
     
@@ -236,7 +236,7 @@ Si ha implementado etiquetas con Azure Information Protection, utilice las secci
 > [!NOTE]
 > La gestión de etiquetas para las etiquetas de Azure Information Protection en Microsoft Azure Portal quedará en desuso el **31 de marzo de 2021**. Más información en la página oficial [notificación de desuso](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
 
-Si utiliza etiquetas de protección de información azul porque su inquilino aún no está en la[ plataforma de etiquetado unificado](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), le recomendamos que evite crear etiquetas de confidencialidad hasta que active el etiquetado unificado. En este escenario, las etiquetas que se muestran en el Azure Portal son etiquetas de Azure Information Protection en lugar de etiquetas de confidencialidad. El cliente de Azure Information Protection (clásico) puede usar estas etiquetas en los equipos con Windows, pero no los dispositivos que ejecuten macOS, iOS o Android. Para resolver este problema, [migre estas etiquetas](/azure/information-protection/configure-policy-migrate-labels) a etiquetas de confidencialidad. 
+Si utiliza etiquetas de protección de información azul porque su inquilino aún no está en la[ plataforma de etiquetado unificado](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), le recomendamos que evite crear etiquetas de confidencialidad hasta que active el etiquetado unificado. En este escenario, las etiquetas que se muestran en el Azure Portal son etiquetas de Azure Information Protection en lugar de etiquetas de confidencialidad. El cliente de Azure Information Protection (clásico) puede usar estas etiquetas en los equipos con Windows, pero no los dispositivos que ejecuten macOS, iOS o Android. Para resolver este problema, [migre estas etiquetas](/azure/information-protection/configure-policy-migrate-labels) a etiquetas de confidencialidad. 
 
 Los metadatos aplicados por los dos conjuntos de etiquetas son compatibles, por lo que no es necesario volver a etiquetar documentos y correos electrónicos cuando se haya completado la migración.
 
@@ -256,7 +256,7 @@ Incluso si usa etiquetas integradas en las aplicaciones de Office, también pued
 
 - Un módulo de PowerShell para detectar información confidencial en los archivos locales y aplicar o quitar las etiquetas y el cifrado de estos archivos.
 
-Si no está familiarizado con Azure Information Protection, o si es un cliente de Azure Information Protection que acaba de migrar sus etiquetas, consulte [Elegir la solución de etiquetado de Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) en la documentación de Azure Information Protection.
+Si no está familiarizado con Azure Information Protection, o si es un cliente de Azure Information Protection que acaba de migrar sus etiquetas, consulte [Elegir la solución de etiquetado de Windows](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) en la documentación de Azure Information Protection.
 
 ## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>Etiquetas de confidencialidad y Microsoft Cloud App Security
 
@@ -268,11 +268,11 @@ Cloud App Security funciona con las etiquetas mismas y las de confidencialidad d
 
 - Si los centros de administración de etiquetas no tienen etiquetas de confidencialidad publicadas: se usan las etiquetas de Azure Information Protection.
 
-Para obtener instrucciones sobre cómo usar Cloud App Security con estas etiquetas, consulte [Integración de Azure Information Protection](https://docs.microsoft.com/cloud-app-security/azip-integration).
+Para obtener instrucciones sobre cómo usar Cloud App Security con estas etiquetas, consulte [Integración de Azure Information Protection](/cloud-app-security/azip-integration).
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>Etiquetas de confidencialidad y el SDK de protección de la información de Microsoft
 
-Como las etiquetas de sensibilidad se almacenan como texto sin formato en los metadatos de un documento, las aplicaciones y los servicios de terceros pueden leer y escribir en los metadatos de etiqueta para complementar la implementación de la etiqueta. Además, los desarrolladores de software pueden usar el [SDK de Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk) para admitir por completo las características de etiquetado y cifrado en varias plataformas. Para obtener más información, consulte el [anuncio de disponibilidad general en el blog de la comunidad tecnológica](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
+Como las etiquetas de sensibilidad se almacenan como texto sin formato en los metadatos de un documento, las aplicaciones y los servicios de terceros pueden leer y escribir en los metadatos de etiqueta para complementar la implementación de la etiqueta. Además, los desarrolladores de software pueden usar el [SDK de Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk) para admitir por completo las características de etiquetado y cifrado en varias plataformas. Para obtener más información, consulte el [anuncio de disponibilidad general en el blog de la comunidad tecnológica](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
 
 También puede obtener más información sobre [las soluciones de asociados que se integran con la protección de la información de Microsoft](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
 

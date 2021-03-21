@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: eea8454a02667a42020f9ac1d54402e7b8a06b9b
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 1e6642113ddba9c9110a65e9032ec59db435ac7f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820107"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919866"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
@@ -483,7 +483,7 @@ Habilitar la compatibilidad con Microsoft Teams para los casos es rápido y fác
 
 Si habilita la compatibilidad con Microsoft Teams para la administración de riesgos de información interna después de tener casos existentes, deberá crear manualmente un equipo para cada caso según sea necesario. Después de habilitar la compatibilidad con Microsoft Teams en la configuración de administración de riesgos interna, los nuevos casos crearán automáticamente un nuevo equipo de Microsoft Teams.
 
-Los usuarios necesitan permiso para crear grupos de Microsoft 365 en su organización para crear un equipo de Microsoft Teams a partir de un caso. Para obtener más información acerca de la administración de permisos para grupos de Microsoft 365, vea [Manage who can create Microsoft 365 Groups](/microsoft-365/solutions/manage-creation-of-groups).
+Los usuarios necesitan permiso para crear grupos de Microsoft 365 en su organización para crear un equipo de Microsoft Teams a partir de un caso. Para obtener más información acerca de la administración de permisos para grupos de Microsoft 365, vea [Manage who can create Microsoft 365 Groups](../solutions/manage-creation-of-groups.md).
 
 Para crear un equipo para un caso, usará el control Crear equipo de Microsoft cuando trabaje directamente en un caso existente. Siga estos pasos para crear un nuevo equipo:
 
