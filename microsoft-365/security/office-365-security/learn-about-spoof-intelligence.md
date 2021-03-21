@@ -20,12 +20,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la suplantación de identidad en Exchange Online Protection (EOP), donde puede permitir o bloquear remitentes suplantados específicos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 482978e93325344d897fcf907b026743fc393d47
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: bdc68f5a7e1f21969f5cd787cfdb0b58bc26cd83
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406645"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926917"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurar la inteligencia de suplantación en EOP
 
@@ -60,18 +60,18 @@ Puede administrar la inteligencia de suplantación en el Centro de seguridad y c
 
 - Abra el Centro de seguridad y cumplimiento en <https://protection.office.com/>. Para ir directamente a la página **Configuración contra correo no deseado**, use <https://protection.office.com/antispam>. Para ir directamente a la **página Anti-phishing,** use <https://protection.office.com/antiphishing> .
 
-- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Para conectarse a EOP PowerShell independiente, consulte [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) (Conexión a Exchange Online Protection PowerShell).
 
-- Debe tener asignados permisos en **Exchange Online** para poder realizar los procedimientos descritos en este artículo:
+- Debe tener permisos asignados en **Exchange Online** antes de poder realizar los procedimientos de este artículo:
   - Para modificar la directiva de inteligencia suplantada o habilitar o deshabilitar la  inteligencia suplantada, debe ser miembro de los grupos de roles Administración de la organización o Administrador **de** seguridad.
   - Para obtener acceso de solo lectura a la directiva de inteligencia suplantada, debe ser miembro de los grupos de roles Lector **global** o Lector **de** seguridad.
 
-  Para obtener más información, consulte los [permisos en Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
+  Para obtener más información, consulte los [permisos en Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   **Notas**:
 
-  - Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos y permisos necesarios para _otras_ características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
-  - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
+  - Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+  - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
 
 - Para obtener la configuración recomendada para la inteligencia de suplantación de identidad, consulte Configuración predeterminada de la directiva [contra suplantación de](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)identidad de EOP.
 
@@ -149,7 +149,7 @@ En este ejemplo se devuelve información detallada sobre todos los remitentes qu
 Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 ```
 
-Para obtener información detallada acerca de la sintaxis y los parámetros, [vea Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-phishfilterpolicy).
+Para obtener información detallada acerca de la sintaxis y los parámetros, [vea Get-PhishFilterPolicy](/powershell/module/exchange/get-phishfilterpolicy).
 
 Para configurar remitentes permitidos y bloqueados en la inteligencia de suplantación de identidad, siga estos pasos:
 
@@ -171,7 +171,7 @@ Para configurar remitentes permitidos y bloqueados en la inteligencia de suplant
    Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
    ```
 
-Para obtener información detallada sobre la sintaxis y los parámetros, [vea Set-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-phishfilterpolicy).
+Para obtener información detallada sobre la sintaxis y los parámetros, [vea Set-PhishFilterPolicy](/powershell/module/exchange/set-phishfilterpolicy).
 
 ## <a name="use-the-security--compliance-center-to-configure-spoof-intelligence"></a>Usar el Centro de seguridad & cumplimiento para configurar la inteligencia de suplantación de seguridad
 

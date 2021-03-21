@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: En este artículo, lea una introducción a las distintas formas de cifrado que se usan para mantener los datos de los clientes seguros en la nube de Microsoft.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 20236e67432ad5bc7e837b91590387355022ccb5
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: a8e184fbe722de674db6f9bcc47e2ab5aa0723d1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727581"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926228"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Cifrado en Microsoft Cloud
 
@@ -30,7 +30,7 @@ Los datos de clientes dentro de los servicios en la nube empresariales de Micros
 
 Los datos de clientes almacenados en los servicios en la nube empresariales de Microsoft están protegidos mediante una o más formas de cifrado. (La validación de nuestra directiva de criptografía y su cumplimiento es verificada de forma independiente por varios auditores de terceros, y los informes de dichas auditorías están disponibles en el [Portal](https://aka.ms/stp)de confianza de servicio .)
 
-Microsoft proporciona tecnologías del lado del servicio que cifran los datos de los clientes en reposo y en tránsito. Por ejemplo, para los datos de clientes en reposo, Microsoft Azure usa [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) y [DM-Crypt,](https://en.wikipedia.org/wiki/Dm-crypt)y Microsoft 365 usa BitLocker, Cifrado de servicio de almacenamiento de [Azure,](https://docs.microsoft.com/azure/)Administrador de claves distribuidas [](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-secures-email-secrets) (DKM) y cifrado de servicio de Microsoft 365. Para los datos de clientes en tránsito, Azure, Office 365, Soporte comercial de Microsoft, Microsoft Dynamics 365, Microsoft Power BI y Visual Studio Team Services usan protocolos de transporte seguro estándar del sector, como Seguridad de protocolos de Internet (IPsec) y Seguridad de la capa de transporte (TLS), entre centros de datos de Microsoft y entre dispositivos de usuario y centros de datos de Microsoft.
+Microsoft proporciona tecnologías del lado del servicio que cifran los datos de los clientes en reposo y en tránsito. Por ejemplo, para los datos de clientes en reposo, Microsoft Azure usa [BitLocker](/windows/device-security/bitlocker/bitlocker-overview) y [DM-Crypt,](https://en.wikipedia.org/wiki/Dm-crypt)y Microsoft 365 usa BitLocker, Cifrado de servicio de almacenamiento de [Azure,](/azure/)Administrador de claves distribuidas [](./exchange-online-secures-email-secrets.md) (DKM) y cifrado de servicio de Microsoft 365. Para los datos de clientes en tránsito, Azure, Office 365, Soporte comercial de Microsoft, Microsoft Dynamics 365, Microsoft Power BI y Visual Studio Team Services usan protocolos de transporte seguro estándar del sector, como Seguridad de protocolos de Internet (IPsec) y Seguridad de la capa de transporte (TLS), entre centros de datos de Microsoft y entre dispositivos de usuario y centros de datos de Microsoft.
 
 Además del nivel de línea base de seguridad criptográfica proporcionado por Microsoft, nuestros servicios en la nube también incluyen opciones de criptografía que puede administrar. Por ejemplo, puede habilitar el cifrado para el tráfico entre sus máquinas virtuales de Azure y sus usuarios. Con [Azure Virtual Networks,](https://azure.microsoft.com/services/virtual-network/)puede usar el protocolo IPsec estándar del sector para cifrar el tráfico entre la puerta de enlace VPN corporativa y Azure. También puede cifrar el tráfico entre las máquinas virtuales de la red virtual. Además, las nuevas funcionalidades de cifrado de mensajes de [Office 365](set-up-new-message-encryption-capabilities.md) permiten enviar correo cifrado a cualquier persona.
 
@@ -46,7 +46,7 @@ Microsoft certifica los módulos criptográficos subyacentes usados en nuestros 
 - Dynamics 365 y Dynamics 365 para la Administración Pública de Estados Unidos
 - Office 365, Office 365 Administración Pública para Estados Unidos y Office 365 U.S. Government Defense
 
-El cifrado de los datos de los clientes en reposo se proporciona mediante varias tecnologías del lado del servicio, como BitLocker, DKM, cifrado de servicio de almacenamiento de Azure y cifrado de servicio en Exchange Online, Skype Empresarial, OneDrive para la Empresa y SharePoint Online. El cifrado de servicio de Office 365 incluye una opción para usar claves de cifrado administradas por el cliente almacenadas en Azure Key Vault. Esta opción de clave administrada por el cliente, denominada [Clave](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview)de cliente, está disponible para Exchange Online, SharePoint Online, Skype Empresarial y OneDrive para la Empresa.
+El cifrado de los datos de los clientes en reposo se proporciona mediante varias tecnologías del lado del servicio, como BitLocker, DKM, cifrado de servicio de almacenamiento de Azure y cifrado de servicio en Exchange Online, Skype Empresarial, OneDrive para la Empresa y SharePoint Online. El cifrado de servicio de Office 365 incluye una opción para usar claves de cifrado administradas por el cliente almacenadas en Azure Key Vault. Esta opción de clave administrada por el cliente, denominada [Clave](./customer-key-overview.md)de cliente, está disponible para Exchange Online, SharePoint Online, Skype Empresarial y OneDrive para la Empresa.
 
 Para los datos de clientes en tránsito, todos los servidores de Office 365 negocian sesiones seguras mediante TLS de forma predeterminada con máquinas cliente para proteger los datos de los clientes. Por ejemplo, Office 365 negociará sesiones seguras a Skype Empresarial, Outlook y Outlook en la web, clientes móviles y exploradores web.
 
@@ -57,8 +57,8 @@ Para los datos de clientes en tránsito, todos los servidores de Office 365 nego
 - [Cifrado en Azure](office-365-azure-encryption.md)
 - [BitLocker y Administrador de claves distribuidas (DKM) para el cifrado](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
 - [Cifrado de servicio de Office 365](office-365-service-encryption.md)
-- [Cifrado de Office 365 para Skype Empresarial, OneDrive para la Empresa, SharePoint Online y Exchange Online](office-365-encryption-for-skype-onedrive-sharepoint-and-exchange.md)
-- [Cifrado de datos en tránsito](office-365-encryption-for-data-in-transit.md)
+- [Cifrado de Office 365 para Skype Empresarial, OneDrive para la Empresa, SharePoint Online y Exchange Online](./n/compliance/assurance/assurance-encryption-for-microsoft-365-services)
+- [Cifrado de datos en tránsito](/compliance/assurance/assurance-encryption-in-transit)
 - [Características de cifrado administradas por el cliente](office-365-customer-managed-encryption-features.md)
 - [Riesgos y protección de cifrado](office-365-encryption-risks-and-protections.md)
 - [Cifrado en Microsoft Dynamics 365](office-365-encryption-in-microsoft-dynamics-365.md)

@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Obtenga información acerca de Microsoft 365 Multi-Geo, cómo funcionan las capacidades multigeográficas y qué ubicaciones geográficas están disponibles para el almacenamiento de datos.
-ms.openlocfilehash: ce8b752cc6a335249f9d8e03289fd16b04756ce9
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 9625d55015cc0f18801d59e82fc8ca7090b3b721
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712347"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927537"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Plan para Microsoft 365 Multi-Geo
 
@@ -69,13 +69,13 @@ Cada usuario debe disponer de una *ubicación de datos preferida* (PDL) para que
 
 Cree una lista de los usuarios e incluya su nombre principal de usuario (UPN) y el código de ubicación para la ubicación de datos preferida. Incluya el usuario de prueba y el grupo piloto inicial para empezar. Necesitará esta lista en los procedimientos de configuración.
 
-Si los usuarios se sincronizan desde un sistema de Active Directory local con Azure Active Directory, debe establecer la ubicación de datos preferida como un atributo de Active Directory y sincronizarla mediante el uso de Azure Active Directory Connect. No puede configurar directamente la ubicación de datos preferida para los usuarios sincronizados utilizando Azure AD PowerShell. Se tratan los pasos para configurar PDL en Active Directory y sincronizarlas en [Azure Active Directory Connect sync: Configure preferred data location for Microsoft 365 resources](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation) (Sincronización con Azure Active Directory Connect: configuración de ubicación de datos preferida para Recursos de Microsoft 365).
+Si los usuarios se sincronizan desde un sistema de Active Directory local con Azure Active Directory, debe establecer la ubicación de datos preferida como un atributo de Active Directory y sincronizarla mediante el uso de Azure Active Directory Connect. No puede configurar directamente la ubicación de datos preferida para los usuarios sincronizados utilizando Azure AD PowerShell. Se tratan los pasos para configurar PDL en Active Directory y sincronizarlas en [Azure Active Directory Connect sync: Configure preferred data location for Microsoft 365 resources](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation) (Sincronización con Azure Active Directory Connect: configuración de ubicación de datos preferida para Recursos de Microsoft 365).
 
 La administración de un inquilino multigeográfico puede ser distinta de un espacio empresarial que no sea multigeográfico, ya que muchas de las opciones de configuración y servicios de SharePoint y OneDrive detectan las Capacidades multigeográficas. Le recomendamos que vea [Administrar un entorno multigeográfico](administering-a-multi-geo-environment.md) antes de continuar con la configuración.
 
 Lea [Experiencia del usuario en un entorno multigeómico](multi-geo-user-experience.md) para obtener más información sobre la experiencia de los usuarios finales en un entorno multige geográfico.
 
-Para obtener más información sobre la experiencia de Teams en una cuenta empresarial de Microsoft 365 Multi-Geo, consulte [Experiencia de Teams en una cuenta empresarial multigeográfica de OneDrive y SharePoint Online de Microsoft 365](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo).
+Para obtener más información sobre la experiencia de Teams en una cuenta empresarial de Microsoft 365 Multi-Geo, consulte [Experiencia de Teams en una cuenta empresarial multigeográfica de OneDrive y SharePoint Online de Microsoft 365](/microsoftteams/teams-experience-o365odb-spo-multi-geo).
 
 Para empezar a configurar Microsoft 365 Multi-Geo, consulte [Configuración de Microsoft 365 Multi-Geo5](multi-geo-tenant-configuration.md).
 
@@ -83,4 +83,4 @@ Cuando complete la configuración, recuerde [migrar las bibliotecas de OneDrive 
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Configuración de eDiscovery de Microsoft 365 Multi-Geo](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-ediscovery-configuration)
+[Configuración de eDiscovery de Microsoft 365 Multi-Geo](./multi-geo-ediscovery-configuration.md)

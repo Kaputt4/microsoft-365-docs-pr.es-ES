@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo colocar retenciones en los custodios y sus orígenes de datos para conservar el contenido relevante para su caso de exhibición de documentos electrónicos avanzada.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fbad81e93635f823fab1c4f44867760d00fc59ed
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 07edcb2707d1dffecfa5a2aac6c4340ac6cbe53f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838591"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926378"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Administrar retenciones en eDiscovery avanzada
 
@@ -80,7 +80,7 @@ Para crear una retención sin custodia para un caso de exhibición de documentos
       Consulta la **sección preguntas** más frecuentes para obtener sugerencias sobre cómo poner grupos de Microsoft 365 y Microsoft Teams en espera.
 
       > [!NOTE]
-      > La dirección URL de la cuenta de OneDrive de un usuario incluye su nombre principal de usuario (UPN) (por ejemplo, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). En el caso poco frecuente de que se cambie el UPN de una persona, la dirección URL de OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta de OneDrive de un usuario forma parte de una retención sin custodia y se cambia su UPN, debe actualizar la retención y apuntar a la nueva dirección URL de OneDrive. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
+      > La dirección URL de la cuenta de OneDrive de un usuario incluye su nombre principal de usuario (UPN) (por ejemplo, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). En el caso poco frecuente de que se cambie el UPN de una persona, la dirección URL de OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta de OneDrive de un usuario forma parte de una retención sin custodia y se cambia su UPN, debe actualizar la retención y apuntar a la nueva dirección URL de OneDrive. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](/onedrive/upn-changes).
 
    1. **Carpetas públicas de Exchange:** mueva el modificador de alternancia a la posición Todos para poner en espera todas las carpetas públicas de la organización de Exchange Online. Tenga en cuenta que no puede elegir carpetas públicas específicas para poner en espera. Deje el modificador de alternancia establecido en **Ninguno** si no desea poner una retención en carpetas públicas.
 
@@ -92,7 +92,7 @@ Para crear una retención sin custodia para un caso de exhibición de documentos
 
     - Haga  **clic en** Agregar condiciones para agregar una o más condiciones para restringir la consulta de búsqueda para la retención. Cada condición agrega una cláusula a la consulta de búsqueda KQL que se crea y se ejecuta al crear la retención. Por ejemplo, puede especificar un intervalo de fechas para que los documentos de correo electrónico o de sitio que se crearon dentro del intervalo de fechas se coloquen en espera. Una condición se conecta lógicamente a la consulta de palabra clave (especificada en el cuadro de palabra clave) mediante el operador AND. Esto significa que los elementos deben satisfacer tanto la consulta de palabras clave como la condición que se va a colocar en espera.
 
-     Para obtener más información acerca de cómo crear una consulta de búsqueda y usar condiciones, vea Consultas de palabras clave y condiciones [de búsqueda para búsqueda de contenido](https://docs.microsoft.com/office365/SecurityCompliance/keyword-queries-and-search-conditions).
+     Para obtener más información acerca de cómo crear una consulta de búsqueda y usar condiciones, vea Consultas de palabras clave y condiciones [de búsqueda para búsqueda de contenido](/office365/SecurityCompliance/keyword-queries-and-search-conditions).
 
 11. Después de configurar una retención basada en consultas, haga clic en **Siguiente**.
 

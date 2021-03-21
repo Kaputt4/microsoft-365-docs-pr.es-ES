@@ -15,16 +15,16 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas funcionalidades de protección de mensajes? Busca una respuesta aquí.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09d9293cfb1b574b4c179a0b486d436dab99edf2
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: fdfcc2e7454b1243016754ba32dcc2622b876672
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741351"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927758"
 ---
 # <a name="message-encryption-faq"></a>Preguntas más frecuentes sobre cifrado de mensajes
 
-¿Tiene alguna pregunta sobre cómo funcionan las nuevas funcionalidades de protección de mensajes? Busca una respuesta aquí. Además, echa un vistazo a las preguntas más frecuentes sobre la protección de datos en [Azure Information Protection](https://docs.microsoft.com/information-protection/get-started/faqs-rms) para obtener respuestas a preguntas sobre el servicio de protección de datos, Azure Rights Management, en Azure Information Protection.
+¿Tiene alguna pregunta sobre cómo funcionan las nuevas funcionalidades de protección de mensajes? Busca una respuesta aquí. Además, echa un vistazo a las preguntas más frecuentes sobre la protección de datos en [Azure Information Protection](/information-protection/get-started/faqs-rms) para obtener respuestas a preguntas sobre el servicio de protección de datos, Azure Rights Management, en Azure Information Protection.
 
 ## <a name="what-is-office-365-message-encryption-ome"></a>¿Qué es el cifrado de mensajes (OME) de Office 365?
 
@@ -38,7 +38,7 @@ Puede usar las nuevas funcionalidades para OME en las siguientes condiciones:
 
 - Si ha configurado OME e IRM, puede usar estos pasos si usa el servicio Azure Rights Management de Azure Information Protection.
 
-- Si usa Exchange Online con el servicio de Administración de derechos de Active Directory (AD RMS), no puede habilitar estas nuevas funcionalidades de inmediato. En su lugar, primero debe [migrar AD RMS a Azure Information Protection.](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) Cuando haya terminado la migración, puede configurar OME correctamente.
+- Si usa Exchange Online con el servicio de Administración de derechos de Active Directory (AD RMS), no puede habilitar estas nuevas funcionalidades de inmediato. En su lugar, primero debe [migrar AD RMS a Azure Information Protection.](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) Cuando haya terminado la migración, puede configurar OME correctamente.
 
   Si decide seguir usando AD RMS local con Exchange Online en lugar de migrar a Azure Information Protection, no podrá usar estas nuevas funcionalidades.
 
@@ -52,13 +52,13 @@ Para usar las nuevas funcionalidades de OME, necesita uno de los siguientes plan
 
 - Cada usuario que se beneficie del cifrado de mensajes de Office 365 debe tener una licencia para que la característica la pueda cubrir.
 
-- Para obtener la lista completa, vea las descripciones del servicio [Exchange Online](https://technet.microsoft.com/library/exchange-online-service-description.aspx) para cifrado de mensajes de Office 365.
+- Para obtener la lista completa, vea las descripciones del servicio [Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) para cifrado de mensajes de Office 365.
 
 ## <a name="can-i-use-exchange-online-with-bring-your-own-key-byok-in-azure-information-protection"></a>¿Puedo usar Exchange Online con su propia clave (BYOK) en Azure Information Protection?
 
 Sí Microsoft recomienda completar los pasos para configurar BYOK antes de configurar OME.
   
-Para obtener más información acerca de BYOK, vea [Planning and implementing your Azure Information Protection tenant key](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key).
+Para obtener más información acerca de BYOK, vea [Planning and implementing your Azure Information Protection tenant key](/information-protection/plan-design/plan-implement-tenant-key).
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>¿OME y BYOK con Azure Information Protection cambian el enfoque de Microsoft para solicitudes de datos de terceros, como citaciones?
 
@@ -88,11 +88,11 @@ Todavía puede usar la versión anterior de OME, no estará en desuso en este mo
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>Mi organización usa Active Directory Rights Management, ¿puedo usar esta funcionalidad?
 
-No. Si usa Exchange Online con el servicio de Administración de derechos de Active Directory (AD RMS), no puede habilitar estas nuevas funcionalidades de inmediato. En su lugar, primero debe [migrar AD RMS a Azure Information Protection.](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
+No. Si usa Exchange Online con el servicio de Administración de derechos de Active Directory (AD RMS), no puede habilitar estas nuevas funcionalidades de inmediato. En su lugar, primero debe [migrar AD RMS a Azure Information Protection.](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>Mi organización tiene una implementación híbrida de Exchange. ¿Puedo usar esta característica?
 
-Los usuarios locales pueden enviar correo cifrado mediante reglas de flujo de correo de Exchange Online. Para ello, debe enrutar el correo electrónico a través de Exchange Online. Para obtener más información, vea [Part 2: Configure mail to flow from your email server to Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).
+Los usuarios locales pueden enviar correo cifrado mediante reglas de flujo de correo de Exchange Online. Para ello, debe enrutar el correo electrónico a través de Exchange Online. Para obtener más información, vea [Part 2: Configure mail to flow from your email server to Microsoft 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>¿Qué cliente de correo electrónico necesito usar para crear un mensaje cifrado de OME? ¿Qué aplicaciones se admiten para enviar mensajes protegidos?
 
@@ -108,11 +108,11 @@ Los usuarios de Microsoft 365 pueden usar las versiones de Outlook para PC 2019 
 
 ## <a name="is-there-a-size-limit-for-messages-you-can-send-with-ome"></a>¿Hay un límite de tamaño para los mensajes que puede enviar con OME?
 
-Sí. El tamaño máximo de mensaje que puede enviar con OME, incluidos los datos adjuntos, es de 25 MB. Para obtener más información, vea [Límites de mensajes](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
+Sí. El tamaño máximo de mensaje que puede enviar con OME, incluidos los datos adjuntos, es de 25 MB. Para obtener más información, vea [Límites de mensajes](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1).
 
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>¿Qué tipos de archivo se admiten como datos adjuntos en correos electrónicos protegidos? ¿Los datos adjuntos heredan las directivas de protección asociadas con los correos electrónicos protegidos?
 
-Puede adjuntar cualquier tipo de archivo a un correo protegido. Con una excepción, las directivas de protección se aplican solo en los formatos de archivo mencionados en Tipos de [archivo admitidos por el](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)cliente de Azure Information Protection . OME no admite las versiones 97-2003 de los siguientes programas de Office: Word (.doc), Excel (.xls) y PowerPoint (.ppt).
+Puede adjuntar cualquier tipo de archivo a un correo protegido. Con una excepción, las directivas de protección se aplican solo en los formatos de archivo mencionados en Tipos de [archivo admitidos por el](/information-protection/rms-client/client-admin-guide-file-types)cliente de Azure Information Protection . OME no admite las versiones 97-2003 de los siguientes programas de Office: Word (.doc), Excel (.xls) y PowerPoint (.ppt).
 
 Si se admite un formato de archivo, como un archivo de Word, Excel o PowerPoint, el archivo siempre está protegido, incluso después de que el destinatario haya descargado los datos adjuntos. Por ejemplo, diga que los datos adjuntos están protegidos por Do Not Forward. El destinatario original descarga el archivo, crea un mensaje a un nuevo destinatario y adjunta el archivo. Cuando el nuevo destinatario recibe el archivo, el destinatario no podrá abrir el archivo protegido.
   
@@ -124,7 +124,7 @@ Para Outlook en la web, Outlook para iOS y Outlook para Android, puede cifrar lo
 
 El escritorio de Outlook no admite de forma nativa el cifrado de datos adjuntos de archivos PDF. En su lugar, deberá configurar primero las reglas de flujo de correo de Exchange o DLP para aplicar el cifrado a los datos adjuntos de PDF. Cuando envía correo desde El escritorio de Outlook con datos adjuntos de PDF, el cliente envía primero el mensaje con los datos adjuntos al servicio. Cuando el servicio recibe el archivo, el servicio aplica la protección OME de la directiva de prevención de pérdida de datos (DLP) o la regla de flujo de correo en Exchange Online. A continuación, Exchange Online envía el mensaje con los datos adjuntos del archivo PDF protegido.
 
-Para habilitar el cifrado para los datos adjuntos de PDF, ejecute el siguiente comando en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell):
+Para habilitar el cifrado para los datos adjuntos de PDF, ejecute el siguiente comando en [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
@@ -210,7 +210,7 @@ Actualmente hay dos limitaciones conocidas:
 
 **Para asignar un usuario al buzón compartido**
 
-1. [Conectarse a Exchange Online mediante PowerShell remoto.](https://technet.microsoft.com/library/jj984289?v=exchg.150%29.aspx)
+1. [Conectarse a Exchange Online con PowerShell remoto](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150).aspx).
 
 2. Ejecute el cmdlet Add-MailboxPermission con el parámetro Automapping. En este ejemplo se proporciona a Ayla permisos de acceso completo a un buzón de soporte técnico.
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Más información sobre los tipos de explicación en Microsoft SharePoint Syntex
-ms.openlocfilehash: caba92b635feaf8f87e2c487559f70be3fab6df9
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 5187b27438f25db1a2714f1fbc7b31db6d060ccc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242626"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928405"
 ---
 # <a name="introduction-to-explanation-types"></a>Introducción a los tipos de explicación
 
@@ -71,7 +71,7 @@ Además, si tiene requisitos de usar mayúsculas y minúsculas en su lista de pa
    ![Solo usar mayúsculas y minúsculas exactamente](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> En lugar de crear manualmente una explicación de las listas de patrones, utilice la [Biblioteca de explicación](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) para usar plantillas de listas de patrones para las listas de patrones comunes, como *fecha*, *números de teléfono*, *número de tarjeta de crédito*, etc.
+> En lugar de crear manualmente una explicación de las listas de patrones, utilice la [Biblioteca de explicación](#use-explanation-templates) para usar plantillas de listas de patrones para las listas de patrones comunes, como *fecha*, *números de teléfono*, *número de tarjeta de crédito*, etc.
 
 ## <a name="proximity"></a>Proximidad 
 

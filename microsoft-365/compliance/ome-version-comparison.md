@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Este artículo ayuda a explicar las diferencias entre las diferentes versiones del cifrado de mensajes de Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a587e27460d949811f9f30af0244cf325aaadac6
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: e75a709be6141c4bd1df4e63df677dd263c0777a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741341"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927738"
 ---
 # <a name="compare-versions-of-ome"></a>Comparar versiones de OME
 
@@ -41,7 +41,7 @@ Antes de comenzar, revise y evalúe el impacto de su organización. Si su organi
 
 ### <a name="prepare-for-ad-rms-deprecation"></a>Prepararse para la desuso de AD RMS
 
-Si ya ha configurado Azure Information Protection pero no lo está usando, habilite el servicio con Exchange Online PowerShell. En el equipo local, con una cuenta laboral o educativa que tenga permisos de administrador global en su organización, conéctese a [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) en una ventana Windows PowerShell usuario.
+Si ya ha configurado Azure Information Protection pero no lo está usando, habilite el servicio con Exchange Online PowerShell. En el equipo local, con una cuenta laboral o educativa que tenga permisos de administrador global en su organización, conéctese a [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) en una ventana Windows PowerShell usuario.
 
 Para habilitar Azure Information Protection, use Set-IrmConfiguration cmdlet escribiendo el siguiente comando.
 
@@ -49,7 +49,7 @@ Para habilitar Azure Information Protection, use Set-IrmConfiguration cmdlet esc
 Set-IrmConfiguration -AzureRMSLicensingEnabled $true
 ```
 
-Si su organización aún no ha configurado Azure Information Protection, deberá migrar de AD RMS a Azure Information Protection. Para obtener instrucciones, [consulte Migración de AD RMS a Azure Information Protection](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms).
+Si su organización aún no ha configurado Azure Information Protection, deberá migrar de AD RMS a Azure Information Protection. Para obtener instrucciones, [consulte Migración de AD RMS a Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms).
 
 ## <a name="side-by-side-comparison-of-features-and-capabilities"></a>Comparación en paralelo de características y funcionalidades
 

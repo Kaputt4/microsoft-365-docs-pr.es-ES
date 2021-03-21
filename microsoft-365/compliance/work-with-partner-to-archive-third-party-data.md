@@ -15,17 +15,17 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Aprenda a configurar un conector personalizado para importar datos de terceros desde orígenes de datos como Salesforce Salesforce, Yahoo Messenger o Yammer.
-ms.openlocfilehash: 64e903604ea56e5f53e3cc154bd54459a6d8d554
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+description: Obtenga información sobre cómo configurar un conector personalizado para importar datos de terceros desde orígenes de datos como Salesforce Chatter, Yahoo Messenger o Yammer.
+ms.openlocfilehash: adf6583f397296361e8f0cb6f12e7054436fa34f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620216"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928384"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Trabajar con un socio para archivar datos de terceros
 
-Puede trabajar con un partner de Microsoft para importar y archivar datos de un origen de datos de terceros a Microsoft 365. Un asociado puede proporcionarle un conector personalizado que está configurado para extraer elementos del origen de datos de terceros (de forma periódica) y, a continuación, importar esos elementos. El conector asociado convierte el contenido de un elemento del origen de datos en un formato de mensaje de correo electrónico y, a continuación, almacena los elementos en buzones. Después de importar datos de terceros, puede aplicar las características de cumplimiento de Microsoft 365, como retención por juicio, exhibición de documentos electrónicos, archivado de In-Place, auditoría y directivas de retención de Microsoft 365 a estos datos.
+Puede trabajar con un partner de Microsoft para importar y archivar datos de un origen de datos de terceros a Microsoft 365. Un partner puede proporcionarle un conector personalizado que esté configurado para extraer elementos del origen de datos de terceros (de forma regular) y, a continuación, importar esos elementos. El conector de asociado convierte el contenido de un elemento del origen de datos a un formato de mensaje de correo electrónico y, a continuación, almacena los elementos en buzones. Después de importar datos de terceros, puede aplicar características de cumplimiento de Microsoft 365 como retención por juicio, exhibición de documentos electrónicos, archivado de In-Place, auditoría y directivas de retención de Microsoft 365 a estos datos.
 
 >[!IMPORTANT]
 >La [solución de cumplimiento](communication-compliance.md) de comunicaciones de Microsoft 365 no se puede aplicar a los datos de terceros importados por los conectores asociados mencionados en este artículo. 
@@ -44,25 +44,25 @@ A continuación se ofrece información general sobre el proceso y los pasos nece
 
 ## <a name="how-the-third-party-data-import-process-works"></a>Cómo funciona el proceso de importación de datos de terceros
 
-En la siguiente ilustración y descripción se explica cómo funciona el proceso de importación de datos de terceros al trabajar con un asociado.
+En la siguiente ilustración y descripción se explica cómo funciona el proceso de importación de datos de terceros al trabajar con un partner.
   
 ![Cómo funciona el proceso de importación de datos de terceros](../media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
   
 1. El cliente trabaja con su partner de elección para configurar un conector que extraerá elementos del origen de datos de terceros y luego importará esos elementos a Microsoft 365.
     
-2. El conector asociado se conecta a orígenes de datos de terceros a través de una API de terceros (programada o configurada) y extrae elementos del origen de datos. El conector asociado convierte el contenido de un elemento en un formato de mensaje de correo electrónico. Consulte la [sección Más información](#more-information) para obtener una descripción del esquema de formato de mensaje. 
+2. El conector de partners se conecta a orígenes de datos de terceros a través de una API de terceros (de forma programada o configurada) y extrae elementos del origen de datos. El conector asociado convierte el contenido de un elemento en un formato de mensaje de correo electrónico. Vea la [sección Más información](#more-information) para obtener una descripción del esquema de formato de mensaje. 
     
-3. El conector asociado se conecta al servicio de Azure en Microsoft 365 mediante el servicio web de Exchange (EWS) a través de un punto final conocido.
+3. El conector de partners se conecta al servicio de Azure en Microsoft 365 mediante el servicio web de Exchange (EWS) a través de un punto final conocido.
     
 4. Los elementos se importan al buzón de un usuario específico o a un buzón global de datos de terceros. Que un elemento se importe al buzón de un usuario específico o al buzón de datos de terceros depende de los criterios siguientes:
     
-   1. **Elementos que tienen un identificador de usuario que corresponde a una cuenta de usuario:** Si el conector asociado puede asignar el identificador de usuario del elemento en el origen de datos de terceros a un identificador de usuario específico en Microsoft 365, el elemento se copia en la carpeta **Purgas** de la carpeta Elementos recuperables del usuario. Los usuarios no pueden acceder a los elementos de esta carpeta. Sin embargo, puede usar las herramientas de exhibición de documentos electrónicos para buscar elementos en la carpeta Purgas.
+   1. **Elementos que tienen un identificador de usuario que corresponde a una cuenta de usuario:** Si el conector de asociado puede asignar el identificador de usuario del elemento del origen de datos de terceros a un identificador de usuario específico de Microsoft 365, el elemento se copia en la carpeta **Purgas** de la carpeta Elementos recuperables del usuario. Los usuarios no pueden acceder a los elementos de esta carpeta. Sin embargo, puede usar herramientas de exhibición de documentos electrónicos para buscar elementos en la carpeta Purgas.
     
-   1. **Elementos que no tienen un identificador de usuario que corresponde a una cuenta de usuario:** Si el conector asociado no puede asignar el identificador de usuario de un elemento  a un identificador de usuario específico, el elemento se copia en la carpeta Bandeja de entrada del buzón de datos de terceros. La importación de elementos a la Bandeja de entrada permite que usted u otra persona de la organización inicie sesión en el buzón de correo de terceros para ver y administrar estos elementos, y ver si es necesario realizar ajustes en la configuración del conector asociado.
+   1. **Elementos que no tienen un identificador de usuario que corresponda a una cuenta de usuario:** Si el conector de asociado no puede asignar el identificador de usuario de un elemento a un identificador de usuario específico, el elemento se copia en la carpeta **Bandeja** de entrada del buzón de datos de terceros. La importación de elementos a la Bandeja de entrada permite que usted u otra persona de la organización inicie sesión en el buzón de correo de terceros para ver y administrar estos elementos, y ver si es necesario realizar ajustes en la configuración del conector asociado.
  
 ## <a name="step-1-find-a-third-party-data-partner"></a>Paso 1: Buscar un asociado de datos de terceros
 
-Un componente clave para archivar datos de terceros en Microsoft 365 es buscar y trabajar con un partner de Microsoft especializado en capturar datos de un origen de datos de terceros e importarlos a Microsoft 365. Después de importar los datos, se pueden archivar y conservar junto con otros datos de Microsoft de su organización, como correo electrónico de Exchange y documentos de SharePoint y OneDrive para la Empresa. Un asociado crea un conector que extrae datos de orígenes de datos de terceros de su organización (como BlackBerry, Facebook, Google+, Thomson Reuters, Twitter y YouTube) y pasa esos datos a una API de Microsoft 365 que importa elementos a buzones de Exchange como mensajes de correo electrónico.
+Un componente clave para archivar datos de terceros en Microsoft 365 es buscar y trabajar con un partner de Microsoft especializado en capturar datos de un origen de datos de terceros e importarlos a Microsoft 365. Después de importar los datos, se pueden archivar y conservar junto con otros datos de Microsoft de su organización, como correo electrónico de Exchange y documentos de SharePoint y OneDrive para la Empresa. Un partner crea un conector que extrae datos de orígenes de datos de terceros de la organización (como BlackBerry, Facebook, Google+, Thomson Reuters, Twitter y YouTube) y los pasa a una API de Microsoft 365 que importa elementos a buzones de Exchange como mensajes de correo electrónico.
   
 En las secciones siguientes se muestra una lista de los partners de Microsoft (y los orígenes de datos de terceros que admiten) que participan en el programa para archivar datos de terceros en Microsoft 365.
 
@@ -130,7 +130,7 @@ En las secciones siguientes se muestra una lista de los partners de Microsoft (y
     
 - Flickr
     
-- Twitter
+- Instagram
     
 - LinkedIn
     
@@ -172,7 +172,7 @@ En las secciones siguientes se muestra una lista de los partners de Microsoft (y
 
 - CrowdCompass
 
-- Archivos de texto delimitados por personalizados
+- Archivos de texto delimitados de forma personalizada
     
 - Archivos XML personalizados
     
@@ -276,9 +276,9 @@ En las secciones siguientes se muestra una lista de los partners de Microsoft (y
     
 - Directiva y registro en tiempo real de chat
     
-- Chicharrón
+- Chatter
     
-- Servidor de presencia de mensajería instantánea de Cisco &amp; (v9.0.1, v9.1, v9.1.1 SU1, v10, v10.5.1 SU1)
+- Cisco IM &amp; Presence Server (v9.0.1, v9.1, v9.1.1 SU1, v10, v10.5.1 SU1)
     
 - Servidor de presencia unificada de Cisco (v8.6.3, v8.6.4, v8.6.5)
     
@@ -294,7 +294,7 @@ En las secciones siguientes se muestra una lista de los partners de Microsoft (y
     
 - FastTrack
     
-- Dialecto
+- Gnutella
     
 - Google+
     
@@ -366,7 +366,7 @@ En las secciones siguientes se muestra una lista de los partners de Microsoft (y
     
 - NEONetwork
     
-- Microsoft 365 Lync dedicado
+- Microsoft 365 Lync Dedicado
     
 - Mensajería instantánea compartida de Microsoft 365
     
@@ -473,48 +473,48 @@ En las secciones siguientes se muestra una lista de los partners de Microsoft (y
   
 ## <a name="step-2-create-and-configure-a-third-party-data-mailbox-in-microsoft-365"></a>Paso 2: Crear y configurar un buzón de datos de terceros en Microsoft 365
 
-Estos son los pasos para crear y configurar un buzón de datos de terceros para importar datos a Microsoft 365. Como se explicó anteriormente, los elementos se importan a este buzón si el conector asociado no puede asignar el identificador de usuario del elemento a una cuenta de usuario.
+Estos son los pasos para crear y configurar un buzón de datos de terceros para importar datos a Microsoft 365. Como se explicó anteriormente, los elementos se importan a este buzón si el conector de asociado no puede asignar el identificador de usuario del elemento a una cuenta de usuario.
   
  **Complete estas tareas en el Centro de administración de Microsoft 365**
   
-1. Crear una cuenta de usuario y asignarle una licencia de Exchange Online Plan 2; vea [Agregar usuarios a Microsoft 365.](https://go.microsoft.com/fwlink/p/?LinkId=692098) Se requiere una licencia de plan 2 para poner el buzón en retención por juicio o habilitar un buzón de archivo que tenga una cuota de almacenamiento ilimitada.
+1. Cree una cuenta de usuario y asígnele una licencia de Exchange Online Plan 2; vea [Agregar usuarios a Microsoft 365](../admin/add-users/add-users.md). Se requiere una licencia del plan 2 para colocar el buzón en retención por juicio o habilitar un buzón de archivo que tenga una cuota de almacenamiento ilimitada.
     
-2. Agregue la cuenta de usuario para el buzón de datos de terceros al rol de administrador de **Exchange** en Microsoft 365; vea [Asignar roles de administrador en Microsoft 365.](https://go.microsoft.com/fwlink/p/?LinkId=532393)
+2. Agregue la cuenta de usuario del buzón de datos de terceros al rol de administrador de **Exchange** en Microsoft 365; vea [Asignar roles de administrador en Microsoft 365](../admin/add-users/assign-admin-roles.md).
     
     > [!TIP]
     > Escriba las credenciales para esta cuenta de usuario. Necesitará proporcionárselas a su socio, tal como se describe en el paso 4. 
   
  **Completar estas tareas en el Centro de administración de Exchange**
   
-1. Ocultar el buzón de datos de terceros de la libreta de direcciones y otras listas de direcciones de su organización; vea [Administrar buzones de usuario.](https://go.microsoft.com/fwlink/p/?LinkId=616058) Como alternativa, puede ejecutar el siguiente comando de PowerShell:
+1. Ocultar el buzón de datos de terceros de la libreta de direcciones y otras listas de direcciones de la organización; vea [Administrar buzones de usuario](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes). Como alternativa, puede ejecutar el siguiente comando de PowerShell:
     
     ```powershell
     Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
     ```
 
-2. Asigne el **permiso FullAccess** al buzón de datos de terceros para que los administradores o responsables de cumplimiento normativo puedan abrir el buzón de datos de terceros en el cliente de escritorio de Outlook; vea [Administrar permisos para destinatarios.](https://go.microsoft.com/fwlink/p/?LinkId=692104)
+2. Asigne el **permiso FullAccess** al buzón de datos de terceros para que los administradores o responsables de cumplimiento puedan abrir el buzón de datos de terceros en el cliente de escritorio de Outlook; vea [Manage permissions for recipients](https://go.microsoft.com/fwlink/p/?LinkId=692104).
     
 3. Habilite las siguientes características relacionadas con el cumplimiento para el buzón de datos de terceros:
     
-    - Habilitar el buzón de archivo; vea [Habilitar buzones de archivo y](enable-archive-mailboxes.md) Habilitar archivado [ilimitado.](enable-unlimited-archiving.md) Esto le permite liberar espacio de almacenamiento en el buzón principal mediante la configuración de una directiva de archivo que mueve elementos de datos de terceros al buzón de archivo. Esto le proporciona un almacenamiento ilimitado para datos de terceros.
+    - Habilitar el buzón de archivo; vea [Habilitar buzones de archivo](enable-archive-mailboxes.md) y Habilitar archivado [ilimitado.](enable-unlimited-archiving.md) Esto le permite liberar espacio de almacenamiento en el buzón principal configurando una directiva de archivo que mueve elementos de datos de terceros al buzón de archivo. Esto le proporciona almacenamiento ilimitado para datos de terceros.
     
-    - Coloque el buzón de datos de la tercera persona en retención por juicio. También puede aplicar una directiva de retención de Microsoft 365 en el Centro de seguridad y cumplimiento. Al colocar este buzón en retención, se conservan los elementos de datos de terceros (indefinidamente o durante un período de tiempo especificado) y se evita que se purguen del buzón. Consulte uno de los siguientes temas:
+    - Coloque el buzón de datos de la tercera persona en retención por juicio. También puede aplicar una directiva de retención de Microsoft 365 en el Centro de seguridad y cumplimiento. Al colocar este buzón en espera, se conservan los elementos de datos de terceros (de forma indefinida o durante una duración especificada) y se evita que se purguen del buzón. Vea uno de los siguientes temas:
     
-      - [Poner un buzón en retención por juicio](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+      - [Poner un buzón en retención por juicio](./create-a-litigation-hold.md)
     
       - [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
     
-    - Habilitar el registro de auditoría de buzones para el acceso de propietario, delegado y administrador al buzón de datos de terceros; vea [Habilitar la auditoría de buzones](enable-mailbox-auditing.md)de correo. Esto le permite auditar toda la actividad realizada por cualquier usuario que tenga acceso al buzón de datos de terceros.
+    - Habilitar el registro de auditoría de buzones de correo para el acceso de propietario, delegado y administrador al buzón de datos de terceros; vea [Enable mailbox auditing](enable-mailbox-auditing.md). Esto le permite auditar toda la actividad realizada por cualquier usuario que tenga acceso al buzón de datos de terceros.
 
 ## <a name="step-3-configure-user-mailboxes-for-third-party-data"></a>Paso 3: Configurar los buzones de usuario para los datos de terceros
 
-El paso siguiente es configurar los buzones de usuario para que admitan los datos de terceros. Complete estas tareas con el Centro de administración de Exchange o con los cmdlets de Windows PowerShell correspondientes.
+El paso siguiente es configurar los buzones de usuario para que admitan los datos de terceros. Complete estas tareas mediante el Centro de administración de Exchange o mediante el uso de los cmdlets Windows PowerShell correspondientes.
   
-1. Habilitar el buzón de archivo para cada usuario; vea [Habilitar buzones de archivo y](enable-archive-mailboxes.md) Habilitar archivado [ilimitado.](enable-unlimited-archiving.md)
+1. Habilitar el buzón de archivo para cada usuario; vea [Habilitar buzones de archivo](enable-archive-mailboxes.md) y Habilitar archivado [ilimitado.](enable-unlimited-archiving.md)
     
-2. Poner los buzones de usuario en retención por juicio o aplicar una directiva de retención de Microsoft 365; vea uno de los siguientes temas: 
+2. Colocar buzones de usuario en retención por juicio o aplicar una directiva de retención de Microsoft 365; vea uno de los siguientes temas: 
     
-    - [Poner un buzón en retención por juicio](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+    - [Poner un buzón en retención por juicio](./create-a-litigation-hold.md)
     
     - [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
     
@@ -522,9 +522,9 @@ El paso siguiente es configurar los buzones de usuario para que admitan los dato
 
 ## <a name="step-4-provide-your-partner-with-information"></a>Paso 4: Proporcionar información al asociado
 
-El último paso es proporcionar a su asociado la siguiente información para que pueda configurar el conector para conectarse a su organización para importar datos a los buzones de usuario y al buzón de datos de terceros. 
+El paso final es proporcionar a su partner la siguiente información para que pueda configurar el conector para conectarse a su organización para importar datos a buzones de usuario y al buzón de datos de terceros. 
   
-- El punto de conexión usado para conectarse al servicio de Azure en Microsoft 365:
+- Punto de conexión usado para conectarse al servicio azure en Microsoft 365:
 
     ```http
     https://office365ingestionsvc.gble1.protection.outlook.com/service/ThirdPartyIngestionService.svc
@@ -534,46 +534,46 @@ El último paso es proporcionar a su asociado la siguiente información para que
  
 ## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>Paso 5: Registrar el conector de datos de terceros en Azure Active Directory
 
-A partir del 30 de septiembre de 2018, el servicio azure de Microsoft 365 empezará a usar la autenticación moderna en Exchange Online para autenticar conectores de datos de terceros que intenten conectarse a su organización para importar datos. El motivo de este cambio es que la autenticación moderna proporciona más seguridad que el método actual, que se basaba en una lista de permitidos para conectores de terceros que usan el punto de conexión descrito anteriormente para conectarse al servicio de Azure.
+A partir del 30 de septiembre de 2018, el servicio Azure en Microsoft 365 empezará a usar la autenticación moderna en Exchange Online para autenticar conectores de datos de terceros que intenten conectarse a su organización para importar datos. El motivo de este cambio es que la autenticación moderna proporciona más seguridad que el método actual, que se basaba en una lista de permitidos para conectores de terceros que usan el extremo descrito anteriormente para conectarse al servicio de Azure.
 
-Para permitir que un conector de datos de terceros se conecte a Microsoft 365 mediante el nuevo método de autenticación moderno, un administrador de su organización debe dar su consentimiento para registrar el conector como una aplicación de servicio de confianza en Azure Active Directory. Para ello, acepta una solicitud de permiso para permitir que el conector tenga acceso a los datos de su organización en Azure Active Directory. Después de aceptar esta solicitud, el conector de datos de terceros se agrega como una aplicación de empresa a Azure Active Directory y se representa como una entidad de servicio. Para obtener más información sobre el proceso de consentimiento, consulte [Consentimiento del administrador de inquilinos.](https://docs.microsoft.com/skype-sdk/trusted-application-api/docs/tenantadminconsent)
+Para permitir que un conector de datos de terceros se conecte a Microsoft 365 mediante el nuevo método de autenticación moderno, un administrador de su organización debe dar su consentimiento para registrar el conector como una aplicación de servicio de confianza en Azure Active Directory. Para ello, acepte una solicitud de permiso para permitir que el conector tenga acceso a los datos de su organización en Azure Active Directory. Después de aceptar esta solicitud, el conector de datos de terceros se agrega como una aplicación de empresa a Azure Active Directory y se representa como entidad de servicio. Para obtener más información sobre el proceso de consentimiento, vea  [Tenant Admin Consent](/skype-sdk/trusted-application-api/docs/tenantadminconsent).
 
 Estos son los pasos para obtener acceso y aceptar la solicitud para registrar el conector:
 
 1. Vaya a [esta página e](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) inicie sesión con las credenciales de un administrador global.
 
-   Se muestra el siguiente cuadro de diálogo. Puede expandir las vatas para revisar los permisos que se asignarán al conector.
+   Se muestra el siguiente cuadro de diálogo. Puede expandir los carets para revisar los permisos que se asignarán al conector.
 
-   ![Se muestra el cuadro de diálogo de solicitud de permisos](../media/O365-ThirdPartyDataConnector-OptIn1.png)
+   ![Se muestra el cuadro de diálogo solicitud de permisos](../media/O365-ThirdPartyDataConnector-OptIn1.png)
 
 2. Haga clic en **Aceptar**.
 
-Después de aceptar la solicitud, se muestra [Azure Portal.](https://portal.azure.com) Para ver la lista de aplicaciones de su organización, haga clic en **Aplicaciones de Azure Active Directory**  >  **Enterprise.** El conector de datos de terceros de Microsoft 365 aparece en la hoja **de aplicaciones** enterprise.
+Después de aceptar la solicitud, se muestra [Azure Portal.](https://portal.azure.com) Para ver la lista de aplicaciones de su organización, haga clic en **Azure Active Directory** Enterprise  >  **applications**. El conector de datos de terceros de Microsoft 365 se muestra en la **hoja Aplicaciones empresariales.**
 
 > [!IMPORTANT]
-> Después del 30 de septiembre de 2018, los datos de terceros ya no se importarán a los buzones de la organización si no registra un conector de datos de terceros en Azure Active Directory. Tenga en cuenta que los conectores de datos de terceros existentes (aquellos creados antes del 30 de septiembre de 2018) también deben registrarse en Azure Active Directory siguiendo el procedimiento del paso 5.
+> Después del 30 de septiembre de 2018, los datos de terceros ya no se importarán en buzones de su organización si no registra un conector de datos de terceros en Azure Active Directory. Tenga en cuenta que los conectores de datos de terceros existentes (los creados antes del 30 de septiembre de 2018) también deben registrarse en Azure Active Directory siguiendo el procedimiento del paso 5.
 
-### <a name="revoking-consent-for-a-third-party-data-connector"></a>Revocar el consentimiento para un conector de datos de terceros
+### <a name="revoking-consent-for-a-third-party-data-connector"></a>Revocación del consentimiento para un conector de datos de terceros
 
 Después de que su organización consiente la solicitud de permisos para registrar un conector de datos de terceros en Azure Active Directory, su organización puede revocar ese consentimiento en cualquier momento. Sin embargo, revocar el consentimiento de un conector significa que los datos del origen de datos de terceros ya no se importarán a Microsoft 365.
 
-Para revocar el consentimiento de un conector de datos de terceros, puede eliminar la aplicación  (eliminando la entidad de servicio correspondiente) de Azure Active Directory mediante la hoja de aplicaciones enterprise en Azure Portal, o mediante [remove-MsolServicePrincipal](https://docs.microsoft.com/powershell/module/msonline/remove-msolserviceprincipal) en PowerShell de Microsoft 365. También puede usar el cmdlet [Remove-AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/remove-azureadserviceprincipal) en Azure Active Directory PowerShell.
+Para revocar el consentimiento de un conector de datos de terceros, puede eliminar la aplicación  (eliminando la entidad de servicio correspondiente) de Azure Active Directory mediante la hoja Aplicaciones de empresa en Azure Portal o mediante [remove-MsolServicePrincipal](/powershell/module/msonline/remove-msolserviceprincipal) en PowerShell de Microsoft 365. También puede usar el cmdlet [Remove-AzureADServicePrincipal](/powershell/module/azuread/remove-azureadserviceprincipal) en PowerShell de Azure Active Directory.
   
 ## <a name="more-information"></a>Más información
 
-- Tal como se ha explicado, los elementos de orígenes de datos de terceros se importan a los buzones de Exchange como mensajes de correo electrónico. El conector asociado importa el elemento mediante un esquema requerido por la API de Microsoft 365. En la tabla siguiente se describen las propiedades del mensaje de un elemento de un origen de datos de terceros después de que este se importe a un buzón de Exchange como un mensaje de correo electrónico. La tabla también indica si la propiedad del mensaje es obligatoria. Las propiedades obligatorias deben rellenarse. Si a un elemento le falta una propiedad obligatoria, no se importará a Microsoft 365. El proceso de importación devuelve un mensaje de error que explica por qué no se importó un elemento y qué propiedad falta.<br/><br/>
+- Tal como se ha explicado, los elementos de orígenes de datos de terceros se importan a los buzones de Exchange como mensajes de correo electrónico. El conector de asociado importa el elemento mediante un esquema requerido por la API de Microsoft 365. En la tabla siguiente se describen las propiedades del mensaje de un elemento de un origen de datos de terceros después de que este se importe a un buzón de Exchange como un mensaje de correo electrónico. La tabla también indica si la propiedad del mensaje es obligatoria. Las propiedades obligatorias deben rellenarse. Si a un elemento le falta una propiedad obligatoria, no se importará a Microsoft 365. El proceso de importación devuelve un mensaje de error que explica por qué no se importó un elemento y qué propiedad falta.<br/><br/>
     
     |**Propiedad del mensaje**|**¿Es obligatoria?**|**Descripción**|**Valor de ejemplo**|
     |:-----|:-----|:-----|:-----|
-    |**FROM** <br/> |Sí  <br/> |El usuario que originalmente ha creado o enviado el elemento en el origen de datos de terceros. El conector asociado intenta asignar el identificador de usuario del elemento de origen (por ejemplo, un identificador de Twitter) a una cuenta de usuario para todos los participantes (usuarios en los campos FROM y TO). Una copia del mensaje se importará al buzón de cada participante. Si ninguno de los participantes del elemento se puede asignar a una cuenta de usuario, el elemento se importará al buzón de archivado de terceros en Microsoft 365.  <br/> <br/> El participante identificado como el remitente del elemento debe tener un buzón activo en la organización a la que se va a importar el elemento. Si el remitente no tiene un buzón activo, se devolverá el siguiente error:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
+    |**FROM** <br/> |Sí  <br/> |El usuario que originalmente ha creado o enviado el elemento en el origen de datos de terceros. El conector de partners intenta asignar el identificador de usuario del elemento de origen (por ejemplo, un identificador de Twitter) a una cuenta de usuario para todos los participantes (usuarios en los campos FROM y TO). Una copia del mensaje se importará al buzón de cada participante. Si ninguno de los participantes del elemento se puede asignar a una cuenta de usuario, el elemento se importará al buzón de archivado de terceros en Microsoft 365.  <br/> <br/> El participante identificado como el remitente del elemento debe tener un buzón activo en la organización a la que se va a importar el elemento. Si el remitente no tiene un buzón activo, se devolverá el siguiente error:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
     |**TO** <br/> |Sí  <br/> |El usuario que ha recibido un elemento, si es aplicable a un elemento del origen de datos.  <br/> | `bob@contoso.com` <br/> |
     |**Asunto** <br/> |No  <br/> |El asunto del elemento de origen.  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
-    |**DATE** <br/> |Sí  <br/> |La fecha en que el elemento se creó o publicó originalmente en el origen de datos del cliente. Por ejemplo, la fecha en la que se tuiteó un mensaje de Twitter.  <br/> | `01 NOV 2015` <br/> |
-    |**BODY** <br/> |No  <br/> |El contenido del mensaje o la publicación. En el caso de algunos orígenes de datos, el contenido de esta propiedad podría ser el mismo que el contenido de la propiedad **SUBJECT**. Durante el proceso de importación, el conector asociado intenta mantener la fidelidad total desde el origen de contenido lo más posible. Si es posible, los archivos, los gráficos u otro contenido del cuerpo del elemento de origen se incluyen en esta propiedad. Si no es así, el contenido del elemento de origen se incluye en la propiedad **ATTACHMENT**. El contenido de esta propiedad depende del conector asociado y de la capacidad de la plataforma de origen.  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
-    |**DATOS ADJUNTOS** <br/> |No  <br/> |Si un elemento del origen de datos (como un tweet en Twitter o una conversación de mensajería instantánea) tiene un archivo adjunto o incluye imágenes, el partner connect intentará primero incluir datos adjuntos en la propiedad **BODY.** Si no es posible, se agrega a la propiedad ** ATTACHMENT **. Otros ejemplos de datos adjuntos son los "Me gusta" de Facebook, los metadatos del origen del contenido y las respuestas a un mensaje o una publicación.  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |Sí  <br/> | Se trata de una propiedad de varios valores, que se crea y rellena mediante el conector asociado. El formato de esta propiedad es  `IPM.NOTE.Source.Event` . (Esta propiedad debe comenzar por  `IPM.NOTE` . Este formato es similar al de la clase  `IPM.NOTE.X` de mensaje). Esta propiedad incluye la siguiente información:  <br/><br/>`Source`: indica el origen de datos de terceros; por ejemplo, Twitter, Facebook o BlackBerry.  <br/> <br/>  `Event`: indica el tipo de actividad que se realizó en el origen de datos de terceros que produjo los elementos; por ejemplo, un tweet en Twitter o una publicación en Facebook. Los eventos son específicos del origen de datos.  <br/> <br/>  Un objetivo de esta propiedad es filtrar elementos específicos en función del origen de datos en el que un elemento se originó o basó, o bien en función del tipo de evento. Por ejemplo, en una búsqueda de exhibición de documentos electrónicos podría crear una consulta de búsqueda para encontrar todos los tweets publicados por un usuario concreto.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**DATE** <br/> |Sí  <br/> |La fecha en que se creó o publicó originalmente el elemento en el origen de datos del cliente. Por ejemplo, la fecha en que se tuiteó un mensaje de Twitter.  <br/> | `01 NOV 2015` <br/> |
+    |**BODY** <br/> |No  <br/> |El contenido del mensaje o la publicación. En el caso de algunos orígenes de datos, el contenido de esta propiedad podría ser el mismo que el contenido de la propiedad **SUBJECT**. Durante el proceso de importación, el conector de asociado intenta mantener la fidelidad total desde el origen de contenido como sea posible. Si es posible, los archivos, los gráficos u otro contenido del cuerpo del elemento de origen se incluyen en esta propiedad. Si no es así, el contenido del elemento de origen se incluye en la propiedad **ATTACHMENT**. El contenido de esta propiedad depende del conector de asociado y de la funcionalidad de la plataforma de origen.  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
+    |**DATOS ADJUNTOS** <br/> |No  <br/> |Si un elemento del origen de datos (como un tweet en Twitter o una conversación de mensajería instantánea) tiene un archivo adjunto o incluye imágenes, el partner connect intentará primero incluir datos adjuntos en la **propiedad BODY.** Si no es posible, se agrega a la propiedad ** ATTACHMENT **. Otros ejemplos de datos adjuntos son los "Me gusta" de Facebook, los metadatos del origen del contenido y las respuestas a un mensaje o una publicación.  <br/> | `image.gif` <br/> |
+    |**MESSAGECLASS** <br/> |Sí  <br/> | Se trata de una propiedad de varios valores, que se crea y rellena mediante el conector de asociado. El formato de esta propiedad es  `IPM.NOTE.Source.Event` . (Esta propiedad debe comenzar por  `IPM.NOTE` . Este formato es similar al de la clase  `IPM.NOTE.X` de mensaje). Esta propiedad incluye la siguiente información:  <br/><br/>`Source`: indica el origen de datos de terceros; por ejemplo, Twitter, Facebook o BlackBerry.  <br/> <br/>  `Event`: indica el tipo de actividad que se realizó en el origen de datos de terceros que produjo los elementos; por ejemplo, un tweet en Twitter o una publicación en Facebook. Los eventos son específicos del origen de datos.  <br/> <br/>  Un objetivo de esta propiedad es filtrar elementos específicos en función del origen de datos en el que un elemento se originó o basó, o bien en función del tipo de evento. Por ejemplo, en una búsqueda de exhibición de documentos electrónicos podría crear una consulta de búsqueda para encontrar todos los tweets publicados por un usuario concreto.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
-- Cuando los elementos se importan correctamente a los buzones de Microsoft 365, se devuelve un identificador único al autor de la llamada como parte de la respuesta HTTP. Este identificador, denominado , puede usarse para la solución de problemas posterior por parte de los asociados para realizar un seguimiento de un extremo a  `x-IngestionCorrelationID` otro de los elementos. Se recomienda que los asociados capturen esta información y la registren según corresponda en su extremo. A continuación se incluye un ejemplo de una respuesta HTTP que muestra este identificador:
+- Cuando los elementos se importan correctamente a buzones de Microsoft 365, se devuelve un identificador único al autor de la llamada como parte de la respuesta HTTP. Este identificador, denominado , puede usarse para fines de solución de problemas posteriores por parte de los asociados para realizar un seguimiento de un extremo a  `x-IngestionCorrelationID` otro de los elementos. Se recomienda que los asociados capturen esta información y la registren según corresponda en su extremo. A continuación se incluye un ejemplo de una respuesta HTTP que muestra este identificador:
 
     ```http
     HTTP/1.1 200 OK
@@ -585,13 +585,13 @@ Para revocar el consentimiento de un conector de datos de terceros, puede elimin
     Date: Tue, 02 Feb 2016 22:55:33 GMT 
     ```
 
-- Puede usar la herramienta de búsqueda de contenido en el Centro de seguridad y cumplimiento para buscar los elementos que se importaron a los buzones de un origen de datos de terceros. Para buscar específicamente estos elementos importados, puede usar los siguientes pares de propiedad-valor de mensaje en el cuadro de palabras clave para una búsqueda de contenido.
+- Puede usar la herramienta búsqueda de contenido en el Centro de seguridad y cumplimiento para buscar elementos que se importaron a buzones de correo desde un origen de datos de terceros. Para buscar específicamente estos elementos importados, puede usar los siguientes pares de propiedad-valor de mensaje en el cuadro de palabra clave de una búsqueda de contenido.
     
-  - **`kind:externaldata`**: use este par propiedad-valor para buscar en todos los tipos de datos de terceros. Por ejemplo, para buscar elementos que se importaron desde un origen de datos de terceros y contenían la palabra "contoso" en la propiedad Subject del elemento importado, se usaría la consulta de palabra clave  `kind:externaldata AND subject:contoso` .
+  - **`kind:externaldata`**: use este par de propiedades y valores para buscar en todos los tipos de datos de terceros. Por ejemplo, para buscar elementos que se importaron desde un origen de datos de terceros y contenían la palabra "contoso" en la propiedad Subject del elemento importado, se usaría la consulta de palabra clave  `kind:externaldata AND subject:contoso` .
     
-  - **`itemclass:ipm.externaldata.<third-party data type>`**: use este par propiedad-valor para buscar solo un tipo específico de datos de terceros. Por ejemplo, para buscar solo datos de Facebook que contengan la palabra "contoso" en la propiedad Subject, debe usar la consulta de palabra  `itemclass:ipm.externaldata.Facebook* AND subject:contoso` clave. 
+  - **`itemclass:ipm.externaldata.<third-party data type>`**: use este par propiedad-valor para buscar solo un tipo de datos de terceros especificado. Por ejemplo, para buscar solo datos de Facebook que contengan la palabra "contoso" en la propiedad Subject, usaría la consulta de palabra clave  `itemclass:ipm.externaldata.Facebook* AND subject:contoso` . 
 
-  Para obtener una lista completa de los valores que se deben usar para los tipos de datos de terceros para la propiedad, vea Usar la búsqueda de contenido para buscar datos de terceros que se importaron a `itemclass` [Microsoft 365.](use-content-search-to-search-third-party-data-that-was-imported.md)
+  Para obtener una lista completa de los valores que se usarán para tipos de datos de terceros para la propiedad, vea  `itemclass` Use Content Search to search [third-party data that was imported to Microsoft 365](use-content-search-to-search-third-party-data-that-was-imported.md).
     
    Para obtener más información sobre cómo usar la búsqueda de contenido y crear consultas de búsqueda de palabras clave, vea:
     

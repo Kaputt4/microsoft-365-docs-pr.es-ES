@@ -1,5 +1,5 @@
 ---
-title: Información sobre el flujo de correo en el panel de flujo de correo
+title: Información sobre el flujo de correo en el panel Flujo de correo
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -9,16 +9,16 @@ audience: ITPro
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
-description: Los administradores pueden obtener información sobre las perspectivas y los informes que están disponibles en el panel de flujo de correo en el Centro de & cumplimiento.
+description: Los administradores pueden obtener información sobre los conocimientos e informes que están disponibles en el panel flujo de correo en el Centro de seguridad & cumplimiento.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7432eca577fb264126b9fc8f10bdd83de32711cf
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: ce252535d472cc4941a1353aa2be94759daebf4a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289680"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926861"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
@@ -29,23 +29,23 @@ ms.locfileid: "50289680"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Los administradores pueden usar el panel de flujo de correo en el Centro de seguridad y cumplimiento de & para detectar tendencias, información y realizar acciones para solucionar problemas relacionados con el flujo de correo en su organización.
+Los administradores pueden usar el panel flujo de correo en el Centro de seguridad & cumplimiento para detectar tendencias, información y realizar acciones para solucionar problemas relacionados con el flujo de correo en su organización.
 
-![Panel de flujo de correo en el Centro de & cumplimiento](../../media/mail-flow-dashboard-v2.png)
+![Panel flujo de correo en el Centro de seguridad & cumplimiento](../../media/mail-flow-dashboard-v2.png)
 
-Las conclusiones disponibles son:
+Las perspectivas disponibles son:
 
 - [Información de mensajes reenviados automáticamente](mfi-auto-forwarded-messages-report.md)
 
-- [Corregir posible información de bucle de correo](mfi-mail-loop-insight.md)<sup>1</sup>
+- [Corregir posibles perspectivas de bucle de correo](mfi-mail-loop-insight.md)<sup>1</sup>
 
-- [Corregir la información de reglas de flujo de correo lentas](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
+- [Corregir la información de reglas de flujo de correo lento](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
 
 - [Mapa de flujo de correo](mfi-mail-flow-map-report.md)
 
-- [Información de correo electrónico de nuevos dominios que se reenvía](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
+- [Nuevos dominios que se reenviarán información de correo](mfi-new-domains-being-forwarded-email.md)<sup>electrónico 2</sup>
 
-- [Nuevos usuarios reenviando la información de correo](mfi-new-users-forwarding-email.md)electrónico<sup>2</sup>
+- [Nuevos usuarios reenviar información de correo electrónico](mfi-new-users-forwarding-email.md)<sup>2</sup>
 
 - [Informe de dominios no aceptados](mfi-non-accepted-domain-report.md)
 
@@ -59,27 +59,27 @@ Las conclusiones disponibles son:
 
 - [Información de estado de flujo de correo de dominio superior](mfi-domain-mail-flow-status-insight.md)
 
-<sup>1 Esta</sup> información aparece en el área Recomendado **para usted** del panel de flujo de correo solo después de detectar el problema. De lo contrario, no lo verás.
+<sup>1</sup> Esta información aparece en **el** área Recomendado para usted del panel flujo de correo solo después de detectar el problema. De lo contrario, no lo verá.
 
-<sup>2</sup> Esta información no aparece en el panel de [](view-mail-flow-reports.md#forwarding-report) flujo de correo, pero está visible en la página del informe de reenvío después de detectar el problema. De lo contrario, no lo verás.
+<sup>2</sup> Esta información no aparece en el panel flujo [](view-mail-flow-reports.md#forwarding-report) de correo, pero está visible en la página Informe de reenvío después de detectar el problema. De lo contrario, no lo verá.
 
-## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>Permisos necesarios para ver el panel de flujo de correo
+## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>Permisos necesarios para ver el panel flujo de correo
 
 El panel flujo de correo está disponible para los miembros de los siguientes grupos de roles:
 
-- **Administración de la** organización en el Centro de & cumplimiento (administradores globales).
+- **Administración de la** organización en el Centro de & seguridad (administradores globales).
 
-- **[Administrador de Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** en Azure Active Directory.
+- **[Administrador de Exchange](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** en Azure Active Directory.
 
-- **Administrador de flujo de** correo en el Centro de & cumplimiento. Si la cuenta no es también miembro de los grupos de roles Administración de la organización o Administrador de Exchange, tenga en cuenta los siguientes problemas:
+- **Administrador de MailFlow** en el Centro de seguridad & cumplimiento. Si la cuenta no es también miembro de los grupos de roles Administración de la organización o Administrador de Exchange, tenga en cuenta los siguientes problemas:
   - El usuario debe iniciar sesión en el Centro de seguridad & cumplimiento directamente en <https://protection.office.com> .
-  - El usuario solo tendrá permiso de solo lectura en el panel de flujo de correo.
+  - El usuario solo tendrá permiso de solo lectura para el panel flujo de correo.
   - El usuario no tendrá acceso al Centro de administración de Microsoft 365.
 
-Para obtener más información acerca de los permisos, vea Permisos en el Centro de seguridad [& Cumplimiento](permissions-in-the-security-and-compliance-center.md) y Conceder a los usuarios acceso al Centro de seguridad [& cumplimiento.](grant-access-to-the-security-and-compliance-center.md)
+Para obtener más información acerca de los permisos, vea Permisos en el Centro de seguridad [& cumplimiento](permissions-in-the-security-and-compliance-center.md) y Conceder a los usuarios acceso al Centro de seguridad [& cumplimiento](grant-access-to-the-security-and-compliance-center.md).
 
-## <a name="where-to-find-the-mail-flow-dashboard"></a>Dónde encontrar el panel de flujo de correo
+## <a name="where-to-find-the-mail-flow-dashboard"></a>Dónde encontrar el panel flujo de correo
 
-Abra el Centro de & cumplimiento en , expanda Flujo de <https://protection.office.com> correo y, a continuación, **seleccione Panel.** 
+Abra el Centro de seguridad & cumplimiento en <https://protection.office.com> , expanda Flujo de **correo** y, a continuación, **seleccione Panel**.
 
 Para ir directamente al panel flujo de correo, abra <https://protection.office.com/mailflow/dashboard> .

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Para administradores: obtenga información sobre cómo habilitar el archivado de expansión automática, que proporciona a los usuarios almacenamiento ilimitado para sus buzones de Exchange Online. Puede habilitar el archivado de expansión automática para toda la organización o solo para usuarios específicos.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 967b623b8ac1898567b5e6e779e8e557404b5242
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ac5661ac43ed9c0f35eba20007f0c4c4406ebf20
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423661"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927830"
 ---
 # <a name="enable-unlimited-archiving---admin-help"></a>Habilitar archivado ilimitado: Ayuda para administradores
 
@@ -42,13 +42,13 @@ Puede usar la característica de archivado de ampliación automática de Exchang
 
 - El archivado de expansión automática le impide recuperar o restaurar un buzón [inactivo.](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes) Eso significa que si habilita el archivado de expansión automática para un buzón y el buzón se hace inactivo en una fecha posterior, no podrá recuperar el buzón inactivo [(al](recover-an-inactive-mailbox.md) convertirlo en un buzón activo) ni restaurarlo [(combinando](restore-an-inactive-mailbox.md) el contenido con un buzón existente). Si el archivado de expansión automática está habilitado en un buzón inactivo, la única forma de recuperar datos es mediante la herramienta de búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para exportar los datos del buzón e importarlos a otro buzón. Para obtener más información, vea la sección "Buzones inactivos y archivos de expansión automática" en [Overview of inactive mailboxes](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives).
 
-- No puede usar el Centro de administración de Exchange ni el Centro de seguridad & cumplimiento para habilitar el archivado de expansión automática. Debe usar Exchange Online PowerShell. Para conectarse a su organización de Exchange Online con PowerShell remoto, vea [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+- No puede usar el Centro de administración de Exchange ni el Centro de seguridad & cumplimiento para habilitar el archivado de expansión automática. Debe usar Exchange Online PowerShell. Para conectarse a su organización de Exchange Online con PowerShell remoto, vea [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="enable-auto-expanding-archiving-for-your-entire-organization"></a>Habilitar el archivado de expansión automática para toda la organización
 
 Puede habilitar el archivado de expansión automática para toda la organización. Después de activarlo, el archivado de expansión automática se habilitará para los buzones de usuario existentes y para los nuevos buzones de usuario que se crean. Al crear buzones de usuario, asegúrese de habilitar el buzón de archivo principal del usuario para que la característica de archivado de expansión automática funcione para el nuevo buzón de usuario.
   
-1. [Conectarse a Exchange Online mediante PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Conectarse a Exchange Online mediante PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Ejecute el siguiente comando en Exchange Online PowerShell para habilitar el archivado de expansión automática para toda la organización.
 
@@ -68,7 +68,7 @@ Al habilitar el archivado de expansión automática para un usuario específico 
 
 Este espacio adicional se agrega para evitar problemas de almacenamiento que puedan producirse antes de aprovisionar el archivo de expansión automática. No se agrega  *espacio de almacenamiento*  adicional al habilitar el archivado de expansión automática para toda la organización, como se describe en la sección anterior.
   
-1. [Conectarse a Exchange Online mediante PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Conectarse a Exchange Online mediante PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Ejecute el siguiente comando en Exchange Online PowerShell para habilitar el archivado de expansión automática para un usuario específico. Como se explicó anteriormente, el buzón de archivo del usuario (archivo principal) debe estar habilitado para poder activar el archivado de expansión automática para ese usuario.
 

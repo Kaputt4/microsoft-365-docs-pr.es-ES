@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
 description: Aprenda a usar el centro de cumplimiento para habilitar los buzones de correo de archivo a fin de respaldar los requisitos de retención de mensajes, eDiscovery y retención de su organización.
-ms.openlocfilehash: d7506b92cc16120f1d40a6d5a1744ab38d446a76
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 2bc80d347d1324a317cc2cc2712d475781adc492
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233820"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926520"
 ---
 # <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Habilitar los buzones de archivo en el centro de cumplimiento
 
@@ -102,7 +102,7 @@ Para deshabilitar un buzón de archivo:
 
 También puede usar PowerShell de Exchange Online para habilitar buzones de archivo. La razón principal para usar PowerShell es que permite habilitar rápidamente el buzón de archivo para todos los usuarios de la organización.
 
-El primer paso es conectar al PowerShell de Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+El primer paso es conectar al PowerShell de Exchange Online. Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Una vez que esté conectado a Exchange Online, puede ejecutar los comandos de las secciones siguientes para habilitar o deshabilitar los buzones de archivo.
 
@@ -150,8 +150,8 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
 - Para obtener más información acerca de los buzones de archivo y las directivas de retención de Exchange, vea:
 
-  - [Etiquetas de retención y directivas de retención en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
+  - [Etiquetas de retención y directivas de retención en Exchange Online](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)
 
-  - [Directiva de retención predeterminada de Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
+  - [Directiva de retención predeterminada de Exchange Online](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
 
   - [Configurar una directiva de archivo y eliminación de buzones en la organización](set-up-an-archive-and-deletion-policy-for-mailboxes.md)

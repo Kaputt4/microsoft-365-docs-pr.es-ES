@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Implemente características de seguridad y cumplimiento de Microsoft 365 y proteja su información personal.
-ms.openlocfilehash: a5bba79f8ab382707b6fd5e448003a0271d690c6
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 657b3c9c6416c8a38629a0d26253e1222aa6d242
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597243"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928477"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteger la información sujeta a la regulación de privacidad de datos
 
@@ -38,7 +38,7 @@ Estos controles se encuentran dentro de las siguientes áreas de solución:
 ![Servicios clave para proteger la información personal sujeta a la regulación de privacidad de datos](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 >[!Note]
->Esta solución describe las características de seguridad y cumplimiento para proteger la información sujeta a las normativas de privacidad de datos. Para obtener una lista completa de las características de seguridad de Microsoft 365, consulte Documentación de seguridad [de Microsoft 365](https://docs.microsoft.com/microsoft-365/security/). Para obtener una lista completa de las características de cumplimiento en Microsoft 365, consulte Documentación de cumplimiento de [Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/).
+>Esta solución describe las características de seguridad y cumplimiento para proteger la información sujeta a las normativas de privacidad de datos. Para obtener una lista completa de las características de seguridad de Microsoft 365, consulte Documentación de seguridad [de Microsoft 365](../security/index.yml). Para obtener una lista completa de las características de cumplimiento en Microsoft 365, consulte Documentación de cumplimiento de [Microsoft 365](../compliance/index.yml).
 >
 
 ## <a name="data-privacy-regulations-that-impact-information-protection-controls"></a>Normativas de privacidad de datos que afectan a los controles de protección de la información
@@ -68,7 +68,7 @@ Para ayudarle a empezar con un esquema de protección de la información en Micr
 Las [soluciones de protección de la](../compliance/information-protection.md) información de Microsoft incluyen una serie de funcionalidades integradas en Microsoft 365, Microsoft Azure y Microsoft Windows. En Microsoft 365, las soluciones de protección de la información incluyen:
 
 - [Cifrado de servicio con clave de cliente](../compliance/customer-key-overview.md)
-- [Tipos de información confidencial](../compliance/what-the-sensitive-information-types-look-for.md) (descrito en el artículo Evaluar riesgos de privacidad de datos [e identificar elementos confidenciales)](information-protection-deploy-assess.md)
+- [Tipos de información confidencial](../compliance/sensitive-information-type-entity-definitions.md) (descrito en el artículo Evaluar riesgos de privacidad de datos [e identificar elementos confidenciales)](information-protection-deploy-assess.md)
 - [Etiquetas de confidencialidad](../compliance/sensitivity-labels.md) 
   - Nivel de servicio/contenedor
   - Cliente/nivel de contenido
@@ -81,10 +81,10 @@ Además, la protección del nivel de sitio y biblioteca son mecanismos important
 
 Para obtener información sobre otras capacidades de protección de la información fuera de Microsoft 365, vea:
 
-- [Microsoft Cloud Application Security (MCAS)](https://docs.microsoft.com/cloud-app-security/)
-- [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)
+- [Microsoft Cloud Application Security (MCAS)](/cloud-app-security/)
+- [Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
-- [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
+- [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
 ## <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 

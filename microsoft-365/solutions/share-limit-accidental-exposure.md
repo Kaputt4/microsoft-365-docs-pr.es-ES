@@ -16,12 +16,12 @@ ms.custom: ''
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Obtenga información sobre cómo limitar la exposición accidental de información al compartir archivos con usuarios externos a la organización.
-ms.openlocfilehash: 430c00d46fa3801d0869b05a651fadd3bf5dea28
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: 952337790ce2f0418dd5ab637435f1523b27b562
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49029974"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928417"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limitar la exposición accidental de archivos al compartirlos con usuarios externos a la organización
 
@@ -37,7 +37,7 @@ Se recomienda dejar habilitados los vínculos de tipo *Cualquiera* para el conte
 
 Si quiere que los usuarios externos a la organización siempre tengan que autenticarse al obtener acceso al contenido de SharePoint, Grupos o Teams, puede desactivar el uso compartido de tipo *Cualquiera*. Esto impedirá que los usuarios compartan el contenido sin autenticar.
 
-Si deshabilita los vínculos de tipo *Cualquiera* , los usuarios podrán seguir compartiendo con los invitados mediante los vínculos de *Personas específicas*. En este caso, todos los usuarios externos a la organización tendrán que autenticarse antes de poder tener acceso al contenido compartido.
+Si deshabilita los vínculos de tipo *Cualquiera*, los usuarios podrán seguir compartiendo con los invitados mediante los vínculos de *Personas específicas*. En este caso, todos los usuarios externos a la organización tendrán que autenticarse antes de poder tener acceso al contenido compartido.
 
 En función de sus necesidades, puede deshabilitar los vínculos de tipo *Cualquiera* para sitios específicos o para toda la organización.
 
@@ -71,7 +71,7 @@ Las listas de permitidos y rechazados solo afectan al uso compartido con invitad
 
 Para configurar una lista de dominios permitidos o denegados
 1. En el centro de administración de SharePoint, en el panel de navegación izquierdo, haga clic en **Uso compartido**.
-2. En **Configuración avanzada para uso compartido externo** , active la casilla **Limitar uso compartido externo por dominio**.
+2. En **Configuración avanzada para uso compartido externo**, active la casilla **Limitar uso compartido externo por dominio**.
 3. Haga clic en **Agregar dominios**.
 4. Seleccione si quiere bloquear dominios, escriba los dominios y haga clic en **Aceptar**.
 
@@ -79,23 +79,23 @@ Para configurar una lista de dominios permitidos o denegados
 
 5. Haga clic en **Guardar**.
 
-Si quiere limitar el uso compartido de dominios en un nivel más alto que SharePoint y OneDrive, puede [permitir o bloquear las invitaciones a los usuarios B2B desde organizaciones específicas](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list) de Azure Active Directory. (Debe configurar la [integración de SharePoint y OneDrive con la versión preliminar de B2B de Azure AD](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) para que estas opciones de configuración afecten a SharePoint y OneDrive).
+Si quiere limitar el uso compartido de dominios en un nivel más alto que SharePoint y OneDrive, puede [permitir o bloquear las invitaciones a los usuarios B2B desde organizaciones específicas](/azure/active-directory/b2b/allow-deny-list) de Azure Active Directory. (Debe configurar la [integración de SharePoint y OneDrive con la versión preliminar de B2B de Azure AD](/sharepoint/sharepoint-azureb2b-integration-preview) para que estas opciones de configuración afecten a SharePoint y OneDrive).
 
 ## <a name="limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups"></a>Limitar el uso compartido de archivos, carpetas y sitios con usuarios externos a la organización a grupos de seguridad específicos
 
 Puede restringir el uso compartido de archivos, carpetas y sitios con usuarios externos a la organización a los miembros de un grupo de seguridad específico. Esto es útil si quiere habilitar el uso compartido externo, pero con un flujo de trabajo de aprobación o un proceso de solicitud. Como alternativa, puede requerir que sus usuarios completen un curso de capacitación antes de que se agreguen al grupo de seguridad y se les permita compartir con el exterior.
 
 Para limitar el uso compartido externo a los miembros de un grupo de seguridad
-1. En el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint), en el panel de navegación izquierdo, en **Directivas** , haga clic en **Uso compartido**.
-2. En **Uso compartido externo** , expanda **Más configuraciones de uso compartido externo**.
+1. En el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint), en el panel de navegación izquierdo, en **Directivas**, haga clic en **Uso compartido**.
+2. En **Uso compartido externo**, expanda **Más configuraciones de uso compartido externo**.
 
 3. Seleccione **Permitir que solo los usuarios de grupos de seguridad específicos compartan externamente** y luego seleccione **Administrar grupos de seguridad**.
 
-    ![Captura de pantalla del panel Administrar grupos de seguridad](https://docs.microsoft.com/sharepoint/sharepointonline/media/manage-security-groups.png)
+    ![Captura de pantalla del panel Administrar grupos de seguridad](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
-4. En el cuadro **Agregar un grupo de seguridad** , escriba un nombre para el grupo de seguridad. Se mostrará el cuadro de grupo de seguridad.
+4. En el cuadro **Agregar un grupo de seguridad**, escriba un nombre para el grupo de seguridad. Se mostrará el cuadro de grupo de seguridad.
 
-5. Junto al nombre del grupo de seguridad, en el menú **Puede compartir con** , seleccione:
+5. Junto al nombre del grupo de seguridad, en el menú **Puede compartir con**, seleccione:
 
     - **Solo invitados autenticados** (predeterminado)
     - **Cualquiera**

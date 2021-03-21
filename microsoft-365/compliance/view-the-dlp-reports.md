@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Use los informes DLP de Office 365 para ver el número de coincidencias de directivas DLP, invalidaciones o falsos positivos y ver si están su tendencia hacia arriba o hacia abajo con el tiempo.
-ms.openlocfilehash: eb281f4d912a9e21716d7f9859564a02f9c23401
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 742f0ef0334e714c7f31cbc2f97559993454f6b7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423833"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928394"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Ver los informes de prevención de pérdida de datos
 
@@ -88,18 +88,16 @@ Para ver los informes DLP en el Centro de seguridad & cumplimiento, debe tener a
 
 Para usar la mayoría de los cmdlets para el Centro de seguridad y cumplimiento, necesita:
   
-1. [Conectarse al Centro de &amp; cumplimiento de seguridad con PowerShell remoto](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell&amp;clcid=0x409)
+1. [Conectarse al Centro de &amp; cumplimiento de seguridad con PowerShell remoto](/powershell/exchange/connect-to-scc-powershell&amp;clcid=0x409)
     
-2. Use cualquiera de estos [ &amp; cmdlets del Centro de seguridad y cumplimiento](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. Use cualquiera de estos [ &amp; cmdlets del Centro de seguridad y cumplimiento](/powershell/exchange/exchange-online-powershell)
     
 Sin embargo, los informes de DLP necesitan extraer datos de todo Office 365, incluido Exchange Online. Por este motivo, los cmdlets de los informes DLP están disponibles en Exchange Online Powershell, no en Powershell del Centro &amp; de seguridad y cumplimiento. Por lo tanto, para usar los cmdlets para los informes de DLP, debe:
   
-1. [Conectarse a Exchange Online mediante PowerShell remoto](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Conectarse a Exchange Online mediante PowerShell remoto](/powershell/exchange/connect-to-exchange-online-powershell)
     
 2. Use cualquiera de estos cmdlets para los informes de DLP:
     
-      - [Get-DlpDetectionsReport](https://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+      - [Get-DlpDetectionsReport](/powershell/module/exchange/get-dlpdetectionsreport)
     
-      - [Get-DlpDetailReport](https://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
-    
-
+      - [Get-DlpDetailReport](/powershell/module/exchange/get-dlpdetailreport)

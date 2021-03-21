@@ -1,5 +1,5 @@
 ---
-title: Recuperar datos de informes de inquilinos de clientes con Windows PowerShell para partners de DAP
+title: Recuperar datos de informes de inquilinos de clientes Windows PowerShell para partners de DAP
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,27 +15,27 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 893e5275-30b3-433f-8ecd-644f78f513e2
 description: 'Resumen: use el modo remoto de Windows PowerShell para Microsoft Exchange Online para recuperar informes de espacios empresariales de clientes individuales.'
-ms.openlocfilehash: 24d56fffa60232c4ea39f4fe7769131cab23be2f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8ea5f9834bfcc0d517fc1e0938c3547d88d1d8a8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46693689"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927221"
 ---
 # <a name="retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Retrieve customer tenant reporting data with Windows PowerShell for Delegated Access Permissions (DAP) partners
 
 *Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
-Use el Windows PowerShell remoto para Microsoft Exchange Online recuperar informes de inquilinos de clientes individuales.
+Use el Windows PowerShell remoto para Microsoft Exchange Online para recuperar informes de inquilinos de clientes individuales.
   
-Los partners de sindicación y proveedor de soluciones en la nube (CSP) pueden acceder a los datos que conste de informes de inquilinos de clientes directamente a través de Windows PowerShell remoto para Exchange Online PowerShell. Esto permite a los asociados recopilar y guardar los datos de los informes para luego realizar otras operaciones con ellos. Después de abrir una conexión remota, recuperar datos de informes sobre un arrendamiento de cliente es igual que ejecutar cualquier cmdlet en un arrendamiento de cliente..
+Los asociados de proveedor de soluciones en la nube (CSP) y de sindicación pueden acceder a los datos que forma parte de los informes de inquilinos del cliente directamente a través de Windows PowerShell para Exchange Online PowerShell. Esto permite a los asociados recopilar y guardar los datos de los informes para luego realizar otras operaciones con ellos. Después de abrir una conexión remota, recuperar datos de informes sobre un arrendamiento de cliente es igual que ejecutar cualquier cmdlet en un arrendamiento de cliente..
   
-En este artículo, se usa Windows PowerShell remoto para Exchange Online para conectarse a un único arrendamiento de cliente y recuperar un informe. De forma predeterminada, Windows PowerShell no admite agregar datos de informes de varios arrendamientos de cliente. Los informes que recupera con este procedimiento son solo para el  _DelegatedOrg_ al que se conecta.
+En este artículo, se usa Windows PowerShell para Exchange Online para conectarse a un solo arrendamiento de cliente y recuperar un informe. De forma predeterminada, Windows PowerShell no admite agregar datos de informes de varios arrendamientos de cliente. Los informes que recupera con este procedimiento son solo para el  _DelegatedOrg_ al que se conecta.
   
  
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe conectarse a su inquilino de Exchange Online mediante el modo remoto de Windows PowerShell. Para obtener instrucciones, consulte [Conectarse a los inquilinos de Exchange Online con el modo remoto de Windows PowerShell para asociados con permiso de acceso delegado (DAP)](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
+- Debe conectarse a su inquilino de Exchange Online mediante el modo remoto de Windows PowerShell. Para obtener instrucciones, consulte [Conectarse a los inquilinos de Exchange Online con el modo remoto de Windows PowerShell para asociados con permiso de acceso delegado (DAP)](/powershell/exchange/connect-to-exchange-online-powershell)
     
 ## <a name="run-the-get-stalemailboxreport-sample"></a>Ejecutar Get-StaleMailboxReport a modo de ejemplo
 
@@ -51,9 +51,8 @@ Existen muchos otros cmdlets de informes disponibles para Exchange Online, Lync 
 
 #### 
 
-[Servicio web de informes de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532777)
+[Servicio web de informes de Office 365](/previous-versions/office/developer/o365-enterprise-developers/jj984325(v=office.15))
   
-[Cmdlets de informes en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=526430)
+[Cmdlets de informes en Exchange Online](/powershell/module/exchange/get-csclientdevicedetailreport)
   
 [Ayuda para socios](https://go.microsoft.com/fwlink/p/?LinkID=533477)
-

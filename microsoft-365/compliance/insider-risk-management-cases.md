@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 58c8d2cdebdef6c0307b0c234951f6d32e5009df
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: f6f01a1bed296b6af2e6be973de6605910809fc3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820173"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926408"
 ---
 # <a name="insider-risk-management-cases"></a>Casos de administración de riesgos de Insider
 
@@ -241,27 +241,6 @@ Para los casos abiertos antes de habilitar la integración de Microsoft Team, lo
 Cuando se resuelve un caso, el equipo de Microsoft asociado se archivará automáticamente (oculto y convertido en de solo lectura).
 
 Para obtener más información acerca de Microsoft Teams para la administración de riesgos insider, consulte Introducción a la configuración de administración de riesgos [de insider](insider-risk-management-settings.md#microsoft-teams-preview).
-
-### <a name="share-the-case"></a>Compartir el caso
-
-El uso compartido de un caso de administración de riesgos interno permite a los investigadores y analistas de riesgos colaborar fácilmente con otras partes interesadas de cumplimiento en su organización. Puede compartir rápidamente un vínculo a un caso de administración de riesgos internos con partes interesadas externas del área de administración de casos. Para obtener acceso al caso de administración de riesgos de insider desde el vínculo, las partes interesadas deben incluirse en cualquiera de los grupos de roles de administración de riesgos de insider.
-
->[!NOTE]
->Gracias por sus comentarios y soporte técnico durante la vista previa del conector servicenow. El 30 de noviembre de 2020 hemos decidido finalizar la versión preliminar del conector ServiceNow y dejar de admitir la administración de riesgos de insider. Estamos evaluando activamente métodos alternativos para proporcionar a los clientes la integración de ServiceNow en la administración de riesgos de insider.
-
-Las siguientes opciones de uso compartido están disponibles:
-
-- **ServiceNow:** después de configurar el conector ServiceNow de Microsoft 365 para su organización de Microsoft 365, puede compartir fácilmente un vínculo al caso, abrir un incidente o solicitar un cambio con su organización de ServiceNow. Para compartir el caso con ServiceNow, seleccione **Acciones de caso**  >  **Compartir**  >  **ServiceNow** en la acción caso. La integración de ServiceNow con los soportes de administración de riesgos de insider incluye las siguientes acciones y información de caso:
-    - **Nombre de la** tarea: el nombre de la nueva tarea ServiceNow.
-    - **Descripción de la** tarea: la descripción de la nueva tarea ServiceNow. Este campo de descripción editable incluye automáticamente un vínculo al caso de administración de riesgos de insider.
-    - **Tipo de tarea:** tipo de tarea para la nueva tarea ServiceNow, ya sea *Incidente* o *Solicitud de cambio*.
-    - **Prioridad:** la prioridad de la nueva tarea ServiceNow, *ya* sea Planning , *Low*, *Moderate*, *High* o *Critical*.
-    - **Fecha de vencimiento:** la fecha solicitada para completar la tarea ServiceNow.
-
-![Uso compartido de la administración de riesgos de Insider con ServiceNow](../media/insider-risk-share-servicenow.png)
-
-- **Correo** electrónico: comparte un vínculo al caso de administración de riesgos de insider en un correo electrónico. Puede elegir cualquier cliente de correo electrónico configurado localmente con esta opción de uso compartido. Para compartir el vínculo de caso con el correo electrónico, seleccione **Compartir**  >  **correo electrónico** en la barra de herramientas de acciones del caso.
-- **Vínculo Copiar:** copia un vínculo al caso de administración de riesgos de insider en el Portapapeles. Para copiar el vínculo de caso en el portapapeles, seleccione **Vínculo Compartir**  >  **copia** de la barra de herramientas de acciones de caso.
 
 ### <a name="resolve-the-case"></a>Resolver el caso
 

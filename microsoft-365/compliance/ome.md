@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo enviar y recibir mensajes de correo electrónico cifrados entre personas dentro y fuera de la organización.
-ms.openlocfilehash: 8d1803442428f3061c686afa0b790d3f468abde8
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 504fa9918636cd596cde0d242083ccb7b9817e69
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741331"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927718"
 ---
 # <a name="message-encryption"></a>Cifrado de mensajes
 
@@ -36,7 +36,7 @@ Con el cifrado de mensajes de Office 365, la organización puede enviar y recibi
 
 El resto de este artículo se aplica a las nuevas funcionalidades de OME.
 
-Cifrado de mensajes de Office 365 es un servicio en línea que se basa en Microsoft Azure Rights Management (Azure RMS) que forma parte de Azure Information Protection. Este servicio incluye directivas de cifrado, identidad y autorización para ayudar a proteger el correo electrónico. Puede cifrar mensajes mediante plantillas de administración de derechos, la opción [No](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)reenviar y la opción [de solo cifrado](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+Cifrado de mensajes de Office 365 es un servicio en línea que se basa en Microsoft Azure Rights Management (Azure RMS) que forma parte de Azure Information Protection. Este servicio incluye directivas de cifrado, identidad y autorización para ayudar a proteger el correo electrónico. Puede cifrar mensajes mediante plantillas de administración de derechos, la opción [No](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)reenviar y la opción [de solo cifrado](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
 A continuación, los usuarios pueden cifrar mensajes de correo electrónico y diversos datos adjuntos mediante estas opciones. Para obtener una lista completa de los tipos de datos adjuntos admitidos, vea "Tipos de archivo cubiertos por directivas IRM cuando se adjuntan a mensajes" en Introducción a [IRM](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)para mensajes de correo electrónico .
 
@@ -54,7 +54,7 @@ Los usuarios finales que leen correo cifrado o protegido con derechos en cliente
 
 Si el remitente del correo protegido está en GCC High y el destinatario está fuera de GCC High, incluidos los usuarios comerciales, los usuarios de Outlook.com y los usuarios de otros proveedores de correo electrónico como Gmail, el destinatario recibe un correo contenedor. El correo contenedor dirige al destinatario al Portal de OME donde el destinatario puede leer y responder al mensaje. De lo contrario, si el remitente y el destinatario están en el entorno de GCC High, incluso si no están en la misma organización, los destinatarios que usan clientes de Outlook para leer correo reciben experiencias de lectura nativas de primera clase para correo cifrado y protegido con derechos. Para obtener más información sobre las diferentes experiencias en GCC High, vea [Comparar versiones de OME](ome-version-comparison.md).
 
-Para obtener más información acerca de los límites de tamaño de los mensajes y datos adjuntos que puede cifrar mediante OME, vea [Límites de Exchange Online](https://technet.microsoft.com/library/exchange-online-limits.aspx).
+Para obtener más información acerca de los límites de tamaño de los mensajes y datos adjuntos que puede cifrar mediante OME, vea [Límites de Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
 ## <a name="how-office-365-advanced-message-encryption-works-on-top-of-ome"></a>Cómo funciona el cifrado de mensajes avanzado de Office 365 encima de OME
 
