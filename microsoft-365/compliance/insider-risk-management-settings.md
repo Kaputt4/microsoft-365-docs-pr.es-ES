@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 1e6642113ddba9c9110a65e9032ec59db435ac7f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ee4f18342304cf46f97a6ae7aa6e1ba76685bccd
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919866"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994622"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
@@ -217,7 +217,7 @@ Para cada una de las siguientes opciones de configuración de dominio, puede esp
     - Archivos, carpetas, sitios compartidos con dominios externos
     - Archivos cargados en dominios externos (con el explorador Microsoft Edge)
 
-    Al especificar dominios permitidos en la configuración, esta actividad con estos dominios se trata de forma similar a la forma en que se trata la actividad de la organización interna. Por ejemplo, los dominios agregados aquí se asignan a actividades que pueden implicar compartir contenido con alguien fuera de la organización (por ejemplo, enviar correo electrónico a alguien con una dirección gmail.com usuario). No puede incluir los sitios de SharePoint como dominios permitidos. 
+    Al especificar dominios permitidos en la configuración, esta actividad con estos dominios se trata de forma similar a la forma en que se trata la actividad de la organización interna. Por ejemplo, los dominios agregados aquí se asignan a actividades que pueden implicar compartir contenido con alguien fuera de la organización (por ejemplo, enviar correo electrónico a alguien con una dirección gmail.com usuario).
 
 - **Dominios de terceros:** Si su organización usa dominios de terceros con fines empresariales (como el almacenamiento en la nube), indójelos aquí para que pueda recibir alertas de actividad relacionadas con el indicador de dispositivo *Use un* explorador para descargar contenido de un sitio de terceros.
 

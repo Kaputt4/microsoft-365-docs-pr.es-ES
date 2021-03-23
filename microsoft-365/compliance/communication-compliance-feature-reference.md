@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 48cc75276e4e3791fa16520df5a4c392c23a0cd5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 298300de8581d3eea185f05b92bb69cb6e7a69eb
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919916"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034209"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
@@ -78,7 +78,7 @@ Para ayudar a planear la migración, tenga en cuenta el siguiente ejemplo. Actua
 - Administrador de revisión de supervisión
 - Administración de casos
 - Administrador de cumplimiento
-- Review
+- Revisar
 
 Para actualizar los roles de estos usuarios para la nueva estructura de grupos de roles y separar los permisos de acceso y administración para los usuarios, puede considerar tres nuevos grupos y las asignaciones de nuevos grupos de roles asociadas:
 
@@ -132,7 +132,7 @@ Debe presentar una solicitud al Soporte técnico de Microsoft para que su organi
 
     Debe configurar un conector de terceros para su organización de Microsoft 365 antes de poder asignar el conector a una directiva de cumplimiento de comunicaciones. La **sección Orígenes de terceros** del Asistente para directivas de cumplimiento de comunicaciones solo muestra los conectores de terceros configurados actualmente.
 
-## <a name="policy-settings"></a>Configuración de directivas
+## <a name="policy-settings"></a>Configuración de la directiva
 
 ### <a name="users"></a>Usuarios
 
@@ -526,6 +526,21 @@ En este ejemplo se devuelven actividades que coinciden con las directivas de cum
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch 
 ```
+
+Las coincidencias de directivas de cumplimiento de comunicaciones se almacenan en un buzón de supervisión para cada directiva. En algunos casos, es posible que deba comprobar el tamaño del buzón de supervisión de una directiva para asegurarse de que no se acerca al límite actual de 50 GB. Si se alcanza el límite de buzones de correo, las coincidencias de directiva no se capturan y tendrás que crear una nueva directiva (con la misma configuración) para seguir capturando coincidencias para las mismas actividades.
+
+Para comprobar el tamaño de un buzón de supervisión para una directiva, complete lo siguiente:
+
+1. Use el cmdlet [Connect-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) en el módulo Exchange Online PowerShell V2 para conectarse a Exchange Online PowerShell mediante la autenticación moderna.
+2. Ejecute lo siguiente en PowerShell:
+
+    ```PowerShell
+    ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name) 
+    {
+       "<Name of your communication compliance policy>: " + $p.Name
+       Get-MailboxStatistics $p.ReviewMailbox | ft ItemCount,TotalItemSize
+    }
+    ```
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transición de supervisión en Office 365
 
