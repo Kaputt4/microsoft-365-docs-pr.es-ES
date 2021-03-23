@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6f906e2a3ddd8a0847174a61e9f2b28238e5dc19
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4b5d25c51560cfe7a4d55419a7de9ce36321e78f
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928078"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034179"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -227,27 +227,33 @@ Para obtener más información, ver los requisitos previos y las instrucciones d
 
 ## <a name="let-users-assign-permissions"></a>Permitir a los usuarios asignar permisos
 
+> [!IMPORTANT]
+> No todos los clientes con etiquetado admiten todas las opciones que permiten a los usuarios asignar sus propios permisos. Use esta sección para obtener más información.
+
 Puede usar estas opciones para que los usuarios puedan asignar permisos cuando aplican manualmente una etiqueta de confidencialidad al contenido:
 
-- En Outlook, un usuario puede seleccionar restricciones equivalentes a la opción [No reenviar](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) para los destinatarios seleccionados.
+- En Outlook, un usuario puede seleccionar restricciones equivalentes a la opción [No reenviar](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) o [Solo cifrar](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails)para los destinatarios seleccionados.
+    
+    La opción No reenviar es compatible con todos los clientes de correo electrónico que admiten etiquetas de confidencialidad. Sin embargo, aplicar la opción **Solo cifrar** con una etiqueta de confidencialidad es una versión reciente que solo se admite mediante etiquetas integradas y no con el cliente de etiquetas unificado de Azure Information Protection. Para los clientes de correo electrónico que no admiten esta funcionalidad, la etiqueta no estará visible.
+    
+    Para comprobar qué aplicaciones de Outlook que usan etiquetas integradas que aplican la opción Solo cifrar con una etiqueta de confidencialidad, usan la [tabla de funciones para Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) y la fila **Permitir que los usuarios asignen permisos: solo cifrar**.
 
 - En Word, PowerPoint y Excel, se pide al usuario que seleccione sus propios permisos para organizaciones, usuarios o grupos específicos.
 
-    > [!NOTE]
-    > Esta opción para Word, PowerPoint y Excel es compatible con el cliente de etiquetado unificado de Azure Information Protection. Para las aplicaciones que usan etiquetas integradas, [compruebe qué aplicaciones son compatibles](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint).
-    >
-    > Si esta opción está seleccionada, pero no es compatible con la aplicación de un usuario, la etiqueta no se mostrará al usuario, o bien la etiqueta se mostrará por coherencia, pero no se podrá aplicar con un mensaje de explicación para los usuarios.
+    Esta opción es compatible con el cliente de etiquetado unificado de Azure Information Protection y por algunas aplicaciones que usan etiquetado integrado. Para las aplicaciones que no admiten esta función, la etiqueta no estará visible para los usuarios, o bien la etiqueta está visible para dar coherencia pero no se puede aplicar con un mensaje de explicación a los usuarios.
+    
+    Para comprobar qué aplicaciones que usan etiquetas integradas admiten esta opción, use la [tabla de funciones para Word, Excel y PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) y la fila **Permitir que los usuarios asignen permisos: solicitar a los usuarios**.
 
 Cuando se admitan las opciones, use la tabla siguiente para identificar cuándo los usuarios ven la etiqueta de confidencialidad:
 
 |Configuración |Etiqueta visible en Outlook|Etiqueta visible en Word, Excel y PowerPoint|
 |:-----|:-----|:-----|:-----|
-|**En Outlook, un usuario puede aplicar restricciones equivalentes a la opción No reenviar**|Sí |No |
+|**En Outlook, un usuario puede aplicar restricciones con la opción No reenviar o Solo cifrar**|Sí |No |
 |**En Word, PowerPoint y Excel, pida a los usuarios que especifiquen los permisos**|No |Sí|
 
 Cuando ambas opciones están seleccionadas, la etiqueta es visible tanto en Outlook como en Word, Excel y PowerPoint.
 
-Una etiqueta de confidencialidad que permite a los usuarios asignar permisos solo se puede aplicar al contenido manualmente. No se puede aplicar automáticamente o usar como etiqueta recomendada.
+Una etiqueta de confidencialidad que permite a los usuarios asignar permisos se debe aplicar al contenido manualmente. No se puede aplicar automáticamente o usar como etiqueta recomendada.
 
 Configurar los permisos asignados por el usuario:
 
@@ -255,13 +261,21 @@ Configurar los permisos asignados por el usuario:
 
 ### <a name="outlook-restrictions"></a>Restricciones de Outlook
 
-En Outlook, cuando un usuario aplica una etiqueta de confidencialidad que les permite asignar permisos a un mensaje, las restricciones son las mismas que la opción No reenviar. El usuario verá el nombre y la descripción de la etiqueta en la parte superior del mensaje, lo que indica que se está protegiendo el contenido. A diferencia de Word, PowerPoint y Excel (vea la [siguiente sección](#word-powerpoint-and-excel-permissions)), no se pide a los usuarios que seleccionen permisos específicos.
+En Outlook, cuando un usuario aplica una etiqueta de confidencialidad que le permite asignar permisos a un mensaje, puede elegir la opción **No reenviar** o **Solo cifrar**. El usuario verá el nombre y la descripción de la etiqueta en la parte superior del mensaje, lo que indica que se está protegiendo el contenido. A diferencia de Word, PowerPoint y Excel (vea la [siguiente sección](#word-powerpoint-and-excel-permissions)), no se pide a los usuarios que seleccionen permisos específicos.
 
 ![Etiqueta de confidencialidad aplicada al mensaje en Outlook](../media/sensitivity-label-outlook-protection-applied.png)
 
-Cuando la opción No reenviar se aplica a un correo electrónico, este se cifra y los destinatarios tienen que autenticarse. Luego, los destinatarios no podrán reenviarlo, imprimirlo ni copiarlo. Por ejemplo, en el cliente de Outlook, el botón Reenviar y las opciones de menú Guardar como e Imprimir no están disponibles, y no se pueden agregar o cambiar destinatarios en los cuadros Para, CC o CCO.
+Cuando cualquiera de estas opciones se aplica a un correo electrónico, este se cifra y los destinatarios tienen que autenticarse. A continuación, los destinatarios tendrán automáticamente derechos de uso restringidos:
 
-Los documentos de Office sin cifrar asociados al correo electrónico heredan automáticamente las mismas restricciones. Los derechos de uso que se aplican a estos documentos son Editar contenido, Editar; Guardar; Ver, Abrir, Leer y Permitir macros. Si el usuario quiere derechos de uso distintos para los datos adjuntos o el archivo adjunto no es un documento de Office compatible con esta protección heredada, debe proteger el archivo antes de adjuntarlo al correo electrónico.
+- **No reenviar**: los destinatarios no podrán reenviar el correo electrónico, imprimirlo ni copiarlo. Por ejemplo, en el cliente de Outlook, el botón Reenviar y las opciones de menú Guardar como e Imprimir no están disponibles, y no se pueden agregar o cambiar destinatarios en los cuadros Para, CC o CCO.
+    
+    Para obtener más información sobre cómo funciona esta opción, consulte [Opción No reenviar para correos electrónicos](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
+
+- **Solo cifrar**: los destinatarios tienen todos los derechos de uso excepto Guardar como, Exportar y Control total. Esta combinación de derechos de uso significa que los destinatarios no tienen restricciones, a excepción de que no pueden quitar la protección. Por ejemplo, un destinatario puede copiar del correo electrónico, imprimirlo y reenviarlo.
+    
+    Para obtener más información sobre cómo funciona esta opción, consulte [Opción Solo cifrar para correos electrónicos](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails).
+
+Los documentos de Office sin cifrar asociados al correo electrónico heredan automáticamente las mismas restricciones. Para No reenviar, los derechos de uso que se aplican a estos documentos son Editar contenido, Editar; Guardar; Ver, Abrir, Leer y Permitir macros. Si el usuario quiere derechos de uso distintos para los datos adjuntos o el archivo adjunto no es un documento de Office compatible con esta protección heredada, debe cifrar el archivo antes de adjuntarlo al correo electrónico.
 
 ### <a name="word-powerpoint-and-excel-permissions"></a>Permisos de Word, PowerPoint y Excel
 

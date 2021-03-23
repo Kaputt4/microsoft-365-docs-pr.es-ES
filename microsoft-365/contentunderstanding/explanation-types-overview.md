@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Más información sobre los tipos de explicación en Microsoft SharePoint Syntex
-ms.openlocfilehash: 5187b27438f25db1a2714f1fbc7b31db6d060ccc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b34de9ffc565e3d1a17cac05084e4e4b4113a3c6
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928405"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994633"
 ---
 # <a name="introduction-to-explanation-types"></a>Introducción a los tipos de explicación
 
@@ -157,25 +157,25 @@ Por ejemplo, en lugar de añadir manualmente todas las variaciones para *Fecha*,
  
 La biblioteca de explicación incluye varias explicaciones de la lista de frases más utilizadas, entre las que se incluyen:</br>
 
-- Fecha</br>
-- Fecha (numérica)</br>
-- Hora</br>
-- Número</br>
-- Porcentaje</br>
-- Número de teléfono</br>
-- Código postal</br>
-- Primera palabra de la frase</br>
-- Final de la oración</br>
-- Tarjeta de crédito</br>
-- Número de la seguridad social</br>
-- Casilla</br>
-- Divisa</br>
-- CC de correo electrónico</br>
-- Fecha del correo electrónico</br>
-- Saludo del correo electrónico</br>
-- Destinatario de correo electrónico</br>
-- Directrices de calidad del remitente de correo electrónico</br>
-- Asunto del correo electrónico</br>
+- Fecha: fechas del calendario, todos los formatos. Incluye texto y números (por ejemplo, "9 de diciembre de 2020").</br>
+- Fecha (numérica): fechas del calendario, todos los formatos. Incluye números (por ejemplo, 1-11-2020).</br>
+- Hora: formatos de 12 y 24 horas.</br>
+- Número: números positivos y negativos, hasta 2 decimales. </br>
+- Porcentaje: una lista de patrones que representan un porcentaje. Por ejemplo, 1 %, 11 %, 100 %, 11,11 %, etc.</br>
+- Número de teléfono: formatos comunes de EE. UU. e internacionales. Por ejemplo, 000 000 0000, 000-000-0000, (000)000-0000, (000) 000-0000, etc.</br>
+- Código postal: formatos de código postal de Estados Unidos. Por ejemplo, 11111, 11111-1111.</br>
+- Primera palabra de frase: patrones comunes para palabras de hasta 9 caracteres. </br>
+- Final de una oración: signos de puntuación comunes para el final de una oración</br>
+- Tarjeta de crédito: formatos de número de tarjeta de crédito comunes. Por ejemplo, 1111-1111-1111-1111. </br>
+- Número de la seguridad social: formato de número del seguro social de EE. UU. Por ejemplo, 111-11-1111. </br>
+- Casilla: una lista de frases que representa variaciones en una casilla rellenada. Por ejemplo, _X_, _ _X_, etc.</br>
+- Moneda: principales símbolos internacionales. Por ejemplo: .$ </br>
+- Correo electrónico CC: lista de frases con el término "CC:" que se suele encontrar cerca de los nombres o direcciones de correo electrónico de más personas o grupos a los que se envió el mensaje.</br>
+- Fecha del correo electrónico: lista de frases con el término "Enviado el:", que se suele encontrar cerca de la fecha en que se envió el correo electrónico.</br>
+- Saludo de correo electrónico: líneas de apertura comunes de los correos electrónicos.</br>
+- Destinatario de correo electrónico: lista de frases con el término "Para:", que a menudo se encuentra cerca de los nombres o direcciones de correo electrónico de personas o grupos a los que se envió el mensaje. </br>
+- Remitente de correo electrónico: lista de frases con el término "De:" que se suele encontrar cerca del nombre o la dirección de correo del remitente. </br>
+- Asunto del correo electrónico: lista de frases con el término "Asunto:" que se suele encontrar cerca del asunto del correo electrónico. </br>
 
 La biblioteca de explicación también incluye tres tipos de plantillas automáticas que funcionan con los datos que ha etiquetado en los archivos de ejemplo:
 
