@@ -15,12 +15,12 @@ ms.collection:
 description: Los administradores pueden aprender a crear, modificar y eliminar las directivas avanzadas contra la suplantación de identidad que están disponibles en organizaciones con Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2985766cf3388382dbe1d2217843504b2bfd1a1c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9f9fe04b2c3b6db3681212d678c8e827f6a83f41
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906593"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994575"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365
 
@@ -220,11 +220,11 @@ Use los siguientes procedimientos para modificar las directivas contra suplantac
 
      - **Habilitar la inteligencia de buzones de correo:** el valor predeterminado es **On**. Para desactivarlo, deslice el botón de alternancia a **Desactivado**.
 
-     - **Habilitar la protección de suplantación basada** en inteligencia de buzones de correo: esta configuración solo está disponible si Habilitar inteligencia **de buzones de correo es** **On**.
+     - **Habilitar la protección de suplantación basada** en inteligencia de buzones de correo: esta configuración solo está disponible si Habilitar inteligencia **de buzones de correo es** **On**. Active esta configuración para especificar la acción que se debe realizar en los mensajes para las detecciones de suplantación de los resultados de inteligencia de buzones.
 
-       En **If email is sent by an suersonated user**, you can specify one of the following actions to take on messages that fail mailbox intelligence (the same actions that are available for protected users and protected domains):
+       En **Si un usuario** suplantado envía correo electrónico, puede especificar una de las siguientes acciones (las mismas acciones que están disponibles para usuarios protegidos y dominios protegidos):
 
-       - **No aplicar ninguna acción**
+       - **No aplique ninguna** acción: tenga en cuenta que este valor tiene el mismo resultado que activar Habilitar inteligencia de buzones **de correo,** pero desactivar Habilitar la protección de suplantación basada en inteligencia de **buzones.**
        - **Redirigir el mensaje a otras direcciones de correo electrónico**
        - **Mover mensaje a la carpeta Correo no deseado**
        - **Poner en cuarentena el mensaje**

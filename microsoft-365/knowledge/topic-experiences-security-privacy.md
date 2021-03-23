@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo planear la seguridad y privacidad de Microsoft Viva Topics
-ms.openlocfilehash: 9ac7ea085be115ef06244422713099c01ec50a36
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 91d0d5c25502a1938976b9457f8a5dafc6ab957b
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917349"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994551"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Seguridad y privacidad de Microsoft Viva Topics
 
@@ -51,7 +51,7 @@ En la tabla siguiente se describe lo que los usuarios (visores de temas, colabor
 
 |Elemento de tema|Qué pueden ver los usuarios|
 |:---------|:------------------|
-|Nombre del tema|Los usuarios pueden ver el nombre del tema de todos los temas en el centro de temas. Es posible que algunos temas no sean visibles si tienen una relevancia baja para el usuario.|
+|Nombre del tema|Los usuarios pueden ver el nombre del tema de los temas en el centro de temas. Es posible que algunos temas no sean visibles si los usuarios no tienen permisos para el contenido de origen o tienen una relevancia baja para el usuario.|
 |Descripción del tema|Las descripciones generadas por IA solo son visibles para los usuarios que tienen permisos para el contenido de origen. Todas las descripciones introducidas o editadas manualmente son visibles para todos los usuarios.|
 |Contactos|Las personas ancladas son visibles para todos los usuarios. Las personas sugeridas solo son visibles para los usuarios que tienen permisos para el contenido de origen.|
 |Archivos|Los archivos solo son visibles para los usuarios que tienen permisos para el contenido de origen.|
@@ -82,7 +82,7 @@ Además, se recomiendan estos procedimientos recomendados:
 
 Aunque puede cambiar los permisos de las páginas de temas individuales para restringir el acceso a un grupo específico de usuarios, no se recomienda este enfoque debido al alto grado de esfuerzo administrativo necesario.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Configurar Teams con tres niveles de protección](../solutions/configure-teams-three-tiers-protection.md)
 

@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: d6e953c86939d732632e87573fc2aa5392f09aa2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6a182556c68a472145f9d4eac69c8915653a67df
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904941"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994599"
 ---
 # <a name="create-a-new-topic"></a>Cree un equipo nuevo 
 
@@ -29,7 +29,7 @@ En Temas de Viva, puede crear un nuevo tema si uno no se detecta a través de la
 > Aunque la información de un tema recopilado por AI está recortada en [seguridad,](topic-experiences-security-trimming.md)tenga en cuenta que la descripción del tema y la información de personas de un tema creado manualmente es visible para todos los usuarios que tienen permisos para ver el tema. 
 
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 Para crear un nuevo tema, debe:
 - Tener una licencia de Viva Topics.
@@ -66,7 +66,7 @@ Puede crear un tema nuevo desde dos ubicaciones:
 
     ![Descripción del tema](../media/knowledge-management/description.png)</br>
 
-4. En la <b>sección Personas ancladas,</b> puede "anclar" a una persona para mostrarla como un experto en el tema. Comience escribiendo su nombre o dirección de correo electrónico en el cuadro Agregar un nuevo usuario y, <b>a</b> continuación, seleccione el usuario que desea agregar de los resultados de la búsqueda. También puede "desanclarlos" seleccionando el icono Quitar <b>de la</b> lista en la tarjeta de usuario. También puede arrastrar a la persona para cambiar el orden en que aparece la lista de personas.
+4. En la <b>sección Personas</b> ancladas, puede "anclar" a una persona para que muestre que tiene una conexión con el tema (por ejemplo, un propietario de un recurso conectado). Comience escribiendo su nombre o dirección de correo electrónico en el cuadro Agregar un nuevo usuario y, <b>a</b> continuación, seleccione el usuario que desea agregar de los resultados de la búsqueda. También puede "desanclarlos" seleccionando el icono Quitar <b>de la</b> lista en la tarjeta de usuario. También puede arrastrar a la persona para cambiar el orden en que aparece la lista de personas.
  
     ![Personas ancladas](../media/knowledge-management/pinned-people.png)</br>
 

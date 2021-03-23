@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las directivas contra la suplantación de identidad que están disponibles en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eeb15040f0e47f7d51852dadf68c4b0c37de0975
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3458d6702dab48072e4846038400b087b1a4a8f1
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929233"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994587"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Directivas contra suplantación de identidad en Microsoft 365
 
@@ -66,7 +66,7 @@ Para configurar directivas contra suplantación de identidad, consulte los artí
 
 El resto de este artículo describe la configuración disponible en las directivas contra suplantación de identidad en EOP y Defender para Office 365.
 
-## <a name="policy-settings"></a>Configuración de directivas
+## <a name="policy-settings"></a>Configuración de la directiva
 
 La siguiente configuración de directiva está disponible en las directivas contra suplantación de identidad en EOP y Microsoft Defender para Office 365:
 
@@ -206,17 +206,21 @@ La siguiente configuración de suplantación solo está disponible en las direct
   - **Dominios suplantados:** la dirección De contiene un dominio protegido.
   - **Caracteres inusuales:** la dirección De contiene conjuntos de caracteres inusuales (por ejemplo, símbolos matemáticos y texto o una combinación de letras mayúsculas y minúsculas) en un remitente o dominio protegido.
 
-
   > [!IMPORTANT]
   >
-  > Recomendación para habilitar una sugerencia de seguridad que aparecerá durante el primer contacto entre el remitente y los **destinatarios:** incluso cuando las sugerencias de seguridad de suplantación están desactivadas,  se recomienda usar una regla  de flujo de correo (también conocida como regla de transporte) para agregar un encabezado de mensaje denominado **X-MS-Exchange-EnableFirstContactSafetyTip** con la información de valor habilitado para los mensajes. Una sugerencia de seguridad notificará a los destinatarios la primera vez que reciban un mensaje del remitente o si no suelen recibir mensajes del remitente. Esta funcionalidad agrega una capa adicional de protección de seguridad contra posibles ataques de suplantación. 
+  > Incluso cuando las sugerencias de seguridad de suplantación están desactivadas, se recomienda usar una regla de flujo de correo (también conocida como  regla de transporte) para agregar un encabezado de mensaje denominado **X-MS-Exchange-EnableFirstContactSafetyTip** con valor habilitado para los mensajes.  Una sugerencia de seguridad notificará a los destinatarios la primera vez que reciban un mensaje del remitente o si no suelen recibir mensajes del remitente. Esta funcionalidad agrega una capa adicional de protección de seguridad contra posibles ataques de suplantación.
+  >
   > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="Texto de la sugerencia de seguridad para la protección de suplantación con varios destinatarios.":::
 
-- **Inteligencia de buzones:** habilita o deshabilita la inteligencia artificial (IA) que determina los patrones de correo electrónico del usuario con sus contactos frecuentes. Esta configuración ayuda a la IA a distinguir entre el correo electrónico legítimo y el correo electrónico suplantado de esos contactos. La inteligencia de buzones solo está disponible para buzones de Exchange Online.
+- **Inteligencia de buzones:** habilita o deshabilita la inteligencia artificial (IA) que determina los patrones de correo electrónico del usuario con sus contactos frecuentes. Esta configuración ayuda a la IA a distinguir entre mensajes de remitentes legítimos y suplantados.
 
-- **Protección de suplantación** basada en inteligencia de buzones: habilita o deshabilita los resultados de suplantación mejorados en función del mapa de remitentes individual de cada usuario. Esta inteligencia permite a Microsoft 365 personalizar la detección de suplantación de usuario y controlar mejor los falsos positivos. Cuando se detecta la suplantación de usuario, puede definir una acción específica para realizar en el mensaje:
+  Por ejemplo, Gabriela Laureano (glaureano@contoso.com) es la ceo de su empresa, por  lo que la agrega como remitente protegida en los usuarios para proteger la configuración de la directiva. Sin embargo, algunos de los destinatarios que la directiva aplica para comunicarse regularmente con un proveedor que también se llama Gabriela Laureano (glaureano@fabrikam.com). Dado que esos destinatarios tienen un historial de comunicación con glaureano@fabrikam.com, la inteligencia de buzones de correo no identificará los mensajes de glaureano@fabrikam.com como un intento de suplantación de glaureano@contoso.com para esos destinatarios.
 
-  - **No aplicar ninguna acción**
+  Para usar contactos frecuentes aprendidos por la inteligencia de buzones (y su falta)  para ayudar a proteger a los usuarios  de ataques de suplantación, puede activar la protección de suplantación basada en inteligencia de buzones y especificar la acción que debe realizar si también activa la inteligencia de buzones **de** correo.
+
+- **Protección de suplantación** basada en inteligencia de buzones: active esta configuración para especificar la acción que se debe realizar en los mensajes para las detecciones de suplantación de los resultados de inteligencia de buzones:
+
+  - **No aplicar ninguna** acción: tenga en cuenta que este  valor tiene el mismo resultado que activar la inteligencia de buzones pero desactivar la protección de suplantación basada en inteligencia **de buzones.**
   - **Redirigir el mensaje a otras direcciones de correo electrónico**
   - **Mover mensaje a la carpeta Correo no deseado**
   - **Poner en cuarentena el mensaje**

@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 34c6551dd3a40852368b40d960bf921c52f46372
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 36af6e0f882c87d05c5f397982533fb48875b0da
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921521"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994611"
 ---
 # <a name="edit-an-existing-topic"></a>Editar un tema existente 
 
@@ -34,7 +34,7 @@ En Temas de Viva, puede editar un tema existente. Es posible que deba hacerlo si
 > [!Note] 
 > Aunque la información de un tema recopilado por AI está recortada en [seguridad,](topic-experiences-security-trimming.md)tenga en cuenta que la descripción del tema y la información de personas que agrega manualmente al editar un tema existente es visible para todos los usuarios que tienen permisos para ver temas. 
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 Para editar un tema existente, debe:
 - Tener una licencia de Viva Topics.
@@ -67,11 +67,11 @@ Los administradores de conocimientos también pueden editar temas directamente d
 
     ![Sección Descripción](../media/knowledge-management/description.png)</br>
 
-4. En la <b>sección Personas ancladas,</b> puede "anclar" a una persona para mostrarla como un experto en el tema. Comience escribiendo su nombre o dirección de correo electrónico en el cuadro Agregar un nuevo usuario y, <b>a</b> continuación, seleccione el usuario que desea agregar de los resultados de la búsqueda. También puede "desanclarlos" seleccionando el icono Quitar <b>de la</b> lista en la tarjeta de usuario.
+4. En la <b>sección Personas</b> ancladas, puede "anclar" a una persona para que muestre que tiene una conexión el tema (por ejemplo, un propietario de un recurso conectado). Comience escribiendo su nombre o dirección de correo electrónico en el cuadro Agregar un nuevo usuario y, <b>a</b> continuación, seleccione el usuario que desea agregar de los resultados de la búsqueda. También puede "desanclarlos" seleccionando el icono Quitar <b>de la</b> lista en la tarjeta de usuario.
  
     ![Agregar personas ancladas](../media/knowledge-management/pinned-people.png)</br>
 
-    La <b>sección Personas sugeridas</b> muestra a los usuarios que AI piensa que podrían ser expertos en el tema desde su conexión a los recursos sobre el tema. Puede cambiar su estado de Sugerido a Anclado seleccionando el icono de patilla en la tarjeta de usuario.
+    La <b>sección Personas sugeridas</b> muestra a los usuarios que AI cree que podrían estar conectados al tema desde su conexión a los recursos sobre el tema. Puede cambiar su estado de Sugerido a Anclado seleccionando el icono de patilla en la tarjeta de usuario.
 
    ![Anclar personas sugeridas](../media/knowledge-management/suggested-people.png)</br>
 

@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Preguntas frecuentes de Microsoft Bookings.
-ms.openlocfilehash: c7bf14c35626eeeec781f6a9f45769e0ead1730e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d357ae83d7fe6fdd9f3d0bff724b037e82a3f5d0
+ms.sourcegitcommit: 1df94f04f138ccf1a2356d26174335c44de7052b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913831"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50999534"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Preguntas más frecuentes de Microsoft Bookings
 
@@ -61,15 +61,15 @@ Si usas una directiva de buzón de OWA para deshabilitar el acceso a Bookings, t
 
 ### <a name="is-bookings-customizable"></a>¿Bookings es personalizable?
 
-Sí, Bookings es personalizable y se puede usar para una variedad de escenarios diferentes. Al configurar un calendario de Bookings, se pueden personalizar muchos aspectos de la página de programación basada en web, la información empresarial, los detalles del personal, los tipos de servicio y las directivas de programación.
+Sí, Bookings es personalizable y se puede usar para varios escenarios. Al configurar un calendario de Bookings, se pueden personalizar muchos aspectos de la página de programación basada en web, la información empresarial, los detalles del personal, los tipos de servicio y las directivas de programación.
 
 ### <a name="is-all-the-functionality-of-the-original-bookings-web-app-available-in-microsoft-teams"></a>¿Está disponible toda la funcionalidad de la aplicación web de Bookings original en Microsoft Teams?
 
-Una versión ligera de Bookings ya está disponible como una aplicación en Teams. Busque el anuncio inicial [aquí](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/). Hay una funcionalidad de vínculo profundo para salir en la aplicación web y, después de la configuración, el uso diario de Bookings se puede hacer sin salir de Teams. La información fluye entre plataformas.
+Una versión ligera de Bookings ya está disponible como una aplicación en Teams. El anuncio inicial está [aquí](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/). Hay una funcionalidad de vínculo profundo para salir en la aplicación web y, después de la configuración, el uso diario de Bookings se puede hacer sin salir de Teams. La información fluye entre plataformas.
 
 ### <a name="is-bookings-a-small-business-offering-or-an-enterprise-offering-or-both"></a>¿Bookings es una oferta de pequeña empresa, una oferta enterprise o ambas?
 
-Bookings es una solución ideal para clientes empresariales y de pequeña empresa, en una gran variedad de industrias. Los casos de uso incluyen:
+Bookings es una solución ideal para clientes empresariales y de pequeña empresa, en varios sectores. Los casos de uso incluyen:
 
 - Servicios financieros
     - consultas
@@ -144,7 +144,7 @@ Los empleados de la tienda con licencias E1/F1/F3, o sin licencias, aún pueden 
 
 Los empleados de la tienda también se mostrarán como no disponibles en Bookings si ya se ha programado una cita en ese momento a través de la aplicación web de Bookings. Las citas reservadas a través de Bookings se reflejarán como ocupadas en el calendario de un miembro del personal dentro de Bookings. El personal con una licencia no habilitada para Bookings todavía puede tener su calendario personal impactado en su disponibilidad en Bookings, siempre que estén dentro del mismo inquilino.
 
-Los usuarios del rol Invitados pueden ver cualquier información que el cliente haya proporcionado en la creación inicial de citas. Por ejemplo, si el representante de la tienda que está reservado para la cita tiene que llamar al cliente antes de la cita, tendrá acceso a la información que el cliente proporciona durante el proceso de programación. El miembro del personal reservado tendrá acceso a toda la información que aparece en el correo electrónico de confirmación, así como al evento de calendario .ics (como el número de teléfono del cliente si se introdujo).
+Los usuarios del rol Invitados pueden ver cualquier información que el cliente haya proporcionado en la creación inicial de citas. Por ejemplo, si el representante de la tienda que está reservado para la cita tiene que llamar al cliente antes de la cita, tendrá acceso a la información que el cliente proporciona durante el proceso de programación. El miembro del personal reservado tendrá acceso a toda la información que aparece en el correo electrónico de confirmación y al evento del calendario .ics (como el número de teléfono del cliente si se introdujo).
 
 Los usuarios del rol Invitado no tendrán la capacidad de acceder a la aplicación web de Bookings para cambiar la configuración o para ver y administrar citas (agregar, cancelar y reprogramar). Sin embargo, pueden hacer citas en nombre de los clientes mediante la página Autoservicio, del mismo modo que un cliente haría una cita.
 
@@ -176,7 +176,7 @@ Una configuración denominada **Tiempo máximo de** espera determina el más lej
 
 ### <a name="how-does-bookings-work-across-time-zones"></a>¿Cómo funciona Bookings en zonas horarias?
 
-Todas las veces se encuentran en la zona horaria comercial (la zona horaria local) de forma predeterminada. Esto significa que cualquier configuración que configure para un calendario de Bookings, como el horario laboral, aparecerá en esta zona horaria. La página Autoservicio tiene la capacidad de mostrar todas las horas de cita en la zona horaria del usuario final, que se puede desactivar si se desea. Si **Mostrar siempre franjas** horarias en la zona horaria empresarial permanece desactivada en la pestaña página Bookings, las personas que visiten la página verán franjas horarias en sus propias zonas horarias locales.
+Todas las veces se encuentran en la zona horaria comercial (la zona horaria local) de forma predeterminada. Cualquier configuración que configures para un calendario de Bookings, como el horario laboral, aparecerá en esta zona horaria. La página Autoservicio tiene la capacidad de mostrar todas las horas de cita en la zona horaria del usuario final, que se puede desactivar si se desea. Si **Mostrar siempre franjas** horarias en la zona horaria empresarial permanece desactivada en la pestaña página Bookings, las personas que visiten la página verán franjas horarias en sus propias zonas horarias locales.
 
 :::image type="content" source="media/bookings-faq-region.png" alt-text="Configuración de zona horaria y región de bookings":::
 
@@ -244,7 +244,7 @@ Booking puede admitir una gran cantidad de visitantes y reservas a la vez. Si la
 
 ### <a name="where-is-bookings-data-stored"></a>¿Dónde se almacenan los datos de Bookings?
 
-Bookings es una aplicación de Microsoft 365, lo que significa que todos los datos se almacenan en la plataforma de Microsoft 365 y en Exchange. Bookings sigue todas las directivas de almacenamiento de datos establecidas por Microsoft, que son las mismas directivas seguidas por todas las aplicaciones de Office. Bookings usa buzones compartidos en Exchange para almacenar detalles de cliente, personal, servicio y cita. Las directivas de cumplimiento para buzones compartidos en Exchange también se aplican a los buzones de Bookings. Todos los datos de clientes (incluida la información proporcionada por los clientes al reservar) se capturan en Bookings y se almacenan dentro de la aplicación, por lo que se almacenan en Exchange. Microsoft Bookings usa las mismas directivas usadas por Microsoft 365, que puedes encontrar [aquí.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+Bookings es una aplicación de Microsoft 365, lo que significa que todos los datos se almacenan en la plataforma de Microsoft 365 y en Exchange. Las reservas se siguen a todas las directivas de almacenamiento de datos establecidas por Microsoft, que son las mismas directivas que siguen todas las aplicaciones de Office. Bookings usa buzones compartidos en Exchange para almacenar detalles de cliente, personal, servicio y cita. Las directivas de cumplimiento para buzones compartidos en Exchange también se aplican a los buzones de Bookings. Todos los datos de clientes (incluida la información proporcionada por los clientes al reservar) se capturan en Bookings y se almacenan dentro de la aplicación, por lo que se almacenan en Exchange. Microsoft Bookings usa las mismas directivas usadas por Microsoft 365, que puedes encontrar [aquí.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
 
 ### <a name="is-there-a-way-to-centrally-manage-bookings-calendars-for-all-users"></a>¿Hay alguna forma de administrar de forma centralizada los calendarios de Bookings para todos los usuarios?
 
@@ -274,7 +274,7 @@ Esta sección no admite texto enriquecido, pero cree que los vínculos se pueden
 
 El siguiente comando se puede usar para recuperar información de todos los buzones de Bookings y los usuarios que tienen acceso a ellos.
 
-`Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '@')}`
+`Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '*@*')}`
 
 ## <a name="technical-questions"></a>Preguntas técnicas
 
