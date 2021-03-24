@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use la exhibición de documentos electrónicos y las herramientas de búsqueda para administrar y responder a un incidente de derrame de datos en su organización.
-ms.openlocfilehash: 9ca637dcd3b4b07846d977d64f535b7b5319d884
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: da473fcdf553176d3c6d4dfa2a4c4b17b2bcce03
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925686"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051982"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Serie de soluciones de exhibición de documentos electrónicos: escenario de derrame de datos: búsqueda y purga
 
@@ -121,7 +121,7 @@ Para investigar aún más si se compartió el correo electrónico con datos filt
   
 Puede usar el seguimiento de mensajes en el centro de seguridad y cumplimiento o usar los cmdlets correspondientes en Exchange Online PowerShell. Es importante tener en cuenta que el seguimiento de mensajes no ofrece garantías completas sobre la integridad de los datos devueltos. Para obtener más información acerca del uso del seguimiento de mensajes, vea: 
   
-- [Seguimiento de mensajes en el Centro de seguridad y cumplimiento](../security/office-365-security/message-trace-scc.md)
+- [Seguimiento de mensajes en el Centro de seguridad y cumplimiento](../security/defender-365-security/message-trace-scc.md)
     
 - [Nuevo seguimiento de mensajes en el Centro de & seguridad](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
@@ -199,7 +199,7 @@ Si las palabras clave de la consulta de búsqueda que creó y usó en el paso 3 
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Auditoría del proceso de investigación de derrame de datos
 
-Puede buscar en el registro de auditoría las actividades de exhibición de documentos electrónicos que se realizaron durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría del comando **New-ComplianceSearchAction -Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para obtener más información, vea:
+Puede buscar en el registro de auditoría las actividades de exhibición de documentos electrónicos que se realizaron durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría del comando **New-ComplianceSearchAction -Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para más información, vea:
 
 - [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md)
 

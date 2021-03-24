@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: En este artículo, aprenderás a crear, probar y ajustar una directiva DLP de acuerdo con las necesidades de la organización.
-ms.openlocfilehash: d26412eb54176dfd3c5d881d82076b2a58330ebd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bd4857a2baefb22d789fc713a537d7e4a656718d
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923456"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052088"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Crear, probar y optimizar una directiva DLP
 
@@ -50,7 +50,7 @@ Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP neces
 
 Use el **rol Administración de cumplimiento dlp de** solo vista para crear un grupo de roles con privilegios de solo vista para las directivas DLP y los informes DLP.
 
-Para más información, vea [Conceder acceso a los usuarios al Centro de cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Para más información, vea [Conceder acceso a los usuarios al Centro de cumplimiento de Office 365](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Estos permisos son necesarios para crear y aplicar una directiva DLP para no aplicar directivas.
 

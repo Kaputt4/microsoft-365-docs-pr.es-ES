@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y roles de usuario del Administrador de cumplimiento de Microsoft y configure las pruebas automatizadas de las acciones. Administrar el historial de usuarios y filtrar la vista de panel.
-ms.openlocfilehash: d8eb1d7d8245aa31cb5429452128cedc0adf4684
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 08a62a12e5f412781595ba7d54c3b63a03ae19aa
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925708"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052138"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -72,7 +72,7 @@ Para establecer permisos y asignar roles en el Centro de seguridad y & cumplimie
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>Más información sobre el Centro de seguridad de Office 365 & cumplimiento
 
-Obtenga más información sobre los permisos en el Centro de seguridad y [& de Office 365.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
+Obtenga más información sobre los permisos en el Centro de seguridad y [& de Office 365.](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)
 
 Si no tiene acceso al Centro de seguridad y cumplimiento de Office 365 o si necesita tener acceso a la versión clásica del Administrador de cumplimiento en el Portal de confianza de servicio de Microsoft, la configuración de administración en el Portal de confianza de servicio proporciona otra forma de asignar roles[(](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)ver instrucciones ). Tenga en cuenta que estos roles son más limitados en su funcionalidad.
 
@@ -104,7 +104,7 @@ La configuración del Administrador de cumplimiento en el Centro de cumplimiento
 
 ### <a name="set-up-automated-testing"></a>Configurar pruebas automatizadas
 
-Algunas acciones de mejora en el Administrador de cumplimiento también son supervisadas por [Microsoft Secure Score](../security/mtp/microsoft-secure-score.md). Puede configurar pruebas automatizadas de acciones que se supervisan conjuntamente, lo que significa que cuando una acción se prueba y actualiza en Puntuación segura, esos resultados se sincronizan con las mismas acciones en el Administrador de cumplimiento y cuentan para su puntuación de cumplimiento.
+Algunas acciones de mejora en el Administrador de cumplimiento también son supervisadas por [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Puede configurar pruebas automatizadas de acciones que se supervisan conjuntamente, lo que significa que cuando una acción se prueba y actualiza en Puntuación segura, esos resultados se sincronizan con las mismas acciones en el Administrador de cumplimiento y cuentan para su puntuación de cumplimiento.
 
 Las pruebas automáticas están activadas de forma predeterminada para organizaciones nuevas en el Administrador de cumplimiento. Cuando implemente Microsoft 365 u Office 365 por primera vez, la puntuación segura tarda aproximadamente siete días en recopilar completamente los datos y tener en cuenta la puntuación de cumplimiento.  Cuando las pruebas automatizadas están activadas, la fecha de prueba de la acción no se actualizará, pero su estado de prueba se actualizará. Cuando se crean nuevas evaluaciones, las puntuaciones incluyen automáticamente las puntuaciones de control de Microsoft y la integración de puntuación segura.
 

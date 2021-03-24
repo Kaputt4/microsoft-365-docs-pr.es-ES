@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Aprende a proteger el acceso de usuarios y dispositivos a los datos y servicios de Microsoft 365 y a defenderte de la pérdida de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd8bbb62bc87ff59594e2fb2a3e21311c2452d9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9ff7bd2ff8b4b333eb30a6cc82797a8968941e0b
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925546"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051702"
 ---
 # <a name="protect-user-and-device-access"></a>Proteger el acceso de usuario y dispositivo
 
@@ -38,7 +38,7 @@ Las cuentas administrativas que usa para administrar el entorno de Microsoft 365
 
 Empiece por usar cuentas de administrador solo para la administración. Los administradores deben tener una cuenta de usuario independiente para un uso normal y no administrativo y usar solo su cuenta administrativa cuando sea necesario para completar una tarea asociada a su función de trabajo.
 
-Proteja las cuentas de administrador con autenticación multifactor y acceso condicional. Para obtener más información, vea [Protecting administrator accounts](../security/office-365-security/identity-access-prerequisites.md#protecting-administrator-accounts). 
+Proteja las cuentas de administrador con autenticación multifactor y acceso condicional. Para obtener más información, vea [Protecting administrator accounts](../security/defender-365-security/identity-access-prerequisites.md#protecting-administrator-accounts). 
 
 A continuación, configure la administración de acceso con privilegios en Office 365. La administración de acceso con privilegios permite un control de acceso granular sobre las tareas de administración con privilegios en Office 365. Puede ayudar a proteger su organización de infracciones que pueden usar cuentas de administrador con privilegios existentes con acceso permanente a datos confidenciales o acceso a opciones de configuración críticas.
 
@@ -50,7 +50,7 @@ Otra recomendación principal es usar estaciones de trabajo configuradas especí
 Por último, puede mitigar el impacto de la falta involuntaria de acceso administrativo mediante la creación de dos o más cuentas de acceso de emergencia en el inquilino. Consulta [Administrar cuentas de acceso de emergencia en Azure AD](/azure/active-directory/users-groups-roles/directory-emergency-access). 
 
 ## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>Paso 3: Configurar directivas recomendadas de acceso a dispositivos y identidades
-La autenticación multifactor (MFA) y las directivas de acceso condicional son herramientas eficaces para mitigar las cuentas comprometidas y el acceso no autorizado. Se recomienda implementar un conjunto de directivas que se han probado conjuntamente. Para obtener más información, incluidos los pasos de implementación, consulte [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md).
+La autenticación multifactor (MFA) y las directivas de acceso condicional son herramientas eficaces para mitigar las cuentas comprometidas y el acceso no autorizado. Se recomienda implementar un conjunto de directivas que se han probado conjuntamente. Para obtener más información, incluidos los pasos de implementación, consulte [Identity and device access configurations](../security/defender-365-security/microsoft-365-policies-configurations.md).
 
  Estas directivas implementan las siguientes funcionalidades:
 - Autenticación Mult-factor
@@ -63,7 +63,7 @@ La implementación del cumplimiento de dispositivos de Intune requiere la inscri
 
 ## <a name="step-4-configure-sharepoint-device-access-policies"></a>Paso 4: Configurar directivas de acceso a dispositivos de SharePoint
 
-Microsoft recomienda proteger el contenido de los sitios de SharePoint con contenido confidencial y altamente regulado con controles de acceso a dispositivos. Para obtener más información, vea [Policy recommendations for securing SharePoint sites and files](../security/office-365-security/sharepoint-file-access-policies.md).
+Microsoft recomienda proteger el contenido de los sitios de SharePoint con contenido confidencial y altamente regulado con controles de acceso a dispositivos. Para obtener más información, vea [Policy recommendations for securing SharePoint sites and files](../security/defender-365-security/sharepoint-file-access-policies.md).
 
 
 

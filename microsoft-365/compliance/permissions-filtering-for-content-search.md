@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Use el filtrado de permisos de búsqueda de contenido para permitir que un administrador de exhibición de documentos electrónicos busque solo un subconjunto de buzones y sitios de la organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be1daa4785f67ef54f107319bf88438c134896ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 78d36ccd602ea546099e768d7e91594a668df586
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927988"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051732"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Configurar el filtrado de permisos para Búsqueda de contenido
 
@@ -45,7 +45,7 @@ El filtrado de permisos de búsqueda es compatible con la característica Búsqu
 
 ## <a name="requirements-to-configure-permissions-filtering"></a>Requisitos para configurar el filtrado de permisos
 
-- Para ejecutar los cmdlets de filtro de seguridad de cumplimiento, debe ser miembro del grupo de roles Administración de la organización en el Centro de seguridad & cumplimiento. Para más información, consulte [Permisos en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+- Para ejecutar los cmdlets de filtro de seguridad de cumplimiento, debe ser miembro del grupo de roles Administración de la organización en el Centro de seguridad & cumplimiento. Para más información, consulte [Permisos en el Centro de seguridad y cumplimiento](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md).
 
 - Debe conectarse a Exchange Online y a PowerShell del Centro de seguridad & para usar los cmdlets de filtro de seguridad de cumplimiento. Esto es necesario porque estos cmdlets requieren acceso a las propiedades del buzón, por lo que debe conectarse a Exchange Online PowerShell. Vea los pasos en la sección siguiente.
 

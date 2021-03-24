@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Comprenda cómo Microsoft Compliance Manager calcula una puntuación personalizada en función de las acciones realizadas para abordar los riesgos y mejorar su posición de cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75d340c31b4f5477df845531bfb933883f331198
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 756ce207b1e9583bf63f19351e85955950487404
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908580"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052118"
 ---
 # <a name="compliance-score-calculation"></a>Cálculo de puntuación de cumplimiento
 
@@ -61,7 +61,7 @@ El estado de la acción se actualiza en el panel cada 24 horas. Una vez que siga
 
 Por ejemplo, si activa la autenticación multifactor (MFA) en el portal de Azure AD, el Administrador de cumplimiento detecta la configuración y la refleja en los detalles de la solución de acceso de control. Por el contrario, si no activaste MFA, el Administrador de cumplimiento marca esa acción como una acción recomendada.
 
-Obtenga más información sobre [puntuación segura y cómo funciona](../security/mtp/microsoft-secure-score.md).
+Obtenga más información sobre [puntuación segura y cómo funciona](../security/defender/microsoft-secure-score.md).
   
 ## <a name="action-types-and-points"></a>Tipos y puntos de acción
 
@@ -96,7 +96,7 @@ A las acciones se les asigna un valor de puntuación en función de si son oblig
 
 ### <a name="mandatory-and-discretionary-actions"></a>Acciones obligatorias y discrecionales
 
- - **Las acciones obligatorias** no se pueden omitir, ya sea de forma intencionada o accidental. Un ejemplo de una acción obligatoria es una directiva de contraseña administrada centralmente que establece los requisitos de longitud, complejidad y expiración de la contraseña. Los usuarios deben cumplir estos requisitos para tener acceso al sistema.
+ - **Las acciones obligatorias** no se pueden omitir, ya sea de forma intencionada o accidental. Un ejemplo de una acción obligatoria es una directiva de contraseña administrada centralmente que establece los requisitos de longitud, complejidad y expiración de la contraseña. Los usuarios deben cumplir estos requisitos para acceder al sistema.
   
  - **Las acciones discrecionales** dependen de los usuarios para comprender y cumplir una directiva. Por ejemplo, una directiva que requiere que los usuarios bloqueen su equipo cuando lo dejen es una acción discrecional porque depende del usuario.
   

@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Como administrador y como remitente de mensajes, puede revocar ciertos correos electrónicos cifrados con cifrado avanzado de mensajes de Office 365.
-ms.openlocfilehash: b49915b6ef72d366a4b2718319150d2d5b640b9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 340a9e73dba50e28223ee561db749a089c649df6
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917202"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051722"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Revocar el correo electrónico cifrado por cifrado de mensajes avanzado
 
@@ -91,7 +91,7 @@ Hay varias maneras de buscar el identificador de mensaje del correo electrónico
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>Para identificar el identificador de mensaje del correo electrónico que desea revocar mediante informes de cifrado de mensajes de Office en el Centro de &amp; cumplimiento de seguridad
 
-1. En el Centro de &amp; cumplimiento de seguridad, vaya al informe **cifrado de mensajes**. Para obtener información sobre este informe, vea Ver informes de [seguridad de correo electrónico en el Centro de cumplimiento de &amp; seguridad](../security/office-365-security/view-email-security-reports.md).
+1. En el Centro de &amp; cumplimiento de seguridad, vaya al informe **cifrado de mensajes**. Para obtener información sobre este informe, vea Ver informes de [seguridad de correo electrónico en el Centro de cumplimiento de &amp; seguridad](../security/defender-365-security/view-email-security-reports.md).
 
 2. Elija la **tabla Ver detalles** e identifique el mensaje que desea revocar.
 

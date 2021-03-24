@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear reglas de flujo de correo (reglas de transporte) para cifrar y descifrar mensajes con cifrado de mensajes de Office 365.
-ms.openlocfilehash: 5c0f67acdb5d8fbfff216742cab1c49732c4ab24
-ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
+ms.openlocfilehash: 63b1b0ba3b13f5beecd049a8ef81d6355855626f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50939651"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051942"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Definir reglas de flujo de correo para cifrar mensajes de correo electrónico
 
@@ -116,7 +116,7 @@ Puede quitar el cifrado al que su organización tiene acceso. Esto significa cua
 
 7. En **Hacer lo siguiente,** seleccione **Modificar la seguridad del** mensaje Quitar el cifrado de mensajes de Office \> **365 y la protección de derechos**.
 
-8. Seleccione **Guardar**.
+8. Haga clic en **Guardar**.
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>Crear reglas de flujo de correo para cifrado de mensajes de Office 365 sin las nuevas funcionalidades
 
@@ -132,4 +132,4 @@ Si aún no ha movido su organización a las nuevas funcionalidades de OME, Micro
 
 [Reglas de flujo de correo (reglas de transporte) en Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-[Reglas de flujo de correo (reglas de transporte) en Exchange Online Protection](../security/office-365-security/mail-flow-rules-transport-rules-0.md)
+[Reglas de flujo de correo (reglas de transporte) en Exchange Online Protection](../security/defender-365-security/mail-flow-rules-transport-rules-0.md)

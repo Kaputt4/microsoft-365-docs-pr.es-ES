@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Obtenga información sobre las tareas que le ayudarán a empezar rápidamente con el cumplimiento en Microsoft 365.
-ms.openlocfilehash: 69aef07e65f5644f9aa294025c8388410f160243
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b8a6f98a38dcb6096287cbc2389648c0e7457e5c
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908590"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052108"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Tareas rápidas para empezar a usar el Centro de cumplimiento de Microsoft 365
 
@@ -34,22 +34,22 @@ Es importante administrar quién en su organización tiene acceso al Centro de c
 
 Empiece asignando permisos de cumplimiento a las personas de su organización para que puedan realizar estas tareas y evitar que personas no autorizadas tengan acceso a áreas fuera de sus responsabilidades. Antes de empezar a configurar e implementar las soluciones  de cumplimiento  incluidas en Microsoft 365, querrá asegurarse de que ha asignado las personas adecuadas al administrador de datos de cumplimiento y a los roles de administrador de cumplimiento. También tendrá que asignar usuarios al rol de lector global de Azure Active Directory para ver los datos en el Administrador de cumplimiento.
 
-Para obtener instrucciones paso a paso para configurar permisos y asignar personas a roles de administrador, vea Permisos en el Centro de [seguridad & cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+Para obtener instrucciones paso a paso para configurar permisos y asignar personas a roles de administrador, vea Permisos en el Centro de [seguridad & cumplimiento](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="task-2-know-your-state-of-compliance"></a>Tarea 2: Conocer su estado de cumplimiento
 
 Es difícil saber a dónde ir si no sabe dónde está. Satisfacer sus necesidades de cumplimiento incluye comprender su nivel actual de riesgo y qué actualizaciones pueden ser necesarias en estos tiempos cambiantes. Tanto si su organización es nueva en los requisitos de cumplimiento como si tiene una amplia experiencia con los estándares y normativas que rigen su sector, lo mejor que puede hacer para mejorar el cumplimiento es comprender dónde se encuentra su organización.
 
-[Microsoft Compliance Manager](compliance-manager.md) puede ayudarle a comprender la posición de cumplimiento de su organización y destacar las áreas que pueden necesitar mejoras. El Administrador de cumplimiento usa un panel centralizado para calcular una puntuación basada en riesgos, que mide el progreso en la realización de acciones que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. También puede usar el Administrador de cumplimiento como herramienta para realizar un seguimiento de todas las evaluaciones de riesgos. Proporciona capacidades de flujo de trabajo para ayudarle a completar eficazmente sus evaluaciones de riesgos a través de una herramienta común.
+[Microsoft Compliance Manager](compliance-manager.md) puede ayudarle a comprender la posición de cumplimiento de su organización y destacar las áreas que pueden necesitar mejoras. El Administrador de cumplimiento usa un panel centralizado para calcular una puntuación basada en riesgos, que mide el progreso en la realización de acciones que ayudan a reducir los riesgos en torno a la protección de datos y los estándares normativos. También puede usar el Administrador de cumplimiento como herramienta para realizar un seguimiento de todas las evaluaciones de riesgos. Ofrece funciones de flujo de trabajo que le permiten completar de manera eficiente las evaluaciones de riesgos a través de una herramienta común.
 
 Para obtener instrucciones paso a paso para empezar a trabajar con el Administrador de cumplimiento, vea [Introducción al Administrador de cumplimiento.](compliance-manager-setup.md)
 
 >[!IMPORTANT]
 >La seguridad y el cumplimiento están estrechamente integrados para la mayoría de las organizaciones. Es importante que su organización aborde la seguridad básica, la protección contra amenazas y las áreas de administración de identidad y acceso para ayudar a proporcionar un enfoque de defensa en profundidad tanto para la seguridad como para el cumplimiento.
 >
->Compruebe la puntuación segura de [Microsoft 365](../security/mtp/microsoft-secure-score.md) en el Centro de seguridad de Microsoft 365 y complete las tareas descritas en los siguientes artículos:
+>Compruebe la puntuación segura de [Microsoft 365](../security/defender/microsoft-secure-score.md) en el Centro de seguridad de Microsoft 365 y complete las tareas descritas en los siguientes artículos:
 >
-> - [Hoja de ruta de seguridad: prioridades principales para los primeros 30 días, 90 días y más allá](../security/office-365-security/security-roadmap.md)
+> - [Hoja de ruta de seguridad: prioridades principales para los primeros 30 días, 90 días y más allá](../security/defender-365-security/security-roadmap.md)
 > - [Las 12 tareas principales para que los equipos de seguridad admitan el trabajo desde casa](../security/top-security-tasks-for-remote-work.md)
 
 ## <a name="task-3-enable-auditing-for-your-organization"></a>Tarea 3: Habilitar la auditoría para su organización
@@ -124,7 +124,7 @@ Hay más de 30 filtros diferentes disponibles, estos son algunos:
 
 Para obtener instrucciones paso a paso sobre cómo usar el explorador de actividades, vea [Introducción al explorador de actividades](data-classification-activity-explorer.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Ahora que ha configurado los conceptos básicos para la administración de cumplimiento para su organización, considere las siguientes soluciones de cumplimiento en Microsoft 365 para ayudarle a proteger la información confidencial y detectar y actuar en riesgos adicionales de insider.
 

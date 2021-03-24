@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas funcionalidades de protección de mensajes? Busca una respuesta aquí.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fdfcc2e7454b1243016754ba32dcc2622b876672
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 13d4181482bf8ad7460480a70c762fe60fd28ad0
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927758"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051752"
 ---
 # <a name="message-encryption-faq"></a>Preguntas más frecuentes sobre cifrado de mensajes
 
@@ -165,7 +165,7 @@ Sí Para obtener información sobre la personalización de mensajes de correo el
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>¿Hay capacidades de informes o información para correos electrónicos cifrados?
 
-Hay un informe de cifrado en el Centro de seguridad y cumplimiento. Vea [Ver informes de seguridad de correo electrónico en el Centro de seguridad & cumplimiento](../security/office-365-security/view-email-security-reports.md).
+Hay un informe de cifrado en el Centro de seguridad y cumplimiento. Vea [Ver informes de seguridad de correo electrónico en el Centro de seguridad & cumplimiento](../security/defender-365-security/view-email-security-reports.md).
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>¿Puedo usar el cifrado de mensajes con características de cumplimiento como eDiscovery?
 

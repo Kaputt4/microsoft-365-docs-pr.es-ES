@@ -18,20 +18,20 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Comprenda cómo realizar la transición de archivos heredados a Cifrado de mensajes (OME) de Office 365 para su organización.
-ms.openlocfilehash: 0b9c32b8b30753b02a5a0cdaa40b644ca89cfba3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: eabf655b6fa92a6f502ebe1e071d41f394f78929
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905922"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051832"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Información heredada para el cifrado de mensajes de Office 365
 
 Si aún no ha movido la organización a las nuevas funcionalidades de OME, pero ya ha implementado OME, la información de este artículo se aplica a su organización. Microsoft recomienda realizar un plan para pasar a las nuevas funcionalidades de OME tan pronto como sea razonable para su organización. Para obtener instrucciones, vea [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](set-up-new-message-encryption-capabilities.md). Si desea obtener más información sobre cómo funcionan primero las nuevas funcionalidades, vea Cifrado de mensajes de [Office 365](ome.md). El resto de este artículo hace referencia al comportamiento de OME antes del lanzamiento de las nuevas funcionalidades de OME.
   
-Con el cifrado de mensajes de Office 365, la organización puede enviar y recibir mensajes de correo electrónico cifrados entre personas dentro y fuera de la organización. El cifrado de mensajes de Office 365 funciona con Outlook.com, Yahoo, Gmail y otros servicios de correo electrónico. El cifrado de mensajes de correo electrónico ayuda a garantizar que solo los destinatarios previstos puedan ver el contenido del mensaje.
+Con el cifrado de mensajes de Office 365, la organización puede enviar y recibir mensajes cifrados entre personas de dentro y fuera de la organización. El cifrado de mensajes de Office 365 funciona con Outlook.com, Yahoo, Gmail y otros servicios de correo electrónico. El cifrado de mensajes de correo electrónico ayuda a garantizar que solo los destinatarios previstos puedan ver el contenido del mensaje.
   
-Aquí le mostramos otros ejemplos:
+Estos son algunos ejemplos:
   
 - Un empleado del banco envía extractos de tarjeta de crédito a los clientes
 
@@ -135,7 +135,7 @@ Cuando los usuarios de correo electrónico envían mensajes cifrados, los destin
 
 7. En **Hacer lo siguiente,** seleccione **Modificar la seguridad del mensaje** Quitar la versión anterior \> **de OME**.
 
-8. Seleccione **Guardar**.
+8. Haga clic en **Guardar**.
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Usar Exchange Online PowerShell para crear una regla para quitar el cifrado de las respuestas de correo electrónico cifradas sin las nuevas funcionalidades de OME
 
@@ -218,7 +218,7 @@ En el siguiente ejemplo se muestra un logotipo personalizado para ContosoPharma 
 
 En la tabla siguiente se proporcionan detalles técnicos para el servicio de cifrado de mensajes de Office 365 antes del lanzamiento de las nuevas funcionalidades de OME.
   
-| Detalles del servicio | Description |
+| Detalles del servicio | Descripción |
 |:-----|:-----|
 |Requisitos de dispositivo de cliente  <br/> |Los mensajes cifrados se pueden ver en cualquier dispositivo de cliente, siempre y cuando los datos adjuntos HTML puedan abrirse en un explorador moderno que admita el envío de formularios.  <br/> |
 |Algoritmo de cifrado y compatibilidad con FIPS (Estándar federal de procesamiento de información)  <br/> |El Cifrado de mensajes de Office 365 emplea las mismas claves de cifrado que Microsoft Azure Information Rights Management (IRM) y admite el modo criptográfico 2 (clave de 2048 bits para RSA y de 256 bits para sistemas SHA-1). Para obtener más información acerca de los modos criptográficos subyacentes de IRM, vea [Modos criptográficos de AD RMS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10)).  <br/> |
@@ -293,7 +293,7 @@ Cuando se envía una respuesta cifrada desde el portal de cifrado o a través de
   
  **P. Soy suscriptor de Cifrado hospedado (EHE) de Exchange. ¿Dónde puedo obtener más información sobre la actualización al cifrado de mensajes de Office 365?**
   
-Todos los clientes de EHE se han actualizado a Cifrado de mensajes de Office 365. Para obtener más información, visite el [Centro de actualización de](../security/office-365-security/exchange-online-protection-overview.md)cifrado hospedado de Exchange .
+Todos los clientes de EHE se han actualizado a Cifrado de mensajes de Office 365. Para obtener más información, visite el [Centro de actualización de](../security/defender-365-security/exchange-online-protection-overview.md)cifrado hospedado de Exchange .
   
  **P. ¿Necesito abrir direcciones URL, direcciones IP o puertos en el firewall de mi organización para admitir el cifrado de mensajes de Office 365?**
   

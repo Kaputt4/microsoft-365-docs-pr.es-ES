@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 18ab0065a4a6c90f61730a313eb8c54f538fafab
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: aa3af1e3cf507178a5747cca28fbda543aecd334
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918056"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052128"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -112,7 +112,7 @@ Use esta opción para asignar usuarios a grupos de roles específicos para segme
 
 9. Seleccione **Cerrar** para completar los pasos.
 
-Para obtener más información acerca de los grupos de roles y los permisos, vea [Permisos en el Centro de cumplimiento](../security/office-365-security/protect-against-threats.md).
+Para obtener más información acerca de los grupos de roles y los permisos, vea [Permisos en el Centro de cumplimiento](../security/defender-365-security/protect-against-threats.md).
 
 ## <a name="step-2-required-enable-the-audit-log"></a>Paso 2 (obligatorio): Habilitar el registro de auditoría
 
@@ -252,7 +252,7 @@ También puede habilitar la anonimización para los nombres de usuario mostrados
 
 4. Para habilitar la anonimización, seleccione **Mostrar versiones anónimas de nombres de usuario**.
 
-5. Seleccione **Guardar**.
+5. Haga clic en **Guardar**.
 
 6. Vaya a la pestaña **Plantillas de** aviso y, a continuación, seleccione Crear plantilla **de aviso.**
 
@@ -283,7 +283,7 @@ Siga estos pasos para probar la directiva de cumplimiento de comunicaciones:
 
 4. Corrija la alerta con los controles de corrección y compruebe que la alerta está correctamente resuelta.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de completar estos pasos para crear la primera directiva de cumplimiento de comunicaciones, empezará a recibir alertas de indicadores de actividad después de 24-48 horas. Configure directivas adicionales según sea necesario con las instrucciones del paso 5 de este artículo.
 
