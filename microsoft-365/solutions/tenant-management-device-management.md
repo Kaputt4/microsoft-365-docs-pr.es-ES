@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Implemente la opción correcta para la administración de dispositivos y aplicaciones para los inquilinos de Microsoft 365.
-ms.openlocfilehash: 994ab7d21ae70307fa78e1f7249d39ac314a7358
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0351f6be3f191e1a131da5b0b665a205a0abda8c
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904617"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050999"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Paso 5. Administración de dispositivos y aplicaciones para los inquilinos de Microsoft 365 para empresas
 
@@ -38,7 +38,7 @@ Para ayudarle a proteger y proteger los recursos de su organización, Microsoft 
 
 Si tiene Microsoft 365 E3 o E5, debe usar Intune.
 
-## <a name="microsoft-intune"></a>Microsoft Intune
+## <a name="microsoft-intune"></a>Microsoft Intune
 
 Usas [Microsoft Intune para](/mem/intune/fundamentals/planning-guide) administrar el acceso a tu organización con MDM o MAM. MDM es cuando los usuarios "inscriben" sus dispositivos en Intune. Después de inscribir un dispositivo, es un dispositivo administrado y puede recibir las directivas, reglas y configuración de la organización. Por ejemplo, puedes instalar aplicaciones específicas, crear una directiva de contraseña, instalar una conexión VPN y mucho más.
 
@@ -48,7 +48,7 @@ También determinarás cómo vas a administrar dispositivos personales y disposi
 
 ## <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
-Microsoft proporciona un conjunto de configuraciones para el acceso a identidades y [dispositivos](../security/office-365-security/microsoft-365-policies-configurations.md) para garantizar un personal seguro y productivo. Estas configuraciones incluyen el uso de:
+Microsoft proporciona un conjunto de configuraciones para el acceso a identidades y [dispositivos](../security/defender-365-security/microsoft-365-policies-configurations.md) para garantizar un personal seguro y productivo. Estas configuraciones incluyen el uso de:
 
 - Directivas de acceso condicional de Azure AD
 - Directivas de cumplimiento de dispositivos y protección de aplicaciones de Microsoft Intune
@@ -61,8 +61,8 @@ Este es un ejemplo de la aplicación de estas directivas y configuraciones para 
 
 Para el acceso a dispositivos y la administración de aplicaciones, usa las configuraciones de estos artículos:
 
-- [Requisitos previos](../security/office-365-security/identity-access-prerequisites.md)
-- [Directivas comunes de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md)
+- [Requisitos previos](../security/defender-365-security/identity-access-prerequisites.md)
+- [Directivas comunes de acceso a dispositivos e identidades](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="results-of-step-5"></a>Resultados del paso 5
 
