@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprenda cómo Contoso usa las características de protección de la información de Microsoft 365 para empresas para proteger sus activos digitales en la nube.
-ms.openlocfilehash: 90a82fbd4dd77ff0f8faa024ced177a640a10b80
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3bd778708e30253e53cc465e89f7b783141771de
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911043"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051501"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protección de la información en Contoso Corporation
 
@@ -76,9 +76,9 @@ Contoso siguió estos pasos para preparar Microsoft 365 para empresas para sus r
 
 Como parte de su implementación de Exchange Online y SharePoint, Contoso configuró el siguiente conjunto de directivas de acceso condicional y las aplicó a los grupos adecuados:
 
-- [Directivas de acceso a aplicaciones administradas y no administradas en dispositivos](../security/office-365-security/identity-access-policies.md)
-- [Directivas de acceso de Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)
-- [Directivas de acceso a SharePoint](../security/office-365-security/sharepoint-file-access-policies.md)
+- [Directivas de acceso a aplicaciones administradas y no administradas en dispositivos](../security/defender-365-security/identity-access-policies.md)
+- [Directivas de acceso de Exchange Online](../security/defender-365-security/secure-email-recommended-policies.md)
+- [Directivas de acceso a SharePoint](../security/defender-365-security/sharepoint-file-access-policies.md)
 
 Este es el conjunto resultante de directivas de Contoso para la protección de la información.
 
@@ -115,9 +115,9 @@ Esta es la configuración resultante de Contoso information-protection.
 
 Obtenga información sobre cómo Contoso usa las características de seguridad en [Microsoft 365](contoso-security-summary.md) para empresas para la administración de identidades y acceso, protección contra amenazas, protección de la información y administración de seguridad.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
-[Mapa de ruta de seguridad](../security/office-365-security/security-roadmap.md)
+[Mapa de ruta de seguridad](../security/defender-365-security/security-roadmap.md)
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)
 

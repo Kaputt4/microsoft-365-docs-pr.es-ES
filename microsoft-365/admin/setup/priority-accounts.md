@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: Supervisar los mensajes de correo electrónico con errores y retrasos enviados a o desde cuentas que tienen un alto impacto empresarial.
-ms.openlocfilehash: b31cbf79b5b1b8f882c4c7bc8926779410baefe3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0bba1f87f80de9fea249ce2604e83ceeadfb79ee
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914059"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050647"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Administrar y supervisar cuentas de prioridad
 
@@ -26,10 +26,10 @@ En todas las organizaciones de Microsoft 365, hay personas que son esenciales, c
 
 Para ayudar a su organización a proteger estas cuentas, ahora puede designar usuarios específicos como cuentas de prioridad y aprovechar las características específicas de la aplicación que les proporcionan protección adicional. En el futuro, más aplicaciones y características admitirán cuentas de prioridad y, para empezar, hemos anunciado dos **funcionalidades:** protección de cuentas prioritarias y supervisión de flujo de correo **premium.**
 
-- **Protección** de cuentas de prioridad: Microsoft Defender para Office 365 (anteriormente Protección contra amenazas avanzada de Office 365) admite cuentas de prioridad como etiquetas que se pueden usar en filtros en alertas, informes e investigaciones. Para obtener más información, consulte [Etiquetas de usuario en Microsoft Defender para Office 365](../../security/office-365-security/user-tags.md).
+- **Protección** de cuentas de prioridad: Microsoft Defender para Office 365 (anteriormente Protección contra amenazas avanzada de Office 365) admite cuentas de prioridad como etiquetas que se pueden usar en filtros en alertas, informes e investigaciones. Para obtener más información, consulte [Etiquetas de usuario en Microsoft Defender para Office 365](../../security/defender-365-security/user-tags.md).
 - **Supervisión del flujo de** correo premium: el flujo de correo correcto puede ser fundamental para el éxito empresarial y los retrasos o errores de entrega pueden tener un impacto negativo en la empresa. Puede elegir un umbral para mensajes de correo electrónico con errores o retrasos, recibir alertas cuando se supere ese umbral y ver un informe de problemas de correo electrónico para cuentas de prioridad. Para obtener más información, consulte Problemas de correo electrónico para el informe de cuentas [de prioridad en el EAC moderno](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
 
-Para obtener información sobre los procedimientos recomendados de seguridad para cuentas de prioridad, vea [Recomendaciones de seguridad para cuentas de prioridad.](../../security/office-365-security/security-recommendations-for-priority-accounts.md)
+Para obtener información sobre los procedimientos recomendados de seguridad para cuentas de prioridad, vea [Recomendaciones de seguridad para cuentas de prioridad.](../../security/defender-365-security/security-recommendations-for-priority-accounts.md)
 
 ## <a name="before-you-begin"></a>Antes de empezar
 

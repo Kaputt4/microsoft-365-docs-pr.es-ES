@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure Microsoft Defender para Office 365 y proteja los datos confidenciales contra el phishing, malware y otras amenazas.
-ms.openlocfilehash: 0424fd56e30477f4e8d9e84b7ac78ba6255781fa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 80ad3767b277e4808b6df4bdd977688794649e11
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913294"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050854"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -35,7 +35,7 @@ Este artículo le ayuda a aumentar la protección de su suscripción a Microsoft
 
 Antes de empezar, compruebe la puntuación segura de Office 365. Puntuación segura de Office 365 analiza la seguridad de la organización en función de las actividades regulares y la configuración de seguridad, y asigna una puntuación. Comience tomando nota de la puntuación actual. Para aumentar la puntuación, complete las acciones recomendadas en este artículo. El objetivo no es lograr la puntuación máxima, sino tener en cuenta las oportunidades para proteger el entorno que no afectan negativamente a la productividad de los usuarios.
 
-Para obtener más información, vea [Puntuación segura de Microsoft](../security/mtp/microsoft-secure-score.md).
+Para obtener más información, vea [Puntuación segura de Microsoft](../security/defender/microsoft-secure-score.md).
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Aumentar el nivel de protección contra malware en el correo
 
@@ -57,7 +57,7 @@ El entorno de Office 365 o Microsoft 365 incluye protección contra malware. Pue
 
 6. Seleccione **Guardar.**
 
-Para obtener más información, vea [Protección contra malware en EOP](../security/office-365-security/anti-malware-protection.md).
+Para obtener más información, vea [Protección contra malware en EOP](../security/defender-365-security/anti-malware-protection.md).
 
 ## <a name="protect-against-ransomware"></a>Protección contra ransomware
 
@@ -81,7 +81,7 @@ Para crear una regla de transporte de correo:
 
 6. Seleccione **Guardar**.
 
-|Setting|Advertir a los usuarios antes de abrir los datos adjuntos de los archivos de Office||
+|Configuración|Advertir a los usuarios antes de abrir los datos adjuntos de los archivos de Office||
 |---|---|---|
 |Nombre|Regla anti ransomware: advertir a los usuarios|
 |Aplique esta regla si . . .|Cualquier dato adjunto . . . extensión de archivo coincide con . . .|
@@ -89,7 +89,7 @@ Para crear una regla de transporte de correo:
 |Haga lo siguiente. . .|Notificar al destinatario con un mensaje|
 |Proporcionar texto del mensaje|No abra estos tipos de archivos de personas que no conoce porque pueden contener macros con código malintencionado.|
 
-Para obtener más información, vea:
+Para más información, vea:
 
 - [Ransomware: cómo reducir el riesgo](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -113,7 +113,7 @@ Para crear una regla de transporte de correo, vea [este breve vídeo](https://su
 
 6. Seleccione **Guardar**.
 
-|Setting|Advertir a los usuarios antes de abrir los datos adjuntos de los archivos de Office|
+|Configuración|Advertir a los usuarios antes de abrir los datos adjuntos de los archivos de Office|
 |---|---|
 |Nombre|Impedir el reenvío automático de correo electrónico a dominios externos|
 |Aplicar esta regla si ...|El remitente . . . es externo/interno . . . Dentro de la organización|
@@ -138,7 +138,7 @@ Para crear una directiva contra la suplantación de identidad en Microsoft Defen
 
 4. En la **página Anti-phishing,** seleccione **+ Crear**. Se inicia un asistente que le permite definir la directiva contra suplantación de identidad.
 
-5. Especifique el nombre, la descripción y la configuración de la directiva como se recomienda en la tabla siguiente. Para obtener más información, vea [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../security/office-365-security/set-up-anti-phishing-policies.md).
+5. Especifique el nombre, la descripción y la configuración de la directiva como se recomienda en la tabla siguiente. Para obtener más información, vea [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../security/defender-365-security/set-up-anti-phishing-policies.md).
 
 6. Después de revisar la configuración, elija **Crear esta directiva** o **Guardar**, según corresponda.
 
@@ -181,7 +181,7 @@ Para crear una directiva de datos adjuntos seguros, vea [este breve vídeo](http
 |Redirigir datos adjuntos al detectar|Habilitar redirección (seleccione este cuadro) Escriba la cuenta de administrador o una configuración de buzón para la cuarentena.          Aplica la selección anterior si el examen de malware para datos adjuntos se encuentra en tiempo de espera o si se produce un error (selecciona este cuadro).|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
 
-Para obtener más información, vea [Set up anti-phishing policies in Microsoft Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
+Para obtener más información, vea [Set up anti-phishing policies in Microsoft Defender for Office 365](../security/defender-365-security/set-up-anti-phishing-policies.md).
 
 ## <a name="protect-against-phishing-attacks-with-safe-links"></a>Proteger contra ataques de suplantación de identidad con vínculos seguros
 
@@ -224,7 +224,7 @@ Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 |Usar datos adjuntos seguros para examinar contenido descargable|Seleccione este cuadro.|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
 
-Para obtener más información, vea [Vínculos seguros](../security/office-365-security/atp-safe-links.md).
+Para obtener más información, vea [Vínculos seguros](../security/defender-365-security/safe-links.md).
 
 ## <a name="go-to-intune-admin-center"></a>Ir al Centro de administración de Intune
 

@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Cómo implementar el túnel dividido VPN para Office 365
-ms.openlocfilehash: 2feb03f2142639a1c1de4ff9a69768e23f282546
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 93adc70882e0c8ce9752cb471b13c301a4a59bd4
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924229"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051287"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementación del túnel dividido de VPN para Office 365
 
@@ -304,7 +304,7 @@ Entonces se puede desencadenar una directiva como aprobar, activar MFA o bloquea
 
 ### <a name="how-do-i-protect-against-viruses-and-malware"></a>¿Cómo puedo protegerme contra virus y malware?
 
-De nuevo, Office 365 proporciona protección para los puntos de conexión marcados para Optimizar en varias capas en el servicio, [como se describe en este documento](/office365/Enterprise/office-365-malware-and-ransomware-protection). Como se ha indicado, es mucho más eficaz proporcionar estos elementos de seguridad en el propio servicio en lugar de intentar hacerlo en línea con dispositivos que pueden no comprender completamente los protocolos o el tráfico. De forma predeterminada, SharePoint Online examina automáticamente las [cargas de archivos](../security/office-365-security/virus-detection-in-spo.md) en busca de malware conocido
+De nuevo, Office 365 proporciona protección para los puntos de conexión marcados para Optimizar en varias capas en el servicio, [como se describe en este documento](/office365/Enterprise/office-365-malware-and-ransomware-protection). Como se ha indicado, es mucho más eficaz proporcionar estos elementos de seguridad en el propio servicio en lugar de intentar hacerlo en línea con dispositivos que pueden no comprender completamente los protocolos o el tráfico. De forma predeterminada, SharePoint Online examina automáticamente las [cargas de archivos](../security/defender-365-security/virus-detection-in-spo.md) en busca de malware conocido
 
 Para los puntos de conexión de Exchange enumerados anteriormente, [Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) y Microsoft Defender para Office [365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) hacen un excelente trabajo de proporcionar seguridad del tráfico al servicio.
 

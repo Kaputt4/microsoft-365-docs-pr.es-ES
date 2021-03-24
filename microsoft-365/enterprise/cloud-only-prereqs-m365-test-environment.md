@@ -14,20 +14,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cree un entorno de Microsoft 365 para probar el acceso de dispositivos e identidades con los requisitos previos de autenticación solo para la nube.
-ms.openlocfilehash: 3e5a9ef1f610bf3dc6d23c9e584e179fb8ab9ca9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 537718eb0efcffc296162a4458158efcbdad9986
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905145"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051549"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Requisitos previos de acceso de dispositivos e identidades solo para la nube en el entorno de prueba de Microsoft 365
 
 *Esta Guía del laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
 
-[Las configuraciones de acceso](../security/office-365-security/microsoft-365-policies-configurations.md) a dispositivos y identidades son un conjunto de configuraciones recomendadas y directivas de acceso condicional para proteger el acceso a todos los servicios integrados con Azure Active Directory (Azure AD).
+[Las configuraciones de acceso](../security/defender-365-security/microsoft-365-policies-configurations.md) a dispositivos y identidades son un conjunto de configuraciones recomendadas y directivas de acceso condicional para proteger el acceso a todos los servicios integrados con Azure Active Directory (Azure AD).
 
-En este artículo describe cómo configurar un entorno de prueba de Microsoft 365 que cumpla con los requisitos de la [configuración de requisitos previos solo para la nube](../security/office-365-security/identity-access-prerequisites.md#prerequisites) para el acceso de dispositivos e identidades.
+En este artículo describe cómo configurar un entorno de prueba de Microsoft 365 que cumpla con los requisitos de la [configuración de requisitos previos solo para la nube](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) para el acceso de dispositivos e identidades.
 
 Existen ocho fases para configurar el entorno de pruebas:
 
@@ -109,11 +109,11 @@ Para Skype Empresarial Online:
   Get-CsOAuthConfiguration
   ```
 
-El resultado es un entorno de prueba que cumple los requisitos de la configuración de [requisitos](../security/office-365-security/identity-access-prerequisites.md#prerequisites) previos de solo nube para el acceso de identidades y dispositivos. 
+El resultado es un entorno de prueba que cumple los requisitos de la configuración de [requisitos](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) previos de solo nube para el acceso de identidades y dispositivos. 
 
 ## <a name="next-step"></a>Paso siguiente
 
-Use [Directivas comunes de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md) para configurar las directivas que se basan en los requisitos previos y protegen dispositivos e identidades.
+Use [Directivas comunes de acceso a dispositivos e identidades](../security/defender-365-security/identity-access-policies.md) para configurar las directivas que se basan en los requisitos previos y protegen dispositivos e identidades.
 
 ## <a name="see-also"></a>Ver también
 

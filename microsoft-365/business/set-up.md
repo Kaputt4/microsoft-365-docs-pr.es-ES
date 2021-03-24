@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Descubra los pasos de configuración de Microsoft 365 Empresa Premium, como agregar un dominio y usuarios, configurar directivas de seguridad y mucho más.
-ms.openlocfilehash: 5b082e78f3dc4067dcce4a96a8088b2347bc3af4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4d49ba7ccdb65691756aaa505d0856deb115595b
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912578"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052242"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurar Microsoft 365 Empresa Premium en el Asistente para configuración
 
@@ -107,7 +107,7 @@ Para configurar servicios, es necesario actualizar algunos registros en su regis
 
 Las directivas configuradas en el asistente se aplican automáticamente a un grupo [de seguridad](/office365/admin/create-groups/compare-groups#security-groups) denominado Todos *los usuarios*. También puede crear grupos adicionales a los que asignar directivas en el Centro de administración.
 
-1. En **Aumentar** la protección contra amenazas cibernéticas avanzadas, se recomienda aceptar los valores predeterminados para permitir que [Office 365 Advance Threat Protection](../security/office-365-security/office-365-atp.md) analice archivos y vínculos en aplicaciones de Office.
+1. En **Aumentar** la protección contra amenazas cibernéticas avanzadas, se recomienda aceptar los valores predeterminados para permitir que [Office 365 Advance Threat Protection](../security/defender-365-security/defender-for-office-365.md) analice archivos y vínculos en aplicaciones de Office.
 
     ![Captura de pantalla de la página Aumentar la protección.](../media/increasetreatprotection.png)
 

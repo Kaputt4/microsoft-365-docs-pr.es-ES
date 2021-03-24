@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo Contoso usa las características de seguridad de Microsoft 365 para empresas.
-ms.openlocfilehash: 31baf61011fb67fbe11394718086d73afa2bc680
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1bcbaad2409df81121a92e8ad01f794ae28d8dc6
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907667"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051489"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Resumen de Microsoft 365 para seguridad empresarial para Contoso Corporation
 
@@ -52,7 +52,7 @@ Contoso siguió estos pasos para preparar su seguridad para la implementación d
 
 Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para los requisitos de implementación empresarial, los administradores de seguridad de Contoso y su departamento de TI implementaron muchas características y capacidades de seguridad, como se describe en las secciones siguientes.
 
-## <a name="identity-and-access-management"></a>Administración de identidad y acceso 
+## <a name="identity-and-access-management"></a>Administración de acceso e identidad   
 
 - Cuentas de administrador global dedicadas con MFA y PIM
 
@@ -73,7 +73,7 @@ Para seguir los procedimientos recomendados de seguridad y Microsoft 365 para lo
 
 - Acceso de dispositivos y aplicaciones más seguro con las directivas de Acceso Condicional
 
-  Contoso usa [directivas de Acceso Condicional](../security/office-365-security/microsoft-365-policies-configurations.md) para la identidad, los dispositivos, Exchange Online y SharePoint. Las directivas de Acceso Condicional de identidad incluyen exigir cambios de contraseña para los usuarios de riesgo elevado e impedir que los clientes usen aplicaciones que no admiten la autenticación moderna. Las directivas condicionales de dispositivo incluyen la definición de aplicaciones aprobadas y la exigencia de equipos y dispositivos móviles compatibles. Las directivas de Acceso Condicional de Exchange Online incluyen el bloqueo de los clientes de ActiveSync y la configuración del cifrado de mensajes de Office 365. Las directivas de acceso condicional de SharePoint Online incluyen una protección adicional para sitios confidenciales y altamente regulados.
+  Contoso usa [directivas de Acceso Condicional](../security/defender-365-security/microsoft-365-policies-configurations.md) para la identidad, los dispositivos, Exchange Online y SharePoint. Las directivas de Acceso Condicional de identidad incluyen exigir cambios de contraseña para los usuarios de riesgo elevado e impedir que los clientes usen aplicaciones que no admiten la autenticación moderna. Las directivas condicionales de dispositivo incluyen la definición de aplicaciones aprobadas y la exigencia de equipos y dispositivos móviles compatibles. Las directivas de Acceso Condicional de Exchange Online incluyen el bloqueo de los clientes de ActiveSync y la configuración del cifrado de mensajes de Office 365. Las directivas de acceso condicional de SharePoint Online incluyen una protección adicional para sitios confidenciales y altamente regulados.
 
 - Windows Hello para empresas
 

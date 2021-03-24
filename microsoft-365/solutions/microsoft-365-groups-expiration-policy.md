@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre las directivas de expiración de grupos de Microsoft 365.
-ms.openlocfilehash: 8232e7df2a8390b905386773ed0656eb8239d5c5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 65a746751cd523a5dadce3eca573e6a9bfce0166
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920921"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052307"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Directiva de expiración de grupo de Microsoft 365
 
@@ -37,6 +37,8 @@ Los grupos que se usan activamente se renuevan automáticamente. Cualquiera de l
 - SharePoint: ver, editar, descargar, mover, compartir o cargar archivos. (Ver una página de SharePoint no cuenta como una acción para la renovación automática).
 - Outlook: unirse a un grupo, leer o escribir un mensaje de grupo desde el grupo y, como un mensaje (Outlook en la web).
 - Teams: visitar un canal de equipos.
+
+Tenga en cuenta que la única actividad de Yammer que desencadenará una renovación automática de grupos es la carga de un documento en SharePoint dentro de la comunidad.
 
 > [!IMPORTANT]
 > Al cambiar la directiva de expiración, el servicio vuelve a calcular la fecha de expiración de cada grupo. Siempre comienza a contar desde la fecha en que se creó el grupo y, a continuación, aplica la nueva directiva de expiración.

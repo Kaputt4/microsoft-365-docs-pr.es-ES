@@ -14,20 +14,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Crear un entorno de Microsoft 365 para probar el acceso de dispositivos e identidades con los requisitos previos para la autenticación de sincronización de hash de contraseña.
-ms.openlocfilehash: 3236c79e308f269c07146ff094c7ae27271b97fc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2ca83b6ab715a752d3d9620af631263eb5d84fa3
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928055"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051251"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Requisitos previos de acceso de dispositivos e identidades para la sincronización de hash de contraseña en su entorno de prueba de Microsoft 365
 
 *Esta Guía del laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
 
-[Las configuraciones](../security/office-365-security/microsoft-365-policies-configurations.md) de acceso a dispositivos y identidades son un conjunto de configuraciones y directivas de acceso condicional para proteger el acceso a todos los servicios de Microsoft 365 para empresas que están integrados con Azure Active Directory (Azure AD).
+[Las configuraciones](../security/defender-365-security/microsoft-365-policies-configurations.md) de acceso a dispositivos y identidades son un conjunto de configuraciones y directivas de acceso condicional para proteger el acceso a todos los servicios de Microsoft 365 para empresas que están integrados con Azure Active Directory (Azure AD).
 
-En este artículo se describe cómo configurar un entorno de prueba de Microsoft 365 que cumpla los requisitos del híbrido con la configuración de requisitos previos de autenticación de sincronización [de hash](../security/office-365-security/identity-access-prerequisites.md#prerequisites) de contraseña para el acceso a dispositivos y identidades.
+En este artículo se describe cómo configurar un entorno de prueba de Microsoft 365 que cumpla los requisitos del híbrido con la configuración de requisitos previos de autenticación de sincronización [de hash](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) de contraseña para el acceso a dispositivos y identidades.
 
 Hay diez fases para configurar este entorno de prueba:
 
@@ -119,11 +119,11 @@ Para Skype Empresarial Online:
   Get-CsOAuthConfiguration
   ```
 
-El resultado es un entorno de prueba que cumple los requisitos de [Active Directory con la configuración de requisitos previos de sincronización de hash de contraseña](../security/office-365-security/identity-access-prerequisites.md#prerequisites) para acceso de dispositivos e identidades. 
+El resultado es un entorno de prueba que cumple los requisitos de [Active Directory con la configuración de requisitos previos de sincronización de hash de contraseña](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) para acceso de dispositivos e identidades. 
 
 ## <a name="next-step"></a>Paso siguiente
 
-Use [Directivas comunes de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md) para configurar las directivas que se basan en los requisitos previos y protegen dispositivos e identidades.
+Use [Directivas comunes de acceso a dispositivos e identidades](../security/defender-365-security/identity-access-policies.md) para configurar las directivas que se basan en los requisitos previos y protegen dispositivos e identidades.
 
 ## <a name="see-also"></a>Ver también
 

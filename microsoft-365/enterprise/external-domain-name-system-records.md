@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Una lista de referencia de registros externos del sistema de nombres de dominio que se usan al planear una implementación de Office 365.
-ms.openlocfilehash: c2384f1e330692d43c923a7932db4c3ff2bc99ae
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3aa6bf3362005eb0dae5bca40322fe2178d5d69f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924217"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051383"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Registros externos del Sistema de nombres de dominio para Office 365
 
@@ -103,7 +103,7 @@ Existen pasos específicos que realizar cuando se usan [direcciones URL y direcc
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
->  SPF está diseñado para ayudar a evitar la suplantación de identidad, pero existen técnicas de suplantación de identidad contra las que SPF no puede ofrecer protección. Para obtener protección contra estas, una vez que haya configurado SPF, también debe configurar DKIM y DMARC para Office 365. Vea [Use DKIM to validate outbound email sent from your domain in Office 365](../security/office-365-security/use-dkim-to-validate-outbound-email.md) para comenzar. A continuación, vea [Use DMARC to validate email in Office 365](../security/office-365-security/use-dmarc-to-validate-email.md).
+>  SPF está diseñado para ayudar a evitar la suplantación de identidad, pero existen técnicas de suplantación de identidad contra las que SPF no puede ofrecer protección. Para obtener protección contra estas, una vez que haya configurado SPF, también debe configurar DKIM y DMARC para Office 365. Vea [Use DKIM to validate outbound email sent from your domain in Office 365](../security/defender-365-security/use-dkim-to-validate-outbound-email.md) para comenzar. A continuación, vea [Use DMARC to validate email in Office 365](../security/defender-365-security/use-dmarc-to-validate-email.md).
   
 Los registros SPF son registros TXT que ayudan a evitar que otros usen su dominio para enviar correo no deseado o correos electrónicos malintencionados. Los registros de la estructura de directivas de remitente (SPF) identifican los servidores autorizados para enviar correo electrónico desde su dominio.
   
@@ -125,7 +125,7 @@ Un sistema de correo electrónico que recibe un correo electrónico de su domini
 Para los escenarios donde no solo utiliza el correo electrónico de Exchange Online para Office 365 (por ejemplo, si también usa correo electrónico procedente de SharePoint Online), use la siguiente tabla para determinar qué incluir en el valor del registro.
   
 > [!NOTE]
-> Si tiene un escenario complejo que incluye, por ejemplo, servidores de correo electrónico perimetral para administrar el tráfico de correo electrónico en el firewall, tendrá que configurar un registro SPF más detallado. Obtenga información sobre cómo: [Configurar registros SPF en Office 365 para ayudar a evitar la suplantación de identidad](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md). Si desea obtener más información sobre cómo funciona SPF con Office 365, consulte [Cómo Office 365 usa el marco de directivas de remitente (SPF) para ayudar a evitar la suplantación de identidad](../security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md).
+> Si tiene un escenario complejo que incluye, por ejemplo, servidores de correo electrónico perimetral para administrar el tráfico de correo electrónico en el firewall, tendrá que configurar un registro SPF más detallado. Obtenga información sobre cómo: [Configurar registros SPF en Office 365 para ayudar a evitar la suplantación de identidad](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md). Si desea obtener más información sobre cómo funciona SPF con Office 365, consulte [Cómo Office 365 usa el marco de directivas de remitente (SPF) para ayudar a evitar la suplantación de identidad](../security/defender-365-security/how-office-365-uses-spf-to-prevent-spoofing.md).
   
 | Número|Si usa...  <br/> |Finalidad  <br/> |Agregar estos includes  <br/> |
 |:-----|:-----|:-----|:-----|
@@ -181,6 +181,6 @@ TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com include:mail.contoso.com -all
 ```
 
-A continuación se muestran algunos ejemplos comunes que le pueden ayudar a adaptar el registro SPF existente cuando agrega su dominio a Office 365 para correo electrónico. Si tiene un escenario complejo que incluye, por ejemplo, servidores de correo electrónico perimetral para administrar el tráfico de correo electrónico en el firewall, tendrá que configurar un registro SPF más detallado. Obtenga información sobre cómo: [Configurar registros SPF en Office 365 para ayudar a evitar la suplantación de identidad](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md).
+A continuación se muestran algunos ejemplos comunes que le pueden ayudar a adaptar el registro SPF existente cuando agrega su dominio a Office 365 para correo electrónico. Si tiene un escenario complejo que incluye, por ejemplo, servidores de correo electrónico perimetral para administrar el tráfico de correo electrónico en el firewall, tendrá que configurar un registro SPF más detallado. Obtenga información sobre cómo: [Configurar registros SPF en Office 365 para ayudar a evitar la suplantación de identidad](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md).
   
 Este es un vínculo breve que se puede usar para volver: [https://aka.ms/o365edns]()

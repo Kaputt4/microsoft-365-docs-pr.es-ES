@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información acerca de cómo probar la funcionalidad de correo electrónico de mi dominio personalizado en un buzón de Microsoft 365 usando solo dos cuentas de prueba.
-ms.openlocfilehash: 019f1786756a036132f95fd5e8ef8a1d42cd515b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e710218a2a5cb9821abb213eb2ebb0c92c9bdc42
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914719"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050695"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Prueba piloto de Microsoft 365 desde mi dominio personalizado
 
@@ -115,7 +115,7 @@ Para lograr esto, hay dos pasos:
 
 Asegúrese de que ha realizado lo siguiente en Microsoft 365 u Office 365:
 
-1. Para configurar conectores, necesita permisos asignados antes de comenzar. Para comprobar qué permisos necesita, consulte la entrada sobre conectores de Microsoft 365 y Office 365 en el tema [Permisos de características en EOP](../../security/office-365-security/feature-permissions-in-eop.md).
+1. Para configurar conectores, necesita permisos asignados antes de comenzar. Para comprobar qué permisos necesita, consulte la entrada sobre conectores de Microsoft 365 y Office 365 en el tema [Permisos de características en EOP](https://docs.microsoft.com/microsoft-365/security/defender-365-security/feature-permissions-in-eop).
 
 2. Si desea que EOP o Exchange Online retransmitan correo electrónico desde los servidores de correo electrónico a Internet, elija una de las siguientes opciones:
 

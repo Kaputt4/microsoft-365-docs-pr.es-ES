@@ -20,16 +20,16 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Obtenga información sobre cómo implementar ExpressRoute para Office 365, que proporciona una ruta de enrutamiento alternativa a muchos servicios de Office 365 orientados a Internet.
-ms.openlocfilehash: d0f0b5156aae5a3e2c38f51ba0b74738918593e9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d75fe3a6dab4926babeef61fc14894566ff819b0
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909837"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051371"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementar ExpressRoute para Office 365
 
-*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
+*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
 
 ExpressRoute para Office 365 proporciona una ruta de enrutamiento alternativa a muchos servicios de Office 365 con conexión a Internet. La arquitectura de ExpressRoute para Office 365 se basa en la publicidad de prefijos IP públicos de servicios de Office 365 que ya son accesibles a través de Internet en los circuitos de ExpressRoute aprovisionados para la redistribución posterior de esos prefijos IP en la red. Con ExpressRoute, habilita varias rutas de enrutamiento diferentes, a través de Internet y a través de ExpressRoute, para muchos servicios de Office 365. Este estado de enrutamiento en la red puede representar un cambio significativo en la forma en que se diseñó la topología de red interna.
   
@@ -125,7 +125,7 @@ Este es un ejemplo de un servicio que solo es saliente:
 |**Connection (propiedad)**|**Valor**|
 |:-----|:-----|
 |**Dirección del tráfico de red** <br/> |Salida  <br/> |
-|**Servicio** <br/> |SharePoint en linea  <br/> |
+|**Servicio** <br/> |SharePoint Online  <br/> |
 |**Extremo local (origen)** <br/> |Estación de trabajo de usuario  <br/> |
 |**Extremo de Office 365 público (destino)** <br/> |SharePoint Online (direcciones IP)  <br/> |
 |**Entrada DNS pública (Internet)** <br/> |\*.sharepoint.com (y FQDN adicionales)  <br/> |
@@ -192,7 +192,7 @@ A menudo, hay varias ubicaciones de reunión que podrían seleccionarse dentro d
 |**Ubicaciones de reunión de Planned ExpressRoute en California y Nueva York**||
 |:-----|:-----|
 |Ubicación  <br/> |Número de personas  <br/> |Latencia esperada en la red de Microsoft a través de la salida de Internet  <br/> |Latencia esperada en la red de Microsoft a través de ExpressRoute  <br/> |
-|Los Ángeles  <br/> |10 000  <br/> |~15 ms  <br/> |~10ms (a través de Silicon Valley)  <br/> |
+|Los Ángeles  <br/> |10,000  <br/> |~15 ms  <br/> |~10ms (a través de Silicon Valley)  <br/> |
 |Washington DC  <br/> |15.000  <br/> |~20ms  <br/> |~10ms (a través de Nueva York)  <br/> |
 |Dallas  <br/> |5,000  <br/> |~15 ms  <br/> |~40ms (a través de Nueva York)  <br/> |
 
@@ -225,7 +225,7 @@ El plan de implementación debe incluir tanto los detalles técnicos de la confi
 
 - Decida hasta dónde se anunciarán las rutas de ExpressRoute en la red y cuál es el mecanismo para que los clientes seleccionen la ruta de Acceso de Internet o ExpressRoute; por ejemplo, enrutamiento directo o proxy de aplicación.
 
-- Planear cambios en los registros DNS, incluidas las entradas [del marco](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md) de directivas de remitente.
+- Planear cambios en los registros DNS, incluidas las entradas [del marco](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md) de directivas de remitente.
 
 - Planeación de la estrategia NAT, incluido NAT de origen saliente y entrante.
 

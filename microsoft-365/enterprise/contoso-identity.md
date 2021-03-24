@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cómo Contoso aprovecha la Identidad como servicio (IDaaS) y proporciona autenticación basada en la nube a sus empleados y autenticación federada a sus partners y clientes.
-ms.openlocfilehash: accd60f6699e7ebf04963213128d1ca1ffc8f7fe
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f3c8746345683652ce601400ae7297e96fff2ee3
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911077"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051525"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Identidad para Contoso Corporation
 
@@ -64,7 +64,7 @@ Este es el servidor que ejecuta Azure AD Connect para buscar cambios en el bosqu
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>Directivas de Acceso Condicional a identidades y dispositivos
 
-Contoso creó un conjunto de [directivas de Acceso Condicional](../security/office-365-security/identity-access-policies.md) de Azure AD e Intune de tres niveles de protección:
+Contoso creó un conjunto de [directivas de Acceso Condicional](../security/defender-365-security/identity-access-policies.md) de Azure AD e Intune de tres niveles de protección:
 
 - *Las* protecciones de línea base se aplican a todas las cuentas de usuario.
 - *Las* protecciones confidenciales se aplican al personal directivo y ejecutivo.
@@ -78,7 +78,7 @@ Este es el conjunto resultante de directivas de identidad y dispositivo de acces
 
 Obtenga información sobre cómo Contoso usa su infraestructura de Microsoft Endpoint Configuration Manager para implementar y mantener [Windows 10 Enterprise](contoso-win10.md) actual en toda su organización.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Plan de identidad para Microsoft 365](identity-roadmap-microsoft-365.md)
 

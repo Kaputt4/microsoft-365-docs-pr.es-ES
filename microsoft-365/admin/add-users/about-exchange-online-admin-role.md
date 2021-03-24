@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Los administradores de Exchange Online administran el correo electrónico y los buzones de su organización. Por ejemplo, recuperan elementos eliminados en el buzón de un usuario. '
-ms.openlocfilehash: 4db7b55f6bb5bb75149a3b91bd7855565ca1be46
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5b63f2b0a58fdce75e5d70e329b8a0d02fb94a1a
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906353"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050975"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Acerca del rol de administrador de Exchange Online
 
@@ -48,7 +48,7 @@ Estas son algunas de las tareas clave que los usuarios pueden realizar cuando se
 
 - [Cree un buzón compartido para](../email/create-a-shared-mailbox.md) que un grupo de personas pueda supervisar y enviar correo electrónico desde una dirección de correo electrónico común.
 
-- [Protección contra correo electrónico no deseado](../../security/office-365-security/anti-spam-protection.md) y filtros de malware para la organización.
+- [Protección contra correo electrónico no deseado](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-spam-protection) y filtros de malware para la organización.
 
 - Administrar grupos de Microsoft 365
 

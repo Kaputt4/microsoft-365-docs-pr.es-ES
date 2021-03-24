@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: Guía básica para configurar la administración de dispositivos para Microsoft 365.
-ms.openlocfilehash: 4c37033898865372fea19ddbb53ec9c8586f27b1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ec284a96fc8e7285f89e8a909b76c782b4469ce1
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918971"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051465"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Guía básica de administración de dispositivos para Microsoft 365
 
@@ -31,7 +31,7 @@ Hay dos opciones para la administración de dispositivos:
 - [Microsoft Intune](#microsoft-intune)
 - [Movilidad y seguridad básicas](#basic-mobility-and-security)
 
-## <a name="microsoft-intune"></a>Microsoft Intune
+## <a name="microsoft-intune"></a>Microsoft Intune
 
 Puede usar Microsoft Intune para administrar el acceso a su organización mediante la administración de dispositivos móviles o la administración de aplicaciones móviles. La administración de dispositivos móviles es cuando los usuarios "inscriben" sus dispositivos en Intune. Después de inscribir un dispositivo, es un dispositivo administrado; por lo tanto, puede recibir las directivas, reglas y configuración de la organización. Por ejemplo, puedes instalar aplicaciones específicas, crear una directiva de contraseña, instalar una conexión VPN y mucho más.
 
@@ -54,10 +54,10 @@ En función de tu evaluación, empieza a administrar tus dispositivos con:
  
 ## <a name="identity-and-device-access-recommendations"></a>Recomendaciones de acceso a dispositivos e identidades
 
-Microsoft proporciona un conjunto de recomendaciones para el [acceso a identidades y dispositivos](../security/office-365-security/microsoft-365-policies-configurations.md) para asegurar la seguridad y la productividad de los empleados. Para el acceso a dispositivos, usa las recomendaciones y la configuración de estos artículos:
+Microsoft proporciona un conjunto de recomendaciones para el [acceso a identidades y dispositivos](../security/defender-365-security/microsoft-365-policies-configurations.md) para asegurar la seguridad y la productividad de los empleados. Para el acceso a dispositivos, usa las recomendaciones y la configuración de estos artículos:
 
-- [Requisitos previos](../security/office-365-security/identity-access-prerequisites.md)
-- [Directivas comunes de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md)
+- [Requisitos previos](../security/defender-365-security/identity-access-prerequisites.md)
+- [Directivas comunes de acceso a dispositivos e identidades](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Cómo contoso hizo la administración de dispositivos para Microsoft 365
 
