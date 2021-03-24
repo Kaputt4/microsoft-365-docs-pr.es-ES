@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la administración de registros de Microsoft 365, puede aplicar programaciones de retención en un plan de archivos para administrar la retención, la declaración de registros y la eliminación.
-ms.openlocfilehash: 4f07732e403d711e2fa89bfb7c61c9eadfb2bd0b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ac8e9bf2ac9ac47518788cd19a197818c13078a1
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926188"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051692"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Aprenda sobre la administración de registros en Microsoft 365
 
@@ -48,7 +48,7 @@ Use las siguientes funciones para dar soporte a la solución de administración 
 
 - **Exportar la información sobre todos los elementos que se han eliminado** con la [opción exportar](disposition.md#filter-and-export-the-views).
 
-- **Configurar permisos específicos** para las funciones del administrador de registros en su organización para [tener el acceso correcto](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+- **Configurar permisos específicos** para las funciones del administrador de registros en su organización para [tener el acceso correcto](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md).
 
 Con estas funciones, puede incorporar los requisitos y las programaciones de retención de su organización en una solución de administración de registros para administrar la retención, la declaración de registros y la eliminación para dar soporte a todo el ciclo de vida del contenido.
 

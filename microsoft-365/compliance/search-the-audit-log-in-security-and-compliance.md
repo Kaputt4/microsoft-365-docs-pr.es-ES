@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Use el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eabc9a59592ed2b1849bac8c7b716e68d4b9e214
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f61a67b29dec114d222dfc7b25e44c163859ba41
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922554"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051742"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -900,7 +900,7 @@ En la tabla siguiente, se enumeran las actividades del explorador de contenido q
 
 ### <a name="quarantine-activities"></a>Actividades de cuarentena
 
-En la tabla siguiente se enumeran las actividades de cuarentena que puede buscar en el registro de auditoría. Para obtener más información, consulte [Mensajes de correo electrónico en cuarentena en Office 365](../security/office-365-security/quarantine-email-messages.md).
+En la tabla siguiente se enumeran las actividades de cuarentena que puede buscar en el registro de auditoría. Para obtener más información, consulte [Mensajes de correo electrónico en cuarentena en Office 365](../security/defender-365-security/quarantine-email-messages.md).
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|

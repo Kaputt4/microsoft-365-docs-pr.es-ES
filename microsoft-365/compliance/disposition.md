@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, independientemente de si usa una revisión para eliminación o el contenido se elimina automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: d2c2e4e469efe16277f34a902f6720dc2b39e908
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d9786b5e93801153e168784d51e37a00ee1822bc
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918053"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051932"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -44,7 +44,7 @@ Para conceder a los usuarios solo los permisos que necesitan para las revisiones
 
 Además, para ver el contenido de los elementos durante el proceso de eliminación, agregue usuarios a los dos grupos de roles siguientes: **Visor de contenido del explorador de contenido** y **Visor de listas del explorador de contenido**. Si los usuarios no tienen los permisos para estos grupos de roles, aún pueden seleccionar una acción de revisión de eliminación para completar la revisión de eliminación, pero deberán hacerlo sin poder ver el contenido del elemento desde el centro de cumplimiento.
 
-Para obtener instrucciones sobre la configuración de estos permisos, consulte [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Para obtener instrucciones sobre la configuración de estos permisos, consulte [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### <a name="enable-auditing"></a>Habilitar auditoría
 
