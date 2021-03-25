@@ -1,0 +1,109 @@
+---
+title: Cambios de nomenclatura en el esquema de búsqueda avanzada de Microsoft 365 Defender
+description: Seguimiento y revisión de cambios de nomenclatura en tablas y columnas en el esquema de búsqueda avanzada
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, datos, cambios de nomenclatura, cambio de nombre, Protección contra amenazas de Microsoft
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+f1.keywords:
+- NOCSH
+ms.author: lomayor
+author: lomayor
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection:
+- M365-security-compliance
+- m365initiative-m365-defender
+ms.topic: article
+ms.technology: m365d
+ms.openlocfilehash: acb259088717b2772ec9798027545f2ff6dbc5e0
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51076707"
+---
+# <a name="advanced-hunting-schema---naming-changes"></a><span data-ttu-id="2ebca-104">Esquema de búsqueda avanzada: cambios de nomenclatura</span><span class="sxs-lookup"><span data-stu-id="2ebca-104">Advanced hunting schema - Naming changes</span></span>
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
+<span data-ttu-id="2ebca-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="2ebca-105">**Applies to:**</span></span>
+- <span data-ttu-id="2ebca-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="2ebca-106">Microsoft 365 Defender</span></span>
+
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
+<span data-ttu-id="2ebca-107">El [esquema de búsqueda avanzada](advanced-hunting-schema-tables.md) se actualiza regularmente para agregar nuevas tablas y columnas.</span><span class="sxs-lookup"><span data-stu-id="2ebca-107">The [advanced hunting schema](advanced-hunting-schema-tables.md) is updated regularly to add new tables and columns.</span></span> <span data-ttu-id="2ebca-108">En algunos casos, los nombres de columnas existentes se renombran o reemplazan para mejorar la experiencia del usuario.</span><span class="sxs-lookup"><span data-stu-id="2ebca-108">In some cases, existing columns names are renamed or replaced to improve the user experience.</span></span> <span data-ttu-id="2ebca-109">Consulte este artículo para revisar los cambios de nomenclatura que podrían afectar a las consultas.</span><span class="sxs-lookup"><span data-stu-id="2ebca-109">Refer to this article to review naming changes that could impact your queries.</span></span>
+
+<span data-ttu-id="2ebca-110">Los cambios de nomenclatura se aplican automáticamente a las consultas que se guardan en el centro de seguridad, incluidas las consultas usadas por las reglas de detección personalizadas.</span><span class="sxs-lookup"><span data-stu-id="2ebca-110">Naming changes are automatically applied to queries that are saved in the security center, including queries used by custom detection rules.</span></span> <span data-ttu-id="2ebca-111">No es necesario actualizar estas consultas manualmente.</span><span class="sxs-lookup"><span data-stu-id="2ebca-111">You don't need to update these queries manually.</span></span> <span data-ttu-id="2ebca-112">Sin embargo, deberá actualizar las siguientes consultas:</span><span class="sxs-lookup"><span data-stu-id="2ebca-112">However, you will need to update the following queries:</span></span>
+- <span data-ttu-id="2ebca-113">Consultas que se ejecutan con la API</span><span class="sxs-lookup"><span data-stu-id="2ebca-113">Queries that are run using the API</span></span>
+- <span data-ttu-id="2ebca-114">Consultas que se guardan en otro lugar fuera del centro de seguridad</span><span class="sxs-lookup"><span data-stu-id="2ebca-114">Queries that are saved elsewhere outside the security center</span></span>
+
+## <a name="december-2020"></a><span data-ttu-id="2ebca-115">Diciembre de 2020</span><span class="sxs-lookup"><span data-stu-id="2ebca-115">December 2020</span></span>
+
+| <span data-ttu-id="2ebca-116">Nombre de tabla</span><span class="sxs-lookup"><span data-stu-id="2ebca-116">Table name</span></span> | <span data-ttu-id="2ebca-117">Nombre de columna original</span><span class="sxs-lookup"><span data-stu-id="2ebca-117">Original column name</span></span> | <span data-ttu-id="2ebca-118">Nuevo nombre de columna</span><span class="sxs-lookup"><span data-stu-id="2ebca-118">New column name</span></span> | <span data-ttu-id="2ebca-119">Motivo del cambio</span><span class="sxs-lookup"><span data-stu-id="2ebca-119">Reason for change</span></span>
+|--|--|--|--|
+| [<span data-ttu-id="2ebca-120">EmailEvents</span><span class="sxs-lookup"><span data-stu-id="2ebca-120">EmailEvents</span></span>](advanced-hunting-emailevents-table.md) | `FinalEmailAction` | `EmailAction` | <span data-ttu-id="2ebca-121">Comentarios del cliente</span><span class="sxs-lookup"><span data-stu-id="2ebca-121">Customer feedback</span></span> |
+| [<span data-ttu-id="2ebca-122">EmailEvents</span><span class="sxs-lookup"><span data-stu-id="2ebca-122">EmailEvents</span></span>](advanced-hunting-emailevents-table.md) | `FinalEmailActionPolicy` | `EmailActionPolicy` | <span data-ttu-id="2ebca-123">Comentarios del cliente</span><span class="sxs-lookup"><span data-stu-id="2ebca-123">Customer feedback</span></span> |
+| [<span data-ttu-id="2ebca-124">EmailEvents</span><span class="sxs-lookup"><span data-stu-id="2ebca-124">EmailEvents</span></span>](advanced-hunting-emailevents-table.md) | `FinalEmailActionPolicyGuid` | `EmailActionPolicyGuid` | <span data-ttu-id="2ebca-125">Comentarios del cliente</span><span class="sxs-lookup"><span data-stu-id="2ebca-125">Customer feedback</span></span> |
+
+## <a name="january-2021"></a><span data-ttu-id="2ebca-126">Enero de 2021</span><span class="sxs-lookup"><span data-stu-id="2ebca-126">January 2021</span></span>
+
+| <span data-ttu-id="2ebca-127">Nombre de columna</span><span class="sxs-lookup"><span data-stu-id="2ebca-127">Column name</span></span> | <span data-ttu-id="2ebca-128">Nombre del valor original</span><span class="sxs-lookup"><span data-stu-id="2ebca-128">Original value name</span></span> | <span data-ttu-id="2ebca-129">Nuevo nombre de valor</span><span class="sxs-lookup"><span data-stu-id="2ebca-129">New value name</span></span> | <span data-ttu-id="2ebca-130">Motivo del cambio</span><span class="sxs-lookup"><span data-stu-id="2ebca-130">Reason for change</span></span>
+|--|--|--|--|
+| `DetectionSource` | <span data-ttu-id="2ebca-131">MCAS</span><span class="sxs-lookup"><span data-stu-id="2ebca-131">MCAS</span></span> |    <span data-ttu-id="2ebca-132">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="2ebca-132">Microsoft Cloud App Security</span></span> | <span data-ttu-id="2ebca-133">Rebranding</span><span class="sxs-lookup"><span data-stu-id="2ebca-133">Rebranding</span></span> |
+| `DetectionSource` | <span data-ttu-id="2ebca-134">WindowsDefenderAtp</span><span class="sxs-lookup"><span data-stu-id="2ebca-134">WindowsDefenderAtp</span></span>|   <span data-ttu-id="2ebca-135">EDR</span><span class="sxs-lookup"><span data-stu-id="2ebca-135">EDR</span></span>| <span data-ttu-id="2ebca-136">Rebranding</span><span class="sxs-lookup"><span data-stu-id="2ebca-136">Rebranding</span></span> |
+| `DetectionSource` | <span data-ttu-id="2ebca-137">WindowsDefenderAv</span><span class="sxs-lookup"><span data-stu-id="2ebca-137">WindowsDefenderAv</span></span> | <span data-ttu-id="2ebca-138">Antivirus</span><span class="sxs-lookup"><span data-stu-id="2ebca-138">Antivirus</span></span> | <span data-ttu-id="2ebca-139">Rebranding</span><span class="sxs-lookup"><span data-stu-id="2ebca-139">Rebranding</span></span> |
+| `DetectionSource` | <span data-ttu-id="2ebca-140">WindowsDefenderSmartScreen</span><span class="sxs-lookup"><span data-stu-id="2ebca-140">WindowsDefenderSmartScreen</span></span> |  <span data-ttu-id="2ebca-141">SmartScreen</span><span class="sxs-lookup"><span data-stu-id="2ebca-141">SmartScreen</span></span> | <span data-ttu-id="2ebca-142">Rebranding</span><span class="sxs-lookup"><span data-stu-id="2ebca-142">Rebranding</span></span> |
+| `DetectionSource` | <span data-ttu-id="2ebca-143">CustomerTI</span><span class="sxs-lookup"><span data-stu-id="2ebca-143">CustomerTI</span></span> |  <span data-ttu-id="2ebca-144">TI personalizada</span><span class="sxs-lookup"><span data-stu-id="2ebca-144">Custom TI</span></span> | <span data-ttu-id="2ebca-145">Rebranding</span><span class="sxs-lookup"><span data-stu-id="2ebca-145">Rebranding</span></span> |
+| `DetectionSource` | <span data-ttu-id="2ebca-146">OfficeATP</span><span class="sxs-lookup"><span data-stu-id="2ebca-146">OfficeATP</span></span> | <span data-ttu-id="2ebca-147">Microsoft Defender para Office 365</span><span class="sxs-lookup"><span data-stu-id="2ebca-147">Microsoft Defender for Office 365</span></span> | <span data-ttu-id="2ebca-148">Rebranding</span><span class="sxs-lookup"><span data-stu-id="2ebca-148">Rebranding</span></span> |
+| `DetectionSource` | <span data-ttu-id="2ebca-149">MTP</span><span class="sxs-lookup"><span data-stu-id="2ebca-149">MTP</span></span>   | <span data-ttu-id="2ebca-150">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="2ebca-150">Microsoft 365 Defender</span></span> | <span data-ttu-id="2ebca-151">Rebranding</span><span class="sxs-lookup"><span data-stu-id="2ebca-151">Rebranding</span></span> |
+| `DetectionSource` | <span data-ttu-id="2ebca-152">AzureATP</span><span class="sxs-lookup"><span data-stu-id="2ebca-152">AzureATP</span></span> |    <span data-ttu-id="2ebca-153">Microsoft Defender for Identity</span><span class="sxs-lookup"><span data-stu-id="2ebca-153">Microsoft Defender for Identity</span></span> | <span data-ttu-id="2ebca-154">Rebranding</span><span class="sxs-lookup"><span data-stu-id="2ebca-154">Rebranding</span></span> |
+| `DetectionSource` | <span data-ttu-id="2ebca-155">CustomDetection</span><span class="sxs-lookup"><span data-stu-id="2ebca-155">CustomDetection</span></span>   | <span data-ttu-id="2ebca-156">Detección personalizada</span><span class="sxs-lookup"><span data-stu-id="2ebca-156">Custom detection</span></span> | <span data-ttu-id="2ebca-157">Rebranding</span><span class="sxs-lookup"><span data-stu-id="2ebca-157">Rebranding</span></span> |
+| `DetectionSource` | <span data-ttu-id="2ebca-158">AutomatedInvestigation</span><span class="sxs-lookup"><span data-stu-id="2ebca-158">AutomatedInvestigation</span></span> |<span data-ttu-id="2ebca-159">Investigación automatizada</span><span class="sxs-lookup"><span data-stu-id="2ebca-159">Automated investigation</span></span> | <span data-ttu-id="2ebca-160">Rebranding</span><span class="sxs-lookup"><span data-stu-id="2ebca-160">Rebranding</span></span> |
+| `DetectionSource` | <span data-ttu-id="2ebca-161">ThreatExperts</span><span class="sxs-lookup"><span data-stu-id="2ebca-161">ThreatExperts</span></span> | <span data-ttu-id="2ebca-162">Expertos en amenazas de Microsoft</span><span class="sxs-lookup"><span data-stu-id="2ebca-162">Microsoft Threat Experts</span></span> | <span data-ttu-id="2ebca-163">Rebranding</span><span class="sxs-lookup"><span data-stu-id="2ebca-163">Rebranding</span></span> |
+| `DetectionSource` | <span data-ttu-id="2ebca-164">TI de terceros</span><span class="sxs-lookup"><span data-stu-id="2ebca-164">3rd party TI</span></span> | <span data-ttu-id="2ebca-165">Sensores de terceros</span><span class="sxs-lookup"><span data-stu-id="2ebca-165">3rd Party sensors</span></span> | <span data-ttu-id="2ebca-166">Rebranding</span><span class="sxs-lookup"><span data-stu-id="2ebca-166">Rebranding</span></span> |
+| `ServiceSource` | <span data-ttu-id="2ebca-167">inquilino dedicado</span><span class="sxs-lookup"><span data-stu-id="2ebca-167">Microsoft Defender ATP</span></span>| <span data-ttu-id="2ebca-168">Microsoft Defender para punto de conexión</span><span class="sxs-lookup"><span data-stu-id="2ebca-168">Microsoft Defender for Endpoint</span></span> | <span data-ttu-id="2ebca-169">Rebranding</span><span class="sxs-lookup"><span data-stu-id="2ebca-169">Rebranding</span></span> |
+|`ServiceSource` |<span data-ttu-id="2ebca-170">Protección contra amenazas de Microsoft</span><span class="sxs-lookup"><span data-stu-id="2ebca-170">Microsoft Threat Protection</span></span>   | <span data-ttu-id="2ebca-171">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="2ebca-171">Microsoft 365 Defender</span></span> | <span data-ttu-id="2ebca-172">Rebranding</span><span class="sxs-lookup"><span data-stu-id="2ebca-172">Rebranding</span></span> |
+| `ServiceSource` | <span data-ttu-id="2ebca-173">ATP de Office 365</span><span class="sxs-lookup"><span data-stu-id="2ebca-173">Office 365 ATP</span></span>  |<span data-ttu-id="2ebca-174">Microsoft Defender para Office 365</span><span class="sxs-lookup"><span data-stu-id="2ebca-174">Microsoft Defender for Office 365</span></span> | <span data-ttu-id="2ebca-175">Rebranding</span><span class="sxs-lookup"><span data-stu-id="2ebca-175">Rebranding</span></span> |
+| `ServiceSource` |<span data-ttu-id="2ebca-176">Azure ATP</span><span class="sxs-lookup"><span data-stu-id="2ebca-176">Azure ATP</span></span>    |<span data-ttu-id="2ebca-177">Microsoft Defender for Identity</span><span class="sxs-lookup"><span data-stu-id="2ebca-177">Microsoft Defender for Identity</span></span> | <span data-ttu-id="2ebca-178">Rebranding</span><span class="sxs-lookup"><span data-stu-id="2ebca-178">Rebranding</span></span> |
+
+<span data-ttu-id="2ebca-179">`DetectionSource`está disponible en la [tabla AlertInfo.](advanced-hunting-alertinfo-table.md)</span><span class="sxs-lookup"><span data-stu-id="2ebca-179">`DetectionSource` is available in the [AlertInfo](advanced-hunting-alertinfo-table.md) table.</span></span> <span data-ttu-id="2ebca-180">`ServiceSource`está disponible en las [tablas AlertEvidence](advanced-hunting-alertevidence-table.md) [y AlertInfo.](advanced-hunting-alertinfo-table.md)</span><span class="sxs-lookup"><span data-stu-id="2ebca-180">`ServiceSource` is available in the [AlertEvidence](advanced-hunting-alertevidence-table.md) and [AlertInfo](advanced-hunting-alertinfo-table.md) tables.</span></span> 
+
+## <a name="february-2021"></a><span data-ttu-id="2ebca-181">Febrero de 2021</span><span class="sxs-lookup"><span data-stu-id="2ebca-181">February 2021</span></span>
+
+1. <span data-ttu-id="2ebca-182">En las [tablas EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) y [EmailEvents,](advanced-hunting-emailevents-table.md) las columnas y se han `MalwareFilterVerdict` reemplazado por la `PhishFilterVerdict` `ThreatTypes` columna.</span><span class="sxs-lookup"><span data-stu-id="2ebca-182">In the [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) and [EmailEvents](advanced-hunting-emailevents-table.md) tables, the `MalwareFilterVerdict`and `PhishFilterVerdict` columns have been replaced by the `ThreatTypes` column.</span></span> <span data-ttu-id="2ebca-183">Las `MalwareDetectionMethod` columnas y también se `PhishDetectionMethod` reemplazaron por la `DetectionMethods` columna.</span><span class="sxs-lookup"><span data-stu-id="2ebca-183">The `MalwareDetectionMethod` and `PhishDetectionMethod` columns were also replaced by the `DetectionMethods` column.</span></span> <span data-ttu-id="2ebca-184">Esta racionalización nos permite proporcionar más información debajo de las nuevas columnas.</span><span class="sxs-lookup"><span data-stu-id="2ebca-184">This streamlining allows us to provide more information under the new columns.</span></span> <span data-ttu-id="2ebca-185">La asignación se proporciona a continuación.</span><span class="sxs-lookup"><span data-stu-id="2ebca-185">The mapping is provided below.</span></span>
+
+| <span data-ttu-id="2ebca-186">Nombre de tabla</span><span class="sxs-lookup"><span data-stu-id="2ebca-186">Table name</span></span> | <span data-ttu-id="2ebca-187">Nombre de columna original</span><span class="sxs-lookup"><span data-stu-id="2ebca-187">Original column name</span></span> | <span data-ttu-id="2ebca-188">Nuevo nombre de columna</span><span class="sxs-lookup"><span data-stu-id="2ebca-188">New column name</span></span> | <span data-ttu-id="2ebca-189">Motivo del cambio</span><span class="sxs-lookup"><span data-stu-id="2ebca-189">Reason for change</span></span>
+|--|--|--|--|
+| `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | <span data-ttu-id="2ebca-190">Incluir más métodos de detección</span><span class="sxs-lookup"><span data-stu-id="2ebca-190">Include more detection methods</span></span> |
+| `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | <span data-ttu-id="2ebca-191">Incluir más tipos de amenazas</span><span class="sxs-lookup"><span data-stu-id="2ebca-191">Include more threat types</span></span> |
+| `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | <span data-ttu-id="2ebca-192">Incluir más métodos de detección</span><span class="sxs-lookup"><span data-stu-id="2ebca-192">Include more detection methods</span></span> |
+| `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | <span data-ttu-id="2ebca-193">Incluir más tipos de amenazas</span><span class="sxs-lookup"><span data-stu-id="2ebca-193">Include more threat types</span></span> |
+
+
+2. <span data-ttu-id="2ebca-194">En las `EmailAttachmentInfo` tablas `EmailEvents` y, la `ThreatNames` columna se agregó para proporcionar más información sobre la amenaza de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="2ebca-194">In the `EmailAttachmentInfo` and `EmailEvents` tables, the `ThreatNames` column was added to give more information about the email threat.</span></span> <span data-ttu-id="2ebca-195">Esta columna contiene valores como Correo no deseado o Phish.</span><span class="sxs-lookup"><span data-stu-id="2ebca-195">This column contains values like Spam or Phish.</span></span>
+
+3. <span data-ttu-id="2ebca-196">En la [tabla DeviceInfo,](advanced-hunting-deviceinfo-table.md) la `DeviceObjectId` columna se reemplazó por la `AadDeviceId` columna en función de los comentarios de los clientes.</span><span class="sxs-lookup"><span data-stu-id="2ebca-196">In the [DeviceInfo](advanced-hunting-deviceinfo-table.md) table, the `DeviceObjectId` column was replaced by the `AadDeviceId` column based on customer feedback.</span></span>
+
+4. <span data-ttu-id="2ebca-197">En la [tabla DeviceEvents,](advanced-hunting-deviceevents-table.md) se modificaron varios nombres ActionType para reflejar mejor la descripción de la acción.</span><span class="sxs-lookup"><span data-stu-id="2ebca-197">In the [DeviceEvents](advanced-hunting-deviceevents-table.md) table, several ActionType names were modified to better reflect the description of the action.</span></span> <span data-ttu-id="2ebca-198">Los detalles de los cambios se pueden encontrar a continuación.</span><span class="sxs-lookup"><span data-stu-id="2ebca-198">Details of the changes can be found below.</span></span>
+
+| <span data-ttu-id="2ebca-199">Nombre de tabla</span><span class="sxs-lookup"><span data-stu-id="2ebca-199">Table name</span></span> | <span data-ttu-id="2ebca-200">Nombre ActionType original</span><span class="sxs-lookup"><span data-stu-id="2ebca-200">Original ActionType name</span></span> | <span data-ttu-id="2ebca-201">Nuevo nombre actionType</span><span class="sxs-lookup"><span data-stu-id="2ebca-201">New ActionType name</span></span> | <span data-ttu-id="2ebca-202">Motivo del cambio</span><span class="sxs-lookup"><span data-stu-id="2ebca-202">Reason for change</span></span>
+|--|--|--|--|
+| `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | <span data-ttu-id="2ebca-203">Comentarios del cliente</span><span class="sxs-lookup"><span data-stu-id="2ebca-203">Customer feedback</span></span> |
+| `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | <span data-ttu-id="2ebca-204">Comentarios del cliente</span><span class="sxs-lookup"><span data-stu-id="2ebca-204">Customer feedback</span></span> |
+| `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | <span data-ttu-id="2ebca-205">Comentarios del cliente</span><span class="sxs-lookup"><span data-stu-id="2ebca-205">Customer feedback</span></span> |
+| `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | <span data-ttu-id="2ebca-206">Comentarios del cliente</span><span class="sxs-lookup"><span data-stu-id="2ebca-206">Customer feedback</span></span> |
+
+
+
+
+
+
+## <a name="related-topics"></a><span data-ttu-id="2ebca-207">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="2ebca-207">Related topics</span></span>
+- [<span data-ttu-id="2ebca-208">Información general sobre la búsqueda avanzada</span><span class="sxs-lookup"><span data-stu-id="2ebca-208">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="2ebca-209">Entender el esquema</span><span class="sxs-lookup"><span data-stu-id="2ebca-209">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
