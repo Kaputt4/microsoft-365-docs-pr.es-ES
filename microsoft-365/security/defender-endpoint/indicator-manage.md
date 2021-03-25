@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6edb4ddf764788a11ea3b6f1863dd95e694f1849
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9fd36f63450335247bf57c4cc1f98d6f0d32a9d5
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075744"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185950"
 ---
 # <a name="manage-indicators"></a>Administrar indicadores
 
@@ -30,7 +30,7 @@ ms.locfileid: "51075744"
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -67,7 +67,7 @@ indicatorType | Enum | Tipo del indicador. Los valores posibles son: "FileSha1",
 indicatorValue | Cadena | Identidad de la [entidad Indicator.](ti-indicator.md) **Required**
 acción | Enum | La acción que se realizará si el indicador se detectará en la organización. Los valores posibles son: "Alert", "AlertAndBlock" y "Allowed". **Required**
 title | Cadena | Título de alerta del indicador. **Required**
-description | Cadena |  Descripción del indicador. **Required**
+descripción | Cadena |  Descripción del indicador. **Required**
 expirationTime | DateTimeOffset | La hora de expiración del indicador con el siguiente formato YYYY-MM-DDTHH:MM:SS.0Z. **Optional**
 severity | Enum | Gravedad del indicador. Los valores posibles son: "Informational", "Low", "Medium" y "High". **Optional**
 recommendedActions | Cadena | Acciones recomendadas de alerta del indicador TI. **Optional**
@@ -78,7 +78,7 @@ mitretechniques| Cadena | Código/id de técnicas MITRE (separados por comas). P
 Para obtener más información, vea Microsoft Defender para las categorías de alertas de punto de conexión ahora están alineadas con [MITRE ATT&CK!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748).
 
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 - [Crear indicadores](manage-indicators.md)
 - [Crear indicadores para archivos](indicator-file.md)
 - [Crear indicadores para direcciones IP y direcciones URL/dominios](indicator-ip-domain.md)

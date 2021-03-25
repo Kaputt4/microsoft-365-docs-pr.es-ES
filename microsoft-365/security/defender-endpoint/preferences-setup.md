@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bb76b59860b761abceddfe07728c77e1734a0d73
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c1526190116c55ba6916b690583f224ee1e86fd8
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076515"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186166"
 ---
 # <a name="configure-microsoft-defender-security-center-settings"></a>Configurar la configuración del Centro de seguridad de Microsoft Defender
 
@@ -29,7 +29,7 @@ ms.locfileid: "51076515"
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -44,5 +44,5 @@ Tema | Descripción
 Configuración general | Modifique la configuración general que se definió anteriormente como parte del proceso de incorporación.
 Permisos | Administrar el acceso al portal mediante RBAC, así como grupos de dispositivos.
 API | Habilitar la integración de intel e SIEM de amenazas.
-Rules | Configurar reglas de supresión y opciones de automatización.
+Reglas | Configurar reglas de supresión y opciones de automatización.
 Administración de dispositivos | Dispositivos integrados y fuera de la pantalla.

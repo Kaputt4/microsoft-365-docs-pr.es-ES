@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: de205e78ce36790f5290f2716a44048da732f00e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: aa7f2df1f0164f24c7f4698e8aa0b699f4884c09
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074320"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186226"
 ---
 # <a name="microsoft-defender-security-center-portal-overview"></a>Introducción al portal del Centro de seguridad de Microsoft Defender
 
@@ -29,7 +29,7 @@ ms.locfileid: "51074320"
 
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 

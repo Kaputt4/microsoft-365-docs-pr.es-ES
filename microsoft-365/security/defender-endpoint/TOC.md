@@ -1,7 +1,7 @@
 # [Microsoft Defender para punto de conexión](index.yml)
 
 ## [Información general]()
-### [¿Qué es Microsoft Defender para punto de conexión?](microsoft-defender-advanced-threat-protection.md)
+### [¿Qué es Microsoft Defender para punto de conexión?](microsoft-defender-endpoint.md)
 ### [Requisitos mínimos](minimum-requirements.md)
 ### [Novedades de Microsoft Defender para endpoint](whats-new-in-microsoft-defender-atp.md)
 ### [Versión preliminar de las características](preview.md)

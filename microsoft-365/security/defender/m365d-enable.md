@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4165f13e24e1ecb53413025c59bf6f3195525b17
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 399da6fd54145f73ac72fdac04e8d25148f76507
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076659"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186754"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Activar Microsoft 365 Defender
 
@@ -95,7 +95,7 @@ El personal de soporte técnico de Microsoft puede ayudar a aprovisionar o desap
 - [Requisitos de licencia y otros requisitos previos](prerequisites.md)
 - [Implementación de servicios compatibles](deploy-supported-services.md)
 - [Introducción a Microsoft 365 Defender](microsoft-365-defender.md)
-- [Introducción a Microsoft Defender para puntos de conexión](../defender-endpoint/microsoft-defender-advanced-threat-protection.md)
+- [Introducción a Microsoft Defender para puntos de conexión](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Información general de Defender para Office 365](../defender-365-security/defender-for-office-365.md)
 - [Introducción a Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
 - [Introducción a Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)

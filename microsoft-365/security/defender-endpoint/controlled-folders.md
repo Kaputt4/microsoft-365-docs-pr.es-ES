@@ -16,12 +16,12 @@ ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: ae50d53fbc9bf01d4cd16b939461eecc9ec1a568
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: cd662dc130adc37b3bf8bd06839242ccc9a49f8e
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165182"
+ms.locfileid: "51185974"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteger carpetas importantes con acceso controlado a carpetas
 
@@ -40,7 +40,7 @@ El acceso controlado a carpetas ayuda a proteger los datos valiosos de las amena
 > [!NOTE]
 > Los motores de scripting no son de confianza y no se les puede permitir el acceso a carpetas protegidas controladas.  Por ejemplo, PowerShell no es de confianza mediante el acceso controlado a carpetas, incluso si permite con indicadores de certificado [e archivo](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates). 
 
-El acceso controlado a carpetas funciona mejor con [Microsoft Defender para](microsoft-defender-advanced-threat-protection.md)endpoint, lo que le ofrece informes detallados sobre los eventos y bloques de acceso controlado a carpetas como parte de los escenarios habituales de investigación de [alertas.](investigate-alerts.md)
+El acceso controlado a carpetas funciona mejor con [Microsoft Defender para](microsoft-defender-endpoint.md)endpoint, lo que le ofrece informes detallados sobre los eventos y bloques de acceso controlado a carpetas como parte de los escenarios habituales de investigación de [alertas.](investigate-alerts.md)
 
 > [!TIP]
 > Los bloques de acceso a carpetas controladas no generan alertas en la cola [De alertas.](alerts-queue.md) Sin embargo, puedes ver información sobre los bloques de acceso controlados a carpetas en la vista de escala de tiempo del [dispositivo,](investigate-machines.md)mientras usas la búsqueda [avanzada](advanced-hunting-overview.md)o con reglas [de detección personalizadas.](custom-detection-rules.md)
@@ -134,7 +134,7 @@ Puedes usar la aplicación Seguridad de Windows para ver la lista de carpetas pr
 > [!NOTE]
 > [Las carpetas del](#windows-system-folders-are-protected-by-default) sistema windows están protegidas de forma predeterminada y no puedes quitarlas de la lista.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Evaluar el acceso controlado a carpetas](evaluate-controlled-folder-access.md)
 - [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)

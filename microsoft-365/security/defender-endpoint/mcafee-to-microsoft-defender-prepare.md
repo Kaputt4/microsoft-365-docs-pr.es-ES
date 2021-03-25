@@ -22,17 +22,17 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: c87ed20dd1d0c959a9af52fd766d0a34232747b2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: adc8c1259be1e226bf1c2592090cf6008c976cf8
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51069672"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186634"
 ---
 # <a name="migrate-from-mcafee---phase-1-prepare-for-your-migration"></a>Migrar desde McAfee: fase 1: preparar la migración
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |![Fase 1: Preparar](images/phase-diagrams/prepare.png)<br/>Fase 1: Preparar |[![Fase 2: Configurar](images/phase-diagrams/setup.png)](mcafee-to-microsoft-defender-setup.md)<br/>[Fase 2: Configurar](mcafee-to-microsoft-defender-setup.md) |[![Fase 3: Incorporación](images/phase-diagrams/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[Fase 3: Incorporación](mcafee-to-microsoft-defender-onboard.md) |
@@ -68,7 +68,7 @@ Mantenga McAfee actualizado y asegúrese de que los dispositivos de su organizac
 
 ¿Necesita ayuda para actualizar los dispositivos de su organización? Vea los siguientes recursos:
 
-|Sistema operativo | Resource |
+|Sistema operativo | Recurso |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [Cómo actualizar el software en tu Mac](https://support.apple.com/HT201541)|

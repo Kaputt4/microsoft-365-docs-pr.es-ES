@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: a56b10ec32611a046bffb5ea3c0bfd226c51f8cb
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d1402d8486725559335a5edc5ee13c78a0125932
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51069336"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186430"
 ---
 # <a name="threat-and-vulnerability-management"></a>Administración de amenazas y vulnerabilidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -106,7 +106,7 @@ Vea los siguientes artículos para obtener las API relacionadas:
 - [API de vulnerabilidad](vulnerability.md)
 - [Enumerar las vulnerabilidades por máquina y software](get-all-vulnerabilities-by-machines.md)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Plataformas y sistemas operativos compatibles](tvm-supported-os.md)
 - [Panel de administración de amenazas y vulnerabilidades](tvm-dashboard-insights.md)

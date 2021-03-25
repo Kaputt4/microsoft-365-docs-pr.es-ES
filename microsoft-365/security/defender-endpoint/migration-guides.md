@@ -17,19 +17,19 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 09/24/2020
 ms.technology: mde
-ms.openlocfilehash: 72a4385fb65c02d5b9e8d1b51bc376e31cb13db3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a56153a9c4076b1072f6d3fc5296f9e12dc0cc4d
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51069472"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186598"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>Cambiar a Microsoft Defender para endpoint y Antivirus de Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -52,7 +52,7 @@ Si está considerando cambiar de una solución de protección contra amenazas qu
 
 Háganos saber lo que piensa. Envíe sus comentarios en la parte inferior de la página. Tomaremos en cuenta sus comentarios a medida que sigamos mejorando y agregando a nuestra guía de migración.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection)
 - [Microsoft Defender para Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp)

@@ -22,17 +22,17 @@ ms.custom: migrationguides
 ms.topic: article
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 54130848867c4fa6830f475712a08e226add9361
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 77ce0edc5b81bd54653c2aea0a32f4e358e75ebe
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076576"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185628"
 ---
 # <a name="migrate-from-mcafee---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>Migrar desde McAfee- Fase 3: Incorporación a Microsoft Defender para endpoint
 
 **Se aplica a:**
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -98,7 +98,7 @@ Para ello, visite el sitio de escenarios de demostración de Microsoft Defender 
 > [!IMPORTANT]
 > Si usas Windows Server 2016, es posible que debas iniciar Antivirus de Microsoft Defender manualmente. Para ello, use el cmdlet de PowerShell `mpcmdrun.exe -wdenable` en el dispositivo.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 **¡Enhorabuena!** Ha completado la migración [de McAfee a Microsoft Defender para Endpoint](mcafee-to-microsoft-defender-migration.md#the-migration-process)! 
 

@@ -15,12 +15,12 @@ ms.reviewer: sugamar, jcedola
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: 2bd8442dd8e119a57c490773b6e01a7c5f7adcac
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 62f1f5f2d47482f642f00c870b3e0f3112f5f639
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075419"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185772"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usar reglas de reducción de superficie de ataque para evitar infecciones de malware
 
@@ -112,7 +112,7 @@ Puedes establecer reglas de reducción de superficie de ataque para dispositivos
 - Windows Server, [versión 1803 (canal semianual)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) o posterior
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-Aunque las reglas de reducción de superficie de ataque no requieren una licencia de [Windows E5,](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)si tienes Windows E5, obtienes capacidades de administración avanzadas. Estas funcionalidades disponibles solo en Windows E5 incluyen supervisión, análisis y flujos de trabajo disponibles en [Defender para](microsoft-defender-advanced-threat-protection.md)endpoint, así como capacidades de informes y configuración en el Centro de seguridad de [Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center) Estas funcionalidades avanzadas no están disponibles con una licencia de Windows Professional o Windows E3; sin embargo, si tienes esas licencias, puedes usar el Visor de eventos y los registros del Antivirus de Microsoft Defender para revisar los eventos de la regla de reducción de superficie de ataque.
+Aunque las reglas de reducción de superficie de ataque no requieren una licencia de [Windows E5,](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)si tienes Windows E5, obtienes capacidades de administración avanzadas. Estas funcionalidades disponibles solo en Windows E5 incluyen supervisión, análisis y flujos de trabajo disponibles en [Defender para](microsoft-defender-endpoint.md)endpoint, así como capacidades de informes y configuración en el Centro de seguridad de [Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center) Estas funcionalidades avanzadas no están disponibles con una licencia de Windows Professional o Windows E3; sin embargo, si tienes esas licencias, puedes usar el Visor de eventos y los registros del Antivirus de Microsoft Defender para revisar los eventos de la regla de reducción de superficie de ataque.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Revisar los eventos de reducción de superficie de ataque en el Centro de seguridad de Microsoft Defender
 
@@ -156,21 +156,21 @@ Si está configurando reglas de reducción de superficie de ataque mediante la d
 
 | Nombre de regla | GUID | Exclusiones & carpetas de archivos | Sistema operativo mínimo compatible |
 |:-----|:-----:|:-----|:-----|
-|[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Impedir que todas las aplicaciones de Office creen procesos secundarios](#block-all-office-applications-from-creating-child-processes) | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](#block-executable-content-from-email-client-and-webmail) | `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | `01443614-cd74-433a-b99e-2ecdc07bfc25` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts) | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | `D3E037E1-3EB8-44C8-A917-57927947596D` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Impedir que las aplicaciones de Office creen contenido ejecutable](#block-office-applications-from-creating-executable-content) | `3B576869-A4EC-4529-8536-B80A7769E899` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Impedir que las aplicaciones de Office inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes) | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Impedir que la aplicación de comunicación de Office cree procesos secundarios](#block-office-communication-application-from-creating-child-processes) |`26190899-1602-49e8-8b27-eb1d0a1ce869` |Compatible |[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior  |
+|[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` | Admitido | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
+|[Impedir que todas las aplicaciones de Office creen procesos secundarios](#block-all-office-applications-from-creating-child-processes) | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` | Admitido | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
+|[Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` | Admitido | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
+|[Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](#block-executable-content-from-email-client-and-webmail) | `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550` | Admitido | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
+|[Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | `01443614-cd74-433a-b99e-2ecdc07bfc25` | Admitido | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
+|[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts) | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` | Admitido | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
+|[Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | `D3E037E1-3EB8-44C8-A917-57927947596D` | Admitido | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
+|[Impedir que las aplicaciones de Office creen contenido ejecutable](#block-office-applications-from-creating-executable-content) | `3B576869-A4EC-4529-8536-B80A7769E899` | Admitido | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
+|[Impedir que las aplicaciones de Office inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes) | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` | Admitido | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
+|[Impedir que la aplicación de comunicación de Office cree procesos secundarios](#block-office-communication-application-from-creating-child-processes) |`26190899-1602-49e8-8b27-eb1d0a1ce869` |Admitido |[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior  |
 |[Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription) | `e6db77e5-3df2-4cf1-b95a-636979351e5b` | No admitido | [Windows 10, versión 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) (compilación 18362) o posterior |
-|[Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | `d1e49aac-8f56-4280-b9ba-993a6d77406c` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Bloquear llamadas a la API de Win32 desde macros de Office](#block-win32-api-calls-from-office-macros) | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | `c1db55ab-c21a-4637-bb3f-a12568109d35` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
+|[Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | `d1e49aac-8f56-4280-b9ba-993a6d77406c` | Admitido | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
+|[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` | Admitido | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
+|[Bloquear llamadas a la API de Win32 desde macros de Office](#block-win32-api-calls-from-office-macros) | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` | Admitido | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
+|[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | `c1db55ab-c21a-4637-bb3f-a12568109d35` | Admitido | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
 
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>Impedir que Adobe Reader cree procesos secundarios
 
@@ -464,7 +464,7 @@ Nombre de Configuration Manager: `Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Preguntas frecuentes sobre reducción de superficie de ataque](attack-surface-reduction-faq.md)
 - [Habilitar reglas de reducción de superficie de ataque](enable-attack-surface-reduction.md)
