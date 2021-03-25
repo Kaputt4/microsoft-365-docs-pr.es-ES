@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 95b2e4bfc0eca58d6c71670b21ded81affcc219f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: cc005c559e0f91f1c5888f8d7e4e7a2a420894db
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185508"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218705"
 ---
 # <a name="migrate-from-symantec---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>Migrar desde Symantec- Fase 3: Incorporación a Microsoft Defender para endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "51185508"
 || |*¡Estás aquí!* |
 
 
-**Bienvenido a la fase 3 de [migración de Symantec a Microsoft Defender para Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)**. Esta fase de migración incluye los siguientes pasos:
+**Bienvenido a la fase 3 de [migración de Symantec a Microsoft Defender para Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)**. Esta fase de migración incluye los siguientes pasos:
 
 1. [Incorporar dispositivos a Microsoft Defender para endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
 2. [Ejecute una prueba de detección](#run-a-detection-test).
@@ -103,8 +103,8 @@ Para ello, visite el sitio de escenarios de demostración de Microsoft Defender 
 > [!IMPORTANT]
 > Si usas Windows Server 2016, es posible que debas iniciar Antivirus de Microsoft Defender manualmente. Para ello, use el cmdlet de PowerShell `mpcmdrun.exe -wdenable` en el dispositivo.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-**¡Enhorabuena!** Ha completado la migración [de Symantec a Microsoft Defender para Endpoint](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)! 
+**¡Enhorabuena!** Ha completado la migración [de Symantec a Microsoft Defender para Endpoint](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)! 
 - [Visite el panel de operaciones de seguridad](security-operations-dashboard.md) en el Centro de seguridad de Microsoft Defender ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ). 
 - [Administrar Microsoft Defender para endpoint, post migration](manage-atp-post-migration.md).
