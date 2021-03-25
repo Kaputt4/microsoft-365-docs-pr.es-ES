@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Más información sobre las opciones de configuración de uso compartido de invitados disponibles en Microsoft 365 que pueden afectar al uso compartido con personas de fuera de su organización.
-ms.openlocfilehash: c87f1d0ea8a35d7685f91c1b20a709c58ec4d040
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bdb86dd7545c00f0ed24552b22062a983e450b47
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920221"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215569"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referencia de la configuración de uso compartido de invitados de Microsoft 365
 
@@ -35,7 +35,7 @@ En este artículo se proporciona una referencia para las distintas opciones de c
 Azure Active Directory es el servicio de directorio que usa Microsoft 365. La configuración de las relaciones de organización de Azure Active Directory afecta directamente al uso compartido en Teams, Grupos de Microsoft 365, SharePoint y OneDrive.
 
 > [!NOTE]
-> Esta configuración solo afecta a SharePoint cuando se ha configurado la [Integración de SharePoint y OneDrive con Azure AD B2B (versión preliminar)](/sharepoint/sharepoint-azureb2b-integration-preview). En la tabla siguiente se presupone que esta se ha configurado.
+> Esta configuración solo afecta a SharePoint cuando se ha configurado la [Integración de SharePoint y OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview). En la tabla siguiente se presupone que esta se ha configurado.
 
 ### <a name="organizational-relationships-settings"></a>Configuración de relaciones de organización
 
@@ -43,7 +43,7 @@ Azure Active Directory es el servicio de directorio que usa Microsoft 365. La co
 
 ![Captura de pantalla de la página de configuración de relaciones de organización de Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
-|**Setting**|**Default**|**Descripción**|
+| Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
 |Los permisos de usuarios invitados son limitados|Sí|Esta configuración afecta a las tareas del directorio que pueden realizar los invitados.|
 |Solo pueden invitar los administradores y usuarios con el rol de invitador de usuarios invitados|Sí|Si se establece en **Sí**, los administradores pueden invitar a través de Azure AD y a través de las experiencias de uso compartido de Microsoft 365, como Teams y SharePoint; si se establece en **No**, no pueden hacerlo.|
@@ -66,7 +66,7 @@ El Centro de administración de Microsoft 365 tiene configuración a nivel de or
 
 ![Captura de pantalla de la configuración de uso compartido de invitados de seguridad y privacidad en el Centro de administración de Microsoft 365](../media/sharepoint-security-privacy-sharing-setting.png)
 
-|**Setting**|**Default**|**Descripción**|
+| Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
 |Permitir que los usuarios agreguen nuevos invitados a la organización|Activado|Si se establece en **Sí**, los miembros de Azure AD pueden invitar a través de Azure AD; si se establece en **No**, no pueden hacerlo. Cuando se establece en **Sí**, los miembros del Grupo de Microsoft 365 pueden invitar con la aprobación del propietario; cuando se establece en **No**, los miembros del Grupo de Microsoft 365 pueden invitar con la aprobación del propietario, pero los propietarios deben ser administradores globales para poder aprobar. <br><br>Tenga en cuenta que la opción **Los miembros pueden invitar** hace referencia a los miembros de Azure AD (frente a los invitados) y no a los miembros del sitio o grupo de Microsoft 365. <br><br>Esto es idéntico a la opción de configuración **Los miembros pueden invitar** en las relaciones de organización de Azure Active Directory.|
 
@@ -76,7 +76,7 @@ El Centro de administración de Microsoft 365 tiene configuración a nivel de or
 
 ![Captura de pantalla de la configuración de invitados de los grupos de Microsoft 365 en el Centro de administración de Microsoft 365](../media/office-365-groups-guest-settings.png)
 
-|**Valor**|**Default**|**Descripción**|
+| Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
 |Permitir que los miembros del grupo de fuera de la organización tengan acceso al contenido del grupo|Activado|Si se establece en **Activado**, los invitados pueden acceder al contenido de los grupos; si se establece en **Desactivado**, no pueden hacerlo. Esta configuración debe establecerse en **Activado** para cualquier escenario en el que los invitados interactúen con grupos de Microsoft 365 o Teams.|
 |Permitir que los propietarios de grupos agreguen a usuarios ajenos a la organización a los grupos|Activado|Si está **Activado**, los propietarios de los grupos de Microsoft 365 o Teams pueden invitar a nuevos invitados al grupo. Si está **Desactivado**, los propietarios solo pueden invitar a los que ya están en el directorio.|
@@ -95,7 +95,7 @@ El conmutador principal de acceso de invitado de Teams, **Permitir el acceso de 
 
 ![Captura de pantalla de la opción de acceso de invitado de Teams](../media/teams-guest-access-toggle.png)
 
-|**Setting**|**Default**|**Descripción**|
+| Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
 |Permitir el acceso de invitado en Teams|Desactivado|Activa o desactiva el acceso de invitado a Teams en general. Esta configuración puede tardar 24 horas en aplicarse una vez cambiada.|
 
@@ -105,7 +105,7 @@ El conmutador principal de acceso de invitado de Teams, **Permitir el acceso de 
 
 ![Captura de pantalla de las opciones de llamada de invitado de Teams](../media/teams-guest-calling-setting.png)
 
-|**Setting**|**Default**|**Descripción**|
+| Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
 |Realizar llamadas privadas|Activado|Si está **Activado**, los invitados pueden realizar llamadas de punto a punto en Teams; si está **Desactivado**, no pueden hacerlo.|
 
@@ -115,7 +115,7 @@ El conmutador principal de acceso de invitado de Teams, **Permitir el acceso de 
 
 ![Captura de pantalla de la configuración de reunión de invitado de Teams](../media/teams-guest-meeting-settings.png)
 
-|**Setting**|**Default**|**Descripción**|
+| Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
 |Permitir vídeo IP|Activado|Si está **Activado**, los invitados pueden usar el vídeo en sus llamadas y reuniones; si está **Desactivado**, no pueden hacerlo.|
 |Modo de uso compartido de la pantalla|Toda la pantalla|Si está **Deshabilitado**, los invitados no pueden compartir su pantalla en Teams. Si se establece en **Una sola aplicación**, los invitados solo pueden compartir una única aplicación en su pantalla. Si se establece en **Pantalla completa**, los invitados pueden elegir entre compartir una aplicación o toda la pantalla.|
@@ -127,7 +127,7 @@ El conmutador principal de acceso de invitado de Teams, **Permitir el acceso de 
 
 ![Captura de pantalla de la configuración de mensajería de invitado de Teams](../media/teams-guest-messaging-settings.png)
 
-|**Setting**|**Default**|**Descripción**|
+| Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
 |Editar los mensajes enviados|Activado|Si está **Activado**, los invitados pueden editar los mensajes que se enviaron previamente; si está **Desactivado**, no pueden hacerlo.|
 |Eliminar mensajes enviados|Activado|Si está **Activado**, los invitados pueden eliminar los mensajes que se enviaron previamente; si está **Desactivado**, no pueden hacerlo.|
@@ -152,7 +152,7 @@ Como OneDrive es una jerarquía de sitios dentro de SharePoint, la configuració
 
 ![Captura de pantalla de la configuración de uso compartido en el nivel de organización de SharePoint](../media/sharepoint-organization-external-sharing-controls.png)
 
-|**Setting**|**Default**|**Descripción**|
+| Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
 |SharePoint|Cualquiera|Especifica los permisos de uso compartido más permisivos permitidos para los sitios de SharePoint.|
 |OneDrive|Cualquiera|Especifica los permisos de uso compartido más permisivos permitidos para los sitios de OneDrive. Esta configuración no puede ser más permisiva que la configuración de SharePoint.|
@@ -163,7 +163,7 @@ Como OneDrive es una jerarquía de sitios dentro de SharePoint, la configuració
 
 ![Captura de pantalla de la configuración de uso compartido adicional en el nivel de organización de SharePoint](../media/sharepoint-organization-advanced-sharing-settings.png)
 
-|**Setting**|**Default**|**Descripción**|
+| Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
 |Limitar el uso compartido externo por dominio|Desactivado|Esta configuración le permite especificar una lista de dominios permitidos o bloqueados para el uso compartido. Si se especifican dominios permitidos, las invitaciones de uso compartido solo se pueden enviar a estos dominios. Si se especifican dominios denegados, las invitaciones de uso compartido no se pueden enviar a estos dominios.<br><br> Esta configuración afecta a todos los sitios de SharePoint y OneDrive de la organización.|
 |Los invitados deben iniciar sesión con la misma cuenta a la que se enviaron las invitaciones para el uso compartido|Desactivado|Impide que los invitados canjeen las invitaciones de uso compartido de sitios con una dirección de correo electrónico distinta a la que se envió la invitación.<br><br>La [Integración de SharePoint y OneDrive con Azure AD B2B (versión preliminar)](/sharepoint/sharepoint-azureb2b-integration-preview) no usa esta opción, ya que todos los invitados se agregan al directorio basándose en la dirección de correo electrónico a la que se envió la invitación. No se pueden usar direcciones de correo electrónico alternativas para tener acceso al sitio.|
@@ -177,7 +177,7 @@ Cuando se comparten archivos y carpetas en SharePoint y OneDrive, los destinatar
 
 ![Captura de pantalla de la configuración de uso compartido de los archivos y carpetas de nivel de organización de SharePoint ](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
-|**Setting**|**Default**|**Descripción**|
+| Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
 |Vínculos de archivos y carpetas|Cualquiera con el vínculo|Especifica el vínculo para compartir que se muestra de manera predeterminada cuando un usuario comparte un archivo o una carpeta. Si quieren, los usuarios pueden cambiar la opción antes de compartir. Si el valor predeterminado está establecido en **Cualquiera con el vínculo** y no se permite el uso compartido de *Cualquiera* para un sitio determinado, se mostrará como valor predeterminado para ese sitio **Solo los miembros de su organización**.|
 |Los vínculos deben expirar dentro de este número de días:|Desactivado (sin expiración)|Especifica el número de días que transcurren después de que se cree un vínculo de *Cualquiera* para que expire. Los vínculos expirados no se pueden renovar. Si necesita seguir compartiendo después de la fecha de expiración, cree un nuevo vínculo.|
@@ -192,7 +192,7 @@ Si quiere limitar quién puede compartir con los invitados en SharePoint y OneDr
 
 ![Captura de pantalla de la configuración del grupo de seguridad uso compartido en el nivel de organización de SharePoint](../media/sharepoint-organization-external-sharing-security-groups.png)
 
-|**Setting**|**Default**|**Descripción**|
+| Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
 |Permitir que solo los usuarios de los grupos de seguridad seleccionados compartan con usuarios externos autenticados|Desactivado|Si está **Activado**, solo los usuarios de los grupos de seguridad especificados pueden compartir con personas que no pertenezcan a la organización. Solo están disponibles vínculos de *Personas específicas*. El uso compartido de *Cualquiera* se ha deshabilitado correctamente, salvo que esté **Activado** **Permitir que solo los usuarios de los grupos de seguridad seleccionados compartan con usuarios externos y con vínculos anónimos usuarios externos autenticados y con vínculos anónimos**.|
 |Permitir que solo los usuarios de los grupos de seguridad seleccionados compartan con usuarios externos y con vínculos anónimos|Desactivado|Si está **Activado**, solo los usuarios de los grupos de seguridad especificados pueden compartir con invitados. Están disponibles tanto el vínculo de *Cualquiera* como el vínculo de *Personas específicas*.|
@@ -215,7 +215,7 @@ Si en el sitio se ha aplicado una etiqueta de confidencialidad, puede que dicha 
 
 ![Captura de pantalla de la configuración de uso compartido externo del sitio de SharePoint](../media/sharepoint-site-external-sharing-settings.png)
 
-|**Setting**|**Default**|**Descripción**|
+| Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
 |Puede compartir contenido con|Varía por tipo de sitio (consulte la tabla siguiente)|Indica el tipo de uso compartido externo permitido para este sitio. Las opciones disponibles en esta sección están sujetas a la configuración de uso compartido en el nivel de la organización de SharePoint.|
 
@@ -227,7 +227,7 @@ Puede establecer valores predeterminados para los tipos de vínculos y permisos,
 
 ![Captura de pantalla de la configuración de vínculos para compartir en el nivel de sitio de SharePoint](../media/sharepoint-site-link-sharing-settings.png)
 
-|**Valor**|**Default**|**Descripción**|
+| Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
 |Limitar el uso compartido por dominio|Desactivado|Esta configuración le permite especificar una lista de dominios permitidos o bloqueados para el uso compartido. Si se especifican dominios permitidos, las invitaciones de uso compartido solo se pueden enviar a estos dominios. Si se especifican dominios denegados, las invitaciones de uso compartido no se pueden enviar a estos dominios.<br><br> Esta configuración no se puede usar para reemplazar las restricciones de dominio establecidas en el nivel de la organización o de Azure AD.|
 |Tipo de vínculo para compartir predeterminado|Igual que la configuración de nivel de organización|Esta configuración le permite especificar el vínculo para compartir predeterminado que se muestra a los usuarios en este sitio. La opción *Igual que la configuración de nivel de organización* se define mediante una combinación de la configuración de uso compartido de la organización y el sitio.|
@@ -238,7 +238,7 @@ Puede establecer valores predeterminados para los tipos de vínculos y permisos,
 
 En la tabla siguiente se muestra la configuración de uso compartido predeterminada para cada tipo de sitio.
 
-|**Tipo de sitio**|**Configuración de uso compartido predeterminada**|
+| Tipo de sitio | Valor de uso compartido predeterminado |
 |:-----|:-----|
 |Clásico|**Solo personas de la organización**|
 |OneDrive|**Cualquiera**|
