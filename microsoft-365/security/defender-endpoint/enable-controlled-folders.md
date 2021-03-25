@@ -14,12 +14,12 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a35c18d805ef3645659f49b8340cbb4cabab2f8d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 6d07e2a21bb01794990160cf02837fc524008098
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165074"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218765"
 ---
 # <a name="enable-controlled-folder-access"></a>Habilitar el acceso controlado a carpetas
 
@@ -137,8 +137,8 @@ Puede habilitar la característica en modo auditoría especificando en `AuditMod
 
 Se `Disabled` usa para desactivar la característica.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 * [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 * [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)
-* [Evaluar Microsoft Defender para el punto de conexión](evaluate-atp.md)
+* [Evaluar Microsoft Defender para el punto de conexión](evaluate-mde.md)
