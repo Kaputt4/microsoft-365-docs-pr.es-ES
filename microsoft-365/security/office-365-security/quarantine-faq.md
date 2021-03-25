@@ -1,0 +1,115 @@
+---
+title: Preguntas más frecuentes sobre mensajes en cuarentena
+f1.keywords:
+- NOCSH
+ms.author: chrisda
+author: chrisda
+manager: dansimp
+ms.date: ''
+audience: ITPro
+ms.topic: troubleshooting
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
+ms.collection:
+- M365-security-compliance
+- m365initiative-defender-office365
+description: Los administradores pueden ver preguntas y respuestas más frecuentes sobre los mensajes en cuarentena en Exchange Online Protection (EOP).
+ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 342f6b7f27c99352c4e5906799ce463b658e0c87
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51207415"
+---
+# <a name="quarantined-messages-faq"></a><span data-ttu-id="83cbd-103">Preguntas más frecuentes sobre mensajes en cuarentena</span><span class="sxs-lookup"><span data-stu-id="83cbd-103">Quarantined messages FAQ</span></span>
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+<span data-ttu-id="83cbd-104">**Se aplica a**</span><span class="sxs-lookup"><span data-stu-id="83cbd-104">**Applies to**</span></span>
+- [<span data-ttu-id="83cbd-105">Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="83cbd-105">Exchange Online Protection</span></span>](exchange-online-protection-overview.md)
+- [<span data-ttu-id="83cbd-106">Plan 1 y Plan 2 de Microsoft Defender para Office 365</span><span class="sxs-lookup"><span data-stu-id="83cbd-106">Microsoft Defender for Office 365 plan 1 and plan 2</span></span>](defender-for-office-365.md)
+- [<span data-ttu-id="83cbd-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="83cbd-107">Microsoft 365 Defender</span></span>](../defender/microsoft-365-defender.md)
+
+<span data-ttu-id="83cbd-108">En este tema se proporcionan preguntas y respuestas más frecuentes sobre mensajes de correo electrónico en cuarentena para organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="83cbd-108">This topic provides frequently asked questions and answers about quarantined email messages for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.</span></span>
+
+<span data-ttu-id="83cbd-109">Para obtener preguntas y respuestas sobre la protección contra correo no deseado, consulte Preguntas más frecuentes sobre protección [contra correo no deseado](anti-spam-protection-faq.md).</span><span class="sxs-lookup"><span data-stu-id="83cbd-109">For questions and answers about anti-spam protection, see [Anti-spam protection FAQ](anti-spam-protection-faq.md).</span></span>
+
+<span data-ttu-id="83cbd-110">Para obtener preguntas y respuestas acerca de la protección contra malware, vea Preguntas más frecuentes sobre protección [contra malware.](anti-malware-protection-faq-eop.md)</span><span class="sxs-lookup"><span data-stu-id="83cbd-110">For questions and answers about anti-malware protection, see [Anti-malware protection FAQ](anti-malware-protection-faq-eop.md).</span></span>
+
+<span data-ttu-id="83cbd-111">Para obtener preguntas y respuestas acerca de la protección contra la suplantación, vea Preguntas más frecuentes sobre la protección contra la [suplantación de seguridad](anti-spoofing-protection-faq.md).</span><span class="sxs-lookup"><span data-stu-id="83cbd-111">For questions and answers about anti-spoofing protection, see [Anti-spoofing protection FAQ](anti-spoofing-protection-faq.md).</span></span>
+
+## <a name="how-do-i-manage-messages-that-were-quarantined-for-malware"></a><span data-ttu-id="83cbd-112">¿Cómo puedo administrar los mensajes que se han puesto en cuarentena para malware?</span><span class="sxs-lookup"><span data-stu-id="83cbd-112">How do I manage messages that were quarantined for malware?</span></span>
+
+<span data-ttu-id="83cbd-113">Solo los administradores pueden administrar los mensajes que se han puesto en cuarentena para malware.</span><span class="sxs-lookup"><span data-stu-id="83cbd-113">Only admins can manage messages that were quarantined for malware.</span></span> <span data-ttu-id="83cbd-114">Para obtener más información, vea [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).</span><span class="sxs-lookup"><span data-stu-id="83cbd-114">For more information, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).</span></span>
+
+## <a name="how-do-i-quarantine-spam"></a><span data-ttu-id="83cbd-115">¿Cómo puedo poner en cuarentena el correo no deseado?</span><span class="sxs-lookup"><span data-stu-id="83cbd-115">How do I quarantine spam?</span></span>
+
+<span data-ttu-id="83cbd-116">De forma predeterminada, los mensajes clasificados como correo no deseado o correo electrónico masivo por filtrado de correo no deseado se entregan al buzón del usuario y se mueven a la carpeta Correo no deseado.</span><span class="sxs-lookup"><span data-stu-id="83cbd-116">By default, messages that are classified as spam or bulk email by spam filtering are delivered to the user's mailbox, and are moved to the Junk Email folder.</span></span> <span data-ttu-id="83cbd-117">Pero puede crear y configurar directivas contra correo no deseado para poner en cuarentena el correo no deseado o los mensajes de correo electrónico masivo en su lugar.</span><span class="sxs-lookup"><span data-stu-id="83cbd-117">But you can create and configure anti-spam policies to quarantine spam or bulk email messages instead.</span></span> <span data-ttu-id="83cbd-118">Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).</span><span class="sxs-lookup"><span data-stu-id="83cbd-118">For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).</span></span>
+
+## <a name="how-do-i-give-users-access-to-the-quarantine"></a><span data-ttu-id="83cbd-119">¿Cómo puedo dar a los usuarios acceso a la cuarentena?</span><span class="sxs-lookup"><span data-stu-id="83cbd-119">How do I give users access to the quarantine?</span></span>
+
+<span data-ttu-id="83cbd-120">Un usuario debe tener una cuenta válida para tener acceso a sus propios mensajes en cuarentena.</span><span class="sxs-lookup"><span data-stu-id="83cbd-120">A user must have a valid account to access their own messages in quarantine.</span></span> <span data-ttu-id="83cbd-121">EOP independiente requiere que los usuarios se represente como usuarios de correo en EOP (creados manualmente o creados mediante la sincronización de directorios).</span><span class="sxs-lookup"><span data-stu-id="83cbd-121">Standalone EOP requires that users are represented as mail users in EOP (manually created or created via directory synchronization).</span></span> <span data-ttu-id="83cbd-122">Para obtener más información acerca de la administración de usuarios en entornos EOP independientes, vea [Manage mail users in EOP](manage-mail-users-in-eop.md).</span><span class="sxs-lookup"><span data-stu-id="83cbd-122">For more information about managing users in standalone EOP environments, see [Manage mail users in EOP](manage-mail-users-in-eop.md).</span></span>
+
+## <a name="what-messages-can-end-users-access-in-quarantine"></a><span data-ttu-id="83cbd-123">¿A qué mensajes pueden acceder los usuarios finales en cuarentena?</span><span class="sxs-lookup"><span data-stu-id="83cbd-123">What messages can end users access in quarantine?</span></span>
+
+<span data-ttu-id="83cbd-124">Los usuarios pueden acceder a correo no deseado, correo electrónico masivo y (a partir de abril de 2020) mensajes de suplantación de identidad donde son destinatarios.</span><span class="sxs-lookup"><span data-stu-id="83cbd-124">Users can access spam, bulk email, and (as of April 2020) phishing messages where they are a recipient.</span></span> <span data-ttu-id="83cbd-125">Los usuarios finales no pueden acceder a malware en cuarentena, phishing de elevada confianza o mensajes que se han puesto en cuarentena debido a la acción Entregar el mensaje a la cuarentena hospedada en reglas de flujo de correo (también conocidas como reglas de transporte). </span><span class="sxs-lookup"><span data-stu-id="83cbd-125">End users can't access quarantined malware, high confidence phishing or messages that were quarantined because of the **Deliver the message to the hosted quarantine** action in mail flow rules (also known as transport rules).</span></span> <span data-ttu-id="83cbd-126">Para obtener más información acerca de los usuarios que tienen acceso a mensajes en cuarentena, vea Buscar y liberar mensajes [en cuarentena como usuario.](find-and-release-quarantined-messages-as-a-user.md)</span><span class="sxs-lookup"><span data-stu-id="83cbd-126">For more information about users accessing quarantined messages, see [Find and release quarantined messages as a user](find-and-release-quarantined-messages-as-a-user.md).</span></span>
+
+## <a name="how-long-are-messages-kept-in-the-quarantine"></a><span data-ttu-id="83cbd-127">¿Cuánto tiempo se mantienen los mensajes en cuarentena?</span><span class="sxs-lookup"><span data-stu-id="83cbd-127">How long are messages kept in the quarantine?</span></span>
+
+<span data-ttu-id="83cbd-128">Puede configurar el tiempo que los mensajes de correo no deseado, suplantación de identidad y correo masivo se mantienen en cuarentena mediante directivas contra correo no deseado.</span><span class="sxs-lookup"><span data-stu-id="83cbd-128">You configure how long spam, phishing, and bulk email messages are kept in the quarantine by using anti-spam policies.</span></span> <span data-ttu-id="83cbd-129">El valor predeterminado es 30 días, que también es el máximo.</span><span class="sxs-lookup"><span data-stu-id="83cbd-129">The default is 30 days, which is also the maximum.</span></span> <span data-ttu-id="83cbd-130">Para obtener más información, vea [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)</span><span class="sxs-lookup"><span data-stu-id="83cbd-130">For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)</span></span>
+
+<span data-ttu-id="83cbd-131">Para los mensajes que la acción de regla de flujo de correo ha puesto en cuarentena Entregar el mensaje a la cuarentena hospedada, los mensajes se mantienen en cuarentena durante 30 días.</span><span class="sxs-lookup"><span data-stu-id="83cbd-131">For messages that were quarantined by the mail flow rule action **Deliver the message to the hosted quarantine**, the messages are kept in quarantine for 30 days.</span></span> <span data-ttu-id="83cbd-132">No puede configurar esta duración.</span><span class="sxs-lookup"><span data-stu-id="83cbd-132">You can't configure this duration.</span></span>
+
+<span data-ttu-id="83cbd-133">Una vez expirado el período de tiempo, los mensajes se eliminan y no se pueden recuperar.</span><span class="sxs-lookup"><span data-stu-id="83cbd-133">After the time period expires, the messages are deleted and are not recoverable.</span></span>
+
+## <a name="can-i-release-or-report-more-than-one-quarantined-message-at-a-time"></a><span data-ttu-id="83cbd-134">¿Puedo liberar o informar de más de un mensaje en cuarentena a la vez?</span><span class="sxs-lookup"><span data-stu-id="83cbd-134">Can I release or report more than one quarantined message at a time?</span></span>
+
+<span data-ttu-id="83cbd-135">En el Centro de & cumplimiento, puede seleccionar y liberar hasta 100 mensajes a la vez.</span><span class="sxs-lookup"><span data-stu-id="83cbd-135">In the Security & Compliance Center, you can select and release up to 100 messages at a time.</span></span>
+
+<span data-ttu-id="83cbd-136">Los administradores pueden usar los cmdlets [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) y [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) en PowerShell de Exchange Online o PowerShell de EOP independiente para buscar y liberar mensajes en cuarentena en masa e informar de falsos positivos en masa.</span><span class="sxs-lookup"><span data-stu-id="83cbd-136">Admins can use the the [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) and [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) cmdlets in Exchange Online PowerShell or standalone EOP PowerShell to find and release quarantined messages in bulk, and to report false positives in bulk.</span></span>
+
+## <a name="are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a><span data-ttu-id="83cbd-137">¿Se admiten caracteres comodín al buscar mensajes en cuarentena?</span><span class="sxs-lookup"><span data-stu-id="83cbd-137">Are wildcards supported when searching for quarantined messages?</span></span> <span data-ttu-id="83cbd-138">¿Puedo buscar mensajes en cuarentena para un dominio específico?</span><span class="sxs-lookup"><span data-stu-id="83cbd-138">Can I search for quarantined messages for a specific domain?</span></span>
+
+<span data-ttu-id="83cbd-139">Los caracteres comodín no se admiten en el Centro de seguridad & cumplimiento.</span><span class="sxs-lookup"><span data-stu-id="83cbd-139">Wildcards aren't supported in the Security & Compliance Center.</span></span> <span data-ttu-id="83cbd-140">Por ejemplo, al buscar un remitente, debe especificar la dirección de correo electrónico completa.</span><span class="sxs-lookup"><span data-stu-id="83cbd-140">For example, when searching for a sender, you need to specify the full email address.</span></span> <span data-ttu-id="83cbd-141">Sin embargo, puede usar caracteres comodín en PowerShell de Exchange Online o en PowerShell de EOP independiente.</span><span class="sxs-lookup"><span data-stu-id="83cbd-141">But, you can use wildcards in Exchange Online PowerShell or standalone EOP PowerShell.</span></span>
+
+<span data-ttu-id="83cbd-142">Por ejemplo, copie el siguiente código de PowerShell en el Bloc de notas y guarde el archivo como .ps1 en una ubicación que sea fácil de encontrar (por ejemplo, C:\Data\QuarantineRelease.ps1).</span><span class="sxs-lookup"><span data-stu-id="83cbd-142">For example, copy the following PowerShell code into NotePad and save the file as .ps1 in a location that's easy for you to find (for example, C:\Data\QuarantineRelease.ps1).</span></span>
+
+<span data-ttu-id="83cbd-143">A continuación, después de conectarse [a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) o [Exchange Online Protection PowerShell,](/powershell/exchange/connect-to-exchange-online-protection-powershell)ejecute el siguiente comando para ejecutar el script:</span><span class="sxs-lookup"><span data-stu-id="83cbd-143">Then, after you connect to [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) or [Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell), run the following command to run the script:</span></span>
+
+```powershell
+& C:\Data\QuarantineRelease.ps1
+```
+
+<span data-ttu-id="83cbd-144">El script realiza las siguientes acciones:</span><span class="sxs-lookup"><span data-stu-id="83cbd-144">The script does the following actions:</span></span>
+
+- <span data-ttu-id="83cbd-145">Busque mensajes inéditos que se han puesto en cuarentena como correo no deseado de todos los remitentes del dominio fabrikam.</span><span class="sxs-lookup"><span data-stu-id="83cbd-145">Find unreleased messages that were quarantined as spam from all senders in the fabrikam domain.</span></span> <span data-ttu-id="83cbd-146">El número máximo de resultados es de 50 000 (50 páginas de 1000 resultados).</span><span class="sxs-lookup"><span data-stu-id="83cbd-146">The maximum number of results is 50,000 (50 pages of 1000 results).</span></span>
+- <span data-ttu-id="83cbd-147">Guarde los resultados en un archivo CSV.</span><span class="sxs-lookup"><span data-stu-id="83cbd-147">Save the results to a CSV file.</span></span>
+- <span data-ttu-id="83cbd-148">Libere los mensajes en cuarentena correspondientes a todos los destinatarios originales.</span><span class="sxs-lookup"><span data-stu-id="83cbd-148">Release the matching quarantined messages to all original recipients.</span></span>
+
+```powershell
+$Page = 1
+$List = $null
+
+Do
+{
+Write-Host "Getting Page " $Page
+
+$List = (Get-QuarantineMessage -Type Spam -PageSize 1000 -Page $Page | where {$_.Released -like "False" -and $_.SenderAddress -like "*fabrikam.com"})
+Write-Host "                     " $List.count " rows in this page match"
+Write-Host "                                                             Exporting list to appended CSV for logging"
+$List | Export-Csv -Path "C:\Data\Quarantined Message Matches.csv" -Append -NoTypeInformation
+
+Write-Host "Releasing page " $Page
+$List | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+
+$Page = $Page + 1
+
+} Until ($Page -eq 50)
+```
+
+<span data-ttu-id="83cbd-149">Después de liberar un mensaje, no puede volver a liberarlo.</span><span class="sxs-lookup"><span data-stu-id="83cbd-149">After you release a message, you can't release it again.</span></span>
