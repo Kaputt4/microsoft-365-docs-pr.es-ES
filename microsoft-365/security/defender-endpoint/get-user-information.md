@@ -1,0 +1,96 @@
+---
+title: Obtener API de información de usuario
+description: Obtenga información sobre cómo usar la API Obtener información del usuario para recuperar una entidad User por clave o nombre de usuario en Microsoft Defender para endpoint.
+keywords: apis, api de gráficos, api admitidas, obtener, usuario, información de usuario
+search.product: eADQiWindows 10XVcnh
+ms.prod: w10
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: macapara
+author: mjcaparas
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.openlocfilehash: 1c5b8fa6e0f1fd887c857bd4e6451a5e59b708af
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51198546"
+---
+# <a name="get-user-information-api"></a>Obtener API de información de usuario
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**Se aplica a:** [Microsoft Defender para endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+
+[!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Recuperar una entidad User por clave (nombre de usuario).
+
+## <a name="permissions"></a>Permisos
+Se requiere uno de los siguientes permisos para llamar a esta API. Para obtener más información, incluido cómo elegir permisos, consulte [Use Microsoft Defender for Endpoint API](apis-intro.md)
+
+Tipo de permiso |   Permiso  |   Nombre para mostrar de permisos
+:---|:---|:---
+Application |   User.Read.All | 'Leer todos los perfiles de usuario'
+
+## <a name="http-request"></a>Solicitud HTTP
+```
+GET /api/users/{id}/
+```
+
+## <a name="request-headers"></a>Encabezados de solicitud
+
+Nombre | Tipo | Descripción
+:---|:---|:---
+Authorization | Cadena | Portador {token}. **Necesario**.
+
+
+## <a name="request-body"></a>Cuerpo de la solicitud
+En blanco
+
+## <a name="response"></a>Respuesta
+Si se realiza correctamente y el usuario existe: 200 Aceptar con [la entidad de](user.md) usuario en el cuerpo. Si el usuario no existe: 404 No encontrado.
+
+
+## <a name="example"></a>Ejemplo
+
+**Solicitud**
+
+Aquí tiene un ejemplo de la solicitud.
+
+```
+GET https://api.securitycenter.microsoft.com/api/users/user1
+Content-type: application/json
+```
+
+**Respuesta**
+
+Aquí tiene un ejemplo de la respuesta.
+
+
+```
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Users/$entity",
+    "id": "user1",
+    "firstSeen": "2018-08-02T00:00:00Z",
+    "lastSeen": "2018-08-04T00:00:00Z",
+    "mostPrevalentMachineId": null,
+    "leastPrevalentMachineId": null,
+    "logonTypes": "Network",
+    "logOnMachinesCount": 3,
+    "isDomainAdmin": false,
+    "isOnlyNetworkUser": null
+}
+```
