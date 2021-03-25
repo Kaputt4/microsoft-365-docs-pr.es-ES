@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4b5d25c51560cfe7a4d55419a7de9ce36321e78f
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: e8080a282ef734490214dc5f2b9e18a1946b314c
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034179"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185831"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -230,9 +230,9 @@ Para obtener más información, ver los requisitos previos y las instrucciones d
 > [!IMPORTANT]
 > No todos los clientes con etiquetado admiten todas las opciones que permiten a los usuarios asignar sus propios permisos. Use esta sección para obtener más información.
 
-Puede usar estas opciones para que los usuarios puedan asignar permisos cuando aplican manualmente una etiqueta de confidencialidad al contenido:
+Puede usar las siguientes opciones para que los usuarios puedan asignar permisos cuando aplican manualmente una etiqueta de confidencialidad al contenido:
 
-- En Outlook, un usuario puede seleccionar restricciones equivalentes a la opción [No reenviar](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) o [Solo cifrar](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails)para los destinatarios seleccionados.
+- En Outlook, un usuario puede seleccionar restricciones equivalentes a la opción [No reenviar](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) o [Solo cifrar](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) (implementándose actualmente) para los destinatarios seleccionados.
     
     La opción No reenviar es compatible con todos los clientes de correo electrónico que admiten etiquetas de confidencialidad. Sin embargo, aplicar la opción **Solo cifrar** con una etiqueta de confidencialidad es una versión reciente que solo se admite mediante etiquetas integradas y no con el cliente de etiquetas unificado de Azure Information Protection. Para los clientes de correo electrónico que no admiten esta funcionalidad, la etiqueta no estará visible.
     

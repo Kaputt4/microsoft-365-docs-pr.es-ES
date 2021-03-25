@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión.
-ms.openlocfilehash: 3b8ebdbb08a6a866cc84df2031e77378925eaa0e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4d1aa3b75ec0a0720f3d92c847bf7c6cde6d966f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907010"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199279"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión
 
@@ -96,7 +96,7 @@ Para obtener más información, vea [Sintaxis de comando Netsh, contextos y form
 
 Si un servidor proxy o firewall bloquea todo el tráfico de forma predeterminada y permite únicamente el acceso a dominios específicos, agregue los dominios que aparecen en la hoja descargable a la lista de dominios permitidos.
 
-Esta [hoja de cálculo descargable](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx) muestra los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Debe asegurarse de que no haya ninguna regla de filtrado de red o firewall que deniegue el acceso a estas direcciones URL o puede que necesite crear una regla de permiso específica para ellas.
+Esta [hoja de cálculo descargable](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) muestra los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Debe asegurarse de que no haya ninguna regla de filtrado de red o firewall que deniegue el acceso a estas direcciones URL o puede que necesite crear una regla de permiso específica para ellas.
 
 Si un servidor proxy o firewall tiene habilitada la detección HTTPS (inspección SSL), excluya los dominios que aparecen en la tabla anterior de la detección HTTPS.
 Si un servidor proxy o firewall bloquea el tráfico anónimo, como la DLP de punto de conexión se conecta desde el contexto del sistema, asegúrese de que se permite el tráfico anónimo en las direcciones URL indicadas anteriormente.
@@ -123,7 +123,7 @@ Reemplace *HardDrivePath* por la ruta de acceso en la que se descargó la herram
 
 6.  Abra **MDATPClientAnalyzerResult.txt** y compruebe que ha realizado los pasos de configuración del proxy para habilitar la detección del servidor y tener acceso a las direcciones URL del servicio.  La herramienta comprueba la conectividad de las direcciones URL del servicio de Defender para punto de conexión con las que el cliente está configurado para interactuar. Luego, imprime los resultados en el archivo **MDATPClientAnalyzerResult.txt** para cada URL que se puede usar potencialmente para comunicarse con los servicios de Defender para punto de conexión. Por ejemplo:
 
-    **Testing URL : https://xxx.microsoft.com/xxx </br> 1 - Default proxy: Succeeded (200) </br> 2 - Proxy auto discovery (WPAD): Succeeded (200)</br> 3 - Proxy disabled: Succeeded (200)</br> 4 - Named proxy: Doesn't exist</br> 5 - Command line proxy: Doesn't exist**</br>
+    **Testing URL: https://xxx.microsoft.com/xxx </br> 1 - Default proxy: Succeeded (200) </br> 2 - Proxy auto discovery (WPAD): Succeeded (200)</br> 3 - Proxy disabled: Succeeded (200)</br> 4 - Named proxy: Doesn't exist</br> 5 - Command-line proxy: Doesn't exist**</br>
 
 
 Si al menos una de las opciones de conectividad devuelve un estado (200), el cliente de Defender para punto de conexión puede comunicarse con la URL probada correctamente con este método de conectividad. 
