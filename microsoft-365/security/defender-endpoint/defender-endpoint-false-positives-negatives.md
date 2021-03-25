@@ -23,12 +23,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 85e9a47c0180fd7582b2bc107ddf7d78f57e6329
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3ef625e813961c09bb6f74d85fd5a7c8033f9c2a
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075312"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183878"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Dirección de falsos positivos/negativos en Microsoft Defender para endpoint
 
@@ -55,7 +55,7 @@ Además, puede obtener ayuda si sigue teniendo problemas con [falsos positivos o
 ![Pasos para abordar falsos positivos y negativos](images/false-positives-step-diagram.png)
 
 > [!NOTE]
-> Este artículo está pensado como guía para los operadores de seguridad y los administradores de seguridad que usan [Microsoft Defender para Endpoint](microsoft-defender-advanced-threat-protection.md).
+> Este artículo está pensado como guía para los operadores de seguridad y los administradores de seguridad que usan [Microsoft Defender para Endpoint](microsoft-defender-endpoint.md).
 
 ## <a name="part-1-review-and-classify-alerts"></a>Parte 1: Revisar y clasificar alertas
 
