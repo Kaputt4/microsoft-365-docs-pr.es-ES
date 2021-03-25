@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5ab4019751a26507fcc80007d3262f20f861d25c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8bb80e032fd2eb4c618b60f4ab46829d5cf11b6d
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071488"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199234"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Configurar los pilares de Microsoft 365 Defender para el entorno piloto o el laboratorio de prueba
 
@@ -96,7 +96,7 @@ Hay un módulo de PowerShell denominado Analizador de configuración recomendada
  
 7. A continuación, seleccione la **directiva Vínculos seguros** y, a continuación, haga clic en el icono de lápiz para editar la directiva predeterminada.
 
-8. Asegúrese de que la opción No realizar **un seguimiento** cuando los usuarios hacen clic en vínculos seguros no está seleccionada, mientras que el resto de las opciones están seleccionadas. Consulta [Configuración de vínculos seguros](/microsoft-365/security/defender-365-security/recommended-settings-for-eop-and-office365) para obtener más información. Haga clic en **Guardar**. 
+8. Asegúrese de que la opción No realizar **un seguimiento** cuando los usuarios hacen clic en vínculos seguros no está seleccionada, mientras que el resto de las opciones están seleccionadas. Consulta [Configuración de vínculos seguros](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) para obtener más información. Haga clic en **Guardar**. 
 
    ![Image of_Office 365 Security & Compliance Center page which shows that the option Do not track when users click safe is not selected](../../media/mtp-eval-38.png)
 

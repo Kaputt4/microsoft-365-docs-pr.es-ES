@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Evitar infracciones de datos personales con los servicios de protección de identidades, dispositivos y amenazas de Microsoft 365.
-ms.openlocfilehash: 145b8a59f7eafb95adf71dc24613ee15ef1c2cca
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5e08ef574e199769e572b3836b3323dc88fc4bbd
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052355"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199470"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>Usar la protección de identidad, dispositivo y amenazas para la regulación de privacidad de datos
 
@@ -70,7 +70,7 @@ Usa [Microsoft Endpoint Manager para](https://www.microsoft.com/microsoft-365/mi
 - Requerir que los dispositivos móviles bloquee la inactividad.
 - Requerir que los dispositivos móviles borren varios errores de inicio de sesión.
 
-Use [Exchange Online Protection y Microsoft Defender para Office 365](../security/defender-365-security/defender-for-office-365.md) para la categoría **Proteger** contra amenazas, con la que puede:
+Use [Exchange Online Protection y Microsoft Defender para Office 365](../security/office-365-security/defender-for-office-365.md) para la categoría **Proteger** contra amenazas, con la que puede:
 
 - Habilitar la autenticación del remitente (SPF, DMARC y DKIM).
 - Configurar Las directivas contra suplantación de identidad de Microsoft Defender para Office 365.
@@ -81,8 +81,8 @@ Use [Exchange Online Protection y Microsoft Defender para Office 365](../securit
 
 ### <a name="references"></a>Referencias:
 
-- [Directivas comunes de acceso a dispositivos e identidades](../security/defender-365-security/identity-access-policies.md)
+- [Directivas comunes de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md)
 - [Proteger contra amenazas en Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [Archivos adjuntos seguros](../security/defender-365-security/safe-attachments.md)
-- [Vínculos seguros](../security/defender-365-security/safe-links.md)
-- [Documentos seguros](../security/defender-365-security/safe-docs.md)
+- [Archivos adjuntos seguros](../security/office-365-security/safe-attachments.md)
+- [Vínculos seguros](../security/office-365-security/safe-links.md)
+- [Documentos seguros](../security/office-365-security/safe-docs.md)

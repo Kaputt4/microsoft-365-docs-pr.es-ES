@@ -14,20 +14,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Cree un entorno de Microsoft 365 para probar el acceso de dispositivos e identidades con los requisitos previos para la autenticación de paso a través.
-ms.openlocfilehash: 043a8999feb3941569119b5e52d94b0f6dd3533f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f257b85672a1a1b27f600d145b1f9f3296b21980
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051239"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199854"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Requisitos previos de acceso de dispositivos e identidades para la autenticación de paso a través en el entorno de prueba de Microsoft 365
 
 *Esta Guía del laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
 
-[Las configuraciones](../security/defender-365-security/microsoft-365-policies-configurations.md) de acceso a dispositivos y identidades son un conjunto de configuraciones y directivas de acceso condicional para proteger el acceso a todos los servicios de Microsoft 365 para empresas que están integrados con Azure Active Directory (Azure AD).
+[Las configuraciones](../security/office-365-security/microsoft-365-policies-configurations.md) de acceso a dispositivos y identidades son un conjunto de configuraciones y directivas de acceso condicional para proteger el acceso a todos los servicios de Microsoft 365 para empresas que están integrados con Azure Active Directory (Azure AD).
 
-Este artículo describe cómo configurar un entorno de prueba de Microsoft 365 que cumple con los requisitos de la [Configuración de requisitos previos de la autenticación de paso a través](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) para el acceso de dispositivos e identidades.
+Este artículo describe cómo configurar un entorno de prueba de Microsoft 365 que cumple con los requisitos de la [Configuración de requisitos previos de la autenticación de paso a través](../security/office-365-security/identity-access-prerequisites.md#prerequisites) para el acceso de dispositivos e identidades.
 
 Hay diez fases para configurar este entorno de prueba:
 
@@ -120,11 +120,11 @@ Para Skype Empresarial Online:
   Get-CsOAuthConfiguration
   ```
 
-El resultado es un entorno de prueba que cumple con los requisitos de la [Configuración de requisitos previos de autenticación de paso a través](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) para el acceso de dispositivos e identidades. 
+El resultado es un entorno de prueba que cumple con los requisitos de la [Configuración de requisitos previos de autenticación de paso a través](../security/office-365-security/identity-access-prerequisites.md#prerequisites) para el acceso de dispositivos e identidades. 
 
 ## <a name="next-step"></a>Paso siguiente
 
-Use [Directivas comunes de acceso a dispositivos e identidades](../security/defender-365-security/identity-access-policies.md) para configurar las directivas que se basan en los requisitos previos y protegen dispositivos e identidades.
+Use [Directivas comunes de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md) para configurar las directivas que se basan en los requisitos previos y protegen dispositivos e identidades.
 
 ## <a name="see-also"></a>Ver también
 

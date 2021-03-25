@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 746ca59fd0e9eb0d93d93c00b6a279a9156cc524
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: da70bbfe5c4dfa4f9eda16adec709826de1247b7
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050743"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200022"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>Para identidad y más allá: un punto de vista de un arquitecto
 
@@ -135,7 +135,7 @@ Si está de acuerdo con esta definición expandida de autorización, debe implem
 - [Azure AD Identity Protection](/azure/active-directory/identity-protection/) 
 - [Microsoft Defender for Identity](/azure-advanced-threat-protection/)
 - [Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender para Office 365](../security/defender-365-security/defender-for-office-365.md?view=o365-worldwide)
+- [Microsoft Defender para Office 365](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
 - [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md?view=o365-worldwide)
 - [Microsoft Intune](/mem/intune/)
@@ -227,7 +227,7 @@ A veces, los escenarios llaman para agregar un usuario externo a un rol (vea la 
 
 ### <a name="security-and-compliance-center-scc"></a>Centro de seguridad y cumplimiento (SCC)
 
-Los permisos del Centro de seguridad y cumplimiento de [Office 365 & son](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md) una colección de "grupos de roles", que son independientes y distintos de los roles de Azure AD. Esto puede resultar confuso porque algunos de estos grupos de roles tienen el mismo nombre que los roles de Azure AD (por ejemplo, Lector de seguridad), pero pueden tener una pertenencia diferente. Prefero el uso de roles de Azure AD. Cada grupo de roles consta de uno o más "roles" (vea lo que quiero decir acerca de volver a usar la misma palabra)) y tienen miembros de Azure AD, que son objetos habilitados para correo electrónico. Además, puede crear un grupo de roles con el mismo nombre que un rol, que puede contener o no esa función (evite esta confusión).
+Los permisos del Centro de seguridad y cumplimiento de [Office 365 & son](../security/office-365-security/permissions-in-the-security-and-compliance-center.md) una colección de "grupos de roles", que son independientes y distintos de los roles de Azure AD. Esto puede resultar confuso porque algunos de estos grupos de roles tienen el mismo nombre que los roles de Azure AD (por ejemplo, Lector de seguridad), pero pueden tener una pertenencia diferente. Prefero el uso de roles de Azure AD. Cada grupo de roles consta de uno o más "roles" (vea lo que quiero decir acerca de volver a usar la misma palabra)) y tienen miembros de Azure AD, que son objetos habilitados para correo electrónico. Además, puede crear un grupo de roles con el mismo nombre que un rol, que puede contener o no esa función (evite esta confusión).
 
 En cierto sentido, se trata de una evolución del modelo de grupos de roles de Exchange. Sin embargo, Exchange Online tiene su propia [interfaz de administración de grupos de](/exchange/permissions-exo) roles. Algunos grupos de roles de Exchange Online se bloquean y administran desde Azure AD o el Centro de cumplimiento de & de seguridad, pero otros pueden tener los mismos nombres o similares y se administran en Exchange Online (lo que se agrega a la confusión). Le recomiendo que evite usar la interfaz de usuario de Exchange Online a menos que necesite ámbitos para la administración de Exchange.
 

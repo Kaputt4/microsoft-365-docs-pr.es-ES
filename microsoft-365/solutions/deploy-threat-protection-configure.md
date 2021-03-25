@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a5ff570439dfecd287a5a5975358262af71d8025
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bd7c98f5888f8dc93a8aa341b186ea744d5b2882
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051023"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199938"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurar las capacidades de protección contra amenazas en Microsoft 365
 
@@ -42,13 +42,13 @@ Microsoft ha probado y recomienda un conjunto específico de directivas relacion
 
 ![Proceso para implementar la protección de línea base](../media/deploy-threat-protection/deploy-threat-protection-identity-access-steps.png) 
 
-1. [Configure los requisitos previos, incluido Azure AD Identity Protection](../security/defender-365-security/identity-access-prerequisites.md).
-2. [Configure directivas comunes de acceso a dispositivos y identidades](../security/defender-365-security/identity-access-policies.md) para la protección de línea base.
-3. Configurar directivas para [usuarios invitados,](../security/defender-365-security/identity-access-policies-guest-access.md) [Microsoft Teams,](../security/defender-365-security/teams-access-policies.md) [Exchange Online](../security/defender-365-security/secure-email-recommended-policies.md)y [SharePoint Online y OneDrive](../security/defender-365-security/sharepoint-file-access-policies.md).
+1. [Configure los requisitos previos, incluido Azure AD Identity Protection](../security/office-365-security/identity-access-prerequisites.md).
+2. [Configure directivas comunes de acceso a dispositivos y identidades](../security/office-365-security/identity-access-policies.md) para la protección de línea base.
+3. Configurar directivas para [usuarios invitados,](../security/office-365-security/identity-access-policies-guest-access.md) [Microsoft Teams,](../security/office-365-security/teams-access-policies.md) [Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)y [SharePoint Online y OneDrive](../security/office-365-security/sharepoint-file-access-policies.md).
 
 ### <a name="more-information-about-protecting-identities"></a>Más información sobre la protección de identidades
 
-- [Configuraciones de acceso a dispositivos e identidades](../security/defender-365-security/microsoft-365-policies-configurations.md)
+- [Configuraciones de acceso a dispositivos e identidades](../security/office-365-security/microsoft-365-policies-configurations.md)
 - [Instrucciones de seguridad para Azure MFA](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
 ## <a name="step-2-configure-microsoft-defender-for-identity"></a>Paso 2: Configurar Microsoft Defender para identidad
@@ -96,11 +96,11 @@ Microsoft 365 Defender unifica alertas, incidentes, investigación y respuesta a
 
 ## <a name="step-4-configure-microsoft-defender-for-office-365"></a>Paso 4: Configurar Microsoft Defender para Office 365
 
-[Microsoft Defender para Office 365](../security/defender-365-security/defender-for-office-365.md) protege su organización contra amenazas malintencionadas en mensajes de correo electrónico (datos adjuntos y direcciones URL), documentos de Office y herramientas de colaboración. En la tabla siguiente se enumeran las características y capacidades de Microsoft Defender para Office 365 que se incluyen en Microsoft 365 E5:
+[Microsoft Defender para Office 365](../security/office-365-security/defender-for-office-365.md) protege su organización contra amenazas malintencionadas en mensajes de correo electrónico (datos adjuntos y direcciones URL), documentos de Office y herramientas de colaboración. En la tabla siguiente se enumeran las características y capacidades de Microsoft Defender para Office 365 que se incluyen en Microsoft 365 E5:
 
 |Capacidades de configuración, protección y detección|Capacidades de automatización, investigación, corrección y educación|
 |---|---|
-|[Archivos adjuntos seguros](../security/defender-365-security/safe-attachments.md)<br/>[Vínculos seguros](../security/defender-365-security/safe-links.md)<br/>[Documentos seguros](../security/defender-365-security/safe-docs.md)<br/>[ATP para SharePoint, OneDrive y Microsoft Teams](../security/defender-365-security/mdo-for-spo-odb-and-teams.md)<br/>[Protección antiphishing en Microsoft Defender para Office 365](../security/defender-365-security/set-up-anti-phishing-policies.md#Exclusive-settings-in-anti-phishing-policies-in Microsoft-Defender-for-Office-365)|[Rastreadores de amenazas](../security/defender-365-security/threat-trackers.md)<br/>[Explorador de amenazas](../security/defender-365-security/threat-explorer.md)<br/>[Investigación y respuesta automatizadas](../security/defender-365-security/office-365-air.md)<br/>[Simulador de ataque](../security/defender-365-security/attack-simulator.md)|
+|[Archivos adjuntos seguros](../security/office-365-security/safe-attachments.md)<br/>[Vínculos seguros](../security/office-365-security/safe-links.md)<br/>[Documentos seguros](../security/office-365-security/safe-docs.md)<br/>[ATP para SharePoint, OneDrive y Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)<br/>[Protección antiphishing en Microsoft Defender para Office 365](../security/office-365-security/set-up-anti-phishing-policies.md#Exclusive-settings-in-anti-phishing-policies-in Microsoft-Defender-for-Office-365)|[Rastreadores de amenazas](../security/office-365-security/threat-trackers.md)<br/>[Explorador de amenazas](../security/office-365-security/threat-explorer.md)<br/>[Investigación y respuesta automatizadas](../security/office-365-security/office-365-air.md)<br/>[Simulador de ataque](../security/office-365-security/attack-simulator.md)|
 |
 
 Con Microsoft Defender para Office 365, los usuarios de toda la organización pueden comunicarse y colaborar de forma más segura, con protección contra amenazas para su contenido de correo electrónico y documentos de Office.
@@ -109,14 +109,14 @@ Con Microsoft Defender para Office 365, los usuarios de toda la organización pu
 
 ![Proceso para implementar Microsoft Defender para Office 365](../media/deploy-threat-protection/deploy-office365-atp-steps.png) 
 
-1. Configurar y configurar las directivas de [Microsoft Defender para Office 365](../security/defender-365-security/protect-against-threats.md).
-2. [Ver y usar los informes de Microsoft Defender para Office 365](../security/defender-365-security/view-reports-for-mdo.md).
-3. [Usar capacidades de investigación y respuesta de amenazas](../security/defender-365-security/office-365-ti.md).
+1. Configurar y configurar las directivas de [Microsoft Defender para Office 365](../security/office-365-security/protect-against-threats.md).
+2. [Ver y usar los informes de Microsoft Defender para Office 365](../security/office-365-security/view-reports-for-mdo.md).
+3. [Usar capacidades de investigación y respuesta de amenazas](../security/office-365-security/office-365-ti.md).
 
 ### <a name="more-information-about-microsoft-defender-for-office-365"></a>Más información sobre Microsoft Defender para Office 365
 
-- [Introducción a Microsoft Defender para Office 365](../security/defender-365-security/defender-for-office-365.md)
-- [Novedades de Microsoft Defender para Office 365](../security/defender-365-security/whats-new-in-defender-for-office-365.md)
+- [Introducción a Microsoft Defender para Office 365](../security/office-365-security/defender-for-office-365.md)
+- [Novedades de Microsoft Defender para Office 365](../security/office-365-security/whats-new-in-defender-for-office-365.md)
 
 ## <a name="step-5-configure-microsoft-defender-for-endpoint"></a>Paso 5: Configurar Microsoft Defender para endpoint
 
@@ -187,7 +187,7 @@ Microsoft 365 proporciona los siguientes recursos para ayudar a informar a los u
 |Concepto  |Recursos  |
 |---------|---------|
 |Microsoft 365     |[Caminos de aprendizaje personalizables](/office365/customlearning/) <p>Estos recursos pueden ayudarle a crear formación para los usuarios finales de su organización        |
-|Centro de seguridad de Microsoft 365 |[Módulo de aprendizaje: proteger la organización con seguridad inteligente integrada de Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Este módulo le permite describir cómo funcionan conjuntamente las características de seguridad de Microsoft 365 y para expresar las ventajas de estas características de seguridad. |
+|Seguridad de Microsoft 365 |[Módulo de aprendizaje: proteger la organización con seguridad inteligente integrada de Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Este módulo le permite describir cómo funcionan conjuntamente las características de seguridad de Microsoft 365 y para expresar las ventajas de estas características de seguridad. |
 |Autenticación multifactor     | [Comprobación en dos pasos: ¿Cuál es la página de verificación adicional?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Este artículo ayuda a los usuarios finales a comprender qué es la autenticación multifactor y por qué se usa en su organización.    |
 
 Además de esta guía, Microsoft recomienda que los usuarios tomen las acciones descritas en este artículo: Proteger su cuenta y dispositivos de [los piratas informáticos y malware](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). Entre estas acciones se incluyen:

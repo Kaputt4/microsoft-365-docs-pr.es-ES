@@ -22,12 +22,12 @@ ms.custom: autoir
 ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: c12937c016875c26a7212117e41aac4349cb540d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8ed6f1ccd6587d6c618974a123f0d5d42a44e753
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51073939"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199638"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Investigación y respuesta automatizadas en Microsoft 365 Defender
 
@@ -41,7 +41,7 @@ Si su organización usa [Microsoft 365 Defender,](microsoft-365-defender.md)el e
 En este artículo se proporciona información general sobre AIR e incluye vínculos a los siguientes pasos y recursos adicionales.
 
 > [!TIP]
-> ¿Desea experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de laboratorio o](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) ejecutar el proyecto piloto en [producción.](m365d-pilot.md?ocid=cx-evalpilot)
+> ¿Quiere experimentar Microsoft 365 Defender? Puede [evaluarlo en un entorno de pruebas](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o bien [ejecutar el proyecto piloto en producción](m365d-pilot.md?ocid=cx-evalpilot).
 
 ## <a name="how-automated-investigation-and-self-healing-works"></a>Cómo funciona la investigación automatizada y la recuperación automática
 
@@ -90,12 +90,12 @@ En Microsoft 365 Defender, cada investigación automatizada correlaciona las se�
 |Entidades |Servicios de protección contra amenazas  |
 |:---------|:---------|
 |Dispositivos (también denominados puntos de conexión y a veces denominados máquinas)     |[Microsoft Defender para punto de conexión](../defender-endpoint/automated-investigations.md)<br/>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) |      
-|Contenido de correo electrónico (mensajes de correo electrónico que pueden contener archivos y direcciones URL)     |[Microsoft Defender para Office 365](../defender-365-security/defender-for-office-365.md)         |
+|Contenido de correo electrónico (mensajes de correo electrónico que pueden contener archivos y direcciones URL)     |[Microsoft Defender para Office 365](../office-365-security/defender-for-office-365.md)         |
 
 > [!NOTE]
 > No todas las alertas desencadenan una investigación automatizada y no todas las investigaciones tienen como resultado acciones de corrección automatizadas; depende de cómo se configure la investigación y la respuesta automatizadas para su organización. Consulte [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Consulta los requisitos previos para la investigación y respuesta automatizadas en Microsoft 365 Defender](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [Configurar la investigación automatizada y la respuesta para su organización](m365d-configure-auto-investigation-response.md)

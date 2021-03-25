@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb2923c3f2cb3f27a864fdc3c5070107998823d5
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 94cb92974b0e73a1254fd024c39d9a6ee620aad3
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074883"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199542"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>Implementación basada en Intune para Microsoft Defender para Endpoint para Mac
 
@@ -137,7 +137,7 @@ No necesita ningún aprovisionamiento especial para un dispositivo Mac más all�
 
 1. Confirme la administración de dispositivos.
 
-    ![Confirmar captura de pantalla de administración de dispositivos](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-3-confirmdevicemgmt)
+    ![Confirmar captura de pantalla de administración de dispositivos](./images/mdatp-3-confirmdevicemgmt.png)
 
     Seleccione **Abrir preferencias del sistema,** busque **Perfil de administración** en la lista y seleccione **Aprobar...**. El perfil de administración se mostrará como **Verificado**:
 
@@ -160,9 +160,9 @@ Para aprobar las extensiones del sistema:
 
 2. Elija un nombre para el perfil. Cambiar **Platform=macOS** a **Profile type=Extensions**. Seleccione **Crear**.
 
-3. En la `Basics` pestaña, asigne un nombre a este nuevo perfil.
+3. En la **pestaña Conceptos** básicos, asigne un nombre a este nuevo perfil.
 
-4. En la `Configuration settings` pestaña, agregue las siguientes entradas en la `Allowed system extensions` sección:
+4. En la **pestaña Configuración,** agregue las siguientes entradas en la **sección Extensiones permitidas del sistema:**
 
     Identificador de agrupación         | Identificador de equipo
     --------------------------|----------------
@@ -170,9 +170,9 @@ Para aprobar las extensiones del sistema:
     com.microsoft.wdav.netext | UBF8T346G9
 
     > [!div class="mx-imgBorder"]
-    > ![Captura de pantalla de la pestaña Configuración, incluida la sección Identificadores de equipo permitidos](images/mac-system-extension-intune2.png)
+    > ![Captura de pantalla de la configuración de la extensión en Configuración de la pestaña Conceptos básicos](images/mac-system-extension-intune2.png)
 
-5. En la `Assignments` pestaña, asigne este perfil a **Todos los usuarios & Todos los dispositivos**.
+5. En la **pestaña Asignaciones,** asigne este perfil a **Todos los usuarios & Todos los dispositivos**.
 
 6. Revise y cree este perfil de configuración.
 
@@ -186,7 +186,7 @@ Para aprobar las extensiones del sistema:
 
 4. Seleccione **Aceptar**.
 
-    ![Captura de pantalla de perfiles de configuración del sistema](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
+    ![Importar una configuración desde un archivo para perfil de configuración personalizado](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-6-systemconfigurationprofiles)
 
 5. Seleccione **Administrar**  >  **asignaciones**. En la **pestaña Incluir,** seleccione **Asignar a todos los usuarios & Todos los dispositivos**.
 
@@ -194,14 +194,14 @@ Para aprobar las extensiones del sistema:
 
 7. Cree otro perfil, así como un nombre y cargue el archivo intune/WindowsDefenderATPOnboarding.xml.
 
-8. Descargue `fulldisk.mobileconfig` desde nuestro repositorio de [GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) y guárdelo como `tcc.xml` . Crear otro perfil, darle cualquier nombre y cargar este archivo en él.<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a>
+8. Descargue **fulldisk.mobileconfig** desde nuestro repositorio [de GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) y guárdelo como **tcc.xml**. Crear otro perfil, darle cualquier nombre y cargar este archivo en él.<a name="create-system-configuration-profiles-step-8" id = "create-system-configuration-profiles-step-8"></a>
 
    > [!CAUTION]
    > macOS 10.15 (Catalina) contiene nuevas mejoras de seguridad y privacidad. A partir de esta versión, de forma predeterminada, las aplicaciones no pueden acceder a determinadas ubicaciones del disco (como Documentos, Descargas, Escritorio, etc.) sin consentimiento explícito. En ausencia de este consentimiento, Microsoft Defender para Endpoint no puede proteger completamente el dispositivo.
    >
    > Este perfil de configuración concede acceso en disco completo a Microsoft Defender para endpoint. Si configuró anteriormente Microsoft Defender para Endpoint a través de Intune, se recomienda actualizar la implementación con este perfil de configuración.
 
-9. Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint para Mac inspecciona el tráfico de sockets e informa de esta información al portal del Centro de seguridad de Microsoft Defender. La siguiente directiva permite que la extensión de red realice esta funcionalidad. Descargue `netfilter.mobileconfig` desde nuestro repositorio de [GitHub,](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)guárdelo como netext.xml e impleméntelo con los mismos pasos que en las secciones anteriores. <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
+9. Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint para Mac inspecciona el tráfico de sockets e informa de esta información al portal del Centro de seguridad de Microsoft Defender. La siguiente directiva permite que la extensión de red realice esta funcionalidad. Descargue **netfilter.mobileconfig** desde nuestro repositorio de [GitHub,](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)guárdelo como netext.xml e impleméntelo con los mismos pasos que en las secciones anteriores. <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
 
 10. Para permitir que Microsoft Defender para Endpoint para Mac y Microsoft Auto Update muestren notificaciones en la interfaz de usuario en macOS 10.15 (Catalina), descargue desde nuestro repositorio `notif.mobileconfig` [de GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) e impórtelo como una carga personalizada. <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
 
@@ -210,7 +210,7 @@ Para aprobar las extensiones del sistema:
 Una vez que los cambios de Intune se propaguen a los dispositivos inscritos, puede verlos en **Estado**  >  **del dispositivo de supervisión:**
 
 > [!div class="mx-imgBorder"]
-> ![Captura de pantalla de kext: estado del dispositivo](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade)
+> ![Vista del estado del dispositivo en monitor](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-7-devicestatusblade.png)
 
 ## <a name="publish-application"></a>Publicar aplicación
 
@@ -222,7 +222,7 @@ Una vez que los cambios de Intune se propaguen a los dispositivos inscritos, pue
 
 4. Seleccione **Configurar** y agregue la información necesaria.
 
-5. Use **macOS High Sierra 10.13** como sistema operativo mínimo.
+5. Use **macOS High Sierra 10.14** como sistema operativo mínimo.
 
 6. Establece *Omitir versión de la aplicación* en **Sí**. Otras opciones de configuración pueden ser cualquier valor arbitrario.
 
@@ -232,12 +232,12 @@ Una vez que los cambios de Intune se propaguen a los dispositivos inscritos, pue
     > Si la versión cargada por Intune es inferior a la versión del dispositivo, se instalará la versión inferior, lo que degradará eficazmente Microsoft Defender para Endpoint. Esto podría dar como resultado una aplicación que no funciona. Consulta [Implementar actualizaciones para Microsoft Defender para Endpoint para Mac](mac-updates.md) para obtener información adicional sobre cómo se actualiza el producto. Si implementaste Microsoft Defender para endpoint con *ignorar la* versión de la aplicación establecida en **No,** cámbiese a **Sí**. Si Microsoft Defender para endpoint aún no se puede instalar en un dispositivo cliente, desinstala Microsoft Defender para Endpoint e inserta la directiva actualizada.
      
     > [!div class="mx-imgBorder"]
-    > ![Captura de pantalla de la opción Configurar información de la aplicación en el cuadro de diálogo Agregar aplicación](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
+    > ![Visualización de la información de la aplicación en el complemento de aplicaciones](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-8-intuneappinfo)
 
 7. Seleccione **Aceptar** y **Agregar**.
 
     > [!div class="mx-imgBorder"]
-    > ![Captura de pantalla de una introducción de ejemplo](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
+    > ![Estado del dispositivo que se muestra en la ventana Notificaciones](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-9-intunepkginfo)
 
 8. Puede tardar unos minutos en cargar el paquete. Una vez terminado, seleccione el paquete de la lista y vaya a **Asignaciones** y **Agregar grupo**.
 

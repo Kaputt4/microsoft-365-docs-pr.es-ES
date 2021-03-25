@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d78f90e78a50d5902070f441a1d60693a5f531c8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 35a0b66a4cdc4cf39c15329eda2e0aafced79f34
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185724"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199614"
 ---
 # <a name="create-indicators-for-files"></a>Crear indicadores para archivos
 
@@ -35,7 +35,8 @@ ms.locfileid: "51185724"
 
 
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> [!TIP]
+> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Puede evitar la propagación posterior de un ataque en su organización mediante la prohibición de archivos potencialmente malintencionados o malware sospechoso. Si conoce un archivo ejecutable portátil (PE) potencialmente malintencionado, puede bloquearlo. Esta operación evitará que se lea, se escriba o se ejecute en equipos de la organización.
 
@@ -52,13 +53,13 @@ Es importante comprender los siguientes requisitos previos antes de crear indica
 - Para empezar a bloquear archivos, primero debe activar [la característica Bloquear **o**](advanced-features.md) permitir en Configuración.
 - Esta característica está diseñada para evitar que el malware sospechoso (o los archivos potencialmente malintencionados) se descarguen de la web. Actualmente es compatible con archivos ejecutables portátiles (PE), incluidos los archivos _.exe_ y _.dll._ La cobertura se extenderá con el tiempo.
 
->[!IMPORTANT]
->- La función permitir o bloquear no se puede realizar en archivos si la clasificación del archivo existe en la memoria caché del dispositivo antes de la acción permitir o bloquear 
->- Los archivos firmados de confianza se tratarán de forma diferente. Defender for Endpoint está optimizado para controlar archivos malintencionados. Intentar bloquear archivos firmados de confianza, en algunos casos, puede tener implicaciones en el rendimiento.
+El rendimiento puede verse afectado si estás copiando archivos grandes de un recurso compartido de red en el dispositivo local, especialmente a través de una conexión VPN. 
 
- 
->[!NOTE]
->Normalmente, los bloques de archivos se aplican en un par de minutos, pero pueden tardar más de 30 minutos.
+> [!IMPORTANT]
+> - La función permitir o bloquear no se puede realizar en archivos si la clasificación del archivo existe en la memoria caché del dispositivo antes de la acción permitir o bloquear 
+> - Los archivos firmados de confianza se tratarán de forma diferente. Defender for Endpoint está optimizado para controlar archivos malintencionados. Intentar bloquear archivos firmados de confianza, en algunos casos, puede tener implicaciones en el rendimiento.
+> - Normalmente, los bloques de archivos se aplican en un par de minutos, pero pueden tardar más de 30 minutos.
+> - Si hay directivas de indicador de archivos en conflicto, se aplica la directiva de cumplimiento de la directiva más segura. Por ejemplo, una directiva de indicador hash de archivo SHA-256 tiene prioridad sobre una directiva de indicador de hash de archivo MD5 si ambos tipos de hash definen el mismo archivo.
 
 ### <a name="create-an-indicator-for-files-from-the-settings-page"></a>Crear un indicador para archivos desde la página de configuración
 

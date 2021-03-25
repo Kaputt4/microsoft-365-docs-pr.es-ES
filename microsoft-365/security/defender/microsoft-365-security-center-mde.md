@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: dbbe692b3339a316f924ae4858753bbb961dd70c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b580c6f20ed3b242fc0bc239a49fe89ccc09d013
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165626"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199200"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft Defender para endpoint en el Centro de seguridad de Microsoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "51165626"
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender para Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
+- [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 El centro de seguridad mejorado de [Microsoft 365](overview-security-center.md) combina capacidades de seguridad que protegen, detectan, investigan y responden a las amenazas de correo electrónico, colaboración, identidad [https://security.microsoft.com](https://security.microsoft.com) y dispositivo. Este centro de seguridad reúne las funciones de los portales de seguridad de Microsoft existentes, incluidos el Centro de seguridad de Microsoft Defender y el Centro de seguridad & cumplimiento de Office 365.
 

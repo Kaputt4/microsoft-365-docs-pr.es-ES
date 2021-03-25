@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 17d55a434cc0499b9b24039f19ec7ed3c94310e8
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6582e4e940dc9910e7d341c92b525379b924f35b
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068930"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199962"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Roles personalizados en el control de acceso basado en roles para Microsoft 365 Defender
 
@@ -53,7 +53,7 @@ Los usuarios con roles personalizados existentes pueden tener acceso a datos en 
 Los roles y permisos personalizados se pueden crear y administrar individualmente a través de cada uno de los siguientes portales de seguridad: 
 
 - Microsoft Defender para endpoint: [editar roles en Microsoft Defender para endpoint](../defender-endpoint/user-roles.md)
-- Microsoft Defender para Office 365: [permisos en el Centro de seguridad & cumplimiento](../defender-365-security/permissions-in-the-security-and-compliance-center.md?preserve-view=true&view=o365-worldwide)
+- Microsoft Defender para Office 365: [permisos en el Centro de seguridad & cumplimiento](../office-365-security/permissions-in-the-security-and-compliance-center.md?preserve-view=true&view=o365-worldwide)
 - Microsoft Cloud App Security: [administrar el acceso de administrador](/cloud-app-security/manage-admins)
 
 Cada rol personalizado creado a través de un portal individual permite el acceso a los datos del portal de productos relevante. Por ejemplo, un rol personalizado creado a través de Microsoft Defender para endpoint solo permitirá el acceso a Defender para los datos de punto de conexión.

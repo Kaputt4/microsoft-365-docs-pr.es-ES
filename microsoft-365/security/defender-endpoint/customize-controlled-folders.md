@@ -12,19 +12,17 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 01/06/2021
+ms.date: 03/24/2021
 ms.technology: mde
-ms.openlocfilehash: 64f96544361a672881c590716adea80f40777c6e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.topic: how-to
+ms.openlocfilehash: 0962913df63e6837664cdb8ff79710d66e66977c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163344"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199924"
 ---
 # <a name="customize-controlled-folder-access"></a>Personalizar el acceso controlado a carpetas
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -120,7 +118,7 @@ Una aplicación o servicio permitido solo tiene acceso de escritura a una carpet
 
 4. Selecciona **Agregar una aplicación permitida** y sigue las indicaciones para agregar aplicaciones.
 
-    ![Captura de pantalla de cómo agregar un botón de aplicación permitido](/microsoft-365/security/defender-endpoint/images/cfa-allow-app)
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="Agregar un botón de aplicación permitido":::
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>Usar la directiva de grupo para permitir aplicaciones específicas
 
@@ -149,7 +147,7 @@ Una aplicación o servicio permitido solo tiene acceso de escritura a una carpet
 
    Sigue usando para `Add-MpPreference -ControlledFolderAccessAllowedApplications` agregar más aplicaciones a la lista. Las aplicaciones agregadas con este cmdlet aparecerán en la aplicación Seguridad de Windows.
 
-![Captura de pantalla de una ventana de PowerShell con el cmdlet anterior especificado](/microsoft-365/security/defender-endpoint/images/cfa-allow-app-ps)
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="Cmdlet de PowerShell para permitir una aplicación":::
 
 > [!IMPORTANT]
 > Se `Add-MpPreference` usa para anexar o agregar aplicaciones a la lista. El `Set-MpPreference` uso del cmdlet sobrescribirá la lista existente.
@@ -169,7 +167,7 @@ Los indicadores de archivo y certificado de Microsoft Defender para endpoint pue
 
 Para obtener más información acerca de cómo personalizar la notificación cuando se desencadena una regla y bloquea una aplicación o archivo, consulte [Configure alert notifications in Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-email-notifications).
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 - [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md)

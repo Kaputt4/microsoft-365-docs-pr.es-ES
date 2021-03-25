@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d54ab8eaa1e17be82752c480c963d3a24af56389
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a04f3be1f13fb57cd76cda7115d014f2ba3aa8d6
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187582"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198842"
 ---
 # <a name="create-indicators"></a>Crear indicadores
 
@@ -33,13 +33,14 @@ ms.locfileid: "51187582"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
+> [!TIP]
 > ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 El indicador de coincidencia de puntos de conexión (IoCs) es una característica esencial en cada solución de protección de puntos de conexión. Esta funcionalidad ofrece a SecOps la capacidad de establecer una lista de indicadores para la detección y para el bloqueo (prevención y respuesta).
 
 Cree indicadores que definan la detección, prevención y exclusión de entidades. Puedes definir la acción que se va a realizar, así como la duración de cuándo aplicar la acción, así como el ámbito del grupo de dispositivos al que aplicarla.
 
-Los orígenes compatibles actualmente son el motor de detección en la nube de Defender para endpoint, el motor automatizado de investigación y corrección y el motor de prevención de puntos de conexión (Antivirus de Microsoft Defender).
+Los orígenes compatibles actualmente son el motor de detección en la nube de Defender for Endpoint, el motor automatizado de investigación y corrección y el motor de prevención de puntos de conexión (Antivirus de Microsoft Defender).
 
 **Motor de detección de nube**<br>
 El motor de detección en la nube de Defender for Endpoint examina periódicamente los datos recopilados e intenta coincidir con los indicadores que estableces. Cuando haya una coincidencia, se realizará una acción de acuerdo con la configuración especificada para IoC.
@@ -63,8 +64,8 @@ Puede crear un indicador para:
 - [Certificados](indicator-certificates.md)
 
 
->[!NOTE]
->Hay un límite de 15.000 indicadores por inquilino.
+> [!NOTE]
+> Hay un límite de 15.000 indicadores por inquilino. Los indicadores de archivo y certificado no [bloquean las exclusiones definidas para Antivirus de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus). Los indicadores no se admiten en Microsoft Defender Antivirus en modo pasivo. 
 
 
 ## <a name="related-topics"></a>Temas relacionados
