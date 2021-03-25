@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo actualizar a un plan diferente.
-ms.openlocfilehash: 62d6da5713a7785fde9e795bc22956d73616c3c3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5f853dcd0d247a6422489cbe5d0287765bfd72a6
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924319"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164454"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Actualizar a un plan diferente
 
@@ -92,7 +92,7 @@ Si no ve ningún plan  en la pestaña Actualizar, significa que el plan no se pu
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Ahora no puede actualizar suscripciones porque tiene más usuarios que licencias.
 
-Para actualizar los planes automáticamente, todos los usuarios deben tener asignadas licencias válidas. Si ha asignado más licencias que las que ha comprado, verá una alerta en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencias</a> que indica que tiene un conflicto de licencias que debe resolverse. [Obtenga información sobre cómo resolver conflictos de licencia](../../admin/manage/resolve-license-conflicts.md). Una vez resueltos los conflictos de licencias, debería ver los planes enumerados en la **pestaña** Actualizar. Si no es así, puede [cambiar los planes manualmente](change-plans-manually.md)o llamar al soporte [técnico](../../admin/contact-support-for-business-products.md).
+Para actualizar los planes automáticamente, todos los usuarios deben tener asignadas licencias válidas. Si ha asignado más licencias que las que ha comprado, verá una alerta en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licencias</a> que indica que tiene un conflicto de licencias que debe resolverse. [Obtenga información sobre cómo resolver conflictos de licencia](../../commerce/licenses/buy-licenses.md). Una vez resueltos los conflictos de licencias, debería ver los planes enumerados en la **pestaña** Actualizar. Si no es así, puede [cambiar los planes manualmente](change-plans-manually.md)o llamar al soporte [técnico](../../admin/contact-support-for-business-products.md).
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>No puedes actualizar las suscripciones en este momento porque esta suscripción no está totalmente configurada o el servicio no está disponible.
 

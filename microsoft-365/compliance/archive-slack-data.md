@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector para importar y archivar datos de globanet Slack eDiscovery en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: a5273082ba2f88cda8c323f47aec40fed31455d2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Los administradores pueden configurar un conector para importar y archivar datos de la exhibición de documentos electrónicos de Veritas Slack en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
+ms.openlocfilehash: 48b0a6d4d5e8f6eafaaf900aa5c773cf4f99fe72
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925102"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163964"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data"></a>Configurar un conector para archivar datos de exhibición de documentos electrónicos de Slack
 
-Use un conector de Globanet en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de terceros desde redes sociales, mensajería instantánea y plataformas de colaboración de documentos a buzones de su organización de Microsoft 365. Globanet proporciona un conector [de Slack](https://globanet.com/slack/) configurado para capturar elementos del origen de datos de terceros (de forma regular) y, a continuación, importar esos elementos a Microsoft 365. Slack extrae mensajes y archivos de la API de Slack y los convierte en un formato de mensaje de correo electrónico y, a continuación, importa el elemento a buzones de usuario.
+Use un conector Veritas en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de terceros desde redes sociales, mensajería instantánea y plataformas de colaboración de documentos a buzones de su organización de Microsoft 365. Veritas proporciona un [conector de Slack](https://globanet.com/slack/) configurado para capturar elementos del origen de datos de terceros (de forma regular) y, a continuación, importar esos elementos a Microsoft 365. Slack extrae mensajes y archivos de la API de Slack y los convierte en un formato de mensaje de correo electrónico y, a continuación, importa el elemento a buzones de usuario.
 
 Después de almacenar los datos de exhibición de documentos electrónicos de Slack en buzones de usuario, puede aplicar características de cumplimiento de Microsoft 365 como retención por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector de Slack para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
@@ -33,15 +33,15 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 1. Su organización trabaja con Slack para configurar y configurar un sitio de Slack.
 
-2. Una vez cada 24 horas, los mensajes de chat de Slack eDiscovery se copian en el sitio de Globanet Merge1. El conector también convierte el contenido de un mensaje de chat a un formato de mensaje de correo electrónico.
+2. Una vez cada 24 horas, los mensajes de chat de Slack eDiscovery se copian en el sitio Veritas Merge1. El conector también convierte el contenido de un mensaje de chat a un formato de mensaje de correo electrónico.
 
-3. El conector de exhibición de documentos electrónicos de Slack que cree en el Centro de cumplimiento de Microsoft 365, se conecta al sitio de Globanet Merge1 todos los días y transfiere los mensajes de chat a una ubicación segura de Azure Storage en la nube de Microsoft.
+3. El conector de exhibición de documentos electrónicos de Slack que cree en el Centro de cumplimiento de Microsoft 365, se conecta al sitio veritas Merge1 todos los días y transfiere los mensajes de chat a una ubicación segura de Azure Storage en la nube de Microsoft.
 
 4. El conector importa los elementos de mensaje de chat convertidos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* y la asignación automática de usuarios, tal como se describe en el paso 3. Se crea una nueva subcarpeta en la carpeta Bandeja de entrada denominada **Exhibición** de documentos electrónicos de Slack en los buzones de usuario y los elementos del mensaje de chat se importan a esa carpeta. El conector determina a qué buzón se importarán los elementos mediante el valor de la *propiedad Email.* Cada mensaje de chat contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje de chat.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Crear una cuenta de Globanet Merge1 para conectores de Microsoft. Para crear una cuenta, póngase en contacto [con el servicio de soporte al cliente de Globanet](https://globanet.com/ms-connectors-contact). Iniciará sesión en esta cuenta al crear el conector en el paso 1.
+- Cree una cuenta de Veritas Merge1 para conectores de Microsoft. Para crear una cuenta, póngase en contacto con [el Servicio de soporte al cliente de Veritas](https://globanet.com/ms-connectors-contact). Iniciará sesión en esta cuenta al crear el conector en el paso 1.
 
 - Obtenga el nombre de usuario y la contraseña de la cuenta de empresa de Slack de su organización. Tendrás que iniciar sesión en esta cuenta en el paso 2 al configurar Slack.
 
@@ -63,7 +63,7 @@ El primer paso es acceder a la página **Conectores** de datos en el Centro de c
 
 ## <a name="step-2-configure-slack-ediscovery"></a>Paso 2: Configurar la exhibición de documentos electrónicos de Slack
 
-El segundo paso es configurar el conector de exhibición de documentos electrónicos de Slack en el sitio Merge1. Para obtener más información acerca de cómo configurar el conector de exhibición de documentos electrónicos de Slack en el sitio de Globanet Merge1, vea [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Slack%20eDiscovery%20User%20Guide.pdf).
+El segundo paso es configurar el conector de exhibición de documentos electrónicos de Slack en el sitio Merge1. Para obtener más información acerca de cómo configurar el conector de exhibición de documentos electrónicos de Slack en el sitio Veritas Merge1, vea [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Slack%20eDiscovery%20User%20Guide.pdf).
 
 Después de hacer clic en Guardar  & **finalizar**, se muestra la página Asignación de usuario en el asistente para conectores en el Centro de cumplimiento de Microsoft 365.
 

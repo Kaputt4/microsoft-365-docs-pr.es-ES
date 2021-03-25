@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector para importar y archivar datos XSLT/XML de Globanet en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 097b523b6a1909f3f9575302fe11ad61a7558472
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Los administradores pueden configurar un conector para importar y archivar datos XSLT/XML de Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
+ms.openlocfilehash: 51b05f83c51626bc60dc19b5ec9a63750903281c
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921730"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163764"
 ---
 # <a name="set-up-a-connector-to-archive-xsltxml-data"></a>Configurar un conector para archivar datos XSLT/XML
 
-Use un conector de Globanet en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos desde el origen de la página web a los buzones de usuario de su organización de Microsoft 365. Globanet proporciona un conector [XSLT/XML](https://globanet.com/xslt-xml) que permite el rápido desarrollo de archivos creados mediante XSLT (Transformaciones de lenguaje de hojas de estilos extensibles) para transformar archivos XML en otros formatos de archivo (como HTML o texto) que se pueden importar a Microsoft 365. El conector convierte el contenido de un elemento del origen XSLT/XML a un formato de mensaje de correo electrónico y, a continuación, importa el elemento convertido a buzones de Microsoft 365.
+Use un conector Veritas en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos desde el origen de la página web a los buzones de usuario de su organización de Microsoft 365. Veritas le proporciona un conector [XSLT/XML](https://globanet.com/xslt-xml) que permite el rápido desarrollo de archivos creados mediante XSLT (Transformaciones de lenguaje de hojas de estilos extensibles) para transformar archivos XML en otros formatos de archivo (como HTML o texto) que se pueden importar a Microsoft 365. El conector convierte el contenido de un elemento del origen XSLT/XML a un formato de mensaje de correo electrónico y, a continuación, importa el elemento convertido a buzones de Microsoft 365.
 
 Una vez que los datos XSLT/XML se almacenan en buzones de usuario, puede aplicar características de cumplimiento de Microsoft 365, como retención por juicio, exhibición de documentos electrónicos y directivas de retención y etiquetas de retención. El uso de un conector XSLT/XML para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
@@ -33,15 +33,15 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 1. Su organización trabaja con el origen XSLT/XML para configurar y configurar un sitio XSLT/XML.
 
-2. Una vez cada 24 horas, los mensajes de chat del origen XSLT/XML se copian en el sitio de Globanet Merge1. El conector también convierte el contenido en un formato de mensaje de correo electrónico.
+2. Una vez cada 24 horas, los mensajes de chat del origen XSLT/XML se copian en el sitio Veritas Merge1. El conector también convierte el contenido en un formato de mensaje de correo electrónico.
 
-3. El conector XSLT/XML que cree en el Centro de cumplimiento de Microsoft 365, se conecta al sitio de Globanet Merge1 todos los días y transfiere los mensajes a una ubicación segura de Azure Storage en la nube de Microsoft.
+3. El conector XSLT/XML que cree en el Centro de cumplimiento de Microsoft 365, se conecta al sitio veritas Merge1 todos los días y transfiere los mensajes a una ubicación segura de Azure Storage en la nube de Microsoft.
 
 4. El conector importa los elementos de mensaje convertidos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* de la asignación automática de usuarios, tal como se describe en el paso 3. Se crea una nueva subcarpeta en la carpeta Bandeja de entrada denominada **XSLT/XML** en los buzones de usuario y los elementos del mensaje se importan a esa carpeta. El conector hace esto mediante el valor de la *propiedad Email.* Cada mensaje contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Crear una cuenta de Globanet Merge1 para conectores de Microsoft. Para crear esta cuenta, póngase en contacto [con el servicio de soporte al cliente de Globanet](https://globanet.com/contact-us/). Iniciará sesión en esta cuenta al crear el conector en el paso 1.
+- Cree una cuenta de Veritas Merge1 para conectores de Microsoft. Para crear esta cuenta, póngase en contacto con [el servicio de soporte al cliente de Veritas](https://www.veritas.com/content/support/). Iniciará sesión en esta cuenta al crear el conector en el paso 1.
 
 - El usuario que crea el conector XSLT/XML en el paso 1 (y lo completa en el paso 3) debe estar asignado al rol De exportación de importación de buzones en Exchange Online. Este rol es necesario para agregar conectores en la página **Conectores de datos** del Centro de cumplimiento de Microsoft 365. De forma predeterminada, este rol no se asigna a un grupo de roles en Exchange Online. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
@@ -61,7 +61,7 @@ El primer paso es obtener acceso a **los** conectores de datos en el Centro de c
 
 ## <a name="step-2-configure-an-xsltxml-connector"></a>Paso 2: Configurar un conector XSLT/XML
 
-El segundo paso es configurar el conector XSLT/XML en el sitio Merge1. Para obtener información sobre cómo configurar el conector XSLT/XML en el sitio de Globanet Merge1, vea [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20XSLT-XML%20User%20Guide%20.pdf).
+El segundo paso es configurar el conector XSLT/XML en el sitio Merge1. Para obtener información sobre cómo configurar el conector XSLT/XML en el sitio Veritas Merge1, vea [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20XSLT-XML%20User%20Guide%20.pdf).
 
 Después de hacer clic en Guardar  & **finalizar**, se muestra la página Asignación de usuario en el asistente para conectores en el Centro de cumplimiento de Microsoft 365.
 

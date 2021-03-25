@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre qué suscripción de Microsoft 365 es adecuada para su organización.
-ms.openlocfilehash: 0ac7dbcad1f2d7fa99db607e6d4696c9f8fcb542
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19da01142bfe0abf2ad02c3a0ccab4ef25e09df4
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913759"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164650"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Elegir una suscripción a Microsoft 365
 
@@ -54,7 +54,6 @@ Elegir la suscripción correcta a Microsoft 365 es clave para sacar el máximo p
 | **Redes sociales, vídeo, sitios** | Stream, Yammer, Planner, SharePoint Online \* , PowerApps \* , Microsoft Flow\* | Sí | Sí | Sí |
 | **Aplicaciones empresariales** | Programación de aplicaciones: Bookings\*\* | Sí | Sí | Sí |
 |
- | Aplicaciones empresariales: MileIQ\*\* | Sí | Sí | No |
 | **Protección contra amenazas** | Protección contra amenazas avanzada de Office 365 | No | Sí | No |
  | Aplicación de Windows Exploit Guard | No | Sí | No |
 | **Administración de identidades** | Restablecimiento de contraseñas de autoservicio para cuentas híbridas de Azure Active Directory | No | Sí | No |

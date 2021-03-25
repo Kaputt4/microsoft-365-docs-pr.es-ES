@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Información general sobre cómo Microsoft 365 le ayuda a trabajar desde cualquier lugar.
-ms.openlocfilehash: 7c3a0ee4b69f7fa4e07064f0adc108afe70bd54d
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: f68c2f4b05437dd5cb29a3588a4878f464c5566a
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421686"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164566"
 ---
 # <a name="work-from-anywhere---overview"></a>Trabajar desde cualquier lugar: información general
 
@@ -33,7 +33,11 @@ ms.locfileid: "50421686"
 
 **Sugerencia profesional:** Mantenga el equilibrio entre la vida laboral y la seguridad desactivando las notificaciones de las aplicaciones de trabajo en sus dispositivos personales.
 
-Use las cuatro sugerencias siguientes para trabajar donde quiera que esté: Descargar una infografía para obtener sugerencias para trabajar desde cualquier lugar: [PDF](https://go.microsoft.com/fwlink/?linkid=2079451), [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
+Usa las cuatro sugerencias siguientes para trabajar donde quiera que estés.
+
+Descarga una infografía para obtener sugerencias para trabajar desde cualquier lugar: 
+
+[PDF](https://go.microsoft.com/fwlink/?linkid=2079451)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455)
 
 **¿Piensa en trabajar desde casa con regularidad?**
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo configurar un conector personalizado para importar datos de terceros desde orígenes de datos como Salesforce Chatter, Yahoo Messenger o Yammer.
-ms.openlocfilehash: adf6583f397296361e8f0cb6f12e7054436fa34f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e93ff765129296f62b43c93937701169bbf4b03
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928384"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164945"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Trabajar con un socio para archivar datos de terceros
 
@@ -70,7 +70,7 @@ En las secciones siguientes se muestra una lista de los partners de Microsoft (y
   
 [ArchiveSocial](#archivesocial)
   
-[Globanet](#globanet)
+[Veritas](#veritas)
   
 [OpenText](#opentext)
   
@@ -142,9 +142,9 @@ En las secciones siguientes se muestra una lista de los partners de Microsoft (y
     
 - Vimeo
   
-### <a name="globanet"></a>Globanet
+### <a name="veritas"></a>Veritas
 
-[Globanet admite](https://www.globanet.com) los siguientes orígenes de datos de terceros: 
+[Veritas](https://www.globanet.com) admite los siguientes orígenes de datos de terceros: 
   
 - AOL con cliente Pivot 
     
@@ -160,7 +160,7 @@ En las secciones siguientes se muestra una lista de los partners de Microsoft (y
     
 - Bloomberg Mail
     
-- Box
+- Cuadro
     
 - CipherCloud para Salesforce Chatter
     
@@ -502,7 +502,7 @@ Estos son los pasos para crear y configurar un buzón de datos de terceros para 
     
       - [Poner un buzón en retención por juicio](./create-a-litigation-hold.md)
     
-      - [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
+      - [Más información sobre las directivas y las etiquetas de retención](retention.md)
     
     - Habilitar el registro de auditoría de buzones de correo para el acceso de propietario, delegado y administrador al buzón de datos de terceros; vea [Enable mailbox auditing](enable-mailbox-auditing.md). Esto le permite auditar toda la actividad realizada por cualquier usuario que tenga acceso al buzón de datos de terceros.
 
@@ -516,7 +516,7 @@ El paso siguiente es configurar los buzones de usuario para que admitan los dato
     
     - [Poner un buzón en retención por juicio](./create-a-litigation-hold.md)
     
-    - [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
+    - [Más información sobre las directivas y las etiquetas de retención](retention.md)
     
     Como ya se ha indicado, al poner los buzones en retención, puede determinar durante cuánto tiempo deben retenerse los elementos del origen de datos de terceros o puede optar por retener los elementos indefinidamente.
 

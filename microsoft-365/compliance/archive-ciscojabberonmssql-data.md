@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector para importar y archivar datos de Cisco Jabber de Globanet en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
-ms.openlocfilehash: ae94c7c48a229f7257f16deee391aade3413da53
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Los administradores pueden configurar un conector para importar y archivar datos de Cisco Jabber de Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365. Después de archivar estos datos, puede usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar datos de terceros.
+ms.openlocfilehash: 7465d1f8d80d67e2a284200cbf1628178609b3c3
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924006"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164414"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-data"></a>Configurar un conector para archivar datos de Cisco Jabber
 
-Use un conector de Globanet en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos desde la plataforma Cisco Jabber a los buzones de usuario de su organización de Microsoft 365. Globanet le proporciona un conector [de Cisco Jabber](https://globanet.com/jabber/) que está configurado para capturar elementos de la base de datos MS SQL de Jabber, como mensajes de chat 1:1 y chats de grupo y, a continuación, importar esos elementos a Microsoft 365. El conector recupera datos de la base de datos MS SQL de Cisco Jabber, los procesa y convierte el contenido de la cuenta de Cisco Jabber de un usuario a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
+Use un conector Veritas en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos desde la plataforma Cisco Jabber a buzones de usuario de su organización de Microsoft 365. Veritas le proporciona un conector [de Cisco Jabber](https://globanet.com/jabber/) que está configurado para capturar elementos de la base de datos MS SQL de Jabber, como mensajes de chat 1:1 y chats de grupo y, a continuación, importar esos elementos a Microsoft 365. El conector recupera datos de la base de datos MS SQL de Cisco Jabber, los procesa y convierte el contenido de la cuenta de Cisco Jabber de un usuario a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 
 Una vez que los datos de Cisco Jabber se almacenan en buzones de usuario, puede aplicar características de cumplimiento de Microsoft 365 como retención por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector de Cisco Jabber para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
@@ -33,15 +33,15 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 1. Su organización trabaja con Cisco para configurar y configurar un Cisco Jabber en MS SQL base de datos.
 
-2. Una vez cada 24 horas, los elementos de Cisco Jabber se copian de la base de datos SQL MS al sitio de Globanet Merge1. El conector también convierte el contenido de los mensajes de chat a un formato de mensaje de correo electrónico.
+2. Una vez cada 24 horas, los elementos de Cisco Jabber se copian de la base de datos de SQL MS al sitio Veritas Merge1. El conector también convierte el contenido de los mensajes de chat a un formato de mensaje de correo electrónico.
 
-3. El conector de Cisco Jabber que crea en el centro de cumplimiento de Microsoft 365 se conecta al sitio de Globanet Merge1 todos los días y transfiere los elementos a una ubicación segura de Azure Storage en la nube de Microsoft.
+3. El conector de Cisco Jabber que cree en el centro de cumplimiento de Microsoft 365 se conecta al sitio veritas Merge1 todos los días y transfiere los elementos a una ubicación segura de Azure Storage en la nube de Microsoft.
 
 4. La asignación automática de usuarios como conector importa elementos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* del descrito en [el paso 3](#step-3-map-users-and-complete-the-connector-setup). Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **Cisco Jabber en MS SQL** en los buzones de usuario y los elementos del mensaje se importan a esa carpeta. El conector determina a qué buzón se importarán los elementos mediante el valor de la *propiedad Email.* Cada elemento de Cisco Jabber contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Crear una cuenta de Globanet Merge1 para conectores de Microsoft. Para crear esta cuenta, póngase en contacto [con el servicio de soporte al cliente de Globanet](https://globanet.com/ms-connectors-contact/). Iniciará sesión en esta cuenta al crear el conector en el paso 1.
+- Cree una cuenta de Veritas Merge1 para conectores de Microsoft. Para crear esta cuenta, póngase en contacto con [el servicio de soporte al cliente de Veritas](https://www.veritas.com/content/support/). Iniciará sesión en esta cuenta al crear el conector en el paso 1.
 
 - Configure una base de datos de SQL MS para recuperar elementos de Jabber de antes de crear el conector en el paso 1. Especificará la configuración de conexión de la base de datos de SQL MS al configurar el conector de Cisco Jabber en el paso 2. Para obtener más información, vea la Guía del usuario de [Merge1 Third-Party Connectors](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20MS%20SQL%20User%20Guide%20.pdf).
 
@@ -61,9 +61,9 @@ El primer paso es acceder a **los** conectores de datos en el centro de cumplimi
 
 5. Inicie sesión en su cuenta merge1 para configurar el conector.
 
-## <a name="step-2-configure-the-cisco-jabber-connector-on-the-globanet-merge1-site"></a>Paso 2: Configurar el conector de Cisco Jabber en el sitio de Globanet Merge1
+## <a name="step-2-configure-the-cisco-jabber-connector-on-the-veritas-merge1-site"></a>Paso 2: Configurar el conector de Cisco Jabber en el sitio de Veritas Merge1
 
-El segundo paso consiste en configurar cisco Jabber en el conector SQL MS en el sitio de Globanet Merge1. Para obtener información acerca de cómo configurar cisco Jabber en el conector SQL MS, vea [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20MS%20SQL%20User%20Guide%20.pdf).
+El segundo paso es configurar cisco jabber en el conector de SQL MS en el sitio de Veritas Merge1. Para obtener información acerca de cómo configurar cisco Jabber en el conector SQL MS, vea [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Cisco%20Jabber%20on%20MS%20SQL%20User%20Guide%20.pdf).
 
 Después de hacer clic en Guardar  & **finalizar**, se muestra la página Asignación de usuario en el asistente para conectores en el Centro de cumplimiento de Microsoft 365.
 

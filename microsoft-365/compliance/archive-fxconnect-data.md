@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector para importar y archivar datos de Globanet FX Connect en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: da6b0c82193fc76090ba9a324ea4c3d8f415063a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Los administradores pueden configurar un conector para importar y archivar datos de Veritas FX Connect en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
+ms.openlocfilehash: 1efbe8d6d8cecdd8394b565abad4d33c8610398f
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904210"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164266"
 ---
 # <a name="set-up-a-connector-to-archive-fx-connect-data"></a>Configurar un conector para archivar datos de FX Connect
 
-Use un conector de Globanet en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de la plataforma de colaboración FX Connect a los buzones de usuario de su organización de Microsoft 365. Globanet proporciona un [conector FX Connect](https://globanet.com/fx-connect/) configurado para capturar elementos de FX Connect e importarlos a Microsoft 365. El conector convierte el contenido de FX Connect, como operaciones, mensajes y otros detalles de la cuenta FX Connect de su organización, a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
+Use un conector Veritas en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de la plataforma de colaboración FX Connect a los buzones de usuario de su organización de Microsoft 365. Veritas proporciona un [conector FX Connect](https://globanet.com/fx-connect/) que está configurado para capturar elementos de FX Connect e importarlos a Microsoft 365. El conector convierte el contenido de FX Connect, como operaciones, mensajes y otros detalles de la cuenta FX Connect de su organización, a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 
 Después de almacenar los datos de FX Connect en buzones de usuario, puede aplicar características de cumplimiento de Microsoft 365 como retención por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector FX Connect para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
@@ -33,15 +33,15 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 1. Su organización funciona con FX Connect para configurar y configurar un sitio de FX Connect.
 
-2. Una vez cada 24 horas, los elementos de las cuentas FX Connect se copian en el sitio de Globanet Merge1. El conector también convierte los elementos de FX Connect a un formato de mensaje de correo electrónico.
+2. Una vez cada 24 horas, los elementos de las cuentas FX Connect se copian en el sitio Veritas Merge1. El conector también convierte los elementos de FX Connect a un formato de mensaje de correo electrónico.
 
-3. El conector FX Connect que crea en el centro de cumplimiento de Microsoft 365, se conecta al sitio de Globanet Merge1 todos los días y transfiere los elementos de FX Connect a una ubicación segura de Azure Storage en la nube de Microsoft.
+3. El conector FX Connect que crea en el Centro de cumplimiento de Microsoft 365, se conecta al sitio Veritas Merge1 todos los días y transfiere los elementos de FX Connect a una ubicación segura de Azure Storage en la nube de Microsoft.
 
 4. El conector importa elementos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* de la asignación automática de usuarios, tal como se describe en [el paso 3](#step-3-map-users-and-complete-the-connector-setup). Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **FX Connect** en los buzones de usuario y los elementos se importan a esa carpeta. El conector hace esto mediante el valor de la *propiedad Email.* Cada elemento de FX Connect contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Crear una cuenta de Globanet Merge1 para conectores de Microsoft.  Para crear una cuenta, póngase en contacto [con el servicio de soporte al cliente de Globanet](https://globanet.com/ms-connectors-contact). Iniciará sesión en esta cuenta al crear el conector en el paso 1.
+- Cree una cuenta de Veritas Merge1 para conectores de Microsoft.  Para crear una cuenta, póngase en contacto con [el Servicio de soporte al cliente de Veritas](https://globanet.com/ms-connectors-contact). Iniciará sesión en esta cuenta al crear el conector en el paso 1.
 
 - El usuario que crea el conector FX Connect en el paso 1 (y lo completa en el paso 3) debe estar asignado al rol De exportación de importación de buzones en Exchange Online. Este rol es necesario para agregar conectores en la página **Conectores de datos** del Centro de cumplimiento de Microsoft 365. De forma predeterminada, este rol no se asigna a un grupo de roles en Exchange Online. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
@@ -59,7 +59,7 @@ El primer paso es obtener acceso a la página **Conectores** de datos en el Cent
 
 5. Inicie sesión en su cuenta merge1 para configurar el conector.
 
-## <a name="step-2-configure-the-fx-connect-connector-on-the-globanet-merge1-site"></a>Paso 2: Configurar el conector FX Connect en el sitio de Globanet Merge1
+## <a name="step-2-configure-the-fx-connect-connector-on-the-veritas-merge1-site"></a>Paso 2: Configurar el conector FX Connect en el sitio de Veritas Merge1
 
 El segundo paso es configurar el conector FX Connect en el sitio Merge1. Para obtener información sobre cómo configurar el conector FX Connect, vea [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20FX%20Connect%20User%20Guide%20.pdf).
 

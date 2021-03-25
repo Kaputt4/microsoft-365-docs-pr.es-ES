@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Ya sea que agregue nuevas soluciones al centro de cumplimiento, actualice las características existentes en función de sus comentarios o implemente documentación actualizada y actualizada, Microsoft 365 le ayuda a mantenerse al tanto del panorama de cumplimiento en constante cambio. Descubra lo que hemos estado haciendo hasta este mes.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ed29ad5186972f56609a596d88a48c7c460f295f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c695bc2632e766eb6f14c4e9f7eabbbddff66fd2
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905862"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164979"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novedades de Cumplimiento de Microsoft 365
 
@@ -33,7 +33,7 @@ Ya sea agregar nuevas soluciones al centro de cumplimiento de [Microsoft 365,](m
 > Algunas características de cumplimiento se implantan a diferentes velocidades para nuestros clientes. Si aún no ve una característica, intente agregarse a la [versión dirigida](/office365/admin/manage/release-options-in-office-365).
 
 > [!TIP]
-> ¿Te interesa lo que sucede en otros centros de administración? Consulte estos artículos:<br>[Novedades del Centro de administración de Microsoft 365](/office365/admin/whats-new-in-preview)<br>[Novedades del Centro de administración de SharePoint](/sharepoint/what-s-new-in-admin-center)<br>[Novedades de Microsoft 365 Defender](../security/mtp/whats-new.md)<br><br>
+> ¿Te interesa lo que sucede en otros centros de administración? Consulte estos artículos:<br>[Novedades del Centro de administración de Microsoft 365](/office365/admin/whats-new-in-preview)<br>[Novedades del Centro de administración de SharePoint](/sharepoint/what-s-new-in-admin-center)<br>[Novedades de Microsoft 365 Defender](../security/defender/whats-new.md)<br><br>
 Y visite la Guía básica de [Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) para obtener información sobre las características de Microsoft 365 que se iniciaron, se están implementando, están en desarrollo, se han cancelado o publicado anteriormente.
 
 ## <a name="january-2021"></a>Enero de 2021
@@ -78,7 +78,7 @@ Flujo de trabajo y funcionalidad mejorados para [agregar custodios](add-custodia
 
 ### <a name="data-connectors"></a>Conectores de datos
 
-[Se han lanzado cuatro nuevos conectores de Globanet:](archiving-third-party-data.md#third-party-data-connectors)Redtail Speak, Salesforce Chatter, ServiceNow y Yieldbroker.
+[Se han lanzado cuatro nuevos conectores de Veritas:](archiving-third-party-data.md#third-party-data-connectors)Redtail Speak, Salesforce Chatter, ServiceNow y Yieldbroker.
 
 ### <a name="encryption"></a>Cifrado
 
@@ -122,7 +122,7 @@ Para facilitar la administración del contenido cifrado en el flujo de trabajo d
 
 ### <a name="data-connectors"></a>Conectores de datos
 
-[Cinco nuevos conectores de Globanet en versión preliminar](archiving-third-party-data.md#third-party-data-connectors). Los nuevos conectores incluyen Reuters Dealing, Reuters FX, CellTrust, XIP, MS genéricos SQL base de datos.
+[Cinco nuevos conectores Veritas en versión preliminar](archiving-third-party-data.md#third-party-data-connectors). Los nuevos conectores incluyen Reuters Dealing, Reuters FX, CellTrust, XIP, MS genéricos SQL base de datos.
 
 ### <a name="retention-labels-disposition-review"></a>Etiquetas de retención (revisión de disposición)
 
@@ -169,14 +169,14 @@ Vea el vídeo siguiente para obtener información sobre cómo el Administrador d
 
 ### <a name="data-connectors"></a>Conectores de datos
 
-- [Nuevos conectores de datos de terceros](archiving-third-party-data.md#third-party-data-connectors). 25 nuevos conectores de datos, incluidos 14 conectores de Globanet y 8 de Telemessage.
+- [Nuevos conectores de datos de terceros](archiving-third-party-data.md#third-party-data-connectors). 25 nuevos conectores de datos, incluidos 14 conectores de Veritas y 8 de Telemessage.
 - [Conector de badging físico](import-physical-badging-data.md). Importe datos de error físicos, como los eventos de acceso físico sin procesar de los empleados o las alarmas de acceso físico generadas por el sistema de badging de su organización. Algunos ejemplos incluyen entradas a edificios, salas de servidores o centros de datos. La solución de administración de riesgos insider puede usar los datos de pérdida física para ayudar a proteger su organización de actividades malintencionadas o robo de datos dentro de la organización.
 
 ### <a name="insider-risk-management"></a>Administración de riesgos internos
 
 - [Integración de Microsoft Teams](insider-risk-management-settings.md#microsoft-teams-preview). Cuando la integración de Teams está activada en la configuración de riesgos de insider, puede coordinar y colaborar con otras partes interesadas en Teams en tareas como compartir y almacenar datos de forma segura relacionados con casos individuales, realizar un seguimiento y revisar las actividades de respuesta de analistas e investigadores, etc.
 - [Flujos de Power Automate](insider-risk-management-settings.md#power-automate-flows-preview). Configure flujos para automatizar tareas importantes para casos y usuarios, como recuperar información de usuario, alerta y caso para compartir con las partes interesadas y otras aplicaciones, automatizar acciones como publicar en notas de caso y mucho más.
-- [Explorador de actividades](insider-risk-management-alerts.md#activity-explorer-preview). Disponible al revisar alertas, el explorador de actividades proporciona a los investigadores y analistas una herramienta analítica completa para profundizar en cada alerta. Revise rápidamente una escala de tiempo de actividad de riesgo detectada e identifique y filtre todas las actividades de riesgo asociadas con alertas.
+- [Explorador de actividad](insider-risk-management-alerts.md#activity-explorer-preview). Disponible al revisar alertas, el explorador de actividades proporciona a los investigadores y analistas una herramienta analítica completa para profundizar en cada alerta. Revise rápidamente una escala de tiempo de actividad de riesgo detectada e identifique y filtre todas las actividades de riesgo asociadas con alertas.
 
 ### <a name="retention-policies-and-retention-labels"></a>Directivas de retención y etiquetas de retención
 
@@ -200,7 +200,7 @@ Esta nueva funcionalidad se incluye en las siguientes características:
 > [!NOTE]
 > Para todas las características, si proporciona al menos 30 respuestas de comentarios, crearemos una versión reentrenada de ese clasificador que pueda revisar. Si hay mejoras, puede volver a publicar el clasificador.
 
-- [Clasificadores entrenables](classifier-learn-about.md#retraining-classifiers). Para mejorar la precisión de los clasificadores publicados, puede proporcionar comentarios sobre si los elementos detectados coinciden con el clasificador.
+- [Clasificadores que se pueden entrenar](classifier-learn-about.md#retraining-classifiers). Para mejorar la precisión de los clasificadores publicados, puede proporcionar comentarios sobre si los elementos detectados coinciden con el clasificador.
 - [Cumplimiento de comunicaciones](classifier-how-to-retrain-comms-compliance.md). La nueva **acción Mejorar corrección** de clasificación le permite proporcionar comentarios sobre si un elemento de una alerta de cumplimiento de comunicación coincide con el clasificador configurado en la directiva de cumplimiento de comunicaciones.
 - [Explorador de contenido](classifier-how-to-retrain-content-explorer.md). Si configura una directiva de etiquetado automático de retención para aplicar automáticamente etiquetas a mensajes de correo electrónico que coincidan con clasificadores capacitados, puede usar el explorador de contenido para revisar los elementos etiquetados y proporcionar comentarios sobre si los elementos coinciden con el clasificador.
 

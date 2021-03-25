@@ -22,14 +22,14 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo mover su empresa a Microsoft 365 Empresa Premium desde Office 365 E3.
-ms.openlocfilehash: f655037891bf8ec42e7b927256025c89c9354e98
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3f9fd70b2d31b32027981e638de249d92e98ea08
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912950"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164541"
 ---
-# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migración de Office 365 E3 a Microsoft 365 Empresa Premium 
+# <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migración de Office 365 E3 a Microsoft 365 Empresa Premium
 
 Microsoft 365 Empresa Premium tiene todo lo que necesita para su pequeña empresa, combinando las mejores aplicaciones de productividad basadas en la nube con una administración y seguridad de dispositivos sencillas. Si actualmente tiene una suscripción a Office 365 E3, pero no tiene más de 300 empleados, considere la posibilidad de cambiar a Microsoft 365 Empresa Premium para características de seguridad adicionales.
 
@@ -42,19 +42,19 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Empresa Premium y 
 | Característica    | Compatibilidad con Microsoft 365 Empresa Premium    | Compatibilidad con Office 365 E3 | 
 |:-------|:-----|:-----|
 | **Local**        | | | 
-| Aplicaciones de Office<sup>1</sup>    | Aplicaciones de Microsoft 365 para negocios    | Aplicaciones de Microsoft 365 para empresas | 
+| Aplicaciones de Office<sup>1</sup>    | Aplicaciones de Microsoft 365 para negocios    | Aplicaciones de Microsoft 365 para empresas | 
 | **Aplicaciones de productividad en la nube**        | | | 
 | Exchange Online y Outlook    | Límite de almacenamiento de 50 GB por buzón y límite Archivado de Exchange Online    | Límite de almacenamiento de 100 GB por buzón y límite Archivado de Exchange Online | 
 | Teams    | ![Incluido con Microsoft 365 Empresa Premium](../media/check-mark.png)    | ![Incluido con Office 365 E3](../media/check-mark.png) | 
 | OneDrive para la Empresa    | Límite de almacenamiento de 1 TB por usuario    | Ilimitado | 
 | Yammer, SharePoint Online, Planner, Stream    | ![Incluido con Microsoft 365 Empresa Premium](../media/check-mark.png)    | ![Incluido con Office 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![Incluido con Microsoft 365 Empresa Premium](../media/check-mark.png)    | ![Incluido con Office 365 E3](../media/check-mark.png) | 
-| Administrador de clientes de Outlook, MileIQ    | ![Incluido con Microsoft 365 Empresa Premium](../media/check-mark.png)    | | 
+| Outlook Customer Manager    | ![Incluido con Microsoft 365 Empresa Premium](../media/check-mark.png)    | | 
 | **Protección contra amenazas**        | | | 
 | Defender para Office 365 Plan 1 | ![Incluido con Microsoft 365 Empresa Premium](../media/check-mark.png)    | No se incluye, pero se puede agregar en | 
 | **Administración de identidades**        | | | 
 | Restablecimiento de contraseñas de autoservicio para cuentas híbridas de Azure Active Directory (Azure AD), autenticación multifactor (MFA) de Azure AD, acceso condicional, escritura de contraseña para identidades locales|     ![Incluido con Microsoft 365 Empresa Premium](../media/check-mark.png)    |  | 
-| **Datos de administración de dispositivos y aplicaciones**        | | |
+| **Administración de aplicaciones y dispositivos**        | | |
 | Microsoft Intune, Windows AutoPilot|     ![Incluido con Microsoft 365 Empresa Premium](../media/check-mark.png)    |  |
 | Activación en equipos compartidos|     ![Incluido con Microsoft 365 Empresa Premium](../media/check-mark.png)    | ![Incluido con Office 365 E3](../media/check-mark.png)| 
 | Derechos de actualización a Windows 10 Pro desde licencias de Win 7/8.1 Pro|     ![Incluido con Microsoft 365 Empresa Premium](../media/check-mark.png)    || 
@@ -122,7 +122,7 @@ Microsoft 365 Empresa Premium tiene un límite de almacenamiento de 50 GB, ya qu
 
 ### <a name="threat-protection"></a>Protección contra amenazas
 
-Después de migrar a Microsoft 365 Empresa Premium, tiene Defender para Office 365. Vea [Microsoft Defender para Office 365](../security/office-365-security/office-365-atp.md) para obtener información general. Para configurar, vea [Configurar](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)vínculos [seguros,](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)configurar datos adjuntos seguros y configurar la protección contra suplantación de identidad en Defender para [Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
+Después de migrar a Microsoft 365 Empresa Premium, tiene Defender para Office 365. Vea [Microsoft Defender para Office 365](../security/defender-365-security/defender-for-office-365.md) para obtener información general. Para configurar, vea [Configurar](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)vínculos [seguros,](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)configurar datos adjuntos seguros y configurar la protección contra suplantación de identidad en Defender para [Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 

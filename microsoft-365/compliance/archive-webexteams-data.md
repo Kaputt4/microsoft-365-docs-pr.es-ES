@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector para importar y archivar datos del conector de Webex Teams de Globanet en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: d284ea9688af325d95b9e2b6d5fc455acc5fca68
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Los administradores pueden configurar un conector para importar y archivar datos del conector de Webex Teams de Veritas en Microsoft 365. Este conector le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
+ms.openlocfilehash: 654ca53fd4cd7c6091ff74360545ba335f753ffd
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920814"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163905"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data"></a>Configurar un conector para archivar datos de Webex Teams
 
-Use un conector de Globanet en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de Webex Teams a buzones de usuario de su organización de Microsoft 365. Globanet proporciona un conector [de Webex Teams](https://globanet.com/webex-teams/) configurado para capturar elementos de comunicación de Webex Teams e importarlos a Microsoft 365. El conector convierte el contenido de Webex Teams, como chats 1:1, conversaciones de grupo, conversaciones de canal y datos adjuntos de la cuenta de Webex Teams de la organización, a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
+Use un conector Veritas en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos de Webex Teams a buzones de usuario de su organización de Microsoft 365. Veritas proporciona un conector [de Webex Teams](https://globanet.com/webex-teams/) configurado para capturar elementos de comunicación de Webex Teams e importarlos a Microsoft 365. El conector convierte el contenido de Webex Teams, como chats 1:1, conversaciones de grupo, conversaciones de canal y datos adjuntos de la cuenta de Webex Teams de la organización, a un formato de mensaje de correo electrónico y, a continuación, importa esos elementos al buzón del usuario en Microsoft 365.
 
 Una vez que los datos de Webex Teams se almacenan en buzones de usuario, puede aplicar características de cumplimiento de Microsoft 365 como retención por juicio, exhibición de documentos electrónicos, directivas de retención y etiquetas de retención y cumplimiento de comunicaciones. El uso de un conector de Webex Teams para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
@@ -33,15 +33,15 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 1. Su organización trabaja con Webex Teams para configurar y configurar un sitio de Webex Teams.
 
-2. Una vez cada 24 horas, los elementos de Webex Teams se copian en el sitio de Globanet Merge1. El conector también convierte los elementos de Webex Teams a un formato de mensaje de correo electrónico.
+2. Una vez cada 24 horas, los elementos de Webex Teams se copian en el sitio Veritas Merge1. El conector también convierte los elementos de Webex Teams a un formato de mensaje de correo electrónico.
 
-3. El conector de Webex Teams que crea en el Centro de cumplimiento de Microsoft 365, se conecta a Globanet Merge1 todos los días y transfiere los elementos de Webex Teams a una ubicación segura de Azure Storage en la nube de Microsoft.
+3. El conector de Webex Teams que crea en el centro de cumplimiento de Microsoft 365, se conecta a Veritas Merge1 todos los días y transfiere los elementos de Webex Teams a una ubicación segura de Azure Storage en la nube de Microsoft.
 
 4. El conector importa elementos a los buzones de usuarios específicos mediante el valor de la propiedad *Email* de la asignación automática de usuarios, tal como se describe en [el paso 3](#step-3-map-users-and-complete-the-connector-setup). Se crea una subcarpeta en la carpeta Bandeja de entrada denominada **Webex Teams** en los buzones de usuario y los elementos se importan a esa carpeta. El conector hace esto mediante el valor de la *propiedad Email.* Cada elemento de Webex Teams contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del elemento.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Crear una cuenta de Globanet Merge1 para conectores de Microsoft. Para crear esta cuenta, póngase en contacto [con el servicio de soporte al cliente de Globanet](https://globanet.com/ms-connectors-contact). Iniciará sesión en esta cuenta al crear el conector en el paso 1.
+- Cree una cuenta de Veritas Merge1 para conectores de Microsoft. Para crear esta cuenta, póngase en contacto con [el servicio de soporte al cliente de Veritas](https://globanet.com/ms-connectors-contact). Iniciará sesión en esta cuenta al crear el conector en el paso 1.
 
 - Cree una aplicación para [https://developer.webex.com/](https://developer.webex.com) capturar datos de su cuenta de Webex Teams. Para obtener instrucciones paso a paso sobre cómo crear la aplicación, consulte [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Webex%20Teams%20User%20Guide%20.pdf)
 
@@ -63,7 +63,7 @@ El primer paso es obtener acceso a **los conectores de datos** y configurar el c
 
 5. Inicie sesión en su cuenta merge1 para configurar el conector.
 
-## <a name="step-2-configure-the-webex-teams-connector-on-the-globanet-merge1-site"></a>Paso 2: Configurar el conector de Webex Teams en el sitio de Globanet Merge1
+## <a name="step-2-configure-the-webex-teams-connector-on-the-veritas-merge1-site"></a>Paso 2: Configurar el conector de Webex Teams en el sitio Veritas Merge1
 
 El segundo paso es configurar el conector de Webex Teams en el sitio Merge1. Para obtener información sobre cómo configurar el conector de Webex Teams, vea [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Webex%20Teams%20User%20Guide%20.pdf).
 
