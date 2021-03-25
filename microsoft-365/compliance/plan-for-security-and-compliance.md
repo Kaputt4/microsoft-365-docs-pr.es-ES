@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Esta página de aterrizaje proporciona vínculos e información de planeación para la seguridad y el cumplimiento en Office 365.
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90f4083bdf38f4b1390ee31d0853ad65e3fe236f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3e5e0f5f13511e0890a69c48ab7738f2b1ebab60
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051712"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198063"
 ---
 # <a name="plan-for-security-amp-compliance"></a>Planear el cumplimiento de &amp; la seguridad
 
@@ -46,7 +46,7 @@ Proteger el acceso a los datos y servicios de Microsoft 365 es fundamental para 
   
 - [Proteger el acceso a datos y servicios de Office 365](protect-access-to-data-and-services.md)
     
-- [Directivas y configuraciones de correo electrónico seguros](../security/defender-365-security/secure-email-recommended-policies.md)
+- [Directivas y configuraciones de correo electrónico seguros](../security/office-365-security/secure-email-recommended-policies.md)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Más idiomas](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -62,15 +62,15 @@ El Centro de cumplimiento de seguridad le ofrece una única vista de los control
   
 - [Ir al Centro de &amp; cumplimiento de seguridad](./microsoft-365-compliance-center.md)
     
-- [Permisos en el Centro de &amp; seguridad y cumplimiento](~/security/defender-365-security/protect-against-threats.md)
+- [Permisos en el Centro de &amp; seguridad y cumplimiento](~/security/office-365-security/protect-against-threats.md)
     
-- [Proporcionar a los usuarios acceso al Centro de &amp; seguridad y cumplimiento](~/security/defender-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [Proporcionar a los usuarios acceso al Centro de &amp; seguridad y cumplimiento](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>Paso 6: Usar escenarios de seguridad de extremo a extremo como puntos de partida
 
 Use estas configuraciones recomendadas como punto de partida para la escala empresarial o escenarios de seguridad de acceso sofisticados.
   
-- [Directivas y configuraciones de correo electrónico seguros](../security/defender-365-security/secure-email-recommended-policies.md)
+- [Directivas y configuraciones de correo electrónico seguros](../security/office-365-security/secure-email-recommended-policies.md)
     
 - [Contoso en la nube de Microsoft](../enterprise/contoso-case-study.md)
     

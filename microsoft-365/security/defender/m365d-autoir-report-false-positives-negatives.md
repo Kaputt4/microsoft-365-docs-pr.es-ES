@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 8658b08f0d3948d6d23486ec885486e8bbfdf273
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 851fd05f0fec4b8d113e515783092eed0114db0f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068912"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199118"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Controlar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
@@ -48,7 +48,7 @@ En las secciones siguientes se describe cómo realizar estas tareas.
 
 |Elemento perdido o detectado incorrectamente |Servicio  |Qué hacer  |
 |---------|---------|---------|
-|- Mensaje de correo electrónico <br/>- Datos adjuntos de correo electrónico <br/>- DIRECCIÓN URL en un mensaje de correo electrónico<br/>- DIRECCIÓN URL en un archivo de Office      |[Microsoft Defender para Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)        |[Enviar correo no deseado, phishing, direcciones URL y archivos sospechosos a Microsoft para su análisis](../defender-365-security/admin-submission.md)         |
+|- Mensaje de correo electrónico <br/>- Datos adjuntos de correo electrónico <br/>- DIRECCIÓN URL en un mensaje de correo electrónico<br/>- DIRECCIÓN URL en un archivo de Office      |[Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Enviar correo no deseado, phishing, direcciones URL y archivos sospechosos a Microsoft para su análisis](../office-365-security/admin-submission.md)         |
 |Archivo o aplicación en un dispositivo    |[Microsoft Defender para punto de conexión](/windows/security/threat-protection)         |[Enviar un archivo a Microsoft para análisis de malware](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Ajustar una alerta para evitar que los falsos positivos se repitan
@@ -70,7 +70,7 @@ Si se ha realizado una acción de corrección en una entidad (como un dispositiv
 > [!TIP]
 > Vea [Deshacer acciones completadas](m365d-autoir-actions.md#undo-completed-actions).
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Ver los detalles y los resultados de una investigación automatizada](m365d-autoir-results.md)
 - [Búsqueda proactiva de amenazas con búsqueda avanzada en Microsoft 365 Defender](advanced-hunting-overview.md)

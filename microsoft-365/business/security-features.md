@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Obtenga información sobre las características de seguridad que vienen con Microsoft 365 Empresa Premium para ayudar a proteger sus datos en equipos, teléfonos y tabletas.
-ms.openlocfilehash: d641fc66e27f3c5e0a7c8609e4fa25fac93d8561
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f04a998c74128edac306167617e073c412fce2ea
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052262"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198419"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Características de seguridad y cumplimiento de Microsoft 365 Empresa Premium
 
@@ -63,7 +63,7 @@ Puedes administrar muchas de las características de seguridad de Microsoft 365 
 
 Las características avanzadas de Microsoft 365 Empresa Premium están disponibles para ayudarle a proteger su empresa frente a amenazas cibernéticos y proteger la información confidencial.
   
-- **[Microsoft Defender para Office 365](../security/defender-365-security/defender-for-office-365.md)**
+- **[Microsoft Defender para Office 365](../security/office-365-security/defender-for-office-365.md)**
     
     Microsoft Defender para Office 365 ayuda a proteger su empresa contra ataques sofisticados de suplantación de identidad (phishing) y ransomware diseñados para poner en peligro la información de los empleados o clientes. Entre las características se incluyen:
     

@@ -22,12 +22,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 02/08/2021
-ms.openlocfilehash: 3d278c7fd06b2dd14bd9a8c0dcbe639d3c911828
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 05208dd8ba893d65db50430861ad5dd5ad9d34fb
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068909"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198974"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Detalles y resultados de una investigación automatizada
 
@@ -42,7 +42,7 @@ Con Microsoft 365 Defender, cuando se ejecuta una investigación automatizada, l
 
 ## <a name="new-unified-investigation-page"></a>(¡NUEVO!) Página de investigación unificada
 
-La página de investigación se actualizó recientemente para incluir información en los dispositivos, el correo electrónico y el contenido de colaboración. La nueva página de investigación unificada define un idioma común y proporciona una experiencia unificada para las investigaciones automáticas en [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para Endpoint y Microsoft Defender para [Office 365](../defender-365-security/defender-for-office-365.md). Para acceder a la página de investigación unificada, seleccione el vínculo en el banner amarillo que verá en:
+La página de investigación se actualizó recientemente para incluir información en los dispositivos, el correo electrónico y el contenido de colaboración. La nueva página de investigación unificada define un idioma común y proporciona una experiencia unificada para las investigaciones automáticas en [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para Endpoint y Microsoft Defender para [Office 365](../office-365-security/defender-for-office-365.md). Para acceder a la página de investigación unificada, seleccione el vínculo en el banner amarillo que verá en:
 - Cualquier página de investigación en el Centro de seguridad y & office 365 ( [https://protection.office.com](https://protection.office.com) )
 - Cualquier página de investigación en el Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
 - Cualquier incidente o experiencia del Centro de acción en el centro de seguridad mejorado de Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) )
@@ -104,7 +104,7 @@ En la vista de detalles de la investigación, puede ver información en las pest
 |**Log**    | Proporciona una vista cronológica y detallada de todas las acciones de investigación realizadas después de desencadenar una alerta.|
 | **Acciones pendientes** | Muestra los elementos que necesitan aprobación para continuar. Vaya al Centro de acciones ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) para aprobar acciones pendientes. |
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 - [Aprobar o rechazar acciones de corrección tras una investigación automatizada](m365d-autoir-actions.md)
 - [Más información sobre las acciones de corrección](m365d-remediation-actions.md)

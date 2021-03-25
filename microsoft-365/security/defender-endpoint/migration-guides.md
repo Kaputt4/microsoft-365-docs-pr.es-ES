@@ -17,12 +17,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 09/24/2020
 ms.technology: mde
-ms.openlocfilehash: a56153a9c4076b1072f6d3fc5296f9e12dc0cc4d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 0f9508038dd49e6c2d14d8e33a4fd40dfdfe83cb
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186598"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198662"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>Cambiar a Microsoft Defender para endpoint y Antivirus de Microsoft Defender
 
@@ -55,5 +55,5 @@ Háganos saber lo que piensa. Envíe sus comentarios en la parte inferior de la 
 ## <a name="see-also"></a>Vea también
 
 - [Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection)
-- [Microsoft Defender para Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp)
+- [Microsoft Defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 - [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection?) 

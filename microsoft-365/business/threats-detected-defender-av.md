@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Obtén información sobre cómo Antivirus de Microsoft Defender protege tus dispositivos Windows de amenazas de software, como virus, malware y spyware.
-ms.openlocfilehash: 5fe55817018eeae49e6e41c95d93006b6f05ece0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7c5d000e2a8c30e17d1f890cef69fe88beed75bb
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052223"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198368"
 ---
 # <a name="threats-detected-by-microsoft-defender-antivirus"></a>Amenazas detectadas por Antivirus de Microsoft Defender
 
@@ -89,4 +89,4 @@ Para obtener más información sobre las diferentes amenazas, visite el sitio am
 [Cómo activar y usar Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus) de Microsoft Defender desde la aplicación seguridad de Windows (artículo)\
 [Cómo activar antivirus de Microsoft Defender mediante la directiva de grupo](/mem/intune/user-help/turn-on-defender-windows#turn-on-windows-defender) (artículo)\
 [Cómo actualizar las definiciones de antivirus](/mem/intune/user-help/turn-on-defender-windows#update-your-antivirus-definitions) (artículo)\
-[Cómo enviar malware y no malware a Microsoft para su análisis](/microsoft-365/security/defender-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) (artículo)
+[Cómo enviar malware y no malware a Microsoft para su análisis](/microsoft-365/security/office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis) (artículo)

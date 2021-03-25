@@ -6,8 +6,6 @@
   items:
     - name: Probar o comprar Microsoft 365
       href: try-or-buy-microsoft-365.md
-    - name: Ampliar el periodo de prueba
-      href: extend-your-trial.md
     - name: Comprar o administrar complementos
       href: buy-or-edit-an-add-on.md
     - name: Ayuda empresarial para Microsoft 365

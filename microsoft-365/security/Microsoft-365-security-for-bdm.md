@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: los escenarios de amenazas y ataques más comunes que enfrentan actualmente las organizaciones para sus entornos de Microsoft 365 y las acciones recomendadas para mitigar estos riesgos.
-ms.openlocfilehash: 328bd4c079531ee57b41422fd2d3f2c53ef8dc18
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 504a2d4628c265b387941e2e4de0461f7ac3be9b
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051095"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199046"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business Decision Makers (BDMs)
 
@@ -70,7 +70,7 @@ Entre las amenazas conocidas se incluyen malware, cuentas comprometidas y suplan
 
 |Recomendación  |E3  |E5  |
 |---------|---------|---------|
-|**Configurar la autenticación multifactor y usar directivas de acceso condicional recomendadas, incluidas** las directivas de riesgo de inicio de sesión. Microsoft recomienda y ha probado un conjunto de directivas que funcionan conjuntamente para proteger todas las aplicaciones en la nube, incluidos los servicios de Office 365 y Microsoft 365. Consulta [Configuración de acceso de identidad y dispositivo.](./defender-365-security/microsoft-365-policies-configurations.md) | |![marca de verificación verde](../media/green-check-mark.png)|
+|**Configurar la autenticación multifactor y usar directivas de acceso condicional recomendadas, incluidas** las directivas de riesgo de inicio de sesión. Microsoft recomienda y ha probado un conjunto de directivas que funcionan conjuntamente para proteger todas las aplicaciones en la nube, incluidos los servicios de Office 365 y Microsoft 365. Consulta [Configuración de acceso de identidad y dispositivo.](./office-365-security/microsoft-365-policies-configurations.md) | |![marca de verificación verde](../media/green-check-mark.png)|
 |**Requerir autenticación multifactor para todos los usuarios.** Si no tiene las licencias necesarias para implementar las directivas de acceso condicional recomendadas, como mínimo requiere autenticación multifactor para todos los usuarios.|![marca de verificación verde](../media/green-check-mark.png)|![marca de verificación verde](../media/green-check-mark.png)|
 |**Aumentar el nivel de protección contra malware en el correo**. El entorno de Office 365 o Microsoft 365 incluye protección contra malware, pero puede aumentar esta protección bloqueando los datos adjuntos con tipos de archivo que se usan habitualmente para malware.|![marca de verificación verde](../media/green-check-mark.png)|![marca de verificación verde](../media/green-check-mark.png)|
 |**Proteger el correo electrónico de ataques de suplantación de identidad dirigidos**. Si ha configurado uno o varios dominios personalizados para su entorno de Office 365 o Microsoft 365, puede configurar la protección contra suplantación de identidad de destino. La protección contra el phishing, que forma parte de Defender para Office 365, puede ayudar a proteger su organización de ataques de suplantación de identidad malintencionados y otros ataques de suplantación de identidad. Si no ha configurado un dominio personalizado, no es necesario hacerlo.| |![marca de verificación verde](../media/green-check-mark.png)|
@@ -116,7 +116,7 @@ Las capacidades de protección de información de Microsoft 365 pueden ayudarle 
 
 |Recomendación |E3|E5 |
 |---------|---------|---------|
-|**Revise y optimice el acceso condicional y las directivas** relacionadas para alinearse con los objetivos de una red de confianza cero. La protección contra amenazas conocidas incluye la implementación de un conjunto de [directivas recomendadas.](./defender-365-security/microsoft-365-policies-configurations.md) Revisa la implementación de estas directivas para asegurarte de proteger tus aplicaciones y datos contra los hackers que han obtenido acceso a tu red. Ten en cuenta que la directiva de protección de aplicaciones de Intune recomendada para Windows 10 habilita Windows Information Protection (WIP). WIP protege contra pérdidas accidentales de datos de la organización a través de aplicaciones y servicios, como correo electrónico, redes sociales y la nube pública. |         |![marca de verificación verde](../media/green-check-mark.png)|
+|**Revise y optimice el acceso condicional y las directivas** relacionadas para alinearse con los objetivos de una red de confianza cero. La protección contra amenazas conocidas incluye la implementación de un conjunto de [directivas recomendadas.](./office-365-security/microsoft-365-policies-configurations.md) Revisa la implementación de estas directivas para asegurarte de proteger tus aplicaciones y datos contra los hackers que han obtenido acceso a tu red. Ten en cuenta que la directiva de protección de aplicaciones de Intune recomendada para Windows 10 habilita Windows Information Protection (WIP). WIP protege contra pérdidas accidentales de datos de la organización a través de aplicaciones y servicios, como correo electrónico, redes sociales y la nube pública. |         |![marca de verificación verde](../media/green-check-mark.png)|
 |**Deshabilitar el reenvío de correo electrónico externo**. Los hackers que obtienen acceso al buzón de un usuario pueden robar el correo estableciendo el buzón para reenviar automáticamente el correo electrónico. Esto puede ocurrir incluso sin el reconocimiento del usuario. Puede evitar que esto suceda configurando una regla de flujo de correo.|![marca de verificación verde](../media/green-check-mark.png) |![marca de verificación verde](../media/green-check-mark.png)|
 |**Deshabilitar el uso compartido de calendario externo anónimo.** De forma predeterminada, se permite el uso compartido de calendario anónimo externo. [Deshabilitar el uso compartido de](/exchange/sharing/sharing-policies/modify-a-sharing-policy) calendarios para reducir posibles pérdidas de información confidencial.|![marca de verificación verde](../media/green-check-mark.png) |![marca de verificación verde](../media/green-check-mark.png)|
 |**Configurar directivas de prevención de pérdida de datos para datos confidenciales**. Cree una directiva de prevención de pérdida de datos en el Centro de cumplimiento de seguridad para detectar y proteger datos confidenciales, como números de tarjeta de crédito, números de seguridad social y &amp; números de cuenta bancaria. Microsoft 365 incluye muchos tipos de información confidencial predefinidos que puede usar en directivas de prevención de pérdida de datos. También puede crear sus propios tipos de información confidencial para datos confidenciales personalizados para su entorno. |![marca de verificación verde](../media/green-check-mark.png)|![marca de verificación verde](../media/green-check-mark.png)|

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteja el correo electrónico y los datos de su empresa frente a amenazas cibernéticas, como ransomware, phishing y datos adjuntos malintencionados. '
-ms.openlocfilehash: 7affa7a2adaa166861c2932ebe32177335236114
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e45130d101c6e730fd2d487f5f8898c7cd268ab8
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050683"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197856"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Principales 10 formas de proteger los planes de Microsoft 365 para empresas
 
@@ -132,7 +132,7 @@ El entorno de Microsoft 365 incluye protección contra malware, pero puede aumen
 
 6. Seleccione **Guardar.**
 
-Para obtener más información, vea [Protección contra malware en EOP](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-malware-protection).
+Para obtener más información, vea [Protección contra malware en EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-malware-protection).
 
 ## <a name="5-protect-against-ransomware"></a>5: Proteger contra ransomware
 <a name="ransomware"> </a>
@@ -254,7 +254,7 @@ Para crear una directiva contra suplantación de identidad en Defender para Offi
 
 4. En la página Anti-phishing, seleccione **+ Crear**. Se inicia un asistente que le permite definir la directiva contra suplantación de identidad.
 
-5. Especifique el nombre, la descripción y la configuración de la directiva como se recomienda en el siguiente gráfico. Para obtener más información, vea Learn [about anti-phishing policy in Microsoft Defender for Office 365 options.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/set-up-anti-phishing-policies)
+5. Especifique el nombre, la descripción y la configuración de la directiva como se recomienda en el siguiente gráfico. Para obtener más información, vea Learn [about anti-phishing policy in Microsoft Defender for Office 365 options.](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)
 
 6. Después de revisar la configuración, seleccione **Crear esta directiva** o **Guardar**, según corresponda.
 
@@ -270,7 +270,7 @@ Para crear una directiva contra suplantación de identidad en Defender para Offi
 |Aplicado a|Seleccione **El dominio del destinatario es**. En **Cualquiera de estos**, seleccione **Elegir**. Seleccione **+ Agregar**. Active la casilla situada junto al nombre del dominio, por ejemplo, contoso.com, en la lista y, a continuación, **seleccione Agregar**. Seleccione **Listo**.|
 |
 
-Para obtener más información, vea [Set up anti-phishing policies in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies).
+Para obtener más información, vea [Set up anti-phishing policies in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
 
 ## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: Proteger contra archivos adjuntos y archivos malintencionados con datos adjuntos seguros
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ Para crear una directiva de datos adjuntos seguros, vea [un breve vídeo de apre
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
 |
 
-Para obtener más información, vea [Set up anti-phishing policies in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies).
+Para obtener más información, vea [Set up anti-phishing policies in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
 
 ## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: Proteger contra ataques de suplantación de identidad con vínculos seguros
 <a name="phishingatp"> </a>
@@ -349,4 +349,4 @@ Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
 |
 
-Para obtener más información, vea [Vínculos seguros en Microsoft Defender para Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/atp-safe-links).
+Para obtener más información, vea [Vínculos seguros en Microsoft Defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links).

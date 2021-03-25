@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 25f1a177571862e92c502b584bbd51801141069a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8940d1dd370f804f8539bf4e753b1112d3c8d3bf
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076699"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198202"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -58,8 +58,8 @@ Para obtener más información acerca de los mensajes de correo electrónico ind
 ## <a name="supported-event-types"></a>Tipos de eventos admitidos
 En esta tabla se capturan eventos con los siguientes `ActionType` valores:
 
-- **Corrección manual:** un administrador realizó acciones manualmente en un mensaje de correo electrónico después de entregarlo al buzón de usuario. Esto incluye acciones realizadas manualmente a través del [Explorador de](../defender-365-security/threat-explorer.md) amenazas o aprobaciones de acciones de investigación y respuesta [automatizadas (AIR).](m365d-autoir-actions.md)
-- **PHISH ZAP:** la purga automática de hora cero [(ZAP)](../defender-365-security/zero-hour-auto-purge.md) tomó medidas en un correo electrónico de suplantación de identidad (phishing) después de la entrega.
+- **Corrección manual:** un administrador realizó acciones manualmente en un mensaje de correo electrónico después de entregarlo al buzón de usuario. Esto incluye acciones realizadas manualmente a través del [Explorador de](../office-365-security/threat-explorer.md) amenazas o aprobaciones de acciones de investigación y respuesta [automatizadas (AIR).](m365d-autoir-actions.md)
+- **PHISH ZAP:** la purga automática de hora cero [(ZAP)](../office-365-security/zero-hour-auto-purge.md) tomó medidas en un correo electrónico de suplantación de identidad (phishing) después de la entrega.
 - **ZAP de malware:** la purga automática de hora cero (ZAP) tomó medidas en un mensaje de correo electrónico encontrado que contiene malware después de la entrega.
 
 ## <a name="related-topics"></a>Temas relacionados

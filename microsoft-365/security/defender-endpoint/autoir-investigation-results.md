@@ -22,12 +22,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 02/02/2021
-ms.openlocfilehash: b66640736e9dc3835919e39d482b2d38b0c9dcc7
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 57a515fec2baabba7146959a43737771ef5c8cfe
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183686"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197774"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Detalles y resultados de una investigación automatizada
 
@@ -38,7 +38,7 @@ Con Microsoft Defender para [](automated-investigations.md) endpoint, cuando se 
 
 ## <a name="new-unified-investigation-page"></a>(¡NUEVO!) Página de investigación unificada
 
-La página de investigación se actualizó recientemente para incluir información en los dispositivos, el correo electrónico y el contenido de colaboración. La nueva página de investigación unificada define un idioma común y proporciona una experiencia unificada para las investigaciones automáticas en [Microsoft Defender](microsoft-defender-endpoint.md)  para Endpoint y Microsoft Defender para [Office 365](/microsoft-365/security/defender-365-security/office-365-atp). 
+La página de investigación se actualizó recientemente para incluir información en los dispositivos, el correo electrónico y el contenido de colaboración. La nueva página de investigación unificada define un idioma común y proporciona una experiencia unificada para las investigaciones automáticas en [Microsoft Defender](microsoft-defender-endpoint.md)  para Endpoint y Microsoft Defender para [Office 365](/microsoft-365/security/office-365-security/office-365-atp). 
 
 > [!TIP]
 > Para obtener más información sobre lo que está cambiando, vea [(¡NUEVO!) Página de investigación unificada](/microsoft-365/security/mtp/mtp-autoir-results).
@@ -93,7 +93,7 @@ En la vista de detalles de la investigación, puede ver información en las pest
 |**Log**    | Proporciona una vista cronológica y detallada de todas las acciones de investigación realizadas después de desencadenar una alerta.|
 | **Acciones pendientes** | Muestra los elementos que necesitan aprobación para continuar. Vaya al Centro de acciones ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) para aprobar acciones pendientes. |
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Revisar acciones de corrección tras una investigación automatizada](manage-auto-investigation.md)
 - [Ver y organizar la cola de Microsoft Defender para incidentes de extremo](view-incidents-queue.md)

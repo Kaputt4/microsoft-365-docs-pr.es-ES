@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 31928deddc2a504cc0b6c91af287e4977791c920
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1fd128a9b734606039438db1f6d9fbc36e93a3b9
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51073907"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199021"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para el punto de conexión para clientes del gobierno de ESTADOS UNIDOS
 
@@ -76,25 +76,25 @@ Se admiten las siguientes versiones del sistema operativo:
 Versión del sistema operativo | GCC | GCC High | DoD (VISTA PREVIA)
 :---|:---|:---|:---
 Windows 10, versión 20H2 (con [KB4586853](https://support.microsoft.com/help/4586853)) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
-Windows 10, versión 2004 (con [KB4586853](https://support.microsoft.com/help/4586853)) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Windows 10, versión 1909 (con [KB4586819](https://support.microsoft.com/help/4586819)) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Windows 10, versión 1903 (con [KB4586819](https://support.microsoft.com/help/4586819)) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Windows 10, versión 1809 (con [KB4586839](https://support.microsoft.com/help/4586839)) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Windows 10, versión 1803 (con [KB4598245](https://support.microsoft.com/help/4598245)) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Windows 10, versión 1709 | ![No](/security/defender-endpoint/images/svg/check-no)<br>Nota: No se admite | ![Sí ](/security/defender-endpoint/images/svg/check-yes) con [KB4499147](https://support.microsoft.com/help/4499147)<br>Nota: [En desuso,](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)actualice | ![No](/security/defender-endpoint/images/svg/check-no)<br>Nota: No se admite
-Windows 10, versión 1703 y versiones anteriores | ![No](/security/defender-endpoint/images/svg/check-no)<br>Nota: No se admite | ![No](/security/defender-endpoint/images/svg/check-no)<br>Nota: No se admite | ![No](/security/defender-endpoint/images/svg/check-no)<br>Nota: No se admite
-Windows Server 2019 (con [KB4586839](https://support.microsoft.com/help/4586839)) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2016 | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2012 R2 | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2008 R2 SP1 | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Windows 8.1 Enterprise | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Windows 8 Pro | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Windows 7 SP1 Enterprise | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Windows 7 SP1 Pro | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Linux | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo
-macOS | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo
-Android | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería
-iOS | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería
+Windows 10, versión 2004 (con [KB4586853](https://support.microsoft.com/help/4586853)) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Windows 10, versión 1909 (con [KB4586819](https://support.microsoft.com/help/4586819)) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Windows 10, versión 1903 (con [KB4586819](https://support.microsoft.com/help/4586819)) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Windows 10, versión 1809 (con [KB4586839](https://support.microsoft.com/help/4586839)) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Windows 10, versión 1803 (con [KB4598245](https://support.microsoft.com/help/4598245)) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Windows 10, versión 1709 | ![No](images/svg/check-no.svg)<br>Nota: No se admite | ![Sí ](images/svg/check-yes.svg) con [KB4499147](https://support.microsoft.com/help/4499147)<br>Nota: [En desuso,](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)actualice | ![No](images/svg/check-no.svg)<br>Nota: No se admite
+Windows 10, versión 1703 y versiones anteriores | ![No](images/svg/check-no.svg)<br>Nota: No se admite | ![No](images/svg/check-no.svg)<br>Nota: No se admite | ![No](images/svg/check-no.svg)<br>Nota: No se admite
+Windows Server 2019 (con [KB4586839](https://support.microsoft.com/help/4586839)) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Windows Server 2016 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Windows Server 2012 R2 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Windows 8.1 Enterprise | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Windows 8 Pro | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Windows 7 SP1 Enterprise | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Windows 7 SP1 Pro | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Linux | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo
+macOS | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo
+Android | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería
+iOS | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería
 
 > [!NOTE]
 > Cuando se especifica una revisión, debe implementarse antes de la incorporación del dispositivo para configurar Defender for Endpoint en el entorno correcto.
@@ -107,9 +107,9 @@ Las siguientes versiones del sistema operativo se admiten al [usar Azure Defende
 
 Versión del sistema operativo | GCC | GCC High | DoD (VISTA PREVIA)
 :---|:---|:---|:---
-Windows Server 2016 | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2012 R2 | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Windows Server 2008 R2 SP1 | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
+Windows Server 2016 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Windows Server 2012 R2 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Windows Server 2008 R2 SP1 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 
 <br>
 
@@ -147,24 +147,24 @@ Estas son las diferencias conocidas a partir de febrero de 2021:
 
 Nombre de la característica | GCC | GCC High | DoD (VISTA PREVIA)
 :---|:---|:---|:---
-Investigación y corrección automatizadas: respuesta en directo | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Investigación y corrección automatizadas: respuesta a alertas de Office 365 | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería
-Notificaciones de correo electrónico | ![No](/security/defender-endpoint/images/svg/check-no) Implementando | ![No](/security/defender-endpoint/images/svg/check-no) Implementando | ![No](/security/defender-endpoint/images/svg/check-no) Implementando
-Laboratorio de evaluación | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Administración y API: informe de estado y cumplimiento de dispositivos | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Administración y API: integración con productos de terceros | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo
-Administración y API: API de streaming | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo
-Administración y API: informe de protección contra amenazas | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Administración & vulnerabilidades de amenazas | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Análisis de amenazas | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Filtrado de contenido web | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo
-Integraciones: Azure Sentinel | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo
-Integraciones: Microsoft Cloud App Security | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería
-Integraciones: Administrador de cumplimiento de Microsoft | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería
-Integraciones: Microsoft Defender para la identidad | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería
-Integraciones: Microsoft Defender para Office 365 | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería
-Integraciones: DLP de punto de conexión de Microsoft | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería
-Integraciones: Microsoft Intune | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo
-Integraciones: Microsoft Power Automate & Azure Logic Apps | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo | ![No](/security/defender-endpoint/images/svg/check-no) En desarrollo
-Integraciones: Skype Empresarial / Teams | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes) | ![Sí](/security/defender-endpoint/images/svg/check-yes)
-Expertos en amenazas de Microsoft | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería | ![No](/security/defender-endpoint/images/svg/check-no) En el trabajo pendiente de ingeniería
+Investigación y corrección automatizadas: respuesta en directo | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Investigación y corrección automatizadas: respuesta a alertas de Office 365 | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería
+Notificaciones de correo electrónico | ![No](images/svg/check-no.svg) Implementando | ![No](images/svg/check-no.svg) Implementando | ![No](images/svg/check-no.svg) Implementando
+Laboratorio de evaluación | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Administración y API: informe de estado y cumplimiento de dispositivos | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Administración y API: integración con productos de terceros | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo
+Administración y API: API de streaming | ![Sí](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo
+Administración y API: informe de protección contra amenazas | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Administración & vulnerabilidades de amenazas | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Análisis de amenazas | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Filtrado de contenido web | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo
+Integraciones: Azure Sentinel | ![Sí](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo
+Integraciones: Microsoft Cloud App Security | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería
+Integraciones: Administrador de cumplimiento de Microsoft | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería
+Integraciones: Microsoft Defender para la identidad | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería
+Integraciones: Microsoft Defender para Office 365 | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería
+Integraciones: DLP de punto de conexión de Microsoft | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería
+Integraciones: Microsoft Intune | ![Sí](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo
+Integraciones: Microsoft Power Automate & Azure Logic Apps | ![Sí](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo
+Integraciones: Skype Empresarial / Teams | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Expertos en amenazas de Microsoft | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería

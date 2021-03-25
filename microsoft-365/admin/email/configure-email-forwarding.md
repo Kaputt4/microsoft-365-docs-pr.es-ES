@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Configurar el reenvío de correo electrónico a una o más cuentas de correo electrónico con Office 365.
-ms.openlocfilehash: cdefab3df59f1c57abbc221943b58c978ff582a9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d7c9a37a066bd53e541cf623c1953fb572827b61
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050719"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197868"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Configurar el reenvío de correo electrónico en Microsoft 365
 
@@ -42,7 +42,7 @@ ms.locfileid: "51050719"
 Como administrador de una organización, es posible que tenga requisitos de la compañía para configurar el reenvío de correo electrónico para el buzón de un usuario. El reenvío de correo electrónico le permite reenviar los mensajes del buzón de correo enviados al buzón de un usuario dentro o fuera de la organización.
 
 > [!IMPORTANT]
-> Puede usar las directivas del filtro de correo no deseado saliente para controlar el reenvío automático a destinatarios externos. Para obtener más información, consulte [Controlar el reenvío automático de correo electrónico externo en Microsoft 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/external-email-forwarding?view=o365-worldwide&preserve-view=true#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
+> Puede usar las directivas del filtro de correo no deseado saliente para controlar el reenvío automático a destinatarios externos. Para obtener más información, consulte [Controlar el reenvío automático de correo electrónico externo en Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide&preserve-view=true#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
 
 ## <a name="configure-email-forwarding"></a>Configurar el reenvío de correo electrónico
 

@@ -14,18 +14,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Crear un entorno de Microsoft 365 para probar el acceso de dispositivos e identidades.
-ms.openlocfilehash: e90c27edbf4ad5a78c337bf2488956ce82a1ec3e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5a9e9ef9ea6b8f6dc80aa7fea225f3573b8fcadc
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051323"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197880"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Acceso de dispositivos e identidades en el entorno de prueba de Microsoft 365
 
 *Esta Guía del laboratorio de pruebas solo se puede usar para Microsoft 365 para entornos de prueba empresariales.*
 
-[Las configuraciones de acceso](../security/defender-365-security/microsoft-365-policies-configurations.md) a dispositivos y identidades son un conjunto de configuraciones recomendadas y directivas de acceso condicional para proteger el acceso a todos los servicios integrados con Azure Active Directory (Azure AD).
+[Las configuraciones de acceso](../security/office-365-security/microsoft-365-policies-configurations.md) a dispositivos y identidades son un conjunto de configuraciones recomendadas y directivas de acceso condicional para proteger el acceso a todos los servicios integrados con Azure Active Directory (Azure AD).
 
 Para crear un entorno de prueba que tenga las configuraciones comunes de acceso a dispositivos y identidades:
 
@@ -35,7 +35,7 @@ Para crear un entorno de prueba que tenga las configuraciones comunes de acceso 
   - [Sincronización de hash de contraseña (PHS)](phs-prereqs-m365-test-environment.md)
   - [Autenticación de paso a través (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. Use [Directivas comunes de acceso](../security/defender-365-security/identity-access-policies.md) a dispositivos y identidades para configurar las directivas que se basen en los requisitos previos configurados para el entorno de prueba y explorar y comprobar la protección de identidades y dispositivos.
+2. Use [Directivas comunes de acceso](../security/office-365-security/identity-access-policies.md) a dispositivos y identidades para configurar las directivas que se basen en los requisitos previos configurados para el entorno de prueba y explorar y comprobar la protección de identidades y dispositivos.
 
 ## <a name="see-also"></a>Ver también
 

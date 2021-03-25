@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 60de6ed5a53a5d778f041b1c609019d110d6b64b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e494bfe57c31c1d5044f72a8adb3e2548d531604
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076344"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199154"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Buscar amenazas entre dispositivos, correos electrónicos, aplicaciones e identidades
 
@@ -104,7 +104,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>Escenarios de búsqueda
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>Enumerar las actividades de inicio de sesión de los usuarios que recibieron correos electrónicos que no se zapped correctamente
-[La purga automática de hora cero (ZAP)](../defender-365-security/zero-hour-auto-purge.md) aborda correos electrónicos malintencionados después de que se hayan recibido. Si SE produce un error en ZAP, es posible que el código malintencionado se ejecute en el dispositivo y deje las cuentas en peligro. Esta consulta busca la actividad de inicio de sesión realizada por los destinatarios de los correos electrónicos que ZAP no ha abordado correctamente.
+[La purga automática de hora cero (ZAP)](../office-365-security/zero-hour-auto-purge.md) aborda correos electrónicos malintencionados después de que se hayan recibido. Si SE produce un error en ZAP, es posible que el código malintencionado se ejecute en el dispositivo y deje las cuentas en peligro. Esta consulta busca la actividad de inicio de sesión realizada por los destinatarios de los correos electrónicos que ZAP no ha abordado correctamente.
 
 ```kusto
 EmailPostDeliveryEvents 

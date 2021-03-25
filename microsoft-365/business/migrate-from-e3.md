@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo mover su empresa a Microsoft 365 Empresa Premium desde Office 365 E3.
-ms.openlocfilehash: 3f9fd70b2d31b32027981e638de249d92e98ea08
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: cb70260201686cae02428c715ac98ffe2f88787f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164541"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198105"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migración de Office 365 E3 a Microsoft 365 Empresa Premium
 
@@ -42,7 +42,7 @@ En esta tabla se muestran las diferencias entre Microsoft 365 Empresa Premium y 
 | Característica    | Compatibilidad con Microsoft 365 Empresa Premium    | Compatibilidad con Office 365 E3 | 
 |:-------|:-----|:-----|
 | **Local**        | | | 
-| Aplicaciones de Office<sup>1</sup>    | Aplicaciones de Microsoft 365 para negocios    | Aplicaciones de Microsoft 365 para empresas | 
+| Aplicaciones de Office<sup>1</sup>    | Aplicaciones de Microsoft 365 para negocios    | Aplicaciones de Microsoft 365 para empresas | 
 | **Aplicaciones de productividad en la nube**        | | | 
 | Exchange Online y Outlook    | Límite de almacenamiento de 50 GB por buzón y límite Archivado de Exchange Online    | Límite de almacenamiento de 100 GB por buzón y límite Archivado de Exchange Online | 
 | Teams    | ![Incluido con Microsoft 365 Empresa Premium](../media/check-mark.png)    | ![Incluido con Office 365 E3](../media/check-mark.png) | 
@@ -122,7 +122,7 @@ Microsoft 365 Empresa Premium tiene un límite de almacenamiento de 50 GB, ya qu
 
 ### <a name="threat-protection"></a>Protección contra amenazas
 
-Después de migrar a Microsoft 365 Empresa Premium, tiene Defender para Office 365. Vea [Microsoft Defender para Office 365](../security/defender-365-security/defender-for-office-365.md) para obtener información general. Para configurar, vea [Configurar](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)vínculos [seguros,](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)configurar datos adjuntos seguros y configurar la protección contra suplantación de identidad en Defender para [Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
+Después de migrar a Microsoft 365 Empresa Premium, tiene Defender para Office 365. Vea [Microsoft Defender para Office 365](../security/office-365-security/defender-for-office-365.md) para obtener información general. Para configurar, vea [Configurar](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)vínculos [seguros,](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)configurar datos adjuntos seguros y configurar la protección contra suplantación de identidad en Defender para [Office 365](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c).
 
 ### <a name="sensitivity-labels"></a>Etiquetas de confidencialidad
 

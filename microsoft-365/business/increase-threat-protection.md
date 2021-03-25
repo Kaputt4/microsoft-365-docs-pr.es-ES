@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure Microsoft Defender para Office 365 y proteja los datos confidenciales contra el phishing, malware y otras amenazas.
-ms.openlocfilehash: 80ad3767b277e4808b6df4bdd977688794649e11
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6526ed9a849e83f19f74656004978089ce367ea9
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050854"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198399"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -57,7 +57,7 @@ El entorno de Office 365 o Microsoft 365 incluye protección contra malware. Pue
 
 6. Seleccione **Guardar.**
 
-Para obtener más información, vea [Protección contra malware en EOP](../security/defender-365-security/anti-malware-protection.md).
+Para obtener más información, vea [Protección contra malware en EOP](../security/office-365-security/anti-malware-protection.md).
 
 ## <a name="protect-against-ransomware"></a>Protección contra ransomware
 
@@ -138,7 +138,7 @@ Para crear una directiva contra la suplantación de identidad en Microsoft Defen
 
 4. En la **página Anti-phishing,** seleccione **+ Crear**. Se inicia un asistente que le permite definir la directiva contra suplantación de identidad.
 
-5. Especifique el nombre, la descripción y la configuración de la directiva como se recomienda en la tabla siguiente. Para obtener más información, vea [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../security/defender-365-security/set-up-anti-phishing-policies.md).
+5. Especifique el nombre, la descripción y la configuración de la directiva como se recomienda en la tabla siguiente. Para obtener más información, vea [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../security/office-365-security/set-up-anti-phishing-policies.md).
 
 6. Después de revisar la configuración, elija **Crear esta directiva** o **Guardar**, según corresponda.
 
@@ -181,7 +181,7 @@ Para crear una directiva de datos adjuntos seguros, vea [este breve vídeo](http
 |Redirigir datos adjuntos al detectar|Habilitar redirección (seleccione este cuadro) Escriba la cuenta de administrador o una configuración de buzón para la cuarentena.          Aplica la selección anterior si el examen de malware para datos adjuntos se encuentra en tiempo de espera o si se produce un error (selecciona este cuadro).|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
 
-Para obtener más información, vea [Set up anti-phishing policies in Microsoft Defender for Office 365](../security/defender-365-security/set-up-anti-phishing-policies.md).
+Para obtener más información, vea [Set up anti-phishing policies in Microsoft Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
 
 ## <a name="protect-against-phishing-attacks-with-safe-links"></a>Proteger contra ataques de suplantación de identidad con vínculos seguros
 
@@ -224,7 +224,7 @@ Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 |Usar datos adjuntos seguros para examinar contenido descargable|Seleccione este cuadro.|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
 
-Para obtener más información, vea [Vínculos seguros](../security/defender-365-security/safe-links.md).
+Para obtener más información, vea [Vínculos seguros](../security/office-365-security/safe-links.md).
 
 ## <a name="go-to-intune-admin-center"></a>Ir al Centro de administración de Intune
 

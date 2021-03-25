@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0196148c9dbf3ec769594d714524a3fd9e4d18fd
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d468a77d2c1ab4f1b363e2e91b6e8507a5390d93
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185962"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198488"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Crear indicadores para direcciones IP y direcciones URL/dominios 
 
@@ -34,7 +34,8 @@ ms.locfileid: "51185962"
 
 
 
->¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> [!TIP]
+> ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
 Defender for Endpoint puede bloquear lo que Microsoft considera direcciones IP/DIRECCIONES URL malintencionadas, a través de Windows Defender SmartScreen para exploradores de Microsoft y a través de Network Protection para exploradores que no son de Microsoft o llamadas realizadas fuera de un explorador.
@@ -57,8 +58,10 @@ Es importante comprender los siguientes requisitos previos antes de crear indica
 
 > [!IMPORTANT]
 > Solo se pueden agregar direcciones IP externas a la lista de indicadores. Los indicadores no se pueden crear para ip internas.
-> Para escenarios de protección web, se recomienda usar las funcionalidades integradas en Microsoft Edge. Microsoft Edge aprovecha [Network Protection para](network-protection.md) inspeccionar el tráfico de red y permite bloques para TCP, HTTP y HTTPS (TLS). Para todos los demás procesos, los escenarios de protección web aprovechan la protección de red para la inspección y la aplicación: <br>
-> NOTA:
+> Para escenarios de protección web, se recomienda usar las funcionalidades integradas en Microsoft Edge. Microsoft Edge aprovecha [Network Protection para](network-protection.md) inspeccionar el tráfico de red y permite bloques para TCP, HTTP y HTTPS (TLS). Si hay directivas de indicador de dirección URL en conflicto, se aplica la ruta de acceso más larga. Por ejemplo, la directiva de indicador de dirección URL `https:\\support.microsoft.com/en-us/office` tiene prioridad sobre la directiva de indicador de dirección URL `https:\\support.microsoft.com` .
+
+> [!NOTE]
+> Para todos los demás procesos, los escenarios de protección web aprovechan la protección de red para la inspección y la aplicación: 
 > - La IP es compatible con los tres protocolos
 > - Solo se admiten direcciones IP únicas (sin bloques CIDR ni intervalos IP)
 > - Las direcciones URL cifradas (ruta de acceso completa) solo se pueden bloquear en exploradores de terceros (Internet Explorer, Edge)

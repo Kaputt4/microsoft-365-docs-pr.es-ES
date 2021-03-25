@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Obtener ayuda para aumentar el nivel de protección en Microsoft 365
-ms.openlocfilehash: 0e8b63fec3b764f10039e9f738fd047ff2c513a4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 61ac32d3debe391794e85df8c129e5df72887e9e
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052211"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198380"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Aumentar la protección contra amenazas para la suscripción a Microsoft 365
 
@@ -58,7 +58,7 @@ El entorno de Office 365 o Microsoft 365 incluye protección contra malware, per
 
 6. Haga clic en **Guardar**.
 
-Para obtener más información, vea [Protección contra malware en EOP](../security/defender-365-security/anti-malware-protection.md).
+Para obtener más información, vea [Protección contra malware en EOP](../security/office-365-security/anti-malware-protection.md).
 
 ## <a name="protect-against-ransomware"></a>Protección contra ransomware
 
@@ -138,7 +138,7 @@ Para crear una directiva contra suplantación de identidad en Defender para Offi
 
 4. En la **página Anti-phishing,** seleccione **+ Crear**. Se inicia un asistente que le permite definir la directiva contra suplantación de identidad.
 
-5. Especifique el nombre, la descripción y la configuración de la directiva como se recomienda en el siguiente gráfico. Para obtener más información, vea [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../security/defender-365-security/set-up-anti-phishing-policies.md).
+5. Especifique el nombre, la descripción y la configuración de la directiva como se recomienda en el siguiente gráfico. Para obtener más información, vea [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../security/office-365-security/set-up-anti-phishing-policies.md).
 
 6. Después de revisar la configuración, elija **Crear esta directiva** o **Guardar**, según corresponda.
 
@@ -153,7 +153,7 @@ Para crear una directiva contra suplantación de identidad en Defender para Offi
 |Agregar dominios y remitentes de confianza|Aquí puede agregar su propio dominio o cualquier otro dominio de confianza.|
 |Aplicado a|Seleccione **El dominio del destinatario es**. En **Cualquiera de estos**, seleccione **Elegir**. Seleccione **+ Agregar**. Active la casilla situada junto al nombre del dominio, por ejemplo, *contoso. <span> <span> com*, en la lista y, a continuación, **seleccione Agregar**. Seleccione **Listo**.|
 
-Para obtener más información, vea [Set up anti-phishing policies in Defender for Office 365](../security/defender-365-security/set-up-anti-phishing-policies.md).
+Para obtener más información, vea [Set up anti-phishing policies in Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
 
 ## <a name="protect-against-malicious-attachments-files-and-links-with-defender-for-office-365"></a>Proteger contra datos adjuntos, archivos y vínculos malintencionados con Defender para Office 365
 
@@ -207,7 +207,7 @@ Para crear una directiva de datos adjuntos seguros, vea [este breve vídeo](http
 |Redirigir datos adjuntos al detectar|Habilitar redirección (seleccione este cuadro) <br/> Escriba la cuenta de administrador o una configuración de buzón para la cuarentena. <br/> Aplica la selección anterior si el examen de malware para datos adjuntos se encuentra en tiempo de espera o si se produce un error (selecciona este cuadro).|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
 
-Para obtener más información, vea [Set up anti-phishing policies in Defender for Office 365](../security/defender-365-security/set-up-anti-phishing-policies.md).
+Para obtener más información, vea [Set up anti-phishing policies in Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
 
 ### <a name="set-up-safe-links-in-the-security--compliance-center"></a>Configurar vínculos seguros en el Centro de & seguridad
 
@@ -250,7 +250,7 @@ Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 |Usar datos adjuntos seguros para examinar contenido descargable|Seleccione este cuadro.|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
 
-Para obtener más información, vea [Vínculos seguros en Defender para Office 365](../security/defender-365-security/safe-links.md).
+Para obtener más información, vea [Vínculos seguros en Defender para Office 365](../security/office-365-security/safe-links.md).
 
 ## <a name="turn-on-the-unified-audit-log"></a>Activar el registro de auditoría unificado
 

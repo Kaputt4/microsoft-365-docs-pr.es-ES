@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use esta Guía del laboratorio de pruebas para habilitar la configuración de seguridad adicional de Microsoft 365 en el entorno de prueba de Microsoft 365 para empresas.
-ms.openlocfilehash: 186452396af4227a94a7f6cd0fa0109e9d6a7e17
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d1bff8b736e5074f621a173d206f7c5f77841b25
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051275"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198356"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Mayor seguridad de Microsoft 365 para su entorno de prueba de Microsoft 365 para empresas
 
@@ -47,7 +47,7 @@ En esta fase, se habilita una mayor seguridad de Microsoft 365 para el entorno d
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>Configurar SharePoint Online para bloquear aplicaciones que no admiten la autenticación moderna
 
-Las aplicaciones que no admiten la autenticación moderna no pueden tener configuraciones de identidad y acceso a [dispositivos aplicadas,](../security/defender-365-security/microsoft-365-policies-configurations.md) lo que es un elemento importante para proteger la suscripción a Microsoft 365 y sus activos digitales. 
+Las aplicaciones que no admiten la autenticación moderna no pueden tener configuraciones de identidad y acceso a [dispositivos aplicadas,](../security/office-365-security/microsoft-365-policies-configurations.md) lo que es un elemento importante para proteger la suscripción a Microsoft 365 y sus activos digitales. 
 
 1. Vaya al Centro de administración de Microsoft 365 ( ) e inicie sesión en su suscripción al laboratorio de pruebas de [https://portal.microsoft.com](https://portal.microsoft.com) Microsoft 365 con su cuenta de administrador global.
     
@@ -77,7 +77,7 @@ Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams protege su 
 
 El malware se compone de virus y spyware. Los virus infectan otros programas y datos, y se propagan en todo el equipo en busca de programas que infectar. El spyware se refiere a malware que recopila información de carácter personal, como información de inicio de sesión y datos de carácter personal, y la envía al autor del malware. 
 
-Microsoft 365 tiene capacidades integradas de filtrado de correo no deseado y malware que ayudan a proteger los mensajes entrantes y salientes de software malintencionado y le ayudan a protegerse del correo no deseado. Para obtener más información, vea [Anti-spam & anti-malware protection](../security/defender-365-security/anti-spam-and-anti-malware-protection.md).
+Microsoft 365 tiene capacidades integradas de filtrado de correo no deseado y malware que ayudan a proteger los mensajes entrantes y salientes de software malintencionado y le ayudan a protegerse del correo no deseado. Para obtener más información, vea [Anti-spam & anti-malware protection](../security/office-365-security/anti-spam-and-anti-malware-protection.md).
 
 Para asegurarse de que el procesamiento antimalware se realiza en archivos con tipos de archivos adjuntos comunes:
 
@@ -100,7 +100,7 @@ Para ver el panel de seguridad:
 
 Echa un vistazo de cerca a todas las tarjetas del panel para familiarizarte con la información proporcionada.
 
-Para obtener más información, vea [Panel de seguridad](../security/defender-365-security/security-dashboard.md).
+Para obtener más información, vea [Panel de seguridad](../security/office-365-security/security-dashboard.md).
 
 
 ## <a name="phase-4-examine-microsoft-secure-score"></a>Fase 4: Examinar la puntuación segura de Microsoft
@@ -113,11 +113,11 @@ Puntuación segura de Microsoft muestra su posición de seguridad como un númer
 
 Para obtener más información, vea [Puntuación segura de Microsoft](../security/defender/microsoft-secure-score.md).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Explore características [y capacidades adicionales](m365-enterprise-test-lab-guides.md#information-protection) de protección de la información en el entorno de prueba.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Guías de entornos de pruebas de Microsoft 365 para empresas](m365-enterprise-test-lab-guides.md)
 
