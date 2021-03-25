@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 423840ae62d0531da76044238bbeef05078a82c8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc526371fdf12314f762c885ba1775fcf3f00d00
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907993"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215557"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Ilustraciones de productividad de Microsoft 365
 
@@ -33,7 +33,7 @@ La arquitectura lógica de los servicios de productividad en Microsoft 365, una 
 
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>Grupos en Microsoft 365 para arquitectos de TI
-Lo que necesitan saber los arquitectos de TI sobre los grupos en Microsoft 365
+En esta ilustración se incluye información para arquitectos de TI sobre grupos de Microsoft 365. Para obtener información sobre cómo configurar y administrar grupos y equipos de Microsoft 365 para la colaboración en su organización, vea Configurar la colaboración segura con [Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) y ¿Qué es el gobierno de colaboración? . [](/microsoft-365/solutions/collaboration-governance-overview)
 
 | Item | Descripción |
 |:-----|:-----|
@@ -52,7 +52,7 @@ Este conjunto de ilustraciones usa uno de los sectores más regulados, los servi
 
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>Seguridad y protección de la información para organizaciones de varias regiones
-Seguridad y protección de la información para organizaciones de varias regiones con un único espacio empresarial de Microsoft 365
+Seguridad y protección de la información para organizaciones multir regiones con un único inquilino de Microsoft 365
 
 | Item | Descripción |
 |:-----|:-----|
