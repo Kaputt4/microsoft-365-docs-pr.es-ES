@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Documentación de Microsoft Defender para puntos de conexión
-summary: Microsoft Defender para endpoint proporciona protección preventiva, detección posterior a la infracción, investigación automatizada y respuesta.
+title: Documentación de Microsoft Defender para punto de conexión
+summary: Microsoft Defender para punto de conexión es una plataforma unificada para la protección preventiva, la detección posterior a la vulneración, la investigación automatizada y la respuesta.
 metadata:
-  title: Documentación de Microsoft Defender para puntos de conexión
-  description: Obtenga información sobre Microsoft Defender para endpoint y maximice las capacidades de seguridad integradas para proteger dispositivos, detectar actividad malintencionada y corregir amenazas# Requeridas; descripción del artículo que se muestra en los resultados de búsqueda. < 160 caracteres.
+  title: Documentación de Microsoft Defender para punto de conexión
+  description: Obtenga información sobre Microsoft Defender para punto de conexión y maximice sus funciones de seguridad integradas para proteger dispositivos, detectar actividad malintencionada y solucionar amenazas# Obligatorio; descripción del artículo que se muestra en los resultados de la búsqueda. < 160 caracteres.
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: efa23f4c40021d95185203c22c8bba5009e15f2f
   ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: es-ES
   ms.lasthandoff: 03/24/2021
   ms.locfileid: "51185748"
@@ -28,17 +28,17 @@ landingContent:
       url: microsoft-defender-endpoint.md
   - linkListType: whats-new
     links:
-    - text: Novedades de Microsoft Defender para endpoint
+    - text: Novedades de Microsoft Defender para punto de conexión
       url: whats-new-in-microsoft-defender-atp.md
   - linkListType: video
     links:
-    - text: Vídeo de introducción
+    - text: 'Vídeo de información general:'
       url: https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
-- title: Evaluar & implementar el servicio
+- title: Evaluar e implementar el servicio
   linkLists:
   - linkListType: get-started
     links:
-    - text: Evaluar Microsoft Defender para el punto de conexión
+    - text: Microsoft Defender para punto de conexión
       url: evaluation-lab.md
     - text: Planear la implementación
       url: deployment-strategy.md
@@ -46,7 +46,7 @@ landingContent:
     links:
     - text: Guía de implementación
       url: deployment-phases.md
-    - text: Incorporación de dispositivos compatibles
+    - text: Incorporar dispositivos admitidos
       url: onboard-configure.md
   - linkListType: how-to-guide
     links:
@@ -60,29 +60,29 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Detección y respuesta de puntos de conexión.
+    - text: EDR
       url: overview-endpoint-detection-response.md
-    - text: Bloqueo y contención del comportamiento
+    - text: Bloqueo y contención de comportamientos
       url: behavioral-blocking-containment.md
     - text: Investigación y respuesta automatizadas (AIR)
       url: automated-investigations.md
-    - text: Búsqueda avanzada
+    - text: Búsqueda avanzada de amenazas
       url: advanced-hunting-overview.md
     - text: Expertos en amenazas de Microsoft
       url: microsoft-threat-experts.md
     - text: Análisis de amenazas
       url: threat-analytics.md
-- title: Usar Microsoft Defender para endpoint en otras plataformas
+- title: Usar Microsoft Defender para punto de conexión en otras plataformas
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft Defender para endpoint para Mac
+    - text: Microsoft Defender para punto de conexión para Mac
       url: microsoft-defender-endpoint-mac.md
-    - text: Microsoft Defender para endpoint para iOS
+    - text: Microsoft Defender para punto de conexión para iOS
       url: microsoft-defender-endpoint-ios.md
-    - text: Microsoft Defender para endpoint para Linux
+    - text: Microsoft Defender para punto de conexión para Linux
       url: microsoft-defender-endpoint-linux.md
-    - text: Microsoft Defender para endpoint para Android
+    - text: Microsoft Defender para punto de conexión para Android
       url: microsoft-defender-endpoint-android.md
 - title: Referencia
   linkLists:
@@ -90,13 +90,13 @@ landingContent:
     links:
     - text: Administración y API
       url: management-apis.md
-    - text: Integración de partners
+    - text: Integración de socios
       url: partner-integration.md
 - title: Administración de seguridad
   linkLists:
   - linkListType: overview
     links:
-    - text: Administración & vulnerabilidades de amenazas
+    - text: Administración de amenazas y vulnerabilidades.
       url: next-gen-threat-and-vuln-mgt.md
     - text: Reducción de la superficie expuesta a ataques
       url: overview-attack-surface-reduction.md
