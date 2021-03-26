@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: En este artículo, lea una introducción a las distintas formas de cifrado que se usan para mantener los datos de los clientes seguros en la nube de Microsoft.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8e184fbe722de674db6f9bcc47e2ab5aa0723d1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4a351215b7773574d5932b936e30c5d5ca7aa116
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926228"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222285"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Cifrado en Microsoft Cloud
 
@@ -57,7 +57,7 @@ Para los datos de clientes en tránsito, todos los servidores de Office 365 nego
 - [Cifrado en Azure](office-365-azure-encryption.md)
 - [BitLocker y Administrador de claves distribuidas (DKM) para el cifrado](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
 - [Cifrado de servicio de Office 365](office-365-service-encryption.md)
-- [Cifrado de Office 365 para Skype Empresarial, OneDrive para la Empresa, SharePoint Online y Exchange Online](./n/compliance/assurance/assurance-encryption-for-microsoft-365-services)
+- [Cifrado de Office 365 para Skype Empresarial, OneDrive para la Empresa, SharePoint Online y Exchange Online](https://docs.microsoft.com/compliance/assurance/assurance-encryption-for-microsoft-365-services) 
 - [Cifrado de datos en tránsito](/compliance/assurance/assurance-encryption-in-transit)
 - [Características de cifrado administradas por el cliente](office-365-customer-managed-encryption-features.md)
 - [Riesgos y protección de cifrado](office-365-encryption-risks-and-protections.md)
