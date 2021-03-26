@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información acerca de cómo implementar equipos con un nivel de protección de base de referencia.
-ms.openlocfilehash: cd5a88069b9947bd4dcb01f6ca76620bb8ed9a52
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 728a41bd521ed32c57c981be576e46eaee344099
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200298"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222748"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configure equipos con la protección de base de referencia
 
@@ -39,7 +39,7 @@ También recomendamos activar las características básicas de Microsoft Defende
 |:------|:-----------|
 |Archivos adjuntos seguros para SPO, OneDrive y Teams|[Archivos adjuntos seguros](../security/office-365-security/safe-attachments.md)<br>[Microsoft Defender para Office 365 para SharePoint, OneDrive y Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md).|
 |Documentos seguros|[Documentos seguros en Microsoft Defender para Office 365](../security/office-365-security/safe-docs.md)|
-|Vínculos seguros en Teams|[Vínculos seguros de Office 365 en Teams](../security/office-365-security/safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[Vínculos seguros](../security/office-365-security/safe-links.md)|
+|Vínculos seguros en Teams|[Vínculos seguros de Office 365 en Teams](../security/office-365-security/safe-links.md)<br>[Vínculos seguros](../security/office-365-security/safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Uso compartido de invitados en Teams
 

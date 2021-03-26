@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Más información sobre el procesamiento de formularios en Microsoft SharePoint Syntex
-ms.openlocfilehash: 84aeb7c4e3fc850e5e4c2336e576ff3bce3ecf4b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e3cf8298a2db9383e5b88dde737efc84e75c7f19
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928313"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222262"
 ---
 # <a name="form-processing-overview"></a>Información general del procesamiento de formularios
 
@@ -30,7 +30,7 @@ Puede usar el procesamiento de formularios del generador de IA para crear modelo
 La mayoría de las organizaciones suelen recibir facturas en grandes cantidades y de una gran variedad de orígenes, como correo, fax, correo electrónico, etc. Procesar estos documentos y añadirlos manualmente a una base de datos puede suponer un tiempo considerable. Mediante el uso de IA para extraer el texto, los pares clave o de valor y las tablas de los documentos, el procesamiento de formularios automatiza este proceso. 
 
 > [!NOTE]
-> Consulte la guía [Adopción de SharePoint Syntex: Guía de introducción](./adoption-getstarted.md#form-processing-scenario-example) para obtener más información sobre ejemplos de escenarios de procesamiento de formularios.
+> Consulte la guía [Adopción de SharePoint Syntex: Guía de introducción](./adoption-getstarted.md) para obtener más información sobre ejemplos de escenarios de procesamiento de formularios.
 
 Por ejemplo, puede crear un modelo de procesamiento de formularios que identifique todos los documentos de pedido de compra que se hayan cargado en la biblioteca de documentos. A partir de cada pedido de compra, puede extraer y mostrar datos específicos que sean importantes para usted, como el *Número de pedido de compra*, la *Fecha* o el *Coste total*.
 
@@ -40,7 +40,7 @@ Use archivos de ejemplo para entrenar el modelo y definir la información que se
 
 Una vez que haya entrenado y publicado el modelo, el modelo crea un [flujo de Power Automate](/power-automate/getting-started). El flujo se ejecuta cuando se carga un archivo en la biblioteca de documentos de SharePoint y se extraen los datos identificados en el modelo. Los datos extraídos se mostrarán en columnas en la vista de la biblioteca de documentos del modelo.
 
-Los administradores de Office 365 deben [habilitar el procesamiento de formularios](./set-up-content-understanding.md#to-set-up-content-understanding) para la biblioteca de documentos de SharePoint para que los usuarios puedan [crear un modelo de procesamiento de formularios](create-a-form-processing-model.md) en ella. Puede seleccionar los sitios durante la instalación o después de la misma, en la configuración de administración.
+Los administradores de Office 365 deben [habilitar el procesamiento de formularios](./set-up-content-understanding.md) para la biblioteca de documentos de SharePoint para que los usuarios puedan [crear un modelo de procesamiento de formularios](create-a-form-processing-model.md) en ella. Puede seleccionar los sitios durante la instalación o después de la misma, en la configuración de administración.
 
 ### <a name="file-limitations"></a>Limitaciones de archivos
 

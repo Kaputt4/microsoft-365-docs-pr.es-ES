@@ -16,25 +16,23 @@ ms.custom: nextgen
 ms.date: 09/10/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 30e664aed74ed01944c67b139e6268fc3340ada4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bfd447120e171fed063b3224e3a47c2ef38f0f16
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51069859"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222616"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Incorporación de dispositivos multi sesión de Windows 10 en Windows Virtual Desktop 
 6 minutos para leer 
 
 Se aplica a: 
 - Windows 10 multi-session que se ejecuta en Windows Virtual Desktop (WVD) 
-> [!IMPORTANT]
-> Bienvenido a Microsoft Defender para Endpoint, el nuevo nombre de Microsoft Defender para Endpoint. Obtenga más información sobre esta y otras actualizaciones aquí. Los nombres de los productos y los documentos se actualizarán en un futuro próximo.
 
 > [!WARNING]
 > La compatibilidad de Microsoft Defender para puntos de conexión para escenarios de varias sesiones de Escritorio virtual de Windows está actualmente en versión preliminar y está limitada hasta 25 sesiones simultáneas por host/VM. Sin embargo, los escenarios de sesión única en Windows Virtual Desktop son totalmente compatibles.
 
-Microsoft Defender para endpoint admite la supervisión tanto de VDI como de sesiones de Escritorio virtual de Windows. Según las necesidades de la organización, es posible que deba implementar sesiones de VDI o Windows Virtual Desktop para ayudar a los empleados a tener acceso a datos corporativos y aplicaciones desde un dispositivo no administrado, una ubicación remota o un escenario similar. Con Microsoft Defender para endpoint, puede supervisar estas máquinas virtuales en busca de actividad anómala.
+Microsoft Defender para endpoint admite la supervisión de sesiones de VDI y Windows Virtual Desktop. Según las necesidades de la organización, es posible que deba implementar sesiones de VDI o Windows Virtual Desktop para ayudar a los empleados a tener acceso a datos corporativos y aplicaciones desde un dispositivo no administrado, una ubicación remota o un escenario similar. Con Microsoft Defender para endpoint, puede supervisar estas máquinas virtuales en busca de actividad anómala.
 
  ## <a name="before-you-begin"></a>Antes de empezar
 Familiarícese con las [consideraciones para VDI no persistente.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Aunque [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) no proporciona opciones de no persistencia, sí proporciona formas de usar una imagen dorada de Windows que se puede usar para aprovisionar nuevos hosts y volver a implementar máquinas. Esto aumenta la inestabilidad en el entorno y, por lo tanto, afecta a las entradas que se crean y mantienen en el portal de Microsoft Defender para endpoints, lo que potencialmente reduce la visibilidad de los analistas de seguridad.
@@ -44,9 +42,9 @@ Familiarícese con las [consideraciones para VDI no persistente.](https://docs.m
 > - Entrada única para cada escritorio virtual 
 > - Varias entradas para cada escritorio virtual 
 
-Microsoft recomienda incorporar Windows Virtual Desktop como una sola entrada por escritorio virtual. Esto garantiza que la experiencia de investigación en el portal de puntos de conexión de Microsoft Defender se encuentra en el contexto de un dispositivo basado en el nombre del equipo. Las organizaciones que eliminan e implementan hosts WVD con frecuencia deben considerar encarecidamente el uso de este método, ya que impide que se cree varios objetos para la misma máquina en el portal de Microsoft Defender para endpoint. Esto puede provocar confusión al investigar incidentes. Para entornos de prueba o no volátiles, puede optar por elegir de forma diferente. 
+Microsoft recomienda incorporar Windows Virtual Desktop como una sola entrada por escritorio virtual. Esto garantiza que la experiencia de investigación en el portal de puntos de conexión de Microsoft Defender se encuentra en el contexto de un dispositivo basado en el nombre del equipo. Las organizaciones que suelen eliminar y volver a implementar hosts WVD deben considerar encarecidamente el uso de este método, ya que impide que se cree varios objetos para la misma máquina en el portal de Microsoft Defender para endpoint. Esto puede provocar confusión al investigar incidentes. Para entornos de prueba o no volátiles, puede optar por elegir de forma diferente. 
 
-Microsoft recomienda agregar el script de incorporación de Microsoft Defender para endpoint a la imagen dorada de WVD. De esta forma, puede asegurarse de que este script de incorporación se ejecute inmediatamente al primer arranque. Se ejecuta como un script de inicio en el primer arranque en todas las máquinas WVD que se aprovisionan desde la imagen dorada de WVD. Sin embargo, si usa una de las imágenes de la galería sin modificaciones, coloque el script en una ubicación compartida y llámelo desde una directiva de grupo local o de dominio. 
+Microsoft recomienda agregar el script de incorporación de Microsoft Defender para endpoint a la imagen dorada de WVD. De esta forma, puede asegurarse de que este script de incorporación se ejecute inmediatamente al primer arranque. Se ejecuta como un script de inicio al inicio en todas las máquinas WVD aprovisionadas desde la imagen dorada de WVD. Sin embargo, si usa una de las imágenes de la galería sin modificaciones, coloque el script en una ubicación compartida y llámelo desde una directiva de grupo local o de dominio. 
 
 > [!NOTE]
 > La ubicación y configuración del script de inicio de incorporación de VDI en la imagen dorada de WVD lo configura como un script de inicio que se ejecuta cuando se inicia WVD. NO se recomienda incorporar la imagen dorada de WVD real. Otra consideración es el método usado para ejecutar el script. Debe ejecutarse lo antes posible en el proceso de inicio o aprovisionamiento para reducir el tiempo entre la máquina que está disponible para recibir sesiones y la incorporación del dispositivo al servicio. En los escenarios siguientes, 1 & 2 tienen esto en cuenta.
@@ -103,7 +101,7 @@ Para obtener más información, consulta: [Incorporación de dispositivos Window
 
 #### <a name="tagging-your-machines-when-building-your-golden-image"></a>Etiquetar las máquinas al crear la imagen dorada 
 
-Como parte de la incorporación, es posible que quieras establecer una etiqueta de máquina para poder diferenciar las máquinas WVD más fácilmente en el Centro de seguridad de Microsoft. Para obtener más información, consulta [Agregar etiquetas de dispositivo estableciendo un valor de clave del Registro.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value) 
+Como parte de la incorporación, es posible que quieras establecer una etiqueta de máquina para diferenciar los equipos WVD más fácilmente en el Centro de seguridad de Microsoft. Para obtener más información, consulta [Agregar etiquetas de dispositivo estableciendo un valor de clave del Registro.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value) 
 
 #### <a name="other-recommended-configuration-settings"></a>Otras opciones de configuración recomendadas 
 

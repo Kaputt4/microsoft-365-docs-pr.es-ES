@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtenga información general sobre la comprensión des documentos en Microsoft SharePoint Syntex.
-ms.openlocfilehash: e3b239260953837f70663bb6f7e2dba1676c49eb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 73e217e458fb9e1ccad8b64ffc81a6c9522a04f4
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911203"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222760"
 ---
 # <a name="document-understanding-overview"></a>Información general sobre la comprensión de documentos
 
@@ -31,7 +31,7 @@ ms.locfileid: "50911203"
 La comprensión de documentos usa modelos de inteligencia artificial (IA) para automatizar la clasificación de archivos y extraer la información. Funciona mejor con documentos sin estructura, como cartas o contratos. Estos documentos deben tener texto que pueda identificarse en función de frases o patrones. El texto identificado designa tanto el tipo de archivo (su clasificación) como lo que le gustaría extraer (sus extractores).
 
 > [!NOTE]
-> Consulte [Adopción de SharePoint Syntex: Guía de introducción](./adoption-getstarted.md#document-understanding-scenario-example) para obtener más información sobre ejemplos de escenarios de comprensión mediante documentos.
+> Consulte [Adopción de SharePoint Syntex: Guía de introducción](./adoption-getstarted.md) para obtener más información sobre ejemplos de escenarios de comprensión mediante documentos.
 
 Los modelos de comprensión mediante documentos se crean y se administran en un tipo de sitio de SharePoint denominado *centro de contenido*. Cuando se aplica a una biblioteca de documentos de SharePoint, el modelo está asociado a un tipo de contenido que tiene columnas para almacenar la información que se va a extraer. El tipo de contenido que cree se almacena en la galería de tipo de contenido de SharePoint. También puede optar por usar tipos de contenido existentes para usar su esquema.
 

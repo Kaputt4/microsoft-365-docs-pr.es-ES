@@ -22,12 +22,12 @@ search.appverid:
 description: Obtenga asistencia técnica y de facturación utilizando los números de teléfono que figuran para su país o región, o enviando su solicitud de servicio en línea.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: aa843f0c81f38e53b525b6e56d7f3fa69696de79
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e355a07584d45a85c363956d1bb4e45eae708be
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907043"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222044"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Formas de contactar al soporte técnico para productos empresariales: ayuda para administradores
 
@@ -42,7 +42,7 @@ Comience por [comprobar el estado actual de los servicios](../enterprise/view-se
 
 Ahorre tiempo iniciando su solicitud de servicio en línea. Le ayudaremos a encontrar una solución o le pondremos en contacto con el soporte técnico.
 
-1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje en el que se indica que no tiene permiso para acceder a esta página o llevar a cabo esta acción, no es administrador. [¿Quién tiene permisos de administrador en mi empresa?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje en el que se indica que no tiene permiso para acceder a esta página o llevar a cabo esta acción, no es administrador. [¿Quién tiene permisos de administrador en mi empresa?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview?#who-has-admin-permissions-in-my-business)
 
 2. Seleccione el botón **¿Necesita ayuda?**.
 

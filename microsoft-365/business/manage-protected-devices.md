@@ -21,19 +21,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - seo-marvel-mar
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: Aprende a quitar los datos de la empresa de dispositivos administrados a través de directivas de protección, así como a restablecer los dispositivos Windows 10 a la configuración de fábrica.
-ms.openlocfilehash: 8c5472eada4cded3a6869c031ab902928876095f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5bedcdc95a8d0f67c7db73d84f530a0518a07216
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913222"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222327"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Administrar dispositivos protegidos con Microsoft 365 Empresa Premium
 

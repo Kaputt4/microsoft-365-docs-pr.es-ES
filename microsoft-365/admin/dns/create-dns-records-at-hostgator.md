@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: Obtenga información sobre cómo comprobar su dominio y configurar registros DNS para correo electrónico, Skype Empresarial Online y otros servicios en Hostgator para Microsoft.
-ms.openlocfilehash: 790a7d77c9dbab37b87f8e7533515e75d2018e92
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7f12b407254ff4146f77090da07d98db63e47305
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910203"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221888"
 ---
 # <a name="create-dns-records-at-hostgator-for-microsoft"></a>Crear registros DNS en Hostgator para Microsoft
 
@@ -187,7 +187,7 @@ Cuando Microsoft encuentre el registro TXT correcto, se comprobará su dominio.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En vez de eso, agregue los valores necesarios de Microsoft para el registro actual, de modo que solo tenga un único registro de SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](../../enterprise/external-domain-name-system-records.md#bkmk_spfrecords). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml). 
+> No puede tener más de un registro TXT para el SPF de un dominio. Si su dominio tiene más de un registro de SPF, obtendrá errores de correo, así como problemas de clasificación de entrega y de correo no deseado. Si ya tiene un registro de SPF para su dominio, no cree uno nuevo para Microsoft. En vez de eso, agregue los valores necesarios de Microsoft para el registro actual, de modo que solo tenga un único registro de SPF que incluya ambos conjuntos de valores. ¿Necesita ejemplos? Consulte los [Registros externos del sistema de nombres de dominio para Microsoft](../../enterprise/external-domain-name-system-records.md). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml). 
   
 > [!IMPORTANT]
 > Antes de realizar este procedimiento, primero necesita realizar el procedimiento de la primera sección de este artículo, [Apuntar el dominio a su cuenta de hospedaje](#point-your-domain-to-your-hosting-account). 

@@ -1,6 +1,6 @@
 ---
-title: Configurar la implementación de ATP de Microsoft Defender
-description: Obtenga información sobre cómo configurar la implementación para ATP de Microsoft Defender
+title: Configurar Microsoft Defender para la implementación de puntos de conexión
+description: Obtenga información sobre cómo configurar la implementación de Microsoft Defender para endpoint
 keywords: implementación, configuración, validación de licencias, configuración de inquilino, configuración de red
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4af84c21977e4b90c8b6d9ec4c785339ff229e7d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 8965594789c3c96c043e3cd1a8922d9ba996ef47
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186154"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222446"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurar Microsoft Defender para la implementación de puntos de conexión
 
@@ -98,7 +98,7 @@ Al obtener acceso al Centro de seguridad de Microsoft Defender por primera vez, 
 
 4. Configurar preferencias.
 
-   **Ubicación de almacenamiento de** datos: es importante configurar esto correctamente. Determine dónde quiere hospedarse el cliente principalmente: ESTADOS UNIDOS, UE o Reino Unido. No puede cambiar la ubicación después de esta configuración y Microsoft no transferirá los datos de la geolocalización especificada. 
+   **Ubicación de almacenamiento de** datos: es importante configurar esto correctamente. Determine dónde quiere hospedarse el cliente principalmente: ESTADOS UNIDOS, UE o Reino Unido. No puede cambiar la ubicación después de esta configuración y Microsoft no transferirá los datos desde la geolocalización especificada. 
 
     **Retención de datos:** el valor predeterminado es de seis meses.
 
@@ -124,20 +124,17 @@ El sensor de Microsoft Defender para punto de conexión requiere HTTP de Microso
 
 -   Protocolo de detección automática de proxy web (WPAD)
 
-Si se ha implementado un proxy transparente o WPAD en la topología de red, no es necesario que haya opciones de configuración especiales. Para obtener más información sobre las exclusiones de url de punto de conexión de Microsoft Defender en el proxy, vea la sección Apéndice de este documento para la lista de direcciones URL permitidas o en [Microsoft Docs](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server).
-
-> [!NOTE]
-> Para obtener una lista detallada de las direcciones URL que deben permitirse, consulte [este artículo](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
+Si se ha implementado un proxy transparente o WPAD en la topología de red, no es necesario que haya opciones de configuración especiales. Para obtener más información sobre las exclusiones de [](production-deployment.md#proxy-service-urls) url de extremo de Microsoft Defender en el proxy, consulte la sección Direcciones URL del servicio proxy de este documento para la lista de direcciones URL o en Configurar el proxy de dispositivo y la configuración de conectividad a [Internet.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 
 **Configuración del proxy estático manual:**
 
--   Configuración basada en el Registro
+-   Configuración basada en el registro
 
 -   WinHTTP configurado mediante el comando netsh <br> Adecuado solo para escritorios en una topología estable (por ejemplo: un escritorio en una red corporativa detrás del mismo proxy)
 
 ### <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Configurar manualmente el servidor proxy mediante un proxy estático basado en el registro
 
-Configure un proxy estático basado en el Registro para permitir que solo el sensor de Microsoft Defender for Endpoint informe de datos de diagnóstico y se comunique con Microsoft Defender para los servicios de punto de conexión si un equipo no tiene permiso para conectarse a Internet. El proxy estático se puede configurar mediante la directiva de grupo (GP). La directiva de grupo se puede encontrar aquí:
+Configure un proxy estático basado en el Registro para permitir que solo el sensor de Microsoft Defender para endpoints informe datos de diagnóstico y se comunique con Microsoft Defender para los servicios de punto de conexión si un equipo no tiene permiso para conectarse a Internet. El proxy estático se puede configurar mediante la directiva de grupo (GP). La directiva de grupo se puede encontrar aquí:
 
  - Plantillas administrativas Componentes de Windows Recopilación de datos y versiones preliminares \> Configurar el uso de proxy \> autenticado para el servicio de telemetría y experiencia del usuario \> conectado
      - Estadíla en **Habilitada** y seleccione **Deshabilitar el uso de proxy autenticado**
@@ -175,7 +172,7 @@ Use netsh para configurar un proxy estático en todo el sistema.
 > - Esto afectará a todas las aplicaciones, incluidos los servicios de Windows que utilicen WinHTTP con el proxy predeterminado.</br>
 > - Los portátiles que cambian la topología (por ejemplo: de la oficina a la casa) no funcionan correctamente con netsh. Use la configuración de proxy estático basada en el registro.
 
-1. Abra una línea de comandos con privilegios elevados:
+1. Abra un símbolo del sistema con privilegios elevados:
 
     1. Vaya a **Inicio** y escriba **cmd**.
 
@@ -207,24 +204,27 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 |![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión](images/mdatp-urls.png)<br/>  | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <br><br>[Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
 
-###  <a name="microsoft-defender-for-endpoint-service-backend-ip-range"></a>Intervalo IP de back-end de Servicio de extremo de Microsoft Defender para Endpoint
+###  <a name="microsoft-defender-for-endpoint-service-backend-ip-ranges"></a>Intervalos IP de back-end de Servicio de extremo de Microsoft Defender para Endpoint
 
-Si los dispositivos de red no admiten las direcciones URL enumeradas en la sección anterior, puede usar la siguiente información.
+Si los dispositivos de red no admiten reglas basadas en DNS, usa intervalos IP en su lugar.
 
-Defender for Endpoint se basa en la nube de Azure y se implementa en las siguientes regiones:
+Defender for Endpoint se basa en la nube de Azure, se implementa en las siguientes regiones:
 
-- \+\<Region Name="uswestcentral">
-- \+\<Region Name="useast2">
-- \+\<Region Name="useast">
-- \+\<Region Name="europenorth">
-- \+\<Region Name="europewest">
-- \+\<Region Name="uksouth">
-- \+\<Region Name="ukwest">
+- AzureCloud.eastus
+- AzureCloud.eastus2
+- AzureCloud.westcentralus
+- AzureCloud.northeurope
+- AzureCloud.westeurope
+- AzureCloud.uksouth
+- AzureCloud.ukwest
 
-Puede encontrar el intervalo IP de Azure en Intervalos IP del centro [de datos de Microsoft Azure.](https://www.microsoft.com/en-us/download/details.aspx?id=41653)
+Puede encontrar los intervalos IP de Azure en Intervalos IP de Azure y etiquetas de servicio [: nube pública.](https://www.microsoft.com/download/details.aspx?id=56519)
 
 > [!NOTE]
-> Como solución basada en la nube, el intervalo de direcciones IP puede cambiar. Se recomienda pasar a la configuración de resolución de DNS.
+> Como solución basada en la nube, los intervalos de direcciones IP pueden cambiar. Se recomienda pasar a reglas basadas en DNS.
+
+> [!NOTE]
+> Si es un cliente del Gobierno de Estados Unidos, consulte la sección correspondiente en la página [Defender for Endpoint for US Government.](gov.md#service-backend-ip-ranges)
 
 ## <a name="next-step"></a>Paso siguiente
 

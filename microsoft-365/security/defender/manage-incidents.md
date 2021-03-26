@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4e216f841c8728b1cabd98a931e7326f53344a74
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3edc7e52e93bc08d46536a520bf57735983f493b
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072715"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222628"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Administrar incidentes en Microsoft 365 Defender
 
@@ -82,4 +82,4 @@ Siempre que se realice un cambio o comentario en una alerta, esta se registra en
 Los comentarios agregados aparecen al instante en el panel.
 
 ## <a name="add-incident-tags"></a>Agregar etiquetas de incidente
-Puede agregar etiquetas personalizadas a un incidente, por ejemplo, para marcar un grupo de incidencias con características comunes. Posteriormente, puede filtrar la cola de incidentes para ver los incidentes que tengan una etiqueta específica.
+Puede agregar etiquetas personalizadas a un incidente, por ejemplo, para marcar un grupo de incidentes con una característica común. Posteriormente, puede filtrar la cola de incidentes para ver los incidentes que tengan una etiqueta específica.

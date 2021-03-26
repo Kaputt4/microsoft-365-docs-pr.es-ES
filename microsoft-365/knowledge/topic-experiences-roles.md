@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Obtenga información sobre los roles de usuario en Temas de Viva.
-ms.openlocfilehash: 6d93046a96b60779c3cd3bd6c6aa600cb443118f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e91eda6807634ad27bf6c15c2dd0d1c9434ce299
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917361"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222772"
 ---
 # <a name="microsoft-viva-topics-roles"></a>Roles de los temas de Microsoft Viva 
 
@@ -49,7 +49,7 @@ Un colaborador de temas también puede crear y publicar un nuevo tema a través 
 Para crear y editar un tema, el usuario debe:
 
 -   [Su administrador de Microsoft](./set-up-topic-experiences.md#assign-licenses) 365 le asignará una licencia de Viva Topics.
--   [Tener asignados permisos para crear y editar temas](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center). Esta tarea la realiza el administrador de conocimientos en la página de configuración de Temas de Viva en el Centro de administración de Microsoft 365.
+-   [Tener asignados permisos para crear y editar temas](./topic-experiences-user-permissions.md). Esta tarea la realiza el administrador de conocimientos en la página de configuración de Temas de Viva en el Centro de administración de Microsoft 365.
 
 ## <a name="knowledge-managers"></a>Administradores de conocimientos
 
@@ -64,7 +64,7 @@ Además, un administrador de conocimientos puede editar temas existentes o crear
 
 Para administrar temas, el usuario debe:
 -   [Su administrador de Microsoft](./set-up-topic-experiences.md#assign-licenses) 365 le asignará una licencia de Viva Topics.
--   [Tener asignados permisos para administrar temas](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center)). Esta tarea la realiza el administrador de conocimientos en la página de configuración de Temas de Viva en el Centro de administración de Microsoft 365.
+-   [Tener asignados permisos para administrar temas](./topic-experiences-user-permissions.md)). Esta tarea la realiza el administrador de conocimientos en la página de configuración de Temas de Viva en el Centro de administración de Microsoft 365.
 
 Los usuarios que tienen un buen conocimiento general de su empresa pueden ser buenos candidatos para el rol de administrador de conocimientos. Es posible que estas personas no solo tengan conocimientos para saber si los temas son válidos o no, sino que también pueden conocer a personas dentro de la empresa relacionadas con esos temas.
 

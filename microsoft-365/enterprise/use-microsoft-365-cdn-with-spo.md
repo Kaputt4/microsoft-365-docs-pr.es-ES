@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: bebb285f-1d54-4f79-90a5-94985afc6af8
 description: Obtenga información sobre cómo usar la Red de entrega de contenido (CDN) de Office 365 para acelerar la entrega de los activos de SharePoint Online.
-ms.openlocfilehash: 6b740fc1429613627e0597dc6ecf2e150c015989
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 17c80b8718ea46c9dfba9f803093974e8ce3e706
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924821"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222688"
 ---
 # <a name="use-the-office-365-content-delivery-network-cdn-with-sharepoint-online"></a>Uso de la red de entrega de contenido (CDN) de Office 365 con SharePoint Online
 
@@ -888,7 +888,7 @@ Si desea usar la dirección URL completa para el activo en lugar de una ruta de 
 `https://<TenantHostName>.sharepoint.com/sites/site/CDN_origins/public/image.png`
 
 > [!NOTE]
-> En general, no debe codificar las direcciones URL directamente a los activos de la red CDN. Sin embargo, puede crear manualmente direcciones URL para activos en orígenes públicos si es necesario. Para obtener más información, [vea Hardcoding CDN URLs for public assets](use-microsoft-365-cdn-with-spo.md#hardcoding-cdn-urls-for-public-assets).
+> En general, no debe codificar las direcciones URL directamente a los activos de la red CDN. Sin embargo, puede crear manualmente direcciones URL para activos en orígenes públicos si es necesario. Para obtener más información, [vea Hardcoding CDN URLs for public assets](use-microsoft-365-cdn-with-spo.md).
 
 Para obtener información sobre cómo comprobar que los activos se están sirviendo desde la red CDN, vea ¿Cómo confirmo que la red [CDN](use-microsoft-365-cdn-with-spo.md#CDNConfirm) proporciona servicios a los activos? en la sección Solución de problemas de la red CDN de [Office 365.](use-microsoft-365-cdn-with-spo.md#CDNTroubleshooting)
 

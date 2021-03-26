@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Obtener información sobre cómo crear un extractor en Microsoft SharePoint Syntex.
-ms.openlocfilehash: 8218d04d2f5cb4e8f8f67bdcd744b7f1a4a4d18a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e95df00c2601bccc5041f96c745048adc8dfc91f
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905817"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222796"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Crear un extractor en Microsoft SharePoint Syntex
 
@@ -91,7 +91,7 @@ Para ayudar a identificar la *Fecha de inicio del servicio*, puede crear una exp
 
 ### <a name="use-the-explanation-library"></a>Usar la biblioteca de explicación
 
-Para crear explicaciones para elementos como las fechas, es más fácil [utilizar la biblioteca de explicaciones ](./explanation-types-overview.md#use-the-explanation-library)que introducir manualmente todas las variaciones. La biblioteca de explicaciones es un conjunto de explicaciones de frases y patrones pre generados. La biblioteca trata de proporcionar todos los formatos de listas, frases o patrones comunes, como fechas, números de teléfono, códigos postales y muchos otros. 
+Para crear explicaciones para elementos como las fechas, es más fácil [utilizar la biblioteca de explicaciones ](./explanation-types-overview.md)que introducir manualmente todas las variaciones. La biblioteca de explicaciones es un conjunto de explicaciones de frases y patrones pre generados. La biblioteca trata de proporcionar todos los formatos de listas, frases o patrones comunes, como fechas, números de teléfono, códigos postales y muchos otros. 
 
 Para la muestra de la *Fecha de inicio del servicio*, es más eficiente usar la explicación pre generada para *Fecha* en la biblioteca de explicaciones:
 

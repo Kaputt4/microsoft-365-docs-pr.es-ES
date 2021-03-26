@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 94cb92974b0e73a1254fd024c39d9a6ee620aad3
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 08cb16f6ae6e259d1bc92e7d2bed96f093a435f0
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199542"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222518"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>Implementación basada en Intune para Microsoft Defender para Endpoint para Mac
 
@@ -36,7 +36,7 @@ ms.locfileid: "51199542"
 
 **Se aplica a:**
 
-- [Microsoft Defender para endpoint para Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender para punto de conexión para Mac](microsoft-defender-endpoint-mac.md)
 
 En este tema se describe cómo implementar Microsoft Defender para Endpoint para Mac a través de Intune. Una implementación correcta requiere la finalización de todos los pasos siguientes:
 
@@ -136,8 +136,6 @@ Descargue los paquetes de instalación e incorporación del Centro de seguridad 
 No necesita ningún aprovisionamiento especial para un dispositivo Mac más allá de una instalación [estándar del Portal de empresa.](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)
 
 1. Confirme la administración de dispositivos.
-
-    ![Confirmar captura de pantalla de administración de dispositivos](./images/mdatp-3-confirmdevicemgmt.png)
 
     Seleccione **Abrir preferencias del sistema,** busque **Perfil de administración** en la lista y seleccione **Aprobar...**. El perfil de administración se mostrará como **Verificado**:
 

@@ -2,8 +2,8 @@
 title: 'Centro de administración de Microsoft 365: información general'
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,18 +21,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga más información sobre el Centro de administración de Microsoft 365.
-ms.openlocfilehash: b936a42629086c8674bd2d89454e98e387b15efc
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 5ae72b51657cea1ce635c622e875cdf736ee1598
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423040"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221766"
 ---
-# <a name="overview-of-the-microsoft-365-admin-center"></a>Información general sobre el Centro de administración de Microsoft 365
+# <a name="overview-of-the-microsoft-365-admin-center"></a>Información general del Centro de administración de Microsoft 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
 El Centro de administración de Microsoft 365 es donde administra su empresa en la nube. Puede completar tareas como agregar y quitar usuarios, cambiar licencias y restablecer contraseñas. 
+
+Las áreas de trabajo especializadas, como seguridad o administración de dispositivos, permiten un control más detallado. Para obtener más información sobre cómo funcionan conjuntamente los centros de administración, vea ¿Qué sucede con los tipos específicos de roles de TI y otros espacios de trabajo como Seguridad, Administración de [dispositivos o Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) en este artículo.
 
 Para ir al Centro de administración de Microsoft 365, vaya [a admin.microsoft.com](https://admin.microsoft.com) o, si ya ha iniciado sesión, seleccione el iniciador de aplicaciones y elija **Administrador**.
 
@@ -51,3 +53,112 @@ Para habilitar más características que vienen con la suscripción, seleccione 
 Si necesita soporte técnico en cualquier momento, elija **Necesita ayuda**. Escribe tu pregunta y, a continuación, echa un vistazo a los vínculos que aparecen. Si no obtiene la respuesta aquí, elija Póngase en contacto con el soporte **técnico** para abrir una solicitud de servicio. 
 
 Para obtener más información sobre la administración de facturación, contraseñas, usuarios y administradores, consulte las otras lecciones de este curso.
+
+## <a name="who-is-an-admin"></a>¿Quién es un administrador? 
+
+De forma predeterminada, la persona que se inscribe y compra una suscripción de Microsoft 365 para empresas obtiene permisos de administrador. Esa persona puede asignar permisos de administrador a otras personas para ayudarles a administrar Microsoft 365 para su organización.
+
+Si recibe el mensaje **"No** tiene permiso para tener acceso a esta página o realizar esta acción", no es administrador.
+<br><br>    
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/3a4e19ee-1a2a-473f-8995-06de0052c169?autoplay=false]
+  
+### <a name="who-has-admin-permissions-in-my-business"></a>¿Quién dispone de permisos de administrador en mi empresa?
+<a name="bkmk_admin"> </a>
+
+A la hora de buscar a su administrador para restablecer su contraseña, eliminar una cuenta o realizar otras tareas, debería ponerse en contacto con él de la siguiente manera:
+  
+- **Universidades y escuelas**: póngase en contacto con su equipo de soporte técnico. Normalmente puede encontrar un vínculo en el sitio de su universidad. En escuelas más pequeñas, puede haber solo algunas personas que tienen permisos de administrador. 
+    
+- **Grandes empresas**: póngase en contacto con el departamento de soporte técnico. 
+    
+- **Pequeñas empresas**: póngase en contacto con el propietario o copropietario de la empresa. A menudo se proporcionan permisos de administrador a los consultores de TI que hacen el trabajo de mantenimiento informático para la empresa. 
+  
+Si no tiene idea de con quién ponerse en contacto en su trabajo o escuela para obtener ayuda, intente preguntar a la persona que le proporcionó su cuenta de usuario y contraseña.
+
+> [!NOTE]
+> Los administradores de la versión dirigida tienen acceso primero a las nuevas características. Más adelante, las nuevas características se lanzan a todos los administradores. Esto significa que es posible que no vea el Centro de administración o que tenga un aspecto diferente al descrito en los artículos de ayuda. Para ser uno de los primeros en ver nuevas características, consulta Participar en el centro de administración, a continuación. 
+
+## <a name="turn-on-targeted-release"></a>Activar la versión dirigida
+
+1. Inicie sesión en [admin.microsoft.com](https://admin.microsoft.com), vaya al panel de navegación y seleccione **Configuración** \> **Perfil de organización**.
+
+2. Vaya a la **tarjeta de preferencias Versión** y, a continuación, seleccione **Editar**. 
+    
+3. Seleccione **La versión dirigida para todos o** la versión dirigida para los usuarios **seleccionados.** Si elige La versión dirigida para los usuarios seleccionados, asegúrese de agregar su cuenta de administrador (y cualquier otro administrador de su organización que quiera participar) a la lista de usuarios seleccionados.
+    
+## <a name="admin-center-feedback"></a>Comentarios del Centro de administración
+
+Mientras esté en el Centro de administración, puede  enviar comentarios a Microsoft sobre su experiencia seleccionando Dar comentarios justo al lado del botón ¿Necesita **ayuda?** en la parte inferior de cada página. Díganos lo que le gusta y lo que podríamos hacer mejor. Además, puede obtener encuestas emergentes de vez en cuando preguntando sobre sus impresiones generales o una experiencia determinada que se acaba de publicar. También puede enviar comentarios al final de este artículo seleccionando **¿Esta información fue útil?**
+
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+
+¿No ve sus preguntas contestadas aquí? Vaya a la **sección** Comentarios de la parte inferior de esta página y haga su pregunta. 
+  
+### <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>¿Qué planes de Microsoft 365 están disponibles para prueba o compra?
+
+Microsoft 365 es una solución completa e inteligente que incluye Office 365, Windows 10 y Enterprise Mobility + Security que permite a todos ser creativos y trabajar juntos de forma segura. Las siguientes suscripciones de Microsoft 365 están disponibles en el Centro de administración para que pruebes o compres ahora:
+  
+- Microsoft 365 para negocios
+- Microsoft 365 Enterprise E3
+- Microsoft 365 Enterprise E5
+    
+Para obtener más información, [vea Try or buy a Microsoft 365 subscription](../commerce/try-or-buy-microsoft-365.md).
+
+### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>He encontrado un error o deseo solicitar una mejora de características. ¿Cómo se lo puedo saber a Microsoft?
+
+Nos encanta saber de ti. Informar de errores y compartir comentarios nos ayuda a mejorar el Centro de administración de Microsoft 365. Para enviar comentarios, selecciona el **botón** Comentarios en la parte inferior de la página y usa el formulario para enviarnos tus comentarios. Active la casilla y confirme su dirección de correo electrónico si desea que alguien del equipo del Centro de administración de Microsoft 365 haga un seguimiento de sus comentarios. No podemos prometer hacer un seguimiento de cada comentario, pero vamos a intentarlo. 
+  
+También puede enviar comentarios desde fuera del centro de administración en nuestro foro uservoice. Puede usar esta página para hacer sugerencias de características que puedan ser votadas por otros usuarios del foro: [Foro de UserVoice para el nuevo centro de administración.](https://go.microsoft.com/fwlink/?linkid=2024994)
+
+### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>¿Qué sucede con los tipos específicos de roles de TI y otras áreas de trabajo como Seguridad, Administración de dispositivos o Exchange?
+
+El Centro de administración de Microsoft 365 es el punto de entrada común para todos los equipos y roles que administran Microsoft 365. La experiencia, la información y los controles se personalizan y personalizan para cada administrador y rol. Además, las áreas de trabajo especializadas permiten un control detallado y profundo. Estas áreas de trabajo especializadas incluyen SharePoint, &amp; Skype Teams, Exchange, Seguridad, Cumplimiento, Administración de dispositivos y Azure Active Directory. Puede encontrar las áreas de trabajo especializadas en el panel de navegación en el Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) .
+
+### <a name="what-language-options-are-available-the-admin-center"></a>¿Qué opciones de idioma están disponibles en el Centro de administración?
+
+El Centro de administración de Microsoft 365 está totalmente localizado en 40 idiomas.
+
+|Idioma |Locale |
+|---------|---------|
+|Árabe | ar |
+|Búlgaro | bg |
+|Catalán | ca |
+|Checo | cs |
+|Danés | da |
+|Alemán | de |
+|Griego | el |
+|Español | es |
+|Inglés | en |
+|Estonio | et |
+|Euskera | eu |
+|Finés | fi |
+|Francés | fr |
+|Gallego | gl |
+|Hebreo | he |
+|Croata | hr |
+|Húngaro | hu |
+|Indonesio  | id |
+|Italiano | it |
+|Japonés | ja |
+|Coreano | ko |
+|Lituano | lt |
+|Letón | lv |
+|Neerlandés | nl |
+|Noruego | no |
+|Polaco | pl |
+|Portugués (Brasil) | pt |
+|Portugués (Portugal) | pt-pt |
+|Rumano | ro |
+|Ruso | ru |
+|Eslovaco | sk |
+|Esloveno | sl |
+|Serbio (cirílico)  | sr-cyrl |
+|Serbian Latin | sr |
+|Sueco | sv |
+|Tailandés | th |
+|Turco | tr |
+|Ucraniano | uk |
+|Vietnamita | vi |
+|Chinese Simplified | zh-hans |
+|Chinese Traditional | zh-hant |
+  
