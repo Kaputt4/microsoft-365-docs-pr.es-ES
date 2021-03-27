@@ -187,7 +187,7 @@
         - name: Administrar otros correos para su organización
           href: email/configure-clutter.md
     - name: Administrar dominios
-      href: get-help-with-domains/what-is-a-domain.md
+      href: get-help-with-domains/index.yml
       items:
         - name: Agregar un dominio
           href: setup/add-domain.md
