@@ -10,110 +10,195 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a administrar las compras de autoservicio realizadas por los usuarios de su organización.
-ms.openlocfilehash: 2ce12b7dba4e765745a94fa10f4ba15e7013e3c8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: febf0ee470e735a454dc7a9e747de5025c7a4a51
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920185"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398186"
 ---
-# <a name="manage-self-service-purchases-admin"></a><span data-ttu-id="baf28-103">Administrar compras de autoservicio (administrador)</span><span class="sxs-lookup"><span data-stu-id="baf28-103">Manage self-service purchases (Admin)</span></span>
+# <a name="manage-self-service-purchases-admin"></a><span data-ttu-id="3728b-103">Administrar compras de autoservicio (administrador)</span><span class="sxs-lookup"><span data-stu-id="3728b-103">Manage self-service purchases (Admin)</span></span>
 
-::: moniker range="o365-21vianet"
+<span data-ttu-id="3728b-104">Como administrador, puede ver las compras de autoservicio realizadas por personas de su organización.</span><span class="sxs-lookup"><span data-stu-id="3728b-104">As an admin, you can see self-service purchases made by people in your organization.</span></span> <span data-ttu-id="3728b-105">Verá el nombre del producto, el nombre del comprador, las suscripciones compradas, la fecha de expiración, el precio de compra y los usuarios asignados para cada compra de autoservicio.</span><span class="sxs-lookup"><span data-stu-id="3728b-105">You see the product name, purchaser name, subscriptions purchased, expiration date, purchase price, and assigned users for each self-service purchase.</span></span> <span data-ttu-id="3728b-106">Si la organización lo requiere, puede desactivar las compras de autoservicio por producto a través de PowerShell.</span><span class="sxs-lookup"><span data-stu-id="3728b-106">If required by your organization, you can turn off self-service purchasing on a per product basis via PowerShell.</span></span> <span data-ttu-id="3728b-107">Tiene las mismas directivas de administración de datos y acceso a los productos comprados a través de la compra de autoservicio o de forma centralizada.</span><span class="sxs-lookup"><span data-stu-id="3728b-107">You have the same data management and access policies over products bought through self-service purchase or centrally.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="baf28-104">El Centro de administración está cambiando.</span><span class="sxs-lookup"><span data-stu-id="baf28-104">The admin center is changing.</span></span> <span data-ttu-id="baf28-105">Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).</span><span class="sxs-lookup"><span data-stu-id="baf28-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).</span></span>
+<span data-ttu-id="3728b-108">También puede controlar si los usuarios de su organización pueden realizar compras de autoservicio.</span><span class="sxs-lookup"><span data-stu-id="3728b-108">You can also control whether users in your organization can make self-service purchases.</span></span> <span data-ttu-id="3728b-109">Para obtener más información, [vea Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="3728b-109">For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).</span></span>
+
+## <a name="view-self-service-subscriptions"></a><span data-ttu-id="3728b-110">Ver suscripciones de autoservicio</span><span class="sxs-lookup"><span data-stu-id="3728b-110">View self-service subscriptions</span></span>
+
+::: moniker range="o365-worldwide"
+
+1. <span data-ttu-id="3728b-111">En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="3728b-111">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
 
 ::: moniker-end
 
-<span data-ttu-id="baf28-106">Como administrador, puede ver las compras de autoservicio realizadas por personas de su organización.</span><span class="sxs-lookup"><span data-stu-id="baf28-106">As an admin, you can see self-service purchases made by people in your organization.</span></span> <span data-ttu-id="baf28-107">Verá el nombre del producto, el nombre del comprador, las suscripciones compradas, la fecha de expiración, el precio de compra y los usuarios asignados para cada compra de autoservicio.</span><span class="sxs-lookup"><span data-stu-id="baf28-107">You see the product name, purchaser name, subscriptions purchased, expiration date, purchase price, and assigned users for each self-service purchase.</span></span> <span data-ttu-id="baf28-108">Si la organización lo requiere, puede desactivar las compras de autoservicio por producto a través de PowerShell.</span><span class="sxs-lookup"><span data-stu-id="baf28-108">If required by your organization, you can turn off self-service purchasing on a per product basis via PowerShell.</span></span> <span data-ttu-id="baf28-109">Tiene las mismas directivas de administración de datos y acceso a los productos comprados a través de la compra de autoservicio o de forma centralizada.</span><span class="sxs-lookup"><span data-stu-id="baf28-109">You have the same data management and access policies over products bought through self-service purchase or centrally.</span></span>
+::: moniker range="o365-germany"
 
-<span data-ttu-id="baf28-110">También puede controlar si los usuarios de su organización pueden realizar compras de autoservicio.</span><span class="sxs-lookup"><span data-stu-id="baf28-110">You can also control whether users in your organization can make self-service purchases.</span></span> <span data-ttu-id="baf28-111">Para obtener más información, [vea Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="baf28-111">For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).</span></span>
+1. <span data-ttu-id="3728b-112">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.</span><span class="sxs-lookup"><span data-stu-id="3728b-112">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.</span></span>
 
-## <a name="view-self-service-subscriptions"></a><span data-ttu-id="baf28-112">Ver suscripciones de autoservicio</span><span class="sxs-lookup"><span data-stu-id="baf28-112">View self-service subscriptions</span></span>
+::: moniker-end
 
-1. <span data-ttu-id="baf28-113">En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="baf28-113">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
-2. <span data-ttu-id="baf28-114">En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**</span><span class="sxs-lookup"><span data-stu-id="baf28-114">On the **Products** tab, select the filter icon, then select **Self-service**.</span></span>
-3. <span data-ttu-id="baf28-115">Para ver más detalles sobre una suscripción, elija una de la lista.</span><span class="sxs-lookup"><span data-stu-id="baf28-115">To view more details about a subscription, choose one from the list.</span></span>
+::: moniker range="o365-21vianet"
 
-## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a><span data-ttu-id="baf28-116">Ver quién tiene licencias para una suscripción de compra de autoservicio</span><span class="sxs-lookup"><span data-stu-id="baf28-116">View who has licenses for a self-service purchase subscription</span></span>
+1. <span data-ttu-id="3728b-113">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.</span><span class="sxs-lookup"><span data-stu-id="3728b-113">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.</span></span>
 
-1. <span data-ttu-id="baf28-117">En el Centro de administración, vaya a la página **Licencias**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">de</a> facturación.</span><span class="sxs-lookup"><span data-stu-id="baf28-117">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.</span></span>
-2. <span data-ttu-id="baf28-118">Seleccione el icono de filtro y, a continuación, **elija Autoservicio.**</span><span class="sxs-lookup"><span data-stu-id="baf28-118">Select the filter icon, then choose **Self-service**.</span></span>
-3. <span data-ttu-id="baf28-119">Seleccione un producto para ver las licencias asignadas a personas.</span><span class="sxs-lookup"><span data-stu-id="baf28-119">Select a product to see licenses assigned to people.</span></span>
-    > [!NOTE]
-    > <span data-ttu-id="baf28-120">Si hay varias compras para un producto, ese producto  solo aparece una vez y la columna Cantidad disponible muestra el total de todas las suscripciones compradas para ese producto.</span><span class="sxs-lookup"><span data-stu-id="baf28-120">If there are multiple purchases for a product, that product is only listed once, and the **Available quantity** column shows the total of all subscriptions bought for that product.</span></span>
-4. <span data-ttu-id="baf28-121">La **lista** de usuarios se agrupa por los nombres de las personas que realizaron compras de autoservicio.</span><span class="sxs-lookup"><span data-stu-id="baf28-121">The **Users** list is grouped by the names of people who made self-service purchases.</span></span>
-5. <span data-ttu-id="baf28-122">Para exportar una lista de usuarios con licencias para estas suscripciones, elija las suscripciones que desea exportar y, a continuación, **elija Exportar usuarios**.</span><span class="sxs-lookup"><span data-stu-id="baf28-122">To export a list of users with licenses for these subscriptions, choose the subscriptions that you want to export, then choose **Export users**.</span></span>
+::: moniker-end
 
-## <a name="disable-or-enable-self-service-purchases"></a><span data-ttu-id="baf28-123">Deshabilitar o habilitar compras de autoservicio</span><span class="sxs-lookup"><span data-stu-id="baf28-123">Disable or enable self-service purchases</span></span>
+2. <span data-ttu-id="3728b-114">En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**</span><span class="sxs-lookup"><span data-stu-id="3728b-114">On the **Products** tab, select the filter icon, then select **Self-service**.</span></span>
+3. <span data-ttu-id="3728b-115">Para ver más detalles sobre una suscripción, elija una de la lista.</span><span class="sxs-lookup"><span data-stu-id="3728b-115">To view more details about a subscription, choose one from the list.</span></span>
 
-<span data-ttu-id="baf28-124">Puede deshabilitar o habilitar compras de autoservicio para los usuarios de su organización.</span><span class="sxs-lookup"><span data-stu-id="baf28-124">You can disable or enable self-service purchases for users in your organization.</span></span> <span data-ttu-id="baf28-125">El módulo de PowerShell de **MSCommerce** incluye un valor de parámetro **PolicyID** para **AllowSelfServicePurchase** que le permite controlar si los usuarios de su organización pueden realizar compras de autoservicio y para qué productos.</span><span class="sxs-lookup"><span data-stu-id="baf28-125">The **MSCommerce** PowerShell module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases, and for which products.</span></span>
-
-<span data-ttu-id="baf28-126">Puede usar el módulo **MSCommerce** PowerShell para:</span><span class="sxs-lookup"><span data-stu-id="baf28-126">You can use the **MSCommerce** PowerShell module to:</span></span>
-
-- <span data-ttu-id="baf28-127">Ver el estado predeterminado del valor del parámetro **AllowSelfServicePurchase,** ya sea que esté habilitado o deshabilitado por el producto</span><span class="sxs-lookup"><span data-stu-id="baf28-127">View the default state of the **AllowSelfServicePurchase** parameter value—whether it's enabled or disabled by product</span></span>
-- <span data-ttu-id="baf28-128">Ver una lista de productos aplicables y si la compra de autoservicio está habilitada o deshabilitada</span><span class="sxs-lookup"><span data-stu-id="baf28-128">View a list of applicable products and whether self-service purchase is enabled or disabled</span></span>
-- <span data-ttu-id="baf28-129">Ver o modificar la configuración actual de un producto específico para habilitarlo o deshabilitarlo</span><span class="sxs-lookup"><span data-stu-id="baf28-129">View or modify the current setting for a specific product to either enable or disable it</span></span>
-
-<span data-ttu-id="baf28-130">Para obtener más información, [vea Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="baf28-130">For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).</span></span>
-
-## <a name="centralize-licenses-under-a-single-subscription"></a><span data-ttu-id="baf28-131">Centralizar licencias en una sola suscripción</span><span class="sxs-lookup"><span data-stu-id="baf28-131">Centralize licenses under a single subscription</span></span>
-
-<span data-ttu-id="baf28-132">Puede asignar licencias existentes o comprar suscripciones adicionales a través de acuerdos existentes para usuarios asignados a compras de autoservicio.</span><span class="sxs-lookup"><span data-stu-id="baf28-132">You can assign existing licenses or purchase additional subscriptions through existing agreements for users assigned to self-service purchases.</span></span> <span data-ttu-id="baf28-133">Después de asignar estas licencias compradas de forma centralizada, puede solicitar que los compradores cancelen sus suscripciones existentes.</span><span class="sxs-lookup"><span data-stu-id="baf28-133">After you assign these centrally purchased licenses, you can request that purchasers cancel their existing subscriptions.</span></span>
-
-1. <span data-ttu-id="baf28-134">En el Centro de administración, vaya a la página **Servicios de compra** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">facturación.</a></span><span class="sxs-lookup"><span data-stu-id="baf28-134">In the admin center go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.</span></span>
-2. <span data-ttu-id="baf28-135">Busque y elija el producto que desea comprar y, a continuación, elija **Comprar**.</span><span class="sxs-lookup"><span data-stu-id="baf28-135">Find and choose the product that you want to buy, then choose **Buy**.</span></span>
-3. <span data-ttu-id="baf28-136">Complete los pasos restantes para completar la compra.</span><span class="sxs-lookup"><span data-stu-id="baf28-136">Complete the remaining steps to complete your purchase.</span></span>
-4. <span data-ttu-id="baf28-137">Siga los pasos de [Ver](#view-who-has-licenses-for-a-self-service-purchase-subscription) quién tiene licencias para una suscripción comprada por autoservicio para exportar una lista de usuarios a los que hacer referencia en el paso siguiente.</span><span class="sxs-lookup"><span data-stu-id="baf28-137">Follow the steps in [View who has licenses for a self-service purchased subscription](#view-who-has-licenses-for-a-self-service-purchase-subscription) to export a list of users to reference in the next step.</span></span>
-5. <span data-ttu-id="baf28-138">Asignar licencias a todos los usuarios que tienen una licencia en la otra suscripción.</span><span class="sxs-lookup"><span data-stu-id="baf28-138">Assign licenses to everyone who has a license in the other subscription.</span></span> <span data-ttu-id="baf28-139">Para ver los pasos [completos, vea Asignar licencias a los usuarios.](../../admin/manage/assign-licenses-to-users.md)</span><span class="sxs-lookup"><span data-stu-id="baf28-139">For full steps, see [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).</span></span>
-6. <span data-ttu-id="baf28-140">Póngase en contacto con la persona que compró la suscripción de compra de autoservicio y pídale que [la cancele.](manage-self-service-purchases-users.md#cancel-a-subscription)</span><span class="sxs-lookup"><span data-stu-id="baf28-140">Contact the person who bought the self-service purchase subscription and ask them to [cancel it](manage-self-service-purchases-users.md#cancel-a-subscription).</span></span>
-
-## <a name="take-over-a-self-service-purchase-subscription"></a><span data-ttu-id="baf28-141">Asumir una suscripción de compra de autoservicio</span><span class="sxs-lookup"><span data-stu-id="baf28-141">Take over a self-service purchase subscription</span></span>
-
-<span data-ttu-id="baf28-142">Puede hacerse cargo de una suscripción de compra de autoservicio realizada por un usuario de su organización.</span><span class="sxs-lookup"><span data-stu-id="baf28-142">You can take over a self-service purchase subscription made by a user in your organization.</span></span> <span data-ttu-id="baf28-143">Al asumir una suscripción de compra de autoservicio, tiene dos opciones:</span><span class="sxs-lookup"><span data-stu-id="baf28-143">When you take over a self-service purchase subscription, you have two options:</span></span>
-
-1. <span data-ttu-id="baf28-144">Mueva los usuarios a una suscripción diferente y cancele la suscripción original.</span><span class="sxs-lookup"><span data-stu-id="baf28-144">Move the users to a different subscription and cancel the original subscription.</span></span>
-2. <span data-ttu-id="baf28-145">Cancele la suscripción de compra de autoservicio y quite las licencias de los usuarios asignados.</span><span class="sxs-lookup"><span data-stu-id="baf28-145">Cancel the self-service purchase subscription and remove licenses from assigned users.</span></span>
-
-### <a name="move-users-to-a-different-subscription"></a><span data-ttu-id="baf28-146">Mover usuarios a una suscripción diferente</span><span class="sxs-lookup"><span data-stu-id="baf28-146">Move users to a different subscription</span></span>
-
-<span data-ttu-id="baf28-147">Al mover usuarios a una suscripción diferente, la suscripción antigua se cancela automáticamente.</span><span class="sxs-lookup"><span data-stu-id="baf28-147">When you move users to a different subscription, the old subscription is automatically canceled.</span></span> <span data-ttu-id="baf28-148">El usuario que compró originalmente la suscripción de compra de autoservicio recibe un correo electrónico que indica que se canceló la suscripción.</span><span class="sxs-lookup"><span data-stu-id="baf28-148">The user who originally bought the self-service purchase subscription receives an email that says the subscription was canceled.</span></span>
+## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a><span data-ttu-id="3728b-116">Ver quién tiene licencias para una suscripción de compra de autoservicio</span><span class="sxs-lookup"><span data-stu-id="3728b-116">View who has licenses for a self-service purchase subscription</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="baf28-149">Debe tener una licencia disponible para cada usuario al que se está moviendo en la suscripción a la que va a mover usuarios.</span><span class="sxs-lookup"><span data-stu-id="baf28-149">You must have an available license for each user you’re moving in the subscription that you’re moving users to.</span></span>
+> <span data-ttu-id="3728b-117">Como administrador, no puede asignar ni cancelar la asignación de licencias para una suscripción de compra sin servicio comprada por un usuario de su organización.</span><span class="sxs-lookup"><span data-stu-id="3728b-117">As an admin, you can't assign or unassign licenses for a self-service purchase subscription bought by a user in your organization.</span></span> <span data-ttu-id="3728b-118">Puede asumir [una suscripción de compra de](#take-over-a-self-service-purchase-subscription)autoservicio y, a continuación, asignar o cancelar la asignación de licencias.</span><span class="sxs-lookup"><span data-stu-id="3728b-118">You can [take over a self-service purchase subscription](#take-over-a-self-service-purchase-subscription), and then assign or unassign licenses.</span></span>
 
-1. <span data-ttu-id="baf28-150">En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="baf28-150">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
-2. <span data-ttu-id="baf28-151">En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**</span><span class="sxs-lookup"><span data-stu-id="baf28-151">On the **Products** tab, select the filter icon, then select **Self-service**.</span></span>
-3. <span data-ttu-id="baf28-152">Selecciona la suscripción que quieras asumir.</span><span class="sxs-lookup"><span data-stu-id="baf28-152">Select the subscription that you want to take over.</span></span>
-4. <span data-ttu-id="baf28-153">En la página detalles de la suscripción, en la sección **Suscripciones y** configuración, seleccione Tomar el control de **esta suscripción.**</span><span class="sxs-lookup"><span data-stu-id="baf28-153">On the subscription details page, in the **Subscriptions and settings** section, select **Take control of this subscription**.</span></span>
-5. <span data-ttu-id="baf28-154">En el panel derecho, seleccione **Mover usuarios**.</span><span class="sxs-lookup"><span data-stu-id="baf28-154">In the right pane, select **Move users**.</span></span>
-6. <span data-ttu-id="baf28-155">Seleccione el producto al que desea mover los usuarios y, a continuación, **seleccione Mover usuarios**.</span><span class="sxs-lookup"><span data-stu-id="baf28-155">Select the product that you want to move the users to, then select **Move users**.</span></span>
-7. <span data-ttu-id="baf28-156">En el **cuadro Mover usuarios a,** seleccione **Mover usuarios**.</span><span class="sxs-lookup"><span data-stu-id="baf28-156">In the **Move users to** box, select **Move users**.</span></span> <span data-ttu-id="baf28-157">El proceso de movimiento puede tardar varios minutos.</span><span class="sxs-lookup"><span data-stu-id="baf28-157">The move process might take several minutes.</span></span> <span data-ttu-id="baf28-158">No cierre el explorador mientras se ejecuta el proceso.</span><span class="sxs-lookup"><span data-stu-id="baf28-158">Don’t close your browser while the process runs.</span></span>
-8. <span data-ttu-id="baf28-159">Cuando finalice el proceso de movimiento, cierre el **panel Mover completado**.</span><span class="sxs-lookup"><span data-stu-id="baf28-159">When the move process is finished, close the **Move completed pane**.</span></span>
-9. <span data-ttu-id="baf28-160">En la página de detalles de la suscripción, el estado **de** suscripción de la suscripción comprada por autoservicio se muestra como **Eliminado**.</span><span class="sxs-lookup"><span data-stu-id="baf28-160">On the subscription details page, the **Subscription status** for the self-service purchased subscription shows as **Deleted**.</span></span>
+::: moniker range="o365-worldwide"
 
-### <a name="cancel-a-self-service-purchase-subscription"></a><span data-ttu-id="baf28-161">Cancelar una suscripción de compra de autoservicio</span><span class="sxs-lookup"><span data-stu-id="baf28-161">Cancel a self-service purchase subscription</span></span>
+1. <span data-ttu-id="3728b-119">En el centro de administración, vaya a la página de **Facturación** ><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"> Licencias</a>.</span><span class="sxs-lookup"><span data-stu-id="3728b-119">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.</span></span>
 
-<span data-ttu-id="baf28-162">Cuando decide cancelar una suscripción de compra de autoservicio, los usuarios con licencias pierden el acceso al producto.</span><span class="sxs-lookup"><span data-stu-id="baf28-162">When you choose to cancel a self-service purchase subscription, users with licenses lose access to the product.</span></span> <span data-ttu-id="baf28-163">El usuario que compró originalmente la suscripción de compra de autoservicio recibe un correo electrónico que indica que se canceló la suscripción.</span><span class="sxs-lookup"><span data-stu-id="baf28-163">The user who originally bought the self-service purchase subscription receives an email that says the subscription was canceled.</span></span>
+::: moniker-end
 
-1. <span data-ttu-id="baf28-164">En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="baf28-164">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
-2. <span data-ttu-id="baf28-165">En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**</span><span class="sxs-lookup"><span data-stu-id="baf28-165">On the **Products** tab, select the filter icon, then select **Self-service**.</span></span>
-3. <span data-ttu-id="baf28-166">Seleccione la suscripción que desea cancelar.</span><span class="sxs-lookup"><span data-stu-id="baf28-166">Select the subscription that you want to cancel.</span></span>
-4. <span data-ttu-id="baf28-167">En la página detalles de la suscripción, en la sección **Suscripciones y** configuración, seleccione Tomar el control de **esta suscripción.**</span><span class="sxs-lookup"><span data-stu-id="baf28-167">On the subscription details page, in the **Subscriptions and settings** section, select **Take control of this subscription**.</span></span>
-5. <span data-ttu-id="baf28-168">En el panel derecho, seleccione **Cancelar suscripción**.</span><span class="sxs-lookup"><span data-stu-id="baf28-168">In the right pane, select **Cancel subscription**.</span></span>
-6. <span data-ttu-id="baf28-169">Seleccione un motivo para la cancelación en la lista desplegable y, a continuación, **seleccione Cancelar suscripción**.</span><span class="sxs-lookup"><span data-stu-id="baf28-169">Select a reason for your cancellation from the drop-down list, then select **Cancel subscription**.</span></span>
-7. <span data-ttu-id="baf28-170">En el **cuadro ¿Está seguro de que desea cancelar?** seleccione **Cancelar suscripción**.</span><span class="sxs-lookup"><span data-stu-id="baf28-170">In the **Are you sure you want to cancel?** box, select **Cancel subscription**.</span></span>
-8. <span data-ttu-id="baf28-171">Cierre el panel derecho.</span><span class="sxs-lookup"><span data-stu-id="baf28-171">Close the right pane.</span></span>
-9. <span data-ttu-id="baf28-172">En la página de detalles de la suscripción, el **estado de suscripción** se muestra como **Eliminado**.</span><span class="sxs-lookup"><span data-stu-id="baf28-172">On the subscription details page, the **Subscription status** shows as **Deleted**.</span></span>
+::: moniker range="o365-germany"
 
-## <a name="need-help-contact-us"></a><span data-ttu-id="baf28-173">¿Necesita ayuda?</span><span class="sxs-lookup"><span data-stu-id="baf28-173">Need help?</span></span> <span data-ttu-id="baf28-174">Póngase en contacto con nosotros.</span><span class="sxs-lookup"><span data-stu-id="baf28-174">Contact us.</span></span>
+1. <span data-ttu-id="3728b-120">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página **Licencias** > **de** facturación.</span><span class="sxs-lookup"><span data-stu-id="3728b-120">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Licenses** page.</span></span>
+::: moniker-end
 
-<span data-ttu-id="baf28-175">Para obtener preguntas comunes acerca de las compras de autoservicio, consulta Preguntas más frecuentes sobre compras [de autoservicio.](self-service-purchase-faq.md)</span><span class="sxs-lookup"><span data-stu-id="baf28-175">For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.md).</span></span>
+::: moniker range="o365-21vianet"
 
-<span data-ttu-id="baf28-176">Si tiene preguntas o necesita ayuda con las compras de autoservicio, póngase [en contacto con el soporte técnico](../../admin/contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="baf28-176">If you have questions or need help with self-service purchases, [contact support](../../admin/contact-support-for-business-products.md).</span></span>
+1. <span data-ttu-id="3728b-121">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página **Licencias** > **de** facturación.</span><span class="sxs-lookup"><span data-stu-id="3728b-121">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Licenses** page.</span></span>
+
+::: moniker-end
+
+2. <span data-ttu-id="3728b-122">Seleccione el icono de filtro y, a continuación, **elija Autoservicio.**</span><span class="sxs-lookup"><span data-stu-id="3728b-122">Select the filter icon, then choose **Self-service**.</span></span>
+3. <span data-ttu-id="3728b-123">Seleccione un producto para ver las licencias asignadas a personas.</span><span class="sxs-lookup"><span data-stu-id="3728b-123">Select a product to see licenses assigned to people.</span></span>
+    > [!NOTE]
+    > <span data-ttu-id="3728b-124">Si hay varias compras para un producto, ese producto  solo aparece una vez y la columna Cantidad disponible muestra el total de todas las suscripciones compradas para ese producto.</span><span class="sxs-lookup"><span data-stu-id="3728b-124">If there are multiple purchases for a product, that product is only listed once, and the **Available quantity** column shows the total of all subscriptions bought for that product.</span></span>
+4. <span data-ttu-id="3728b-125">La **lista** de usuarios se agrupa por los nombres de las personas que realizaron compras de autoservicio.</span><span class="sxs-lookup"><span data-stu-id="3728b-125">The **Users** list is grouped by the names of people who made self-service purchases.</span></span>
+5. <span data-ttu-id="3728b-126">Para exportar una lista de usuarios con licencias para estas suscripciones, elija las suscripciones que desea exportar y, a continuación, **elija Exportar usuarios**.</span><span class="sxs-lookup"><span data-stu-id="3728b-126">To export a list of users with licenses for these subscriptions, choose the subscriptions that you want to export, then choose **Export users**.</span></span>
+
+## <a name="disable-or-enable-self-service-purchases"></a><span data-ttu-id="3728b-127">Deshabilitar o habilitar compras de autoservicio</span><span class="sxs-lookup"><span data-stu-id="3728b-127">Disable or enable self-service purchases</span></span>
+
+<span data-ttu-id="3728b-128">Puede deshabilitar o habilitar compras de autoservicio para los usuarios de su organización.</span><span class="sxs-lookup"><span data-stu-id="3728b-128">You can disable or enable self-service purchases for users in your organization.</span></span> <span data-ttu-id="3728b-129">El módulo de PowerShell de **MSCommerce** incluye un valor de parámetro **PolicyID** para **AllowSelfServicePurchase** que le permite controlar si los usuarios de su organización pueden realizar compras de autoservicio y para qué productos.</span><span class="sxs-lookup"><span data-stu-id="3728b-129">The **MSCommerce** PowerShell module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases, and for which products.</span></span>
+
+<span data-ttu-id="3728b-130">Puede usar el módulo **MSCommerce** PowerShell para:</span><span class="sxs-lookup"><span data-stu-id="3728b-130">You can use the **MSCommerce** PowerShell module to:</span></span>
+
+- <span data-ttu-id="3728b-131">Ver el estado predeterminado del valor del parámetro **AllowSelfServicePurchase,** ya sea que esté habilitado o deshabilitado por el producto</span><span class="sxs-lookup"><span data-stu-id="3728b-131">View the default state of the **AllowSelfServicePurchase** parameter value—whether it's enabled or disabled by product</span></span>
+- <span data-ttu-id="3728b-132">Ver una lista de productos aplicables y si la compra de autoservicio está habilitada o deshabilitada</span><span class="sxs-lookup"><span data-stu-id="3728b-132">View a list of applicable products and whether self-service purchase is enabled or disabled</span></span>
+- <span data-ttu-id="3728b-133">Ver o modificar la configuración actual de un producto específico para habilitarlo o deshabilitarlo</span><span class="sxs-lookup"><span data-stu-id="3728b-133">View or modify the current setting for a specific product to either enable or disable it</span></span>
+
+<span data-ttu-id="3728b-134">Para obtener más información, [vea Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).</span><span class="sxs-lookup"><span data-stu-id="3728b-134">For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).</span></span>
+
+## <a name="centralize-licenses-under-a-single-subscription"></a><span data-ttu-id="3728b-135">Centralizar licencias en una sola suscripción</span><span class="sxs-lookup"><span data-stu-id="3728b-135">Centralize licenses under a single subscription</span></span>
+
+<span data-ttu-id="3728b-136">Puede asignar licencias existentes o comprar suscripciones adicionales a través de acuerdos existentes para usuarios asignados a compras de autoservicio.</span><span class="sxs-lookup"><span data-stu-id="3728b-136">You can assign existing licenses or purchase additional subscriptions through existing agreements for users assigned to self-service purchases.</span></span> <span data-ttu-id="3728b-137">Después de asignar estas licencias compradas de forma centralizada, puede solicitar que los compradores cancelen sus suscripciones existentes.</span><span class="sxs-lookup"><span data-stu-id="3728b-137">After you assign these centrally purchased licenses, you can request that purchasers cancel their existing subscriptions.</span></span>
+
+::: moniker range="o365-worldwide"
+
+1. <span data-ttu-id="3728b-138">En el Centro de administración, vaya a la página **Servicios de compra** de > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">facturación.</a></span><span class="sxs-lookup"><span data-stu-id="3728b-138">In the admin center go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.</span></span>
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. <span data-ttu-id="3728b-139">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página **Servicios de compra** de > **facturación.**</span><span class="sxs-lookup"><span data-stu-id="3728b-139">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Purchase services** page.</span></span>
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. <span data-ttu-id="3728b-140">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página **Servicios de compra** de > **facturación.**</span><span class="sxs-lookup"><span data-stu-id="3728b-140">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Purchase services** page.</span></span>
+
+::: moniker-end
+
+2. <span data-ttu-id="3728b-141">Busque y elija el producto que desea comprar y, a continuación, elija **Comprar**.</span><span class="sxs-lookup"><span data-stu-id="3728b-141">Find and choose the product that you want to buy, then choose **Buy**.</span></span>
+3. <span data-ttu-id="3728b-142">Complete los pasos restantes para completar la compra.</span><span class="sxs-lookup"><span data-stu-id="3728b-142">Complete the remaining steps to complete your purchase.</span></span>
+4. <span data-ttu-id="3728b-143">Siga los pasos de [Ver](#view-who-has-licenses-for-a-self-service-purchase-subscription) quién tiene licencias para una suscripción comprada por autoservicio para exportar una lista de usuarios a los que hacer referencia en el paso siguiente.</span><span class="sxs-lookup"><span data-stu-id="3728b-143">Follow the steps in [View who has licenses for a self-service purchased subscription](#view-who-has-licenses-for-a-self-service-purchase-subscription) to export a list of users to reference in the next step.</span></span>
+5. <span data-ttu-id="3728b-144">Asignar licencias a todos los usuarios que tienen una licencia en la otra suscripción.</span><span class="sxs-lookup"><span data-stu-id="3728b-144">Assign licenses to everyone who has a license in the other subscription.</span></span> <span data-ttu-id="3728b-145">Para ver los pasos [completos, vea Asignar licencias a los usuarios.](../../admin/manage/assign-licenses-to-users.md)</span><span class="sxs-lookup"><span data-stu-id="3728b-145">For full steps, see [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).</span></span>
+6. <span data-ttu-id="3728b-146">Póngase en contacto con la persona que compró la suscripción de compra de autoservicio y pídale que [la cancele.](manage-self-service-purchases-users.md#cancel-a-subscription)</span><span class="sxs-lookup"><span data-stu-id="3728b-146">Contact the person who bought the self-service purchase subscription and ask them to [cancel it](manage-self-service-purchases-users.md#cancel-a-subscription).</span></span>
+
+## <a name="take-over-a-self-service-purchase-subscription"></a><span data-ttu-id="3728b-147">Asumir una suscripción de compra de autoservicio</span><span class="sxs-lookup"><span data-stu-id="3728b-147">Take over a self-service purchase subscription</span></span>
+
+<span data-ttu-id="3728b-148">Puede hacerse cargo de una suscripción de compra de autoservicio realizada por un usuario de su organización.</span><span class="sxs-lookup"><span data-stu-id="3728b-148">You can take over a self-service purchase subscription made by a user in your organization.</span></span> <span data-ttu-id="3728b-149">Al asumir una suscripción de compra de autoservicio, tiene dos opciones:</span><span class="sxs-lookup"><span data-stu-id="3728b-149">When you take over a self-service purchase subscription, you have two options:</span></span>
+
+1. <span data-ttu-id="3728b-150">Mueva los usuarios a una suscripción diferente y cancele la suscripción original.</span><span class="sxs-lookup"><span data-stu-id="3728b-150">Move the users to a different subscription and cancel the original subscription.</span></span>
+2. <span data-ttu-id="3728b-151">Cancele la suscripción de compra de autoservicio y quite las licencias de los usuarios asignados.</span><span class="sxs-lookup"><span data-stu-id="3728b-151">Cancel the self-service purchase subscription and remove licenses from assigned users.</span></span>
+
+### <a name="move-users-to-a-different-subscription"></a><span data-ttu-id="3728b-152">Mover usuarios a una suscripción diferente</span><span class="sxs-lookup"><span data-stu-id="3728b-152">Move users to a different subscription</span></span>
+
+<span data-ttu-id="3728b-153">Al mover usuarios a una suscripción diferente, la suscripción antigua se cancela automáticamente.</span><span class="sxs-lookup"><span data-stu-id="3728b-153">When you move users to a different subscription, the old subscription is automatically canceled.</span></span> <span data-ttu-id="3728b-154">El usuario que compró originalmente la suscripción de compra de autoservicio recibe un correo electrónico que indica que se canceló la suscripción.</span><span class="sxs-lookup"><span data-stu-id="3728b-154">The user who originally bought the self-service purchase subscription receives an email that says the subscription was canceled.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="3728b-155">Debe tener una licencia disponible para cada usuario al que se está moviendo en la suscripción a la que va a mover usuarios.</span><span class="sxs-lookup"><span data-stu-id="3728b-155">You must have an available license for each user you’re moving in the subscription that you’re moving users to.</span></span>
+
+::: moniker range="o365-worldwide"
+
+1. <span data-ttu-id="3728b-156">En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="3728b-156">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. <span data-ttu-id="3728b-157">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.</span><span class="sxs-lookup"><span data-stu-id="3728b-157">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.</span></span>
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. <span data-ttu-id="3728b-158">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.</span><span class="sxs-lookup"><span data-stu-id="3728b-158">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.</span></span>
+
+::: moniker-end
+
+2. <span data-ttu-id="3728b-159">En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**</span><span class="sxs-lookup"><span data-stu-id="3728b-159">On the **Products** tab, select the filter icon, then select **Self-service**.</span></span>
+3. <span data-ttu-id="3728b-160">Selecciona la suscripción que quieras asumir.</span><span class="sxs-lookup"><span data-stu-id="3728b-160">Select the subscription that you want to take over.</span></span>
+4. <span data-ttu-id="3728b-161">En la página detalles de la suscripción, en la sección **Suscripciones y** configuración, seleccione Tomar el control de **esta suscripción.**</span><span class="sxs-lookup"><span data-stu-id="3728b-161">On the subscription details page, in the **Subscriptions and settings** section, select **Take control of this subscription**.</span></span>
+5. <span data-ttu-id="3728b-162">En el panel derecho, seleccione **Mover usuarios**.</span><span class="sxs-lookup"><span data-stu-id="3728b-162">In the right pane, select **Move users**.</span></span>
+6. <span data-ttu-id="3728b-163">Seleccione el producto al que desea mover los usuarios y, a continuación, **seleccione Mover usuarios**.</span><span class="sxs-lookup"><span data-stu-id="3728b-163">Select the product that you want to move the users to, then select **Move users**.</span></span>
+7. <span data-ttu-id="3728b-164">En el **cuadro Mover usuarios a,** seleccione **Mover usuarios**.</span><span class="sxs-lookup"><span data-stu-id="3728b-164">In the **Move users to** box, select **Move users**.</span></span> <span data-ttu-id="3728b-165">El proceso de movimiento puede tardar varios minutos.</span><span class="sxs-lookup"><span data-stu-id="3728b-165">The move process might take several minutes.</span></span> <span data-ttu-id="3728b-166">No cierre el explorador mientras se ejecuta el proceso.</span><span class="sxs-lookup"><span data-stu-id="3728b-166">Don’t close your browser while the process runs.</span></span>
+8. <span data-ttu-id="3728b-167">Cuando finalice el proceso de movimiento, cierre el **panel Mover completado**.</span><span class="sxs-lookup"><span data-stu-id="3728b-167">When the move process is finished, close the **Move completed pane**.</span></span>
+9. <span data-ttu-id="3728b-168">En la página de detalles de la suscripción, el estado **de** suscripción de la suscripción comprada por autoservicio se muestra como **Eliminado**.</span><span class="sxs-lookup"><span data-stu-id="3728b-168">On the subscription details page, the **Subscription status** for the self-service purchased subscription shows as **Deleted**.</span></span>
+
+### <a name="cancel-a-self-service-purchase-subscription"></a><span data-ttu-id="3728b-169">Cancelar una suscripción de compra de autoservicio</span><span class="sxs-lookup"><span data-stu-id="3728b-169">Cancel a self-service purchase subscription</span></span>
+
+<span data-ttu-id="3728b-170">Cuando decide cancelar una suscripción de compra de autoservicio, los usuarios con licencias pierden el acceso al producto.</span><span class="sxs-lookup"><span data-stu-id="3728b-170">When you choose to cancel a self-service purchase subscription, users with licenses lose access to the product.</span></span> <span data-ttu-id="3728b-171">El usuario que compró originalmente la suscripción de compra de autoservicio recibe un correo electrónico que indica que se canceló la suscripción.</span><span class="sxs-lookup"><span data-stu-id="3728b-171">The user who originally bought the self-service purchase subscription receives an email that says the subscription was canceled.</span></span>
+
+::: moniker range="o365-worldwide"
+
+1. <span data-ttu-id="3728b-172">En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="3728b-172">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. <span data-ttu-id="3728b-173">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.</span><span class="sxs-lookup"><span data-stu-id="3728b-173">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.</span></span>
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. <span data-ttu-id="3728b-174">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.</span><span class="sxs-lookup"><span data-stu-id="3728b-174">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.</span></span>
+
+::: moniker-end
+
+2. <span data-ttu-id="3728b-175">En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**</span><span class="sxs-lookup"><span data-stu-id="3728b-175">On the **Products** tab, select the filter icon, then select **Self-service**.</span></span>
+3. <span data-ttu-id="3728b-176">Seleccione la suscripción que desea cancelar.</span><span class="sxs-lookup"><span data-stu-id="3728b-176">Select the subscription that you want to cancel.</span></span>
+4. <span data-ttu-id="3728b-177">En la página detalles de la suscripción, en la sección **Suscripciones y** configuración, seleccione Tomar el control de **esta suscripción.**</span><span class="sxs-lookup"><span data-stu-id="3728b-177">On the subscription details page, in the **Subscriptions and settings** section, select **Take control of this subscription**.</span></span>
+5. <span data-ttu-id="3728b-178">En el panel derecho, seleccione **Cancelar suscripción**.</span><span class="sxs-lookup"><span data-stu-id="3728b-178">In the right pane, select **Cancel subscription**.</span></span>
+6. <span data-ttu-id="3728b-179">Seleccione un motivo para la cancelación en la lista desplegable y, a continuación, **seleccione Cancelar suscripción**.</span><span class="sxs-lookup"><span data-stu-id="3728b-179">Select a reason for your cancellation from the drop-down list, then select **Cancel subscription**.</span></span>
+7. <span data-ttu-id="3728b-180">En el **cuadro ¿Está seguro de que desea cancelar?** seleccione **Cancelar suscripción**.</span><span class="sxs-lookup"><span data-stu-id="3728b-180">In the **Are you sure you want to cancel?** box, select **Cancel subscription**.</span></span>
+8. <span data-ttu-id="3728b-181">Cierre el panel derecho.</span><span class="sxs-lookup"><span data-stu-id="3728b-181">Close the right pane.</span></span>
+9. <span data-ttu-id="3728b-182">En la página de detalles de la suscripción, el **estado de suscripción** se muestra como **Eliminado**.</span><span class="sxs-lookup"><span data-stu-id="3728b-182">On the subscription details page, the **Subscription status** shows as **Deleted**.</span></span>
+
+## <a name="need-help-contact-us"></a><span data-ttu-id="3728b-183">¿Necesita ayuda?</span><span class="sxs-lookup"><span data-stu-id="3728b-183">Need help?</span></span> <span data-ttu-id="3728b-184">Póngase en contacto con nosotros.</span><span class="sxs-lookup"><span data-stu-id="3728b-184">Contact us.</span></span>
+
+<span data-ttu-id="3728b-185">Para obtener preguntas comunes acerca de las compras de autoservicio, consulta Preguntas más frecuentes sobre compras [de autoservicio.](self-service-purchase-faq.md)</span><span class="sxs-lookup"><span data-stu-id="3728b-185">For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.md).</span></span>
+
+<span data-ttu-id="3728b-186">Si tiene preguntas o necesita ayuda con las compras de autoservicio, póngase [en contacto con el soporte técnico](../../admin/contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="3728b-186">If you have questions or need help with self-service purchases, [contact support](../../admin/contact-support-for-business-products.md).</span></span>
