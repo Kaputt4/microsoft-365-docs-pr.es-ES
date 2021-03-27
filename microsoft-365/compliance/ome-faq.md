@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas funcionalidades de protección de mensajes? Busca una respuesta aquí.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 13d4181482bf8ad7460480a70c762fe60fd28ad0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2ad0ef4f16e5b458da80227b93fab574e3ce8dde
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051752"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394688"
 ---
 # <a name="message-encryption-faq"></a>Preguntas más frecuentes sobre cifrado de mensajes
 
@@ -120,7 +120,7 @@ Si se admite un formato de archivo, como un archivo de Word, Excel o PowerPoint,
 
 La respuesta corta es sí. El cifrado de PDF le permite proteger documentos PDF confidenciales mediante una comunicación segura o una colaboración segura. Al enviar correo electrónico, el servicio de Office 365 cifra los datos adjuntos de archivos PDF, no el cliente de Outlook.
 
-Para Outlook en la web, Outlook para iOS y Outlook para Android, puede cifrar los archivos PDF que envíe sin ningún paso adicional. Estos clientes admiten de forma nativa el cifrado de PDF.
+Para Outlook en la web, Outlook para iOS y Outlook para Android, puede cifrar los archivos PDF que envíe sin más pasos. Estos clientes admiten de forma nativa el cifrado de PDF.
 
 El escritorio de Outlook no admite de forma nativa el cifrado de datos adjuntos de archivos PDF. En su lugar, deberá configurar primero las reglas de flujo de correo de Exchange o DLP para aplicar el cifrado a los datos adjuntos de PDF. Cuando envía correo desde El escritorio de Outlook con datos adjuntos de PDF, el cliente envía primero el mensaje con los datos adjuntos al servicio. Cuando el servicio recibe el archivo, el servicio aplica la protección OME de la directiva de prevención de pérdida de datos (DLP) o la regla de flujo de correo en Exchange Online. A continuación, Exchange Online envía el mensaje con los datos adjuntos del archivo PDF protegido.
 
@@ -165,7 +165,7 @@ Sí Para obtener información sobre la personalización de mensajes de correo el
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>¿Hay capacidades de informes o información para correos electrónicos cifrados?
 
-Hay un informe de cifrado en el Centro de seguridad y cumplimiento. Vea [Ver informes de seguridad de correo electrónico en el Centro de seguridad & cumplimiento](../security/defender-365-security/view-email-security-reports.md).
+Hay un informe de cifrado en el Centro de seguridad y cumplimiento. Vea [Ver informes de seguridad de correo electrónico en el Centro de seguridad & cumplimiento](../security/office-365-security/view-email-security-reports.md).
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>¿Puedo usar el cifrado de mensajes con características de cumplimiento como eDiscovery?
 
@@ -173,7 +173,7 @@ Sí. Todas las características de cumplimiento de Microsoft 365 pueden detectar
 
 ## <a name="can-i-remove-encryption-from-email"></a>¿Puedo quitar el cifrado del correo electrónico?
 
-Los administradores pueden configurar una regla de flujo de correo para quitar el cifrado. No puede quitar el cifrado mediante una regla de flujo de correo del correo que aplica otra organización, a menos que el correo se enrutíce con protección de solo cifrado.
+Los administradores pueden configurar una regla de flujo de correo para quitar el cifrado. No puede quitar el cifrado mediante una regla de flujo de correo del correo que aplica otra organización, a menos que el correo esté cifrado con protección de solo cifrado.
 
 ## <a name="is-delegated-access-supported"></a>¿Se admite el acceso delegado?
 

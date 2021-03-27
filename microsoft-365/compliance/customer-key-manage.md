@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Después de configurar la clave de cliente, aprenda a administrarla restaurando claves AKV y administrando permisos y directivas de cifrado de datos.
-ms.openlocfilehash: 8f55667254ce7f5cbd9d4de274623ca4a3c4aa9d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 284a8ff24fef2f7e8b807477c99e20aaf593552e
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909952"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394676"
 ---
 # <a name="manage-customer-key"></a>Administrar clave de cliente
 
@@ -168,9 +168,11 @@ El resultado de este cmdlet incluye:
 
   - **Rolling:** Hay un lanzamiento de teclas en curso. Si la clave de la geo se está implementando, también se mostrará información sobre el porcentaje de sitios que han completado la operación de lanzamiento de teclas para poder supervisar el progreso.
 
-## <a name="unassign-a-dep-from-a-mailbox"></a>Unassign a DEP from a mailbox
+## <a name="roll-back-from-customer-key-to-microsoft-managed-keys"></a>Revertir de clave de cliente a claves administradas de Microsoft
 
-Se desasigna un DEP de un buzón mediante el cmdlet Set-mailbox PowerShell y se establece `DataEncryptionPolicy` el valor en `$NULL` . Al ejecutar este cmdlet, se desasigna el DEP asignado actualmente y se vuelve a cifrar el buzón con el DEP asociado con las claves administradas predeterminadas de Microsoft. No puede desasignar el DEP usado por las claves administradas de Microsoft. Si no desea usar claves administradas de Microsoft, puede asignar otro DEP al buzón.
+Para la clave de cliente en el nivel de inquilino, tendrás que contactar con Microsoft con una solicitud de "offboarding" de la clave de cliente. El equipo de ingeniería de llamadas controlará la solicitud.
+
+Para clave de cliente en el nivel de aplicación, para ello, desasigne un DEP de los buzones mediante el cmdlet Set-mailbox de PowerShell y establezca `DataEncryptionPolicy` el valor en `$NULL` . Al ejecutar este cmdlet, se desasigna el DEP asignado actualmente y se vuelve a cifrar el buzón con el DEP asociado con las claves administradas predeterminadas de Microsoft. No puede desasignar el DEP usado por las claves administradas de Microsoft. Si no desea usar claves administradas de Microsoft, puede asignar otro DEP de clave de cliente al buzón.
 
 Para desasignar el DEP de un buzón mediante el cmdlet Set-Mailbox PowerShell, siga estos pasos.
 
@@ -184,7 +186,7 @@ Para desasignar el DEP de un buzón mediante el cmdlet Set-Mailbox PowerShell, s
 
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>Revocar las claves e iniciar el proceso de ruta de depuración de datos
 
-Controle la revocación de todas las claves raíz, incluida la clave de disponibilidad. La clave de cliente proporciona el control del aspecto de la planeación de salida de los requisitos normativos. Si decide revocar las claves para purgar los datos y salir del servicio, el servicio elimina la clave de disponibilidad una vez completado el proceso de depuración de datos.
+Controle la revocación de todas las claves raíz, incluida la clave de disponibilidad. La clave de cliente proporciona el control del aspecto de la planeación de salida de los requisitos normativos. Si decide revocar las claves para purgar los datos y salir del servicio, el servicio elimina la clave de disponibilidad una vez completado el proceso de depuración de datos. No puede realizar una purga de datos para una directiva de nivel de inquilino.
 
 Microsoft 365 audita y valida la ruta de depuración de datos. Para obtener más información, vea el informe SSAE 18 SOC 2 disponible en [el Portal de confianza de servicio](https://servicetrust.microsoft.com/). Además, Microsoft recomienda los siguientes documentos:
 

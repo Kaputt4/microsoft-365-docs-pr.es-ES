@@ -3,7 +3,7 @@ title: Clave de cliente para Microsoft 365 en el nivel de espacio empresarial (v
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 2/17/2021
+ms.date: 3/26/2021
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-description: Obtenga información sobre cómo configurar la clave de cliente para todos los datos de su inquilino de Microsoft 365.
-ms.openlocfilehash: f50986b4e72808d4a1cd4dc8ee0182eb9c0a2455
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Obtenga información sobre cómo configurar la clave de cliente para sus datos en Microsoft 365 en el nivel de inquilino.
+ms.openlocfilehash: 811b153d5b0a472c6e542851fec45f1f42bca59b
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922694"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394708"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Introducción a la clave de cliente de Microsoft 365 en el nivel de inquilino (versión preliminar pública)
 
-Con las claves que proporcione, puede crear una directiva de cifrado de datos (DEP) y asignarla al inquilino. El DEP cifra los datos en todo el espacio empresarial para estas cargas de trabajo:
+Con las claves que proporcione, puede crear una directiva de cifrado de datos (DEP) y asignarla al inquilino. El DEP para todo el espacio empresarial que cree cifra los siguientes datos:
 
 - Mensajes de chat de Teams (chats 1:1, chats de grupo, chats de reunión y conversaciones de canal)
 - Mensajes multimedia de Teams (imágenes, fragmentos de código, mensajes de vídeo, mensajes de audio, imágenes wiki)
@@ -34,39 +34,51 @@ Con las claves que proporcione, puede crear una directiva de cifrado de datos (D
 - Mensajes de estado de Teams
 - Información de usuario y señal para Exchange Online
 - Buzones de Exchange Online que no están cifrados ya en el nivel de aplicación
+- Datos de coincidencia de datos exactos de MIP (EDM): (esquemas de archivo de datos, paquetes de reglas y sales usadas para hash de los datos confidenciales)
 
-Para Microsoft Teams, la clave de cliente en el nivel de inquilino cifra los nuevos datos desde el momento en que se asigna el DEP al inquilino. La vista previa pública no admite el cifrado de datos anteriores. Para Exchange Online, la clave de cliente cifra todos los datos nuevos y existentes.
+Para Microsoft Information Protection y Microsoft Teams, la clave de cliente en el nivel de inquilino cifra los nuevos datos desde el momento en que asigna el DEP al inquilino. La vista previa pública no admite el cifrado de datos anteriores. Para Exchange Online, la clave de cliente cifra todos los datos nuevos y existentes.
 
-Puede crear varios DEP por inquilino, pero solo puede asignar un DEP en cualquier momento. Al asignar el DEP, el cifrado comienza automáticamente, pero puede tardar algún tiempo en completarse según el tamaño del espacio empresarial.
+Puede crear varios DEP por inquilino, pero solo puede asignar un DEP a la vez. Al asignar el DEP, el cifrado comienza automáticamente pero tarda algún tiempo en completarse en función del tamaño del espacio empresarial.
 
 ## <a name="tenant-level-policies-add-broader-control-to-customer-key-for-microsoft-365"></a>Las directivas de nivel de inquilino agregan un control más amplio a la clave de cliente para Microsoft 365
 
 Si ya tiene la clave de cliente configurada para Exchange Online y Sharepoint Online, aquí se muestra cómo encaja la nueva versión preliminar pública de nivel de inquilino.
 
-La directiva de cifrado de nivel de inquilino que crea cifra todos los datos de las cargas de trabajo de Microsoft Teams y Exchange Online en Microsoft 365. Sin embargo, para Exchange Online, si ya ha asignado DEP de clave de cliente a buzones individuales, la directiva de nivel de inquilino no invalidará esos DEP. La directiva de nivel de inquilino solo cifrará los buzones a los que aún no se haya asignado un DEP de clave de cliente de nivel de buzón.
+La directiva de cifrado de nivel de inquilino que crea cifra todos los datos de las cargas de trabajo de Microsoft Teams y Exchange Online en Microsoft 365. Sin embargo, para Exchange Online, si ya ha asignado DEP de clave de cliente a buzones individuales, la directiva de nivel de inquilino no invalidará esos DEP. La directiva de nivel de inquilino solo cifrará los buzones a los que aún no se haya asignado un DEP de clave de cliente de nivel de buzón. Al cifrar un buzón de usuario mediante un DEP de nivel de inquilino, todo su contenido se cifra. Para obtener información sobre lo que se cifra con un DEP en el nivel de aplicación, vea [Cifrado de servicio con clave de cliente](customer-key-overview.md).
 
-Por ejemplo, los archivos de Microsoft Teams y algunas grabaciones de llamadas y reuniones de Teams que se guardan en OneDrive para la Empresa y SharePoint están cifrados por un DEP de SharePoint Online. Un solo DEP de SharePoint Online cifra el contenido dentro de una única ubicación geográfica.
+## <a name="data-that-isnt-encrypted-with-customer-key-at-the-tenant-level"></a>Datos que no están cifrados con la clave de cliente en el nivel de inquilino
+
+La clave de cliente no cifra los siguientes tipos de datos en el nivel de inquilino. En su lugar, Microsoft 365 usa otros tipos de cifrado para proteger estos datos.
+
+- Buzones de Exchange online que ya ha cifrado con un DEP de clave de cliente en el nivel de aplicación. Los buzones que no tienen asignado un DEP de clave de cliente se cifrarán mediante el DEP de nivel de inquilino. Esta disposición significa que puede tener algunos buzones cifrados con un DEP de nivel de inquilino y algunos buzones cifrados con DEP de nivel de aplicación.
+- SharePoint y OneDrive para la Empresa usan clave de cliente en el nivel de aplicación. Un solo DEP cifra el contenido en SharePoint para una sola geo.
+- Los archivos de Microsoft Teams y algunas grabaciones de llamadas y reuniones de Teams guardadas en OneDrive para la Empresa y SharePoint están cifrados por un DEP de SharePoint Online.
+
+Cualquier carga de trabajo o escenario que actualmente no sea compatible con la clave de cliente para Microsoft 365.
+
+- Otras cargas de trabajo de Microsoft 365, como Yammer, Planner, entre otras.
+- Eventos en directo de Teams y preguntas&A en eventos en directo. Para Teams, este escenario es el único que no está cifrado por la clave de cliente en el nivel de inquilino.
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>Configurar clave de cliente en el nivel de inquilino (versión preliminar pública)
 
-Estos pasos son similares pero no idénticos a los pasos para configurar la clave de cliente en el nivel de aplicación. Solo debe usar esta vista previa pública con datos de prueba en inquilinos de prueba. No use esta versión con datos de producción o en el entorno de producción. Si ya tiene una implementación de producción de clave de cliente, siga estos pasos para configurar la clave de cliente en el nivel de inquilino en un entorno de prueba. Una vez que haya asignado un DEP de nivel de inquilino a su inquilino, puede iniciar el proceso de validación y comunicarse con m365ck@microsoft.com cualquier pregunta o preocupación. También puede encontrar pasos de validación documentados en la versión preliminar pública de Instrucciones de validación para cifrado de datos en reposo [para Microsoft 365](https://aka.ms/CustomerKey/PublicPreviewValidation).
+Estos pasos son similares pero no idénticos a los pasos para configurar la clave de cliente en el nivel de aplicación. Solo use esta vista previa pública con datos de prueba en inquilinos de prueba. No use esta versión con datos de producción o en su entorno de producción. Si ya tiene una implementación de producción de clave de cliente, siga estos pasos para configurar la clave de cliente en el nivel de inquilino en un entorno de prueba. Una vez que haya asignado un DEP de nivel de inquilino a su inquilino, puede iniciar el proceso de validación y ponerse en contacto m365ck@microsoft.com con cualquier pregunta o preocupación. También puede encontrar pasos de validación documentados en la versión preliminar pública de Instrucciones de validación para cifrado de datos en reposo [para Microsoft 365](https://aka.ms/CustomerKey/PublicPreviewValidation).
 
 Para completar la mayoría de estas tareas, conéctese de forma remota a Azure PowerShell. Para obtener los mejores resultados, use la versión 4.4.0 o posterior de Azure PowerShell.
 
-Antes de empezar, asegúrese de lo siguiente:
+Antes de empezar:
 
 - Deberá usar una cuenta profesional o educativa que tenga el rol de administrador de cumplimiento para configurar la clave de cliente en el nivel de inquilino.
-- Asegúrese de que tiene las licencias adecuadas para su organización. Use una suscripción de Azure de pago facturada con un Contrato Enterprise o un proveedor de servicios en la nube. Las suscripciones de Azure compradas con planes de pago o con una tarjeta de crédito no son compatibles con la clave de cliente. A partir del 1 de abril de 2020, la clave de cliente en Office 365 se ofrece en Office 365 E5, M365 E5, M365 E5 Compliance y M365 E5 Information Protection & Governance SKU. La SKU de cumplimiento avanzado de Office 365 ya no está disponible para adquirir nuevas licencias. Las licencias de cumplimiento avanzado de Office 365 existentes seguirán siendo compatibles. Aunque el servicio se puede habilitar con un mínimo de una licencia en el inquilino que tenga la licencia adecuada, debe asegurarse de que todos los usuarios que se benefician del servicio tengan las licencias adecuadas.
+- Asegúrese de que tiene las licencias adecuadas para su organización. Use una suscripción de Azure de pago facturada con un Contrato Enterprise o un proveedor de servicios en la nube. Las suscripciones de Azure compradas con planes de pago o con una tarjeta de crédito no son compatibles con la clave de cliente. A partir del 1 de abril de 2020, la clave de cliente en Office 365 se ofrece en Office 365 E5, Microsoft 365 E5, Cumplimiento de Microsoft 365 E5 y Microsoft 365 E5 Information Protection & Governance SKUs. La SKU de cumplimiento avanzado de Office 365 ya no está disponible para las nuevas licencias. Las licencias de cumplimiento avanzado de Office 365 existentes seguirán siendo compatibles. Aunque el servicio se puede habilitar con un mínimo de un usuario con licencia adecuada en el espacio empresarial, debe asegurarse de que todos los usuarios que se benefician del servicio tengan las licencias adecuadas.
 
 ### <a name="create-two-new-azure-subscriptions"></a>Crear dos nuevas suscripciones de Azure
 
-Clave de cliente requiere dos claves para cada directiva de cifrado de datos (DEP). Para ello, debe crear dos suscripciones de Azure. Como práctica recomendada, Microsoft recomienda que los miembros independientes de la organización configuren una clave en cada suscripción. Solo use estas suscripciones de Azure para administrar claves de cifrado para Microsoft 365. Esto protege a la organización en caso de que uno de los operadores elimine accidentalmente, intencionada o malintencionadamente las claves de las que son responsables.
+Clave de cliente requiere dos claves para cada directiva de cifrado de datos (DEP). Para crear dos claves, debe crear dos suscripciones de Azure. Como práctica recomendada, Microsoft recomienda que los miembros independientes de la organización configuren una clave en cada suscripción. Solo use estas suscripciones de Azure para administrar claves de cifrado para Microsoft 365. Seguir estas directrices ayuda a proteger la organización en caso de que uno de los operadores elimine accidentalmente, intencionada o malintencionadamente las claves de las que son responsables.
 
 No hay ningún límite práctico en el número de suscripciones de Azure que puede crear para su organización. Seguir este procedimiento recomendado ayuda a minimizar el impacto del error humano al mismo tiempo que ayuda a administrar los recursos usados por la clave de cliente.
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>Registrar suscripciones de Azure para usar un período de retención obligatorio
 
-La pérdida temporal o permanente de claves de cifrado raíz puede ser perjudicial o incluso catastrófica para la operación del servicio y puede provocar la pérdida de datos. Por este motivo, los recursos usados con la clave de cliente requieren una protección sólida. Todos los recursos de Azure que se usan con clave de cliente ofrecen mecanismos de protección más allá de la configuración predeterminada. Las suscripciones de Azure se pueden etiquetar o registrar de forma que se evite la cancelación inmediata e irrevocable. Esto se conoce como registro para un período de retención obligatorio. Los pasos necesarios para registrar suscripciones de Azure durante un período de retención obligatorio requieren colaboración con Microsoft. Este proceso puede tardar hasta cinco días laborables. Anteriormente, esto a veces se denominaba "No cancelar".
+La pérdida temporal o permanente de claves de cifrado raíz puede ser perjudicial o incluso catastrófica para la operación del servicio y puede provocar la pérdida de datos. Por este motivo, los recursos usados con la clave de cliente requieren una protección sólida. Todos los recursos de Azure que se usan con clave de cliente ofrecen mecanismos de protección más allá de la configuración predeterminada. Las suscripciones de Azure se pueden etiquetar o registrar de forma que se evite la cancelación inmediata e irrevocable. Este proceso se conoce como registro para un período de retención obligatorio. Los pasos necesarios para registrar suscripciones de Azure durante un período de retención obligatorio requieren colaboración con Microsoft. Este proceso puede tardar hasta cinco días laborables. Anteriormente, este proceso se hacía referencia a veces como "No cancelar".
   
 Antes de ponerse en contacto con el equipo de Microsoft 365, debe realizar los siguientes pasos para cada suscripción de Azure que use con la clave de cliente. Asegúrese de que tiene instalado el módulo [Azure PowerShell Az](/powershell/azure/new-azureps-module-az) antes de empezar.
 
@@ -79,7 +91,7 @@ Antes de ponerse en contacto con el equipo de Microsoft 365, debe realizar los s
    Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.Resources
    ```
 
-3. Póngase en contacto con Microsoft para que el proceso se haya finalizado [en m365ck@microsoft.com](mailto:m365ck@microsoft.com). Incluya lo siguiente en el correo electrónico:
+3. Póngase en contacto con Microsoft para que el proceso se haya finalizado [en m365ck@microsoft.com](mailto:m365ck@microsoft.com). Incluya el siguiente contenido en el correo electrónico:
 
    **Asunto**: Clave de cliente para \<*Your tenant's fully-qualified domain name*\>
 
@@ -113,11 +125,11 @@ Al crear un almacén de claves, debe elegir una SKU: Standard o Premium. La SKU 
 
 Use un prefijo común para los almacenes de claves e incluya una abreviatura del uso y el ámbito del almacén de claves y las claves. Por ejemplo, para el servicio Contoso donde se ubicarán los almacenes en Norteamérica, un posible par de nombres es Contoso-O365-NA-VaultA1 y Contoso-O365-NA-VaultA2. Los nombres de almacén son cadenas únicas globalmente en Azure, por lo que es posible que deba probar las variaciones de los nombres deseados en caso de que otros clientes de Azure ya resonan los nombres deseados. Una vez configurado, los nombres de almacén no se pueden cambiar, por lo que lo más recomendado es tener un plan escrito para la instalación y usar una segunda persona para comprobar que el plan se ejecuta correctamente.
 
-Si es posible, cree los almacenes en regiones no emparejadas. Las regiones de Azure emparejadas proporcionan alta disponibilidad entre dominios de error de servicio. Por lo tanto, los pares regionales se pueden pensar como la región de copia de seguridad del otro. Esto significa que un recurso de Azure que se coloca en una región obtiene automáticamente tolerancia a errores a través de la región emparejada. Por este motivo, elegir regiones para dos almacenes usados en una directiva de cifrado de datos en la que las regiones están emparejadas significa que solo se usa un total de dos regiones de disponibilidad. La mayoría de las zonas geográficas solo tienen dos regiones, por lo que aún no es posible seleccionar regiones no emparejadas. Si es posible, elija dos regiones no emparejadas para los dos almacenes usados con una directiva de cifrado de datos. Esto se beneficia de un total de cuatro regiones de disponibilidad. Para obtener más información, vea Continuidad empresarial y recuperación ante [desastres (BCDR): Regiones emparejadas](/azure/best-practices-availability-paired-regions) de Azure para obtener una lista actual de pares regionales.
+Si es posible, cree los almacenes en regiones no emparejadas. Las regiones de Azure emparejadas proporcionan alta disponibilidad entre dominios de error de servicio. Por lo tanto, los pares regionales se pueden pensar como la región de copia de seguridad del otro. Un recurso de Azure que se coloca en una región obtiene automáticamente tolerancia a errores a través de la región emparejada. Elegir regiones para dos almacenes usados en una directiva de cifrado de datos en la que las regiones están emparejadas significa que solo se está utilizando un total de dos regiones de disponibilidad. La mayoría de las zonas geográficas solo tienen dos regiones, por lo que aún no es posible seleccionar regiones no emparejadas. Si es posible, elija dos regiones no emparejadas para los dos almacenes usados con una directiva de cifrado de datos. Este escenario se beneficia de un total de cuatro regiones de disponibilidad. Para obtener más información, vea Continuidad empresarial y recuperación ante [desastres (BCDR): Regiones emparejadas](/azure/best-practices-availability-paired-regions) de Azure para obtener una lista actual de pares regionales.
 
 ### <a name="assign-permissions-to-each-key-vault"></a>Asignar permisos a cada almacén de claves
 
-Para cada almacén de claves, deberá definir tres conjuntos de permisos independientes para la clave de cliente, según la implementación. Por ejemplo, deberá definir un conjunto de permisos para cada una de las siguientes opciones:
+Para cada almacén de claves, deberá definir tres conjuntos de permisos independientes para la clave de cliente, según la implementación. Por ejemplo, deberá definir un conjunto de permisos para cada uno de estos:
   
 - **Administradores del almacén de** claves que realizarán la administración diaria del almacén de claves para su organización. Estas tareas incluyen copia de seguridad, crear, obtener, importar, enumerar y restaurar.
 
@@ -208,7 +220,7 @@ Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-V
 
 ### <a name="check-the-recovery-level-of-your-keys"></a>Comprobar el nivel de recuperación de las claves
 
-Microsoft 365 requiere que la suscripción a Azure Key Vault esté establecida en No cancelar y que las claves usadas por la clave de cliente tengan habilitada la eliminación suave. Para confirmar esto, busque el nivel de recuperación de las claves.
+Microsoft 365 requiere que la suscripción a Azure Key Vault esté establecida en No cancelar y que las claves usadas por la clave de cliente tengan habilitada la eliminación suave. Puede confirmar esta configuración mirando el nivel de recuperación de las claves.
   
 Para comprobar el nivel de recuperación de una clave, en Azure PowerShell, ejecute el cmdlet Get-AzKeyVaultKey de la siguiente manera:
   
@@ -220,7 +232,7 @@ Si la propiedad _Nivel_ de recuperación devuelve algo distinto de un valor de *
 
 ### <a name="back-up-azure-key-vault"></a>Copia de seguridad de Azure Key Vault
 
-Inmediatamente después de la creación o cualquier cambio en una clave, realice una copia de seguridad y almacene copias de la copia de seguridad, tanto en línea como sin conexión. No conecte copias sin conexión a ninguna red. En su lugar, guárdalos en una instalación de almacenamiento física segura o comercial. Al menos una copia de la copia de seguridad debe almacenarse en una ubicación a la que se pueda acceder si se produce un desastre. Los blobs de copia de seguridad son el único medio para restaurar el material de clave en caso de que una clave del almacén de claves se destruya permanentemente o se represente de otro modo inoperable. Las claves externas a Azure Key Vault y que se importaron a Azure Key Vault no califican como copia de seguridad porque los metadatos necesarios para que la clave de cliente use la clave no existen con la clave externa. Solo se puede usar una copia de seguridad tomada de Azure Key Vault para operaciones de restauración con clave de cliente. Por lo tanto, es esencial que realice una copia de seguridad de Azure Key Vault una vez que se cargue o cree una clave.
+Inmediatamente después de la creación o cualquier cambio en una clave, haga una copia de seguridad de la clave y almacene copias de la copia de seguridad, tanto en línea como sin conexión. No conecte copias sin conexión a ninguna red. En su lugar, guárdalos en una instalación de almacenamiento física segura o comercial. Al menos una copia de la copia de seguridad debe almacenarse en una ubicación a la que se pueda acceder si se produce un desastre. Los blobs de copia de seguridad son el único medio para restaurar el material de clave en caso de que una clave del almacén de claves se destruya permanentemente o se represente de otro modo inoperable. Las claves que son externas a Azure Key Vault y que se importaron a Azure Key Vault no califican como una copia de seguridad porque los metadatos necesarios para que la clave de cliente use la clave no existen con la clave externa. Solo se puede usar una copia de seguridad tomada de Azure Key Vault para operaciones de restauración con clave de cliente. Por lo tanto, es esencial que realice una copia de seguridad de Azure Key Vault una vez que se cargue o cree una clave.
   
 Para crear una copia de seguridad de una clave de Azure Key Vault, ejecute el cmdlet [Backup-AzKeyVaultKey](/powershell/module/az.keyvault/backup-azkeyvaultkey) de la siguiente manera:
 
@@ -313,7 +325,7 @@ Parámetros:
 |----------|----------|---------|
 |Nombre|Nombre descriptivo de la directiva de cifrado de datos|N|
 |AzureKeyIDs|Especifica dos valores uri de las claves de Azure Key Vault, separadas por una coma, para asociar con la directiva de cifrado de datos|N|
-|Description|Descripción de la directiva de cifrado de datos|N|
+|Descripción|Descripción de la directiva de cifrado de datos|N|
 
 ### <a name="assign-policy"></a>Asignar directiva
 
@@ -321,7 +333,7 @@ Parámetros:
 Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "<Default_PolicyName or Default_PolicyID>"
 ```
 
-Descripción: este cmdlet se usa para configurar la directiva de cifrado de datos predeterminada. Esta directiva se usará para cifrar los datos en todas las cargas de trabajo de soporte técnico. 
+Descripción: este cmdlet se usa para configurar la directiva de cifrado de datos predeterminada. Esta directiva se usará para cifrar los datos en todas las cargas de trabajo de soporte técnico.
 
 Ejemplo:
 
@@ -404,11 +416,11 @@ Get-M365DataAtRestEncryptionPolicyAssignment
 
 Descripción: este cmdlet enumera la directiva que está asignada actualmente al inquilino.
 
-## <a name="offboarding-from-customer-key"></a>Offboarding from Customer Key
+## <a name="offboarding-from-customer-key-at-the-tenant-level"></a>Offboarding from Customer Key at the tenant level
 
 Si necesita volver a las claves administradas por Microsoft, puede hacerlo. Cuando se desaborde, los datos se vuelve a cifrar con el cifrado predeterminado admitido por cada carga de trabajo individual. Por ejemplo, Exchange Online admite el cifrado predeterminado mediante claves administradas por Microsoft.
 
-Si decidió retirar el espacio empresarial de la clave de cliente en el nivel de inquilino, envíe una solicitud a Microsoft por correo electrónico para "deshabilitar" el servicio del inquilino en [m365ck@microsoft.com](mailto:m365ck@microsoft.com).
+Si decides salir del espacio empresarial desde la clave de cliente en el nivel de inquilino, envía [m365ck@microsoft.com](mailto:m365ck@microsoft.com) correo electrónico con una solicitud para "deshabilitar" el servicio para el inquilino.
 
 > [!IMPORTANT]
 > El offboarding no es lo mismo que una purga de datos. Una purga de datos elimina de forma permanente los datos de la organización de Microsoft 365, pero la eliminación de datos no se realiza. No puede realizar una purga de datos para una directiva de nivel de inquilino. Para obtener información acerca de la ruta de depuración de datos, vea Revocar las claves e iniciar el proceso de ruta [de depuración de datos.](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)
@@ -419,9 +431,13 @@ Para obtener información acerca de la clave de disponibilidad, vea [Learn about
 
 ## <a name="key-rotation"></a>Rotación de teclas
 
-Para obtener información sobre la rotación o la rotación de claves usadas con la clave de cliente, vea [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md). Cuando actualice el DEP para usar la nueva versión de las claves, ejecutará el cmdlet Set-M365DataAtRestEncryptionPolicy como se describió anteriormente en este artículo.
+Para obtener información sobre la rotación o la rotación de claves que se usan con la clave de cliente, vea [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md). Cuando actualice el DEP para usar la nueva versión de las claves, ejecutará el cmdlet Set-M365DataAtRestEncryptionPolicy como se describió anteriormente en este artículo.
 
-## <a name="related-articles"></a>Artículos relacionados:
+## <a name="known-issues"></a>Problemas conocidos
+
+Cuando habilita la clave de cliente en el nivel de inquilino, no puede crear un nuevo equipo en Microsoft Teams.
+
+## <a name="related-articles"></a>Artículos relacionados
 
 - [Cifrado de servicio con clave de cliente](customer-key-overview.md)
 
