@@ -314,7 +314,7 @@
           href: quarantine-faq.md
     - name: Referencia
       items:
-        - name: Mapa de ruta de seguridad
+        - name: Plan de desarrollo de seguridad
           href: security-roadmap.md
         - name: Ayuda y soporte técnico para EOP
           href: help-and-support-for-eop.md
@@ -382,6 +382,6 @@
     - name: Seguridad de Microsoft 365
       href: ../index.yml
     - name: Microsoft 365 Defender
-      href: ../defender/index.yml
+      href: ../index.yml
     - name: Microsoft Defender para punto de conexión
       href: ../defender-endpoint/index.yml
