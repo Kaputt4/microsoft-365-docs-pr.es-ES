@@ -10,26 +10,24 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a administrar las compras de autoservicio realizadas por los usuarios de su organización.
-ms.openlocfilehash: 2ce12b7dba4e765745a94fa10f4ba15e7013e3c8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: febf0ee470e735a454dc7a9e747de5025c7a4a51
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920185"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398186"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Administrar compras de autoservicio (administrador)
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Como administrador, puede ver las compras de autoservicio realizadas por personas de su organización. Verá el nombre del producto, el nombre del comprador, las suscripciones compradas, la fecha de expiración, el precio de compra y los usuarios asignados para cada compra de autoservicio. Si la organización lo requiere, puede desactivar las compras de autoservicio por producto a través de PowerShell. Tiene las mismas directivas de administración de datos y acceso a los productos comprados a través de la compra de autoservicio o de forma centralizada.
 
@@ -37,13 +35,49 @@ También puede controlar si los usuarios de su organización pueden realizar com
 
 ## <a name="view-self-service-subscriptions"></a>Ver suscripciones de autoservicio
 
-1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+::: moniker range="o365-worldwide"
+
+1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.
+
+::: moniker-end
+
 2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
 3. Para ver más detalles sobre una suscripción, elija una de la lista.
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Ver quién tiene licencias para una suscripción de compra de autoservicio
 
-1. En el Centro de administración, vaya a la página **Licencias**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">de</a> facturación.
+> [!NOTE]
+> Como administrador, no puede asignar ni cancelar la asignación de licencias para una suscripción de compra sin servicio comprada por un usuario de su organización. Puede asumir [una suscripción de compra de](#take-over-a-self-service-purchase-subscription)autoservicio y, a continuación, asignar o cancelar la asignación de licencias.
+
+::: moniker range="o365-worldwide"
+
+1. En el centro de administración, vaya a la página de **Facturación** ><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"> Licencias</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página **Licencias** > **de** facturación.
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página **Licencias** > **de** facturación.
+
+::: moniker-end
+
 2. Seleccione el icono de filtro y, a continuación, **elija Autoservicio.**
 3. Seleccione un producto para ver las licencias asignadas a personas.
     > [!NOTE]
@@ -67,7 +101,24 @@ Para obtener más información, [vea Use AllowSelfServicePurchase for the MSComm
 
 Puede asignar licencias existentes o comprar suscripciones adicionales a través de acuerdos existentes para usuarios asignados a compras de autoservicio. Después de asignar estas licencias compradas de forma centralizada, puede solicitar que los compradores cancelen sus suscripciones existentes.
 
-1. En el Centro de administración, vaya a la página **Servicios de compra** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">facturación.</a>
+::: moniker range="o365-worldwide"
+
+1. En el Centro de administración, vaya a la página **Servicios de compra** de > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">facturación.</a>
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página **Servicios de compra** de > **facturación.**
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página **Servicios de compra** de > **facturación.**
+
+::: moniker-end
+
 2. Busque y elija el producto que desea comprar y, a continuación, elija **Comprar**.
 3. Complete los pasos restantes para completar la compra.
 4. Siga los pasos de [Ver](#view-who-has-licenses-for-a-self-service-purchase-subscription) quién tiene licencias para una suscripción comprada por autoservicio para exportar una lista de usuarios a los que hacer referencia en el paso siguiente.
@@ -88,7 +139,24 @@ Al mover usuarios a una suscripción diferente, la suscripción antigua se cance
 > [!NOTE]
 > Debe tener una licencia disponible para cada usuario al que se está moviendo en la suscripción a la que va a mover usuarios.
 
-1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+::: moniker range="o365-worldwide"
+
+1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.
+
+::: moniker-end
+
 2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
 3. Selecciona la suscripción que quieras asumir.
 4. En la página detalles de la suscripción, en la sección **Suscripciones y** configuración, seleccione Tomar el control de **esta suscripción.**
@@ -102,7 +170,24 @@ Al mover usuarios a una suscripción diferente, la suscripción antigua se cance
 
 Cuando decide cancelar una suscripción de compra de autoservicio, los usuarios con licencias pierden el acceso al producto. El usuario que compró originalmente la suscripción de compra de autoservicio recibe un correo electrónico que indica que se canceló la suscripción.
 
-1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+::: moniker range="o365-worldwide"
+
+1. En el Centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página  > **Facturación de sus** productos.
+
+::: moniker-end
+
 2. En la **pestaña Productos,** seleccione el icono de filtro y, a continuación, **seleccione Autoservicio.**
 3. Seleccione la suscripción que desea cancelar.
 4. En la página detalles de la suscripción, en la sección **Suscripciones y** configuración, seleccione Tomar el control de **esta suscripción.**

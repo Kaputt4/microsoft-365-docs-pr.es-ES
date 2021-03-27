@@ -2,10 +2,10 @@
 title: Proteger las cuentas de administrador
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo configurar y proteger las cuentas de administrador.
-ms.openlocfilehash: ec5b971ba4f1fdc8834e10ddf90ff219f763f805
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d687407fad1cec5da49dbc33ffeb84366f1c309
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912179"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398246"
 ---
 # <a name="protect-your-administrator-accounts"></a>Proteger las cuentas de administrador
 
@@ -42,7 +42,7 @@ Cuando te registras en Microsoft 365 y escribes tu información, automáticament
 
 Use cuentas de administrador solo para la administración. Los administradores deben tener una cuenta de usuario independiente para el uso regular de aplicaciones de Office y usar solo su cuenta administrativa cuando sea necesario para administrar cuentas y dispositivos, y mientras trabajan en otras funciones de administración. También es buena idea quitar la licencia de Microsoft 365 de las cuentas de administrador para que no tenga que pagar por ellas.
 
-Querrá configurar al menos una cuenta de administrador global adicional para dar acceso de administrador a otro empleado de confianza. También puede crear cuentas de administrador independientes para la administración de usuarios (este rol se denomina **Administrador de administración de usuarios**). Para obtener más información, vea [acerca de los roles de administrador](/office365/admin/add-users/about-admin-roles).
+Tendrás que configurar al menos una cuenta de administrador global adicional para dar acceso de administrador a otro empleado de confianza. También puede crear cuentas de administrador independientes para la administración de usuarios (este rol se denomina **Administrador de administración de usuarios**). Para obtener más información, vea [acerca de los roles de administrador](/office365/admin/add-users/about-admin-roles).
 
 Para crear cuentas de administrador adicionales:
 
@@ -76,12 +76,11 @@ Para crear una nueva cuenta de usuario:
 3. Expanda la **sección Roles** y elija **Usuario (sin acceso administrativo).**
 4. En la **sección Licencias de productos,** mueva el selector de **Microsoft 365 Empresa** a **On**.
 
-## <a name="register-each-of-these-accounts-for-multi-factor-authentication"></a>Registrar cada una de estas cuentas para la autenticación multifactor
+## <a name="turn-on-security-defaults"></a>Activar valores predeterminados de seguridad
 
-Asegúrese de que estas cuentas usan la [autenticación multifactor](m365-campaigns-multifactor-authenication.md).
+Los valores predeterminados de seguridad ayudan a proteger su organización de ataques relacionados con la identidad proporcionando una configuración de seguridad preconfigurada que Microsoft administra en nombre de su organización. Estas opciones incluyen habilitar la autenticación multifactor (MFA) para todos los administradores y cuentas de usuario. Para obtener más información sobre los valores predeterminados de seguridad y para obtener información sobre cómo habilitarlos, vea [Activar valores predeterminados de seguridad](m365-campaigns-conditional-access.md).
 
 ## <a name="additional-recommendations"></a>Recomendaciones adicionales
 
-- Asegúrese de que las cuentas de administrador también están configuradas para la autenticación multifactor. Le mostraremos cómo hacerlo en Configurar [directivas de acceso condicional.](m365-campaigns-conditional-access.md)
 - Antes de usar cuentas de administrador, cierre todas las aplicaciones y sesiones de explorador no relacionadas, incluidas las cuentas de correo electrónico personales. También puedes usar en ventanas de explorador privadas o de incógnito.
 - Después de completar las tareas de administración, asegúrese de cerrar la sesión del explorador.

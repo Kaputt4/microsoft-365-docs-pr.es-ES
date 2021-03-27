@@ -2,11 +2,11 @@
 title: Introducción a la instalación para Microsoft 365 Empresa Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
 ms.date: 9/20/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Introducción a la configuración de Microsoft 365 Empresa Premium para campañas u otras empresas
-ms.openlocfilehash: fee9391d7a6375f14f0e38f8c6a349fe4ec11619
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e612771ca4e967462f190c41396f16c6faf9d195
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912111"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398270"
 ---
 # <a name="set-up-microsoft-365"></a>Configurar Microsoft 365
 
@@ -61,7 +61,7 @@ Para configurar dispositivos de usuario:
 Para el personal clave, se recomienda usar dispositivos [administrados](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) para una protección aún mejor. Para todos los dispositivos, querrá configurar la autenticación [multifactor](m365-campaigns-multifactor-authenication.md).
 3. Todos los usuarios deben aprender a protegerse a sí mismos y a su campaña mediante el aprendizaje sobre [la suplantación de identidad (phishing) y otros ataques](m365-campaigns-phishing-and-attacks.md). Esta [infografía también](m365-campaigns-protect-campaign-infographic.md) puede ayudar a los usuarios a comprender cómo proteger la campaña de las amenazas en línea.
 
-## <a name="contact-support"></a>Ponerse en contacto con el soporte técnico
+## <a name="contact-support"></a>Contactar soporte
 
  **Si necesita ponerse en contacto con soporte técnico:**
   

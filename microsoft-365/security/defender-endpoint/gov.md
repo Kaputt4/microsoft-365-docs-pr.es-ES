@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 089614fab57950af5f60181ce7ed2116046ad347
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 320913058f1d3cab36b3a279996443c2e4ef117f
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379375"
+ms.locfileid: "51382918"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para el punto de conexión para clientes del gobierno de ESTADOS UNIDOS
 
@@ -100,7 +100,7 @@ iOS | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![
 > ¿Intenta incorporar dispositivos Windows anteriores a Windows 10 o Windows Server 2019 con [Microsoft Monitoring Agent?](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) Deberá elegir "Azure US Government" en "Azure Cloud" si usa el [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) asistente para la instalación [o](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)si usa una línea de comandos o un [script:](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1.
 
 > [!NOTE]
-> Necesitará la versión 101.25.72 y versiones posteriores para Linux, y la versión 101.25.69 y versiones posteriores para macOS. Mientras estamos en vista previa, estas versiones solo se pueden usar en el canal "Insider Fast". Consulte [Configure the Linux software repository](linux-install-manually.md#configure-the-linux-software-repository) o Set the channel name [(macOS)](mac-updates.md#set-the-channel-name) para obtener instrucciones.
+> Necesitará la versión 101.25.72 y versiones posteriores para Linux, y la versión 101.25.69 y versiones posteriores para macOS. Durante la vista previa, estas versiones solo se pueden usar en el canal "Insider Fast". Consulte [Configure the Linux software repository](linux-install-manually.md#configure-the-linux-software-repository) o Set the channel name [(macOS)](mac-updates.md#set-the-channel-name) para obtener instrucciones.
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>Versiones del sistema operativo al usar Azure Defender para servidores
 Las siguientes versiones del sistema operativo se admiten al [usar Azure Defender para servidores:](https://docs.microsoft.com/azure/security-center/security-center-wdatp)
@@ -168,7 +168,7 @@ Investigación y corrección automatizadas: respuesta a alertas de Office 365 | 
 Notificaciones de correo electrónico | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Laboratorio de evaluación | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Administración y API: informe de estado y cumplimiento de dispositivos | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
-Administración y API: integración con productos de terceros | ![No](images/svg/check-no.svg) Implementando | ![No](images/svg/check-no.svg) Implementando | ![No](images/svg/check-no.svg) Implementando
+Administración y API: integración con productos de terceros | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Administración y API: API de streaming | ![Sí](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo
 Administración y API: informe de protección contra amenazas | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Administración de amenazas y vulnerabilidades. | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)

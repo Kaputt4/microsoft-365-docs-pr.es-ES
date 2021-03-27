@@ -1,11 +1,11 @@
 ---
-title: Configurar directivas de acceso condicional
+title: Activar valores predeterminados de seguridad
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,62 +23,65 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo requerir MFA y configurar directivas de acceso condicional para Microsoft 365 para empresas.
-ms.openlocfilehash: dcb79ed060dd15fd288cdcfb9e3739a788f5fbc2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Obtenga información sobre cómo los valores predeterminados de seguridad pueden ayudar a proteger su organización de ataques relacionados con la identidad proporcionando una configuración de seguridad preconfigurada.
+ms.openlocfilehash: ea36ba45af26a767b08ee1e75931dca54dacea64
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912191"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398301"
 ---
-# <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Requerir autenticación multifactor y configurar directivas de acceso condicional
+# <a name="turn-on-security-defaults"></a>Activar valores predeterminados de seguridad
 
-Protege el acceso a los datos con la autenticación multifactor y las directivas de acceso condicional. Estos agregan una seguridad adicional considerable. Microsoft proporciona un conjunto de directivas de acceso condicional de línea base que se recomiendan para todos los clientes. Las directivas de línea base son un conjunto de directivas predefinidas que ayudan a proteger a las organizaciones contra muchos ataques comunes. Estos ataques comunes pueden incluir el spray de contraseña, la reproducción y la suplantación de identidad.
+Los valores predeterminados de seguridad ayudan a proteger su organización de ataques relacionados con la identidad proporcionando una configuración de seguridad preconfigurada que Microsoft administra en nombre de su organización. Estas opciones incluyen habilitar la autenticación multifactor (MFA) para todos los administradores y cuentas de usuario. Para la mayoría de las organizaciones, los valores predeterminados de seguridad ofrecen un buen nivel de seguridad de inicio de sesión adicional.
 
-Estas directivas requieren que los administradores y los usuarios escriban una segunda forma de autenticación (denominada autenticación multifactor o MFA) en determinadas condiciones. Por ejemplo, si un usuario de la organización intenta iniciar sesión en Microsoft 365 desde un país diferente o desde un dispositivo desconocido, el inicio de sesión puede considerarse riesgoso. El usuario debe proporcionar una forma adicional de autenticación (como una huella digital o un código) para demostrar su identidad.
+Para obtener más información acerca de los valores predeterminados de seguridad y las directivas que aplican, vea [¿Cuáles son los valores predeterminados de seguridad?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
-Actualmente, las directivas de línea base incluyen las siguientes directivas:
+Si la suscripción se creó el 22 de octubre de 2019 o después, es posible que los valores predeterminados de seguridad se hayan habilitado automáticamente para que compruebe la configuración para &mdash; confirmarla.
 
-- Configurar en el Centro de administración de Microsoft 365:
-  - **Requerir MFA para administradores:** requiere autenticación multifactor para los roles de administrador con más privilegios, incluido el administrador global.
-  - **Protección del usuario final:** requiere autenticación multifactor para los usuarios solo cuando un inicio de sesión es arriesgado. 
-- Configurar en el portal de Azure Active Directory:
-  - **Bloquear la autenticación heredada:** las aplicaciones cliente más antiguas y algunas aplicaciones nuevas no usan protocolos de autenticación más recientes y seguros. Estas aplicaciones anteriores pueden omitir las directivas de acceso condicional y obtener acceso no autorizado a su entorno. Esta directiva bloquea el acceso de clientes que no admiten el acceso condicional. 
-  - **Requerir MFA para administración de** servicios: requiere autenticación multifactor para obtener acceso a herramientas de administración, incluido Azure Portal (donde se configuran directivas de línea base).
+Para habilitar los valores predeterminados de seguridad en Azure Active Directory (Azure AD) o para comprobar si ya están habilitados:
 
-Se recomienda habilitar todas estas directivas de línea base. Una vez habilitadas estas directivas, se pedirá a los administradores y usuarios que se registren para la autenticación multifactor de Azure AD.
+1. Inicie sesión en el <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a> con credenciales de administrador global.
 
-Para obtener más información acerca de estas directivas, vea [¿Qué son las directivas de línea base?](/azure/active-directory/conditional-access/concept-baseline-protection)
+2. En el panel izquierdo, seleccione **Mostrar todo y, a continuación,** en Centros de **administración,** **seleccione Azure Active Directory**.
 
-## <a name="require-mfa"></a>Requerimiento de la MFA
+3. En el panel izquierdo del Centro de **administración de Azure Active Directory,** seleccione Azure Active **Directory**.
 
-Para requerir que todos los usuarios inicien sesión con una segunda forma de identificador:
+4. En el menú izquierdo del panel, en la **sección Administrar,** seleccione **Propiedades**.
 
-1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> y elija **Configurar**.
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Captura de pantalla del Centro de administración de Azure Active Directory que muestra la ubicación del elemento de menú Propiedades.":::
 
-2. En la página Configuración, elija **Ver en** la tarjeta Hacer que el inicio de sesión **sea más** seguro.
+5. En la parte inferior de la **página Propiedades,** seleccione **Administrar valores predeterminados de seguridad**.
 
-    ![Haga que el inicio de sesión sea más seguro.](../media/setupmfa.png)
-3. En la página Hacer que el inicio de sesión sea más seguro, elija **Introducción.**
-
-4. En el panel Reforzar la seguridad de inicio de sesión, active las **casillas situadas** junto a Requerir autenticación multifactor para los administradores y Requerir que los usuarios se registren para la autenticación **multifactor** y bloqueen el acceso si se detecta el riesgo .
-    Asegúrese de excluir la [cuenta](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) de administrador de emergencia o "break-glass" del requisito de MFA en el cuadro Buscar **usuarios.**
-
-    ![Reforzar la página de seguridad de inicio de sesión.](../media/requiremfa.png)
-
-5. Elija **Crear directiva** en la parte inferior de la página.
-
-## <a name="set-up-baseline-policies"></a>Configurar directivas de línea base
-
-1. Vaya a [Azure Portal](https://portal.azure.com)y, a continuación, vaya a Acceso condicional de seguridad de Azure Active **Directory** para crear una nueva \>  \>  **directiva.**
-
-Vea las siguientes instrucciones específicas para cada directiva: <br>
-    - [Requerir MFA para administradores](/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
-    - [Requerir MFA para usuarios](/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
-    - [Bloquear la autenticación heredada](/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
-    - [Requerir MFA para la administración de servicios](/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+6. En el panel derecho, verá la configuración Habilitar **valores predeterminados de** seguridad. Si **se** selecciona Sí, los valores predeterminados de seguridad ya están habilitados y no se requiere ninguna acción adicional. Si los valores predeterminados de seguridad no están habilitados actualmente, seleccione **Sí** para habilitarlos y, a continuación, **seleccione Guardar**.
 
 > [!NOTE]
-> Las directivas de vista previa ya no existen y los usuarios tendrán que crear sus propias directivas.
+> Si ha estado usando directivas de acceso condicional, deberá desactivarlas antes de usar valores predeterminados de seguridad.
+>
+> Puede usar los valores predeterminados de seguridad o las directivas de acceso condicional, pero no puede usar ambas al mismo tiempo.
 
-Puedes configurar directivas adicionales, como requerir aplicaciones cliente aprobadas. Para obtener más información, consulte la [documentación de acceso condicional](/azure/active-directory/conditional-access/).
+## <a name="consider-using-conditional-access"></a>Considere la posibilidad de usar el acceso condicional
+
+Si su organización tiene requisitos de seguridad complejos o necesita un control más detallado sobre las directivas de seguridad, debe considerar el uso del acceso condicional en lugar de los valores predeterminados de seguridad para lograr una posición de seguridad similar o superior. 
+
+El acceso condicional le permite crear y definir directivas que reaccionan a eventos de inicio de sesión y solicitan acciones adicionales antes de que un usuario obtenga acceso a una aplicación o servicio. Las directivas de acceso condicional pueden ser granulares y específicas, lo que permite a los usuarios ser productivos donde y cuando sea, pero también proteger su organización.
+
+Los valores predeterminados de seguridad están disponibles para todos los clientes, mientras que el acceso condicional requiere una licencia para uno de los siguientes planes:
+
+- Azure Active Directory Premium P1 o P2
+- Microsoft 365 Empresa Premium
+- Microsoft 365 E3 o E5
+- Enterprise Mobility & Security E3 o E5
+
+Si desea usar el acceso condicional para configurar directivas equivalentes a las habilitadas por los valores predeterminados de seguridad, consulte las siguientes guías paso a paso:
+
+- [Requerir MFA para los administradores](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+- [Requerir MFA para la administración de Azure](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
+- [Bloquear la autenticación heredada](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [Requerir MFA para todos los usuarios](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+- [Requerir el registro de MFA de Azure AD:](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) requiere Azure AD Identity Protection, que forma parte de Azure Active Directory Premium P2
+
+Para obtener más información sobre el acceso condicional, vea [¿Qué es el acceso condicional?](/azure/active-directory/conditional-access/overview) Para obtener más información acerca de cómo crear directivas de acceso condicional, [vea Create a Conditional Access policy](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).
+
+> [!NOTE]
+> Si tiene un plan o una licencia que proporciona acceso condicional pero aún no ha creado ninguna directiva de acceso condicional, puede usar valores predeterminados de seguridad. Sin embargo, deberá desactivar los valores predeterminados de seguridad antes de poder usar directivas de acceso condicional.
