@@ -33,7 +33,7 @@
 #### [Fase 2: Configuración](mcafee-to-microsoft-defender-setup.md)
 #### [Fase 3: Incorporación](mcafee-to-microsoft-defender-onboard.md)
 ### [Cambiar de Symantec a Microsoft Defender para punto de conexión]()
-#### [Introducción a la migración](symantec-to-microsoft-defender-atp-migration.md)
+#### [Introducción a la migración](symantec-to-microsoft-defender-endpoint-migration.md)
 #### [Fase 1: Preparación](symantec-to-microsoft-defender-atp-prepare.md)
 #### [Fase 2: Configuración](symantec-to-microsoft-defender-atp-setup.md)
 #### [Fase 3: Incorporación](symantec-to-microsoft-defender-atp-onboard.md)
@@ -115,7 +115,7 @@
 ##### [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md)
 ##### [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)
 
-### [Protección contra amenazas avanzada de Microsoft Defender para Mac]()
+### [Microsoft Defender para punto de conexión para Mac]()
 #### [Introducción a Microsoft Defender para punto de conexión para Mac](microsoft-defender-endpoint-mac.md)
 #### [Novedades](mac-whatsnew.md)
 
@@ -140,7 +140,7 @@
 ###### [Información general sobre el control de dispositivos](mac-device-control-overview.md)
 ###### [Ejemplos de JAMF](mac-device-control-jamf.md)
 ###### [Ejemplos de Intune](mac-device-control-intune.md)
-##### [Exámenes de programación](mac-schedule-scan-atp.md)
+##### [Exámenes de programación](mac-schedule-scan.md)
 
 #### [Solucionar problemas]()
 ##### [Solucionar de problemas de instalación y actualización](mac-support-install.md)
@@ -354,7 +354,7 @@
 #### [General]()
 ##### [Comprobar la ubicación del almacenamiento de datos y actualizar la configuración de retención de datos](data-retention-settings.md)
 ##### [Configurar notificaciones de alerta](configure-email-notifications.md)
-##### [Configure advanced features](advanced-features.md
+##### [Configurar funciones avanzadas](advanced-features.md)
 
 #### [Permisos]()
 ##### [Uso de permisos básicos para acceder al portal](basic-permissions.md)
@@ -378,6 +378,8 @@
 ##### [Retirar dispositivos](offboard-machines.md)
 
 #### [Configurar la zona horaria en el Centro de seguridad de Microsoft Defender](time-settings.md)
+
+### [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)
 
 ### [Configurar la integración con otras soluciones de Microsoft]()
 #### [Configurar el acceso condicional](configure-conditional-access.md)
@@ -585,5 +587,5 @@
 ##### [Reglas de la reducción de la superficie expuesta a ataques](troubleshoot-asr.md)
 
 # [Seguridad de Microsoft 365](../index.yml)
-# [Microsoft 365 Defender](../defender/index.yml)
+# [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 # [Defender para Office 365](../office-365-security/overview.md)
