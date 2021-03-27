@@ -1,0 +1,60 @@
+### YamlMime:Landing
+title: Administrar dominios
+summary: Consulte estos recursos con tareas de dominios comunes o vea el panel de navegación a la izquierda para obtener una lista completa.
+metadata:
+  title: Administrar dominios
+  description: Administrar todos los aspectos de los dominios en Microsoft 365.
+  ms.service: O365-administration
+  ms.topic: landing-page
+  author: pebaum
+  ms.author: pebaum
+  ms.date: 03/25/2021
+  localization_priority: Priority
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: 2ca0bc79cc70ce738603dcdb7cb09ea1d238e4c9
+  ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+  ms.translationtype: MT
+  ms.contentlocale: es-ES
+  ms.lasthandoff: 03/26/2021
+  ms.locfileid: "51379718"
+landingContent:
+- title: Administrar dominios
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Dominios Preguntas más frecuentes (PREGUNTAS FRECUENTES)
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq
+  - linkListType: how-to-guide
+    links:
+    - text: Agregar un dominio
+      url: https://docs.microsoft.com/microsoft-365/admin/setup/add-domain
+    - text: Comprar un nombre de dominio
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name
+    - text: Quitar un dominio
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/remove-a-domain
+- title: Transferir un dominio
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Transferir un dominio de Microsoft a otro host
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host
+- title: Piloto de Microsoft 365
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Piloto de Microsoft 365 desde mi dominio personalizado
+      url: https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain
+- title: Instrucciones específicas de host
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Cambiar servidores de nombres en cualquier host DNS
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar
+    - text: Crear registros DNS en cualquier host DNS
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider
+- title: Solución de problemas
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Buscar y corregir problemas después de agregar el dominio o los registros DNS
+      url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-and-fix-issues

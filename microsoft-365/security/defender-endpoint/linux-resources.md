@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7196053ffef3dffc3c737d0df26a5d12bdfe8a4c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: ab5400a197a1f0ac61c8b298a06165d217f44fd1
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187762"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394739"
 ---
 # <a name="resources"></a>Recursos
 
@@ -105,6 +105,7 @@ En la tabla siguiente se enumeran los comandos de algunos de los escenarios más
 |Grupo                 |Escenario                                                |Comando                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |Configuración         |Activar/desactivar la protección en tiempo real                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
+|Configuración         |Activar/desactivar la supervisión del comportamiento                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
 |Configuración         |Activar/desactivar la protección en la nube                            |`mdatp config cloud --value [enabled\|disabled]`                       |
 |Configuración         |Activar/desactivar diagnósticos de productos                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
 |Configuración         |Activar/desactivar el envío automático de muestra                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |

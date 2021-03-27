@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79db436c2017c00e1b5d669797c5fb025f651a8a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 563dd2a5102ec66a1e953ae6ab30d56ea4f99036
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186238"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382939"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Aplicaciones de partners en Microsoft Defender para endpoint 
 
@@ -98,6 +98,7 @@ Logotipo |Nombre del partner   | Descripción
 ![Imagen del logotipo de Aruba ClearPass Policy Manager](images/aruba-logo.png) | [Administrador de directivas de ClearPass de Aruba](https://go.microsoft.com/fwlink/?linkid=2127544) | Asegúrese de que Defender for Endpoint está instalado y actualizado en cada extremo antes de permitir el acceso a la red
 ![Imagen del logotipo de Hexágono azul para red](images/bluehexagon-logo.png) | [Hexágono azul para red](https://go.microsoft.com/fwlink/?linkid=2104613) | Blue Hexagon ha creado la primera plataforma de aprendizaje profundo en tiempo real de la industria para la protección contra amenazas de red
 ![Imagen del logotipo de CyberMDX](images/cybermdx-logo.png) | [CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620) | Cyber MDX integra la visibilidad completa de los activos de salud, la prevención de amenazas y el repositorio en el entorno de Defender para endpoints
+![Imagen del logotipo de HYAS Protect](images/hyas-logo.png) | [HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763) | HYAS Protect usa conocimientos relevantes de la infraestructura de atacantes para proteger proactivamente microsoft Defender para puntos de conexión de ataques cibernéticos
 ![Imagen del logotipo de detección y respuesta de red (NDR) de Vectra](images/vectra-logo.png) |[Detección y respuesta de red (NDR) de Vectra](https://go.microsoft.com/fwlink/?linkid=866934)| Vectra aplica la IA & de seguridad para detectar y responder a ciberataques en tiempo real
 
 

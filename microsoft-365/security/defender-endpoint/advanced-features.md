@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 059cfbf37c79ff9f99b5e46c8d4329c203aa9665
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 684025441c8400775f469515df1bcd0423d6460b
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215543"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394751"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -63,6 +63,14 @@ Para obtener más información acerca de las asignaciones de roles, vea [Create 
 ## <a name="live-response-unsigned-script-execution"></a>Ejecución de script sin signo de respuesta en directo
 
 Habilitar esta característica permite ejecutar scripts sin signo en una sesión de respuesta en directo.
+
+
+## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Restringir la correlación a grupos de dispositivos con ámbito
+Cuando esta configuración está activada, las alertas se correlacionan con incidentes independientes en función de su grupo de dispositivos con ámbito. De forma predeterminada, la correlación de incidentes se produce en todo el ámbito del espacio empresarial.
+
+>[!NOTE]
+>Cambiar esta configuración afecta solo a las correlaciones futuras de alertas.
+
 
 ## <a name="autoresolve-remediated-alerts"></a>Alertas remediadas de Autoresolve
 

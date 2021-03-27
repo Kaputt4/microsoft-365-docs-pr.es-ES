@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9699b5e2bc2e33b94795b7c23bd3f34f0383a8cc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 12a35a9f80da6b401495fcae7c245436b35b991c
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068981"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382894"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Crear y administrar reglas de detecciones personalizadas
 
@@ -116,12 +116,16 @@ Con la consulta en el editor de consultas, seleccione **Crear regla de detecció
 - **Acciones recomendadas:** acciones adicionales que los respondedores pueden realizar en respuesta a una alerta
 
 #### <a name="rule-frequency"></a>Frecuencia de regla
-Al guardar o editar una nueva regla, se ejecuta y comprueba las coincidencias de los últimos 30 días de datos. A continuación, la regla se ejecuta de nuevo a intervalos fijos, aplicando una duración de devolución basada en la frecuencia que elija:
+Al guardar una nueva regla, se ejecuta y comprueba las coincidencias de los últimos 30 días de datos. A continuación, la regla se ejecuta de nuevo a intervalos fijos, aplicando una duración de devolución basada en la frecuencia que elija:
 
 - **Cada 24 horas:** se ejecuta cada 24 horas, comprobando los datos de los últimos 30 días
 - **Cada 12 horas:** se ejecuta cada 12 horas, comprobando los datos de las últimas 24 horas
 - **Cada 3 horas:** se ejecuta cada 3 horas, comprobando los datos de las últimas 6 horas
 - **Cada hora:** se ejecuta cada hora, comprobando los datos de las últimas 2 horas
+
+Al editar una regla, se ejecutará con los cambios aplicados en la siguiente hora de ejecución programada según la frecuencia que establezca.
+
+
 
 >[!TIP]
 > Coincide con los filtros de tiempo de la consulta con la duración de la devolución. Se omiten los resultados fuera de la duración de la devolución.  
@@ -213,7 +217,7 @@ En la pantalla de detalles de la regla (**Buscar** detecciones personalizadas [N
 >[!TIP]
 >Para ver rápidamente la información y realizar acciones en un elemento de una tabla, use la columna de selección [&#10003;] a la izquierda de la tabla.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 - [Introducción a las detecciones personalizadas](custom-detections-overview.md)
 - [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
 - [Conozca el lenguaje de consulta de búsqueda avanzada](advanced-hunting-query-language.md)

@@ -1,6 +1,6 @@
 ---
-title: Solucionar problemas de rendimiento de ATP de Microsoft Defender para Mac
-description: Solucionar problemas de rendimiento en ATP de Microsoft Defender para Mac.
+title: Solucionar problemas de rendimiento de Microsoft Defender para Endpoint para Mac
+description: Solucionar problemas de rendimiento en Microsoft Defender para Endpoint para Mac.
 keywords: microsoft, defender, atp, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f6dd5681dfafd069a4c52f72e1dc1733584283a2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 87190d9e0bb62d42642374bd7c9f6f3acad3c80a
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185914"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379391"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Solucionar problemas de rendimiento de Microsoft Defender para Endpoint para Mac
 
@@ -32,7 +32,7 @@ ms.locfileid: "51185914"
 
 **Se aplica a:**
 
-- [Microsoft Defender para endpoint para Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender para punto de conexión para Mac](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -52,7 +52,7 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
 
     - Desde la interfaz de usuario. Abra Microsoft Defender para Endpoint para Mac y vaya a **Administrar la configuración**.
 
-      ![Administrar la captura de pantalla de protección en tiempo real](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-36-rtp)
+      ![Administrar la captura de pantalla de protección en tiempo real](images/mdatp-36-rtp.png)
 
     - Desde el terminal. Por motivos de seguridad, esta operación requiere elevación.
 

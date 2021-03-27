@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: b31e7aeb9178cb6021434319e55ddef927d7c263
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7bee6c99d2c1c5ad3cec8f2e317b729a0a4e1f8b
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165878"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379483"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de extremos (EDR) en modo de bloqueo
 
@@ -133,7 +133,10 @@ Para obtener más información, [vea Get-MpComputerStatus](https://docs.microsof
 
 3. En la lista de resultados, en la **fila STATE,** confirme que el servicio se está ejecutando.
 
-## <a name="see-also"></a>Ver también
+### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>¿Cuánto tiempo se necesita para que EDR en modo de bloqueo se deshabilite?
+Si decide deshabilitar EDR en modo de bloqueo, el sistema puede tardar hasta 30 minutos en deshabilitar esta funcionalidad.
+
+## <a name="see-also"></a>Vea también
 
 - [Blog de la comunidad tecnológica: Introducción a EDR en modo de bloqueo: Detención de ataques en sus pistas](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 - [Bloqueo y contención del comportamiento](behavioral-blocking-containment.md)

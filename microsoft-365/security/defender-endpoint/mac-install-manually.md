@@ -1,6 +1,6 @@
 ---
-title: Implementación manual para ATP de Microsoft Defender para macOS
-description: Instale ATP de Microsoft Defender para macOS manualmente, desde la línea de comandos.
+title: Implementación manual de Microsoft Defender para endpoint para macOS
+description: Instale Microsoft Defender para Endpoint para macOS manualmente desde la línea de comandos.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b2629eb3d13e6eb908644dfcade46a7ac2768637
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 044a3d48dc350a5663a27ab3c16c2da7a5e3f3f1
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187450"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379469"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-for-macos"></a>Implementación manual de Microsoft Defender para endpoint para macOS
 
@@ -64,20 +64,20 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
 1. Navegue hasta el wdav.pkg descargado en Finder y ábralo.
 
-    ![Captura de pantalla de instalación de aplicaciones1](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-28-appinstall)
+    ![Captura de pantalla de instalación de aplicaciones1](images/mdatp-28-appinstall.png)
 
 2. Seleccione **Continuar,** acepte los términos de licencia y escriba la contraseña cuando se le pida.
 
-    ![Captura de pantalla de instalación de la aplicación2](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-29-appinstalllogin)
+    ![Captura de pantalla de instalación de la aplicación2](images/mdatp-29-appinstalllogin.png)
 
    > [!IMPORTANT]
    > Se le pedirá que permita que se instale un controlador de Microsoft (ya sea "System Extension Blocked" o "Installation is on hold" o ambos. Se debe permitir la instalación del controlador.
 
-   ![Captura de pantalla de instalación de la aplicación3](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-30-systemextension)
+   ![Captura de pantalla de instalación de la aplicación3](images/mdatp-30-systemextension.png)
 
 3. Seleccione **Abrir preferencias de seguridad** o Abrir preferencias del sistema > Seguridad & **privacidad**. Seleccione **Permitir**:
 
-    ![Captura de pantalla de la ventana seguridad y privacidad](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-31-securityprivacysettings)
+    ![Captura de pantalla de la ventana seguridad y privacidad](images/mdatp-31-securityprivacysettings.png)
 
    La instalación continúa.
 
@@ -97,7 +97,7 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
 2. Seleccione **Continuar,** acepte los términos de licencia y escriba la contraseña cuando se le pida.
 
-3. Al final del proceso de instalación, se le promoverá para aprobar las extensiones del sistema usadas por el producto. Seleccione **Abrir preferencias de seguridad**.
+3. Al final del proceso de instalación, se te promocionará para aprobar las extensiones del sistema usadas por el producto. Seleccione **Abrir preferencias de seguridad**.
 
     ![Aprobación de extensión del sistema](images/big-sur-install-2.png)
 
@@ -139,7 +139,7 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
 Después de la instalación, verás el icono de Microsoft Defender en la barra de estado de macOS en la esquina superior derecha.
 
-   ![Icono de Microsoft Defender en la captura de pantalla de la barra de estado](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar)
+   ![Icono de Microsoft Defender en la captura de pantalla de la barra de estado](images/mdatp-icon-bar.png)
    
 
 ## <a name="how-to-allow-full-disk-access"></a>Cómo permitir el acceso en disco completo

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 059ff9ca6f0c93c6adbac3b1d552cbedcf308759
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 089614fab57950af5f60181ce7ed2116046ad347
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222712"
+ms.locfileid: "51379375"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para el punto de conexión para clientes del gobierno de ESTADOS UNIDOS
 
@@ -52,7 +52,7 @@ GCC | GCC High | DoD
 GCC de Microsoft Defender para Endpoint Server | Microsoft Defender para Endpoint Server para GCC High | Microsoft Defender para Endpoint Server para DOD
 Azure Defender para servidores | Azure Defender para servidores- Gobierno | Azure Defender para servidores- Gobierno
 
-<br>
+<br />
 
 ## <a name="portal-urls"></a>Direcciones URL del portal
 Las siguientes son las direcciones URL del portal de Microsoft Defender para puntos de conexión para clientes del Gobierno de ESTADOS UNIDOS:
@@ -63,7 +63,7 @@ GCC | https://gcc.securitycenter.microsoft.us
 GCC High | https://securitycenter.microsoft.us
 DoD | https://securitycenter.microsoft.us
 
-<br>
+<br />
 
 ## <a name="endpoint-versions"></a>Versiones de extremo
 
@@ -78,8 +78,8 @@ Windows 10, versión 1909 (con [KB4586819](https://support.microsoft.com/help/45
 Windows 10, versión 1903 (con [KB4586819](https://support.microsoft.com/help/4586819)) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows 10, versión 1809 (con [KB4586839](https://support.microsoft.com/help/4586839)) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows 10, versión 1803 (con [KB4598245](https://support.microsoft.com/help/4598245)) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
-Windows 10, versión 1709 | ![No](images/svg/check-no.svg)<br>Nota: No se admite | ![Sí ](images/svg/check-yes.svg) con [KB4499147](https://support.microsoft.com/help/4499147)<br>Nota: [En desuso,](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)actualice | ![No](images/svg/check-no.svg)<br>Nota: No se admite
-Windows 10, versión 1703 y versiones anteriores | ![No](images/svg/check-no.svg)<br>Nota: No se admite | ![No](images/svg/check-no.svg)<br>Nota: No se admite | ![No](images/svg/check-no.svg)<br>Nota: No se admite
+Windows 10, versión 1709 | ![No](images/svg/check-no.svg)<br />Nota: No se admite | ![Sí ](images/svg/check-yes.svg) con [KB4499147](https://support.microsoft.com/help/4499147)<br />Nota: [En desuso,](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)actualice | ![No](images/svg/check-no.svg)<br />Nota: No se admite
+Windows 10, versión 1703 y versiones anteriores | ![No](images/svg/check-no.svg)<br />Nota: No se admite | ![No](images/svg/check-no.svg)<br />Nota: No se admite | ![No](images/svg/check-no.svg)<br />Nota: No se admite
 Windows Server 2019 (con [KB4586839](https://support.microsoft.com/help/4586839)) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows Server 2016 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
@@ -88,8 +88,8 @@ Windows 8.1 Enterprise | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/ch
 Windows 8 Pro | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows 7 SP1 Enterprise | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows 7 SP1 Pro | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
-Linux | ![No](images/svg/check-no.svg) Implementando | ![No](images/svg/check-no.svg) Implementando | ![No](images/svg/check-no.svg) Implementando
-macOS | ![No](images/svg/check-no.svg) Implementando | ![No](images/svg/check-no.svg) Implementando | ![No](images/svg/check-no.svg) Implementando
+Linux | ![Sí](images/svg/check-yes.svg) En versión preliminar<br />Vea la nota a continuación | ![Sí](images/svg/check-yes.svg) En versión preliminar<br />Vea la nota a continuación | ![Sí](images/svg/check-yes.svg) En versión preliminar<br />Vea la nota a continuación
+macOS | ![Sí](images/svg/check-yes.svg) En versión preliminar<br />Vea la nota a continuación | ![Sí](images/svg/check-yes.svg) En versión preliminar<br />Vea la nota a continuación | ![Sí](images/svg/check-yes.svg) En versión preliminar<br />Vea la nota a continuación
 Android | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería
 iOS | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería
 
@@ -98,6 +98,9 @@ iOS | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![
 
 > [!NOTE]
 > ¿Intenta incorporar dispositivos Windows anteriores a Windows 10 o Windows Server 2019 con [Microsoft Monitoring Agent?](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) Deberá elegir "Azure US Government" en "Azure Cloud" si usa el [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) asistente para la instalación [o](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)si usa una línea de comandos o un [script:](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1.
+
+> [!NOTE]
+> Necesitará la versión 101.25.72 y versiones posteriores para Linux, y la versión 101.25.69 y versiones posteriores para macOS. Mientras estamos en vista previa, estas versiones solo se pueden usar en el canal "Insider Fast". Consulte [Configure the Linux software repository](linux-install-manually.md#configure-the-linux-software-repository) o Set the channel name [(macOS)](mac-updates.md#set-the-channel-name) para obtener instrucciones.
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>Versiones del sistema operativo al usar Azure Defender para servidores
 Las siguientes versiones del sistema operativo se admiten al [usar Azure Defender para servidores:](https://docs.microsoft.com/azure/security-center/security-center-wdatp)
@@ -108,7 +111,7 @@ Windows Server 2016 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check
 Windows Server 2012 R2 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 
-<br>
+<br />
 
 ## <a name="required-connectivity-settings"></a>Configuración de conectividad necesaria
 Si un servidor proxy o firewall bloquea todo el tráfico de forma predeterminada y permite únicamente el acceso a dominios específicos, agregue los dominios que aparecen en la hoja descargable a la lista de dominios permitidos.
@@ -117,7 +120,7 @@ En la siguiente hoja de cálculo descargable se enumeran los servicios y sus dir
 
 Hoja de cálculo de la lista de dominios | Descripción
 :-----|:-----
-![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión](images/mdatp-urls.png)<br/> | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <br><br>[Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
+![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión](images/mdatp-urls.png)<br/> | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <br /><br />[Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
 Para obtener más información, vea [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
@@ -140,10 +143,10 @@ Puede encontrar los intervalos IP de Azure en [Intervalos IP](https://www.micros
 > [!NOTE]
 > Como solución basada en la nube, los intervalos de direcciones IP pueden cambiar. Se recomienda pasar a reglas basadas en DNS.
 
-<br>
+<br />
 
 ## <a name="api"></a>API
-En lugar de los URI públicos enumerados en nuestra [documentación de la API,](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro)deberá usar los siguientes URI:
+En lugar de los URI públicos enumerados en nuestra [documentación de la API,](apis-intro.md)deberá usar los siguientes URI:
 
 Tipo de extremo | GCC | GCC High & DoD
 :---|:---|:---
@@ -151,7 +154,7 @@ Inicio de sesión | `https://login.microsoftonline.com` | `https://login.microso
 Defender para la API de punto de conexión | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
 SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https://wdatp-alertexporter-us.securitycenter.windows.us`
 
-<br>
+<br />
 
 ## <a name="feature-parity-with-commercial"></a>Paridad de características con comercial
 Defender for Endpoint for US Government customers doesn't have complete parity with the commercial offering. Aunque nuestro objetivo es ofrecer todas las funciones y características comerciales a nuestros clientes del Gobierno de Estados Unidos, aún no hay algunas funcionalidades disponibles que queremos destacar.

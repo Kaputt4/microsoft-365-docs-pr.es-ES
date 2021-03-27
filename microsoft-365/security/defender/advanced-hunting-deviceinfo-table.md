@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 46efb531331cf76472c67c769c96804d11fb9e4b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d56710f4933a8971230c78d7b3570f14b9bda335
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071563"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382630"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -47,18 +47,18 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `DeviceId` | cadena | Identificador único para el equipo en servicio |
 | `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
 | `ClientVersion` | cadena | Versión del agente de punto de conexión o sensor que se ejecuta en la máquina |
-| `PublicIP` | string | Dirección IP pública usada por el equipo incorporado para conectarse al servicio de Microsoft Defender para endpoints. Esta podría ser la dirección IP del propio equipo, un dispositivo NAT o un proxy |
+| `PublicIP` | cadena | Dirección IP pública usada por el equipo incorporado para conectarse al servicio de Microsoft Defender para endpoints. Esta podría ser la dirección IP del propio equipo, un dispositivo NAT o un proxy |
 | `OSArchitecture` | cadena | Arquitectura del sistema operativo que se ejecuta en el equipo. |
 | `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el equipo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 10 y Windows 7 |
-| `OSBuild` | string | Versión de compilación del sistema operativo que se ejecuta en la máquina |
+| `OSBuild` | cadena | Versión de compilación del sistema operativo que se ejecuta en la máquina |
 | `IsAzureADJoined` | boolean | Indicador booleano de si la máquina está unida a Azure Active Directory |
-| `AadObjectId` | string | Identificador único del dispositivo en Azure AD |
-| `LoggedOnUsers` | string | Lista de todos los usuarios que han iniciado sesión en el equipo en el momento del evento en formato de matriz JSON |
-| `RegistryDeviceTag` | string | Etiqueta de máquina agregada a través del Registro |
-| `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
-|`AdditionalFields` | string | Información adicional sobre el evento en formato de matriz JSON |
+| `AadObjectId` | cadena | Identificador único del dispositivo en Azure AD |
+| `LoggedOnUsers` | cadena | Lista de todos los usuarios que han iniciado sesión en el equipo en el momento del evento en formato de matriz JSON |
+| `RegistryDeviceTag` | cadena | Etiqueta de máquina agregada a través del Registro |
 | `OSVersion` | cadena | Versión del sistema operativo que se ejecuta en el equipo. |
 | `MachineGroup` | cadena | Grupo de máquinas de la máquina. Este grupo lo usa el control de acceso basado en roles para determinar el acceso a la máquina |
+| `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
+|`AdditionalFields` | cadena | Información adicional sobre el evento en formato de matriz JSON |
 
 La tabla proporciona información del dispositivo basada en latidos, que son informes `DeviceInfo` periódicos o señales de un dispositivo. Cada quince minutos, el dispositivo envía un latido parcial que contiene atributos que cambian con frecuencia, como `LoggedOnUsers` . Una vez al día, se envía un latido completo que contiene los atributos del dispositivo.
 

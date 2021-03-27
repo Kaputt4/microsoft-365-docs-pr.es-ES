@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 247b8b8d8e18c8eecb09029581635ae907433f55
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: df96b57b9898dd973fab053918d763d1972bd50d
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076376"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382810"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Obtener formación de expertos sobre la búsqueda avanzada
 
@@ -36,7 +36,6 @@ ms.locfileid: "51076376"
 - Microsoft 365 Defender
 
 Aumente su conocimiento de la búsqueda avanzada rápidamente con _Tracking the adversary_, una serie de difusión por web para nuevos analistas de seguridad y cazacarros de amenazas expertos. La serie le guía a través de los conceptos básicos hasta la creación de sus propias consultas sofisticadas. Empieza con el primer vídeo sobre conceptos básicos o salta a vídeos más avanzados que se adapten a tu nivel de experiencia.
-
 
 | Título | Descripción | Reloj | Consultas | 
 |--|--|--|--|

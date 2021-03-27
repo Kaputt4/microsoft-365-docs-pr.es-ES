@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/20/2020
 ms.technology: mde
-ms.openlocfilehash: fc4c15d2e391176ed0b4420c13fb865674da0361
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 48b1f1bf9506acc8491887fca49295d5e4ccbd69
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163592"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382714"
 ---
 # <a name="create-custom-detection-rules"></a>Crear reglas de detección personalizadas
 
@@ -98,8 +98,8 @@ Cuando se guarda, una nueva regla de detección personalizada se ejecuta inmedia
 - **Cada 3 horas:** se ejecuta cada 3 horas, comprobando los datos de las últimas 6 horas
 - **Cada hora:** se ejecuta cada hora, comprobando los datos de las últimas 2 horas
 
-> [!IMPORTANT]
-> Al cambiar una consulta que ya está programada como detección personalizada, la próxima ejecución inmediata tendrá una ventana de devolución de 30 días, exactamente como si se creara una nueva consulta. Los cambios en un gran número de consultas y con filtros de tiempo superiores a la duración predeterminada de la devolución de la frecuencia seleccionada pueden tener un impacto en el consumo de cuota general de búsqueda avanzada y provocar el agotamiento de la cuota diaria.
+Al editar una regla, se ejecutará con los cambios aplicados en la siguiente hora de ejecución programada según la frecuencia que establezca.
+
 
 > [!TIP]
 > Coincide con los filtros de tiempo de la consulta con la duración de la devolución. Se omiten los resultados fuera de la duración de la devolución.

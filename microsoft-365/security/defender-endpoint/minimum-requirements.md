@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c6afa48fcee80c0b8fb7ed0563264932566b6321
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6a8e1091490cb9f3fe1eedadec0b76a56ada936e
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185796"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379495"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para endpoint
 
@@ -31,12 +31,10 @@ ms.locfileid: "51185796"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 
 Existen algunos requisitos mínimos para incorporar dispositivos al servicio. Obtenga información sobre los requisitos de licencias, hardware y software y otras opciones de configuración para incorporar dispositivos al servicio.
-
-> ¿Desea experimentar Microsoft Defender para endpoint? [Registrarse para obtener una versión de prueba gratuita](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink).
 
 > [!TIP]
 > - Obtenga información sobre las últimas mejoras en Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
@@ -80,7 +78,6 @@ Para obtener una tabla de comparación detallada de la comparación de la edici�
 El acceso a Defender for Endpoint se realiza a través de un explorador, que admite los siguientes exploradores:
 
 - Microsoft Edge
-- Versión 11 de Internet Explorer
 - Google Chrome
 
 > [!NOTE]
@@ -112,7 +109,7 @@ Los dispositivos de la red deben ejecutar una de estas ediciones.
 Los requisitos de hardware de Defender para Endpoint en dispositivos son los mismos para las ediciones admitidas.
 
 > [!NOTE]
-> Las máquinas que ejecutan versiones móviles de Windows (como Windows CE y Windows 10 Mobile) no son compatibles.
+> No se admiten máquinas que ejecutan versiones móviles de Windows (como Windows CE y Windows 10 Mobile).
 >
 > Las máquinas virtuales que ejecutan Windows 10 Enterprise 2016 LTSB pueden encontrar problemas de rendimiento si se ejecutan en plataformas de virtualización que no son de Microsoft.
 >
@@ -121,11 +118,12 @@ Los requisitos de hardware de Defender para Endpoint en dispositivos son los mis
 
 ### <a name="other-supported-operating-systems"></a>Otros sistemas operativos compatibles
 - Android
+- iOS
 - Linux
 - macOS
 
 > [!NOTE]
-> Tendrás que conocer las distribuciones y versiones exactas de Linux de Android y macOS que son compatibles con Defender for Endpoint para que la integración funcione.
+> Tendrás que confirmar las distribuciones de Linux y las versiones de Android, iOS y macOS que has compatible con Defender for Endpoint para que la integración funcione.
 
 
 
@@ -164,7 +162,7 @@ Usa la línea de comandos para comprobar el tipo de inicio del servicio de datos
    ![Resultado del comando de consulta sc para diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
 
-Deberá establecer el servicio para que se inicie automáticamente si el START_TYPE **no** está establecido en **AUTO_START**.
+Deberá establecer el servicio para que se  inicie automáticamente si el START_TYPE no está establecido en **AUTO_START**.
 
 
 **Usa la línea de comandos para establecer el servicio de datos de diagnóstico de Windows 10 para que se inicie automáticamente:**
@@ -203,11 +201,11 @@ El agente de Defender for Endpoint depende de la capacidad de Antivirus de Micro
 
 Configure las actualizaciones de inteligencia de seguridad en los dispositivos defender para puntos de conexión independientemente de si antivirus de Microsoft Defender es el antimalware activo o no. Para obtener más información, vea [Manage Microsoft Defender Antivirus updates and apply baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
-Cuando Antivirus de Microsoft Defender no es el antimalware activo de la organización y usa el servicio Defender para endpoints, Antivirus de Microsoft Defender pasa al modo pasivo.
+Cuando Antivirus de Microsoft Defender no es el antimalware activo de la organización y usa el servicio Defender for Endpoint, Antivirus de Microsoft Defender pasa al modo pasivo.
 
 Si su organización ha desactivado Antivirus de Microsoft Defender a través de la directiva de grupo u otros métodos, los dispositivos que están incorporados deben excluirse de esta directiva de grupo.
 
-Si está incorporando servidores y Antivirus de Microsoft Defender no es el antimalware activo en sus servidores, antivirus de Microsoft Defender tendrá que configurarse para ir en modo pasivo o desinstalar. La configuración depende de la versión del servidor. Para obtener más información, vea [Compatibilidad de Antivirus de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md).
+Si está incorporando servidores y Antivirus de Microsoft Defender no es el antimalware activo en sus servidores, Antivirus de Microsoft Defender tendrá que configurarse para pasar al modo pasivo o desinstalarlo. La configuración depende de la versión del servidor. Para obtener más información, vea [Compatibilidad de Antivirus de Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md).
 
 > [!NOTE]
 > La directiva de grupo normal no se aplica a la Protección contra alteraciones y los cambios en la configuración de Antivirus de Microsoft Defender se omitirán cuando esté la protección contra alteraciones.

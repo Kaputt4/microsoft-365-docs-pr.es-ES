@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 83a56a74ff949b23843417942923d2b4b810b4ee
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1386809778edeb92521a8656e9ece78591a682a4
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185938"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382906"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-for-mac"></a>Privacidad de Microsoft Defender para Endpoint para Mac
 
@@ -111,7 +111,7 @@ Los datos de diagnóstico necesarios ayudan a identificar problemas con Microsof
 
 **Instalación y desinstalación de Microsoft Defender para endpoint**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -123,7 +123,7 @@ Se recopilan los campos siguientes:
 
 **Configuración de Microsoft Defender para punto de conexión**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field                                               | Descripción |
 | --------------------------------------------------- | ----------- |
@@ -144,7 +144,7 @@ Se recopilan los campos siguientes:
 
 **Informe de actualización de inteligencia de seguridad**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -157,9 +157,21 @@ Se recopilan los campos siguientes:
 
 #### <a name="product-and-service-performance-data-events"></a>Eventos de datos de rendimiento de productos y servicios
 
+**Cierre inesperado de la aplicación (bloqueo)**
+
+Recopila información del sistema y el estado de una aplicación cuando una aplicación se cierra inesperadamente.
+
+Se recopilan los siguientes campos:
+
+| Field                          | Descripción |
+| ------------------------------ | ----------- |
+| v1_crash_count                 | Número de veces que el proceso del motor V1 se bloquea cada hora en el equipo cliente  |
+| v2_crash_count                 | Número de veces que el proceso del motor V2 se bloquea cada hora en el equipo cliente  |
+| EDR_crash_count                | Número de veces que el proceso de EDR se bloquea cada hora en el equipo cliente        |
+
 **Estadísticas de extensión de kernel**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -195,7 +207,7 @@ Algunos ejemplos de datos de diagnóstico opcionales incluyen datos que Microsof
 
 **Configuración de Microsoft Defender para punto de conexión**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field                                              | Descripción |
 | -------------------------------------------------- | ----------- |
@@ -216,7 +228,7 @@ Se recopilan los campos siguientes:
 
 **Configuración de Actualización automática de Microsoft**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field                       | Descripción |
 | --------------------------- | ----------- |
@@ -229,7 +241,7 @@ Se recopilan los campos siguientes:
 
 #### <a name="diagnostic-log-upload-started-report"></a>Informe de carga iniciada del registro de diagnóstico
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -240,7 +252,7 @@ Se recopilan los campos siguientes:
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Informe completado de carga de registro de diagnóstico
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -256,7 +268,7 @@ Cierres de aplicación inesperados y el estado de la aplicación cuando esto ocu
 
 **Estadísticas de extensión de kernel**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field                          | Descripción |
 | ------------------------------ | ----------- |
