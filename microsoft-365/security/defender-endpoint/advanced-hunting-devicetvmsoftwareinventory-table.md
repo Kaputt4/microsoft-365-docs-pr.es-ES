@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fc9e5fb29518207c5360d5fbe29b8b4848d350e2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 18e43d8e38c24a8aa28c6455dc1a769b8da0df2b
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075544"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408628"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -34,7 +34,9 @@ ms.locfileid: "51075544"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-La tabla del esquema de búsqueda avanzada contiene el inventario de administración de vulnerabilidades & amenazas del software instalado actualmente en dispositivos de la red, incluida la información de fin `DeviceTvmSoftwareInventory` de soporte técnico. [](next-gen-threat-and-vuln-mgt.md) Por ejemplo, puede buscar eventos que impliquen dispositivos instalados con una versión de software vulnerable actualmente. Use esta referencia para crear consultas que devuelvan información de la tabla.
+La tabla del esquema de búsqueda avanzada contiene el inventario de administración de amenazas y vulnerabilidades del software instalado actualmente en dispositivos de la red, incluida la información de fin `DeviceTvmSoftwareInventory` de soporte técnico. [](next-gen-threat-and-vuln-mgt.md) Por ejemplo, puede buscar eventos que impliquen dispositivos instalados con una versión de software vulnerable actualmente. Use esta referencia para crear consultas que devuelvan información de la tabla.
+
+DeviceTVMSoftwareInventory contiene todo el software que la administración de amenazas y vulnerabilidades pudo hacer coincidir con una enumeración de plataforma común (CPE), independientemente de si es vulnerable o no.
 
 >[!NOTE]
 >Las `DeviceTvmSoftwareInventory` tablas y han reemplazado a la `DeviceTvmSoftwareVulnerabilities` `DeviceTvmSoftwareInventoryVulnerabilities` tabla. Juntos, las dos primeras tablas incluyen más columnas que puede usar para ayudar a informar sobre las actividades de administración de vulnerabilidades.
@@ -43,23 +45,20 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
-| `DeviceId` | string | Identificador único del dispositivo en el servicio |
-| `DeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo |
-| `OSPlatform` | string | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. |
-| `OSVersion` | cadena | Versión del sistema operativo que se ejecuta en el dispositivo |
-| `OSArchitecture` | string | Arquitectura del sistema operativo que se ejecuta en el dispositivo |
-| `SoftwareVendor` | string | Nombre del proveedor de software |
-| `SoftwareName` | cadena | Nombre del producto de software |
-| `SoftwareVersion` | cadena | Número de versión del producto de software |
-| `EndOfSupportStatus` | cadena | Indica la fase de ciclo de vida del producto de software en relación con la fecha de fin de soporte técnico (EOS) o de fin de vida (EOL) especificada |
-| `EndOfSupportDate` | string | Fecha de fin de soporte técnico (EOS) o de fin de vida (EOL) del producto de software |
-
-
+| `DeviceId` | string | Identificador único del dispositivo en el servicio. |
+| `DeviceName` | cadena | Nombre de dominio completo (FQDN) del dispositivo. |
+| `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. |
+| `OSVersion` | cadena | Versión del sistema operativo que se ejecuta en el dispositivo. |
+| `OSArchitecture` | cadena | Arquitectura del sistema operativo que se ejecuta en el dispositivo. |
+| `SoftwareVendor` | cadena | Nombre del proveedor de software. |
+| `SoftwareName` | cadena | Nombre del producto de software. |
+| `SoftwareVersion` | cadena | Número de versión del producto de software. |
+| `EndOfSupportStatus` | cadena | Indica la fase de ciclo de vida del producto de software en relación con la fecha de fin de soporte técnico (EOS) o de fin de vida (EOL) especificada. |
+| `EndOfSupportDate` | cadena | Fecha de fin de soporte técnico (EOS) o de fin de vida (EOL) del producto de software. |
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
+- [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Entender el esquema](advanced-hunting-schema-reference.md)
 - [Información general sobre la Administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
-

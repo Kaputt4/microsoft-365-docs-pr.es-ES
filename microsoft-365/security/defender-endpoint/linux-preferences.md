@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ed28d3b5b7bafaea2d72b7a8c45f66bf69033bc2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a8595bae216911350d3f18fcceef729ef020a424
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187798"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408170"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-for-linux"></a>Establecer preferencias para Microsoft Defender para endpoint para Linux
 
@@ -61,6 +61,7 @@ La *sección antivirusEngine* del perfil de configuración se usa para administr
 | **Clave** | antivirusEngine |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
+|||
 
 #### <a name="enable--disable-real-time-protection"></a>Habilitar o deshabilitar la protección en tiempo real
 
@@ -71,6 +72,7 @@ Determina si la protección en tiempo real (examinar archivos a medida que se ac
 | **Clave** | enableRealTimeProtection |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | true (valor predeterminado) <br/> false |
+|||
 
 #### <a name="enable--disable-passive-mode"></a>Habilitar o deshabilitar el modo pasivo
 
@@ -87,6 +89,7 @@ Determina si el motor antivirus se ejecuta en modo pasivo o no. En modo pasivo:
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | false (predeterminado) <br/> true |
 | **Comments** | Disponible en Defender para endpoint versión 100.67.60 o posterior. |
+|||
 
 #### <a name="exclusion-merge-policy"></a>Directiva de combinación de exclusión
 
@@ -98,6 +101,7 @@ Especifica la directiva de combinación para exclusiones. Puede ser una combinac
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | merge (valor predeterminado) <br/> admin_only |
 | **Comments** | Disponible en Defender para endpoint versión 100.83.73 o posterior. |
+|||
 
 #### <a name="scan-exclusions"></a>Exclusiones de examen
 
@@ -108,6 +112,7 @@ Entidades que se han excluido del examen. Las exclusiones se pueden especificar 
 | **Clave** | exclusiones |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
+|||
 
 **Tipo de exclusión**
 
@@ -118,6 +123,7 @@ Especifica el tipo de contenido excluido del examen.
 | **Clave** | $type |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
+|||
 
 **Ruta de acceso al contenido excluido**
 
@@ -129,6 +135,7 @@ Se usa para excluir contenido del examen por ruta de acceso de archivo completa.
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | rutas de acceso válidas |
 | **Comments** | Aplicable solo *si $type* *se excluyePath* |
+|||
 
 **Tipo de ruta de acceso (archivo/directorio)**
 
@@ -140,6 +147,7 @@ Indica si la *propiedad path* hace referencia a un archivo o directorio.
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | false (predeterminado) <br/> true |
 | **Comments** | Aplicable solo *si $type* *se excluyePath* |
+|||
 
 **Extensión de archivo excluida del examen**
 
@@ -151,6 +159,7 @@ Se usa para excluir contenido del examen por extensión de archivo.
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | extensiones de archivo válidas |
 | **Comments** | Aplicable solo *si $type* *se excluyeFileExtension* |
+|||
 
 **Proceso excluido del examen**
 
@@ -162,6 +171,7 @@ Especifica un proceso para el que se excluye toda la actividad de archivo del ex
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | cualquier cadena |
 | **Comments** | Aplicable solo *si $type* *se excluyeFileName* |
+|||
 
 #### <a name="allowed-threats"></a>Amenazas permitidas
 
@@ -171,6 +181,7 @@ Lista de amenazas (identificadas por su nombre) que no están bloqueadas por el 
 |:---|:---|
 | **Clave** | allowedThreats |
 | **Tipo de datos** | Matriz de cadenas |
+|||
 
 #### <a name="disallowed-threat-actions"></a>Acciones de amenazas no permitidos
 
@@ -182,6 +193,7 @@ Restringe las acciones que el usuario local de un dispositivo puede realizar cua
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | permitir (restringe a los usuarios permitir amenazas) <br/> restore (restringe a los usuarios la restauración de amenazas desde la cuarentena) |
 | **Comments** | Disponible en Defender para endpoint versión 100.83.73 o posterior. |
+|||
 
 #### <a name="threat-type-settings"></a>Configuración del tipo de amenaza
 
@@ -192,6 +204,7 @@ La *preferencia threatTypeSettings* en el motor antivirus se usa para controlar 
 | **Clave** | threatTypeSettings |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
+|||
 
 **Tipo de amenaza**
 
@@ -202,6 +215,7 @@ Tipo de amenaza para la que se configura el comportamiento.
 | **Clave** | clave |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | potentially_unwanted_application <br/> archive_bomb |
+|||
 
 **Acción que puede realizar**
 
@@ -216,6 +230,7 @@ Acción que se debe realizar al encontrarse con una amenaza del tipo especificad
 | **Clave** | valor |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | auditoría (valor predeterminado) <br/> bloque <br/> off |
+|||
 
 #### <a name="threat-type-settings-merge-policy"></a>Directiva de combinación de configuración de tipo de amenaza
 
@@ -227,6 +242,7 @@ Especifica la directiva de combinación para la configuración del tipo de amena
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | merge (valor predeterminado) <br/> admin_only |
 | **Comments** | Disponible en Defender para endpoint versión 100.83.73 o posterior. |
+|||
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>Retención del historial de examen antivirus (en días)
 
@@ -238,6 +254,7 @@ Especifica el número de días que los resultados se conservan en el historial d
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | 90 (valor predeterminado). Los valores permitidos van de 1 día a 180 días. |
 | **Comments** | Disponible en Defender para endpoint versión 101.04.76 o posterior. |
+|||
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Número máximo de elementos en el historial de examen antivirus
 
@@ -249,6 +266,7 @@ Especifique el número máximo de entradas que se deben conservar en el historia
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | 10000 (valor predeterminado). Los valores permitidos van de 5000 elementos a 15000 elementos. |
 | **Comments** | Disponible en Defender para endpoint versión 101.04.76 o posterior. |
+|||
 
 ### <a name="cloud-delivered-protection-preferences"></a>Preferencias de protección entregadas en la nube
 
@@ -259,6 +277,7 @@ La *entrada cloudService* en el perfil de configuración se usa para configurar 
 | **Clave** | cloudService |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
+|||
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>Habilitar o deshabilitar la protección de entrega en la nube
 
@@ -269,6 +288,7 @@ Determina si la protección entregada en la nube está habilitada en el disposit
 | **Clave** | habilitado |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | true (valor predeterminado) <br/> false |
+|||
 
 #### <a name="diagnostic-collection-level"></a>Nivel de colección de diagnóstico
 
@@ -279,6 +299,7 @@ Los datos de diagnóstico se usan para mantener Defender for Endpoint seguro y a
 | **Clave** | diagnosticLevel |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | opcional (predeterminado) <br/> necesario |
+|||
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>Habilitar o deshabilitar envíos de ejemplo automáticos
 
@@ -293,6 +314,7 @@ Determina si se envían muestras sospechosas (que probablemente contengan amenaz
 | **Clave** | automaticSampleSubmissionConsent |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | ninguno <br/> safe (valor predeterminado) <br/> all |
+|||
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>Habilitar o deshabilitar actualizaciones automáticas de inteligencia de seguridad
 
@@ -303,6 +325,7 @@ Determina si las actualizaciones de inteligencia de seguridad se instalan autom�
 | **Clave** | automaticDefinitionUpdateEnabled |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | true (valor predeterminado) <br/> false |
+|||
 
 ## <a name="recommended-configuration-profile"></a>Perfil de configuración recomendado
 
@@ -339,6 +362,7 @@ El siguiente perfil de configuración será:
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
       "enabled":true
+      "proxy":"http://proxy.server:port/"
    }
 }
 ```
@@ -399,6 +423,7 @@ El siguiente perfil de configuración contiene entradas para todas las opciones 
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
       "automaticDefinitionUpdateEnabled":true
+      "proxy": "http://proxy.server:port/"
    }
 }
 ```
@@ -412,6 +437,17 @@ python -m json.tool mdatp_managed.json
 ```
 
 Si el JSON está bien formado, el comando anterior lo devuelve al Terminal y devuelve un código de salida de `0` . De lo contrario, se muestra un error que describe el problema y el comando devuelve un código de salida de `1` .
+
+## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Comprobar que el archivo mdatp_managed.jsestá funcionando según lo esperado
+Para comprobar que el /etc/opt/microsoft/mdatp/managed/mdatp_managed.json funciona correctamente, debería ver "[administrado]" junto a esta configuración:  
+- cloud_enabled
+- cloud_automatic_sample_submission_consent
+- passice_mode_enabled
+- real_time_protection_enabled
+- automatic_definition_update_enabled
+
+> [!NOTE]
+> Para que mdatp_managed.jsse haga efectivo, no es necesario reiniciar el wdavdaemon.
 
 ## <a name="configuration-profile-deployment"></a>Implementación de perfiles de configuración
 

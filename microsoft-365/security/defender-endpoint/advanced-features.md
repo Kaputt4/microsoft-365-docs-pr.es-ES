@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 684025441c8400775f469515df1bcd0423d6460b
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: bcb96ea29649bf3525b2ffcf6d5cbb5d299bacf3
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394751"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418121"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -72,6 +72,9 @@ Cuando esta configuración está activada, las alertas se correlacionan con inci
 >Cambiar esta configuración afecta solo a las correlaciones futuras de alertas.
 
 
+## <a name="enable-edr-in-block-mode"></a>Habilitar EDR en modo de bloqueo
+La detección y respuesta de puntos de conexión (EDR) en modo de bloqueo proporciona protección contra artefactos malintencionados, incluso cuando antivirus de Microsoft Defender se ejecuta en modo pasivo. Cuando está activado, EDR en modo de bloqueo bloquea los artefactos o comportamientos malintencionados que se detectan en un dispositivo. EDR en modo de bloqueo funciona en segundo plano para corregir artefactos malintencionados detectados después de la infracción.
+
 ## <a name="autoresolve-remediated-alerts"></a>Alertas remediadas de Autoresolve
 
 Para los inquilinos creados en Windows 10, versión 1809 o después de windows 1809, la funcionalidad de investigación y corrección automatizada está configurada de forma predeterminada para resolver alertas en las que el estado del resultado del análisis automatizado es "No se encontraron amenazas" o "Corregido".  Si no quieres que las alertas se resuelvan automáticamente, tendrás que desactivar manualmente la característica.
@@ -115,6 +118,14 @@ Para obtener más información, vea [Administrar indicadores](manage-indicators.
 
 > [!NOTE]
 > La protección de red aprovecha los servicios de reputación que procesan solicitudes en ubicaciones que podrían estar fuera de la ubicación seleccionada para los datos de Defender para endpoint.
+
+
+## <a name="tamper-protection"></a>Protección contra alteraciones
+Durante algunos tipos de ataques cibernéticos, los actores malos intentan deshabilitar las características de seguridad, como la protección antivirus, en las máquinas. A los actores malintencionados les gusta deshabilitar las características de seguridad para obtener un acceso más fácil a los datos, para instalar malware o para aprovechar sus datos, identidades y dispositivos.
+
+La protección contra alteraciones bloquea básicamente Antivirus de Microsoft Defender e impide que se cambie la configuración de seguridad a través de aplicaciones y métodos.
+
+Mantenga activada la protección contra alteraciones para evitar cambios no deseados en la solución de seguridad y sus características esenciales.
 
 ## <a name="show-user-details"></a>Mostrar detalles de usuario
 
@@ -219,4 +230,4 @@ Después de configurar los indicadores de infracción de directivas de seguridad
 ## <a name="related-topics"></a>Temas relacionados
 
 - [Actualizar la configuración de retención de datos](data-retention-settings.md)
-- [Configurar notificaciones de alertas](configure-email-notifications.md)
+- [Configurar notificaciones de alerta](configure-email-notifications.md)

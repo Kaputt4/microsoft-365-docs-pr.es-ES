@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Cómo implementar el túnel dividido VPN para Office 365
-ms.openlocfilehash: 93adc70882e0c8ce9752cb471b13c301a4a59bd4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d676c4bdcb4c3938391b044f4cb2534991278af8
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051287"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408584"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Implementación del túnel dividido de VPN para Office 365
 
@@ -31,27 +31,27 @@ ms.locfileid: "51051287"
 >- Para obtener información general sobre el uso del túnel dividido de VPN para optimizar la conectividad de Office 365 para los usuarios remotos, consulte [Información general: túnel dividido VPN para Office 365](microsoft-365-vpn-split-tunnel.md).
 >- Para obtener más información sobre cómo optimizar el rendimiento de los inquilinos de Office 365 en todo el mundo para los usuarios de China, consulte [Optimización del rendimiento de Office 365 para usuarios de China](microsoft-365-networking-china.md).
 
-Durante muchos años, las empresas han estado usando VPN para dar soporte a experiencias remotas para sus usuarios. Mientras las cargas de trabajo básicas permanecían en entornos locales, una VPN del cliente remoto enrutada a través de un centro de datos de la red corporativa era el método principal para que los usuarios remotos accediesen a los recursos corporativos. Para salvaguardar estas conexiones, las empresas crean capas de soluciones de seguridad de red a lo largo de las rutas VPN. Esto se hizo para proteger la infraestructura interna, así como para salvaguardar la navegación móvil en sitios web externos al redirigir el tráfico a la VPN y, después, al perímetro de Internet local. Las VPN, los perímetros de red y la infraestructura de seguridad asociada a menudo se basaban y escalaban para un volumen de tráfico definido, normalmente con la mayor parte de la conectividad iniciada desde la red corporativa y la mayor parte de ella se encontraba dentro de los límites de la red interna.
+Durante muchos años, las empresas han estado usando VPN para admitir experiencias remotas para sus usuarios. Mientras las cargas de trabajo básicas permanecían en entornos locales, una VPN del cliente remoto enrutada a través de un centro de datos de la red corporativa era el método principal para que los usuarios remotos accediesen a los recursos corporativos. Para salvaguardar estas conexiones, las empresas crean capas de soluciones de seguridad de red a lo largo de las rutas VPN. Esta seguridad se creó para proteger la infraestructura interna y proteger la navegación móvil de sitios web externos mediante el reenrutación del tráfico en la VPN y, a continuación, a través del perímetro de Internet local. Las VPN, los perímetros de red y la infraestructura de seguridad asociada a menudo se basaban y escalaban para un volumen de tráfico definido, normalmente con la mayor parte de la conectividad iniciada desde la red corporativa y la mayor parte de ella se encontraba dentro de los límites de la red interna.
 
 Durante bastante tiempo, los modelos de VPN en los que todas las conexiones del dispositivo del usuario remoto se enrutan de nuevo a la red local (conocido como **forzar el uso del túnel**) eran en gran medida sostenibles siempre que la escala concurrente de usuarios remotos fuera modesta y los volúmenes de tráfico que atravesaban la VPN fueran bajos.  Algunos clientes siguieron utilizando el túnel de fuerza VPN como el status quo incluso después de que sus aplicaciones se movieran desde el interior del perímetro corporativo a las nubes públicas de SaaS, siendo Office 365 un ejemplo destacado.
 
-El uso de túneles forzados de VPN para conectarse a aplicaciones en la nube de distribución y rendimiento confidenciales es extremadamente deficiente, pero es posible que algunas empresas aceptasen el impacto negativo de esta práctica para mantener su método principal desde el punto de vista de la seguridad. A continuación se muestra un diagrama de ejemplo de este escenario:
+El uso de VPN tuneladas forzadas para conectarse a aplicaciones en la nube distribuidas y sensibles al rendimiento es subóptimo, pero el efecto negativo de esto puede haber sido aceptado por algunas empresas para mantener el statu quo desde una perspectiva de seguridad. A continuación se muestra un diagrama de ejemplo de este escenario:
 
 ![Configuración del túnel dividido de VPN](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
-Este problema ha estado creciendo durante varios años, en los que muchos clientes han estado informando de un cambio considerable en los patrones de tráfico de red. El tráfico que solía permanecer local ahora se conecta a puntos de conexión de nube externos. Muchos clientes de Microsoft han informado de que, en el pasado, alrededor del 80 % del tráfico de red se dirigía a un origen interno (representado por la línea de puntos en el diagrama anterior). En 2020 esa cifra ha caído aproximadamente a un 20 % o menos, debido a los desplazamientos de amplios volúmenes de cargas de trabajo a la nube. Estas tendencias no son infrecuentes para otras empresas. Con el tiempo, a medida que la nube avanza, el modelo anterior se convierte en algo cada vez más engorroso y menos sostenible, lo que limita la agilidad de la organización para adaptarse a un mundo que da prioridad a la nube.
+Este problema ha estado creciendo durante muchos años, ya que muchos clientes informan de un cambio significativo de los patrones de tráfico de red. El tráfico que solía permanecer local ahora se conecta a puntos de conexión de nube externos. Muchos clientes de Microsoft han informado de que, en el pasado, alrededor del 80 % del tráfico de red se dirigía a un origen interno (representado por la línea de puntos en el diagrama anterior). En 2020 esa cifra ha caído aproximadamente a un 20 % o menos, debido a los desplazamientos de amplios volúmenes de cargas de trabajo a la nube. Estas tendencias no son infrecuentes para otras empresas. Con el tiempo, a medida que la nube avanza, el modelo anterior se convierte en algo cada vez más engorroso y menos sostenible, lo que limita la agilidad de la organización para adaptarse a un mundo que da prioridad a la nube.
 
 La crisis mundial de la COVID-19 ha escalado este problema, de forma que necesita una solución inmediata. La necesidad de garantizar la seguridad de los empleados ha generado demandas sin precedentes en TI empresarial para dar soporte a la productividad del trabajo desde el hogar a una escala masiva. Microsoft Office 365 está bien posicionado para ayudar a los clientes a satisfacer esa demanda, pero la alta concurrencia de los usuarios que trabajan desde casa genera un gran volumen de tráfico de Office 365 que, si se enruta a través de VPN de túnel forzado y perímetros de red locales, provoca una saturación rápida y ejecuta la infraestructura VPN fuera de capacidad. En esta nueva realidad, el uso de VPN para acceder a Office 365 ya no es solo un impedimento de rendimiento, sino un muro duro que no solo afecta a Office 365, sino a las operaciones empresariales críticas que aún tienen que depender de la VPN para funcionar.
 
-Microsoft ha trabajado codo con codo con los clientes y las grandes empresas durante muchos años para ofrecer soluciones eficaces y modernas para estos problemas desde dentro de sus propios servicios, así como para adoptar las prácticas recomendadas del sector. Los [Principios de conectividad](./microsoft-365-network-connectivity-principles.md) para el servicio de Office 365 se diseñaron para que funcione de manera eficiente para los usuarios remotos y para que la organización mantenga la seguridad y el control sobre su conectividad. Estas soluciones también se pueden implementar rápidamente y con poco esfuerzo, de forma que tienen un impacto muy positivo en los problemas descritos anteriormente.
+Microsoft ha trabajado codo con codo con los clientes y las grandes empresas durante muchos años para ofrecer soluciones eficaces y modernas para estos problemas desde dentro de sus propios servicios, así como para adoptar las prácticas recomendadas del sector. Los [Principios de conectividad](./microsoft-365-network-connectivity-principles.md) para el servicio de Office 365 se diseñaron para que funcione de manera eficiente para los usuarios remotos y para que la organización mantenga la seguridad y el control sobre su conectividad. Estas soluciones también se pueden implementar rápidamente con un trabajo limitado pero logran un impacto positivo significativo en los problemas descritos anteriormente.
 
-La estrategia recomendada por Microsoft para optimizar la conectividad de los trabajadores remotos se centra en solucionar rápidamente los problemas con el método tradicional y ofrecer un alto rendimiento con tan solo unos sencillos pasos. Estos pasos ajustan el enfoque de VPN heredado para un pequeño número de puntos de conexión definidos que omiten los servidores VPN con cuello de botella. Se puede aplicar un modelo de seguridad equivalente o incluso superior en diferentes capas para que no sea necesario proteger todo el tráfico de salida de la red corporativa. En la mayoría de los casos, esto se puede lograr de forma eficaz en cuestión de horas, y luego escalar a otras cargas de trabajo a medida que sea necesario y el tiempo lo permita.
+La estrategia recomendada por Microsoft para optimizar la conectividad de los trabajadores remotos se centra en solucionar rápidamente los problemas con el método tradicional y ofrecer un alto rendimiento con tan solo unos sencillos pasos. Estos pasos ajustan el enfoque de VPN heredado para algunos puntos de conexión definidos que omiten los servidores VPN con cuello de botella. Se puede aplicar un modelo de seguridad equivalente o incluso superior en diferentes capas para que no sea necesario proteger todo el tráfico de salida de la red corporativa. En la mayoría de los casos, esto se puede lograr de forma eficaz en cuestión de horas, y luego escalar a otras cargas de trabajo a medida que sea necesario y el tiempo lo permita.
 
 ## <a name="common-vpn-scenarios"></a>Escenarios de VPN comunes
 
 En la lista que aparece a continuación se muestran los escenarios de VPN más comunes que se ven en los entornos empresariales. La mayoría de los clientes utiliza el modelo 1 de forma tradicional (túnel forzado de VPN). Esta sección le ayudará a realizar una transición rápida y segura al modelo **2,** que se puede lograr con relativamente poco esfuerzo y tiene enormes ventajas para el rendimiento de la red y la experiencia del usuario.
 
-| **Modelo** | **Descripción** |
+| Model | Descripción |
 | --- | --- |
 | [1. Túnel forzado de VPN](#1-vpn-forced-tunnel) | El 100 % del tráfico entra en el túnel VPN, incluidos los entornos locales, Internet y todo O365/M365 |
 | [2. Túnel forzado de VPN con unas pocas excepciones](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) | El túnel de VPN se usa de forma predeterminada (la ruta predeterminada apunta a la VPN), con pocos escenarios de exención especialmente importantes que se pueden dirigir directamente |
@@ -61,13 +61,13 @@ En la lista que aparece a continuación se muestran los escenarios de VPN más c
 
 ### <a name="1-vpn-forced-tunnel"></a>1. Túnel forzado de VPN
 
-Este es el escenario de inicio más habitual de la mayoría de los clientes empresariales. Se usa una VPN forzada, lo que significa que el 100 % del tráfico se dirige a la red corporativa independientemente del hecho de que el extremo reside en la red corporativa o no. Cualquier tráfico externo (Internet), como el de Office 365 o la exploración de Internet, se redirige fuera del equipamiento local de seguridad, como los servidores proxy. En el clima actual en el que 100 % de los usuarios trabajan de forma remota, este modelo pone una carga muy elevada en la infraestructura de VPN y es probable que obstaculice significativamente el rendimiento de todo el tráfico corporativo y que, por lo tanto, la empresa opere de forma eficaz en un momento de crisis.
+Este es el escenario de inicio más habitual de la mayoría de los clientes empresariales. Se usa una VPN forzada, lo que significa que el 100 % del tráfico se dirige a la red corporativa independientemente del hecho de que el extremo reside en la red corporativa o no. Cualquier tráfico externo (Internet) enlazado, como Office 365 o la exploración de Internet, se vuelve a anclar de nuevo fuera del equipamiento de seguridad local, como servidores proxy. En el actual entorno en el que casi el 100 % de los usuarios trabajan de forma remota, este modelo pone una gran carga en la infraestructura VPN y es probable que dificulte significativamente el rendimiento de todo el tráfico corporativo y, por lo tanto, la empresa funcione de forma eficaz en un momento de crisis.
 
 ![Modelo 1 de túnel forzado de VPN](../media/vpn-split-tunneling/vpn-model-1.png)
 
 ### <a name="2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions"></a>2. Túnel forzado de VPN con unas pocas excepciones de confianza
 
-Este modelo es significativamente más eficaz para que una empresa funcione bajo, ya que permite un pequeño número de extremos controlados y definidos que son muy altos y sensibles a la latencia para omitir el túnel VPN e ir directamente al servicio de Office 365 en este ejemplo. Esto mejora significativamente el rendimiento de los servicios descargados y también disminuye la carga en la infraestructura VPN, lo que permite que los elementos que aún lo requieran funcionen con menor contención de recursos. Este modelo se centra en ayudar con la transición a, ya que permite realizar acciones sencillas y definidas muy rápidamente con numerosos resultados positivos.
+Este modelo es significativamente más eficaz para que una empresa funcione bajo, ya que permite que algunos puntos de conexión controlados y definidos que son sensibles a la carga y la latencia muy altos para omitir el túnel VPN e ir directamente al servicio de Office 365 en este ejemplo. Esto mejora significativamente el rendimiento de los servicios descargados y también disminuye la carga en la infraestructura VPN, lo que permite que los elementos que aún lo requieran funcionen con menor contención de recursos. Este modelo se centra en ayudar con la transición a, ya que permite realizar acciones sencillas y definidas rápidamente con numerosos resultados positivos.
 
 ![Modelo 2 de túnel dividido de VPN](../media/vpn-split-tunneling/vpn-model-2.png)
 
@@ -91,7 +91,7 @@ Una versión más avanzada del modelo número dos, en la que cualquier servicio 
 
 ## <a name="implement-vpn-split-tunneling"></a>Implementación de túnel dividido de VPN
 
-En esta sección se describen los pasos sencillos que se deben seguir para migrar la arquitectura de cliente de VPN de un _túnel forzado de VPN_ a un _túnel forzado de VPN con un número reducido de excepciones de confianza,_ [el modelo n.º 2 de túnel dividido de VPN](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) en la sección [Escenarios de VPN comunes](#common-vpn-scenarios).
+En esta sección, encontrará los _sencillos_ pasos necesarios para migrar la arquitectura de cliente VPN de un túnel forzado de _VPN_ a un túnel forzado de VPN con un pequeño número de excepciones de confianza, modelo de túnel dividido [de VPN #2](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) en escenarios comunes de [VPN.](#common-vpn-scenarios)
 
 En el siguiente diagrama se muestra cómo funciona la solución recomendada de túnel dividido de VPN:
 
@@ -99,7 +99,7 @@ En el siguiente diagrama se muestra cómo funciona la solución recomendada de t
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. Identificar los puntos de conexión que se deben optimizar
 
-En el tema [Intervalos de direcciones IP y URL de Office 365](urls-and-ip-address-ranges.md), Microsoft identifica de manera clara los puntos de conexión clave que necesita optimizar y los categoriza como **Optimizar**. Actualmente, solo hay cuatro direcciones URL y veinte subredes IP que deben optimizarse. Este pequeño grupo de puntos de conexión representa, aproximadamente, entre un 70 % y un 80 % del volumen del tráfico hacia el servicio de Office 365, entre el que se incluyen los puntos de conexión sensibles a la latencia, como los del contenido multimedia de Teams. Básicamente, este es el tráfico que debemos tener especial cuidado y es también el tráfico que pondrá una presión increíble en las rutas de red tradicionales y la infraestructura VPN.
+En el tema [Intervalos de direcciones IP y URL de Office 365](urls-and-ip-address-ranges.md), Microsoft identifica de manera clara los puntos de conexión clave que necesita optimizar y los categoriza como **Optimizar**. Actualmente, solo hay cuatro direcciones URL y 20 subredes IP que deben optimizarse. Este pequeño grupo de puntos de conexión representa, aproximadamente, entre un 70 % y un 80 % del volumen del tráfico hacia el servicio de Office 365, entre el que se incluyen los puntos de conexión sensibles a la latencia, como los del contenido multimedia de Teams. Básicamente, este es el tráfico que debemos tener especial cuidado y es también el tráfico que pondrá una presión increíble en las rutas de red tradicionales y la infraestructura VPN.
 
 Las direcciones URL de esta categoría tienen las siguientes características:
 
@@ -120,7 +120,7 @@ Las direcciones URL que se deben optimizar actualmente se muestran en la siguien
 | --- | --- | --- |
 | <https://outlook.office365.com> | TCP 443 | Esta es una de las direcciones URL primarias que Outlook usa para conectarse a su servidor de Exchange Online y tiene un alto volumen de uso de ancho de banda y recuento de conexiones. Se requiere una baja latencia de red para las características en línea, entre las que se incluyen: búsqueda instantánea, otros calendarios de buzón, búsqueda libre/ocupada, administrar reglas y alertas, archivo de Exchange Online y mensajes de correo electrónico que salen de la bandeja de salida. |
 | <https://outlook.office.com> | TCP 443 | Esta dirección URL se usa para que Outlook Online Web Access se conecte al servidor de Exchange Online y es sensible a la latencia de red. La conectividad es especialmente importante para la carga y descarga de archivos grandes con SharePoint Online. |
-| https:// \<tenant\> .sharepoint.com | TCP 443 | Esta es la dirección URL principal de SharePoint Online y tiene un gran uso de ancho de banda. |
+| https:// \<tenant\> .sharepoint.com | TCP 443 | Esta es la dirección URL principal de SharePoint Online y tiene un uso de ancho de banda alto. |
 | https:// \<tenant\> -my.sharepoint.com | TCP 443 | Esta es la dirección URL principal de OneDrive para la Empresa y tiene un gran uso de ancho de banda y posiblemente un alto número de conexiones de la Herramienta de sincronización de OneDrive para la Empresa. |
 | Direcciones IP del contenido multimedia de Teams (sin URL) | UDP 3478, 3479, 3480 y 3481 | Asignación de detección de retransmisión y tráfico en tiempo real (3478), audio (3479), vídeo (3480) y uso compartido de pantalla de vídeo (3481). Estos son los puntos de conexión usados para el tráfico multimedia de Skype Empresarial y Microsoft Teams (llamadas, reuniones, etc.). La mayoría de los puntos de conexión se proporcionan cuando el cliente de Microsoft Teams establece una llamada (que se incluye en las direcciones IP mostradas para el servicio). El uso del protocolo UDP es necesario para obtener la calidad multimedia ideal.   |
 
@@ -128,7 +128,7 @@ En los ejemplos anteriores, se debe reemplazar al **inquilino** por el nombre de
 
 #### <a name="optimize-ip-address-ranges"></a>Optimización de intervalos de direcciones IP
 
-En el momento de escribir los intervalos IP a los que corresponden estos puntos de conexión son los siguientes. Es **muy** recomendable que use un [script como el de este](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) ejemplo, el [servicio web de dirección IP y URL de Office 365](microsoft-365-ip-web-service.md) o la [página de la dirección IP o URL](urls-and-ip-address-ranges.md) para comprobar si hay actualizaciones al aplicar la configuración, y aplicar una directiva para que se realice esta comprobación de forma periódica.
+En el momento de escribir los intervalos IP a los que corresponden estos puntos de conexión son los siguientes. Se  recomienda encarecidamente que use un [script](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) como este ejemplo, el servicio web de DIRECCIONES IP y URL de [Office 365](microsoft-365-ip-web-service.md) o la página [URL/IP](urls-and-ip-address-ranges.md) para comprobar si hay actualizaciones al aplicar la configuración y poner una directiva en su lugar para hacerlo con regularidad.
 
 ```
 104.146.128.0/17
@@ -209,7 +209,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 ```
 -->
 
-El cliente VPN debe configurarse para que el tráfico a las direcciones IP de la categoría **Optimizar** se enrute de esta forma. Esto permite que el tráfico use recursos locales de Microsoft, como puertas frontales de servicio de Office 365, como la puerta frontal de [Azure](https://azure.microsoft.com/blog/azure-front-door-service-is-now-generally-available/) que ofrece servicios de Office 365 y puntos de conexión de conectividad lo más cerca posible de los usuarios. Esto permite ofrecer un alto nivel de rendimiento a los usuarios, independientemente de en qué parte del mundo se encuentren, y aprovechar al máximo la [red global de nivel mundial de Microsoft](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/), que probablemente se encuentre a escasos milisegundos de la salida directa de los usuarios.
+El cliente VPN debe configurarse para que el tráfico a las direcciones IP de la categoría **Optimizar** se enrute de esta forma. Esto permite que el tráfico use recursos locales de Microsoft, como puertas frontales de servicio de Office 365, como la puerta frontal de [Azure](https://azure.microsoft.com/blog/azure-front-door-service-is-now-generally-available/) que ofrece servicios de Office 365 y puntos de conexión de conectividad lo más cerca posible de los usuarios. Esto nos permite ofrecer niveles de alto rendimiento a los usuarios dondequiera que estén en el mundo y aprovecha al máximo la red global de clase mundial de [Microsoft,](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)que probablemente se encuentra a unos milisegundos de la salida directa de los usuarios.
 
 ## <a name="configuring-and-securing-teams-media-traffic"></a>Configuración y protección del tráfico multimedia de Teams
 
@@ -221,7 +221,7 @@ Tanto para llamadas como para reuniones, siempre y cuando las subredes IP de Opt
 
 Algunos programas de cliente de VPN permiten la manipulación del enrutamiento en función de la dirección URL. Pero el tráfico multimedia de Teams no tiene una dirección URL asociada, por lo que el control del enrutamiento para este tráfico tiene que realizarse mediante subredes IP.
 
-En determinadas situaciones, a menudo no relacionadas con la configuración del cliente de Teams, el tráfico multimedia atraviesa igualmente el túnel de VPN aunque se hayan dispuesto las rutas correctas. Si este es el caso, debería bastar con usar una regla de firewall para evitar que las subredes IP o puertos de Teams usen la VPN.
+En determinadas situaciones, a menudo no relacionadas con la configuración del cliente de Teams, el tráfico multimedia atraviesa igualmente el túnel de VPN aunque se hayan dispuesto las rutas correctas. Si se produce este escenario, debe bastar con usar una regla de firewall para impedir que las subredes IP de Teams o los puertos utilicen la VPN.
 
 >[!IMPORTANT]
 >Para asegurarse de que el tráfico multimedia de Teams se enruta a través del método deseado en todos los escenarios de VPN, asegúrese de que los usuarios ejecuten la versión **1.3.00.13565** o posterior del cliente de Microsoft Teams. Esta versión incluye mejoras en la forma en que el cliente detecta las rutas de red disponibles.
@@ -238,7 +238,7 @@ El tráfico multimedia se cifra con SRTP, que usa una clave de sesión generada 
 
 Skype Empresarial Online genera nombres de usuario o contraseñas para proteger el acceso a relés multimedia mediante _retransmisiones de uso de recorrido por NAT (TURN)_. Los relés multimedia intercambian el nombre de usuario/contraseña a través de un canal SIP protegido con TLS. Es importante tener en cuenta que, aunque se puede usar un túnel VPN para conectar el cliente a la red corporativa, el tráfico debe fluir en su forma SRTP cuando sale de la red corporativa para llegar al servicio.
 
-Puede obtener información acerca de cómo Teams mitiga los problemas de seguridad comunes, como los ataques de amplificación de las utilidades de voz o _de recorrido de sesión para NAT (STUN)_, [en este artículo](/openspecs/office_protocols/ms-ice2/69525351-8c68-4864-b8a6-04bfbc87785c).
+Encontrará información sobre cómo Teams mitiga los problemas de seguridad comunes, como los ataques de amplificación de las utilidades de recorrido de sesión o de voz para ataques de amplificación _NAT (STUN)_ en [5.1 Consideraciones](/openspecs/office_protocols/ms-ice2/69525351-8c68-4864-b8a6-04bfbc87785c)de seguridad para implementadores.
 
 También podrá obtener más información acerca de los controles de seguridad modernos en los escenarios de trabajo remoto en [Formas alternativas para que los profesionales de seguridad y de TI logren controles de seguridad modernos en los escenarios de trabajo remoto de hoy día (blog del Equipo de seguridad de Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/).
 
@@ -274,7 +274,7 @@ En esta sección se ofrecen enlaces a guías detalladas para la realización de 
 - **Pulse Secure**: [Túnel VPN: Cómo configurar el túnel dividido para excluir aplicaciones de Office 365](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
 - **VPN de punto de** comprobación: [cómo configurar túnel dividido para Office 365 y otras aplicaciones SaaS](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
-## <a name="faq"></a>Preguntas más frecuentes
+## <a name="faq"></a>Preguntas frecuentes
 
 El equipo de seguridad [](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) de Microsoft ha publicado un artículo en el que se describen formas clave para que los profesionales de seguridad y TI puedan lograr controles de seguridad modernos en los escenarios de trabajo remoto únicos actuales. Además, a continuación se muestran algunas de las preguntas de los clientes más comunes acerca de este tema, con sus respuestas.
 
@@ -282,7 +282,7 @@ El equipo de seguridad [](https://www.microsoft.com/security/blog/2020/03/26/alt
 
 La respuesta es una [característica denominada restricciones de inquilino](/azure/active-directory/manage-apps/tenant-restrictions). El tráfico de autenticación no es de gran volumen ni es especialmente sensible a la latencia, por lo que puede enviarse por la solución de VPN al proxy local donde se aplica la característica. Aquí se mantiene una lista de inquilinos de confianza permitidos y si el cliente intenta obtener un token para un inquilino que no es de confianza, el proxy simplemente deniega la solicitud. Si el inquilino es de confianza, se puede obtener el token si el usuario tiene las credenciales y los derechos adecuados.
 
-Por lo tanto, aunque un usuario pueda realizar una conexión TCP/UDP a los puntos de conexión de Optimizar marcados anteriores, sin un token válido para acceder al inquilino en cuestión, simplemente no podrán iniciar sesión y acceder a los datos ni moverlos.
+Por lo tanto, aunque un usuario pueda realizar una conexión TCP/UDP a los puntos de conexión marcados anteriormente para Optimizar, sin un token válido para tener acceso al espacio empresarial en cuestión, simplemente no puede iniciar sesión ni acceder a los datos ni moverlo.
 
 ### <a name="does-this-model-allow-access-to-consumer-services-such-as-personal-onedrive-accounts"></a>¿Permite este modelo el acceso a los servicios al consumidor, como cuentas de OneDrive personales?
 
@@ -304,15 +304,15 @@ Entonces se puede desencadenar una directiva como aprobar, activar MFA o bloquea
 
 ### <a name="how-do-i-protect-against-viruses-and-malware"></a>¿Cómo puedo protegerme contra virus y malware?
 
-De nuevo, Office 365 proporciona protección para los puntos de conexión marcados para Optimizar en varias capas en el servicio, [como se describe en este documento](/office365/Enterprise/office-365-malware-and-ransomware-protection). Como se ha indicado, es mucho más eficaz proporcionar estos elementos de seguridad en el propio servicio en lugar de intentar hacerlo en línea con dispositivos que pueden no comprender completamente los protocolos o el tráfico. De forma predeterminada, SharePoint Online examina automáticamente las [cargas de archivos](../security/defender-365-security/virus-detection-in-spo.md) en busca de malware conocido
+De nuevo, Office 365 proporciona protección para los puntos de conexión marcados para Optimizar en varias capas en el servicio, [como se describe en este documento](/office365/Enterprise/office-365-malware-and-ransomware-protection). Como se ha indicado, es mucho más eficaz proporcionar estos elementos de seguridad en el propio servicio en lugar de intentar hacerlo en línea con dispositivos que pueden no comprender completamente los protocolos o el tráfico. De forma predeterminada, SharePoint Online examina automáticamente las [cargas de archivos](../security/office-365-security/virus-detection-in-spo.md) en busca de malware conocido
 
 Para los puntos de conexión de Exchange enumerados anteriormente, [Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) y Microsoft Defender para Office [365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) hacen un excelente trabajo de proporcionar seguridad del tráfico al servicio.
 
 ### <a name="can-i-send-more-than-just-the-optimize-traffic-direct"></a>¿Puedo enviar algo más de forma directa que el tráfico de Optimizar?
 
-Se debe dar prioridad a los puntos de conexión marcados como **Optimizar**, ya que aportan el máximo beneficio con un bajo nivel de trabajo. Sin embargo, si lo desea, es necesario permitir puntos de conexión marcados para que el servicio funcione y tener ips proporcionadas para los puntos de conexión que se pueden usar si es necesario.
+Se debe dar prioridad a los puntos de conexión marcados como **Optimizar**, ya que aportan el máximo beneficio con un bajo nivel de trabajo. Sin embargo, si lo desea, es necesario permitir puntos de conexión marcados para que el servicio funcione y que se proporcionan direcciones IP para los puntos de conexión que se pueden usar si es necesario.
 
-También hay varios proveedores que ofrecen soluciones de seguridad y proxy basadas en la nube denominadas puertas de enlace web seguras que proporcionan seguridad central, control y aplicación de directiva corporativa para la exploración web general. Estas soluciones pueden funcionar bien en un primer mundo en la nube, si es altamente disponible, eficaz y aprovisionada cerca de los usuarios al permitir que el acceso seguro a Internet se entregue desde una ubicación basada en la nube cercana al usuario. Así se elimina la necesidad de redirigir el tráfico de navegación general al origen a través de la red VPN/corporativa, a la vez que se permite un control de seguridad centralizado.
+También hay varios proveedores que ofrecen soluciones de seguridad y proxy basadas en la nube denominadas puertas de enlace _web seguras_ que proporcionan seguridad central, control y aplicación de directiva corporativa para la exploración web general. Estas soluciones pueden funcionar bien en un primer mundo en la nube, si es altamente disponible, eficaz y aprovisionada cerca de los usuarios al permitir que el acceso seguro a Internet se entregue desde una ubicación basada en la nube cercana al usuario. Así se elimina la necesidad de redirigir el tráfico de navegación general al origen a través de la red VPN/corporativa, a la vez que se permite un control de seguridad centralizado.
 
 Pero incluso con estas soluciones implementadas, Microsoft sigue recomendando que se envíe directamente al servicio el tráfico de Office 365 marcado como Optimizar.
 
@@ -320,7 +320,7 @@ Para obtener instrucciones sobre cómo permitir el acceso directo a una red virt
 
 ### <a name="why-is-port-80-required-is-traffic-sent-in-the-clear"></a>¿Por qué es necesario el puerto 80? ¿El tráfico se envía sin cifrar?
 
-El puerto 80 solo se usa para cosas como redirigirse a una sesión de puerto 443, no se envían datos de clientes ni se obtiene acceso a ellos a través del puerto 80. [Este artículo](../compliance/encryption.md) describe el cifrado de datos en tránsito y en reposo para Office 365, y [este artículo](/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic) explica cómo se usa SRTP para proteger el tráfico multimedia de Teams.
+El puerto 80 solo se usa para cosas como redirigirse a una sesión de puerto 443, no se envían datos de clientes ni se obtiene acceso a ellos a través del puerto 80. [El](../compliance/encryption.md) cifrado describe el cifrado de los datos en tránsito y en reposo para Office 365, y [tipos](/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic) de tráfico describe cómo usamos SRTP para proteger el tráfico multimedia de Teams.
 
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>¿Estos consejos se aplican a los usuarios de China con una instancia mundial de Office 365?
 
@@ -328,7 +328,7 @@ El puerto 80 solo se usa para cosas como redirigirse a una sesión de puerto 443
 
 ### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>¿Funciona la configuración de túnel dividido para Teams que se ejecuta en un explorador?
 
-**No**. Solo funciona en la versión 1.3.00.13565 o posterior del cliente de Microsoft Teams. Esta versión incluye mejoras en la forma en que el cliente detecta las rutas de red disponibles.
+Sí lo hace, a través de exploradores compatibles, que se enumeran en [Obtener clientes para Microsoft Teams](https://docs.microsoft.com/microsoftteams/get-clients#web-client).
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Información general sobre la conectividad de red en el Centro de administración de Microsoft 365 (versión preliminar)
-ms.openlocfilehash: 0bfcebff4ebbefdb77049119fef2402af1ca8f90
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b80dd001bd2ee5d5725ea67c73aa34b4eb8816c
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926101"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408410"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Conectividad de red en el Centro de administración de Microsoft 365 (versión preliminar)
 
@@ -149,6 +149,10 @@ La pestaña detalles de la página de ubicación de la oficina muestra los resul
 > [!div class="mx-imgBorder"]
 > ![Detalles específicos de la ubicación](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
+## <a name="sharing-network-assessment-data-with-microsoft"></a>Compartir datos de evaluación de red con Microsoft
+
+De forma predeterminada, las evaluaciones de red para su organización y la información de red se comparten con los empleados de Microsoft. Esto no incluye ningún dato personal de su personal, sino solo las métricas de evaluación de red específicas y los conocimientos de red que se muestran en el Centro de administración para las ubicaciones de la oficina. Tampoco incluye los nombres de ubicación de la oficina ni las direcciones de calle, por lo que tendría que decirles la ciudad y el identificador de soporte técnico de la oficina que desea analizar. Si esto está desactivado, los ingenieros de Microsoft con los que está hablando de la conectividad de red no podrán ver ninguna de esta información. Al habilitar esta configuración, solo se comparten los datos futuros a partir del día después de habilitarlo.
+
 ## <a name="csv-import-for-lan-subnet-office-locations"></a>Importar CSV para ubicaciones de oficina de subred LAN
 
 Para la identificación de la oficina de subred LAN, debe agregar cada ubicación por adelantado. En lugar de agregar ubicaciones de oficina individuales en la **pestaña Ubicaciones,** puede importarlas desde un archivo CSV. Es posible que pueda obtener estos datos de otros lugares en los que los ha almacenado, como el Panel de calidad de llamadas o los sitios y servicios de Active Directory
@@ -185,7 +189,7 @@ En el archivo CSV, una ubicación de ciudad detectada se muestra en la columna u
    > [!div class="mx-imgBorder"]
    > ![Mensaje listo para importar CSV](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>Preguntas más frecuentes
+## <a name="faq"></a>Preguntas frecuentes
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>¿Qué es una puerta principal de servicio de Microsoft 365?
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9af7464d9cae06dc53abb019aa0b189d6e72e749
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 99e59005bc01a113567e64c921ddcdc1d66785d2
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068993"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408296"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Búsqueda de dispositivos expuestos: administración de amenazas y vulnerabilidades
 
@@ -43,13 +43,13 @@ La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en cons
 
 ### <a name="schema-tables"></a>Tablas del esquema
 
-- [DeviceTvmSoftwareInventory:](advanced-hunting-devicetvmsoftwareinventory-table.md) inventario de software instalado en dispositivos, incluida la información de su versión y el estado de fin de soporte técnico
+- [DeviceTvmSoftwareInventory:](advanced-hunting-devicetvmsoftwareinventory-table.md) inventario de software instalado en dispositivos, incluida la información de su versión y el estado de finalización del soporte técnico.
 
-- [DeviceTvmSoftwareVulnerabilities:](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) vulnerabilidades de software encontradas en dispositivos y la lista de actualizaciones de seguridad disponibles que abordan cada vulnerabilidad
+- [DeviceTvmSoftwareVulnerabilities:](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) vulnerabilidades de software encontradas en dispositivos y la lista de actualizaciones de seguridad disponibles que abordan cada vulnerabilidad.
 
-- [DeviceTvmSoftwareVulnerabilitiesKB:](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) base de conocimientos de vulnerabilidades divulgadas públicamente, incluido si el código de vulnerabilidad está disponible públicamente
+- [DeviceTvmSoftwareVulnerabilitiesKB:](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) base de conocimiento de las vulnerabilidades divulgadas públicamente, incluido si el código de vulnerabilidad está disponible públicamente.
 
-- [DeviceTvmSecureConfigurationAssessment:](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) eventos de evaluación de la administración de amenazas y vulnerabilidades, que indican el estado de varias configuraciones de seguridad en dispositivos
+- [DeviceTvmSecureConfigurationAssessment:](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) eventos de evaluación de la administración de amenazas y vulnerabilidades, que indican el estado de varias configuraciones de seguridad en dispositivos.
 
 - [DeviceTvmSecureConfigurationAssessmentKB:](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) base de conocimientos de varias configuraciones de seguridad usadas por threat & Vulnerability Management para evaluar los dispositivos; incluye asignaciones a diversos estándares y puntos de referencia
 
@@ -81,5 +81,5 @@ DeviceName=any(DeviceName) by DeviceId, AlertId
 - [Recomendaciones de seguridad](tvm-security-recommendation.md)
 - [API](next-gen-threat-and-vuln-mgt.md#apis)
 - [Configurar el acceso a datos para roles de administración de amenazas y vulnerabilidades](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-- [Información general sobre la búsqueda avanzada](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+- [Información general sobre la búsqueda avanzada de amenazas](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 - [Todas las tablas de búsqueda avanzadas](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference.md)

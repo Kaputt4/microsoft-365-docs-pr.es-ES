@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 84d85b723d4dcbdfc07a074c40241242c57bc390
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 08bb4c73cb9df429c4b07194f1c7615f44d745d8
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185592"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408342"
 ---
-# <a name="microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender para endpoint para Linux
+# <a name="microsoft-defender-for-endpoint-for-linux"></a>Microsoft Defender para punto de conexión para Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -83,6 +83,11 @@ Si experimenta algún error de instalación, consulte [Troubleshooting installat
   > No se admite la ejecución de Defender para Endpoint para Linux en paralelo con otras soluciones de seguridad `fanotify` basadas en. Puede dar lugar a resultados impredecibles, incluida la suspensión del sistema operativo.
 
 - Espacio en disco: 1 GB
+- /opt/microsoft/mdatp/sbin/wdavdaemon requiere permiso ejecutable. Para obtener más información, vea "Ensure that the daemon has executable permission" en [Troubleshoot installation issues for Microsoft Defender ATP for Linux](/microsoft-365/security/defender-endpoint/linux-support-install).
+- Memoria: 1 GB
+    > [!NOTE]
+    > Asegúrese de que tiene espacio libre en disco en /var.
+
 - Actualmente, la solución proporciona protección en tiempo real para los siguientes tipos de sistema de archivos:
 
   - `btrfs`
