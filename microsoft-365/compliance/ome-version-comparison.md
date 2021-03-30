@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Este artículo ayuda a explicar las diferencias entre las diferentes versiones del cifrado de mensajes de Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e75a709be6141c4bd1df4e63df677dd263c0777a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5c8b0852220b2144c4ab92ec9b692299c9d2c860
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927738"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408573"
 ---
 # <a name="compare-versions-of-ome"></a>Comparar versiones de OME
 
@@ -35,23 +35,11 @@ Este artículo forma parte de una serie más grande de artículos sobre cifrado 
 
 ## <a name="overview-of-ad-rms-deprecation-in-exchange-online"></a>Información general sobre la desuso de AD RMS en Exchange Online
 
-Exchange Online incluye funcionalidad de Information Rights Management (IRM) que proporciona protección en línea y sin conexión de mensajes de correo electrónico y datos adjuntos. De forma predeterminada, Exchange Online usa Azure Azure Information Protection. Sin embargo, es posible que su organización haya configurado Exchange Online IRM para usar el Servicio de administración de derechos de Active Directory (AD RMS) local. La compatibilidad con AD RMS en Exchange Online se está retirando. En su lugar, Azure Information Protection reemplazará a AD RMS por completo.
+Exchange Online incluye funcionalidad de Information Rights Management (IRM) que proporciona protección en línea y sin conexión de mensajes de correo electrónico y datos adjuntos. De forma predeterminada, Exchange Online usa Azure Information Protection. Sin embargo, es posible que su organización haya configurado Exchange Online IRM para usar el Servicio de administración de derechos de Active Directory (AD RMS) local. La compatibilidad con AD RMS en Exchange Online se está retirando. En su lugar, Azure Information Protection reemplazará a AD RMS por completo.
 
-Antes de comenzar, revise y evalúe el impacto de su organización. Si su organización ya usa Azure Information Protection para cifrar el correo electrónico en Exchange Online, no hay nada que hacer. Si cifra el correo electrónico con reglas de flujo de correo de Exchange, por ejemplo, mediante cifrado de mensajes de Office 365, no tendrá que cambiar el correo electrónico seguro. De lo contrario, deberá prepararse para la desuso de AD RMS cambiando a Azure Information Protection.
+Para evaluar si este desuso afecta a su organización, vea [How to migrate AD RMS to Azure RMS in Exchange Online](https://support.microsoft.com/help/5001237). En este artículo se proporcionan recomendaciones sobre las opciones de migración.
 
-### <a name="prepare-for-ad-rms-deprecation"></a>Prepararse para la desuso de AD RMS
-
-Si ya ha configurado Azure Information Protection pero no lo está usando, habilite el servicio con Exchange Online PowerShell. En el equipo local, con una cuenta laboral o educativa que tenga permisos de administrador global en su organización, conéctese a [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) en una ventana Windows PowerShell usuario.
-
-Para habilitar Azure Information Protection, use Set-IrmConfiguration cmdlet escribiendo el siguiente comando.
-
-```powershell
-Set-IrmConfiguration -AzureRMSLicensingEnabled $true
-```
-
-Si su organización aún no ha configurado Azure Information Protection, deberá migrar de AD RMS a Azure Information Protection. Para obtener instrucciones, [consulte Migración de AD RMS a Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms).
-
-## <a name="side-by-side-comparison-of-features-and-capabilities"></a>Comparación en paralelo de características y funcionalidades
+## <a name="side-by-side-comparison-of-ome-features-and-capabilities"></a>Comparación en paralelo de características y funcionalidades de OME
 
 |           **Situación**           | **OME heredado**    | **IRM en AD RMS**        | **Nuevas funcionalidades de OME** |
 |-----------------------------------|-------------------|-------------------|--------------------------|

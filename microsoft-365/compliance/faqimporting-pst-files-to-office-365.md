@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 ms.custom: seo-marvel-apr2020
 description: Este artículo contiene respuestas a algunas preguntas más frecuentes para los administradores sobre la importación de archivos PST a Microsoft 365 mediante el servicio de importación de Office 365.
-ms.openlocfilehash: adcc84df7aed25f0d51c8fb6a1899bfa56453854
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d775e7cadb71e47cc916a064386971ecd3d08afc
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906794"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408639"
 ---
 # <a name="faq-about-importing-pst-files"></a>Preguntas frecuentes sobre la importación de archivos PST
 
 **Este artículo está para administradores. ¿Desea importar archivos PST a su propio buzón? Vea [Importar correo electrónico, contactos y calendario desde un archivo .pst de Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
-   
+
 Estas son algunas de las preguntas más frecuentes sobre el uso del servicio de importación de Office 365 para importar archivos PST de forma masiva a buzones de Microsoft 365. Para obtener más información acerca de cómo importar archivos PST, vea [Overview of importing PST files to Office 365](./importing-pst-files-to-office-365.md).
   
 ## <a name="using-network-upload-to-import-pst-files"></a>Uso de la carga en la red para importar archivos PST
@@ -83,7 +83,7 @@ El proceso de importación de PST comprueba la existencia de elementos duplicado
 
  **¿Existe un límite de tamaño del mensaje al importar archivos PST?**
   
-Sí. Si un archivo PST contiene un elemento de buzón de más de 150 MB, el elemento se ignorará durante el proceso de importación.
+Sí. Si un archivo PST contiene un elemento de buzón de correo de más de 150 MB, el elemento se omitirá y no se importará durante el proceso de importación. Los elementos de más de 150 MB no se importan porque 150 MB es el límite de tamaño del mensaje en Exchange Online. Para obtener más información, vea [Límites de mensajes en Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   
  **¿Las propiedades de los mensajes, como cuando el mensaje se envía o se recibe, la lista de destinatarios y otras propiedades, se conservan cuando se importan los archivos PST en un buzón de Microsoft 365?**
   
@@ -156,7 +156,7 @@ Eso depende de varias cosas, como su proximidad al centro de datos de Microsoft 
   
  **Tras la recepción de mi disco duro en el centro de datos de Microsoft, ¿cuánto tiempo se tarda en cargar los archivos PST en Azure?**
   
-Después de recibir el disco duro en el centro de datos de Microsoft, se tardarán entre 7 y 10 días laborables en cargar los archivos PST en el área de Azure Storage para su organización. Los archivos PST se cargarán en un contenedor de Azure denominado blob`ingestiondata`. 
+Después de recibir el disco duro en el centro de datos de Microsoft, se tardarán entre 7 y 10 días laborables en cargar los archivos PST en el área de Azure Storage para su organización. Los archivos PST se cargarán en un contenedor de Azure denominado blob`ingestiondata`.
   
  **¿Cuánto tiempo se tarda en importar un archivo PST en un buzón?**
   
@@ -178,12 +178,12 @@ Además, los archivos PST de Outlook 2007 y versiones posteriores se pueden impo
   
  **¿Existe un límite de tamaño del mensaje al importar archivos PST?**
   
-Sí. Si un archivo PST contiene un elemento de buzón de más de 150 MB, el elemento se ignorará durante el proceso de importación.
+Sí. Si un archivo PST contiene un elemento de buzón de correo de más de 150 MB, el elemento se omitirá y no se importará durante el proceso de importación. Los elementos de más de 150 MB no se importan porque 150 MB es el límite de tamaño del mensaje en Exchange Online. Para obtener más información, vea [Límites de mensajes en Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   
   **¿Cómo el proceso de importación de PST controla los elementos duplicados del correo electrónico?**
 
 El proceso de importación de PST comprueba la existencia de elementos duplicados sin copiar los elementos de un archivo PST al buzón o al archivo si existe un elemento coincidente en la carpeta de destino del buzón o del archivo de destino. Si vuelve a importar el mismo archivo PST y especifica una carpeta de destino diferente (con la propiedad TargetRootFolder en el archivo de asignación de importación PST) a la especificada en el trabajo de importación anterior, se volverán a importar todos los elementos del archivo PST.
- 
+
  **¿Las propiedades de los mensajes, como cuando el mensaje se envía o se recibe, la lista de destinatarios y otras propiedades, se conservan cuando se importan los archivos PST en un buzón de Microsoft 365?**
   
 Sí. Los metadatos de los mensajes originales no se modifican durante el proceso de importación.
@@ -224,6 +224,6 @@ Los costos de la devolución varían dependiendo de la proximidad al centro de d
   
 Sí.
   
- **Si tengo que enviar mi unidad a otro país, ¿necesito hacer algo?**
+ **If I have to ship my hard drive to another country, is there anything I need to do?**
   
-La unidad de disco duro que envíe a Microsoft puede tener que atravesar fronteras internacionales. Si este es el caso, es responsable de garantizar que la unidad y los datos que contiene se importen o exporten según las leyes aplicables. Antes de enviar una unidad de disco duro, compruebe con sus asesores que la unidad y los datos pueden enviarse legalmente al centro de datos de Microsoft especificado. Esto ayudará a garantizar que llegan a Microsoft de manera puntual.
+The hard drive that you ship to Microsoft might have to cross international borders. Si es así, es responsable de garantizar que la unidad de disco duro y los datos que contiene se importen o exporten de acuerdo con las leyes aplicables. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

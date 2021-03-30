@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 10b29220e49dcb5fda8b1f7d18e52e10513fc599
-ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
+ms.openlocfilehash: 746f1345b47694f4a4122edc5d89cc924441ea81
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50939661"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408181"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Cifrado de clave doble para Microsoft 365
 
@@ -242,6 +242,8 @@ La configuración del inquilino y la clave de DKE se encuentran **en elappsettin
      "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
    ]
    ```
+> [!NOTE]
+> Si desea habilitar el acceso B2B externo al almacén de claves, también tendrá que incluir estos inquilinos externos como parte de la lista de emisores válidos.
 
 Busque `JwtAudience` el archivo . Reemplace por el nombre de host de la máquina donde se ejecutará `<yourhostname>` el servicio DKE. Por ejemplo:
 

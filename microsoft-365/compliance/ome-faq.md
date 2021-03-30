@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas funcionalidades de protección de mensajes? Busca una respuesta aquí.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ad0ef4f16e5b458da80227b93fab574e3ce8dde
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: 589a28690d1654576ace45edd482b8d67161d616
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394688"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408595"
 ---
 # <a name="message-encryption-faq"></a>Preguntas más frecuentes sobre cifrado de mensajes
 
@@ -118,7 +118,7 @@ Si se admite un formato de archivo, como un archivo de Word, Excel o PowerPoint,
   
 ## <a name="are-pdf-file-attachments-supported"></a>¿Se admiten los datos adjuntos de archivos PDF?
 
-La respuesta corta es sí. El cifrado de PDF le permite proteger documentos PDF confidenciales mediante una comunicación segura o una colaboración segura. Al enviar correo electrónico, el servicio de Office 365 cifra los datos adjuntos de archivos PDF, no el cliente de Outlook.
+La respuesta corta es sí. Si está habilitado, el cifrado de PDF le permite proteger documentos PDF confidenciales mediante una comunicación segura o una colaboración segura. Al enviar un correo electrónico, el servicio de Office 365 cifra los datos adjuntos de archivos PDF. El cliente de Outlook no cifra los datos adjuntos de archivos PDF.
 
 Para Outlook en la web, Outlook para iOS y Outlook para Android, puede cifrar los archivos PDF que envíe sin más pasos. Estos clientes admiten de forma nativa el cifrado de PDF.
 
