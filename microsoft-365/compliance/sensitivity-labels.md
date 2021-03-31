@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c1f8b404ddcda45d782a6517880955a6199025d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a540529c174cc12b0e037be4af4e08c29e3835ea
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919596"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408605"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -49,9 +49,9 @@ Ejemplo que muestra las etiquetas de confidencialidad disponibles en Excel, en l
 Para aplicar etiquetas de confidencialidad, los usuarios tienen que haber iniciado sesión en Microsoft 365 con su cuenta profesional o educativa.
 
 > [!NOTE]
-> Desde hace poco, las etiquetas de confidencialidad son compatibles con inquilinos de la Administración Pública de Estado Unidos (GCC y GCC-H). Para obtener más información, vea las notas de la versión para Aplicaciones de Microsoft 365 para empresas, [versión 2101: 26 de enero](/officeupdates/current-channel#version-2101-january-26).
+> Para los inquilinos de la Administración gubernamental de EE. UU., [etiquetas sensibles son compatibles ahora con los entornos GCC y GCC High](/officeupdates/current-channel#version-2101-january-26) y actualmente se están implementando para entornos DoD.
 >
-> Para el escáner y el cliente de etiquetas unificadas de Azure Information Protection, consulte la [Descripción del servicio de Administración Pública de Azure Information Protection Premium](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
+> Si usa el cliente de etiquetas unificado y el escáner de Azure Information Protection para estos entornos, vea el [Descripción del servicio de Azure Information Protection Premium Government](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
 Puede usar etiquetas de confidencialidad para:
   

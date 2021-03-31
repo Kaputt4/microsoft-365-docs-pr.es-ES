@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56645553c43289995012d53d7caf879874e65c8a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 56a62ca4ebbd140f507d1735c663924014ca4771
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186934"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445737"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación al servicio microsoft defender para puntos de conexión
 
@@ -40,7 +40,7 @@ Obtenga información sobre las distintas fases de implementación de Microsoft D
 
 La implementación de Defender for Endpoint es un proceso de tres fases:
 
-| [![fase de implementación: preparar](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Fase 1: Preparar](prepare-deployment.md) | [![fase de implementación: configuración](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Fase 2: Configuración](production-deployment.md) | ![fase de implementación: incorporación](images/phase-diagrams/onboard.png)<br>Fase 3: Incorporación |
+| [![fase de implementación: preparar](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Fase 1: Preparación](prepare-deployment.md) | [![fase de implementación: configuración](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Fase 2: Configuración](production-deployment.md) | ![fase de implementación: incorporación](images/phase-diagrams/onboard.png)<br>Fase 3: Incorporación |
 | ----- | ----- | ----- |
 | | |*¡Estás aquí!*|
 
@@ -86,7 +86,7 @@ Después de incorporar los puntos de conexión, configurarás las distintas func
 En esta guía de implementación, le guiaremos a través del uso de dos herramientas de implementación para incorporar puntos de conexión y cómo configurar las capacidades.
 
 Las herramientas de las implementaciones de ejemplo son:
-- [Incorporación con Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
+- [Incorporación mediante Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Incorporación con Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 Con las herramientas de implementación mencionadas anteriormente, se le guiará en la configuración de las siguientes funcionalidades de Defender for Endpoint:
@@ -95,5 +95,6 @@ Con las herramientas de implementación mencionadas anteriormente, se le guiará
 - Configuración de reducción de superficie de ataque
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Incorporación con Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
+- [Incorporación mediante Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Incorporación con Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
+- [Documentos seguros en Microsoft 365 E5](../office-365-security/safe-docs.md)

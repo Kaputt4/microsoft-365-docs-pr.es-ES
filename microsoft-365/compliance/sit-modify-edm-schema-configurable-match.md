@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información acerca de cómo modificar un esquema de EDM para usar la coincidencia configurable.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e00466e4648ebe93f0658383515d1543f858e1b0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dea641072983163c6fbbcc5888d5ee6ea91f6990
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919385"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408319"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modificar el esquema de coincidencia de datos exactos para usar la coincidencia configurable
 
@@ -102,6 +102,9 @@ El indicador `ignoredDelimiters` no es compatible con:
 - \,
 
 6. Conéctese al Centro de seguridad y cumplimiento por medio de los procedimientos que se describen en [Conectar al PowerShell del Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+
+> [!NOTE]
+> Si su organización ha configurado una [Clave de cliente de para Microsoft 365 en el nivel de inquilino (versión preliminar pública)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), la coincidencia de datos exacta hará que se use automáticamente su funcionalidad de cifrado. Esto solo está disponible para los inquilinos con licencia E5 en la nube comercial.
 
 7. Actualice el esquema ejecutando estos cmdlets uno por vez:
 

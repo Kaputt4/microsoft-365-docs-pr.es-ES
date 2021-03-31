@@ -16,12 +16,12 @@ ms.collection:
 description: Obtenga información sobre documentos seguros en Microsoft 365 E5 o Microsoft 365 E5 Security.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1dc6c5dc54acd73b68fcd6241a270d2abdcc5c1
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 78ae99158e30046923d24897e7ab9b45adff31d0
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205671"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445401"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Documentos seguros en Microsoft 365 E5
 
@@ -31,7 +31,7 @@ ms.locfileid: "51205671"
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Documentos seguros es una característica de Microsoft 365 E5 o Microsoft 365 E5 Security que usa [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para endpoint para examinar documentos y archivos abiertos en la [vista protegida.](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)
+Documentos seguros es una característica de Microsoft 365 E5 o Microsoft 365 E5 Security que usa [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para endpoint para examinar documentos y archivos que se abren en [vista](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) protegida o Protección de aplicaciones para [Office.](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -93,6 +93,12 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 ```
 
 Para obtener información detallada sobre la sintaxis y los parámetros, [vea Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365).
+
+### <a name="onboard-to-the-microsoft-defender-for-endpoint-service-to-enable-auditing-capabilities"></a>Incorporación al Servicio de extremo de Microsoft Defender para habilitar las capacidades de auditoría
+
+Para implementar Microsoft Defender para endpoint, debe pasar por las distintas fases de implementación. Después de la incorporación, puede configurar las capacidades de auditoría en el Centro de seguridad & cumplimiento.
+
+Para obtener más información, [vea Onboard to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/onboarding). Si necesita ayuda adicional, consulte [Troubleshoot Microsoft Defender for Endpoint onboarding issues](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding).
 
 ### <a name="how-do-i-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 

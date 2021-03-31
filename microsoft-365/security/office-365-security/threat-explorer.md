@@ -19,12 +19,12 @@ description: Use el Explorador y las detecciones en tiempo real en el Centro de 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f48bad9d8ae6fc6d68ae27a655f4bdfdefd819d0
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 47bb14b90a94d0c8b542b12268bd6d5ed6e5c05a
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207234"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445725"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -58,7 +58,7 @@ Con este informe, puede:
 Hoy en día, si navega desde una alerta al Explorador de amenazas, abre una vista filtrada en el Explorador, con la vista filtrada por el identificador de directiva de alerta (el identificador de directiva es un identificador único de una directiva de alerta).
 Estamos haciendo que esta integración sea más relevante mediante la introducción del identificador de alerta (vea un ejemplo de identificador de alerta a continuación) en el Explorador de amenazas y detecciones en tiempo real para que vea los mensajes que son relevantes para la alerta específica, así como un recuento de correos electrónicos. También podrá ver si un mensaje formaba parte de una alerta, así como navegar de ese mensaje a la alerta específica.  
 
-El identificador de alerta está disponible dentro de la dirección URL cuando se ve una alerta individual; un ejemplo `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`
+El identificador de alerta está disponible dentro de la dirección URL cuando se ve una alerta individual; un ejemplo es `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1` .
 
 > [!div class="mx-imgBorder"]
 > ![Filtrado del identificador de alerta](../../media/AlertID-Filter.png)
@@ -177,7 +177,6 @@ Actualmente, se muestra la ubicación de entrega en la cuadrícula de correo ele
 > - Habrá nuevos campos y valores para las tecnologías **de** detección y **acciones adicionales** (especialmente para escenarios de ZAP). Deberá evaluar las consultas guardadas existentes y las consultas de seguimiento para asegurarse de que funcionan con los nuevos valores.
 
 > [!div class="mx-imgBorder"]
-
 > ![Acciones adicionales en el Explorador](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>Invalidaciones del sistema
@@ -185,9 +184,13 @@ Actualmente, se muestra la ubicación de entrega en la cuadrícula de correo ele
 *Las invalidaciones del* sistema permiten realizar excepciones a la ubicación de entrega prevista de un mensaje. Se invalida la ubicación de entrega proporcionada por el sistema, en función de las amenazas y otras detecciones identificadas por la pila de filtrado. Las invalidaciones del sistema se pueden establecer a través de la directiva de inquilino o de usuario para entregar el mensaje según lo sugerido por la directiva. Las invalidaciones pueden identificar la entrega no intencionada de mensajes malintencionados debido a las diferencias de configuraciones, como una directiva de remitente seguro demasiado amplia establecida por un usuario. Estos valores de invalidación pueden ser:
 
 - Permitido por la directiva de usuario: un usuario crea directivas en el nivel de buzón para permitir dominios o remitentes.
+
 - Bloqueado por la directiva de usuario: un usuario crea directivas en el nivel del cuadro de correo para bloquear dominios o remitentes.
+
 - Permitido por la directiva de la organización: los equipos de seguridad de la organización establecen directivas o reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) para permitir que los remitentes y dominios de los usuarios de su organización. Puede ser para un conjunto de usuarios o para toda la organización.
+
 - Bloqueado por directiva de organización: los equipos de seguridad de la organización establecen directivas o reglas de flujo de correo para bloquear remitentes, dominios, idiomas de mensaje o direcciones IP de origen para los usuarios de su organización. Esto se puede aplicar a un conjunto de usuarios o a toda la organización.
+
 - Extensión de archivo bloqueada por la directiva de organización: el equipo de seguridad de una organización bloquea una extensión de nombre de archivo a través de la configuración de directiva antimalware. Estos valores ahora se mostrarán en detalles de correo electrónico para ayudar con las investigaciones. Los equipos de Secops también pueden usar la funcionalidad de filtrado enriquecido para filtrar en extensiones de archivo bloqueadas.
 
 [![Invalidaciones del sistema en el Explorador](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
@@ -233,7 +236,8 @@ Ahora puede ordenar y filtrar las etiquetas de usuario personalizadas o del sist
 > [!IMPORTANT]
 > El filtrado y ordenación por etiquetas de usuario se encuentra actualmente en versión preliminar pública. Esta funcionalidad puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no ofrece garantías, explícitas o implícitas, con respecto a la información proporcionada al respecto.
 
-![Columna Etiquetas en el Explorador](../../media/threat-explorer-tags.png)
+> [!div class="mx-imgBorder"]
+> ![Columna Etiquetas en el Explorador](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>Mejoras en la zona horaria
 
@@ -282,21 +286,20 @@ Como parte del enriquecimiento de datos, podrá ver todas las diferentes reglas 
 
 Podrá ver tanto el GUID como el nombre de las reglas de transporte que se aplicaron al mensaje. Podrá buscar los mensajes con el nombre de la regla de transporte. Se trata de una búsqueda "Contiene", lo que significa que también puede realizar búsquedas parciales.
 
-#### <a name="important-note"></a>Nota importante:
-
-La búsqueda etr y la disponibilidad de nombres dependen del rol específico que se le asigne. Debe tener uno de los siguientes roles o permisos para ver los nombres y la búsqueda de ETR. Si no tiene ninguna de estas funciones asignadas, no puede ver los nombres de las reglas de transporte ni buscar mensajes mediante nombres ETR. Sin embargo, puede ver la etiqueta ETR y la información guid en los detalles del correo electrónico. No se ven afectadas otras experiencias de visualización de registros en cuadrículas de correo electrónico, control de envío de correo electrónico, filtros y exportación.
-
-- Solo EXO: prevención de pérdida de datos: todos
-- EXO Only - O365SupportViewConfig: All
-- Microsoft Azure Active Directory o EXO: administrador de seguridad: todos
-- AAD o EXO: lector de seguridad: todos
-- Solo EXO: reglas de transporte: todas
-- Solo EXO: View-Only configuración: todo
-
-Dentro de la cuadrícula de correo electrónico, el control desplegable Detalles y csv exportado, los ETR se presentan con un Nombre/GUID como se muestra a continuación.
-
-> [!div class="mx-imgBorder"]
-> ![Reglas de transporte de Exchange](../../media/ETR_Details.png)
+> [!IMPORTANT]
+> La búsqueda etr y la disponibilidad de nombres dependen del rol específico que se le asigne. Debe tener uno de los siguientes roles o permisos para ver los nombres y la búsqueda de ETR. Si no tiene ninguna de estas funciones asignadas, no puede ver los nombres de las reglas de transporte ni buscar mensajes mediante nombres ETR. Sin embargo, puede ver la etiqueta ETR y la información guid en los detalles del correo electrónico. No se ven afectadas otras experiencias de visualización de registros en cuadrículas de correo electrónico, control de envío de correo electrónico, filtros y exportación.
+> 
+> - Solo EXO: prevención de pérdida de datos: todos
+> - EXO Only - O365SupportViewConfig: All
+> - Microsoft Azure Active Directory o EXO: administrador de seguridad: todos
+> - AAD o EXO: lector de seguridad: todos
+> - Solo EXO: reglas de transporte: todas
+> - Solo EXO: View-Only configuración: todo
+> 
+> Dentro de la cuadrícula de correo electrónico, el control desplegable Detalles y csv exportado, los ETR se presentan con un Nombre/GUID como se muestra a continuación.
+> 
+> > [!div class="mx-imgBorder"]
+> > ![Reglas de transporte de Exchange](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>Conectores de entrada
 
@@ -334,18 +337,23 @@ En este ejemplo se usa el Explorador de amenazas.
 
 4. Seleccione el Asunto de cualquier mensaje en la pestaña Correo > pestaña Detalles para ver información de suplantación adicional como Dominio suplantado / Ubicación detectada.
 
-5. **OR** Seleccione **Usuario suplantado y** escriba la dirección de correo electrónico de un usuario protegido en el cuadro de texto.
+    **OR** 
 
-6. Seleccione el **asunto de** cualquier mensaje en la pestaña **Detalles** de la pestaña Correo electrónico para ver información de suplantación adicional sobre el usuario o dominio, y la  >   ubicación *detectada*.
+    Seleccione **Usuario suplantado y** escriba la dirección de correo electrónico de un usuario protegido en el cuadro de texto.
 
-:::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Panel de detalles del Explorador de amenazas para un usuario protegido que muestra la ubicación de detección y la amenaza que se detectó (aquí suplantación de identidad de un usuario).":::
+    > [!TIP]
+    > **Para obtener mejores resultados,** use *direcciones de correo electrónico completa* para buscar usuarios protegidos. Encontrará el usuario protegido de forma más rápida y correcta si busca firstname.lastname@contoso.com *,* por ejemplo, al investigar la suplantación de usuario. Al buscar un dominio protegido, la búsqueda tomará el dominio raíz (contoso.com, por ejemplo) y el nombre de dominio (*contoso*). La búsqueda del dominio raíz *contoso.com* devolverá las suplantaciones de *contoso.com* y el nombre de dominio *contoso*.
 
-> [!TIP]
-> **Para obtener mejores resultados,** use *direcciones de correo electrónico completa* para buscar usuarios protegidos. Encontrará el usuario protegido de forma más rápida y correcta si busca firstname.lastname@contoso.com *,* por ejemplo, al investigar la suplantación de usuario. Al buscar un dominio protegido, la búsqueda tomará el dominio raíz (contoso.com, por ejemplo) y el nombre de dominio (*contoso*). La búsqueda del dominio raíz *contoso.com* devolverá las suplantaciones de *contoso.com* y el nombre de dominio *contoso*.
+5. Seleccione el **asunto de** cualquier mensaje en la pestaña **Detalles** de la pestaña Correo electrónico para ver información de suplantación adicional sobre el usuario o dominio, y la  >   ubicación *detectada*.
+
+    :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Panel de detalles del Explorador de amenazas para un usuario protegido que muestra la ubicación de detección y la amenaza que se detectó (aquí suplantación de identidad de un usuario).":::
+
+> [!NOTE]
+> En los pasos 3 o  5,  si elige Tecnología  de detección y selecciona Dominio de suplantación o Usuario de suplantación respectivamente, la información de la pestaña Detalles de la pestaña Correo electrónico sobre el usuario o dominio, y la ubicación detectada solo se mostrará en los mensajes relacionados con el usuario o dominio enumerados en la página Directiva contra suplantación de   >   identidad.   
 
 ### <a name="preview-email-header-and-download-email-body"></a>Vista previa del encabezado de correo electrónico y descarga del cuerpo del correo electrónico
 
-Ahora puede obtener una vista previa de un encabezado de correo electrónico y descargar el cuerpo del correo electrónico en Explorador de amenazas Los administradores pueden analizar los encabezados descargados o los mensajes de correo electrónico en busca de amenazas. Dado que la descarga de mensajes de correo electrónico puede correr el riesgo de exponer información, este proceso se controla mediante el control de acceso basado en roles (RBAC). Un nuevo rol, *Preview*, debe agregarse a otro grupo de roles (como Operaciones de seguridad o Administrador de seguridad) para conceder la capacidad de descargar correos en la vista de mensajes de todo el correo electrónico. Sin embargo, la visualización del encabezado de correo electrónico no requiere ningún rol adicional (aparte de lo necesario para ver mensajes en el Explorador de amenazas).
+Ahora puede obtener una vista previa de un encabezado de correo electrónico y descargar el cuerpo del correo electrónico en el Explorador de amenazas. Los administradores pueden analizar los encabezados o mensajes de correo electrónico descargados en busca de amenazas. Dado que la descarga de mensajes de correo electrónico puede correr el riesgo de exponer información, este proceso se controla mediante el control de acceso basado en roles (RBAC). Un nuevo rol, *Preview*, debe agregarse a otro grupo de roles (como Operaciones de seguridad o Administrador de seguridad) para conceder la capacidad de descargar correos en la vista de mensajes de todo el correo electrónico. Sin embargo, la visualización del encabezado de correo electrónico no requiere ningún rol adicional (aparte de lo necesario para ver mensajes en el Explorador de amenazas).
 
 Las detecciones en tiempo real y explorador también recibirán nuevos campos que proporcionan una imagen más completa de dónde aterrizan los mensajes de correo electrónico. Estos cambios facilitan la búsqueda de las operaciones de seguridad. Pero el resultado principal es que puede conocer la ubicación de los mensajes de correo electrónico con problemas de un vistazo.
 

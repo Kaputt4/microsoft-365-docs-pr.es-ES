@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: overview
+ms.topic: article
 f1_keywords:
 - ms.o365.cc.IngestionHelp
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información acerca de cómo usar el servicio de importación en el Centro de seguridad y cumplimiento para importar datos de correo electrónico (archivos PST) de forma masiva a los buzones de usuario.
-ms.openlocfilehash: 6d0bca6d76a0eccb9bc8181e73f2c36c51acaf77
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c645228598eb9cf0e6edca7104b8977e7eaf72f7
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911324"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408541"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>Información general sobre la importación de archivos PST de su organización
 
@@ -178,7 +178,7 @@ El proceso de importación de PST comprueba la existencia de elementos duplicado
  
  **¿Existe un límite de tamaño del mensaje al importar archivos PST?**
   
-Sí. Si un archivo PST contiene un elemento de buzón de más de 150 MB, el elemento se ignorará durante el proceso de importación.
+Sí. Si un archivo PST contiene un elemento de buzón de más de 150 MB, el elemento se ignorará y no se importará durante el proceso de importación. No se importan los elementos mayores de 150 MB porque 150 MB es el límite de tamaño de mensajes en Exchange Online. Para más información, consulte [Límites de mensajes en Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   
  **¿Las propiedades de los mensajes, como cuando el mensaje se envía o se recibe, la lista de destinatarios y otras propiedades, se conservan cuando se importan los archivos PST en un buzón de Microsoft 365?**
   
@@ -271,7 +271,7 @@ Además, los archivos PST de Outlook 2007 y versiones posteriores se pueden impo
   
  **¿Existe un límite de tamaño del mensaje al importar archivos PST?**
   
-Sí. Si un archivo PST contiene un elemento de buzón de más de 150 MB, el elemento se ignorará durante el proceso de importación.
+Sí. Si un archivo PST contiene un elemento de buzón de más de 150 MB, el elemento se ignorará y no se importará durante el proceso de importación. No se importan los elementos mayores de 150 MB porque 150 MB es el límite de tamaño de mensajes en Exchange Online. Para más información, consulte [Límites de mensajes en Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits).
   
   **¿Cómo el proceso de importación de PST controla los elementos duplicados del correo electrónico?**
 
@@ -317,6 +317,6 @@ Los costos de la devolución varían dependiendo de la proximidad al centro de d
   
 Sí.
   
- **Si tengo que enviar mi unidad a otro país, ¿necesito hacer algo?**
+ **If I have to ship my hard drive to another country, is there anything I need to do?**
   
-La unidad de disco duro que envíe a Microsoft puede tener que atravesar fronteras internacionales. Si este es el caso, es responsable de garantizar que la unidad y los datos que contiene se importen o exporten según las leyes aplicables. Antes de enviar una unidad de disco duro, compruebe con sus asesores que la unidad y los datos pueden enviarse legalmente al centro de datos de Microsoft especificado. Esto ayudará a garantizar que llegan a Microsoft de manera puntual.
+The hard drive that you ship to Microsoft might have to cross international borders. Si es el caso, usted es responsable de garantizar que la unidad de disco duro y los datos que contiene se importen o exporten de acuerdo con la legislación vigente. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: Aprenda a crear tipos de información confidencial personalizada con la clasificación basada en la coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 583419f6808d5b3d54d1f48d380e5b4110898ded
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9288a7bc1bf93f1fa7ac329305bdc45c3cb1528c
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908354"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408649"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
+
+
 
 [Los tipos de información confidencial personalizada](sensitive-information-type-learn-about.md) se usan para ayudar a identificar los elementos confidenciales y así evitar que se compartan de forma inadvertida o inapropiada. Defina un tipo de información confidencial personalizada a partir de lo siguiente:
 
@@ -35,7 +37,7 @@ ms.locfileid: "50908354"
 
  Estos tipos de información confidencial personalizada satisfacen las necesidades de negocio para muchas organizaciones.
 
-Pero, ¿qué ocurre si quiere un tipo de información confidencial personalizada que use valores de datos exactos, en lugar de uno que encuentre coincidencias a partir de patrones genéricos? Con la clasificación basada en la coincidencia exacta de datos (EDM), puede crear un tipo de información confidencial personalizada que está diseñado para:
+Pero ¿qué sucede si quiere un tipo de información confidencial personalizado (SIT) que use valores de datos exactos, en lugar de uno que encontrara coincidencias basándose en patrones genéricos? Con la clasificación basada en la coincidencia exacta de datos (EDM), puede crear un tipo de información confidencial personalizada que está diseñado para:
 
 - ser dinámico y actualizarse fácilmente
 - ser más escalable
@@ -56,6 +58,7 @@ La clasificación basada en EDM le permite crear tipos de información confidenc
 > - Japonés
 > 
 > Este soporte está disponible para tipos de información confidencial. Para más información, consulte [Notas de la versión sobre la compatibilidad de Information Protection con juegos de caracteres de doble byte (vista previa)](mip-dbcs-relnotes.md).
+ 
 
 ## <a name="required-licenses-and-permissions"></a>Permisos y licencias necesarios
 
@@ -369,7 +372,10 @@ Si desea aplicar un algoritmo hash y cargar desde un equipo, tendrá que hacerlo
 Si no desea que se muestre el archivo de datos confidenciales de texto no cifrado, puede aplicar un algoritmo hash en un equipo en una ubicación segura y, a continuación, copiar el archivo hash y el archivo de sal en un equipo que pueda conectarse directamente a su espacio empresarial de Microsoft 365 para cargarlo. En este escenario, necesitará el EDMUploadAgent en ambos equipos.
 
 > [!IMPORTANT]
-> Si usó el esquema de coincidencia exacta de datos y el Asistente para el tipo de información confidencial con el fin de crear los archivos de esquema y de patrón, ***debe** descargar el esquema para este procedimiento.
+> Si ha usado el esquema Coincidencia de datos exacto y el Asistente para tipos de información confidencial para crear los archivos de patrón y esquema, ***debe*** descargar el esquema para este procedimiento.
+
+> [!NOTE]
+> Si su organización ha configurado una [Clave de cliente de para Microsoft 365 en el nivel de inquilino (versión preliminar pública)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), la coincidencia de datos exacta hará que se use automáticamente su funcionalidad de cifrado. Esto solo está disponible para los inquilinos con licencia E5 en la nube comercial.
 
 #### <a name="prerequisites"></a>Requisitos previos
 

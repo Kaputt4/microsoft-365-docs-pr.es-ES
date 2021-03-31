@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Obtén información sobre cómo obtener acceso a recursos locales como aplicaciones de línea de negocio, recursos compartidos de archivos e impresoras desde un dispositivo Windows 10 unido a Azure Active Directory.
-ms.openlocfilehash: b78509d72cbd9b3c121039c4965625bf5c21c7e0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1bca0beb3ccc78e670ad33ce446b9b3f7c372ba7
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913530"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445356"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Acceso a recursos locales desde un dispositivo unido a Azure AD en Microsoft 365 Empresa Premium
 
@@ -64,3 +64,7 @@ Si el dispositivo Windows al que se unió Azure-AD estaba previamente unido a un
 - Es posible que los usuarios no puedan autenticarse en aplicaciones que dependen de la autenticación de Active Directory. Evalúa la aplicación heredada y considera la posibilidad de actualizar a una aplicación que usa Auth moderno, si es posible.
 
 - La detección de impresoras de Active Directory no funcionará. Puede proporcionar rutas de impresora directas para todos los usuarios o usar [impresión universal](/universal-print/).
+
+### <a name="related-articles"></a>Artículos relacionados
+
+[Requisitos previos para Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)

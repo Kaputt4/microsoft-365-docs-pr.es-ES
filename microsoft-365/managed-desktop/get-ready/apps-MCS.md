@@ -1,20 +1,23 @@
 ---
 title: Trabajar con los servicios de consultoría de Microsoft
-description: preparación y pasos a seguir para trabajar con MCS para empaquetar las aplicaciones
-keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación, aplicaciones, MCS, empaquetado
+description: Preparación y pasos a seguir para trabajar con MCS para empaquetar tus aplicaciones
+keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 04b0c7905c83be2afa46abcfb2d4bb5cd9735e06
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 1441ca3305a5f3e5a83ddd5e1547812f08d7d96b
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909231"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445701"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Trabajar con los servicios de consultoría de Microsoft
 
@@ -31,7 +34,7 @@ Para trabajar con el empaquetado de la aplicación MCS, **debes proporcionar est
 **MCS se ocupará de estas acciones:**
 
 - Comprobar si la aplicación está prohibida o restringida en el entorno de Escritorio administrado de Microsoft.
-- Pruebas de instalación, inicio y desinstalación de la aplicación para garantizar la compatibilidad con Windows 10. Si MCS detecta un problema de compatibilidad, la entregarán al programa [Desktop App Assure](/fasttrack/win-10-desktop-app-assure) para su corrección.
+- Pruebas de instalación, inicio y desinstalación de la aplicación para garantizar la compatibilidad con Windows 10. Si MCS detecta un problema de compatibilidad, pasarán la aplicación al programa [App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure) para su corrección.
 - Empaquetar la aplicación en la especificación y, a continuación, probar la implementación de aplicaciones mediante Microsoft Intune.
 
 ## <a name="app-delivery-schedule"></a>Programación de entrega de aplicaciones

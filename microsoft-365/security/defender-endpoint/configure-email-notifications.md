@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d8b68e6b6dc42de5730aa634386406d4762b1fa2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0d9e63c5d89b13b02dfcf116c1555c8db319d23f
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163688"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445369"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-atp"></a>Configurar notificaciones de alertas en ATP de Microsoft Defender
 
@@ -51,9 +51,9 @@ La notificación por correo electrónico incluye información básica sobre la a
 Puede crear reglas que determinen los dispositivos y las gravedades de alerta para enviar notificaciones por correo electrónico y los destinatarios de las notificaciones.
 
 
-1. En el panel de navegación, seleccione **Settings**  >  **Alert notifications**.
+1. En el panel de navegación, seleccione **Configuración Notificaciones** de  >  **correo electrónico**.
 
-2. Haga clic **en Agregar regla de notificación**.
+2. Haga clic **en Agregar elemento**.
 
 3. Especifique la información general:
     - **Nombre de regla:** especifique un nombre para la regla de notificación.
@@ -103,4 +103,4 @@ En esta sección se enumeran varios problemas que puede encontrar al usar notifi
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Actualizar la configuración de retención de datos](data-retention-settings.md)
-- [Configurar características avanzadas](advanced-features.md)
+- [Configurar funciones avanzadas](advanced-features.md)

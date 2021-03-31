@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 167db9b5da841528e95f167b3af6a840b6c71eb4
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: bf1e706562db06064409cb7cf11441d048ef8db6
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165566"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445291"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente
 
@@ -48,8 +48,11 @@ Puede haber desafíos asociados al incorporar LOS VDIs. Los siguientes son los d
 
 Los dispositivos VDI pueden aparecer en el portal de Defender for Endpoint como:
 
-- Entrada única para cada dispositivo.  
-Tenga en cuenta que, en este caso, *debe* configurarse el mismo nombre de dispositivo cuando se crea la sesión, por ejemplo, mediante un archivo de respuesta desatendido.
+- Entrada única para cada dispositivo.
+
+  > [!NOTE]
+  > En este caso, se debe configurar el *mismo* nombre de dispositivo cuando se crea la sesión, por ejemplo, mediante un archivo de respuesta desatendido.
+
 - Varias entradas para cada dispositivo: una para cada sesión.
 
 Los siguientes pasos le guiarán a través de la incorporación de dispositivos VDI y resaltarán los pasos para entradas únicas y múltiples.
@@ -84,14 +87,15 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
    > [!NOTE]
    > La directiva de grupo de dominio también se puede usar para incorporar dispositivos VDI no persistentes.
 
-4. Según el método que quiera implementar, siga los pasos correspondientes: <br>
-   **Para una sola entrada para cada dispositivo:**<br>
+4. Según el método que quiera implementar, siga los pasos correspondientes:
+
+   - Para una sola entrada para cada dispositivo:
    
-   Seleccione la **pestaña Scripts de PowerShell** y, a continuación, haga clic en Agregar **(el** Explorador de Windows se abrirá directamente en la ruta de acceso en la que copió el script de incorporación anteriormente). Navegue a la incorporación del script de PowerShell `Onboard-NonPersistentMachine.ps1` .
+     Seleccione la **pestaña Scripts de PowerShell** y, a continuación, haga clic en Agregar **(el** Explorador de Windows se abrirá directamente en la ruta de acceso en la que copió el script de incorporación anteriormente). Navegue a la incorporación del script de PowerShell `Onboard-NonPersistentMachine.ps1` . No es necesario especificar el otro archivo, ya que se desencadenará automáticamente.
    
-   **Para varias entradas para cada dispositivo:**
+   - Para varias entradas para cada dispositivo:
    
-   Selecciona la **pestaña Scripts** y, a continuación, haz clic en **Agregar** (el Explorador de Windows se abrirá directamente en la ruta de acceso en la que has copiado el script de incorporación anteriormente). Vaya al script bash de incorporación `WindowsDefenderATPOnboardingScript.cmd` .
+     Selecciona la **pestaña Scripts** y, a continuación, haz clic en **Agregar** (el Explorador de Windows se abrirá directamente en la ruta de acceso en la que has copiado el script de incorporación anteriormente). Vaya al script bash de incorporación `WindowsDefenderATPOnboardingScript.cmd` .
 
 5. Pruebe la solución:
 
@@ -103,8 +107,15 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
 
    1. Inicie sesión en el dispositivo con otro usuario.
       
-   1. **Para una sola entrada para cada dispositivo:** compruebe solo una entrada en el Centro de seguridad de Microsoft Defender.<br>
-      **Para varias entradas para cada dispositivo:** compruebe varias entradas en el Centro de seguridad de Microsoft Defender.
+   1. Según el método que quiera implementar, siga los pasos correspondientes:
+   
+      - Para una sola entrada para cada dispositivo: 
+    
+        Compruebe solo una entrada en el Centro de seguridad de Microsoft Defender.
+
+      - Para varias entradas para cada dispositivo: 
+       
+        Compruebe varias entradas en el Centro de seguridad de Microsoft Defender.
 
 6. Haga **clic en Lista de** dispositivos en el panel de navegación.
 
@@ -118,14 +129,14 @@ Los siguientes pasos le guiarán a través de la incorporación de dispositivos 
 
 1. Establezca el valor del Registro en:
 
-    ```reg
+    ```console
    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging]
     "VDI"="NonPersistent"
     ```
 
     o mediante la línea de comandos:
 
-    ```
+    ```console
     reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
     ```
 

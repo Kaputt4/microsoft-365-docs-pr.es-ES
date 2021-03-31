@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6a8e1091490cb9f3fe1eedadec0b76a56ada936e
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 1b203a29083aaa4a1f86abcd7e2c7b24bd63f186
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379495"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445749"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisitos mínimos para Microsoft Defender para endpoint
 
@@ -54,6 +54,7 @@ Microsoft Defender para endpoint requiere una de las siguientes ofertas de licen
 > [!NOTE]
 > Los usuarios con licencia elegibles pueden usar Microsoft Defender para Endpoint en hasta cinco dispositivos simultáneos.
 > Microsoft Defender para endpoint también está disponible para la compra de un proveedor de soluciones en la nube (CSP).
+> Las máquinas virtuales RDSH no requieren una licencia de Defender for Endpoint independiente.
 
 Microsoft Defender para endpoint para servidores requiere una de las siguientes opciones de licencia:
 
