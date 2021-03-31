@@ -21,29 +21,29 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: En este artículo, busque información sobre cómo usar PowerShell para desactivar la sincronización de directorios para Microsoft 365.
-ms.openlocfilehash: 036130b70382e28ad9d8cb10786ad5e266375c20
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 26f8729078ea06657ced565db780b57c7e537aa4
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909315"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445713"
 ---
-# <a name="turn-off-directory-synchronization-for-microsoft-365"></a><span data-ttu-id="1af7f-103">Desactivar la sincronización de directorios para Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="1af7f-103">Turn off directory synchronization for Microsoft 365</span></span>
-<span data-ttu-id="1af7f-104">Puede usar PowerShell para desactivar la sincronización de directorios.</span><span class="sxs-lookup"><span data-stu-id="1af7f-104">You can use PowerShell to turn off directory synchronization.</span></span> <span data-ttu-id="1af7f-105">Sin embargo, no se recomienda desactivar la sincronización de directorios como paso de solución de problemas.</span><span class="sxs-lookup"><span data-stu-id="1af7f-105">However, it is not recommended that you turn off directory synchronization as a troubleshooting step.</span></span> <span data-ttu-id="1af7f-106">Si necesita ayuda para solucionar problemas de sincronización de directorios, consulte el artículo Solucionar problemas con la sincronización de [directorios para Microsoft 365.](fix-problems-with-directory-synchronization.md)</span><span class="sxs-lookup"><span data-stu-id="1af7f-106">If you need assistance with troubleshooting directory synchronization, see the [Fixing problems with directory synchronization for Microsoft 365](fix-problems-with-directory-synchronization.md) article.</span></span> 
+# <a name="turn-off-directory-synchronization-for-microsoft-365"></a><span data-ttu-id="82f45-103">Desactivar la sincronización de directorios para Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="82f45-103">Turn off directory synchronization for Microsoft 365</span></span>
+<span data-ttu-id="82f45-104">Puede usar PowerShell para desactivar la sincronización de directorios y convertir los usuarios sincronizados en solo nube.</span><span class="sxs-lookup"><span data-stu-id="82f45-104">You can use PowerShell to turn off directory synchronization and convert your synchronized users to cloud-only.</span></span> <span data-ttu-id="82f45-105">Sin embargo, no se recomienda desactivar la sincronización de directorios como paso de solución de problemas.</span><span class="sxs-lookup"><span data-stu-id="82f45-105">However, it is not recommended that you turn off directory synchronization as a troubleshooting step.</span></span> <span data-ttu-id="82f45-106">Si necesita ayuda para solucionar problemas de sincronización de directorios, consulte el artículo Solucionar problemas con la sincronización de [directorios para Microsoft 365.](fix-problems-with-directory-synchronization.md)</span><span class="sxs-lookup"><span data-stu-id="82f45-106">If you need assistance with troubleshooting directory synchronization, see the [Fixing problems with directory synchronization for Microsoft 365](fix-problems-with-directory-synchronization.md) article.</span></span> 
   
-<span data-ttu-id="1af7f-107">[Póngase en contacto con](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) el soporte técnico para productos empresariales si es necesario.</span><span class="sxs-lookup"><span data-stu-id="1af7f-107">[Contact support](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) for business products if needed.</span></span>
+<span data-ttu-id="82f45-107">[Póngase en contacto con](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) el soporte técnico para productos empresariales si es necesario.</span><span class="sxs-lookup"><span data-stu-id="82f45-107">[Contact support](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) for business products if needed.</span></span>
   
-## <a name="turn-off-directory-synchronization"></a><span data-ttu-id="1af7f-108">Desactivar la sincronización de directorios</span><span class="sxs-lookup"><span data-stu-id="1af7f-108">Turn off directory synchronization</span></span>  
-<span data-ttu-id="1af7f-109">Para desactivar la sincronización de directorios:</span><span class="sxs-lookup"><span data-stu-id="1af7f-109">To turn off Directory synchronization:</span></span>
+## <a name="turn-off-directory-synchronization"></a><span data-ttu-id="82f45-108">Desactivar la sincronización de directorios</span><span class="sxs-lookup"><span data-stu-id="82f45-108">Turn off directory synchronization</span></span>  
+<span data-ttu-id="82f45-109">Para desactivar la sincronización de directorios:</span><span class="sxs-lookup"><span data-stu-id="82f45-109">To turn off Directory synchronization:</span></span>
   
-1. <span data-ttu-id="1af7f-110">En primer lugar, instale el software necesario y conéctese a su suscripción de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="1af7f-110">First, install the required software and connect to your Microsoft 365 subscription.</span></span> <span data-ttu-id="1af7f-111">Para obtener instrucciones, consulte [Connect with the Microsoft Azure Active Directory Module for Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="1af7f-111">For instructions, see [Connect with the Microsoft Azure Active Directory Module for Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
+1. <span data-ttu-id="82f45-110">En primer lugar, instale el software necesario y conéctese a su suscripción de Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="82f45-110">First, install the required software and connect to your Microsoft 365 subscription.</span></span> <span data-ttu-id="82f45-111">Para obtener instrucciones, consulte [Connect with the Microsoft Azure Active Directory Module for Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span><span class="sxs-lookup"><span data-stu-id="82f45-111">For instructions, see [Connect with the Microsoft Azure Active Directory Module for Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).</span></span>
     
-2. <span data-ttu-id="1af7f-112">Use [Set-MsolDirSyncEnabled para](/previous-versions/azure/dn194097(v=azure.100)) deshabilitar la sincronización de directorios:</span><span class="sxs-lookup"><span data-stu-id="1af7f-112">Use [Set-MsolDirSyncEnabled](/previous-versions/azure/dn194097(v=azure.100)) to disable directory synchronization:</span></span> 
+2. <span data-ttu-id="82f45-112">Use [Set-MsolDirSyncEnabled para](/previous-versions/azure/dn194097(v=azure.100)) deshabilitar la sincronización de directorios:</span><span class="sxs-lookup"><span data-stu-id="82f45-112">Use [Set-MsolDirSyncEnabled](/previous-versions/azure/dn194097(v=azure.100)) to disable directory synchronization:</span></span> 
     
   ```powershell
   Set-MsolDirSyncEnabled -EnableDirSync $false
   ```
 
 >[!Note]
-><span data-ttu-id="1af7f-113">Si usa este comando, debe esperar 72 horas antes de volver a activar la sincronización de directorios.</span><span class="sxs-lookup"><span data-stu-id="1af7f-113">If you use this command, you must wait 72 hours before you can turn directory synchronization back on.</span></span>
+><span data-ttu-id="82f45-113">Si usa este comando, debe esperar 72 horas antes de volver a activar la sincronización de directorios.</span><span class="sxs-lookup"><span data-stu-id="82f45-113">If you use this command, you must wait 72 hours before you can turn directory synchronization back on.</span></span>
 >
