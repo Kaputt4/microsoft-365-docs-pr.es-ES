@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be906baca3a54183e22fa3b4ee424a9d8fc6957a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 16d78cf014e775ecb98a59d90b5734836eb3cbf2
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198698"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476630"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>Novedades de Microsoft Defender para Endpoint para Mac
 
@@ -39,7 +39,12 @@ ms.locfileid: "51198698"
 > En macOS 11 (Big Sur), Microsoft Defender para Endpoint requiere perfiles de configuración adicionales. Si es un cliente existente que actualiza desde versiones anteriores de macOS, asegúrese de implementar los perfiles de configuración adicionales enumerados en [esta página](mac-sysext-policies.md).
 
 > [!IMPORTANT]
-> La compatibilidad con macOS 10.13 (High Sierra) se interrumpirá el 15 de febrero de 2021.
+> La compatibilidad con macOS 10.13 (High Sierra) se suspendió el 15 de febrero de 2021.
+
+## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
+
+- Se agregó una nueva opción a la herramienta de línea de comandos para ver información sobre el último examen a petición. Para ver información sobre el último examen a petición, ejecute `mdatp health --details antivirus`
+- Mejoras de rendimiento & correcciones de errores
 
 ## <a name="1012279-20121012122790"></a>101.22.79 (20.121012.12279.0)
 

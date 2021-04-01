@@ -28,26 +28,14 @@
           href: ./office-365-security/sharepoint-file-access-policies.md
         - name: Directivas de MCAS recomendadas para aplicaciones SaaS
           href: ./office-365-security/mcas-saas-access-policies.md
-    - name: Centro de seguridad de Microsoft 365
-      href: defender/overview-security-center.md
-    - name: Puntuación de seguridad de Microsoft
-      items:
-        - name: Información general sobre Puntuación de seguridad
-          href: defender/microsoft-secure-score.md
-        - name: Evaluar su postura de seguridad
-          href: defender/microsoft-secure-score-improvement-actions.md
-        - name: Haz un seguimiento de tu historial de puntuaciones y cumple objetivos
-          href: defender/microsoft-secure-score-history-metrics-trends.md
-        - name: Próximas novedades
-          href: defender/microsoft-secure-score-whats-coming.md
-        - name: Novedades
-          href: defender/microsoft-secure-score-whats-new.md
     - name: Microsoft 365 Defender
       items:
         - name: Información general
           items:
             - name: ¿Qué es Microsoft 365 Defender?
               href: defender/microsoft-365-defender.md
+            - name: Centro de seguridad de Microsoft 365
+              href: defender/overview-security-center.md
             - name: Novedades de Microsoft 365 Defender
               href: defender/whats-new.md
             - name: Defender para punto de conexión en el Centro de seguridad de Microsoft 365.
@@ -116,6 +104,18 @@
               href: defender/m365d-pilot.md
             - name: Activar Preguntas más frecuentes
               href: defender/m365d-enable-faq.md
+            - name: Puntuación de seguridad de Microsoft
+              items:
+                - name: Información general sobre Puntuación de seguridad
+                  href: defender/microsoft-secure-score.md
+                - name: Evaluar su postura de seguridad
+                  href: defender/microsoft-secure-score-improvement-actions.md
+                - name: Haz un seguimiento de tu historial de puntuaciones y cumple objetivos
+                  href: defender/microsoft-secure-score-history-metrics-trends.md
+                - name: Próximas novedades
+                  href: defender/microsoft-secure-score-whats-coming.md
+                - name: Novedades
+                  href: defender/microsoft-secure-score-whats-new.md
             - name: Análisis de amenazas
               items:
                 - name: Información general sobre el Análisis de amenazas

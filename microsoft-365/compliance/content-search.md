@@ -21,12 +21,12 @@ ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 ms.custom:
 - seo-marvel-apr2020
 description: Utilice la herramienta de búsqueda de contenido en el centro de cumplimiento de Microsoft para buscar contenido en diferentes servicios de Microsoft 365.
-ms.openlocfilehash: 2e9dcde65a4f2728782fd300f962dfb3e80ed3c9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f648d0d0a68db4db32297a407fb944571f702b8e
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908632"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470664"
 ---
 # <a name="content-search"></a>Búsqueda de contenido
 
@@ -66,18 +66,18 @@ Para acceder a la página de **Búsqueda de contenido** y buscar, obtener una vi
     
     ![Indique las palabras clave, condiciones y ubicaciones a buscar](../media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
-   - **Palabras clave para buscar:** escriba una consulta de búsqueda en el cuadro **Palabras clave**. Puede especificar palabras clave, propiedades del mensaje como la fecha de envío y de recepción, o propiedades del documento como nombres de archivo o la fecha de la última modificación de un documento. También puede usar consultas más complejas con operadores booleanos como **Y**, **O**, **NOT** y **NEAR**. Además, puede buscar información confidencial (como los números de la seguridad social) en documentos o buscar en documentos que se han compartido de forma externa. Si deja el cuadro de la palabra clave en blanco, todo el contenido en las ubicaciones especificadas se incluye en los resultados de la búsqueda.
+   1. **Palabras clave para buscar:** escriba una consulta de búsqueda en el cuadro **Palabras clave**. Puede especificar palabras clave, propiedades del mensaje como la fecha de envío y de recepción, o propiedades del documento como nombres de archivo o la fecha de la última modificación de un documento. También puede usar consultas más complejas con operadores booleanos como **Y**, **O**, **NOT** y **NEAR**. Además, puede buscar información confidencial (como los números de la seguridad social) en documentos o buscar en documentos que se han compartido de forma externa. Si deja el cuadro de la palabra clave en blanco, todo el contenido en las ubicaciones especificadas se incluye en los resultados de la búsqueda.
 
       También puede marcar la casilla **Mostrar lista de palabras clave** y escribir una palabra clave en cada fila. En este caso, las palabras clave de cada fila estarán conectadas por un operador lógico (**c:s**) funcionalmente similar al operador **O** en la consulta de búsqueda creada. 
     
       ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestran cuántos elementos coinciden con cada palabra clave. Esto le ayudará a identificar rápidamente las palabras clave más (y menos) efectivas. También puede usar una frase de palabras clave (entre paréntesis) en una fila. Para saber más sobre las estadísticas de búsqueda, consulte [Ver estadísticas de palabras clave para resultados de búsqueda de contenido](view-keyword-statistics-for-content-search.md).
 
-     > [!NOTE]
-     > Existe un límite máximo de 20 filas en la lista de palabras clave, con el fin de reducir los problemas causados por listas de palabras clave demasiado grandes.
+      > [!NOTE]
+      > Existe un límite máximo de 20 filas en la lista de palabras clave, con el fin de reducir los problemas causados por listas de palabras clave demasiado grandes.
     
-    - **Condiciones**: puede agregar condiciones de búsqueda para recibir un conjunto de resultados más pertinente. Cada condición agrega una cláusula a la consulta de búsqueda que se crea y se ejecuta cuando se inicia la búsqueda. Una condición se conecta lógicamente a la consulta de palabras clave (especificada en el cuadro de palabras clave) mediante el operador **c:c**, que tiene una función parecida al operador **Y**. Eso significa que los elementos tienen que satisfacer la consulta de palabra clave y una o más condiciones para que se incluyan en los resultados. De esta manera, las condiciones permiten restringir los resultados. Para obtener una lista y descripciones de las condiciones permitidas en una consulta de búsqueda, vea la sección "Condiciones de búsqueda" en [Consultas de palabras clave y condiciones de búsqueda para la Búsqueda de contenido](keyword-queries-and-search-conditions.md#search-conditions).
+    2. **Condiciones**: puede agregar condiciones de búsqueda para recibir un conjunto de resultados más pertinente. Cada condición agrega una cláusula a la consulta de búsqueda que se crea y se ejecuta cuando se inicia la búsqueda. Una condición se conecta lógicamente a la consulta de palabras clave (especificada en el cuadro de palabras clave) mediante el operador **c:c**, que tiene una función parecida al operador **Y**. Eso significa que los elementos tienen que satisfacer la consulta de palabra clave y una o más condiciones para que se incluyan en los resultados. De esta manera, las condiciones permiten restringir los resultados. Para obtener una lista y descripciones de las condiciones permitidas en una consulta de búsqueda, vea la sección "Condiciones de búsqueda" en [Consultas de palabras clave y condiciones de búsqueda para la Búsqueda de contenido](keyword-queries-and-search-conditions.md#search-conditions).
     
-       - **Ubicaciones**: elegir las ubicaciones de contenido a buscar
+    3. **Ubicaciones**: elegir las ubicaciones de contenido a buscar
     
       - **Todas las ubicaciones**: Seleccione esta opción para buscar en todas las ubicaciones de contenido de su organización. Esto incluye el correo electrónico de todos los buzones de Exchange (incluidos todos los buzones inactivos y todos los buzones de Microsoft Teams, grupos de Yammer y grupos de Microsoft 365), todas las conversaciones de Skype Empresarial, todos los sitios de SharePoint y OneDrive para la Empresa (incluidos todos los sitios de Microsoft Teams, grupos de Yammer y grupos de Microsoft 365), y los elementos de todas las carpetas públicas de Exchange.
     
@@ -87,9 +87,11 @@ Para acceder a la página de **Búsqueda de contenido** y buscar, obtener una vi
   
          También puede agregar grupos de distribución a la lista de buzones de Exchange en los que desea buscar. En los grupos de distribución, se busca en los buzones de los miembros del grupo. No se admiten grupos de distribución dinámicos.
     
-       > [!NOTE]
-       > Cuando busque en todas las ubicaciones del buzón o solo en buzones específicos, los datos de otras aplicaciones de Office 365 guardados en los buzones de usuario se incluirán en la exportación de resultados de una Búsqueda de contenido. Estos datos no se incluyen en los resultados de búsqueda estimados y no aparecen en la vista previa. Solo se incluyen cuando exporte y descargue los resultados de búsqueda. Para obtener más información, consulte [Contenido almacenado en los buzones de Exchange Online](what-is-stored-in-exo-mailbox.md).
-   
+        > [!NOTE]
+        > Cuando busque en todas las ubicaciones del buzón o solo en buzones específicos, los datos de otras aplicaciones de Office 365 guardados en los buzones de usuario se incluirán en la exportación de resultados de una Búsqueda de contenido. Estos datos no se incluyen en los resultados de búsqueda estimados y no aparecen en la vista previa. Solo se incluyen cuando exporte y descargue los resultados de búsqueda. Para obtener más información, consulte [Contenido almacenado en los buzones de Exchange Online](what-is-stored-in-exo-mailbox.md).
+
+   4. **Agregar contenido de aplicación para usuarios locales:** seleccione esta casilla para incluir en la búsqueda contenido de Teams para los usuarios locales. Por ejemplo, si busca en todos los buzones de Exchange de la organización y también activa esta casilla, el almacenamiento basado en la nube que se usa para almacenar los datos de chats de Teams para usuarios locales se incluirá en el ámbito de la búsqueda. Para obtener más información, consulte [Buscar los datos de chat de Teams de usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
+
 5. Una vez que haya configurado la consulta de búsqueda, haga clic en **Guardar y ejecutar**.
     
 6. En la página **Guardar búsqueda**, escriba un nombre y una descripción opcional que le ayude a identificar la búsqueda. El nombre de la búsqueda debe ser único en la organización. 

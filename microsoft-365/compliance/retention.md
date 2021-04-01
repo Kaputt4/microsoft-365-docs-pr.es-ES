@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 0eaf89b3f49d8b69cb7b36e4e25df90946c19e32
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dbb294cdb865fb01f931e2e9c3bc4f6afb3f1e09
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917212"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471039"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -36,27 +36,29 @@ ms.locfileid: "50917212"
 > La información de esta página es para administradores de TI que pueden crear directivas y etiquetas de retención por motivos de cumplimiento.
 
 Para la mayoría de las organizaciones, el volumen y la complejidad de los datos se incrementa diariamente: correo electrónico, documentos, mensajes instantáneos y mucho más. Administrar o gobernar esta información es importante, ya que necesita:
-  
-- **Cumplir de forma proactiva con las normas del sector y las directivas internas** que le exigen retener contenido durante un período mínimo de tiempo. Por ejemplo, la ley Sarbanes-Oxley puede exigirle que retenga determinados tipos de contenido durante siete años. 
 
-- **Reducir el riesgo en caso de litigio o una infracción de seguridad** al eliminar de forma permanente contenido antiguo que ya no es necesario mantener. 
-    
-- **Ayudar a su organización a compartir los conocimientos de manera eficaz y ser más ágil** al asegurarse de que los usuarios trabajan solo con contenido actualizado y relevante para ellos. 
-    
-Las opciones de retención que configure pueden ayudarle a lograr todos estos objetivos. Por lo general, administrar el contenido requiere dos acciones:
-  
-- **Conservar** contenido para que no pueda eliminarse de forma permanente antes del fin del período de retención. 
-    
-- **Eliminar** contenido de forma permanente al final del período de retención. 
-    
+- **Cumplir de forma proactiva con las normas del sector y las directivas internas** que le exigen retener contenido durante un período mínimo de tiempo. Por ejemplo, la ley Sarbanes-Oxley puede exigirle que retenga determinados tipos de contenido durante siete años.
+
+- **Reducir el riesgo en caso de litigio o una infracción de seguridad** al eliminar de forma permanente contenido antiguo que ya no es necesario mantener.
+
+- **Ayudar a su organización a compartir los conocimientos de manera eficaz y ser más ágil** al asegurarse de que los usuarios trabajan solo con contenido actualizado y relevante para ellos.
+
+Las opciones de retención que configure pueden ayudarle a lograr estos objetivos. Por lo general, administrar el contenido requiere dos acciones:
+
+| Acción| Objetivo |
+|:-----|:-----|
+|Conservar el contenido | Evite la eliminación permanente y facilite que siga disponible en eDiscovery |
+|Eliminar contenido | Elimine el contenido de la organización de forma permanente|
 
 Con estas dos acciones de retención, puede establecer la configuración de retención para los siguientes resultados:
 
 - Solo conservar: conserve el contenido para siempre o durante un determinado período de tiempo.
 - Solo eliminar: elimine el contenido al cabo de un determinado período de tiempo.
-- Conservar y, después, eliminar el contenido: conserve el contenido durante un determinado período de tiempo y, a continuación, elimínelo.
+- Conserve y, después, elimine el contenido: conserve el contenido durante un determinado período de tiempo y, a continuación, elimínelo de forma permanente.
 
 Esta configuración de retención funciona con contenido local y le ahorra los costes generales adicionales de crear y configurar almacenamiento añadido cuando necesita conservar contenido por motivos de cumplimiento. Además, no es necesario implementar procesos personalizados para copiar y sincronizar estos datos.
+
+Use las secciones siguientes para obtener más información sobre cómo funcionan las directivas y las etiquetas de retención, cuándo usarlas y cómo se complementan entre sí. Y si ya está listo para empezar e implementar la configuración de retención en algunos escenarios comunes, consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md).
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Cómo funciona la configuración de retención con el contenido local
 

@@ -14,13 +14,14 @@ ms.author: v-maave
 ms.reviewer: ''
 manager: dansimp
 ms.custom: asr
+ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7685bd70d85ecebe759ade762b78ee2c3639cea8
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 71c3f89b721039753709d65daa135cad74a81711
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51069835"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476467"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>Preguntas más frecuentes sobre la reducción de superficie de ataque (FAQ)
 
@@ -37,7 +38,7 @@ ASR era originalmente una característica del conjunto de características de pr
 
 ## <a name="do-i-need-to-have-an-enterprise-license-to-run-asr-rules"></a>¿Necesito tener una licencia de empresa para ejecutar reglas ASR?
 
-El conjunto completo de reglas y características de ASR solo se admite si tienes una licencia de empresa para Windows 10. Un número limitado de reglas puede funcionar sin una licencia de empresa. Si tiene Microsoft 365 Empresa, establezca Antivirus de Microsoft Defender como solución de seguridad principal y habilite las reglas a través de PowerShell. Sin embargo, el uso de ASR sin una licencia de empresa no se admite oficialmente y las capacidades completas de ASR no estarán disponibles.
+El conjunto completo de reglas y características de ASR solo se admite si tienes una licencia de empresa para Windows 10. Un número limitado de reglas puede funcionar sin una licencia de empresa. Si tiene Microsoft 365 Empresa, establezca Antivirus de Microsoft Defender como solución de seguridad principal y habilite las reglas a través de PowerShell. El uso de ASR sin una licencia de empresa no se admite oficialmente y no podrá usar todas las funcionalidades de ASR.
 
 Para obtener más información sobre las licencias de Windows, consulta [Licencias de Windows 10](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) y obtén la Guía de licencias por [volumen para Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
 
@@ -49,11 +50,56 @@ Sí. ASR es compatible con Windows Enterprise E3 y versiones posteriores.
 
 Todas las reglas admitidas con E3 también se admiten con E5.
 
-E5 también agregó una mayor integración con Defender for Endpoint. Con E5, puede usar [Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender/monitor-devices?view=o365-worldwide&preserve-view=true#monitor-and-manage-asr-rule-deployment-and-detections) para supervisar y revisar el análisis de alertas en tiempo real, ajustar exclusiones de reglas, configurar reglas ASR y ver listas de informes de eventos.
+E5 agrega una mayor integración con Defender para endpoint. Con E5, puede ver alertas en tiempo real, ajustar exclusiones de reglas, configurar reglas ASR y ver listas de informes de eventos.
 
 ## <a name="what-are-the-currently-supported-asr-rules"></a>¿Cuáles son las reglas ASR admitidas actualmente?
+ASR admite actualmente todas las reglas siguientes.
 
-ASR admite actualmente todas las reglas siguientes:
+## <a name="what-rules-to-enable-all-or-can-i-turn-on-individual-rules"></a>¿Qué reglas habilitar? ¿Todo o puedo activar reglas individuales?
+Para ayudarle a averiguar qué es lo mejor para su entorno, le recomendamos que habilite las reglas ASR en el [modo de auditoría.](audit-windows-defender.md) Con este enfoque, determinará el posible efecto para su organización. Por ejemplo, las aplicaciones de línea de negocio.
+
+## <a name="how-do-asr-rules-exclusions-work"></a>¿Cómo funcionan las exclusiones de reglas ASR?
+Para las reglas ASR, si agrega una exclusión, afectará a todas las reglas ASR.
+Las dos reglas específicas siguientes no admiten exclusiones:
+
+|Nombre de regla|GUID|Exclusiones & carpetas de archivos|
+|:--|:--|:--|
+|Impedir que JavaScript o VBScript inicien contenido ejecutable descargado|D3E037E1-3EB8-44C8-A917-57927947596D|No admitido|
+|Bloquear la persistencia a través de la suscripción de eventos WMI|e6db77e5-3df2-4cf1-b95a-636979351e5b|No admitido|
+
+Las exclusiones de reglas ASR admiten caracteres comodín, rutas de acceso y variables de entorno. Para obtener más información sobre cómo usar caracteres comodín en reglas ASR, vea [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus).
+
+Tenga en cuenta los siguientes elementos sobre las exclusiones de reglas ASR (incluidos caracteres comodín y env. variables):
+
+- Las exclusiones de reglas ASR son independientes de las exclusiones de Antivirus de Defender
+- Los caracteres comodín no se pueden usar para definir una letra de unidad
+- Si desea excluir más de una carpeta, en una ruta de acceso, use varias instancias de \ para indicar varias carpetas anidadas \* (por ejemplo, c:\Folder \* \* \Test)
+- Microsoft Endpoint Configuration Manager *no admite* caracteres comodín (* o ?)
+- Si desea excluir un archivo, que contiene caracteres aleatorios (generación automática de archivos), puede usar el símbolo '?' (por ejemplo, C:\Folder\fileversion?. docx)
+- Las exclusiones de ASR en la directiva de grupo no admiten comillas (el motor controlará de forma nativa rutas largas, espacios, etc., por lo que no es necesario usar comillas)
+- Las reglas ASR se ejecutan en la cuenta NT AUTHORITY\SYSTEM, por lo que las variables de entorno se limitan a las variables de máquina.
+
+
+
+## <a name="how-do-i-know-what-i-need-to-exclude"></a>¿Cómo sé lo que necesito excluir?
+Las reglas ASR diferentes tendrán flujos de protección diferentes. Piense siempre en lo que protege la regla de ASR contra la que está configurando y en cómo se desatensa el flujo de ejecución real.
+
+Ejemplo: bloquear el robo de credenciales del subsistema de autoridad de seguridad local de **Windows** Leer directamente desde el proceso del subsistema de autoridad de seguridad local (LSASS) puede ser un riesgo para la seguridad, ya que podría exponer credenciales corporativas.
+
+Esta regla impide que los procesos que no son de confianza tengan acceso directo a la memoria de LSASS. Siempre que un proceso intente usar la función OpenProcess() para obtener acceso a LSASS, con un derecho de acceso de PROCESS_VM_READ, la regla bloqueará específicamente ese derecho de acceso.
+
+:::image type="content" source="images/asrfaq1.png" alt-text="bloquear el robo de credenciales LSASS":::
+
+En el ejemplo anterior, si realmente tuviera que crear una excepción para el proceso en el que se bloqueó el derecho de acceso, agregar el nombre de archivo junto con la ruta de acceso completa excluiría que no se bloqueara y después de permitir el acceso a la memoria del proceso de LSASS. El valor de 0 significa que las reglas ASR omitirán este archivo/proceso y no lo bloquearán ni auditarán.
+
+:::image type="content" source="images/asrfaq2.png" alt-text="excluir archivos asr":::
+
+## <a name="what-are-the-rules-microsoft-recommends-enabling"></a>¿Cuáles son las reglas que Microsoft recomienda habilitar?
+
+Se recomienda habilitar todas las reglas posibles. Sin embargo, hay algunos casos en los que no debe habilitar una regla. Por ejemplo, no recomendamos habilitar la regla Bloquear creaciones de proceso que se originen en los comandos PSExec y WMI, si usa Microsoft Endpoint Configuration Manager (o System Center Configuration Manager - SCCM) para administrar los puntos de conexión.
+
+Le recomendamos encarecidamente que lea cada información o advertencias específicas de la regla, que están disponibles en nuestra [documentación pública.](/microsoft-365/security/defender-endpoint/attack-surface-reduction.md)
+abarcando varios pilares de protección, como Office, Credenciales, Scripts, Correo electrónico, etc. Todas las reglas ASR, excepto la persistencia de bloqueo a través de la suscripción a eventos WMI, se admiten en Windows 1709 y versiones posteriores:
 
 * [Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
 * [Impedir que todas las aplicaciones de Office creen procesos secundarios](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
@@ -133,10 +179,10 @@ Dado que muchos procesos legítimos a lo largo de un día típico lsass.exe para
 
 Habilitar esta regla no proporcionará protección adicional si también tiene habilitada la protección [LSA.](https://docs.microsoft.com/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) Tanto la regla como la protección de LSA funcionan de la misma manera, por lo que tener ambos ejecutándose al mismo tiempo sería redundante. Sin embargo, a veces es posible que no pueda habilitar la protección de LSA. En esos casos, puede habilitar esta regla para proporcionar protección equivalente contra malware destinado a lsass.exe.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 * [Introducción a la reducción de superficie de ataque](attack-surface-reduction.md)
-* [Evaluar reglas de reducción de superficie de ataque](evaluate-attack-surface-reduction.md)
-* [Personalizar reglas de reducción de superficie de ataque](customize-attack-surface-reduction.md)
-* [Habilitar reglas de reducción de superficie de ataque](enable-attack-surface-reduction.md)
+* [Evaluar las reglas de la reducción de la superficie expuesta a ataques](evaluate-attack-surface-reduction.md)
+* [Personalizar las reglas de la reducción de superficie expuesta a ataques](customize-attack-surface-reduction.md)
+* [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)
 * [Compatibilidad de Microsoft Defender con otros antivirus/antimalware](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

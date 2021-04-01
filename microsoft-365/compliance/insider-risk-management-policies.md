@@ -12,16 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 96d265a7b909b439f960c951b10c84f4bc7a63b0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 23c2ed180606e61820c6e736e472aef0ae4933a5
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916834"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445690"
 ---
 # <a name="insider-risk-management-policies"></a>Directivas de administración de riesgos de Insider
 
 Las directivas de administración de riesgos de Insider determinan qué usuarios están en el ámbito y qué tipos de indicadores de riesgo están configurados para las alertas. Puede crear rápidamente una directiva que se aplique a todos los usuarios de la organización o definir usuarios o grupos individuales para la administración en una directiva. Las directivas admiten prioridades de contenido para centrar las condiciones de directiva en varios o específicos sitios de Microsoft Teams, sitios de SharePoint, tipos de confidencialidad de datos y etiquetas de datos. Con las plantillas, puede seleccionar indicadores de riesgo específicos y personalizar umbrales de eventos para los indicadores de directiva, personalizar eficazmente las puntuaciones de riesgo y el nivel y la frecuencia de las alertas. Además, los refuerzos de puntuación de riesgo y las detecciones de anomalías ayudan a identificar la actividad del usuario que es de mayor importancia o más inusual. Las ventanas de directiva permiten definir el período de tiempo para aplicar la directiva a las actividades de alerta y se usan para determinar la duración de la directiva una vez activada.
+
+Consulte el vídeo Configuración de directivas de administración de riesgos de [Insider](https://www.youtube.com/watch?v=kudK5ajZTUo) para obtener información general sobre cómo las directivas creadas con plantillas de directivas integradas pueden ayudarle a tomar medidas rápidamente sobre posibles riesgos.
 
 ## <a name="policy-dashboard"></a>Panel de directivas
 
@@ -44,7 +46,7 @@ Para obtener más información sobre las recomendaciones de directiva y análisi
 
 ## <a name="policy-templates"></a>Plantillas de directiva
 
-Las plantillas de administración de riesgos insider son condiciones de directiva predefinidas que definen los tipos de indicadores de riesgo y el modelo de puntuación de riesgos que usa la directiva. Cada directiva debe tener asignada una plantilla en el Asistente para la creación de directivas antes de crear la directiva. La administración de riesgos de Insider admite hasta cinco directivas para cada plantilla de directiva. Al crear una nueva directiva de riesgo de insider con el asistente para directivas, elegirá entre una de las siguientes plantillas de directiva:
+Las plantillas de administración de riesgos insider son condiciones de directiva predefinidas que definen los tipos de indicadores de riesgo y el modelo de puntuación de riesgos que usa la directiva. Cada directiva debe tener una plantilla asignada en el asistente para la creación de directivas antes de crearla. La administración de riesgos de Insider admite hasta cinco directivas para cada plantilla de directiva. Al crear una nueva directiva de riesgo de insider con el asistente para directivas, elegirá entre una de las siguientes plantillas de directiva:
 
 ### <a name="data-theft-by-departing-users"></a>Robo de datos por parte de los usuarios que salen
 

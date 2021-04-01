@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7c0e8adde9b1ed66e401348d998ae5c1ad8a7442
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b83e6682ce0c11d076e0bbef60fdef365c9be564
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166010"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471106"
 ---
 # <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Comprobar la ubicación de almacenamiento de datos y actualizar la configuración de retención de datos para Microsoft Defender para endpoint
 
@@ -46,6 +46,8 @@ Para comprobar la ubicación de los datos, vaya a **Configuración**  >  **Reten
 
 ## <a name="update-data-retention-settings"></a>Actualizar la configuración de retención de datos
 
+Puede actualizar la configuración de retención de datos. De forma predeterminada, el período de retención es de 180 días. 
+
 1. En el panel de navegación, seleccione **Configuración Retención**  >  **de datos**.
 
 2. Seleccione la duración de retención de datos de la lista desplegable.
@@ -59,4 +61,4 @@ Para comprobar la ubicación de los datos, vaya a **Configuración**  >  **Reten
 ## <a name="related-topics"></a>Temas relacionados
 - [Actualizar la configuración de retención de datos](data-retention-settings.md)
 - [Configurar notificaciones de alertas en Defender para endpoint](configure-email-notifications.md)
-- [Configurar características avanzadas](advanced-features.md)
+- [Configurar funciones avanzadas](advanced-features.md)

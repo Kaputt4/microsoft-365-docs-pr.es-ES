@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 670c6449c1121bc329b1dfb37cd1d9948c99a3f8
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 481051b74c1be88ba78bbd44e4fc0c174ed0bdad
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379303"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470898"
 ---
 # <a name="create-indicators"></a>Crear indicadores
 
@@ -50,6 +50,9 @@ El agente de prevención respeta la misma lista de indicadores. Es decir, si Mic
 
 **Motor automatizado de investigación y corrección**<BR>
 La investigación automatizada y la corrección se comportan igual. Si un indicador está establecido en "Permitir", la investigación automatizada y la corrección omitirán un veredicto "malo" para él. Si se establece en "Bloquear", la investigación automatizada y la corrección la tratarán como "mala".
+
+> [!NOTE]
+> La configuración EnableFileHashComputation calcula el hash de archivo para el certificado y el archivo IoC durante los exámenes de archivos. Admite la aplicación de IoC de hashes y certificados que pertenecen a aplicaciones de confianza. Se habilitará y deshabilitará simultáneamente con la opción permitir o bloquear el archivo. EnableFileHashComputation está habilitado manualmente a través de la directiva de grupo y está deshabilitado de forma predeterminada.
 
 
 Las acciones admitidas actuales son:

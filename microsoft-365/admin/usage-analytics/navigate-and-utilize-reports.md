@@ -20,21 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Obtenga información sobre cómo ver los informes mediante pestañas y filtros de navegación.
-ms.openlocfilehash: d3f080bdf2ec5544a0ef9d06139cad682962d57d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 921b32448deeb13b33d58112183002bace44c430
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913915"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471050"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Navegar y usar los informes en análisis de uso de Microsoft 365.
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 El panel proporciona información general rápida sobre las métricas de adopción y uso principal. Al seleccionar las métricas de nivel superior, puede obtener acceso a informes que proporcionan más detalles e información. Cada pestaña de informe contiene visualizaciones de datos específicas de un aspecto de uso y adopción para su organización. Los datos recopilados se explican en el título de cada informe y aparece un icono que contiene más información sobre las visualizaciones en la pestaña informe que está viendo.
 

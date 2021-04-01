@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: Pre-work when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: fb352c17d9868cf5c42034e198be63b6e0543dbb
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 9f5a38eae6d42f992879f97b8e8e1e8e6c4d56c3
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445607"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476354"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Trabajo previo para la migración desde Microsoft Cloud Deutschland
 
@@ -98,16 +98,17 @@ Leer y aplicar los pasos [de migración de ADFS](ms-cloud-germany-transition-add
 | Limitar flujos de trabajo de SharePoint 2013, usarlos durante la migración de SharePoint Online. | Reduzca los flujos de trabajo de SharePoint 2013 y complete los flujos de trabajo en el vuelo antes de las transiciones. | La inacción puede provocar confusión del usuario y llamadas al servicio de ayuda. |
 ||||
 
-## <a name="exchange-online"></a>Exchange Online
+## <a name="exchange-online"></a>Exchange en línea
 
 <!-- before phase 5 -->
 
-**Se aplica a**: Clientes de Exchange Online que han habilitado el espacio de direcciones de disponibilidad y calendario para compartir<br>
+**Se aplica a**: Clientes de Exchange Online<br>
 **Cuando se aplica:** cualquier momento antes del final de la fase 9
 
 | Pasos | Descripción | Impacto |
 |:-------|:-------|:-------|
-| Notificar a los asociados externos de la próxima transición a los servicios de Office 365. | Las configuraciones de espacio de direcciones de disponibilidad permiten compartir información de disponibilidad con Office 365. | Si no lo hace, puede producirse un error en el servicio o el cliente en una fase posterior de la migración de clientes. |
+| Notificar a los asociados externos de la próxima transición a los servicios de Office 365. |  Los clientes deben notificar a sus partners con los que han habilitado la configuración de espacio de direcciones de disponibilidad y calendario para compartir (permitir el uso compartido de información de disponibilidad con Office 365). La configuración de disponibilidad debe realizar la transición para usar los puntos de conexión mundiales de [Office 365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) cuando se complete la migración de Exchange Online. | Si no lo hace, puede producirse un error en el servicio o el cliente en una fase posterior de la migración de clientes. |
+| Notificar a los usuarios los cambios necesarios en el cliente IMAP4/POP3/SMTP. | Los usuarios que tienen conexiones de dispositivo a puntos de conexión de Microsoft Cloud Deutschland para protocolos de cliente IMAP4, POP3, SMTP deben actualizar manualmente sus dispositivos cliente para cambiar a los puntos de conexión de [Office 365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide)en todo el mundo. | Comunique previamente esta dependencia a los usuarios de estos protocolos y asegúrese de que cambien a usar Outlook mobile o Outlook en la web durante esta migración. Si no se actualizan los puntos de conexión de cliente, se producirán errores de conexión de cliente en Microsoft Cloud Deutschland cuando se migren los buzones de usuario. |
 ||||
 
 ### <a name="exchange-online-hybrid-configuration"></a>Configuración híbrida de Exchange Online

@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 7c3b4f82d94888cfa6c63b25f20130a38f8b4c9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f24f519ec3bb12622d74c1d02fbc0bb017aa2b24
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919205"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476414"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migración de buzones entre inquilinos (versión preliminar)
 
@@ -321,7 +321,7 @@ Debe asegurarse de que los siguientes objetos y atributos se establecen en la or
      | PrimarySmtpAddress    | Lara.Newton@northwind.com                                                                                                |
      | ExternalEmailAddress  | SMTP:LaraN@contoso.onmicrosoft.com                                                                                       |
      | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
-     | DN de Exchange heredado      | /o=First Organization/ou=Exchange Administrative Group                                                                   |
+     | LegacyExchangeDN      | /o=First Organization/ou=Exchange Administrative Group                                                                   |
      |                       | (FYDIBOHF23SPDLT)/cn=Recipients/cn=74e5385fce4b46d19006876949855035Lara                                                  |
      | EmailAddresses        | x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c8190  |
      |                       | 7273f1f9-Lara                                                                                                            |
@@ -339,7 +339,7 @@ Debe asegurarse de que los siguientes objetos y atributos se establecen en la or
      | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                            |
      | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                  |
      | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                     |
-     | DN de Exchange heredado      | /o=First Organization/ou=Exchange Administrative Group                   |
+     | LegacyExchangeDN      | /o=First Organization/ou=Exchange Administrative Group                   |
      |                       | (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara  |
      | EmailAddresses        | smtp:LaraN@contoso.onmicrosoft.com 
      |                       | SMTP:Lara.Newton@contoso.com          |
@@ -455,44 +455,32 @@ Get-MoveRequest -Flags "CrossTenant"
 
 ```powershell
 #Dumps out the test mailboxes from SourceTenant 
-#Note, the filter applied on GetMailbox is for an attribute set on CA1 = “ProjectKermit” 
+#Note, the filter applied on Get-Mailbox is for an attribute set on CustomAttribute1 = "ProjectKermit" 
 #These are the ‘target’ users to be moved to the Northwind org tenant #################################################################  
-$outFile = "$home\desktop\UserListToImport.csv" 
-$outArray = @() 
+$outFileUsers = "$home\desktop\userstomigrate.txt"
+$outFileUsersXML = "$home\desktop\userstomigrate.xml"
 #output the test objects 
-$Mailboxes = get-mailbox -filter "CustomAttribute1 -like ‘ProjectKermit'" -resultsize unlimited  
-#created these mailboxes in adv using separate scripts but you get the idea on how to define the user list to move 
-Foreach ($i in $Mailboxes)  
-{ 
-    $user = get-Recipient $i.alias 
-    $myobj = New-Object System.Object 
-    $myObj | Add-Member -type NoteProperty -name primarysmtpaddress -value $i.PrimarySMTPAddress 
-    $myObj | Add-Member -type NoteProperty -name alias -value $i.alias 
-    $myObj | Add-Member -type NoteProperty -name FirstName -value $User.FirstName 
-    $myObj | Add-Member -type NoteProperty -name LastName -value $User.LastName 
-    $myObj | Add-Member -type NoteProperty -name DisplayName -value $User.DisplayName 
-    $myObj | Add-Member -type NoteProperty -name Name -value $i.Name 
-    $myObj | Add-Member -type NoteProperty -name SamAccountName -value $i.SamAccountName 
-    $myObj | Add-Member -type NoteProperty -name legacyExchangeDN -value $i.legacyExchangeDN    $myObj | Add-Member -type NoteProperty -name ExchangeGuid -value $i.ExchangeGuid 
-    $outArray += $myObj 
-} 
-$outArray | Export-CSV $outfile -notypeinformation  
+Get-Mailbox -Filter "CustomAttribute1 -like 'ProjectKermit'" -ResultSize Unlimited | Select-Object -ExpandProperty Alias | Out-File $outFileUsers
+$mailboxes = Get-Content $outFileUsers
+$mailboxes | ForEach-Object {Get-Mailbox $_} | Select-Object PrimarySMTPAddress,Alias,SamAccountName,FirstName,LastName,DisplayName,Name,ExchangeGuid,ArchiveGuid,LegacyExchangeDn,EmailAddresses | Export-Clixml $outFileUsersXML
+
 ################################################################# 
 #Copy the file $outfile to the desktop of the target on-premises 
 #then run the below to create MEU in Target 
 #################################################################  
-$ImportUserList = import-csv "$home\desktop\UserListToImport.csv" 
-$pwstr = "Something 98053 Random!!"; 
-$pw = new-object "System.Security.SecureString"; 
-for ($i=0; $i -lt $pwstr.Length; $i++) {$pw.AppendChar($pwstr[$i])} foreach ($user in $ImportUserList) { 
-     $tmpUser = $null 
-    $UPNSuffix = "@northwindtraders.com"    $UPN = $user.Alias+$upnsuffix 
-    $tmpUser = New-MailUser -organization -UserPrincipalName $upn -ExternalEmailAddress $user.primarysmtpaddress -FirstName $user.FirstName ` 
-                 -LastName $user.LastName -SamAccountName $user.SamAccountName -ResetPasswordOnNextLogon $false ` 
-                 -Alias $user.alias -PrimarySmtpAddress $UPN -Name $User.Name -DisplayName $user.DisplayName ` 
-                 -OrganizationalUnit "OU=ContosoUsers,OU=MLB,DC=ContosoLab,DC=net" -Password $pw       $x500 = "x500:" + $user.legacyExchangeDN 
-    $tmpUser | Set-MailUser -ExchangeGuid $user.ExchangeGuid -EmailAddresses @{Add=$x500} -CustomAttribute1 "ProjectKermit" 
-}  
+$mailboxes = Import-Clixml $home\desktop\userstomigrate.xml
+
+foreach ($m in $mailboxes) {
+    $organization = "@contoso.onmicrosoft.com"
+    $mosi = $m.Alias+$organization
+    $Password = [System.Web.Security.Membership]::GeneratePassword(16,4) | ConvertTo-SecureString -AsPlainText -Force
+    $x500 = "x500:" +$m.LegacyExchangeDn
+    $tmpUser = New-MailUser -MicrosoftOnlineServicesID $mosi -PrimarySmtpAddress $mosi -ExternalEmailAddress $m.PrimarySmtpAddress -FirstName $m.FirstName -LastName $m.LastName -Name $m.Name -DisplayName $m.DisplayName -Alias $m.Alias -Password $Password
+    $tmpUser | Set-MailUser -EmailAddresses @{add=$x500} -ExchangeGuid $m.ExchangeGuid -ArchiveGuid $m.ArchiveGuid -CustomAttribute1 "ProjectKermit"
+    $tmpx500 = $m.EmailAddresses | ?{$_ -match "x500"}
+    $tmpx500 | %{Set-MailUser $m.Alias -EmailAddresses @{add="$_"}}
+    }
+
 ################################################################# 
 # On AADSync machine, run AADSync 
 #################################################################  

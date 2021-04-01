@@ -15,16 +15,16 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ee4f18342304cf46f97a6ae7aa6e1ba76685bccd
-ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
+ms.openlocfilehash: b3a555ba41cee7c8272467de20962eb1e7f25cfc
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50994622"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445618"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
-La configuración de administración de riesgos de Insider se aplica a todas las directivas de administración de riesgos de insider, independientemente de la plantilla que elija al crear una directiva. La configuración se configura mediante el control de configuración de riesgos **de Insider** ubicado en la parte superior de todas las pestañas de administración de riesgos de insider. Estos componentes de directiva de control de configuración para las siguientes áreas:
+La configuración de administración de riesgos de Insider se aplica a todas las directivas de administración de riesgos de insider, independientemente de la plantilla que elija al crear una directiva. La configuración se ajusta con el control de la **Configuración de riesgos internos** que se encuentra en la parte superior de todas las pestañas de administración de riesgos internos. Estos componentes de directiva de control de configuración para las siguientes áreas:
 
 - Privacidad
 - Indicadores
@@ -41,9 +41,9 @@ Antes de empezar y crear directivas de administración de riesgos internas, es i
 
 ## <a name="privacy"></a>Privacidad
 
-Proteger la privacidad de los usuarios que tienen coincidencias de directiva es importante y puede ayudar a promover la objetividad en las revisiones de análisis y investigación de datos para alertas de riesgo de información interna. Para los usuarios con una coincidencia de directiva de riesgo de insider, puede elegir una de las siguientes opciones:
+Proteger la privacidad de los usuarios que tienen coincidencias de directivas es importante y puede ayudar a promover la objetividad en las revisiones de análisis e investigaciones de datos de alertas de riesgos internos. Para los usuarios con una coincidencia de directiva de riesgo de insider, puede elegir una de las siguientes opciones:
 
-- **Mostrar versiones anónimas** de nombres de usuario: los nombres de los usuarios se anonimizan para impedir que administradores, investigadores de datos y revisores vean quién está asociado con alertas de directiva. Por ejemplo, un usuario "Grace Taylor" aparecería con un seudónimo aleatorio como "AnonIS8-988" en todas las áreas de la experiencia de administración de riesgos de insider. La elección de esta configuración anonimiza a todos los usuarios con coincidencias de directiva actuales y pasadas y se aplica a todas las directivas. La información del perfil de usuario en la alerta de riesgo insider y los detalles del caso no estarán disponibles cuando se elija esta opción. Sin embargo, los nombres de usuario se muestran al agregar nuevos usuarios a directivas existentes o al asignar usuarios a nuevas directivas. Si decide desactivar esta configuración, se mostrarán nombres de usuario para todos los usuarios que tengan coincidencias de directiva actuales o pasadas.
+- **Mostrar versiones anónimas** de nombres de usuario: los nombres de los usuarios se anonimizan para impedir que administradores, investigadores de datos y revisores vean quién está asociado con alertas de directiva. Por ejemplo, el usuario “Grace Taylor” aparecería con un pseudónimo aleatorizado, como “AnonIS8-988” en todas las áreas relacionadas con la experiencia de administración de riesgos internos. Al elegir esta configuración, se anonimizan todos los usuarios con coincidencias de directivas actuales y pasadas, y se aplica a todas las directivas. La información del perfil de usuario en la alerta de riesgo insider y los detalles del caso no estarán disponibles cuando se elija esta opción. Sin embargo, los nombres de usuario se muestran al agregar nuevos usuarios a directivas existentes o al asignar usuarios a nuevas directivas. Si decide desactivar esta configuración, se mostrarán nombres de usuario para todos los usuarios que tengan coincidencias de directiva actuales o pasadas.
 - **No mostrar versiones anónimas de** nombres de usuario: los nombres de usuario se muestran para todas las coincidencias de directiva actuales y pasadas para alertas y casos. La información de perfil de usuario (nombre, título, alias y organización o departamento) se muestra para el usuario para todas las alertas y casos de administración de riesgos de insider.
 
 ![Configuración de privacidad de la administración de riesgos insider](../media/insider-risk-settings-privacy.png)
@@ -155,9 +155,9 @@ Para el primer nivel de evento diario, se establece el umbral en *10* o más eve
 - Si hay entre 20 y 29 eventos de SharePoint que tienen lugar después de un desencadenamiento, la puntuación de riesgo es inherentemente mayor y los niveles de gravedad de alerta tienden a estar en un nivel medio.
 - Si hay 30 o más eventos de SharePoint que tienen lugar después de un desencadenador, la puntuación de riesgo es inherentemente mayor y los niveles de gravedad de alerta tienden a estar en un nivel alto.
 
-## <a name="policy-timeframes"></a>Períodos de tiempo de directiva
+## <a name="policy-timeframes"></a>Períodos de tiempo de las directivas
 
-Los períodos de tiempo de la directiva permiten definir períodos de revisión pasados y futuros que se desencadenan después de las coincidencias de directiva en función de los eventos y actividades de las plantillas de directiva de administración de riesgos de insider. Según la plantilla de directiva que elija, están disponibles los siguientes plazos de directiva:
+Los períodos de tiempo de las directivas permiten definir períodos de revisión pasados y futuros que se activan después de coincidencias de directivas basadas en eventos y actividades para las plantillas de directivas de administración de riesgos internos. Según la plantilla de directiva que elija, están disponibles los siguientes plazos de directiva:
 
 - **Ventana activación:** disponible para todas  las plantillas de directiva, la ventana Activación es el número definido de días que la ventana se activa **después** de un evento desencadenante. La ventana se activa de 1 a 30 días después de que se produzca un evento desencadenante para cualquier usuario asignado a la directiva. Por ejemplo, ha configurado una directiva de administración de riesgos insider y ha establecido la *ventana* Activación en 30 días. Han pasado varios meses desde que configuró la directiva y se produce un evento desencadenante para uno de los usuarios incluidos en la directiva. El evento desencadenante  activa la ventana Activación y la directiva está activa para ese usuario durante 30 días después de que se produjo el evento desencadenante.
 - **Detección de** actividad pasada: disponible  para todas las plantillas de directiva, la detección de actividad Pasada es el número definido de días que se activa la ventana antes **de** un evento desencadenante. La ventana se activa de 0 a 180 días antes de que se produzca un evento desencadenante para cualquier usuario asignado a la directiva. Por ejemplo, ha configurado una directiva de administración de riesgos de insider y ha establecido la detección de actividad *pasada* en 90 días. Han pasado varios meses desde que configuró la directiva y se produce un evento desencadenante para uno de los usuarios incluidos en la directiva. El evento desencadenante  activa la detección de actividad Past y la directiva recopila actividades históricas para ese usuario durante 90 días antes del evento desencadenante.
@@ -170,7 +170,7 @@ La configuración de detección inteligente ayuda a refinar cómo se procesan la
 
 ### <a name="file-type-exclusions"></a>Exclusiones de tipos de archivo
 
-Para excluir tipos de archivo específicos de todas las coincidencias de directivas de administración de riesgos insider, escriba extensiones de tipo de archivo separadas por comas. Por ejemplo, para excluir determinados tipos de archivos de música de las coincidencias de directiva, puede escribir aac,mp3,wav,wma en el campo Exclusiones de **tipo de archivo.** Todas las directivas de administración de riesgos internas omitirán los archivos con estas extensiones.
+Para excluir tipos de archivo específicos de todas las coincidencias de directivas de administración de riesgos insider, escriba extensiones de tipo de archivo separadas por comas. Por ejemplo, para excluir determinados tipos de archivos de música de coincidencias de directivas, puede escribir aac,mp3,wav,wma en el campo **Exclusiones de tipos de archivo**. Todas las directivas de administración de riesgos internas omitirán los archivos con estas extensiones.
 
 ### <a name="threshold-for-unusual-file-activity"></a>Umbral de actividad de archivos inusual
 
@@ -190,7 +190,7 @@ A las actividades de usuario detectadas por las directivas de riesgo de insider 
 
 Según los tipos de señales que le interesen, puede elegir importar alertas a la administración de riesgos de información interna en función del estado de evaluación de alertas de Defender for Endpoint. Puede definir uno o varios de los siguientes estados de triaje de alertas en la configuración global que se va a importar:
 
-- Desconocido
+- Unknown
 - Nuevo
 - En curso
 - Resuelto
@@ -502,12 +502,14 @@ El análisis de riesgos de Insider le permite realizar una evaluación de los po
 - Requisitos mínimos de privacidad: los resultados y las perspectivas del examen se devuelven como actividad de usuario anonimizada, los revisores no identifican nombres de usuario individuales.
 - Comprender los posibles riesgos a través de información consolidada: los resultados del examen pueden ayudarle a identificar rápidamente las posibles áreas de riesgo para los usuarios y qué directiva sería mejor para ayudar a mitigar estos riesgos.
 
+Consulte el vídeo análisis de administración de riesgos de Insider para comprender cómo los análisis pueden ayudar a acelerar la identificación de posibles riesgos de [insider](https://www.youtube.com/watch?v=5c0P5MCXNXk) y ayudarle a tomar medidas rápidamente.
+
 El análisis busca eventos de actividad de riesgo de varios orígenes para ayudar a identificar información sobre posibles áreas de riesgo. Según la configuración actual, el análisis busca actividades de riesgo que califiquen en las siguientes áreas:
 
-- Registros de auditoría de Microsoft 365: incluidos en todos los exámenes, este es el origen principal para identificar la mayoría de las actividades potencialmente arriesgadas.
-- Exchange Online: incluida en todos los exámenes, la actividad de Exchange Online ayuda a identificar actividades en las que los datos adjuntos se enviarán por correo electrónico a los servicios o contactos externos.
-- Azure Active Directory: incluido en todos los exámenes, el historial de Azure Active Directory ayuda a identificar actividades de riesgo asociadas con usuarios con cuentas de usuario eliminadas.
-- Conector de datos de RRHH de Microsoft 365: si está configurado, los eventos del conector de recursos humanos ayudan a identificar actividades de riesgo asociadas con usuarios que tienen dimisión o próximas fechas de terminación.
+- **Registros de auditoría de Microsoft 365:** incluidos en todos los exámenes, este es el origen principal para identificar la mayoría de las actividades potencialmente arriesgadas.
+- **Exchange Online:** incluida en todos los exámenes, la actividad de Exchange Online ayuda a identificar las actividades en las que los datos adjuntos se enviarán por correo electrónico a los contactos o servicios externos.
+- **Azure Active Directory:** incluido en todos los exámenes, el historial de Azure Active Directory ayuda a identificar actividades de riesgo asociadas con usuarios con cuentas de usuario eliminadas.
+- Conector de datos de RRHH de **Microsoft 365:** si está configurado, los eventos del conector de recursos humanos ayudan a identificar actividades de riesgo asociadas con usuarios que tienen fechas de dimisión o próximas terminaciones.
 
 La información de análisis de los exámenes se basa en las mismas señales de actividad de riesgo que usan las directivas de administración de riesgos internas y los resultados de informes basados en actividades de usuario de secuencia y únicas. Sin embargo, la puntuación de riesgos para el análisis se basa en hasta 30 días de actividad, mientras que las directivas de riesgo de insider usan la actividad diaria para obtener información. Cuando habilite y ejecute análisis por primera vez en su organización, verá los resultados del examen durante un día. Si dejas el análisis habilitado, verás los resultados de cada examen diario agregados a los informes de información para un intervalo máximo de los 30 días anteriores de actividad.
 

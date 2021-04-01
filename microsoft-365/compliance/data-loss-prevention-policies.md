@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información acerca de cómo identificar, supervisar y proteger automáticamente la información confidencial de su organización en Office 365.
-ms.openlocfilehash: 9ef369786aa4b79dbdec551c9750500f9c092906
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 737e556972ca8ab0f82e1c4fe9e8602f09e91fc8
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052078"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445434"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Información general sobre la prevención de pérdida de datos
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -86,7 +86,7 @@ Por ejemplo, podría tener una directiva DLP que ayude a detectar la presencia d
 Las directivas DLP son aplicados a elementos confidenciales de las ubicaciones de Microsoft 365 y se pueden definir otros límites como se detalla en esta tabla.
 
 
-|ubicación | incluir/excluir por|
+|Ubicación | Incluir/excluir por|
 |---------|---------|
 |Correo electrónico de Exchange| grupos de distribución|
 |Sitios de SharePoint |sitios |
@@ -96,9 +96,14 @@ Las directivas DLP son aplicados a elementos confidenciales de las ubicaciones d
 |Microsoft Cloud App Security |instancia |
 
 
- Si elige incluir grupos de distribución que son específicos en Exchange, la directiva de DLP se aplicará solo a los miembros de ese grupo. Igualmente, la exclusión de un grupo de distribución excluirá a todos los miembros de dicho grupo de distribución de la evaluación de la directiva. Puede escoger entre definir una directiva para los miembros de las listas de distribución, los grupos de distribución dinámicos y los grupos de seguridad. Una directiva DLP no puede contener más de 50 de estas inclusiones y exclusiones.
+Si elige incluir grupos de distribución que son específicos en Exchange, la directiva de DLP se aplicará solo a los miembros de ese grupo. Igualmente, la exclusión de un grupo de distribución excluirá a todos los miembros de dicho grupo de distribución de la evaluación de la directiva. Puede escoger entre definir una directiva para los miembros de las listas de distribución, los grupos de distribución dinámicos y los grupos de seguridad. Una directiva DLP no puede contener más de 50 de estas inclusiones y exclusiones.
 
-Si elige incluir o excluir sitios de SharePoint o cuentas de OneDrive específicos, una directiva DLP no puede contener más de 100 inclusiones y exclusiones. Aunque este límite exista, puede superar este límite aplicando una directiva para toda la organización o una directiva que se aplique ubicaciones completas.
+Si elige incluir o excluir sitios de SharePoint, una directiva DLP no podrá contener más de 100 inclusiones y exclusiones. Aunque este límite exista, puede superarlo si aplica una directiva para toda la organización o aplicada a ubicaciones completas.
+
+Si decide incluir o excluir grupos o cuentas de OneDrive específicas, una directiva DLP no puede contener más de 100 cuentas de usuario o 50 grupos como inclusión o exclusión.
+
+> [!NOTE]
+> El ámbito de la directiva de OneDrive para la Empresa con cuentas o grupos está en versión preliminar pública. Durante esta fase, puede o bien incluir o bien excluir grupos y cuentas de usuario como parte de una directiva DLP. Sin embargo, no se permite incluir y excluir como parte de la misma directiva.
   
 ### <a name="rules"></a>Reglas
 
@@ -201,8 +206,9 @@ Así es como se muestra una sugerencia de directiva en una cuenta de OneDrive pa
 Cuando una regla coincide, puede enviar un correo de alerta a su responsable de cumplimento normativo (o a la persona que elija) con los detalles de la alerta. Este correo electrónico de alerta contendrá un vínculo del [Panel de administración de alertas DLP](dlp-configure-view-alerts-policies.md) el que el funcionario encargado de la conformidad pueda ir para ver los detalles de los eventos y las alertas. El panel contiene detalles del evento que activó la alerta, junto con detalles de la Directiva DLP que coincide y el contenido confidencial detectado.
 
 Además, también puede enviar un informe de incidentes con detalles sobre el evento. Este informe incluye información sobre el elemento que ha coincidido, el contenido que ha coincidido con la regla y el nombre de la persona que ha modificado el contenido por última vez. Para los mensajes de correo electrónico, el informe también incluye el mensaje original que coincide con una directiva DLP como datos adjuntos.
-  
-![Página para configurar informes de incidentes](../media/Alerts-and-incident-report.png)
+
+> [!div class="mx-imgBorder"]
+> ![Página para configurar informes de incidentes](../media/Alerts-and-incident-report.png)
 
 DLP analiza el correo electrónico de forma diferente desde elementos en SharePoint Online o en OneDrive para la Empresa. En SharePoint Online y OneDrive para la Empresa, DLP analiza los elementos existentes, así como los nuevos, y genera un informe de incidentes y una alerta cada vez que se encuentra una coincidencia. En Exchange Online, DLP solo analiza los nuevos mensajes de correo electrónico y genera un informe si hay una coincidencia de directiva. DLP ***no*** analiza ni busca coincidencias en elementos de correo electrónico anteriormente existentes que estén almacenados en un buzón de correo o archivo.
   
@@ -252,13 +258,15 @@ Por ejemplo, la directiva **HIPAA de Estados Unidos** tiene una regla que usa un
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>Prioridad por la que se procesan las reglas
 
-Al crear reglas en una directiva, a cada regla se le asigna una prioridad en el orden en que se crea (es decir, la regla creada en primer lugar tiene la máxima prioridad, la regla creada en segundo lugar tiene una prioridad secundaria, etc.). 
-  
-![Reglas en orden de prioridad](../media/dlp-rules-in-priority-order.png)
+Al crear reglas en una directiva, a cada regla se le asigna una prioridad en el orden en que se crea (es decir, la regla creada en primer lugar tiene la máxima prioridad, la regla creada en segundo lugar tiene una prioridad secundaria, etc.).
+
+> [!div class="mx-imgBorder"]
+> ![Reglas en orden de prioridad](../media/dlp-rules-in-priority-order.png)
   
 Una vez que haya configurado más de una directiva DLP, puede cambiar la prioridad de una o más directivas. Para hacerlo, seleccione una directiva, elija **Editar directiva** y use la lista de **Prioridad** para especificar la prioridad.
 
-![Establecer la prioridad de una directiva](../media/dlp-set-policy-priority.png)
+> [!div class="mx-imgBorder"]
+> ![Establecer la prioridad de una directiva](../media/dlp-set-policy-priority.png)
 
 Cuando se evalúa el contenido frente a reglas, estas se procesan en orden de prioridad. Si el contenido coincide con varias reglas, estas se procesan en orden de prioridad y se aplica la acción más restrictiva. Por ejemplo, si el contenido coincide con todas las reglas siguientes, se aplica la Regla 3 porque es la regla más restrictiva y con mayor prioridad:
   
@@ -295,8 +303,9 @@ Para solucionar estos problemas, puede ajustar las reglas al modificar el recuen
 ### <a name="instance-count"></a>Recuento de instancias
 
 El recuento de instancias significa simplemente qué número de apariciones de un determinado tipo de información confidencial debe estar presente en el contenido para que coincida con la regla. Por ejemplo, el contenido coincide con la regla que se muestra a continuación si se identifican entre 1 y 9 números únicos de pasaporte de los Estados Unidos o Reino Unido.
-  
-Tenga en cuenta que el número de instancias incluye solo coincidencias **únicas** con palabras clave y tipos de información confidenciales. Por ejemplo, si un correo electrónico contiene diez veces el mismo número de tarjeta de crédito, esas diez cuentan como una única instancia de un número de tarjeta de crédito. 
+
+> [!NOTE]
+> El número de instancias incluye solo coincidencias **únicas** con palabras clave y tipos de información confidenciales. Por ejemplo, si un correo electrónico contiene diez veces el mismo número de tarjeta de crédito, esas diez cuentan como una única instancia de un número de tarjeta de crédito.
   
 Las instrucciones para usar el recuento de instancias para ajustar las reglas son sencillas:
   
@@ -443,7 +452,8 @@ Si está creando directivas DLP con un gran impacto potencial, se recomienda seg
 
     También puede cambiar la prioridad de varias reglas en una directiva. Para hacerlo, abra una directiva para editarla. En una fila de una regla, elija el signo de puntos suspensivos (**...**) y elija una opción, como **Bajar** o **Llevar al final**. 
 
-    ![Establecer la prioridad de la regla](../media/dlp-set-rule-priority.png)
+    > [!div class="mx-imgBorder"]
+    > ![Establecer la prioridad de la regla](../media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>Informes de DLP
 
@@ -534,7 +544,7 @@ Los miembros de su equipo de cumplimiento que vayan a crear directivas DLP neces
 
 También puede crear un grupo de roles solo con privilegios de lectura para las directivas DLP y los informes DLP asignando el rol de **Administración de cumplimiento DLP de solo lectura**.
 
-Para más información, vea [Conceder acceso a los usuarios al Centro de cumplimiento de Office 365](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Para más información, vea [Conceder acceso a los usuarios al Centro de cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Estos permisos son necesarios solo para crear y aplicar una directiva de DLP. La aplicación de directivas no requiere acceso al contenido.
   

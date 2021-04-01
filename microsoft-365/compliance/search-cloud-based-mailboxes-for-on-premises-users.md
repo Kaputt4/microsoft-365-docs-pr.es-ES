@@ -16,14 +16,14 @@ search.appverid:
 - MST160
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: Utilice la herramienta Búsqueda de contenido en el Centro de Seguridad y cumplimiento para buscar y exportar datos de chat de Teams de usuarios locales en un entorno híbrido de Exchange.
+description: Use herramientas de eDiscovery en Microsoft 365 para buscar y exportar datos de chat de Teams para usuarios locales en una implementación híbrida de Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39951ce125f86748beab12cf1998075e26ad734b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a5053eb54b59d55c428290987bcc8b2a8ce26b5b
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917192"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471029"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Buscar los datos de chat de Teams de usuarios locales
 
@@ -44,20 +44,19 @@ A continuación, se presentan los requisitos y limitaciones para habilitar el al
   
 ## <a name="how-it-works"></a>Cómo funciona
 
-Si un usuario habilitado para Microsoft Teams tiene un buzón en el entorno local y su cuenta de usuario o identidad se ha sincronizado en la nube, Microsoft crea un almacenamiento basado en la nube para asociarlo a los datos de chat 1xN de Teams del usuario local. Los datos de chat de Teams de los usuarios locales se indexan para la búsqueda. Esto le permite utilizar la Búsqueda de contenido (y las búsquedas asociadas a los casos de Core eDiscovery e eDiscovery avanzado) para buscar, previsualizar y exportar los datos de chat de Teams de los usuarios locales. También puede usar los cmdlets de **\*ComplianceSearch** en el PowerShell del Centro de cumplimiento y seguridad para buscar los datos de charts de Teams de usuarios locales.
+Si un usuario habilitado para Microsoft Teams tiene un buzón en el entorno local y su cuenta de usuario o identidad se ha sincronizado en la nube, Microsoft crea un almacenamiento basado en la nube para asociarlo a los datos de chat 1xN de Teams del usuario local. Los datos de chat de Teams de los usuarios locales se indexan para la búsqueda. Esto le permite utilizar la Búsqueda de contenido (y las búsquedas asociadas a los casos de Core eDiscovery y eDiscovery avanzado) para buscar, previsualizar y exportar los datos de chat de Teams de los usuarios locales. También puede usar los cmdlets de **\*ComplianceSearch** en el PowerShell del Centro de cumplimiento y seguridad para buscar los datos de charts de Teams de usuarios locales.
   
 El siguiente gráfico muestra el flujo de trabajo de cómo los datos del chat de Teams para los usuarios locales están disponibles para buscar, previsualizar y exportar.
   
 ![Almacenamiento en la nube para los usuarios locales de Microsoft Teams](../media/EHAMShard1.png)
   
-Además de esta nueva capacidad, todavía puede utilizar la Búsqueda de contenido para buscar, previsualizar y exportar el contenido de Teams en el sitio SharePoint basado en la nube y el buzón de Exchange asociado con los datos de cada equipo de Microsoft y chat de 1xN Teams en el buzón de Exchange Online para los usuarios basados en la nube.
+Además de esta nueva capacidad, también puede usar las herramientas de eDiscovery para buscar, previsualizar y exportar el contenido de Teams en el sitio SharePoint basado en la nube y el buzón de Exchange asociado con los datos de cada equipo de Microsoft y el chat de 1xN Teams en el buzón de Exchange Online para los usuarios basados en la nube.
 
+### <a name="how-this-feature-is-supported-in-content-search-and-core-ediscovery-search-tools"></a>¿Qué compatibilidad tiene esta característica en la Búsqueda de contenido y en las herramientas de búsqueda de Core eDiscovery?
 
-### <a name="what-happens-after-this-feature-is-enabled"></a>¿Qué sucede después de que se activa esta función?
-
-Una vez implementada esta función en su organización, se realizan los siguientes cambios en la búsqueda de contenido y en las búsquedas asociadas a un caso de eDiscovery en el Centro de Seguridad y cumplimiento:
+En los siguientes elementos de la interfaz de usuario en la Búsqueda de contenido y las herramientas de búsqueda de los casos de Core eDiscovery en el Centro de cumplimiento de Microsoft 365:
   
-- La casilla de verificación **Agregar contenido de aplicaciones de Office para usuarios locales** se agrega en la sección **Ubicaciones** en la Búsqueda de contenido.
+- **Agregar contenido de aplicaciones de Office para usuarios locales** se agrega en la sección **Ubicaciones** en la Búsqueda de contenido. Active esta casilla para incluir el almacenamiento basado en la nube para los usuarios locales en una búsqueda de contenido.
 
     ![La casilla de verificación "Agregar contenido de aplicaciones de Office para usuarios locales" se agrega a la interfaz de búsqueda de contenido](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
   
@@ -65,18 +64,18 @@ Una vez implementada esta función en su organización, se realizan los siguient
 
 ## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>Buscar el contenido de chat de Teams de los usuarios locales
 
-Una vez habilitada la función, puede utilizar la Búsqueda de contenido en el Centro de seguridad y cumplimiento para buscar datos de chat de Teams de los usuarios locales.
+Aquí le explicamos cómo usar la Búsqueda de contenido en el Centro de cumplimiento de Microsoft 365 para buscar datos de chat de Teams para usuarios locales.
   
-1. En el Centro de seguridad y cumplimiento, diríjase a la **Búsqueda** \> **Contenido de búsqueda**
+1. En el Centro de cumplimiento de Microsoft 365, vaya a **Búsqueda de contenido**.
 
-2. En la página **Buscar**, haga clic en el![Icono agregar](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nueva búsqueda**.
+2. En la pestaña **Buscar**, haga clic en el ![Icono agregar](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nueva búsqueda**.
 
     Como se ha explicado anteriormente, la casilla de verificación **Agregar contenido de la aplicación de Office para usuarios locales** se muestra en la sección **Ubicaciones**. Está seleccionado de forma predeterminada.
 
 3. Crear la consulta de la palabra clave y añadir condiciones a la consulta de búsqueda si es necesario. Para buscar sólo los datos de los chats de Teams, puede añadir la siguiente consulta en el cuadro **Palabras clave**:
 
     ```text
-    kind:im
+    kind:im AND kind:microsoftteams
     ```
 
 4. En este punto, puede elegir una de las siguientes opciones en **Ubicaciones**:
@@ -129,26 +128,26 @@ Para más información sobre el uso de estos cmdlets, consulte:
 
 ## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
+**¿Tengo que enviar una solicitud de soporte para buscar mensajes de chat de usuarios locales?**
+
+No. Esta característica está activada para todas las organizaciones. En el pasado, hubiera tenido que ponerse en contacto con el Soporte técnico de Microsoft, pero ya no hace falta.
+  
+ **¿Pueden las herramientas de eDiscovery buscar datos de chat antiguos de Teams para usuarios locales antes de que esta característica se habilitara de forma predeterminada para todas las organizaciones?**
+  
+Microsoft comenzó a almacenar los datos de chat de Teams de los usuarios locales el 31 de enero de 2018. Por lo tanto, si la identidad de un usuario local de Teams se ha sincronizado entre su Active Directory local y Azure Active Directory en Microsoft 365 desde esta fecha, sus datos de chat de Teams se almacenarán en la nube y se podrán buscar con herramientas de eDiscovery.
+
+ **¿Los usuarios locales necesitan una licencia para almacenar sus datos de chat de Teams en la nube?**
+  
+Sí. Para que un usuario local pueda almacenar sus datos de chat de Teams en un almacenamiento basado en la nube, se debe asignar al usuario una licencia de Microsoft Teams y una licencia de un plan de Exchange Online en Office 365 (o Microsoft 365).
+
 **¿Dónde se ubica el almacenamiento en la nube de usuarios locales?**
   
 Los datos del chat de Teams se almacenan en la Ubicación de datos preferida (PDL) para un On-Premises User. La PDL respeta tanto los entornos Single-Geo y los Multi-Geo. Para más información, vea [Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md).
-  
- **¿Existen otros requisitos además de la presentación de una solicitud de apoyo?**
-  
-Como se ha explicado anteriormente, las identidades de los usuarios con buzones de correo electrónico local deben estar sincronizadas con su organización basada en la nube, de modo que se cree una cuenta de usuario de correo correspondiente para cada cuenta de usuario local en Office 365. Su organización también debe tener una suscripción empresarial a Office 365, como una suscripción a Office 365 Enterprise E1, E3 o E5.
-  
- **¿Existe el riesgo de perder los datos del chat de los equipos si el buzón del usuario se migra a la nube?**
+
+**¿Existe el riesgo de perder los datos del chat de los equipos si el buzón del usuario se migra a la nube?**
   
 No. Cuando migre el buzón principal de un usuario local a la nube, los datos de chat de los equipos de ese usuario se migrarán a su nuevo buzón principal basado en la nube.
   
  **¿Puedo aplicar una retención de eDiscovery o las directivas de retención a los usuarios locales?**
   
-Sí. Puede aplicar políticas de retención o retención de eDiscovery a los chats y mensajes de canales de los usuarios locales.
-  
- **¿La Búsqueda de contenido puede encontrar datos de chat anteriores a la fecha en la que mi organización envió la solicitud para habilitar esta función?**
-  
-Microsoft comenzó a almacenar los datos de chat de Teams de los usuarios locales el 31 de enero de 2018. Por tanto, si la identidad de un usuario local de Teams se ha sincronizado entre Active Directory y Azure Active Directory a partir de esta fecha, entonces sus datos de chat de Teams se encuentran almacenados en la nube y se pueden buscar usando la Búsqueda de contenido. Microsoft también se encuentra trabajando para almacenar los datos de chat de Teams anteriores al 31 de enero de 2018 en el almacenamiento basado en la nube para los usuarios locales. Pronto habrá más información disponible acerca de esto.
-
- **¿Los usuarios locales necesitan una licencia para almacenar sus datos de chat de Teams en la nube?**
-  
-Sí. Para que un usuario local pueda almacenar sus datos de chat de Teams en un almacenamiento basado en la nube, se debe asignar al usuario una licencia de Microsoft Teams y una licencia de un plan de Exchange Online en Office 365 (o Microsoft 365).
+Sí. Puede aplicar políticas de retención o retención de eDiscovery a los chats y mensajes de canales de los usuarios locales. Sin embargo, para conservar el contenido de Teams para los usuarios locales, un usuario local debe tener asignada una licencia de Exchange Online Plan 2.

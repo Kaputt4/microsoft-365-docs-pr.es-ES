@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5013d94277eeba7d1df100d2850cb950fe2e0742
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 1757160b37500e97586fbb6dfb16d81303bc54e4
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379360"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476486"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de servidores de Windows al servicio microsoft defender para puntos de conexión
 
@@ -204,7 +204,7 @@ En esta integración se incluyen las siguientes funcionalidades:
 - Incorporación automatizada: el sensor defender para puntos de conexión se habilita automáticamente en los servidores Windows que están incorporados al Centro de seguridad de Azure. Para obtener más información sobre la incorporación de Azure Security Center, consulte [Onboarding to Azure Security Center Standard for enhanced security](https://docs.microsoft.com/azure/security-center/security-center-onboarding).
 
     > [!NOTE]
-    > La incorporación automatizada solo se aplica a Windows Server 2008 R2 SP1, Windows Server 2012 R2 y Windows Server 2016.
+    > La integración entre Azure Defender para servidores y Microsoft Defender para endpoint se ha expandido para admitir [Windows Server 2019 y Windows Virtual Desktop (WVD).](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - Los servidores windows supervisados por Azure Security Center también estarán disponibles en Defender para endpoint: El Centro de seguridad de Azure se conecta perfectamente al inquilino de Defender for Endpoint, lo que proporciona una vista única entre clientes y servidores.  Además, las alertas de Defender for Endpoint estarán disponibles en la consola del Centro de seguridad de Azure.
 - Investigación del servidor: los clientes del Centro de seguridad de Azure pueden acceder al Centro de seguridad de Microsoft Defender para realizar una investigación detallada para descubrir el ámbito de una posible infracción.
@@ -283,8 +283,8 @@ Para salir del servidor Windows, puedes usar cualquiera de los siguientes métod
 <br>
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Incorporación de dispositivos Windows 10](configure-endpoints.md)
-- [Incorporación de dispositivos que no son de Windows](configure-endpoints-non-windows.md)
-- [Configuración de proxy y conectividad a Internet](configure-proxy-internet.md)
+- [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)
+- [Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)
+- [Configurar las opciones del proxy y de conectividad a Internet](configure-proxy-internet.md)
 - [Ejecutar una prueba de detección en un dispositivo Defender for Endpoint recién incorporado](run-detection-test.md)
 - [Solución de problemas de incorporación de Microsoft Defender para puntos de conexión](troubleshoot-onboarding.md)
