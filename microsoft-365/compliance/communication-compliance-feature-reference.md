@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 298300de8581d3eea185f05b92bb69cb6e7a69eb
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: dbfe1d4aaa821714bac68692d3be38ba8aad8e7f
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034209"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488227"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
@@ -114,11 +114,6 @@ Con las directivas de cumplimiento de comunicaciones, puede elegir examinar mens
     - **Para las comunicaciones de chat de Teams:** Asignar usuarios individuales o asignar un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la directiva de cumplimiento de comunicaciones. Esta configuración es para relaciones de usuario/chat de uno a uno o de uno a varios.
     - **Para las comunicaciones del Canal de Teams:** Asigna todos los canales de Microsoft Teams o grupos de Microsoft 365 que quieras examinar que contengan un usuario específico a la directiva de cumplimiento de comunicaciones. Si agrega el mismo usuario a otros canales de Microsoft Teams o grupos de Microsoft 365, asegúrese de agregar estos nuevos canales y grupos a la directiva de cumplimiento de comunicaciones. Si algún miembro del canal es un usuario  supervisado dentro de una directiva y la dirección de entrada está configurada en una directiva, todos los mensajes enviados dentro del canal están sujetos a revisión y posibles coincidencias de directiva (incluso para los usuarios del canal que no están supervisados explícitamente). Por ejemplo, el usuario A es el propietario o miembro de un canal. El usuario B y el usuario C son miembros del mismo canal y usan un idioma que coincide con la directiva de idioma ofensivo que supervisa solo al usuario A. El usuario B y el usuario C crean coincidencias de directiva para las conversaciones dentro del canal aunque no estén supervisadas directamente en la directiva de idioma ofensivo. Las conversaciones de Teams entre el usuario B y el usuario C que están fuera del canal que incluye el usuario A no estarían sujetas a la directiva de idioma ofensivo que incluye el usuario A. Para excluir a los miembros del canal de la supervisión cuando  otros miembros del canal se supervisan explícitamente, desactive la configuración Dirección de comunicación entrante en la directiva de cumplimiento de comunicaciones aplicable.
     - Para las comunicaciones de chat de Teams con entornos de correo electrónico **híbridos:** el cumplimiento de las comunicaciones puede supervisar los mensajes de chat de los usuarios de organizaciones con una implementación local de Exchange o un proveedor de correo electrónico externo que haya habilitado Microsoft Teams. Debe crear un grupo de distribución para que los usuarios con buzones locales o externos supervisen. Al crear una directiva de cumplimiento de comunicaciones, asignará este grupo de distribución como la selección de usuarios y grupos supervisados en el asistente para directivas. 
-
-    >[!IMPORTANT]
-    >Debe presentar una solicitud al Soporte técnico de Microsoft para que su organización pueda utilizar la interfaz gráfica de usuario en el Centro de seguridad y cumplimiento para buscar datos de chat de Teams de usuarios locales. Para obtener más información, vea [Searching cloud-based mailboxes for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
-
-Debe presentar una solicitud al Soporte técnico de Microsoft para que su organización pueda utilizar la interfaz gráfica de usuario en el Centro de seguridad y cumplimiento para buscar datos de chat de Teams en los buzones de correo basados en la nube para los usuarios locales.
 
 - **Correo electrónico de Exchange:** los buzones hospedados en Exchange Online como parte de su suscripción a Microsoft 365 u Office 365 son aptos para el examen de mensajes. Los mensajes de correo electrónico de Exchange y los datos adjuntos que coincidan con las condiciones de la directiva de cumplimiento de comunicaciones pueden tardar hasta 24 horas en procesarse. Los tipos de datos adjuntos admitidos para el cumplimiento de comunicaciones son los mismos que los tipos de archivo admitidos para las inspecciones de contenido de reglas [de flujo de correo de Exchange.](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)
 
@@ -262,7 +257,7 @@ Proteger la privacidad de los usuarios que tienen coincidencias de directiva es 
 
 Para los usuarios con una coincidencia de cumplimiento de comunicación, puede elegir una de las siguientes opciones en **Configuración de cumplimiento de comunicaciones:**
 
-- **Mostrar versiones anonimizadas** de nombres de usuario:  los nombres de usuario se anonimizan para impedir que los usuarios del grupo de roles de analista de cumplimiento de comunicaciones vean quién está asociado con las alertas de directiva. Los usuarios del grupo *de roles Investigador de cumplimiento* de comunicaciones siempre verán nombres de usuario, no las versiones anonimizadas. Por ejemplo, un usuario "Grace Taylor" aparecería con un seudónimo aleatorio como "AnonIS8-988" en todas las áreas de la experiencia de cumplimiento de comunicación. La elección de esta configuración anonimiza a todos los usuarios con coincidencias de directiva actuales y pasadas y se aplica a todas las directivas. La información del perfil de usuario en los detalles de la alerta de cumplimiento de comunicaciones no estará disponible cuando se elija esta opción. Sin embargo, los nombres de usuario se muestran al agregar nuevos usuarios a directivas existentes o al asignar usuarios a nuevas directivas. Si decide desactivar esta configuración, se mostrarán los nombres de usuario para todos los usuarios que tengan coincidencias de directiva actuales o pasadas.
+- **Mostrar versiones anonimizadas** de nombres de usuario:  los nombres de usuario se anonimizan para impedir que los usuarios del grupo de roles de analista de cumplimiento de comunicaciones vean quién está asociado con las alertas de directiva. Los usuarios del grupo *de roles Investigador de cumplimiento* de comunicaciones siempre verán nombres de usuario, no las versiones anonimizadas. Por ejemplo, un usuario "Grace Taylor" aparecería con un seudónimo aleatorio como "AnonIS8-988" en todas las áreas de la experiencia de cumplimiento de comunicación. Al elegir esta configuración, se anonimizan todos los usuarios con coincidencias de directivas actuales y pasadas, y se aplica a todas las directivas. La información del perfil de usuario en los detalles de la alerta de cumplimiento de comunicaciones no estará disponible cuando se elija esta opción. Sin embargo, los nombres de usuario se muestran al agregar nuevos usuarios a directivas existentes o al asignar usuarios a nuevas directivas. Si decide desactivar esta configuración, se mostrarán los nombres de usuario para todos los usuarios que tengan coincidencias de directiva actuales o pasadas.
 - **No mostrar versiones anónimas de** nombres de usuario: los nombres de usuario se muestran para todas las coincidencias de directiva actuales y pasadas para las alertas de cumplimiento de comunicaciones. La información de perfil de usuario (nombre, título, alias y organización o departamento) se muestra para el usuario para todas las alertas de cumplimiento de comunicaciones.
 
 ## <a name="notice-templates"></a>Plantillas de aviso
@@ -310,7 +305,7 @@ Los filtros de cumplimiento de comunicaciones permiten filtrar y ordenar mensaje
 | **Tiene datos adjuntos** | La presencia de datos adjuntos en el mensaje. |
 | **Clase Item** | El origen del mensaje según el tipo de mensaje, el correo electrónico, el chat de Microsoft Team, Bloomberg, etc. Para obtener más información sobre tipos de elementos y clases de mensaje comunes, vea [Tipos de elementos y clases de mensaje](/office/vba/outlook/concepts/forms/item-types-and-message-classes). |
 | **Dominios de destinatarios** | Dominio al que se envió el mensaje. Este dominio es normalmente el dominio de suscripción de Microsoft 365 de forma predeterminada. |
-| **Recipient** | El usuario al que se envió el mensaje. |
+| **Destinatario** | El usuario al que se envió el mensaje. |
 | **Sender** | La persona que envió el mensaje. |
 | **Dominio del remitente** | Dominio que envió el mensaje. |
 | **Tamaño** | Tamaño del mensaje en KB. |

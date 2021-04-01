@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: aa3af1e3cf507178a5747cca28fbda543aecd334
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e4dcbeeda50c6229935bae8003d8db129d852451
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052128"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488207"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -112,13 +112,13 @@ Use esta opción para asignar usuarios a grupos de roles específicos para segme
 
 9. Seleccione **Cerrar** para completar los pasos.
 
-Para obtener más información acerca de los grupos de roles y los permisos, vea [Permisos en el Centro de cumplimiento](../security/defender-365-security/protect-against-threats.md).
+Para obtener más información acerca de los grupos de roles y los permisos, vea [Permisos en el Centro de cumplimiento](../security/office-365-security/protect-against-threats.md).
 
 ## <a name="step-2-required-enable-the-audit-log"></a>Paso 2 (obligatorio): Habilitar el registro de auditoría
 
 El cumplimiento de la comunicación requiere registros de auditoría para mostrar alertas y realizar un seguimiento de las acciones de corrección realizadas por los revisores. Los registros de auditoría son un resumen de todas las actividades asociadas con una directiva organizativa definida o en cualquier momento en que cambie una directiva de cumplimiento de comunicación.
 
-Para obtener instrucciones paso a paso para activar la auditoría, vea Activar o desactivar la búsqueda del [registro de auditoría.](turn-audit-log-search-on-or-off.md) Después de activar la auditoría, se muestra un mensaje que indica que se está preparando el registro de auditoría y que puede ejecutar una búsqueda en un par de horas después de completar la preparación. Solo tienes que hacer esta acción una vez. Para obtener más información acerca del uso del registro de auditoría, vea [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).
+Para obtener instrucciones paso a paso para activar la auditoría, vea Activar o desactivar la búsqueda del [registro de auditoría.](turn-audit-log-search-on-or-off.md) Después de activar la auditoría, se muestra un mensaje que dice que el registro de auditoría se está preparando y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Solo tienes que hacer esta acción una vez. Para obtener más información acerca del uso del registro de auditoría, vea [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>Paso 3 (opcional): Configurar grupos para el cumplimiento de las comunicaciones
 
@@ -134,9 +134,6 @@ Use el siguiente gráfico para ayudarle a configurar grupos en su organización 
 Al asignar un grupo de distribución en la directiva, la directiva supervisa todos los mensajes de correo electrónico y los chats de Teams de cada usuario del grupo de distribución. Al asignar un grupo de Microsoft 365 en la directiva, la directiva supervisa todos los mensajes de correo electrónico y los chats de Teams enviados a ese grupo, no los correos electrónicos individuales y los chats recibidos por cada miembro del grupo.
 
 Si es una organización con una implementación local de Exchange o un proveedor de correo electrónico externo y desea supervisar los chats de Microsoft Teams para los usuarios, debe crear un grupo de distribución para que los usuarios con buzones locales o externos supervisen. Más adelante en estos pasos, asignará  este grupo de distribución como la selección de usuarios y grupos supervisados en el asistente para directivas.
-
->[!IMPORTANT]
->Debe presentar una solicitud al Soporte técnico de Microsoft para que su organización pueda utilizar la interfaz gráfica de usuario en el Centro de seguridad y cumplimiento para buscar datos de chat de Teams de usuarios locales. Para obtener más información, vea [Searching cloud-based mailboxes for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Para administrar usuarios supervisados en organizaciones empresariales grandes, es posible que deba supervisar todos los usuarios en grupos grandes. Puede usar PowerShell para configurar un grupo de distribución para una directiva de cumplimiento de comunicaciones global para el grupo asignado. Esto le permite supervisar a miles de usuarios con una única directiva y mantener actualizada la directiva de cumplimiento de comunicaciones a medida que los nuevos empleados se unan a su organización.
 
@@ -252,7 +249,7 @@ También puede habilitar la anonimización para los nombres de usuario mostrados
 
 4. Para habilitar la anonimización, seleccione **Mostrar versiones anónimas de nombres de usuario**.
 
-5. Haga clic en **Guardar**.
+5. Seleccione **Guardar**.
 
 6. Vaya a la pestaña **Plantillas de** aviso y, a continuación, seleccione Crear plantilla **de aviso.**
 
@@ -283,7 +280,7 @@ Siga estos pasos para probar la directiva de cumplimiento de comunicaciones:
 
 4. Corrija la alerta con los controles de corrección y compruebe que la alerta está correctamente resuelta.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de completar estos pasos para crear la primera directiva de cumplimiento de comunicaciones, empezará a recibir alertas de indicadores de actividad después de 24-48 horas. Configure directivas adicionales según sea necesario con las instrucciones del paso 5 de este artículo.
 

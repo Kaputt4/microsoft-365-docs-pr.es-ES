@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Puede crear una retención asociada a un caso de exhibición de documentos electrónicos principal para conservar contenido que pueda ser relevante para una investigación.
-ms.openlocfilehash: c84d0be5a4a659ff9b64af14052bcf4033e2ed24
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 1026de3b5357c3417a00a69b4ae6890e8036c091
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470481"
+ms.locfileid: "51488249"
 ---
 # <a name="create-an-ediscovery-hold"></a>Crear un caso de retención de eDiscovery
 
@@ -131,8 +131,8 @@ Las conversaciones que forman parte de un canal de Microsoft Teams se almacenan 
 
 Como alternativa, las conversaciones que forman parte de la lista chat de Teams (llamadas *chats 1:1* o chats de grupo *1:N)* se almacenan en los buzones de los usuarios que participan en el chat. Y los archivos que los usuarios comparten en conversaciones de chat se almacenan en la cuenta de OneDrive del usuario que comparte el archivo. Por lo tanto, debe agregar los buzones de usuario individuales y las cuentas de OneDrive a una retención de exhibición de documentos electrónicos para conservar conversaciones y archivos en la lista de chat. Es una buena idea colocar una retención en los buzones de los miembros de un equipo de Microsoft, además de poner el buzón de equipo y el sitio en espera.
 
-> [!IMPORTANT]
-> En una organización basada en la nube, los usuarios que participan en conversaciones que forman parte de la lista de chat en Teams deben tener un buzón de Exchange Online para conservar las conversaciones de chat cuando el buzón se coloca en una retención de exhibición de documentos electrónicos. Esto se debe a que las conversaciones que forman parte de la lista de chat se almacenan en los buzones basados en la nube de los participantes de chat. Si un participante de chat no tiene un buzón de Exchange Online, no podrá conservar esas conversaciones de chat. Por ejemplo, en una implementación híbrida de Exchange, los usuarios con un buzón local pueden participar en conversaciones que forman parte de la lista de chat en Teams. Pero en este caso, el contenido de estas conversaciones no se puede conservar porque estos usuarios no tienen buzones basados en la nube que se pueden colocar en espera.
+> [!NOTE]
+> Si su organización tiene una implementación híbrida de Exchange (o su organización sincroniza una organización de Exchange local con Office 365) y ha habilitado Microsoft Teams, los usuarios locales pueden usar la aplicación de chat de Teams y participar en chats de 1:1 y chats de grupo 1:N. Estas conversaciones se almacenan en almacenamiento basado en la nube que está asociado con un usuario local. Si un usuario local se coloca en una retención de exhibición de documentos electrónicos, se conservará el contenido del chat de Teams en el almacenamiento basado en la nube. Para obtener más información, consulte [Buscar los datos de chat de Teams de usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Para obtener más información acerca de cómo conservar el contenido de Teams, vea Colocar un usuario o equipo de [Microsoft Teams en retención legal.](/MicrosoftTeams/legal-hold)
 
@@ -222,7 +222,7 @@ En la tabla siguiente se enumeran los límites para los casos de exhibición de 
   | Descripción del límite | Límite |
   |:-----|:-----|
   |Número máximo de casos para una organización.  <br/> |Sin límite  <br/> |
-  |Número máximo de retenciones de exhibición de documentos electrónicos para una organización.  <br/> |10,000  <br/> |
+  |Número máximo de retenciones de exhibición de documentos electrónicos para una organización.  <br/> |10 000  <br/> |
   |Número máximo de buzones en una única retención de exhibición de documentos electrónicos. Este límite incluye el total combinado de buzones de usuario y los buzones asociados con grupos de Microsoft 365, Microsoft Teams y grupos de Yammer.  <br/> |1,000  <br/> |
   |Número máximo de sitios en una única retención de exhibición de documentos electrónicos. Este límite incluye el total combinado de sitios de OneDrive para la Empresa, sitios de SharePoint y los sitios asociados con Grupos de Microsoft 365, Microsoft Teams y Grupos de Yammer.  <br/> |100  <br/> |
   |Número máximo de casos que se muestran en la página principal de exhibición de documentos electrónicos y el número máximo de elementos que se muestran en las pestañas Retenciones, Búsquedas y Exportación dentro de un caso. <sup>1</sup> |1,000|

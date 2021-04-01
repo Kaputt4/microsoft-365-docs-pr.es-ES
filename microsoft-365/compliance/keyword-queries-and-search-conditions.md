@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre las propiedades de correo electrónico y archivo que puede buscar mediante las herramientas de búsqueda y exhibición de documentos electrónicos en Microsoft 365.
-ms.openlocfilehash: e3282cd5b8bcc493e7c423db72c086f953d114ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b3b2410c899ec98f39a4f89e5ea0a86537e5b666
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903588"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488305"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>Consultas de palabras clave y condiciones de búsqueda para búsqueda de contenido y exhibición de documentos electrónicos
 
@@ -97,7 +97,7 @@ Para obtener una lista completa de las propiedades de SharePoint que se pueden b
 |:-----|:-----|:-----|:-----|
 |Autor|El campo de autor de los documentos de Office, que persiste si se copia un documento. Por ejemplo, si un usuario crea un documento y lo envía por correo electrónico a otra persona que, a continuación, lo carga en SharePoint, el documento conservará el autor original. Asegúrese de usar el nombre para mostrar del usuario para esta propiedad.|`author:"Garth Fort"`|Todos los documentos que se han creado por Juan Casanova.|
 |ContentType|Tipo de contenido de SharePoint de un elemento, como Item, Document o Video.|`contenttype:document`|Se devolverán todos los documentos.|
-|Created|La fecha en la que se crea un elemento.|`created>=06/01/2016`|Todos los elementos creados en o después del 1 de junio de 2016.|
+|Fecha de creación|La fecha en la que se crea un elemento.|`created>=06/01/2016`|Todos los elementos creados en o después del 1 de junio de 2016.|
 |CreatedBy|La persona que creó o cargó un elemento. Asegúrese de usar el nombre para mostrar del usuario para esta propiedad.|`createdby:"Garth Fort"`|Todos los elementos creados o cargados por Juan Casanova.|
 |DetectedLanguage|El idioma de un elemento.|`detectedlanguage:english`|Todos los elementos en inglés.|
 |DocumentLink|Ruta de acceso (URL) de una carpeta específica en un sitio de SharePoint o OneDrive para la Empresa. Si usa esta propiedad, asegúrese de buscar en el sitio en el que se encuentra la carpeta especificada.  <br/> Para devolver elementos ubicados en subcarpetas de la carpeta que especifique para la propiedad documentlink, debe agregar / a la dirección URL de la \* carpeta especificada; por ejemplo,  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Para obtener más información acerca de la búsqueda de la propiedad documentlink y el uso de un script para obtener las direcciones URL de vínculo de documento para carpetas de un sitio específico, vea [Use Content Search for targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|El primer ejemplo devuelve todos los elementos de la carpeta de OneDrive para la Empresa especificada. El segundo ejemplo devuelve documentos de la carpeta de sitio especificada (y todas las subcarpetas) que contienen la palabra "confidencial" en el nombre del archivo.|
@@ -105,7 +105,7 @@ Para obtener una lista completa de las propiedades de SharePoint que se pueden b
 |FileName|El nombre de un archivo.|`filename:"marketing plan"`  <br/> `filename:estimate`|El primer ejemplo devuelve archivos con la frase exacta "plan de marketing" en el título. El segundo ejemplo devuelve archivos con la palabra "estimación" en el nombre del archivo.|
 |LastModifiedTime|La fecha de la última modificación de un elemento.|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|El primer ejemplo devuelve los elementos que se cambiaron el 1 de mayo de 2016 o después de ellos. El segundo ejemplo devuelve elementos modificados entre el 1 de mayo de 2016 y el 1 de junio de 2016.|
 |ModifiedBy|La última persona que modificó un elemento. Asegúrese de usar el nombre para mostrar del usuario para esta propiedad.|`modifiedby:"Garth Fort"`|Todos los elementos que Juan Casanova modificó por última vez.|
-|Path|La ruta de acceso (URL) de un sitio específico en un sitio de SharePoint o OneDrive para la Empresa.  <br/> Para devolver elementos ubicados en carpetas del sitio que especifique para la propiedad path, debe agregar / a la dirección URL del \* sitio especificado; por ejemplo,  `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **Nota:** El uso de la propiedad para buscar ubicaciones de OneDrive no devolverá archivos multimedia, como archivos .png, .tiff o .wav, en los  `Path` resultados de búsqueda. Use una propiedad de sitio diferente en la consulta de búsqueda para buscar archivos multimedia en carpetas de OneDrive. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|El primer ejemplo devuelve todos los elementos del sitio de OneDrive para la Empresa especificado. El segundo ejemplo devuelve documentos del sitio especificado (y carpetas del sitio) que contienen la palabra "confidencial" en el nombre de archivo.|
+|Path|La ruta de acceso (URL) de un sitio específico en un sitio de SharePoint o OneDrive para la Empresa.<br/><br/>Para devolver elementos solo del sitio especificado, debe agregar el final al final de la `/` dirección URL; por ejemplo, `path: "https://contoso.sharepoint.com/sites/international/"` <br/><br/> Para devolver elementos ubicados en carpetas del sitio que especifique en la propiedad path, debe agregar al final de `/*` la dirección URL; por ejemplo,  `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/><br/> **Nota:** El uso de la propiedad para buscar ubicaciones de OneDrive no devolverá archivos multimedia, como archivos .png, .tiff o .wav, en los  `Path` resultados de búsqueda. Use una propiedad de sitio diferente en la consulta de búsqueda para buscar archivos multimedia en carpetas de OneDrive. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|El primer ejemplo devuelve todos los elementos del sitio de OneDrive para la Empresa especificado. El segundo ejemplo devuelve documentos del sitio especificado (y carpetas del sitio) que contienen la palabra "confidencial" en el nombre de archivo.|
 |SharedWithUsersOWSUser|Documentos que se han compartido con el usuario especificado y que se muestran en la página **Compartidos conmigo** en el sitio de OneDrive para la Empresa del usuario. Se trata de documentos que otras personas de la organización han compartido explícitamente con el usuario especificado. Al exportar documentos que coinciden con una consulta de búsqueda que usa la propiedad SharedWithUsersOWSUser, los documentos se exportan desde la ubicación de contenido original de la persona que compartió el documento con el usuario especificado. Para obtener más información, vea [Searching for site content shared within your organization](#searching-for-site-content-shared-within-your-organization).|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|Ambos ejemplos devuelven todos los documentos internos que se han compartido explícitamente con Garth Fort y que aparecen en la página **Compartido conmigo** en la cuenta de OneDrive para la Empresa de Garth Fort.|
 |Site|La dirección URL de un sitio o grupo de sitios de la organización.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|El primer ejemplo devuelve elementos de los sitios de OneDrive para la Empresa para todos los usuarios de la organización. El segundo ejemplo devuelve los elementos de todos los sitios del equipo.|
 |Size|El tamaño de un elemento, en bytes.|`size>=1`  <br/> `size:1..10000`|El primer ejemplo devuelve elementos mayores de 1 byte. El segundo ejemplo devuelve elementos que tienen un tamaño de entre 1 y 10 000 bytes.|
@@ -124,7 +124,7 @@ En la tabla siguiente se enumeran las propiedades de contacto indizadas y que pu
 |BusinessAddress|La dirección de la **propiedad Dirección** de negocio. La propiedad también se denomina dirección **de** trabajo en la página de propiedades de contacto.|
 |BusinessPhone|Número de teléfono en cualquiera de las **propiedades del número de teléfono** empresarial.|
 |CompanyName|El nombre de la **propiedad Company.**|
-|Department|Nombre de la **propiedad Department.**|
+|Departamento|Nombre de la **propiedad Department.**|
 |DisplayName|Nombre para mostrar del contacto. Este es el nombre de la **propiedad Nombre completo** del contacto.|
 |EmailAddress|La dirección de cualquier propiedad de dirección de correo electrónico del contacto. Los usuarios pueden agregar varias direcciones de correo electrónico para un contacto. El uso de esta propiedad devolvería contactos que coincidan con cualquiera de las direcciones de correo electrónico del contacto.|
 |FileAs|El **archivo como** propiedad. Esta propiedad se usa para especificar cómo aparece el contacto en la lista de contactos del usuario. Por ejemplo, un contacto podría aparecer como  *FirstName,LastName*  o  *LastName,FirstName*.|
@@ -167,7 +167,7 @@ Para obtener más información acerca de cómo crear consultas con la propiedad,
 
 Los operadores de búsqueda booleanos, como **AND**, **OR** y **NOT**, le ayudan a definir búsquedas más precisas al incluir o excluir palabras específicas en la consulta de búsqueda. Otras técnicas, como el uso de operadores de propiedades (como o ), comillas, paréntesis y caracteres comodín, le ayudan `>=` `..` a refinar una consulta de búsqueda. En la siguiente tabla se muestran los operadores que puede usar para restringir o ampliar los resultados de la búsqueda. 
   
-| Operador | Uso | Description |
+| Operador | Uso | Descripción |
 |:-----|:-----|:-----|
 |AND|palabra clave 1 AND palabra clave 2|Devuelve elementos que incluyen todas las palabras clave o  `property:value` expresiones especificadas. Por ejemplo, devolvería todos los mensajes enviados por Ann Beebe que contenían la  `from:"Ann Beebe" AND subject:northwind` palabra northwind en la línea de asunto. <sup>2</sup>|
 |+|keyword1 + keyword2 + keyword3|Devuelve elementos que contienen  *o*  `keyword2` o  `keyword3` *y*  que también contienen  `keyword1`. Por tanto, este ejemplo es equivalente a la consulta  `(keyword2 OR keyword3) AND keyword1`.  <br/> La consulta `keyword1 + keyword2` (con un espacio después del **+** símbolo) no es lo mismo que usar el **operador AND.** This query would be equivalent to  `"keyword1 + keyword2"` and return items with the exact phase  `"keyword1 + keyword2"`.|
@@ -223,7 +223,7 @@ Cree una condición mediante propiedades comunes al buscar en buzones y sitios d
 
 Cree una condición con propiedades de correo al buscar buzones o carpetas públicas. En la tabla siguiente se enumeran las propiedades de correo electrónico que puede usar para una condición. Estas propiedades son un subconjunto de las propiedades de correo electrónico descritas anteriormente. Estas descripciones se repiten para su comodidad.
   
-| Condition | Description |
+| Condition | Descripción |
 |:-----|:-----|
 |Tipo de mensaje| El tipo de mensaje para buscar. Se trata de la misma propiedad que la propiedad de correo electrónico Tipo. Valores posibles:  <br/><br/>  contactos  <br/>  documentos  <br/>  correo electrónico  <br/>  externaldata  <br/>  faxes  <br/>  mensajería instantánea  <br/>  diarios  <br/>  reuniones  <br/>  microsoftteams  <br/>  notas  <br/>  entradas  <br/>  fuentes rss  <br/>  tareas  <br/>  correo de voz|
 |Participantes|Todos los campos de personas de un mensaje de correo electrónico. Estos campos son From, To, Cc y CCO.|
@@ -240,11 +240,11 @@ Cree una condición con propiedades de correo al buscar buzones o carpetas públ
 
 Cree una condición mediante propiedades de documento al buscar documentos en sitios de SharePoint y OneDrive para la Empresa. En la tabla siguiente se enumeran las propiedades del documento que puede usar para una condición. Estas propiedades son un subconjunto de las propiedades del sitio descritas anteriormente. Estas descripciones se repiten para su comodidad.
   
-| Condition | Description |
+| Condition | Descripción |
 |:-----|:-----|
 |Autor|El campo de autor de los documentos de Office, que persiste si se copia un documento. Por ejemplo, si un usuario crea un documento y lo envía por correo electrónico a otra persona que, a continuación, lo carga en SharePoint, el documento conservará el autor original.|
 |Título|El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento.|
-|Created|La fecha en la que se creó el documento.|
+|Fecha de creación|La fecha en la que se creó el documento.|
 |Última modificación|La fecha en la que el documento se modificó por última vez.|
 |Tipo de archivo|La extensión de un archivo; por ejemplo, docx, uno, pptx o xlsx. Se trata de la misma propiedad que la propiedad del sitio FileExtension.|
 |||
@@ -253,7 +253,7 @@ Cree una condición mediante propiedades de documento al buscar documentos en si
 
 Cuando se agrega una condición, puede seleccionar un operador que sea pertinente para el tipo de propiedad de la condición. En la tabla siguiente se describen los operadores que se usan con condiciones y se enumera el equivalente que se usa en la consulta de búsqueda.
   
-| Operador | Equivalente de consulta | Description |
+| Operador | Equivalente de consulta | Descripción |
 |:-----|:-----|:-----|
 |After|`property>date`|Se usa con condiciones de fecha. Devuelve los elementos que se enviaron, recibieron o modificaron después de la fecha especificada. |
 |Antes|`property<date`|Se usa con condiciones de fecha. Devuelve los elementos que se enviaron, recibieron o modificaron antes de la fecha especificada.|
@@ -366,7 +366,7 @@ También puede usar la característica búsqueda de contenido en el Centro de se
     
 - Un vínculo de invitado anónimo, que permite a cualquier persona con este vínculo tener acceso al recurso sin tener que autenticarse.
     
-Aquí le mostramos otros ejemplos:
+Estos son algunos ejemplos:
   
 - La consulta devuelve todos los elementos que se han compartido con personas de fuera de  `ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"` la organización y contienen un número de tarjeta de crédito. 
     
@@ -446,3 +446,5 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 - Para excluir de los resultados de la búsqueda el contenido marcado con un valor de propiedad determinado, coloque un signo menos (-) delante del nombre de la propiedad. Por ejemplo, `-from:"Sara Davis"` excluye los mensajes enviados por Sara Davis.
 
 - Puede exportar elementos en función del tipo de mensaje. Por ejemplo, para exportar conversaciones y chats de Skype en Microsoft Teams, use la sintaxis `kind:im` . Para devolver solo mensajes de correo electrónico, usaría `kind:email` . Para devolver chats, reuniones y llamadas en Microsoft Teams, use `kind:microsoftteams` .
+
+- Como se explicó anteriormente, al buscar sitios, debe agregar el final al final de la dirección URL al usar la propiedad para devolver solo los elementos de `/` `path` un sitio especificado. Si no incluye el final, también se devolverán los elementos de un sitio con un nombre de ruta de acceso `/` similar. Por ejemplo, si usa elementos de sitios con nombre `path:sites/HelloWorld` `sites/HelloWorld_East` o también se `sites/HelloWorld_West` devolverían. Para devolver elementos solo del sitio HelloWorld, debe usar `path:sites/HelloWorld/` .
