@@ -12,16 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2a21dfead9b1f1ba2f05fc7629ce4fcda9991017
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 9fe1665eda882793a62315299a3cbf6667ec7988
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819982"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445658"
 ---
 # <a name="insider-risk-management-alerts"></a>Alertas de administración de riesgos de Insider
 
-Las alertas de administración de riesgos de Insider se generan automáticamente mediante indicadores de riesgo definidos en las directivas de administración de riesgos internas. Estas alertas dan a los analistas e investigadores de cumplimiento una vista general del estado de riesgo actual y permiten que su organización triage y tome medidas para los riesgos detectados. De forma predeterminada, las directivas generan una cierta cantidad de alertas de gravedad baja, media y alta, pero puede aumentar o disminuir el volumen de alertas según sus necesidades. [](insider-risk-management-settings.md#alert-volume) Además, puede configurar el umbral de alerta para los indicadores de [directiva](insider-risk-management-settings.md#indicator-level-settings-preview) al crear una nueva directiva con el asistente para directivas.
+Las alertas de administración de riesgos internos se generan automáticamente a través de los indicadores de riesgo definidos en las directivas de administración de riesgos internos. Estas alertas ofrecen a los investigadores y analistas de cumplimiento una vista actualizada del estado de riesgo actual y permiten que su organización valore y tome medidas en función de los riesgos detectados. De forma predeterminada, las directivas generan una cierta cantidad de alertas de gravedad baja, media y alta, pero puede aumentar o disminuir el volumen de alertas según sus necesidades. [](insider-risk-management-settings.md#alert-volume) Además, puede configurar el umbral de alerta para los indicadores de [directiva](insider-risk-management-settings.md#indicator-level-settings-preview) al crear una nueva directiva con el asistente para directivas.
+
+Consulte el [vídeo Insider Risk Management Alerts Triage Experience](https://www.youtube.com/watch?v=KgmpxBLJLPI) para obtener información general sobre cómo las alertas proporcionan detalles, contexto y contenido relacionado para la actividad de riesgo y cómo hacer que el proceso de investigación sea más eficaz.
 
 ## <a name="alert-dashboard"></a>Panel de alertas
 
@@ -30,16 +32,16 @@ El panel de alertas de riesgo **interno** le permite ver y actuar en las alertas
 - **Total de alertas que necesitan revisión:** se muestra el número total de alertas que necesitan revisión y evaluación, incluido un desglose por gravedad de alerta.
 - Alertas abiertas en los últimos **30** días: el número total de alertas creadas por la directiva coincide en los últimos 30 días, ordenadas por niveles de gravedad de alerta altos, medianos y bajos.
 - **Tiempo promedio para resolver alertas:** un resumen de estadísticas de alertas útiles:
-    - Tiempo promedio para resolver alertas de gravedad alta, enumeradas en horas, días o meses.
-    - Tiempo promedio para resolver alertas de gravedad media, enumeradas en horas, días o meses.
-    - Tiempo promedio para resolver alertas de gravedad baja, enumeradas en horas, días o meses.
+    - Tiempo medio para resolver alertas de gravedad alta, expresado en horas, días o meses.
+    - Tiempo medio para resolver alertas de gravedad media, expresado en horas, días o meses.
+    - Tiempo medio para resolver alertas de gravedad baja, expresado en horas, días o meses.
 
 ![Panel de alertas de administración de riesgos de Insider](../media/insider-risk-alerts-dashboard.png)
 
 >[!NOTE]
->La administración de riesgos de Insider usa la limitación de alertas integrada para ayudar a proteger y optimizar la experiencia de investigación y revisión de riesgos. Esta limitación protege contra problemas que pueden provocar una sobrecarga de alertas de directivas, como conectores de datos mal configurados o directivas DLP. Como resultado, puede haber un retraso en mostrar nuevas alertas para un usuario.
+>La administración de riesgos internos usa la limitación de alertas integrada para ayudar a proteger y optimizar su investigación de riesgos y experiencia de revisión. Esta limitación protege contra problemas que pueden causar una sobrecarga de alertas de directiva, como conectores de datos mal configurados o directivas DLP. Como resultado, es posible que haya un retraso al mostrar nuevas alertas para un usuario.
 
-## <a name="alert-status-and-severity"></a>Estado y gravedad de la alerta
+## <a name="alert-status-and-severity"></a>Estado de alerta y gravedad
 
 Puede realizar una triage de alertas en uno de los siguientes estados:
 
@@ -48,26 +50,26 @@ Puede realizar una triage de alertas en uno de los siguientes estados:
 - **Revisión de** necesidades: una nueva alerta en la que aún no se han realizado acciones de evaluación.
 - **Resuelto:** una alerta que forma parte de un caso cerrado y resuelto.
 
-Las puntuaciones de riesgo de alerta se calculan automáticamente a partir de varios indicadores de actividad de riesgo. Estos indicadores incluyen el tipo de actividad de riesgo, el número y la frecuencia de la aparición de la actividad, el historial de actividad de riesgo del usuario y la adición de riesgos de actividad que pueden aumentar la gravedad de la actividad. La puntuación de riesgo de alerta impulsa la asignación mediante programación de un nivel de gravedad de riesgo para cada alerta y no se puede personalizar. Si las alertas siguen sin evaluarse y las actividades de riesgo siguen acumulándose en la alerta, el nivel de gravedad del riesgo puede aumentar. Los analistas e investigadores de riesgos pueden usar la gravedad del riesgo de alerta para ayudar a evaluar las alertas de acuerdo con las directivas y estándares de riesgo de su organización.
+Las puntuaciones de riesgo de alerta se calculan automáticamente a partir de varios indicadores de actividad de riesgo. Estos indicadores incluyen el tipo de actividad de riesgo, el número y la frecuencia de la aparición de la actividad, el historial de actividad de riesgo del usuario y la adición de riesgos de actividad que pueden aumentar la gravedad de la actividad. La puntuación de riesgo de la alerta impulsa la asignación mediante la programación de un nivel de gravedad de riesgo para cada alerta y no se puede personalizar. Si las alertas siguen sin evaluarse y las actividades de riesgo siguen acumulándose en la alerta, el nivel de gravedad del riesgo puede aumentar. Los analistas e investigadores de riesgos pueden usar la gravedad del riesgo de alerta para ayudar a evaluar las alertas de acuerdo con las directivas y estándares de riesgo de su organización.
 
 Los niveles de gravedad del riesgo de alerta son:
 
 - **Gravedad alta:** las actividades e indicadores de la alerta representan un riesgo significativo. Las actividades de riesgo asociadas son graves, repetitivas y se acentúan con fuerza a otros factores de riesgo significativos.
-- **Gravedad media:** las actividades e indicadores de la alerta representan un riesgo moderado. Las actividades de riesgo asociadas son moderadas, frecuentes y tienen cierta correlación con otros factores de riesgo.
+- **Gravedad media:** las actividades e indicadores de la alerta representan un riesgo moderado. Las actividades de riesgo asociadas son moderados, frecuentes y tienen cierta correlación con otros factores de riesgo.
 - **Gravedad baja:** las actividades e indicadores de la alerta representan un riesgo menor. Las actividades de riesgo asociadas son menores, más poco frecuentes y no se pueden realizar en otros factores de riesgo significativos.
 
 ## <a name="filter-alerts-on-the-alert-dashboard"></a>Filtrar alertas en el panel de alertas
 
-Según el número y el tipo de directivas de administración de riesgos internas activas de la organización, revisar una gran cola de alertas puede ser un desafío. El uso de filtros de alerta puede ayudar a los analistas e investigadores a ordenar las alertas por varios atributos. Para filtrar alertas en el **panel de alertas,** seleccione el control **Filtro.** Puede filtrar alertas por uno o varios atributos:
+Según el número y el tipo de directivas activas de administración de riesgos internos de su organización, revisar una larga cola de alertas puede ser todo un reto. El uso de filtros de alerta puede ayudar a los analistas e investigadores a ordenar las alertas por varios atributos. Para filtrar alertas en el **panel de alertas,** seleccione el control **Filtro.** Puede filtrar alertas por uno o varios atributos:
 
-- **Estado:** seleccione uno o más valores de estado para filtrar la lista de alertas. Las opciones son *Confirm*, *Dismissed*, *Needs review* y *Resolved*.
-- **Gravedad:** seleccione uno o más niveles de gravedad de riesgo de alerta para filtrar la lista de alertas. Las opciones son *High,* *Medium* y *Low*.
+- **Estado:** seleccione uno o más valores de estado para filtrar la lista de alertas. Las opciones son *Confirmada*, *Descartada*, *Falta por revisar*, y *Resuelta*.
+- **Gravedad:** seleccione uno o más niveles de gravedad de riesgo de alerta para filtrar la lista de alertas. Las opciones son *Alta*, *Media*, y *Baja*.
 - **Hora detectada:** seleccione las fechas de inicio y finalización para cuando se creó la alerta.
 - **Directiva:** seleccione una o varias directivas para filtrar las alertas generadas por las directivas seleccionadas.
 
 ## <a name="search-alerts-on-the-alert-dashboard"></a>Alertas de búsqueda en el panel de alertas
 
-Para buscar el nombre de alerta de una palabra específica, seleccione el control **De** búsqueda y escriba la palabra que se buscará. Los resultados de la búsqueda muestran cualquier alerta de directiva que contenga la palabra definida en la búsqueda.
+Para buscar una palabra específica en el nombre de la alerta, seleccione el control **Búsqueda** y escriba la palabra que desea buscar. Los resultados de búsqueda muestran cualquier alerta de directiva que contenga la palabra definida en la búsqueda.
 
 ## <a name="triage-alerts"></a>Alertas de triaje
 

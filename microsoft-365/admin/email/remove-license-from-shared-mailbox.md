@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Quite la licencia de un buzón compartido para asignarla a otro usuario. '
-ms.openlocfilehash: 1acd549936212db7f722355ed1f2518ff6bbac18
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 82ec863d5c2ae550fb401e71744715a27c89d382
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915691"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470624"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Quitar la licencia de un buzón compartido
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Los buzones compartidos normalmente no requieren una licencia. Siga estas instrucciones para quitar una licencia de un buzón compartido para que pueda asignarla a un usuario o devolver la licencia para que no pague una licencia que no necesite.
 

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Conéctese a su espacio empresarial de Microsoft 365 mediante PowerShell para Microsoft 365 de forma que pueda realizar tareas desde el Centro de administración desde la línea de comandos.
-ms.openlocfilehash: 58af42958e9b50ee8e39cbd7bd5aab53812e444c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 08005ba1cbdcbfec14585d22614129a9b33352b9
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919181"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445761"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Conectarse a Microsoft 365 con PowerShell
 
@@ -84,7 +84,20 @@ Estos pasos son necesarios solo una vez en el equipo. Pero es probable que tenga
     Install-Module -Name AzureAD
     ```
 
-   Si se le pregunta si quiere instalar un módulo desde un repositorio que no es de confianza, escriba **Y** y presione Entrar.
+  De forma predeterminada, la Galería de PowerShell (PSGallery) no está configurada como repositorio de confianza para **PowerShellGet**. La primera vez que use PSGallery, verá el siguiente mensaje:
+
+```console
+Untrusted repository
+
+You are installing the modules from an untrusted repository. If you trust this repository, change
+its InstallationPolicy value by running the `Set-PSRepository` cmdlet.
+
+Are you sure you want to install the modules from 'PSGallery'?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
+```
+
+Responda **Sí** o **Sí a todo** para continuar con la instalación.
+
 
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>Paso 2: Conectarse a Azure AD para la suscripción de Microsoft 365
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a8ab1ba1f0dc1bb629e438380b7b77e1ed221f08
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 16f0d96b75ec7035ca133f75a83df1f284ee5c4b
+ms.sourcegitcommit: 847b0920016ae20c82a0501bda6019cd940482df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186034"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51484749"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -60,7 +60,7 @@ Para una experiencia más fácil de usar en el explorador, considere el uso de M
 
 Antes de probar esta característica, asegúrese de que tiene los siguientes requisitos:
 
-- Licencia de Windows 10 Enterprise E5 O Complemento de seguridad de Microsoft 365 E3 + Microsoft 365 E5.
+- Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security add-on o la licencia independiente de Microsoft Defender para Endpoint. 
 - Acceso al portal del Centro de seguridad de Microsoft Defender
 - Dispositivos que ejecutan Windows 10 Anniversary Update (versión 1607) o posterior con la última actualización de MoCAMP.
 
@@ -160,9 +160,11 @@ Use el filtro de intervalo de tiempo en la parte superior izquierda de la págin
 
 - Los dispositivos sinsignar tendrán datos incorrectos que se mostrarán en el informe. En el pivot Detalles del > grupos de dispositivos, es posible que veas una fila con un campo Grupo de dispositivos en blanco. Este grupo contiene los dispositivos sinsignación antes de que se coloquen en el grupo especificado. Es posible que el informe de esta fila no contenga un recuento preciso de dispositivos o recuentos de acceso.
 
+- Actualmente, los informes de filtrado de contenido web están limitados a mostrar los 5000 registros principales. Por ejemplo, el informe "Dominios" solo mostrará un máximo de los 5000 dominios principales para una consulta de filtro determinada, si procede. 
+
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Introducción a la protección web](web-protection-overview.md)
+- [Introducción a protección web](web-protection-overview.md)
 - [Protección contra amenazas web](web-threat-protection.md)
 - [Supervisar la seguridad web](web-protection-monitoring.md)
 - [Responder a amenazas web](web-protection-response.md)

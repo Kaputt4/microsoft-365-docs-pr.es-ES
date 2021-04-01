@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Resumen: comprender la migración de Microsoft Cloud Alemania (Microsoft Cloud Deutschland) a los servicios de Office 365 en las nuevas regiones del centro de datos alemán'
-ms.openlocfilehash: 18df7c43e21fb186dee56dabc29a67654f0f6882
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7e170967e1670433a7d28753430f0cb15818039b
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923773"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476642"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migración de Microsoft Cloud Deutschland a servicios de Office 365 en las nuevas regiones del centro de datos alemán
 
@@ -63,9 +63,9 @@ Office 365 Video se retirará el 1 de marzo de 2021. Si decide migrar su espacio
 
 ## <a name="how-is-the-migration-organized"></a>¿Cómo se organiza la migración?
 
-Esta figura muestra las nueve fases de migración a los nuevos centros de datos alemanes.
+Esta figura muestra las diez fases de migración a los nuevos centros de datos alemanes.
 
-![Las nueve fases de migración a los nuevos centros de datos de Alemania](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![Las diez fases de migración a los nuevos centros de datos de Alemania](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 Estas fases comienzan cuando [se opta por la migración.](./ms-cloud-germany-migration-opt-in.md) La mayoría de las fases de migración se ejecutan como operaciones de servicio back-end con una interacción mínima del cliente necesaria y se ejecutan una fase tras otra. El inicio de tareas adicionales dirigidas por el cliente y el estado general de migración se comunicarán a través del Centro de mensajes del Centro de administración de Microsoft 365 durante el proceso de migración. Ejemplo de tareas puede incluir actualizaciones dns administradas por el cliente, reconfiguración de la configuración híbrida para clientes híbridos de Exchange o migración de Azure.
 
@@ -93,6 +93,8 @@ Se le notificará el progreso de la migración con las publicaciones del Centro 
 - Dynamics complete
 - Power BI completado
 - Final cutover of services is complete
+
+Después del último traslado de Azure AD al servicio mundial, se espera que todos los clientes y aplicaciones se transiciónn completamente para usar los puntos de conexión correctos. Hay una ventana de 30 días después del corte final en la que es posible seguir obteniendo tokens de Azure AD del servicio Microsoft Cloud Deutschland. Cuando expire la ventana de 30 días, los clientes y las aplicaciones ya no podrán tener acceso a los puntos de conexión de Azure AD de Microsoft Cloud Deutschland. Las aplicaciones o el acceso de usuario producirán un error desde este punto. Debe asegurarse de que todos los usuarios y aplicaciones se migren a los extremos correctos antes de que se cierre esta ventana de tiempo. 
 
 ## <a name="moving-to-the-new-german-datacenter-regions"></a>Mover a las nuevas regiones del centro de datos alemán
 

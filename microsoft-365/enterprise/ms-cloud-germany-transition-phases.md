@@ -18,18 +18,18 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Summary: Understand the migration phases actions and impacts of moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: 53a8c9470093db9d57d8dc18f4242d1a596c6efd
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: ca24fff5e8b18128c55288352e65aa3cecfe3d81
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165638"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476618"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Fases de migración acciones e impactos para la migración desde Microsoft Cloud Deutschland (general)
 
-Las migraciones de inquilinos de Microsoft Cloud Deutschland (MCD) a la región "Alemania" de los servicios globales de Office 365 de Microsoft se ejecutan como un conjunto de fases y sus acciones configuradas para cada carga de trabajo. Esta figura muestra las nueve fases de migración a los nuevos centros de datos alemanes.
+Las migraciones de inquilinos de Microsoft Cloud Deutschland (MCD) a la región "Alemania" de los servicios globales de Office 365 de Microsoft se ejecutan como un conjunto de fases y sus acciones configuradas para cada carga de trabajo. Esta figura muestra las diez fases de migración a los nuevos centros de datos alemanes.
 
-![Las nueve fases de migración a los nuevos centros de datos de Alemania](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+![Las diez fases de migración a los nuevos centros de datos de Alemania](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
 
 El proceso de migración se completará durante varias semanas en función del tamaño general y la complejidad de la organización. Mientras la migración está en curso, los usuarios y administradores pueden seguir usando los servicios con cambios notables detallados en esta documentación. El gráfico y la tabla definen fases y pasos durante la migración.
 
@@ -41,12 +41,14 @@ El proceso de migración se completará durante varias semanas en función del t
 |Azure|Semanas|Clientes|Crear nuevas suscripciones de Azure a nivel mundial y servicios de Azure de transición.|
 |Suscripción & de licencias|De 1 a 2 días|Microsoft|Compre suscripciones mundiales, cancele las suscripciones de Microsoft Cloud Deutschland y las licencias de usuario de transición.|
 |SharePoint y OneDrive|Más de 15 días|Microsoft|Migre el contenido de SharePoint y OneDrive para la Empresa, conservando sharepoint.de direcciones URL.|
-|Exchange Online|Más de 15 días|Microsoft|Migrar el contenido de Exchange Online y la transición a direcciones URL de todo el mundo.|
+|Exchange en línea|Más de 15 días|Microsoft|Migrar el contenido de Exchange Online y la transición a direcciones URL de todo el mundo.|
 |Seguridad y cumplimiento|De 1 a 2 días|Microsoft|Seguridad de transición & de cumplimiento y contenido.|
 |Skype Empresarial|De 1 a 2 días|Microsoft|Transición de Skype Empresarial a Microsoft Teams.|
 |Power BI & Dynamics 365|Más de 15 días|Microsoft|Migrar contenido de Power BI y Dynamics 365.|
 |Finalizar Azure AD|De 1 a 2 días|Microsoft|Completar el recorte de inquilinos a todo el mundo.|
 |Clean-Up|De 1 a 2 días|Clientes|Limpie las conexiones heredadas a Microsoft Cloud Deutschland, como los reinicios de cliente de Office, Azure AD Connect y Servicios de federación de Active Directory (AD FS).|
+|Extremos deshabilitados|30 días|Microsoft|30 días después de finalizar Azure AD, el servicio Microsoft Cloud Deutschland Azure AD detendrá el acceso de puntos de conexión para la organización en transición. Las solicitudes de extremo, como la autenticación, producirán un error a partir de este momento en el servicio Microsoft Cloud Deutschland. |
+
 
 Las fases y sus acciones garantizan que los datos y experiencias críticos se migren a los servicios globales de Office 365. Después de agregar el espacio empresarial a la cola de migración, cada carga de trabajo se completará como un conjunto de pasos que se ejecutan en el servicio back-end. Algunas cargas de trabajo pueden requerir acciones del administrador (o usuario) o la migración puede afectar al uso de las fases que se ejecutan y se analizan en ¿Cómo se organiza la [migración?](ms-cloud-germany-transition.md#how-is-the-migration-organized)
 
@@ -118,6 +120,7 @@ Si desea modificar las fotos de usuario durante la fase 5, vea [Exchange Online 
 |Detenga o elimine los movimientos de buzones de correo de incorporación o de salida, es decir, no mueva buzones entre Exchange local y Exchange Online.  | Esto garantiza que las solicitudes de movimiento del buzón no fallen con un error. | Si no lo hace, puede producirse un error en el servicio o en los clientes de Office. |
 | Los buzones de Exchange Online se mueven de Microsoft Cloud Deutschland a los servicios globales de Office 365.| La configuración de Exchange Online agrega la nueva región alemana local a la organización de transición. La región servicios globales de Office 365 se establece como predeterminada, lo que permite al servicio de equilibrio de carga interno redistribuir buzones a la región predeterminada adecuada en los servicios de Office 365. En esta transición, los usuarios de ambos lados (servicios MCD o Global) están en la misma organización y pueden usar cualquier extremo de dirección URL. |<ul><li>Transición de usuarios y servicios de las direcciones URL de MCD heredadas (outlook.office.de) a las nuevas direcciones URL de servicios de Office 365 ( `https://outlook.office365.com` ).</li><li>Los usuarios pueden seguir teniendo acceso al servicio a través de direcciones URL mcd heredadas durante la migración, pero deben dejar de usar las direcciones URL heredadas al finalizar la migración.</li><li>Los usuarios deben pasar a usar el portal de Office mundial para las características de Office Online (Calendario, Correo, Personas). La navegación a los servicios que aún no se han migrado a los servicios de Office 365 no funcionará hasta que se migren. </li><li>Outlook Web App no proporcionará la experiencia de carpetas públicas durante la migración. </li></ul>|
 | Actualizar la configuración de DNS personalizada para detección automática| La configuración dns administrada por el cliente para la detección automática que actualmente apunta a Microsoft Cloud Deutschland debe actualizarse para hacer referencia al extremo global de Office 365 al finalizar la fase de Exchange Online (fase 5). <br> Las entradas DNS existentes con CNAME que apuntan a autodiscover-outlook.office.de deben actualizarse para que apunten a autodiscover.outlook.com. |  Las solicitudes de disponibilidad y las llamadas de detección de servicio a través de detección automática apuntan directamente a los servicios de Office 365. Los clientes que no realizan estas actualizaciones dns pueden experimentar problemas de servicio de detección automática cuando se completa la migración. |
+| Los usuarios deben actualizar la configuración de cliente POP3, IMAP4 y SMTP. | Los usuarios que tienen conexiones de dispositivo a puntos de conexión de Microsoft Cloud Deutschland para protocolos de cliente POP3, IMAP4, SMTP deben actualizar manualmente sus dispositivos cliente para cambiar a los puntos de conexión mundiales de [Office 365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) simultáneamente con la migración de buzones a la región de Office 365 Alemania. <br> smtp.office365.com: SMTP (TCP:587), outlook.office365.com : IMAP4 (TCP:993), POP3 (TCP:995)| Los usuarios de estos protocolos deben cambiar para usar Outlook mobile o Outlook en la web mientras su buzón se transiona y actualizar la configuración IMAP4, POP3, SMTP en los dispositivos cliente a los nuevos puntos de conexión al finalizar. Si no se actualizan los puntos de conexión de cliente, se producirán errores de conexión de cliente en Microsoft Cloud Deutschland cuando se migren los buzones de usuario. |
 ||||
 
 Consideraciones adicionales:
@@ -204,6 +207,18 @@ Los clientes con Dynamics 365 requieren una participación adicional para migrar
 ||||
 
 \*\* (i) Los clientes con Microsoft Power BI deben tomar medidas en este escenario de migración, tal como se define en el proceso de migración proporcionado. (ii) Si el cliente no toma medidas, Microsoft no podrá completar la migración. (iii) Cuando Microsoft no puede completar la migración debido a la inacción del cliente, la suscripción del cliente expirará el 29 de octubre de 2021.
+
+## <a name="azure-ad-finalization-phase-9-10"></a>Azure AD Finalization (fase 9, 10)
+
+**Se aplica a:** Todos los clientes
+
+Cuando el inquilino de Office 365 completa el paso final de la migración [Azure AD Finalization (Fase 9)] todos los servicios se transiciónn a todo el mundo. Ninguna aplicación o usuario debe tener acceso a los recursos del inquilino en ninguno de los puntos de conexión de Microsoft Cloud Deutschland. Automáticamente, 30 días después de que finalice la finalización, el servicio Microsoft Cloud Deutschland Azure AD detendrá el acceso de puntos de conexión para el inquilino en transición. Las solicitudes de extremo, como la autenticación, producirán un error a partir de este momento en el servicio Microsoft Cloud Deutschland. 
+
+| Pasos | Descripción | Impacto |
+|:-------|:-------|:-------|
+| Actualizar puntos de conexión de usuario | Garantizar que todos los usuarios accedan al servicio con los extremos de Microsoft en todo el mundo adecuados |30 días después de finalizar la migración, los puntos de conexión de Microsoft Cloud Deutschland dejarán de cumplir las solicitudes; se producirá un error en el tráfico de cliente o aplicación.  |
+| Actualizar puntos de conexión de aplicaciones de Azure AD | Debe actualizar los puntos de conexión de Autenticación, Azure Active Directory (Azure AD) Graph y MS Graph para sus aplicaciones a los del servicio Microsoft Worldwide. | 30 días después de finalizar la migración, los puntos de conexión de Microsoft Cloud Deutschland dejarán de cumplir las solicitudes; se producirá un error en el tráfico de cliente o aplicación. |
+||||
 
 ## <a name="office-apps"></a>Aplicaciones de Office
 

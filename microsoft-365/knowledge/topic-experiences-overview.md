@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Información general de Temas Viva.
-ms.openlocfilehash: 68a88e74a674a7bbc290ae0e8f88bfbe0277d910
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4598c47b07287789a7a194914232799de5ca7b85
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917385"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488162"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Información general de Temas Microsoft Viva 
 
@@ -99,7 +99,7 @@ Consulte [Administrar temas en el centro de temas](manage-topics.md) para obtene
 
 ## <a name="admin-controls"></a>Controles de administración
 
-Los controles de administración del Centro de administración de Microsoft 365 le permiten administrar su red de conocimientos. Permiten a un administrador del servicio SharePoint o global de Microsoft 365 realizar las siguientes acciones:
+Los controles de administración en el Centro de administración de Microsoft 365 te permiten administrar Temas de Viva. Permiten a un administrador del servicio SharePoint o global de Microsoft 365 realizar las siguientes acciones:
 
 - Controlar qué usuarios de su organización pueden ver temas en las páginas modernas de SharePoint o en los resultados de la búsqueda de SharePoint.
 - Controlar los sitios de SharePoint que se rastrearán para identificar temas.

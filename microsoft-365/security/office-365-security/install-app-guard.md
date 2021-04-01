@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Obtenga lo último en aislamiento basado en hardware. Evite que ataques actuales y emergentes como vulnerabilidades o vínculos malintencionados interrumpan la productividad de los empleados y la seguridad empresarial.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c066805bc21a941673fd1157dc87bd95bcd2c711
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d0fa6ad884c6b21457c8359cf82e32e4b8c100ba
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205029"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488316"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Protección de aplicaciones para Office para administradores
 
@@ -40,10 +40,11 @@ La Protección de aplicaciones de Microsoft Defender para Office (Application Gu
 ### <a name="minimum-software-requirements"></a>Requisitos mínimos de software
 
 * **Windows 10:** Windows 10 Enterprise edition, versión de compilación de cliente 2004 (20H1) compilación 19041 o posterior
-* **Office**: Office Current Channel Build version 2011 16.0.13530.10000 o posterior. Se admiten versiones de Office de 32 bits y 64 bits.
+* **Office:** Canal actual de Office y Canal empresarial mensual, versión de compilación 2011 16.0.13530.10000 o posterior. Se admiten versiones de Office de 32 bits y 64 bits.
 * **Paquete de actualización:** actualización de seguridad mensual acumulativa de Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
-Para obtener información detallada sobre los requisitos del sistema, consulte [System requirements for Microsoft Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Para obtener más información sobre los canales de actualización de Office, vea [Overview of update channels for Microsoft 365](/deployoffice/overview-update-channels).
+Para obtener información detallada sobre los requisitos del sistema, consulte [System requirements for Microsoft Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Además, consulte las guías del fabricante del equipo sobre cómo habilitar la tecnología de virtualización.
+Para obtener más información sobre los canales de actualización de Office, vea [Overview of update channels for Microsoft 365](/deployoffice/overview-update-channels).
 
 ### <a name="licensing-requirements"></a>Requisitos de licencia
 
@@ -76,6 +77,9 @@ Para obtener información detallada sobre los requisitos del sistema, consulte [
 4. Reinicie el sistema.
 
 ### <a name="set-diagnostics--feedback-to-send-full-data"></a>Establecer comentarios de & diagnóstico para enviar datos completos
+
+> [!NOTE]
+> Sin embargo, esto no es necesario, la configuración de datos de diagnóstico opcionales ayudará a diagnosticar problemas notificados.
 
 Este paso garantiza que los datos necesarios para identificar y corregir problemas lleguen a Microsoft. Sigue estos pasos para habilitar el diagnóstico en tu dispositivo Windows:
 
@@ -115,7 +119,9 @@ Al abrirse, el archivo debe mostrar algunos indicadores visuales de que el archi
 
 ## <a name="configure-application-guard-for-office"></a>Configurar Application Guard para Office
 
-Office admite las siguientes directivas para permitirle configurar las capacidades de Application Guard para Office. Estas directivas se pueden configurar a través de directivas de grupo o a través del servicio de directivas en la nube de Office.
+Office admite las siguientes directivas para permitirle configurar las capacidades de Application Guard para Office. Estas directivas se pueden configurar a través de directivas de grupo o a través del servicio de directivas [en la nube de Office.](/DeployOffice/overview-office-cloud-policy-service)
+Vea el conjunto de configuración establecido por el administrador revisando la configuración de la directiva de grupo en  **User Configuration Administrative Templates Microsoft Office \\ \\ 2016 \\ Security Settings Trust Center Application \\ \\ Guard**.
+
 
 > [!NOTE]
 > La configuración de estas directivas puede deshabilitar algunas funcionalidades de los archivos abiertos en Application Guard para Office.
@@ -183,13 +189,15 @@ También puede enviar comentarios desde Office si el problema se produce cuando 
 
 Application Guard para Office se integra con Microsoft Defender para Endpoint para proporcionar supervisión y alertas sobre actividad malintencionada que se produce en el entorno aislado.
 
+[Documentos seguros en Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-docs) es una característica que usa Microsoft Defender para endpoint para examinar documentos abiertos en Application Guard para Office. Para obtener una capa adicional de protección, los usuarios no pueden salir de Application Guard para Office hasta que se hayan determinado los resultados del examen.
+
 Microsoft Defender para endpoint es una plataforma de seguridad diseñada para ayudar a las redes empresariales a prevenir, detectar, investigar y responder a amenazas avanzadas. Para obtener más información acerca de esta plataforma, consulte [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp). Para obtener más información acerca de la incorporación de dispositivos a esta plataforma, consulte Incorporación de dispositivos [al servicio Microsoft Defender para endpoints](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure).
 
 También puede configurar Microsoft Defender para Office 365 para que funcione con Defender for Endpoint. Para obtener más información, consulte [Integrar Defender para Office 365 con Microsoft Defender para endpoint](integrate-office-365-ti-with-mde.md).
 
 ## <a name="limitations-and-considerations"></a>Limitaciones y consideraciones
 
-* Application Guard para Office es un modo restringido que aísla documentos que no son de confianza para que no puedan tener acceso a recursos corporativos de confianza, una intranet, la identidad del usuario y archivos arbitrarios en el equipo. Como resultado, si un usuario intenta obtener acceso a una característica que depende de dicho acceso (por ejemplo, insertar una imagen de un archivo local en el disco), el acceso producirá un error y producirá un mensaje como el siguiente ejemplo. Para habilitar un documento que no es de confianza para obtener acceso a recursos de confianza, los usuarios deben quitar la protección de Protección de aplicaciones del documento.
+* Application Guard para Office es un modo protegido que aísla documentos que no son de confianza para que no puedan tener acceso a recursos corporativos de confianza, una intranet, la identidad del usuario y archivos arbitrarios en el equipo. Como resultado, si un usuario intenta obtener acceso a una característica que depende de dicho acceso (por ejemplo, insertar una imagen de un archivo local en el disco), el acceso producirá un error y producirá un mensaje como el siguiente ejemplo. Para habilitar un documento que no es de confianza para obtener acceso a recursos de confianza, los usuarios deben quitar la protección de Protección de aplicaciones del documento.
 
   ![Cuadro de diálogo que dice Para ayudarle a mantener la seguridad, esta característica no está disponible](../../media/ag10-limitations.png)
 
@@ -227,4 +235,5 @@ Cuando se cumple esta heurística, Office creará previamente un contenedor de A
 
 * La selección de vínculos web ( `http` o ) no abre el `https` explorador.
 * En este momento, no se admite pegar contenido o imágenes de formato de texto enriquecido (RTF) en documentos de Office abiertos con Application Guard.
-* Las actualizaciones de .NET hacen que los archivos no se abran en Application Guard. Como solución alternativa, los usuarios pueden reiniciar su dispositivo cuando se tomen este error. Obtenga más información sobre el problema en Recibir un mensaje de error al intentar abrir Windows Defender Protección de [aplicaciones o Espacio aislado de Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
+* La configuración predeterminada para la directiva de protección de tipos de archivo no admitidos es bloquear la apertura de tipos de archivo no compatibles de Information Rights Management (IRM), CSV o HTML.
+* Las actualizaciones de .NET pueden provocar que los archivos no se abran en Application Guard. Como solución alternativa, los usuarios pueden reiniciar su dispositivo cuando se tomen este error. Obtenga más información sobre el problema en Recibir un mensaje de error al intentar abrir Windows Defender Protección de [aplicaciones o Espacio aislado de Windows](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).

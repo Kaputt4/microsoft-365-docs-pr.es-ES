@@ -1,5 +1,5 @@
 ---
-title: Incorporación de dispositivos multi sesión de Windows 10 en Windows Virtual Desktop
+title: Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop
 description: Lee más en este artículo sobre la incorporación de dispositivos multi-sesión de Windows 10 en Windows Virtual Desktop
 keywords: Windows Virtual Desktop, WVD, microsoft defender, endpoint, onboard
 search.product: eADQiWindows 10XVcnh
@@ -13,24 +13,20 @@ ms.topic: article
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
-ms.date: 09/10/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: bfd447120e171fed063b3224e3a47c2ef38f0f16
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 3f925fdc514c5e53b50f748d991f54d20fb49bd0
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222616"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488150"
 ---
-# <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Incorporación de dispositivos multi sesión de Windows 10 en Windows Virtual Desktop 
+# <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop 
 6 minutos para leer 
 
 Se aplica a: 
 - Windows 10 multi-session que se ejecuta en Windows Virtual Desktop (WVD) 
-
-> [!WARNING]
-> La compatibilidad de Microsoft Defender para puntos de conexión para escenarios de varias sesiones de Escritorio virtual de Windows está actualmente en versión preliminar y está limitada hasta 25 sesiones simultáneas por host/VM. Sin embargo, los escenarios de sesión única en Windows Virtual Desktop son totalmente compatibles.
 
 Microsoft Defender para endpoint admite la supervisión de sesiones de VDI y Windows Virtual Desktop. Según las necesidades de la organización, es posible que deba implementar sesiones de VDI o Windows Virtual Desktop para ayudar a los empleados a tener acceso a datos corporativos y aplicaciones desde un dispositivo no administrado, una ubicación remota o un escenario similar. Con Microsoft Defender para endpoint, puede supervisar estas máquinas virtuales en busca de actividad anómala.
 

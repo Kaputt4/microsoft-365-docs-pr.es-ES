@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevención de pérdida de datos en punto de conexión de Microsoft 365 amplía la supervisión de las actividades de archivo y de las acciones de protección de estos archivos en los puntos de conexión. Los archivos se hacen visibles en las soluciones de cumplimiento de Microsoft 365 '
-ms.openlocfilehash: d4a3fef03322912bf169cd195984a17d8dfe3b17
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5aaed57574f1ecabdf28442b30dcd42677243df1
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907054"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445280"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión
 
@@ -36,7 +36,7 @@ Puede usar la prevención de pérdida de datos (DLP) de Microsoft 365 para super
 
 DLP en punto de conexión de Microsoft le permite auditar y administrar los siguientes tipos de actividades que los usuarios llevan a cabo en elementos confidenciales de los dispositivos que ejecutan Windows 10. 
 
-|actividad |description  | auditables/restictable|
+|Actividad |Descripción  | Auditable/Restringible|
 |---------|---------|---------|
 |cargar en el servicio en la nube o acceso por exploradores no permitidos    | Detecta cuándo un usuario intenta cargar un elemento en un dominio de servicio restringido o tener acceso a un elemento con un explorador.  Si usa un explorador que se muestra en DLP como un explorador que no es el permitido, la actividad de carga se bloqueará y se redirigirá al usuario para usar la arista de cromo. Por último, cromo puede permitir o bloquear la carga o el acceso en función de la configuración de la Directiva DLP.         |auditable y restringible|
 |copiar a otra aplicación    |Se detecta cuando un usuario intenta copiar información de un elemento protegido y, a continuación, lo pega en otra aplicación, proceso o elemento. Esta actividad no detecta la copia y el pegado de información dentro de la misma aplicación, proceso o elemento.         | auditable y restringible|
@@ -67,7 +67,7 @@ La DLP en punto de conexión admite la supervisión de estos tipos de archivo:
 - archivos .h
 - archivos .java
  
-De forma predeterminada, la DLP en punto de conexión audita las actividades para estos tipos de archivo, incluso si no hay una coincidencia de directiva. Si solo quiere supervisar los datos de las coincidencias de directivas, puede desactivar **Auditar siempre para la actividad de archivos de los dispositivos** en la configuración global de DLP en punto de conexión. Independientemente de qué seleccione, las actividades de cualquier archivo Word, PowerPoint, Excel, PDF y .csv siempre se auditan.
+De forma predeterminada, la DLP en punto de conexión audita las actividades para estos tipos de archivo, incluso si no hay una coincidencia de directiva. Si solo quiere supervisar los datos de las coincidencias de directivas, puede desactivar **Auditar siempre para la actividad de archivos de los dispositivos** en la configuración global de DLP en punto de conexión. Si esta configuración está instalada, las actividades de cualquier archivo Word, PowerPoint, Excel, PDF y .csv siempre se auditan, incluso si el dispositivo no está dirigido por ninguna directiva.
 
 DLP en punto de conexión supervisa la actividad basada en un tipo de extensiones multipropósito de correo Internet (MIME), por lo que las actividades se capturan incluso si se cambia la extensión de archivo. 
 
@@ -102,15 +102,15 @@ Si incorporó dispositivos a través de [Protección contra amenazas avanzada de
 
 ### <a name="viewing-endpoint-dlp-data"></a>Visualizar datos de DLP en punto de conexión
 
-
-
 Puede ver las alertas relacionadas con las directivas DLP ejecutadas en los dispositivos de punto de conexión si va al [Panel de administración de alertas de DLP](dlp-configure-view-alerts-policies.md).
 
-![Información de la alerta](../media/Alert-info-1.png)
+> [!div class="mx-imgBorder"]
+> ![Información de la alerta](../media/Alert-info-1.png)
 
 También puede ver los detalles del evento asociado con metadatos enriquecidos en el mismo panel
 
-![información del evento](../media/Event-info-1.png)
+> [!div class="mx-imgBorder"]
+> ![información del evento](../media/Event-info-1.png)
 
 Una vez que se incorpora un dispositivo, la información sobre las actividades auditadas fluye al explorador de actividad, incluso antes de que configure e implemente las directivas DLP que tienen dispositivos como ubicación.
 
