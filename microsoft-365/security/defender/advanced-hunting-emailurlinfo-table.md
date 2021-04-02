@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,37 +20,37 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0d592bcd4d4dfa766816798ecf8418c146d48839
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 323ec9292115cf810bca7bf5de03b09cb35bceb1
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51073947"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498860"
 ---
-# <a name="emailurlinfo"></a><span data-ttu-id="0ccc3-104">EmailUrlInfo</span><span class="sxs-lookup"><span data-stu-id="0ccc3-104">EmailUrlInfo</span></span>
+# <a name="emailurlinfo"></a><span data-ttu-id="27793-104">EmailUrlInfo</span><span class="sxs-lookup"><span data-stu-id="27793-104">EmailUrlInfo</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="0ccc3-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="0ccc3-105">**Applies to:**</span></span>
-- <span data-ttu-id="0ccc3-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="0ccc3-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="27793-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="27793-105">**Applies to:**</span></span>
+- <span data-ttu-id="27793-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="27793-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="0ccc3-107">La tabla del esquema de búsqueda avanzada contiene información sobre las direcciones URL de los correos electrónicos y los datos adjuntos procesados por `EmailUrlInfo` Microsoft Defender para Office 365. [](advanced-hunting-overview.md)</span><span class="sxs-lookup"><span data-stu-id="0ccc3-107">The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Microsoft Defender for Office 365.</span></span> <span data-ttu-id="0ccc3-108">Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.</span><span class="sxs-lookup"><span data-stu-id="0ccc3-108">Use this reference to construct queries that return information from this table.</span></span> 
+<span data-ttu-id="27793-107">La tabla del esquema de búsqueda avanzada contiene información sobre las direcciones URL de los correos electrónicos y los datos adjuntos procesados por `EmailUrlInfo` Microsoft Defender para Office 365. [](advanced-hunting-overview.md)</span><span class="sxs-lookup"><span data-stu-id="27793-107">The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Microsoft Defender for Office 365.</span></span> <span data-ttu-id="27793-108">Utilice esta referencia para crear consultas que devuelvan información sobre la tabla.</span><span class="sxs-lookup"><span data-stu-id="27793-108">Use this reference to construct queries that return information from this table.</span></span> 
 
-<span data-ttu-id="0ccc3-109">Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).</span><span class="sxs-lookup"><span data-stu-id="0ccc3-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="27793-109">Para obtener información sobre otras tablas del esquema de búsqueda avanzada, [vea la referencia de búsqueda avanzada](advanced-hunting-schema-tables.md).</span><span class="sxs-lookup"><span data-stu-id="27793-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="0ccc3-110">Nombre de columna</span><span class="sxs-lookup"><span data-stu-id="0ccc3-110">Column name</span></span> | <span data-ttu-id="0ccc3-111">Tipo de datos</span><span class="sxs-lookup"><span data-stu-id="0ccc3-111">Data type</span></span> | <span data-ttu-id="0ccc3-112">Descripción</span><span class="sxs-lookup"><span data-stu-id="0ccc3-112">Description</span></span> |
+| <span data-ttu-id="27793-110">Nombre de columna</span><span class="sxs-lookup"><span data-stu-id="27793-110">Column name</span></span> | <span data-ttu-id="27793-111">Tipo de datos</span><span class="sxs-lookup"><span data-stu-id="27793-111">Data type</span></span> | <span data-ttu-id="27793-112">Descripción</span><span class="sxs-lookup"><span data-stu-id="27793-112">Description</span></span> |
 |-------------|-----------|-------------|
-| `Timestamp` | <span data-ttu-id="0ccc3-113">datetime</span><span class="sxs-lookup"><span data-stu-id="0ccc3-113">datetime</span></span> | <span data-ttu-id="0ccc3-114">Fecha y hora en que se registró el evento.</span><span class="sxs-lookup"><span data-stu-id="0ccc3-114">Date and time when the event was recorded</span></span> |
-| `NetworkMessageId` | <span data-ttu-id="0ccc3-115">cadena</span><span class="sxs-lookup"><span data-stu-id="0ccc3-115">string</span></span> | <span data-ttu-id="0ccc3-116">Identificador único del correo electrónico, generado por Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="0ccc3-116">Unique identifier for the email, generated by Microsoft 365</span></span> |
-| `Url` | <span data-ttu-id="0ccc3-117">cadena</span><span class="sxs-lookup"><span data-stu-id="0ccc3-117">string</span></span> | <span data-ttu-id="0ccc3-118">Dirección URL completa en el asunto, el cuerpo o en los datos adjuntos del mensaje de correo electrónico</span><span class="sxs-lookup"><span data-stu-id="0ccc3-118">Full URL in the email subject, body, or attachment</span></span> |
-| `UrlDomain` | <span data-ttu-id="0ccc3-119">string</span><span class="sxs-lookup"><span data-stu-id="0ccc3-119">string</span></span> | <span data-ttu-id="0ccc3-120">Nombre de dominio o nombre de host de la dirección URL</span><span class="sxs-lookup"><span data-stu-id="0ccc3-120">Domain name or host name of the URL</span></span> |
-| `ReportId` | <span data-ttu-id="0ccc3-121">largo</span><span class="sxs-lookup"><span data-stu-id="0ccc3-121">long</span></span> | <span data-ttu-id="0ccc3-122">Identificador de eventos basado en un contador de repetición.</span><span class="sxs-lookup"><span data-stu-id="0ccc3-122">Event identifier based on a repeating counter.</span></span> <span data-ttu-id="0ccc3-123">Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp</span><span class="sxs-lookup"><span data-stu-id="0ccc3-123">To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns</span></span> |
+| `Timestamp` | <span data-ttu-id="27793-113">datetime</span><span class="sxs-lookup"><span data-stu-id="27793-113">datetime</span></span> | <span data-ttu-id="27793-114">Fecha y hora en que se registró el evento.</span><span class="sxs-lookup"><span data-stu-id="27793-114">Date and time when the event was recorded</span></span> |
+| `NetworkMessageId` | <span data-ttu-id="27793-115">cadena</span><span class="sxs-lookup"><span data-stu-id="27793-115">string</span></span> | <span data-ttu-id="27793-116">Identificador único del correo electrónico, generado por Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="27793-116">Unique identifier for the email, generated by Microsoft 365</span></span> |
+| `Url` | <span data-ttu-id="27793-117">cadena</span><span class="sxs-lookup"><span data-stu-id="27793-117">string</span></span> | <span data-ttu-id="27793-118">Dirección URL completa en el asunto, el cuerpo o en los datos adjuntos del mensaje de correo electrónico</span><span class="sxs-lookup"><span data-stu-id="27793-118">Full URL in the email subject, body, or attachment</span></span> |
+| `UrlDomain` | <span data-ttu-id="27793-119">cadena</span><span class="sxs-lookup"><span data-stu-id="27793-119">string</span></span> | <span data-ttu-id="27793-120">Nombre de dominio o nombre de host de la dirección URL</span><span class="sxs-lookup"><span data-stu-id="27793-120">Domain name or host name of the URL</span></span> |
+| `ReportId` | <span data-ttu-id="27793-121">largo</span><span class="sxs-lookup"><span data-stu-id="27793-121">long</span></span> | <span data-ttu-id="27793-122">Identificador de eventos basado en un contador de repetición.</span><span class="sxs-lookup"><span data-stu-id="27793-122">Event identifier based on a repeating counter.</span></span> <span data-ttu-id="27793-123">Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp</span><span class="sxs-lookup"><span data-stu-id="27793-123">To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="0ccc3-124">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="0ccc3-124">Related topics</span></span>
-- [<span data-ttu-id="0ccc3-125">Información general sobre la búsqueda avanzada</span><span class="sxs-lookup"><span data-stu-id="0ccc3-125">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="0ccc3-126">Aprender el lenguaje de consulta</span><span class="sxs-lookup"><span data-stu-id="0ccc3-126">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="0ccc3-127">Usar consultas compartidas</span><span class="sxs-lookup"><span data-stu-id="0ccc3-127">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="0ccc3-128">Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades</span><span class="sxs-lookup"><span data-stu-id="0ccc3-128">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="0ccc3-129">Entender el esquema</span><span class="sxs-lookup"><span data-stu-id="0ccc3-129">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="0ccc3-130">Aplicar procedimientos recomendados de consulta</span><span class="sxs-lookup"><span data-stu-id="0ccc3-130">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="27793-124">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="27793-124">Related topics</span></span>
+- [<span data-ttu-id="27793-125">Información general sobre la búsqueda avanzada de amenazas</span><span class="sxs-lookup"><span data-stu-id="27793-125">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="27793-126">Aprender el lenguaje de consulta</span><span class="sxs-lookup"><span data-stu-id="27793-126">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="27793-127">Usar consultas compartidas</span><span class="sxs-lookup"><span data-stu-id="27793-127">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="27793-128">Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades</span><span class="sxs-lookup"><span data-stu-id="27793-128">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="27793-129">Entender el esquema</span><span class="sxs-lookup"><span data-stu-id="27793-129">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="27793-130">Aplicar procedimientos recomendados de consulta</span><span class="sxs-lookup"><span data-stu-id="27793-130">Apply query best practices</span></span>](advanced-hunting-best-practices.md)

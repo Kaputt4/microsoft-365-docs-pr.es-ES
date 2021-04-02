@@ -15,7 +15,7 @@
     - name: Descripción del servicio Escritorio administrado de Microsoft
       href: service-description/index.md
       items:
-        - name: Idiomas y regiones compatibles
+        - name: Regiones admitidas
           href: service-description/regions-languages.md
         - name: Ciclo de vida del producto
           href: service-description/device-lifecycle.md
@@ -96,6 +96,8 @@
           href: get-started/company-portal.md
         - name: Habilitar Enterprise State Roaming
           href: get-started/enterprise-state-roaming.md
+        - name: Localizar la experiencia del usuario
+          href: get-started/localization.md
         - name: Configurar dispositivos
           href: get-started/set-up-devices.md
           items:

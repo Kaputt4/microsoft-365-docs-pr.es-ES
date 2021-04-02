@@ -16,8 +16,14 @@
       href: create-a-content-center.md
     - name: Crear un clasificador
       href: create-a-classifier.md
+    - name: Duplicar un modelo
+      href: duplicate-a-model.md
+    - name: Cambiar el nombre de un modelo
+      href: rename-a-model.md
     - name: Crear un extractor
       href: create-an-extractor.md
+    - name: Cambiar el nombre de un extractor
+      href: rename-an-extractor.md
     - name: Tipos de explicación
       href: explanation-types-overview.md
     - name: Aplicar un modelo
