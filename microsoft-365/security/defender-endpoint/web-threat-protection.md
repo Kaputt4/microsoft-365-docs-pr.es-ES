@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7754fa586b24fdedaa9691b45f5da4654c882a5b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: aeeea02ca1ef2d37623e9ab434b162237c2f4946
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185986"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499893"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Proteger su organización contra amenazas web
 
@@ -36,7 +36,7 @@ ms.locfileid: "51185986"
 La protección contra amenazas web forma parte de [la protección web](web-protection-overview.md) en Defender para endpoint. Usa la [protección de red para](network-protection.md) proteger los dispositivos contra amenazas web. Al integrar con Microsoft Edge y exploradores de terceros populares como Chrome y Firefox, la protección contra amenazas web detiene las amenazas web sin un proxy web y puede proteger los dispositivos mientras están fuera o localmente. La protección contra amenazas web detiene el acceso a sitios de phishing, vectores de malware, sitios de vulnerabilidad, sitios que no son de confianza o de baja reputación, así como sitios que ha bloqueado en la lista de [indicadores personalizados.](manage-indicators.md)
 
 >[!Note]
->Los dispositivos pueden tardar hasta una hora en recibir nuevos indicadores de cliente.
+>Los dispositivos pueden tardar hasta una hora en recibir nuevos indicadores personalizados.
 
 ## <a name="prerequisites"></a>Requisitos previos
 La protección web usa la protección de red para proporcionar seguridad de exploración web en Microsoft Edge y exploradores web de terceros.
@@ -50,7 +50,7 @@ Para activar la protección de red en los dispositivos:
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Introducción a la protección web](web-protection-overview.md)
+- [Introducción a protección web](web-protection-overview.md)
 - [Protección contra amenazas web](web-threat-protection.md)
 - [Supervisar la seguridad web](web-protection-monitoring.md)
 - [Responder a amenazas web](web-protection-response.md)

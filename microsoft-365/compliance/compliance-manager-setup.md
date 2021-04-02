@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y roles de usuario del Administrador de cumplimiento de Microsoft y configure las pruebas automatizadas de las acciones. Administrar el historial de usuarios y filtrar la vista de panel.
-ms.openlocfilehash: 3b32ac5a82bbc726c5bf61859266e0561ca7f53c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4558f6b2a75f1635c7984b386f217efa148b22af
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199223"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499035"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -91,7 +91,7 @@ En la tabla siguiente se muestran las funciones permitidas por cada rol en el Ad
 | :------------- | :-------------: | :------------: |
 | **Leer pero no editar datos**| Lector de Administrador de cumplimiento  | Lector global de Azure AD, lector de seguridad | 
 | **Editar datos**| Contribución del administrador de cumplimiento | Administrador de cumplimiento | 
-| **Editar resultados de pruebas**| Evaluación del administrador de cumplimiento | Administrador de cumplimiento | 
+| **Editar resultados de pruebas**| Evaluador de Administrador de cumplimiento | Administrador de cumplimiento | 
 | **Administrar evaluaciones y datos de plantilla e inquilino**| Administración del administrador de cumplimiento | Administrador de cumplimiento, administrador de datos de cumplimiento, administrador de seguridad  | 
 | **Asignar usuarios**| Administrador global | Administrador global | 
 

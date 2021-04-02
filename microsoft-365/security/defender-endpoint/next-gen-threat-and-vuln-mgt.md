@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: d1402d8486725559335a5edc5ee13c78a0125932
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 0c3c5ebbcd4483cae159fe9b46a6f4c376443be3
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186430"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499068"
 ---
 # <a name="threat-and-vulnerability-management"></a>Administración de amenazas y vulnerabilidades
 
@@ -90,7 +90,7 @@ Vea este vídeo para ver un recorrido completo de la administración de amenazas
 [**Corrección**](tvm-remediation.md) | Vea las actividades de corrección que ha creado y las excepciones de recomendación.
 [**Inventario de software**](tvm-software-inventory.md) | Consulta la lista de software vulnerable de tu organización, junto con información de debilidad y amenazas.
 [**Debilidades**](tvm-weaknesses.md) | Consulta la lista de vulnerabilidades y exposiciones comunes (CVE) en tu organización.
-[**Escala de tiempo del evento**](threat-and-vuln-mgt-event-timeline.md) | Ver eventos que pueden afectar el riesgo de su organización.
+[**Línea de tiempo de eventos**](threat-and-vuln-mgt-event-timeline.md) | Ver eventos que pueden afectar el riesgo de su organización.
 
 ## <a name="apis"></a>API
 
@@ -98,15 +98,15 @@ Ejecute llamadas API relacionadas con la administración de amenazas y vulnerabi
 
 Vea los siguientes artículos para obtener las API relacionadas:
 
-- [Compatible con Microsoft Defender para LAS API de punto de conexión](exposed-apis-list.md)
+- [API compatibles de Microsoft Defender para punto de conexión](exposed-apis-list.md)
 - [API de máquina](machine.md)
 - [API de recomendación](vulnerability.md)
 - [API de puntuación](score.md)
 - [API de software](software.md)
 - [API de vulnerabilidad](vulnerability.md)
-- [Enumerar las vulnerabilidades por máquina y software](get-all-vulnerabilities-by-machines.md)
+- [Enumerar vulnerabilidades por máquina y software](get-all-vulnerabilities-by-machines.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 - [Plataformas y sistemas operativos compatibles](tvm-supported-os.md)
 - [Panel de administración de amenazas y vulnerabilidades](tvm-dashboard-insights.md)

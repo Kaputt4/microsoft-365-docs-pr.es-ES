@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e3a20f0a356a32eddc05b3792c0c04c23197a7b0
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 5fa811b2419d107e91b301d5c9bad691fc016b5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185700"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498959"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-for-mac"></a>Implementación con un sistema de administración de dispositivos móviles (MDM) diferente para Microsoft Defender para Endpoint para Mac
 
@@ -43,7 +43,7 @@ Antes de empezar, consulta la página principal de [Microsoft Defender para](mic
 ## <a name="approach"></a>Enfoque
 
 > [!CAUTION]
-> Actualmente, Microsoft solo admite Intune y JAMF para la implementación y administración de Microsoft Defender para Endpoint para Mac. Microsoft no ofrece garantías, explícitas o implícitas, con respecto a la información que se proporciona a continuación.
+> Actualmente, Microsoft admite oficialmente solo Intune y JAMF para la implementación y administración de Microsoft Defender para Endpoint para Mac. Microsoft no ofrece garantías, explícitas o implícitas, con respecto a la información que se proporciona a continuación.
 
 Si su organización usa una solución de administración de dispositivos móviles (MDM) que no es compatible oficialmente, esto no significa que no pueda implementar o ejecutar Microsoft Defender para Endpoint para Mac.
 
@@ -84,6 +84,10 @@ MDM lo usa para implementar el archivo de configuración en **/Library/Managed P
 ### <a name="kernel-extension-policy"></a>Directiva de extensión de kernel
 
 Configurar una directiva de extensión de kernel o KEXT. Use el identificador de equipo **UBF8T346G9** para permitir extensiones de kernel proporcionadas por Microsoft.
+
+> [!CAUTION]
+> Si el entorno consta de dispositivos Apple Silicon (M1), estas máquinas no deben recibir perfiles de configuración con directivas KEXT.
+> Apple no admite KEXT en estas máquinas, la implementación de dicho perfil produciría un error en máquinas M1.
 
 ### <a name="system-extension-policy"></a>Directiva de extensión del sistema
 

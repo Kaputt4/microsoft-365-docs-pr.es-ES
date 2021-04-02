@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e3e5410c868336308b1ecb34ba4326bf2dc5796f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d7e1ad4d10c3b71a04421d92304dc2bfcb6147da
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072776"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498199"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -45,24 +45,24 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `AccountObjectId` | string | Identificador único de la cuenta en Azure AD |
-| `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
-| `OnPremSid` | string | Identificador de seguridad local (SID) de la cuenta |
-| `CloudSid` | string | Identificador de seguridad en la nube de la cuenta |
-| `GivenName` | string | Nombre o nombre del usuario de la cuenta |
-| `Surname` | string | Apellidos, apellidos o apellidos del usuario de la cuenta |
-| `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
-| `Department` | string | Nombre del departamento al que pertenece el usuario de la cuenta |
-| `JobTitle` | string | Título del trabajo del usuario de la cuenta |
-| `AccountName` | string | Nombre de usuario de la cuenta |
-| `AccountDomain` | string | Dominio de la cuenta |
-| `EmailAddress` | string | Dirección SMTP de la cuenta |
-| `SipProxyAddress` | string | Dirección del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) de la cuenta |
-| `City` | string | Ciudad donde se encuentra el usuario de la cuenta |
-| `Country` | string | País o región donde se encuentra el usuario de la cuenta |
+| `AccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta |
+| `OnPremSid` | cadena | Identificador de seguridad local (SID) de la cuenta |
+| `CloudSid` | cadena | Identificador de seguridad en la nube de la cuenta |
+| `GivenName` | cadena | Nombre o nombre del usuario de la cuenta |
+| `Surname` | cadena | Apellidos, apellidos o apellidos del usuario de la cuenta |
+| `AccountDisplayName` | cadena | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
+| `Department` | cadena | Nombre del departamento al que pertenece el usuario de la cuenta |
+| `JobTitle` | cadena | Título del trabajo del usuario de la cuenta |
+| `AccountName` | cadena | Nombre de usuario de la cuenta |
+| `AccountDomain` | cadena | Dominio de la cuenta |
+| `EmailAddress` | cadena | Dirección SMTP de la cuenta |
+| `SipProxyAddress` | cadena | Dirección del protocolo de inicio de sesión (SIP) de voz sobre IP (VOIP) de la cuenta |
+| `City` | cadena | Ciudad donde se encuentra el usuario de la cuenta |
+| `Country` | cadena | País o región donde se encuentra el usuario de la cuenta |
 | `IsAccountEnabled` | boolean | Indica si la cuenta está habilitada o no |
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
+- [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
 - [Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)

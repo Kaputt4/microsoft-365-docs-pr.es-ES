@@ -1,5 +1,5 @@
 ---
-title: Habilitar reglas de reducción de superficie de ataque
+title: Habilitar las reglas de la reducción de superficie expuesta a ataques
 description: Habilita las reglas de reducción de superficie de ataque (ASR) para proteger los dispositivos de ataques que usan macros, scripts y técnicas de inserción comunes.
 keywords: Reducción de superficie de ataque, caderas, sistema de prevención de intrusiones de host, reglas de protección, antiexploit, vulnerabilidad, prevención de infecciones, habilitar, activar
 search.product: eADQiWindows 10XVcnh
@@ -14,14 +14,14 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 1deec767c6af777b23ab5a91c9e719f690e0c048
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: bf4fa88b3fbbf5d977d54a78c480129665049b23
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165146"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499401"
 ---
-# <a name="enable-attack-surface-reduction-rules"></a>Habilitar reglas de reducción de superficie de ataque
+# <a name="enable-attack-surface-reduction-rules"></a>Habilitar las reglas de la reducción de superficie expuesta a ataques
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -137,7 +137,7 @@ Ejemplo:
 
 2. En el **Editor de administración de directivas de** grupo, vaya a Configuración del equipo **y** seleccione **Plantillas administrativas.**
 
-3. Expande el árbol a **Componentes de Windows** Antivirus de Microsoft Defender Windows Defender reducción de superficie de ataque de Protección contra  >    >    >  **vulnerabilidades.**
+3. Expande el árbol a **Componentes de Windows** Microsoft Defender  >  **Antivirus** Microsoft Defender  >  **Exploit Guard**  >  **Reducción de superficie de ataque**.
 
 4. Selecciona **Configurar reglas de reducción de superficie de ataque** y selecciona **Habilitado**. A continuación, puede establecer el estado individual de cada regla en la sección de opciones.
 
@@ -211,4 +211,4 @@ Ejemplo:
 
 - [Evaluar la reducción de superficie de ataque](evaluate-attack-surface-reduction.md)
 
-- [Preguntas frecuentes sobre reducción de superficie de ataque](attack-surface-reduction.md)
+- [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)

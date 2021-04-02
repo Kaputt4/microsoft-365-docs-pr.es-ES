@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: b3b5af8093107925c6c12c901e8138960c5eeaf6
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f693c54828d8ede1d21167817f77b875ab5680ce
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072419"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499178"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -42,16 +42,16 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
 | `DeviceId` | cadena | Identificador único del dispositivo en el servicio |
-| `DeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo |
+| `DeviceName` | cadena | Nombre de dominio completo (FQDN) del dispositivo |
 | `SHA1` | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
 | `IsSigned` | boolean | Indica si el archivo está firmado |
-| `SignatureType` | string | Indica si la información de firma se leyó como contenido incrustado en el propio archivo o si se leyó desde un archivo de catálogo externo. |
-| `Signer` | string | Información sobre el firmante del archivo |
-| `SignerHash` | string | Valor hash único que identifica el firmante |
-| `Issuer` | string | Información sobre la entidad emisora de certificados (CA) |
-| `IssuerHash` | string | Valor hash único que identifica la entidad emisora de certificados (CA) |
-| `CertificateSerialNumber` | string | Identificador del certificado que es único para la entidad emisora de certificados (CA) |
-| `CrlDistributionPointUrls` | string |  Matriz JSON que enumera las direcciones URL de recursos compartidos de red que contienen certificados y listas de revocación de certificados (CRL) |
+| `SignatureType` | cadena | Indica si la información de firma se leyó como contenido incrustado en el propio archivo o si se leyó desde un archivo de catálogo externo. |
+| `Signer` | cadena | Información sobre el firmante del archivo |
+| `SignerHash` | cadena | Valor hash único que identifica el firmante |
+| `Issuer` | cadena | Información sobre la entidad emisora de certificados (CA) |
+| `IssuerHash` | cadena | Valor hash único que identifica la entidad emisora de certificados (CA) |
+| `CertificateSerialNumber` | cadena | Identificador del certificado que es único para la entidad emisora de certificados (CA) |
+| `CrlDistributionPointUrls` | cadena |  Matriz JSON que enumera las direcciones URL de recursos compartidos de red que contienen certificados y listas de revocación de certificados (CRL) |
 | `CertificateCreationTime` | datetime | Fecha y hora en que se creó el certificado |
 | `CertificateExpirationTime` | datetime | Fecha y hora en que el certificado está establecido para expirar |
 | `CertificateCountersignatureTime` | datetime | Fecha y hora en que se contrasignó el certificado |
@@ -61,6 +61,6 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
+- [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Entender el esquema](advanced-hunting-schema-reference.md)

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, independientemente de si usa una revisión para eliminación o el contenido se elimina automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: d9786b5e93801153e168784d51e37a00ee1822bc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c49f669498424169a89fa99fcdd259de1f5c720b
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051932"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488173"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -44,7 +44,7 @@ Para conceder a los usuarios solo los permisos que necesitan para las revisiones
 
 Además, para ver el contenido de los elementos durante el proceso de eliminación, agregue usuarios a los dos grupos de roles siguientes: **Visor de contenido del explorador de contenido** y **Visor de listas del explorador de contenido**. Si los usuarios no tienen los permisos para estos grupos de roles, aún pueden seleccionar una acción de revisión de eliminación para completar la revisión de eliminación, pero deberán hacerlo sin poder ver el contenido del elemento desde el centro de cumplimiento.
 
-Para obtener instrucciones sobre la configuración de estos permisos, consulte [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Para obtener instrucciones sobre la configuración de estos permisos, consulte [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### <a name="enable-auditing"></a>Habilitar auditoría
 
@@ -124,16 +124,21 @@ El contenido que espera una revisión para eliminación solo se elimina después
 
 ## <a name="disposition-of-records"></a>Eliminación de registros
 
-Use la pestaña **Eliminación** en la página **Administración de registros** para identificar registros ya eliminados, ya sea automáticamente o después de una revisión para eliminación. Estos elementos muestran **Registros eliminados** en la columna **Tipo**. Por ejemplo:
+Use la pestaña **Eliminación** en la página **Administración de registros** para identificar:
+
+- Los elementos eliminados como resultado de una revisión para eliminación.
+- Elementos marcados como un registro o un registro normativo que se eliminaron automáticamente al final de su periodo de retención.
+
+Estos elementos muestran **Registros eliminados** en la columna **Tipo**. Por ejemplo:
 
 ![Elementos que se eliminaron sin una revisión para eliminación](../media/records-disposed2.png)
 
-Los elementos que se muestran en la pestaña **Elementos eliminados** para etiquetas de registro se guardan hasta siete años después de que se elimine el elemento, con un límite de un millón artículos por registro para ese período. Si ve que el número de **Recuento** está a punto de alcanzar este límite de un millón y necesita una prueba de eliminación de los registros, póngase en contacto con el [Soporte técnico de Microsoft](/office365/admin/contact-support-for-business-products).
+Los elementos que se muestran en la pestaña **Elementos eliminados** se guardan hasta siete años después de que se elimine el elemento, con un límite de un millón artículos por registro para ese período. Si ve que el número de **Recuento** está a punto de alcanzar este límite de un millón y necesita una prueba de eliminación de los registros, póngase en contacto con el [Soporte técnico de Microsoft](/office365/admin/contact-support-for-business-products).
 
 > [!NOTE]
-> Esta funcionalidad se basa en la información del [registro de auditoría unificado](search-the-audit-log-in-security-and-compliance.md) y, por lo tanto, requiere que la auditoría se [habilite y se pueda buscar](turn-audit-log-search-on-or-off.md) para que se puedan capturar los eventos correspondientes.
+> Esta funcionalidad usa la información del [registro de auditoría unificado](search-the-audit-log-in-security-and-compliance.md) y, por lo tanto, requiere que la auditoría se [habilite y se pueda buscar](turn-audit-log-search-on-or-off.md) para que se puedan capturar los eventos correspondientes.
 
-En el caso de la auditoría, se debe buscar **Archivo eliminado marcado como registro** en la categoría **Actividades de archivos y páginas**. Este evento de auditoría se aplica a documentos y mensajes de correo electrónico.
+Para auditar los elementos eliminados marcados como registros o registros normativos, busque un **Archivo eliminado marcado como un registro** en la categoría **Actividades de archivo y página**. Este evento de auditoría se aplica a documentos y mensajes de correo electrónico.
 
 ## <a name="filter-and-export-the-views"></a>Filtrar y exportar las vistas
 

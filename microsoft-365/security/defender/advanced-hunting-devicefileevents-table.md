@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 62989eca2fd00757ea02d03bf24a0049135d97b0
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: 6528d25b385a2b4eafc408cbfb6609372a6688de
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382870"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498583"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -102,7 +102,7 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 > La información de hash de archivo siempre se mostrará cuando esté disponible. Sin embargo, hay varias razones posibles por las que no se puede calcular un SHA1, SHA256 o MD5. Por ejemplo, el archivo puede estar ubicado en almacenamiento remoto, bloqueado por otro proceso, comprimido o marcado como virtual. En estos escenarios, la información de hash del archivo aparece vacía.
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
+- [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
 - [Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)

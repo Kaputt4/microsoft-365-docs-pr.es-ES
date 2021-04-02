@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 127ebc8c0eaba433710bc272a2cf602e7c9a9730
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8a9279d1dd2a6465553b576609bb81cdf4e03fa0
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075984"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499526"
 ---
 # <a name="advanced-hunting-service-limits"></a>Límites avanzados de servicio de búsqueda
 
@@ -50,5 +50,5 @@ Los clientes que ejecutan varias consultas con regularidad deben realizar un seg
 
 - [Procedimientos recomendados de búsqueda avanzada](advanced-hunting-best-practices.md)
 - [Controlar errores de búsqueda avanzados](advanced-hunting-errors.md)
-- [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
+- [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Reglas de detecciones personalizadas](custom-detection-rules.md)

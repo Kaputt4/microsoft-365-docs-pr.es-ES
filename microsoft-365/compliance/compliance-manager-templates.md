@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Comprenda cómo usar y administrar plantillas para crear evaluaciones en El Administrador de cumplimiento de Microsoft. Cree y modifique plantillas con un archivo de Excel con formato.
-ms.openlocfilehash: 2d95aa4172d80a81e8c635edb01ab56579513c53
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ac5fe5f0a62c3b20021a9829499d8cec9339f72a
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922790"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499017"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Trabajar con plantillas de evaluación en el Administrador de cumplimiento
 
@@ -38,17 +38,17 @@ Una plantilla es un marco de controles para crear una evaluación en el Administ
 
 #### <a name="included-and-premium-templates"></a>Plantillas incluidas y premium
 
-Las plantillas disponibles para su uso se basan en el contrato de licencia de su organización ([ver detalles de licencias](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)). Hay dos categorías de plantillas: incluidas y premium.
+Las plantillas disponibles para su uso se basan en el contrato de licencia de su organización ([ver detalles de licencias](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)). Hay dos categorías de plantillas: incluidas y premium.
 
 1. **Las plantillas incluidas** están disponibles para su uso como parte del contrato de licencia de su organización.
-2. **Las plantillas** Premium deben adquirirse para crear evaluaciones a partir de ellas. Una vez comprado, puede crear tantas evaluaciones de una plantilla como sea necesario.
+2. **Las plantillas** Premium deben adquirirse para crear evaluaciones a partir de ellas. Una vez comprado, puede crear tantas evaluaciones de una plantilla como sea necesario. [Obtén información sobre cómo puedes comprar plantillas premium.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 #### <a name="active-and-inactive-templates"></a>Plantillas activas e inactivas
 
 Las plantillas mostrarán un estado de activación como activo o inactivo:
 
 - Una plantilla se considera **activa** una vez que se crea una evaluación a partir de esa plantilla.
-- Una plantilla se considera **inactiva** si la organización no la usa como marco para una evaluación.
+- Una plantilla se considera **inactiva** si su organización no la usa para una evaluación.
 
 Al comprar una plantilla premium y crear una evaluación a partir de ella, esa plantilla está activa durante un año. La compra se renovará automáticamente a menos que canceles la renovación.
 
@@ -60,7 +60,7 @@ Por ejemplo, si el contador muestra 2/5, esto significa que su organización ha 
 
 Si el contador muestra 5/2, esto indica que su organización supera sus límites y necesita comprar 3 de las plantillas premium en uso.
 
-Consulte [Compliance Manager licensing guidance (Guía de licencias del Administrador de cumplimiento)](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) para obtener más información.
+Consulte [Compliance Manager licensing guidance (Guía de licencias del Administrador de cumplimiento)](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager) para obtener más información.
 
 ## <a name="viewing-and-managing-templates-from-the-assessment-templates-page"></a>Visualización y administración de plantillas desde la página plantillas de evaluación
 

@@ -9,20 +9,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 599eab29628d11d67843f89a0eb59bb4db1e66ad
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 2ebc826e21246381d3220855f7e8cb01741f12e9
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185460"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499374"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>Comprender el informe de analistas en análisis de amenazas
 
@@ -51,7 +51,7 @@ Cada sección del informe de analista está diseñada para proporcionar informac
 | MITRE ATT&técnicas de CK observadas | Cómo se asignan las técnicas observadas al marco de ataque [&MITRE ATT](https://attack.mitre.org/) | 
 | [Mitigaciones](#apply-additional-mitigations) | Recomendaciones que pueden detener o ayudar a reducir el impacto de la amenaza. Esta sección también incluye mitigaciones que no se realiza un seguimiento dinámico como parte del informe de análisis de amenazas. |
 | [Detalles de detección](#understand-how-each-threat-can-be-detected) | Detecciones específicas y genéricas proporcionadas por soluciones de seguridad de Microsoft que pueden crear actividad o componentes asociados con la amenaza. | 
-| [Búsqueda avanzada](#find-subtle-threat-artifacts-using-advanced-hunting) | [Consultas avanzadas de búsqueda para](advanced-hunting-overview.md) identificar proactivamente posibles actividades de amenazas. La mayoría de las consultas se proporcionan para complementar las detecciones, especialmente para localizar componentes o comportamientos potencialmente malintencionados que no se pudieron evaluar dinámicamente como malintencionados. | 
+| [Búsqueda avanzada de amenazas](#find-subtle-threat-artifacts-using-advanced-hunting) | [Consultas avanzadas de búsqueda para](advanced-hunting-overview.md) identificar proactivamente posibles actividades de amenazas. La mayoría de las consultas se proporcionan para complementar las detecciones, especialmente para localizar componentes o comportamientos potencialmente malintencionados que no se pudieron evaluar dinámicamente como malintencionados. | 
 | Referencias | Publicaciones de Microsoft y de terceros a las que hacen referencia los analistas durante la creación del informe. El contenido de análisis de amenazas se basa en datos validados por investigadores de Microsoft. La información de fuentes de terceros disponibles públicamente se identifica claramente como tal. | 
 | Registro de cambios | La hora en que se publicó el informe y cuándo se realizaron cambios significativos en el informe. |
 

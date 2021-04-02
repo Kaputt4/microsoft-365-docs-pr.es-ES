@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el portal de envíos en el Centro de seguridad y cumplimiento de & para enviar correos electrónicos sospechosos, correos de suplantación de identidad sospechosos, correo no deseado y otros mensajes, direcciones URL y archivos potencialmente dañinos a Microsoft para su análisis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3dd566de3ba4b4281b19c423b8623f081c378bca
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6f1294335be5a82ef7219ef9096d84d840271c5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207458"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499331"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft
 
@@ -122,9 +122,9 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
    ![Ejemplo de envío de datos adjuntos](../../media/submission-file-flyout.PNG)
 
-## <a name="view-admin-submissions"></a>Ver envíos de administrador
+## <a name="view-items-submitted-for-analysis"></a>Ver elementos enviados para el análisis
 
-En el Centro de seguridad &  cumplimiento, vaya a \> **Envíos** de administración de amenazas , compruebe que está en la pestaña **Envíos** de administrador y, a continuación, haga clic en **Nuevo envío**.
+En el Centro de & cumplimiento, vaya a **Envíos** de administración de amenazas , compruebe que está en la pestaña \> Enviado para **el análisis**
 
 Cerca de la parte superior de la página, puede escribir una fecha de inicio, una fecha de finalización y ( de forma predeterminada) puede filtrar por identificador de envío **(un** valor GUID que se asigna a cada envío) especificando un valor en el cuadro y haciendo clic en el botón Actualizar ![ ](../../media/scc-quarantine-refresh.png) . Update
 
@@ -254,6 +254,9 @@ Puede hacer clic en el **botón Opciones de columna** cerca de la parte inferior
 Cerca de la parte superior de la página, puede escribir una fecha de inicio, una fecha de finalización y puede filtrar por **Enviado** especificando un valor en el cuadro y haciendo clic en el botón ![ Actualizar ](../../media/scc-quarantine-refresh.png) . Update
 
 Para exportar los resultados, haga clic **en Exportar** cerca de la parte superior de la página y seleccione Datos **del gráfico** o **Tabla**. En el cuadro de diálogo que aparece, guarde el archivo .csv.
+
+> [!NOTE]
+> Si las organizaciones están configuradas para enviar solo al buzón personalizado, los mensajes notificados no se enviarán para volver a examinarse y los resultados en el portal de mensajes notificados por el usuario siempre estarán vacíos.
 
 ## <a name="undo-user-submissions"></a>Deshacer envíos de usuarios
 

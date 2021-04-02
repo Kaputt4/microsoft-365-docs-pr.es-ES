@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3e4a8c9bffd285d45c7a4002b1ecd96e6dda40b9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7b1f581e1cfc8345df6e7b8053621cf46110c355
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071648"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499891"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -42,39 +42,39 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
-| `AlertId` | string | Identificador único de alerta. |
-| `ServiceSource` | string | Producto o servicio que proporcionó la información de alerta |
-| `EntityType` | string | Tipo de objeto, como un archivo, un proceso, un dispositivo o un usuario |
-| `EvidenceRole` | string | Cómo la entidad está implicada en una alerta, lo que indica si está afectada o simplemente está relacionada |
-| `EvidenceDirection` | string | Indica si la entidad es el origen o el destino de una conexión de red |
+| `AlertId` | cadena | Identificador único de alerta. |
+| `ServiceSource` | cadena | Producto o servicio que proporcionó la información de alerta |
+| `EntityType` | cadena | Tipo de objeto, como un archivo, un proceso, un dispositivo o un usuario |
+| `EvidenceRole` | cadena | Cómo la entidad está implicada en una alerta, lo que indica si está afectada o simplemente está relacionada |
+| `EvidenceDirection` | cadena | Indica si la entidad es el origen o el destino de una conexión de red |
 | `FileName` | cadena | Nombre del archivo donde se aplicó la acción registrada |
 | `FolderPath` | cadena | Carpeta que contiene el archivo al que se aplicó la acción grabada |
 | `SHA1` | cadena | SHA-1 del archivo donde fue aplicada la acción registrada |
 | `SHA256` | cadena | SHA-256 del archivo donde se aplicó la acción registrada. Este campo normalmente no se rellena: use la columna SHA1 cuando esté disponible. |
 | `FileSize` | Entero | Tamaño del archivo en bytes |
-| `ThreatFamily` | string | Familia de malware en la que el archivo o proceso sospechoso o malintencionado se ha clasificado en |
+| `ThreatFamily` | cadena | Familia de malware en la que el archivo o proceso sospechoso o malintencionado se ha clasificado en |
 | `RemoteIP` | cadena | Dirección IP a la que se ha conectado |
 | `RemoteUrl` | cadena | La dirección URL o el nombre de dominio completo (FQDN, según sus siglas en inglés) en el cual se ha estado conectado. |
 | `AccountName` | cadena | Nombre de usuario de la cuenta |
-| `AccountDomain` | string | Dominio de la cuenta |
-| `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
-| `AccountObjectId` | string | Identificador único de la cuenta en Azure Active Directory |
-| `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
-| `DeviceId` | string | Identificador único del dispositivo en el servicio |
+| `AccountDomain` | cadena | Dominio de la cuenta |
+| `AccountSid` | cadena | Identificador de seguridad (SID) de la cuenta |
+| `AccountObjectId` | cadena | Identificador único de la cuenta en Azure Active Directory |
+| `AccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta |
+| `DeviceId` | cadena | Identificador único del dispositivo en el servicio |
 | `DeviceName` | cadena | Nombre de dominio completo (FQDN, por sus siglas en inglés) del equipo |
 | `LocalIP` | cadena | Dirección IP asignada al dispositivo local usado durante la comunicación |
 | `NetworkMessageId` | cadena | Identificador único de correo electrónico, generado por Office 365 |
 | `EmailSubject` | cadena | Asunto del correo electrónico. |
 | `ApplicationId` | cadena | Identificador único de la aplicación |
-| `Application` | string | Aplicación que realizó la acción grabada |
-| `ProcessCommandLine` | string | Línea de comandos usada para crear el nuevo proceso |
-| `AdditionalFields` | string | Información adicional sobre el evento en formato de matriz JSON |
-| `RegistryKey` |string | Clave del Registro a la que se aplicó la acción grabada |
-| `RegistryValueName` |string | Nombre del valor del Registro al que se aplicó la acción grabada |
-| `RegistryValueData` |string | Datos del valor del Registro al que se aplicó la acción grabada |
+| `Application` | cadena | Aplicación que realizó la acción grabada |
+| `ProcessCommandLine` | cadena | Línea de comandos usada para crear el nuevo proceso |
+| `AdditionalFields` | cadena | Información adicional sobre el evento en formato de matriz JSON |
+| `RegistryKey` |cadena | Clave del Registro a la que se aplicó la acción grabada |
+| `RegistryValueName` |cadena | Nombre del valor del Registro al que se aplicó la acción grabada |
+| `RegistryValueData` |cadena | Datos del valor del Registro al que se aplicó la acción grabada |
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
+- [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
 - [Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)

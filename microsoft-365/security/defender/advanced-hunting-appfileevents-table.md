@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f25570916692c4568a6d09d92faaf57b0c155029
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b8b3b34e1b8535772d19f8ddd9f52c5c0a89292b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071640"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499345"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -47,37 +47,37 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
 | `ActionType` | cadena | Tipo de actividad que desencadenó el evento. Vea la [referencia de esquema en el portal](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) para obtener más información |
-| `Application` | string | Aplicación que realizó la acción grabada |
+| `Application` | cadena | Aplicación que realizó la acción grabada |
 | `FileName` | cadena | Nombre del archivo donde se aplicó la acción registrada |
 | `FolderPath` | cadena | Carpeta que contiene el archivo al que se aplicó la acción grabada |
-| `PreviousFileName` | string | Nombre original del archivo cuyo nombre se cambió como resultado de la acción |
-| `PreviousFolderPath` | string | Carpeta original que contiene el archivo antes de aplicar la acción grabada |
-| `Protocol` | string | Protocolo de red usado |
-| `AccountName` | string | Nombre de usuario de la cuenta |
-| `AccountDomain` | string | Dominio de la cuenta |
-| `AccountSid` | string | Identificador de seguridad (SID) de la cuenta |
-| `AccountUpn` | string | Nombre principal de usuario (UPN) de la cuenta |
-| `AccountObjectId` | string | Identificador único de la cuenta en Azure AD |
-| `AccountDisplayName` | string | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
-| `DeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo |
-| `DeviceType` | string | Tipo de dispositivo | 
-| `OSPlatform` | string | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. |
+| `PreviousFileName` | cadena | Nombre original del archivo cuyo nombre se cambió como resultado de la acción |
+| `PreviousFolderPath` | cadena | Carpeta original que contiene el archivo antes de aplicar la acción grabada |
+| `Protocol` | cadena | Protocolo de red usado |
+| `AccountName` | cadena | Nombre de usuario de la cuenta |
+| `AccountDomain` | cadena | Dominio de la cuenta |
+| `AccountSid` | cadena | Identificador de seguridad (SID) de la cuenta |
+| `AccountUpn` | cadena | Nombre principal de usuario (UPN) de la cuenta |
+| `AccountObjectId` | cadena | Identificador único de la cuenta en Azure AD |
+| `AccountDisplayName` | cadena | Nombre del usuario de la cuenta que se muestra en la libreta de direcciones. Normalmente, una combinación de un nombre o un nombre determinado, un inicio intermedio y un apellido o apellido. |
+| `DeviceName` | cadena | Nombre de dominio completo (FQDN) del dispositivo |
+| `DeviceType` | cadena | Tipo de dispositivo | 
+| `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica que se trata de sistemas operativos específicos, incluyendo variaciones dentro de la misma familia, como Windows 10 y Windows 7. |
 | `IPAddress` | cadena | Dirección IP asignada al extremo y usada durante las comunicaciones de red relacionadas |
-| `Port` | string | Puerto TCP usado durante la comunicación  |
-| `DestinationDeviceName` | string | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
-| `DestinationIPAddress` | string | Dirección IP del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
-| `DestinationPort` | string | Puerto de destino de comunicaciones de red relacionadas |
-| `Location` | string | Ciudad, país u otra ubicación geográfica asociada al evento |
-| `Isp` | string | Proveedor de servicios de Internet (ISP) asociado con la dirección IP del extremo |
+| `Port` | cadena | Puerto TCP usado durante la comunicación  |
+| `DestinationDeviceName` | cadena | Nombre del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
+| `DestinationIPAddress` | cadena | Dirección IP del dispositivo que ejecuta la aplicación de servidor que procesó la acción grabada |
+| `DestinationPort` | cadena | Puerto de destino de comunicaciones de red relacionadas |
+| `Location` | cadena | Ciudad, país u otra ubicación geográfica asociada al evento |
+| `Isp` | cadena | Proveedor de servicios de Internet (ISP) asociado con la dirección IP del extremo |
 | `ReportId` | largo | Identificador único del evento |
-| `AdditionalFields` | string | Información adicional sobre la entidad o el evento |
+| `AdditionalFields` | cadena | Información adicional sobre la entidad o el evento |
 
 >[!TIP]
 > Para obtener información detallada acerca de los tipos de eventos ( valores) admitidos por una tabla, use la referencia de esquema integrada `ActionType` disponible en el centro de seguridad.
 
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
+- [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
 - [Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)
