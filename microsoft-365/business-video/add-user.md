@@ -2,8 +2,8 @@
 title: Agregar un usuario a Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo agregar usuarios en Microsoft 365 para empresas.
-ms.openlocfilehash: 8f3b0076b04066e4d67f00b92c04cd364e40e05d
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d1167241a7b4c6012663f900973cb2fdbb7792bb
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423076"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580719"
 ---
 # <a name="add-a-new-user"></a>Agregar un nuevo usuario
 

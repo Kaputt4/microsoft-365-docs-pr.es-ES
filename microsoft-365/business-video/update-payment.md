@@ -2,8 +2,8 @@
 title: Actualizar el método de pago
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo actualizar el método de pago para Microsoft 365 para empresas.
-ms.openlocfilehash: 59972814d5dd9aa291099888539aae8f891c8fba
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 3b659da6745c92d777629b2912114ee214582623
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421744"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580359"
 ---
 # <a name="update-yor-payment-method-for-your-subscription"></a>Actualizar el método de pago yor para la suscripción
 

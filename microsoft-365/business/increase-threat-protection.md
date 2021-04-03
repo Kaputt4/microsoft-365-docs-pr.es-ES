@@ -2,8 +2,8 @@
 title: Aumentar la protección contra amenazas para Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure Microsoft Defender para Office 365 y proteja los datos confidenciales contra el phishing, malware y otras amenazas.
-ms.openlocfilehash: 6526ed9a849e83f19f74656004978089ce367ea9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8fb2c3881876cabea6d8907a85bc9397212126dc
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198399"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580202"
 ---
 # <a name="increase-threat-protection"></a>Aumentar la protección contra amenazas
 
@@ -89,7 +89,7 @@ Para crear una regla de transporte de correo:
 |Haga lo siguiente. . .|Notificar al destinatario con un mensaje|
 |Proporcionar texto del mensaje|No abra estos tipos de archivos de personas que no conoce porque pueden contener macros con código malintencionado.|
 
-Para más información, vea:
+Para obtener más información, vea:
 
 - [Ransomware: cómo reducir el riesgo](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 

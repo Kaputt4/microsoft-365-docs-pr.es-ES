@@ -2,8 +2,8 @@
 title: Instalar Office en Windows 10 durante la configuración
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -26,17 +26,17 @@ search.appverid:
 - MOE150
 ms.assetid: 5ffd5327-a83a-4d53-94d6-22ba2f9fd090
 description: Descubra cómo, con Microsoft 365 Empresa Premium, puede asegurarse automáticamente de que los usuarios tengan la versión más reciente de Office en todos sus dispositivos Windows 10.
-ms.openlocfilehash: 1ca386f75743178aebaf0bfabbabcb74f4813685
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d3c62eb42ea73c7af6df6012dbc9488828cd1ba8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400846"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580182"
 ---
 # <a name="install-office-on-windows-10-during-setup"></a>Instalar Office en Windows 10 durante la configuración
 
 ![Banner que apunta a https://aka.ms/aboutM365preview .](../media/m365admincenterchanging.png)
 
-Esta opción está desactivada de forma predeterminada. Puede activarla para asegurarse de que los usuarios tengan la versión más reciente de Office en todos sus dispositivos Windows 10, pero primero compruebe que se cumplen todos los requisitos previos. Los usuarios deben tener una licencia para Microsoft 365 Empresa Premium para que esta configuración pueda insertar el software en el dispositivo, además de otros requisitos descritos en Preparar la implementación del cliente de Office por Parte de [Microsoft 365 Empresa Premium.](prepare-for-office-client-deployment.md)
+Esta opción está desactivada de forma predeterminada. Puedes activarla para asegurarte de que los usuarios tengan la versión más reciente de Office en todos sus dispositivos Windows 10, pero primero comprueba que se cumplen todos los requisitos previos. Los usuarios deben tener una licencia para Microsoft 365 Empresa Premium para esta configuración para insertar el software en el dispositivo, además de otros requisitos descritos en [Prepare for Office client deployment by Microsoft 365 Business Premium](prepare-for-office-client-deployment.md).
   
-Te recomendamos que aceptes la configuración predeterminada durante la instalación.
+Se recomienda aceptar la configuración predeterminada durante la instalación.

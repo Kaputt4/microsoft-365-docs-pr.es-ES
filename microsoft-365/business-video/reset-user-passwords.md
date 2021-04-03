@@ -2,8 +2,8 @@
 title: Restablecer contraseñas de usuario
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo restablecer las contraseñas de usuario en Microsoft 365 para empresas.
-ms.openlocfilehash: 897ee87149c779d3de6d2175993d17e88dfc270f
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 42832bd48f637589687b75c4995ae58154b62226
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422272"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580491"
 ---
 # <a name="reset-passwords-for-your-users"></a>Restablecer contraseñas para los usuarios
 

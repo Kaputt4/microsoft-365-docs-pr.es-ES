@@ -2,8 +2,8 @@
 title: Administrar vínculos seguros
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo administrar vínculos seguros para proteger su empresa de sitios malintencionados.
-ms.openlocfilehash: 0f0cc6845f699ba5b05c30e21f876f4b4d47b6a6
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ce0c1ba6e4099b6eaf4ec974938170020b8a5892
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422254"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580635"
 ---
 # <a name="manage-safe-links"></a>Administrar vínculos seguros
 

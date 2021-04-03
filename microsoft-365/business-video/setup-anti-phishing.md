@@ -2,8 +2,8 @@
 title: Configurar la protección contra suplantación de identidad (phishing)
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar la protección contra suplantación de identidad (phishing).
-ms.openlocfilehash: 8cef8f916a8a3e2b27dd7f76ddecd921d59ca0c4
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 32494eda4496d99e5e5f4def213ba7876f6c3183
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422008"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580419"
 ---
 # <a name="set-up-anti-phishing"></a>Configurar directivas contra suplantación de identidad
 

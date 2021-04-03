@@ -2,8 +2,8 @@
 title: Mover archivos a OneDrive para la Empresa
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,13 +23,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
-description: Obtenga información sobre cómo puede mover los archivos de trabajo personales y los archivos confidenciales de la empresa a OneDrive para la Empresa en tan solo unos sencillos pasos.
-ms.openlocfilehash: 561c9dee1080a50dea695f136df10be8e5d52959
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+description: Obtenga información sobre cómo puede mover los archivos de trabajo personales y los archivos confidenciales de la empresa a OneDrive para la Empresa en unos sencillos pasos.
+ms.openlocfilehash: d6bcf2b41f1052c521fda50557aac4bf6a3800fa
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785920"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580082"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Mover archivos a OneDrive para la Empresa
 
@@ -37,7 +37,7 @@ Vea un breve vídeo sobre cómo mover archivos a OneDrive para la Empresa.<br><b
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 
 ## <a name="move-files-to-onedrive-for-business"></a>Mover archivos a OneDrive para la Empresa

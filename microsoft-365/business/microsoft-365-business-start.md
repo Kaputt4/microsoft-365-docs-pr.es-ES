@@ -2,8 +2,8 @@
 title: Introducción a Microsoft 365 para empresas
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga información sobre Microsoft 365 para empresas, cómo configurarlo y cómo preparar los dispositivos y equipos de los usuarios para asegurarse de que están protegidos por Microsoft 365 para empresas.
-ms.openlocfilehash: 9430dc7aa637be3fdb833150b83e96caacc82170
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 83bd2ff87683c1ad810d20658ba20f3229408968
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912970"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580102"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Introducción a Microsoft 365 para empresas
 
@@ -99,7 +99,7 @@ Si su organización usa Windows Server Active Directory local, puede configurar 
 Si conserva un Active Directory local que contiene algunos recursos locales (como archivos compartidos e impresoras), puede proporcionar a los dispositivos unidos a **Azure AD** acceso a estos recursos siguiendo los pasos que se indican a continuación: Obtener acceso a recursos locales desde un dispositivo unido a Azure AD en [Microsoft 365](access-resources.md)para empresas.
   
   
-## <a name="contact-support"></a>Ponerse en contacto con el soporte técnico
+## <a name="contact-support"></a>Contactar soporte
 
  **Si necesita ponerse en contacto con soporte técnico:**
   
@@ -107,7 +107,7 @@ Si conserva un Active Directory local que contiene algunos recursos locales (com
     
 - Como administrador de Microsoft 365 para empresas, tiene acceso a nuestro equipo de soporte al cliente: Póngase en contacto con el soporte técnico para productos **[empresariales - Ayuda para administradores](../admin/contact-support-for-business-products.md)**
     
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Documentación y recursos de Microsoft 365 para empresas](./index.yml)
   
