@@ -2,8 +2,8 @@
 title: Determinar si la implementación centralizada de complementos funciona para su organización
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar complementos de Office.
-ms.openlocfilehash: c9f2879e989085042758cc1c5385bea45427e7ff
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1516a10932158ba137f58900e0c19c5fea3bd119
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915463"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580959"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -43,7 +43,7 @@ La implementación centralizada admite tres plataformas de escritorio windows, M
 
 Un complemento puede tardar hasta 24 horas en aparecer para todos los usuarios.
   
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 La implementación centralizada de complementos requiere que los usuarios usen SKU de Microsoft 365 Enterprise: E3/E5/F3 o SKU empresariales: Business Basic, Business Standard, Business Premium (y se han iniciado sesión en Office con su identificador de organización) y tener buzones de Exchange Online y Exchange Online activos. El directorio de suscripción debe estar en o federado en Azure Active Directory.
 Puede ver los requisitos específicos de Office y Exchange a continuación, o usar el Checker de compatibilidad [de implementación centralizada.](#centralized-deployment-compatibility-checker)

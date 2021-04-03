@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Información general sobre la conectividad de red en el Centro de administración de Microsoft 365 (versión preliminar)
-ms.openlocfilehash: 2b80dd001bd2ee5d5725ea67c73aa34b4eb8816c
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: dd97a6d5cc9662f01854e1432660784358bce7b8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408410"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581135"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Conectividad de red en el Centro de administración de Microsoft 365 (versión preliminar)
 
@@ -189,7 +189,7 @@ En el archivo CSV, una ubicación de ciudad detectada se muestra en la columna u
    > [!div class="mx-imgBorder"]
    > ![Mensaje listo para importar CSV](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>Preguntas frecuentes
+## <a name="faq"></a>Preguntas más frecuentes
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>¿Qué es una puerta principal de servicio de Microsoft 365?
 
@@ -205,6 +205,10 @@ Una puerta principal de servicio óptima de Microsoft 365 es la más cercana a l
 ### <a name="what-is-an-internet-egress-location"></a>¿Qué es una ubicación de salida de Internet?
 
 La ubicación de salida de Internet es la ubicación donde el tráfico de red sale de la red empresarial y se conecta a Internet. Esto también se identifica como la ubicación donde tiene un dispositivo de traducción de direcciones de red (NAT) y, por lo general, donde se conecta con un proveedor de servicios de Internet (ISP). Si ves una larga distancia entre la ubicación y la ubicación de salida de Internet, esto puede indicar un backhaul WAN significativo.
+
+### <a name="what-license-is-needed-for-this-capability"></a>¿Qué licencia se necesita para esta funcionalidad?
+
+Necesita una licencia que proporciona acceso al Centro de administración de Microsoft 365.
 
 ## <a name="related-topics"></a>Temas relacionados
 

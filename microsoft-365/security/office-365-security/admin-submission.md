@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el portal de envíos en el Centro de seguridad y cumplimiento de & para enviar correos electrónicos sospechosos, correos de suplantación de identidad sospechosos, correo no deseado y otros mensajes, direcciones URL y archivos potencialmente dañinos a Microsoft para su análisis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f1294335be5a82ef7219ef9096d84d840271c5b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 96a5469b1093c71997747b2c4c3b49bc1964f72b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499331"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581075"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft
 
@@ -55,7 +55,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
 
 - Para enviar mensajes y archivos a Microsoft, debe ser miembro de uno de los siguientes grupos de roles:
 
-  - **Administración de la organización** o **Administrador de seguridad** en el [Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+  - **Administración de** la organización **o Lector de seguridad** en el Centro de seguridad & [cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
   - **Administración de la** organización [en Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 

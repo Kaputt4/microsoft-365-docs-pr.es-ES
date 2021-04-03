@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8bb80e032fd2eb4c618b60f4ab46829d5cf11b6d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9b192a029704d1354867b169efdf0d489345030e
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199234"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580971"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Configurar los pilares de Microsoft 365 Defender para el entorno piloto o el laboratorio de prueba
 
@@ -39,7 +39,7 @@ ms.locfileid: "51199234"
 
 Crear un entorno piloto o un laboratorio de prueba de Microsoft 365 Defender e implementarlo es un proceso de tres fases:
 
-|[![Fase 1: Preparar](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[Fase 1: Preparar](prepare-m365d-eval.md) |[![Fase 2: Configurar](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[Fase 2: Configurar](setup-m365deval.md) |![Fase 3: Incorporación](../../media/phase-diagrams/onboard.png)<br/>Fase 3: Incorporación | [![Volver al piloto](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Volver al libro de reproducción piloto](m365d-pilot.md) |
+|[![Fase 1: Preparación](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[Fase 1: Preparación](prepare-m365d-eval.md) |[![Fase 2: Configuración](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[Fase 2: Configuración](setup-m365deval.md) |![Fase 3: Incorporación](../../media/phase-diagrams/onboard.png)<br/>Fase 3: Incorporación | [![Volver al piloto](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Volver al libro de reproducción piloto](m365d-pilot.md) |
 |--|--|--|--|
 || |*¡Estás aquí!* | |
 
@@ -285,8 +285,7 @@ Para obtener una guía más completa, [vea Activar Microsoft 365 Defender](m365d
 
 ¡Enhorabuena! Acaba de crear el entorno piloto o el laboratorio de prueba de Microsoft 365 Defender. Ahora puedes familiarizarte con la interfaz de usuario de Microsoft 365 Defender. Vea lo que puede aprender en la siguiente guía interactiva de Microsoft 365 Defender y sepa cómo usar cada panel para sus tareas diarias de operación de seguridad.
 
-
->[!VIDEO https://aka.ms/MTP-Interactive-Guide]
+[Consulte la guía interactiva](https://aka.ms/MTP-Interactive-Guide)
 
 A continuación, puedes simular un ataque y ver cómo las capacidades entre productos detectan, crean alertas y responden automáticamente a un ataque sin archivos en un punto de conexión.
 

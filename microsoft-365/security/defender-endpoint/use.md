@@ -1,5 +1,5 @@
 ---
-title: Información general del Centro de seguridad de Microsoft Defender
+title: Introducción al Centro de seguridad de Microsoft Defender
 description: Obtenga información sobre las características del Centro de seguridad de Microsoft Defender, incluido el modo en que funcionan las alertas y sugerencias sobre cómo investigar posibles infracciones y ataques.
 keywords: panel, cola de alertas, administrar alertas, investigar, investigar alertas, investigar dispositivos, enviar archivos, análisis profundo, alto, medio, bajo, gravedad, ioc, ioa
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b490159d12bebdb95b6f168671393f8939da33be
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ee6fd4bd8d60f828bb474fc80cb987f4f94edcbe
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076712"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581099"
 ---
-# <a name="overview-of-microsoft-defender-security-center"></a>Información general del Centro de seguridad de Microsoft Defender
+# <a name="overview-of-microsoft-defender-security-center"></a>Introducción al Centro de seguridad de Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,7 +46,7 @@ Use el panel **análisis de** amenazas para evaluar y controlar continuamente la
 ## <a name="microsoft-defender-for-endpoint-interactive-guide"></a>Guía interactiva de Microsoft Defender para endpoint
 En esta guía interactiva, aprenderá a investigar las amenazas a su organización con Microsoft Defender para endpoint. Verá cómo Microsoft Defender para Endpoint puede ayudarle a identificar actividades sospechosas, investigar riesgos para su organización y corregir amenazas.
 
-> [!VIDEO https://aka.ms/MSDE-IG]
+[Consulte la guía interactiva](https://aka.ms/MSDE-IG)
 
 ### <a name="in-this-section"></a>En esta sección
 

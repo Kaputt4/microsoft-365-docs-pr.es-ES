@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5b5fb7185bb696bb6daae0a67a209cf3f7e77655
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: fcfddadf13e000156fa5431cc30bc72f4f3537e2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924569"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581051"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Requisitos previos del Escritorio administrado de Microsoft
 
@@ -44,7 +45,7 @@ Microsoft Managed Desktop requiere determinadas opciones de licencia para funcio
 > Para asignar estas opciones de licencia a usuarios específicos, se recomienda aprovechar la característica de licencias basadas en [grupos](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) de Azure Active Directory.
 
 - Azure Active Directory Premium P1
-- Microsoft Intune 
+- Microsoft Intune 
 - Windows 10 Enterprise  
 - Microsoft Defender para punto de conexión
 - Aplicaciones de Microsoft 365 para empresas
@@ -55,3 +56,15 @@ Microsoft Managed Desktop requiere determinadas opciones de licencia para funcio
 
 > [!TIP]
 > El Administrador de cuentas de Microsoft le ayudará a revisar sus licencias y planes de servicio actuales y a encontrar la ruta de acceso más eficaz para obtener las licencias o planes de servicio adicionales que pueda necesitar, a la vez que evitará la duplicación.
+
+## <a name="steps-to-get-ready"></a>Pasos para prepararse
+
+1. Revisar [Requisitos previos de Microsoft Managed Desktop](prerequisites.md). (Este artículo)
+2. Usar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
+3. [Requisitos previos para cuentas de invitados](guest-accounts.md)
+4. [Configuración de red para el Escritorio administrado de Microsoft](network.md)
+5. [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](certs-wifi-lan.md)
+6. [Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft](authentication.md)
+7. [Aplicaciones en Escritorio administrado de Microsoft](apps.md)
+8. [Preparar unidades asignadas para el Escritorio administrado de Microsoft](mapped-drives.md)
+9. [Preparar recursos de impresión para el Escritorio administrado de Microsoft](printing.md)
