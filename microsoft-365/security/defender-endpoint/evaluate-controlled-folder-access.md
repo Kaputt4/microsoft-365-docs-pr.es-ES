@@ -1,5 +1,5 @@
 ---
-title: Evaluar el acceso controlado a carpetas
+title: Evaluar acceso controlado a carpetas
 description: Vea cómo el acceso controlado a carpetas puede ayudar a proteger los archivos de que las aplicaciones malintencionadas cambien.
 keywords: Protección contra vulnerabilidades, windows 10, Windows Defender, ransomware, proteger, evaluar, probar, probar, probar
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e965e1a882dadfb565231074165507a6727b45c1
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: f996a8fdaf630c8ea389ac9648369cc955a6e95d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218753"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569910"
 ---
-# <a name="evaluate-controlled-folder-access"></a>Evaluar el acceso controlado a carpetas
+# <a name="evaluate-controlled-folder-access"></a>Evaluar acceso controlado a carpetas
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -73,8 +73,8 @@ Durante la evaluación, es posible que quieras agregar a la lista de carpetas pr
 
 Vea [Proteger carpetas](controlled-folders.md) importantes con acceso controlado a carpetas para configurar la característica con herramientas de administración, como la directiva de grupo, PowerShell y los proveedores de servicios de configuración mdm (CSP).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
-* [Evaluar Microsoft Defender para el punto de conexión](evaluate-mde.md)
-* [Usar el modo de auditoría](audit-windows-defender.md)
+* [Microsoft Defender para punto de conexión](evaluate-mde.md)
+* [Usar modo de auditoría](audit-windows-defender.md)

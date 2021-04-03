@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c79a235051897f19ca2c3f42b220c87a48cfac3f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7dd691b0d018db2b7afb3b88a2c1f9f7f8a39a33
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207311"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569784"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novedades de Microsoft Defender para Office 365
 
@@ -38,6 +38,7 @@ ms.locfileid: "51207311"
 
 En este artículo se enumeran las nuevas características de la versión más reciente de Microsoft Defender para Office 365. Las características que están actualmente en versión preliminar se indican con **(versión preliminar)**.
 
+Para obtener más información, vea [este vídeo](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3).
 > [!TIP]
 > ¿Todavía no tiene Microsoft Defender para Office 365? [Póngase en contacto con ventas para iniciar una versión de prueba.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
@@ -120,7 +121,7 @@ En este artículo se enumeran las nuevas características de la versión más re
 
 ¿Sabía que Microsoft Defender para Office 365 está disponible en dos planes? [Obtenga más información sobre lo que cada plan incluye](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Guía básica de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 

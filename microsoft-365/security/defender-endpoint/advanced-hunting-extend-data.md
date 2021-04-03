@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/10/2020
 ms.technology: mde
-ms.openlocfilehash: 60e8710415e328d06fac4c02e428094e5e4bcc92
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ea2524cb214d3cf7c784162a472722727cf0d57c
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075499"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500615"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Ampliar la cobertura de búsqueda avanzada con la configuración correcta
 
@@ -45,7 +45,7 @@ Instalación del servicio | Eventos capturados con el valor , que indican que se
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
+- [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Entender el esquema](advanced-hunting-schema-reference.md)
 - [Trabajar con resultados de consulta](advanced-hunting-query-results.md)

@@ -19,12 +19,12 @@ description: Use el Explorador y las detecciones en tiempo real en el Centro de 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47bb14b90a94d0c8b542b12268bd6d5ed6e5c05a
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 1c5935115d7496aca22c3941f34983cddebe7b46
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445725"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570989"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -112,6 +112,8 @@ La información de etiquetas también se muestra en el control desplegable de cl
 
 > [!div class="mx-imgBorder"]
 > ![Etiquetas URL](../../media/tags-urls.png)
+> 
+Para obtener más información, vea [este vídeo](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4). 
 
 ## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>Mejoras en la experiencia de búsqueda de amenazas (próximamente)
 

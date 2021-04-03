@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a161cfcad301c6e5cac2c7398b5c13559b27698d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 02d7810ef27b495e69fd6d8ca72baf40df13ee93
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074008"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500450"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Inventario de software: administración de amenazas y vulnerabilidades
 
@@ -127,5 +127,5 @@ Informe de un falso positivo cuando vea información imprecisa, inexacta o incom
 
 - [Introducción a la administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Recomendaciones de seguridad](tvm-security-recommendation.md)
-- [Escala de tiempo del evento](threat-and-vuln-mgt-event-timeline.md)
+- [Línea de tiempo de eventos](threat-and-vuln-mgt-event-timeline.md)
 - [Ver y organizar la lista de Microsoft Defender para dispositivos de punto de conexión](machines-view-overview.md)

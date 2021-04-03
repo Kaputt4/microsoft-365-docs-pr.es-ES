@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: f1df3550bab34f43695bc233c0b6c2aef00748df
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 617e6a31a304407d28925e7ab273b712d8d5d9db
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476710"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569736"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Introducción a los expertos en amenazas de Microsoft en Microsoft 365
 
@@ -29,7 +29,7 @@ ms.locfileid: "51476710"
 **Se aplica a:**
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
@@ -92,6 +92,6 @@ Vea este vídeo para obtener una introducción rápida al Centro de servicios de
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f]
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Configurar las capacidades de Microsoft Threat Experts](./configure-microsoft-threat-experts.md)

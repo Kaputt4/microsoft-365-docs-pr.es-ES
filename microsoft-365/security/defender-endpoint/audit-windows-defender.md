@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: dda0e58e587add2693f8448dd0833ce17706786c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7ce652d58be2d9ff28d82c088d5471a7bffdf6dc
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075392"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570977"
 ---
 # <a name="test-how-microsoft-defender-for-endpoint-features-work-in-audit-mode"></a>Probar cómo funcionan las características de Microsoft Defender para endpoint en modo auditoría
 
@@ -48,13 +48,13 @@ Puede usar la directiva de grupo, PowerShell y los proveedores de servicios de c
  **Opciones de auditoría** | **Cómo habilitar el modo de auditoría** | **Cómo ver eventos**
 |---------|---------|---------|
 | La auditoría se aplica a todos los eventos | [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md) | [Eventos de acceso controlado a carpetas](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
-| La auditoría se aplica a reglas individuales | [Habilitar reglas de reducción de superficie de ataque](enable-attack-surface-reduction.md) | [Eventos de regla de reducción de superficie de ataque](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
+| La auditoría se aplica a reglas individuales | [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md) | [Eventos de regla de reducción de superficie de ataque](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
 | La auditoría se aplica a todos los eventos | [Habilitar la protección de red](enable-network-protection.md) | [Eventos de protección de red](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
-| La auditoría se aplica a mitigaciones individuales | [Habilitar protección contra vulnerabilidades](enable-exploit-protection.md) | [Eventos de protección contra vulnerabilidades](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
+| La auditoría se aplica a mitigaciones individuales | [Habilitar la protección contra vulnerabilidades de seguridad](enable-exploit-protection.md) | [Eventos de protección contra vulnerabilidades](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
 
 ## <a name="related-topics"></a>Temas relacionados
 
-* [Proteger dispositivos de vulnerabilidades](exploit-protection.md)
+* [Proteger los dispositivos contra vulnerabilidades de seguridad](exploit-protection.md)
 * [Reducir superficies de ataque con reglas de reducción de superficie de ataque](attack-surface-reduction.md)
 * [Proteger la red](network-protection.md)
 * [Proteger carpetas importantes](controlled-folders.md)

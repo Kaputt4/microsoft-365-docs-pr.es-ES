@@ -21,12 +21,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre las características de protección contra suplantación de identidad (phishing) en Exchange Online Protection (EOP) y Microsoft Defender para Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b0ca7a83e8e8d66bd58fddfc46f53df32f4f623c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a100e28ddee1629b2fe35e28742a43b891d13e57
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207523"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570617"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protección contra suplantación de identidad (phishing) en Microsoft 365
 
@@ -43,7 +43,7 @@ ms.locfileid: "51207523"
 
 - **La caza de whaling** se dirige a ejecutivos u otros objetivos de alto valor dentro de una organización para obtener el máximo efecto.
 
-- El compromiso de correo electrónico empresarial **(BEC)** usa remitentes de confianza falsificados (responsables financieros, clientes, socios de confianza, etc.) para engañar a los destinatarios para que aprueben pagos, transfieran fondos o revelen datos de clientes.
+- El compromiso de correo electrónico empresarial **(BEC)** usa remitentes de confianza falsificados (responsables financieros, clientes, socios de confianza, etc.) para engañar a los destinatarios para que aprueben pagos, transfieran fondos o revelen datos de clientes. Para obtener más información, vea [este vídeo](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2).
 
 - **Ransomware** que cifra los datos y exige el pago para descifrarlo casi siempre comienza en los mensajes de suplantación de identidad. La protección contra la suplantación de identidad no puede ayudarle a descifrar archivos cifrados, pero puede ayudar a detectar los mensajes de suplantación de identidad inicial asociados con la campaña de ransomware. Para obtener más información acerca de la recuperación de un ataque de ransomware, vea [Recover from a ransomware attack in Microsoft 365](recover-from-ransomware.md).
 

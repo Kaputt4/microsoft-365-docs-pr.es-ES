@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0683e0f2c9f4d46b3b644e2fec882a126aaab9b9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 5aba1ab4bed0eeb5f6127ab865ceea674e8d5902
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51070059"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500998"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 Defender
 
@@ -65,7 +65,7 @@ La cola de incidentes también expone varias opciones de filtrado que, cuando se
 ### <a name="assigned-to"></a>Asignado a
 Puede elegir mostrar las alertas que se le han asignado o las que controla la automatización.
 
-### <a name="categories"></a>Categories
+### <a name="categories"></a>Categorías
 Elija categorías para centrarse en tácticas, técnicas o componentes de ataque específicos vistos. 
 
 ### <a name="classification"></a>Clasificación
@@ -109,7 +109,7 @@ Una vez que haya determinado qué incidente tiene mayor prioridad, puede seguir 
 - [Investigar incidentes](investigate-incidents.md)
 
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulta también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)
 - [Administrar incidentes](manage-incidents.md)

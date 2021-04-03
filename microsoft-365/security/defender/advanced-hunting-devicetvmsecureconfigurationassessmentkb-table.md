@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e664f0da29e0403b415792c839fd740006791cf0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 71ebcd759e9fb6fd39550975039eb58be13e6b84
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071496"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501157"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -44,15 +44,15 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `ConfigurationId` | string | Identificador único para una configuración específica |
-| `ConfigurationImpact` | string | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
+| `ConfigurationImpact` | cadena | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
 | `ConfigurationName` | string | Nombre para mostrar de la configuración |
 | `ConfigurationDescription` | string | Descripción de la configuración |
 | `RiskDescription` | string | Descripción del riesgo asociado |
 | `ConfigurationCategory` | string | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad|
-| `ConfigurationSubcategory` | string |Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
+| `ConfigurationSubcategory` | cadena |Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
 | `ConfigurationBenchmarks` | string | Lista de bancos de pruebas del sector que recomiendan la misma configuración u otra similar |
 | `Tags` | string | Etiquetas que representan varios atributos usados para identificar o clasificar una configuración de seguridad |
-| `RemediationOptions` | string | Acciones recomendadas para reducir o solucionar los riesgos asociados |
+| `RemediationOptions` | cadena | Acciones recomendadas para reducir o solucionar los riesgos asociados |
 
 ## <a name="related-topics"></a>Temas relacionados
 

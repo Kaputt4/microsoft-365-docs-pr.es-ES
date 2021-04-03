@@ -1,5 +1,5 @@
 ---
-title: Evaluar reglas de reducción de superficie de ataque
+title: Evaluar las reglas de la reducción de la superficie expuesta a ataques
 description: Vea cómo la reducción de superficie de ataque bloquearía e impediría ataques con la herramienta de demostración personalizada.
 keywords: Reducción de superficie de ataque, caderas, sistema de prevención de intrusiones de host, reglas de protección, antiexploit, vulnerabilidad, prevención de infecciones, evaluación, prueba, demostración
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 13b1ac5f71f2bc24ad6f52af6722e12fab935270
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 07573fd92643ce5fdf3e9140031bf5f15ae8f7aa
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075832"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570344"
 ---
-# <a name="evaluate-attack-surface-reduction-rules"></a>Evaluar reglas de reducción de superficie de ataque
+# <a name="evaluate-attack-surface-reduction-rules"></a>Evaluar las reglas de la reducción de la superficie expuesta a ataques
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -76,14 +76,14 @@ Id. de evento | Descripción
  1121 | Evento cuando una regla de reducción de superficie de ataque se dispara en modo de bloqueo
  1122 | Evento cuando se desangre una regla de reducción de superficie de ataque en modo auditoría
 
-## <a name="customize-attack-surface-reduction-rules"></a>Personalizar reglas de reducción de superficie de ataque
+## <a name="customize-attack-surface-reduction-rules"></a>Personalizar las reglas de la reducción de superficie expuesta a ataques
 
 Durante la evaluación, es posible que desee configurar cada regla individualmente o excluir determinados archivos y procesos para que la característica evalúe.
 
 Consulta [Personalizar reglas de reducción de](customize-attack-surface-reduction.md) superficie de ataque para obtener información sobre cómo configurar la característica con herramientas de administración, incluidas directivas de grupo y directivas de CSP de MDM.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 * [Reducir superficies de ataque con reglas de reducción de superficie de ataque](attack-surface-reduction.md)
 * [Use el modo de auditoría para evaluar Windows Defender](audit-windows-defender.md)
-* [Preguntas frecuentes sobre reducción de superficie de ataque](attack-surface-reduction.md)
+* [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)

@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: maccruz
-author: schmurky
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: bc325f88ec41861c2adc4d5147e94d2d2d5b1ebe
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 989574a860bea798c48e077f5633c31eb857e85e
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068936"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500942"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
@@ -108,7 +108,7 @@ También puede filtrar alertas según diferentes criterios:
 
 
 Para iniciar una investigación sobre un incidente, lea [Investigar incidentes en Microsoft 365 Defender](investigate-incidents.md)
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulta también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)

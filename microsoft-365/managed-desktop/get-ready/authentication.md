@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f6b1e257fd767fa112fddb41d773065b8002a2a3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 6df23e0d7e3ea0ecd7ebacd96f00cb47b9e0aa84
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909195"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574600"
 ---
 #  <a name="prepare-on-premises-resources-access-for-microsoft-managed-desktop"></a>Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft
 
@@ -77,3 +78,14 @@ Los dispositivos de Escritorio administrado de Microsoft no pueden conectarse a 
 Aunque las impresoras no se pueden detectar automáticamente en un entorno de solo nube, los usuarios pueden usar impresoras locales mediante la ruta de acceso de la impresora o la ruta de cola de la impresora, siempre que los dispositivos tengan acceso a un controlador de dominio local.
 
 <!--add fuller material on printers when available-->
+## <a name="steps-to-get-ready"></a>Pasos para prepararse
+
+1. Revisar [Requisitos previos de Microsoft Managed Desktop](prerequisites.md).
+2. Usar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
+3. [Requisitos previos para cuentas de invitados](guest-accounts.md)
+4. [Configuración de red para el Escritorio administrado de Microsoft](network.md)
+5. [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](certs-wifi-lan.md)
+6. [Preparar el acceso a recursos locales para Microsoft Managed Desktop](authentication.md) (este artículo)
+7. [Aplicaciones en Escritorio administrado de Microsoft](apps.md)
+8. [Preparar unidades asignadas para el Escritorio administrado de Microsoft](mapped-drives.md)
+9. [Preparar recursos de impresión para el Escritorio administrado de Microsoft](printing.md)

@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5532e9058d7a49033f651e3fbee605e5ae39d05a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 90a124f9b0bf9ef775141e359224fde566c61c8d
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076843"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501207"
 ---
 # <a name="event-timeline---threat-and-vulnerability-management"></a>Escala de tiempo de eventos: administración de amenazas y vulnerabilidades
 
@@ -136,6 +136,6 @@ Vaya a la pestaña escala de tiempo del evento para ver todos los eventos relaci
 - [Panel](tvm-dashboard-insights.md)
 - [Puntuación de exposición](tvm-exposure-score.md)
 - [Recomendaciones de seguridad](tvm-security-recommendation.md)
-- [Corregir vulnerabilidades](tvm-remediation.md)
+- [Corregir puntos vulnerables](tvm-remediation.md)
 - [Inventario de software](tvm-software-inventory.md)
 

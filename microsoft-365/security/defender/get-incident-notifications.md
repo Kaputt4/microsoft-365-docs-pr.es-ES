@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: maccruz
-author: schmurky
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 42600b360061626938aa13a09f1ed1b42fdfe48c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: fec2263599f3ed727d3d9d70023927084eb1c094
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51070064"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501070"
 ---
 # <a name="get-incident-notifications-by-email"></a>Obtener notificaciones de incidentes por correo electrónico
 
@@ -72,7 +72,7 @@ Para configurar la primera notificación por correo electrónico para incidentes
 
 6. Por último, seleccione **Siguiente** para ir **a Revisar regla** para que pueda ver toda la configuración asociada a la nueva regla. Los destinatarios empezarán a recibir notificaciones de incidentes a través del correo electrónico en función de la configuración.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulta también
 - [Información general sobre incidentes en Microsoft 365 Defender](./incidents-overview.md)
 - [Priorizar incidentes en Microsoft 365 Defender](./incident-queue.md)
 - [Investigar incidentes en Microsoft 365 Defender](./investigate-incidents.md)

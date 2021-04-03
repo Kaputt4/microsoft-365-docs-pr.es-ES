@@ -1,5 +1,5 @@
 ---
-title: Evaluar la protección de red
+title: Evaluar protección de red
 description: Vea cómo funciona la protección de red probando escenarios comunes contra los que protege.
 keywords: Protección de red, vulnerabilidades, sitio web malintencionado, ip, dominio, dominios, evaluación, prueba, demostración
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 41d1c9400720e20185922a97463e776c3ce0d80a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ade50e85dbfcf5f59921a65d5b97bb47d21e5b12
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072232"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570929"
 ---
-# <a name="evaluate-network-protection"></a>Evaluar la protección de red
+# <a name="evaluate-network-protection"></a>Evaluar protección de red
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -66,7 +66,7 @@ Para revisar las aplicaciones que se habrían bloqueado, abra el Visor de evento
 |1125 | Windows Defender (operativo) | Evento cuando se audita una conexión de red |
 |1126 | Windows Defender (operativo) | Evento cuando se bloquea una conexión de red |
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 * [Protección de red](network-protection.md)
 * [Habilitar la protección de red](enable-network-protection.md)

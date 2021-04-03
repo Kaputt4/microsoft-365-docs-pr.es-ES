@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Cree evaluaciones en El Administrador de cumplimiento de Microsoft para ayudarle a cumplir los requisitos de normativas y certificaciones que son importantes para su organización.
-ms.openlocfilehash: ff2aa41b91f3cb019dbed542c422d61c79c4ecb5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b8051a036f2ffda2f3a2840880318466a2ec71af
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908600"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500644"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Crear y administrar evaluaciones en el Administrador de cumplimiento
 
@@ -53,7 +53,7 @@ Hay tres maneras de configurar evaluaciones:
 3. [Cree su propia evaluación personalizada](#create-your-own-custom-assessment).
 
 > [!NOTE]
-> Solo los usuarios que tienen un rol de administrador global o administrador de cumplimiento pueden crear y modificar evaluaciones. Obtenga más información [sobre roles y permisos](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+> Solo los usuarios que tienen un rol de administrador global, administración del administrador de cumplimiento o evaluador de administrador de cumplimiento pueden crear y modificar evaluaciones. Obtenga más información [sobre roles y permisos](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
 **Usar una evaluación predefinida**
 

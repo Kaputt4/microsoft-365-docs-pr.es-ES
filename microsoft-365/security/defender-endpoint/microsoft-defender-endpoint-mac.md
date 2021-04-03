@@ -1,8 +1,8 @@
 ---
-title: ATP de Microsoft Defender para Mac
+title: Microsoft Defender para punto de conexión para Mac
 ms.reviewer: ''
 description: Obtén información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint para Mac.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave
+keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, catalina, mojave, mde for mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34150088379445d66006c757b2c8ea607865bf4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 22d35a42eb7fb7eadbba686c292729772951c05c
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198998"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500687"
 ---
-# <a name="microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender para endpoint para Mac
+# <a name="microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender para punto de conexión para Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -39,11 +39,11 @@ ms.locfileid: "51198998"
 En este tema se describe cómo instalar, configurar, actualizar y usar Defender para Endpoint para Mac.
 
 > [!CAUTION]
-> Es probable que la ejecución de otros productos de protección de puntos de conexión de terceros junto con Defender para Endpoint para Mac lleve a problemas de rendimiento y efectos secundarios impredecibles. Si la protección de extremo que no es de Microsoft es un requisito absoluto en su entorno, puede aprovechar de forma segura la funcionalidad MDATP para Mac EDR después de configurar la funcionalidad del antivirus MDATP para Mac para que se ejecute en modo [pasivo.](mac-preferences.md#enable--disable-passive-mode)
+> Es probable que la ejecución de otros productos de protección de puntos de conexión de terceros junto con Microsoft Defender para Endpoint para Mac lleve a problemas de rendimiento y efectos secundarios impredecibles. Si la protección de extremo que no es de Microsoft es un requisito absoluto en su entorno, puede aprovechar de forma segura la funcionalidad de Defender para Endpoint para Mac EDR después de configurar la funcionalidad antivirus para que se ejecute en modo [pasivo.](mac-preferences.md#enable--disable-passive-mode)
 
 ## <a name="whats-new-in-the-latest-release"></a>Novedades de la versión más reciente
 
-[Novedades de Microsoft Defender para endpoint](whats-new-in-microsoft-defender-atp.md)
+[Novedades de Microsoft Defender para punto de conexión](whats-new-in-microsoft-defender-atp.md)
 
 [Novedades de Microsoft Defender para Endpoint para Mac](mac-whatsnew.md)
 

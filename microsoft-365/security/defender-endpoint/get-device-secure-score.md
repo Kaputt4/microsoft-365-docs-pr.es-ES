@@ -1,5 +1,5 @@
 ---
-title: Obtener puntuación segura del dispositivo
+title: Obtener puntuación segura para dispositivos
 description: Recupera la puntuación segura del dispositivo de la organización.
 keywords: apis, api de gráficos, api admitidas, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
@@ -7,22 +7,22 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 921334c937e3f211b032a5d24d4244d9a6fb3d61
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: db4682d0d2fccd7504eb46d9099a9783408cfb73
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166883"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570941"
 ---
-# <a name="get-device-secure-score"></a>Obtener puntuación segura del dispositivo
+# <a name="get-device-secure-score"></a>Obtener puntuación segura para dispositivos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -95,6 +95,6 @@ Aquí tiene un ejemplo de la respuesta.
 }
 ```
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Consultas de OData con Microsoft Defender para endpoint](exposed-apis-odata-samples.md)

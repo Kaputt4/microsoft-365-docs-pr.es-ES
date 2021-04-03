@@ -9,17 +9,17 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6d07e2a21bb01794990160cf02837fc524008098
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: ee87ac3bdfe88596a5f1625904af53499488f35f
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218765"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51571013"
 ---
 # <a name="enable-controlled-folder-access"></a>Habilitar el acceso controlado a carpetas
 
@@ -74,7 +74,7 @@ Para obtener más información sobre cómo deshabilitar la combinación de lista
 
 4. Vaya a **Configure Windows Defender**  >  **Exploit Guard** Controlled folder  >  **access**  >  **Enable**.
 
-5. Escriba la ruta de acceso a cada aplicación que tenga acceso a carpetas protegidas y la ruta de acceso a cualquier carpeta adicional que necesite protección. Seleccione **Agregar**.<br/> ![Habilitar el acceso controlado a carpetas en Intune](/microsoft-365/security/defender-endpoint/images/enable-cfa-intune)<br/>
+5. Escriba la ruta de acceso a cada aplicación que tenga acceso a carpetas protegidas y la ruta de acceso a cualquier carpeta adicional que necesite protección. Elija **Agregar**.<br/> ![Habilitar el acceso controlado a carpetas en Intune](/microsoft-365/security/defender-endpoint/images/enable-cfa-intune)<br/>
 
    > [!NOTE]
    > Wilcard es compatible con aplicaciones, pero no para carpetas. Las subcarpetas no están protegidas. Las aplicaciones permitidas seguirán desencadenando eventos hasta que se reinicien.
@@ -137,8 +137,8 @@ Puede habilitar la característica en modo auditoría especificando en `AuditMod
 
 Se `Disabled` usa para desactivar la característica.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 * [Proteger carpetas importantes con acceso controlado a carpetas](controlled-folders.md)
 * [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)
-* [Evaluar Microsoft Defender para el punto de conexión](evaluate-mde.md)
+* [Microsoft Defender para punto de conexión](evaluate-mde.md)

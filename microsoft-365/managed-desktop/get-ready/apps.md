@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ea0990e5f30aa45ec48bb2e6a7c957c187c74ebb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: d970ac1a28c62703f648e4fbf6f66e2f825a6188
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922949"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574624"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Aplicaciones en Escritorio administrado de Microsoft
 
@@ -75,3 +76,16 @@ Hay tres opciones para empaquetar las aplicaciones:
 ## <a name="deploying-apps"></a>Implementación de aplicaciones
 
 Sea cual sea el método que use para empaquetar las aplicaciones, una vez completado, estará listo para seguir los pasos descritos en Implementar aplicaciones en dispositivos [de Escritorio administrado de Microsoft.](../get-started/deploy-apps.md)
+
+
+## <a name="steps-to-get-ready"></a>Pasos para prepararse
+
+1. Revisar [Requisitos previos de Microsoft Managed Desktop](prerequisites.md).
+2. Usar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
+3. [Requisitos previos para cuentas de invitados](guest-accounts.md)
+4. [Configuración de red para el Escritorio administrado de Microsoft](network.md)
+5. [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](certs-wifi-lan.md)
+6. [Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft](authentication.md)
+7. [Aplicaciones en Microsoft Managed Desktop](apps.md) (este artículo)
+8. [Preparar unidades asignadas para el Escritorio administrado de Microsoft](mapped-drives.md)
+9. [Preparar recursos de impresión para el Escritorio administrado de Microsoft](printing.md)

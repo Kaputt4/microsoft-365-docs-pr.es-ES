@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Implemente características de seguridad y cumplimiento de Microsoft 365 y proteja su información personal.
-ms.openlocfilehash: 657b3c9c6416c8a38629a0d26253e1222aa6d242
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2d3a5baa063e6672760dda60ae6d76ea928ccd16
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928477"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500986"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteger la información sujeta a la regulación de privacidad de datos
 
@@ -90,7 +90,8 @@ Para obtener información sobre otras capacidades de protección de la informaci
 
 Las etiquetas de confidencialidad del marco de Microsoft Information Protection le permiten clasificar y proteger los datos de su organización sin obstaculizar la productividad de los usuarios y su capacidad de colaboración.
 
-![Etiquetas de confidencialidad en Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
+> [!div class="mx-imgBorder"]
+> ![Etiquetas de confidencialidad en Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
 
 ### <a name="prerequisites-for-sensitivity-labels"></a>Requisitos previos para etiquetas de confidencialidad
 
@@ -115,7 +116,7 @@ Complete estas actividades antes de implementar cualquiera de las funciones basa
 
       Si está planeando usar el etiquetado de confidencialidad moderno para la protección de correo electrónico y los métodos de cifrado de correo electrónico existentes, como OME, pueden coexistir, pero debe comprender los escenarios en los que se debe aplicar cualquiera de los dos. Consulte [Office 365 Message Encryption new capabilities (OME),](#office-365-message-encryption-ome-new-capabilities)que incluye una tabla que compara la protección de tipo de etiqueta de confidencialidad moderna con la protección basada en OME.
 
-3. Planear la integración en un esquema de protección de la información más amplio. Además de la coexistencia con OME, las etiquetas de confidencialidad actuales se pueden usar junto con funcionalidades como prevención de pérdida de datos (DLP) de Microsoft 365 y Microsoft Cloud App Security. Consulta [Etiquetas de confidencialidad y Microsoft Cloud App Security para](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security) lograr tus objetivos de protección de la información relacionados con la privacidad de datos.
+3. Planear la integración en un esquema de protección de la información más amplio. Además de la coexistencia con OME, las etiquetas de confidencialidad se pueden usar junto con funcionalidades como prevención de pérdida de datos (DLP) de Microsoft 365 y Microsoft Cloud App Security. Consulta [Microsoft Information Protection en Microsoft 365](../compliance/information-protection.md) para lograr tus objetivos de protección de la información relacionados con la privacidad de datos.
 
 4. Desarrollar un esquema de clasificación y control de etiquetas de confidencialidad. Vea [Clasificación de datos y Taxonomía de etiquetas de confidencialidad.](https://aka.ms/dataclassificationwhitepaper)
 
@@ -215,11 +216,13 @@ Por ejemplo, puede identificar cualquier documento que contenga un número de ta
 
 También puede supervisar y proteger elementos confidenciales en las versiones instaladas localmente de Excel, PowerPoint y Word, que incluyen la capacidad de identificar elementos confidenciales y aplicar directivas DLP. DLP proporciona supervisión continua cuando las personas comparten contenido de estas aplicaciones de Office.
 
-![Cargas de trabajo admitidas para DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
+> [!div class="mx-imgBorder"]
+> ![Cargas de trabajo admitidas para DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
 
 En esta figura se muestra un ejemplo de DLP que protege los datos personales.
 
-![Ejemplo de protección de datos personales con DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
+> [!div class="mx-imgBorder"]
+> ![Ejemplo de protección de datos personales con DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
 
 DLP se usa para identificar un documento o correo electrónico que contiene un registro de mantenimiento y, a continuación, bloquea automáticamente el acceso a ese documento o bloquea el envío del correo electrónico. A continuación, DLP notifica al destinatario con una sugerencia de directiva y envía una alerta al usuario final y al administrador.
 
@@ -252,7 +255,8 @@ Aunque las etiquetas de confidencialidad no se pueden usar en condiciones de dir
 
 Las directivas DLP se configuran en el Centro de administración de Cumplimiento de Microsoft y especifican el nivel de protección, el tipo de información confidencial que está buscando la directiva y las cargas de trabajo de destino. Sus componentes básicos consisten en identificar la protección y los tipos de datos.
 
-![Configuración de directivas DLP en Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+> [!div class="mx-imgBorder"]
+> ![Configuración de directivas DLP en Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
 A continuación se muestra una directiva DLP de ejemplo para conocer el RGPD.
 
@@ -270,7 +274,7 @@ La primera configuración, Awareness, se puede usar como punto de partida y nive
 
 >[!Note]
 >A medida que aumenten los niveles de protección, la capacidad de los usuarios para compartir y acceder a la información disminuirá en algunos casos y podría afectar su productividad o capacidad para completar tareas diarias.
->
+
 
 To help your employees continue to be productive in a more secure environment when increasing protection levels, take the time to train and educate them on new security policies and procedures.
 
@@ -285,7 +289,8 @@ Las etiquetas de confidencialidad pueden funcionar junto con DLP para proporcion
 
 Una vez determinados estos elementos, puede usar los tipos de información confidencial, la taxonomía de etiquetado de confidencialidad y las directivas DLP juntas. En esta figura se muestra un ejemplo.
 
-![Ejemplo de etiquetas de confidencialidad que funcionan con DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
+> [!div class="mx-imgBorder"]
+> ![Ejemplo de etiquetas de confidencialidad que funcionan con DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
 [Ver una versión más grande de esta imagen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 

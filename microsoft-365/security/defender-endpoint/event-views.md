@@ -1,5 +1,5 @@
 ---
-title: Ver eventos de reducción de superficie de ataque
+title: Ver eventos de la reducción de la superficie expuesta a ataques
 description: Importar vistas personalizadas para ver eventos de reducción de superficie de ataque.
 keywords: vista de eventos, protección contra vulnerabilidades, auditoría, revisión, eventos
 search.product: eADQiWindows 10XVcnh
@@ -8,19 +8,19 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: de605a667284c1218a3efe6e388d99b26b42e333
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 0a2ec16685ede2e625528fc3944943923bba3fc9
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076616"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569748"
 ---
-# <a name="view-attack-surface-reduction-events"></a>Ver eventos de reducción de superficie de ataque
+# <a name="view-attack-surface-reduction-events"></a>Ver eventos de la reducción de la superficie expuesta a ataques
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -72,11 +72,11 @@ También puede navegar manualmente hasta el área de eventos que corresponde a l
 
     ![Animación que resalta la opción crear vista personalizada en la ventana Visor de eventos](/windows/security/threat-protection/images/events-create)
 
-3. Vaya a la pestaña XML y seleccione **Editar consulta manualmente.** Verá una advertencia de que no puede editar  la consulta mediante la pestaña Filtro si usa la opción XML. Haga clic en **Sí**.
+3. Vaya a la pestaña XML y seleccione **Editar consulta manualmente.** Verá una advertencia de que no puede editar  la consulta mediante la pestaña Filtro si usa la opción XML. Seleccione **Sí**.
 
 4. Pegue el código XML de la característica desde la que desea filtrar los eventos en la sección XML.
 
-5. Seleccione **Aceptar**. Especifique un nombre para el filtro.
+5. Elija **Aceptar**. Especifique un nombre para el filtro.
 
 6. Creará una vista personalizada que filtra para mostrar solo los eventos relacionados con esa característica.
 
@@ -147,32 +147,32 @@ Puedes acceder a estos eventos en el visor de eventos de Windows:
 
 Característica | Proveedor/origen | Id. de evento | Descripción
 :-|:-|:-:|:-
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 1 | Auditoría de ACG
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 2 | Aplicación de ACG
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 3 | No permitir la auditoría de procesos secundarios
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 4  | No permitir el bloqueo de procesos secundarios
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 5  | Bloquear la auditoría de imágenes de baja integridad
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 6  | Bloquear bloque de imágenes de baja integridad
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 7  | Bloquear la auditoría de imágenes remotas
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 8  | Bloquear bloque de imágenes remotas
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 9  | Deshabilitar la auditoría de llamadas del sistema win32k
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 10   | Deshabilitar el bloqueo de llamadas del sistema win32k
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 11 | Auditoría de protección de integridad de código
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 12  | Bloqueo de protección de integridad de código
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 13 | Auditoría del EAF
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 14  | Aplicación de EAF
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 15  | Auditoría de EAF+
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 16  | Aplicación de EAF+
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 17  | Auditoría de IAF
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 18  | IAF enforce
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 19 | Auditoría de StackPivot de ROP
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 20 | Aplicación de StackPivot de ROP
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) |  21 | Auditoría rop CallerCheck
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 22 | Exigir ROP CallerCheck
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 23 | Auditoría de Rop SimExec
-Protección contra vulnerabilidades | Security-Mitigations (modo kernel/modo de usuario) | 24 | Rop SimExec enforce
-Protección contra vulnerabilidades | WER-Diagnostics | 5  | Bloque de CFG
-Protección contra vulnerabilidades | Win32K (operativo) | 260 | Fuente que no es de confianza
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 1 | Auditoría de ACG
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 2 | Aplicación de ACG
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 3 | No permitir la auditoría de procesos secundarios
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 4  | No permitir el bloqueo de procesos secundarios
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 5  | Bloquear la auditoría de imágenes de baja integridad
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 6  | Bloquear bloque de imágenes de baja integridad
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 7  | Bloquear la auditoría de imágenes remotas
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 8  | Bloquear bloque de imágenes remotas
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 9  | Deshabilitar la auditoría de llamadas del sistema win32k
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 10   | Deshabilitar el bloqueo de llamadas del sistema win32k
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 11 | Auditoría de protección de integridad de código
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 12  | Bloqueo de protección de integridad de código
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 13 | Auditoría del EAF
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 14  | Aplicación de EAF
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 15  | Auditoría de EAF+
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 16  | Aplicación de EAF+
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 17  | Auditoría de IAF
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 18  | IAF enforce
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 19 | Auditoría de StackPivot de ROP
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 20 | Aplicación de StackPivot de ROP
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) |  21 | Auditoría rop CallerCheck
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 22 | Exigir ROP CallerCheck
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 23 | Auditoría de Rop SimExec
+Protección contra vulnerabilidades de seguridad | Security-Mitigations (modo kernel/modo de usuario) | 24 | Rop SimExec enforce
+Protección contra vulnerabilidades de seguridad | WER-Diagnostics | 5  | Bloque de CFG
+Protección contra vulnerabilidades de seguridad | Win32K (operativo) | 260 | Fuente que no es de confianza
 Protección de red | Windows Defender (operativo) | 5007 | Evento cuando se cambia la configuración
 Protección de red | Windows Defender (operativo) | 1125 | Evento cuando la protección de red se dispara en modo auditoría
 Protección de red | Windows Defender (operativo) | 1126 | Evento cuando la protección de red se dispara en modo de bloqueo

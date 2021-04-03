@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7ce3053fbc05f7340eea8dff08c9f7aaaeb9d7c0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b22badcb9c099679e3d785e407f83d2121a84901
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076304"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500365"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Conozca el lenguaje de consulta de búsqueda avanzada
 
@@ -182,7 +182,7 @@ La sección **Comenzar** ofrece algunas consultas sencillas con operadores de us
 Para más información sobre el lenguaje de consulta Kusto y los operadores compatibles, vaya a la [documentación del lenguaje de consulta Kusto](/azure/kusto/query/).
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
+- [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Trabajar con resultados de consulta](advanced-hunting-query-results.md)
 - [Usar consultas compartidas](advanced-hunting-shared-queries.md)
 - [Buscar entre dispositivos, correos electrónicos, aplicaciones e identidades](advanced-hunting-query-emails-devices.md)

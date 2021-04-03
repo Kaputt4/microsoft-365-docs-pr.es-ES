@@ -9,12 +9,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3decc7d67decc5557e7921e68108e2ddb447f0fd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 971644aafabda733bf745fae278bdfeeed3282e3
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924557"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574552"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Preparar recursos de impresión para el Escritorio administrado de Microsoft
 
@@ -37,3 +38,15 @@ Si ha decidido implementar impresoras mediante un script de PowerShell personali
 3.  Con el Portal de administración, le haremos saber cuándo se ha completado la solicitud. Inicialmente, solo implementaremos la configuración en los dispositivos del grupo de implementación de prueba.
 4.  Debe probar y confirmar si la configuración funciona como espera. Responda mediante la pestaña **Discusión** de la solicitud de soporte técnico para que sepamos cuándo ha completado las pruebas.
 5.  A continuación, implementaremos la configuración en los otros grupos de implementación.
+
+## <a name="steps-to-get-ready"></a>Pasos para prepararse
+
+1. Revisar [Requisitos previos de Microsoft Managed Desktop](prerequisites.md).
+2. Usar [herramientas de evaluación de preparación](readiness-assessment-tool.md).
+3. [Requisitos previos para cuentas de invitados](guest-accounts.md)
+4. [Configuración de red para el Escritorio administrado de Microsoft](network.md)
+5. [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](certs-wifi-lan.md)
+6. [Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft](authentication.md)
+7. [Aplicaciones en Escritorio administrado de Microsoft](apps.md)
+8. [Preparar unidades asignadas para el Escritorio administrado de Microsoft](mapped-drives.md)
+9. [Preparar recursos de impresión para Microsoft Managed Desktop](printing.md) (este artículo)

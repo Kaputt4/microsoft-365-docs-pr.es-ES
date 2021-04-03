@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b42e25c409ba19639e77e95fafc3d939514511ea
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 775592cd2ed9c29df79b04e07cb53efb7bea82d6
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076483"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501243"
 ---
 # <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Vulnerabilidades en mi organización: administración de amenazas y vulnerabilidades
 
@@ -155,5 +155,5 @@ Informe de un falso positivo cuando vea información imprecisa, inexacta o incom
 - [Introducción a la administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 - [Recomendaciones de seguridad](tvm-security-recommendation.md)
 - [Inventario de software](tvm-software-inventory.md)
-- [Información del panel](tvm-dashboard-insights.md)
+- [Panel de Conclusiones](tvm-dashboard-insights.md)
 - [Ver y organizar la lista de Microsoft Defender para dispositivos de punto de conexión](machines-view-overview.md)

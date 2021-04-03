@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e86cba39663e96beffc00aa94d6cbcdf7a6e1e42
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e6a11af94a5d2b2099d14b660cf65c846532ebd1
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075104"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500829"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -41,20 +41,20 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Fecha y hora en que se registró el evento. |
 | `DeviceId` | cadena | Identificador único del dispositivo en el servicio |
-| `DeviceName` | string | Nombre de dominio completo (FQDN) del dispositivo |
-| `ClientVersion` | string | Versión del agente de punto de conexión o sensor que se ejecuta en el dispositivo |
-| `PublicIP` | string | Dirección IP pública usada por el dispositivo incorporado para conectarse al servicio Defender para endpoints. Podría ser la dirección IP del propio dispositivo, un dispositivo NAT o un proxy |
-| `OSArchitecture` | string | Arquitectura del sistema operativo que se ejecuta en el dispositivo |
-| `OSPlatform` | string | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 10 y Windows 7 |
-| `OSBuild` | string | Versión de compilación del sistema operativo que se ejecuta en el dispositivo |
+| `DeviceName` | cadena | Nombre de dominio completo (FQDN) del dispositivo |
+| `ClientVersion` | cadena | Versión del agente de punto de conexión o sensor que se ejecuta en el dispositivo |
+| `PublicIP` | cadena | Dirección IP pública usada por el dispositivo incorporado para conectarse al servicio Defender para endpoints. Podría ser la dirección IP del propio dispositivo, un dispositivo NAT o un proxy |
+| `OSArchitecture` | cadena | Arquitectura del sistema operativo que se ejecuta en el dispositivo |
+| `OSPlatform` | cadena | Plataforma del sistema operativo que se ejecuta en el dispositivo. Esto indica sistemas operativos específicos, incluidas las variaciones dentro de la misma familia, como Windows 10 y Windows 7 |
+| `OSBuild` | cadena | Versión de compilación del sistema operativo que se ejecuta en el dispositivo |
 | `IsAzureADJoined` | boolean | Indicador booleano de si el dispositivo está unido a Azure Active Directory |
-| `LoggedOnUsers` | string | Lista de todos los usuarios que han iniciado sesión en el dispositivo en el momento del evento en formato de matriz JSON |
-| `RegistryDeviceTag` | string | Etiqueta de dispositivo agregada a través del Registro |
+| `LoggedOnUsers` | cadena | Lista de todos los usuarios que han iniciado sesión en el dispositivo en el momento del evento en formato de matriz JSON |
+| `RegistryDeviceTag` | cadena | Etiqueta de dispositivo agregada a través del Registro |
 | `ReportId` | largo | Identificador de eventos basado en un contador de repetición. Para identificar eventos únicos, esta columna debe usarse junto con las columnas DeviceName y Timestamp |
-| `OSVersion` | string | Versión del sistema operativo que se ejecuta en el dispositivo |
-| `MachineGroup` | string | Grupo de máquinas de la máquina. Este grupo lo usa el control de acceso basado en roles para determinar el acceso a la máquina |
+| `OSVersion` | cadena | Versión del sistema operativo que se ejecuta en el dispositivo |
+| `MachineGroup` | cadena | Grupo de máquinas de la máquina. Este grupo lo usa el control de acceso basado en roles para determinar el acceso a la máquina |
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
+- [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Entender el esquema](advanced-hunting-schema-reference.md)

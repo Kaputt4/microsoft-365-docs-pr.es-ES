@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c8ad69930ce4faecbffbc6d2fab59bbe2cac06fa
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 13ac09b1ad918ed945edec6167fd57ea02b616ea
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071803"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500184"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Crear y ver excepciones para recomendaciones de seguridad: administración de amenazas y vulnerabilidades
 
@@ -141,7 +141,7 @@ El impacto (después de las excepciones) muestra el impacto restante en la puntu
 ## <a name="related-topics"></a>Temas relacionados
 
 - [Introducción a la administración de amenazas y vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
-- [Corregir vulnerabilidades](tvm-remediation.md)
+- [Corregir puntos vulnerables](tvm-remediation.md)
 - [Recomendaciones de seguridad](tvm-security-recommendation.md)
 - [Puntuación de exposición](tvm-exposure-score.md)
-- [Puntuación segura de Microsoft para dispositivos](tvm-microsoft-secure-score-devices.md)
+- [Puntuación de seguridad de Microsoft para dispositivos](tvm-microsoft-secure-score-devices.md)

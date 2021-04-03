@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3760ff84e6abfbe05d9e4605d64087d0077300e3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: be638141e205946be18d6a718470e7b92b18b1e7
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071635"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500418"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -42,8 +42,8 @@ Esta función devuelve una tabla con las siguientes columnas:
 | Column | Tipo de datos | Descripción |
 |------------|-------------|-------------|
 | `Timestamp` | datetime | Última hora en la que se observó el dispositivo con la dirección IP |
-| `IPAddress` | string | Dirección IP usada por el dispositivo |
-| `IPType` | string | Indica si la dirección IP es una dirección pública o privada |
+| `IPAddress` | cadena | Dirección IP usada por el dispositivo |
+| `IPType` | cadena | Indica si la dirección IP es una dirección pública o privada |
 | `NetworkAdapterType` | Entero | Tipo de adaptador de red usado por el dispositivo al que se ha asignado la dirección IP. Para obtener los valores posibles, consulte [esta enumeración](/dotnet/api/system.net.networkinformation.networkinterfacetype) |
 | `ConnectedNetworks` | Entero | Redes a las que está conectado el adaptador con la dirección IP asignada. Cada matriz JSON contiene el nombre de red, la categoría (público, privado o dominio), una descripción y una marca que indica si está conectada públicamente a Internet |
 
@@ -82,6 +82,6 @@ AssignedIPAddresses(DeviceName, Date)
 ```
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
+- [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)

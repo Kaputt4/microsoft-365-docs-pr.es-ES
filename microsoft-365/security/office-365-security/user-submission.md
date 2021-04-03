@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d3f2640752f2dae152ef4be8b9ac2d2996c802a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d86c79f0f0ab74d1dfbb88e7803f4ee4d691ea73
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206055"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501179"
 ---
 # <a name="user-submissions-policy"></a>Directiva de envíos de usuarios
 
@@ -119,6 +119,9 @@ En **Opciones para mostrar cuándo se notifican los mensajes,** seleccione al me
 
         > [!NOTE]
         > Las organizaciones gubernamentales de Estados Unidos (GCC, GCC-H y DoD) solo pueden configurar el **buzón personalizado**. Las otras dos opciones están deshabilitadas.
+
+        > [!NOTE]
+        > Si las organizaciones están configuradas para enviar solo al buzón personalizado, los mensajes notificados no se enviarán para volver a examinarse y los resultados en el portal de mensajes notificados por el usuario siempre estarán vacíos.
 
       Cuando haya terminado, haga clic en **Confirmar**.
 
