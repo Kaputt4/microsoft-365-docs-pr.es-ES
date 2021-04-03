@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Encuentre respuestas a las preguntas más frecuentes sobre Microsoft Compliance Manager, lo que ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos.
-ms.openlocfilehash: a6ce93a39e242d5edf4806ad974296c8c007561e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: efa9de8506c088ceae64de26d32efe8553d0b574
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922834"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570399"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>Preguntas frecuentes del Administrador de cumplimiento
 
@@ -73,7 +73,7 @@ El Administrador de cumplimiento es una solución integral en el Centro de cumpl
 
 ## <a name="are-there-licensing-requirements-for-using-compliance-manager"></a>¿Hay requisitos de licencia para usar el Administrador de cumplimiento?
 
-Sí. La versión de GA del Administrador de cumplimiento contiene nuevos términos de licencia. Todas las organizaciones con licencias de Office 365 y Microsoft 365, y los clientes moderados y GCC High de la Comunidad gubernamental de Estados Unidos (GCC), tienen acceso al Administrador de cumplimiento. Sin embargo, las evaluaciones disponibles para su organización y la forma en que administra las plantillas de evaluación dependen del contrato de licencia. Visite la [guía de licencias de Microsoft 365 para obtener](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) más información sobre seguridad y cumplimiento.
+Sí. La versión de GA del Administrador de cumplimiento contiene nuevos términos de licencia. Todas las organizaciones con licencias de Office 365 y Microsoft 365, y los clientes moderados, GCC High y del Departamento de Defensa (DoD) de la Comunidad gubernamental de Estados Unidos (GCC), tienen acceso al Administrador de cumplimiento. Sin embargo, las evaluaciones disponibles para su organización y la forma en que administra las plantillas de evaluación dependen del contrato de licencia. Visite la [guía de licencias de Microsoft 365 para obtener](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) más información sobre seguridad y cumplimiento.
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>Si tengo una puntuación alta, ¿significa que soy totalmente compatible?
 

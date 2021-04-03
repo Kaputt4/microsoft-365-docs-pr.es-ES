@@ -1,6 +1,6 @@
 ---
 title: Preparar unidades asignadas para el Escritorio administrado de Microsoft
-description: Pasos importantes para asegurarse de que
+description: Pasos importantes para asegurarse de que los usuarios pueden tener acceso a datos en unidades asignadas
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: cd45d6155fc0e01f6a285f6182aa051281d160e0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: f770f5083fe9193660b03e7971b09a127f2dae16
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922913"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574564"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Preparar unidades asignadas para el Escritorio administrado de Microsoft
 
@@ -52,4 +53,16 @@ Asegúrese de que las unidades asignadas no se pueden evitar y ha revisado cuida
 2. Envíe una solicitud de soporte técnico titulada "Implementación de unidades asignadas" y proporcione todos los detalles de recurso compartido de archivos necesarios.  
 3. Las operaciones de TI de Escritorio administrado de Microsoft aconsejarán, mediante actualizaciones de solicitudes de soporte técnico, cuando se haya completado la solicitud. Inicialmente, esta configuración solo se implementará en dispositivos del grupo de implementación de prueba.  
 4. Debe probar y confirmar si la configuración implementada por las operaciones de TI de Escritorio administrado de Microsoft funciona como espera. Responda con la pestaña Discusión en los detalles de la misma solicitud de soporte técnico para notificar a las operaciones de TI de Escritorio administrado de Microsoft una vez completadas las pruebas.  
-5. A continuación, el equipo de operaciones de TI de Escritorio administrado de Microsoft implementará la configuración en los demás grupos de implementación.
+5. A continuación, el equipo de operaciones de TI de Escritorio administrado de Microsoft implementará la configuración en los demás grupos de implementación. 
+
+## <a name="steps-to-get-ready"></a>Pasos para prepararse
+
+1. Revisar [Requisitos previos de Microsoft Managed Desktop](prerequisites.md).
+2. [Usar herramientas de evaluación de preparación](readiness-assessment-tool.md).
+3. [Requisitos previos para cuentas de invitados](guest-accounts.md)
+4. [Configuración de red para el Escritorio administrado de Microsoft](network.md)
+5. [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](certs-wifi-lan.md)
+6. [Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft](authentication.md)
+7. [Aplicaciones en Escritorio administrado de Microsoft](apps.md)
+8. [Preparar unidades asignadas para Microsoft Managed Desktop](mapped-drives.md) (este artículo)
+9. [Preparar recursos de impresión para el Escritorio administrado de Microsoft](printing.md)

@@ -14,26 +14,18 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Aprende a activar y administrar aplicaciones de terceros en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: f560b23871fc6d6ecb319a5704453f2400cb9982
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 974ce99b55dcb078286d7f6dba35166e51ce62a7
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911415"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576918"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Administrar suscripciones de aplicaciones de terceros para su organización
 
 Puedes administrar licencias y facturación de aplicaciones de terceros en el nuevo Centro de administración de Microsoft 365. Las características actualizadas incluyen una administración de suscripción mejorada, un acceso mejorado a la información de facturación y una mayor flexibilidad para administrar facturas. La administración de suscripciones se basa en la plataforma de comercio actualizada de Microsoft. Esto se aplica a las aplicaciones de software como servicio que los clientes compran directamente o a un proveedor de terceros.
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
-
 Puedes administrar las licencias y la facturación de aplicaciones de terceros en el Centro de administración de Microsoft 365 con el modo de vista previa activado. Las características actualizadas incluyen una administración de suscripción mejorada, un acceso mejorado a la información de facturación y una mayor flexibilidad para administrar facturas. La administración de suscripciones se basa en la plataforma de comercio actualizada de Microsoft. Esto se aplica a las aplicaciones de software como servicio que los clientes compran directamente o a un proveedor de terceros.
-
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>Cómo obtener aplicaciones de software como servicio
 
@@ -50,7 +42,7 @@ Los proveedores de aplicaciones venden sus aplicaciones a una tarifa plana o com
 - **Tarifa plana:** también denominada precio basado en el sitio, las aplicaciones tienen un precio mensual o anual. En la página de la aplicación, la cantidad de licencia aparece en Unlimited.
 - **Licencias:** las aplicaciones tienen un precio por licencia. Los clientes asignan licencias a cada usuario de su organización
 
-## <a name="supported-regions"></a>Regiones compatibles
+## <a name="supported-regions"></a>Regiones admitidas
 
 La compatibilidad con aplicaciones de terceros está disponible en estas regiones:
 
@@ -107,7 +99,7 @@ Los administradores pueden cambiar el número de licencias propiedad de su organ
 
 ## <a name="manage-payment-methods"></a>Administrar métodos de pago
 
-Las aplicaciones de software como servicio tienen asignado un perfil de facturación. Los perfiles de facturación te permiten personalizar qué productos se incluyen en la factura y cómo pagas tus facturas. Entre ellos se incluyen:
+Las aplicaciones de software como servicio tienen asignado un perfil de facturación. Los perfiles de facturación te permiten personalizar qué productos se incluyen en la factura y cómo pagas tus facturas. Incluyen:
 
 - **Métodos de pago:** tarjetas de crédito o transferencia bancaria
 - **Información de contacto:** dirección de facturación y un nombre de contacto

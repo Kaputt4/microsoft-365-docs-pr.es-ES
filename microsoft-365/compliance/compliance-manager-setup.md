@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Establezca los permisos y roles de usuario del Administrador de cumplimiento de Microsoft y configure las pruebas automatizadas de las acciones. Administrar el historial de usuarios y filtrar la vista de panel.
-ms.openlocfilehash: 4558f6b2a75f1635c7984b386f217efa148b22af
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 8877a9a1e65a624708646c17a2517647c8a72f6a
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499035"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570562"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introducción al Administrador de cumplimiento
 
@@ -30,7 +30,7 @@ ms.locfileid: "51499035"
 
 ## <a name="who-can-access-compliance-manager"></a>Quién puede tener acceso al Administrador de cumplimiento
 
-El Administrador de cumplimiento está disponible para las organizaciones con licencias de Office 365 y Microsoft 365 y para los clientes moderados y GCC High de us Government Community Cloud (GCC). La disponibilidad de evaluación y las capacidades de administración dependen del contrato de licencia.  [Ver detalles de descripción del servicio](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+El Administrador de cumplimiento está disponible para organizaciones con licencias de Office 365 y Microsoft 365, y para clientes moderados, GCC High y del Departamento de Defensa (DoD) de US Government Community Cloud (GCC). La disponibilidad de evaluación y las capacidades de administración dependen del contrato de licencia.  [Ver detalles de descripción del servicio](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -52,7 +52,7 @@ El Administrador de cumplimiento usa un modelo de permisos de control de acceso 
 La persona que tiene el rol de administrador global de su organización puede establecer permisos de usuario para el Administrador de cumplimiento. Los permisos se pueden establecer en el Centro de seguridad de Office 365 & cumplimiento, así como en Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> Los clientes de entornos altos de la Comunidad gubernamental de Estados Unidos (GCC) solo pueden establecer permisos de usuario y roles para el Administrador de cumplimiento en Azure AD. Consulte a continuación las instrucciones de Azure AD y las definiciones de tipo de función.
+> Los clientes de entornos de alta y departamento de defensa (DoD) de la Comunidad gubernamental de Estados Unidos (GCC) solo pueden establecer permisos y roles de usuario para el Administrador de cumplimiento en Azure AD. Consulte a continuación las instrucciones de Azure AD y las definiciones de tipo de función.
 
 Para establecer permisos y asignar roles en el Centro de seguridad y & cumplimiento de Office 365, siga estos pasos:
 
@@ -100,7 +100,7 @@ En la tabla siguiente se muestran las funciones permitidas por cada rol en el Ad
 La configuración del Administrador de cumplimiento en el Centro de cumplimiento de Microsoft 365 le permite habilitar y deshabilitar las pruebas automáticas de las acciones de mejora. La configuración también le permite administrar los datos de los usuarios asociados a acciones de mejora, incluida la capacidad de reasignar acciones de mejora a un usuario diferente.  Solo las personas con un rol de administrador global o administrador de cumplimiento pueden acceder a la configuración del Administrador de cumplimiento.
 
 > [!NOTE]
-> La característica de prueba automatizada no está disponible para los clientes en entornos GCC High porque la puntuación segura no está disponible en estos entornos. Los clientes de GCC High tendrán que implementar manualmente y probar sus acciones de mejora.
+> La característica de prueba automatizada no está disponible para los clientes en entornos GCC High y DoD porque la puntuación segura no está disponible en estos entornos. Los clientes de GCC High y DoD tendrán que implementar manualmente y probar sus acciones de mejora.
 
 ### <a name="set-up-automated-testing"></a>Configurar pruebas automatizadas
 

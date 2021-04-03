@@ -2,8 +2,8 @@
 title: Migrar a Microsoft 365 Empresa desde Office 365 E3
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo mover su empresa a Microsoft 365 Empresa Premium desde Office 365 E3.
-ms.openlocfilehash: cb70260201686cae02428c715ac98ffe2f88787f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ffb82fa40f05383260ac1b97ed0bdf5f2f30c1df
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198105"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578335"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migración de Office 365 E3 a Microsoft 365 Empresa Premium
 
@@ -80,7 +80,7 @@ No es necesario realizar ningún cambio en la suscripción o los datos actuales 
 - Configuraciones de servicio de productividad y sus datos, como Teams, buzones de Exchange Online, sitios de SharePoint Online, carpetas de OneDrive para la Empresa y blocs de notas de OneNote.
 - Las aplicaciones de Office se escalarán automáticamente. Las licencias modernas de Office 365 comprobarán la asignación de licencia del usuario cada 72 horas y convertirán las aplicaciones de Office en la versión que coincida con la suscripción del usuario.
 
-### <a name="windows-10"></a>Windows 10
+### <a name="windows-10"></a>Windows 10
 
 Si Windows aún no está en la actualización de Windows Pro Creator, [actualíceslos a Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
 

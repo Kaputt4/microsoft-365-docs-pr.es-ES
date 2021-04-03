@@ -2,8 +2,8 @@
 title: Configurar el inicio de sesión multifactor en el teléfono
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén información sobre cómo configurar la autenticación multifactor en el teléfono.
-ms.openlocfilehash: a41f8b99dfbfc25af0815450b42cb83884e3246e
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 4a4041777b055b03e2ab5efede72eca56afdf589
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422056"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578668"
 ---
 # <a name="set-up-multi-factor-authentication-on-your-phone"></a>Configurar la autenticación multifactor en el teléfono
 

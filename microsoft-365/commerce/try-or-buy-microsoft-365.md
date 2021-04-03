@@ -19,21 +19,14 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo obtener una prueba gratuita o comprar una suscripción para Microsoft 365 para empresas.
 ms.date: 08/07/2020
-ms.openlocfilehash: 05ac30ae25f4748751eee04c34d049b07d5b7511
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9daa7022007aa3c71dc7291f592d3b166a2c45a5
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198442"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576906"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Probar o comprar una suscripción a Microsoft 365 para empresas
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../admin/microsoft-365-admin-center-preview.md?view=o365-21vianet).
-
-::: moniker-end
 
 Microsoft 365 para empresas es un servicio de suscripción que le permite ejecutar su organización en la nube mientras Microsoft se encarga de ti. Microsoft administra dispositivos, protege contra amenazas reales y proporciona a su organización lo último en software empresarial. Puedes suscribirte a una suscripción de prueba gratuita para Microsoft 365 Empresa Standard, Microsoft 365 Empresa Premium o Aplicaciones de Microsoft 365 para empresas y probarla durante 30 días.
 
@@ -42,7 +35,7 @@ Microsoft 365 para empresas es un servicio de suscripción que le permite ejecut
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-No necesita una cuenta de Microsoft existente para registrarse en una versión de prueba gratuita. Para todos los demás procedimientos de este artículo, debe ser administrador global o de facturación de su organización. Para más información, consulte[Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+No necesita una cuenta de Microsoft existente para registrarse en una versión de prueba gratuita. Para todos los demás procedimientos de este artículo, debe ser administrador global o de facturación de su organización. Para obtener más información, vea [Asignar roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="try-a-free-trial-subscription"></a>Probar una suscripción de prueba gratuita
 
@@ -110,6 +103,21 @@ Al comprar otra suscripción a través del Centro de administración, la nueva s
 
 > [!NOTE]
 > Debe mover usuarios de la suscripción de prueba gratuita a la nueva suscripción antes de que finalice el período de gracia de 90 días después de que expire la suscripción de prueba. Al hacerlo, se mantienen los datos, las cuentas y la configuración. De lo contrario, esa información se elimina.
+
+::: moniker range="o365-21vianet"
+## <a name="payment-options"></a>Opciones de pago
+
+Puede pagar la suscripción mediante:
+
+- Factura
+
+- Pago en línea con Alipay o China UnionPay
+
+El comprobante de pago se proporciona en forma de Fapiaos. Puede enviar su solicitud de Fapiao a nuestro sistema [Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) unos tres (3) días después de haber pagado. Para obtener más información, [vea Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
+
+> [!NOTE]
+>  No se aceptan tarjetas de crédito internacionales.
+::: moniker-end
 
 ## <a name="next-steps"></a>Siguientes pasos
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos y sugiere acciones recomendadas para ayudar a solucionar los riesgos.
-ms.openlocfilehash: 80d955f3d321ef8f82fe3654e4d7d08572ec72cc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f938bb6b82ee7e24dd58b66597f0af7a3a00a9a2
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922734"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570457"
 ---
 # <a name="microsoft-compliance-manager"></a>Administrador de cumplimiento de Microsoft
 
@@ -30,7 +30,7 @@ ms.locfileid: "50922734"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Novedades: la versión de GA del Administrador de cumplimiento
 
-El Administrador de cumplimiento ya está disponible generalmente (GA) como una solución de administración de cumplimiento integral dentro del Centro de cumplimiento de [Microsoft 365.](microsoft-365-compliance-center.md) Con esta versión, el Administrador de cumplimiento completa la transición desde su ubicación anterior en el Portal de confianza de servicio de Microsoft. El Administrador de cumplimiento también está ahora disponible para los clientes moderados y GCC High de la Comunidad gubernamental de Estados Unidos (GCC).
+El Administrador de cumplimiento ya está disponible generalmente (GA) como una solución de administración de cumplimiento integral dentro del Centro de cumplimiento de [Microsoft 365.](microsoft-365-compliance-center.md) Con esta versión, el Administrador de cumplimiento completa la transición desde su ubicación anterior en el Portal de confianza de servicio de Microsoft. El Administrador de cumplimiento también está disponible para los clientes moderados, GCC high y del Departamento de Defensa (DoD) de la Comunidad gubernamental de Estados Unidos (GCC).
 
 Lo que comenzó como la vista previa pública de la puntuación de cumplimiento ha evolucionado hasta convertirse en una herramienta centralizada con capacidades de administración de cumplimiento mejoradas y mayor facilidad de uso.  La versión de ga ofrece una colección más grande de evaluaciones predefinidas para ayudarle a escalar sus actividades de cumplimiento.
 
@@ -99,7 +99,7 @@ Una evaluación es la agrupación de controles de un reglamento, estándar o dir
 
 Las evaluaciones tienen varios componentes:
 
-- **Servicios en el ámbito:** el conjunto específico de servicios de Microsoft aplicable a la evaluación
+- **Servicios dentro del ámbito**: configuración específica de los servicios Microsoft aplicables a la evaluación
 - **Controles administrados de Microsoft:** controles para los servicios en la nube de Microsoft, que Microsoft implementa en su nombre
 - **Los controles:** a veces denominados controles administrados por el cliente, estos son controles implementados y administrados por la organización
 - **Controles compartidos:** estos son controles que su organización y Microsoft comparten la responsabilidad de implementar
@@ -113,7 +113,7 @@ Al crear evaluaciones, las asignará a un grupo. Puede configurar grupos de la f
 
 ### <a name="templates"></a>Plantillas
 
-El Administrador de cumplimiento proporciona plantillas para ayudarle a crear rápidamente evaluaciones. Puede modificar estas plantillas para crear una evaluación optimizada para sus necesidades. También puede crear una evaluación personalizada creando una plantilla con sus propios controles y acciones. Por ejemplo, es posible que desee que una plantilla cubra un control de proceso empresarial interno o un estándar regional de protección de datos que no esté cubierto por una de nuestras más de 150 plantillas de evaluación predefinidas.
+El Administrador de cumplimiento proporciona plantillas para ayudarle a crear rápidamente evaluaciones. Puede modificar estas plantillas para crear una evaluación optimizada para sus necesidades. También puede crear una evaluación personalizada creando una plantilla con sus propios controles y acciones. Por ejemplo, es posible que desee que una plantilla cubra un control de proceso empresarial interno o un estándar regional de protección de datos que no esté cubierto por una de nuestras más de 325 plantillas de evaluación predefinidas.
 
 ##### <a name="learn-more"></a>Más información
 

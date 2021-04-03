@@ -23,21 +23,14 @@ search.appverid:
 - MET150
 description: Aprenda a agregar y reducir el almacenamiento de archivos en su suscripción a Microsoft 365. Con el almacenamiento de archivos adicional, puede almacenar más contenido en SharePoint Online y OneDrive.
 ms.date: ''
-ms.openlocfilehash: b170924f40d517cb6bbdf8635ad3e163eadc8643
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d65677b9c078026343410b53acd48932258cb4b1
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911931"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576966"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Agregar espacio de almacenamiento para la suscripción
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Si empieza a quedarse sin espacio de almacenamiento en las colecciones de sitios de SharePoint Online, puede aumentar el almacenamiento de su suscripción si su plan cumple con los requisitos. Si no ve el almacenamiento adicional de archivos de **Office 365** en la lista de complementos disponibles, significa que el plan no es apto. Para obtener más información, vea [¿Mi plan es apto?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
@@ -46,7 +39,7 @@ Si empieza a quedarse sin espacio de almacenamiento en las colecciones de sitios
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o de SharePoint para realizar las tareas de este artículo. Para más información, consulte[Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o de SharePoint para realizar las tareas de este artículo. Para obtener más información, vea [Asignar roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="view-available-storage"></a>Ver almacenamiento disponible
 
@@ -111,5 +104,5 @@ Office 365 Extra File Storage está disponible para las siguientes suscripciones
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Administrar límites de almacenamiento de sitios](ttps://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (artículo)\
+[Administrar límites de almacenamiento de sitios](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (artículo)\
 [Establecer el espacio de almacenamiento predeterminado para los usuarios de OneDrive](/onedrive/set-default-storage-space)(artículo)

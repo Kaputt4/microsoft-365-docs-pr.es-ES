@@ -2,8 +2,8 @@
 title: Suscribirse a Microsoft 365 Empresa Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre lo que incluye Microsoft 365 Empresa Premium y obtenga instrucciones paso a paso para registrarse en Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 54a8e92ccced24f446e73a96f75e4aa1531a95aa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4aa1ae9ea48863434c960da69e41ffb2d3a0a89
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912518"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578115"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>Suscribirse a Microsoft 365 Empresa Premium
 
@@ -42,7 +42,7 @@ Hay tres formas de obtener Microsoft 365 Empresa Premium:
 - **Para partners de Microsoft:** si es socio, consulte [Get Microsoft 365 Business Premium from Microsoft Partner Center](get-microsoft-365-business.md).
 - **Obtener ayuda en una Microsoft Store**: Dirígete a una Microsoft [Store](https://go.microsoft.com/fwlink/?linkid=2109652). Las tiendas microsoft pueden ayudarle con las preguntas sobre los planes, ayudarle a comprar un plan que se adapte a sus necesidades empresariales y ayudarle a completar la configuración.
 
-**¿Necesita algo diferente?** Podrá:
+**¿Necesita algo diferente?** Puede:
 - [Actualice su plan de Office 365 a Microsoft 365 Empresa Premium](migrate-to-microsoft-365-business.md).
 - [Obtenga una versión de prueba gratuita](https://go.microsoft.com/fwlink/p/?linkid=2102309) de Microsoft 365 Empresa Premium durante un mes.
 - [Regístrate en Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkID=510935) si necesitas un plan con menos características. Descubra lo que cada plan de negocio incluye [en products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397).

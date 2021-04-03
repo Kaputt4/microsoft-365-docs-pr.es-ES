@@ -2,8 +2,8 @@
 title: Configurar la suscripción a Microsoft 365 Empresa Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo configurar Microsoft 365 Empresa Premium.
-ms.openlocfilehash: f8c40cc5bf5ef062826abc7ca04935950895ef43
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 2e6cdf3c2280b527571d62f5e3535dcea6ad3523
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422020"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578656"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Configuración de Microsoft 365 Empresa Premium
 

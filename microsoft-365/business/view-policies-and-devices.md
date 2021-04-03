@@ -2,8 +2,8 @@
 title: Ver directivas y dispositivos
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,21 +23,21 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: Para ver las directivas y acciones de dispositivos, inicie sesión en Microsoft 365 para empresas con credenciales de administrador global.
-ms.openlocfilehash: 49e878ae6d4e1a6c55dbd7bc65532f94295412a8
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 39d88e8fa84055e4bac62899a1b84bdf42f366a2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470603"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578035"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>Ver y administrar directivas y dispositivos
 
 Este artículo se aplica a Microsoft 365 Empresa Premium.
 
-## <a name="view-and-edit-device-policies"></a>Ver y editar directivas de dispositivo
+## <a name="view-and-edit-device-policies"></a>Ver y editar directivas de dispositivos
 
 1.  Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
-2. En el panel de navegación izquierdo, elija **Directivas de** \> **dispositivos.**
+2. En el panel de navegación izquierdo, elija **Directivas de** \> **dispositivos**.
 
     En esta página, puede crear, editar, cambiar el grupo de destino o eliminar una directiva.
 
@@ -45,9 +45,9 @@ Este artículo se aplica a Microsoft 365 Empresa Premium.
   
 ## <a name="view-and-manage-devices"></a>Ver y administrar dispositivos
 
-1. En el panel de navegación izquierdo, elija **Administrar** \> **dispositivos.** 
+1. En la navegación izquierda, elija **Dispositivos** \> **administrar**. 
     
-    En esta página, puede seleccionar uno o más dispositivos y quitar los datos de la empresa. En el caso de los dispositivos con Windows 10 para los que tenga configuradas las opciones de protección, también puede elegir restablecer la configuración de fábrica.
+    En esta página, puede seleccionar uno o varios dispositivos y quitar datos de la empresa. En el caso de los dispositivos con Windows 10 para los que tenga configuradas las opciones de protección, también puede elegir restablecer la configuración de fábrica.
   
    ![Página Administrar dispositivos](../media/devicesmanage.png)
 

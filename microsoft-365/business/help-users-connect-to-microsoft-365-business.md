@@ -2,8 +2,8 @@
 title: Ayudar a los usuarios a conectarse a Microsoft 365 Empresa Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -28,16 +28,16 @@ search.appverid:
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
 description: Obtén información sobre qué esperar una vez completada la configuración de Business Cloud Suite y las directivas de dispositivo predeterminadas estén en su lugar y listas para aplicarse.
-ms.openlocfilehash: d3aad182f7e233f239b35e35c032e8ca09c57769
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d3e47247197f2688388ed50057b16fde53e7e830
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400930"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578455"
 ---
 # <a name="help-users-connect-to-microsoft-365-business-premium"></a>Ayudar a los usuarios a conectarse a Microsoft 365 Empresa Premium
 
-Después de completar la configuración, las directivas de dispositivo predeterminadas están en su lugar y listas para aplicarse. En dispositivos móviles, los usuarios descargan aplicaciones de Office. A continuación, las directivas se aplican cuando el usuario inicia sesión con su cuenta de trabajo o escuela. Necesita completar tareas adicionales antes de aplicar las directivas en equipos PC con Windows, como la actualización local. Vea y comparta los siguientes temas para ayudar a los usuarios a configurarse y conectarse:
+Después de completar la configuración, las directivas de dispositivo predeterminadas están en su lugar y listas para aplicarse. En dispositivos móviles, los usuarios descargan aplicaciones de Office. A continuación, se aplican directivas cuando el usuario inicia sesión con su cuenta laboral o educativa. Necesita completar tareas adicionales antes de aplicar las directivas en equipos PC con Windows, como la actualización local. Vea y comparta los siguientes temas para ayudar a los usuarios a configurarse y conectarse:
   
 [Configurar dispositivos Windows para usuarios de Microsoft 365 Empresa Premium](set-up-windows-devices.md)
   

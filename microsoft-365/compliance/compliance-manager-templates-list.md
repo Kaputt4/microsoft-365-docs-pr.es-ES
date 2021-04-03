@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager proporciona plantillas para crear evaluaciones que se alineen con las normativas, estándares y leyes nacionales, regionales y del sector.
-ms.openlocfilehash: b83ad63de34217ac7c469dc784ca85644f6a5e3d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8cdeb6da09a42ad0331690b843ab4f039a5c2bf6
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922824"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570572"
 ---
 # <a name="compliance-manager-templates-list"></a>Lista de plantillas del Administrador de cumplimiento
 
@@ -60,7 +60,7 @@ Obtenga más información [sobre cómo ver y administrar las plantillas](complia
 - NIST 800-53 Rev.4
 
 > [!NOTE]
-> Para los clientes moderados y GCC High de la Comunidad gubernamental de Estados Unidos (GCC), se incluyen las plantillas de certificación de modelos de madurez de ciberseguridad (CMMC) niveles de 1 a 5, además de las plantillas enumeradas anteriormente.
+> Para los clientes de la Comunidad gubernamental de Estados Unidos (GCC) Moderados, GCC High y Departamento de Defensa (DoD): se incluyen las plantillas Certificación del modelo de madurez de ciberseguridad (CMMC) Niveles de 1 a 5, además de las plantillas enumeradas anteriormente.
 
 ## <a name="premium-templates"></a>Plantillas Premium
 

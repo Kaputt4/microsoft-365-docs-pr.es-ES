@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo usar El analizador de configuración de cumplimiento de Microsoft para rápida ejecución con El Administrador de cumplimiento de Microsoft.
-ms.openlocfilehash: a77f38dcc0c0215e539c868e47135f5d7194f4b6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b91ac274d7270f5be9530742cf711a3918b287d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906042"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570379"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analizador de configuración de cumplimiento de Microsoft para el Administrador de cumplimiento (versión preliminar)
 
@@ -33,7 +33,7 @@ MCCA puede ayudarle a ver rápidamente qué acciones de mejora en el administrad
 
 Un recurso adicional para comprender MCCA es visitar las instrucciones [readme en GitHub](https://github.com/OfficeDev/MCCA#overview). Esta página proporciona información detallada sobre los requisitos previos y proporciona instrucciones de instalación completas. No necesita una cuenta de GitHub para tener acceso a esta página.
 
-**Disponibilidad:** MCCA está disponible para todas las organizaciones con licencias de Office 365 y Microsoft 365 y clientes moderados y GCC High de la Comunidad gubernamental de ESTADOS UNIDOS, con planes en curso para expandir el servicio a los clientes de DOD.
+**Disponibilidad:** MCCA está disponible para todas las organizaciones con licencias de Office 365 y Microsoft 365 y clientes moderados, GCC High y del Departamento de Defensa (DoD) de la Comunidad gubernamental de Estados Unidos (GCC).
 
 ## <a name="install-mcca-and-run-a-report"></a>Instalar MCCA y ejecutar un informe
 
@@ -113,7 +113,7 @@ Siga estas instrucciones para ejecutar un informe en función de una ubicación 
   | 10   | Sudamérica |
   | 11 | Sudáfrica |
   | 12  | Suiza |
-  | 13  | Emiratos Árabes Unidos |
+  | 13 | Emiratos Árabes Unidos |
   | 14  | Reino Unido |
 
 
@@ -129,11 +129,11 @@ En la tabla siguiente se muestran los roles a los que tienen acceso las seccione
 ![MCCA: roles](../media/compliance-manager-mcca-roles.png "Roles mcca")
 
 Excepciones:
-1. El usuario no podrá generar informes para IP aparte de la sección "Usar IRM para Exchange Online".
-2. El usuario podrá generar informes para IP aparte de la sección "Usar IRM para Exchange Online".
-3. El usuario podrá generar un informe para IP aparte de la sección "Habilitar el cumplimiento de la comunicación en O365".
-4. El usuario no podrá generar informes para IP aparte de la sección "Habilitar auditoría en Office 365".
-5. El usuario podrá generar un informe para IP aparte de la sección "Habilitar auditoría en Office 365".
+1. Los usuarios no podrán generar informes para IP aparte de la sección "Usar IRM para Exchange Online".
+2. Los usuarios podrán generar informes para IP aparte de la sección "Usar IRM para Exchange Online".
+3. Los usuarios podrán generar informes para IP aparte de la sección "Habilitar el cumplimiento de la comunicación en O365".
+4. Los usuarios no podrán generar informes para IP aparte de la sección "Habilitar auditoría en Office 365".
+5. Los usuarios podrán generar informes para IP aparte de la sección "Habilitar auditoría en Office 365".
 
 #### <a name="solutions-summary-section"></a>Sección Resumen de soluciones
 

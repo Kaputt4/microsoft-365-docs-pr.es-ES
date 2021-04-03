@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: Obtenga información sobre cómo colocar retenciones en los custodios y sus orígenes de datos para conservar el contenido relevante para su caso de exhibición de documentos electrónicos avanzada.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 07edcb2707d1dffecfa5a2aac6c4340ac6cbe53f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 70390a933de788a6b1190e42b5087b85a175b9a2
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926378"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570594"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Administrar retenciones en eDiscovery avanzada
 
@@ -76,8 +76,6 @@ Para crear una retención sin custodia para un caso de exhibición de documentos
       > Al hacer clic **en Elegir usuarios,** grupos o equipos para especificar los buzones que se colocarán en espera, el selector de buzones que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda.
 
    1. **Sitios de SharePoint:** haga  clic **en Elegir sitios** y, a continuación, en Elegir sitios de nuevo para especificar los sitios de SharePoint y OneDrive para la Empresa que se colocarán en espera. Escriba la dirección URL de cada sitio que quiere suspender. También puede agregar la dirección URL del sitio de SharePoint para un grupo de Microsoft 365 o un equipo de Microsoft. Haga **clic en** Elegir y, a continuación, en **Listo.**
-    
-      Consulta la **sección preguntas** más frecuentes para obtener sugerencias sobre cómo poner grupos de Microsoft 365 y Microsoft Teams en espera.
 
       > [!NOTE]
       > La dirección URL de la cuenta de OneDrive de un usuario incluye su nombre principal de usuario (UPN) (por ejemplo, `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ). En el caso poco frecuente de que se cambie el UPN de una persona, la dirección URL de OneDrive también cambiará para incorporar el nuevo UPN. Si la cuenta de OneDrive de un usuario forma parte de una retención sin custodia y se cambia su UPN, debe actualizar la retención y apuntar a la nueva dirección URL de OneDrive. Para más información, consulte [Cómo afectan los cambios de UPN a la dirección URL de OneDrive](/onedrive/upn-changes).
@@ -118,7 +116,7 @@ Tenga en cuenta lo siguiente sobre las estadísticas de retención:
 
 ## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Colocar una retención en Grupos de Microsoft Teams y Office 365
 
-Microsoft Teams se basa en grupos de Office 365. Por lo tanto, ponerlas en espera en exhibición de documentos electrónicos avanzados es muy similar. 
+Microsoft Teams se basa en grupos de Office 365. Por lo tanto, ponerlas en espera en exhibición de documentos electrónicos avanzados es muy similar.
 
 - **¿Cómo puedo asignar un sitio adicional de Grupos de Microsoft 365 o Microsoft Teams a un custodio? ¿Y qué sucede con la colocación de una retención no custodial en Grupos de Microsoft 365 y Microsoft Teams?** Microsoft Teams se basa en grupos de Microsoft 365. Por lo tanto, ponerlas en espera en un caso de exhibición de documentos electrónicos es muy similar. Tenga en cuenta lo siguiente al poner grupos de Microsoft 365 y Microsoft Teams en espera.
   - Para poner contenido ubicado en Grupos de Microsoft 365 y Microsoft Teams en espera, debe especificar el buzón y el sitio de SharePoint asociados con un grupo o equipo.
