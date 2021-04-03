@@ -90,7 +90,7 @@
           items:
             - name: Información general
               href: defender/get-started.md
-            - name: Habilitar la Protección contra amenazas de Microsoft
+            - name: Activar Microsoft 365 Defender
               href: defender/m365d-enable.md
             - name: Implementación de servicios compatibles
               href: defender/deploy-supported-services.md
@@ -140,6 +140,12 @@
                       href: defender/investigate-users.md
                 - name: Obtener tus notificaciones de correo electrónico
                   href: defender/get-incident-notifications.md
+            - name: Expertos en amenazas de Microsoft
+              items:
+                - name: Información general sobre Expertos en amenazas de Microsoft
+                  href: mtp/microsoft-threat-experts.md
+                - name: Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft
+                  href: mtp/configure-microsoft-threat-experts.md
             - name: Investigación y respuesta automatizada
               items:
                 - name: Introducción a la investigación y respuesta automatizada
@@ -422,7 +428,7 @@
             - name: Seguridad predeterminada
               href: ./office-365-security/secure-by-default.md
             - name: Configurar directivas contra suplantación de identidad (phishing) en Defender para Office 365
-              href: ./office-365-security/configure-atp-anti-phishing-policies.md
+              href: ./office-365-security/configure-mdo-anti-phishing-policies.md
             - name: Configurar directivas antimalware
               href: ./office-365-security/configure-anti-malware-policies.md
             - name: Configurar directivas contra correo electrónico no deseado

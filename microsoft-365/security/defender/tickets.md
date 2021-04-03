@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,19 +20,19 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: b52b97bf33b2164a82906bec53bed361885facd5
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f9ac4632259d26045c70551ea7ea4a8a4a7e8e85
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076640"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569876"
 ---
-# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a><span data-ttu-id="ad5be-104">Integrar vales de ServiceNow en el Centro de seguridad y cumplimiento de Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="ad5be-104">Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center</span></span>
+# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a><span data-ttu-id="f2ce0-104">Integrar vales de ServiceNow en el Centro de seguridad y cumplimiento de Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="f2ce0-104">Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 >[!CAUTION]
-><span data-ttu-id="ad5be-105">**El período de vista previa del conector de ServiceNow ha finalizado**</span><span class="sxs-lookup"><span data-stu-id="ad5be-105">**The preview period for the ServiceNow connector has ended**</span></span><br>
-><span data-ttu-id="ad5be-106">Esta funcionalidad ya no está disponible.</span><span class="sxs-lookup"><span data-stu-id="ad5be-106">This capability is no longer available.</span></span> <span data-ttu-id="ad5be-107">Gracias por sus comentarios y soporte continuado mientras determinamos los pasos siguientes.</span><span class="sxs-lookup"><span data-stu-id="ad5be-107">Thank you for your feedback and continued support while we determine next steps.</span></span>
+><span data-ttu-id="f2ce0-105">**El período de vista previa del conector de ServiceNow ha finalizado**</span><span class="sxs-lookup"><span data-stu-id="f2ce0-105">**The preview period for the ServiceNow connector has ended**</span></span><br>
+><span data-ttu-id="f2ce0-106">Esta funcionalidad ya no está disponible.</span><span class="sxs-lookup"><span data-stu-id="f2ce0-106">This capability is no longer available.</span></span> <span data-ttu-id="f2ce0-107">Gracias por sus comentarios y soporte continuado mientras determinamos los pasos siguientes.</span><span class="sxs-lookup"><span data-stu-id="f2ce0-107">Thank you for your feedback and continued support while we determine next steps.</span></span>
 
-<span data-ttu-id="ad5be-108">ServiceNow es una popular plataforma informática en la nube que ayuda a las empresas a administrar flujos de trabajo digitales para operaciones empresariales.</span><span class="sxs-lookup"><span data-stu-id="ad5be-108">ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations.</span></span> <span data-ttu-id="ad5be-109">Su plataforma Now tiene flujos de trabajo de IT, flujos de trabajo de empleados y flujos de trabajo de clientes.</span><span class="sxs-lookup"><span data-stu-id="ad5be-109">Their Now platform has IT workflows, employee workflows, and customer workflows.</span></span>
+<span data-ttu-id="f2ce0-108">ServiceNow es una popular plataforma informática en la nube que ayuda a las empresas a administrar flujos de trabajo digitales para operaciones empresariales.</span><span class="sxs-lookup"><span data-stu-id="f2ce0-108">ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations.</span></span> <span data-ttu-id="f2ce0-109">Su plataforma Now tiene flujos de trabajo de IT, flujos de trabajo de empleados y flujos de trabajo de clientes.</span><span class="sxs-lookup"><span data-stu-id="f2ce0-109">Their Now platform has IT workflows, employee workflows, and customer workflows.</span></span>
