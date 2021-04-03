@@ -57,23 +57,6 @@
       items:
         - name: Requisitos previos del Escritorio administrado de Microsoft
           href: get-ready/prerequisites.md
-        - name: Preparar la red
-          href: get-ready/network.md
-        - name: Preparar el acceso a los recursos locales
-          href: get-ready/authentication.md
-        - name: Preparar unidades mapeadas
-          href: get-ready/mapped-drives.md
-        - name: Preparar certificados y perfiles de red
-          href: get-ready/certs-wifi-lan.md
-        - name: Requisitos previos para cuentas de invitados
-          href: get-ready/guest-accounts.md
-        - name: Preparar recursos de impresión
-          href: get-ready/printing.md
-        - name: Preparar aplicaciones
-          href: get-ready/apps.md
-          items:
-            - name: Trabajar con los servicios de consultoría de Microsoft
-              href: get-ready/apps-MCS.md
         - name: Usar las herramientas de evaluación de preparación
           href: get-ready/readiness-assessment-tool.md
           items:
@@ -81,6 +64,23 @@
               href: get-ready/readiness-assessment-fix.md
             - name: Comprobador de la evaluación de preparación descargable
               href: get-ready/readiness-assessment-downloadable.md
+        - name: Requisitos previos para las cuentas de invitado
+          href: get-ready/guest-accounts.md
+        - name: Preparar red
+          href: get-ready/network.md
+        - name: Preparar certificados y perfiles de red
+          href: get-ready/certs-wifi-lan.md
+        - name: Preparar acceso a los recursos locales
+          href: get-ready/authentication.md
+        - name: Preparar aplicaciones
+          href: get-ready/apps.md
+          items:
+            - name: Trabajar con los servicios de consultoría de Microsoft
+              href: get-ready/apps-MCS.md
+        - name: Preparar unidades asignadas
+          href: get-ready/mapped-drives.md
+        - name: Preparar recursos de impresión
+          href: get-ready/printing.md
     - name: Introducción al Escritorio administrado de Microsoft
       href: get-started/index.md
       items:
