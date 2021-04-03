@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7887f26cb8ca7e0e769249a10f008308149aaa42
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: c076a64b1e35978f09999b288b6849580df24972
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186694"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579703"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-ios"></a>Implementar Microsoft Defender para endpoint para iOS
 
@@ -58,7 +58,7 @@ Implementar Defender para endpoint para iOS a través del Portal de empresa de I
     > [!div class="mx-imgBorder"]
     > ![Imagen del Centro de administración de Microsoft Endpoint Manager1](images/ios-deploy-1.png)
 
-1. En la página Agregar aplicación, haga clic en Buscar en **la Tienda de** aplicaciones y escriba ATP de Microsoft **Defender** en la barra de búsqueda. En la sección de resultados de búsqueda, haga clic en *ATP de Microsoft Defender* y haga clic en **Seleccionar**.
+1. En la página Agregar aplicación, haga clic en **Buscar en la Tienda de** aplicaciones y escriba Punto de conexión de Microsoft **Defender** en la barra de búsqueda. En la sección resultados de búsqueda, haga clic en *Extremo de Microsoft Defender* y haga clic en **Seleccionar**.
 
 1. Seleccione **iOS 11.0** como sistema operativo Mínimo. Revisa el resto de información sobre la aplicación y haz clic en **Siguiente**.
 

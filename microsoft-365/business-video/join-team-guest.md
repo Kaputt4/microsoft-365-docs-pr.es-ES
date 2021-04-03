@@ -2,8 +2,8 @@
 title: Unirse a un equipo como invitado
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo unirse a un equipo como invitado en Microsoft Teams.
-ms.openlocfilehash: 51f287361877cb0b427a38c48683c064bda99126
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: 9e60882907021c11d906ce9cd778a0f1eef32beb
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603965"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578860"
 ---
 # <a name="join-a-team-as-a-guest"></a>Unirse a un equipo como invitado
 

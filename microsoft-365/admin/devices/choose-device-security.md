@@ -2,8 +2,8 @@
 title: Comparar diferentes métodos de protección de datos de dispositivos y aplicaciones
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Elige entre diferentes métodos MDM y MAM.
-ms.openlocfilehash: c4928f272c0bdd8a7b6883f506cebf9a153e9c49
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 462fe28b1240681380d6a1d26ae362575c0d7c86
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910539"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579367"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>Opciones para proteger los dispositivos y los datos de la aplicación
 
@@ -44,7 +44,7 @@ Tiene varias formas de proteger los dispositivos y los datos de las organizacion
  
 - **Microsoft Intune** es un plan independiente que también se incluye con algunos planes de Microsoft 365 para empresas o empresas. Si tiene Intune como independiente o como parte de su suscripción, proporciona la capacidad de ajustar la administración de datos de aplicaciones y dispositivos. Para obtener más información sobre la disponibilidad con Microsoft 365, vea [availability of Intune](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune).
 
-    Microsoft Intune es un servicio basado en la nube que se centra en la administración de dispositivos móviles (MDM) y la administración de aplicaciones móviles (MAM). Puedes controlar cómo se usan los dispositivos de tu organización, incluidos teléfonos móviles, tabletas y portátiles. También puede configurar directivas específicas para controlar aplicaciones. Para obtener más información, vea [la documentación de Microsoft Intune](/mem/intune/).
+    Microsoft Intune es un servicio basado en la nube que se centra en la administración de dispositivos móviles (MDM) y en la administración de aplicaciones móviles (MAM). Puedes controlar cómo se usan los dispositivos de tu organización, incluidos teléfonos móviles, tabletas y portátiles. También puede configurar directivas específicas para controlar aplicaciones. Para obtener más información, vea [la documentación de Microsoft Intune](/mem/intune/).
 
 - Los planes Premium **de Azure Active Directory (AD)** son planes independientes que también vienen con algunos de los planes de Microsoft 365 para empresas y empresas. Para obtener más información, vea [Precios de Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).
 

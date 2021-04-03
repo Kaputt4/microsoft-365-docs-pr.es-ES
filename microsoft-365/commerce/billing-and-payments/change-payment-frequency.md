@@ -21,21 +21,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo cambiar la frecuencia con la que se factura su suscripción empresarial.
-ms.openlocfilehash: ae3e3b4d0231fc5992215d243e141fb643d13626
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a7d2f60e25611025e5b06d4e78555d59c486626d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911895"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579799"
 ---
 # <a name="change-your-billing-frequency"></a>Cambiar la frecuencia de facturación
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Al comprar una suscripción, elige la facturación mensual o anual. Para cambiar la frecuencia con la que se le factura una suscripción, siga estos pasos.
 

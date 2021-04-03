@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0311450386f3b7c9f950276340901daacc06b2a8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+audience: Admin
+ms.openlocfilehash: caf9274284548a179e088131930ae832c098b521
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453946"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579403"
 ---
 # <a name="readiness-assessment-tools"></a>Herramientas de evaluación de preparación
 
@@ -82,10 +83,22 @@ Para cada comprobación, la herramienta mostrará uno de los cuatro resultados p
 |Resultado  |Significado  |
 |---------|---------|
 |Listo     | No se requiere ninguna acción antes de completar la inscripción.        |
-|Asesoramiento    | Siga los pasos de la herramienta para obtener la mejor experiencia con la inscripción y para los usuarios. Puedes *completar* la inscripción, pero debes solucionar estos problemas antes de implementar el primer dispositivo.        |
+|Advertencia    | Siga los pasos de la herramienta para obtener la mejor experiencia con la inscripción y para los usuarios. Puedes *completar* la inscripción, pero debes solucionar estos problemas antes de implementar el primer dispositivo.        |
 |No preparado | *La inscripción producirá un* error si no se solucionan estos problemas. Siga los pasos de la herramienta para resolverlos.        |
 |Error | El rol de Azure Active Director (AD) que está usando no tiene permiso suficiente para ejecutar esta comprobación. |
 
 ## <a name="after-enrollment"></a>Después de la inscripción
 
 Después de completar la inscripción en Microsoft Managed Desktop, recuerda volver atrás y ajustar determinadas configuraciones de Intune y Azure AD. Para obtener más información, vea [Ajustar la configuración después de la inscripción.](../get-started/conditional-access.md)
+
+## <a name="steps-to-get-ready"></a>Pasos para prepararse
+
+1. Revisar [los requisitos previos de Microsoft Managed Desktop](prerequisites.md).
+2. Use [herramientas de evaluación de preparación](readiness-assessment-tool.md). (Este artículo)
+3. [Requisitos previos para cuentas de invitados](guest-accounts.md)
+4. [Configuración de red para el Escritorio administrado de Microsoft](network.md)
+5. [Preparar los certificados y los perfiles de red para el Escritorio administrado de Microsoft](certs-wifi-lan.md)
+6. [Preparar el acceso a los recursos locales para el Escritorio administrado de Microsoft](authentication.md)
+7. [Aplicaciones en Escritorio administrado de Microsoft](apps.md)
+8. [Preparar unidades asignadas para el Escritorio administrado de Microsoft](mapped-drives.md)
+9. [Preparar recursos de impresión para el Escritorio administrado de Microsoft](printing.md)

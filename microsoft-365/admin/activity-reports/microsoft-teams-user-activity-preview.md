@@ -1,7 +1,7 @@
 ---
 title: 'Informes de Microsoft 365 en el centro de administración: actividad de usuario de Microsoft Teams'
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo obtener el informe de actividad de usuario de Microsoft Teams y obtener información sobre la actividad de Teams en su organización.
-ms.openlocfilehash: 41403bcda1d1485798ac5eefe8f3386a314aea1b
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: a4f8cd995d1559da3846fbb38cc5a9441358da72
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406187"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579619"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Informes de Microsoft 365 en el centro de administración: actividad de usuario de Microsoft Teams
 
@@ -50,7 +50,7 @@ Puede visualizar el informe **Actividad de los usuarios en Microsoft Teams** par
 
 Para garantizar la calidad de los datos, llevamos a cabo comprobaciones diarias de validación de datos durante los últimos tres días y se rellenarán los vacíos detectados. Es posible que observe diferencias en los datos históricos durante el proceso.
 
-|Elemento|Description|
+|Item|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
 |Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo.   <br/> |

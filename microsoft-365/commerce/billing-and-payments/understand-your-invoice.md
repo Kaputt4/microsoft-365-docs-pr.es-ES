@@ -19,21 +19,14 @@ search.appverid:
 - MET150
 description: Obtenga información acerca de cómo leer y comprender su factura o recibo de productos empresariales de Microsoft.
 keywords: cuentas de facturación, información de la organización, facturas
-ms.openlocfilehash: 98c42bf480db8be3d750ab9788e407b7064335a9
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3752254fc6068381cd6effed0be4d5b8295f8a27
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164491"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579763"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Entender su factura o recibo
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 La factura le proporciona un resumen de los cargos y las instrucciones de pago. Puede [ver su factura en línea](#view-your-online-invoice) en el Centro de administración de Microsoft 365. También puede descargarla en Portable Document Format (.pdf) para enviarla por correo electrónico.
 

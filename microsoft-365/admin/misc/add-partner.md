@@ -2,8 +2,8 @@
 title: Agregar, cambiar o eliminar un partner asesor de suscripción
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Obtenga información sobre cómo agregar un partner asesor de suscripción como partner de registro en el momento de la compra de Microsoft 365, cambiar el partner o eliminar un partner de una suscripción.
-ms.openlocfilehash: 9734ee5f23af24ec701b8ae1fbd448d6bedb63fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 913b0e14e1bc08cfd4037775aa4b72b7280c704c
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914935"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579235"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Agregar, cambiar o eliminar un partner asesor de suscripción
 
@@ -102,7 +102,7 @@ Siga los pasos de la página proveedores para buscar o para obtener coincidencia
 1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la **pestaña Productos,** seleccione la suscripción que desea editar.
 3. En la página detalles de la suscripción, en **Información del partner,** escriba el **id. de red de partners**. Puedes obtener el id. de red de partners de Microsoft del partner si lo solicitas.
-4. Seleccione **Agregar**.
+4. Elija **Agregar**.
 
 ::: moniker-end
 
@@ -136,7 +136,7 @@ Para aceptar esta oferta
 1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la página de detalles de suscripciones, en **Información del partner,** seleccione **Quitar**.
 3. Escriba el **identificador de red de partners de Microsoft** para el nuevo partner. El Id. de partner de Microsoft se lo puede pedir al partner.
-4. Seleccione **Agregar**.
+4. Elija **Agregar**.
   
 ::: moniker-end
 
