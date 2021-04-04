@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender para Office 365 incluye datos adjuntos seguros, vínculos seguros, herramientas avanzadas antiphishing, herramientas de creación de informes y funciones de inteligencia de amenazas.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec60fc7063bdd4a2656385ed86098d6ae2b4abc0
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: dad2722a1f9e99fad53c83348d049fa9a60f8b62
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205958"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580995"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender para Office 365
 
@@ -52,7 +52,7 @@ Microsoft Defender para Office 365 protege su organización contra las amenazas 
 ## <a name="interactive-guide-to-microsoft-defender-for-office-365"></a>Guía interactiva de Microsoft Defender para Office 365
 En esta guía interactiva, aprenderá cómo proteger su organización con Microsoft Defender para Office 365. Verá cómo Defender para Office 365 puede ayudarle a definir directivas de protección, analizar amenazas en su organización y responder a ataques.
 
-> [!VIDEO https://aka.ms/MSDO-IG]
+[Eche un vistazo a la guía interactiva](https://aka.ms/MSDO-IG)
 
 ## <a name="getting-started"></a>Introducción
 
@@ -97,6 +97,8 @@ La siguiente tabla es un resumen de lo que se incluye en cada plan.
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Configurar las directivas de Microsoft Defender para Office 365
 
 Con Microsoft Defender para Office 365, el equipo de seguridad de su organización puede configurar la protección mediante la definición de directivas en el Centro de seguridad y cumplimiento (vaya a <https://protection.office.com> \> **Administración de amenazas** \> **Directiva**).
+
+Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=vivvTmWJ_3c). 
 
 > [!TIP]
 > Para ver una lista rápida de directivas por definir, consulte [Protección contra amenazas](protect-against-threats.md).
