@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 72b5422de2ee4b01e3209ec78ea0c10f1285d682
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 5a82eba3801509ed2e8ffb46ab32045466204fab
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034199"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498827"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -119,7 +119,7 @@ Implementar esta configuración mediante la directiva de grupo o mediante el [Se
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>El cliente de etiquetado integrado de Office y el cliente de Azure Information Protection
 
-Si los usuarios tienen uno de los clientes de Azure Information Protection instalados ([cliente de etiquetado unificado](/azure/information-protection/rms-client/aip-clientv2) o [cliente clásico](/azure/information-protection/rms-client/aip-client)), por defecto, el cliente de etiquetado integrado está desactivado en sus aplicaciones de Office. 
+Si los usuarios tienen el [cliente de Azure Information Protection instalado](/azure/information-protection/rms-client/aip-clientv2), por defecto, el cliente de etiquetado integrado está desactivado en sus aplicaciones de Office. 
 
 Para usar el etiquetado integrado en lugar del cliente de Azure Information Protection para las aplicaciones de Office, le recomendamos que use la configuración de directiva de grupo **Lista de complementos administrados** como se documenta en [No hay complementos cargados debido a la configuración de directiva de grupo para los programas de Office 2013 y Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 

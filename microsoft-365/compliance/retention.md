@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: dbb294cdb865fb01f931e2e9c3bc4f6afb3f1e09
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 42fe70d1360f45deb6f98f41c0ffec97de7e00a9
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471039"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498348"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -259,7 +259,7 @@ La siguiente tabla le ayudará a identificar si debe usar una directiva de reten
 |Declara el elemento como un registro| No | Sí |
 |Inicio del período de retención cuando se etiqueta o basado en un evento | No | Sí |
 |Revisión para eliminación | No| Sí |
-|Prueba de eliminación durante un máximo de 7 años | No |Sí, cuando el elemento se declara como registro|
+|Prueba de eliminación durante un máximo de 7 años | No |Sí, cuando usa la revisión para eliminación o el elemento está marcado como registro|
 |Auditoría de las actividades administrativas| Sí | Sí|
 |Identificación de elementos sujetos a la retención: <br /> - Búsqueda de contenido <br /> - Página clasificación de datos, explorador de contenido, explorador de actividad | <br /> No <br /> No | <br /> Sí <br /> Sí|
 
