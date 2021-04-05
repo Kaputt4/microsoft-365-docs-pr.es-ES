@@ -1,7 +1,7 @@
 ---
-title: Implementar ATP de Microsoft Defender para Android con Microsoft Intune
-description: Describe cómo implementar ATP de Microsoft Defender para Android con Microsoft Intune
-keywords: microsoft, defender, atp, android, instalación, implementación, desinstalación,
+title: Implementar Microsoft Defender para punto de conexión para Android con Microsoft Intune
+description: Describe cómo implementar Microsoft Defender para Endpoint para Android con Microsoft Intune
+keywords: microsoft, defender, atp, mde, android, instalación, implementación, desinstalación,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,17 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e557f60346b2f68354df621b6e4812eac775d812
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: fdfc6e63945e15ce2d1f1a293c377f641eeb9bc4
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165674"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587700"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-android-with-microsoft-intune"></a>Implementar Microsoft Defender para endpoint para Android con Microsoft Intune 
+# <a name="deploy-microsoft-defender-for-endpoint-for-android-with-microsoft-intune"></a>Implementar Microsoft Defender para punto de conexión para Android con Microsoft Intune 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -56,7 +55,7 @@ Obtenga información sobre cómo implementar Defender for Endpoint para Android 
 
 2. En la **página Agregar aplicación** y en la sección Información de *la* aplicación, escriba: 
 
-   - **Nombre** 
+   - **Name** 
    - **Descripción**
    - **Publisher** como Microsoft.
    - **Dirección URL de la Tienda de** aplicaciones como https://play.google.com/store/apps/details?id=com.microsoft.scmx (DIRECCIÓN URL de La aplicación Defender para endpoint de Google Play Store) 
@@ -261,5 +260,5 @@ Seleccione **Crear**.
 
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Información general sobre Microsoft Defender para endpoint para Android](microsoft-defender-endpoint-android.md)
-- [Configurar Microsoft Defender para las características de Punto de conexión para Android](android-configure.md)
+- [Introducción a Microsoft Defender para punto de conexión para Android](microsoft-defender-endpoint-android.md)
+- [Configurar Microsoft Defender para punto de conexión para funciones de Android](android-configure.md)

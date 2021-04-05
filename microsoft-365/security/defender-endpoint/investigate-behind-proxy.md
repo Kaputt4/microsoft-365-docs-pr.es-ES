@@ -1,5 +1,5 @@
 ---
-title: Investigar eventos de conexión que se producen detrás de servidores proxy de reenvío
+title: Investigar eventos de conexión que ocurren tras los servidores proxy de reenvío
 description: Obtenga información sobre cómo usar la supervisión avanzada del nivel HTTP a través de la protección de red en ATP de Microsoft Defender, que muestra un destino real, en lugar de un proxy.
 keywords: proxy, protección de red, proxy de reenvío, eventos de red, auditoría, bloqueo, nombres de dominio, dominio
 search.product: eADQiWindows 10XVcnh
@@ -15,17 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7eaa4bb76d7607f0b55c87482d1104a0897c9d36
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 28d8a113ed77e9624bd914571b1af4a7ece2aa5c
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186094"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587568"
 ---
-# <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Investigar eventos de conexión que se producen detrás de servidores proxy de reenvío
+# <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Investigar eventos de conexión que ocurren tras los servidores proxy de reenvío
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

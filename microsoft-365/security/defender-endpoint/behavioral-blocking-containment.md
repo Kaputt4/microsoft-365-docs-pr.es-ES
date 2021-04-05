@@ -1,6 +1,6 @@
 ---
-title: Bloqueo y contención del comportamiento
-description: Obtenga información sobre las capacidades de contención y bloqueo de comportamiento en ATP de Microsoft Defender
+title: Bloqueo y contención de comportamientos
+description: Obtenga información sobre las capacidades de contención y bloqueo de comportamiento en Microsoft Defender para endpoint
 keywords: ATP de Microsoft Defender, EDR en modo de bloqueo, bloqueo de modo pasivo
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -19,14 +19,14 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: dcad3b7233f2efd444d41c15916eaae195634c8c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7cea65292c427cb953e2e8e3ca866c89f83128b1
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166238"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587172"
 ---
-# <a name="behavioral-blocking-and-containment"></a>Bloqueo y contención del comportamiento
+# <a name="behavioral-blocking-and-containment"></a>Bloqueo y contención de comportamientos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,7 +42,7 @@ El panorama de amenazas actual está saturado por [malware](https://docs.microso
 
 Las capacidades de bloqueo y contención del comportamiento pueden ayudar a identificar y detener las amenazas, en función de sus comportamientos y de los árboles de proceso incluso cuando la amenaza ha comenzado a ejecutarse. Las características y los componentes de protección de última generación, EDR y Defender para endpoint funcionan juntos en las capacidades de contención y bloqueo de comportamiento. 
 
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Bloqueo y contención del comportamiento":::
+:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Bloqueo y contención de comportamientos":::
 
 Las capacidades de bloqueo de comportamiento y contención funcionan con varios componentes y características de Defender para endpoint para detener los ataques inmediatamente e impedir que los ataques progresen.
 

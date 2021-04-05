@@ -1,5 +1,5 @@
 ---
-title: Investigar dispositivos en la lista Defender para dispositivos ATP de Endpoint Defender
+title: Investigar dispositivos en la lista Defender para dispositivos de punto de conexión
 description: Investigue los dispositivos afectados revisando alertas, información de conexión de red, agregando etiquetas y grupos de dispositivos y comprobando el estado del servicio.
 keywords: dispositivos, etiquetas, grupos, punto de conexión, cola de alertas, alertas, nombre de dispositivo, dominio, última vista, IP interna, alertas activas, categoría de amenazas, filtro, ordenación, revisión de alertas, red, conexión, tipo, robo de contraseñas, ransomware, vulnerabilidad, amenaza, gravedad baja, estado del servicio
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f5415b6337d21b780a75a192a565078a6cacc06
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 154ecd66399b031ef2e60eef16227bb9bc2f8785
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185736"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587724"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Investigar dispositivos en la lista Microsoft Defender para dispositivos de punto de conexión
 
@@ -69,7 +69,7 @@ Las acciones de respuesta se ejecutan en la parte superior de una página de dis
 
 - Administrar etiquetas
 - Aislar dispositivo
-- Restringir la ejecución de aplicaciones
+- Restringir ejecución de aplicación
 - Ejecutar examen antivirus
 - Recopilar paquete de investigación
 - Iniciar sesión de respuesta activa

@@ -15,17 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ea6beba2d17b72f100703d26dd4106d0537c6fa6
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a72b742d8f4a69d2e38cf4fa234ba5b7e2961ac6
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071664"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587616"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para endpoint
+# <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -53,22 +52,22 @@ Para obtener más información acerca de las características de vista previa, v
 - [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Windows Virtual Desktop.
 
 ## <a name="december-2020"></a>Diciembre de 2020
-- [Microsoft Defender para endpoint para iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con iOS. Obtén información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint para iOS.
+- [Microsoft Defender para punto de conexión para iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con iOS. Obtén información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint para iOS.
 
 ## <a name="september-2020"></a>Septiembre de 2020
-- [Microsoft Defender para endpoint para Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Android. Obtén información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint para Android.
+- [Microsoft Defender para punto de conexión para Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Android. Obtén información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint para Android.
 - [Compatibilidad con macOS de administración de amenazas y vulnerabilidades](tvm-supported-os.md)<br> La administración de amenazas y vulnerabilidades para macOS está ahora en versión preliminar pública y detectará continuamente vulnerabilidades en los dispositivos macOS para ayudarle a priorizar la corrección centrándose en el riesgo. Obtenga más información en esta [entrada de blog de Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824).
 
 
 ## <a name="august-2020"></a>Agosto de 2020
-- [Microsoft Defender para endpoint para Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Android. Obtén información sobre cómo instalar, configurar y usar Microsoft Defender para Endpoint para Android.
+- [Microsoft Defender para punto de conexión para Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Android. Obtén información sobre cómo instalar, configurar y usar Microsoft Defender para Endpoint para Android.
 
 
 ## <a name="july-2020"></a>Julio de 2020
 - [Crear indicadores para certificados](manage-indicators.md) <br> Crear indicadores para permitir o bloquear certificados. 
 
 ## <a name="june-2020"></a>Junio de 2020
-- [Microsoft Defender para endpoint para Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Linux. Obtenga información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint para Linux.
+- [Microsoft Defender para punto de conexión para Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Linux. Obtenga información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint para Linux.
 
 - [Simuladores de ataque en el laboratorio de evaluación](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender para endpoint se ha asociado con varias plataformas de simulación de amenazas para ofrecerte un acceso cómodo para probar las capacidades de la plataforma desde el portal.
 
@@ -79,7 +78,7 @@ Para obtener más información acerca de las características de vista previa, v
 
 ## <a name="november-december-2019"></a>November-December 2019
 
-- [Microsoft Defender para endpoint para Mac](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender para Endpoint para Mac proporciona la protección de última generación a los dispositivos Mac. Los componentes principales de la plataforma de seguridad de extremo unificado ahora estarán disponibles para dispositivos Mac, incluida la [detección y respuesta de puntos de conexión.](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender para punto de conexión para Mac](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender para Endpoint para Mac proporciona la protección de última generación a los dispositivos Mac. Los componentes principales de la plataforma de seguridad de extremo unificado ahora estarán disponibles para dispositivos Mac, incluida la [detección y respuesta de puntos de conexión.](microsoft-defender-endpoint-mac.md)
  
 - [Información & de la aplicación de administración de vulnerabilidades y la versión de la aplicación](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) <BR>Las aplicaciones y las versiones de aplicaciones que han llegado a su fin de vida se etiquetan o etiquetan como tales, por lo que es consciente de que ya no se admiten y pueden realizar acciones para desinstalar o reemplazar. Si lo hace, se reducirán los riesgos relacionados con diversas exposiciones de vulnerabilidades debido a las aplicaciones no apareadas.
 
@@ -134,18 +133,18 @@ Para obtener más información acerca de las características de vista previa, v
 ## <a name="april-2019"></a>Abril de 2019
 - [Capacidad de notificación de ataque dirigida de expertos en amenazas de Microsoft](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts#targeted-attack-notification) <BR> Las alertas de notificación de ataques dirigidos de Microsoft Threat Experts están adaptadas a las organizaciones para proporcionar toda la información que se pueda entregar rápidamente, lo que llama la atención sobre las amenazas críticas en su red, incluidos la escala de tiempo, el ámbito de la infracción y los métodos de intrusión.
 
-- [API de Microsoft Defender para endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) <BR> Microsoft Defender para endpoint expone gran parte de sus datos y acciones a través de un conjunto de API programáticas. Estas API le permitirán automatizar flujos de trabajo e innovar en función de las capacidades de Microsoft Defender para puntos de conexión. 
+- [API de Microsoft Defender para punto de conexión](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) <BR> Microsoft Defender para endpoint expone gran parte de sus datos y acciones a través de un conjunto de API programáticas. Estas API le permitirán automatizar flujos de trabajo e innovar en función de las capacidades de Microsoft Defender para puntos de conexión. 
 
 
 
 ## <a name="february-2019"></a>Febrero de 2019
 - [Incidentes](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/incidents-queue) <BR> Incident es una nueva entidad de Microsoft Defender para endpoint que reúne todas las alertas relevantes y entidades relacionadas para narrar la historia de ataques más amplia, lo que ofrece a los analistas una mejor perspectiva sobre el ámbito de las amenazas complejas. 
 
-- [Incorporación de versiones anteriores de Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> Incorpore versiones compatibles de dispositivos Windows para que puedan enviar datos del sensor al sensor de Microsoft Defender para endpoint.
+- [Incorporar versiones anteriores de Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/onboard-downlevel-windows-defender-advanced-threat-protection)<BR> Incorpore versiones compatibles de dispositivos Windows para que puedan enviar datos del sensor al sensor de Microsoft Defender para endpoint.
 
 
 ## <a name="october-2018"></a>Octubre de 2018
-- [Reglas de reducción de la superficie expuesta a ataques](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>Todas las reglas de reducción de superficie de ataque ahora son compatibles con Windows Server 2019.
+- [Reglas de la reducción de la superficie expuesta a ataques](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>Todas las reglas de reducción de superficie de ataque ahora son compatibles con Windows Server 2019.
 
 - [Acceso controlado a carpetas](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR> El acceso controlado a carpetas ahora es compatible con Windows Server 2019.
 
@@ -174,10 +173,10 @@ Threat Analytics es un conjunto de informes interactivos publicados por el equip
 
   
 ## <a name="march-2018"></a>Marzo de 2018
-- [Búsqueda avanzada](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection) <BR>
+- [Búsqueda avanzada de amenazas](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/advanced-hunting-windows-defender-advanced-threat-protection) <BR>
 Consulta datos con búsqueda avanzada en Microsoft Defender para endpoint.
 
-- [Reglas de reducción de la superficie expuesta a ataques](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>
+- [Reglas de la reducción de la superficie expuesta a ataques](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)<BR>
     Nuevas reglas de reducción de superficie de ataque: 
   - Usar protección avanzada contra ransomware
   - Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)
@@ -198,7 +197,7 @@ Consulta datos con búsqueda avanzada en Microsoft Defender para endpoint.
 - [Acceso controlado a carpetas](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-controlled-folders-exploit-guard)<BR>
 Ahora puede bloquear los procesos que no son de confianza para que no se escriban en los sectores de disco mediante acceso controlado a carpetas.
 
-- [Incorporación de dispositivos que no son de Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection)<BR>
+- [Incorporar dispositivos que no tienen Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection)<BR>
     Microsoft Defender para endpoint proporciona una experiencia de operaciones de seguridad centralizada para Windows, así como para plataformas que no son de Windows. Podrás ver alertas de varios sistemas operativos compatibles (SO) en el Centro de seguridad de Microsoft Defender y proteger mejor la red de la organización.
 
 - [Control de acceso basado en roles (RBAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)<BR>

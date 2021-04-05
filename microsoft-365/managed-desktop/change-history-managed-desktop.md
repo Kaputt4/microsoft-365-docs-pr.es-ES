@@ -13,16 +13,38 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 9176bfbbd015243266ba1c8cbad9d04787f6a6cc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5e57f21690372b16c86a65fcfe4d00cb5c907391
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909255"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587532"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cambiar el historial de la documentación de Escritorio administrado de Microsoft
 
 En este artículo se enumeran los artículos nuevos y actualizados de la [documentación de Escritorio administrado de Microsoft.](index.yml) Los artículos "actualizados" han tenido adiciones o correcciones de material; no se enumeran correcciones secundarias como la corrección de errores tipográficos, de estilo o de formato. Siempre puede ver el historial de confirmaciones específicas (incluidos los detalles de los cambios) visitando el [repositorio en GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+
+## <a name="march-2021"></a>Marzo de 2021
+Artículo nuevo o modificado | Descripción
+--- | ---
+[Soporte técnico de administrador para Escritorio administrado de Microsoft](working-with-managed-desktop/admin-support.md) | Artículo actualizado
+[Experiencia de primera ejecución con piloto automático y la página de estado de inscripción](get-started/esp-first-run.md) | Artículo actualizado
+[Servicio de ubicación de Windows 10](get-started/device-location.md) | Artículo nuevo
+[Imágenes del dispositivo](service-description/device-images.md) | Artículo nuevo
+[Regiones compatibles con Escritorio administrado de Microsoft](service-description/regions-languages.md) | Artículo actualizado
+[Localizar la experiencia del usuario](get-started/localization.md) | Artículo nuevo
+
+## <a name="february-2021"></a>Febrero de 2021
+Artículo nuevo o modificado | Descripción
+--- | ---
+[Acceso al portal de administración](get-started/access-admin-portal.md) | Artículo actualizado
+[Tecnologías del Escritorio administrado de Microsoft](intro/technologies.md) | Artículo actualizado
+[Requisitos del dispositivo](service-description/device-requirements.md) | Artículo actualizado
+[Solucionar los problemas detectados por la herramienta de evaluación de la preparación](get-ready/readiness-assessment-fix.md) | Artículo actualizado
+[Microsoft OneDrive](get-started/onedrive.md) | Artículo nuevo
+[Cumplimiento](intro/compliance.md) | Updated
+[Aplicaciones de Microsoft 365 para empresas](get-started/m365-apps.md) | Artículo actualizado
+[Herramientas de evaluación de preparación](get-ready/readiness-assessment-tool.md) | Artículo actualizado
 
 ## <a name="january-2021"></a>Enero de 2021
 Artículo nuevo o modificado | Descripción
@@ -56,7 +78,7 @@ Artículo nuevo o modificado | Descripción
 [Solucionar los problemas detectados por la herramienta de evaluación de la preparación](get-ready/readiness-assessment-fix.md) | Artículo nuevo
 [Registre nuevos dispositivos usted mismo](get-started/register-devices-self.md) | Artículo actualizado
 [Pasos para que los Socios puedan registrar dispositivos](get-started/register-devices-partner.md) | Artículo actualizado
-[Requisitos previos para cuentas de invitados](get-ready/guest-accounts.md) | Artículo nuevo
+[Requisitos previos para las cuentas de invitado](get-ready/guest-accounts.md) | Artículo nuevo
 [Acceso al portal de administración](get-started/access-admin-portal.md) | Artículo actualizado
 
 
@@ -244,7 +266,7 @@ Artículo nuevo o modificado | Descripción
 ## <a name="june-2019"></a>Junio de 2019
 Artículo nuevo o modificado | Descripción
 --- | ---
-[Aplicaciones en Escritorio administrado de Microsoft](get-ready/apps.md) | Artículo actualizado
+[Aplicaciones en el Escritorio administrado de Microsoft](get-ready/apps.md) | Artículo actualizado
 [Trabajar con los Servicios de Consultoría de Microsoft](get-ready/apps-mcs.md) | Artículo nuevo
 [Roles y responsabilidades del Escritorio administrado de Microsoft](intro/roles-and-responsibilities.md) | Artículo actualizado
 [Ciclo de vida del producto de Escritorio administrado de Microsoft](service-description/device-lifecycle.md) | Artículo nuevo

@@ -1,5 +1,5 @@
 ---
-title: Investigar una cuenta de usuario en ATP de Microsoft Defender
+title: Investigar una cuenta de usuario en Microsoft Defender para endpoint
 description: Investigue una cuenta de usuario para obtener credenciales potencialmente comprometidas o pivote en la cuenta de usuario asociada durante una investigación.
 keywords: investigar, cuenta, usuario, entidad de usuario, alerta, atp de Microsoft Defender
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: e79e558a7d256c46178e91b89bff27bfa6893ce9
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 672867d107d005004201caab7d6497ceb048ac97
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186718"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587712"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Investigar una cuenta de usuario en Microsoft Defender para endpoint
 

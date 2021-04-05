@@ -16,15 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ab5400a197a1f0ac61c8b298a06165d217f44fd1
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: a4f2324bc47bdee38e1cdeed1e21b5f9063e9a5c
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394739"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587070"
 ---
 # <a name="resources"></a>Recursos
 
@@ -121,8 +120,8 @@ En la tabla siguiente se enumeran los comandos de algunos de los escenarios más
 |Configuración         |Activar la protección de LA PUA                                  |`mdatp threat policy set --type potentially_unwanted_application --action block` |
 |Configuración         |Desactivar la protección de LA PUA                                 |`mdatp threat policy set --type potentially_unwanted_application --action off` |
 |Configuración         |Activar el modo de auditoría para la protección de PUA                   |`mdatp threat policy set --type potentially_unwanted_application --action audit` |
-|Diagnostics           |Cambiar el nivel de registro                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
-|Diagnostics           |Generar registros de diagnóstico                                |`mdatp diagnostic create --path [directory]`                           |
+|Diagnóstico           |Cambiar el nivel de registro                                    |`mdatp log level set --level verbose [error|warning|info|verbose]`     |
+|Diagnóstico           |Generar registros de diagnóstico                                |`mdatp diagnostic create --path [directory]`                           |
 |Salud                |Comprobar el estado del producto                              |`mdatp health`                                                         |
 |Protection            |Examinar una ruta de acceso                                             |`mdatp scan custom --path [path] [--ignore-exclusions]`                |
 |Protection            |Realizar un examen rápido                                         |`mdatp scan quick`                                                     |

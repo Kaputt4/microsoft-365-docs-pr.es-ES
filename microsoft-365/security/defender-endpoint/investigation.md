@@ -1,6 +1,6 @@
 ---
 title: Tipo de recurso Investigación
-description: Entidad De investigación de ATP de Microsoft Defender.
+description: Entidad de Microsoft Defender para Endpoint Investigation.
 keywords: apis, api de gráficos, api admitidas, get, alerts, investigations
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 36adf0fa5c0de79fe0616f1216118a98ba2005a4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 3872976717a5b472ab8d471db7eff9975dbc2258
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187354"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587688"
 ---
 # <a name="investigation-resource-type"></a>Tipo de recurso Investigación
 
@@ -41,7 +41,7 @@ ms.locfileid: "51187354"
 Representa una entidad de investigación automatizada en Defender para endpoint.
 <br> Vea [Overview of automated investigations](automated-investigations.md) para obtener más información.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Métodos
 Método|Tipo de valor devuelto |Descripción
 :---|:---|:---
 [Enumerar investigaciones](get-investigation-collection.md) | Colección Investigation | Obtener colección de investigación
@@ -52,15 +52,15 @@ Método|Tipo de valor devuelto |Descripción
 ## <a name="properties"></a>Propiedades
 Propiedad |  Tipo    |   Descripción
 :---|:---|:---
-id | Cadena | Identidad de la entidad de investigación. 
+id | String | Identidad de la entidad de investigación. 
 startTime | DateTime Nullable | La fecha y hora en que se creó la investigación. 
 endTime | DateTime Nullable | La fecha y la hora en que se completó la investigación. 
-cancelledBy | Cadena | El identificador del usuario o aplicación que canceló esa investigación. 
+cancelledBy | String | El identificador del usuario o aplicación que canceló esa investigación. 
 investigationState | Enum | El estado actual de la investigación. Los valores posibles son: 'Unknown', 'Terminated', 'SuccessfullyRemediated', 'Benign', 'Failed', 'PartiallyRemediated', 'Running', 'PendingApproval', 'PendingResource', 'PartiallyInvestigated', 'TerminatedByUser', 'TerminatedBySystem', 'Queued', 'InnerFailure', 'PreexistingAlert', 'UnsupportedOs', 'UnsupportedAlertType', 'SuppressedAlert'.
-statusDetails | Cadena | Información adicional sobre el estado de la investigación.
-machineId | Cadena | El identificador del dispositivo en el que se ejecuta la investigación.
-computerDnsName | Cadena | Nombre del dispositivo en el que se ejecuta la investigación.
-triggeringAlertId | Cadena | El identificador de la alerta que desencadenó la investigación.
+statusDetails | String | Información adicional sobre el estado de la investigación.
+machineId | String | El identificador del dispositivo en el que se ejecuta la investigación.
+computerDnsName | String | Nombre del dispositivo en el que se ejecuta la investigación.
+triggeringAlertId | String | El identificador de la alerta que desencadenó la investigación.
 
 
 ## <a name="json-representation"></a>Representación json
