@@ -19,15 +19,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 8ed6f1ccd6587d6c618974a123f0d5d42a44e753
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: be0423b0af8251347420d9e970dcfe10db0bb72b
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199638"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591928"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Investigación y respuesta automatizadas en Microsoft 365 Defender
 
@@ -95,7 +94,12 @@ En Microsoft 365 Defender, cada investigación automatizada correlaciona las se�
 > [!NOTE]
 > No todas las alertas desencadenan una investigación automatizada y no todas las investigaciones tienen como resultado acciones de corrección automatizadas; depende de cómo se configure la investigación y la respuesta automatizadas para su organización. Consulte [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="viewing-a-list-of-investigations"></a>Visualización de una lista de investigaciones
+
+Para ver las investigaciones, vaya a la **página Incidentes.** Seleccione un incidente y, a continuación, seleccione la **pestaña Investigaciones.** Para obtener más información, vea [Detalles y resultados de una investigación automatizada.](m365d-autoir-results.md)
+
+
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Consulta los requisitos previos para la investigación y respuesta automatizadas en Microsoft 365 Defender](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [Configurar la investigación automatizada y la respuesta para su organización](m365d-configure-auto-investigation-response.md)

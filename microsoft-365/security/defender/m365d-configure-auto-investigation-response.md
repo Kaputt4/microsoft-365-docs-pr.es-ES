@@ -12,17 +12,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.date: 02/08/2021
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: afdf4b4ec8824fa49843074880bcd6f4f1857cca
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 164d4f52f5769d48249c1f4afcdf4be624f6aef7
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200274"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592053"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurar capacidades automatizadas de investigación y respuesta en Microsoft 365 Defender
 
@@ -91,7 +90,7 @@ La configuración de seguridad en Office 365 ayuda a proteger el correo electró
 > [!TIP]
 > ¿Necesita ayuda? Vea [Activar Microsoft 365 Defender](m365d-enable.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Acciones de corrección en Microsoft 365 Defender](m365d-remediation-actions.md)
 - [Visite el Centro de actividades](m365d-action-center.md)

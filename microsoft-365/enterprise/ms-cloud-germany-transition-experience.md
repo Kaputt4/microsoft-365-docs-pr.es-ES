@@ -1,5 +1,5 @@
 ---
-title: Qué ha cambiado para la migración a los servicios de Office 365 en las nuevas regiones del centro de datos alemán
+title: Qué cambiará después de la migración a los servicios de Office 365 en las nuevas regiones del centro de datos alemán
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -19,26 +19,26 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Summary: Understand what has changed for moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: cadad596011bbcde02b61f01e949c93a5a62a1c3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 74ad9a662d3ea7a68ef1f82961864eb4468f6098
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923831"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591785"
 ---
-# <a name="what-has-changed-for-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Qué ha cambiado para la migración a los servicios de Office 365 en las nuevas regiones del centro de datos alemán
+# <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Qué cambiará después de la migración a los servicios de Office 365 en las nuevas regiones del centro de datos alemán
 
 Las migraciones de inquilinos están diseñadas para tener un efecto mínimo en los administradores y usuarios. Sin embargo, hay consideraciones para cada carga de trabajo. Revise las siguientes secciones para comprender mejor la experiencia de migración de las cargas de trabajo.
 
 Las siguientes son las principales diferencias entre los servicios de Microsoft Cloud Deutschland y Office 365 en las nuevas regiones del centro de datos alemán.
 
-| Categoría | Microsoft Cloud Deutschland (Microsoft Cloud Deutschland) | Los servicios de Office 365 en las nuevas regiones del centro de datos alemán. |
+| Categoría | Microsoft Cloud Alemania (Microsoft Cloud Deutschland) | Los servicios de Office 365 en las nuevas regiones del centro de datos alemán. |
 |:-------|:-----|:-------|
 | Servicios de Microsoft 365 disponibles para suscripción con un solo espacio empresarial de Office 365 | 15 servicios | 29 servicios <br><br> Para obtener más información, vea ¿Cuál es la disponibilidad del servicio entre las distintas ofertas de servicios en la nube [de Office 365?](ms-cloud-germany-transition.md#serv-avail). |
-| Características nuevas | No hay disponibles características nuevas | Las nuevas características estarán disponibles de forma coherente con los servicios de Office 365. |
+| Características nuevas | No habrá nuevas características disponibles. | Las nuevas características estarán disponibles de forma coherente con los servicios de Office 365. |
 | Administrador de datos | Sí | No |
 | Colaboración entre espacios empresariales con los espacios empresariales globales de Office 365 | No | Sí |
-| Residencia de datos de clientes | Los datos de los clientes se almacenarán únicamente en centros de datos alemanes. | Microsoft almacenará los siguientes datos de cliente en reposo exclusivamente en Alemania: <ul><li> Contenido del buzón de Exchange Online (cuerpo del correo electrónico, entradas de calendario y contenido de datos adjuntos de correo electrónico) </li><li> Contenido del sitio de SharePoint Online y los archivos almacenados en ese sitio y archivos cargados en OneDrive para la Empresa </li></ul> |
+| Residencia de datos de clientes | Los datos de los clientes se almacenarán únicamente en centros de datos alemanes. | Microsoft almacenará los siguientes datos de cliente en reposo exclusivamente en Alemania: <ul><li> Contenido del buzón de Exchange Online (cuerpo del correo electrónico, entradas de calendario y el contenido de los datos adjuntos de correo electrónico) </li><li> Contenido del sitio de SharePoint Online y los archivos almacenados en ese sitio y archivos cargados en OneDrive para la Empresa </li></ul> |
 | Términos aplicables | [Términos de Servicios en línea](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) con este [complemento](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=64) | [Términos de Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) |
 ||||
 
@@ -79,6 +79,8 @@ Consideraciones a tener en cuenta:
 ## <a name="office-services"></a>Servicios de Office
 
 Los servicios de Office Online son accesibles a través `office.de` de antes y durante la transición. Después de que los buzones de los usuarios se transiciónn a los servicios de Office 365, los usuarios deben empezar a usar direcciones URL de servicios de Office 365. A medida que las cargas de trabajo posteriores migren a los servicios de Office 365, su interfaz desde el portal office.com empezará a funcionar.
+
+El servicio más reciente usado (MRU) en Office es un recorte de los servicios globales de Microsoft Cloud Deutschland a Office 365, no una migración. Solo los vínculos DE MRU del lado servicios globales de Office 365 estarán visibles después de la migración desde el portal Office.com web. Los vínculos MRU de Microsoft Cloud Deutschland no son visibles como vínculos de MRU en los servicios globales de Office 365. En los servicios globales de Office 365, los vínculos de MRU solo son accesibles después de que la migración de inquilinos haya alcanzado la fase 9.
 
 ## <a name="exchange-online-protection"></a>Exchange Online Protection
 

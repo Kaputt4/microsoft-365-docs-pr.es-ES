@@ -1,6 +1,6 @@
 ---
 title: Detalles y resultados de una investigación automatizada
-description: Durante y después de una investigación automatizada, puede ver los resultados y los resultados clave
+description: Ver los resultados y los resultados clave de la investigación automatizada en Microsoft 365 Defender
 keywords: automatizada, investigación, resultados, analizar, detalles, corrección, autoair
 search.appverid: met150
 ms.prod: m365-security
@@ -21,13 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/08/2021
-ms.openlocfilehash: 05208dd8ba893d65db50430861ad5dd5ad9d34fb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ca023ea49a8d92123467be640a097a72233d3198
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198974"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592125"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Detalles y resultados de una investigación automatizada
 
@@ -61,8 +60,11 @@ El Centro [de acción](m365d-action-center.md) mejorado ( ) reúne acciones de c
 > Debe tener [ciertos permisos para](m365d-action-center.md#required-permissions-for-action-center-tasks) aprobar, rechazar o deshacer acciones.
 
 1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) e inicie sesión. 
+
 2. En el panel de navegación, elija **Centro de actividades**. 
+
 3. En la pestaña **pendiente** o **historial**, seleccione un elemento. Se abre el panel desplegable.
+
 4. Revise la información del panel desplegable y, a continuación, siga uno de los pasos siguientes:
    - Seleccione **Abrir página de investigación** para ver más detalles sobre la investigación.
    - Seleccione **Aprobar** para iniciar una acción pendiente.
@@ -76,9 +78,13 @@ Use una página de detalles de un incidente para ver información detallada sobr
 ![Detalles del incidente](../../media/mtp-incidentdetails-tabs.png)
 
 1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) e inicie sesión. 
+
 2. En el panel de navegación, elija **Incidentes &**  >  **alertas incidentes**. 
+
 3. Seleccione un elemento de la lista y, a continuación, elija **Abrir página de incidentes**.
+
 4. Seleccione la **pestaña Investigaciones** y, a continuación, seleccione una investigación en la lista. Se abre el panel desplegable.
+
 5. Seleccione **Abrir página de investigación**. 
 
 ## <a name="investigation-details"></a>Detalles de la investigación
@@ -104,7 +110,7 @@ En la vista de detalles de la investigación, puede ver información en las pest
 |**Log**    | Proporciona una vista cronológica y detallada de todas las acciones de investigación realizadas después de desencadenar una alerta.|
 | **Acciones pendientes** | Muestra los elementos que necesitan aprobación para continuar. Vaya al Centro de acciones ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) para aprobar acciones pendientes. |
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Aprobar o rechazar acciones de corrección tras una investigación automatizada](m365d-autoir-actions.md)
 - [Más información sobre las acciones de corrección](m365d-remediation-actions.md)

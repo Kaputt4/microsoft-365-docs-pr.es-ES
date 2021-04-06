@@ -20,13 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/01/2021
-ms.openlocfilehash: d958f2787b9d66e42a32b8858139f7d13e83ddef
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: edf809c5fbc257e1dacafeed931da1a2d1471f4a
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199602"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592089"
 ---
 # <a name="the-action-center"></a>El centro de actividades
 
@@ -96,7 +95,7 @@ Todas las acciones, tanto si están pendientes de aprobación como si ya se han 
 
 - Recopilar paquete de investigación 
 - Aislar dispositivo (esta acción se puede deshacer) 
-- Máquina offboard 
+- Retirar máquina 
 - Ejecución de código de versión 
 - Liberar de la cuarentena 
 - Ejemplo de solicitud 

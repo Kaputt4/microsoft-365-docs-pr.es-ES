@@ -11,7 +11,6 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/29/2021
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -22,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 851fd05f0fec4b8d113e515783092eed0114db0f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: f57e68ba88879ed78170e6348ecdbce4db82b668
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199118"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592065"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Controlar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
@@ -74,4 +73,4 @@ Si se ha realizado una acción de corrección en una entidad (como un dispositiv
 
 - [Ver los detalles y los resultados de una investigación automatizada](m365d-autoir-results.md)
 - [Búsqueda proactiva de amenazas con búsqueda avanzada en Microsoft 365 Defender](advanced-hunting-overview.md)
-- [Dirección de falsos positivos/negativos en Microsoft Defender para endpoint](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)
+- [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/defender-endpoint-false-positives-negatives)

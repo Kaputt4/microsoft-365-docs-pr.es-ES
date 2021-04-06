@@ -1,6 +1,6 @@
 ---
 title: Solucionar problemas de servicio de Microsoft 365 Defender
-description: Buscar soluciones y soluciones para problemas conocidos de Microsoft 365 Defender
+description: Buscar soluciones y soluciones alternativas a problemas conocidos de Microsoft 365 Defender
 keywords: solucionar problemas de Microsoft Threat Protection, troubleshoot, Azure ATP, issues, add-on, settings page
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8d8083cbba3582c41ca91c57978675987822d0d9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a2cd27bf7bf8b1c4931b9d768f3a6b5e5f2a0d93
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51073936"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592041"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Solucionar problemas de servicio de Microsoft 365 Defender
 
@@ -49,6 +49,12 @@ Si tienes Microsoft Defender for Identity implementado en el entorno pero no ves
 
 Para obtener más información, vea [Microsoft Defender for Identity integration](/cloud-app-security/mdi-integration).
 
-## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>¿Dónde está la página de configuración para activar el servicio?
+## <a name="where-is-the-settings-page-for-turning-on-the-service"></a>¿Dónde está la página de configuración para activar el servicio?
 
 Para activar Microsoft 365 Defender, accede a **Configuración** desde el panel de navegación en el Centro de seguridad de Microsoft 365. Este elemento de navegación solo está visible si tiene los permisos [y licencias de requisitos previos.](m365d-enable.md#check-license-eligibility-and-required-permissions)
+
+## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>¿Cómo puedo crear una excepción para mi archivo/dirección URL?
+
+Un falso positivo es un archivo o dirección URL que se detecta como malintencionado pero no es una amenaza. Puede crear indicadores y definir exclusiones para desbloquear y permitir determinados archivos/direcciones URL. Consulte [Dirección de falsos positivos/negativos en Defender para Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives).
+
+

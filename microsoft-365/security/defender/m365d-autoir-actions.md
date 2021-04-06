@@ -20,14 +20,13 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 01/29/2021
 ms.technology: m365d
-ms.openlocfilehash: d78bf3689020b5a24863e5a0f1ec817af50178ad
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7106f5d2e740d2b4cacbcaeb0b9391095bbeb356
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51073944"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592029"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Ver y administrar acciones en el Centro de acciones
 
@@ -52,8 +51,11 @@ Es importante aprobar (o rechazar) las acciones pendientes tan pronto como sea p
 ![Aprobar o rechazar una acción](../../media/air-actioncenter-itemselected.png)
 
 1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) e inicie sesión. 
+
 2. En el panel de navegación, elija **Centro de actividades**. 
+
 3. En el Centro de acciones, en la **pestaña** Pendiente, seleccione un elemento de la lista. Se abre el panel desplegable.
+
 4. Revise la información del panel desplegable y, a continuación, siga uno de los pasos siguientes:
    - Seleccione **Abrir página de investigación** para ver más detalles sobre la investigación.
    - Seleccione **Aprobar** para iniciar una acción pendiente.
@@ -71,19 +73,25 @@ Si has determinado que un dispositivo o un archivo no es una amenaza, puedes des
 ### <a name="undo-one-remediation-action"></a>Deshacer una acción de corrección
 
 1. Vaya al Centro de acciones ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) e inicie sesión.
+
 2. En la **pestaña** Historial, seleccione una acción que desee deshacer.
+
 3. En el panel de la parte derecha de la pantalla, seleccione **Deshacer**.
 
 ### <a name="undo-multiple-remediation-actions"></a>Deshacer varias acciones de corrección
 
 1. Vaya al Centro de acciones ( https://security.microsoft.com/action-center) e inicie sesión.
+
 2. En la **pestaña** Historial, seleccione las acciones que desea deshacer. Asegúrese de seleccionar los elementos que tienen el mismo tipo de acción. Se abre un panel desplegable.
+
 3. En el panel desplegable, seleccione **Deshacer**.
 
 ### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>Para quitar un archivo de la cuarentena en varios dispositivos 
 
 1. Vaya al Centro de acciones ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) e inicie sesión.
+
 2. En la **pestaña** Historial, seleccione un archivo que tenga el tipo de acción **Archivo de cuarentena**.
+
 3. En el panel de la parte derecha de la pantalla, seleccione **Aplicar a X más** instancias de este archivo y, a continuación, seleccione **Deshacer**.
 
 ## <a name="next-steps"></a>Pasos siguientes
