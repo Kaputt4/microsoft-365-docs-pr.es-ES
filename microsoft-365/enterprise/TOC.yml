@@ -274,15 +274,15 @@
           items:
             - name: Información general
               href: ms-cloud-germany-transition.md
+            - name: ¿Qué ocurre si lo cambio?
+              href: ms-cloud-germany-transition-experience.md
             - name: Participar en la migración
               href: ms-cloud-germany-migration-opt-in.md
-            - name: Qué ha cambiado
-              href: ms-cloud-germany-transition-experience.md
-            - name: Tarea previa
+            - name: Antes de la migración
               href: ms-cloud-germany-transition-add-pre-work.md
-            - name: Acciones y repercusiones de las fases de la migración (general)
+            - name: Impactos y acciones de las fases de migración
               href: ms-cloud-germany-transition-phases.md
-            - name: Acciones y repercusiones de las fases de la migración (avanzado)
+            - name: Después de la migración
               href: ms-cloud-germany-transition-add-experience.md
             - name: Información adicional
               items:
@@ -292,6 +292,8 @@
                   href: ms-cloud-germany-transition-add-devices.md
                 - name: Pasos de la migración de AD FS
                   href: ms-cloud-germany-transition-add-adfs.md
+                - name: eDiscovery
+                  href: ms-cloud-germany-transition-add-scc.md
 - name: Identidad
   items:
     - name: Guía básica

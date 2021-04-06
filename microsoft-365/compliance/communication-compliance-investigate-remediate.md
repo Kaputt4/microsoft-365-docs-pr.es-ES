@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4f0be1b416bb80bc5cd2b43f5e4c95f0dbc24142
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 7e564bfd090a778ae2cd14214c35af8cd2fc6692
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50542328"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591868"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Investigar y corregir las alertas de cumplimiento de las comunicaciones
 
@@ -122,25 +122,6 @@ Ahora que ha revisado los detalles del mensaje para la alerta, puede elegir vari
 - **Notify**: Puede usar el control **Notify** para asignar una plantilla de aviso personalizada a la alerta y enviar un aviso de advertencia al usuario. Elija la plantilla de aviso adecuada configurada en el área **Configuración** de cumplimiento de comunicaciones y seleccione **Enviar** para enviar un aviso por correo electrónico al usuario que envió el mensaje y para resolver el problema.
 - **Escalar:** con el control **Escalate,** puede elegir quién más de su organización debe revisar el mensaje. Elija entre una lista de revisores configurados en la directiva de cumplimiento de comunicaciones para enviar una notificación por correo electrónico que solicite una revisión adicional de la alerta de mensaje. El revisor seleccionado puede usar un vínculo en la notificación de correo electrónico para ir directamente a los elementos escalados a ellos para su revisión.
 - **Escala para la investigación:** con **el control Escalate para** la investigación, puede crear un nuevo caso de [exhibición](overview-ediscovery-20.md) de documentos electrónicos avanzada para mensajes únicos o múltiples. Proporcionará un nombre y notas para el nuevo caso, y el usuario que envió el mensaje que coincide con la directiva se asigna automáticamente como el custodio del caso. No necesita permisos adicionales para administrar el caso. La creación de un caso no resuelve ni crea una nueva etiqueta para el mensaje. Puede seleccionar un total de 100 mensajes al crear un caso de exhibición de documentos electrónicos avanzada durante el proceso de corrección. Se admiten mensajes en todos los canales de comunicación supervisados por el cumplimiento de la comunicación. Por ejemplo, puede seleccionar 50 chats de Microsoft Teams, 25 mensajes de correo electrónico de Exchange Online y 25 mensajes de Yammer al abrir un nuevo caso de exhibición de documentos electrónicos avanzada para un usuario.
-- **Mejorar la clasificación (versión preliminar):** las alertas creadas a partir de coincidencias de tipos clasificadores pueden necesitar comentarios para ayudar a minimizar los falsos positivos en la organización. Use el control **Mejorar** clasificación para proporcionar comentarios sobre si la clasificación de cumplimiento de comunicaciones es válida o para sugerir otros clasificadores entrenables para este tipo de coincidencia. Puede confirmar que los clasificadores son una coincidencia o no una *coincidencia,* o sugerir otros clasificadores entrenables para asociarse *con* este tipo de actividad de alerta en el futuro.
-
-    1. Seleccione un mensaje de la lista de alertas.
-    2. Elija los puntos suspensivos y **seleccione Mejorar clasificación**.
-    3. En el **panel Comentarios del clasificador** detallado, si el elemento es un verdadero positivo, elija **Coincidencia**.  Si el elemento se incluyó incorrectamente en la categoría como falso positivo, elija **No coincidir.**
-    4. Si hay otro clasificador que sería más adecuado para el elemento, elirálo en la lista Sugerir otros **clasificadores entrenables.** Estos comentarios desencadenan el otro clasificador para evaluar el elemento.
-
-    > [!TIP]
-    > Puede proporcionar comentarios sobre varios elementos al mismo tiempo eligiendo todos ellos y, a continuación, eligiendo Proporcionar comentarios **detallados** en la barra de comandos.
-
-    5. Elija **Enviar comentarios** para enviar la evaluación de las clasificaciones **Match** y Not **a match** y sugerir otros clasificadores entrenables. Cuando ha proporcionado 30 instancias de comentarios a un clasificador, se vuelve a entrenar automáticamente. El reentrenamiento puede tardar entre 1 y 4 horas en completarse. Los clasificadores solo se pueden volver a entrenar dos veces al día.
-
-    > [!IMPORTANT]
-    > Esta información va al clasificador en el espacio empresarial, **no vuelve a Microsoft**.
-
-    Para obtener más información sobre el reentrenamiento del clasificador para el cumplimiento de las comunicaciones, vea el artículo Sobre cómo volver a entrenar a un clasificador [en el](classifier-how-to-retrain-comms-compliance.md) cumplimiento de comunicaciones.
-
-    ![El cumplimiento de la comunicación mejora la clasificación](../media/communication-compliance-improve-classifier.png)
-
 - **Quitar mensaje en Teams:** con el control Quitar mensaje en **Teams,** puede bloquear mensajes inapropiados y contenido identificado en alertas de canales de Microsoft Teams y chats de grupo y 1:1. Los mensajes y el contenido eliminados se reemplazan por una sugerencia de directiva que explica que está bloqueado y la directiva que se aplica a su eliminación de la vista. A los destinatarios se les proporciona un vínculo en la sugerencia de directiva para obtener más información sobre la directiva aplicable y el proceso de revisión. El remitente recibe una sugerencia de directiva para el mensaje bloqueado y el contenido, pero puede revisar los detalles del mensaje bloqueado y el contenido para obtener contexto con respecto a la eliminación.
 
     ![Quitar un mensaje de Microsoft Teams](../media/communication-compliance-remove-teams-message.png)
