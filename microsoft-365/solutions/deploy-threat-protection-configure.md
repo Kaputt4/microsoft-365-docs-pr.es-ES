@@ -1,6 +1,6 @@
 ---
 title: Pasos para configurar las capacidades de protección contra amenazas en Microsoft 365
-description: Use este artículo como guía para implementar la solución de protección contra amenazas. Obtenga información sobre cómo implementar servicios y capacidades de protección contra amenazas en Microsoft 365 E5.
+description: Use este artículo como guía para implementar la solución de protección contra amenazas. Implemente funciones y servicios de protección contra amenazas en Microsoft 365 E5.
 keywords: seguridad, configuración, configuración, Microsoft 365 E5, protección contra amenazas avanzada
 ms.author: deniseb
 author: denisebmsft
@@ -17,17 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 925c62e1c6201c54fcf09d0dd98b06906d9e057f
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 847dd2d090fb26c5558d4a3496a79cf4829881fb
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599868"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604398"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurar las capacidades de protección contra amenazas en Microsoft 365
 
 Siga estos pasos para configurar la protección contra amenazas en Microsoft 365.
-
 
 ## <a name="step-1-set-up-multi-factor-authentication-and-conditional-access-policies"></a>Paso 1: Configurar la autenticación multifactor y las directivas de acceso condicional
 
@@ -100,8 +99,8 @@ Microsoft 365 Defender unifica alertas, incidentes, investigación y respuesta a
 [Microsoft Defender para Office 365](../security/office-365-security/defender-for-office-365.md) protege su organización contra amenazas malintencionadas en mensajes de correo electrónico (datos adjuntos y direcciones URL), documentos de Office y herramientas de colaboración. En la tabla siguiente se enumeran las características y capacidades de Microsoft Defender para Office 365 que se incluyen en Microsoft 365 E5:
 
 |Capacidades de configuración, protección y detección|Capacidades de automatización, investigación, corrección y educación|
-|---|---|
-|[Archivos adjuntos seguros](../security/office-365-security/safe-attachments.md)<br/>[Vínculos seguros](../security/office-365-security/safe-links.md)<br/>[Documentos seguros](../security/office-365-security/safe-docs.md)<br/>[ATP para SharePoint, OneDrive y Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)<br/>[Protección antiphishing en Microsoft Defender para Office 365](../security/office-365-security/set-up-anti-phishing-policies.md#Exclusive-settings-in-anti-phishing-policies-in Microsoft-Defender-for-Office-365)|[Rastreadores de amenazas](../security/office-365-security/threat-trackers.md)<br/>[Explorador de amenazas](../security/office-365-security/threat-explorer.md)<br/>[Investigación y respuesta automatizadas](../security/office-365-security/office-365-air.md)<br/>[Simulador de ataque](../security/office-365-security/attack-simulator.md)|
+|:---|:---|
+|[Archivos adjuntos seguros](../security/office-365-security/safe-attachments.md)<br/>[Vínculos seguros](../security/office-365-security/safe-links.md)<br/>[Documentos seguros](../security/office-365-security/safe-docs.md)<br/>[ATP para SharePoint, OneDrive y Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)<br/> [Protección contra suplantación de identidad (phishing) en Microsoft 365](../security/office-365-security/anti-phishing-protection.md)|[Rastreadores de amenazas](../security/office-365-security/threat-trackers.md)<br/>[Explorador de amenazas](../security/office-365-security/threat-explorer.md)<br/>[Investigación y respuesta automatizadas](../security/office-365-security/office-365-air.md)<br/>[Simulador de ataque](../security/office-365-security/attack-simulator.md)|
 |
 
 Con Microsoft Defender para Office 365, los usuarios de toda la organización pueden comunicarse y colaborar de forma más segura, con protección contra amenazas para su contenido de correo electrónico y documentos de Office.
@@ -128,15 +127,18 @@ Con Microsoft Defender para Office 365, los usuarios de toda la organización pu
 
 ![Proceso para implementar Microsoft Defender para endpoint](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
 
-1. [Prepare su entorno para la implementación de Endpoint de Microsoft Defender.](/windows/security/threat-protection/microsoft-defender-atp/deployment-phases)
-2. [Configurar la implementación de Microsoft Defender para endpoint](/windows/security/threat-protection/micros.oft-defender-atp/production-deployment).
-3. [Incorporación al servicio de Microsoft Defender para puntos de conexión](/windows/security/threat-protection/microsoft-defender-atp/onboarding).
-4. [Complete las tareas administrativas de seguridad superior](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation).
+1. [Prepare su entorno para Microsoft Defender para Endpoint](../security/defender-endpoint/deployment-phases.md).
+
+2. [Implementar Microsoft Defender para endpoint](../security/defender-endpoint/production-deployment.md).
+
+3. [Incorporación al servicio de Microsoft Defender para puntos de conexión](../security/defender-endpoint/onboarding.md).
+
+4. [Complete las tareas administrativas de seguridad superior](../security/defender-endpoint/tvm-security-recommendation.md).
 
 ### <a name="more-information-about-microsoft-defender-for-endpoint"></a>Más información sobre Microsoft Defender para endpoint
 
-- [Obtenga más información sobre Microsoft Defender para endpoint](/windows/security/threat-protection).
-- [Pruebe el laboratorio de evaluación de Microsoft Defender para endpoints](/windows/security/threat-protection/microsoft-defender-atp/evaluation-lab).
+- [Obtenga más información sobre Microsoft Defender para endpoint](../security/defender-endpoint/microsoft-defender-endpoint.md).
+- [Pruebe el laboratorio de evaluación de Microsoft Defender para endpoints](../security/defender-endpoint/evaluation-lab.md).
 
 ## <a name="step-6-configure-microsoft-cloud-app-security"></a>Paso 6: Configurar Microsoft Cloud App Security
 
@@ -147,8 +149,11 @@ Con Microsoft Defender para Office 365, los usuarios de toda la organización pu
 ![Proceso para implementar Microsoft Cloud App Security](../media/deploy-threat-protection/deploy-mcas-steps.png) 
 
 1. [Configurar el portal y otros requisitos básicos](/cloud-app-security/general-setup).
+
 2. [Configurar la detección en la nube](/cloud-app-security/set-up-cloud-discovery) [y conectar aplicaciones](/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
+
 3. [Implementar control de aplicaciones de acceso condicional para aplicaciones características.](/cloud-app-security/proxy-deployment-aad)
+
 4. [Use las herramientas de investigación y los paneles](/cloud-app-security/investigate).
 
 ### <a name="more-information-about-microsoft-cloud-app-security"></a>Más información sobre Microsoft Cloud App Security
@@ -164,9 +169,9 @@ Después de configurar e implementar los servicios y capacidades de protección 
 
 El Centro de seguridad de Microsoft 365 está pensado para administradores de seguridad y equipos de operaciones de seguridad. En el Centro de seguridad de Microsoft 365, puede:
 - Ver el estado de seguridad general de su organización con [Puntuación segura](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score).
-- [Supervisar y ver informes sobre](https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting) el estado de las identidades, los datos, los dispositivos, las aplicaciones y la infraestructura.
+- [Supervisar y ver informes sobre](../security/defender-endpoint/threat-protection-reports.md) el estado de las identidades, los datos, los dispositivos, las aplicaciones y la infraestructura.
 - Conectar los puntos en alertas a través [de incidentes](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue).
-- Use [la investigación automatizada y la corrección para](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir) solucionar las amenazas.
+- Use [la investigación automatizada y la corrección para](../security/defender/m365d-autoir.md) solucionar las amenazas.
 - [Busca de forma proactiva amenazas,](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview)como intentos de intrusión o actividad de infracción que afecten al correo electrónico, los datos, los dispositivos y las identidades.
 - [Comprenda las últimas campañas y](https://docs.microsoft.com/microsoft-365/security/defender/latest-attack-campaigns) técnicas de ataque con análisis de amenazas.
 - ... y mucho más.

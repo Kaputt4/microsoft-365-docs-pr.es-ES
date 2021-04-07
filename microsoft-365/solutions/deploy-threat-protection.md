@@ -1,6 +1,6 @@
 ---
 title: Implementar capacidades de protección contra amenazas en Microsoft 365
-description: Obtenga información general sobre los servicios de protección contra amenazas y la seguridad en Microsoft 365 E5.
+description: Obtenga información general sobre los servicios de protección contra amenazas y las capacidades de seguridad en Microsoft 365 E5. Proteja sus cuentas de usuario, dispositivos, contenido de correo electrónico y mucho más con Microsoft 365 E5.
 keywords: protección contra amenazas, seguridad, E5, ciberataque, malware, M365, solución
 ms.author: deniseb
 author: denisebmsft
@@ -17,16 +17,20 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 922e7b7ea8bceced7085af49485b3479a671d5cd
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 806c97a55b3cbe46d597566425cf71476586ecee
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599964"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604383"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Implementar capacidades de protección contra amenazas en Microsoft 365 E5
 
-[El malware](/windows/security/threat-protection/intelligence/understanding-malware)y los ciberataques sofisticados, como las [amenazas sin](/windows/security/threat-protection/intelligence/fileless-threats)archivos, son una ocurrencia común. Las empresas deben protegerse a sí mismas y a sus clientes con capacidades de seguridad de IT eficaces. Los ciberataques pueden causar problemas importantes para su organización, que van desde una pérdida de confianza hasta problemas financieros, tiempos de inactividad que amenazan la empresa y mucho más. La protección contra amenazas es importante, pero puede resultar difícil determinar dónde enfocar el tiempo, el esfuerzo y los recursos de la organización. 
+Esta solución describe las potentes capacidades de protección contra amenazas en Microsoft 365 E5. Lea esta solución para obtener información general sobre lo que se incluye, cómo funciona y cómo empezar a implementar estas funcionalidades en su organización.
+
+## <a name="why-protecting-against-threats-is-important"></a>Por qué es importante protegerse contra amenazas 
+
+[El malware](/windows/security/threat-protection/intelligence/understanding-malware)y los ciberataques sofisticados, como las [amenazas sin](/windows/security/threat-protection/intelligence/fileless-threats)archivos, son una ocurrencia común. Las empresas deben protegerse a sí mismas y a sus clientes con capacidades de seguridad de IT eficaces. Los ciberataques pueden causar problemas importantes para su organización, que van desde una pérdida de confianza hasta problemas financieros, tiempos de inactividad que amenazan la empresa y mucho más. La protección contra amenazas es importante, pero puede resultar difícil determinar dónde enfocar el tiempo, el esfuerzo y los recursos de la organización. Microsoft 365 E5 puede ayudarle. 
 
 Las soluciones de seguridad de Microsoft están integradas en nuestros productos y servicios. Las capacidades de automatización y aprendizaje automático reducen la carga en los equipos de seguridad para asegurarse de que se abordan los elementos correctos. Y la solidez de las soluciones de seguridad de Microsoft se basa en trillones de señales que procesamos todos los días en nuestro [gráfico de seguridad inteligente.](/graph/security-concept-overview) Las soluciones de seguridad de [Microsoft 365 incluyen Microsoft 365 Defender,](../security/defender/microsoft-365-defender.md)una solución que reúne señales en su correo electrónico, datos, dispositivos e identidades para pintar una imagen de amenazas avanzadas contra su organización.
 
@@ -45,11 +49,13 @@ En Microsoft 365 E5, las capacidades de protección contra amenazas están integ
 
 Microsoft 365 Defender reúne las señales y los datos en un centro de seguridad unificado [de Microsoft 365.](/microsoft-365/security/defender/overview-security-center) 
 
-![Ilustración conceptual del panel de Microsoft 365 Defender](../media/deploy-threat-protection/deploy-threat-protection-across-m365-mtp.png)
+> [!div class="mx-imgBorder"]
+> ![Ilustración conceptual del panel de Microsoft 365 Defender](../media/deploy-threat-protection/deploy-threat-protection-across-m365-mtp.png)
 
 En la siguiente ilustración se muestra una ruta de acceso recomendada para implementar estas capacidades individuales. 
 
-![Señales de protección contra amenazas M365](../media/deploy-threat-protection/deploy-threat-protection-across-m365.png)
+> [!div class="mx-imgBorder"]
+> ![Señales de protección contra amenazas M365](../media/deploy-threat-protection/deploy-threat-protection-across-m365.png)
 
 |Solución/funcionalidades  |Descripción  |
 |---------|---------|
@@ -62,29 +68,27 @@ En la siguiente ilustración se muestra una ruta de acceso recomendada para impl
 > [!TIP]
 > Las organizaciones que tienen varios equipos de seguridad pueden implementar estas funcionalidades en paralelo. 
 
-## <a name="deploy-your-threat-protection-solution"></a>Implementar la solución de protección contra amenazas
+## <a name="plan-to-deploy-your-threat-protection-solution"></a>Planear la implementación de la solución de protección contra amenazas
 
- En el siguiente diagrama se muestra el proceso de alto nivel para implementar funcionalidades de protección contra amenazas. 
+En el siguiente diagrama se muestra el proceso de alto nivel para implementar funcionalidades de protección contra amenazas. 
 
 ![Proceso para implementar funcionalidades de protección contra amenazas](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png)
 
-Para asegurarse de que su organización tiene la mejor protección posible, configure e implemente la solución de seguridad con un proceso que incluya los siguientes pasos:
+Para asegurarse de que su organización tiene la mejor protección posible, configure e implemente la solución de seguridad mediante un proceso que incluya los siguientes pasos:
 
-1. [Configurar la autenticación multifactor y las directivas de acceso condicional](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)
-2. [Configurar Microsoft Defender para la identidad](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)
-3. [Activar Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender)
-4. [Configurar Defender para Office 365](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365)
-5. [Configurar Microsoft Defender para el extremo](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint)
-6. [Configurar Microsoft Cloud App Security](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)
-7. [Supervisar el estado y realizar acciones](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)
-8. [Entrenar a los usuarios](deploy-threat-protection-configure.md#step-8-train-users)
+1. [Configurar la autenticación multifactor y las directivas de acceso condicional.](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)
+2. [Configurar Microsoft Defender para identity](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity).
+3. [Active Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender).
+4. [Configurar Defender para Office 365](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365).
+5. [Configurar Microsoft Defender para endpoint](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint).
+6. [Configurar Microsoft Cloud App Security](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security).
+7. [Supervisar el estado y realizar acciones](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions).
+8. [Entrenar usuarios](deploy-threat-protection-configure.md#step-8-train-users).
 
 Las características de protección contra amenazas se pueden configurar en paralelo, por lo que si tiene varios equipos de seguridad de red responsables de diferentes servicios, pueden configurar las características de protección de la organización al mismo tiempo.
 
 ## <a name="next-step"></a>Paso siguiente
 
+Continúe con [Configurar las capacidades de protección contra amenazas en Microsoft 365](deploy-threat-protection-configure.md).
 
-![Proceso para implementar funcionalidades de protección contra amenazas](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png)
-
-Continúe con [Configurar las capacidades de protección contra amenazas en Microsoft 365](deploy-threat-protection-configure.md)
 
