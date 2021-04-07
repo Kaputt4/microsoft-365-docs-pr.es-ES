@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5a82eba3801509ed2e8ffb46ab32045466204fab
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 3aa5c8065b882dff670d6b829141955bf615d933
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498827"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599845"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -44,7 +44,7 @@ Para cada función, las siguientes tablas enumeran la versión mínima de Office
 Las nuevas versiones de las aplicaciones de Office están disponibles en diferentes momentos para diferentes canales de actualización. Para obtener más información, incluido el modo de configurar el canal de actualización para poder probar una nueva función de etiquetado que le interese, consulte [Descripción general de los canales de actualización para las Aplicaciones de Microsoft 365](/DeployOffice/overview-update-channels). Las nuevas funciones que están en vista previa privada no se incluyen en la tabla, pero es posible que pueda unirse a estas vistas previas nominando a su organización para el programa de vista previa privada de [Microsoft Information Protection](https://aka.ms/mip-preview).
 
 > [!NOTE]
-> Los nombres de los canales de actualización de las aplicaciones de Office han cambiado recientemente. PoPor ejemplo, el Canal Mensual es ahora el Canal Actual, y el Office Insider es ahora el Canal Beta. Para más información, consulte [Cambios en canales de actualización para las Aplicaciones de Microsoft 365](/deployoffice/update-channels-changes).
+> Los nombres de los canales de actualización de las aplicaciones de Office han cambiado recientemente. Por ejemplo, el Canal Mensual es ahora el Canal Actual, y el Office Insider es ahora el Canal Beta. Para más información, consulte [Cambios en canales de actualización para las Aplicaciones de Microsoft 365](/deployoffice/update-channels-changes).
 
 Office para iOS y Office para Android: Las etiquetas de confidencialidad están integradas en las [aplicación de Office](https://www.microsoft.com/es-ES/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
 
@@ -85,18 +85,20 @@ Los números indicados son la versión mínima de la aplicación Office requerid
 |[Requerir una justificación para cambiar una etiqueta.](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
 |[Proporcionar un vínculo de ayuda a una página de ayuda personalizada.](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
 |[Marcar el contenido](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
-|[Marcados dinámicos con variables](#dynamic-markings-with-variables).                                              | En revisión                     | En revisión                 | En revisión         | En revisión           | En revisión               |
+|[Marcas dinámicas con variables](#dynamic-markings-with-variables) <sup>1</sup>                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
 |[Permitir a los usuarios asignar permisos: <br /> - No reenviar](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
 |[Permitir a los usuarios asignar permisos: <br /> - Solo cifrar](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | En revisión | En revisión  | En revisión | Implementando |
-|[Requerir a los usuarios que apliquen una etiqueta a sus correos electrónicos y documentos ](#require-users-to-apply-a-label-to-their-email-and-documents)   | Desplegando: 2101+                        | 16.43+ <sup>\*</sup>                    | En revisión            | En revisión                | Sí                |
+|[Requerir a los usuarios que apliquen una etiqueta a sus correos electrónicos y documentos ](#require-users-to-apply-a-label-to-their-email-and-documents)   | Desplegando: 2101+                        | 16.43 y versiones posteriores <sup>2</sup>                    | En revisión            | En revisión                | Sí                |
 |[Auditoría de la actividad de los usuarios relacionada con las etiquetas](data-classification-activity-explorer.md) | 2011+ | En revisión | En revisión           | En revisión               | En revisión |
-|[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | En revisión           | En revisión               | Sí |
+|[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44 y versiones posteriores <sup>2</sup>                    | En revisión           | En revisión               | Sí |
 |
 
-**Nota al pie.**
+**Notas al pie:**
 
-<sup>\*</sup> Se requiere el [nuevo Outlook para Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
+<sup>1</sup> Actualmente solo se admiten las [variables Item.Label e If.App](#dynamic-markings-with-variables).
+<br />
+<sup>2</sup> Se necesita el [nuevo Outlook para Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439).
 
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Cliente de etiquetado integrado en Office y otras soluciones de etiquetado
@@ -291,20 +293,20 @@ Para estos escenarios, utilizando sus aplicaciones de Office, un usuario con eti
 ### <a name="dynamic-markings-with-variables"></a>Marcas dinámicas con variables
 
 > [!IMPORTANT]
-> Actualmente, no todas las aplicaciones de todas las plataformas admiten las marcas de contenido dinámico que puedes especificar para tus encabezados, pies de página y marcas de agua. Para las aplicaciones que no son compatibles con esta funcionalidad, aplican las marcas como el texto original especificado en la configuración de la etiqueta, en lugar de resolver las variables.
+> Actualmente, no todas las aplicaciones de todas las plataformas admiten las marcas de contenido dinámico que puedes especificar para tus encabezados, pies de página y marcas de agua. Las aplicaciones que no admiten esta funcionalidad aplican las marcas como el texto original especificado en la configuración de la etiqueta, en lugar de resolver las variables.
 > 
-> El cliente de etiquetado unificado de Azure Information Protection es compatible con las marcas dinámicas. Para el etiquetado integrado en Office, consulte las tablas de la sección de [funciones](#support-for-sensitivity-label-capabilities-in-apps) de esta página.
+> El cliente de etiquetado unificado de Azure Information Protection es compatible con las marcas dinámicas y todas las variables indicadas. En el caso del etiquetado integrado en Office, consulte las tablas de la sección sobre las [funcionalidades](#support-for-sensitivity-label-capabilities-in-apps) de esta página, donde encontrará las versiones mínimas. Luego, en la tabla siguiente, se indican las variables admitidas.
 
 Cuando se configura una etiqueta de confidencialidad para las marcas de contenido, se pueden utilizar las siguientes variables en la cadena de texto para su cabecera, pie de página o marca de agua:
 
 | Variable | Descripción | Ejemplo de cuando las etiquetas son aplicadas |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Nombre de visualización de la etiqueta aplicada| **General**|
-| `${Item.Name}` | Nombre del archivo o asunto del correo electrónico del contenido etiquetado | **Sales.docx** |
-| `${Item.Location}` | Ruta y nombre de archivo del documento que se va a etiquetar, o el asunto del correo electrónico que se va a etiquetar | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Nombre del usuario que aplica la etiqueta| **Richard Simone** |
-| `${User.PrincipalName}` | Nombre principal del usuario de Azure AD (UPN) del usuario que aplica la etiqueta | **rsimone\@contoso.com** |
-| `${Event.DateTime}` | Fecha y hora en que el contenido es etiquetado, en la zona horaria local del usuario que aplica la etiqueta | **8/10/2020 1:30 PM** |
+| `${Item.Label}` | Nombre de visualización de la etiqueta aplicada <br /><br> Etiquetado integrado: compatible con Word, Excel, PowerPoint y Outlook | **General**|
+| `${Item.Name}` | Nombre del archivo o asunto del correo electrónico del contenido etiquetado <br /><br> Etiquetado integrado: compatible con Word, Excel y PowerPoint | **Sales.docx** |
+| `${Item.Location}` | Ruta y nombre de archivo del documento que se va a etiquetar, o el asunto del correo electrónico que se va a etiquetar <br /><br> Etiquetado integrado: compatible con Word, Excel y PowerPoint | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Nombre del usuario que aplica la etiqueta <br /><br> Etiquetado integrado: compatible con Word, Excel y PowerPoint | **Richard Simone** |
+| `${User.PrincipalName}` | Nombre principal del usuario de Azure AD (UPN) del usuario que aplica la etiqueta <br /><br> Etiquetado integrado: compatible con Word, Excel y PowerPoint  | **rsimone\@contoso.com** |
+| `${Event.DateTime}` | Fecha y hora en que el contenido es etiquetado, en la zona horaria local del usuario que aplica la etiqueta <br /><br> Etiquetado integrado: compatible con Word, Excel y PowerPoint  | **8/10/2020 1:30 PM** |
 
 > [!NOTE]
 > La sintaxis de estas variables distingue entre mayúsculas y minúsculas.
@@ -312,9 +314,6 @@ Cuando se configura una etiqueta de confidencialidad para las marcas de contenid
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Configuración de diferentes marcas visuales para Word, Excel, PowerPoint y Outlook
 
 Como variable adicional, puede configurar las marcas visuales por tipo de aplicación de Office utilizando una declaración de variable "If.App" en la cadena de texto, e identificar el tipo de aplicación utilizando los valores **Word**, **Excel**, **PowerPoint**, o **Outlook**. También puede abreviar estos valores, lo cual es necesario si desea especificar más de uno en la misma sentencia If.App.
-
-> [!NOTE]
-> Para completar, se incluyen instrucciones para Outlook, aunque actualmente sólo es compatible con el cliente de etiquetado unificado de Azure Information Protection.
 
 Utilice la siguiente sintaxis:
 

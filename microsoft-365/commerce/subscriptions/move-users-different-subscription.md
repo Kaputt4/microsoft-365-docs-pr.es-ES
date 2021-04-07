@@ -20,33 +20,40 @@ search.appverid:
 - MET150
 description: Obtén información sobre cómo mover usuarios entre suscripciones.
 ms.date: 07/01/2020
-ms.openlocfilehash: 31deb1b81e1f9605210b50036441f98dc3b6a811
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: e0c6aabbdfd50fa66d846c76d317d940dc0cd819
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408308"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615116"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Mover usuarios a una suscripción diferente
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles que se presentan aquí, vea [Overview of Microsoft 365 admin center](../../business-video/admin-center-overview.md).
-
-::: moniker-end
 
 Si tiene más de una suscripción, tiene usuarios con una licencia para una suscripción, pero desea moverlos a otra suscripción, puede reemplazar su licencia existente por otra diferente.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global, de licencia o de usuarios para asignar licencias. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../../admin/add-users/about-admin-roles.md?view=o365-worldwide).
+Debe ser un administrador global, de licencia o de usuarios para asignar licencias. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="move-users-to-a-different-subscription"></a>Mover usuarios a una suscripción diferente
 
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
+
+::: moniker-end
 
 2. Seleccione los círculos junto a los nombres de los usuarios para los que desea reemplazar las licencias existentes.
 
@@ -55,44 +62,6 @@ Debe ser un administrador global, de licencia o de usuarios para asignar licenci
 4. En el **panel Administrar licencias de productos,** seleccione **Reemplazar**  y seleccione las licencias que desea asignar a los usuarios.
 
 5. En la parte inferior, seleccione **Guardar cambios** \> **cerrar**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
-
-2. Active las casillas junto a los nombres de los usuarios a los que quiere reemplazar las licencias existentes.
-
-3. En el panel **Acciones en masa**, elija **Editar licencias de producto**.
-
-4. En el panel **Asignar productos**, seleccione **Reemplazar las asignaciones de licencias de producto existentes** \> **Siguiente**.
-
-5. Sitúe el botón de alternancia en la posición **Activada** para las licencias que quiere asignar a estos usuarios.
-
-    Puede limitar los servicios que están disponibles para los usuarios. Cambie el botón de alternancia a la posición de **desactivado** para los servicios que no quiere que tenga el usuario. Cualquier asignación de licencia anterior para los usuarios seleccionados se quitará.
-
-6. En la parte inferior del panel **Reemplazar productos existentes**, seleccione **Reemplazar** \> **Cerrar** \> **Cerrar**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
-
-2. Active las casillas junto a los nombres de los usuarios a los que quiere reemplazar las licencias existentes.
-
-3. En el panel **Acciones en masa**, elija **Editar licencias de producto**.
-
-4. En el panel **Asignar productos**, seleccione **Reemplazar las asignaciones de licencias de producto existentes** \> **Siguiente**.
-
-5. Sitúe el botón de alternancia en la posición **Activada** para las licencias que quiere asignar a estos usuarios.
-
-    Puede limitar los servicios que están disponibles para los usuarios. Cambie el botón de alternancia a la posición de **desactivado** para los servicios que no quiere que tenga el usuario. Cualquier asignación de licencia anterior para los usuarios seleccionados se quitará.
-
-6. En la parte inferior del panel **Reemplazar productos existentes**, seleccione **Reemplazar** \> **Cerrar** \> **Cerrar**.
-
-::: moniker-end
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 72c3cfd51e472bbbda61f0084e131c4298633193
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 7d4bc095a9fbc0b9cd166d3133ed291a2c8c01da
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186994"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615428"
 ---
-# <a name="microsoft-defender-for-endpoint-for-ios"></a>Microsoft Defender para endpoint para iOS
+# <a name="microsoft-defender-for-endpoint-for-ios"></a>Microsoft Defender para punto de conexión para iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -78,11 +78,11 @@ Para obtener más información, vea [Deploy Microsoft Defender for Endpoint for 
 
 ## <a name="resources"></a>Recursos
 
-- Manténgase informado acerca de las próximas versiones visitando nuestro [blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS).
+- Manténgase informado sobre las próximas versiones visitando Novedades de [Microsoft Defender para Endpoint para iOS](ios-whatsnew.md) o nuestro [blog](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS).
 
 - Proporcionar comentarios a través del sistema de comentarios desde la aplicación o a través del [portal de SecOps](https://securitycenter.microsoft.com)
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Implementar Microsoft Defender para endpoint para iOS](ios-install.md)
 - [Configurar Microsoft Defender para endpoint para características de iOS](ios-configure-features.md)

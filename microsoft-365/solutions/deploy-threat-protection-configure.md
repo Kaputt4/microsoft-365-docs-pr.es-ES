@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 847dd2d090fb26c5558d4a3496a79cf4829881fb
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: 81a1a4ce2e99caaca1025c6ddbbdfdc7ab7c449d
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604398"
+ms.locfileid: "51615512"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurar las capacidades de protección contra amenazas en Microsoft 365
 
@@ -128,11 +128,8 @@ Con Microsoft Defender para Office 365, los usuarios de toda la organización pu
 ![Proceso para implementar Microsoft Defender para endpoint](../media/deploy-threat-protection/deploy-mdatp-steps.png) 
 
 1. [Prepare su entorno para Microsoft Defender para Endpoint](../security/defender-endpoint/deployment-phases.md).
-
 2. [Implementar Microsoft Defender para endpoint](../security/defender-endpoint/production-deployment.md).
-
 3. [Incorporación al servicio de Microsoft Defender para puntos de conexión](../security/defender-endpoint/onboarding.md).
-
 4. [Complete las tareas administrativas de seguridad superior](../security/defender-endpoint/tvm-security-recommendation.md).
 
 ### <a name="more-information-about-microsoft-defender-for-endpoint"></a>Más información sobre Microsoft Defender para endpoint
@@ -149,11 +146,8 @@ Con Microsoft Defender para Office 365, los usuarios de toda la organización pu
 ![Proceso para implementar Microsoft Cloud App Security](../media/deploy-threat-protection/deploy-mcas-steps.png) 
 
 1. [Configurar el portal y otros requisitos básicos](/cloud-app-security/general-setup).
-
 2. [Configurar la detección en la nube](/cloud-app-security/set-up-cloud-discovery) [y conectar aplicaciones](/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps).
-
 3. [Implementar control de aplicaciones de acceso condicional para aplicaciones características.](/cloud-app-security/proxy-deployment-aad)
-
 4. [Use las herramientas de investigación y los paneles](/cloud-app-security/investigate).
 
 ### <a name="more-information-about-microsoft-cloud-app-security"></a>Más información sobre Microsoft Cloud App Security

@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Aprenda a interpretar la información de los cargos, la facturación y los pagos en su factura o recibo de Microsoft 365 para empresas, y sepa cómo modificar el número de la orden de compra.
-ms.openlocfilehash: 99b52928d458e7883919ee46aaafaa7a66278447
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 56f1ba3e7cc328593873aaf06ddfe6dc82fc1a17
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911691"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615380"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Entender su factura o recibo de Microsoft 365 para empresas
 
@@ -106,36 +106,24 @@ Si paga mediante factura, puede agregar o cambiar el número de orden de compra 
 ::: moniker range="o365-worldwide"
 
 1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-
-2. Si se encuentra en la vista de **Tabla**, seleccione **Tarjetas** para cambiar entre las vistas.
-
-3. Busque la suscripción que quiera cambiar.
-
-4. En la sección **Facturación**, junto a **factura**, seleccione **Editar**.
-
-5. En la parte inferior del panel para **Editar los detalles de pago**, introduzca el número de la orden de compra y, después, seleccione **Guardar**.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
-
-2. Seleccione la suscripción que desee cambiar y, en la sección **Método de pago**, elija **Cambiar detalles de pago**.
-
-3. En la parte inferior del panel **Cambiar detalles de pago**, introduzca el número de la orden de compra y luego, elija **Enviar**.
+1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
-
-2. Seleccione la suscripción que desee cambiar y, en la sección **Método de pago**, elija **Cambiar detalles de pago**.
-
-3. En la parte inferior del panel **Cambiar detalles de pago**, introduzca el número de la orden de compra y luego, elija **Enviar**.
-
+1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
 ::: moniker-end
+
+1. En la pestaña **Productos**, seleccione la suscripción que desee cambiar.
+
+1. En la página detalles de la suscripción, en la sección Configuración de **suscripción y pago,** seleccione **Editar factura**. 
+
+1. En la parte inferior del **panel Editar detalles para** pagar por voz, escriba el número de pedido y, a continuación, seleccione **Guardar**.
 
 ## <a name="related-articles"></a>Artículos relacionados
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 0baefab441b17aa4a9527536cead181bae8f8948
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 4ce52c40e622f55b0fd231ec634c4897fea1d6f5
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51600000"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615500"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Directivas para permitir el acceso de invitado y el acceso de usuarios externos B2B
 
@@ -82,10 +82,12 @@ Solo una organización puede administrar un dispositivo. Si no excluyes a los in
 
 ## <a name="next-step"></a>Paso siguiente
 
-![Paso 4: Directivas para aplicaciones en la nube de Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Paso 4: Directivas para aplicaciones en la nube de Microsoft 365 y Microsoft Cloud App Security](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Configurar directivas de acceso condicional para:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)
+- [Microsoft Cloud App Security](mcas-saas-access-policies.md)
+ 

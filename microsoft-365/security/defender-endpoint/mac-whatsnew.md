@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 16d78cf014e775ecb98a59d90b5734836eb3cbf2
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 5cd1f64d006b5462634dd47df9083e1a89db0e8c
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476630"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615224"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>Novedades de Microsoft Defender para Endpoint para Mac
 
@@ -38,8 +38,10 @@ ms.locfileid: "51476630"
 > [!IMPORTANT]
 > En macOS 11 (Big Sur), Microsoft Defender para Endpoint requiere perfiles de configuración adicionales. Si es un cliente existente que actualiza desde versiones anteriores de macOS, asegúrese de implementar los perfiles de configuración adicionales enumerados en [esta página](mac-sysext-policies.md).
 
-> [!IMPORTANT]
-> La compatibilidad con macOS 10.13 (High Sierra) se suspendió el 15 de febrero de 2021.
+## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0)
+
+- Microsoft Defender para Endpoint para Mac ya está disponible en versión preliminar para los clientes de US Government. Para obtener más información, vea [Microsoft Defender for Endpoint for US Government customers](gov.md).
+- Mejoras de rendimiento (específicamente para la situación en la que se usa la aplicación XCode Simulator) & correcciones de errores
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
 

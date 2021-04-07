@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 9d7170ff261a53ba5755134973a912221363b3c8
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 104ef919d356642985e7b34d16650c27a8141e86
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599812"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615104"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
@@ -201,7 +201,7 @@ Microsoft recomienda no crear conjuntos de directivas que se apliquen a todas la
 1. Configure las características de identidad de requisitos previos y su configuración.
 2. Configure las directivas comunes de acceso y identidad de acceso.
 3. Configurar directivas de acceso condicional para usuarios invitados y externos.
-4. Configure directivas de acceso condicional para aplicaciones en la nube de Microsoft 365, como Microsoft Teams, Exchange Online y SharePoint.
+4. Configurar directivas de acceso condicional para aplicaciones en la nube de Microsoft 365, como Microsoft Teams, Exchange Online y SharePoint y directivas de Microsoft Cloud App Security.
 
 Después de configurar el acceso a identidades y dispositivos, consulta la guía de implementación de características de [Azure AD](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) para obtener una lista de comprobación por fases de características adicionales que debes tener en cuenta y Gobierno de identidad de [Azure AD](/azure/active-directory/governance/) para proteger, supervisar y auditar el acceso.
 
