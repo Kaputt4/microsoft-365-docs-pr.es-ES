@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1460deef11a87044530c54c8b10637284829a0cd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6dfa22b2afb33c318eae8937888b5b75a1742938
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207435"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599473"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Investigación y respuesta automatizadas (AIR) en Microsoft Defender para Office 365
 
@@ -81,11 +81,9 @@ Las funcionalidades de AIR se incluyen en [Microsoft Defender para Office 365,](
 - [Directivas antimalware](protect-against-threats.md#part-1---anti-malware-protection)
 - [Protección antiphishing](protect-against-threats.md#part-2---anti-phishing-protection)
 - [Protección contra correo no deseado](protect-against-threats.md#part-3---anti-spam-protection)
-- [Protección antiphishing](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-2---anti-phishing-protection)
-- [Protección contra correo no deseado](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-3---anti-spam-protection)
-- [Vínculos seguros y datos adjuntos seguros](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
-- [Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
-- [Purga automática de hora cero para correo electrónico](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop)
+- [Vínculos seguros y datos adjuntos seguros](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
+- [Purga automática de hora cero para correo electrónico](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
 
 Además, asegúrese de revisar [las](../../compliance/alert-policies.md)directivas de alerta de su organización, especialmente las directivas predeterminadas en la categoría Administración [de amenazas.](../../compliance/alert-policies.md#default-alert-policies)
 
@@ -94,7 +92,7 @@ Además, asegúrese de revisar [las](../../compliance/alert-policies.md)directiv
 Microsoft 365 proporciona muchas directivas de alerta integradas que ayudan a identificar el uso indebido de permisos de administrador de Exchange, la actividad de malware, las posibles amenazas externas e internas y los riesgos de gobierno de la información. Varias de las [directivas de alerta predeterminadas](../../compliance/alert-policies.md#default-alert-policies) pueden desencadenar investigaciones automatizadas. En la tabla siguiente se describen las alertas que desencadenan investigaciones automatizadas, su gravedad en el centro de seguridad de Microsoft 365 y cómo se generan:
 
 |Alerta|Severity|Cómo se genera la alerta|
-|:---|:---|:---|
+|---|---|---|
 |Se detectó un clic de dirección URL potencialmente malintencionado|**Alto**|Esta alerta se genera cuando se produce cualquiera de las siguientes situaciones: <ul><li>Un usuario protegido por [vínculos seguros en](safe-links.md) su organización hace clic en un vínculo malintencionado</li><li>Microsoft Defender para Office 365 identifica los cambios de veredicto de las direcciones URL</li><li>Los usuarios invalidan las páginas de advertencia vínculos seguros (según la [directiva vínculos seguros de la organización).](set-up-safe-links-policies.md)</li></ul> <p> Para obtener más información sobre los eventos que desencadenan esta alerta, vea [Configurar directivas de vínculos seguros.](set-up-safe-links-policies.md)|
 |Un usuario notifica un mensaje de correo electrónico como malware o phish|**Informativo**|Esta alerta se genera cuando los usuarios de la organización informan de mensajes como correo electrónico de suplantación de identidad mediante el complemento Report [Message](enable-the-report-message-add-in.md) o el complemento [Report Phishing](enable-the-report-phish-add-in.md).|
 |Los mensajes de correo electrónico que contienen malware se quitan después de la entrega|**Informativo**|Esta alerta se genera cuando los mensajes de correo electrónico que contienen malware se entregan a los buzones de la organización. Si se produce este evento, Microsoft quita los mensajes infectados de los buzones de Exchange Online mediante la purga [automática de hora cero](zero-hour-auto-purge.md).|
@@ -122,7 +120,6 @@ Los permisos se conceden a través de determinados roles, como los que se descri
 - Administradores de seguridad (incluidos los administradores globales)
 - El equipo de operaciones de seguridad de la organización (incluidos los lectores de seguridad y los que tienen el rol **Buscar y** purgar)
 - Usuarios finales
-
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>Los cambios se realizarán próximamente en el centro de seguridad
 
@@ -152,11 +149,11 @@ En la tabla siguiente se enumeran los cambios y mejoras que llegan a AIR en Micr
 |**Pestaña Entidades**|La **pestaña Entidades** tiene un estilo de pestaña en pestaña que incluye una vista de resumen total y la capacidad de filtrar por tipo de entidad. La **pestaña Entidades** ahora incluye una opción **Ir** a buscar, además de la opción Abrir **en el** Explorador. Ahora puedes usar el Explorador [de amenazas](threat-explorer.md) o la búsqueda [avanzada](../defender-endpoint/advanced-hunting-overview.md) para buscar entidades y amenazas y filtrar los resultados.|
 |**Pestaña Acciones**|La pestaña **Acciones** actualizada ahora incluye **una pestaña Acciones pendientes** y una **pestaña Historial de** acciones. Las acciones se pueden aprobar (o rechazar) en un panel lateral que se abre al seleccionar una acción pendiente.|
 |**Ficha Evidencia**|Una nueva **pestaña Evidencia** muestra los resultados clave de la entidad relacionados con las acciones. Las acciones relacionadas con cada elemento de evidencia se pueden aprobar (o rechazar) en un panel lateral que se abre al seleccionar una acción pendiente.|
-|**Centro de actividades**|El Centro **de acciones** actualizado ( ) reúne acciones pendientes y completadas en [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) correo electrónico, dispositivos e identidades. Para obtener más información, consulte Centro de acciones. (Para obtener más información, vea [The Action center](https://docs.microsoft.com/microsoft-365/security/defender/mtp-action-center).)
-|**Página Incidentes**|La **página Incidentes** ahora correlaciona varias investigaciones para proporcionar una mejor vista consolidada de las investigaciones. ([Obtenga más información sobre incidentes](https://docs.microsoft.com/microsoft-365/security/defender/incidents-overview).)
+|**Centro de actividades**|El Centro **de acciones** actualizado ( ) reúne acciones pendientes y completadas en [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) correo electrónico, dispositivos e identidades. Para obtener más información, consulte Centro de acciones. (Para obtener más información, vea [The Action center](../defender/m365d-action-center.md).)|
+|**Página Incidentes**|La **página Incidentes** ahora correlaciona varias investigaciones para proporcionar una mejor vista consolidada de las investigaciones. ([Obtenga más información sobre incidentes](../defender/incidents-overview.md).)|
+|
 
-
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver detalles y resultados de una investigación automatizada](air-view-investigation-results.md#view-details-of-an-investigation)
 - [Revisar y aprobar acciones pendientes](air-remediation-actions.md)

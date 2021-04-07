@@ -5,6 +5,7 @@ author: MicrosoftHeidi
 manager: serdars
 ms.prod: m365-security
 ms.topic: article
+audience: Admin
 f1.keywords:
 - NOCSH
 ms.author: heidip
@@ -19,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 51dec80c541cd77a1d4813505d82429487e8381c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 52e6709d18bd5ecbc91755a6c0e7be336d346f0c
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207338"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599608"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Recomendaciones de directiva para proteger chats, grupos y archivos de Teams
 
@@ -54,7 +55,7 @@ Estos servicios son los servicios dependientes que se deben incluir en la asigna
 
 - Microsoft Teams
 - SharePoint y OneDrive para la Empresa
-- Exchange en línea
+- Exchange Online
 - Skype Empresarial Online
 - Microsoft Stream (grabaciones de reuniones)
 - Microsoft Planner (tareas de Planner y datos del plan)
@@ -141,7 +142,7 @@ Teams también te permite usar aplicaciones en varios lugares, como canales o ch
 
 Para obtener más información acerca de las directivas de permisos de aplicaciones, consulte [Administrar directivas de permisos de aplicaciones en Microsoft Teams](/microsoftteams/teams-app-permission-policies).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 ![Paso 4: Directivas para aplicaciones en la nube de Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 

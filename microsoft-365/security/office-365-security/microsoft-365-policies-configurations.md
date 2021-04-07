@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: cb3c6bf6e19088be2771747af12932fa4e80431a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9d7170ff261a53ba5755134973a912221363b3c8
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207539"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599812"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
@@ -43,14 +43,13 @@ La configuración y las directivas de acceso a identidades y dispositivos se rec
 Estas funcionalidades y sus recomendaciones:
 
 - Se admiten en Microsoft 365 E3 y Microsoft 365 E5.
-- Se alinean con [la puntuación segura de Microsoft,](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) así como con la puntuación de identidad en [Azure AD,](/azure/active-directory/fundamentals/identity-secure-score)y aumentarán estas puntuaciones para su organización.
+- Se alinean con [la puntuación segura de Microsoft,](../defender/microsoft-secure-score.md) así como con la puntuación de identidad en [Azure AD,](/azure/active-directory/fundamentals/identity-secure-score)y aumentarán estas puntuaciones para su organización.
 - Le ayudará a implementar estos [cinco pasos para proteger su infraestructura de identidad.](/azure/security/azure-ad-secure-steps)
 
 Si su organización tiene requisitos de entorno únicos o complejidades, use estas recomendaciones como punto de partida. Sin embargo, la mayoría de las organizaciones pueden implementar estas recomendaciones según lo prescrito.
 
 Vea este vídeo para obtener una introducción rápida a las configuraciones de acceso a dispositivos y identidades para Microsoft 365 para empresas.
-<br>
-<br>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxEDQ]
 
 > [!NOTE]

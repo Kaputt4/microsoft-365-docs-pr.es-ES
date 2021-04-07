@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Los administradores pueden aprender cómo el aprendizaje de simulación de ataques en el centro de seguridad de Microsoft 365 afecta a los empleados y puede obtener información sobre los resultados de simulación y aprendizaje.
 ms.technology: mdo
-ms.openlocfilehash: 93d8829f9fbc4271d33e3208e5564529b4022fc3
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0fcb88406558f73b587d8452375c33dbbec1c78b
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205199"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51600012"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Obtenga información a través de la formación de simulación de ataques
 
@@ -45,7 +45,7 @@ Para ver un informe más detallado, haga clic **en Ver simulaciones y informe de
 
 En la [ **pestaña Simulaciones,**](https://security.microsoft.com/attacksimulator?viewid=simulations)la selección de una simulación le llevará a los detalles de la simulación, donde encontrará la **sección Acciones recomendadas.**
 
-En la sección acciones recomendadas se detallan las recomendaciones disponibles en [Puntuación segura de Microsoft](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score). Estas recomendaciones se basan en la carga usada en la simulación y le ayudarán a proteger a sus empleados y su entorno. Hacer clic en cada acción de mejora le llevará a sus detalles.
+En la sección acciones recomendadas se detallan las recomendaciones disponibles en [Puntuación segura de Microsoft](../defender/microsoft-secure-score.md). Estas recomendaciones se basan en la carga usada en la simulación y le ayudarán a proteger a sus empleados y su entorno. Hacer clic en cada acción de mejora le llevará a sus detalles.
 
 > [!div class="mx-imgBorder"]
 > ![Sección Acciones de recomendación sobre el aprendizaje de simulación de ataques](../../media/attack-sim-preview-recommended-actions.png)

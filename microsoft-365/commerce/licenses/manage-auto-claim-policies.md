@@ -1,5 +1,5 @@
 ---
-title: Administrar directivas de notificación automática
+title: Administrar directivas de reclamación automática
 f1.keywords:
 - CSH
 ms.author: cmcatee
@@ -18,14 +18,14 @@ ms.custom:
 - commerce
 search.appverid:
 - MET150
-ms.openlocfilehash: bf3f79e425b3f7cd86f1a5ab95a337ef5127e345
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 001b612820bb13873ec18733d68828837fcecd78
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911477"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599456"
 ---
-# <a name="manage-auto-claim-policies"></a>Administrar directivas de notificación automática
+# <a name="manage-auto-claim-policies"></a>Administrar directivas de reclamación automática
 
 Una directiva de notificación automática permite a los usuarios reclamar automáticamente una licencia de un producto la primera vez que inician sesión en una aplicación. Como administrador, normalmente se asignan licencias a los usuarios manualmente o mediante licencias basadas en grupos. Al usar directivas de notificación automática, administra los productos para los que los usuarios pueden reclamar automáticamente licencias. También puede controlar de qué productos provienen esas licencias.
 
@@ -43,7 +43,7 @@ Después de crear una directiva de notificación automática, puede realizar las
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global para crear y administrar directivas de notificación automática. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global, de usuario o de licencia para crear y administrar directivas de notificación automática. Para obtener más información, consulte [Acerca de los roles de administrador de Microsoft 365](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>Activar o desactivar la característica de directiva de notificación automática
 
@@ -55,6 +55,8 @@ De forma predeterminada, la característica de directiva de notificación autom�
 2. En el centro de la página, seleccione el **botón de configuración** Activar.
 
 ### <a name="turn-off-auto-claim-policies"></a>Desactivar directivas de notificación automática
+
+Solo un administrador global puede desactivar una configuración de directiva de notificación automática.
 
 1. En el Centro de administración, vaya a la **página Configuración** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">la organización.</a>
 2. Cerca de la parte inferior de la tabla, seleccione Aplicaciones y servicios **de propiedad del usuario.**

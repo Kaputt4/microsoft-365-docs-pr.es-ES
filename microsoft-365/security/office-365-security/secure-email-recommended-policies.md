@@ -20,19 +20,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 5a705444c81d884c10b99e5f0d2bfbb9e4f057e2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c5f5837f4e4069a67bc080178fefd10bd2a08629
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207383"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599856"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Recomendaciones de directivas para proteger el correo electrónico
 
 **Se aplica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
-
 
 En este artículo se describe cómo implementar las directivas de identidad y acceso a dispositivos recomendadas para proteger los clientes de correo electrónico y correo electrónico de la organización que admiten la autenticación moderna y el acceso condicional. Esta guía se basa en las directivas comunes de identidad y acceso a [dispositivos](identity-access-policies.md) y también incluye algunas recomendaciones adicionales.
 
@@ -103,7 +102,7 @@ Estos son los pasos:
 
 Para asegurarse de que los usuarios de dispositivos iOS y Android solo pueden acceder a contenido laboral o educativo mediante Outlook para iOS y Android, necesita una directiva de acceso condicional dirigida a esos usuarios potenciales.
 
-Vea los pasos para configurar esta directiva en [Manage messaging collaboration access by using Outlook for iOS and Android]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access).
+Vea los pasos para configurar esta directiva en [Manage messaging collaboration access by using Outlook for iOS and Android](/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access).
 
 ## <a name="set-up-message-encryption"></a>Configurar el cifrado de mensajes
 
@@ -111,7 +110,7 @@ Con las nuevas capacidades de cifrado de mensajes (OME) de Office 365, que aprov
 
 Para obtener más información, vea [Set up new Office 365 Message Encryption capabilities](../../compliance/set-up-new-message-encryption-capabilities.md).
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 ![Paso 4: Directivas para aplicaciones en la nube de Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 

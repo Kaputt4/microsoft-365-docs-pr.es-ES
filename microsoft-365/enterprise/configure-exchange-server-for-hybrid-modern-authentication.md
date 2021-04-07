@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Obtenga información sobre cómo configurar una Exchange Server local para usar la autenticación moderna híbrida (HMA), lo que le ofrece una autenticación y autorización de usuario más seguras.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9393b457c219fb03ae2e8a35c3f795c324919f27
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e0a0e521f4ac81a8aa113b2e945045d31f2c1952
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579727"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599504"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Cómo configurar Exchange Server local para usar la autenticación moderna híbrida
 
@@ -65,6 +65,9 @@ Activar HMA significa:
 ## <a name="make-sure-you-meet-all-the-prerequisites"></a>Asegúrese de cumplir todos los requisitos previos
 
 Dado que muchos requisitos previos son comunes tanto para Skype Empresarial como para Exchange, revise [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Haga esto  *antes*  de comenzar cualquiera de los pasos de este artículo.
+
+> [!NOTE]
+> Outlook Web App y el Panel de control de Exchange no funcionan con la autenticación moderna híbrida.
 
 ## <a name="add-on-premises-web-service-urls-as-spns-in-azure-ad"></a>Agregar direcciones URL de servicio web local como SPN en Azure AD
 
@@ -185,6 +188,8 @@ Si es un cliente local que usa exchange server en TCP 443, omita el procesamient
 52.125.128.0/20
 52.127.96.0/23
 ```
+
+La aplicación de Outlook para iOS y Android está diseñada como la mejor manera de experimentar Microsoft 365 u Office 365 en su dispositivo móvil mediante el uso de los servicios microsoft para ayudar a encontrar, planear y priorizar su vida diaria y su trabajo. Para obtener más información, consulte [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth?view=exchserver-2019).
 
 ## <a name="related-topics"></a>Temas relacionados
 

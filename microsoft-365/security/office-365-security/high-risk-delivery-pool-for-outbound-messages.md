@@ -17,12 +17,12 @@ ms.collection:
 description: Obtenga información sobre cómo se usan los grupos de entrega para proteger la reputación de los servidores de correo electrónico en los centros de datos de Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 461b5f9aa0407c5115ab84a075c793139a8b4305
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ac3469150ef5cf5c1040fcddf7f0bc95e7a18805
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205399"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599916"
 ---
 # <a name="outbound-delivery-pools"></a>Grupos de entrega de salida
 
@@ -42,7 +42,7 @@ Para evitar esto, todos los mensajes salientes de los servidores de centros de d
 
 El grupo de entrega de alto riesgo es un grupo de direcciones IP independiente para el correo electrónico saliente que solo se usa para enviar mensajes de "baja calidad" (por ejemplo, correo no deseado y [backscatter](backscatter-messages-and-eop.md)). El uso del grupo de entrega de alto riesgo ayuda a evitar que el grupo de direcciones IP normal para el correo saliente envíe correo no deseado. El grupo de direcciones IP normal para el correo electrónico saliente mantiene la reputación enviando mensajes de "alta calidad", lo que reduce la probabilidad de que estas direcciones IP aparezcan en listas de direcciones IP bloqueados.
 
-La posibilidad real de que las direcciones IP del grupo de entrega de alto riesgo se coloquen en listas de direcciones IP bloqueados permanece, pero esto es por diseño. La entrega a los destinatarios previstos no está garantizada, ya que muchas organizaciones de correo electrónico no aceptarán mensajes del grupo de entrega de alto riesgo.
+La posibilidad muy real de que las direcciones IP del grupo de entrega de alto riesgo se coloquen en listas de direcciones IP bloqueados permanece, pero esto es por diseño. La entrega a los destinatarios previstos no está garantizada, ya que muchas organizaciones de correo electrónico no aceptarán mensajes del grupo de entrega de alto riesgo.
 
 Para obtener más información, vea [Control outbound spam](outbound-spam-controls.md).
 
@@ -61,9 +61,3 @@ Entre las causas posibles de un aumento de los NDR se incluyen:
 - Un servidor de correo electrónico no deseado.
 
 Todos estos problemas pueden provocar un aumento repentino del número de NDR que procesa el servicio. Muchas veces, estos NDR parecen ser correo no deseado para otros servidores de correo electrónico y servicios (también conocidos como _[backscatter](backscatter-messages-and-eop.md)_).
-
-## <a name="relay-pool"></a>Grupo de retransmisión
-
-Los mensajes que se reenvía o retransmiten fuera de Microsoft 365 se envían mediante un grupo de retransmisión especial, ya que el destino final no debe considerar Microsoft 365 como el remitente real. También es importante aislar este tráfico, ya que existen escenarios legítimos e inválidos para la desaforación automática o la retransmisión de correo electrónico fuera de Microsoft 365. Al igual que el grupo de entrega de alto riesgo, se usa un grupo de direcciones IP independiente para el correo retransmitido. Este grupo de direcciones no se publica, ya que puede cambiar con frecuencia.
-
-Microsoft 365 debe comprobar que el remitente original es legítimo para poder entregar con confianza el mensaje reenviado. Para ello, la autenticación de correo electrónico (SPF, DKIM y DMARC) debe pasar cuando el mensaje llegue a nosotros. En los casos en que podemos autenticar al remitente, usamos Reescritura del remitente para ayudar al receptor a saber que el mensaje reenviado es de un origen de confianza. Puede obtener más información sobre cómo funciona y qué puede hacer para asegurarse de que el dominio de envío pase la autenticación en el esquema de reescritura de [remitentes (SRS).](/office365/troubleshoot/antispam/sender-rewriting-scheme)

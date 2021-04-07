@@ -12,12 +12,12 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Los administradores pueden aprender a usar el widget Colas en el panel flujo de correo del Centro de seguridad y cumplimiento de & para supervisar el flujo de correo fallido a sus organizaciones locales o asociadas a través de conectores salientes.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 14cadd0e8611fbbc65c3bdc9849beebf3a3eb34d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 65452b0ad7c31673c910ba48c9c6709995e563ce
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207542"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599988"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Información sobre colas en el Centro de seguridad & cumplimiento
 
@@ -87,7 +87,7 @@ Si hace clic en el número de mensajes del widget, aparecerá un **control** flo
 - **Servidor de destino**
 - **Última dirección IP**
 - **Último error**
-- **Cómo corregir:** hay problemas y soluciones comunes disponibles. Si es un **vínculo Corregir ahora está** disponible, haga clic en él para solucionar el problema. De lo contrario, haga clic en los vínculos disponibles para obtener más información sobre el error y las posibles soluciones.
+- **Cómo corregir:** hay problemas y soluciones comunes disponibles. Si un **vínculo Corregir ahora** está disponible, haga clic en él para solucionar el problema. De lo contrario, haga clic en los vínculos disponibles para obtener más información sobre el error y las posibles soluciones.
 
 ![Detalles después de hacer clic en la información de colas en el panel Flujo de correo](../../media/mfi-queues-details.png)
 
@@ -95,6 +95,6 @@ Se muestra el mismo menú desplegable después de hacer clic en **Ver cola** en 
 
 ![Los mensajes se han retrasado en los detalles de alerta en el Centro de seguridad & cumplimiento](../../media/mfi-queued-messages-alert-details.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 Para obtener información acerca de otras perspectivas en el panel flujo de correo, vea [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

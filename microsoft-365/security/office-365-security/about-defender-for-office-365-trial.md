@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Los administradores pueden obtener información sobre el modo de prueba de Microsoft Defender para Office 365
-ms.openlocfilehash: c2c1e44741a8604ce60586a85a28d32851285403
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1a86a73dbdb8f2549fb5dc03ece56497c5ff0b1e
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207459"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599800"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Acerca de la versión de prueba de Microsoft Defender para Office 365
 
@@ -98,7 +98,7 @@ Las experiencias eficaces ayudan a identificar, priorizar e investigar amenazas,
 - [Explorador de amenazas y detecciones en tiempo real](threat-explorer.md)
 - [Informes en tiempo real en Defender para Office 365](view-reports-for-mdo.md)
 - [Rastreadores de amenazas: nuevos y destacables](threat-trackers.md)
-- Integración [con Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+- Integración [con Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ### <a name="response-and-remediation"></a>Respuesta y corrección
 

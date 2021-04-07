@@ -20,12 +20,12 @@ description: Busque y use informes para Microsoft Defender para Office 365 en el
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 28978dbca3f9e4039b4f8c21c49a2963802afa54
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0b3e1ddf48ccd74b36c594d232c6761b921dee8c
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205599"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599904"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Ver informes de Defender para Office 365 en el panel Informes del Centro de seguridad & cumplimiento
 
@@ -114,7 +114,7 @@ Si hace clic **en Ver tabla de detalles,** el informe proporciona una vista casi
   - **Dirección del remitente**
   - **Id. de mensaje**
   - **Archivo**
-  - **Asunto**
+  - **Subject**
 
   Si hace clic **en Filtros,** puede modificar los resultados con los filtros siguientes:
 
@@ -183,7 +183,7 @@ Si hace clic **en Ver tabla de detalles,** el informe proporciona una vista casi
   - **Dirección del remitente**
   - **Id. de mensaje**
   - **Archivo**
-  - **Asunto**
+  - **Subject**
 
   Si hace clic **en Filtros,** puede modificar los resultados con los filtros siguientes:
 
@@ -282,8 +282,8 @@ El **informe de protección contra** amenazas de dirección URL tiene dos vistas
 - **Acción de protección de clic de dirección URL:** muestra el número de clics de url de los usuarios de la organización y los resultados del clic:
 
   - **Bloqueado** (el usuario no ha navegado a la dirección URL)
-  - **Bloqueado y hecho clic**
-  - **Se ha hecho clic durante el examen**
+  - **Bloqueado y hecho clic (el** usuario ha elegido continuar navegando a la dirección URL)
+  - **Se ha hecho clic durante el examen** (el usuario ha hecho clic en el vínculo antes de completar el examen)
 
   Un clic indica que el usuario ha hecho clic en la página de bloqueo al sitio web malintencionado (los administradores pueden deshabilitar el clic en las directivas de vínculos seguros).
 
@@ -315,9 +315,9 @@ El **informe de protección contra** amenazas de dirección URL tiene dos vistas
 Si hace clic **en Ver** tabla de detalles, el informe proporciona una vista casi en tiempo real de todos los clics que ocurren en la organización durante los últimos 7 días con los siguientes detalles:
 
 - **Hora de hacer clic**
-- **User**
+- **Usuario**
 - **URL**
-- **Acción**
+- **Action**
 - **App**
 
 Si hace clic **en Filtros** en la vista tabla de detalles, puede filtrar  por  los mismos criterios que en la vista de informe y también por dominios o destinatarios separados por comas.
@@ -354,7 +354,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 
 Para más información, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-**Nota:** Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft  365 proporciona a los usuarios los permisos necesarios en el Centro de seguridad & cumplimiento y permisos para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+**Nota:** Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft  365 proporciona a los usuarios los permisos necesarios en el Centro de seguridad & cumplimiento y permisos para otras características de Microsoft 365. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 

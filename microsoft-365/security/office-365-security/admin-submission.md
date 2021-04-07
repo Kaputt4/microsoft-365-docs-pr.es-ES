@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a usar el portal de envíos en el Centro de seguridad y cumplimiento de & para enviar correos electrónicos sospechosos, correos de suplantación de identidad sospechosos, correo no deseado y otros mensajes, direcciones URL y archivos potencialmente dañinos a Microsoft para su análisis.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 96a5469b1093c71997747b2c4c3b49bc1964f72b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e0975d5b6c2d29c94a30f7bbc703221b80217761
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581075"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599880"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usar el Envío para administradores para enviar correo no deseado, de suplantación de identidad, direcciones URL y archivos sospechosos a Microsoft
 
@@ -78,7 +78,7 @@ Para obtener otras formas de enviar mensajes de correo electrónico, direcciones
    - **Archivo:** haga clic **en Elegir archivo**. En el cuadro de diálogo que se abre, busque y seleccione el archivo .eml o .msg y, a continuación, haga clic **en Abrir**.
 
    > [!NOTE]
-   > Los administradores con Defender para Office 365 Plan 1 o Plan 2 pueden enviar mensajes tan antiguos como 30 días. Otros administradores solo podrán volver 7 días atrás.
+   > La capacidad de enviar mensajes tan antiguos como 30 días se ha suspendido temporalmente para Defender para clientes de Office 365. Los administradores solo podrán volver 7 días atrás.
 
 2. En la **sección Destinatarios,** especifique uno o varios destinatarios con los que desea ejecutar una comprobación de directiva. La comprobación de directivas determinará si el correo electrónico omitió el examen debido a directivas de usuario u organización.
 
@@ -225,7 +225,7 @@ Cerca de la parte superior de la página, puede escribir una fecha de  inicio, u
 Para cambiar los criterios de filtro, haga clic en el **botón Remitente** y elija uno de los siguientes valores:
 
 - **Dominio del remitente**
-- **Asunto**
+- **Subject**
 - **Enviado por**
 - **Tipo de envío**
 - **IP del remitente**

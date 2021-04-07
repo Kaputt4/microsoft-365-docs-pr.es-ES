@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver y administrar mensajes en cuarentena para todos los usuarios de Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3dee441a3442454c5f2978422d18a2084f8377f3
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 7dc7fd26d7a81bc76850af4799363c8d17fc1c83
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215545"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599540"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -105,7 +105,7 @@ Puede ver y administrar mensajes en cuarentena en el Centro de seguridad y cumpl
 
    - **Motivo de la cuarentena**:
      - **Directiva:** el mensaje coincide con las condiciones de una regla de flujo de correo (también conocida como regla de transporte).
-     - **Correo masivo**
+     - **Masivo**
      - **Phish:** el veredicto de filtro de correo no deseado era **correo** electrónico de suplantación de identidad o protección contra suplantación de identidad en cuarentena el mensaje [(](set-up-anti-phishing-policies.md#spoof-settings) configuración de suplantación o protección [de suplantación](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
      - **Malware**
      - **Correo no deseado**
@@ -189,7 +189,6 @@ Después de seleccionar un mensaje, tiene varias opciones para qué hacer con lo
 - **Ver encabezado del mensaje**: Seleccione este vínculo para ver el texto del encabezado del mensaje. Copie el texto del encabezado del mensaje en el portapapeles para analizar los campos y valores del encabezado en profundidad y luego elija **Analizador de encabezados de mensaje de Microsoft** para desplazarse hasta el Analizador de conectividad remota (haga clic con el botón derecho y elija **Abrir en una nueva pestaña** si no desea que Microsoft 365 complete esta tarea). Pegue el encabezado del mensaje en la página en la sección del Analizador de encabezados de mensaje y seleccione **Analizar encabezados**:
 
 - **Vista previa del mensaje**: En el panel flotante que aparece, elija una de las siguientes opciones:
-
   - **Vista de código fuente**: Muestra la versión HTML del cuerpo del mensaje con todos los vínculos desactivados.
   - **Vista de texto**: Muestra el cuerpo del mensaje como texto sin formato.
 
@@ -197,7 +196,7 @@ Después de seleccionar un mensaje, tiene varias opciones para qué hacer con lo
 
 - **Descargar mensaje**: En el panel de flotante que aparece, seleccione **Entiendo los riesgos de descargar este mensaje** para guardar una copia local del mensaje en formato .eml.
 
-- **Bloquear remitente:** esto impide que el remitente envíe correos electrónicos al buzón de correo del destinatario del administrador.
+- **Bloquear remitente:** impide que el remitente envíe mensajes a los destinatarios de la organización.
 
 - **Enviar mensaje:** en el panel desplegable que aparece, elija las siguientes opciones:
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los clientes de Microsoft Defender para Office 365 E5 y ATP P1 y ATP P2 ahora pueden obtener una vista de 360 grados de cada correo electrónico con página de entidad de correo electrónico.
-ms.openlocfilehash: 0fbf3843aa6e6cef1e748d3b71a68a42efd6fc24
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6d2777113e7e9f9ce760dab3b83252eceab520ff
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205310"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599492"
 ---
 # <a name="the-email-entity-page"></a>Página de la entidad de correo electrónico
 
@@ -30,16 +30,16 @@ ms.locfileid: "51205310"
 - [Usar pestañas de página de entidad de correo electrónico](#use-email-entity-page-tabs)
 - [Nuevo en la página de entidad de correo electrónico](#new-to-the-email-entity-page)
 
-Los administradores de Microsoft Defender para Office 365 (o MDO) E5 y MDO P1 y P2 tienen una vista de 360 grados de correo electrónico mediante la página entidad Correo electrónico **.** Esta página de correo electrónico de acceso se creó para mejorar la información que se entrega en el desplegable "detalles de correo electrónico" del Explorador [de amenazas.](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer-views)
+Los administradores de Microsoft Defender para Office 365 (o MDO) E5 y MDO P1 y P2 tienen una vista de 360 grados de correo electrónico mediante la página entidad Correo electrónico **.** Esta página de correo electrónico de acceso se creó para mejorar la información que se entrega en el desplegable "detalles de correo electrónico" del Explorador [de amenazas.](threat-explorer-views.md)
 
 ## <a name="reach-the-email-entity-page"></a>Llegar a la página de entidad de correo electrónico
 
 Cualquiera de los centros de seguridad y cumplimiento de Office existentes (protection.office.com) o el nuevo Centro de seguridad de Microsoft 365 (security.microsoft.com) le permitirán ver y usar la página de entidad de correo electrónico.
 
-|Hacia el centro  |URL  |Navegación  |
-|---------|---------|---------|
-|Seguridad y cumplimiento |protection.office.com | Explorador de administración > amenazas   |
-|Centro de seguridad de Microsoft 365 |security.microsoft.com | Explorador de & colaboración > correo electrónico |
+|Hacia el centro|URL|Navegación|
+|---|---|---|
+|Seguridad y cumplimiento |protection.office.com|Explorador de administración de \> amenazas|
+|Centro de seguridad de Microsoft 365 |security.microsoft.com|Correo & Explorador de \> colaboración|
 
 En el Explorador de amenazas, seleccione el asunto de un correo electrónico que está investigando. Se mostrará una barra dorada en la parte superior del menú desplegable de correo electrónico para ese correo. En esta invitación a la nueva página, se lee "Pruebe nuestra nueva página de entidad de correo electrónico con datos enriquecidos...". Seleccione esta opción para ver la nueva página.
 
@@ -81,22 +81,23 @@ Las pestañas de la parte superior de la página de entidad le permitirán inves
 Hay nuevas funcionalidades que vienen con esta página de entidad de correo electrónico. Esta es la lista.
 
 ### <a name="email-preview-for-cloud-mailboxes"></a>Vista previa de correo electrónico para buzones en la nube
+
 Los administradores pueden obtener una vista previa de los correos electrónicos en los buzones de correo en la ***nube,*** si los correos siguen estando presentes en la nube. En caso de una eliminación suave (por un administrador o usuario) o ZAP (para poner en cuarentena), los correos electrónicos ya no están presentes en la ubicación de la nube. En ese caso, los administradores no podrán obtener una vista previa de esos correos específicos. Los correos electrónicos que se descartaron, o donde la entrega falló, nunca llegaron al buzón. Como resultado, los administradores tampoco podrán obtener una vista previa de esos correos electrónicos.
 
 > [!WARNING]
->Para obtener una vista previa de los correos electrónicos, es necesario asignar un rol especial denominado ***Preview** _ a los administradores. Para agregar este rol, vaya a _ *Permissions & roles** > **Email & collaboration roles** in *security.microsoft.com*, o **Permissions** in *protection.office.com*. Agregue la ***función Vista*** previa a cualquiera de los grupos de roles o una copia de un grupo de roles que permita a los administradores de la organización trabajar en el Explorador de amenazas.
+> Para obtener una vista previa de los correos electrónicos, es necesario asignar un rol especial denominado ***Preview** _ a los administradores. Para agregar este rol, vaya a _ *Permissions & roles** > **Email & collaboration roles** in *security.microsoft.com*, o **Permissions** in *protection.office.com*. Agregue la ***función Vista*** previa a cualquiera de los grupos de roles o una copia de un grupo de roles que permita a los administradores de la organización trabajar en el Explorador de amenazas.
 
 ### <a name="detonation-details"></a>Detalles de detonación
 
 Estos detalles son específicos de los datos adjuntos y las direcciones URL de correo electrónico.
 
 Los usuarios verán detalles enriquecidos de detonación para los datos adjuntos o hipervínculos malintencionados conocidos que se encuentran en sus buzones, incluida la cadena de detonación, el resumen de detonación, la captura de pantalla y los detalles del comportamiento observado para ayudar a los clientes a comprender por qué los datos adjuntos o la dirección URL se consideraron malintencionados y detonados.
- 
+
 - *Cadena de detonación:* un solo archivo o detonación de dirección URL puede desencadenar varias detonaciones. La cadena Detonación realiza un seguimiento de la ruta de las detonaciones, incluido el archivo malintencionado original o la dirección URL que causó el veredicto, y el resto de archivos o direcciones URL que se han producido por la detonación. Es posible que estas direcciones URL o archivos adjuntos no se presenten directamente en el correo electrónico, pero incluir ese análisis es importante para determinar por qué se encontró que el archivo o la dirección URL son malintencionados.
 - *Resumen de detonación:* proporciona información sobre:
-    - Intervalo de tiempo de detonación.
-    - Veredicto del archivo adjunto o dirección URL.
-    - Información relacionada (número de archivo, direcciones URL, DIRECCIONES IP o dominios), que son otras entidades examinadas durante la detonación.
+  - Intervalo de tiempo de detonación.
+  - Veredicto del archivo adjunto o dirección URL.
+  - Información relacionada (número de archivo, direcciones URL, DIRECCIONES IP o dominios), que son otras entidades examinadas durante la detonación.
 - *Captura de pantalla de detonación:* muestra capturas de pantalla tomadas durante el proceso de detonación.
 - *Detalles de detonación:* estos son los detalles de comportamiento exactos de cada proceso que tuvo lugar durante la detonación.
 
@@ -111,45 +112,45 @@ Los usuarios verán detalles enriquecidos de detonación para los datos adjuntos
 *Detalles del correo* electrónico: detalles necesarios para una comprensión más detallada del correo electrónico disponible en la *pestaña* Análisis.
 
 - *Reglas de transporte de Exchange (ETR* o reglas de flujo de correo): estas reglas se aplican a un mensaje en la capa de transporte y tienen prioridad sobre los veredictos de suplantación de identidad y correo no deseado. Solo se pueden crear y modificar en el Centro de administración de Exchange, pero si algún ETR se aplica a un mensaje, aquí se mostrarán el nombre etr y el GUID. Información valiosa para fines de seguimiento.
-    
+
 - *Invalidaciones del* sistema: este es un medio para hacer excepciones a la ubicación de entrega destinada a un mensaje al invalidar la ubicación de entrega dada por el sistema (según la tecnología de amenazas y detección).
-    
+
 - *Regla de buzón de* correo no deseado: 'Junk' es una regla de bandeja de entrada oculta que está habilitada de forma predeterminada en todos los buzones.
-    - Cuando la regla de correo no deseado está habilitada en el buzón de correo, Exchange Online Protection (EOP) puede mover mensajes a correo no deseado según algunos criterios. El movimiento puede basarse en la acción de veredicto de filtrado de correo no deseado Mover el mensaje a la carpeta *correo* no deseado o en la lista Remitentes bloqueados en el buzón. Deshabilitar la regla de correo no deseado impide la entrega de mensajes a la carpeta de correo no deseado según la *lista Remitentes seguros* del buzón.
-    - Cuando la regla  de correo no deseado está deshabilitada en el buzón, EOP no puede mover mensajes a la carpeta correo no deseado en función de la acción de veredicto de filtrado de correo no deseado Mover el mensaje a la carpeta correo no deseado *o* la colección de listas seguras del buzón.
-    
+  - Cuando la regla de correo no deseado está habilitada en el buzón de correo, Exchange Online Protection (EOP) puede mover mensajes a correo no deseado según algunos criterios. El movimiento puede basarse en la acción de veredicto de filtrado de correo no deseado Mover el mensaje a la carpeta *correo* no deseado o en la lista Remitentes bloqueados en el buzón. Deshabilitar la regla de correo no deseado impide la entrega de mensajes a la carpeta de correo no deseado según la *lista Remitentes seguros* del buzón.
+  - Cuando la regla  de correo no deseado está deshabilitada en el buzón, EOP no puede mover mensajes a la carpeta correo no deseado en función de la acción de veredicto de filtrado de correo no deseado Mover el mensaje a la carpeta correo no deseado *o* la colección de listas seguras del buzón.
+
 - *Nivel de cumplimiento masivo (BCL):* el nivel de queja masiva (BCL) del mensaje. Un BCL más alto indica que es más probable que un mensaje de correo masivo genere quejas (el resultado natural si es probable que el correo electrónico sea correo no deseado).
-    
+
 - Nivel de confianza de correo no deseado *(SCL):* el nivel de confianza de correo no deseado (SCL) del mensaje. Un valor superior indica que el mensaje tiene más posibilidades de ser correo no deseado.
 
 - *Nombre de dominio:* es el nombre de dominio del remitente.
-    
+
 - *Propietario del dominio:* especifica el propietario del dominio de envío.
-    
+
 - *Ubicación del* dominio: especifica la ubicación del dominio de envío.
-    
+
 - *Fecha de creación del* dominio: especifica la fecha de creación del dominio de envío. Un dominio recién creado es algo que podrías tener cuidado si otras señales indican algún comportamiento sospechoso.
 
 *Autenticación de* correo electrónico: los métodos de autenticación de correo electrónico usados por Microsoft 365 incluyen SPF, DKIM y DMARC.
 
 - Marco de directivas de remitente (**SPF):** describe los resultados de la comprobación de SPF para el mensaje. Los valores posibles pueden ser:
-    - Pass (dirección IP): la comprobación SPF del mensaje pasado e incluye la dirección IP del remitente. El cliente tiene autorización para enviar o retransmitir un correo electrónico en nombre del dominio del remitente.
-    - Error (dirección IP): error en la comprobación SPF del mensaje e incluye la dirección IP del remitente. A veces, recibe la denominación "error no recuperable".
-    - Softfail (razón): el registro SPF designó al host como no autorizado para enviar, pero está en transición.
-    - Neutro: el registro SPF indica explícitamente que no afirma si la dirección IP está autorizada para enviar.
-    - Ninguno: el dominio no tiene un registro SPF o el registro SPF no evalúa un resultado.
-    - Temperror: se ha producido un error temporal. Por ejemplo, un error de DNS. Es posible la misma comprobación sea correcta más tarde.
-    - Permerror: se ha producido un error permanente. Por ejemplo, el dominio tiene un registro SPF con un formato incorrecto.
+  - Pass (dirección IP): la comprobación SPF del mensaje pasado e incluye la dirección IP del remitente. El cliente tiene autorización para enviar o retransmitir un correo electrónico en nombre del dominio del remitente.
+  - Error (dirección IP): error en la comprobación SPF del mensaje e incluye la dirección IP del remitente. A veces, recibe la denominación "error no recuperable".
+  - Softfail (razón): el registro SPF designó al host como no autorizado para enviar, pero está en transición.
+  - Neutro: el registro SPF indica explícitamente que no afirma si la dirección IP está autorizada para enviar.
+  - Ninguno: el dominio no tiene un registro SPF o el registro SPF no evalúa un resultado.
+  - Temperror: se ha producido un error temporal. Por ejemplo, un error de DNS. Es posible la misma comprobación sea correcta más tarde.
+  - Permerror: se ha producido un error permanente. Por ejemplo, el dominio tiene un registro SPF con un formato incorrecto.
 
 - DomainKeys Identified Mail (**DKIM**):
-    - Pass: indica la comprobación DKIM del mensaje pasado.
-    - Error (motivo): indica la comprobación DKIM del mensaje con error y por qué. Por ejemplo, si el mensaje no estaba firmado o no se verificó la firma.
-    - Ninguno: indica que el mensaje no estaba firmado. Esto podría indicar que el dominio tiene un registro DKIM o que el registro DKIM no proporciona ningún resultado, solo indica que el mensaje no estaba firmado.
+  - Pass: indica la comprobación DKIM del mensaje pasado.
+  - Error (motivo): indica la comprobación DKIM del mensaje con error y por qué. Por ejemplo, si el mensaje no estaba firmado o no se verificó la firma.
+  - Ninguno: indica que el mensaje no estaba firmado. Esto podría indicar que el dominio tiene un registro DKIM o que el registro DKIM no proporciona ningún resultado, solo indica que el mensaje no estaba firmado.
 
 - Autenticación de mensajes basada en dominio, informes y conformidad (**DMARC**):
-    - Pass: indica la comprobación DMARC del mensaje pasado.
-    - Error: indica que se ha fallado la comprobación DMARC del mensaje.
-    - Bestguesspass: indica que no existe ningún registro TXT de DMARC para el dominio, pero si hubiera existido, la comprobación DMARC del mensaje habría pasado.
-    - Ninguno: indica que no existe ningún registro TXT de DMARC para el dominio de envío en DNS.
+  - Pass: indica la comprobación DMARC del mensaje pasado.
+  - Error: indica que se ha fallado la comprobación DMARC del mensaje.
+  - Bestguesspass: indica que no existe ningún registro TXT de DMARC para el dominio, pero si hubiera existido, la comprobación DMARC del mensaje habría pasado.
+  - Ninguno: indica que no existe ningún registro TXT de DMARC para el dominio de envío en DNS.
 
 *Autenticación* compuesta: Microsoft 365 usa este valor para combinar la autenticación de correo electrónico como SPF, DKIM y DMARC, para determinar si el mensaje es auténtico. Usa el *dominio From:* del correo como base de la evaluación.

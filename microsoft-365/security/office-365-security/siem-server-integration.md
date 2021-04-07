@@ -18,12 +18,12 @@ ms.custom:
 description: Obtenga información general sobre la integración del servidor de administración de eventos y información de seguridad (SIEM) con sus aplicaciones y servicios en la nube de Microsoft 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d060b3c12304f6a23ad9421bb43e54c4cd561af5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: bea8aa3914da4b813f3928eddbb6df9c98ef6605
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207491"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599952"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integración de servidores de administración de eventos y información de seguridad (SIEM) con aplicaciones y servicios de Microsoft 365
 
@@ -58,7 +58,7 @@ Un servidor SIEM puede recibir datos de una amplia variedad de servicios y aplic
 |Servicio o aplicación de Microsoft 365|Métodos y entradas de servidor SIEM|Recursos para obtener más información|
 |---|---|---|
 |[Microsoft Defender para Office 365](defender-for-office-365.md)|Registros de auditoría|[Integración de SIEM con Microsoft Defender para Office 365](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/)|Punto de conexión HTTPS hospedado en Azure <p> API REST|[Extraer alertas a las herramientas SIEM](../defender-endpoint/configure-siem.md)|
+|[Microsoft Defender para punto de conexión](/windows/security/threat-protection/)|Punto de conexión HTTPS hospedado en Azure <p> API REST|[Extraer alertas a las herramientas SIEM](../defender-endpoint/configure-siem.md)|
 |[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)|Integración de registros|[Integración de SIEM con Microsoft Cloud App Security](/cloud-app-security/siem)|
 |
 
