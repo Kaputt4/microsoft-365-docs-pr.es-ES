@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: Supervisar los mensajes de correo electrónico con errores y retrasos enviados a o desde cuentas que tienen un alto impacto empresarial.
-ms.openlocfilehash: 0bba1f87f80de9fea249ce2604e83ceeadfb79ee
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f67b9c6f0eaa229b650026670cf1b2adf88ab3c0
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050647"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632185"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Administrar y supervisar cuentas de prioridad
 
@@ -26,10 +26,16 @@ En todas las organizaciones de Microsoft 365, hay personas que son esenciales, c
 
 Para ayudar a su organización a proteger estas cuentas, ahora puede designar usuarios específicos como cuentas de prioridad y aprovechar las características específicas de la aplicación que les proporcionan protección adicional. En el futuro, más aplicaciones y características admitirán cuentas de prioridad y, para empezar, hemos anunciado dos **funcionalidades:** protección de cuentas prioritarias y supervisión de flujo de correo **premium.**
 
-- **Protección** de cuentas de prioridad: Microsoft Defender para Office 365 (anteriormente Protección contra amenazas avanzada de Office 365) admite cuentas de prioridad como etiquetas que se pueden usar en filtros en alertas, informes e investigaciones. Para obtener más información, consulte [Etiquetas de usuario en Microsoft Defender para Office 365](../../security/defender-365-security/user-tags.md).
+- **Protección** de cuentas de prioridad: Microsoft Defender para Office 365 (anteriormente Protección contra amenazas avanzada de Office 365) admite cuentas de prioridad como etiquetas que se pueden usar en filtros en alertas, informes e investigaciones. Para obtener más información, consulte [Etiquetas de usuario en Microsoft Defender para Office 365](../../security/office-365-security/user-tags.md).
+
+  Una pregunta natural es: "¿No son todos los usuarios una prioridad? ¿Por qué no designar a todos los usuarios como cuentas de prioridad?" Sí, todos los usuarios son una prioridad, pero la protección de cuentas de prioridad ofrece las siguientes ventajas adicionales:
+
+  - **Heurística adicional:** nuestro análisis del flujo de correo en los centros de datos de Microsoft indica que los patrones de flujo de correo para los ejecutivos de la compañía son diferentes del empleado promedio. La protección de cuentas prioritarias ofrece heurísticas adicionales adaptadas específicamente a los ejecutivos de la compañía que no beneficiarían a un empleado normal.
+  - **Visibilidad adicional en los informes:** en efecto, la información de todos los usuarios (o todos los usuarios afectados) ya está disponible en alertas, informes e investigaciones. La etiqueta cuentas de prioridad como filtro le permite dirigirse específicamente a sus investigaciones.
+
 - **Supervisión del flujo de** correo premium: el flujo de correo correcto puede ser fundamental para el éxito empresarial y los retrasos o errores de entrega pueden tener un impacto negativo en la empresa. Puede elegir un umbral para mensajes de correo electrónico con errores o retrasos, recibir alertas cuando se supere ese umbral y ver un informe de problemas de correo electrónico para cuentas de prioridad. Para obtener más información, consulte Problemas de correo electrónico para el informe de cuentas [de prioridad en el EAC moderno](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
 
-Para obtener información sobre los procedimientos recomendados de seguridad para cuentas de prioridad, vea [Recomendaciones de seguridad para cuentas de prioridad.](../../security/defender-365-security/security-recommendations-for-priority-accounts.md)
+Para obtener información sobre los procedimientos recomendados de seguridad para cuentas de prioridad, vea [Recomendaciones de seguridad para cuentas de prioridad.](../../security/office-365-security/security-recommendations-for-priority-accounts.md)
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -44,6 +50,8 @@ La **característica de supervisión de flujo de** correo premium que se describ
 
 > [!NOTE]
 > Puede supervisar hasta 250 cuentas de prioridad.
+
+Al aplicar la protección de cuenta de prioridad a un buzón de correo, también debe aplicar la protección de cuenta de prioridad a los usuarios que tienen acceso al buzón (por ejemplo, el director ejecutivo y el asistente ejecutivo del CEO que administra el calendario del CEO).
 
 ### <a name="add-priority-accounts-from-the-setup-page"></a>Agregar cuentas de prioridad desde la página Configuración
 

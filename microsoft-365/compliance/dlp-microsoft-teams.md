@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Ahora puede aplicar directivas DLP a los chats y canales de Microsoft Teams. Lea este artículo para obtener más información sobre cómo funciona.
-ms.openlocfilehash: 40c55ed486efc75619b514a60b707ac75554953b
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: bd6fa1c04a57f64997d5646374007641afa0f958
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445668"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632242"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams
 
@@ -34,7 +34,7 @@ Para obtener más información sobre los requisitos de licencias, consulte [Inst
 Recientemente, [las capacidades de](data-loss-prevention-policies.md) prevención de pérdida de datos (DLP) se ampliaron para incluir mensajes de canal y chat de Microsoft Teams, **incluidos los mensajes de canal privado.** 
 
 > [!IMPORTANT]
-> DLP actualmente solo se aplica a los mensajes reales en el subproceso de chat o canal. Las notificaciones de actividad ,que incluyen una vista previa de mensaje  breve y aparecen según la configuración de notificación de un usuario, no se incluyen en DLP de Teams en este momento. Cualquier información confidencial presente en la parte del mensaje que aparece en la vista previa permanecerá visible en la notificación incluso después de que se haya aplicado la directiva DLP y se haya quitado la inforamción confidencial del mensaje en sí.
+> DLP actualmente solo se aplica a los mensajes reales en el subproceso de chat o canal. Las notificaciones de actividad ,que incluyen una vista previa de mensaje  breve y aparecen según la configuración de notificación de un usuario, no se incluyen en DLP de Teams en este momento. Cualquier información confidencial presente en la parte del mensaje que aparece en la vista previa permanecerá visible en la notificación incluso después de que se haya aplicado la directiva DLP y se haya quitado la información confidencial del mensaje en sí.
 
 Si su organización tiene DLP, ahora puede definir directivas que impidan que las personas compartan información confidencial en un canal o una sesión de chat de Microsoft Teams. Estos son algunos ejemplos de cómo funciona esta protección:
 
@@ -184,7 +184,7 @@ Para asegurarse de que los invitados externos no puedan acceder a los documentos
           > [!div class="mx-imgBorder"]
           > ![Condiciones dlp para detectar el uso compartido externo de contenido confidencial](../media/dlp-teams-external-sharing/external-condition.png)
 
-    - **Acciones**
+    - **Actions**
         - Restringir el acceso al contenido para usuarios externos
         
         - Notificar a los usuarios con sugerencias de correo electrónico y directivas
