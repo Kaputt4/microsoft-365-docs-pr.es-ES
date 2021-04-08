@@ -115,6 +115,8 @@
 ##### [Habilitar el acceso controlado a carpetas](enable-controlled-folders.md)
 ##### [Personalizar el acceso controlado a carpetas](customize-controlled-folders.md)
 
+### [Dispositivos de red](network-devices.md)
+
 ### [Microsoft Defender para punto de conexión para Mac]()
 #### [Introducción a Microsoft Defender para punto de conexión para Mac](microsoft-defender-endpoint-mac.md)
 #### [Novedades](mac-whatsnew.md)
