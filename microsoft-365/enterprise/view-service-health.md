@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Vea el estado de mantenimiento de los servicios de Microsoft 365 antes de llamar al soporte técnico para ver si hay una interrupción del servicio activa.
-ms.openlocfilehash: 30b677a80e5a08d75534a91aa04d735443660f18
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: e0ab4eaa1f7a96168839a4abef2f0f254a21d0ad
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215485"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644637"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Cómo comprobar el estado del servicio de Microsoft 365
 
@@ -47,7 +47,7 @@ Si no puede iniciar sesión en el Centro [](https://status.office365.com) de adm
 1. Vaya al Centro de administración de Microsoft 365 en [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) y inicie sesión con una cuenta de administrador.
 
     > [!NOTE]
-    > Los usuarios que tienen asignado el rol de administrador de servicios o administrador global pueden ver el estado del servicio. Para que los administradores de Exchange, SharePoint y Skype Empresarial puedan ver el estado del servicio, también se les debe asignar el rol Administrador de servicios. Para obtener más información acerca de los roles que pueden ver el estado del servicio, vea [About admin roles](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
+    > Las personas a las que se les asigna el rol de administrador global o de servicio de soporte técnico pueden ver el estado del servicio. Para que los administradores de Exchange, SharePoint y Skype Empresarial puedan ver el estado del servicio, también se les debe asignar el rol Administrador de servicios. Para obtener más información acerca de los roles que pueden ver el estado del servicio, vea [About admin roles](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
   
 2. Si no usa el nuevo centro  de administración,  en la página Principal, seleccione el botón de alternancia Probar el nuevo centro de administración en la esquina superior derecha.
 

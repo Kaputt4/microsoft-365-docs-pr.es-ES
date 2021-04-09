@@ -20,12 +20,12 @@ description: Los administradores pueden obtener información sobre la protecció
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 189325dab37a548c717cd554ecd1d37c19ae57ea
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2df88df9f1f0e2c14c0adcf0d5772189a1276e9d
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205791"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650235"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -55,12 +55,12 @@ Las características de protección contra amenazas se incluyen en *todas* las s
 |Tipo de protección|Requisito de suscripción|
 |---|---|
 |Registro de auditoría (para fines de informes)|[Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
-|Protección contra malware|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
+|Protección antimalware|[Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |Protección contra phishing|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protección contra correo no deseado|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Purga automática de hora cero (para correo electrónico)|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protección contra direcciones URL malintencionadas y archivos en el correo electrónico y documentos de Office (vínculos seguros y datos adjuntos seguros)|[Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Activar datos adjuntos seguros para cargas de trabajo de SharePoint, OneDrive y Microsoft Teams|[Defender para Office 365 ](turn-on-mdo-for-spo-odb-and-teams.md)|
+|Activar datos adjuntos seguros para cargas de trabajo de SharePoint, OneDrive y Microsoft Teams|[Defender para Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
 |Protección contra suplantación de identidad avanzada|[Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Roles y permisos

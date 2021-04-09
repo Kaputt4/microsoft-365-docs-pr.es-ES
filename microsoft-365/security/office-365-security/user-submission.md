@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d86c79f0f0ab74d1dfbb88e7803f4ee4d691ea73
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 321e27f22295a4da17d0eb37b477a1dc7b779d38
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501179"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644769"
 ---
 # <a name="user-submissions-policy"></a>Directiva de envíos de usuarios
 
@@ -98,30 +98,36 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
         - **Antes del** envío:  en los cuadros Título y Mensaje de confirmación, escriba el texto descriptivo que los usuarios ven antes de informar de un mensaje mediante el complemento Report Message o el complemento Report Phishing.  Puede usar la variable %type% para incluir el tipo de envío (correo no deseado, no deseado, phish, etc.).
 
-            Como se ha indicado, si selecciona una opción que envía los mensajes notificados a Microsoft, también se agregará el siguiente texto a la notificación:
+          Como se ha indicado, si selecciona una opción que envía los mensajes notificados a Microsoft, también se agregará el siguiente texto a la notificación:
 
-        > El correo electrónico se enviará tal como está a Microsoft para su análisis. Algunos correos electrónicos pueden contener información personal o confidencial.
+          > El correo electrónico se enviará tal como está a Microsoft para su análisis. Algunos correos electrónicos pueden contener información personal o confidencial.
 
         - **Después del envío:** haga clic ![ en Expandir icono ](../../media/scc-expand-icon.png) . En los  **cuadros Título** y Mensaje de confirmación, escriba el texto descriptivo que los usuarios ven después de informar de un mensaje mediante el complemento Report Message o el complemento Report Phishing. Puede usar la variable %type% para incluir el tipo de envío.
 
       Cuando haya terminado, haga clic en **Guardar**. Para borrar estos valores, haga clic **en Restaurar** de nuevo en la **página Envíos de** usuario.
     
     - **Personalizar las opciones de informes del** usuario final: haga clic en este vínculo. En el **control desplegable Personalizar opciones** de informes del usuario final que aparece, escriba el texto descriptivo de las opciones de informes de correo no deseado. 
-En **Opciones para mostrar cuándo se notifican los mensajes,** seleccione al menos una de las siguientes opciones:
+    
+      En **Opciones para mostrar cuándo se notifican los mensajes,** seleccione al menos una de las siguientes opciones:
         - **Pregúnteme antes de enviar un informe**
         - **Enviar informes automáticamente**
-        -  **Nunca enviar informes** \
-   Cuando haya terminado, haga clic en **Guardar**.
-              - **Enviar los mensajes notificados a**: Realice una de las siguientes selecciones:
-              - **Microsoft (recomendado):** el buzón de envíos de usuario no se usa (todos los mensajes notificados van a Microsoft).
-              - **Microsoft y un buzón personalizado:** en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. Los grupos de distribución no están permitidos. Los envíos de usuario irán a Microsoft para su análisis y al buzón personalizado para que el administrador o el equipo de operaciones de seguridad analicen.
-              - **Solo buzón personalizado:** en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. Los grupos de distribución no están permitidos. Use esta opción si desea que el mensaje solo vaya a un administrador o al equipo de operaciones de seguridad para su análisis primero. Los mensajes no irán a Microsoft a menos que el administrador lo reenvía ellos mismos.
+        - **Nunca enviar informes**
+       
+      Cuando haya terminado, haga clic en **Guardar**.
 
-        > [!NOTE]
-        > Las organizaciones gubernamentales de Estados Unidos (GCC, GCC-H y DoD) solo pueden configurar el **buzón personalizado**. Las otras dos opciones están deshabilitadas.
+        - **Enviar los mensajes notificados a**: Realice una de las siguientes selecciones:
 
-        > [!NOTE]
-        > Si las organizaciones están configuradas para enviar solo al buzón personalizado, los mensajes notificados no se enviarán para volver a examinarse y los resultados en el portal de mensajes notificados por el usuario siempre estarán vacíos.
+        - **Microsoft (recomendado):** el buzón de envíos de usuario no se usa (todos los mensajes notificados van a Microsoft).
+
+        - **Microsoft y un buzón personalizado:** en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. Los grupos de distribución no están permitidos. Los envíos de usuario irán a Microsoft para su análisis y al buzón personalizado para que el administrador o el equipo de operaciones de seguridad analicen.
+
+        - **Solo buzón personalizado:** en el cuadro que aparece, escriba la dirección de correo electrónico de un buzón de Exchange Online existente. Los grupos de distribución no están permitidos. Use esta opción si desea que el mensaje solo vaya a un administrador o al equipo de operaciones de seguridad para su análisis primero. Los mensajes no irán a Microsoft a menos que el administrador lo reenvía ellos mismos.
+
+          > [!NOTE]
+          > Las organizaciones gubernamentales de Estados Unidos (GCC, GCC-H y DoD) solo pueden configurar el **buzón personalizado**. Las otras dos opciones están deshabilitadas.
+
+          > [!NOTE]
+          > Si las organizaciones están configuradas para enviar solo al buzón personalizado, los mensajes notificados no se enviarán para volver a examinarse y los resultados en el portal de mensajes notificados por el usuario siempre estarán vacíos.
 
       Cuando haya terminado, haga clic en **Confirmar**.
 
@@ -129,11 +135,11 @@ En **Opciones para mostrar cuándo se notifican los mensajes,** seleccione al me
       > Si ha deshabilitado los informes de correo no deseado en Outlook en la [web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) con las directivas de buzón de correo de Outlook en la web, pero configura cualquiera de las opciones anteriores para notificar mensajes a Microsoft, los usuarios podrán notificar mensajes a Microsoft en Outlook en la web mediante el complemento Mensaje de informe o el complemento Report Phishing.
 
 
-    1. Deshabilitar la característica Mensaje de informe para **Outlook:** seleccione esta opción si usa herramientas de informes de terceros en lugar del complemento Mensaje de informe, el complemento Report Phishing o los informes integrados en Outlook en la web y, a continuación, configure las siguientes opciones:
+    2. Deshabilitar la característica Mensaje de informe para **Outlook:** seleccione esta opción si usa herramientas de informes de terceros en lugar del complemento Mensaje de informe, el complemento de suplantación de identidad de informes o los informes integrados en Outlook en la web y, a continuación, configure las siguientes opciones:
 
-          Seleccione **Usar este buzón personalizado para recibir envíos notificados por el usuario**. En el cuadro que aparece, escriba la dirección de correo electrónico de un buzón existente que ya está en Office 365. Debe ser un buzón existente en Exchange Online que pueda recibir correo electrónico.
+       Seleccione **Usar este buzón personalizado para recibir envíos notificados por el usuario**. En el cuadro que aparece, escriba la dirección de correo electrónico de un buzón existente que ya está en Office 365. Debe ser un buzón existente en Exchange Online que pueda recibir correo electrónico.
 
-          Cuando haya terminado, haga clic en **Confirmar**.
+       Cuando haya terminado, haga clic en **Confirmar**.
 
 ## <a name="message-submission-format"></a>Formato de envío de mensajes
 

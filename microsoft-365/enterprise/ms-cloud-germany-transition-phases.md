@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Summary: Understand the migration phases actions and impacts of moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: 0cf1358b4170b69d3506062c336a1cf67a2da2de
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: e3ed1d76a755ce6326ac6ae53b990136a10b564a
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591737"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644721"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Fases de migración acciones e impactos para la migración desde Microsoft Cloud Deutschland
 
@@ -41,7 +41,7 @@ El proceso de migración se completará durante varias semanas en función del t
 |Azure|Semanas|Clientes|Crear nuevas suscripciones de Azure a nivel mundial y servicios de Azure de transición.|
 |Suscripción & de licencias|De 1 a 2 días|Microsoft|Compre suscripciones mundiales, cancele las suscripciones de Microsoft Cloud Deutschland y las licencias de usuario de transición.|
 |SharePoint y OneDrive|Más de 15 días|Microsoft|Migre el contenido de SharePoint y OneDrive para la Empresa, conservando sharepoint.de direcciones URL.|
-|Exchange en línea|Más de 15 días|Microsoft|Migrar el contenido de Exchange Online y la transición a direcciones URL de todo el mundo.|
+|Exchange Online|Más de 15 días|Microsoft|Migrar el contenido de Exchange Online y la transición a direcciones URL de todo el mundo.|
 |Seguridad y cumplimiento|De 1 a 2 días|Microsoft|Seguridad de transición & de cumplimiento y contenido.|
 |Skype Empresarial|De 1 a 2 días|Microsoft|Transición de Skype Empresarial a Microsoft Teams.|
 |Power BI & Dynamics 365|Más de 15 días|Microsoft|Migrar contenido de Power BI y Dynamics 365.|
@@ -128,7 +128,7 @@ Consideraciones adicionales:
 
 **Se aplica a:** Todos los clientes que usan Exchange Online
 
-Si usa Exchange Online híbrido: los administradores híbridos de Exchange Online deben ejecutar el Asistente para configuración híbrida  **(HCW)** varias veces como parte de esta transición. Aplicar el [trabajo previo de Exchange](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-configuration) antes de que comience la fase **5 del paso de migración.** Los clientes híbridos de Exchange Online deben ejecutar la versión más reciente del Asistente para configuración híbrida de Exchange (HCW) en modo "Office 365 Germany" para preparar la configuración local para la migración a los servicios globales de Office 365.
+Si usa Exchange Online híbrido: los administradores híbridos de Exchange Online deben ejecutar el Asistente para configuración híbrida  **(HCW)** varias veces como parte de esta transición. Aplicar el [trabajo previo de Exchange](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-customers) antes de que comience la fase **5 del paso de migración.** Los clientes híbridos de Exchange Online deben ejecutar la versión más reciente del Asistente para configuración híbrida de Exchange (HCW) en modo "Office 365 Germany" para preparar la configuración local para la migración a los servicios globales de Office 365.
 
 Una vez completada la fase de migración **9** (cuando se publica el aviso del Centro de mensajes), debe ejecutar el HCW de nuevo con la configuración de Office 365 Worldwide para apuntar los sistemas locales a los servicios globales de Office 365.
 

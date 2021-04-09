@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bcb96ea29649bf3525b2ffcf6d5cbb5d299bacf3
-ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
+ms.openlocfilehash: 3ad31e385ed1a3c32a261286b91912c7b2562f87
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51418121"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650295"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -64,6 +64,11 @@ Para obtener más información acerca de las asignaciones de roles, vea [Create 
 
 Habilitar esta característica permite ejecutar scripts sin signo en una sesión de respuesta en directo.
 
+## <a name="always-remediate-pua"></a>Corregir siempre la PUA
+Las aplicaciones potencialmente no deseadas (PUA) son una categoría de software que puede hacer que el equipo se ejecute lentamente, muestre anuncios inesperados o, en el peor de los casos, instale otro software que pueda ser inesperado o no deseado. 
+
+Active esta característica para que las aplicaciones potencialmente no deseadas (PUA) se corrija en todos los dispositivos del espacio empresarial, incluso si la protección pua no está configurada en los dispositivos. Esto ayudará a proteger a los usuarios de la instalación involuntaria de aplicaciones no deseadas en su dispositivo. Cuando está desactivada, la corrección depende de la configuración del dispositivo. 
+
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Restringir la correlación a grupos de dispositivos con ámbito
 Cuando esta configuración está activada, las alertas se correlacionan con incidentes independientes en función de su grupo de dispositivos con ámbito. De forma predeterminada, la correlación de incidentes se produce en todo el ámbito del espacio empresarial.
@@ -71,9 +76,9 @@ Cuando esta configuración está activada, las alertas se correlacionan con inci
 >[!NOTE]
 >Cambiar esta configuración afecta solo a las correlaciones futuras de alertas.
 
-
 ## <a name="enable-edr-in-block-mode"></a>Habilitar EDR en modo de bloqueo
 La detección y respuesta de puntos de conexión (EDR) en modo de bloqueo proporciona protección contra artefactos malintencionados, incluso cuando antivirus de Microsoft Defender se ejecuta en modo pasivo. Cuando está activado, EDR en modo de bloqueo bloquea los artefactos o comportamientos malintencionados que se detectan en un dispositivo. EDR en modo de bloqueo funciona en segundo plano para corregir artefactos malintencionados detectados después de la infracción.
+
 
 ## <a name="autoresolve-remediated-alerts"></a>Alertas remediadas de Autoresolve
 
@@ -119,13 +124,13 @@ Para obtener más información, vea [Administrar indicadores](manage-indicators.
 > [!NOTE]
 > La protección de red aprovecha los servicios de reputación que procesan solicitudes en ubicaciones que podrían estar fuera de la ubicación seleccionada para los datos de Defender para endpoint.
 
-
 ## <a name="tamper-protection"></a>Protección contra alteraciones
 Durante algunos tipos de ataques cibernéticos, los actores malos intentan deshabilitar las características de seguridad, como la protección antivirus, en las máquinas. A los actores malintencionados les gusta deshabilitar las características de seguridad para obtener un acceso más fácil a los datos, para instalar malware o para aprovechar sus datos, identidades y dispositivos.
 
 La protección contra alteraciones bloquea básicamente Antivirus de Microsoft Defender e impide que se cambie la configuración de seguridad a través de aplicaciones y métodos.
 
 Mantenga activada la protección contra alteraciones para evitar cambios no deseados en la solución de seguridad y sus características esenciales.
+
 
 ## <a name="show-user-details"></a>Mostrar detalles de usuario
 
@@ -137,6 +142,7 @@ Active esta característica para que pueda ver los detalles del usuario almacena
 
 Para obtener más información, vea [Investigar una cuenta de usuario](investigate-user.md).
 
+
 ## <a name="skype-for-business-integration"></a>Integración de Skype Empresarial
 
 Habilitar la integración de Skype Empresarial le permite comunicarse con usuarios mediante Skype Empresarial, correo electrónico o teléfono. Esto puede ser útil cuando necesita comunicarse con el usuario y mitigar los riesgos.
@@ -144,7 +150,7 @@ Habilitar la integración de Skype Empresarial le permite comunicarse con usuari
 > [!NOTE]
 > Cuando un dispositivo se aísla de la red, hay una ventana emergente en la que puedes elegir habilitar las comunicaciones de Outlook y Skype que permiten las comunicaciones al usuario mientras están desconectadas de la red. Esta configuración se aplica a la comunicación de Skype y Outlook cuando los dispositivos están en modo aislado.
 
-## <a name="azure-advanced-threat-protection-integration"></a>Integración de Azure Advanced Threat Protection
+## <a name="microsoft-defender-for-identity-integration"></a>Integración de Microsoft Defender para identidades
 
 La integración con Azure Advanced Threat Protection le permite pivotar directamente en otro producto de seguridad de Microsoft Identity. Azure Advanced Threat Protection aumenta una investigación con información adicional sobre una cuenta comprometida sospechosa y recursos relacionados. Al habilitar esta característica, enriquecerás la funcionalidad de investigación basada en dispositivos al girar por la red desde un punto de vista de identificación.
 
@@ -162,13 +168,12 @@ Al activar esta característica, podrá incorporar datos de protección contra a
 
 Para recibir la integración contextual de dispositivos en inteligencia de amenazas de Office 365, deberá habilitar la configuración de Defender para endpoints en el panel Seguridad & cumplimiento. Para obtener más información, vea [Threat investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti).
 
-## <a name="microsoft-threat-experts"></a>Expertos en amenazas de Microsoft
+## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Expertos en amenazas de Microsoft: notificaciones de ataques dirigidos
 
 De los dos componentes de Microsoft Threat Expert, la notificación de ataques dirigidos está en disponibilidad general. La funcionalidad de expertos a petición aún está en versión preliminar. Solo puede usar la funcionalidad de expertos a petición si ha solicitado una vista previa y la aplicación se ha aprobado. Puedes recibir notificaciones de ataques dirigidos de expertos en amenazas de Microsoft a través del panel de alertas del portal de defender para puntos de conexión y por correo electrónico si lo configuras.
 
 > [!NOTE]
 > La funcionalidad de Expertos en amenazas de Microsoft en Defender para endpoint está disponible con una licencia E5 para [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security).
-
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
 Al habilitar esta configuración, Defender para las señales de punto de conexión se remite a Microsoft Cloud App Security para proporcionar una mayor visibilidad del uso de aplicaciones en la nube. Los datos reenviados se almacenan y procesan en la misma ubicación que los datos de Cloud App Security.
@@ -176,13 +181,10 @@ Al habilitar esta configuración, Defender para las señales de punto de conexi�
 > [!NOTE]
 > Esta característica estará disponible con una licencia E5 para [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) en dispositivos que ejecutan Windows 10, versión 1709 (compilación del sistema operativo 16299.1085 con [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, versión 1809 (compilación del sistema operativo 17763.379 con [KB4489899)](https://support.microsoft.com/help/4489899)o versiones posteriores de Windows 10.
 
-## <a name="azure-information-protection"></a>Azure Information Protection
-
-Al activar esta configuración, se pueden reenviar las señales a Azure Information Protection. Proporciona a los propietarios y administradores de datos visibilidad de datos protegidos en dispositivos integrados y clasificaciones de riesgos de dispositivos.
-
 ## <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
 Reenvía las señales de Microsoft Defender para puntos de conexión a Puntuación segura de Microsoft en el centro de seguridad de Microsoft 365. Al activar esta característica, Microsoft Secure Score ofrece visibilidad sobre la posición de seguridad del dispositivo. Los datos reenviados se almacenan y procesan en la misma ubicación que los datos de puntuación segura de Microsoft.
+
 
 ### <a name="enable-the-microsoft-defender-for-endpoint-integration-from-the-microsoft-defender-for-identity-portal"></a>Habilitar la integración de Microsoft Defender para endpoints desde el portal de Microsoft Defender para identidades
 
@@ -196,6 +198,17 @@ Para recibir la integración contextual de dispositivos en Microsoft Defender fo
 
 Después de completar los pasos de integración en ambos portales, podrás ver alertas relevantes en la página detalles del dispositivo o detalles del usuario.
 
+## <a name="web-content-filtering"></a>Filtrado de contenido web
+Bloquear el acceso a sitios web que contengan contenido no deseado y realizar un seguimiento de la actividad web en todos los dominios. Para especificar las categorías de contenido web que desea bloquear, cree una [directiva de filtrado de contenido web](https://security.microsoft.com/preferences2/web_content_filtering_policy). Asegúrese de que tiene protección de red en modo de bloqueo al implementar la línea base de seguridad de [Microsoft Defender para](https://devicemanagement.microsoft.com/#blade/Microsoft_Intune_Workflows/SecurityBaselineSummaryMenu/overview/templateType/2)endpoints .
+
+
+## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Compartir alertas de extremo con el Centro de cumplimiento de Microsoft
+Reenvía las alertas de seguridad de puntos de conexión y su estado de evaluación al Centro de cumplimiento de Microsoft, lo que le permite mejorar las directivas de administración de riesgos internos con alertas y corregir los riesgos internos antes de que causen daños. Los datos reenviados se procesan y almacenan en la misma ubicación que los datos de Office 365.
+
+Después de configurar los indicadores de infracción de directivas de seguridad en la configuración de administración de riesgos de insider, las [alertas](/microsoft-365/compliance/insider-risk-management-settings#indicators) de Defender for Endpoint se compartirán con la administración de riesgos de insider para los usuarios aplicables.
+
+
+
 ## <a name="microsoft-intune-connection"></a>Conexión de Microsoft Intune
 
 Defender for Endpoint se puede integrar con [Microsoft Intune para](https://docs.microsoft.com/intune/what-is-intune) habilitar el acceso condicional basado en riesgos del [dispositivo.](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune) Al activar [esta característica,](configure-conditional-access.md)podrás compartir información de dispositivo defender para endpoint con Intune, lo que mejora la aplicación de directivas.
@@ -207,6 +220,7 @@ Esta característica solo está disponible si tiene lo siguiente:
 
 - Inquilino con licencia para Enterprise Mobility + Security E3 y Windows E5 (o Microsoft 365 Enterprise E5)
 - Un entorno activo de Microsoft Intune, con dispositivos Windows 10 administrados por Intune [unidos a Azure AD.](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/)
+
 
 ### <a name="conditional-access-policy"></a>Directiva de acceso condicional
 
@@ -221,11 +235,8 @@ Obtén información sobre las nuevas características en la versión preliminar 
 
 Tendrás acceso a las próximas características, sobre las que puedes proporcionar comentarios para ayudar a mejorar la experiencia general antes de que las características estén disponibles en general.
 
-## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Compartir alertas de extremo con el Centro de cumplimiento de Microsoft
 
-Reenvía las alertas de seguridad de puntos de conexión y su estado de evaluación al Centro de cumplimiento de Microsoft, lo que le permite mejorar las directivas de administración de riesgos internos con alertas y corregir los riesgos internos antes de que causen daños. Los datos reenviados se procesan y almacenan en la misma ubicación que los datos de Office 365.
 
-Después de configurar los indicadores de infracción de directivas de seguridad en la configuración de administración de riesgos de insider, las [alertas](/microsoft-365/compliance/insider-risk-management-settings#indicators) de Defender for Endpoint se compartirán con la administración de riesgos de insider para los usuarios aplicables.
 
 ## <a name="related-topics"></a>Temas relacionados
 

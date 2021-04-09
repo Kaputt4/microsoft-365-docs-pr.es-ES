@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 228a8813bcfff052c7f861dcd2962a94cb58c0fb
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: e19c64c01c892a8a5f47f5892882feab1242f897
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165974"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644493"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Privacidad y almacenamiento de datos de Microsoft Defender para endpoint
 
@@ -94,6 +94,9 @@ Puede elegir la directiva de retención de datos para los datos. Esto determina 
 
 **Al finalizar o expirar el contrato**<br>
 Los datos se conservarán y estarán disponibles mientras la licencia esté en período de gracia o en modo suspendido. Al final de este período, esos datos se borrarán de los sistemas de Microsoft para que sean irrecuperables, como máximo 180 días después de la finalización o expiración del contrato.
+
+**Datos de búsqueda avanzada**<br>
+La búsqueda avanzada es una herramienta de búsqueda de amenazas basada en consulta que le permite explorar hasta 30 días de datos sin procesar.
 
 
 ## <a name="can-microsoft-help-us-maintain-regulatory-compliance"></a>¿Puede Microsoft ayudarnos a mantener el cumplimiento normativo?

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Resumen: Pre-work when moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: e04246626088d9fca653c98246fd4a5b81bc1d30
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 3172c76288a8b9957f106f17e6cd34ccaf024067
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591879"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644733"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Actividades previas a la migración de Microsoft Cloud Deutschland
 
@@ -90,7 +90,7 @@ Si la línea de comandos devuelve un registro DNS, quite _el Msoid_ CNAME del do
 
 Leer y aplicar los pasos [de migración de ADFS](ms-cloud-germany-transition-add-adfs.md)
 
-## <a name="sharepoint-online"></a>SharePoint en linea
+## <a name="sharepoint-online"></a>SharePoint Online
 
 <!-- before phase 4 -->
 
@@ -102,7 +102,7 @@ Leer y aplicar los pasos [de migración de ADFS](ms-cloud-germany-transition-add
 | Limitar flujos de trabajo de SharePoint 2013, usarlos durante la migración de SharePoint Online. | Reduzca los flujos de trabajo de SharePoint 2013 y complete los flujos de trabajo en el vuelo antes de las transiciones. | La inacción puede provocar confusión del usuario y llamadas al servicio de ayuda. |
 ||||
 
-## <a name="exchange-online"></a>Exchange en línea
+## <a name="exchange-online"></a>Exchange Online
 
 <!-- before phase 5 -->
 
@@ -115,18 +115,19 @@ Leer y aplicar los pasos [de migración de ADFS](ms-cloud-germany-transition-add
 | Notificar a los usuarios los cambios necesarios en el cliente IMAP4/POP3/SMTP. | Los usuarios que tienen conexiones de dispositivo a puntos de conexión de Microsoft Cloud Deutschland para protocolos de cliente IMAP4, POP3, SMTP deben actualizar manualmente sus dispositivos cliente para cambiar a los puntos de conexión de [Office 365](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide)en todo el mundo. | Comunique previamente esta dependencia a los usuarios de estos protocolos y asegúrese de que cambien a usar Outlook mobile o Outlook en la web durante esta migración. Si no se actualizan los puntos de conexión de cliente, se producirán errores de conexión de cliente en Microsoft Cloud Deutschland cuando se migren los buzones de usuario. |
 ||||
 
-### <a name="exchange-online-hybrid-configuration"></a>Configuración híbrida de Exchange Online
+### <a name="exchange-online-hybrid-customers"></a>Clientes híbridos de Exchange Online
 
 **Se aplica a:** Todos los clientes que usan una configuración híbrida de Exchange activa con servidores de Exchange locales<br>
 **Cuando se aplica:** cualquier momento antes de que se inicie la fase 5
 
-Los clientes empresariales con una implementación híbrida de Exchange Online y una instalación local Exchange Server el Asistente para la configuración híbrida (HCW) para mantener y establecer la configuración híbrida. Al realizar la transición de Microsoft Cloud Deutschland a la región de Office 365 Germany, el administrador debe volver a ejecutar la compilación más reciente de HCW en modo "Office 365 Germany" antes de que comience la migración de Exchange (fase 5). A continuación, vuelva a ejecutar el HCW en modo "Office 365 Worldwide" al finalizar la fase 5 para finalizar la implementación local con la configuración de la región de Office 365 Germany.
+Los clientes empresariales con una implementación híbrida de Exchange Online y un Exchange Server local ejecutan el Asistente para configuración híbrida (HCW) y AAD Connect para mantener y establecer la configuración híbrida. Al realizar la transición de Microsoft Cloud Deutschland a la región de Office 365 Germany, el administrador debe volver a ejecutar la compilación más reciente de HCW en modo "Office 365 Germany" antes de que comience la migración de Exchange (fase 5). A continuación, vuelva a ejecutar el HCW en modo "Office 365 Worldwide" al finalizar la fase 5 para finalizar la implementación local con la configuración de la región de Office 365 Germany. Los atributos de directorio se sincronizan entre Office 365 y Azure AD con la implementación local a través de AAD Connect. 
 
 | Pasos | Descripción | Impacto |
 |:-------|:-------|:-------|
-| (Fase previa 5): volver a ejecutar HCW con la configuración de Office 365 Germany <br><br> <i>Puede iniciar esta actividad inmediatamente después de recibir la notificación del centro de mensajes de que su migración de inquilino de Office 365 ha comenzado (fase 1).</i>| Desinstalar y volver a ejecutar HCW (17.0.5378.0 o posterior) desde antes de la fase 5 garantizará que la configuración local esté preparada para enviar y recibir correo con usuarios y usuarios de Microsoft Cloud Deutschland que se migran a la región de [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) Office 365 Alemania. <p><li> En hcw, para el cuadro de lista debajo de **Mi organización de Office 365** está hospedado por , seleccione Office **365 Alemania.** | Si no se completa esta tarea antes de que comience la fase 5 [Migración de Exchange], pueden producirse NDR para el correo enrutado entre la implementación local de Exchange y Office 365.  
-| (Post-Stage 5): vuelva a ejecutar HCW con la configuración de Office 365 Worldwide <br><br> <i>Puede iniciar esta actividad después de recibir la notificación del centro de mensajes de que se ha completado la migración de Exchange (fase 5).</i>| Al desinstalar y volver a ejecutar HCW desde después de la fase 5, se restablecerá la configuración local para la configuración híbrida con [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) solo Office 365 global. <p><li> En el cuadro de lista debajo **de Mi organización de Office 365** está hospedado por , seleccione Office **365 Worldwide**. | Si no se completa esta tarea antes de la fase 9 [Migración completada], es posible que los NDR para el correo enrutado entre la implementación local de Exchange y Office 365.  
+| (Fase previa 5): volver a ejecutar HCW con la configuración de Office 365 Germany <br><br> <i>Puede iniciar esta actividad inmediatamente después de recibir la notificación del centro de mensajes de que su migración de inquilino de Office 365 ha comenzado (fase 1).</i>| Desinstalar y volver a ejecutar HCW (17.0.5378.0 o posterior) desde antes de la fase 5 garantizará que la configuración local esté preparada para enviar y recibir correo con usuarios y usuarios de Microsoft Cloud Deutschland que se migran a la región de [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) Office 365 Alemania. <p><li> En hcw, para el cuadro de lista debajo de **Mi organización de Office 365** está hospedado por , seleccione Office **365 Alemania.** | Si no se completa esta tarea antes de que comience la fase 5 [Migración de Exchange], es posible que los NDR para el correo enrutado entre la implementación local de Exchange y Office 365.  
+| (Post-Phase 5): vuelva a ejecutar HCW con la configuración de Office 365 Worldwide <br><br> <i>Puede iniciar esta actividad después de recibir la notificación del centro de mensajes de que se ha completado la migración de Exchange (fase 5).</i>| Al desinstalar y volver a ejecutar HCW desde después de la fase 5, se restablecerá la configuración local para la configuración híbrida con [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) solo Office 365 global. <p><li> En el cuadro de lista debajo **de Mi organización de Office 365** está hospedado por , seleccione Office **365 Worldwide**. | Si no se completa esta tarea antes de la fase 9 [Migración completada], pueden producirse NDR para el correo enrutado entre la implementación local de Exchange y Office 365.  
 | Establecer AuthServer local que señale al servicio de token de seguridad global (STS) para la autenticación | Esto garantiza que las solicitudes de autenticación para las solicitudes de disponibilidad de Exchange de los usuarios en estado de migración destinadas al entorno local híbrido se autentican para obtener acceso al servicio local. Del mismo modo, esto garantizará la autenticación de solicitudes desde locales a puntos de conexión de servicios globales de Office 365. | Una vez completada la migración de Azure AD (fase 2), el administrador de la topología local de Exchange (híbrida) debe agregar un nuevo extremo de servicio de autenticación para los servicios globales de Office 365. Con este comando de Exchange PowerShell, reemplace por el identificador de inquilino de su organización que se encuentra en `<TenantID>` Azure Portal en Azure Active Directory.<br>`New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<TenantId>/metadata/json/1`<br> Si no se completa esta tarea, es posible que las solicitudes híbridas de disponibilidad no proporcionen información a los usuarios de buzones que se han migrado de Microsoft Cloud Deutschland a los servicios de Office 365.  |
+| (Fase previa 5): conservación de la configuración del buzón compartido | Algunos clientes híbridos han convertido buzones de usuario en la nube para que sean buzones "compartidos" mediante comandos de Exchange Online. Sin embargo, esta configuración de buzón de correo en la nube se escribe en el buzón y en el directorio local de Exchange Online, pero no se sincroniza de nuevo con Active Directory del cliente a través de AAD Connect. El resultado es una discrepancia entre la representación de Active Directory de los valores RemoteRecipientType y RemoteDisplayType del buzón y la de Exchange Online que define el buzón como compartido. <br><br> El cliente es responsable de asegurarse de que todos los buzones compartidos se aprovisionan correctamente mediante `New-RemoteMailbox -Shared` , `Enable-RemoteMailbox -Shared` o `Set-RemoteMailbox -Shared` .  Vea esta referencia para obtener información sobre cómo convertir el buzón de un usuario [en un entorno híbrido.](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide)| Si no se completa esta tarea antes de la fase 5 [Migración de Exchange Online], es posible que los NDR para buzones compartidos vuelvan a convertirse en buzones sin licencia y la pérdida de acceso compartido para los buzones afectados. [Los buzones](https://docs.microsoft.com/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes) compartidos se convierten inesperadamente en buzones de usuario después de que la sincronización de directorios se ejecute en una implementación híbrida de Exchange indica el impacto de no abordar esto antes de que finalice la migración de Exchange Online.  
 ||||
 
 ## <a name="skype-for-business-online"></a>Skype Empresarial Online

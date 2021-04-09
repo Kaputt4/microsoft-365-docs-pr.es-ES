@@ -1,7 +1,7 @@
 ---
 title: Implementar capacidades de protección contra amenazas en Microsoft 365
 description: Obtenga información general sobre los servicios de protección contra amenazas y las capacidades de seguridad en Microsoft 365 E5. Proteja sus cuentas de usuario, dispositivos, contenido de correo electrónico y mucho más con Microsoft 365 E5.
-keywords: protección contra amenazas, seguridad, E5, ciberataque, malware, M365, solución
+keywords: protección contra amenazas avanzada, seguridad, microsoft 365 E5, solución, proteger dispositivos, defender
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 806c97a55b3cbe46d597566425cf71476586ecee
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: ea28e9c244b6b8faaeb9b1f3685d57169605cbb9
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604383"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650319"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Implementar capacidades de protección contra amenazas en Microsoft 365 E5
 

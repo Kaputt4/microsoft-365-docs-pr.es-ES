@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.date: 03/08/2021
 ms.topic: how-to
-ms.openlocfilehash: be98bf810d00b6e39ba9d2674604a9fd2128a8cc
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2ef3fbeec65be512dfe07f1d533df4d8e9b31532
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198663"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644505"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -81,7 +81,7 @@ Puedes revisar el registro de eventos de Windows para ver los eventos que se cre
 
 1. [Copie el XML directamente](event-views.md).
 
-2. Seleccione **Aceptar**.
+2. Elija **Aceptar**.
 
 Este procedimiento crea una vista personalizada que filtra para mostrar solo los siguientes eventos relacionados con la protección de red:
 
@@ -90,6 +90,16 @@ Este procedimiento crea una vista personalizada que filtra para mostrar solo los
 | 5007 | Evento cuando se cambia la configuración |
 | 1125 | Evento cuando la protección de red se dispara en modo auditoría |
 | 1126 | Evento cuando la protección de red se desen llamas en modo de bloqueo |
+
+## <a name="network-protection-troubleshooting"></a>Solución de problemas de protección de red
+
+Debido al entorno en el que se ejecuta Network Protection, Es posible que Microsoft no pueda detectar la configuración de proxy del sistema operativo. En algunos casos, los clientes de Protección de red no pueden llegar al servicio en la nube. Para resolver el problema de conectividad, los clientes con licencias E5 deben configurar una de las siguientes claves del Registro de Defender:
+
+```console
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+
+```
 
 ## <a name="related-articles"></a>Artículos relacionados
 

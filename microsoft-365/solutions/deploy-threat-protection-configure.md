@@ -1,7 +1,7 @@
 ---
 title: Pasos para configurar las capacidades de protección contra amenazas en Microsoft 365
 description: Use este artículo como guía para implementar la solución de protección contra amenazas. Implemente funciones y servicios de protección contra amenazas en Microsoft 365 E5.
-keywords: seguridad, configuración, configuración, Microsoft 365 E5, protección contra amenazas avanzada
+keywords: solución de seguridad, configuración, configuración, Microsoft 365 E5, protección contra amenazas avanzada, defender
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 81a1a4ce2e99caaca1025c6ddbbdfdc7ab7c449d
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: a0c728e5f273752792f851c72df2dfe243116221
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615512"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650223"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurar las capacidades de protección contra amenazas en Microsoft 365
 
@@ -187,7 +187,7 @@ Microsoft 365 proporciona los siguientes recursos para ayudar a informar a los u
 |Concepto  |Recursos  |
 |---------|---------|
 |Microsoft 365     |[Caminos de aprendizaje personalizables](/office365/customlearning/) <p>Estos recursos pueden ayudarle a crear formación para los usuarios finales de su organización        |
-|Centro de seguridad de Microsoft 365 |[Módulo de aprendizaje: proteger la organización con seguridad inteligente integrada de Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Este módulo le permite describir cómo funcionan conjuntamente las características de seguridad de Microsoft 365 y para expresar las ventajas de estas características de seguridad. |
+|Seguridad de Microsoft 365 |[Módulo de aprendizaje: proteger la organización con seguridad inteligente integrada de Microsoft 365](/learn/modules/security-with-microsoft-365) <p>Este módulo le permite describir cómo funcionan conjuntamente las características de seguridad de Microsoft 365 y para expresar las ventajas de estas características de seguridad. |
 |Autenticación multifactor     | [Comprobación en dos pasos: ¿Cuál es la página de verificación adicional?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Este artículo ayuda a los usuarios finales a comprender qué es la autenticación multifactor y por qué se usa en su organización.    |
 
 Además de esta guía, Microsoft recomienda que los usuarios tomen las acciones descritas en este artículo: Proteger su cuenta y dispositivos de [los piratas informáticos y malware](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). Entre estas acciones se incluyen:

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los clientes de Microsoft Defender para Office 365 E5 y ATP P1 y ATP P2 ahora pueden obtener una vista de 360 grados de cada correo electrónico con página de entidad de correo electrónico.
-ms.openlocfilehash: 6d2777113e7e9f9ce760dab3b83252eceab520ff
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 7797e9f5965f43b856c2c34df1f99fddf72d5df5
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599492"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650343"
 ---
 # <a name="the-email-entity-page"></a>Página de la entidad de correo electrónico
 
@@ -119,7 +119,7 @@ Los usuarios verán detalles enriquecidos de detonación para los datos adjuntos
   - Cuando la regla de correo no deseado está habilitada en el buzón de correo, Exchange Online Protection (EOP) puede mover mensajes a correo no deseado según algunos criterios. El movimiento puede basarse en la acción de veredicto de filtrado de correo no deseado Mover el mensaje a la carpeta *correo* no deseado o en la lista Remitentes bloqueados en el buzón. Deshabilitar la regla de correo no deseado impide la entrega de mensajes a la carpeta de correo no deseado según la *lista Remitentes seguros* del buzón.
   - Cuando la regla  de correo no deseado está deshabilitada en el buzón, EOP no puede mover mensajes a la carpeta correo no deseado en función de la acción de veredicto de filtrado de correo no deseado Mover el mensaje a la carpeta correo no deseado *o* la colección de listas seguras del buzón.
 
-- *Nivel de cumplimiento masivo (BCL):* el nivel de queja masiva (BCL) del mensaje. Un BCL más alto indica que es más probable que un mensaje de correo masivo genere quejas (el resultado natural si es probable que el correo electrónico sea correo no deseado).
+- *Nivel de queja masiva (BCL):* el nivel de queja masiva (BCL) del mensaje. Un BCL más alto indica que es más probable que un mensaje de correo masivo genere quejas (el resultado natural si es probable que el correo electrónico sea correo no deseado).
 
 - Nivel de confianza de correo no deseado *(SCL):* el nivel de confianza de correo no deseado (SCL) del mensaje. Un valor superior indica que el mensaje tiene más posibilidades de ser correo no deseado.
 

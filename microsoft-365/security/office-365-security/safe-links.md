@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: En este artículo, los administradores pueden obtener información sobre la protección de vínculos seguros en Defender para Office 365 para proteger su organización de la suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 06ec3ab1a255e9eaa8c190ed5c248c9587273e03
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1f27e1bbd051bd43d1f160707589db2bb7189b76
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207387"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644781"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Vínculos seguros en Microsoft Defender para Office 365
 
@@ -118,11 +118,11 @@ La configuración de las directivas de vínculos seguros que se aplican a los me
 
 - **No permitir que los usuarios hagan clic en la dirección URL original:** permite o bloquea que los usuarios hagan clic en la página [de advertencia](#warning-pages-from-safe-links) a la dirección URL original. El valor recomendado está habilitado.
 
-- **Mostrar la personal de marca de la organización en las páginas de notificación** y advertencia: esta opción muestra la personalizado de marca de la organización en las páginas de advertencia. La personalidad de marca ayuda a los usuarios a identificar advertencias legítimas, ya que los atacantes suelen usar las páginas de advertencia predeterminadas de Microsoft. Para obtener más información acerca de la personalización de marca personalizada, consulte [Add branding to your organization's Azure Active Directory sign-in page](/azure/active-directory/fundamentals/customize-branding).
+- **Mostrar la personal de marca de la organización en las páginas de notificación** y advertencia: esta opción muestra la personalizado de marca de la organización en las páginas de advertencia. La personalidad de marca ayuda a los usuarios a identificar advertencias legítimas, ya que los atacantes suelen usar las páginas de advertencia predeterminadas de Microsoft. Para obtener más información acerca de la personalización de marca personalizada, vea Personalizar el tema [de Microsoft 365 para su organización.](../../admin/setup/customize-your-organization-theme.md)
 
 - **No vuelva a escribir las siguientes direcciones URL:** deja las direcciones URL tal como están. Mantiene una lista personalizada de direcciones URL seguras que no necesitan análisis. La lista es única para cada directiva de vínculos seguros. Para obtener más información acerca de la lista No **volver** a escribir las siguientes direcciones URL, vea la sección "No reescribir las siguientes direcciones [URL"](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) en directivas de vínculos seguros más adelante en este artículo.
 
-Para obtener más información acerca de los valores recomendados para la configuración de directivas estándar y estricta para directivas de vínculos seguros, vea [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
+  Para obtener más información acerca de los valores recomendados para la configuración de directivas estándar y estricta para directivas de vínculos seguros, vea [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
 - **Filtros de destinatarios:** debe especificar las condiciones de destinatario y las excepciones que determinan a quién se aplica la directiva. Puede usar estas propiedades para condiciones y excepciones:
 
@@ -167,7 +167,7 @@ La siguiente configuración de las directivas de vínculos seguros que se aplica
 - **No realizar un seguimiento de los clics del usuario**
 - **No permitir que los usuarios hagan clic en la dirección URL original**
 
-Esta configuración se explica en la sección anterior [Vínculos seguros para mensajes de correo](#safe-links-settings-for-email-messages) electrónico.
+Esta configuración se explica anteriormente en [La configuración de vínculos seguros para mensajes de correo electrónico.](#safe-links-settings-for-email-messages)
 
 Después de activar la protección de vínculos seguros para Microsoft Teams, las direcciones URL de Teams se comprueban con una lista de vínculos malintencionados conocidos cuando el usuario protegido hace clic en el vínculo (protección con tiempo de clic). Las direcciones URL no se reescritan. Si se encuentra que un vínculo es malintencionado, los usuarios tendrán las siguientes experiencias:
 
@@ -256,22 +256,22 @@ Cuando un usuario de una directiva de vínculos seguros activa hace clic en un v
 
 La lista de direcciones URL se configura en la configuración global de vínculos seguros. Para obtener instrucciones, [vea Configure the "Block the following URLs" list](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center).
 
-**Notas**:
-
-- Para obtener una lista realmente universal de direcciones URL bloqueadas en todas partes, vea [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-
-- Límites:
-  - El número máximo de entradas es 500.
-  - La longitud máxima de una entrada es de 128 caracteres.
-  - Todas las entradas no pueden superar los 10.000 caracteres.
-
-- No incluya una barra diagonal ( `/` ) al final de la dirección URL. Por ejemplo, use `https://www.contoso.com` , no `https://www.contoso.com/` .
-
-- Una dirección URL de solo dominio (por ejemplo `contoso.com` o `tailspintoys.com` ) bloqueará cualquier dirección URL que contenga el dominio.
-
-- Puede bloquear un subdominio sin bloquear el dominio completo. Por ejemplo, `toys.contoso.com*` bloquea cualquier dirección URL que contenga el subdominio, pero no bloquea las direcciones URL que contienen el dominio completo `contoso.com` .
-
-- Puede incluir hasta tres caracteres comodín ( `*` ) por entrada de dirección URL.
+> [!NOTE]
+> 
+> - Para obtener una lista realmente universal de direcciones URL bloqueadas en todas partes, vea [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+> 
+> - Límites:
+>   - El número máximo de entradas es 500.
+>   - La longitud máxima de una entrada es de 128 caracteres.
+>   - Todas las entradas no pueden superar los 10.000 caracteres.
+> 
+> - No incluya una barra diagonal ( `/` ) al final de la dirección URL. Por ejemplo, use `https://www.contoso.com` , no `https://www.contoso.com/` .
+> 
+> - Una dirección URL de solo dominio (por ejemplo `contoso.com` o `tailspintoys.com` ) bloqueará cualquier dirección URL que contenga el dominio.
+> 
+> - Puede bloquear un subdominio sin bloquear el dominio completo. Por ejemplo, `toys.contoso.com*` bloquea cualquier dirección URL que contenga el subdominio, pero no bloquea las direcciones URL que contienen el dominio completo `contoso.com` .
+> 
+> - Puede incluir hasta tres caracteres comodín ( `*` ) por entrada de dirección URL.
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>Sintaxis de entrada para la lista "Bloquear las siguientes direcciones URL"
 
@@ -296,20 +296,20 @@ Cada directiva de vínculos seguros contiene una lista No **reescribir** las sig
 
 Para agregar entradas a la lista en directivas de vínculos seguros nuevas o existentes, vea [Crear](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) directivas de vínculos seguros o [Modificar directivas de vínculos seguros.](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)
 
-**Notas**:
-
-- Los siguientes clientes no reconocen las siguientes listas **de direcciones URL** en directivas de vínculos seguros. Los usuarios incluidos en las policías pueden tener acceso a las direcciones URL según los resultados del examen de vínculos seguros en estos clientes:
-
-  - Microsoft Teams
-  - Aplicaciones web de Office
-
-  Para obtener una lista realmente universal de direcciones URL permitidas en todas partes, vea [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-
-- Considere la posibilidad de agregar direcciones URL internas usadas habitualmente a la lista para mejorar la experiencia del usuario. Por ejemplo, si tiene servicios locales, como Skype Empresarial o SharePoint, puede agregar esas direcciones URL para excluirlas del examen.
-
-- Si ya tiene **No volver** a escribir las siguientes entradas de direcciones URL en las directivas de vínculos seguros, asegúrese de revisar las listas y agregar caracteres comodín según sea necesario. Por ejemplo, la lista tiene una entrada como y más adelante decide incluir `https://contoso.com/a` subpaths como `https://contoso.com/a/b` . En lugar de agregar una nueva entrada, agregue un comodín a la entrada existente para que se convierta en `https://contoso.com/a/*` .
-
-- Puede incluir hasta tres caracteres comodín ( `*` ) por entrada de dirección URL. Los caracteres comodín incluyen explícitamente prefijos o subdominios. Por ejemplo, la entrada no es la misma que , porque permite a los usuarios visitar subdominios y rutas de acceso `contoso.com` `*.contoso.com/*` en el dominio `*.contoso.com/*` especificado.
+> [!NOTE]
+> 
+> - Los siguientes clientes no reconocen las siguientes listas **de direcciones URL** en directivas de vínculos seguros. Los usuarios incluidos en las policías pueden tener acceso a las direcciones URL según los resultados del examen de vínculos seguros en estos clientes:
+> 
+>   - Microsoft Teams
+>   - Aplicaciones web de Office
+> 
+>   Para obtener una lista realmente universal de direcciones URL permitidas en todas partes, vea [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+> 
+> - Considere la posibilidad de agregar direcciones URL internas usadas habitualmente a la lista para mejorar la experiencia del usuario. Por ejemplo, si tiene servicios locales, como Skype Empresarial o SharePoint, puede agregar esas direcciones URL para excluirlas del examen.
+> 
+> - Si ya tiene **No volver** a escribir las siguientes entradas de direcciones URL en las directivas de vínculos seguros, asegúrese de revisar las listas y agregar caracteres comodín según sea necesario. Por ejemplo, la lista tiene una entrada como y más adelante decide incluir `https://contoso.com/a` subpaths como `https://contoso.com/a/b` . En lugar de agregar una nueva entrada, agregue un comodín a la entrada existente para que se convierta en `https://contoso.com/a/*` .
+> 
+> - Puede incluir hasta tres caracteres comodín ( `*` ) por entrada de dirección URL. Los caracteres comodín incluyen explícitamente prefijos o subdominios. Por ejemplo, la entrada no es la misma que , porque permite a los usuarios visitar subdominios y rutas de acceso `contoso.com` `*.contoso.com/*` en el dominio `*.contoso.com/*` especificado.
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>Sintaxis de entrada para la lista "No volver a escribir las siguientes direcciones URL"
 

@@ -21,12 +21,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la configuración y los filtros contra correo no deseado que ayudarán a evitar el correo no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f19330d7af9c4a6601baa9562766eb5a6e7052a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: eaff771d6fa0490819ec076b5a9a43ac843cf207
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207510"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650271"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protección contra correo no deseado en EOP
 
@@ -91,7 +91,7 @@ Estos son algunos procedimientos recomendados que se aplican a cualquiera de los
 
   - **DMARC:** Autenticación de mensajes basada en dominio, informes y conformidad ayuda a los sistemas de correo electrónico de destino a determinar qué hacer con los mensajes que no cumplen con las comprobaciones de SPF o DKIM y proporciona otro nivel de confianza para los partners de correo electrónico. Para obtener más información, vea [Use DMARC to validate email in Microsoft 365](use-dmarc-to-validate-email.md).
 
-- **Compruebe** la configuración de correo electrónico masivo: el umbral de nivel de cumplimiento masivo (BCL) que configure en directivas contra correo no deseado determina si el correo masivo (también conocido como correo _gris)_ está marcado como correo no deseado. La configuración de solo PowerShell _MarkAsSpamBulkMail_ que está activa de forma predeterminada también contribuye a los resultados. Para obtener más información, vea [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
+- **Compruebe** la configuración de correo electrónico masivo: el umbral de nivel de queja masiva (BCL) que configure en directivas contra correo no deseado determina si el correo masivo (también conocido como correo _gris)_ está marcado como correo no deseado. La configuración de solo PowerShell _MarkAsSpamBulkMail_ que está activa de forma predeterminada también contribuye a los resultados. Para obtener más información, vea [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>Impedir la entrega de correo no deseado a la Bandeja de entrada
 

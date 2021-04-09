@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Busque, pruebe e implemente aplicaciones asociadas de Microsoft y Microsoft para usuarios y grupos de su organización desde el portal de aplicaciones integradas en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: f806d48e0ed582b1b5c1ee262058ce987125bd99
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: da67cbe5f8b6e5f2da42e1f4b57a55d7d4a768fb
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488294"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644481"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Probar e implementar aplicaciones de Microsoft 365 por partners en el portal de aplicaciones integradas
 
@@ -29,7 +29,7 @@ Para obtener información adicional sobre cómo comprar y otorgar licencias de a
 
 Para obtener más información sobre cómo los partners crean estas aplicaciones, consulta [How to plan a SaaS offer for the commercial marketplace](https://go.microsoft.com/fwlink/?linkid=2158277)
 
-El portal de aplicaciones integradas solo es accesible para los administradores globales y solo está disponible para los clientes de WorldWide. Esta característica no está disponible en las nubes soberanas y gubernamentales.
+El portal de aplicaciones integradas solo es accesible para los administradores globales y solo está disponible para los clientes de todo el mundo. Esta característica no está disponible en las nubes soberanas y gubernamentales.
 
 El portal de aplicaciones integradas muestra una lista de aplicaciones, que incluye aplicaciones únicas y aplicaciones de Microsoft 365 de socios que se implementan en la organización. Solo se enumeran las aplicaciones web, las aplicaciones de SPFx, los complementos de Office y las aplicaciones de Teams. Para las aplicaciones web, podemos ver 2 tipos de aplicaciones.
 

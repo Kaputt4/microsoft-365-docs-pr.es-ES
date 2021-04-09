@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Obtenga información sobre cómo obtener un informe de aplicaciones de Microsoft 365 para uso con el panel informes de Microsoft 365 en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 88ef5e1291c35bbac050609e26e2ac5adef9d981
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 5b45e7994126018701c409d4fbfc6f1172924773
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579595"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644272"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Informes de Microsoft 365 en el Centro de administración: uso de aplicaciones de Microsoft 365
 
@@ -33,7 +33,7 @@ El panel informes  de Microsoft 365 muestra la introducción a la actividad en t
 
 
  > [!NOTE]
- > Debe ser un administrador global, un lector global o un lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint o Skype Empresarial para ver informes.
+ > Debe ser un administrador global, un lector global o un lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint o Skype Empresarial para ver informes. Las activaciones de equipos compartidos no se admiten en este informe.
 
 ## <a name="how-to-get-to-the-microsoft-365-apps-usage-report"></a>Cómo obtener acceso al informe de uso de Aplicaciones de Microsoft 365
 
@@ -44,7 +44,8 @@ El panel informes  de Microsoft 365 muestra la introducción a la actividad en t
 
 Para obtener una vista de la actividad de Aplicaciones de Microsoft 365 del usuario, consulte los gráficos **Usuarios** **y Plataforma.**
 
-![Informe de uso de Aplicaciones de Microsoft 365](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
+> [!div class="mx-imgBorder"]
+> ![Informe de uso de Aplicaciones de Microsoft 365](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
 
 |Item|Descripción|
  |:-----|:-----|
