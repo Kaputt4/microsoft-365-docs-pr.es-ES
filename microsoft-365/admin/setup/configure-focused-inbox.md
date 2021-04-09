@@ -20,16 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: 'Obtenga información acerca de cómo configurar la Bandeja de entrada Prioritarios para todos los usuarios específicos de su organización. '
-ms.openlocfilehash: 7059fbb886669af99c1471789cbbc623dc9719b8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 62a38f911e4e1b878af6489f096f17644e070978
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914287"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644517"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurar la Bandeja de entrada Prioritarios para todos los usuarios de la organización
 
-  Si es el responsable de configurar el modo en que el correo electrónico trabaja para todos los usuarios de la empresa, este artículo le interesa. En él se explica cómo personalizarlo o desactivarlo para su empresa y responde a temas sobre [Preguntas más frecuentes](#faq-for-focused-inbox).  <br/> Si quiere desactivar la Bandeja de entrada Prioritarios solo para usted, vea [Desactivar la Bandeja de entrada Prioritarios](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
+Si es el responsable de configurar el modo en que el correo electrónico trabaja para todos los usuarios de la empresa, este artículo le interesa. En él se explica cómo personalizarlo o desactivarlo para su empresa y responde a temas sobre [Preguntas más frecuentes](#faq-for-focused-inbox).
+
+Si quiere desactivar la Bandeja de entrada Prioritarios solo para usted, vea [Desactivar la Bandeja de entrada Prioritarios](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
 
 Si quiere asegurarse de que los usuarios reciben mensajes de correo electrónico específicos de un aspecto de la empresa como, por ejemplo, los recursos humanos o las nóminas, puede configurar la Bandeja de entrada Prioritarios para que estos mensajes se muestren en la vista Prioritarios. También puede controlar si los usuarios de su organización pueden ver la Bandeja de entrada Prioritarios en su buzón.
   
@@ -37,7 +39,7 @@ Si quiere asegurarse de que los usuarios reciben mensajes de correo electrónico
 
 Use PowerShell para activar o desactivar la Bandeja de entrada Prioritarios para todos los usuarios de la organización. ¿Quiere hacerlo en el Centro de administración de Microsoft 365? Informe a nuestro equipo de ingeniería. **[¡Vote aquí!](https://go.microsoft.com/fwlink/?linkid=862489)**
   
- **Para desactivar la Bandeja de entrada Prioritarios:**
+**Para desactivar la Bandeja de entrada Prioritarios:**
   
 En el siguiente ejemplo de PowerShell se **desactiva** la Bandeja de entrada Prioritarios de la organización. Sin embargo, no se bloquea la disponibilidad de la característica para los usuarios. Si quieren, pueden volver a habilitar la Bandeja de entrada Prioritarios en cada uno de sus clientes.  
   
@@ -47,9 +49,9 @@ En el siguiente ejemplo de PowerShell se **desactiva** la Bandeja de entrada Pri
 
 3. Ejecute el cmdlet **Get-OrganizationConfig**. 
 
- ``` PowerShell
-Get-OrganizationConfig
- ```
+    ```powershell
+    Get-OrganizationConfig
+    ```
 
 4. Busque **FocusedInboxOn** para ver la configuración actual: 
 
@@ -57,20 +59,20 @@ Get-OrganizationConfig
   
 5. Ejecute el cmdlet siguiente para desactivar la Bandeja de entrada Prioritarios.
 
- ``` PowerShell
- Set-OrganizationConfig -FocusedInboxOn $false
- ```
+    ```powershell
+    Set-OrganizationConfig -FocusedInboxOn $false
+    ```
 
 6. Ejecute el cmdlet **Get-OrganizationConfig** y verá que FocusedInboxOn se establece en $false, lo que significa se ha desactivado. 
 
- **Para activar la Bandeja de entrada Prioritarios:**
+**Para activar la Bandeja de entrada Prioritarios:**
   
 - En el Paso 5 anterior, ejecute el cmdlet siguiente para activar la Bandeja de entrada Prioritarios.
 
- ``` PowerShell
- Set-OrganizationConfig -FocusedInboxOn $true
- ```
-
+  ```powershell
+  Set-OrganizationConfig -FocusedInboxOn $true
+  ```
+    
 ## <a name="what-do-users-see-after-i-turn-on-focused-inbox"></a>¿Qué ven los usuarios después de que se active la Bandeja de entrada Prioritarios? 
 
 Los usuarios verán la vista Prioritarios solo tras cerrar y reiniciar Outlook. Cuando reinicien Outlook, verán una sugerencia en la interfaz de usuario de Outlook, en la que se les dará la opción de usar la nueva Bandeja de entrada Prioritarios. 
@@ -85,7 +87,7 @@ Cuando un usuario decide empezar a usar la Bandeja de entrada Prioritarios, Otro
   
 ## <a name="turn-focused-inbox-on-or-off-for-specific-users"></a>Activar o desactivar la Bandeja de entrada Prioritarios para usuarios específicos
 
-En este ejemplo se **desactiva** la Bandeja de entrada Prioritarios para Íker Arteaga en la organización de Contoso. Sin embargo, no bloquea la disponibilidad de la característica para él. Si quiere, puede volver a habilitar la Bandeja de entrada Prioritarios en cada uno de sus clientes. 
+En este ejemplo se **desactiva** la Bandeja de entrada Prioritarios para Íker Arteaga en la organización de Contoso. Sin embargo, no bloquea la disponibilidad de la característica para él. Si quiere, pueden volver a habilitar la Bandeja de entrada Prioritarios en cada uno de sus clientes. 
   
 1. [Conectarse a Exchange Online mediante PowerShell remoto](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -93,9 +95,9 @@ En este ejemplo se **desactiva** la Bandeja de entrada Prioritarios para Íker A
 
 3. Ejecute el cmdlet **Get-FocusedInbox**, por ejemplo: 
 
- ``` PowerShell
- Get-FocusedInbox -Identity <tim@contoso.com>
- ```
+    ```powershell
+    Get-FocusedInbox -Identity <tim@contoso.com>
+    ```
 
 4. Busque FocusedInboxOn para ver la configuración actual:
 
@@ -103,15 +105,15 @@ En este ejemplo se **desactiva** la Bandeja de entrada Prioritarios para Íker A
   
 5. Ejecute el cmdlet siguiente para desactivar la Bandeja de entrada Prioritarios:
 
- ``` PowerShell
- Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
- ```
+    ```powershell
+    Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
+    ```
 
-6. También puede ejecutar el cmdlet siguiente para activarlo:
+    También puede ejecutar el cmdlet siguiente para activarlo:
 
- ``` PowerShell
- Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
- ```
+    ```powershell
+    Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
+    ```
 
 ## <a name="use-the-ui-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Usar la interfaz de usuario para crear reglas de transporte que dirijan los mensajes de correo electrónico hacia la vista Prioritarios de todos los usuarios
 
@@ -125,8 +127,8 @@ En este ejemplo se **desactiva** la Bandeja de entrada Prioritarios para Íker A
 
     ![Bandeja de entrada Prioritarios de nóminas](../../media/focusedinbox-transport-rule.PNG)
 
-> [!NOTE]
-> El texto del valor del encabezado del mensaje en este ejemplo es **X-MS-Exchange-Organization-BypassFocusedInbox**.
+    > [!NOTE]
+    > El texto del valor del encabezado del mensaje en este ejemplo es **X-MS-Exchange-Organization-BypassFocusedInbox**.
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Usar PowerShell para crear reglas de transporte que dirijan los mensajes de correo electrónico hacia la vista Prioritarios de todos los usuarios
 
@@ -136,9 +138,9 @@ En este ejemplo se **desactiva** la Bandeja de entrada Prioritarios para Íker A
 
 3. Ejecute el comando siguiente para permitir que todos los mensajes del "Departamento de nóminas", por ejemplo, se entreguen en la Bandeja de entrada Prioritarios.
 
- ``` PowerShell
- New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
- ```
+    ```powershell
+    New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
+    ```
 
 > [!IMPORTANT]
 > En este ejemplo, tanto "X-MS-Exchange-Organization-BypassFocusedInbox" como "true" distinguen mayúsculas de minúsculas.
@@ -147,6 +149,10 @@ En este ejemplo se **desactiva** la Bandeja de entrada Prioritarios para Íker A
 ### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Puede comprobar los encabezados de los mensajes de correo electrónico para ver si los mensajes de correo electrónico están llegando a la Bandeja de entrada debido a la omisión de la regla de transporte de Bandeja de entrada Prioritarios. Seleccione un mensaje de correo electrónico de un buzón de la organización en el que se aplique la regla de transporte de la Bandeja de entrada Prioritarios. Compruebe los encabezados del mensaje. Debería ver el encabezado **X-MS-Exchange-Organization-BypassFocusedInbox: true**. Esto significa que la omisión está funcionando. Consulte el artículo [Ver la información de encabezado de Internet en un mensaje de correo electrónico](https://go.microsoft.com/fwlink/p/?LinkId=822530) para obtener información sobre cómo encontrar la información del encabezado.
+
+### <a name="what-will-the-user-see"></a>¿Qué verá el usuario?
+
+Si se aplica una regla de transporte, se mostrará una notificación para la invalidación. Outlook en la Web deshabilitará la opción "Mover siempre a Otros" y mostrará una información sobre herramientas. Los clientes de Outlook en el escritorio permitirán la selección de "Mover siempre a Otros" y mostrarán un cuadro de diálogo emergente.
 
 ## <a name="turn-onoff-clutter"></a>Desactivar o activar Otros correos
 
@@ -201,3 +207,4 @@ Existen dos cmdlets para controlar la Bandeja de entrada Prioritarios. Al ejecut
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>¿Puedo ejecutar un script para ver quién tiene activada la Bandeja de entrada Prioritarios?
 
 No, y no se puede cambiar. La habilitación de la Bandeja de entrada Prioritarios es una configuración del lado del cliente, por lo que los cmdlets solo pueden decirle si el buzón del usuario puede activar o no la experiencia del cliente. Es posible que esté habilitada en algunos clientes y en otros deshabilitada, por ejemplo, habilitada en la aplicación Outlook y Outlook Mobile, pero deshabilitada en Outlook en la Web.
+

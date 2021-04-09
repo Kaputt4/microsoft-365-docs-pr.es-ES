@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06b52e937dd0260a50883c45c36389a6a955ad0e
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: d0ae82c2e284235d96531c04dc2240063d4e4183
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604533"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51657046"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Administración de vulnerabilidades y detección de dispositivos de red
 
@@ -46,7 +46,7 @@ Las funcionalidades de detección de red están disponibles en la sección **Inv
 
 Se usará un dispositivo designado de Microsoft Defender para endpoint en cada segmento de red para realizar exámenes periódicos autenticados de dispositivos de red preconfigurados. Una vez descubierto, las capacidades de administración de amenazas y vulnerabilidades de Defender for Endpoint proporcionan flujos de trabajo integrados para proteger los conmutadores detectados, enrutadores, controladores WLAN, firewalls y puertas de enlace VPN.  
 
-Una vez que se descubran y clasifiquen los dispositivos de red, los administradores de seguridad podrán recibir las recomendaciones de seguridad más recientes y revisar las vulnerabilidades detectadas recientemente para los dispositivos de red implementados en sus organizaciones.
+Una vez detectados y clasificados los dispositivos de red, los administradores de seguridad podrán recibir las recomendaciones de seguridad más recientes y revisar las vulnerabilidades detectadas recientemente en los dispositivos de red implementados en sus organizaciones.
 
 ## <a name="approach"></a>Enfoque
 
@@ -95,11 +95,11 @@ El primer paso es seleccionar un dispositivo que realizará los exámenes de red
     - login.windows.net  
     - *.securitycenter.windows.com
     - login.microsoftonline.com
-    - *.blob.core.windows.net/networkscannerstable/*
+    - *.blob.core.windows.net/networkscannerstable/ *
 
-    Nota: Estas direcciones URL no se especifican en la lista documentada defender para endpoint de la colección de datos permitida.
+    Nota: No todas las direcciones URL no se especifican en la lista documentada defender para el extremo de la colección de datos permitida.
 
-## <a name="permissions"></a>Permisos
+## <a name="permissions"></a>Permissions
 
 Para configurar trabajos de evaluación, se requiere la siguiente opción de permiso de usuario: **Administrar la configuración de seguridad en el Centro de seguridad**. Para encontrar el permiso, vaya a **Roles**  >  **de configuración**. Para obtener más información, vea [Create and manage roles for role-based access control](user-roles.md)
 

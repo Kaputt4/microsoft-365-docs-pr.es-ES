@@ -20,21 +20,14 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo cancelar su suscripción de prueba o de pago a Microsoft 365 para empresas.
 ms.date: ''
-ms.openlocfilehash: 7a2de2a261baeb4e64e12742810635f352217933
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d37a2459c89bf5931af26a91ed14e2898c1c8c4
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916881"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615392"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 *Idoneidad:* Si tiene menos de 25 licencias asignadas a usuarios, puede cancelar su suscripción de prueba o de pago a Microsoft 365 para empresas en línea en el Centro de administración de Microsoft 365 en cualquier momento. Si tiene más de 25 licencias asignadas a usuarios, puede reducirlas a menos de 25 o [llamar al soporte técnico para cancelar su suscripción](../../admin/contact-support-for-business-products.md).
 
@@ -53,46 +46,26 @@ Si ha agregado su propio nombre de dominio para usarlo con su suscripción, debe
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>, y después, seleccione la pestaña **Productos**.
-2. Busque la suscripción que desea cancelar. Seleccione **Más acciones** (tres puntos) y luego seleccione **Cancelar suscripción**.
-3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione algún comentario.
-4. Seleccione **Guardar**.
-
-Su suscripción ahora aparecerá en estado de **Deshabilitada** y tendrá funcionalidad reducida hasta que se elimine. Para obtener más información acerca de lo que puede esperar cuando se cancela una suscripción de pago de Microsoft 365 para empresas, consulte [¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?](what-if-my-subscription-expires.md)
-
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Suscripciones</a>.
-
-2. En la página **Suscripciones**, seleccione una suscripción.
-
-3. En el menú **Más acciones**, seleccione **Cancelar suscripción**.
-
-    ![Primer plano del menú Más acciones.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
-
-4. Revise las fechas importantes, proporcione comentarios sobre los motivos de la cancelación y, después, seleccione **Cancelar suscripción**.
-
-    Su suscripción ahora aparecerá en el estado de **Deshabilitada** y tendrá funcionalidad reducida hasta que se elimine. Para obtener más información acerca de lo que puede esperar cuando se cancela una suscripción de pago de Microsoft 365 para empresas, consulte [¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?](what-if-my-subscription-expires.md)
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Suscripciones</a>.
-
-2. En la página **Suscripciones**, seleccione una suscripción.
-
-3. En el menú **Más acciones**, seleccione **Cancelar suscripción**.
-
-    ![Primer plano del menú Más acciones.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
-
-4. Revise las fechas importantes, proporcione comentarios sobre los motivos de la cancelación y, después, seleccione **Cancelar suscripción**.
-
-    Su suscripción ahora aparecerá en estado de **Deshabilitada** y tendrá funcionalidad reducida hasta que se elimine. Para obtener más información acerca de lo que puede esperar cuando se cancela una suscripción de pago de Microsoft 365 para empresas, consulte [¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?](what-if-my-subscription-expires.md)
-
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
 ::: moniker-end
+
+2. Seleccione la pestaña **Productos**.
+3. Busque la suscripción que desea cancelar. Seleccione **Más acciones** (tres puntos) y luego seleccione **Cancelar suscripción**.
+4. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione algún comentario.
+5. Seleccione **Guardar**.
+
+Su suscripción ahora aparecerá en estado de **Deshabilitada** y tendrá funcionalidad reducida hasta que se elimine. Para obtener más información acerca de lo que puede esperar cuando se cancela una suscripción de pago de Microsoft 365 para empresas, consulte [¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?](what-if-my-subscription-expires.md)
 
 ## <a name="what-happens-when-you-cancel-a-subscription"></a>¿Qué sucede cuando cancela una suscripción?
 

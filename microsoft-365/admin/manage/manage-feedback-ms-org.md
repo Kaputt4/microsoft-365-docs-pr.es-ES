@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Administrar comentarios que los usuarios pueden enviar a Microsoft acerca de los productos de Microsoft.
-ms.openlocfilehash: 9c6ed46b21a5ee697c4c512c09defd66e6b961c9
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: c92adec1689d6f0c46b03ae4f46c567f054b6457
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644922"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650021"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Administrar los comentarios de Microsoft para su organización
 
@@ -32,7 +32,7 @@ Como administrador de una organización de Microsoft 365, ahora hay varias direc
 
 Para obtener más información sobre los tipos de comentarios y el modo en que Microsoft usa los comentarios de los usuarios, vea [Learn about Microsoft feedback for your organization](../misc/feedback-user-control.md).
 
-La tabla siguiente representa qué aplicaciones y servicios están conectados actualmente a las directivas de comentarios que se muestran en la siguiente tabla de directivas de comentarios.
+La tabla siguiente representa qué aplicaciones y servicios están conectados actualmente a las directivas de comentarios que se muestran en la siguiente tabla de directivas de comentarios. Consulta debajo de la tabla ejemplos de capturas de pantalla.
 
 |**Servicios & aplicaciones**|**Comentarios en el producto** <br> |**Encuestas desde el producto** <br> |**Colección Metadata** <br> |**Participación del cliente** <br> |
 |:-----|:-----|:-----|:-----|:-----|
@@ -51,15 +51,7 @@ La tabla siguiente representa qué aplicaciones y servicios están conectados ac
 |**Visio**|Sí|Sí|Sí|Sí|
 |**Yammer**|Sí|Sí|Sí|Sí|
 
-Estos son algunos ejemplos de comentarios del producto.
-
-**Comentarios en el producto**
-
-:::image type="content" source="../../media/feedback-in-product-help.png" alt-text="Captura de pantalla: Ejemplo de ayuda en el producto":::
-
-**Encuestas desde el producto**
-
-:::image type="content" source="../../media/feedback-in-product-survey.png" alt-text="Captura de pantalla: ejemplo de encuesta del producto de la aplicación microsoft":::
+[Vea aquí algunos ejemplos de encuestas y comentarios dentro del producto.](https://docs.microsoft.com/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#in-product-surveys)
 
 **Colección Metadata**
 

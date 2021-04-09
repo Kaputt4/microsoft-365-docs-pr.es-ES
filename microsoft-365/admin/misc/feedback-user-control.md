@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre los comentarios que los usuarios pueden enviar a Microsoft sobre los productos de Microsoft.
-ms.openlocfilehash: 0a6c895eacd7a1cf8077141c6a848236a53818e7
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 29fe6b7f43b3c888c3848daeb6ab4c2152a9c44c
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644910"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650077"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>Información sobre los comentarios de Microsoft para su organización
 
@@ -49,9 +49,9 @@ Si los usuarios usan una de las aplicaciones de Microsoft y desean proporcionar 
 
 Los usuarios también pueden calificar su experiencia y proporcionar información adicional sobre su experiencia a través de solicitudes de encuesta iniciadas por el sistema. Estos avisos se producen en los productos de Microsoft 365 de vez en cuando. Cuando se le pida, los usuarios pueden elegir si desean proporcionar comentarios. Los mensajes de la encuesta normalmente aparecen en la parte inferior derecha de la aplicación. Si el usuario decide proporcionar comentarios, descarta el mensaje o deja que el mensaje desaparezca por sí mismo, ese usuario no volverá a ver la encuesta durante algún tiempo. Microsoft también aprovecha un proceso de gobierno para limitar el número de estas encuestas iniciadas por el sistema.  El objetivo del gobierno es garantizar que los usuarios no se sientan abrumados por el número de solicitudes de encuesta.
 
-:::image type="content" source="../../media/feedback-outlook-example.png" alt-text="Screenshot: Example of in-product feedback for Outlook":::
-:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Screenshot: How likely are you to recommend Microsoft 365 survey":::
-:::image type="content" source="../../media/feedback-in-product1.png" alt-text="Captura de pantalla: ejemplos de páginas de comentarios del producto":::
+:::image type="content" source="../../media/feedback-love.png" alt-text="Screenshot: Example of in-product feedback request":::
+
+:::image type="content" source="../../media/feedback-excel.png" alt-text="Screenshot: Example of in-product feedback request":::
 
 ## <a name="what-kind-of-feedback-is-best"></a>¿Qué tipo de comentarios es mejor?
 
@@ -90,3 +90,7 @@ We work to earn trust by ensuring that we focus on core data handling and data p
 Nos aseguramos de que los comentarios que recibimos se almacenan y se administran en las reglas de gobierno de Microsoft y que solo se puede acceder a ella para usos aprobados.
 
 Te colocamos en control de tu privacidad con herramientas fáciles de usar y opciones claras. Somos transparentes sobre cómo recopilamos y usamos datos, para que pueda tomar decisiones fundamentadas sobre lo que desea compartir. Protegemos los datos que nos confía con una seguridad y cifrado sólidos. Respetamos las leyes de privacidad locales y luchamos por la protección legal de su privacidad como derecho humano. No usamos el correo electrónico, el chat, los archivos u otro contenido personal para dirigirte a los anuncios. Cuando recopilamos datos, los usamos para mejorar sus experiencias. Obtenga más información sobre el enfoque de Microsoft a la privacidad [aquí](https://privacy.microsoft.com/). Obtenga más información sobre nuestra [información general sobre privacidad.](/compliance/assurance/assurance-privacy)
+
+## <a name="how-can-i-see-my-users-feedback"></a>¿Cómo puedo ver los comentarios de mi usuario?
+
+Próximamente, compartiremos los datos de comentarios que recopilamos para los productos de Microsoft. Estamos trabajando en una nueva experiencia en el Centro de administración de Microsoft 365 que le permite ver, eliminar y exportar los datos de comentarios de su organización. Esto le ofrece transparencia directa e información útil sobre las experiencias de los usuarios con los productos de Microsoft 365.

@@ -18,28 +18,56 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre los pasos básicos para crear un diccionario de palabras clave en el Centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: ff96eda71857b4b0f802462da96e4f4abbaf05f4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b70deed531204f2ffe85253bd9ae2073dad291ec
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908394"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632196"
 ---
 # <a name="create-a-keyword-dictionary"></a>Crear un diccionario de palabras clave
 
 La prevención de pérdida de datos (DLP) puede identificar, supervisar y proteger los elementos confidenciales. Para identificar elementos confidenciales, a veces es necesario buscar palabras clave, especialmente al identificar contenido genérico (como comunicaciones relacionadas con la salud) o lenguaje explícito o inadecuado. Aunque puede crear listas de palabras clave en tipos de información confidencial, las listas de palabras clave están limitadas en tamaño y es necesario modificar el código XML para crearlas o editarlas. Los diccionarios de palabras clave proporcionan una administración más sencilla de las palabras clave y a una escala mucho mayor, lo que admite hasta 1 MB de términos (después de la compresión) en el diccionario en cualquier idioma. El límite del espacio empresarial también es de 1 MB después de la compresión. 1 MB de límite después de la compresión significa que todos los diccionarios combinados en un espacio empresarial pueden tener casi 1 millón de caracteres.
-  
-> [!NOTE]
-> Existe un límite de 50 tipos de información confidencial basados en el diccionario de palabras clave que se pueden crear por espacio empresarial.
 
-> [!NOTE]
-> Microsoft 365 Information Protection ahora es compatible con la vista previa de idiomas con conjunto de caracteres de doble byte para:
-> - Chino (simplificado)
-> - Chino (tradicional)
-> - Coreano
-> - Japonés
->
->Este soporte está disponible para tipos de información confidencial. Para más información, consulte [Notas de la versión sobre la compatibilidad de Information Protection con juegos de caracteres de doble byte (vista previa)](mip-dbcs-relnotes.md).
+## <a name="keyword-dictionary-limits"></a>Límites del diccionario de palabras clave
+
+Existe un límite de 50 tipos de información confidencial basados en el diccionario de palabras clave que se pueden crear por espacio empresarial. Para averiguar cuántos diccionarios de palabras clave tiene en su espacio empresarial, puede ejecutar este script de PowerShell en su espacio empresarial.
+
+```powershell
+$rawFile = $env:TEMP + "\rule.xml"
+
+$kd = Get-DlpKeywordDictionary
+$ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
+Set-Content -path $rawFile -Encoding Byte -Value $ruleCollections.SerializedClassificationRuleCollection
+$UnicodeEncoding = New-Object System.Text.UnicodeEncoding
+$FileContent = [System.IO.File]::ReadAllText((Resolve-Path $rawFile), $unicodeEncoding)
+
+if($kd.Count -gt 0)
+{
+$count = 0
+$entities = $FileContent -split "Entity id"
+for($j=1;$j -lt $entities.Count;$j++)
+{
+for($i=0;$i -lt $kd.Count;$i++)
+{
+$Matches = Select-String -InputObject $entities[$j] -Pattern $kd[$i].Identity -AllMatches
+$count = $Matches.Matches.Count + $count
+if($Matches.Matches.Count -gt 0) {break}
+}
+}
+
+Write-Output "Total Keyword Dictionary SIT:"
+$count
+}
+else
+{
+$Matches = Select-String -InputObject $FileContent -Pattern $kd.Identity -AllMatches
+Write-Output "Total Keyword Dictionary SIT:"
+$Matches.Matches.Count
+}
+
+Remove-Item $rawFile
+```
 
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>Pasos básicos para crear un diccionario de palabras clave
 
@@ -237,3 +265,12 @@ Pegue la identidad en el archivo XML del tipo de información confidencial perso
       </Resource>
     </LocalizedStrings>
 ```
+
+> [!NOTE]
+> Microsoft 365 Information Protection es compatible con los idiomas del conjunto de caracteres de doble byte de vista previa para:
+> - Chino (simplificado)
+> - Chino (tradicional)
+> - Coreano
+> - Japonés
+>
+>Este soporte está disponible para tipos de información confidencial. Para más información, consulte [Notas de la versión sobre la compatibilidad de Information Protection con juegos de caracteres de doble byte (vista previa)](mip-dbcs-relnotes.md).

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determine dónde se almacenan los datos del cliente de Microsoft 365 dentro de la Unión Europea
-ms.openlocfilehash: 28bfa7c18aff485e084e4d77bb2a36f0f5b7e95f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19df44a702d842d4171d867946fb818d3f36fd80
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905685"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615236"
 ---
 # <a name="data-locations-for-the-european-union"></a>Ubicaciones de datos en la Unión Europea
 
@@ -92,7 +92,7 @@ Microsoft protege sus datos con el uso de varios niveles de protocolos de seguri
 
 De forma predeterminada, las claves administradas por Microsoft protegen los datos del cliente. Los datos que se conservan en cualquier medio físico siempre se cifran con protocolos de cifrado compatibles con FIPS 140-2. También puede emplear las claves administradas por el cliente (CMK), [el cifrado doble](../compliance/double-key-encryption.md), o los módulos de seguridad de hardware (HSM) para una mayor protección de datos.
 
-Todo el tráfico de datos que se desplaza entre los centros de datos también se protege con los estándares de seguridad IEEE 802.1AE (MAC), lo que evita ataques físicos de "intermediarios".
+Además, Microsoft utiliza por defecto un protocolo de [seguridad de la capa de transporte (TLS)](https://wikipedia.org/wiki/Transport_Layer_Security) para cifrar los datos cuando viajan entre los servicios en la nube y los clientes. Los servicios Microsoft negocian una conexión TLS con los sistemas de clientes que se conectan a los servicios de Microsoft 365. 
 
 Para evitar el acceso físico no autorizado a los centros de datos, empleamos procesos y controles operacionales rigurosos que incluyen una vigilancia de vídeo 24/7, personal y procesos de seguridad con entrenamiento previo, y controles de acceso multifactor biométricos o tarjeta inteligente. Al final de su ciclo de vida, los discos de datos se rompen y se destruyen. Si una unidad de disco usada para almacenamiento sufre un error de hardware o llega al final de su ciclo de vida, se eliminará o destruirá de forma segura. Los datos de la unidad se sobrescriben por completo para asegurar que los datos no se puedan recuperar de ningún modo. Al retirar estos dispositivos, se romperán y destruirán, de acuerdo con las directrices para la limpieza de medios NIST SP 800-88 R1. Los registros de la destrucción se retienen y se revisan como parte del proceso de auditoria y cumplimiento de Microsoft. Todos los servicios de Microsoft 365 usan un almacenamiento de medios y servicios de administración de eliminación aprobados.
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Obtenga información sobre cómo controlar qué usuarios pueden crear grupos de Microsoft 365.
-ms.openlocfilehash: 9c3edf335ce09f04e9b0b538e69fa607a9c34044
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 092ff821911ef0af2b7867e1b870b68b1b6355b3
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929161"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51656990"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Administrar quién puede crear grupos de Microsoft 365
 
@@ -43,7 +43,7 @@ Cuando se limita quién puede crear un grupo, afecta a todos los servicios que d
 - Power BI (clásico)
 - Project for the web /Roadmap
 
-Los pasos de este artículo no impedirán que los miembros de determinados roles creen grupos. Los administradores globales de Office 365 pueden crear grupos por cualquier medio, como el Centro de administración de Microsoft 365, Planner, Teams, Exchange y SharePoint Online. Otros roles pueden crear grupos a través de medios limitados, que se enumeran a continuación.
+Los pasos de este artículo no impedirán que los miembros de determinados roles creen grupos. Los administradores globales de Office 365 pueden crear grupos a través del Centro de administración de Microsoft 365, Planner, Exchange y SharePoint Online. Otros roles pueden crear grupos a través de medios limitados, que se enumeran a continuación.
 
 - Administrador de Exchange: Centro de administración de Exchange, Azure AD
 - Soporte técnico de nivel 1 de partner: Centro de administración de Microsoft 365, Centro de administración de Exchange, Azure AD
