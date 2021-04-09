@@ -6,6 +6,8 @@
       items:
         - name: Defender para Office 365
           href: defender-for-office-365.md
+        - name: Protección contra amenazas paso a paso en Defender para Office 365
+          href: protection-stack-microsoft-defender-for-office365.md
         - name: Evaluar Defender para Office 365
           href: office-365-evaluation.md
         - name: Novedades de Microsoft Defender para Office 365
