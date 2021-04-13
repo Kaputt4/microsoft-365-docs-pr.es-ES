@@ -15,12 +15,12 @@ ms.custom:
 description: Obtenga información sobre cómo Exchange Online Protection (EOP) puede ayudar a proteger su organización de correo electrónico local en entornos independientes e híbridos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3df7b376d559535e168bfa21d2a8770b19569c4f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b699c0d6353d725b8d03cf4cf556a3e2ac798041
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207475"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687058"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -70,6 +70,9 @@ Los planes de suscripción de EOP disponibles son:
 - **Exchange Enterprise CAL with Services:** si tiene una organización de Exchange local donde ha adquirido licencias adicionales de Exchange Enterprise CAL con servicios, EOP forma parte de los servicios incluidos.
 
 Para obtener información sobre los requisitos, los límites importantes y la disponibilidad de características en todos los planes de suscripción de EOP, vea la descripción del servicio [de Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+
+> [!NOTE]
+> Si tiene una **suscripción a Office 365 E3, incluye EOP**. Para ver los pasos para configurar la característica de seguridad de EOP en la suscripción y la información sobre la seguridad agregada que puede proporcionar una suscripción a Microsoft Defender para Office 365, vea [protect against threats](protect-against-threats.md). La configuración recomendada para la característica EOP [](best-practices-for-configuring-eop.md) para la configuración se puede encontrar en el artículo Recomendaciones, donde se llama específicamente a la configuración de EOP.
 
 ## <a name="setting-up-eop-for-on-premises-email-organizations"></a>Configurar EOP para organizaciones de correo electrónico locales
 

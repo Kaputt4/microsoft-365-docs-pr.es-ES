@@ -1,6 +1,6 @@
 ---
-title: Solucionar problemas de integración de herramientas SIEM en ATP de Microsoft Defender
-description: Solucionar problemas que pueden surgir al usar herramientas SIEM con ATP de Microsoft Defender.
+title: Solucionar problemas de integración de herramientas SIEM en Microsoft Defender para endpoint
+description: Solucionar problemas que pueden surgir al usar herramientas SIEM con Microsoft Defender para endpoint.
 keywords: troubleshoot, siem, client secret, secret
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: c1c8fdb0b6e84d4265defb95d91b59a584b7f4c2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 60220d00ca1b612564b72103b9206e3d6d89dc60
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185784"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689454"
 ---
-# <a name="troubleshoot-siem-tool-integration-issues"></a>Solucionar problemas de integración de herramientas SIEM
+# <a name="troubleshoot-siem-tool-integration-issues"></a>Solucionar problemas de integración de la herramienta SIEM
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

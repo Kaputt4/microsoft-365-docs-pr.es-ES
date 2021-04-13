@@ -18,14 +18,14 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: b957147d8a4b0606159669ded2cafca5568daf71
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 2bcc8c1f977a6060ac94dc3a634f075a5c1ee041
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166226"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687954"
 ---
-# <a name="microsoft-defender-for-endpoint-for-android-application-license-terms"></a>Términos de licencia de aplicación de Microsoft Defender para Endpoint para Android
+# <a name="microsoft-defender-for-endpoint-on-android-application-license-terms"></a>Términos de licencia de aplicación de Microsoft Defender para Endpoint en Android
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

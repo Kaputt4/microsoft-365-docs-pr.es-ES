@@ -1,7 +1,7 @@
 ---
 title: 'Crear y ver excepciones para recomendaciones de seguridad: administración de amenazas y vulnerabilidades'
 description: Crear y supervisar excepciones para recomendaciones de seguridad en la administración de amenazas y vulnerabilidades.
-keywords: microsoft defender atp tvm remediation, mdatp tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
+keywords: microsoft Defender para la corrección de endpoint tvm, mdatp tvm, administración de amenazas y vulnerabilidades, administración de vulnerabilidades de & amenazas, corrección de la administración de vulnerabilidades de &, intune de corrección de tvm, sccm de corrección de tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13ac09b1ad918ed945edec6167fd57ea02b616ea
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 4f37300a742ab8cac32e95863cb706f1fd5f5d66
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500184"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689418"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Crear y ver excepciones para recomendaciones de seguridad: administración de amenazas y vulnerabilidades
 
@@ -84,7 +84,7 @@ Aparecerá un menú desplegable donde puedes buscar y elegir los grupos de dispo
 
 ### <a name="global-exceptions"></a>Excepciones globales
 
-Si tiene permisos de administrador global (denominado administrador de ATP de Microsoft Defender), podrá crear y cancelar una excepción global. Afecta a todos **los** grupos de dispositivos actuales y futuros de la organización y solo un usuario con permisos similares podría cambiarlo. El estado de recomendación cambiará de "activo" a "excepción completa".
+Si tiene permisos de administrador global, podrá crear y cancelar una excepción global. Afecta a todos **los** grupos de dispositivos actuales y futuros de la organización y solo un usuario con permisos similares podría cambiarlo. El estado de recomendación cambiará de "activo" a "excepción completa".
 
 ![Mostrar la opción de excepción global.](images/tvm-exception-global.png)
 

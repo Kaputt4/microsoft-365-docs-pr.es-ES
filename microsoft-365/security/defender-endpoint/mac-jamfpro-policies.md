@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be01d5908e4c79f642cdbbddd75115f6ebc2c713
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 9b00d81d3d51c343565ec4eb743181baa2750b01
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499637"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687738"
 ---
-# <a name="set-up-the-microsoft-defender-for-endpoint-for-macos-policies-in-jamf-pro"></a>Configurar Microsoft Defender para endpoint para directivas de macOS en Jamf Pro
+# <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurar las directivas de Microsoft Defender para endpoint en macOS en Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -56,9 +56,9 @@ Deberá seguir los pasos siguientes:
 
 9. [Configurar extensión de red](#step-9-configure-network-extension)
 
-10. [Programar exámenes con Microsoft Defender para endpoint para Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+10. [Programar exámenes con Microsoft Defender para endpoint en macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
-11. [Implementar Microsoft Defender para endpoint para macOS](#step-11-deploy-microsoft-defender-for-endpoint-for-macos)
+11. [Implementar Microsoft Defender para endpoint en macOS](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
 
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>Paso 1: Obtener el paquete de incorporación de Microsoft Defender para endpoint
@@ -360,7 +360,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
         - **Método Distribution:** Instalar automáticamente *(predeterminado)*
         - **Nivel:** Nivel de equipo *(predeterminado)*
 
-        ![Imagen de las opciones de configuración mdatpmdav](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![Imagen de la configuración de perfil mdatpmdav](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
     - Tab **Notifications**, click **Add** y escriba los siguientes valores:
         - **Id. de agrupación:**`com.microsoft.wdav.tray`
@@ -468,7 +468,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
    
      ![Imagen de la tabla de ámbito de configuración](images/10ab98358b2d602f3f67618735fa82fb.png)
 
-13. Elija **Agregar**.
+13. Seleccione **Agregar**.
     
     ![Imagen de la configuración addimg1](images/56e6f6259b9ce3c1706ed8d666ae4947.png)
 
@@ -559,7 +559,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
     ![Imagen de configuración de configuración contoso machinegrp](images/368d35b3d6179af92ffdbfd93b226b69.png)
 
-15. Elija **Agregar**. 
+15. Seleccione **Agregar**. 
 
 16. Seleccione **Guardar**. 
     
@@ -681,7 +681,7 @@ Como alternativa, puede descargar [kext.mobileconfig](https://github.com/microso
 
 ## <a name="step-9-configure-network-extension"></a>Paso 9: Configurar extensión de red
 
-Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint para Mac inspecciona el tráfico de sockets e informa de esta información al portal del Centro de seguridad de Microsoft Defender. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
+Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal del Centro de seguridad de Microsoft Defender. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
 
 Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
@@ -707,7 +707,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
         Tenga en cuenta que los valores **exactos identificador**, filtro de **socket** y filtro **de** socket designados como se especifica anteriormente.
 
-        ![Imagen de las opciones de configuración mdatpmdav](images/netext-create-profile.png)
+        ![Imagen de la configuración mdatpmdav](images/netext-create-profile.png)
 
 3. Seleccione la **pestaña** Ámbito.
 
@@ -731,10 +731,10 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
 
 Como alternativa, puede descargar [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) y cargarlo en los perfiles de configuración de JAMF, como se describe en [Deploying Custom Configuration Profiles using Jamf Pro| Método 2: Cargar un perfil de configuración en Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
-## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-for-mac"></a>Paso 10: Programar exámenes con Microsoft Defender para endpoint para Mac
-Siga las instrucciones de [Programar exámenes con Microsoft Defender para Endpoint para Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
+## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Paso 10: Programar exámenes con Microsoft Defender para endpoint en macOS
+Siga las instrucciones de [Programar exámenes con Microsoft Defender para Endpoint en macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
 
-## <a name="step-11-deploy-microsoft-defender-for-endpoint-for-macos"></a>Paso 11: Implementar Microsoft Defender para endpoint para macOS
+## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>Paso 11: Implementar Microsoft Defender para endpoint en macOS
 
 1. Navegue hasta donde guardó `wdav.pkg` .
 
@@ -830,7 +830,7 @@ Siga las instrucciones de [Programar exámenes con Microsoft Defender para Endpo
 
     **Scope**
     
-    Elija **Agregar**.
+    Seleccione **Agregar**.
     
     ![Imagen de configuración ad1img](images/1c08d097829863778d562c10c5f92b67.png)
 

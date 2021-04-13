@@ -1,6 +1,6 @@
 ---
-title: Comprobar el estado del servicio ATP de Microsoft Defender
-description: Compruebe el estado del servicio ATP de Microsoft Defender, vea si el servicio está experimentando problemas y revise los problemas anteriores que se han resuelto.
+title: Comprobar el estado del servicio de punto de conexión de Microsoft Defender
+description: Compruebe el estado del servicio de punto de conexión de Microsoft Defender, vea si el servicio está experimentando problemas y revise los problemas anteriores que se han resuelto.
 keywords: panel, servicio, problemas, estado del servicio, estado actual, historial de estado, resumen de impacto, causa raíz preliminar, resolución, tiempo de resolución, tiempo de resolución esperado
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45782fcce51e15adf61757d836d313d229558571
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1b4545daace5df1a1a9c6e827f7d8f1b522a690c
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072915"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687630"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>Comprobar el estado del servicio de punto de conexión de Microsoft Defender
 
@@ -54,7 +54,7 @@ La **pestaña Estado actual** muestra el estado actual del servicio Defender par
 - Tiempo de actualización
 - Resumen del impacto
 - Causa raíz preliminar
-- Pasos siguientes
+- Siguientes pasos
 - Tiempo de resolución esperado
 
 Las actualizaciones sobre el progreso de un problema se reflejan en la página a medida que se resuelve el problema. Verá actualizaciones sobre la información, como una estimación actualizada del tiempo de resolución o los pasos siguientes.

@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: e1da26c6-2d39-4379-af6f-4da213218408
 description: En este artículo, obtenga información sobre los requisitos de enrutamiento de Azure ExpressRoute, los circuitos y los dominios de enrutamiento para su uso con Office 365.
-ms.openlocfilehash: 9d3c381cfb6e24c1c87ef3dcfb83a9b93f991b93
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: b455ed7e53b3018babb1abd58919a077fb9d0685
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222412"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687174"
 ---
 # <a name="routing-with-expressroute-for-office-365"></a>Enrutamiento con ExpressRoute para Office 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Para comprender correctamente el tráfico de enrutamiento a Office 365 mediante Azure ExpressRoute, necesitará conocer con firmeza los principales requisitos de enrutamiento de [ExpressRoute](/azure/expressroute/expressroute-routing) y los circuitos y dominios de enrutamiento de [ExpressRoute.](/azure/expressroute/expressroute-circuit-peerings) Estos se basan en los conceptos básicos para usar ExpressRoute en el que confiarán los clientes de Office 365.
   
@@ -106,7 +106,7 @@ En esta tabla se muestran los FQDN de caracteres comodín que se anuncian en Int
 
 Por lo general, los archivos PAC están destinados a enviar solicitudes de red a los puntos de conexión anunciados de ExpressRoute directamente al circuito y a todas las demás solicitudes de red al proxy. Si está configurando un archivo PAC como este, redacte el archivo PAC en el siguiente orden:
   
-1. Incluya los sub FQDN de la columna dos de la tabla anterior en la parte superior del archivo PAC, enviando el tráfico hacia el proxy. Hemos creado un archivo PAC de ejemplo para que lo use en nuestro artículo sobre la administración de puntos de conexión de [Office 365](./managing-expressroute-for-connectivity.md).
+1. Incluya los sub FQDN de la columna dos de la tabla anterior en la parte superior del archivo PAC, enviando el tráfico hacia el proxy. Hemos creado un archivo PAC de ejemplo para que lo use en nuestro artículo sobre la administración de puntos de conexión de [Office 365](./managing-office-365-endpoints.md).
 
 2. Incluya todos los FQDN marcados [](./urls-and-ip-address-ranges.md) anunciados a ExpressRoute en este artículo debajo de la primera sección, enviando el tráfico directamente al circuito de ExpressRoute.
 

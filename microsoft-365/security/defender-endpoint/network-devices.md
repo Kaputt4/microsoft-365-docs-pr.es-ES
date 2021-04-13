@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d0ae82c2e284235d96531c04dc2240063d4e4183
-ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
+ms.openlocfilehash: 43ade52e18ffc8e5db890cb0776090e9b32419e2
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51657046"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687678"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Administración de vulnerabilidades y detección de dispositivos de red
 
@@ -97,9 +97,9 @@ El primer paso es seleccionar un dispositivo que realizará los exámenes de red
     - login.microsoftonline.com
     - *.blob.core.windows.net/networkscannerstable/ *
 
-    Nota: No todas las direcciones URL no se especifican en la lista documentada defender para el extremo de la colección de datos permitida.
+    Nota: No todas las direcciones URL se especifican en la lista documentada defender para el extremo de la colección de datos permitida.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permisos
 
 Para configurar trabajos de evaluación, se requiere la siguiente opción de permiso de usuario: **Administrar la configuración de seguridad en el Centro de seguridad**. Para encontrar el permiso, vaya a **Roles**  >  **de configuración**. Para obtener más información, vea [Create and manage roles for role-based access control](user-roles.md)
 

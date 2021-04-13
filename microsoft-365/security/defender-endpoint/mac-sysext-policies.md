@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: a4c92d27d45208634f99f9bfb2f756cfc5792fac
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: db24bea3bddc682eceda8e6ea3fe2749b6b2778f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186658"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689130"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nuevos perfiles de configuración para macOS Catalina y versiones más recientes de macOS
 
@@ -36,9 +36,9 @@ ms.locfileid: "51186658"
 
 > ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-En alineación con la evolución de macOS, estamos preparando una actualización de Microsoft Defender para Endpoint para Mac que aprovecha las extensiones del sistema en lugar de las extensiones de kernel. Esta actualización solo se aplicará a macOS Catalina (10.15.4) y versiones más recientes de macOS.
+En alineación con la evolución de macOS, estamos preparando una actualización de Microsoft Defender para Endpoint en macOS que aprovecha las extensiones del sistema en lugar de las extensiones de kernel. Esta actualización solo se aplicará a macOS Catalina (10.15.4) y versiones más recientes de macOS.
 
-Si has implementado Microsoft Defender para Endpoint para Mac en un entorno administrado (a través de JAMF, Intune u otra solución MDM), debes implementar nuevos perfiles de configuración. Si no se hacen estos pasos, los usuarios recibirán solicitudes de aprobación para ejecutar estos nuevos componentes.
+Si has implementado Microsoft Defender para Endpoint en macOS en un entorno administrado (a través de JAMF, Intune u otra solución MDM), debes implementar nuevos perfiles de configuración. Si no se hacen estos pasos, los usuarios recibirán solicitudes de aprobación para ejecutar estos nuevos componentes.
 
 ## <a name="jamf"></a>JAMF
 
@@ -69,10 +69,10 @@ Agregue la siguiente carga de JAMF para conceder acceso en disco completo a Micr
 
 ### <a name="network-extension-policy"></a>Directiva de extensión de red
 
-Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint para Mac inspecciona el tráfico de sockets e informa de esta información al portal del Centro de seguridad de Microsoft Defender. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
+Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal del Centro de seguridad de Microsoft Defender. La siguiente directiva permite que la extensión de red realice esta funcionalidad.
 
 >[!NOTE]
->JAMF no tiene compatibilidad integrada con directivas de filtrado de contenido, que son un requisito previo para habilitar las extensiones de red que Microsoft Defender para Endpoint para Mac instala en el dispositivo. Además, JAMF a veces cambia el contenido de las directivas que se implementan.
+>JAMF no tiene compatibilidad integrada con directivas de filtrado de contenido, que son un requisito previo para habilitar las extensiones de red que Microsoft Defender para Endpoint en macOS instala en el dispositivo. Además, JAMF a veces cambia el contenido de las directivas que se implementan.
 >Por lo tanto, los siguientes pasos proporcionan una solución alternativa que implica firmar el perfil de configuración.
 
 1. Guarde el siguiente contenido en el dispositivo como `com.microsoft.network-extension.mobileconfig` si usara un editor de texto:
@@ -308,7 +308,7 @@ Para implementar este perfil de configuración personalizado:
 1.  En Intune, abra **Administrar configuración**  >  **de dispositivo.** Seleccione **Administrar**  >  **perfiles Crear**  >  **perfil**.
 2. Elija un nombre para el perfil. Cambiar **Platform=macOS** y **Profile type=Custom**. Seleccione **Configurar**.
 3.  Abra el perfil de configuración y cargue **sysext.xml**. Este archivo se creó en el paso anterior.
-4.  Seleccione **Aceptar**.
+4.  Elija **Aceptar**.
 
     ![Extensión del sistema en la captura de pantalla de Intune](images/mac-system-extension-intune.png)
 

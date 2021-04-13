@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b56e8a74875b3377b6f3228bbefb339680dbc6e1
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: aaf537c84adaba3d632367567cc569069650d21a
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187786"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688362"
 ---
-# <a name="privacy-for-microsoft-defender-for-endpoint-for-linux"></a>Privacidad de Microsoft Defender para Endpoint para Linux
+# <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Privacidad de Microsoft Defender para endpoint en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ Microsoft se compromete a proporcionarle la información y los controles que nec
 
 En este tema se describen los controles de privacidad disponibles en el producto, cómo administrar estos controles con la configuración de directiva y más detalles sobre los eventos de datos que se recopilan.
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-for-linux"></a>Información general sobre los controles de privacidad en Microsoft Defender para Endpoint para Linux
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Información general sobre los controles de privacidad en Microsoft Defender para Endpoint en Linux
 
 En esta sección se describen los controles de privacidad de los distintos tipos de datos recopilados por Defender para Endpoint para Linux.
 
@@ -111,7 +111,7 @@ Los datos de diagnóstico necesarios ayudan a identificar problemas con Microsof
 
 **Instalación y desinstalación de Microsoft Defender para endpoint**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -123,7 +123,7 @@ Se recopilan los campos siguientes:
 
 **Configuración de Microsoft Defender para punto de conexión**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field                                               | Descripción |
 | --------------------------------------------------- | ----------- |
@@ -144,7 +144,7 @@ Se recopilan los campos siguientes:
 
 **Informe de actualización de inteligencia de seguridad**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -159,7 +159,7 @@ Se recopilan los campos siguientes:
 
 **Estadísticas de extensión de kernel**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -193,7 +193,7 @@ Algunos ejemplos de datos de diagnóstico opcionales incluyen datos que Microsof
 
 **Configuración de Microsoft Defender para punto de conexión**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field                                              | Descripción |
 | -------------------------------------------------- | ----------- |
@@ -214,7 +214,7 @@ Se recopilan los campos siguientes:
 
 **Configuración de Actualización automática de Microsoft**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field                       | Descripción |
 | --------------------------- | ----------- |
@@ -227,7 +227,7 @@ Se recopilan los campos siguientes:
 
 #### <a name="diagnostic-log-upload-started-report"></a>Informe de carga iniciada del registro de diagnóstico
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -238,7 +238,7 @@ Se recopilan los campos siguientes:
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Informe completado de carga de registro de diagnóstico
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -254,7 +254,7 @@ Cierres de aplicación inesperados y el estado de la aplicación cuando esto ocu
 
 **Estadísticas de extensión de kernel**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
 | Field                          | Descripción |
 | ------------------------------ | ----------- |

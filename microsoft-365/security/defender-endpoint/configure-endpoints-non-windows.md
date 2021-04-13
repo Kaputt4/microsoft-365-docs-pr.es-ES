@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c292c57c179a832728b03a7fc94fb7085d3ea0ec
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 71f230f557792d75659dc4dbfc5911811514d5ea
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166082"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687882"
 ---
-# <a name="onboard-non-windows-devices"></a>Incorporación de dispositivos que no son de Windows
+# <a name="onboard-non-windows-devices"></a>Incorporar dispositivos que no tienen Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,24 +40,21 @@ ms.locfileid: "51166082"
 
 Defender for Endpoint proporciona una experiencia de operaciones de seguridad centralizada para Windows, así como para plataformas que no son de Windows. Podrás ver alertas de varios sistemas operativos compatibles (SO) en el Centro de seguridad de Microsoft Defender y proteger mejor la red de la organización. 
 
-Deberá conocer las versiones exactas de Linux distros y macOS que son compatibles con Defender for Endpoint para que la integración funcione. Para más información, vea:
-- [Requisitos del sistema de Microsoft Defender para Endpoint para Linux](microsoft-defender-endpoint-linux.md#system-requirements)  
-- [Requisitos del sistema de Microsoft Defender para Endpoint para Mac](microsoft-defender-endpoint-mac.md#system-requirements).
+Deberá conocer las versiones exactas de Linux distros y macOS que son compatibles con Defender for Endpoint para que la integración funcione. Para obtener más información, vea:
+- [Requisitos del sistema de Microsoft Defender para endpoint en Linux](microsoft-defender-endpoint-linux.md#system-requirements)  
+- [Requisitos del sistema de Microsoft Defender para endpoint en macOS](microsoft-defender-endpoint-mac.md#system-requirements).
 
 ## <a name="onboarding-non-windows-devices"></a>Incorporación de dispositivos que no son de Windows
 Tendrás que seguir los siguientes pasos para incorporar dispositivos que no son windows:
 1. Seleccione el método de incorporación preferido:
 
-   - Para dispositivos macOS, puedes elegir incorporarlo a través de ATP de Microsoft Defender o a través de una solución de terceros. Para obtener más información, vea [Microsoft Defender for Endpoint for Mac](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-mac).
+   - Para dispositivos macOS, puedes elegir incorporarlo a través de ATP de Microsoft Defender o a través de una solución de terceros. Para obtener más información, vea [Microsoft Defender for Endpoint for Mac](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).
+
    - Para otros dispositivos que no son de Windows, elija Incorporar dispositivos que no son de Windows a **través de la integración de terceros.**   
-       
-     1. En el panel de navegación, seleccione **Socios de**  >  **interoperabilidad**. Asegúrese de que la solución de terceros aparece en la lista.
-
-        2. En la **pestaña Aplicaciones de** partners, selecciona el partner que admita los dispositivos que no son windows.
-
-        3. Seleccione **Abrir página de socio** para abrir la página del partner. Siga las instrucciones proporcionadas en la página.
-
-        4. Después de crear una cuenta o suscribirse a la solución de partners, debe llegar a una fase en la que se pida a un administrador global de inquilinos de la organización que acepte una solicitud de permiso de la aplicación asociada. Lea atentamente la solicitud de permiso para asegurarse de que está alineada con el servicio que necesita. 
+    1. En el panel de navegación, seleccione **Socios de**  >  **interoperabilidad**. Asegúrese de que la solución de terceros aparece en la lista.
+    2. En la **pestaña Aplicaciones de** partners, selecciona el partner que admita los dispositivos que no son windows.
+    3. Seleccione **Abrir página de socio** para abrir la página del partner. Siga las instrucciones proporcionadas en la página.
+    4. Después de crear una cuenta o suscribirse a la solución de partners, debe llegar a una fase en la que se pida a un administrador global de inquilinos de la organización que acepte una solicitud de permiso de la aplicación asociada. Lea atentamente la solicitud de permiso para asegurarse de que está alineada con el servicio que necesita. 
 
         
 2. Ejecute una prueba de detección siguiendo las instrucciones de la solución de terceros.
@@ -74,7 +71,7 @@ Tendrás que seguir los siguientes pasos para incorporar dispositivos que no son
 
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Incorporación de dispositivos Windows 10](configure-endpoints.md)
+- [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)
 - [Servidores integrados](configure-server-endpoints.md)
-- [Configuración de proxy y conectividad a Internet](configure-proxy-internet.md)
+- [Configurar las opciones del proxy y de conectividad a Internet](configure-proxy-internet.md)
 - [Solución de problemas de incorporación de Microsoft Defender para puntos de conexión](troubleshoot-onboarding.md)

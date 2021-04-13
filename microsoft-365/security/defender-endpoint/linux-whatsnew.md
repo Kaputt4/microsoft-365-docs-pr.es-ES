@@ -1,6 +1,6 @@
 ---
-title: Novedades de Microsoft Defender para Endpoint para Linux
-description: Lista de cambios principales para ATP de Microsoft Defender para Linux.
+title: Novedades de Microsoft Defender para Endpoint en Linux
+description: Lista de cambios principales para ATP de Microsoft Defender en Linux.
 keywords: microsoft, defender, atp, linux, whatsnew, release
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7a55d254c20506913d0995bffc941a67bb34a38e
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 2866cd0c9ee9b40aa9c08c4ff7dce64f745d3d03
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615440"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688638"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-for-linux"></a>Novedades de Microsoft Defender para Endpoint para Linux
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Novedades de Microsoft Defender para Endpoint en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0)
 
-- Microsoft Defender para Endpoint para Linux ya está disponible en versión preliminar para los clientes del Gobierno de Estados Unidos. Para obtener más información, vea [Microsoft Defender for Endpoint for US Government customers](gov.md).
-- Se ha corregido un problema por el que el uso de Microsoft Defender para Endpoint para Linux en sistemas con sistemas de archivos FUSE provocaba la espera del sistema operativo
+- Microsoft Defender para Endpoint en Linux ya está disponible en versión preliminar para los clientes de Us Government. Para obtener más información, vea [Microsoft Defender for Endpoint for US Government customers](gov.md).
+- Se ha corregido un problema por el que el uso de Microsoft Defender para Endpoint en Linux en sistemas con sistemas de archivos FUSE provocaba que el sistema operativo se colgara.
 - Mejoras de rendimiento & correcciones de errores
 
 ## <a name="1012563-30121022125630"></a>101.25.63 (30.121022.12563.0)

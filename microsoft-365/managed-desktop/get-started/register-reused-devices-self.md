@@ -1,7 +1,6 @@
 ---
 title: Registre dispositivos existentes usted mismo
 description: Registrar dispositivos reutilizados que quizás ya tenga usted mismo para que puedan ser administrados por Microsoft Managed Desktop
-keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 1703e4ed4ea0f3306edf6fdf07ab9c97a9266d4f
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: f2b3e109493331a4b63d669501525a48cb996809
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445571"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689226"
 ---
 # <a name="register-existing-devices-yourself"></a>Registre dispositivos existentes usted mismo
 
@@ -150,9 +149,11 @@ En [Microsoft Endpoint Manager,](https://endpoint.microsoft.com/)seleccione **Di
 Siga estos pasos:
 
 1. En **Carga de archivos,** proporcione una ruta de acceso al archivo CSV que creó anteriormente.
+2. Selecciona un [perfil de dispositivo](../service-description/profiles.md) en el menú desplegable.
+3. Seleccione **Registrar dispositivos**. El sistema agregará los dispositivos a la lista de dispositivos de la hoja **Dispositivos,** marcados como **Registro pendiente.** El registro suele demorar menos de 10 minutos  y, cuando se realiza correctamente, el dispositivo se muestra como Listo para el usuario, lo que significa que está listo y a la espera de que un usuario empiece a usarlo.
 
-1. Seleccione **Registrar dispositivos**. El sistema agregará los dispositivos a la lista de dispositivos de la hoja **Dispositivos,** marcados como **Registro pendiente.** El registro suele demorar menos de 10 minutos  y, cuando se realiza correctamente, el dispositivo se muestra como Listo para el usuario, lo que significa que está listo y a la espera de que un usuario empiece a usarlo.
-
+> [!NOTE]
+> Si cambia manualmente la pertenencia a un grupo de Azure Active Directory (AAD) de un dispositivo, se reasignará automáticamente al grupo para su perfil de dispositivo y se quitará de los grupos en conflicto.
 
 Puedes supervisar el progreso del registro del dispositivo en la página principal. Entre los posibles estados notificados se incluyen:
 
@@ -161,7 +162,7 @@ Puedes supervisar el progreso del registro del dispositivo en la página princip
 | Registro pendiente | El registro aún no se ha realizado. Vuelva más tarde. |
 | Error de registro | No se pudo completar el registro. Consulte [Troubleshooting device registration para](#troubleshooting-device-registration) obtener más información. |
 | Listo para el usuario | El registro se ha registrado correctamente y el dispositivo ya está listo para entregarse al usuario. El Escritorio administrado de Microsoft los guiará a través de la configuración por primera vez, por lo que no es necesario realizar ninguna preparación adicional. |
-| Activo | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Esto también indica que usan regularmente el dispositivo. |
+| Activa | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Esto también indica que usan regularmente el dispositivo. |
 | Inactivo | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Sin embargo, no han usado el dispositivo recientemente (en los últimos 7 días).  | 
 
 #### <a name="troubleshooting-device-registration"></a>Solución de problemas de registro de dispositivos

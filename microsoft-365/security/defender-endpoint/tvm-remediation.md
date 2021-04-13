@@ -1,7 +1,7 @@
 ---
 title: Corregir vulnerabilidades con la administración de amenazas y vulnerabilidades
 description: Corrija las debilidades de seguridad detectadas a través de recomendaciones de seguridad y cree excepciones si es necesario en la administración de amenazas y vulnerabilidades.
-keywords: microsoft defender atp tvm remediation, mdatp tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
+keywords: microsoft Defender para la corrección de endpoint tvm, mdatp tvm, administración de amenazas y vulnerabilidades, administración de vulnerabilidades de & amenazas, corrección de la administración de vulnerabilidades de &, intune de corrección de tvm, sccm de corrección de tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4ffa89fd7162ac90e0cbbb029b1adbefa2ffd520
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: be24528c2337c5d2616eb1bf69906f60ae7b4375
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499991"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689370"
 ---
 # <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>Corregir vulnerabilidades con la administración de amenazas y vulnerabilidades
 

@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0d9e63c5d89b13b02dfcf116c1555c8db319d23f
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: d5a19464b9d5d1b9659d7bfae2d853f7a640a00b
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445369"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687894"
 ---
-# <a name="configure-alert-notifications-in-microsoft-defender-atp"></a>Configurar notificaciones de alertas en ATP de Microsoft Defender
+# <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configurar notificaciones de alertas en Microsoft Defender para endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ Puede configurar Defender for Endpoint para enviar notificaciones por correo ele
 > [!NOTE]
 > Solo los usuarios con permisos de "Administrar configuración de seguridad" pueden configurar las notificaciones de correo electrónico. Si ha elegido usar la administración de permisos básicos, los usuarios con roles de administrador de seguridad o administrador global pueden configurar las notificaciones de correo electrónico.
 
-Puede establecer los niveles de gravedad de alerta que desencadenan las notificaciones. También puede agregar o quitar destinatarios de la notificación de correo electrónico. Se notifica a los nuevos destinatarios acerca de las alertas encontradas después de agregarse. Para obtener más información acerca de las alertas, vea [Ver y organizar la cola de alertas](alerts-queue.md).
+Puede establecer los niveles de gravedad de alerta que desencadenan las notificaciones. También puede agregar o quitar destinatarios de la notificación de correo electrónico. Los nuevos destinatarios reciben notificaciones sobre las alertas desencadenadas después de agregarse. Para obtener más información acerca de las alertas, vea [Ver y organizar la cola de alertas](alerts-queue.md).
 
 Si usas el control de acceso basado en roles (RBAC), los destinatarios solo recibirán notificaciones en función de los grupos de dispositivos configurados en la regla de notificación.
 Los usuarios con el permiso adecuado solo pueden crear, editar o eliminar notificaciones limitadas al ámbito de administración de grupos de dispositivos.
@@ -71,7 +71,7 @@ Puede crear reglas que determinen los dispositivos y las gravedades de alerta pa
     
 5. Escriba la dirección de correo electrónico del destinatario y, a continuación, haga clic **en Agregar destinatario.** Puede agregar varias direcciones de correo electrónico.
 
-6. Compruebe que los destinatarios de correo electrónico puedan recibir las notificaciones por correo electrónico **seleccionando Enviar correo electrónico de prueba**.
+6. Compruebe que los destinatarios de correo electrónico pueden recibir las notificaciones de correo electrónico **seleccionando Enviar correo electrónico de prueba**.
 
 7. Haga clic **en Guardar regla de notificación**.
 

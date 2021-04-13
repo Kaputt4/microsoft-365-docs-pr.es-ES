@@ -1,6 +1,6 @@
 ---
-title: Supervisión de la seguridad de exploración web en ATP de Microsoft Defender
-description: Usar la protección web en ATP de Microsoft Defender para supervisar la seguridad de exploración web
+title: Supervisión de la seguridad de exploración web en Microsoft Defender para endpoint
+description: Usar la protección web en Microsoft Defender para endpoint para supervisar la seguridad de exploración web
 keywords: protección web, protección contra amenazas web, exploración web, supervisión, informes, tarjetas, lista de dominios, seguridad, phishing, malware, exploit, sitios web, protección de red, Edge, Internet Explorer, Chrome, Firefox, explorador web
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 629e18c7387f6063254f3482f93a5e17023c7316
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: ee6388c779d2c5bc09a82f5e9064d1b981e885cb
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499945"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687428"
 ---
 # <a name="monitor-web-browsing-security"></a>Supervisar la seguridad de exploración web
 

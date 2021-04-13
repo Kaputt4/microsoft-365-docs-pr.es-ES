@@ -1,6 +1,6 @@
 ---
-title: Configurar Microsoft Defender para punto de conexión para funciones de Android
-description: Describe cómo configurar Microsoft Defender para Endpoint para Android
+title: Configurar Microsoft Defender para las características de Punto de conexión en Android
+description: Describe cómo configurar Microsoft Defender para Endpoint en Android
 keywords: microsoft, defender, atp, mde, android, configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c395aafc8a468cfdeaea973ab02421212870192a
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 8ec4a19bdd641c721bfcd7be2ceb59de1de92963
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587220"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688038"
 ---
 # <a name="configure-defender-for-endpoint-for-android-features"></a>Configurar Defender para las características de Endpoint para Android
 
@@ -33,7 +33,7 @@ ms.locfileid: "51587220"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="conditional-access-with-defender-for-endpoint-for-android"></a>Acceso condicional con Defender para endpoint para Android  
-Microsoft Defender para Endpoint para Android, junto con Microsoft Intune y Azure Active Directory, permite aplicar el cumplimiento de dispositivos y las directivas de acceso condicional en función de los niveles de riesgo del dispositivo. Defender for Endpoint es una solución de Mobile Threat Defense (MTD) que puedes implementar para aprovechar esta funcionalidad a través de Intune.
+Microsoft Defender para Endpoint en Android junto con Microsoft Intune y Azure Active Directory permite aplicar directivas de cumplimiento de dispositivos y acceso condicional en función de los niveles de riesgo del dispositivo. Defender for Endpoint es una solución de Mobile Threat Defense (MTD) que puedes implementar para aprovechar esta funcionalidad a través de Intune.
 
 Para obtener más información acerca de cómo configurar Defender para Endpoint para Android y acceso condicional, vea [Defender for Endpoint e Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
 
@@ -51,5 +51,5 @@ Defender para Endpoint para Android permite a los administradores de TI configur
 > Defender para Endpoint para Android usaría una VPN para proporcionar la característica de Protección web. No se trata de una VPN normal y es una VPN local o auto-looping que no toma tráfico fuera del dispositivo. Para obtener más información, vea [Configure web protection on devices that run Android](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-manage-android).
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Introducción a Microsoft Defender para punto de conexión para Android](microsoft-defender-endpoint-android.md)
-- [Implementar Microsoft Defender para punto de conexión para Android con Microsoft Intune](android-intune.md)
+- [Información general sobre Microsoft Defender para endpoint en Android](microsoft-defender-endpoint-android.md)
+- [Implementar Microsoft Defender para endpoint en Android con Microsoft Intune](android-intune.md)

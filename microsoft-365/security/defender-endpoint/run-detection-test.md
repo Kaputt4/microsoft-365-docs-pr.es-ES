@@ -1,6 +1,6 @@
 ---
-title: Ejecutar una prueba de detección en un dispositivo ATP de Microsoft Defender recién incorporado
-description: Ejecute el script de detección en un dispositivo recién incorporado para comprobar que está incorporado correctamente al servicio ATP de Microsoft Defender.
+title: Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado
+description: Ejecute el script de detección en un dispositivo recién incorporado para comprobar que está incorporado correctamente al servicio de Microsoft Defender para endpoints.
 keywords: prueba de detección, detección, powershell, script, comprobación, incorporación, Microsoft Defender para incorporación de puntos de conexión, clientes, servidores, prueba
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 10154a734bb4c3d8b26fffb8618484aeb11f907a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 89b8ac7d99cfcd4c5e5e647e5ba54e14184ef0bd
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074131"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688122"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado 
 
@@ -61,6 +61,6 @@ Ejecute el siguiente script de PowerShell en un dispositivo recién incorporado 
 La ventana símbolo del sistema se cerrará automáticamente. Si se realiza correctamente, la prueba de detección se marcará como completada y aparecerá una nueva alerta en el portal del dispositivo incorporado en aproximadamente 10 minutos.
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Incorporación de dispositivos Windows 10](configure-endpoints.md)
+- [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)
 - [Servidores integrados](configure-server-endpoints.md)
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

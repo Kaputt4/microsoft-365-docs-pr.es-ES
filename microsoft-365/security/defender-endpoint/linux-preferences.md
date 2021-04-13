@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5aedf841ddfc5a592fe4afd2f13d6470e24c438c
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 6ca6b3dd41b867145bfc4af331fb742be469d2a9
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587520"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688398"
 ---
-# <a name="set-preferences-for-microsoft-defender-for-endpoint-for-linux"></a>Establecer preferencias para Microsoft Defender para endpoint para Linux
+# <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para endpoint en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -57,7 +57,7 @@ La *sección antivirusEngine* del perfil de configuración se usa para administr
 
 |||
 |:---|:---|
-| **Clave** | antivirusEngine |
+| **Key** | antivirusEngine |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 |||
@@ -68,7 +68,7 @@ Determina si la protección en tiempo real (examinar archivos a medida que se ac
 
 |||
 |:---|:---|
-| **Clave** | enableRealTimeProtection |
+| **Key** | enableRealTimeProtection |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | true (valor predeterminado) <br/> false |
 |||
@@ -84,7 +84,7 @@ Determina si el motor antivirus se ejecuta en modo pasivo o no. En modo pasivo:
 
 |||
 |:---|:---|
-| **Clave** | passiveMode |
+| **Key** | passiveMode |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | false (predeterminado) <br/> true |
 | **Comments** | Disponible en Defender para endpoint versión 100.67.60 o posterior. |
@@ -96,7 +96,7 @@ Especifica la directiva de combinación para exclusiones. Puede ser una combinac
 
 |||
 |:---|:---|
-| **Clave** | exclusionsMergePolicy |
+| **Key** | exclusionsMergePolicy |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | merge (valor predeterminado) <br/> admin_only |
 | **Comments** | Disponible en Defender para endpoint versión 100.83.73 o posterior. |
@@ -108,7 +108,7 @@ Entidades que se han excluido del examen. Las exclusiones se pueden especificar 
 
 |||
 |:---|:---|
-| **Clave** | exclusiones |
+| **Key** | exclusiones |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 |||
@@ -119,7 +119,7 @@ Especifica el tipo de contenido excluido del examen.
 
 |||
 |:---|:---|
-| **Clave** | $type |
+| **Key** | $type |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
 |||
@@ -130,7 +130,7 @@ Se usa para excluir contenido del examen por ruta de acceso de archivo completa.
 
 |||
 |:---|:---|
-| **Clave** | path |
+| **Key** | path |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | rutas de acceso válidas |
 | **Comments** | Aplicable solo *si $type* *se excluyePath* |
@@ -142,7 +142,7 @@ Indica si la *propiedad path* hace referencia a un archivo o directorio.
 
 |||
 |:---|:---|
-| **Clave** | isDirectory |
+| **Key** | isDirectory |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | false (predeterminado) <br/> true |
 | **Comments** | Aplicable solo *si $type* *se excluyePath* |
@@ -154,7 +154,7 @@ Se usa para excluir contenido del examen por extensión de archivo.
 
 |||
 |:---|:---|
-| **Clave** | extensión |
+| **Key** | extensión |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | extensiones de archivo válidas |
 | **Comments** | Aplicable solo *si $type* *se excluyeFileExtension* |
@@ -166,7 +166,7 @@ Especifica un proceso para el que se excluye toda la actividad de archivo del ex
 
 |||
 |:---|:---|
-| **Clave** | name |
+| **Key** | name |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | cualquier cadena |
 | **Comments** | Aplicable solo *si $type* *se excluyeFileName* |
@@ -178,7 +178,7 @@ Lista de amenazas (identificadas por su nombre) que no están bloqueadas por el 
 
 |||
 |:---|:---|
-| **Clave** | allowedThreats |
+| **Key** | allowedThreats |
 | **Tipo de datos** | Matriz de cadenas |
 |||
 
@@ -188,7 +188,7 @@ Restringe las acciones que el usuario local de un dispositivo puede realizar cua
 
 |||
 |:---|:---|
-| **Clave** | disallowedThreatActions |
+| **Key** | disallowedThreatActions |
 | **Tipo de datos** | Matriz de cadenas |
 | **Posibles valores** | permitir (restringe a los usuarios permitir amenazas) <br/> restore (restringe a los usuarios la restauración de amenazas desde la cuarentena) |
 | **Comments** | Disponible en Defender para endpoint versión 100.83.73 o posterior. |
@@ -200,7 +200,7 @@ La *preferencia threatTypeSettings* en el motor antivirus se usa para controlar 
 
 |||
 |:---|:---|
-| **Clave** | threatTypeSettings |
+| **Key** | threatTypeSettings |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 |||
@@ -211,7 +211,7 @@ Tipo de amenaza para la que se configura el comportamiento.
 
 |||
 |:---|:---|
-| **Clave** | clave |
+| **Key** | clave |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | potentially_unwanted_application <br/> archive_bomb |
 |||
@@ -226,7 +226,7 @@ Acción que se debe realizar al encontrarse con una amenaza del tipo especificad
 
 |||
 |:---|:---|
-| **Clave** | valor |
+| **Key** | valor |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | auditoría (valor predeterminado) <br/> bloque <br/> off |
 |||
@@ -237,7 +237,7 @@ Especifica la directiva de combinación para la configuración del tipo de amena
 
 |||
 |:---|:---|
-| **Clave** | threatTypeSettingsMergePolicy |
+| **Key** | threatTypeSettingsMergePolicy |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | merge (valor predeterminado) <br/> admin_only |
 | **Comments** | Disponible en Defender para endpoint versión 100.83.73 o posterior. |
@@ -249,7 +249,7 @@ Especifica el número de días que los resultados se conservan en el historial d
 
 |||
 |:---|:---|
-| **Clave** | scanResultsRetentionDays |
+| **Key** | scanResultsRetentionDays |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | 90 (valor predeterminado). Los valores permitidos van de 1 día a 180 días. |
 | **Comments** | Disponible en Defender para endpoint versión 101.04.76 o posterior. |
@@ -261,7 +261,7 @@ Especifique el número máximo de entradas que se deben conservar en el historia
 
 |||
 |:---|:---|
-| **Clave** | scanHistoryMaximumItems |
+| **Key** | scanHistoryMaximumItems |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | 10000 (valor predeterminado). Los valores permitidos van de 5000 elementos a 15000 elementos. |
 | **Comments** | Disponible en Defender para endpoint versión 101.04.76 o posterior. |
@@ -273,7 +273,7 @@ La *entrada cloudService* en el perfil de configuración se usa para configurar 
 
 |||
 |:---|:---|
-| **Clave** | cloudService |
+| **Key** | cloudService |
 | **Tipo de datos** | Diccionario (preferencia anidada) |
 | **Comments** | Vea las secciones siguientes para obtener una descripción del contenido del diccionario. |
 |||
@@ -284,7 +284,7 @@ Determina si la protección entregada en la nube está habilitada en el disposit
 
 |||
 |:---|:---|
-| **Clave** | habilitado |
+| **Key** | habilitado |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | true (valor predeterminado) <br/> false |
 |||
@@ -295,7 +295,7 @@ Los datos de diagnóstico se usan para mantener Defender for Endpoint seguro y a
 
 |||
 |:---|:---|
-| **Clave** | diagnosticLevel |
+| **Key** | diagnosticLevel |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | opcional (predeterminado) <br/> necesario |
 |||
@@ -310,7 +310,7 @@ Determina si se envían muestras sospechosas (que probablemente contengan amenaz
 
 |||
 |:---|:---|
-| **Clave** | automaticSampleSubmissionConsent |
+| **Key** | automaticSampleSubmissionConsent |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | ninguno <br/> safe (valor predeterminado) <br/> all |
 |||
@@ -321,7 +321,7 @@ Determina si las actualizaciones de inteligencia de seguridad se instalan autom�
 
 |||
 |:---|:---|
-| **Clave** | automaticDefinitionUpdateEnabled |
+| **Key** | automaticDefinitionUpdateEnabled |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | true (valor predeterminado) <br/> false |
 |||

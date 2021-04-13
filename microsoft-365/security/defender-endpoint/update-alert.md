@@ -1,6 +1,6 @@
 ---
 title: ACTUALIZAR API de entidad de alerta
-description: Obtenga información sobre cómo actualizar una alerta de ATP de Microsoft Defender mediante esta API. Puede actualizar las propiedades status, determination, classification y assignedTo.
+description: Obtén información sobre cómo actualizar una alerta de Microsoft Defender para endpoint mediante esta API. Puede actualizar las propiedades status, determination, classification y assignedTo.
 keywords: apis, api de gráficos, api admitidas, get, alert, information, id
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7dd3ab3da34efa6cb954db2a596d7a1e48efedf1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 94be185bd30cd36f456a66d5ae30a4361abc0c48
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199314"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688254"
 ---
 # <a name="update-alert"></a>Actualizar alerta
 
@@ -70,7 +70,7 @@ PATCH /api/alerts/{id}
 
 Nombre | Tipo | Descripción
 :---|:---|:---
-Authorization | Cadena | Portador {token}. **Necesario**.
+Authorization | String | Portador {token}. **Necesario**.
 Content-Type | Cadena | application/json. **Necesario**.
 
 
@@ -81,10 +81,10 @@ En el cuerpo de la solicitud, proporcione los valores de los campos relevantes q
 
 Propiedad | Tipo | Descripción
 :---|:---|:---
-status | Cadena | Especifica el estado actual de la alerta. Los valores de propiedad son: 'New', 'InProgress' y 'Resolved'.
-assignedTo | Cadena | Propietario de la alerta
+status | String | Especifica el estado actual de la alerta. Los valores de propiedad son: 'New', 'InProgress' y 'Resolved'.
+assignedTo | String | Propietario de la alerta
 classification | String | Especifica la especificación de la alerta. Los valores de propiedad son: 'Unknown', 'FalsePositive', 'TruePositive'. 
-determinación | Cadena | Especifica la determinación de la alerta. Los valores de propiedad son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
+determinación | String | Especifica la determinación de la alerta. Los valores de propiedad son: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 comment | String | Comentario que se agregará a la alerta.
 
 ## <a name="response"></a>Respuesta

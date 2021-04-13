@@ -1,7 +1,7 @@
 ---
 title: Inventario de software en la administración de amenazas y vulnerabilidades
-description: La página de inventario de software para la administración de amenazas y vulnerabilidades de ATP de Microsoft Defender muestra cuántas debilidades y vulnerabilidades se han detectado en el software.
-keywords: administración de amenazas y vulnerabilidades, atp de microsoft defender, inventario de software atp de microsoft defender, mdatp threat & vulnerability management, mdatp threat & vulnerability management software inventory, mdatp tvm software inventory, tvm software inventory
+description: La página de inventario de software de Microsoft Defender para la administración de amenazas y vulnerabilidades de Endpoint muestra cuántas debilidades y vulnerabilidades se han detectado en el software.
+keywords: administración de amenazas y vulnerabilidades, microsoft defender para endpoint, microsoft defender para el inventario de software de punto de conexión, mdatp threat & vulnerability management, mdatp threat & vulnerability management software inventory, mdatp tvm software inventory, tvm software inventory
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 02d7810ef27b495e69fd6d8ca72baf40df13ee93
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a4ceb7cc4d39dbddbb4cd325491c16f4503bfc52
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500450"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689382"
 ---
 # <a name="software-inventory---threat-and-vulnerability-management"></a>Inventario de software: administración de amenazas y vulnerabilidades
 

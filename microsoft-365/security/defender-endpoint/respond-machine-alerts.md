@@ -1,5 +1,5 @@
 ---
-title: Realizar acciones de respuesta en un dispositivo en ATP de Microsoft Defender
+title: Realizar acciones de respuesta en un dispositivo en Microsoft Defender para endpoint
 description: Realiza acciones de respuesta en un dispositivo como aislar dispositivos, recopilar un paquete de investigación, administrar etiquetas, ejecutar análisis antivirus y restringir la ejecución de aplicaciones.
 keywords: responder, aislar, aislar el dispositivo, recopilar paquete de investigación, centro de acción, restringir, administrar etiquetas, av scan, restringir la aplicación
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f918d1673ef8a83c54f365dd06406c33bcc4d983
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f538bd33ad2f595aa9b3dafa8a13a5682161b52f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51069089"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688326"
 ---
 # <a name="take-response-actions-on-a-device"></a>Realizar acciones de respuesta en un dispositivo
 
@@ -41,7 +41,7 @@ Las acciones de respuesta se ejecutan en la parte superior de una página de dis
 - Iniciar sesión de respuesta activa
 - Recopilar paquete de investigación
 - Ejecutar examen antivirus
-- Restringir la ejecución de aplicaciones
+- Restringir ejecución de aplicación
 - Aislar dispositivo
 - Consultar a un experto en amenazas
 - Centro de actividades
@@ -136,7 +136,7 @@ El Centro de acciones mostrará la información del examen y la escala de tiempo
 >Al desencadenar un examen con la acción de respuesta de Defender for Endpoint, el valor "ScanAvgCPULoadFactor" del antivirus de Microsoft Defender sigue aplicando y limitando el impacto de la CPU del examen.<br> Si ScanAvgCPULoadFactor no está configurado, el valor predeterminado es un límite del 50 % de carga máxima de CPU durante un examen.<br>
 >Para obtener más información, [vea configure-advanced-scan-types-microsoft-defender-antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
 
-## <a name="restrict-app-execution"></a>Restringir la ejecución de aplicaciones
+## <a name="restrict-app-execution"></a>Restringir ejecución de aplicación
 
 Además de contener un ataque al detener procesos malintencionados, también puedes bloquear un dispositivo e impedir que se ejecuten los intentos posteriores de programas potencialmente malintencionados.
 
@@ -193,7 +193,7 @@ Puedes consultar a un experto en amenazas de Microsoft para obtener más informa
 Consulte [Consulte a un experto en amenazas de Microsoft](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) para obtener más información.
 
 
-## <a name="check-activity-details-in-action-center"></a>Comprobar los detalles de la actividad en el Centro de actividades
+## <a name="check-activity-details-in-action-center"></a>Comprobar los detalles de actividad en el Centro de actividades
 
 El **Centro de acciones** proporciona información sobre las acciones realizadas en un dispositivo o archivo. Podrás ver los siguientes detalles:
 
