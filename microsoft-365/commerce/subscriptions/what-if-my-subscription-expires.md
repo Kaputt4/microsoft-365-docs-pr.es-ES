@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Obtenga información sobre lo que sucede con sus datos cuando su suscripción de Microsoft 365 para empresas expira, está deshabilitada o la cancela.
-ms.openlocfilehash: ee83e237d17dc2de60b08b8d4dbdc46c98fc8251
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 8f853000ebd20ab8f6625df9f773bbb182bdb7fd
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615404"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644661"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?
 
@@ -66,8 +66,11 @@ Esto es lo que pasará con usted y sus usuarios si cancela una suscripción.
 Para obtener información sobre cómo cancelar la suscripción, vea [Cancelar su suscripción](cancel-your-subscription.md).
   
 > [!IMPORTANT]
-> Si desea que se eliminen los datos de su suscripción antes de que se termine la fase típica de Deshabilitada, puede [cerrar su cuenta](../close-your-account.md).
+> Si quiere que se eliminen los datos de su suscripción antes de que se termine la fase típica de Deshabilitada, puede [cerrar su cuenta](../close-your-account.md).
   
+> [!NOTE]
+> Si elimina explícitamente una suscripción, omite las fases Expirada y Deshabilitada, y los datos y el contenido de SharePoint Online, incluido OneDrive, se eliminan inmediatamente.
+
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>¿Cuáles son mis opciones si mi suscripción está a punto de expirar?
 
 Mientras una suscripción esté activa, usted y sus usuarios finales tendrán acceso normal a sus datos, servicios como el correo electrónico y OneDrive para la Empresa, y otras aplicaciones de Office. Como administrador, recibirá una serie de notificaciones a través del correo electrónico en el centro de administración cuando se aproxime la fecha de expiración de su suscripción.

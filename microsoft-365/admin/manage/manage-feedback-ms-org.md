@@ -1,5 +1,5 @@
 ---
-title: Administrar los comentarios de Microsoft para su organización
+title: Administrar comentarios de Microsoft para la organización
 f1.keywords:
 - NOCSH
 ms.author: Kwekua
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Administrar comentarios que los usuarios pueden enviar a Microsoft acerca de los productos de Microsoft.
-ms.openlocfilehash: c92adec1689d6f0c46b03ae4f46c567f054b6457
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 490081ace32203d015ee8cf3561ccf0ae978bace
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650021"
+ms.locfileid: "51657012"
 ---
-# <a name="manage-microsoft-feedback-for-your-organization"></a>Administrar los comentarios de Microsoft para su organización
+# <a name="manage-microsoft-feedback-for-your-organization"></a>Administrar comentarios de Microsoft para la organización
 
-Como administrador de una organización de Microsoft 365, ahora hay varias directivas que le ayudarán a administrar la recopilación de comentarios y la experiencia de participación del cliente de los usuarios al usar aplicaciones de Microsoft 365. Puede crear y usar grupos de Azure Active Directory existentes en su organización para cada una de estas directivas. Con estas policías, puede controlar cómo los distintos departamentos de su organización pueden enviar comentarios a Microsoft. Microsoft revisa todos los comentarios enviados por los clientes y usa estos comentarios para mejorar el producto. Mantener activadas las **experiencias** de comentarios te permite ver lo que los usuarios están diciendo acerca de los productos de Microsoft que usan. Los comentarios que recopilamos de los usuarios pronto estarán disponibles en el Centro de administración de Microsoft 365".
+Como administrador de una organización de Microsoft 365, ahora hay varias directivas que le ayudarán a administrar la recopilación de comentarios y la experiencia de participación del cliente de los usuarios al usar aplicaciones de Microsoft 365. Puede crear y usar grupos de Azure Active Directory existentes en su organización para cada una de estas directivas. Con estas policías, puede controlar cómo los distintos departamentos de su organización pueden enviar comentarios a Microsoft. Microsoft revisa todos los comentarios enviados por los clientes y usa estos comentarios para mejorar el producto. Mantener activadas las **experiencias** de comentarios te permite ver lo que los usuarios están diciendo acerca de los productos de Microsoft que usan. Los comentarios que recopilamos de los usuarios pronto estarán disponibles en el Centro de administración de Microsoft 365.
 
 Para obtener más información sobre los tipos de comentarios y el modo en que Microsoft usa los comentarios de los usuarios, vea [Learn about Microsoft feedback for your organization](../misc/feedback-user-control.md).
 

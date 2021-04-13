@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo cancelar su suscripción de prueba o de pago a Microsoft 365 para empresas.
 ms.date: ''
-ms.openlocfilehash: 0d37a2459c89bf5931af26a91ed14e2898c1c8c4
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 2163462ae206871d66155331096337c29d6a87c2
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615392"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644649"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
@@ -47,6 +47,15 @@ Si ha agregado su propio nombre de dominio para usarlo con su suscripción, debe
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+2. Busque la suscripción que desea cancelar. Seleccione **Más acciones** (tres puntos) y luego seleccione **Cancelar suscripción**.
+3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione algún comentario.
+4. Seleccione **Guardar**.
+
+Su suscripción ahora aparecerá en estado de **Deshabilitada** y tendrá funcionalidad reducida hasta que se elimine. Para obtener más información acerca de lo que puede esperar cuando se cancela una suscripción de pago de Microsoft 365 para empresas, consulte [¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?](what-if-my-subscription-expires.md)
+
+> [!NOTE]
+> Si elimina explícitamente una suscripción, omite las fases Expirada y Deshabilitada, y los datos y el contenido de SharePoint Online, incluido OneDrive, se eliminan inmediatamente.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
