@@ -1,6 +1,6 @@
 ---
-title: Solucionar problemas de conectividad en la nube para Microsoft Defender para Endpoint para Mac
-description: En este tema se describe cómo solucionar problemas de conectividad en la nube para Microsoft Defender para Endpoint para Mac
+title: Solucionar problemas de conectividad en la nube para Microsoft Defender para endpoint en macOS
+description: En este tema se describe cómo solucionar problemas de conectividad en la nube para Microsoft Defender para endpoint en macOS
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,33 +18,33 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e522495fa86b5a71faa9f25cc863c29cc5d124c0
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: a8871274cabae0762cecc2ff513afe93c2d4811f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476718"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688506"
 ---
-# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-for-mac"></a><span data-ttu-id="0b93c-104">Solucionar problemas de conectividad en la nube para Microsoft Defender para Endpoint para Mac</span><span class="sxs-lookup"><span data-stu-id="0b93c-104">Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint for Mac</span></span>
+# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="50534-104">Solucionar problemas de conectividad en la nube para Microsoft Defender para endpoint en macOS</span><span class="sxs-lookup"><span data-stu-id="50534-104">Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="0b93c-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="0b93c-105">**Applies to:**</span></span>
-- [<span data-ttu-id="0b93c-106">Microsoft Defender para punto de conexión</span><span class="sxs-lookup"><span data-stu-id="0b93c-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="0b93c-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="0b93c-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="50534-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="50534-105">**Applies to:**</span></span>
+- [<span data-ttu-id="50534-106">Microsoft Defender para punto de conexión</span><span class="sxs-lookup"><span data-stu-id="50534-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="50534-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="50534-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-<span data-ttu-id="0b93c-108">**Plataforma** macOS</span><span class="sxs-lookup"><span data-stu-id="0b93c-108">**Platform** macOS</span></span>
+<span data-ttu-id="50534-108">**Plataforma** macOS</span><span class="sxs-lookup"><span data-stu-id="50534-108">**Platform** macOS</span></span>
 
-<span data-ttu-id="0b93c-109">En este tema se describe cómo solucionar problemas de conectividad en la nube para Microsoft Defender para Endpoint para Mac.</span><span class="sxs-lookup"><span data-stu-id="0b93c-109">This topic describes how to Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint for Mac.</span></span>
+<span data-ttu-id="50534-109">En este tema se describe cómo solucionar problemas de conectividad en la nube para Microsoft Defender para endpoint en macOS.</span><span class="sxs-lookup"><span data-stu-id="50534-109">This topic describes how to Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS.</span></span>
 
-## <a name="run-the-connectivity-test"></a><span data-ttu-id="0b93c-110">Ejecutar la prueba de conectividad</span><span class="sxs-lookup"><span data-stu-id="0b93c-110">Run the connectivity test</span></span>
-<span data-ttu-id="0b93c-111">Para probar si Defender para Endpoint para Mac puede comunicarse con la nube con la configuración de red actual, ejecute una prueba de conectividad desde la línea de comandos:</span><span class="sxs-lookup"><span data-stu-id="0b93c-111">To test if Defender for Endpoint for Mac can communicate to the cloud with the current network settings, run a connectivity test from the command line:</span></span>
+## <a name="run-the-connectivity-test"></a><span data-ttu-id="50534-110">Ejecutar la prueba de conectividad</span><span class="sxs-lookup"><span data-stu-id="50534-110">Run the connectivity test</span></span>
+<span data-ttu-id="50534-111">Para probar si Defender para Endpoint para Mac puede comunicarse con la nube con la configuración de red actual, ejecute una prueba de conectividad desde la línea de comandos:</span><span class="sxs-lookup"><span data-stu-id="50534-111">To test if Defender for Endpoint for Mac can communicate to the cloud with the current network settings, run a connectivity test from the command line:</span></span>
 
 ```Bash
 mdatp connectivity test
 ```
 
-<span data-ttu-id="0b93c-112">salida esperada:</span><span class="sxs-lookup"><span data-stu-id="0b93c-112">expected output:</span></span>
+<span data-ttu-id="50534-112">salida esperada:</span><span class="sxs-lookup"><span data-stu-id="50534-112">expected output:</span></span>
 ```Bash
 Testing connection with https://cdn.x.cp.wd.microsoft.com/ping ... [OK]
 Testing connection with https://eu-cdn.x.cp.wd.microsoft.com/ping ... [OK]
@@ -62,26 +62,26 @@ Testing connection with https://uk-v20.events.data.microsoft.com/ping ... [OK]
 Testing connection with https://v20.events.data.microsoft.com/ping ... [OK]
 ```
 
-<span data-ttu-id="0b93c-113">Si se produce un error en la prueba de conectividad, compruebe si el dispositivo tiene acceso a Internet y si alguno de los puntos de conexión [requeridos](microsoft-defender-endpoint-mac.md#network-connections) por el producto está bloqueado por un proxy o firewall.</span><span class="sxs-lookup"><span data-stu-id="0b93c-113">If the connectivity test fails, check if the device has Internet access and if [any of the endpoints required by the product](microsoft-defender-endpoint-mac.md#network-connections) are blocked by a proxy or firewall.</span></span>
+<span data-ttu-id="50534-113">Si se produce un error en la prueba de conectividad, compruebe si el dispositivo tiene acceso a Internet y si alguno de los puntos de conexión [requeridos](microsoft-defender-endpoint-mac.md#network-connections) por el producto está bloqueado por un proxy o firewall.</span><span class="sxs-lookup"><span data-stu-id="50534-113">If the connectivity test fails, check if the device has Internet access and if [any of the endpoints required by the product](microsoft-defender-endpoint-mac.md#network-connections) are blocked by a proxy or firewall.</span></span>
 
-<span data-ttu-id="0b93c-114">Los errores con error de curva 35 o 60 indican el rechazo de anclado de certificado, lo que indica un posible problema con la inspección SSL o HTTPS.</span><span class="sxs-lookup"><span data-stu-id="0b93c-114">Failures with curl error 35 or 60 indicate certificate pinning rejection, which indicates a potential issue with SSL or HTTPS inspection.</span></span> <span data-ttu-id="0b93c-115">Vea las instrucciones siguientes sobre la configuración de inspección SSL.</span><span class="sxs-lookup"><span data-stu-id="0b93c-115">See instructions below regarding SSL inspection configuration.</span></span>
+<span data-ttu-id="50534-114">Los errores con error de curva 35 o 60 indican el rechazo de anclado de certificado, lo que indica un posible problema con la inspección SSL o HTTPS.</span><span class="sxs-lookup"><span data-stu-id="50534-114">Failures with curl error 35 or 60 indicate certificate pinning rejection, which indicates a potential issue with SSL or HTTPS inspection.</span></span> <span data-ttu-id="50534-115">Vea las instrucciones siguientes sobre la configuración de inspección SSL.</span><span class="sxs-lookup"><span data-stu-id="50534-115">See instructions below regarding SSL inspection configuration.</span></span>
 
-## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-proxy-autoconfig-pac-or-with-web-proxy-autodiscovery-protocol-wpad"></a><span data-ttu-id="0b93c-116">Pasos de solución de problemas para entornos sin proxy o con proxy autoconfig (PAC) o con protocolo de detección automática de proxy web (WPAD)</span><span class="sxs-lookup"><span data-stu-id="0b93c-116">Troubleshooting steps for environments without proxy or with Proxy autoconfig (PAC) or with Web Proxy Autodiscovery Protocol (WPAD)</span></span>
-<span data-ttu-id="0b93c-117">Use el siguiente procedimiento para probar que una conexión no está bloqueada en un entorno sin un proxy o con proxy autoconfig (PAC) o con el Protocolo de detección automática de proxy web (WPAD).</span><span class="sxs-lookup"><span data-stu-id="0b93c-117">Use the following procedure to test that a connection is not blocked in an environment without a proxy or with Proxy autoconfig (PAC) or with Web Proxy Autodiscovery Protocol (WPAD).</span></span>
+## <a name="troubleshooting-steps-for-environments-without-proxy-or-with-proxy-autoconfig-pac-or-with-web-proxy-autodiscovery-protocol-wpad"></a><span data-ttu-id="50534-116">Pasos de solución de problemas para entornos sin proxy o con proxy autoconfig (PAC) o con protocolo de detección automática de proxy web (WPAD)</span><span class="sxs-lookup"><span data-stu-id="50534-116">Troubleshooting steps for environments without proxy or with Proxy autoconfig (PAC) or with Web Proxy Autodiscovery Protocol (WPAD)</span></span>
+<span data-ttu-id="50534-117">Use el siguiente procedimiento para probar que una conexión no está bloqueada en un entorno sin un proxy o con proxy autoconfig (PAC) o con el Protocolo de detección automática de proxy web (WPAD).</span><span class="sxs-lookup"><span data-stu-id="50534-117">Use the following procedure to test that a connection is not blocked in an environment without a proxy or with Proxy autoconfig (PAC) or with Web Proxy Autodiscovery Protocol (WPAD).</span></span>
 
-<span data-ttu-id="0b93c-118">Si un proxy o firewall bloquea el tráfico anónimo, asegúrese de que el tráfico anónimo está permitido en las direcciones URL enumeradas anteriormente.</span><span class="sxs-lookup"><span data-stu-id="0b93c-118">If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs.</span></span>
+<span data-ttu-id="50534-118">Si un proxy o firewall bloquea el tráfico anónimo, asegúrese de que el tráfico anónimo está permitido en las direcciones URL enumeradas anteriormente.</span><span class="sxs-lookup"><span data-stu-id="50534-118">If a proxy or firewall is blocking anonymous traffic, make sure that anonymous traffic is permitted in the previously listed URLs.</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="0b93c-119">No se admiten servidores proxy autenticados.</span><span class="sxs-lookup"><span data-stu-id="0b93c-119">Authenticated proxies are not supported.</span></span> <span data-ttu-id="0b93c-120">Asegúrese de que solo se usa PAC, WPAD o un proxy estático.</span><span class="sxs-lookup"><span data-stu-id="0b93c-120">Ensure that only PAC, WPAD, or a static proxy is being used.</span></span> <span data-ttu-id="0b93c-121">Los servidores proxy de inspección e interceptación de SSL tampoco se admiten por motivos de seguridad.</span><span class="sxs-lookup"><span data-stu-id="0b93c-121">SSL inspection and intercepting proxies are also not supported for security reasons.</span></span> <span data-ttu-id="0b93c-122">Configure una excepción para la inspección SSL y el servidor proxy para pasar directamente los datos de Microsoft Defender para Endpoint para Mac a las direcciones URL relevantes sin interceptación.</span><span class="sxs-lookup"><span data-stu-id="0b93c-122">Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender for Endpoint for Mac to the relevant URLs without interception.</span></span> <span data-ttu-id="0b93c-123">Agregar el certificado de interceptación al almacén global no permitirá la interceptación.</span><span class="sxs-lookup"><span data-stu-id="0b93c-123">Adding your interception certificate to the global store will not allow for interception.</span></span>
-<span data-ttu-id="0b93c-124">Para probar que una conexión no está bloqueada: en un explorador como Microsoft Edge para Mac o Safari abrir https://x.cp.wd.microsoft.com/api/report y https://cdn.x.cp.wd.microsoft.com/ping .</span><span class="sxs-lookup"><span data-stu-id="0b93c-124">To test that a connection is not blocked: In a browser such as Microsoft Edge for Mac or Safari open https://x.cp.wd.microsoft.com/api/report and https://cdn.x.cp.wd.microsoft.com/ping.</span></span>
+> <span data-ttu-id="50534-119">No se admiten servidores proxy autenticados.</span><span class="sxs-lookup"><span data-stu-id="50534-119">Authenticated proxies are not supported.</span></span> <span data-ttu-id="50534-120">Asegúrese de que solo se usa PAC, WPAD o un proxy estático.</span><span class="sxs-lookup"><span data-stu-id="50534-120">Ensure that only PAC, WPAD, or a static proxy is being used.</span></span> <span data-ttu-id="50534-121">Los servidores proxy de inspección e interceptación de SSL tampoco se admiten por motivos de seguridad.</span><span class="sxs-lookup"><span data-stu-id="50534-121">SSL inspection and intercepting proxies are also not supported for security reasons.</span></span> <span data-ttu-id="50534-122">Configure una excepción para que la inspección SSL y el servidor proxy pasen directamente los datos de Microsoft Defender para endpoint en macOS a las direcciones URL relevantes sin interceptación.</span><span class="sxs-lookup"><span data-stu-id="50534-122">Configure an exception for SSL inspection and your proxy server to directly pass through data from Microsoft Defender for Endpoint on macOS to the relevant URLs without interception.</span></span> <span data-ttu-id="50534-123">Agregar el certificado de interceptación al almacén global no permitirá la interceptación.</span><span class="sxs-lookup"><span data-stu-id="50534-123">Adding your interception certificate to the global store will not allow for interception.</span></span>
+<span data-ttu-id="50534-124">Para probar que una conexión no está bloqueada: en un explorador como Microsoft Edge para Mac o Safari abrir https://x.cp.wd.microsoft.com/api/report y https://cdn.x.cp.wd.microsoft.com/ping .</span><span class="sxs-lookup"><span data-stu-id="50534-124">To test that a connection is not blocked: In a browser such as Microsoft Edge for Mac or Safari open https://x.cp.wd.microsoft.com/api/report and https://cdn.x.cp.wd.microsoft.com/ping.</span></span>
 
-<span data-ttu-id="0b93c-125">Opcionalmente, en Terminal, ejecute el siguiente comando:</span><span class="sxs-lookup"><span data-stu-id="0b93c-125">Optionally, in Terminal, run the following command:</span></span>
+<span data-ttu-id="50534-125">Opcionalmente, en Terminal, ejecute el siguiente comando:</span><span class="sxs-lookup"><span data-stu-id="50534-125">Optionally, in Terminal, run the following command:</span></span>
 
 ```Bash
 curl -w ' %{url_effective}\n' 'https://x.cp.wd.microsoft.com/api/report' 'https://cdn.x.cp.wd.microsoft.com/ping' 
 ```
 
-<span data-ttu-id="0b93c-126">El resultado de este comando debe ser similar a:</span><span class="sxs-lookup"><span data-stu-id="0b93c-126">The output from this command should be similar to:</span></span>
+<span data-ttu-id="50534-126">El resultado de este comando debe ser similar a:</span><span class="sxs-lookup"><span data-stu-id="50534-126">The output from this command should be similar to:</span></span>
 ```bash
 OK https://x.cp.wd.microsoft.com/api/report
 OK https://cdn.x.cp.wd.microsoft.com/ping
