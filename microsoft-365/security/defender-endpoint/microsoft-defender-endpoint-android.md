@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32c42691b3a2b43f9740da26084bf45af0ee80f5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 8311cb703bc5232e1421d19892fec9cdbc94b052
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687786"
+ms.locfileid: "51698201"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender para endpoint en Android
 
@@ -36,10 +36,10 @@ ms.locfileid: "51687786"
 
 > ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-En este tema se describe cómo instalar, configurar, actualizar y usar Defender para Endpoint para Android.
+En este tema se describe cómo instalar, configurar, actualizar y usar Defender para Endpoint en Android.
 
 > [!CAUTION]
-> Es probable que la ejecución de otros productos de protección de puntos de conexión de terceros junto con Defender para Endpoint para Android cause problemas de rendimiento y errores impredecibles del sistema.
+> Es probable que la ejecución de otros productos de protección de puntos de conexión de terceros junto con Defender para Endpoint en Android cause problemas de rendimiento y errores impredecibles del sistema.
 
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-android"></a>Cómo instalar Microsoft Defender para Endpoint en Android

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4aab7f12b250c1415ad65a9e706edf6b68050b2f
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 4a91fa3c8ff55f46619c7b49eaf973ad94f60bfe
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222664"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698197"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Características de vista previa de Microsoft Defender para puntos de conexión
 
@@ -61,6 +61,12 @@ Active la configuración de la experiencia de la versión preliminar para estar 
 ## <a name="preview-features"></a>Versión preliminar de las características
 
 En la versión preliminar se incluyen las siguientes características:
+
+- [Detección de dispositivos](device-discovery.md) <br> Le ayuda a encontrar dispositivos no administrados conectados a la red corporativa sin necesidad de dispositivos adicionales o cambios de proceso engorrosos. Con dispositivos incorporados, puede encontrar dispositivos no administrados en la red y evaluar vulnerabilidades y riesgos. A continuación, puede incorporar dispositivos detectados para reducir los riesgos asociados con tener puntos de conexión no administrados en la red.
+
+   > [!IMPORTANT]
+   > La detección estándar será el modo predeterminado para todos los clientes de vista previa a partir del 10 de mayo de 2021. Puede optar por conservar el modo básico a través de la página de configuración. 
+
 
 - [Filtrado de contenido web](web-content-filtering.md) <br> El filtrado de contenido web forma parte de las funciones de protección web en Microsoft Defender para endpoint. Permite a la organización realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido. Muchos de estos sitios web, aunque no son malintencionados, pueden ser problemáticos debido a las normativas de cumplimiento, el uso del ancho de banda u otras preocupaciones.
 

@@ -35,6 +35,6 @@
 |TO-DO|Planeado|Planeado|Planeado|N/D|Planeado|
 |VISIO|N/D|✔|N/D|Planeado|N/D|
 |PIZARRA|N/D|Planeado|N/D|N/D|Planeado|
-|WORD|✔|Planeado|Planeado|Planeado|Planeado|
+|WORD|✔|Planeado|Planeado|Planeado|✔|
 |WORKPLACE ANALYTICS|N/D|N/D|N/D|N/D|N/D|
 |YAMMER|Planeado|Planeado|Planeado|Planeado|N/D|

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ad31e385ed1a3c32a261286b91912c7b2562f87
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: c5e6edb40254ab905ef5ef3ddef9bf8bf54fc54b
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650295"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698273"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -228,6 +228,10 @@ Al habilitar la integración de Intune, Intune creará automáticamente una dire
 
 > [!NOTE]
 > La directiva de CA clásica creada por Intune es distinta de las directivas modernas de acceso [condicional,](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/)que se usan para configurar puntos de conexión.
+
+
+## <a name="device-discovery"></a>Detección de dispositivos
+Le ayuda a encontrar dispositivos no administrados conectados a la red corporativa sin necesidad de dispositivos adicionales o cambios de proceso engorrosos. Con dispositivos incorporados, puede encontrar dispositivos no administrados en la red y evaluar vulnerabilidades y riesgos. Para obtener más información, consulta [Detección de dispositivos](device-discovery.md).
 
 ## <a name="preview-features"></a>Versión preliminar de las características
 
