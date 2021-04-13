@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c94c6839c17b3bbb432cef12fe58723d0cc2ecff
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 6cfd2953e752ed9c96f7f16a3ec7ea1fd8862ab2
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587244"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689742"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-ios"></a>Implementar Microsoft Defender para endpoint para iOS
+# <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Implementar Microsoft Defender para endpoint en iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -91,7 +91,7 @@ Implementar Defender para endpoint para iOS a través del Portal de empresa de I
 
 ## <a name="configure-microsoft-defender-for-endpoint-for-supervised-mode"></a>Configurar Microsoft Defender para el punto de conexión para el modo supervisado
 
-La aplicación Microsoft Defender para endpoint para iOS tiene capacidad especializada en dispositivos iOS/iPadOS supervisados, dadas las mayores capacidades de administración que proporciona la plataforma en estos tipos de dispositivos. Para aprovechar estas capacidades, la aplicación Defender for Endpoint debe saber si un dispositivo está en modo supervisado.
+La aplicación Microsoft Defender para endpoint en iOS tiene capacidad especializada en dispositivos iOS/iPadOS supervisados, dadas las capacidades de administración mejoradas que proporciona la plataforma en estos tipos de dispositivos. Para aprovechar estas capacidades, la aplicación Defender for Endpoint debe saber si un dispositivo está en modo supervisado.
 
 ### <a name="configure-supervised-mode-via-intune"></a>Configurar el modo supervisado a través de Intune
 

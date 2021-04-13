@@ -1,6 +1,6 @@
 ---
-title: Solucionar problemas de incorporación de ATP de Microsoft Defender
-description: Solucionar problemas que pueden surgir durante la incorporación de dispositivos o al servicio ATP de Microsoft Defender.
+title: Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender
+description: Solucionar problemas que pueden surgir durante la incorporación de dispositivos o al servicio de Microsoft Defender para puntos de conexión.
 keywords: solucionar problemas de incorporación, incorporación, visor de eventos, recopilación de datos y compilaciones de vista previa, datos de sensor y diagnósticos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 3b2c944cd7fc9d629b47947db9d6e8856729e0d7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4599741f501e9b55bc73e0eb8def9208bc988957
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074064"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689670"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender
 
@@ -167,7 +167,7 @@ Si las herramientas de implementación usadas no indican un error en el proceso 
 
 6. Los eventos que pueden indicar problemas aparecerán en el **panel** Operativo. Puede intentar solucionarlos en función de las soluciones de la tabla siguiente:
 
-Identificador de evento | Mensaje | Pasos de resolución
+Identificador de evento | Message | Pasos de resolución
 :---:|:---|:---
  `5` | Error al conectarse al servidor en la variable Microsoft Defender para el servicio de _punto de conexión_ | [Asegúrese de que el dispositivo tiene acceso a Internet.](#ensure-the-device-has-an-internet-connection)
  `6` | El servicio de Microsoft Defender para puntos de conexión no está incorporado y no se encontraron parámetros de incorporación. Código de error: _variable_ | [Vuelva a ejecutar el script de incorporación](configure-endpoints-script.md).
@@ -455,6 +455,6 @@ Los pasos siguientes proporcionan instrucciones para el siguiente escenario:
 
 ## <a name="related-topics"></a>Temas relacionados
 
-- [Solucionar problemas de Microsoft Defender para el extremo](troubleshoot-mdatp.md)
+- [Solucionar problemas de Microsoft Defender para punto de conexión](troubleshoot-mdatp.md)
 - [Dispositivos integrados](onboard-configure.md)
 - [Configurar el proxy de dispositivo y la configuración de conectividad a Internet](configure-proxy-internet.md)

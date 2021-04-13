@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 36db18ba16bb51f3be0cbaba7d4ca4d27195e85d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6c1d6ae5d4635186bf0a1cbb55c7f906e8584f01
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187666"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689694"
 ---
-# <a name="set-up-microsoft-defender-for-endpoint-for-macos-device-groups-in-jamf-pro"></a>Configurar Microsoft Defender para endpoint para grupos de dispositivos macOS en Jamf Pro
+# <a name="set-up-microsoft-defender-for-endpoint-on-macos-device-groups-in-jamf-pro"></a>Configurar Microsoft Defender para endpoint en grupos de dispositivos macOS en Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -52,4 +52,4 @@ Configure los grupos de dispositivos de forma similar a la organización de dire
     ![Imagen de Jamf Pro3](images/contoso-machine-group.png)
 
 ## <a name="next-step"></a>Paso siguiente
-- [Configurar Microsoft Defender para endpoint para directivas de macOS en Jamf Pro](mac-jamfpro-policies.md)
+- [Configurar Microsoft Defender para endpoint en directivas de macOS en Jamf Pro](mac-jamfpro-policies.md)

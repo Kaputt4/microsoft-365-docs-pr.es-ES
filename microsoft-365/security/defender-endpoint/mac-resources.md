@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 37d31fe93a849871e7da92fff521b6a75beac531
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 71ebe48fdbb8f9995ef2f3429cb8a824ed76f244
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187642"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689646"
 ---
-# <a name="resources-for-microsoft-defender-for-endpoint-for-mac"></a>Recursos para Microsoft Defender para Endpoint para Mac
+# <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Recursos para Microsoft Defender para endpoint en macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -80,7 +80,7 @@ El registro detallado se guardará en `/Library/Logs/Microsoft/mdatp/install.log
 
 ## <a name="uninstalling"></a>Desinstalación
 
-Hay varias maneras de desinstalar Microsoft Defender para Endpoint para Mac. Tenga en cuenta que aunque la desinstalación administrada centralmente está disponible en JAMF, todavía no está disponible para Microsoft Intune.
+Hay varias maneras de desinstalar Microsoft Defender para Endpoint en macOS. Tenga en cuenta que aunque la desinstalación administrada centralmente está disponible en JAMF, todavía no está disponible para Microsoft Intune.
 
 ### <a name="interactive-uninstallation"></a>Desinstalación interactiva
 
@@ -108,8 +108,8 @@ Las tareas importantes, como controlar la configuración del producto y desencad
 |Configuración|Desactivar la protección de LA PUA                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
 |Configuración|Activar el modo de auditoría para la protección de PUA      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
 |Configuración|Activar/desactivar passiveMode                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
-|Diagnostics  |Cambiar el nivel de registro                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
-|Diagnostics  |Generar registros de diagnóstico                   |`mdatp diagnostic create --path [directory]`                                      |
+|Diagnóstico  |Cambiar el nivel de registro                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
+|Diagnóstico  |Generar registros de diagnóstico                   |`mdatp diagnostic create --path [directory]`                                      |
 |Salud       |Comprobar el estado del producto                 |`mdatp health`                                                                    |
 |Salud       |Buscar un atributo de producto spefic       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
 |Protection   |Examinar una ruta de acceso                                |`mdatp scan custom --path [path] [--ignore-exclusions]`                           |
@@ -143,7 +143,7 @@ Para habilitar la autocompleción en zsh:
    echo "autoload -Uz compinit && compinit" >> ~/.zshrc
    ```
 
-- Ejecute los siguientes comandos para habilitar la autocompleción para Microsoft Defender para Endpoint para Mac y reiniciar la sesión de Terminal:
+- Ejecute los siguientes comandos para habilitar la autocompleción para Microsoft Defender para Endpoint en macOS y reinicie la sesión de Terminal:
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions

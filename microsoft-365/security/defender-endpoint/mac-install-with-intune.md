@@ -1,6 +1,6 @@
 ---
-title: Implementación basada en Intune para Microsoft Defender para Endpoint para Mac
-description: Instale Microsoft Defender para Endpoint para Mac con Microsoft Intune.
+title: Implementación basada en Intune para Microsoft Defender para endpoint en macOS
+description: Instale Microsoft Defender para Endpoint en macOS con Microsoft Intune.
 keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,27 +18,27 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bd74f3a487de4febecb2086cb126c50b8432c342
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 7486bde0886506a5966a95cdb0b85fc009858801
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379632"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689754"
 ---
-# <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>Implementación basada en Intune para Microsoft Defender para Endpoint para Mac
+# <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación basada en Intune para Microsoft Defender para endpoint en macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 > [!NOTE]
 > En esta documentación se explica el método heredado para implementar y configurar Microsoft Defender para Endpoint en dispositivos macOS. La experiencia nativa ya está disponible en la consola de MEM. La versión de la interfaz de usuario nativa en la consola de MEM proporciona a los administradores una forma mucho más sencilla de configurar e implementar la aplicación y enviarla a dispositivos macOS. <br> <br>
->La entrada de blog [MEM simplifica la implementación de Microsoft Defender para endpoint para macOS](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/microsoft-endpoint-manager-simplifies-deployment-of-microsoft/ba-p/1322995) explica las nuevas características. Para configurar la aplicación, ve a [Configuración de Microsoft Defender para Endpoint para Mac en Microsoft InTune](https://docs.microsoft.com/mem/intune/protect/antivirus-microsoft-defender-settings-macos). Para implementar la aplicación, vaya [a Agregar Microsoft Defender para endpoint a dispositivos macOS con Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos).
+>La entrada de blog [MEM simplifica la implementación de Microsoft Defender para endpoint para macOS](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/microsoft-endpoint-manager-simplifies-deployment-of-microsoft/ba-p/1322995) explica las nuevas características. Para configurar la aplicación, ve a [Configuración de Microsoft Defender para endpoint en macOS en Microsoft InTune](https://docs.microsoft.com/mem/intune/protect/antivirus-microsoft-defender-settings-macos). Para implementar la aplicación, vaya [a Agregar Microsoft Defender para endpoint a dispositivos macOS con Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-advanced-threat-protection-macos).
 
 **Se aplica a:**
 
-- [Microsoft Defender para punto de conexión para Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender para endpoint en macOS](microsoft-defender-endpoint-mac.md)
 
-En este tema se describe cómo implementar Microsoft Defender para Endpoint para Mac a través de Intune. Una implementación correcta requiere la finalización de todos los pasos siguientes:
+En este tema se describe cómo implementar Microsoft Defender para Endpoint en macOS a través de Intune. Una implementación correcta requiere la finalización de todos los pasos siguientes:
 
 1. [Descargar paquetes de instalación e incorporación](#download-installation-and-onboarding-packages)
 1. [Configuración del dispositivo cliente](#client-device-setup)
@@ -48,7 +48,7 @@ En este tema se describe cómo implementar Microsoft Defender para Endpoint para
 
 ## <a name="prerequisites-and-system-requirements"></a>Requisitos previos y requisitos del sistema
 
-Antes de empezar, consulta la página principal de [Microsoft Defender para](microsoft-defender-endpoint-mac.md) Endpoint para Mac para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual.
+Antes de empezar, consulta la página principal de Microsoft Defender para Endpoint [en macOS](microsoft-defender-endpoint-mac.md) para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual.
 
 ## <a name="overview"></a>Información general
 
@@ -201,9 +201,9 @@ Para aprobar las extensiones del sistema:
    >
    > Este perfil de configuración concede acceso en disco completo a Microsoft Defender para endpoint. Si configuró anteriormente Microsoft Defender para Endpoint a través de Intune, se recomienda actualizar la implementación con este perfil de configuración.
 
-9. Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint para Mac inspecciona el tráfico de sockets e informa de esta información al portal del Centro de seguridad de Microsoft Defender. La siguiente directiva permite que la extensión de red realice esta funcionalidad. Descargue **netfilter.mobileconfig** desde nuestro repositorio de [GitHub,](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)guárdelo como netext.xml e impleméntelo con los mismos pasos que en las secciones anteriores. <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
+9. Como parte de las capacidades de detección y respuesta de puntos de conexión, Microsoft Defender para Endpoint en macOS inspecciona el tráfico de sockets e informa de esta información al portal del Centro de seguridad de Microsoft Defender. La siguiente directiva permite que la extensión de red realice esta funcionalidad. Descargue **netfilter.mobileconfig** desde nuestro repositorio de [GitHub,](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig)guárdelo como netext.xml e impleméntelo con los mismos pasos que en las secciones anteriores. <a name = "create-system-configuration-profiles-step-9" id = "create-system-configuration-profiles-step-9"></a>
 
-10. Para permitir que Microsoft Defender para Endpoint para Mac y Microsoft Auto Update muestren notificaciones en la interfaz de usuario en macOS 10.15 (Catalina), descargue desde nuestro repositorio `notif.mobileconfig` [de GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) e impórtelo como una carga personalizada. <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
+10. Para permitir que Microsoft Defender para endpoint en macOS y Microsoft Auto Update muestre notificaciones en la interfaz de usuario en macOS 10.15 (Catalina), descargue desde nuestro repositorio `notif.mobileconfig` [de GitHub](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) e impórtelo como una carga personalizada. <a name = "create-system-configuration-profiles-step-10" id = "create-system-configuration-profiles-step-10"></a>
 
 11. Seleccione **Administrar > asignaciones**.  En la **pestaña Incluir,** seleccione **Asignar a todos los usuarios & Todos los dispositivos**.
 
@@ -227,9 +227,9 @@ Una vez que los cambios de Intune se propaguen a los dispositivos inscritos, pue
 6. Establece *Omitir versión de la aplicación* en **Sí**. Otras opciones de configuración pueden ser cualquier valor arbitrario.
 
     > [!CAUTION]
-    > Establecer *Omitir versión de la aplicación* en **No** afecta a la capacidad de la aplicación para recibir actualizaciones a través de Microsoft AutoUpdate. Consulta [Implementar actualizaciones para Microsoft Defender para Endpoint para Mac](mac-updates.md) para obtener información adicional sobre cómo se actualiza el producto.
+    > Establecer *Omitir versión de la aplicación* en **No** afecta a la capacidad de la aplicación para recibir actualizaciones a través de Microsoft AutoUpdate. Consulte [Deploy updates for Microsoft Defender for Endpoint on macOS](mac-updates.md) para obtener información adicional sobre cómo se actualiza el producto.
     >
-    > Si la versión cargada por Intune es inferior a la versión del dispositivo, se instalará la versión inferior, lo que degradará eficazmente Microsoft Defender para Endpoint. Esto podría dar como resultado una aplicación que no funciona. Consulta [Implementar actualizaciones para Microsoft Defender para Endpoint para Mac](mac-updates.md) para obtener información adicional sobre cómo se actualiza el producto. Si implementaste Microsoft Defender para endpoint con *ignorar la* versión de la aplicación establecida en **No,** cámbiese a **Sí**. Si Microsoft Defender para endpoint aún no se puede instalar en un dispositivo cliente, desinstala Microsoft Defender para Endpoint e inserta la directiva actualizada.
+    > Si la versión cargada por Intune es inferior a la versión del dispositivo, se instalará la versión inferior, lo que degradará eficazmente Microsoft Defender para Endpoint. Esto podría dar como resultado una aplicación que no funciona. Consulte [Deploy updates for Microsoft Defender for Endpoint on macOS](mac-updates.md) para obtener información adicional sobre cómo se actualiza el producto. Si implementaste Microsoft Defender para endpoint con *ignorar la* versión de la aplicación establecida en **No,** cámbiese a **Sí**. Si Microsoft Defender para endpoint aún no se puede instalar en un dispositivo cliente, desinstala Microsoft Defender para Endpoint e inserta la directiva actualizada.
      
     > [!div class="mx-imgBorder"]
     > ![Visualización de la información de la aplicación en el complemento de aplicaciones](images/mdatp-8-intuneappinfo.png)
@@ -282,4 +282,4 @@ Para obtener más información sobre cómo encontrar el registro generado autom�
 
 ## <a name="uninstallation"></a>Desinstalación
 
-Consulta [Desinstalar para obtener](mac-resources.md#uninstalling) más información sobre cómo quitar Microsoft Defender para Endpoint para Mac de los dispositivos cliente.
+Consulta [Desinstalar para obtener](mac-resources.md#uninstalling) más información sobre cómo quitar Microsoft Defender para Endpoint en macOS de los dispositivos cliente.
