@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 726a85969dab715a1b6244f14d1bf0259cf301e8
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 4c44e2c73eabcb89c178235bc3ce6738d2322dfa
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163380"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768991"
 ---
-# <a name="contact-microsoft-defender-for-endpoint-support"></a>Póngase en contacto con Microsoft Defender para obtener soporte técnico de punto de conexión
+# <a name="contact-microsoft-defender-for-endpoint-support"></a>Ponerse en contacto con el soporte técnico de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -79,10 +79,10 @@ En caso de que los artículos sugeridos no sean suficientes, puede abrir una sol
 
 Para obtener información sobre cómo abrir vales de soporte técnico, póngase en contacto con el soporte técnico de Defender para endpoints. 
 
+> [!Note]
+> Si tiene un contrato de soporte técnico de permier con Microsoft, verá la etiqueta premier en el widget. Si no es así, póngase en contacto con el administrador de cuentas de Microsoft.
 
-
-
-### <a name="contact-support"></a>Ponerse en contacto con el soporte técnico
+### <a name="contact-support"></a>Contactar soporte
 Esta opción está disponible haciendo clic en el icono que parece un auricular. A continuación, recibirá la siguiente página para enviar el caso de soporte técnico:
 
 ![Imagen del widget abrir una solicitud de servicio](images/Support4.png)

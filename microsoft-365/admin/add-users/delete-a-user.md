@@ -25,7 +25,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755565"
+ms.locfileid: "51759923"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Elimine un usuario de su organización
   
@@ -54,7 +54,7 @@ Antes de empezar, piense en lo que desea hacer con el correo electrónico del us
 |Correo electrónico  <br/> | Si otro usuario tiene acceso al correo electrónico del usuario eliminado, se convertirá el buzón del usuario eliminado en un buzón compartido. A continuación, el nuevo propietario del buzón puede tener acceso al buzón y supervisar el nuevo correo electrónico. También tendrá las siguientes opciones:  <br/>  <br/>Cambiar el nombre para mostrar: se recomienda cambiar el nombre para mostrar para que sea fácil identificar el buzón compartido en la **lista Usuarios** activos.  <br/>  Activar las respuestas automáticas: ya hemos escrito una respuesta automática educada. Puede enviar diferentes respuestas automáticas a personas dentro de su organización y a personas de fuera de la organización.  <br/> <br/> Limpiar alias: los alias son direcciones de correo electrónico adicionales para los usuarios. Algunas organizaciones no las usan, por lo que si no tiene ninguna, no necesita hacer nada más aquí. Si el usuario tiene alias, se recomienda eliminarlos para que pueda reutilizar esas direcciones de correo electrónico. De lo contrario, no puede volver a usar esas direcciones de correo electrónico hasta que haya transcurrido el período de retención de los buzones eliminados. De forma predeterminada, un buzón eliminado se puede recuperar durante 30 días. Para obtener más información, vea  [Eliminar o restaurar buzones de usuario en Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox). <br/> |
 |Active Directory  <br/> |Si su empresa usa **Active Directory** que está sincronizando con Azure AD, debe eliminar la cuenta de usuario de Active Directory. No podrá hacerlo a través de Office 365. Para obtener instrucciones, [vea Eliminar una cuenta de usuario](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).  <br/> |
 
-### <a name="get-started"></a>Comenzar
+### <a name="get-started"></a>Introducción
 
 Dado que la experiencia guiada recorre los pasos para eliminar un usuario, aquí le explicamos cómo empezar.
 

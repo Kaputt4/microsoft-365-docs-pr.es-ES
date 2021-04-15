@@ -10,16 +10,16 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-maave
 author: martyav
-ms.localizationpriority: medium
+localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.openlocfilehash: 93e900423fcef1fd357ca50db70e250ef6082dc7
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 38bf768f1a5603fa3da0d7a3acc8f409ed6372de
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570583"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765532"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Configurar y administrar las capacidades de Microsoft Threat Experts a través de Microsoft 365 Defender
 
@@ -166,6 +166,6 @@ La respuesta de los expertos en amenazas de Microsoft variará según la consult
 
 Si un experto solicita más información o muestras de archivos, es fundamental responder rápidamente para mantener la investigación en movimiento.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre Expertos en amenazas de Microsoft](microsoft-threat-experts.md)

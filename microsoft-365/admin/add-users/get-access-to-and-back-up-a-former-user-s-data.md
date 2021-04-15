@@ -28,7 +28,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755611"
+ms.locfileid: "51759995"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Obtener acceso y realizar una copia de seguridad de los datos de un antiguo usuario
 

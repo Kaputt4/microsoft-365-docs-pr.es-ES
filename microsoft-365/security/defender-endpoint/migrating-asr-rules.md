@@ -20,7 +20,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755557"
+ms.locfileid: "51759971"
 ---
 # <a name="migrating-from-a-third-party-hips-to-asr-rules"></a>Migración de un HIPS de terceros a reglas ASR
 
@@ -146,7 +146,7 @@ Este artículo le ayuda a asignar reglas comunes a Microsoft Defender para endpo
 - **Reglas de reducción** de superficie de ataque: las reglas ASR no cubren estos escenarios porque forman parte de la protección integrada de Microsoft Defender para puntos de conexión.
 - Otras características recomendadas: la protección contra alteraciones (opt-in, administrada desde Intune) evita los cambios no autorizados en las claves del Registro DisableAntiVirus, DisableAntiSpyware, DisableRealtimeMonitoring, DisableOnAccessProtection, DisableBehaviorMonitoring y DisableIOAVProtection (y mucho más).
 
-Consulte también
+Vea también
 
 - [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction-faq.md)
 - [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)

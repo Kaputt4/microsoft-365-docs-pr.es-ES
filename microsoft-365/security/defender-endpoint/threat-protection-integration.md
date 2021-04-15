@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 287ad9adeccd527b756bdd5304d3c89fc1b2d789
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7d12afd27288655f4f5a82eeed24686f27171a7a
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076491"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765400"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender para endpoint y otras soluciones de Microsoft
 
@@ -45,7 +45,7 @@ Microsoft Defender para endpoint proporciona una solución completa de protecci�
 El conector de Microsoft Defender para puntos de conexión te permite transmitir alertas de Microsoft Defender para endpoint en Azure Sentinel. Esto te permitirá analizar más exhaustivamente los eventos de seguridad en toda la organización y crear libros de juegos para obtener una respuesta eficaz e inmediata.
 
 ### <a name="azure-information-protection"></a>Azure Information Protection
-Mantenga la seguridad de los datos confidenciales al tiempo que permite la productividad en el lugar de trabajo mediante la detección de datos y la protección de datos.
+Recientemente hemos dejado de usar la integración de Azure Information Protection, ya que nuestras capacidades DLP de punto de conexión incorporan una solución mejorada de detección y protección para datos confidenciales almacenados en dispositivos de punto de conexión que facilita una mayor visibilidad e integración entre soluciones. Esto se anunció en el [siguiente blog](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protecting-sensitive-information-on-devices/ba-p/2143555). Se recomienda que los clientes pasen a usar DLP de extremo.
 
 ### <a name="conditional-access"></a>Acceso condicional
 La puntuación de riesgo de dispositivo dinámico de Microsoft Defender para endpoint está integrada en la evaluación de acceso condicional, lo que garantiza que solo los dispositivos seguros tengan acceso a los recursos. 

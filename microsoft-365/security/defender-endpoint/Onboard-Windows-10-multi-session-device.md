@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 6ad61d583815f669affe989d7519ba0ade6fe08d
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 0ef80e2aaccbf25a79083c2f95ea7399e30ea651
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760091"
+ms.locfileid: "51764322"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop 
 6 minutos para leer 
@@ -76,62 +76,75 @@ Este escenario usa un script ubicado centralmente y lo ejecuta mediante una dire
 
 1. Abra la Consola de administración de directivas de grupo (GPMC), haga clic con el botón secundario en el objeto de directiva de grupo (GPO) que desea configurar y haga clic en **Editar**.
 
-1. En el Editor de administración de directivas de grupo, vaya a **Configuración** del equipo Preferencias \>  \> **configuración Configuración del panel de control .** 
+2. En el Editor de administración de directivas de grupo, vaya a **Configuración** del equipo Preferencias \>  \> **configuración Configuración del panel de control .** 
 
-1. Haz clic con el **botón secundario en Tareas programadas,** haz clic en **Nuevo** y, a continuación, haz clic en **Tarea inmediata** (al menos Windows 7). 
+3. Haz clic con el **botón secundario en Tareas programadas,** haz clic en **Nuevo** y, a continuación, haz clic en **Tarea inmediata** (al menos Windows 7). 
 
-1. En la ventana Tarea que se abre, vaya a la **pestaña General.** En **Opciones de seguridad,** **haga clic en Cambiar usuario o grupo** y escriba SISTEMA. Haga **clic en Comprobar nombres** y, a continuación, en Aceptar. NT AUTHORITY\SYSTEM aparece como la cuenta de usuario en la que se ejecutará la tarea. 
+4. En la ventana Tarea que se abre, vaya a la **pestaña General.** En **Opciones de seguridad,** **haga clic en Cambiar usuario o grupo** y escriba SISTEMA. Haga **clic en Comprobar nombres** y, a continuación, en Aceptar. NT AUTHORITY\SYSTEM aparece como la cuenta de usuario en la que se ejecutará la tarea. 
 
-1. Seleccione **Ejecutar si el usuario ha iniciado sesión o no** y active la casilla Ejecutar con **privilegios** más altos. 
+5. Seleccione **Ejecutar si el usuario ha iniciado sesión o no** y active la casilla Ejecutar con **privilegios** más altos. 
 
-1. Vaya a la **pestaña Acciones** y haga clic **en Nuevo**. Asegúrese de **que Iniciar un programa** está seleccionado en el campo Acción. Especifique lo siguiente: 
+6. Vaya a la **pestaña Acciones** y haga clic **en Nuevo**. Asegúrese de **que Iniciar un programa** está seleccionado en el campo Acción. Especifique lo siguiente: 
 
-    > Action = "Start a program" <br>
-    > Programa/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
-    > Add Arguments (opcional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
+   `Action = "Start a program"`
 
-1. Haga **clic en Aceptar** y cierre las ventanas GPMC abiertas.
+   `Program/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe`
+
+   `Add Arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"`
+
+   A **continuación, seleccione Aceptar** y cierre las ventanas GPMC abiertas.
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*Escenario 3: Incorporación con herramientas de administración*
 
 Si planea administrar las máquinas con una herramienta de administración, puede incorporar dispositivos con Microsoft Endpoint Configuration Manager.
 
-Para obtener más información, [consulta Incorporación de dispositivos Windows 10 con Configuration Manager.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm) 
+Para obtener más información, [consulta Incorporación de dispositivos Windows 10 con Configuration Manager.](configure-endpoints-sccm.md)
 
 > [!WARNING]
-> Si tienes previsto usar reglas de reducción de Superficie de [ataque,](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)ten en cuenta que la regla " Bloquear creaciones de procesos originadas a partir de comandos[PSExec](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)y WMI " no debe usarse, ya que es incompatible con la administración a través de Microsoft Endpoint Configuration Manager porque esta regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente. 
+> Si tiene previsto usar reglas de reducción de superficie de [ataque,](attack-surface-reduction.md)tenga en cuenta que no se debe usar la regla " Bloquear creaciones de procesos que se originen a partir de comandos[PSExec](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)y WMI", ya que esa regla es incompatible con la administración a través de Microsoft Endpoint Configuration Manager. La regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente. 
 
 > [!TIP]
-> Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que el dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/run-detection-test)recién incorporado. 
+> Después de incorporar el dispositivo, puedes elegir ejecutar una prueba de detección para comprobar que el dispositivo está correctamente incorporado al servicio. Para obtener más información, consulta [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint](run-detection-test.md)recién incorporado. 
 
 #### <a name="tagging-your-machines-when-building-your-golden-image"></a>Etiquetar las máquinas al crear la imagen dorada 
 
-Como parte de la incorporación, es posible que quieras establecer una etiqueta de máquina para diferenciar los equipos WVD más fácilmente en el Centro de seguridad de Microsoft. Para obtener más información, consulta [Agregar etiquetas de dispositivo estableciendo un valor de clave del Registro.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value) 
+Como parte de la incorporación, es posible que quieras establecer una etiqueta de máquina para diferenciar los equipos WVD más fácilmente en el Centro de seguridad de Microsoft. Para obtener más información, consulta [Agregar etiquetas de dispositivo estableciendo un valor de clave del Registro.](machine-tags.md#add-device-tags-by-setting-a-registry-key-value) 
 
 #### <a name="other-recommended-configuration-settings"></a>Otras opciones de configuración recomendadas 
 
-Al crear la imagen dorada, es posible que también quieras configurar la configuración de protección inicial. Para obtener más información, vea [Otras opciones de configuración recomendadas.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-gp#other-recommended-configuration-settings) 
+Al crear la imagen dorada, es posible que también quieras configurar la configuración de protección inicial. Para obtener más información, vea [Otras opciones de configuración recomendadas.](configure-endpoints-gp.md#other-recommended-configuration-settings) 
 
 Además, si usa perfiles de usuario FSlogix, se recomienda excluir los siguientes archivos de la protección siempre en uso: 
 
 **Excluir archivos:** 
 
-> %ProgramFiles%\FSLogix\Apps\frxdrv.sys <br>
-> %ProgramFiles%\FSLogix\Apps\frxdrvvt.sys <br>
-> %ProgramFiles%\FSLogix\Apps\frxccd.sys <br>
-> %TEMP% \* . VHD <br>
-> %TEMP% \* . VHDX <br>
-> %Windir%\TEMP \* . VHD <br>
-> %Windir%\TEMP \* . VHDX <br>
-> \\storageaccount.file.core.windows.net\share \* \* . VHD <br>
-> \\storageaccount.file.core.windows.net\share \* \* . VHDX <br>
+`%ProgramFiles%\FSLogix\Apps\frxdrv.sys`
+
+`%ProgramFiles%\FSLogix\Apps\frxdrvvt.sys`
+
+`%ProgramFiles%\FSLogix\Apps\frxccd.sys`
+
+`%TEMP%\*.VHD`
+
+`%TEMP%\*.VHDX`
+
+`%Windir%\TEMP\*.VHD`
+
+`%Windir%\TEMP\*.VHDX`
+
+`\\storageaccount.file.core.windows.net\share\*\*.VHD`
+
+`\\storageaccount.file.core.windows.net\share\*\*.VHDX`
 
 **Excluir procesos:**
 
-> %ProgramFiles%\FSLogix\Apps\frxccd.exe <br>
-> %ProgramFiles%\FSLogix\Apps\frxccds.exe <br>
-> %ProgramFiles%\FSLogix\Apps\frxsvc.exe <br>
+`%ProgramFiles%\FSLogix\Apps\frxccd.exe`
+
+`%ProgramFiles%\FSLogix\Apps\frxccds.exe`
+
+`%ProgramFiles%\FSLogix\Apps\frxsvc.exe`
 
 #### <a name="licensing-requirements"></a>Requisitos de licencia 
 
-Windows 10 Multi-session es un sistema operativo cliente. Los requisitos de licencia para Microsoft Defender para el punto de conexión se pueden encontrar en: [Requisitos de licencias](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements).
+Nota sobre las licencias: al usar windows 10 Enterprise multi-sesión, según sus requisitos, puede elegir que todos los usuarios tengan licencia a través de Microsoft Defender para Endpoint (por usuario), Windows Enterprise E5, Microsoft 365 Security o Microsoft 365 E5, o tener la vm con licencia a través de Azure Defender.
+Los requisitos de licencia para Microsoft Defender para el punto de conexión se pueden encontrar en: [Requisitos de licencias](minimum-requirements.md#licensing-requirements).

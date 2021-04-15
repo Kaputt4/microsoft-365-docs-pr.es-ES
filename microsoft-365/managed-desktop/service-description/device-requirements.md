@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 18422f74d87bbadf014de24849235ce5c25bd614
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: baaebd185389e7ac1f2173aed092141067a5629f
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920473"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768895"
 ---
 # <a name="device-requirements"></a>Requisitos del dispositivo
 
@@ -46,7 +46,7 @@ El dispositivo debe haber sido creado por uno de estos fabricantes:
 El dispositivo debe tener preinstalado este software:
 
 - Edición windows 10 Enterprise, Pro o Pro Workstation
-- la versión de 64 bits de Microsoft Office hacer clic y ejecutar 
+- la versión de 64 bits de Aplicaciones de Microsoft 365 para empresas 
 - Todos los controladores de dispositivo aplicables
 
 
@@ -57,7 +57,7 @@ Los dispositivos deben tener estas capacidades:
 - Habilitado para el arranque seguro de UEFI 
 - Módulo de plataforma de confianza 2.0 
 - Compatible con la seguridad basada en virtualización 
-- Admite integridad de código protegida por hipervisor 
+- [Integridad de código protegida por hipervisor](/windows-hardware/drivers/bringup/device-guard-and-credential-guard) compatible con el BIOS
 
 Para obtener más información sobre estas capacidades y las tecnologías relacionadas con ellas que usa el servicio, vea [Tecnologías de Escritorio administrado de Microsoft](../intro/technologies.md).
 
@@ -72,12 +72,13 @@ Los dispositivos deben cumplir o superar los siguientes límites de almacenamien
 
 Si el dispositivo se hizo después del 1 de julio de 2020, también debe tener una cámara IR, un lector de huellas digitales o ambos, para admitir [Windows Hello](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security).
 
-## <a name="recommended-requirements"></a>Requisitos recomendados
+## <a name="recommended-features"></a>Características recomendadas
 
-Aunque no son requisitos absolutos, los usuarios tendrán una experiencia mucho mejor si elige dispositivos que tengan estas características:
+Los usuarios tendrán una experiencia mucho mejor si eliges dispositivos que tengan estas características:
 
 - Un procesador intel vPro-platform o un procesador AMD Ryzen Pro
 - Unidad de arranque del tipo SSD con una capacidad de al menos 256 GB
+- Memoria de dispositivo interna (RAM) de al menos 16 GB
 - Compatibilidad con espera moderna
 - El dispositivo es de tipo PC de núcleo seguro
 - Admite protección de kernel DMA

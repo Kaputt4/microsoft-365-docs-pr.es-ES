@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Información general sobre la conectividad de red en el Centro de administración de Microsoft 365 (versión preliminar)
-ms.openlocfilehash: dd97a6d5cc9662f01854e1432660784358bce7b8
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: cc01f2a22f6f8c89d0ae8fcd8b53498790930d3e
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581135"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768631"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Conectividad de red en el Centro de administración de Microsoft 365 (versión preliminar)
 
@@ -39,9 +39,9 @@ El Centro de administración de Microsoft 365 ahora incluye métricas de conecti
 
 Cuando vaya por primera vez a la página de rendimiento de red, verá un panel de información general que contiene un mapa del rendimiento de la red global, una evaluación de red en el ámbito de todo el inquilino y una lista de problemas actuales. En la introducción, puede explorar en profundidad para ver métricas de rendimiento de red específicas y problemas por ubicación. Para obtener más información, vea [Network performance overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
 
-Es posible que se le pida que se una a la versión preliminar pública de esta característica en nombre de su organización. La aceptación suele ocurrir inmediatamente y, a continuación, verá la página de conectividad de red. 
+Es posible que se le pida que se una a la versión preliminar pública de esta característica en nombre de su organización. La aceptación suele ocurrir inmediatamente, después de lo cual vería la página de conectividad de red. 
 
-Al navegar a la página de conectividad de red, verá un panel de información general que contiene un mapa del rendimiento global de la red, una evaluación de red en el ámbito de todo el inquilino y una lista de problemas actuales. Para tener acceso a esta página, debe ser administrador de la organización dentro de Microsoft 365. El rol administrativo Lector de informes tendrá acceso de lectura a esta información. Para configurar ubicaciones y otros elementos de conectividad de red, un administrador debe formar parte de un rol de administrador de servidor, como el rol de administrador de soporte técnico del servicio. En la introducción, puede explorar en profundidad para ver métricas de rendimiento de red específicas y problemas por ubicación. Para obtener más información, vea [Network connectivity overview in the Microsoft 365 Admin Center](#network-connectivity-overview-in-the-microsoft-365-admin-center).
+Al navegar a la página de conectividad de red, verá un panel de información general que contiene un mapa del rendimiento global de la red, una evaluación de red en el ámbito de todo el inquilino, un porcentaje de los usuarios que trabajan de forma remota frente a in situ y una lista de problemas actuales para tomar medidas en o para investigar más. Para tener acceso a esta página, debe ser administrador de la organización dentro de Microsoft 365. El rol administrativo Lector de informes tendrá acceso de lectura a esta información. Para configurar ubicaciones y otros elementos de conectividad de red, un administrador debe formar parte de un rol de administrador de servidor, como el rol de administrador de soporte técnico del servicio. En la introducción, puede explorar en profundidad para ver métricas de rendimiento de red específicas y problemas por ubicación. 
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>Requisitos previos para que aparezcan las evaluaciones de conectividad de red
 
@@ -49,7 +49,7 @@ Para empezar, activa la configuración de participación en la ubicación para r
 
 ### <a name="1-enable-windows-location-services"></a>1. Habilitar Windows Location Services
 
-Para esta opción, debe tener al menos dos equipos en ejecución en cada ubicación de la oficina que admitan los requisitos previos. La versión de OneDrive para Windows debe estar actualizada e instalada en cada equipo. Para obtener más información sobre las versiones de OneDrive, vea las [notas de la versión de OneDrive](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Las medidas de red están planeadas para agregarse en otras aplicaciones cliente de Office 365 en un futuro próximo.
+Para esta opción, debe tener al menos dos equipos en ejecución en cada ubicación de la oficina que admitan los requisitos previos. La versión de OneDrive para Windows debe estar actualizada e instalada en cada equipo. Para obtener más información sobre las versiones de OneDrive, vea las [notas de la versión de OneDrive](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0). Las medidas de red están planeadas para agregarse a otras aplicaciones cliente de Office 365 en un futuro próximo.
 
 El servicio de ubicación de Windows debe estar consentido en las máquinas. Para probar esto, ejecute la aplicación **Mapas** y localíctese. Se puede habilitar en una sola máquina con **configuración | Privacidad | Ubicación** en la que debe _habilitarse la opción Permitir que las_ aplicaciones accedan a su ubicación. El consentimiento de Windows Location Services se puede implementar en equipos con MDM o directiva de grupo con la configuración _LetAppsAccessLocation_.
 
@@ -61,17 +61,17 @@ Las muestras de medida y las ubicaciones de oficina deben empezar a aparecer 24 
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. Agregar ubicaciones y proporcionar información de subred LAN
 
-Para esta opción, no se requieren servicios de ubicación de Windows Wi-Fi los servicios de ubicación de Windows. La versión de OneDrive para Windows debe estar actualizada e instalada en cada equipo de la ubicación.
+Para esta opción, no se requieren servicios de ubicación de Windows Wi-Fi los servicios de ubicación de Windows. La versión de OneDrive para Windows debe estar actualizada e instalada en al menos un equipo en la ubicación.
 
-También debe agregar ubicaciones en la página de conectividad de red del Centro de administración o importar las de un archivo CSV. Las ubicaciones agregadas deben incluir la información de subred DE LAN de office.
+También debe agregar ubicaciones en la página Ubicaciones **o** importarlas desde un archivo CSV. Las ubicaciones agregadas deben incluir la información de subred DE LAN de office.
 
-Dado que va a agregar las ubicaciones, puede tener varias oficinas definidas dentro de una ciudad.
+Esta opción le permite tener varias oficinas definidas dentro de una ciudad.
 
 Todas las medidas de prueba de los equipos cliente incluyen la información de subred DE LAN, que está correlacionada con los detalles de ubicación de la oficina que ha especificado. Las muestras de medida y las ubicaciones de oficina deben empezar a aparecer 24 horas después de que se hayan cumplido estos requisitos previos.
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. Recopilar manualmente informes de prueba con la herramienta de prueba de conectividad de red de Microsoft 365
 
-Para esta opción, debe identificar a una persona en cada ubicación. Pídales que examinen la prueba de conectividad de red de [Microsoft 365](https://connectivity.office.com) en una máquina Windows en la que tengan permisos administrativos. En el sitio web, deben iniciar sesión en su cuenta de Office 365 para la misma organización que desea ver los resultados. A continuación, deben hacer clic **en Ejecutar prueba**. Durante la prueba hay una prueba de conectividad descargada EXE. Deben abrir y ejecutar eso también. Una vez completadas las pruebas, el resultado de la prueba se carga en Office 365.
+Para esta opción, debe identificar a una persona en cada ubicación. Pídales que examinen la prueba de conectividad de red de [Microsoft 365](https://connectivity.office.com) en una máquina Windows en la que tengan permisos administrativos. En el sitio web, deben iniciar sesión en su cuenta de Office 365 para la misma organización que desea ver los resultados. A continuación, deben hacer clic **en Ejecutar prueba**. Durante la prueba hay una prueba de conectividad descargada EXE. Deben abrir y ejecutar eso. Una vez completadas las pruebas, el resultado de la prueba se carga en el Centro de administración.
 
 Los informes de prueba se vinculan a una ubicación si se agregaron con información de subred DE LAN, de lo contrario solo se muestran en la ubicación de la ciudad.
 
@@ -79,7 +79,7 @@ Las muestras de medida y las ubicaciones de oficina deben empezar a aparecer ent
 
 ## <a name="how-do-i-use-this-information"></a>¿Cómo se usa esta información?
 
-**Los conocimientos de red,** sus recomendaciones de rendimiento relacionadas y las evaluaciones de red están diseñadas para ayudar a diseñar perímetros de red para las ubicaciones de la oficina. Cada información proporciona detalles sobre las características de rendimiento de un problema común específico para cada ubicación geográfica en la que los usuarios tienen acceso a su espacio empresarial. **Las recomendaciones de rendimiento** para cada información de red ofrecen cambios de diseño de arquitectura de red específicos que puede realizar para mejorar la experiencia del usuario relacionada con la conectividad de red de Microsoft 365. La evaluación de red muestra cómo afecta la conectividad de red a la experiencia del usuario, lo que permite comparar las diferentes conexiones de red de ubicación de usuario.
+**Los conocimientos de red,** sus recomendaciones de rendimiento relacionadas y las evaluaciones de red están diseñadas para ayudar a diseñar perímetros de red para las ubicaciones de la oficina. Cada información proporciona detalles sobre las características de rendimiento de un problema de red común específico para cada ubicación geográfica en la que los usuarios tienen acceso a su espacio empresarial. **Las recomendaciones de rendimiento** para cada información de red ofrecen cambios de diseño de arquitectura de red específicos que puede realizar para mejorar la experiencia del usuario relacionada con la conectividad de red de Microsoft 365. La evaluación de red muestra cómo afecta la conectividad de red a la experiencia del usuario, lo que permite comparar las diferentes conexiones de red de ubicación de usuario.
 
 **Las evaluaciones de** red destilan un agregado de muchas métricas de rendimiento de red en una instantánea del estado de la red empresarial, representada por un valor de puntos de 0 a 100. Las evaluaciones de red están en el ámbito de todo el inquilino y de cada ubicación geográfica desde la que los usuarios se conectan a su inquilino, lo que proporciona a los administradores de Microsoft 365 una forma fácil de comprender al instante un estado de red de la empresa y profundizar rápidamente en un informe detallado para cualquier ubicación de oficina global.
 
@@ -93,13 +93,13 @@ Las empresas complejas con varias ubicaciones de oficina y arquitecturas perimet
 > [!div class="mx-imgBorder"]
 > ![Red de cliente a nube](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
-Muchas empresas tienen configuraciones perimetrales de red que han aumentado con el tiempo y están diseñadas principalmente para dar cabida al acceso de los empleados a sitios web de Internet, donde la mayoría de los sitios web no se conocen de antemano y no son de confianza. El enfoque prevaleciendo y necesario es evitar ataques de malware y de pesca desde estos sitios web desconocidos. Esta estrategia de configuración de red, aunque es útil por motivos de seguridad, puede provocar la degradación del rendimiento y la experiencia del usuario de Microsoft 365.
+Muchas empresas tienen configuraciones perimetrales de red que han aumentado con el tiempo y están diseñadas principalmente para dar cabida al acceso de los empleados a sitios web de Internet, donde la mayoría de los sitios web no se conocen de antemano y no son de confianza. El enfoque prevaleciendo y necesario es evitar ataques de malware y suplantación de identidad desde estos sitios web desconocidos. Esta estrategia de configuración de red, aunque es útil por motivos de seguridad, puede provocar la degradación del rendimiento y la experiencia del usuario de Microsoft 365.
 
 ## <a name="how-we-can-solve-these-challenges"></a>Cómo podemos resolver estos desafíos
 
 Las empresas pueden mejorar la experiencia general del usuario y proteger su entorno siguiendo los principios de conectividad de [Office 365](./microsoft-365-network-connectivity-principles.md) y usando la característica de conectividad de red del Centro de administración de Microsoft 365. En la mayoría de los casos, seguir estos principios generales tendrá un impacto positivo significativo en la latencia del usuario final, la confiabilidad del servicio y el rendimiento general de Microsoft 365.
 
-A veces se pide a Microsoft que investigue los problemas de rendimiento de red con Microsoft 365 para los clientes de grandes empresas, y estos suelen tener una causa raíz relacionada con la infraestructura perimetral de red de clientes. Cuando se encuentra una causa raíz común de un problema perimetral de red de clientes, buscamos identificar medidas de prueba sencillas que lo identifiquen. Una prueba con un umbral de medida que identifique un problema específico es valiosa porque podemos probar la misma medida en cualquier ubicación, saber si esta causa raíz está presente allí y compartirla como información de red con el administrador.
+A veces se pide a Microsoft que investigue los problemas de rendimiento de la red con Microsoft 365 para los clientes de grandes empresas, y estos suelen tener una causa raíz relacionada con la infraestructura perimetral de red del cliente. Cuando se encuentra una causa raíz común de un problema perimetral de red de clientes, buscamos identificar medidas de prueba sencillas que lo identifiquen. Una prueba con un umbral de medida que identifique un problema específico es valiosa porque podemos probar la misma medida en cualquier ubicación, saber si esta causa raíz está presente allí y compartirla como información de red con el administrador.
 
 Algunas perspectivas de red simplemente indicarán un problema que necesita más investigación. Una información de red donde tenemos suficientes pruebas para mostrar una acción de corrección específica para corregir la causa raíz se muestra como **una acción recomendada**. Estas recomendaciones, basadas en métricas en directo que revelan valores que se encuentran fuera de un umbral predeterminado, son mucho más valiosas que los consejos de procedimientos recomendados generales, ya que son específicas de su entorno y mostrarán la mejora real una vez que se hayan realizado los cambios recomendados.
 
@@ -117,7 +117,7 @@ La página de información general también muestra la evaluación de red del cl
 > [!div class="mx-imgBorder"]
 > ![Evaluación de la red](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
-Puede ver una vista de tabla de las ubicaciones donde se pueden filtrar, ordenar y editar en la pestaña ubicaciones. Las ubicaciones con recomendaciones específicas también pueden incluir una posible mejora de latencia estimada. Esto se calcula tomando la latencia mediana de los usuarios de la organización en la ubicación y restando la latencia mediana para todas las organizaciones de la misma ciudad.
+Puede ver una vista de tabla de las ubicaciones donde se pueden filtrar, ordenar y editar en la **pestaña** Ubicaciones. Las ubicaciones con recomendaciones específicas también pueden incluir una posible mejora de latencia estimada. Esto se calcula tomando la latencia mediana de los usuarios de la organización en la ubicación y restando la latencia mediana para todas las organizaciones de la misma ciudad.
 
 > [!div class="mx-imgBorder"]
 > ![Ubicaciones de información de red](../media/m365-mac-perf/m365-mac-perf-locations.png)
@@ -149,6 +149,7 @@ La pestaña detalles de la página de ubicación de la oficina muestra los resul
 > [!div class="mx-imgBorder"]
 > ![Detalles específicos de la ubicación](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
+
 ## <a name="sharing-network-assessment-data-with-microsoft"></a>Compartir datos de evaluación de red con Microsoft
 
 De forma predeterminada, las evaluaciones de red para su organización y la información de red se comparten con los empleados de Microsoft. Esto no incluye ningún dato personal de su personal, sino solo las métricas de evaluación de red específicas y los conocimientos de red que se muestran en el Centro de administración para las ubicaciones de la oficina. Tampoco incluye los nombres de ubicación de la oficina ni las direcciones de calle, por lo que tendría que decirles la ciudad y el identificador de soporte técnico de la oficina que desea analizar. Si esto está desactivado, los ingenieros de Microsoft con los que está hablando de la conectividad de red no podrán ver ninguna de esta información. Al habilitar esta configuración, solo se comparten los datos futuros a partir del día después de habilitarlo.
@@ -170,7 +171,8 @@ En el archivo CSV, una ubicación de ciudad detectada se muestra en la columna u
 
 1. Abra el CSV y agregue las ubicaciones rellenando los siguientes campos en una nueva línea para cada ubicación que desee agregar. Deje todos los demás campos en blanco; se omitirán los valores especificados en otros campos.
 
-   1. **userEntered** (obligatorio): debe ser 1 para una nueva ubicación de oficina de subred LAN
+   1. **userEntered** (obligatorio): debe ser 1 para una nueva ubicación de oficina de subred LAN que se va a agregar
+   1. **Nombre** (obligatorio): el nombre de la ubicación de la oficina
    1. **Dirección** (obligatorio): la dirección física de la oficina
    1. **Latitud** (opcional): se rellena desde la búsqueda de mapas de Bing de la dirección si está en blanco
    1. **Longitud (opcional):** rellenada desde la búsqueda de mapas de Bing de la dirección si está en blanco
@@ -179,12 +181,12 @@ En el archivo CSV, una ubicación de ciudad detectada se muestra en la columna u
    
 1. Cuando haya agregado las ubicaciones de la oficina  y guardado el archivo, haga clic en el botón Examinar situado junto al campo **Cargar** el archivo CSV completado y seleccione el archivo CSV guardado.
 
-1. El archivo se validará automáticamente. Si hay errores de validación, verá el mensaje de error Hay algunos _errores en el archivo de importación. Revise los errores, corrija el archivo de importación y vuelva a intentarlo._ Haga clic en el vínculo **Abrir detalles de error** para obtener una lista de errores de validación de campo específicos.
+1. El archivo se validará automáticamente. Si hay errores de validación, verá el mensaje de error: Hay algunos _errores en el archivo de importación. Revise los errores, corrija el archivo de importación y vuelva a intentarlo._ Haga clic en el vínculo **Abrir detalles de error** para obtener una lista de errores de validación de campo específicos.
 
    > [!div class="mx-imgBorder"]
    > ![Mensaje de error de importación CSV](../media/m365-mac-perf/m365-mac-perf-import-error.png)
 
-1. Si no hay errores en el archivo, verá el mensaje _El informe está listo. Se encontraron x ubicaciones para agregar y x ubicaciones para actualizar._ Haga clic **en el botón** Importar para cargar el CSV.
+1. Si no hay errores en el archivo, verá el mensaje: _el informe está listo. Se encontraron x ubicaciones para agregar y x ubicaciones para actualizar._ Haga clic **en el botón** Importar para cargar el CSV.
 
    > [!div class="mx-imgBorder"]
    > ![Mensaje listo para importar CSV](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
@@ -200,11 +202,11 @@ La puerta principal del servicio de Microsoft 365 es un punto de entrada en la r
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>¿Cuál es una puerta frontal de servicio de Microsoft 365 óptima?
 
-Una puerta principal de servicio óptima de Microsoft 365 es la más cercana a la salida de red, generalmente en su ciudad o área metropolitana. Use la herramienta de prueba de conectividad de [Microsoft 365 (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md) para determinar la ubicación de la puerta frontal del servicio de Microsoft 365 en uso y la puerta principal de servicio óptima. Si la herramienta determina que la puerta frontal en uso es óptima, se está conectando óptimamente a la red global de Microsoft.
+Una puerta principal de servicio óptima de Microsoft 365 es la más cercana a la salida de red, generalmente en su ciudad o área metropolitana. Use la herramienta de prueba de conectividad de [Microsoft 365 (versión preliminar)](office-365-network-mac-perf-onboarding-tool.md) para determinar la ubicación de la puerta frontal del servicio de Microsoft 365 en uso y la puerta principal de servicio óptima. Si la herramienta determina que la puerta principal en uso es óptima, se está conectando de forma óptima a la red global de Microsoft.
 
 ### <a name="what-is-an-internet-egress-location"></a>¿Qué es una ubicación de salida de Internet?
 
-La ubicación de salida de Internet es la ubicación donde el tráfico de red sale de la red empresarial y se conecta a Internet. Esto también se identifica como la ubicación donde tiene un dispositivo de traducción de direcciones de red (NAT) y, por lo general, donde se conecta con un proveedor de servicios de Internet (ISP). Si ves una larga distancia entre la ubicación y la ubicación de salida de Internet, esto puede indicar un backhaul WAN significativo.
+La ubicación de salida de Internet es la ubicación donde el tráfico de red sale de la red empresarial y se conecta a Internet. Esto también se identifica como la ubicación donde tiene un dispositivo de traducción de direcciones de red (NAT) y, por lo general, donde se conecta con un proveedor de servicios de Internet (ISP). Si ve una larga distancia entre la ubicación y la ubicación de salida de Internet, esto puede indicar un backhaul wan significativo.
 
 ### <a name="what-license-is-needed-for-this-capability"></a>¿Qué licencia se necesita para esta funcionalidad?
 

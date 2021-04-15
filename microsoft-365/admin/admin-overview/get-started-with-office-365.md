@@ -28,9 +28,9 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755647"
+ms.locfileid: "51759887"
 ---
-# <a name="get-started"></a>Comenzar
+# <a name="get-started"></a>Introducción
 
 Su organización acaba de obtener Microsoft 365 y ahora debe usarlo para que pueda empezar a leer correo electrónico, compartir documentos y mucho más. Obtenga información sobre cómo configurar y usar Microsoft 365 en su equipo, teléfono y tableta.
 

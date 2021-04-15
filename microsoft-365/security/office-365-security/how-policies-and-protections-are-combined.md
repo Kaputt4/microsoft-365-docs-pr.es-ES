@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre el orden de las protecciones de la aplicación en Exchange Online Protection (EOP) y cómo el valor de prioridad en las directivas de protección determina qué directiva se aplica.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3419cba5781e7ab1042f7312c721069d88fb8767
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b36e66f095ff81f551a55d2dc2af0693f8b3455a
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687654"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51769015"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Orden y prioridad de protección de correo electrónico
 
@@ -41,6 +41,8 @@ Hay dos factores principales que determinan qué directiva se aplica a un mensaj
 
 - **La prioridad del tipo de protección de correo** electrónico: este orden no se puede configurar y se describe en la tabla siguiente:
 
+  <br>
+
   ****
 
   |Priority|Protección de correo electrónico|Categoría|Dónde administrar|
@@ -57,19 +59,21 @@ Hay dos factores principales que determinan qué directiva se aplica a un mensaj
 
   <sup>\*</sup> Estas características solo están disponibles en las directivas contra suplantación de identidad en Microsoft Defender para Office 365.
 
-- La **prioridad** de la directiva: para cada tipo de protección (antispam, antimalware, anti phishing, etc.), hay una directiva predeterminada que se aplica a todos, pero puede crear directivas personalizadas que se apliquen a usuarios específicos. Cada directiva personalizada tiene un valor de prioridad que determina el orden en que se aplican las directivas. La directiva predeterminada siempre se aplica en último lugar.
+- La **prioridad** de la directiva: para cada tipo de directiva (antispam, antimalware, anti phishing, etc.), hay una directiva predeterminada que se aplica a todos, pero puede crear directivas personalizadas que se apliquen a usuarios específicos. Cada directiva personalizada tiene un valor de prioridad que determina el orden en que se aplican las directivas. La directiva predeterminada siempre se aplica en último lugar.
 
   Si un usuario se define en varias directivas del mismo tipo, solo se aplica la directiva con la prioridad más alta. Las directivas restantes de ese tipo no se evalúan para el usuario (incluida la directiva predeterminada).
 
 Por ejemplo, considere las siguientes directivas contra suplantación de identidad en Microsoft Defender para Office 365 que se aplican a los mismos usuarios y un mensaje que se identifica como suplantación de usuario y suplantación de identidad:
 
-  ****
+<br>
 
-  |Nombre de directiva|Priority|Suplantación de usuario|Directiva contra la suplantación|
-  |---|---|---|---|
-  |Directiva A|1|Activada|Desactivada|
-  |Directiva B|2|Desactivada|Activada|
-  |
+****
+
+|Nombre de directiva|Priority|Suplantación de usuario|Directiva contra la suplantación|
+|---|---|---|---|
+|Directiva A|1|Activada|Desactivada|
+|Directiva B|2|Desactivada|Activada|
+|
 
 1. El mensaje se marca y trata como suplantación de identidad, ya que la suplantación de identidad tiene una prioridad superior (4) que la suplantación de usuario (5).
 2. La directiva A se aplica a los usuarios porque tiene una prioridad mayor que la directiva B.

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: ae7dbea7d476e8a8f6198378e1d1bb29e24c37a2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 95c87330eec3cb557e5fea96148d626b7e0ee4b3
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688350"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768919"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -37,7 +37,7 @@ La protección de red ayuda a reducir la superficie de ataque de los dispositivo
 
 La protección de red se admite en Windows, a partir de Windows 10, versión 1709. La protección de red aún no se admite en otros sistemas operativos, pero la protección web se admite con el nuevo Microsoft Edge basado en Chromium. Para obtener más información, vea [Protección web](web-protection-overview.md).
 
-la protección de red amplía la protección de [la protección web](web-protection-overview.md) al nivel del sistema operativo. Proporciona funcionalidad de protección web en Edge a otros exploradores compatibles y aplicaciones que no son exploradores. Además, la protección de red proporciona visibilidad y bloqueo de indicadores de peligro (IIC) cuando se usa con detección [y respuesta de extremos.](overview-endpoint-detection-response.md) Por ejemplo, la protección de red funciona con los [indicadores personalizados](manage-indicators.md).
+La protección de red amplía la protección de [la protección web](web-protection-overview.md) al nivel del sistema operativo. Proporciona funcionalidad de protección web en Edge a otros exploradores compatibles y aplicaciones que no son exploradores. Además, la protección de red proporciona visibilidad y bloqueo de indicadores de peligro (IIC) cuando se usa con detección [y respuesta de extremos.](overview-endpoint-detection-response.md) Por ejemplo, la protección de red funciona con los [indicadores personalizados](manage-indicators.md).
 
 Para obtener más información acerca de cómo habilitar la protección de red, vea [Enable network protection](enable-network-protection.md). Use directivas de grupo, PowerShell o CSP mdm para habilitar y administrar la protección de red en la red.
 

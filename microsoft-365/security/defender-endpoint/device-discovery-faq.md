@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: medium
+localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7165d943fd39e298894531f1dabdec408144898d
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: b3fef3479fa2d36806e6657b31f5152c54b9251f
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698472"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765004"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Preguntas más frecuentes sobre detección de dispositivos
 
@@ -70,7 +70,7 @@ Tienes la opción de desactivar la detección de dispositivos a través de la [p
  Como la detección de dispositivos usa métodos pasivos para detectar dispositivos en la red, cualquier dispositivo que se comunique con los dispositivos incorporados en la red corporativa se puede detectar y enumerar en el inventario. Solo puedes excluir dispositivos del sondeo activo.
 
 ## <a name="how-frequent-is-the-active-probing"></a>¿Qué frecuencia tiene el sondeo activo?
- Los dispositivos se sondearán activamente cuando se observan cambios en las características del dispositivo y una vez a la semana para asegurarse de que la información existente esté actualizada.
+ Los dispositivos se sondearán activamente cuando se observan cambios en las características del dispositivo (cada 1 a 3 semanas) para asegurarse de que la información existente esté actualizada.
 
 ## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>Mi herramienta de seguridad ha creado una alerta UnicastScanner.ps1 actividad de detección de puertos iniciada por ella, ¿qué debo hacer?
  Microsoft firma los scripts de sondeo activos y son seguros. Puede agregar la siguiente ruta de acceso a la lista de exclusión: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`
