@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Los roles de administrador se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración. Por ejemplo, el Administrador de servicios abre vales de soporte técnico con Microsoft.
-ms.openlocfilehash: 8df1b8b46b4b2ec4f8f686f6422851b5f186f2ff
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3c55619dc1193d7c41f8a52fc027f03f13f3c9ad
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903741"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759959"
 ---
 # <a name="get-started-with-the-roles-page"></a>Introducción a la página roles
 
@@ -33,7 +33,7 @@ En la página Roles, puede conceder a los usuarios permisos para realizar tareas
 ![Figura que muestra roles de administrador](../../media/roles-main-page.png)
 
 > [!TIP]
-> ¿Busca las descripciones detalladas de los roles? Consulte [Permisos de roles de administrador en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) y Acerca de los roles de [administrador](/office365/admin/add-users/about-admin-roles).
+> ¿Busca las descripciones detalladas de los roles? Consulte [Permisos de roles de administrador en Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) y Acerca de los roles de [administrador](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## <a name="about-the-admin-roles-page"></a>Acerca de la página roles de administrador
 
@@ -56,23 +56,23 @@ Esta no es una lista exhaustiva de todos los permisos que tienen estos roles. Se
 
 ### <a name="exchange-admin"></a>Administrador de Exchange
 
-Asigne el rol de administrador de Exchange a los usuarios que necesiten ver y administrar los buzones de correo electrónico del usuario, los grupos de Microsoft 365 y Exchange Online. También pueden abrir y administrar solicitudes de servicio para el soporte técnico de Microsoft. [Más información](/office365/admin/add-users/about-exchange-online-admin-role)
+Asigne el rol de administrador de Exchange a los usuarios que necesiten ver y administrar los buzones de correo electrónico del usuario, los grupos de Microsoft 365 y Exchange Online. También pueden abrir y administrar solicitudes de servicio para el soporte técnico de Microsoft. [Más información](/microsoft-365/admin/add-users/about-exchange-online-admin-role)
 
 ### <a name="global-admin"></a>Administrador global
 
-Asigne el rol de administrador global a los usuarios que necesiten acceso global a la mayoría de las características y datos de administración en los servicios en línea de Microsoft. Otorgar acceso global a un gran número de usuarios es un riesgo para la seguridad y le recomendamos que solo tenga entre 2 y 4 administradores globales. Solo los administradores globales pueden restablecer las contraseñas de todos los usuarios y agregar y administrar dominios. También pueden abrir y administrar solicitudes de servicio al soporte técnico de Microsoft . La persona que se inscribió en los servicios en línea de Microsoft se convierte automáticamente en administrador global. [Más información](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Asigne el rol de administrador global a los usuarios que necesiten acceso global a la mayoría de las características y datos de administración en los servicios en línea de Microsoft. Otorgar acceso global a un gran número de usuarios es un riesgo para la seguridad y le recomendamos que solo tenga entre 2 y 4 administradores globales. Solo los administradores globales pueden restablecer las contraseñas de todos los usuarios y agregar y administrar dominios. También pueden abrir y administrar solicitudes de servicio al soporte técnico de Microsoft . La persona que se inscribió en los servicios en línea de Microsoft se convierte automáticamente en administrador global. [Más información](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="global-reader"></a>Lector global
 
-Asigna el rol de administrador de lector global a los usuarios que necesiten ver las características de administración y la configuración en todos los centros de administración que pueda ver el administrador global. El rol de administrador del lector global no puede editar ninguna configuración. [Más información](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Asigna el rol de administrador de lector global a los usuarios que necesiten ver las características de administración y la configuración en todos los centros de administración que pueda ver el administrador global. El rol de administrador del lector global no puede editar ninguna configuración. [Más información](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="helpdesk-admin"></a>Administrador del departamento de soporte técnico
 
-Asigne el rol de administrador del departamento de soporte técnico a los usuarios que quieran restablecer las contraseñas y obligó a los usuarios a cerrar sesión para cualquier problema de seguridad. También pueden abrir y administrar solicitudes de servicio para el soporte técnico de Microsoft. El administrador del departamento de soporte técnico solo puede ayudar a usuarios que no son administradores y usuarios asignados a estos roles: lector de directorios, invitado, administrador del departamento de soporte técnico, lector del centro de mensajes y lector de informes. [Más información](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Asigne el rol de administrador del departamento de soporte técnico a los usuarios que quieran restablecer las contraseñas y obligó a los usuarios a cerrar sesión para cualquier problema de seguridad. También pueden abrir y administrar solicitudes de servicio para el soporte técnico de Microsoft. El administrador del departamento de soporte técnico solo puede ayudar a usuarios que no son administradores y usuarios asignados a estos roles: lector de directorios, invitado, administrador del departamento de soporte técnico, lector del centro de mensajes y lector de informes. [Más información](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="service-admin"></a>Administrador de servicios
 
-Asigne el rol de administrador de servicio a los usuarios que necesitan crear solicitudes de servicio para los servicios de Azure, Microsoft 365 y Office 365. [Más información](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Asigne el rol de administrador de servicio a los usuarios que necesitan crear solicitudes de servicio para los servicios de Azure, Microsoft 365 y Office 365. [Más información](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="sharepoint-admin"></a>Administrador de SharePoint
 
@@ -84,9 +84,7 @@ Asigna el rol de administrador de Teams a los usuarios a los que quieras acceder
 
 ### <a name="user-admin"></a>Administrador de usuarios
 
-Asigna el rol de administrador de usuario a los usuarios a los que quieras acceder y administrar restablecimientos de contraseña de usuario y administrar usuarios y grupos. También pueden abrir y administrar solicitudes de servicio para el soporte técnico de Microsoft. [Más información](/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
-
-::: moniker range="o365-worldwide"
+Asigna el rol de administrador de usuario a los usuarios a los que quieras acceder y administrar restablecimientos de contraseña de usuario y administrar usuarios y grupos. También pueden abrir y administrar solicitudes de servicio para el soporte técnico de Microsoft. [Más información](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ## <a name="compare-roles"></a>Comparar roles
 
@@ -97,8 +95,6 @@ En el Centro de administración:
 - Seleccione hasta 3 roles y elija **Comparar roles** para ver los permisos que tiene cada función.
 
 ![Figura que muestra una comparación de roles de administrador](../../media/compare-roles-list.png)
-
-::: moniker-end
 
 ## <a name="related-topics"></a>Temas relacionados
 

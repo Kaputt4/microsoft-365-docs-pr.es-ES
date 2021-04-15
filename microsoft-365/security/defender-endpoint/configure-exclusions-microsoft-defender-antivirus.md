@@ -1,24 +1,26 @@
 ---
-title: Configurar exclusiones para exámenes antivirus de Microsoft Defender
+title: Configurar exclusiones para exámenes de Antivirus de Microsoft Defender
 description: Puede excluir los archivos (incluidos los archivos modificados por procesos especificados) y las carpetas que microsoft Defender AV examina. Valide las exclusiones con PowerShell.
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: ''
+ms.reviewer: ksarens
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 47db9b4451a885c92ca4fda0f87f0150415d3338
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: 08f7f9d4a6e9e70d3ef071f30712b2ae53f4ea52
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51691507"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764668"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Configurar y validar exclusiones para exámenes de Antivirus de Microsoft Defender
 
@@ -40,7 +42,8 @@ Para configurar y validar exclusiones, vea lo siguiente:
 - [Configurar y validar exclusiones para los archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md). Esto permite excluir archivos de los exámenes abiertos por un proceso específico.
 
 ## <a name="recommendations-for-defining-exclusions"></a>Recomendaciones para definir exclusiones
-
+[!IMPORTANT]
+Antivirus de Microsoft Defender incluye muchas exclusiones automáticas basadas en comportamientos conocidos del sistema operativo y archivos de administración típicos, como los que se usan en la administración empresarial, la administración de bases de datos y otros escenarios y situaciones empresariales.  
 La definición de exclusiones reduce la protección que ofrece Antivirus de Microsoft Defender. Siempre debe evaluar los riesgos asociados con la implementación de exclusiones y solo debe excluir los archivos que confía en que no son malintencionados.
 
 A continuación se muestra una lista de recomendaciones que debe tener en cuenta al definir exclusiones:  

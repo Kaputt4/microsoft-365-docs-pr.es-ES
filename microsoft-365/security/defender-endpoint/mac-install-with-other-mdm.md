@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 58e3b14dcb80db961f01b92f038ce4d32da7e2e8
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 3343eb433a6ae5c708651abf298bd4f061817543
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689712"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764138"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación con un sistema de administración de dispositivos móviles (MDM) diferente para Microsoft Defender para Endpoint en macOS
 
@@ -40,9 +40,11 @@ ms.locfileid: "51689712"
 
 Antes de empezar, consulta la página principal de Microsoft Defender para Endpoint [en macOS](microsoft-defender-endpoint-mac.md) para obtener una descripción de los requisitos previos y los requisitos del sistema para la versión de software actual.
 
+
 ## <a name="approach"></a>Enfoque
 
 > [!CAUTION]
+
 > Actualmente, Microsoft admite oficialmente solo Intune y JAMF para la implementación y administración de Microsoft Defender para Endpoint en macOS. Microsoft no ofrece garantías, explícitas o implícitas, con respecto a la información que se proporciona a continuación.
 
 Si su organización usa una solución de administración de dispositivos móviles (MDM) que no es compatible oficialmente, esto no significa que no pueda implementar o ejecutar Microsoft Defender para Endpoint en macOS.
@@ -72,7 +74,9 @@ Para implementar el paquete en tu empresa, usa las instrucciones asociadas con l
 
 ### <a name="license-settings"></a>Configuración de licencia
 
-Configurar un [perfil de configuración del sistema](mac-install-with-jamf.md). La solución MDM puede llamarla algo así como "Perfil de configuración personalizada", ya que Microsoft Defender para Endpoint en macOS no forma parte de macOS.
+Configurar un [perfil de configuración del sistema](mac-install-with-jamf.md). 
+
+La solución MDM puede llamarla algo así como "Perfil de configuración personalizada", ya que Microsoft Defender para Endpoint en macOS no forma parte de macOS.
 
 Usa la lista de propiedades, jamf/WindowsDefenderATPOnboarding.plist, que se puede extraer de un paquete de incorporación descargado del Centro de seguridad [de Microsoft Defender](mac-install-with-jamf.md).
 El sistema puede admitir una lista de propiedades arbitrarias en formato XML. Puedes cargar el archivo jamf/WindowsDefenderATPOnboarding.plist tal como está en ese caso.

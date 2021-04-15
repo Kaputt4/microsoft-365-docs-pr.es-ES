@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 784e73467efc114f05ebdfca9bc4034e2d75f6c6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 235df8c84077311444c597b120a19477cfd0986a
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185712"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760421"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigar entidades en dispositivos con respuesta en directo
 
@@ -144,11 +144,13 @@ Los siguientes comandos están disponibles para los roles de usuario a los que s
 |`connections` | Muestra todas las conexiones activas. |
 |`dir` | Muestra una lista de archivos y subdirectorios en un directorio. |
 |`download <file_path> &` | Descarga un archivo en segundo plano. |
-controladores |  Muestra todos los controladores instalados en el dispositivo. |
-|`fg <command ID>` | Devuelve una descarga de archivos en primer plano. |
+|`drivers` |  Muestra todos los controladores instalados en el dispositivo. |
+|`fg <command ID>` | Coloque el trabajo especificado en primer plano en primer plano, lo que lo hace el trabajo actual. <br> NOTA: fg toma un "identificador de comando" disponible desde trabajos, no un PID |
 |`fileinfo` | Obtener información acerca de un archivo. |
 |`findfile` | Localiza los archivos por un nombre determinado en el dispositivo. |
+|`getfile <file_path>` | Descarga un archivo. |
 |`help` | Proporciona información de ayuda para comandos de respuesta en directo. |
+|`jobs` | Muestra trabajos en ejecución, su identificador y estado. |
 |`persistence` | Muestra todos los métodos de persistencia conocidos en el dispositivo. |
 |`processes` | Muestra todos los procesos que se ejecutan en el dispositivo. |
 |`registry` | Muestra los valores del Registro. |
@@ -162,7 +164,6 @@ Los siguientes comandos están disponibles para los roles de usuario a los que s
 | Comando | Descripción |
 |---|---|
 | `analyze` | Analiza la entidad con varios motores de incriminación para llegar a un veredicto. |
-| `getfile` | Obtiene un archivo del dispositivo. <br> NOTA: Este comando tiene un comando de requisito previo. Puede usar el `-auto` comando junto con para ejecutar automáticamente el comando de `getfile` requisitos previos. |
 | `run` | Ejecuta un script de PowerShell desde la biblioteca en el dispositivo. |
 | `library` | Enumera los archivos que se cargaron en la biblioteca de respuestas en directo. |
 | `putfile` | Coloca un archivo de la biblioteca en el dispositivo. Los archivos se guardan en una carpeta de trabajo y se eliminan cuando el dispositivo se reinicia de forma predeterminada. |
@@ -303,10 +304,9 @@ Selecciona la **pestaña Registro de** comandos para ver los comandos usados en 
 
 ## <a name="limitations"></a>Limitaciones
 
-- Las sesiones de respuesta en directo están limitadas a 10 sesiones de respuesta en directo a la vez.
-- No se admite la ejecución de comandos a gran escala.
-- El valor de tiempo de espera inactivo de la sesión de respuesta en directo es de 5 minutos. 
-- Un usuario solo puede iniciar una sesión a la vez.
+- Las sesiones de respuesta en directo están limitadas a 25 sesiones de respuesta en directo a la vez.
+- El valor de tiempo de espera inactivo de la sesión de respuesta en directo es de 30 minutos. 
+- Un usuario puede iniciar hasta 10 sesiones simultáneas.
 - Un dispositivo solo puede estar en una sesión a la vez.
 - Se aplican los siguientes límites de tamaño de archivo:
    - `getfile` límite: 3 GB
@@ -314,4 +314,4 @@ Selecciona la **pestaña Registro de** comandos para ver los comandos usados en 
    - `library` límite: 250 MB
 
 ## <a name="related-article"></a>Artículo relacionado
-- [Ejemplos de comandos de respuesta en directo](live-response-command-examples.md)
+- [Ejemplos de comandos de respuesta en vivo](live-response-command-examples.md)

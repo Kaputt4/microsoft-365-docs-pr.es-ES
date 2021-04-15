@@ -11,26 +11,26 @@ localization_priority: Normal
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.date: 01/26/2021
-ms.reviewer: ''
+ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 34bebddcf052a643529f1d2b8a8a869a0ffe4a91
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.topic: how-to
+ms.openlocfilehash: 9efc42441c2cb30f35abf658071088f7f7bbaf00
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183829"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760103"
 ---
 # <a name="troubleshoot-network-protection"></a>Solucionar problemas de protección de red
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> [!TIP]
 > ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
@@ -57,7 +57,7 @@ La protección de red solo funcionará en dispositivos con las siguientes condic
 > - [La protección entregada en la nube](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) está habilitada.
 > - El modo auditoría no está habilitado. Use [la directiva de](enable-network-protection.md#group-policy) grupo para establecer la regla en **Deshabilitado** (valor: **0**).
 
-## <a name="use-audit-mode"></a>Usar el modo de auditoría
+## <a name="use-audit-mode"></a>Usar modo de auditoría
 
 Puede habilitar la protección de red en modo auditoría y, a continuación, visitar un sitio web que hemos creado para realizar una demostración de la característica. La protección de red permitirá todas las conexiones de sitios web, pero se registrará un evento para indicar cualquier conexión que se hubiera bloqueado si la protección de red estaba habilitada.
 
@@ -103,11 +103,31 @@ Cuando informe de un problema con la protección de red, se le pedirá que recop
    mpcmdrun -getfiles
    ```
 
-3. De forma predeterminada, se guardan en C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab. Adjunte el archivo al formulario de envío.
+3. Adjunte el archivo al formulario de envío. De forma predeterminada, los registros de diagnóstico se guardan en `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` . 
 
-## <a name="related-topics"></a>Temas relacionados
+## <a name="resolve-connectivity-issues-with-network-protection-for-e5-customers"></a>Resolver problemas de conectividad con la protección de red (para clientes de E5)
+
+Debido al entorno donde se ejecuta la protección de red, Microsoft no puede ver la configuración de proxy del sistema operativo. En algunos casos, los clientes de protección de red no pueden llegar al servicio en la nube. Para resolver problemas de conectividad con la protección de red, configure una de las siguientes claves del Registro para que la protección de red tenga en cuenta la configuración de proxy:
+
+```powershell
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+```
+
+---OR---
+
+
+```powershell
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+```
+
+Puede configurar la clave del Registro mediante PowerShell, Microsoft Endpoint Manager o la directiva de grupo. Estos son algunos recursos para ayudar:
+- [Trabajar con claves del Registro](/powershell/scripting/samples/working-with-registry-keys)
+- [Configurar opciones de cliente personalizadas para Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
+- [Usar la configuración de directiva de grupo para administrar Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
+
+## <a name="see-also"></a>Vea también
 
 - [Protección de red](network-protection.md)
-- [Evaluar la protección de red](evaluate-network-protection.md)
+- [Evaluar protección de red](evaluate-network-protection.md)
 - [Habilitar la protección de red](enable-network-protection.md)
 - [Dirección de falsos positivos/negativos en Defender for Endpoint](defender-endpoint-false-positives-negatives.md)

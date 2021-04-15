@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Obtenga información sobre cómo eliminar una cuenta de usuario. Decida qué hacer con el correo electrónico del usuario y el contenido de OneDrive. Y decide si quieres mantener la licencia del producto o dejar de pagarla.
-ms.openlocfilehash: 5c647d353f807f20a35c889ba1d6f7715343c5cb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0069577b83c318fa57eaceddccc93b5832e634e0
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904449"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755565"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Elimine un usuario de su organización
   
@@ -54,20 +54,26 @@ Antes de empezar, piense en lo que desea hacer con el correo electrónico del us
 |Correo electrónico  <br/> | Si otro usuario tiene acceso al correo electrónico del usuario eliminado, se convertirá el buzón del usuario eliminado en un buzón compartido. A continuación, el nuevo propietario del buzón puede tener acceso al buzón y supervisar el nuevo correo electrónico. También tendrá las siguientes opciones:  <br/>  <br/>Cambiar el nombre para mostrar: se recomienda cambiar el nombre para mostrar para que sea fácil identificar el buzón compartido en la **lista Usuarios** activos.  <br/>  Activar las respuestas automáticas: ya hemos escrito una respuesta automática educada. Puede enviar diferentes respuestas automáticas a personas dentro de su organización y a personas de fuera de la organización.  <br/> <br/> Limpiar alias: los alias son direcciones de correo electrónico adicionales para los usuarios. Algunas organizaciones no las usan, por lo que si no tiene ninguna, no necesita hacer nada más aquí. Si el usuario tiene alias, se recomienda eliminarlos para que pueda reutilizar esas direcciones de correo electrónico. De lo contrario, no puede volver a usar esas direcciones de correo electrónico hasta que haya transcurrido el período de retención de los buzones eliminados. De forma predeterminada, un buzón eliminado se puede recuperar durante 30 días. Para obtener más información, vea  [Eliminar o restaurar buzones de usuario en Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox). <br/> |
 |Active Directory  <br/> |Si su empresa usa **Active Directory** que está sincronizando con Azure AD, debe eliminar la cuenta de usuario de Active Directory. No podrá hacerlo a través de Office 365. Para obtener instrucciones, [vea Eliminar una cuenta de usuario](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).  <br/> |
 
-### <a name="get-started"></a>Introducción
+### <a name="get-started"></a>Comenzar
 
 Dado que la experiencia guiada recorre los pasos para eliminar un usuario, aquí le explicamos cómo empezar.
 
 ::: moniker range="o365-worldwide"
+
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
+
+ 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
+
+ 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
+
 ::: moniker-end
 
 2. Seleccione el usuario que desea eliminar y, a continuación, **seleccione Eliminar usuario**.
@@ -113,7 +119,7 @@ Reducir el número de licencias es un paso independiente que solo puede realizar
   
 ::: moniker range="o365-worldwide"
 
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>. Si no ves esta opción, no eres administrador global ni administrador de facturación y no puedes realizar este paso.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>. Si no ves esta opción, no eres administrador global ni administrador de facturación y no puedes realizar este paso.
 
 2. En la **pestaña Productos,** seleccione la suscripción para la que desea quitar licencias.
 

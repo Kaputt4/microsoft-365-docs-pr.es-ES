@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo trabajar con proveedores de soluciones certificados por Microsoft (partners) para comprar y administrar productos y servicios para su organización o escuela.
-ms.openlocfilehash: a0c70f229ff11132beccf118f4158ab2880a8aa6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f4c270e179a3d52616f6d7efb049beac4d1a8e03
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579739"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51749859"
 ---
 # <a name="manage-partner-relationships"></a>Administrar relaciones de partners
 
@@ -32,7 +32,7 @@ Puede trabajar con proveedores de soluciones certificados por Microsoft (partner
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o de facturación para realizar estos pasos. Para obtener más información, vea [Asignar roles de administrador](../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o de facturación para realizar estos pasos. Para más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>¿Qué puede hacer un partner para mi organización o escuela?
 
@@ -85,7 +85,7 @@ Si no quieres dar los roles de administrador al partner, cancela la invitación 
 
 Puede quitar roles de administrador de un partner en cualquier momento. La eliminación de los roles de administrador no quita la relación de partner. Todavía pueden trabajar con usted en una capacidad diferente, como un revendedor. Si decides que ya no quieres trabajar con un partner, ponte en contacto con tu partner para finalizar la relación.
 
-1. En el Centro de administración, vaya a la página **Relaciones**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">de socio de facturación.</a>
+1. En el Centro de administración, vaya a la **página Relaciones** del  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">partner de</a> configuración.
 2. En la **página Relaciones de partner,** seleccione la fila que contiene el nombre del partner que desea quitar.
 3. Seleccione la fila que contiene el nombre del partner.
 4. En la página del asociado, seleccione **Quitar roles**.

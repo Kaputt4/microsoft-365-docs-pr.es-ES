@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: ddd10e6164a8fae5d0d3d60c04ca854ef9771dba
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f2615cf5ec49c9df27472f04c367f30511e9c0cc
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688746"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759875"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -125,9 +125,11 @@ Si tiene alertas que son falsos positivos o que son verdaderos positivos pero qu
 Otras acciones, como iniciar un examen antivirus o recopilar un paquete de investigación, se producen manualmente o a través de [Live Response](live-response.md). Las acciones realizadas a través de Live Response no se pueden deshacer.
 
 Después de revisar las alertas, el siguiente paso es revisar [las acciones de corrección](manage-auto-investigation.md). Si se han realizado acciones como resultado de falsos positivos, puede deshacer la mayoría de los tipos de acciones de corrección. En concreto, puede:
-- [Deshacer una acción a la vez;](#undo-an-action)
-- [Deshacer varias acciones a la vez;](#undo-multiple-actions-at-one-time) y 
-- [Quitar un archivo de la cuarentena en varios dispositivos.](#remove-a-file-from-quarantine-across-multiple-devices) 
+
+- [Restaurar un archivo en cuarentena desde el Centro de acciones](#restore-a-quarantined-file-from-the-action-center)
+- [Deshacer varias acciones a la vez](#undo-multiple-actions-at-one-time)
+- [Quitar un archivo de la cuarentena en varios dispositivos.](#remove-a-file-from-quarantine-across-multiple-devices)  y 
+- [Restaurar archivo de la cuarentena](#restore-file-from-quarantine)
 
 Cuando haya terminado de revisar y deshacer acciones que se realizaron como resultado de falsos positivos, continúe con la revisión [o definición de exclusiones](#part-3-review-or-define-exclusions).
 
@@ -139,7 +141,7 @@ Cuando haya terminado de revisar y deshacer acciones que se realizaron como resu
 
 3. Seleccione un elemento para ver más detalles sobre la acción de corrección que se ha realizado.
 
-### <a name="undo-an-action"></a>Deshacer una acción
+### <a name="restore-a-quarantined-file-from-the-action-center"></a>Restaurar un archivo en cuarentena desde el Centro de acciones
 
 1. Vaya al Centro de acciones ( [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) ) e inicie sesión.
 
@@ -164,7 +166,33 @@ Cuando haya terminado de revisar y deshacer acciones que se realizaron como resu
 
 2. En la **pestaña** Historial, seleccione un archivo que tenga el tipo de acción **Archivo de cuarentena**.
 
+3. En el panel de la parte derecha de la pantalla, seleccione **Aplicar a X más** instancias de este archivo y, a continuación, seleccione **Deshacer**.
+
+### <a name="restore-file-from-quarantine"></a>Restaurar archivo de la cuarentena
+
+Puede revertir y quitar un archivo de la cuarentena si ha determinado que está limpio después de una investigación. Ejecute el siguiente comando en cada dispositivo en el que se ha puesto en cuarentena el archivo.
+
+1. Abra un símbolo del sistema con privilegios elevados en el dispositivo:
+
+   1. Vaya a **Inicio** y escriba _cmd_.
+
+   1. Haga clic con el **botón secundario en Símbolo del sistema** y seleccione Ejecutar como **administrador.**
+
+2. Escriba el siguiente comando y presione **Entrar**:
+
+    ```console
+    "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+    ```
+
+    > [!NOTE]
+    > En algunos escenarios, **ThreatName** puede aparecer como: `EUS:Win32/
+CustomEnterpriseBlock!cl` . Defender for Endpoint restaurará todos los archivos bloqueados personalizados que se han puesto en cuarentena en este dispositivo en los últimos 30 días.
+
+    > [!IMPORTANT]
+    > Es posible que un archivo que se haya puesto en cuarentena como una amenaza de red potencial no pueda recuperarse. Si un usuario intenta restaurar el archivo después de la cuarentena, es posible que ese archivo no sea accesible. Esto puede deberse a que el sistema ya no tiene credenciales de red para tener acceso al archivo. Normalmente, esto es el resultado de un inicio de sesión temporal en un sistema o carpeta compartida y los tokens de acceso expiraron.
+
 3. En el panel de la parte derecha de la pantalla, seleccione **Aplicar a X más** instancias de este archivo y, a continuación, seleccione **Deshacer**. 
+
 
 ## <a name="part-3-review-or-define-exclusions"></a>Parte 3: Revisar o definir exclusiones
 

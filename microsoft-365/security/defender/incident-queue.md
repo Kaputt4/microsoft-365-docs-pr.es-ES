@@ -22,34 +22,31 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5aba1ab4bed0eeb5f6127ab865ceea674e8d5902
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 12207d69b0a1565caf762a265c1a0d32158ca291
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500998"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759860"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Se aplica a:**
 - Microsoft 365 Defender
 
+Microsoft 365 Defender aplica análisis de correlación y agrega alertas relacionadas e investigaciones automatizadas de diferentes productos en un incidente. Microsoft 365 Defender también desencadena alertas únicas en actividades que solo se pueden identificar como malintencionadas dada la visibilidad de extremo a extremo que Microsoft 365 Defender tiene en todo el conjunto de productos. Esta vista ofrece a los analistas de seguridad la historia de ataques más amplia, lo que les ayuda a comprender mejor y tratar las amenazas complejas en toda la organización.
 
+La **cola Incidentes muestra** una colección de incidentes que se crearon en dispositivos, usuarios y buzones. Le ayuda a ordenar los incidentes para asignar prioridades y crear una decisión de respuesta de ciberseguridad fundamentada. 
 
-Microsoft 365 Defender aplica análisis de correlación y agrega todas las alertas e investigaciones relacionadas de diferentes productos en un solo incidente. Microsoft 365 Defender también desencadena alertas únicas en actividades que solo se pueden identificar como malintencionadas dada la visibilidad de extremo a extremo que Microsoft 365 Defender tiene en toda la propiedad y conjunto de productos. Esta vista proporciona a su analista de operaciones de seguridad la historia de ataques más amplia, lo que les ayuda a comprender mejor y tratar las amenazas complejas en toda la organización.
+You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).
 
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes":::
 
-La **cola de incidentes** muestra un conjunto de incidentes que se han marcado desde diferentes dispositivos, usuarios y buzones de correo. Le ayuda a ordenar los incidentes para asignar prioridades y crear una decisión de respuesta de ciberseguridad fundamentada.
+De forma predeterminada, la cola del centro de seguridad de Microsoft 365 muestra incidentes vistos en los últimos seis meses. El incidente más reciente está en la parte superior de la lista para que pueda verlo primero.
 
-
-![Imagen de cola de incidentes](../../media/incidents-queue.png) 
-
-De forma predeterminada, la cola del centro de seguridad de Microsoft 365 muestra incidentes vistos en los últimos 30 días. El incidente más reciente está en la parte superior de la lista para que pueda verlo primero.
-
-La cola de incidentes expone columnas personalizables que le dan visibilidad a diferentes características del incidente o las entidades contenidas. Esto le ayuda a tomar una decisión fundamentada con respecto a la priorización de los incidentes que se deben controlar.
+La cola de incidentes tiene columnas personalizables (seleccione **Elegir** columnas) que le dan visibilidad de distintas características del incidente o de las entidades afectadas. Esto le ayuda a tomar una decisión fundamentada con respecto a la priorización de incidentes para la anailsis.
 
 Para obtener visibilidad adicional de un vistazo, la nomenclatura automática de incidentes genera nombres de incidentes basados en atributos de alerta, como el número de puntos de conexión afectados, los usuarios afectados, los orígenes de detección o las categorías. Esto le permite comprender rápidamente el ámbito del incidente.
 
@@ -62,54 +59,66 @@ La cola de incidentes también expone varias opciones de filtrado que, cuando se
 
 ## <a name="available-filters"></a>Filtros disponibles
 
-### <a name="assigned-to"></a>Asignado a
-Puede elegir mostrar las alertas que se le han asignado o las que controla la automatización.
+En la cola de incidentes  predeterminada, puede seleccionar Filtros para ver un panel Filtros, desde el que puede ver un conjunto filtrado de incidentes. Aquí le mostramos un ejemplo.
 
-### <a name="categories"></a>Categorías
-Elija categorías para centrarse en tácticas, técnicas o componentes de ataque específicos vistos. 
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Ejemplo del panel de filtros de la cola de incidentes":::
 
-### <a name="classification"></a>Clasificación
-Filtrar incidentes en función de las clasificaciones establecidas de las alertas relacionadas. Los valores incluyen alertas verdaderas, alertas falsas o no establecidas.
+En esta tabla se enumeran los nombres de filtro disponibles.
 
-### <a name="data-sensitivity"></a>Confidencialidad de datos
-Algunos ataques tienen por objetivo extraer datos confidenciales o importantes. Al aplicar un filtro para ver si hay datos confidenciales implicados en el incidente, puede determinar rápidamente si la información confidencial se ha visto comprometida y así dar prioridad a estos incidentes.
+| Nombre del filtro | Descripción |
+|:-------|:-----|
+| Asignado a | Puede elegir mostrar las alertas que se le han asignado o las que controla la automatización. |
+| Categorías | Elija categorías para centrarse en tácticas, técnicas o componentes de ataque específicos vistos. |
+| Clasificación | Filtrar incidentes en función de las clasificaciones establecidas de las alertas relacionadas. Los valores incluyen alertas verdaderas, alertas falsas o no establecidas. |
+| Confidencialidad de datos | Algunos ataques tienen por objetivo extraer datos confidenciales o importantes. Al aplicar un filtro para ver si hay datos confidenciales implicados en el incidente, puede determinar rápidamente si la información confidencial se ha visto comprometida y así dar prioridad a estos incidentes. <br><br> Solo se aplica si se ha activado Microsoft Information Protection. |
+| Grupo de dispositivos | Filtrar por grupos de dispositivos definidos. |
+| Estado de investigación | Filtrar incidentes por el estado de la investigación automatizada.  |
+| Varias categorías | Puede elegir ver solo incidentes que se han asignado a varias categorías y, por lo tanto, puede causar más daños. |
+| Múltiples orígenes del servicio  | Filtra para ver solo incidentes que contienen alertas de diferentes orígenes (Microsoft Defender para Endpoint, Microsoft Cloud App Security, Microsoft Defender para Identity, Microsoft Defender para Office 365). |
+| Plataforma del sistema operativo | Limitar la vista de cola de incidentes por sistema operativo. |
+| Orígenes del servicio | Al elegir un origen específico, puede concentrarse en los incidentes que contienen al menos una alerta del origen seleccionado. |
+| Severity | La gravedad de un incidente indica el impacto que puede tener en los activos. Cuanto mayor sea la gravedad, mayor será el impacto y, por lo general, se requiere la atención más inmediata. |
+| Estado | Puede limitar la lista de incidentes que se muestra en función de su estado para ver cuáles están activos o resueltos. |
+|||
 
->[!NOTE]
->Solo se aplica si se ha activado Microsoft Information Protection. 
+## <a name="incident-response-workflow"></a>Flujo de trabajo de respuesta a incidentes
 
-### <a name="device-group"></a>Grupo de dispositivos
-Filtrar por grupos de dispositivos definidos.
+Este es el flujo de trabajo típico para responder a incidentes:
 
-### <a name="investigation-state"></a>Estado de investigación
-Filtrar incidentes por el estado de la investigación automatizada. 
+1. Identifique y triage los incidentes de mayor prioridad para investigación y resolución.
+2. Para cada incidente de prioridad alta, inicie una [investigación:](investigate-incidents.md)
 
-### <a name="multiple-categories"></a>Varias categorías 
-Puede elegir ver solo incidentes que se han asignado a varias categorías y, por lo tanto, puede causar más daños. 
+   a. Vea el resumen del incidente para comprender su ámbito, qué entidades se ven afectadas y gravedad (la **pestaña Resumen).**
 
-### <a name="multiple-service-sources"></a>Múltiples orígenes del servicio 
-Filtra para ver solo incidentes que contienen alertas de diferentes orígenes (Microsoft Defender para Endpoint, Microsoft Cloud App Security, Microsoft Defender para Identity, Microsoft Defender para Office 365).
+   b. Comience a ver las alertas para comprender su origen, ámbito y gravedad (la **pestaña** Alertas).
 
-### <a name="os-platform"></a>Plataforma del sistema operativo
-Limitar la vista de cola de incidentes por sistema operativo.
+   c. Según sea necesario, recopila información sobre dispositivos, usuarios y buzones afectados (las pestañas **Dispositivos,** **Usuarios** y **Buzones).**
 
-### <a name="service-sources"></a>Orígenes del servicio
-Al elegir un origen específico, puede concentrarse en los incidentes que contienen al menos una alerta del origen seleccionado. 
+   d. Vea cómo Microsoft 365 Defender ha resuelto automáticamente algunas **alertas** (la pestaña Investigaciones).
+   
+   e. Según sea necesario, use la información del conjunto de datos para el incidente para obtener más información (la **pestaña Evidencia y** respuesta).
 
-### <a name="severity"></a>Severity
-La gravedad de un incidente indica el impacto que puede tener en los activos. Cuanto mayor sea la gravedad, mayor será el impacto y, por lo general, se requiere la atención más inmediata. 
+A medida que investigue, debe preocuparse de:
 
-### <a name="status"></a>Estado
-Puede limitar la lista de incidentes que se muestra en función de su estado para ver cuáles están activos o resueltos.
+- Contención: reducir cualquier impacto adicional en el espacio empresarial.
+- Eliminación de la amenaza de seguridad.
+- Recuperación: restauración de los recursos del espacio empresarial en el estado en el que se encontraban antes del ataque.
 
+Después de resolver el incidente, tómese un momento para aprender de él para:
 
+- Comprender el tipo de ataque y su impacto.
+- Investigue el ataque en la comunidad de seguridad para obtener una tendencia de ataque de seguridad.
+- Recuerde el flujo de trabajo que usó para resolver el incidente y actualice los flujos de trabajo estándar y los libros de texto según sea necesario.
 
+Este es un resumen del proceso básico.
 
-## <a name="next-steps"></a>Siguientes pasos
-Una vez que haya determinado qué incidente tiene mayor prioridad, puede seguir investigando.
-- [Investigar incidentes](investigate-incidents.md)
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-process.png" alt-text="Proceso básico para investigar incidentes":::
 
+## <a name="next-step"></a>Paso siguiente
 
-## <a name="see-also"></a>Consulta también
+Después de determinar qué incidente requiere la prioridad más alta, selecciónelo e inicie la [investigación](investigate-incidents.md).
+
+## <a name="see-also"></a>Vea también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)
 - [Administrar incidentes](manage-incidents.md)

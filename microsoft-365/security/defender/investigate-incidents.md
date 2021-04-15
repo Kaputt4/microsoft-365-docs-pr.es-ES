@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a6c7e7e920d18d9d8bf29d71d317008ea0c37bbf
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 5fe594dca935b7377a385b487f1464c3f0a91151
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592101"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760331"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Investigar incidentes en Microsoft 365 Defender
 
@@ -38,87 +38,107 @@ ms.locfileid: "51592101"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender agrega todas las alertas, activos, investigaciones y pruebas relacionadas de todos los dispositivos, usuarios y buzones de correo para darle una visión completa de toda la amplitud de un ataque.
+Microsoft 365 Defender agrega todas las alertas, activos, investigaciones y evidencias relacionadas de todos los dispositivos, usuarios y buzones de correo en un incidente para darle una visión completa de toda la amplitud de un ataque.
 
-Investigue las alertas que afectan a la red, entienda lo que significa y intercale la evidencia asociada con los incidentes para que pueda diseñar un plan de corrección eficaz.
+Dentro de un incidente, se investigan las alertas que afectan a la red, se entiende lo que significan y se recopilan las pruebas para diseñar un plan de corrección eficaz.
 
-## <a name="investigate-an-incident"></a>Investigar un incidente
+## <a name="initial-investigation"></a>Investigación inicial
 
-1. Seleccione un incidente en la cola incidentes. <BR> Se abre un panel lateral y proporciona una vista previa de información importante, como el estado, la gravedad, las categorías y las entidades afectadas.
+Antes de entrar en detalles, echa un vistazo a las propiedades y el resumen del incidente.
 
-    ![Imagen del panel lateral del incidente](../../media/incident-side-panel.png)
+Para empezar, seleccione el incidente en la columna de marcas de verificación. Por ejemplo:
 
-2. Seleccione **abrir página de incidente**. <BR> Se abre la página de incidentes donde encontrará más información sobre incidentes, comentarios y acciones, pestañas (información general, alertas, dispositivos, usuarios, investigaciones, evidencias).
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Ejemplo de selección de un incidente en la columna de marca de verificación":::
 
-3. Revise las alertas, los dispositivos, los usuarios y otras entidades relacionadas con el incidente.
+Cuando lo haga, se abrirá un panel de resumen con información clave sobre el incidente, como la gravedad, a quién está asignado, y las categorías [de CK &trade;&MITRE ATT](https://attack.mitre.org/) para el incidente. Por ejemplo:
 
-## <a name="incident-overview"></a>Información general del incidente
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Ejemplo del panel de resumen de un incidente":::
 
-En la página de información general encontrará un resumen de las instantáneas en las principales cosas que debe tener en cuenta al incidente.
+Desde aquí, puede seleccionar **Abrir página de incidentes**. Esto abre la página principal del incidente donde encontrará más información de resumen y pestañas para alertas, dispositivos, usuarios, investigaciones y pruebas.
 
-![Imagen de la página información general de incidentes](../../media/incidents-overview.png)
+También puede abrir la página principal de un incidente seleccionando el nombre del incidente en la cola de incidentes.
+
+## <a name="summary"></a>Resumen
+
+La **página Resumen le** ofrece una vista instantánea de los aspectos principales que debe tener en cuenta sobre el incidente.
+
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Ejemplo de la página Resumen de un incidente en el Centro de seguridad de Microsoft 365":::
 
 Las categorías de ataque te dan una vista visual y numérica de lo avanzado que ha progresado el ataque en la cadena de eliminación. Al igual que con otros productos de seguridad de Microsoft, Microsoft 365 Defender se alinea con el marco de [CK &trade;&MITRE ATT.](https://attack.mitre.org/)
 
 La sección de ámbito ofrece una lista de los activos que se han visto afectados y que forman parte de este incidente. Si hay información específica sobre este activo, como el nivel de riesgo, la prioridad de investigación, así como cualquier etiqueta en los activos, esto también se mostrará en esta sección.
 
-La escala de tiempo de las alertas proporciona una vista rápida al orden cronológico en el que se han producido las alertas, así como los motivos por los que estos avisos se relacionan con este incidente.
+La escala de tiempo de alertas proporciona un vistazo al orden cronológico en el que se produjeron las alertas, así como los motivos por los que estas alertas están vinculadas a este incidente.
 
 Por último, la sección de evidencia ofrece un resumen de cuántos artefactos diferentes se incluyeron en el incidente y su estado de corrección, por lo que puede identificar de inmediato si se necesita alguna acción al final.
 
-Esta descripción general puede ayudar en la clasificación inicial del incidente al proporcionar información sobre las principales características del incidente que debe tener en cuenta.
+Esta introducción puede ayudar en la evaluación inicial del incidente proporcionando información sobre las características principales del incidente que debe conocer.
 
 ## <a name="alerts"></a>Alertas
 
-Puede ver todas las alertas relacionadas con el incidente y otra información sobre ellas, como la gravedad, las entidades que participaron en la alerta, el origen de las alertas (Microsoft Defender para identity, Microsoft Defender para endpoint, Microsoft Defender para Office 365) y el motivo por el que se vincularon.
+En la **pestaña** Alerta, puede ver la cola de alertas de alertas relacionadas con el incidente y otra información sobre ellas, como:
 
-![Imagen de la página de alertas de incidente](../../media/incident-alerts.png)
+- Gravedad.
+- Las entidades que participaron en la alerta.
+- El origen de las alertas (Microsoft Defender para identidad, Microsoft Defender para endpoint, Microsoft Defender para Office 365).
+- La razón por la que se vincularon.
 
-De forma predeterminada, los avisos se ordenan cronológicamente, para que pueda ver en primer lugar cómo se ha producido el ataque a lo largo del tiempo. Al hacer clic en cada alerta, se le dirigirá a la página de alerta relevante donde puede llevar a cabo una investigación en profundidad de esa alerta. Obtenga información sobre cómo usar las páginas de alertas y la cola de alertas unificada en [Investigar alertas](investigate-alerts.md)
+Por ejemplo:
+
+:::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Ejemplo de una página de alertas para un incidente":::
+
+De forma predeterminada, las alertas se ordenan cronológicamente para que pueda ver cómo se produjo el incidente con el tiempo. La selección de cada alerta te lleva a la página principal de la alerta, donde puedes llevar a cabo una investigación en profundidad de esa alerta. 
+
+Obtenga información sobre cómo usar la cola de alertas y las páginas de alertas en [Investigar alertas](investigate-alerts.md)
 
 ## <a name="devices"></a>Dispositivos
 
-En la pestaña dispositivos se muestran todos los dispositivos en los que se ven las alertas relacionadas con el incidente.
+La **pestaña Dispositivos** enumera todos los dispositivos relacionados con el incidente. Por ejemplo:
 
-Al hacer clic en el nombre del equipo en el que se realizó el ataque, es dirigido a la página de su equipo, donde puede ver las alertas que se activaron y los eventos relacionados que se proporcionan para facilitar la investigación.
+:::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="Ejemplo de una página Dispositivos para un incidente":::
 
-![Imagen de la pestaña equipos de un incidente](../../media/incident-machines.png)
+Puedes seleccionar la marca de verificación de un dispositivo para ver los detalles del dispositivo, los datos de directorio, las alertas activas y los usuarios que han iniciado sesión. Selecciona el nombre del dispositivo para ver los detalles del dispositivo en el inventario de dispositivos de Microsoft Defender para puntos de conexión.
 
-Seleccionar la pestaña escala de tiempo permite desplazarse por la escala de tiempo de la máquina y ver todos los eventos y comportamientos que se observan en el equipo en orden cronológico, intercalados con las alertas iniciadas.
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Ejemplo de una página de dispositivos para Microsoft Defender para puntos de conexión":::
+
+Desde la página del dispositivo, puedes recopilar información adicional sobre el dispositivo, como todas sus alertas, una escala de tiempo y recomendaciones de seguridad. Por ejemplo,  desde la pestaña Escala de tiempo, puede desplazarse por la escala de tiempo de la máquina y ver todos los eventos y comportamientos observados en la máquina en orden cronológico, intercalados con las alertas generadas.
 
 > [!TIP]
-> Puedes realizar exámenes a petición en una página de dispositivo. En el Centro de seguridad de Microsoft 365, elija **Inventario de dispositivos**. Selecciona un dispositivo que tenga alertas y, a continuación, ejecuta un examen antivirus. Las acciones, como los exámenes antivirus, se realiza un seguimiento y están visibles en la **página Inventario de** dispositivos. Para obtener más información, consulta [Ejecutar el examen de Antivirus de Microsoft Defender en dispositivos](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
-
+> Puedes realizar exámenes a petición en una página de dispositivo. En el Centro de seguridad de Microsoft 365, elija **Endpoints > Inventario de dispositivos**. Selecciona un dispositivo que tenga alertas y, a continuación, ejecuta un examen antivirus. Las acciones, como los exámenes antivirus, se realiza un seguimiento y están visibles en la **página Inventario de** dispositivos. Para obtener más información, consulta [Ejecutar el examen de Antivirus de Microsoft Defender en dispositivos](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
 
 ## <a name="users"></a>Usuarios
 
-Vea los usuarios que se han identificado como parte de un incidente determinado o que están relacionados con él.
+La **pestaña** Usuarios enumera todos los usuarios que se han identificado para formar parte o relacionados con el incidente. Por ejemplo:
 
-Al hacer clic en el nombre de usuario, se accede a la página de seguridad de la aplicación en la nube del usuario, donde se pueden realizar más investigaciones.
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Ejemplo de una página Usuarios para un incidente":::
 
-![Imagen de la pestaña usuarios de un incidente](../../media/incident-users.png)
+Puede seleccionar la marca de verificación de un usuario para ver los detalles de la amenaza, la exposición y la información de contacto de la cuenta de usuario. Seleccione el nombre de usuario para ver los detalles adicionales de la cuenta de usuario.
 
 ## <a name="mailboxes"></a>Buzones
 
-Investigue los buzones que se han identificado como parte de un incidente o relacionados con él. Para realizar más tareas de investigación, al seleccionar la alerta relacionada con el correo se abrirá Microsoft Defender para Office 365, donde puede realizar acciones de corrección.
+La **pestaña Buzones** enumera todos los buzones que se han identificado para formar parte o relacionados con el incidente. Por ejemplo:
 
-![Imagen de la pestaña buzón de un incidente](../../media/incident-mailboxes.png)
+:::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Ejemplo de una página Buzones de correo para un incidente":::
+
+Puede seleccionar la marca de verificación de un buzón para ver una lista de alertas activas. Seleccione el nombre del buzón para ver detalles adicionales del buzón en la página Explorador de Microsoft Defender para Office 365.
 
 ## <a name="investigations"></a>Investigaciones
 
-Seleccione **Investigaciones para** ver todas las investigaciones automatizadas desencadenadas por alertas en este incidente. Las investigaciones realizarán acciones de corrección o esperarán a que el analista apruebe las acciones, según cómo haya configurado las investigaciones automatizadas para que se ejecuten en Microsoft Defender para Endpoint y Defender para Office 365.
+La **pestaña Investigaciones** enumera todas las investigaciones automatizadas desencadenadas por alertas en este incidente. Las investigaciones realizarán acciones de corrección o esperarán a que el analista apruebe las acciones, según cómo haya configurado las investigaciones automatizadas para que se ejecuten en Microsoft Defender para Endpoint y Defender para Office 365.
 
-![Imagen de la pestaña investigaciones de un incidente](../../media/incident-investigations.png)
+:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Ejemplo de una página de investigaciones para un incidente":::
 
 Seleccione una investigación para ir a la página de detalles de la investigación para obtener toda la información sobre la investigación y el estado de corrección. Si hay acciones pendientes para su aprobación como parte de la investigación, aparecerán en la pestaña Acciones pendientes. Tome medidas como parte de la corrección de incidentes.
 
-## <a name="evidence"></a>Evidencia
+## <a name="evidence-and-response"></a>Evidencia y respuesta
 
-Microsoft 365 Defender investiga automáticamente todos los eventos admitidos por los incidentes y las entidades sospechosas de las alertas, lo que proporciona una respuesta automática e información sobre los archivos, procesos, servicios, correos electrónicos y mucho más importantes. Esto permite detectar y bloquear rápidamente posibles amenazas en el incidente.
+La **pestaña Evidencia y respuesta** muestra todos los eventos admitidos y las entidades sospechosas en las alertas del incidente. Por ejemplo:
 
-![Imagen de la pestaña evidencia de un incidente](../../media/incident-evidence.png)
+:::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="Ejemplo de una página de evidencia y respuesta para un incidente":::
 
-Cada una de las entidades analizadas se marcará con un veredicto (malintencionada, sospechosa, limpia), así como un estado de corrección. Esto le ayuda a comprender el estado de corrección de todo el incidente y cuáles son los siguientes pasos a seguir para solucionarlo.
+Microsoft 365 Defender investiga automáticamente todos los eventos compatibles con incidentes y las entidades sospechosas de las alertas, lo que le proporciona información sobre los correos electrónicos, archivos, procesos, servicios, direcciones IP importantes, etc. Esto le ayuda a detectar y bloquear rápidamente posibles amenazas en el incidente.
+
+Cada una de las entidades analizadas se marca con un veredicto (malintencionado, sospechoso, limpio) y un estado de corrección. Esto le ayuda a comprender el estado de corrección de todo el incidente y los siguientes pasos que se pueden seguir.
 
 ## <a name="related-topics"></a>Temas relacionados
 

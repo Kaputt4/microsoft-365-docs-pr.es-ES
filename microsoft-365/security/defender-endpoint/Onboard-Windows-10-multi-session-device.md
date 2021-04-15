@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 3f925fdc514c5e53b50f748d991f54d20fb49bd0
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: 6ad61d583815f669affe989d7519ba0ade6fe08d
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488150"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760091"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop 
 6 minutos para leer 
@@ -54,7 +54,7 @@ Hay varias formas de incorporar un equipo host WVD:
 #### <a name="scenario-1-using-local-group-policy"></a>*Escenario 1: Uso de la directiva de grupo local*
 Este escenario requiere colocar el script en una imagen dorada y usa la directiva de grupo local para ejecutarse al principio del proceso de arranque.
 
-Use las instrucciones de [Incorporación de dispositivos VDI de](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)infraestructura de escritorio virtual no persistente.
+Use las instrucciones de [Incorporación de dispositivos VDI de](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)infraestructura de escritorio virtual no persistente.
 
 Siga las instrucciones de una sola entrada para cada dispositivo.
 
@@ -62,32 +62,41 @@ Siga las instrucciones de una sola entrada para cada dispositivo.
 Este escenario usa un script ubicado centralmente y lo ejecuta mediante una directiva de grupo basada en dominio. También puede colocar el script en la imagen dorada y ejecutarlo de la misma manera.
 
 **Descargue el archivo WindowsDefenderATPOnboardingPackage.zip desde el Centro Windows Defender seguridad**
+
 1. Abra el archivo .zip del paquete de configuración VDI (WindowsDefenderATPOnboardingPackage.zip)  
-    - En el panel de navegación del Centro de seguridad de Microsoft Defender, seleccione **Configuración**  >  **incorporación**. 
-    - Selecciona Windows 10 como sistema operativo. 
-    - En el **campo Método de** implementación, seleccione Scripts de incorporación de VDI para puntos de conexión no persistentes. 
-    - Haga **clic en Descargar paquete** y guarde el archivo .zip. 
+
+    1. En el panel de navegación del Centro de seguridad de Microsoft Defender, seleccione **Configuración**  >  **incorporación**. 
+    1. Selecciona Windows 10 como sistema operativo. 
+    1. En el **campo Método de** implementación, seleccione Scripts de incorporación de VDI para puntos de conexión no persistentes. 
+    1. Haga **clic en Descargar paquete** y guarde el archivo .zip. 
+
 2. Extrae el contenido del archivo .zip en una ubicación compartida de solo lectura a la que pueda tener acceso el dispositivo. Debe tener una carpeta denominada **OptionalParamsPolicy** y los archivos **WindowsDefenderATPOnboardingScript.cmd** **yOnboard-NonPersistentMachine.ps1**.
 
 **Usar la consola de administración de directivas de grupo para ejecutar el script cuando se inicia la máquina virtual**
+
 1. Abra la Consola de administración de directivas de grupo (GPMC), haga clic con el botón secundario en el objeto de directiva de grupo (GPO) que desea configurar y haga clic en **Editar**.
+
 1. En el Editor de administración de directivas de grupo, vaya a **Configuración** del equipo Preferencias \>  \> **configuración Configuración del panel de control .** 
+
 1. Haz clic con el **botón secundario en Tareas programadas,** haz clic en **Nuevo** y, a continuación, haz clic en **Tarea inmediata** (al menos Windows 7). 
+
 1. En la ventana Tarea que se abre, vaya a la **pestaña General.** En **Opciones de seguridad,** **haga clic en Cambiar usuario o grupo** y escriba SISTEMA. Haga **clic en Comprobar nombres** y, a continuación, en Aceptar. NT AUTHORITY\SYSTEM aparece como la cuenta de usuario en la que se ejecutará la tarea. 
+
 1. Seleccione **Ejecutar si el usuario ha iniciado sesión o no** y active la casilla Ejecutar con **privilegios** más altos. 
+
 1. Vaya a la **pestaña Acciones** y haga clic **en Nuevo**. Asegúrese de **que Iniciar un programa** está seleccionado en el campo Acción. Especifique lo siguiente: 
 
-> Action = "Start a program" <br>
-> Programa/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
-> Add Arguments (opcional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
+    > Action = "Start a program" <br>
+    > Programa/Script = C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe <br>
+    > Add Arguments (opcional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"
 
-Haga **clic en Aceptar** y cierre las ventanas GPMC abiertas.
+1. Haga **clic en Aceptar** y cierre las ventanas GPMC abiertas.
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*Escenario 3: Incorporación con herramientas de administración*
 
 Si planea administrar las máquinas con una herramienta de administración, puede incorporar dispositivos con Microsoft Endpoint Configuration Manager.
 
-Para obtener más información, consulta: [Incorporación de dispositivos Windows 10 con Configuration Manager](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm) 
+Para obtener más información, [consulta Incorporación de dispositivos Windows 10 con Configuration Manager.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-sccm) 
 
 > [!WARNING]
 > Si tienes previsto usar reglas de reducción de Superficie de [ataque,](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)ten en cuenta que la regla " Bloquear creaciones de procesos originadas a partir de comandos[PSExec](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)y WMI " no debe usarse, ya que es incompatible con la administración a través de Microsoft Endpoint Configuration Manager porque esta regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente. 

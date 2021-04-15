@@ -20,18 +20,22 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: En este artículo encontrará puntos de conexión accesibles para los clientes que usan Office 365 en Alemania.
 hideEdit: true
-ms.openlocfilehash: 8d3e8bfe2a52027b412aff87e063f2458ca47f74
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d96300e77c67ac05ea18ab23d63c01d4f840dfb
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923995"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759899"
 ---
 # <a name="office-365-germany-endpoints"></a>Puntos de conexión de Office 365 de Alemania
 
  *Se aplica a: Administrador de Office 365*
 
 Office 365 requiere conectividad a Internet. Los puntos de conexión siguientes deben ser accesibles solo para los clientes que usan planes de **Office 365 Germany.**
+
+> [!NOTE]
+> Para los clientes, que están en la transición a la nueva región del centro de datos de Microsoft 365 en Alemania, los puntos de conexión cambiarán.
+> Para obtener información adicional, consulte Migración de [Microsoft Cloud Deutschland a los servicios de Office 365](ms-cloud-germany-transition.md)en las nuevas regiones del centro de datos alemán.
   
  **Puntos de conexión de Office 365:** [mundial (incluido GCC)](urls-and-ip-address-ranges.md)  | [Office 365 operado por 21Vianet](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 Germany*  |  [Office 365 Administración Pública de Estados Unidos (DoD)](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 Administración Pública de Estados Unidos (GCC High)](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   

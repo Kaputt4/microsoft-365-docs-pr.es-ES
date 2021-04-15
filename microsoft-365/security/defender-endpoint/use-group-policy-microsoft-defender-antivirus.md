@@ -10,16 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/31/2021
+ms.date: 04/13/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6c411507b834bd7f09f4688bda11e3ece9f6d7c8
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: b8122807b8e26a848781f9f66f8e13032345f3fd
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51691296"
+ms.locfileid: "51749919"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Usar la configuración de directiva de grupo para configurar y administrar Antivirus de Microsoft Defender
 
@@ -87,9 +89,9 @@ En la tabla siguiente de este tema se enumeran las opciones de configuración de
 | Corrección | Especificar la hora del día para ejecutar un examen completo programado para completar la corrección | [Configurar exámenes programados de Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Generación de informes | Desactivar las notificaciones mejoradas | [Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md)
 | Raíz | Desactivar Antivirus de Microsoft Defender | No se usa (esta configuración debe establecerse en **No configurar para** garantizar que las aplicaciones antivirus de terceros instaladas funcionen correctamente)
-| Raíz | Definir direcciones para omitir el servidor proxy | Ya no es relevante |
-| Raíz | Definir proxy autoconfig (.pac) para conectarse a la red | Ya no es relevante |
-| Raíz | Definir servidor proxy para conectarse a la red | Ya no es relevante |
+| Raíz | Definir direcciones para omitir el servidor proxy | No se usa |
+| Raíz | Definir proxy autoconfig (.pac) para conectarse a la red | No se usa |
+| Raíz | Definir servidor proxy para conectarse a la red | No se usa |
 | Raíz | Configurar el comportamiento de combinación de administradores locales para listas | [Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Raíz | Permitir que el servicio antimalware se inicie con prioridad normal | [Configurar la corrección para exámenes de Antivirus de Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md) |
 | Raíz | Permitir que el servicio antimalware siga ejecutándose siempre | [Configurar la corrección para exámenes de Antivirus de Microsoft Defender](configure-remediation-microsoft-defender-antivirus.md) |
