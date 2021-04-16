@@ -1,6 +1,6 @@
 ---
-title: Incorporación de versiones anteriores de Windows en ATP de Microsoft Defender
-description: Incorporación de versiones anteriores compatibles de dispositivos Windows para que puedan enviar datos de sensor al sensor atp de Microsoft Defender
+title: Incorporación de versiones anteriores de Windows en Microsoft Defender para endpoint
+description: Incorporación de versiones anteriores compatibles de dispositivos Windows para que puedan enviar datos del sensor al sensor de Microsoft Defender para endpoint
 keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, down level
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b180e7555bb3339324d3b99956d8f8ad73dc13c3
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 945645e0f20f316c094f746adb6ba193f6806f86
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186394"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861364"
 ---
-# <a name="onboard-previous-versions-of-windows"></a>Incorporación de versiones anteriores de Windows
+# <a name="onboard-previous-versions-of-windows"></a>Incorporar versiones anteriores de Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -102,7 +102,7 @@ Revise los siguientes detalles para comprobar los requisitos mínimos del sistem
 
 Una vez completado, debería ver puntos de conexión incorporados en el portal en una hora.
 
-### <a name="configure-proxy-and-internet-connectivity-settings"></a>Configuración de proxy y conectividad a Internet
+### <a name="configure-proxy-and-internet-connectivity-settings"></a>Configurar las opciones del proxy y de conectividad a Internet
  
 - Cada extremo de Windows debe poder conectarse a Internet mediante HTTPS. Esta conexión puede ser directa, mediante un proxy o a través de la puerta [de enlace OMS](https://docs.microsoft.com/azure/log-analytics/log-analytics-oms-gateway).
 - Si un proxy o firewall bloquea todo el tráfico de forma predeterminada y permite solo dominios específicos a través o el examen HTTPS (inspección SSL) está habilitado, asegúrese de habilitar el acceso a las direcciones URL del servicio [defender](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server)para puntos de conexión .

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 95c87330eec3cb557e5fea96148d626b7e0ee4b3
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: a22cab9185b2ece2e8e30c00ea747cca823f4920
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768919"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861160"
 ---
 # <a name="protect-your-network"></a>Proteger la red
 
@@ -42,7 +42,7 @@ La protección de red amplía la protección de [la protección web](web-protect
 Para obtener más información acerca de cómo habilitar la protección de red, vea [Enable network protection](enable-network-protection.md). Use directivas de grupo, PowerShell o CSP mdm para habilitar y administrar la protección de red en la red.
 
 > [!TIP]
-> Consulta el sitio de prueba de ATP de Microsoft Defender en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para ver cómo funciona la protección de red.
+> Consulta el sitio de prueba de Microsoft Defender para endpoint en [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) para ver cómo funciona la protección de red.
 
 La protección de red funciona mejor con [Microsoft Defender para endpoint,](microsoft-defender-endpoint.md)lo que le ofrece informes detallados sobre eventos y bloques de protección contra vulnerabilidades como parte de escenarios de [investigación de alertas.](investigate-alerts.md)
 
@@ -82,7 +82,7 @@ Puedes revisar el registro de eventos de Windows para ver los eventos que se cre
 
 1. [Copie el XML directamente](event-views.md).
 
-2. Elija **Aceptar**.
+2. Seleccione **Aceptar**.
 
 Este procedimiento crea una vista personalizada que filtra para mostrar solo los siguientes eventos relacionados con la protección de red:
 

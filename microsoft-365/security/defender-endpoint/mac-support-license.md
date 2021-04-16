@@ -1,6 +1,6 @@
 ---
-title: Solucionar problemas de licencia para ATP de Microsoft Defender para Mac
-description: Solucionar problemas de licencia en ATP de Microsoft Defender para Mac.
+title: Solucionar problemas de licencia para Microsoft Defender para Endpoint para Mac
+description: Solucionar problemas de licencia en Microsoft Defender para Endpoint para Mac.
 keywords: microsoft, defender, atp, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 69dd85394837bb7f37e7d277110c8a5dbf7b6506
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 3fb351d9ce8e9beef812e6aaa7d463161a6af8df
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689118"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862192"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de licencia para Microsoft Defender para Endpoint en macOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "51689118"
 
 **Se aplica a:**
 
-- [Microsoft Defender para endpoint en macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

@@ -1,5 +1,5 @@
 ---
-title: Incorporación de dispositivos al servicio ATP de Microsoft Defender
+title: Incorporación de dispositivos al servicio de Microsoft Defender para endpoints
 description: Incorpora dispositivos, servidores, dispositivos que no son de Windows y aprende a ejecutar una prueba de detección.
 keywords: incorporación, Microsoft Defender para la incorporación de puntos de conexión, incorporación de windows atp, sccm, directiva de grupo, mdm, script local, prueba de detección
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b7a225e29b4b79b2e6caf95332cb91da3dade7f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4aa3e30f34e7d9dc362cc0bbb277aaee5834b4fe
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186958"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861380"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de dispositivos al servicio de Microsoft Defender para endpoints
 
@@ -63,11 +63,11 @@ En la tabla siguiente se enumeran las herramientas disponibles en función del e
 ## <a name="in-this-section"></a>En esta sección
 Tema | Descripción
 :---|:---
-[Incorporación de versiones anteriores de Windows](onboard-downlevel.md)| Incorpora dispositivos Windows 7 y Windows 8.1 a Defender para endpoint. 
-[Incorporación de dispositivos Windows 10](configure-endpoints.md) | Tendrás que incorporar dispositivos para que se informen al servicio Defender for Endpoint. Obtenga información sobre las herramientas y métodos que puede usar para configurar dispositivos en su empresa.
+[Incorporar versiones anteriores de Windows](onboard-downlevel.md)| Incorpora dispositivos Windows 7 y Windows 8.1 a Defender para endpoint. 
+[Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md) | Tendrás que incorporar dispositivos para que se informen al servicio Defender for Endpoint. Obtenga información sobre las herramientas y métodos que puede usar para configurar dispositivos en su empresa.
 [Servidores integrados](configure-server-endpoints.md) |  Incorpore Windows Server 2008 R2 SP1, Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC) versión 1803 y versiones posteriores, Windows Server 2019 y versiones posteriores, y Windows Server 2019 core edition a Defender for Endpoint.
-[Incorporación de dispositivos que no son de Windows](configure-endpoints-non-windows.md) | Defender for Endpoint proporciona una experiencia de operaciones de seguridad centralizada para Windows, así como para plataformas que no son de Windows. Podrás ver alertas de varios sistemas operativos compatibles (SO) en el Centro de seguridad de Microsoft Defender y proteger mejor la red de la organización. Esta experiencia aprovecha los datos del sensor de productos de seguridad de terceros. 
-[Ejecutar una prueba de detección en un dispositivo recién incorporado](run-detection-test.md) | Ejecute un script en un dispositivo recién incorporado para comprobar que está informando correctamente al servicio Defender for Endpoint.
+[Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md) | Defender for Endpoint proporciona una experiencia de operaciones de seguridad centralizada para Windows, así como para plataformas que no son de Windows. Podrás ver alertas de varios sistemas operativos compatibles (SO) en el Centro de seguridad de Microsoft Defender y proteger mejor la red de la organización. Esta experiencia aprovecha los datos del sensor de productos de seguridad de terceros. 
+[Ejecutar una prueba de detección en un dispositivo incorporado recientemente](run-detection-test.md) | Ejecute un script en un dispositivo recién incorporado para comprobar que está informando correctamente al servicio Defender for Endpoint.
 [Configuración de proxy e Internet](configure-proxy-internet.md)| Habilite la comunicación con el servicio en la nube de Defender for Endpoint mediante la configuración del proxy y la configuración de conectividad a Internet.
 [Solucionar problemas de incorporación](troubleshoot-onboarding.md) | Obtenga información sobre cómo resolver problemas que pueden surgir durante la incorporación.
 

@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 6535493efb844f1413c569a28ebf36ddb05c167d
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 68fc924ee14932ebdf92ef76306ba00e352b6030
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760205"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861278"
 ---
 # <a name="investigate-users-in-microsoft-365-security-center"></a>Investigar usuarios en el Centro de seguridad de Microsoft 365
 
@@ -34,16 +34,44 @@ ms.locfileid: "51760205"
 
 - Microsoft 365 Defender
 
-Como parte de la investigación, es posible que encuentre que un usuario se ha visto comprometido.
+Parte de la investigación de incidentes puede incluir cuentas de usuario. Comience con la **pestaña Usuarios** para un incidente de incidentes & **alertas** >*incidentes>* **Usuarios**. 
 
-La página de usuario del Centro de seguridad de Microsoft 365 combina información de Microsoft Defender para endpoint, Microsoft Defender para Identidad y Microsoft Cloud App Security (en función de las licencias que tenga). Esta página es el punto de partida ideal para investigar usuarios y posibles incidentes.
-![Página de usuario](../../media/m3d-userpage.png)
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Ejemplo de una página Usuarios para un incidente":::
 
-Esta página muestra información específica del riesgo de seguridad de un usuario. Esto incluye una puntuación que ayuda a evaluar el riesgo, los eventos recientes y las alertas que contribuyeron al riesgo general del usuario y mucho más.
+Para obtener un resumen rápido de una cuenta de usuario para el incidente, seleccione la marca de verificación junto al nombre de la cuenta de usuario. Por ejemplo:
 
-Puede acceder a esta página desde varias áreas en el Centro de seguridad de Microsoft 365. Puede acceder a esta página desde un incidente específico en la **pestaña** Usuarios. Algunas alertas pueden incluir usuarios como un activo afectado específico. También puede buscar usuarios.  
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Ejemplo del panel de resumen de la cuenta de usuario para un incidente en el Centro de seguridad de Microsoft 365":::
 
-Obtenga más información sobre cómo investigar usuarios y posibles riesgos [en este tutorial de Cloud App Security](/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them).
+Desde aquí, puede seleccionar **Ir a la página de usuario** para ver los detalles de una cuenta de usuario. Por ejemplo:
+
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Ejemplo de la página de cuenta de usuario para un incidente en el Centro de seguridad de Microsoft 365":::
+
+También puede ver esta página seleccionando el nombre de la cuenta de usuario de la lista de la **página** Usuarios.
+
+La página de usuario del Centro de seguridad de Microsoft 365 combina información de Microsoft Defender para endpoint, Microsoft Defender para Identidad y Microsoft Cloud App Security (en función de las licencias que tenga). 
+
+Esta página muestra información específica del riesgo de seguridad de una cuenta de usuario. Esto incluye una puntuación que ayuda a evaluar el riesgo y los eventos recientes y las alertas que contribuyeron al riesgo general del usuario.
+
+Desde esta página, puede realizar estas acciones adicionales: 
+
+- Marcar la cuenta de usuario como comprometida
+- Requerir que el usuario inicie sesión de nuevo
+- Suspender la cuenta de usuario
+- Consulta la configuración de la cuenta de usuario de Azure Active Directory (Azure AD)
+- Ver los archivos propiedad de la cuenta de usuario
+- Ver archivos compartidos con este usuario. 
+
+Por ejemplo:
+
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Ejemplo de las acciones en una cuenta de usuario para un incidente en el Centro de seguridad de Microsoft 365":::
+
+
+<!--
+You can access this page from multiple areas in the Microsoft 365 security center. You can access this page from a specific incident in the **Users** tab. Some alerts might include users as a specific affected asset. You can also search for users.  
+
+Learn more about how to investigate users and potential risk [in this Cloud App Security tutorial](/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them).
+
+--> 
 
 ## <a name="related-topics"></a>Temas relacionados
 

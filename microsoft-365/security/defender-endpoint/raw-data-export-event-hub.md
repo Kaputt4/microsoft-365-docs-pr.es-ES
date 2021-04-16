@@ -1,6 +1,6 @@
 ---
 title: Transmitir eventos de Microsoft Defender para endpoint a Azure Event Hubs
-description: Obtén información sobre cómo configurar ATP de Microsoft Defender para transmitir eventos de búsqueda avanzada a tu Centro de eventos.
+description: Obtén información sobre cómo configurar Microsoft Defender para endpoint para transmitir eventos de búsqueda avanzada a tu centro de eventos.
 keywords: Exportación de datos sin procesar, API de streaming, API, Azure Event Hubs, Almacenamiento de Azure, cuenta de almacenamiento, Búsqueda avanzada, uso compartido de datos sin procesar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 231ba79e1d66eee263b6c1a4335f0a7b54eeb75d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: df305c9fcc7fb9249f2387567600adb899f8c49a
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071907"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861052"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Configurar Microsoft Defender para endpoint para transmitir eventos de búsqueda avanzada a los centros de eventos de Azure
 

@@ -1,6 +1,6 @@
 ---
 title: McAfee to Microsoft Defender for Endpoint - Prepare
-description: Esta es la fase 1, Preparar, para migrar de McAfee a ATP de Microsoft Defender.
+description: Esta es la fase 1, Preparar, para migrar de McAfee a Microsoft Defender para Endpoint.
 keywords: migración, protección contra amenazas avanzada de Windows Defender, atp, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -22,12 +22,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 049539cc5c19d3c6683815d0da949c2a3de10f93
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 45b22d0066496e40bb8f2e17d9f82de860d73ea4
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687798"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861428"
 ---
 # <a name="migrate-from-mcafee---phase-1-prepare-for-your-migration"></a>Migrar desde McAfee: fase 1: preparar la migración
 
@@ -68,7 +68,7 @@ Mantenga McAfee actualizado y asegúrese de que los dispositivos de su organizac
 
 ¿Necesita ayuda para actualizar los dispositivos de su organización? Vea los siguientes recursos:
 
-|Sistema operativo | Recurso |
+|Sistema operativo | Resource |
 |:--|:--|
 |Windows |[Microsoft Update](https://www.update.microsoft.com) |
 |macOS | [Cómo actualizar el software en tu Mac](https://support.apple.com/HT201541)|

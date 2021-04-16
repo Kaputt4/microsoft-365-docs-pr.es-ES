@@ -1,5 +1,5 @@
 ---
-title: Investigar entidades en dispositivos con respuesta en directo en ATP de Microsoft Defender
+title: Investigar entidades en dispositivos con respuesta en directo en Microsoft Defender para endpoint
 description: Accede a un dispositivo mediante una conexión segura del shell remoto para realizar trabajos de investigación y realizar acciones de respuesta inmediatas en un dispositivo en tiempo real.
 keywords: remoto, shell, conexión, live, response, en tiempo real, comando, script, remediate, hunt, export, log, drop, download, file,
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 235df8c84077311444c597b120a19477cfd0986a
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 4898081103faa27c19d3a09ffba1b59670833dd8
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760421"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860802"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigar entidades en dispositivos con respuesta en directo
 

@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Copia de seguridad de contenido de Outlook, OneDrive, Yammer y SharePoint antes de cambiar los planes de Microsoft 365.
-ms.openlocfilehash: d29d4e739a9328a63a491696ba26bee5b1947f0a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ecfd17d779cbb39ff786b192f72621bc94677776
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924065"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860528"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Copia de seguridad de datos antes de cambiar los planes de Microsoft 365 para empresas
 
@@ -66,6 +66,6 @@ https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 
 donde  _\<orgDomain\>_ está la dirección URL de la organización.
   
-Por ejemplo, si el dominio de la organización contoso.onmicrosoft.com, la dirección URL directa al sitio de grupo sería https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx .
+Por ejemplo, si el dominio de la organización contoso.onmicrosoft.com, la dirección URL directa al sitio de grupo sería `https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx` .
   
 Por supuesto, los usuarios también pueden descargar documentos de SharePoint Online desde el sitio de grupo de SharePoint a su equipo local o a otra ubicación en cualquier momento.

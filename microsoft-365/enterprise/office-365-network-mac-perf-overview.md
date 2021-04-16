@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Información general sobre la conectividad de red en el Centro de administración de Microsoft 365 (versión preliminar)
-ms.openlocfilehash: cc01f2a22f6f8c89d0ae8fcd8b53498790930d3e
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 99c05c18f3825680824854f86e469ab4aa8bbcba
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768631"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860868"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Conectividad de red en el Centro de administración de Microsoft 365 (versión preliminar)
 
@@ -63,7 +63,7 @@ Las muestras de medida y las ubicaciones de oficina deben empezar a aparecer 24 
 
 Para esta opción, no se requieren servicios de ubicación de Windows Wi-Fi los servicios de ubicación de Windows. La versión de OneDrive para Windows debe estar actualizada e instalada en al menos un equipo en la ubicación.
 
-También debe agregar ubicaciones en la página Ubicaciones **o** importarlas desde un archivo CSV. Las ubicaciones agregadas deben incluir la información de subred DE LAN de office.
+También debe agregar ubicaciones en la página **Ubicaciones** o importarlas desde un archivo CSV. Las ubicaciones agregadas deben incluir la información de subred DE LAN de office.
 
 Esta opción le permite tener varias oficinas definidas dentro de una ciudad.
 
@@ -121,6 +121,14 @@ Puede ver una vista de tabla de las ubicaciones donde se pueden filtrar, ordenar
 
 > [!div class="mx-imgBorder"]
 > ![Ubicaciones de información de red](../media/m365-mac-perf/m365-mac-perf-locations.png)
+
+## <a name="remote-worker-assessment-and-user-connection-metrics"></a>Evaluación de trabajadores remotos y métricas de conexión de usuario
+
+Clasificamos los registros de tráfico de red como usuarios remotos o in situ y mostramos sus porcentajes en la sección métricas de conexión de usuario del panel de información general. Para las ciudades donde tiene usuarios remotos, encontrará la puntuación de evaluación de red remota específica de la ubicación cuando abra la página de esa ubicación. La lista de ubicaciones tendrá ubicaciones de oficina y ciudades de trabajo remotos, que se pueden filtrar y ordenar. Proporcionamos la puntuación de evaluación de trabajadores remotos, con desglose de puntos para Exchange, SharePoint y Teams.
+
+Los conocimientos de redes del usuario principal se agregan e informan a nivel de ciudad y se limitan a ciudades con un mínimo de 5 empleados remotos. No identificamos empleados individuales que trabajan desde casa.
+
+Sin embargo, las ubicaciones se clasifican automáticamente como in situ o remotas, pero tiene la opción de escribir todas las direcciones IP de salida en el sitio manualmente para garantizar una clasificación del 100 %. Si decide seguir esta ruta, tendrá que activar la casilla Introducir todas las direcciones IP de salida en el sitio manualmente en el control desplegable Configuración de ubicaciones después de agregar todas las direcciones **IP** de salida. Cuando esto se haga, todos los registros de tráfico de red de las direcciones IP de salida que haya marcado como in situ siempre se clasificarán como oficinas y todas las demás direcciones IP de salida se clasificarán como remotas.
 
 ## <a name="specific-office-location-network-performance-summary-and-insights"></a>Resumen y conocimientos específicos del rendimiento de la red de ubicación de oficina
 

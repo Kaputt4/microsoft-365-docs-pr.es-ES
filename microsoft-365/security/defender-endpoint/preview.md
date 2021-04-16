@@ -1,5 +1,5 @@
 ---
-title: Características de vista previa de ATP de Microsoft Defender
+title: Características de vista previa de Microsoft Defender para puntos de conexión
 description: Obtenga información sobre cómo obtener acceso a las características de vista previa de Microsoft Defender para puntos de conexión.
 keywords: vista previa, experiencia de vista previa, Microsoft Defender para endpoint, características, actualizaciones
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4a91fa3c8ff55f46619c7b49eaf973ad94f60bfe
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 817ed5e33505f691b11970e3da4c956afa7dc76c
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698197"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861064"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Características de vista previa de Microsoft Defender para puntos de conexión
 
@@ -62,7 +62,7 @@ Active la configuración de la experiencia de la versión preliminar para estar 
 
 En la versión preliminar se incluyen las siguientes características:
 
-- [Detección de dispositivos](device-discovery.md) <br> Le ayuda a encontrar dispositivos no administrados conectados a la red corporativa sin necesidad de dispositivos adicionales o cambios de proceso engorrosos. Con dispositivos incorporados, puede encontrar dispositivos no administrados en la red y evaluar vulnerabilidades y riesgos. A continuación, puede incorporar dispositivos detectados para reducir los riesgos asociados con tener puntos de conexión no administrados en la red.
+- [Detección de dispositivo](device-discovery.md) <br> Le ayuda a encontrar dispositivos no administrados conectados a la red corporativa sin necesidad de dispositivos adicionales o cambios de proceso engorrosos. Con dispositivos incorporados, puede encontrar dispositivos no administrados en la red y evaluar vulnerabilidades y riesgos. A continuación, puede incorporar dispositivos detectados para reducir los riesgos asociados con tener puntos de conexión no administrados en la red.
 
    > [!IMPORTANT]
    > La detección estándar será el modo predeterminado para todos los clientes de vista previa a partir del 10 de mayo de 2021. Puede optar por conservar el modo básico a través de la página de configuración. 

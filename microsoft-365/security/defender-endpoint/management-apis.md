@@ -1,7 +1,7 @@
 ---
-title: Información general sobre la administración y las API
+title: Introducción a la administración y las API
 ms.reviewer: ''
-description: Obtenga información sobre las herramientas de administración y las categorías de API en ATP de Microsoft Defender
+description: Obtenga información sobre las herramientas de administración y las categorías de API en Microsoft Defender para endpoint
 keywords: incorporación, api, siem, rbac, access, portal, integration, investigation, response, entities, entity, user context, application context, streaming
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 94cfe1cc053be896c137e0c0b9ee02ea53dd2717
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 9e54fb5f2105f0a77c4b63e8d880135005c17168
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187558"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862096"
 ---
-# <a name="overview-of-management-and-apis"></a>Información general sobre la administración y las API 
+# <a name="overview-of-management-and-apis"></a>Introducción a la administración y las API 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -85,5 +85,5 @@ Al habilitar la integración de la información de seguridad y la administració
 ## <a name="related-topics"></a>Temas relacionados
 - [Obtener acceso a las API de Microsoft Defender para puntos de conexión ](apis-intro.md)
 - [API compatibles](exposed-apis-list.md)
-- [Oportunidades de socio técnico](partner-integration.md)
+- [Oportunidades para asociados técnicos](partner-integration.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Informe de cumplimiento y estado del dispositivo en ATP de Microsoft Defender
+title: Informe de cumplimiento y estado del dispositivo en Microsoft Defender para endpoint
 description: Realizar un seguimiento de las detecciones de estado de estado del dispositivo, el estado del antivirus, la plataforma del sistema operativo y las versiones de Windows 10 con el informe de estado y cumplimiento del dispositivo
 keywords: estado de mantenimiento, antivirus, plataforma del sistema operativo, versión de Windows 10, versión, estado, estado
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5229ba068672035c2dce3afee1919f9c2d7f9e44
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 35100a4b8bdaee23c427816450e948ced9ed3191
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186454"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860296"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Informe de cumplimiento y estado del dispositivo en Microsoft Defender para endpoint
 

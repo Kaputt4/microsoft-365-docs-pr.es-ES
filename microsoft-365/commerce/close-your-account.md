@@ -17,12 +17,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo cerrar su cuenta con Microsoft.
-ms.openlocfilehash: 0ee0a649a9adb93ecdbb1cd9dbedbc04dfb46ba0
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 44428654946d31ad249bfd3e7a3609da3e3634a6
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579751"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860552"
 ---
 # <a name="close-your-account"></a>Cerrar la cuenta
 
@@ -32,7 +32,7 @@ Al cerrar la cuenta de Microsoft, se elimina toda la información relacionada co
 
 Antes de iniciar este proceso, asegúrese de realizar una copia de seguridad de los datos que desea conservar.
 
-Para poder realizar las tareas de este artículo, debe ser un administrador global o de facturación. Para más información, consulte[Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+Para poder realizar las tareas de este artículo, debe ser un administrador global o de facturación. Para más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="step-1-delete-users"></a>Paso 1: Eliminar usuarios
 
@@ -42,7 +42,7 @@ Si los usuarios se sincronizan desde local, desactive primero la sincronización
 
 Para eliminar usuarios, vea <a href="/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">User management admin: Delete one or more users</a>.
 
-También puede usar el cmdlet <a href="https://go.microsoft.com/fwlink/?linkid=842230">Remove-MsolUser</a> de PowerShell para eliminar usuarios en masa.
+También puede usar el cmdlet <a href="https://docs.microsoft.com/powershell/module/msonline/remove-msoluser">Remove-MsolUser</a> de PowerShell para eliminar usuarios en masa.
 
 Si su organización usa Active Directory que se sincroniza con Microsoft Azure Active Directory (Azure AD), elimine la cuenta de usuario de Active Directory. Para obtener instrucciones, consulte <a href="/azure/active-directory/users-groups-roles/users-bulk-delete">Eliminación masiva de usuarios en Azure Active Directory</a>.
 

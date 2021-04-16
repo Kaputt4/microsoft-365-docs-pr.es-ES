@@ -1,6 +1,6 @@
 ---
-title: Preparar la implementación de ATP de Microsoft Defender
-description: Preparar la aprobación de las partes interesadas, las escalas de tiempo, las consideraciones del entorno y el orden de adopción al implementar ATP de Microsoft Defender
+title: Preparar Microsoft Defender para la implementación de puntos de conexión
+description: Preparar la aprobación de las partes interesadas, las escalas de tiempo, las consideraciones del entorno y el orden de adopción al implementar Microsoft Defender para endpoint
 keywords: implementar, preparar, partes interesadas, escala de tiempo, entorno, punto de conexión, servidor, administración, adopción
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2704aefb3f15cc3244de6580137fa12204bfc3ce
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a59d09aa4de2644e9904eb854c183d0352aa65c9
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187474"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861172"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Preparar Microsoft Defender para la implementación de puntos de conexión
 
@@ -38,7 +38,7 @@ ms.locfileid: "51187474"
 
 La implementación de Defender for Endpoint es un proceso de tres fases:
 
-| ![fase de implementación: preparar](images/phase-diagrams/prepare.png)<br>Fase 1: Preparar | [![fase de implementación: configuración](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Fase 2: Configuración](production-deployment.md) | [![fase de implementación: incorporación](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Fase 3: Incorporación](onboarding.md) |
+| ![fase de implementación: preparar](images/phase-diagrams/prepare.png)<br>Fase 1: Preparación | [![fase de implementación: configuración](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Fase 2: Configuración](production-deployment.md) | [![fase de implementación: incorporación](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Fase 3: Incorporación](onboarding.md) |
 | ----- | ----- | ----- |
 |*¡Estás aquí!* | ||
 
@@ -87,7 +87,7 @@ Esta sección se usa para garantizar que las partes interesadas entiendan profun
 
 Microsoft recomienda usar el concepto de privilegios mínimos. Defender for Endpoint aprovecha roles integrados en Azure Active Directory. Microsoft recomienda [revisar los diferentes roles disponibles](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) y elegir el adecuado para resolver sus necesidades para cada persona de esta aplicación. Es posible que algunos roles deba aplicarse temporalmente y quitarse una vez completada la implementación.
 
-| Personas                     | Funciones | Rol de Azure AD (si es necesario) | Asignar a |
+| Personas                     | Roles | Rol de Azure AD (si es necesario) | Asignar a |
 |------------------------------|-------|-----------------------------|-----------|
 | Administrador de seguridad       |       |                             |           |
 | Analista de seguridad             |       |                             |           |

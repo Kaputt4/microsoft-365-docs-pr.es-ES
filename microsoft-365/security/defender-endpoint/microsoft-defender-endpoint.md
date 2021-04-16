@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender para punto de conexión
 description: Microsoft Defender para endpoint es una plataforma de seguridad de extremo de empresa que ayuda a defenderse de las amenazas persistentes avanzadas.
-keywords: introducción a Microsoft Defender para endpoint, introducción a protección contra amenazas avanzada de Microsoft Defender, introducción a ATP de Microsoft Defender, ciberseguridad, amenaza persistente avanzada, seguridad empresarial, sensor de comportamiento de máquina, seguridad de la nube, análisis, inteligencia de amenazas, reducción de superficie de ataque, protección de última generación, investigación automatizada y corrección, expertos en amenazas de Microsoft, puntuación segura, búsqueda avanzada, protección contra amenazas de Microsoft, búsqueda de amenazas cibernéticas
+keywords: introducción a Microsoft Defender para endpoint, introducción a protección contra amenazas avanzada de Microsoft Defender, introducción a Microsoft Defender para endpoint, ciberseguridad, amenazas persistentes avanzadas, seguridad empresarial, sensor de comportamiento de máquina, seguridad en la nube, análisis, inteligencia de amenazas, reducción de superficie de ataque, protección de última generación, investigación automatizada y corrección, expertos en amenazas de Microsoft, puntuación segura, búsqueda avanzada, protección contra amenazas de Microsoft, búsqueda de amenazas cibernéticas
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8c5d02a4d76ae7e031ad9f3af0db282cc4cb45ed
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: adc7d780c1af73d8cb4fe229720ac2ed74f90251
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187317"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861832"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
@@ -49,7 +49,7 @@ Defender for Endpoint usa la siguiente combinación de tecnología integrada en 
 
 -   Inteligencia de **amenazas:** generada por cazadores de Microsoft, equipos de seguridad y aumentada por la inteligencia de amenazas proporcionada por socios, la inteligencia de amenazas permite a Defender for Endpoint identificar herramientas, técnicas y procedimientos de atacantes y generar alertas cuando se observan en datos de sensor recopilados.
 
-<center><h2>Microsoft Defender para punto de conexión</center></h2>
+<center><h2>Microsoft Defender para endpoint</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>Administración & vulnerabilidades de amenazas</b></center></a></td>
@@ -94,7 +94,7 @@ Para reforzar aún más el perímetro de seguridad de la red, Microsoft Defender
 
 <a name="edr"></a>
 
-**[Detección y respuesta de puntos de conexión.](overview-endpoint-detection-response.md)**<br>
+**[EDR](overview-endpoint-detection-response.md)**<br>
 Las capacidades de detección y respuesta de extremos se ponen en marcha para detectar, investigar y responder a amenazas avanzadas que pueden haber pasado los dos primeros pilares de seguridad. [La búsqueda avanzada](advanced-hunting-overview.md) proporciona una herramienta de búsqueda de amenazas basada en consultas que le permite encontrar de forma proactiva infracciones y crear detecciones personalizadas.
 
 <a name="ai"></a>
@@ -104,7 +104,7 @@ Junto con la capacidad de responder rápidamente a ataques avanzados, Microsoft 
 
 <a name="ss"></a>
 
-**[Puntuación segura de Microsoft para dispositivos](tvm-microsoft-secure-score-devices.md)**<br>
+**[Puntuación de seguridad de Microsoft para dispositivos](tvm-microsoft-secure-score-devices.md)**<br>
 
 Defender for Endpoint incluye Puntuación segura de Microsoft para dispositivos para ayudarle a evaluar dinámicamente el estado de seguridad de su red empresarial, identificar sistemas sin protección y realizar acciones recomendadas para mejorar la seguridad general de su organización.
 

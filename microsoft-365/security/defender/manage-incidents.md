@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2d2bf18c6cacb377e710f34b74ec8f83bb77d3b1
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: da5a2190a53dfe7f8dd0cc3cf7b410af92ca4ec5
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760073"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861736"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Administrar incidentes en Microsoft 365 Defender
 
@@ -65,7 +65,7 @@ En los casos en los que, al investigar, quieras mover alertas de un incidente a 
 
 ## <a name="edit-the-incident-name"></a>Editar el nombre del incidente
 
-A los incidentes se les asigna automáticamente un nombre en función de los atributos de alerta, como el número de puntos de conexión afectados, los usuarios afectados, los orígenes de detección o las categorías. Esto le permite comprender rápidamente el ámbito del incidente. Por ejemplo: *Incidente de varias fases en varios puntos de conexión notificados por varios orígenes.*
+Microsoft 365 Defender asigna automáticamente un nombre en función de los atributos de alerta, como el número de puntos de conexión afectados, los usuarios afectados, los orígenes de detección o las categorías. Esto le permite comprender rápidamente el ámbito del incidente. Por ejemplo: *Incidente de varias fases en varios puntos de conexión notificados por varios orígenes.*
 
 Puede editar el nombre del incidente desde el campo **Nombre del** incidente en el **panel Administrar** incidente.
 
@@ -97,3 +97,9 @@ Si se trataba de una alerta verdadera, también debe especificar qué tipo de am
 ## <a name="add-comments"></a>Agregar comentarios
 
 Puede agregar varios comentarios a un incidente con el **campo Comentario.** Cada comentario se agrega a los eventos históricos del incidente. Puede ver los comentarios y el historial de un incidente desde el vínculo **Comentarios e** historial en la **página Resumen.**
+
+## <a name="related-topics"></a>Temas relacionados
+
+- [Información general sobre incidentes](incidents-overview.md)
+- [Priorizar incidentes](incident-queue.md)
+- [Investigar incidentes](investigate-incidents.md)

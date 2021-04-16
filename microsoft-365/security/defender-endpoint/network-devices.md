@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 43ade52e18ffc8e5db890cb0776090e9b32419e2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: da15519211599bfc248c20c36cfab456c1661caa
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687678"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862072"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Administración de vulnerabilidades y detección de dispositivos de red
 
@@ -41,6 +41,9 @@ ms.locfileid: "51687678"
 > Para obtener más información, vea Características de vista previa [de Microsoft Defender para endpoint](preview.md).
 
 >¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+
+> [!NOTE]  
+> El Blog sobre detección de [dispositivos](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) de red y evaluaciones de vulnerabilidad publicado \( el 04-13-2021 proporciona información sobre las nuevas capacidades de detección de dispositivos de red en \) Defender para endpoint.  En este artículo se proporciona  información general sobre el desafío que la detección de dispositivos de red está diseñada para abordar e información detallada sobre cómo empezar a usar estas nuevas funcionalidades.
 
 Las funcionalidades de detección de red están disponibles en la sección **Inventario** de dispositivos del Centro de seguridad de Microsoft 365 y las consolas del Centro de seguridad de Microsoft Defender.  
 
@@ -97,20 +100,22 @@ El primer paso es seleccionar un dispositivo que realizará los exámenes de red
     - login.microsoftonline.com
     - *.blob.core.windows.net/networkscannerstable/ *
 
-    Nota: No todas las direcciones URL se especifican en la lista documentada defender para el extremo de la colección de datos permitida.
+    > [!NOTE]
+    > No todas las direcciones URL se especifican en la lista documentada Defender for Endpoint de la colección de datos permitida.
 
 ## <a name="permissions"></a>Permisos
 
-Para configurar trabajos de evaluación, se requiere la siguiente opción de permiso de usuario: **Administrar la configuración de seguridad en el Centro de seguridad**. Para encontrar el permiso, vaya a **Roles**  >  **de configuración**. Para obtener más información, vea [Create and manage roles for role-based access control](user-roles.md)
+Para configurar trabajos de evaluación, se requiere la siguiente opción de permiso de usuario: **Administrar la configuración de seguridad en el Centro de seguridad**. Para encontrar el permiso, vaya a **Roles**  >  **de configuración**. Para obtener más información, vea [Create and manage roles for role-based access control](user-roles.md).
 
 ## <a name="install-the-network-scanner"></a>Instalar el escáner de red
 
-1. Vaya a Trabajos de evaluación de puntos de conexión de configuración de seguridad de **Microsoft 365**  >    >    >   (en "Evaluaciones de red").
+1. Vaya a **Configuración de seguridad de Microsoft 365** Trabajos de evaluación de  >    >    >  **extremos** (en **Evaluaciones de red).**
     1. En el Centro de seguridad de Microsoft Defender, vaya a Configuración y > de evaluación.
 
 2. Descargue el escáner de red e instállo en el dispositivo de evaluación de Defender para endpoint designado.
 
-![Botón Descargar escáner](images/assessment-jobs-download-scanner.png)
+    > [!div class="mx-imgBorder"]
+    > ![Botón Descargar escáner](images/assessment-jobs-download-scanner.png)
 
 ## <a name="network-scanner-installation--registration"></a>Instalación del escáner de red & registro
 
@@ -119,7 +124,9 @@ El proceso de inicio de sesión se puede completar en el propio dispositivo de e
 Para completar el proceso de registro del escáner de red:
 
 1. Copie y siga la dirección URL que aparece en la línea de comandos y use el código de instalación proporcionado para completar el proceso de registro.
-    - Nota: Es posible que deba cambiar la configuración del símbolo del sistema para poder copiar la dirección URL.
+
+    > [!NOTE]
+    > Es posible que deba cambiar la configuración del símbolo del sistema para poder copiar la dirección URL.
 
 2. Escriba el código e inicie sesión con una cuenta de Microsoft que tenga el permiso Defender for Endpoint denominado "Administrar la configuración de seguridad en el Centro de seguridad".
 
@@ -131,13 +138,17 @@ En la página Trabajos de evaluación **de Configuración,** seleccione **Agrega
 
 Para evitar la duplicación de dispositivos en el inventario de dispositivos de red, asegúrese de que cada dirección IP esté configurada solo una vez en varios dispositivos de evaluación.
 
-![Botón Agregar trabajo de evaluación de red](images/assessment-jobs-add.png)
+> [!div class="mx-imgBorder"]
+> ![Botón Agregar trabajo de evaluación de red](images/assessment-jobs-add.png)
 
 Adición de pasos de trabajo de evaluación de red:
 
-1. Elige un nombre de "Trabajo de evaluación" y el "Dispositivo de evaluación" en el que se instaló el escáner de red. Este dispositivo realizará los exámenes periódicos autenticados. 
+1. Elige un nombre de "Trabajo de evaluación" y el "Dispositivo de evaluación" en el que se instaló el escáner de red. Este dispositivo realizará los exámenes periódicos autenticados.
+
 2. Agregue las direcciones IP de los dispositivos de red de destino que se van a examinar (o las subredes donde se implementan estos dispositivos). 
+
 3. Agregue las credenciales SNMP necesarias de los dispositivos de red de destino. 
+
 4. Guarde el trabajo de evaluación de red recién configurado para iniciar el examen periódico de red. 
 
 ### <a name="scan-and-add-network-devices"></a>Examinar y agregar dispositivos de red
@@ -157,13 +168,14 @@ Una vez que se muestren los resultados, puedes elegir qué dispositivos se inclu
 
 Los dispositivos recién detectados se mostrarán en la nueva **pestaña Dispositivos de** red en la **página Inventario de** dispositivos. Puede tardar hasta dos horas después de agregar un trabajo de evaluación hasta que los dispositivos se actualicen.
 
-![Sección Dispositivos de red en el inventario de dispositivos](images/assessment-jobs-device-inventory.png)
+> [!div class="mx-imgBorder"]
+> ![Sección Dispositivos de red en el inventario de dispositivos](images/assessment-jobs-device-inventory.png)
 
 ## <a name="troubleshooting"></a>Solución de problemas
 
 ### <a name="network-scanner-installation-has-failed"></a>Error en la instalación del escáner de red
 
-Compruebe que las direcciones URL necesarias se agregan a los dominios permitidos en la configuración del firewall. Además, asegúrate de que las opciones de proxy estén configuradas como se describe en Configurar el proxy de dispositivo y [la configuración de conectividad a Internet](configure-proxy-internet.md)
+Compruebe que las direcciones URL necesarias se agregan a los dominios permitidos en la configuración del firewall. Además, asegúrate de que las opciones de proxy estén configuradas como se describe en [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
 ### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>La Microsoft.com/devicelogin web no se hizo
 

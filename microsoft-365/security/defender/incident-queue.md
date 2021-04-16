@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 12207d69b0a1565caf762a265c1a0d32158ca291
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 8acd8d85826d7bda399c03cc60f2806af954c6c3
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759860"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861608"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 Defender
 
@@ -44,9 +44,9 @@ You get to the incident queue from **Incidents & alerts > Incidents** on the qui
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes":::
 
-De forma predeterminada, la cola del centro de seguridad de Microsoft 365 muestra incidentes vistos en los últimos seis meses. El incidente más reciente está en la parte superior de la lista para que pueda verlo primero.
+De forma predeterminada, la cola de incidentes en el centro de seguridad de Microsoft 365 muestra incidentes vistos en los últimos seis meses. El incidente más reciente está en la parte superior de la lista para que pueda verlo primero.
 
-La cola de incidentes tiene columnas personalizables (seleccione **Elegir** columnas) que le dan visibilidad de distintas características del incidente o de las entidades afectadas. Esto le ayuda a tomar una decisión fundamentada con respecto a la priorización de incidentes para la anailsis.
+La cola de incidentes tiene columnas personalizables (seleccione **Elegir** columnas) que le dan visibilidad de distintas características del incidente o de las entidades afectadas. Esto le ayuda a tomar una decisión fundamentada con respecto a la priorización de incidentes para su análisis.
 
 Para obtener visibilidad adicional de un vistazo, la nomenclatura automática de incidentes genera nombres de incidentes basados en atributos de alerta, como el número de puntos de conexión afectados, los usuarios afectados, los orígenes de detección o las categorías. Esto le permite comprender rápidamente el ámbito del incidente.
 
@@ -108,7 +108,7 @@ Después de resolver el incidente, tómese un momento para aprender de él para:
 
 - Comprender el tipo de ataque y su impacto.
 - Investigue el ataque en la comunidad de seguridad para obtener una tendencia de ataque de seguridad.
-- Recuerde el flujo de trabajo que usó para resolver el incidente y actualice los flujos de trabajo estándar y los libros de texto según sea necesario.
+- Recuerde el flujo de trabajo que usó para resolver el incidente y actualice los flujos de trabajo estándar y los libros de reproducción según sea necesario.
 
 Este es un resumen del proceso básico.
 

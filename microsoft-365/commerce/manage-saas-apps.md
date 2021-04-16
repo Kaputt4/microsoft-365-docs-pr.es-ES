@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Aprende a activar y administrar aplicaciones de terceros en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 974ce99b55dcb078286d7f6dba35166e51ce62a7
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 457545282801829ca34de0318dd9eb7791866214
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576918"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860540"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Administrar suscripciones de aplicaciones de terceros para su organización
 
@@ -31,7 +31,7 @@ Puedes administrar las licencias y la facturación de aplicaciones de terceros e
 
 Hay varias formas de comprar aplicaciones de terceros.
 
-- **Compra directa:** los clientes pueden comprar directamente suscripciones de [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)o [AppSource.](https://www.appsource.com/)
+- **Compra directa:** los clientes pueden comprar directamente suscripciones de [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)o [AppSource.](https://appsource.microsoft.com/)
 - **Compra de partners:** trabaje con un partner a través del Centro de partners para comprar suscripciones.
 - **Propuesta de Microsoft:** responder a una propuesta de Microsoft Sales que incluye aplicaciones de terceros.
 

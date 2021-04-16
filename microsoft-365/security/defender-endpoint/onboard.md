@@ -1,7 +1,7 @@
 ---
-title: Configurar y administrar las capacidades de ATP de Microsoft Defender
+title: Configurar y administrar las funcionalidades de Microsoft Defender para puntos de conexión
 ms.reviewer: ''
-description: Configurar y administrar las capacidades de ATP de Microsoft Defender, como la reducción de superficie de ataque y la protección de próxima generación
+description: Configurar y administrar Las capacidades de Microsoft Defender para puntos de conexión, como la reducción de superficie de ataque y la protección de próxima generación
 keywords: configurar, administrar, funcionalidades, reducción de superficie de ataque, protección de última generación, controles de seguridad, detección y respuesta de puntos de conexión, investigación y corrección automáticas, controles de seguridad, controles
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -14,39 +14,40 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a0872de9774773c136bca6febd621daba5b2d7d3
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 3ad23e030048506784edd8f1988fa33263a085ae
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186382"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861340"
 ---
 # <a name="configure-and-manage-microsoft-defender-for-endpoint-capabilities"></a>Configurar y administrar las funcionalidades de Microsoft Defender para puntos de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+Obtenga información sobre cómo configurar y administrar las características de Defender for Endpoint para obtener la mejor protección de seguridad para su organización.
 
-Configure y administre todas las funcionalidades de Defender for Endpoint para obtener la mejor protección de seguridad para su organización. 
+Para obtener consejos prácticos sobre cómo conectar nuevos dispositivos en su organización, consulte Incorporación de dispositivos [al servicio de Microsoft Defender para endpoints.](./onboard-configure.md)
 
+## <a name="in-this-section"></a>En esta sección
 
-## <a name="in-this-section"></a>En esta sección 
-Tema | Descripción 
+Tema | Descripción
 :---|:---
-[Configurar capacidades de reducción de superficie de ataque](configure-attack-surface-reduction.md) |  Al garantizar que las opciones de configuración se establecen correctamente y se aplican técnicas de mitigación de vulnerabilidades, este conjunto de capacidades resiste los ataques y la explotación. 
+[Configurar la configuración del Centro de seguridad de Microsoft Defender](preferences-setup.md) | Configure las opciones relacionadas con el portal, como la configuración general, las características avanzadas o habilite la experiencia de vista previa.
+[Configurar capacidades de reducción de superficie de ataque](configure-attack-surface-reduction.md) | Configure las capacidades de reducción de superficie de ataque, para asegurarse de que la configuración se aplica correctamente y de que se establecen técnicas de mitigación de vulnerabilidades.
 [Configurar la protección de última generación](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | Configure la protección de última generación para detectar todo tipo de amenazas emergentes.
-[Configurar las capacidades de Microsoft Threat Experts](configure-microsoft-threat-experts.md) | Configure y administre cómo le gustaría obtener la inteligencia de amenazas de ciberseguridad de los expertos en amenazas de Microsoft.
-[Configurar la integración de Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration)| Configure otras soluciones que se integren con Defender for Endpoint.
-[Soporte técnico de api y administración](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis)| Extraer alertas a siem o usar api para crear alertas personalizadas. Cree y cree informes de Power BI. 
-[Configurar la configuración del Centro de seguridad de Microsoft Defender](preferences-setup.md) |  Configure las opciones relacionadas con el portal, como la configuración general, las características avanzadas, habilite la experiencia de vista previa y otras.
-
-
-
+[Configurar las capacidades de Microsoft Threat Experts](configure-microsoft-threat-experts.md) | Configurar y administrar la inteligencia de amenazas de ciberseguridad de Microsoft Threat Experts.
+[Configurar la integración de Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | Configure otras soluciones que se integren con Defender for Endpoint.
+[Soporte técnico de api y administración](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis) | Extraer alertas a la información de seguridad y administración de eventos (SIEM) o usar las API para crear alertas personalizadas. Cree y cree informes de Power BI.

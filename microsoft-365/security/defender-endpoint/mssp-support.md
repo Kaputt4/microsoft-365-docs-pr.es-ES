@@ -1,6 +1,6 @@
 ---
 title: Oportunidades de asociación del proveedor de servicios de seguridad administrado (MSSP)
-description: Comprender cómo atp de Microsoft Defender se integra con proveedores de servicios de seguridad administrados (MSSP)
+description: Comprender cómo se integra Microsoft Defender para endpoint con los proveedores de servicios de seguridad administrados (MSSP)
 keywords: mssp, integración, administración, seguridad, servicio, proveedor
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3f357553e259075b3a47d6866faee06c98036a8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 790abaad5506a77b70cb8d772e83289d8dbd791f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186586"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860790"
 ---
 # <a name="managed-security-service-provider-partnership-opportunities"></a>Oportunidades de asociación de proveedores de servicios de seguridad administrados
 
@@ -49,7 +49,7 @@ Defender for Endpoint agrega oportunidades de asociación para este escenario y 
 
 
 ## <a name="related-topic"></a>Tema relacionado
-- [Configurar la integración del proveedor de servicios de seguridad administrada](configure-mssp-support.md)
+- [Configurar la integración del proveedor de servicios de seguridad administrados](configure-mssp-support.md)
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: 'ATP de Microsoft Defender para Mac: extensiones del sistema (versión preliminar)'
-description: Este artículo contiene instrucciones para probar la funcionalidad de extensiones del sistema de ATP de Microsoft Defender para Mac. Esta funcionalidad está actualmente en versión preliminar pública.
+title: 'Microsoft Defender para Endpoint para Mac: extensiones del sistema (versión preliminar)'
+description: Este artículo contiene instrucciones para probar la funcionalidad de extensiones del sistema de Microsoft Defender para Endpoint para Mac. Esta funcionalidad está actualmente en versión preliminar pública.
 keywords: microsoft, defender, atp, mac, kernel, system, extensions, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0e89977c10de04d8c3331733cd1432525ac3196d
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 0b593aa0046a28e558523c2f3ebc7da9976f62d3
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689070"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860332"
 ---
 # <a name="microsoft-defender-for-endpoint-on-macos---system-extensions-public-preview"></a>Microsoft Defender para endpoint en macOS: versión preliminar pública de extensiones del sistema)
 
@@ -62,7 +62,7 @@ Estos pasos suponen que ya tienes Defender for Endpoint ejecutándose en el disp
   defaults write com.microsoft.autoupdate2 ChannelName -string Beta
   ```
 
-  Como alternativa, si está en un entorno administrado (JAMF o Intune), puede configurar el canal de actualización de forma remota. Para obtener más información, vea [Deploy updates for Microsoft Defender ATP for Mac: Set the channel name](mac-updates.md#set-the-channel-name).
+  Como alternativa, si está en un entorno administrado (JAMF o Intune), puede configurar el canal de actualización de forma remota. Para obtener más información, vea [Deploy updates for Microsoft Defender for Endpoint for Mac: Set the channel name](mac-updates.md#set-the-channel-name).
 
 ## <a name="deployment-steps"></a>Pasos para la implementación
 
@@ -150,7 +150,7 @@ Si este comando imprime `endpoint_security_extension` , el producto usa la funci
 
    Valide que se han publicado dos alertas en el portal en la página del equipo para escenarios DE BRICOLAJE de EICAR y EDR.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 - P: ¿Por qué todavía veo `kernel_extension` cuando se `mdatp health --field real_time_protection_subsystem` ejecuta?
 

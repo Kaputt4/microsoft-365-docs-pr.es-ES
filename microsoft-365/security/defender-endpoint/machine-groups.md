@@ -1,5 +1,5 @@
 ---
-title: Crear y administrar grupos de dispositivos en ATP de Microsoft Defender
+title: Crear y administrar grupos de dispositivos en Microsoft Defender para endpoint
 description: Crear grupos de dispositivos y establecer niveles de corrección automatizados en ellos mediante la confidción de las reglas que se aplican en el grupo
 keywords: grupos de dispositivos, grupos, corrección, nivel, reglas, grupo de aad, rol, asignación, clasificación
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dfc7c04bbde2b7061c92f5a25115b75a2f5b47b5
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: acd24e5c87a74bbb32835ec170a121c5c0b6bb33
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074339"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860308"
 ---
 # <a name="create-and-manage-device-groups"></a>Crear y administrar grupos de dispositivos
 
@@ -94,5 +94,5 @@ Los dispositivos que no coinciden con ningún grupo se agregan al grupo Disposit
 ## <a name="related-topics"></a>Temas relacionados
 
 - [Administrar el acceso al portal mediante el control de acceso basado en roles](rbac.md)
-- [Crear y administrar etiquetas de dispositivo](machine-tags.md)
+- [Crear y administrar etiquetas de dispositivos](machine-tags.md)
 - [Obtener una lista de grupos de dispositivos de inquilino con la API de Graph](https://docs.microsoft.com/graph/api/device-list-memberof)

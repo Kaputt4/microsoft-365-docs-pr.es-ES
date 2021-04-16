@@ -1,6 +1,6 @@
 ---
-title: Configurar las directivas de ATP de Microsoft Defender para macOS en Jamf Pro
-description: Obtenga información sobre cómo configurar las directivas de ATP de Microsoft Defender para macOS en Jamf Pro
+title: Configurar Microsoft Defender para endpoint para directivas de macOS en Jamf Pro
+description: Obtenga información sobre cómo configurar el punto de conexión de Microsoft Defender para directivas de macOS en Jamf Pro
 keywords: policies, microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79f5837ae6bae6e6a9d952d90605f4cf7b31262e
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 1a00d1c0863db7f4f5f853312f202b5e985b1512
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765136"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862276"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurar las directivas de Microsoft Defender para endpoint en macOS en Jamf Pro
 
@@ -360,7 +360,7 @@ Estos pasos son aplicables a macOS 10.15 (Catalina) o versiones posteriores.
         - **Método Distribution:** Instalar automáticamente *(predeterminado)*
         - **Nivel:** Nivel de equipo *(predeterminado)*
 
-        ![Imagen de la configuración de perfil mdatpmdav](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![Imagen de la nueva pantalla de perfil de configuración de macOS](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
     - Tab **Notifications**, click **Add** y escriba los siguientes valores:
         - **Id. de agrupación:**`com.microsoft.wdav.tray`

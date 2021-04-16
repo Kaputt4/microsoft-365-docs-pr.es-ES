@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender para endpoint en Linux
+title: Microsoft Defender para punto de conexión en Linux
 ms.reviewer: ''
-description: Describe cómo instalar y usar ATP de Microsoft Defender para Linux.
+description: Describe cómo instalar y usar Microsoft Defender para Endpoint para Linux.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0fea9d4dd46be2a77ea27728787a43b5273f92f5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f67dd28902e8b45a5401b60c027faa89d7467cd8
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687762"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861400"
 ---
-# <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para endpoint en Linux
+# <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -83,7 +83,7 @@ Si experimenta algún error de instalación, consulte [Troubleshooting installat
   > No se admite la ejecución de Defender para Endpoint para Linux en paralelo con otras soluciones de seguridad `fanotify` basadas en. Puede dar lugar a resultados impredecibles, incluida la suspensión del sistema operativo.
 
 - Espacio en disco: 1 GB
-- /opt/microsoft/mdatp/sbin/wdavdaemon requiere permiso ejecutable. Para obtener más información, vea "Ensure that the daemon has executable permission" en [Troubleshoot installation issues for Microsoft Defender ATP for Linux](/microsoft-365/security/defender-endpoint/linux-support-install).
+- /opt/microsoft/mdatp/sbin/wdavdaemon requiere permiso ejecutable. Para obtener más información, vea "Asegúrese de que el demonio tiene permiso ejecutable" en Solucionar problemas de instalación de [Microsoft Defender para Endpoint para Linux](/microsoft-365/security/defender-endpoint/linux-support-install).
 - Memoria: 1 GB
     > [!NOTE]
     > Asegúrese de que tiene espacio libre en disco en /var.

@@ -1,6 +1,6 @@
 ---
-title: Implementar actualizaciones para ATP de Microsoft Defender para Mac
-description: Controle las actualizaciones de ATP de Microsoft Defender para Mac en entornos empresariales.
+title: Implementar actualizaciones para Microsoft Defender para Endpoint para Mac
+description: Controle las actualizaciones de Microsoft Defender para Endpoint para Mac en entornos empresariales.
 keywords: microsoft, defender, atp, mac, actualizaciones, implementar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3321c1bd181b89c53e2618fc20fa7f733a20cfc1
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9d373594771efe4eb647c007db3a26efe83e330e
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689058"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860320"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Implementar actualizaciones para Microsoft Defender para Endpoint en macOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "51689058"
 
 **Se aplica a:**
 
-- [Microsoft Defender para endpoint en macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -78,7 +78,7 @@ El `Current` canal contiene la versión más estable del producto.
 
 |Section|Valor|
 |:--|:--|
-| **Dominio** | com.microsoft.autoupdate2 |
+| **Dominio** | `com.microsoft.autoupdate2` |
 | **Key** | ChannelName |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | Beta <br/> Preview <br/> Current |
@@ -96,7 +96,7 @@ Cambiar la frecuencia con la que MAU busca actualizaciones.
 
 |Section|Valor|
 |:--|:--|
-| **Dominio** | com.microsoft.autoupdate2 |
+| **Dominio** | `com.microsoft.autoupdate2` |
 | **Key** | UpdateCheckFrequency |
 | **Tipo de datos** | Entero |
 | **Valor predeterminado** | 720 (minutos) |
@@ -109,7 +109,7 @@ Cambiar la forma en que MAU busca actualizaciones.
 
 |Section|Valor|
 |:--|:--|
-| **Dominio** | com.microsoft.autoupdate2 |
+| **Dominio** | `com.microsoft.autoupdate2` |
 | **Key** | HowToCheck |
 | **Tipo de datos** | Cadena |
 | **Posibles valores** | Manual <br/> AutomaticCheck <br/> AutomaticDownload |
@@ -122,7 +122,7 @@ Cambie si los usuarios locales podrán hacer clic en la opción "Buscar actualiz
 
 |Section|Valor|
 |:--|:--|
-| **Dominio** | com.microsoft.autoupdate2 |
+| **Dominio** | `com.microsoft.autoupdate2` |
 | **Key** | EnableCheckForUpdatesButton |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | True (predeterminado) <br/> False |
@@ -134,7 +134,7 @@ Se establece en true para que el "Join the Office Insider Program..." casilla no
 
 |Section|Valor|
 |:--|:--|
-| **Dominio** | com.microsoft.autoupdate2 |
+| **Dominio** | `com.microsoft.autoupdate2` |
 | **Key** | DisableInsiderCheckbox |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | False (predeterminado) <br/> Verdadero |
@@ -146,7 +146,7 @@ Se establece en false para enviar datos de latido mínimos, sin uso de aplicacio
 
 |Section|Valor|
 |:--|:--|
-| **Dominio** | com.microsoft.autoupdate2 |
+| **Dominio** | `com.microsoft.autoupdate2` |
 | **Key** | SendAllTelemetryEnabled |
 | **Tipo de datos** | Booleano |
 | **Posibles valores** | True (predeterminado) <br/> False |

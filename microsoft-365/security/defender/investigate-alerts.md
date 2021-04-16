@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 601a8674327c424592c65014793599dc19b2bcd3
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 77b30e8a8eee70470115bcd61f081863fa5a41ee
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51759437"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862038"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
@@ -36,76 +36,108 @@ ms.locfileid: "51759437"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Las alertas son la base de todos los incidentes e indican la aparición de eventos malintencionados o sospechosos en su entorno. Las alertas suelen formar parte de un ataque más amplio y proporcionan fragmentos de pistas sobre un incidente.
+Las alertas son la base de todos los incidentes e indican la aparición de eventos malintencionados o sospechosos en su entorno. Las alertas suelen formar parte de un ataque más amplio y proporcionan pistas sobre un incidente.
 
-En Microsoft 365 Defender, las alertas relacionadas se agregan juntas para formar incidentes. Los incidentes siempre proporcionarán el contexto más amplio de un ataque, pero la investigación de alertas puede ser valiosa cuando se requiere un análisis más profundo. 
+En Microsoft 365 Defender, las alertas relacionadas se agregan juntas para formar [incidentes](incidents-overview.md). Los incidentes siempre proporcionarán el contexto más amplio de un ataque, pero la investigación de alertas puede ser valiosa cuando se requiere un análisis más profundo. 
 
+La **cola De alertas** muestra el conjunto actual de alertas. You get to the alerts queue from **Incidents & alerts > Alerts** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).
 
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Ejemplo de la cola de alertas":::
 
-## <a name="using-alert-pages-in-investigations"></a>Uso de páginas de alerta en investigaciones
+Las alertas de diferentes soluciones de seguridad de Microsoft como Microsoft Defender para endpoint, Microsoft Defender para Office 365 y Microsoft 365 Defender aparecen aquí.
 
-En la pestaña Alertas de cualquier página de incidentes, la selección de una alerta le lleva a las páginas de alerta individuales. Una página de alerta se compone de tres secciones: activos afectados, artículo de alerta y el panel de detalles.
+De forma predeterminada, la cola de alertas del Centro de seguridad de Microsoft 365 muestra las alertas nuevas y en curso de los últimos 30 días. La alerta más reciente está en la parte superior de la lista para que pueda verla primero. 
 
-![Imagen de la página de alerta de ejemplo](../../media/new-alert-page2.png)
+En la cola de alertas predeterminada, puede seleccionar Filtros **para** ver un panel **Filtros,** desde el que puede especificar un subconjunto de las alertas. Por ejemplo:
 
-A lo largo de una página de alerta, puede seleccionar el icono de tres puntos (**...**) junto a cualquier entidad para que pueda ver acciones disponibles como abrir la página de activos específica o realizar pasos de corrección específicos.
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Ejemplo del panel de filtros de la cola de alertas":::
 
-### <a name="analyze-affected-assets"></a>Analizar activos afectados
-La sección activos afectados enumera buzones, dispositivos y usuarios afectados por esta alerta. Al seleccionar cualquiera de las tarjetas de activos, se rellena el panel lateral de detalles con información, incluidas otras alertas que se produjeron relacionadas con los activos, si las hubiera.
-
-
-### <a name="trace-an-alerts-role-in-the-alert-story"></a>Seguimiento del rol de una alerta en el artículo de alerta
-El artículo de alerta muestra todos los activos o entidades relacionados con la alerta en una vista de árbol de proceso. La alerta del título es la que está en foco cuando se aterriza por primera vez en la página de la alerta seleccionada. Los activos del artículo de alerta se pueden expandir y hacer clic. Proporcionan información adicional y aceleran la respuesta, ya que permiten realizar acciones directamente en el contexto de la página de alerta. 
-
-> [!NOTE]
-> La sección de artículo de alerta puede contener más de una alerta, con alertas adicionales relacionadas con el mismo árbol de ejecución que aparecen antes o después de la alerta seleccionada.
-
-### <a name="view-more-alert-information-in-the-details-pane"></a>Ver más información de alerta en el panel de detalles
-
-El panel de detalles muestra los detalles de la alerta seleccionada al principio, con detalles y acciones relacionadas con ella. Si selecciona cualquiera de los activos o entidades afectados en el artículo de alerta, el panel de detalles cambia para proporcionar información contextual y acciones para el objeto seleccionado.
-
-Una vez que haya seleccionado una entidad de interés, el panel de detalles cambia para mostrar información sobre el tipo de entidad seleccionada, información histórica cuando está disponible y opciones para realizar acciones en esta entidad directamente desde la página de alerta.
-
-### <a name="manage-alerts"></a>Administrar alertas
-
-Una vez que haya terminado de investigar las alertas, puede volver a la alerta con la que empezó, marcar el estado de la alerta como Resuelto y clasificarla como alerta False o Alerta True. Clasificar alertas ayuda a ajustar el producto para proporcionar alertas más verdaderas y menos falsas.
-
-> [!NOTE]
-> Una forma de administrar alertas mediante el uso de etiquetas. La funcionalidad de etiquetado de Microsoft Defender para Office 365 se está implantando de forma incremental y se encuentra actualmente en versión preliminar. <br>
-> Actualmente, los nombres de etiqueta modificados solo se aplican a las alertas *creadas después de* la actualización. Las alertas que se generaron antes de la modificación no reflejarán el nombre de la etiqueta actualizada. 
-
-
-## <a name="manage-the-unified-alert-queue"></a>Administrar la cola de alertas unificada
-
-Al seleccionar Alertas en Incidentes & alertas en el panel de navegación del centro de seguridad de Microsoft 365, se llega a la cola de alertas unificada. Las alertas de diferentes soluciones de seguridad de Microsoft como Microsoft Defender para endpoint, Microsoft Defender para Office 365 y Microsoft 365 Defender aparecen en esta sección. 
-
-![Imagen de la página de alerta de ejemplo](../../media/unified-alert-queue.png)
-
-La cola De alertas muestra una lista de alertas que se marcaron en la red. De forma predeterminada, la cola muestra alertas vistas en los últimos 30 días. Las alertas más recientes se muestran en la parte superior de la lista, lo que le ayudará a ver primero las alertas más recientes.
-
-> [!NOTE]
-> En el momento del inicio, la cola de alertas unificadas solo tendrá 7 días de alertas de Microsoft Defender para Office 365 disponibles. La cola seguirá compilando con el tiempo. Si necesita realizar una triage alerts antes del inicio de la cola de alertas unificadas, use la cola de alertas en el [Centro de seguridad y cumplimiento](https://protection.office.com/viewalerts).
-
-
-En la navegación superior, puede:
-
-- Aplicar filtros
-- Personalizar columnas para agregar o quitar columnas
-- Exportar datos
-
-También puede filtrar alertas según diferentes criterios:
+Puede filtrar alertas según estos criterios:
 
 - Severity
 - Estado
 - Categoría
 - Origen de detección
+- Etiquetas
 - Policy
 - Activos afectados
-- Primera actividad
-- Última actividad
 
+## <a name="analyze-an-alert"></a>Analizar una alerta
 
-Para iniciar una investigación sobre un incidente, lea [Investigar incidentes en Microsoft 365 Defender](investigate-incidents.md)
+Para ver la página de alerta principal, seleccione el nombre de la alerta. Por ejemplo:
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Ejemplo de la página de detalles de una alerta en el Centro de seguridad de Microsoft 365":::
+
+También puede seleccionar la acción **Abrir la página de alerta** principal en el panel **Administrar** alerta.
+
+Una página de alerta se compone de estas secciones: 
+
+- Artículo de alerta
+- Acciones realizadas (incluidos los activos afectados)
+- Eventos relacionados
+- Detalles de resumen
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Ejemplo de la página de detalles de una alerta en el Centro de seguridad de Microsoft 365":::
+
+A lo largo de una página de alerta, puede seleccionar los puntos suspensivos (**...**) junto a cualquier entidad para ver acciones disponibles, como abrir la página de activos específica o realizar pasos de corrección específicos.
+
+### <a name="analyze-affected-assets"></a>Analizar activos afectados
+
+La **sección Acciones realizadas** tiene una lista de activos afectados, como buzones, dispositivos y usuarios afectados por esta alerta. 
+
+También puede seleccionar **Ver en el centro** de  acciones para ver la pestaña Historial del Centro de acciones en el Centro de seguridad de Microsoft 365.  
+
+### <a name="trace-an-alerts-role-in-the-alert-story"></a>Seguimiento del rol de una alerta en el artículo de alerta
+
+El artículo de alerta muestra todos los activos o entidades relacionados con la alerta en una vista de árbol de proceso. La alerta del título es la que está en foco cuando se aterriza por primera vez en la página de la alerta seleccionada. Los activos del artículo de alerta se pueden expandir y hacer clic. Proporcionan información adicional y aceleran la respuesta, ya que permiten realizar acciones directamente en el contexto de la página de alerta. 
+
+> [!NOTE]
+> La sección de artículo de alerta puede contener más de una alerta, con alertas adicionales relacionadas con el mismo árbol de ejecución que aparecen antes o después de la alerta seleccionada.
+
+### <a name="view-more-alert-information-on-the-details-page"></a>Ver más información de alerta en la página de detalles
+
+La página de detalles muestra los detalles de la alerta seleccionada, con detalles y acciones relacionadas con ella. Si selecciona cualquiera de los activos o entidades afectados en el artículo de alerta, la página de detalles cambia para proporcionar información contextual y acciones para el objeto seleccionado.
+
+Una vez que haya seleccionado una entidad de interés, la página de detalles cambia para mostrar información sobre el tipo de entidad seleccionada, información histórica cuando está disponible y opciones para realizar acciones en esta entidad directamente desde la página de alerta.
+
+## <a name="manage-alerts"></a>Administrar alertas
+
+Para administrar una alerta, seleccione la alerta en la cola de alertas de su fila para ver un **panel Administrar alertas.** Por ejemplo:
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Ejemplo del panel de resumen de una alerta":::
+
+El **panel Administrar alerta** permite especificar:
+
+- Estado de alerta (Nuevo, Resuelto, En curso).
+- Clasificación de la alerta (No establecido, Alerta verdadera, Alerta falsa).
+- Para la clasificación como una alerta verdadera, el tipo de amenaza de la alerta en **el campo Determinación.**
+- Un comentario sobre la alerta.
+
+> [!NOTE]
+> Una forma de administrar alertas mediante el uso de etiquetas. La funcionalidad de etiquetado de Microsoft Defender para Office 365 se está implantando de forma incremental y actualmente está en versión preliminar. <br>
+> Actualmente, los nombres de etiqueta modificados solo se aplican a las alertas *creadas después de* la actualización. Las alertas que se generaron antes de la modificación no reflejarán el nombre de la etiqueta actualizada. 
+
+Desde este panel, también puede realizar estas acciones adicionales: 
+
+- Abrir la página de alerta principal
+- Consultar a un experto en amenazas de Microsoft
+- Ver envío
+- Vincular a otro incidente
+- Ver la alerta en una escala de tiempo
+- Crear una regla de supresión
+
+Por ejemplo:
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Ejemplo de las acciones de una alerta en el Centro de seguridad de Microsoft 365":::
+
+La lista de acciones adicionales depende del tipo de alerta.
+
+## <a name="resolve-an-alert"></a>Resolver una alerta
+
+Una vez que haya terminado de investigar una alerta  y se pueda resolver, vaya  al panel Administrar alerta de la alerta y marque el estado de la alerta como Resuelto y clasifique como alerta **False** o **Alerta True**. Para las alertas true, especifique el tipo de amenaza de la alerta en el **campo Determinación.**
+
+Clasificar alertas y especificar su determinación ayuda a ajustar Microsoft 365 Defender para proporcionar alertas más verdaderas y menos falsas.
+
 ## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)

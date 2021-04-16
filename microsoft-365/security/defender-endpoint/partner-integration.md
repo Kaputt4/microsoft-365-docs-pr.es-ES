@@ -1,7 +1,7 @@
 ---
-title: Escenarios y oportunidades de asociado de ATP de Microsoft Defender
+title: Escenarios y oportunidades de socio de Microsoft Defender para puntos de conexión
 ms.reviewer: ''
-description: Obtenga información sobre cómo ampliar las ofertas de seguridad existentes sobre el marco abierto y un amplio conjunto de API para crear extensiones e integraciones con ATP de Microsoft Defender
+description: Obtenga información sobre cómo ampliar las ofertas de seguridad existentes sobre el marco abierto y un amplio conjunto de API para crear extensiones e integraciones con Microsoft Defender para endpoint
 keywords: API, partner, extend, open framework, apis, extensions, integrations, detection, management, response, vulnerabilities, intelligence
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1db82afa06fd0b6b3d7228aaf3020c5496ed69e7
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: be2f33514a568f290a3fc5cf0adc62db72243a6f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186898"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861114"
 ---
 # <a name="microsoft-defender-for-endpoint-partner-opportunities-and-scenarios"></a>Escenarios y oportunidades de socio de Microsoft Defender para puntos de conexión
 
@@ -63,4 +63,4 @@ Los escenarios anteriores sirven como ejemplos de la extensibilidad de la plataf
 Siga los pasos descritos en Convertirse en un partner de [Microsoft Defender para endpoint](get-started-partner-integration.md) para integrar la solución en Defender para endpoint.
 
 ## <a name="related-topic"></a>Tema relacionado
-- [Información general sobre la administración y las API](management-apis.md)
+- [Introducción a la administración y las API](management-apis.md)

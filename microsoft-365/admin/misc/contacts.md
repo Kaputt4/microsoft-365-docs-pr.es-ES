@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: Obtén información sobre cómo crear contactos en el Centro de administración y administrar la lista global de direcciones.
-ms.openlocfilehash: 74618056c0b8635922c9f957dc8cd6d16c320fe3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6eae98472d6be947d3f0698bd2e7a9409b56824b
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914815"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860600"
 ---
 # <a name="quick-help-contacts"></a>Ayuda rápida: Contactos
 
@@ -62,4 +62,4 @@ Use Windows PowerShell y un archivo CSV (valores separados por comas) para reali
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a>¿Qué sucede si no he obtenido respuesta a mi pregunta?
 
-Consulte el resto de la [ayuda para administradores](/microsoft-365/admin/misc/index) o envíenos sus comentarios más abajo.
+Consulte el resto de la [ayuda para administradores](https://docs.microsoft.com/microsoft-365/admin/) o envíenos sus comentarios más abajo.

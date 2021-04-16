@@ -1,5 +1,5 @@
 ---
-title: Ver y organizar la lista de dispositivos ATP de Microsoft Defender
+title: Ver y organizar la lista de dispositivos de Microsoft Defender para endpoints
 description: Obtenga información sobre las características disponibles que puede usar en la lista dispositivos, como ordenar, filtrar y exportar la lista para mejorar las investigaciones.
 keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9068983b5f61305b1f3da4d076e99e71974e8df4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a031a35929f319e87a9ad1a9ca48d6bf95a3ef72
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185676"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861580"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-devices-list"></a>Ver y organizar la lista de Microsoft Defender para dispositivos de punto de conexión
 

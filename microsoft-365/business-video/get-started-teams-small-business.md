@@ -1,5 +1,5 @@
 ---
-title: Introducción a Microsoft Teams en su pequeña empresa
+title: Configurar Microsoft Teams para empresas pequeñas
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo usar Microsoft Teams en su pequeña empresa.
-ms.openlocfilehash: 592d5eda985239f79ce42291af840ff7762a903c
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: b77ad43722764895a4f89c623d4af9403aa25e5b
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034318"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860564"
 ---
-# <a name="get-started-with-microsoft-teams-in-your-small-business"></a>Introducción a Microsoft Teams en su pequeña empresa
+# <a name="get-started-with-microsoft-teams-in-your-small-business"></a>Configurar Microsoft Teams para empresas pequeñas
 
 - [Usar Teams para su empresa (vídeo)](#use-teams-for-your-business-video)
 - [Hospedar reuniones en línea para su empresa (vídeo)](#host-online-meetings-for-your-business-video)
@@ -47,7 +47,7 @@ Para obtener ayuda con el trabajo remoto, se recomienda empezar con estos tres p
 
 ## <a name="1-get-ready"></a>1. Prepárese 
 
-Empezar es fácil. Si ya tienes una suscripción a Microsoft 365, asegúrate de que todos tengan una licencia que incluya Microsoft Teams. Si su empresa aún no tiene Microsoft Teams, puede encontrar el Microsoft Teams adecuado [para su empresa](https://aka.ms/TeamsBusinessBasic) y registrarse.
+Empezar es fácil. Si ya tienes una suscripción a Microsoft 365, asegúrate de que todos tengan una licencia que incluya Microsoft Teams. Si su empresa aún no tiene Microsoft Teams, puede encontrar el Microsoft Teams adecuado [para su empresa](https://www.microsoft.com/microsoft-teams/teams-for-work) y registrarse.
 
 ### <a name="get-microsoft-teams-ready-for-your-customers"></a>Preparar Microsoft Teams para sus clientes
 
@@ -115,7 +115,7 @@ Para ayudar a los empleados a sacar el máximo partido de Microsoft Teams, puede
 
 - Cree o promueva a su [equipo de toda la](https://support.microsoft.com/office/create-an-org-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3) organización un lugar para aprender y hacer las cosas.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Para profundizar en la funcionalidad de Microsoft Teams...
 
@@ -133,4 +133,4 @@ Convierte cualquier pc, Mac o dispositivo móvil en un teléfono empresarial en 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Facultar a su pequeña empresa con trabajo remoto](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work.md) (artículo)
+[Facultar a su pequeña empresa con trabajo remoto](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work) (artículo)

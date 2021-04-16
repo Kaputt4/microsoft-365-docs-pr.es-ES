@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5b2baa2041a8cffcea212eb449d40b9a9cbfc22a
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: e1e028f7b58df07eccf945b3a79012b4ea12366d
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759510"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861628"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidentes en Microsoft 365 Defender
 
@@ -51,7 +51,7 @@ Dado que unir las alertas individuales para obtener información sobre un ataque
 Vea esta breve introducción a los incidentes en Microsoft 365 Defender (4 minutos).
 
 <br>
-<br>
+
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
 La agrupación de alertas relacionadas en un incidente le ofrece una vista completa de un ataque. Por ejemplo, puede ver:

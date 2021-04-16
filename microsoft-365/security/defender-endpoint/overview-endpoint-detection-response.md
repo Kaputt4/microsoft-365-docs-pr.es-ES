@@ -1,8 +1,8 @@
 ---
 title: Información general sobre las capacidades de detección y respuesta de puntos de conexión
 ms.reviewer: ''
-description: Obtenga información sobre las capacidades de detección y respuesta de puntos de conexión en ATP de Microsoft Defender
-keywords: ''
+description: Obtenga información sobre las capacidades de detección y respuesta de puntos de conexión en Microsoft Defender para endpoint
+keywords: microsoft Defender para puntos de conexión, detección y respuesta de puntos de conexión, respuesta, detección, ciberseguridad, protección
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a5a665fac1883016ac222197ba8322f78e2558f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 138a6afde9e8c601fd41811928580644b85bf2e2
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186178"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861724"
 ---
 # <a name="overview-of-endpoint-detection-and-response"></a>Información general sobre la detección y respuesta de puntos de conexión
 

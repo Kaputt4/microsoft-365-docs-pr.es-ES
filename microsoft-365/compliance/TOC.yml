@@ -301,7 +301,7 @@
               href: how-dlp-works-between-admin-centers.md
             - name: Configurar y ver alertas para las directivas DLP (versión preliminar)
               href: dlp-configure-view-alerts-policies.md
-            - name: Usar etiquetas de confidencialidad como condición en las directivas DLP (vista previa)
+            - name: Usar etiquetas de confidencialidad como condición en las directivas DLP
               href: dlp-sensitivity-label-as-condition.md
             - name: Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no sean de Microsoft
               href: dlp-use-policies-non-microsoft-cloud-apps.md
@@ -385,8 +385,12 @@
           items:
             - name: CellTrust
               href: archive-celltrust-data.md
-            - name: Cisco Jabber
+            - name: Cisco Jabber en MS SQL
               href: archive-ciscojabberonmssql-data.md
+            - name: Cisco Jabber en Oracle (versión preliminar)
+              href: archive-ciscojabberonoracle-data.md
+            - name: Cisco Jabber en PostgreSQL (versión preliminar)
+              href: archive-ciscojabberonpostgresql-data.md
             - name: EML
               href: archive-eml-data.md
             - name: Conectar FX
