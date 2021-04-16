@@ -222,6 +222,7 @@
 
 ### [Microsoft Defender para punto de conexión en iOS]()
 #### [Introducción a Microsoft Defender para punto de conexión en iOS](microsoft-defender-endpoint-ios.md)
+#### [Novedades](ios-whatsnew.md)
 
 #### [Implementar]()
 ##### [Implementar Microsoft Defender para punto de conexión en iOS a través de Intune](ios-install.md)
@@ -631,4 +632,5 @@
 ##### [Migrar las reglas de la reducción de la superficie expuesta a ataques](migrating-asr-rules.md)
 
 # [Microsoft 365 Defender](../index.yml)
-# [Defender para Office 365](../office-365-security/overview.md)
+# [Defender para Office 365](../office-365-security/index.yml)
+# [Defender for Identity](https://docs.microsoft.com/defender-for-identity/)
