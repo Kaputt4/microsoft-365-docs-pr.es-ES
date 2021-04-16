@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 193e7e634ecf8407816db10c820edcd241b94b12
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 4f3b2b54370e3481699a540dd8fd2acc30be7514
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760169"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768883"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender
 
@@ -302,8 +302,8 @@ Si se produce un error en la comprobación y el entorno usa un proxy para conect
 
 Si encuentra problemas al incorporar un servidor, siga los siguientes pasos de comprobación para solucionar posibles problemas.
 
-- [Asegúrese de que Microsoft Monitoring Agent (MMA) esté instalado y configurado para informar de los datos del sensor al servicio](configure-server-endpoints.md#server-mma)
-- [Asegúrese de que la configuración de proxy de servidor y conectividad a Internet esté configurada correctamente](configure-server-endpoints.md#server-proxy)
+- [Asegúrese de que Microsoft Monitoring Agent (MMA) esté instalado y configurado para informar de los datos del sensor al servicio](configure-server-endpoints.md)
+- [Asegúrese de que la configuración de proxy de servidor y conectividad a Internet esté configurada correctamente](configure-server-endpoints.md)
 
 También es posible que tenga que comprobar lo siguiente:
 

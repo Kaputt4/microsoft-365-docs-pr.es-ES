@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Los administradores pueden obtener más información sobre las características contra la suplantación de identidad disponibles en Exchange Online Protection (EOP), que pueden ayudar a reducir los ataques de suplantación de identidad de los remitentes y dominios falsos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 54b94e2d2cc0395ce7a9785887c253df3addf7fa
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 20294bf00c62e59da33b54ea0c8ee85f7b1372af
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688782"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51769027"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protección contra la suplantación de identidad en EOP
 
@@ -120,7 +120,7 @@ Microsoft distingue entre dos tipos de mensajes falsificados:
 
   - `reason=000` indica que el mensaje falló en la autentificación explícita del correo electrónico. `reason=001` indica que el mensaje ha producido un error de autenticación de correo electrónico implícita.
 
-  - SFTY es el nivel de seguridad del mensaje. 9 indica suplantación de identidad (phishing), .22 indica suplantación entre dominios.
+  - `SFTY` es el nivel de seguridad del mensaje. 9 indica suplantación de identidad (phishing), .22 indica suplantación entre dominios.
 
 > [!NOTE]
 > Si ha recibido un mensaje como ***compauth=fail reason=###** _ y necesita información sobre la autenticación compuesta (compauth) y los valores relacionados con la suplantación de identidad, vea [_Encabezados de mensaje de correo no deseado en Microsoft 365*](anti-spam-message-headers.md). O vaya directamente a los códigos de [*motivos*](anti-spam-message-headers.md).

@@ -245,6 +245,8 @@
               href: dlp-on-premises-scanner-learn.md
             - name: Obtenga información sobre el Centro de cumplimiento de Microsoft (versión preliminar).
               href: dlp-chrome-learn-about.md
+            - name: Obtenga información sobre el panel de alertas de prevención de pérdida de datos
+              href: dlp-alerts-dashboard-learn.md
         - name: Introducción a DLP
           items:
             - name: Introducción a la directiva predeterminada de DLP
@@ -261,6 +263,8 @@
               href: endpoint-dlp-configure-proxy.md
             - name: Introducción al Centro de cumplimiento de Microsoft (versión preliminar).
               href: dlp-chrome-get-started.md
+            - name: Introducción al panel de alertas de prevención de pérdida de datos
+              href: dlp-alerts-dashboard-get-started.md
             - name: "Herramientas y métodos de incorporación de la prevención de pérdida de datos en punto de conexión para dispositivos Windows\_10"
               items:
                 - name: "Herramientas y métodos de incorporación para dispositivos Windows\_10"
@@ -594,6 +598,8 @@
               href: ediscovery-decryption.md
             - name: Recopilar información de diagnóstico de eDiscovery
               href: ediscovery-diagnostic-info.md
+            - name: Solución de problemas de suspensión de eDiscovery
+              href: hold-distribution-errors.md
             - name: Solucionar problemas habituales de eDiscovery
               href: ediscovery-troubleshooting-common-issues.md
             - name: Reintentar una búsqueda errónea
@@ -748,6 +754,8 @@
               href: what-is-stored-in-exo-mailbox.md
             - name: Descifrado en las herramientas de eDiscovery
               href: ediscovery-decryption.md
+            - name: Solución de problemas de suspensión de eDiscovery
+              href: hold-distribution-errors.md
             - name: Recopilar información de diagnóstico de eDiscovery
               href: ediscovery-diagnostic-info.md
             - name: Buscar actividades de eDiscovery en el registro de auditoría
@@ -766,6 +774,8 @@
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: Aumentar la cuota de elementos recuperables para los buzones de correo en retención
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: Solución de problemas de suspensión de eDiscovery
+      href: hold-distribution-errors.md
     - name: Conservar destinatarios CCO y del grupo de distribución expandido
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Administrar las auditorías y las directivas de alerta

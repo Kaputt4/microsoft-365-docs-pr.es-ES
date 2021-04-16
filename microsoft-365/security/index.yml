@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Documentación de Seguridad de Microsoft 365
-summary: Conozca las sólidas soluciones de seguridad y los servicios de Seguridad de Microsoft 365, para que pueda proteger mejor su organización en las superficies de ataque.
+summary: El Centro de seguridad de Microsoft 365 une varias tecnologías de seguridad en una consola de administración completa, con mejoras para proteger su empresa.
 metadata:
   title: Documentación de Seguridad de Microsoft 365
   description: 'Obtenga más información sobre Microsoft Defender para punto de conexión: cómo protege los puntos de conexión de ciberamenazas y proporciona a los equipos de operaciones de seguridad con capacidades para corregir amenazas.'
@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 02/05/2021
   localization_priority: Priority
-  ms.openlocfilehash: c7ec3e0bb970d74d9e33c3d74eb0cd18aaf8d16c
-  ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+  ms.openlocfilehash: a8d2e2c5ec41436bba7f013304daa8f259db9444
+  ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "51200358"
+  ms.lasthandoff: 04/15/2021
+  ms.locfileid: "51768559"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
