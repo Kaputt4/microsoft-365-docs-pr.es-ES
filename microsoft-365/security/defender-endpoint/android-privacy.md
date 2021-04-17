@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d38d7a54aa860049e1968e5b92c801107bea0514
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 79f8882e21f23e75d85813cde03260ef17adf246
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687966"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876114"
 ---
-#  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender para endpoint en Android: información de privacidad
+#  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender para punto de conexión en Android: información de privacidad
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -32,7 +32,9 @@ ms.locfileid: "51687966"
 > ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Defender for Endpoint para Android recopila información de los dispositivos Android configurados y la almacena en el mismo espacio empresarial donde tiene Defender for Endpoint.
+Defender for Endpoint para Android recopila información de los dispositivos Android configurados y la almacena en el mismo espacio empresarial donde tiene Defender for Endpoint. La información se recopila para ayudar a mantener Defender for Endpoint for iOS seguro, actualizado, con el rendimiento esperado y para admitir el servicio.
+
+Para obtener más información sobre el almacenamiento de datos, vea [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
 
 La información se recopila para ayudar a mantener Defender for Endpoint for Android seguro, actualizado, con el rendimiento esperado y para admitir el servicio.
 
@@ -42,7 +44,7 @@ Los datos requeridos constan de datos necesarios para que Defender for Endpoint 
 
 ### <a name="app-information"></a>Información de la aplicación
 
-Información sobre paquetes de aplicaciones Android (APK) en el dispositivo, incluidos los
+Información sobre **paquetes de** aplicaciones android malintencionadas (APK) en el dispositivo, incluidos los
 
 -  Instalar origen
 -  Ubicación de almacenamiento (ruta de acceso de archivo) del APK
@@ -50,7 +52,7 @@ Información sobre paquetes de aplicaciones Android (APK) en el dispositivo, inc
 
 ### <a name="web-page--network-information"></a>Página web / Información de red
 
-- Dirección URL completa (en exploradores compatibles), cuando se hace clic en
+- Dirección URL completa del sitio web solo cuando se detecta una conexión malintencionada o una página web.
 - Información de conexión
 - Tipo de protocolo (como HTTP, HTTPS, etc.)
 
@@ -73,6 +75,9 @@ Información sobre paquetes de aplicaciones Android (APK) en el dispositivo, inc
     -   Nombre principal de usuario: id. de correo electrónico del usuario
 
 ### <a name="product-and-service-usage-data"></a>Datos de uso de productos y servicios
+
+La siguiente información se recopila solo para la aplicación de Microsoft Defender para endpoint instalada en el dispositivo. 
+
 -   Información del paquete de la aplicación, incluido el nombre, la versión y el estado de actualización de la aplicación
 
 -   Acciones realizadas en la aplicación

@@ -18,12 +18,12 @@ description: Los administradores pueden aprender a usar la directiva de entrega 
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX
-ms.openlocfilehash: 09e07d8406b470fd3dac25944d013b997f2f90c1
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 9d737472be5da2af0a0a36beb4b7914b8bfe3a10
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760440"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876070"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -35,7 +35,7 @@ ms.locfileid: "51760440"
 > [!NOTE]
 > La característica que se describe en este artículo está en Versión preliminar, no está disponible para todos y está sujeta a cambios.
 
-Queremos mantener su organización segura de forma [predeterminada,](secure-by-default.md)por lo que Exchange Online Protection (EOP) no permite listas seguras ni omitir el filtrado de mensajes que resultan en veredictos de phishing de elevada confianza o malware. Sin embargo, reconocemos que hay escenarios específicos que requieren la entrega de mensajes sin filtrar. Por ejemplo:
+Para mantener la organización segura de forma [predeterminada,](secure-by-default.md)Exchange Online Protection (EOP) no permite listas seguras ni omitir el filtrado de mensajes que resulte en veredictos de phishing de elevada confianza o malware. Pero hay escenarios específicos que requieren la entrega de mensajes sin filtrar. Por ejemplo:
 
 - **Simulaciones de suplantación** de identidad de terceros: los ataques simulados pueden ayudarle a identificar usuarios vulnerables antes de que un ataque real impacte en su organización.
 - Buzones de operaciones de seguridad **(SecOps):** buzones dedicados que usan los equipos de seguridad para recopilar y analizar mensajes sin filtrar (tanto buenos como malos).
@@ -106,8 +106,8 @@ Las entradas de buzón de SecOps que configuró se muestran en la **pestaña Buz
 
 Además de los dos escenarios con los que la directiva de entrega avanzada puede ayudarle, hay otros escenarios que pueden requerir omitir el filtrado:
 
-- **Filtros de** terceros: si el registro MX del dominio no apunta a Office 365 (los mensajes se enruta en otro lugar [primero),](secure-by-default.md) la seguridad de forma predeterminada no está disponible.
+- **Filtros de** terceros: si el registro  MX de su dominio no apunta a Office 365 (los mensajes se enruta en otro lugar primero), [la](secure-by-default.md) seguridad de forma predeterminada no *está disponible*.
 
   Para omitir el filtrado de Microsoft para los mensajes que ya han sido evaluados por el filtrado de terceros, use reglas de flujo de correo (también conocidas como reglas de transporte), vea Usar reglas de flujo de correo para establecer el [SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)en mensajes .
 
-- **Falsos positivos** en revisión: es posible que desee permitir temporalmente que determinados mensajes que Microsoft sigue analizando a través de [envíos](admin-submission.md) de administrador informen de mensajes buenos conocidos que se marcan incorrectamente como incorrectos para Microsoft (falsos positivos). Al igual que con todas las invalidaciones, se recomienda encarecidamente que estas asignaciones sean temporales.
+- **Falsos positivos** en revisión: es posible que desee permitir temporalmente que determinados mensajes que Microsoft sigue analizando a través de [envíos](admin-submission.md) de administrador informen de mensajes buenos conocidos que se marcan incorrectamente como incorrectos para Microsoft (falsos positivos). Al igual que con todas las invalidaciones, se recomienda **_encarecidamente_** que estas asignaciones se puedan realizar temporalmente.
