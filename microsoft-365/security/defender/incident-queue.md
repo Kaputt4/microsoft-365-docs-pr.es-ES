@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8acd8d85826d7bda399c03cc60f2806af954c6c3
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: cd571414512ce876e730199b21bf755e4c4b733f
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861608"
+ms.locfileid: "51876204"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 Defender
 
@@ -88,7 +88,7 @@ Este es el flujo de trabajo típico para responder a incidentes:
 1. Identifique y triage los incidentes de mayor prioridad para investigación y resolución.
 2. Para cada incidente de prioridad alta, inicie una [investigación:](investigate-incidents.md)
 
-   a. Vea el resumen del incidente para comprender su ámbito, qué entidades se ven afectadas y gravedad (la **pestaña Resumen).**
+   a. Vea el resumen del incidente para comprender su ámbito y gravedad y qué entidades se ven afectadas (la **pestaña Resumen).**
 
    b. Comience a ver las alertas para comprender su origen, ámbito y gravedad (la **pestaña** Alertas).
 
@@ -98,17 +98,18 @@ Este es el flujo de trabajo típico para responder a incidentes:
    
    e. Según sea necesario, use la información del conjunto de datos para el incidente para obtener más información (la **pestaña Evidencia y** respuesta).
 
-A medida que investigue, debe preocuparse de:
+   A medida que investigue, debe preocuparse de:
 
-- Contención: reducir cualquier impacto adicional en el espacio empresarial.
-- Eliminación de la amenaza de seguridad.
-- Recuperación: restauración de los recursos del espacio empresarial en el estado en el que se encontraban antes del ataque.
+   - Contención: reducir cualquier impacto adicional en el espacio empresarial.
+   - Eliminación de la amenaza de seguridad.
+   - Recuperación: restauración de los recursos del espacio empresarial en el estado en el que se encontraban antes del ataque.
 
-Después de resolver el incidente, tómese un momento para aprender de él para:
+3. Después de resolver el incidente, tómese el tiempo para:
 
-- Comprender el tipo de ataque y su impacto.
-- Investigue el ataque en la comunidad de seguridad para obtener una tendencia de ataque de seguridad.
-- Recuerde el flujo de trabajo que usó para resolver el incidente y actualice los flujos de trabajo estándar y los libros de reproducción según sea necesario.
+   - Comprender el tipo de ataque y su impacto.
+   - Investigue el ataque en la comunidad de seguridad para obtener una tendencia de ataque de seguridad.
+   - Recuerde el flujo de trabajo que usó para resolver el incidente y actualice los flujos de trabajo estándar y los libros de reproducción según sea necesario.
+   - Determine si es necesario realizar cambios en la posición de seguridad y siga los pasos necesarios para implementarlos.
 
 Este es un resumen del proceso básico.
 
@@ -118,7 +119,7 @@ Este es un resumen del proceso básico.
 
 Después de determinar qué incidente requiere la prioridad más alta, selecciónelo e inicie la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)
 - [Administrar incidentes](manage-incidents.md)

@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 560eeb1e1099576f9f4babf02cc38eb842094fd1
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5175d630dd5d80b62451b3a1eafc4c2f6350ac32
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862490"
+ms.locfileid: "51876342"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Solucionar problemas de rendimiento relacionados con la protección en tiempo real
 
@@ -60,7 +60,7 @@ En **MPLog-xxxxxxxx-xxxxxx.log**, puede encontrar la información de impacto en 
 
 | Nombre del campo | Descripción |
 |---|---|
-|ProcessImageName   | Nombre de imagen de proceso |
+|ProcessImageName | Nombre de imagen de proceso |
 | TotalTime | Duración acumulativa en milisegundos invertidos en exámenes de archivos a los que se accede mediante este proceso |
 |Count | Número de archivos escaneados a los que accede este proceso |
 |MaxTime |  Duración en milisegundos en el examen único más largo de un archivo al que tiene acceso este proceso |
@@ -69,13 +69,13 @@ En **MPLog-xxxxxxxx-xxxxxx.log**, puede encontrar la información de impacto en 
 
 Si el impacto en el rendimiento es alto, intente agregar el proceso a las exclusiones de ruta de acceso o proceso siguiendo los pasos descritos en Configurar y validar [exclusiones](collect-diagnostic-data.md)para los exámenes de Antivirus de Microsoft Defender .
 
-Si el paso anterior no resuelve el problema, puedes recopilar más información a través del [Monitor](#capture-process-logs-using-process-monitor) de procesos o la Grabadora de rendimiento de [Windows](#capture-performance-logs-using-windows-performance-recorder) en las secciones siguientes. 
+Si el paso anterior no resuelve el problema, puedes recopilar más información a través del [Monitor](#capture-process-logs-using-process-monitor) de procesos o la Grabadora de rendimiento de [Windows](#capture-performance-logs-using-windows-performance-recorder) en las secciones siguientes.
      
 ## <a name="capture-process-logs-using-process-monitor"></a>Capturar registros de proceso con el Monitor de procesos
 
-Process Monitor (ProcMon) es una herramienta de supervisión avanzada que puede mostrar procesos en tiempo real. Puede usar esto para capturar el problema de rendimiento tal como se está produciendo. 
+Process Monitor (ProcMon) es una herramienta de supervisión avanzada que puede mostrar procesos en tiempo real. Puede usar esto para capturar el problema de rendimiento tal como se está produciendo.
 
-1. Descargar [Process Monitor v3.60](/sysinternals/downloads/procmon) en una carpeta como `C:\temp` . 
+1. Descargar [Process Monitor v3.60](/sysinternals/downloads/procmon) en una carpeta como `C:\temp` .
 
 2. Para quitar la marca del archivo de la web:
     1. Haga clic con el **botónProcessMonitor.zip** y seleccione **Propiedades**.
@@ -188,7 +188,9 @@ Como alternativa, también puedes usar la herramienta de línea de comandos *wpr
 6. Seleccione **Agregar perfiles...** y vaya a la ruta de acceso del `WD.wprp` archivo.
 
 7. Después de eso, debería ver un nuevo conjunto de perfiles en *Medidas personalizadas* denominada *Microsoft Defender para el análisis de puntos de conexión* debajo de él.
+
     ![in-file](images/wpr-infile.png)
+
     >[!WARNING]
     >Si Windows Server tiene 64 GB de RAM o más, usa la medida personalizada `Microsoft Defender for Endpoint analysis for large servers` en lugar de `Microsoft Defender for Endpoint analysis` . De lo contrario, el sistema podría consumir una gran cantidad de memoria de grupo no paginada o búferes que pueden provocar inestabilidad en el sistema. Puede elegir qué perfiles agregar expandiendo **Análisis de recursos**. Este perfil personalizado proporciona el contexto necesario para un análisis detallado del rendimiento.
  
@@ -227,8 +229,8 @@ Como alternativa, también puedes usar la herramienta de línea de comandos *wpr
 
     ![Rellenar detalles](images/wpr-12.png)
 
-    1. Seleccione **Nombre de archivo:** para determinar dónde se guardará el archivo de seguimiento. De forma predeterminada, 1.is guardado en `%user%\Documents\WPR Files\` . 
-    1. Seleccione **Guardar**. 
+    1. Seleccione **Nombre de archivo:** para determinar dónde se guardará el archivo de seguimiento. De forma predeterminada, 1.is guardado en `%user%\Documents\WPR Files\` .
+    1. Seleccione **Guardar**.
 
 14. Espere mientras se combina el seguimiento.
 
@@ -276,7 +278,7 @@ La herramienta de línea *de comandoswpr.exe* parte del sistema operativo a part
 
 9. Incluya el archivo y la carpeta en el envío al soporte técnico de Microsoft.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Recopilar datos de diagnóstico antivirus de Microsoft Defender](collect-diagnostic-data.md)
 - [Configurar y validar exclusiones para exámenes de Antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
