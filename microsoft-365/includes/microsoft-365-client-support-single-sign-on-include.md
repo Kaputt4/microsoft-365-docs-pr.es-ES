@@ -5,7 +5,6 @@
 |PORTAL DE EMPRESA|N/D|✔|Planeado|N/D|✔|
 |CORTANA|N/D|N/D|N/D|N/D|✔|
 |DELVE|✔|✔|N/D|N/D|N/D|
-|EDGE|✔|Planeado|N/D|✔|N/D|
 |EXCEL|✔|✔|✔|✔|✔|
 |KAIZALA|✔|Planeado|N/D|N/D|N/D|
 |MICROSOFT ROOMS|Planeado|Planeado|N/D|N/D|N/D|
