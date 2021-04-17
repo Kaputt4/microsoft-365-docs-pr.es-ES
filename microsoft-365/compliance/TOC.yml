@@ -208,7 +208,7 @@
             - name: Comparar versiones de OME
               href: ome-version-comparison.md
             - name: "Preguntas más frecuentes sobre el cifrado de mensajes de Office\_365"
-              href: ome-faq.md
+              href: ome-faq.yml
             - name: Cómo Exchange Online protege su información confidencial de correo electrónico
               href: exchange-online-secures-email-secrets.md
             - name: Empleo de TLS por parte de Exchange Online para proteger las conexiones de correo electrónico en Office 365
@@ -305,8 +305,10 @@
               href: dlp-sensitivity-label-as-condition.md
             - name: Usar directivas de prevención de pérdida de datos para aplicaciones en la nube que no sean de Microsoft
               href: dlp-use-policies-non-microsoft-cloud-apps.md
-            - name: Excepciones y condiciones de la Directiva DLP (vista previa)
+            - name: Excepciones y condiciones de la directiva DLP
               href: dlp-conditions-and-exceptions.md
+            - name: Referencia de sugerencias de directiva de prevención de pérdida de datos
+              href: dlp-policy-tips-reference.md
 - name: Administrar el gobierno de información
   items:
     - name: Gobierno de datos

@@ -201,7 +201,7 @@
           href: misc/pilot-microsoft-365-from-my-custom-domain.md
         - name: Preguntas más frecuentes de dominios
           href: setup/domains-faq.yml
-        - name: Instrucciones específicas de host
+        - name: Instrucciones de DNS
           items:
             - name: Cambiar servidores de nombres en cualquier host DNS
               href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
