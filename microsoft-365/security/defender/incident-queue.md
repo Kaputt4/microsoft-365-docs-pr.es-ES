@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: cd571414512ce876e730199b21bf755e4c4b733f
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 3b381749108d4a75024d9a546c0d3f1631c948ed
+ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876204"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51887262"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorizar incidentes en Microsoft 365 Defender
 
@@ -102,7 +102,7 @@ Este es el flujo de trabajo típico para responder a incidentes:
 
    - Contención: reducir cualquier impacto adicional en el espacio empresarial.
    - Eliminación de la amenaza de seguridad.
-   - Recuperación: restauración de los recursos del espacio empresarial en el estado en el que se encontraban antes del ataque.
+   - Recuperación: restaurar los recursos del espacio empresarial en el estado en que se encontraban antes del incidente.
 
 3. Después de resolver el incidente, tómese el tiempo para:
 
@@ -119,7 +119,7 @@ Este es un resumen del proceso básico.
 
 Después de determinar qué incidente requiere la prioridad más alta, selecciónelo e inicie la [investigación](investigate-incidents.md).
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Investigar incidentes](investigate-incidents.md)
 - [Administrar incidentes](manage-incidents.md)
