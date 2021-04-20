@@ -1,7 +1,7 @@
 ---
 title: Privacidad y almacenamiento de datos de Microsoft Defender para endpoint
 description: Obtenga información sobre cómo Microsoft Defender para endpoint controla la privacidad y los datos que recopila.
-keywords: Microsoft Defender para endpoint, ATP de Microsoft Defender, almacenamiento y privacidad de datos, almacenamiento, privacidad, licencias, geolocalización, retención de datos, datos
+keywords: Microsoft Defender para endpoint, Microsoft Defender para endpoint, almacenamiento de datos y privacidad, almacenamiento, privacidad, licencias, geolocalización, retención de datos, datos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e19c64c01c892a8a5f47f5892882feab1242f897
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 2b191c4a24ce170d23fc3d9e43293cc7bbe59e80
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644493"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892823"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Privacidad y almacenamiento de datos de Microsoft Defender para endpoint
 

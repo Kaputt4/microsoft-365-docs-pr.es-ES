@@ -13,12 +13,12 @@ ms.author: deniseb
 ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d9452b6d2eeaad3880894b9ec66c8bc71797b429
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 50e6f9b16dbc633e75e86acdc54ac43580107ae3
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764608"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893382"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Antivirus de Microsoft Defender en Windows Server
 
@@ -181,7 +181,7 @@ Si usa un producto antivirus que no sea de Microsoft como solución antivirus pr
 
 Si usa Windows Server, versión 1803 o Windows Server 2019, puede establecer Antivirus de Microsoft Defender en modo pasivo estableciendo la siguiente clave del Registro:
 - Ruta de acceso: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- Nombre: `ForcePassiveMode`
+- Nombre: `ForceDefenderPassiveMode`
 - Tipo: `REG_DWORD`
 - Valor: `1`
 

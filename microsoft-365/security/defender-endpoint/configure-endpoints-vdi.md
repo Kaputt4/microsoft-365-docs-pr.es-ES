@@ -1,6 +1,6 @@
 ---
 title: Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente
-description: Implemente el paquete de configuración en el dispositivo de infraestructura de escritorio virtual (VDI) para que se incorpore a ATP de Microsoft Defender el servicio.
+description: Implemente el paquete de configuración en el dispositivo de infraestructura de escritorio virtual (VDI) para que se incorpore al servicio de Microsoft Defender para endpoints.
 keywords: configurar dispositivos de infraestructura de escritorio virtual (VDI), vdi, administración de dispositivos, configurar puntos de conexión de Windows ATP, configurar Microsoft Defender para puntos de conexión
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: bf1e706562db06064409cb7cf11441d048ef8db6
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 1e970be7967e221c29017be804a98770a778654f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445291"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892798"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente
 

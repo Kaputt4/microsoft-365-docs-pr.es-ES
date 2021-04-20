@@ -1,6 +1,6 @@
 ---
-title: Errores comunes de la API de ATP de Microsoft Defender
-description: Lista de errores comunes de api de ATP de Microsoft Defender con descripciones.
+title: Errores comunes de La API de Microsoft Defender para puntos de conexión
+description: Lista de errores comunes de La API de Microsoft Defender para puntos de conexión con descripciones.
 keywords: apis, api mdatp, errores, solución de problemas
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ddbbe07bc477ae3a5016feb795b5bad5ed82a30a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4fc2aeb6ee5a95f7eb121abdcf4431dc6d34cd49
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072416"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893466"
 ---
 # <a name="common-rest-api-error-codes"></a>Códigos de error comunes de API de REST
 
@@ -34,7 +34,7 @@ ms.locfileid: "51072416"
 
 >¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-Código de error |Código de estado HTTP |Mensaje 
+Código de error |Código de estado HTTP |Message 
 :---|:---|:---
 BadRequest | BadRequest (400) | Mensaje de error General Bad Request.
 ODataError | BadRequest (400) | Consulta URI de OData no válida (se especifica el error específico).

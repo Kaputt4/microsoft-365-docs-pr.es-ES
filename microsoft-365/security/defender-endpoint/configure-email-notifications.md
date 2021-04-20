@@ -1,7 +1,7 @@
 ---
 title: Configurar notificaciones de alertas en Microsoft Defender para endpoint
 description: Puedes usar Microsoft Defender para Endpoint para configurar las opciones de notificación de correo electrónico para alertas de seguridad, según la gravedad y otros criterios.
-keywords: notificaciones de correo electrónico, configurar notificaciones de alertas, notificaciones de atp de Microsoft Defender, alertas de atp de Microsoft Defender, windows 10 enterprise, windows 10 education
+keywords: notificaciones de correo electrónico, configurar notificaciones de alertas, Microsoft Defender para punto de conexión, Microsoft Defender para notificaciones de puntos de conexión, Microsoft Defender para alertas de punto de conexión, windows 10 enterprise, windows 10 education
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d5a19464b9d5d1b9659d7bfae2d853f7a640a00b
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b629d6a90931026ce28ce241e74d490ce67c6962
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687894"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893639"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configurar notificaciones de alertas en Microsoft Defender para endpoint
 
@@ -69,7 +69,7 @@ Puede crear reglas que determinen los dispositivos y las gravedades de alerta pa
 
 4. Haga clic en **Siguiente**.
     
-5. Escriba la dirección de correo electrónico del destinatario y, a continuación, haga clic **en Agregar destinatario.** Puede agregar varias direcciones de correo electrónico.
+5. Escriba la dirección de correo electrónico del destinatario y, a continuación, haga clic **en Agregar destinatario.** Puedes agregar varias direcciones de correo electrónico.
 
 6. Compruebe que los destinatarios de correo electrónico pueden recibir las notificaciones de correo electrónico **seleccionando Enviar correo electrónico de prueba**.
 

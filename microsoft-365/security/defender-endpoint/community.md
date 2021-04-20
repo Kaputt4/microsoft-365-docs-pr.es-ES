@@ -1,6 +1,6 @@
 ---
-title: Obtener acceso al Centro de la comunidad de Microsoft Defender para endpoints
-description: Accede al Centro de la comunidad de ATP de Microsoft Defender para compartir experiencias, interactuar y aprender sobre el producto.
+title: Acceder al Centro de comunidad de Microsoft Defender para punto de conexión
+description: Accede al Centro de la comunidad de Microsoft Defender para endpoints para compartir experiencias, interactuar y obtener información sobre el producto.
 keywords: comunidad, centro de la comunidad, comunidad tecnológica, conversación, anuncios
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 71dc2a004f188eac34258afb2200cfd4e67f47ab
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: ef1076fb5b8bfc38090374671998460190faaba9
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165242"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893430"
 ---
-# <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Obtener acceso al Centro de la comunidad de Microsoft Defender para endpoints
+# <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Acceder al Centro de comunidad de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

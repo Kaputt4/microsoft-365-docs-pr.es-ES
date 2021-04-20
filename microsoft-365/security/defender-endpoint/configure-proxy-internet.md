@@ -1,6 +1,6 @@
 ---
 title: Configurar el proxy de dispositivo y la configuración de conexión a Internet
-description: Configure el proxy de ATP de Microsoft Defender y la configuración de Internet para habilitar la comunicación con el servicio en la nube.
+description: Configure la configuración de Microsoft Defender para proxy de extremo e Internet para habilitar la comunicación con el servicio en la nube.
 keywords: configuración, proxy, Internet, conectividad a Internet, configuración, configuración de proxy, netsh, winhttp, servidor proxy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 97d1d50e2557cbb760248738b1f096614873958f
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: ebfff7721bc61012811a66146079ac9758889594
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644709"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893606"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurar el proxy de dispositivo y la configuración de conectividad a Internet
 
@@ -178,7 +178,7 @@ El extremo de dirección URL *.blob.core.windows.net se puede reemplazar por las
 > [!NOTE]
 > En el caso de la incorporación a través del Centro de seguridad de Azure (ASC), se pueden usar varias áreas de trabajo. Deberá realizar el procedimiento de TestCloudConnection.exe anterior en una máquina integrada de cada área de trabajo (para determinar si hay cambios en las direcciones URL *.blob.core.windows.net entre las áreas de trabajo).
 
-## <a name="verify-client-connectivity-to-microsoft-defender-atp-service-urls"></a>Comprobar la conectividad del cliente con las direcciones URL del servicio ATP de Microsoft Defender
+## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>Comprobar la conectividad del cliente a Microsoft Defender para las direcciones URL del servicio endpoint
 
 Compruebe que la configuración del proxy se ha completado correctamente, que WinHTTP puede detectar y comunicarse mediante el servidor proxy en su entorno y que el servidor proxy permite el tráfico a las direcciones URL del servicio de Defender para punto de conexión.
 

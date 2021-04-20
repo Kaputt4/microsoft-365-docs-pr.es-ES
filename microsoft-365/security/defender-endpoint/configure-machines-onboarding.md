@@ -1,6 +1,6 @@
 ---
-title: Obtener dispositivos incorporados a ATP de Microsoft Defender
-description: Realiza un seguimiento de la incorporación de dispositivos administrados por Intune a ATP de Microsoft Defender y aumenta la velocidad de incorporación.
+title: Obtener dispositivos incorporados a Microsoft Defender para endpoint
+description: Realice un seguimiento de la incorporación de dispositivos administrados por Intune a Microsoft Defender para Endpoint y aumente la velocidad de incorporación.
 keywords: onboard, administración de Intune, MDATP, WDATP, Microsoft Defender, Windows Defender, protección contra amenazas avanzada, administración de configuración
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6145acd5e8e2743ff42dce3cf01af0128e8ca225
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 5e20c424f15561c8b6f0544b80aca6e30c56409d
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166094"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893334"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Obtener dispositivos incorporados a Microsoft Defender para endpoint
 
@@ -74,6 +74,6 @@ Para obtener más información, [lea acerca del uso de perfiles](https://docs.mi
 >¿Desea experimentar ATP de Microsoft Defender? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Asegúrese de que los dispositivos estén configurados correctamente](configure-machines.md)
+- [Asegurarse de que los dispositivos estén configurados de manera adecuada](configure-machines.md)
 - [Aumentar el cumplimiento de la línea base de seguridad de Defender for Endpoint](configure-machines-security-baseline.md)
 - [Optimizar la implementación y detecciones de reglas ASR](configure-machines-asr.md)

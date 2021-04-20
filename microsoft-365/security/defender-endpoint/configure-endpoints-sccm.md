@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: b477f302855cb5d4b00e0502bcfa9aa3aeb6b5c2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3550bec28945ab888efbe2ca46f12ca7f96aab4a
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165578"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892868"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Incorporar dispositivos Windows 10 con Configuration Manager
 
@@ -223,7 +223,7 @@ Si usa System Center 2012 Configuration Manager de R2, la supervisión consta de
 
     ![Configuration Manager que muestra una implementación correcta sin errores](images/sccm-deployment.png)
 
-### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-atp-service"></a>Comprobar que los dispositivos son compatibles con el servicio ATP de Microsoft Defender
+### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>Comprobar que los dispositivos son compatibles con el servicio de Microsoft Defender para endpoints
 
 Puede establecer una regla de cumplimiento para el elemento de configuración en System Center 2012 Configuration Manager de R2 para supervisar la implementación.
 
@@ -244,5 +244,5 @@ Para obtener más información, vea [Introduction to compliance settings in Syst
 - [Incorporar dispositivos Windows 10 con herramientas de Administración de dispositivos móviles](configure-endpoints-mdm.md)
 - [Incorporar dispositivos Windows 10 mediante un script local](configure-endpoints-script.md)
 - [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
-- [Ejecutar una prueba de detección en un dispositivo ATP de Microsoft Defender recién incorporado](run-detection-test.md)
+- [Ejecutar una prueba de detección en un dispositivo de Microsoft Defender para endpoint recién incorporado](run-detection-test.md)
 - [Solucionar problemas de incorporación de puntos de conexión de Microsoft Defender](troubleshoot-onboarding.md)

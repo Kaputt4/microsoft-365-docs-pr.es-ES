@@ -1,5 +1,5 @@
 ---
-title: Incorporación de dispositivos Windows 10 a ATP de Microsoft Defender a través de la directiva de grupo
+title: Incorporación de dispositivos Windows 10 a Microsoft Defender para el punto de conexión a través de la directiva de grupo
 description: Usa la directiva de grupo para implementar el paquete de configuración en dispositivos Windows 10 para que se incorpore al servicio.
 keywords: configurar dispositivos mediante directiva de grupo, administración de dispositivos, configurar dispositivos de Windows ATP, incorporar Microsoft Defender para dispositivos de punto de conexión, directiva de grupo
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: fc4b17ef96e85d3bacd4e83c2de3f4bb7fbfa5c3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b839cf204e8ab042e0c88a8f8c48df79770e7b4f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166178"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893642"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Incorporación de dispositivos Windows 10 con la directiva de grupo 
 
@@ -42,7 +42,7 @@ ms.locfileid: "51166178"
 > 
 > Para Windows Server 2019, es posible que deba reemplazar NT AUTHORITY\Well-Known-System-Account por NT AUTHORITY\SYSTEM del archivo XML que crea la preferencia de directiva de grupo.
 
-## <a name="onboard-devices-using-group-policy"></a>Incorporación de dispositivos mediante directiva de grupo
+## <a name="onboard-devices-using-group-policy"></a>Incorporar dispositivos con la directiva de grupo
 
 [![Imagen del PDF que muestra las distintas rutas de implementación](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 
@@ -121,7 +121,7 @@ Todas las directivas se encuentran en `Computer Configuration\Policies\Administr
 
 **Ubicación de la directiva:** \Componentes de Windows\Windows Defender ATP
 
-Policy | Configuración 
+Policy | Setting 
 :---|:---
 Enable\Disable Sample (colección)|   Habilitado: "Habilitar la colección de muestras en máquinas" activada
 
@@ -129,7 +129,7 @@ Enable\Disable Sample (colección)|   Habilitado: "Habilitar la colección de mu
 
 **Ubicación de la directiva:**  \Componentes de Windows\Windows Defender Antivirus
 
-Policy | Configuración 
+Policy | Setting 
 :---|:---
 Configurar la detección para aplicaciones potencialmente no deseadas | Enabled, Block
 
@@ -137,7 +137,7 @@ Configurar la detección para aplicaciones potencialmente no deseadas | Enabled,
 
 **Ubicación de la directiva:** \Componentes de Windows\Windows Defender Antivirus\MAPS
 
-Policy | Configuración 
+Policy | Setting 
 :---|:---
 Unirse a Microsoft MAPS | Mapas avanzados habilitados
 Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales | Habilitado, Enviar muestras seguras
@@ -146,9 +146,9 @@ Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales 
 
 **Ubicación de la directiva:** \Componentes de Windows\Windows Defender Antivirus\Protección en tiempo real
 
-Policy | Configuración 
+Policy | Setting 
 :---|:---
-Desactivar la protección en tiempo real|Deshabilitado
+Desactivar la protección en tiempo real|Deshabilitada
 Activar la supervisión del comportamiento|Habilitado
 Examinar todos los archivos y datos adjuntos descargados|Habilitado
 Supervisar la actividad de archivos y programas en el equipo|Habilitado
@@ -159,7 +159,7 @@ Supervisar la actividad de archivos y programas en el equipo|Habilitado
 
 Estas opciones configuran exámenes periódicos del extremo. Se recomienda realizar un examen rápido semanal, lo que permite el rendimiento.
 
-Policy | Configuración 
+Policy | Setting 
 :---|:---
 Compruebe la inteligencia de seguridad de virus y spyware más reciente antes de ejecutar un examen programado |Habilitado
 
@@ -184,7 +184,7 @@ Obtener la lista actual de GUID de reducción de superficie de ataque de [Person
 
 
 
-Policy | Configuración 
+Policy | Setting 
 :---|:---
 Configurar acceso controlado a carpetas| Habilitado, modo auditoría
 

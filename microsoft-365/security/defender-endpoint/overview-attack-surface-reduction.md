@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dbc794338442f9ed54a7227e702de1039b5ea71c
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 60efae91e4b65c5977bd2aebf111d9174d7c1042
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861760"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893558"
 ---
 # <a name="overview-of-attack-surface-reduction"></a>Introducción a la reducción de la superficie expuesta a ataques
 
@@ -45,11 +45,11 @@ Ayuda a reducir las superficies de ataque minimizando los lugares en los que tu 
 Artículo | Descripción
 -|-
 [Reducción de la superficie expuesta a ataques](./attack-surface-reduction.md) | Reduzca los puntos vulnerables (las superficies de ataque) en sus aplicaciones con reglas inteligentes que le ayudarán a detener el malware. (Requiere Antivirus de Microsoft Defender).
-[Aislamiento basado en hardware](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview.md) | Proteger y mantener la integridad de un sistema cuando se inicia y mientras se ejecuta. Validar la integridad del sistema mediante la atestación local y remota. Además, use el aislamiento de contenedores para Microsoft Edge para ayudar a proteger contra sitios web malintencionados.
-[Control de la aplicación](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control.md) | Use el control de aplicaciones para que las aplicaciones deben ganar confianza para poder ejecutarse.
+[Aislamiento basado en hardware](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Proteger y mantener la integridad de un sistema cuando se inicia y mientras se ejecuta. Validar la integridad del sistema mediante la atestación local y remota. Además, use el aislamiento de contenedores para Microsoft Edge para ayudar a proteger contra sitios web malintencionados.
+[Control de la aplicación](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Use el control de aplicaciones para que las aplicaciones deben ganar confianza para poder ejecutarse.
 [Protección contra vulnerabilidades de seguridad](./exploit-protection.md) | Ayude a proteger los sistemas operativos y las aplicaciones que usa su organización para evitar que se aprovechen. La protección contra vulnerabilidades de seguridad también funciona con soluciones antivirus de terceros.
 [Protección de red](./network-protection.md) | Amplíe la protección al tráfico de red y la conectividad en los dispositivos de su organización. (Requiere Antivirus de Microsoft Defender)
 [Protección web](./web-protection-overview.md) | Proteja los dispositivos contra amenazas web y le ayudará a regular el contenido no deseado.
 [Acceso controlado a carpetas](./controlled-folders.md) | Ayudar a evitar que las aplicaciones malintencionadas o sospechosas (incluido el malware ransomware de cifrado de archivos) realicen cambios en los archivos de las carpetas clave del sistema (requiere Antivirus de Microsoft Defender)
-[Firewall de red](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security.md) | Impedir que el tráfico no autorizado fluya hacia o desde los dispositivos de la organización con el filtrado de tráfico de red en dos direcciones.
+[Firewall de red](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security) | Impedir que el tráfico no autorizado fluya hacia o desde los dispositivos de la organización con el filtrado de tráfico de red en dos direcciones.
 [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](./attack-surface-reduction-faq.md) | Preguntas más frecuentes sobre las reglas de reducción de superficie de ataque, las licencias y mucho más.

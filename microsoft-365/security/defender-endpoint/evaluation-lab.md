@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ead616b7af3df05f4c0c5755ad779f0251555734
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2382281fbb975daa18ec21aabaf5acf8d3fbfb2f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074584"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893442"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratorio de evaluación de Microsoft Defender para puntos de conexión
 
@@ -74,10 +74,10 @@ Puede acceder al laboratorio desde el menú. En el menú de navegación, selecci
 ![Imagen del laboratorio de evaluación en el menú](images/evaluation-lab-menu.png)
 
 >[!NOTE]
->- Cada entorno se aprovisiona con un conjunto limitado de dispositivos de prueba.
 >- Según el tipo de estructura del entorno que selecciones, los dispositivos estarán disponibles para el número especificado de horas desde el día de la activación.
->- Cuando hayas usado los dispositivos aprovisionados, no se proporciona ningún dispositivo nuevo. Un dispositivo eliminado no actualiza el recuento de dispositivos de prueba disponibles.
->- Dados los recursos limitados, es aconsejable usar los dispositivos con cuidado.
+>- Cada entorno se aprovisiona con un conjunto limitado de dispositivos de prueba. Cuando hayas usado los dispositivos aprovisionados, no se proporciona ningún dispositivo nuevo. Un dispositivo eliminado no actualiza el recuento de dispositivos de prueba disponibles.
+>- Ya no puede usar el laboratorio cuando se han usado los recursos. No se restablece ni se actualiza.
+>- Es aconsejable usar los recursos cuidadosamente. Los recursos de laboratorio son limitados. No se restablecerán ni se actualizarán. 
 
 ¿Ya tienes un laboratorio? Asegúrate de habilitar los nuevos simuladores de amenazas y de tener dispositivos activos.
 
@@ -125,7 +125,7 @@ Los siguientes componentes de seguridad están preconfigurados en los dispositiv
 - [Reducción de la superficie expuesta a ataques](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
 - [Bloquear a primera vista](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 - [Acceso controlado a carpetas](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
-- [Protección contra vulnerabilidades](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
+- [Protección contra vulnerabilidades de seguridad](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
 - [Protección de red](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
 - [Detección de aplicaciones potencialmente no deseadas](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Protección entregada en la nube](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)

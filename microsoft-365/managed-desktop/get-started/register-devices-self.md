@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 4de1d173a26005d32fb07117d93ee78582b77d54
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b2976fc643eb433039d9595bc8e9632fd8cb60ea
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689214"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893478"
 ---
 # <a name="register-new-devices-yourself"></a>Registre nuevos dispositivos usted mismo
 
@@ -77,7 +77,7 @@ Tendrás que combinar los datos de los archivos CSV en un solo archivo para comp
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 
-#### <a name="register-devices-by-using-the-admin-portal"></a>Registrar dispositivos mediante el Portal de administración
+### <a name="register-devices-by-using-the-admin-portal"></a>Registrar dispositivos mediante el Portal de administración
 
 En [Microsoft Endpoint Manager,](https://endpoint.microsoft.com/)seleccione **Dispositivos** en el panel de navegación izquierdo. Busque la sección Escritorio administrado de Microsoft del menú y seleccione **Dispositivos**. En el área de trabajo Dispositivos de escritorio administrados de Microsoft, seleccione **+ Registrar** dispositivos, que abre un control remoto para registrar nuevos dispositivos.
 
@@ -103,7 +103,7 @@ Puedes supervisar el progreso del registro del dispositivo en la página princip
 | Registro pendiente | El registro aún no se ha realizado. Vuelva más tarde. |
 | Error de registro | No se pudo completar el registro. Consulte [Troubleshooting device registration para](#troubleshooting-device-registration) obtener más información. |
 | Listo para el usuario | El registro se ha registrado correctamente y el dispositivo ya está listo para entregarse al usuario. El Escritorio administrado de Microsoft los guiará a través de la configuración por primera vez, por lo que no es necesario realizar ninguna preparación adicional. |
-| Activa | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Este estado también indica que usan regularmente el dispositivo. |
+| Activo | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Este estado también indica que usan regularmente el dispositivo. |
 | Inactivo | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Sin embargo, no han usado el dispositivo recientemente (en los últimos 7 días).  | 
 
 #### <a name="troubleshooting-device-registration"></a>Solución de problemas de registro de dispositivos

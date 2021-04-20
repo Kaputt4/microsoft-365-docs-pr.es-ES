@@ -1,7 +1,7 @@
 ---
 title: Detección y respuesta de puntos de conexión en modo de bloqueo
 description: Información sobre la detección y respuesta de puntos de conexión en modo de bloqueo
-keywords: ATP de Microsoft Defender, mde, EDR en modo de bloqueo, bloqueo de modo pasivo
+keywords: Microsoft Defender para endpoint, mde, EDR en modo de bloqueo, bloqueo de modo pasivo
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: e492d57d8a7e10a1fff57980408ed8234bbeead0
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: a2fbb8f1b48dacb27468f8f088f5000da9fcb3b9
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587208"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893570"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Detección y respuesta de extremos (EDR) en modo de bloqueo
 
@@ -140,5 +140,5 @@ Si decide deshabilitar EDR en modo de bloqueo, el sistema puede tardar hasta 30 
 
 - [Blog de la comunidad tecnológica: Introducción a EDR en modo de bloqueo: Detención de ataques en sus pistas](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
 - [Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)
-- [Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
+- [Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/why-use-microsoft-antivirus)
 

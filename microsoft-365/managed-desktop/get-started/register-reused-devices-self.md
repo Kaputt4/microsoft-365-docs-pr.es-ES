@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f2b3e109493331a4b63d669501525a48cb996809
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 21b0062a337dbeb3c7dec8b715971dbbc4917db1
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689226"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893280"
 ---
 # <a name="register-existing-devices-yourself"></a>Registre dispositivos existentes usted mismo
 
@@ -136,7 +136,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 Con los datos hash combinados en un archivo CSV, ahora puede continuar con [el registro de los dispositivos](#register-devices-by-using-the-admin-portal).
 
 
-#### <a name="register-devices-by-using-the-admin-portal"></a>Registrar dispositivos mediante el Portal de administración
+## <a name="register-devices-by-using-the-admin-portal"></a>Registrar dispositivos mediante el Portal de administración
 
 En [Microsoft Endpoint Manager,](https://endpoint.microsoft.com/)seleccione **Dispositivos** en el panel de navegación izquierdo. Busque la sección Escritorio administrado de Microsoft del menú y seleccione **Dispositivos**. En el área de trabajo Dispositivos de escritorio administrados de Microsoft, seleccione **+ Registrar** dispositivos, que abre un control remoto para registrar nuevos dispositivos.
 
@@ -162,10 +162,10 @@ Puedes supervisar el progreso del registro del dispositivo en la página princip
 | Registro pendiente | El registro aún no se ha realizado. Vuelva más tarde. |
 | Error de registro | No se pudo completar el registro. Consulte [Troubleshooting device registration para](#troubleshooting-device-registration) obtener más información. |
 | Listo para el usuario | El registro se ha registrado correctamente y el dispositivo ya está listo para entregarse al usuario. El Escritorio administrado de Microsoft los guiará a través de la configuración por primera vez, por lo que no es necesario realizar ninguna preparación adicional. |
-| Activa | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Esto también indica que usan regularmente el dispositivo. |
+| Activo | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Esto también indica que usan regularmente el dispositivo. |
 | Inactivo | El dispositivo se ha entregado al usuario y se ha registrado con el inquilino. Sin embargo, no han usado el dispositivo recientemente (en los últimos 7 días).  | 
 
-#### <a name="troubleshooting-device-registration"></a>Solución de problemas de registro de dispositivos
+### <a name="troubleshooting-device-registration"></a>Solución de problemas de registro de dispositivos
 
 | Mensaje de error | Detalles |
 |---------------|-------------|
@@ -175,13 +175,13 @@ Puedes supervisar el progreso del registro del dispositivo en la página princip
 | Dispositivo reclamado por otra organización | Este dispositivo ya ha sido reclamado por otra organización. Consulta con el proveedor de dispositivos. |
 | Error inesperado | La solicitud no se pudo procesar automáticamente. Póngase en contacto con el soporte técnico y proporcione el identificador de solicitud: <requestId> |
 
-### <a name="check-the-image"></a>Comprobar la imagen
+## <a name="check-the-image"></a>Comprobar la imagen
 
 Si el dispositivo procede de un proveedor de partners de Escritorio administrado de Microsoft, la imagen debe ser correcta.
 
 También puedes aplicar la imagen por tu cuenta si lo prefieres. Para empezar, póngase en contacto con el representante de Microsoft con el que está trabajando y le proporcionarán la ubicación y los pasos para aplicar la imagen.
 
-### <a name="deliver-the-device"></a>Entregar el dispositivo
+## <a name="deliver-the-device"></a>Entregar el dispositivo
 
 > [!IMPORTANT]
 > Antes de entregar el dispositivo al usuario, asegúrese de haber obtenido y aplicado las licencias adecuadas [para](../get-ready/prerequisites.md) ese usuario.

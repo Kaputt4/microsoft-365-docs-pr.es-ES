@@ -1,6 +1,6 @@
 ---
 title: Herramientas y métodos de incorporación para dispositivos Windows 10
-description: Incorporar dispositivos Windows 10 para que puedan enviar datos del sensor al sensor atp de Microsoft Defender
+description: Incorporar dispositivos Windows 10 para que puedan enviar datos del sensor al sensor de Microsoft Defender para endpoint
 keywords: Incorporación de dispositivos Windows 10, directiva de grupo, administrador de configuración de extremo, administración de dispositivos móviles, script local, gp, sccm, mdm, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 77b843f9526d8b100845403bc8d2df4bf3259471
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: f1ef2670a1ca749e0a2f1ebc96300d4eca043bf8
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760217"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892834"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices"></a>Herramientas y métodos de incorporación para dispositivos Windows 10
 

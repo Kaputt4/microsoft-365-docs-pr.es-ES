@@ -1,7 +1,7 @@
 ---
-title: Aumentar el cumplimiento de la línea base de seguridad de ATP de Microsoft Defender
-description: La línea base de seguridad de ATP de Microsoft Defender establece los controles de seguridad de ATP de Microsoft Defender para proporcionar una protección óptima.
-keywords: Administración de Intune, MDATP, WDATP, Microsoft Defender, ASR de protección contra amenazas avanzada, línea base de seguridad
+title: Aumentar el cumplimiento de la línea base de seguridad de Microsoft Defender para endpoints
+description: La línea base de seguridad de Microsoft Defender para puntos de conexión establece controles de seguridad para proporcionar una protección óptima.
+keywords: Administración de Intune, MDATP, WDATP, MDE, Microsoft Defender para endpoint, ASR de protección contra amenazas avanzada, línea base de seguridad
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 74073441ad7be89e0af278ff1e371133251b5ea7
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 19a2276955b253a23ee1552a3f1d4d0345dfe247
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163404"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893546"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Aumentar el cumplimiento de la línea base de seguridad de Microsoft Defender para endpoints
 
@@ -41,11 +41,11 @@ Antes de implementar y realizar un seguimiento del cumplimiento de las líneas b
 - [Inscribir los dispositivos en la administración de Intune](configure-machines.md#enroll-devices-to-intune-management)
 - [Asegúrese de que tiene los permisos necesarios](configure-machines.md#obtain-required-permissions)
 
-## <a name="compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines"></a>Comparar la ATP de Microsoft Defender y las líneas base de seguridad de Windows Intune
+## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Comparar las líneas base de seguridad de Microsoft Defender para Endpoint y Windows Intune
 La línea base de seguridad de Windows Intune proporciona un conjunto completo de opciones recomendadas necesarias para configurar de forma segura los dispositivos que ejecutan Windows, incluida la configuración del explorador, la configuración de PowerShell, así como la configuración de algunas características de seguridad como Antivirus de Microsoft Defender. En cambio, la línea base de Defender para punto de conexión proporciona opciones que optimizan todos los controles de seguridad de la pila defender para puntos de conexión, incluida la configuración para la detección y respuesta de puntos de conexión (EDR), así como la configuración que también se encuentra en la línea base de seguridad de Windows Intune. Para obtener más información acerca de cada línea base, vea:
 
 - [Configuración de línea base de seguridad de Windows para Intune](https://docs.microsoft.com/intune/security-baseline-settings-windows)
-- [Configuración de línea base de ATP de Microsoft Defender para Intune](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
+- [Configuración de línea base de Microsoft Defender para Endpoint para Intune](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
 
 Lo ideal es que los dispositivos incorporados a Defender for Endpoint se implementen en ambas líneas base: la línea base de seguridad de Windows Intune para proteger inicialmente Windows y, a continuación, la línea base de seguridad de Defender para endpoints en capas superiores para configurar de forma óptima los controles de seguridad de Defender para endpoints. Para beneficiarse de los últimos datos sobre riesgos y amenazas y para minimizar los conflictos a medida que evolucionan las líneas base, aplique siempre las versiones más recientes de las líneas base en todos los productos tan pronto como se liberan.
 
@@ -107,6 +107,6 @@ La administración de configuración de dispositivos supervisa el cumplimiento p
 >¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Asegúrese de que los dispositivos estén configurados correctamente](configure-machines.md)
+- [Asegurarse de que los dispositivos estén configurados de manera adecuada](configure-machines.md)
 - [Obtener dispositivos incorporados a Microsoft Defender para endpoint](configure-machines-onboarding.md)
 - [Optimizar la implementación y detecciones de reglas ASR](configure-machines-asr.md)

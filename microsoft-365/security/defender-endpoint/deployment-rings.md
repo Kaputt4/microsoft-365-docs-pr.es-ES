@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2d34b984436b3ed0537af2eebcd8475ec270cd8e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 8123bdf610b30407e5d262296f9c3639bc21b12f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165794"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893490"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Implementar Microsoft Defender para endpoint en anillos
 
@@ -75,7 +75,7 @@ Identifique un pequeño número de máquinas de prueba en su entorno para incorp
 
 
 ### <a name="pilot"></a>Piloto
-ATP de Microsoft Defender admite una variedad de puntos de conexión que puede incorporar al servicio. En este anillo, identifique varios dispositivos que se incorporarán y en función de los criterios de salida que defina, decida continuar con el siguiente anillo de implementación.
+Microsoft Defender para endpoint admite una variedad de puntos de conexión que puede incorporar al servicio. En este anillo, identifique varios dispositivos que se incorporarán y en función de los criterios de salida que defina, decida continuar con el siguiente anillo de implementación.
 
 En la tabla siguiente se muestran los puntos de conexión compatibles y la herramienta correspondiente que puede usar para incorporar dispositivos al servicio. 
 
@@ -94,11 +94,11 @@ En la tabla siguiente se muestran los puntos de conexión compatibles y la herra
 En esta fase, puede usar el material de planeación [de implementación](deployment-strategy.md) para ayudarle a planear la implementación. 
 
 
-Use el siguiente material para seleccionar la arquitectura de ATP de Microsoft Defender adecuada que mejor se adapte a su organización.
+Use el siguiente material para seleccionar la arquitectura de Microsoft Defender para endpoint adecuada que mejor se adapte a su organización.
 
-|**Elemento**|**Descripción**|
+|**Item**|**Descripción**|
 |:-----|:-----|
-|[![Imagen en miniatura de la estrategia de implementación de ATP de Microsoft Defender](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li>
+|[![Imagen digital de la estrategia de implementación de Microsoft Defender para endpoints](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li>
 
 
 
@@ -108,7 +108,7 @@ Use el siguiente material para seleccionar la arquitectura de ATP de Microsoft D
 ### <a name="windows-endpoints"></a>Puntos de conexión de Windows
 Para Windows y/o Windows Servers, seleccionas varias máquinas para probar con antelación (antes de la revisión del martes) mediante el programa de validación de actualizaciones de seguridad **(SUVP).**
 
-Para más información, vea:
+Para obtener más información, vea:
 - [¿Qué es el programa de validación de actualización de seguridad?](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
 - [Software Update Validation Program and Centro de protección contra malware de Microsoft Establishment - TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 

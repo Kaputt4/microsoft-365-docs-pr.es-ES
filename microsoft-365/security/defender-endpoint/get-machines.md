@@ -1,6 +1,6 @@
 ---
 title: ENUMERAR API de máquinas
-description: Obtenga información sobre cómo usar la API enumerar máquinas para recuperar una colección de máquinas que se han comunicado con la nube de ATP de Microsoft Defender.
+description: Obtenga información sobre cómo usar la API enumerar máquinas para recuperar una colección de máquinas que se han comunicado con Microsoft Defender para la nube de puntos de conexión.
 keywords: api, api de gráfico, api admitidas, get, dispositivos
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 23997cf4997ccfea8ee89a9b9ec5cc991dfa1ed0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 01e36427116ad7bd845901e7da7f5aa152bd44f9
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200382"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893358"
 ---
 # <a name="list-machines-api"></a>ENUMERAR API de máquinas
 

@@ -1,7 +1,7 @@
 ---
-title: Convertirse en un partner de Microsoft Defender para endpoint
+title: Convertirse en socio de Microsoft Defender para punto de conexión
 ms.reviewer: ''
-description: Obtenga información sobre los pasos y los requisitos para integrar la solución con ATP de Microsoft Defender y ser socio
+description: Obtenga información sobre los pasos y los requisitos para integrar la solución con Microsoft Defender para endpoint y ser socio
 keywords: partner, integration, solution validation, certification, requirements, member, misa, application portal
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: ea7ebe1656c0173395df158b8f934ab388bea4ba
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 35ba1fe85fa9b62770142636d46303b37534b976
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072219"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893322"
 ---
-# <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Convertirse en un partner de Microsoft Defender para endpoint
+# <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Convertirse en socio de Microsoft Defender para punto de conexión
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -71,4 +71,4 @@ Para que su empresa aparezca como partner en la página de partners del producto
 Las asociaciones con Microsoft Defender para Endpoint ayudan a nuestros clientes mutuos a simplificar, integrar y orquestar las defensas. Nos complace que haya elegido convertirse en un partner de Microsoft Defender para endpoints y lograr nuestro objetivo común de proteger eficazmente a los clientes y sus activos al impedir y responder juntos a las amenazas modernas.
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Oportunidades de socio técnico](partner-integration.md)
+- [Oportunidades para asociados técnicos](partner-integration.md)
