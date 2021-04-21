@@ -475,6 +475,7 @@
 ####### [Obtener recomendaciones de seguridad](get-security-recommendations.md)
 ####### [Agregar o quitar etiquetas de máquina](add-or-remove-machine-tags.md)
 ####### [Buscar máquinas por IP](find-machines-by-ip.md)
+####### [Buscar equipos por etiqueta](find-machines-by-tag.md)
 ####### [Obtener los kB que faltan](get-missing-kbs-machine.md)
 ####### [Establecer valor de dispositivo](set-device-value.md)
 
