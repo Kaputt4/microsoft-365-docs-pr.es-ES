@@ -138,6 +138,8 @@
           href: data-classification-content-explorer.md
         - name: Introducción al explorador de actividad
           href: data-classification-activity-explorer.md
+        - name: Etiquetar acciones notificadas en el Explorador de actividades
+          href: data-classification-activity-explorer-available-events.md
         - name: Notas de la versión de clasificación de datos
           href: data-classification-pub-preview-relnotes.md
     - name: Etiquetas de confidencialidad
