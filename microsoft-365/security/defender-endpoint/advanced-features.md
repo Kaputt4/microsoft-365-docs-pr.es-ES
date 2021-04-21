@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c5e6edb40254ab905ef5ef3ddef9bf8bf54fc54b
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 9c77cb19731e55976058ce2f628baf4026639949
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698273"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903795"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -71,8 +71,7 @@ Active esta característica para que las aplicaciones potencialmente no deseadas
 
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Restringir la correlación a grupos de dispositivos con ámbito
-Cuando esta configuración está activada, las alertas se correlacionan con incidentes independientes en función de su grupo de dispositivos con ámbito. De forma predeterminada, la correlación de incidentes se produce en todo el ámbito del espacio empresarial.
-
+Esta configuración se puede usar para escenarios en los que las operaciones SOC locales quisieran limitar las correlaciones de alertas solo a los grupos de dispositivos a los que pueden tener acceso. Al activar esta configuración, un incidente compuesto por alertas que se cruzan entre grupos de dispositivos ya no se considerará un solo incidente. A continuación, el SOC local puede tomar medidas sobre el incidente porque tienen acceso a uno de los grupos de dispositivos implicados. Sin embargo, soc global verá varios incidentes diferentes por grupo de dispositivos en lugar de un incidente. No recomendamos activar esta configuración a menos que esto supere las ventajas de la correlación de incidentes en toda la organización
 >[!NOTE]
 >Cambiar esta configuración afecta solo a las correlaciones futuras de alertas.
 
@@ -230,7 +229,7 @@ Al habilitar la integración de Intune, Intune creará automáticamente una dire
 > La directiva de CA clásica creada por Intune es distinta de las directivas modernas de acceso [condicional,](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/)que se usan para configurar puntos de conexión.
 
 
-## <a name="device-discovery"></a>Detección de dispositivos
+## <a name="device-discovery"></a>Detección de dispositivo
 Le ayuda a encontrar dispositivos no administrados conectados a la red corporativa sin necesidad de dispositivos adicionales o cambios de proceso engorrosos. Con dispositivos incorporados, puede encontrar dispositivos no administrados en la red y evaluar vulnerabilidades y riesgos. Para obtener más información, consulta [Detección de dispositivos](device-discovery.md).
 
 ## <a name="preview-features"></a>Versión preliminar de las características

@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 01b3310f5f822f3f6f38bf4d9e727d41fe2b179b
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 290c06d95c6569b5a446a7a7410d34ff3b57055d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760115"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904075"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Introducción al centro de temas en Temas de Microsoft Viva
 
@@ -73,9 +73,9 @@ Una vez que un usuario confirma su conexión a un tema, el usuario puede realiza
 Para trabajar en la sección **Administrar temas** del centro de temas, debe tener los permisos necesarios administrar temas necesarios para el rol de administrador de conocimientos. El administrador puede asignar estos [](set-up-topic-experiences.md)permisos a los usuarios durante la configuración de administración de [conocimientos,](topic-experiences-knowledge-rules.md) o un administrador puede agregar nuevos usuarios después a través del Centro de administración de Microsoft 365.
 
 En la página Administrar temas, el panel de temas muestra todos los temas a los que tiene acceso que se identificaron desde las ubicaciones de origen especificadas. Cada tema mostrará la fecha en que se descubrió el tema. Un usuario al que se asignaron permisos administrar temas puede revisar los temas no confirmados y elegir:
-- Confirmar el tema: resalta el tema para los usuarios que tienen acceso a los archivos y páginas relacionados con el tema y les permite ver la tarjeta de tema asociada y la página del tema.
+- Confirmar el tema: indica a los usuarios que un curador humano validó un tema sugerido por IA. 
 - Publicar el tema: edite la información del tema para mejorar la calidad del tema que se identificó inicialmente y resalta el tema para todos los usuarios que tienen acceso a temas. 
-- Rechazar el tema: hace que el tema no esté disponible para los usuarios. El tema se mueve a la **pestaña Rechazado** y se puede confirmar más adelante si es necesario. 
+- Rechazar el tema: hace que el tema no se pueda detectar para los usuarios finales. El tema se mueve a la **pestaña Rechazado** y se puede confirmar más adelante si es necesario. 
 
 > [!Note] 
 > Vea [Administrar temas para](manage-topics.md) obtener más información sobre la administración de temas en la página Administrar temas.

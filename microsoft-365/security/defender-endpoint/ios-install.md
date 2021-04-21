@@ -1,7 +1,7 @@
 ---
-title: Implementación basada en aplicaciones para ATP de Microsoft Defender para iOS
+title: Implementación basada en aplicaciones para Microsoft Defender para endpoint en iOS
 ms.reviewer: ''
-description: Describe cómo implementar ATP de Microsoft Defender para iOS con una aplicación
+description: Describe cómo implementar Microsoft Defender para endpoint en iOS con una aplicación
 keywords: microsoft, defender, atp, ios, app, installation, deploy, uninstallation, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6cfd2953e752ed9c96f7f16a3ec7ea1fd8862ab2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 4ddaf8759fa0f2ffb4ed3eb3bb940426dfb3da2c
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689742"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904063"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Implementar Microsoft Defender para endpoint en iOS
 
@@ -44,7 +44,7 @@ En este tema se describe la implementación de Defender for Endpoint para iOS en
 - Asegúrese de que la inscripción de iOS se realiza para los usuarios. Los usuarios deben tener asignada una licencia de Defender for Endpoint para poder usar Defender para Endpoint para iOS. Consulte [Asignar licencias a los usuarios para](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) obtener instrucciones sobre cómo asignar licencias.
 
 > [!NOTE]
-> Atp de Microsoft Defender (Microsoft Defender para endpoint) para iOS ya está disponible en [la Tienda de aplicaciones de Apple.](https://aka.ms/mdatpiosappstore)
+> Microsoft Defender para endpoint en iOS ya está disponible en [la Tienda de aplicaciones de Apple](https://aka.ms/mdatpiosappstore).
 
 ## <a name="deployment-steps"></a>Pasos para la implementación
 

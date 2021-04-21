@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a7d13da6abfb2cd6c829b6fd04fdf94de8cd20b8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 06028f64a3340aeeef52269bc8a1e739d18e6db7
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186874"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903123"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Extraer Microsoft Defender para detecciones de puntos de conexión con la API de REST de SIEM
 
@@ -113,7 +113,7 @@ GET| Use el URI aplicable para su región. <br><br> **Para la UE**: `https://wda
 ### <a name="request-header"></a>Encabezado de solicitud
 Encabezado | Tipo | Descripción|
 :--|:--|:--
-Authorization | string | Necesario. El token de acceso de Azure AD con el formato **Bearer** &lt; *token* &gt; . |
+Authorization | string | Obligatorio. El token de acceso de Azure AD con el formato **Bearer** &lt; *token* &gt; . |
 
 ### <a name="request-parameters"></a>Parámetros de la solicitud
 
@@ -123,11 +123,11 @@ Nombre | Valor| Descripción
 :---|:---|:---
 sinceTimeUtc | DateTime | Define las alertas de límite de tiempo inferior de las que se recuperan, según el campo: <br> `LastProcessedTimeUtc` <br> El intervalo de tiempo será: de la hora sinceTimeUtc a la hora actual. <br><br> **NOTA:** Cuando no se especifica, se recuperan todas las alertas generadas en las últimas dos horas.
 untilTimeUtc | DateTime | Define las alertas enlazadas de tiempo superior que se recuperan. <br> El intervalo de tiempo será: de `sinceTimeUtc` vez en `untilTimeUtc` cuando. <br><br> **NOTA**: Cuando no se especifica, el valor predeterminado será la hora actual.
-ago | string | Extrae alertas en el siguiente intervalo de tiempo: `(current_time - ago)` de vez en `current_time` cuando. <br><br> El valor debe establecerse según **el formato de duración ISO 8601** <br> Ejemplo: `ago=PT10M` extraerá las alertas recibidas en los últimos 10 minutos.
+ago | cadena | Extrae alertas en el siguiente intervalo de tiempo: `(current_time - ago)` de vez en `current_time` cuando. <br><br> El valor debe establecerse según **el formato de duración ISO 8601** <br> Ejemplo: `ago=PT10M` extraerá las alertas recibidas en los últimos 10 minutos.
 límite | Entero | Define el número de alertas que se recuperarán. Las alertas más recientes se recuperarán en función del número definido.<br><br> **NOTA**: Cuando no se especifique, se recuperarán todas las alertas disponibles en el intervalo de tiempo.
-machinegroups | string | Especifica los grupos de dispositivos de los que extraer alertas. <br><br> **NOTA:** Cuando no se especifica, se recuperarán las alertas de todos los grupos de dispositivos. <br><br> Ejemplo: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
-DeviceCreatedMachineTags | string | Etiqueta de dispositivo única del Registro.
-CloudCreatedMachineTags | string | Etiquetas de dispositivo creadas en el Centro de seguridad de Microsoft Defender.
+machinegroups | cadena | Especifica los grupos de dispositivos de los que extraer alertas. <br><br> **NOTA:** Cuando no se especifica, se recuperarán las alertas de todos los grupos de dispositivos. <br><br> Ejemplo: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
+DeviceCreatedMachineTags | cadena | Etiqueta de dispositivo única del Registro.
+CloudCreatedMachineTags | cadena | Etiquetas de dispositivo creadas en el Centro de seguridad de Microsoft Defender.
 
 ### <a name="request-example"></a>Ejemplo de solicitud
 En el ejemplo siguiente se muestra cómo recuperar todas las detecciones de la organización.
@@ -339,4 +339,4 @@ Código de error HTTP | Descripción
 - [Configurar ArcSight para extraer Microsoft Defender para detecciones de puntos de conexión](configure-arcsight.md)
 - [Extraer detecciones a las herramientas SIEM](configure-siem.md)
 - [Campos de Microsoft Defender para detección de puntos de conexión](api-portal-mapping.md)
-- [Solucionar problemas de integración de herramientas SIEM](troubleshoot-siem.md)
+- [Solucionar problemas de integración de la herramienta SIEM](troubleshoot-siem.md)

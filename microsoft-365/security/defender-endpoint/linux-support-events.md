@@ -1,6 +1,6 @@
 ---
-title: Solucionar problemas de alertas o eventos que faltan para ATP de Microsoft Defender para Linux
-description: Solucionar problemas de alertas o eventos que faltan en ATP de Microsoft Defender para Linux.
+title: Solucionar problemas de alertas o eventos que faltan para Microsoft Defender para Endpoint en Linux
+description: Solucionar problemas de alertas o eventos que faltan en Microsoft Defender para Endpoint en Linux.
 keywords: microsoft, defender, atp, linux, eventos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5981cb75b4c835390e27d902b5950e3c68305200
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 40d394a4fc7349789dea9bd96ccdaf71067ab39e
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687459"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904003"
 ---
 # <a name="troubleshoot-missing-events-or-alerts-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de alertas o eventos que faltan para Microsoft Defender para Endpoint en Linux
 
@@ -31,7 +31,7 @@ ms.locfileid: "51687459"
 
 **Se aplica a:**
 
-- [Microsoft Defender para endpoint en Linux](microsoft-defender-endpoint-linux.md)
+- [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
 
 En este artículo se proporcionan algunos pasos generales para mitigar los eventos o alertas que faltan en el portal [del centro de](https://securitycenter.windows.com/) seguridad.
 

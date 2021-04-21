@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo unirse a un equipo como invitado en Microsoft Teams.
-ms.openlocfilehash: 9e60882907021c11d906ce9cd778a0f1eef32beb
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0260365e8a064dd96cda75c9becf9f82bc6871a3
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578860"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903723"
 ---
 # <a name="join-a-team-as-a-guest"></a>Unirse a un equipo como invitado
 
@@ -48,3 +48,7 @@ Si recibe una invitación de Microsoft Teams para unirse a un equipo, hay un par
 
 1. Simplemente abre la aplicación de Microsoft Teams y elige  **Sí**  para cambiar al equipo al que estás invitado.  Ahora puede colaborar en el proyecto en Teams.
 2. Para volver al equipo de su empresa, selecciónelo en la  **lista**  desplegable Organización.
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Experiencia de invitado en Teams](https://docs.microsoft.com/microsoftteams/guest-experience) (artículo) Administrar la configuración de Microsoft [Teams](https://docs.microsoft.com/microsoftteams/enable-features-office-365) para su organización (artículo) Use el acceso de invitado y el acceso externo para colaborar con personas ajenas a [su](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations) organización (artículo)

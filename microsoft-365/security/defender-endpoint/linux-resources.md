@@ -1,7 +1,7 @@
 ---
-title: Recursos de ATP para Linux de Microsoft Defender
+title: Recursos de Microsoft Defender para endpoint en Linux
 ms.reviewer: ''
-description: Describe recursos para ATP de Microsoft Defender para Linux, incluido cómo desinstalarlo, cómo recopilar registros de diagnóstico, comandos de CLI y problemas conocidos con el producto.
+description: Describe recursos para Microsoft Defender para Endpoint en Linux, como cómo desinstalarlo, cómo recopilar registros de diagnóstico, comandos cli y problemas conocidos con el producto.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a4f2324bc47bdee38e1cdeed1e21b5f9063e9a5c
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: de2602bdc94507d27236b939553a6567b2587f36
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587070"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903147"
 ---
 # <a name="resources"></a>Recursos
 
@@ -101,7 +101,7 @@ De forma predeterminada, la herramienta de línea de comandos genera el resultad
 
 En la tabla siguiente se enumeran los comandos de algunos de los escenarios más comunes. Ejecute `mdatp help` desde terminal para ver la lista completa de comandos admitidos.
 
-|Grupo                 |Escenario                                                |Comando                                                                |
+|Group                 |Escenario                                                |Comando                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |Configuración         |Activar/desactivar la protección en tiempo real                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
 |Configuración         |Activar/desactivar la supervisión del comportamiento                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 

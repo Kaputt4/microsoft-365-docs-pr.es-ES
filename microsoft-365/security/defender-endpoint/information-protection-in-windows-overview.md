@@ -1,5 +1,5 @@
 ---
-title: Información general sobre la protección de la información en Windows
+title: Information Protection en Introducción de Windows
 ms.reviewer: ''
 description: Obtenga información sobre cómo funciona la protección de la información en Windows para identificar y proteger información confidencial
 keywords: información, protección, dlp, datos, pérdida, prevención, protección
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 733f86ed48b9cc7a68fb0cd346c7b15fdcc3ce65
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 803c0af0c495eedfd26023d4e71d98df6a1b1b64
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187510"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904027"
 ---
-# <a name="information-protection-in-windows-overview"></a>Información general sobre la protección de la información en Windows
+# <a name="information-protection-in-windows-overview"></a>Information Protection en Introducción de Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ La protección de la información es una parte integral del conjunto de aplicaci
 
 
 >[!TIP]
-> Lee nuestra entrada de blog sobre cómo Atp de Microsoft Defender se integra con Microsoft Information Protection para descubrir, proteger y supervisar datos confidenciales [en dispositivos Windows.](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)
+> Lea nuestra entrada de blog sobre cómo Microsoft Defender para Endpoint (anteriormente conocido como ATP de Microsoft Defender) se integra con Microsoft Information Protection para descubrir, proteger y supervisar datos confidenciales en dispositivos [Windows.](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)
 
 Defender for Endpoint aplica los siguientes métodos para detectar, clasificar y proteger datos:
 

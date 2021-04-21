@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo detener el reenvío automático de mensajes de correo electrónico.
-ms.openlocfilehash: b6715cfdf8622521d977e0746cb9a340a8f70a5c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f8bd599c7c8bca8d4789188acbcd3574b7473dcb
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578608"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903687"
 ---
 # <a name="stop-email-auto-forward"></a>Detener el reenvío automático de correo electrónico
 
@@ -47,3 +47,7 @@ Si un hacker obtiene acceso al buzón de un usuario, puede reenviar automáticam
 1. Desplácese hasta la parte inferior y **seleccione Guardar**.
 
     La regla se ha creado y los hackers ya no podrán reenviar mensajes automáticamente.
+
+## <a name="related-content"></a>Contenido relacionado
+
+Agregar [otro alias de correo](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user) electrónico para un usuario (artículo) Configurar el reenvío de correo electrónico en Microsoft [365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding) (artículo) Buscar y corregir problemas de entrega de correo electrónico como administrador de [Office 365](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues) para empresas (artículo)

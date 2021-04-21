@@ -1,6 +1,6 @@
 ---
 title: Configurar Microsoft Defender para endpoint en características de iOS
-description: Describe cómo implementar ATP de Microsoft Defender para características de iOS
+description: Describe cómo implementar Microsoft Defender para endpoint en características de iOS
 keywords: microsoft, defender, atp, ios, configure, features, ios
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0e351f6500d5076e724653d0fde1940592dd1ae5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f5f7345f92b3ac76aa647a9caed63e5684be9c30
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687490"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903315"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurar Microsoft Defender para endpoint en características de iOS
 
@@ -49,7 +49,7 @@ De forma predeterminada, Defender para endpoint para iOS incluye y habilita la c
 Aunque está habilitado de forma predeterminada, puede haber algunos casos que requieran deshabilitar VPN. Por ejemplo, quieres ejecutar algunas aplicaciones que no funcionan cuando se configura una VPN. En tales casos, puedes optar por deshabilitar VPN desde la aplicación en el dispositivo siguiendo los pasos siguientes:
 
 1. En el dispositivo iOS, abre la aplicación **Configuración,** haz clic o pulsa **General** y, a continuación, **VPN.**
-1. Haz clic o pulsa en el botón "i" de ATP de Microsoft Defender.
+1. Haga clic o pulse en el botón "i" de Microsoft Defender para endpoint.
 1. Desactiva **Conectar a petición para** deshabilitar VPN.
 
     > [!div class="mx-imgBorder"]

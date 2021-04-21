@@ -1,5 +1,5 @@
 ---
-title: Comprobar el estado del sensor en ATP de Microsoft Defender
+title: Comprobar el estado de mantenimiento del sensor en Microsoft Defender para endpoint
 description: Compruebe el estado del sensor en los dispositivos para identificar cuáles están mal configurados, inactivos o no están informando datos del sensor.
 keywords: sensor, estado del sensor, mal configurado, inactivo, sin datos de sensor, datos de sensor, comunicaciones deficientes, comunicación
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 21313463519383f4bf052465a0d907d2df293ec8
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0361b7956339670d006c9f050274e07d4e979bca
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165278"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904169"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Comprobar el estado del sensor en Microsoft Defender para endpoint
 

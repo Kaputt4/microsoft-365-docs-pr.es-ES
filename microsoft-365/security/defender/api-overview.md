@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 14553f3891fd81a672b62fa0575f6c253fbb0224
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 496ad5695d9cd491817bad5daf3c76a02addefd1
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068978"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904193"
 ---
 # <a name="overview-of--microsoft-365-defender-apis"></a>Introducción a las API de Microsoft 365 Defender
 
@@ -47,6 +47,11 @@ Usa las API de Microsoft 365 Defender para automatizar flujos de trabajo basados
 - **[Búsqueda](api-advanced-hunting.md)** de amenazas entre productos: aproveche los conocimientos organizativos de su equipo de seguridad para buscar signos de peligro, mediante la creación de sus propias consultas personalizadas para realizar un control de los datos sin procesar recopilados en varios productos de protección.
 
 Junto con estas API específicas de Microsoft 365 Defender, [](api-articles.md) cada uno de nuestros otros productos de seguridad expone API adicionales para ayudarle a aprovechar sus capacidades únicas.
+
+
+> [!NOTE]
+> La transición al portal unificado no debe afectar a los paneles de PowerBi basados en Microsoft Defender para las API de extremo. Puede seguir trabajando con las API existentes independientemente de la transición del portal interactivo.
+
 
 ## <a name="learn-more"></a>Más información
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Detalles de la colaboración de contenido: las personas experimenta la puntuación de productividad.'
-ms.openlocfilehash: dedd39a84580f26e80e5586e07fb64c8a6d35573
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 43a5fbc3b1c4b6227cd29d79bfb0928a3b4b8ac9
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580863"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903327"
 ---
 # <a name="content-collaboration--people-experiences"></a>Colaboración de contenido: experiencias de personas
 
@@ -36,7 +36,7 @@ Para empezar con las perspectivas de colaboración de contenido, los usuarios de
 
 - OneDrive para la Empresa
 - SharePoint
-- Exchange en línea
+- Exchange Online
 
 Para obtener más información, vea [Asignar licencias a los usuarios.](../manage/assign-licenses-to-users.md)
 
@@ -49,6 +49,9 @@ Un aspecto clave de la transformación digital es cómo colaboran las personas e
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>Cómo calculamos la puntuación de colaboración de contenido
 
 Proporcionamos una información principal que contiene las métricas clave para la colaboración de contenido en su organización. A continuación, se usa un marco de puntuación detallado a continuación para estas métricas para calcular la puntuación de la organización.
+
+> [!NOTE]
+> El 22 de abril de 2021, cambiamos la forma en que se calcula la métrica de colaboradores. Esto afecta a la información [principal,](#primary-insight)a la información de [colaboración de](#number-of-files-collaborated-on)archivos y a la forma en que se mide la puntuación de colaboración de contenido. Este cambio ayuda a reducir el ruido en los datos de agentes no humanos (o bots) de Microsoft y otras aplicaciones de terceros, lo que da como resultado una puntuación más precisa y útil.
 
 ### <a name="primary-insight"></a>Información principal
 
@@ -67,7 +70,7 @@ Los tipos que se consideran para esta información incluyen archivos Word, Excel
         Se definen de la siguiente manera:</br>
         **Lectores:** Personas que tienen acceso o descargan archivos en línea en OneDrive o SharePoint.</br>
         **Creadores:** Personas que crean, modifican, cargan, sincronizan, comprueban, copian o mueven archivos de OneDrive o SharePoint en línea.</br>
-        **Colaboradores:** Personas que colaboran con archivos en línea con OneDrive o SharePoint. Dos personas son colaboradores si una de ellas lee o edita una aplicación de Office en línea o un PDF después de que la otra persona la haya creado o modificado, dentro de una ventana de 28 días.
+        **Colaboradores:** Personas que colaboran con archivos en línea mediante OneDrive o SharePoint. Dos personas son colaboradores si una de ellas lee o edita una aplicación de Office en línea o un PDF después de que la otra persona la haya creado o modificado, dentro de una ventana de 28 días.
 
         > [!NOTE]
         > Los archivos que se consideran en la visualización son archivos Word, Excel, PowerPoint, OneNote o PDF que están en línea y guardados en OneDrive o SharePoint. 
@@ -97,10 +100,9 @@ El gráfico de visualizaciones de tendencias muestra la línea de tendencia de l
 
 ### <a name="scoring-framework"></a>Marco de puntuación
 
-La puntuación de colaboración de contenido de la organización mide en un nivel agregado (organización) si las personas están leyendo, creando o colaborando de forma coherente en archivos de Office en línea, como Word, Excel, PowerPoint, OneNote o PDF; o en OneDrive o SharePoint.
+La puntuación de colaboración de contenido para su organización mide en un nivel agregado (organización) si las personas están leyendo, creando o colaborando de forma coherente en archivos de Office en línea como Word, Excel, PowerPoint, OneNote o PDF, o en OneDrive o SharePoint.
 
 Las puntuaciones no se proporcionan en el nivel de usuario individual.
-
 
 ## <a name="explore-how-your-organization-collaborates"></a>Explorar cómo colabora su organización
 
@@ -131,13 +133,13 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 3. **Visualización:** El desglose de la visualización está destinado a representar hasta qué punto las personas que adjuntan contenido en los correos electrónicos usan diferentes modos (archivos que no están en OneDrive o SharePoint; vínculos a archivos en línea y vínculos incrustados en el correo electrónico):
       - **Adjuntar archivos:** La parte azul (coloreada) de la barra y la fracción (numerador/denominador) de la barra representa el porcentaje de personas que usan datos adjuntos en los correos electrónicos.
         - Numerador: número de personas que adjuntan archivos al correo electrónico que no se guardaron en OneDrive o SharePoint en los últimos 28 días.
-        - Denominador:  Denominador: el número de personas que han tenido acceso a Exchange y OneDrive, SharePoint o ambos en los últimos 28 días.
+        - Denominador: el número de personas que han tenido acceso a Exchange y OneDrive, SharePoint o ambos en los últimos 28 días.
       - **Vínculos a archivos en línea:** La parte azul (coloreada) de la barra y la fracción (numerador/denominador) de la barra representan el porcentaje de personas que usan datos adjuntos y adjuntan vínculos a archivos de correos electrónicos.
         - Numerador: número de personas que adjuntan vínculos a archivos en línea (guardados en OneDrive o SharePoint) a correos electrónicos en los últimos 28 días.
-        - Denominador:  Denominador: el número de personas que tienen acceso a Exchange y OneDrive, SharePoint o ambos en los últimos 28 días.
+        - Denominador: el número de personas que tienen acceso a Exchange y OneDrive, SharePoint o ambos en los últimos 28 días.
       - **Insertar vínculos en el correo electrónico:** La parte azul (coloreada) de la barra y la fracción de la barra representan el porcentaje de personas que insertan vínculos en el cuerpo de los correos electrónicos.
         - Numerador: número de personas que insertan vínculos en el cuerpo de los correos electrónicos a archivos en línea (guardados en OneDrive o SharePoint) en los últimos 28 días.
-        - Denominador:  Denominador: el número de personas que tienen acceso a Exchange y OneDrive,SharePoint, o ambos en los últimos 28 días.
+        - Denominador: el número de personas que tienen acceso a Exchange y OneDrive, SharePoint o ambos en los últimos 28 días.
 4. **Vínculo a recursos:** Seleccione este vínculo para ver el contenido de la ayuda.
 
 ### <a name="sharing-of-online-files"></a>Uso compartido de archivos en línea
@@ -159,21 +161,21 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
 :::image type="content" source="../../media/intensityofcollab.png" alt-text="Gráfico en el que se muestra el número de archivos en los que se colaboró más.":::
 
-1. **Encabezado:** Esto resalta el porcentaje de personas que tienen acceso a OneDrive o SharePoint que colaboran en 4 o más archivos.
-2. **Cuerpo:** Esto proporciona información sobre cómo las personas pueden aprovechar los archivos en línea para una mejor colaboración.
-3. **Visualización:** Esto muestra una distribución de las personas que tienen acceso a OneDrive o SharePoint, en función del número de archivos en los que colaboran. Esto se muestra a través de las siguientes 4 categorías (para cada una, la parte azul de la barra y la fracción representan el porcentaje de personas que tienen acceso a OneDrive o SharePoint que entran en esa categoría):
+1. **Encabezado:** Destaca el porcentaje de personas que tienen acceso a OneDrive o SharePoint que colaboran en 4 o más archivos.
+2. **Cuerpo:** Proporciona información sobre cómo los usuarios pueden aprovechar los archivos en línea para mejorar la colaboración.
+3. **Visualización:** Muestra una distribución de las personas que tienen acceso a OneDrive o SharePoint, en función del número de archivos en los que colaboran. Esto se muestra a través de las siguientes 4 categorías (para cada una, la parte azul de la barra y la fracción representan el porcentaje de personas que tienen acceso a OneDrive o SharePoint que entran en esa categoría):
       - **Sin colaboración:**
-        - **Numerador:** El número de personas que no colaboran en ningún archivo en los últimos 28 días
-        - **Denominador:** El número total de personas que tienen acceso a OneDrive o SharePoint durante al menos 1 de los últimos 28 días.
+        - Numerador: número de personas que no colaboran en ningún archivo en los últimos 28 días.
+        - Denominador: número total de personas que tienen acceso a OneDrive o SharePoint durante al menos 1 de los últimos 28 días.
       - **Colaboración en archivos 1-3:**
-        - **Numerador:** El número de personas que colaboran en 1-3 archivos en los últimos 28 días.
-        - **Denominador:** El número total de personas que han tenido acceso a OneDrive o SharePoint durante al menos 1 de los últimos 28 días.
+        - Numerador: número de personas que colaboran en 1-3 archivos en los últimos 28 días.
+        - Denominador: número total de personas que han tenido acceso a OneDrive o SharePoint durante al menos 1 de los últimos 28 días.
       - **Colaboración en archivos 4-10:**
-        - **Numerador:** El número de personas que colaboran en 4-10 archivos en los últimos 28 días
-        - **Denominador: el** número total de personas que han tenido acceso a OneDrive o SharePoint durante al menos 1 de los últimos 28 días.
+        - Numerador: número de personas que colaboran en 4-10 archivos en los últimos 28 días.
+        - Denominador: número total de personas que han tenido acceso a OneDrive o SharePoint durante al menos 1 de los últimos 28 días.
       - **Colaboración en 11 o más archivos:**
-        - **Numerador:** El número de personas que colaboran en 11 o más archivos en los últimos 28 días
-        - **Denominador:** El número total de personas que han tenido acceso a OneDrive o SharePoint durante al menos 1 de los últimos 28 días.
+        - Numerador: número de personas que colaboran en 11 o más archivos en los últimos 28 días.
+        - Denominador: número total de personas que han tenido acceso a OneDrive o SharePoint durante al menos 1 de los últimos 28 días.
         
 4. **Vínculo a recursos:** Seleccione este vínculo para ver el contenido de la ayuda.
 
@@ -183,12 +185,12 @@ También le proporcionamos información que le ayuda a obtener visibilidad de c�
 
 1. **Encabezado:** Destaca el porcentaje de dispositivos de todos los probados que tienen una conexión de red deficiente a OneDrive y SharePoint. 
 2. **Cuerpo:** Proporciona información sobre por qué el rendimiento de la conexión de red es importante para la colaboración. 
-3. **Visualización:** muestra un porcentaje de dispositivos con diferentes niveles de rendimiento de conectividad de red relacionados con OneDrive y SharePoint:
-      - **81-100 (mejor):** la parte verde oscuro (coloreada) de la barra representa el porcentaje de dispositivos con mejor rendimiento.
+3. **Visualización:** Muestra un porcentaje de dispositivos con diferentes niveles de rendimiento de conectividad de red relacionados con OneDrive y SharePoint:
+      - **81-100 (mejor):** la parte verde oscuro (coloreada) de la barra representa el porcentaje de dispositivos con el mejor rendimiento.
       - **61-80:** la parte verde (coloreada) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 60-80. 
       - **41-60:** La parte naranja (coloreada) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 40-60. 
       - **21-40:** La parte roja (coloreada) de la barra representa el porcentaje de dispositivos con una puntuación de rendimiento de red entre 20-40. 
-      - **0-20:** La parte roja oscura (coloreada) de la barra representa el porcentaje de dispositivos con peor puntuación de rendimiento de red entre 0 y 20. 
+      - **0-20:** la parte roja oscura (coloreada) de la barra representa el porcentaje de dispositivos con la peor puntuación de rendimiento de red entre 0 y 20. 
 
 ## <a name="related-content"></a>Contenido relacionado
 

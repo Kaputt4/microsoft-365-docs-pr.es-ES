@@ -1,7 +1,7 @@
 ---
-title: Detección de proxy estático de ATP de Microsoft Defender para Linux
+title: Detección de proxy estático de Microsoft Defender para endpoint en Linux
 ms.reviewer: ''
-description: Describe cómo configurar ATP de Microsoft Defender para la detección de proxy estático.
+description: Describe cómo configurar Microsoft Defender para Endpoint en Linux para la detección de proxy estático.
 keywords: microsoft, defender, atp, linux, instalación, proxy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 93d654773fc73903cbe0c5de289dcfdf9fd34f9f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: e59727b6bb5fca58595764fc003009891546d8f6
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687858"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903851"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-linux-for-static-proxy-discovery"></a>Configurar Microsoft Defender para endpoint en Linux para la detección de proxy estático
 
@@ -36,7 +36,7 @@ ms.locfileid: "51687858"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-ATP de Microsoft Defender puede detectar un servidor proxy mediante la ```HTTPS_PROXY``` variable de entorno. Esta configuración debe configurarse **tanto en** el momento de la instalación como después de instalar el producto.
+Microsoft Defender para endpoint puede detectar un servidor proxy mediante la ```HTTPS_PROXY``` variable de entorno. Esta configuración debe configurarse **tanto en** el momento de la instalación como después de instalar el producto.
 
 ## <a name="installation-time-configuration"></a>Configuración de tiempo de instalación
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 220e4e6546899dd00f3a02bf83039a928be4f8dc
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: bfc8724f8dc27aa2475c293e7370488b2ea392b8
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498846"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903759"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Crear y administrar reglas de detecciones personalizadas
 
@@ -179,6 +179,9 @@ Se mantiene el control sobre la generalidad o especificidad de las detecciones p
 ## <a name="manage-existing-custom-detection-rules"></a>Administrar reglas de detección personalizadas existentes
 Puede ver la lista de reglas de detección personalizadas existentes, comprobar sus ejecuciones anteriores y revisar las alertas que han desencadenado. También puede ejecutar una regla a petición y modificarla.
 
+>[!TIP]
+> Las alertas generadas por detecciones personalizadas están disponibles en las API de alertas e incidentes. Para obtener más información, vea [Supported Microsoft 365 Defender API](api-supported.md).
+
 ### <a name="view-existing-rules"></a>Ver reglas existentes
 
 Para ver todas las reglas de detección personalizadas existentes, vaya a **Buscar**  >  **detecciones personalizadas**. La página enumera todas las reglas con la siguiente información de ejecución:
@@ -217,7 +220,7 @@ En la pantalla de detalles de la regla (**Buscar** detecciones personalizadas [N
 >[!TIP]
 >Para ver rápidamente la información y realizar acciones en un elemento de una tabla, use la columna de selección [&#10003;] a la izquierda de la tabla.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 - [Introducción a las detecciones personalizadas](custom-detections-overview.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Conozca el lenguaje de consulta de búsqueda avanzada](advanced-hunting-query-language.md)

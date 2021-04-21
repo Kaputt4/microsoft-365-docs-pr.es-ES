@@ -1,7 +1,7 @@
 ---
-title: Establecer preferencias para ATP de Microsoft Defender para Linux
+title: Establecer preferencias para Microsoft Defender para endpoint en Linux
 ms.reviewer: ''
-description: Describe cómo configurar ATP de Microsoft Defender para Linux en empresas.
+description: Describe cómo configurar Microsoft Defender para Endpoint en Linux en empresas.
 keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6ca6b3dd41b867145bfc4af331fb742be469d2a9
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 2c162d652656afb61f1d74bad9ec963825d25a14
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688398"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903875"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para endpoint en Linux
 

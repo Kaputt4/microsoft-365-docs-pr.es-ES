@@ -1,7 +1,7 @@
 ---
-title: Términos de licencia de Microsoft Defender ATP para iOS Application
+title: Términos de licencia de aplicación de Microsoft Defender para endpoint en iOS
 ms.reviewer: ''
-description: Describe los términos de licencia de ATP de Microsoft Defender para iOS
+description: Describe los términos de licencia de Microsoft Defender para endpoint en iOS
 keywords: microsoft, defender, atp, iOS, licencia, términos, aplicación, uso, instalación, servicio, comentarios, ámbito,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 75bcf13120c05990abf2b20cd68f460219b73cd6
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: e2f2abbb27d1040f0fa9bcd1134103d54372b25b
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688938"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903967"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios-application-license-terms"></a>Términos de licencia de aplicación de Microsoft Defender para endpoint en iOS
 

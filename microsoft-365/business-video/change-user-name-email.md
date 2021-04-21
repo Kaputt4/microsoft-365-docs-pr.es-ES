@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo cambiar el nombre o la dirección de correo electrónico de un usuario.
-ms.openlocfilehash: 6c08110e8725645f2e1d0deffcadd9f34354e1f9
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0f2a378cccf2def9cd951483b23a11c2a414607d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580683"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903735"
 ---
 # <a name="change-a-users-name-or-email-address"></a>Cambiar el nombre o la dirección de correo electrónico de un usuario
 
@@ -60,3 +60,7 @@ En ocasiones, es posible que deba cambiar el nombre o la dirección de correo el
 1. Escriba el nuevo nombre de usuario, compruebe el dominio y seleccione **Guardar cambios**.
 
     Como resultado de este cambio, el usuario tendrá que iniciar sesión en Microsoft 365 con este nuevo nombre de usuario y agregar la nueva cuenta de correo electrónico a Outlook.
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Conceder permisos de buzón a otro usuario](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user) (artículo) Convertir un buzón de usuario [en](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox) un buzón compartido (artículo) Configuración de correo electrónico [de usuario](https://docs.microsoft.com/microsoft-365/admin/email/office-365-user-email-settings) (artículo)

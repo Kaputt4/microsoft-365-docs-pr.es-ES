@@ -4,7 +4,7 @@ description: Cómo administrar temas en el Centro de temas.
 author: chuckedmonson
 ms.author: chucked
 manager: pamgreen
-ms.reviewer: cjtan
+ms.reviewer: ergradel
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: e2cbf62339e2ade240474fed9db86e68dc0b3bb4
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 4532f5685fdde7c89ca59e5c22e1ad8afdf2b112
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760127"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904039"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Administrar temas en el centro de temas en Temas de Microsoft Viva
 
@@ -29,23 +29,23 @@ ms.locfileid: "51760127"
 </br>
 
 
-En el Centro de temas de Viva  Topics, un administrador de conocimientos puede ver la página Administrar temas para revisar los temas que se han identificado en ubicaciones de origen de SharePoint según lo especificado por el administrador de conocimientos.  
+En el Centro de temas de Viva  Topics, un administrador de conocimientos puede ver la página Administrar temas para revisar los temas que se han identificado en las ubicaciones de origen según lo especificado por el administrador de conocimientos.  
 
    ![Centro de temas](../media/knowledge-management/topic-center.png) </br> 
 
 
 
-Los administradores de conocimientos ayudan a guiar los temas descubiertos a través del ciclo de vida del tema en el que los temas son:
+Los administradores de conocimientos ayudan a guiar los temas descubiertos a través de las distintas fases del ciclo de vida del tema:
 
 - **Sugerido:** AI ha identificado un tema y tiene suficientes recursos, conexiones y propiedades compatibles.
-- **Confirmado:** se valida un tema sugerido por AI. La validación se realiza mediante confirmación de un administrador de conocimientos. Además, se puede confirmar un tema si al menos dos usuarios dan comentarios positivos a través de la pregunta de comentarios en la tarjeta del tema.
+- **Confirmado:** se valida un tema sugerido por AI. La validación se realiza mediante confirmación de un administrador de conocimientos. Además, se puede confirmar un tema si hay una neta positiva de 2 votos de los usuarios finales recibidos a través de los mecanismos de comentarios en la tarjeta del tema.
 - **Publicado:** un tema confirmado que se ha seleccionado: se han realizado ediciones manuales para mejorar su calidad.
 - **Eliminado:** un administrador de conocimientos rechaza un tema y ya no será visible para los visores. El tema puede estar en cualquier estado cuando se quita (sugerido, confirmado o publicado). Cuando se quita un tema publicado, la página con los detalles seleccionados tendrá que eliminarse manualmente a través de la Biblioteca de páginas del centro de temas.
 
    ![Gráfico de ciclo de vida de temas](../media/knowledge-management/topic-lifecycle.png) </br> 
 
 > [!Note] 
-> En la página Administrar temas, cada administrador de conocimientos solo podrá ver los temas en los que tienen acceso a los archivos y páginas del tema. Esto se reflejará en los temas que se enumeran en  las pestañas **Sugerido**, **Confirmado,** **Eliminado** y Publicado. Sin embargo, los recuentos de temas muestran los recuentos totales de la organización.
+> En la página Administrar temas, cada administrador de conocimientos solo podrá ver temas en los que tengan acceso a los archivos y páginas subyacentes conectados al tema. Este recorte de permisos se reflejará en la lista de temas que aparecen en las pestañas **Sugerido,** **Confirmado,** Eliminado **y** Publicado. Sin embargo, los recuentos de temas muestran los recuentos totales de la organización independientemente de los permisos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ Para administrar temas en el centro de temas, debe:
 
 No podrá ver la página Administrar temas en el centro de temas a menos que tenga el permiso **Quién puede administrar temas.**
 
-En el centro de temas, un administrador de conocimientos puede revisar los temas que se han identificado en las ubicaciones de origen de SharePoint que especificó y puede confirmarlos o rechazarlos. Un administrador de conocimientos también puede crear y publicar nuevas páginas de temas si no se encontró una en la detección de temas o editar las existentes si es necesario actualizarlas.
+En el centro de temas, un administrador de conocimientos puede revisar los temas que se han identificado en las ubicaciones de origen especificadas y puede confirmarlos o rechazarlos. Un administrador de conocimientos también puede crear y publicar nuevas páginas de temas si no se encontró una en la detección de temas o editar las existentes si es necesario actualizarlas.
 
 
 ## <a name="review-suggested-topics"></a>Revisar temas sugeridos
@@ -89,15 +89,13 @@ Cada tema que aparece en la página Temas sugeridos tiene asignada una puntuaci�
 
 La puntuación de calidad puede ayudar a proporcionar información sobre los temas con más información y puede ser útil para encontrar temas que pueden necesitar editarse manualmente. Por ejemplo, un tema con una puntuación de calidad inferior puede ser el resultado de que algunos usuarios no tengan permisos de SharePoint para los archivos o sitios pertinentes que AI ha incluido en el tema. A continuación, un colaborador podría editar el tema para incluir la información (cuando corresponda), que, a continuación, se podrá ver para todos los usuarios que puedan ver el tema.
 
-La puntuación de calidad puede oscilar entre 1 y 100. Un tema recién descubierto tendrá una puntuación de calidad de 0 hasta que dos o más usuarios lo han visto. La puntuación de calidad de cada usuario viene determinada por una serie de factores, como la cantidad de contenido que se muestra para el usuario específico, que se controla los permisos del usuario, ya que cada página de temas tiene el recorte de seguridad en su lugar para el contenido generado por la IA. La puntuación de calidad que se muestra en la **pestaña Temas** sugeridos es un promedio de cada puntuación individual de los usuarios.
-
 ### <a name="impressions"></a>Impresiones
 
-La **columna Impresiones** muestra el número de veces que se ha mostrado un tema a los usuarios finales. Esto incluye vistas a través de tarjetas de tema en la búsqueda, a través de los resaltados de temas y a través de las vistas del centro de temas. No refleja el clic en estos temas, sino que se ha mostrado el tema. La columna Impresiones se mostrará para los temas de  las **pestañas** **Sugeridos,** Confirmados, Publicados y Eliminados de la página Administrar temas.
+La **columna Impresiones** muestra el número de veces que se ha mostrado un tema a los usuarios finales. Esto incluye vistas a través de las tarjetas de respuesta del tema en la búsqueda y a través de los aspectos destacados del tema. No refleja el clic en estos temas, sino que se ha mostrado el tema. La columna Impresiones se mostrará para los temas de  las **pestañas** **Sugeridos,** Confirmados, Publicados y Eliminados de la página Administrar temas.
 
 ## <a name="confirmed-topics"></a>Temas confirmados
 
-En la página Administrar temas, los temas detectados en las ubicaciones de origen de SharePoint especificadas y confirmados por un administrador de  conocimientos o "crowdsourced" confirmados por dos o más personas a través del mecanismo de comentarios de tarjeta se mostrarán en la pestaña Confirmado. Si es necesario, un usuario con permisos para administrar temas puede revisar los temas confirmados y elegir rechazarlos.
+En la página Administrar temas, los temas detectados en las ubicaciones de origen de SharePoint especificadas y confirmados por un administrador de conocimientos o "crowdsourced" confirmados  por una red de dos o más personas (equilibrando los votos negativos de los usuarios con los votos positivos de los usuarios) a través del mecanismo de comentarios de tarjeta se mostrarán en la pestaña Confirmado. Si es necesario, un usuario con permisos para administrar temas puede revisar los temas confirmados y elegir rechazarlos.
 
 Para revisar un tema confirmado:
 

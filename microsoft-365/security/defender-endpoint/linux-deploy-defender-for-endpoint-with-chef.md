@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 362222e4737b1a8dd6b8a0a284bf3bfb1903c288
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: aa699aae24b1e6383f5a2afbe7fce31e0f53805c
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861455"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903933"
 ---
-# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Implementar Defender para endpoint en Linux con Chef
+# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Implementar Defender para punto de conexión en Linux con Chef
 
 Antes de empezar:
 
@@ -110,7 +110,7 @@ end
 
 Asegúrese de actualizar el nombre de la ruta de acceso a la ubicación del archivo de incorporación.
 Para probar la implementación en la estación de trabajo de Chef, simplemente ejecute ``sudo chef-client -z -o mdatp`` .
-Después de la implementación, debes considerar la posibilidad de crear e implementar un archivo de configuración en los servidores según establecer preferencias para ATP de Microsoft Defender para Linux: seguridad de  [Windows | Microsoft Docs](/windows/security/threat-protection/microsoft-defender-atp/linux-preferences).  
+Después de la implementación, debe considerar la posibilidad de crear e implementar un archivo de configuración en los servidores según establecer preferencias para  [Microsoft Defender para](/linux-preferences.md)endpoint en Linux .  
 Después de crear y probar el archivo de configuración, puede colocarlo en la carpeta cookbook/mdatp/files donde también colocó el paquete de incorporación.  A continuación, puede crear un archivo settings_mdatp.rb en la carpeta mdatp/recipies y agregar este texto:
 
 ```powershell

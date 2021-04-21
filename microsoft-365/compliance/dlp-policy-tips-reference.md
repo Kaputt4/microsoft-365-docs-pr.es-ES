@@ -18,12 +18,12 @@ ms.collection:
 - SPO_Content
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que entra en conflicto con una directiva DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 693f511b6303fb07d393c62efb4a61631b844474
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 36e4d4f96146b51e0b31731c9e93222eed767045
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876825"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903807"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Referencia de sugerencias de directiva de prevención de pérdida de datos
 
@@ -63,7 +63,6 @@ Las sugerencias de directiva DLP en Outlook Web Access se admiten para todas las
 - Agregar declinación de responsabilidades HTML
 - Anteponer el asunto del correo electrónico
 - Quitar el cifrado de mensajes de O365 y la protección de derechos
-- Eliminar 
 
 ## <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions"></a>Outlook 2013 y versiones posteriores admiten mostrar sugerencias de directiva solo para algunas condiciones y excepciones
 
@@ -72,11 +71,11 @@ Actualmente, Outlook 2013 y versiones posteriores admiten mostrar sugerencias de
 - El contenido contiene (solo funciona para tipos de información confidencial. No se admiten etiquetas de confidencialidad)
 - El contenido se comparte
 
-Tenga en cuenta que todas las condiciones funcionan para los correos electrónicos que se creen en la aplicación cliente de Outlook, donde coincidirán con el contenido y aplicarán acciones de protección en el contenido. Sin embargo, la presentación de sugerencias de directiva a los usuarios aún no es compatible con las condiciones que se usan aparte de las mencionadas anteriormente.
+Tenga en cuenta que todas las condiciones funcionan para los correos electrónicos que se creen en la aplicación cliente de Outlook, donde coincidirán con el contenido y aplicarán acciones de protección en el contenido. Sin embargo, mostrar sugerencias de directiva a los usuarios no es compatible con las condiciones que se usan aparte de las mencionadas anteriormente.
 
-## <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 y versiones posteriores admiten mostrar sugerencias de directiva solo para algunos tipos de información confidencial
+## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 y versiones posteriores y aplicaciones de Office en escritorio admiten mostrar sugerencias de directiva para solo algunos tipos de información confidencial
 
-La lista de tipos de información confidencial listas para usar que se detectarán para mostrar sugerencias de directivas DLP en Outlook en el escritorio (2013 y versiones posteriores) son las siguientes:
+La lista de tipos de información confidencial listas para usar que se detectarán para mostrar sugerencias de directivas DLP en Outlook en escritorio (2013 y versiones posteriores) y aplicaciones de Office (Word, Excel, PowerPoint) en escritorio son las siguientes:
 
 - Número de enrutamiento ABA
 - Número de identidad nacional (DNI) de Argentina
@@ -180,7 +179,7 @@ La lista de tipos de información confidencial listas para usar que se detectar�
 
 Tenga en cuenta que los tipos de información confidencial personalizados también se admiten para las sugerencias de directiva DLP, además de los tipos de información confidencial que se han indicado anteriormente.
 
-## <a name="data-loss-prevention-on-endpoint-supports-policy-tips-for-only-some-sensitive-information-types"></a>La prevención de pérdida de datos en el punto de conexión admite sugerencias de directiva solo para algunos tipos de información confidencial
+## <a name="data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types"></a>La prevención de pérdida de datos en dispositivos de punto de conexión admite sugerencias de directiva solo para algunos tipos de información confidencial
 
 La lista de tipos de información confidencial listas para usar que se detectarán en documentos que residen en dispositivos de extremo son los siguientes:
 
@@ -395,16 +394,16 @@ Tenga en cuenta que los tipos de información confidencial personalizados tambi�
 |**Aplicación y plataforma**|**Compatibilidad con sugerencias de directiva DLP**|**Tipos de información confidencial admitidos**|**Predicados y acciones admitidas**|**Comments**|
 |:--|:--|:--|:--|:--|
 |**Outlook Web Access**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Todo|Subset|Consulta [Referencia de sugerencias de directiva de prevención de pérdida de datos](#data-loss-prevention-policy-tips-reference)|
-|**Outlook Win32 (Outlook 2013 y posteriores)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|Subset|Vea [Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) y versiones posteriores admite mostrar sugerencias de directiva solo para algunas condiciones y excepciones, [y Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-sensitive-information-types) y versiones posteriores admite mostrar sugerencias de directiva solo para algunos tipos de información confidencial para obtener detalles sobre la compatibilidad con tipos de información confidencial y condiciones dlp y acciones admitidas para mostrar sugerencias de directivas DLP en Outlook Win32.|
+|**Outlook Win32 (Outlook 2013 y posteriores)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|Subset|Vea [Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) y versiones posteriores que admiten mostrar sugerencias de directiva para solo algunas condiciones y excepciones, [y Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) y versiones posteriores y Soporte técnico de Office en escritorio que muestran sugerencias de directivas para algunos tipos de información confidencial para obtener detalles sobre la compatibilidad con tipos de información confidencial y condiciones dlp y acciones admitidas para mostrar sugerencias de directivas DLP en Outlook Win32.|
 |**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Ninguno|Ninguno|Las sugerencias de directivas DLP no se admiten en Outlook mobile|
 |**Cliente web de Sharepoint Online/One Drive para empresas**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Todo|Todos los predicados y acciones de SPO/ODB en DLP||
 |**Cliente Win32/ One Drive for Business Win32 de Sharepoint**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Ninguno|Ninguno|Las sugerencias de directivas DLP no se admiten en aplicaciones cliente de escritorio de Sharepoint o OneDrive|
-|**Word, Excel, Cliente web de Powerpoint**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Todo|Todos los predicados y acciones de SPO/ODB en DLP|La sugerencia de directiva DLP se admite si el documento está hospedado en SPO o en la aplicación web de ODB y la directiva DLP ya está estampada.|
-|**Word, Excel, Cliente móvil de Powerpoint**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Ninguno|Ninguno|Las sugerencias de directivas DLP no se admiten en aplicaciones móviles para Office.|
+|**Word, Excel, PowerPoint Web Client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Todo|Todos los predicados y acciones de SPO/ODB en DLP|La sugerencia de directiva DLP se admite si el documento está hospedado en SPO o en la aplicación web de ODB y la directiva DLP ya está estampada.|
+|**Word, Excel, Cliente móvil de PowerPoint**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Ninguno|Ninguno|Las sugerencias de directivas DLP no se admiten en aplicaciones móviles para Office.|
 |**Teams Web/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Todo|Todos los predicados de Teams en la directiva DLP|Las sugerencias de directiva mostrarán cuándo se marca un mensaje como "Este mensaje se ha marcado. ¿Qué puedo hacer?" Al hacer clic en el vínculo, el usuario puede revisar los tipos de información confidencial detectados e invalidar o notificar un problema si lo permite el administrador. Tenga en cuenta que no se muestran sugerencias de directiva para archivos. Cuando el destinatario intenta obtener acceso al documento, es posible que se les deniegue el acceso si no se permite.|
-|**Dispositivos de extremo de Win32**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|Todos los predicados y acciones dlp de extremo en la directiva DLP|Consulte [Prevención de pérdida de datos en el punto de conexión admite sugerencias de directiva solo para algunos tipos de información confidencial](#data-loss-prevention-on-endpoint-supports-policy-tips-for-only-some-sensitive-information-types)|
-|**Dispositivos Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Ninguno|Ninguno|La prevención de pérdida de datos no es aplicable en dispositivos Mac hoy en día|
-|**Aplicaciones en la nube de terceros**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Ninguno|Ninguno|Prevención de pérdida de datos|
+|**Dispositivos de extremo de Win32**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|Todos los predicados y acciones dlp de extremo en la directiva DLP|Consulte [Prevención de pérdida de datos en el punto de conexión admite sugerencias de directiva solo para algunos tipos de información confidencial](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
+|**Dispositivos Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Ninguno|Ninguno|Las directivas de prevención de pérdida de datos no son aplicables en dispositivos Mac hoy en día|
+|**Aplicaciones en la nube de terceros**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Ninguno|Ninguno|Las sugerencias de directiva de prevención de pérdida de datos no se admiten en aplicaciones en la nube de terceros|
 |**On-prem**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Ninguno|Ninguno||
-|**Word, Excel, Cliente de Powerpoint Win32**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Subset|Subset|Las sugerencias de directiva para aplicaciones cliente WXP funcionarán para documentos almacenados en Sitios de Sharepoint Online o One Drive para empresas para todas las directivas DLP que tengan exactamente lo siguiente o un subconjunto de condiciones o acciones en la directiva DLP:</br> <ul><li>El contenido contiene tipos de información confidencial</li><li>Ámbito de acceso (el contenido se comparte interna o externamente)</li><li>Notificar al usuario (sugerencias de directiva/notificaciones de usuario)</li><li>Bloquear a todos</li><li>Informes de incidentes</li></ul></br> Si hay alguna otra condición o acción, la sugerencia de directiva DLP para esa directiva no aparecerá en las aplicaciones de escritorio de Word, Excel o PowerPoint.|
+|**Word, Excel, Cliente de PowerPoint Win32**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Subset|Subset|Consulte [Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) y versiones posteriores y Compatibilidad con aplicaciones de Office en escritorio que muestran sugerencias de directiva para solo algunos tipos de información confidencial para la lista de tipos de información confidencial admitidos</br></br>Las sugerencias de directiva para aplicaciones cliente WXP funcionarán para documentos almacenados en Sitios de Sharepoint Online o One Drive para empresas para todas las directivas DLP que tengan exactamente lo siguiente o un subconjunto de condiciones o acciones en la directiva DLP:</br> <ul><li>El contenido contiene tipos de información confidencial</li><li>Ámbito de acceso (el contenido se comparte interna o externamente)</li><li>Notificar al usuario (sugerencias de directiva/notificaciones de usuario)</li><li>Bloquear a todos</li><li>Informes de incidentes</li></ul></br> Si hay alguna otra condición o acción, la sugerencia de directiva DLP para esa directiva no aparecerá en las aplicaciones de escritorio de Word, Excel o PowerPoint.</br>Vea [Sugerencias de directivas en Excel, PowerPoint y Word](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) para obtener más información|
 ||||||
