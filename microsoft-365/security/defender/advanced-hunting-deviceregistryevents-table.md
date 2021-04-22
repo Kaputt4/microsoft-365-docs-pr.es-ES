@@ -1,7 +1,7 @@
 ---
 title: Tabla DeviceRegistryEvents en el esquema de búsqueda avanzada
 description: Obtenga información sobre los eventos del Registro que puede consultar en la tabla DeviceRegistryEvents del esquema de búsqueda avanzada
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, eventos del registro, registro, DeviceRegistryEvents, clave, subclave, valor
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, tabla, columna, tipo de datos, eventos del registro, registro, DeviceRegistryEvents, clave, subclave, valor
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ca348d600c79cbfddd3328c702127eadb80774c8
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a256282ffd8afabae7ffe6dab9a2b132e4fee475
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499767"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934877"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 

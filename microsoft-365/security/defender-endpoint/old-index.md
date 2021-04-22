@@ -1,7 +1,7 @@
 ---
 title: Protección contra amenazas (Windows 10)
 description: Microsoft Defender para punto de conexión es una plataforma unificada para la protección preventiva, la detección posterior a la vulneración y la respuesta e investigación automatizadas.
-keywords: protección contra amenazas, Protección contra amenazas avanzada de Microsoft Defender, reducción de superficie de ataque, protección de última generación, detección y respuesta de puntos de conexión, investigación y respuesta automatizadas, expertos en amenazas de Microsoft, Puntuación segura de Microsoft para dispositivos, búsqueda avanzada, búsqueda de amenazas cibernéticas, protección contra amenazas web
+keywords: protección contra amenazas, Microsoft Defender para endpoint, reducción de superficie de ataque, protección de última generación, detección y respuesta de puntos de conexión, investigación y respuesta automatizadas, expertos en amenazas de Microsoft, Puntuación segura de Microsoft para dispositivos, búsqueda avanzada, búsqueda de amenazas cibernéticas, protección contra amenazas web
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 4206519d62feb82bbc297659e01b0cc3902b83dc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3098c2786874650ad14d226beacd5ec760decef0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51069206"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934938"
 ---
 # <a name="threat-protection"></a>Protección contra amenazas
 [Microsoft Defender para punto de conexión](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) es una plataforma unificada para la protección preventiva, la detección posterior a la vulneración y la respuesta e investigación automatizadas. Defender for Endpoint protege los puntos de conexión frente a amenazas cibernéticas, detecta ataques avanzados e infracciones de datos, automatiza los incidentes de seguridad y mejora la posición de seguridad.
@@ -27,7 +27,7 @@ ms.locfileid: "51069206"
 > [!TIP]
 > Permitir que los usuarios accedan a los servicios en la nube y a las aplicaciones locales con facilidad y habiliten las capacidades de administración modernas para todos los dispositivos. Para obtener más información, vea [Secure your remote workforce](https://docs.microsoft.com/enterprise-mobility-security/remote-work/). 
 
-<center><h2>Microsoft Defender para punto de conexión</center></h2>
+<center><h2>Microsoft Defender para endpoint</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>Administración & vulnerabilidades de amenazas</b></center></a></td>
@@ -52,7 +52,7 @@ ms.locfileid: "51069206"
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
 
-**[Administración & vulnerabilidades de amenazas](next-gen-threat-and-vuln-mgt.md)**<br>
+**[Administración de vulnerabilidades y amenazas](next-gen-threat-and-vuln-mgt.md)**<br>
 Esta funcionalidad integrada usa un enfoque basado en riesgos que cambia el juego para la detección, priorización y corrección de vulnerabilidades y configuraciones erróneas de puntos de conexión.
 
 - [Introducción & administración de vulnerabilidades de amenazas](next-gen-threat-and-vuln-mgt.md)
@@ -69,11 +69,11 @@ El conjunto de capacidades de reducción de superficie de ataque proporcionan la
 - [Aislamiento basado en hardware](overview-hardware-based-isolation.md)
 - [Control de la aplicación](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
 - [Control de dispositivos](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
-- [Protección contra vulnerabilidades](exploit-protection.md)
+- [Protección contra vulnerabilidades de seguridad](exploit-protection.md)
 - [Protección de red,](network-protection.md) [protección web](web-protection-overview.md)
 - [Acceso controlado a carpetas](controlled-folders.md)
 - [Firewall de red](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
-- [Reglas de reducción de la superficie expuesta a ataques](attack-surface-reduction.md)
+- [Reglas de la reducción de la superficie expuesta a ataques](attack-surface-reduction.md)
 
 <a name="ngp"></a>
 
@@ -88,7 +88,7 @@ Para reforzar aún más el perímetro de seguridad de la red, Microsoft Defender
 
 <a name="edr"></a>
 
-**[Detección y respuesta de puntos de conexión.](overview-endpoint-detection-response.md)**<br>
+**[EDR](overview-endpoint-detection-response.md)**<br>
 Las capacidades de detección y respuesta de puntos de conexión se ponen en marcha para detectar, investigar y responder a intentos de intrusión e infracciones activas. Con la búsqueda avanzada, tienes una herramienta de búsqueda de amenazas basada en consultas que permite a los usuarios encontrar de forma proactiva infracciones y crear detecciones personalizadas.
 
 - [Alertas](alerts-queue.md)
@@ -97,7 +97,7 @@ Las capacidades de detección y respuesta de puntos de conexión se ponen en mar
 - [Colección forense](respond-machine-alerts.md#collect-investigation-package-from-devices)
 - [Inteligencia de amenazas](threat-indicator-concepts.md)
 - [Servicio avanzado de detonación y análisis](respond-file-alerts.md#deep-analysis)
-- [Búsqueda avanzada](advanced-hunting-overview.md)
+- [Búsqueda avanzada de amenazas](advanced-hunting-overview.md)
     - [Detecciones personalizadas](overview-custom-detections.md)
 
 <a name="ai"></a>
@@ -132,7 +132,7 @@ Integre Microsoft Defender para Endpoint en los flujos de trabajo existentes.
 **[Integración con soluciones de Microsoft](threat-protection-integration.md)** <br>
  Microsoft Defender para endpoint se integra directamente con varias soluciones de Microsoft, entre las que se incluyen:
 - Intune
-- Microsoft Defender para Office 365
+- Microsoft Defender para Office 365
 - Microsoft Defender for Identity
 - Azure Defender
 - Skype Empresarial

@@ -1,7 +1,7 @@
 ---
 title: Enumerar todas las recomendaciones
 description: Recupera una lista de todas las recomendaciones de seguridad que afectan a la organización.
-keywords: apis, api de gráficos, api admitidas, get, recomendaciones de seguridad, api de mdatp tvm, administración de amenazas y vulnerabilidades, api de administración de amenazas y vulnerabilidades
+keywords: apis, api de gráficos, api admitidas, get, recomendaciones de seguridad, api de Microsoft Defender para Endpoint tvm, administración de amenazas y vulnerabilidades, api de administración de amenazas y vulnerabilidades
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5fb68572ee1b154be1db5eb5a092013a1c1a257e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0cb0a1f8a42b419db960e5097667c335bf7f7877
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166916"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935022"
 ---
 # <a name="list-all-recommendations"></a>Enumerar todas las recomendaciones
 

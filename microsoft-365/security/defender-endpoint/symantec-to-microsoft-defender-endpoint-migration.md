@@ -1,7 +1,7 @@
 ---
 title: Migrar de Symantec a Microsoft Defender para endpoint
 description: Obtenga información general sobre cómo cambiar de Symantec a Microsoft Defender para endpoint
-keywords: migración, protección contra amenazas avanzada de Windows Defender, atp, edr
+keywords: migración, Microsoft Defender para Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6517359c805bb449d075e401283a79a791461630
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 587cf49ddc8d6135047fbb5e0207ed0f94d1dbe0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218803"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934734"
 ---
 # <a name="migrate-from-symantec-to-microsoft-defender-for-endpoint"></a>Migrar de Symantec a Microsoft Defender para endpoint
 Si planea cambiar de Symantec Endpoint Protection (Symantec) a [Microsoft Defender para Endpoint](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender para Endpoint), está en el lugar correcto. Use este artículo como guía.
@@ -58,12 +58,12 @@ En esta guía de [](https://docs.microsoft.com/windows/security/threat-protectio
 
 | Característica/funcionalidad | Descripción |
 |---|---|
-| [Administración & vulnerabilidades de amenazas](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | Las & de administración de vulnerabilidades ayudan a identificar, evaluar y corregir puntos débiles en los puntos de conexión (como dispositivos). |
+| [Administración de vulnerabilidades y amenazas](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) | Las & de administración de vulnerabilidades ayudan a identificar, evaluar y corregir puntos débiles en los puntos de conexión (como dispositivos). |
 | [Reducción de la superficie expuesta a ataques](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction) | Las reglas de reducción de superficie de ataque ayudan a proteger los dispositivos y aplicaciones de la organización de ciberamenazas y ataques. |
 | [Protección de última generación](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10) | La protección de última generación incluye Antivirus de Microsoft Defender para ayudar a bloquear amenazas y malware. |
-| [Detección y respuesta de puntos de conexión.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) | Las capacidades de detección y respuesta de puntos de conexión detectan, investigan y responden a intentos de intrusión e infracciones activas.  |
-| [Búsqueda avanzada](advanced-hunting-overview.md) | Las capacidades avanzadas de búsqueda permiten al equipo de operaciones de seguridad localizar indicadores y entidades de amenazas conocidas o potenciales. |
-| [Bloqueo y contención del comportamiento](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) | Las capacidades de bloqueo y contención del comportamiento ayudan a identificar y detener las amenazas, en función de sus comportamientos y de los árboles de proceso incluso cuando la amenaza ha comenzado a ejecutarse. |
+| [EDR](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) | Las capacidades de detección y respuesta de puntos de conexión detectan, investigan y responden a intentos de intrusión e infracciones activas.  |
+| [Búsqueda avanzada de amenazas](advanced-hunting-overview.md) | Las capacidades avanzadas de búsqueda permiten al equipo de operaciones de seguridad localizar indicadores y entidades de amenazas conocidas o potenciales. |
+| [Bloqueo y contención de comportamientos](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) | Las capacidades de bloqueo y contención del comportamiento ayudan a identificar y detener las amenazas, en función de sus comportamientos y de los árboles de proceso incluso cuando la amenaza ha comenzado a ejecutarse. |
 | [Investigación y corrección automatizadas](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/automated-investigations) | Las capacidades automatizadas de investigación y respuesta examinan las alertas y toman medidas de corrección inmediatas para resolver infracciones. |
 | [Servicio de búsqueda de amenazas](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-threat-experts) (Expertos en amenazas de Microsoft) | Los servicios de búsqueda de amenazas proporcionan a los equipos de operaciones de seguridad supervisión y análisis de nivel de expertos, y para ayudar a garantizar que no se pierden las amenazas críticas. |
 

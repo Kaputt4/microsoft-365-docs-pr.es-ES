@@ -1,8 +1,8 @@
 ---
-title: Implementar actualizaciones para Microsoft Defender para endpoint para Linux
+title: Implementar actualizaciones para Microsoft Defender para Endpoint en Linux
 ms.reviewer: ''
-description: Describe cómo implementar actualizaciones para Microsoft Defender para Endpoint para Linux en entornos empresariales.
-keywords: microsoft, defender, atp, linux, actualizaciones, implementar
+description: Describe cómo implementar actualizaciones para Microsoft Defender para Endpoint en Linux en entornos empresariales.
+keywords: microsoft, defender, Microsoft Defender para endpoint, linux, actualizaciones, implementación
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 77b428e359596e73e08dc04f15190ecf68db29be
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 9cb0c7375b538f502cf6165f13c68fd4b2fdcc64
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861152"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934758"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Implementar actualizaciones para Microsoft Defender para Endpoint en Linux
 
@@ -40,12 +40,12 @@ ms.locfileid: "51861152"
 Microsoft publica periódicamente actualizaciones de software para mejorar el rendimiento, la seguridad y ofrecer nuevas características.
 
 > [!WARNING]
-> Cada versión de Defender para Endpoint para Linux tiene una fecha de expiración, después de la cual ya no seguirá protegiendo el dispositivo. Debe actualizar el producto antes de esta fecha. Para comprobar la fecha de expiración, ejecute el siguiente comando:
+> Cada versión de Defender para Endpoint en Linux tiene una fecha de expiración, después de la cual ya no seguirá protegiendo el dispositivo. Debe actualizar el producto antes de esta fecha. Para comprobar la fecha de expiración, ejecute el siguiente comando:
 > ```bash
 > mdatp health --field product_expiration
 > ```
 
-Para actualizar Defender para Endpoint para Linux manualmente, ejecute uno de los siguientes comandos:
+Para actualizar Defender for Endpoint en Linux manualmente, ejecute uno de los siguientes comandos:
 
 ## <a name="rhel-and-variants-centos-and-oracle-linux"></a>RHEL y variantes (CentOS y Oracle Linux)
 

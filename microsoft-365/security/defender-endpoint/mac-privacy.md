@@ -1,7 +1,7 @@
 ---
-title: Privacidad de Microsoft Defender para Endpoint para Mac
-description: Controles de privacidad, cómo configurar las opciones de directiva que afectan a la privacidad y la información sobre los datos de diagnóstico recopilados en Microsoft Defender para Endpoint para Mac.
-keywords: microsoft, defender, atp, mac, privacidad, diagnóstico
+title: Privacidad de Microsoft Defender para Endpoint en Mac
+description: Controles de privacidad, cómo configurar las opciones de directiva que afectan a la privacidad y a la información sobre los datos de diagnóstico recopilados en Microsoft Defender para Endpoint en Mac.
+keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, privacidad, diagnóstico
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 26ae83dc8a8b3bb7d686e3674437a12999b5146f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: b2897766570c6ef8979a7944a687ba024e55b3ce
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862240"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934554"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Privacidad de Microsoft Defender para endpoint en macOS
 
@@ -109,7 +109,7 @@ Los datos de diagnóstico necesarios ayudan a identificar problemas con Microsof
 
 **Instalación y desinstalación de Microsoft Defender para endpoint**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -121,7 +121,7 @@ Se recopilan los siguientes campos:
 
 **Configuración de Microsoft Defender para punto de conexión**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field                                               | Descripción |
 | --------------------------------------------------- | ----------- |
@@ -142,7 +142,7 @@ Se recopilan los siguientes campos:
 
 **Informe de actualización de inteligencia de seguridad**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -159,7 +159,7 @@ Se recopilan los siguientes campos:
 
 Recopila información del sistema y el estado de una aplicación cuando una aplicación se cierra inesperadamente.
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field                          | Descripción |
 | ------------------------------ | ----------- |
@@ -169,7 +169,7 @@ Se recopilan los siguientes campos:
 
 **Estadísticas de extensión de kernel**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -205,7 +205,7 @@ Algunos ejemplos de datos de diagnóstico opcionales incluyen datos que Microsof
 
 **Configuración de Microsoft Defender para punto de conexión**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field                                              | Descripción |
 | -------------------------------------------------- | ----------- |
@@ -226,7 +226,7 @@ Se recopilan los siguientes campos:
 
 **Configuración de Actualización automática de Microsoft**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field                       | Descripción |
 | --------------------------- | ----------- |
@@ -239,7 +239,7 @@ Se recopilan los siguientes campos:
 
 #### <a name="diagnostic-log-upload-started-report"></a>Informe de carga iniciada del registro de diagnóstico
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -250,7 +250,7 @@ Se recopilan los siguientes campos:
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Informe completado de carga de registro de diagnóstico
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -266,7 +266,7 @@ Cierres de aplicación inesperados y el estado de la aplicación cuando esto ocu
 
 **Estadísticas de extensión de kernel**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field                          | Descripción |
 | ------------------------------ | ----------- |

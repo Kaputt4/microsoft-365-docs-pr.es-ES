@@ -1,7 +1,7 @@
 ---
 title: Obtener formación de expertos sobre la búsqueda avanzada
 description: Formación gratuita y orientación de expertos avanzados en la caza
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, idioma, aprendizaje, escenarios, básico a avanzado, vídeos, paso a paso
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, idioma, aprendizaje, escenarios, básico a avanzado, vídeos, paso a paso
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3aee0a210b9381174650a4a817be510bcfaa00c2
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: aee2d3204a5d30005c15199baa3af08f5e583a33
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498526"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935442"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Obtener formación de expertos sobre la búsqueda avanzada
 
@@ -37,7 +37,7 @@ ms.locfileid: "51498526"
 
 Aumente su conocimiento de la búsqueda avanzada rápidamente con _Tracking the adversary_, una serie de difusión por web para nuevos analistas de seguridad y cazacarros de amenazas expertos. La serie le guía a través de los conceptos básicos hasta la creación de sus propias consultas sofisticadas. Empieza con el primer vídeo sobre conceptos básicos o salta a vídeos más avanzados que se adapten a tu nivel de experiencia.
 
-| Título | Descripción | Reloj | Consultas | 
+| Title | Descripción | Reloj | Consultas | 
 |--|--|--|--|
 | Episodio 1: Conceptos básicos de KQL | Este episodio trata los conceptos básicos de la búsqueda avanzada en Microsoft 365 Defender. Obtenga información sobre los datos de búsqueda avanzados disponibles y la sintaxis y los operadores básicos de KQL. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [Archivo CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | Episodio 2: Combinaciones | Siga aprendiendo sobre los datos en la búsqueda avanzada y cómo unir tablas. Obtenga información `inner` sobre , , y `outer` `unique` combinaciones, y comprenda los `semi` matices de la combinación predeterminada de Kusto. `innerunique` | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [Archivo CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
@@ -47,7 +47,7 @@ Aumente su conocimiento de la búsqueda avanzada rápidamente con _Tracking the 
 
 Obtenga más formación de expertos con *L33TSP3AK:* Búsqueda avanzada en Microsoft 365 Defender , una serie de difusión por web para analistas que buscan expandir sus conocimientos técnicos y habilidades prácticas para llevar a cabo investigaciones de seguridad mediante la búsqueda avanzada en Microsoft 365 Defender. 
 
-| Título | Descripción | Reloj | Consultas | 
+| Title | Descripción | Reloj | Consultas | 
 |--|--|--|--|
 | Episodio 1  | En este episodio, aprenderás diferentes procedimientos recomendados para ejecutar consultas avanzadas de búsqueda. Entre los temas tratados se encuentran: cómo optimizar las consultas, usar la búsqueda avanzada para ransomware, controlar JSON como un tipo dinámico y trabajar con operadores de datos externos. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [Archivo CSL](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.csl)
 

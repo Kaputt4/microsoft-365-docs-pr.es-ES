@@ -2,7 +2,7 @@
 title: 'Puntuaciones más altas en las pruebas del sector: Microsoft 365 Defender'
 ms.reviewer: ''
 description: Vea las puntuaciones y análisis más recientes de Microsoft 365 Defender. Obtiene puntuaciones altas de forma consistente en pruebas independientes (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). Ver las puntuaciones y análisis más recientes.
-keywords: Antivirus de Microsoft Defender, Antivirus de Windows Defender, revisiones de av, prueba de antivirus, pruebas de av, puntuaciones av más recientes, puntuaciones de detección, pruebas de producto de seguridad, pruebas de seguridad del sector, pruebas de antivirus del sector, mejores antivirus, prueba av, comparativas de av, SE labs, MITRE ATT&CK, plataforma de protección de puntos de conexión, EPP, detección y respuesta de punto de conexión, EDR, Windows 10, Antivirus de Microsoft Defender, WDAV, MDATP, Protección contra amenazas de Microsoft, seguridad, malware, av, antivirus, puntuaciones, puntuación, protección de nueva generación, clasificación, éxito
+keywords: Antivirus de Microsoft Defender, Antivirus de Windows Defender, revisiones de av, prueba de antivirus, pruebas de av, puntuaciones av más recientes, puntuaciones de detección, pruebas de producto de seguridad, pruebas de seguridad del sector, pruebas de antivirus del sector, mejores antivirus, prueba av, comparativas de av, SE labs, MITRE ATT&CK, plataforma de protección de puntos de conexión, EPP, detección y respuesta de punto de conexión, EDR, Windows 10, Antivirus de Microsoft Defender, WDAV, Microsoft Defender para punto de conexión, Microsoft 365 Defender, seguridad, malware, av, antivirus, puntuaciones, puntuación, protección de nueva generación, clasificación, éxito
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 1f649af2ca6089d1366cc6e080a430a6a00fc300
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: a49fb83f9186541094910ec8842a09b5121ffb5b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569870"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934398"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Puntuaciones más altas en las pruebas del sector
 

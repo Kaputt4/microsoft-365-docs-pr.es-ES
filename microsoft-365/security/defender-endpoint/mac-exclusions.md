@@ -1,7 +1,7 @@
 ---
-title: Configurar y validar exclusiones para Microsoft Defender para Endpoint para Mac
-description: Proporcionar y validar exclusiones para Microsoft Defender para Endpoint para Mac. Las exclusiones se pueden establecer para archivos, carpetas y procesos.
-keywords: microsoft, defender, atp, mac, exclusiones, exámenes, antivirus
+title: Configurar y validar exclusiones para Microsoft Defender para Endpoint en Mac
+description: Proporcionar y validar exclusiones para Microsoft Defender para Endpoint en Mac. Las exclusiones se pueden establecer para archivos, carpetas y procesos.
+keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, exclusiones, exámenes, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7b5254e9b4289219a08730d736c8f9738e7a65f0
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: c014447e51e5c5fcb96924e5e98c62f478a32ea7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861592"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935034"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Configurar y validar exclusiones para Microsoft Defender para endpoint en macOS
 

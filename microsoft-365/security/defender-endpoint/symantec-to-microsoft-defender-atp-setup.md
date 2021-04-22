@@ -1,7 +1,7 @@
 ---
 title: 'Symantec a Microsoft Defender para endpoint: fase 2, configuración'
 description: Esta es la fase 2, configuración, de la migración de Symantec a Microsoft Defender para endpoint
-keywords: migración, protección contra amenazas avanzada de Windows Defender, atp, edr
+keywords: migración, Microsoft Defender para Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6d45e3aa0d3bf938e43201aca969613876ef1f31
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 755eb54f848e0cc5da3ca1b7b613a951c77d0b4c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218717"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935238"
 ---
 # <a name="migrate-from-symantec---phase-2-set-up-microsoft-defender-for-endpoint"></a>Migrar desde Symantec- Fase 2: Configurar Microsoft Defender para endpoint
 
@@ -34,7 +34,7 @@ ms.locfileid: "51218717"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-|[![Fase 1: Preparar](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Fase 1: Preparar](symantec-to-microsoft-defender-atp-prepare.md) |![Fase 2: Configurar](images/phase-diagrams/setup.png)<br/>Fase 2: Configurar |[![Fase 3: Incorporación](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Fase 3: Incorporación](symantec-to-microsoft-defender-atp-onboard.md) |
+|[![Fase 1: Preparación](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Fase 1: Preparación](symantec-to-microsoft-defender-atp-prepare.md) |![Fase 2: Configuración](images/phase-diagrams/setup.png)<br/>Fase 2: Configuración |[![Fase 3: Incorporación](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Fase 3: Incorporación](symantec-to-microsoft-defender-atp-onboard.md) |
 |--|--|--|
 ||*¡Estás aquí!* | |
 
@@ -64,7 +64,7 @@ Ahora que va a pasar de Symantec a Microsoft Defender para Endpoint, tendrá que
 > El siguiente procedimiento solo se aplica a los puntos de conexión o dispositivos que ejecutan las siguientes versiones de Windows:
 > - Windows Server 2019
 > - Windows Server, versión 1803 (modo de solo núcleo)
-> - Windows Server 2016
+> - Windows Server 2016
 > 
 > Antivirus de Microsoft Defender está integrado en Windows 10, pero puede estar deshabilitado. En este caso, vaya a [Habilitar Antivirus de Microsoft Defender](#enable-microsoft-defender-antivirus).
 

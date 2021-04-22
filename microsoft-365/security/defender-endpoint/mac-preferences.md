@@ -1,7 +1,7 @@
 ---
-title: Establecer preferencias para Microsoft Defender para Endpoint para Mac
-description: Configurar Microsoft Defender para Endpoint para Mac en organizaciones empresariales.
-keywords: microsoft, defender, atp, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
+title: Establecer preferencias para Microsoft Defender para Endpoint en Mac
+description: Configurar MMicrosoft Defender para Endpoint en Mac en organizaciones empresariales.
+keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d2bea469031e2c5932e859fbad7d442ebe4d34ed
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: f13734392e4975738a0d60d38e618595b5175667
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860928"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934566"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Establecer preferencias para Microsoft Defender para endpoint en macOS
 
@@ -175,7 +175,7 @@ Especifique un proceso para el que se excluya toda la actividad de archivo del e
 
 #### <a name="allowed-threats"></a>Amenazas permitidas
 
-Especifica las amenazas por nombre que Defender for Endpoint for Mac no bloquee. Estas amenazas podrán ejecutarse.
+Especifica las amenazas por nombre que no estén bloqueadas por Defender para Endpoint en Mac. Estas amenazas podrán ejecutarse.
 
 |Section|Valor|
 |:---|:---|

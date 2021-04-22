@@ -1,7 +1,7 @@
 ---
-title: Implementar Microsoft Defender para endpoint en Android con Microsoft Intune
+title: Implementar Microsoft Defender para punto de conexión en Android con Microsoft Intune
 description: Describe cómo implementar Microsoft Defender para Endpoint en Android con Microsoft Intune
-keywords: microsoft, defender, atp, mde, android, instalación, implementación, desinstalación,
+keywords: microsoft, defender, Microsoft Defender para endpoint, mde, android, instalación, implementación, desinstalación,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 350345acbaadcdd6bc8ef901f03c419a7f8decff
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f14d79d98bfffda675cd71b96068b179f30f059e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687726"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934638"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Implementar Microsoft Defender para endpoint en Android con Microsoft Intune 
+# <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Implementar Microsoft Defender para punto de conexión en Android con Microsoft Intune 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,18 +34,18 @@ ms.locfileid: "51687726"
 
 > ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Obtenga información sobre cómo implementar Defender para Endpoint para Android en dispositivos inscritos en el Portal de empresa de Intune. Para obtener más información acerca de la inscripción de dispositivos de Intune, consulta  [Inscribir el dispositivo](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal).
+Obtenga información sobre cómo implementar Defender for Endpoint en Android en dispositivos inscritos en Intune Company Portal. Para obtener más información acerca de la inscripción de dispositivos de Intune, consulta  [Inscribir el dispositivo](https://docs.microsoft.com/mem/intune/user-help/enroll-device-android-company-portal).
 
 > [!NOTE]
-> **Defender para Endpoint para Android ya está disponible en [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx)** <br>
+> **Defender para endpoint en Android ya está disponible en [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx)** <br>
 > Puedes conectarte a Google Play desde Intune para implementar la aplicación Defender for Endpoint en los modos de inscripción administrador de dispositivos y Android Enterprise.
 Las actualizaciones de la aplicación son automáticas a través de Google Play.
 
 ## <a name="deploy-on-device-administrator-enrolled-devices"></a>Implementar en dispositivos inscritos por el administrador de dispositivos
 
-**Implementar Defender para Endpoint para Android en Intune Company Portal: dispositivos inscritos por el administrador de dispositivos**
+**Implementar Defender para endpoint en Android en Intune Company Portal: dispositivos inscritos por el administrador de dispositivos**
 
-Obtenga información sobre cómo implementar Defender for Endpoint para Android en Intune Company Portal: dispositivos inscritos por el administrador de dispositivos. 
+Obtenga información sobre cómo implementar Defender for Endpoint en Android en Intune Company Portal: dispositivos inscritos por el administrador de dispositivos. 
 
 ### <a name="add-as-android-store-app"></a>Agregar como aplicación de la Tienda Android
 
@@ -55,7 +55,7 @@ Obtenga información sobre cómo implementar Defender for Endpoint para Android 
 
 2. En la **página Agregar aplicación** y en la sección Información de *la* aplicación, escriba: 
 
-   - **Name** 
+   - **Nombre** 
    - **Descripción**
    - **Publisher** como Microsoft.
    - **Dirección URL de la Tienda de** aplicaciones como https://play.google.com/store/apps/details?id=com.microsoft.scmx (DIRECCIÓN URL de La aplicación Defender para endpoint de Google Play Store) 
@@ -64,7 +64,7 @@ Obtenga información sobre cómo implementar Defender for Endpoint para Android 
 
    ![Imagen del Centro de administración de Microsoft Endpoint Manager agregar información de la aplicación](images/mda-addappinfo.png)
 
-3. En la *sección Asignaciones,* vaya a la **sección Obligatorio** y seleccione **Agregar grupo.** A continuación, puedes elegir los grupos de usuarios a los que te gustaría dirigirte a Defender para endpoint para la aplicación Android. Elija **Seleccionar** y, a **continuación, Siguiente**.
+3. En la *sección Asignaciones,* vaya a la **sección Obligatorio** y seleccione **Agregar grupo.** A continuación, puedes elegir los grupos de usuarios a los que quieres dirigirte Defender para Endpoint en la aplicación Android. Elija **Seleccionar** y, a **continuación, Siguiente**.
 
     >[!NOTE]
     >El grupo de usuarios seleccionado debe estar formado por usuarios inscritos en Intune.
@@ -86,11 +86,11 @@ Obtenga información sobre cómo implementar Defender for Endpoint para Android 
 
 ### <a name="complete-onboarding-and-check-status"></a>Completar la incorporación y comprobar el estado
 
-1. Una vez que Defender para Endpoint para Android se haya instalado en el dispositivo, verás el icono de la aplicación.
+1. Una vez que Defender para Endpoint en Android se haya instalado en el dispositivo, verás el icono de la aplicación.
 
     ![Icono en el dispositivo móvil](images/7cf9311ad676ec5142002a4d0c2323ca.jpg)
 
-2. Pulsa el icono de la aplicación atp de Microsoft Defender y sigue las instrucciones en pantalla para completar la incorporación de la aplicación. Los detalles incluyen la aceptación por parte del usuario final de los permisos de Android requeridos por Defender para Endpoint para Android.
+2. Pulsa el icono de la aplicación Microsoft Defender para endpoint y sigue las instrucciones que aparecen en pantalla para completar la incorporación de la aplicación. Los detalles incluyen la aceptación por parte del usuario final de los permisos de Android requeridos por Defender para Endpoint en Android.
 
 3. Tras la incorporación correcta, el dispositivo empezará a aparecer en la lista dispositivos del Centro de seguridad de Microsoft Defender.
 
@@ -98,7 +98,7 @@ Obtenga información sobre cómo implementar Defender for Endpoint para Android 
 
 ## <a name="deploy-on-android-enterprise-enrolled-devices"></a>Implementar en dispositivos inscritos en Android Enterprise
 
-Defender para Endpoint para Android admite dispositivos inscritos en Android Enterprise.
+Defender for Endpoint en Android admite dispositivos inscritos en Android Enterprise.
 
 Para obtener más información sobre las opciones de inscripción admitidas por Intune, vea [Opciones de inscripción](https://docs.microsoft.com/mem/intune/enrollment/android-enroll).
 
@@ -126,7 +126,7 @@ Sigue los pasos siguientes para agregar la aplicación Microsoft Defender para e
 
     ![Una captura de pantalla de la aprobación de la aplicación de vista previa de Defender for Endpoint](images/206b3d954f06cc58b3466fb7a0bd9f74.png)
 
-5. Se le mostrará la página Configuración de aprobación. La página confirma tu preferencia para controlar los nuevos permisos de la aplicación que Defender for Endpoint para Android podría pedir. Revisa las opciones y selecciona la opción preferida. Seleccione **Listo**.
+5. Se le mostrará la página Configuración de aprobación. La página confirma tu preferencia para controlar los nuevos permisos de la aplicación que Defender for Endpoint en Android podría pedir. Revisa las opciones y selecciona la opción preferida. Seleccione **Listo**.
 
     De forma predeterminada, Google Play administrado selecciona Mantener aprobado cuando *la aplicación solicita nuevos permisos*
 
@@ -142,7 +142,7 @@ Sigue los pasos siguientes para agregar la aplicación Microsoft Defender para e
 
     ![Imagen de la aplicación Android](images/9fc07ffc150171f169dc6e57fe6f1c74.png)
 
-8. Selecciona el **botón** Actualizar en la pantalla Aplicaciones de Android y ATP de Microsoft Defender debe estar visible en la lista de aplicaciones.
+8. Selecciona el **botón** Actualizar en la pantalla aplicaciones de Android y Microsoft Defender para Endpoint debe estar visible en la lista de aplicaciones.
 
     > [!div class="mx-imgBorder"]
     > ![Imagen de la lista de aplicaciones de Android](images/fa4ac18a6333335db3775630b8e6b353.png)
@@ -155,7 +155,7 @@ Sigue los pasos siguientes para agregar la aplicación Microsoft Defender para e
 
     1. En la **página Crear directiva de configuración de aplicaciones,** escriba los siguientes detalles:
     
-        - Nombre: ATP de Microsoft Defender.
+        - Nombre: Microsoft Defender para endpoint.
         - Elija **Android Enterprise** como plataforma.
         - Elija **Perfil de trabajo solo** como Tipo de perfil.
         - Haga **clic en Seleccionar aplicación,** elija ATP de Microsoft **Defender,** **seleccione Aceptar** y, a continuación, **Siguiente**.
@@ -223,9 +223,9 @@ Seleccione **Crear**.
 - Habilite **La configuración de VPN siempre** activa un cliente VPN en el perfil de trabajo para conectarse automáticamente y volver a conectarse a la VPN siempre que sea posible. Solo se puede configurar un cliente VPN para VPN siempre en un dispositivo determinado, por lo que asegúrate de que no se implemente más de una directiva VPN siempre en un solo dispositivo. 
 - Seleccione **Custom** in VPN client dropdown list Custom VPN in this case is Defender for Endpoint VPN which is used to provide the Web Protection feature. 
     > [!NOTE]
-    > La aplicación ATP de Microsoft Defender debe instalarse en el dispositivo del usuario para que funcione la configuración automática de esta VPN.
+    > La aplicación Microsoft Defender para endpoint debe instalarse en el dispositivo del usuario para que funcione la configuración automática de esta VPN.
 
-- Escribe **El identificador del paquete** de la aplicación ATP de Microsoft Defender en Google Play Store. Para la dirección URL de la aplicación https://play.google.com/store/apps/details?id=com.microsoft.scmx defender, el identificador del paquete **es com.microsoft.scmx**  
+- Escribe **El identificador del paquete** de la aplicación Microsoft Defender para endpoint en la Tienda Google Play. Para la dirección URL de la aplicación https://play.google.com/store/apps/details?id=com.microsoft.scmx defender, el identificador del paquete **es com.microsoft.scmx**  
 - **Modo de bloqueo** No configurado (predeterminado) 
 
      ![Imagen de perfil de configuración de dispositivos habilitar VPN siempre activa](images/3autosetupofvpn.png)
@@ -254,11 +254,11 @@ Seleccione **Crear**.
 
     ![Imagen del dispositivo móvil con la aplicación Microsoft Defender para endpoint](images/mda-devicesafe.png)
 
-4. En esta fase, el dispositivo se incorpora correctamente a Defender para Endpoint para Android. Para comprobar esto en el Centro de seguridad de [Microsoft Defender,](https://securitycenter.microsoft.com) vaya a la **página Dispositivos.**
+4. En esta fase, el dispositivo se incorpora correctamente a Defender para Endpoint en Android. Para comprobar esto en el Centro de seguridad de [Microsoft Defender,](https://securitycenter.microsoft.com) vaya a la **página Dispositivos.**
 
     ![Imagen del portal de Microsoft Defender para endpoint](images/9fe378a1dce0f143005c3aa53d8c4f51.png)
 
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Información general sobre Microsoft Defender para endpoint en Android](microsoft-defender-endpoint-android.md)
-- [Configurar Microsoft Defender para las características de Punto de conexión en Android](android-configure.md)
+- [Introducción a Microsoft Defender para punto de conexión en Android](microsoft-defender-endpoint-android.md)
+- [Configurar Microsoft Defender para punto de conexión en funciones de Android](android-configure.md)

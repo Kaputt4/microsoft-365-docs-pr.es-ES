@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fb5a9a4d35af2d400cdff1e417727e662738514e
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ee06f927579445825a2b2813e483c24357d2ed78
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861352"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934926"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Incorporar dispositivos sin acceso a Internet a Microsoft Defender para endpoint
 
@@ -73,7 +73,7 @@ Para obtener más información acerca de los métodos de incorporación, vea los
       - Configurar la IP de Azure Log Analytics como proxy
       - Identificador de clave de área de trabajo de Azure Log Analytics & de trabajo
 
-    - Centro de seguridad de Azure (ASC)
+    - Azure Defender
       - [Área de trabajo de análisis \> de registro de directivas de seguridad](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
       - [Detección de \> amenazas Permitir que Defender for Endpoint acceda a mis datos](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 

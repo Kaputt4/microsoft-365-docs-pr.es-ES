@@ -1,7 +1,7 @@
 ---
 title: Incorporación con Microsoft Endpoint Manager
 description: Obtenga información sobre cómo incorporarse a Microsoft Defender para endpoint con Microsoft Endpoint Manager
-keywords: incorporación, configuración, implementación, implementación, administrador de puntos de conexión, mdatp, protección contra amenazas avanzada, creación de colecciones, respuesta de detección de puntos de conexión, protección de próxima generación, reducción de superficie de ataque, administrador de puntos de conexión de Microsoft
+keywords: incorporación, configuración, implementación, implementación, administrador de puntos de conexión, Microsoft Defender para endpoint, creación de colecciones, respuesta de detección de puntos de conexión, protección de próxima generación, reducción de superficie de ataque, administrador de puntos de conexión de Microsoft
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9edcceca2f6cc7c2377eb388d7394a23dfbae99d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: e744262cfd63383e69abf02be9fbf91d2d229db2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186262"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935262"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Incorporación con Microsoft Endpoint Manager
 
@@ -123,14 +123,14 @@ En la siguiente sección, creará una serie de directivas de configuración.
 
 Primero es una directiva de configuración para seleccionar qué grupos de usuarios o dispositivos se incorporarán a Defender for Endpoint:
 
-- [Detección y respuesta de puntos de conexión.](#endpoint-detection-and-response) 
+- [EDR](#endpoint-detection-and-response) 
 
 A continuación, seguirá creando varios tipos diferentes de directivas de seguridad de extremo:
 
 - [Protección de última generación](#next-generation-protection)
 - [Reducción de la superficie expuesta a ataques](#attack-surface-reduction--attack-surface-reduction-rules)
 
-### <a name="endpoint-detection-and-response"></a>Detección y respuesta de puntos de conexión.
+### <a name="endpoint-detection-and-response"></a>EDR
 
 1.  Abra el portal de MEM.
 
@@ -355,7 +355,7 @@ Para confirmar que la directiva de configuración se ha aplicado al dispositivo 
     > [!div class="mx-imgBorder"]
     > [![Imagen del portal de Microsoft Endpoint Manager37 ](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
 
-### <a name="endpoint-detection-and-response"></a>Detección y respuesta de puntos de conexión.
+### <a name="endpoint-detection-and-response"></a>EDR
 
 
 1.  Antes de aplicar la configuración, no se debe iniciar el servicio defender para Endpoint Protection.

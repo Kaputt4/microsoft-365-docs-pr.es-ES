@@ -1,7 +1,7 @@
 ---
 title: 'Requisitos previos & permisos: administración de amenazas y vulnerabilidades'
 description: Antes de empezar a usar la administración de amenazas y vulnerabilidades, asegúrese de que tiene las configuraciones y permisos pertinentes.
-keywords: requisitos previos & permisos de administración de vulnerabilidades, permisos de administración de amenazas y vulnerabilidades, requisitos previos de permisos de MDATP TVM, administración de vulnerabilidades
+keywords: requisitos previos & de administración de vulnerabilidades, permisos de administración de amenazas y vulnerabilidades, requisitos previos de permisos de Microsoft Defender para Endpoint TVM, administración de vulnerabilidades
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1d9c3233f72541ccd0463eefef93bde5e7d9900f
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0df348e3a5564720468d95d7b23578f9dcad9294
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499959"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935190"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>Requisitos previos & permisos: administración de amenazas y vulnerabilidades
 

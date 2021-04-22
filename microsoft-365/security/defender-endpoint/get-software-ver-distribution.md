@@ -1,7 +1,7 @@
 ---
-title: Enumerar distribución de versiones de software
+title: Enumerar distribución de versión de software
 description: Recupera una lista de la distribución de versiones de software de su organización
-keywords: apis, api de gráficos, api admitidas, get, distribución de versiones de software, api de mdatp tvm
+keywords: apis, api de gráficos, api admitidas, get, distribución de versiones de software, Api de Microsoft Defender para Endpoint tvm
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 88f446ddd87768817099c1a206bab17aa8be5b7b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e47a97477500491f634e3f5134a32241bd68985b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198582"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935298"
 ---
-# <a name="list-software-version-distribution"></a>Enumerar distribución de versiones de software 
+# <a name="list-software-version-distribution"></a>Enumerar distribución de versión de software 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

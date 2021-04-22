@@ -1,6 +1,6 @@
 ---
 title: Preguntas más frecuentes sobre la reducción de superficie de ataque (FAQ)
-description: Encuentre respuestas a las preguntas más frecuentes sobre las reglas de reducción de superficie de ataque de ATP de Microsoft Defender.
+description: Encuentre respuestas a las preguntas más frecuentes sobre las reglas de reducción de superficie de ataque de Microsoft Defender para endpoint.
 keywords: Reglas de reducción de superficie de ataque, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71c3f89b721039753709d65daa135cad74a81711
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: cf41dda4ff61137d6b60b2fc735227f15418477e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476467"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935598"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>Preguntas más frecuentes sobre la reducción de superficie de ataque (FAQ)
 
@@ -179,7 +179,7 @@ Dado que muchos procesos legítimos a lo largo de un día típico lsass.exe para
 
 Habilitar esta regla no proporcionará protección adicional si también tiene habilitada la protección [LSA.](https://docs.microsoft.com/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) Tanto la regla como la protección de LSA funcionan de la misma manera, por lo que tener ambos ejecutándose al mismo tiempo sería redundante. Sin embargo, a veces es posible que no pueda habilitar la protección de LSA. En esos casos, puede habilitar esta regla para proporcionar protección equivalente contra malware destinado a lsass.exe.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 * [Introducción a la reducción de superficie de ataque](attack-surface-reduction.md)
 * [Evaluar las reglas de la reducción de la superficie expuesta a ataques](evaluate-attack-surface-reduction.md)

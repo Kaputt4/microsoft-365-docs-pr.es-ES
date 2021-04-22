@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender para Office 365 en el Centro de seguridad de Microsoft 365
 description: Obtenga información sobre cambios del Centro de seguridad y cumplimiento de Office 365 y del Centro de seguridad de Microsoft 365.
-keywords: Centro de seguridad de Microsoft 365, Introducción al Centro de seguridad de Microsoft 365, OATP, MDATP, MDO, MDE, perspectiva descentralizada, nuevo portal de seguridad, nuevo portal de seguridad de Microsoft Defender.
+keywords: Seguridad de Microsoft 365, Introducción al Centro de seguridad de Microsoft 365, Microsoft Defender para Office 365, Microsoft Defender para endpoint, MDO, MDE, panel único de cristal, nuevo portal de seguridad, nuevo portal de seguridad de defender
 ms.date: 02/02/2021
 ms.author: tracyp
 author: msfttracyp
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 0c4a849bf3f91d4803adcb45c13b59d76afda388
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 980a384d3c4fd44a368f35d6f885ea0c8288376a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760193"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935418"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender para Office 365 en el Centro de seguridad de Microsoft 365
 

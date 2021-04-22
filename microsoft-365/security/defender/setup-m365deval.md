@@ -1,7 +1,7 @@
 ---
 title: Configurar el entorno piloto o el laboratorio de prueba de Microsoft 365 Defender
 description: Accede al Centro de seguridad de Microsoft 365 y configura el entorno de laboratorio de prueba de Microsoft 365 Defender
-keywords: Configuración de prueba de Microsoft Threat Protection, configuración piloto de Microsoft Threat Protection, prueba Microsoft Threat Protection, Configuración del laboratorio de evaluación de Protección contra amenazas de Microsoft
+keywords: Configuración de prueba de Microsoft 365 Defender, configuración piloto de Microsoft 365 Defender, prueba Microsoft 365 Defender, configuración del laboratorio de evaluación de Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 976f6a1ec010348e8a281c251064acdd7a26748b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ae81f6be0a83d5d0141f0f0c8c89f8f2207cc56c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074776"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935430"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>Configurar el entorno de laboratorio de prueba de Microsoft 365 Defender 
 
@@ -37,7 +37,7 @@ ms.locfileid: "51074776"
 
 Crear un entorno piloto o un laboratorio de prueba de Microsoft 365 Defender e implementarlo es un proceso de tres fases:
 
-|[![Fase 1: Preparar](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[Fase 1: Preparar](prepare-m365d-eval.md) |![Fase 2: Configurar](../../media/phase-diagrams/setup.png)<br/>Fase 2: Configurar |[![Fase 3: Incorporación](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[Fase 3: Incorporación](config-m365d-eval.md) | [![Volver al piloto](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Volver al libro de reproducción piloto](m365d-pilot.md) |
+|[![Fase 1: Preparación](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[Fase 1: Preparación](prepare-m365d-eval.md) |![Fase 2: Configuración](../../media/phase-diagrams/setup.png)<br/>Fase 2: Configuración |[![Fase 3: Incorporación](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[Fase 3: Incorporación](config-m365d-eval.md) | [![Volver al piloto](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Volver al libro de reproducción piloto](m365d-pilot.md) |
 |--|--|--|--|
 ||*¡Estás aquí!*  | | |
 

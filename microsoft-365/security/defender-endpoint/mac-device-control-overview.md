@@ -1,7 +1,7 @@
 ---
 title: Control de dispositivos para macOS
 description: Obtén información sobre cómo configurar Microsoft Defender para Endpoint en Mac para reducir las amenazas del almacenamiento extraíble, como dispositivos USB.
-keywords: microsoft, defender, atp, mac, device, control, usb, removable, media
+keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, device, control, usb, removable, media
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 696bc45f7bb66313cc9353e252d76c2e9fd73259
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 39f8367c34e98c5e9dd11e9716f08e6c9e7fd9c0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688686"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935130"
 ---
 # <a name="device-control-for-macos"></a>Control de dispositivos para macOS
 
@@ -100,7 +100,7 @@ Cuando los usuarios finales hacen clic en esta notificación, se abre una págin
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Key** | navigationTarget |
-| **Tipo de datos** | String |
+| **Tipo de datos** | Cadena |
 | **Comments** | Si no se define, el producto usa una dirección URL predeterminada que apunta a una página genérica que explica la acción realizada por el producto. |
 
 ### <a name="allow-or-block-removable-devices"></a>Permitir o bloquear dispositivos extraíbles

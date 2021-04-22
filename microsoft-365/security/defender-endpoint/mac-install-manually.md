@@ -1,7 +1,7 @@
 ---
 title: Implementación manual para Microsoft Defender para endpoint en macOS
 description: Instale Microsoft Defender para Endpoint en macOS manualmente, desde la línea de comandos.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, instalación, implementación, desinstalación, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0e8faf95df6691828558175412a1de8aa844d93f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d8458f1bacc6577d83878a94c24e649371d90038
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688602"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935334"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación manual para Microsoft Defender para endpoint en macOS
 
@@ -164,7 +164,7 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    1. Defender for Endpoint for Mac debería haber puesto el archivo en cuarentena. Use el siguiente comando para enumerar todas las amenazas detectadas:
+    1. El archivo debería haber sido puesto en cuarentena por Defender para Endpoint en Mac. Use el siguiente comando para enumerar todas las amenazas detectadas:
 
         ```bash
         mdatp threat list
@@ -207,7 +207,7 @@ Para completar este proceso, debes tener privilegios de administrador en el disp
 
     El sistema debe mostrar el siguiente mensaje:
 
-    > ATP de Microsoft Defender: archivo de prueba de BRICOLAJE de macOS EDR<br/>
+    > Microsoft Defender para endpoint: archivo de prueba de bricolaje de macOS EDR<br/>
     > La alerta correspondiente estará disponible en el portal MDATP.
 
 11. Haga clic en **Open** (Abrir).
@@ -228,4 +228,4 @@ Consulte [Problemas de instalación de registro](mac-resources.md#logging-instal
 
 ## <a name="uninstallation"></a>Desinstalación
 
-Consulta [Desinstalar para obtener](mac-resources.md#uninstalling) más información sobre cómo quitar Microsoft Defender para Endpoint para macOS de los dispositivos cliente.
+Consulta [Desinstalar para obtener](mac-resources.md#uninstalling) más información sobre cómo quitar Microsoft Defender para Endpoint en macOS de los dispositivos cliente.

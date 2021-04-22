@@ -1,7 +1,7 @@
 ---
 title: Buscar ransomware con búsqueda avanzada
 description: Usa la búsqueda avanzada para localizar dispositivos potencialmente afectados por ransomware.
-keywords: búsqueda avanzada, ransomware, búsqueda de amenazas, búsqueda de amenazas cibernéticas, búsqueda, consulta, telemetría, Microsoft 365, Protección contra amenazas de Microsoft, Microsoft 365 Defender
+keywords: búsqueda avanzada, ransomware, búsqueda de amenazas, búsqueda de amenazas cibernéticas, búsqueda, consulta, telemetría, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 97f2174f74e7866f75b901cd1609341548a1a7c5
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: b6d88f5383cef052ac1b0871b4f0556ba3ba160e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498216"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934818"
 ---
 # <a name="hunt-for-ransomware"></a>Buscar ransomware
 
