@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo obtener una prueba gratuita o comprar una suscripción para Microsoft 365 para empresas.
 ms.date: 08/07/2020
-ms.openlocfilehash: 9daa7022007aa3c71dc7291f592d3b166a2c45a5
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 505ce060b9b40d72a54adbfffbcb2b3cf47a66e6
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576906"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939189"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Probar o comprar una suscripción a Microsoft 365 para empresas
 
@@ -33,9 +33,19 @@ Microsoft 365 para empresas es un servicio de suscripción que le permite ejecut
 > [!NOTE]
 > Debes usar una tarjeta de crédito cuando te registras para una prueba gratuita. Al final del período de prueba gratuito, la suscripción de prueba se convierte automáticamente en una suscripción de pago. La tarjeta de crédito no se factura hasta el final del período de prueba.
 
+
+::: moniker region="o365-21vianet"
+
+> [!IMPORTANT]
+> **Opciones de pago para Office 365 operado por 21Vianet en China** No se aceptan tarjetas de crédito internacionales. Puede pagar la suscripción mediante:
+> - Factura
+> - El pago en línea con Alipay o China UnionPay El comprobante de pago se proporciona en forma de Fapiaos. Puede enviar su solicitud de Fapiao a nuestro sistema [Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) unos tres (3) días después de haber pagado. Para obtener más información, [vea Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
+
+::: moniker-end
+
 ## <a name="before-you-begin"></a>Antes de empezar
 
-No necesita una cuenta de Microsoft existente para registrarse en una versión de prueba gratuita. Para todos los demás procedimientos de este artículo, debe ser administrador global o de facturación de su organización. Para obtener más información, vea [Asignar roles de administrador](../admin/add-users/about-admin-roles.md).
+No necesita una cuenta de Microsoft existente para registrarse en una versión de prueba gratuita. Para todos los demás procedimientos de este artículo, debe ser administrador global o de facturación de su organización. Para más información, consulte[Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="try-a-free-trial-subscription"></a>Probar una suscripción de prueba gratuita
 
@@ -64,7 +74,7 @@ Si quieres comprar la suscripción antes de que la versión de prueba se ha term
 
 ¿Necesita más tiempo para probar las características de Microsoft 365 para empresas antes de comprar? Si faltan 15 días para la expiración de su suscripción de prueba y esta no se ha ampliado antes, puede hacerlo por un período adicional de 30 días. Solo puede hacerlo una vez.
 
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la **pestaña Productos,** seleccione la suscripción de prueba que desea extender. 
 3. En la página detalles de la suscripción, en la sección **Suscripciones y configuración de pago,** seleccione Extender fecha de **finalización.**
 4. En el **panel Extender fecha de** finalización, revise la información de extensión y, si es necesario, seleccione un método de pago. Cuando haya terminado, seleccione **Extender la versión de prueba**.

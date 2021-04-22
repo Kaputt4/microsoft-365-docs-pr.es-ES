@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Aprende a habilitar Microsoft 365 para proteger dispositivos Windows 10 locales unidos a Active Directory en solo unos pasos.
-ms.openlocfilehash: 8a45c6959bee368491c5c6424e3713300c443779
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c9f5a21d993200abcf9ecf1fa236879245e1c153
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580142"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939510"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Habilitar dispositivos Windows 10 unidos a un dominio para que los administra Microsoft 365 Empresa Premium
 
@@ -116,3 +116,7 @@ Si no ves la directiva Habilitar la inscripción automática de MDM con credenci
 6.  En caso de que tenga varios controladores de dominio, espere a que SYSVOL se replique para que las directivas estén disponibles. Este procedimiento también funcionará para cualquier versión futura de las plantillas administrativas.
 
 En este punto, debería poder ver la directiva Habilitar la inscripción **automática de MDM con las credenciales predeterminadas de Azure AD** disponibles.
+
+## <a name="related-content"></a>Contenido relacionado
+
+Sincronizar usuarios de dominio con [Microsoft 365](manage-domain-users.md) (artículo) [](../admin/create-groups/create-groups.md) Crear un grupo en el Centro de administración (artículo) [Tutorial: Configurar](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) la unión híbrida de Azure Active Directory para dominios administrados (artículo)

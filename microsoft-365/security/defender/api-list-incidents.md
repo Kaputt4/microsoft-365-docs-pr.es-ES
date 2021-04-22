@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4488a552475121adc4a439106bc0bf0d97cb509a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7fb0de4f8dc67331e7acca59e70d061fe7c19493
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51070080"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935742"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Enumerar la API de incidentes en Microsoft 365 Defender
 
@@ -126,7 +126,7 @@ firstActivity | Hora en la que la alerta informó por primera vez de que la acti
 title | Breve valor de cadena de identificación disponible para cada alerta. | Actividad ransomware
 description | Valor de cadena que describe cada alerta. | El usuario Probar usuario2 (testUser2@contoso.com) manipuló 99 archivos con varias extensiones que terminan con la extensión poco común *herunterladen*. Este es un número inusual de manipulaciones de archivos y es indicativo de un posible ataque de ransomware.
 categoría | Vista visual y numérica de hasta qué punto ha progresado el ataque a lo largo de la cadena de eliminación. Alineado con el marco [&MITRE ATT ™ CK](https://attack.mitre.org/). | Impacto
-status | Clasificar las alertas *(como Nuevo,* *Activo* o *Resuelto).* Puede ayudarle a organizar y administrar la respuesta a las alertas. | Nuevo
+status | Clasificar las alertas *(como Nuevo,* *Activo* o *Resuelto).* Puede ayudarle a organizar y administrar la respuesta a las alertas. | Nueva
 severity | Indica el posible impacto en los activos. Cuanto mayor sea la gravedad, mayor será el impacto. Normalmente, los elementos de mayor gravedad requieren la atención más inmediata.<br>Uno de los siguientes valores: *Informational*, *Low*, *Medium y *High*. | Mediano
 investigationId | El identificador de investigación automatizado desencadenado por esta alerta. | 1234
 investigationState | Información sobre el estado actual de la investigación. Uno de los siguientes valores: *Unknown*, *Ended*, *SuccessfullyRemediated*, *Benign*, *Failed*, *PartiallyRemediated*, *Running*, *PendingApproval*, *PendingResource*, *PartiallyInvestigated*, *TerminatedByUser*, *TerminatedBySystem*, *Queued*, *InnerFailure*, *PreexistingAlert*, *UnsupportedOs*, *UnsupportedAlertType*, *SuppressedAlert*. | UnsupportedAlertType
@@ -142,7 +142,7 @@ dispositivos | Todos los dispositivos en los que se enviaron alertas relacionada
 
 Nombre del campo | Descripción | Valor de ejemplo
 -|-|-
-DeviceId | El identificador de dispositivo designado en ATP de Microsoft Defender. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
+DeviceId | El identificador de dispositivo designado en Microsoft Defender para endpoint. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
 aadDeviceId |  El identificador de dispositivo designado en [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis). Solo disponible para dispositivos unidos a un dominio. | nulo
 deviceDnsName | El nombre de dominio completo del dispositivo. | user5cx.middleeast.corp.contoso.com
 osPlatform | La plataforma del sistema operativo que se está ejecutando el dispositivo.| WindowsServer2016

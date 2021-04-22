@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenga un informe de grupos de Microsoft 365 para conocer los grupos y sus actividades.
-ms.openlocfilehash: 9ab034531099b5572c42eb3a48ec28d99487ac99
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d123e3beb55ba6e636084fabe995f4dd0ff56707
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579559"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939143"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Informes de Microsoft 365 en el centro de administración: grupos de Microsoft 365
 
@@ -60,4 +60,5 @@ Para obtener una vista de la actividad de grupos, consulte los gráficos **Grupo
 |10,  <br/> |Seleccione o **puntee el botón Más** acciones OWA móvil Más acciones junto a un encabezado de columna para agregar o quitar columnas del ![ ](../../media/80044eef-2368-4c7e-8d31-7155b029e0cf.png) informe.  <br/> ![Informe de grupos: elegir columnas](../../media/d7fb95d6-2a2e-4144-b80d-581223e48043.png)|
 |11,  <br/> |También puede exportar los datos del informe a un archivo .csv de Excel seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos.  <br/> |
 |||
-   
+
+

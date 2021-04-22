@@ -1,7 +1,7 @@
 ---
 title: Administrar incidentes en Microsoft 365 Defender
 description: Obtenga información acerca de cómo asignar, actualizar el estado
-keywords: incidente, incidentes, alertas, alertas correlacionadas, asignar, actualizar, estado, administrar, clasificación, microsoft, 365, m365
+keywords: incidente, incidentes, análisis, respuesta, alertas, alertas correlacionadas, asignar, actualizar, estado, administrar, clasificación, microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: da5a2190a53dfe7f8dd0cc3cf7b410af92ca4ec5
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5f66189979f401430353f4c15978a85276b48840
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861736"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939759"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Administrar incidentes en Microsoft 365 Defender
 
@@ -61,7 +61,7 @@ Puede mostrar este panel desde el vínculo **Administrar incidentes** en:
 - Panel de propiedades de un incidente en la cola de incidentes.
 - **Página de** resumen de un incidente.
 
-En los casos en los que, al investigar, quieras mover alertas de un incidente a otro, también puedes hacerlo desde la pestaña Alertas, creando así un incidente mayor o menor que incluya todas las alertas relevantes. 
+En los casos en los que, al analizar las alertas de un  incidente a otro, también puede hacerlo desde la pestaña Alertas, creando así un incidente mayor o menor que incluya todas las alertas relevantes.
 
 ## <a name="edit-the-incident-name"></a>Editar el nombre del incidente
 
@@ -102,4 +102,4 @@ Puede agregar varios comentarios a un incidente con el **campo Comentario.** Cad
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)
-- [Investigar incidentes](investigate-incidents.md)
+- [Analizar incidentes](investigate-incidents.md)

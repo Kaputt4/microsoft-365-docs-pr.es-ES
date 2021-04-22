@@ -1,7 +1,7 @@
 ---
-title: Obtener notificaciones de incidentes en Microsoft 365 Defender
+title: Obtener notificaciones de incidentes por correo electrónico en Microsoft 365 Defender
 description: Obtenga información sobre cómo crear reglas para obtener notificaciones por correo electrónico para incidentes en Microsoft 365 Defender
-keywords: incident, email, email notfications, configure, users, mailbox, email, incidents
+keywords: incident, email, email notfications, configure, users, mailbox, email, incidents, analyze, response
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72a1f8fe71efcfa7f4f73671611576a454b508e6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 7ba21e08f72760654993335764df00e78abc87b2
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861322"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939723"
 ---
 # <a name="get-incident-notifications-by-email"></a>Obtener notificaciones de incidentes por correo electrónico
 
@@ -43,7 +43,7 @@ Puedes configurar Microsoft 365 Defender para notificar a tu personal con un cor
 - Grupo de dispositivos.
 - Solo en la primera actualización por incidente.
 
-La notificación por correo electrónico contiene detalles importantes sobre el incidente, como el nombre del incidente, la gravedad y las categorías, entre otras. También puede ir directamente al incidente e iniciar la investigación inmediatamente. Para obtener más información, vea [Investigar incidentes](investigate-incidents.md).
+La notificación por correo electrónico contiene detalles importantes sobre el incidente, como el nombre del incidente, la gravedad y las categorías, entre otras. También puede ir directamente al incidente e iniciar el análisis de inmediato. Para obtener más información, vea [Analizar incidentes](investigate-incidents.md).
 
 Puede agregar o quitar destinatarios en las notificaciones de correo electrónico. Los nuevos destinatarios reciben notificaciones sobre incidentes después de agregarse. 
 
@@ -74,7 +74,7 @@ Para editar una regla existente, selecciónelo en la lista de reglas. En el pane
 
 Para editar una regla existente, selecciónelo en la lista de reglas. En el panel con el nombre de regla, seleccione **Eliminar**.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)
-- [Investigar incidentes](investigate-incidents.md)
+- [Analizar incidentes](investigate-incidents.md)

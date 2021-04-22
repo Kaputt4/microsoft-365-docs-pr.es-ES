@@ -1,7 +1,7 @@
 ---
 title: Información general sobre las detecciones personalizadas en Microsoft 365 Defender
 description: Comprender cómo puede usar la búsqueda avanzada para crear detecciones personalizadas y generar alertas
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, detecciones personalizadas, esquema, kusto, microsoft 365, Protección contra amenazas de Microsoft
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, detecciones personalizadas, esquema, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 589a15aa456a96a5eef8042d922d338f056a882d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: bf635ed03cb0d99d54fc94b622bf244447b32a80
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498830"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935706"
 ---
 # <a name="custom-detections-overview"></a>Introducción a las detecciones personalizadas
 
@@ -41,7 +41,7 @@ Las detecciones personalizadas proporcionan:
 - Alertas para detecciones basadas en reglas creadas a partir de consultas de búsqueda avanzadas
 - Acciones de respuesta automáticas
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Ver también
 - [Crear y administrar reglas de detección personalizadas](custom-detection-rules.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Migrar consultas de búsqueda avanzada desde Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md)

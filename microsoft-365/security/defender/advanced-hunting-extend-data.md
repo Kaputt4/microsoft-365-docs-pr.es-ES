@@ -1,7 +1,7 @@
 ---
 title: Ampliar la cobertura de búsqueda avanzada con la configuración correcta
 description: Comprueba la configuración de auditoría en dispositivos Windows y otras configuraciones para asegurarte de obtener los datos más completos en la búsqueda avanzada
-keywords: búsqueda avanzada, incidente, pivot, entidad, configuración de auditoría, administración de cuentas de usuario, administración de grupos de seguridad, búsqueda de amenazas, búsqueda, consulta, telemetría, Microsoft 365, Protección contra amenazas de Microsoft
+keywords: búsqueda avanzada, incidente, pivot, entidad, configuración de auditoría, administración de cuentas de usuario, administración de grupos de seguridad, búsqueda de amenazas, búsqueda, consulta, telemetría, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1fc4635b71e68bb56fa7ec54c9c7b1263b83446b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 40cec28bf88445df13f78e672c4289d440b2b848
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498245"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935862"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Ampliar la cobertura de búsqueda avanzada con la configuración correcta
 

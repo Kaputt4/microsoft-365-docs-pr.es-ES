@@ -1,7 +1,7 @@
 ---
 title: Incidentes en Microsoft 365 Defender
-description: Investigar incidentes vistos en todos los dispositivos, usuarios y buzones de correo.
-keywords: incidentes, alertas, investigar, correlación, ataque, equipos, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, Microsoft, M365
+description: Investigar incidentes vistos en dispositivos, usuarios y buzones en el Centro de seguridad de Microsoft 365.
+keywords: incidentes, alertas, investigar, analizar, responder, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e1e028f7b58df07eccf945b3a79012b4ea12366d
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 890e64367c49c24c8c70e2cbda9869a5d0797219
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861628"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939593"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidentes en Microsoft 365 Defender
 
@@ -104,10 +104,69 @@ Esta es la relación entre un incidente y sus datos y las pestañas de un incide
 
 :::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="La relación de un incidente y sus datos con las pestañas de un incidente en el Centro de seguridad de Microsoft 365":::
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a>Flujo de trabajo de respuesta a incidentes de ejemplo para Microsoft 365 Defender
+
+Este es un flujo de trabajo de ejemplo para responder a incidentes en Microsoft 365 con el Centro de seguridad de Microsoft 365.
+
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Ejemplo de flujo de trabajo de respuesta a incidentes para Microsoft 365":::
+
+De forma continua, identifique los incidentes de mayor prioridad para el análisis y la resolución en la cola de incidentes y prepárese para la respuesta. Esta es una combinación de:
+
+- [Triaging](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.
+- [Administrar](manage-incidents.md) incidentes modificando su título, asignándolos a un analista y agregando etiquetas y comentarios.
+
+1. Para cada incidente, comience un [análisis de ataques y alertas:](investigate-incidents.md)
+
+   a. Vea el resumen del incidente para comprender su ámbito y gravedad y qué entidades se ven afectadas (la **pestaña Resumen).**
+
+   b. Comience a analizar las alertas para comprender su origen, ámbito y gravedad (la **pestaña** Alertas).
+
+   c. Según sea necesario, recopila información sobre dispositivos, usuarios y buzones afectados (las pestañas **Dispositivos,** **Usuarios** y **Buzones).**
+
+   d. Vea cómo Microsoft 365 Defender ha resuelto automáticamente algunas **alertas** (la pestaña Investigaciones).
+   
+   e. Según sea necesario, use la información del conjunto de datos para el incidente para obtener más información (la **pestaña Evidencia y** respuesta).
+
+2. Después o durante el análisis, aborda la contención para reducir cualquier impacto adicional del ataque y la eliminación de la amenaza de seguridad.
+
+3. En la medida de lo posible, recuperándose del ataque restaurando los recursos del espacio empresarial al estado en el que se encontraban antes del incidente.
+
+4. [Resuelva](manage-incidents.md#resolve-incident) el incidente y tome tiempo para aprender después del incidente a:
+
+   - Comprender el tipo de ataque y su impacto.
+   - Investigue el ataque en [Análisis de amenazas](threat-analytics.md) y la comunidad de seguridad para obtener una tendencia de ataque de seguridad.
+   - Recuerde el flujo de trabajo que usó para resolver el incidente y actualice los flujos de trabajo, procesos, directivas y libros de reproducción estándar según sea necesario.
+   - Determine si es necesario realizar cambios en la configuración de seguridad e implementarlos.
+
+## <a name="example-security-operations-for-microsoft-365-defender"></a>Operaciones de seguridad de ejemplo para Microsoft 365 Defender
+
+Este es un ejemplo de operaciones de seguridad para Microsoft 365 Defender.
+
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Un ejemplo de operaciones de seguridad para Micosoft 365 Defender":::
+
+Las tareas diarias pueden incluir:
+
+- [Administración](manage-incidents.md) de incidentes
+- Revisión de [acciones de investigación y respuesta automatizadas (AIR)](m365d-action-center.md)
+- Revisión de los análisis [de amenazas más recientes](threat-analytics.md)
+- [Responder a](investigate-incidents.md) incidentes
+
+Las tareas mensuales pueden incluir:
+
+- Revisión de [la configuración de AIR](m365d-configure-auto-investigation-response.md)
+- Revisión [de la puntuación segura](microsoft-secure-score-improvement-actions.md) y la administración & [vulnerabilidades](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
+- Informes en la cadena de administración de seguridad de IT
+
+Las tareas trimestrales pueden incluir un informe y un informe de los resultados de seguridad al director de seguridad de la información (CISO).
+
+Las tareas anuales pueden incluir llevar a cabo un ejercicio importante de incidentes o infracciones para probar el personal, los sistemas y los procesos. 
+
+Las tareas diarias, mensuales, trimestrales y anuales se pueden usar para actualizar o refinar procesos, directivas y configuraciones de seguridad.
+
+## <a name="next-steps"></a>Siguientes pasos
 
 La cola de incidentes de **la página Incidentes** enumera los incidentes más recientes. Desde aquí, puede:
 
 - Vea qué incidentes deben [priorizarse en](incident-queue.md) función de la gravedad y otros factores. 
-- Realice una [investigación](investigate-incidents.md) de un incidente.
-- [Administrar incidentes, lo](manage-incidents.md)que incluye cambiar el nombre, asignarlos, clasificarlos y agregar etiquetas para el flujo de trabajo de administración de incidentes.
+- [Administrar incidentes, que](manage-incidents.md)incluye cambiar el nombre, la asignación, clasificar y agregar etiquetas y comentarios para el flujo de trabajo de administración de incidentes.
+- Realice un [análisis](investigate-incidents.md) de un incidente.

@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas con la protección de red
 description: Recursos y código de ejemplo para solucionar problemas con la protección de red en Microsoft Defender para endpoint.
-keywords: troubleshoot, error, fix, windows defender, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, microsoft defender for endpoint, microsoft defender advanced threat protection
+keywords: troubleshoot, error, fix, windows defender, asr, rules, hips, troubleshoot, audit, exclusion, false positive, broken, blocking, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 9efc42441c2cb30f35abf658071088f7f7bbaf00
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: f77ce94fda63a9e7e8a9484a67a22eeec136d619
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760103"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935886"
 ---
 # <a name="troubleshoot-network-protection"></a>Solucionar problemas de protección de red
 
@@ -125,7 +125,7 @@ Puede configurar la clave del Registro mediante PowerShell, Microsoft Endpoint M
 - [Configurar opciones de cliente personalizadas para Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
 - [Usar la configuración de directiva de grupo para administrar Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Protección de red](network-protection.md)
 - [Evaluar protección de red](evaluate-network-protection.md)

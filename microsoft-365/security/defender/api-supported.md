@@ -1,7 +1,7 @@
 ---
 title: API de Microsoft 365 Defender (versión preliminar) admitidas
 description: API de Microsoft 365 Defender (versión preliminar) admitidas
-keywords: MTP, API, api
+keywords: Microsoft 365 Defender, API, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b2239b960106d756cbd29504af05af77a553067d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f2c66dca326589807f5712c5548c177a0d08ade0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068975"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935730"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>API de Microsoft 365 Defender (versión preliminar) admitidas 
 
@@ -59,6 +59,6 @@ Todas las API a lo `/api` largo de la ruta de acceso usan el protocolo [OData;](
 ## <a name="related-articles"></a>Artículos relacionados
 
 - [Introducción a las API de Microsoft 365 Defender](api-overview.md)
-- [Obtener acceso a las API de Protección contra amenazas de Microsoft](api-access.md)
+- [Obtener acceso a las API de Microsoft 365 Defender](api-access.md)
 - [Más información sobre los límites de api y las licencias](api-terms.md)
 - [Comprender códigos de error](api-error-codes.md)

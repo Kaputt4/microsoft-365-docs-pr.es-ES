@@ -1,7 +1,7 @@
 ---
-title: Investigar incidentes en Microsoft 365 Defender
+title: Analizar incidentes en Microsoft 365 Defender
 description: Analizar incidentes relacionados con dispositivos, usuarios y buzones de correo.
-keywords: incidente, incidentes, equipos, dispositivos, usuarios, identidades, correo, correo electrónico, buzón, investigación, gráfico, evidencia
+keywords: incidente, incidentes, análisis, respuesta, máquinas, dispositivos, usuarios, identidades, correo, correo electrónico, buzón, investigación, gráfico, evidencia
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,17 +22,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 99acc25c3949b758dab990a9c2e9104b9158accd
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 22d3bba03745cee330f89b67061e6c6b13e78aed
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861907"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939747"
 ---
-# <a name="investigate-incidents-in-microsoft-365-defender"></a>Investigar incidentes en Microsoft 365 Defender
+# <a name="analyze-incidents-in-microsoft-365-defender"></a>Analizar incidentes en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **Se aplica a:**
 
@@ -40,9 +39,9 @@ ms.locfileid: "51861907"
 
 Microsoft 365 Defender agrega todas las alertas, activos, investigaciones y evidencias relacionadas de todos los dispositivos, usuarios y buzones de correo en un incidente para darle una visión completa de toda la amplitud de un ataque.
 
-Dentro de un incidente, se investigan las alertas que afectan a la red, se entiende lo que significan y se recopilan las pruebas para diseñar un plan de corrección eficaz.
+Dentro de un incidente, se analizan las alertas que afectan a la red, se entiende lo que significan y se recopilan las pruebas para poder diseñar un plan de corrección eficaz.
 
-## <a name="initial-investigation"></a>Investigación inicial
+## <a name="initial-analysis"></a>Análisis inicial
 
 Antes de entrar en detalles, echa un vistazo a las propiedades y el resumen del incidente.
 
@@ -87,9 +86,9 @@ Por ejemplo:
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Ejemplo de una página de alertas para un incidente":::
 
-De forma predeterminada, las alertas se ordenan cronológicamente para que pueda ver cómo se produjo el incidente con el tiempo. La selección de cada alerta te lleva a la página principal de la alerta, donde puedes llevar a cabo una investigación en profundidad de esa alerta. 
+De forma predeterminada, las alertas se ordenan cronológicamente para que pueda ver cómo se produjo el incidente con el tiempo. La selección de cada alerta te lleva a la página principal de la alerta, donde puedes realizar un análisis detallado de esa alerta. 
 
-Obtenga información sobre cómo usar la cola de alertas y las páginas de alertas en [Investigar alertas](investigate-alerts.md)
+Obtenga información sobre cómo usar la cola de alertas y las páginas de alertas en [el análisis de alertas](investigate-alerts.md)
 
 ## <a name="devices"></a>Dispositivos
 

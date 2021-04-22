@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: Obtenga un informe de grupos de Microsoft 365 para conocer los grupos y sus actividades.
-ms.openlocfilehash: fd3aa664b5a40bb5fffe0ed23e07ba6f1a5907c2
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 9426f7a35dea6c0f4a34e78dd8b2c214a0619bdd
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579571"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939235"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Informes de Microsoft 365 en el centro de administración: grupos de Microsoft 365
 
@@ -63,6 +63,11 @@ También puede exportar los datos del informe a un archivo .csv de Excel selecci
 |Mensajes en Yammer (publicados)  <br/> |El número de mensajes publicados en el grupo Yammer durante el período de informes.  <br/> |
 |Mensajes en Yammer (lectura)  <br/> |Número de conversaciones leídas en el grupo Yammer durante el período de informes.  <br/> |
 |Mensajes en Yammer (me gusta)  <br/> |El número de mensajes que le gustaron en el grupo yammer durante el período de informes.  <br/> |
-|Miembros  <br/> |El número de miembros del grupo.  <br/> |
+|Members  <br/> |El número de miembros del grupo.  <br/> |
 |Miembros externos |El número de usuarios externos del grupo.|
 |||
+
+## <a name="related-content"></a>Contenido relacionado
+
+Informes de [Microsoft 365](activity-reports.md) en el Centro de administración (artículo) Informes en el Centro de seguridad y cumplimiento de [&](../../compliance/reports-in-security-and-compliance.md) (artículo) Informes de [Microsoft 365](../../admin/activity-reports/active-users-ww.md) en el centro de administración - Usuarios activos (artículo)
+
