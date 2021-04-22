@@ -7,6 +7,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
+ms.date: 04/21/2021
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
@@ -18,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86433ef505cd1b9afca100dc731f1885e22c8401
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 005c1f6ad7806c8d1ba1d38e4e82edd25034075d
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935142"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51942998"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Evaluar Microsoft Defender para Office 365
 
@@ -32,11 +33,14 @@ ms.locfileid: "51935142"
 > [!IMPORTANT]
 > La evaluación de Microsoft Defender para Office 365 está en versión preliminar pública. Esta versión preliminar se proporciona sin un contrato de nivel de servicio. Es posible que algunas características no sean compatibles o que tengan capacidades limitadas.
 
-La realización de una evaluación completa de productos de seguridad puede ayudarle a tomar decisiones fundamentadas sobre las actualizaciones y las compras. Ayuda a probar las capacidades del producto de seguridad para evaluar cómo puede ayudar al equipo de operaciones de seguridad en sus tareas diarias.
+Llevar a cabo una evaluación exhaustiva del producto de seguridad puede ayudarle a tomar decisiones fundamentadas sobre las actualizaciones y las compras. Ayuda a probar las capacidades del producto de seguridad para evaluar cómo puede ayudar al equipo de operaciones de seguridad en sus tareas diarias.
 
 La experiencia de evaluación de Microsoft Defender para [Office 365](defender-for-office-365.md) está diseñada para eliminar las complejidades de la configuración de dispositivos y entornos para que pueda centrarse en evaluar las capacidades de Microsoft Defender para Office 365. Con el modo de evaluación, todos los mensajes enviados a buzones de Exchange Online se pueden evaluar sin apuntar registros MX a Microsoft. La característica solo se aplica a la protección de correo electrónico y no a clientes de Office como Word, SharePoint o Teams.
 
 Si aún no tiene una licencia compatible con Microsoft Defender para Office 365, puede iniciar una evaluación gratuita de [30](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) días y probar las capacidades en el Centro de seguridad y cumplimiento de Office 365 & ( https://protection.office.com/homepage) . Podrás disfrutar de la configuración rápida y puedes desactivarla fácilmente si es necesario.
+
+> [!NOTE]
+> Si está en el portal de seguridad unificado de Microsoft 365 (security.microsoft.com), puede iniciar una evaluación de Defender para Office 365 aquí: Correo electrónico & Directivas de colaboración > & Reglas > Directivas de amenazas > Directivas adicionales.
 
 ## <a name="how-the-evaluation-works"></a>Cómo funciona la evaluación
 

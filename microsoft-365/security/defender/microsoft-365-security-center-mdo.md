@@ -2,7 +2,7 @@
 title: Microsoft Defender para Office 365 en el Centro de seguridad de Microsoft 365
 description: Obtenga información sobre cambios del Centro de seguridad y cumplimiento de Office 365 y del Centro de seguridad de Microsoft 365.
 keywords: Seguridad de Microsoft 365, Introducción al Centro de seguridad de Microsoft 365, Microsoft Defender para Office 365, Microsoft Defender para endpoint, MDO, MDE, panel único de cristal, nuevo portal de seguridad, nuevo portal de seguridad de defender
-ms.date: 02/02/2021
+ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 980a384d3c4fd44a368f35d6f885ea0c8288376a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b5decd562509d134899b85b380791087a913cd58
+ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935418"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51943070"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender para Office 365 en el Centro de seguridad de Microsoft 365
 
@@ -64,6 +64,9 @@ Asimismo, eche un vistazo a la sección **Información relacionada** al final de
 
 > [!IMPORTANT]
 > El portal de Seguridad de Microsoft 365 (https://security.microsoft.com) combina características de seguridad en https://securitycenter.windows.com y https://protection.office.com). Sin embargo, lo que vea dependerá de su suscripción. Por ejemplo, si solo tiene el plan 1 o 2 de Microsoft Defender para Office 365 como suscripción independiente, no verá funciones de Seguridad para puntos de conexión y los clientes del plan 1 de Defender para Office no verán elementos como el análisis de amenazas.
+
+> [!TIP]
+>  Todas las funciones de Exchange Online Protection (EOP) se incluirán en el Centro de seguridad de Microsoft 365, ya que EOP es un elemento principal de Defender para Office 365.
 
 ## <a name="microsoft-365-security-center-home-page"></a>Página principal del Centro de seguridad de Microsoft 365
 
