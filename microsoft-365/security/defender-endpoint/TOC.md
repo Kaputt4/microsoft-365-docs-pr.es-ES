@@ -457,6 +457,7 @@
 ####### [Listar alertas](get-alerts.md)
 ####### [Crear alerta](create-alert-by-reference.md)
 ####### [Actualizar alerta](update-alert.md)
+####### [Alerta de actualización por lotes](batch-update-alerts.md)
 ####### [Obtener información de alertas por id](get-alert-info-by-id.md)
 ####### [Obtener información de dominios relacionada con alertas](get-alert-related-domain-info.md)
 ####### [Obtener información de archivo relacionada con alertas](get-alert-related-files-info.md)
@@ -501,6 +502,7 @@
 
 ###### [Indicadores]()
 ####### [Propiedades y métodos de indicadores](ti-indicator.md)
+####### [Indicadores de importación](import-ti-indicators.md)
 ####### [Enviar indicador](post-ti-indicator.md)
 ####### [Mostrar indicadores](get-ti-indicators-collection.md)
 ####### [Eliminar indicador](delete-ti-indicator-by-id.md)
