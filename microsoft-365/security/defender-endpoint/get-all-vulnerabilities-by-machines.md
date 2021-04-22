@@ -1,7 +1,7 @@
 ---
 title: Obtener todas las vulnerabilidades por máquina y software
 description: Recupera una lista de todas las vulnerabilidades que afectan a la organización por máquina y software
-keywords: apis, graph api, apis admitidas, get, vulnerability information, mdatp tvm api
+keywords: apis, graph api, apis admitidas, get, vulnerability information, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f7d67948e3b3e7a1a878386a397d2f4a6e8e998e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 229c1f9e77a0cb85744155e82934b48dd63052b2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166904"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933414"
 ---
-# <a name="list-vulnerabilities-by-machine-and-software"></a>Enumerar las vulnerabilidades por máquina y software
+# <a name="list-vulnerabilities-by-machine-and-software"></a>Enumerar vulnerabilidades por máquina y software
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

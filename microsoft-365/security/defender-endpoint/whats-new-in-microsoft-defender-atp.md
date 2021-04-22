@@ -1,7 +1,7 @@
 ---
 title: Novedades de Microsoft Defender para punto de conexión
 description: Consulta qué características están disponibles generalmente (GA) en la versión más reciente de Microsoft Defender para Endpoint, así como las características de seguridad en Windows 10 y Windows Server.
-keywords: novedades de Microsoft Defender para endpoint, ga, generalmente disponible, funcionalidades, disponible, nuevo
+keywords: novedades de Microsoft Defender para Endpoint, ga, generally available, capabilities, available, new
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c9f4c0689739224b00c9c14db1482d54faab3512
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: abb20fe79077eda5c50c9aa36829e0dd45e756b8
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688242"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932624"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novedades de Microsoft Defender para punto de conexión
 
@@ -52,22 +52,22 @@ Para obtener más información acerca de las características de vista previa, v
 - [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Windows Virtual Desktop.
 
 ## <a name="december-2020"></a>Diciembre de 2020
-- [Microsoft Defender para endpoint en iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con iOS. Obtén información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint en iOS.
+- [Microsoft Defender para punto de conexión en iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con iOS. Obtén información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint en iOS.
 
 ## <a name="september-2020"></a>Septiembre de 2020
-- [Microsoft Defender para endpoint en Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Android. Obtén información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint en Android.
+- [Microsoft Defender para punto de conexión en Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Android. Obtén información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint en Android.
 - [Compatibilidad con macOS de administración de amenazas y vulnerabilidades](tvm-supported-os.md)<br> La administración de amenazas y vulnerabilidades para macOS está ahora en versión preliminar pública y detectará continuamente vulnerabilidades en los dispositivos macOS para ayudarle a priorizar la corrección centrándose en el riesgo. Obtenga más información en esta [entrada de blog de Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824).
 
 
 ## <a name="august-2020"></a>Agosto de 2020
-- [Microsoft Defender para endpoint en Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Android. Obtén información sobre cómo instalar, configurar y usar Microsoft Defender para Endpoint en Android.
+- [Microsoft Defender para punto de conexión en Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Android. Obtén información sobre cómo instalar, configurar y usar Microsoft Defender para Endpoint en Android.
 
 
 ## <a name="july-2020"></a>Julio de 2020
 - [Crear indicadores para certificados](manage-indicators.md) <br> Crear indicadores para permitir o bloquear certificados. 
 
 ## <a name="june-2020"></a>Junio de 2020
-- [Microsoft Defender para endpoint en Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Linux. Obtenga información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint en Linux.
+- [Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender para endpoint ahora agrega compatibilidad con Linux. Obtenga información sobre cómo instalar, configurar, actualizar y usar Microsoft Defender para Endpoint en Linux.
 
 - [Simuladores de ataque en el laboratorio de evaluación](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender para endpoint se ha asociado con varias plataformas de simulación de amenazas para ofrecerte un acceso cómodo para probar las capacidades de la plataforma desde el portal.
 
@@ -78,7 +78,7 @@ Para obtener más información acerca de las características de vista previa, v
 
 ## <a name="november-december-2019"></a>November-December 2019
 
-- [Microsoft Defender para endpoint en macOS](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender para endpoint en macOS ofrece la protección de última generación a los dispositivos Mac. Los componentes principales de la plataforma de seguridad de extremo unificado ahora estarán disponibles para dispositivos Mac, incluida la [detección y respuesta de puntos de conexión.](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender para endpoint en macOS ofrece la protección de última generación a los dispositivos Mac. Los componentes principales de la plataforma de seguridad de extremo unificado ahora estarán disponibles para dispositivos Mac, incluida la [detección y respuesta de puntos de conexión.](microsoft-defender-endpoint-mac.md)
  
 - [Información & de la aplicación de administración de vulnerabilidades y la versión de la aplicación](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) <BR>Las aplicaciones y las versiones de aplicaciones que han llegado a su fin de vida se etiquetan o etiquetan como tales, por lo que es consciente de que ya no se admiten y pueden realizar acciones para desinstalar o reemplazar. Si lo hace, se reducirán los riesgos relacionados con diversas exposiciones de vulnerabilidades debido a las aplicaciones no apareadas.
 
@@ -150,7 +150,7 @@ Para obtener más información acerca de las características de vista previa, v
 
 - [Detección personalizada](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<BR>Con las detecciones personalizadas, puede crear consultas personalizadas para supervisar eventos de cualquier tipo de comportamiento, como amenazas sospechosas o emergentes. Esto se puede hacer aprovechando el poder de la búsqueda avanzada mediante la creación de reglas de detección personalizadas. 
 
-- [Integración con Azure Security Center](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center)<BR> Microsoft Defender para endpoint se integra con Azure Security Center para proporcionar una solución completa de protección de servidores. Con esta integración, Azure Security Center puede aprovechar la potencia de Microsoft Defender para Endpoint para proporcionar una mejor detección de amenazas para servidores Windows.
+- [Integración con AAzure Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center)<BR> Microsoft Defender para endpoint se integra con Azure Defender para proporcionar una solución completa de protección de servidores. Con esta integración, Azure Defender puede aprovechar la potencia de Microsoft Defender para Endpoint para proporcionar una mejor detección de amenazas para servidores Windows.
 
 - [Compatibilidad con el proveedor de servicios de seguridad administrado (MSSP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection)<BR> Microsoft Defender para endpoint agrega compatibilidad para este escenario proporcionando integración de MSSP. La integración permitirá que los MSSP to take the following actions: Get access to MSSP customer's Microsoft Defender Security Center portal, fetch email notifications, and fetch alerts through security information and event management (SIEM) tools.
 

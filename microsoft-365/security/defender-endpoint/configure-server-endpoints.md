@@ -1,7 +1,7 @@
 ---
 title: Incorporación de servidores de Windows al servicio microsoft defender para puntos de conexión
 description: Incorpore los servidores Windows para que puedan enviar datos del sensor al sensor de Microsoft Defender para endpoints.
-keywords: servidor incorporado, servidor, 2012r2, 2016, 2019, incorporación de servidores, administración de dispositivos, configuración de servidores de Windows ATP, incorporación de servidores de Microsoft Defender para endpoints, incorporación de servidores de Microsoft Defender para endpoints
+keywords: servidor incorporado, servidor, 2012r2, 2016, 2019, incorporación de servidores, administración de dispositivos, configuración de Microsoft Defender para servidores de extremo, incorporación de Servidores de Microsoft Defender para puntos de conexión, incorporación de Microsoft Defender para servidores de extremo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f2660f19d4b6b0d5f8e2dbf48843002a2bfb7f1d
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 4eea2931196c192620812c1609c506e1fb99093d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769101"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932958"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de servidores de Windows al servicio microsoft defender para puntos de conexión
 
@@ -55,7 +55,7 @@ Puedes incorporar Windows Server 2008 R2 SP1, Windows Server 2012 R2 y Windows S
 Después de completar los pasos de incorporación con cualquiera de las opciones proporcionadas, deberá configurar y actualizar los clientes de [System Center Endpoint Protection](#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
-> La licencia de servidor independiente de Defender for Endpoint es necesaria, por nodo, para incorporar un servidor Windows a través de Microsoft Monitoring Agent (opción 1) o a través de Microsoft Endpoint Manager (opción 3). Como alternativa, se requiere una licencia de Azure Defender para servidores, por nodo, para incorporar un servidor Windows a través del Centro de seguridad de Azure (opción 2), consulte Características admitidas disponibles en [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-services).
+> La licencia de servidor independiente de Defender for Endpoint es necesaria, por nodo, para incorporar un servidor Windows a través de Microsoft Monitoring Agent (opción 1) o a través de Microsoft Endpoint Manager (opción 3). Como alternativa, se requiere una licencia de Azure Defender para servidores, por nodo, para incorporar un servidor windows a través del Centro de seguridad de Azure (opción 2), consulte Características compatibles disponibles en [Azure Defender.](https://docs.microsoft.com/azure/security-center/security-center-services)
 
 ### <a name="option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma"></a>Opción 1: Incorporación mediante la instalación y configuración de Microsoft Monitoring Agent (MMA)
 
@@ -127,13 +127,13 @@ Una vez completado, deberías ver los servidores de Windows incorporados en el p
 
 3. Haga **clic en Servidores integrados en El Centro de seguridad de Azure**.
 
-4. Siga las instrucciones de incorporación de Microsoft Defender para endpoint [con Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp) y, si usa Azure ARC, siga las instrucciones de incorporación en Enabling the Microsoft Defender for Endpoint [integration](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
+4. Siga las instrucciones de incorporación en [Microsoft Defender para](https://docs.microsoft.com/azure/security-center/security-center-wdatp) endpoint con Azure Defender y si usa Azure ARC, siga las instrucciones de incorporación en Habilitar la integración de Microsoft Defender para [endpoints](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
 
 Después de completar los pasos de incorporación, deberá configurar y actualizar los clientes de [System Center Endpoint Protection](#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
 >
-> - Para que la incorporación a través de Azure Defender para servidores (anteriormente Azure Security Center Standard Edition) funcione como se esperaba, el servidor debe tener una clave y un área de trabajo adecuadas configuradas dentro de la configuración de Microsoft Monitoring Agent (MMA).
+> - Para que la incorporación a través de Azure Defender para servidores funcione según lo esperado, el servidor debe tener un área de trabajo y una clave adecuadas configuradas dentro de la configuración de Microsoft Monitoring Agent (MMA).
 > - Una vez configurado, el módulo de administración de nube adecuado se implementa en el equipo y el proceso de sensor (MsSenseS.exe) se implementará e iniciará.
 > - Esto también es necesario si el servidor está configurado para usar un servidor de puerta de enlace OMS como proxy.
 
@@ -188,26 +188,25 @@ La compatibilidad con Windows Server proporciona información más detallada sob
 
     Para obtener información sobre cómo usar la directiva de grupo para configurar y administrar Antivirus de Microsoft Defender en los servidores windows, consulta Usar la configuración de directiva de grupo para configurar y administrar [Antivirus de Microsoft Defender.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)
 
-## <a name="integration-with-azure-security-center"></a>Integración con Azure Security Center
+## <a name="integration-with-azure-defender"></a>Integración con Azure Defender
 
-Defender for Endpoint se puede integrar con Azure Security Center para proporcionar una solución completa de protección de windows server. Con esta integración, Azure Security Center puede usar la potencia de Defender para Endpoint para proporcionar una mejor detección de amenazas para servidores Windows.
+Defender para endpoint se puede integrar con Azure Defender para proporcionar una solución completa de protección de windows server. Con esta integración, Azure Defender puede usar la potencia de Defender para Endpoint para proporcionar una mejor detección de amenazas para servidores Windows.
 
 En esta integración se incluyen las siguientes funcionalidades:
 
-- Incorporación automatizada: el sensor defender para puntos de conexión se habilita automáticamente en los servidores Windows que están incorporados al Centro de seguridad de Azure. Para obtener más información sobre la incorporación de Azure Security Center, consulte [Onboarding to Azure Security Center Standard for enhanced security](https://docs.microsoft.com/azure/security-center/security-center-onboarding).
+- Incorporación automatizada: el sensor Defender para endpoints se habilita automáticamente en los servidores windows que están incorporados a Azure Defender. Para obtener más información sobre la incorporación de Azure Defender, consulte [Onboarding to Azure Defender Standard for enhanced security](https://docs.microsoft.com/azure/security-center/security-center-onboarding).
 
     > [!NOTE]
     > La integración entre Azure Defender para servidores y Microsoft Defender para endpoint se ha expandido para admitir [Windows Server 2019 y Windows Virtual Desktop (WVD).](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
-- Los servidores windows supervisados por Azure Security Center también estarán disponibles en Defender para endpoint: El Centro de seguridad de Azure se conecta perfectamente al inquilino de Defender for Endpoint, lo que proporciona una vista única entre clientes y servidores.  Además, las alertas de Defender for Endpoint estarán disponibles en la consola del Centro de seguridad de Azure.
-- Investigación del servidor: los clientes del Centro de seguridad de Azure pueden acceder al Centro de seguridad de Microsoft Defender para realizar una investigación detallada para descubrir el ámbito de una posible infracción.
+- Los servidores de Windows supervisados por Azure Defender también estarán disponibles en Defender para endpoint: Azure Defender se conecta perfectamente al inquilino de Defender para endpoint, lo que proporciona una única vista entre clientes y servidores.  Además, las alertas de Defender para extremo estarán disponibles en la consola de Azure Defender.
+- Investigación del servidor: los clientes de Azure Defender pueden acceder al Centro de seguridad de Microsoft Defender para realizar una investigación detallada para descubrir el ámbito de una posible infracción.
 
 > [!IMPORTANT]
->
-> - Cuando usa Azure Security Center para supervisar los servidores, se crea automáticamente un inquilino de Defender for Endpoint (en Estados Unidos para usuarios estadounidenses, en la UE para usuarios europeos y británicos).
+> - Cuando usa Azure Defender para supervisar los servidores, se crea automáticamente un inquilino de Defender for Endpoint (en Estados Unidos para usuarios estadounidenses, en la UE para usuarios europeos y británicos).<br>
 Los datos recopilados por Defender para endpoint se almacenan en la ubicación geográfica del inquilino tal como se identifica durante el aprovisionamiento.
-> - Si usa Defender para endpoint antes de usar Azure Security Center, los datos se almacenarán en la ubicación que especificó al crear el espacio empresarial, incluso si se integra con Azure Security Center más adelante.
-> - Una vez configurado, no se puede cambiar la ubicación donde se almacenan los datos. Si necesita mover los datos a otra ubicación, póngase en contacto con el soporte técnico de Microsoft para restablecer el espacio empresarial.
+> - Si usa Defender para endpoint antes de usar Azure Defender, los datos se almacenarán en la ubicación que especificó al crear el inquilino, incluso si se integra con Azure Defender más adelante.
+> - Una vez configurado, no se puede cambiar la ubicación donde se almacenan los datos. Si necesita mover los datos a otra ubicación, póngase en contacto con el soporte técnico de Microsoft para restablecer el espacio empresarial. <br>
 La supervisión de extremo de servidor que utiliza esta integración se ha deshabilitado para los clientes GCC de Office 365.
 
 ## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>Configurar y actualizar clientes de System Center Endpoint Protection

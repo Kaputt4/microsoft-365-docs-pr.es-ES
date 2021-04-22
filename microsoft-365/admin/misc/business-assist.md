@@ -16,12 +16,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Obtenga información sobre el programa De asistencia empresarial y cómo puede ayudar a su organización con ayuda y uso mejorados para Microsoft 365 para empresas.
-ms.openlocfilehash: 4531c841b4856e22b364906c180aa336cb8fd04a
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 767146cbbb68ff2e6632a7cae74a8b232834b01b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408530"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929039"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Ayuda empresarial para Microsoft 365
 
@@ -55,7 +55,7 @@ Solo las organizaciones que son elegibles verán la opción de comprar Business 
 
 2. Selecciona **Detalles** en **la Ayuda para pequeñas empresas para Microsoft 365** y completa la compra.
 
-:::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Screeenshot: Purchase Business Assist en la sección Complementos de la página Servicios de compra":::
+:::image type="content" source="../../media/business-assist-april.png" alt-text="Screeenshot: Purchase Business Assist en la sección Complementos de la página Servicios de compra":::
 
 > [!div class="nextstepaction"]
 > [Comprar ahora](https://go.microsoft.com/fwlink/p/?linkid=2158423)

@@ -1,7 +1,7 @@
 ---
 title: Planeación del proyecto piloto de Microsoft 365 Defender
 description: Planee su proyecto piloto de Microsoft 365 Defender con las partes interesadas para administrar las expectativas y garantizar un resultado correcto.
-keywords: Piloto de Protección contra amenazas de Microsoft, proyecto piloto de Microsoft Threat Protection, evaluación de Protección contra amenazas de Microsoft en producción, proyecto piloto de Protección contra amenazas de Microsoft, ciberseguridad, amenaza persistente avanzada, seguridad empresarial, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
+keywords: Piloto de Microsoft 365 Defender, proyecto piloto de Microsoft 365 Defender, evaluación de Microsoft 365 Defender en producción, proyecto piloto de Microsoft 365 Defender, ciberseguridad, amenaza persistente avanzada, seguridad empresarial, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: aee508414b2388b04ab362eedb1f894a4c3d54fd
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 98f0c91a51cc2b73cc26e6fb53143a417a7a147e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071475"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932552"
 ---
 # <a name="planning-your-pilot-microsoft-365-defender-project"></a>Planeación del proyecto piloto de Microsoft 365 Defender 
 

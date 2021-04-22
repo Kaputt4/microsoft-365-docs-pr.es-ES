@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo configurar temas de Microsoft Viva
-ms.openlocfilehash: 629008e083d71e09632b05e21eaefb011d7d9ce2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19395cf3a9ecc991f08f375425803cb81a2a1d35
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929449"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930226"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurar temas de Microsoft Viva
 
@@ -27,7 +27,7 @@ Debe estar suscrito a [Viva Topics](https://www.microsoft.com/microsoft-viva/top
 
 Si ha configurado SharePoint para que [requiera dispositivos administrados,](/sharepoint/control-access-from-unmanaged-devices)asegúrese de configurar Temas desde un dispositivo administrado.
 
-## <a name="video-demonstration"></a>Demostración de vídeo
+## <a name="video-demonstration"></a>Vídeo de demostración
 
 En este vídeo se muestra el proceso de configuración de temas en Microsoft 365.
 
@@ -36,6 +36,27 @@ En este vídeo se muestra el proceso de configuración de temas en Microsoft 365
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Li0E]  
 
 <br>
+
+## <a name="assign-licenses"></a>Asignar licencias
+
+Debe asignar licencias para los usuarios que usarán Temas. Solo los usuarios con una licencia pueden ver información sobre temas como resaltados, tarjetas de temas, páginas de temas y el centro de temas. 
+
+Para asignar licencias:
+
+1. En el Centro de administración de Microsoft 365, en **Usuarios**, haga clic en **Usuarios activos**.
+
+2. Selecciona los usuarios que quieres licenciar y haz clic **en Licencias y aplicaciones.**
+
+3. En **Licencias,** seleccione **Temas de Viva**.
+
+4. En **Aplicaciones,** asegúrate de **que Graph Connectors Search con Index (Temas de Viva)** y Viva **Topics** estén seleccionados.
+
+   > [!div class="mx-imgBorder"]
+   > ![Licencias de Temas de Microsoft Viva en el Centro de administración de Microsoft 365](../media/topic-experiences-licenses.png)
+
+5. Haga clic en **Guardar cambios**.
+
+Los usuarios pueden tardar hasta una hora en obtener acceso a temas después de asignar las licencias.
 
 ## <a name="set-up-topics"></a>Configurar Temas
 
@@ -48,7 +69,7 @@ Para configurar temas
 
 3. En la **página Conectar personas al conocimiento,** haga clic en Introducción para seguir el proceso de configuración. 
 
-    ![Introducción](../media/k-get-started.png) 
+    ![Comenzar](../media/k-get-started.png) 
 
 4. En la página Elegir cómo pueden encontrarse los temas de **Viva Topics,** configurará la detección de temas. En la sección Seleccionar orígenes de temas **de SharePoint,** seleccione qué sitios de SharePoint se rastrearán como orígenes de los temas durante la detección. Elija entre:
     - **Todos los sitios:** todos los sitios de SharePoint de la organización. Esto incluye sitios actuales y futuros.
@@ -125,25 +146,6 @@ Para configurar temas
 
 Tenga en cuenta que la primera vez que se habilita la detección de temas, puede tardar hasta dos semanas en que todos los temas sugeridos aparezcan en la vista Administrar temas. La detección de temas continúa a medida que se realizan nuevas actualizaciones o contenido. Es normal que haya variaciones en el número de temas sugeridos en su organización mientras Viva Topics evalúa nueva información.
 
-## <a name="assign-licenses"></a>Asignar licencias
-
-Una vez configuradas las experiencias de temas, debe asignar licencias para los usuarios que usarán Temas. Solo los usuarios con una licencia pueden ver información sobre temas como resaltados, tarjetas de temas, páginas de temas y el centro de temas. 
-
-Para asignar licencias:
-
-1. En el Centro de administración de Microsoft 365, en **Usuarios**, haga clic en **Usuarios activos**.
-
-2. Selecciona los usuarios que quieres licenciar y haz clic **en Licencias y aplicaciones.**
-
-3. En **Licencias,** seleccione **Temas de Viva**.
-
-4. En **Aplicaciones,** asegúrate de **que Graph Connectors Search con Index (Temas de Viva)** y Viva **Topics** estén seleccionados.
-
-   > [!div class="mx-imgBorder"]
-   > ![Licencias de Temas de Microsoft Viva en el Centro de administración de Microsoft 365](../media/topic-experiences-licenses.png)
-
-5. Haga clic en **Guardar cambios**.
-
 ## <a name="manage-topic-experiences"></a>Administrar experiencias de temas
 
 Una vez configurados los temas, puede cambiar la configuración que eligió durante la instalación en el Centro de administración [de Microsoft 365](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement). Vea las referencias siguientes:
@@ -153,6 +155,6 @@ Una vez configurados los temas, puede cambiar la configuración que eligió dura
 - [Administrar permisos de temas en Temas de Microsoft Viva](topic-experiences-user-permissions.md)
 - [Cambiar el nombre del centro de temas en Temas de Microsoft Viva](topic-experiences-administration.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Introducción a las experiencias del tema](topic-experiences-overview.md)

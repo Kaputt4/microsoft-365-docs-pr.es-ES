@@ -2,7 +2,7 @@
 title: Implementar Microsoft Defender para Endpoint en Linux manualmente
 ms.reviewer: ''
 description: Describe cómo implementar Microsoft Defender para Endpoint en Linux manualmente desde la línea de comandos.
-keywords: microsoft, defender, atp, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender para Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2beb46c62de2e9720d1626e0e1e5ce806a6d7e19
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0374c1a44a4d942ea631d97f51fa48df15d3ec13
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903921"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929090"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -58,7 +58,7 @@ Antes de empezar, consulte [Microsoft Defender para Endpoint en Linux](microsoft
 
 ## <a name="configure-the-linux-software-repository"></a>Configurar el repositorio de software de Linux
 
-Defender para Endpoint para Linux se puede implementar desde uno de los siguientes canales (que se indican a continuación como *[channel]):* *insiders-fast*, *insiders-slow* o *prod*. Cada uno de estos canales corresponde a un repositorio de software de Linux. A continuación se proporcionan instrucciones para configurar el dispositivo para que use uno de estos repositorios.
+Defender para Endpoint en Linux se puede implementar desde uno de los siguientes canales (que se indican a continuación como *[canal]):* *insiders-fast*, *insiders-slow* o *prod*. Cada uno de estos canales corresponde a un repositorio de software de Linux. A continuación se proporcionan instrucciones para configurar el dispositivo para que use uno de estos repositorios.
 
 La elección del canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen al dispositivo. Los dispositivos *de insiders-fast* son los primeros en recibir actualizaciones y nuevas características, seguidos más adelante por *insiders-slow* y, por último, por *prod*.
 
@@ -86,7 +86,7 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    Por ejemplo, si ejecuta CentOS 7 y desea implementar Defender para Endpoint para Linux desde el *canal prod:*
+    Por ejemplo, si ejecuta CentOS 7 y desea implementar Defender para Endpoint en Linux desde el *canal prod:*
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
@@ -328,7 +328,7 @@ Descargue el paquete de incorporación del Centro de seguridad de Microsoft Defe
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > Tenga en cuenta que es posible que también necesite configurar un proxy después de completar la instalación inicial. Consulte [Configure Defender for Endpoint for Linux for static proxy discovery: Post-installation configuration](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration).
+    > Tenga en cuenta que es posible que también necesite configurar un proxy después de completar la instalación inicial. Consulte [Configure Defender for Endpoint on Linux para la detección de proxy estático: configuración posterior a la instalación.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)
 
 5. Ejecute una prueba de detección para comprobar que el dispositivo está correctamente incorporado e informando al servicio. Realice los pasos siguientes en el dispositivo recién incorporado:
 
@@ -344,7 +344,7 @@ Descargue el paquete de incorporación del Centro de seguridad de Microsoft Defe
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - Defender for Endpoint for Linux debería haber puesto el archivo en cuarentena. Use el siguiente comando para enumerar todas las amenazas detectadas:
+    - Defender for Endpoint en Linux debería haber puesto el archivo en cuarentena. Use el siguiente comando para enumerar todas las amenazas detectadas:
 
         ```bash
         mdatp threat list
@@ -381,7 +381,7 @@ Consulte [Problemas de instalación del registro](linux-resources.md#log-install
 
 ## <a name="operating-system-upgrades"></a>Actualizaciones del sistema operativo
 
-Al actualizar el sistema operativo a una nueva versión principal, primero debes desinstalar Defender para Endpoint para Linux, instalar la actualización y, por último, volver a configurar Defender para Endpoint para Linux en el dispositivo.
+Al actualizar el sistema operativo a una nueva versión principal, primero debes desinstalar Defender para Endpoint en Linux, instalar la actualización y, por último, volver a configurar Defender para Endpoint en Linux en el dispositivo.
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>Cómo migrar de Insiders-Fast al canal de producción
 
@@ -406,4 +406,4 @@ Al actualizar el sistema operativo a una nueva versión principal, primero debes
 
 ## <a name="uninstallation"></a>Desinstalación
 
-Consulta [Desinstalar para](linux-resources.md#uninstall) obtener más información sobre cómo quitar Defender for Endpoint para Linux de los dispositivos cliente.
+Consulta [Desinstalar para](linux-resources.md#uninstall) obtener más información sobre cómo quitar Defender for Endpoint en Linux de los dispositivos cliente.

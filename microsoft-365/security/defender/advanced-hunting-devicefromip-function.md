@@ -1,7 +1,7 @@
 ---
 title: Función DeviceFromIP() en búsqueda avanzada para Microsoft 365 Defender
 description: Obtenga información sobre cómo usar la función DeviceFromIP() para obtener los dispositivos a los que se ha asignado una dirección IP específica
-keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, protección contra amenazas de Microsoft, microsoft 365, mtp, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, dispositivo, devicefromIP, función, enriquecimiento
+keywords: búsqueda avanzada, búsqueda de amenazas, búsqueda de amenazas cibernéticas, Microsoft 365 Defender, microsoft 365, m365, búsqueda, consulta, telemetría, referencia de esquema, kusto, dispositivo, devicefromIP, función, enriquecimiento
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d2996021a84186adc6656927dbdc910db4d037de
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3ea951e35555721a989001b2a5235df5b89a8a55
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51071571"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933186"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 
@@ -46,7 +46,7 @@ Esta función devuelve una tabla con las siguientes columnas:
 | Column | Tipo de datos | Descripción |
 |------------|-------------|-------------|
 | `IP` | string | Dirección IP  |
-| `DeviceId` | string | Identificador único del dispositivo en el servicio |
+| `DeviceId` | cadena | Identificador único del dispositivo en el servicio |
 
 
 ## <a name="syntax"></a>Sintaxis
@@ -75,6 +75,6 @@ DeviceNetworkEvents
 ```
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
+- [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)
 - [Entender el esquema](advanced-hunting-schema-tables.md)

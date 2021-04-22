@@ -19,12 +19,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: a9625b391260d27610bb304b0ae3788b541b7709
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9f6489425a924c15d1a5cddb8c9a7d3d7812e5f0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912013"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930238"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>Acerca de los números de registro y las notificaciones de revisión
 
@@ -36,7 +36,7 @@ Usamos el número de registro para revisar los detalles de su cuenta. Esto nos p
 
 Para los países donde el número de registro es obligatorio, la etiqueta encima del cuadro de texto indica qué tipo de número es necesario.
 
-Por ejemplo, en la siguiente captura de pantalla, la etiqueta indica que se necesita un número de registro CNPJ.
+Por ejemplo, en la siguiente captura de pantalla, la etiqueta indica que se necesita un número de registro CNPJ (brasileño).
 
 :::image type="content" source="../media/macregnum-cnpj-screenshot-400.png" alt-text="Captura de pantalla del campo de número de registro para el número C N P J.":::
 

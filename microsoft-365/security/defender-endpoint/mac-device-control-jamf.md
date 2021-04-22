@@ -1,7 +1,7 @@
 ---
 title: Ejemplos de directivas de control de dispositivos para JAMF
 description: Aprende a usar directivas de control de dispositivos con ejemplos que se pueden usar con JAMF.
-keywords: microsoft, defender, endpoint, atp, mac, device, control, usb, removable, media, jamf
+keywords: microsoft, defender, endpoint, Microsoft Defender para Endpoint, mac, device, control, usb, removable, media, jamf
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8990979024c033d4142b595d6fef94f7b872e7c9
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: b9ce161a472366d11b267824c9bd08ceccf285aa
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187690"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933462"
 ---
 # <a name="examples-of-device-control-policies-for-jamf"></a>Ejemplos de directivas de control de dispositivos para JAMF
 

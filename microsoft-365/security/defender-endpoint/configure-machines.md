@@ -1,7 +1,7 @@
 ---
-title: Asegúrese de que los dispositivos estén configurados correctamente
+title: Asegurarse de que los dispositivos estén configurados de manera adecuada
 description: Configure correctamente los dispositivos para aumentar la resistencia general frente a las amenazas y mejorar su capacidad para detectar y responder a los ataques.
-keywords: onboard, administración de Intune, MDATP, WDATP, Microsoft Defender, Windows Defender, protección contra amenazas avanzada, reducción de superficie de ataque, ASR, línea base de seguridad
+keywords: onboard, administración de Intune, Microsoft Defender para Endpoint, Microsoft Defender, Windows Defender, reducción de superficie de ataque, ASR, línea base de seguridad
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e7b00ceafc2761f42c316f434a27acf7c551e7cf
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3fd58ee17b2cb86c0bcc858b9b0fd57c12ac501e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163368"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932816"
 ---
-# <a name="ensure-your-devices-are-configured-properly"></a>Asegúrese de que los dispositivos estén configurados correctamente
+# <a name="ensure-your-devices-are-configured-properly"></a>Asegurarse de que los dispositivos estén configurados de manera adecuada
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

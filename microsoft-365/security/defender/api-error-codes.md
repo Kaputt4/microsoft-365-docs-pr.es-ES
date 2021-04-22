@@ -1,7 +1,7 @@
 ---
 title: Códigos de error comunes de la API rest de Microsoft 365 Defender
 description: Obtenga información sobre los códigos de error comunes de la API de REST de Microsoft 365 Defender
-keywords: api, error, códigos, errores comunes, mtp, códigos de error de api
+keywords: api, error, códigos, errores comunes, Microsoft 365 Defender, códigos de error de api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ab564ddb0263b501b6aca979f2148dfb5cf92758
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e621b79d37a2c3a22394bd51e0493334eff461c7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076696"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932886"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Códigos de error comunes de la API rest de Microsoft 365 Defender
 
@@ -33,7 +33,7 @@ ms.locfileid: "51076696"
 
 **Se aplica a:**
 
-- Protección contra amenazas de Microsoft
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
@@ -42,7 +42,7 @@ Una operación puede devolver códigos de error en cualquiera de las API de Micr
 
 ## <a name="error-codes"></a>Códigos de error
 
-Código de error | Código de estado HTTP | Mensaje
+Código de error | Código de estado HTTP | Message
 -|-|-
 BadRequest | BadRequest (400) | Mensaje de error General Bad Request.
 ODataError | BadRequest (400) | Consulta URI de OData no válida \<the specific error is specified\> .

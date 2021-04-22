@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas de rendimiento de Microsoft Defender para Endpoint en Linux
-description: Solucionar problemas de rendimiento en Microsoft Defender Endpoint en Linux.
-keywords: microsoft, defender, atp, linux, performance
+description: Solucionar problemas de rendimiento en Microsoft Defender para Endpoint en Linux.
+keywords: microsoft, defender, Microsoft Defender para endpoint, linux, rendimiento
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5aaa95ef8202f3d0957113d8f20a39e4d3840227
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 9964b27f29654a7cc474dc4fb8f84334ddaf381c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903991"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933222"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de rendimiento de Microsoft Defender para Endpoint en Linux
 
@@ -34,17 +34,17 @@ ms.locfileid: "51903991"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 > ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-En este artículo se proporcionan algunos pasos generales que se pueden usar para limitar los problemas de rendimiento relacionados con Defender para Endpoint para Linux.
+En este artículo se proporcionan algunos pasos generales que se pueden usar para limitar los problemas de rendimiento relacionados con Defender para Endpoint en Linux.
 
-La protección en tiempo real (RTP) es una característica de Defender para Endpoint para Linux que supervisa y protege continuamente el dispositivo contra amenazas. Consiste en la supervisión de archivos y procesos y otras heurísticas.
+La protección en tiempo real (RTP) es una característica de Defender para Endpoint en Linux que supervisa y protege continuamente el dispositivo contra amenazas. Consiste en la supervisión de archivos y procesos y otras heurísticas.
 
-Según las aplicaciones que se ejecuten y las características del dispositivo, es posible que experimentes un rendimiento subóptimo al ejecutar Defender para Endpoint para Linux. En particular, las aplicaciones o los procesos del sistema que tienen acceso a muchos recursos en un período de tiempo corto pueden provocar problemas de rendimiento en Defender para Endpoint para Linux.
+Según las aplicaciones que ejecutes y las características del dispositivo, es posible que experimentes un rendimiento subóptimo al ejecutar Defender para Endpoint en Linux. En particular, las aplicaciones o los procesos del sistema que tienen acceso a muchos recursos en un período de tiempo corto pueden provocar problemas de rendimiento en Defender para Endpoint en Linux.
 
 Antes de empezar, **asegúrate de que otros productos de seguridad no se estén ejecutando actualmente en el dispositivo**. Varios productos de seguridad pueden tener conflictos e impactar en el rendimiento del host.
 
 Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
 
-1. Deshabilite la protección en tiempo real con uno de los siguientes métodos y observe si el rendimiento mejora. Este enfoque ayuda a limitar si Defender for Endpoint para Linux está contribuyendo a los problemas de rendimiento.
+1. Deshabilite la protección en tiempo real con uno de los siguientes métodos y observe si el rendimiento mejora. Este enfoque ayuda a reducir si Defender for Endpoint en Linux está contribuyendo a los problemas de rendimiento.
 
     Si su organización no administra el dispositivo, la protección en tiempo real se puede deshabilitar desde la línea de comandos:
 
@@ -55,11 +55,11 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
     Configuration property updated
     ```
 
-    Si su organización administra el dispositivo, el administrador puede deshabilitar la protección en tiempo real con las instrucciones de Establecer preferencias para Defender para Endpoint [para Linux](linux-preferences.md).
+    Si su organización administra el dispositivo, el administrador puede deshabilitar la protección en tiempo real con las instrucciones de Establecer preferencias para Defender para Endpoint [en Linux](linux-preferences.md).
 
     Si el problema de rendimiento persiste mientras la protección en tiempo real está desactivada, el origen del problema podría ser el componente de detección y respuesta del extremo. En este caso, póngase en contacto con el servicio de soporte al cliente para obtener más instrucciones y mitigación.
 
-2. Para buscar las aplicaciones que desencadenan la mayoría de los exámenes, puede usar estadísticas en tiempo real recopiladas por Defender para Endpoint para Linux.
+2. Para buscar las aplicaciones que desencadenan la mayoría de los exámenes, puede usar estadísticas en tiempo real recopiladas por Defender para Endpoint en Linux.
 
     > [!NOTE]
     > Esta característica está disponible en la versión 100.90.70 o posterior.
@@ -140,11 +140,11 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
     125  CrashPlanService 164
     ```
 
-    Para mejorar el rendimiento de Defender para Endpoint para Linux, busque el que tiene el número más alto debajo de la fila y `Total files scanned` agregue una exclusión para él. Para obtener más información, vea [Configure and validate exclusions for Defender for Endpoint for Linux](linux-exclusions.md).
+    Para mejorar el rendimiento de Defender para Endpoint en Linux, busque el que tiene el número más alto debajo de la fila y `Total files scanned` agregue una exclusión para él. Para obtener más información, vea [Configure and validate exclusions for Defender for Endpoint on Linux](linux-exclusions.md).
 
     >[!NOTE]
     > La aplicación almacena estadísticas en la memoria y solo realiza un seguimiento de la actividad del archivo desde que se inició y se ha habilitado la protección en tiempo real. Los procesos que se iniciaron antes o durante períodos en los que la protección en tiempo real estaba desactivada no se cuentan. Además, solo se cuentan los eventos que desencadenaron exámenes.
 
-5. Configure el extremo de Microsoft Defender en Linux con exclusiones para los procesos o ubicaciones de disco que contribuyen a los problemas de rendimiento y vuelva a habilitar la protección en tiempo real.
+5. Configure Microsoft Defender para Endpoint en Linux con exclusiones para los procesos o ubicaciones de disco que contribuyen a los problemas de rendimiento y vuelva a habilitar la protección en tiempo real.
 
-    Para obtener más información, vea [Configure and validate exclusions for Microsoft Defender for Endpoint for Linux](linux-exclusions.md).
+    Para obtener más información, vea [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md).

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 154ecd66399b031ef2e60eef16227bb9bc2f8785
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: c1e572910ad311daba18a8b0f5eeb546ffe36956
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587724"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929114"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Investigar dispositivos en la lista Microsoft Defender para dispositivos de punto de conexión
 
@@ -172,12 +172,12 @@ En **la pestaña KBs que** faltan se enumeran las actualizaciones de seguridad q
 
 ### <a name="active-alerts"></a>Alertas activas
 
-La **tarjeta Azure Advanced Threat Protection** mostrará una descripción general de alto nivel de las alertas relacionadas con el dispositivo y su nivel de riesgo, si ha habilitado la característica de Atp de Azure y hay alertas activas. Encontrará más información en el desglose de "Alertas".
+La **tarjeta protección contra** amenazas avanzada de Azure mostrará una descripción general de alto nivel de las alertas relacionadas con el dispositivo y su nivel de riesgo, si ha habilitado la característica Microsoft Defender para la identidad y hay alertas activas. Encontrará más información en el desglose de "Alertas".
 
 ![Imagen de la tarjeta de alertas activas](images/risk-level-small.png)
 
 >[!NOTE]
->Tendrás que habilitar la integración en Azure ATP y Defender para endpoint para usar esta característica. En Defender para endpoint, puedes habilitar esta característica en características avanzadas. Para obtener más información sobre cómo habilitar características avanzadas, vea [Activar características avanzadas.](advanced-features.md)
+>Tendrás que habilitar la integración en Microsoft Defender para Identidad y Defender para endpoint para usar esta característica. En Defender para endpoint, puedes habilitar esta característica en características avanzadas. Para obtener más información sobre cómo habilitar características avanzadas, vea [Activar características avanzadas.](advanced-features.md)
 
 ### <a name="logged-on-users"></a>Usuarios que han iniciado sesión
 

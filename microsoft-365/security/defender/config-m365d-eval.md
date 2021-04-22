@@ -1,7 +1,7 @@
 ---
 title: Configurar los pilares de Microsoft 365 Defender para el entorno piloto o el laboratorio de prueba
 description: Configure los pilares de Microsoft 365 Defender, como Microsoft Defender para Office 365, Microsoft Defender para la identidad, Microsoft Cloud App Security y Microsoft Defender para Endpoint, para su entorno piloto o laboratorio de prueba.
-keywords: configurar la versión de prueba de Protección contra amenazas de Microsoft, la configuración de prueba de Protección contra amenazas de Microsoft, configurar el proyecto piloto de Protección contra amenazas de Microsoft, configurar los pilares de Protección contra amenazas de Microsoft, los pilares de Protección contra amenazas de Microsoft
+keywords: configurar la versión de prueba de Microsoft 365 Defender, la configuración de prueba de Microsoft 365 Defender, configurar el proyecto piloto de Microsoft 365 Defender, configurar los pilares de Microsoft 365 Defender, los pilares de Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9b192a029704d1354867b169efdf0d489345030e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 05bdc9cbb678a3d6c1cee726fc4d8c2e45d2d360
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580971"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933510"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Configurar los pilares de Microsoft 365 Defender para el entorno piloto o el laboratorio de prueba
 
@@ -54,7 +54,7 @@ Microsoft 365 Defender consta de cuatro pilares. Aunque un pilar ya puede propor
 ![Image of_Microsoft 365 Defender solution for users, Microsoft Defender for Identity, for endpoints Microsoft Defender for Endpoint, for cloud apps, Microsoft Cloud App Security, and for data, Microsoft Defender for Office 365](../../media/mtp/m365pillars.png)
 
 En esta sección se le guiará para configurar:
--   Microsoft Defender para Office 365
+-   Microsoft Defender para Office 365
 -   Microsoft Defender for Identity 
 -   Microsoft Cloud App Security
 -   Microsoft Defender para punto de conexión
@@ -162,9 +162,6 @@ Hay un módulo de PowerShell denominado Analizador de configuración recomendada
 11. En la [sección Configuración de Microsoft Defender para](https://go.microsoft.com/fwlink/?linkid=2040449) identidad, selecciona **Microsoft Defender para endpoint **, luego activa la alternancia. Haga clic en **Guardar**. 
 
     ![Página of_the configuración de Microsoft Defender para identidad donde debes activar la alternancia de Microsoft Defender para endpoint](../../media/mtp-eval-52.png)
-
-> [!NOTE]
-> Windows Defender ATP se ha cambiado de nombre como Microsoft Defender para Endpoint. Los cambios de marca en todos nuestros portales se están implantando para la coherencia.
 
 
 ## <a name="configure-microsoft-cloud-app-security"></a>Configurar Microsoft Cloud App Security
@@ -285,7 +282,7 @@ Para obtener una guía más completa, [vea Activar Microsoft 365 Defender](m365d
 
 ¡Enhorabuena! Acaba de crear el entorno piloto o el laboratorio de prueba de Microsoft 365 Defender. Ahora puedes familiarizarte con la interfaz de usuario de Microsoft 365 Defender. Vea lo que puede aprender en la siguiente guía interactiva de Microsoft 365 Defender y sepa cómo usar cada panel para sus tareas diarias de operación de seguridad.
 
-[Consulte la guía interactiva](https://aka.ms/MTP-Interactive-Guide)
+[Eche un vistazo a la guía interactiva](https://aka.ms/MTP-Interactive-Guide)
 
 A continuación, puedes simular un ataque y ver cómo las capacidades entre productos detectan, crean alertas y responden automáticamente a un ataque sin archivos en un punto de conexión.
 

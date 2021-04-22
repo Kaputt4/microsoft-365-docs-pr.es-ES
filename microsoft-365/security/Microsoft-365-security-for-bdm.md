@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: los escenarios de amenazas y ataques más comunes que enfrentan actualmente las organizaciones para sus entornos de Microsoft 365 y las acciones recomendadas para mitigar estos riesgos.
-ms.openlocfilehash: 504a2d4628c265b387941e2e4de0461f7ac3be9b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 056e1e64a992f12f3bf9a4b76c29f723ac1b5f3a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199046"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930178"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business Decision Makers (BDMs)
 
@@ -37,7 +37,7 @@ Una cosa más antes de empezar . . . asegúrese de activar [el registro de audit
 
 ## <a name="protect-privileged-accounts"></a>Proteger cuentas con privilegios
 
-Como primer paso, recomendamos garantizar que las cuentas críticas del entorno tengan una capa adicional de protección, ya que estas cuentas tienen acceso y permisos para administrar y modificar los recursos y servicios críticos que pueden afectar negativamente a toda la organización, si se encuentran en peligro. Proteger cuentas con privilegios es una de las formas más eficaces de protegerse de un atacante que busca elevar los permisos de una cuenta comprometida a una administrativa. 
+Como primer paso, se recomienda garantizar que las cuentas críticas del entorno tengan una capa adicional de protección, ya que estas cuentas tienen acceso y permisos para administrar y modificar los recursos y servicios críticos, lo que puede afectar negativamente a toda la organización, si se pone en peligro. Proteger cuentas con privilegios es una de las formas más eficaces de protegerse de un atacante que busca elevar los permisos de una cuenta comprometida a una administrativa. 
 
 |Recomendación  |E3 |E5  |
 |---------|---------|---------|
@@ -50,7 +50,7 @@ En el siguiente diagrama se ilustran estas funcionalidades.
 ![Funcionalidades recomendadas para proteger cuentas con privilegios](../media/m365-security-bdm-illustrations-privileged-accounts.png)
 
 Recomendaciones adicionales:
-- Asegúrese de que las cuentas sincronizadas desde locales no tienen asignados roles de administrador para los servicios en la nube. Esto ayuda a evitar que un atacante aproveche las cuentas locales para obtener acceso administrativo a los servicios en la nube. 
+- Asegúrese de que las cuentas sincronizadas desde locales no tienen asignados roles de administrador para los servicios en la nube. Esto ayuda a evitar que un atacante aplique cuentas locales para obtener acceso administrativo a los servicios en la nube. 
 - Asegúrese de que las cuentas de servicio no tienen asignados roles de administrador. Estas cuentas a menudo no se supervisan y se establecen con contraseñas que no expiran. Empiece por asegurarse de que las cuentas de servicios de AADConnect y ADFS no sean administradores globales de forma predeterminada.
 - Quitar licencias de cuentas de administrador. A menos que haya un caso de uso específico para asignar licencias a cuentas de administrador específicas, quite las licencias de estas cuentas. 
 
@@ -82,12 +82,12 @@ En el siguiente diagrama se ilustran estas funcionalidades.
 
 ## <a name="protect-against-unknown-threats"></a>Proteger contra amenazas desconocidas
 
-Después de agregar protecciones adicionales a sus cuentas con privilegios y protegerse contra ataques conocidos, cambie su atención a protegerse contra amenazas desconocidas. Los adversarios más decididos y avanzados usan métodos innovadores y nuevos y desconocidos para atacar a las organizaciones. Con la gran telemetría de datos de Microsoft recopilada por miles de millones de dispositivos, aplicaciones y servicios, podemos realizar Defender para Office 365 en Windows, Office 365 y Azure para evitar ataques de día cero, usar entornos de arena y comprobar la validez antes de permitir el acceso al contenido. 
+Después de agregar protecciones adicionales a sus cuentas con privilegios y protegerse contra ataques conocidos, cambie su atención a protegerse contra amenazas desconocidas. Los adversarios más decididos y avanzados usan métodos innovadores y nuevos y desconocidos para atacar a las organizaciones. Con la gran telemetría de datos de Microsoft recopilada por miles de millones de dispositivos, aplicaciones y servicios, podemos realizar Defender para Office 365 en Windows, Office 365 y Azure para evitar ataques de Zero-Day, usar entornos de arena y comprobar la validez antes de permitir el acceso al contenido. 
 
 
 |Recomendación  |E3  |E5  |
 |---------|---------|---------|
-|**Configurar Microsoft Defender para Office 365:**<br>* Datos adjuntos seguros<br>* Vínculos seguros<br>* ATP para SharePoint, OneDrive y Microsoft Teams<br>* Anti-phishing in Defender for Office 365 protection|         |![marca de verificación verde](../media/green-check-mark.png) |
+|**Configurar Microsoft Defender para Office 365:**<br>* Datos adjuntos seguros<br>* Vínculos seguros<br>* Microsoft Defender para endpoint para SharePoint, OneDrive y Microsoft Teams<br>* Anti-phishing in Defender for Office 365 protection|         |![marca de verificación verde](../media/green-check-mark.png) |
 |**Configurar Microsoft Defender para las capacidades de punto de conexión:**<br>* Windows Defender Antivirus <br>* Protección contra vulnerabilidades <br> * Reducción de superficie de ataque <br> * Aislamiento basado en hardware <br>* Acceso controlado a carpetas     |         |![marca de verificación verde](../media/green-check-mark.png) |
 |**Usa Microsoft Cloud App Security para** descubrir aplicaciones SaaS y empezar a usar análisis de comportamiento y detección de anomalías. |         |![marca de verificación verde](../media/green-check-mark.png) |
 
@@ -100,23 +100,23 @@ Recomendaciones adicionales:
 - No agregue dominios de remitente, remitentes individuales o direcciones IP de origen a la lista de permitidos, ya que esto permite omitir las comprobaciones de correo no deseado y malware: una práctica común con los clientes es agregar sus propios dominios aceptados o varios otros dominios en los que se hayan notificado problemas de flujo de correo electrónico a la lista de permitidos. No agregue dominios en la lista de filtrado de correo no deseado y de conexión, ya que esto podría omitir todas las comprobaciones de correo no deseado. 
 - Habilitar las notificaciones de correo no deseado salientes: habilite las notificaciones de correo no deseado salientes a una lista de distribución internamente al departamento de soporte técnico o al equipo de administración de TI para informar si alguno de los usuarios internos envía correos electrónicos no deseados externamente. Esto podría ser un indicador de que la cuenta se ha visto comprometida.
 - Deshabilitar PowerShell remoto para todos los usuarios: PowerShell remoto lo usan principalmente los administradores para obtener acceso a servicios con fines administrativos o acceso a la API mediante programación. Se recomienda deshabilitar esta opción para que los usuarios que no son administradores eviten el reconocimiento a menos que tengan un requisito empresarial para acceder a ella. 
-- Bloquear el acceso al portal de Administración de Microsoft Azure para todos los usuarios que no son administradores. Para ello, cree una regla de acceso condicional para bloquear todos los usuarios, a excepción de los administradores. 
+- Bloquear el acceso al portal de Administración de Microsoft Azure para todos los usuarios que no son administradores. Para ello, cree una regla de acceso condicional para bloquear todos los usuarios, excepto los administradores. 
 
 
 ## <a name="assume-breach"></a>Asumir infracción
 
 Aunque Microsoft toma todas las medidas posibles para evitar amenazas y ataques, se recomienda trabajar siempre con la mentalidad "Asumir vulneración". Incluso si un atacante ha logrado entrar en el entorno, debemos asegurarnos de que no puedan filtrar datos o información de identidad del entorno. Por este motivo, se recomienda habilitar la protección contra pérdidas de datos confidenciales, como números de seguridad social, números de tarjetas de crédito, información personal adicional y otra información confidencial de nivel organizativo. 
 
-La mentalidad "Asumir vulneración" requiere implementar una estrategia de red de confianza cero, lo que significa que los usuarios no son de plena confianza solo porque son internos de la red. En su lugar, como parte de la autorización de lo que los usuarios pueden hacer, se especifican conjuntos de condiciones y, cuando se cumplen estas condiciones, se aplican ciertos controles. Las condiciones pueden incluir el estado de mantenimiento del dispositivo, el acceso a la aplicación, las operaciones que se realizan y el riesgo del usuario. Por ejemplo, una acción de inscripción de dispositivos siempre debe desencadenar la autenticación MFA para asegurarse de que no se agregan dispositivos de color rojo al entorno. 
+La mentalidad "Asumir vulneración" requiere implementar una estrategia de red de confianza cero, lo que significa que los usuarios no son de plena confianza solo porque son internos de la red. En su lugar, como parte de la autorización de lo que los usuarios pueden hacer, se especifican conjuntos de condiciones y, cuando se cumplen estas condiciones, se aplican ciertos controles. Las condiciones pueden incluir el estado del dispositivo, el acceso a la aplicación, las operaciones que se realizan y el riesgo del usuario. Por ejemplo, una acción de inscripción de dispositivos siempre debe desencadenar la autenticación MFA para asegurarse de que no se agregan dispositivos de color rojo al entorno. 
 
-Una estrategia de red de confianza cero también requiere saber dónde se almacena la información y aplicar los controles adecuados para la clasificación, protección y retención. Para proteger eficazmente los activos más críticos y confidenciales, primero debe identificar dónde se encuentran y realizar un inventario, lo que puede resultar complicado. A continuación, trabaje con su organización para definir una estrategia de gobierno. La definición de un esquema de clasificación para una organización y la configuración de directivas, etiquetas y condiciones requiere una planeación y preparación cuidadosas. Es importante tener en cuenta que no se trata de un proceso basado en LA. Asegúrese de trabajar con su equipo legal y de cumplimiento para desarrollar un esquema de clasificación y etiquetado adecuado para los datos de su organización.
+Una estrategia de red de confianza cero también requiere saber dónde se almacena la información y aplicar los controles adecuados para la clasificación, protección y retención. Para proteger eficazmente los activos más críticos y confidenciales, primero debe identificar dónde se encuentran y realizar un inventario, lo que puede resultar complicado. A continuación, trabaje con su organización para definir una estrategia de gobierno. La definición de un esquema de clasificación para una organización y la configuración de directivas, etiquetas y condiciones requieren una planeación y preparación cuidadosas. Es importante tener en cuenta que no se trata de un proceso basado en LA. Asegúrese de trabajar con su equipo legal y de cumplimiento para desarrollar un esquema de clasificación y etiquetado adecuado para los datos de su organización.
 
 Las capacidades de protección de información de Microsoft 365 pueden ayudarle a descubrir qué información tiene, dónde se almacena y qué información requiere protección adicional. La protección de la información es un proceso continuo y las capacidades de Microsoft 365 le proporcionan visibilidad de cómo los usuarios usan y distribuyen información confidencial, dónde se almacena actualmente la información y dónde fluye. También puede ver cómo los usuarios administran la información regulada para asegurarse de que se aplican las etiquetas y protecciones adecuadas.
 
 
 |Recomendación |E3|E5 |
 |---------|---------|---------|
-|**Revise y optimice el acceso condicional y las directivas** relacionadas para alinearse con los objetivos de una red de confianza cero. La protección contra amenazas conocidas incluye la implementación de un conjunto de [directivas recomendadas.](./office-365-security/microsoft-365-policies-configurations.md) Revisa la implementación de estas directivas para asegurarte de proteger tus aplicaciones y datos contra los hackers que han obtenido acceso a tu red. Ten en cuenta que la directiva de protección de aplicaciones de Intune recomendada para Windows 10 habilita Windows Information Protection (WIP). WIP protege contra pérdidas accidentales de datos de la organización a través de aplicaciones y servicios, como correo electrónico, redes sociales y la nube pública. |         |![marca de verificación verde](../media/green-check-mark.png)|
+|**Revise y optimice el acceso condicional y las directivas** relacionadas para alinearse con los objetivos de una red de confianza cero. La protección contra amenazas conocidas incluye la implementación de un conjunto de [directivas recomendadas.](./office-365-security/microsoft-365-policies-configurations.md) Revisa la implementación de estas directivas para asegurarte de proteger tus aplicaciones y datos contra los hackers que han obtenido acceso a tu red. La directiva de protección de aplicaciones de Intune recomendada para Windows 10 habilita Windows Information Protection (WIP). WIP protege contra pérdidas accidentales de datos de la organización a través de aplicaciones y servicios, como correo electrónico, redes sociales y la nube pública. |         |![marca de verificación verde](../media/green-check-mark.png)|
 |**Deshabilitar el reenvío de correo electrónico externo**. Los hackers que obtienen acceso al buzón de un usuario pueden robar el correo estableciendo el buzón para reenviar automáticamente el correo electrónico. Esto puede ocurrir incluso sin el reconocimiento del usuario. Puede evitar que esto suceda configurando una regla de flujo de correo.|![marca de verificación verde](../media/green-check-mark.png) |![marca de verificación verde](../media/green-check-mark.png)|
 |**Deshabilitar el uso compartido de calendario externo anónimo.** De forma predeterminada, se permite el uso compartido de calendario anónimo externo. [Deshabilitar el uso compartido de](/exchange/sharing/sharing-policies/modify-a-sharing-policy) calendarios para reducir posibles pérdidas de información confidencial.|![marca de verificación verde](../media/green-check-mark.png) |![marca de verificación verde](../media/green-check-mark.png)|
 |**Configurar directivas de prevención de pérdida de datos para datos confidenciales**. Cree una directiva de prevención de pérdida de datos en el Centro de cumplimiento de seguridad para detectar y proteger datos confidenciales, como números de tarjeta de crédito, números de seguridad social y &amp; números de cuenta bancaria. Microsoft 365 incluye muchos tipos de información confidencial predefinidos que puede usar en directivas de prevención de pérdida de datos. También puede crear sus propios tipos de información confidencial para datos confidenciales personalizados para su entorno. |![marca de verificación verde](../media/green-check-mark.png)|![marca de verificación verde](../media/green-check-mark.png)|

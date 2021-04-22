@@ -1,7 +1,7 @@
 ---
 title: API de búsqueda avanzada de Microsoft 365 Defender
 description: Obtenga información sobre cómo ejecutar consultas avanzadas de búsqueda con la API avanzada de búsqueda de Microsoft 365 Defender
-keywords: Búsqueda avanzada, API, api, MTP, M365 Defender, Microsoft 365 Defender
+keywords: Búsqueda avanzada, API, api, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 482801bb47429ae370e06cfcbcf26bacfb8b2a92
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c988a609a329c8f7f8988314e56aae942beebac5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51074800"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932898"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>API de búsqueda avanzada de Microsoft 365 Defender
 
@@ -33,7 +33,7 @@ ms.locfileid: "51074800"
 
 **Se aplica a:**
 
-- Protección contra amenazas de Microsoft
+- Microsoft 365 Defender
 
 > [!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
@@ -183,4 +183,4 @@ En el siguiente ejemplo, un usuario envía la consulta siguiente y recibe un obj
 - [Obtener acceso a las API de Microsoft 365 Defender](api-access.md)
 - [Más información sobre los límites de api y las licencias](api-terms.md)
 - [Comprender códigos de error](api-error-codes.md)
-- [Información general sobre la búsqueda avanzada](advanced-hunting-overview.md)
+- [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

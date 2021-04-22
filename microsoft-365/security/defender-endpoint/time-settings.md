@@ -1,7 +1,7 @@
 ---
 title: Configuración de zona horaria del Centro de seguridad de Microsoft Defender
 description: Usa la información que se incluye aquí para configurar la configuración de zona horaria del Centro de seguridad de Microsoft Defender y ver la información de licencia.
-keywords: configuración, Microsoft Defender, inteligencia contra amenazas de ciberseguridad, protección contra amenazas avanzada, zona horaria, utc, hora local, licencia
+keywords: configuración, Microsoft Defender, inteligencia de amenazas de ciberseguridad, Microsoft Defender para endpoint, zona horaria, utc, hora local, licencia
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e395420b92c29977f1c802d1c10683492c1aba10
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: df55a1b0e92c24b5f52032330ef95bf19aeb8cb3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470470"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932636"
 ---
 # <a name="microsoft-defender-security-center-time-zone-settings"></a>Configuración de zona horaria del Centro de seguridad de Microsoft Defender
 

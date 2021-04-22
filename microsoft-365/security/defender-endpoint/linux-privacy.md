@@ -1,7 +1,7 @@
 ---
 title: Privacidad de Microsoft Defender para endpoint en Linux
 description: Controles de privacidad, cómo configurar las opciones de directiva que afectan a la privacidad y la información sobre los datos de diagnóstico recopilados en Microsoft Defender para Endpoint en Linux.
-keywords: microsoft, defender, atp, linux, privacidad, diagnóstico
+keywords: microsoft, defender, Microsoft Defender para endpoint, linux, privacidad, diagnóstico
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 69af56efa57f389842ed31afa5f0a74667bd8f7b
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: cbf68b6ce8397f0339b374a041ba2629b20db699
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903255"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933342"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Privacidad de Microsoft Defender para endpoint en Linux
 
@@ -33,13 +33,13 @@ ms.locfileid: "51903255"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft se compromete a proporcionarle la información y los controles que necesita para tomar decisiones sobre cómo se recopilan y usan los datos cuando usa Defender para Endpoint para Linux.
+Microsoft se compromete a proporcionarle la información y los controles que necesita para tomar decisiones sobre cómo se recopilan y usan los datos cuando usa Defender para Endpoint en Linux.
 
 En este tema se describen los controles de privacidad disponibles en el producto, cómo administrar estos controles con la configuración de directiva y más detalles sobre los eventos de datos que se recopilan.
 
 ## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Información general sobre los controles de privacidad en Microsoft Defender para Endpoint en Linux
 
-En esta sección se describen los controles de privacidad de los distintos tipos de datos recopilados por Defender para Endpoint para Linux.
+En esta sección se describen los controles de privacidad de los diferentes tipos de datos recopilados por Defender para Endpoint en Linux.
 
 ### <a name="diagnostic-data"></a>Datos de diagnóstico
 
@@ -75,7 +75,7 @@ Existen tres niveles para controlar el envío de muestra:
 
 Si es administrador de TI, es posible que desee configurar estos controles en el nivel de empresa. 
 
-Los controles de privacidad de los distintos tipos de datos descritos en la sección anterior se describen detalladamente en Establecer preferencias para [Defender para Endpoint para Linux](linux-preferences.md).
+Los controles de privacidad de los distintos tipos de datos descritos en la sección anterior se describen detalladamente en Establecer preferencias para Defender para endpoint [en Linux](linux-preferences.md).
 
 Al igual que con cualquier configuración de directiva nueva, debe probarlas cuidadosamente en un entorno limitado y controlado para asegurarse de que la configuración que configure tenga el efecto deseado antes de implementar la configuración de directiva más ampliamente en su organización.
 
@@ -96,7 +96,7 @@ Los siguientes campos se consideran comunes para todos los eventos:
 | org_id                  | Identificador único asociado a la empresa a la que pertenece el dispositivo. Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de empresas y cuántas empresas se verán afectadas. |
 | nombre de host                | Nombre de dispositivo local (sin sufijo DNS). Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de instalaciones y cuántos usuarios se verán afectados. |
 | product_guid            | Identificador único del producto. Permite a Microsoft diferenciar los problemas que afectan a diferentes sabores del producto. |
-| app_version             | Versión de la aplicación Defender para Endpoint para Linux. Permite a Microsoft identificar qué versiones del producto muestran un problema para que se pueda priorizar correctamente.|
+| app_version             | Versión de la aplicación Defender para endpoint en Linux. Permite a Microsoft identificar qué versiones del producto muestran un problema para que se pueda priorizar correctamente.|
 | sig_version             | Versión de la base de datos de inteligencia de seguridad. Permite a Microsoft identificar qué versiones de la inteligencia de seguridad muestran un problema para que se pueda priorizar correctamente. |
 | supported_compressions  | Lista de algoritmos de compresión admitidos por la aplicación, por ejemplo `['gzip']` . Permite a Microsoft comprender qué tipos de compresión se pueden usar cuando se comunica con la aplicación. |
 | release_ring            | Anillo al que está asociado el dispositivo (por ejemplo, Insider Fast, Insider Slow, Production). Permite a Microsoft identificar en qué anillo de lanzamiento puede producirse un problema para que se pueda priorizar correctamente. |
@@ -111,7 +111,7 @@ Los datos de diagnóstico necesarios ayudan a identificar problemas con Microsof
 
 **Instalación y desinstalación de Microsoft Defender para endpoint**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -123,7 +123,7 @@ Se recopilan los siguientes campos:
 
 **Configuración de Microsoft Defender para punto de conexión**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field                                               | Descripción |
 | --------------------------------------------------- | ----------- |
@@ -144,7 +144,7 @@ Se recopilan los siguientes campos:
 
 **Informe de actualización de inteligencia de seguridad**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -159,11 +159,11 @@ Se recopilan los siguientes campos:
 
 **Estadísticas de extensión de kernel**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field            | Descripción |
 | ---------------- | ----------- |
-| version          | Versión de Defender para Endpoint para Linux. |
+| version          | Versión de Defender para Endpoint en Linux. |
 | instance_id      | Identificador único generado en el inicio de extensión de kernel. |
 | trace_level      | Nivel de seguimiento de la extensión del kernel. |
 | subsistema        | Subsistema subyacente usado para la protección en tiempo real. |
@@ -178,7 +178,7 @@ Se recopilan los siguientes campos:
 Los registros de diagnóstico solo se recopilan con el consentimiento del usuario como parte de la característica de envío de comentarios. Los siguientes archivos se recopilan como parte de los registros de soporte técnico:
 
 - Todos los archivos *en /var/log/microsoft/mdatp*
-- Subconjunto de archivos *en /etc/opt/microsoft/mdatp* creados y usados por Defender para Endpoint para Linux
+- Subconjunto de archivos *en /etc/opt/microsoft/mdatp* creados y usados por Defender para Endpoint en Linux
 - Registros de instalación y desinstalación de productos en */var/log/microsoft_mdatp_ \* .log*
 
 ### <a name="optional-diagnostic-data"></a>Datos de diagnóstico opcionales
@@ -193,7 +193,7 @@ Algunos ejemplos de datos de diagnóstico opcionales incluyen datos que Microsof
 
 **Configuración de Microsoft Defender para punto de conexión**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field                                              | Descripción |
 | -------------------------------------------------- | ----------- |
@@ -214,7 +214,7 @@ Se recopilan los siguientes campos:
 
 **Configuración de Actualización automática de Microsoft**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field                       | Descripción |
 | --------------------------- | ----------- |
@@ -227,7 +227,7 @@ Se recopilan los siguientes campos:
 
 #### <a name="diagnostic-log-upload-started-report"></a>Informe de carga iniciada del registro de diagnóstico
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -238,7 +238,7 @@ Se recopilan los siguientes campos:
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Informe completado de carga de registro de diagnóstico
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field            | Descripción |
 | ---------------- | ----------- |
@@ -254,7 +254,7 @@ Cierres de aplicación inesperados y el estado de la aplicación cuando esto ocu
 
 **Estadísticas de extensión de kernel**
 
-Se recopilan los siguientes campos:
+Se recopilan los campos siguientes: 
 
 | Field                          | Descripción |
 | ------------------------------ | ----------- |

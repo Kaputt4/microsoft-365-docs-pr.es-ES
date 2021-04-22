@@ -1,7 +1,7 @@
 ---
-title: Implementación basada en Intune para Microsoft Defender para endpoint en macOS
-description: Instale Microsoft Defender para Endpoint en macOS con Microsoft Intune.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+title: Implementación basada en Intune para Microsoft Defender para Endpoint en Mac
+description: Instale Microsoft Defender para Endpoint en Mac con Microsoft Intune.
+keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, instalación, implementación, desinstalación, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dbb4e3a558256f19594ab0aa4efbd2c9eed6b7f8
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: c98ce17b7b71f2d05aeffe66dbb1e08f9046f463
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764220"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933150"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Implementación basada en Intune para Microsoft Defender para endpoint en macOS
 
@@ -37,7 +37,7 @@ ms.locfileid: "51764220"
 
 **Se aplica a:**
 
-- [Microsoft Defender para endpoint en macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md)
 
 En este tema se describe cómo implementar Microsoft Defender para Endpoint en macOS a través de Intune. Una implementación correcta requiere la finalización de todos los pasos siguientes:
 
@@ -186,7 +186,7 @@ Para aprobar las extensiones del sistema:
 
 3. Abra el perfil de configuración y cargue intune/kext.xml. Este archivo se creó en una de las secciones anteriores.
 
-4. Elija **Aceptar**.
+4. Seleccione **Aceptar**.
 
     ![Importar una configuración desde un archivo para perfil de configuración personalizado](images/mdatp-6-systemconfigurationprofiles.png)
 

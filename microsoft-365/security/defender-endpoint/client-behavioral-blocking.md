@@ -1,7 +1,7 @@
 ---
 title: Bloqueo de comportamiento del cliente
 description: El bloqueo de comportamiento del cliente forma parte de las capacidades de contención y bloqueo de comportamiento en Microsoft Defender para endpoint
-keywords: bloqueo de comportamiento, protección rápida, comportamiento del cliente, ATP de Microsoft Defender, Microsoft Defender para punto de conexión
+keywords: bloqueo de comportamiento, protección rápida, comportamiento del cliente, Microsoft Defender para endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 48929d0e2b0c932d37cb5d29783712d00b17117f
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: c58c81cd4623ec03850c167cad285e052413174c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904157"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933426"
 ---
 # <a name="client-behavioral-blocking"></a>Bloqueo de comportamiento del cliente
 

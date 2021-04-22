@@ -1,6 +1,6 @@
 ---
 title: Conceder acceso al proveedor de servicios de seguridad administrado (MSSP)
-description: Siga los pasos necesarios para configurar la integración de MSSP con ATP de Microsoft Defender
+description: Siga los pasos necesarios para configurar la integración de MSSP con Microsoft Defender para endpoint
 keywords: proveedor de servicios de seguridad administrados, mssp, configuración, integración
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1bb7bc3565bbb7c05f165c5649f3672ff33bb18b
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 320355f838db5dbb1540350e95e4cc0645acd805
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165458"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932756"
 ---
 # <a name="grant-managed-security-service-provider-mssp-access-preview"></a>Conceder acceso al proveedor de servicios de seguridad administrado (MSSP) (versión preliminar)
 
@@ -135,9 +135,9 @@ Para implementar una solución de acceso delegado multiinquilino, siga estos pas
     En este momento, se ha aprovisionado el acceso de analistas y cada analista debe tener acceso al Centro de seguridad de Microsoft Defender del cliente: `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Obtener acceso al portal de clientes de MSSP](access-mssp-portal.md)
-- [Configurar notificaciones de alertas](configure-mssp-notifications.md)
-- [Capturar alertas desde el inquilino del cliente](fetch-alerts-mssp.md)
+- [Acceder al portal de clientes de MSSP](access-mssp-portal.md)
+- [Configurar notificaciones de alerta](configure-mssp-notifications.md)
+- [Capturar alertas del espacio empresarial del cliente](fetch-alerts-mssp.md)
 
 
 

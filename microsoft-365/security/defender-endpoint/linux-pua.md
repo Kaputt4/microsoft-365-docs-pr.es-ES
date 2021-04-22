@@ -1,7 +1,7 @@
 ---
 title: Detectar y bloquear aplicaciones potencialmente no deseadas con Microsoft Defender para Endpoint en Linux
 description: Detectar y bloquear aplicaciones potencialmente no deseadas (PUA) con Microsoft Defender para endpoint en Linux.
-keywords: microsoft, defender, atp, linux, pua, pus
+keywords: microsoft, defender, Microsoft Defender para endpoint, linux, pua, pus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9631fc2eb1cb791f48f107482474d1bb8e2fd62b
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 7ec3399129cc65d75b464f5d5f56bb11250ccaf2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903863"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933162"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications-with-microsoft-defender-for-endpoint-on-linux"></a>Detectar y bloquear aplicaciones potencialmente no deseadas con Microsoft Defender para Endpoint en Linux
 
@@ -35,7 +35,7 @@ ms.locfileid: "51903863"
 
 > ¿Desea experimentar Defender for Endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-La característica de protección de aplicaciones potencialmente no deseadas (PUA) de Defender para Endpoint para Linux puede detectar y bloquear archivos PUA en puntos de conexión de la red.
+La característica de protección de aplicaciones potencialmente no deseadas (PUA) en Defender para Endpoint en Linux puede detectar y bloquear archivos PUA en puntos de conexión de la red.
 
 Estas aplicaciones no se consideran virus, malware u otros tipos de amenazas, pero pueden realizar acciones en puntos de conexión que afecten negativamente a su rendimiento o uso. PUA también puede hacer referencia a aplicaciones que se consideran de mala reputación.
 
@@ -43,13 +43,13 @@ Estas aplicaciones pueden aumentar el riesgo de que la red se infecte con malwar
 
 ## <a name="how-it-works"></a>Cómo funciona
 
-Defender para Endpoint para Linux puede detectar e informar de archivos PUA. Cuando se configura en modo de bloqueo, los archivos PUA se mueven a la cuarentena.
+Defender para endpoint en Linux puede detectar e informar de archivos PUA. Cuando se configura en modo de bloqueo, los archivos PUA se mueven a la cuarentena.
 
-Cuando se detecta una PUA en un punto de conexión, Defender for Endpoint para Linux mantiene un registro de la infección en el historial de amenazas. El historial se puede visualizar desde el portal del Centro de seguridad de Microsoft Defender o a través de la herramienta `mdatp` de línea de comandos. El nombre de la amenaza contendrá la palabra "Application".
+Cuando se detecta una PUA en un punto de conexión, Defender for Endpoint en Linux mantiene un registro de la infección en el historial de amenazas. El historial se puede visualizar desde el portal del Centro de seguridad de Microsoft Defender o a través de la herramienta `mdatp` de línea de comandos. El nombre de la amenaza contendrá la palabra "Application".
 
 ## <a name="configure-pua-protection"></a>Configurar la protección de LA PUA
 
-La protección de PUA en Defender para Endpoint para Linux se puede configurar de una de las siguientes maneras:
+La protección de PUA en Defender para Endpoint en Linux se puede configurar de una de las siguientes maneras:
 
 - **Desactivado:** la protección de LA PUA está deshabilitada.
 - **Auditoría:** los archivos PUA se notifican en los registros del producto, pero no en el Centro de seguridad de Microsoft Defender. No se almacena ningún registro de la infección en el historial de amenazas y el producto no toma ninguna acción.
@@ -70,8 +70,8 @@ mdatp threat policy set --type potentially_unwanted_application --action [off|au
 
 ### <a name="use-the-management-console-to-configure-pua-protection"></a>Use la consola de administración para configurar la protección pua:
 
-En su empresa, puede configurar la protección de PUA desde una consola de administración, como Puppet o Ansible, de forma similar a la configuración de otros productos. Para obtener más información, consulta la sección Configuración del [tipo](linux-preferences.md#threat-type-settings) de amenaza del artículo Establecer preferencias [para Defender para Endpoint para Linux.](linux-preferences.md)
+En su empresa, puede configurar la protección de PUA desde una consola de administración, como Puppet o Ansible, de forma similar a la configuración de otros productos. Para obtener más información, consulta la sección Configuración del [tipo](linux-preferences.md#threat-type-settings) de amenaza del artículo [Establecer preferencias para Defender para Endpoint en Linux.](linux-preferences.md)
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Establecer preferencias para Defender para Endpoint para Linux](linux-preferences.md)
+- [Establecer preferencias para Defender para Endpoint en Linux](linux-preferences.md)

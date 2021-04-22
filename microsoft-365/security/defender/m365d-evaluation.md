@@ -1,7 +1,7 @@
 ---
 title: Evaluación de Microsoft 365 Defender
 description: Configure el entorno piloto o el laboratorio de prueba de Microsoft 365 Defender para probar y experimentar la solución de seguridad diseñada para proteger los dispositivos, la identidad, los datos y las aplicaciones de su organización.
-keywords: Prueba de Protección contra amenazas de Microsoft, prueba Microsoft Threat Protection, evalúa Microsoft Threat Protection, Microsoft Threat Protection evaluation lab, Microsoft Threat Protection pilot, cyber security, advanced persistent threat, enterprise security, devices, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting, advanced hunting
+keywords: Prueba de Microsoft 365 Defender, prueba Microsoft 365 Defender, evalúa Microsoft 365 Defender, laboratorio de evaluación de Microsoft 365 Defender, piloto de Microsoft 365 Defender, seguridad cibernética, amenaza persistente avanzada, seguridad empresarial, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2ea829e0e2697facd2522dbf16ced7d620662eee
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1c260588b80d8325567b74148a7a62586cfbc707
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076656"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933174"
 ---
 # <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Crear un entorno piloto o un laboratorio de prueba de Microsoft 365 Defender 
 
@@ -63,7 +63,7 @@ Hay tres fases en la creación de un entorno de laboratorio de prueba de Microso
 
 |Fase | Descripción | 
 |:-------|:-----|
-|[Fase 1: Preparar](prepare-m365d-eval.md)| Obtenga información sobre lo que debe tener en cuenta al implementar Microsoft 365 Defender en un entorno piloto o de laboratorio de prueba: <br><br>- Partes interesadas y inicio de sesión <br> - Consideraciones sobre el entorno <br>- Access <br>- Configuración de Azure Active Directory <br> - Orden de configuración
+|[Fase 1: Preparación](prepare-m365d-eval.md)| Obtenga información sobre lo que debe tener en cuenta al implementar Microsoft 365 Defender en un entorno piloto o de laboratorio de prueba: <br><br>- Partes interesadas y inicio de sesión <br> - Consideraciones sobre el entorno <br>- Access <br>- Configuración de Azure Active Directory <br> - Orden de configuración
 |[Fase 2: Configuración](setup-m365deval.md)|  Siga los pasos iniciales para acceder al Centro de seguridad de Microsoft 365 para configurar el entorno piloto o el laboratorio de prueba de Microsoft 365 Defender. Se le guiará a:<br><br>- Registrarse para la versión de prueba de Microsoft 365 E5 <br>  - Configurar dominio<br>- Asignar licencias de Microsoft 365 E5<br>- Completar el asistente de configuración en el portal|
 |[Fase 3: Configurar & incorporación](config-m365d-eval.md) | Configure cada pilar de Microsoft 365 Defender y los puntos de conexión integrados. Se le guiará a:<br><br>- Configurar Microsoft Defender para Office 365<br>- Configurar Microsoft Cloud App Security<br>- Configurar Microsoft Defender para la identidad<br>- Configurar Microsoft Defender para el punto de conexión
 
@@ -77,7 +77,7 @@ Aunque Microsoft 365 Defender proporciona muchas funcionalidades, el objetivo pr
 
 Funcionalidad | Descripción 
 :---|:---
-Microsoft Defender para Office 365 | Ayuda a proteger todo el envrionment de Office 365 de las amenazas actuales
+Microsoft Defender para Office 365 | Ayuda a proteger todo el envrionment de Office 365 de las amenazas actuales
 Microsoft Defender for Identity | Identifica y detecta amenazas en identidades comprometidas y acciones internas malintencionadas.
 Microsoft Cloud App Security | Proporciona una visibilidad enriquecida, controla los viajes de datos y detecta ciberamenazas en los servicios en la nube.
 Microsoft Defender para punto de conexión | Impide, detecta y proporciona capacidades de respuesta a amenazas avanzadas con una seguridad de extremo completa.
@@ -93,7 +93,7 @@ Las siguientes tareas están en el ámbito de esta guía:
     -   Asignar licencias de Microsoft 365 E5
     -   Completar el asistente de configuración en el portal
 -   Configurar todos los pilares de Microsoft 365 Defender en función de los procedimientos recomendados
-    -   Microsoft Defender para Office 365
+    -   Microsoft Defender para Office 365
     -   Microsoft Defender for Identity
     -   Microsoft Cloud App Security
     -   Microsoft Defender para punto de conexión

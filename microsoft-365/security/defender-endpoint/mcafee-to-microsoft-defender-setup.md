@@ -1,7 +1,7 @@
 ---
 title: McAfee to Microsoft Defender for Endpoint - Setup
 description: Esta es la fase 2, Configuración, para migrar de McAfee a Microsoft Defender para endpoint.
-keywords: migración, protección contra amenazas avanzada de Windows Defender, atp, edr
+keywords: migración, Microsoft Defender para Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: be39d64743979fe903193a388ce491523819f299
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 36dc50aa66df932703e50a5d2c57afb42871e5b1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185616"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933090"
 ---
 # <a name="migrate-from-mcafee---phase-2-set-up-microsoft-defender-for-endpoint"></a>Migrar desde McAfee- Fase 2: Configurar Microsoft Defender para endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "51185616"
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-|[![Fase 1: Preparar](images/phase-diagrams/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[Fase 1: Preparar](mcafee-to-microsoft-defender-prepare.md) |![Fase 2: Configurar](images/phase-diagrams/setup.png)<br/>Fase 2: Configurar |[![Fase 3: Incorporación](images/phase-diagrams/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[Fase 3: Incorporación](mcafee-to-microsoft-defender-onboard.md) |
+|[![Fase 1: Preparación](images/phase-diagrams/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[Fase 1: Preparación](mcafee-to-microsoft-defender-prepare.md) |![Fase 2: Configuración](images/phase-diagrams/setup.png)<br/>Fase 2: Configuración |[![Fase 3: Incorporación](images/phase-diagrams/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[Fase 3: Incorporación](mcafee-to-microsoft-defender-onboard.md) |
 |--|--|--|
 ||*¡Estás aquí!* | |
 
@@ -86,7 +86,7 @@ La clave del Registro [DisableAntiSpyware](https://docs.microsoft.com/windows-ha
 > El siguiente procedimiento solo se aplica a los puntos de conexión o dispositivos que ejecutan las siguientes versiones de Windows:
 > - Windows Server 2019
 > - Windows Server, versión 1803 (modo de solo núcleo)
-> - Windows Server 2016
+> - Windows Server 2016
 
 1. Como administrador local en el punto de conexión o dispositivo, abra Windows PowerShell.
 

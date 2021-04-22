@@ -1,7 +1,7 @@
 ---
-title: Conector de Atp Flow de Microsoft Defender
+title: Conector de Microsoft Defender para endpoint flow
 ms.reviewer: ''
-description: Use el conector de flujo de ATP de Microsoft Defender para automatizar la seguridad y crear un flujo que se desencadenará cada vez que se produzca una nueva alerta en el inquilino.
+description: Use El conector de Microsoft Defender para endpoint flow para automatizar la seguridad y crear un flujo que se desencadenará cada vez que se produzca una nueva alerta en el espacio empresarial.
 keywords: flow, api admitidas, api, flujo de Microsoft, consulta, automatización
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6fd210ddfb8e3ab6e4f1f4ffc0635c8b813e3a07
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 33a7c7b1907ac761dfdde43a70bfb8f515235150
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163392"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929304"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (anteriormente Microsoft Flow) y Azure Functions
 
