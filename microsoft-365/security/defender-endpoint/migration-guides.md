@@ -1,6 +1,6 @@
 ---
 title: Guías de migración para cambiar a Microsoft Defender para endpoint
-description: Obtenga información sobre cómo cambiar de una solución de protección contra amenazas que no sea de Microsoft a Microsoft Defender para endpoint
+description: Obtenga información sobre cómo cambiar de una solución que no sea de Microsoft 365 Defender a Microsoft Defender para endpoint
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 09/24/2020
 ms.technology: mde
-ms.openlocfilehash: c191e2006f42eda215508ba961dcbeb1ea282078
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: f834ab371b9d860c451c89bb1a4e7d64bdd6ec1f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218633"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934446"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>Cambiar a Microsoft Defender para endpoint y Antivirus de Microsoft Defender
 
@@ -36,14 +36,14 @@ ms.locfileid: "51218633"
 
 ## <a name="migration-guides"></a>Guías de migración
 
-Si está considerando cambiar de una solución de protección contra amenazas que no sea de Microsoft a Microsoft Defender para Endpoint con Microsoft Defender Antivirus, consulte nuestra guía de migración. Seleccione el escenario que mejor representa dónde se encuentra en el proceso de implementación y vea las instrucciones.
+Si está considerando cambiar de una solución que no sea de Microsoft 365 Defender a Microsoft Defender para Endpoint con Microsoft Defender Antivirus, consulte nuestra guía de migración. Seleccione el escenario que mejor representa dónde se encuentra en el proceso de implementación y vea las instrucciones.
 
 |Escenario |Instrucciones |
 |:--|:--|
 |Todavía no tiene una solución de protección de puntos de conexión y desea saber más sobre cómo funciona Microsoft Defender para Endpoint & Antivirus de Microsoft Defender.  |[Laboratorio de evaluación de Microsoft Defender para puntos de conexión](evaluation-lab.md)   |
 |Tiene Microsoft Defender para Endpoint & Antivirus de Microsoft Defender y necesita ayuda para configurar y configurar todo.  |[Guía de implementación de Microsoft Defender para puntos de conexión](deployment-phases.md)  |
-|Está planeando migrar de McAfee Endpoint Security (McAfee) a Microsoft Defender para Endpoint & Antivirus de Microsoft Defender. |[Cambiar de McAfee a Microsoft Defender para endpoint](mcafee-to-microsoft-defender-migration.md) |
-|Está planeando migrar de Symantec Endpoint Protection (Symantec) a Microsoft Defender para Endpoint & Antivirus de Microsoft Defender. |[Cambiar de Symantec a Microsoft Defender para endpoint](symantec-to-microsoft-defender-endpoint-migration.md) |
+|Está planeando migrar de McAfee Endpoint Security (McAfee) a Microsoft Defender para Endpoint & Antivirus de Microsoft Defender. |[Cambiar de McAfee a Microsoft Defender para punto de conexión](mcafee-to-microsoft-defender-migration.md) |
+|Está planeando migrar de Symantec Endpoint Protection (Symantec) a Microsoft Defender para Endpoint & Antivirus de Microsoft Defender. |[Cambiar de Symantec a Microsoft Defender para punto de conexión](symantec-to-microsoft-defender-endpoint-migration.md) |
 |Está planeando migrar de una solución de protección de puntos de conexión que no sea de Microsoft (que no sea McAfee o Symantec) a Microsoft Defender para Endpoint & Antivirus de Microsoft Defender. |[Cambiar a Microsoft Defender para endpoint](switch-to-microsoft-defender-migration.md)   |
 |Has migrado a Microsoft Defender para Endpoint & Antivirus de Microsoft Defender y necesitas ayuda con los siguientes pasos, como configurar características adicionales o ajustar la configuración de seguridad. | [Administrar Microsoft Defender para endpoint, posterior a la migración](manage-atp-post-migration.md) |
 
@@ -52,7 +52,7 @@ Si está considerando cambiar de una solución de protección contra amenazas qu
 
 Háganos saber lo que piensa. Envíe sus comentarios en la parte inferior de la página. Tomaremos en cuenta sus comentarios a medida que sigamos mejorando y agregando a nuestra guía de migración.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection)
 - [Microsoft Defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)

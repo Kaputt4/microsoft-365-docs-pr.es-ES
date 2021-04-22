@@ -1,7 +1,7 @@
 ---
 title: Incorporación de dispositivos al servicio de Microsoft Defender para endpoints
 description: Incorpora dispositivos, servidores, dispositivos que no son de Windows y aprende a ejecutar una prueba de detección.
-keywords: incorporación, Microsoft Defender para la incorporación de puntos de conexión, incorporación de windows atp, sccm, directiva de grupo, mdm, script local, prueba de detección
+keywords: incorporación, incorporación de Microsoft Defender para endpoint, sccm, directiva de grupo, mdm, script local, prueba de detección
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4aa3e30f34e7d9dc362cc0bbb277aaee5834b4fe
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 05cc5770df5bb05687bb8be69ad89a7abd6875ed
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861380"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933558"
 ---
 # <a name="onboard-devices-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de dispositivos al servicio de Microsoft Defender para endpoints
 

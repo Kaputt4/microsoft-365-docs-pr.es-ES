@@ -1,7 +1,7 @@
 ---
 title: Puntuación de seguridad de Microsoft para dispositivos
 description: La puntuación de los dispositivos muestra el estado de configuración de seguridad colectiva de los dispositivos en todos los controles de aplicación, sistema operativo, red, cuentas y seguridad.
-keywords: Puntuación segura de Microsoft para dispositivos, mdatp Microsoft Secure Score para dispositivos, puntuación segura, puntuación de configuración, administración de amenazas y vulnerabilidades, controles de seguridad, oportunidades de mejora, puntuación de configuración de seguridad con el tiempo, posición de seguridad, línea base
+keywords: Puntuación segura de Microsoft para dispositivos, Puntuación segura de Microsoft Defender para dispositivos, puntuación segura, puntuación de configuración, administración de amenazas y vulnerabilidades, controles de seguridad, oportunidades de mejora, puntuación de configuración de seguridad con el tiempo, posición de seguridad, línea base
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fcf33b309045b9ca763b0d3cabc44fb13505ee0b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: f2c799d477c400482c16b09b4d8a5cdc01106dfa
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500056"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934086"
 ---
 # <a name="microsoft-secure-score-for-devices"></a>Puntuación de seguridad de Microsoft para dispositivos
 

@@ -1,7 +1,7 @@
 ---
 title: Plan for end-of-support software and software versions
 description: Descubra y planee versiones de software y software que ya no son compatibles y no recibirán actualizaciones de seguridad.
-keywords: administración de amenazas y vulnerabilidades, recomendación de seguridad mdatp tvm, recomendación de ciberseguridad, recomendación de seguridad que se puede actuar
+keywords: administración de amenazas y vulnerabilidades, recomendación de seguridad de Microsoft Defender para endpoint tvm, recomendación de ciberseguridad, recomendación de seguridad que se puede actuar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 29adf8a542d97a981a07dac167343f3774aa5af4
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 8e8fc228b8856df03b580e748bf00efc8d4333c3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500154"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934134"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>Plan for end-of-support software and software versions with threat and vulnerability management
 

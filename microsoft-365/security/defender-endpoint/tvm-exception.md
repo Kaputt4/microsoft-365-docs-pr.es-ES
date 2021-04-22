@@ -1,7 +1,7 @@
 ---
 title: 'Crear y ver excepciones para recomendaciones de seguridad: administración de amenazas y vulnerabilidades'
 description: Crear y supervisar excepciones para recomendaciones de seguridad en la administración de amenazas y vulnerabilidades.
-keywords: microsoft Defender para la corrección de endpoint tvm, mdatp tvm, administración de amenazas y vulnerabilidades, administración de vulnerabilidades de & amenazas, corrección de la administración de vulnerabilidades de &, intune de corrección de tvm, sccm de corrección de tvm
+keywords: Microsoft Defender para la corrección de endpoint tvm, Microsoft Defender para Endpoint tvm, administración de amenazas y vulnerabilidades, administración de vulnerabilidades de & amenazas, corrección de la administración de vulnerabilidades de &, intune de corrección de tvm, sccm de corrección de tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4f37300a742ab8cac32e95863cb706f1fd5f5d66
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 1af8e5ec9d3aef560c739de5212e8118cf89cd7a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689418"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933750"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Crear y ver excepciones para recomendaciones de seguridad: administración de amenazas y vulnerabilidades
 

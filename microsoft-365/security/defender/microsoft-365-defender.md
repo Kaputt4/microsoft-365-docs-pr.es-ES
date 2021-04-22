@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender
 description: Microsoft 365 Defender es una solución de protección contra amenazas coordinada diseñada para proteger dispositivos, identidad, datos y aplicaciones
-keywords: introducción a Protección contra amenazas de Microsoft, ciberseguridad, amenazas persistentes avanzadas, seguridad empresarial, dispositivos, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
+keywords: introducción a MMicrosoft 365 Defender, ciberseguridad, amenazas persistentes avanzadas, seguridad empresarial, dispositivos, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 86bc6ef03438b637f62cf0e2a46e418dbea7a3c1
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 32defdf459ec65ba0fd268a5a7c84851e9014efa
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650283"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934050"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -98,5 +98,5 @@ Se deben cumplir los requisitos de licencias de Microsoft 365 Defender para pode
 - [Activar Microsoft 365 Defender](m365d-enable.md)
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 - [Implementar capacidades de protección contra amenazas en Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection)

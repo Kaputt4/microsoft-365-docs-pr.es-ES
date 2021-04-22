@@ -1,7 +1,7 @@
 ---
 title: Usar reglas de reducción de superficie de ataque para evitar infecciones de malware
 description: Las reglas de reducción de superficie de ataque pueden ayudar a evitar que las vulnerabilidades utilicen aplicaciones y scripts para infectar dispositivos con malware.
-keywords: Reglas de reducción de superficie de ataque, asr, hips, sistema de prevención de intrusiones de host, reglas de protección, antiexploit, exploit, prevención de infecciones, Microsoft Defender para endpoint, ATP de Microsoft Defender
+keywords: Reglas de reducción de superficie de ataque, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 8790d959dc41e3edea684c66e556a2ec67f85ae1
-ms.sourcegitcommit: 0fe5989b7ee2f7ae0181f2781e31db7f58689441
+ms.openlocfilehash: 98f04a9aa34fda78c7caba2f6cb71c135428784f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697532"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933990"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usar reglas de reducción de superficie de ataque para evitar infecciones de malware
 
@@ -135,7 +135,7 @@ Puedes revisar el registro de eventos de Windows para ver los eventos generados 
 2. Escribe las palabras, *Visor de eventos*, en el menú Inicio para abrir el Visor de eventos de Windows.
 3. En **Acciones,** seleccione **Importar vista personalizada...**.
 4. Seleccione el archivo *cfa-events.xml* desde donde se extrajo. Como alternativa, [copie el XML directamente](event-views.md).
-5. Elija **Aceptar**.
+5. Seleccione **Aceptar**.
 
 Puede crear una vista personalizada que filtra los eventos para mostrar solo los siguientes eventos, todos ellos relacionados con el acceso controlado a carpetas:
 
@@ -464,7 +464,7 @@ Nombre de Configuration Manager: `Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction-faq.md)
 - [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)

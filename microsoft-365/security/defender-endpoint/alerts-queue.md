@@ -1,6 +1,6 @@
 ---
-title: Ver y organizar la cola de alertas de ATP de Microsoft Defender
-description: Obtenga información sobre cómo funcionan las colas de alertas de ATP de Microsoft Defender y cómo ordenar y filtrar listas de alertas.
+title: Ver y organizar la cola de Alertas de punto de conexión de Microsoft Defender
+description: Obtenga información sobre cómo funcionan las colas de alertas de Microsoft Defender para puntos de conexión y cómo ordenar y filtrar listas de alertas.
 keywords: alertas, colas, cola de alertas, ordenar, ordenar, filtrar, administrar alertas, nuevas, en curso, resueltas, más recientes, tiempo en cola, gravedad, período de tiempo, alertas de expertos en amenazas de Microsoft
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 03/27/2020
 ms.technology: mde
-ms.openlocfilehash: e1c85db5afac70ec4f2520eed55dcc4f3773fd03
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 48a3ff8dba5bccd62d7d43b295c136a814056a15
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075968"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934338"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-alerts-queue"></a>Ver y organizar la cola de Alertas de punto de conexión de Microsoft Defender
 
@@ -135,7 +135,7 @@ Seleccione el origen que desencadenó la detección de alertas. Los participante
 | TI personalizada                         | CustomerTI                 |
 | EDR                               | WindowsDefenderAtp         |
 | Microsoft 365 Defender            | MTP                        |
-| Microsoft Defender para Office 365 | OfficeATP                  |
+| Microsoft Defender para Office 365 | OfficeATP                  |
 | Expertos en amenazas de Microsoft          | ThreatExperts              |
 | SmartScreen                       | WindowsDefenderSmartScreen |
 

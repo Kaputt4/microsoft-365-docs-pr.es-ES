@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 1b8454107b6a2737f1236a066c3a24a2b9c776cb
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: a8b7268e89470a85a34015967b69abb1818fe64f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222662"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933846"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Revisar eventos y errores con el Visor de eventos
 
@@ -59,7 +59,7 @@ Por ejemplo, si los dispositivos no aparecen en la lista Dispositivos, es posibl
 <th>Identificador de evento</th>
 <th>Message</th>
 <th>Descripción</th>
-<th>Acción</th>
+<th>Action</th>
 </tr>
 <tr>
 <td>1</td>
@@ -301,13 +301,13 @@ Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 d
 </tr>
 <tr>
 <td>42</td>
-<td>El componente WDATP de Microsoft Defender para extremo no pudo realizar la acción. Componente: %1, Acción: %2, Tipo de excepción: %3, Mensaje de excepción: %4</td>
+<td>El componente de Microsoft Defender para extremo no pudo realizar la acción. Componente: %1, Acción: %2, Tipo de excepción: %3, Mensaje de excepción: %4</td>
 <td>Error interno. No se pudo iniciar el servicio.</td>
 <td>Si este error persiste, póngase en contacto con el soporte técnico.</td>
 </tr>
 <tr>
 <td>43</td>
-<td>El componente WDATP de Microsoft Defender para extremo no pudo realizar la acción. Componente: %1, Acción: %2, Tipo de excepción: %3, Error de excepción: %4, Mensaje de excepción: %5</td>
+<td>El componente de Microsoft Defender para extremo no pudo realizar la acción. Componente: %1, Acción: %2, Tipo de excepción: %3, Error de excepción: %4, Mensaje de excepción: %5</td>
 <td>Error interno. No se pudo iniciar el servicio.</td>
 <td>Si este error persiste, póngase en contacto con el soporte técnico.</td>
 </tr>
@@ -482,13 +482,13 @@ Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 d
 </tr>
 <tr>
    <td>81</td>
-   <td>No se pudo crear Windows Defender registrador automático etw de protección contra amenazas avanzada. Código de error: %1</td>
+   <td>No se pudo crear el registrador automático de ETW de Microsoft Defender para endpoint. Código de error: %1</td>
    <td>No se pudo crear la sesión etw.</td>
    <td>Reinicie el dispositivo. Si este error persiste, póngase en contacto con el soporte técnico.</td>
 </tr>
 <tr>
    <td>82</td>
-   <td>No se pudo quitar Windows Defender registrador automático etw de protección contra amenazas avanzada. Código de error: %1</td>
+   <td>No se pudo quitar el registrador automático de ETW de Microsoft Defender para extremo. Código de error: %1</td>
    <td>No se pudo eliminar la sesión etw.</td>
    <td>Póngase en contacto con el soporte técnico.</td>
 </tr>
@@ -500,7 +500,7 @@ Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 d
 </tr>
 <tr>
    <td>85</td>
-   <td>No se pudo desencadenar Windows Defender ejecutable de protección contra amenazas avanzada. Código de error: %1</td>
+   <td>No se pudo desencadenar el ejecutable de Microsoft Defender para endpoint. Código de error: %1</td>
    <td>Error al ejecutar el archivo ejecutable SenseIR.</td>
    <td>Reinicie el dispositivo. Si este error persiste, póngase en contacto con el soporte técnico.</td>
 </tr>
@@ -554,19 +554,19 @@ Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 d
 </tr>
 <tr>
    <td>94</td>
-   <td>Windows Defender ejecutable de protección contra amenazas avanzada</td>
+   <td>Se ha iniciado el ejecutable de Microsoft Defender para endpoint</td>
    <td>Se ha iniciado el archivo ejecutable senseCE.</td>
    <td>Notificación de funcionamiento normal; no se requiere ninguna acción.</td>
 </tr>
 <tr>
    <td>95</td>
-   <td>Windows Defender ejecutable de protección contra amenazas avanzada ha finalizado</td>
+   <td>El ejecutable de Microsoft Defender para endpoint ha finalizado</td>
    <td>El archivo ejecutable senseCE ha finalizado.</td>
    <td>Notificación de funcionamiento normal; no se requiere ninguna acción.</td>
 </tr>
 <tr>
    <td>96</td>
-   <td>Windows Defender la protección contra amenazas avanzada init ha llamado. Código de resultado: %2</td>
+   <td>Microsoft Defender para Endpoint Init ha llamado. Código de resultado: %2</td>
    <td>El ejecutable senseCE ha llamado inicialización de MCE.</td>
    <td>Notificación de funcionamiento normal; no se requiere ninguna acción.</td>
 </tr>
@@ -590,19 +590,19 @@ Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 d
 </tr>
 <tr>
    <td>100</td>
-   <td>Windows Defender ejecutable de Protección contra amenazas avanzada no se pudo iniciar. Código de error: %1</td>
+   <td>El ejecutable de Microsoft Defender para extremo no se pudo iniciar. Código de error: %1</td>
    <td>El archivo ejecutable senseCE no se ha podido iniciar.</td>
    <td>Reinicie el dispositivo. Si este error persiste, póngase en contacto con el soporte técnico.</td>
 </tr>
 <tr>
    <td>102</td>
-   <td>Windows Defender se ha iniciado el ejecutable de detección y respuesta de red de protección contra amenazas avanzada</td>
+   <td>Se ha iniciado el ejecutable de Microsoft Defender para detección y respuesta de red de extremo</td>
    <td>Se ha iniciado el archivo ejecutable SenseNdr.</td>
    <td>Notificación de funcionamiento normal; no se requiere ninguna acción.</td>
 </tr>
 <tr>
    <td>103</td>
-   <td>Windows Defender ejecutable de detección y respuesta de red de protección contra amenazas avanzada ha finalizado</td>
+   <td>El ejecutable de Microsoft Defender para detección y respuesta de la red de extremo ha finalizado</td>
    <td>El archivo ejecutable SenseNdr ha finalizado.</td>
    <td>Notificación de funcionamiento normal; no se requiere ninguna acción.</td>
 </tr>
@@ -612,6 +612,6 @@ Consulta <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 d
 >¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Incorporación de dispositivos Windows 10](configure-endpoints.md)
+- [Incorporar dispositivos Windows 10 mediante la directiva de grupo](configure-endpoints.md)
 - [Configurar el proxy de dispositivo y la configuración de conectividad a Internet](configure-proxy-internet.md)
-- [Solucionar problemas de Microsoft Defender para el extremo](troubleshoot-onboarding.md)
+- [Solucionar problemas de Microsoft Defender para punto de conexión](troubleshoot-onboarding.md)

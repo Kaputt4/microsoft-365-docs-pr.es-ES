@@ -1,6 +1,6 @@
 ---
-title: API de respuesta de Protección contra amenazas avanzada admitidas de Microsoft Defender
-description: Obtenga información sobre las llamadas de la API de protección contra amenazas avanzada de Microsoft Defender relacionadas con la respuesta específica.
+title: Api de respuesta admitidas de Microsoft Defender para puntos de conexión
+description: Obtenga información sobre las llamadas específicas de Microsoft Defender para api de extremo relacionadas con la respuesta.
 keywords: apis de respuesta, api de gráfico, api admitidas, actor, alertas, dispositivo, usuario, dominio, ip, archivo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: a290c431f6d81b23896ddf77e7c7a47de378de22
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 36ed1f624fda7ae413ffbbf807925cf00e0a23ca
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185556"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933774"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-query-apis"></a>Api de consulta de extremo admitidas de Microsoft Defender 
 
@@ -44,7 +44,7 @@ Unisolate device | Quita un dispositivo del aislamiento.
 Restringir la ejecución de código | Ejecute esta API para contener un ataque deteniendo procesos malintencionados. También puedes bloquear un dispositivo e impedir que se ejecuten los intentos posteriores de programas potencialmente malintencionados.
 Ejecución de código sin restricto | Ejecute esto para revertir la restricción de la directiva de aplicaciones después de comprobar que el dispositivo en peligro se ha corregido.
 Ejecutar examen antivirus | Inicie de forma remota un examen antivirus para ayudar a identificar y corregir malware que podría estar presente en un dispositivo en peligro.
-Detener y poner en cuarentena el archivo |  Ejecute esta llamada para detener la ejecución de procesos, poner en cuarentena archivos y eliminar la persistencia, como las claves del Registro.
+Detener y poner en cuarentena un archivo |  Ejecute esta llamada para detener la ejecución de procesos, poner en cuarentena archivos y eliminar la persistencia, como las claves del Registro.
 Ejemplo de solicitud | Ejecute esta llamada para solicitar una muestra de un archivo desde un dispositivo específico. El archivo se recopilará desde el dispositivo y se cargará en un almacenamiento seguro.
 Bloquear archivo | Ejecute esta API para evitar la propagación posterior de un ataque en su organización mediante la prohibición de archivos potencialmente malintencionados o malware sospechoso. 
 Desbloquear archivo | Permitir que un archivo se ejecute en la organización con Antivirus de Microsoft Defender.

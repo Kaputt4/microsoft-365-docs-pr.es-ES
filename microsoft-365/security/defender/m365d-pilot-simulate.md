@@ -1,7 +1,7 @@
 ---
 title: Ejecutar las simulaciones de ataque de Microsoft 365 Defender
 description: Ejecuta simulaciones de ataque para el proyecto piloto de Microsoft 365 Defender para ver cómo se desarrolla y se corrige rápidamente.
-keywords: Simulación piloto de ataque de Protección contra amenazas de Microsoft, ejecución de simulación de ataque piloto de Protección contra amenazas de Microsoft, simulación de ataque en Microsoft Threat Protection, proyecto piloto de Microsoft Threat Protection, ciberseguridad, amenazas persistentes avanzadas, seguridad empresarial, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación y corrección automatizadas, búsqueda avanzada
+keywords: Simulación de ataque piloto de Microsoft 365 Defender, ejecutar simulación de ataque piloto de Microsoft 365 Defender, simular ataque en Microsoft 365 Defender, proyecto piloto de Microsoft 365 Defender, ciberseguridad, amenaza persistente avanzada, seguridad empresarial, dispositivos, identidad, usuarios, datos, aplicaciones, incidentes, investigación automatizada y corrección, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bb6472fdd52cdab0ab649fbb76b1ff6a683d6c80
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 767a7ea4c4c7604d1d4b227f08e4ca32c62737c5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51076291"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934482"
 ---
 # <a name="run-your-microsoft-365-defender-attack-simulations"></a>Ejecutar las simulaciones de ataque de Microsoft 365 Defender
 
@@ -437,7 +437,7 @@ Para obtener más información sobre la búsqueda avanzada, las siguientes difus
 > [!NOTE]
 > Esté preparado con su propia cuenta de GitHub para ejecutar las consultas de búsqueda en el entorno del laboratorio de prueba piloto.
 
-|Título|Descripción|Descargar MP4|Ver en YouTube|Archivo CSL que se usará|
+|Title|Descripción|Descargar MP4|Ver en YouTube|Archivo CSL que se usará|
 |---|---|---|---|---|
 |Episodio 1: Conceptos básicos de KQL|Cubriremos los conceptos básicos de las capacidades avanzadas de búsqueda en Microsoft 365 Defender. Obtenga información sobre los datos de búsqueda avanzados disponibles y la sintaxis y los operadores básicos de KQL.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Episodio 1: Archivo CSL en Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
 |Episodio 2: Combinaciones|Seguiremos aprendiendo sobre los datos en la búsqueda avanzada y cómo unir tablas. Obtenga información sobre las combinaciones internas, externas, únicas y semi, y los matices de la combinación predeterminada de Kusto innerunique.|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[Episodio 2: Archivo CSL en Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|

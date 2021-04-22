@@ -1,7 +1,7 @@
 ---
-title: Solucionar problemas del servicio de extremo de Microsoft Defender
+title: Solucionar problemas de servicio de Microsoft Defender para punto de conexión
 description: Busque soluciones y soluciones alternativas a problemas conocidos, como errores de servidor al intentar obtener acceso al servicio.
-keywords: solucionar problemas de microsoft defender para el punto de conexión, solucionar problemas de Windows ATP, error de servidor, acceso denegado, credenciales no válidas, sin datos, portal de panel, permitir, visor de eventos
+keywords: solucionar problemas de Microsoft Defender para el extremo, error del servidor, acceso denegado, credenciales no válidas, sin datos, portal de panel, permitir, visor de eventos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 112f682836da37ddfb51c103282518ff74563727
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 81f1b4154de25f6186679adc5b1f24f78f302415
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186022"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933762"
 ---
 # <a name="troubleshoot-service-issues"></a>Solucionar problemas de servicio
 
@@ -80,7 +80,7 @@ No se admite el uso de comas como separador en números. Las regiones donde un n
 >¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troubleshoot-belowfoldlink)
 
 ## <a name="microsoft-defender-for-endpoint-tenant-was-automatically-created-in-europe"></a>El inquilino de Microsoft Defender para endpoint se creó automáticamente en Europa
-Cuando usa Azure Security Center para supervisar los servidores, se crea automáticamente un inquilino de Microsoft Defender para endpoint. Los datos de Microsoft Defender para endpoint se almacenan en Europa de forma predeterminada.
+Cuando usa Azure Defender para supervisar los servidores, se crea automáticamente un inquilino de Microsoft Defender para endpoint. Los datos de Microsoft Defender para endpoint se almacenan en Europa de forma predeterminada.
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Notas de la versión de api de Microsoft Defender para endpoint
 description: Notas de la versión de las actualizaciones realizadas en el conjunto de API de Microsoft Defender para endpoint.
-keywords: microsoft Defender para notas de la versión de la api de punto de conexión, mde, apis, api mdatp, actualizaciones, notas, versión
+keywords: Notas de la versión de la API de Microsoft Defender para Endpoint, mde, API, Microsoft Defender para la API de endpoint, actualizaciones, notas, versión
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e37841fa17a5998c431c6a76b878f20ef1b06d10
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 02fd995b04c1644e88b38fd0feebc2c80a3681ac
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51069843"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933630"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>Notas de la versión de api de Microsoft Defender para endpoint
 

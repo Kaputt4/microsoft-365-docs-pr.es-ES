@@ -1,7 +1,7 @@
 ---
 title: Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 description: Obtenga información sobre cómo controlar falsos positivos o falsos negativos en Microsoft Defender para endpoint.
-keywords: antivirus, excepción, exclusión, atp del defensor, falso positivo, falso negativo, archivo bloqueado, url bloqueada
+keywords: antivirus, excepción, exclusión, Microsoft Defender para endpoint, falso positivo, falso negativo, archivo bloqueado, url bloqueada
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: f2615cf5ec49c9df27472f04c367f30511e9c0cc
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 368de770f772dc75a366b2120c8824fda6a7ba11
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759875"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933594"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión
 
@@ -450,7 +450,7 @@ Si ha trabajado en todos los pasos de este artículo y todavía necesita ayuda, 
 
 3. En la **ventana Asistente de** soporte técnico, describa el problema y, a continuación, envíe el mensaje. Desde allí, puede abrir una solicitud de servicio.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Administrar Microsoft Defender para el punto de conexión](manage-atp-post-migration.md)
 

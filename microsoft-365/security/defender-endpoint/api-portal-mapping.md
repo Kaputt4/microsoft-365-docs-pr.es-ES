@@ -1,5 +1,5 @@
 ---
-title: Campos de la API de detecciones de ATP de Microsoft Defender
+title: Campos de la API de Microsoft Defender para detecciones de puntos de conexión
 description: Comprender cómo se asignan los campos de la API de detecciones a los valores del Centro de seguridad de Microsoft Defender
 keywords: detecciones, campos de detecciones, campos, api, campos, detecciones de extracción, api de reposo, solicitud, respuesta
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e304d731409c4cd0fac722d492b3fab5ed28fd35
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d6d2ad9abe88d0099b58dd2df486120082bb22c1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164886"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933642"
 ---
 # <a name="microsoft-defender-for-endpoint-detections-api-fields"></a>Campos de la API de Microsoft Defender para detecciones de puntos de conexión
 
@@ -105,4 +105,4 @@ Los números de campo coinciden con los números de las imágenes siguientes.
 - [Habilitar la integración de SIEM en Microsoft Defender para endpoint](enable-siem-integration.md)
 - [Configurar ArcSight para extraer Microsoft Defender para detecciones de puntos de conexión](configure-arcsight.md)
 - [Extraer Microsoft Defender para detecciones de puntos de conexión mediante la API de REST](pull-alerts-using-rest-api.md)
-- [Solucionar problemas de integración de herramientas SIEM](troubleshoot-siem.md)
+- [Solucionar problemas de integración de la herramienta SIEM](troubleshoot-siem.md)

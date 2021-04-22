@@ -1,6 +1,6 @@
 ---
 title: API de máquina fuera de la máquina
-description: Aprende a usar una API para salir de un dispositivo desde Windows Defender Protección contra amenazas avanzada (WDATP).
+description: Obtén información sobre cómo usar una API para salir de un dispositivo de Microsoft Defender para endpoint.
 keywords: api, api de gráfico, api admitidas, paquete de investigación de recopilación
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0b3fa5a5daba1aa09eef0f733c7439848ce66a2c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 03a1ef11224021703a6f33f82fa2c4f135a317a7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187346"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934182"
 ---
 # <a name="offboard-machine-api"></a>API de máquina fuera de la máquina
 
@@ -75,7 +75,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 Nombre | Tipo | Descripción
 :---|:---|:---
 Authorization | Cadena | Portador {token}. **Necesario**.
-Content-Type | string | application/json. **Necesario**.
+Content-Type | cadena | application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
 En el cuerpo de la solicitud, proporcione un objeto JSON con los siguientes parámetros:

@@ -1,6 +1,6 @@
 ---
 title: Revisar y administrar acciones de corrección en Microsoft Defender para Office 365
-keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
+keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -19,12 +19,12 @@ description: Obtenga información sobre las acciones de corrección en las capac
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: 61e9df45419cc73dae27b86dad47e1938183593d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ce6cfd920845f5a85dbc7d7d48cfefdd6209ec3a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205149"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933654"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Revisar y administrar acciones de corrección en Office 365
 
@@ -74,6 +74,6 @@ Estas acciones de corrección no se toman a menos que el equipo de operaciones d
 - [Usar el Explorador de amenazas](threat-explorer.md)
 - [Cómo notificar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta](air-report-false-positives-negatives.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Ver detalles y resultados de una investigación automatizada en Office 365](air-view-investigation-results.md)

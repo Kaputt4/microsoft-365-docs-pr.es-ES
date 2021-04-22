@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9e54fb5f2105f0a77c4b63e8d880135005c17168
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: a57cebd2cb7d35f968ed9ddfa4d9215eac2182d6
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862096"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934465"
 ---
 # <a name="overview-of-management-and-apis"></a>Introducción a la administración y las API 
 
@@ -41,7 +41,7 @@ Reconociendo que los entornos y estructuras de los clientes pueden variar, Defen
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>Incorporación de puntos de conexión y acceso al portal 
 
-La incorporación de dispositivos está totalmente integrada en Microsoft Endpoint Manager y Microsoft Intune para dispositivos cliente y Azure Security Center para dispositivos de servidor, lo que proporciona una experiencia completa de extremo a extremo de configuración, implementación y supervisión. Además, Microsoft Defender para endpoint admite la directiva de grupo y otras herramientas de terceros usadas para la administración de dispositivos.
+La incorporación de dispositivos está totalmente integrada en Microsoft Endpoint Manager y Microsoft Intune para dispositivos cliente y Azure Defender para dispositivos de servidor, lo que proporciona una experiencia completa de configuración, implementación y supervisión. Además, Microsoft Defender para endpoint admite la directiva de grupo y otras herramientas de terceros usadas para la administración de dispositivos.
 
 Defender for Endpoint proporciona un control preciso sobre lo que los usuarios con acceso al portal pueden ver y hacer a través de la flexibilidad del control de acceso basado en roles (RBAC). El modelo RBAC admite todos los sabores de la estructura de los equipos de seguridad:
 - Organizaciones distribuidas globalmente y equipos de seguridad

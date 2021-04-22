@@ -1,7 +1,7 @@
 ---
-title: Incorporación con Microsoft Endpoint Configuration Manager
+title: Incorporación mediante Microsoft Endpoint Configuration Manager
 description: Obtenga información sobre cómo incorporarse a Microsoft Defender para endpoint con Microsoft Endpoint Configuration Manager
-keywords: incorporación, configuración, implementación, implementación, administrador de configuración de puntos de conexión, mdatp, protección contra amenazas avanzada, creación de colecciones, respuesta de detección de puntos de conexión, protección de próxima generación, reducción de superficie de ataque, administrador de configuración de puntos de conexión de Microsoft
+keywords: incorporación, configuración, implementación, administrador de configuración de puntos de conexión, Microsoft Defender para endpoint, creación de colecciones, respuesta de detección de puntos de conexión, protección de próxima generación, reducción de superficie de ataque, administrador de configuración de puntos de conexión de Microsoft
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,14 +18,14 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 31c946ccad84aca3b2fc86c95655cea9e66e182f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 84273ce3e060eb86ee246a5cc6a8cae3cba743b5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186406"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934494"
 ---
-# <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Incorporación con Microsoft Endpoint Configuration Manager
+# <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Incorporación mediante Microsoft Endpoint Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -117,12 +117,12 @@ Después de completar esta tarea, ahora tienes una colección de dispositivos co
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>Paso 2: Configurar Microsoft Defender para las funcionalidades de punto de conexión 
 En esta sección se le guía en la configuración de las siguientes funcionalidades con Microsoft Endpoint Configuration Manager en dispositivos Windows:
 
-- [**Detección y respuesta de puntos de conexión.**](#endpoint-detection-and-response)
+- [**EDR**](#endpoint-detection-and-response)
 - [**Protección de última generación**](#next-generation-protection)
 - [**Reducción de la superficie expuesta a ataques**](#attack-surface-reduction)
 
 
-### <a name="endpoint-detection-and-response"></a>Detección y respuesta de puntos de conexión.
+### <a name="endpoint-detection-and-response"></a>EDR
 #### <a name="windows-10"></a>Windows 10
 Desde el Centro de seguridad de Microsoft Defender es posible descargar la directiva ".onboarding" que se puede usar para crear la directiva en System Center Configuration Manager e implementarla en dispositivos Windows 10.
 

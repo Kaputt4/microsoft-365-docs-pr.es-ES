@@ -1,7 +1,7 @@
 ---
 title: Incorporación de dispositivos que no son de Windows al servicio de Microsoft Defender para puntos de conexión
 description: Configure dispositivos que no son de Windows para que puedan enviar datos de sensores al servicio de Microsoft Defender para endpoints.
-keywords: incorporar dispositivos que no son windows, macos, linux, administración de dispositivos, configurar dispositivos de Windows ATP, configurar Microsoft Defender para dispositivos de punto de conexión
+keywords: incorporar dispositivos que no son de Windows, macos, linux, administración de dispositivos, configurar Microsoft Defender para dispositivos de punto de conexión
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c78779cd4a8a329864b6ac7e0debfc30ca0b3a56
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 1c10576b72793ab3833f2e9027e3814a449334ee
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893594"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933930"
 ---
 # <a name="onboard-non-windows-devices"></a>Incorporar dispositivos que no tienen Windows
 
@@ -48,7 +48,7 @@ Deberá conocer las versiones exactas de Linux distros y macOS que son compatibl
 Tendrás que seguir los siguientes pasos para incorporar dispositivos que no son windows:
 1. Seleccione el método de incorporación preferido:
 
-   - Para dispositivos macOS, puedes elegir incorporarlo a través de Microsoft Defender para Endpoint o a través de una solución de terceros. Para obtener más información, vea [Microsoft Defender for Endpoint for Mac](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).
+   - Para dispositivos macOS, puedes elegir incorporarlo a través de Microsoft Defender para Endpoint o a través de una solución de terceros. Para obtener más información, vea [Microsoft Defender for Endpoint on Mac](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac).
 
    - Para otros dispositivos que no son de Windows, elija Incorporar dispositivos que no son de Windows a **través de la integración de terceros.**   
     1. En el panel de navegación, seleccione **Socios de**  >  **interoperabilidad**. Asegúrese de que la solución de terceros aparece en la lista.

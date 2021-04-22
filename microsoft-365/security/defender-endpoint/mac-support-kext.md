@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas de extensión de kernel en Microsoft Defender para endpoint en macOS
 description: Solucionar problemas relacionados con la extensión del kernel en Microsoft Defender para endpoint en macOS.
-keywords: microsoft, defender, atp, mac, kernel, extension
+keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, kernel, extension
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 32a4819f7a607c69b4dbf45b3284b2f4ea66ffc4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9dc3ee17d79972b5d36c5fff58fbe4cc486027bd
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689658"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934278"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de extensión de kernel en Microsoft Defender para endpoint en macOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "51689658"
 
 **Se aplica a:**
 
-- [Microsoft Defender para endpoint en macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

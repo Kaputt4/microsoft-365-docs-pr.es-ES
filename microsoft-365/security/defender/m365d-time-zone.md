@@ -1,7 +1,7 @@
 ---
 title: Establecer la zona horaria para las características de Microsoft 365 Defender
 description: Obtenga información sobre cómo elegir la zona horaria para la información de fecha y hora asociada a los incidentes, la investigación y la corrección automatizada y la búsqueda avanzada.
-keywords: zona horaria, fecha, hora, MTP, Protección contra amenazas de Microsoft, M365, seguridad, incidentes, investigación y respuesta automatizada, AIR, búsqueda avanzada
+keywords: zona horaria, fecha, hora, Microsoft 365 Defender, M365, seguridad, incidentes, investigación automatizada y respuesta, AIR, búsqueda avanzada
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: dba87ca610a665baab6d3846460c4683fdc25190
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a4ad27463f5f14c72096d99c9edc431831436d39
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072744"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934422"
 ---
 # <a name="set-the-time-zone-for-microsoft-365-defender"></a>Establecer la zona horaria de Microsoft 365 Defender
 

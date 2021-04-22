@@ -1,7 +1,7 @@
 ---
 title: Usar investigaciones automatizadas para investigar y corregir amenazas
 description: Comprender el flujo de investigación automatizado en Microsoft Defender para endpoint.
-keywords: automatizado, investigación, detección, atp de defensa
+keywords: automated, investigation, detection, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 7143a360fb7093f94c6f66373587e1c895dd3213
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5ea869d4016cc794b3046a664c1519f6b3250c67
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200310"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933978"
 ---
 # <a name="overview-of-automated-investigations"></a>Información general sobre las investigaciones automatizadas
 
@@ -96,7 +96,7 @@ Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 - [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 - [Configurar las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint](configure-automated-investigations-remediation.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 - [Protección de LA PUA](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Investigación y respuesta automatizadas en Microsoft Defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)

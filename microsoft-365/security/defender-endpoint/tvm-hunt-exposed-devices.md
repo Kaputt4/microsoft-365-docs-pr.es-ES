@@ -1,7 +1,7 @@
 ---
 title: Buscar dispositivos expuestos
 description: Obtenga información sobre cómo se puede usar la administración de amenazas y vulnerabilidades para ayudar a los administradores de seguridad, los administradores de TI y SecOps a colaborar.
-keywords: escenarios mdatp-tvm, mdatp, tvm, escenarios de tvm, reducir la exposición & vulnerabilidad & amenazas, reducir la amenaza y vulnerabilidad, mejorar la configuración de seguridad, aumentar la puntuación segura de Microsoft para dispositivos, aumentar la vulnerabilidad & Puntuación segura de Microsoft para dispositivos, Puntuación segura de Microsoft para dispositivos, puntuación de exposición, controles de seguridad
+keywords: Escenarios de Microsoft Defender para Endpoint-tvm, Microsoft Defender para endpoint, tvm, escenarios de tvm, reducir la exposición & vulnerabilidad & amenazas, reducir la amenaza y vulnerabilidad, mejorar la configuración de seguridad, aumentar la puntuación segura de Microsoft para dispositivos, aumentar la vulnerabilidad & Microsoft Secure Score para dispositivos, Puntuación segura de Microsoft para dispositivos, puntuación de exposición, controles de seguridad
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b8e3a80e73d9847837ae0a1542e7d16ee8ae0f29
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a9a8ebcc89c3009cd93fbb42f2a74bbb9ffcc31b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500088"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934098"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Búsqueda de dispositivos expuestos: administración de amenazas y vulnerabilidades
 

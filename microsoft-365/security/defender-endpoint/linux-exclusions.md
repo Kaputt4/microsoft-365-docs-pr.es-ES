@@ -1,7 +1,7 @@
 ---
 title: Configurar y validar exclusiones para Microsoft Defender para Endpoint en Linux
 description: Proporcionar y validar exclusiones para Microsoft Defender para Endpoint en Linux. Las exclusiones se pueden establecer para archivos, carpetas y procesos.
-keywords: microsoft, defender, atp, linux, exclusiones, exámenes, antivirus
+keywords: microsoft, defender, Microsoft Defender para endpoint, linux, exclusiones, exámenes, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56fe152532b77f7f04c9edd52998fea83493adfe
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 8e861055067a55630da458e87b7376a607dc69c4
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903945"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934302"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Configurar y validar exclusiones para Microsoft Defender para Endpoint en Linux
 
@@ -38,18 +38,18 @@ ms.locfileid: "51903945"
 En este artículo se proporciona información sobre cómo definir exclusiones que se aplican a los exámenes a petición y la protección y supervisión en tiempo real.
 
 > [!IMPORTANT]
-> Las exclusiones descritas en este artículo no se aplican a otras funcionalidades de Defender for Endpoint for Linux, incluida la detección y respuesta de puntos de conexión (EDR). Los archivos que se excluyen mediante los métodos descritos en este artículo aún pueden desencadenar alertas de EDR y otras detecciones.
+> Las exclusiones descritas en este artículo no se aplican a otras capacidades de Defender for Endpoint on Linux, incluida la detección y respuesta de puntos de conexión (EDR). Los archivos que se excluyen mediante los métodos descritos en este artículo aún pueden desencadenar alertas de EDR y otras detecciones.
 
-Puede excluir determinados archivos, carpetas, procesos y archivos abiertos por procesos de los exámenes de Defender for Endpoint for Linux.
+Puede excluir determinados archivos, carpetas, procesos y archivos abiertos por procesos de los exámenes de Defender para endpoint en Linux.
 
-Las exclusiones pueden ser útiles para evitar detecciones incorrectas en archivos o software que son únicos o personalizados para su organización. También pueden ser útiles para mitigar los problemas de rendimiento causados por Defender para Endpoint para Linux.
+Las exclusiones pueden ser útiles para evitar detecciones incorrectas en archivos o software que son únicos o personalizados para su organización. También pueden ser útiles para mitigar los problemas de rendimiento causados por Defender para Endpoint en Linux.
 
 > [!WARNING]
-> La definición de exclusiones reduce la protección que ofrece Defender para Endpoint para Linux. Siempre debe evaluar los riesgos asociados con la implementación de exclusiones y solo debe excluir los archivos que confía en que no son malintencionados.
+> La definición de exclusiones reduce la protección que ofrece Defender para Endpoint en Linux. Siempre debe evaluar los riesgos asociados con la implementación de exclusiones y solo debe excluir los archivos que confía en que no son malintencionados.
 
 ## <a name="supported-exclusion-types"></a>Tipos de exclusión admitidos
 
-En la tabla siguiente se muestran los tipos de exclusión admitidos por Defender para Endpoint para Linux.
+En la tabla siguiente se muestran los tipos de exclusión admitidos por Defender para Endpoint en Linux.
 
 Exclusión | Definición | Ejemplos
 ---|---|---
@@ -72,7 +72,7 @@ Carácter comodín | Descripción | Ejemplo | Coincidencias | No coincide
 
 ### <a name="from-the-management-console"></a>Desde la consola de administración
 
-Para obtener más información sobre cómo configurar exclusiones de Puppet, Ansible u otra consola de administración, consulte [Set preferences for Defender for Endpoint for Linux](linux-preferences.md).
+Para obtener más información sobre cómo configurar exclusiones de Puppet, Ansible u otra consola de administración, consulte [Set preferences for Defender for Endpoint on Linux](linux-preferences.md).
 
 ### <a name="from-the-command-line"></a>Desde la línea de comandos
 
@@ -152,7 +152,7 @@ En el siguiente fragmento de código Bash, reemplace `test.txt` por un archivo q
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-Si Defender para Endpoint para Linux informa de malware, la regla no funciona. Si no hay ningún informe de malware y existe el archivo descargado, la exclusión funciona. Puede abrir el archivo para confirmar que el contenido es el mismo que el descrito en el sitio web del archivo [de prueba EICAR](http://2016.eicar.org/86-0-Intended-use.html).
+Si Defender para Endpoint en Linux informa de malware, la regla no funciona. Si no hay ningún informe de malware y existe el archivo descargado, la exclusión funciona. Puede abrir el archivo para confirmar que el contenido es el mismo que el descrito en el sitio web del archivo [de prueba EICAR](http://2016.eicar.org/86-0-Intended-use.html).
 
 Si no tiene acceso a Internet, puede crear su propio archivo de prueba EICAR. Escriba la cadena EICAR en un nuevo archivo de texto con el siguiente comando Bash:
 

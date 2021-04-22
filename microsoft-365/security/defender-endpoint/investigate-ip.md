@@ -1,7 +1,7 @@
 ---
 title: Investigar una dirección IP asociada a una alerta
 description: Use las opciones de investigación para examinar posibles comunicaciones entre dispositivos y direcciones IP externas.
-keywords: investigar, investigar, investigar, dirección IP, alerta, atp de Microsoft Defender, IP externa
+keywords: investigar, investigar, dirección IP, alerta, Microsoft Defender para endpoint, IP externa
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 003abd854e34bb5a9a05f675313ba6c4f6ce1d71
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: cb95deb890b52f0f5fde26a3a193181713b8ae5f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186046"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933834"
 ---
 # <a name="investigate-an-ip-address-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Investigar una dirección IP asociada a una alerta de Microsoft Defender para punto de conexión
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender para endpoint en el Centro de seguridad de Microsoft 365
 description: Obtenga información sobre los cambios del Centro de seguridad de Microsoft Defender al Centro de seguridad de Microsoft 365
-keywords: Introducción al Centro de seguridad de Microsoft 365, OATP, MDATP, MDO, MDE, panel único de cristal, portal convergente, portal de seguridad, portal de seguridad, portal de seguridad de defender
+keywords: Introducción al Centro de seguridad de Microsoft 365, Microsoft Defender para Office 365, Microsoft Defender para endpoint, MDO, MDE, panel único de cristal, portal convergente, portal de seguridad, portal de seguridad, portal de seguridad de defender
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: edf0baa369142f6a0aafc86794a47ab0be6e345a
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: c8e38e3f22b48b58ea7fb1a4a6f000c80c170675
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760055"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934410"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft Defender para endpoint en el Centro de seguridad de Microsoft 365
 
@@ -92,7 +92,7 @@ Esta tabla es una referencia rápida de los cambios entre el Centro de seguridad
 |---------|---------|
 | Informes  | Consulta informes de puntos de conexión y correo & colaboración, incluida la protección contra amenazas, el estado y cumplimiento del dispositivo y los dispositivos vulnerables. |
 | Salud  |  Actualmente se vincula a la página "Estado del servicio" en el Centro de administración [de Microsoft 365](https://admin.microsoft.com/). |
-| Configuración |  Administra la configuración del Centro de seguridad de Microsoft 365, Microsoft 365 Defender, Endpoints, Email & colaboración, Identidades y detección de dispositivos.   |
+| Configuraciones |  Administra la configuración del Centro de seguridad de Microsoft 365, Microsoft 365 Defender, Endpoints, Email & colaboración, Identidades y detección de dispositivos.   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Capacidades y navegación de seguridad de Microsoft 365
 

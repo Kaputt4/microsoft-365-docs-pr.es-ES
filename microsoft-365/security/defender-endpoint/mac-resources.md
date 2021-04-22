@@ -1,7 +1,7 @@
 ---
-title: Recursos para Microsoft Defender para Endpoint para Mac
-description: Recursos para Microsoft Defender para Endpoint para Mac, como cómo desinstalarlo, cómo recopilar registros de diagnóstico, comandos cli y problemas conocidos con el producto.
-keywords: microsoft, defender, atp, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
+title: Recursos para Microsoft Defender para Endpoint en Mac
+description: Recursos para Microsoft Defender para Endpoint en Mac, como cómo desinstalarlo, cómo recopilar registros de diagnóstico, comandos cli y problemas conocidos con el producto.
+keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, instalación, implementación, desinstalación, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 98e123ac4775096c968bc831965a562481c848b6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 34feeec0f8c34748678862b9aa7b20f84087eb5e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862180"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934530"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Recursos para Microsoft Defender para endpoint en macOS
 
@@ -95,7 +95,7 @@ Hay varias maneras de desinstalar Microsoft Defender para Endpoint en macOS. Ten
 
 Las tareas importantes, como controlar la configuración del producto y desencadenar exámenes a petición, se pueden realizar desde la línea de comandos:
 
-|Grupo        |Escenario                                   |Comando                                                                           |
+|Group        |Escenario                                   |Comando                                                                           |
 |-------------|-------------------------------------------|----------------------------------------------------------------------------------|
 |Configuración|Activar/desactivar la protección en tiempo real           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
 |Configuración|Activar/desactivar la protección en la nube               |`mdatp config cloud --value [enabled/disabled]`                                   |

@@ -1,6 +1,6 @@
 ---
 title: Acciones de corrección en Microsoft Defender para Office 365
-keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
+keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fa4e2d6656ec430edc221ab94cac494e1ec0ca98
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 37953ad1125d5dad10eb5c6933b1ed9931d5de60
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205150"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933666"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Acciones de corrección en Microsoft Defender para Office 365
 
@@ -55,7 +55,7 @@ Microsoft Defender para Office 365 incluye acciones de corrección para hacer fr
 |:---|:---|:---|
 |Correo electrónico|Malware|Correo electrónico o clúster de eliminación suave <p> Si más de un puñado de mensajes de correo electrónico en un clúster contienen malware, se considera que el clúster es malintencionado.|
 |Correo electrónico|URL malintencionada<br/>(Vínculos seguros detectó una dirección URL [malintencionada).)](safe-links.md)|Correo electrónico o clúster de eliminación suave <br/>Dirección URL de bloqueo (comprobación del tiempo de clic)<p> El correo electrónico que contiene una dirección URL malintencionada se considera malintencionado.|
-|Correo electrónico|Phish|Correo electrónico o clúster de eliminación suave <p> Si más de un puñado de mensajes de correo electrónico en un clúster contienen intentos de phishing, todo el clúster se considera un intento de suplantación de identidad.|
+|Correo electrónico|Suplantación de identidad|Correo electrónico o clúster de eliminación suave <p> Si más de un puñado de mensajes de correo electrónico en un clúster contienen intentos de phishing, todo el clúster se considera un intento de suplantación de identidad.|
 |Correo electrónico|Phish de zapped <br>(Los mensajes de correo electrónico se entregaron y luego [se zapped](zero-hour-auto-purge.md).)|Correo electrónico o clúster de eliminación suave <p>Los informes están disponibles para ver los mensajes recortados. [Vea si ZAP movió un mensaje y preguntas frecuentes](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message).|
 |Correo electrónico|Correo electrónico de [suplantación de identidad omitida notificado](enable-the-report-message-add-in.md) por un usuario|[Investigación automatizada desencadenada por el informe del usuario](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
 |Correo electrónico|Anomalía de volumen <br> (Las cantidades de correo electrónico recientes superan los 7-10 días anteriores para los criterios de coincidencia).|La investigación automatizada no da como resultado una acción pendiente específica. <p>La anomalía del volumen no es una amenaza clara, sino simplemente una indicación de volúmenes de correo electrónico más grandes en los últimos días en comparación con los últimos 7-10 días. <p>Aunque un gran volumen de correo electrónico puede indicar posibles problemas, la confirmación es necesaria en términos de veredictos malintencionados o una revisión manual de mensajes de correo electrónico o clústeres. Consulte [Buscar correo electrónico sospechoso que se entregó](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered).|

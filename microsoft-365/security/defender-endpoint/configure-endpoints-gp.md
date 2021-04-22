@@ -1,7 +1,7 @@
 ---
 title: Incorporación de dispositivos Windows 10 a Microsoft Defender para el punto de conexión a través de la directiva de grupo
 description: Usa la directiva de grupo para implementar el paquete de configuración en dispositivos Windows 10 para que se incorpore al servicio.
-keywords: configurar dispositivos mediante directiva de grupo, administración de dispositivos, configurar dispositivos de Windows ATP, incorporar Microsoft Defender para dispositivos de punto de conexión, directiva de grupo
+keywords: configurar dispositivos mediante la directiva de grupo, la administración de dispositivos, configurar Microsoft Defender para dispositivos de punto de conexión, incorporar Microsoft Defender para dispositivos de punto de conexión, directiva de grupo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b839cf204e8ab042e0c88a8f8c48df79770e7b4f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: b8f56c8f2ba92073ea7ae9464f199d9c900b932f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893642"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933966"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Incorporación de dispositivos Windows 10 con la directiva de grupo 
 
@@ -121,7 +121,7 @@ Todas las directivas se encuentran en `Computer Configuration\Policies\Administr
 
 **Ubicación de la directiva:** \Componentes de Windows\Windows Defender ATP
 
-Policy | Setting 
+Policy | Configuración 
 :---|:---
 Enable\Disable Sample (colección)|   Habilitado: "Habilitar la colección de muestras en máquinas" activada
 
@@ -129,7 +129,7 @@ Enable\Disable Sample (colección)|   Habilitado: "Habilitar la colección de mu
 
 **Ubicación de la directiva:**  \Componentes de Windows\Windows Defender Antivirus
 
-Policy | Setting 
+Policy | Configuración 
 :---|:---
 Configurar la detección para aplicaciones potencialmente no deseadas | Enabled, Block
 
@@ -137,7 +137,7 @@ Configurar la detección para aplicaciones potencialmente no deseadas | Enabled,
 
 **Ubicación de la directiva:** \Componentes de Windows\Windows Defender Antivirus\MAPS
 
-Policy | Setting 
+Policy | Configuración 
 :---|:---
 Unirse a Microsoft MAPS | Mapas avanzados habilitados
 Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales | Habilitado, Enviar muestras seguras
@@ -146,7 +146,7 @@ Enviar ejemplos de archivos cuando sea necesario realizar análisis adicionales 
 
 **Ubicación de la directiva:** \Componentes de Windows\Windows Defender Antivirus\Protección en tiempo real
 
-Policy | Setting 
+Policy | Configuración 
 :---|:---
 Desactivar la protección en tiempo real|Deshabilitada
 Activar la supervisión del comportamiento|Habilitado
@@ -159,7 +159,7 @@ Supervisar la actividad de archivos y programas en el equipo|Habilitado
 
 Estas opciones configuran exámenes periódicos del extremo. Se recomienda realizar un examen rápido semanal, lo que permite el rendimiento.
 
-Policy | Setting 
+Policy | Configuración 
 :---|:---
 Compruebe la inteligencia de seguridad de virus y spyware más reciente antes de ejecutar un examen programado |Habilitado
 
@@ -184,7 +184,7 @@ Obtener la lista actual de GUID de reducción de superficie de ataque de [Person
 
 
 
-Policy | Setting 
+Policy | Configuración 
 :---|:---
 Configurar acceso controlado a carpetas| Habilitado, modo auditoría
 

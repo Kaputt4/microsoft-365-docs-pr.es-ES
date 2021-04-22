@@ -1,7 +1,7 @@
 ---
 title: 'Información del panel: administración de amenazas y vulnerabilidades'
 description: El panel de administración de amenazas y vulnerabilidades puede ayudar a SecOps y a los administradores de seguridad a abordar las amenazas de ciberseguridad y a crear la resistencia de seguridad de su organización.
-keywords: mdatp-tvm, panel mdatp-tvm, administración de vulnerabilidades de & amenazas, administración de amenazas y vulnerabilidades, administración de vulnerabilidades basada en riesgos &, configuración de seguridad, Puntuación segura de Microsoft para dispositivos, puntuación de exposición
+keywords: Microsoft Defender para Endpoint-tvm, panel de Microsoft Defender para Endpoint-tvm, administración de vulnerabilidades de & amenazas, administración de amenazas y vulnerabilidades, administración de vulnerabilidades basada en riesgos &, configuración de seguridad, Puntuación segura de Microsoft para dispositivos, puntuación de exposición
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 35dd300d828bfa48ad753d7c65f36b2555cf4f60
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 82b6123a99eb406918708c6bf23b870ef3bc3d79
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500171"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934146"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Información del panel: administración de amenazas y vulnerabilidades
 

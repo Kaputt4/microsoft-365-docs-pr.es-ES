@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas de rendimiento de Microsoft Defender para Endpoint en macOS
 description: Solucionar problemas de rendimiento en Microsoft Defender para endpoint en macOS.
-keywords: microsoft, defender, atp, mac, performance
+keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, performance
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8dfaf1dbf2c3742cc97060c7f9e811c83d0cb023
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 623717e7b1a3149dbccf07d32200820a7f9083cb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698225"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934254"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de rendimiento de Microsoft Defender para Endpoint en macOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "51698225"
 
 **Se aplica a:**
 
-- [Microsoft Defender para endpoint en macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -66,7 +66,7 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
 
 2. Abra Finder y vaya a  >  **Utilidades de aplicaciones**. Abra **El Monitor de** actividad y analice qué aplicaciones usan los recursos del sistema. Algunos ejemplos típicos son los actualizadores de software y los compiladores.
 
-1. Para buscar las aplicaciones que están desencadenando la mayoría de los exámenes, puedes usar estadísticas en tiempo real recopiladas por Defender para Endpoint para Mac.
+1. Para buscar las aplicaciones que están desencadenando la mayoría de los exámenes, puedes usar estadísticas en tiempo real recopiladas por Defender para Endpoint en Mac.
 
       > [!NOTE]
       > Esta característica está disponible en la versión 100.90.70 o posterior.

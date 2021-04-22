@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 5a868904a43e17952368e097c0b0e963252d5bed
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: b3f86dfbc1ae89eff61c680737061b01998a527b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570368"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933870"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novedades de La puntuación segura de Microsoft
 
@@ -50,7 +50,7 @@ Los clientes de Microsoft Teams verán "Restringir que los usuarios anónimos se
 
 ## <a name="december-2020"></a>Diciembre de 2020
 
-### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Se agregaron seis acciones de mejora relacionadas con cuentas para Microsoft Defender para endpoint (anteriormente ATP de Microsoft Defender):
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Se agregaron seis acciones de mejora relacionadas con cuentas para Microsoft Defender para endpoint:
 
 - Establecer "Longitud mínima de contraseña" en "14 o más caracteres"
 - Establece "Exigir historial de contraseñas" en "24 o más contraseñas".
@@ -65,7 +65,7 @@ Los clientes de Microsoft Teams verán "Restringir que los usuarios anónimos se
 
 La capacidad de crear vales de ServiceNow a través de Puntuación segura yendo a **Compartir > ServiceNow** ya no está disponible. Gracias por sus comentarios y soporte continuado mientras determinamos los pasos siguientes.
 
-### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>Se agregaron tres acciones de mejora relacionadas con los servicios para Microsoft Defender para endpoint (anteriormente ATP de Microsoft Defender):
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Se agregaron tres acciones de mejora relacionadas con los servicios para Microsoft Defender para endpoint:
 
 - Corregir la ruta de acceso de servicio sin comillas para los servicios de Windows
 - Cambiar la ruta de acceso ejecutable del servicio a una ubicación protegida común

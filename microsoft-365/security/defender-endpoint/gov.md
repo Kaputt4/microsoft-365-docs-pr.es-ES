@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender para el punto de conexión para clientes del gobierno de ESTADOS UNIDOS
+title: Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU.
 description: Obtenga información sobre los requisitos y capacidades de Microsoft Defender para endpoint para clientes del gobierno de ESTADOS UNIDOS disponibles
-keywords: government, gcc, high, requirements, capabilities, defender, defender atp, mdatp, endpoint, dod
+keywords: government, gcc, high, requirements, capabilities, defender, Microsoft Defender for Endpoint, endpoint, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 320913058f1d3cab36b3a279996443c2e4ef117f
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: 16a7d289889940754a6d56058544a675b31192be
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382918"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934002"
 ---
-# <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para el punto de conexión para clientes del gobierno de ESTADOS UNIDOS
+# <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU.
 
 **Se aplica a:**
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -81,7 +81,7 @@ Windows 10, versión 1803 (con [KB4598245](https://support.microsoft.com/help/45
 Windows 10, versión 1709 | ![No](images/svg/check-no.svg)<br />Nota: No se admite | ![Sí ](images/svg/check-yes.svg) con [KB4499147](https://support.microsoft.com/help/4499147)<br />Nota: [En desuso,](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)actualice | ![No](images/svg/check-no.svg)<br />Nota: No se admite
 Windows 10, versión 1703 y versiones anteriores | ![No](images/svg/check-no.svg)<br />Nota: No se admite | ![No](images/svg/check-no.svg)<br />Nota: No se admite | ![No](images/svg/check-no.svg)<br />Nota: No se admite
 Windows Server 2019 (con [KB4586839](https://support.microsoft.com/help/4586839)) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
-Windows Server 2016 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Windows Server 2016 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows 8.1 Enterprise | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
@@ -107,7 +107,7 @@ Las siguientes versiones del sistema operativo se admiten al [usar Azure Defende
 
 Versión del sistema operativo | GCC | GCC High | DoD
 :---|:---|:---|:---
-Windows Server 2016 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+Windows Server 2016 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 

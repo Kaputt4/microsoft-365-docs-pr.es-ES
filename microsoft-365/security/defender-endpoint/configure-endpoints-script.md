@@ -1,7 +1,7 @@
 ---
 title: Incorporar dispositivos Windows 10 mediante un script local
 description: Use un script local para implementar el paquete de configuración en dispositivos para que se incorpore al servicio.
-keywords: configurar dispositivos mediante un script local, administración de dispositivos, configurar dispositivos de Windows ATP, configurar Microsoft Defender para dispositivos de punto de conexión
+keywords: configurar dispositivos mediante un script local, administración de dispositivos, configurar Microsoft Defender para dispositivos de punto de conexión
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 77473df9cc3e0e98efac8eaacd0a51b551bc3258
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 056268ed093d371d39a6136dd0b272c12ab6f9d7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51075904"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933918"
 ---
 # <a name="onboard-windows-10-devices-using-a-local-script"></a>Incorporar dispositivos Windows 10 mediante un script local
 
