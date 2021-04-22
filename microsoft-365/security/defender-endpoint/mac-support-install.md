@@ -1,7 +1,7 @@
 ---
-title: Solucionar problemas de instalación de Microsoft Defender para Endpoint para Mac
-description: Solucionar problemas de instalación en Microsoft Defender para Endpoint para Mac.
-keywords: microsoft, defender, atp, mac, install
+title: Solucionar problemas de instalación de Microsoft Defender para Endpoint en Mac
+description: Solucionar problemas de instalación en Microsoft Defender para Endpoint en Mac.
+keywords: microsoft, defender, Microsoft Defender para Endpoint, mac, instalar
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,31 +18,31 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d2ad3160c9f36a27dc98f44365433de5f8b26bb2
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5166de3a7c7017979a93ac7026636ba24671892e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861436"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935154"
 ---
-# <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="d26eb-104">Solucionar problemas de instalación de Microsoft Defender para Endpoint en macOS</span><span class="sxs-lookup"><span data-stu-id="d26eb-104">Troubleshoot installation issues for Microsoft Defender for Endpoint on macOS</span></span>
+# <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="b1668-104">Solucionar problemas de instalación de Microsoft Defender para Endpoint en macOS</span><span class="sxs-lookup"><span data-stu-id="b1668-104">Troubleshoot installation issues for Microsoft Defender for Endpoint on macOS</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="d26eb-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="d26eb-105">**Applies to:**</span></span>
+<span data-ttu-id="b1668-105">**Se aplica a:**</span><span class="sxs-lookup"><span data-stu-id="b1668-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="d26eb-106">Microsoft Defender para punto de conexión en macOS</span><span class="sxs-lookup"><span data-stu-id="d26eb-106">Microsoft Defender for Endpoint on macOS</span></span>](microsoft-defender-endpoint-mac.md)
-- [<span data-ttu-id="d26eb-107">Microsoft Defender para punto de conexión</span><span class="sxs-lookup"><span data-stu-id="d26eb-107">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="d26eb-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="d26eb-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [<span data-ttu-id="b1668-106">Microsoft Defender para punto de conexión en macOS</span><span class="sxs-lookup"><span data-stu-id="b1668-106">Microsoft Defender for Endpoint on macOS</span></span>](microsoft-defender-endpoint-mac.md)
+- [<span data-ttu-id="b1668-107">Microsoft Defender para punto de conexión</span><span class="sxs-lookup"><span data-stu-id="b1668-107">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="b1668-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="b1668-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="d26eb-109">¿Desea experimentar Microsoft Defender para endpoint?</span><span class="sxs-lookup"><span data-stu-id="d26eb-109">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="d26eb-110">Regístrate para obtener una versión de prueba gratuita.</span><span class="sxs-lookup"><span data-stu-id="d26eb-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="b1668-109">¿Desea experimentar Microsoft Defender para endpoint?</span><span class="sxs-lookup"><span data-stu-id="b1668-109">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="b1668-110">Regístrate para obtener una versión de prueba gratuita.</span><span class="sxs-lookup"><span data-stu-id="b1668-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## <a name="installation-failed"></a><span data-ttu-id="d26eb-111">Error en la instalación</span><span class="sxs-lookup"><span data-stu-id="d26eb-111">Installation failed</span></span>
+## <a name="installation-failed"></a><span data-ttu-id="b1668-111">Error en la instalación</span><span class="sxs-lookup"><span data-stu-id="b1668-111">Installation failed</span></span>
 
-<span data-ttu-id="d26eb-112">Para la instalación manual, la página Resumen del asistente de instalación dice: "Se produjo un error durante la instalación.</span><span class="sxs-lookup"><span data-stu-id="d26eb-112">For manual installation, the Summary page of the installation wizard says, "An error occurred during installation.</span></span> <span data-ttu-id="d26eb-113">El instalador encontró un error que provocó un error en la instalación.</span><span class="sxs-lookup"><span data-stu-id="d26eb-113">The Installer encountered an error that caused the installation to fail.</span></span> <span data-ttu-id="d26eb-114">Póngase en contacto con el fabricante del software para obtener ayuda."</span><span class="sxs-lookup"><span data-stu-id="d26eb-114">Contact the software manufacturer for assistance."</span></span> <span data-ttu-id="d26eb-115">Para las implementaciones de MDM, también se muestra como un error de instalación genérica.</span><span class="sxs-lookup"><span data-stu-id="d26eb-115">For MDM deployments, it displays as a generic installation failure as well.</span></span>
+<span data-ttu-id="b1668-112">Para la instalación manual, la página Resumen del asistente de instalación dice: "Se produjo un error durante la instalación.</span><span class="sxs-lookup"><span data-stu-id="b1668-112">For manual installation, the Summary page of the installation wizard says, "An error occurred during installation.</span></span> <span data-ttu-id="b1668-113">El instalador encontró un error que provocó un error en la instalación.</span><span class="sxs-lookup"><span data-stu-id="b1668-113">The Installer encountered an error that caused the installation to fail.</span></span> <span data-ttu-id="b1668-114">Póngase en contacto con el fabricante del software para obtener ayuda."</span><span class="sxs-lookup"><span data-stu-id="b1668-114">Contact the software manufacturer for assistance."</span></span> <span data-ttu-id="b1668-115">Para las implementaciones de MDM, también se muestra como un error de instalación genérica.</span><span class="sxs-lookup"><span data-stu-id="b1668-115">For MDM deployments, it displays as a generic installation failure as well.</span></span>
 
-<span data-ttu-id="d26eb-116">Aunque no se muestra un error exacto al usuario final, se mantiene un archivo de registro con el progreso de la instalación en `/Library/Logs/Microsoft/mdatp/install.log` .</span><span class="sxs-lookup"><span data-stu-id="d26eb-116">While we do not display an exact error to the end user, we keep a log file with installation progress in `/Library/Logs/Microsoft/mdatp/install.log`.</span></span> <span data-ttu-id="d26eb-117">Cada sesión de instalación se anexa a este archivo de registro.</span><span class="sxs-lookup"><span data-stu-id="d26eb-117">Each installation session appends to this log file.</span></span> <span data-ttu-id="d26eb-118">Solo puede usar `sed` para generar la última sesión de instalación:</span><span class="sxs-lookup"><span data-stu-id="d26eb-118">You can use `sed` to output the last installation session only:</span></span>
+<span data-ttu-id="b1668-116">Aunque no se muestra un error exacto al usuario final, se mantiene un archivo de registro con el progreso de la instalación en `/Library/Logs/Microsoft/mdatp/install.log` .</span><span class="sxs-lookup"><span data-stu-id="b1668-116">While we do not display an exact error to the end user, we keep a log file with installation progress in `/Library/Logs/Microsoft/mdatp/install.log`.</span></span> <span data-ttu-id="b1668-117">Cada sesión de instalación se anexa a este archivo de registro.</span><span class="sxs-lookup"><span data-stu-id="b1668-117">Each installation session appends to this log file.</span></span> <span data-ttu-id="b1668-118">Solo puede usar `sed` para generar la última sesión de instalación:</span><span class="sxs-lookup"><span data-stu-id="b1668-118">You can use `sed` to output the last installation session only:</span></span>
 
 ```bash
 sed -n 'H; /^preinstall com.microsoft.wdav begin/h; ${g;p;}' /Library/Logs/Microsoft/mdatp/install.log
@@ -55,13 +55,13 @@ correlation id=CB509765-70FC-4679-866D-8A14AD3F13CC
 preinstall com.microsoft.wdav end [2020-03-11 13:08:49 -0700] 804 => 1
 ```
 
-<span data-ttu-id="d26eb-119">En este ejemplo, el motivo real tiene el prefijo `[ERROR]` .</span><span class="sxs-lookup"><span data-stu-id="d26eb-119">In this example, the actual reason is prefixed with `[ERROR]`.</span></span>
-<span data-ttu-id="d26eb-120">Error en la instalación porque no se admite una degradación entre estas versiones.</span><span class="sxs-lookup"><span data-stu-id="d26eb-120">The installation failed because a downgrade between these versions is not supported.</span></span>
+<span data-ttu-id="b1668-119">En este ejemplo, el motivo real tiene el prefijo `[ERROR]` .</span><span class="sxs-lookup"><span data-stu-id="b1668-119">In this example, the actual reason is prefixed with `[ERROR]`.</span></span>
+<span data-ttu-id="b1668-120">Error en la instalación porque no se admite una degradación entre estas versiones.</span><span class="sxs-lookup"><span data-stu-id="b1668-120">The installation failed because a downgrade between these versions is not supported.</span></span>
 
-## <a name="mdatp-install-log-missing-or-not-updated"></a><span data-ttu-id="d26eb-121">Falta o no se actualiza el registro de instalación de MDATP</span><span class="sxs-lookup"><span data-stu-id="d26eb-121">MDATP install log missing or not updated</span></span>
+## <a name="mdatp-install-log-missing-or-not-updated"></a><span data-ttu-id="b1668-121">Falta o no se actualiza el registro de instalación de MDATP</span><span class="sxs-lookup"><span data-stu-id="b1668-121">MDATP install log missing or not updated</span></span>
 
-<span data-ttu-id="d26eb-122">En raras ocasiones, la instalación no deja ningún seguimiento en el archivo /Library/Logs/Microsoft/mdatp/install.log de MDATP.</span><span class="sxs-lookup"><span data-stu-id="d26eb-122">In rare cases, installation leaves no trace in MDATP's /Library/Logs/Microsoft/mdatp/install.log file.</span></span>
-<span data-ttu-id="d26eb-123">Puedes comprobar que se ha producido una instalación y analizar posibles errores consultando registros de macOS (esto resulta útil en la implementación de MDM, cuando no hay ninguna interfaz de usuario de cliente).</span><span class="sxs-lookup"><span data-stu-id="d26eb-123">You can verify that an installation happened and analyze possible errors by querying macOS logs (this is helpful in MDM deployment, when there is no client UI).</span></span> <span data-ttu-id="d26eb-124">Se recomienda usar una ventana de tiempo limitado para ejecutar una consulta y filtrar por el nombre del proceso de registro, ya que habrá una gran cantidad de información.</span><span class="sxs-lookup"><span data-stu-id="d26eb-124">We recommend that you use a narrow time window to run a query, and that you filter by the logging process name, as there will be a huge amount of information.</span></span>
+<span data-ttu-id="b1668-122">En raras ocasiones, la instalación no deja ningún seguimiento en el archivo /Library/Logs/Microsoft/mdatp/install.log de MDATP.</span><span class="sxs-lookup"><span data-stu-id="b1668-122">In rare cases, installation leaves no trace in MDATP's /Library/Logs/Microsoft/mdatp/install.log file.</span></span>
+<span data-ttu-id="b1668-123">Puedes comprobar que se ha producido una instalación y analizar posibles errores consultando registros de macOS (esto resulta útil en la implementación de MDM, cuando no hay ninguna interfaz de usuario de cliente).</span><span class="sxs-lookup"><span data-stu-id="b1668-123">You can verify that an installation happened and analyze possible errors by querying macOS logs (this is helpful in MDM deployment, when there is no client UI).</span></span> <span data-ttu-id="b1668-124">Se recomienda usar una ventana de tiempo limitado para ejecutar una consulta y filtrar por el nombre del proceso de registro, ya que habrá una gran cantidad de información.</span><span class="sxs-lookup"><span data-stu-id="b1668-124">We recommend that you use a narrow time window to run a query, and that you filter by the logging process name, as there will be a huge amount of information.</span></span>
 
 ```bash
 grep '^2020-03-11 13:08' /var/log/install.log
