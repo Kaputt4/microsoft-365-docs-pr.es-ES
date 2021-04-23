@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Obtenga información sobre cómo empezar a recopilar datos para su inquilino mediante la aplicación de plantilla análisis de uso de Microsoft 365 en Power BI.
-ms.openlocfilehash: 7c92fb643f9be6b5f1474f08df659c4f488a9a41
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d9cadcc8258478fd1d5dbc0d9ae6bf4e814a8435
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579067"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957520"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Habilitar análisis de uso de Microsoft 365
 
@@ -53,11 +53,11 @@ Para habilitar la aplicación de plantilla, debes ser administrador **global.**
   
 Vea [acerca de los roles de administrador](../add-users/about-admin-roles.md) para obtener más información. 
   
-1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso. 
+1. En el Centro de administración, vaya a la pestaña **Configuración** de configuración de la organización \>  \> **Servicios.** 
     
-2. En la **página Uso,** busque la tarjeta de análisis de uso de **Microsoft 365** y seleccione **Introducción.**
+2. En la **pestaña Servicios,** seleccione  **Informes**.
     
-3. En el panel Informes que se abre, establezca Hacer que los datos estén disponibles para el análisis de uso de **Microsoft 365** para Power BI en **Al** \> **guardar**. 
+3. En el panel Informes que se abre, establezca Hacer que los datos de informe estén disponibles para análisis de uso de **Microsoft 365** para Power BI en **Al** \> **guardar**. 
   
 El proceso de recopilación de datos se completará en dos o 48 horas según el tamaño del espacio empresarial. El **botón Ir a Power BI** se habilitará (ya no será gris) cuando se complete la recopilación de datos. 
     

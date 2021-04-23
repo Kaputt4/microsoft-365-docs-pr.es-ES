@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e7bae0577b83deed26b0a3beb0f16efc80bb5846
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 14287fb6dea9dda8accb580246b383f0427c3b3f
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935790"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952625"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>Conozca el lenguaje de consulta de búsqueda avanzada
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935790"
 
 **Se aplica a:**
 - Microsoft 365 Defender
+- Microsoft Defender para punto de conexión
 
 La búsqueda avanzada se basa en el [lenguaje de consulta Kusto](/azure/kusto/query/). Puede usar operadores y instrucciones kusto para crear consultas que busquen información en un esquema [especializado.](advanced-hunting-schema-tables.md) Para entender mejor estos conceptos, ejecute la primera consulta.
 
@@ -180,6 +181,9 @@ La sección **Comenzar** ofrece algunas consultas sencillas con operadores de us
 ## <a name="access-query-language-documentation"></a>Acceso a documentación del lenguaje de consulta
 
 Para más información sobre el lenguaje de consulta Kusto y los operadores compatibles, vaya a la [documentación del lenguaje de consulta Kusto](/azure/kusto/query/).
+
+>[!NOTE]
+>Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa Microsoft 365 Defender para](m365d-enable.md) buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

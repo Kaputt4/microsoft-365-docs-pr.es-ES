@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 1fb5a4eee41384ef1afc9b46e5bf538344718fe9
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 2fd9b958cdbdaf22346f8171c789f2ca9a8336d1
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939735"
+ms.locfileid: "51957612"
 ---
 # <a name="analyze-users-in-microsoft-365-security-center"></a>Analizar usuarios en el Centro de seguridad de Microsoft 365
 
@@ -41,6 +41,13 @@ Parte del análisis de incidentes puede incluir cuentas de usuario. Comience con
 Para obtener un resumen rápido de una cuenta de usuario para el incidente, seleccione la marca de verificación junto al nombre de la cuenta de usuario. Por ejemplo:
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Ejemplo del panel de resumen de la cuenta de usuario para un incidente en el Centro de seguridad de Microsoft 365":::
+
+> [!NOTE]
+> La página Usuario muestra la organización de Azure Active Directory (AD), así como los grupos, lo que le ayuda a comprender los grupos y permisos asociados con un usuario.
+
+En esta página desplegable, puede revisar la información de amenazas del usuario, incluidos los incidentes actuales, las alertas activas y el nivel de riesgo, así como la exposición del usuario, cuentas, dispositivos y mucho más.
+
+Además, puede realizar acciones directamente en el Centro de seguridad de Microsoft 365 para abordar un usuario en peligro, confirmando que el usuario está en peligro o requiriendo que inicie sesión de nuevo.
 
 Desde aquí, puede seleccionar **Ir a la página de usuario** para ver los detalles de una cuenta de usuario. Por ejemplo:
 

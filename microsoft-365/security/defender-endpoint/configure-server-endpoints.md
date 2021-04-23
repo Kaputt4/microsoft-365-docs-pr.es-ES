@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4eea2931196c192620812c1609c506e1fb99093d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 17aca5fb388aef26504902ee63b22410420c8827
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932958"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952493"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Incorporación de servidores de Windows al servicio microsoft defender para puntos de conexión
 
@@ -194,7 +194,7 @@ Defender para endpoint se puede integrar con Azure Defender para proporcionar un
 
 En esta integración se incluyen las siguientes funcionalidades:
 
-- Incorporación automatizada: el sensor Defender para endpoints se habilita automáticamente en los servidores windows que están incorporados a Azure Defender. Para obtener más información sobre la incorporación de Azure Defender, consulte [Onboarding to Azure Defender Standard for enhanced security](https://docs.microsoft.com/azure/security-center/security-center-onboarding).
+- Incorporación automatizada: el sensor Defender para endpoints se habilita automáticamente en los servidores windows que están incorporados a Azure Defender. Para obtener más información sobre la incorporación de Azure Defender, consulte [Use the integrated Microsoft Defender for Endpoint license](https://docs.microsoft.com/azure/security-center/security-center-wdatp).
 
     > [!NOTE]
     > La integración entre Azure Defender para servidores y Microsoft Defender para endpoint se ha expandido para admitir [Windows Server 2019 y Windows Virtual Desktop (WVD).](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
@@ -338,7 +338,8 @@ Una vez hecho esto, deberá crear una directiva de script de inicio:
 
 :::image type="content" source="images/startupprops.png" alt-text="propiedades de inicio":::
 
-El nombre del archivo que se va a ejecutar aquí es c:\windows\MMA\DeployMMA.cmd Una vez que el servidor se reinicie como parte del proceso de inicio, instalará la actualización para la experiencia del cliente y la telemetría de diagnóstico KB y, a continuación, instalará MMAAgent, mientras se establece el identificador y la clave del área de trabajo, y el servidor se incorporará.
+El nombre del archivo que se va a ejecutar aquí es c:\windows\MMA\DeployMMA.cmd.
+Una vez reiniciado el servidor como parte del proceso de inicio, se instalará la actualización de la experiencia del cliente y la telemetría de diagnóstico KB y, a continuación, se instalará el agente mma, mientras se establece el identificador de área de trabajo y la clave, y se incorporará el servidor.
 
 También puede usar una **tarea inmediata para** ejecutar deployMMA.cmd si no desea reiniciar todos los servidores.
 Esto se podría hacer en dos fases. En primer **lugar,** cree los archivos y la carpeta en GPO: dé tiempo al sistema para asegurarse de que se ha aplicado el GPO y de que todos los servidores tienen los archivos de instalación. A continuación, agregue la tarea inmediata. Esto logrará el mismo resultado sin necesidad de reiniciar.

@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo planear los temas de Microsoft Viva
-ms.openlocfilehash: 19baf8bdcfdd1fe38d64e3c2f259ace1ceab5a4b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d64e4b341fe96d7aa3636f58bffe3dd8f388838e
+ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925981"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51957544"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planeación de temas de Microsoft Viva
 
@@ -32,7 +32,7 @@ En este artículo examinaremos estas decisiones de planeación:
 
 Se respeta la seguridad y privacidad de los datos y las experiencias de temas no conceden a los usuarios acceso adicional a los archivos a los que no tienen derechos. También se recomienda leer Temas de [Microsoft Viva seguridad y privacidad](topic-experiences-security-privacy.md) como parte del proceso de planeación.
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 Debe estar suscrito a [Viva Topics](https://www.microsoft.com/microsoft-viva/topics) y ser administrador global o administrador de SharePoint para tener acceso al Centro de administración de Microsoft 365 y configurar Temas.
 
@@ -70,6 +70,9 @@ Todo el procesamiento y almacenamiento del contenido se realiza en la ubicación
 ## <a name="user-permissions"></a>Permisos de usuario
 
 Los permisos de usuario que especifique determinan qué personas de la organización interactúan con los temas y qué pueden hacer.
+
+> [!Note] 
+> En este momento, Viva Topics no admite proporcionar licencias o permisos de usuario para usuarios invitados (externos). 
 
 *Administrar temas*
 

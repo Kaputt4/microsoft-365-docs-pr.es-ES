@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: bcb31b904f8e6156d644864f03143e9fc37ae34b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f37cc63c958331f7c03e09689de92c73fd06b4d4
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935718"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952565"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Crear y administrar reglas de detecciones personalizadas
 
@@ -34,6 +34,7 @@ ms.locfileid: "51935718"
 
 **Se aplica a:**
 - Microsoft 365 Defender
+- Microsoft Defender para punto de conexión
 
 Las reglas de detección personalizadas son reglas que puedes diseñar y ajustar [con](advanced-hunting-overview.md) consultas avanzadas de búsqueda. Estas reglas le permiten supervisar proactivamente varios eventos y estados del sistema, incluidos la actividad de infracción sospechosa y los extremos mal configurados. Puede configurarlos para que se ejecuten a intervalos regulares, generando alertas y llevando a cabo acciones de respuesta siempre que haya coincidencias.
 
@@ -220,7 +221,10 @@ En la pantalla de detalles de la regla (**Buscar** detecciones personalizadas [N
 >[!TIP]
 >Para ver rápidamente la información y realizar acciones en un elemento de una tabla, use la columna de selección [&#10003;] a la izquierda de la tabla.
 
-## <a name="see-also"></a>Ver también
+>[!NOTE]
+>Es posible que algunas columnas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa Microsoft 365 Defender para](m365d-enable.md) buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
+
+## <a name="see-also"></a>Vea también
 - [Introducción a las detecciones personalizadas](custom-detections-overview.md)
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Conozca el lenguaje de consulta de búsqueda avanzada](advanced-hunting-query-language.md)

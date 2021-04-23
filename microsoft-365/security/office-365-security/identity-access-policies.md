@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 7ade29259a5552bc9bbaac4b143842c69d05f917
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4b7315cbb8704b691ce4f3d6b96958f18248b478
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205350"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952637"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 
@@ -55,18 +55,18 @@ El resto de este artículo describe cómo configurar estas directivas.
 
 Para darle tiempo para realizar estas tareas, se recomienda implementar las directivas de línea base en el orden que se muestra en esta tabla. Sin embargo, las directivas de MFA para niveles de protección confidenciales y altamente regulados se pueden implementar en cualquier momento.
 
-|Nivel de protección|Directivas|Más información|
-|---|---|---|
-|**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](#require-mfa-based-on-sign-in-risk)||
-||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](#block-clients-that-dont-support-multi-factor)|Los clientes que no usan la autenticación moderna pueden omitir las directivas de acceso condicional, por lo que es importante bloquear estas directivas.|
-||[Los usuarios de riesgo alto tienen que cambiar la contraseña](#high-risk-users-must-change-password)|Fuerza a los usuarios a cambiar su contraseña al iniciar sesión si se detecta actividad de alto riesgo para su cuenta.|
-||[Aplicar directivas de protección de datos de aplicaciones](#apply-app-data-protection-policies)|Una directiva de Protección de aplicaciones de Intune por plataforma (Windows, iOS/iPadOS, Android).|
-||[Requerir aplicaciones aprobadas y protección de aplicaciones](#require-approved-apps-and-app-protection)|Aplica la protección de aplicaciones móviles para teléfonos y tabletas con iOS, iPadOS o Android.|
-||[Definir directivas de cumplimiento de dispositivos](#define-device-compliance-policies)|Una directiva para cada plataforma.|
-||[Exigir equipos PC compatibles](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Aplica la administración de Intune de equipos con Windows o MacOS.|
-|**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión *es bajo,* *medio* o *alto*](#require-mfa-based-on-sign-in-risk)||
-||[Requerir equipos y *dispositivos* móviles compatibles](#require-compliant-pcs-and-mobile-devices)|Aplica la administración de Intune para equipos (Windows o MacOS) y teléfonos o tabletas (iOS, iPadOS o Android).|
-|**Extremadamente regulado**|[*Requerir* siempre MFA](#require-mfa-based-on-sign-in-risk)|
+|Nivel de protección|Directivas|Más información|Licencias|
+|---|---|---|---|
+|**Baseline**|[Requerir MFA cuando el riesgo de inicio de sesión *es medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
+||[Bloquear a los clientes que no sean compatibles con la autenticación moderna](#block-clients-that-dont-support-multi-factor)|Los clientes que no usan la autenticación moderna pueden omitir las directivas de acceso condicional, por lo que es importante bloquear estas directivas.|Microsoft 365 E3 o E5|
+||[Los usuarios de riesgo alto tienen que cambiar la contraseña](#high-risk-users-must-change-password)|Fuerza a los usuarios a cambiar su contraseña al iniciar sesión si se detecta actividad de alto riesgo para su cuenta.|Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
+||[Aplicar protección de datos de directivas de protección de aplicaciones (APP)](#apply-app-data-protection-policies)|Una directiva de Protección de aplicaciones de Intune por plataforma (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 o E5|
+||[Requerir aplicaciones aprobadas y protección de aplicaciones](#require-approved-apps-and-app-protection)|Aplica la protección de aplicaciones móviles para teléfonos y tabletas con iOS, iPadOS o Android.|Microsoft 365 E3 o E5|
+||[Definir directivas de cumplimiento de dispositivos](#define-device-compliance-policies)|Una directiva para cada plataforma.|Microsoft 365 E3 o E5|
+||[Exigir equipos PC compatibles](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Aplica la administración de Intune de equipos con Windows o MacOS.|Microsoft 365 E3 o E5|
+|**Confidencial**|[Requerir MFA cuando el riesgo de inicio de sesión *es bajo,* *medio* o *alto*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 o Microsoft 365 E3 con el complemento seguridad E5|
+||[Requerir equipos y *dispositivos* móviles compatibles](#require-compliant-pcs-and-mobile-devices)|Aplica la administración de Intune para equipos (Windows o MacOS) y teléfonos o tabletas (iOS, iPadOS o Android).|Microsoft 365 E3 o E5|
+|**Extremadamente regulado**|[*Requerir* siempre MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 o E5|
 |
 
 ## <a name="assigning-policies-to-groups-and-users"></a>Asignar directivas a grupos y usuarios
@@ -95,11 +95,11 @@ Tenga cuidado al aplicar niveles más altos de protección a grupos y usuarios. 
 
 Todos los grupos de Azure AD creados como parte de estas recomendaciones deben crearse como grupos de Microsoft 365. Esto es importante para la implementación de etiquetas de confidencialidad al proteger documentos en Microsoft Teams y SharePoint.
 
-![Captura de pantalla para crear grupos de Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+![Ejemplo de creación de un grupo de Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>Requerir MFA en función del riesgo de inicio de sesión
 
-Debe hacer que los usuarios se registren en MFA antes de requerir su uso. Si tiene Microsoft 365 E5, Microsoft 365 E3 con el complemento Identity & Threat Protection, Office 365 con EMS E5 o licencias individuales de Azure AD Premium P2, puede usar la directiva de registro de MFA con Azure AD Identity Protection para requerir que los usuarios se registren en MFA. El [trabajo previo incluye](identity-access-prerequisites.md) registrar todos los usuarios con MFA.
+Debe hacer que los usuarios se registren en MFA antes de requerir su uso. Si tiene Microsoft 365 E5, Microsoft 365 E3 con el complemento seguridad E5, Office 365 con EMS E5 o licencias individuales de Azure AD Premium P2, puede usar la directiva de registro de MFA con Azure AD Identity Protection para requerir que los usuarios se registren en MFA. El [trabajo previo incluye](identity-access-prerequisites.md) registrar todos los usuarios con MFA.
 
 Una vez registrados los usuarios, puede requerir MFA para iniciar sesión con una nueva directiva de acceso condicional.
 
@@ -125,7 +125,7 @@ En la **sección Asignaciones:**
 
 Aplica la configuración del nivel de riesgo en función del nivel de protección al que estás destinado.
 
-|Nivel de protección|Valores de nivel de riesgo necesarios|Acción|
+|Nivel de protección|Valores de nivel de riesgo necesarios|Action|
 |---|---|---|
 |Línea base|Alto, medio|Compruebe ambos.|
 |Confidencial|Alto, medio, bajo|Compruebe los tres.|
@@ -134,7 +134,7 @@ Aplica la configuración del nivel de riesgo en función del nivel de protecció
 
 En la **sección Controles de** Access:
 
-|Configuración|Propiedades|Valores|Acción|
+|Configuración|Propiedades|Valores|Action|
 |---|---|---|---|
 |Conceder|**Conceder acceso**||Select|
 |||**Requerir autenticación multifactor**|Cheque|
@@ -165,7 +165,7 @@ En la **sección Asignaciones:**
 
 En la **sección Controles de** Access:
 
-|Configuración|Propiedades|Valores|Acción|
+|Configuración|Propiedades|Valores|Action|
 |---|---|---|---|
 |Conceder|**Bloquear acceso**||Select|
 ||**Exigir todos los controles seleccionados**||Select|
@@ -187,7 +187,7 @@ Inicie sesión en [Microsoft Azure Portal (https://portal.azure.com)](https://po
 
 En la **sección Asignaciones:**
 
-|Tipo|Propiedades|Valores|Acción|
+|Tipo|Propiedades|Valores|Action|
 |---|---|---|---|
 |Usuarios|Incluir|**Todos los usuarios**|Select|
 |Riesgo de usuario|**Alto**||Select|
@@ -195,9 +195,9 @@ En la **sección Asignaciones:**
 
 En la segunda **sección Asignaciones:**
 
-|Tipo|Propiedades|Valores|Acción|
+|Tipo|Propiedades|Valores|Action|
 |---|---|---|---|
-|Access|**Permitir acceso**||Select|
+|Acceso|**Permitir acceso**||Select|
 |||**Exigir cambio de contraseña**|Cheque|
 |
 
@@ -211,7 +211,7 @@ Use esta directiva junto con [Configure Azure AD password protection](/azure/act
 
 ## <a name="apply-app-data-protection-policies"></a>Aplicar directivas de protección de datos de APP
 
-Las directivas de protección de aplicaciones (APP) definen qué aplicaciones se permiten y las acciones que pueden realizar con los datos de la organización. Las opciones disponibles en APP permiten a las organizaciones adaptar la protección a sus necesidades específicas. Para algunos, puede que no sea obvio qué configuración de directiva es necesaria para implementar un escenario completo. Para ayudar a las organizaciones a priorizar el endurecimiento de puntos de conexión de cliente móvil, Microsoft ha introducido la taxonomía para su marco de protección de datos de APP para la administración de aplicaciones móviles de iOS y Android.
+Las APP definen qué aplicaciones se permiten y las acciones que pueden realizar con los datos de la organización. Las opciones disponibles en APP permiten a las organizaciones adaptar la protección a sus necesidades específicas. Para algunos, puede que no sea obvio qué configuración de directiva es necesaria para implementar un escenario completo. Para ayudar a las organizaciones a priorizar el endurecimiento de puntos de conexión de cliente móvil, Microsoft ha introducido la taxonomía para su marco de protección de datos de APP para la administración de aplicaciones móviles de iOS y Android.
 
 El marco de protección de datos de APP se organiza en tres niveles de configuración distintos, con cada nivel que se genera en el nivel anterior:
 
@@ -294,7 +294,7 @@ Se recomiendan las siguientes opciones de configuración para equipos que ejecut
 
 Para obtener información sobre > de evaluación del servicio **de atestación** de estado de Windows, consulta esta tabla.
 
-|Propiedades|Valor|Acción|
+|Propiedades|Valor|Action|
 |---|---|---|
 |Requerir BitLocker|Obligatoria|Select|
 |Requerir que el arranque seguro esté habilitado en el dispositivo|Obligatoria|Select|
@@ -307,7 +307,7 @@ Para **El cumplimiento de Configuration Manager,** seleccione **Requerir**.
 
 Para **Seguridad del sistema,** consulte esta tabla.
 
-|Tipo|Propiedades|Valor|Acción|
+|Tipo|Propiedades|Valor|Action|
 |---|---|---|---|
 |Password|Requerir una contraseña para desbloquear dispositivos móviles|Obligatoria|Select|
 ||Contraseñas sencillas|Bloquear|Select|
@@ -329,14 +329,14 @@ Para **Seguridad del sistema,** consulte esta tabla.
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender para punto de conexión
 
-|Tipo|Propiedades|Valor|Acción|
+|Tipo|Propiedades|Valor|Action|
 |---|---|---|---|
-|Reglas de Microsoft Defender para endpoint|Requerir que el dispositivo esté en o bajo la puntuación de riesgo de la máquina|Mediano|Select|
+|Reglas de Microsoft Defender para endpoint en el Centro de administración de Microsoft Endpoint Manager|[Requerir que el dispositivo esté en o bajo la puntuación de riesgo de la máquina](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Mediano|Select|
 |
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>Requerir equipos compatibles (pero no teléfonos y tabletas compatibles)
 
-Antes de agregar una directiva para requerir equipos compatibles, asegúrese de inscribir dispositivos para la administración en Intune. Se recomienda usar la autenticación multifactor antes de inscribir dispositivos en Intune para garantizar que el dispositivo está en posesión del usuario previsto.
+Antes de agregar una directiva para requerir equipos compatibles, asegúrese de inscribir los dispositivos para su administración en Intune. Se recomienda usar la autenticación multifactor antes de inscribir dispositivos en Intune para garantizar que el dispositivo está en posesión del usuario previsto.
 
 Para requerir equipos compatibles:
 

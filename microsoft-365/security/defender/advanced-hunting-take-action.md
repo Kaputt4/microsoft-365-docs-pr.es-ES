@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0c088375cd784b411fdce417d77b1ea176bcee26
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 15eebbba102640a92f9c7712194aaef685a96cfb
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932910"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952613"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>Realizar acciones en los resultados avanzados de la consulta de búsqueda
 
@@ -34,6 +34,7 @@ ms.locfileid: "51932910"
 
 **Se aplica a:**
 - Microsoft 365 Defender
+- Microsoft Defender para punto de conexión
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -79,6 +80,9 @@ Para realizar cualquiera de las acciones descritas, seleccione uno o más regist
 ## <a name="review-actions-taken"></a>Revisar acciones realizadas
 Cada acción se registra individualmente en el centro [de acciones](m365d-action-center.md) en Historial **del centro** de acciones (  >   [security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Vaya al centro de acciones para comprobar el estado de cada acción.
  
+>[!NOTE]
+>Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa Microsoft 365 Defender para](m365d-enable.md) buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
+
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
 - [Aprender el lenguaje de consulta](advanced-hunting-query-language.md)

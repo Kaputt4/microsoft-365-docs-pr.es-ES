@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 104ef919d356642985e7b34d16650c27a8141e86
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 464a99ca67da72633879840263fe64ad8311fd4c
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615104"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952577"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configuraciones de acceso a dispositivos e identidades
 
@@ -50,6 +50,8 @@ Si su organización tiene requisitos de entorno únicos o complejidades, use est
 
 Vea este vídeo para obtener una introducción rápida a las configuraciones de acceso a dispositivos y identidades para Microsoft 365 para empresas.
 
+<br>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxEDQ]
 
 > [!NOTE]
@@ -57,13 +59,13 @@ Vea este vídeo para obtener una introducción rápida a las configuraciones de 
 
 ## <a name="intended-audience"></a>Público objetivo
 
-Estas recomendaciones están dirigidas a arquitectos empresariales y profesionales de TI familiarizados con los servicios de seguridad y productividad en la nube de Microsoft 365, que incluyen Azure AD (identidad), Microsoft Intune (administración de dispositivos) y Azure Information Protection (protección de datos).
+Estas recomendaciones están dirigidas a arquitectos empresariales y profesionales de TI familiarizados con los servicios de seguridad y productividad en la nube de Microsoft 365, que incluyen Azure AD (identidad), Microsoft Intune (administración de dispositivos) y Microsoft Information Protection (protección de datos).
 
 ### <a name="customer-environment"></a>Entorno del cliente
 
 Las directivas recomendadas se aplican a las organizaciones empresariales que operan completamente en la nube de Microsoft y a los clientes con infraestructura de identidad híbrida, que es un bosque local de Servicios de dominio de Active Directory (AD DS) que se sincroniza con un inquilino de Azure AD.
 
-Muchas de las recomendaciones proporcionadas se basan en servicios disponibles solo con licencias de Microsoft 365 E5, Microsoft 365 E3 con el complemento Identity & Threat Protection, EMS E5 o Azure Premium P2.
+Muchas de las recomendaciones proporcionadas dependen de los servicios disponibles solo con las licencias de Microsoft 365 E5, Microsoft 365 E3 con el complemento seguridad E5, EMS E5 o Azure AD Premium P2.
 
 Para aquellas organizaciones que no tienen estas licencias, Microsoft recomienda implementar al menos los valores predeterminados de [seguridad,](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)que se incluyen en todos los planes de Microsoft 365.
 
@@ -122,8 +124,8 @@ Azure AD proporciona un conjunto completo de funcionalidades de administración 
 |[Acceso condicional](/azure/active-directory/conditional-access/overview)|Azure AD evalúa las condiciones del inicio de sesión del usuario y usa directivas de acceso condicional para determinar el acceso permitido. Por ejemplo, en esta guía te mostramos cómo crear una directiva de acceso condicional para requerir el cumplimiento del dispositivo para obtener acceso a datos confidenciales. Esto reduce en gran medida el riesgo de que un hacker con su propio dispositivo y credenciales robadas pueda acceder a sus datos confidenciales. También protege los datos confidenciales de los dispositivos, ya que los dispositivos deben cumplir requisitos específicos de salud y seguridad.|Microsoft 365 E3 o E5|
 |[Grupos de Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups)|Las directivas de acceso condicional, la administración de dispositivos con Intune e incluso los permisos para archivos y sitios de la organización dependen de la asignación a cuentas de usuario o grupos de Azure AD. Se recomienda crear grupos de Azure AD que correspondan a los niveles de protección que está implementando. Por ejemplo, es probable que el personal ejecutivo sea un destino de mayor valor para los hackers. Por lo tanto, tiene sentido agregar las cuentas de usuario de estos empleados a un grupo de Azure AD y asignar este grupo a directivas de acceso condicional y otras directivas que aplican un mayor nivel de protección para el acceso.|Microsoft 365 E3 o E5|
 |[Inscripción de dispositivos](/azure/active-directory/devices/overview)|Inscribir un dispositivo en Azure AD para crear una identidad para el dispositivo. Esta identidad se usa para autenticar el dispositivo cuando un usuario inicia sesión y para aplicar directivas de acceso condicional que requieren equipos unidos al dominio o compatibles. Para esta guía, usamos la inscripción de dispositivos para inscribir automáticamente equipos Windows unidos a un dominio. La inscripción de dispositivos es un requisito previo para administrar dispositivos con Intune.|Microsoft 365 E3 o E5|
-|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Le permite detectar posibles vulnerabilidades que afectan a las identidades de su organización y configurar la directiva de corrección automatizada en riesgo de inicio de sesión bajo, medio y alto y riesgo de usuario. Esta guía se basa en esta evaluación de riesgos para aplicar directivas de acceso condicional para la autenticación multifactor. Esta guía también incluye una directiva de acceso condicional que requiere que los usuarios cambien su contraseña si se detecta actividad de alto riesgo para su cuenta.|Microsoft 365 E5, Microsoft 365 E3 con las licencias de Identity & Threat Protection, EMS E5 o Azure Premium P2|
-|[Restablecimiento de contraseñas de autoservicio (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Permitir que los usuarios restablezcan sus contraseñas de forma segura y sin intervención del servicio de asistencia, proporcionando la comprobación de varios métodos de autenticación que el administrador puede controlar.|Microsoft 365 E3 o E5|
+|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Le permite detectar posibles vulnerabilidades que afectan a las identidades de su organización y configurar la directiva de corrección automatizada en riesgo de inicio de sesión bajo, medio y alto y riesgo de usuario. Esta guía se basa en esta evaluación de riesgos para aplicar directivas de acceso condicional para la autenticación multifactor. Esta guía también incluye una directiva de acceso condicional que requiere que los usuarios cambien su contraseña si se detecta actividad de alto riesgo para su cuenta.|Microsoft 365 E5, Microsoft 365 E3 con el complemento de seguridad E5, EMS E5 o licencias de Azure AD Premium P2|
+|[Autoservicio de restablecimiento de contraseña (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Permitir que los usuarios restablezcan sus contraseñas de forma segura y sin intervención del servicio de asistencia, proporcionando la comprobación de varios métodos de autenticación que el administrador puede controlar.|Microsoft 365 E3 o E5|
 |[Protección con contraseña de Azure AD](/azure/active-directory/authentication/concept-password-ban-bad)|Detectar y bloquear contraseñas débiles conocidas y sus variantes y términos débiles adicionales que son específicos de su organización. Las listas de contraseñas desvetadas global predeterminada se aplican automáticamente a todos los usuarios de un inquilino de Azure AD. Se puede definir entradas adicionales en una lista personalizada de contraseñas prohibidas. Cuando los usuarios cambien o restablezcan sus contraseñas, estas listas de contraseñas prohibidas se comprueban para exigir el uso de contraseñas seguras.|Microsoft 365 E3 o E5|
 |
 
@@ -194,7 +196,7 @@ Del mismo modo, para las aplicaciones confidenciales, crea el conjunto de direct
 
 Microsoft recomienda no crear conjuntos de directivas que se apliquen a todas las aplicaciones porque puede dar lugar a algunas configuraciones no deseadas. Por ejemplo, las directivas que bloquean todas las aplicaciones podrían bloquear a los administradores fuera de Azure Portal y las exclusiones no se pueden configurar para puntos de conexión importantes como Microsoft Graph.
 
-## <a name="steps-in-the-process-of-configuring-identity-and-device-access"></a>Pasos en el proceso de configuración de identidad y acceso a dispositivos
+## <a name="steps-to-configure-identity-and-device-access"></a>Pasos para configurar la identidad y el acceso a dispositivos
 
 ![Pasos para configurar la identidad y el acceso a dispositivos.](../../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 

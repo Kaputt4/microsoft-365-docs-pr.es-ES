@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7db7607d3ed9d6f1b215fb842d5b6dd2415a770a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: abc6b561c2fca8106397b1656432628c983e2ece
+ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934902"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51952697"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Prácticas recomendadas para la consulta de búsqueda avanzada
 
@@ -263,6 +263,9 @@ Hay varias funciones que puede usar para controlar eficazmente las cadenas que n
 | Direcciones IPv6 | [parse_ipv6()](/azure/data-explorer/kusto/query/parse-ipv6function)  | Convierta una dirección IPv4 o IPv6 en la notación IPv6 canónica. Para comparar direcciones IPv6, use [ipv6_compare()](/azure/data-explorer/kusto/query/ipv6-comparefunction). |
 
 Para obtener información sobre todas las funciones de análisis admitidas, [lea acerca de las funciones de cadena kusto](/azure/data-explorer/kusto/query/scalarfunctions#string-functions). 
+
+>[!NOTE]
+>Es posible que algunas tablas de este artículo no estén disponibles en Microsoft Defender para endpoint. [Activa Microsoft 365 Defender para](m365d-enable.md) buscar amenazas con más orígenes de datos. Puede mover los flujos de trabajo de búsqueda avanzados de Microsoft Defender para endpoint a Microsoft 365 Defender siguiendo los pasos descritos en Migrar consultas avanzadas de búsqueda desde [Microsoft Defender para endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Documentación del idioma de consulta de Kusto](/azure/data-explorer/kusto/query/)
