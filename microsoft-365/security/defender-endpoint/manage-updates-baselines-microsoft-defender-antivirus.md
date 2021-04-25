@@ -8,25 +8,27 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
+audience: ITPro
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b70cf96cde7d4dff8e2a4db6ce2469090dba7eb1
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: ae17aa6e2cb0cefd460ef0db0730570af8c84bb8
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765616"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995038"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar líneas base
 
 **Se aplica a:**
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
-- Microsoft Defender Antivirus
+- Antivirus de Microsoft Defender
 
 Hay dos tipos de actualizaciones relacionadas con la actualización del Antivirus de Microsoft Defender:
 
@@ -34,7 +36,8 @@ Hay dos tipos de actualizaciones relacionadas con la actualización del Antiviru
 - Actualizaciones de productos
 
 > [!IMPORTANT]
-> Mantener el Antivirus de Microsoft Defender actualizado es fundamental para garantizar que los dispositivos tienen la tecnología y las características más recientes necesarias para protegerse contra nuevas técnicas de malware y ataques.  
+> Mantener el Antivirus de Microsoft Defender actualizado es fundamental para garantizar que los dispositivos tienen la tecnología y las características más recientes necesarias para protegerse contra nuevas técnicas de malware y ataques.
+> 
 > Asegúrese de actualizar la protección antivirus incluso si Antivirus de Microsoft Defender se está ejecutando en [modo pasivo](./microsoft-defender-antivirus-compatibility.md).
 > 
 > Para ver el motor, la plataforma y la fecha de firma más actuales, visite las actualizaciones de inteligencia de seguridad para Antivirus de [Microsoft Defender y otros antimalware de Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates).
@@ -147,7 +150,7 @@ Después de publicar una nueva versión del paquete, la compatibilidad con las d
 &ensp;Publicado: **03 de diciembre de 2020**  
 &ensp;Plataforma: **4.18.2011.6**  
 &ensp;Motor: **1.1.17700.4**  
-&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**
     
 ### <a name="whats-new"></a>Novedades
 
@@ -163,7 +166,7 @@ Sin problemas conocidos
 &ensp;Publicado: **29 de octubre de 2020**  
 &ensp;Plataforma: **4.18.2010.7**  
 &ensp;Motor: **1.1.17600.5**  
-&ensp;Fase de soporte técnico: **Seguridad y actualizaciones críticas**
+&ensp;Fase de soporte técnico: **soporte técnico de actualización (solo)**
     
 ### <a name="whats-new"></a>Novedades
 
@@ -565,5 +568,5 @@ Para obtener más información, consulta [Actualización de Microsoft Defender p
 |[Administrar cómo se descargan y aplican las actualizaciones de protección](manage-protection-updates-microsoft-defender-antivirus.md) | Las actualizaciones de protección se pueden entregar a través de muchos orígenes. |
 |[Administrar cuándo se deben descargar y aplicar las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Puede programar cuándo deben descargarse las actualizaciones de protección. |
 |[Administrar actualizaciones de puntos de conexión que están des actualizadas](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Si un extremo pierde una actualización o un examen programado, puede forzar una actualización o examinar la próxima vez que un usuario inicia sesión. |
-|[Administrar actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md) | Puede configurar las actualizaciones de protección para que se descarguen al inicio o después de determinados eventos de protección entregados en la nube. |
-|[Administrar actualizaciones para dispositivos móviles y máquinas virtuales (VM)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Puede especificar la configuración, como si las actualizaciones deben producirse en la batería, que son especialmente útiles para dispositivos móviles y máquinas virtuales. |
+|[Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md) | Puede configurar las actualizaciones de protección para que se descarguen al inicio o después de determinados eventos de protección entregados en la nube. |
+|[Administrar las actualizaciones de dispositivos móviles y máquinas virtuales](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Puede especificar la configuración, como si las actualizaciones deben producirse en la batería, que son especialmente útiles para dispositivos móviles y máquinas virtuales. |

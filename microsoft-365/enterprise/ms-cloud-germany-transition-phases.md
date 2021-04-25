@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Summary: Understand the migration phases actions and impacts of moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: 121f2059e4a13684169ab40b7bfdaae13ef6045e
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+ms.openlocfilehash: 8e3e6fb228445823481b52d27e5a7b6c623349e2
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899253"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995026"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Fases de migración acciones e impactos para la migración desde Microsoft Cloud Deutschland
 
@@ -195,7 +195,7 @@ Para obtener más información sobre las diferencias de las organizaciones en la
 
 **Se aplica a:** Todos los clientes que usan Exchange Online<br>
 
-Las características back-end de Exchange Online Protection (EOP) se copian en la nueva región "Alemania". Exchange Online permite el enrutamiento desde hosts externos a Office 365 y se migran detalles del inquilino historial, que también incluye servicios back-end para características de seguridad y cumplimiento.
+Las características back-end de Exchange Online Protection (EOP) se copian en la nueva región "Alemania". Exchange Online permite el enrutamiento de hosts externos a Office 365 y se migran detalles históricos del inquilino, que también incluye servicios back-end para características de seguridad y cumplimiento.
 
 Los clientes que solo usan capacidades de Exchange Online (no híbridos) no necesitan prestar atención en esta fase.
 
@@ -226,6 +226,7 @@ En esta fase, Skype Empresarial se migrará a Microsoft Teams. Los clientes exis
 - Los contactos y las reuniones se migrarán a Microsoft Teams.
 - Los usuarios no podrán iniciar sesión en Skype Empresarial entre transiciones de servicio de tiempo a servicios de Office 365 y no hasta que se completen las entradas dns del cliente.
 - Los contactos y las reuniones existentes seguirán funcionando como reuniones de Skype Empresarial.
+- La versión del explorador web de Microsoft Teams no funcionará después de que se haya completado la fase 9.
 
 Si tiene que conectarse a Skype Empresarial Online con PowerShell una vez completada la fase de migración 9, use el siguiente código de PowerShell para conectarse:
 

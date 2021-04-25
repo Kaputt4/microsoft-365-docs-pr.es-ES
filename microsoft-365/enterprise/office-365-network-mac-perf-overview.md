@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Información general sobre la conectividad de red en el Centro de administración de Microsoft 365 (versión preliminar)
-ms.openlocfilehash: 99c05c18f3825680824854f86e469ab4aa8bbcba
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: c3ce053ecc859d3ac0cf53b0a132a7032ce6a87a
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860868"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994682"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Conectividad de red en el Centro de administración de Microsoft 365 (versión preliminar)
 
@@ -152,7 +152,9 @@ La página de resumen de ubicación de la oficina muestra, además, la evaluaci�
 
 Las comparaciones entre clientes de la misma ciudad se basan en la expectativa de que todos los clientes tengan el mismo acceso a proveedores de servicios de red, infraestructura de telecomunicaciones y puntos de presencia de red de Microsoft cercanos.
 
-La pestaña detalles de la página de ubicación de la oficina muestra los resultados de medida específicos que se usaron para obtener información, recomendaciones y la evaluación de la red. Esto se proporciona para que los ingenieros de red puedan validar las recomendaciones y factores en cualquier restricción o especificación en su entorno.
+Los nombres de ubicación se pueden personalizar al agregar una nueva ubicación o editar una ubicación existente en el menú desplegable de la ubicación. Esto le proporciona la flexibilidad para personalizar los nombres de ubicación en cualquier momento. Además, al agregar subredes LAN directamente en el menú desplegable de ubicación, se muestra una lista desplegable de subredes DE LAN coincidentes con software entre las que puede seleccionar. Los nombres de circuito para direcciones IP de salida de oficina específicas también se pueden agregar y editar.
+
+La pestaña detalles de la página de ubicación de la oficina muestra los resultados de medida específicos que se usaron para obtener información, recomendaciones y la evaluación de la red. Esto se proporciona para que los ingenieros de red puedan validar las recomendaciones y factores en cualquier restricción o especificación en su entorno. También encontrará el número estimado de usuarios para las muestras recopiladas en esa oficina, así como los trabajadores remotos de esa ciudad.
 
 > [!div class="mx-imgBorder"]
 > ![Detalles específicos de la ubicación](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)

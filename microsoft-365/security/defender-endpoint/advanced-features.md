@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 34ca51c066eddb65f2df0cf8a5d85732bd84a9c0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 15909684d07bac46fd42163cee545bc4752b61d4
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934374"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995014"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurar características avanzadas en Defender para endpoint
 
@@ -127,6 +127,8 @@ Para obtener más información, vea [Administrar indicadores](manage-indicators.
 Durante algunos tipos de ataques cibernéticos, los actores malos intentan deshabilitar las características de seguridad, como la protección antivirus, en las máquinas. A los actores malintencionados les gusta deshabilitar las características de seguridad para obtener un acceso más fácil a los datos, para instalar malware o para aprovechar sus datos, identidades y dispositivos.
 
 La protección contra alteraciones bloquea básicamente Antivirus de Microsoft Defender e impide que se cambie la configuración de seguridad a través de aplicaciones y métodos.
+
+Esta característica está disponible si su organización usa Antivirus de Microsoft Defender y la protección basada en la nube está habilitada. Para obtener más información, vea [Use next-generation technologies in Microsoft Defender Antivirus through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md).
 
 Mantenga activada la protección contra alteraciones para evitar cambios no deseados en la solución de seguridad y sus características esenciales.
 

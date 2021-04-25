@@ -19,12 +19,12 @@ description: Obtenga información sobre cómo EOP y Office 365 le protegen con c
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1820cab63abbbac09aa60a9c1684f3672882451
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 659a83c73b4fef9097aa317332c9951d53b09a33
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205659"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994990"
 ---
 # <a name="safety-tips-in-email-messages"></a>Sugerencias de seguridad en mensajes de correo electrónico
 
@@ -55,6 +55,6 @@ La sugerencia de seguridad , un mensaje codificado por colores, le advertirá so
 
 ## <a name="working-with-safety-tips"></a>Trabajar con sugerencias de seguridad
 
-Las sugerencias de seguridad siempre están habilitadas para Outlook en la web, aunque no todos los mensajes recibirán uno. Los administradores pueden desactivar las sugerencias de seguridad para otros clientes de correo electrónico como Outlook. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
+Los administradores pueden activar o desactivar las sugerencias de seguridad en las directivas contra correo no deseado. Para obtener más información, consulte [Configurar directivas contra correo electrónico no deseado en Office 365 ](configure-your-spam-filter-policies.md).
 
 Si no está de acuerdo con cómo EOP clasificó un mensaje (es decir, el mensaje no es correo no deseado o debería haber sido marcado como correo no deseado), puede enviar los mensajes a Microsoft para su análisis para ayudarle a mejorar su experiencia. Para obtener instrucciones, vea [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md). También puede hacer clic en el vínculo Comentarios de la sugerencia de seguridad para enviar comentarios directamente a Microsoft para ayudarnos a mejorar.

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: La movilidad y la seguridad básicas pueden ayudarle a proteger y administrar dispositivos móviles.
-ms.openlocfilehash: 468f06edf16eb6ea00fd4d26c716bc145474dd25
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 60de4e3f36427a69ecf0bf52e5dfd34f089991f3
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904281"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994978"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Capacidades de Movilidad y seguridad básicas
 
@@ -47,11 +47,9 @@ Puedes usar Movilidad y seguridad básicas para proteger y administrar los sigui
 
 <sup>1</sup> El control de acceso para dispositivos Windows 8.1 RT está limitado a Exchange ActiveSync.
 
-<sup>2</sup> El control de acceso para dispositivos Windows 8.1 RT está limitado a Exchange ActiveSync.
-El control de acceso para Windows 10 requiere una suscripción que incluya Azure AD Premium y el dispositivo debe unirse a Azure Active Directory.
+<sup>2</sup> El control de acceso para Windows 10 requiere una suscripción que incluya Azure AD Premium y el dispositivo debe unirse a Azure Active Directory.
 
-<sup>3</sup> El control de acceso para dispositivos Windows 8.1 RT está limitado a Exchange ActiveSync.
-Después de junio de 2020, las versiones de Android posteriores al 9 no pueden administrar la configuración de contraseña excepto en dispositivos Samsung Knox.
+<sup>3</sup> Después de junio de 2020, las versiones de Android posteriores al 9 no pueden administrar la configuración de contraseña excepto en dispositivos Samsung Knox.
 
 >[!NOTE]
 >Los dispositivos ya inscritos con versiones anteriores del sistema operativo siguen funcionando aunque las capacidades pueden cambiar sin previo aviso.
