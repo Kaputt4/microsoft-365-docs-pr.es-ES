@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Establecer la comprensión del contenido en el Project Cortex.
-ms.openlocfilehash: cc6fbfbfc130cc6e64b5d7c30e0a9db5f39036ac
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2f9fd4e035152a127f9f1c254f4c489a6ca4c976
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051572"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994711"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurar SharePoint Syntex
 
@@ -59,6 +59,8 @@ Si tiene 300 o más licencias de SharePoint Syntex en su organización, se le as
 
 Puede estimar la capacidad del Generador de IA que lo hace adecuado para usted con la calculadora del [Generador de IA](https://powerapps.microsoft.com/ai-builder-calculator).
 
+Si planea utilizar un entorno de Power Platform personalizado, debe [asignar créditos a ese entorno](/power-platform/admin/capacity-add-on).
+
 Vaya al [Centro de administración de la Power Platform](https://admin.powerplatform.microsoft.com/resources/capacity) para comprobar sus créditos y el uso.
 
 ## <a name="to-set-up-sharepoint-syntex"></a>Para configurar SharePoint Syntex
@@ -80,11 +82,21 @@ Vaya al [Centro de administración de la Power Platform](https://admin.powerplat
       - **No hay bibliotecas de SharePoint** si no quiere que esté disponible para ningún sitio (puede cambiar esto después de la configuración).
 
    > [!div class="mx-imgBorder"]
-   > ![Configurar el procesamiento del formulario](../media/content-understanding/admin-configforms.png)
+   > ![Configurar las opciones del sitio de procesamiento de formularios](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > Quitando un sitio después de incluirlo no afecta a los modelos existentes aplicados a las bibliotecas de ese sitio ni a la capacidad de aplicar modelos de comprensión de documentos a una biblioteca. 
     
+    Si tiene varios entornos de Power Platform configurados, puede elegir cuál desea usar para el procesamiento de formularios. (Esta opción no aparecerá si solo tiene un entorno).
+
+    ![Configurar las opciones de Power Platform de procesamiento de formularios](../media/content-understanding/setup-power-platform-env.png)
+
+    Para el **entorno de Power Platform**, puede seleccionar:
+    - **Usar el entorno predeterminado** para utilizar su entorno de Power Platform predeterminado.
+    - **Usar un entorno personalizado** para utilizar un entorno personalizado. De la lista, elija el entorno que quiera utilizar. Debe instalar la aplicación *AI Builder para Proyecto Cortex* en este entorno y asignarle créditos de AI Builder antes de poder crear modelos de procesamiento de formularios.
+
+    Haga clic en **Siguiente**.
+
 5. En la página **Crear centro de contenido**, puede crear un sitio de centro de contenido de SharePoint en el que sus usuarios puedan crear y administrar modelos de comprensión de documentos.
 
     1. Para el **Nombre del sitio**, escriba el nombre que quiere darle a su sitio de centro de contenido.
@@ -126,3 +138,5 @@ Para asignar licencias:
 [Visión general del modelo de procesamiento de formularios](/ai-builder/form-processing-model-overview)
 
 [Paso a paso: cómo crear un modelo de comprensión de documentos (video)](https://www.youtube.com/watch?v=DymSHObD-bg)
+
+[Crear y administrar entornos en el Centro de administración de la Power Platform](/power-platform/admin/create-environment)
