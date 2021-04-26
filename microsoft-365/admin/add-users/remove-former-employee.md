@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Siga esta lista de comprobación para quitar un empleado de Microsoft 365 y proteger los datos. '
-ms.openlocfilehash: 50355a20e0d0e8ff782deebd9be65fdabf875bb2
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ec2dd37a38c2509c2aa6a904326b74c8d3b8d7fb
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860778"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024006"
 ---
 # <a name="remove-or-delete-a-former-employee"></a>Quitar o eliminar un antiguo empleado
 
@@ -42,7 +42,7 @@ Vea un breve vídeo sobre cómo quitar a un empleado. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
 
 Para evitar que un empleado inicia sesión:
 

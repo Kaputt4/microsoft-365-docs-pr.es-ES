@@ -19,15 +19,14 @@ description: Use el Explorador y las detecciones en tiempo real en el Centro de 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0dcda063fc544c88157cff21b8a28f7a84a6a6fb
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c6bea6cb60579263515d21e159c4032fe4281cad
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934710"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024186"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
-
 
 **Se aplica a**
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
@@ -35,6 +34,9 @@ ms.locfileid: "51934710"
 
 Si su organización tiene [Microsoft Defender para Office 365](defender-for-office-365.md)y tiene los permisos necesarios, tiene detecciones en tiempo **real** o **explorador** (anteriormente informes en tiempo *real,* vea las novedades [!).](#new-features-in-threat-explorer-and-real-time-detections) [](#required-licenses-and-permissions) En el Centro de & cumplimiento, vaya a **Administración** de amenazas y, a continuación, elija **Explorador**  o **Detecciones en** tiempo real.
 
+<br>
+
+****
 
 |Con Microsoft Defender para Office 365 Plan 2, verá:|Con Microsoft Defender para Office 365 Plan 1, verá:|
 |---|---|
@@ -55,8 +57,9 @@ Con este informe, puede:
 ## <a name="improvements-to-threat-hunting-experience"></a>Mejoras en la experiencia de búsqueda de amenazas
 
 ### <a name="introduction-of-alert-id-for-mdo-alerts-within-explorerreal-time-detections-preview"></a>Introducción del identificador de alerta para alertas de MDO en detecciones en tiempo real o explorador (versión preliminar)
+
 Hoy en día, si navega desde una alerta al Explorador de amenazas, abre una vista filtrada en el Explorador, con la vista filtrada por el identificador de directiva de alerta (el identificador de directiva es un identificador único de una directiva de alerta).
-Estamos haciendo que esta integración sea más relevante mediante la introducción del identificador de alerta (vea un ejemplo de identificador de alerta a continuación) en el Explorador de amenazas y detecciones en tiempo real para que vea los mensajes que son relevantes para la alerta específica, así como un recuento de correos electrónicos. También podrá ver si un mensaje formaba parte de una alerta, así como navegar de ese mensaje a la alerta específica.  
+Estamos haciendo que esta integración sea más relevante mediante la introducción del identificador de alerta (vea un ejemplo de identificador de alerta a continuación) en el Explorador de amenazas y detecciones en tiempo real para que vea los mensajes que son relevantes para la alerta específica, así como un recuento de correos electrónicos. También podrá ver si un mensaje formaba parte de una alerta, así como navegar de ese mensaje a la alerta específica.
 
 El identificador de alerta está disponible dentro de la dirección URL cuando se ve una alerta individual; un ejemplo es `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1` .
 
@@ -66,11 +69,13 @@ El identificador de alerta está disponible dentro de la dirección URL cuando s
 > [!div class="mx-imgBorder"]
 > ![Identificador de alerta en el menú desplegable de detalles](../../media/AlertID-DetailsFlyout.png)
 
- 
-### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>Ampliar el límite de retención de datos y búsqueda del Explorador (y detecciones en tiempo real) para los inquilinos de prueba de 7 a 30 días (versión preliminar)  
-Como parte de este cambio, podrá buscar y filtrar datos de correo electrónico durante 30 días (un aumento con respecto a los 7 días anteriores) en el Explorador de amenazas/Detecciones en tiempo real para inquilinos de prueba de Defender para Office P1 y P2. Esto no afecta a los inquilinos de producción para clientes de P1 y P2/E5, que ya tienen capacidades de búsqueda y retención de datos de 30 días. 
+### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>Ampliar el límite de retención de datos y búsqueda del Explorador (y detecciones en tiempo real) para los inquilinos de prueba de 7 a 30 días (versión preliminar)
 
-### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>Límites actualizados para la exportación de registros para el Explorador de amenazas (versión preliminar) 
+Como parte de este cambio, podrá buscar y filtrar datos de correo electrónico durante 30 días (un aumento con respecto a los 7 días anteriores) en el Explorador de amenazas/Detecciones en tiempo real para inquilinos de prueba de Defender para Office P1 y P2.
+Esto no afecta a los inquilinos de producción para clientes de P1 y P2/E5, que ya tienen capacidades de búsqueda y retención de datos de 30 días.
+
+### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>Límites actualizados para la exportación de registros para el Explorador de amenazas (versión preliminar)
+
 Como parte de esta actualización, el número de filas de registros de correo electrónico que se pueden exportar desde el Explorador de amenazas aumenta de 9990 a 200 000 registros. El conjunto de columnas que se pueden exportar actualmente seguirá siendo el mismo, pero el número de filas aumentará desde el límite actual.
 
 ### <a name="tags-in-threat-explorer"></a>Etiquetas en el Explorador de amenazas
@@ -99,6 +104,7 @@ Puede usar etiquetas como filtro. Busca solo entre cuentas de prioridad o escena
 > ![Etiquetas sin filtro](../../media/tags-filter-not.png)
 
 #### <a name="email-detail-flyout"></a>Flyout de detalles de correo electrónico
+
 Para ver las etiquetas individuales del remitente y el destinatario, seleccione el asunto para abrir el control desplegable de detalles del mensaje. En la **pestaña Resumen,** las etiquetas de remitente y destinatario se muestran por separado, si están presentes para un correo electrónico.
 La información sobre las etiquetas individuales del remitente y el destinatario también se extiende a los datos CSV exportados, donde puede ver estos detalles en dos columnas independientes.
 
@@ -107,13 +113,12 @@ La información sobre las etiquetas individuales del remitente y el destinatario
 
 La información de etiquetas también se muestra en el control desplegable de clics de dirección URL. Para verlo, vaya a la vista Phish o All Email y, a continuación, a la pestaña **Url o** **Url Clicks.** Seleccione un control desplegable de dirección URL individual para ver detalles adicionales acerca de los clics de esa dirección URL, incluidas las etiquetas asociadas con ese clic.
 
-
 ### <a name="updated-timeline-view"></a>Vista de escala de tiempo actualizada
 
 > [!div class="mx-imgBorder"]
 > ![Etiquetas URL](../../media/tags-urls.png)
-> 
-Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4). 
+>
+Obtenga más información con [este vídeo](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4).
 
 ## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>Mejoras en la experiencia de búsqueda de amenazas (próximamente)
 
@@ -174,6 +179,7 @@ Actualmente, se muestra la ubicación de entrega en la cuadrícula de correo ele
 *Se aplicaron* acciones adicionales después de la entrega del correo electrónico. Pueden incluir *ZAP,* *corrección manual* (acción realizada por un administrador como la eliminación *temporal),* entrega dinámica y *reprocesamiento* (para un correo electrónico que se detectó retroactivamente como bueno).
 
 > [!NOTE]
+>
 > - Como parte de los cambios pendientes, el valor "Eliminado por ZAP" que se muestra actualmente en el filtro Acción de entrega desaparece. Tendrás una forma de buscar todo el correo electrónico con el intento de ZAP a través **de acciones adicionales**.
 >
 > - Habrá nuevos campos y valores para las tecnologías **de** detección y **acciones adicionales** (especialmente para escenarios de ZAP). Deberá evaluar las consultas guardadas existentes y las consultas de seguimiento para asegurarse de que funcionan con los nuevos valores.
@@ -207,12 +213,9 @@ Las mejoras incluyen:
 - Muestra la dirección URL con clic completo (incluidos los parámetros de consulta que forman parte de la dirección URL) en la sección **Clics** del control desplegable url. Actualmente, el dominio de dirección URL y la ruta de acceso aparecen en la barra de título. Estamos ampliando esa información para mostrar la dirección URL completa.
 
 - Correcciones entre filtros de  dirección URL *(dirección URL* frente a dominio url frente a dominio y ruta de acceso): las actualizaciones afectan a la búsqueda de mensajes que contienen una dirección URL/veredicto de clic. Habilitamos la compatibilidad con búsquedas independientes del protocolo, por lo que puede buscar una dirección URL sin usar `http` . De forma predeterminada, la búsqueda de dirección URL se asigna a http, a menos que se especifique explícitamente otro valor. Por ejemplo:
-
-   -  Busque con y sin el prefijo en los `http://` campos **de filtro Url,** **Url Domain** y URL Domain **y Path.** Las búsquedas deben mostrar los mismos resultados.
-
-   -  Busque el prefijo `https://` en **dirección URL**. Cuando no se especifica ningún valor, se `http://` asume el prefijo.
-
-   - `/`se omite al principio y al final de los campos Url **path**, **URL Domain,** **URL domain y path.** `/` al final del campo **dirección URL** se omite.
+  - Busque con y sin el prefijo en los `http://` campos **de filtro Url,** **Url Domain** y URL Domain **y Path.** Las búsquedas deben mostrar los mismos resultados.
+  - Busque el prefijo `https://` en **dirección URL**. Cuando no se especifica ningún valor, se `http://` asume el prefijo.
+  - `/`se omite al principio y al final de los campos Url **path**, **URL Domain,** **URL domain y path.** `/` al final del campo **dirección URL** se omite.
 
 ### <a name="phish-confidence-level"></a>Nivel de confianza de phish
 
@@ -290,16 +293,16 @@ Podrá ver tanto el GUID como el nombre de las reglas de transporte que se aplic
 
 > [!IMPORTANT]
 > La búsqueda etr y la disponibilidad de nombres dependen del rol específico que se le asigne. Debe tener uno de los siguientes roles o permisos para ver los nombres y la búsqueda de ETR. Si no tiene ninguna de estas funciones asignadas, no puede ver los nombres de las reglas de transporte ni buscar mensajes mediante nombres ETR. Sin embargo, puede ver la etiqueta ETR y la información guid en los detalles del correo electrónico. No se ven afectadas otras experiencias de visualización de registros en cuadrículas de correo electrónico, control de envío de correo electrónico, filtros y exportación.
-> 
+>
 > - Solo EXO: prevención de pérdida de datos: todos
 > - EXO Only - O365SupportViewConfig: All
 > - Microsoft Azure Active Directory o EXO: administrador de seguridad: todos
 > - AAD o EXO: lector de seguridad: todos
 > - Solo EXO: reglas de transporte: todas
 > - Solo EXO: View-Only configuración: todo
-> 
+>
 > Dentro de la cuadrícula de correo electrónico, el control desplegable Detalles y csv exportado, los ETR se presentan con un Nombre/GUID como se muestra a continuación.
-> 
+>
 > > [!div class="mx-imgBorder"]
 > > ![Reglas de transporte de Exchange](../../media/ETR_Details.png)
 
@@ -315,7 +318,7 @@ La búsqueda de conectores tiene un carácter "contiene", lo que significa que l
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Nuevas características en el Explorador de amenazas y detecciones en tiempo real
 
 - [Ver correos electrónicos de suplantación de identidad enviados a usuarios y dominios suplantados](#view-phishing-emails-sent-to-impersonated-users-and-domains)
--  [Vista previa del encabezado de correo electrónico y descarga del cuerpo del correo electrónico](#preview-email-header-and-download-email-body)
+- [Vista previa del encabezado de correo electrónico y descarga del cuerpo del correo electrónico](#preview-email-header-and-download-email-body)
 - [Escala de tiempo del correo electrónico](#email-timeline)
 - [Exportar datos de clic de dirección URL](#export-url-click-data)
 
@@ -339,7 +342,7 @@ En este ejemplo se usa el Explorador de amenazas.
 
 4. Seleccione el Asunto de cualquier mensaje en la pestaña Correo > pestaña Detalles para ver información de suplantación adicional como Dominio suplantado / Ubicación detectada.
 
-    **OR** 
+    **OR**
 
     Seleccione **Usuario suplantado y** escriba la dirección de correo electrónico de un usuario protegido en el cuadro de texto.
 
@@ -351,7 +354,7 @@ En este ejemplo se usa el Explorador de amenazas.
     :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Panel de detalles del Explorador de amenazas para un usuario protegido que muestra la ubicación de detección y la amenaza que se detectó (aquí suplantación de identidad de un usuario).":::
 
 > [!NOTE]
-> En los pasos 3 o  5,  si elige Tecnología  de detección y selecciona Dominio de suplantación o Usuario de suplantación respectivamente, la información de la pestaña Detalles de la pestaña Correo electrónico sobre el usuario o dominio, y la ubicación detectada solo se mostrará en los mensajes relacionados con el usuario o dominio enumerados en la página Directiva contra suplantación de   >   identidad.   
+> En los pasos 3 o  5,  si elige Tecnología  de detección y selecciona Dominio de suplantación o Usuario de suplantación respectivamente, la información de la pestaña Detalles de la pestaña Correo electrónico sobre el usuario o dominio, y la ubicación detectada solo se mostrará en los mensajes relacionados con el usuario o dominio enumerados en la página Directiva contra suplantación de   >   identidad.  
 
 ### <a name="preview-email-header-and-download-email-body"></a>Vista previa del encabezado de correo electrónico y descarga del cuerpo del correo electrónico
 
@@ -366,16 +369,26 @@ Las detecciones en tiempo real y explorador también recibirán nuevos campos qu
 
 *La acción de* entrega es la acción realizada en un correo electrónico debido a las directivas o detecciones existentes. Estas son las acciones posibles para un correo electrónico:
 
+<br>
+
+****
+
 |Entregado|Junked|Blocked|Reemplazado|
 |---|---|---|---|
 |El correo electrónico se entregó a la bandeja de entrada o carpeta de un usuario y el usuario puede acceder a él.|El correo electrónico se envió a la carpeta Correo no deseado o Eliminado del usuario y el usuario puede acceder a él.|Mensajes de correo electrónico que están en cuarentena, que han fallado o que se han eliminado. Estos correos no son accesibles para el usuario.|El correo electrónico tenía datos adjuntos malintencionados reemplazados por archivos .txt que den como que los datos adjuntos son malintencionados.|
+|
 
 Esto es lo que el usuario puede y no puede ver:
+
+<br>
+
+****
 
 |Accesible para usuarios finales|Inaccesible para los usuarios finales|
 |---|---|
 |Entregado|Blocked|
 |Junked|Reemplazado|
+|
 
 **La ubicación de** entrega muestra los resultados de las directivas y detecciones que se ejecutan después de la entrega. Está vinculado a la **_acción Entrega._** Estos son los valores posibles:
 

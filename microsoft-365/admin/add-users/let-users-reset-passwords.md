@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Obtén información sobre cómo puedes restablecer las contraseñas con la herramienta de restablecimiento de contraseñas de autoservicio.
-ms.openlocfilehash: f43c409e98aa98e942bd7c7cbb15302422df241d
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0842430eda8c96647dd12d0da6d0c9e0481346dc
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222128"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023766"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
@@ -52,7 +52,7 @@ Debe ser administrador global o administrador [de contraseñas](about-admin-role
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
 
 ## <a name="steps-let-people-reset-their-own-passwords"></a>Pasos: permitir que los usuarios restablezcan sus propias contraseñas
 
@@ -94,4 +94,4 @@ Siga estos pasos para activar el restablecimiento de contraseña de autoservicio
 
 [Establecer la contraseña de un usuario individual que nunca caduque](set-password-to-never-expire.md)
 
-[Vídeos de aprendizaje de Microsoft 365 Empresa](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vídeos de aprendizaje de Microsoft 365 Empresa](../../business-video/index.yml)

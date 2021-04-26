@@ -1,5 +1,5 @@
 ---
-title: Localización de la experiencia del usuario
+title: Localizar la experiencia del usuario
 description: Cómo localización de dispositivos para usuarios
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
@@ -12,14 +12,14 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 20456ce837be60b707569ae07d4fb00b695b3a98
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 354f61284bbd95c1c7ca4cd50459a1644a89d090
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51446046"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023266"
 ---
-# <a name="localize-the-user-experience"></a>Localización de la experiencia del usuario
+# <a name="localize-the-user-experience"></a>Localizar la experiencia del usuario
 
 Los usuarios de dispositivos de Escritorio administrado de Microsoft pueden seleccionar el idioma que prefieran durante el proceso de configuración (la "experiencia de salida") o después.
 
@@ -62,43 +62,43 @@ Si vas a volver a usar dispositivos existentes, es posible que debas trabajar co
 
 La [imagen universal proporcionada](../service-description/device-images.md#universal-image) por Microsoft Managed Desktop incluye estos idiomas y para Windows 10:
 
+- Árabe
+- Búlgaro
+- Chino simplificado
+- Chino tradicional
+- Croata
+- Checo
+- Danés  
+- Neerlandés  
 - Inglés (US, GB, AU, CA, IN)
-- Español (España, México)
-- Japonés
+- Estonio
+- Finés 
 - Francés (Francia, Canadá)
 - Alemán
-- Portugués (Brasil)
-- Italiano
-- Chinese Simplified
-- Neerlandés  
-- Sueco
-- Danés  
-- Finés 
-- Ruso 
-- Noruego (Bokmal)
-- Coreano
-- Chinese Traditional
-- Polaco
-- Turco
-- Árabe
-- Hebreo
-- Portugués (Portugal)
-- Checo
-- Húngaro
-- Tailandés
-- Indonesio
 - Griego
-- Eslovaco
-- Vietnamita
-- Esloveno
-- Croata
-- Rumano
-- Lituano
-- Búlgaro
-- Serbio (alfabeto latino)
+- Hebreo
+- Húngaro
+- Indonesio
+- Italiano
+- Japonés
+- Coreano
 - Letón
+- Lituano
+- Noruego (bokmal)
+- Polaco
+- Portugués (Brasil)
+- Portugués (Portugal)
+- Rumano
+- Ruso 
+- Serbio (alfabeto latino)
+- Eslovaco
+- Esloveno
+- Español (España, México)
+- Sueco
+- Tailandés
+- Turco
 - Ucraniano
-- Estonio
+- Vietnamita
 
 Aplicaciones de Microsoft 365 para empresas puede admitir una lista ligeramente diferente.
 

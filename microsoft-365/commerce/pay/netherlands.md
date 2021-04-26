@@ -12,12 +12,12 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: Obtén información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c95f64b96868bc0854e8da8595b201b9df8d04d2
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: ff33c5ffd09c5a5ecbe23878b8f5a6d461d3fbba
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543045"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024054"
 ---
 # <a name="payment-information-for-netherlands"></a>Información de pago para Países Bajos
 
@@ -42,3 +42,5 @@ Código SWIFT: CITIIE2X\
 Código IBAN: IE70CITI99005170000128\
 Número de cuenta: 70000128\
 Nombre de cuenta: MICROSOFT
+
+Las facturas emitidas desde una subsidiaria local de Microsoft se emiten con la tasa estándar de IVA/Impuestos de ventas/GST y se consideran una oferta nacional de servicios para fines de IVA/Impuesto de ventas/GST.

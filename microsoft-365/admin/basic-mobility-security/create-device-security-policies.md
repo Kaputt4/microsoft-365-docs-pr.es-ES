@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Usa Movilidad y seguridad básicas para crear directivas de dispositivo que protejan la información de la organización.
-ms.openlocfilehash: f31930f1a753259622520e50da8c255e7cd410e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5abd27f963208140a53cfd885152301992830b5e
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904293"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023910"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Crear directivas de seguridad de dispositivos en Movilidad y seguridad básicas
 
@@ -36,7 +36,7 @@ Puedes usar Movilidad y seguridad básicas para crear directivas de dispositivo 
 
 - Obtén información sobre los dispositivos, las aplicaciones de dispositivos móviles y la configuración de seguridad que admite movilidad básica y seguridad. Vea [Capabilities of Basic Mobility and Security](capabilities.md).
 - Cree grupos de seguridad que incluyan usuarios de Microsoft 365 a los que desee implementar directivas y para los usuarios que desee excluir del acceso bloqueado a Microsoft 365. Antes de implementar una nueva directiva en la organización, se recomienda probarla implementándola para un número reducido de usuarios. Puede crear y usar un grupo de seguridad que incluya solo usted o un número reducido de usuarios de Microsoft 365 que puedan probar la directiva por usted. Para obtener más información acerca de los grupos de seguridad, vea [Crear, editar o eliminar un grupo de seguridad.](../email/create-edit-or-delete-a-security-group.md)
-- Para crear e implementar directivas básicas de movilidad y seguridad en Microsoft 365, debe ser administrador global de Microsoft 365. Para obtener más información, consulta [Permisos en el Centro de seguridad & cumplimiento](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1).
+- Para crear e implementar directivas básicas de movilidad y seguridad en Microsoft 365, debe ser administrador global de Microsoft 365. Para obtener más información, consulta [Permisos en el Centro de seguridad & cumplimiento](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 - Antes de implementar directivas, haga que su organización conozca los posibles impactos de inscribir un dispositivo en Movilidad y seguridad básicas. Según cómo configure las directivas, los dispositivos no compatibles pueden bloquearse para acceder a Microsoft 365 y los datos, incluidas las aplicaciones instaladas, las fotos y la información personal de un dispositivo inscrito, y los datos se pueden eliminar.
 
 >[!NOTE]
@@ -85,7 +85,7 @@ La directiva se inserta en el dispositivo móvil de cada usuario que la directiv
 
 ## <a name="step-4-block-email-access-for-unsupported-devices"></a>Paso 4: Bloquear el acceso de correo electrónico para dispositivos no compatibles
 
-Para ayudar a proteger la información de la organización, debes bloquear el acceso de la aplicación al correo electrónico de Microsoft 365 para dispositivos móviles que no son compatibles con movilidad y seguridad básicas. Para obtener una lista de dispositivos compatibles, consulta [Dispositivos compatibles.](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices)
+Para ayudar a proteger la información de la organización, debes bloquear el acceso de la aplicación al correo electrónico de Microsoft 365 para dispositivos móviles que no son compatibles con movilidad y seguridad básicas. Para obtener una lista de dispositivos compatibles, consulta [Dispositivos compatibles.](../../admin/basic-mobility-security/capabilities.md)
 
 **Para bloquear el acceso a la aplicación:**
 

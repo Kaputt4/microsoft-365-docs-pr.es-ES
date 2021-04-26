@@ -15,12 +15,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Encuentre la información más reciente sobre cómo hacerlo, sugerencias, recursos y instrucciones sobre el trabajo remoto para empresas que usan Microsoft 365.
-ms.openlocfilehash: 3ef8bb3527e6be258eda8d745d841e8bd81cdd6c
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5bdff59f3d07c59951c6da87d7b28432fb7c5878
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860588"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023742"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>Capacitar a su pequeña empresa con trabajo remoto
 
@@ -37,9 +37,9 @@ A medida que las empresas se adaptan a la creciente necesidad de que las persona
 
 A la luz del brote de COVID-19 (Coronavirus novel), muchos propietarios de empresas se encuentran con un personal de trabajo completamente remoto. Esto es lo que puede hacer para hacer una transición al trabajo remoto seguro y productivo.
 
-Para obtener más información, vea [Introducción a Microsoft Teams en su pequeña empresa.](https://support.microsoft.com/office/get-started-with-microsoft-teams-in-your-small-business-184f1aba-2f91-43f0-86e1-9fae607e24f6)
+Para obtener más información, vea [Introducción a Microsoft Teams en su pequeña empresa.](../../business-video/get-started-teams-small-business.md)
 
-¿Ya tienes una suscripción pero necesitas configurarla? Consulte [Microsoft 365 small business training](https://support.microsoft.com/office/set-up-your-small-business-6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+¿Ya tienes una suscripción pero necesitas configurarla? Consulte [Microsoft 365 small business training](../../business-video/index.yml).
 
 ## <a name="connect-with-employees-and-customers"></a>Conectarse con empleados y clientes
 
@@ -49,19 +49,19 @@ Todavía puede conectarse con empleados, clientes, clientes y partners, incluso 
 
 Hospedar reuniones de audio, vídeo y web con empleados, clientes o partners a través de Microsoft Teams.
 
-Para obtener más información, vea [Host online meetings](https://support.microsoft.com/topic/host-online-meetings-for-your-business-d5101f5c-30e3-4097-bb10-6d2fdeb9cf53) y [Chat with employees and customers](https://support.microsoft.com/office/chat-with-employees-and-customers-65748808-a403-462c-a6e1-b169e5bc6c92).
+Para obtener más información, vea [Host online meetings](../../business-video/start-and-pin-chats.md) y [Chat with employees and customers](https://support.microsoft.com/office/chat-with-employees-and-customers-65748808-a403-462c-a6e1-b169e5bc6c92).
 
 ### <a name="store-and-share-files"></a>Almacenar y compartir archivos
 
 Coloque los documentos empresariales en la nube y compárlos de forma segura, tanto interna como externamente.
 
-Para obtener más información, vea esta [introducción al uso compartido de archivos empresariales](https://support.microsoft.com/topic/share-your-business-files-overview-6725104a-6df7-4778-99c4-c06217dffecc) y Cargar y compartir [archivos](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12).
+Para obtener más información, vea esta [introducción al uso compartido de archivos empresariales](../../business-video/overview-file-sharing.md) y Cargar y compartir [archivos](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12).
 
 ### <a name="collaborate-with-customers"></a>Colaborar con clientes
 
 Invite a empleados y clientes a un equipo para que pueda trabajar directamente con ellos para coordinar y colaborar todo en un solo lugar.
 
-Para obtener más información, vea [Create a team y](https://support.microsoft.com/office/create-a-team-with-guests-11fbb083-52ee-434d-8c6e-63711fdafac7) Enable guest [access](https://docs.microsoft.com/MicrosoftTeams/guest-joins).
+Para obtener más información, vea [Create a team y](../../business-video/team-with-guests.md) Enable guest [access](/MicrosoftTeams/guest-access).
 
 ## <a name="manage-and-secure-your-business-to-run-remotely"></a>Administrar y proteger su empresa para que se ejecute de forma remota
 
@@ -71,13 +71,13 @@ Solo unos pocos pasos pueden ayudarle a mantener su empresa segura, incluso con 
 
 Usa la autenticación multifactor para proteger tus datos y dispositivos.
 
-Para obtener más información, [vea Activar la autenticación multifactor](https://support.microsoft.com/office/secure-employee-accounts-with-mfa-in-microsoft-365-business-e12187b8-216a-4490-9e3b-df34a06fb787).
+Para obtener más información, [vea Activar la autenticación multifactor](../../business-video/turn-on-mfa.md).
 
 ### <a name="secure-your-devices"></a>Proteger sus dispositivos
 
 Administre equipos y teléfonos de forma remota y asegúrese de que están protegidos y actualizados. Requiere Microsoft 365 Empresa.
 
-Para obtener más información, consulta [Administrar dispositivos](https://support.microsoft.com/office/manage-policies-for-windows-10-pcs-5b5aec9e-e267-463a-bc39-54753375e579).
+Para obtener más información, consulta [Administrar dispositivos](../../business-video/secure-win-10-pro-devices.md).
 
 ### <a name="more-for-admins-and-partners"></a>Más para administradores y partners
 

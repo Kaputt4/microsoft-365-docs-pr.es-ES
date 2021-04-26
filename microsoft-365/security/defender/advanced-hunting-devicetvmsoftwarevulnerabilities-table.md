@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 24da8f556fe9f8a3b8172afe87ea9a87e4522d44
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 17faffc45cfd1f472dec3f423681aaa3f64944a3
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934830"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023814"
 ---
 # <a name="devicetvmsoftwarevulnerabilities"></a>DeviceTvmSoftwareVulnerabilities
 
@@ -34,6 +34,7 @@ ms.locfileid: "51934830"
 
 **Se aplica a:**
 - Microsoft 365 Defender
+- Microsoft Defender para punto de conexión
 
 >[!IMPORTANT]
 > Parte de la información se refiere a productos preliminares que pueden ser modificados sustancialmente antes de su lanzamiento comercial. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información que aquí se proporciona.
@@ -56,9 +57,9 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | `SoftwareName` | cadena | Nombre del producto de software |
 | `SoftwareVersion` | cadena | Número de versión del producto de software |
 | `CveId` | cadena | Identificador único asignado a la vulnerabilidad de seguridad en el sistema de vulnerabilidades y exposiciones comunes (CVE) |
-| `VulnerabilitySeverityLevel` | cadena | Nivel de gravedad asignado a la vulnerabilidad de seguridad basada en la puntuación CVSS y los factores dinámicos influidos por el panorama de amenazas |
+| `VulnerabilitySeverityLevel` | string | Nivel de gravedad asignado a la vulnerabilidad de seguridad basada en la puntuación CVSS y los factores dinámicos influidos por el panorama de amenazas |
 | `RecommendedSecurityUpdate` | cadena | Nombre o descripción de la actualización de seguridad proporcionada por el proveedor de software para solucionar la vulnerabilidad |
-| `RecommendedSecurityUpdateId` | cadena | Identificador de las actualizaciones de seguridad o el identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes |
+| `RecommendedSecurityUpdateId` | string | Identificador de las actualizaciones de seguridad o el identificador aplicables para los artículos de guía o knowledge base (KB) correspondientes |
 
 
 

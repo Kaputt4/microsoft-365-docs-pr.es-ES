@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Preguntas más frecuentes sobre movilidad básica y seguridad.
-ms.openlocfilehash: a538c0b3f9fa6a4bf1861734fc9dea94030760a3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 14e12678ec210325f63914594fb6debcf7abb880
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906269"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023898"
 ---
 # <a name="basic-mobility-and-security-frequently-asked-questions-faq"></a>Preguntas más frecuentes sobre movilidad básica y seguridad (FAQ)
 
@@ -51,7 +51,7 @@ Para obtener más información, vea [Set up Basic Mobility and Security](set-up.
 
 ## <a name="im-trying-to-set-up-basic-mobility-and-security-but-it-seems-stuck-the-microsoft-365-service-health-has-been-showing-provisioning-for-a-while-what-can-i-do"></a>Estoy intentando configurar la movilidad básica y la seguridad, pero parece que está atascado. El estado del servicio de Microsoft 365 ha estado mostrando "aprovisionamiento" durante un tiempo. ¿Qué puedo hacer?
 
-El servicio puede tardar algún tiempo en prepararse para usted. Cuando se complete el aprovisionamiento, verá la página Movilidad y seguridad básicas. Si ha esperado 24 horas y el estado sigue aprovisionamiento, póngase en contacto con el soporte técnico y le ayudaremos a averiguar cuál es el problema. Para obtener opciones de soporte técnico, [vea ¿Todavía necesita ayuda?](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp).
+El servicio puede tardar algún tiempo en prepararse para usted. Cuando se complete el aprovisionamiento, verá la página Movilidad y seguridad básicas. Si ha esperado 24 horas y el estado sigue aprovisionamiento, póngase en contacto con el soporte técnico y le ayudaremos a averiguar cuál es el problema.
 
 ## <a name="what-can-i-do-if-device-enrollment-fails"></a>¿Qué puedo hacer si se produce un error en la inscripción de dispositivos?
 
@@ -73,7 +73,7 @@ La movilidad y la seguridad básicas se hospedan en el servicio de Intune. Es un
 
 ## <a name="how-do-policies-work-for-basic-mobility-and-security-how-do-i-set-them-up-disable-them"></a>¿Cómo funcionan las directivas para movilidad y seguridad básicas? ¿Cómo los puedo configurar? ¿Deshabilitarlos?
 
-Después de completar la configuración inicial de Movilidad y seguridad básicas, se crean directivas y se aplican a grupos de usuarios en el Centro de seguridad & cumplimiento. Las directivas requieren que los usuarios de las directivas inscriban sus dispositivos en Movilidad y seguridad básicas antes de poder usar el dispositivo para obtener acceso a los datos de Microsoft 365. Las directivas configuradas determinan la configuración de dispositivos móviles, por ejemplo, la frecuencia con la que se deben restablecer las contraseñas o si se requiere cifrado de datos. Para obtener más información, vea [Create device security policies in Basic Mobility and Security](create-device-security-policies.md)y Microsoft   [365 compliance center](https://support.microsoft.com/office/7e696a40-b86b-4a20-afcc-559218b7b1b8).
+Después de completar la configuración inicial de Movilidad y seguridad básicas, se crean directivas y se aplican a grupos de usuarios en el Centro de seguridad & cumplimiento. Las directivas requieren que los usuarios de las directivas inscriban sus dispositivos en Movilidad y seguridad básicas antes de poder usar el dispositivo para obtener acceso a los datos de Microsoft 365. Las directivas configuradas determinan la configuración de dispositivos móviles, por ejemplo, la frecuencia con la que se deben restablecer las contraseñas o si se requiere cifrado de datos. Para obtener más información, vea [Create device security policies in Basic Mobility and Security](create-device-security-policies.md)y Microsoft   [365 compliance center](../../compliance/microsoft-365-compliance-center.md).
 
 Para obtener instrucciones paso a paso para crear e implementar directivas de dispositivos, consulte [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).
 

@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Obtenga información sobre cómo usar Azure ExpressRoute con Office 365 y planear el proyecto de implementación de red si está implementando con él.
-ms.openlocfilehash: 9af9a2981c9220784725284aa602cf2de66721e5
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: d4c14d97cff2952f5f7052a8aa2940f05d644737
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408376"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023730"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute para Office 365
 
-*Este artículo se aplica tanto a Microsoft 365 Enterprise como a Office 365 Enterprise.*
+*Este artículo afecta tanto a Office 365 Enterprise como a Microsoft 365 Enterprise*
 
 Obtenga información sobre cómo se usa Azure ExpressRoute con Office 365 y cómo planear el proyecto de implementación de red que será necesario si va a implementar Azure ExpressRoute para su uso con Office 365. Los servicios de infraestructura y plataforma que se ejecutan en Azure suelen beneficiarse al abordar las consideraciones de rendimiento y arquitectura de red. Se recomienda ExpressRoute para Azure en estos casos. Las ofertas de software como servicio como Office 365 y Dynamics 365 se han creado para tener acceso de forma segura y confiable a través de Internet. Puede leer sobre el rendimiento y la seguridad de Internet y cuándo puede considerar Azure ExpressRoute para Office 365 en el artículo Evaluación de la conectividad de red de [Office 365](assessing-network-connectivity.md).
 
@@ -39,7 +39,7 @@ Obtenga información sobre cómo se usa Azure ExpressRoute con Office 365 y cóm
 > Microsoft Defender para endpoint no es compatible con Azure Express Route.
 
 > [!NOTE]
-> Se requiere autorización de Microsoft para usar ExpressRoute para Office 365. Microsoft revisa todas las solicitudes de clientes y autoriza el uso de ExpressRoute para Office 365 cuando el requisito normativo de un cliente exige conectividad directa. Si tiene estos requisitos, proporcione el extracto de texto y el vínculo web al reglamento que interprete para que la conectividad directa sea necesaria en el formulario de solicitud de [ExpressRoute para Office 365](https://aka.ms/O365ERReview) para iniciar una revisión de Microsoft. Las suscripciones no autorizadas que intenten crear filtros de ruta para Office 365 recibirán un [mensaje de error](https://support.microsoft.com/kb/3181709).
+> Se requiere autorización de Microsoft para usar ExpressRoute para Office 365. Microsoft revisa todas las solicitudes de clientes y autoriza el uso de ExpressRoute para Office 365 cuando el requisito normativo de un cliente exige conectividad directa. Si tiene estos requisitos, póngase en contacto con su representante de cuenta de Microsoft para comenzar una revisión de Microsoft. Las suscripciones no autorizadas que intenten crear filtros de ruta para Office 365 recibirán un [mensaje de error](https://support.microsoft.com/kb/3181709).
 
 Ahora puede agregar una conexión de red directa a Office 365 para el tráfico de red de Office 365 seleccionado. Azure ExpressRoute ofrece una conexión directa, un rendimiento predecible y un SLA de tiempo de actividad del 99,95 % para los componentes de red de Microsoft. Todavía necesitarás una conexión a Internet para los servicios que no son compatibles con Azure ExpressRoute.
 
@@ -125,10 +125,10 @@ Este es un vínculo breve que se puede usar para volver: [https://aka.ms/express
 
 [Plan de solución de problemas de rendimiento para Office 365](performance-troubleshooting-plan.md)
 
-[Direcciones URL e intervalos de direcciones IP de Office 365](urls-and-ip-address-ranges.md)
+[Intervalos de direcciones IP y URL de Office 365](urls-and-ip-address-ranges.md)
 
 [Red de Office 365 y ajuste de rendimiento](network-planning-and-performance.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Información general de Microsoft 365 Enterprise](microsoft-365-overview.md)

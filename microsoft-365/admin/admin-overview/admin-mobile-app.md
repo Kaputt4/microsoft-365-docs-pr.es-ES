@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtén la aplicación de administración de Microsoft 365 y aprende a administrar tu organización en línea desde tu teléfono o tableta.
-ms.openlocfilehash: eba3783e3673efe84bdb823da2a14e06c06c5fbe
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 20a44501db43b8cba7f31bcfded039b00f3ab341
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826128"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023946"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la aplicación móvil de administración de Microsoft 365
 
@@ -61,7 +61,7 @@ Si es administrador y es responsable de más de una organización de Microsoft 3
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
-## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas frecuentes
 
 A continuación, le mostramos las respuestas a algunas preguntas frecuentes.
   
@@ -116,6 +116,6 @@ En el menú de navegación izquierdo, ve **a Configuración**  >  **Notificacion
 
 Envía [feedback365@microsoft.com](mailto:feedback365@microsoft.com) para informar de un problema con la aplicación. O puede enviar comentarios en la parte inferior de este artículo.
   
-## <a name="see-also"></a>Vea también
+## <a name="related-content"></a>Contenido relacionado 
 
-[Vídeos de aprendizaje de Microsoft 365 para empresas](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+Vídeos de aprendizaje [de Microsoft 365 para empresas](../../business-video/index.yml) (vínculos)

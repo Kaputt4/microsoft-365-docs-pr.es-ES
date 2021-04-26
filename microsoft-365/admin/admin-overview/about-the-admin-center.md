@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Puede usar el centro de administración para configurar la organización en la nube y administrar usuarios y suscripciones. Introducción iniciando sesión en la cuenta con permisos de administrador.
-ms.openlocfilehash: ef606565d7cad94bc0c7ff81630ef6c2fe8a6fc4
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 8dcd806318bad4aed37aa8cccce4bf90c32e824c
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222092"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023958"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Acerca del centro de administración de Microsoft 365
 
@@ -43,7 +43,7 @@ Vea un vídeo corto sobre el centro de administración. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL]
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
 
 ## <a name="how-to-get-to-the-admin-center"></a>Cómo acceder al centro de administración
 
@@ -99,6 +99,6 @@ A continuación se muestran las características y la configuración que encontr
 
 - [Administrar un grupo de Microsoft 365](../create-groups/manage-groups.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="related-content"></a>Contenido relacionado
 
-[Vídeos de aprendizaje de Microsoft 365 para empresas](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+Vídeos de aprendizaje [de Microsoft 365 para empresas](../../business-video/index.yml) (vínculos)

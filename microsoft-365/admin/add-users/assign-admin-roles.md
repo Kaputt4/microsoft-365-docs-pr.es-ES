@@ -27,26 +27,26 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Obtenga información sobre cómo asignar roles de administrador a un usuario o varios usuarios de su empresa para que puedan realizar tareas específicas en el Centro de administración.
-ms.openlocfilehash: 5c40199823c93968be97302efc8e2d404f3cfed1
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: c723053d8d1a39bf0f996840bc418ffe299db089
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604338"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023994"
 ---
 # <a name="assign-admin-roles"></a>Asignar roles de administrador
 
 Si eres la persona que compró tu suscripción a Microsoft Business, eres el administrador global. Esto significa que tienes un control ilimitado sobre los productos de tus suscripciones y puedes acceder a la mayoría de los datos.
 
-Para obtener más información, vea [Asignar roles de administrador](about-admin-roles.md).
+Para más información, consulte[Sobre los roles de administrador](about-admin-roles.md).
 
-Cuando agregas nuevos usuarios, si no les asignas un  rol de administrador, entonces están en el rol de usuario y no tienen privilegios de administrador en ninguno de los centros de administración de Microsoft. Pero si necesitas ayuda para hacer las cosas, puedes asignar un rol de administrador a un usuario. Por ejemplo, si necesita que alguien le ayude a restablecer las contraseñas, no debe asignarles el rol de administrador global, debe asignarles el rol de administrador de contraseñas. Tener demasiados administradores globales, con acceso ilimitado a los datos y a la empresa en línea, es un riesgo para la seguridad.
+Cuando agregas nuevos usuarios, si no les asignas un  rol de administrador, entonces están en el rol de usuario y no tienen privilegios de administrador en ninguno de los centros de administración de Microsoft. Pero si necesitas ayuda para hacer las cosas, puedes asignar un rol de administrador a un usuario. Por ejemplo, si necesita que alguien le ayude a restablecer las contraseñas, no debe asignarles el rol de administrador global, debe asignarles el rol de administrador de contraseñas. Tener demasiados administradores globales, con acceso ilimitado a sus datos y empresa en línea, es un riesgo de seguridad.
 
 ## <a name="watch-add-an-adminbrbr"></a>Vea: Agregar un administrador.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
 
 ## <a name="assign-admin-roles"></a>Asignar roles de administrador 
 
@@ -66,13 +66,13 @@ Puede asignar usuarios a un rol de dos maneras diferentes:
 5. Agregue varios usuarios hasta que haya terminado.
 6. Seleccione **Guardar** y, a continuación, el usuario se agregará a la lista de administradores asignados.
 
-### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>Asignar un usuario a un rol de administrador de usuarios activos
+### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>Asignar un usuario a un rol de administrador desde Usuarios activos
 
 1. En el Centro de administración, vaya a **La página Usuarios** usuarios > [activos.](https://go.microsoft.com/fwlink/p/?linkid=834822)
 
 2. En la **página Usuarios activos,** seleccione el usuario cuyo rol de administrador desea cambiar. En el panel desplegable, en **Roles,** seleccione **Administrar roles**.
 
-3. Seleccione el rol de administrador que desea asignar al usuario. Si no ve el rol que está buscando, seleccione **Mostrar todo** en la parte inferior de la lista.
+3. Seleccione el rol de administrador que quiere asignar al usuario. Si no ve el rol que está buscando, seleccione **Mostrar todo** en la parte inferior de la lista.
 
 ::: moniker-end
 

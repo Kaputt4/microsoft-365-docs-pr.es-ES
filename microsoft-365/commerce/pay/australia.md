@@ -12,12 +12,12 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: Obtén información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 583bd8ad67fa78ae09fde69813506606ca9806b7
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 8087535472e0affe4d7f7526b4c05aabe44ad2ac
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549621"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024174"
 ---
 # <a name="payment-information-for-australia"></a>Información de pago para Australia
 
@@ -42,3 +42,5 @@ Código SWIFT: CITIAU2X\
 Código BSB: 248053\
 Número de cuenta: 100001074\
 Nombre de cuenta: MICROSOFT
+
+Las facturas emitidas desde una subsidiaria local de Microsoft se emiten con la tasa estándar de IVA/Impuestos de ventas/GST y se consideran una oferta nacional de servicios para fines de IVA/Impuesto de ventas/GST.

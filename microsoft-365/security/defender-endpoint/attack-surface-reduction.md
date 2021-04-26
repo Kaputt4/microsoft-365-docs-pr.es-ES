@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 98f04a9aa34fda78c7caba2f6cb71c135428784f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 461bc7c8d4d8d5c9bb8c905f3b160d0af226b077
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933990"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023230"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usar reglas de reducción de superficie de ataque para evitar infecciones de malware
 
@@ -39,16 +39,16 @@ La superficie de ataque de la organización incluye todos los lugares donde un a
 Las reglas de reducción de superficie de ataque se aplican a determinados comportamientos de software, como:
 
 - Iniciar archivos ejecutables y scripts que intenten descargar o ejecutar archivos;
-- Ejecutar scripts ofuscados o sospechosos; y 
+- Ejecutar scripts ofuscados o sospechosos; y
 - Comportamientos que las aplicaciones normalmente no inician durante el trabajo diario normal.
 
 Estos comportamientos de software a veces se ven en aplicaciones legítimas; sin embargo, estos comportamientos a menudo se consideran riesgosos porque los atacantes suelen abusar de ellos a través del malware. Las reglas de reducción de superficie de ataque pueden restringir comportamientos riesgosos y ayudar a mantener la seguridad de la organización.
 
 Para obtener más información sobre cómo configurar reglas de reducción de superficie de ataque, consulta [Habilitar reglas de reducción de superficie de ataque](enable-attack-surface-reduction.md).
 
-## <a name="assess-rule-impact-before-deployment"></a>Evaluar el impacto de la regla antes de la implementación  
+## <a name="assess-rule-impact-before-deployment"></a>Evaluar el impacto de la regla antes de la implementación
 
-Puedes evaluar cómo una regla de reducción de superficie de ataque puede afectar a la red abriendo la recomendación de seguridad para esa regla en la administración de [amenazas y vulnerabilidades.](https://docs.microsoft.com/windows/security/threat-protection/#tvm) 
+Puedes evaluar cómo una regla de reducción de superficie de ataque puede afectar a la red abriendo la recomendación de seguridad para esa regla en la administración de [amenazas y vulnerabilidades.](https://docs.microsoft.com/windows/security/threat-protection/#tvm)
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="Reco de seguridad para la regla de reducción de superficie de ataque":::
 
@@ -62,18 +62,20 @@ Usa [el modo de auditoría](audit-windows-defender.md) para evaluar cómo afecta
 
 (**¡NUEVO!)** Antes de las capacidades del modo de advertencia, las reglas de reducción de superficie de ataque habilitadas podrían establecerse en modo auditoría o modo de bloqueo. Con el nuevo modo de advertencia, siempre que una regla de reducción de superficie de ataque bloquee el contenido, los usuarios verán un cuadro de diálogo que indica que el contenido está bloqueado. El cuadro de diálogo también ofrece al usuario una opción para desbloquear el contenido. A continuación, el usuario puede reintentar su acción y se completa la operación. Cuando un usuario desbloquea el contenido, el contenido permanece desbloqueado durante 24 horas y, a continuación, el bloqueo se reanuda.
 
-El modo de advertencia ayuda a la organización a tener reglas de reducción de superficie de ataques sin impedir que los usuarios accedan al contenido que necesitan para realizar sus tareas. 
+El modo de advertencia ayuda a la organización a tener reglas de reducción de superficie de ataques sin impedir que los usuarios accedan al contenido que necesitan para realizar sus tareas.
 
 ### <a name="requirements-for-warn-mode-to-work"></a>Requisitos para que funcione el modo de advertencia
 
 El modo de advertencia se admite en dispositivos que ejecutan las siguientes versiones de Windows:
+
 - [Windows 10, versión 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) o posterior
 - [Windows Server, versión 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809) o posterior
- 
+
 Antivirus de Microsoft Defender debe ejecutarse con protección en tiempo real en [modo activo](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state).
 
 Además, asegúrate de que [las actualizaciones antivirus y antimalware](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) de Microsoft Defender estén instaladas.
-- Requisito mínimo de versión de plataforma: `4.18.2008.9`  
+
+- Requisito mínimo de versión de plataforma: `4.18.2008.9`
 - Requisito mínimo de versión del motor: `1.1.17400.5`
 
 Para obtener más información y obtener las actualizaciones, vea [Update for Microsoft Defender antimalware platform](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform).
@@ -92,7 +94,7 @@ Además, el modo de advertencia no se admite en dispositivos que ejecutan versio
 
 Cada vez que se desencadena una regla de reducción de superficie de ataque, se muestra una notificación en el dispositivo. Puede personalizar [la notificación con los](customize-attack-surface-reduction.md#customize-the-notification) detalles de su empresa y la información de contacto.
 
-Además, cuando se desencadenan determinadas reglas de reducción de superficie de ataque, se generan alertas. 
+Además, cuando se desencadenan determinadas reglas de reducción de superficie de ataque, se generan alertas.
 
 Las notificaciones y las alertas que se generan se pueden ver en el Centro de seguridad de Microsoft Defender ( ) y en el Centro de seguridad de [https://securitycenter.windows.com](https://securitycenter.windows.com) Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ).
 
@@ -100,13 +102,14 @@ Las notificaciones y las alertas que se generan se pueden ver en el Centro de se
 
 Puedes usar la búsqueda avanzada para ver eventos de reducción de superficie de ataque. Para simplificar el volumen de datos entrantes, solo se pueden ver procesos únicos para cada hora con búsqueda avanzada. La hora de un evento de reducción de superficie de ataque es la primera vez que se ve ese evento dentro de la hora.
 
-Por ejemplo, supongamos que se produce un evento de reducción de superficie de ataque en 10 dispositivos durante la hora de las 2:00 p.m. Supongamos que el primer evento se produjo a las 2:15 y el último a las 2:45. Con la búsqueda avanzada, verás una instancia de ese evento (aunque realmente se produjo en 10 dispositivos) y su marca de tiempo será las 2:15 p.m. 
+Por ejemplo, supongamos que se produce un evento de reducción de superficie de ataque en 10 dispositivos durante la hora de las 2:00 p.m. Supongamos que el primer evento se produjo a las 2:15 y el último a las 2:45. Con la búsqueda avanzada, verás una instancia de ese evento (aunque realmente se produjo en 10 dispositivos) y su marca de tiempo será las 2:15 p.m.
 
 Para obtener más información acerca de la búsqueda avanzada, vea [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
 
 ## <a name="attack-surface-reduction-features-across-windows-versions"></a>Características de reducción de superficie de ataque en las versiones de Windows
 
 Puedes establecer reglas de reducción de superficie de ataque para dispositivos que ejecutan cualquiera de las siguientes ediciones y versiones de Windows:
+
 - Windows 10 Pro, [versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o posterior
 - Windows 10 Enterprise, [versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) o posterior
 - Windows Server, [versión 1803 (canal semianual)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) o posterior
@@ -139,38 +142,39 @@ Puedes revisar el registro de eventos de Windows para ver los eventos generados 
 
 Puede crear una vista personalizada que filtra los eventos para mostrar solo los siguientes eventos, todos ellos relacionados con el acceso controlado a carpetas:
 
-|Id. de evento | Descripción |
-|:---|:---|
-|5007 | Evento cuando se cambia la configuración |
-|1121 | Evento cuando la regla se dispara en modo bloque |
-|1122 | Evento cuando la regla se dispara en modo auditoría |
+|Id. de evento|Descripción|
+|---|---|
+|5007|Evento cuando se cambia la configuración|
+|1121|Evento cuando la regla se dispara en modo bloque|
+|1122|Evento cuando la regla se dispara en modo auditoría|
+|
 
 La "versión del motor" que aparece para los eventos de reducción de superficie de ataque en el registro de eventos, la genera Defender for Endpoint, no el sistema operativo. Defender for Endpoint está integrado con Windows 10, por lo que esta característica funciona en todos los dispositivos con Windows 10 instalado.
 
 ## <a name="attack-surface-reduction-rules"></a>Reglas de reducción de la superficie expuesta a ataques
 
-En la tabla y subsecciones siguientes se describe cada una de las 15 reglas de reducción de superficie de ataque. Las reglas de reducción de superficie de ataque se enumeran en orden alfabético, por nombre de regla. 
+En la tabla y subsecciones siguientes se describe cada una de las 15 reglas de reducción de superficie de ataque. Las reglas de reducción de superficie de ataque se enumeran en orden alfabético, por nombre de regla.
 
 Si está configurando reglas de reducción de superficie de ataque mediante la directiva de grupo o PowerShell, necesitará los GUID. Por otra parte, si usa Microsoft Endpoint Manager o Microsoft Intune, no necesita los GUID.
 
-
-| Nombre de regla | GUID | Exclusiones & carpetas de archivos | Sistema operativo mínimo compatible |
-|:-----|:-----:|:-----|:-----|
-|[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes) | `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Impedir que todas las aplicaciones de Office creen procesos secundarios](#block-all-office-applications-from-creating-child-processes) | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](#block-executable-content-from-email-client-and-webmail) | `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | `01443614-cd74-433a-b99e-2ecdc07bfc25` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts) | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | `D3E037E1-3EB8-44C8-A917-57927947596D` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Impedir que las aplicaciones de Office creen contenido ejecutable](#block-office-applications-from-creating-executable-content) | `3B576869-A4EC-4529-8536-B80A7769E899` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Impedir que las aplicaciones de Office inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes) | `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Impedir que la aplicación de comunicación de Office cree procesos secundarios](#block-office-communication-application-from-creating-child-processes) |`26190899-1602-49e8-8b27-eb1d0a1ce869` |Compatible |[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior  |
-|[Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription) | `e6db77e5-3df2-4cf1-b95a-636979351e5b` | No admitido | [Windows 10, versión 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) (compilación 18362) o posterior |
-|[Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands) | `d1e49aac-8f56-4280-b9ba-993a6d77406c` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Bloquear llamadas a la API de Win32 desde macros de Office](#block-win32-api-calls-from-office-macros) | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
-|[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware) | `c1db55ab-c21a-4637-bb3f-a12568109d35` | Compatible | [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior |
+|Nombre de regla|GUID|Exclusiones & carpetas de archivos|Sistema operativo mínimo compatible|
+|---|:---:|---|---|
+|[Impedir que Adobe Reader cree procesos secundarios](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Compatible|[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Impedir que todas las aplicaciones de Office creen procesos secundarios](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Compatible|[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear el robo de credenciales del subsistema de autoridad de seguridad local de Windows (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Compatible|[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear el contenido ejecutable del cliente de correo electrónico y el correo web](#block-executable-content-from-email-client-and-webmail)|`BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`|Compatible|[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de prevalencia, antigüedad o lista de confianza](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)|`01443614-cd74-433a-b99e-2ecdc07bfc25`|Compatible|[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear la ejecución de scripts potencialmente ofuscados](#block-execution-of-potentially-obfuscated-scripts)|`5BEB7EFE-FD9A-4556-801D-275E5FFC04CC`|Compatible|[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Impedir que JavaScript o VBScript inicien contenido ejecutable descargado](#block-javascript-or-vbscript-from-launching-downloaded-executable-content)|`D3E037E1-3EB8-44C8-A917-57927947596D`|Compatible|[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Impedir que las aplicaciones de Office creen contenido ejecutable](#block-office-applications-from-creating-executable-content)|`3B576869-A4EC-4529-8536-B80A7769E899`|Compatible|[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Impedir que las aplicaciones de Office inyecten código en otros procesos](#block-office-applications-from-injecting-code-into-other-processes)|`75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`|Compatible|[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Impedir que la aplicación de comunicación de Office cree procesos secundarios](#block-office-communication-application-from-creating-child-processes)|`26190899-1602-49e8-8b27-eb1d0a1ce869`|Compatible|[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear la persistencia a través de la suscripción de eventos WMI](#block-persistence-through-wmi-event-subscription)|`e6db77e5-3df2-4cf1-b95a-636979351e5b`|No admitido|[Windows 10, versión 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903) (compilación 18362) o posterior|
+|[Bloquear creaciones de proceso que se originen en comandos PSExec y WMI](#block-process-creations-originating-from-psexec-and-wmi-commands)|`d1e49aac-8f56-4280-b9ba-993a6d77406c`|Compatible|[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear procesos que no son de confianza y sin firma que se ejecutan desde USB](#block-untrusted-and-unsigned-processes-that-run-from-usb)|`b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`|Compatible|[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Bloquear llamadas a la API de Win32 desde macros de Office](#block-win32-api-calls-from-office-macros)|`92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`|Compatible|[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|[Usar protección avanzada contra ransomware](#use-advanced-protection-against-ransomware)|`c1db55ab-c21a-4637-bb3f-a12568109d35`|Compatible|[Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, compilación 16299) o posterior|
+|
 
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>Impedir que Adobe Reader cree procesos secundarios
 
@@ -178,7 +182,8 @@ Esta regla evita los ataques al bloquear Adobe Reader para crear procesos.
 
 A través de la ingeniería social o vulnerabilidades, el malware puede descargar e iniciar cargas y salir de Adobe Reader. Al impedir que Adobe Reader genere procesos secundarios, se impide que el malware que intenta usarlo como vector se propague.
 
-Esta regla se introdujo en: 
+Esta regla se introdujo en:
+
 - [Windows 10, versión 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows Server, versión 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
@@ -195,7 +200,8 @@ Esta regla impide que las aplicaciones de Office creen procesos secundarios. Las
 
 Crear procesos secundarios malintencionados es una estrategia de malware común. El malware que abusa de Office como vector a menudo ejecuta macros de VBA y aprovecha el código para descargar e intentar ejecutar más cargas. Sin embargo, algunas aplicaciones legítimas de línea de negocio también pueden generar procesos secundarios con fines benignos, como generar un símbolo del sistema o usar PowerShell para configurar la configuración del Registro.
 
-Esta regla se introdujo en: 
+Esta regla se introdujo en:
+
 - [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, versión 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
@@ -217,6 +223,7 @@ LSASS autentica a los usuarios que inician sesión en un equipo con Windows. Cre
 > En algunas aplicaciones, el código enumera todos los procesos en ejecución e intenta abrirlos con permisos exhaustivos. Esta regla deniega la acción de apertura del proceso de la aplicación y registra los detalles en el registro de eventos de seguridad. Esta regla puede generar mucho ruido. Si tienes una aplicación que simplemente enumera LSASS, pero no tiene ningún impacto real en la funcionalidad, no es necesario agregarla a la lista de exclusión. Por sí mismo, esta entrada de registro de eventos no indica necesariamente una amenaza malintencionada.
 
 Esta regla se introdujo en:
+
 - [Windows 10, versión 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, versión 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
@@ -235,7 +242,8 @@ Esta regla bloquea el inicio de los siguientes tipos de archivo desde el correo 
 - Archivos ejecutables (como .exe, .dll o .scr)
 - Archivos de script (como un archivo .ps de PowerShell, Visual Basic .vbs o un archivo .js de JavaScript)
 
-Esta regla se introdujo en: 
+Esta regla se introdujo en:
+
 - [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, versión 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
@@ -249,6 +257,7 @@ GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
 > [!NOTE]
 > La regla **Bloquear contenido ejecutable del** cliente de correo electrónico y el correo web tiene las siguientes descripciones alternativas, según la aplicación que use:
+>
 > - Intune (perfiles de configuración): la ejecución de contenido ejecutable (exe, dll, ps, js, vbs, etc.) se ha eliminado del correo electrónico (cliente de correo web o correo) (sin excepciones).
 > - Endpoint Manager: bloquear la descarga de contenido ejecutable de clientes de correo electrónico y correo web.
 > - Directiva de grupo: bloquear el contenido ejecutable del cliente de correo electrónico y el correo web.
@@ -262,11 +271,14 @@ Esta regla bloquea el inicio de los siguientes tipos de archivo a menos que cump
 El inicio de archivos ejecutables desconocidos o no de confianza puede ser arriesgado, ya que puede que no esté claro inicialmente si los archivos son malintencionados.
 
 > [!IMPORTANT]
-> Debe habilitar [la protección entregada en la nube](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) para usar esta regla. <br/><br/> La regla Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de **prevalencia, antigüedad** o lista de confianza con GUID es propiedad de Microsoft y los administradores no `01443614-cd74-433a-b99e-2ecdc07bfc25` los especifican. Esta regla usa la protección entregada en la nube para actualizar su lista de confianza con regularidad.
+> Debe habilitar [la protección entregada en la nube](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) para usar esta regla.
 >
->Puede especificar archivos o carpetas individuales (con rutas de carpeta o nombres de recursos completos), pero no puede especificar a qué reglas o exclusiones se aplican.
+> La regla Bloquear la ejecución de archivos ejecutables a menos que cumplan un criterio de **prevalencia, antigüedad** o lista de confianza con GUID es propiedad de Microsoft y los administradores no `01443614-cd74-433a-b99e-2ecdc07bfc25` los especifican. Esta regla usa la protección entregada en la nube para actualizar su lista de confianza con regularidad.
+>
+> Puede especificar archivos o carpetas individuales (con rutas de carpeta o nombres de recursos completos), pero no puede especificar a qué reglas o exclusiones se aplican.
 
-Esta regla se introdujo en: 
+Esta regla se introdujo en:
+
 - [Windows 10, versión 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, versión 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
@@ -285,6 +297,7 @@ Esta regla detecta propiedades sospechosas dentro de un script ofuscado.
 La ofuscación de scripts es una técnica común que usan tanto los autores de malware como las aplicaciones legítimas para ocultar la propiedad intelectual o disminuir los tiempos de carga de scripts. Los autores de malware también usan la ofuscación para hacer que el código malintencionado sea más difícil de leer, lo que evita el escrutinio cercano por parte de los humanos y el software de seguridad.
 
 Esta regla se introdujo en:
+
 - [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, versión 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
@@ -302,7 +315,8 @@ Esta regla impide que los scripts inicien contenido descargado potencialmente ma
 
 Aunque no son comunes, las aplicaciones de línea de negocio a veces usan scripts para descargar e iniciar instaladores.
 
-Esta regla se introdujo en:  
+Esta regla se introdujo en:
+
 - [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, versión 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
@@ -320,7 +334,8 @@ Esta regla impide que las aplicaciones de Office, incluidos Word, Excel y PowerP
 
 El malware que abusa de Office como vector puede intentar salir de Office y guardar componentes malintencionados en el disco. Estos componentes malintencionados sobrevivirían a un reinicio del equipo y persistiría en el sistema. Por lo tanto, esta regla se defiende contra una técnica de persistencia común.
 
-Esta regla se introdujo en: 
+Esta regla se introdujo en:
+
 - [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, versión 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
@@ -342,7 +357,8 @@ No hay propósitos empresariales legítimos conocidos para usar la inyección de
 
 Esta regla se aplica a Word, Excel y PowerPoint.
 
-Esta regla se introdujo en: 
+Esta regla se introdujo en:
+
 - [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, versión 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
@@ -363,7 +379,8 @@ Esta regla protege contra los ataques de ingeniería social y evita que el códi
 > [!NOTE]
 > Esta regla se aplica a Outlook y Outlook.com solo.
 
-Esta regla se introdujo en: 
+Esta regla se introdujo en:
+
 - [Windows 10, versión 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809)
 - [Windows Server, versión 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
@@ -383,7 +400,8 @@ Esta regla evita que el malware abuse de WMI para lograr la persistencia en un d
 
 Las amenazas sin archivos emplean varias tácticas para mantenerse ocultas, para evitar que se vean en el sistema de archivos y para obtener un control de ejecución periódico. Algunas amenazas pueden abusar del repositorio WMI y el modelo de eventos para mantenerse oculto.
 
-Esta regla se introdujo en: 
+Esta regla se introdujo en:
+
 - [Windows 10, versión 1903](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903)
 - [Windows Server 1903](https://docs.microsoft.com/windows-server/get-started-19/whats-new-in-windows-server-1903-1909)
 
@@ -400,7 +418,8 @@ Esta regla bloquea la ejecución de los procesos [creados a través](https://doc
 > [!WARNING]
 > Solo usa esta regla si estás administrando tus dispositivos con [Intune](https://docs.microsoft.com/intune) u otra solución MDM. Esta regla es incompatible con la administración a través de [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr) porque esta regla bloquea los comandos WMI que el cliente de Configuration Manager usa para funcionar correctamente.
 
-Esta regla se introdujo en: 
+Esta regla se introdujo en:
+
 - [Windows 10, versión 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, versión 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
@@ -415,7 +434,8 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 Con esta regla, los administradores pueden impedir que los archivos ejecutables sin signo o que no son de confianza se ejecuten desde unidades extraíbles USB, incluidas las tarjetas SD. Los tipos de archivo bloqueados incluyen archivos ejecutables (como .exe, .dll o .scr)
 
-Esta regla se introdujo en: 
+Esta regla se introdujo en:
+
 - [Windows 10, versión 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, versión 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
@@ -434,6 +454,7 @@ Esta regla impide que las macros de VBA llamen a las API de Win32.
 VBA de Office habilita las llamadas a la API de Win32. El malware puede abusar de esta funcionalidad, como llamar a las API de [Win32](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/) para iniciar el código de shell malintencionado sin escribir nada directamente en el disco. La mayoría de las organizaciones no dependen de la capacidad de llamar a las API de Win32 en su funcionamiento diario, incluso si usan macros de otras maneras.
 
 Esta regla se introdujo en:
+
 - [Windows 10, versión 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)
 - [Windows Server, versión 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
@@ -447,12 +468,19 @@ GUID: `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B`
 
 ### <a name="use-advanced-protection-against-ransomware"></a>Usar protección avanzada contra ransomware
 
-Esta regla proporciona una capa adicional de protección contra ransomware. Examina los archivos ejecutables que entran en el sistema para determinar si son de confianza. Si los archivos se asemejan mucho a ransomware, esta regla les impide ejecutarse, a menos que estén en una lista de confianza o en una lista de exclusión.
+Esta regla proporciona una capa adicional de protección contra ransomware. Usa heurística de cliente y nube para determinar si un archivo se parece a ransomware. Esta regla no bloquea los archivos que tienen una o varias de las siguientes características:
+
+- Ya se ha encontrado que el archivo no es compartido en la nube de Microsoft.
+- El archivo es un archivo firmado válido.
+- El archivo es lo suficientemente frecuente como para no considerarse ransomware.
+
+La regla tiende a errar en el lado de la precaución para evitar ransomware.
 
 > [!NOTE]
 > Debe habilitar [la protección entregada en la nube](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) para usar esta regla.
 
-Esta regla se introdujo en: 
+Esta regla se introdujo en:
+
 - [Windows 10, versión 1803](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803)
 - [Windows Server, versión 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
@@ -464,7 +492,7 @@ Nombre de Configuration Manager: `Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Consulte también
 
 - [Preguntas más frecuentes sobre la reducción de la superficie expuesta a ataques](attack-surface-reduction-faq.md)
 - [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)

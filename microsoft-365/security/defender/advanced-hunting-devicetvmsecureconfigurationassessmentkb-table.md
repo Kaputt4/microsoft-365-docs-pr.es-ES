@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a387d917e5ae93a6289aa2af527d52f1ce1195f4
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1dfa710b86afdcfd8a5643555564a0f34c7b4702
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934876"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024246"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -34,6 +34,7 @@ ms.locfileid: "51934876"
 
 **Se aplica a:**
 - Microsoft 365 Defender
+- Microsoft Defender para punto de conexión
 
 
 
@@ -44,15 +45,15 @@ Para obtener información sobre otras tablas del esquema de búsqueda avanzada, 
 | Nombre de columna | Tipo de datos | Descripción |
 |-------------|-----------|-------------|
 | `ConfigurationId` | string | Identificador único para una configuración específica |
-| `ConfigurationImpact` | cadena | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
+| `ConfigurationImpact` | string | Impacto valorado de la configuración en el resultado general de la configuración (1-10) |
 | `ConfigurationName` | string | Nombre para mostrar de la configuración |
 | `ConfigurationDescription` | string | Descripción de la configuración |
 | `RiskDescription` | string | Descripción del riesgo asociado |
 | `ConfigurationCategory` | string | Categoría o grupos a los que pertenece la configuración: aplicación, sistema operativo, red, cuentas, controles de seguridad|
-| `ConfigurationSubcategory` | cadena |Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
+| `ConfigurationSubcategory` | string |Subcategoría o subagrupación a la que pertenece la configuración. En muchos casos, describe funciones o características específicas. |
 | `ConfigurationBenchmarks` | string | Lista de bancos de pruebas del sector que recomiendan la misma configuración u otra similar |
 | `Tags` | string | Etiquetas que representan varios atributos usados para identificar o clasificar una configuración de seguridad |
-| `RemediationOptions` | cadena | Acciones recomendadas para reducir o solucionar los riesgos asociados |
+| `RemediationOptions` | string | Acciones recomendadas para reducir o solucionar los riesgos asociados |
 
 ## <a name="related-topics"></a>Temas relacionados
 

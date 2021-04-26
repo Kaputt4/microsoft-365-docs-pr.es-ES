@@ -23,22 +23,22 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: Obtenga información sobre cómo configurar y usar Microsoft 365 en su equipo, teléfono y tableta.
-ms.openlocfilehash: 0bc2478375cdec231a00bade933680cb69578126
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 9b1dc7d42cf532e3f18af74df5d3d87b712fb4d4
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759887"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023934"
 ---
-# <a name="get-started"></a>Introducción
+# <a name="get-started"></a>Comenzar
 
 Su organización acaba de obtener Microsoft 365 y ahora debe usarlo para que pueda empezar a leer correo electrónico, compartir documentos y mucho más. Obtenga información sobre cómo configurar y usar Microsoft 365 en su equipo, teléfono y tableta.
 
 ## <a name="training-resources-for-your-users"></a>Recursos de aprendizaje para sus usuarios
 
 
-- [Inicio rápido de empleados](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)
-    
+- [Inicio rápido de empleados](../../business-video/employee-quick-setup.md)
+
 - [Centro de aprendizaje de Office](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
 - [Dónde iniciar sesión](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)

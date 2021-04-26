@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Obtenga información sobre cómo restablecer la contraseña de un usuario en la suscripción de Microsoft 365 para empresas.
-ms.openlocfilehash: da2f2b7aced29cd121f7d597af5a518462d2623d
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 24fc6581837f71659a2ecc0359c6967e3969d868
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222056"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023982"
 ---
 # <a name="reset-passwords"></a>Restablecer contraseñas
 
@@ -50,7 +50,7 @@ Vea un breve vídeo sobre el restablecimiento de contraseñas de usuario.<br><br
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>Pasos: Restablecer una contraseña de empresa para un usuario
 
@@ -150,4 +150,4 @@ Lea el artículo [He olvidado el nombre de usuario o la contraseña de la cuenta
 
 [Quitar un antiguo empleado](remove-former-employee.md)
 
-[Vídeos de aprendizaje de Microsoft 365 para empresas](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vídeos de aprendizaje de Microsoft 365 para empresas](../../business-video/index.yml)

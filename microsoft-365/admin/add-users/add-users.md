@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo agregar usuarios y asignar licencias a Microsoft 365 al mismo tiempo.
 ms.date: 07/01/2020
-ms.openlocfilehash: a7c5fcf1a129a1d434b6e641688ce4c5d234817d
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 97b7118f4052d4ab4e0ffe8ecec96f32e4042108
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760007"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024018"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Agregar usuarios y asignar licencias al mismo tiempo
 
@@ -85,7 +85,7 @@ Puede usar cualquiera de los siguientes métodos para agregar varios usuarios al
 
 ## <a name="next-steps"></a>Siguientes pasos
 
-Después de agregar un usuario, recibirá un correo electrónico de Microsoft. El correo electrónico contendrá el identificador y la contraseña del usuario para que puedan iniciar sesión en Microsoft 365. Use el proceso habitual para comunicar nuevas contraseñas. Comparta la [Guía de inicio rápido de los empleados](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f) con los nuevos usuarios para configurar opciones como [cómo descargar e instalar aplicaciones de Office en un equipo PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) y cómo [configurar el correo electrónico y las aplicaciones de Office en un dispositivo móvil](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
+Después de agregar un usuario, recibirá un correo electrónico de Microsoft. El correo electrónico contendrá el identificador y la contraseña del usuario para que puedan iniciar sesión en Microsoft 365. Use el proceso habitual para comunicar nuevas contraseñas. Comparta la [Guía de inicio rápido de los empleados](../../business-video/employee-quick-setup.md) con los nuevos usuarios para configurar opciones como [cómo descargar e instalar aplicaciones de Office en un equipo PC o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) y cómo [configurar el correo electrónico y las aplicaciones de Office en un dispositivo móvil](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
 ## <a name="related-content"></a>Contenido relacionado
 

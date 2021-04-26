@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Encuentre cómo transferir datos manualmente entre dos cuentas de Microsoft 365 al cambiar el plan o el nombre de la compañía, o combinar varias suscripciones en una.
-ms.openlocfilehash: 9916da50f4589f949d35466ca6aa8f1d79cc40ea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b240ffbbdbfb6ed7d20a9ead9b1ee90a3af4570d
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915511"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023838"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Transferir datos manualmente entre dos cuentas
 
@@ -44,7 +44,7 @@ Prepárese para enrollar las mangas y bloquear un fragmento de tiempo en el cale
 > [!IMPORTANT]
 > Si necesita cambiar su [plan](../../commerce/subscriptions/switch-to-a-different-plan.md) de suscripción y puede usar el Asistente para cambiar de planes, o si necesita transferir a un nuevo plan de suscripción en la misma familia de suscripciones incluso cuando el Asistente para cambiar de planes no funciona, no es necesario transferir manualmente los datos y no hay tiempo de inversiones.
 
-|**Tareas** |**Pasos**|
+|**Tareas**|**Pasos**|
 |:-----|:-----|
 |Compra el plan al que quieres moverte.  <br/> |Cuando se registra, especifica el nombre de la compañía que se usará en los nombres de dominio *iniciales:* su empresa .onmicrosoft.com,  su empresa -public.sharepoint.com y su empresa *.sharepoint.com.* Debes usar un nombre de  *empresa*  diferente al que tenías para las suscripciones existentes.  <br/> > [!NOTE]> Suele ser necesario un mínimo de varios meses después de cancelar una suscripción para liberar los nombres de dominio iniciales que usan su empresa  *desde*  nuestros sistemas. Incluso si planea guardar todos los datos de su antigua suscripción de Microsoft  365 y cancelar esa suscripción, el valor antiguo de su empresa no está disponible inmediatamente para su uso en una nueva suscripción.           |
 |Quite el dominio personalizado de la antigua suscripción de Microsoft 365.  <br/> | Siga los [pasos necesarios antes de](remove-a-domain.md) quitar un dominio para quitar el nombre de dominio de las direcciones de correo electrónico de usuario y quitar los registros DNS para el correo electrónico y Lync para el dominio personalizado. Si hospeda su sitio web público en Microsoft 365, también tendrá que quitar el registro CNAME que apunta a él.  <br/> > [!IMPORTANT]> Después de quitar el registro MX que enruta el correo electrónico a este dominio personalizado, el correo electrónico dejará de funcionar hasta que haya agregado el dominio a su nueva cuenta, configure el nuevo registro MX y configure los usuarios. Al quitar los registros DNS de Lync, Lync dejará de funcionar. Y después de quitar el registro CNAME que apunta a su sitio web público, no estará disponible.           [Quite el dominio](remove-a-domain.md) .  <br/> |
@@ -60,7 +60,7 @@ Si va a transferir datos de Microsoft 365 a Microsoft 365 Midsize Business o Mic
   
 Para Microsoft 365 Enterprise y Microsoft 365 Mediana Empresa:
   
-|**Location**|**Finalidad**|
+|**Ubicación**|**Finalidad**|
 |:-----|:-----|
 |**Administrador** \> **Microsoft 365** \> **Configuración del servicio** <br/> |Seleccione cada pestaña para la configuración de correo, sitios, Lync, software de usuario, contraseñas, comunidad, administración de derechos y móvil.  <br/> |
 |**Administrador** \> **Exchange** <br/> | Configuración de Exchange Online  <br/> |
@@ -69,7 +69,7 @@ Para Microsoft 365 Enterprise y Microsoft 365 Mediana Empresa:
 
 Para Microsoft 365 Pequeña Empresa
   
-|**Location**|**Finalidad**|
+|**Ubicación**|**Finalidad**|
 |:-----|:-----|
 |**Administrador** \> **Administrar la configuración de toda la organización** <br/> |Configuración administrativa  <br/> |
 
@@ -91,11 +91,11 @@ Hay varias maneras de guardar o transferir datos del sitio de grupo:
   
 - Puede guardar el sitio antiguo como una plantilla e importar la plantilla en el nuevo sitio.
 
-- Para transferir documentos, primero vuelva a crear manualmente la jerarquía en el nuevo sitio. A continuación, puede abrir ambos sitios de grupo de SharePoint al mismo tiempo, abrir ambas bibliotecas de documentos con el Explorador de Windows y copiar y pegar los documentos. Vea [Vídeo: Copiar o mover archivos de biblioteca mediante Abrir con el Explorador](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+- Para transferir documentos, primero vuelva a crear manualmente la jerarquía en el nuevo sitio. A continuación, puede abrir ambos sitios de grupo de SharePoint al mismo tiempo, abrir ambas bibliotecas de documentos con el Explorador de Windows y copiar y pegar los documentos. Vea [Vídeo: Copiar o mover archivos de biblioteca mediante Abrir con el Explorador](../../business-video/store-files.md).
 
 - Para transferir datos de lista, guarde una plantilla [de](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)lista y use la plantilla guardada para volver a crear la lista en el nuevo sitio.
 
-- Para guardar una biblioteca de documentos o contenido de lista desde un entorno de SharePoint Online (OneDrive para la Empresa o sitios de grupo) para guardar recursos compartidos o en un equipo local, vea [Information about manual migration of SharePoint Online content](https://support.microsoft.com/kb/2783484).
+- Para guardar una biblioteca de documentos o contenido de lista desde un entorno de SharePoint Online (OneDrive para la Empresa o sitios de grupo) para guardar recursos compartidos o en un equipo local, vea [Information about manual migration of SharePoint Online content](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
 
 ## <a name="transfer-users-data-between-subscriptions"></a>Transferir datos de usuarios entre suscripciones
 
