@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinar dónde se almacenan los datos del cliente de Microsoft 365 en todo el mundo
-ms.openlocfilehash: 4c55010508f2b5bde1641b9b7552e4acb95a12d3
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: b3a3978bc166f9c302fe9c28b016d56742acd9de
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760241"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028961"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>¿Dónde se almacenan los datos de los clientes de Microsoft 365?
 
@@ -813,7 +813,7 @@ Los nuevos espacios empresariales de Microsoft 365 se asocian de forma predeterm
 | Workplace Analytics | Estados Unidos |
 </p></details>
 
-## <a name="bosnia"></a>Bosnia
+## <a name="bosnia-and-herzegovina"></a>Bosnia y Herzegovina
 <details><summary>Haga clic para expandir</summary><p>
 
 | Servicio | Ubicación |

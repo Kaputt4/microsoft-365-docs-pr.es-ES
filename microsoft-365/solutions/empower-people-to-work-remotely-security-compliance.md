@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
 ms.author: josephd
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Use los servicios de seguridad y cumplimiento de Microsoft 365 para proteger sus aplicaciones, datos y dispositivos para los trabajadores remotos.
-ms.openlocfilehash: 8248fdbaa96a651ad9ff4548ce0867bd7c2988eb
-ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
+ms.openlocfilehash: eb558b276b5e8fe828f62930eb977cc87ce3134f
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50055500"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029115"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>Paso 3: implementar seguridad y cumplimiento para trabajadores remotos
 
