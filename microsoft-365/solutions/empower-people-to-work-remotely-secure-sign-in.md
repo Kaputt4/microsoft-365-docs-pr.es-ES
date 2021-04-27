@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
 ms.author: josephd
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Requerir que los trabajadores remotos inicien sesión con autenticación multifactor (MFA).
-ms.openlocfilehash: c1436e394174bd3f480186f547f176cea1833cb1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1c69f2ee7520a554a726bc0ffd9e2d7ebca64261
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050987"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028973"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Paso 1. Aumentar la seguridad de inicio de sesión para trabajadores remotos con MFA
 
@@ -38,7 +38,7 @@ Existen tres formas de requerir que los usuarios usen MFA basándose en su plan 
 |---------|---------|
 |Todos los planes de Microsoft 365 (sin licencias de Azure AD Premium P1 o P2)     |[Habilitar los valores predeterminados de seguridad en Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Los valores predeterminados de seguridad en Azure AD incluyen MFA para los usuarios y administradores.   |
 |Microsoft 365 E3 (incluye las licencias de Azure AD Premium P1)     | Use [Directivas comunes de acceso condicional](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) para configurar las directivas siguientes: <br>- [Requerir MFA para los administradores](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Requerir MFA para todos los usuarios](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloquear la autenticación heredada](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (incluye las licencias de Azure AD Premium P2)     | Aprovechando Azure AD Identity Protection, empiece a implementar el [conjunto recomendado de directivas de acceso condicional y relacionadas](../security/defender-365-security/identity-access-policies.md) de Microsoft, creando estas dos directivas:<br> - [Exigir la autenticación multifactor (MFA) cuando el riesgo de inicio de sesión es medio o alto](../security/defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloquear a los clientes que no sean compatibles con la autenticación moderna](../security/defender-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br>- [Los usuarios de riesgo alto tienen que cambiar la contraseña](../security/defender-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E5 (incluye las licencias de Azure AD Premium P2)     | Aprovechando Azure AD Identity Protection, empiece a implementar el [conjunto recomendado de directivas de acceso condicional y relacionadas](../security/office-365-security/identity-access-policies.md) de Microsoft, creando estas dos directivas:<br> - [Exigir la autenticación multifactor (MFA) cuando el riesgo de inicio de sesión es medio o alto](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloquear a los clientes que no sean compatibles con la autenticación moderna](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br>- [Los usuarios de riesgo alto tienen que cambiar la contraseña](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ## <a name="security-defaults"></a>Valores predeterminados de seguridad

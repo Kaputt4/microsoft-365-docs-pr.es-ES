@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: dd066339ccfefdc58eb241bb9fdb69cdd5a458d8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: efbcec6417b082311d3f094b0251702d8e0dbeac
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907461"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028669"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación de Windows y Office
 
@@ -99,7 +99,7 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 
 [Descargar el kit de laboratorio de implementación de Office y Windows](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* La versión de línea base instalada 2002 se puede actualizar a la versión 2010 mediante y la actualización en la consola. Use una conexión a Internet de ancho de banda amplio para descargar este contenido y permitir de 30 a 45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El kit expira el 2 de mayo de 2021. Antes de la expiración, se publicará una nueva versión.
+* La versión de línea base instalada 2002 se puede actualizar a la versión 2010 mediante y la actualización en la consola. Use una conexión a Internet de ancho de banda amplio para descargar este contenido y permitir de 30 a 45 minutos para el aprovisionamiento automático. El entorno de laboratorio requiere un mínimo de 16 GB de memoria disponible y 150 GB de espacio libre en disco. Para un rendimiento óptimo, se recomiendan 32 GB de memoria disponible y 300 GB de espacio libre. El kit expira el 22 de julio de 2021. Antes de la expiración, se publicará una nueva versión.
 
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Summary: Understand the migration phases actions and impacts of moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: 8e3e6fb228445823481b52d27e5a7b6c623349e2
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 5764b5cedf17487320fbfd05885120de86da3a84
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995026"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029067"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Fases de migración acciones e impactos para la migración desde Microsoft Cloud Deutschland
 
@@ -226,7 +226,7 @@ En esta fase, Skype Empresarial se migrará a Microsoft Teams. Los clientes exis
 - Los contactos y las reuniones se migrarán a Microsoft Teams.
 - Los usuarios no podrán iniciar sesión en Skype Empresarial entre transiciones de servicio de tiempo a servicios de Office 365 y no hasta que se completen las entradas dns del cliente.
 - Los contactos y las reuniones existentes seguirán funcionando como reuniones de Skype Empresarial.
-- La versión del explorador web de Microsoft Teams no funcionará después de que se haya completado la fase 9.
+- La versión del explorador web de Microsoft Teams no funcionará hasta que se complete la fase 9.
 
 Si tiene que conectarse a Skype Empresarial Online con PowerShell una vez completada la fase de migración 9, use el siguiente código de PowerShell para conectarse:
 

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
 ms.author: josephd
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Facilite a los usuarios ser productivos con Teams, Exchange, SharePoint y otros servicios de Microsoft 365.
-ms.openlocfilehash: c56deb091078fb1917bc1060aa366da4e18bd176
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 749719afdfa7c9f5796ff839d1743ffd697c27e4
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050879"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029009"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Paso 5. Implementar servicios y aplicaciones de productividad para los trabajadores remotos
 
@@ -68,7 +68,7 @@ Las aplicaciones y los flujos de trabajo permiten que los trabajadores remotos s
 
 Outlook permite a los usuarios remotos mantenerse conectados y organizarse con el correo electrónico, los calendarios, los contactos, las tareas y otros elementos en un mismo sitio. Outlook le ayuda a mantenerse al tanto y a asignar prioridad al día basándose en lo que es relevante para usted. Outlook permite compartir datos adjuntos directamente desde OneDrive, planear y unirse a reuniones de equipo, ver y compartir calendarios y ofrecer permisos de delegado para otras personas. Conocer lo que está próximo en el trabajo y los compromisos personales y lo que necesita atención puede ayudar a que los trabajadores remotos se centren en lo que importa. Outlook proporciona métodos útiles para que los trabajadores remotos administren su tiempo y encuentren lo que necesitan fácilmente, incluidos archivos, personas de la organización y mucho más. 
 
-Consulte [este artículo](../security/defender-365-security/secure-email-recommended-policies.md) para ver las directivas recomendadas de identidad y acceso a dispositivos con el fin de proteger los correos electrónicos de la empresa y de los clientes, compatibles con la autenticación moderna y el acceso condicional.
+Consulte [este artículo](../security/office-365-security/secure-email-recommended-policies.md) para ver las directivas recomendadas de identidad y acceso a dispositivos con el fin de proteger los correos electrónicos de la empresa y de los clientes, compatibles con la autenticación moderna y el acceso condicional.
 
 ## <a name="store-and-collaborate-on-files-with-sharepoint-and-onedrive"></a>Almacenamiento y colaboración en archivos con SharePoint y OneDrive
 
@@ -81,7 +81,7 @@ Es posible que tenga que migrar los documentos a SharePoint o OneDrive desde:
 - [Recursos compartidos de archivos](/sharepointmigration/fileshare-to-odsp-migration-guide)
 - [Box](/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
 
-Vea [este artículo](../security/defender-365-security/sharepoint-file-access-policies.md) para conocer las directivas de identidad y acceso de dispositivo recomendadas para proteger SharePoint y OneDrive.
+Vea [este artículo](../security/office-365-security/sharepoint-file-access-policies.md) para conocer las directivas de identidad y acceso de dispositivo recomendadas para proteger SharePoint y OneDrive.
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Creación y colaboración en contenido con aplicaciones de Microsoft 365
 

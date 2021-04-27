@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9f4cc36172b0ac598b2719bee8ce56bf0f8a1b84
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 91029f03e089f44f49800bfe2d18536a8d415411
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933390"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029033"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novedades de Microsoft 365 Defender
 
@@ -38,6 +38,12 @@ Fuente RSS: recibe una notificación cuando se actualiza esta página copiando y
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+
+## <a name="april-2021"></a>Abril de 2021
+- Centro de seguridad mejorado de Microsoft 365 <br> Ahora, el [Centro de seguridad de Microsoft 365](https://security.microsoft.com) está accesible en forma de versión preliminar pública. Esta nueva experiencia incluye Defender para punto de conexión, Defender para Office 365, Microsoft 365 Defender y más en el Centro de seguridad de Microsoft 365. Este es el nuevo hogar para administrar los controles de seguridad. [Ver las novedades](./overview-security-center.md).
+
+- [Informe de análisis de amenazas de Microsoft 365 Defender](threat-analytics.md)<br>
+ El análisis de amenazas te ayuda a responder y minimizar el impacto de los ataques activos. También puede obtener información sobre los intentos de ataque bloqueados por las soluciones de Microsoft 365 Defender y realizar acciones de prevención que mitiguen el riesgo de una mayor exposición y aumenten la resistencia. Como parte de la experiencia de seguridad unificada, el análisis de amenazas ahora está disponible para los titulares de licencias de Microsoft Defender para Endpoint y Microsoft Defender para Office E5.
 
 ## <a name="march-2021"></a>Marzo de 2021
 - [Tabla CloudAppEvents](advanced-hunting-cloudappevents-table.md) <br>Encuentre información sobre eventos en varias aplicaciones y servicios en la nube cubiertos por Microsoft Cloud App Security. Esta tabla también incluye información disponible anteriormente en `AppFileEvents` .
@@ -67,6 +73,6 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [Mejoras avanzadas de la búsqueda](advanced-hunting-overview.md) <br> Busca de forma proactiva amenazas en todo el área de trabajo moderna con Kusto Query Language y un esquema optimizado para seguridad.
 
 ## <a name="march-2019"></a>Marzo de 2019
-- Búsqueda avanzada <br> Página de aterrizaje a varias capacidades de búsqueda que le permiten encontrar proactivamente amenazas que afectan al correo electrónico y a los datos, los dispositivos y las identidades.
+- Búsqueda avanzada de amenazas <br> Página de aterrizaje a varias capacidades de búsqueda que le permiten encontrar proactivamente amenazas que afectan al correo electrónico y a los datos, los dispositivos y las identidades.
 - [Puntuación de seguridad de Microsoft](microsoft-secure-score.md) <br> Medida de la posición de seguridad de una organización, con un número más alto que indica más acciones de mejora realizadas. Seguir las recomendaciones de la puntuación de seguridad puede proteger a su organización de amenazas. 
 - [Informes](overview-security-center.md) <br>  Cuenta con un gran número de tarjetas que cubren una variedad de áreas que los administradores y analistas de seguridad rastrean como parte de sus operaciones diarias.
