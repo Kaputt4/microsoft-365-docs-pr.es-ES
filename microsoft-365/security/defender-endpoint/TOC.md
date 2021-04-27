@@ -49,7 +49,163 @@
 #### [Objetos de directiva de grupo](manage-atp-post-migration-group-policy-objects.md)
 #### [PowerShell, WMI y MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
 
-## [Administración de la seguridad]()
+
+## [Configurar e incorporar dispositivos]()
+### [Microsoft Defender para punto de conexión en Windows Server]()
+#### [Incorporar dispositivos a Microsoft Defender para punto de conexión](onboard-configure.md)
+#### [Incorporar versiones anteriores de Windows](onboard-downlevel.md)
+#### [Incorporar dispositivos Windows 10 mediante la directiva de grupo]()
+##### [Herramientas y métodos de incorporación para equipos con Windows 10](configure-endpoints.md).
+##### [Incorporar dispositivos con la directiva de grupo](configure-endpoints-gp.md)
+##### [Incorporar dispositivos con el Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+##### [Incorporar dispositivos con las herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)
+##### [Incorporar dispositivos con un script local](configure-endpoints-script.md)
+##### [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
+##### [Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop](Onboard-Windows-10-multi-session-device.md)
+#### [Incorporar servidores Windows](configure-server-endpoints.md)
+
+#### [Incorporar dispositivos sin acceso a Internet](onboard-offline-machines.md)
+#### [Ejecutar una prueba de detección en un dispositivo incorporado recientemente](run-detection-test.md)
+#### [Ejecutar ataques simulados en dispositivos](attack-simulations.md)
+#### [Configurar las opciones del proxy y de conectividad a Internet](configure-proxy-internet.md)
+#### [Crear una regla de notificación de incorporación o retirada](onboarding-notification.md)
+
+### [Microsoft Defender para punto de conexión en otros sistemas operativos]()
+#### [Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)
+
+#### [Microsoft Defender para punto de conexión en macOS]()
+##### [Introducción a Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md)
+##### [Novedades](mac-whatsnew.md)
+ 
+##### [Implementar]()
+###### [Implementación basada en Microsoft Intune](mac-install-with-intune.md)
+###### [Implementación basada en JAMF Pro]()
+####### [Implementar Microsoft Defender para punto de conexión en macOS con Jamf Pro](mac-install-with-jamf.md)
+####### [Iniciar sesión en Jamf Pro](mac-install-jamfpro-login.md)
+####### [Configurar grupos de dispositivos](mac-jamfpro-device-groups.md)
+####### [Configurar directivas](mac-jamfpro-policies.md)
+####### [Inscribir dispositivos](mac-jamfpro-enroll-devices.md)
+ 
+###### [Implementar con un sistema de administración de dispositivos móviles (MDM) diferente](mac-install-with-other-mdm.md)
+###### [Implementación manual](mac-install-manually.md)
+##### [Actualizar](mac-updates.md)
+ 
+##### [Configurar]()
+###### [Configurar y validar exclusiones](mac-exclusions.md)
+###### [Definir las preferencias](mac-preferences.md)
+###### [Detectar y bloquear aplicaciones potencialmente no deseadas](mac-pua.md)
+###### [Control de dispositivos]()
+####### [Información general sobre el control de dispositivos](mac-device-control-overview.md)
+####### [Ejemplos de JAMF](mac-device-control-jamf.md)
+####### [Ejemplos de Intune](mac-device-control-intune.md)
+###### [Exámenes de programación](mac-schedule-scan.md)
+ 
+##### [Solucionar problemas]()
+###### [Solucionar de problemas de instalación y actualización](mac-support-install.md)
+###### [Solucionar problemas de rendimiento](mac-support-perf.md)
+###### [Solucionar problemas de conectividad en la nube](troubleshoot-cloud-connect-mdemac.md)
+###### [Solucionar problemas de extensión de kernel](mac-support-kext.md)
+###### [Solucionar problemas de licencia](mac-support-license.md)
+ 
+##### [Privacidad](mac-privacy.md)
+##### [Recursos](mac-resources.md)
+
+
+#### [Microsoft Defender para punto de conexión en iOS]()
+##### [Introducción a Microsoft Defender para punto de conexión en iOS](microsoft-defender-endpoint-ios.md)
+##### [Novedades](ios-whatsnew.md)
+ 
+##### [Implementar]()
+###### [Implementar Microsoft Defender para punto de conexión en iOS a través de Intune](ios-install.md)
+ 
+##### [Configurar]()
+###### [Configurar características de iOS](ios-configure-features.md)
+##### [Privacidad](ios-privacy.md)
+ 
+ 
+#### [Microsoft Defender para punto de conexión en Linux]()
+##### [Introducción a Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
+##### [Novedades](linux-whatsnew.md)
+##### [Implementar]()
+###### [Implementación manual](linux-install-manually.md)
+###### [Implementación basada en Puppet](linux-install-with-puppet.md)
+###### [Implementación basada en Ansible](linux-install-with-ansible.md)
+ 
+##### [Actualizar](linux-updates.md)
+ 
+##### [Configurar]()
+###### [Configurar y validar exclusiones](linux-exclusions.md)
+###### [Configuración del proxy estático](linux-static-proxy-configuration.md)
+###### [Definir las preferencias](linux-preferences.md)
+###### [Detectar y bloquear aplicaciones potencialmente no deseadas](linux-pua.md)
+###### [Programar análisis con Microsoft Defender para punto de conexión en Linux](linux-schedule-scan-atp.md)
+###### [Programar una actualización de Microsoft Defender para punto de conexión (Linux)](linux-update-MDE-Linux.md)
+###### [Implementar Defender para punto de conexión en Linux con Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+ 
+##### [Solucionar problemas]()
+###### [Solución de problemas de instalación](linux-support-install.md)
+###### [Solucionar problemas de conectividad en la nube](linux-support-connectivity.md)
+###### [Solucionar problemas de rendimiento](linux-support-perf.md)
+###### [Solucionar problemas de eventos que faltan](linux-support-events.md)
+ 
+##### [Privacidad](linux-privacy.md)
+##### [Recursos](linux-resources.md)
+ 
+#### [Microsoft Defender para punto de conexión en Android]()
+##### [Introducción a Microsoft Defender para punto de conexión en Android](microsoft-defender-endpoint-android.md)
+ 
+##### [Implementar]()
+###### [Implementar Microsoft Defender para punto de conexión en Android con Microsoft Intune](android-intune.md)
+ 
+##### [Configurar]()
+###### [Configurar Microsoft Defender para punto de conexión en funciones de Android](android-configure.md)
+ 
+##### [Privacidad]()
+###### [Microsoft Defender para punto de conexión en Android: información de privacidad](android-privacy.md)
+ 
+##### [Solucionar problemas]()
+###### [Solución de problemas](android-support-signin.md)
+
+### [Solucionar problemas de incorporación]()
+#### [Solucionar problemas durante la incorporación](troubleshoot-onboarding.md)
+#### [Solucionar problemas de acceso a la suscripción y al portal](troubleshoot-onboarding-error-messages.md)
+
+
+
+
+### [Configurar opciones de portal]()
+#### [Configurar preferencias](preferences-setup.md)
+#### [General]()
+##### [Comprobar la ubicación del almacenamiento de datos y actualizar la configuración de retención de datos](data-retention-settings.md)
+##### [Configurar notificaciones de alerta](configure-email-notifications.md)
+##### [Configurar funciones avanzadas](advanced-features.md)
+
+#### [Permisos]()
+##### [Uso de permisos básicos para acceder al portal](basic-permissions.md)
+##### [Administrar el acceso al portal con RBAC](rbac.md)
+###### [Crear y administrar roles](user-roles.md)
+###### [Crear y administrar grupos de dispositivos](machine-groups.md)
+###### [Crear y administrar etiquetas de dispositivos](machine-tags.md)
+
+#### [Reglas]()
+##### [Administrar reglas de supresión](manage-suppression-rules.md)
+##### [Crear indicadores](manage-indicators.md)
+###### [Crear indicadores para los archivos](indicator-file.md)
+###### [Crear indicadores para direcciones IP y URL/dominios](indicator-ip-domain.md)
+###### [Crear indicadores para certificados](indicator-certificates.md)
+###### [Administrar indicadores](indicator-manage.md)
+##### [Administrar cargas de archivos de automatización](manage-automation-file-uploads.md)
+##### [Administrar las exclusiones de carpeta de automatización](manage-automation-folder-exclusions.md)
+
+#### [Administración de dispositivos]()
+##### [Incorporar dispositivos](onboard-configure.md)
+##### [Retirar dispositivos](offboard-machines.md)
+##### [Asegurarse de que los dispositivos estén configurados de manera adecuada](configure-machines.md)
+##### [Supervisar y aumentar la incorporación de dispositivos](configure-machines-onboarding.md)
+
+#### [Configurar la zona horaria en el Centro de seguridad de Microsoft Defender](time-settings.md)
+
+## [Detectar amenazas y proteger los puntos de conexión]()
 ### [Administración de vulnerabilidades y amenazas]()
 #### [Información general](next-gen-threat-and-vuln-mgt.md)
 #### [Introducción]()
@@ -73,6 +229,13 @@
 ##### [Informe de dispositivos vulnerables](tvm-vulnerable-devices-report.md)
 ##### [Buscar dispositivos expuestos](tvm-hunt-exposed-devices.md)
 
+### [Detección de dispositivo]()
+#### [Información general de la detección de dispositivo](device-discovery.md)
+#### [Configuración de la detección de dispositivo](configure-device-discovery.md)
+#### [Preguntas más frecuentes sobre la detección de dispositivo](device-discovery-faq.md)
+
+### [Dispositivos de red](network-devices.md)
+
 ### [Reducción de la superficie expuesta a ataques]()
 #### [Introducción a la reducción de la superficie expuesta a ataques](overview-attack-surface-reduction.md)
 #### [Evaluar las reglas de la reducción de la superficie expuesta a ataques](evaluate-attack-surface-reduction.md)
@@ -84,6 +247,8 @@
 ##### [Habilitar las reglas de la reducción de superficie expuesta a ataques](enable-attack-surface-reduction.md)
 ##### [Personalizar las reglas de la reducción de superficie expuesta a ataques](customize-attack-surface-reduction.md)
 ##### [Ver eventos de la reducción de la superficie expuesta a ataques](event-views.md)
+
+#### [Usar modo de auditoría](audit-windows-defender.md)
 
 ### Protección de última generación
 #### [Introducción al Antivirus de Microsoft Defender](microsoft-defender-antivirus-in-windows-10.md)
@@ -179,112 +344,21 @@
 ##### [Informes del control de dispositivo](device-control-report.md)
 ##### [Controlar dispositivos USB](control-usb-devices-using-intune.md)
 
-### [Detección de dispositivo]()
-#### [Información general de la detección de dispositivo](device-discovery.md)
-#### [Configuración de la detección de dispositivo](configure-device-discovery.md)
-#### [Preguntas más frecuentes sobre la detección de dispositivo](device-discovery-faq.md)
+#### [Bloqueo y contención de comportamientos]()
+##### [Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)
+##### [Bloqueo de comportamiento del cliente](client-behavioral-blocking.md)
+##### [Bloqueo de bucles de distribución de comentarios](feedback-loop-blocking.md)
 
 
-### [Dispositivos de red](network-devices.md)
-
-### [Microsoft Defender para punto de conexión en macOS]()
-#### [Introducción a Microsoft Defender para punto de conexión en macOS](microsoft-defender-endpoint-mac.md)
-#### [Novedades](mac-whatsnew.md)
-
-#### [Implementar]()
-##### [Implementación basada en Microsoft Intune](mac-install-with-intune.md)
-##### [Implementación basada en JAMF Pro]()
-###### [Implementar Microsoft Defender para punto de conexión en macOS con Jamf Pro](mac-install-with-jamf.md)
-###### [Iniciar sesión en Jamf Pro](mac-install-jamfpro-login.md)
-###### [Configurar grupos de dispositivos](mac-jamfpro-device-groups.md)
-###### [Configurar directivas](mac-jamfpro-policies.md)
-###### [Inscribir dispositivos](mac-jamfpro-enroll-devices.md)
-
-##### [Implementar con un sistema de administración de dispositivos móviles (MDM) diferente](mac-install-with-other-mdm.md)
-##### [Implementación manual](mac-install-manually.md)
-#### [Actualizar](mac-updates.md)
-
-#### [Configurar]()
-##### [Configurar y validar exclusiones](mac-exclusions.md)
-##### [Definir las preferencias](mac-preferences.md)
-##### [Detectar y bloquear aplicaciones potencialmente no deseadas](mac-pua.md)
-##### [Control de dispositivos]()
-###### [Información general sobre el control de dispositivos](mac-device-control-overview.md)
-###### [Ejemplos de JAMF](mac-device-control-jamf.md)
-###### [Ejemplos de Intune](mac-device-control-intune.md)
-##### [Exámenes de programación](mac-schedule-scan.md)
-
-#### [Solucionar problemas]()
-##### [Solucionar de problemas de instalación y actualización](mac-support-install.md)
-##### [Solucionar problemas de rendimiento](mac-support-perf.md)
-##### [Solucionar problemas de conectividad en la nube](troubleshoot-cloud-connect-mdemac.md)
-##### [Solucionar problemas de extensión de kernel](mac-support-kext.md)
-##### [Solucionar problemas de licencia](mac-support-license.md)
-
-#### [Privacidad](mac-privacy.md)
-#### [Recursos](mac-resources.md)
-
-### [Microsoft Defender para punto de conexión en iOS]()
-#### [Introducción a Microsoft Defender para punto de conexión en iOS](microsoft-defender-endpoint-ios.md)
-#### [Novedades](ios-whatsnew.md)
-
-#### [Implementar]()
-##### [Implementar Microsoft Defender para punto de conexión en iOS a través de Intune](ios-install.md)
-
-#### [Configurar]()
-##### [Configurar características de iOS](ios-configure-features.md)
-#### [Privacidad](ios-privacy.md)
+### [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)
 
 
-### [Microsoft Defender para punto de conexión en Linux]()
-#### [Introducción a Microsoft Defender para punto de conexión en Linux](microsoft-defender-endpoint-linux.md)
-#### [Novedades](linux-whatsnew.md)
-#### [Implementar]()
-##### [Implementación manual](linux-install-manually.md)
-##### [Implementación basada en Puppet](linux-install-with-puppet.md)
-##### [Implementación basada en Ansible](linux-install-with-ansible.md)
-##### [Implementar Defender para punto de conexión en Linux con Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+### [Administrar la configuración del dispositivo]()
 
+#### [Aumentar el cumplimiento de la línea base de seguridad](configure-machines-security-baseline.md)
+#### [Optimizar la implementación y las detecciones de la regla de reducción de la superficie expuesta a ataques](configure-machines-asr.md)
 
-#### [Actualizar](linux-updates.md)
-
-#### [Configurar]()
-##### [Configurar y validar exclusiones](linux-exclusions.md)
-##### [Configuración del proxy estático](linux-static-proxy-configuration.md)
-##### [Definir las preferencias](linux-preferences.md)
-##### [Detectar y bloquear aplicaciones potencialmente no deseadas](linux-pua.md)
-##### [Programar análisis con Microsoft Defender para punto de conexión en Linux](linux-schedule-scan-atp.md)
-##### [Programar una actualización de Microsoft Defender para punto de conexión (Linux)](linux-update-MDE-Linux.md)
-
-#### [Solucionar problemas]()
-##### [Solución de problemas de instalación](linux-support-install.md)
-##### [Solucionar problemas de conectividad en la nube](linux-support-connectivity.md)
-##### [Solucionar problemas de rendimiento](linux-support-perf.md)
-##### [Solucionar problemas de eventos que faltan](linux-support-events.md)
-
-#### [Privacidad](linux-privacy.md)
-#### [Recursos](linux-resources.md)
-
-### [Microsoft Defender para punto de conexión en Android]()
-#### [Introducción a Microsoft Defender para punto de conexión en Android](microsoft-defender-endpoint-android.md)
-
-#### [Implementar]()
-##### [Implementar Microsoft Defender para punto de conexión en Android con Microsoft Intune](android-intune.md)
-
-#### [Configurar]()
-##### [Configurar Microsoft Defender para punto de conexión en funciones de Android](android-configure.md)
-
-#### [Privacidad]()
-##### [Microsoft Defender para punto de conexión en Android: información de privacidad](android-privacy.md)
-
-#### [Solucionar problemas]()
-##### [Solución de problemas](android-support-signin.md)
-
-
-### [Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft](configure-microsoft-threat-experts.md)
-
-## [Operaciones de seguridad]()
-
+## [Investigar y responder a amenazas]()
 ### [EDR]()
 #### [Introducción a EDR](overview-endpoint-detection-response.md)
 #### [Panel de operaciones de seguridad](security-operations-dashboard.md)
@@ -347,96 +421,31 @@
 ##### [Informes de protección contra amenazas](threat-protection-reports.md)
 #### [Informes de cumplimiento y mantenimiento del dispositivo](machine-reports.md)
 
-### [Bloqueo y contención de comportamientos]()
-#### [Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)
-#### [Bloqueo de comportamiento del cliente](client-behavioral-blocking.md)
-#### [Bloqueo de bucles de distribución de comentarios](feedback-loop-blocking.md)
-#### [EDR en modo bloqueo](edr-in-block-mode.md)
+### [Búsqueda avanzada de amenazas]()
+#### [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
+#### [Entender el esquema](advanced-hunting-schema-reference.md)
+#### [DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)
+
+### [Información general sobre el Análisis de amenazas](threat-analytics.md)
+#### [Leer el informe de análisis ](threat-analytics-analyst-reports.md)
+
+### [EDR en modo bloqueo](edr-in-block-mode.md)
 
 ### [Investigación y respuesta automatizadas (AIR)]()
 #### [Descripción de AIR](automated-investigations.md)
 #### [Automatización de niveles de AIR](automation-levels.md)
 #### [Configurar las funciones de AIR](configure-automated-investigations-remediation.md)
 
-### [Búsqueda avanzada de amenazas]()
-#### [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)
-#### [Entender el esquema](advanced-hunting-schema-reference.md)
-#### [DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)
+### [Expertos en amenazas de Microsoft]()
+#### [Información general sobre Expertos en amenazas de Microsoft](microsoft-threat-experts.md)
+#### [Configurar y administrar las funcionalidades de Expertos en amenazas de Microsoft](configure-microsoft-threat-experts.md)
 
-### [Expertos en amenazas de Microsoft](microsoft-threat-experts.md)
 
-### [Información general sobre el Análisis de amenazas](threat-analytics.md)
-#### [Leer el informe de análisis ](threat-analytics-analyst-reports.md)
 
-## [Temas de procedimientos]()
-### [Dispositivos incorporados al servicio]()
-#### [Incorporar dispositivos a Microsoft Defender para punto de conexión](onboard-configure.md)
-#### [Incorporar versiones anteriores de Windows](onboard-downlevel.md)
-#### [Incorporar dispositivos Windows 10 mediante la directiva de grupo]()
-##### [Herramientas y métodos de incorporación para equipos con Windows 10](configure-endpoints.md).
-##### [Incorporar dispositivos con la directiva de grupo](configure-endpoints-gp.md)
-##### [Incorporar dispositivos con el Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-##### [Incorporar dispositivos con las herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)
-##### [Incorporar dispositivos con un script local](configure-endpoints-script.md)
-##### [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](configure-endpoints-vdi.md)
-##### [Incorporar dispositivos de varias sesiones a Windows 10 en Windows Virtual Desktop](Onboard-Windows-10-multi-session-device.md)
-#### [Incorporar servidores Windows](configure-server-endpoints.md)
-#### [Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)
-#### [Incorporar dispositivos sin acceso a Internet](onboard-offline-machines.md)
-#### [Ejecutar una prueba de detección en un dispositivo incorporado recientemente](run-detection-test.md)
-#### [Ejecutar ataques simulados en dispositivos](attack-simulations.md)
-#### [Configurar las opciones del proxy y de conectividad a Internet](configure-proxy-internet.md)
-#### [Crear una regla de notificación de incorporación o retirada](onboarding-notification.md)
- 
-#### [Solucionar problemas de incorporación]()
-##### [Solucionar problemas durante la incorporación](troubleshoot-onboarding.md)
-##### [Solucionar problemas de acceso a la suscripción y al portal](troubleshoot-onboarding-error-messages.md)
-
-### [Administrar la configuración del dispositivo]()
-#### [Asegurarse de que los dispositivos estén configurados de manera adecuada](configure-machines.md)
-#### [Supervisar y aumentar la incorporación de dispositivos](configure-machines-onboarding.md)
-#### [Aumentar el cumplimiento de la línea base de seguridad](configure-machines-security-baseline.md)
-#### [Optimizar la implementación y las detecciones de la regla de reducción de la superficie expuesta a ataques](configure-machines-asr.md)
-
-### [Configurar opciones de portal]()
-#### [Configurar preferencias](preferences-setup.md)
-#### [General]()
-##### [Comprobar la ubicación del almacenamiento de datos y actualizar la configuración de retención de datos](data-retention-settings.md)
-##### [Configurar notificaciones de alerta](configure-email-notifications.md)
-##### [Configurar funciones avanzadas](advanced-features.md)
-
-#### [Permisos]()
-##### [Uso de permisos básicos para acceder al portal](basic-permissions.md)
-##### [Administrar el acceso al portal con RBAC](rbac.md)
-###### [Crear y administrar roles](user-roles.md)
-###### [Crear y administrar grupos de dispositivos](machine-groups.md)
-###### [Crear y administrar etiquetas de dispositivos](machine-tags.md)
-
-#### [Reglas]()
-##### [Administrar reglas de supresión](manage-suppression-rules.md)
-##### [Crear indicadores](manage-indicators.md)
-###### [Crear indicadores para los archivos](indicator-file.md)
-###### [Crear indicadores para direcciones IP y URL/dominios](indicator-ip-domain.md)
-###### [Crear indicadores para certificados](indicator-certificates.md)
-###### [Administrar indicadores](indicator-manage.md)
-##### [Administrar cargas de archivos de automatización](manage-automation-file-uploads.md)
-##### [Administrar las exclusiones de carpeta de automatización](manage-automation-folder-exclusions.md)
-
-#### [Administración de dispositivos]()
-##### [Incorporar dispositivos](onboard-configure.md)
-##### [Retirar dispositivos](offboard-machines.md)
-
-#### [Configurar la zona horaria en el Centro de seguridad de Microsoft Defender](time-settings.md)
-
-### [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)
-
+## Referencia
 ### [Configurar la integración con otras soluciones de Microsoft]()
 #### [Configurar el acceso condicional](configure-conditional-access.md)
 #### [Configurar la integración con Microsoft Cloud App Security](microsoft-cloud-app-security-config.md)
-
-### [Usar modo de auditoría](audit-windows-defender.md)
-
-## Referencia
 ### [Administración y API]()
 #### [Introducción a la administración y las API](management-apis.md)
 #### [Notas de la versión de la API](api-release-notes.md)
