@@ -1,5 +1,5 @@
 ---
-title: Proteger la configuración de seguridad con protección contra alteraciones
+title: Configuración de seguridad de la protección con protección contra alteraciones
 ms.reviewer: shwjha, hayhov
 manager: dansimp
 description: Usa la protección contra manipulaciones para evitar que las aplicaciones malintencionadas cambien la configuración de seguridad importante.
@@ -15,14 +15,14 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 84864965d7a18902a01307c1dcf373fa7c0534e8
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: ff98b78d113a67ad6bd816753c691e8afe71dd77
+ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765580"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52065078"
 ---
-# <a name="protect-security-settings-with-tamper-protection"></a>Proteger la configuración de seguridad con protección contra alteraciones
+# <a name="protect-security-settings-with-tamper-protection"></a>Configuración de seguridad de la protección con protección contra alteraciones
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -51,7 +51,7 @@ Con la protección contra manipulaciones, las aplicaciones malintencionadas no p
 - Deshabilitar la protección entregada en la nube
 - Eliminación de actualizaciones de inteligencia de seguridad
 
-### <a name="how-it-works"></a>Cómo funciona
+### <a name="how-it-works"></a>Funcionamiento
 
 La protección contra alteraciones bloquea básicamente El Antivirus de Microsoft Defender e impide que se cambie la configuración de seguridad a través de aplicaciones y métodos como:
 
@@ -60,6 +60,8 @@ La protección contra alteraciones bloquea básicamente El Antivirus de Microsof
 - Edición o eliminación de la configuración de seguridad mediante directivas de grupo
 
 La protección contra alteraciones no le impide ver la configuración de seguridad. Además, la protección contra alteraciones no afecta a la forma en que las aplicaciones antivirus de terceros se registran con la aplicación seguridad de Windows. Si tu organización usa Windows 10 Enterprise E5, los usuarios individuales no pueden cambiar la configuración de protección contra manipulaciones; en esos casos, la protección contra alteraciones la administra el equipo de seguridad.
+
+
 
 ### <a name="what-do-you-want-to-do"></a>¿Qué quiere hacer?
 
@@ -73,6 +75,19 @@ La protección contra alteraciones no le impide ver la configuración de segurid
 | Revisar las recomendaciones de seguridad | [Revisar recomendaciones de seguridad](#review-your-security-recommendations) |
 | Revisar la lista de preguntas más frecuentes (preguntas frecuentes) | [Examinar las preguntas frecuentes](#view-information-about-tampering-attempts) |
 
+Según el método o la herramienta de administración que use para habilitar la protección contra alteraciones, puede haber una dependencia de MAPS (protección entregada en la nube). 
+
+En la tabla siguiente se proporcionan detalles sobre los métodos, herramientas y dependencias.
+
+
+
+|     Cómo se habilita la protección contra alteraciones                                         |     Dependencia de MAPS (protección entregada en la nube)    |
+|------------------------------------------------------------------------------|--------------------------------------------------------|
+|     Microsoft Intune                                                         |     No                                                 |
+| Microsoft Endpoint Configuration Manager + Tenant Attach                     |     No                                                 |
+|     Portal de Microsoft Defender para puntos de conexión (securitycenter.microsoft.com)    |     Sí                                                |
+|     Portal de Microsoft 365 Defender (security.microsoft.com)                   |     Sí                                                |
+
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center"></a>Administrar la protección contra alteraciones de su organización mediante el Centro de seguridad de Microsoft Defender
 
 La protección contra alteraciones puede estar activada o desactivada para el inquilino mediante el Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). Estos son algunos puntos a tener en cuenta:
@@ -84,6 +99,9 @@ La protección contra alteraciones puede estar activada o desactivada para el in
 - Cuando administras la protección contra alteraciones en el Centro de seguridad de Microsoft Defender, la configuración se aplica en todo el espacio empresarial, lo que afecta a todos los dispositivos que ejecutan Windows 10, Windows Server 2016 o Windows Server 2019. Para ajustar la protección contra manipulaciones (por ejemplo, tener la protección contra manipulaciones en algunos dispositivos, pero desactivada para otros), use [Intune](#manage-tamper-protection-for-your-organization-using-intune) o Configuration Manager con el inquilino [adjuntado](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
 
 - Si tienes un entorno híbrido, las opciones de protección contra alteraciones configuradas en Intune tienen prioridad sobre las opciones configuradas en el Centro de seguridad de Microsoft Defender. 
+
+
+
 
 ### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-defender-security-center"></a>Requisitos para administrar la protección contra alteraciones en el Centro de seguridad de Microsoft Defender
 
@@ -297,4 +315,4 @@ El equipo de operaciones de seguridad también puede usar consultas de búsqueda
 
 [Obtener información general sobre Microsoft Defender para endpoint](/microsoft-365/security/defender-endpoint)
 
-[Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para endpoint](why-use-microsoft-defender-antivirus.md)
+[Mejor juntos: Antivirus de Microsoft Defender y Microsoft Defender para punto de conexión](why-use-microsoft-defender-antivirus.md)
