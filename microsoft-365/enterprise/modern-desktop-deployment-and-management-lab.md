@@ -2,10 +2,10 @@
 title: Kit de laboratorio de implementación de Windows y Office
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: greglin
+author: greg-lindsay
 manager: laurawi
-ms.date: 08/10/2020
+ms.date: 04/26/2021
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Infórmese sobre las características y la forma de acceder al kit de laboratorio de implementación de Windows y Office.
-ms.openlocfilehash: efbcec6417b082311d3f094b0251702d8e0dbeac
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: c0cf3ce239ed91261bd6e53cf317a7053168509a
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028669"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060878"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Kit de laboratorio de implementación de Windows y Office
 
@@ -104,23 +104,15 @@ Las guías de laboratorio detalladas le llevarán a través de varios escenarios
 ## <a name="additional-guidance"></a>Instrucciones adicionales
 
   - [Vídeos de la serie de implementación de escritorios de Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
-
   - [Implementación de sistema operativo de Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
-
   - [Plan de implementación de Windows 10](/windows/deployment/planning/index)
-
   - [Guía de implementación de Aplicaciones de Microsoft 365](/deployoffice/deployment-guide-microsoft-365-apps)
-
   - [Introducción a Intune](/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>Recursos relacionados
 
   - [Presentación de Microsoft Office 365](https://www.microsoft.com/microsoft-365/default.aspx)
-
   - [Office 365 para empresas](https://products.office.com/business/office)
-
   - [Presentación de Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-
   - [Windows 10 para la empresa](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
-
   - [Windows 10 para pequeñas y medianas empresas](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)

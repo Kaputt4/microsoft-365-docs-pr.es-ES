@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: ea28e9c244b6b8faaeb9b1f3685d57169605cbb9
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 0edc3847d6b832f254c6f289355570a3a044b1f4
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650319"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061042"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Implementar capacidades de protección contra amenazas en Microsoft 365 E5
 
-Esta solución describe las potentes capacidades de protección contra amenazas en Microsoft 365 E5. Lea esta solución para obtener información general sobre lo que se incluye, cómo funciona y cómo empezar a implementar estas funcionalidades en su organización.
+Esta solución describe las potentes capacidades de protección contra amenazas en Microsoft 365 E5 y por qué estas capacidades son importantes. Lea esta solución para obtener información general sobre lo que se incluye en Microsoft 365 E5, cómo funcionan las capacidades de protección contra amenazas y cómo configurar y configurar la protección contra amenazas en su organización.
 
-## <a name="why-protecting-against-threats-is-important"></a>Por qué es importante protegerse contra amenazas 
+## <a name="why-threat-protection-is-important"></a>Por qué la protección contra amenazas es importante 
 
 [El malware](/windows/security/threat-protection/intelligence/understanding-malware)y los ciberataques sofisticados, como las [amenazas sin](/windows/security/threat-protection/intelligence/fileless-threats)archivos, son una ocurrencia común. Las empresas deben protegerse a sí mismas y a sus clientes con capacidades de seguridad de IT eficaces. Los ciberataques pueden causar problemas importantes para su organización, que van desde una pérdida de confianza hasta problemas financieros, tiempos de inactividad que amenazan la empresa y mucho más. La protección contra amenazas es importante, pero puede resultar difícil determinar dónde enfocar el tiempo, el esfuerzo y los recursos de la organización. Microsoft 365 E5 puede ayudarle. 
 
@@ -57,7 +57,7 @@ En la siguiente ilustración se muestra una ruta de acceso recomendada para impl
 > [!div class="mx-imgBorder"]
 > ![Señales de protección contra amenazas M365](../media/deploy-threat-protection/deploy-threat-protection-across-m365.png)
 
-|Solución/funcionalidades  |Descripción  |
+|Solución/funcionalidades  |Description  |
 |---------|---------|
 |Autenticación multifactor y acceso condicional     |Proteger contra identidades y dispositivos en peligro. Comience con esta protección porque es fundamental. La configuración recomendada en esta guía incluye Azure AD Identity Protection como requisito previo.     |
 |Microsoft Defender for Identity     |  Una solución de seguridad basada en la nube que aprovecha las señales locales de Servicios de dominio de Active Directory (AD DS) para identificar, detectar e investigar amenazas avanzadas, identidades comprometidas y acciones internas malintencionadas dirigidas a su organización. Céntrate en Microsoft Defender para Identity a continuación porque protege la infraestructura local y en la nube, no tiene dependencias ni requisitos previos y puede proporcionar ventajas de seguridad inmediatas. | 
