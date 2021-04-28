@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Summary: Understand the migration phases actions and impacts of moving from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region.'
-ms.openlocfilehash: 481447fa291354b3377648089cff193a2ad6fc2a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 354ca55bae7704c011af5a76a1112e4d2ecb47ca
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061090"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073930"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Fases de migración acciones e impactos para la migración desde Microsoft Cloud Deutschland
 
@@ -41,7 +41,7 @@ El proceso de migración se completará durante varias semanas en función del t
 |Azure|Semanas|Clientes|Crear nuevas suscripciones de Azure a nivel mundial y servicios de Azure de transición.|
 |Suscripción & de licencias|De 1 a 2 días|Microsoft|Compre suscripciones mundiales, cancele las suscripciones de Microsoft Cloud Deutschland y las licencias de usuario de transición.|
 |SharePoint y OneDrive|Más de 15 días|Microsoft|Migre el contenido de SharePoint y OneDrive para la Empresa, conservando sharepoint.de direcciones URL.|
-|Exchange Online|Más de 15 días|Microsoft|Migrar el contenido de Exchange Online y la transición a direcciones URL de todo el mundo.|
+|Exchange en línea|Más de 15 días|Microsoft|Migrar el contenido de Exchange Online y la transición a direcciones URL de todo el mundo.|
 |Seguridad y cumplimiento|De 1 a 2 días|Microsoft|Seguridad de transición & de cumplimiento y contenido.|
 |Skype Empresarial|De 1 a 2 días|Microsoft|Transición de Skype Empresarial a Microsoft Teams.|
 |Power BI & Dynamics 365|Más de 15 días|Microsoft|Migrar contenido de Power BI y Dynamics 365.|
@@ -264,18 +264,26 @@ Los clientes con Dynamics 365 requieren una participación adicional para migrar
 
 ## <a name="phase-9-office-apps"></a>Fase 9: Aplicaciones de Office
 
-**Se aplica a:** Todos los clientes que usan aplicaciones de escritorio de Office (Word, Excel, PowerPoint, Outlook, ...)
+**Se aplica a:** Todos los clientes que usan aplicaciones de escritorio de Office (Word, Excel, PowerPoint, Outlook, OneDrive ...)
+
+En esta fase, todas las aplicaciones cliente y Office Online realizan el recorte de cliente. Azure AD ultima el ámbito del espacio empresarial para apuntar a los servicios de Office 365 y a los puntos de conexión relacionados.
 
 Los inquilinos de Office 365 que transiciónn a la región "Alemania" requieren que todos los usuarios cierren, cierren sesión desde Office 365 y vuelvan a iniciar sesión para todas las aplicaciones de escritorio de Office (Word, Excel, PowerPoint, Outlook, etc.) y el cliente de OneDrive para la Empresa después de que la migración de inquilinos haya alcanzado la fase 9. Al iniciar sesión, permite a los servicios de Office obtener nuevos tokens de autenticación del servicio global de Azure AD.
+
+En caso de que las aplicaciones de escritorio de Office no funcionen después de iniciar sesión e iniciar sesión desde las aplicaciones, se recomienda ejecutar la Herramienta de recorte de cliente [de Office (OCCT)](https://github.com/microsoft/OCCT) en el equipo afectado para solucionar el problema.
+
+Si la Herramienta de recorte de cliente [de Office (OCCT)](https://github.com/microsoft/OCCT) se ha implementado y programado en clientes de Windows con antelación, no es necesario el procedimiento de inicio de sesión o de salida.
 
 La mejor experiencia del usuario se puede garantizar mediante el uso de aplicaciones de Office más recientes. Las empresas deben considerar el uso del Canal de empresa mensual.
 
 Asegúrese de que ha completado el [procedimiento de pretrabajo para dispositivos](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) móviles.
 
-| Pasos | Description | Impacto |
-|:-------|:-------|:-------|
-| Clientes, Office Online durante el traslado de cliente de Office, Azure AD ultima el ámbito del espacio empresarial para apuntar a los servicios de Office 365. | Este cambio de configuración permite a los clientes de Office actualizar y apuntar a los extremos de servicios de Office 365. | <ul><li>Notificar a los usuarios que cierren _todas_ las aplicaciones de Office y vuelvan a iniciar sesión (o forzar a los clientes a reiniciarse y a los usuarios a iniciar sesión) para permitir que los clientes de Office puedan recoger el cambio. </li><li>Notifique a los usuarios  y al personal del servicio de atención al cliente que los usuarios pueden ver un banner de Office que les pida que reactiven las aplicaciones de Office en un plazo de 72 horas desde el recorte. </li><li>Todas las aplicaciones de Office en máquinas personales deben cerrarse y los usuarios deben cerrar sesión y volver a iniciar sesión. En la barra de activación amarilla, inicie sesión para reactivarse con los servicios de Office 365.</li><li>Las máquinas compartidas requerirán acciones similares a las máquinas personales y no requerirán un procedimiento especial. </li><li>En dispositivos móviles, los usuarios deben cerrar sesión en las aplicaciones, cerrarlas y, a continuación, iniciar sesión de nuevo.</li></ul>|
-||||
+Consideraciones adicionales:
+- Notificar a los usuarios que cierren todas las aplicaciones de Office y vuelvan a iniciar sesión (o forzar a los clientes a reiniciarse y a los usuarios a iniciar sesión) para permitir que los clientes de Office puedan recoger el cambio.
+- Notifique a los usuarios y al personal del servicio de atención al cliente que los usuarios pueden ver un banner de Office que les pida que reactiven las aplicaciones de Office en un plazo de 72 horas desde el recorte.
+- Todas las aplicaciones de Office en máquinas personales deben cerrarse y los usuarios deben cerrar sesión y volver a iniciar sesión. En la barra de activación amarilla, inicie sesión para reactivarse con los servicios de Office 365.
+- Las máquinas compartidas requerirán acciones similares a las máquinas personales y no requerirán un procedimiento especial.
+- En dispositivos móviles, los usuarios deben cerrar sesión en las aplicaciones, cerrarlas y, a continuación, iniciar sesión de nuevo.
 
 ## <a name="phase-9-line-of-business-apps"></a>Fase 9: Aplicaciones de línea de negocio
 

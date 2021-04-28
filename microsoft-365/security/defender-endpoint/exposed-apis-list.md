@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ab3d3aa9a13b71f65d3d4335646e32a7e4270242
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 656aa26d80db73bfc52511f9dd94e58e771f3ac6
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061054"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073846"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>API compatibles de Microsoft Defender para punto de conexión
 
@@ -69,13 +69,12 @@ Tema | Descripción
 [Propiedades y métodos de máquina](machine.md) | Ejecute llamadas API como obtener dispositivos, obtener dispositivos por identificador, información sobre usuarios que han iniciado \- sesión, editar etiquetas y mucho más.
 [Métodos y propiedades de acción de máquina](machineaction.md) | Ejecute una llamada API como \- Aislamiento, Ejecutar examen antivirus y mucho más.
 [Propiedades y métodos estáticos.](recommendation.md) | Ejecute llamadas API como \- obtener recomendación por identificador.
-[Propiedades y métodos de actividad de corrección](get-remediation-methods-properties.md) | Ejecute una llamada API como obtener todas las tareas de corrección, obtener la tarea de corrección de dispositivos expuestos y \- obtener una tarea de corrección por identificador.
 [Propiedades y métodos de puntuación](score.md) | Ejecuta llamadas API como obtener \- puntuación de exposición o obtener puntuación segura del dispositivo.
 [Propiedades y métodos de software](software.md) | Ejecute llamadas API como, \- por ejemplo, enumerar vulnerabilidades por software.
 [Métodos de usuario](user.md) | Ejecute llamadas API como obtener alertas relacionadas con \- el usuario y dispositivos relacionados con el usuario.
 [Propiedades y métodos de vulnerabilidad](vulnerability.md) | Ejecute llamadas API, como \- los dispositivos de lista por vulnerabilidad.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Microsoft Defender para api de punto de conexión](apis-intro.md)
 
