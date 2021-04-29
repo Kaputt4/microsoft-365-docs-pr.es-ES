@@ -118,8 +118,6 @@
           href: create-a-keyword-dictionary.md
         - name: Creación de huella digital de documento
           href: document-fingerprinting.md
-        - name: Funciones de DLP para información confidencial
-          href: what-the-dlp-functions-look-for.md
     - name: Clasificadores que se pueden entrenar
       items:
         - name: Obtenga información sobre los clasificadores entrenables
