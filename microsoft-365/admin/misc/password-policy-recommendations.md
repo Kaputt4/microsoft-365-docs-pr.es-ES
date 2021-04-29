@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Obtenga información acerca de cómo hacer que su organización sea más segura frente a ataques a contraseñas y por qué debe prohibir contraseñas comunes y habilitar la autenticación multifactor basada en riesgos.
-ms.openlocfilehash: ca9a88b0bb154416837254d785cf9cfee8876ae6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d3f86a6e85ab2f8e469a57ea98a661e4cc453673
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914731"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073870"
 ---
 # <a name="password-policy-recommendations"></a>Recomendaciones de directiva de contraseñas
 
@@ -34,7 +34,15 @@ Como administrador de una organización, usted es el responsable de configurar l
   
 Para determinar con qué frecuencia expiran las contraseñas de Microsoft 365 en la organización, vea [Establecer la directiva de expiración de contraseñas para Microsoft 365](../manage/set-password-expiration-policy.md).
 
-Para obtener más información acerca de las contraseñas de Microsoft 365, consulte estos [artículos relacionados](#related-articles).
+Para obtener más información acerca de las contraseñas de Microsoft 365, vea:
+
+[Restablecer contraseñas](../add-users/reset-passwords.md) (artículo)
+
+[Configurar la contraseña de un usuario individual para que nunca expire](../add-users/set-password-to-never-expire.md) (artículo)
+
+[Permitir que los usuarios puedan restablecer sus propias contraseñas](../add-users/let-users-reset-passwords.md) (artículo)
+
+[Volver a enviar la contraseña de un usuario: ayuda para administradores](../add-users/resend-user-password.md) (artículo)
   
 ## <a name="understanding-password-recommendations"></a>Comprender las recomendaciones de contraseña
 
@@ -134,12 +142,12 @@ La autenticación multifactor basada en riesgos garantiza que, cuando nuestro si
 
 - [Las peores contraseñas de 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Restablecer contraseñas](../add-users/reset-passwords.md)
+[Restablecer contraseñas](../add-users/reset-passwords.md) (artículo)
 
-[Establecer la contraseña de un usuario individual que nunca caduque](../add-users/set-password-to-never-expire.md)
+[Establecer la contraseña de un usuario individual para que nunca expire](../add-users/set-password-to-never-expire.md) (artículo)
 
-[Permitir que los usuarios puedan restablecer sus propias contraseñas](../add-users/let-users-reset-passwords.md)
+[Permitir que los usuarios puedan restablecer sus propias contraseñas](../add-users/let-users-reset-passwords.md) (artículo)
 
-[Volver a enviar la contraseña de un usuario: ayuda para administradores](../add-users/resend-user-password.md)
+[Volver a enviar la contraseña de un usuario: ayuda para administradores](../add-users/resend-user-password.md) (artículo)
