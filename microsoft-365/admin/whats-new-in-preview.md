@@ -21,12 +21,12 @@ description: 'Centro de administración de Microsoft 365: obtenga información s
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 90f75b0c1ea38833325c51399108551286f55e92
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: b226f48edd5f65100c81e95d2026c7c172959c8d
+ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024198"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52077316"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades del Centro de administración de Microsoft 365
 
@@ -83,7 +83,7 @@ Hemos renovado el Centro de mensajes para ayudarle a descubrir mensajes relevant
 
 :::image type="content" source="../media/message-center.png" alt-text="Captura de pantalla: página principal del centro de mensajes que muestra la bandeja de entrada y los mensajes":::
 
-Para obtener más información sobre las nuevas características, consulte [Administrar mensajes en el Centro de mensajes.](manage/manage-messages.md)
+Para obtener más información sobre las nuevas características, consulte [Centro de mensajes](manage/message-center.md).
 
 ### <a name="whats-new-features"></a>Novedades
 
@@ -342,7 +342,7 @@ Novedades de la serie de vídeos de **Microsoft 365:** este mes, tratamos sugere
 
 #### <a name="for-admins-and-business-owners"></a>Para administradores y propietarios de empresas
 
-- [Capacitar a su pequeña empresa con trabajo remoto](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
+- [Potencie su pequeña empresa con el trabajo a distancia](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
 - [Ejecutar una pequeña empresa remota](../business-video/sign-up.md)
 - [Registrarse en Microsoft Business Basic](../business-video/sign-up.md)
 - [Configuración del inicio de sesión en dos factores](../business-video/sign-up.md)
@@ -382,9 +382,9 @@ Los nuevos nombres de producto entraron en vigor el 21 de abril de 2020. Solo se
 |Nombre actual |Nuevo nombre  |
 |---------|---------|
 |Office 365 Empresa Essentials     |   Microsoft 365 Empresa Básico      |
-|Office 365 Empresa Premium     |    Microsoft 365 Empresa Estándar     |
+|Office 365 Business Premium     |    Microsoft 365 Empresa Estándar     |
 |Microsoft 365 Empresa     |    Microsoft 365 Empresa Premium     |
-|Office 365 Empresa     |    Aplicaciones de Microsoft 365 para negocios       |
+|Office 365 Business     |    Aplicaciones de Microsoft 365 para negocios       |
 |Office 365 ProPlus    |   Aplicaciones de Microsoft 365 para empresas      |
 
 ### <a name="videos-training-and-docs"></a>Vídeos, aprendizaje y documentos
