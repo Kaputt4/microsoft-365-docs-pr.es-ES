@@ -204,18 +204,10 @@
           href: ../../compliance/alert-policies.md
         - name: Informes inteligentes y reportes en el Centro de seguridad y cumplimiento
           href: reports-and-insights-in-security-and-compliance.md
-        - name: Habilitar el complemento Notificar mensajes
-          href: enable-the-report-message-add-in.md
-        - name: Habilitar el complemento Informe de suplantación de identidad (phishing)
-          href: enable-the-report-phish-add-in.md
-        - name: Instalar y usar el complemento de Notificación de correo no deseado
-          href: junk-email-reporting-add-in-for-microsoft-outlook.md
+        - name: Informar de falsos positivos y falsos negativos en Outlook
+          href: report-false-positives-and-false-negatives.md
         - name: Reglas de flujo de correo (reglas de transporte) en EOP independiente
           href: mail-flow-rules-transport-rules-0.md
-        - name: Informar de correo electrónico no deseado y suplantación de identidad (phishing) en Outlook en la Web
-          href: report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
-        - name: Informar de correo electrónico no deseado y suplantación de identidad (phishing) en Outlook para iOS y Android
-          href: report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
         - name: Ejecutar un informe de grupo de roles de administrador en EOP independiente
           href: run-an-administrator-role-group-report-in-eop-eop.md
     - name: Investigar
