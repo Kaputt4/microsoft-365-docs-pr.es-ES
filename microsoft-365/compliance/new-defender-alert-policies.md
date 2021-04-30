@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: Estamos publicando nuevas directivas de alerta para Microsoft Defender para Office 365. También estamos retirando dos directivas de alerta existentes que se han reemplazado por las nuevas.
-ms.openlocfilehash: 247b8c8be26016a8492f25243b8c5bcc555d35b3
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 7074002a78d6e776f24395bf6492177c1d789033
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760755"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086776"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Nuevas directivas de alerta en Microsoft Defender para Office 365
 
@@ -67,17 +67,17 @@ En la tabla siguiente se indica cuándo las nuevas directivas de alertas empezar
 |:------------|:-----|
 | **Mensajes de correo electrónico que contienen direcciones URL malintencionadas quitados después de la entrega** (nueva) | Las alertas se empezarán a desencadenar el 11 de abril de 2021|
 | **Mensajes de correo electrónico que contienen archivos malintencionados quitados después de la entrega** (nueva) | Las alertas se empezarán a desencadenar el 11 de abril de 2021 |
-| **Mensajes de correo electrónico de una campaña se entregaron y se quitaron más tarde** (nueva) | Las alertas se empezarán a desencadenar el 30 de abril de 2021|
-| **Correos electrónicos malintencionados se entregaron y se quitaron posteriormente** (nueva) | Las alertas se empezarán a desencadenar el 30 de abril de 2021|
-| **Mensajes de correo electrónico que contienen direcciones URL de cebo quitados después de la entrega** (existente, va a eliminarse)| La directiva de alerta se quitará el 30 de abril de 2021 Vea la sección [Lo que tiene que hacer para prepararse para estos cambios](#what-you-need-to-do-to-prepare-for-these-changes).|
-| **Mensajes de correo electrónico que contienen malware quitados después de la entrega** (existente, va a eliminarse) | La directiva de alerta se quitará el 30 de abril de 2021 Vea la sección [Lo que tiene que hacer para prepararse para estos cambios](#what-you-need-to-do-to-prepare-for-these-changes). |
+| **Mensajes de correo electrónico de una campaña se entregaron y se quitaron más tarde** (nueva) | Las alertas empezarán a desencadenarse el 14 de mayo de 2021|
+| **Correos electrónicos malintencionados que se entregaron y se quitaron posteriormente** (nueva) | Las alertas empezarán a desencadenarse el 14 de mayo de 2021|
+| **Mensajes de correo electrónico que contienen direcciones URL de cebo quitados después de la entrega** (existente, va a eliminarse)| La directiva de alerta se quitará el 14 de mayo de 2021. Vea la sección [Lo que tiene que hacer para prepararse para estos cambios](#what-you-need-to-do-to-prepare-for-these-changes).|
+| **Mensajes de correo electrónico que contienen malware quitados después de la entrega** (existente, va a eliminarse) | La directiva de alerta se quitará el 14 de mayo de 2021. Vea la sección [Lo que tiene que hacer para prepararse para estos cambios](#what-you-need-to-do-to-prepare-for-these-changes). |
 |||
 
-Los cambios de gravedad de las alertas se implantarán en todas las organizaciones antes del 30 de abril de 2021.
+Los cambios de gravedad de las alertas se implantarán en todas las organizaciones antes del 14 de mayo de 2021.
 
 ## <a name="how-this-will-affect-your-organization"></a>Cómo afectará esto a su organización
 
-Las nuevas alertas empezarán a activarse y desencadenarán investigaciones de AIR en su organización en las fechas indicadas anteriormente. Para reducir el impacto en las organizaciones de seguridad que han puesto en funcionamiento las dos alertas que se van a quitar, verá las alertas activadas por las directivas de alerta existentes *y* las alertas activadas por las nuevas directivas de alerta entre el 5 de abril de 2021 y el 30 de abril de 2021. De esta forma, los equipos de seguridad disponen de tiempo para afrontar los cambios necesarios. Para ayudar a los equipos de seguridad con el aumento del volumen de alertas durante esta breve duración, tanto las alertas existentes como las nuevas se correlacionarán en la misma investigación de AIR y en un mismo incidente. Más concretamente, se incluye el comportamiento siguiente para alertas, investigaciones de AIR e incidentes:
+Las nuevas alertas empezarán a activarse y desencadenarán investigaciones de AIR en su organización en las fechas indicadas anteriormente. Para reducir el impacto en las organizaciones de seguridad que han puesto en funcionamiento las dos alertas que se van a quitar, verá las alertas activadas por las directivas de alerta existentes *y* las alertas activadas por las nuevas directivas de alerta entre el 5 de abril de 2021 y el 14 de mayo de 2021. De esta forma, los equipos de seguridad disponen de tiempo para afrontar los cambios necesarios. Para ayudar a los equipos de seguridad con el aumento del volumen de alertas durante esta breve duración, tanto las alertas existentes como las nuevas se correlacionarán en la misma investigación de AIR y en un mismo incidente. Más concretamente, se incluye el comportamiento siguiente para alertas, investigaciones de AIR e incidentes:
 
 - **Alertas**: de forma predeterminada, verá los siguientes pares de alertas en las alertas nuevas y existentes:
 
@@ -109,11 +109,11 @@ La manera en que su organización utiliza estas alertas determina lo que necesit
 
   - **Mensajes de correo electrónico que contienen malware quitados después de la entrega**
 
-- No haga nada. Deshabilitaremos las directivas de alerta existentes el 30 de abril de 2021.
+- No haga nada. Deshabilitaremos las directivas de alerta existentes el 14 de mayo de 2021.
 
 **Si ha puesto en funcionamiento estas alertas:**
 
-- Empiece a usar las nuevas alertas como parte de sus flujos de trabajo como preparación para la eliminación de la directiva de alerta existente el 30 de abril de 2021. Si tiene lógica personalizada en su sistema de vales, un buzón de seguridad donde recibe notificaciones de correo electrónico de alerta o una solución SIEM que depende del nombre de la alerta o del Id. de directiva de alerta (CorrelationId), necesitará modificar la lógica para adaptarla al cambio.
+- Empiece a usar las nuevas alertas como parte de sus flujos de trabajo como preparación para la eliminación de la directiva de alerta existente el 14 de mayo de 2021. Si tiene lógica personalizada en su sistema de vales, un buzón de seguridad donde recibe notificaciones de correo electrónico de alerta o una solución SIEM que depende del nombre de la alerta o del Id. de directiva de alerta (CorrelationId), necesitará modificar la lógica para adaptarla al cambio.
 
   > [!NOTE]
   > La información de las alertas, las investigaciones y los incidentes no ha cambiado. De hecho, esta información se ha mejorado con detalles adicionales sobre las amenazas asociadas con ellas.
@@ -124,4 +124,4 @@ La manera en que su organización utiliza estas alertas determina lo que necesit
 
   - **Mensajes de correo electrónico que contienen malware quitados después de la entrega**
 
-  Como alternativa, puede dejar estas directivas de alerta habilitadas hasta que las eliminemos el 30 de abril de 2021.
+  Como alternativa, puede dejar estas directivas de alerta habilitadas hasta que las eliminemos el 14 de mayo de 2021.
