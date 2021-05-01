@@ -16,13 +16,13 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Implemente características de seguridad y cumplimiento de Microsoft 365 y proteja su información personal.
-ms.openlocfilehash: 2d3a5baa063e6672760dda60ae6d76ea928ccd16
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+description: Implemente Microsoft 365 seguridad y cumplimiento normativo y proteja su información personal.
+ms.openlocfilehash: 659a5295f8b2973c8efef7a7d77f49b2904accf6
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500986"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113443"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteger la información sujeta a la regulación de privacidad de datos
 
@@ -33,12 +33,12 @@ Estos controles se encuentran dentro de las siguientes áreas de solución:
 - Etiquetas de confidencialidad
 - Prevención de pérdida de datos (DLP)
 - Cifrado de mensajes de Office (OME)
-- Controles de acceso de teams y sitios
+- Teams y los controles de acceso a sitios
 
 ![Servicios clave para proteger la información personal sujeta a la regulación de privacidad de datos](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 >[!Note]
->Esta solución describe las características de seguridad y cumplimiento para proteger la información sujeta a las normativas de privacidad de datos. Para obtener una lista completa de las características de seguridad de Microsoft 365, consulte Documentación de seguridad [de Microsoft 365](../security/index.yml). Para obtener una lista completa de las características de cumplimiento en Microsoft 365, consulte Documentación de cumplimiento de [Microsoft 365](../compliance/index.yml).
+>Esta solución describe las características de seguridad y cumplimiento para proteger la información sujeta a las normativas de privacidad de datos. Para obtener una lista completa de las características de seguridad en Microsoft 365, vea [Microsoft 365 de seguridad](../security/index.yml). Para obtener una lista completa de las características de cumplimiento en Microsoft 365, vea [Microsoft 365 documentación de cumplimiento](../compliance/index.yml).
 >
 
 ## <a name="data-privacy-regulations-that-impact-information-protection-controls"></a>Normativas de privacidad de datos que afectan a los controles de protección de la información
@@ -59,13 +59,13 @@ Las normativas de privacidad de datos para la protección de la información rec
 - Aplicación basada en riesgos de mecanismos de protección.
 - Uso del cifrado cuando corresponda.
 
-Es posible que su organización también quiera proteger el contenido de Microsoft 365 para otros fines, como otras necesidades de cumplimiento o por motivos empresariales. El establecimiento del esquema de protección de la información para la privacidad de datos debe realizarse como parte de la planeación, implementación y administración generales de la protección de la información.
+Es posible que su organización también desee proteger Microsoft 365 contenido para otros fines, como otras necesidades de cumplimiento o por motivos empresariales. El establecimiento del esquema de protección de la información para la privacidad de datos debe realizarse como parte de la planeación, implementación y administración generales de la protección de la información.
 
-Para ayudarle a empezar con un esquema de protección de la información en Microsoft 365, en la siguiente sección se incluye una breve lista de las capacidades relacionadas y las acciones de mejora para Microsoft 365. La lista incluye funcionalidades y acciones de mejora que se aplican a las normativas de privacidad de datos. Sin embargo, la lista no incluye tecnologías anteriores si hay una funcionalidad más reciente que reemplaza en gran medida a la anterior. Por ejemplo, Information Rights Management (IRM) para SharePoint y OneDrive no se incluye en la lista, pero se incluyen etiquetas de confidencialidad.
+Para ayudarle a empezar con un esquema de protección de la información en Microsoft 365, la siguiente sección incluye una breve lista de funciones relacionadas y acciones de mejora para Microsoft 365. La lista incluye funcionalidades y acciones de mejora que se aplican a las normativas de privacidad de datos. Sin embargo, la lista no incluye tecnologías anteriores si hay una funcionalidad más reciente que reemplaza en gran medida a la anterior. Por ejemplo, Information Rights Management (IRM) para SharePoint y OneDrive no se incluye en la lista, pero se incluyen etiquetas de confidencialidad.
 
 ## <a name="managing-information-protection-in-microsoft-365"></a>Administración de la protección de la información en Microsoft 365
 
-Las [soluciones de protección de la](../compliance/information-protection.md) información de Microsoft incluyen una serie de funcionalidades integradas en Microsoft 365, Microsoft Azure y Microsoft Windows. En Microsoft 365, las soluciones de protección de la información incluyen:
+Las soluciones de Protección [de la](../compliance/information-protection.md) información de Microsoft incluyen una serie de funcionalidades integradas en Microsoft 365, Microsoft Azure y Microsoft Windows. En Microsoft 365, las soluciones de protección de la información incluyen:
 
 - [Cifrado de servicio con clave de cliente](../compliance/customer-key-overview.md)
 - [Tipos de información confidencial](../compliance/sensitive-information-type-entity-definitions.md) (descrito en el artículo Evaluar riesgos de privacidad de datos [e identificar elementos confidenciales)](information-protection-deploy-assess.md)
@@ -74,12 +74,12 @@ Las [soluciones de protección de la](../compliance/information-protection.md) i
   - Cliente/nivel de contenido
   - Automatizado para datos en reposo en SharePoint y OneDrive
 - Prevención de pérdida de datos (DLP)
-- [Prevención de pérdida de datos del punto de conexión de Microsoft 365](../compliance/endpoint-dlp-learn-about.md)
-- [Cifrado de mensajes de Office 365 nuevas capacidades (OME)](../compliance/ome.md) y Cifrado de mensajes [avanzado de](../compliance/ome-advanced-message-encryption.md) OME
+- [Microsoft 365 Prevención de pérdida de datos de puntos de conexión](../compliance/endpoint-dlp-learn-about.md)
+- [Cifrado de mensajes de Office 365 nuevas funcionalidades (OME) y](../compliance/ome.md) cifrado de [mensajes](../compliance/ome-advanced-message-encryption.md) avanzado de OME
 
 Además, la protección del nivel de sitio y biblioteca son mecanismos importantes que deben incluirse en cualquier esquema de protección.
 
-Para obtener información sobre otras capacidades de protección de la información fuera de Microsoft 365, vea:
+Para obtener información sobre otras capacidades de protección de información fuera de Microsoft 365, vea:
 
 - [Microsoft Cloud Application Security (MCAS)](/cloud-app-security/)
 - [Azure Information Protection](/azure/information-protection/what-is-information-protection)
@@ -103,9 +103,9 @@ Complete estas actividades antes de implementar cualquiera de las funciones basa
    - **Cosas clave que debe recordar** Las etiquetas de confidencialidad se administran en el Centro de administración de Cumplimiento de Microsoft, pero las opciones de destino y aplicación varían considerablemente.
       - Hay etiquetas de confidencialidad para sitios, grupos y Teams en el nivel de contenedor (la configuración no se aplica al contenido dentro del contenedor). Se publican para usuarios y grupos que los aplican cuando se aprovisiona un sitio, un grupo o un equipo.
       - Hay etiquetas de confidencialidad para el contenido activo. También se publican en usuarios o grupos, que los aplican manualmente o se aplican automáticamente cuando:
-        - El archivo se abre, edita o guarda, ya sea en el escritorio del usuario o en un sitio de SharePoint.
+        - El archivo se abre, edita o guarda, ya sea en el escritorio del usuario o en un SharePoint web.
         - Se redacta y se envía un correo electrónico.
-      - Hay etiquetas de confidencialidad para la aplicación automática a los archivos en reposo en SharePoint y OneDrive, además de los correos electrónicos en tránsito a través de Exchange. Estos están dirigidos a todos los sitios o específicos y se aplican automáticamente a los archivos en reposo en estos entornos.
+      - Hay etiquetas de confidencialidad para la aplicación automática a los archivos en reposo en SharePoint y OneDrive además de correos electrónicos en tránsito a través de Exchange. Estos están dirigidos a todos los sitios o específicos y se aplican automáticamente a los archivos en reposo en estos entornos.
 
 2. Racionalizar el etiquetado de confidencialidad actual con métodos anteriores o alternativos
 
@@ -114,9 +114,9 @@ Complete estas actividades antes de implementar cualquiera de las funciones basa
       Es posible que el esquema de etiquetado de confidencialidad actual deba conciliarse con cualquier implementación de etiquetado existente de [Azure Information Protection.](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)
    - OME
 
-      Si está planeando usar el etiquetado de confidencialidad moderno para la protección de correo electrónico y los métodos de cifrado de correo electrónico existentes, como OME, pueden coexistir, pero debe comprender los escenarios en los que se debe aplicar cualquiera de los dos. Consulte [Office 365 Message Encryption new capabilities (OME),](#office-365-message-encryption-ome-new-capabilities)que incluye una tabla que compara la protección de tipo de etiqueta de confidencialidad moderna con la protección basada en OME.
+      Si está planeando usar el etiquetado de confidencialidad moderno para la protección de correo electrónico y los métodos de cifrado de correo electrónico existentes, como OME, pueden coexistir, pero debe comprender los escenarios en los que se debe aplicar cualquiera de los dos. Consulte [Cifrado de mensajes de Office 365 nuevas funcionalidades (OME),](#office-365-message-encryption-ome-new-capabilities)que incluye una tabla que compara la protección de tipo de etiqueta de confidencialidad moderna con la protección basada en OME.
 
-3. Planear la integración en un esquema de protección de la información más amplio. Además de la coexistencia con OME, las etiquetas de confidencialidad se pueden usar junto con funcionalidades como prevención de pérdida de datos (DLP) de Microsoft 365 y Microsoft Cloud App Security. Consulta [Microsoft Information Protection en Microsoft 365](../compliance/information-protection.md) para lograr tus objetivos de protección de la información relacionados con la privacidad de datos.
+3. Planear la integración en un esquema de protección de la información más amplio. Además de la coexistencia con OME, las etiquetas de confidencialidad se pueden usar en paralelo, como Microsoft 365 prevención de pérdida de datos (DLP) y Microsoft Cloud App Security. Consulte [Microsoft Information Protection en Microsoft 365](../compliance/information-protection.md) para lograr los objetivos de protección de la información relacionados con la privacidad de datos.
 
 4. Desarrollar un esquema de clasificación y control de etiquetas de confidencialidad. Vea [Clasificación de datos y Taxonomía de etiquetas de confidencialidad.](https://aka.ms/dataclassificationwhitepaper)
 
@@ -136,15 +136,15 @@ Complete estas actividades antes de implementar cualquiera de las funciones basa
 
 ### <a name="create-and-deploy-sensitivity-labels-for-sites-groups-and-teams"></a>Crear e implementar etiquetas de confidencialidad para sitios, grupos y equipos
 
-Al crear [etiquetas de confidencialidad](../compliance/sensitivity-labels-teams-groups-sites.md) en el Centro de cumplimiento de Microsoft 365, ahora puede aplicarlas a estos contenedores:
+Al crear [etiquetas de confidencialidad](../compliance/sensitivity-labels-teams-groups-sites.md) en el Microsoft 365 de cumplimiento normativo, ahora puede aplicarlas a estos contenedores:
 
-- Sitios de Microsoft Teams
-- Grupos de Microsoft 365 (anteriormente grupos de Office 365)
+- Microsoft Teams web
+- Microsoft 365 (anteriormente Office 365 grupos)
 - Sitios de SharePoint
 
 Use la siguiente configuración de etiqueta para ayudar a proteger el contenido de estos contenedores:
 
-- Privacidad (pública o privada) de los sitios de Microsoft 365 conectados a grupos de Teams
+- Privacidad (pública o privada) de Microsoft 365 sitios de Teams conectados Teams grupo
 - Acceso de usuarios externos
 - Acceso desde dispositivos no administrados
 
@@ -152,7 +152,7 @@ Para la privacidad de datos, para evitar el uso compartido externo de contenedor
 
 ### <a name="create-and-deploy-sensitivity-labels-for-content"></a>Crear e implementar etiquetas de confidencialidad para el contenido
 
-Las etiquetas de confidencialidad aplicadas a los archivos permiten cifrar su contenido, marcar de agua el contenido y definir otros controles para el contenido de aplicaciones de Office, incluidos Outlook y Office en la web.
+Las etiquetas de confidencialidad aplicadas a los archivos permiten cifrar su contenido, marca de agua el contenido y definir otros controles para el contenido de aplicaciones Office, incluidos Outlook y Office en la Web.
 
 Cuando esté listo para empezar a proteger los datos de su organización con etiquetas de confidencialidad:
 
@@ -160,7 +160,7 @@ Cuando esté listo para empezar a proteger los datos de su organización con eti
 2. **Defina la función de cada etiqueta.** Configure los ajustes de protección que desea asociar a cada etiqueta. Por ejemplo, es posible que desee que el contenido de menor confidencialidad (como una etiqueta "General") tenga solo un encabezado o pie de página aplicado, mientras que el contenido de mayor confidencialidad (como una etiqueta "Confidencial") debe tener una marca de agua y tener cifrado habilitado.
 3. **Publique las etiquetas.** Una vez configuradas las etiquetas de sensibilidad, publíquelas mediante una directiva de etiqueta. Decida qué usuarios y grupos deben tener las etiquetas y qué configuración de directiva usar. Una sola etiqueta es reutilizable. Se define una vez y, a continuación, se puede incluir en varias directivas de etiquetas asignadas a diferentes usuarios.
 
-Una vez que publique etiquetas de confidencialidad desde el Centro de cumplimiento de Microsoft 365, empezarán a aparecer en aplicaciones de [Office](../compliance/sensitivity-labels-office-apps.md) para que los usuarios clasifiquen y protejan el contenido a medida que se crea o edita.
+Una vez que publiques etiquetas de confidencialidad desde el centro de cumplimiento de Microsoft 365, [empezarán Office aparecer](../compliance/sensitivity-labels-office-apps.md) en aplicaciones de Office para que los usuarios clasifiquen y protejan el contenido a medida que se crea o edita.
 
 ![Flujo de implementación de etiquetas de confidencialidad en Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
@@ -181,25 +181,25 @@ La capacidad de aplicar automáticamente etiquetas de confidencialidad al conten
 
 El etiquetado automático admite la recomendación de una etiqueta a los usuarios, así como la aplicación automática de una etiqueta. Pero en ambos casos, el usuario decide si acepta o rechaza la etiqueta, para ayudar a garantizar el etiquetado correcto del contenido.
 
-Este etiquetado del lado del cliente tiene un retraso mínimo para los documentos porque la etiqueta se puede aplicar incluso antes de que se guarde el documento. Sin embargo, no todas las aplicaciones cliente son compatibles con el etiquetado automático. Esta funcionalidad es compatible con el cliente de etiquetado unificado de Azure Information Protection y algunas [versiones de aplicaciones de Office.](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)
+Este etiquetado del lado del cliente tiene un retraso mínimo para los documentos porque la etiqueta se puede aplicar incluso antes de que se guarde el documento. Sin embargo, no todas las aplicaciones cliente son compatibles con el etiquetado automático. Esta funcionalidad es compatible con el cliente de etiquetado unificado de Azure Information Protection y algunas versiones de [Office aplicaciones.](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)
 
-Para obtener instrucciones de configuración, [vea How to configure auto-labeling for Office apps](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+Para obtener instrucciones de configuración, consulte [How to configure auto-labeling for Office apps](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 Para la privacidad de datos, se aplican automáticamente etiquetas de confidencialidad para el contenido que contiene información personal confidencial.
 
 ### <a name="service-side-auto-labeling-when-content-is-already-saved"></a>Etiquetado automático del lado del servicio cuando el contenido ya está guardado
 
-Este método se conoce como clasificación automática con etiquetas de confidencialidad. También puede oir que se conoce como etiquetado automático de datos en reposo (para documentos en SharePoint y OneDrive) y datos en tránsito (para correo electrónico enviado o recibido por Exchange). Para Exchange, no incluye correos electrónicos en buzones en reposo.
+Este método se conoce como clasificación automática con etiquetas de confidencialidad. También puede oir que se conoce como etiquetado automático de datos en reposo (para documentos de SharePoint y OneDrive) y datos en tránsito (para el correo electrónico enviado o recibido por Exchange). Por Exchange, no incluye correos electrónicos en buzones en reposo.
  
 Dado que este etiquetado se aplica por el propio servicio en lugar de por la aplicación de usuario, no es necesario preocuparse por las aplicaciones que tienen los usuarios y qué versión. Por lo tanto, esta funcionalidad está disponible inmediatamente en toda la organización y es adecuada para aplicar las etiquetas a cualquier escala. Las directivas de etiquetado automático no admiten el etiquetado recomendado, ya que el usuario no interactúa con el proceso de etiquetado. En su lugar, el administrador ejecuta las directivas en el modo de simulación para ayudarle a garantizar el etiquetado correcto del contenido antes de aplicar la etiqueta.
 
-Para obtener instrucciones de configuración, [vea How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange](../compliance/apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange).
+Para obtener instrucciones de configuración, vea [How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange](../compliance/apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange).
 
 Para la privacidad de datos dentro de los sitios de interés, presione etiquetas de confidencialidad para el cifrado automático del contenido que contiene información personal confidencial.
 
 ## <a name="data-loss-prevention"></a>Prevención de pérdida de datos 
 
-Puede usar la prevención de pérdida de datos [(DLP)](../compliance/data-loss-prevention-policies.md) en Microsoft 365 para detectar, advertir y bloquear el uso compartido peligroso, involuntario o inadecuado, como el uso compartido de datos que contienen información personal, tanto interna como externamente.
+Puede usar la prevención de pérdida de datos [(DLP)](../compliance/dlp-learn-about-dlp.md) en Microsoft 365 para detectar, advertir y bloquear el uso compartido peligroso, involuntario o inadecuado, como el uso compartido de datos que contienen información personal, tanto interna como externamente.
 
 DLP le permite:
 
@@ -210,11 +210,11 @@ DLP le permite:
 
 ### <a name="supported-workloads-for-dlp"></a>Cargas de trabajo admitidas para DLP
 
-Con una directiva DLP en el Centro de cumplimiento de Microsoft 365, puede identificar, supervisar y proteger automáticamente elementos confidenciales en muchas ubicaciones de Microsoft 365, como Exchange Online, SharePoint, OneDrive y Microsoft Teams.
+Con una directiva DLP en el centro de cumplimiento de Microsoft 365, puede identificar, supervisar y proteger automáticamente elementos confidenciales en muchas ubicaciones de Microsoft 365, como Exchange Online, SharePoint, OneDrive y Microsoft Teams.
 
-Por ejemplo, puede identificar cualquier documento que contenga un número de tarjeta de crédito almacenado en cualquier sitio de OneDrive o puede supervisar solo los sitios de OneDrive de personas específicas.
+Por ejemplo, puede identificar cualquier documento que contenga un número de tarjeta de crédito almacenado en cualquier sitio de OneDrive o puede supervisar solo los sitios OneDrive de personas específicas.
 
-También puede supervisar y proteger elementos confidenciales en las versiones instaladas localmente de Excel, PowerPoint y Word, que incluyen la capacidad de identificar elementos confidenciales y aplicar directivas DLP. DLP proporciona supervisión continua cuando las personas comparten contenido de estas aplicaciones de Office.
+También puede supervisar y proteger elementos confidenciales en las versiones instaladas localmente de Excel, PowerPoint y Word, que incluyen la capacidad de identificar elementos confidenciales y aplicar directivas DLP. DLP proporciona supervisión continua cuando las personas comparten contenido de estas Office aplicaciones.
 
 > [!div class="mx-imgBorder"]
 > ![Cargas de trabajo admitidas para DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
@@ -248,7 +248,7 @@ Aunque las etiquetas de confidencialidad no se pueden usar en condiciones de dir
 
   - DLP tiene niveles de control más granulares en términos de reglas, condiciones y acciones.
 
-  - Las directivas DLP se pueden aplicar al chat y los mensajes de canal de Teams. Las etiquetas de confidencialidad solo se pueden aplicar a documentos y correo electrónico.
+  - Las directivas DLP se pueden aplicar a Teams chat y mensajes de canal. Las etiquetas de confidencialidad solo se pueden aplicar a documentos y correo electrónico.
 
 
 ### <a name="dlp-policies"></a>Directivas DLP
@@ -256,7 +256,7 @@ Aunque las etiquetas de confidencialidad no se pueden usar en condiciones de dir
 Las directivas DLP se configuran en el Centro de administración de Cumplimiento de Microsoft y especifican el nivel de protección, el tipo de información confidencial que está buscando la directiva y las cargas de trabajo de destino. Sus componentes básicos consisten en identificar la protección y los tipos de datos.
 
 > [!div class="mx-imgBorder"]
-> ![Configuración de directivas DLP en Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+> ![Configuración de directiva DLP en Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
 A continuación se muestra una directiva DLP de ejemplo para conocer el RGPD.
 
@@ -300,11 +300,11 @@ Estos son algunos escenarios de protección de datos que usan dlp y etiquetas de
 |:-------|:-----|
 | A | <ol><li>Un administrador publica etiquetas de confidencialidad para contenido para usuarios y grupos para aplicaciones manuales o automáticas en el contenido y el correo electrónico. </li><li>El usuario A aplica las etiquetas de forma manual o automática al interactuar con el contenido, con el cifrado u otra configuración aplicada. </li><li>El usuario A envía un correo electrónico o archivo protegido al usuario B, un usuario invitado. </li></ol> |
 | B | La directiva DLP publicada por un administrador en el usuario A impide que el usuario A envíe el correo electrónico o el archivo al usuario B. |
-| C |  La etiqueta de confidencialidad con la configuración "el propietario no puede invitar invitados" se publica en el usuario A, que aprovisiona un equipo de Teams o un sitio de SharePoint. Otro usuario del sitio intenta compartir selectivamente un archivo con el usuario B, pero DLP lo bloquea. |
+| C |  La etiqueta de confidencialidad con la configuración "el propietario no puede invitar invitados" se publica en el usuario A, que aprovisiona un Teams equipo o SharePoint sitio. Otro usuario del sitio intenta compartir selectivamente un archivo con el usuario B, pero DLP lo bloquea. |
 | D | La etiqueta de confidencialidad para la aplicación automática al contenido del sitio se publica en uno o varios sitios, lo que proporciona otra capa de protección, lo que da como resultado un sitio protegido. |
 |||
 
-## <a name="office-365-message-encryption-ome-new-capabilities"></a>Nuevas funcionalidades de cifrado de mensajes (OME) de Office 365
+## <a name="office-365-message-encryption-ome-new-capabilities"></a>Cifrado de mensajes de Office 365 nuevas funcionalidades (OME)
 
 Las personas suelen usar el correo electrónico para intercambiar elementos confidenciales, como información de salud del paciente o información de clientes y empleados. El cifrado de mensajes de correo electrónico ayuda a garantizar que solo los destinatarios previstos puedan ver el contenido del mensaje.
 
@@ -314,7 +314,7 @@ Para la privacidad de datos, se usa OME para proteger los mensajes internos que 
 
 También puede definir reglas de flujo de correo para aplicar esta protección. Por ejemplo, puede crear una regla que requiera el cifrado de todos los mensajes dirigidos a un destinatario específico, o que contenga palabras clave específicas en la línea de asunto, y también especifique que los destinatarios no pueden copiar ni imprimir el contenido del mensaje.
 
-Además, el cifrado avanzado de mensajes de [OME](../compliance/ome-advanced-message-encryption.md) le ayuda a cumplir las obligaciones de cumplimiento que requieren controles más flexibles sobre los destinatarios externos y su acceso a correos electrónicos cifrados. Con el cifrado de mensajes avanzado de OME en Microsoft 365, puede controlar correos electrónicos confidenciales compartidos fuera de la organización con directivas automáticas que detectan tipos de información confidencial. 
+Además, el cifrado avanzado de mensajes de [OME](../compliance/ome-advanced-message-encryption.md) le ayuda a cumplir las obligaciones de cumplimiento que requieren controles más flexibles sobre los destinatarios externos y su acceso a correos electrónicos cifrados. Con OME Advanced Message Encryption en Microsoft 365, puede controlar los correos electrónicos confidenciales compartidos fuera de la organización con directivas automáticas que detectan tipos de información confidencial. 
 
 Para la privacidad de datos, si necesita compartir correo electrónico con un tercero externo, puede especificar una fecha de expiración y revocar mensajes. Solo puede revocar y establecer una fecha de expiración para los mensajes enviados a destinatarios externos.
 
@@ -328,14 +328,14 @@ Las etiquetas de confidencialidad y OME aplicadas al correo electrónico con cif
 | Partes externas <br> Comunicarse y colaborar de forma segura con cualquier usuario externo o consumidor | Sí: predefine a los destinatarios en la etiqueta | Recomendado: protección just-in-time basada en destinatarios |
 | Interno + partners, con expiración/revocación <br> Controlar el acceso de correo y contenido con usuarios internos y socios de confianza con expiración y revocación | Recomendado: protección totalmente personalizada con duración de acceso, el usuario puede realizar un seguimiento manual y revocar archivos | No: no hay revocación o expiración para el correo interno |
 | Partes externas con expiración/revocación <br> Controlar el acceso de correo y contenido con usuarios externos/consumidores con caducidad y revocación | Sí: el usuario puede realizar un seguimiento manual de los archivos | Recomendado (E5): el administrador puede revocar el correo del Centro de seguridad & cumplimiento |
-| Etiquetado automático <br> La organización quiere proteger automáticamente el correo o los datos adjuntos con contenido confidencial específico o con destinatarios específicos | Recomendado (E5): etiquetado automático en clientes de Exchange y Outlook, aumenta las reglas de flujo de correo y la directiva DLP | Sí: reglas de flujo de correo y directiva DLP con solo cifrar o no reenviar protección |
+| Etiquetado automático <br> La organización quiere proteger automáticamente el correo o los datos adjuntos con contenido confidencial específico o con destinatarios específicos | Recomendado (E5): el etiquetado automático en Exchange y Outlook, aumenta las reglas de flujo de correo y la directiva DLP | Sí: reglas de flujo de correo y directiva DLP con solo cifrar o no reenviar protección |
 ||||
 
 También habrá diferencias en las experiencias de usuario final y administrador entre estos dos métodos.
 
 ## <a name="teams-with-protection-for-highly-sensitive-data"></a>Teams con protección para datos altamente confidenciales
 
-Para las organizaciones que planean almacenar datos personales sujetos a las regulaciones de privacidad de datos en Teams, vea [Configure a team with security isolation](secure-teams-security-isolation.md), que proporciona instrucciones detalladas y pasos de configuración para:
+Para las organizaciones que planean almacenar datos personales sujetos a las normativas de privacidad de datos en Teams, vea [Configure a team with security isolation](secure-teams-security-isolation.md), que proporciona instrucciones detalladas y pasos de configuración para:
 
 - Acceso de dispositivos e identidades
 - Creación de un equipo privado

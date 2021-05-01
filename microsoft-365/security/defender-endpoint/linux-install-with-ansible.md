@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15ee02d90e81c48bf5ec718e669bf8f88f6424ff
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 12ff9834e2853c1745c20847f869bc2cba4e082e
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934782"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114275"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Implementar Microsoft Defender para endpoint en Linux con Ansible
 
@@ -49,13 +49,13 @@ Antes de empezar, consulte la página principal defender para endpoint [en Linux
 
 Además, para la implementación de Ansible, debes familiarizarte con las tareas de administración de Ansible, configurar Ansible y saber cómo implementar libros de juegos y tareas. Ansible tiene muchas formas de completar la misma tarea. Estas instrucciones suponen la disponibilidad de módulos Ansible compatibles, como *aptos* y *norchivos* para ayudar a implementar el paquete. Su organización puede usar un flujo de trabajo diferente. Consulte la [documentación de Ansible](https://docs.ansible.com/) para obtener más información.
 
-- Es necesario instalar ansible en al menos un equipo (lo llamaremos el equipo principal).
-- SSH debe configurarse para una cuenta de administrador entre el equipo principal y todos los clientes, y se recomienda que se configure con autenticación de clave pública.
-- El siguiente software debe instalarse en todos los clientes:
+- Ansible debe instalarse en al menos un equipo (Ansible llama a este nodo de control).
+- SSH debe configurarse para una cuenta de administrador entre el nodo de control y todos los nodos administrados (dispositivos que tendrán Instalado Defender for Endpoint) y se recomienda configurar con autenticación de clave pública.
+- El siguiente software debe instalarse en todos los nodos administrados:
   - rizo
   - python-apt
 
-- Todos los hosts deben aparecer con el siguiente formato en el `/etc/ansible/hosts` archivo o correspondiente:
+- Todos los nodos administrados deben aparecer con el siguiente formato en el `/etc/ansible/hosts` archivo o correspondiente:
 
     ```bash
     [servers]
@@ -71,13 +71,13 @@ Además, para la implementación de Ansible, debes familiarizarte con las tareas
 
 ## <a name="download-the-onboarding-package"></a>Descargar el paquete de incorporación
 
-Descargue el paquete de incorporación del Centro de seguridad de Microsoft Defender:
+Descargue el paquete de incorporación desde Centro de seguridad de Microsoft Defender:
 
-1. En el Centro de seguridad de Microsoft Defender, vaya **a Configuración > Administración de dispositivos > incorporación**.
+1. En Centro de seguridad de Microsoft Defender, vaya **a Configuración > Device Management > Onboarding**.
 2. En el primer menú desplegable, seleccione **Linux Server** como sistema operativo. En el segundo menú desplegable, seleccione **La herramienta de** administración de configuración de Linux preferida como método de implementación.
 3. Seleccione **Descargar paquete de incorporación**. Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Captura de pantalla del Centro de seguridad de Microsoft Defender](images/atp-portal-onboarding-linux-2.png)
+    ![Centro de seguridad de Microsoft Defender captura de pantalla](images/atp-portal-onboarding-linux-2.png)
 
 4. Desde un símbolo del sistema, compruebe que tiene el archivo. Extraiga el contenido del archivo:
 

@@ -12,27 +12,27 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- commcerce_billing
+- PPM_jmueller
+ms.reviewer: tugu
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- GEA150
-ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Obtenga información sobre cómo realizar cambios en el perfil de la organización, como el nombre de la organización, la dirección, el teléfono, el contacto técnico y el correo electrónico.
-ms.openlocfilehash: 93f0777ba5f1cd20cca6e286a4b4366c403fc9da
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.date: 03/30/2021
+ms.openlocfilehash: d27ad65b9f58d4da6c01b32c9441c0296a17e3bd
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470564"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107019"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Cambiar la dirección de la organización, el contacto técnico y otra información
   
 Puede realizar cambios en el perfil de la organización, como el nombre de la organización, la dirección, el teléfono y el contacto técnico. **Debe ser un administrador global para actualizar esta información.**
   
-Para cambiar la dirección asociada a tu factura o suscripción, consulta Cambiar las direcciones de facturación [de Microsoft 365 para empresas](../../commerce/billing-and-payments/change-your-billing-addresses.md).
+Para cambiar la dirección asociada a tu factura o suscripción, consulta Cambiar las direcciones de facturación [para Microsoft 365 para empresas.](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
 ## <a name="edit-organization-information"></a>Editar información de la organización
 
@@ -41,7 +41,7 @@ Para cambiar la dirección asociada a tu factura o suscripción, consulta Cambia
 
 Para cambiar otra información en la página de perfil de su empresa:
   
-1. En el Centro de administración, vaya a la **página Configuración** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**la organización.**</a>
+1. En el Centro de administración, vaya a la **Configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**configuración de la organización.**</a>
 
 2. En la **pestaña Perfil de** la organización, seleccione Información de la **organización**.
 
@@ -53,18 +53,18 @@ A continuación se proporciona una explicación de cada campo.
 
 |**Field**  |**Descripción**  |
 |---------|---------|
-|Nombre  <br/>   | El nombre introducido aquí es lo que los usuarios verán en las páginas siguientes:  <br/>  Página de inicio de sesión: si los usuarios han configurado otras cuentas de TE102824469 con las direcciones de correo electrónico de su empresa o escuela, puede que vean el nombre de la organización en la página de inicio de sesión. Esto les ayuda a distinguir entre su cuenta de cuenta profesional o educativa y el resto de sus cuentas, de modo que pueden identificar cuál de ellas usar al iniciar sesión.  <br/>  Página y enlace del perfil de la organización: el enlace al perfil de la organización muestra el nombre de la organización.  <br/>  Navegación de Yammer: en Yammer, la navegación izquierda usa el nombre de la organización como el nombre de la red de Yammer principal.  <br/> Cliente de sincronización de OneDrive: el nombre de la organización se muestra en el Explorador de archivos en Windows y Finder en Mac, las rutas de acceso a archivos, el centro de actividades de OneDrive, la información sobre herramientas del icono de la nube de OneDrive y la ventana de configuración de OneDrive. Actualmente, la actualización del nombre de la organización no la actualiza para los clientes configurados. <br/> MS Teams: Conmutador de organización en Teams muestra el nombre de la organización <br/>  |
+|Nombre  <br/>   | El nombre introducido aquí es lo que los usuarios verán en las páginas siguientes:  <br/>  Página de inicio de sesión: si los usuarios han configurado otras cuentas de TE102824469 con las direcciones de correo electrónico de su empresa o escuela, puede que vean el nombre de la organización en la página de inicio de sesión. Esto les ayuda a distinguir entre su cuenta de cuenta profesional o educativa y el resto de sus cuentas, de modo que pueden identificar cuál de ellas usar al iniciar sesión.  <br/>  Página y enlace del perfil de la organización: el enlace al perfil de la organización muestra el nombre de la organización.  <br/>  Yammer navegación: en Yammer, la navegación izquierda usa el nombre de la organización como el nombre de la red Yammer principal.  <br/> OneDrive de sincronización: el nombre de la organización se muestra en el Explorador de archivos en Windows y Finder en Mac, las rutas de acceso de archivo, el centro de actividades de OneDrive, la información sobre herramientas del icono de la nube de OneDrive y la ventana de configuración de OneDrive. Actualmente, la actualización del nombre de la organización no la actualiza para los clientes configurados. <br/> MS Teams: Conmutador de organización en Teams muestra el nombre de la organización <br/>  |
 |Dirección, ciudad, estado o provincia, código postal  <br/>     | La dirección especificada aquí es lo que verá en la factura, en Sold To: The Sold To address on your bill is the same as your organization address on your profile page (see [Understand your bill or invoice for Microsoft 365 for business](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
 |País o región  <br/>    | Esto es el país o la región donde la compañía tiene su sede central. El país o la región que se seleccione determina los servicios disponibles, los impuestos y la moneda de facturación del país o la región, y la ubicación del centro de datos más cercano (vea las [restricciones de licencia de Microsoft Office](https://office.microsoft.com/redir/FX103037529)).  <br/>NOTA: Una vez seleccionado, no se puede cambiar el país o la región. Si desea cambiar la selección, deberá cancelar la suscripción y registrarse de nuevo. Para obtener ayuda con este proceso, [póngase en contacto con el soporte técnico](../contact-support-for-business-products.md).        |
 |Teléfono  <br/>     | Este es el número principal de la compañía. Por lo general, el número de la sede central de su empresa.  <br/>        |
-|Contacto técnico  <br/> |Esta es la dirección de correo electrónico de la persona técnica principal que administra su suscripción a Microsoft 365. Esta es la persona que recibirá comunicaciones sobre el estado del servicio de Microsoft 365.  <br/> |
-|Idioma preferido  <br/> |El idioma preferido determina el idioma de todas las comunicaciones que Microsoft envía a la organización. Cuando se suscribe, esta configuración determina el idioma que se usa en SharePoint Online, que es el que los usuarios ven en el sitio de grupo. Si cambia la configuración de la preferencia de idioma después de suscribirse, todas las comunicaciones futuras se enviarán en el último idioma seleccionado.    <br/> NOTA: El idioma usado por SharePoint Online no se puede cambiar.           |
+|Contacto técnico  <br/> |Esta es la dirección de correo electrónico de la persona técnica principal que administra su Microsoft 365 suscripción. Esta es la persona que recibirá comunicaciones sobre Microsoft 365 estado del servicio.  <br/> |
+|Idioma preferido  <br/> |El idioma preferido determina el idioma de todas las comunicaciones que Microsoft envía a la organización. Cuando se suscribe, esta configuración determina el idioma que se usa en SharePoint Online, que es el que los usuarios ven en el sitio de grupo. Si cambia la configuración de la preferencia de idioma después de suscribirse, todas las comunicaciones futuras se enviarán en el último idioma seleccionado.    <br/> NOTA: el idioma usado por SharePoint Online no se puede cambiar.           |
 
 ## <a name="change-your-alternate-email-address"></a>Cambiar la dirección de correo electrónico alternativa
 
 Como administrador, puedes cambiar la dirección de correo electrónico alternativa para restablecer las contraseñas.
 
-1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Centro de administración de Microsoft 365</a>.
+1. Vaya al Centro <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 administración.</a>
 
 2. En el encabezado, seleccione el icono de perfil y, a continuación, **seleccione Ver cuenta**.
 

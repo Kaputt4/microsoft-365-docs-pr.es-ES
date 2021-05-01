@@ -12,20 +12,21 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- commerce
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo cancelar su suscripción de prueba o de pago a Microsoft 365 para empresas.
-ms.date: ''
-ms.openlocfilehash: 2163462ae206871d66155331096337c29d6a87c2
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.date: 04/08/2021
+ms.openlocfilehash: f052a08cfe0e7582690864556cfc3039d6caf99c
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644649"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107007"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
@@ -103,7 +104,7 @@ Si usa un dominio personalizado con su suscripción, deberá realizar algunos pa
 
 Si configuró un dominio personalizado, debió agregar registros DNS para que el dominio trabajara con los servicios de Microsoft 365. Antes de quitar el dominio, asegúrese de actualizar los registros DNS, como el registro MX de su dominio, en el host DNS.
 
-Por ejemplo, cambie el registro MX en su host DNS. El correo electrónico que se envía a su dominio dejará de llegar a su dirección de Microsoft y, en su lugar, irá a su nuevo proveedor de correo electrónico. (Un registro MX determina a dónde se envía el correo electrónico de su dominio).
+Por ejemplo, cambie el registro MX de su host DNS. El correo electrónico que se envía a su dominio deja de llegar a su dirección de Microsoft y va a su nuevo proveedor de correo electrónico. (Un registro MX determina dónde se envía el correo electrónico del dominio).
 
 - Si los registros de su servidor de nombres (NS) [apuntan a servidores de nombres de Microsoft 365](../../admin/setup/add-domain.md), el cambio del registro MX no surtirá efecto hasta que no cambie dichos registros NS para que apunten al nuevo host DNS (consulte el paso 2).
 

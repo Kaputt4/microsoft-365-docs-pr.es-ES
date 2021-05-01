@@ -10,18 +10,18 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo planear la seguridad y privacidad de Microsoft Viva Topics
-ms.openlocfilehash: 91d0d5c25502a1938976b9457f8a5dafc6ab957b
-ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
+ms.openlocfilehash: 587b6a2921e7d1a3cc8d4ab663ff199fdd36871d
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50994551"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114067"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Seguridad y privacidad de Microsoft Viva Topics
 
-Los temas usan las características de seguridad de contenido existentes en Microsoft 365, junto con los controles administrativos, para controlar lo que el contenido generado por IA se muestra a los usuarios de la organización. Es la combinación de la configuración de seguridad de Microsoft 365 (permisos para sitios, archivos y carpetas) y la configuración de administración temas que determinan lo que un usuario determinado puede ver en los temas.
+Los temas usan características de seguridad de contenido existentes en Microsoft 365, junto con los controles administrativos, para controlar lo que el contenido generado por AI se muestra a los usuarios de la organización. Es la combinación de la Microsoft 365 de seguridad (permisos para sitios, archivos y carpetas) y la configuración de administración temas que determinan lo que un usuario determinado puede ver en los temas.
 
-La configuración de temas no modifica ningún control de acceso existente en el contenido de la organización. Los usuarios solo verán a lo que ya tienen acceso.
+La configuración de los temas no modifica ningún control de acceso existente en los contenidos de su organización. Los usuarios solo ven el contenido al que tienen acceso.
 
 En este artículo se describe cómo funcionan los temas desde una perspectiva de seguridad y las opciones que los administradores de conocimientos y los administradores de conocimientos tienen para controlar la visibilidad del tema. Lea este artículo como parte de la [planeación de temas](plan-topic-experiences.md).
 
@@ -53,20 +53,20 @@ En la tabla siguiente se describe lo que los usuarios (visores de temas, colabor
 |:---------|:------------------|
 |Nombre del tema|Los usuarios pueden ver el nombre del tema de los temas en el centro de temas. Es posible que algunos temas no sean visibles si los usuarios no tienen permisos para el contenido de origen o tienen una relevancia baja para el usuario.|
 |Descripción del tema|Las descripciones generadas por IA solo son visibles para los usuarios que tienen permisos para el contenido de origen. Todas las descripciones introducidas o editadas manualmente son visibles para todos los usuarios.|
-|Contactos|Las personas ancladas son visibles para todos los usuarios. Las personas sugeridas solo son visibles para los usuarios que tienen permisos para el contenido de origen.|
+|Personas|Las personas ancladas son visibles para todos los usuarios. Las personas sugeridas solo son visibles para los usuarios que tienen permisos para el contenido de origen.|
 |Archivos|Los archivos solo son visibles para los usuarios que tienen permisos para el contenido de origen.|
 |Páginas|Las páginas solo son visibles para los usuarios que tienen permisos para el contenido de origen.|
 |Sitios|Los sitios solo son visibles para los usuarios que tienen permisos para el contenido de origen.|
 
 ## <a name="best-practices"></a>Procedimientos recomendados
 
-Los temas presentan información a los usuarios en función de sus permisos existentes para el contenido. Microsoft 365 proporciona varias formas de garantizar que el contenido confidencial esté restringido a los usuarios adecuados. Además de los permisos estándar de [](../compliance/sensitivity-labels.md) grupo [](../compliance/data-loss-prevention-policies.md) o sitio, puede usar etiquetas de confidencialidad o prevención de pérdida de datos para restringir el acceso al contenido y las revisiones de acceso para revisar periódicamente el acceso de los usuarios a la información confidencial. [](/azure/active-directory/governance/access-reviews-overview)
+Los temas presentan información a los usuarios en función de sus permisos existentes para el contenido. Microsoft 365 proporciona varias formas de garantizar que el contenido confidencial esté restringido a los usuarios adecuados. Además de los permisos estándar de [](../compliance/sensitivity-labels.md) grupo [](../compliance/dlp-learn-about-dlp.md) o sitio, puede usar etiquetas de confidencialidad o prevención de pérdida de datos para restringir el acceso al contenido y las revisiones de acceso para revisar periódicamente el acceso de los usuarios a la información confidencial. [](/azure/active-directory/governance/access-reviews-overview)
 
 Se recomienda usar estas herramientas para asegurarse de que los permisos de contenido se establecen correctamente dentro de la organización. A continuación, las experiencias temáticas pueden proporcionar información útil y adecuada a los usuarios.
 
 Si hay temas que desea excluir por completo de las experiencias de temas, también puede:
 
-- [Excluir sitios confidenciales de SharePoint de la detección de temas](topic-experiences-discovery.md#select-sharepoint-topic-sources). El contenido de estos sitios no aparecerá en las experiencias del tema.
+- [Excluir sitios SharePoint confidenciales de la detección de temas](topic-experiences-discovery.md#select-sharepoint-topic-sources). El contenido de estos sitios no aparecerá en las experiencias del tema.
 
 - [Excluir temas por nombre](topic-experiences-discovery.md#exclude-topics-by-name). Los temas excluidos explícitamente no aparecerán en las experiencias del tema.
 
@@ -82,7 +82,7 @@ Además, se recomiendan estos procedimientos recomendados:
 
 Aunque puede cambiar los permisos de las páginas de temas individuales para restringir el acceso a un grupo específico de usuarios, no se recomienda este enfoque debido al alto grado de esfuerzo administrativo necesario.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Configurar Teams con tres niveles de protección](../solutions/configure-teams-three-tiers-protection.md)
 

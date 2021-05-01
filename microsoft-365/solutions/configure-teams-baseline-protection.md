@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información acerca de cómo implementar equipos con un nivel de protección de base de referencia.
-ms.openlocfilehash: 728a41bd521ed32c57c981be576e46eaee344099
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: db1a58fd06a62240cbcfcc74f83ba6196f33df80
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222748"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114299"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configure equipos con la protección de base de referencia
 
@@ -96,7 +96,7 @@ Microsoft 365 ofrece otros métodos para proteger el contenido. Considere si las
 
 - Hacer que los invitados acepten las [condiciones de uso](/azure/active-directory/conditional-access/terms-of-use).
 - Configurar una [directiva de tiempo de espera de sesión](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) para invitados
-- Crear [tipos de información confidencial](../compliance/sensitive-information-type-learn-about.md) y usar [protección de pérdida de datos](../compliance/data-loss-prevention-policies.md) para establecer directivas en relación con el acceso a información confidencial.
+- Crear [tipos de información confidencial](../compliance/sensitive-information-type-learn-about.md) y usar [protección de pérdida de datos](../compliance/dlp-learn-about-dlp.md) para establecer directivas en relación con el acceso a información confidencial.
 
 ## <a name="see-also"></a>Consulte también
 

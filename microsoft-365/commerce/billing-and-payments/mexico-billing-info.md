@@ -12,20 +12,22 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
 search.appverid:
 - MET150
 description: Obtenga información específica acerca de Microsoft 365 para empresas en México
 ms.custom:
 - AdminSurgePortfolio
-- Commerce
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: jkinma
 monikerRange: o365-worldwide
-ms.openlocfilehash: ea6a60d205c7fbe91b35b22b7ec7b3ee51715444
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
-ms.translationtype: HT
+ms.date: 11/20/2020
+ms.openlocfilehash: ace8712718dc960f846bd366c8e8dbb7b074f428
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376298"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107187"
 ---
 # <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>Información de facturación de Microsoft 365 para empresas en México
 

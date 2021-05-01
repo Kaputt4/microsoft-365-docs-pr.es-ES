@@ -12,18 +12,21 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
-- Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo administrar suscripciones de registro de autoservicio gratuitas para su organización.
-ms.openlocfilehash: 5910ed5d65f93a4dab15c681610d4d59d0427fb0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: 64648151d7761bd8bb0d2301d59fb093de98b127
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920173"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107621"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Administrar suscripciones de registro de autoservicio
 

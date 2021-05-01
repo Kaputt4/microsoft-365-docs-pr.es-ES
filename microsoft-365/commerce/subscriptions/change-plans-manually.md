@@ -1,5 +1,5 @@
 ---
-title: Cambiar los planes de Microsoft 365 para empresas manualmente
+title: Cambiar Microsoft 365 planes de negocio manualmente
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,22 +12,22 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
-- Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ROBOTS: NOINDEX
 description: Cambie las suscripciones manualmente comprando una nueva suscripción y asegurándose de que ambas suscripciones estén enumeradas y activas.
-ms.openlocfilehash: d6b0c822f9d3ceeb6c50a6ec872682d1db5decb0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: 1dc7ff8cd6b8a43db7d70ab6c17aec16a020baac
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907909"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107685"
 ---
 # <a name="change-plans-manually"></a>Cambiar planes manualmente
 
@@ -52,14 +52,14 @@ Para continuar con un cambio manual, lea [Paso 2: Comprar una nueva suscripción
 
 O
 
-**Comprar una suscripción y licencias nuevas:** Siga los pasos de Comprar otra suscripción de [Microsoft 365](../try-or-buy-microsoft-365.md) para empresas para comprar una nueva suscripción.
+**Comprar una suscripción y licencias nuevas:** Siga los pasos de [Comprar otra suscripción Microsoft 365 para empresas](../try-or-buy-microsoft-365.md) para comprar una nueva suscripción.
 
 Asegúrese de comprar una suscripción para la misma organización en la que están los usuarios ahora. Por ejemplo, compruebe las direcciones de correo electrónico de los usuarios que desea mover. Si sus direcciones de correo electrónico incluyen contoso.com, debe comprar una \@ nueva suscripción para contoso.com.
 Incluye una licencia para cada usuario que quieras mover.
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>Paso 3: Comprobar su nueva suscripción y licencias
 
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 
 2. **Comprobar que ambas suscripciones están enumeradas y activas** La suscripción desde la que se van a mover los usuarios y la suscripción a la que se van a mover los usuarios deben aparecer juntas. Si la nueva suscripción no está ahí cuando se comprueba por primera vez, inténtelo de nuevo más adelante. Compruebe que ambas suscripciones están activas. [La nueva suscripción no aparece o no está activa.](#the-new-subscription-isnt-listed-or-isnt-active)
 
@@ -103,7 +103,7 @@ Las licencias de la suscripción actual se quitarán más adelante; solo pagará
 5. Cambie la alternancia a **la posición On** para los productos que desea asignar a estos usuarios.
 
     > [!TIP]
-    > - Para limitar los servicios que están disponibles para  el usuario, cambie a alternancias a la posición Desactivado para los servicios que desea quitar para ese usuario. Por ejemplo, si desea que el usuario tenga acceso a todos los servicios disponibles excepto Skype Empresarial Online, puede cambiar la alternancia del servicio de Skype Empresarial Online a la **posición** Desactivado.
+    > - Para limitar los servicios que están disponibles para  el usuario, cambie a alternancias a la posición Desactivado para los servicios que desea quitar para ese usuario. Por ejemplo, si desea que el usuario tenga acceso a todos los servicios disponibles excepto Skype Empresarial Online, puede cambiar la alternancia del servicio Skype Empresarial Online a la posición **Desactivado.**
     > - Cualquier asignación de licencia anterior para los usuarios seleccionados se quitará.
 
 6. En la parte inferior del panel **Reemplazar productos existentes**, seleccione **Reemplazar** \> **Cerrar**.

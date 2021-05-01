@@ -10,25 +10,31 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: tugu
 search.appverid:
 - MET150
 description: Obtenga información sobre las cuentas de facturación y cómo administrarlas.
-ms.openlocfilehash: c2cf7584148bb846541328396885d20c00e2712a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: 504811e8cdfb84569a4bc3cea021c3c37030fca7
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911427"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107585"
 ---
 # <a name="manage-billing-accounts"></a>Administrar cuentas de facturación
 
-Se crea una cuenta de facturación cuando se registra para probar o comprar productos de Microsoft. Usas tu cuenta de facturación para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras. Puedes tener acceso a varias cuentas de facturación. Por ejemplo, se inscribió en Microsoft 365 directamente o tiene acceso al contrato de Contrato Enterprise de productos de Microsoft, al Contrato de servicios de & de Microsoft o al contrato de cliente de Microsoft. Para cada uno de estos escenarios, tendrías una cuenta de facturación independiente.
+Se crea una cuenta de facturación cuando se registra para probar o comprar productos de Microsoft. Usas tu cuenta de facturación para administrar la configuración de la cuenta, las facturas, los métodos de pago y las compras. Puedes tener acceso a varias cuentas de facturación. Por ejemplo, se inscribió en Microsoft 365 directamente, o bien tiene acceso al contrato de servicios de Enterprise Agreement de productos de & Microsoft o al contrato de cliente de Microsoft. Para cada uno de estos escenarios, tendrías una cuenta de facturación independiente.
 
-El Centro de administración de Microsoft 365 admite actualmente el siguiente tipo de cuentas de facturación:
+El Microsoft 365 de administración admite actualmente el siguiente tipo de cuentas de facturación:
 
-- Microsoft Online Services: esta cuenta de facturación se crea al registrarse para una suscripción a Microsoft 365 directamente.
+- Microsoft Online Services: esta cuenta de facturación se crea al registrarse para una suscripción Microsoft 365 suscripción directamente.
 - Programa contrato de & de servicios de Microsoft Products (MPSA): esta cuenta de facturación se crea cuando su organización firma un contrato de licencias por volumen de MPSA para comprar software y servicios en línea.
 - Contrato de cliente de Microsoft: esta cuenta de facturación se crea cuando la organización trabaja con un representante de Microsoft, un partner autorizado o compras de forma independiente.
 
@@ -63,14 +69,14 @@ En esta sección se enumeran las direcciones de envío asociadas con su cuenta d
 
 ## <a name="understand-access-to-billing-accounts"></a>Comprender el acceso a cuentas de facturación
 
-Puede proporcionar a otros usuarios acceso a la cuenta de facturación en el Centro de administración de Microsoft 365 a través de roles y permisos. Solo el propietario de una cuenta de facturación puede conceder acceso a una cuenta de facturación. Puede asignar uno de los siguientes roles a los usuarios:
+Puede proporcionar a otros usuarios acceso a la cuenta de facturación en el centro de administración Microsoft 365 a través de roles y permisos. Solo el propietario de una cuenta de facturación puede conceder acceso a una cuenta de facturación. Puede asignar uno de los siguientes roles a los usuarios:
 
 - **Propietario de la cuenta de facturación** &mdash; Puede asignar permisos, editar cuentas, firmar acuerdos y ver cuentas.
 - **Colaborador de cuenta de facturación** &mdash; Puede editar cuentas, firmar acuerdos y ver cuentas.
 - **Lector de cuentas de facturación** &mdash; Puede ver cuentas.
 
 > [!Note]
-> Los roles de cuenta de facturación solo se aplican a cuentas de facturación y no se aplican a otros escenarios del Centro de administración de Microsoft 365.
+> Los roles de cuenta de facturación solo se aplican a cuentas de facturación y no se aplican a otros Microsoft 365 escenarios del Centro de administración.
 
 ## <a name="related-content"></a>Contenido relacionado
 

@@ -14,21 +14,24 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo comprar y administrar complementos para su suscripción a Microsoft 365 para empresas.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- Commerce
-ms.openlocfilehash: b470fb727ed55ba066cd0371e2e707c72b50ae99
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
+description: Obtenga información sobre cómo comprar y administrar complementos para su suscripción Microsoft 365 para empresas.
+ms.date: 04/02/2021
+ms.openlocfilehash: c0b5a76f8690c64723782640738ac3817bc64714
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576930"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107441"
 ---
 # <a name="buy-or-manage-add-ons"></a>Comprar o administrar complementos
 
-Muchos planes de Microsoft 365 para empresas tienen complementos que puede comprar para sus suscripciones. Los complementos proporcionan más características para mejorar la experiencia de suscripción.
+Muchos Microsoft 365 planes para empresas tienen complementos que puedes comprar para tus suscripciones. Los complementos proporcionan más características para mejorar la experiencia de suscripción.
 
 Hay dos tipos de complementos:
 
@@ -58,7 +61,7 @@ Puede administrar una suscripción de complemento independiente del mismo modo q
 
 Para administrar un complemento tradicional, vaya a la suscripción que lo contiene y realice cambios allí. Siga estos pasos para administrar un complemento tradicional.
   
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la **pestaña Productos,** seleccione la suscripción que contiene el complemento que desea actualizar.
 3. En la página de detalles de la suscripción, la **sección Complementos** enumera los complementos que compró. Seleccione **Administrar complementos**.
 4. En el **panel Administrar complementos,**  en la lista desplegable Complementos, seleccione el complemento que desea cambiar.

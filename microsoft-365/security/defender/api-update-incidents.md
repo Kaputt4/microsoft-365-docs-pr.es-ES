@@ -1,6 +1,6 @@
 ---
 title: ACTUALIZAR LA API de incidentes
-description: Obtenga información sobre cómo actualizar incidentes con la API de Microsoft 365 Defender
+description: Obtenga información sobre cómo actualizar incidentes con la API Microsoft 365 Defender
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 549f9bf2b9dc2ea5d1c734a809ad10a168c8123e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d6872a7a4b1b2d2c131066076af02a65b4ef6d8a
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068972"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107609"
 ---
 # <a name="update-incidents-api"></a>ACTUALIZAR LA API de incidentes
 
@@ -71,7 +71,7 @@ PATCH /api/incidents/{id}
 
 Nombre | Tipo | Descripción
 -|-|-
-Authorization | Cadena | Portador {token}. **Necesario**.
+Authorization | String | Portador {token}. **Necesario**.
 Content-Type | Cadena | application/json. **Necesario**.
 
 ## <a name="request-body"></a>Cuerpo de la solicitud
@@ -80,10 +80,10 @@ En el cuerpo de la solicitud, proporcione los valores de los campos que deben ac
 
 Propiedad | Tipo | Descripción
 -|-|-
-status | Enum | Especifica el estado actual de la alerta. Los valores posibles son: ```Active``` ```Resolved``` , y ```Redirected``` .
+status | Enum | Especifica el estado actual del incidente. Los valores posibles son: ```Active``` ```Resolved``` , y ```Redirected``` .
 assignedTo | string | Propietario del incidente.
-classification | Enum | Especificación de la alerta. Los valores posibles son: ```Unknown```, ```FalsePositive``` y ```TruePositive```.
-determinación | Enum | Especifica la determinación de la alerta. Valores posibles: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
+classification | Enum | Especificación del incidente. Los valores posibles son: ```Unknown```, ```FalsePositive``` y ```TruePositive```.
+determinación | Enum | Especifica la determinación del incidente. Valores posibles: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | lista de cadenas | Lista de etiquetas de incidentes.
 
 ## <a name="response"></a>Respuesta
@@ -114,7 +114,7 @@ Este es un ejemplo de la solicitud.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Obtener acceso a las API de Microsoft 365 Defender](api-access.md)
+- [Acceder a las API Microsoft 365 Defender](api-access.md)
 - [Más información sobre los límites de api y las licencias](api-terms.md)
 - [Comprender códigos de error](api-error-codes.md)
 - [API de incidentes](api-incident.md)

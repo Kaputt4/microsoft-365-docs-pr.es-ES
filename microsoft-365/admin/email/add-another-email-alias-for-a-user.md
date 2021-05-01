@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: 'Obtenga información sobre cómo puede tener más de una dirección de correo electrónico, denominada alias de correo electrónico, asociada a su cuenta de Microsoft 365 para empresas. '
-ms.openlocfilehash: 4003dcfca29a722ccdf9b86cca5aa1141fbdb367
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+description: 'Obtenga información sobre cómo puede tener más de una dirección de correo electrónico, denominada alias de correo electrónico, asociada con su cuenta Microsoft 365 para empresas. '
+ms.openlocfilehash: 00e1c55edfcfa9937ab6a18b4bf268adb858b775
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892810"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107127"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Agregar otro alias de correo electrónico para un usuario
   
-Este artículo está para administradores de Microsoft 365 que tienen suscripciones empresariales. No está dirigido a usuarios particulares.
+Este artículo está para Microsoft 365 administradores que tienen suscripciones empresariales. No está dirigido a usuarios particulares.
   
-Una dirección de correo electrónico principal en Microsoft 365 suele ser la dirección de correo electrónico que se asignó a un usuario cuando se creó su cuenta. Cuando este envía un correo electrónico a un contacto, su dirección de correo electrónico principal es la que normalmente aparece en el campo  *De*  en las aplicaciones de correo electrónico. También pueden tener más de una dirección de correo electrónico asociada a su cuenta de Microsoft 365 para empresas. Estas direcciones adicionales se denominan "alias". 
+Una dirección de correo electrónico principal en Microsoft 365 suele ser la dirección de correo electrónico que se asignó a un usuario cuando se creó su cuenta. Cuando este envía un correo electrónico a un contacto, su dirección de correo electrónico principal es la que normalmente aparece en el campo  *De*  en las aplicaciones de correo electrónico. También pueden tener más de una dirección de correo electrónico asociada con su cuenta Microsoft 365 para empresas. Estas direcciones adicionales se denominan "alias". 
   
 Por ejemplo, supongamos que Jenna tiene la dirección de correo electrónico jenna@contosoco.com, pero también quiere recibir correo electrónico en jen@contosoco.com porque algunas personas hacen referencia a ella por ese nombre. Puede crear alias para ella para que ambas direcciones de correo electrónico vayan a la bandeja de entrada de Jenna.
 <br><br>  
@@ -53,7 +53,7 @@ Debe tener permisos [de administrador](../add-users/about-admin-roles.md) para h
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 
-2. En la **página Usuarios activos,** seleccione el usuario > **Administrar alias de correo electrónico**. No verá esta opción si la persona no tiene una licencia asignada. 
+2. En la **página Usuarios activos,** seleccione el usuario > **Administrar nombre de usuario y correo electrónico**. No verá esta opción si la persona no tiene una licencia asignada. 
     
 3. Seleccione **+ Agregar un alias** y escriba un nuevo alias para el usuario.   
     
@@ -75,7 +75,7 @@ Debe tener permisos [de administrador](../add-users/about-admin-roles.md) para h
     El usuario ahora tendrá una dirección principal y un alias. Por ejemplo, todo el correo enviado a la dirección principal de Eliza Hoffman, Eliza@NodPublishers.com, y su alias, Sales@NodPublishers.com, irá a la Bandeja de entrada de Eliza.
     
   
-7. **Cuando el usuario responda, la *dirección De* dependerá de su cliente de Outlook. Outlook en la web usará el alias en el que se recibió el correo electrónico (lo llamaremos el principio ping-pong). El escritorio de Outlook usará su alias de correo electrónico principal.** Por ejemplo, supongamos que un mensaje se envía a Sales@NodPublishers.com y llega a la bandeja de entrada de Eliza. Cuando Eliza responde al mensaje con el escritorio de Outlook, su dirección de correo electrónico principal aparecerá como Eliza@NodPublishers.com, no Sales@NodPublishers.com.
+7. **Cuando el usuario responda, la *dirección De* dependerá de su Outlook cliente. Outlook en la web usará el alias en el que se recibió el correo electrónico (lo llamaremos el principio ping-pong). Outlook escritorio usará su alias de correo electrónico principal.** Por ejemplo, supongamos que un mensaje se envía a Sales@NodPublishers.com y llega a la bandeja de entrada de Eliza. Cuando Eliza responde al mensaje con Outlook escritorio, su dirección de correo electrónico principal aparecerá como Eliza@NodPublishers.com, no Sales@NodPublishers.com.
     
 ::: moniker-end
 
@@ -106,7 +106,7 @@ Debe tener permisos [de administrador](../add-users/about-admin-roles.md) para h
     El usuario ahora tendrá una dirección principal y un alias. Por ejemplo, todo el correo enviado a la dirección principal de Eliza Hoffman, Eliza@NodPublishers.com, y su alias, Sales@NodPublishers.com, irá a la Bandeja de entrada de Eliza.
     
   
-7. **Cuando el usuario responda, la *dirección De* dependerá de su cliente de Outlook. Outlook en la web usará el alias en el que se recibió el correo electrónico (lo llamaremos el principio ping-pong). El escritorio de Outlook usará su alias de correo electrónico principal.** Por ejemplo, supongamos que un mensaje se envía a Sales@NodPublishers.com y llega a la bandeja de entrada de Eliza. Cuando Eliza responde al mensaje con el escritorio de Outlook, su dirección de correo electrónico principal aparecerá como Eliza@NodPublishers.com, no Sales@NodPublishers.com.
+7. **Cuando el usuario responda, la *dirección De* dependerá de su Outlook cliente. Outlook en la web usará el alias en el que se recibió el correo electrónico (lo llamaremos el principio ping-pong). Outlook escritorio usará su alias de correo electrónico principal.** Por ejemplo, supongamos que un mensaje se envía a Sales@NodPublishers.com y llega a la bandeja de entrada de Eliza. Cuando Eliza responde al mensaje con Outlook escritorio, su dirección de correo electrónico principal aparecerá como Eliza@NodPublishers.com, no Sales@NodPublishers.com.
 
 ::: moniker-end
 
@@ -137,7 +137,7 @@ Debe tener permisos [de administrador](../add-users/about-admin-roles.md) para h
     El usuario ahora tendrá una dirección principal y un alias. Por ejemplo, todo el correo enviado a la dirección principal de Eliza Hoffman, Eliza@NodPublishers.com, y su alias, Sales@NodPublishers.com, irá a la Bandeja de entrada de Eliza.
     
   
-7. **Cuando el usuario responda, la *dirección De* dependerá de su cliente de Outlook. Outlook en la web usará el alias en el que se recibió el correo electrónico (lo llamaremos el principio ping-pong). El escritorio de Outlook usará su alias de correo electrónico principal.** Por ejemplo, supongamos que un mensaje se envía a Sales@NodPublishers.com y llega a la bandeja de entrada de Eliza. Cuando Eliza responde al mensaje con el escritorio de Outlook, su dirección de correo electrónico principal aparecerá como Eliza@NodPublishers.com, no Sales@NodPublishers.com.
+7. **Cuando el usuario responda, la *dirección De* dependerá de su Outlook cliente. Outlook en la web usará el alias en el que se recibió el correo electrónico (lo llamaremos el principio ping-pong). Outlook escritorio usará su alias de correo electrónico principal.** Por ejemplo, supongamos que un mensaje se envía a Sales@NodPublishers.com y llega a la bandeja de entrada de Eliza. Cuando Eliza responde al mensaje con Outlook escritorio, su dirección de correo electrónico principal aparecerá como Eliza@NodPublishers.com, no Sales@NodPublishers.com.
 
 ::: moniker-end
 
@@ -154,7 +154,7 @@ Si adquirió su suscripción con GoDaddy u otro partner, tendrá que usar la con
 
 ## <a name="sending-email-from-the-proxy-address-easily"></a>Enviar correo electrónico desde la dirección proxy fácilmente
 
-En abril de 2021 se está implementando una nueva característica que permite a los usuarios enviar desde sus alias fácilmente al usar Outlook en la web. Cuando la característica se lanza a un arrendamiento en el que el administrador de inquilinos usa el cmdlet, los usuarios del arrendamiento tendrán acceso a una lista de casillas donde cada entrada corresponde a un alias en su configuración de `Set-OrganizationConfig -SendFromAliasEnabled $true` Outlook. Si selecciona un alias, aparecerá en el desplegable De del formulario Redacción.
+En abril de 2021 se implementó una nueva característica que permite a los usuarios enviar desde sus alias fácilmente al usar Outlook en la web. Cuando la característica se lanza a un arrendamiento donde el administrador de inquilinos usa el cmdlet, los usuarios del arrendamiento tendrán acceso a una lista de casillas donde cada entrada corresponde a un alias en su configuración `Set-OrganizationConfig -SendFromAliasEnabled $true` de Outlook. Si selecciona un alias, aparecerá en el desplegable De del formulario Redacción.
   
 ## <a name="related-articles"></a>Artículos relacionados
 

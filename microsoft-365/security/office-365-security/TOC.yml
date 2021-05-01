@@ -376,7 +376,7 @@
             - name: Administrar grupos de roles en EOP independiente
               href: manage-admin-role-group-permissions-in-eop.md
     - name: Microsoft 365 Defender
-      href: ../index.yml
+      href: ../defender/index.yml
     - name: Microsoft Defender para punto de conexión
       href: ../defender-endpoint/index.yml
     - name: Microsoft Defender for Identity
