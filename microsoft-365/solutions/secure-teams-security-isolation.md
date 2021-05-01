@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Obtenga información acerca de cómo crear un equipo con una etiqueta de confidencialidad exclusiva para la seguridad.
-ms.openlocfilehash: 7c9b770c712d2468369482ba3a6256e57f621f74
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4d305e952d48d42afffe91466121c67621aa9d85
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042691"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113407"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configuración de un equipo con aislamiento de seguridad
 
@@ -60,8 +60,8 @@ Vea cómo la empresa Contoso ha usado un equipo aislado para un proyecto de alto
 ## <a name="initial-protections"></a>Protecciones iniciales
 
 Para ayudar a proteger el acceso al equipo y a su sitio de SharePoint subyacente, revise las siguientes recomendaciones:
-- [Directivas de acceso a dispositivos e identidades](../security/defender-365-security/identity-access-policies.md)
-- [Directivas de acceso de SharePoint Online](../security/defender-365-security/sharepoint-file-access-policies.md)
+- [Directivas de acceso a dispositivos e identidades](../security/office-365-security/identity-access-policies.md)
+- [Directivas de acceso de SharePoint Online](../security/office-365-security/sharepoint-file-access-policies.md)
 - [Implementación de equipos con la protección de base de referencia](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>Uso compartido de invitados
@@ -111,7 +111,7 @@ Crear una etiqueta de confidencialidad
 1. Abra el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
 2. En **Soluciones**, haga clic en **Protección de la información**.
 3. Haga clic en **Crear una etiqueta**.
-4. Asigne un nombre a la etiqueta. Para ello, le recomendamos que use el nombre del equipo con el que lo vaya a emplear.
+4. Asigne un nombre a la etiqueta. Para ello, le recomendamos que use el nombre del equipo con la que lo vaya a emplear.
 5. Escriba un nombre y una descripción para el complemento y, a continuación, haga clic en **Siguiente**.
 6. En la página **Definir el ámbito de la página de la etiqueta**, seleccione **Archivos & mensajes de correo electrónico** y **Grupos & sitios** y haga clic en **Siguiente**.
 7. Luego, en la página **Elegir la configuración de protección para archivos y mensajes de correo electrónico**, asegúrese de seleccionar **Cifrar archivos y mensajes de correo electrónico** luego haga clic en **Siguiente**.
@@ -231,7 +231,7 @@ Microsoft 365 ofrece otros métodos para proteger el contenido. Considere si las
 
 - Hacer que los invitados acepten los [términos de uso](/azure/active-directory/conditional-access/terms-of-use).
 - Configurar una [directiva de tiempo de espera de sesión](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) para invitados
-- Crear [tipos de información confidencial](../compliance/sensitive-information-type-learn-about.md) y usar [protección de pérdida de datos](../compliance/data-loss-prevention-policies.md) para establecer directivas en relación con el acceso a información confidencial.
+- Crear [tipos de información confidencial](../compliance/sensitive-information-type-learn-about.md) y usar [protección de pérdida de datos](../compliance/dlp-learn-about-dlp.md) para establecer directivas en relación con el acceso a información confidencial.
 - Use revisiones de [acceso de Azure Active Directory](/azure/active-directory/governance/access-reviews-overview) para revisar periódicamente el acceso al equipo y la afiliación.
 
 ## <a name="drive-user-adoption-for-team-members"></a>Fomentar que los miembros del equipo usen las funcionalidades
