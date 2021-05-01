@@ -100,6 +100,24 @@
                   href: investigate-alerts.md
                 - name: Analizar usuarios
                   href: investigate-users.md
+                - name: Responder a su primer incidente
+                  items:
+                    - name: Introducción
+                      href: first-incident-overview.md
+                    - name: Preparación
+                      href: first-incident-prepare.md
+                    - name: "Paso\_1. Triage and analyze"
+                      href: first-incident-analyze.md
+                    - name: "Paso\_2. Corrección"
+                      href: first-incident-remediate.md
+                    - name: Paso 3. Revisar
+                      href: first-incident-post.md
+                    - name: Ejemplos de incidentes adicionales
+                      items:
+                        - name: Correo de suplantación de identidad
+                          href: first-incident-path-phishing.md
+                        - name: Identity
+                          href: first-incident-path-identity.md
             - name: Obtener tus notificaciones de correo electrónico
               href: get-incident-notifications.md
         - name: Investigación y respuesta automatizada

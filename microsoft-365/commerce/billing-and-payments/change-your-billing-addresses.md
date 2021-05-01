@@ -15,152 +15,155 @@ ms.collection:
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: tugu
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo actualizar las direcciones de facturación de Microsoft 365 para empresas. También puedes actualizar la dirección de correo electrónico usada para recibir notificaciones de facturación.
-ms.openlocfilehash: 5d6e9eac3ef1caccb2672bfc7f46e8e5b9ac3721
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+description: Obtenga información sobre cómo actualizar las direcciones de facturación para Microsoft 365 para empresas. También puedes actualizar la dirección de correo electrónico usada para recibir notificaciones de facturación.
+ms.date: 04/07/2021
+ms.openlocfilehash: ea212d79ef28d5d387bdb5503c267d7cd5113786
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615416"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107199"
 ---
-# <a name="change-your-billing-addresses"></a><span data-ttu-id="c4a22-104">Cambiar las direcciones de facturación</span><span class="sxs-lookup"><span data-stu-id="c4a22-104">Change your billing addresses</span></span>
+# <a name="change-your-billing-addresses"></a><span data-ttu-id="1e6e6-104">Cambiar las direcciones de facturación</span><span class="sxs-lookup"><span data-stu-id="1e6e6-104">Change your billing addresses</span></span>
 
-<span data-ttu-id="c4a22-105">La factura o factura contiene tres direcciones:</span><span class="sxs-lookup"><span data-stu-id="c4a22-105">Your bill or invoice contains three addresses:</span></span>
+<span data-ttu-id="1e6e6-105">La factura o factura contiene tres direcciones:</span><span class="sxs-lookup"><span data-stu-id="1e6e6-105">Your bill or invoice contains three addresses:</span></span>
   
-- <span data-ttu-id="c4a22-106">**Dirección del solicitante** Su nombre y dirección de la empresa, como se muestra en el perfil de la organización.</span><span class="sxs-lookup"><span data-stu-id="c4a22-106">**Sold-To Address** Your company name and address, as shown in your organization profile.</span></span>
+- <span data-ttu-id="1e6e6-106">**Dirección del solicitante** Su nombre y dirección de la empresa, como se muestra en el perfil de la organización.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-106">**Sold-To Address** Your company name and address, as shown in your organization profile.</span></span>
 
-- <span data-ttu-id="c4a22-107">**Dirección de facturación** Esta es la dirección de su departamento de facturación y suele ser la misma que la dirección del **solicitante**.</span><span class="sxs-lookup"><span data-stu-id="c4a22-107">**Bill-To address** The address of your billing department, usually the same as the **Sold-To** address.</span></span>
+- <span data-ttu-id="1e6e6-107">**Dirección de facturación** Esta es la dirección de su departamento de facturación y suele ser la misma que la dirección del **solicitante**.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-107">**Bill-To address** The address of your billing department, usually the same as the **Sold-To** address.</span></span>
 
-- <span data-ttu-id="c4a22-p102">**Dirección de uso del servicio** La dirección donde se usa el servicio, normalmente es la misma que la dirección **del solicitante**. Si su organización tiene usuarios remotos o varias oficinas, use la dirección en la que se encuentran la mayoría de sus usuarios.</span><span class="sxs-lookup"><span data-stu-id="c4a22-p102">**Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.</span></span>
+- <span data-ttu-id="1e6e6-p102">**Dirección de uso del servicio** La dirección donde se usa el servicio, normalmente es la misma que la dirección **del solicitante**. Si su organización tiene usuarios remotos o varias oficinas, use la dirección en la que se encuentran la mayoría de sus usuarios.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-p102">**Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.</span></span>
 
-<span data-ttu-id="c4a22-110">En la mayoría de los casos, estas direcciones son las mismas.</span><span class="sxs-lookup"><span data-stu-id="c4a22-110">In most cases, these addresses are the same.</span></span> <span data-ttu-id="c4a22-111">Si tiene que cambiar una o varias de estas direcciones, puede hacerlo.</span><span class="sxs-lookup"><span data-stu-id="c4a22-111">If you need to change one or more of the addresses, you can do that.</span></span> <span data-ttu-id="c4a22-112">También puede proporcionar una dirección de correo electrónico alternativa para recibir notificaciones de facturación y cambiar la dirección de correo electrónico alternativa para otros administradores.</span><span class="sxs-lookup"><span data-stu-id="c4a22-112">You can also provide an alternate email address to receive billing notifications and change the alternate email address for other admins.</span></span>
+<span data-ttu-id="1e6e6-110">En la mayoría de los casos, estas direcciones son las mismas.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-110">In most cases, these addresses are the same.</span></span> <span data-ttu-id="1e6e6-111">Si tiene que cambiar una o varias de estas direcciones, puede hacerlo.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-111">If you need to change one or more of the addresses, you can do that.</span></span> <span data-ttu-id="1e6e6-112">También puede proporcionar una dirección de correo electrónico alternativa para recibir notificaciones de facturación y cambiar la dirección de correo electrónico alternativa para otros administradores.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-112">You can also provide an alternate email address to receive billing notifications and change the alternate email address for other admins.</span></span>
 
-<span data-ttu-id="c4a22-113">Para obtener más información sobre su factura o factura, vea [Ver la factura](view-your-bill-or-invoice.md) o factura y Comprender su factura o [factura.](understand-your-invoice2.md)</span><span class="sxs-lookup"><span data-stu-id="c4a22-113">To learn more about your bill or invoice, see [View your bill or invoice](view-your-bill-or-invoice.md) and [Understand your bill or invoice](understand-your-invoice2.md).</span></span>
+<span data-ttu-id="1e6e6-113">Para obtener más información sobre su factura o factura, vea [Ver la factura](view-your-bill-or-invoice.md) o factura y Comprender su factura o [factura.](understand-your-invoice2.md)</span><span class="sxs-lookup"><span data-stu-id="1e6e6-113">To learn more about your bill or invoice, see [View your bill or invoice](view-your-bill-or-invoice.md) and [Understand your bill or invoice](understand-your-invoice2.md).</span></span>
 
-## <a name="change-your-sold-to-address"></a><span data-ttu-id="c4a22-114">Cambiar la dirección del solicitante</span><span class="sxs-lookup"><span data-stu-id="c4a22-114">Change your Sold-To address</span></span>
+## <a name="change-your-sold-to-address"></a><span data-ttu-id="1e6e6-114">Cambiar la dirección del solicitante</span><span class="sxs-lookup"><span data-stu-id="1e6e6-114">Change your Sold-To address</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="c4a22-115">En el Centro de administración, vaya a la página **Cuentas** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">de facturación de</a> facturación.</span><span class="sxs-lookup"><span data-stu-id="c4a22-115">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.</span></span>
+1. <span data-ttu-id="1e6e6-115">En el Centro de administración, vaya a la página **Cuentas** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">de facturación de</a> facturación.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-115">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="c4a22-116">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página **Cuentas de** > **facturación de** facturación.</span><span class="sxs-lookup"><span data-stu-id="c4a22-116">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Billing accounts** page.</span></span>
+1. <span data-ttu-id="1e6e6-116">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página **Cuentas de** > **facturación de** facturación.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-116">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Billing accounts** page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="c4a22-117">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página **Cuentas de** > **facturación de** facturación.</span><span class="sxs-lookup"><span data-stu-id="c4a22-117">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Billing accounts** page.</span></span>
+1. <span data-ttu-id="1e6e6-117">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página **Cuentas de** > **facturación de** facturación.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-117">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Billing accounts** page.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="c4a22-118">Seleccione **Editar información de cuenta de facturación**.</span><span class="sxs-lookup"><span data-stu-id="c4a22-118">Select **Edit billing account information**.</span></span>
+2. <span data-ttu-id="1e6e6-118">Seleccione **Editar información de cuenta de facturación**.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-118">Select **Edit billing account information**.</span></span>
 
-3. <span data-ttu-id="c4a22-119">Actualice la información de la organización y, a **continuación, seleccione Guardar**.</span><span class="sxs-lookup"><span data-stu-id="c4a22-119">Update your organization information, then select **Save**.</span></span>
+3. <span data-ttu-id="1e6e6-119">Actualice la información de la organización y, a **continuación, seleccione Guardar**.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-119">Update your organization information, then select **Save**.</span></span>
   
-## <a name="change-your-bill-to-address"></a><span data-ttu-id="c4a22-120">Cambiar la dirección de facturación</span><span class="sxs-lookup"><span data-stu-id="c4a22-120">Change your Bill-To address</span></span>
+## <a name="change-your-bill-to-address"></a><span data-ttu-id="1e6e6-120">Cambiar la dirección de facturación</span><span class="sxs-lookup"><span data-stu-id="1e6e6-120">Change your Bill-To address</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="c4a22-121">En el Centro de administración, vaya a la página **Métodos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">de pago de</a> facturación.</span><span class="sxs-lookup"><span data-stu-id="c4a22-121">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> page.</span></span>
+1. <span data-ttu-id="1e6e6-121">En el Centro de administración, vaya a la página **Métodos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">de pago de</a> facturación.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-121">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="c4a22-122">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página **Métodos de pago** > **de** facturación.</span><span class="sxs-lookup"><span data-stu-id="c4a22-122">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Payment methods** page.</span></span>
+1. <span data-ttu-id="1e6e6-122">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Centro de administración,</a>vaya a la página **Métodos de pago** > **de** facturación.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-122">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Payment methods** page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="c4a22-123">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página **Métodos de pago** > **de** facturación.</span><span class="sxs-lookup"><span data-stu-id="c4a22-123">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Payment methods** page.</span></span>
+1. <span data-ttu-id="1e6e6-123">En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Centro de administración,</a>vaya a la página **Métodos de pago** > **de** facturación.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-123">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Payment methods** page.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="c4a22-124">Seleccione la tarjeta de crédito o la cuenta bancaria que desea cambiar.</span><span class="sxs-lookup"><span data-stu-id="c4a22-124">Select the credit card or bank account that you want to change.</span></span>
+2. <span data-ttu-id="1e6e6-124">Seleccione la tarjeta de crédito o la cuenta bancaria que desea cambiar.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-124">Select the credit card or bank account that you want to change.</span></span>
 
-3. <span data-ttu-id="c4a22-125">En la **página Detalles del método de** pago, seleccione **Editar**.</span><span class="sxs-lookup"><span data-stu-id="c4a22-125">On the **Payment method details** page, select **Edit**.</span></span>
+3. <span data-ttu-id="1e6e6-125">En la **página Detalles del método de** pago, seleccione **Editar**.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-125">On the **Payment method details** page, select **Edit**.</span></span>
 
-4. <span data-ttu-id="c4a22-126">Actualice la dirección de facturación y, a **continuación, seleccione Guardar** \> **listo**.</span><span class="sxs-lookup"><span data-stu-id="c4a22-126">Update your billing address, then select **Save** \> **Done**.</span></span>
+4. <span data-ttu-id="1e6e6-126">Actualice la dirección de facturación y, a **continuación, seleccione Guardar** \> **listo**.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-126">Update your billing address, then select **Save** \> **Done**.</span></span>
 
-## <a name="change-your-service-usage-address"></a><span data-ttu-id="c4a22-127">Cambiar la dirección de uso del servicio</span><span class="sxs-lookup"><span data-stu-id="c4a22-127">Change your service usage address</span></span>
+## <a name="change-your-service-usage-address"></a><span data-ttu-id="1e6e6-127">Cambiar la dirección de uso del servicio</span><span class="sxs-lookup"><span data-stu-id="1e6e6-127">Change your service usage address</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="c4a22-128">En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="c4a22-128">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="1e6e6-128">En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-128">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="c4a22-129">En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="c4a22-129">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="1e6e6-129">En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-129">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="c4a22-130">En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="c4a22-130">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="1e6e6-130">En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-130">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.</span></span>
 
-    <span data-ttu-id="c4a22-131">Si usa Office 365 operado por 21Vianet en China, vea Ver la factura o obtener [Fapiaos para Office 365 operado por 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).</span><span class="sxs-lookup"><span data-stu-id="c4a22-131">If you're using Office 365 operated by 21Vianet in China, see [View your bill or get Fapiaos for Office 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).</span></span>
+    <span data-ttu-id="1e6e6-131">Si está usando Office 365 operado por 21Vianet en China, vea Ver su factura u obtener Fapiaos para Office 365 operado por [21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).</span><span class="sxs-lookup"><span data-stu-id="1e6e6-131">If you're using Office 365 operated by 21Vianet in China, see [View your bill or get Fapiaos for Office 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="c4a22-132">En la pestaña **Productos**, seleccione la suscripción que desee cambiar.</span><span class="sxs-lookup"><span data-stu-id="c4a22-132">On the **Products** tab, select the subscription that you want to change.</span></span>
+2. <span data-ttu-id="1e6e6-132">En la pestaña **Productos**, seleccione la suscripción que desee cambiar.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-132">On the **Products** tab, select the subscription that you want to change.</span></span>
 
-3. <span data-ttu-id="c4a22-133">En la página detalles de la suscripción, en la **sección Dirección de uso del** servicio, seleccione Editar dirección de uso del **servicio**.</span><span class="sxs-lookup"><span data-stu-id="c4a22-133">On the subscription details page, in the **Service usage address** section, select **Edit service usage address**.</span></span>
+3. <span data-ttu-id="1e6e6-133">En la página detalles de la suscripción, en la **sección Dirección de uso del** servicio, seleccione Editar dirección de uso del **servicio**.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-133">On the subscription details page, in the **Service usage address** section, select **Edit service usage address**.</span></span>
 
-4. <span data-ttu-id="c4a22-134">En el **panel Editar dirección de uso del** servicio, actualice la dirección y, a continuación, seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="c4a22-134">In the **Edit service usage address** pane, update your address, then select **Save**.</span></span>
+4. <span data-ttu-id="1e6e6-134">En el **panel Editar dirección de uso del** servicio, actualice la dirección y, a continuación, seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-134">In the **Edit service usage address** pane, update your address, then select **Save**.</span></span>
 
-## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a><span data-ttu-id="c4a22-135">Cambiar la dirección de correo electrónico alternativa a la que se envían las notificaciones de facturación</span><span class="sxs-lookup"><span data-stu-id="c4a22-135">Change the alternate email address your billing notifications are sent to</span></span>
+## <a name="change-the-alternate-email-address-your-billing-notifications-are-sent-to"></a><span data-ttu-id="1e6e6-135">Cambiar la dirección de correo electrónico alternativa a la que se envían las notificaciones de facturación</span><span class="sxs-lookup"><span data-stu-id="1e6e6-135">Change the alternate email address your billing notifications are sent to</span></span>
 
-<span data-ttu-id="c4a22-136">De forma predeterminada, las notificaciones de facturación de su organización se envían a la dirección de correo electrónico de Microsoft y a la dirección de correo electrónico alternativa de todos los administradores globales y de facturación de su organización.</span><span class="sxs-lookup"><span data-stu-id="c4a22-136">By default, your organization's billing notifications are sent to the Microsoft email address and the alternate email address of every global and billing admin in your organization.</span></span> <span data-ttu-id="c4a22-137">Cada administrador puede cambiar su dirección de correo electrónico alternativa actualizando la información de su perfil.</span><span class="sxs-lookup"><span data-stu-id="c4a22-137">Each admin can change their alternate email address by updating their profile information.</span></span>
+<span data-ttu-id="1e6e6-136">De forma predeterminada, las notificaciones de facturación de su organización se envían a la dirección de correo electrónico de Microsoft y a la dirección de correo electrónico alternativa de todos los administradores globales y de facturación de su organización.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-136">By default, your organization's billing notifications are sent to the Microsoft email address and the alternate email address of every global and billing admin in your organization.</span></span> <span data-ttu-id="1e6e6-137">Cada administrador puede cambiar su dirección de correo electrónico alternativa actualizando la información de su perfil.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-137">Each admin can change their alternate email address by updating their profile information.</span></span>
   
-1. <span data-ttu-id="c4a22-138">Inicie sesión en Microsoft 365 con su cuenta laboral o educativa como administrador global. Obtenga información sobre cómo [iniciar sesión](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).</span><span class="sxs-lookup"><span data-stu-id="c4a22-138">Sign in to Microsoft 365 with your work or school account as a global admin. [Learn how to sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
+1. <span data-ttu-id="1e6e6-138">Inicie sesión en Microsoft 365 con su cuenta de trabajo o escuela como administrador global. [Obtenga información sobre](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)cómo iniciar sesión .</span><span class="sxs-lookup"><span data-stu-id="1e6e6-138">Sign in to Microsoft 365 with your work or school account as a global admin. [Learn how to sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).</span></span>
 
-2. <span data-ttu-id="c4a22-139">Seleccione el **icono Usuario y,** a continuación, **seleccione Mi cuenta**.</span><span class="sxs-lookup"><span data-stu-id="c4a22-139">Select the **User icon**, then select **My account**.</span></span>
+2. <span data-ttu-id="1e6e6-139">Seleccione el **icono Usuario y,** a continuación, **seleccione Mi cuenta**.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-139">Select the **User icon**, then select **My account**.</span></span>
   
-3. <span data-ttu-id="c4a22-140">Selecciona **Información personal**.</span><span class="sxs-lookup"><span data-stu-id="c4a22-140">Select **Personal info**.</span></span>
+3. <span data-ttu-id="1e6e6-140">Selecciona **Información personal**.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-140">Select **Personal info**.</span></span>
   
-4. <span data-ttu-id="c4a22-141">En el **cuadro Detalles de** contacto, seleccione **Editar**.</span><span class="sxs-lookup"><span data-stu-id="c4a22-141">In the **Contact details** box, select **Edit**.</span></span>
+4. <span data-ttu-id="1e6e6-141">En el **cuadro Detalles de** contacto, seleccione **Editar**.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-141">In the **Contact details** box, select **Edit**.</span></span>
 
-5. <span data-ttu-id="c4a22-142">En el **cuadro Correo electrónico** alternativo, escriba la dirección de correo electrónico alternativa que desee usar y, a continuación, seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="c4a22-142">In the **Alternate email** box, type the alternate email address you want to use, then select **Save**.</span></span>
+5. <span data-ttu-id="1e6e6-142">En el **cuadro Correo electrónico** alternativo, escriba la dirección de correo electrónico alternativa que desee usar y, a continuación, seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-142">In the **Alternate email** box, type the alternate email address you want to use, then select **Save**.</span></span>
   
-## <a name="change-the-alternate-email-address-for-another-admin"></a><span data-ttu-id="c4a22-143">Cambiar la dirección de correo electrónico alternativa de otro administrador</span><span class="sxs-lookup"><span data-stu-id="c4a22-143">Change the alternate email address for another admin</span></span>
+## <a name="change-the-alternate-email-address-for-another-admin"></a><span data-ttu-id="1e6e6-143">Cambiar la dirección de correo electrónico alternativa de otro administrador</span><span class="sxs-lookup"><span data-stu-id="1e6e6-143">Change the alternate email address for another admin</span></span>
 
-<span data-ttu-id="c4a22-144">También puede cambiar la dirección de correo electrónico alternativa de otros administradores globales y de facturación de la organización.</span><span class="sxs-lookup"><span data-stu-id="c4a22-144">You can also change the alternate email address of other global and billing admins in your organization.</span></span>
+<span data-ttu-id="1e6e6-144">También puede cambiar la dirección de correo electrónico alternativa de otros administradores globales y de facturación de la organización.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-144">You can also change the alternate email address of other global and billing admins in your organization.</span></span>
   
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="c4a22-145">En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notificaciones de facturación</a>.</span><span class="sxs-lookup"><span data-stu-id="c4a22-145">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.</span></span>
+1. <span data-ttu-id="1e6e6-145">En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Notificaciones de facturación</a>.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-145">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="c4a22-146">En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Notificaciones de facturación</a>.</span><span class="sxs-lookup"><span data-stu-id="c4a22-146">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.</span></span>
+1. <span data-ttu-id="1e6e6-146">En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Notificaciones de facturación</a>.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-146">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="c4a22-147">En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notificaciones de facturación</a>.</span><span class="sxs-lookup"><span data-stu-id="c4a22-147">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing notifications</a> page.</span></span>
+1. <span data-ttu-id="1e6e6-147">En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Notificaciones de facturación</a>.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-147">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing notifications</a> page.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="c4a22-148">En la **página Notificaciones de facturación,** seleccione el administrador que desea cambiar.</span><span class="sxs-lookup"><span data-stu-id="c4a22-148">On the **Billing notifications** page, select the admin you want to change.</span></span>
+2. <span data-ttu-id="1e6e6-148">En la **página Notificaciones de facturación,** seleccione el administrador que desea cambiar.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-148">On the **Billing notifications** page, select the admin you want to change.</span></span>
 
-3. <span data-ttu-id="c4a22-149">En el **panel Editar roles de** usuario, escriba la dirección de correo electrónico alternativa que desee usar y, a continuación, seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="c4a22-149">In the **Edit user roles** pane, type the alternate email address you want to use, then select **Save**.</span></span>
+3. <span data-ttu-id="1e6e6-149">En el **panel Editar roles de** usuario, escriba la dirección de correo electrónico alternativa que desee usar y, a continuación, seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="1e6e6-149">In the **Edit user roles** pane, type the alternate email address you want to use, then select **Save**.</span></span>
 
-## <a name="related-content"></a><span data-ttu-id="c4a22-150">Contenido relacionado</span><span class="sxs-lookup"><span data-stu-id="c4a22-150">Related content</span></span>
+## <a name="related-content"></a><span data-ttu-id="1e6e6-150">Contenido relacionado</span><span class="sxs-lookup"><span data-stu-id="1e6e6-150">Related content</span></span>
 
-<span data-ttu-id="c4a22-151">[Ver la factura o factura](view-your-bill-or-invoice.md)</span><span class="sxs-lookup"><span data-stu-id="c4a22-151">[View your bill or invoice](view-your-bill-or-invoice.md)</span></span>\
-<span data-ttu-id="c4a22-152">[Comprender la factura o factura](understand-your-invoice2.md)</span><span class="sxs-lookup"><span data-stu-id="c4a22-152">[Understand your bill or invoice](understand-your-invoice2.md)</span></span>\
-<span data-ttu-id="c4a22-153">[Pagar por la suscripción](pay-for-your-subscription.md)</span><span class="sxs-lookup"><span data-stu-id="c4a22-153">[Pay for your subscription](pay-for-your-subscription.md)</span></span>\
-[<span data-ttu-id="c4a22-154">Suscripciones y facturación: Ayuda para administradores</span><span class="sxs-lookup"><span data-stu-id="c4a22-154">Subscriptions and billing - Admin Help</span></span>](../index.yml)
+<span data-ttu-id="1e6e6-151">[Ver la factura o factura](view-your-bill-or-invoice.md)</span><span class="sxs-lookup"><span data-stu-id="1e6e6-151">[View your bill or invoice](view-your-bill-or-invoice.md)</span></span>\
+<span data-ttu-id="1e6e6-152">[Comprender la factura o factura](understand-your-invoice2.md)</span><span class="sxs-lookup"><span data-stu-id="1e6e6-152">[Understand your bill or invoice](understand-your-invoice2.md)</span></span>\
+<span data-ttu-id="1e6e6-153">[Pagar por la suscripción](pay-for-your-subscription.md)</span><span class="sxs-lookup"><span data-stu-id="1e6e6-153">[Pay for your subscription](pay-for-your-subscription.md)</span></span>\
+[<span data-ttu-id="1e6e6-154">Suscripciones y facturación: Ayuda para administradores</span><span class="sxs-lookup"><span data-stu-id="1e6e6-154">Subscriptions and billing - Admin Help</span></span>](../index.yml)
