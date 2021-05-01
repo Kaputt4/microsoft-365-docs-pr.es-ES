@@ -235,8 +235,8 @@
       items:
         - name: Obtener información sobre DLP
           items:
-            - name: Obtener información sobre DLP
-              href: data-loss-prevention-policies.md
+            - name: Obtenga más información acerca de la prevención contra la pérdida de datos
+              href: dlp-learn-about-dlp.md
             - name: Obtener información sobre la Prevención de pérdida de datos en punto de conexión
               href: endpoint-dlp-learn-about.md
             - name: Obtener información sobre la directiva de prevención de pérdida de datos predeterminada en Microsoft Teams (versión preliminar)

@@ -40,6 +40,8 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: Mover usuarios a una suscripción diferente
       href: subscriptions/move-users-different-subscription.md
+    - name: Administrar licencias de aplicaciones de terceros
+      href: licenses/manage-third-party-app-licenses.md
     - name: Administrar directivas de reclamación automática
       href: licenses/manage-auto-claim-policies.md
     - name: Entender las suscripciones y licencias
