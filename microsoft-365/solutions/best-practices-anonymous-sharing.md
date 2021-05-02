@@ -17,18 +17,18 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: En este artículo, obtendrá información sobre los procedimientos recomendados para compartir archivos y carpetas con usuarios no autenticados.
-ms.openlocfilehash: acc825a8fc445d224fbc91dd12dace2a5e1b25c8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1e696611d37cd1b57f881457025464dccea54496
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199530"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114323"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados.
 
 El uso compartido no autenticado (los vínculos para *Cualquiera*) puede ser práctico y útil en diversos escenarios. Los vínculos para *Cualquiera* son la manera más fácil de compartir: los usuarios pueden abrir el vínculo sin autenticación y tienen la libertad de compartirlo con otros usuarios.
 
-Por lo general, no todo el contenido de una organización es adecuado para el uso compartido no autenticado. Este artículo describe las opciones disponibles para ayudarle a crear un entorno en el que los usuarios puedan compartir sin autenticarse archivos y carpetas, pero donde existan medidas de seguridad para ayudar a proteger el contenido de su organización.
+Normalmente, no todo el contenido de una organización es apropiado para compartir sin autenticar. Este artículo trata de las opciones disponibles para ayudarle a crear un entorno en el que sus usuarios puedan usar el uso compartido no autenticado de archivos y carpetas, pero en el que haya salvaguardas para ayudar a proteger el contenido de su organización.
 
 > [!NOTE]
 > Para que funcione el uso compartido sin autenticarse, debe habilitarlo para su organización y para el sitio individual o el equipo que lo utilizará. Consulte [Colaborar con personas fuera de su organización](collaborate-with-people-outside-your-organization.md) para ver el escenario que quiere habilitar.
@@ -103,7 +103,7 @@ Para establecer el vínculo de uso compartido de archivos y carpetas predetermin
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>Impida el uso compartido no autenticado de contenido confidencial
 
-Puede usar la [prevención de pérdida de datos (DLP)](../compliance/data-loss-prevention-policies.md) para evitar el uso compartido no autenticado de contenido confidencial. La prevención de pérdida de datos puede actuar basándose en la etiqueta de confidencialidad, en la etiqueta de retención o en la información confidencial del archivo en sí.
+Puede usar la [prevención de pérdida de datos (DLP)](../compliance/dlp-learn-about-dlp.md) para evitar el uso compartido no autenticado de contenido confidencial. La prevención de pérdida de datos puede actuar basándose en la etiqueta de confidencialidad, en la etiqueta de retención o en la información confidencial del archivo en sí.
 
 Crear una regla DLP
 1. En el centro de administración del centro de cumplimiento de Microsoft 365, vaya a [Prevención de pérdida de datos](https://compliance.microsoft.com/datalossprevention).
