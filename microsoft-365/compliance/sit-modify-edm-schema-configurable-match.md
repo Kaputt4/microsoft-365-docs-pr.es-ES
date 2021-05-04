@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Obtenga información acerca de cómo modificar un esquema de EDM para usar la coincidencia configurable.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dea641072983163c6fbbcc5888d5ee6ea91f6990
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 7d470b986d4a94206935efb832deec7171f8e404
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408319"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114198"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modificar el esquema de coincidencia de datos exactos para usar la coincidencia configurable
 
@@ -133,6 +133,6 @@ El indicador `ignoredDelimiters` no es compatible con:
 - [Crear un tipo de información confidencial personalizado con una clasificación basada en la coincidencia exacta de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 - [Tipos de información confidencial personalizados](./sensitive-information-type-learn-about.md)
-- [Información general de directivas DLP](data-loss-prevention-policies.md)
+- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Microsoft Cloud App Security](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

@@ -1,5 +1,5 @@
 ---
-title: Obtenga información sobre la directiva predeterminada de prevención de pérdida de datos en Microsoft Teams (versión preliminar)
+title: Obtener información sobre la directiva de prevención de pérdida de datos predeterminada en Microsoft Teams (versión preliminar)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Obtenga información sobre la directiva predeterminada de prevención de pérdida de datos en Microsoft Teams
-ms.openlocfilehash: 3992daf9431dbd87ed5e947a1e5a2b0acd20edce
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+description: Obtenga información sobre la directiva de prevención de pérdida de datos predeterminada en Microsoft Teams
+ms.openlocfilehash: 0663c370373708009346d4f858729e17436f0f62
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826279"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114148"
 ---
-# <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Obtenga información sobre la directiva predeterminada de prevención de pérdida de datos en Microsoft Teams (versión preliminar)
+# <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Obtener información sobre la directiva de prevención de pérdida de datos predeterminada en Microsoft Teams (versión preliminar)
 
-[Las capacidades de prevención](data-loss-prevention-policies.md) de pérdida de datos (DLP) se han ampliado para incluir mensajes de canal y chat de Microsoft Teams, incluidos los mensajes de canal privado. Como parte de esta versión, creamos una directiva DLP predeterminada para los clientes por primera vez en el Centro de cumplimiento.
+[Las capacidades de prevención](dlp-learn-about-dlp.md) de pérdida de datos se han ampliado para incluir Microsoft Teams chat y mensajes de canal, incluidos los mensajes de canal privado. Como parte de esta versión, creamos una directiva DLP predeterminada para los clientes por primera vez en el Centro de cumplimiento.
 
 ## <a name="applies-to"></a>Se aplica a
 
-Cualquier inquilino con licencia con una o varias de las siguientes licencias y que tenga usuarios activos de Teams
+Cualquier inquilino con licencia con una o varias de las siguientes licencias y que tenga usuarios Teams activo
  
 - ME5, 
 - MA5, 
@@ -47,7 +47,7 @@ Los administradores pueden ver esta directiva en la página Directivas de [preve
 
 
 > [!div class="mx-imgBorder"]
-> ![directiva DLP predeterminada de Teams](../media/default-teams-dlp-policy.png)
+> ![directiva Teams DLP predeterminada](../media/default-teams-dlp-policy.png)
 
 ## <a name="edit-or-delete-the-default-policy"></a>Editar o eliminar la directiva predeterminada
 

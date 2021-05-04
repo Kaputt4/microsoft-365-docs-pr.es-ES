@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Prepárese para implementar la extensión de cumplimiento de Microsoft.
-ms.openlocfilehash: c6f56c65de6428374d912545db38337d34720c94
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 6ae44a86d415161cd3d7adf40671f02d93fb83c6
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838353"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113868"
 ---
 # <a name="get-started-with-microsoft-compliance-extension-preview"></a>Introducción a la extensión de cumplimiento de Microsoft (versión preliminar)
 
@@ -35,7 +35,7 @@ Use estos procedimientos para implementar la extensión de cumplimiento de Micro
 Para usar la extensión de cumplimiento de Microsoft, el dispositivo debe haber sido incorporado a la DLP del punto de conexión Consulte estos artículos si la DLP o la DLP del punto de conexión son algo nuevo para usted.
 
 - [Información sobre la extensión de cumplimiento de Microsoft](dlp-chrome-learn-about.md)
-- [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
+- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Crear una directiva DLP desde una plantilla](create-a-dlp-policy-from-a-template.md)
 - [Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)
@@ -274,7 +274,7 @@ Ahora que tiene dispositivos incorporados y puede ver los datos de la actividad 
 
 - [Obtenga información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)
 - [Uso de la prevención de pérdida de datos en punto de conexión](endpoint-dlp-using.md)
-- [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
+- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
 - [Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/)

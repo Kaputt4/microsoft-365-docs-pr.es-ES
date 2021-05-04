@@ -11,19 +11,19 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar datos SMS de la red TELUS en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
-ms.openlocfilehash: 543ef817b7a9a2b9bbd2449c12460ca557907728
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Los administradores pueden configurar un conector de TeleMessage para importar y archivar SMS datos de la red TELUS en Microsoft 365. Esto le permite archivar datos de orígenes de datos de terceros en Microsoft 365 para que pueda usar características de cumplimiento como retención legal, búsqueda de contenido y directivas de retención para administrar los datos de terceros de su organización.
+ms.openlocfilehash: 13ac3306d2541f5bc7393152abb6cefb5a11123e
+ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925024"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52077354"
 ---
 # <a name="set-up-a-connector-to-archive-telus-network-data"></a>Configurar un conector para archivar datos de red TELUS
 
-Use el conector De TeleMessage en el Centro de cumplimiento de Microsoft 365 para importar y archivar datos del Servicio de mensajería corta (SMS) de la red TELUS de su organización. Después de configurar y configurar un conector, se conecta a la red TELUS de la organización una vez al día e importa datos SMS a buzones de Microsoft 365.
+Use el conector de TeleMessage en el centro de cumplimiento de Microsoft 365 para importar y archivar datos del servicio de mensajería breve (SMS) de la red TELUS de su organización. Después de configurar y configurar un conector, se conecta a la red TELUS de la organización una vez al día e importa SMS a buzones de correo en Microsoft 365.
 
-Después de almacenar los mensajes SMS en buzones de usuario, puede aplicar características de cumplimiento de Microsoft 365, como retención por juicio, búsqueda de contenido y directivas de retención de Microsoft 365 a los datos TELUS. Por ejemplo, puede buscar mensajes SMS telus mediante búsqueda de contenido o asociar el buzón que contiene los datos telus con un custodio en un caso de exhibición de documentos electrónicos avanzada. El uso de un conector de red TELUS para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
+Después SMS los mensajes se almacenan en buzones de usuario, puede aplicar Microsoft 365 características de cumplimiento como retención por juicio, búsqueda de contenido y directivas de retención Microsoft 365 a los datos TELUS. Por ejemplo, puede buscar en telus SMS con búsqueda de contenido o asociar el buzón que contiene los datos telus con un custodio en un Advanced eDiscovery caso. El uso de un conector de red TELUS para importar y archivar datos en Microsoft 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y reglamentarias.
 
 ## <a name="overview-of-archiving-telus-network-data"></a>Información general sobre el archivado de datos de red TELUS
 
@@ -33,31 +33,31 @@ En la siguiente introducción se explica el proceso de uso de un conector para a
 
 1. Su organización trabaja con TeleMessage y TELUS para configurar un conector de red TELUS. Para obtener más información, [vea TELUS Network Archiver](https://www.telemessage.com/office365-activation-for-telus-network-archiver/).
 
-2. Una vez cada 24 horas, los mensajes SMS de la red TELUS de su organización se copian en el sitio de TeleMessage.
+2. En tiempo real, SMS mensajes de la red TELUS de su organización se copian en el sitio de TeleMessage.
 
-3. El conector de red TELUS que cree en el Centro de cumplimiento de Microsoft 365 se conecta al sitio de TeleMessage todos los días y transfiere los mensajes SMS de las 24 horas anteriores a una ubicación segura de Azure Storage en Microsoft Cloud. El conector también convierte el contenido de los mensajes SMS a un formato de mensaje de correo electrónico.
+3. El conector de red TELUS que cree en el centro de cumplimiento de Microsoft 365 se conecta al sitio de TeleMessage todos los días y transfiere los mensajes de SMS de las 24 horas anteriores a una ubicación Azure Storage segura en la nube de Microsoft. El conector también convierte el contenido de los SMS a un formato de mensaje de correo electrónico.
 
-4. El conector importa los elementos de comunicación móvil al buzón de un usuario específico. Se crea una nueva carpeta denominada Archivador de red **DE SMS TELUS** en el buzón del usuario específico y los elementos se importan a él. El conector realiza la asignación mediante el valor de la *propiedad Dirección de correo* electrónico del usuario. Cada mensaje SMS contiene esta propiedad, que se rellena con la dirección de correo electrónico de cada participante del mensaje SMS.
+4. El conector importa los elementos de comunicación móvil al buzón de un usuario específico. Se crea una nueva carpeta denominada **TELUS SMS Network Archiver** en el buzón del usuario específico y los elementos se importan a él. El conector realiza la asignación mediante el valor de la *propiedad Dirección de correo* electrónico del usuario. Cada SMS contiene esta propiedad, que se rellena con la dirección de correo electrónico de todos los participantes del SMS mensaje.
 
-   Además de la asignación automática  de usuarios mediante el valor de la propiedad Dirección de correo electrónico del usuario, también puede implementar la asignación personalizada cargando un archivo de asignación CSV. Este archivo de asignación contiene el número de teléfono móvil y la dirección de correo electrónico correspondiente de Microsoft 365 para los usuarios de la organización. Si habilita tanto la asignación automática de usuarios como la asignación personalizada, por cada elemento TELUS, el conector primero mira el archivo de asignación personalizado. Si no encuentra un usuario válido de Microsoft 365 que corresponda al número de teléfono móvil de un usuario, el conector usará los valores de la propiedad de dirección de correo electrónico del elemento que está intentando importar. Si el conector no encuentra un usuario válido de Microsoft 365 en el archivo de asignación personalizado o en la propiedad de dirección de correo electrónico del elemento TELUS, el elemento no se importará.
+   Además de la asignación automática  de usuarios mediante el valor de la propiedad Dirección de correo electrónico del usuario, también puede implementar la asignación personalizada cargando un archivo de asignación CSV. Este archivo de asignación contiene el número de teléfono móvil y la dirección Microsoft 365 de correo electrónico correspondiente para los usuarios de la organización. Si habilita tanto la asignación automática de usuarios como la asignación personalizada, por cada elemento TELUS, el conector primero mira el archivo de asignación personalizado. Si no encuentra un usuario Microsoft 365 válido que corresponda al número de teléfono móvil de un usuario, el conector usará los valores de la propiedad de dirección de correo electrónico del elemento que está intentando importar. Si el conector no encuentra un usuario Microsoft 365 válido en el archivo de asignación personalizado o en la propiedad de dirección de correo electrónico del elemento TELUS, el elemento no se importará.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Algunos de los pasos de implementación necesarios para archivar datos de red TELUS son externos a Microsoft 365 y deben completarse antes de poder crear un conector en el centro de cumplimiento.
+Algunos de los pasos de implementación necesarios para archivar datos de red telus son externos a Microsoft 365 y deben completarse antes de poder crear un conector en el centro de cumplimiento.
 
 - Ordene el servicio de archivador de red [TELUS desde TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365) y obtenga una cuenta de administración válida para su organización. Deberá iniciar sesión en esta cuenta al crear el conector en el centro de cumplimiento.
 
 - Obtenga su cuenta de red TELUS y los detalles de contacto de facturación para que pueda rellenar los formularios de incorporación de TeleMessage y solicitar el servicio de archivado de mensajes de TELUS.
 
-- Registre todos los usuarios que requieran el archivado de la red DE SMS telus en la cuenta de TeleMessage. Al registrar usuarios, asegúrese de usar la misma dirección de correo electrónico que se usa para su cuenta de Microsoft 365.
+- Registre todos los usuarios que requieren telus SMS archivado de red en la cuenta de TeleMessage. Al registrar usuarios, asegúrese de usar la misma dirección de correo electrónico que se usa para su Microsoft 365 usuario.
 
-- Los empleados deben tener teléfonos móviles corporativos y de responsabilidad corporativa en la red móvil deTELUS. El archivado de mensajes en Microsoft 365 no está disponible para dispositivos de propiedad de los empleados o Bring Your Own Devices (BYOD).
+- Los empleados deben tener teléfonos móviles corporativos y de responsabilidad corporativa en la red móvil deTELUS. El archivado de mensajes Microsoft 365 no está disponible para dispositivos de propiedad de los empleados o Bring Your Own Devices (BYOD).
 
-- Al usuario que crea un conector de red TELUS se le debe asignar el rol De exportación de importación de buzones en Exchange Online. Esto es necesario para agregar conectores en la **página Conectores de datos** del Centro de cumplimiento de Microsoft 365. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
+- Al usuario que crea un conector de red TELUS se le debe asignar el rol De importación de buzones de Exchange Online. Esto es necesario para agregar conectores en la **página Conectores de datos** del centro de Microsoft 365 cumplimiento. Este rol no está asignado a ningún grupo de roles de Exchange Online de forma predeterminada. Puede agregar el rol Exportación de importación de buzones al grupo de roles Administración de la organización en Exchange Online. O bien, puede crear un grupo de roles, asignar el rol Importación de buzones de correo Exportar y, a continuación, agregar los usuarios adecuados como miembros. Para obtener más información, vea [](/Exchange/permissions-exo/role-groups#modify-role-groups) las secciones [Crear](/Exchange/permissions-exo/role-groups#create-role-groups) grupos de roles o Modificar grupos de roles en el artículo "Administrar grupos de roles en Exchange Online".
 
 ## <a name="create-a-telus-network-connector"></a>Crear un conector de red TELUS
 
-Después de completar los requisitos previos descritos en la sección anterior, puede crear el conector de red TELUS en el Centro de cumplimiento de Microsoft 365. El conector usa la información que proporciona para conectarse al sitio de TeleMessage y transferir mensajes SMS a los cuadros de buzón de usuario correspondientes en Microsoft 365.
+Después de completar los requisitos previos descritos en la sección anterior, puede crear el conector de red TELUS en el centro de Microsoft 365 cumplimiento. El conector usa la información que proporciona para conectarse al sitio de TeleMessage y transferir SMS mensajes a los cuadros de buzón de usuario correspondientes en Microsoft 365.
 
 1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com/) y, a continuación, haga clic **en Conectores de datos**  >  **TELUS Network**.
 

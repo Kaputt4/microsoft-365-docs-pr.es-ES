@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de actividad complementa la funcionalidad de la característica de clasificación de datos permitiéndole ver y filtrar las acciones que los usuarios están realizando en el contenido etiquetado.
-ms.openlocfilehash: 6825c00373617011db28fa484f272086f887ea40
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
-ms.translationtype: HT
+ms.openlocfilehash: 414ef4e5d9f6472180a5eaef391d3eba33463b02
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921638"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114012"
 ---
 # <a name="get-started-with-activity-explorer"></a>Introducción al explorador de actividad
 
-La descripción general de la clasificación de datos y las pestañas del explorador de contenido le ofrecen visibilidad sobre el contenido que se ha descubierto y etiquetado, y dónde está ese contenido. El explorador de actividad complementa este conjunto de funciones permitiéndole supervisar lo que se lleva a cabo con el contenido de la etiqueta. El explorador de actividad ofrece una vista histórica.
+La [introducción a la](data-classification-overview.md) clasificación de datos y las pestañas del [explorador](data-classification-content-explorer.md) de contenido le dan visibilidad sobre qué contenido se ha detectado y etiquetado, y dónde está ese contenido. El explorador de actividad complementa este conjunto de funciones permitiéndole supervisar lo que se lleva a cabo con el contenido de la etiqueta. El explorador de actividades proporciona una vista histórica de las actividades en el contenido etiquetado. La información de actividad se recopila Microsoft 365 registros de auditoría unificados, transformados y puestos a disposición en la interfaz de usuario del explorador de actividades. 
 
 ![Marcador de posición captura de pantalla información general explorador de actividad](../media/data-classification-activity-explorer-1.png)
 
@@ -43,9 +43,10 @@ Hay más de 30 filtros diferentes disponibles, estos son algunos:
 - Directiva DLP
 
 
+
 ## <a name="prerequisites"></a>Requisitos previos
 
-Todas las cuentas que tienen acceso a la clasificación de datos y la usan deben tener una licencia asignada de una de estas suscripciones:
+Todas las cuentas que tengan acceso a la clasificación de datos y la usen deben tener una licencia asignada de una de estas suscripciones:
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
@@ -56,7 +57,11 @@ Todas las cuentas que tienen acceso a la clasificación de datos y la usan deben
 
 ### <a name="permissions"></a>Permisos
 
- Para obtener acceso a la pestaña del explorador de actividad, una cuenta debe tener asignada una suscripción en cualquiera de estos roles o grupos de roles.
+ Para obtener acceso a la pestaña explorador de actividades, se debe asignar explícitamente la pertenencia a una cuenta en cualquiera de estos grupos de roles o concederla explícitamente.
+
+<!--
+> [!IMPORTANT]
+> Access to Activity explorer via the Security reader or Device Management role groups or other has been removed-->
 
 **Grupos de roles de Microsoft 365**
 
@@ -65,21 +70,49 @@ Todas las cuentas que tienen acceso a la clasificación de datos y la usan deben
 - Administrador de seguridad
 - Administrador de datos de cumplimiento
 
-## <a name="activity-type"></a>Tipo de actividad
+**Microsoft 365 roles**
 
-Microsoft 365 supervisa y realiza un seguimiento de los tipos de actividades en SharePoint Online y OneDrive, como:
+- Administrador de cumplimiento
+- Administrador de seguridad
+
+## <a name="activity-types"></a>Tipos de actividad
+
+El explorador de actividades recopila información de actividad de los registros de auditoría en varios orígenes de actividades. Para obtener información más detallada sobre qué actividad de etiquetado la convierte en explorador de actividades, vea [Labeling events available in Activity explorer](data-classification-activity-explorer-available-events.md).
+
+**Actividades de etiquetas** de confidencialidad y actividades de etiquetado de retención de aplicaciones nativas de Office, complemento de Azure Information Protection, SharePoint Online, Exchange Online (solo etiquetas de confidencialidad) y OneDrive.  Por ejemplo:
 
 - etiqueta aplicada
 - etiqueta cambiada (actualizada, degradada o eliminada)
 - simulación de etiquetado automático
+- archivo leído 
 
-El valor de comprensión de las acciones que se toman con el contenido identificado por la etiqueta es que puede ver si los controles que ya se han puesto en su sitio, como [Directivas de prevención de pérdida de datos](data-loss-prevention-policies.md) son efectivas o no. Si no es así, o si se detecta algo inesperado, como un gran número de elementos etiquetados `highly confidential`y se degradan`general`, puede administrar las distintas directivas y llevar a cabo nuevas acciones para restringir el comportamiento no deseado.
+**Escáner de Azure Information Protection (AIP) y clientes AIP**
+
+- protección aplicada
+- protección modificada
+- protección eliminada
+- archivos detectados 
+
+El explorador de actividades también recopila eventos de coincidencias de directivas **DLP** de Exchange Online, SharePoint Online, OneDrive, chat y canal de Teams (versión preliminar), carpetas y bibliotecas de SharePoint locales y recursos compartidos de archivos locales y dispositivos Windows 10 mediante prevención de pérdida de datos de extremo **(DLP).** Algunos ejemplos de eventos de Windows 10 dispositivos son archivos:
+
+- eliminaciones
+- creaciones
+- copiado en el Portapapeles
+- modificado 
+- read
+- impreso
+- nombre cambiado
+- copiado en el recurso compartido de red
+- a la que se accede mediante una aplicación sin alambrar 
+
+El valor de comprender qué acciones se están haciendo con el contenido etiquetado confidencial es que puede ver si los controles que ya ha puesto en marcha, como la prevención de pérdida de datos son [efectivos](dlp-learn-about-dlp.md) o no. Si no es así, o si se detecta algo inesperado, como un gran número de elementos etiquetados `highly confidential`y se degradan`general`, puede administrar las distintas directivas y llevar a cabo nuevas acciones para restringir el comportamiento no deseado.
 
 > [!NOTE]
 > El explorador de actividad no supervisa actualmente las actividades de retención de Exchange Online.
 
 ## <a name="see-also"></a>Recursos adicionales
+
 - [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
 - [Más información sobre las directivas y las etiquetas de retención](retention.md)
-- [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
-
+- [Obtener más información acerca de los tipos de información confidencial](sensitive-information-type-learn-about.md).
+- [Más información sobre la clasificación de datos](data-classification-overview.md)

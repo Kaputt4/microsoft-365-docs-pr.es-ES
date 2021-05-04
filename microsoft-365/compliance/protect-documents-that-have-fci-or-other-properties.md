@@ -19,30 +19,30 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo usar una directiva de prevención de pérdida de datos (DLP) para proteger los documentos que tienen propiedades de un sistema de terceros.
-ms.openlocfilehash: 2d66a0a863b2076044a5c1d1cb9c3d4e8c29a186
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d3e635080ce05314adc8dd9599012e5f76bc0815
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925566"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113486"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Crear una directiva DLP para proteger documentos con FCI u otras propiedades
 
-Las directivas de prevención de pérdida de datos (DLP) de Microsoft 365 pueden usar propiedades de clasificación o propiedades de elementos para identificar elementos confidenciales. Por ejemplo, puede usar:
+Microsoft 365 de prevención de pérdida de datos (DLP) pueden usar propiedades de clasificación o propiedades de elemento para identificar elementos confidenciales. Por ejemplo, puede usar:
 
-- Propiedades de la infraestructura de clasificación de archivos (FCI) de Windows Server
-- Propiedades del documento de SharePoint
+- Windows Propiedades de la infraestructura de clasificación de archivos de servidor (FCI)
+- SharePoint de documento
 - Propiedades de documentos del sistema de terceros
 
 ![Diagrama que muestra Office 365 y el sistema de clasificación externo](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
 
-Por ejemplo, la organización puede usar la FCI de Windows Server para identificar elementos con datos personales como números de seguridad social y, a continuación, clasificar el documento estableciendo la propiedad Información de identificación **personal** en **High**, **Moderate**, **Low**, **Public** o **Not PII** según el tipo y el número de repeticiones de datos personales encontrados en el documento.
+Por ejemplo, su organización puede usar la FCI de servidor de Windows para identificar elementos con datos personales como números de seguridad social y, a continuación, clasificar el documento estableciendo la propiedad Información de identificación **personal** en **High**, **Moderate**, **Low**, **Public** o **Not PII** según el tipo y el número de repeticiones de datos personales encontrados en el documento.
 
-En Microsoft 365, puede crear una directiva DLP que identifique los documentos que tienen esa propiedad establecida en valores específicos, como **High** y **Medium,** y, a continuación, realiza una acción como bloquear el acceso a esos archivos. La misma directiva puede tener otra regla que realice una acción diferente si la propiedad se establece en **Bajo**, por ejemplo, enviar una notificación por correo electrónico. De este modo, DLP se integra con la FCI de Windows Server y puede ayudar a proteger los documentos de Office cargados o compartidos en Microsoft 365 desde servidores de archivos basados en Windows Server.
+En Microsoft 365, puede crear una directiva DLP que identifique los documentos que tienen esa propiedad establecida en valores específicos, como **High** y **Medium,** y, a continuación, realiza una acción como bloquear el acceso a esos archivos. La misma directiva puede tener otra regla que realice una acción diferente si la propiedad se establece en **Bajo**, por ejemplo, enviar una notificación por correo electrónico. De este modo, DLP se integra con Windows Server FCI y puede ayudar Office proteger los documentos Office cargados o compartidos en Microsoft 365 desde servidores de archivos basados Windows servidor.
 
-Una directiva DLP simplemente busca un par de nombre y valor de propiedad específicos. Se puede usar cualquier propiedad de documento, siempre que la propiedad tenga una propiedad administrada correspondiente para la búsqueda de SharePoint. Por ejemplo, una colección de sitios de SharePoint puede usar un tipo de contenido denominado **Trip Report** con un campo obligatorio denominado **Customer**. Cada vez que una persona crea un informe de viaje, debe escribir el nombre del cliente. Este par nombre/valor de propiedad también se puede usar en una directiva DLP, por ejemplo,  si desea una regla que bloquee el acceso al documento para invitados cuando el campo Cliente contiene **Contoso**.
+Una directiva DLP simplemente busca un par de nombre y valor de propiedad específicos. Se puede usar cualquier propiedad de documento, siempre que la propiedad tenga una propiedad administrada correspondiente para la SharePoint búsqueda. Por ejemplo, una SharePoint de sitios puede usar un tipo de contenido denominado **Trip Report** con un campo obligatorio denominado **Customer**. Cada vez que una persona crea un informe de viaje, debe escribir el nombre del cliente. Este par nombre/valor de propiedad también se puede usar en una directiva DLP, por ejemplo,  si desea una regla que bloquee el acceso al documento para invitados cuando el campo Cliente contiene **Contoso**.
 
-Si desea aplicar la directiva DLP al contenido con etiquetas específicas de Microsoft 365, no debe seguir los pasos aquí. En su lugar, obtenga información sobre [cómo usar una etiqueta de retención como condición en una directiva DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
+Si desea aplicar la directiva DLP al contenido con etiquetas de Microsoft 365 específicas, no debe seguir los pasos aquí. En su lugar, obtenga información sobre [cómo usar una etiqueta de retención como condición en una directiva DLP](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
 ## <a name="before-you-create-the-dlp-policy"></a>Antes de crear la directiva DLP
 
@@ -65,7 +65,7 @@ Primero debe cargar un documento con la propiedad a la que desea hacer referenci
 
 1. Inicie sesión en el Centro de administración de Microsoft 365.
 
-2. En la navegación izquierda, elija **Centros de administración de** \> **SharePoint**. Ahora está en el Centro de administración de SharePoint.
+2. En la navegación izquierda, elija **Centros de administración** \> **SharePoint**. Ahora está en el Centro de administración de SharePoint.
 
 3. En la navegación izquierda, elija **buscar en** la página administración \> de **búsqueda** Administrar esquema \> **de búsqueda**.
 
@@ -83,7 +83,7 @@ Primero debe cargar un documento con la propiedad a la que desea hacer referenci
 
 8. En **Asignaciones a propiedades rastreadas** \> **Agregue una asignación**.
 
-9. En **el cuadro de** diálogo selección de propiedades rastreadas, busque y seleccione la propiedad rastreada que corresponde a la propiedad FCI de Windows Server u otra propiedad que usará en la directiva \> DLP \> **Aceptar**.
+9. En el **cuadro** de diálogo selección de propiedades rastreadas, busque y seleccione la propiedad rastreada que corresponde a la propiedad FCI de Windows Server u otra propiedad que usará en la directiva \> DLP \> **Aceptar**.
 
    ![Cuadro de diálogo de selección de propiedades rastreadas](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
 
@@ -91,7 +91,7 @@ Primero debe cargar un documento con la propiedad a la que desea hacer referenci
 
 ## <a name="create-a-dlp-policy-that-uses-an-fci-property-or-other-property"></a>Crear una directiva DLP que use una propiedad de FCI u otra propiedad
 
-En este ejemplo, una organización usa FCI en sus servidores de archivos basados en Windows Server; específicamente, están usando la propiedad de clasificación FCI denominada Información de identificación **personal** con valores posibles de **High**, **Moderate**, **Low**, **Public** y **Not PII**. Ahora quieren usar su clasificación fci existente en sus directivas DLP en Office 365.
+En este ejemplo, una organización usa FCI en su Windows servidores de archivos basados en servidor; específicamente, están usando la propiedad de clasificación FCI denominada Información de identificación **personal** con valores posibles de **High**, **Moderate**, **Low**, **Public** y **Not PII**. Ahora quieren usar su clasificación de FCI existente en sus directivas DLP en Office 365.
 
 En primer lugar, siguen los pasos anteriores para crear una propiedad administrada en SharePoint Online, que se asigna a la propiedad rastreada creada automáticamente a partir de la propiedad FCI.
 
@@ -107,7 +107,7 @@ La condición **Propiedades del** documento que contienen cualquiera de estos va
 
 Para obtener más información sobre estos cmdlets, consulte [Security &amp; Compliance Center cmdlets](/powershell/exchange/exchange-online-powershell).
 
-1. [Conectarse al Centro de &amp; cumplimiento de seguridad con PowerShell remoto](/powershell/exchange/connect-to-scc-powershell)
+1. [Conectar al Centro de cumplimiento &amp; de seguridad con PowerShell remoto](/powershell/exchange/connect-to-scc-powershell)
 
 2. Cree la directiva mediante  `New-DlpCompliancePolicy` .
 
@@ -125,7 +125,7 @@ Este PowerShell crea una directiva DLP que se aplica a todas las ubicaciones.
    New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
    ```
 
-   Windows Server FCI incluye muchas propiedades integradas, incluida la información de identificación **personal** usada en este ejemplo. Los valores posibles para cada propiedad pueden ser diferentes para cada organización. Los **valores High**, **Moderate** y **Low** usados aquí son solo un ejemplo. Para tu organización, puedes ver las propiedades de clasificación fci de Windows Server con sus valores posibles en el Administrador de recursos del servidor de archivos en el servidor de archivos basado en Windows Server. Para obtener más información, vea [Create a classification property](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11)).
+   Windows La FCI del servidor incluye muchas propiedades integradas, incluida la información de identificación **personal** usada en este ejemplo. Los valores posibles para cada propiedad pueden ser diferentes para cada organización. Los **valores High**, **Moderate** y **Low** usados aquí son solo un ejemplo. Para su organización, puede ver las propiedades de clasificación de FCI de Windows Server con sus valores posibles en el Administrador de recursos del servidor de archivos en el servidor Windows servidor de archivos basado en servidor. Para obtener más información, vea [Create a classification property](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759215(v=ws.11)).
 
 Cuando termine, la directiva debe tener dos reglas nuevas que usen las propiedades **Document que contengan cualquiera de estos valores.** Esta condición no aparecerá en la interfaz de usuario, aunque aparecerán las demás condiciones, acciones y configuración.
 
@@ -146,13 +146,13 @@ Para obtener más información, vea [Solicitar manualmente el rastreo y una nuev
 
 ### <a name="reindex-a-site-optional"></a>Reindexar un sitio (opcional)
 
-1. En el sitio, elija **Configuración** (icono de engranaje en la parte superior derecha) \> **Configuración del sitio**.
+1. En el sitio, elija **Configuración** (icono de engranaje en la parte superior \> **derecha) Sitio Configuración**.
 
 2. En **Buscar,** elija **Buscar y disponibilidad sin conexión** \> **Reindexar sitio**.
 
 ## <a name="more-information"></a>Más información
 
-- [Información general sobre las directivas de prevención de pérdida de datos](data-loss-prevention-policies.md)
+- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 
 - [Crear una directiva DLP desde una plantilla](create-a-dlp-policy-from-a-template.md)
 

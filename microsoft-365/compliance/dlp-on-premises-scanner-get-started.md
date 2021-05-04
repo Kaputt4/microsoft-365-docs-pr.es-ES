@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurar el examinador de prevención de pérdida de datos de Microsoft 365 en el entorno local
-ms.openlocfilehash: 7e190a1d6e902af3406f7e8f317efe80e825e7f2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 242956a3c6469756481fb823340e715a210562af
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917836"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114178"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>Introducción al examinador de prevención de pérdida de datos en el entorno local (versión preliminar)
 
@@ -55,7 +55,7 @@ Los datos del examinador DLP en el entorno local se pueden ver en el [Explorador
 
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>Requisitos previos del examinador de DLP en el entorno local
 
-- El examinador de Azure Information Protection (AIP) implementa la coincidencia de directivas DLP y la aplicación de directivas. El examinador se instala como parte del cliente de AIP, por lo que la instalación debe cumplir todos los requisitos previos para AIP, el cliente AIP y el examinador de etiquetas unificado de AIP.
+- El examinador de Azure Information Protection (AIP) implementa la coincidencia de directiva DLP y el cumplimiento de la directiva. El examinador se instala como parte del cliente de AIP, por lo que la instalación debe cumplir todos los requisitos previos para AIP, el cliente AIP y el examinador de etiquetas unificado de AIP.
 - Implementar el examinador y el cliente de AIP. Para obtener más información [Instale el cliente de etiquetas unificado de AIP](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) y [], vea [Configurar e instalar el examinador de etiquetas unificado de Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install).
 - Debe haber al menos una etiqueta y una directiva publicadas en el espacio empresarial, incluso si todas sus reglas de detección se basan únicamente en tipos de información confidenciales.
 
@@ -66,7 +66,7 @@ Los datos del examinador DLP en el entorno local se pueden ver en el [Explorador
     1. La configuración de los trabajos de detección de red es un paso opcional. Puede omitirlo y definir repositorios específicos que se examinarán en su trabajo de examen de contenido.
     2. Debe crear un trabajo de examen de contenido y especificar los repositorios que alojan archivos que deben ser evaluados por el motor de DLP.
     3. Habilite las reglas de DLP en el trabajo de examen de contenido creado y establezca la opción **Aplicar** en **Desactivar**, a menos que desee avanzar directamente a la fase de aplicación de DLP.
-3. Compruebe que el trabajo de examen de contenido esté asignado al clúster adecuado. Si aún no ha creado un trabajo de examen de contenido, cree uno nuevo y asígnelo al clúster que contenga los nodos del examinador que ejecutan la versión preliminar pública.
+3. Verifique que su trabajo de examen de contenido esté asignado al clúster correcto. Si aún no ha creado un trabajo de examen de contenido, cree uno nuevo y asígnelo al clúster que contenga los nodos del examinador que ejecutan la versión preliminar pública.
 
 4. Conéctese a la [Extensión de Azure Information Protection en Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade) y agregue sus repositorios al trabajo de examen de contenido que realizará el examen.
 
@@ -127,7 +127,7 @@ Ahora que ha implementado una directiva de prueba para las ubicaciones locales d
 
 - [Obtener información acerca del examinador local de DLP (versión preliminar)](dlp-on-premises-scanner-learn.md)
 - [Usar el examinador local de DLP (versión preliminar)](dlp-on-premises-scanner-use.md)
-- [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
+- [Obtenga más información acerca de la prevención de pérdida de datos](dlp-learn-about-dlp.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
 - [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

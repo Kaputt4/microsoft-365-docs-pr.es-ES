@@ -1,5 +1,5 @@
 ---
-title: Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365
+title: Información general sobre la solución Advanced eDiscovery en Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,124 +18,126 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365. En este artículo se proporciona información general sobre la exhibición de documentos electrónicos avanzada en Microsoft 365, una herramienta que le ayudará a administrar investigaciones internas y externas. También enmarca las razones empresariales para usar eDiscovery avanzado para administrar las investigaciones legales.
+description: Obtenga información sobre la solución Advanced eDiscovery en Microsoft 365. En este artículo se proporciona información general Advanced eDiscovery en Microsoft 365, una herramienta que le ayudará a administrar investigaciones internas y externas. También enmarca las razones empresariales para usar Advanced eDiscovery para administrar las investigaciones legales.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0f6ae536f84190f81248bbf68ff66f438727e068
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 16d18d04c0bb45f0a9328dcebae866c16a575812
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927666"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860969"
 ---
-# <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Información general sobre la exhibición de documentos electrónicos avanzada de Microsoft 365
+# <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Información general sobre Microsoft 365 Advanced eDiscovery
 
-La solución de exhibición de documentos electrónicos avanzada en Microsoft 365 se basa en las capacidades de análisis y exhibición de documentos electrónicos de Microsoft existentes. La exhibición de documentos electrónicos avanzada proporciona un flujo de trabajo completo para conservar, recopilar, analizar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de la organización. También permite a los equipos legales administrar todo el flujo de trabajo de notificación de retención legal para comunicarse con los custodios implicados en un caso.
+La Advanced eDiscovery en Microsoft 365 se basa en las capacidades de análisis y exhibición de documentos electrónicos de Microsoft existentes. Advanced eDiscovery proporciona un flujo de trabajo completo para conservar, recopilar, analizar, revisar, analizar y exportar contenido que responda a las investigaciones internas y externas de su organización. También permite al equipo legal gestionar todo el flujo de trabajo de notificación de retención legal para comunicarse con los administradores de un caso.
 
-## <a name="advanced-ediscovery-capabilities"></a>Funcionalidades avanzadas de exhibición de documentos electrónicos
+## <a name="advanced-ediscovery-capabilities"></a>Advanced eDiscovery capacidades
 
-La exhibición de documentos electrónicos avanzada puede ayudar a su organización a responder a asuntos legales o investigaciones internas mediante la detección de datos donde reside. Puede administrar sin problemas flujos de trabajo de exhibición de documentos electrónicos mediante la identificación de personas de interés y sus orígenes de datos, aplicar retención sin problemas para conservar los datos y, a continuación, administrar el proceso de comunicación de retención legal. Al recopilar datos del origen, puede buscar en la plataforma de Microsoft 365 en directo para encontrar rápidamente lo que necesita. Las capacidades inteligentes de aprendizaje automático, como la indización profunda, el subproceso de correo electrónico y la detección de duplicados cercanos también le ayudan a reducir grandes volúmenes de datos a un conjunto de datos relevante.
+Advanced eDiscovery puede ayudar a su organización a responder a asuntos legales o investigaciones internas mediante el descubrimiento de datos donde vive. Puede administrar sin problemas flujos de trabajo de exhibición de documentos electrónicos mediante la identificación de personas de interés y sus orígenes de datos, aplicar retención sin problemas para conservar los datos y, a continuación, administrar el proceso de comunicación de retención legal. Al recopilar datos del origen, puede buscar en la plataforma de búsqueda Microsoft 365 para encontrar rápidamente lo que necesita. Las capacidades inteligentes de aprendizaje automático, como la indización profunda, el subproceso de correo electrónico y la detección de duplicados cercanos también le ayudan a reducir grandes volúmenes de datos a un conjunto de datos relevante.
 
-En las secciones siguientes se describe cómo estas funcionalidades avanzadas de exhibición de documentos electrónicos pueden ayudar a su organización.
+En las secciones siguientes se describe cómo estas Advanced eDiscovery pueden ayudar a su organización.
 
-![Funcionalidades avanzadas de exhibición de documentos electrónicos](../media/advanced-ediscovery-capabilities.png)
+![Advanced eDiscovery capacidades](../media/advanced-ediscovery-capabilities.png)
 
 ### <a name="discover-and-collect-data-in-place"></a>Detectar y recopilar datos en el lugar
 
-Tradicionalmente, las organizaciones que dependen de varias soluciones de exhibición de documentos electrónicos de terceros requieren copiar grandes volúmenes de datos de Microsoft 365 para procesar y tener que hospedar datos duplicados. Esta necesidad aumenta el tiempo para encontrar datos relevantes y el riesgo, costo y complejidad de administrar varias soluciones.
+Tradicionalmente, las organizaciones que dependen de varias soluciones de exhibición de documentos electrónicos de terceros requieren copiar grandes volúmenes de datos fuera de Microsoft 365 para procesar y tener que hospedar datos duplicados. Esta necesidad aumenta el tiempo para encontrar datos relevantes y el riesgo, costo y complejidad de administrar varias soluciones.
 
-La exhibición de documentos electrónicos avanzada en Microsoft 365 le permite detectar datos en el origen y mantenerse dentro del límite de seguridad y cumplimiento de Microsoft 365.  Al recopilar datos en su lugar desde el sistema dinámico, la exhibición de documentos electrónicos avanzada reduce la fricción de volver al origen y reduce el trabajo innecesario de tener que buscar contenido que falta, lo que a menudo sucede cuando el registro en diario se abate en soluciones tradicionales de exhibición de documentos electrónicos.
+Advanced eDiscovery en Microsoft 365 permite detectar datos en el origen y mantenerse dentro de los límites Microsoft 365 seguridad y cumplimiento.  Al recopilar datos en su lugar desde el sistema dinámico, Advanced eDiscovery reduce la fricción de volver al origen y reduce el trabajo innecesario de tener que buscar contenido que falta, lo que suele ocurrir cuando el registro en diario se abate en soluciones de exhibición de documentos electrónicos tradicionales.
 
-Las capacidades nativas de búsqueda y recopilación de datos en Teams, Yammer, SharePoint Online, OneDrive para la Empresa y Exchange Online mejoran aún más la detección de datos. Por ejemplo, Exhibición de documentos electrónicos avanzada:
+Las capacidades nativas de búsqueda y recopilación de datos en Teams, Yammer, SharePoint Online, OneDrive para la Empresa y Exchange Online mejora aún más la detección de datos. Por ejemplo, Advanced eDiscovery:
 
-- Reconstruye conversaciones de Teams (en lugar de devolver mensajes individuales de conversaciones).
+- Reconstruye Teams conversaciones (en lugar de devolver mensajes individuales de conversaciones).
 
-- Recopila contenido basado en la nube compartido con los usuarios mediante vínculos o datos adjuntos modernos en mensajes de correo electrónico y chats de Teams.
+- Recopila contenido basado en la nube compartido con los usuarios mediante el uso de vínculos o datos adjuntos modernos en mensajes de correo electrónico y Teams chats.
 
-- Tiene compatibilidad integrada con cientos de tipos de archivos que no son de Microsoft 365.
+- Tiene compatibilidad integrada con cientos de tipos de Microsoft 365 no integrados.
 
-- Recopila datos de orígenes de terceros (como Bloomberg, Facebook, Slack y Reuniones de zoom) que los [](archiving-third-party-data.md)conectores de datos importan y archivan en Microsoft 365.
+- Recopila datos de orígenes de terceros (como Bloomberg, Facebook, Slack y Reuniones de zoom) que los conectores de datos importan y archivan en Microsoft 365 de [datos.](archiving-third-party-data.md)
 
 ### <a name="manage-ediscovery-workflow-in-one-platform"></a>Administrar el flujo de trabajo de exhibición de documentos electrónicos en una plataforma
 
-La exhibición de documentos electrónicos avanzada puede ayudarle a reducir el número de soluciones de exhibición de documentos electrónicos en las que necesita confiar. Proporciona un flujo de trabajo sencillo y completo, todo lo que ocurre en Microsoft 365. La exhibición de documentos electrónicos avanzada ayuda a reducir la fricción de identificar y recopilar posibles orígenes de información relevante asignando automáticamente orígenes de datos únicos y compartidos a la persona de interés (conocida como custodio) y proporcionando informes y análisis sobre datos potencialmente relevantes antes de recopilarlo para su análisis y *revisión.*
+Advanced eDiscovery puede ayudarle a reducir el número de soluciones de exhibición de documentos electrónicos en las que necesita confiar. Proporciona un flujo de trabajo sencillo y completo, todo lo que se produce en Microsoft 365. Advanced eDiscovery ayuda a reducir la fricción de identificar y recopilar posibles orígenes de información relevante asignando automáticamente orígenes de datos únicos y compartidos a la persona de interés (conocido como custodio) y proporcionando informes y análisis sobre datos potencialmente relevantes antes de recopilarlo para su análisis y *revisión.*
 
-Además, las API de Microsoft Graph pueden ayudarle a automatizar el flujo de trabajo de exhibición de documentos electrónicos y ampliar la exhibición de documentos electrónicos avanzada para soluciones personalizadas.
+Además, las API Graph Microsoft pueden ayudarle a automatizar el flujo de trabajo de exhibición de documentos electrónicos y ampliar Advanced eDiscovery soluciones personalizadas.
 
 ### <a name="cull-data-intelligently"></a>Datos Cull de forma inteligente
 
-Las capacidades de aprendizaje automático inteligentes en eDiscovery avanzada le ayudan a reducir la cantidad de datos que se revisarán. Estas funcionalidades inteligentes le ayudan a reducir y reducir grandes volúmenes de datos a un conjunto relevante. Por ejemplo, una consulta de conjunto de revisión integrada ayuda a filtrar solo por contenido único mediante la identificación de duplicados cercanos. Esta funcionalidad puede reducir considerablemente la cantidad de datos que se revisarán.
+Las capacidades de aprendizaje automático inteligentes Advanced eDiscovery le ayudarán a reducir la cantidad de datos que se revisarán. Estas funcionalidades inteligentes le ayudan a reducir y reducir grandes volúmenes de datos a un conjunto relevante. Por ejemplo, una consulta de conjunto de revisión integrada ayuda a filtrar solo por contenido único mediante la identificación de duplicados cercanos. Esta funcionalidad puede reducir considerablemente la cantidad de datos que se revisarán.
 
 Las capacidades adicionales de aprendizaje automático pueden refinar e identificar los datos relevantes mediante etiquetas inteligentes y herramientas de revisión asistida por tecnología, como los módulos relevancia.
 
-## <a name="advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model"></a>Alineación avanzada de eDiscovery con el modelo de referencia de detección electrónica
+## <a name="advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model"></a>Advanced eDiscovery alineación con el modelo de referencia de detección electrónica
 
-El flujo de trabajo integrado de eDiscovery avanzado en Microsoft 365 se alinea con el proceso de exhibición de documentos electrónicos descrito por el Modelo de referencia de detección electrónica (EDRM).
+El flujo de trabajo integrado de Advanced eDiscovery en Microsoft 365 se alinea con el proceso de exhibición de documentos electrónicos descrito por el Modelo de referencia de detección electrónica (EDRM).
 
 ![Modelo de referencia de detección electrónica (EDRM)](../media/EDRMv1.png)
 
 (Origen de la imagen cortesía de edrm.net. La imagen de origen estaba disponible en Creative Commons Attribution 3.0 Unported License).)
 
-En un nivel alto, este es el modo en que eDiscovery avanzado admite el flujo de trabajo de EDRM:
+A grandes rasgos, así es como eDiscovery avanzado apoya el flujo de trabajo de EDRM:
 
-- **Identificación.** Después de identificar posibles personas de interés en una investigación, puede agregarlas como custodios (también *denominadas custodios* de datos, porque pueden tener información relevante para la investigación) a un caso de exhibición de documentos electrónicos avanzado. Después de agregar a los usuarios como custodios, es fácil conservar, recopilar y revisar documentos de custodia.
+- **Identificación.** Una vez identificadas las posibles personas de interés en una investigación, puede añadirlas como custodios (también llamados *custodios de datos*, porque pueden poseer información relevante para la investigación) a un caso de eDiscovery avanzado. Una vez añadidos los usuarios como custodios, es fácil conservar, recopilar y revisar los documentos de los custodios.
 
-- **Conservación.** Para conservar y proteger los datos que son relevantes para una investigación, eDiscovery avanzado le permite colocar una retención legal en los orígenes de datos asociados con los custodios en un caso. También puede poner en espera datos que no son custodia. La exhibición de documentos electrónicos avanzada también tiene un flujo de trabajo de comunicaciones integrado para que pueda enviar notificaciones de retención legal a los custodios y realizar un seguimiento de sus confirmaciones.
+- **Conservación.** Para preservar y proteger los datos que son relevantes para una investigación, eDiscovery avanzado le permite colocar una retención legal en las fuentes de datos asociadas con los custodios de un caso. También puede poner en espera los datos no custodiados. eDiscovery avanzado también cuenta con un flujo de trabajo de comunicaciones integrado para que pueda enviar notificaciones de retención legal a los custodios y realizar un seguimiento de sus acuses de recibo.
 
-- **Colección.** Después de identificar (y conservar) los orígenes de datos relevantes para la investigación, puede usar la herramienta de búsqueda integrada en Búsqueda avanzada de exhibición de documentos electrónicos para buscar y recopilar datos en directo de los orígenes de datos con custodia (y orígenes de datos no custodiados, si procede) que puedan ser relevantes para el caso.
+- **Colección.** Una vez identificadas (y conservadas) las fuentes de datos relevantes para la investigación, puede utilizar la herramienta de búsqueda integrada en eDiscovery avanzado para buscar y recopilar datos vivos de las fuentes de datos custodiados (y de las fuentes de datos no custodiados, si procede) que puedan ser relevantes para el caso.
 
-- **Procesamiento.** Después de recopilar todos los datos relevantes para el caso, el siguiente paso es procesarlo para su posterior revisión y análisis. En exhibición de documentos electrónicos avanzada, los datos en sitio que identificó en la fase de colección se copian en una ubicación de Azure Storage (denominada conjunto de revisión), lo que le proporciona una vista estática de los datos de caso. 
+- **Procesamiento.** Una vez recopilados todos los datos relevantes para el caso, el siguiente paso es procesarlos para su posterior revisión y análisis. En eDiscovery avanzado, los datos in situ que identificó en la fase de recopilación se copian en una ubicación de Azure Storage (denominada *conjunto de revisión*), que le proporciona una vista estática de los datos del caso. 
 
 - **Revisar.** Después de agregar datos a un conjunto de revisión, puede ver documentos específicos y ejecutar consultas adicionales para reducir los datos a lo que es más relevante para el caso. Además, puede anotar y etiquetar documentos específicos.
 
-- **Análisis.** La exhibición de documentos electrónicos avanzada proporciona una herramienta de análisis integrada que le ayuda a obtener más datos del conjunto de revisión que determine que no es relevante para la investigación. Además de reducir el volumen de datos relevantes, la exhibición de documentos electrónicos anticipada también le ayuda a ahorrar costos de revisión legal, ya que le permite organizar el contenido para que el proceso de revisión sea más fácil y eficaz.
+- **Análisis.** eDiscovery avanzado proporciona una herramienta de análisis integrada que le ayuda a eliminar los datos del conjunto de revisiones que determine que no son relevantes para la investigación. Además de reducir el volumen de datos relevantes, eDiscovery avanzado también le ayuda a ahorrar costes de revisión legal al permitirle organizar el contenido para que el proceso de revisión sea más fácil y eficiente.
 
-- **Producción** y **presentación.** Cuando esté listo, puede exportar documentos de un conjunto de revisión para su revisión legal. Puede exportar documentos en su formato nativo o en un formato especificado por EDRM para que se puedan importar a aplicaciones de revisión de terceros.
+- **Producción** y **presentación.** Cuando esté listo, puede exportar los documentos de un conjunto de revisión para su revisión legal. Puede exportar los documentos en su formato nativo o en un formato especificado por EDRM para poder importarlos en aplicaciones de revisión de terceros.
 
 ## <a name="subscriptions-and-licensing"></a>Suscripciones y licencias
 
-Las licencias para exhibición de documentos electrónicos avanzados requieren la suscripción de la organización adecuada y las licencias por usuario.
+Las licencias Advanced eDiscovery requieren la suscripción de la organización adecuada y las licencias por usuario.
 
-- **Suscripción a la organización:** Para tener acceso a la exhibición de documentos electrónicos avanzada en el centro de cumplimiento de Microsoft 365, la organización debe tener uno de los siguientes elementos:
+- **Suscripción a la organización:** Para obtener Advanced eDiscovery en el centro Microsoft 365 cumplimiento, la organización debe tener uno de los siguientes elementos:
 
   - Suscripciones a Microsoft 365 E5 u Office 365 E5.
   
   - Suscripción a Microsoft 365 E3 con complemento de cumplimiento E5
 
-  - Suscripción a Microsoft 365 E3 con el complemento E5 eDiscovery and Audit
+  - Microsoft 365 E3 suscripción con el complemento E5 eDiscovery and Audit
 
-  Si no tiene un plan de Microsoft 365 E5 existente y desea probar eDiscovery avanzado, puede agregar [Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) [a](https://www.microsoft.com/microsoft-365/enterprise) su suscripción existente o registrarse para una prueba de Microsoft 365 E5.
+  - Microsoft 365 Educación Suscripción A5 o Office 365 Educación A5
+
+   Si no tiene un plan de Microsoft 365 E5 existente y desea probar Advanced eDiscovery, puede agregar [Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) [a](https://www.microsoft.com/microsoft-365/enterprise) su suscripción existente o registrarse para una prueba de Microsoft 365 E5.
 
 - **Licencias por usuario:** Para agregar un usuario como custodio en un caso de exhibición de documentos electrónicos avanzados, ese usuario debe tener asignada una de las siguientes licencias, según la suscripción de la organización:
 
-  - Microsoft 365: a los usuarios se les debe asignar una licencia de Microsoft 365 E5, una licencia de complemento de cumplimiento de E5 o una licencia de complemento E5 eDiscovery and Audit.
+  - Microsoft 365: a los usuarios se les debe asignar una licencia de Microsoft 365 E5, una licencia de complemento de cumplimiento de E5 o una licencia de complemento E5 eDiscovery and Audit. Microsoft 365 Educación los usuarios deben tener asignada una licencia A5.
 
-  - Office 365: Los usuarios deben tener asignada una licencia de Office 365 E5.
+  - Office 365: se debe asignar a los usuarios Office 365 una licencia de E5 Office 365 Educación A5.
 
    Para obtener información sobre cómo asignar licencias, vea [Asignar licencias a usuarios.](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
 
 > [!NOTE]
-> Los usuarios solo necesitan una licencia E5 (o la licencia de complemento adecuada) para agregarse como custodios a un caso de exhibición de documentos electrónicos avanzada. Los administradores de TI, administradores de exhibición de documentos electrónicos, abogados, asistentes legales o investigadores que usan eDiscovery avanzado para administrar casos y revisar datos de casos no necesitan una licencia de E5 o complemento.
+> Los usuarios solo necesitan una licencia E5 o A5 (o la licencia de complemento adecuada) para agregarse como custodios a un Advanced eDiscovery caso. Los administradores de TI, administradores de exhibición de documentos electrónicos, abogados, asistentes legales o investigadores que usan Advanced eDiscovery para administrar casos y revisar datos de casos no necesitan una licencia de E5, A5 o complemento.
 
 ## <a name="get-started-with-advanced-ediscovery"></a>Introducción a eDiscovery avanzado
 
-Hay dos pasos rápidos y fáciles para empezar con eDiscovery avanzado.
+Hay dos pasos rápidos y fáciles para empezar con Advanced eDiscovery.
 
-![Introducción al flujo de trabajo con eDiscovery avanzada](../media/get-started-AeD.png)
+![Introducción al flujo de trabajo Advanced eDiscovery](../media/get-started-AeD.png)
 
-|Pasos  |Description  |
+|Pasos  |Descripción  |
 |:---------|:---------|
-|[Configurar eDiscovery avanzado](get-started-with-advanced-ediscovery.md)| Después de comprobar los requisitos de suscripción y licencias, puede asignar permisos y configurar la configuración de toda la organización para empezar a usar eDiscovery avanzado.|
-|[Crear y administrar casos](create-and-manage-advanced-ediscoveryv2-case.md) | Cree casos para administrar el flujo de trabajo de exhibición de documentos electrónicos avanzada para todos los tipos de investigaciones legales y de otro tipo de la organización.|
+|[Configurar eDiscovery avanzado](get-started-with-advanced-ediscovery.md)| Después de comprobar los requisitos de suscripción y licencias, puede asignar permisos y configurar la configuración de toda la organización para empezar a usar Advanced eDiscovery.|
+|[Crear y administrar casos](create-and-manage-advanced-ediscoveryv2-case.md) | Cree casos para administrar el flujo Advanced eDiscovery de trabajo para todos los tipos de investigaciones legales y de otro tipo de la organización.|
 |||
 
-## <a name="advanced-ediscovery-architecture"></a>Arquitectura avanzada de exhibición de documentos electrónicos
+## <a name="advanced-ediscovery-architecture"></a>Advanced eDiscovery arquitectura
 
-Este es un diagrama de arquitectura de exhibición de documentos electrónicos avanzada que muestra el flujo de trabajo de un extremo a otro en un entorno de una sola geo y en un entorno multigeografía, y el flujo de datos de extremo a extremo alineado con [EDRM.](#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)
+Este es un diagrama de arquitectura Advanced eDiscovery que muestra el flujo de trabajo de un extremo a otro en un entorno de una sola ubicación geográfica y en un entorno multigeografía, y el flujo de datos de un extremo a otro alineado con [EDRM.](#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)
 
-[![Póster del modelo: Arquitectura avanzada de exhibición de documentos electrónicos en Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+[![Póster del modelo: Advanced eDiscovery arquitectura en Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [Ver como una imagen](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [Descargar como archivo PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
 
-[Descargar como archivo de Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
+[Descargar como archivo Visio archivo](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)

@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: La extensión de cumplimiento de Microsoft extiende la supervisión y el control de las actividades de archivo y acciones protectoras al explorador Google Chrome
-ms.openlocfilehash: 38609b6920478085a28c7ec510bc5c9c4229543d
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: c8a5795b3be8b393fd3a934504449bf6db0c2f01
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826281"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113386"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension-preview"></a>Obtenga información sobre la extensión de cumplimiento de Microsoft (vista previa).
 
-[La prevención de pérdida de datos en punto de conexión (Endpoint DLP)](endpoint-dlp-learn-about.md) amplía la supervisión de la actividad y las capacidades de protección de la [Prevención de pérdida de datos (DLP) de Microsoft 365](data-loss-prevention-policies.md) a elementos confidenciales que estén en dispositivos con Windows 10. Una vez que los dispositivos están incorporados en las soluciones del Centro de cumplimiento de Microsoft 365, la información sobre las acciones de los usuarios relacionadas con los elementos confidenciales se hace visible en el[explorador de actividades](data-classification-activity-explorer.md), y se pueden aplicar acciones de protección a estos elementos mediante [directivas DLP](create-test-tune-dlp-policy.md).
+[La prevención de pérdida de datos en punto de conexión (Endpoint DLP)](endpoint-dlp-learn-about.md) amplía la supervisión de la actividad y las capacidades de protección de la [Prevención de pérdida de datos (DLP) de Microsoft 365](dlp-learn-about-dlp.md) a elementos confidenciales que estén en dispositivos con Windows 10. Una vez que los dispositivos están incorporados en las soluciones del Centro de cumplimiento de Microsoft 365, la información sobre las acciones de los usuarios relacionadas con los elementos confidenciales se hace visible en el[explorador de actividades](data-classification-activity-explorer.md), y se pueden aplicar acciones de protección a estos elementos mediante [directivas DLP](create-test-tune-dlp-policy.md).
 
 Una vez instalada la extensión de cumplimiento de Microsoft en un dispositivo con Windows 10, las organizaciones podrán detectar si un usuario intenta acceder o cargar un elemento confidencial a un servicio en la nube mediante Google Chrome, y podrán aplicar acciones de protección mediante la DLP.  
 
@@ -60,7 +60,7 @@ Consulte [Introducción a la extensión de cumplimiento de Microsoft](dlp-chrome
 - [Obtenga más información sobre la prevención de pérdida de datos de Microsoft 365 de punto de conexión](endpoint-dlp-learn-about.md)
 - [Introducción a la prevención de pérdida de datos en punto de conexión de Microsoft](endpoint-dlp-getting-started.md)
 - [Uso de la prevención de pérdida de datos en punto de conexión de Microsoft](endpoint-dlp-using.md)
-- [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
+- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
 - [Microsoft Defender para punto de conexión](https://docs.microsoft.com/windows/security/threat-protection/)

@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: El explorador local de prevención de pérdida de datos de Microsoft 365 amplía la supervisión de actividades de archivo y acciones de protección de esos archivos a recursos compartidos de archivos locales y carpetas y bibliotecas de documentos de SharePoint. El examinador de Azure Information Protection (AIP) examina y protege los archivos.
-ms.openlocfilehash: fa1c14520c8ad0afa4856fdd8a1c59a0f71f400d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f0a34a13630e42c5dd29734ad708b3c11bb1d587
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917816"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114168"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Obtenga más información sobre el examinador de prevención de pérdida de datos locales de Microsoft 365 (versión preliminar)
 
-La prevención de pérdida de datos del examinador local es parte de la serie de características de prevención de pérdida de datos (DLP) de Microsoft 365 que se pueden usar para detectar y proteger elementos confidenciales en los servicios de Microsoft 365. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md).
+La prevención de pérdida de datos del examinador local es parte de la serie de características de prevención de pérdida de datos (DLP) de Microsoft 365 que se pueden usar para detectar y proteger elementos confidenciales en los servicios de Microsoft 365. Para obtener más información sobre las ofertas de DLP de Microsoft, consulte [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md).
 
 El **examinador de DLP local** rastrea datos en reposo a nivel local en recursos compartidos de archivos y en bibliotecas y carpetas de documentos de SharePoint para elementos confidenciales que, de filtrarse, constituirían un riesgo para su organización o podrían infringir la directiva de cumplimiento. Esto le proporciona la visibilidad y el control que necesita para asegurarse de que los elementos confidenciales se usan y protegen correctamente, así como para ayudar a evitar algún comportamiento peligroso que podría comprometerlos. El examinador DLP local detecta información confidencial con tipos [integrados](sensitive-information-type-entity-definitions.md) o de [información confidencial personalizada](create-a-custom-sensitive-information-type.md), [etiquetas de confidencialidad](sensitivity-labels.md) o propiedades de archivo. La información sobre qué hacen los usuarios con elementos confidenciales se hace visible en el [explorador de actividades](data-classification-activity-explorer.md). Usted puede aplicar acciones de protección a estos elementos con [directivas DLP](create-test-tune-dlp-policy.md).
 
@@ -89,6 +89,6 @@ Ahora que se ha informado sobre el examinador local de DLP, estos los siguientes
 
 - [Introducción al examinador de prevención de pérdida de datos locales de Microsoft](dlp-on-premises-scanner-get-started.md)
 - [Usar el examinador de prevención de pérdida de datos locales de Microsoft](dlp-on-premises-scanner-use.md)
-- [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
+- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)

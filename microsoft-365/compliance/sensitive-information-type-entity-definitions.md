@@ -17,29 +17,18 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
-description: La prevención de pérdida de datos (DLP) en el Centro de cumplimiento de seguridad incluye 80 tipos de información confidencial que están listos para su uso &amp; en las directivas dlp. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo.
-ms.openlocfilehash: 341ded0c4c7f6ff31074d17624c029e7f6187480
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: La prevención de pérdida de datos (DLP) en el Centro de cumplimiento de seguridad incluye más de 200 tipos de información confidencial que están listos para su uso &amp; en las directivas dlp. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo.
+ms.openlocfilehash: 0f3de14466cf9d2ebf5550eaec002bd4dea6e435
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919716"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086733"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definiciones de entidad de tipos de información confidencial
 
-La prevención de pérdida de datos (DLP) en el Centro de cumplimiento incluye muchos tipos de información confidencial que están listos para usarse en las directivas dlp. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo. Un tipo de información confidencial se define por medio de un patrón que puede identificarse mediante una expresión regular o una función. Se pueden usar pruebas corroborativas, como palabras clave y sumas de comprobación, para identificar un tipo de información confidencial. El nivel de confianza y la proximidad también se usan en el proceso de evaluación.
-
-Los tipos de información confidencial requieren una de estas suscripciones:
-- Microsoft 365 E3
-- Microsoft 365 E5
-
-Los tipos de información confidencial se usan en:
-
-- [Directivas de prevención de pérdida de datos](data-loss-prevention-policies.md) 
-- [Etiquetas de confidencialidad](sensitivity-labels.md)
-- [Etiquetas de retención](retention.md)
-- [Cumplimiento de las comunicaciones](communication-compliance.md)
-- [Directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+La prevención de pérdida de datos (DLP) en el Centro de cumplimiento incluye muchos tipos de información confidencial que están listos para usarse en las directivas dlp. En este artículo se enumeran todos estos tipos de información confidencial y se muestra lo que busca una directiva DLP cuando detecta cada tipo. Para obtener más información acerca de los tipos de información confidencial, vea [Tipos de información confidencial](sensitive-information-type-learn-about.md)
 
 ## <a name="aba-routing-number"></a>Número de enrutamiento de ABA
 
@@ -47,7 +36,7 @@ Los tipos de información confidencial se usan en:
 
 nueve dígitos que pueden estar en un patrón con formato o sin formato
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Con formato:
 - cuatro dígitos a partir de 0, 1, 2, 3, 6, 7 u 8
@@ -112,7 +101,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 Ocho dígitos con o sin puntos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Ocho dígitos:
 - dos dígitos
@@ -155,13 +144,96 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 - registro nacional de las personas 
 - rnp 
    
+## <a name="argentina-unique-tax-identification-key-cuitcuil"></a>Clave de identificación fiscal única de Argentina (CUIT/CUIL)
+
+### <a name="format"></a>Formato
+
+Once dígitos con guión
+
+### <a name="pattern"></a>Patrón
+
+Once dígitos con un guión:
+- dos dígitos en 20, 23, 24, 27, 30, 33 o 34
+- un guión (-)
+- ocho dígitos
+- un guión (-)
+- un dígito de comprobación
+
+### <a name="checksum"></a>Suma de comprobación
+
+Sí
+
+### <a name="definition"></a>Definición
+
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_Argentina_Unique_Tax_Key` busca contenido que coincida con el patrón.
+- Se encuentra una palabra `Keyword_Argentina_Unique_Tax_Key` clave de.
+
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función `Func_Argentina_Unique_Tax_Key` busca contenido que coincida con el patrón.
+
+```xml
+    <!-- Argentina Unique Tax Identification Key (CUIT/CUIL) -->
+      <Entity id="98da3da1-9199-4571-b7c4-b6522980b507" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_Argentina_Unique_Tax_Key" />
+          <Match idRef="Keyword_Argentina_Unique_Tax_Key" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_Argentina_Unique_Tax_Key" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keyword_argentina_unique_tax_key"></a>Keyword_Argentina_Unique_Tax_Key
+
+- Clave Unica de Identificacion Tributaria
+- CUIT
+- código único de identificación laboral 
+- Clave Única de Identificación Tributaria
+- código de identificación de mano de obra único
+- CUIL
+- Clave de identificación fiscal única
+- Clave de identificación de mano de obra única
+- Clave única de identificación del trabajo
+- Código de identificación de trabajo único
+- Identificación de código de trabajo único
+- Clave de identificación de trabajo única
+- Clave única de identificación del trabajo
+- Código único de identificación fiscal
+- Clave única de identificación fiscal
+- Código de identificación de mano de obra único
+- Código único de identificación laboral
+- Clave de identificación de mano de obra única
+- Clave única de identificación del trabajo
+- id. de impuestos
+- taxID #
+- taxId
+- taxidnumber
+- número de impuestos
+- tax no
+- impuestos #
+- impuestos #
+- id. de contribuyente
+- número de contribuyente
+- contribuyente no
+- contribuyente #
+- contribuyente #
+- identidad fiscal
+- tax identification
+- Número de Identificación Fiscal
+- número de contribuyente
+   
+   
 ## <a name="australia-bank-account-number"></a>Número de cuenta bancaria de Australia
 
 ### <a name="format"></a>Formato
 
 de seis a diez dígitos con o sin un número de sucursal de estado de banco
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 El número de cuenta es de 6 a 10 dígitos.
 
@@ -232,7 +304,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 11 dígitos con delimitadores opcionales
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 11 dígitos con delimitadores opcionales:
 
@@ -293,7 +365,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 nueve dígitos con delimitadores
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos con delimitadores:
 
@@ -347,7 +419,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 nueve letras y dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve letras y dígitos: 
 
@@ -498,7 +570,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 Entre 10 y 11 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Entre 10 y 11 dígitos:
 - el primer dígito está en el intervalo de 2 a 6
@@ -549,7 +621,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 Una letra seguida de siete dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Una letra (no distingue mayúsculas de minúsculas) seguida de siete dígitos
 
@@ -620,7 +692,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 de ocho a nueve dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 de ocho a nueve dígitos normalmente se presentan con espacios de la siguiente manera:
 - tres dígitos 
@@ -670,7 +742,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 ocho dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 ocho dígitos
   
@@ -842,7 +914,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Una combinación de 24 caracteres de letras, dígitos y caracteres especiales
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 24 caracteres:
   
@@ -885,7 +957,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 Una letra seguida de un espacio opcional y siete dígitos
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Una combinación de una letra, siete dígitos y un espacio:
   
@@ -968,7 +1040,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 10 dígitos en el formato especificado
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 10 dígitos:
   
@@ -1040,7 +1112,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 nueve dígitos con guión opcional y barra diagonal
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos con guión opcional y barra diagonal:
   
@@ -1113,7 +1185,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón alfanumérico de 11 caracteres
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Patrón alfanumérico de 11 caracteres:
 
@@ -1180,7 +1252,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 La cadena "DocumentDb" seguida de los caracteres y cadenas descritos en el patrón siguiente.
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - La cadena "DocumentDb"
 - Cualquier combinación de entre 3-200 letras en minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
@@ -1232,7 +1304,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 La cadena "Server", "server" o "data source" seguida de los caracteres y cadenas descritos en el patrón siguiente, incluida la cadena "cloudapp.azure.<!--no-hyperlink-->com" o "cloudapp.azure.<!--no-hyperlink-->net" o "database.windows.<!--no-hyperlink-->net", y la cadena "Password" o "password" o "pwd".
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - la cadena "Server", "server" o "data source"
 - de cero a dos caracteres de espacio en blanco
@@ -1286,13 +1358,13 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="azure-iot-connection-string"></a>Cadena de conexión de Azure IoT
+## <a name="azure-iot-connection-string"></a>Azure IoT de conexión
 
 ### <a name="format"></a>Formato
 
 La cadena "HostName" seguida de los caracteres y cadenas descritos en el patrón siguiente, incluidas las cadenas "azure-devices.<!--no-hyperlink-->net" y "SharedAccessKey".
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - la cadena "HostName"
 - de cero a dos caracteres de espacio en blanco
@@ -1352,7 +1424,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 La cadena "userpwd=" seguida de una cadena alfanumérica.
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - la cadena "userpwd="
 - cualquier combinación de 60 letras minúsculas o dígitos
@@ -1403,7 +1475,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 La cadena "redis.cache.windows.<!--no-hyperlink-->net" seguido de los caracteres y cadenas descritos en el patrón siguiente, incluida la cadena "password" o "pwd".
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - la cadena "redis.cache.windows.<!--no-hyperlink-->net"
 - cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
@@ -1458,7 +1530,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 La cadena "sig" seguida de los caracteres y cadenas descritos en el patrón siguiente.
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - la cadena "sig"
 - de cero a dos caracteres de espacio en blanco
@@ -1492,7 +1564,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 La cadena "EndPoint" seguida de los caracteres y cadenas descritos en el patrón siguiente, incluidas las cadenas "servicebus.windows.<!--no-hyperlink-->net" y "SharedAccesKey".
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - la cadena "EndPoint"
 - de cero a dos caracteres de espacio en blanco
@@ -1552,7 +1624,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 La cadena "DefaultEndpointsProtocol" seguida de los caracteres y cadenas descritos en el patrón siguiente, incluida la cadena "AccountKey".
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - la cadena "DefaultEndpointsProtocol"
 - de cero a dos caracteres de espacio en blanco
@@ -1612,13 +1684,13 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="azure-storage-account-key-generic"></a>Clave de cuenta de Azure Storage (genérica)
+## <a name="azure-storage-account-key-generic"></a>Azure Storage clave de cuenta (genérica)
 
 ### <a name="format"></a>Formato
 
 Cualquier combinación de 86 letras minúsculas o mayúsculas, dígitos, la barra diagonal (/) o signo más (+), precedida o seguida de los caracteres descritos en el patrón siguiente.
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - cero a uno del símbolo mayor que (>), apóstrofe ('), signo igual (=), comilla (") o signo de número (#)
 - cualquier combinación de 86 caracteres con letras inferiores o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
@@ -1647,7 +1719,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 10 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 10 dígitos
   
@@ -1819,7 +1891,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 11 dígitos más delimitadores opcionales
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 11 dígitos más delimitadores:
 - seis dígitos y dos períodos opcionales en el formato YY. MM.DD para la fecha de nacimiento 
@@ -1923,7 +1995,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 dos letras seguidas de seis dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 dos letras y seguido de seis dígitos
   
@@ -2013,7 +2085,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón alfanumérico de 12 caracteres
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Patrón alfanumérico de 12 caracteres:
 
@@ -2075,7 +2147,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 11 dígitos incluido un dígito de control y que pueden tener o no formato
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Con formato:
 - tres dígitos
@@ -2138,7 +2210,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 14 dígitos que incluyen un número de registro, número de sucursal y dígitos de comprobación, además de delimitadores
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 14 dígitos más delimitadores:
 
@@ -2193,7 +2265,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 - Entidades jurídicas 
 - Estado de registro 
 - Business 
-- Company
+- Empresa
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
 - Cadastro Geral de Contribuintes 
@@ -2213,7 +2285,7 @@ Registro Geral (formato antiguo): nueve dígitos
 
 Registro de Identidade (RIC) (nuevo formato): 11 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Registro de Geral (formato antiguo):
 - dos dígitos 
@@ -2271,7 +2343,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos
   
@@ -2442,7 +2514,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 10 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 10 dígitos sin espacios ni delimitadores
   
@@ -2535,7 +2607,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos 
   
@@ -2609,7 +2681,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 7 o 12 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Un número de cuenta bancaria de Canadá tiene 7 o 12 dígitos.
 
@@ -2683,7 +2755,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 Varía según la provincia
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Varios patrones que cubren Alberta, British Columbia, Manitoba, New Brunswick, Terranova y Labrador, Nueva Escocia, Ontario, Isla del Príncipe Eduardo, Quebec y Saskatchewan
 
@@ -2901,7 +2973,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
  10 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 10 dígitos
 
@@ -2948,7 +3020,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 dos letras mayúsculas seguidas de seis dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 dos letras mayúsculas seguidas de seis dígitos
 
@@ -3016,7 +3088,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 nueve dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos
 
@@ -3087,7 +3159,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 nueve dígitos con guiones o espacios opcionales
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Con formato:
 - tres dígitos 
@@ -3171,7 +3243,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 de siete a ocho dígitos más delimitadores de un dígito de comprobación o una letra
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 de siete a ocho dígitos más delimitadores:
 - de uno a dos dígitos 
@@ -3256,7 +3328,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 18 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 18 dígitos:
 - seis dígitos que son un código de dirección 
@@ -3314,7 +3386,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 De 14 a 16 dígitos que se pueden dar formato o sin formato (ddddddddddd) y que deben pasar la prueba de Luhn.
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Patrón complejo y robusto que detecta tarjetas de todas las principales marcas del mundo, incluidas Visa, MasterCard, Discover Card, JCB, American Express, tarjetas de regalo y tarjetas de comensal.
 
@@ -3392,9 +3464,12 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
-- cód. segurança
-- bacalao. seguranca
-- bacalao. segurança
+- 
+cód. segurança
+- cod. seguranca
+
+- cod. segurança
+
 - cód. seguranca
 - cód segurança
 - cod seguranca
@@ -3574,7 +3649,8 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 - no do cartão
 - no do cartao
 - No. do cartão
-- No. do cartao
+- no. do cartao
+
 - クレジットカード番号
 - クレジットカードナンバー
 - クレジットカード＃
@@ -3612,7 +3688,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 ocho dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 ocho dígitos
   
@@ -3777,7 +3853,7 @@ Esta entidad de tipo de información confidencial se incluye en el tipo de infor
 
 nueve dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos consecutivos
 
@@ -3841,7 +3917,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos 
   
@@ -3910,7 +3986,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 11 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 11 dígitos:
 - 10 dígitos 
@@ -3983,7 +4059,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 12 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 12 dígitos
   
@@ -4152,7 +4228,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 10 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 10 dígitos 
   
@@ -4194,7 +4270,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 una letra seguida de 6-8 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 una letra seguida de seis a ocho dígitos
   
@@ -4284,7 +4360,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ocho dígitos y una letra en el patrón especificado
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 ocho dígitos y una letra:
   
@@ -4355,7 +4431,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 dos letras seguidas de seis dígitos
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 ocho letras y dígitos:
   
@@ -4524,7 +4600,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ocho dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 ocho dígitos sin espacios ni delimitadores
   
@@ -4602,7 +4678,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 nueve dígitos con barra diagonal opcional (formato antiguo) 10 dígitos con barra diagonal opcional (nuevo formato)
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos (formato antiguo):
 - seis dígitos que representan la fecha de nacimiento
@@ -4702,7 +4778,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ocho dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 ocho dígitos
   
@@ -4864,7 +4940,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos 
   
@@ -4941,7 +5017,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 10 dígitos que contienen un guión
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 10 dígitos:
 - seis dígitos en el formato DDMMYY, que son la fecha de nacimiento 
@@ -5058,7 +5134,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 dos letras seguidas de siete dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 El patrón debe incluir todo lo siguiente:
 - una letra (no distingue mayúsculas de minúsculas) de este conjunto de letras posibles: abcdefghjklmnprstux, que es un código de registrador 
@@ -5116,7 +5192,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 dos letras seguidas de seis dígitos
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 dos letras y seis dígitos:
   
@@ -5289,7 +5365,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 11 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 11 dígitos:
   
@@ -5370,7 +5446,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 una letra seguida de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 una letra seguida de siete dígitos
   
@@ -5444,7 +5520,7 @@ eesti kodaniku passi number passinumbrid document number document document no do
 
 16 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Patrón complejo y sólido
 
@@ -5606,11 +5682,15 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 - no de tarjeta 
 - no do cartao 
 - no do cartão 
-- No. de tarjeta 
-- No. do cartao 
-- No. do cartão 
+- no. de tarjeta
+ 
+- no. do cartao
+ 
+- no. do cartão
+ 
 - nr carta 
-- nr. carta 
+- nr. carta
+ 
 - numeri di scheda 
 - numero carta 
 - numero de cartao 
@@ -5629,7 +5709,8 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 - nº de tarjeta 
 - nº do cartao 
 - nº do cartão 
-- nº. do cartão 
+- nº. do cartão
+ 
 - número de cartao 
 - número de cartão 
 - número de tarjeta 
@@ -5681,10 +5762,14 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 - cod seguranca 
 - cod segurança 
 - cod sicurezza 
-- bacalao. seg 
-- bacalao. seguranca 
-- bacalao. segurança 
-- bacalao. sicurezza 
+- cod. seg
+ 
+- cod. seguranca
+ 
+- cod. segurança
+ 
+- cod. sicurezza
+ 
 - codice di sicurezza 
 - codice di verifica 
 - codigo 
@@ -5701,8 +5786,10 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 - cvv2 
 - cód seguranca 
 - cód segurança 
-- cód. seguranca 
-- cód. segurança 
+- cód. seguranca
+ 
+- cód. segurança
+ 
 - código 
 - código de seguranca 
 - código de segurança 
@@ -5714,8 +5801,10 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 - kreditkartenprufnummer 
 - kreditkartenprüfnummer 
 - kwestieaantal 
-- No. dell'edizione 
-- No. di sicurezza 
+- no. dell'edizione
+ 
+- no. di sicurezza
+ 
 - numero de securite 
 - numero de verificacao 
 - numero dell'edizione 
@@ -5948,7 +6037,7 @@ Estas entidades se encuentran en el tipo de información confidencial número de
 
 10 dígitos que contienen un guión
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 10 dígitos que contienen un guión:
   
@@ -6129,7 +6218,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Número de 20 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Número de 20 dígitos:
 
@@ -6183,7 +6272,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 seis dígitos más un carácter que indica un siglo más tres dígitos más un dígito de comprobación
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 El patrón debe incluir todo lo siguiente:
 - seis dígitos en el formato DDMMYY, que son una fecha de nacimiento 
@@ -6277,7 +6366,7 @@ Esta entidad de tipo de información confidencial está disponible en el tipo de
 ### <a name="format"></a>Formato
 combinación de nueve letras y dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 combinación de nueve letras y dígitos:
 - dos letras (no distingue mayúsculas de minúsculas) 
 - siete dígitos
@@ -6358,7 +6447,7 @@ Esta entidad de tipo de información confidencial está disponible en el tipo de
 
 12 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 12 dígitos con validación para descontar patrones similares como los números de teléfono franceses
 
@@ -6524,7 +6613,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Número de 21 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Número de 21 dígitos:
 
@@ -6569,7 +6658,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 12 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 12 dígitos
 
@@ -6617,7 +6706,7 @@ Esta entidad de tipo de información confidencial está disponible en el tipo de
 
 nueve dígitos y letras
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos y letras:
 - dos dígitos 
@@ -6708,7 +6797,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 15 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Debe coincidir uno de los dos patrones:
 - 13 dígitos seguidos de un espacio seguido de dos dígitos<br/>
@@ -6759,14 +6848,16 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 - national id
 - national identification
 - no d'identité
-- No. d'identité
+- 
+no. d'identité
 - numéro d'assurance
 - numéro d'identité
 - numero d'identite
 - numéro de sécu
 - numéro de sécurité sociale
 - no d'identite
-- No. d'identite
+- 
+no. d'identite
 - ssn
 - ssn #
 - sécurité sociale
@@ -6784,7 +6875,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 13 dígitos
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 13 dígitos
   
@@ -6866,7 +6957,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón alfanumérico de 13 caracteres
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Patrón alfanumérico de 13 caracteres:
 
@@ -6929,7 +7020,7 @@ Esta entidad de tipo de información confidencial se incluye en el tipo de infor
 
 combinación de 11 dígitos y letras
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 11 dígitos y letras (no distingue mayúsculas de minúsculas):
 - un dígito o una letra 
@@ -7119,7 +7210,7 @@ desde el 1 de noviembre de 2010: Nueve letras y dígitos
 
 del 1 de abril de 1987 al 31 de octubre de 2010: 10 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 desde el 1 de noviembre de 2010:
 - una letra (no distingue mayúsculas de minúsculas) 
@@ -7175,7 +7266,7 @@ Esta entidad de tipo de información confidencial se incluye en el tipo de infor
 
 10 dígitos o letras
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 El patrón debe incluir todo lo siguiente:
 - el primer carácter es un dígito o una letra de este conjunto (C, F, G, H, J, K) 
@@ -7253,7 +7344,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 11 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 11 dígitos
   
@@ -7333,7 +7424,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón alfanumérico de 11 caracteres
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Patrón alfanumérico de 11 caracteres:
 
@@ -7392,7 +7483,7 @@ Esta entidad de tipo de información confidencial se incluye en el tipo de infor
 
 nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos 
   
@@ -7557,7 +7648,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 Combinación de 7 u 8 letras y números más un guión
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Siete letras y números (formato antiguo):
 - Una letra (cualquier letra del alfabeto griego)  
@@ -7615,7 +7706,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 Dos letras seguidas de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Dos letras seguidas de siete dígitos
   
@@ -7692,7 +7783,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Once dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - 6 dígitos como fecha de nacimiento YYMMDD
 - 4 dígitos
@@ -7750,7 +7841,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Nueve dígitos
   
@@ -7813,7 +7904,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 Combinación de 8 o 9 letras y números, más paréntesis opcionales alrededor del carácter final
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Combinación de 8 o 9 letras:
 - 1-2 letras (no distingue mayúsculas de minúsculas) 
@@ -7897,7 +7988,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 Dos letras seguidas de seis dígitos
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Dos letras y seis dígitos:
   
@@ -8070,7 +8161,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 11 dígitos
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 11 dígitos:
   
@@ -8130,7 +8221,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 Dos letras seguidas de seis o siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Dos letras seguidas de seis o siete dígitos
   
@@ -8205,7 +8296,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 Nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Nueve dígitos
   
@@ -8272,7 +8363,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 10 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 10 dígitos:
   
@@ -8353,7 +8444,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón alfanumérico de 10 caracteres
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Patrón alfanumérico de 10 caracteres:
 
@@ -8412,7 +8503,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 10 letras o dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 10 letras o dígitos:
 - Tres letras (no distingue mayúsculas de minúsculas) 
@@ -8463,7 +8554,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 12 dígitos que contienen espacios o guiones opcionales
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 12 dígitos:
 - Un dígito que no es 0 o 1
@@ -8517,7 +8608,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 16 dígitos que contienen puntos opcionales
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 16 dígitos:
 - Código de la provincia de dos dígitos  
@@ -8564,7 +8655,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 Código de país (dos letras) más dígitos de control (dos dígitos), más el número IBAN (hasta 30 caracteres)
 
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 El patrón debe incluir todo lo siguiente:
 
@@ -8607,7 +8698,7 @@ Ninguno
 
 Dictionary
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Palabra clave
 
@@ -8649,7 +8740,7 @@ Cualquier término del diccionario de palabras clave Dictionary_icd_10_codes, qu
 
 Dictionary
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Palabra clave
 
@@ -8694,7 +8785,7 @@ Patrón complejo que representa versiones con formato (puntos) y sin formato (si
 #### <a name="ipv6"></a>IPv6:
 Patrón complejo que representa números IPv6 con formato (que incluyen dos puntos)
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -8754,7 +8845,7 @@ Para IPv6, una directiva DLP tiene una gran confianza en que ha detectado este t
 
 Seis dígitos seguidos de cuatro letras
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Seis dígitos y cuatro letras:
   
@@ -8920,7 +9011,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 Dos letras o dígitos seguidos de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Dos letras o dígitos seguidos de siete dígitos:
   
@@ -9007,7 +9098,7 @@ Formato antiguo (hasta el 31 de diciembre de 2012):
 Nuevo formato (1 de enero de 2013 y posterior):
 - siete dígitos seguidos de dos letras
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Formato antiguo (hasta el 31 de diciembre de 2012):
 - siete dígitos 
@@ -9100,7 +9191,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 13 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Con formato:
 - dos dígitos 
@@ -9149,7 +9240,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 nueve dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos consecutivos
 
@@ -9206,7 +9297,7 @@ Esta entidad de tipo de información confidencial se incluye en el tipo de infor
 
 una combinación de 10 letras y dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 una combinación de 10 letras y dígitos:
 - una letra (no distingue mayúsculas de minúsculas) 
@@ -9381,7 +9472,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 una combinación de 16 caracteres de letras y dígitos en el patrón especificado
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Una combinación de 16 caracteres de letras y dígitos:
 - tres letras que corresponden a las tres primeras consonantes en el nombre de familia
@@ -9462,7 +9553,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 dos letras o dígitos seguidos de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 dos letras o dígitos seguidos de siete dígitos:
   
@@ -9551,7 +9642,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón alfanumérico de 13 caracteres con delimitadores opcionales
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Patrón alfanumérico de 13 caracteres con delimitadores opcionales:
 
@@ -9603,7 +9694,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 siete u ocho dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 número de cuenta bancaria:
 - siete u ocho dígitos
@@ -9706,7 +9797,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 12 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 12 dígitos consecutivos
 
@@ -9783,7 +9874,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Número de 13 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Número de 13 dígitos:
 
@@ -9844,7 +9935,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Número de 12 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Número de 12 dígitos:
 
@@ -9902,7 +9993,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 dos letras seguidas de siete dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 dos letras (no distingue mayúsculas de minúsculas) seguidas de siete dígitos
 
@@ -9952,7 +10043,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 12 letras y dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 12 letras y dígitos:
 - dos letras (no distingue mayúsculas de minúsculas)
@@ -9996,7 +10087,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 11 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 11 dígitos consecutivos
 
@@ -10042,7 +10133,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 De 7 a 12 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 7-12 dígitos:
 - cuatro dígitos 
@@ -10108,7 +10199,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 tres letras seguidas de seis dígitos
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 tres letras y seis dígitos:
   
@@ -10274,7 +10365,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 11 dígitos y un guión opcional
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Formato antiguo
 
@@ -10405,7 +10496,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 dos letras o dígitos seguidos de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 dos letras o dígitos seguidos de siete dígitos:
   
@@ -10487,7 +10578,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ocho dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 ocho dígitos 
   
@@ -10656,7 +10747,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 11 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 11 dígitos sin espacios ni delimitadores:
   
@@ -10738,7 +10829,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ocho dígitos o letras sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 ocho dígitos o letras (no distingue mayúsculas de minúsculas)
   
@@ -10814,7 +10905,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 seis dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 seis dígitos 
   
@@ -10982,7 +11073,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 13 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 13 dígitos:
   
@@ -11051,7 +11142,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ocho dígitos o letras sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 ocho dígitos o letras (no distingue mayúsculas de minúsculas)
   
@@ -11138,7 +11229,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 11 dígitos
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 11 dígitos
   
@@ -11230,7 +11321,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 12 dígitos que contienen guiones opcionales
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 12 dígitos:
 - seis dígitos en el formato YYMMDD, que son la fecha de nacimiento 
@@ -11296,7 +11387,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 Combinación de dos caracteres y seis dígitos en el patrón especificado
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 combinación de dos caracteres y seis dígitos:
   
@@ -11471,7 +11562,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 siete dígitos seguidos de una letra
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 siete dígitos seguidos de una letra:
   
@@ -11530,7 +11621,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 siete dígitos 
   
@@ -11607,7 +11698,7 @@ Para nacionales maltés:
 Nacionales no maltés y entidades maltesas:
 - nueve dígitos
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Nacionales maltés: siete dígitos y una letra
   
@@ -11686,13 +11777,139 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 - número de identidad único
 - uniqueidentityno #
 
+
+## <a name="medicare-beneficiary-identifier-mbi-card"></a>Tarjeta de identificador de beneficiario de Medicare (MBI)
+
+### <a name="format"></a>Formato
+
+patrón alfanumérico de once caracteres
+  
+### <a name="pattern"></a>Patrón
+
+- un dígito entre 1 y 9
+- una letra excluyendo S, L, O, I, B, Z
+- un dígito o letra excluyendo S, L, O, I, B, Z
+- un dígito
+- un guión opcional
+- una letra excluyendo S, L, O, I, B, Z
+- un dígito o letra excluyendo S, L, O, I, B, Z
+- un dígito
+- un guión opcional
+- dos letras excluyendo S, L, O, I, B, Z
+- dos dígitos
+    
+### <a name="checksum"></a>Suma de comprobación
+
+No
+  
+### <a name="definition"></a>Definición
+
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_mbi_card` busca contenido que coincida con el patrón. 
+- Se encuentra una palabra  `Keyword_mbi_card` clave de. 
+    
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La expresión regular  `Regex_mbi_card` busca contenido que coincida con el patrón. 
+    
+```xml
+    <!-- Medicare Beneficiary Identifier (MBI) card -->
+      <Entity id="f753a286-f5cc-47e6-a592-4be25fd02591" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_mbi_card" />
+          <Match idRef="Keyword_mbi_card" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_mbi_card" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keyword_mbi_card"></a>Keyword_mbi_card
+
+- mbi
+- mbi #
+- beneficiario de medicare #
+- identificador de beneficiario de medicare
+- medicare beneficiary no
+- número de beneficiario de medicare
+- beneficiario de medicare #
+
+
+## <a name="mexico-unique-population-registry-code-curp"></a>Código de registro de población único de México (CURP)
+
+### <a name="format"></a>Formato
+
+Patrón alfanumérico de 18 caracteres
+  
+### <a name="pattern"></a>Patrón
+
+- cuatro letras (mayúsculas de minúsculas)
+- seis dígitos que indican una fecha válida
+- una letra : H/h o M/m
+- dos letras que indican un código de estado mexicano válido
+- tres letras
+- una letra o un dígito
+- un dígito
+    
+### <a name="checksum"></a>Suma de comprobación
+
+No
+  
+### <a name="definition"></a>Definición
+
+Una directiva DLP tiene una gran confianza en que ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_mexico_population_registry_code` busca contenido que coincida con el patrón. 
+- Se encuentra una palabra  `Keyword_mexico_population_registry_code` clave de. 
+    
+Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de información confidencial si, en una proximidad de 300 caracteres:
+- La función  `Func_mexico_population_registry_code` busca contenido que coincida con el patrón. 
+    
+```xml
+    <!-- Mexico Unique Population Registry Code (CURP) -->
+      <Entity id="e905ad4d-5a74-406d-bf36-b1efca798af4" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_mexico_population_registry_code" />
+          <Match idRef="Keyword_mexico_population_registry_code" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_mexico_population_registry_code" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="keyword_mexico_population_registry_code"></a>Keyword_mexico_population_registry_code
+
+- Clave Única de Registro de Población
+- Clave Unica de Registro de Pobla
+- Código de registro de población único 
+- código de población único
+- CURP
+- Id. personal
+- Id. único
+- personalid
+- personalidnumber
+- uniqueidkey
+- uniqueidnumber
+- clave única
+- clave unica
+- clave personal Identidad
+- identidad clave personal
+- ClaveÚnica
+- claveunica
+- clavepersonalIdentidad
+
+
 ## <a name="netherlands-citizens-service-bsn-number"></a>Número de servicio de ciudadanos neerlandeses (BSN)
 
 ### <a name="format"></a>Formato
 
 ocho o nueve dígitos que contienen espacios opcionales
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 ocho y nueve dígitos:
 - tres dígitos 
@@ -11754,7 +11971,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 diez dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 diez dígitos
   
@@ -11921,7 +12138,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 nueve letras o dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve letras o dígitos
   
@@ -11995,7 +12212,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos 
   
@@ -12078,7 +12295,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón alfanumérico de 14 caracteres
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Patrón alfanumérico de 14 caracteres:
 
@@ -12140,7 +12357,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón de 14 a 16 dígitos con delimitador opcional
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Patrón de 14 a 16 dígitos con delimitador opcional:
 
@@ -12202,7 +12419,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón alfanumérico de ocho caracteres
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Patrón alfanumérico de ocho caracteres
 
@@ -12317,7 +12534,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ocho o nueve dígitos con delimitadores opcionales
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 ocho o nueve dígitos con delimitadores opcionales
 
@@ -12371,7 +12588,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 tres letras, un espacio (opcional) y cuatro dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - tres letras (no distingue mayúsculas de minúsculas) excepto 'I' y 'O'
 - un espacio (opcional) 
@@ -12434,7 +12651,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 nueve dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos
 
@@ -12488,7 +12705,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 11 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 11 dígitos:
 - seis dígitos en el formato DDMMYY que son la fecha de nacimiento 
@@ -12541,7 +12758,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 12 dígitos separados por guiones
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 12 dígitos:
 - cuatro dígitos 
@@ -12586,7 +12803,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 14 dígitos que contienen dos barras diagonales
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 14 dígitos y dos barras diagonales:
   
@@ -12754,7 +12971,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 tres letras y seis dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 tres letras (no distingue mayúsculas de minúsculas) seguidas de seis dígitos
 
@@ -12791,6 +13008,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 - Dowód Tożsamości
 - dow. os.
 
+
    
 ## <a name="poland-national-id-pesel"></a>Identificación nacional de Polonia (PESEL)
 
@@ -12798,7 +13016,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 11 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - seis dígitos que representan la fecha de nacimiento con el formato YYMMDD
 - cuatro dígitos
@@ -12854,7 +13072,7 @@ Esta entidad de tipo de información confidencial se incluye en el tipo de infor
 
 dos letras y siete dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Dos letras (no distinguen mayúsculas de minúsculas) seguidas de siete dígitos
 
@@ -12947,7 +13165,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Número de 9 o 14 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 número de nueve o 14 dígitos:
 
@@ -13013,7 +13231,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 11 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 11 dígitos
   
@@ -13077,7 +13295,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 ocho dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 ocho dígitos
 
@@ -13130,7 +13348,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 dos patrones: dos letras seguidas de 5-8 dígitos con caracteres especiales
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Patrón 1: Dos letras seguidas de 5/6 con caracteres especiales:
 - Dos letras (no distingue mayúsculas de minúsculas)
@@ -13313,7 +13531,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 una letra seguida de seis dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 una letra seguida de seis dígitos:
   
@@ -13399,7 +13617,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 nueve dígitos con espacios opcionales
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - tres dígitos
 - un espacio opcional
@@ -13467,7 +13685,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 un carácter seguido de ocho dígitos
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 un carácter seguido de ocho dígitos:
 - una letra (no distingue mayúsculas de minúsculas) o dígito 
@@ -13641,7 +13859,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 13 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - un dígito del 1 al 9
 - seis dígitos que representan la fecha de nacimiento (AYMMDD)
@@ -13733,7 +13951,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ocho o nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 ocho o nueve dígitos
   
@@ -13813,7 +14031,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Número de 10 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Número de 10 dígitos:
 
@@ -13875,7 +14093,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Número de nueve dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 número de nueve dígitos:
 
@@ -13929,7 +14147,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 10 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 10 dígitos consecutivos
 
@@ -13971,7 +14189,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 nueve letras y dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - nueve letras y dígitos:
 - la letra "F", "G", "S" o "T" (no distingue mayúsculas de minúsculas) 
@@ -14025,7 +14243,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 un carácter seguido de siete dígitos
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 un carácter seguido de siete dígitos
   
@@ -14198,7 +14416,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 nueve o diez dígitos que contienen barra diagonal inversa opcional
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - seis dígitos que representan la fecha de nacimiento
 - barra diagonal opcional (/)
@@ -14287,7 +14505,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 un dígito o letra seguido de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 un dígito o letra (no distingue mayúsculas de minúsculas) seguido de siete dígitos
   
@@ -14365,7 +14583,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 nueve dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos
   
@@ -14536,7 +14754,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 13 dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 13 dígitos en el patrón especificado:
   
@@ -14607,7 +14825,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 dos letras seguidas de siete dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 dos letras seguidas de siete dígitos:
   
@@ -14696,7 +14914,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ocho dígitos sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - un dígito del 1 al 9
 - seis dígitos
@@ -14761,7 +14979,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 13 dígitos que pueden contener espacios
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 13 dígitos:
 - seis dígitos en el formato YYMMDD, que son la fecha de nacimiento 
@@ -14805,7 +15023,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 13 dígitos que contienen un guión
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 13 dígitos:
 - seis dígitos en el formato YYMMDD, que son la fecha de nacimiento 
@@ -14859,7 +15077,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ocho dígitos seguidos de un carácter
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 ocho dígitos seguidos de un carácter:
   
@@ -15056,7 +15274,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 ocho dígitos seguidos de un carácter
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 siete dígitos seguidos de un carácter
   
@@ -15130,7 +15348,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 una combinación de ocho o nueve caracteres de letras y números sin espacios ni delimitadores
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 una combinación de letras y números de ocho o nueve caracteres:
   
@@ -15220,7 +15438,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 11 o 12 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 De 11 a 12 dígitos:
 - dos dígitos 
@@ -15280,7 +15498,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 siete u ocho dígitos y una o dos letras en el patrón especificado
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Personas físicas españolas con un documento de identidad nacional de España:
   
@@ -15384,7 +15602,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 La cadena "Id. de usuario", "Id. de usuario", "uid" o "UserId" seguida de los caracteres y cadenas descritos en el patrón siguiente.
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 - la cadena "Id. de usuario", "Id. de usuario", "uid" o "UserId"
 - cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
@@ -15460,7 +15678,7 @@ Una directiva DLP tiene una gran confianza en que ha detectado este tipo de info
 
 diez dígitos que contienen un guión
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 diez dígitos que contienen un guión:
   
@@ -15635,7 +15853,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 10 o 12 dígitos y un delimitador opcional
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 10 o 12 dígitos y un delimitador opcional:
 - dos dígitos (opcional) 
@@ -15699,7 +15917,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 ocho dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 ocho dígitos consecutivos
 
@@ -15798,7 +16016,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 10 dígitos y un símbolo en el patrón especificado
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 10 dígitos y un símbolo:
   
@@ -15874,7 +16092,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 cuatro letras seguidas de 5 a 31 letras o dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 cuatro letras seguidas de 5-31 letras o dígitos:
 - Código bancario de cuatro letras (no distingue mayúsculas de minúsculas) 
@@ -15953,7 +16171,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Número de 13 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Número de 13 dígitos:
 
@@ -16021,7 +16239,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 una letra (en inglés) seguida de nueve dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 una letra (en inglés) seguida de nueve dígitos:
 - una letra (en inglés, no distingue mayúsculas de minúsculas) 
@@ -16082,7 +16300,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 - número de pasaporte biométrico: nueve dígitos
 - Número de pasaporte no biométrico: nueve dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 número de pasaporte biométrico:
 - el carácter "3" 
 - ocho dígitos
@@ -16130,7 +16348,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 10 letras y dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 10 letras y dígitos:
 - dos letras (no distingue mayúsculas de minúsculas) 
@@ -16180,7 +16398,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 13 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 13 dígitos:
 - el primer dígito no es cero o nueve 
@@ -16229,7 +16447,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 11 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 11 dígitos
 
@@ -16274,7 +16492,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 Combinación de 18 letras y dígitos en el formato especificado
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 18 letras y dígitos:
 - Cinco letras (no distinguen mayúsculas de minúsculas) o el dígito "9" en lugar de una letra. 
@@ -16441,7 +16659,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 dos letras seguidas de 1-4 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 dos letras (no distingue mayúsculas de minúsculas) seguidas de números de 1 a 4
 
@@ -16483,7 +16701,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 De 10 a 17 dígitos separados por espacios
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 10-17 dígitos:
 - 3 o 10 dígitos 
@@ -16551,7 +16769,7 @@ Esta entidad de tipo de información confidencial se incluye en el tipo de infor
 
 siete caracteres o nueve caracteres separados por espacios o guiones
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 dos patrones posibles:
 
@@ -16635,7 +16853,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 10 dígitos sin espacios ni delimitadores
  
   
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 10 dígitos
   
@@ -16687,7 +16905,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 De 6 a 17 dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 De 6 a 17 dígitos consecutivos
 
@@ -16749,7 +16967,7 @@ Una directiva DLP tiene confianza mediana en que se ha detectado este tipo de in
 
 Depende del estado
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 depende del estado, por ejemplo, Nueva York:
 - nueve dígitos con formato como ddd ddd ddd coincidirán.
@@ -16901,7 +17119,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 nueve dígitos que comienzan con un "9" y contienen un "7" o "8" como el cuarto dígito, con formato opcional con espacios o guiones
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 con formato:
 - el dígito "9" 
@@ -16982,7 +17200,7 @@ nueve dígitos, que pueden estar en un patrón con formato o sin formato
 > [!NOTE]
 > Si se ha emitido antes de mediados de 2011, el SSN tiene un formato seguro en aquellas partes del número que deben incluirse dentro de ciertos rangos para que sean válidas (pero no hay ninguna suma de comprobación).
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 cuatro funciones buscan SSN en cuatro patrones diferentes:
 - Func_ssn busca SSN con formato seguro anteriores a 2011 y formateados con guiones o espacios (ddd-dd-dddd O ddd dd dddd)
@@ -17059,7 +17277,7 @@ Una directiva DLP tiene poca confianza en que se detecte este tipo de informaci�
 
 nueve dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos consecutivos
 
@@ -17132,7 +17350,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 nueve dígitos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 nueve dígitos
 
@@ -17180,7 +17398,7 @@ Este tipo de información confidencial solo está disponible para su uso en:
 
 Patrón alfanumérico de ocho caracteres
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Patrón alfanumérico de ocho caracteres:
 - dos letras o dígitos

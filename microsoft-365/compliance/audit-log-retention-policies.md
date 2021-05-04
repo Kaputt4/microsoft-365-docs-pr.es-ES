@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Las directivas de retención de registros de auditoría forman parte de las nuevas capacidades de Auditoría avanzada en Microsoft 365. Una directiva de retención de registro de auditoría le permite especificar durante cuánto tiempo se conservan los registros de auditoría en su organización.
-ms.openlocfilehash: 53449b6b83373eb2f749a4547845866dbea4a2af
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2ac95d9bb9c13b6bf0c0e31d17b4fb46c30c492a
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922856"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687363"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Administrar directivas de retención de registros de auditoría
 
@@ -36,7 +36,7 @@ Puede crear y administrar directivas de retención de registros de auditoría en
 
 ## <a name="default-audit-log-retention-policy"></a>Directivas de retención de registros de auditoría predeterminadas
 
-Auditoría avanzada en Microsoft 365 proporciona una directiva de retención de registros de auditoría predeterminada para todas las organizaciones. Esta directiva conserva todos los registros de auditoría de Exchange, SharePoint y Azure Active Directory durante un año. Esta directiva predeterminada conserva registros de auditoría que contienen el valor de **AzureActiveDirectory**, **Exchange** o **SharePoint** de la propiedad **Carga de trabajo** (que es el servicio en el que se produjo la actividad). La directiva predeterminada no se puede modificar. Vea la sección [Más información](#more-information) en este artículo para obtener una lista de los tipos de registros para cada carga de trabajo que se incluye en la directiva predeterminada.
+Auditoría avanzada en Microsoft 365 proporciona una directiva de retención de registros de auditoría predeterminada para todas las organizaciones. Esta directiva conserva todos los registros de auditoría de Exchange Online, SharePoint Online, OneDrive para la Empresa y Azure Active Directory durante un año. Esta directiva predeterminada conserva los registros de auditoría que contienen el valor de **Exchange**, **SharePoint**, **OneDrive**, **AzureActiveDirectory** para la propiedad de **Carga de trabajo** (que es el servicio en el que se produjo la actividad). La directiva predeterminada no se puede modificar. Vea la sección [Más información](#more-information) en este artículo para obtener una lista de los tipos de registros para cada carga de trabajo que se incluye en la directiva predeterminada.
 
 > [!NOTE]
 > La directiva de retención de registros de auditoría predeterminada solo se aplica a los registros de auditoría para la actividad realizada por usuarios que tienen asignada una licencia de Office 365 o Microsoft 365 E5, o que tienen una licencia del complemento de Cumplimiento de Microsoft 365 E5 o de eDiscovery y Auditoría de Microsoft 365 E5 Si no tiene usuarios o invitados de E5 en su organización, los registros de auditoría correspondientes se conservarán durante 90 días.
@@ -49,7 +49,7 @@ Auditoría avanzada en Microsoft 365 proporciona una directiva de retención de 
 
 - Para conservar un registro de auditoría durante más de 90 días (y hasta un año), el usuario que ha generado dicho registro (mediante una actividad de auditoría) debe tener asignada una licencia de Office 365 E5 o Microsoft 365 E5, o tener una licencia de complemento de Cumplimiento de Microsoft 365 E5 o E5 eDiscovery y Auditoría. Para conservar los registros de auditoría durante 10 años, el usuario que genera el registro de auditoría también debe tener asignada una licencia del complemento de retención de registro de auditoría de 10 años además de una licencia E5.
 
-- Todas las directivas de retención de registros de auditoría personalizadas (creadas por la organización) tienen prioridad ante la directiva de retención predeterminada. Por ejemplo, si crea una directiva de retención de registros de auditoría para la actividad del buzón de Exchange que tiene un período de retención inferior a un año, los registros de auditoría de las actividades de buzón de Exchange se conservarán por la duración más corta especificada en la directiva personalizada.
+- Todas las directivas de retención de registros de auditoría personalizadas (creadas por su organización) tienen prioridad sobre la directiva de retención predeterminada. Por ejemplo, si crea una directiva de retención de registros de auditoría para la actividad del buzón de Exchange que tiene un período de retención inferior a un año, los registros de auditoría de las actividades de buzón de Exchange se conservarán durante la duración más corta especificada en la directiva personalizada.
 
 ## <a name="create-an-audit-log-retention-policy"></a>Crear una directiva de retención de registros de auditoría
 
@@ -167,9 +167,9 @@ Use el cmdlet [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchang
 
 ## <a name="more-information"></a>Más información
 
-Como se ha indicado anteriormente, los registros de auditoría para las operaciones en Azure Active Directory, Exchange y SharePoint se conservan durante un año de forma predeterminada. En la siguiente tabla se enumeran todos los tipos de registro (para cada uno de estos servicios) incluidos en la directiva de retención de registros de auditoría predeterminada. Esto significa que los registros de auditoría de cualquier operación con este tipo de registro se conservan durante un año, a menos que una directiva de retención de registros de auditoría personalizada tenga prioridad para un tipo de registro, una operación o un usuario específicos. El valor Enum (que se muestra como el valor de la propiedad RecordType en un registro de auditoría) para cada tipo de registro se muestra entre paréntesis.
+Como se ha indicado anteriormente, los registros de auditoría para las operaciones en Azure Active Directory, Exchange Online, SharePoint Online y OneDrive para la Empresa se conservan durante un año de forma predeterminada. En la siguiente tabla se enumeran todos los tipos de registro (para cada uno de estos servicios) incluidos en la directiva de retención de registros de auditoría predeterminada. Esto significa que los registros de auditoría de cualquier operación con este tipo de registro se conservan durante un año, a menos que una directiva de retención de registros de auditoría personalizada tenga prioridad para un tipo de registro, una operación o un usuario específicos. El valor Enum (que se muestra como el valor de la propiedad RecordType en un registro de auditoría) para cada tipo de registro se muestra entre paréntesis.
 
-|AzureActiveDirectory |Exchange  |SharePoint|
+|AzureActiveDirectory |Exchange  |SharePoint o OneDrive|
 |:---------|:---------|:---------|
 |AzureActiveDirectory (8)|ExchangeAdmin (1)|ComplianceDLPSharePoint (11)|
 |AzureActiveDirectoryAccountLogon (9)|ExchangeItem (2)|ComplianceDLPSharePointClassification (33)|

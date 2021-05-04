@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: 34c674dc5fb9be9cb5572ce1f14e11a0f8ab14ae
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: a35e9fe818d697667ecf002a232d84f90cf53a61
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034229"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764369"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -60,7 +60,7 @@ Puede obtener más información sobre este cambio de metadatos en los siguientes
 
 - Especificaciones abiertas: [2.6.3 Diferencias entre Labelinfo y Propiedades de documento personalizado](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
-Debido a estos cambios, no habilite esta configuración si tiene aplicaciones, servicios, scripts o herramientas en la organización que lean o escriban metadatos de etiquetado en la ubicación anterior. Si lo hace, estas son algunas de las consecuencias:
+Debido a estos cambios, no habilite este valor si tiene aplicaciones, servicios, scripts o herramientas en la organización que leen o escriben metadatos de etiquetado en la ubicación anterior. Si los tiene, aquí hay algunas consecuencias como ejemplo:
 
 - Un documento con etiquetas se muestra a los usuarios como no etiquetado.
 
@@ -104,7 +104,7 @@ Asegúrese de entender los siguientes requisitos previos antes de activar esta c
     - **Aplicaciones y servicios que usan el SDK de Microsoft Information Protection:** 
         - Versión mínima de 1.7 
 
-Los servicios de Microsoft 365 admiten automáticamente los nuevos metadatos de etiquetado cuando activa esta característica. Por ejemplo:
+Los servicios de Microsoft 365 admiten automáticamente los nuevos metadatos de etiquetado cuando habilita esta característica. Por ejemplo:
 
 - [Directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [Directivas DLP que usan etiquetas de confidencialidad como condiciones](dlp-sensitivity-label-as-condition.md)
@@ -140,7 +140,7 @@ Esta versión preliminar de coautoría para archivos cifrados con etiquetas de c
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>Cómo habilitar la coautoría en archivos con etiquetas de confidencialidad
 
 > [!CAUTION]
-> Activar esta configuración es una acción unidireccional. Mientras la característica está en versión preliminar, pruébela solo en un entorno que no sea de producción y solo después de haber leído y comprendido los cambios de metadatos, los requisitos previos, las limitaciones y cualquier problema conocido documentado en esta página.
+> Habilitar este valor es una acción unidireccional. Mientras la característica está en versión preliminar, pruébela solo en un entorno que no sea de producción y solo después de haber leído y comprendido los cambios de metadatos, los requisitos previos, las limitaciones y cualquier problema conocido documentado en esta página.
 
 Durante la versión preliminar, debe usar una dirección URL específica para obtener acceso a esta configuración en el Centro de cumplimiento de Microsoft 365.
 
@@ -179,6 +179,6 @@ Si un ingeniero de soporte técnico deshabilita esta configuración para su espa
 
 - El nuevo formato de metadatos y la ubicación de los documentos de Office que se usaron mientras la configuración estaba habilitada no se copiarán al formato y ubicación originales. Como resultado, se perderá esta información de etiquetado para los archivos de Word, Excel y PowerPoint sin cifrar.
 
-- La coautoría y el autoguardado ya no funcionan en el espacio empresarial.
+- La coautoría y el Autoguardado ya no funcionan en su espacio empresarial en los documentos etiquetados y cifrados.
 
 - Las etiquetas de confidencialidad permanecen habilitadas para los archivos de Office en OneDrive y SharePoint.

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión.
-ms.openlocfilehash: 4d1aa3b75ec0a0720f3d92c847bf7c6cde6d966f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5da9161f2f59ef8a40ca8a7d302dc7de578dba39
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199279"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114128"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Configurar la conexión a Internet y el proxy del dispositivo para la DLP de punto de conexión
 
@@ -142,7 +142,7 @@ Temas relacionados • Dispositivos de Windows 10 integrados • Solucionar prob
 
 - [Obtenga información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)
 - [Uso de la prevención de pérdida de datos en punto de conexión](endpoint-dlp-using.md)
-- [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
+- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
 - [Microsoft Defender para punto de conexión](/windows/security/threat-protection/)

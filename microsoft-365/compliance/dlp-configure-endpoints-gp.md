@@ -13,37 +13,37 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Usa la directiva de grupo para implementar el paquete de configuración en dispositivos Windows 10 para que se incorpore al servicio.
-ms.openlocfilehash: b786d011a46f69e7bcac846e726e2aeb3031ae08
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Use la directiva de grupo para implementar el paquete de configuración Windows 10 dispositivos para que se incorpore al servicio.
+ms.openlocfilehash: 284de5169324b6da4038cfe0b50b2f2ffa40e3fd
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918026"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893291"
 ---
-# <a name="onboard-windows-10-devices-using-group-policy"></a>Incorporación de dispositivos Windows 10 con la directiva de grupo 
+# <a name="onboard-windows-10-devices-using-group-policy"></a>Incorporación Windows 10 dispositivos con directiva de grupo 
 
 **Se aplica a:**
 
-- [Prevención de pérdida de datos del extremo de Microsoft 365 (DLP)](./endpoint-dlp-learn-about.md)
+- [Microsoft 365 Prevención de pérdida de datos de extremo (DLP)](./endpoint-dlp-learn-about.md)
 - Directiva de grupo
 
 > [!NOTE]
-> Para usar las actualizaciones de directiva de grupo (GP) para implementar el paquete, debes estar en Windows Server 2008 R2 o posterior.
+> Para usar las actualizaciones de directiva de grupo (GP) para implementar el paquete, debe estar en Windows Server 2008 R2 o posterior.
 
 > Para Windows Server 2019, es posible que deba reemplazar NT AUTHORITY\Well-Known-System-Account por NT AUTHORITY\SYSTEM del archivo XML que crea la preferencia de directiva de grupo.
 
-## <a name="onboard-devices-using-group-policy"></a>Incorporación de dispositivos mediante directiva de grupo
+## <a name="onboard-devices-using-group-policy"></a>Incorporar dispositivos con la directiva de grupo
 
-1. Abra el archivo .zip del paquete de configuración de GP (*DeviceComplianceOnboardingPackage.zip*) que descargó del Asistente para incorporación de servicios. También puede obtener el paquete desde el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com/compliancesettings/deviceonboarding)
+1. Abra el archivo de configuración .zip GP (*DeviceComplianceOnboardingPackage.zip*) que descargó del asistente para incorporación de servicios. También puede obtener el paquete desde el [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com/compliancesettings/deviceonboarding)
 
-2. En el panel de navegación, seleccione **Configuración de** incorporación  >  **de dispositivos**.
+2. En el panel de navegación, **seleccione Configuración** Incorporación  >  **de dispositivos**.
 
 3. En el **campo Método de** implementación, seleccione Directiva de **grupo**.
 
-4. Haga **clic en Descargar paquete** y guarde el archivo .zip.
+4. Haga **clic en Descargar paquete** y guarde el .zip archivo.
 
-5. Extrae el contenido del archivo .zip en una ubicación compartida de solo lectura a la que pueda tener acceso el dispositivo. Debe tener una carpeta denominada *OptionalParamsPolicy* y el archivo *DeviceComplianceLocalOnboardingScript.cmd*.
+5. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que pueda tener acceso el dispositivo. Debe tener una carpeta denominada *OptionalParamsPolicy* y el archivo *DeviceComplianceLocalOnboardingScript.cmd*.
 
 6. Abra la [Consola de administración de directivas de](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) grupo (GPMC), haga clic con el botón secundario en el objeto de directiva de grupo (GPO) que desea configurar y haga clic en **Editar**.
 
@@ -68,13 +68,13 @@ Por motivos de seguridad, el paquete usado para dispositivos offboard expirará 
 
 1. Obtenga el paquete de offboarding del [Centro de cumplimiento de Microsoft](https://compliance.microsoft.com/compliancesettings/deviceonboarding).
 
-2. En el panel de navegación, seleccione **Configuración**  >  **//Incorporación de**  >  **dispositivos Offboarding**.
+2. En el panel de navegación, **seleccione Configuración**  >  **//Device onboarding**  >  **Offboarding**.
 
 3. En el **campo Método de** implementación, seleccione Directiva de **grupo**.
 
-4. Haga **clic en Descargar paquete** y guarde el archivo .zip.
+4. Haga **clic en Descargar paquete** y guarde el .zip archivo.
 
-5. Extrae el contenido del archivo .zip en una ubicación compartida de solo lectura a la que pueda tener acceso el dispositivo. Debe tener un archivo denominado *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
+5. Extraiga el contenido del archivo .zip a una ubicación compartida de solo lectura a la que pueda tener acceso el dispositivo. Debe tener un archivo denominado *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
 6. Abra la [Consola de administración de directivas de](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) grupo (GPMC), haga clic con el botón secundario en el objeto de directiva de grupo (GPO) que desea configurar y haga clic en **Editar**.
 
@@ -107,9 +107,9 @@ Con la directiva de grupo no hay una opción para supervisar la implementación 
 
 
 ## <a name="related-topics"></a>Temas relacionados
-- [Incorporación de dispositivos Windows 10 con Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
+- [Incorporar Windows 10 dispositivos con Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [Incorporar dispositivos Windows 10 con herramientas de Administración de dispositivos móviles](dlp-configure-endpoints-mdm.md)
 - [Incorporar dispositivos Windows 10 mediante un script local](dlp-configure-endpoints-script.md)
 - [Incorporar dispositivos de infraestructura de escritorio virtual (VDI) no persistente](dlp-configure-endpoints-vdi.md)
-- [Ejecutar una prueba de detección en un dispositivo ATP de Microsoft Defender recién incorporado](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [Solucionar problemas de incorporación de Protección contra amenazas avanzada de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Ejecutar una prueba de detección en un Microsoft Defender recién incorporado para dispositivos de punto de conexión](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [Solucionar Protección contra amenazas avanzada de Microsoft Defender problemas de incorporación](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

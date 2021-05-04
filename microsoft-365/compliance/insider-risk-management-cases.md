@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1648c648401086b296bd267fc1a9e7b011930e74
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 5b59fb57ebd17050624ce36805558dcd1eef0503
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445648"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939258"
 ---
 # <a name="insider-risk-management-cases"></a>Casos de administración de riesgos de Insider
 
@@ -28,7 +28,7 @@ Después de investigar los detalles de un caso, puede tomar medidas mediante:
 - enviar un aviso al usuario
 - resolver el caso como benigno
 - compartir el caso con la instancia de ServiceNow o con un destinatario de correo electrónico
-- escalar el caso de una investigación de exhibición de documentos electrónicos avanzada
+- escalando el caso para una Advanced eDiscovery investigación
 
 Consulte el vídeo Investigación y escalación de la administración de riesgos de [Insider](https://www.youtube.com/watch?v=UONUSmkRC8s) para obtener información general sobre cómo se investigan y administran los casos en la administración de riesgos de insider.
 
@@ -47,7 +47,7 @@ La cola de casos enumera todos los casos activos y cerrados de la organización,
 - **User:** el usuario del caso. Si la anonimización de nombres de usuario está habilitada, se muestra información anonimizada.
 - **Caso de tiempo abierto:** el tiempo transcurrido desde que se abrió el caso.
 - **Alertas totales de directiva:** número de coincidencias de directiva incluidas en el caso. Este número puede aumentar si se agregan nuevas alertas al caso.
-- **Last updated:** el tiempo transcurrido desde que se ha agregado una nota de caso o un cambio en el estado del caso.
+- **Case last updated:** el tiempo transcurrido desde que se ha agregado una nota de caso o un cambio en el estado del caso.
 - **Last updated by**: The name of the insider risk management analyst or researcher that last updated the case.
 
 ![Panel de casos de administración de riesgos de Insider](../media/insider-risk-cases-dashboard.png)
@@ -74,19 +74,22 @@ Seleccionar un caso abre las herramientas de administración de casos y permite 
 
 ### <a name="case-overview"></a>Información general de casos
 
-En **Información general del** resumen de la actividad de alertas y el historial de nivel de riesgo del caso. 
+La **pestaña Información general** del caso resume los detalles del caso para los analistas e investigadores de riesgos. Incluye la siguiente información en el **área Acerca de este caso**
 
-- El widget **Alertas** muestra las coincidencias de directiva para el caso, incluido el estado de la alerta, la gravedad del riesgo de alerta y cuándo se detectó la alerta. 
-- El gráfico de **Historial de riesgo** muestra el nivel de riesgo de usuario durante los últimos 30 días. El gráfico de líneas permite a los analistas y analistas ver rápidamente la tendencia en el riesgo general de los usuarios a lo largo del tiempo. 
-- El widget **actividad de riesgo** resume los tipos de datos y el contenido de las alertas agregadas al caso. Este widget proporciona una vista general de todos los datos y el contenido establecido en riesgo en el caso.
-
-El **panel detalles del** caso está disponible en todas las pestañas de administración de casos y resume los detalles del caso para analistas e investigadores de riesgos. Incluye las siguientes áreas:
-
-- **Nombre de** caso: el nombre del caso, con el prefijo de un número de secuencia de casos generado automáticamente y el nombre del riesgo asociado con la plantilla de directiva que coincide con la primera alerta confirmada. 
-- **Estado del** caso: el estado actual del caso, *activo* o *cerrado*.
+- **Estado:** el estado actual del caso, activo o cerrado.
+- **Caso creado en**: La fecha y hora en que se creó el caso.
 - **Puntuación de riesgo del usuario:** el nivel de riesgo calculado actual del usuario para el caso. Esta puntuación se calcula cada 24 horas y usa las puntuaciones de riesgo de alerta de todas las alertas activas asociadas al usuario.
-- **Alertas confirmadas:** lista de alertas del usuario confirmadas para el caso.
-- **Contenido relacionado:** lista de contenido, ordenada por orígenes y tipos de contenido. Por ejemplo, por el contenido de alertas de casos en SharePoint Online, puede ver carpetas o nombres de archivo que están asociados a la actividad de riesgo para las alertas en el caso.
+- **Correo** electrónico: el alias de correo electrónico del usuario para el caso.
+- **Organización o departamento:** la organización o el departamento al que está asignado el usuario.
+- **Nombre del administrador:** el nombre del administrador del usuario.
+- **Correo electrónico del** administrador: alias de correo electrónico del administrador del usuario.
+
+La **pestaña Información general** del caso también incluye una sección **Alertas** que incluye la siguiente información acerca de las alertas de coincidencia de directivas asociadas con el caso:
+
+- **Coincidencias de directiva:** el nombre de la directiva de administración de riesgos de insider asociada con las alertas de coincidencia para la actividad del usuario.
+- **Estado:** Estado de la alerta.
+- **Gravedad:** gravedad de la alerta.
+- **Hora detectada:** el tiempo transcurrido desde que se generó la alerta.
 
 ![Detalles de casos de administración de riesgos de Insider](../media/insider-risk-case-details.png)
 
@@ -95,7 +98,7 @@ El **panel detalles del** caso está disponible en todas las pestañas de admini
 La **pestaña** Alertas resume las alertas actuales incluidas en el caso. Se pueden agregar nuevas alertas a un caso existente y se agregarán a la cola de **alertas** a medida que estén asignadas. Los siguientes atributos de alerta se enumeran en la cola:
 
 - Estado
-- Severity
+- Gravedad
 - Tiempo detectado
 
 Seleccione una alerta de la cola para mostrar la **página Detalles de** alerta.
@@ -103,7 +106,7 @@ Seleccione una alerta de la cola para mostrar la **página Detalles de** alerta.
 Use el control de búsqueda para buscar nombres de alerta para texto específico y usar el filtro de alertas para ordenar los casos por los atributos siguientes:
 
 - Estado
-- Severity
+- Gravedad
 - Hora detectada, fecha de inicio y fecha de finalización
 
 Use el control de filtro para filtrar alertas por varios atributos, incluidos:
@@ -122,7 +125,7 @@ La pestaña de **Actividade del usuario** es una de las herramientas más eficac
 1. **Filtros de tiempo:** de forma predeterminada, los últimos seis meses de alertas confirmadas en el caso se muestran en el gráfico de actividad de usuario. Puede filtrar fácilmente la vista de gráfico seleccionando las pestañas *6 Meses,* *3 Meses* o *1* Mes en el gráfico de burbujas.
 2. **Actividad y detalles de alerta de** riesgo: las actividades de riesgo se muestran visualmente como burbujas de color en el gráfico de actividades de usuario. Las burbujas se crean para diferentes categorías de riesgo y el tamaño de la burbuja es proporcional al número de actividades de riesgo para la categoría. Seleccione una burbuja para mostrar los detalles de cada actividad de riesgo. Los detalles incluyen:
     - **Fecha** de la actividad de riesgo.
-    - La **categoría de actividad de riesgo**. Por ejemplo, los correos electrónicos con datos adjuntos *enviados fuera* de la organización o *archivos descargados de SharePoint Online*.
+    - La **categoría de actividad de riesgo**. Por ejemplo, *correos electrónicos* con datos adjuntos enviados fuera de la organización o Archivos descargados de SharePoint *Online*.
     - **Nivel de riesgo** de la alerta. Esta puntuación es la puntuación numérica para el nivel de gravedad del riesgo de alerta.
     - Número de eventos asociada a la alerta. También están disponibles vínculos a cada archivo o correo electrónico asociado con la actividad de riesgo.
 3. **Secuencia de riesgos (versión preliminar):** el orden cronológico de las actividades de riesgo es un aspecto importante de la investigación de riesgos y la identificación de estas actividades relacionadas es una parte importante de la evaluación del riesgo general para su organización. Las actividades de alerta relacionadas se muestran con líneas de conexión para resaltar que estas actividades están asociadas a un área de riesgo mayor. Esta vista de actividades puede ayudar a los investigadores a "conectar los puntos" literalmente para las actividades de riesgo que podrían haber sido vistas como eventos aislados o aislados. Seleccione cualquier burbuja de la secuencia para mostrar los detalles de todas las actividades de riesgo asociadas. Los detalles incluyen:
@@ -162,14 +165,14 @@ El panel de notas del caso muestra las notas del usuario que creó la nota y el 
 
 Para agregar una nota a un caso:
 
-1. En el [Centro de cumplimiento de Microsoft 365,](https://compliance.microsoft.com)vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Casos.
+1. En el [centro Microsoft 365 cumplimiento,](https://compliance.microsoft.com)vaya a Administración de riesgos **de Insider** y seleccione la **pestaña** Casos.
 2. Seleccione un caso y, a continuación, seleccione la **pestaña Notas del caso.**
 3. Seleccione **Agregar nota de caso**.
 4. En el cuadro de diálogo Agregar **nota de caso,** escriba la nota para el caso. Seleccione **Guardar** para agregar la nota al caso o **seleccione Cancelar** cerrar sin guardar la nota en el caso.
 
 ### <a name="contributors"></a>Colaboradores
 
-En la pestaña de **Colaboradores** activos se encuentra la opción de que los analistas de riesgos y los analistas de riesgos puedan agregar otros revisores al caso. De forma predeterminada, todos los usuarios asignados a los roles Analistas de administración de riesgos de **Insider** e Investigadores de administración de riesgos de **Insider** se enumeran como colaboradores para cada caso activo y cerrado. Solo los usuarios **asignados al rol Investigadores** de administración de riesgos de Insider tienen permiso para ver archivos y mensajes en el explorador de contenido.
+En la pestaña de **Colaboradores** activos se encuentra la opción de que los analistas de riesgos y los analistas de riesgos puedan agregar otros revisores al caso. De forma predeterminada, todos los usuarios asignados a **los analistas** de administración de riesgos insider y los roles de investigadores de administración de riesgos de **Insider** se enumeran como colaboradores para cada caso activo y cerrado. Solo los usuarios **asignados al rol Investigadores** de administración de riesgos de Insider tienen permiso para ver archivos y mensajes en el explorador de contenido.
 
 El acceso temporal a un caso se puede conceder agregando un usuario como colaborador. Los colaboradores tienen todo el control de administración de casos en el caso específico excepto:
 
@@ -179,15 +182,15 @@ El acceso temporal a un caso se puede conceder agregando un usuario como colabor
 
 Para agregar un colaborador a un caso:
 
-1. En el [Centro de cumplimiento de Microsoft 365,](https://compliance.microsoft.com)vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Casos.
+1. En el [centro Microsoft 365 cumplimiento,](https://compliance.microsoft.com)vaya a Administración de riesgos **de Insider** y seleccione la **pestaña** Casos.
 2. Seleccione un caso y, a continuación, seleccione la **pestaña Colaboradores.**
 3. Seleccione **Agregar colaborador**.
-4. En el **cuadro de diálogo** Agregar colaborador, empiece a escribir el nombre del usuario que desea agregar y, a continuación, seleccione el usuario de la lista de usuarios sugerida. Esta lista se genera desde Azure Active Directory de la suscripción de inquilino.
+4. En el **cuadro de diálogo** Agregar colaborador, empiece a escribir el nombre del usuario que desea agregar y, a continuación, seleccione el usuario de la lista de usuarios sugerida. Esta lista se genera a partir del Azure Active Directory de la suscripción de inquilino.
 5. Seleccione **Agregar** para agregar el usuario como colaborador o **seleccione Cancelar** cerrar el cuadro de diálogo sin agregarlo como colaborador.
 
 ## <a name="case-actions"></a>Acciones de casos
 
-Los analistas e investigadores de riesgos pueden actuar en un caso en uno de varios métodos, según la gravedad del caso, el historial de riesgos del usuario y las directrices de riesgo de su organización. En algunas situaciones, es posible que deba escalar un caso a un usuario o una investigación de datos para colaborar con otras áreas de su organización y profundizar en las actividades de riesgo. La administración de riesgos de Insider está estrechamente integrada con otras soluciones de cumplimiento de Microsoft 365 para ayudarle con la administración de resolución integral.
+Los analistas e investigadores de riesgos pueden actuar en un caso en uno de varios métodos, según la gravedad del caso, el historial de riesgos del usuario y las directrices de riesgo de su organización. En algunas situaciones, es posible que deba escalar un caso a un usuario o una investigación de datos para colaborar con otras áreas de su organización y profundizar en las actividades de riesgo. La administración de riesgos de Insider está estrechamente integrada con otras Microsoft 365 de cumplimiento normativo para ayudarle con la administración de resolución integral.
 
 ### <a name="send-email-notice"></a>Enviar aviso de correo electrónico
 
@@ -197,7 +200,7 @@ Es importante recordar que enviar un aviso de correo electrónico a un usuario *
 
 Para enviar un aviso al usuario asignado a un caso:
 
-1. En el [Centro de cumplimiento de Microsoft 365,](https://compliance.microsoft.com)vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Casos.
+1. En el [centro Microsoft 365 cumplimiento,](https://compliance.microsoft.com)vaya a Administración de riesgos **de Insider** y seleccione la **pestaña** Casos.
 2. Seleccione un caso y, a continuación, seleccione el **botón Enviar aviso de correo** electrónico en la barra de herramientas de acción caso.
 3. En el **cuadro de diálogo** Enviar  aviso de correo electrónico, seleccione el control desplegable Elegir una plantilla de aviso para seleccionar la plantilla de aviso para el aviso. Esta selección rellena previamente los demás campos del aviso.
 4. Revise los campos de aviso y actualice según corresponda. Los valores especificados aquí invalidarán los valores de la plantilla.
@@ -209,40 +212,40 @@ Escala el caso para la investigación del usuario en situaciones en las que se n
 
 Para escalar un caso a una investigación de usuario:
 
-1. En el [Centro de cumplimiento de Microsoft 365,](https://compliance.microsoft.com)vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Casos.
+1. En el [centro Microsoft 365 cumplimiento,](https://compliance.microsoft.com)vaya a Administración de riesgos **de Insider** y seleccione la **pestaña** Casos.
 2. Seleccione un caso y, a continuación, seleccione el botón **Escalar** para la investigación en la barra de herramientas de acción caso.
 3. En el **cuadro de diálogo Escalar para** la investigación, escriba un nombre para la nueva investigación de usuario. Si es necesario, escriba notas sobre el caso y seleccione **Escalar**.
 4. Revise los campos de aviso y actualice según corresponda. Los valores especificados aquí invalidarán los valores de la plantilla.
 5. Seleccione **Confirmar** para crear el caso de investigación del usuario o **seleccione Cancelar** para cerrar el cuadro de diálogo sin crear un nuevo caso de investigación de usuario.
 
-Después de que el caso de administración de riesgos de insider se haya escalado a un nuevo caso de investigación de usuario, puede revisar el nuevo caso en el área **eDiscovery** Advanced en el Centro de cumplimiento de  >   Microsoft 365.
+Después de que el caso de administración de riesgos de insider se haya escalado a un nuevo caso de investigación de usuario, puede revisar el nuevo caso en el área **eDiscovery** Advanced en el centro de Microsoft 365  >   cumplimiento.
 
-### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Ejecutar tareas automatizadas con flujos de Power Automate para el caso
+### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Ejecutar tareas automatizadas con Power Automate flujos para el caso
 
-Con los flujos recomendados de Power Automate, los investigadores y analistas de riesgos pueden tomar medidas rápidamente para:
+Con los flujos Power Automate recomendados, los investigadores y analistas de riesgos pueden tomar medidas rápidamente para:
 
 - Solicitar información a RRHH o empresa sobre un usuario en un caso de riesgo interno
 - Notificar al administrador cuando un usuario tiene una alerta de riesgo de información interna
-- Agregar un aviso de calendario para hacer un seguimiento de un caso de riesgo interno
 - Crear un registro para un caso de administración de riesgos interno en ServiceNow
+- Notificar a los usuarios cuando se agregan a una directiva de riesgo de insider
 
 Para ejecutar, administrar o crear flujos de Power Automate para un caso de administración de riesgos interno:
 
 1. Seleccione **Automatizar en** la barra de herramientas de acciones de caso. 
-2. Elija el flujo de Power Automate que se ejecutará y, a continuación, **seleccione Ejecutar flujo**. 
+2. Elija el Power Automate para ejecutar y, a continuación, seleccione **Ejecutar flujo**. 
 3. Una vez completado el flujo, seleccione **Listo**.
 
-Para obtener más información sobre los flujos de Power Automate para la administración de riesgos de insider, consulte Introducción a la configuración de administración de riesgos [insider](insider-risk-management-settings.md#power-automate-flows-preview).
+Para obtener más información sobre Power Automate para la administración de riesgos de insider, vea Introducción a la configuración de administración de riesgos [de insider](insider-risk-management-settings.md#power-automate-flows-preview).
 
-### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Ver o crear un equipo de Microsoft Teams para el caso
+### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Ver o crear un equipo Microsoft Teams para el caso
 
-Cuando la integración de Microsoft Teams para la administración de riesgos insider está habilitada en la configuración, un equipo de Microsoft Teams se crea automáticamente cada vez que se confirma una alerta y se crea un caso. Los investigadores y analistas de riesgos pueden abrir rápidamente Microsoft Teams y navegar directamente al equipo para un caso seleccionando Ver equipo de **Microsoft Teams** en la barra de herramientas de acciones del caso.
+Cuando Microsoft Teams integración para la administración de riesgos de insider está habilitada en la configuración, un equipo de Microsoft Teams se crea automáticamente cada vez que se confirma una alerta y se crea un caso. Los investigadores y analistas de riesgos pueden abrir rápidamente Microsoft Teams y navegar directamente al equipo para un caso seleccionando Ver **Microsoft Teams** equipo en la barra de herramientas de acción de caso.
 
-Para los casos abiertos antes de habilitar la integración de Microsoft Team, los investigadores y analistas de riesgos pueden crear un nuevo equipo de Microsoft Teams para un caso seleccionando Crear equipo de **Microsoft Teams** en la barra de herramientas de acciones del caso.
+Para los casos abiertos antes de habilitar la integración de Microsoft Team, los investigadores y analistas de riesgos pueden crear un nuevo equipo de Microsoft Teams para un caso seleccionando Crear **Microsoft Teams** equipo en la barra de herramientas de acciones del caso.
 
 Cuando se resuelve un caso, el equipo de Microsoft asociado se archivará automáticamente (oculto y convertido en de solo lectura).
 
-Para obtener más información acerca de Microsoft Teams para la administración de riesgos insider, consulte Introducción a la configuración de administración de riesgos [de insider](insider-risk-management-settings.md#microsoft-teams-preview).
+Para obtener más información sobre Microsoft Teams para la administración de riesgos de insider, vea Introducción a la configuración de administración de riesgos [de insider](insider-risk-management-settings.md#microsoft-teams-preview).
 
 ### <a name="resolve-the-case"></a>Resolver el caso
 
@@ -253,7 +256,7 @@ Una vez que los analistas e investigadores de riesgos hayan completado su revisi
 
 Para resolver un caso:
 
-1. En el [Centro de cumplimiento de Microsoft 365,](https://compliance.microsoft.com)vaya a Administración de riesgos de **Insider** y seleccione la **pestaña** Casos.
+1. En el [centro Microsoft 365 cumplimiento,](https://compliance.microsoft.com)vaya a Administración de riesgos **de Insider** y seleccione la **pestaña** Casos.
 2. Seleccione un caso y, a continuación, seleccione el **botón Resolver caso** en la barra de herramientas de acción caso.
 3. En el cuadro de diálogo Resolver **caso,** seleccione el control desplegable **Resolver como** para seleccionar la clasificación de resolución del caso. Las opciones son **Infracción de** directiva benigna **o Confirmada.**
 4. En el cuadro de diálogo Resolver **caso,** escriba los motivos de la clasificación de resolución en el **campo de texto** Acción realizada.

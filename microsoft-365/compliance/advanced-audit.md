@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La Auditoría avanzada en Microsoft 365 proporciona nuevas características de auditoría que ayudarán a su organización a realizar investigaciones forenses y de cumplimiento.
-ms.openlocfilehash: 88308d173df79f55f38aba4b70d4b561667941bf
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 4df9cda05d4b5febbc5b7beb505365e449accf04
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574659"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892911"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Auditoría avanzada en Microsoft 365
 
@@ -41,7 +41,7 @@ La Auditoría avanzada conserva todos los registros de auditoría de Exchange, S
 También estamos publicando la posibilidad de retener registros de auditoría durante 10 años. La retención de los registros de auditoría de 10 años ofrece soporte a investigaciones de larga duración y ayuda a responder frente a obligaciones reglamentarias, jurídicas e internas.
 
 > [!NOTE]
-> La retención de los registros de auditoría durante 10 años necesitará una licencia adicional de complemento. Esta nueva licencia estará disponible a principios de 2021. Para más información, vea la sección [Preguntas más frecuentes sobre Auditoría avanzada](#faqs-for-advanced-audit) de este artículo.
+> La retención de los registros de auditoría durante 10 años necesitará una licencia adicional de complemento. Para más información, vea la sección [Preguntas más frecuentes sobre Auditoría avanzada](#faqs-for-advanced-audit) de este artículo.
 
 ### <a name="audit-log-retention-policies"></a>Directivas de retención de registros de auditoría
 
@@ -63,9 +63,12 @@ La Auditoría avanzada ayuda a las organizaciones a llevar a cabo investigacione
 
 - [Send](#send)
 
-- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
 
-- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+
+> [!NOTE]
+> <sup>*</sup> En este momento, este evento no está disponible en los entornos de administración pública de Office 365 y Microsoft 365. Esto incluye los entornos GCC, GCC High y DoD.
 
 ### <a name="mailitemsaccessed"></a>MailItemsAccessed
 
@@ -77,7 +80,7 @@ La acción de buzón MailItemsAccessed reemplaza a MessageBind en el registro de
 
 - MessageBind sólo cubre el acceso de un cliente de correo. No se aplicó a las actividades de sincronización. Los eventos MailItemsAccessed se desencadena con los tipos de acceso enlazar y sincronizar.
 
-- Las acciones de MessageBind desencadenarían la creación de múltiples registros de auditoría cuando se accediera al mismo mensaje de correo electrónico, lo que daría lugar a un "ruido" de auditoría. En cambio, los eventos de MailItemsAccessed se agregan en menos registros de auditoría.
+- Las acciones de MessageBind generarían la creación de diversos registros de auditoría cuando se accedía al mismo mensaje de correo electrónico, lo que producía “ruido” en la auditoría. Por el contrario, los eventos MailItemsAccessed se agregan a menos registros de auditoría.
 
 Para obtener información sobre los registros de auditoría de las actividades de MailItemsAccessed, vea [usar la auditoría avanzada para investigar cuentas comprometidas](mailitemsaccessed-forensics-investigations.md).
 
@@ -197,17 +200,13 @@ Para beneficiarse de las funciones de auditoría avanzada de nivel de usuario, e
 
 Para los clientes que cumplan los requisitos y los usuarios a los que se les asigne la licencia adecuada, no hay ninguna acción que deban ejercer para acceder a los eventos de auditoría fundamentales.
 
-**¿Cuándo estará disponible la nueva licencia del complemento de retención de registros de auditoría de 10 años?**
+**¿Qué ocurre con los datos de registro de auditoría de mi organización si creé una directiva de retención de registros de auditoría de 10 años cuando la característica se publicó para su disponibilidad general, pero antes de que la licencia del complemento necesaria estuviera disponible?**
 
-La compra del nuevo complemento de retención de registro de auditoría de 10 años está ahora disponible para los clientes que tengan suscripciones a E5.
+Los datos de registro de auditoría cubiertos por una directiva de retención de registros de auditoría de 10 años que creó después de que la característica se publicara para que su disponibilidad general en el último trimestre de 2020 se conservarán durante 10 años. Esto incluye las directivas de retención de registros de auditoría de 10 años que se crearon antes de que se publicara la licencia del complemento necesaria para su compra. Pero, como la licencia del complemento de retención del registro de auditoría de 10 años ya está disponible, tendrá que comprar y asignar esas licencias de complemento para los usuarios cuyos datos de auditoría estén cubiertos por una directiva de retención de auditoría de 10 años.
 
-**¿Qué ocurre con los datos de registro de auditoría de mi organización si creé una directiva de retención de registros de auditoría de 10 años cuando la característica se publicó para su disponibilidad general, pero antes de que la licencia del complemento necesaria estuviera disponible en febrero de 2021?**
+**¿Están disponibles los nuevos eventos de Auditoría avanzada en la API de Actividad de administración de Office 365?**
 
-Todos los datos del registro de auditoría cubiertos por una directiva de retención de registro de auditoría de 10 años creada después de la disponibilidad general se conservarán durante 10 años. Cuando la licencia del complemento de retención del registro de auditoría de 10 años esté disponible a principios de 2021, tendrá que adquirir licencias de complemento para los usuarios cuyos datos de auditoria se retengan por una directiva de retención de auditoria existente de 10 años.
-
-**¿Están disponibles los nuevos eventos de la auditoría avanzada en la API de Actividad de administración de Office 365?**
-
-Sí. Siempre que los registros de auditoría se generen para los usuarios con la licencia apropiada, podrá obtener acceso a estos registros a través de la API de Actividad de administración de Office 365.
+Sí, siempre que los registros de auditoría se generen para los usuarios con la licencia apropiada, podrá obtener acceso a estos registros a través de la API de Actividad de administración de Office 365.
 
 **¿Un ancho de banda mayor significa una mayor latencia o un SLA mayor?**
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Instrucciones para crear y publicar etiquetas de retención para aplicarlas en aplicaciones y así conservar lo que necesita y eliminar lo que no.
-ms.openlocfilehash: c327081109fe9d7c4d85d4cf8f01a9e5466432d1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7c13158d9ce2857c01cad60c77b6f27bce6d3b6b
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908424"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107652"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>Crear etiquetas de retención y aplicarlas en aplicaciones
 
@@ -51,7 +51,7 @@ El administrador global de su organización tiene permisos totales para crear y 
 
 ## <a name="how-to-create-and-publish-retention-labels"></a>Cómo crear y publicar etiquetas de retención
 
-En primer lugar, cree las etiquetas de retención. A continuación, cree una directiva de etiqueta para que las etiquetas estén disponibles para aplicarlas en las aplicaciones.
+Primero, cree sus etiquetas de retención. A continuación, cree una directiva de etiqueta para que las etiquetas estén disponibles para aplicarlas en las aplicaciones.
 
 El lugar donde se crean y configuran las etiquetas de retención depende de si se utiliza la administración de registros o no. Se proporcionan instrucciones para ambos escenarios.
 
@@ -123,7 +123,7 @@ Si las etiquetas no aparecen después de siete días, compruebe el **Estado** de
 
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Cómo comprobar el estado de las etiquetas de retención publicadas en Exchange
 
-En Exchange Online, las etiquetas de retención están disponibles para los usuarios finales mediante un proceso que se ejecuta cada siete días. Con PowerShell, puede ver cuándo se ejecutó este proceso por última vez y así identificar cuándo se volverá a ejecutar.
+En Exchange Online, las etiquetas de retención se publican para los usuarios finales mediante un proceso que se ejecuta cada siete días. Con PowerShell, puede ver cuándo se ha ejecutado este proceso por última vez y, por tanto, identificar cuándo volverá a ejecutarse.
   
 1. [Conéctese al PowerShell de Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
     
@@ -294,7 +294,7 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 ### Deleting retention labels
 
-You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records. The ability to delete retention labels that mark items as records is currently rolling out in preview.
+You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records.
 
 For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
 

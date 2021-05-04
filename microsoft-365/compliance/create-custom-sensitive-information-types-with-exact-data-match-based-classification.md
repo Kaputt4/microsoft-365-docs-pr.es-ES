@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Aprenda a crear tipos de información confidencial personalizada con la clasificación basada en la coincidencia exacta de datos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9288a7bc1bf93f1fa7ac329305bdc45c3cb1528c
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: a6e4429718de05362bd6bd3336c9d19ceeec64b9
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408649"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114002"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
@@ -48,7 +48,7 @@ Pero ¿qué sucede si quiere un tipo de información confidencial personalizado 
 
 ![Clasificación basada en EDM](../media/EDMClassification.png)
 
-La clasificación basada en EDM le permite crear tipos de información confidencial personalizados que hacen referencia a valores exactos en una base de datos de información confidencial. La base de datos se puede actualizar diariamente y puede contener hasta 100 millones de filas de datos. Así que mientras los empleados, clientes o pacientes van y vienen y cambian los registros, los tipos de información confidencial se mantienen al día y aplicables. Y puede usar la clasificación basada en EDM con directivas, como [directivas de prevención de pérdida de datos](data-loss-prevention-policies.md) (DLP) o [directivas de archivo de Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
+La clasificación basada en EDM le permite crear tipos de información confidencial personalizados que hacen referencia a valores exactos en una base de datos de información confidencial. La base de datos se puede actualizar diariamente y puede contener hasta 100 millones de filas de datos. Así que mientras los empleados, clientes o pacientes van y vienen y cambian los registros, los tipos de información confidencial se mantienen al día y aplicables. Y puede usar la clasificación basada en EDM con directivas, como [directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md) o [directivas de archivo de Microsoft Cloud App Security](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
 > Microsoft 365 Information Protection es compatible con los idiomas del conjunto de caracteres de doble byte de vista previa para:
@@ -167,7 +167,7 @@ Al incluir el campo ***ignoredDelimiters** _ con caracteres compatibles, EDM pas
 - \~
 - \; 
 
-- El indicador `ignoredDelimiters` no es compatible con:
+El indicador `ignoredDelimiters` no es compatible con:
 - caracteres 0-9
 - A-Z
 - a-z
@@ -301,6 +301,8 @@ En este ejemplo, tenga en cuenta lo siguiente:
 
 > [!NOTE]
 > La actualización de EDMSchema con adiciones puede tardar de 10 a 60 minutos. La actualización debe completarse antes de ejecutar los pasos que usan las adiciones.
+ 
+Después de que haya importado su paquete de reglas con el tipo de información confidencial EDM, así como la tabla de datos confidenciales, puede probar el último tipo de que creado usando la función **Test** en el asistente EDM del centro de cumplimiento. Consulte las instrucciones [Utilice el esquema de coincidencia de datos exactos y el asistente para tipos de información confidencial](sit-edm-wizard.md) sobre cómo usar esta funcionalidad.
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>Editar el esquema de la clasificación basada en EDM
 
@@ -655,7 +657,7 @@ Los tipos de información confidencial de EDM para las siguientes situaciones es
 
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 - [Obtener más información acerca de los tipos de información confidencial](sensitive-information-type-learn-about.md).
-- [Información general de directivas DLP](data-loss-prevention-policies.md)
+- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Microsoft Cloud App Security](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)
 - [Modificar esquema de coincidencia de datos exacto para usar la coincidencia configurable](sit-modify-edm-schema-configurable-match.md)

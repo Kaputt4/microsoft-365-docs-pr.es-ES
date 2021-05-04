@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar el examinador local de prevención de pérdida de datos de Microsoft 365 para examinar los datos almacenados e implementar las acciones de protección para los recursos compartidos de archivos locales y las carpetas y bibliotecas de documentos de SharePoint local.
-ms.openlocfilehash: c46b67ca392732616329bad138166c892cd06640
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0abe36af5588c1828da106779a144b6e7f37d6a8
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917826"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114158"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Usar el examinador de prevención de pérdida de datos locales de Microsoft 365 (versión preliminar)
 
@@ -32,7 +32,7 @@ Para ayudarle a familiarizarse con las características de DLP locales y la form
 
 > [!IMPORTANT]
 > Estos escenarios DLP locales no son los procedimientos oficiales para crear y optimizar directivas DLP. Consulte los temas siguientes cuando necesite trabajar con directivas DLP en situaciones generales:
->- [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
+>- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 >- [Introducción a la directiva predeterminada de DLP](get-started-with-the-default-dlp-policy.md)
 >- [Crear una directiva DLP a partir de una plantilla](create-a-dlp-policy-from-a-template.md)
 >- [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
@@ -80,6 +80,6 @@ Si quiere exigir las reglas DLP en los archivos examinados, debe habilitarse la 
 
 - [Obtener información acerca del examinador local DLP (vista previa)](dlp-on-premises-scanner-learn.md)
 - [Introducción al examinador local DLP (vista previa)](dlp-on-premises-scanner-get-started.md)
-- [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
+- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)

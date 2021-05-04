@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de contenido le permite ver elementos etiquetados de forma nativa.
-ms.openlocfilehash: 19ad68d3c32046754e366919e8c4e66336945624
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: b39dd09012e7cde6c19ea88a0915154da84c712a
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080729"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114220"
 ---
 # <a name="get-started-with-content-explorer"></a>Introducción al explorador de contenido
 
@@ -82,7 +82,7 @@ El explorador de contenido muestra una instantánea actual de los elementos que 
 
 ### <a name="sensitive-information-types"></a>Tipos de información confidencial
 
-Una [directiva DLP](data-loss-prevention-policies.md) puede ayudar a proteger información confidencial, lo que se define como un **tipo de información confidencial**. Microsoft 365 incluye [definiciones para muchos tipos comunes de información confidencial](sensitive-information-type-entity-definitions.md) de muchas regiones diferentes y listas para su uso. Por ejemplo, un número de tarjeta de crédito, números de cuenta bancaria, números de identificación nacionales y números de servicio de Windows Live Id.  
+Una [directiva DLP](dlp-learn-about-dlp.md) puede ayudar a proteger información confidencial, lo que se define como un **tipo de información confidencial**. Microsoft 365 incluye [definiciones para muchos tipos comunes de información confidencial](sensitive-information-type-entity-definitions.md) de muchas regiones diferentes y listas para su uso. Por ejemplo, un número de tarjeta de crédito, números de cuenta bancaria, números de identificación nacionales y números de servicio de Windows Live Id.  
 
 > [!NOTE]
 > Actualmente, el explorador de contenido no busca ningún tipo de información confidencial en Exchange Online.
@@ -145,4 +145,4 @@ Puede buscar en:
 - [Información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
 - [Información sobre las directivas de retención y las etiquetas de retención](retention.md)
 - [Definiciones de entidad de tipos de información confidencial.md](sensitive-information-type-entity-definitions.md)
-- [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
+- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 42fe70d1360f45deb6f98f41c0ffec97de7e00a9
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 2c63f668cd4ccbad55a883aaf2b245c4936e25eb
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498348"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860959"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -124,7 +124,7 @@ Los elementos heredan la configuración de retención de su contenedor especific
 
 ### <a name="retention-labels"></a>Etiquetas de retención
 
-Use las etiquetas de retención para diferentes tipos de contenido que requieran una configuración de retención diferente. Por ejemplo:
+Use etiquetas de retención para diferentes tipos de contenido que requieran una configuración de retención diferente. Por ejemplo:
   
 - Formularios fiscales que deben conservarse durante un período mínimo de tiempo. 
     
@@ -155,7 +155,7 @@ Además, las etiquetas de retención admiten la [administración de registros](r
 
 Las etiquetas de retención, al igual que las [etiquetas de confidencialidad de ](sensitivity-labels.md), no se conservan si el contenido se mueve fuera de Microsoft 365.
 
-No hay límite en el número de etiquetas de retención que se apoyan para un inquilino. Sin embargo, 10 000 es el número máximo de directivas que se admiten para un inquilino y éstas incluyen las directivas que aplican las etiquetas (directivas de etiquetas de retención y directivas de retención de aplicación automática), así como las directivas de retención.
+No hay límite en el número de etiquetas de retención que se admiten para un espacio empresarial. Sin embargo, 10 000 es el número máximo de directivas que se admiten para un espacio empresarial y estas incluyen las directivas que aplican las etiquetas (directivas de etiquetas de retención y directivas de retención de aplicación automática), así como las directivas de retención.
 
 #### <a name="classifying-content-without-applying-any-actions"></a>Clasificar contenido sin aplicar acciones
 
@@ -193,7 +193,7 @@ En función de la finalidad de las etiquetas de retención, pueden publicarse en
 |Se aplica automáticamente en función de los tipos de información confidencial o clasificadores que se pueden entrenar  <br/> |Exchange (solo todos los buzones), SharePoint, OneDrive  <br/> |
 |Se aplica automáticamente basándose en una consulta  <br/> |Exchange, SharePoint, OneDrive, Grupos de Microsoft 365  <br/> |
    
-En Exchange, las etiquetas de retención que aplica de manera automática solo se aplican a mensajes nuevos enviados (datos en tránsito), no a todos los elementos que estén actualmente en el buzón (datos en reposo). Además, las etiquetas de aplicación automática para tipos de información confidencial y clasificadores que se pueden entrenar solo se pueden aplicar a todos los buzones; es decir, no puede seleccionar buzones concretos.
+En Exchange, las etiquetas de retención que aplica de manera automática solo a los nuevos mensajes enviados (datos en tránsito), no a todos los elementos que ya están presentes en el buzón (datos en reposo). Además, las etiquetas de retención de aplicación automática para tipos de información confidencial y los clasificadores entrenables se aplican a todos los buzones (no se pueden seleccionar buzones específicos).
   
 Las carpetas públicas de Exchange y los mensajes de Skype, Teams y Yammer no admiten etiquetas de retención. Para conservar y eliminar contenido de estas ubicaciones, use en cambio directivas de retención.
 

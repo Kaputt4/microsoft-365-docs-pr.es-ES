@@ -21,21 +21,21 @@ search.appverid:
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
-description: Obtenga información sobre cómo importar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a buzones de Microsoft 365.
-ms.openlocfilehash: 83ba81907a9db8dd1f4e95e5df3306366838c1ba
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+description: Obtenga información sobre cómo importar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a Microsoft 365 buzones de correo.
+ms.openlocfilehash: 22a2e6dbadc3c259896348fc89754882db85cfb4
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163655"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764115"
 ---
 # <a name="archive-third-party-data"></a>Archivar datos de terceros
 
-Microsoft 365 permite a los administradores usar conectores de datos para importar y archivar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos, a buzones de su organización de Microsoft 365. Una de las principales ventajas de usar conectores de datos para importar y archivar datos de terceros en Microsoft 365 es que puede aplicar varias soluciones de cumplimiento de Microsoft 365 después de importarlos. Esto le ayuda a asegurarse de que los datos que no son de Microsoft de su organización cumplen con las normativas y estándares que afectan a su organización.
+Microsoft 365 permite a los administradores usar conectores de datos para importar y archivar datos de terceros desde plataformas de redes sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos, a buzones de correo de su Microsoft 365 organización. Una ventaja principal del uso de conectores de datos para importar y archivar datos de terceros en Microsoft 365 es que puede aplicar varias soluciones de cumplimiento de Microsoft 365 después de importarlos. Esto le ayuda a asegurarse de que los datos que no son de Microsoft de su organización cumplen con las normativas y estándares que afectan a su organización.
 
 ## <a name="third-party-data-connectors"></a>Conectores de datos de terceros
 
-En la tabla siguiente se enumeran los conectores de datos de terceros disponibles en el Centro de cumplimiento de Microsoft 365. La tabla también resume las soluciones de cumplimiento que puede aplicar a datos de terceros después de importar y archivar en Microsoft 365. Vea la [siguiente sección para](#overview-of-compliance-solutions-that-support-third-party-data) obtener una descripción más detallada de cada solución de cumplimiento y cómo puede beneficiar a los datos de terceros.
+En la tabla siguiente se enumeran los conectores de datos de terceros disponibles en el Microsoft 365 de cumplimiento. La tabla también resume las soluciones de cumplimiento que puede aplicar a datos de terceros después de importar y archivar en Microsoft 365. Vea la [siguiente sección para](#overview-of-compliance-solutions-that-support-third-party-data) obtener una descripción más detallada de cada solución de cumplimiento y cómo puede beneficiar a los datos de terceros.
 
 > [!TIP]
 > Haga clic en  el vínculo de la columna de datos de terceros para ir a las instrucciones paso a paso para crear un conector para ese tipo de datos.
@@ -47,17 +47,19 @@ En la tabla siguiente se enumeran los conectores de datos de terceros disponible
 |[Red de Bell <sup>1</sup>](archive-bell-network-data.md)     |![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Mensaje de Bloomberg](archive-bloomberg-message-data.md)     |![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[CellTrust <sup>2</sup>](archive-celltrust-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
-|[Cisco Jabber <sup>2</sup>](archive-ciscojabberonmssql-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
+|[Cisco Jabber en MS SQL <sup>2</sup>](archive-ciscojabberonmssql-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
+|[Cisco Jabber en Oracle <sup>2</sup>](archive-ciscojabberonoracle-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
+|[Cisco Jabber en PostgreSQL <sup>2</sup>](archive-ciscojabberonpostgresql-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[EML <sup>2</sup>](archive-eml-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
-|[Número de <sup>empresa 1</sup>](archive-enterprise-number-data.md)     |![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
+|[Enterprise Número <sup>1</sup>](archive-enterprise-number-data.md)     |![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
-|[FX Connect <sup>2</sup>](archive-fxconnect-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
+|[FX Conectar <sup>2</sup>](archive-fxconnect-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Recursos humanos (RRHH)](import-hr-data.md) ||||||![Marca de verificación](../media/checkmark.png)
 |[Chat ICE](archive-icechat-data.md)     |![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
-|[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
+|[Bloomberg instantáneo](archive-instant-bloomberg-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Jive <sup>2</sup>](archive-jive-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
-|[LinkedIn](archive-linkedin-data.md)   |![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
-|[MS SQL base <sup>de datos 2</sup>](archive-mssqldatabaseimporter-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
+|[Linkedin](archive-linkedin-data.md)   |![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
+|[MS SQL Database <sup>2</sup>](archive-mssqldatabaseimporter-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|||
 |[Red O2 <sup>1</sup>](archive-o2-network-data.md)     |![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
 |[Problemas físicos](import-physical-badging-data.md) ||||||![Marca de verificación](../media/checkmark.png)|
 |[Pivot <sup>2</sup>](archive-pivot-data.md)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)|![Marca de verificación](../media/checkmark.png)||
@@ -90,7 +92,7 @@ Los datos de terceros enumerados en la tabla anterior (excepto los datos de recu
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>Información general sobre las soluciones de cumplimiento que admiten datos de terceros
 
-En las secciones siguientes se describen algunas de las cosas que las soluciones de cumplimiento de Microsoft 365 pueden ayudarle a administrar los datos de terceros enumerados en la tabla anterior.
+En las secciones siguientes se describen algunas de las cosas que las soluciones de cumplimiento Microsoft 365 pueden ayudarle a administrar los datos de terceros enumerados en la tabla anterior.
 
 ### <a name="litigation-hold"></a>Retención por juicio
 
@@ -98,15 +100,15 @@ Se coloca una retención [por juicio](create-a-litigation-hold.md) en un buzón 
 
 ### <a name="ediscovery"></a>eDiscovery
 
-Las tres herramientas principales de exhibición de documentos electrónicos en Microsoft 365 son búsqueda de contenido, eDiscovery principal y eDiscovery avanzada.
+Las tres herramientas principales de exhibición de documentos electrónicos Microsoft 365 búsqueda de contenido, eDiscovery principal y Advanced eDiscovery.
 
 - **[Búsqueda de contenido](content-search.md).** Puede usar la herramienta de búsqueda de contenido para buscar en buzones de correo datos de terceros que importó. Puede usar las consultas y condiciones de búsqueda para restringir los resultados de búsqueda y exportar los resultados de la búsqueda.
 
 - **[EDiscovery principal](get-started-core-ediscovery.md).** Esta herramienta se basa en la funcionalidad básica de búsqueda y exportación, ya que permite crear casos que le permitan controlar quién puede tener acceso a los datos de casos, colocar una retención en los buzones de usuario o contenido de buzones de correo que coincida con los criterios de búsqueda. Esto significa que puede colocar una retención de exhibición de documentos electrónicos en los datos de terceros que se importaron a los buzones de usuario.
 
-- **[Exhibición de documentos electrónicos avanzada](overview-ediscovery-20.md).** Esta eficaz herramienta amplía la funcionalidad de casos de eDiscovery principal, ya que permite agregar custodios a un caso, poner los datos del custodio en espera y, a continuación, cargar los datos de terceros de un custodio en una revisión para análisis adicionales, como temas y detección de duplicados. Después de cargar datos de terceros en un conjunto de revisión, puede consultarlo y filtrarlo a un conjunto de resultados estrecho.
+- **[Advanced eDiscovery](overview-ediscovery-20.md).** Esta eficaz herramienta amplía la funcionalidad de casos de eDiscovery principal, ya que permite agregar custodios a un caso, poner los datos del custodio en espera y, a continuación, cargar los datos de terceros de un custodio en una revisión para análisis adicionales, como temas y detección de duplicados. Después de cargar datos de terceros en un conjunto de revisión, puede consultarlo y filtrarlo a un conjunto de resultados estrecho.
 
-   Tanto la exhibición de documentos electrónicos principales como la exhibición de documentos electrónicos avanzada le permiten administrar datos de terceros que pueden ser relevantes para las investigaciones legales o internas de su organización.
+   Tanto la exhibición de documentos electrónicos principales como Advanced eDiscovery permiten administrar datos de terceros que pueden ser relevantes para las investigaciones legales o internas de su organización.
 
 ### <a name="retention-settings"></a>Configuración de retención
 
@@ -114,7 +116,7 @@ Puede aplicar una [directiva](retention.md) de retención a los buzones de usuar
 
 ### <a name="records-management"></a>Administración de registros
 
-La [característica de administración](records-management.md) de registros de Microsoft 365 le permite declarar datos de terceros como un registro. Esto lo pueden hacer manualmente los usuarios que aplican una etiqueta de retención que marca los datos de terceros en su buzón como registro. También puede aplicar automáticamente etiquetas de retención identificando información confidencial, palabras clave o tipos de contenido en datos de terceros.
+La [característica de administración](records-management.md) de registros Microsoft 365 permite declarar datos de terceros como un registro. Esto lo pueden hacer manualmente los usuarios que aplican una etiqueta de retención que marca los datos de terceros en su buzón como registro. También puede aplicar automáticamente etiquetas de retención identificando información confidencial, palabras clave o tipos de contenido en datos de terceros.
 
 ### <a name="communication-compliance"></a>Cumplimiento de comunicaciones
 
@@ -126,6 +128,6 @@ Las señales de datos de terceros, como los datos de recursos humanos selectivos
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Trabajar con un partner de Microsoft para archivar datos de terceros
 
-Otra opción para importar y archivar datos de terceros es que su organización trabaje con un partner de Microsoft. Si los conectores de datos disponibles en el centro de cumplimiento de Microsoft no admiten un tipo de datos de terceros, puede trabajar con un partner que pueda proporcionar un conector personalizado que se configurará para extraer elementos del origen de datos de terceros de forma regular y, a continuación, conectarse a la nube de Microsoft mediante una API de terceros e importar esos elementos a Microsoft 365. El conector de asociado también convierte el contenido de un elemento del origen de datos de terceros en un mensaje de correo electrónico y, a continuación, lo importa a un buzón en Microsoft 365.
+Otra opción para importar y archivar datos de terceros es que su organización trabaje con un partner de Microsoft. Si un tipo de datos de terceros no es compatible con los conectores de datos disponibles en el Centro de cumplimiento de Microsoft, puede trabajar con un partner que pueda proporcionar un conector personalizado que se configurará para extraer elementos del origen de datos de terceros de forma regular y, a continuación, conectarse a la nube de Microsoft mediante una API de terceros e importar esos elementos a Microsoft 365. El conector de asociado también convierte el contenido de un elemento del origen de datos de terceros en un mensaje de correo electrónico y, a continuación, lo importa a un buzón en Microsoft 365.
 
-Para obtener una lista de partners con los que puede trabajar y el proceso paso a paso para este método, vea Trabajar con un partner para archivar datos de terceros en [Microsoft 365](work-with-partner-to-archive-third-party-data.md).
+Para obtener una lista de socios con los que puede trabajar y el proceso paso a paso para este método, vea Trabajar con un partner para archivar datos de terceros en [Microsoft 365](work-with-partner-to-archive-third-party-data.md).

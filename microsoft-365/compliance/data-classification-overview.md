@@ -1,5 +1,5 @@
 ---
-title: Introducción a la clasificación de los datos
+title: Obtenga información sobre la clasificación de datos.
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: 8f3bb2da1e7011fef334ec345a02d7facedc25fc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2867e545221061f5f99bf7ff669f9655b3777ba8
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922684"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899390"
 ---
-# <a name="know-your-data---data-classification-overview"></a>Información general sobre la clasificación de datos
+# <a name="learn-about-data-classification"></a>Obtenga información sobre la clasificación de datos.
 
 Como administrador de Microsoft 365 o administrador de cumplimiento, puede evaluar y etiquetar el contenido de la organización para controlar el lugar al que se dirige, protegerlo sin importar su ubicación y garantizar que se conserve y elimine en función de las necesidades de su organización. Para ello, puede aplicar [etiquetas de confidencialidad](sensitivity-labels.md) y [etiquetas de retención](retention.md#retention-labels) y clasificar la información según el tipo de confidencialidad. Hay varias formas de llevar a cabo la detección, la evaluación y el etiquetado, pero es posible que el resultado final sea un gran número de documentos y mensajes de correo electrónico marcados y clasificados con una o ambas etiquetas. Después de aplicar las etiquetas de retención y de confidencialidad, le interesará ver cómo se utilizan las etiquetas en el espacio empresarial y qué se hace con esos elementos. La página de clasificación de datos ofrece información sobre ese contenido, en particular:
 
@@ -36,8 +36,12 @@ Como administrador de Microsoft 365 o administrador de cumplimiento, puede evalu
 - las ubicaciones de los datos confidenciales y retenidos.
 
 También puede administrar estas características en la página de clasificación de datos:
+
 - [clasificadores que se pueden entrenar](classifier-learn-about.md)
-- [tipos de información confidencial](./sensitive-information-type-entity-definitions.md)
+- [tipos de información confidencial](sensitive-information-type-learn-about.md)
+- [coincidencias exactas de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [explorador de contenido](data-classification-content-explorer.md)
+- [explorador de actividad](data-classification-activity-explorer.md)
 
 Puede encontrar la clasificación de los datos en el **Centro de cumplimiento de Microsoft 365** o en el **Centro de seguridad de Microsoft 365** > **Clasificación** > **Clasificación de datos**.
 
@@ -113,7 +117,7 @@ La tarjeta de etiquetas principales de retención aplicadas muestra el número d
 
 ## <a name="top-activities-detected"></a>Actividades principales detectadas
 
-Esta tarjeta ofrece un breve resumen de las acciones más comunes que llevan a cabo los usuarios con los elementos etiquetados como confidenciales. Puede usar el [Explorador de actividad](data-classification-activity-explorer.md) para ver los detalles de las ocho diferentes actividades de las que Microsoft 365 realiza el seguimiento en el contenido etiquetado y en el contenido que se encuentra en los puntos de conexión de Windows 10.
+Esta tarjeta ofrece un breve resumen de las acciones más comunes que llevan a cabo los usuarios con los elementos etiquetados como confidenciales. Puede usar el [Explorador de actividad](data-classification-activity-explorer.md) para ver los detalles de las diferentes actividades de las que Microsoft 365 realiza el seguimiento en el contenido etiquetado y en el contenido que se encuentra en los puntos de conexión de Windows 10.
 
 > [!NOTE]
 > Si esta tarjeta muestra el mensaje "No se ha detectado ninguna actividad", significa que no ha habido ninguna actividad en los archivos o que no está activada la auditoría de usuarios y administradores. Para activar los registros de auditoría, vea:
@@ -124,7 +128,7 @@ Esta tarjeta ofrece un breve resumen de las acciones más comunes que llevan a c
 El informe de la clasificación de datos tiene la finalidad de ofrecer información sobre el número de elementos etiquetados y su ubicación. Estas tarjetas le permiten saber cuántos elementos etiquetados hay en Exchange, SharePoint y OneDrive, entre otros.
 
 > [!NOTE]
-> Si esta tarjeta muestra el mensaje "No se ha detectado ninguna ubicación", significa que no se ha creado ni publicado ninguna etiqueta de confidencialidad o que no hay ningún contenido con una etiqueta de retención aplicada. Para empezar a usar las etiquetas de confidencialidad, vea:
+> Si esta tarjeta muestra el mensaje "No se ha detectado ninguna ubicación", significa que no se ha creado ni publicado ninguna etiqueta de confidencialidad o que no hay ningún contenido con una etiqueta de retención aplicada. Para empezar a usar las etiquetas de confidencialidad, consulte:
 >- [Etiquetas de confidencialidad](sensitivity-labels.md)
 
 ## <a name="see-also"></a>Vea también
@@ -133,5 +137,6 @@ El informe de la clasificación de datos tiene la finalidad de ofrecer informaci
 - [Ver contenido etiquetado](data-classification-content-explorer.md)
 - [Más información sobre las etiquetas de confidencialidad](sensitivity-labels.md)
 - [Más información sobre las directivas y las etiquetas de retención](retention.md)
+- [Obtener más información acerca de los tipos de información confidencial](sensitive-information-type-learn-about.md)
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 - [Obtenga información sobre los clasificadores entrenables (versión preliminar)](classifier-learn-about.md)

@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Los trabajadores de la información en su organización tratan con diversos tipos de información confidencial durante un día normal. La creación de huella digital de documento facilita la protección de esta información al identificar los formularios estándar que se usan en toda la organización. En este tema se describen los conceptos detrás de la huella digital de documentos y cómo crear uno mediante PowerShell.
-ms.openlocfilehash: 1542b956d0a1f662e059ca59ea346a8afc439c83
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 392b42e779de249dddc0acb4c7c757a009f9f743
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918506"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086743"
 ---
 # <a name="document-fingerprinting"></a>Creación de huella digital de documento
 
@@ -39,13 +39,13 @@ Idealmente, la organización ya tiene una práctica de negocios establecida sobr
 Probablemente ya adivinó que los documentos no tienen huellas digitales reales, pero el nombre ayuda a explicar la característica. Del mismo modo que las huellas digitales de una persona tienen patrones únicos, los documentos tienen patrones de palabras únicos. Al cargar un archivo, DLP identifica el patrón de palabras único del documento, crea una huella digital de documento basada en ese patrón y usa esa huella digital del documento para detectar documentos salientes que contienen el mismo patrón. Por ello, la carga de un formulario o plantilla crea el tipo más efectivo de huella digital de documento. Todas las personas que rellenan un formulario usan el mismo conjunto de palabras original y después agregan sus propias palabras al documento. Siempre que el documento saliente no esté protegido con contraseña y contenga todo el texto del formulario original, DLP puede determinar si el documento coincide con la huella digital del documento.
 
 > [!IMPORTANT]
-> Por ahora, DLP puede usar la huella digital de documentos como método de detección solo en Exchange Online.
+> Por ahora, DLP puede usar la huella digital de documentos como método de detección Exchange en línea.
 
 El siguiente ejemplo muestra qué sucede si crea una huella digital de documento con base en una plantilla de patente, pero puede usar cualquier formulario como base para crear una huella digital de documento.
   
 ### <a name="example-of-a-patent-document-matching-a-document-fingerprint-of-a-patent-template"></a>Ejemplo de documento de patente que coincide con una huella digital de documento de una plantilla de patente
 
-![Document-Fingerprinting-diagram.png](../media/Document-Fingerprinting-diagram.png)
+![Diagrama de huella digital del documento.](../media/Document-Fingerprinting-diagram.png)
   
 La plantilla de patente contiene los campos en blanco "Título de patente", "Inventores" y "Descripción" y descripciones para cada uno de esos campos, es decir, el patrón de palabras. Al cargar la plantilla de patente original, está en uno de los tipos de archivo admitidos y en texto sin formato. DLP convierte este patrón de palabras en una huella digital de documento, que es un pequeño archivo XML Unicode que contiene un valor hash único que representa el texto original, y la huella digital se guarda como una clasificación de datos en Active Directory. (Como medida de seguridad, el propio documento original no se almacena en el servicio; solo se almacena el valor hash y el documento original no se puede reconstruir a partir del valor hash). A continuación, la huella digital de patente se convierte en un tipo de información confidencial que puede asociar a una directiva DLP. Después de asociar la huella digital a una directiva DLP, DLP detecta cualquier correo electrónico saliente que contenga documentos que coincidan con la huella digital de patente y se ocupa de ellos de acuerdo con la directiva de su organización. 
 
@@ -62,10 +62,11 @@ La huella digital de documentos no detectará información confidencial en los s
 - Archivos protegidos por contraseña
 - Archivos que solo contienen imágenes
 - Documentos que no contienen todo el texto del formulario original utilizado para crear la huella digital de documento
+- Archivos superiores a 10 MB
 
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Usar PowerShell para crear un paquete de reglas de clasificación basado en la huella digital de documentos
 
-Tenga en cuenta que actualmente solo puede crear una huella digital de documento mediante PowerShell en el Centro de &amp; seguridad y cumplimiento. Para conectarse, vea [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+Tenga en cuenta que actualmente solo puede crear una huella digital de documento mediante PowerShell en el Centro de &amp; seguridad y cumplimiento. Para conectarse, [consulte Conectar Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 DLP usa paquetes de reglas de clasificación para detectar contenido confidencial. Para crear un paquete de reglas de clasificación basado en una huella digital de documento, use los cmdlets **New-DlpFingerprint** y **New-DlpSensitiveInformationType.** Dado que los resultados de **New-DlpFingerprint** no se almacenan fuera de la regla de clasificación de datos, siempre se ejecutan **New-DlpFingerprint** y **New-DlpSensitiveInformationType** o **Set-DlpSensitiveInformationType en** la misma sesión de PowerShell. En el ejemplo siguiente se crea una huella digital de documento nueva a partir del archivo C:\My Documents\Contoso Employee Template.docx. La nueva huella digital se almacena como variable para poder usarla con el cmdlet **New-DlpSensitiveInformationType** en la misma sesión de PowerShell.
   
@@ -90,7 +91,7 @@ Por último, agregue el paquete de regla de clasificación de datos "Contoso Cus
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-También puede usar el paquete de reglas de clasificación de datos en las reglas de flujo de correo en Exchange Online, como se muestra en el ejemplo siguiente. Para ejecutar este comando, primero debe conectarse [a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Tenga en cuenta también que el paquete de reglas tarda tiempo en sincronizarse desde el Centro de &amp; seguridad y cumplimiento con el Centro de administración de Exchange.
+También puede usar el paquete de reglas de clasificación de datos en las reglas de flujo de correo Exchange Online, como se muestra en el ejemplo siguiente. Para ejecutar este comando, primero debe Conectar [para Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Tenga en cuenta también que el paquete de reglas tarda tiempo en sincronizarse desde el Centro de seguridad &amp; y cumplimiento con el centro Exchange administración.
   
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}

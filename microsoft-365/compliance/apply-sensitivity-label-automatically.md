@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a archivos o correos electrónicos, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: d645d185524d111af4eafed4b5fba06483525a85
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 23320d962b52e1a443d459cb6b57d444fca91592
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920080"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939314"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -59,7 +59,7 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
     Vea las instrucciones de configuración en [Cómo configurar directivas de etiquetado automático para SharePoint, OneDrive y Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) en esta página.
     
     Específico para el etiquetado automático para SharePoint y OneDrive:
-    - Son compatibles los archivos de Office para Word, PowerPoint y Excel. El formato Open XML es compatible (como .docx y .xlsx), pero el formato de Microsoft Office 97-2003 (como .doc y .xls) no lo es.
+    - Son compatibles los archivos de Office para Word, PowerPoint y Excel. El formato Open XML (como .docx y .xlsx) es compatible, pero el formato de Microsoft Office 97-2003 (como .doc y .xls) no lo es.
         - Estos archivos se pueden etiquetar automáticamente en reposo antes o después de que se creen las políticas de etiquetado automático. Tenga en cuenta que los archivos no se pueden etiquetar automáticamente si forman parte de una sesión abierta (el archivo está abierto).
     - Máximo 25 000 archivos etiquetados automáticamente en su espacio empresarial por día
     - Máximo de 10 directivas de etiquetado automático por espacio empresarial, cada una con un máximo de 10 sitios (SharePoint o OneDrive).
@@ -71,7 +71,9 @@ Hay dos métodos diferentes para aplicar automáticamente una etiqueta de confid
         - Para estos archivos de Office, el formato Open XML es compatible (como .docx y .xlsx), pero el formato de Microsoft Office 97-2003 (como .doc y .xls) no lo es.
     - Si tiene reglas de flujo de correo de Exchange o directivas de prevención de pérdida de datos (DLP) que aplican el cifrado IRM: cuando estas reglas o directivas y una directiva de etiquetado automático identifican contenido, se aplica la etiqueta. Si esa etiqueta aplica el cifrado, la configuración de IRM de las reglas de flujo de correo de Exchange o de las directivas DLP se pasa por alto. Sin embargo, si esa etiqueta no aplica el cifrado, la configuración de IRM de las reglas de flujo de correo o de las directivas DLP se aplica además de la etiqueta.
     - El correo electrónico con cifrado IRM sin etiqueta se reemplazará por una etiqueta con una configuración de cifrado cuando haya una coincidencia al usar etiquetado automático.
-    - El correo electrónico entrante se etiquetará cuando haya una coincidencia con las condiciones de etiquetado automático. Sin embargo, si la etiqueta está configurada para el cifrado, no se aplica el cifrado.
+    - El correo electrónico recibido se etiquetará cuando haya una coincidencia con las condiciones de etiquetado automático:
+        - Si la etiqueta está configurada para el [cifrado](encryption-sensitivity-labels.md), este cifrado no se aplica.
+        - Si la etiqueta está configurada para aplicar [marcas dinámicas](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), tenga en cuenta que esto puede afectar a los nombres de las personas externas a su organización.
     - Cuando la etiqueta aplica cifrado, el [emisor de la administración de derechos y el propietario la administración de derechos](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) es la persona que envía el correo electrónico.
     
 
@@ -168,7 +170,7 @@ Si lo prefiere, puede recomendar a los usuarios que apliquen la etiqueta. Con es
 
 ![Opción para recomendar una etiqueta de confidencialidad a los usuarios](../media/Sensitivity-labels-Recommended-label-option.png)
 
-Este es un ejemplo de un mensaje de un cliente de etiquetado unificado de Azure Information Protection que se muestra al configurar una condición para que se aplique una etiqueta como acción recomendada con una sugerencia de directiva personalizada.  Puede elegir el texto que se muestra en la sugerencia de directiva.
+Este es un ejemplo de un mensaje de un cliente de etiquetado unificado de Azure Information Protection que se muestra al configurar una condición para que se aplique una etiqueta como acción recomendada con una sugerencia de directiva personalizada. Puede elegir el texto que se muestra en la sugerencia de directiva.
 
 ![Mensaje para aplicar una etiqueta recomendada](../media/Sensitivity-label-Prompt-for-required-label.png)
 
@@ -204,7 +206,7 @@ Asegúrese de tener en cuenta los requisitos previos antes de configurar las dir
 
 - Modo de simulación:
     - Se debe activar la auditoría de Microsoft 365. Si necesita activar la auditoría o no está seguro de si la auditoría ya está activada, consulte [Activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md).
-    - Para ver el contenido de los archivos en la vista de origen, debe tener el rol de **Visor de contenido en el explorador de contenido**. Los administradores globales no tienen este rol de forma predeterminada. Si no tiene este permiso, no verá el panel de vista previa cuando seleccione un elemento en la pestaña **Elementos coincidentes**.
+    - Para ver el contenido de los archivos o del correo electrónico en la vista de origen, debe tener el rol de **Visor de contenido en el explorador de contenido**. Los administradores globales no tienen este rol de forma predeterminada. Si no tiene este permiso, no verá el panel de vista previa cuando seleccione un elemento en la pestaña **Elementos coincidentes**.
 
 - Para etiquetar automáticamente archivos en SharePoint y OneDrive:
     - Tiene [etiquetas de confidencialidad habilitadas para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).

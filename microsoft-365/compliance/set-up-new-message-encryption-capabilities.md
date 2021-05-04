@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre las nuevas funcionalidades de cifrado de mensajes de Office 365 que permiten la comunicación por correo electrónico protegido con personas de dentro y fuera de su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1519748c4bd535e0a3ea1cc3ee653e2c81e807bd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cf37826c3e1e349947ab83fe211f9406a765e5ea
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919396"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876309"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Configurar las nuevas capacidades de cifrado de mensajes
 
@@ -44,7 +44,7 @@ Azure RMS también se activa automáticamente en la mayoría de los planes compa
 
 Para obtener más información, vea:
 
-- [¿Qué suscripciones necesito para usar las nuevas funcionalidades de OME?](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities) para comprobar si el plan de suscripción incluye Azure Information Protection (que incluye la funcionalidad de Azure RMS).
+- [¿Qué suscripciones necesito para usar las nuevas funcionalidades de OME?](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-) para comprobar si el plan de suscripción incluye Azure Information Protection (que incluye la funcionalidad de Azure RMS).
 - [Azure Information Protection](https://azure.microsoft.com/services/information-protection/) para obtener información sobre cómo comprar una suscripción apta.  
 
 ### <a name="manually-activating-azure-rights-management"></a>Activar Azure Rights Management manualmente
@@ -112,7 +112,7 @@ Puede comprobar que su espacio empresarial de Microsoft 365 está configurado co
 
 ## <a name="next-steps-define-mail-flow-rules-to-use-new-ome-capabilities"></a>Pasos siguientes: defina reglas de flujo de correo para usar las nuevas funcionalidades de OME
 
-Si existen reglas de flujo de correo configuradas previamente para cifrar el correo electrónico de su organización, debe actualizar las reglas existentes para usar las nuevas funcionalidades de OME. Para las nuevas implementaciones, debe crear nuevas reglas de flujo de correo.
+Si existen reglas de flujo de correo configuradas previamente para cifrar el correo electrónico de su organización, debe actualizar las reglas existentes para usar las nuevas funcionalidades de OME. Para nuevas implementaciones, debe crear nuevas reglas de flujo de correo.
 
 >[!IMPORTANT]
 >Si no actualiza las reglas de flujo de correo existentes, los usuarios seguirán recibiendo correo cifrado con el formato de archivo adjunto HTML anterior, en lugar de la nueva experiencia de OME de conexión directa.

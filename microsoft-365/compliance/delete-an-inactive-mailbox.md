@@ -17,32 +17,32 @@ search.appverid:
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
-description: Cuando ya no necesite conservar el contenido de un buzón inactivo de Microsoft 365, puede eliminar permanentemente el buzón inactivo.
-ms.openlocfilehash: 94a20bee1ca3d11a193a25efeb6d73f356e1d58d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Cuando ya no necesite conservar el contenido de un buzón Microsoft 365 inactivo, puede eliminar permanentemente el buzón inactivo.
+ms.openlocfilehash: 077a71bfdd82721e0992e5d14073aa037b7cfd1b
+ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909930"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100829"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Eliminar un buzón inactivo
 
-Un buzón inactivo se usa para conservar el correo electrónico de un antiguo empleado después de salir de la organización. Cuando ya no necesita conservar el contenido de un buzón inactivo, puede quitar su retención para eliminarlo de forma permanente. Además, es posible que varias retenciones se coloquen en un buzón inactivo. Por ejemplo, un buzón inactivo puede colocarse en retención de litigios y en una o varias retenciones locales. Además, se puede aplicar una directiva de retención (creada en el Centro de seguridad y cumplimiento en Office 365 o Microsoft 365) al buzón inactivo. Debe quitar todas las directivas de retención y retención de un buzón inactivo para eliminarlo. Después de quitar las directivas de retención y retención, el buzón inactivo se marca para su eliminación y se elimina permanentemente después de procesarlo.
+Un buzón inactivo se usa para conservar el correo electrónico de un antiguo empleado después de salir de la organización. Cuando ya no necesita conservar el contenido de un buzón inactivo, puede quitar su retención para eliminarlo de forma permanente. Además, es posible que varias retenciones se coloquen en un buzón inactivo. Por ejemplo, un buzón inactivo puede colocarse en retención de litigios y en una o varias retenciones locales. Además, se puede aplicar una directiva de retención (creada en el centro de seguridad y cumplimiento en Office 365 o Microsoft 365) al buzón inactivo. Debe quitar todas las directivas de retención y retención de un buzón inactivo para eliminarlo. Después de quitar las directivas de retención y retención, el buzón inactivo se marca para su eliminación y se elimina permanentemente después de procesarlo.
   
 > [!IMPORTANT]
-> A medida que seguimos invirtiendo en diferentes formas de conservar el contenido del buzón, anunciamos la retirada de las In-Place en el Centro de administración de Exchange. Esto significa que debe usar las directivas de retención y retención por juicio para crear un buzón inactivo. A partir del 1 de julio de 2020 no podrá crear nuevas In-Place en Exchange Online. Pero aún podrá cambiar la duración de retención de una retención In-Place en un buzón inactivo. Sin embargo, a partir del 1 de octubre de 2020, no podrá cambiar la duración de la retención. Solo podrá eliminar un buzón inactivo quitando la In-Place espera. Los buzones inactivos existentes que están en In-Place conservación se conservarán hasta que se quite la retención. Para obtener más información acerca de la retirada de In-Place, vea [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
+> A medida que seguimos invirtiendo de diferentes maneras para conservar el contenido del buzón, estamos anunciando la retirada de las In-Place en el centro Exchange administración. Esto significa que debe usar las directivas de retención y retención por juicio para crear un buzón inactivo. A partir del 1 de julio de 2020 no podrá crear nuevas retenciones In-Place en Exchange Online. Pero aún podrá cambiar la duración de retención de una retención In-Place en un buzón inactivo. Sin embargo, a partir del 1 de octubre de 2020, no podrá cambiar la duración de la retención. Solo podrá eliminar un buzón inactivo quitando la In-Place espera. Los buzones inactivos existentes que están en In-Place conservación se conservarán hasta que se quite la retención. Para obtener más información acerca de la retirada de In-Place, vea [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
   
 Consulte la sección [Más información](#more-information) para ver una descripción de lo que sucede una vez que se quitan las retenciones de un buzón inactivo.
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>Antes de eliminar un buzón inactivo
 
-- Debe usar Exchange Online PowerShell para quitar una retención por juicio de un buzón inactivo. No puede usar el Centro de administración de Exchange (EAC). Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Debe usar powershell Exchange Online para quitar una retención por juicio de un buzón inactivo. No puede usar el Centro de administración de Exchange (EAC). Para obtener instrucciones, consulte [Conexión a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Puede copiar el contenido de un buzón inactivo a otro buzón antes de quitar la retención y eliminar un buzón inactivo. Para obtener más información, [vea Restore an inactive mailbox in Office 365](restore-an-inactive-mailbox.md).
 
-- Si quita la directiva de retención o retención de un buzón inactivo y el período de retención del buzón eliminado temporalmente para el buzón ha expirado, el buzón se eliminará permanentemente. Una vez eliminado, no se puede recuperar. Antes de quitar la retención, asegúrese de que ya no necesita el contenido del buzón. Si desea reactivar un buzón inactivo, puede recuperarlo. Para obtener más información, [vea Recuperar un buzón inactivo en Office 365](recover-an-inactive-mailbox.md).
+- Si quita la directiva de retención o retención de un buzón inactivo y el período de retención del buzón eliminado temporalmente para el buzón ha expirado, el buzón se eliminará permanentemente. Una vez eliminado, no se puede recuperar. Antes de quitar la retención, asegúrese de que ya no necesita el contenido del buzón. Si desea reactivar un buzón inactivo, puede recuperarlo. Para obtener más información, [vea Recover an inactive mailbox in Office 365](recover-an-inactive-mailbox.md).
 
-- Para obtener más información acerca de los buzones inactivos, vea Buzones inactivos [en Office 365](inactive-mailboxes-in-office-365.md).
+- Para obtener más información acerca de los buzones inactivos, vea [Buzones](inactive-mailboxes-in-office-365.md)inactivos en Office 365 .
 
 ## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>Paso 1: identificar las retenciones en un buzón inactivo
 
@@ -92,11 +92,11 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   
 ### <a name="remove-an-inactive-mailbox-from-a-retention-policy"></a>Quitar un buzón inactivo de una directiva de retención
 
-El procedimiento para quitar un buzón inactivo de una directiva de retención de Microsoft 365 depende de si la directiva de retención asignada al buzón inactivo es explícita o de toda la organización. en el tipo de directiva de retención asignada al buzón inactivo.
+El procedimiento para quitar un buzón inactivo de una directiva de retención Microsoft 365 depende de si la directiva de retención asignada al buzón inactivo es explícita o de toda la organización. en el tipo de directiva de retención asignada al buzón inactivo.
 
 - Directivas de retención de toda la organización asignadas a todos los buzones de la organización. Use el cmdlet **Get-OrganizationConfig** en Exchange Online PowerShell para obtener información sobre las directivas de retención de toda la organización.
 
-- Directivas de retención de ubicación específicas asignadas a buzones específicos. Se trata de directivas que se asignan a las ubicaciones de contenido de usuarios específicos. Use el cmdlet **Get-Mailbox -Include QueMailbox** de Exchange Online PowerShell para obtener información sobre las directivas de retención asignadas a buzones inactivos específicos.
+- Directivas de retención de ubicación específicas asignadas a buzones específicos. Se trata de directivas que se asignan a las ubicaciones de contenido de usuarios específicos. Use el cmdlet **Get-Mailbox -Include QueMailbox** en Exchange Online PowerShell para obtener información sobre las directivas de retención asignadas a buzones inactivos específicos.
 
 #### <a name="remove-an-inactive-mailbox-from-an-organization-wide-retention-policy"></a>Quitar un buzón inactivo de una directiva de retención en toda la organización
 
@@ -206,25 +206,26 @@ Si la retención local contiene un gran número de buzones de origen, es posible
 
 ## <a name="more-information"></a>Más información
 
-- **Un buzón inactivo es un tipo de buzón eliminado temporalmente.** En Exchange Online, un buzón eliminado temporalmente es un buzón que se ha eliminado, pero se pueden recuperar en un período de retención específico. El período de retención del buzón eliminado temporalmente en Exchange Online es de 30 días. Esto significa que el buzón se puede recuperar en un plazo de 30 días después de eliminarse temporalmente. Después de 30 días, un buzón eliminado temporalmente se marca para su eliminación permanente y no puede recuperarse.
+- **Un buzón inactivo es un tipo de buzón eliminado temporalmente.** En Exchange Online, un buzón eliminado temporalmente es un buzón que se ha eliminado, pero se pueden recuperar en un período de retención específico. Un buzón inactivo anteriormente estará disponible como buzón eliminado temporalmente en Exchange Online durante 183 días. Esto significa que el buzón se puede recuperar dentro de los 183 días siguientes a la eliminación temporal. Después de 183 días, un buzón eliminado temporalmente se marca para su eliminación permanente y no se puede recuperar.
 
-- **¿Qué ocurre después de quitar la retención en un buzón inactivo?** El buzón de correo se considera como otros buzones eliminados temporalmente y se marca para eliminación permanente una vez que expire el período de retención de 30 días del buzón eliminado temporalmente. Este período de retención empieza en la fecha en que el buzón se volvió inactivo por primera vez. Esta fecha se conoce como la fecha de eliminación temporal, que es la fecha en que se eliminó la cuenta de usuario correspondiente o cuando se eliminó el buzón de Exchange Online con el cmdlet **Remove-Mailbox.** La fecha de eliminación temporal no es la fecha en que se quita la retención.
+- **¿Qué ocurre después de quitar la retención en un buzón inactivo?** El buzón se trata como otros buzones eliminados temporalmente y se marca para su eliminación permanente después de que expire el período de retención de buzones eliminado temporalmente de 183 días. Este período de retención empieza en la fecha en que el buzón se volvió inactivo por primera vez. Esta fecha se conoce como la fecha de eliminación temporal, que es la fecha en que se eliminó la cuenta de usuario correspondiente o cuando se eliminó el buzón de Exchange Online con el cmdlet **Remove-Mailbox.** La fecha de eliminación temporal no es la fecha en que se quita la retención.
 
-- **¿Un buzón inactivo se elimina de forma permanente inmediatamente después de quitar la retención?** Si la fecha de eliminación temporal para un buzón inactivo supera 30 días, el buzón no se eliminará permanentemente en cuanto se quite la retención. El buzón se marcará para su eliminación permanente y se eliminará la próxima vez que se procese.
-
-- **¿Cómo afecta a los buzones inactivos el período de retención de buzones eliminados temporalmente?** Si la fecha de eliminación temporal para un buzón inactivo es más de 30 días antes de la fecha en que se ha quitado la retención, el buzón se marca para su eliminación permanente. Pero si un buzón inactivo tiene una fecha de eliminación temporal en los últimos 30 días y se quita la retención, es posible recuperar el buzón hasta que expire el período de retención de buzones eliminados temporalmente. Para obtener más información, [vea Eliminar o restaurar buzones de usuario en Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes). Una vez expirado el período de retención de buzones eliminados temporalmente, debe seguir los procedimientos para recuperar un buzón inactivo. Para obtener más información, [vea Recuperar un buzón inactivo en Office 365](recover-an-inactive-mailbox.md).
+- **¿Un buzón inactivo se elimina de forma permanente inmediatamente después de quitar la retención?** Un buzón inactivo anteriormente estará disponible en el estado eliminado temporalmente durante 183 días. Después de 183 días, el buzón se marcará para su eliminación permanente.
 
 - **¿Cómo mostrar información sobre un buzón inactivo después de quitar la retención?** Después de quitar una retención y de que el buzón inactivo vuelva a un buzón eliminado temporalmente, no se devolverá mediante el parámetro *InactiveMailboxOnly* con el cmdlet **Get-Mailbox.** Pero puede mostrar información sobre el buzón mediante el comando **Get-Mailbox -SoftDeletedMailbox**. Por ejemplo:
 
   ```text
   Get-Mailbox -SoftDeletedMailbox -Identity pilarp | FL Name,Identity,LitigationHoldEnabled,In
-  Placeholds,WhenSoftDeleted,IsInactiveMailbox
+  Placeholds,WhenSoftDeleted,IsInactiveMailbox,WasInactiveMailbox,InactiveMailboxRetireTime
   Name                   : pilarp
   Identity               : Soft Deleted Objects\pilarp
   LitigationHoldEnabled  : False
   InPlaceHolds           : {}
-  WhenSoftDeleted        : 10/30/2014 1:19:04 AM
+  WhenSoftDeleted        : 6/16/2020 1:19:04 AM
   IsInactiveMailbox      : False
+  WasInactiveMailbox     : True
+  InactiveMailboxRetireTime : 9/30/2020 11:16:23 PM
   ```
 
-  En el ejemplo anterior, la propiedad *WhenSoftDeleted* identifica la fecha de eliminación temporal, que en este ejemplo es el 30 de octubre de 2014. Si este buzón eliminado temporalmente era anteriormente un buzón inactivo para el que se quitó la retención, se eliminará permanentemente 30 días después del valor de la propiedad *WhenSoftDeleted.* En este caso, el buzón se elimina permanentemente después del 30 de noviembre de 2014.
+  En el ejemplo anterior, la propiedad *WhenSoftDeleted* identifica la fecha de eliminación temporal, que en este ejemplo es el 16 de junio de 2020. La *propiedad Was ElMailbox* aparece como porque anteriormente era un `True` buzón inactivo. El buzón se eliminará permanentemente 183 días después del 30 de septiembre de 2020.
+

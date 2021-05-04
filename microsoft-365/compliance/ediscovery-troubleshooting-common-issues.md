@@ -16,15 +16,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Obtenga información sobre los pasos básicos de solución de problemas que puede seguir para resolver problemas comunes en la exhibición de documentos electrónicos de Office 365.
+description: Obtenga información sobre los pasos básicos de solución de problemas que puede seguir para resolver problemas comunes en Office 365 exhibición de documentos electrónicos.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a867ed2e55c73fe4bbd890273d78cf57f4bfbd2c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3d3d0830ac677ea812a0d09793de8214245d6b2a
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926550"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060995"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Investigar, solucionar y resolver problemas comunes de exhibición de documentos electrónicos
 
@@ -32,13 +32,13 @@ En este tema se tratan los pasos básicos de solución de problemas que puede se
 
 ## <a name="errorissue-ambiguous-location"></a>Error/problema: Ubicación ambigua
 
-Si intenta agregar la ubicación del buzón del usuario para buscar y hay objetos duplicados o en conflicto con el mismo userID en el directorio de Exchange Online Protection (EOP), recibirá este error: `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` .
+Si intenta agregar la ubicación del buzón del usuario para buscar y hay objetos duplicados o en conflicto con el mismo userID en el directorio Exchange Online Protection (EOP), recibirá este error: `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` .
 
-### <a name="resolution"></a>Resolución
+### <a name="resolution"></a>Solución
 
 Compruebe si hay usuarios duplicados o una lista de distribución con el mismo identificador de usuario.
 
-1. Conectarse [a PowerShell & Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
+1. Conectar [a PowerShell & Centro de seguridad y cumplimiento](/powershell/exchange/connect-to-scc-powershell).
 
 2. Ejecute el siguiente comando para recuperar todas las instancias del nombre de usuario:
 
@@ -52,7 +52,7 @@ Compruebe si hay usuarios duplicados o una lista de distribución con el mismo i
    > |Nombre|RecipientType|
    > |---|---|
    > |Alias, Usuario|MailUser|
-   > |Alias, Usuario|Usuario|
+   > |Alias, Usuario|User|
 
 3. Si se devuelven varios usuarios, busque y corrija el objeto en conflicto.
 
@@ -62,11 +62,11 @@ Una exhibición de documentos electrónicos o una búsqueda de contenido pueden 
 
 ![Error en la captura de pantalla de error de ubicación específica de la búsqueda](../media/edisc-tshoot-specific-location-search-fails.png)
 
-### <a name="resolution"></a>Resolución
+### <a name="resolution"></a>Solución
 
 Si recibe este error, se recomienda comprobar las ubicaciones que han fallado en la búsqueda y, a continuación, volver a ejecutar la búsqueda solo en las ubicaciones con errores.
 
-1. Conéctese [a PowerShell & centro](/powershell/exchange/connect-to-scc-powershell) de seguridad y, a continuación, ejecute el siguiente comando:
+1. Conectar [a PowerShell & Centro de](/powershell/exchange/connect-to-scc-powershell) seguridad y, a continuación, ejecute el siguiente comando:
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -80,21 +80,21 @@ Si recibe este error, se recomienda comprobar las ubicaciones que han fallado en
 
 ## <a name="errorissue-file-not-found"></a>Error o problema: no se encontró el archivo
 
-Al ejecutar una búsqueda de exhibición de documentos electrónicos que incluye ubicaciones de SharePoint Online y One Drive For Business, puede recibir el error aunque el archivo se encuentra `File Not Found` en el sitio. Este error estará en las advertencias de exportación y errors.csv o omitirá items.csv. Esto puede ocurrir si el archivo no se puede encontrar en el sitio o si el índice está desa actualizado. Este es el texto de un error real (con énfasis agregado).
+Al ejecutar una búsqueda de exhibición de documentos electrónicos que incluye SharePoint online y una unidad para empresas, puede recibir el error aunque el archivo se encuentra `File Not Found` en el sitio. Este error estará en las advertencias de exportación y errors.csv o omitirá items.csv. Esto puede ocurrir si el archivo no se puede encontrar en el sitio o si el índice está desa actualizado. Este es el texto de un error real (con énfasis agregado).
 
-> 28.06.2019 10:02:19_FailedToExportItem_Failed descargar contenido. Información de diagnóstico adicional : Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: No se pudo descargar del contenido 6ea52149-91cd-4965-b5bb-82ca6a3ec9be de tipo Document. Identificador de correlación: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft.SharePoint.Client.ServerException: ***Archivo no encontrado***. en Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) en Microsoft.SharePoint.Client.ClientRequest.ProcessResponse() --- Fin del seguimiento de la pila de excepciones ---
+> 28.06.2019 10:02:19_FailedToExportItem_Failed descargar contenido. Información de diagnóstico adicional : Microsoft. Office. Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: No se pudo descargar del contenido 6ea52149-91cd-4965-b5bb-82ca6a3ec9be de tipo Document. Identificador de correlación: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft. SharePoint. Client.ServerException: ***Archivo no encontrado***. en Microsoft. SharePoint. Client.ClientRequest.ProcessResponseStream(Stream responseStream) en Microsoft. SharePoint. Client.ClientRequest.ProcessResponse() --- fin del seguimiento de la pila de excepciones ---
 
-### <a name="resolution"></a>Resolución
+### <a name="resolution"></a>Solución
 
-1. Compruebe la ubicación identificada en la búsqueda para asegurarse de que la ubicación del archivo es correcta y se ha agregado en las ubicaciones de búsqueda.
+1. Compruebe la ubicación identificada en la búsqueda para asegurarse de que la ubicación del archivo es correcta y se agrega en las ubicaciones de búsqueda.
 
 2. Use los procedimientos de solicitar manualmente el rastreo y [la re indexación](/sharepoint/crawl-site-content) de un sitio, una biblioteca o una lista para volver a indizar el sitio.
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>Error o problema: se produce un error en la búsqueda porque no se encuentra el destinatario
 
-Se produce un error en una búsqueda de exhibición de documentos electrónicos con el error `recipient not found` . Este error puede producirse si el objeto de usuario no se encuentra en Exchange Online Protection (EOP) porque el objeto no se ha sincronizado.
+Se produce un error en una búsqueda de exhibición de documentos electrónicos con el error `recipient not found` . Este error puede producirse si no se puede encontrar el objeto de usuario en Exchange Online Protection (EOP) porque el objeto no se ha sincronizado.
 
-### <a name="resolution"></a>Resolución
+### <a name="resolution"></a>Solución
 
 1. Conéctese a [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -110,9 +110,9 @@ Se produce un error en una búsqueda de exhibición de documentos electrónicos 
 
 Al exportar los resultados de búsqueda desde la exhibición de documentos electrónicos o la búsqueda de contenido en el Centro de seguridad y cumplimiento, la descarga tarda más de lo esperado.  Puede comprobar la cantidad de datos que se descargarán y, posiblemente, aumentar la velocidad de exportación.
 
-### <a name="resolution"></a>Resolución
+### <a name="resolution"></a>Solución
 
-1. Conéctese [a PowerShell & centro](/powershell/exchange/connect-to-scc-powershell) de seguridad y, a continuación, ejecute el siguiente comando:
+1. Conectar [a PowerShell & Centro de](/powershell/exchange/connect-to-scc-powershell) seguridad y, a continuación, ejecute el siguiente comando:
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -138,11 +138,11 @@ Al ejecutar una búsqueda de exhibición de documentos electrónicos, si la bús
 
 ![Captura de pantalla de error interno del servidor 500](../media/edisc-tshoot-error-500.png)
 
-### <a name="resolution"></a>Resolución
+### <a name="resolution"></a>Solución
 
 1. Divide la búsqueda en búsquedas más pequeñas y vuelve a ejecutarla.  Intente usar un intervalo de fechas más pequeño o limite el número de ubicaciones que se buscan.
 
-2. Conéctese [a PowerShell & centro](/powershell/exchange/connect-to-scc-powershell) de seguridad y, a continuación, ejecute el siguiente comando:
+2. Conectar [a PowerShell & Centro de](/powershell/exchange/connect-to-scc-powershell) seguridad y, a continuación, ejecute el siguiente comando:
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL
@@ -160,9 +160,9 @@ Error de distribución de la directiva de retención de casos de eDiscovery. El 
 
 > "Recursos: tarda más de lo esperado en implementar la directiva. Podría tardar 2 horas adicionales en actualizar el estado de implementación final, así que vuelva a comprobarlo en un par de horas".
 
-### <a name="resolution"></a>Resolución
+### <a name="resolution"></a>Solución
 
-1. Conéctese [a PowerShell & Centro](/powershell/exchange/connect-to-scc-powershell) de seguridad y cumplimiento y, a continuación, ejecute el siguiente comando para una retención de casos de exhibición de documentos electrónicos:
+1. Conectar a [PowerShell del Centro de & seguridad](/powershell/exchange/connect-to-scc-powershell) y, a continuación, ejecute el siguiente comando para una retención de casos de exhibición de documentos electrónicos:
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
@@ -196,9 +196,9 @@ Error de distribución de la directiva de retención de casos de eDiscovery. El 
 
 ## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>Error: "No se cumple la condición especificada mediante encabezados condicionales HTTP"
 
-Al descargar resultados de búsqueda con la herramienta de exportación de exhibición de documentos electrónicos, es posible que reciba el siguiente error: se trata de un error transitorio, que normalmente se produce en la ubicación de `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` Azure Storage.
+Al descargar resultados de búsqueda mediante la herramienta de exportación de exhibición de documentos electrónicos, es posible que reciba el siguiente error: se trata de un error transitorio, que normalmente se produce en la `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` Azure Storage ubicación.
 
-### <a name="resolution"></a>Resolución
+### <a name="resolution"></a>Solución
 
 Para resolver este problema, [reintente la descarga de los resultados](export-search-results.md#step-2-download-the-search-results)de la búsqueda, que reiniciará la herramienta de exportación de exhibición de documentos electrónicos.
 
@@ -206,18 +206,20 @@ Para resolver este problema, [reintente la descarga de los resultados](export-se
 
 Después de una exportación correcta, la descarga completada a través de la herramienta de exportación muestra cero archivos en los resultados.
 
-### <a name="resolution"></a>Resolución
+### <a name="resolution"></a>Solución
 
 Este es un problema del lado cliente y, para corregirlo, intente los pasos siguientes:
 
 1. Intente usar otro cliente o máquina para descargar.
 
-2. Asegúrese de descargar en una unidad local.
+2. Quite las búsquedas antiguas que ya no son necesarias con el cmdlet [Remove-ComplianceSearch][/powershell/module/exchange/remove-compliancesearch].
 
-3. Asegúrese de que el escáner de virus no se está ejecutando.
+3. Asegúrese de descargar en una unidad local.
 
-4. Asegúrese de que ninguna otra exportación se descarga en la misma carpeta o en cualquier carpeta primaria.
+4. Asegúrese de que el escáner de virus no se está ejecutando.
 
-5. Si los pasos anteriores no funcionaron, deshabilite la compresión y la desduplicación.
+5. Asegúrese de que ninguna otra exportación se descarga en la misma carpeta o en cualquier carpeta primaria.
 
-6. Si esto funciona, el problema se debe a un escáner de virus local o a un problema de disco.
+6. Si los pasos anteriores no funcionaron, deshabilite la compresión y la desduplicación.
+
+7. Si esto funciona, el problema se debe a un escáner de virus local o a un problema de disco.

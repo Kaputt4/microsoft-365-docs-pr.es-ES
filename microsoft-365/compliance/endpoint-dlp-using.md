@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 91e8a25c2a15e82cd7f286d1110b1c87bedf31d5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1b918346467f9878582dfb301f48e530bfb400f8
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926438"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114098"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -122,7 +122,8 @@ Para ayudarle a familiarizarse con las características de DLP de los puntos de 
 
 > [!IMPORTANT]
 > Estos escenarios DLP de los puntos de conexión no son los procedimientos oficiales para crear y optimizar directivas DLP. Consulte los temas siguientes cuando necesite trabajar con directivas DLP en situaciones generales:
->- [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
+
+>- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 >- [Introducción a la directiva predeterminada de DLP](get-started-with-the-default-dlp-policy.md)
 >- [Crear una directiva DLP a partir de una plantilla](create-a-dlp-policy-from-a-template.md)
 >- [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
@@ -216,7 +217,7 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 
 - [Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)
 - [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md)
-- [Información general sobre la prevención de pérdida de datos](data-loss-prevention-policies.md)
+- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
 - [Microsoft Defender para punto de conexión](/windows/security/threat-protection/)
