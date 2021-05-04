@@ -9,7 +9,7 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -18,68 +18,101 @@ search.appverid:
 - MOE150
 - MET150
 description: El explorador de actividad complementa la funcionalidad de la característica de clasificación de datos permitiéndole ver y filtrar las acciones que los usuarios están realizando en el contenido etiquetado.
-ms.openlocfilehash: 6825c00373617011db28fa484f272086f887ea40
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
-ms.translationtype: HT
+ms.openlocfilehash: 414ef4e5d9f6472180a5eaef391d3eba33463b02
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921638"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114012"
 ---
-# <a name="get-started-with-activity-explorer"></a><span data-ttu-id="a4d52-103">Introducción al explorador de actividad</span><span class="sxs-lookup"><span data-stu-id="a4d52-103">Get started with activity explorer</span></span>
+# <a name="get-started-with-activity-explorer"></a><span data-ttu-id="e8518-103">Introducción al explorador de actividad</span><span class="sxs-lookup"><span data-stu-id="e8518-103">Get started with activity explorer</span></span>
 
-<span data-ttu-id="a4d52-104">La descripción general de la clasificación de datos y las pestañas del explorador de contenido le ofrecen visibilidad sobre el contenido que se ha descubierto y etiquetado, y dónde está ese contenido.</span><span class="sxs-lookup"><span data-stu-id="a4d52-104">The data classification overview and content explorer tabs give you visibility into what content has been discovered and labeled, and where that content is.</span></span> <span data-ttu-id="a4d52-105">El explorador de actividad complementa este conjunto de funciones permitiéndole supervisar lo que se lleva a cabo con el contenido de la etiqueta.</span><span class="sxs-lookup"><span data-stu-id="a4d52-105">Activity explorer rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content.</span></span> <span data-ttu-id="a4d52-106">El explorador de actividad ofrece una vista histórica.</span><span class="sxs-lookup"><span data-stu-id="a4d52-106">Activity explorer provides a historical view.</span></span>
+<span data-ttu-id="e8518-104">La [introducción a la](data-classification-overview.md) clasificación de datos y las pestañas del [explorador](data-classification-content-explorer.md) de contenido le dan visibilidad sobre qué contenido se ha detectado y etiquetado, y dónde está ese contenido.</span><span class="sxs-lookup"><span data-stu-id="e8518-104">The [data classification overview](data-classification-overview.md) and [content explorer](data-classification-content-explorer.md) tabs give you visibility into what content has been discovered and labeled, and where that content is.</span></span> <span data-ttu-id="e8518-105">El explorador de actividad complementa este conjunto de funciones permitiéndole supervisar lo que se lleva a cabo con el contenido de la etiqueta.</span><span class="sxs-lookup"><span data-stu-id="e8518-105">Activity explorer rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content.</span></span> <span data-ttu-id="e8518-106">El explorador de actividades proporciona una vista histórica de las actividades en el contenido etiquetado.</span><span class="sxs-lookup"><span data-stu-id="e8518-106">Activity explorer provides a historical view of activities on your labeled content.</span></span> <span data-ttu-id="e8518-107">La información de actividad se recopila Microsoft 365 registros de auditoría unificados, transformados y puestos a disposición en la interfaz de usuario del explorador de actividades.</span><span class="sxs-lookup"><span data-stu-id="e8518-107">The activity information is collected from the Microsoft 365 unified audit logs, transformed and made available in the Activity explorer UI.</span></span> 
 
 ![Marcador de posición captura de pantalla información general explorador de actividad](../media/data-classification-activity-explorer-1.png)
 
-<span data-ttu-id="a4d52-108">Hay más de 30 filtros diferentes disponibles, estos son algunos:</span><span class="sxs-lookup"><span data-stu-id="a4d52-108">There are over 30 different filters available for use, some are:</span></span>
+<span data-ttu-id="e8518-109">Hay más de 30 filtros diferentes disponibles, estos son algunos:</span><span class="sxs-lookup"><span data-stu-id="e8518-109">There are over 30 different filters available for use, some are:</span></span>
 
-- <span data-ttu-id="a4d52-109">Intervalo de fechas:</span><span class="sxs-lookup"><span data-stu-id="a4d52-109">date range</span></span>
-- <span data-ttu-id="a4d52-110">TIPO DE ACTIVIDAD</span><span class="sxs-lookup"><span data-stu-id="a4d52-110">activity type</span></span>
-- <span data-ttu-id="a4d52-111">Ubicación</span><span class="sxs-lookup"><span data-stu-id="a4d52-111">location</span></span>
-- <span data-ttu-id="a4d52-112">Usuario</span><span class="sxs-lookup"><span data-stu-id="a4d52-112">user</span></span>
-- <span data-ttu-id="a4d52-113">Etiqueta de confidencialidad</span><span class="sxs-lookup"><span data-stu-id="a4d52-113">sensitivity label</span></span>
-- <span data-ttu-id="a4d52-114">Etiqueta de retención:</span><span class="sxs-lookup"><span data-stu-id="a4d52-114">retention label</span></span>
-- <span data-ttu-id="a4d52-115">ruta de acceso del archivo</span><span class="sxs-lookup"><span data-stu-id="a4d52-115">file path</span></span>
-- <span data-ttu-id="a4d52-116">Directiva DLP</span><span class="sxs-lookup"><span data-stu-id="a4d52-116">DLP policy</span></span>
+- <span data-ttu-id="e8518-110">Intervalo de fechas:</span><span class="sxs-lookup"><span data-stu-id="e8518-110">date range</span></span>
+- <span data-ttu-id="e8518-111">TIPO DE ACTIVIDAD</span><span class="sxs-lookup"><span data-stu-id="e8518-111">activity type</span></span>
+- <span data-ttu-id="e8518-112">Ubicación</span><span class="sxs-lookup"><span data-stu-id="e8518-112">location</span></span>
+- <span data-ttu-id="e8518-113">Usuario</span><span class="sxs-lookup"><span data-stu-id="e8518-113">user</span></span>
+- <span data-ttu-id="e8518-114">Etiqueta de confidencialidad</span><span class="sxs-lookup"><span data-stu-id="e8518-114">sensitivity label</span></span>
+- <span data-ttu-id="e8518-115">Etiqueta de retención:</span><span class="sxs-lookup"><span data-stu-id="e8518-115">retention label</span></span>
+- <span data-ttu-id="e8518-116">ruta de acceso del archivo</span><span class="sxs-lookup"><span data-stu-id="e8518-116">file path</span></span>
+- <span data-ttu-id="e8518-117">Directiva DLP</span><span class="sxs-lookup"><span data-stu-id="e8518-117">DLP policy</span></span>
 
 
-## <a name="prerequisites"></a><span data-ttu-id="a4d52-117">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="a4d52-117">Prerequisites</span></span>
 
-<span data-ttu-id="a4d52-118">Todas las cuentas que tienen acceso a la clasificación de datos y la usan deben tener una licencia asignada de una de estas suscripciones:</span><span class="sxs-lookup"><span data-stu-id="a4d52-118">Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e8518-118">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="e8518-118">Prerequisites</span></span>
 
-- <span data-ttu-id="a4d52-119">Microsoft 365 (E5)</span><span class="sxs-lookup"><span data-stu-id="a4d52-119">Microsoft 365 (E5)</span></span>
-- <span data-ttu-id="a4d52-120">Office 365 (E5)</span><span class="sxs-lookup"><span data-stu-id="a4d52-120">Office 365 (E5)</span></span>
-- <span data-ttu-id="a4d52-121">Complemento de cumplimiento avanzado (E5)</span><span class="sxs-lookup"><span data-stu-id="a4d52-121">Advanced Compliance (E5) add-on</span></span>
-- <span data-ttu-id="a4d52-122">Complemento de inteligencia de amenazas avanzado (E5)</span><span class="sxs-lookup"><span data-stu-id="a4d52-122">Advanced Threat Intelligence (E5) add-on</span></span>
-- <span data-ttu-id="a4d52-123">Gobernanza y protección de la información de Microsoft 365 E5/A5</span><span class="sxs-lookup"><span data-stu-id="a4d52-123">Microsoft 365 E5/A5 Info Protection & Governance</span></span>
-- <span data-ttu-id="a4d52-124">Cumplimiento de Microsoft 365 E5/A5 </span><span class="sxs-lookup"><span data-stu-id="a4d52-124">Microsoft 365 E5/A5 Compliance</span></span>
+<span data-ttu-id="e8518-119">Todas las cuentas que tengan acceso a la clasificación de datos y la usen deben tener una licencia asignada de una de estas suscripciones:</span><span class="sxs-lookup"><span data-stu-id="e8518-119">Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:</span></span>
 
-### <a name="permissions"></a><span data-ttu-id="a4d52-125">Permisos</span><span class="sxs-lookup"><span data-stu-id="a4d52-125">Permissions</span></span>
+- <span data-ttu-id="e8518-120">Microsoft 365 (E5)</span><span class="sxs-lookup"><span data-stu-id="e8518-120">Microsoft 365 (E5)</span></span>
+- <span data-ttu-id="e8518-121">Office 365 (E5)</span><span class="sxs-lookup"><span data-stu-id="e8518-121">Office 365 (E5)</span></span>
+- <span data-ttu-id="e8518-122">Complemento de cumplimiento avanzado (E5)</span><span class="sxs-lookup"><span data-stu-id="e8518-122">Advanced Compliance (E5) add-on</span></span>
+- <span data-ttu-id="e8518-123">Complemento de inteligencia de amenazas avanzado (E5)</span><span class="sxs-lookup"><span data-stu-id="e8518-123">Advanced Threat Intelligence (E5) add-on</span></span>
+- <span data-ttu-id="e8518-124">Gobernanza y protección de la información de Microsoft 365 E5/A5</span><span class="sxs-lookup"><span data-stu-id="e8518-124">Microsoft 365 E5/A5 Info Protection & Governance</span></span>
+- <span data-ttu-id="e8518-125">Cumplimiento de Microsoft 365 E5/A5 </span><span class="sxs-lookup"><span data-stu-id="e8518-125">Microsoft 365 E5/A5 Compliance</span></span>
 
- <span data-ttu-id="a4d52-126">Para obtener acceso a la pestaña del explorador de actividad, una cuenta debe tener asignada una suscripción en cualquiera de estos roles o grupos de roles.</span><span class="sxs-lookup"><span data-stu-id="a4d52-126">In order to get access to the activity explorer tab, an account must be assigned membership in any one of these roles or role groups.</span></span>
+### <a name="permissions"></a><span data-ttu-id="e8518-126">Permisos</span><span class="sxs-lookup"><span data-stu-id="e8518-126">Permissions</span></span>
 
-<span data-ttu-id="a4d52-127">**Grupos de roles de Microsoft 365**</span><span class="sxs-lookup"><span data-stu-id="a4d52-127">**Microsoft 365 role groups**</span></span>
+ <span data-ttu-id="e8518-127">Para obtener acceso a la pestaña explorador de actividades, se debe asignar explícitamente la pertenencia a una cuenta en cualquiera de estos grupos de roles o concederla explícitamente.</span><span class="sxs-lookup"><span data-stu-id="e8518-127">In order to get access to the activity explorer tab, an account must be explicitly assigned membership in any one of these role groups or explicitly granted the role.</span></span>
 
-- <span data-ttu-id="a4d52-128">Administrador global</span><span class="sxs-lookup"><span data-stu-id="a4d52-128">Global administrator</span></span>
-- <span data-ttu-id="a4d52-129">Administrador de cumplimiento</span><span class="sxs-lookup"><span data-stu-id="a4d52-129">Compliance administrator</span></span>
-- <span data-ttu-id="a4d52-130">Administrador de seguridad</span><span class="sxs-lookup"><span data-stu-id="a4d52-130">Security administrator</span></span>
-- <span data-ttu-id="a4d52-131">Administrador de datos de cumplimiento</span><span class="sxs-lookup"><span data-stu-id="a4d52-131">Compliance data administrator</span></span>
+<!--
+> [!IMPORTANT]
+> Access to Activity explorer via the Security reader or Device Management role groups or other has been removed-->
 
-## <a name="activity-type"></a><span data-ttu-id="a4d52-132">Tipo de actividad</span><span class="sxs-lookup"><span data-stu-id="a4d52-132">Activity type</span></span>
+<span data-ttu-id="e8518-128">**Grupos de roles de Microsoft 365**</span><span class="sxs-lookup"><span data-stu-id="e8518-128">**Microsoft 365 role groups**</span></span>
 
-<span data-ttu-id="a4d52-133">Microsoft 365 supervisa y realiza un seguimiento de los tipos de actividades en SharePoint Online y OneDrive, como:</span><span class="sxs-lookup"><span data-stu-id="a4d52-133">Microsoft 365 monitors and reports on types of activities across SharePoint Online, and OneDrive like:</span></span>
+- <span data-ttu-id="e8518-129">Administrador global</span><span class="sxs-lookup"><span data-stu-id="e8518-129">Global administrator</span></span>
+- <span data-ttu-id="e8518-130">Administrador de cumplimiento</span><span class="sxs-lookup"><span data-stu-id="e8518-130">Compliance administrator</span></span>
+- <span data-ttu-id="e8518-131">Administrador de seguridad</span><span class="sxs-lookup"><span data-stu-id="e8518-131">Security administrator</span></span>
+- <span data-ttu-id="e8518-132">Administrador de datos de cumplimiento</span><span class="sxs-lookup"><span data-stu-id="e8518-132">Compliance data administrator</span></span>
 
-- <span data-ttu-id="a4d52-134">etiqueta aplicada</span><span class="sxs-lookup"><span data-stu-id="a4d52-134">label applied</span></span>
-- <span data-ttu-id="a4d52-135">etiqueta cambiada (actualizada, degradada o eliminada)</span><span class="sxs-lookup"><span data-stu-id="a4d52-135">label changed (upgraded, downgraded, or removed)</span></span>
-- <span data-ttu-id="a4d52-136">simulación de etiquetado automático</span><span class="sxs-lookup"><span data-stu-id="a4d52-136">auto-labeling simulation</span></span>
+<span data-ttu-id="e8518-133">**Microsoft 365 roles**</span><span class="sxs-lookup"><span data-stu-id="e8518-133">**Microsoft 365 roles**</span></span>
 
-<span data-ttu-id="a4d52-137">El valor de comprensión de las acciones que se toman con el contenido identificado por la etiqueta es que puede ver si los controles que ya se han puesto en su sitio, como [Directivas de prevención de pérdida de datos](data-loss-prevention-policies.md) son efectivas o no.</span><span class="sxs-lookup"><span data-stu-id="a4d52-137">The value of understanding what actions are being taken with your sensitive labeled content is that you can see if the controls that you have already put into place, such as [data loss prevention policies](data-loss-prevention-policies.md) are effective or not.</span></span> <span data-ttu-id="a4d52-138">Si no es así, o si se detecta algo inesperado, como un gran número de elementos etiquetados `highly confidential`y se degradan`general`, puede administrar las distintas directivas y llevar a cabo nuevas acciones para restringir el comportamiento no deseado.</span><span class="sxs-lookup"><span data-stu-id="a4d52-138">If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.</span></span>
+- <span data-ttu-id="e8518-134">Administrador de cumplimiento</span><span class="sxs-lookup"><span data-stu-id="e8518-134">Compliance administrator</span></span>
+- <span data-ttu-id="e8518-135">Administrador de seguridad</span><span class="sxs-lookup"><span data-stu-id="e8518-135">Security administrator</span></span>
+
+## <a name="activity-types"></a><span data-ttu-id="e8518-136">Tipos de actividad</span><span class="sxs-lookup"><span data-stu-id="e8518-136">Activity types</span></span>
+
+<span data-ttu-id="e8518-137">El explorador de actividades recopila información de actividad de los registros de auditoría en varios orígenes de actividades.</span><span class="sxs-lookup"><span data-stu-id="e8518-137">Activity explorer gathers activity information from the audit logs on multiple sources of activities.</span></span> <span data-ttu-id="e8518-138">Para obtener información más detallada sobre qué actividad de etiquetado la convierte en explorador de actividades, vea [Labeling events available in Activity explorer](data-classification-activity-explorer-available-events.md).</span><span class="sxs-lookup"><span data-stu-id="e8518-138">For more detailed information on what labeling activity makes it to Activity explorer, see [Labeling events available in Activity explorer](data-classification-activity-explorer-available-events.md).</span></span>
+
+<span data-ttu-id="e8518-139">**Actividades de etiquetas** de confidencialidad y actividades de etiquetado de retención de aplicaciones nativas de Office, complemento de Azure Information Protection, SharePoint Online, Exchange Online (solo etiquetas de confidencialidad) y OneDrive. </span><span class="sxs-lookup"><span data-stu-id="e8518-139">**Sensitivity label activities** and **Retention labeling activities** from Office native applications, Azure Information Protection add-in, SharePoint Online, Exchange Online (sensitivity labels only) and OneDrive.</span></span> <span data-ttu-id="e8518-140">Por ejemplo:</span><span class="sxs-lookup"><span data-stu-id="e8518-140">Some examples are:</span></span>
+
+- <span data-ttu-id="e8518-141">etiqueta aplicada</span><span class="sxs-lookup"><span data-stu-id="e8518-141">label applied</span></span>
+- <span data-ttu-id="e8518-142">etiqueta cambiada (actualizada, degradada o eliminada)</span><span class="sxs-lookup"><span data-stu-id="e8518-142">label changed (upgraded, downgraded, or removed)</span></span>
+- <span data-ttu-id="e8518-143">simulación de etiquetado automático</span><span class="sxs-lookup"><span data-stu-id="e8518-143">auto-labeling simulation</span></span>
+- <span data-ttu-id="e8518-144">archivo leído</span><span class="sxs-lookup"><span data-stu-id="e8518-144">file read</span></span> 
+
+<span data-ttu-id="e8518-145">**Escáner de Azure Information Protection (AIP) y clientes AIP**</span><span class="sxs-lookup"><span data-stu-id="e8518-145">**Azure Information Protection (AIP) scanner and AIP clients**</span></span>
+
+- <span data-ttu-id="e8518-146">protección aplicada</span><span class="sxs-lookup"><span data-stu-id="e8518-146">protection applied</span></span>
+- <span data-ttu-id="e8518-147">protección modificada</span><span class="sxs-lookup"><span data-stu-id="e8518-147">protection changed</span></span>
+- <span data-ttu-id="e8518-148">protección eliminada</span><span class="sxs-lookup"><span data-stu-id="e8518-148">protection removed</span></span>
+- <span data-ttu-id="e8518-149">archivos detectados</span><span class="sxs-lookup"><span data-stu-id="e8518-149">files discovered</span></span> 
+
+<span data-ttu-id="e8518-150">El explorador de actividades también recopila eventos de coincidencias de directivas **DLP** de Exchange Online, SharePoint Online, OneDrive, chat y canal de Teams (versión preliminar), carpetas y bibliotecas de SharePoint locales y recursos compartidos de archivos locales y dispositivos Windows 10 mediante prevención de pérdida de datos de extremo **(DLP).**</span><span class="sxs-lookup"><span data-stu-id="e8518-150">Activity explorer also gathers **DLP policy matches** events from Exchange Online, SharePoint Online, OneDrive, Teams Chat and Channel (preview), on-premises SharePoint folders and libraries, and on-premises file shares, and Windows 10 devices via **Endpoint data loss prevention (DLP)**.</span></span> <span data-ttu-id="e8518-151">Algunos ejemplos de eventos de Windows 10 dispositivos son archivos:</span><span class="sxs-lookup"><span data-stu-id="e8518-151">Some examples events from Windows 10 devices are file:</span></span>
+
+- <span data-ttu-id="e8518-152">eliminaciones</span><span class="sxs-lookup"><span data-stu-id="e8518-152">deletions</span></span>
+- <span data-ttu-id="e8518-153">creaciones</span><span class="sxs-lookup"><span data-stu-id="e8518-153">creations</span></span>
+- <span data-ttu-id="e8518-154">copiado en el Portapapeles</span><span class="sxs-lookup"><span data-stu-id="e8518-154">copied to clipboard</span></span>
+- <span data-ttu-id="e8518-155">modificado </span><span class="sxs-lookup"><span data-stu-id="e8518-155">modified</span></span>
+- <span data-ttu-id="e8518-156">read</span><span class="sxs-lookup"><span data-stu-id="e8518-156">read</span></span>
+- <span data-ttu-id="e8518-157">impreso</span><span class="sxs-lookup"><span data-stu-id="e8518-157">printed</span></span>
+- <span data-ttu-id="e8518-158">nombre cambiado</span><span class="sxs-lookup"><span data-stu-id="e8518-158">renamed</span></span>
+- <span data-ttu-id="e8518-159">copiado en el recurso compartido de red</span><span class="sxs-lookup"><span data-stu-id="e8518-159">copied to network share</span></span>
+- <span data-ttu-id="e8518-160">a la que se accede mediante una aplicación sin alambrar</span><span class="sxs-lookup"><span data-stu-id="e8518-160">accessed by unallowed app</span></span> 
+
+<span data-ttu-id="e8518-161">El valor de comprender qué acciones se están haciendo con el contenido etiquetado confidencial es que puede ver si los controles que ya ha puesto en marcha, como la prevención de pérdida de datos son [efectivos](dlp-learn-about-dlp.md) o no.</span><span class="sxs-lookup"><span data-stu-id="e8518-161">The value of understanding what actions are being taken with your sensitive labeled content is that you can see if the controls that you have already put into place, such as [data loss prevention](dlp-learn-about-dlp.md) are effective or not.</span></span> <span data-ttu-id="e8518-162">Si no es así, o si se detecta algo inesperado, como un gran número de elementos etiquetados `highly confidential`y se degradan`general`, puede administrar las distintas directivas y llevar a cabo nuevas acciones para restringir el comportamiento no deseado.</span><span class="sxs-lookup"><span data-stu-id="e8518-162">If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="a4d52-139">El explorador de actividad no supervisa actualmente las actividades de retención de Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="a4d52-139">Activity explorer doesn't currently monitor retention activities for Exchange Online.</span></span>
+> <span data-ttu-id="e8518-163">El explorador de actividad no supervisa actualmente las actividades de retención de Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="e8518-163">Activity explorer doesn't currently monitor retention activities for Exchange Online.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="a4d52-140">Recursos adicionales</span><span class="sxs-lookup"><span data-stu-id="a4d52-140">See also</span></span>
-- [<span data-ttu-id="a4d52-141">Información sobre las etiquetas de confidencialidad</span><span class="sxs-lookup"><span data-stu-id="a4d52-141">Learn about sensitivity labels</span></span>](sensitivity-labels.md)
-- [<span data-ttu-id="a4d52-142">Más información sobre las directivas y las etiquetas de retención</span><span class="sxs-lookup"><span data-stu-id="a4d52-142">Learn about retention policies and retention labels</span></span>](retention.md)
-- [<span data-ttu-id="a4d52-143">Definiciones de entidad de tipos de información confidencial</span><span class="sxs-lookup"><span data-stu-id="a4d52-143">Sensitive information type entity definitions</span></span>](sensitive-information-type-entity-definitions.md)
+## <a name="see-also"></a><span data-ttu-id="e8518-164">Recursos adicionales</span><span class="sxs-lookup"><span data-stu-id="e8518-164">See also</span></span>
 
+- [<span data-ttu-id="e8518-165">Información sobre las etiquetas de confidencialidad</span><span class="sxs-lookup"><span data-stu-id="e8518-165">Learn about sensitivity labels</span></span>](sensitivity-labels.md)
+- [<span data-ttu-id="e8518-166">Más información sobre las directivas y las etiquetas de retención</span><span class="sxs-lookup"><span data-stu-id="e8518-166">Learn about retention policies and retention labels</span></span>](retention.md)
+- <span data-ttu-id="e8518-167">[Obtener más información acerca de los tipos de información confidencial](sensitive-information-type-learn-about.md).</span><span class="sxs-lookup"><span data-stu-id="e8518-167">[Learn about sensitive information types](sensitive-information-type-learn-about.md)</span></span>
+- [<span data-ttu-id="e8518-168">Más información sobre la clasificación de datos</span><span class="sxs-lookup"><span data-stu-id="e8518-168">Learn about data classification</span></span>](data-classification-overview.md)
