@@ -1,5 +1,5 @@
 ---
-title: Información de soporte técnico para México
+title: Información de soporte para México
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ description: Obtenga información acerca de cómo ponerse en contacto con el sop
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: fc87852f2190663ecead62831dcfe6ec87a2b39a
 ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/08/2021
 ms.locfileid: "50545769"
 ---
-# <a name="contact-support-for-mexico"></a>Póngase en contacto con el soporte técnico de México
+# <a name="contact-support-for-mexico"></a>Contactar con el soporte técnico de México
 
 [Buscar otro país o región](../contact-support-for-business-products.md).
 
