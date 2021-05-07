@@ -9,42 +9,42 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-description: Obtenga información sobre el catálogo de soluciones de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
+description: Obtenga información sobre el Microsoft 365 de soluciones, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ea184b406c721601c76829c02496b2d9201eb1d1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 22110290f3d025a3e4c30b460a2381757fd481ca
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926348"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114428"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Catálogo de soluciones de Microsoft 365
 
-¿Está buscando una forma de empezar rápidamente con las tareas de cumplimiento en Microsoft 365? Consulte el catálogo de soluciones de [Microsoft 365](https://compliance.microsoft.com/solutioncatalog) para descubrir, aprender y empezar rápidamente con las soluciones de administración de riesgos y cumplimiento.
+¿Está buscando una forma de empezar rápidamente con las tareas de cumplimiento en Microsoft 365? Consulte el catálogo [Microsoft 365 soluciones para](https://compliance.microsoft.com/solutioncatalog) descubrir, aprender y empezar rápidamente con las soluciones de administración de riesgos y cumplimiento.
 
-Las soluciones de cumplimiento en Microsoft 365 son colecciones de funcionalidades integradas que puede usar para ayudarle a administrar escenarios de cumplimiento integral. Las funciones y herramientas de una solución pueden incluir una combinación de directivas, alertas, informes y mucho más.
+Las soluciones de cumplimiento Microsoft 365 son colecciones de funcionalidades integradas que puede usar para ayudarle a administrar escenarios de cumplimiento integral. Las funciones y herramientas de una solución pueden incluir una combinación de directivas, alertas, informes y mucho más.
 
-Lea este artículo para familiarizarse con el nuevo catálogo de soluciones [](#how-do-i-get-this)en el Centro de cumplimiento de Microsoft 365, cómo obtenerlo [,](#frequently-asked-questions)las preguntas más frecuentes y los [siguientes pasos](#next-steps).
+Lea este artículo para familiarizarse con el nuevo catálogo de soluciones en el centro de cumplimiento de [Microsoft 365,](#how-do-i-get-this)cómo obtenerlo, [](#frequently-asked-questions)las preguntas más frecuentes y los pasos [siguientes](#next-steps).
 
 ## <a name="catalog-organization"></a>Organización del catálogo
 
-El catálogo de soluciones se organiza en secciones que contienen tarjetas de información para cada solución de cumplimiento disponible en su suscripción a Microsoft 365. Cada sección contiene tarjetas para soluciones agrupadas por área de cumplimiento.
+El catálogo de soluciones se organiza en secciones que contienen tarjetas de información para cada solución de cumplimiento disponible en su Microsoft 365 suscripción. Cada sección contiene tarjetas para soluciones agrupadas por área de cumplimiento.
 
-![Página principal del catálogo de soluciones de Microsoft 365](../media/m365-solution-catalog-home.png)
+![Microsoft 365 principal del catálogo de soluciones](../media/m365-solution-catalog-home.png)
 
-Al seleccionar **Ver para** una tarjeta de solución, verá información detallada sobre la solución de cumplimiento y cómo empezar. Esta información incluye información general, requisitos de configuración previa, recursos de aprendizaje, controles que permiten anclar la tarjeta al panel de navegación y una opción para compartir la solución como un vínculo, correo electrónico o mensaje de Microsoft Teams.
+Al seleccionar **Ver para** una tarjeta de solución, verá información detallada sobre la solución de cumplimiento y cómo empezar. Esta información incluye información general, requisitos de configuración previa, recursos de aprendizaje, controles que permiten anclar la tarjeta al panel de navegación y una opción para compartir la solución como un vínculo, correo electrónico o Microsoft Teams mensaje.
 
-![Solución de cumplimiento de comunicaciones de Microsoft 365](../media/m365-solution-catalog-communication-compliance.png)
+![Microsoft 365 de cumplimiento de comunicaciones](../media/m365-solution-catalog-communication-compliance.png)
 
 ## <a name="information-protection--governance-section"></a>Sección de gobierno & protección de la información
 
-La **sección Information protection & governance** muestra de un vistazo cómo puede usar las soluciones de cumplimiento de Microsoft 365 para proteger y gobernar los datos de su organización.
+La **sección Information protection & governance** muestra de un vistazo cómo puede usar Microsoft 365 de cumplimiento normativo para proteger y gobernar los datos de su organización.
 
-![Sección de protección y gobierno de la información del catálogo de soluciones de Microsoft 365](../media/m365-solution-catalog-information-protection-governance.png)
+![Microsoft 365 de administración y protección de la información del catálogo de soluciones](../media/m365-solution-catalog-information-protection-governance.png)
 
 Desde aquí, verá las tarjetas para las siguientes soluciones:
 
-- [Prevención de pérdida de](data-loss-prevention-policies.md)datos: detecta el contenido confidencial que se usa y comparte en toda la organización, en la nube y en los dispositivos, y ayuda a evitar la pérdida accidental de datos.
+- [Prevención de pérdida de](dlp-learn-about-dlp.md)datos: detecta el contenido confidencial que se usa y comparte en toda la organización, en la nube y en los dispositivos, y ayuda a evitar la pérdida accidental de datos.
 - [Gobierno de la](manage-information-governance.md)información: administra el ciclo de vida del contenido mediante soluciones para importar, almacenar y clasificar datos críticos para el negocio, de modo que pueda mantener lo que necesita y eliminar lo que no.
 - [Protección de la](information-protection.md)información: detecta, clasifica y protege el contenido confidencial y crítico para la empresa durante todo su ciclo de vida en toda la organización.
 - [Administración de](records-management.md)registros: usa la clasificación inteligente para automatizar y simplificar la programación de retención de registros normativos, legales y críticos para la empresa en su organización.
@@ -53,7 +53,7 @@ Desde aquí, verá las tarjetas para las siguientes soluciones:
 
 La sección Administración de riesgos de **Insider** de la página principal muestra de un vistazo cómo su organización puede identificar, analizar y tomar medidas en los riesgos internos antes de causar daños.
 
-![Sección de administración de riesgos del catálogo de soluciones de Microsoft 365](../media/m365-solution-catalog-insider-risk-management.png)
+![Microsoft 365 de administración de riesgos de insider del catálogo de soluciones](../media/m365-solution-catalog-insider-risk-management.png)
 
 Desde aquí, verá las tarjetas para las siguientes soluciones:
 
@@ -64,7 +64,7 @@ Desde aquí, verá las tarjetas para las siguientes soluciones:
 
 La **sección Detección &** respuesta en la página principal muestra de un vistazo cómo su organización puede encontrar, investigar y responder rápidamente a problemas de cumplimiento con datos relevantes.
 
-![Sección de detección y respuesta del catálogo de soluciones de Microsoft 365](../media/m365-solution-catalog-discovery-response.png)
+![Microsoft 365 de detección y respuesta del catálogo de soluciones](../media/m365-solution-catalog-discovery-response.png)
 
 Desde aquí, verá las tarjetas para las siguientes soluciones:
 
@@ -72,23 +72,23 @@ Desde aquí, verá las tarjetas para las siguientes soluciones:
 - [Solicitudes del interesado:](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)busca y exporta los datos personales de un usuario para ayudarle a responder a las solicitudes del interesado para rgpd.
 - [Exhibición de documentos electrónicos (eDiscovery)](manage-legal-investigations.md)
     - [EDiscovery principal:](./get-started-core-ediscovery.md)busca en todas las ubicaciones de contenido para identificar, conservar y exportar datos en respuesta a solicitudes de detección legal y casos de exhibición de documentos electrónicos.
-    - [Exhibición de](overview-ediscovery-20.md)documentos electrónicos avanzada: se basa en las capacidades de exhibición de documentos electrónicos proporcionando análisis inteligentes y aprendizaje automático para ayudarle a analizar aún más los datos que son relevantes para las solicitudes de detección.
+    - [Advanced eDiscovery:](overview-ediscovery-20.md)se basa en las capacidades de exhibición de documentos electrónicos proporcionando análisis inteligentes y aprendizaje automático para ayudarle a analizar aún más los datos que son relevantes para las solicitudes de detección.
 
 ## <a name="how-do-i-get-this"></a>¿Cómo puedo obtener esto?
 
-Para visitar el catálogo de soluciones de Microsoft 365, vaya a e inicie sesión como administrador global, administrador de cumplimiento o administrador de datos [https://compliance.microsoft.com](https://compliance.microsoft.com) de cumplimiento. Seleccione **Catálogo** en el panel de navegación de la parte izquierda de la pantalla para abrir la página principal del catálogo.
+Para visitar el catálogo Microsoft 365 soluciones, vaya a e inicie sesión como administrador global, administrador de cumplimiento o administrador de datos [https://compliance.microsoft.com](https://compliance.microsoft.com) de cumplimiento. Seleccione **Catálogo** en el panel de navegación de la parte izquierda de la pantalla para abrir la página principal del catálogo.
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
-**¿Por qué no veo el catálogo de soluciones de Microsoft 365?**
+**¿Por qué no veo el catálogo Microsoft 365 soluciones?**
 
 En primer lugar, asegúrese de que tiene las licencias y permisos adecuados. A continuación, inicie sesión como administrador global, administrador [https://compliance.microsoft.com](https://compliance.microsoft.com) de cumplimiento o administrador de datos de cumplimiento.
 
-**Algunas de las características de cumplimiento enumeradas en la página del catálogo de soluciones no están disponibles en el Centro de cumplimiento de Microsoft 365. ¿Qué hago?**
+**Algunas de las características de cumplimiento enumeradas en la página catálogo de soluciones no están disponibles en el centro de Microsoft 365 cumplimiento. ¿Qué hago?**
 
-Siempre estamos trabajando para agregar nuevas funciones al centro de cumplimiento de Microsoft 365 y al catálogo de soluciones. Si no encuentra una solución específica en el área de navegación, será accesible cuando la solución esté disponible en su suscripción.
+Siempre estamos trabajando para agregar nuevas funciones al centro de Microsoft 365 cumplimiento y al catálogo de soluciones. Si no encuentra una solución específica en el área de navegación, será accesible cuando la solución esté disponible en su suscripción.
 
-Si está buscando una solución de cumplimiento existente y aún no está disponible en el Centro de cumplimiento de Microsoft 365, siempre puede acceder a las soluciones en el Centro de cumplimiento de seguridad existente yendo &amp; a [https://protection.office.com](https://protection.office.com) . Como alternativa, puede hacer  clic en la pestaña Más recursos de la navegación izquierda del Centro de cumplimiento de Microsoft 365 y seleccionar la tarjeta del Centro de seguridad y cumplimiento de Office 365.  
+Si está buscando una solución de cumplimiento existente y aún no está disponible en el centro de cumplimiento de Microsoft 365, siempre puede tener acceso a las soluciones en el Centro de cumplimiento de seguridad existente yendo a &amp; [https://protection.office.com](https://protection.office.com) . Como alternativa, puede hacer  clic en la pestaña Más recursos en la navegación izquierda del centro de cumplimiento de Microsoft 365 y seleccionar la tarjeta del centro de seguridad y cumplimiento Office 365 de cumplimiento.  
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -98,8 +98,8 @@ Si está buscando una solución de cumplimiento existente y aún no está dispon
 
 - **Obtenga información sobre y cree directivas de cumplimiento de comunicaciones** para identificar y corregir rápidamente infracciones de directivas de código de conducta corporativas. Consulte [Cumplimiento de comunicaciones.](communication-compliance.md)
 
-- **Microsoft Information Protection,** obtenga información sobre cómo las soluciones de Microsoft 365 le ayudan a descubrir, clasificar y proteger información confidencial dondequiera que viva o viaje.
-    - **Familiarizarse con Microsoft Cloud App Security y configurarlo.** Consulte [Inicio rápido: Introducción a Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security).
+- **Microsoft Information Protection,** obtenga información sobre cómo Microsoft 365 soluciones le ayudan a descubrir, clasificar y proteger información confidencial dondequiera que viva o viaje.
+    - **Familiarizarse con y configurar Microsoft Cloud App Security**. Consulte [Inicio rápido: Introducción a Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security).
     - **Introducción a los clasificadores**. Clasificar el contenido y, a continuación, etiquetar para que pueda protegerse y controlarse correctamente es el punto de partida de la disciplina de protección de la información. Consulte [Learn about trainable classifiers (preview)](classifier-learn-about.md).
 
-- Visite el catálogo de soluciones de **Microsoft 365** con frecuencia y asegúrese de revisar nuevas soluciones para ayudarle con sus necesidades de cumplimiento. Inicie sesión en [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, **seleccione Catálogo** en el panel de navegación izquierdo.
+- **Visite el catálogo de Microsoft 365** de soluciones a menudo y asegúrese de revisar nuevas soluciones para ayudarle con sus necesidades de cumplimiento. Inicie sesión en [https://compliance.microsoft.com](https://compliance.microsoft.com) y, a continuación, **seleccione Catálogo** en el panel de navegación izquierdo.

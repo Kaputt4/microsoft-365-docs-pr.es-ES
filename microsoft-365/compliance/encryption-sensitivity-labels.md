@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f670a3cdefb7b6cd78d24a17fc2e6276274efff3
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 6163e48e3e80b76506d970b77d6cd66f7a050d51
+ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222423"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52079263"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -45,7 +45,7 @@ Por último, como administrador, al configurar una etiqueta de confidencialidad 
 - **Asignar permisos ahora** para que determine exactamente los permisos para el contenido con esa etiqueta y los usuarios que los obtendrán.
 - **Permitir a los usuarios asignar permisos** al aplicar la etiqueta al contenido. De esta forma, puede permitir a los usuarios de su organización cierta flexibilidad que pueden necesitar para colaborar y llevar a cabo su trabajo.
 
-La configuración de cifrado está disponible cuando se [crea una etiqueta de confidencialidad](create-sensitivity-labels.md) en el Centro de cumplimiento de Microsoft 365, Centro de seguridad de Microsoft 365 o el Centro de seguridad y cumplimiento.
+La configuración de cifrado está disponible cuando se [crea una etiqueta de confidencialidad](create-sensitivity-labels.md) en el Centro de cumplimiento de Microsoft 365. También puede usar el portal más antiguo, el Centro de seguridad y cumplimiento.
 
 ## <a name="understand-how-the-encryption-works"></a>Entender cómo funciona el cifrado
 
@@ -123,7 +123,7 @@ Elegir si asignar permisos ahora o permitir a los usuarios asignar permisos:
 
 ## <a name="assign-permissions-now"></a>Asignar permisos ahora
 
-Use las opciones siguientes para controlar quién puede tener acceso al correo electrónico o a los documentos a los que se aplica esta etiqueta. Puede:
+Use las siguientes opciones para controlar quién puede tener acceso al correo electrónico o a los documentos a los que se aplica esta etiqueta. Puede:
 
 - **Permitir que el acceso al contenido con la etiqueta expire**, ya sea en una fecha específica o tras un número determinado de días después de aplicar la etiqueta. Después de ese momento, los usuarios no podrán abrir el elemento con la etiqueta. Si especifica una fecha, se activará en la medianoche de esa fecha, en la zona horaria actual. (Tenga en cuenta que algunos clientes de correo electrónico pueden no aplicar la expiración y mostrar correos electrónicos una vez pasada dicha fecha, debido a otros mecanismos de almacenamiento en caché).
 
@@ -135,11 +135,11 @@ Configuración de control de acceso para contenido cifrado:
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licencia de uso de administración de derechos para el acceso sin conexión
 
-Cuando un usuario abre un documento o un correo electrónico que se ha protegido con el cifrado desde el servicio de Azure Rights Management, se otorga una licencia de uso de Azure Rights Management para ese contenido al usuario. Esta licencia de uso es un certificado que contiene los derechos de uso del usuario para el documento o correo electrónico y la clave de cifrado que se usó para cifrar el contenido. La licencia de uso también contiene una fecha de expiración en caso de que se haya establecido y durante cuánto tiempo es válida la licencia de uso.
+Cuando un usuario abre un documento o correo electrónico que está protegido mediante cifrado del servicio de Azure Rights Management, se concede una licencia de uso de Azure Rights Management para el usuario. Esta licencia de uso es un certificado que contiene los derechos de uso del usuario para el documento o correo electrónico, y la clave de cifrado que se usó para cifrar el contenido. La licencia de uso también contiene una fecha de vencimiento (si se ha configurado) y el tiempo durante el que la licencia de uso es válida.
 
 Si no se ha establecido ninguna fecha de expiración, el período predeterminado de validez de licencia de uso para un espacio empresarial es 30 días. Durante la duración de la licencia de uso, el usuario no se vuelve a autenticar o autorizar para ver el contenido. Este proceso permite que el usuario pueda abrir el documento o correo electrónico protegido sin conexión a Internet. Cuando la validez de la licencia de uso expire, la próxima vez que el usuario acceda a un documento o correo electrónico protegido, el usuario debe ser autorizado y autenticarse de nuevo.
 
-Además de volver a hacer la autenticación, se vuelven a evaluar la configuración de cifrado y la pertenencia a grupos de usuarios. Esto significa que los usuarios podrían experimentar resultados diferentes de acceso para el mismo documento o correo electrónico si hay cambios en la configuración de cifrado o la pertenencia a grupos con respecto al último momento en que se accedió al contenido.
+Además de volver a hacer la autenticación, se vuelven a evaluar la pertenencia a grupos de usuario y la directiva. Esto significa que los usuarios podrían experimentar resultados diferentes de acceso para el mismo documento o correo electrónico si hay cambios en la configuración del cifrado o en la pertenencia a grupos con respecto al último momento en que se accedió al contenido.
 
 Para obtener información sobre cómo cambiar la configuración de 30 días predeterminada, vea [Licencia de uso de administración de derechos](/azure/information-protection/configure-usage-rights#rights-management-use-license).
 
@@ -236,7 +236,7 @@ Puede usar las siguientes opciones para que los usuarios puedan asignar permisos
     
     La opción No reenviar es compatible con todos los clientes de correo electrónico que admiten etiquetas de confidencialidad. Sin embargo, aplicar la opción **Solo cifrar** con una etiqueta de confidencialidad es una versión reciente que solo se admite mediante etiquetas integradas y no con el cliente de etiquetas unificado de Azure Information Protection. Para los clientes de correo electrónico que no admiten esta funcionalidad, la etiqueta no estará visible.
     
-    Para comprobar qué aplicaciones de Outlook que usan etiquetas integradas que aplican la opción Solo cifrar con una etiqueta de confidencialidad, usan la [tabla de funciones para Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) y la fila **Permitir que los usuarios asignen permisos: solo cifrar**.
+    Para comprobar las versiones mínimas de las aplicaciones de Outlook que usan etiquetas integradas para admitir la aplicación de la opción Solo cifrar con una etiqueta de confidencialidad, use la [tabla de funcionalidades para Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) y la fila **Permitir que los usuarios asignen permisos: solo cifrar**.
 
 - En Word, PowerPoint y Excel, se pide al usuario que seleccione sus propios permisos para organizaciones, usuarios o grupos específicos.
 
@@ -265,7 +265,7 @@ En Outlook, cuando un usuario aplica una etiqueta de confidencialidad que le per
 
 ![Etiqueta de confidencialidad aplicada al mensaje en Outlook](../media/sensitivity-label-outlook-protection-applied.png)
 
-Cuando cualquiera de estas opciones se aplica a un correo electrónico, este se cifra y los destinatarios tienen que autenticarse. A continuación, los destinatarios tendrán automáticamente derechos de uso restringidos:
+Cuando cualquiera de estas opciones se aplica a un correo electrónico, este se cifra y los destinatarios tienen que autenticarse. Luego, el destinatario obtiene automáticamente derechos de uso restringido:
 
 - **No reenviar**: los destinatarios no podrán reenviar el correo electrónico, imprimirlo ni copiarlo. Por ejemplo, en el cliente de Outlook, el botón Reenviar y las opciones de menú Guardar como e Imprimir no están disponibles, y no se pueden agregar o cambiar destinatarios en los cuadros Para, CC o CCO.
     
@@ -406,7 +406,7 @@ Cifrar los documentos y mensajes de correo electrónico más confidenciales le a
 
 - Si se agrega una etiqueta que aplica el cifrado a través de una aplicación de Office, cuando el documento está [extraído en SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de) y el usuario descarta la desprotección, el documento permanece etiquetado y cifrado.
 
-- Las siguientes acciones para archivos cifrados no son compatibles con las aplicaciones de Office (Windows, Mac, Android y iOS) y los usuarios ven un mensaje de error que indica que se ha producido un problema. Sin embargo, la funcionalidad de SharePoint se puede usar como alternativa:
+- Las siguientes acciones para archivos cifrados no son compatibles con las aplicaciones de Office (Windows, Mac, Android e iOS) y los usuarios ven un mensaje de error que indica que se ha producido un problema. Sin embargo, se puede usar la funcionalidad de SharePoint como alternativa:
 
   - Ver, restaurar y guardar las copias de versiones anteriores. Como alternativa, los usuarios pueden realizar estas acciones mediante Office en la web cuando [habilita y configura las versiones para una lista o biblioteca](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
   - Cambiar el nombre o la ubicación de los archivos. Como alternativa, los usuarios pueden [cambiar el nombre de un archivo, carpeta o vínculo de una biblioteca de documentos](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) en SharePoint.
@@ -424,7 +424,7 @@ Para poder usar el cifrado, es posible que tenga que realizar algunas tareas de 
 
 - Configurar Exchange para Azure Information Protection
     
-    Exchange no necesita configurarse para Azure Information Protection para que los usuarios puedan aplicar etiquetas en Outlook para cifrar sus correos electrónicos. Sin embargo, hasta que Exchange se configure para Azure Information Protection, no tendrá la funcionalidad completa para usar la protección de Azure Rights Management con Exchange.
+    Exchange no tiene que estar configurado para Azure Information Protection antes de que los usuarios puedan aplicar etiquetas en Outlook para cifrar los mensajes de correo. Sin embargo, hasta que Exchange no esté configurado para Azure Information Protection, no obtendrá toda la funcionalidad del uso de la protección de Azure Rights Management con Exchange.
     
     Por ejemplo, los usuarios no pueden ver mensajes de correo electrónico cifrados en teléfonos móviles o con Outlook en la Web, no se pueden indizar mensajes de correo electrónico cifrados para la búsqueda y no puede configurar Exchange Online DLP para la protección de administración de derechos. 
     

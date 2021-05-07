@@ -24,7 +24,7 @@ monikerRange: o365-worldwide
 ms.date: 11/20/2020
 ms.openlocfilehash: ace8712718dc960f846bd366c8e8dbb7b074f428
 ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/30/2021
 ms.locfileid: "52107187"
@@ -61,7 +61,7 @@ Microsoft Corporation, por tener residencia fiscal dentro los Estados Unidos de 
 
 ## <a name="5-is-the-invoice-i-receive-valid-for-my-accounting-operations-in-mexico"></a>5. ¿La factura que recibo es válida para mis operaciones contables en México?
 
-Una factura generada por entidades extranjeras (en este caso, Microsoft Corporation) que incluye el RFC respectivo es válida para propósitos fiscales en México. (Recomendamos consultar con su contador para más información).
+Una factura generada por entidades extranjeras (en este caso, Microsoft Corporation) que incluye el RFC respectivo es válida para propósitos fiscales en México (recomendamos consultar con su contable para más información).
 
 ## <a name="related-content"></a>Contenido relacionado
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usar etiquetas de confidencialidad para proteger el contenido en los sitios de SharePoint y Microsoft Teams, y los grupos de Microsoft 365.
-ms.openlocfilehash: 501df9b167e917d79957d8b156597af67e6240af
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4914a5911ffb493eded46631d7682c1e48cf1426
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919586"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860879"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint
 
@@ -51,7 +51,7 @@ Antes de habilitar etiquetas de confidencialidad para contenedores y establecerl
 
 ![Una etiqueta de sensibilidad que se muestra en la aplicación de escritorio de Word](../media/sensitivity-label-word.png)
 
-Después de habilitar y configurar etiquetas de confidencialidad para contenedores, los usuarios también pueden ver y aplicar etiquetas de confidencialidad en sitios de equipos de Microsoft, grupos de Microsoft 365 y sitios de SharePoint. Por ejemplo, al crear un sitio de grupo de SharePoint:
+Después de habilitar y configurar las etiquetas de confidencialidad para los contenedores, los usuarios también pueden ver y aplicar etiquetas de confidencialidad a los sitios de grupo de Microsoft, los grupos de Microsoft 365 y los sitios de SharePoint. Por ejemplo, cuando crea un nuevo sitio de grupo desde SharePoint:
 
 ![Una etiqueta de sensibilidad al crear un sitio de equipo desde SharePoint](../media/sensitivity-labels-new-team-site.png)
 
@@ -144,13 +144,13 @@ Como práctica recomendada, no cambie la configuración de sitio y grupo para un
 
 Además, si los cambios incluyen la configuración **Acceso de usuarios externos**:
 
-- La nueva configuración se aplica a los usuarios nuevos, pero no a los usuarios existentes. Por ejemplo, si esta configuración se seleccionó previamente y, como resultado, los usuarios invitados entraron el sitio, estos aún podrán tener acceso al sitio después de que la opción esté desactivada en la configuración de la etiqueta.
+- La nueva configuración se aplica a los nuevos usuarios, pero no a los existentes. Por ejemplo, si esta configuración se seleccionó anteriormente y, como resultado, los usuarios invitados accedieron al sitio, estos usuarios invitados aún pueden acceder al sitio después de que esta configuración se borre en la configuración de la etiqueta.
 
 - La configuración de privacidad de las propiedades de grupo hiddenMembership y roleEnabled no se actualiza.
 
 ### <a name="deleting-published-labels-that-are-configured-for-sites-and-groups"></a>Eliminar etiquetas publicadas que están configuradas para sitios y grupos
 
-Si elimina una etiqueta de confidencialidad con la configuración de sitio y grupo habilitada, y esa etiqueta se incluye en una o más directivas de etiquetas, esta acción pueden provocar fallas de creación para nuevos equipos, grupos y sitios. Para evitarlo, siga las instrucciones que se indican a continuación:
+Si elimina una etiqueta de confidencialidad que tiene habilitada la configuración del sitio y del grupo, y esa etiqueta está incluida en una o más políticas de etiquetas, esta acción puede provocar fallas en la creación de nuevos equipos, grupos y sitios. Para evitar esta situación, utilice la siguiente guía:
 
 1. Elimine la etiqueta de confidencialidad de todas las directivas de etiqueta que la incluyan.
 
@@ -233,19 +233,19 @@ Asegúrese de que tiene la versión 16.0.19418.12000 o posterior del Shell de ad
    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
    ```
 
-4. Cree una nueva variable que identifique varios sitios con una cadena de identificación en común en su URL. Por ejemplo:
+4. Cree una nueva variable que identifique varios sitios que tienen una cadena de identificación en común en su URL. Por ejemplo:
 
    ```powershell
    $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents"
    ```
 
-5. Ejecute el siguiente comando para aplicar la etiqueta a estos sitios. Utilice nuestros ejemplos:
+5. Ejecute el siguiente comando para aplicar la etiqueta a estos sitios. Usando nuestros ejemplos:
 
    ```powershell
    $sites | ForEach-Object {Set-SPOTenant $_.url -SensitivityLabel $Id}
    ```
 
-Para aplicar distintas etiquetas a otros sitios, repita el siguiente comando para cada sitio: `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
+Esta serie de comandos le permite etiquetar varios sitios en el espacio empresarial con la misma etiqueta de confidencialidad y, por este motivo, puede usar el cmdlet Set-SPOTenant, en lugar del cmdlet Set-SPOSite que se usa para la configuración por sitio. Pero use el cmdlet Set-SPOSite cuando necesite aplicar una etiqueta diferente a sitios específicos repitiendo el comando siguiente en cada uno de estos sitios: `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
 
 ## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>Ver y administrar etiquetas de confidencialidad en el centro de administración de SharePoint
 
@@ -317,7 +317,7 @@ Para convertir las clasificaciones antiguas en etiquetas de confidencialidad, si
 
 Luego:
 
-1. Use PowerShell para aplicar las etiquetas de confidencialidad a los grupos de Microsoft 365 y a los sitios de SharePoint mediante la asignación de nombres. Vea la siguiente sección para obtener instrucciones.
+1. Use PowerShell para aplicar las etiquetas de confidencialidad a los grupos de Microsoft 365 y a los sitios de SharePoint mediante la asignación de nombres.
 
 2. Quitar las clasificaciones antiguas de los grupos y sitios existentes.
 
@@ -347,7 +347,7 @@ Para ayudarle a administrar la coexistencia de etiquetas de confidencialidad y c
    $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
    ```
 
-6. Para cada grupo, agregue la nueva etiqueta de sensibilidad GUID. Por ejemplo:
+6. Para cada grupo, agregue la nueva etiqueta de confidencialidad GUID. Por ejemplo:
 
     ```PowerShell
     foreach ($g in $groups)

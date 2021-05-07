@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: 'Obtenga información sobre cómo puede tener más de una dirección de correo electrónico, denominada alias de correo electrónico, asociada con su cuenta Microsoft 365 para empresas. '
-ms.openlocfilehash: 00e1c55edfcfa9937ab6a18b4bf268adb858b775
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: fd5fe2906335c8c2d1f41ac7643b7312138e15f5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107127"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241693"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Agregar otro alias de correo electrónico para un usuario
   
@@ -44,12 +44,8 @@ Puede crear hasta 400 alias para un usuario. No se necesitan licencias o cargos 
 > Si desea que varias personas administren el correo electrónico enviado a una única dirección de correo electrónico como info@NodPublishers.com o sales@NodPublishers.com, cree un buzón compartido. Para obtener más información, vea [Create a shared mailbox](create-a-shared-mailbox.md).
   
 ## <a name="add-email-aliases-to-a-user"></a>Agregar alias de correo electrónico a un usuario
-<a name="AddEmailPreview"> </a>
 
 Debe tener permisos [de administrador](../add-users/about-admin-roles.md) para hacerlo. 
-
-  
-::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 
@@ -77,73 +73,7 @@ Debe tener permisos [de administrador](../add-users/about-admin-roles.md) para h
   
 7. **Cuando el usuario responda, la *dirección De* dependerá de su Outlook cliente. Outlook en la web usará el alias en el que se recibió el correo electrónico (lo llamaremos el principio ping-pong). Outlook escritorio usará su alias de correo electrónico principal.** Por ejemplo, supongamos que un mensaje se envía a Sales@NodPublishers.com y llega a la bandeja de entrada de Eliza. Cuando Eliza responde al mensaje con Outlook escritorio, su dirección de correo electrónico principal aparecerá como Eliza@NodPublishers.com, no Sales@NodPublishers.com.
     
-::: moniker-end
-
-::: moniker range="o365-germany"
-    
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>. 
-    
-    
-2. En la página **Usuarios activos**, seleccione el nombre de la persona que desea editar.
-
-3. Junto a **Nombre de usuario / Alias de correo** electrónico, seleccione **Editar**.
-
-    > [!Important] 
-    > Si recibe el mensaje de error " No se puede encontrar un parámetro que coincida con el nombre del parámetro **'EmailAddresses",** significa que tarda un poco más en terminar de configurar el espacio empresarial o el dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
-
-4. En el cuadro de texto **en Alias**, escriba la primera parte del nuevo alias de correo electrónico. Si ha agregado su propio dominio a Microsoft 365, puede elegir el dominio para el nuevo alias de correo electrónico mediante la lista desplegable. A continuación, seleccione **Aceptar**.
-
-    > [!IMPORTANT]
-    > Si adquirió su suscripción con GoDaddy u otro partner, tendrá que usar la consola de administración del proveedor para establecer el nuevo alias como el principal. 
-  
-    > [!TIP]
-    > El alias de correo electrónico tiene que terminar con un dominio de la lista desplegable. Para agregar otro nombre de dominio a la lista, vea [Agregar un dominio a Microsoft 365](../setup/add-domain.md). 
-
-5. Cuando haya acabado, seleccione **Guardar**.
-
-6. Espere 24 horas para que los nuevos alias se rellenen en Microsoft 365. 
-    
-    El usuario ahora tendrá una dirección principal y un alias. Por ejemplo, todo el correo enviado a la dirección principal de Eliza Hoffman, Eliza@NodPublishers.com, y su alias, Sales@NodPublishers.com, irá a la Bandeja de entrada de Eliza.
-    
-  
-7. **Cuando el usuario responda, la *dirección De* dependerá de su Outlook cliente. Outlook en la web usará el alias en el que se recibió el correo electrónico (lo llamaremos el principio ping-pong). Outlook escritorio usará su alias de correo electrónico principal.** Por ejemplo, supongamos que un mensaje se envía a Sales@NodPublishers.com y llega a la bandeja de entrada de Eliza. Cuando Eliza responde al mensaje con Outlook escritorio, su dirección de correo electrónico principal aparecerá como Eliza@NodPublishers.com, no Sales@NodPublishers.com.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>. 
-
-    
-2. En la página **Usuarios activos**, seleccione el nombre de la persona que desea editar.
-
-3. Junto a **Nombre de usuario / Alias de correo** electrónico, seleccione **Editar**.
-
-    > [!Important] 
-    > Si recibe el mensaje de error " No se puede encontrar un parámetro que coincida con el nombre del parámetro **'EmailAddresses",** significa que tarda un poco más en terminar de configurar el espacio empresarial o el dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
-
-4. En el cuadro de texto **en Alias**, escriba la primera parte del nuevo alias de correo electrónico. Si ha agregado su propio dominio a Microsoft 365, puede elegir el dominio para el nuevo alias de correo electrónico mediante la lista desplegable. A continuación, seleccione **Aceptar**.
-
-    > [!IMPORTANT]
-    > Si adquirió su suscripción con GoDaddy u otro partner, tendrá que usar la consola de administración del proveedor para establecer el nuevo alias como el principal. 
-  
-    > [!TIP]
-    > El alias de correo electrónico tiene que terminar con un dominio de la lista desplegable. Para agregar otro nombre de dominio a la lista, vea [Agregar un dominio a Microsoft 365](../setup/add-domain.md). 
-
-5. Cuando haya acabado, seleccione **Guardar**.
-
-6. Espere 24 horas para que los nuevos alias se rellenen en Microsoft 365. 
-    
-    El usuario ahora tendrá una dirección principal y un alias. Por ejemplo, todo el correo enviado a la dirección principal de Eliza Hoffman, Eliza@NodPublishers.com, y su alias, Sales@NodPublishers.com, irá a la Bandeja de entrada de Eliza.
-    
-  
-7. **Cuando el usuario responda, la *dirección De* dependerá de su Outlook cliente. Outlook en la web usará el alias en el que se recibió el correo electrónico (lo llamaremos el principio ping-pong). Outlook escritorio usará su alias de correo electrónico principal.** Por ejemplo, supongamos que un mensaje se envía a Sales@NodPublishers.com y llega a la bandeja de entrada de Eliza. Cuando Eliza responde al mensaje con Outlook escritorio, su dirección de correo electrónico principal aparecerá como Eliza@NodPublishers.com, no Sales@NodPublishers.com.
-
-::: moniker-end
-
-
 ## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>¿Ha recibido "No se puede encontrar un parámetro que coincida con el nombre del parámetro EmailAddresses"?
-
 
 Si recibe el mensaje de error " No se puede encontrar un parámetro que coincida con el nombre del parámetro **EmailAddresses**" significa que tarda un poco más en terminar de configurar el espacio empresarial o el dominio personalizado si agregó uno recientemente. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al soporte técnico, que realizará una sincronización completa.
   

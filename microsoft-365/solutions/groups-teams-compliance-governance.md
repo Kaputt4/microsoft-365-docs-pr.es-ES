@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Obtenga información sobre las opciones de cumplimiento para Microsoft 365 grupos, Teams y SharePoint colaboración.
-ms.openlocfilehash: 92b668c5cbf5d105ccd1373a6ef8550400e4539f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: a9a94f0c1886ac5b60292f5f4d4b9b9d6d84380c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114033"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241681"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opciones de cumplimiento para Microsoft 365 grupos, Teams y SharePoint colaboración
 
@@ -38,11 +38,13 @@ En la tabla siguiente se proporciona una referencia rápida para los controles d
 ||Clasificar automáticamente contenido confidencial|[Aplicar una etiqueta de confidencialidad automáticamente al contenido](../compliance/apply-sensitivity-label-automatically.md)|
 ||Cifrar contenido confidencial|[Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado](../compliance/encryption-sensitivity-labels.md)|
 |Protección de la información|||
-||Evitar la pérdida de información confidencial|[Información sobre la prevención de pérdida de datos](../compliance/dlp-learn-about-dlp.md)|
+||Evitar la pérdida de información confidencial|[Obtenga más información acerca de la prevención de pérdida de datos](../compliance/dlp-learn-about-dlp.md)|
 ||Proteger la información confidencial en el chat.|[Prevención y prevención de pérdida de datos Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
 ||Definir la información confidencial de la organización|[Tipos de información confidencial personalizados](../compliance/sensitive-information-type-learn-about.md)|
 |Segmentación de usuarios|||
 ||Restringir la comunicación entre segmentos de usuario|[Barreras de información](../compliance/information-barriers.md)|
+|Residencia de datos|||
+||Almacenar datos en ubicaciones geográficas específicas|[Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)|
 
 ## <a name="information-retention"></a>Retención de información
 
@@ -82,18 +84,18 @@ Puede usar etiquetas de confidencialidad para cifrar archivos, lo que permite qu
 
 - [Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado](../compliance/encryption-sensitivity-labels.md)
 
-- [Configurar un equipo con aislamiento de seguridad](./secure-teams-security-isolation.md)
+- [Configuración de un equipo con aislamiento de seguridad](./secure-teams-security-isolation.md)
 
 Recursos adicionales:
 
-- [Información sobre las etiquetas de confidencialidad](../compliance/sensitivity-labels.md)
+- [Más información sobre las etiquetas de confidencialidad](../compliance/sensitivity-labels.md)
 
 
 ## <a name="information-protection"></a>Protección de la información
 
 Las directivas DLP pueden impedir el uso compartido accidental de información confidencial entre SharePoint, Exchange y Teams. Puede crear directivas que especifiquen acciones que deben realizarse (como bloquear el acceso) en función de un conjunto de reglas.
 
-- [Información sobre la prevención de pérdida de datos](../compliance/dlp-learn-about-dlp.md)
+- [Obtenga más información acerca de la prevención de pérdida de datos](../compliance/dlp-learn-about-dlp.md)
 
 DLP en Teams puede ayudar a proteger la información confidencial en Teams mensajes de chat y canal mediante la eliminación de mensajes que contienen información confidencial.
 
@@ -112,6 +114,14 @@ Con las barreras de información, puede segmentar los datos y los usuarios para 
 - [Barreras de información en Microsoft Teams](/microsoftteams/information-barriers-in-teams)
 
 - [Usar barreras de información con SharePoint](/sharepoint/information-barriers)
+
+## <a name="data-residency"></a>Residencia de datos
+
+Con Microsoft 365 Multi-Geo, puede aprovisionar y almacenar datos en reposo en las ubicaciones geográficas que haya elegido para cumplir los requisitos de residencia de datos. En un entorno multigeómico, el inquilino de Microsoft 365 consta de una ubicación central (donde se aprovisionó originalmente la suscripción Microsoft 365) y una o más ubicaciones satélite donde puede almacenar datos.
+
+- [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)
+
+- [Plan para Microsoft 365 Multi-Geo](/microsoft-365/enterprise/plan-for-multi-geo)
 
 ## <a name="related-topics"></a>Temas relacionados
 

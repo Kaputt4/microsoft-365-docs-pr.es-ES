@@ -19,19 +19,19 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para administradores: obtenga información sobre cómo usar la carga en la red para importar en bloque varios archivos PST a buzones de usuario en Microsoft 365.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd747840827a5d8f37bbb9f6b4c4656b80df8b26
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: cf7f471a4323c4c03f232e93d2f00b930e53aefe
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034189"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114346"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Usar la carga en la red para importar los archivos PST de su organización a Microsoft 365
 
 > [!NOTE]
 > Este artículo está dirigido a administradores. ¿Está intentando importar archivos PST a su propio buzón? Consulte [Importar el correo electrónico, los contactos y el calendario desde un archivo .pst de Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)
   
-Estas son las instrucciones paso a paso necesarias para usar la carga en la red para importar en bloque varios archivos PST a buzones de Microsoft 365. Para leer las preguntas más frecuentes sobre el uso de la carga en la red para importar en bloque archivos PST a los buzones de Microsoft 365, vea [Preguntas más frecuentes sobre el uso de carga en la red para importar archivos PST](faqimporting-pst-files-to-office-365.md#using-network-upload-to-import-pst-files).
+Estas son las instrucciones paso a paso necesarias para usar la carga en la red para importar en bloque varios archivos PST a buzones de Microsoft 365. Para leer las preguntas más frecuentes sobre el uso de la carga en la red para importar en bloque archivos PST a los buzones de Microsoft 365, vea [Preguntas más frecuentes sobre el uso de carga en la red para importar archivos PST](./faqimporting-pst-files-to-office-365.yml#using-network-upload-to-import-pst-files).
   
 [Paso 1: copiar la URL de SAS e instalar AzCopy](#step-1-copy-the-sas-url-and-install-azcopy)
 
@@ -45,7 +45,7 @@ Estas son las instrucciones paso a paso necesarias para usar la carga en la red 
 
 [Paso 6: filtrar los datos e iniciar el trabajo de importación de PST](#step-6-filter-data-and-start-the-pst-import-job)
 
-Tenga en cuenta que debe llevar a cabo el paso 1 solo una vez para importar los archivos PST a los buzones de Microsoft 365. Después de realizar estos pasos, siga los pasos comprendidos entre el 2 y el 6 cada vez que quiera cargar e importar un lote de archivos PST.
+Tiene que llevar a cabo el paso 1 solo una sola vez para importar los archivos PST a los buzones de correo de Microsoft 365. Posteriormente, siga los pasos comprendidos entre el 2 y el 6 cada vez que desee cargar e importar un lote de archivos PST.
 
 ## <a name="before-you-import-pst-files"></a>Antes de importar archivos PST
   
@@ -53,18 +53,18 @@ Tenga en cuenta que debe llevar a cabo el paso 1 solo una vez para importar los 
 
     Además, para crear trabajos de importación en el Centro de seguridad y cumplimiento, debe cumplirse uno de estos requisitos:
 
-  - Debe tener asignado el rol de los destinatarios de correo en Exchange Online. De forma predeterminada, este rol se asigna a los grupos de roles de administración de la organización y administración de destinatarios.
+  - Debe tener asignado el rol de Destinatarios de correo en Exchange Online. De forma predeterminada, este rol se asigna a los grupos de roles de Administración de la organización y Administración de destinatarios.
 
     O bien:
 
   - Necesita ser administrador global en su organización.
 
   > [!TIP]
-    > Puede crear un nuevo grupo de roles en Exchange Online que esté pensado específicamente para la importación de archivos PST. Para obtener el nivel mínimo de privilegios necesarios para importar archivos PST, asigne los roles de importación y exportación de buzón y de destinatarios de correo al nuevo grupo de roles y, a continuación, agregue a los miembros.
+    > Puede crear un nuevo grupo de roles en Exchange Online que está pensado específicamente para la importación de archivos PST. Para obtener el nivel mínimo de privilegios necesarios para importar archivos PST, asigne los roles de Importación y exportación de buzón de correo y de Destinatarios de correo al nuevo grupo de roles y, a continuación, agregue a los miembros.
   
 - El único método admitido para importar archivos PST a Microsoft 365 es usar la herramienta AzCopy, tal y como se describe en este tema. No puede usar el Explorador de Azure Storage para cargar archivos PST directamente en el área de Azure Storage.
 
-- Debe almacenar los archivos PST que quiere importar a Microsoft 365 en un servidor de archivos o en una carpeta compartida de la organización. En el paso 2, ejecutará la herramienta AzCopy, que cargará los archivos PST almacenados en este servidor de archivos o carpeta compartida en Microsoft 365.
+- Debe almacenar los archivos PST que desea importar a Microsoft 365 en un servidor de archivos o en una carpeta compartida de la organización. En el paso 2, ejecutará la herramienta AzCopy para cargar en Microsoft 365 los archivos PST almacenados en un servidor de archivos o carpeta compartida.
 
 - Es posible que los archivos PST de gran tamaño afecten al rendimiento del proceso de importación de PST. Por lo tanto, le recomendamos que cada archivo PST que cargue en la ubicación de  Azure Storage en el paso 2 no sea superior a 20 GB.
 
@@ -144,7 +144,7 @@ Ahora ya puede usar la herramienta AzCopy.exe para cargar los archivos PST en Of
     > [!IMPORTANT]
     > Debe especificar un directorio como la ubicación de origen en el comando anterior. No se puede especificar un archivo PST individual. Se cargarán todos los archivos PST en el directorio de origen.
 
-    En la tabla siguiente se describen los parámetros y los valores requeridos de AzCopy.exe. La información de los pasos anteriores se usa en los valores de estos parámetros.
+    En la tabla siguiente se describen los parámetros y los valores requeridos de AzCopy.exe. La información que obtenga de los pasos anteriores se usa en los valores de estos parámetros.
 
     | Parámetro | Descripción | Ejemplo |
     |:-----|:-----|:-----|
@@ -167,11 +167,11 @@ Después de ejecutar el comando, aparecen mensajes de estado en los que se muest
 
 ## <a name="optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>Paso 3 (opcional): ver una lista de los archivos PST cargados en Office 365
 
-Como paso opcional, puede instalar y usar el Explorador de Microsoft Azure Storage (una herramienta gratuita de código abierto) para ver la lista de archivos PST que ha cargado en el blob de Azure. Hay dos motivos principales para hacerlo:
+Como paso opcional, puede instalar y usar el Explorador de Microsoft Azure Storage (una herramienta gratuita de código abierto) para ver la lista de archivos PST que cargó en el blob de Azure. Hay dos buenos motivos para hacer esto:
   
 - Comprobar que los archivos PST de la carpeta compartida o el servidor de archivos de la organización se cargaron correctamente en el blob de Azure.
 
-- Comprobar el nombre de archivo (y el nombre de ruta de subcarpeta, si se incluye) de cada archivo PST cargado en el blob de Azure. Esto es útil al crear el archivo de asignación de PST en el paso siguiente, ya que tendrá que especificar el nombre de ruta de la carpeta y el nombre de archivo de todos los archivos PST. Comprobar estos nombres puede ayudar a reducir posibles errores en el archivo de asignación de PST.
+- Comprobar el nombre de archivo (y el nombre de ruta de la subcarpeta, si incluyó uno) para cada archivo PST cargado en el blob de Azure. Esto es muy útil al crear el archivo de asignación de PST en el paso siguiente, ya que tendrá que especificar el nombre de ruta de la carpeta y el nombre de archivo de todos los archivos PST. Comprobar estos nombres puede ayudar a reducir posibles errores en el archivo de asignación de PST.
 
 El Explorador de Microsoft Azure Storage está en versión preliminar.
   
@@ -198,7 +198,7 @@ Para instalar el Explorador de Azure Storage y conectarse al área de Azure Stor
   
 ## <a name="step-4-create-the-pst-import-mapping-file"></a>Paso 4: crear el archivo de asignación de importación de PST
 
-Después de cargar los archivos PST en la ubicación de Azure Storage de su organización, el siguiente paso consiste en crear un archivo de valores separados por comas (CSV) que especifique los buzones de usuario en los que se importarán los archivos PST. Este archivo CSV se enviará en el paso siguiente, cuando cree un trabajo de importación de archivos PST.
+Después de cargar los archivos PST en la ubicación de almacenamiento de Azure Storage de su organización, el siguiente paso consiste en crear un archivo de valores separados por comas (CSV) que especifique los buzones de usuario en los que se importarán los archivos PST. Enviará este archivo CSV en el paso siguiente, cuando cree un trabajo de importación de PST.
   
 1. [Descargue una copia del archivo de asignación de importación de PST](https://go.microsoft.com/fwlink/p/?LinkId=544717).
 
@@ -218,7 +218,7 @@ Después de cargar los archivos PST en la ubicación de Azure Storage de su orga
     Exchange,PSTFiles,zrinkam_archive.pst,zrinkam@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
     ```
 
-    En la primera fila (o la primera fila de encabezado) del archivo CSV aparecen los parámetros que usará el servicio de importación de PST para importar los archivos PST a los buzones de los usuarios. Los nombres de los parámetros están separados por comas. Cada fila situada debajo de la fila de encabezado representa los valores de parámetro para importar un archivo PST a un buzón específico. Necesita una fila para cada archivo PST al que desee importar un buzón de usuario. Puede tener un máximo de 500 filas en el archivo de asignación CSV. Para importar más de 500 archivos PST, tendrá que crear varios archivos de asignación distintos y varios trabajos de importación en el paso 5.
+    En la primera fila (o la fila de encabezado) del archivo CSV aparecen los parámetros que usará el servicio de importación de PST para importar los archivos PST a los buzones de los usuarios. Los nombres de los parámetros están separados por comas. Cada fila situada debajo de la fila de encabezado representa los valores de parámetro para importar un archivo PST a un buzón específico. Necesitará una fila para cada archivo PST al que desee importar un buzón de usuario. Puede haber un máximo de 500 filas en el archivo de asignación de CSV. Para importar más de 500 archivos PST, tendrá que crear varios archivos de asignación y crear varios trabajos de importación en el paso 5.
 
     > [!NOTE]
     > No cambie nada en la fila de encabezado, ni siquiera los parámetros SharePoint; se ignorarán durante el proceso de importación de PST. Además, no olvide reemplazar los datos de los marcadores de posición del archivo de asignación por los datos reales.
@@ -231,7 +231,7 @@ Después de cargar los archivos PST en la ubicación de Azure Storage de su orga
     | `FilePath` <br/> |Especifica la ubicación de la carpeta en la ubicación de Azure Storage en la que ha cargado los archivos PST en el paso 2.  <br/> Si no ha incluido un nombre de subcarpeta opcional en la dirección URL de SAS en el parámetro `/Dest:` del paso 2, deje este parámetro en blanco en el archivo CSV. Si ha incluido un nombre de subcarpeta, especifíquelo en este parámetro (vea el segundo ejemplo). El valor de este parámetro distingue mayúsculas de minúsculas.  <br/> En cualquier caso, *no* incluya "ingestiondata" en el valor del parámetro `FilePath`.  <br/><br/> **Importante:** el uso de mayúsculas y minúsculas del nombre de la ruta de acceso del archivo debe ser el mismo que el usado si ha incluido un nombre de subcarpeta opcional en la dirección URL de SAS en el parámetro `/Dest:` del paso 2. Por ejemplo, si en el paso 2 ha usado `PSTFiles` para el nombre de subcarpeta y, después, `pstfiles` en el parámetro `FilePath` del archivo CSV, se producirá un error en la importación del archivo PST. Asegúrese de usar las mismas mayúsculas y minúsculas en ambas instancias.  <br/> |(se deja en blanco)  <br/> O bien  <br/>  `PSTFiles` <br/> |
     | `Name` <br/> |Especifica el nombre del archivo PST que se importará al buzón del usuario. El valor de este parámetro distingue mayúsculas de minúsculas. El nombre de archivo de cada archivo PST en el archivo de asignación para un trabajo de importación debe ser único. <br/> <br/>**Importante:** el uso de mayúsculas y minúsculas del nombre de archivo PST en el archivo CSV debe ser el mismo que el archivo PST cargado en la ubicación de Azure Storage en el paso 2. Por ejemplo, si usa `annb.pst` en el parámetro `Name` del archivo CSV, pero el nombre del archivo PST real es `AnnB.pst`, se producirá un error en la importación de ese archivo PST. Asegúrese de que el nombre del PST en el archivo CSV use las mismas mayúsculas y minúsculas que el archivo PST real.  <br/> | `annb.pst` <br/> |
     | `Mailbox` <br/> |Especifica la dirección de correo electrónico del buzón en el que se importará el archivo PST. No puede especificar una carpeta pública porque el servicio de importación de PST no admite la importación de archivos PST a carpetas públicas.  <br/> Para importar un archivo PST a un buzón inactivo, tiene que especificar el GUID del buzón de correo de este parámetro. Para obtener este GUID, ejecute el siguiente comando de PowerShell en Exchange Online:  `Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> <br/>**Nota:** en algunos casos, es posible que tenga varios buzones con la misma dirección de correo electrónico, donde un buzón es un buzón activo y el otro buzón está en un estado de eliminación temporal (o inactivo). En estas situaciones, tiene que especificar el GUID del buzón de correo para identificar exclusivamente el buzón en el que se importa el archivo PST. Para obtener este GUID para los buzones activos, ejecute el siguiente comando de PowerShell: `Get-Mailbox <identity of active mailbox> | FL Guid`. Para obtener el GUID para los buzones eliminados temporalmente (o inactivos), ejecute este comando `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`.  <br/> | `annb@contoso.onmicrosoft.com` <br/> O bien:  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
-    | `IsArchive` <br/> | Especifica si se va a importar el archivo PST en el buzón de archivo del usuario. Hay dos opciones:  <br/><br/>**FALSE**: importa el archivo PST en el buzón principal del usuario.  <br/> **TRUE**: importa el archivo PST en el buzón de archivo del usuario. Esto supone que el [buzón de archivo del usuario está habilitado](enable-archive-mailboxes.md). <br/><br/>Si establece este parámetro en `TRUE` y el buzón de archivo del usuario no está habilitado, se producirá un error en la importación para ese usuario. Si falla una importación para un usuario (porque su archivo no está habilitado y esta propiedad se establece en `TRUE`), los demás usuarios en el trabajo de importación no se verán afectados.  <br/>  Si deja este parámetro en blanco, el archivo PST se importa al buzón de correo principal del usuario.  <br/> <br/>**Nota**: para importar un archivo PST a un buzón de archivo basado en la nube para un usuario cuyo buzón de correo principal es local, solo tiene que especificar `TRUE` para este parámetro y especificar la dirección de correo electrónico del buzón local del usuario para el parámetro `Mailbox`.  <br/> | `FALSE` <br/> O bien  <br/>  `TRUE` <br/> |
+    | `IsArchive` <br/> | Especifica si se va a importar o el archivo PST en el buzón de archivo del usuario. Hay dos opciones:  <br/><br/>**FALSE**: importa el archivo PST en el buzón principal del usuario.  <br/> **TRUE**: importa el archivo PST en el buzón de archivo del usuario. Esto supone que el [buzón de archivo del usuario está habilitado](enable-archive-mailboxes.md). <br/><br/>Si establece este parámetro en `TRUE` y el buzón de archivo del usuario no está habilitado, se producirá un error en la importación para ese usuario. Si falla una importación para un usuario (porque su archivo no está habilitado y esta propiedad se establece en `TRUE`), los demás usuarios en el trabajo de importación no se verán afectados.  <br/>  Si deja este parámetro en blanco, el archivo PST se importa al buzón de correo principal del usuario.  <br/> <br/>**Nota**: para importar un archivo PST a un buzón de archivo basado en la nube para un usuario cuyo buzón de correo principal es local, solo tiene que especificar `TRUE` para este parámetro y especificar la dirección de correo electrónico del buzón local del usuario para el parámetro `Mailbox`.  <br/> | `FALSE` <br/> O bien  <br/>  `TRUE` <br/> |
     | `TargetRootFolder` <br/> | Especifica la carpeta en la que se importa el archivo PST.  <br/> <br/> Si deja este parámetro en blanco, el archivo PST se importará a una carpeta nueva llamada **Importados**, ubicada en el nivel raíz del buzón (el mismo nivel que la Bandeja de entrada y el resto de las carpetas del buzón predeterminadas).  <br/> <br/> Si no especifica `/`, las carpetas y los elementos en el archivo PST se importan en el nivel superior de la estructura de carpetas, en el archivo o el buzón de destino. Si existe una carpeta en el buzón de destino (por ejemplo, carpetas predeterminadas como Bandeja de entrada, Elementos enviados y Elementos eliminados), los elementos en el archivo PST en esa carpeta se combinan en la carpeta existente en el buzón de destino. Por ejemplo, si el archivo PST contiene una carpeta Bandeja de entrada, los elementos de esa carpeta se importarán a la carpeta Bandeja de entrada del buzón de destino. Si estas carpetas no existen en la estructura del buzón de destino, se crearán unas nuevas.  <br/><br/>  Si especifica `/<foldername>`, los elementos y carpetas del archivo PST se importarán a una carpeta llamada *\<foldername\>* . Por ejemplo, si usa `/ImportedPst`, los elementos se importarán a una carpeta llamada **PST importados**. Esta carpeta estará ubicada en el buzón del usuario en el mismo nivel que la carpeta Bandeja de entrada.  <br/><br/> **Sugerencia:** considere la posibilidad de ejecutar algunos lotes de prueba para experimentar este parámetro y determinar la mejor ubicación de la carpeta en la que va a importar los archivos PST.  <br/> |(se deja en blanco)  <br/> O bien  <br/>  `/` <br/> O bien  <br/>  `/ImportedPst` <br/> |
     | `ContentCodePage` <br/> |Este parámetro opcional especifica un valor numérico de la página de códigos que se usa para importar archivos PST en el formato de archivo ANSI. Este parámetro se usa para importar archivos PST de las organizaciones de chino, japonés y coreano, porque estos idiomas suelen usar un juego de caracteres doble byte (DBCS) para la codificación de caracteres. Si no se usa este parámetro para importar archivos PST de los idiomas que usan DBCS para los nombres de las carpetas de buzón, dichos nombres suelen ser incomprensibles después de la importación.  <br/><br/> Para obtener una lista de los valores compatibles que se pueden usar para este parámetro, vea [Identificadores de página de códigos](/windows/win32/intl/code-page-identifiers).  <br/> <br/>**Nota:** como se ha mencionado anteriormente, se trata de un parámetro opcional y no es necesario incluirlo en el archivo CSV. También puede incluirlo y dejar el valor en blanco para una o varias filas.  <br/> |(se deja en blanco)  <br/> O bien  <br/>  `932` (que es el identificador de página de códigos para ANSI/OEM japonés)  <br/> |
     | `SPFileContainer` <br/> |Para la importación de archivos PST, deje este parámetro en blanco.  <br/> |No aplicable  <br/> |
@@ -322,7 +322,7 @@ Después de crear e iniciar el trabajo de importación en el paso 5, Microsoft 3
 
   - Los datos están disponibles para el usuario en todos los dispositivos, ya que se almacenan en la nube.
 
-  - Permite satisfacer las necesidades de cumplimiento de su organización, ya que facilita la aplicación de las características de cumplimiento de Microsoft 365 a los datos de los archivos PST que ha importado. Incluye lo siguiente:
+  - Permite satisfacer las necesidades de cumplimiento de su organización, ya que facilita la aplicación de las características de cumplimiento de Microsoft 365 a los datos de los archivos PST que ha importado. Esto incluye:
 
   - Habilitar [buzones de archivo](enable-archive-mailboxes.md) y el [archivado de ampliación automática](enable-unlimited-archiving.md) para dar a los usuarios espacio de almacenamiento de buzón adicional para almacenar los datos importados.
 
@@ -336,9 +336,9 @@ Después de crear e iniciar el trabajo de importación en el paso 5, Microsoft 3
 
   - Importar datos a [buzones de correo inactivos](create-and-manage-inactive-mailboxes.md) para archivar datos por motivos de cumplimiento. 
 
-  - Usar [directivas de prevención de pérdida de datos](data-loss-prevention-policies.md) para evitar la pérdida de datos confidenciales fuera de su organización.
+  - Usar [directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md) para evitar la pérdida de datos confidenciales fuera de su organización.
   
-- Este es un ejemplo de la dirección URL de la Firma de acceso compartido (SAS) que se ha obtenido en el paso 1. Este ejemplo también contiene la sintaxis del comando que se ejecuta en la herramienta AzCopy.exe para cargar los archivos PST. Asegúrese de tomar precauciones para proteger la URL de SAS de la misma manera que protegería las contraseñas u otra información relacionada con la seguridad.
+- A continuación, se muestra un ejemplo de la dirección URL de la Firma de acceso compartido (SAS) que se obtiene en el paso 1. Este ejemplo también contiene la sintaxis del comando que se ejecuta en la herramienta AzCopy.exe para cargar los archivos PST. Asegúrese de tomar precauciones para proteger la dirección URL de la SAS de la misma manera que protegería las contraseñas u otra información relacionada con la seguridad.
 
     ```console
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D

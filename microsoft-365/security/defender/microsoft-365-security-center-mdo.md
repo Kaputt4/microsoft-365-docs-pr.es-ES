@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: a0ab671f879119c1ab490bcb726f08224e59bfdd
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 62a917b36355335c8eb52d83caecdbba691f8175
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114417"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52242137"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender para Office 365 en el Centro de seguridad de Microsoft 365
 
@@ -45,14 +45,20 @@ Si está buscando elementos relacionados con el cumplimiento, visite el [Centro 
 
 Esta tabla es una referencia rápida de ámbitos relacionados con el correo electrónico y la colaboración en los que han tenido lugar cambios entre el **Centro de seguridad y cumplimiento** y el portal de **Seguridad de Microsoft 365** Haga clic en los siguientes vínculos para obtener más información sobre estos ámbitos.
 
-|**Área**  |**Descripción del cambio**  |
-|---------|---------|
-| [Página de la entidad de correo electrónico](../office-365-security/mdo-email-entity-page.md) | Esta página **unifica** la información sobre correos electrónicos que se ido publicando en diferentes páginas o vistas en el pasado. Se ha *centralizado* la investigación de correos electrónicos para encontrar amenazas y tendencias. La información del encabezado y la vista previa del correo electrónico son accesibles desde la misma página de correo electrónico, junto con más información útil relacionada con correos electrónicos. Igualmente, el estado de detonación de direcciones URL o archivos adjuntos malintencionados se puede encontrar en una pestaña en la misma página. La página de entidad de correo electrónico ofrece a los administradores y equipos de operaciones de seguridad los recursos necesarios para permitirles entender con rapidez una amenaza de correo electrónico y su estado, para que puedan decidir de inmediato qué acciones tomar.  |
-| [Investigación](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center) | Aúna capacidades de AIR en [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) y [Microsoft Defender para punto de conexión](../defender-endpoint/automated-investigations.md). Con estas actualizaciones y mejoras, su equipo de operaciones de seguridad podrá ver detalles sobre investigaciones automatizadas y acciones de corrección en todos sus correos electrónicos, contenido de colaboración, cuentas de usuario y dispositivos, todo en un mismo sitio.  | 
-| [Vista de alertas](../../compliance/alert-policies.md) | El panel flotante **Ver alertas** en el Centro de seguridad y cumplimiento de Office incluye ahora vínculos al Centro de seguridad de Microsoft 365. Haga clic en el vínculo de **Abrir página de alertas** y se abrirá el Centro de seguridad de Microsoft 365. Puede acceder la página **Ver alertas** si hace clic en cualquier alerta de Office 365 en la cola de Alertas. |
-| [Aprendizaje de simulación de ataque](../office-365-security/attack-simulation-training-insights.md)   | Use el aprendizaje de simulación de ataque para ejecutar escenarios realistas de ataque en su organización. Estos ataques simulados pueden ayudar a formar a su personal antes de que un ataque real impacte a su organización. El aprendizaje de simulación de ataque incluye más opciones, informes mejorados y flujos de aprendizaje mejorados que contribuyen a que resulte más sencillo llevar a cabo y administrar la simulación de ataque y los escenarios de aprendizaje.  |
+<br>
+
+****
+
+|Área|Descripción de cambio|
+|---|---|
+|[Página de la entidad de correo electrónico](../office-365-security/mdo-email-entity-page.md)|Esta página **unifica** la información sobre correos electrónicos que se ido publicando en diferentes páginas o vistas en el pasado. Se ha *centralizado* la investigación de correos electrónicos para encontrar amenazas y tendencias. La información del encabezado y la vista previa del correo electrónico son accesibles desde la misma página de correo electrónico, junto con más información útil relacionada con correos electrónicos. Igualmente, el estado de detonación de direcciones URL o archivos adjuntos malintencionados se puede encontrar en una pestaña en la misma página. La página de entidad de correo electrónico ofrece a los administradores y equipos de operaciones de seguridad los recursos necesarios para permitirles entender con rapidez una amenaza de correo electrónico y su estado, para que puedan decidir de inmediato qué acciones tomar.|
+|[Investigación](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center)|Aúna capacidades de AIR en [Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) y [Microsoft Defender para punto de conexión](../defender-endpoint/automated-investigations.md). Con estas actualizaciones y mejoras, su equipo de operaciones de seguridad podrá ver detalles sobre investigaciones automatizadas y acciones de corrección en todos sus correos electrónicos, contenido de colaboración, cuentas de usuario y dispositivos, todo en un mismo sitio.|
+|[Vista de alertas](../../compliance/alert-policies.md)|El panel flotante **Ver alertas** en el Centro de seguridad y cumplimiento de Office incluye ahora vínculos al Centro de seguridad de Microsoft 365. Haga clic en el vínculo de **Abrir página de alertas** y se abrirá el Centro de seguridad de Microsoft 365. Puede acceder la página **Ver alertas** si hace clic en cualquier alerta de Office 365 en la cola de Alertas.|
+|[Aprendizaje de simulación de ataque](../office-365-security/attack-simulation-training-insights.md)|Use el aprendizaje de simulación de ataque para ejecutar escenarios realistas de ataque en su organización. Estos ataques simulados pueden ayudar a formar a su personal antes de que un ataque real impacte a su organización. El aprendizaje de simulación de ataque incluye más opciones, informes mejorados y flujos de aprendizaje mejorados que contribuyen a que resulte más sencillo llevar a cabo y administrar la simulación de ataque y los escenarios de aprendizaje.|
+|
 
 No se han realizado cambios en estos ámbitos:
+
 - [Explorador](../office-365-security/threat-explorer.md)
 - [Directivas y reglas](../../compliance/alert-policies.md)
 - [Campaña](../office-365-security/campaigns.md)
@@ -66,7 +72,7 @@ Asimismo, eche un vistazo a la sección **Información relacionada** al final de
 > El portal de Seguridad de Microsoft 365 (https://security.microsoft.com) combina características de seguridad en https://securitycenter.windows.com y https://protection.office.com). Sin embargo, lo que vea dependerá de su suscripción. Por ejemplo, si solo tiene el plan 1 o 2 de Microsoft Defender para Office 365 como suscripción independiente, no verá funciones de Seguridad para puntos de conexión y los clientes del plan 1 de Defender para Office no verán elementos como el análisis de amenazas.
 
 > [!TIP]
->  Todas Exchange Online Protection (EOP) se incluirán en el centro de seguridad de Microsoft 365, ya que EOP es un elemento principal de Defender para Office 365.
+> Todas Exchange Online Protection (EOP) se incluirán en el centro de seguridad de Microsoft 365, ya que EOP es un elemento principal de Defender para Office 365.
 
 ## <a name="microsoft-365-security-center-home-page"></a>Página principal del Centro de seguridad de Microsoft 365
 
@@ -80,7 +86,7 @@ La página principal del portal muestra:
 - Tweets de la fuente de Twitter de la inteligencia de seguridad de Microsoft
 - y más información de resumen
 
-Si usa el **Tour guiado**, podrá hacer un tour rápido de las páginas de punto de conexión o de correo electrónico y colaboración. Tenga en cuenta que lo que vea aquí dependerá de si tiene la licencia de Microsoft Defender para Office 365 o de Defender para punto de conexión.  
+Si usa el **Tour guiado**, podrá hacer un tour rápido de las páginas de punto de conexión o de correo electrónico y colaboración. Tenga en cuenta que lo que vea aquí dependerá de si tiene la licencia de Microsoft Defender para Office 365 o de Defender para punto de conexión.
 
 Además, se incluye un vínculo al **Centro de seguridad y cumplimiento de Office 365** para que pueda compararlos. El último vínculo lleva a la página **Novedades**, que muestra actualizaciones recientes.
 
@@ -89,6 +95,7 @@ Además, se incluye un vínculo al **Centro de seguridad y cumplimiento de Offic
 La navegación izquierda o la barra de inicio rápido tienen un aspecto familiar. Sin embargo, hay algunos elementos nuevos y actualizados en este centro de seguridad.
 
 ### <a name="incidents-and-alerts"></a>Incidentes y alertas
+
 Aúna la administración de incidentes y de alertas en todos sus correos electrónicos, dispositivos e identidades. Las alertas están ahora disponibles en el nodo de Investigación y ayudan a ofrecer una vista más amplia de un ataque. La página de alertas ofrece el contexto completo de la alerta, ya que combina señales de ataque para construir una historia más detallada. Anteriormente, las alertas eran específicas de diferentes cargas de trabajo. Esta experiencia nueva y unificada aúna una vista congruente de alertas en las cargas de trabajo. Puede realizar una evaluación, investigar y tomar acciones eficaces con rapidez.
 
 - [Más información acerca de las Investigaciones](incidents-overview.md)
@@ -96,8 +103,8 @@ Aúna la administración de incidentes y de alertas en todos sus correos electr�
 
 ![La barra de inicio rápido de alertas y acciones](../../media/converge-1-alerts-and-actions.png)
 
-
 ### <a name="hunting"></a>Búsqueda
+
 Busque de manera proactiva amenazas, malware y actividad malintencionada en todos sus puntos de conexión, buzones de Office 365 y más gracias a las [consultas de búsqueda avanzada de amenazas](advanced-hunting-overview.md). Estas consultas eficaces se pueden usar para buscar y revisar indicadores y entidades de amenazas para encontrar amenazas conocidas y potenciales.
 
 Se pueden crear [reglas de detección personalizadas](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) desde las consultas de búsqueda avanzada de amenazas para ayudarle a vigilar de manera proactiva eventos que puedan indicar una posible actividad de vulneración y dispositivos mal configurados.
@@ -109,11 +116,13 @@ El Centro de actividades le muestra las investigaciones creadas por las capacida
 [Más información sobre el Centro de actividades](m365d-action-center.md)
 
 #### <a name="threat-analytics"></a>Análisis de amenazas
+
 Obtenga inteligencia sobre amenazas de investigadores expertos de Seguridad de Microsoft. El análisis de amenazas ayuda a los equipos de seguridad a ser más eficientes a la hora de enfrentarse a amenazas emergentes. El análisis de amenazas incluye:
 
 - Detecciones y mitigaciones relacionadas con correos electrónicos de Microsoft Defender para Office 365. Estos se suman a los datos del punto de conexión ya disponibles de Microsoft Defender para punto de conexión.
-- Vista de incidentes relacionados con las amenazas. 
-- Experiencia mejorada para identificar con rapidez y usar información accionable en los informes. Puede acceder al análisis de amenazas desde la barra de navegación en la esquina superior izquierda del Centro de seguridad de Microsoft 365 o desde una tarjeta de panel dedicado que muestra las principales amenazas de su organización. 
+- Vista de incidentes relacionados con las amenazas.
+- Experiencia mejorada para identificar con rapidez y usar información accionable en los informes.
+Puede acceder al análisis de amenazas desde la barra de navegación en la esquina superior izquierda del Centro de seguridad de Microsoft 365 o desde una tarjeta de panel dedicado que muestra las principales amenazas de su organización.
 
 Obtenga más información sobre cómo [Supervisar amenazas emergentes y responder a las mismas con el análisis de amenazas](./threat-analytics.md)
 
@@ -129,22 +138,22 @@ Ver informes, cambiar la configuración y modificar roles de usuario.
 
 :::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="El menú de inicio rápido de los permisos y creación de informes del Centro de seguridad de Microsoft 365, en el lado izquierdo del Centro de seguridad":::.
 
-
 > [!NOTE]
-> Para los usuarios de Defender para Office 365, ahora puede *administrar y rotar* claves de DomainKeys Identified Mail (DKIM) a través del Centro de seguridad de Microsoft 365: https://security.microsoft.com/threatpolicy, o vaya a **Directiva y reglas > Directivas de amenazas > DKIM**.
+> Para los usuarios de Defender para  Office 365, ahora puede administrar y girar claves de correo identificado (DKIM) de DomainKeys a través del centro de seguridad de Microsoft 365: , o navegar a Directivas & directivas de amenazas <https://security.microsoft.com/threatpolicy>  \>  \> **DKIM**.
 
 ## <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Ejemplo de búsqueda avanzada de amenazas para Microsoft Defender para Office 365
+
 ¿Quiere empezar a buscar amenazas para correos electrónicos mediante la búsqueda avanzada de amenazas? Pruebe esto:
 
 La sección [Introducción](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started) del [artículo de Microsoft Defender para Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) tiene fragmentos lógicos de configuración temprana que tienen este aspecto:
 
 1. Configure todo con "anti" en el nombre.
-- antimalware
-- anti-phishing
-- anti-spam (protección contra correo electrónico no deseado)
+   - antimalware
+   - anti-phishing
+   - anti-spam (protección contra correo electrónico no deseado)
 2. Configure todo con "seguro" en el nombre.
-- vínculos seguros
-- archivos adjuntos seguros
+   - vínculos seguros
+   - archivos adjuntos seguros
 3. Defender las cargas de trabajo (ej. SharePoint Online, OneDrive y Teams)
 4. Proteger con la purga automática
 
@@ -152,12 +161,11 @@ Junto con un [vínculo](../office-365-security/protect-against-threats.md) para 
 
 El último paso de la **Introducción** es proteger a los usuarios con la **Purga automática**, también conocida como ZAP. Puede ser muy importante saber si sus esfuerzos para purgar de manera automática correos electrónicos sospechosos o malintencionados, tras el envío, han tenido éxito.
 
-Poder ir rápidamente al lenguaje de consulta Kusto para buscar problemas es una ventaja de unificar estos dos centros de seguridad. Los equipos de seguridad pueden supervisar fallos de ZAP si siguen los siguientes pasos [aquí](https://security.microsoft.com/advanced-hunting) en **Búsqueda** > **Búsqueda avanzada de amenazas**.
+Poder ir rápidamente al lenguaje de consulta Kusto para buscar problemas es una ventaja de unificar estos dos centros de seguridad. Los equipos de seguridad pueden supervisar las pérdidas de ZAP si toman sus siguientes pasos [aquí](https://security.microsoft.com/advanced-hunting), en **Hunting** \> **Advanced Hunting**.
 
 1. En la página de Búsqueda avanzada de amenazas, haga clic en Consulta.
 1. Copie la consulta siguiente en la ventana de consulta:
 1. Seleccione Ejecutar consulta.
-
 
 ```kusto
 EmailPostDeliveryEvents 
@@ -178,6 +186,7 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 Los datos de esta consulta aparecerán en el panel de resultados bajo la propia consulta. Los resultados incluyen información como "DeviceName", "AccountDisplayName" y "ZapTime" en un conjunto de resultados que se puede personalizar. Los resultados también se pueden exportar para sus registros. Si se trata de una consulta que volverá a necesitar, seleccione **Guardar** > **Guardar como** y agregue la consulta a su lista de consultadas, compartidas o consultas de comunidad.
 
 ## <a name="related-information"></a>Información relacionada
+
 - [Microsoft Defender para Office 365 en el Centro de seguridad de Microsoft 365](microsoft-365-security-center-mdo.md)
 - [El centro de actividades](./m365d-action-center.md)
 - [Alertas de colaboración y correos electrónicos](../../compliance/alert-policies.md#default-alert-policies)

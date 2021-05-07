@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Obtenga información sobre cómo agregar una sugerencia de directiva a una directiva de prevención de pérdida de datos (DLP) para notificar a un usuario que está trabajando con contenido que entra en conflicto con una directiva DLP.
-ms.openlocfilehash: 63909be2f88ef5f9c42dcd07e127309b4b5b17e9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c9756c9ebfc39427d665a6fc83d73070f8cdf52d
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925476"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114356"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
@@ -33,7 +33,7 @@ Puede usar una directiva de prevención de pérdida de datos (DLP) para identifi
   
 ![La barra de mensajes muestra sugerencia de directiva en Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
   
-Una sugerencia de directiva es una notificación o advertencia que aparece cuando alguien está trabajando con contenido que entra en conflicto con una directiva DLP, por ejemplo, contenido como un libro de Excel en un sitio de OneDrive para la Empresa que contiene información de identificación personal (PII) y se comparte con un usuario externo.
+Una sugerencia de directiva es una notificación o advertencia que aparece cuando alguien está trabajando con contenido que entra en conflicto con una directiva DLP( por ejemplo, contenido como un libro de Excel en un sitio de OneDrive para la Empresa que contiene información de identificación personal (PII) y se comparte con un usuario externo.
   
 Puede usar notificaciones de correo electrónico y sugerencias de directivas para aumentar el conocimiento y ayudar a educar a los usuarios sobre las directivas de su organización. También puede dar a los usuarios la opción de invalidar la directiva, de modo que no se bloqueen si tienen una necesidad empresarial válida o si la directiva detecta un falso positivo.
   
@@ -43,15 +43,15 @@ En el Centro de &amp; cumplimiento de seguridad, al crear una directiva DLP, pue
     
 - Mostrar una sugerencia de directiva para el contenido que entre en conflicto con la directiva DLP:
     
-  - Para el correo electrónico en Outlook en la web y Outlook 2013 y versiones posteriores, la sugerencia de directiva aparece en la parte superior de un mensaje encima de los destinatarios mientras se está compuesto el mensaje.
+  - Para el correo Outlook en la web y Outlook 2013 y versiones posteriores, la sugerencia de directiva aparece en la parte superior de un mensaje encima de los destinatarios mientras se está compuesto el mensaje.
     
-  - Para los documentos de una cuenta de OneDrive para la Empresa o un sitio de SharePoint Online, la sugerencia de directiva se indica mediante un icono de advertencia que aparece en el elemento. Para ver más información, puede seleccionar  un elemento y, a continuación, elegir el icono del panel Información en la esquina superior derecha de la página para ![ abrir el panel de ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) detalles. 
+  - Para los documentos de OneDrive para la Empresa cuenta o SharePoint sitio en línea, la sugerencia de directiva se indica mediante un icono de advertencia que aparece en el elemento. Para ver más información, puede seleccionar  un elemento y, a continuación, elegir el icono del panel Información en la esquina superior derecha de la página para ![ abrir el panel de ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) detalles. 
     
-  - Para los documentos de Excel, PowerPoint y Word almacenados en un sitio de OneDrive para la Empresa o un sitio de SharePoint Online que se incluye en la directiva DLP, la sugerencia de directiva aparece en la barra de mensajes y en la vista Backstage ( **Información** del menú Archivo \> ).
+  - Para los documentos Excel, PowerPoint y Word almacenados en un sitio de OneDrive para la Empresa o en un sitio de SharePoint Online que se incluye en la directiva DLP, la sugerencia de directiva aparece en la barra de mensajes y en la vista Backstage ( **Información** del menú Archivo \> ).
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>Agregar notificaciones de usuario a una directiva DLP
 
-Al crear una directiva DLP, puede habilitar las **notificaciones de usuario**. Cuando las notificaciones de usuario están habilitadas, Microsoft 365 envía notificaciones por correo electrónico y sugerencias de directiva. Puede personalizar a quién se envían los correos electrónicos de notificación, el texto del correo electrónico y el texto de sugerencia de directiva.
+Al crear una directiva DLP, puede habilitar las **notificaciones de usuario**. Cuando las notificaciones de usuario están habilitadas, Microsoft 365 envía notificaciones de correo electrónico y sugerencias de directiva. Puede personalizar a quién se envían los correos electrónicos de notificación, el texto del correo electrónico y el texto de sugerencia de directiva.
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
@@ -69,13 +69,13 @@ Al crear una directiva DLP, puede habilitar las **notificaciones de usuario**. C
     
 6. Para elegir las ubicaciones que desea proteger la directiva DLP, realice una de las siguientes acciones:
     
-   - Elija **Todas las ubicaciones en Office 365** \> **Next**.
+   - Elija **Todas las ubicaciones en Office 365** \> **Siguiente**.
     
    - Elija **Let me choose specific locations** \> **Next**.
     
-   Para incluir o excluir una ubicación completa, como todos los  correos electrónicos de Exchange o todas las cuentas de OneDrive, active o apague el estado de esa ubicación. 
+   Para incluir o excluir una ubicación completa, como todas las Exchange correo  electrónico o todas las OneDrive, active o apague el estado de esa ubicación. 
     
-   Para incluir solo sitios específicos de SharePoint o cuentas de OneDrive, cambie el estado a on y, a continuación, haga clic en los vínculos en **Incluir** para elegir sitios o cuentas específicos.  
+   Para incluir solo sitios SharePoint específicos o cuentas OneDrive, cambie estado a y,  a continuación, haga clic en los vínculos en Incluir para elegir sitios o cuentas específicos.  
     
 7. Elija **Usar configuración avanzada** \> **Siguiente**.
     
@@ -109,7 +109,7 @@ Las notificaciones tienen una línea asunto que comienza con la acción realizad
   
 De forma predeterminada, las notificaciones muestran texto similar al siguiente para un elemento de un sitio. El texto de notificación se configura por separado para cada regla, por lo que el texto que se muestra es diferente en función de qué regla coincida.
 
-|**Si la regla de directiva DLP hace esto...**|**A continuación, la notificación predeterminada para documentos de SharePoint o OneDrive para la Empresa indica esto...**|**A continuación, la notificación predeterminada para los mensajes de Outlook indica esto...**|
+|**Si la regla de directiva DLP hace esto...**|**A continuación, la notificación predeterminada para SharePoint o OneDrive para la Empresa documentos indica esto...**|**A continuación, la notificación predeterminada para Outlook mensajes indica esto...**|
 |:-----|:-----|:-----|
 |Envía una notificación, pero no permite la invalidación  <br/> |Este elemento está en conflicto con una directiva de la organización.  <br/> |El mensaje de correo electrónico entra en conflicto con una directiva de la organización.  <br/> |
 |Bloquea el acceso, envía una notificación y permite la invalidación  <br/> |Este elemento está en conflicto con una directiva de la organización. Si no resuelve este conflicto, es posible que se bloquee el acceso a este archivo.  <br/> |El mensaje de correo electrónico entra en conflicto con una directiva de la organización. El mensaje no se entregó a todos los destinatarios.  <br/> |
@@ -124,7 +124,7 @@ También puedes usar los siguientes tokens para personalizar la notificación po
 |**Token**|**Descripción**|
 |:-----|:-----|
 |%%AppliedActions%%  <br/> |Acciones aplicadas al contenido.  <br/> |
-|%%ContentURL%%  <br/> |Dirección URL del documento en el sitio de SharePoint Online o en el sitio de OneDrive para la Empresa.  <br/> |
+|%%ContentURL%%  <br/> |Dirección URL del documento en el sitio SharePoint online o OneDrive para la Empresa sitio.  <br/> |
 |%%MatchedConditions%%  <br/> |Las condiciones que coincidieron con el contenido. Use este token para informar a los usuarios de posibles problemas con el contenido.  <br/> |
    
 ![Mensaje de notificación que muestra dónde aparecen los tokens](../media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
@@ -143,7 +143,7 @@ Para cada regla de una directiva DLP, puede configurar sugerencias de directiva 
     
 ![Opciones de sugerencias de directiva](../media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
   
-Por ejemplo, puede que se aplique una directiva DLP a sitios de OneDrive para la Empresa que detecte información de identificación personal (PII) y esta directiva tenga tres reglas:
+Por ejemplo, es posible que se aplique una directiva DLP a OneDrive para la Empresa que detecte información de identificación personal (PII) y esta directiva tenga tres reglas:
   
 1. Primera regla: Si se detectan menos de cinco instancias de información confidencial en un documento y el documento se comparte con personas que pertenecen a la organización, la acción **Enviar una notificación** muestra una sugerencia de directiva. Para obtener sugerencias de directiva, no se necesitan opciones de invalidación porque esta regla simplemente está avisando a las personas y no está bloqueando el acceso. 
     
@@ -161,13 +161,13 @@ Estos son algunos puntos clave para comprender el uso de una sugerencia de direc
     
 ## <a name="policy-tips-on-onedrive-for-business-sites-and-sharepoint-online-sites"></a>Sugerencias de directiva en sitios de OneDrive para la Empresa y sitios de SharePoint Online
 
-Cuando un documento de un sitio de OneDrive para la Empresa o un sitio de SharePoint Online coincide con una regla de una directiva DLP y esa regla usa sugerencias de directiva, las sugerencias de directiva muestran iconos especiales en el documento:
+Cuando un documento de un sitio OneDrive para la Empresa o un sitio de SharePoint Online coincide con una regla de una directiva DLP y esa regla usa sugerencias de directiva, las sugerencias de directiva muestran iconos especiales en el documento:
   
 1. Si la regla envía una notificación sobre el archivo, aparece el icono de advertencia.
     
 2. Si la regla bloquea el acceso al documento, aparece el icono de bloqueado.
     
-   ![Iconos de sugerencias de directiva en documentos de una cuenta de OneDrive](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
+   ![Iconos de sugerencias de directiva en documentos de una OneDrive cuenta](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
 Para realizar acciones en un documento, puede seleccionar un elemento para elegir el icono del panel Información en la esquina superior derecha de la página para abrir el panel de detalles Ver sugerencia \>  ![ ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) de \> **directiva**.
   
@@ -193,7 +193,7 @@ De forma predeterminada, las sugerencias de directiva muestran texto similar al 
 
 Puede personalizar el texto de las sugerencias de directiva de forma independiente de la notificación por correo electrónico. A diferencia del texto personalizado para las notificaciones de correo electrónico (vea la sección anterior), el texto personalizado de las sugerencias de directiva no acepta HTML ni tokens. En su lugar, el texto personalizado para las sugerencias de directiva es texto sin formato solo con un límite de 256 caracteres.
   
-## <a name="policy-tips-in-outlook-on-the-web-and-outlook-2013-and-later"></a>Sugerencias de directiva en Outlook en la web y Outlook 2013 y versiones posteriores
+## <a name="policy-tips-in-outlook-on-the-web-and-outlook-2013-and-later"></a>Sugerencias de directiva en Outlook web y Outlook 2013 y versiones posteriores
 
 Al redactar un nuevo correo electrónico en Outlook en la web y Outlook 2013 y versiones posteriores, verá una sugerencia de directiva si agrega contenido que coincida con una regla en una directiva DLP y esa regla usa sugerencias de directiva. La sugerencia de directiva aparece en la parte superior del mensaje, encima de los destinatarios, mientras se está compuesto el mensaje.
   
@@ -211,22 +211,22 @@ Si las sugerencias de directiva están configuradas para permitir la invalidaci�
   
 Tenga en cuenta que al agregar información confidencial a un correo electrónico, puede haber latencia entre el momento en que se agrega la información confidencial y cuando aparece la sugerencia de directiva.
 
-### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 y versiones posteriores admiten mostrar sugerencias de directivas solo para algunas condiciones
+### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 y versiones posteriores admiten mostrar sugerencias de directiva solo para algunas condiciones
 
-Actualmente, Outlook 2013 y versiones posteriores admiten mostrar sugerencias de directiva solo para estas condiciones:
+Actualmente, Outlook 2013 y versiones posteriores admite mostrar sugerencias de directiva solo para estas condiciones:
 
 - El contenido contiene
 - El contenido se comparte
 
 Tenga en cuenta que las excepciones se consideran condiciones y todas estas condiciones funcionan en Outlook, donde coincidirán con el contenido y aplicarán acciones de protección en el contenido. Pero aún no se admite mostrar sugerencias de directiva a los usuarios. 
   
-### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Sugerencias de directivas en el Centro de administración de Exchange frente al Centro de &amp; cumplimiento de seguridad
+### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Sugerencias de directiva en el Centro Exchange administración frente al Centro de &amp; cumplimiento de seguridad
 
-Las sugerencias de directivas pueden funcionar con directivas DLP y reglas de flujo de correo creadas en el Centro de administración de Exchange o con directivas DLP creadas en el Centro de cumplimiento de seguridad, pero no &amp; ambas. Esto se debe a que estas directivas se almacenan en distintas ubicaciones, pero las sugerencias de directivas solo pueden dibujarse desde una sola ubicación.
+Las sugerencias de directivas pueden funcionar con directivas DLP y reglas de flujo de correo creadas en el centro de administración de Exchange o con directivas DLP creadas en el Centro de cumplimiento de seguridad, pero no &amp; ambas. Esto se debe a que estas directivas se almacenan en distintas ubicaciones, pero las sugerencias de directivas solo pueden dibujarse desde una sola ubicación.
   
-Si ha configurado sugerencias de directivas en el Centro de administración de Exchange, las sugerencias de directiva que configure en el Centro de cumplimiento de seguridad no aparecerán para los usuarios de Outlook en la web y Outlook 2013 y posterior hasta que desactive las sugerencias en el Centro de administración de &amp; Exchange. Esto garantiza que las reglas de flujo de correo de Exchange actuales (también conocidas como reglas de transporte) seguirán funcionando hasta que elija cambiar al Centro de &amp; cumplimiento de seguridad.
+Si ha configurado sugerencias de directiva en el Centro de administración de Exchange, las sugerencias de directiva que configure en el Centro de cumplimiento de seguridad no aparecerán para los usuarios de Outlook en la web y Outlook 2013 y posteriores hasta que desactive las sugerencias en el Centro de administración de &amp; Exchange. Esto garantiza que las reglas Exchange flujo de correo actuales (también conocidas como reglas de transporte) seguirán funcionando hasta que elija cambiar al Centro de cumplimiento &amp; de seguridad.
   
-Tenga en cuenta que, aunque las sugerencias de directivas solo pueden dibujarse desde una única ubicación, las notificaciones de correo electrónico siempre se envían, incluso si usa directivas DLP en el Centro de seguridad y el Centro de administración &amp; de Exchange.
+Tenga en cuenta que, aunque las sugerencias de directiva solo pueden dibujarse desde una única ubicación, las notificaciones de correo electrónico siempre se envían, incluso si usa directivas DLP en el Centro de seguridad y el Centro de administración de &amp; Exchange administración.
   
 ### <a name="default-text-for-policy-tips-in-email"></a>Texto predeterminado para sugerencias de directiva en el correo electrónico
 
@@ -238,18 +238,18 @@ De forma predeterminada, las sugerencias de directiva muestran texto similar al 
 |Bloquea el acceso, envía una notificación y permite la invalidación  <br/> |El correo electrónico entra en conflicto con una directiva de la organización.  <br/> |
 |Bloquea el acceso y envía una notificación  <br/> |El correo electrónico entra en conflicto con una directiva de la organización.  <br/> |
    
-## <a name="policy-tips-in-excel-powerpoint-and-word"></a>Sugerencias de directivas en Excel, PowerPoint y Word
+## <a name="policy-tips-in-excel-powerpoint-and-word"></a>Sugerencias de directiva en Excel, PowerPoint y Word
 
-Cuando las personas trabajan con contenido confidencial en las versiones de escritorio de Excel, PowerPoint y Word, las sugerencias de directiva pueden notificarles en tiempo real que el contenido entra en conflicto con una directiva DLP. Esto requiere lo siguiente:
+Cuando los usuarios trabajan con contenido confidencial en las versiones de escritorio de Excel, PowerPoint y Word, las sugerencias de directiva pueden notificarles en tiempo real que el contenido entra en conflicto con una directiva DLP. Esto requiere lo siguiente:
   
 - El documento de Office está almacenado en un sitio de OneDrive para la Empresa o sitio de SharePoint Online.
     
 - El sitio se incluye en una directiva DLP que está configurada para usar sugerencias de directiva.
     
-Los programas de escritorio de Office sincronizan automáticamente directivas DLP directamente desde Office 365 y, a continuación, analizan los documentos para asegurarse de que no entren en conflicto con las directivas DLP y mostrar sugerencias de directiva en tiempo real.
+Office programas de escritorio sincronizan automáticamente directivas DLP directamente desde Office 365 y, a continuación, analizan los documentos para asegurarse de que no entren en conflicto con las directivas DLP y mostrar sugerencias de directivas en tiempo real.
 
 > [!NOTE]
-> Las aplicaciones de escritorio de Office analizan documentos por sí mismas para determinar si se deben mostrar sugerencias de directiva DLP; no muestran sugerencias de directiva que los sitios de SharePoint Online o los sitios de OneDrive para la Empresa que ya han determinado deben mostrarse en un archivo. Como resultado, es posible que no siempre vea una sugerencia de directiva DLP en las aplicaciones de escritorio que verá en los sitios de SharePoint Online o en los sitios de OneDrive para la Empresa. En cambio, las aplicaciones de Office en la web solo muestran sugerencias de directiva DLP que los sitios de SharePoint Online o los sitios de OneDrive para la Empresa ya han determinado que deben mostrarse.
+> Office aplicaciones de escritorio digitalizar documentos por sí mismas para determinar si se deben mostrar sugerencias de directiva DLP; no muestran sugerencias de directiva que SharePoint sitios en línea o OneDrive para la Empresa ya determinados deben mostrarse en un archivo. Como resultado, es posible que no siempre veas una sugerencia de directiva DLP en las aplicaciones de escritorio que veas en los sitios de SharePoint Online o OneDrive para la Empresa web. En cambio, las aplicaciones Office web solo muestran sugerencias de directiva DLP que SharePoint Sitios en línea o OneDrive para la Empresa sitios ya determinados deben mostrarse.
   
 En función de cómo se configuran las sugerencias de directiva en la directiva DLP, los usuarios pueden optar por simplemente ignorar la sugerencia de directiva, invalidar la directiva con o sin una justificación del negocio o informar de un falso positivo.
   
@@ -265,7 +265,7 @@ Si las sugerencias de directiva en la directiva DLP se configuran con estas opci
   
 ![Opciones de la sugerencia de directiva en Backstage en Excel 2016](../media/5b3857ba-907e-456e-ae43-888b594c049c.png)
   
-En cada uno de estos programas de escritorio de Office, los usuarios pueden optar por desactivar las sugerencias de directiva. Si se desactivan, las sugerencias de directiva que son notificaciones simples no aparecerán en la barra de mensajes o la vista Backstage (en la pestaña **Archivo**). Sin embargo, seguirán apareciendo las sugerencias de directiva de bloqueo e invalidación y seguirán recibiendo la notificación por correo electrónico. Además, la desactivación de las sugerencias de directiva no exime al documento de las directivas DLP que se le han aplicado. 
+En cada uno de estos Office de escritorio, los usuarios pueden optar por desactivar las sugerencias de directiva. Si se desactivan, las sugerencias de directiva que son notificaciones simples no aparecerán en la barra de mensajes o la vista Backstage (en la pestaña **Archivo**). Sin embargo, seguirán apareciendo las sugerencias de directiva de bloqueo e invalidación y seguirán recibiendo la notificación por correo electrónico. Además, la desactivación de las sugerencias de directiva no exime al documento de las directivas DLP que se le han aplicado. 
   
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Texto predeterminado para las sugerencias de directiva en Excel 2016, PowerPoint 2016 y Word 2016
 
@@ -277,19 +277,15 @@ De forma predeterminada, las sugerencias de directiva muestran texto similar par
 |Bloquea el acceso, envía una notificación y permite la invalidación  <br/> |Este archivo está en conflicto con una directiva de la organización. Si no resuelve este conflicto, es posible que se bloquee el acceso a este archivo. Vaya al **menú** Archivo para obtener más información.  <br/> |
 |Bloquea el acceso y envía una notificación  <br/> |Este archivo está en conflicto con una directiva de la organización. Si no resuelve este conflicto, es posible que se bloquee el acceso a este archivo. Vaya al **menú** Archivo para obtener más información.  <br/> |
    
-### <a name="custom-text-for-policy-tips-in-excel-powerpoint-and-word"></a>Texto personalizado para sugerencias de directivas en Excel, PowerPoint y Word
+### <a name="custom-text-for-policy-tips-in-excel-powerpoint-and-word"></a>Texto personalizado para sugerencias de directiva en Excel, PowerPoint y Word
 
 Puede personalizar el texto de las sugerencias de directiva de forma independiente de la notificación por correo electrónico. A diferencia del texto personalizado para las notificaciones de correo electrónico (vea la sección anterior), el texto personalizado de las sugerencias de directiva no acepta HTML ni tokens. En su lugar, el texto personalizado para las sugerencias de directiva es texto sin formato solo con un límite de 256 caracteres.
   
 ## <a name="more-information"></a>Más información
 
-- [Información general sobre las directivas de prevención de pérdida de datos](data-loss-prevention-policies.md)
-    
+- [Obtenga más información acerca de la prevención contra la pérdida de datos](dlp-learn-about-dlp.md)    
 - [Crear una directiva DLP desde una plantilla](create-a-dlp-policy-from-a-template.md)
-- [Condiciones de directiva DLP, excepciones y acciones (versión preliminar)](./dlp-microsoft-teams.md?view=o365-worldwide)
-    
+- [Condiciones de directiva DLP, excepciones y acciones (versión preliminar)](./dlp-microsoft-teams.md) 
 - [Crear una directiva DLP para proteger documentos con FCI u otras propiedades](protect-documents-that-have-fci-or-other-properties.md)
-    
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
-    
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)

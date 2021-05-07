@@ -26,17 +26,17 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: Obtenga información sobre cómo restablecer la contraseña de un usuario en la suscripción de Microsoft 365 para empresas.
-ms.openlocfilehash: 24fc6581837f71659a2ecc0359c6967e3969d868
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+description: Obtenga información sobre cómo restablecer la contraseña de un usuario en Microsoft 365 suscripción para empresas.
+ms.openlocfilehash: fa368c7f44d4df847cf007568853c11970e7adc1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023982"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241705"
 ---
 # <a name="reset-passwords"></a>Restablecer contraseñas
 
-En este artículo se explica cómo restablecer las contraseñas para usted y para los usuarios cuando tiene una suscripción de Microsoft 365 para empresas.
+En este artículo se explica cómo restablecer las contraseñas para usted y para los usuarios cuando tiene una suscripción Microsoft 365 para empresas.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -54,23 +54,7 @@ Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para l
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>Pasos: Restablecer una contraseña de empresa para un usuario
 
-::: moniker range="o365-worldwide"
-
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
-
-::: moniker-end
 
 2. En la **página Usuarios activos,** seleccione el usuario y, a continuación, **seleccione Restablecer contraseña.**
 
@@ -126,13 +110,13 @@ Use PowerShell. Lea esta publicación de Eyal Doron: [Administrar contraseñas c
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-Para obtener información general, vea [Manage Microsoft 365 with PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
+Para obtener información general, [vea Manage Microsoft 365 with PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Forzar un cambio de contraseña para todos los usuarios de su empresa
 
 Consulte esta excelente entrada de blog publicada por Vasil Michev, MVP de Microsoft: [Forzar el cambio de contraseña para todos los usuarios en Office 365](https://go.microsoft.com/fwlink/?linkid=853693).
   
-## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>No tengo una suscripción a Microsoft 365 para empresas
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>No tengo una suscripción de Microsoft 365 para empresas
 
 Lea el artículo [He olvidado el nombre de usuario o la contraseña de la cuenta que uso en Office.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
   

@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 12a4e8873cb7212bfa7dde12bba9e98528cd859a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 01dd5feab17c68eed1da9d66c4310c50e90032c6
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919676"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114230"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Obtener más información acerca de los tipos de información confidencial
 
@@ -35,9 +35,10 @@ Los tipos de información confidencial son clasificadores basados en patrones. D
 
 ## <a name="sensitive-information-types-are-used-in"></a>Los tipos de información confidencial se usan en
 
-- [Directivas de prevención de pérdida de datos](data-loss-prevention-policies.md) 
+- [Directivas de prevención de pérdida de datos](dlp-learn-about-dlp.md) 
 - [Etiquetas de confidencialidad](sensitivity-labels.md)
 - [Etiquetas de retención](retention.md)
+- [Administración de riesgos internos](insider-risk-management.md)
 - [Cumplimiento de las comunicaciones](communication-compliance.md)
 - [Directivas de etiquetado automático](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
@@ -69,7 +70,7 @@ Obtenga más información sobre los niveles de confianza en este vídeo
 
 Ocho dígitos separados por puntos
 
-### <a name="pattern"></a>Pattern
+### <a name="pattern"></a>Patrón
 
 Ocho dígitos:
 - dos dígitos
@@ -143,7 +144,7 @@ Para crear tipos de información confidencial personalizados en el Centro de seg
 
 
 > [!NOTE]
-> Los niveles de confianza mejorados están disponibles para su uso inmediato en Prevención de pérdida de datos para servicios de Microsoft 365, Microsoft Information Protection para servicios de Microsoft 365, Cumplimiento de comunicaciones, Gobierno de la información y Administración de registros.
+> Los niveles de confianza mejorados están disponibles para su uso inmediato en Prevención de pérdida de datos para servicios Microsoft 365, Microsoft Information Protection para servicios Microsoft 365, Cumplimiento de comunicaciones, Gobierno de la información y Administración de registros.
 
 > Microsoft 365 Information Protection ahora es compatible con la vista previa de idiomas con conjunto de caracteres de doble byte para:
 > - Chino (simplificado)
