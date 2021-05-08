@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 2b2ce9670e9f297c89ed70e1b37c17aa59b80844
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9e7ab359297ef1402fa64bc754591a4be3140af0
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687276"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52269509"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -74,7 +74,10 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
 
    En **los mensajes de canal de Teams**, se incluyen los mensajes de los canales estándar, pero no los de [canales privados](/microsoftteams/private-channels). Actualmente, los canales privados no son compatibles con las directivas de retención.
 
-   De forma predeterminada, [se seleccionan todos los equipos y todos los usuarios](#a-policy-that-applies-to-entire-locations), pero puede refinar esto al seleccionar la [**Elegir** y **Excluir** opciones](#a-policy-with-specific-inclusions-or-exclusions).
+   De forma predeterminada, [se seleccionan todos los equipos y todos los usuarios](#a-policy-that-applies-to-entire-locations), pero puede refinar esto al seleccionar la [**Elegir** y **Excluir** opciones](#a-policy-with-specific-inclusions-or-exclusions). Pero, antes de cambiar el valor predeterminado, tenga en cuenta las siguientes consecuencias para una directiva de retención que elimina los mensajes cuando está configurada para incluir o excluir:
+    
+    - En el caso de los chats de grupo, como se guarda una copia de los mensajes en el buzón de cada usuario incluido en el chat, se seguirán devolviendo copias de los mensajes en los resultados de eDiscovery de los usuarios a los que no se les asignó la directiva.
+    - En el caso de los usuarios a los que no se les haya asignado la directiva, los mensajes eliminados se devolverán en los resultados de la búsqueda de Teams, pero no mostrarán el contenido del mensaje como resultado de la eliminación permanente de la directiva asignada a los usuarios.
 
 4. En la página del asistente **Decidir si quiere conservar el contenido, eliminarlo, o ambos**, especifique las opciones de configuración para conservar y eliminar el contenido.
 
@@ -82,7 +85,9 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
 
 5. Finalice el asistente para guardar la configuración.
 
-Para más información sobre las directivas de retención para Teams, consulte [Directivas de retención en Microsoft Teams](/microsoftteams/retention-policies) en la documentación de Teams.
+Para información general sobre cuándo usar las directivas de retención para Teams, consulte [Directivas de retención en Microsoft Teams](/microsoftteams/retention-policies) en la documentación de Teams.
+
+Para obtener detalles técnicos sobre el funcionamiento de la retención de Teams, incluidos los elementos de los mensajes admitidos para la retención e información sobre los períodos de tiempo con tutoriales de ejemplo, vea [Más información sobre la retención de Microsoft Teams](retention-policies-teams.md).
 
 #### <a name="known-configuration-issues"></a>Problemas de configuración conocidos
 
@@ -250,9 +255,9 @@ Para iniciar el período de retención, también puede elegir cuándo se creó e
 
 Ejemplos:
 
-- SharePoint: si desea conservar el contenido de una colección de sitios durante siete años después de que este contenido se modificó por última vez, y un documento de esa colección de sitios no se ha modificado en seis años, el documento se conservará solo durante otro año si no se modifica. Si el documento se edita de nuevo, la edad del documento se calcula a partir de la nueva fecha de la última modificación, y se conservará durante otros siete años.
+- SharePoint: si desea retener los elementos de la colección de un sitio durante siete años a partir de la última modificación del contenido, y un documento de ese sitio no se ha modificado en seis años, el documento se retendrá solo durante un año más, a no ser que se modifique. Si el documento se edita de nuevo, la antigüedad de dicho documento se calculará a partir de la fecha de la última modificación y se retendrá durante otros siete años.
 
-- Exchange: si desea conservar los elementos en un buzón de correo durante siete años y un mensaje se ha enviado hace seis años, el mensaje se conservará durante solo un año. En el caso de los elementos de Exchange, la edad se basa en la fecha de recepción del correo electrónico entrante o en la fecha de envío del correo electrónico saliente. La conservación de los elementos en función de la última modificación se aplica solo al contenido del sitio en OneDrive y SharePoint.
+- Exchange: si desea retener los elementos de un buzón durante siete años y hay un mensaje que se envió hace seis, este se retendrá solo durante un año. Para elementos de Exchange, la antigüedad se basa en la fecha de recepción (en el caso de correos electrónicos recibidos) o de envío (para correos electrónicos enviados). Conservar el contenido en función de cuándo se modificó por última vez solo se aplica a contenido de sitio de OneDrive y SharePoint.
 
 Al final del período de retención, usted elige si desea que el contenido se elimine de forma permanente:
 
@@ -264,7 +269,7 @@ Una directiva de retención puede retener y, a continuación, eliminar elementos
 
 En ambos casos, si su directiva de retención elimina elementos, es importante entender que el período de tiempo especificado para una directiva de retención se calcula a partir del momento en que se ha creado o modificado el elemento, y no a partir del momento en que fue asignado a la directiva.
 
-Por lo tanto, antes de asignar una directiva de retención por primera vez, especialmente cuando esa directiva elimina elementos, en primer lugar, tenga en cuenta la antigüedad del contenido existente y cómo puede afectar la directiva al contenido. También es posible que desee comunicar la nueva directiva a sus usuarios antes de asignarla, para darles tiempo a evaluar el posible impacto.
+Por lo tanto, antes de asignar una directiva de retención por primera vez (especialmente si la directiva en cuestión elimina elementos), considere primero la antigüedad del contenido existente y cuál será el impacto de la directiva. También es recomendable comunicar la nueva directiva a los usuarios antes de asignarla, para que tengan tiempo de evaluar el posible impacto.
 
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Una directiva que se aplica a todas las ubicaciones
 
@@ -272,7 +277,7 @@ Al elegir las ubicaciones, con la excepción de Skype Empresarial, la configurac
 
 Cuando una directiva de retención se aplica a cualquier combinación de todas las ubicaciones, no hay ningún límite en el número de destinatarios, sitios, cuentas, grupos, etc. que la directiva pueda incluir.
 
-Por ejemplo, si la directiva incluye todo el correo electrónico de Exchange y todos los sitios de SharePoint, se incluirán todos los sitios y destinatarios, sea cual sea la cantidad. Y para Exchange, todos los buzones que se creen una vez que la directiva se haya aplicado, heredarán automáticamente la directiva.
+Por ejemplo, si una directiva incluye todo el correo electrónico de Exchange y todos los sitios de SharePoint, se incluirán todos los sitios y destinatarios, independientemente de cuántos sean. En el caso de Exchange, todos los buzones que se creen después de aplicar la directiva heredarán automáticamente la directiva.
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Una directiva con inclusiones o exclusiones específicas
 

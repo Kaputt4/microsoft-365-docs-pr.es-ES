@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Obtenga información sobre cómo configurar SharePoint como un origen de contenido de aprendizaje para Microsoft Viva Learning (versión preliminar).
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: da75ec0573519ed73507994afeac995c0461de0c
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: fc702f57b75b78ab523226ba7d8a8eb6505f2975
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52101089"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244144"
 ---
 # <a name="coming-soon-configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>Próximamente: Configure SharePoint como un origen de contenido de aprendizaje para Microsoft Viva Learning (versión preliminar)
 
@@ -40,11 +40,11 @@ Viva Learning (versión preliminar) admite los siguientes tipos de documentos:
 - Audio (.m4a)
 - Vídeo (.mov, .mp4, .avi)
 
-Para obtener más información, consulte [la SharePoint online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498). 
+Para obtener más información, [vea SharePoint límites](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498). 
 
 ## <a name="permissions"></a>Permisos
 
-Las direcciones URL de carpetas de biblioteca de documentos se pueden recopilar SharePoint sitio de la organización. Viva Learning (versión preliminar) sigue todos los permisos de contenido existentes. Por lo tanto, solo el contenido para el que un usuario tiene permiso de acceso es visible y se puede buscar en Viva Learning (versión preliminar). Cualquier contenido dentro de estas carpetas se puede buscar, pero solo se puede usar el contenido al que el empleado individual tenga permisos.
+Las direcciones URL de carpetas de biblioteca de documentos se pueden recopilar SharePoint sitio de la organización. Viva Learning (versión preliminar) sigue todos los permisos de contenido existentes. Por lo tanto, solo se puede buscar y ver el contenido para el que un usuario tiene permiso de acceso en Viva Learning (versión preliminar). Cualquier contenido dentro de estas carpetas se puede buscar, pero solo se puede usar el contenido al que el empleado individual tenga permisos.
 
 Actualmente, no se admite la eliminación de contenido del repositorio de la organización.
 
@@ -70,11 +70,11 @@ Para configurar SharePoint como orígenes de contenido de aprendizaje en para Vi
 
 1.  En la navegación izquierda del centro Microsoft 365 administración, vaya a **Configuración**  >  **configuración de la organización.**
  
-2.  En la **página Configuración de** la organización, en la pestaña **Servicios,** seleccione **Aplicación de aprendizaje (versión preliminar).**
+2.  En la **página Configuración de** la organización, en la pestaña **Servicios,** seleccione **Viva Learning (versión preliminar).**
 
      ![Configuración en el Centro Microsoft 365 administración que muestra Viva Learning en la lista.](../media/learning/learning-sharepoint-configure1.png)
 
-3.  En el panel Aplicación de aprendizaje **(versión** preliminar), en SharePoint, proporciona la dirección URL del sitio al sitio SharePoint donde desea que Viva Learning cree un repositorio centralizado.
+3.  En el panel **Viva Learning (versión** preliminar), en SharePoint, proporciona la dirección URL del sitio al sitio de SharePoint donde desea que Viva Learning (versión preliminar) cree un repositorio centralizado.
 
      ![Panel de aprendizaje del centro Microsoft 365 administración que muestra SharePoint seleccionado.](../media/learning/learning-sharepoint-configure2.png)
 
@@ -92,7 +92,7 @@ Para configurar SharePoint como orígenes de contenido de aprendizaje en para Vi
 
        ![Página Repositorio de contenido de aprendizaje SharePoint muestra la opción Nuevo.](../media/learning/learning-sharepoint-configure5.png)
  
-   2. En el **panel Nuevo elemento,** en el **campo Título,** agregue un nombre de directorio de su elección. En el **campo Dirección URL de** carpeta, agregue la dirección URL a la carpeta de contenido de aprendizaje. Haga clic en **Guardar**.
+   2. En el **panel Nuevo elemento,** en el **campo Título,** agregue un nombre de directorio de su elección. En el **campo Dirección URL de** carpeta, agregue la dirección URL a la carpeta de contenido de aprendizaje. Seleccione **Guardar**.
 
        ![Nuevo panel de elementos en SharePoint que muestra los campos De título y Dirección URL de carpeta.](../media/learning/learning-sharepoint-configure6.png)
 
@@ -117,7 +117,7 @@ Para agregar una **columna Description** a la página de la biblioteca de docume
 
      ![Página Documentos en SharePoint que muestra las opciones Mostrar acciones con una sola línea de texto resaltada.](../media/learning/learning-sharepoint-curation1.png)
 
-3. En el panel **Crear una columna,** en el **campo Nombre,** agregue un nombre descriptivo para la columna. Haga clic en **Guardar**.
+3. En el panel **Crear una columna,** en el **campo Nombre,** agregue un nombre descriptivo para la columna. Seleccione **Guardar**.
 
      ![Cree un panel de columnas en SharePoint que muestre el nombre y otros campos.](../media/learning/learning-sharepoint-curation2.png)
  

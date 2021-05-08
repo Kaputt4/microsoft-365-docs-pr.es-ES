@@ -1,5 +1,5 @@
 ---
-title: 'Informes de Microsoft 365 en el centro de administración: informe de actividad de Yammer'
+title: 'Microsoft 365 Informes en el Centro de administración: informe Yammer actividad'
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,45 +14,44 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
-description: Obtén el informe actividad de Yammer y obtén más información sobre el número de usuarios que usan Yammer para publicar, gustar o leer un mensaje.
-ms.openlocfilehash: 636e5fae9a71fc819a032743e06127dace25f0a4
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Obtenga el Yammer actividad y obtenga más información sobre el número de usuarios que usan Yammer para publicar, gustar o leer un mensaje.
+ms.openlocfilehash: 49be460141c419355af1a42d1cc0f93275700f2d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579499"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244073"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Informes de Microsoft 365 en el centro de administración: informe de actividad de Yammer
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365 Informes en el Centro de administración: informe Yammer actividad
 
-Como administrador de Microsoft 365, el panel **informes** muestra datos sobre el uso de los productos dentro de la organización. Consulte los [informes de actividad en el Centro de administración.](activity-reports.md) Con el **informe de actividad de Yammer**, podrá comprender el nivel de participación de la organización con Yammer consultando el número de usuarios únicos que usan Yammer para publicar, leer o indicar que les gusta un mensaje, y la cantidad de actividad generada en toda la organización. 
+Como Microsoft 365, el panel **informes** muestra los datos sobre el uso de los productos dentro de la organización. Consulte los [informes de actividad en el Centro de administración.](activity-reports.md) Con el **informe de actividad de Yammer**, podrá comprender el nivel de participación de la organización con Yammer consultando el número de usuarios únicos que usan Yammer para publicar, leer o indicar que les gusta un mensaje, y la cantidad de actividad generada en toda la organización. 
   
 > [!NOTE]
-> Debe ser un administrador global, un lector global o un lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, Teams Service, Teams Communications o Skype Empresarial para ver informes.  
+> Debe ser administrador global, lector global o lector de informes en Microsoft 365 o un administrador de Exchange, SharePoint, servicio de Teams, comunicaciones de Teams o administrador Skype Empresarial para ver informes.  
  
-## <a name="how-do-i-get-to-the-yammer-activity-report"></a>¿Cómo puedo llegar al informe de actividad de Yammer?
+## <a name="how-do-i-get-to-the-yammer-activity-report"></a>¿Cómo puedo llegar al informe de Yammer actividad?
 
 1. En el centro de administración de, vaya a **Informes** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">página</a> uso. 
-2. En la página principal del panel, haga clic en el **botón Ver más** de la tarjeta Yammer.
+2. En la página principal del panel, haga clic en el **botón Ver más** en la Yammer panel.
 
   
 ## <a name="interpret-the-yammer-activity-report"></a>Interpretar el informe de actividad de Yammer
 
-Puede ver las actividades en el informe de Yammer seleccionando la **pestaña** Actividad.<br/>![Informes de Microsoft 365: informe de actividad de Microsoft Yammer.](../../media/9b251183-c2b3-430c-ab2d-58bf11e7e3ae.png)
+Puede ver las actividades en el informe Yammer mediante la pestaña **Actividad.**<br/>![Microsoft 365: informe de actividad Yammer Microsoft.](../../media/9b251183-c2b3-430c-ab2d-58bf11e7e3ae.png)
 
-Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Informe de actividad de Yammer: elegir columnas](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
+Seleccione **Elegir columnas** para agregar o quitar columnas del informe.  <br/> ![Yammer de actividad: elija columnas](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
 
-También puede exportar los datos del informe a un archivo .csv de Excel seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
+También puede exportar los datos del informe a un archivo Excel .csv seleccionando el **vínculo** Exportar. Se exportarán los datos de todos los usuarios y podrá efectuar una ordenación y un filtrado sencillos para un análisis más detallado. Si tiene menos de 2000 usuarios, puede ordenar y filtrar en la tabla en el propio informe. Si tiene más de 2000 usuarios, para poder filtrar y ordenar, tendrá que exportar los datos. 
   
-|Item|Descripción|
+|Elemento|Descripción|
 |:-----|:-----|
 |**Métrica**|**Definición**|
-|Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo. Esta cuadrícula muestra los usuarios que iniciaron sesión en Yammer con la cuenta de Microsoft 365 o que iniciaron sesión en la red mediante el inicio de sesión único. <br/> |
+|Nombre de usuario  <br/> |La dirección de correo electrónico del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo. Esta cuadrícula muestra a los usuarios que iniciaron sesión Yammer la cuenta Microsoft 365 o que iniciaron sesión en la red mediante el inicio de sesión único. <br/> |
 |Nombre para mostrar  <br/> |Nombre completo del usuario. Puede mostrar la dirección de correo electrónico real o hacer que este campo sea anónimo.  <br/> |
 |Estado del usuario  <br/> |Uno de tres valores: Activado, Eliminado o Suspendido. En estos informes se muestran datos para usuarios activos, suspendidos y eliminados. No reflejan usuarios pendientes, porque los usuarios pendientes no publican, leen o indican que les gusta un mensaje.  <br/> |
 |Fecha de cambio de estado (UTC)  <br/> |La fecha en la que se cambió el estado del usuario en Yammer.  <br/> |

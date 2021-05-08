@@ -7,21 +7,22 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 826e1456de2aadf4031a91e30925a1e771d44f70
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 143b0cb4bac1d3307e440f98fa4278f38e07c7f2
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765592"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52269545"
 ---
-# <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>Administrar actualizaciones para dispositivos móviles y máquinas virtuales (VM)
+# <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>Administrar las actualizaciones de dispositivos móviles y máquinas virtuales
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,7 +41,7 @@ Hay dos opciones de configuración que son útiles para estos dispositivos:
 Los artículos siguientes también pueden ser útiles en estas situaciones:
 - [Configuración de exámenes programados y de actualización](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 - [Administrar actualizaciones de puntos de conexión que están des actualizadas](manage-outdated-endpoints-microsoft-defender-antivirus.md)
-- [Guía de implementación para Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual (VDI)](deployment-vdi-microsoft-defender-antivirus.md)
+- [Guía de implementación del Antivirus de Microsoft Defender en un entorno de infraestructura de escritorio virtual](deployment-vdi-microsoft-defender-antivirus.md)
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>Participar en Microsoft Update en equipos móviles sin conexión WSUS
 

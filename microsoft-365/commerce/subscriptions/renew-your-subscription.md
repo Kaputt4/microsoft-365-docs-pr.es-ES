@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,23 +13,25 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - SaRA
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: Obtenga información acerca de cómo renovar la suscripción de Microsoft 365 al activar o desactivar la facturación periódica.
-ms.openlocfilehash: 76be85fe3cbeafb275478e6236e051b6a252c099
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.date: 05/04/2021
+ms.openlocfilehash: 25b0e4f8e94780bd301b41591cd1c06978cbd68e
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615176"
+ms.lasthandoff: 05/08/2021
+ms.locfileid: "52285699"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Renovar Microsoft 365 para empresas
+
+> [!IMPORTANT]
+> A partir del 26 de enero de 2021, ya no se admitirán cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si usted es un cliente existente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones, pero siempre que la cuenta bancaria esté en buenos términos.
 
 Este artículo se aplica a la mayoría de las suscripciones a Microsoft 365 para empresas de pago.
   
@@ -46,6 +49,7 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -57,6 +61,7 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 ::: moniker range="o365-21vianet"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
+
 ::: moniker-end
 
 2. Elija la suscripción para la que quiere administrar la facturación periódica.
@@ -65,17 +70,15 @@ Si pagó por adelantado la suscripción con una clave de producto, expirará al 
 5. Seleccione **Guardar**.
 
     > [!NOTE]
+    >
     > - Solo puede cambiar la **facturación periódica** para las suscripciones activas. Si la suscripción ya ha expirado o si está desactivada, tendrá que [reactivarla](reactivate-your-subscription.md) antes de poder activar o desactivar la **facturación periódica**.
     > - La suscripción no se cancela inmediatamente cuando se desactiva la **facturación periódica**. Si desea mantener la suscripción activada, debe pagar la factura manualmente.
     > - Si desactiva la **Facturación periódica**, la suscripción permanece activa hasta que expira. Puede ver la fecha de expiración en la página Detalles de la suscripción en la sección **Configuración de la suscripción y el pago**.
     > - Para obtener información sobre cómo cancelar la suscripción inmediatamente, consulte [Cancelar la suscripción](cancel-your-subscription.md).
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Reactivar la suscripción](reactivate-your-subscription.md)
-  
-[¿Qué pasa con mis datos y mi acceso cuando termina mi suscripción?](what-if-my-subscription-expires.md)
-
-[Especificar la clave de producto](../enter-your-product-key.md)
-  
-[Comprar la versión de prueba de Microsoft 365 para empresas](../try-or-buy-microsoft-365.md)
+[Reactivar la suscripción](reactivate-your-subscription.md) (artículo)\
+[¿Qué pasa con mis datos y mi acceso cuando termina mi suscripción?](what-if-my-subscription-expires.md) (artículo)\
+[Especificar la clave de producto](../enter-your-product-key.md) (artículo)\
+[Comprar la versión de prueba de Microsoft 365 para empresas](../try-or-buy-microsoft-365.md) (artículo)

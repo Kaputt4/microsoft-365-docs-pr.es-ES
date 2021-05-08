@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 976a79be98efcbb5d7fd3749ddb0cdb282b1e3e3
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: fcb7283faed6fe8c5af59cedeeb90577b557ab34
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274573"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259540"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Investigación y respuesta automatizadas en Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "52274573"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Si su organización usa [Microsoft 365 Defender,](microsoft-365-defender.md)el equipo de operaciones de seguridad recibe una alerta en el centro de seguridad de Microsoft 365 siempre que se detecte una actividad o artefacto malintencionados o sospechosos. Dado el flujo aparentemente interminable de amenazas que pueden llegar, los equipos de seguridad a menudo se enfrentan al desafío de abordar el alto volumen de alertas. Afortunadamente, Microsoft 365 Defender incluye capacidades automatizadas de investigación y respuesta (AIR) que pueden ayudar al equipo de operaciones de seguridad a abordar las amenazas de forma más eficaz y eficaz.
+Si su organización usa [Microsoft 365 Defender,](microsoft-365-defender.md)el equipo de operaciones de seguridad recibe una alerta en el centro de seguridad de Microsoft 365 siempre que se detecte una actividad o artefacto malintencionados o sospechosos. Dado el flujo aparentemente interminable de amenazas que pueden llegar, los equipos de seguridad a menudo se enfrentan al desafío de abordar el alto volumen de alertas. Afortunadamente, Microsoft 365 Defender incluye capacidades automatizadas de investigación y corrección (AIR) que pueden ayudar a su equipo de operaciones de seguridad a abordar las amenazas de forma más eficaz y eficaz.
 
 En este artículo se proporciona información general sobre AIR e incluye vínculos a los siguientes pasos y recursos adicionales.
 
@@ -57,9 +57,9 @@ En Microsoft 365 Defender, la investigación automatizada y la respuesta con cap
 
 ## <a name="your-own-virtual-analyst"></a>Su propio analista virtual
 
-Imagine tener un analista virtual en su equipo de operaciones de seguridad de nivel 1 o nivel 2. El analista virtual imita los pasos más idóneos que llevarían a cabo las operaciones de seguridad para investigar y solucionar las amenazas. El analista virtual podría trabajar 24 x 7, con capacidad ilimitada, y asumir una carga significativa de investigaciones y corrección de amenazas. Este tipo de analista virtual podría reducir significativamente el tiempo de respuesta, liberando al equipo de operaciones de seguridad para otras amenazas importantes o proyectos estratégicos. Si este escenario suena a ciencia ficción, no lo es. Dicho analista virtual forma parte de su conjunto de aplicaciones de Microsoft 365 Defender y su nombre es *investigación y respuesta automatizadas.*
+Imagine un analista virtual en su equipo de operaciones de seguridad de nivel 1 o nivel 2. El analista virtual imita los pasos más idóneos que llevarían a cabo las operaciones de seguridad para investigar y solucionar las amenazas. El analista virtual podría trabajar 24 x 7, con capacidad ilimitada, y asumir una carga significativa de investigaciones y corrección de amenazas. Este tipo de analista virtual podría reducir significativamente el tiempo de respuesta, liberando al equipo de operaciones de seguridad para otras amenazas importantes o proyectos estratégicos. Si este escenario suena a ciencia ficción, no lo es. Dicho analista virtual forma parte de su conjunto de Microsoft 365 Defender y su nombre es *investigación y respuesta automatizadas.*
 
-Las capacidades automatizadas de investigación y respuesta permiten al equipo de operaciones de seguridad aumentar considerablemente la capacidad de su organización para hacer frente a las alertas e incidentes de seguridad. Con la investigación y la respuesta automatizadas, puedes reducir el costo de las actividades de investigación y respuesta y sacar el máximo partido a tu conjunto de protección contra amenazas. Las capacidades automatizadas de investigación y respuesta ayudan al equipo de operaciones de seguridad:
+Las capacidades automatizadas de investigación y respuesta permiten al equipo de operaciones de seguridad aumentar considerablemente la capacidad de su organización para hacer frente a las alertas e incidentes de seguridad. Con la investigación y la respuesta automatizadas, puede reducir el costo de las actividades de investigación y corrección y sacar el máximo partido a su conjunto de protección contra amenazas. Las capacidades automatizadas de investigación y respuesta ayudan al equipo de operaciones de seguridad:
 
 1. Determinar si una amenaza requiere acción.
 2. Realizar (o recomendar) las acciones de corrección necesarias.

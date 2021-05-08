@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configure la Prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: 0410d4d09354ca716c83a63da9c1fdd22eda8551
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 118c2f3f87df5ac9930bebd1338157d323b1e5e1
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114118"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259504"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
 
@@ -102,7 +102,7 @@ Asegúrese de que los dispositivos con Windows 10 en los que planee implementar 
     - For Windows 10 2004 - KB4568831, KB4577063
     - Para dispositivos que ejecutan Office 2016 (en lugar de cualquier otra versión de Office): KB4577063 
 
-4. Todos los dispositivos deben estar [unidos a Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join) o unidos a Azure AD híbrido.
+4. Todos los dispositivos deben estar [unidos a Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join), unidos a AD, unidos a Azure AD híbrido o registrados en AAD.
 
 5. Instale el explorador Chromium Edge de Microsoft en el dispositivo del punto de conexión para aplicar acciones de directiva para cargar a la actividad de la nube. Consulte [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 

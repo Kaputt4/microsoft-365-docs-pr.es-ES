@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: Obtenga información sobre cómo restablecer la contraseña y enviar un correo electrónico a un nuevo usuario de Microsoft 365.
-ms.openlocfilehash: 2b2c8657a4bbd4745a3fee34fc259244b83640d3
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+description: Obtenga información sobre cómo restablecer la contraseña y enviar un correo electrónico a un nuevo Microsoft 365 usuario.
+ms.openlocfilehash: 17db9a61dc12c349f0aea032655b56c2a448653f
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222104"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244049"
 ---
 # <a name="resend-a-users-password---admin-help"></a>Volver a enviar la contraseña de un usuario: ayuda para administradores
 
@@ -39,23 +39,7 @@ Debe ser administrador global o administrador [de contraseñas](about-admin-role
 
 ## <a name="resend-user-password"></a>Reenviar la contraseña de usuario
   
-::: moniker range="o365-worldwide"  
-  
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.  
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>. 
-
-::: moniker-end
 
 2. En la **página Usuarios activos,** seleccione el usuario y, a continuación, **seleccione Restablecer contraseña.**
 

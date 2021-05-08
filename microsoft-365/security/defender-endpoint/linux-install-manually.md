@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0374c1a44a4d942ea631d97f51fa48df15d3ec13
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c13138f3d80a95dbda3a899507f662c081831d94
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929090"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259684"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Implementar Microsoft Defender para Endpoint en Linux manualmente
 
@@ -166,10 +166,10 @@ Para obtener una vista previa de las nuevas características y proporcionar come
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
     ```
     Por ejemplo, si ha elegido *canal prod:*
-    
+
     ```bash
     sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
-    ```   
+    ```
 
 - Instale el `gpg` paquete si aún no está instalado:
 
@@ -266,13 +266,13 @@ Para obtener una vista previa de las nuevas características y proporcionar come
 
 ## <a name="download-the-onboarding-package"></a>Descargar el paquete de incorporación
 
-Descargue el paquete de incorporación del Centro de seguridad de Microsoft Defender:
+Descargue el paquete de incorporación desde Centro de seguridad de Microsoft Defender:
 
-1. En el Centro de seguridad de Microsoft Defender, vaya **a Configuración > Administración de dispositivos > incorporación**.
+1. En Centro de seguridad de Microsoft Defender, vaya **a Configuración > Device Management > Onboarding**.
 2. En el primer menú desplegable, seleccione **Linux Server** como sistema operativo. En el segundo menú desplegable, seleccione **Script local (para hasta 10 dispositivos)** como método de implementación.
 3. Seleccione **Descargar paquete de incorporación**. Guarde el archivo como WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Captura de pantalla del Centro de seguridad de Microsoft Defender](images/atp-portal-onboarding-linux.png)
+    ![Centro de seguridad de Microsoft Defender captura de pantalla](images/atp-portal-onboarding-linux.png)
 
 4. Desde un símbolo del sistema, compruebe que tiene el archivo.
     Extraiga el contenido del archivo:
@@ -341,7 +341,7 @@ Descargue el paquete de incorporación del Centro de seguridad de Microsoft Defe
     - Abra una ventana terminal. Copie y ejecute el siguiente comando:
 
         ``` bash
-        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+        curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
     - Defender for Endpoint en Linux debería haber puesto el archivo en cuarentena. Use el siguiente comando para enumerar todas las amenazas detectadas:
@@ -352,7 +352,7 @@ Descargue el paquete de incorporación del Centro de seguridad de Microsoft Defe
 
 ## <a name="installer-script"></a>Script del instalador
 
-Como alternativa, puede usar un script de bash del [instalador](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) automatizado proporcionado en nuestro repositorio público [de GitHub](https://github.com/microsoft/mdatp-xplat/).
+Como alternativa, puede usar un script bash del [instalador](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) automatizado proporcionado en nuestro [repositorio GitHub público](https://github.com/microsoft/mdatp-xplat/).
 El script identifica la distribución y la versión y configura el dispositivo para extraer el paquete más reciente e instalarlo.
 También puede incorporar un script proporcionado.
 

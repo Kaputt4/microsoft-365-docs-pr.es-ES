@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 22d3bba03745cee330f89b67061e6c6b13e78aed
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 72e1efb8a06fb7fa64b83ab6522fe4cdcfd1a73e
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939747"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259641"
 ---
 # <a name="analyze-incidents-in-microsoft-365-defender"></a>Analizar incidentes en Microsoft 365 Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "51939747"
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender agrega todas las alertas, activos, investigaciones y evidencias relacionadas de todos los dispositivos, usuarios y buzones de correo en un incidente para darle una visión completa de toda la amplitud de un ataque.
+Microsoft 365 Defender agrega todas las alertas, activos, investigaciones y pruebas relacionadas de todos los dispositivos, usuarios y buzones de correo en un incidente para darle una visión completa de toda la amplitud de un ataque.
 
 Dentro de un incidente, se analizan las alertas que afectan a la red, se entiende lo que significan y se recopilan las pruebas para poder diseñar un plan de corrección eficaz.
 
@@ -61,9 +61,9 @@ También puede abrir la página principal de un incidente seleccionando el nombr
 
 La **página Resumen le** ofrece una vista instantánea de los aspectos principales que debe tener en cuenta sobre el incidente.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Ejemplo de la página Resumen de un incidente en el Centro de seguridad de Microsoft 365":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Ejemplo de la página Resumen de un incidente en el centro Microsoft 365 seguridad":::
 
-Las categorías de ataque te dan una vista visual y numérica de lo avanzado que ha progresado el ataque en la cadena de eliminación. Al igual que con otros productos de seguridad de Microsoft, Microsoft 365 Defender se alinea con el marco de [CK &trade;&MITRE ATT.](https://attack.mitre.org/)
+Las categorías de ataque te dan una vista visual y numérica de lo avanzado que ha progresado el ataque en la cadena de eliminación. Al igual que con otros productos de seguridad de Microsoft, Microsoft 365 Defender se alinea con el marco de&[CK &trade; de MITRE ATT.](https://attack.mitre.org/)
 
 La sección de ámbito ofrece una lista de los activos que se han visto afectados y que forman parte de este incidente. Si hay información específica sobre este activo, como el nivel de riesgo, la prioridad de investigación, así como cualquier etiqueta en los activos, esto también se mostrará en esta sección.
 
@@ -79,7 +79,7 @@ En la **pestaña** Alerta, puede ver la cola de alertas de alertas relacionadas 
 
 - Gravedad.
 - Las entidades que participaron en la alerta.
-- El origen de las alertas (Microsoft Defender para identidad, Microsoft Defender para endpoint, Microsoft Defender para Office 365).
+- El origen de las alertas (Microsoft Defender para identity, Microsoft Defender para endpoint, Microsoft Defender para Office 365).
 - La razón por la que se vincularon.
 
 Por ejemplo:
@@ -103,7 +103,7 @@ Puedes seleccionar la marca de verificación de un dispositivo para ver los deta
 Desde la página del dispositivo, puedes recopilar información adicional sobre el dispositivo, como todas sus alertas, una escala de tiempo y recomendaciones de seguridad. Por ejemplo,  desde la pestaña Escala de tiempo, puede desplazarse por la escala de tiempo de la máquina y ver todos los eventos y comportamientos observados en la máquina en orden cronológico, intercalados con las alertas generadas.
 
 > [!TIP]
-> Puedes realizar exámenes a petición en una página de dispositivo. En el Centro de seguridad de Microsoft 365, elija **Endpoints > Inventario de dispositivos**. Selecciona un dispositivo que tenga alertas y, a continuación, ejecuta un examen antivirus. Las acciones, como los exámenes antivirus, se realiza un seguimiento y están visibles en la **página Inventario de** dispositivos. Para obtener más información, consulta [Ejecutar el examen de Antivirus de Microsoft Defender en dispositivos](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
+> Puedes realizar exámenes a petición en una página de dispositivo. En el centro Microsoft 365 seguridad, elija **Endpoints > Device inventory**. Selecciona un dispositivo que tenga alertas y, a continuación, ejecuta un examen antivirus. Las acciones, como los exámenes antivirus, se realiza un seguimiento y están visibles en la **página Inventario de** dispositivos. Para obtener más información, [consulte Run Antivirus de Microsoft Defender scan on devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#run-microsoft-defender-antivirus-scan-on-devices).
 
 ## <a name="users"></a>Usuarios
 
@@ -123,7 +123,7 @@ Puede seleccionar la marca de verificación de un buzón para ver una lista de a
 
 ## <a name="investigations"></a>Investigaciones
 
-La **pestaña Investigaciones** enumera todas las investigaciones automatizadas desencadenadas por alertas en este incidente. Las investigaciones realizarán acciones de corrección o esperarán a que el analista apruebe las acciones, según cómo haya configurado las investigaciones automatizadas para que se ejecuten en Microsoft Defender para Endpoint y Defender para Office 365.
+La **pestaña Investigaciones** enumera todas las investigaciones automatizadas desencadenadas por alertas en este incidente. Las investigaciones realizarán acciones de corrección o esperarán a que los analistas aprueben las acciones, según cómo haya configurado las investigaciones automatizadas para que se ejecuten en Microsoft Defender para Endpoint y Defender para Office 365.
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Ejemplo de una página de investigaciones para un incidente":::
 
@@ -135,9 +135,26 @@ La **pestaña Evidencia y respuesta** muestra todos los eventos admitidos y las 
 
 :::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="Ejemplo de una página de evidencia y respuesta para un incidente":::
 
-Microsoft 365 Defender investiga automáticamente todos los eventos compatibles con incidentes y las entidades sospechosas de las alertas, lo que le proporciona información sobre los correos electrónicos, archivos, procesos, servicios, direcciones IP importantes, etc. Esto le ayuda a detectar y bloquear rápidamente posibles amenazas en el incidente.
+Microsoft 365 Defender investiga automáticamente todos los eventos compatibles con incidentes y las entidades sospechosas de las alertas, lo que le proporciona información sobre los correos electrónicos, archivos, procesos, servicios, direcciones IP importantes y mucho más. Esto le ayuda a detectar y bloquear rápidamente posibles amenazas en el incidente.
 
 Cada una de las entidades analizadas se marca con un veredicto (malintencionado, sospechoso, limpio) y un estado de corrección. Esto le ayuda a comprender el estado de corrección de todo el incidente y los siguientes pasos que se pueden seguir.
+
+## <a name="graph-in-preview"></a>Graph (en versión preliminar)
+
+Con la nueva **Graph** (en vista previa), puede ver:
+
+- La conexión de alertas a los activos afectados de la organización.
+- Qué entidades están relacionadas con qué alertas y cómo forman parte de la historia del ataque.
+- Las alertas del incidente.
+
+Por ejemplo:
+
+:::image type="content" source="../../media/investigate-incidents/incident-graph.png" alt-text="Ejemplo de una página Graph para un incidente":::
+
+El gráfico de incidentes le ayuda a comprender rápidamente el ámbito completo del ataque conectando las diferentes entidades sospechosas que forman parte del ataque con sus activos relacionados, como usuarios, dispositivos y buzones. 
+
+Ahora puedes comprender cómo el ataque se extendió a través de la red con el tiempo, dónde se inició y hasta dónde llegó el ataque.
+
 
 ## <a name="related-topics"></a>Temas relacionados
 

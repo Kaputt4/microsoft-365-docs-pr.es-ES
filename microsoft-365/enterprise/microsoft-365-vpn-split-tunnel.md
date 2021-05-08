@@ -18,12 +18,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Guía para usar el túnel dividido VPN con Office 365 para optimizar la conectividad de Office 365 para usuarios remotos.
-ms.openlocfilehash: 9f54d8836105896d8d00afc4a622975c007bda85
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c92599469431732136637cee2bb6a029c4eb4037
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924193"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259252"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Optimizar la conectividad de Office 365 para usuarios remotos usando el túnel dividido de VPN
 <!---
@@ -33,7 +33,7 @@ ms.locfileid: "50924193"
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](microsoft-365-networking-china.md).
 -->
 
-A los clientes que usan una VPN para conectar sus dispositivos de trabajo remotos a la red corporativa o a la infraestructura de la nube, Microsoft recomienda que los escenarios clave de Office 365 **Microsoft Teams**, **SharePoint Online** y **Exchange Online** se enruten a través de una _configuración de túnel dividido de VPN_. Esto es especialmente importante como estrategia de primera línea para facilitar la productividad de los empleados durante largos periodos de trabajo remoto, como el causado por la crisis de la COVID-19.
+Para los clientes que conectan sus dispositivos de trabajo remoto a la red corporativa o a la infraestructura en la nube a través de VPN, Microsoft recomienda que los escenarios clave Office 365 **Microsoft Teams,** **SharePoint Online** y **Exchange Online** se enruten a través de una configuración de túnel dividido de _VPN._ Esto adquiere especial importancia como estrategia de primera línea para facilitar la productividad continua de los empleados durante eventos de trabajo desde casa a gran escala, como la crisis de COVID-19.
 
 ![Configuración del túnel dividido de VPN](../media/vpn-split-tunneling/vpn-model-2.png)
 
@@ -43,15 +43,15 @@ La meta de este enfoque es ofrecer un método sencillo para que las empresas pue
 
 - Atenúa de inmediato la causa principal de la mayoría de los problemas de rendimiento y de capacidad de red detectados en clientes con arquitecturas VPN empresariales que afectan a la experiencia de usuario de Office 365.
   
-  La solución recomendada se dirige específicamente a los puntos de conexión de servicio de Office 365 categorizados como **Optimizar** en el tema [URL e intervalos de direcciones IP de Office 365](./urls-and-ip-address-ranges.md). El tráfico hacia estos puntos de conexión es muy sensible a la latencia y a los límites de ancho de banda. Por ello, que eludan el túnel de VPN puede mejorar considerablemente la experiencia de usuario final y reducir la carga de la red corporativa. Las conexiones de Office 365 que no supongan la mayor parte del ancho de banda o no dejen una gran huella en la experiencia de usuario se pueden enrutar a través del túnel VPN junto con el resto del tráfico vinculado a Internet. Para obtener más información, consulte [La estrategia de túnel dividido de VPN](#the-vpn-split-tunnel-strategy).
+  La solución recomendada se dirige específicamente a los puntos de conexión de servicio de Office 365 categorizados como **Optimizar** en el tema [URL e intervalos de direcciones IP de Office 365](./urls-and-ip-address-ranges.md). El tráfico a estos puntos de conexión es muy sensible a la limitación de latencia y ancho de banda, y permitirle omitir el túnel VPN puede mejorar considerablemente la experiencia del usuario final, así como reducir la carga de red corporativa. Las conexiones de Office 365 que no supongan la mayor parte del ancho de banda o no dejen una gran huella en la experiencia de usuario se pueden enrutar a través del túnel VPN junto con el resto del tráfico vinculado a Internet. Para obtener más información, consulte [La estrategia de túnel dividido de VPN](#the-vpn-split-tunnel-strategy).
 
-- Se pueden configurar, probar e implementar rápidamente por parte de los clientes y sin requerimientos adicionales de aplicaciones o infraestructura.
+- Los clientes pueden configurar, probar e implementar rápidamente y sin requisitos de infraestructura o aplicación adicionales
 
   Según la plataforma de VPN y la arquitectura de red, la implementación puede llevar solo unas horas. Para más información, consulte [Implementar túnel dividido de VPN](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling).
 
 - Preserva la posición de seguridad de las implementaciones de VPN del cliente sin tener que cambiar la forma en que se enrutan otras conexiones, incluido el tráfico de Internet
 
-  La configuración recomendada sigue el principio del **privilegio mínimo** para las excepciones de tráfico de VPN y permite que los clientes implementen el túnel dividido de VPN sin exponer a los usuarios o a la infraestructura a riesgos de seguridad adicionales. El tráfico de red enrutado directamente a los puntos de conexión de Office 365 está cifrado, su integridad se ha comprobado mediante pilas de aplicaciones de cliente de Office y su ámbito se ha adaptado a las direcciones IP dedicadas a los servicios de Office 365, que se refuerzan tanto a nivel de red como de aplicación. Para más información, vea [Formas alternativas para que los profesionales de seguridad y de TI logren controles de seguridad modernos en los escenarios de trabajo remoto de hoy día (blog del Equipo de seguridad de Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/).
+  La configuración recomendada sigue el principio del **privilegio mínimo** para las excepciones de tráfico de VPN y permite que los clientes implementen el túnel dividido de VPN sin exponer a los usuarios o a la infraestructura a riesgos de seguridad adicionales. El tráfico de red que se enruta directamente Office 365 los puntos de conexión de Office 365 se cifra, se valida para la integridad mediante pilas de aplicaciones cliente y se aplica Office direcciones IP dedicadas Office 365 los servicios de Office 365 que se endurecen tanto en el nivel de aplicación como en el nivel de red. Para más información, vea [Formas alternativas para que los profesionales de seguridad y de TI logren controles de seguridad modernos en los escenarios de trabajo remoto de hoy día (blog del Equipo de seguridad de Microsoft)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/).
 
 - Es compatible de forma nativa con la mayoría de las plataformas VPN empresariales
 
@@ -62,6 +62,8 @@ La meta de este enfoque es ofrecer un método sencillo para que las empresas pue
 
 Para obtener una orientación completa sobre la implementación, consulte [Implementación del túnel dividido de VPN para Office 365](microsoft-365-vpn-implement-split-tunnel.md).
 
+Para obtener un proceso paso a paso para configurar Microsoft 365 para los trabajadores [remotos,](..\solutions\empower-people-to-work-remotely.md) vea Configurar la infraestructura para el trabajo remoto
+
 ## <a name="the-vpn-split-tunnel-strategy"></a>La estrategia de túneles divididos de VPN
 
 Las redes corporativas tradicionales suelen diseñarse para trabajar de forma segura en estructuras prenube en las que la mayoría de los datos, servicios y aplicaciones importantes se hospedan de forma local y se conectan directamente a la red corporativa interna, al igual que la mayoría de los usuarios. Por lo tanto, la infraestructura de red se crea en torno a estos elementos. Las oficinas delegadas se conectan a la oficina central _a través de redes de Alternancia de etiquetas multiprotocolo (MPLS)_ y los usuarios remotos deben conectarse a la red corporativa a través de una VPN para acceder a los puntos de conexión locales y a Internet. En este modelo, todo el tráfico de usuarios remotos recorre la red corporativa y se enruta al servicio en la nube mediante un punto de salida común.
@@ -70,11 +72,11 @@ Las redes corporativas tradicionales suelen diseñarse para trabajar de forma se
 
 _Figura 2: una solución de VPN común para usuarios remotos en la que todo el tráfico se transfiere de nuevo obligatoriamente a la red corporativa, independientemente del destino_
 
-A medida que las organizaciones mueven datos y aplicaciones a la nube, este modelo empieza a ser menos eficaz, ya que rápidamente se torna engorroso, costoso e imposible de escalar. Esto afecta significativamente al rendimiento de la red y a la eficiencia de los usuarios, y puede restringir la capacidad de la organización de adaptarse a las necesidades cambiantes. Muchos clientes de Microsoft informaron de que hace unos años el 80 % del tráfico de red tenía un destino interno, mientras que en 2020 el 80 % o más del tráfico se conecta a un recurso externo basado en la nube.
+A medida que las organizaciones mueven datos y aplicaciones a la nube, este modelo ha comenzado a ser menos eficaz a medida que rápidamente se vuelve engorroso, caro e incalable, lo que afecta significativamente al rendimiento y la eficiencia de la red de los usuarios y restringe la capacidad de la organización para adaptarse a las necesidades cambiantes. Numerosos clientes de Microsoft han informado de que hace unos años el 80 % del tráfico de red estaba en un destino interno, pero en 2020 el 80 % más del tráfico se conecta a un recurso externo basado en la nube.
 
-La crisis del COVID-19 ha agravado el problema de requerir soluciones inmediatas para la inmensa mayoría de las organizaciones. Muchos clientes han descubierto que el modelo de VPN forzoso no es lo suficientemente escalable ni tampoco es adecuado para el 100 % de escenarios de trabajo remoto como el que necesita esta crisis. Se requieren soluciones rápidas para que estas organizaciones puedan seguir funcionando eficazmente.
+La crisis del COVID-19 ha agravado el problema de requerir soluciones inmediatas para la inmensa mayoría de las organizaciones. Muchos clientes han descubierto que el modelo de VPN forzoso no es lo suficientemente escalable ni tampoco es adecuado para el 100 % de escenarios de trabajo remoto como el que necesita esta crisis. Se necesitan soluciones rápidas para que estas organizaciones sigan funcionando de forma eficiente.
 
-Para el servicio de Office 365, Microsoft ha diseñado los requisitos de conectividad teniendo en cuenta este problema. Así, un conjunto de puntos de conexión de servicios centrado, muy controlado y relativamente estático se puede optimizar simple y rápidamente para que ofrezca un alto rendimiento, que permita a los usuarios acceder al servicio y que reduzca la carga en la infraestructura de VPN —de forma que el tráfico que la necesite, pueda usarla—.
+Para el servicio de Office 365, Microsoft ha diseñado los requisitos de conectividad para el servicio teniendo en cuenta este problema de forma cuadrada, donde un conjunto de extremos de servicio centrado, estrechamente controlado y relativamente estático se puede optimizar de forma muy sencilla y rápida para ofrecer un alto rendimiento para los usuarios que acceden al servicio y reducir la carga en la infraestructura VPN para que pueda ser usada por el tráfico que aún lo requiere.
 
 Office 365 clasifica los puntos de conexión necesarios para Office 365 en tres categorías: **Optimizar**, **Permitir** y **Predeterminado**. **Optimizar** los puntos de conexión es nuestra meta aquí y presenta las siguientes características:
 
@@ -88,9 +90,9 @@ Office 365 clasifica los puntos de conexión necesarios para Office 365 en tres 
 
 Este conjunto de puntos de conexión de ámbito estricto se puede dividir y separar del túnel de VPN forzoso para enviarlo de forma segura directamente al servicio de Office 365 mediante la interfaz local del usuario. Esto es conocido como **túnel dividido**.
 
-Los elementos de seguridad como DLP, protección de antivirus, autenticación y control de acceso se pueden ofrecer de forma más eficaz con estos puntos de conexión en diferentes capas dentro del servicio. Como también desviamos la mayor parte del volumen del tráfico fuera de la solución de VPN, el tráfico de red privada queda liberado y puede usarse para el tráfico empresarial crítico que todavía depende de él. Asimismo, en muchos casos elimina la necesidad de usar un programa de actualización prolongado y costoso que pueda lidiar con esta nueva forma de operar.
+Los elementos de seguridad como DLP, protección antivirus, autenticación y control de acceso se pueden entregar de forma mucho más eficaz en estos puntos de conexión en diferentes capas del servicio. As we also divert the bulk of the traffic volume away from the VPN solution, this frees the VPN capacity up for business critical traffic that still relies on it. Asimismo, en muchos casos elimina la necesidad de usar un programa de actualización prolongado y costoso que pueda lidiar con esta nueva forma de operar.
 
-![Detalles de configuración de VPN de túnel dividido](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![Detalles Tunnel configuración de VPN de división](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _Figura 3: una solución de túnel dividido de VPN con excepciones de Office 365 definidas con envío directo al servicio. El resto del tráfico es forzado de vuelta a la red corporativa independientemente del destino._
 

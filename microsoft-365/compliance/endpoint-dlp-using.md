@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Aprenda cómo configurar las directivas de prevención de pérdida de datos (DLP) para usar las ubicaciones de la Prevención de pérdida de datos de los puntos de conexión (EPDLP) de Microsoft 365.
-ms.openlocfilehash: 1b918346467f9878582dfb301f48e530bfb400f8
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: cbd95ed3ee70b69b395f73c83852a9f37a269f0b
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114098"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259492"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso de la prevención de pérdida de datos en punto de conexión
 
@@ -221,7 +221,7 @@ Estos escenarios requieren que ya tenga dispositivos incorporados y que presente
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
 - [Microsoft Defender para punto de conexión](/windows/security/threat-protection/)
-- [Herramientas y métodos de incorporación para equipos con Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+- [Herramientas y métodos de incorporación para equipos con Windows 10](/microsoft-365/compliance/dlp-configure-endpoints).
 - [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Unido a Azure Active Directory (AAD)](/azure/active-directory/devices/concept-azure-ad-join)
 - [Descargue el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

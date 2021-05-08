@@ -29,6 +29,6 @@
 |TEAMS|✔|✔|Planeado|✔|N/A|
 |TO-DO|✔|✔|N/D|N/D|✔|
 |VISIO|N/A|✔|N/A|✔|N/A|
-|PIZARRA|N/A|✔|N/D|N/D|✔|
+|PIZARRA|✔|✔|N/D|N/D|✔|
 |WORD|✔|✔|✔|✔|✔|
 |YAMMER|✔|✔|N/A|Planeado|N/D|

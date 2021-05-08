@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Obtenga información sobre cómo restaurar cuentas de usuario eliminadas y todos los datos asociados.
-ms.openlocfilehash: 4893f7468a8ab5919dd3be1cce233917323f2076
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 9cdc4100f963ed450b50caa0f07a3863bc87992d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023970"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244037"
 ---
 # <a name="restore-a-user"></a>Restaurar un usuario
    
@@ -42,30 +42,12 @@ Aquí tiene un par de sugerencias:
     
 ## <a name="restore-one-or-more-user-accounts"></a>Restaurar una o más cuentas de usuario
 
-Debe ser administrador global de Microsoft 365 o administrador de administración de usuarios para realizar estos pasos. 
-  
- 
-::: moniker range="o365-worldwide"
+Debe ser un administrador Microsoft 365 global o administrador de administración de usuarios para realizar estos pasos. 
 
 1. En el Centro de administración, vaya a la **página Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados usuarios.</a>
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Vaya al Centro [de administración](https://go.microsoft.com/fwlink/p/?linkid=848041)y, a continuación, **seleccione Usuarios** \> **eliminados usuarios**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Vaya al Centro [de administración](https://go.microsoft.com/fwlink/p/?linkid=850627)y, a continuación, **seleccione Usuarios** \> **eliminados usuarios**.
-
-::: moniker-end
-
 2. En la **página Usuarios eliminados,** seleccione los nombres de los usuarios que desea restaurar y, a continuación, **seleccione Restaurar**.
     
- 
 3. Siga las indicaciones para establecer su contraseña y, a continuación, seleccione **Restaurar**.
     
 4. Si el usuario se restaura correctamente, seleccione **Enviar correo electrónico y cierre**. Si se produce un conflicto de nombres o un conflicto de direcciones de proxy, vea las instrucciones a continuación sobre cómo restaurar esas cuentas.
@@ -73,31 +55,12 @@ Debe ser administrador global de Microsoft 365 o administrador de administració
 Después de restaurar un usuario, asegúrate de notificarles que su contraseña cambió y sigues con ellos.
   
 ## <a name="restore-a-user-that-has-a-user-name-conflict"></a>Restaurar un usuario con un conflicto de nombre de usuario
-<a name="RestoreUserNameConflict"> </a>
 
 Se produce un conflicto de nombres de usuario al eliminar una cuenta de usuario, crear una nueva con el mismo nombre de usuario (para el mismo usuario o para otro con un nombre parecido) y, más tarde, intentar restaurar la cuenta eliminada.
   
 Para resolverlo, puede cambiar la cuenta de usuario activa por la que vaya a restaurar. También puede asignar otro nombre de usuario a la cuenta que vaya a restaurar, de modo que no haya dos cuentas con el mismo nombre de usuario. Siga estos pasos.
-  
-
-::: moniker range="o365-worldwide"
 
 1. En el Centro de administración, vaya a la **página Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados usuarios.</a>
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Vaya al Centro [de administración](https://go.microsoft.com/fwlink/p/?linkid=848041)y, a continuación, **seleccione Usuarios** \> **eliminados usuarios**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Vaya al Centro [de administración](https://go.microsoft.com/fwlink/p/?linkid=850627)y, a continuación, **seleccione Usuarios** \> **eliminados usuarios**.
-
-::: moniker-end
-
   
 2. En la **página Usuarios eliminados,** seleccione los nombres de los usuarios que desea restaurar y, a continuación, **seleccione Restaurar**.
     
@@ -118,26 +81,9 @@ Para resolverlo, puede cambiar la cuenta de usuario activa por la que vaya a res
 
 Se produce un conflicto de direcciones de proxy al eliminar una cuenta de usuario que contiene una dirección de proxy, asignar la misma dirección de proxy a otra cuenta y, después, intentar restaurar la cuenta eliminada. Siga los pasos que se indican a continuación para solucionar este problema.
   
-Para [ello, debe](about-admin-roles.md) tener permisos de administrador en Microsoft 365. 
-  
-
-::: moniker range="o365-worldwide"
+Debe tener permisos [de administrador en](about-admin-roles.md) Microsoft 365 para ello. 
 
 1. En el Centro de administración, vaya a la **página Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">eliminados usuarios.</a>
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Vaya al Centro [de administración](https://go.microsoft.com/fwlink/p/?linkid=848041)y, a continuación, **seleccione Usuarios** \> **eliminados usuarios**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Vaya al Centro [de administración](https://go.microsoft.com/fwlink/p/?linkid=850627)y, a continuación, **seleccione Usuarios** \> **eliminados usuarios**.
-
-::: moniker-end
 
 2. En la página **Usuarios eliminados**, seleccione los usuarios que quiere restaurar y luego seleccione **Restaurar**. 
     

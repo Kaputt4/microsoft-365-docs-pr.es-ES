@@ -1,6 +1,6 @@
 ---
 title: Acciones de corrección en Microsoft 365 Defender
-description: Obtenga información general sobre las acciones de corrección que siguen las investigaciones automatizadas en Microsoft 365 Defender
+description: Obtener información general sobre las acciones de corrección que siguen las investigaciones automatizadas en Microsoft 365 Defender
 keywords: automatizada, investigación, alerta, desencadenante, acción, corrección
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 31162944f4728f2c84efbe2cd5eafbd0c70e00f6
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 80546d44bc1ba222c736b397a272f9f1f1a01d4a
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245857"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52269473"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Acciones de corrección en Microsoft 365 Defender
 
@@ -36,8 +36,6 @@ ms.locfileid: "52245857"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-## <a name="remediation-actions"></a>Acciones de corrección
-
 Durante y después de una investigación automatizada en Microsoft 365 Defender, las acciones de corrección se identifican para elementos malintencionados o sospechosos. Algunos tipos de acciones de corrección se toman en dispositivos, también denominados puntos de conexión. Otras acciones de corrección se toman en el contenido del correo electrónico. Las investigaciones automatizadas se completan después de que se realicen, aprueben o rechacen las acciones de corrección.
 
 > [!IMPORTANT]
@@ -46,7 +44,7 @@ Durante y después de una investigación automatizada en Microsoft 365 Defender,
 > - [Cómo se corrigen las amenazas en dispositivos](../defender-endpoint/automated-investigations.md)
 > - [Amenazas y acciones de corrección en el correo & contenido de colaboración](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
-En la tabla siguiente se resumen las acciones de corrección que se admiten actualmente en Microsoft 365 Defender: 
+En la tabla siguiente se resumen las acciones de corrección que se admiten actualmente en Microsoft 365 Defender. 
 
 |Acciones de corrección del dispositivo (punto de conexión)  |Acciones de corrección de correo electrónico  |
 |:---------|:---------|
@@ -60,7 +58,7 @@ Cuando se completa una investigación automatizada, se llega a un veredicto para
 
 En la tabla siguiente se muestran los posibles resultados:
 
-| Veredicto    | Área    | Resultados|
+| Veredicto    | Entidades afectadas    | Resultados|
 |------|------|------|
 | Malintencionado    | Dispositivos (puntos de conexión)    | Las acciones de corrección se toman automáticamente [](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) (suponiendo que los grupos de dispositivos de la organización estén establecidos en **Full - remediar las amenazas automáticamente)**|
 | Malintencionado    | Contenido de correo electrónico (URL y datos adjuntos) | Acciones de corrección recomendadas pendientes de aprobación|
@@ -70,17 +68,17 @@ En la tabla siguiente se muestran los posibles resultados:
 
 ## <a name="remediation-actions-that-are-taken-manually"></a>Acciones de corrección que se toman manualmente
 
-Además de las acciones de corrección que siguen investigaciones automatizadas, el equipo de operaciones de seguridad puede realizar determinadas acciones de corrección manualmente. Entre ellas se incluyen las siguientes acciones:
+Además de las acciones de corrección que siguen investigaciones automatizadas, el equipo de operaciones de seguridad puede realizar determinadas acciones de corrección manualmente. Entre ellas se incluyen las siguientes:
 
-- Acción manual del dispositivo, como aislamiento del dispositivo o cuarentena de archivos.
-- Acción de correo electrónico manual, como la eliminación de mensajes de correo electrónico. 
-- [Acción de búsqueda](../defender-endpoint/advanced-hunting-overview.md) avanzada en dispositivos o correo electrónico.
-- [Acción](../office-365-security/threat-explorer.md) del explorador en el contenido de correo electrónico, como mover el correo electrónico a correo no deseado, eliminar correo electrónico de forma suave o eliminar correo electrónico de forma permanente.
-- Acción [de respuesta en](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) directo manual, como eliminar un archivo, detener un proceso y quitar una tarea programada.
-- Acción de respuesta en directo con [Microsoft Defender para](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)API de punto de conexión, como aislar un dispositivo, ejecutar un examen antivirus y obtener información sobre un archivo. 
+- Acción manual del dispositivo, como aislamiento del dispositivo o cuarentena de archivos
+- Acción de correo electrónico manual, como la eliminación suave de mensajes de correo electrónico 
+- [Acción de búsqueda](../defender-endpoint/advanced-hunting-overview.md) avanzada en dispositivos o correo electrónico
+- [Acción](../office-365-security/threat-explorer.md) del explorador en el contenido de correo electrónico, como mover correo electrónico a correo no deseado, eliminar correo electrónico de forma suave o eliminar correo electrónico de forma permanente
+- Acción [de respuesta en](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) directo manual, como eliminar un archivo, detener un proceso y quitar una tarea programada
+- Acción de respuesta en directo [con Microsoft Defender para API](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)de punto de conexión, como aislar un dispositivo, ejecutar un examen antivirus y obtener información sobre un archivo
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 - [Visite el Centro de actividades](m365d-action-center.md)
-- [Ver y administrar acciones de corrección]( m365d-autoir-actions.md)
-- [Controlar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta](m365d-autoir-report-false-positives-negatives.md)
+- [Ver y administrar acciones de corrección](m365d-autoir-actions.md)
+- [Dirección de falsos positivos o falsos negativos](m365d-autoir-report-false-positives-negatives.md)

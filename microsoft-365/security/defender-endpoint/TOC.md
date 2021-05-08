@@ -144,6 +144,7 @@
  
 ##### [Solucionar problemas]()
 ###### [Solución de problemas de instalación](linux-support-install.md)
+###### [Investigar problemas de estado del agente](health-status.md)
 ###### [Solucionar problemas de conectividad en la nube](linux-support-connectivity.md)
 ###### [Solucionar problemas de rendimiento](linux-support-perf.md)
 ###### [Solucionar problemas de eventos que faltan](linux-support-events.md)
