@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 ms.prod: m365-security
 ms.date: 01/29/2021
 localization_priority: Normal
@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 4476578939f2ece90c638c919c7e4d134ea2d9ec
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 036ef1c97788f310c5b906ae5f80076ca2359cdb
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207502"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275089"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Cómo notificar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta
 
@@ -37,7 +37,7 @@ ms.locfileid: "51207502"
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Si las capacidades de investigación y respuesta [automatizadas (AIR) en Office 365](automated-investigation-response-office.md) no se detectaron correctamente o no detectaron algo, hay pasos que el equipo de operaciones de seguridad puede seguir para solucionarlo. Estas acciones incluyen:
+Si las capacidades de investigación y respuesta [automatizadas (AIR)](automated-investigation-response-office.md) en Office 365 detectaron o detectaron algo incorrectamente, hay pasos que el equipo de operaciones de seguridad puede llevar a cabo para solucionarlo. Estas acciones incluyen:
 
 - [Notificar un falso positivo/negativo a Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Ajustar alertas](#adjust-an-alert-to-prevent-false-positives-from-recurring) (si es necesario); y
@@ -47,15 +47,15 @@ Use este artículo como guía.
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Notificar un falso positivo/negativo a Microsoft para su análisis
 
-Si AIR en Microsoft Defender para Office 365 perdió un mensaje de correo electrónico, un archivo adjunto de correo electrónico, una dirección URL en un mensaje de correo electrónico o una dirección URL en un archivo de Office, puede enviar correo no deseado sospechoso, phish, direcciones URL y archivos a Microsoft para el examen [de Office 365](admin-submission.md).
+Si AIR en Microsoft Defender para Office 365 perdió un mensaje de correo electrónico, un archivo adjunto de correo electrónico, una dirección URL en un mensaje de correo electrónico o una dirección URL en un archivo Office, puede enviar correo no deseado [sospechoso, phish,](admin-submission.md)direcciones URL y archivos a Microsoft para examinar Office 365 .
 
 También puede enviar [un archivo a Microsoft para el análisis de malware.](https://www.microsoft.com/wdsi/filesubmission)
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Ajustar una alerta para evitar que los falsos positivos se repitan
 
-Si una alerta se desencadena por uso legítimo o la alerta es inexacta, puede administrar [alertas en el portal de Cloud App Security](/cloud-app-security/managing-alerts).
+Si una alerta se desencadena mediante un uso legítimo o la alerta es inexacta, puede administrar alertas [en el portal Cloud App Security](/cloud-app-security/managing-alerts).
 
-Si su organización usa [Microsoft Defender](/windows/security/threat-protection) para endpoint además de Office 365 y un archivo, dirección IP, dirección URL o dominio se trata como malware en un dispositivo, aunque sea seguro, puede crear un indicador personalizado con una acción ["Permitir"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)para el dispositivo .
+Si tu organización usa [Microsoft Defender](/windows/security/threat-protection) para endpoint además de Office 365 y un archivo, dirección IP, dirección URL o dominio se trata como malware en un dispositivo, aunque sea seguro, puedes crear un indicador personalizado con una acción ["Permitir"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)para el dispositivo .
 
 ## <a name="undo-a-remediation-action"></a>Deshacer una acción de corrección
 
@@ -70,7 +70,7 @@ Con el Explorador de amenazas, el equipo de operaciones de seguridad puede encon
 
 |Escenario|Opciones de deshacer|Más información|
 |---|---|---|
-|Un mensaje de correo electrónico se enrutó a la carpeta correo no deseado de un usuario|- Mover el mensaje a la carpeta Elementos eliminados del usuario<br/>- Mover el mensaje a la Bandeja de entrada del usuario<br/>- Eliminar el mensaje|[Buscar e investigar correo electrónico malintencionado que se entregó en Office 365](investigate-malicious-email-that-was-delivered.md)|
+|Un mensaje de correo electrónico se enrutó a la carpeta correo no deseado de un usuario|- Mover el mensaje a la carpeta Elementos eliminados del usuario<br/>- Mover el mensaje a la Bandeja de entrada del usuario<br/>- Eliminar el mensaje|[Busque e investigue el correo electrónico malintencionado que se entregó en Office 365](investigate-malicious-email-that-was-delivered.md)|
 |Se ha puesto en cuarentena un mensaje de correo electrónico o un archivo|- Liberar el correo electrónico o el archivo<br/>- Eliminar el correo electrónico o el archivo|[Administrar mensajes en cuarentena como administrador](manage-quarantined-messages-and-files.md)|
 |
 
@@ -78,7 +78,7 @@ Con el Explorador de amenazas, el equipo de operaciones de seguridad puede encon
 
 En el Centro de acciones, puede ver las acciones de corrección que se realizaron y potencialmente deshacer la acción.
 
-1. Vaya al Centro de seguridad de Microsoft 365 ( <https://security.microsoft.com> ).
+1. Vaya al centro Microsoft 365 de seguridad ( <https://security.microsoft.com> ).
 2. En el panel de navegación, seleccione **Centro de acciones**.
 3. Seleccione la **pestaña** Historial para ver la lista de acciones completadas.
 4. Seleccione un elemento. Se abre el panel desplegable.

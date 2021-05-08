@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9cb0c7375b538f502cf6165f13c68fd4b2fdcc64
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: fc5a64f4be1b782c423c2ae9e2222a1424be97e0
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934758"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274729"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Implementar actualizaciones para Microsoft Defender para Endpoint en Linux
 
@@ -44,6 +44,10 @@ Microsoft publica periódicamente actualizaciones de software para mejorar el re
 > ```bash
 > mdatp health --field product_expiration
 > ```
+
+
+Las funcionalidades de Microsoft Defender para endpoint disponibles generalmente son equivalentes, independientemente del canal de actualización usado para una implementación (Beta (Insider), Preview (Externa), Current (Production)).
+
 
 Para actualizar Defender for Endpoint en Linux manualmente, ejecute uno de los siguientes comandos:
 

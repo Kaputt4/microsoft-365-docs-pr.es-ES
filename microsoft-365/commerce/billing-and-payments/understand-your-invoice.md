@@ -19,16 +19,23 @@ search.appverid:
 - MET150
 description: Obtenga información acerca de cómo leer y comprender su factura o recibo de productos empresariales de Microsoft.
 keywords: cuentas de facturación, información de la organización, facturas
-ms.openlocfilehash: 3752254fc6068381cd6effed0be4d5b8295f8a27
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 344877a4b97f5c77dc3381aa49d7bf0f60bd628e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579763"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244713"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Entender su factura o recibo
 
 La factura le proporciona un resumen de los cargos y las instrucciones de pago. Puede [ver su factura en línea](#view-your-online-invoice) en el Centro de administración de Microsoft 365. También puede descargarla en Portable Document Format (.pdf) para enviarla por correo electrónico.
+
+Para ver e imprimir la factura:
+
+1. En la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>, seleccione un rango de fechas de la factura.
+2. Para imprimir o guardar una copia en PDF de la factura, seleccione **Descargar factura PDF** y luego, imprima el archivo PDF.
+
+Para obtener más información, consulte [Ver su factura o recibo](view-your-bill-or-invoice.md).
 
 Si solo tiene una suscripción a Microsoft 365, consulte [Comprender su factura o recibo de Microsoft 365 para empresas](understand-your-invoice2.md).
 
@@ -133,13 +140,6 @@ Las instrucciones de pago dependen del método de pago y se muestran en la parte
 
 - **Período de servicio:** Período durante el cual se le cobrará por usar el servicio.
 - **Período de facturación:** Período desde la última fecha de la factura.
-
-### <a name="how-do-i-view-and-print-my-bill"></a>¿Cómo puedo ver e imprimir mi factura?
-
-1. En la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>, seleccione un rango de fechas de la factura.
-2. Para imprimir o guardar una copia en PDF de la factura, seleccione **Descargar factura PDF** y luego, imprima el archivo PDF.
-
-Para obtener más información, consulte [Ver su factura o recibo](view-your-bill-or-invoice.md).
 
 ### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>¿Por qué no veo el anticipo de Azure como método de pago?
 

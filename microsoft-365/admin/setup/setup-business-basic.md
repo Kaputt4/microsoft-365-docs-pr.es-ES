@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Obtenga información acerca de cómo configurar su suscripción a Microsoft 365 Empresa Básico.
-ms.openlocfilehash: 409d2fd4698452a1694d39c4ca3cc7f378d355e8
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: a4636006a6819769752ef6ae61a5cb7155d5289e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580791"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244472"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Configurar Microsoft 365 Empresa Básico
 
@@ -37,7 +37,7 @@ ms.locfileid: "51580791"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
 
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
 
 ## <a name="add-your-domain-to-personalize-sign-in"></a>Agregar su dominio para personalizar el inicio de sesión
 
@@ -85,7 +85,7 @@ Puede agregar usuarios en el asistente, pero también puede [agregarlos más ade
 
 Todos los usuarios que agregue en el asistente obtendrán automáticamente una licencia de Microsoft 365 Empresa Básico.
 
-1. Si su suscripción a Microsoft 365 Empresa Básico tiene usuarios existentes (por ejemplo, si usó Azure AD Connect), verá una opción para asignarles licencias ahora. Proceda y agrégueles licencias también.
+1. Si su suscripción a Microsoft 365 Empresa Básico tiene usuarios existentes (por ejemplo, si usó Azure AD Connect), verá la opción para asignarles licencias ahora. Aproveche de agregar las licencias para ellos también.
 
 2. Una vez que haya agregado los usuarios, también verá una opción para compartir las credenciales con los nuevos usuarios que ha agregado. Puede elegir imprimirlas, enviarlas por correo electrónico o descargarlas.
 

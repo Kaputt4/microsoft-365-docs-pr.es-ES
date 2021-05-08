@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se definen los campos de metadatos de los documentos de un conjunto de revisión en un caso Advanced eDiscovery en Microsoft 365.
-ms.openlocfilehash: e801f60b69c796dfcd2cb6d83cc4fbc721dc7658
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 77df40f4922718a7ed30431b0c1bd91f5c075425
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259468"
+ms.locfileid: "52244605"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos de documento en eDiscovery avanzado
 
@@ -119,7 +119,7 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Fecha de finalización de la reunión|MeetingEndDate|Meeting_end_date|Fecha de finalización de la reunión para reuniones.|
 |Fecha de inicio de la reunión|MeetingStartDate|Meeting_start_date|Fecha de inicio de la reunión para reuniones.|
 |Tipo de mensaje|MessageKind|Message_kind|Tipo de mensaje que se debe buscar. Valores **<br /> <br /> <br /> posibles: contacts docs <br /> email <br /> externaldata <br /> faxes im <br /> <br /> journals <br /> <br /> meetings microsoftteams** (devuelve elementos de chats, reuniones y llamadas en Microsoft Teams) notas publicaciones **<br /> <br /> <br /> rssfeeds <br /> tasks <br /> voicemail**| 
-|Identificador principal de datos adjuntos modernos||ModernAttachment_ParentId|El identificador inmutable del elemento primario del documento.|
+|ModernAttachment_ParentId||ModernAttachment_ParentId||
 |Extensión nativa|NativeExtension|Native_extension|Extensión nativa del elemento.|
 |Nombre de archivo nativo|NativeFileName|Native_file_name|Nombre de archivo nativo del elemento.|
 |NativeMD5||Native_MD5|Hash MD5 (valor hash de 128 bits) de la secuencia de archivos.|
@@ -164,7 +164,6 @@ En la tabla siguiente se enumeran los campos de metadatos de los documentos de u
 |Título|Título|Doc_title|Título de los metadatos del documento.|
 |To|To|Email_to|Para el campo para los tipos de mensaje. Format es **DisplayName \<SmtpAddress>**|
 |Único en el conjunto de correo electrónico|UniqueInEmailSet||**False** si hay un duplicado de los datos adjuntos en su conjunto de correo electrónico.|
-|Id. de grupo de versión||Version_Group_Id|Agrupa las distintas versiones del mismo documento.|
 |Se ha corregido|WasRemediated|Was_Remediated|**True** si el elemento se ha corregido, de lo contrario **Es False**.|
 |Word count|WordCount|Word_count|Número de palabras en el elemento.|
 |||||

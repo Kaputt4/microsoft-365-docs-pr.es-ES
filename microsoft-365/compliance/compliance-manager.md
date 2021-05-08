@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager ayuda a las organizaciones a simplificar y automatizar las evaluaciones de riesgos y sugiere acciones recomendadas para ayudar a solucionar los riesgos.
-ms.openlocfilehash: f938bb6b82ee7e24dd58b66597f0af7a3a00a9a2
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7eb8e0fdea26ca24453ca7071ab1282c686d5848
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570457"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244400"
 ---
 # <a name="microsoft-compliance-manager"></a>Administrador de cumplimiento de Microsoft
 
@@ -30,7 +30,7 @@ ms.locfileid: "51570457"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Novedades: la versión de GA del Administrador de cumplimiento
 
-El Administrador de cumplimiento ya está disponible generalmente (GA) como una solución de administración de cumplimiento integral dentro del Centro de cumplimiento de [Microsoft 365.](microsoft-365-compliance-center.md) Con esta versión, el Administrador de cumplimiento completa la transición desde su ubicación anterior en el Portal de confianza de servicio de Microsoft. El Administrador de cumplimiento también está disponible para los clientes moderados, GCC high y del Departamento de Defensa (DoD) de la Comunidad gubernamental de Estados Unidos (GCC).
+El Administrador de cumplimiento ya está disponible generalmente (GA) como una solución de administración de cumplimiento integral dentro del centro de Microsoft 365 [cumplimiento.](microsoft-365-compliance-center.md) Con esta versión, el Administrador de cumplimiento completa la transición desde su ubicación anterior en el Portal de confianza de servicio de Microsoft. El Administrador de cumplimiento también está disponible para los Community (GCC) moderados, GCC altos y del Departamento de Defensa (DoD).
 
 Lo que comenzó como la vista previa pública de la puntuación de cumplimiento ha evolucionado hasta convertirse en una herramienta centralizada con capacidades de administración de cumplimiento mejoradas y mayor facilidad de uso.  La versión de ga ofrece una colección más grande de evaluaciones predefinidas para ayudarle a escalar sus actividades de cumplimiento.
 
@@ -45,7 +45,7 @@ Vea el vídeo siguiente para obtener información sobre cómo el Administrador d
 
 ## <a name="what-is-compliance-manager"></a>Qué es el Administrador de cumplimiento
 
-[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) es una característica del Centro de cumplimiento de [Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a administrar los requisitos de cumplimiento de su organización con mayor facilidad y comodidad. El Administrador de cumplimiento puede ayudarle a lo largo de su recorrido de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, mantenerse al día con las normativas y certificaciones, y los informes a los auditores.
+[Microsoft Compliance Manager es](https://compliance.microsoft.com/compliancemanager) una característica del centro de cumplimiento [Microsoft 365](microsoft-365-compliance-center.md) que le ayuda a administrar los requisitos de cumplimiento de su organización con mayor facilidad y comodidad. El Administrador de cumplimiento puede ayudarle a lo largo de su recorrido de cumplimiento, desde realizar un inventario de los riesgos de protección de datos hasta administrar las complejidades de la implementación de controles, mantenerse al día con las normativas y certificaciones, y los informes a los auditores.
 
 El Administrador de cumplimiento ayuda a simplificar el cumplimiento y reducir los riesgos proporcionando:
 
@@ -65,7 +65,7 @@ El panel del Administrador de cumplimiento muestra la puntuación de cumplimient
 
 El Administrador de cumplimiento le otorga puntos por completar las acciones de mejora realizadas para cumplir con un reglamento, estándar o directiva, y combina esos puntos en una puntuación general de cumplimiento. Cada acción tiene un impacto diferente en la puntuación en función de los posibles riesgos implicados. La puntuación de cumplimiento puede ayudar a priorizar la acción en la que se debe centrarse para mejorar la posición general de cumplimiento.
 
-El Administrador de cumplimiento le ofrece una puntuación inicial basada en la línea base de protección de datos de Microsoft 365. Esta línea base es un conjunto de controles que incluye normativas y estándares clave para la protección de datos y el gobierno general de datos.
+El Administrador de cumplimiento le proporciona una puntuación inicial basada en la línea Microsoft 365 base de protección de datos. Esta línea base es un conjunto de controles que incluye normativas y estándares clave para la protección de datos y el gobierno general de datos.
 
 ##### <a name="learn-more"></a>Más información
 
@@ -165,3 +165,5 @@ El Administrador de cumplimiento está disponible en los siguientes idiomas:
 Obtenga información sobre cómo iniciar sesión, asignar permisos y roles, configurar la configuración y personalizar la vista del panel en [Introducción al Administrador de cumplimiento](compliance-manager-setup.md).
 
 A continuación, comience a personalizar el Administrador de cumplimiento para ayudarle a cumplir con los estándares del sector que más importan a su organización mediante la [configuración de evaluaciones](compliance-manager-assessments.md).
+
+Para ayudarle a cumplir con las normativas de privacidad de datos, hemos diseñado un flujo de trabajo para guiarlo a través de un proceso completo para planear e implementar funcionalidades en Microsoft 365, incluido el uso del Administrador de cumplimiento. Para obtener más información, consulte [Implementar la protección de la información para normativas de privacidad de datos con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 

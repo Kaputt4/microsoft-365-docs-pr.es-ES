@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 48674292e5a72ccc371ff4bf43dc499f19b3886d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b0c983f4ba939cee6485570af774c8a728c73944
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51072091"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274933"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Revisar acciones de corrección tras una investigación automatizada
 
@@ -61,7 +61,7 @@ Independientemente de si se realiza automáticamente o tras la aprobación, una 
 
 ## <a name="review-pending-actions"></a>Revisar acciones pendientes
 
-1. Vaya al Centro de seguridad de Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
+1. Vaya al centro Microsoft 365 seguridad ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
 2. En el panel de navegación, elija **Centro de actividades**. 
 3. Revise los elementos de la **pestaña** Pendiente. 
 4. Seleccione una acción para abrir su panel desplegable.
@@ -73,7 +73,7 @@ Independientemente de si se realiza automáticamente o tras la aprobación, una 
 
 ## <a name="review-completed-actions"></a>Revisar acciones completadas
 
-1. Vaya al Centro de seguridad de Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
+1. Vaya al centro Microsoft 365 seguridad ( [https://security.microsoft.com](https://security.microsoft.com) ) e inicie sesión.
 2. En el panel de navegación, elija **Centro de actividades**. 
 3. Revise los elementos de la **pestaña** Historial. 
 4. Seleccione un elemento para ver más detalles sobre esa acción de corrección.
@@ -120,8 +120,8 @@ En Microsoft Defender para endpoint, se realiza un seguimiento de todos los vere
 
 - [Obtenga información sobre las capacidades de respuesta en directo](live-response.md)
 - [Búsqueda proactiva de amenazas con búsqueda avanzada](advanced-hunting-overview.md)
-- [Dirección de falsos positivos/negativos en Microsoft Defender para endpoint](defender-endpoint-false-positives-negatives.md)
+- [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre las investigaciones automatizadas](automated-investigations.md)

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo cancelar su suscripción de prueba o de pago a Microsoft 365 para empresas.
 ms.date: 04/08/2021
-ms.openlocfilehash: f052a08cfe0e7582690864556cfc3039d6caf99c
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 15ab7ed31af24fa4cb1c83c6babc945871584375
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107007"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244665"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
@@ -126,7 +126,7 @@ Cuando la cancelación se haga efectiva, los usuarios perderán el acceso a sus 
 
 - Para mover el correo electrónico, los contactos, las tareas y la información de calendario a otra cuenta, vea [Exportar o realizar copias de seguridad de correo electrónico, contactos y calendario en un archivo .pst de Outlook](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 
-- Para guardar una biblioteca de documentos o el contenido de una lista (como los contactos) de un entorno de SharePoint Online (sitios de grupo o OneDrive para la Empresa) en recursos compartidos de archivos o en un equipo local, consulte [Migración manual del contenido de SharePoint Online](https://support.microsoft.com/kb/2783484).
+- Para guardar una biblioteca de documentos o el contenido de una lista (como los contactos) de un entorno de SharePoint Online (sitios de grupo o OneDrive para la Empresa) en recursos compartidos de archivos o en un equipo local, consulte [Migración manual del contenido de SharePoint Online](https://docs.microsoft.com/sharepoint/troubleshoot/migration-tool/content-manual-migration).
 
 ### <a name="uninstall-office-optional"></a>Desinstalar Office (opcional)
 

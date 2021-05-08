@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Obtenga información acerca de cómo configurar su suscripción a Aplicaciones de Microsoft 365 para negocios.
-ms.openlocfilehash: 56eb3eb0f28ee99aab1c50a970626c61514335cd
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6978a5402792906ef773934e5201b3ea6671c010
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579103"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244484"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Configurar Aplicaciones de Microsoft 365 para negocios
 
@@ -57,7 +57,7 @@ Puede agregar usuarios en el asistente, pero también puede [agregarlos más ade
 
 2. Para iniciar el asistente, seleccione **Ir a la configuración**.
 
-3. En la primera página, tendrá la opción de instalar las aplicaciones de Office en su equipo. También puede hacerlo más tarde.
+3. En la primera página, tendrá la opción de instalar las aplicaciones de Office en su equipo. También puede hacerlo en otro momento.
 
 3. En la página siguiente, podrá agregar usuarios y se les asignará automáticamente la licencia de Aplicaciones de Microsoft para negocios. Una vez que haya agregado los usuarios, también verá una opción para compartir las credenciales con los nuevos usuarios que ha agregado. Puede elegir imprimirlas, enviarlas por correo electrónico o descargarlas.
 
@@ -89,7 +89,7 @@ Si usa Office 365 ofrecido por 21Vianet, vaya a [https://portal.partner.microsof
 
 2. Haga clic en **Instalar**.
 
-¿Necesita pasos más detallados o desea instalar la versión de 64 bits de Office? Consulte las [instrucciones de instalación paso a paso](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps).
+¿Necesita pasos más detallados o quiere instalar la versión de 64 bits de Office? Consulte las [Instrucciones de instalación paso a paso](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps).
   
 ## <a name="set-up-mobile"></a>Configurar dispositivos móviles
 
@@ -99,7 +99,7 @@ Obtenga los pasos para el dispositivo: [Android](https://support.microsoft.com/o
   
 ## <a name="store-files-online"></a>Almacenar archivos en línea
 
-Microsoft facilita el almacenamiento de archivos en línea. Para saber qué ubicaciones de almacenamiento son las más adecuadas para su empresa, consulte [Dónde puede almacenar archivos en Office 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+Microsoft facilita el almacenamiento de archivos en línea. Para saber qué ubicaciones de almacenamiento son las más adecuadas para su empresa, consulte [Dónde puede almacenar archivos en Office 365](../../business-video/store-files.md).
   
 Todos los usuarios obtienen automáticamente una ubicación de almacenamiento en la nube de **OneDrive** cuando les crea una cuenta de Microsoft. Con OneDrive, puede acceder a los archivos desde sus equipos, teléfonos y tabletas.
   

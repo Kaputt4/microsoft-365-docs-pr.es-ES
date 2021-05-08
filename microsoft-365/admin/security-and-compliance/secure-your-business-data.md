@@ -1,5 +1,5 @@
 ---
-title: Principales 10 formas de proteger los planes de Microsoft 365 para empresas
+title: Las 10 formas principales de proteger Microsoft 365 planes empresariales
 f1.keywords:
 - CSH
 ms.author: sharik
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteja el correo electrónico y los datos de su empresa frente a amenazas cibernéticas, como ransomware, phishing y datos adjuntos malintencionados. '
-ms.openlocfilehash: 77213ab7f63b87ba985e6e4ca43119acc2345e2d
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: c20b0d070c4c4ca28ee681e560c4a91c412241fc
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579151"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244544"
 ---
-# <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Principales 10 formas de proteger los planes de Microsoft 365 para empresas
+# <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Las 10 formas principales de proteger Microsoft 365 planes empresariales
 
 ::: moniker range="o365-21vianet"
 
@@ -50,22 +50,24 @@ Microsoft recomienda completar las tareas enumeradas en la tabla siguiente que s
 |4 |[Aumentar el nivel de protección contra malware en el correo](secure-your-business-data.md#malware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[Protección contra ransomware](secure-your-business-data.md#ransomware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Detener el reenvío automático para correo electrónico](secure-your-business-data.md#forwarding)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|7 |[Usar cifrado de mensajes de Office](secure-your-business-data.md#encryption)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|7 |[Usar Office cifrado de mensajes](secure-your-business-data.md#encryption)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Proteger el correo electrónico de ataques de suplantación de identidad](secure-your-business-data.md#phishing)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9 |[Proteger contra datos adjuntos y archivos malintencionados con datos adjuntos seguros](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10  |[Proteger contra ataques de suplantación de identidad con vínculos seguros](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9 |[Proteger contra archivos adjuntos y archivos malintencionados con Caja fuerte adjuntos](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10  |[Proteger contra ataques de suplantación de identidad con Caja fuerte links](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-Antes de empezar, compruebe la puntuación segura de [Microsoft 365](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) en el Centro de seguridad de Microsoft 365. Desde un panel centralizado, puede supervisar y mejorar la seguridad de sus identidades, datos, aplicaciones, dispositivos e infraestructura de Microsoft 365. Se le dan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o abordar recomendaciones con una aplicación o software de terceros. Con información adicional y más visibilidad de un conjunto más amplio de productos y servicios de Microsoft, puede tener confianza en los informes sobre el estado de seguridad de su organización.
+Si tiene Microsoft Business Premium, la forma más rápida de configurar la seguridad y empezar a colaborar de forma segura es seguir las instrucciones de esta biblioteca: Microsoft 365 para empresas y campañas más [pequeñas.](../../campaigns/index.md) Esta guía se desarrolló en asociación con el equipo de Microsoft Defending Democracy para proteger a todos los clientes de pequeñas empresas contra las amenazas cibernéticas lanzadas por sofisticados hackers.
+
+Antes de empezar, compruebe su Microsoft 365 [puntuación segura](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) en el centro Microsoft 365 seguridad. Desde un panel centralizado, puede supervisar y mejorar la seguridad de su Microsoft 365 identidades, datos, aplicaciones, dispositivos e infraestructura. Se le dan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o abordar recomendaciones con una aplicación o software de terceros. Con información adicional y más visibilidad de un conjunto más amplio de productos y servicios de Microsoft, puede tener confianza en los informes sobre el estado de seguridad de su organización.
 
 ![Captura de pantalla de Puntuación segura de Microsoft](../../media/secure-score.png)
 
 ## <a name="1-set-up-multi-factor-authentication"></a>1: Configurar la autenticación multifactor
 <a name="setup"> </a>
 
-El uso de la autenticación multifactor es una de las formas más sencillas y eficaces de aumentar la seguridad de la organización. Es más fácil de lo que suena: al iniciar sesión, la autenticación multifactor significa que escribirás un código desde el teléfono para obtener acceso a Microsoft 365. Esto puede impedir que los piratas informáticos se alopen si conocen tu contraseña. La autenticación multifactor también se denomina verificación en 2 pasos. Los individuos pueden agregar la comprobación de 2 pasos a la mayoría de las cuentas fácilmente, por ejemplo, a sus cuentas de Google o Microsoft. Este es el procedimiento para [agregar la comprobación en dos pasos a su cuenta personal de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2016403).
+El uso de la autenticación multifactor es una de las formas más sencillas y eficaces de aumentar la seguridad de la organización. Es más fácil de lo que parece: al iniciar sesión, la autenticación multifactor significa que escribirás un código desde el teléfono para obtener acceso a Microsoft 365. Esto puede impedir que los piratas informáticos se alopen si conocen tu contraseña. La autenticación multifactor también se denomina verificación en 2 pasos. Los individuos pueden agregar la comprobación de 2 pasos a la mayoría de las cuentas fácilmente, por ejemplo, a sus cuentas de Google o Microsoft. Este es el procedimiento para [agregar la comprobación en dos pasos a su cuenta personal de Microsoft](https://go.microsoft.com/fwlink/p/?linkid=2016403).
 
 Para las empresas que usan Microsoft 365, agregue una configuración que requiera que los usuarios inicien sesión con la autenticación multifactor. Al realizar este cambio, se pedirá a los usuarios que configuren su teléfono para la autenticación en dos fases la próxima vez que inicien sesión.
-Para ver un vídeo de aprendizaje sobre cómo configurar MFA y cómo los usuarios completan la configuración, consulte [Configurar MFA](https://support.microsoft.com/office/e12187b8-216a-4490-9e3b-df34a06fb787) y configurar [el usuario](https://support.microsoft.com/office/a32541df-079c-420d-9395-9d59354f7225).
+Para ver un vídeo de aprendizaje sobre cómo configurar MFA y cómo los usuarios completan la configuración, consulte [Configurar MFA](../../business-video/turn-on-mfa.md) y configurar [el usuario](../../business-video/set-up-mfa.md).
 
 Para configurar la autenticación multifactor, activa los valores predeterminados de seguridad:
 
@@ -100,14 +102,14 @@ Además de esta guía, Microsoft recomienda que los usuarios tomen las acciones 
 
 Microsoft también recomienda a los usuarios proteger sus cuentas de correo electrónico personales mediante las acciones recomendadas en los siguientes artículos:
 
-- [Ayudar a proteger su Outlook.com de correo electrónico](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [Ayudar a proteger su cuenta de correo Outlook.com](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
 - [Proteger tu cuenta de Gmail con la comprobación de 2 pasos](https://go.microsoft.com/fwlink/p/?linkid=2015688&)
 
 ## <a name="3-use-dedicated-admin-accounts"></a>3: Usar cuentas de administrador dedicadas
 <a name="admin"> </a>
 
-Las cuentas administrativas que usa para administrar el entorno de Microsoft 365 incluyen privilegios elevados. Estos son objetivos valiosos para los hackers y los ciberdelincuentes. Use cuentas de administrador solo para la administración. Los administradores deben tener una cuenta de usuario independiente para un uso normal y no administrativo y usar solo su cuenta administrativa cuando sea necesario para completar una tarea asociada a su función de trabajo. Recomendaciones adicionales:
+Las cuentas administrativas que usa para administrar el entorno Microsoft 365 incluyen privilegios elevados. Estos son objetivos valiosos para los hackers y los ciberdelincuentes. Use cuentas de administrador solo para la administración. Los administradores deben tener una cuenta de usuario independiente para un uso normal y no administrativo y usar solo su cuenta administrativa cuando sea necesario para completar una tarea asociada a su función de trabajo. Recomendaciones adicionales:
 
 - Asegúrese de que las cuentas de administración también están configuradas para la autenticación multifactor.
 
@@ -118,7 +120,7 @@ Las cuentas administrativas que usa para administrar el entorno de Microsoft 365
 ## <a name="4-raise-the-level-of-protection-against-malware-in-mail"></a>4: Aumentar el nivel de protección contra malware en el correo
 <a name="malware"> </a>
 
-El entorno de Microsoft 365 incluye protección contra malware, pero puede aumentar esta protección bloqueando los datos adjuntos con tipos de archivo que se usan habitualmente para malware. Para proteger contra malware en el correo electrónico, vea un [breve vídeo de aprendizaje](https://support.microsoft.com/office/02b5783a-eea0-42e8-8856-62440718c3f0)o siga estos pasos:
+El Microsoft 365 incluye protección contra malware, pero puede aumentar esta protección bloqueando los datos adjuntos con tipos de archivo que se usan habitualmente para malware. Para proteger contra malware en el correo electrónico, vea un [breve vídeo de aprendizaje](../../business-video/anti-malware.md)o siga estos pasos:
 
 1. Ve a <https://protection.office.com> e inicia sesión con las credenciales de tu cuenta de administrador.
 
@@ -132,7 +134,7 @@ El entorno de Microsoft 365 incluye protección contra malware, pero puede aumen
 
 6. Seleccione **Guardar.**
 
-Para obtener más información, vea [Protección contra malware en EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-malware-protection).
+Para obtener más información, vea [Protección contra malware en EOP](../../security/office-365-security/anti-malware-protection.md).
 
 ## <a name="5-protect-against-ransomware"></a>5: Proteger contra ransomware
 <a name="ransomware"> </a>
@@ -141,11 +143,11 @@ Ransomware restringe el acceso a los datos mediante el cifrado de archivos o el 
 
 Puede protegerse contra ransomware creando una o más reglas de flujo de correo para bloquear las extensiones de archivo que se usan habitualmente para ransomware, o para advertir a los usuarios que reciben estos datos adjuntos en el correo electrónico. Un buen punto de partida es crear dos reglas:
 
-- Advertir a los usuarios antes de abrir los datos adjuntos de archivos de Office que incluyan macros. El ransomware se puede ocultar dentro de macros, por lo que le avisaremos a los usuarios que no abran estos archivos de personas que no conocen.
+- Advertir a los usuarios antes de abrir Office archivos adjuntos que incluyen macros. El ransomware se puede ocultar dentro de macros, por lo que le avisaremos a los usuarios que no abran estos archivos de personas que no conocen.
 
 - Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado. Empezaremos con una lista común de ejecutables (que se muestra en la tabla siguiente). Si su organización usa cualquiera de estos tipos ejecutables y espera que se envíen por correo electrónico, agrégrelos a la regla anterior (advierto a los usuarios).
 
-Para crear una regla de transporte de correo, vea un [breve vídeo de aprendizaje](https://support.microsoft.com/office/a9ecca03-42a6-4867-b9fd-38e3f6bb06ad)o siga estos pasos:
+Para crear una regla de transporte de correo, vea un [breve vídeo de aprendizaje](../../business-video/prevent-ransom-in-email.md)o siga estos pasos:
 
 1. Vaya al [Centro de administración de Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104).
 
@@ -159,7 +161,7 @@ Para crear una regla de transporte de correo, vea un [breve vídeo de aprendizaj
 
 6. Seleccione **Guardar**.
     
-| Configuración | Advertir a los usuarios antes de abrir los datos adjuntos de los archivos de Office | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
+| Configuración | Advertir a los usuarios antes de abrir datos adjuntos Office archivos | Bloquear tipos de archivo que podrían contener ransomware u otro código malintencionado |
 |:-----|:-----|:-----|
 |Nombre  <br/> |Regla anti ransomware: advertir a los usuarios  <br/> |Regla anti ransomware: bloquear tipos de archivo  <br/> |
 |Aplique esta regla si . . .  <br/> |Cualquier dato adjunto . . . extensión de archivo coincide con . . .  <br/> |Cualquier dato adjunto . . . extensión de archivo coincide con . . .  <br/> |
@@ -174,7 +176,7 @@ Para obtener más información, vea:
 
 - [Ransomware: cómo reducir el riesgo](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
-- [Restaurar onedrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
+- [Restaure el OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
 
 ## <a name="6-stop-auto-forwarding-for-email"></a>6: Detener el reenvío automático de correo electrónico
 <a name="forwarding"> </a>
@@ -204,12 +206,12 @@ Para crear una regla de transporte de correo:
 |Haga lo siguiente...|Bloquear el mensaje . . . rechazar el mensaje e incluir una explicación.|
 |Proporcionar texto del mensaje|El reenvío automático de correo electrónico fuera de esta organización se impide por motivos de seguridad.|
 
-## <a name="7-use-office-message-encryption"></a>7: Usar cifrado de mensajes de Office
+## <a name="7-use-office-message-encryption"></a>7: Usar Office cifrado de mensajes
 <a name="encryption"> </a>
 
-El cifrado de mensajes de Office se incluye con Microsoft 365. Ya está configurado. Con el cifrado de mensajes de Office, la organización puede enviar y recibir mensajes de correo electrónico cifrados entre personas dentro y fuera de la organización. El Cifrado de mensajes de Office 365 funciona con Outlook.com, Yahoo!, Gmail y otros servicios de correo electrónico. El cifrado de mensajes de correo electrónico ayuda a garantizar que solo los destinatarios previstos puedan ver el contenido del mensaje.
+Office El cifrado de mensajes se incluye Microsoft 365. Ya está configurado. Con Office cifrado de mensajes, la organización puede enviar y recibir mensajes de correo electrónico cifrados entre personas dentro y fuera de la organización. El Cifrado de mensajes de Office 365 funciona con Outlook.com, Yahoo!, Gmail y otros servicios de correo electrónico. El cifrado de mensajes de correo electrónico ayuda a garantizar que solo los destinatarios previstos puedan ver el contenido del mensaje.
 
-El cifrado de mensajes de Office proporciona dos opciones de protección al enviar correo:
+Office Cifrado de mensajes proporciona dos opciones de protección al enviar correo:
 
 - No reenviar
 
@@ -219,7 +221,7 @@ Es posible que la organización haya configurado opciones adicionales que aplica
 
 ### <a name="to-send-protected-email"></a>Para enviar correo electrónico protegido
 
-En Outlook para PC, seleccione **Opciones** en el correo electrónico y, a continuación, **elija Permisos**.
+En Outlook para PC, seleccione **Opciones** en el correo electrónico y, a continuación, elija **Permisos**.
 
 ![Cifrado de mensajes de correo electrónico en Outlook](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
 
@@ -229,22 +231,22 @@ En Outlook.com, seleccione **Proteger** en el correo electrónico. La protecció
 
 ### <a name="to-receive-encrypted-email"></a>Para recibir correo electrónico cifrado
 
-Si el destinatario tiene Outlook 2013 o Outlook 2016 y una cuenta de correo electrónico de Microsoft, verá una alerta sobre los permisos restringidos del elemento en el panel lectura. Después de abrir el mensaje, el destinatario puede ver el mensaje como cualquier otro.
+Si el destinatario tiene Outlook 2013 o Outlook 2016 y una cuenta de correo electrónico de Microsoft, verán una alerta sobre los permisos restringidos del elemento en el panel Lectura. Después de abrir el mensaje, el destinatario puede ver el mensaje como cualquier otro.
 
 Si el destinatario usa otro cliente de correo electrónico o cuenta de correo electrónico, como Gmail o Yahoo, verá un vínculo que le permite iniciar sesión para leer el mensaje de correo electrónico o solicitar un código de acceso único para ver el mensaje en un explorador web. Si los usuarios no reciben el correo electrónico, haga que comprueben su carpeta Correo no deseado o no deseado.
 
-Para obtener más información, vea [Enviar, ver y responder a](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980)mensajes cifrados en Outlook para PC .
+Para obtener más información, vea [Enviar, ver y](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980)responder a mensajes cifrados en Outlook para PC .
 
 ## <a name="8-protect-your-email-from-phishing-attacks"></a>8. Proteger el correo electrónico de ataques de suplantación de identidad
 <a name="phishing"> </a>
 
-Si ha configurado uno o varios dominios personalizados para su entorno de Microsoft 365, puede configurar la protección contra suplantación de identidad dirigida. La protección contra suplantación de identidad (phishing), que forma parte de Microsoft Defender para Office 365, puede ayudar a proteger su organización de ataques de suplantación de identidad malintencionados y otros ataques de suplantación de identidad. Si no ha configurado un dominio personalizado, no es necesario hacerlo.
+Si ha configurado uno o varios dominios personalizados para su entorno Microsoft 365, puede configurar la protección contra suplantación de identidad dirigida. La protección contra la suplantación de identidad (phishing), una parte de Microsoft Defender para Office 365, puede ayudar a proteger su organización de ataques de suplantación de identidad malintencionados y otros ataques de suplantación de identidad. Si no ha configurado un dominio personalizado, no es necesario hacerlo.
 
 Se recomienda empezar a usar esta protección mediante la creación de una directiva para proteger a los usuarios más importantes y al dominio personalizado.
 
-![Creación de una directiva contra suplantación de identidad en Microsoft Defender para Office 365](../../media/security-and-compliance-center.png)
+![Crear una directiva contra la suplantación de identidad en Microsoft Defender para Office 365](../../media/security-and-compliance-center.png)
 
-Para crear una directiva contra suplantación de identidad en Defender para Office 365, vea un breve [vídeo](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)de aprendizaje o siga estos pasos:
+Para crear una directiva contra la suplantación de identidad en Defender para Office 365, vea un breve [vídeo](../../business-video/setup-anti-phishing.md)de aprendizaje o siga estos pasos:
 
 1. Vaya a <https://protection.office.com>.
 
@@ -254,7 +256,7 @@ Para crear una directiva contra suplantación de identidad en Defender para Offi
 
 4. En la página Anti-phishing, seleccione **+ Crear**. Se inicia un asistente que le permite definir la directiva contra suplantación de identidad.
 
-5. Especifique el nombre, la descripción y la configuración de la directiva como se recomienda en el siguiente gráfico. Para obtener más información, vea Learn [about anti-phishing policy in Microsoft Defender for Office 365 options.](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)
+5. Especifique el nombre, la descripción y la configuración de la directiva como se recomienda en el siguiente gráfico. Consulta [Más información sobre la directiva contra la suplantación](../../security/office-365-security/set-up-anti-phishing-policies.md) de identidad en Microsoft Defender para obtener Office 365 opciones para obtener más información.
 
 6. Después de revisar la configuración, seleccione **Crear esta directiva** o **Guardar**, según corresponda.
 
@@ -263,29 +265,29 @@ Para crear una directiva contra suplantación de identidad en Defender para Offi
 |Nombre|Personal de la campaña más valioso y de dominio|
 |Descripción|Asegúrese de que el personal más importante y nuestro dominio no se suplanten.|
 |Agregar usuarios que proteger|Seleccione **+ Agregar una condición, El destinatario es**. Escriba nombres de usuario o escriba la dirección de correo electrónico del candidato, el jefe de campaña y otros miembros importantes del personal. Puede agregar hasta 20 direcciones internas y externas que desea proteger de la suplantación.|
-|Agregar dominios que proteger|Seleccione **+ Agregar una condición, El dominio de destinatario es**. Escriba el dominio personalizado asociado a su suscripción de Microsoft 365, si ha definido uno. Puede escribir más de un dominio.|
+|Agregar dominios que proteger|Seleccione **+ Agregar una condición, El dominio de destinatario es**. Escriba el dominio personalizado asociado con su Microsoft 365 suscripción, si ha definido uno. Puede escribir más de un dominio.|
 |Elegir acciones|Si un usuario suplantado envía correo electrónico: seleccione Redirigir mensaje a otra dirección de correo electrónico y, a continuación, escriba la dirección de correo electrónico del administrador de seguridad; por ejemplo, securityadmin@contoso.com. <br/> Si un dominio suplantado envía correo electrónico: seleccione **Mensaje en cuarentena**.|
 |Inteligencia de buzones|De forma predeterminada, se selecciona inteligencia de buzones al crear una directiva contra suplantación de identidad (anti-phishing). Deje esta configuración **activada** para obtener mejores resultados.|
 |Agregar dominios y remitentes de confianza|En este ejemplo, no defina ninguna invalidación.|
 |Aplicado a|Seleccione **El dominio del destinatario es**. En **Cualquiera de estos**, seleccione **Elegir**. Seleccione **+ Agregar**. Active la casilla situada junto al nombre del dominio, por ejemplo, contoso.com, en la lista y, a continuación, **seleccione Agregar**. Seleccione **Listo**.|
 |
 
-Para obtener más información, vea [Set up anti-phishing policies in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
+Para obtener más información, vea [Set up anti-phishing policies in Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
 
-## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: Proteger contra archivos adjuntos y archivos malintencionados con datos adjuntos seguros
+## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: Proteger contra archivos adjuntos y archivos malintencionados con Caja fuerte adjuntos
 <a name="atp"> </a>
 
-Las personas envían, reciben y comparten datos adjuntos con regularidad, como documentos, presentaciones, hojas de cálculo y mucho más. No siempre es fácil saber si los datos adjuntos son seguros o malintencionados con solo mirar un mensaje de correo electrónico. Microsoft Defender para Office 365 incluye protección de datos adjuntos seguros, pero esta protección no está activada de forma predeterminada. Se recomienda crear una nueva regla para empezar a usar esta protección. Esta protección se extiende a los archivos de SharePoint, OneDrive y Microsoft Teams.
+Las personas envían, reciben y comparten datos adjuntos con regularidad, como documentos, presentaciones, hojas de cálculo y mucho más. No siempre es fácil saber si los datos adjuntos son seguros o malintencionados con solo mirar un mensaje de correo electrónico. Microsoft Defender para Office 365 incluye Caja fuerte de datos adjuntos, pero esta protección no está activada de forma predeterminada. Se recomienda crear una nueva regla para empezar a usar esta protección. Esta protección se extiende a los archivos de SharePoint, OneDrive y Microsoft Teams.
 
-Para crear una directiva de datos adjuntos seguros, vea [un breve vídeo de aprendizaje](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)o siga estos pasos:
+Para crear una directiva Caja fuerte datos adjuntos, vea un [breve vídeo de aprendizaje](../../business-video/safe-attachments.md)o siga estos pasos:
 
 1. Ve a <https://protection.office.com> e inicia sesión con tu cuenta de administrador.
 
 2. En el Centro de & cumplimiento, en el panel de navegación izquierdo, en **Administración de amenazas,** seleccione **Directiva**.
 
-3. En la página Directiva, seleccione **Datos adjuntos seguros**.
+3. En la página Directiva, seleccione **Caja fuerte datos adjuntos**.
 
-4. En la página Datos adjuntos seguros, aplique esta protección ampliamente activando la casilla Activar **ATP para SharePoint, OneDrive** y Microsoft Teams.
+4. En la página Caja fuerte datos adjuntos, aplique esta protección de forma general activando la casilla Activar ATP para **SharePoint,** OneDrive y Microsoft Teams protección.
 
 5. Seleccione **+** esta opción para crear una nueva directiva.
 
@@ -302,12 +304,12 @@ Para crear una directiva de datos adjuntos seguros, vea [un breve vídeo de apre
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
 |
 
-Para obtener más información, vea [Set up anti-phishing policies in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
+Para obtener más información, vea [Set up anti-phishing policies in Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
 
-## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: Proteger contra ataques de suplantación de identidad con vínculos seguros
+## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: Proteger contra ataques de suplantación de identidad con Caja fuerte web
 <a name="phishingatp"> </a>
 
-Los hackers a veces ocultan sitios web malintencionados en vínculos de correo electrónico u otros archivos. Los vínculos seguros, que forman parte de Microsoft Defender para Office 365, pueden ayudar a proteger su organización proporcionando la comprobación con tiempo de clic de direcciones web (URL) en mensajes de correo electrónico y documentos de Office. La protección se define a través de directivas de vínculos seguros.
+Los hackers a veces ocultan sitios web malintencionados en vínculos de correo electrónico u otros archivos. Caja fuerte Los vínculos, que forman parte de Microsoft Defender para Office 365, pueden ayudar a proteger su organización proporcionando la comprobación con tiempo de clic de direcciones web (URL) en mensajes de correo electrónico y documentos Office usuario. La protección se define a través de Caja fuerte de vínculos.
 
 Se recomienda hacer lo siguiente:
 
@@ -315,27 +317,27 @@ Se recomienda hacer lo siguiente:
 
 - Agregue una nueva directiva dirigida a todos los destinatarios de su dominio.
 
-Para ir a Vínculos seguros, vea un [breve vídeo de aprendizaje](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)o siga estos pasos:
+Para obtener acceso Caja fuerte, vea un [breve vídeo de aprendizaje](../../business-video/safe-links.md)o siga estos pasos:
 
 1. Ve a <https://protection.office.com> e inicia sesión con tu cuenta de administrador.
 
 2. En el Centro de & cumplimiento, en el panel de navegación izquierdo, en **Administración de amenazas,** seleccione **Directiva**.
 
-3. En la página Directiva, seleccione **Vínculos seguros**.
+3. En la página Directiva, seleccione **Caja fuerte vínculos**.
 
 Para modificar la directiva predeterminada:
 
-1. En la página Vínculos seguros, en **Directivas que se aplican a** toda la organización, haga doble clic en la **directiva** predeterminada.
+1. En la página Caja fuerte, en Directivas que se **aplican a** toda la organización, haga doble clic en la **directiva** predeterminada.
 
-2. En Configuración que se aplica al contenido en **Office 365**, escriba una dirección URL que se va a bloquear, como _example.com_ y seleccione **+** .
+2. En **Configuración que se aplican** al contenido de Office 365 , escriba una dirección URL que se va a bloquear, como _example.com_ y seleccione **+** .
 
-3. En **Configuración que** se aplica al contenido excepto el correo electrónico , seleccione Aplicaciones de Office **365**, No realizar un seguimiento cuando los usuarios hacen clic en vínculos seguros y No permitir que los usuarios hagan clic en vínculos seguros a la dirección URL **original.** 
+3. En **Configuración** que se aplican al contenido excepto el correo electrónico , seleccione Office 365 **aplicaciones**, No realizar un seguimiento cuando los usuarios hacen clic en vínculos seguros y No permitir que los usuarios hagan clic a través de vínculos seguros **a** la dirección **URL original.**
 
 4. Seleccione **Guardar**.
 
 Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 
-1. En la página Vínculos seguros, en Directivas que se aplican a destinatarios **específicos,** seleccione **+** para crear una nueva directiva.
+1. En la página Caja fuerte, en Directivas que se aplican a destinatarios **específicos,** seleccione **+** para crear una nueva directiva.
 
 2. Aplique la configuración que se muestra en la tabla siguiente.
 
@@ -343,10 +345,10 @@ Para crear una nueva directiva dirigida a todos los destinatarios de su dominio:
 
 |Configuración u opción|Valor recomendado|
 |---|---|
-|Nombre|Directiva de vínculos seguros para todos los destinatarios del dominio|
+|Nombre|Caja fuerte de vínculos para todos los destinatarios del dominio|
 |Seleccionar la acción para direcciones URL potencialmente malintencionadas desconocidas en los mensajes|Seleccionar Activado: las direcciones URL se reescribirán y comprobarán en una lista de **vínculos malintencionados** conocidos cuando el usuario haga clic en el vínculo .|
 |Aplicar análisis de url en tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos|Seleccione este cuadro.|
 |Aplicado a|El dominio de destinatario es . . . seleccione el dominio.|
 |
 
-Para obtener más información, vea [Vínculos seguros en Microsoft Defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links).
+Para obtener más información, [vea Caja fuerte Links in Microsoft Defender for Office 365](../../security/office-365-security/atp-safe-links.md).

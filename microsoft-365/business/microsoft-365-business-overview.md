@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Información sobre Microsoft 365 Empresa Premium, un servicio de suscripción que incluye las aplicaciones de productividad de Office y protección avanzada para defender a las empresas frente a las ciberamenazas.
-ms.openlocfilehash: d6b0ded25e0478f85e73b807789463e4d55b1bb0
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: a355c9856ead4a66f6876cc7cb5aa8eb469d7f12
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578355"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244864"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Información general sobre Microsoft 365 Empresa Premium
 
@@ -46,7 +46,7 @@ Vea este vídeo para obtener información general sobre Microsoft 365 Empresa P
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y para conocer Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y para conocer Microsoft 365](../business-video/index.yml). 
 
 Microsoft 365 Empresa Premium está diseñado para un máximo de 300 licencias. Si necesita más licencias, consulte la documentación de [Microsoft 365 Enterprise](../enterprise/index.yml) para obtener más información.
 
@@ -71,11 +71,11 @@ Microsoft 365 Empresa Premium le ayuda a proteger los datos en cada uno de esto
 
 Microsoft 365 Empresa Premium aplica varias medidas que ayudan a **protegerse contra las amenazas**:
 
-- Examinar vínculos en correos electrónicos y documentos en tiempo real para bloquear sitios web no seguros (vínculos seguros).
+- Examinar vínculos en correos electrónicos y documentos en tiempo real para bloquear sitios web no seguros (Caja fuerte vínculos).
 
-- Realizar análisis avanzado de datos adjuntos de correo electrónico en un entorno de espacio aislado para detectar malware recién desarrollado (datos adjuntos seguros). 
+- Realizar análisis avanzado de datos adjuntos de correo electrónico en un entorno de espacio aislado para detectar malware recién desarrollado (Caja fuerte datos adjuntos). 
 
-- Habilitar directivas contra suplantación de identidad que usan modelos de aprendizaje automático y detección de suplantación para proporcionar protección contra ataques avanzados (anti phishing en la inteligencia de Defender para Office 365). 
+- Habilitar directivas contra phishing que usan modelos de aprendizaje automático y detección de suplantación para proporcionar protección contra ataques avanzados (anti phishing en Defender para la Office 365 inteligencia). 
 
 - Directivas avanzadas que deshabilitan el acceso desde ubicaciones en las que no se confía o que omiten la autenticación multifactor en sitios de confianza como la red de su oficina (Azure MFA, incluido IP de confianza y Acceso condicional). 
 
@@ -111,6 +111,6 @@ Para ver la lista completa de las características de seguridad, consulte [Carac
 
 - Si no tiene un partner y quiere obtener Microsoft 365 Empresa Premium, puede [comprarlo aquí](https://www.microsoft.com/microsoft-365/business) y seguir las instrucciones de [registro](sign-up.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="related-content"></a>Contenido relacionado
 
-[Vídeos de aprendizaje de Microsoft 365 Empresa Premium](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Empresa Premium vídeos de aprendizaje](../business-video/index.yml) (página de vínculos)

@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Aprenda a administrar firmas de correo electrónico, incluidas las declinaciones de responsabilidades legales o las declaraciones de divulgación de todos los mensajes de correo electrónico que entran o salen de su organización.
-ms.openlocfilehash: b599ef8b6d0bb236b6111bae86c92409601e00d0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e1c3df235442fdc6f569825a7137c92bfc5bb044
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914239"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244532"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidades en toda la organización
 
@@ -40,7 +40,7 @@ ms.locfileid: "50914239"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Crear una firma que se aplique a todos los mensajes
 
@@ -69,7 +69,7 @@ Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/
    
     ¿No encuentra la aplicación que busca? En el iniciador de aplicaciones, selecciona **Todas las aplicaciones** para ver una lista alfabética de las aplicaciones disponibles. Ahí podrá buscar una aplicación específica. 
     
-2. Seleccione **Centros de administración** y, a continuación, elija **Exchange**.
+2. Seleccione **Centros de administración** y, a **continuación, Exchange**.
     
 3. En Flujo de correo, seleccione **Reglas**.
     
@@ -80,7 +80,7 @@ Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/
 6. En **Aplicar esta regla,** seleccione **[Aplicar a todos los mensajes]**.
     
     > [!TIP]
-    > [Obtenga más información](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) sobre cómo especificar condiciones si no quiere que el aviso de declinación de responsabilidades se aplique a todos los mensajes. (Este artículo de ámbito es para Exchange Server, pero también se aplica a Microsoft 365). 
+    > [Obtenga más información](/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) sobre cómo especificar condiciones si no quiere que el aviso de declinación de responsabilidades se aplique a todos los mensajes. (Este artículo de ámbito es Exchange Server, pero también se aplica a Microsoft 365). 
   
 7. En Realizar lo siguiente, deje la opción **Anexar el aviso de declinación de responsabilidades** seleccionada. 
     
@@ -115,4 +115,4 @@ Para obtener estas y otras capacidades para administrar firmas de correo electr�
   
 ## <a name="more-resources"></a>Más recursos
 
-- Consulte Avisos de declinación de responsabilidades [de mensajes, firmas,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) pies de página o encabezados de toda la organización en Exchange Online para obtener información sobre el uso de PowerShell.
+- Vea Avisos de declinación de responsabilidades [de mensajes, firmas,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) pies de página o encabezados en toda la organización en Exchange Online para obtener información sobre el uso de PowerShell.

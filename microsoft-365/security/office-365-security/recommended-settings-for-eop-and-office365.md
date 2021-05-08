@@ -19,12 +19,12 @@ ms.collection:
 description: ¿Cuáles son los procedimientos recomendados para la configuración de seguridad de Exchange Online Protection (EOP) y Defender para Office 365? ¿Cuáles son las recomendaciones actuales para la protección estándar? ¿Qué se debe usar si quiere ser más estricto? ¿Y qué extras obtiene si también usa Defender para Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8ba88f9b9ebcc34e0ea146a74c01dea8f200ee0b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3a4447d6eaeeb907eb750d2ad668fdbb9031c28b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207423"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274873"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Configuración recomendada para EOP y Microsoft Defender para la seguridad de Office 365
 
@@ -57,6 +57,8 @@ El correo no deseado, el antimalware y la suplantación de identidad (phishing) 
 
 Para crear y configurar directivas contra correo no deseado, vea [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
+<br>
+
 ****
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
@@ -83,6 +85,8 @@ Para crear y configurar directivas contra correo no deseado, vea [Configure anti
 Hay varias otras configuraciones de filtro de correo no deseado avanzado (ASF) en directivas contra correo no deseado que están en proceso de desuso. Se comunicará más información sobre las escalas de tiempo para la depreciación de estas características fuera de este artículo.
 
 Se recomienda desactivar esta configuración de ASF **para** los **niveles Estándar** **y Estricto.** Para obtener más información acerca de la configuración de ASF, vea [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
+
+<br>
 
 ****
 
@@ -111,6 +115,8 @@ Para crear y configurar directivas de correo no deseado salientes, vea [Configur
 
 Para obtener más información acerca de los límites de envío predeterminados en el servicio, vea [Sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 
+<br>
+
 ****
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
@@ -125,20 +131,24 @@ Para obtener más información acerca de los límites de envío predeterminados 
 
 Para crear y configurar directivas antimalware, vea [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
 
+<br>
+
 ****
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
-|**¿Desea notificar a los destinatarios si sus mensajes están en cuarentena?** <p> _Acción_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pone en cuarentena y solo puede publicarlo un administrador.|
+|**¿Desea notificar a los destinatarios si sus mensajes están en cuarentena?** <p> _Action_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|No <p> _DeleteMessage_|Si se detecta malware en un archivo adjunto de correo electrónico, el mensaje se pone en cuarentena y solo puede publicarlo un administrador.|
 |**Filtro de tipos de datos adjuntos comunes** <p> _EnableFileFilter_|Desactivada <p> `$false`|Activada <p> `$true`|Activado <p> `$true`|Esta configuración pone en cuarentena los mensajes que contienen datos adjuntos ejecutables según el tipo de archivo, independientemente del contenido de los datos adjuntos.|
 |**Purga automática de hora cero de malware** <p> _ZapEnabled_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
-|**Notificar a los remitentes internos** del mensaje no entregado <p> _EnableInternalSenderNotifications_|Deshabilitado <p> `$false`|Deshabilitado <p> `$false`|Deshabilitado <p> `$false`||
-|**Notificar a los remitentes externos** del mensaje no entregado <p> _EnableExternalSenderNotifications_|Deshabilitado <p> `$false`|Deshabilitado <p> `$false`|Deshabilitado <p> `$false`||
+|**Notificar a los remitentes internos** del mensaje no entregado <p> _EnableInternalSenderNotifications_|Deshabilitada <p> `$false`|Deshabilitada <p> `$false`|Deshabilitada <p> `$false`||
+|**Notificar a los remitentes externos** del mensaje no entregado <p> _EnableExternalSenderNotifications_|Deshabilitada <p> `$false`|Deshabilitada <p> `$false`|Deshabilitada <p> `$false`||
 |
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>Configuración de directiva contra suplantación de identidad predeterminada de EOP
 
 Para obtener más información acerca de esta configuración, vea [Spoof settings](set-up-anti-phishing-policies.md#spoof-settings). Para configurar estas opciones, vea [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+
+<br>
 
 ****
 
@@ -171,6 +181,8 @@ Los clientes de EOP obtienen la protección contra suplantación de identidad b�
 
 Para obtener más información acerca de esta configuración, vea Configuración de suplantación en directivas contra suplantación de identidad en [Microsoft Defender para Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). Para configurar estas opciones, vea [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
+<br>
+
 ****
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
@@ -194,6 +206,8 @@ Para obtener más información acerca de esta configuración, vea Configuración
 
 Tenga en cuenta que estas son las mismas opciones que están disponibles en la configuración de directiva contra correo no [deseado en EOP](#eop-anti-spam-policy-settings).
 
+<br>
+
 ****
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
@@ -206,6 +220,8 @@ Tenga en cuenta que estas son las mismas opciones que están disponibles en la c
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configuración avanzada en directivas contra suplantación de identidad en Microsoft Defender para Office 365
 
 Para obtener más información acerca de esta configuración, vea [Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365). Para configurar esta configuración, vea [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
+
+<br>
 
 ****
 
@@ -224,6 +240,8 @@ Para configurar estas opciones, vea [Configure global settings for Safe Links in
 
 En PowerShell, use el cmdlet [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) para esta configuración.
 
+<br>
+
 ****
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
@@ -241,6 +259,8 @@ En PowerShell, use los [cmdlets New-SafeLinksPolicy](/powershell/module/exchange
 
 > [!NOTE]
 > Como se describió anteriormente, no hay ninguna directiva de vínculos seguros predeterminada. Los valores de la columna Predeterminado son los valores predeterminados de las nuevas directivas de vínculos seguros que cree.
+
+<br>
 
 ****
 
@@ -265,6 +285,8 @@ Para configurar estas opciones, vea Activar datos adjuntos seguros para [SharePo
 
 En PowerShell, use el cmdlet [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) para esta configuración.
 
+<br>
+
 ****
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
@@ -283,11 +305,13 @@ En PowerShell, use los cmdlets [New-SafeAttachmentPolicy](/powershell/module/exc
 > [!NOTE]
 > Como se describió anteriormente, no hay ninguna directiva predeterminada de datos adjuntos seguros. Los valores de la columna Predeterminado son los valores predeterminados de las nuevas directivas de datos adjuntos seguros que cree.
 
+<br>
+
 ****
 
 |Nombre de la característica de seguridad|Predeterminado|Estándar|Estricto|Comentario|
 |---|:---:|:---:|:---:|---|
-|**Respuesta de malware desconocido de datos adjuntos seguros** <p> _Acción_|Bloquear <p> `Block`|Bloquear <p> `Block`|Bloquear <p> `Block`||
+|**Respuesta de malware desconocido de datos adjuntos seguros** <p> _Action_|Bloquear <p> `Block`|Bloquear <p> `Block`|Bloquear <p> `Block`||
 |**Datos adjuntos de redireccionamiento al detectar:** **Habilitar redireccionamiento** <p> _Redirigir_ <p> _RedirectAddress_|Desactivado y sin dirección de correo electrónico especificada. <p> `$true` <p> ninguno|On y especifique una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|On y especifique una dirección de correo electrónico. <p> `$true` <p> una dirección de correo electrónico|Redirigir mensajes a un administrador de seguridad para su revisión.|
 |**Aplica la selección anterior si el examen de malware en busca de datos adjuntos tiene tiempo de espera o se produce un error.** <p> _ActionOnError_|Activado <p> `$true`|Activado <p> `$true`|Activado <p> `$true`||
 |

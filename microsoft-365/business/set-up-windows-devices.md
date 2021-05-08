@@ -1,5 +1,5 @@
 ---
-title: Configurar dispositivos Windows para usuarios de Microsoft 365 Empresa Premium
+title: Configurar dispositivos Windows para Microsoft 365 Empresa Premium usuarios
 f1.keywords:
 - CSH
 ms.author: sharik
@@ -26,21 +26,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: Aprende a configurar dispositivos Windows que ejecutan Windows 10 Pro para usuarios de Microsoft 365 Empresa Premium, lo que habilita controles de seguridad y administración centralizados.
-ms.openlocfilehash: 9c9ffe5bd74d9e9877a87309757c481576ee89d2
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Obtenga información sobre cómo configurar Windows dispositivos Windows 10 Pro para Microsoft 365 Empresa Premium usuarios, lo que permite controles de seguridad y administración centralizados.
+ms.openlocfilehash: 3e268d81ff6fb7113b7e0b0fe5d0545ff5c72b1e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578135"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244784"
 ---
-# <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurar dispositivos Windows para usuarios de Microsoft 365 Empresa Premium
+# <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Configurar dispositivos Windows para Microsoft 365 Empresa Premium usuarios
 
-## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-premium-users"></a>Requisitos previos para configurar dispositivos Windows para usuarios de Microsoft 365 Empresa Premium
+## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-premium-users"></a>Requisitos previos para configurar Windows dispositivos para Microsoft 365 Empresa Premium usuarios
 
-Antes de configurar dispositivos Windows para usuarios de Microsoft 365 Empresa Premium, asegúrate de que todos los dispositivos Windows ejecutan Windows 10 Pro, versión 1703 (Creators Update). Windows 10 Pro es un requisito previo para implementar Windows 10 Empresa, que es un conjunto de servicios en la nube y capacidades de administración de dispositivos que complementan Windows 10 Pro y habilitan los controles de administración y seguridad centralizados de Microsoft 365 Empresa Premium.
+Antes de configurar Windows dispositivos para Microsoft 365 Empresa Premium usuarios, asegúrese de que todos los dispositivos Windows están ejecutando Windows 10 Pro, versión 1703 (Creators Update). Windows 10 Pro es un requisito previo para implementar Windows 10 Business, que es un conjunto de servicios en la nube y capacidades de administración de dispositivos que complementan Windows 10 Pro y habilitan la administración centralizada y los controles de seguridad de Microsoft 365 Empresa Premium.
   
-Si tienes dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, tu suscripción a Microsoft 365 Empresa Premium te da derecho a una actualización de Windows 10.
+Si tienes dispositivos Windows que ejecutan Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, la suscripción Microsoft 365 Empresa Premium te da derecho a una actualización Windows 10.
   
 Para obtener más información sobre cómo actualizar los dispositivos Windows a Windows 10 Pro Creators Update, siga los pasos indicados en este tema: [Actualizar dispositivos Windows a Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
   
@@ -50,11 +50,11 @@ Vea un breve vídeo sobre cómo conectar Windows a Microsoft 365.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Unir dispositivos Windows 10 en la cuenta de Azure AD de una organización
 
-Cuando todos los dispositivos Windows de la organización se hayan actualizado a Windows 10 Pro Creators Update o ya estén ejecutando Windows 10 Pro Creators Update, puedes unir estos dispositivos a Azure Active Directory de tu organización. Una vez que se unen los dispositivos, se actualizarán automáticamente a Windows 10 Empresa, que forma parte de la suscripción a Microsoft 365 Empresa Premium.
+Cuando todos los dispositivos Windows de su organización se hayan actualizado a Windows 10 Pro Creators Update o ya estén ejecutando Windows 10 Pro Creators Update, puede unir estos dispositivos a los Azure Active Directory. Una vez que se unen los dispositivos, se actualizarán automáticamente a Windows 10 Business, que forma parte de la Microsoft 365 Empresa Premium suscripción.
   
 ### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>Dispositivos Windows 10 Pro nuevos o actualizados recientemente
 
@@ -106,17 +106,17 @@ Si ha cargado archivos a OneDrive para la Empresa, vuelva a sincronizarlos. Si u
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>Comprobar que un dispositivo está conectado a Azure AD
 
-Para comprobar el estado  de sincronización, en la página Acceso al trabajo o escuela de **Configuración,** seleccione el área Conectado a **_** _ para exponer los botones \<organization name\> **Info** y **Disconnect**. Elige **Información** para obtener el estado de sincronización. 
+Para comprobar el estado  de sincronización, en la página Acceso al trabajo o escuela de **Configuración**, seleccione el área Conectado a **_** _ para exponer los botones \<organization name\> **Información** y **Desconectar**. Elige **Información** para obtener el estado de sincronización. 
   
 En la **página Estado de sincronización,** elija **Sincronizar** para obtener las directivas de administración de dispositivos móviles más recientes en el equipo.
   
-Para empezar a usar la cuenta de Microsoft 365 Empresa Premium, vaya al botón Inicio de **Windows,** haga clic con el botón secundario en la imagen de la cuenta actual y, a continuación, **cambie a cuenta**. Inicie sesión con el correo electrónico y la contraseña de la organización.
+Para empezar a usar la cuenta Microsoft 365 Empresa Premium, vaya  al botón Inicio Windows, haga clic con el botón secundario en la imagen de la cuenta actual y, a continuación, **Cambie cuenta**. Inicie sesión con el correo electrónico y la contraseña de la organización.
   
 ![Click Info button to view synchronization status](../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
-## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>Comprobar que el equipo se ha actualizado a Windows 10 Empresa
+## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>Comprobar que el equipo se actualiza a Windows 10 Business
 
-Compruebe que los dispositivos De Azure AD unidos a Windows 10 se actualicen a Windows 10 Empresa como parte de su suscripción a Microsoft 365 Empresa Premium.
+Compruebe que los dispositivos unidos Windows 10 Azure AD se actualicen a Windows 10 Business como parte de su Microsoft 365 Empresa Premium suscripción.
   
 1. Vaya a **Configuración** \> **Sistema** \> **Acerca de**.
     
@@ -124,10 +124,10 @@ Compruebe que los dispositivos De Azure AD unidos a Windows 10 se actualicen a W
     
     ![Verify that Windows edition is Windows 10 Business.](../media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-Para configurar los dispositivos móviles, vea Configurar dispositivos móviles para usuarios de [Microsoft 365 Empresa Premium](set-up-mobile-devices.md), Para establecer directivas de protección de dispositivos o protección de aplicaciones, vea Manage Microsoft [365 for business](manage.md).
+Para configurar los dispositivos móviles, consulta Configurar dispositivos móviles para usuarios de [Microsoft 365 Empresa Premium](set-up-mobile-devices.md), Para establecer directivas de protección de dispositivos o protección de aplicaciones, consulta Administrar [Microsoft 365 para empresas.](manage.md)
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Para obtener más información sobre cómo configurar y usar Microsoft 365 Empresa Premium
 
-[Vídeos de aprendizaje de Microsoft 365 para empresas](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vídeos de aprendizaje de Microsoft 365 para empresas](../business-video/index.yml)

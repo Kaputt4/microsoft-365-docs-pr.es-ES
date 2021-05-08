@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El panel de clasificación de datos le permite ver la cantidad de información confidencial que se ha encontrado y clasificado en la organización.
-ms.openlocfilehash: 2867e545221061f5f99bf7ff669f9655b3777ba8
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+ms.openlocfilehash: d9c53d1f4679fbea9f5a7cded7f4bb6b6eb15b98
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899390"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244388"
 ---
 # <a name="learn-about-data-classification"></a>Obtenga información sobre la clasificación de datos.
 
@@ -112,7 +112,7 @@ La tarjeta de etiquetas principales de retención aplicadas muestra el número d
 ![captura de pantalla de marcador de posición de etiquetas principales de retención aplicadas](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
-> Si esta tarjeta muestra el mensaje "No se ha detectado ninguna etiqueta de retención", significa que no se ha creado ni publicado ninguna etiqueta de retención o que no hay ningún contenido con etiquetas de retención aplicadas. Para comenzar a usar las etiquetas de retención, vea:
+> Si esta tarjeta muestra el mensaje "No se detectó ninguna etiqueta de retención", significa que no se ha creado ni publicado ninguna etiqueta de retención o que no se han aplicado etiquetas de retención a ningún contenido. Para empezar a usar las etiquetas de retención, vea:
 >- [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md)
 
 ## <a name="top-activities-detected"></a>Actividades principales detectadas
@@ -140,3 +140,5 @@ El informe de la clasificación de datos tiene la finalidad de ofrecer informaci
 - [Obtener más información acerca de los tipos de información confidencial](sensitive-information-type-learn-about.md)
 - [Definiciones de entidad de tipos de información confidencial](sensitive-information-type-entity-definitions.md)
 - [Obtenga información sobre los clasificadores entrenables (versión preliminar)](classifier-learn-about.md)
+
+Para obtener información sobre cómo usar la clasificación de datos para cumplir con las normativas de privacidad de datos, vea [Implementar Information Protection para las normativas de privacidad de datos con Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).

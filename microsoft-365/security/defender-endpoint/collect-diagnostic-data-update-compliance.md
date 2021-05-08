@@ -1,13 +1,13 @@
 ---
 title: Recopilar datos de diagnóstico para actualizar el cumplimiento y Windows Defender Antivirus de Microsoft Defender
-description: Usar una herramienta para recopilar datos para solucionar problemas de cumplimiento de actualizaciones al usar el complemento evaluación antivirus de Microsoft Defender
+description: Usar una herramienta para recopilar datos para solucionar problemas de cumplimiento de actualizaciones al usar el complemento Antivirus de Microsoft Defender evaluación
 keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f2b3060d7f0d9daf0f923c674f2fe45ba976fdfc
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 2aaf3d1c650713a7f6cfb7b9abb9f2232013d6db
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764740"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274801"
 ---
 # <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-av-assessment"></a>Recopilar datos de diagnóstico de cumplimiento de actualizaciones para la evaluación antivirus de Microsoft Defender
 
@@ -33,9 +34,9 @@ ms.locfileid: "51764740"
 
 En este artículo se describe cómo recopilar datos de diagnóstico que pueden usar los equipos de soporte técnico e ingeniería de Microsoft para ayudar a solucionar problemas que se pueden encontrar al usar la sección Evaluación de antivirus de Microsoft Defender en el complemento Actualizar cumplimiento.
 
-Antes de intentar este proceso, asegúrese de que ha leído Solucionar problemas de informes de Antivirus de [Microsoft Defender,](troubleshoot-reporting.md)cumple todos los requisitos previos y ha realizado otros pasos de solución de problemas sugeridos.
+Antes de intentar este proceso, asegúrese de que ha leído Solucionar problemas [Antivirus de Microsoft Defender informes,](troubleshoot-reporting.md)cumple todos los requisitos previos y ha realizado cualquier otro paso de solución de problemas sugerido.
 
-En al menos dos dispositivos que no se informen o se muestren en Update Compliance, obtenga el archivo de diagnóstico .cab siguiendo los pasos siguientes:
+En al menos dos dispositivos que no se informen o se muestren en Update Compliance, obtenga el .cab de diagnóstico siguiendo los pasos siguientes:
 
 1. Abra una versión de nivel de administrador del símbolo del sistema de la siguiente manera:
         
@@ -53,9 +54,9 @@ En al menos dos dispositivos que no se informen o se muestren en Update Complian
     mpcmdrun -getfiles
     ```
     
-4. Se generará un archivo .cab que contenga varios registros de diagnóstico. La ubicación del archivo se especificará en la salida del símbolo del sistema. De forma predeterminada, la ubicación es `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` .
+4. Se generará .cab archivo de diagnóstico que contenga varios registros de diagnóstico. La ubicación del archivo se especificará en la salida del símbolo del sistema. De forma predeterminada, la ubicación es `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` .
 
-5. Copie estos archivos .cab en una ubicación a la que pueda tener acceso el soporte técnico de Microsoft. Un ejemplo podría ser una carpeta de OneDrive protegida con contraseña que puede compartir con nosotros.
+5. Copie estos .cab en una ubicación a la que pueda tener acceso el soporte técnico de Microsoft. Un ejemplo podría ser una carpeta OneDrive contraseña que puede compartir con nosotros.
 
 6. Envíe un correo electrónico con la <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">plantilla de</a>correo electrónico de compatibilidad de actualización y rellene la plantilla con la siguiente información:
   
@@ -71,4 +72,4 @@ En al menos dos dispositivos que no se informen o se muestren en Update Complian
 
 ## <a name="see-also"></a>Vea también
 
-- [Solucionar Windows Defender informes de Antivirus de Microsoft Defender](troubleshoot-reporting.md)
+- [Solucionar problemas Windows Defender Antivirus de Microsoft Defender informes](troubleshoot-reporting.md)

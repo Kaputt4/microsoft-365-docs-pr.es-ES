@@ -9,8 +9,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 ms.date: 02/02/2021
 localization_priority: Normal
 manager: dansimp
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 5ea869d4016cc794b3046a664c1519f6b3250c67
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d4b0751938b66cc22dd59e2e7035077c5ef59ff9
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933978"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274825"
 ---
 # <a name="overview-of-automated-investigations"></a>Información general sobre las investigaciones automatizadas
 
@@ -90,13 +90,13 @@ Actualmente, AIR solo admite las siguientes versiones del sistema operativo:
 - Windows 10, versión 1803 (compilación del sistema operativo 17134.704 con [KB4493464)](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)o posterior
 - Windows 10, versión [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) o posterior
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Más información sobre los niveles de automatización](automation-levels.md)
 - [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
 - [Configurar las capacidades automatizadas de investigación y corrección en Microsoft Defender para endpoint](configure-automated-investigations-remediation.md)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Protección de LA PUA](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Investigación y respuesta automatizadas en Microsoft Defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)

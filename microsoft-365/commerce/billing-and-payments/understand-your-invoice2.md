@@ -25,14 +25,17 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Aprenda a interpretar la información de los cargos, la facturación y los pagos en su factura o recibo de Microsoft 365 para empresas, y sepa cómo modificar el número de la orden de compra.
-ms.openlocfilehash: 56f1ba3e7cc328593873aaf06ddfe6dc82fc1a17
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: b89ca38bf5d7b1d82982668dcd98e9979f1657be
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615380"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245021"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Entender su factura o recibo de Microsoft 365 para empresas
+
+> [!IMPORTANT]
+> A partir del 26 de enero de 2021, las nuevas cuentas bancarias ya no son compatibles con clientes de Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si es un cliente existente en uno de esos países, puede seguir pagando la suscripción con una cuenta bancaria existente y puede agregarle nuevas suscripciones, pero solo siempre que la cuenta bancaria esté en buen estado.
 
 Sea mensual o anualmente (dependiendo de la opción que elija al comprar la suscripción), recibirá un correo electrónico en el que se le indicará que su nuevo extracto de facturación está disponible en el Centro de administración. [Obtenga más información sobre cómo encontrar y ver su factura](view-your-bill-or-invoice.md).
   
@@ -105,18 +108,18 @@ Si paga mediante factura, puede agregar o cambiar el número de orden de compra 
 
 ::: moniker range="o365-worldwide"
 
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
 ::: moniker-end
 
 1. En la pestaña **Productos**, seleccione la suscripción que desee cambiar.

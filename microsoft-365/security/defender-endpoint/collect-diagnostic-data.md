@@ -1,13 +1,13 @@
 ---
-title: Recopilar datos de diagnóstico del antivirus de Microsoft Defender
-description: Usar una herramienta para recopilar datos para solucionar problemas de Antivirus de Microsoft Defender
+title: Recopilar datos de diagnóstico de Antivirus de Microsoft Defender
+description: Usar una herramienta para recopilar datos para solucionar problemas Antivirus de Microsoft Defender
 keywords: troubleshoot, error, fix, update compliance, oms, monitor, report, Microsoft Defender av, group policy object, setting, diagnostic data
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 06/29/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d74a8921af677f6ed66580bd00830440d59cf1aa
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: ccf6da0e1bc91a29865868305b5333f7ef9c47cc
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764728"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274789"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Recopilar datos de diagnóstico antivirus de Microsoft Defender
 
@@ -36,7 +37,7 @@ En este artículo se describe cómo recopilar datos de diagnóstico que pueden u
 > [!NOTE]
 > Como parte del proceso de investigación o respuesta, puedes recopilar un paquete de investigación desde un dispositivo. Este es el modo: [Recopilar paquete de investigación de dispositivos](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
 
-En al menos dos dispositivos que están experimentando el mismo problema, obtenga el archivo de diagnóstico .cab siguiendo los pasos siguientes:
+En al menos dos dispositivos que están experimentando el mismo problema, obtenga el .cab de diagnóstico siguiendo los pasos siguientes:
 
 1. Abra una versión de nivel de administrador del símbolo del sistema de la siguiente manera:
 
@@ -57,12 +58,12 @@ En al menos dos dispositivos que están experimentando el mismo problema, obteng
     mpcmdrun.exe -GetFiles
     ```
   
-4. Se generará un archivo .cab que contenga varios registros de diagnóstico. La ubicación del archivo se especificará en la salida del símbolo del sistema. De forma predeterminada, la ubicación es `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
+4. Se generará .cab archivo de diagnóstico que contenga varios registros de diagnóstico. La ubicación del archivo se especificará en la salida del símbolo del sistema. De forma predeterminada, la ubicación es `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
 
 > [!NOTE]
 > Para redirigir el archivo cab a una ruta de acceso o recurso compartido UNC diferente, use el siguiente comando: `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  <br/>Para obtener más información, vea [Redirect diagnostic data to a UNC share](#redirect-diagnostic-data-to-a-unc-share).
 
-5. Copie estos archivos .cab en una ubicación a la que pueda tener acceso el soporte técnico de Microsoft. Un ejemplo podría ser una carpeta de OneDrive protegida con contraseña que puede compartir con nosotros.
+5. Copie estos .cab en una ubicación a la que pueda tener acceso el soporte técnico de Microsoft. Un ejemplo podría ser una carpeta OneDrive contraseña que puede compartir con nosotros.
 
 > [!NOTE]
 >Si tiene un problema con el cumplimiento <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a"></a>de la actualización, envíe un correo electrónico con la plantilla de correo electrónico de soporte técnico actualizar cumplimiento y rellene la plantilla con la siguiente información:
@@ -102,7 +103,7 @@ Cuando se usa el parámetro SupportLogLocation, se creará una estructura de car
 
 ## <a name="specify-location-where-diagnostic-data-is-created"></a>Especificar la ubicación donde se crean los datos de diagnóstico
 
-También puede especificar dónde se creará el archivo .cab de diagnóstico mediante un objeto de directiva de grupo (GPO). 
+También puede especificar dónde se creará el .cab de diagnóstico mediante un objeto de directiva de grupo (GPO). 
 
 1. Abra el Editor de directivas de grupo local y busque el GPO SupportLogLocation en: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation`
    
@@ -119,4 +120,4 @@ También puede especificar dónde se creará el archivo .cab de diagnóstico med
 
 ## <a name="see-also"></a>Vea también
 
-- [Solucionar problemas de informes de Antivirus de Microsoft Defender](troubleshoot-reporting.md)
+- [Solucionar problemas Antivirus de Microsoft Defender informes](troubleshoot-reporting.md)

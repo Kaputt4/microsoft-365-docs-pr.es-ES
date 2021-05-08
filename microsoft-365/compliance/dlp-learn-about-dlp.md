@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo proteger su información confidencial mediante Microsoft 365 y herramientas de prevención de pérdida de datos y haga un recorrido por el ciclo de vida de DLP.
-ms.openlocfilehash: 451622d15b1f422304dd498264ff2fe4a343bb6c
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 88cf913f62d28c89bce7054473eb577217de9489
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52127807"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244617"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Obtenga más información acerca de la prevención contra la pérdida de datos
 
@@ -90,7 +90,7 @@ Puede aplicar directivas DLP a datos en reposo, datos en uso y datos en movimien
 - Cuentas de OneDrive
 - Mensajes de canales y chats de Teams
 - Microsoft Cloud App Security
-- Dispositivos Windows 10
+- Dispositivos con Windows 10
 - Repositorios locales
 
 Cada uno tiene requisitos previos diferentes. Los elementos confidenciales de algunas ubicaciones, como Exchange en línea, se pueden traer bajo el paraguas DLP simplemente configurando una directiva que se aplique a ellos. Otros, como los repositorios de archivos locales, requieren una implementación del escáner de Azure Information Protection (AIP). Deberá preparar el entorno, redactar directivas de código y probarlas exhaustivamente antes de activar cualquier acción de bloqueo.
@@ -212,3 +212,5 @@ Para obtener más información sobre Microsoft 365 DLP, vea:
 - [Obtenga más información sobre el examinador de prevención de pérdida de datos locales de Microsoft 365 (versión preliminar)](dlp-on-premises-scanner-learn.md)
 - [Obtenga información sobre la extensión de cumplimiento de Microsoft (versión preliminar)](dlp-chrome-learn-about.md)
 - [Obtenga información sobre el panel de alertas de prevención de pérdida de datos](dlp-alerts-dashboard-learn.md)
+
+Para obtener información sobre cómo usar la prevención de pérdida de datos para cumplir con las normativas de privacidad de datos, vea [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).

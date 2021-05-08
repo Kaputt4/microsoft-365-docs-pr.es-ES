@@ -1,35 +1,36 @@
 ---
-title: Errores comunes que se deben evitar al definir exclusiones
-description: Evite errores comunes al definir exclusiones para los exámenes del Antivirus de Microsoft Defender.
+title: Errores comunes para evitarlos cuando se definen exclusiones
+description: Evite errores comunes al definir exclusiones para Antivirus de Microsoft Defender análisis.
 keywords: exclusiones, archivos, extensión, tipo de archivo, nombre de carpeta, nombre de archivo, exámenes
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: eb3ac89eb05b39ff3337aa8e9c5ead1c308fbefb
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: de739ca3c6a4ab305b575fa7e2f419d044d997a8
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764920"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274976"
 ---
-# <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Errores comunes que se deben evitar al definir exclusiones
+# <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Errores comunes para evitarlos cuando se definen exclusiones
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-Puedes definir una lista de exclusión para los elementos que no quieres que antivirus de Microsoft Defender analice. Estos elementos excluidos pueden contener amenazas que hacen que el dispositivo sea vulnerable. 
+Puede definir una lista de exclusión para los elementos que no desea que Antivirus de Microsoft Defender examinar. Estos elementos excluidos pueden contener amenazas que hacen que el dispositivo sea vulnerable. 
 
 En este artículo se describe un error común que debe evitar al definir exclusiones. 
 
-Antes de definir las listas de exclusión, vea [Recomendaciones para definir exclusiones.](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)
+Antes de definir las listas de exclusión, vea [Recomendaciones para definir exclusiones](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
 
 ## <a name="excluding-certain-trusted-items"></a>Excluir determinados elementos de confianza
 
@@ -54,13 +55,13 @@ No use una sola lista de exclusión para definir exclusiones para varias cargas 
 
 ## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>Usar variables de entorno incorrectas como caracteres comodín en las listas de exclusión de extensión o ruta de acceso de carpeta y nombre de archivo
 
-El servicio antivirus de Microsoft Defender se ejecuta en el contexto del sistema mediante la cuenta LocalSystem, lo que significa que obtiene información de la variable de entorno del sistema y no de la variable de entorno del usuario. El uso de variables de entorno como comodín en listas de exclusión se limita a las variables del sistema y a las aplicables a los procesos que se ejecutan como una cuenta NT AUTHORITY\SYSTEM. Por lo tanto, no use variables de entorno de usuario como caracteres comodín al agregar exclusiones de procesos y carpetas de Antivirus de Microsoft Defender. Consulte la tabla de [variables de entorno del sistema](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) para obtener una lista completa de variables de entorno del sistema.
+Antivirus de Microsoft Defender El servicio se ejecuta en el contexto del sistema mediante la cuenta LocalSystem, lo que significa que obtiene información de la variable de entorno del sistema y no de la variable de entorno del usuario. El uso de variables de entorno como comodín en listas de exclusión se limita a las variables del sistema y a las aplicables a los procesos que se ejecutan como una cuenta NT AUTHORITY\SYSTEM. Por lo tanto, no use variables de entorno de usuario como caracteres comodín al agregar Antivirus de Microsoft Defender y exclusiones de procesos. Consulte la tabla de [variables de entorno del sistema](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) para obtener una lista completa de variables de entorno del sistema.
 
 Vea [Usar caracteres comodín en las listas](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) de exclusión de extensión o nombre de archivo para obtener información sobre cómo usar caracteres comodín en listas de exclusión.
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Configurar y validar exclusiones en exámenes de Antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
+- [Configurar y validar exclusiones en Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones en función de la extensión de archivo y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Configurar exclusiones de Antivirus de Microsoft Defender en Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Configurar Antivirus de Microsoft Defender exclusiones en Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)

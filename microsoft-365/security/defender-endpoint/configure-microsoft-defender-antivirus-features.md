@@ -1,13 +1,13 @@
 ---
-title: Configurar características de Antivirus de Microsoft Defender
-description: Puede configurar las características de Antivirus de Microsoft Defender con Intune, Microsoft Endpoint Configuration Manager, la directiva de grupo y PowerShell.
+title: Configurar las funciones del Antivirus de Microsoft Defender
+description: Puede configurar las Antivirus de Microsoft Defender con Intune, Microsoft Endpoint Configuration Manager, directiva de grupo y PowerShell.
 keywords: Antivirus de Microsoft Defender, antimalware, seguridad, defender, configurar, configuración, Administrador de configuración, Microsoft Endpoint Configuration Manager, SCCM, Intune, MDM, administración de dispositivos móviles, GP, directiva de grupo, PowerShell
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,14 +15,15 @@ ms.date: 11/18/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 8503bb5bdd6337ec60390ef1d8e59f6f506fbce2
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 4408d5e788449c0d094008261f5e7db9bfe38758
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765172"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275113"
 ---
-# <a name="configure-microsoft-defender-antivirus-features"></a>Configurar características de Antivirus de Microsoft Defender
+# <a name="configure-microsoft-defender-antivirus-features"></a>Configurar las funciones del Antivirus de Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +32,7 @@ ms.locfileid: "51765172"
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 
-Puede configurar Antivirus de Microsoft Defender con varias herramientas, entre las que se incluyen:
+Puede configurar Antivirus de Microsoft Defender con una serie de herramientas, entre las que se incluyen:
 
 - Microsoft Intune
 - Microsoft Endpoint Configuration Manager
@@ -49,8 +50,8 @@ En los siguientes artículos se describe cómo realizar tareas clave al configur
 
 |Artículo  |Descripción  |
 |---------|---------|
-|[Usar la protección antivirus de Microsoft Defender proporcionada por la nube](cloud-protection-microsoft-defender-antivirus.md)     | Use la protección entregada en la nube para la detección avanzada, rápida y sólida de antivirus.        |
-|[Configurar la protección de comportamiento, heurística y en tiempo real](configure-protection-features-microsoft-defender-antivirus.md)     |Habilite la protección antivirus basada en comportamiento, heurística y en tiempo real.         |
+|[Usar la protección de protección Antivirus de Microsoft Defender microsoft](cloud-protection-microsoft-defender-antivirus.md)     | Use la protección entregada en la nube para la detección avanzada, rápida y sólida de antivirus.        |
+|[Configurar la protección en tiempo real, heurística y de comportamiento](configure-protection-features-microsoft-defender-antivirus.md)     |Habilite la protección antivirus basada en comportamiento, heurística y en tiempo real.         |
 |[Configurar la interacción del usuario final con Antivirus de Microsoft Defender](configure-end-user-interaction-microsoft-defender-antivirus.md) | Configure cómo interactúan los usuarios finales de su organización con Antivirus de Microsoft Defender, qué notificaciones ven y si pueden invalidar la configuración. |
 
 > [!TIP]

@@ -9,18 +9,19 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 02/10/2021
-ms.openlocfilehash: 507edb980f671b2f39403cc41e540150f5e82891
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: f82da8eb0dcba39404c2b7f191e166aa78357cee
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764346"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274765"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Configurar exclusiones de Antivirus de Microsoft Defender en Windows Server
 
@@ -325,7 +326,7 @@ Excluya los siguientes archivos de esta carpeta y todas sus subcarpetas:
 - `*.ins`
 - `Oscfilter.ini`
 
-### <a name="windows-server-update-services-exclusions"></a>Exclusiones de Windows Server Update Services
+### <a name="windows-server-update-services-exclusions"></a>Windows Server Update Services exclusiones
 
 En esta sección se enumeran las exclusiones de carpetas que se entregan automáticamente al instalar el rol Windows Server Update Services (WSUS). La carpeta WSUS se especifica en la clave del Registro `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
 
@@ -336,9 +337,9 @@ En esta sección se enumeran las exclusiones de carpetas que se entregan automá
 
 ## <a name="see-also"></a>Vea también
 
-- [Configurar y validar exclusiones para exámenes de Antivirus de Microsoft Defender](configure-exclusions-microsoft-defender-antivirus.md)
+- [Configurar y validar exclusiones para Antivirus de Microsoft Defender exámenes](configure-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones según el nombre de archivo, la extensión y la ubicación de la carpeta](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configurar y validar exclusiones para archivos abiertos por procesos](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Errores comunes que se deben evitar al definir exclusiones](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [Personalizar, iniciar y revisar los resultados de los exámenes y la corrección del Antivirus de Microsoft Defender](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Errores comunes para evitarlos cuando se definen exclusiones](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+- [Personalizar, iniciar y revisar los resultados de Antivirus de Microsoft Defender análisis y corrección](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

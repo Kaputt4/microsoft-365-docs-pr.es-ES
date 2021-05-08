@@ -3,8 +3,8 @@ title: Ver los resultados de una investigación automatizada en Microsoft 365
 keywords: AIR, autoIR, Microsoft Defender para endpoint, automatizado, investigación, corrección, acciones
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -19,12 +19,12 @@ description: Durante y después de una investigación automatizada en Microsoft 
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6ec188f37faeed283d49f68b0cb381fcb1af86e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: d2923a6375d54c663f20c440b1fa395bd529429d
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114209"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275053"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Detalles y resultados de una investigación automatizada en Microsoft 365
 
@@ -95,6 +95,6 @@ Ciertos tipos de alertas desencadenan una investigación automatizada en Microso
 
 - La aprobación o el rechazo de todas las acciones permite que la investigación se cierre completamente (el estado se corrige), mientras que algunas acciones dejan resultados incompletos en el estado de la investigación cambiando a un estado parcialmente corregido.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Revisar y aprobar acciones pendientes](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)

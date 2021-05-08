@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e8084fab434246a5c9f12af40872ade66e6fa163
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1f8428c2995eec2dece290049eda67a3683b4c1e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934266"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244985"
 ---
 # <a name="troubleshoot-license-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Solucionar problemas de licencia para Microsoft Defender para Endpoint en macOS
 
@@ -46,15 +46,14 @@ Mientras estás pasando por Microsoft Defender para endpoint en [macOS](microsof
 
 No se encontró ninguna licencia
 
-Parece que su organización no tiene una licencia para la suscripción a Microsoft 365 Enterprise.
+Parece que su organización no tiene una licencia para Microsoft 365 Enterprise suscripción.
 
 Póngase en contacto con el administrador para obtener ayuda.
 
 **Causa:** 
 
-Implementó o instaló el paquete de Microsoft Defender para endpoint en macOS ("Descargar paquete de instalación") pero es posible que haya ejecutado el script de configuración ("Descargar paquete de incorporación").
+Implementó o instaló el paquete de Microsoft Defender para endpoint para macOS ("Descargar paquete de instalación"), pero es posible que haya ejecutado el script de configuración ("Descargar paquete de incorporación") o que no haya asignado una licencia al usuario.
 
 **Solución:**
 
 Siga las instrucciones MicrosoftDefenderATPOnboardingMacOs.py documentadas aquí: [Configuración de cliente](mac-install-manually.md#client-configuration)
-

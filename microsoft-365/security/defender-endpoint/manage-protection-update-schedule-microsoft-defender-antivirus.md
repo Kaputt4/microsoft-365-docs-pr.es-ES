@@ -1,5 +1,5 @@
 ---
-title: Programar actualizaciones de protección antivirus de Microsoft Defender
+title: Programar Antivirus de Microsoft Defender de protección
 description: Programar el día, la hora y el intervalo para el momento en que se deben descargar las actualizaciones de protección
 keywords: actualizaciones, líneas base de seguridad, actualizaciones de programación
 search.product: eADQiWindows 10XVcnh
@@ -8,21 +8,22 @@ search.appverid: met150
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 327974c4db4166301820cf148811aceda1700513
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 26b88b8677c27a5d6615776a371326e37034afd4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765352"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275041"
 ---
-# <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>Administrar la programación de cuándo deben descargarse y aplicarse las actualizaciones de protección
+# <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>Administrar la programación para cuándo se han de descargar y aplicar las actualizaciones de protección
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +32,7 @@ ms.locfileid: "51765352"
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 
-Antivirus de Microsoft Defender te permite determinar cuándo debe buscar y descargar actualizaciones.
+Antivirus de Microsoft Defender permite determinar cuándo debe buscar y descargar actualizaciones.
 
 Puede programar actualizaciones para los puntos de conexión mediante: 
 
@@ -43,22 +44,22 @@ También puede aleatorizar las horas en las que cada extremo comprueba y descarg
 
 ## <a name="use-configuration-manager-to-schedule-protection-updates"></a>Usar Configuration Manager para programar actualizaciones de protección
 
-1.  En la consola de Microsoft Endpoint Manager, abra la  directiva de antimalware que desea cambiar (haga clic en Activos y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a **Overview**  >  **Endpoint Protection**  >  **Antimalware Policies**)
+1.  En la consola Microsoft Endpoint Manager, abra la directiva de antimalware  que desea cambiar (haga clic en Activos y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Información general Endpoint Protection Directivas  >    >  **antimalware**)
 
 2.  Vaya a la **sección Actualizaciones de inteligencia de** seguridad.
 
 3. Para comprobar y descargar actualizaciones en un momento determinado:
-      1. Establezca **Comprobar las actualizaciones de inteligencia de seguridad de Endpoint Protection en un intervalo específico...** en **0**.
-      2. Establezca Comprobar las actualizaciones de inteligencia de seguridad de Endpoint Protection diariamente **en...** en el momento en que deben comprobarse las actualizaciones.
+      1. Establezca **Comprobar si Endpoint Protection de inteligencia de seguridad en un intervalo específico...** en **0**.
+      2. Establezca **Comprobar si Endpoint Protection de inteligencia de seguridad diariamente en...** en el momento en que deben comprobarse las actualizaciones.
       3
-4. Para comprobar y descargar actualizaciones en un intervalo continuo, establezca Comprobar las actualizaciones de inteligencia de seguridad de Endpoint Protection en un intervalo **específico...** en el número de horas que deben producirse entre actualizaciones.
+4. Para comprobar y descargar actualizaciones en un intervalo continuo, establezca Comprobar si Endpoint Protection actualizaciones de inteligencia de seguridad en un intervalo **específico...** en el número de horas que deben producirse entre actualizaciones.
 
 5.  [Implemente la directiva actualizada como de costumbre.](/sccm/protect/deploy-use/endpoint-antimalware-policies#deploy-an-antimalware-policy-to-client-computers)
 
 ## <a name="use-group-policy-to-schedule-protection-updates"></a>Usar la directiva de grupo para programar actualizaciones de protección
 
 > [!IMPORTANT]
-> De forma predeterminada, Antivirus de Microsoft Defender buscará una actualización 15 minutos antes de la hora de los exámenes programados. Si se habilita esta configuración, se invalidará el valor predeterminado.
+> De forma predeterminada, Antivirus de Microsoft Defender comprobará si hay una actualización 15 minutos antes de la hora de los exámenes programados. Si se habilita esta configuración, se invalidará el valor predeterminado.
 
 1.  En el equipo de administración de directivas de grupo, abra la Consola de administración de directivas de [grupo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y haga clic en **Editar**.
 
@@ -66,7 +67,7 @@ También puede aleatorizar las horas en las que cada extremo comprueba y descarg
 
 4.  Haga clic **en Directivas** **y, a continuación, en Plantillas administrativas.**
 
-5.  Expande el árbol a **Componentes de Windows** Actualizaciones de inteligencia de firma de Antivirus de  >  **Microsoft Defender**  >   y configura las siguientes opciones:
+5.  Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** de inteligencia  >    >  **de firma** y configure las siguientes opciones:
 
     1. Haga doble clic en **la opción Especificar el día de la** semana para comprobar si hay actualizaciones de inteligencia de seguridad y establezca la opción en **Habilitado**. Escriba el día de la semana para buscar actualizaciones. Haga clic en **Aceptar**.
     2. Haga doble clic en **la opción Especificar el intervalo para comprobar si** hay actualizaciones de inteligencia de seguridad y establezca la opción en **Habilitado**. Escriba el número de horas entre actualizaciones. Haga clic en **Aceptar**.
@@ -83,9 +84,9 @@ Set-MpPreference -SignatureScheduleTime
 Set-MpPreference -SignatureUpdateInterval
 ```
 
-Consulte [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and Defender [cmdlets](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Microsoft Defender Antivirus.
+Consulte [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender.
 
-## <a name="use-windows-management-instruction-wmi-to-schedule-protection-updates"></a>Usar Windows Management Instruction (WMI) para programar actualizaciones de protección
+## <a name="use-windows-management-instruction-wmi-to-schedule-protection-updates"></a>Usar Windows de administración de archivos (WMI) para programar actualizaciones de protección
 
 Utilice el [ **método Set** de la **clase MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
 
@@ -96,14 +97,14 @@ SignatureUpdateInterval
 ```
 
 Vea lo siguiente para obtener más información y parámetros permitidos:
-- [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Implementar antivirus de Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
-- [Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar líneas base](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Implementar Antivirus de Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Administrar actualizaciones de puntos de conexión que están des actualizadas](manage-outdated-endpoints-microsoft-defender-antivirus.md)
-- [Administrar actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)
-- [Administrar actualizaciones para dispositivos móviles y máquinas virtuales (VM)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+- [Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)
+- [Administrar las actualizaciones de dispositivos móviles y máquinas virtuales](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

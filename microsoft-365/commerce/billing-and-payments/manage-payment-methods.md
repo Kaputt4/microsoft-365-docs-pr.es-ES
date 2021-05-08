@@ -23,14 +23,17 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo administrar los métodos de pago en el Centro de administración de Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: 4b35b7b8e874915e5f9c792686ff0e368292c802
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: b69096bb05ada6ce7a1ee619aa78bc04639e7004
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107044"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244725"
 ---
 # <a name="manage-payment-methods"></a>Administrar métodos de pago
+
+> [!IMPORTANT]
+> A partir del 26 de enero de 2021, dejarán de admitirse cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si usted es un cliente existente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones siempre que la cuenta bancaria esté en buenos términos.
 
 Cuando compra productos o servicios empresariales de Microsoft, puede usar un método de pago existente o agregar uno nuevo. Puede usar una tarjeta de crédito, débito o una cuenta bancaria para pagar sus compras.
 

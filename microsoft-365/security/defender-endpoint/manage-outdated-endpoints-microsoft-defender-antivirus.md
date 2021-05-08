@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,14 +15,15 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 81c7fb2bb7cd20fea3f343097811078ed744c3eb
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 4199f55488ef0dc5989af88e8be83a3d51190d1f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765376"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275065"
 ---
-# <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Administrar actualizaciones y exámenes de Antivirus de Microsoft Defender en busca de puntos de conexión que están des actualizados
+# <a name="manage-microsoft-defender-antivirus-updates-and-scans-for-endpoints-that-are-out-of-date"></a>Administrar las actualizaciones y análisis del Antivirus de Windows Defender para puntos de conexión que están obsoletos
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +32,7 @@ ms.locfileid: "51765376"
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 
-Antivirus de Microsoft Defender te permite definir cuánto tiempo un punto de conexión puede evitar una actualización o cuántos exámenes puede perder antes de que sea necesario actualizarse y examinarse por sí mismo. Esto es especialmente útil en entornos donde los dispositivos no suelen estar conectados a una red corporativa o externa, o dispositivos que no se usan a diario.
+Antivirus de Microsoft Defender permite definir cuánto tiempo puede evitar una actualización un extremo o cuántos exámenes puede perder antes de que sea necesario actualizarse y examinarse por sí mismo. Esto es especialmente útil en entornos donde los dispositivos no suelen estar conectados a una red corporativa o externa, o dispositivos que no se usan a diario.
 
 Por ejemplo, un empleado que usa un equipo determinado está en pausa durante tres días y no inicia sesión en su equipo durante ese tiempo.
 
@@ -39,11 +40,11 @@ Cuando el usuario vuelva al trabajo e inicie sesión en su equipo, Antivirus de 
 
 ## <a name="set-up-catch-up-protection-updates-for-endpoints-that-havent-updated-for-a-while"></a>Configurar actualizaciones de protección de ponerse al día para puntos de conexión que no se han actualizado durante un tiempo
 
-Si Antivirus de Microsoft Defender no descargó actualizaciones de protección durante un período especificado, puede configurarlo para comprobar y descargar automáticamente la actualización más reciente en el siguiente inicio de sesión. Esto resulta útil si ha deshabilitado [globalmente las descargas](manage-event-based-updates-microsoft-defender-antivirus.md)automáticas de actualizaciones al iniciar .
+Si Antivirus de Microsoft Defender las actualizaciones de protección durante un período especificado, puede configurarlo para comprobar y descargar automáticamente la actualización más reciente en el siguiente inicio de sesión. Esto resulta útil si ha deshabilitado [globalmente las descargas](manage-event-based-updates-microsoft-defender-antivirus.md)automáticas de actualizaciones al iniciar .
 
 ### <a name="use-configuration-manager-to-configure-catch-up-protection-updates"></a>Usar Configuration Manager para configurar actualizaciones de protección de ponerse al día
 
-1.  En la consola de Microsoft Endpoint Manager, abra la  directiva de antimalware que desea cambiar (haga clic en Activos y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a **Overview**  >  **Endpoint Protection**  >  **Antimalware Policies**)
+1.  En la consola Microsoft Endpoint Manager, abra la directiva de antimalware  que desea cambiar (haga clic en Activos y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Información general Endpoint Protection Directivas  >    >  **antimalware**)
 
 2.  Vaya a la **sección Actualizaciones de inteligencia de** seguridad y configure las siguientes opciones:
 
@@ -62,7 +63,7 @@ Si Antivirus de Microsoft Defender no descargó actualizaciones de protección d
 
 3. Haga clic **en Directivas** **y, a continuación, en Plantillas administrativas.**
 
-4. Expande el árbol a **componentes de Windows > Actualizaciones de firmas > antivirus de Microsoft Defender.**
+4. Expanda el árbol para Windows **componentes > Antivirus de Microsoft Defender > actualizaciones de firma**.
 
 5. Haga doble clic en **la opción Definir el número** de días después de los cuales es necesaria una actualización de inteligencia de seguridad de ponerse al día y establezca la opción en **Habilitado**. Escribe el número de días después de los cuales quieres que Microsoft Defender AV compruebe y descargue la actualización de protección más reciente.
 
@@ -76,9 +77,9 @@ Use los cmdlets siguientes:
 Set-MpPreference -SignatureUpdateCatchupInterval
 ```
 
-Consulte [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and Defender [cmdlets](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Microsoft Defender Antivirus.
+Consulte [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender.
 
-### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-protection-updates"></a>Usar Instrucciones de administración de Windows (WMI) para configurar actualizaciones de protección de ponerse al día
+### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-protection-updates"></a>Usar Windows de administración de datos (WMI) para configurar actualizaciones de protección de ponerse al día
 
 Utilice el [ **método Set** de la **clase MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
 
@@ -87,12 +88,12 @@ SignatureUpdateCatchupInterval
 ```
 
 Vea lo siguiente para obtener más información y parámetros permitidos:
-- [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
 ## <a name="set-the-number-of-days-before-protection-is-reported-as-out-of-date"></a>Establecer el número de días antes de que se notifica la protección como desaprotección
 
-También puede especificar el número de días después de los cuales la protección de Antivirus de Microsoft Defender se considera antigua o desaprotección. Después del número de días especificado, el cliente se presentará como desa fecha y mostrará un error al usuario del equipo. También puede provocar que Antivirus de Microsoft Defender intente descargar una actualización de otros orígenes (en función del orden de origen de reserva [definido),](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)como cuando se usa MMPC como origen secundario después de establecer WSUS o Microsoft Update como el primer origen.
+También puede especificar el número de días después de los cuales Antivirus de Microsoft Defender protección se considera antigua o desaprotebada. Después del número de días especificado, el cliente se presentará como desa fecha y mostrará un error al usuario del equipo. También puede hacer que Antivirus de Microsoft Defender intente descargar una actualización de otros orígenes (en función del orden de origen de reserva [definido),](manage-protection-updates-microsoft-defender-antivirus.md#fallback-order)como cuando se usa MMPC como origen secundario después de establecer WSUS o Microsoft Update como el primer origen.
 
 ### <a name="use-group-policy-to-specify-the-number-of-days-before-protection-is-considered-out-of-date"></a>Usar la directiva de grupo para especificar el número de días antes de que la protección se considere des actualizada
 
@@ -102,7 +103,7 @@ También puede especificar el número de días después de los cuales la protecc
 
 4.  Haga clic **en Directivas** **y, a continuación, en Plantillas administrativas.**
 
-5.  Expande el árbol a **componentes de Windows > Microsoft Defender Antivirus > de firmas y** configura las siguientes opciones:
+5.  Expanda el árbol para Windows **componentes > Antivirus de Microsoft Defender > de firma y** configure las siguientes opciones:
 
     1.  Haga doble clic en Definir el número de días antes de que las definiciones de spyware se consideren **des actualizadas** y establezca la opción en **Habilitado**. Escriba el número de días después de los cuales desea que Microsoft Defender AV considere que la inteligencia de seguridad de spyware está des actualizada.
 
@@ -115,7 +116,7 @@ También puede especificar el número de días después de los cuales la protecc
 
 ## <a name="set-up-catch-up-scans-for-endpoints-that-have-not-been-scanned-for-a-while"></a>Configurar exámenes de ponerse al día para los puntos de conexión que no se han analizado durante un tiempo
 
-Puedes establecer el número de exámenes programados consecutivos que se pueden perder antes de que Antivirus de Microsoft Defender forzará un examen.
+Puede establecer el número de exámenes programados consecutivos que se pueden perder antes Antivirus de Microsoft Defender forzar un examen.
 
 El proceso para habilitar esta característica es:
 
@@ -135,7 +136,7 @@ Esta característica se puede habilitar para exámenes completos y rápidos.
 
 4.  Haga clic **en Directivas** **y, a continuación, en Plantillas administrativas.**
 
-5.  Expande el árbol a **componentes de Windows > Antivirus > Antivirus** de Microsoft Defender y configura las siguientes opciones:
+5.  Expanda el árbol para **Windows componentes > Antivirus de Microsoft Defender > Scan** y configure las siguientes opciones:
 
     1.  Si ha configurado los exámenes rápidos programados, haga doble clic en la configuración Activar detección rápida y establezca la opción en **Habilitado**.  
     2. Si ha configurado exámenes completos programados,  haga doble clic en la configuración Activar examen completo de puesta al día y establezca la opción en **Habilitado**. Haga clic en **Aceptar**.
@@ -155,9 +156,9 @@ Set-MpPreference -DisableCatchupQuickScan
 
 ```
 
-Consulte [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and Defender [cmdlets](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Microsoft Defender Antivirus.
+Consulte [Use PowerShell cmdlets to manage Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender.
 
-### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-scans"></a>Usar instrucciones de administración de Windows (WMI) para configurar exámenes de ponerse al día
+### <a name="use-windows-management-instruction-wmi-to-configure-catch-up-scans"></a>Usar Windows de administración de datos (WMI) para configurar exámenes de ponerse al día
 
 Utilice el [ **método Set** de la **clase MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
 
@@ -167,12 +168,12 @@ DisableCatchupQuickScan
 ```
 
 Vea lo siguiente para obtener más información y parámetros permitidos:
-- [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+- [Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
 ### <a name="use-configuration-manager-to-configure-catch-up-scans"></a>Usar Configuration Manager para configurar exámenes de ponerse al día
 
-1.  En la consola de Microsoft Endpoint Manager, abra la  directiva de antimalware que desea cambiar (haga clic en Activos y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a **Overview**  >  **Endpoint Protection**  >  **Antimalware Policies**)
+1.  En la consola Microsoft Endpoint Manager, abra la directiva de antimalware  que desea cambiar (haga clic en Activos y cumplimiento en el panel de navegación de la izquierda y, a continuación, expanda el árbol a Información general Endpoint Protection Directivas  >    >  **antimalware**)
 
 2.  Vaya a la **sección Exámenes programados** y Forzar un examen del tipo de examen seleccionado si el equipo cliente **está sin conexión...** a **Sí**. 
 
@@ -182,9 +183,9 @@ Vea lo siguiente para obtener más información y parámetros permitidos:
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Implementar antivirus de Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
-- [Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar líneas base](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Implementar Antivirus de Microsoft Defender](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Administrar cuándo se deben descargar y aplicar las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md)
-- [Administrar actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)
-- [Administrar actualizaciones para dispositivos móviles y máquinas virtuales (VM)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
+- [Administrar las actualizaciones forzadas basadas en eventos](manage-event-based-updates-microsoft-defender-antivirus.md)
+- [Administrar las actualizaciones de dispositivos móviles y máquinas virtuales](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

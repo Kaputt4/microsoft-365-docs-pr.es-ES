@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34274e260da2e8acc8088fcff6d324b6b31fc2ef
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 0e09a313b512135785050abd5aa61bb9576ce1d8
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935946"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274945"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender para punto de conexión en Linux
 
@@ -45,10 +45,17 @@ En este tema se describe cómo instalar, configurar, actualizar y usar Microsoft
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-- Acceso al portal del Centro de seguridad de Microsoft Defender
+- Acceso al portal de Centro de seguridad de Microsoft Defender web
 - Distribución de Linux con [el administrador del](https://systemd.io/) sistema con sistema
 - Experiencia de nivel principiante en scripts de Linux y BASH
 - Privilegios administrativos en el dispositivo (en caso de implementación manual)
+
+> [!NOTE]
+>  El agente de Microsoft Defender para Endpoint en Linux es independiente [del agente OMS](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender para endpoint se basa en su propia canalización de telemetría independiente.
+> 
+> Microsoft Defender para Endpoint en Linux aún no está integrado en Azure Security Center.
+
+
 
 ### <a name="installation-instructions"></a>Instrucciones de instalación
 
@@ -66,6 +73,8 @@ En general, debe seguir los siguientes pasos:
 
 Si experimenta algún error de instalación, consulte [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
+
+
 ### <a name="system-requirements"></a>Requisitos del sistema
 
 - Versiones y distribuciones de servidor Linux compatibles:
@@ -77,14 +86,23 @@ Si experimenta algún error de instalación, consulte [Troubleshooting installat
   - SUSE Linux Enterprise Server 12 o posterior
   - Oracle Linux 7.2 o posterior
 
+    > [!NOTE]
+    > Las distribuciones y las versiones que no se enumeran explícitamente no son compatibles (incluso si se derivan de las distribuciones admitidas oficialmente).
+
+
 - Versión mínima del kernel 3.10.0-327
+
 - La `fanotify` opción kernel debe estar habilitada
+
   > [!CAUTION]
   > No se admite la ejecución de Defender para Endpoint en Linux en paralelo con otras soluciones de seguridad `fanotify` basadas en. Puede dar lugar a resultados impredecibles, incluida la suspensión del sistema operativo.
 
 - Espacio en disco: 1 GB
+
 - /opt/microsoft/mdatp/sbin/wdavdaemon requiere permiso ejecutable. Para obtener más información, vea "Asegúrese de que el demonio tiene permiso ejecutable" en Solucionar problemas de instalación de [Microsoft Defender para Endpoint en Linux](/microsoft-365/security/defender-endpoint/linux-support-install).
+
 - Memoria: 1 GB
+
     > [!NOTE]
     > Asegúrese de que tiene espacio libre en disco en /var.
 
@@ -117,7 +135,7 @@ Después de habilitar el servicio, es posible que deba configurar la red o el fi
 
 En la siguiente hoja de cálculo descargable se enumeran los servicios y sus direcciones URL asociadas a las que la red debe poder conectarse. Debe asegurarse de que no hay reglas de filtrado de red o firewall que denieguen el acceso a estas direcciones URL. Si lo hay, es posible que deba crear una regla *de* permitir específicamente para ellos.
 
-|**Hoja de cálculo de la lista de dominios**|**Descripción**|
+| Hoja de cálculo de la lista de dominios | Descripción |
 |:-----|:-----|
 |![Imagen digital de la hoja de cálculo de direcciones URL de Microsoft Defender para puntos de conexión](images/mdatp-urls.png)<br/>  | Hoja de cálculo de registros DNS específicos para ubicaciones de servicio, ubicaciones geográficas y sistema operativo. <br><br>[Descargue la hoja de cálculo aquí.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 

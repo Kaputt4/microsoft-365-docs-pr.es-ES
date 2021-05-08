@@ -7,8 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: f8dd48364f60da789ac95638018245cf46434822
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e51cc1d613e6f9e7ab96653692362ed7fe239e3e
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197642"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274849"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visite el Centro de acciones para ver acciones de corrección
 
@@ -53,7 +53,7 @@ En la tabla siguiente se compara el nuevo centro de acciones unificado con el ce
 El Centro de acción unificado reúne acciones de corrección en Defender para Endpoint y Defender para Office 365. Define un lenguaje común para todas las acciones de corrección y proporciona una experiencia de investigación unificada. 
 
 Puede usar el Centro de acciones unificado si tiene los permisos adecuados y una o varias de las siguientes suscripciones:
-- [Defender para punto de conexión](microsoft-defender-endpoint.md)
+- [Defender for Endpoint](microsoft-defender-endpoint.md)
 - [Defender para Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 - [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 
 
@@ -82,13 +82,13 @@ Puede personalizar, ordenar, filtrar y exportar datos en el Centro de acciones.
 - Elija las columnas que desea ver.
 - Especifique cuántos elementos se deben incluir en cada página de datos.
 - Use filtros para ver solo los elementos que desea ver.
-- Seleccione **Exportar para** exportar resultados a un archivo .csv. 
+- Seleccione **Exportar** para exportar resultados a un .csv archivo. 
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver y aprobar acciones de corrección](manage-auto-investigation.md)
 - [Consulta la guía interactiva: Investigar y corregir amenazas con Microsoft Defender para endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)
  
 ## <a name="see-also"></a>Vea también
 
-- [Dirección de falsos positivos/negativos en Microsoft Defender para endpoint](defender-endpoint-false-positives-negatives.md)
+- [Abordar falsos positivos/negativos en Microsoft Defender para punto de conexión](defender-endpoint-false-positives-negatives.md)

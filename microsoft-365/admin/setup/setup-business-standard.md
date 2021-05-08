@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Obtenga información acerca de cómo configurar su suscripción a Microsoft 365 Empresa Estándar.
-ms.openlocfilehash: 9efd14af2955e85b9b13c437ad869710f69a90f6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ce45b4869000892b5640730e765dbfc9c21386ed
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579091"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244460"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Configurar Microsoft Empresa Estándar
 
@@ -67,9 +67,9 @@ Puede agregar usuarios en el asistente, pero también puede [agregarlos más ade
 
 Todos los usuarios que agregue en el asistente obtendrán automáticamente una licencia de Microsoft 365 Empresa Estándar.
 
-1. Si su suscripción a Microsoft 365 Empresa Estándar tiene usuarios existentes (por ejemplo, si usó Azure AD Connect), verá una opción para asignarles licencias ahora. Proceda y agrégueles licencias también.
+1. Si su suscripción a Microsoft 365 Empresa Estándar tiene usuarios existentes (por ejemplo, si usó Azure AD Connect), verá la opción para asignarles licencias ahora. Aproveche de agregar las licencias para ellos también.
 
-2. Una vez que haya agregado los usuarios, también verá una opción para compartir las credenciales con los nuevos usuarios que ha agregado. Puede elegir imprimirlas, enviarlas por correo electrónico o descargarlas.
+2. Después de agregar a los usuarios, también verá una opción para compartir las credenciales con los nuevos usuarios agregados. Puede escoger entre imprimirlas, enviarlas por correo electrónico o descargarlas.
 
 ## <a name="connect-your-domain"></a>Conectar su dominio
 
@@ -139,4 +139,4 @@ Microsoft 365 no incluye un sitio web público para su empresa. Si desea configu
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-Más información en [Utilizar un sitio Web público](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9).
+Más información en [Utilizar un sitio Web público](../../business-video/create-web-site.md).

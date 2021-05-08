@@ -3,8 +3,8 @@ title: Acciones de corrección en Microsoft Defender para Office 365
 keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -21,12 +21,12 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ffaa7c46d81070a6443bf2233bbfdfd741ceb915
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 3be0a270bff2d75623fe5e0d6e004dd82aabf1f4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114335"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275101"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Acciones de corrección en Microsoft Defender para Office 365
 
@@ -60,14 +60,14 @@ Microsoft Defender para Office 365 incluye acciones de corrección para abordar 
 |Correo electrónico|Correo electrónico de [suplantación de identidad omitida notificado](enable-the-report-message-add-in.md) por un usuario|[Investigación automatizada desencadenada por el informe del usuario](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
 |Correo electrónico|Anomalía de volumen <br> (Las cantidades de correo electrónico recientes superan los 7-10 días anteriores para los criterios de coincidencia).|La investigación automatizada no da como resultado una acción pendiente específica. <p>La anomalía del volumen no es una amenaza clara, sino simplemente una indicación de volúmenes de correo electrónico más grandes en los últimos días en comparación con los últimos 7-10 días. <p>Aunque un gran volumen de correo electrónico puede indicar posibles problemas, la confirmación es necesaria en términos de veredictos malintencionados o una revisión manual de mensajes de correo electrónico o clústeres. Consulte [Buscar correo electrónico sospechoso que se entregó](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered).|
 |Correo electrónico|No se encontraron amenazas <br> (El sistema no encontró ninguna amenaza basada en archivos, direcciones URL o análisis de los veredictos del clúster de correo electrónico).|La investigación automatizada no da como resultado una acción pendiente específica. <p>Las amenazas encontradas [y zapped](zero-hour-auto-purge.md) una vez completada una investigación no se reflejan en los resultados numéricos de una investigación, pero estas amenazas se pueden ver en el Explorador [de amenazas](threat-explorer.md).|
-|User|Un usuario hizo clic en una dirección URL malintencionada <br> (Un usuario ha navegado a una página que más tarde se encontró que era malintencionada o un usuario omitió una página de advertencia de [vínculos](safe-links.md#warning-pages-from-safe-links) de Caja fuerte para llegar a una página malintencionada).|La investigación automatizada no da como resultado una acción pendiente específica. <p>Bloquear URL (tiempo de clic) <p>Use el Explorador de amenazas [para ver datos sobre direcciones URL y hacer clic en veredictos.](threat-explorer.md#view-phishing-url-and-click-verdict-data) <p>Si su organización usa [Microsoft Defender para endpoint,](/windows/security/threat-protection/)considere la posibilidad [de investigar al usuario](/microsoft-365/security/defender-endpoint/investigate-user) para determinar si su cuenta está en peligro.|
-|User|Un usuario envía malware/phish|La investigación automatizada no da como resultado una acción pendiente específica. <p> El usuario puede estar informando de malware/phish, o alguien podría estar suplantando al usuario [como](anti-spoofing-protection.md) parte de un ataque. Use [el Explorador de](threat-explorer.md) amenazas para ver y controlar el correo electrónico que contiene [malware](threat-explorer-views.md#email--malware) o [phish](threat-explorer-views.md#email--phish).|
-|User|Reenvío de correo <br> (Se configuran reglas de reenvío de buzones, que podrían usarse para la exfiltración de datos).|Quitar regla de reenvío <p> Use [las perspectivas de flujo de correo,](mail-flow-insights-v2.md)incluido el informe de mensajes [autoaforados](mfi-auto-forwarded-messages-report.md), para ver detalles más específicos sobre el correo electrónico reenviado.|
-|User|Reglas de delegación de correo electrónico <br> (La cuenta de un usuario tiene configurada la delegación).|Quitar regla de delegación <p> Si su organización usa [Microsoft Defender para endpoint,](/windows/security/threat-protection/)considere [la posibilidad de investigar al usuario](/microsoft-365/security/defender-endpoint/investigate-user) que está obteniendo el permiso de delegación.|
-|User|Exfiltración de datos <br> (Un usuario infringió las directivas DLP de correo electrónico o de uso [compartido de archivos](../../compliance/dlp-learn-about-dlp.md) |La investigación automatizada no da como resultado una acción pendiente específica. <p> [Ver informes dlp y tomar medidas.](../../compliance/view-the-dlp-reports.md)|
-|User|Envío de correo electrónico anómalo <br> (Un usuario envió recientemente más correo electrónico que durante los 7-10 días anteriores).|La investigación automatizada no da como resultado una acción pendiente específica. <p> Enviar un gran volumen de correo electrónico no es malintencionado por sí solo; es posible que el usuario acaba de enviar correo electrónico a un gran grupo de destinatarios para un evento. Para investigar, use información sobre [](mfi-mail-flow-map-report.md) el flujo [de](mail-flow-insights-v2.md)correo, incluido el informe de mapa de flujo de correo para determinar lo que está sucediendo y tomar medidas.|
+|Usuario|Un usuario hizo clic en una dirección URL malintencionada <br> (Un usuario ha navegado a una página que más tarde se encontró que era malintencionada o un usuario omitió una página de advertencia de [vínculos](safe-links.md#warning-pages-from-safe-links) de Caja fuerte para llegar a una página malintencionada).|La investigación automatizada no da como resultado una acción pendiente específica. <p>Bloquear URL (tiempo de clic) <p>Use el Explorador de amenazas [para ver datos sobre direcciones URL y hacer clic en veredictos.](threat-explorer.md#view-phishing-url-and-click-verdict-data) <p>Si su organización usa [Microsoft Defender para endpoint,](/windows/security/threat-protection/)considere la posibilidad [de investigar al usuario](/microsoft-365/security/defender-endpoint/investigate-user) para determinar si su cuenta está en peligro.|
+|Usuario|Un usuario envía malware/phish|La investigación automatizada no da como resultado una acción pendiente específica. <p> El usuario puede estar informando de malware/phish, o alguien podría estar suplantando al usuario [como](anti-spoofing-protection.md) parte de un ataque. Use [el Explorador de](threat-explorer.md) amenazas para ver y controlar el correo electrónico que contiene [malware](threat-explorer-views.md#email--malware) o [phish](threat-explorer-views.md#email--phish).|
+|Usuario|Reenvío de correo <br> (Se configuran reglas de reenvío de buzones, que podrían usarse para la exfiltración de datos).|Quitar regla de reenvío <p> Use [las perspectivas de flujo de correo,](mail-flow-insights-v2.md)incluido el informe de mensajes [autoaforados](mfi-auto-forwarded-messages-report.md), para ver detalles más específicos sobre el correo electrónico reenviado.|
+|Usuario|Reglas de delegación de correo electrónico <br> (La cuenta de un usuario tiene configurada la delegación).|Quitar regla de delegación <p> Si su organización usa [Microsoft Defender para endpoint,](/windows/security/threat-protection/)considere [la posibilidad de investigar al usuario](/microsoft-365/security/defender-endpoint/investigate-user) que está obteniendo el permiso de delegación.|
+|Usuario|Exfiltración de datos <br> (Un usuario infringió las directivas DLP de correo electrónico o de uso [compartido de archivos](../../compliance/dlp-learn-about-dlp.md) |La investigación automatizada no da como resultado una acción pendiente específica. <p> [Ver informes dlp y tomar medidas.](../../compliance/view-the-dlp-reports.md)|
+|Usuario|Envío de correo electrónico anómalo <br> (Un usuario envió recientemente más correo electrónico que durante los 7-10 días anteriores).|La investigación automatizada no da como resultado una acción pendiente específica. <p> Enviar un gran volumen de correo electrónico no es malintencionado por sí solo; es posible que el usuario acaba de enviar correo electrónico a un gran grupo de destinatarios para un evento. Para investigar, use información sobre [](mfi-mail-flow-map-report.md) el flujo [de](mail-flow-insights-v2.md)correo, incluido el informe de mapa de flujo de correo para determinar lo que está sucediendo y tomar medidas.|
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver detalles y resultados de una investigación automatizada en Microsoft Defender para Office 365](air-view-investigation-results.md)
 - [Ver acciones de corrección pendientes o completadas después de una investigación automatizada en Microsoft Defender para Office 365](air-review-approve-pending-completed-actions.md)

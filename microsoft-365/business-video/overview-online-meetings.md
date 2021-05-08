@@ -20,20 +20,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo hospedar reuniones en línea para su empresa.
-ms.openlocfilehash: 893a03b064b6f73711b69a61c90cd40023241c48
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 9874e22724dd04255fb6109b5fb268ac2dcd3f95
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939523"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244901"
 ---
 # <a name="host-online-meetings-for-your-business"></a>Hospedar reuniones en línea para su empresa
 
-¿Necesita reunirse con un cliente, cliente o partner, pero no puede obtener a todos en un solo lugar? No se preocupe, tenga una reunión en línea. Si tienen un smartphone, tableta o portátil, pueden unirse a Microsoft Teams.
+¿Necesita reunirse con un cliente, cliente o partner, pero no puede obtener a todos en un solo lugar? No se preocupe, tenga una reunión en línea. Si tienen un smartphone, tableta o portátil, pueden unirse con Microsoft Teams.
 
 Necesitarán descargar la versión [gratuita](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) o unirse en línea [en un](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9) explorador para obtener el uso compartido de vídeo y pantalla.
 
-Si con frecuencia colabora estrechamente en proyectos con un cliente, cliente o partner, considere la posibilidad de crear un equipo para sus clientes, puede invitarlos fácilmente [a](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7) reuniones y también tener conversaciones, compartir archivos y realizar un seguimiento de proyectos en Microsoft Teams.
+Si con frecuencia colabora estrechamente en proyectos con un cliente, cliente o partner, considere la posibilidad de crear un equipo para sus clientes, puede invitarlos fácilmente [a](team-with-guests.md) reuniones y también tener conversaciones, compartir archivos y realizar un seguimiento de proyectos en Microsoft Teams.
 
 Descargue una infografía para obtener una introducción rápida sobre cómo unirse o hospedar una reunión en línea con Microsoft Teams:
 
@@ -45,7 +45,7 @@ Descargue una infografía para obtener una introducción rápida sobre cómo uni
 
 Para programar reuniones con sus empleados, clientes y otros invitados, use Microsoft Teams. Pruébalo:
 
-1. En Microsoft Teams, en la navegación izquierda, elija **Reuniones**.
+1. En Microsoft Teams, en el panel de navegación izquierdo, elija **Reuniones**.
 1. Elija **Programar una reunión**.
 1. En el **cuadro Nueva reunión,** escriba un **título** y **una ubicación** para la reunión.
 1. Escriba una **hora y** **una fecha** de inicio y finalización.
@@ -58,12 +58,12 @@ Para programar reuniones con sus empleados, clientes y otros invitados, use Micr
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn?autoplay=false]
 
-Use Microsoft Teams para unirse a reuniones con los empleados de su empresa y con clientes externos a su empresa. Pruébalo:
+Use Microsoft Teams para unirse a reuniones con empleados de su empresa y clientes fuera de su empresa. Pruébalo:
 
-1. En Microsoft Teams, en la navegación izquierda, elija **Reuniones**.
-1. Abra la reunión a la que desea unirse y elija **Unirse a la reunión de Microsoft Teams**.
+1. En Microsoft Teams, en el panel de navegación izquierdo, elija **Reuniones**.
+1. Abra la reunión a la que desea unirse y elija **Unirse Microsoft Teams reunión**.
 1. Cuando se abra la reunión, elija **Unirse ahora**.
-1. Cualquier cliente invitado a la reunión abrirá la reunión en su calendario, seleccione el vínculo de reunión, descargue la aplicación teams o ábrala en la web, escriba su nombre y elija **Unirse.**
+1. Cualquier cliente invitado a la reunión abrirá la reunión en su calendario, seleccionará el vínculo de reunión, descargará la aplicación Teams o la abrirá en la web, escribirá su nombre y elija **Unirse.**
 1. Cuando veas que el cliente aparece en la sala de espera, elige **Admitir** para permitir que entren.
 1. Tan pronto como todos se unan, puede iniciar la reunión.
  
@@ -71,7 +71,7 @@ Use Microsoft Teams para unirse a reuniones con los empleados de su empresa y co
 
 Puedes convertir fácilmente un chat en Microsoft Teams en una reunión. Solo tienes que **elegir el botón Llamada** de vídeo o el botón :::image type="icon" source="../media/video-call-icon.png" border="false"::: **Llamada** de audio para iniciar :::image type="icon" source="../media/audio-call-icon.png" border="false"::: una llamada. También puede agregar personas a la llamada si necesita convertirse en una discusión de grupo.
 
-¿Necesita ayuda? Consulta [Iniciar una llamada desde un chat en Teams](https://support.microsoft.com/office/f5138c9d-df4c-43d8-9cf6-53400c1a7798).
+¿Necesita ayuda? Vea [Start a call from a chat in Teams](https://support.microsoft.com/office/f5138c9d-df4c-43d8-9cf6-53400c1a7798).
 
 ## <a name="related-articles"></a>Artículos relacionados
 

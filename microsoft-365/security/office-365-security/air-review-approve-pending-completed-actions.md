@@ -3,8 +3,8 @@ title: Revisar y administrar acciones de corrección en Microsoft Defender para 
 keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
@@ -19,12 +19,12 @@ description: Obtenga información sobre las acciones de corrección en las capac
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: ce6cfd920845f5a85dbc7d7d48cfefdd6209ec3a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f0c42bef1b090412a7a6422fe029323b645e90df
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933654"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275077"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Revisar y administrar acciones de corrección en Office 365
 
@@ -42,7 +42,7 @@ Estas acciones de corrección no se toman a menos que el equipo de operaciones d
 
 ## <a name="approve-or-reject-pending-actions"></a>Aprobar (o rechazar) acciones pendientes
 
-1. Vaya al Centro de seguridad de Microsoft 365 ( <https://security.microsoft.com> ) e inicie sesión.
+1. Vaya al centro Microsoft 365 seguridad ( <https://security.microsoft.com> ) e inicie sesión.
 2. En el panel de navegación, seleccione **Centro de acciones**.
 3. En la **pestaña** Pendiente, revise la lista de acciones que están a la espera de su aprobación.
 4. Seleccione un elemento de la lista. Se abre el panel desplegable. 
@@ -69,11 +69,11 @@ Estas acciones de corrección no se toman a menos que el equipo de operaciones d
 2. En la **pestaña** Historial, seleccione un archivo que tenga el tipo de acción **Archivo de cuarentena**.
 3. En el panel de la parte derecha de la pantalla, seleccione **Aplicar a X más** instancias de este archivo y, a continuación, seleccione **Deshacer**.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Usar el Explorador de amenazas](threat-explorer.md)
 - [Cómo notificar falsos positivos/negativos en capacidades automatizadas de investigación y respuesta](air-report-false-positives-negatives.md)
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 - [Ver detalles y resultados de una investigación automatizada en Office 365](air-view-investigation-results.md)
