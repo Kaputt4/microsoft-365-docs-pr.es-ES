@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9964b27f29654a7cc474dc4fb8f84334ddaf381c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 998d8c500613ffa9fc6d790535e555ff9503f590
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933222"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52281022"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de rendimiento de Microsoft Defender para Endpoint en Linux
 
@@ -57,7 +57,7 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
 
     Si su organización administra el dispositivo, el administrador puede deshabilitar la protección en tiempo real con las instrucciones de Establecer preferencias para Defender para Endpoint [en Linux](linux-preferences.md).
 
-    Si el problema de rendimiento persiste mientras la protección en tiempo real está desactivada, el origen del problema podría ser el componente de detección y respuesta del extremo. En este caso, póngase en contacto con el servicio de soporte al cliente para obtener más instrucciones y mitigación.
+    Si el problema de rendimiento persiste mientras la protección en tiempo real está desactivada, el origen del problema podría ser detección y respuesta de puntos de conexión componente. En este caso, póngase en contacto con el servicio de soporte al cliente para obtener más instrucciones y mitigación.
 
 2. Para buscar las aplicaciones que desencadenan la mayoría de los exámenes, puede usar estadísticas en tiempo real recopiladas por Defender para Endpoint en Linux.
 
@@ -148,3 +148,6 @@ Se pueden usar los siguientes pasos para solucionar y mitigar estos problemas:
 5. Configure Microsoft Defender para Endpoint en Linux con exclusiones para los procesos o ubicaciones de disco que contribuyen a los problemas de rendimiento y vuelva a habilitar la protección en tiempo real.
 
     Para obtener más información, vea [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md).
+
+## <a name="see-also"></a>Vea también
+- [Investigar problemas de estado de agente](health-status.md)
