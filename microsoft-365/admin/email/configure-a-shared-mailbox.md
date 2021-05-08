@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Después de crear un buzón compartido, querrá configurar algunas opciones para sus usuarios, como el reenvío de correo electrónico y las respuestas automáticas. Más adelante, es posible que desee cambiar otras opciones de configuración, como el nombre del buzón o los miembros.
-ms.openlocfilehash: 2d0998ba2bdc95a9f78f59527bd9bd6fa98b4c45
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 01d5aaa686e1d64c9ea7d89913d8208f779dcfd1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915919"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52243977"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Establecer la configuración de buzón compartido
 
@@ -34,23 +34,7 @@ Después de crear [un buzón](create-a-shared-mailbox.md)compartido, querrá con
 
 ## <a name="change-the-name-or-email-alias-of-a-shared-mailbox-or-change-the-primary-email-address"></a>Cambiar el nombre o el alias de correo electrónico de un buzón compartido o cambiar la dirección de correo electrónico principal
 
-::: moniker range="o365-worldwide"
-
 1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
-
-::: moniker-end
 
 2. Seleccione el buzón compartido que desea editar y, a continuación, **seleccione Editar** junto a **Nombre, Correo electrónico, Alias de correo electrónico.**
 
@@ -62,23 +46,7 @@ Después de crear [un buzón](create-a-shared-mailbox.md)compartido, querrá con
 
 No es necesario asignar una licencia al buzón compartido para reenviar el correo electrónico que se le ha enviado. Puede reenviar los mensajes a cualquier dirección de correo electrónico o lista de distribución válida.
 
-::: moniker range="o365-worldwide"
-
 1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
-
-::: moniker-end
 
 2. Seleccione el buzón compartido que desea editar y, a continuación, **seleccione Reenvío de correo electrónico** \> **Editar**.
     
@@ -88,23 +56,7 @@ No es necesario asignar una licencia al buzón compartido para reenviar el corre
 
 ## <a name="send-automatic-replies-from-a-shared-mailbox"></a>Enviar respuestas automáticas desde un buzón compartido
 
-::: moniker range="o365-worldwide"
-
 1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
-
-::: moniker-end
 
 2. Seleccione el buzón compartido que desea editar y, a continuación, **seleccione Respuestas automáticas** \> **Editar**.
     
@@ -125,23 +77,7 @@ Si desea permitir que todos los usuarios vean el correo electrónico enviado, en
 
 ## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>Elegir las aplicaciones que un buzón compartido puede usar para tener acceso al correo electrónico de Microsoft
 
-::: moniker range="o365-worldwide"
-
 1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
-
-::: moniker-end
 
 2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **Editar aplicaciones de correo** \> **electrónico.**
 
@@ -154,23 +90,7 @@ Si desea permitir que todos los usuarios vean el correo electrónico enviado, en
 
 Para obtener más información acerca de la retención por juicio, [vea Create a Litigation Hold](../../compliance/create-a-litigation-hold.md).
 
-::: moniker range="o365-worldwide"
-
 1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
-
-::: moniker-end
 
 2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **Retención por juicio** \> **Editar**.
 
@@ -183,23 +103,7 @@ Para obtener más información acerca de la retención por juicio, [vea Create a
 
 ## <a name="add-or-remove-members"></a>Agregar o quitar miembros
 
-::: moniker range="o365-worldwide"
-
 1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
-
-::: moniker-end
 
 2. Seleccione el buzón compartido que desea editar y, a continuación, seleccione **Miembros** \> **Editar**.
 
@@ -211,23 +115,7 @@ Para obtener más información acerca de la retención por juicio, [vea Create a
 
 ## <a name="add-or-remove-permissions-of-members"></a>Agregar o quitar permisos de miembros
 
-::: moniker range="o365-worldwide"
-
 1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
-
-::: moniker-end
 
 2. Seleccione el buzón compartido que desea editar y, a continuación, **seleccione Miembros** \> **Personalizar permisos**.
 
@@ -243,23 +131,7 @@ Para obtener más información acerca de la retención por juicio, [vea Create a
 
 Si decide no mostrar el buzón compartido en la lista global de direcciones, el buzón no aparecerá en la lista de direcciones de su organización, pero seguirá recibiendo correo electrónico enviado. 
 
-::: moniker range="o365-worldwide"
-
 1. En el centro de administración, vaya a la página **Grupos** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Buzones compartidos</a>.
-
-::: moniker-end 
-
-::: moniker range="o365-germany"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Grupos** > **Buzones compartidos**. 
-
-::: moniker-end
 
 2. Seleccione el buzón compartido que desea editar y, a continuación, **seleccione Mostrar en la lista global de direcciones** \> **Editar**.
 
@@ -270,14 +142,14 @@ Si decide no mostrar el buzón compartido en la lista global de direcciones, el 
 > [!NOTE]
 > Ocultar un buzón compartido de la lista de direcciones hará imposible que los nuevos miembros del buzón compartido agreguen el buzón oculto a su perfil de Outlook hasta que el buzón compartido se vuelva a mostrar en la lista de direcciones. 
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Acerca de los buzones compartidos](about-shared-mailboxes.md)
+[Acerca de los buzones compartidos](about-shared-mailboxes.md) (artículo)
 
-[Crear un buzón compartido](create-a-shared-mailbox.md)
+[Crear un buzón compartido](create-a-shared-mailbox.md) (artículo)
 
-[Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md)
+[Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md) (artículo)
 
-[Quitar la licencia de un buzón compartido](remove-license-from-shared-mailbox.md)
+[Quitar una licencia de un buzón compartido](remove-license-from-shared-mailbox.md) (artículo)
 
-[Resolver problemas con los buzones compartidos](resolve-issues-with-shared-mailboxes.md)
+[Resolver problemas con buzones compartidos](resolve-issues-with-shared-mailboxes.md) (artículo)

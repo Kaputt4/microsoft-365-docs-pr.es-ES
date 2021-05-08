@@ -26,12 +26,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Comprenda lo que necesita saber antes de pasar por el proceso de registro para Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 37cbe20a5cc1a7506e8db218c3e9ffe2b4e64478
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 77fe0252a267b13fda19a6842ce0e07b1b8307b1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107031"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244013"
 ---
 # <a name="how-to-sign-up---admin-help"></a>Cómo registrarse: Ayuda para administradores
 
@@ -136,4 +136,4 @@ No es necesario cancelar la prueba. Si no compra la suscripción de prueba, expi
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Microsoft 365 vídeos de aprendizaje para empresas](../../business-video/index.yml) (vínculos)
+[Microsoft 365 vídeos de aprendizaje para empresas](../../business-video/index.yml) (página de vínculos)

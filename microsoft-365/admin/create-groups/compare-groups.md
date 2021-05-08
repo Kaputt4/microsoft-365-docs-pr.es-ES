@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Obtenga más información sobre los tipos de grupos que puede usar.
-ms.openlocfilehash: 7b67fa5e7dc661163ce6c2c8933ebdafd0a5940d
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 9f36688972f00a27a274b6a974d958d1d590aa93
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023850"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52243989"
 ---
 # <a name="compare-groups"></a>Comparar grupos
 
 En la sección **Grupos** del Centro de administración de Microsoft 365, puede crear y administrar estos tipos de grupos: 
 
 - **Los grupos de Microsoft 365** (anteriormente grupos de Office 365) se usan para la colaboración entre usuarios, tanto dentro como fuera de la empresa.
-- **Los grupos de distribución** se usan para enviar notificaciones a un grupo de personas.
+- **Los grupos de distribución** se usan para enviar notificaciones de correo electrónico a un grupo de personas.
 - **Los grupos de seguridad** se usan para conceder acceso a los recursos como SharePoint.
 - **Los grupos de seguridad habilitados para correo** se usan para conceder acceso a recursos como SharePoint y enviar notificaciones por correo electrónico a estos usuarios.
 - **Los buzones compartidos** se usan cuando varios usuarios necesitan tener acceso al mismo buzón, como la dirección de correo electrónico del soporte técnico e información de la empresa.
@@ -59,13 +59,17 @@ Los grupos de distribución son mejores para las situaciones en las que necesita
 
 Los grupos de distribución se pueden [actualizar a grupos de Microsoft 365](../manage/upgrade-distribution-lists.md).
 
+Los grupos de distribución se pueden agregar a un equipo en Microsoft Teams.
+
 ## <a name="security-groups"></a>Grupos de seguridad
 
 [Los grupos de seguridad](../email/create-edit-or-delete-a-security-group.md) se usan para conceder acceso a los recursos de Microsoft 365, como SharePoint. Pueden simplificar la administración, ya que solo necesita administrar el grupo, en lugar de agregar usuarios a cada recurso por separado.
 
-Los grupos de seguridad pueden contener usuarios o dispositivos. Se puede usar la creación de un grupo de seguridad para dispositivos con servicios de administración de dispositivos móviles, como Intune.
+Los grupos de seguridad pueden contener usuarios o dispositivos. La creación de un grupo de seguridad para dispositivos se puede usar con los servicios de administración de dispositivos móviles, como Intune.
 
 Los grupos de seguridad se pueden [configuran para la pertenencia dinámica en Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), lo que permite que los miembros del grupo o los dispositivos se agreguen o eliminen automáticamente en función de los atributos del usuario, como el departamento, la ubicación o el título; o los atributos del dispositivo, como la versión del sistema operativo.
+
+Se pueden agregar grupos de seguridad a un equipo.
 
 ## <a name="mail-enabled-security-groups"></a>Grupos de seguridad habilitados para correo
 
@@ -73,11 +77,15 @@ Los grupos de seguridad habilitados para correo funcionan de la misma manera que
 
 Incluyen la capacidad para enviar correo a todos los miembros del grupo.
 
+Se pueden agregar grupos de seguridad habilitados para correo a un equipo.
+
 ## <a name="shared-mailboxes"></a>Buzones compartidos
 
 [Los buzones compartidos](../email/create-a-shared-mailbox.md) se usan cuando varios usuarios necesitan tener acceso al mismo buzón, como la dirección de correo electrónico del soporte técnico o información de la empresa, el escritorio de recepción u otra función que puedan compartir varios usuarios.
 
 Los buzones compartidos pueden recibir mensajes externos si el administrador ha habilitado esta opción.
+
+Los buzones compartidos incluyen un calendario que se puede usar para la colaboración.
 
 Los usuarios con permisos para el buzón del grupo pueden enviar como o enviar en nombre de la dirección de correo electrónico del buzón si el administrador le ha concedido permisos de usuario para hacerlo. Esto es especialmente útil para los buzones de ayuda y soporte técnico, ya que los usuarios pueden enviar mensajes de correo electrónico desde "Soporte técnico de Contoso" o "Escritorio de recepción del edificio A".
 

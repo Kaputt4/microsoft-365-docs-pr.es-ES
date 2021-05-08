@@ -1,5 +1,5 @@
 ---
-title: Acerca de la aplicación móvil de administración de Microsoft 365
+title: Acerca de la Microsoft 365 móvil administrador
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,17 +22,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtén la aplicación de administración de Microsoft 365 y aprende a administrar tu organización en línea desde tu teléfono o tableta.
-ms.openlocfilehash: 20a44501db43b8cba7f31bcfded039b00f3ab341
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+description: Obtén la Microsoft 365 admin y aprende a administrar tu organización en línea desde tu teléfono o tableta.
+ms.openlocfilehash: 2f6b27b409dd456a88a17a9825fae3ec24d787a4
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023946"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244025"
 ---
-# <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la aplicación móvil de administración de Microsoft 365
+# <a name="about-the-microsoft-365-admin-mobile-app"></a>Acerca de la Microsoft 365 móvil de administrador
 
-¿Es usted un administrador que normalmente está en marcha? Incluso si no lo está, puede haber ocasiones en las que necesite administrar Microsoft 365 desde su teléfono o tableta. Echa un vistazo a la aplicación gratuita [de administración de Microsoft 365,](https://go.microsoft.com/fwlink/?LinkID=627216)el complemento perfecto para el Centro de administración de Microsoft 365 basado en web. Puedes descargar la aplicación desde la [Tienda de aplicaciones de Apple](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)y desde Google Play [Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
+¿Es usted un administrador que normalmente está en marcha? Incluso si no lo está, puede que haya ocasiones en las que necesite administrar los Microsoft 365 desde su teléfono o tableta. Echa un vistazo a la [aplicación Microsoft 365 admin](https://go.microsoft.com/fwlink/?LinkID=627216)gratuita, el complemento perfecto para el centro de administración Microsoft 365 web. Puedes descargar la aplicación desde la [Tienda de aplicaciones de Apple](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)y desde Google Play [Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
 
 :::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="Screenshot: Admin mobile app's home page, showing search, Message center, health, and quick links":::
 
@@ -46,7 +46,7 @@ La aplicación de administración tiene muchas funcionalidades que te permitirá
 - **Estado del servicio** Para supervisar el estado de todos los servicios, vea el estado actual del servicio y los detalles sobre las interrupciones y las interrupciones del servicio.
 - **Notificaciones** Manténgase al tanto de toda la información y actualizaciones importantes relacionadas con las publicaciones del centro de mensajes, el estado del servicio y la facturación a través de notificaciones push. Incluso puede personalizar lo que desea que se le notifique.
 
-Si es administrador y es responsable de más de una organización de Microsoft 365, puede iniciar sesión en varias organizaciones y cambiar rápidamente entre ellas. La aplicación admite temas oscuros y está disponible en 39 idiomas.
+Si es administrador y es responsable de más de una organización Microsoft 365, puede iniciar sesión en varias organizaciones y cambiar rápidamente entre ellas. La aplicación admite temas oscuros y está disponible en 39 idiomas.
   
 > [!IMPORTANT]
 > Si tienes problemas al usar la aplicación móvil administrador en iOS o Android, [envíanos](mailto:feedback365@microsoft.com) un correo electrónico feedback365@microsoft.com para que nos lo hagas saber.
@@ -67,21 +67,21 @@ A continuación, le mostramos las respuestas a algunas preguntas frecuentes.
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>¿Qué necesito hacer para poder usar la aplicación?
 
-Para usar la aplicación, debes tener permisos de administrador y una suscripción válida a una de las siguientes suscripciones de Microsoft 365:
+Para usar la aplicación, debes tener permisos de administrador y una suscripción válida a una de las siguientes Microsoft 365 suscripciones:
 
 - Aplicaciones de Microsoft 365 para empresas
-- Aplicaciones de Microsoft 365 para empresas
+- Aplicaciones Microsoft 365 para empresas
 - Microsoft 365 Empresa Premium
 - Microsoft 365 Empresa Estándar
 - Microsoft 365 Empresa Básico
 - Microsoft 365 E3/E5
 - Office 365: E1, E3/E5
-- Plan de Exchange Online
-- Plan de OneDrive para la Empresa
+- Exchange Online plan
+- OneDrive plan para empresas
   
-### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>¿Puedo usar la aplicación con mi suscripción a Microsoft 365 Family?
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>¿Puedo usar la aplicación con mi Microsoft 365 Familia suscripción?
 
-No, la aplicación no funciona con suscripciones de Microsoft 365 Family o Microsoft 365 Personal.
+No, la aplicación no funciona con Microsoft 365 Familia o Microsoft 365 Personal suscripciones.
 
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>¿Funcionará la aplicación si la organización tiene habilitada la sincronización de directorios?
 
@@ -89,7 +89,7 @@ Sí, pero con funcionalidad reducida. Podrá iniciar sesión y ver la informaci�
   
 ### <a name="what-languages-are-supported-by-the-app"></a>¿Qué idiomas son compatibles con la aplicación?
 
-La aplicación admite los 39 idiomas que admite el Centro de administración de Microsoft 365 basado en web. Para cambiar el idioma, en el menú de navegación izquierdo del Centro de administración, vaya a Idioma de configuración o seleccione el icono Idioma en la sección Vínculos rápidos de la página principal de la aplicación  >   móvil de administrador.  
+La aplicación admite los 39 idiomas que admite el centro de administración Microsoft 365 web. Para cambiar el idioma, en el menú de navegación izquierdo del Centro de administración, vaya **a Configuración** Idioma o seleccione el icono Idioma en la sección Vínculos rápidos de la página principal de la aplicación móvil  >   de administrador.  
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>¿Cómo puedo compartir los mensajes e incidencias de servicio con el resto de mi organización?
 
@@ -105,7 +105,7 @@ Puede probar algunos pasos para la solución de problemas de aplicaciones móvil
 
 1. Cierre y vuelva a abrir la aplicación.
 1. Desinstale y vuelva a instalar la aplicación. Asegúrate de que estás en la versión más reciente de la aplicación.
-1. Si tienes instalada la aplicación Microsoft Authenticator o el portal de empresa en el dispositivo, intenta reinstalarlo o actualizarlo a la versión más reciente.
+1. Si tienes instalada Microsoft Authenticator o aplicación del portal de empresa en el dispositivo, intenta reinstalarlo o actualizarlo a la versión más reciente.
 1. Si eso no funciona, puede enviarnos un correo electrónico feedback365@microsoft.com para darnos a conocer.
 
 ### <a name="how-do-i-manage-notifications-in-the-app"></a>¿Cómo puedo administrar las notificaciones en la aplicación?
@@ -118,4 +118,4 @@ Envía [feedback365@microsoft.com](mailto:feedback365@microsoft.com) para inform
   
 ## <a name="related-content"></a>Contenido relacionado 
 
-Vídeos de aprendizaje [de Microsoft 365 para empresas](../../business-video/index.yml) (vínculos)
+[Microsoft 365 vídeos de aprendizaje para empresas](../../business-video/index.yml) (página de vínculos)
