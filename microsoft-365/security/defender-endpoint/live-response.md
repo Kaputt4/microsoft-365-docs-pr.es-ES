@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4898081103faa27c19d3a09ffba1b59670833dd8
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: fc1c1e0d3f68016651c04521e04ce348e5ab9a65
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860802"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246470"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Investigar entidades en dispositivos con respuesta en directo
 
@@ -44,14 +44,14 @@ Con la respuesta en directo, los analistas pueden realizar todas las tareas sigu
 - Ejecute comandos básicos y avanzados para realizar trabajos de investigación en un dispositivo.
 - Descargue archivos como ejemplos de malware y resultados de scripts de PowerShell.
 - Descargar archivos en segundo plano (¡nuevo!).
-- Cargue un script de PowerShell o un archivo ejecutable en la biblioteca y ejecutarlo en un dispositivo desde un nivel de inquilino.
+- Upload un script de PowerShell o ejecutable a la biblioteca y ejecutarlo en un dispositivo desde un nivel de inquilino.
 - Realizar o deshacer acciones de corrección.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 Antes de iniciar una sesión en un dispositivo, asegúrate de cumplir los siguientes requisitos:
 
-- **Comprueba que estás ejecutando una versión compatible de Windows**. <br/>
+- **Compruebe que está ejecutando una versión compatible de Windows**. <br/>
 Los dispositivos deben ejecutar una de las siguientes versiones de Windows
 
   - **Windows 10**
@@ -61,7 +61,7 @@ Los dispositivos deben ejecutar una de las siguientes versiones de Windows
     - [Versión 1803 (RS 4)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1803) con [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Versión 1709 (RS 3)](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) con [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
   
-  - **Windows Server 2019: solo se aplica a la versión preliminar pública**
+  - **Windows Servidor 2019: solo aplicable para la versión preliminar pública**
     - Versión 1903 o (con [KB4515384](https://support.microsoft.com/en-us/help/4515384/windows-10-update-kb4515384)) posterior 
     - Versión 1809 (con [KB4537818](https://support.microsoft.com/en-us/help/4537818/windows-10-update-kb4537818))
 
@@ -101,20 +101,20 @@ Tendrás que habilitar, al menos, el nivel mínimo de corrección para un grupo 
 ## <a name="live-response-dashboard-overview"></a>Introducción al panel de respuestas en directo
 Cuando inicias una sesión de respuesta en directo en un dispositivo, se abre un panel. El panel proporciona información sobre la sesión, como la siguiente: 
 
-- Quién creó la sesión
+- Quién la sesión
 - Cuando se inició la sesión
 - Duración de la sesión
 
 El panel también le da acceso a:
 - Desconectar sesión
-- Cargar archivos en la biblioteca 
+- Upload archivos a la biblioteca 
 - Consola de comandos
 - Registro de comandos
 
 
 ## <a name="initiate-a-live-response-session-on-a-device"></a>Iniciar una sesión de respuesta en directo en un dispositivo 
 
-1. Inicie sesión en el Centro de seguridad de Microsoft Defender.
+1. Inicie sesión en Centro de seguridad de Microsoft Defender.
 
 2. Vaya a la página de lista de dispositivos y seleccione un dispositivo para investigar. Se abre la página dispositivos.
 
@@ -143,7 +143,6 @@ Los siguientes comandos están disponibles para los roles de usuario a los que s
 |`connect` | Inicia una sesión de respuesta en directo al dispositivo. |
 |`connections` | Muestra todas las conexiones activas. |
 |`dir` | Muestra una lista de archivos y subdirectorios en un directorio. |
-|`download <file_path> &` | Descarga un archivo en segundo plano. |
 |`drivers` |  Muestra todos los controladores instalados en el dispositivo. |
 |`fg <command ID>` | Coloque el trabajo especificado en primer plano en primer plano, lo que lo hace el trabajo actual. <br> NOTA: fg toma un "identificador de comando" disponible desde trabajos, no un PID |
 |`fileinfo` | Obtener información acerca de un archivo. |
@@ -173,7 +172,7 @@ Los siguientes comandos están disponibles para los roles de usuario a los que s
 
 ## <a name="use-live-response-commands"></a>Usar comandos de respuesta en directo
 
-Los comandos que puedes usar en la consola siguen principios similares a [los comandos de Windows](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c).
+Los comandos que se pueden usar en la consola siguen principios similares a [Windows comandos](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c).
 
 Los comandos avanzados ofrecen un conjunto más sólido de acciones que te permiten realizar acciones más eficaces, como descargar y cargar un archivo, ejecutar scripts en el dispositivo y realizar acciones de corrección en una entidad.
 
@@ -198,9 +197,9 @@ Para permitir que el equipo de operaciones de seguridad continúe investigando u
 Estos son algunos ejemplos:
 
 
-|Comando  |Lo que hace  |
+|Command  |Qué hace  |
 |---------|---------|
-|`Download "C:\windows\some_file.exe" &`     |Inicia la descarga de un archivo *denominadosome_file.exe* en segundo plano.         |
+|`getfile "C:\windows\some_file.exe" &`     |Inicia la descarga de un archivo *denominadosome_file.exe* en segundo plano.         |
 |`fg 1234`     |Devuelve una descarga con el identificador de comando *1234* en primer plano.         |
 
 
@@ -214,7 +213,7 @@ Puede tener una colección de scripts de PowerShell que se pueden ejecutar en di
 
 #### <a name="to-upload-a-file-in-the-library"></a>Para cargar un archivo en la biblioteca
 
-1. Haga clic **en Cargar archivo en biblioteca.** 
+1. Haga **clic Upload archivo en la biblioteca**. 
 
 2. Haga **clic en** Examinar y seleccione el archivo.
 
@@ -234,16 +233,6 @@ En cualquier momento durante una sesión, puede cancelar un comando presionando 
 
 >[!WARNING]
 >El uso de este acceso directo no detendrá el comando en el lado del agente. Solo cancelará el comando en el portal. Por lo tanto, el cambio de operaciones como "remediate" puede continuar, mientras que el comando se cancela. 
-
-### <a name="automatically-run-prerequisite-commands"></a>Ejecutar automáticamente comandos de requisitos previos
-
-Algunos comandos tienen comandos de requisitos previos para ejecutarse. Si no ejecuta el comando de requisitos previos, se producirá un error. Por ejemplo, ejecutar el `download` comando sin devolverá un `fileinfo` error.
-
-Puede usar la marca automática para ejecutar automáticamente comandos de requisitos previos, por ejemplo:
-
-```console
-getfile c:\Users\user\Desktop\work.txt -auto
-```
 
 ## <a name="run-a-powershell-script"></a>Ejecutar un script de PowerShell 
 
@@ -286,7 +275,7 @@ La respuesta en directo admite tipos de salida de formato JSON y tabla. Para cad
 
 ## <a name="supported-output-pipes"></a>Canalizaciones de salida admitidas
 
-La respuesta en directo admite la canalización de salida a la CLI y al archivo. CLI es el comportamiento de salida predeterminado. Puede canalizar el resultado a un archivo mediante el siguiente comando: [command] > [filename].txt.  
+La respuesta en directo admite la canalización de salida a la CLI y al archivo. CLI es el comportamiento de salida predeterminado. Puede canalizar el resultado a un archivo mediante el siguiente comando: [comando] > [filename].txt.  
 
 Ejemplo:
 
@@ -297,7 +286,7 @@ processes > output.txt
 ## <a name="view-the-command-log"></a>Ver el registro de comandos
 
 Selecciona la **pestaña Registro de** comandos para ver los comandos usados en el dispositivo durante una sesión. Cada comando se realiza un seguimiento con detalles completos como:
-- Id.
+- ID
 - Línea de comandos
 - Duración
 - Estado y barra lateral de entrada o salida

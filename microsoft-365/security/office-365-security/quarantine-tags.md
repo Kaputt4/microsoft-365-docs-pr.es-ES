@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Los administradores pueden aprender a usar etiquetas de cuarentena para controlar lo que los usuarios pueden hacer con sus mensajes en cuarentena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 580cf2bad690d0fc6508d11178527ad218df763b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 512c589572502deacb5529ca9d6f2876861bf050
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205790"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274465"
 ---
 # <a name="quarantine-tags"></a>Etiquetas en cuarentena
 
@@ -42,6 +42,10 @@ Los permisos individuales se combinan en los siguientes grupos de permisos prees
 - Acceso completo
 
 Los permisos individuales disponibles y lo que se incluye o no en los grupos de permisos preestablecidos se describen en la tabla siguiente:
+
+<br>
+
+****
 
 |Permiso|Sin acceso|Acceso limitado|Acceso completo|
 |---|:---:|:---:|:---:|
@@ -126,6 +130,8 @@ El _parámetro EndUserQuarantinePermissionsValue_ usa un valor decimal que se co
 
 El orden y los valores necesarios para cada permiso individual en grupos de permisos preestablecidos se describen en la tabla siguiente:
 
+<br>
+
 ****
 
 |Permiso|Sin acceso|Acceso limitado|Acceso completo|
@@ -140,6 +146,7 @@ El orden y los valores necesarios para cada permiso individual en grupos de perm
 |PermissionToViewHeader<sup>\*</sup>|0|0|0|
 |Valor binario|00000000|01101010|11101100|
 |Valor decimal que se usará|0|106|236|
+|
 
 <sup>\*</sup> Actualmente, este valor es siempre 0. Para PermissionToViewHeader, el valor 0  no oculta el botón Ver encabezado del mensaje en los detalles del mensaje en cuarentena (el botón siempre está disponible).
 
@@ -225,15 +232,17 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Ne
 
 En _las características_ de protección admitidas que ponen en cuarentena mensajes o archivos (automáticamente o como una acción configurable), puede asignar una etiqueta de cuarentena a las acciones de cuarentena disponibles. Las características que ponen en cuarentena los mensajes y la disponibilidad de etiquetas de cuarentena se describen en la siguiente tabla:
 
+<br>
+
 ****
 
 |Característica|¿Se admiten etiquetas de cuarentena?|Etiquetas de cuarentena predeterminadas usadas|
 |---|:---:|---|
 |[Directivas contra correo no deseado:](configure-your-spam-filter-policies.md) <ul><li>**Correo no deseado** (_SpamAction_)</li><li>**Correo no deseado de elevada** confianza (_HighConfidenceSpamAction_)</li><li>**Correo electrónico de phishing** (_PhishSpamAction_)</li><li>**Correo electrónico de phishing de elevada confianza** (_HighConfidencePhishAction_)</li><li>**Correo electrónico masivo** (_BulkSpamAction_)</li></ul>|Sí|<ul><li>DefaultSpamTag (acceso completo)</li><li>DefaultHighConfSpamTag (acceso completo)</li><li>DefaultPhishTag (acceso completo)</li><li>DefaultHighConfPhishTag (sin acceso)</li><li>DefaultBulkTag (acceso completo)</li></ul>
-|Directivas contra suplantación de identidad: <ul><li>[Protección de inteligencia suplantada](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protección de suplantación:](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)<sup>\*</sup> <ul><li>**Si un usuario suplantado** envía correo electrónico (_TargetedUserProtectionAction_)</li><li>**Si un dominio suplantado envía correo** electrónico (_TargetedDomainProtectionAction_)</li><li>**Inteligencia de buzones** \> **Si un usuario suplantado envía** correo electrónico (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|No|N/D|
-|[Directivas antimalware:](configure-anti-malware-policies.md)todos los mensajes detectados siempre se ponen en cuarentena.|No|N/D|
-|[Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)|No|N/D|
-|[Reglas de flujo de](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la cuarentena **hospedada** (_Cuarentena_).|No|N/D|
+|Directivas contra suplantación de identidad: <ul><li>[Protección de inteligencia suplantada](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protección de suplantación:](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)<sup>\*</sup> <ul><li>**Si un usuario suplantado** envía correo electrónico (_TargetedUserProtectionAction_)</li><li>**Si un dominio suplantado envía correo** electrónico (_TargetedDomainProtectionAction_)</li><li>**Inteligencia de buzones** \> **Si un usuario suplantado envía** correo electrónico (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|No|No aplicable|
+|[Directivas antimalware:](configure-anti-malware-policies.md)todos los mensajes detectados siempre se ponen en cuarentena.|No|No aplicable|
+|[Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md)|No|No aplicable|
+|[Reglas de flujo de](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) correo (también conocidas como reglas de transporte) con la acción: Entregar el mensaje a la cuarentena **hospedada** (_Cuarentena_).|No|No aplicable|
 |
 
 <sup>\*</sup> La configuración de protección de suplantación solo está disponible en las directivas contra suplantación de identidad en Microsoft Defender para Office 365.
@@ -456,7 +465,7 @@ Si la etiqueta de cuarentena asigna los permisos **de** acceso completo (todos l
 
 - **Notificaciones de correo no deseado del** usuario final: los botones siguientes están disponibles:
   - **Bloquear remitente**
-  - **Versión**
+  - **Release**
   - **Revisar**
 
   ![Botones disponibles en la notificación de correo no deseado del usuario final si la etiqueta de cuarentena concede al usuario permisos de acceso total](../../media/quarantine-tags-esn-full-access.png)

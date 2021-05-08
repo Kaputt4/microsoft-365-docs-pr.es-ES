@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f57d14427ef68280a065489e068955db9e5045a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 18afd4aa160ec345839d23719d1b3fcce21654ec
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934806"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246361"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Solución de problemas en Microsoft Defender para Endpoint en Android
 
@@ -55,7 +55,7 @@ Tienes instalada una versión anterior de la aplicación "Microsoft Authenticato
 
 **Solución:**
 
-Instalar la versión más reciente y [Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) de Google Play Store e intentarlo de nuevo
+Instalar la versión más reciente [y Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) de Google Play Store e intentarlo de nuevo
 
 ## <a name="sign-in-failed---invalid-license"></a>Error al iniciar sesión: licencia no válida
 
@@ -67,11 +67,15 @@ Instalar la versión más reciente y [Microsoft Authenticator](https://play.goog
 
 **Causa:**
 
-No tiene asignada la licencia de Microsoft 365 o su organización no tiene una licencia para la suscripción a Microsoft 365 Enterprise.
+No tiene asignada Microsoft 365 licencia o su organización no tiene una licencia para Microsoft 365 Enterprise suscripción.
 
 **Solución:**
 
 Póngase en contacto con el administrador para obtener ayuda.
+
+## <a name="report-unsafe-site"></a>Informe de sitio no seguro
+
+Los sitios web de suplantación de identidad suplantan sitios web de confianza con el fin de obtener su información personal o financiera. Visita la [página Proporcionar comentarios sobre la protección de](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) red si quieres informar de un sitio web que podría ser un sitio de suplantación de identidad.
 
 ## <a name="phishing-pages-arent-blocked-on-some-oem-devices"></a>Las páginas de suplantación de identidad no están bloqueadas en algunos dispositivos OEM
 

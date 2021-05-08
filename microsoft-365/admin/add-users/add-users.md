@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo agregar usuarios y asignar licencias a Microsoft 365 al mismo tiempo.
 ms.date: 07/01/2020
-ms.openlocfilehash: 6a1361d9cfebd2b305a71248fcbb461d0a68a052
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 3efa32d21a21ed12041f5731296c1b033374712f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107091"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274393"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Agregar usuarios y asignar licencias al mismo tiempo
 
@@ -40,7 +40,24 @@ Si ve esta página en el Centro de administración, se encuentra en la **vista s
 
 :::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Captura de pantalla: Vista simplificada del Centro de administración":::
 
+::: moniker range="o365-worldwide"
+
 1. Vaya al Centro de administración en <https://admin.microsoft.com>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+
+::: moniker-end 
+
 2. Seleccione **Crear una cuenta para otra persona**.
 3. En la página **Agregar una cuenta de usuario**, rellene el nombre y los apellidos, el nombre para mostrar y el nombre de usuario que usarán para iniciar sesión.
 4. Agregue la dirección de correo electrónico del usuario en el cuadro de texto **Hasta 5 direcciones de correo...**. Esto garantizará que el nuevo usuario obtiene la información que necesita para iniciar sesión en los servicios de Microsoft 365.
@@ -55,22 +72,15 @@ Si ve esta página en el Centro de administración, se encuentra en la **vista s
 
 ## <a name="add-users-one-at-a-time-in-the-dashboard-view"></a>Agregar usuarios uno a uno en la vista del panel
 
- ::: moniker range="o365-worldwide"
-
 :::image type="content" source="../../media/classic-admin-center.png" alt-text="Captura de pantalla: Vista del panel del Centro de administración":::
 
-1. Vaya al Centro de administración en <https://admin.microsoft.com>.
-2. Vaya a **Usuarios** > **Usuarios activos** y seleccione **Agregar un usuario**.
-3. En el **Configurar los conceptos básicos** panel, rellene la información básica del usuario y, a continuación, seleccione **Siguiente**.
-    - **Nombre** Rellene el nombre y los apellidos, el nombre para mostrar y el nombre de usuario.
-    - **Dominio** Elija el dominio para la cuenta del usuario. Por ejemplo, si el nombre de usuario es Pedro y el dominio es contoso.com, iniciarán sesión con pedro@contoso.com.
-    - **Configuración de contraseñas** Elija si quiere usar la contraseña autogenerada o crear su propia contraseña segura para el usuario.
-    - El usuario deberá cambiar su contraseña después de 90 días. También puede elegir la opción **Requerir que este usuario cambie su contraseña la primera vez que inicie sesión**.
-    - Elija si desea enviar la contraseña por correo electrónico cuando se agrega el usuario.
-4. En el panel **Asignar licencias de productos**, seleccione la ubicación y la licencia correspondiente para el usuario. Si no cuenta con ninguna licencia disponible, todavía puede agregar un usuario y comprar licencias adicionales. Expanda **Aplicaciones**, y active o desactive la selección de aplicaciones para limitar las aplicaciones para las que el usuario tiene licencia. Seleccione **Siguiente**.
-5. En el panel **Configuración opcional**, expanda **Roles** para convertir a este usuario en administrador. Expanda **Información del perfil** agregar información adicional sobre el usuario.
-6. Seleccione **Siguiente**, revise la configuración del nuevo usuario, realice los cambios que desee y a continuación seleccione **Terminar de agregar** y después **Cerrar**.
+::: moniker range="o365-worldwide"
 
+1. Vaya al Centro de administración en <https://admin.microsoft.com>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
 
 1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 

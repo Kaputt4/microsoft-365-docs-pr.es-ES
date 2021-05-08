@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Obtenga más información sobre Office 365 operado por 21Vianet que está diseñado para satisfacer las necesidades de servicios en la nube seguros, confiables y escalables en China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 92b69cc77f5c48af63651f2fd37761981ca45ad5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1ee7ba7be2e350195350a5c00e92ed10924657ac
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914347"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274369"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365 operado por 21Vianet
 
@@ -70,7 +70,7 @@ Si desea obtener información sobre cómo empezar a usar los servicios generales
    
 \*Servicios opcionales proporcionados directamente por Microsoft y sujetos a los Términos de servicio y las declaraciones de privacidad de Microsoft.
   
-## <a name="sharepoint-online"></a>SharePoint en linea
+## <a name="sharepoint-online"></a>SharePoint Online
 
 |||
 |:-----|:-----|
@@ -153,8 +153,8 @@ Use la tabla siguiente para obtener más información sobre la compatibilidad co
 |**Versión local de Exchange**|**MRM (archivo dividido)**|**Acceso de OWA (archivo dividido)**|**Exhibición de documentos electrónicos locales**|**Auditoría de buzones**|**Retención local/archivado**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 | Todo 2013 CU5  <br/> | Compatible <br/>  | No se admite <br/>  | Compatible <br/>  | Compatible  <br/> | Compatible <br/> |
-| Todo 2010 SP3 <br/>  | No admitido <br/>  | No admitido <br/>  | Compatible<sup>con 1</sup> <br/> | Compatible  <br/> | Compatible <br/>  |
-| Al menos un servidor CU5 anterior a 2013  <br/> | Compatible<sup>con 2</sup> <br/> | No admitido  <br/> | No admitido <br/> | Compatible  <br/> | Compatible <br/> |
+| Todo 2010 SP3 <br/>  | No se admite <br/>  | No se admite <br/>  | Compatible<sup>con 1</sup> <br/> | Compatible  <br/> | Compatible <br/>  |
+| Al menos un servidor CU5 anterior a 2013  <br/> | Compatible<sup>con 2</sup> <br/> | No se admite  <br/> | No se admite <br/> | Compatible  <br/> | Compatible <br/> |
 |||
 
 <sup>1</sup> Se requieren búsquedas independientes para buzones locales y de Exchange Online.  <br/> <sup>2</sup> Las directivas de movimiento a archivo de MRM se pueden usar para buzones ubicados en un servidor CU5 o posterior de Exchange 2013. 
@@ -197,7 +197,7 @@ Compartir datos de contacto de Exchange en dispositivos móviles Apple con Apple
 |Integración del panel de investigación en servicios de Bing  <br/> |No disponible.  <br/> |
 |Comprobador de accesibilidad  <br/> |No disponible.  <br/> |
 |Bloc de notas de clase  <br/> |No disponible.  <br/> |
-|Formularios  <br/> |No disponible.  <br/> |
+|Forms  <br/> |No disponible.  <br/> |
 |Lector envolvente  <br/> |No disponible.  <br/> |
 |Insertar imagen en línea  <br/> |No disponible.  <br/> |
 |Detalles de la reunión  <br/> |No disponible.  <br/> |
@@ -233,3 +233,11 @@ El RGPD concede a las personas (o a los interesados) ciertos derechos en relaci�
 - Los administradores de inquilinos pueden exportar los registros generados por el sistema para los servicios de Microsoft operados por 21Vianet mediante la exportación de registros de datos.
     
 Para obtener más información e instrucciones, vea Solicitudes de [interesados (DSR) para RGPD](https://www.trustcenter.cn/privacy/gdpr-office365.mdl).
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Pruebe o compre una suscripción a Microsoft 365 para empresas](../../commerce/try-or-buy-microsoft-365.md) (artículo)
+
+[Compatibilidad con Azure Information Protection para Office 365 operado por 21Vianet](parity-between-azure-information-protection.md) (artículo)
+
+[Ver la factura u obtener un Fapiao](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artículo)

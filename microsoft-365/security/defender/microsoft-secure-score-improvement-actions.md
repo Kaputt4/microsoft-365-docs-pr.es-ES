@@ -1,6 +1,6 @@
 ---
 title: Evaluar la posición de seguridad a través de Puntuación segura de Microsoft
-description: Describe cómo tomar medidas para mejorar la puntuación segura de Microsoft en el centro de seguridad de Microsoft 365.
+description: Describe cómo tomar medidas para mejorar la puntuación segura de Microsoft en el centro Microsoft 365 seguridad.
 keywords: puntuación segura de microsoft, puntuación segura, puntuación segura de office 365, puntuación de seguridad de Microsoft, centro de seguridad de Microsoft 365, acciones de mejora
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,31 +21,31 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 0b2b9f1f01a583a96e0ae663e3f78cb0a7d846fc
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 8b321fc8883cf490cb5b2814d5c2b617a52dbb29
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570605"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246402"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Evaluar la posición de seguridad con Puntuación segura de Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-La Puntuación de seguridad de Microsoft es una medida de la actitud de seguridad de una organización, donde un número más alto indica que se han tomado más acciones de mejora. Se puede encontrar en el Centro de https://security.microsoft.com/securescore [seguridad de Microsoft 365](overview-security-center.md).
+La Puntuación de seguridad de Microsoft es una medida de la actitud de seguridad de una organización, donde un número más alto indica que se han tomado más acciones de mejora. Se puede encontrar en https://security.microsoft.com/securescore el centro Microsoft 365 [seguridad.](overview-security-center.md)
 
 Para ayudarle a encontrar la información que necesita más rápidamente, las acciones de mejora de Microsoft se organizan en grupos:
 
-* Identity (cuentas de Azure Active Directory & roles)
+* Identidad (Azure Active Directory cuentas & roles)
 * Device (Microsoft Defender para endpoint, conocido como [Puntuación segura de Microsoft para dispositivos](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-* Aplicación (correo electrónico y aplicaciones en la nube, incluidas Office 365 y Microsoft Cloud App Security)
+* Aplicaciones (correo electrónico y aplicaciones en la nube, incluidas Office 365 y Microsoft Cloud App Security)
 
 >[!NOTE]
->En la versión reciente de Puntuación segura de Microsoft, se ha publicado un modelo de puntuación mejorado que hizo que La puntuación segura de Microsoft sea temporalmente incompatible con la puntuación segura de identidad y la API de Graph. [Ver detalles](microsoft-secure-score-whats-new.md)
+>En la versión reciente de Puntuación segura de Microsoft, se ha publicado un modelo de puntuación mejorado que hizo que Puntuación segura de Microsoft sea temporalmente incompatible con la puntuación segura de identidad y la API Graph puntuación. [Ver detalles](microsoft-secure-score-whats-new.md)
 
 En la página Introducción a la puntuación segura de Microsoft, vea cómo se dividen los puntos entre estos grupos y qué puntos están disponibles. También puedes obtener una vista general de la puntuación total, la tendencia histórica de tu puntuación segura con comparaciones comparativas comparativas y las acciones de mejora prioritarias que se pueden realizar para mejorar la puntuación.
 
-![Página principal de puntuación segura](../../media/secure-score/secure-score-homepage-new.png)
+![Página principal de puntuación segura](../../media/secure-score/secure-score-home-page.png)
 
 ## <a name="check-your-current-score"></a>Comprobar la puntuación actual
 
@@ -61,7 +61,7 @@ Las siguientes son las puntuaciones que puedes agregar a tu vista de la puntuaci
 
 Esta vista es la que tendrá si has incluido todas las vistas de puntuación posibles:
 
-![Su puntuación segura, incluida la puntuación planeada, la puntuación de licencia actual y la puntuación alcanzable](../../media/secure-score/your-secure-score.png)
+![Su puntuación segura, incluida la puntuación planeada, la puntuación de licencia actual y la puntuación alcanzable](../../media/secure-score/secure-score-achievable.png)
 
 ## <a name="take-action-to-improve-your-score"></a>Tomar medidas para mejorar la puntuación
 
@@ -81,7 +81,7 @@ Para completar la acción, tienes algunas opciones:
 
 - Seleccione **Administrar** para ir a la pantalla de configuración y realizar el cambio. A continuación, obtendrás los puntos que vale la acción, visibles en el vuelo hacia fuera. Los puntos suelen tardar unas 24 horas en actualizarse.
 
-- Seleccione **Compartir** para copiar el vínculo directo a la acción de mejora. También puede elegir la plataforma para compartir el vínculo, como correo electrónico, Microsoft Teams, Microsoft Planner o ServiceNow. Si selecciona ServiceNow, podrá crear un vale de cambio que estará visible en ServiceNow y en la casa del centro de seguridad de Microsoft 365. Para obtener más información, vea Centro de [seguridad de Microsoft 365 e Integración de ServiceNow](./tickets.md).
+- Seleccione **Compartir** para copiar el vínculo directo a la acción de mejora. También puede elegir la plataforma para compartir el vínculo, como correo electrónico, Microsoft Teams o Microsoft Planner.
 
 Agrega **notas** para realizar un seguimiento del progreso o cualquier otra cosa en la que quieras comentar. Si agrega sus propias **etiquetas a** la acción de mejora, puede filtrar por dichas etiquetas.
 
@@ -94,9 +94,9 @@ Elija los estados y las notas de registro específicas de la acción de mejora.
 - **Riesgo aceptado:** la seguridad siempre debe estar equilibrada con la facilidad de uso y no todas las recomendaciones funcionarán para su entorno. Cuando ese es el caso, puede optar por aceptar el riesgo, o el riesgo restante, y no aplicar la acción de mejora. No se le dará ningún punto, pero la acción ya no estará visible en la lista de acciones de mejora. Puede ver esta acción en el historial o deshacerla en cualquier momento.
 - **Resuelto a través de** terceros y **Resuelto** mediante mitigación alternativa: la acción de mejora ya ha sido abordada por una aplicación o software de terceros, o una herramienta interna. Obtendrás los puntos que vale la acción, por lo que tu puntuación refleja mejor tu posición de seguridad general. Si una herramienta interna o de terceros ya no cubre el control, puede elegir otro estado. Tenga en cuenta que Microsoft no tendrá visibilidad sobre la integridad de la implementación si la acción de mejora se marca como uno de estos estados.
 
-#### <a name="threat--vulnerability-management-improvement-actions"></a>Acciones de & de administración de vulnerabilidades
+#### <a name="threat--vulnerability-management-improvement-actions"></a>Acciones de & administración de vulnerabilidades de amenazas
 
-Para las acciones de mejora en la categoría "Dispositivo", no puedes elegir estados. En su lugar, se le [](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) dirigirá a la recomendación de seguridad de administración de amenazas y vulnerabilidades asociada en el Centro de seguridad de [Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/use) para tomar medidas. La excepción que elija y la justificación que escriba será específica de ese portal. No estará presente en el portal de puntuación segura de Microsoft.
+Para las acciones de mejora en la categoría "Dispositivo", no puedes elegir estados. En su lugar, se le dirigirá a la recomendación de Administración de amenazas y vulnerabilidades [de](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) seguridad asociada [en el Centro de seguridad de Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/use) para tomar medidas. La excepción que elija y la justificación que escriba será específica de ese portal. No estará presente en el portal de puntuación segura de Microsoft.
 
 #### <a name="completed-improvement-actions"></a>Acciones de mejora completadas
 

@@ -3,7 +3,7 @@ title: Introducción al panel de seguridad
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: denisebmsft
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 description: Use el nuevo Panel de seguridad para revisar el estado de protección contra amenazas de Office 365 y ver y actuar en alertas de seguridad.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7114776f686d25808c141a07b8cb2868cc67615d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8c9a49b9b8fc1edd9b2928250e8cae135acb75f4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205646"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274417"
 ---
 # <a name="security-dashboard"></a>Panel de seguridad
 
@@ -71,7 +71,7 @@ Los detalles dependen de si su suscripción a Microsoft 365 incluye [Exchange On
 |Si la suscripción incluye...|Verá estos detalles|
 |---|---|
 |EOP pero no Microsoft Defender para Office 365|Correo electrónico malintencionado detectado y bloqueado por EOP.<p> Consulte [Informe de estado de protección contra amenazas (EOP).](view-email-security-reports.md#threat-protection-status-report)|
-|Microsoft Defender para Office 365|Contenido malintencionado y correo electrónico malintencionado detectado y bloqueado por EOP y Defender para Office 365 <p> Recuento agregado de mensajes de correo electrónico únicos con contenido malintencionado bloqueado por el motor antimalware, purga automática [](safe-attachments.md)de cero horas y características de Defender para Office 365 (incluidos vínculos [seguros,](safe-links.md)datos adjuntos seguros y anti phishing en Defender para [Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). [](zero-hour-auto-purge.md) <p> Consulte [Informe de estado de protección contra amenazas](view-reports-for-mdo.md#threat-protection-status-report).|
+|Microsoft Defender para Office 365|Contenido malintencionado y correo electrónico malintencionado detectado y bloqueado por EOP y Defender para Office 365 <p> Recuento agregado de mensajes de correo electrónico únicos con contenido malintencionado bloqueado por el motor antimalware, purga automática [](safe-attachments.md)de cero horas y características de Defender para Office 365 (incluidos vínculos [seguros,](safe-links.md)datos adjuntos seguros y anti phishing en Defender para [Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)). [](zero-hour-auto-purge.md) <p> Consulte [Informe de estado de protección contra amenazas](view-reports-for-mdo.md#threat-protection-status-report).|
 
 Para ver o obtener acceso al widget Estado de protección contra amenazas, debe tener permisos para ver informes de Defender para Office 365. Para obtener más información, vea ¿Qué permisos son necesarios para ver los informes de [Defender para Office 365?](view-reports-for-mdo.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 
@@ -87,7 +87,7 @@ Las métricas se calculan como se describe en la tabla siguiente:
 |---|---|
 |Mensajes analizados|Número de mensajes de correo electrónico analizados multiplicado por el número de destinatarios|
 |Amenazas detenidas|Número de mensajes de correo electrónico identificados como que contienen malware multiplicado por el número de destinatarios|
-|Bloqueado por [Defender para Office 365 ](defender-for-office-365.md)|Número de mensajes de correo electrónico bloqueados por Defender para Office 365 multiplicado por el número de destinatarios|
+|Bloqueado por [Defender para Office 365](defender-for-office-365.md)|Número de mensajes de correo electrónico bloqueados por Defender para Office 365 multiplicado por el número de destinatarios|
 |Eliminado después de la entrega|Número de mensajes eliminados por purga automática de [cero](zero-hour-auto-purge.md) horas multiplicado por el número de destinatarios|
 
 ## <a name="malware"></a>Malware
@@ -96,7 +96,7 @@ Los widgets de malware muestran detalles sobre tendencias de malware y tipos de 
 
 ![Tendencias de malware y tipos de familia](../../media/malwarewidgetatpe5.png)
 
-## <a name="insights"></a>Enfoques
+## <a name="insights"></a>Insights
 
 Las insights no solo son problemas fundamentales de superficie que debes revisar, sino que también incluyen recomendaciones y acciones que debes tener en cuenta.
 

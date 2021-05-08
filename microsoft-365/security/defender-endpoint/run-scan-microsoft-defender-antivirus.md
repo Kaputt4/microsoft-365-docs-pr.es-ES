@@ -1,6 +1,6 @@
 ---
-title: Ejecutar y personalizar exámenes a petición en Microsoft Defender AV
-description: Ejecutar y configurar exámenes a petición con PowerShell, Instrumental de administración de Windows o individualmente en puntos de conexión con la aplicación Seguridad de Windows
+title: Ejecutar y personalizar exámenes a petición en Antivirus de Microsoft Defender
+description: Ejecutar y configurar exámenes a petición con PowerShell, Windows Management Instrumentation o individualmente en puntos de conexión con la Seguridad de Windows aplicación
 keywords: análisis, a petición, dos, intune, examen instantáneo
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -11,18 +11,19 @@ localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/13/2020
+ms.date: 05/05/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 976531e1b7e1b87c4cd2dd2af66f294f68c5d4f1
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: how-to
+ms.openlocfilehash: 8b6889a2eabcfb777983be79d78060165497de72
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764404"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246349"
 ---
-# <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Configurar y ejecutar exámenes de Antivirus de Microsoft Defender a petición
+# <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Configurar y ejecutar análisis bajo petición en el Antivirus de Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +35,7 @@ Puede ejecutar un examen a petición en puntos de conexión individuales. Estos 
 
 ## <a name="quick-scan-versus-full-scan"></a>Examen rápido frente a examen completo
 
-El examen rápido examina todas las ubicaciones donde podría haber malware registrado para empezar con el sistema, como las claves del Registro y las carpetas de inicio conocidas de Windows.
+El examen rápido examina todas las ubicaciones en las que podría haber malware registrado para empezar con el sistema, como las claves del Registro y las carpetas de inicio Windows de inicio.
 
 > [!IMPORTANT]
 > Antivirus de Microsoft Defender se ejecuta en el contexto de la cuenta [LocalSystem](/windows/win32/services/localsystem-account) al realizar un examen local. Para los exámenes de red, usa el contexto de la cuenta del dispositivo. Si la cuenta de dispositivo de dominio no tiene los permisos adecuados para acceder al recurso compartido, el examen no funcionará. Asegúrese de que el dispositivo tiene permisos para el recurso compartido de red de acceso.
@@ -50,15 +51,15 @@ Un examen completo puede ser útil en puntos de conexión que han notificado una
 
 ## <a name="use-microsoft-endpoint-manager-to-run-a-scan"></a>Usar Microsoft Endpoint Manager para ejecutar un examen
 
-1. Vaya al Centro de administración de Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
+1. Vaya al Centro Microsoft Endpoint Manager administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
 2. Elija **Endpoint security**  >  **Antivirus**.
-3. En la lista de pestañas, selecciona Puntos de conexión en mal estado de **Windows 10.**
+3. En la lista de pestañas, **seleccione Windows 10 extremos en mal estado.**
 4. En la lista de acciones proporcionadas, seleccione **Examen rápido** o **Examen completo.**
 
 [![IMAGE ](images/mem-antivirus-scan-on-demand.png)](images/mem-antivirus-scan-on-demand.png#lightbox)
 
 > [!TIP]
-> Para obtener más información acerca del uso de Microsoft Endpoint Manager para ejecutar un examen, vea [Antimalware and firewall tasks: How to perform an on-demand scan](/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers).
+> Para obtener más información acerca del Microsoft Endpoint Manager para ejecutar un examen, vea [Antimalware and firewall tasks: How to perform an on-demand scan](/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers).
 
 ## <a name="use-the-mpcmdrunexe-command-line-utility-to-run-a-scan"></a>Usar la utilidad mpcmdrun.exe línea de comandos para ejecutar un examen
 
@@ -68,17 +69,17 @@ Use el parámetro `-scan` siguiente:
 mpcmdrun.exe -scan -scantype 1
 ```
 
-Para obtener más información acerca de cómo usar la herramienta y los parámetros adicionales, como iniciar un examen completo o definir rutas de acceso, vea Usar la herramienta de línea de comandos mpcmdrun.exe para configurar y administrar Antivirus de [Microsoft Defender](command-line-arguments-microsoft-defender-antivirus.md).
+Para obtener más información acerca de cómo usar la herramienta y los parámetros adicionales, incluido el inicio de un examen completo o la definición de rutas de acceso, vea Usar la herramienta de línea de comandos mpcmdrun.exe para configurar y administrar [Antivirus de Microsoft Defender](command-line-arguments-microsoft-defender-antivirus.md).
 
 ## <a name="use-microsoft-intune-to-run-a-scan"></a>Usar Microsoft Intune para ejecutar un examen
 
-1. Vaya al Centro de administración de Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
+1. Vaya al Centro Microsoft Endpoint Manager administración ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) e inicie sesión.
 2. En la barra lateral, selecciona **Dispositivos > Todos** los dispositivos y elige el dispositivo que quieras examinar.
 3. Seleccione **... Más**. En las opciones, seleccione **Examen rápido** o **Examen completo**.
 
-## <a name="use-the-windows-security-app-to-run-a-scan"></a>Usar la aplicación Seguridad de Windows para ejecutar un examen
+## <a name="use-the-windows-security-app-to-run-a-scan"></a>Usar la Seguridad de Windows para ejecutar un examen
 
-Consulta [Ejecutar un examen en la aplicación seguridad de Windows](microsoft-defender-security-center-antivirus.md) para obtener instrucciones sobre cómo ejecutar un examen en puntos de conexión individuales.
+Consulta [Ejecutar un examen en la aplicación Seguridad de Windows para](microsoft-defender-security-center-antivirus.md) obtener instrucciones sobre cómo ejecutar un examen en puntos de conexión individuales.
 
 ## <a name="use-powershell-cmdlets-to-run-a-scan"></a>Usar cmdlets de PowerShell para ejecutar un examen
 
@@ -88,9 +89,9 @@ Use el siguiente cmdlet:
 Start-MpScan
 ```
 
-Para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender, vea [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/).
+Para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/).
 
-## <a name="use-windows-management-instruction-wmi-to-run-a-scan"></a>Usar Windows Management Instruction (WMI) para ejecutar un examen
+## <a name="use-windows-management-instruction-wmi-to-run-a-scan"></a>Usar Windows de administración de documentos (WMI) para ejecutar un examen
 
 Use el [ **método Start**](/previous-versions/windows/desktop/defender/start-msft-mpscan) de la **MSFT_MpScan** clase.
 
@@ -98,6 +99,6 @@ Para obtener más información acerca de los parámetros permitidos, [vea Window
 
 ## <a name="related-articles"></a>Artículos relacionados
 
-- [Configurar opciones de análisis de Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)
-- [Configurar exámenes programados de Antivirus de Microsoft Defender](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+- [Configurar opciones de análisis del Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+- [Configurar exámenes Antivirus de Microsoft Defender programados](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)
