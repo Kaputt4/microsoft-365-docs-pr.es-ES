@@ -1,0 +1,66 @@
+---
+title: Programador para Microsoft 365 preguntas frecuentes
+ms.author: v-aiyengar
+author: AshaIyengar21
+manager: serdars
+audience: Admin
+ms.topic: article
+ms.service: scheduler
+localization_priority: Normal
+description: Programador para Microsoft 365 preguntas frecuentes
+ms.openlocfilehash: 12c2c00761b9a10fac6c62bc4d7ff5909ac935a7
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/08/2021
+ms.locfileid: "52286266"
+---
+# <a name="scheduler-for-microsoft-365-faqs"></a><span data-ttu-id="19c4f-103">Programador para Microsoft 365 preguntas frecuentes</span><span class="sxs-lookup"><span data-stu-id="19c4f-103">Scheduler for Microsoft 365 FAQs</span></span>
+
+<span data-ttu-id="19c4f-104">**Pregunta:** ¿Cómo se integra Scheduler con otras características de Cortana, como *Cortana para Windows,* *Daily Briefing Email* y *Reproducir Mis correos electrónicos?*</span><span class="sxs-lookup"><span data-stu-id="19c4f-104">**Question:** How does Scheduler integrate with other Cortana features, such as *Cortana for Windows*, *Daily Briefing Email*, and *Play My Emails*?</span></span></br>
+<span data-ttu-id="19c4f-105">Scheduler es un servicio independiente de otras características de Cortana.</span><span class="sxs-lookup"><span data-stu-id="19c4f-105">Scheduler is an independent service from other Cortana features.</span></span> <span data-ttu-id="19c4f-106">Otras características de Cortana se pueden deshabilitar en el nivel de inquilino y el Programador aún se puede habilitar mediante el uso de la cortana@yourdomain.com de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="19c4f-106">Other Cortana features can be disabled at the tenant level, and Scheduler can still be enabled by using the cortana@yourdomain.com email address.</span></span> <span data-ttu-id="19c4f-107">Actualmente, los usuarios solo pueden interactuar con el Programador por correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="19c4f-107">Currently, users can only interact with Scheduler via email.</span></span>
+
+<span data-ttu-id="19c4f-108">**Pregunta:** ¿Funciona solo con Outlook?</span><span class="sxs-lookup"><span data-stu-id="19c4f-108">**Question:** Does this work only with Outlook?</span></span> <span data-ttu-id="19c4f-109">¿Se admiten otros productos de correo electrónico?</span><span class="sxs-lookup"><span data-stu-id="19c4f-109">Are other email products supported?</span></span></br>
+<span data-ttu-id="19c4f-110">Siempre que tenga una licencia, aparte de los tres requisitos anteriores, los usuarios pueden enviar cortana@yourdomain.com correo electrónico desde cualquier cliente de correo electrónico en cualquier dispositivo.</span><span class="sxs-lookup"><span data-stu-id="19c4f-110">As long as you have a license, Other than the three requirements above, users can email cortana@yourdomain.com from any email client on any device.</span></span>
+
+<span data-ttu-id="19c4f-111">**Pregunta:** ¿Los contactos pueden estar en una lista de contactos personal en Outlook y GAL u otra empresa equivalente?</span><span class="sxs-lookup"><span data-stu-id="19c4f-111">**Question:** Can contacts be in a personal contact list on Outlook and GAL or other company equivalent?</span></span></br>
+<span data-ttu-id="19c4f-112">Los asistentes a la reunión pueden ser cualquier persona con una dirección de correo electrónico dentro o fuera de la empresa.</span><span class="sxs-lookup"><span data-stu-id="19c4f-112">Meeting attendees can be anyone with an email address inside or outside the company.</span></span> <span data-ttu-id="19c4f-113">Desafortunadamente, el Programador no puede traducir automáticamente nombres a direcciones de correo electrónico o alias si lo busca en la GAL actual.</span><span class="sxs-lookup"><span data-stu-id="19c4f-113">Unfortunately, Scheduler cannot automatically translate names to email addresses / alias by looking it up in the GAL today.</span></span>
+
+<span data-ttu-id="19c4f-114">**Pregunta:** ¿Puedo usar Scheduler con mi versión instalada (local) de Outlook?</span><span class="sxs-lookup"><span data-stu-id="19c4f-114">**Question:** Can I use Scheduler with my installed version (on-premises) version of Outlook?</span></span></br>
+<span data-ttu-id="19c4f-115">El programador requiere Exchange Online.</span><span class="sxs-lookup"><span data-stu-id="19c4f-115">Scheduler requires Exchange Online.</span></span> <span data-ttu-id="19c4f-116">No funciona con Exchange Server (on-prem).</span><span class="sxs-lookup"><span data-stu-id="19c4f-116">Does not work with Exchange Server (On-Prem).</span></span> <span data-ttu-id="19c4f-117">Funciona con cualquier cliente de correo electrónico, Outlook escritorio, OWA, iOS, android, gmail, y así sucesivamente.</span><span class="sxs-lookup"><span data-stu-id="19c4f-117">Works with any email client, Outlook Desktop, OWA, iOS, android, gmail, and so on.</span></span>
+
+<span data-ttu-id="19c4f-118">**Pregunta:** ¿Outlook debe estar abierto en segundo plano?</span><span class="sxs-lookup"><span data-stu-id="19c4f-118">**Question:** Does Outlook have to be open in the background?</span></span></br>
+<span data-ttu-id="19c4f-119">Outlook no es necesario que esté abierto en segundo plano.</span><span class="sxs-lookup"><span data-stu-id="19c4f-119">Outlook doesn't need to be open in the background.</span></span> <span data-ttu-id="19c4f-120">Todo lo que necesita hacer es enviar un correo a Cortana y confiar en él para realizar la mayor parte del trabajo.</span><span class="sxs-lookup"><span data-stu-id="19c4f-120">All you need to do is send Cortana a mail and rely on it to do the bulk of the work.</span></span>
+
+## <a name="frequently-asked-trust-and-privacy-questions"></a><span data-ttu-id="19c4f-121">Preguntas más frecuentes sobre confianza y privacidad</span><span class="sxs-lookup"><span data-stu-id="19c4f-121">Frequently Asked Trust and Privacy Questions</span></span>
+
+<span data-ttu-id="19c4f-122">**Pregunta:** ¿Cómo funciona scheduler?</span><span class="sxs-lookup"><span data-stu-id="19c4f-122">**Question:** How does Scheduler work?</span></span></br>
+<span data-ttu-id="19c4f-123">El programador usa inteligencia de programación (IA) aumentada con asistentes humanos.</span><span class="sxs-lookup"><span data-stu-id="19c4f-123">Scheduler uses Scheduling Intelligence (AI) augmented with human assistants.</span></span> <span data-ttu-id="19c4f-124">Si los modelos de IA generan una necesidad de soporte técnico en el lenguaje natural de comunicación con Cortana, la solicitud de reunión se escala a un humano para su revisión y finalización.</span><span class="sxs-lookup"><span data-stu-id="19c4f-124">If AI models generate a need for support in the natural language of communication with Cortana, the meeting request escalates to a human for review and completion.</span></span>
+
+<span data-ttu-id="19c4f-125">**Pregunta:** Quién son los humanos que revisan solicitudes escaladas?</span><span class="sxs-lookup"><span data-stu-id="19c4f-125">**Question:** Who are the humans that review escalated requests?</span></span> </br>
+<span data-ttu-id="19c4f-126">Los asistentes del programador están certificados por Microsoft Supplier Security and Privacy Assurance (SSPA) para obtener información personal y extremadamente confidencial.</span><span class="sxs-lookup"><span data-stu-id="19c4f-126">Scheduler assistants are Microsoft Supplier Security and Privacy Assurance (SSPA) certified for personal and highly confidential information.</span></span> 
+
+<span data-ttu-id="19c4f-127">**Pregunta:** ¿Qué pueden ver los asistentes de SSPA?</span><span class="sxs-lookup"><span data-stu-id="19c4f-127">**Question:** What can SSPA Assistants view?</span></span></br>
+<span data-ttu-id="19c4f-128">El programador y los asistentes de SSPA pueden ver los correos electrónicos dirigidos a Cortana.</span><span class="sxs-lookup"><span data-stu-id="19c4f-128">Scheduler and the SSPA Assistants can view  the emails that are addressed to Cortana.</span></span> <span data-ttu-id="19c4f-129">En un intercambio de correo electrónico con subprocesos, solo se procesarán los correos electrónicos que incluyan la dirección de correo electrónico de Cortana, no los correos electrónicos anteriores en el subproceso antes de agregar Cortana.</span><span class="sxs-lookup"><span data-stu-id="19c4f-129">In a threaded email exchange, only the emails that include Cortana’s email address will be processed, not the previous emails in the thread before Cortana was added.</span></span>   
+
+<span data-ttu-id="19c4f-130">**Pregunta:** ¿Se conservan los datos del cliente en el objeto Data Flow?</span><span class="sxs-lookup"><span data-stu-id="19c4f-130">**Question:** Is customer data retained in the Scheduler’s Data Flow?</span></span> </br>
+<span data-ttu-id="19c4f-131">El programador almacena todo el contenido del cliente dentro de los límites del espacio empresarial y retiene los datos de acuerdo con las directrices del RGPD, las directivas de Microsoft 365 confianza & privacidad y las directivas de correo electrónico del inquilino.</span><span class="sxs-lookup"><span data-stu-id="19c4f-131">Scheduler stores all customer content within the tenant boundaries and retains data in accordance with GDPR guidelines, Microsoft 365 Trust & Privacy policies, and tenant email policies.</span></span>
+
+<span data-ttu-id="19c4f-132">**Pregunta:** ¿Cómo procesa scheduler los datos de disponibilidad de los asistentes internos?</span><span class="sxs-lookup"><span data-stu-id="19c4f-132">**Question:** How does Scheduler process the free/busy data of internal attendees?</span></span> </br>
+<span data-ttu-id="19c4f-133">La automatización del programador usa el *servicio findMeetingTimes* para identificar las horas que están disponibles mutuamente para los asistentes y el organizador.</span><span class="sxs-lookup"><span data-stu-id="19c4f-133">Scheduler’s automation uses the *findMeetingTimes* service to identify times that are mutually available for attendees and the organizer.</span></span> <span data-ttu-id="19c4f-134">Este servicio ofrece otras Outlook experiencias como *Horarios sugeridos* en el Outlook de reunión.</span><span class="sxs-lookup"><span data-stu-id="19c4f-134">This service powers other Outlook experiences such as *Suggested Times* in the Outlook meeting form.</span></span> <span data-ttu-id="19c4f-135">La información de los asistentes de disponibilidad no se consume explícitamente como bloques de disponibilidad.</span><span class="sxs-lookup"><span data-stu-id="19c4f-135">Free/busy attendee information is not consumed explicitly as free/busy blocks.</span></span> 
+
+<span data-ttu-id="19c4f-136">**Pregunta:** ¿Es compatible el RGPD del programador?</span><span class="sxs-lookup"><span data-stu-id="19c4f-136">**Question:** Is Scheduler GDPR Compliant?</span></span> </br>
+<span data-ttu-id="19c4f-137">Sí.</span><span class="sxs-lookup"><span data-stu-id="19c4f-137">Yes.</span></span>
+
+<span data-ttu-id="19c4f-138">**Pregunta:** Quién tiene acceso al buzón de Cortana?</span><span class="sxs-lookup"><span data-stu-id="19c4f-138">**Question:** Who has access to the Cortana mailbox?</span></span> </br>
+<span data-ttu-id="19c4f-139">El programador procesa las solicitudes de reunión y los correos electrónicos asociados que se envían al buzón de Cortana del inquilino.</span><span class="sxs-lookup"><span data-stu-id="19c4f-139">Scheduler processes meeting requests and associated emails that are sent to your tenant’s Cortana mailbox.</span></span> <span data-ttu-id="19c4f-140">Microsoft no tiene ningún otro acceso al buzón de Cortana excepto a través de la aprobación de la caja de seguridad a petición del administrador del espacio empresarial.</span><span class="sxs-lookup"><span data-stu-id="19c4f-140">Microsoft does not have any other access to the Cortana mailbox except through Lockbox approval at the request of the tenant admin.</span></span>  
+
+<span data-ttu-id="19c4f-141">**Pregunta:** ¿Se usan datos de clientes para entrenar modelos de inteligencia artificial?</span><span class="sxs-lookup"><span data-stu-id="19c4f-141">**Question:** Is customer data used for training AI models?</span></span></br>
+<span data-ttu-id="19c4f-142">No se puede usar ningún contenido de cliente de Scheduler Microsoft 365 para conjuntos de aprendizaje de datos.</span><span class="sxs-lookup"><span data-stu-id="19c4f-142">No customer content from Scheduler for Microsoft 365 can be used for data training sets.</span></span> <span data-ttu-id="19c4f-143">Todo el contenido del cliente reside en el inquilino del cliente.</span><span class="sxs-lookup"><span data-stu-id="19c4f-143">All customer content resides in the customer tenant.</span></span>  
+
+<span data-ttu-id="19c4f-144">**Pregunta:** ¿El programador procesará el correo cifrado?</span><span class="sxs-lookup"><span data-stu-id="19c4f-144">**Question:** Will Scheduler process encrypted mail?</span></span></br>
+<span data-ttu-id="19c4f-145">No, el flujo de trabajo del Programador rechazará el correo cifrado.</span><span class="sxs-lookup"><span data-stu-id="19c4f-145">No, encrypted mail will be rejected by the Scheduler workflow.</span></span> 
+
+
+
+
