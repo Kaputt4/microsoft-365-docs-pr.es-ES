@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Use una directiva de retención para controlar de forma eficaz el contenido que los usuarios generan con el correo electrónico, los documentos y las conversaciones. Conserve lo que desee y libérese de lo que no quiere.
-ms.openlocfilehash: 9e7ab359297ef1402fa64bc754591a4be3140af0
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1faeae5dc145d6f908f9137387b875c890d22e14
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269509"
+ms.locfileid: "52280432"
 ---
 # <a name="create-and-configure-retention-policies"></a>Crear y configurar directivas de retención
 
@@ -85,7 +85,7 @@ Si tiene más de una directiva de retención y, además, utiliza etiquetas de re
 
 5. Finalice el asistente para guardar la configuración.
 
-Para información general sobre cuándo usar las directivas de retención para Teams, consulte [Directivas de retención en Microsoft Teams](/microsoftteams/retention-policies) en la documentación de Teams.
+Para obtener instrucciones sobre cuándo usar directivas de retención para Teams y conocer la experiencia del usuario final, vea [Administrar directivas de retención para Microsoft Teams](/microsoftteams/retention-policies) en la documentación de Teams.
 
 Para obtener detalles técnicos sobre el funcionamiento de la retención de Teams, incluidos los elementos de los mensajes admitidos para la retención e información sobre los períodos de tiempo con tutoriales de ejemplo, vea [Más información sobre la retención de Microsoft Teams](retention-policies-teams.md).
 

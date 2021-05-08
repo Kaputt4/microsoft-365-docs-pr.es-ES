@@ -106,9 +106,9 @@
                       href: first-incident-overview.md
                     - name: Preparación
                       href: first-incident-prepare.md
-                    - name: "Paso\_1. Triage and analyze"
+                    - name: Paso 1. Triage and analyze
                       href: first-incident-analyze.md
-                    - name: "Paso\_2. Corrección"
+                    - name: Paso 2. Corrección
                       href: first-incident-remediate.md
                     - name: Paso 3. Revisar
                       href: first-incident-post.md
@@ -116,7 +116,7 @@
                       items:
                         - name: Correo de suplantación de identidad
                           href: first-incident-path-phishing.md
-                        - name: Identity
+                        - name: Identidad
                           href: first-incident-path-identity.md
             - name: Obtener tus notificaciones de correo electrónico
               href: get-incident-notifications.md
@@ -130,11 +130,11 @@
               href: m365d-remediation-actions.md
             - name: Visite el Centro de actividades
               href: m365d-action-center.md
-            - name: Aprobar o rechazar acciones correctivas
+            - name: Ver y administrar acciones de corrección
               href: m365d-autoir-actions.md
             - name: Ver detalles y resultados de las investigaciones automatizadas
               href: m365d-autoir-results.md
-            - name: Informar sobre falsos positivos/negativos
+            - name: Dirección de falsos positivos/negativos
               href: m365d-autoir-report-false-positives-negatives.md
         - name: Búsqueda avanzada
           items:

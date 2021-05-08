@@ -1,27 +1,28 @@
 ---
-title: Configurar el período de tiempo de espera de bloqueo de nube de Antivirus de Microsoft Defender
-description: Puede configurar durante cuánto tiempo antivirus de Microsoft Defender bloqueará la ejecución de un archivo mientras espera una determinación de nube.
+title: Configurar el período Antivirus de Microsoft Defender de tiempo de espera del bloque de nube
+description: Puede configurar cuánto tiempo Antivirus de Microsoft Defender bloqueará la ejecución de un archivo mientras espera una determinación de nube.
 keywords: Antivirus de Microsoft Defender, antimalware, seguridad, defender, nube, tiempo de espera, bloqueo, punto, segundos
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 372d679f45d6f87392b612f757e6bdf1c6c6b9ad
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 02b8ee1c73116718d771847a43d6334e0723bd5c
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765808"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275317"
 ---
-# <a name="configure-the-cloud-block-timeout-period"></a>Configurar el período de tiempo de espera del bloque de nube
+# <a name="configure-the-cloud-block-timeout-period"></a>Configurar el período de espera de bloqueo en la nube
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,9 +31,9 @@ ms.locfileid: "51765808"
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 
-Cuando Antivirus de Microsoft Defender encuentra un archivo sospechoso, puede impedir que el archivo se ejecute mientras consulta el servicio en la nube [de Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md).
+Cuando Antivirus de Microsoft Defender encuentra un archivo sospechoso, puede impedir que el archivo se ejecute mientras consulta el servicio [Antivirus de Microsoft Defender nube](cloud-protection-microsoft-defender-antivirus.md).
 
-El período predeterminado en el que se [bloqueará el archivo](configure-block-at-first-sight-microsoft-defender-antivirus.md) es de 10 segundos. Puede especificar un período de tiempo adicional para esperar antes de que se pueda ejecutar el archivo. Esto puede ayudar a garantizar que hay suficiente tiempo para recibir una determinación adecuada del servicio en la nube de Antivirus de Microsoft Defender.
+El período predeterminado en el que se [bloqueará el archivo](configure-block-at-first-sight-microsoft-defender-antivirus.md) es de 10 segundos. Puede especificar un período de tiempo adicional para esperar antes de que se pueda ejecutar el archivo. Esto puede ayudar a garantizar que hay suficiente tiempo para recibir una determinación adecuada del servicio Antivirus de Microsoft Defender nube.
 
 ## <a name="prerequisites-to-use-the-extended-cloud-block-timeout"></a>Requisitos previos para usar el tiempo de espera extendido del bloque de nube
 
@@ -46,7 +47,7 @@ Puede usar la directiva de grupo para especificar un tiempo de espera extendido 
 
 2. En el **Editor de administración de directivas de grupo,** vaya a Configuración del equipo **y** haga clic en **Plantillas administrativas.**
 
-3. Expande el árbol a **componentes de Windows > Antivirus de Microsoft Defender > MpEngine**
+3. Expanda el árbol para Windows **componentes > Antivirus de Microsoft Defender > MpEngine**
 
 4. Haga doble clic en **Configurar la comprobación de nube extendida** y asegúrese de que la opción está habilitada. Especifique la cantidad de tiempo adicional para evitar que el archivo se ejecute mientras espera una determinación de nube. Puede especificar el tiempo adicional, en segundos, de 1 segundo a 50 segundos. Esta vez se agregará al valor predeterminado de 10 segundos.
 

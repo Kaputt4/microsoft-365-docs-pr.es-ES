@@ -1,25 +1,26 @@
 ---
-title: Configurar cómo los usuarios pueden interactuar con Microsoft Defender AV
-description: Configure cómo interactúan los usuarios finales con Microsoft Defender AV, qué notificaciones ven y si pueden invalidar la configuración.
+title: Configurar cómo los usuarios pueden interactuar con Antivirus de Microsoft Defender
+description: Configure cómo interactúan los usuarios finales con Antivirus de Microsoft Defender, qué notificaciones ven y si pueden invalidar la configuración.
 keywords: endpoint, user, interaction, notifications, ui lockdown mode, headless mode, hide interface
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: df9f87e725575bad2f36cf7b016d257e766e523b
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 711765ca9638e310ab03f841ba3aba558b4fd1cb
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765232"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275293"
 ---
 # <a name="configure-end-user-interaction-with-microsoft-defender-antivirus"></a>Configurar la interacción del usuario final con Antivirus de Microsoft Defender
 
@@ -30,14 +31,12 @@ ms.locfileid: "51765232"
 
 - [Microsoft Defender para punto de conexión](/microsoft-365/security/defender-endpoint/)
 
-Puede configurar cómo los usuarios de los puntos de conexión de la red pueden interactuar con el Antivirus de Microsoft Defender.
+Puede configurar cómo los usuarios de los puntos de conexión de la red pueden interactuar con Antivirus de Microsoft Defender. Puede configurar si los usuarios ven la interfaz Antivirus de Microsoft Defender, qué notificaciones ven y si pueden invalidar la configuración de directiva de grupo implementada localmente.
 
-Esto incluye si ven la interfaz antivirus de Microsoft Defender, qué notificaciones ven y si pueden invalidar localmente la configuración de directiva de grupo implementada globalmente.
+Use los siguientes artículos para configurar la interacción del usuario final con Antivirus de Microsoft Defender
 
-## <a name="in-this-section"></a>En esta sección
+- [Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md) Configurar y personalizar notificaciones, texto personalizado para notificaciones y notificaciones sobre reinicios para la corrección
 
-Tema | Descripción 
----|---
-[Configurar las notificaciones que aparecen en los puntos de conexión](configure-notifications-microsoft-defender-antivirus.md) | Configurar y personalizar notificaciones adicionales, texto personalizado para notificaciones y notificaciones sobre reinicios para la corrección
-[Impedir que los usuarios vean o interactúen con la interfaz de usuario de Antivirus de Microsoft Defender](prevent-end-user-interaction-microsoft-defender-antivirus.md) | Ocultar la interfaz de usuario de los usuarios
-[Impedir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md) | Impedir (o permitir) que los usuarios invaliden la configuración de directiva en sus puntos de conexión individuales
+- [Impedir que los usuarios vean o interactúen con la interfaz Antivirus de Microsoft Defender usuario](prevent-end-user-interaction-microsoft-defender-antivirus.md) Ocultar la interfaz de usuario de los usuarios
+
+- [Impedir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md) Impedir (o permitir) que los usuarios invaliden la configuración de directiva en sus puntos de conexión individuales

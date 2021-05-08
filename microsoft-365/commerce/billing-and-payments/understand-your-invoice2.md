@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,30 +13,26 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_smb
 - AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: Aprenda a interpretar la información de los cargos, la facturación y los pagos en su factura o recibo de Microsoft 365 para empresas, y sepa cómo modificar el número de la orden de compra.
-ms.openlocfilehash: b89ca38bf5d7b1d82982668dcd98e9979f1657be
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 9eb9d063b3634269600d5f6566e9e5f373ab08c2
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245021"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280492"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Entender su factura o recibo de Microsoft 365 para empresas
 
 > [!IMPORTANT]
-> A partir del 26 de enero de 2021, las nuevas cuentas bancarias ya no son compatibles con clientes de Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si es un cliente existente en uno de esos países, puede seguir pagando la suscripción con una cuenta bancaria existente y puede agregarle nuevas suscripciones, pero solo siempre que la cuenta bancaria esté en buen estado.
+> A partir del 26 de enero de 2021, dejarán de admitirse cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si usted es un cliente existente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones siempre que la cuenta bancaria esté en buenos términos.
 
 Sea mensual o anualmente (dependiendo de la opción que elija al comprar la suscripción), recibirá un correo electrónico en el que se le indicará que su nuevo extracto de facturación está disponible en el Centro de administración. [Obtenga más información sobre cómo encontrar y ver su factura](view-your-bill-or-invoice.md).
   
@@ -96,7 +93,7 @@ La tabla siguiente describe los campos que es posible que vea en su factura. Alg
 |Dirección de uso del servicio|La dirección donde se usa el servicio, normalmente es la misma que la dirección del solicitante. Para actualizar su Dirección de uso del servicio, consulte [Cambiar las direcciones de facturación](change-your-billing-addresses.md).|
 |Vendido a|El nombre de la empresa y la dirección. Para actualizar esta información, consulte [Cambiar la dirección de la empresa, el correo electrónico de contacto técnico y otra información](../../admin/manage/change-address-contact-and-more.md).  |
 |Subtotal|Cada suscripción que aparece en la factura tiene una fila subtotal independiente de todas las columnas de cargos, descuentos, créditos, subtotal, impuestos y total para esa suscripción.|
-|Impuestos|La página 1 de la factura muestra el total de impuestos. La pagina 2 muestra la tasa impositiva aplicada y el importe total de impuestos para cada elemento de línea. Si su factura contiene impuestos y su empresa está exenta de impuestos, [póngase en contacto con el soporte técnico](../../admin/contact-support-for-business-products.md).  |
+|Impuestos|La página 1 de la factura muestra el total de impuestos. La pagina 2 muestra la tasa impositiva aplicada y el importe total de impuestos para cada elemento de línea. Si su factura contiene impuestos y su empresa está exenta de impuestos, [póngase en contacto con el soporte técnico](../../business-video/get-help-support.md).  |
 |Total|La cantidad vencida para el período de facturación de la factura.|
 
 ## <a name="change-your-purchase-order-number"></a>Cambiar el número de pedido de compra
@@ -109,6 +106,7 @@ Si paga mediante factura, puede agregar o cambiar el número de orden de compra 
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -120,16 +118,16 @@ Si paga mediante factura, puede agregar o cambiar el número de orden de compra 
 ::: moniker range="o365-21vianet"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
+
 ::: moniker-end
 
 1. En la pestaña **Productos**, seleccione la suscripción que desee cambiar.
 
-1. En la página detalles de la suscripción, en la sección Configuración de **suscripción y pago,** seleccione **Editar factura**. 
+1. En la página detalles de la suscripción, en la sección Configuración de **suscripción y pago,** seleccione **Editar factura**.
 
 1. En la parte inferior del **panel Editar detalles para** pagar por voz, escriba el número de pedido y, a continuación, seleccione **Guardar**.
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Pagar la suscripción a Microsoft 365 para empresas](pay-for-your-subscription.md)
-
-[Opciones de pago de Minecraft: Education Edition](/education/windows/school-get-minecraft)
+[Pagar por su suscripción Microsoft 365 para empresas](pay-for-your-subscription.md) (artículo)\
+[Opciones de pago de Minecraft: Education Edition](/education/windows/school-get-minecraft) (artículo)

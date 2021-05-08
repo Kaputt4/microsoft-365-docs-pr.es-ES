@@ -5,23 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: presharm
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- commerce_purchase
+- PPM_jmueller
+search.appverid: MET150
 description: Obtenga información sobre las propuestas que le ayudarán a comprar productos y servicios de Microsoft.
 ROBOTS: NOINDEX
-ms.openlocfilehash: b7165db7acd33f9175b6d9d3c86b1f93b2486c43
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: a3c91168c90b91d83a9aa116c1ff57d103b3c48c
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921809"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280876"
 ---
 # <a name="understand-the-proposal-workflow"></a>Comprender el flujo de trabajo de propuestas
 
@@ -59,23 +64,18 @@ Si se trata de una nueva cuenta de facturación y nadie ha aceptado un contrato,
 
 - ¿La persona que se nombra en la propuesta\
     O
-- Ya son [administradores globales de Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) para su organización
+- Ya son un [Azure Active Directory global de](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) la organización
 
 ## <a name="what-is-the-overall-workflow"></a>¿Cuál es el flujo de trabajo general?
 
 El flujo de trabajo de propuestas general tiene este aspecto:
 
 - El representante de Microsoft crea una propuesta y le envía un vínculo en un correo electrónico.
-
 - Use el vínculo para ir a la página de inicio de sesión de propuesta.
-
 - Revise la información de su organización.
-
 - Revisa la propuesta, acepta el MCA si es necesario y finaliza el proceso de desprotección.
-
     > [!IMPORTANT]
     > Debe tener la autoridad para firmar un MCA en nombre de su organización. Si no tiene esa autoridad, alguien que lo haga debe realizar este paso.
-
 - Una vez finalizada la desprotección, se le darán vínculos adicionales para configurar sus productos y servicios.
 
 ## <a name="proposal-terms"></a>Términos de propuesta
@@ -86,7 +86,7 @@ La tabla siguiente contiene términos y definiciones que aparecen en la propuest
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cuenta de facturación | Una cuenta que se usa para administrar la configuración de la cuenta, las facturas, los métodos de pago y los productos. |
 | Perfil de facturación | Información sobre su organización que le permite personalizar los elementos que se incluyen en la factura y cómo paga las facturas. El perfil de facturación incluye el nombre de la cuenta de facturación, los métodos de pago usados para el perfil de facturación específico, la información de contacto, la configuración de facturación y los permisos que le permiten cambiar el perfil de facturación, pagar facturas y comprar productos y servicios. |
-| Acuerdos existentes | Cualquier acuerdo que su organización ya tenga en marcha con Microsoft. Esto puede incluir, pero no se limita a, un Contrato Enterprise, el Contrato de servicios de & de Productos de Microsoft o el Contrato de cliente de Microsoft. |
+| Acuerdos existentes | Cualquier acuerdo que su organización ya tenga en marcha con Microsoft. Esto puede incluir, pero no se limita a, un Enterprise Agreement, el Contrato de servicios de & de Productos de Microsoft o el Contrato de cliente de Microsoft. |
 | Contrato de cliente de Microsoft (MCA) | Un acuerdo que describe los términos y condiciones de la cuenta que tiene su organización con Microsoft. |
 | Representante de Microsoft | Un representante autorizado de Microsoft que prepara una propuesta para usted y su organización. |
 | Organización | Una entidad jurídica que usa productos, tecnologías o servicios de Microsoft. |
@@ -101,7 +101,7 @@ Después de iniciar sesión, lo primero que hace es revisar la información de s
 
 La **sección Su organización** muestra la cuenta de facturación asociada a ella. La información de la cuenta de facturación se extrae de una cuenta de facturación existente o la crea el representante de Microsoft. Si su organización es una filial de  otra organización, también verá una sección Organización para clientes potenciales con el nombre y la dirección de esa organización.
 
-Si es la primera vez que su organización establece una relación comercial con Microsoft y aún  no  ha firmado un MCA, si la información de Su organización o organización de clientes potenciales es incorrecta, póngase en contacto con el representante para realizar cambios por usted. Después de aceptar un MCA, puede revisar y cambiar la dirección [](https://go.microsoft.com/fwlink/p/?linkid=2084771) y la información de contacto de su organización en la página Cuentas de facturación en el Centro de administración de Microsoft 365. Si cambia el nombre de la organización, abra una solicitud de servicio para que se actualice. [Obtenga información sobre cómo abrir una solicitud de servicio](../admin/contact-support-for-business-products.md)
+Si es la primera vez que su organización establece una relación comercial con Microsoft y aún  no  ha firmado un MCA, si la información de Su organización o organización de clientes potenciales es incorrecta, póngase en contacto con el representante para realizar cambios por usted. Después de aceptar un MCA, puede revisar y cambiar la dirección [](https://go.microsoft.com/fwlink/p/?linkid=2084771) y la información de contacto de su organización en la página Cuentas de facturación del Centro de administración de Microsoft 365 administración. Si cambia el nombre de la organización, abra una solicitud de servicio para que se actualice. [Obtenga información sobre cómo abrir una solicitud de servicio](../business-video/get-help-support.md)
 
 ### <a name="your-information"></a>Su información
 
@@ -119,11 +119,11 @@ Si desea realizar cualquier cambio en la propuesta después de la revisión, pó
 
 La propuesta contiene la siguiente información:
 
-| Section | Descripción |
+| Sección | Descripción |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nombre de la organización | Nombre de la organización para la que se preparó la propuesta. |
 | Válido hasta la fecha | La fecha en que expira la oferta de propuesta. Si se pierde esta fecha de expiración, póngase en contacto con su representante de Microsoft para comunicarles que aún está interesado en la propuesta. |
-| Divisa | Moneda usada para calcular el costo de los elementos de la propuesta. |
+| Moneda | Moneda usada para calcular el costo de los elementos de la propuesta. |
 | Preparado para | Nombre de cuenta de facturación, dirección, dirección de correo electrónico de contacto y número de teléfono de la persona que solicitó la propuesta. |
 | Preparado por | La dirección de correo electrónico del representante de Microsoft que preparó la propuesta. |
 | Resumen | Muestra el subtotal asociado a la propuesta. Si es necesario, también mostrará la tasa de divisas (FX) que se usa para calcular los costos. |
@@ -155,18 +155,15 @@ Para obtener información acerca de los perfiles de facturación, vea [Administr
 En esta sección se muestra una lista de todos los elementos incluidos en la propuesta. La lista puede incluir una o varias de las siguientes categorías:
 
 - **Términos complementarios** Una lista de cualquier modificación del MCA que contenga términos para su organización. Por ejemplo, esta lista puede incluir términos HIPAA o RGPD.
-
 - **Comprar ahora** Una lista de elementos que paga durante la desprotección al final del flujo de trabajo de aceptación de propuestas.
-
 - **Descuentos (aplicados a cargos futuros)** Una lista de descuentos que recibe como parte de la propuesta.
-
 - **Incluido** Una lista de elementos incluidos como parte del paquete de propuestas sin costo adicional. Algunos de estos elementos podrían tener un costo asociado con ellos en el futuro.
 
 ### <a name="summary"></a>Resumen
 
 En esta sección se muestra el número de elementos que se están pagando, el subtotal, los impuestos estimados y el importe total del pedido.
 
-Para realizar el pedido, seleccione **Realizar pedido** o Aceptar acuerdo & realizar **el pedido**.
+Para realizar el pedido, seleccione **Realizar pedido** o Aceptar orden **de &amp; colocación de acuerdo**.
 
 Después de realizar el pedido, recibirá una confirmación con los siguientes pasos a seguir. Si compró un plan de Azure, el siguiente paso es configurar su cuenta de facturación en Azure Portal.
 
@@ -174,7 +171,7 @@ Después de realizar el pedido, recibirá una confirmación con los siguientes p
 
 Si es un nuevo cliente y ha comprado productos de Azure como parte de la propuesta, el siguiente paso es configurar su nueva cuenta de facturación. Para obtener información sobre cómo hacerlo, [consulte Configurar la cuenta de facturación de un contrato de cliente de Microsoft](/azure/cost-management-billing/manage/mca-setup-account).
 
-Si es un cliente de Azure existente con un Contrato Enterprise y está firmando un MCA por primera vez, el siguiente paso es obtener información sobre los cambios entre los acuerdos y cómo completar tareas con su nueva cuenta de facturación. Para obtener más información, consulte [Complete Contrato Enterprise tasks in your billing account for a Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-enterprise-operations).
+Si es un cliente de Azure existente con un Enterprise Agreement y está firmando un MCA por primera vez, el siguiente paso es obtener información sobre los cambios entre los acuerdos y cómo completar tareas con su nueva cuenta de facturación. Para obtener más información, consulte [Complete Enterprise Agreement tasks in your billing account for a Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-enterprise-operations).
 
 ## <a name="understand-invoicing"></a>Comprender la facturación
 

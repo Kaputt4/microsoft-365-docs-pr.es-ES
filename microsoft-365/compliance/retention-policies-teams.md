@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Más información sobre las directivas de retención que se aplican a Microsoft Teams.
-ms.openlocfilehash: b7bc84307f0db580995e039618cb01d25d6ecd66
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: db167894f32bcc1e30054b9cc4738af300b6d704
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932863"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280804"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Más información sobre la retención para Microsoft Teams
 
@@ -163,13 +163,13 @@ El día 1, un usuario crea un mensaje de chat o canal.
 
 Ejemplo de resultado de retención si el usuario no edita o elimina el mensaje:
 
-- Día 5 (normalmente de 1 a 7 días después del inicio del período de retención el día 3):
+- Día 5 (normalmente de 1 a 7 días después del inicio del período de retención el día 2):
     - El mensaje se mueve a la carpeta SubstrateHolds y permanece allí durante al menos 1 día donde aún se puede buscar con herramientas de eDiscovery.
 
 - Día 9 (normalmente de 1 a 7 días después de un mínimo de 1 día en la carpeta SubstrateHolds):
     - Cuando un mensaje se elimina de forma permanente, no se mostrará en una búsqueda de eDiscovery.
 
-Como muestra este ejemplo, aunque puede configurar una política de retención para eliminar mensajes después de solo un día, el servicio se somete a varios procesos para garantizar una eliminación compatible. Como resultado, una acción de eliminación después de 1 día podría demorar 18 días antes de que el mensaje se elimine permanentemente para que ya no se devuelva en las búsquedas de exhibición de documentos electrónicos.
+Como muestra este ejemplo, aunque puede configurar una política de retención para eliminar mensajes después de solo un día, el servicio se somete a varios procesos para garantizar una eliminación compatible. Como resultado, una acción de eliminación después de 1 día podría tardar 16 días antes de que el mensaje se elimine permanentemente para que ya no se devuelva en las búsquedas de exhibición de documentos electrónicos.
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Chat de Skype Empresarial e interoperabilidad de Teams
 
@@ -197,7 +197,7 @@ Si el usuario ha guardado archivos en Teams, consulte la [sección equivalente](
 
 ## <a name="limitations"></a>Limitaciones
 
-Estamos trabajando continuamente en la optimización de la funcionalidad de retención en Teams. Mientras tanto, tenga en cuenta la siguiente limitación cuando use políticas de retención para los mensajes y chats del canal de Teams:
+Estamos trabajando continuamente en la optimización de la funcionalidad de retención en Teams. Mientras tanto, tenga en cuenta la siguiente limitación cuando use directivas de retención para los mensajes y chats del canal de Teams:
 
 - **Problema de visualización incorrecta en Outlook**. Si crea directivas de retención para las ubicaciones de Skype o de Teams, una de esas directivas se muestra como la directiva de carpeta predeterminada cuando un usuario ve las propiedades de una carpeta del buzón en el cliente de escritorio de Outlook. Este es un problema de presentación incorrecto en Outlook y [un problema conocido](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). En su lugar, debería ver la política de retención del buzón que se aplica a la carpeta. La Directiva de retención de Skype o de Teams no se aplica al buzón del usuario.
 

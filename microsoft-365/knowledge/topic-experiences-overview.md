@@ -1,7 +1,7 @@
 ---
 title: Información general de Temas Microsoft Viva
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Información general de Temas Viva.
-ms.openlocfilehash: 4598c47b07287789a7a194914232799de5ca7b85
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: b37572087794055724cb9533246f83794d88fb93
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488162"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275217"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Información general de Temas Microsoft Viva 
 
@@ -40,8 +40,12 @@ Temas Viva usa inteligencia artificial para buscar e identificar automáticament
 
 Cuando se menciona un tema en el contenido de noticias y páginas de SharePoint, lo verá resaltado. Puede abrir el resumen del tema desde el contenido resaltado. Abra los detalles del tema en el título del resumen. El tema mencionado podría identificarse automáticamente o el autor de la página podría agregarlo a la página con una referencia directa al tema. 
 
-   ![Contenido destacado del tema](../media/knowledge-management/saturn.png) </br> 
+   ![Contenido destacado del tema](../media/knowledge-management/saturn.png) 
 
+
+   ![Captura de pantalla que muestra la búsqueda en Word a través del cuadro Buscar.](../media/knowledge-management/word-search-2.png)
+
+   ![Captura de pantalla que muestra la búsqueda en Word a través del menú contextual Buscar.](../media/knowledge-management/word-search-1.png)
 
 ## <a name="knowledge-indexing"></a>Indexación de información
 
@@ -99,7 +103,7 @@ Consulte [Administrar temas en el centro de temas](manage-topics.md) para obtene
 
 ## <a name="admin-controls"></a>Controles de administración
 
-Los controles de administración en el Centro de administración de Microsoft 365 te permiten administrar Temas de Viva. Permiten a un administrador del servicio SharePoint o global de Microsoft 365 realizar las siguientes acciones:
+Los controles de administración en Microsoft 365 centro de administración le permiten administrar Temas de Viva. Permiten a un administrador del servicio SharePoint o global de Microsoft 365 realizar las siguientes acciones:
 
 - Controlar qué usuarios de su organización pueden ver temas en las páginas modernas de SharePoint o en los resultados de la búsqueda de SharePoint.
 - Controlar los sitios de SharePoint que se rastrearán para identificar temas.

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,16 +17,17 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- Commerce
-search.appverid:
-- MET150
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: Obtenga información sobre cómo los perfiles de facturación admiten facturas.
-ms.openlocfilehash: 7f4c0aed1bccd0e5df5b09e15e6201933e937993
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.date: 04/02/2021
+ms.openlocfilehash: 57786df370246c2b4fda556a9c48eb828db1cb4f
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576954"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280792"
 ---
 # <a name="understand-billing-profiles"></a>Entender los perfiles de facturación
 
@@ -47,32 +49,28 @@ Se crea automáticamente un perfil de facturación para tu cuenta de facturació
 
 Los roles de los perfiles de facturación tienen permisos para controlar las compras y ver y administrar facturas. Asigne estos roles a los usuarios que realicen un seguimiento, organicen y paguen facturas, como los miembros del equipo de compras de la organización.
 
-| Role                          | Descripción                                                                       |
-|-----------------------------  |---------------------------------------------------------------------------------  |
-| Propietario del perfil de facturación         | Administrar todo para un perfil de facturación                                           |
-| Colaborador de perfiles de facturación   | Administrar todo excepto los permisos en un perfil de facturación                         |
-| Lector de perfiles de facturación        | Vista de solo lectura de todo en un perfil de facturación                                 |
-| Administrador de facturas               | Ver y pagar facturas y tiene una vista de solo lectura de todo en un perfil de facturación   |
+| Role                         | Descripción                                                                      |
+|----------------------------- |--------------------------------------------------------------------------------- |
+| Propietario del perfil de facturación        | Administrar todo para un perfil de facturación                                          |
+| Colaborador de perfiles de facturación  | Administrar todo excepto los permisos en un perfil de facturación                        |
+| Lector de perfiles de facturación       | Vista de solo lectura de todo en un perfil de facturación                                |
+| Administrador de facturas              | Ver y pagar facturas y tiene una vista de solo lectura de todo en un perfil de facturación  |
 
 ## <a name="view-billing-profiles"></a>Ver perfiles de facturación
 
 1. En el Centro de administración, vaya a la página **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
-
 2. Elija **Perfiles de facturación** y, a continuación, elija un perfil de facturación de la lista.
 
     - En la **pestaña Información** general, puede editar los detalles del perfil de facturación y activar o desactivar el envío de una factura por correo electrónico.
-
     - En la **pestaña Permisos,** puede asignar roles a los usuarios para pagar facturas.
-
     - En la **pestaña Saldo de crédito de Azure,** los clientes de Azure pueden ver el historial de saldos de transacciones para los créditos de Azure usados por ese perfil de facturación.
-
     - En la **pestaña Créditos de Azure,** los clientes de Azure pueden ver una lista de créditos de Azure asociados con ese perfil de facturación y sus fechas de expiración.
 
     > [!NOTE]
     > Si no tiene créditos de Azure, no verá las pestañas Saldo de crédito de **Azure** o **Créditos de Azure.**
 
-## <a name="need-help-contact-support"></a>¿Necesita ayuda? Póngase en contacto con el servicio de soporte técnico.
+## <a name="need-help-contact-support"></a>¿Necesita ayuda? Contactar soporte
 
 Si tiene preguntas o necesita ayuda con los cargos de Azure, cree una solicitud de soporte <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">técnico con soporte técnico de Azure</a>.
 
-Si tiene preguntas o necesita ayuda con su perfil de facturación en el Centro de administración de Microsoft 365, póngase en contacto con el soporte [técnico para productos empresariales](/office365/admin/contact-support-for-business-products).
+Si tiene preguntas o necesita ayuda con su perfil de facturación en Microsoft 365 de administración, póngase en contacto con el soporte [técnico para productos empresariales](../../business-video/get-help-support.md).

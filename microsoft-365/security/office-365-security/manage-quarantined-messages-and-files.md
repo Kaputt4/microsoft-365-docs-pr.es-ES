@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver y administrar mensajes en cuarentena para todos los usuarios de Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7dc7fd26d7a81bc76850af4799363c8d17fc1c83
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599540"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52272209"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -41,7 +41,7 @@ Los administradores pueden ver, liberar y eliminar todos los tipos de mensajes e
 
 Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden ver, descargar y eliminar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 
-Puede ver y administrar mensajes en cuarentena en el Centro de seguridad y cumplimiento de & o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin buzones de Exchange Online).
+Puede ver y administrar mensajes en cuarentena en el Centro de seguridad y cumplimiento de & o en PowerShell (Exchange Online PowerShell para organizaciones de Microsoft 365 con buzones en Exchange Online; PowerShell de EOP independiente para organizaciones sin buzones Exchange Online).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
@@ -59,12 +59,12 @@ Puede ver y administrar mensajes en cuarentena en el Centro de seguridad y cumpl
 
   - Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a los usuarios los permisos necesarios _y_ los permisos para otras características de Microsoft 365. Para obtener más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
   - El grupo de roles **Administración de organización de solo lectura** en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) también proporciona acceso de solo lectura a la característica.
-  - <sup>\*</sup> Los miembros **del** grupo de roles Administrador de cuarentena también deben ser miembros del grupo de roles **Administración** de higiene en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) para poder realizar procedimientos de cuarentena en Exchange Online PowerShell.
+  - <sup>\*</sup>Los miembros **del** grupo de roles Administrador de cuarentena también deben ser miembros del grupo de roles **Administración** de higiene en [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) para realizar procedimientos de cuarentena en Exchange Online PowerShell.
 
 - Los mensajes en cuarentena se conservan durante un período de tiempo predeterminado antes de que se eliminen automáticamente:
   - 30 días para los mensajes en cuarentena por directivas contra correo no deseado (correo no deseado, suplantación de identidad y correo electrónico masivo). Este es el valor predeterminado y máximo. Para configurar (inferior) este valor, vea [Configure anti-spam policies](configure-your-spam-filter-policies.md).
   - 15 días para los mensajes que contienen malware.
-  - 15 días para archivos en cuarentena por datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams en Defender para Office 365.
+  - 15 días para los archivos en cuarentena por Caja fuerte datos adjuntos para SharePoint, OneDrive y Microsoft Teams en Defender para Office 365.
 
   Cuando un mensaje expira de la cuarentena, no se puede recuperar.
 
@@ -74,7 +74,7 @@ Puede ver y administrar mensajes en cuarentena en el Centro de seguridad y cumpl
 
 1. En el Centro de seguridad y cumplimiento, vaya a **Administración de amenazas** \> **Revisar** \> **Cuarentena**.
 
-2. Compruebe que **View quarantined** está establecido en el valor **predeterminado** email .
+2. Compruebe que **Ver en cuarentena** esté configurado en el valor predeterminado **correo electrónico**.
 
 3. Para ordenar los resultados, haga clic en un encabezado de columna disponible. Haga clic en **Modificar columnas** para mostrar un máximo de siete columnas. Los valores predeterminados están marcados con un asterisco (<sup>\*</sup>):
 
@@ -113,7 +113,7 @@ Puede ver y administrar mensajes en cuarentena en el Centro de seguridad y cumpl
 
    - **Tipo de directiva**: Filtrar mensajes por tipo de directiva:
      - **Directiva antimalware**
-     - **Directiva de datos adjuntos seguros**
+     - **Caja fuerte Directiva de datos adjuntos**
      - **Política Antiphishing**
      - **Directiva de filtro de contenido alojado** (directiva anti-spam)
      - **Regla de transporte**
@@ -196,7 +196,7 @@ Después de seleccionar un mensaje, tiene varias opciones para qué hacer con lo
 
 - **Descargar mensaje**: En el panel de flotante que aparece, seleccione **Entiendo los riesgos de descargar este mensaje** para guardar una copia local del mensaje en formato .eml.
 
-- **Bloquear remitente:** impide que el remitente envíe mensajes a los destinatarios de la organización.
+- **Bloquear remitente:** agregue el remitente a la lista Remitentes bloqueados del buzón. Para obtener más información, vea [Bloquear un remitente de correo](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - **Enviar mensaje:** en el panel desplegable que aparece, elija las siguientes opciones:
 
@@ -298,7 +298,7 @@ Al seleccionar varios archivos en cuarentena en la lista (hasta 100), aparece el
 - **Liberar archivos**
 - **Eliminar archivos:** después de hacer clic en **Sí** en la advertencia que aparece, los archivos se eliminan inmediatamente.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Usar PowerShell de Exchange Online o PowerShell EOP independiente para ver y administrar mensajes y archivos en cuarentena
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Usar Exchange Online PowerShell o PowerShell de EOP independiente para ver y administrar mensajes y archivos en cuarentena
 
 Los cmdlets que usa para ver y administrar mensajes y archivos en cuarentena son:
 
@@ -308,6 +308,6 @@ Los cmdlets que usa para ver y administrar mensajes y archivos en cuarentena son
 
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 
-- [Preview-QuarantineMessage:](/powershell/module/exchange/preview-quarantinemessage)tenga en cuenta que este cmdlet solo es para mensajes, no archivos en cuarentena de datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams.
+- [Preview-QuarantineMessage:](/powershell/module/exchange/preview-quarantinemessage)tenga en cuenta que este cmdlet solo es para mensajes, no archivos en cuarentena de datos adjuntos de Caja fuerte para SharePoint, OneDrive y Microsoft Teams.
 
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
