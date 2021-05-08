@@ -19,19 +19,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 2c63f668cd4ccbad55a883aaf2b245c4936e25eb
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 89a3544c390fdeceea3741a950aad8fe29da25c4
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860959"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245593"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Si ve mensajes sobre directivas de retención en sus aplicaciones, contacte con el departamento de TI para obtener información sobre cómo lo han configurado para usted. Si estos mensajes son para el chat de Teams o los mensajes de canal, consulte [Mensajes de Teams sobre la retención de directivas](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+> Si ve mensajes sobre directivas de retención en Teams o tiene preguntas sobre etiquetas de retención, póngase en contacto con el departamento de TI para obtener información sobre cómo las han configurado. Mientras tanto, puede que los artículos siguientes le resulten útiles:
+> -  [Mensajes de Teams sobre directivas de retención](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
+> - [Aplicar etiquetas de retención a archivos en SharePoint o OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)
 >
 > La información de esta página es para administradores de TI que pueden crear directivas y etiquetas de retención por motivos de cumplimiento.
 
@@ -62,7 +64,7 @@ Use las secciones siguientes para obtener más información sobre cómo funciona
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Cómo funciona la configuración de retención con el contenido local
 
-Cuando se establece la configuración de retención, el contenido permanece en su ubicación original. Los usuarios pueden seguir trabajando con sus documentos o buzones como si nada hubiera cambiado. Sin embargo, si modifican o eliminan el contenido incluido en la directiva de retención, se retendrá automáticamente una copia del contenido.
+Cuando se incluye en una directiva de retención una ubicación como un sitio o buzón, el contenido permanece en su ubicación original. Los usuarios pueden seguir trabajando con sus documentos o buzones como si nada hubiera cambiado, pero si modifican o eliminan contenido que esté incluido en la directiva, se conservará una copia del mismo tal como era cuando se aplicó la directiva.
   
 - Para sitios de SharePoint y OneDrive: la copia se conserva en la biblioteca de **Suspensión para conservación**.
 
@@ -470,8 +472,4 @@ Si ha configurado los sitios de SharePoint para directivas de tipo de contenido 
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
-Si está listo para crear directivas de retención, vea [Crear y configurar directivas de retención](create-retention-policies.md).
-
-Para crear y aplicar etiquetas de retención:
-- [Crear etiquetas de retención y aplicarlas en aplicaciones](create-apply-retention-labels.md)
-- [Aplicar una etiqueta de retención automáticamente al contenido](apply-retention-labels-automatically.md)
+Consulte [Introducción a las directivas y etiquetas de retención](get-started-with-retention.md). Este artículo contiene información sobre suscripciones, permisos y vínculos a instrucciones de configuración de un extremo a otro para escenarios de retención.

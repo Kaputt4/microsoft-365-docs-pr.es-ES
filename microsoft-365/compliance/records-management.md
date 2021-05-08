@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la administración de registros de Microsoft 365, puede aplicar programaciones de retención en un plan de archivos para administrar la retención, la declaración de registros y la eliminación.
-ms.openlocfilehash: ac8e9bf2ac9ac47518788cd19a197818c13078a1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 853303dcaffcbacfcf805b8617b836254cf31ad8
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051692"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245437"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Aprenda sobre la administración de registros en Microsoft 365
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Las organizaciones de todo tipo requieren una solución de administración de registros para administrar los registros reglamentarios, legales y críticos para el negocio en sus datos corporativos. La administración de registros de Microsoft 365 ayuda a las organizaciones a administrar sus obligaciones legales, ofrece la posibilidad de demostrar el cumplimiento de las normativas y aumenta la eficiencia con la eliminación regular de elementos que ya no es necesario retener, que no son de gran valor o que ya no son necesarios para fines empresariales.
+Las organizaciones de todo tipo requieren una solución de administración de registros para administrar los registros reglamentarios, legales y críticos para el negocio en sus datos corporativos. La administración de registros de Microsoft 365 ayuda a las organizaciones a administrar sus obligaciones legales, ofrece la posibilidad de demostrar el cumplimiento de las normativas y aumenta la eficiencia con la eliminación regular de elementos que ya no se necesitan retener, no son de gran valor o ya no son necesarios para fines empresariales.
 
 Use las siguientes funciones para dar soporte a la solución de administración de registros en Microsoft 365:
 
@@ -48,7 +48,7 @@ Use las siguientes funciones para dar soporte a la solución de administración 
 
 - **Exportar la información sobre todos los elementos que se han eliminado** con la [opción exportar](disposition.md#filter-and-export-the-views).
 
-- **Configurar permisos específicos** para las funciones del administrador de registros en su organización para [tener el acceso correcto](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md).
+- **Configurar permisos específicos** para las funciones del administrador de registros en su organización para [tener el acceso correcto](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 Con estas funciones, puede incorporar los requisitos y las programaciones de retención de su organización en una solución de administración de registros para administrar la retención, la declaración de registros y la eliminación para dar soporte a todo el ciclo de vida del contenido.
 
@@ -111,6 +111,4 @@ Cuando se aplica una etiqueta de retención a un elemento de lista que tiene dat
 
 ## <a name="configuration-guidance"></a>Instrucciones de configuración
 
-Consulte [Introducción a la administración de registros](get-started-with-records-management.md).
-
-Para marcar el contenido como un registro, vea [Declarar registros con las etiquetas de retención](declare-records.md).
+Consulte [Introducción a la administración de registros](get-started-with-records-management.md). Este artículo contiene información sobre suscripciones, permisos y vínculos a instrucciones de configuración de un extremo a otro para escenarios de administración de registros.

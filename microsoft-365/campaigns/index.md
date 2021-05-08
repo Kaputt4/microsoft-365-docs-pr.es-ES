@@ -24,18 +24,18 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Recomendaciones de Seguridad de Microsoft 365 y de colaboración para pequeñas empresas, incluidas firmas, despachos y campañas políticas pequeñas.
-ms.openlocfilehash: 621ebe483683f68ccb9332f9c8b2802bd9b98867
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+description: Recomendaciones de Seguridad de Microsoft 365 Empresa Premium y de colaboración para pequeñas empresas, incluidas firmas, despachos y campañas políticas pequeñas.
+ms.openlocfilehash: 6c836f5abb118bb3902ecdfaa37acd759faca1fe
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100788"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245033"
 ---
 <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 para pequeñas empresas y campañas
 ===========================
 
-En nuestro mundo actual, mantener la seguridad de los datos y las comunicaciones es prioritario, especialmente en el caso de campañas políticas, consultorios médicos y jurídicos y muchas otras pequeñas empresas. Esta solución ofrece un conjunto de recomendaciones diseñadas para ayudarle a protegerse y a proteger sus datos. Esta biblioteca incluye ayuda para configurar y usar este entorno recomendado, sea cual sea su tipo de empresa.
+Si tiene Microsoft 365 Empresa Premium, la guía de esta biblioteca es la forma más rápida para configurar la seguridad y empezar a colaborar de forma segura. En nuestro mundo actual, mantener la seguridad de los datos y las comunicaciones es prioritario, especialmente en el caso de campañas políticas, consultorios médicos y jurídicos y muchas otras pequeñas empresas. Esta solución ofrece un conjunto de recomendaciones diseñadas para ayudarle a protegerse y a proteger sus datos. Esta biblioteca incluye ayuda para configurar y usar este entorno recomendado, sea cual sea su tipo de empresa.
 
 
 ![Microsoft 365 Empresa Premium protege sus herramientas de productividad, sus herramientas de colaboración, el almacenamiento de archivos, el correo electrónico, los dispositivos y su identidad](../media/M365-WhatIsIt-SecurityFocus.png)

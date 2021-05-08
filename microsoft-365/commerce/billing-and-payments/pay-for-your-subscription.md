@@ -21,14 +21,17 @@ ms.custom:
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 582ecb0f9b46d877c30aa29334b30b9209c93993
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 65454dcc71645b370d2ebfc875474151c0954a3c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576942"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245009"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
+
+> [!IMPORTANT]
+> A partir del 26 de enero de 2021, dejarán de admitirse cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si es un cliente existente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones siempre que la cuenta bancaria esté en buenos términos.
 
 Puede pagar la suscripción con tarjeta de crédito, débito o una cuenta bancaria. En algunos casos, puede pagar mediante factura, mediante cheque o transferencia electrónica de fondos (EFT). Si tiene un perfil de facturación, sus opciones son algo diferentes. Para más información, consulte [Cómo pagar la suscripción con un perfil de facturación](pay-for-subscription-billing-profile.md). Si no está seguro de si su cuenta tiene un perfil de facturación, consulte [Información de perfiles de facturación](manage-billing-profiles.md).
 

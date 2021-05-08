@@ -20,12 +20,12 @@ ms.custom:
 description: Más información sobre cómo usar DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los mensajes que se envían desde su dominio personalizado sean de confianza para los sistemas de correo electrónico de destino.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5b5122984969113ec0c0533952ea3bf18bff5e5c
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 1fc811fb513935645fa596c5a9d2e3e552b50324
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592113"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245365"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado
 
@@ -36,25 +36,7 @@ ms.locfileid: "51592113"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
- **Resumen**: Este artículo describe cómo usa DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado.
-
-Debería usar DKIM además de SPF y DMARC para ayudarle a evitar que los suplantadores de identidad envíen mensajes que parece que provienen de su dominio. DKIM le permite agregar una firma digital a los mensajes de correo electrónico salientes en el encabezado del mensaje. Puede sonar complicado, pero realmente no lo es. Cuando configura DKIM, autoriza su dominio para asociar, o firmar, su nombre a un mensaje de correo electrónico mediante la autenticación criptográfica. Los sistemas de correo electrónico que reciben correo electrónico desde el dominio pueden usar esta firma digital para ayudarles a determinar si el correo entrante que reciben es legítimo.
-
-Básicamente, usa una clave privada para cifrar el encabezado del correo electrónico saliente del dominio. Publica una clave pública en los registros DNS del dominio que los servidores de recepción pueden usar para descodificar la firma. Usan la clave pública para comprobar que los mensajes proceden realmente de usted y no de alguien que está *suplantando la identidad* del dominio.
-
-Microsoft 365 configura automáticamente DKIM para sus dominios "onmicrosoft.com" iniciales. Lo que significa que no es necesario realizar ninguna acción para configurar DKIM para un nombre de dominio inicial (por ejemplo, litware.onmicrosoft.com). Para más información sobre los dominios, vea [Preguntas más frecuentes de dominios](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
-
-También puede elegir no hacer nada acerca de DKIM para su dominio personalizado. Si usted no configura DKIM para su dominio personalizado, Microsoft 365 crea un par de claves privadas y públicas, que permiten que DKIM firme y configure la directiva predeterminada de Microsoft 365 para su dominio personalizado. Aunque esto suponga una cobertura suficiente para la mayoría de los clientes, debería configurar manualmente DKIM para su dominio personalizado en las siguientes circunstancias:
-
-- Tiene más de un dominio personalizado en Microsoft 365
-
-- También va a configurar DMARC (recomendado)
-
-- Quiere tener el control sobre la clave privada
-
-- Quiere personalizar los registros CNAME
-
-- Quiere configurar claves de DKIM para los correos electrónicos que se originen en un dominio de terceros, por ejemplo, si usa un troyano de envío masivo de correo electrónico de terceros.
+ Este artículo muestra los pasos para usar DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado.
 
 En este artículo:
 
@@ -62,7 +44,7 @@ En este artículo:
 
 - [Pasos para actualizar manualmente las claves de 1024 bits a claves de cifrado DKIM de 2048 bits](use-dkim-to-validate-outbound-email.md#1024to2048DKIM)
 
-- [Pasos que necesita seguir para configurar manualmente DKIM](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
+- [Pasos para configurar manualmente DKIM](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)
 
 - [Pasos para configurar DKIM para más de un dominio personalizado](use-dkim-to-validate-outbound-email.md#DKIMMultiDomain)
 
@@ -74,19 +56,49 @@ En este artículo:
 
 - [Pasos siguientes: una vez configurado DKIM para Microsoft 365](use-dkim-to-validate-outbound-email.md#DKIMNextSteps)
 
+> [!NOTE]
+> Microsoft 365 configura automáticamente DKIM para sus dominios "onmicrosoft.com" iniciales. Lo que significa que no es necesario realizar ninguna acción para configurar DKIM para un nombre de dominio inicial (por ejemplo, litware.onmicrosoft.com). Para más información sobre los dominios, vea [Preguntas más frecuentes de dominios](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
+
+DKIM es uno de los tres métodos de autenticación (SPF, DKIM y DMARC) que ayudan a evitar que los suplantadores envíen mensajes que parecen procedentes de su dominio.
+
+DKIM le permite agregar una firma digital a los mensajes de correo electrónico salientes en el encabezado del mensaje. Suena complicado, pero realmente no lo es. Cuando configura DKIM, autoriza que su dominio pueda asociar su nombre (o firmar) a un mensaje de correo electrónico mediante la autenticación criptográfica. Los sistemas de correo electrónico que reciben correo electrónico desde el dominio pueden usar esta firma digital para ayudar a determinar si el correo entrante que reciben es legítimo.
+
+Básicamente, una clave privada cifra el encabezado en un correo electrónico saliente del dominio. La clave pública se publica en los registros DNS del dominio, y los servidores de recepción pueden usar esa clave para descodificar la firma. La verificación de DKIM ayuda a los servidores de recepción a confirmar que el correo realmente procede de su dominio y no se trata de alguien que está *suplantando* su dominio.
+
+> [!TIP]
+>También puede elegir no hacer nada relacionado con DKIM para su dominio personalizado. Si no configura DKIM para su dominio personalizado, Microsoft 365 crea un par de claves privadas y públicas que permiten que DKIM firme y configure la directiva predeterminada de Microsoft 365 para su dominio personalizado.
+
+ El DKIM integrado de Microsoft 365 es una cobertura suficiente para la mayoría de los clientes. Sin embargo, debería configurar manualmente DKIM para su dominio personalizado en las siguientes circunstancias:
+
+- Tiene más de un dominio personalizado en Microsoft 365
+
+- También va a configurar DMARC (**recomendado**)
+
+- Quiere tener el control sobre la clave privada
+
+- Quiere personalizar los registros CNAME
+
+- Quiere configurar claves de DKIM para los correos electrónicos que se originen en un dominio de terceros, por ejemplo, si usa un troyano de envío masivo de correo electrónico de terceros.
+
+
 ## <a name="how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing"></a>Cómo DKIM funciona mejor que SPF solo para evitar la suplantación de identidad malintencionada
 <a name="HowDKIMWorks"> </a>
 
-SPF agrega información a un sobre del mensaje pero DKIM cifra realmente una firma dentro del encabezado del mensaje. Cuando reenvía un mensaje, el servidor de reenvío puede quitar partes de ese sobre del mensaje. Como la firma digital permanece en el mensaje de correo electrónico porque forma parte del encabezado del correo, DKIM funciona incluso cuando un mensaje se ha reenviado como se muestra en el siguiente ejemplo.
+SPF agrega información a un sobre del mensaje pero DKIM *cifra* una firma dentro del encabezado del mensaje. Cuando reenvía un mensaje, el servidor de reenvío puede quitar partes de ese sobre del mensaje. Como la firma digital permanece en el mensaje de correo electrónico porque forma parte del encabezado del correo, DKIM funciona incluso cuando un mensaje se ha reenviado como se muestra en el siguiente ejemplo.
 
 ![Diagrama que muestra un mensaje reenviado que pasa por la autenticación DKIM, donde se produce un error en la comprobación de SPF.](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
 
-En este ejemplo, si solo había publicado un registro TXT de SPF en su dominio, el servidor de correo del destinatario podría haber marcado el correo electrónico como correo no deseado y generar un resultado de falso positivo. La adición de DKIM en este escenario reduce los informes de correo no deseado de falso positivo. Debido a que DKIM se basa en la criptografía de clave pública para autenticar y no solo en las direcciones IP, DKIM se considera una forma mucho más segura de autenticación que SPF. Se recomienda usar SPF y DKIM, así como DMARC, en la implementación.
+En este ejemplo, si solo había publicado un registro TXT de SPF en su dominio, el servidor de correo del destinatario podría haber marcado el correo electrónico como correo no deseado y generar un resultado de falso positivo. **La adición de DKIM en este escenario reduce los *informes de correo no deseado* de falso positivo**. Debido a que DKIM se basa en la criptografía de clave pública para autenticar y no solo en las direcciones IP, DKIM se considera una forma mucho más segura de autenticación que SPF. Se recomienda usar SPF y DKIM, así como DMARC, en la implementación.
 
-Información esencial: DKIM usa una clave privada para insertar una firma cifrada en los encabezados del mensaje. El dominio de firma, o el dominio saliente, se inserta como el valor del campo **d=** en el encabezado. El dominio de comprobación, o dominio del destinatario, usa entonces el campo **=d** para buscar la clave pública desde DNS y autenticar el mensaje. Si el mensaje se comprueba, supera la comprobación DKIM.
+> [!TIP]
+> DKIM usa una clave privada para insertar una firma cifrada en los encabezados del mensaje. El dominio de firma, o el dominio saliente, se inserta como el valor del campo **d=** en el encabezado. El dominio de comprobación, o dominio del destinatario, usa entonces el campo **=d** para buscar la clave pública desde DNS y autenticar el mensaje. Si el mensaje se comprueba, supera la comprobación DKIM.
+
 
 ## <a name="steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys"></a>Pasos para actualizar manualmente las claves de 1024 bits a claves de cifrado DKIM de 2048 bits
 <a name="1024to2048DKIM"> </a>
+
+> [!NOTE]
+> Microsoft 365 configura automáticamente DKIM para los dominios *"onmicrosoft.com"*. No es necesario seguir ningún paso para usar DKIM para los nombres de dominio iniciales (como litware.*onmicrosoft.com*). Para más información sobre los dominios, vea [Preguntas más frecuentes de dominios](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
 
 Ya que ambos valores de bits, 1024 y 2048, son compatibles con las claves DKIM, estas instrucciones le indicarán cómo actualizar la clave de 1024 bits a 2048 en [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Los pasos que se muestran a continuación son dos casos de uso distintos, elija el que mejor se ajuste a su configuración.
 
@@ -117,7 +129,7 @@ Si desea rotar hasta el segundo selector, las opciones son: a) dejar que el serv
 
 Para obtener información detallada sobre la sintaxis y los parámetros, vea los siguientes artículos: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig), [New-DkimSigningConfig](/powershell/module/exchange/new-dkimsigningconfig) y [Get-DkimSigningConfig](/powershell/module/exchange/get-dkimsigningconfig).
 
-## <a name="steps-you-need-to-do-to-manually-set-up-dkim"></a>Pasos que necesita seguir para configurar manualmente DKIM
+## <a name="steps-to-manually-set-up-dkim"></a>Pasos que necesita seguir para configurar manualmente DKIM
 <a name="SetUpDKIMO365"> </a>
 
 Para configurar DKIM, deberá completar estos pasos:
@@ -141,7 +153,7 @@ New-DkimSigningConfig -DomainName <domain> -Enabled $false
 Get-DkimSigningConfig -Identity <domain> | Format-List Selector1CNAME, Selector2CNAME
 ```
 
-Si ha aprovisionado dominios personalizados adicionales además del dominio inicial de Microsoft 365, debe publicar dos registros CNAME para cada dominio adicional. Por lo tanto, si tiene dos dominios, debe publicar dos registros CNAME adicionales, y así sucesivamente.
+Si ha aprovisionado dominios personalizados adicionales además del dominio inicial de Microsoft 365, debe publicar dos registros CNAME para cada dominio adicional. Por lo tanto, si tiene dos dominios, debe publicar dos registros CNAME adicionales, y así sucesivamente.
 
 Use el formato siguiente para los registros CNAME.
 
@@ -162,7 +174,7 @@ Donde:
 
 - Para Microsoft 365, los selectores siempre serán "selector1" o "selector2".
 
-- El _domainGUID_ es el mismo que el _domainGUID_ del registro MX personalizado para su dominio personalizado que aparece antes de mail.protection.outlook.com. Por ejemplo, en el siguiente registro MX del dominio contoso.com, el _domainGUID_ es contoso-com:
+- _domainGUID_ es el mismo que el _domainGUID_ en el registro MX personalizado para su dominio personalizado que aparece antes de mail.protection.outlook.com. Por ejemplo, en el siguiente registro MX del dominio contoso.com, el _domainGUID_ es contoso-com:
 
   > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
@@ -195,7 +207,7 @@ TTL:                3600
 ### <a name="steps-to-enable-dkim-signing-for-your-custom-domain"></a>Pasos para habilitar la firma DKIM para su dominio personalizado
 <a name="EnableDKIMinO365"> </a>
 
-Una vez que haya publicado los registros CNAME en DNS, está preparado para habilitar la firma DKIM mediante Microsoft 365. Puede hacerlo a través del Centro de administración de Microsoft 365 o mediante PowerShell.
+Una vez que haya publicado los registros CNAME en DNS, está preparado para habilitar la firma DKIM mediante Microsoft 365. Puede hacerlo a través del Centro de administración de Microsoft 365 o mediante PowerShell.
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-admin-center"></a>Para habilitar la firma DKIM para su dominio personalizado a través del Centro de administración
 
@@ -297,11 +309,11 @@ Deshabilitar la directiva de firmas no deshabilita DKIM completamente. Después 
 ## <a name="default-behavior-for-dkim-and-microsoft-365"></a>Comportamiento predeterminado para DKIM y Microsoft 365
 <a name="DefaultDKIMbehavior"> </a>
 
-Si no habilita DKIM, Microsoft 365 crea automáticamente una clave pública DKIM de 1024 bits para el dominio predeterminado y la clave privada asociada que se almacena internamente en nuestro centro de datos. De forma predeterminada, Microsoft 365 usa una configuración de firmas predeterminada para los dominios que no tienen una directiva local. Esto significa que si no configura DKIM, Microsoft 365 usará su política predeterminada y se creará la clave para habilitar DKIM para el dominio.
+Si no habilita DKIM, Microsoft 365 crea automáticamente una clave pública DKIM de 1024 bits para su dominio predeterminado y la clave privada asociada que se almacena internamente en nuestro centro de datos. De forma predeterminada, Microsoft 365 usa una configuración de firmas predeterminada para los dominios que no tienen una directiva local. Esto significa que si no configura DKIM, Microsoft 365 usará su política predeterminada y se creará la clave para habilitar DKIM para el dominio.
 
 Además, si deshabilita la firma DKIM después de habilitarla, después de un período de tiempo, Microsoft 365 aplicará automáticamente la directiva predeterminada para el dominio.
 
-En el ejemplo siguiente, suponga que Microsoft 365 ha habilitado DKIM para fabrikam.com, no el administrador del dominio. Esto significa que los CNAME necesarios no existen en DNS. Las firmas DKIM para el correo electrónico de este dominio tendrán un aspecto similar al siguiente:
+En el ejemplo siguiente, suponga que Microsoft 365 ha habilitado DKIM para fabrikam.com, no el administrador del dominio. Esto significa que los CNAME necesarios no existen en DNS. Las firmas DKIM para el correo electrónico de este dominio tendrán un aspecto similar al siguiente:
 
 ```console
 From: Second Example <second.example@fabrikam.com>

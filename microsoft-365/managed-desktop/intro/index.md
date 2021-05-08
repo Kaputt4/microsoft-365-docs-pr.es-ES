@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 73ce64bd83b475cc7cc0f78b6ac4a06683264144
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 36745a0aafb70e7921c19db7c28984dcca1e2a63
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445559"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245533"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>¿Qué es el Escritorio administrado de Microsoft?
 
@@ -57,7 +57,7 @@ Los administradores de TI se benefician de estas características:
 ## <a name="device-management"></a>Administración de dispositivos
 El Escritorio administrado de Microsoft asume la carga de administración de dispositivos registrados y el software de Microsoft que usan.
 
-- **Hardware:** en lugar de que su departamento de TI tenga que investigar y probar dispositivos (y sus controladores), Escritorio administrado de Microsoft prueba cuidadosamente los dispositivos específicos, lo que da como resultado una [lista de dispositivos](../service-description/device-list.md) específicos que cumplen los requisitos de rendimiento de nivel empresarial y que se garantiza que funcionan con el servicio. Puede obtener sus propios dispositivos (o trabajar con un partner) o volver a usar dispositivos que ya tiene, siempre que se encuentren en la lista de aprobados. El registro de dispositivos es claro y sencillo, y antes de que se implementen, también puede [personalizar](../working-with-managed-desktop/config-setting-overview.md) determinados aspectos de la experiencia del dispositivo para los usuarios.
+- **Hardware:** En lugar de que el departamento de TI tenga que investigar y averiguar si un dispositivo es compatible con el servicio, hemos proporcionado requisitos específicos de hardware y software, herramientas y procesos para simplificar la selección, para que pueda elegir dispositivos con confianza. Para encontrar los dispositivos recomendados, filtre por Escritorio administrado de Microsoft en el sitio [Comprar dispositivos Windows 10 Pro para empresas](https://www.microsoft.com/windowsforbusiness/view-all-devices). Puede obtener sus propios dispositivos (o trabajar con un partner) o volver a usar dispositivos que ya tiene, siempre que se encuentren en la lista de aprobados. El registro de dispositivos es claro y sencillo, y antes de que se implementen, también puede [personalizar](../working-with-managed-desktop/config-setting-overview.md) determinados aspectos de la experiencia del dispositivo para los usuarios.
 
 - **Actualizaciones:** el Escritorio administrado de Microsoft configura y administra todos los aspectos de [grupos de implementación](../service-description/updates.md) para las actualizaciones de características y calidad de Windows 10, controladores, firmware, definiciones de antivirus y actualizaciones de Aplicaciones de Microsoft 365 para empresas. Esto incluye una amplia comprobación y verificación de todas las actualizaciones, asegurando que los dispositivos registrados siempre estén actualizados y minimizando las interrupciones, lo que libera al departamento de TI de esa tarea constante.
 
@@ -66,7 +66,7 @@ El Escritorio administrado de Microsoft asume la carga de administración de dis
 
 ## <a name="device-monitoring"></a>Supervisión de dispositivos
 
-Ayudamos a mantener la seguridad de los dispositivos con un centro de operaciones de seguridad dedicado que supervisa los dispositivos y usa los datos de las amenazas únicas que Microsoft analiza cada mes. Estas características de seguridad están integradas en lugar de agregarse más tarde.
+Ayudamos a mantener la seguridad de los dispositivos con un centro de operaciones de seguridad dedicado que supervisa los dispositivos y usa los datos de las amenazas únicas que Microsoft analiza cada mes. Estas características de seguridad ya están incluidas, en lugar de agregarse más tarde.
 
 También se supervisa el estado de los dispositivos y se proporciona información sobre su rendimiento. Más información en [Operaciones y supervisión del Escritorio administrado de Microsoft](../service-description/operations-and-monitoring.md).
 

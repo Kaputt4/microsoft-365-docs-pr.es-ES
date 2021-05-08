@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Implemente las funciones de Gobierno de la información de Microsoft para regir los datos de acuerdo a los requisitos normativos o de cumplimiento.
-ms.openlocfilehash: 6a0db63f218db72dbda9afc510cb5ef5f5e13eaa
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 304b4e57702c55242e49fae7fdf4a36e9b2f7cdb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107708"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244569"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Gobierno de la información de Microsoft en Microsoft 365
 
@@ -31,6 +31,8 @@ Use las funciones de Gobierno de la información de Microsoft (a veces abreviado
 ![Gobierne los datos: información de gobierno y administración de registros](../media/information-governance-records-management.png)
 
 ¿Quiere saber cómo proteger los datos? Obtenga información sobre la [Microsoft Information Protection en Microsoft 365](information-protection.md).
+
+Para ayudarle a cumplir las normativas de privacidad de datos, hemos diseñado un flujo de trabajo para guiarle a través de un proceso de un extremo a otro para planear e implementar funcionalidades en Microsoft 365, incluido el acceso seguro, la protección contra amenazas, la protección de la información y el gobierno de datos. Para obtener más información, consulte [Implementar la protección de la información para normativas de privacidad de datos con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
 
 ## <a name="information-governance"></a>Información de gobierno
 

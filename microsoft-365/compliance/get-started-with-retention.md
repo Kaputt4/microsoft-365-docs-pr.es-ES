@@ -18,19 +18,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: ¿Está listo para iniciar la implementación de directivas de retención y de etiquetas de retención para controlar los datos de su organización, pero no está seguro de por dónde empezar? Lea algunas instrucciones prácticas para empezar.
-ms.openlocfilehash: 65c196f8838378a10263370b1377b3eb43b14915
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: ¿Está listo para iniciar la implementación de directivas de retención y de etiquetas de retención para controlar los datos de su organización, pero no está seguro de por dónde comenzar? Lea algunas instrucciones prácticas para empezar.
+ms.openlocfilehash: b39f6246fc9265319e0d4e5b053db6dfddc0d43a
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051912"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244593"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Introducción a las directivas de retención y las etiquetas de retención
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-¿Está preparado? Ahora podrá empezar a controlar los datos de su organización, conservando el contenido que necesita mantener y eliminando el que ya no necesita. Utilice la siguiente guía de alto nivel para comenzar:
+¿Preparado para empezar a controlar los datos de su organización, conservando el contenido que necesita mantener y eliminando el que ya no necesita? Use las siguientes instrucciones para comenzar:
 
 1. **Obtenga información sobre cómo funciona la retención** en Microsoft 365 y, a continuación, determine si necesita emplear las directivas de retención o las etiquetas de retención, o una combinación de ambas: [Obtenga información sobre la retención](retention.md)
 
@@ -56,9 +56,9 @@ Los miembros de su equipo de cumplimiento que crearán y administrarán las dire
 
 De manera alternativa al uso de estos roles predeterminados, puede crear un nuevo grupo de roles y agregar el rol de **Administración de retención** a este grupo. Para el rol de solo vista, use **Administración de retención de solo vista**. 
 
-Para más información sobre estos roles y grupos de roles, vea [Permisos en el Centro de seguridad y cumplimiento](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
+Para más información sobre estos roles y grupos de roles, vea [Permisos en el Centro de seguridad y cumplimiento](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
 
-Para obtener instrucciones sobre cómo agregar usuarios a grupos de roles y asignar roles, vea [Proporcionar acceso a los usuarios al Centro de seguridad y cumplimiento](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Para obtener instrucciones sobre cómo agregar usuarios a grupos de roles y asignar roles, vea [Proporcionar acceso a los usuarios al Centro de seguridad y cumplimiento](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Estos permisos son necesarios solo para crear, configurar y aplicar etiquetas y directivas de retención. La persona que configura estas etiquetas y directivas no requiere acceso al contenido.
 
@@ -86,8 +86,6 @@ Si usa etiquetas de retención para la administración de registros, hay escenar
 
 La mayoría de las directivas de retención funcionan de forma discreta en segundo plano y no requieren interacción del usuario. Por ello, los usuarios no necesitan apenas documentación. Las directivas de retención de Teams informan a los usuarios cuando se han eliminado sus mensajes con un vínculo a los mensajes de [Teams sobre las directivas de retención](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
 
-Dado que las etiquetas de retención tienen una presencia de interfaz de usuario en las aplicaciones de Microsoft 365, asegúrese de que proporciona instrucciones a los usuarios finales y al servicio de asistencia antes de implementar estas etiquetas en la red de producción.
+Dado que las etiquetas de retención tienen una presencia de interfaz de usuario en las aplicaciones de Microsoft 365, asegúrese de que proporciona instrucciones a los usuarios finales y al servicio de asistencia antes de implementar estas etiquetas en la red de producción. Para ayudar a los usuarios a aplicar etiquetas de retención en SharePoint y OneDrive, vea [Aplicar etiquetas de retención a archivos en SharePoint o OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
 
-La documentación más eficaz para los usuarios finales serán las instrucciones personalizadas que proporcione para los nombres de etiquetas de retención y para las configuraciones que elija. Consulte la siguiente entrada de blog para obtener un paquete de descarga que puede usar para entrenar a los usuarios e impulsar la adopción: [Formación de usuarios finales para las etiquetas de retención en M365: Cómo acelerar la adopción](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
-
-También encontrará instrucciones de usuario básicas en la sección siguiente: [Aplicar etiquetas de retención manualmente](create-apply-retention-labels.md#manually-apply-retention-labels).
+Sin embargo, la documentación más eficaz para los usuarios finales serán la guía y las instrucciones personalizadas que proporcione para los nombres de etiquetas de retención y las configuraciones que elija. Consulte la siguiente entrada de blog para obtener un paquete de descarga que puede usar para entrenar a los usuarios e impulsar la adopción: [Formación de usuarios finales para las etiquetas de retención en M365: Cómo acelerar la adopción](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).

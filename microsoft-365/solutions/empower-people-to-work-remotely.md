@@ -1,5 +1,5 @@
 ---
-title: Proporcionar Microsoft 365 a los trabajadores remotos
+title: Configurar la infraestructura para el trabajo remoto con Microsoft 365
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -17,17 +17,20 @@ ms.collection:
 - m365solution-overview
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
-description: Asegúrese de tener habilitadas todas las características de Microsoft 365 para maximizar la productividad de los trabajadores remotos y mantener un acceso seguro a sus servidores, datos y nubes.
-ms.openlocfilehash: e811b0ea40c38d3c8de0dfdc17a24ce0d7aabe2f
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+keywords: trabajar desde casa, trabajo desde casa, híbrido, trabajador remoto, trabajo híbrido, empleados remotos, conectividad híbrida, acceso remoto, trabajo remoto, teletrabajo, teletrabajar, trabajo móvil, trabajo remoto, empleo remoto, trabajar desde cualquier lugar, lugar de trabajo flexible
+description: Haga un recorrido por las capas de infraestructura para que sus trabajadores remotos puedan acceder de forma segura a los recursos locales y de Microsoft 365.
+ms.openlocfilehash: 1a8cf471cf92e1301c231f395ed0238bb35359cb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029127"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246325"
 ---
-# <a name="empower-remote-workers-with-microsoft-365"></a>Proporcionar Microsoft 365 a los trabajadores remotos
+# <a name="set-up-your-infrastructure-for-remote-work-with-microsoft-365"></a>Configurar la infraestructura para el trabajo remoto con Microsoft 365
 
-Es posible que su empresa necesite habilitar el acceso seguro a los recursos, herramientas e información locales y basados en la nube de la organización para que los empleados puedan trabajar desde sus casas. Permitir que los empleados trabajen de manera remota es importante en muchas organizaciones para lo siguiente:
+Para proteger y optimizar la productividad y la colaboración de los trabajadores remotos, debe configurar su infraestructura de TI y la nube para permitir el trabajo remoto y proporcionar acceso a la información, herramientas y recursos locales y basados en la nube de su organización. Esta solución le guían por la implementación de capas clave de infraestructura que permiten a los trabajadores realizar el mejor trabajo posible, dondequiera que estén.
+
+Permitir que los empleados trabajen de manera remota es importante en muchas organizaciones para lo siguiente:
 
 - Ahorrar en espacio de oficina.
 - Contratar y conservar trabajadores que no estén dispuestos a reubicarse.
@@ -125,8 +128,6 @@ Siga estos pasos para asegurar y optimizar el acceso a los servidores y servicio
 5. [Implementar servicios y aplicaciones de productividad para los trabajadores remotos](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Proporcionar formación a los trabajadores remotos y dar respuesta a los comentarios sobre el uso](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![Los pasos para proporcionar Microsoft 365 a los trabajadores remotos](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![Los pasos para configurar su infraestructura de trabajo remoto con Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-Para obtener la información más reciente de Microsoft sobre el soporte para trabajadores remotos, consulte [Habilitar trabajo remoto con el sitio de Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
-
-Para ver cómo una organización multinacional ficticia pero representativa ha habilitado a los trabajadores remotos, consulte [Infraestructura y respuesta de Contoso a la COVID-19 para trabajo remoto e in situ](contoso-remote-onsite-work.md).
+Para ver cómo una organización multinacional ficticia pero representativa ha configurado su infraestructura para trabajo remoto, consulte [Respuesta e infraestructura de Contoso frente al COVID-19 para el trabajo remoto e in situ](contoso-remote-onsite-work.md).
