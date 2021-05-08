@@ -1,5 +1,5 @@
 ---
-title: Introducción a la detección de dispositivos
+title: Información general de la detección de dispositivo
 description: Obtenga información sobre cómo aprovechar la detección de puntos de conexión en Microsoft 365 Defender para buscar dispositivos no administrados en la red
 keywords: detección de dispositivos, detección, pasiva, proactiva, red, visibilidad, servidor, estación de trabajo, incorporación, dispositivos no administrados
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c549d5d2a7c30892a9272b4ac3e03cb8979bc1a5
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 2dee1193e9f852e66df324927bf38d37d736d251
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764992"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245953"
 ---
-# <a name="device-discovery-overview"></a>Introducción a la detección de dispositivos
+# <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -96,10 +96,11 @@ Los dispositivos que se han detectado pero aún no se han incorporado y protegid
 
 ![Imagen del panel de inventario de dispositivos](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
-
+> [!TIP]
+> Siempre puedes aplicar filtros para excluir dispositivos no administrados de la lista de inventario de dispositivos. También puede usar la columna de estado de incorporación en las consultas API para filtrar los dispositivos no administrados. 
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>Evaluación de vulnerabilidad en dispositivos detectados
-Las vulnerabilidades y riesgos en los dispositivos, así como otros dispositivos no administrados detectados en la red, forman parte de los flujos actuales de TVM en "Recomendaciones de seguridad" y se representan en páginas de entidades en el portal. Busque recomendaciones de seguridad relacionadas con "SSH" para buscar vulnerabilidades SSH relacionadas con dispositivos administrados y no administrados. 
+Las vulnerabilidades y riesgos en los dispositivos, así como otros dispositivos no administrados detectados en la red, forman parte de los flujos actuales de TVM en "Security Recomendaciones" y se representan en páginas de entidad en todo el portal. Busque recomendaciones de seguridad relacionadas con "SSH" para buscar vulnerabilidades SSH relacionadas con dispositivos administrados y no administrados. 
 
 ![Imagen del panel de recomendaciones de seguridad](images/1156c82ffadd356ce329d1cf551e806c.png)  
 
@@ -131,8 +132,8 @@ DeviceNetworkEvents
 ```
 
 
-## <a name="changed-behaviour"></a>Comportamiento modificado
-En la siguiente sección se enumeran los cambios que observará en Microsoft Defender para endpoint y/o El Centro de seguridad de Microsoft 365 cuando esta funcionalidad esté habilitada. 
+## <a name="changed-behavior"></a>Comportamiento cambiado
+En la siguiente sección se enumeran los cambios que observará en Microsoft Defender para endpoint y/o Microsoft 365 Security Center cuando esta funcionalidad esté habilitada. 
  
 1.  Se espera que los dispositivos que no están incorporados a Microsoft Defender a Endpoint aparezcan en el inventario de dispositivos, la búsqueda avanzada y las consultas api. Esto puede aumentar significativamente el tamaño de los resultados de la consulta. 
     1. Las tablas "DeviceInfo" y "DeviceNetworkInfo" en la búsqueda avanzada ahora mantendrán el dispositivo detectado. Puedes filtrar esos dispositivos mediante el atributo "OnboardingStatus".
@@ -145,5 +146,5 @@ En la siguiente sección se enumeran los cambios que observará en Microsoft Def
 
 
 ## <a name="next-steps"></a>Pasos siguientes
-- [Configurar la detección de dispositivos](configure-device-discovery.md)
+- [Configuración de la detección de dispositivo](configure-device-discovery.md)
 - [Preguntas frecuentes sobre detección de dispositivos](device-discovery-faq.md)

@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Configure las características de cumplimiento para evitar la pérdida de datos y ayudar a proteger la información confidencial de sus clientes y sus clientes.
-ms.openlocfilehash: c0accc37d3dcda9ba75813f01a98a3233c5a8369
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 945f8a283b90b89da2fbe67a073e0807b80d198f
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579962"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245092"
 ---
 # <a name="set-up-compliance-features"></a>Configurar las características de cumplimiento
 
-Su Microsoft 365 Empresa Premium incluye características para proteger sus datos y dispositivos y ayudarle a proteger la información confidencial de sus clientes y sus clientes.
+Su Microsoft 365 Empresa Premium incluye características para proteger sus datos y dispositivos y ayudarle a mantener la información confidencial de sus clientes y sus clientes seguros.
 
 ## <a name="set-up-dlp-features"></a>Configurar características de DLP
 
@@ -41,7 +41,7 @@ DLP viene con muchas plantillas de directiva listas para usar para muchas config
   
 ## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Configurar la retención de correo electrónico con Archivado de Exchange Online
 
- **Archivado de Exchange Online** de licencia ayudan a mantener el cumplimiento y los estándares normativos al conservar el contenido de correo electrónico para la exhibición de documentos electrónicos. También ayuda a reducir el riesgo si hay una demanda y proporciona una forma de recuperar datos después de una infracción de seguridad o cuando necesita recuperar elementos eliminados. Puede usar la retención por juicio para conservar todo el contenido de un usuario o usar directivas de retención para personalizar lo que desea conservar.
+ **Archivado de Exchange Online** características de licencia ayudan a mantener el cumplimiento y los estándares normativos al conservar el contenido de correo electrónico para la exhibición de documentos electrónicos. También ayuda a reducir el riesgo si hay una demanda y proporciona una forma de recuperar datos después de una infracción de seguridad o cuando necesita recuperar elementos eliminados. Puede usar la retención por juicio para conservar todo el contenido de un usuario o usar directivas de retención para personalizar lo que desea conservar.
   
 **Retención por juicio:** Puede conservar todo el contenido del buzón, incluidos los elementos eliminados, poniendo todo el buzón de un usuario en retención por juicio. 
     
@@ -49,7 +49,7 @@ Para colocar un buzón en retención por juicio, en el Centro de administración
     
 1. En la navegación izquierda, vaya a **Usuarios** \> **usuarios activos**.
     
-2. Seleccione un usuario cuyo buzón desea colocar en retención por juicio. En el panel de usuario, expanda **Configuración de correo** y, junto a Más **opciones,** elija **Editar propiedades de Exchange**.
+2. Seleccione un usuario cuyo buzón desea colocar en retención por juicio. En el panel de usuario, expanda **Configuración de correo** y, junto a Más **opciones,** elija **Editar Exchange propiedades**.
     
 3. En la página buzón del usuario, elija ** características de buzón ** en la navegación izquierda y, a continuación, elija el vínculo Habilitar **en** Retención **por juicio**.
     
@@ -61,7 +61,7 @@ Para colocar un buzón en retención por juicio, en el Centro de administración
 
 Las etiquetas de confidencialidad vienen con el Plan 1 de Azure Information Protection (AIP) y le ayudan a clasificar y, opcionalmente, proteger sus documentos y correos electrónicos mediante la aplicación de etiquetas. Los administradores que definen reglas y condiciones pueden aplicar automáticamente las etiquetas, manualmente por los usuarios o mediante una combinación en la que se les dan recomendaciones a los usuarios.
 
-Para configurar etiquetas de confidencialidad, vea [crear y administrar el vídeo de etiquetas de](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) confidencialidad.
+Para configurar etiquetas de confidencialidad, vea [crear y administrar el vídeo de etiquetas de](../business-video/create-sensitivity-labels.md) confidencialidad.
 
 
 

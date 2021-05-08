@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 817ed5e33505f691b11970e3da4c956afa7dc76c
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ea37ad4302eedf7d43e3ad03e94357a146c2216c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861064"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245581"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Características de vista previa de Microsoft Defender para puntos de conexión
 
@@ -44,7 +44,7 @@ El servicio Defender for Endpoint se actualiza constantemente para incluir nueva
 Obtén información sobre las nuevas características en la versión preliminar de Defender para endpoint y sé uno de los primeros en probar las próximas características al activar la experiencia de vista previa.
 
 >[!TIP]
->Reciba una notificación cuando se actualice esta página copiando y pegando la siguiente dirección URL en el lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+preview+features%22&locale=en-us`
+>Reciba una notificación cuando se actualice esta página copiando y pegando la siguiente dirección URL en el lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22In+the+navigation+pane%2C+select+Settings+%3E+Advanced+features+%3E+Preview+features.%22&locale=en-us&facet=`
 
 Para obtener más información sobre las nuevas funcionalidades que están disponibles en general, vea [What's new in Defender for Endpoint](whats-new-in-microsoft-defender-atp.md).
 
@@ -54,7 +54,7 @@ Tendrás acceso a las próximas características sobre las que puedes proporcion
 
 Active la configuración de la experiencia de la versión preliminar para estar entre los primeros en probar las próximas características.
 
-1. En el panel de navegación, seleccione **Configuración**  >  **Características avanzadas Características**  >  **preliminares.**
+1. En el panel de navegación, **seleccione Configuración** Características avanzadas Características  >    >  **de vista previa**.
 
 2. Alterna la configuración entre **Activar** y **Desactivar** y selecciona **Guardar preferencias**.
 

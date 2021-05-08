@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: a35e9fe818d697667ecf002a232d84f90cf53a61
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 990ab13508565fb910abe0d5e759a93e54766915
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764369"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245725"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -134,6 +134,8 @@ Esta versión preliminar de coautoría para archivos cifrados con etiquetas de c
 - Los usuarios no podrán aplicar ninguna etiqueta en Office para la Web para archivos de Word, Excel y PowerPoint que sean superiores a 300 MB. Para estos archivos, puede usar las aplicaciones de escritorio de Office para aplicar una etiqueta, pero debe ser la única persona que tiene abierto el archivo.
 
 - Al usar [directivas DLP que usan etiquetas de confidencialidad como condiciones](dlp-sensitivity-label-as-condition.md), los datos adjuntos no cifrados para correos electrónicos no son compatibles.
+
+- Algunos documentos no son compatibles con etiquetas de confidencialidad debido a características como [protección con contraseña](https://support.microsoft.com/office/require-a-password-to-open-or-modify-a-workbook-10579f0e-b2d9-4c05-b9f8-4109a6bce643), [libros compartidos](https://support.microsoft.com/office/about-the-shared-workbook-feature-49b833c0-873b-48d8-8bf2-c1c59a628534), o contenido que incluya controles ActiveX. Otros motivos están documentados en [solución de problemas de coautoría en Office](https://support.microsoft.com/office/troubleshoot-co-authoring-in-office-bd481512-3f3a-4b6d-b7eb-ebf9d3626ae7). Para esos documentos, verá el mensaje **Error al cargar** y deberá seleccionar la opción **Descartar cambios**. Mientras no quede solucionado este problema, evite etiquetar los documentos que presentan dicho mensaje de error.
 
 - Las aplicaciones de Office para iOS y Android no son compatibles.
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c9526363b0430514455db1fbdf12cfb7a18229f1
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d7563a8299bbe7d543b065bb25eeb3bc90a854b9
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932994"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245605"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>Cuotas de búsqueda avanzada y parámetros de uso
 
@@ -35,7 +35,7 @@ ms.locfileid: "51932994"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Para mantener el servicio con rendimiento y capacidad de respuesta, la búsqueda avanzada establece varias cuotas y parámetros de uso (también conocidos como "límites de servicio"). Estas cuotas y parámetros se aplican a las consultas que se ejecutan manualmente y mediante reglas [de detección personalizadas.](custom-detection-rules.md) Los clientes que ejecutan varias consultas con regularidad deben realizar un seguimiento del consumo y aplicar los [procedimientos recomendados de optimización](advanced-hunting-best-practices.md) para minimizar las interrupciones.
+Para mantener el servicio con rendimiento y capacidad de respuesta, la búsqueda avanzada establece varias cuotas y parámetros de uso (también conocidos como "límites de servicio"). Estas cuotas y parámetros se aplican por separado a las consultas que se ejecutan manualmente y a las consultas que se ejecutan mediante reglas [de detección personalizadas.](custom-detection-rules.md) Los clientes que ejecutan varias consultas con regularidad deben tener en cuenta estos límites y aplicar procedimientos recomendados de [optimización](advanced-hunting-best-practices.md) para minimizar las interrupciones.
 
 Consulte la tabla siguiente para comprender las cuotas existentes y los parámetros de uso.
 
@@ -44,7 +44,7 @@ Consulte la tabla siguiente para comprender las cuotas existentes y los parámet
 | Rango de datos | 30 días | Cada consulta | Cada consulta puede buscar datos desde los últimos 30 días. |
 | Conjunto de resultados | 10.000 filas | Cada consulta | Cada consulta puede devolver hasta 10 000 registros. |
 | Timeout | 10 minutos | Cada consulta | Cada consulta puede ejecutarse durante un máximo de 10 minutos. Si no se completa en 10 minutos, el servicio muestra un error.
-| Recursos de CPU | En función del tamaño del espacio empresarial | - En la hora y, a continuación, cada 15 minutos<br>- Diario a las 12 medianoche | El servicio aplica la cuota diaria y la cuota de 15 minutos por separado. Por cada cuota, el [portal muestra](advanced-hunting-errors.md) un error cada vez que se ejecuta una consulta y el inquilino ha consumido más del 10 % de los recursos asignados. Las consultas se bloquean si el inquilino ha alcanzado el 100 % hasta después del siguiente ciclo diario o de 15 minutos. |
+| Recursos de CPU | En función del tamaño del espacio empresarial | Cada 15 minutos | El [portal muestra un error cada](advanced-hunting-errors.md) vez que se ejecuta una consulta y el inquilino ha consumido más del 10 % de los recursos asignados. Las consultas se bloquean si el inquilino ha alcanzado el 100 % hasta después del siguiente ciclo de 15 minutos. |
 
 >[!NOTE] 
 >Se aplica un conjunto independiente de cuotas y parámetros a las consultas de búsqueda avanzadas realizadas a través de la API. [Leer acerca de las API de búsqueda avanzada](./api-advanced-hunting.md)

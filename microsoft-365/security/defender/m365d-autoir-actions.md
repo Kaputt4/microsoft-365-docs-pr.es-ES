@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 7106f5d2e740d2b4cacbcaeb0b9391095bbeb356
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: e3e842f812c5675334cc25fa35544165129db2b4
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592029"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245893"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Ver y administrar acciones en el Centro de acciones
 
@@ -36,7 +36,7 @@ ms.locfileid: "51592029"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Las características de protección contra amenazas en Microsoft 365 Defender pueden dar lugar a determinadas acciones de corrección. Estos son algunos ejemplos:
+Las características de protección contra amenazas de Microsoft 365 Defender pueden dar lugar a determinadas acciones de corrección. Estos son algunos ejemplos:
 - [Las investigaciones automatizadas](m365d-autoir.md) pueden dar como resultado acciones de corrección que se toman automáticamente o esperan su aprobación.
 - Antivirus, antimalware y otras características de protección contra amenazas pueden provocar acciones de corrección, como bloquear un archivo, una dirección URL o un proceso, o enviar un artefacto a la cuarentena.
 - El equipo de operaciones de seguridad puede realizar [](advanced-hunting-overview.md) acciones de corrección manualmente, como durante la búsqueda avanzada o al investigar [alertas](investigate-alerts.md) [o incidentes.](investigate-incidents.md)

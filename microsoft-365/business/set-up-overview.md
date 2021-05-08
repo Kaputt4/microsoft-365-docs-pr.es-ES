@@ -26,21 +26,21 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: Obtenga información sobre los pasos de configuración para Microsoft 365 Empresa Premium, desde suscribirse, agregar un dominio y usuarios, hasta configurar directivas de seguridad, etc.
-ms.openlocfilehash: 749acbfdbde92ad97b09dc720c85dd850b76c9cf
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Obtenga información sobre los pasos de configuración Microsoft 365 Empresa Premium, desde suscribirse, agregar un dominio y usuarios, hasta configurar directivas de seguridad y mucho más.
+ms.openlocfilehash: 008a5c51698589667acc0d01649f67dab33b4c58
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579942"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245072"
 ---
 # <a name="overview-of-setup"></a>Información general sobre la configuración
 
-Vea un breve vídeo sobre la configuración de Microsoft 365 Empresa Premium.<br><br>
+Vea un breve vídeo sobre Microsoft 365 Empresa Premium instalación.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
 
 La mayoría de los pasos de configuración se pueden realizar en la configuración guiada, pero también se enumeran las otras opciones.
 
@@ -50,7 +50,7 @@ La mayoría de los pasos de configuración se pueden realizar en la configuraci�
 
    - **Agregar usuarios**. Puede agregar usuarios de cualquiera de las tres maneras siguientes:
         - En la [configuración guiada](set-up.md#add-users-in-the-wizard).
-        - Use la sincronización de [directorios para agregar usuarios mediante Azure AD Connect](../enterprise/set-up-directory-synchronization.md) si tiene un Active Directory local.
+        - Use la sincronización de [directorios para agregar usuarios mediante Azure AD Conectar](../enterprise/set-up-directory-synchronization.md) si tiene un Active Directory local.
         - También puede agregar [usuarios más adelante](../admin/add-users/add-users.md) en el Centro de administración.
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>Paso 2: Configurar directivas de seguridad y configurar dispositivos 
 
@@ -61,38 +61,38 @@ La mayoría de los pasos de configuración se pueden realizar en la configuraci�
   Además de la configuración de seguridad en el asistente para la configuración, puede aumentar la seguridad agregando la siguiente configuración:
 
 - **Protección contra malware de correo electrónico**
-- **Anti phishing en Defender para Office 365**
+- **Anti-phishing in Defender for Office 365**
 - **Archivado de Exchange Online**
 - **Azure Information Protection (Plan1)**
 
 Para empezar, vea [Aumentar la protección contra amenazas](increase-threat-protection.md) y configurar las características de [cumplimiento](set-up-compliance.md).
 
-Vea también las 10 principales formas de proteger [Su Microsoft 365 Empresa Premium](/office365/admin/security-and-compliance/secure-your-business-data) para obtener una hoja de ruta de los procedimientos de seguridad recomendados.
+Vea también [las 10 principales](/office365/admin/security-and-compliance/secure-your-business-data) formas de proteger su Microsoft 365 Empresa Premium para obtener una hoja de ruta de los procedimientos de seguridad recomendados.
 
-## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Paso 3: Configurar y administrar dispositivos Windows 10
+## <a name="step-3-set-up-and-manage-windows-10-devices"></a>Paso 3: Configurar y administrar Windows 10 dispositivos
 
-Después de completar la configuración guiada, querrás proteger todos los equipos con Windows 10 de tu organización.
+Después de completar la configuración guiada, querrá proteger todos los Windows 10 de la organización.
   
-- Windows 10 Pro es un requisito previo para Microsoft 365 Empresa Premium, pero si tienes Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, la suscripción te da derecho [a](pre-requisites-for-data-protection.md) una actualización a [Windows 10 Pro](./upgrade-to-windows-pro-creators-update.md).
-- Sigue los pasos descritos en [Equipos seguros de Windows 10](secure-win-10-pcs.md) para configurar directivas para dispositivos Windows 10.
+- Windows 10 Pro es un [](pre-requisites-for-data-protection.md) requisito previo para Microsoft 365 Empresa Premium, pero si tiene Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro, su suscripción le da derecho a una actualización a [Windows 10 Pro](./upgrade-to-windows-pro-creators-update.md).
+- Siga los pasos de [secure Windows 10 pc para](secure-win-10-pcs.md) configurar directivas para Windows 10 dispositivos.
 
-Cuando unes un dispositivo Windows 10 a Azure AD, se aplican las directivas que estableces para equipos con Windows 10. Para obtener más información, consulta [Configurar dispositivos Windows para usuarios de Microsoft 365.](set-up-windows-devices.md)
+Al unir un dispositivo Windows 10 a Azure AD, las directivas que establezca para Windows 10 equipos se aplicarán a él. Para obtener más información, vea [Configurar Windows dispositivos para Microsoft 365 usuarios.](set-up-windows-devices.md)
 
-## <a name="step-4-install-microsoft-365-apps-for-business"></a>Paso 4: Instalar aplicaciones de Microsoft 365 para empresas
-- Puede instalar Office automáticamente en los dispositivos Windows mediante el asistente [para la instalación.](set-up.md#deploy-office-365-client-apps)
-- Permitir a [los usuarios instalar aplicaciones de Office](/office365/admin/setup/install-applications) para Windows y dispositivos.
+## <a name="step-4-install-microsoft-365-apps-for-business"></a>Paso 4: Instalar Aplicaciones Microsoft 365 para negocios
+- Puede instalar automáticamente Office en los dispositivos Windows mediante el asistente [de instalación](set-up.md#deploy-office-365-client-apps).
+- Permitir a [los usuarios instalar Office aplicaciones para](/office365/admin/setup/install-applications) Windows y dispositivos.
      
 ## <a name="advanced"></a>Opciones avanzadas
 - **Usar Autopilot para configurar nuevos dispositivos**
             
-     Puedes usar [Windows Autopilot](add-autopilot-devices-and-profile.md) para configurar automáticamente los nuevos dispositivos **Windows** 10 para un usuario, pero puede ser más fácil obtener [un](https://www.microsoft.com/solution-providers/search) partner que pueda hacerlo por ti. También puedes ir a [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598)y pedir a un experto en tecnología en la nube que configure los nuevos dispositivos que compres.
+     Puedes usar [Windows Autopilot](add-autopilot-devices-and-profile.md) para configurar automáticamente nuevos dispositivos **Windows 10** para un usuario, pero puede ser más fácil obtener [un](https://www.microsoft.com/solution-providers/search) partner que pueda hacerlo por ti. También puedes ir a [Microsoft Store](https://go.microsoft.com/fwlink/?linkid=874598)y pedir a un experto en tecnología en la nube que configure los nuevos dispositivos que compres.
 
 - **Acceder a recursos locales**
 
-     - Si tu organización usa Windows Server Active Directory local, puedes configurar Microsoft 365 Empresa Premium para proteger tus dispositivos Windows 10, mientras mantienes el acceso a los recursos locales que requieren autenticación local. Sigue los pasos de [Habilitar dispositivos Windows 10](manage-windows-devices.md) unidos a un dominio para que Microsoft 365 Empresa Premium lo pueda administrar para configurarlo. Este es el método preferido y los dispositivos en este estado se denominan dispositivos unidos a Azure AD híbrido.
+     - Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 Empresa Premium para proteger los dispositivos Windows 10 y mantener el acceso a los recursos locales que requieren autenticación local. Siga los pasos de [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Empresa Premium](manage-windows-devices.md) to set this up. Este es el método preferido y los dispositivos en este estado se denominan dispositivos unidos a Azure AD híbrido.
 
-    - Si su empresa tiene un Active Directory local que contiene algunos recursos locales (como recursos compartidos de archivos e impresoras), puede proporcionar a los dispositivos unidos a Azure AD acceso a estos recursos siguiendo los pasos que se indican a continuación: Obtener acceso a recursos locales desde un dispositivo unido a Azure AD en [Microsoft 365 Empresa Premium.](access-resources.md)
+    - Si su empresa tiene un Active Directory local que contiene algunos recursos locales (como recursos compartidos de archivos e impresoras), puede proporcionar a los dispositivos unidos a Azure AD acceso a estos recursos siguiendo los pasos que se indican a continuación: Obtener acceso a recursos locales desde un dispositivo unido a [Azure AD](access-resources.md)en Microsoft 365 Empresa Premium .
 
-## <a name="see-also"></a>Vea también
+## <a name="related-content"></a>Contenido relacionado
 
-[Vídeos de aprendizaje de Microsoft 365 para empresas](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 vídeos de aprendizaje para empresas](../business-video/index.yml) (página de vínculos)

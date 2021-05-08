@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Obtenga información sobre cómo configurar orígenes de contenido de aprendizaje para Microsoft Viva Learning (versión preliminar) en el centro Microsoft 365 administración.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a1bbe65db9dee028f57849de8a5538c996c3e2a4
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: b2e6ab6306db9a5ac9d91226431e5876cc244499
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52101102"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245425"
 ---
 # <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>Configurar orígenes de contenido de aprendizaje para Microsoft Viva Learning (versión preliminar) en el Centro Microsoft 365 administración
 
@@ -35,7 +35,7 @@ El administrador selecciona qué otros orígenes de contenido de aprendizaje (po
 > [!NOTE]
 >  Los usuarios inician sesión en usuarios que no son de Microsoft y LinkedIn Learning Pro aprendizaje en un explorador o visor incrustado. Este aprendizaje configurado está sujeto a los términos de licencia, privacidad y servicio independientes entre su organización y el tercero, y no a los términos de Viva Learning (versión preliminar). Antes de seleccionar este tipo de aprendizaje, compruebe que tiene un acuerdo para la organización y los usuarios.
 
-## <a name="assign-the-knowledge-admin-role-optional"></a>Asignar el rol de administrador de conocimientos [Opcional]
+## <a name="assign-the-knowledge-admin-role-optional"></a>Asignar el rol de administrador de conocimientos (opcional)
 
 Debe ser un administrador Microsoft 365 global para realizar estas tareas.
 
@@ -78,11 +78,11 @@ Para configurar la configuración de orígenes de contenido de aprendizaje en Vi
 
 1.  En la navegación izquierda del centro Microsoft 365 administración, vaya a **Configuración**  >  **configuración de la organización.**
 
-2.  En la **página Configuración de** la organización, en la pestaña **Servicios,** seleccione **Aplicación de aprendizaje (versión preliminar).**
+2.  En la **página Configuración de** la organización, en la pestaña **Servicios,** seleccione **Viva Learning (versión preliminar).**
 
      ![Configuración en el Centro Microsoft 365 administración que muestra la aplicación de aprendizaje que aparece.](../media/learning/learning-sharepoint-configure1.png)
 
-3.  En el panel Aplicación de aprendizaje **(versión** preliminar), seleccione los orígenes de contenido de aprendizaje que desea configurar para la organización y, a continuación, **seleccione Guardar**.
+3.  En el **panel Viva Learning (versión** preliminar), seleccione los orígenes de contenido de aprendizaje que desea configurar para la organización y, a continuación, **seleccione Guardar**.
 
      ![Panel de aprendizaje en el Centro Microsoft 365 administración que muestra las opciones de orígenes de contenido.](../media/learning/learning-sharepoint-configure2.png)
 

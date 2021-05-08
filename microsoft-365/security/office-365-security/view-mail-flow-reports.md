@@ -19,12 +19,12 @@ description: Los administradores pueden obtener información sobre los informes 
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 13871908c3b09660906b9233d23495830cf31ba9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 38beac44af191a027db722ade25ca7fd0e505d9b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207258"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245677"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Ver informes de flujo de correo en el panel Informes del Centro de & cumplimiento
 
@@ -35,7 +35,7 @@ ms.locfileid: "51207258"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Además de los informes de flujo [](mail-flow-insights-v2.md) de correo que están disponibles en el panel flujo de correo en el Centro de seguridad y cumplimiento de &, hay una variedad de informes de flujo de correo adicionales disponibles en el panel informes para ayudarle a supervisar su organización de Microsoft 365.
+Además de los informes de flujo [](mail-flow-insights-v2.md) de correo que están disponibles en el panel flujo de correo en el Centro de seguridad y cumplimiento de &, hay una variedad de informes de flujo de correo adicionales disponibles en el panel Informes para ayudarle a supervisar su organización Microsoft 365.
 
 Si tiene los permisos [necesarios,](#what-permissions-are-needed-to-view-these-reports)puede ver estos informes en el Centro de seguridad [& cumplimiento](https://protection.office.com) yendo al **Panel de** \> **informes**. Para ir directamente al panel Informes, abra <https://protection.office.com/insightdashboard> .
 
@@ -95,29 +95,29 @@ Si hace clic **en Filtros en** una vista de tabla de detalles, puede especificar
 
 Para volver a la vista informe, haga clic **en Ver informe**.
 
-## <a name="exchange-transport-rule-report"></a>Informe de reglas de transporte de Exchange
+## <a name="exchange-transport-rule-report"></a>Exchange de regla de transporte
 
-El **informe de reglas de transporte de Exchange** muestra el efecto de las reglas de flujo de correo (también conocidas como reglas de transporte) en los mensajes entrantes y salientes de la organización.
+El **Exchange de regla** de transporte muestra el efecto de las reglas de flujo de correo (también conocidas como reglas de transporte) en los mensajes entrantes y salientes de la organización.
 
-Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel de informes y seleccione Regla de transporte \>  de **Exchange**. Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=ETRRuleReport> .
+Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel de informes y seleccione Exchange \>  **de transporte**. Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=ETRRuleReport> .
 
-![Widget de regla de transporte de Exchange en el panel Informes](../../media/transport-rule-report-widget.png)
+![Exchange de regla de transporte en el panel Informes](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>Vista Informe para el informe de reglas de transporte de Exchange
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>Vista Informe para el informe Exchange regla de transporte
 
 Los siguientes gráficos están disponibles en la vista informe:
 
-- **Ver datos por: reglas de transporte de** \> Exchange **Dividir por: Dirección:** este gráfico  muestra  el número de mensajes entrantes y salientes que se vieron afectados por las reglas de transporte.
+- **Ver datos por: Exchange de transporte** \> **Dividir por: Dirección:** este gráfico  muestra  el número de mensajes entrantes y salientes que se vieron afectados por las reglas de transporte.
 
-- **Ver datos por: reglas de transporte de** \> Exchange **Dividir por: Gravedad:** este gráfico muestra  el número de mensajes de gravedad alta y media y **de gravedad** baja. El nivel de gravedad se establece como una acción en la regla (**Auditar** esta regla con el nivel de gravedad o _SetAuditSeverity_). Para obtener más información, vea [Acciones de regla de flujo de correo en Exchange Online](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+- **Ver datos por: Exchange de transporte** \> **Dividir por: Gravedad:** este gráfico muestra  el número de mensajes de gravedad alta y media y **de gravedad** baja. El nivel de gravedad se establece como una acción en la regla (**Auditar** esta regla con el nivel de gravedad o _SetAuditSeverity_). Para obtener más información, vea [Acciones de regla de flujo de correo en Exchange Online](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
-- **Ver datos por: reglas de transporte** \> de DLP Exchange **Dividir por: Dirección:** este gráfico  muestra  el número de mensajes entrantes y salientes que se vieron afectados por las reglas de transporte de prevención de pérdida de datos (DLP). Puede refinar aún más el gráfico seleccionando una de las siguientes opciones:
+- **Ver datos por: DLP Exchange de transporte** \> **Dividir por: Dirección:** este gráfico  muestra  el número de mensajes entrantes y salientes que se vieron afectados por las reglas de transporte de prevención de pérdida de datos (DLP). Puede refinar aún más el gráfico seleccionando una de las siguientes opciones:
 
   - **Mostrar datos para: todas las reglas de transporte DLP**
   - **Mostrar datos para: usuarios en peligro**
   - **Mostrar datos para: Bajo volumen de contenido detectado por la Ley Patriota de EE.UU.**
 
-- **Ver datos por: reglas de transporte** \> de DLP Exchange **Dividir por: Dirección:** esta vista muestra el número de mensajes  de gravedad alta y media y de gravedad baja que se vieron afectados por las reglas de transporte DLP.  Puede refinar aún más el gráfico seleccionando una de las siguientes opciones:
+- **Ver datos por: DLP Exchange de transporte** \> **Dividir por: Dirección:** esta vista muestra el número de mensajes  de gravedad alta y media y de gravedad baja que se vieron afectados por las reglas de transporte DLP.  Puede refinar aún más el gráfico seleccionando una de las siguientes opciones:
 
   - **Mostrar datos para: todas las reglas de transporte DLP**
   - **Mostrar datos para: usuarios en peligro**
@@ -129,13 +129,13 @@ Si hace clic **en Filtros** en una vista de informe, puede modificar los resulta
 - Valores de dirección
 - Valores de gravedad
 
-![Vista Informe en el informe de reglas de transporte de Exchange](../../media/transport-rule-report-report-view.png)
+![Vista Informe en el informe Exchange regla de transporte](../../media/transport-rule-report-report-view.png)
 
-### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Vista de tabla de detalles para el informe de reglas de transporte de Exchange
+### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Vista de tabla de detalles para el informe Exchange regla de transporte
 
 Si hace clic **en Ver tabla de detalles,** la información que se muestra depende del gráfico que estaba mirando:
 
-- **Ver datos por: Reglas de transporte de Exchange:**
+- **Ver datos por: Exchange de transporte :**
 
   - **Fecha**
   - **Regla de transporte**
@@ -145,7 +145,7 @@ Si hace clic **en Ver tabla de detalles,** la información que se muestra depend
   - **Gravedad**
   - **Dirección**
 
-- **Ver datos por: Reglas de transporte de Dlp Exchange**:
+- **Ver datos por: DLP Exchange de transporte:**
 
   - **Fecha**
   - **Directiva DLP**
@@ -166,7 +166,7 @@ Para volver a la vista informe, haga clic **en Ver informe**.
 
 ## <a name="forwarding-report"></a>Informe de reenvío
 
-El **informe de reenvío** muestra los mensajes reenviados automáticamente de la organización a dominios externos desde buzones de Exchange Online. Los mensajes reenviados pueden suponer un riesgo de seguridad o cumplimiento, e indicar una cuenta comprometida.
+El **informe de reenvío** muestra los mensajes reenviados automáticamente a dominios externos desde Exchange Online buzones de correo. Los mensajes reenviados pueden suponer un riesgo de seguridad o cumplimiento, e indicar una cuenta comprometida.
 
 Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel de informes y seleccione \>  **Reenviar informe**. Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
@@ -214,7 +214,7 @@ Para volver a la vista informes, haga clic **en Ver informe**.
 
 ## <a name="mailflow-status-report"></a>Informe de estado de flujo de correo
 
-El **informe de estado de flujo** de correo es similar al informe de correo electrónico enviado y recibido, con información adicional sobre el correo electrónico permitido o bloqueado en el perímetro. [](#sent-and-received-email-report) Este es el único informe que contiene información de protección perimetral y muestra cuánto correo electrónico se bloquea antes de que exchange Online Protection (EOP) pueda evaluarlo. Es importante comprender que si un mensaje se envía a cinco destinatarios, lo contamos como cinco mensajes diferentes y no un mensaje.
+El **informe de estado de flujo** de correo es similar al informe de correo electrónico enviado y recibido, con información adicional sobre el correo electrónico permitido o bloqueado en el perímetro. [](#sent-and-received-email-report) Este es el único informe que contiene información de protección perimetral y muestra cuánto correo electrónico se bloquea antes de que se le permita entrar en el servicio para su evaluación por parte de Exchange Online Protection (EOP). Es importante comprender que si un mensaje se envía a cinco destinatarios, lo contamos como cinco mensajes diferentes y no un mensaje.
 Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel de informes y seleccione Informe de estado de flujo \>  **de correo**. Para ir directamente al informe **de estado de flujo de correo**, abra <https://protection.office.com/mailflowStatusReport> .
 
 ![Widget de informe de estado de flujo de correo en el panel Informes](../../media/mail-flow-status-report-widget.png)
@@ -226,7 +226,7 @@ Al abrir el informe, la **pestaña Tipo** está seleccionada de forma predetermi
 - **Fecha:** los últimos 7 días.
 - **Dirección**:
 
-  - **Entrada**
+  - **Entrante**
   - **Saliente**
   - **Intra-org:** este recuento es para mensajes dentro de un espacio empresarial, es decir, sender abc@domain.com al destinatario xyz@domain.com (se cuenta por separado de **Entrante** y **Saliente**)
 
@@ -264,9 +264,9 @@ Si hace clic **en Elegir una categoría para obtener más información,** puede 
 
 Para la vista de detalles, solo puede exportar datos durante un día. Por lo tanto, si desea exportar datos durante 7 días, debe realizar 7 acciones de exportación diferentes.
 
-Cada archivo .csv exportado está limitado a 150 000 filas. Si los datos de ese día contienen más de 150 000 filas, se crearán varios archivos .csv.
+Cada archivo .csv exportada está limitado a 150 000 filas. Si los datos de ese día contienen más de 150.000 filas, se crearán varios .csv archivos.
 
-![Vista De tipo en el informe de estado de flujo de correo ](../../media/mail-flow-status-report-type-view.png)
+![Vista De tipo en el informe de estado de flujo de correo](../../media/mail-flow-status-report-type-view.png)
 
 ### <a name="direction-view-for-the-mailflow-status-report"></a>Vista Dirección del informe de estado de flujo de correo
 
@@ -284,9 +284,9 @@ La **categoría Elegir una categoría para obtener más detalles** sobre las sel
 
 Para la vista de detalles, solo puede exportar datos durante un día. Por lo tanto, si desea exportar datos durante 7 días, debe realizar 7 acciones de exportación diferentes.
 
-Cada archivo .csv exportado está limitado a 150 000 filas. Si los datos de ese día contienen más de 150 000 filas, se crearán varios archivos .csv.
+Cada archivo .csv exportada está limitado a 150 000 filas. Si los datos de ese día contienen más de 150.000 filas, se crearán varios .csv archivos.
 
-![Vista Dirección en el informe de estado de flujo de correo ](../../media/mail-flow-status-report-direction-view.png)
+![Vista Dirección en el informe de estado de flujo de correo](../../media/mail-flow-status-report-direction-view.png)
 
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>Vista embudo para el informe de estado de flujo de correo
 
@@ -298,7 +298,7 @@ Si hace clic en la **pestaña Embudo,** de forma predeterminada, esta vista cont
 
 - **Dirección**:
 
-  - **Entrada**
+  - **Entrante**
   - **Saliente**
   - **Intra-org:** este recuento es para los mensajes enviados dentro de un espacio empresarial; Es decir, el remitente abc@domain.com al destinatario xyz@domain.com (se cuenta por separado de Entrante y Saliente).
 
@@ -317,9 +317,9 @@ Este gráfico muestra el recuento de correo electrónico organizado por:
 - **Email after file and URL detonation**<sup>1</sup>
 - **Correo electrónico detectado como benigno después de la protección posterior a la entrega (url click time protection)**
 
-<sup>1</sup> Defender solo para Office 365
+<sup>1</sup> Defender para Office 365 solo
 
-Para ver el correo electrónico filtrado por EOP o Defender para Office 365 por separado, haga clic en el valor de la leyenda del gráfico.
+Para ver el correo electrónico filtrado por EOP o Defender Office 365 por separado, haga clic en el valor de la leyenda del gráfico.
 
 La tabla de datos contiene la siguiente información, que se muestra en orden de fecha descendente:
 
@@ -339,8 +339,8 @@ La tabla de datos contiene la siguiente información, que se muestra en orden de
   - Suplantación de **usuario:** mensajes filtrados debido a un intento de suplantar a un usuario (remitente de mensajes) que se define en la configuración de protección de suplantación de una directiva contra suplantación.
   - **Suplantación** de dominio: mensajes filtrados debido a un intento de suplantar un dominio definido en la configuración de protección de suplantación de una directiva contra suplantación.
 - **Detonación de archivos y direcciones URL (Defender para Office 365):**
-  - **Detonación de archivos:** mensajes filtrados por una directiva de datos adjuntos seguros.
-  - **Detonación de dirección URL:** mensaje filtrado por una directiva de vínculos seguros.
+  - **Detonación de archivos:** mensajes filtrados por una directiva Caja fuerte datos adjuntos.
+  - **Detonación de dirección URL:** mensaje filtrado por una directiva Caja fuerte vínculos.
 - **Protección posterior a la entrega y ZAP (ATP) o ZAP (EOP):** ZAP indica la purga automática de cero horas.
 
 Si selecciona una fila en la tabla de datos, se muestra un desglose adicional de los recuentos de correo electrónico en el menú desplegable.
@@ -352,11 +352,11 @@ Después de hacer **clic en Exportar** en **Opciones,** puede seleccionar uno de
 - **Resumen (con datos de los últimos 90 días como máximo)**
 - **Detalles (con datos de los últimos 30 días como máximo)**
 
-En **Fecha**, elija un rango y, a continuación, haga clic **en Aplicar**. Los datos de los filtros actuales se exportarán a un archivo .csv.
+En **Fecha**, elija un rango y, a continuación, haga clic **en Aplicar**. Los datos de los filtros actuales se exportarán a un .csv archivo.
 
-Cada archivo .csv exportado está limitado a 150 000 filas. Si los datos contienen más de 150 000 filas, se crearán varios archivos .csv.
+Cada archivo .csv exportada está limitado a 150 000 filas. Si los datos contienen más de 150 000 filas, se crearán varios .csv archivos.
 
- ![Vista embudo en el informe de estado de flujo de correo ](../../media/mail-flow-status-report-funnel-view.png)
+ ![Vista embudo en el informe de estado de flujo de correo](../../media/mail-flow-status-report-funnel-view.png)
 
 ### <a name="tech-view-for-the-mailflow-status-report"></a>Vista técnica del informe de estado del flujo de correo
 
@@ -368,7 +368,7 @@ Si hace clic en la **pestaña Vista técnica,** de forma predeterminada, esta vi
 
 - **Dirección**:
 
-  - **Entrada**
+  - **Entrante**
   - **Saliente**
   - **Intra-org:** este recuento es para mensajes dentro de un espacio empresarial, es decir, remitente abc@domain.com al destinatario xyz@domain.com (se cuenta por separado de Entrante y Saliente)
 
@@ -380,13 +380,13 @@ En este gráfico se muestran los mensajes organizados en las siguientes categor�
 
 - **Correo electrónico total**
 - **Edge allow** y **Edge filtered**
-- **No malware,** **detección de datos adjuntos seguros,** detección de motores <sup>\*</sup> **antimalware** y **mensajes de regla**
+- **No malware**, **Caja fuerte attachments detection**, <sup>\*</sup> **Anti-malware engine detection** y Rule **messages**
 - **No phish**, **error DMARC,** **detección de suplantación,** detección **de suplantación** y detección **de suplantación** de identidad
 - **No hay detección con detonación de dirección URL** y **detonación de url**<sup>\*</sup>
 - **No correo no** deseado y  **correo no deseado**
-- **Correo electrónico no malintencionado,** **detección de vínculos seguros** <sup>\*</sup> y **ZAP**
+- **Correo electrónico no malintencionado,** **Caja fuerte de detección de vínculos y** <sup>\*</sup> **ZAP**
 
-<sup>\*</sup> Defender para Office 365
+<sup>\*</sup>Defender para Office 365
 
 Al pasar el mouse sobre una categoría del gráfico, puede ver el número de mensajes de esa categoría.
 
@@ -395,14 +395,14 @@ La tabla de datos contiene la siguiente información, que se muestra en orden de
 - **Fecha**
 - **Correo electrónico total**
 - **Perímetro filtrado**
-- **Motor antimalware, Datos adjuntos seguros, regla filtrada:**
+- **Motor antimalware, Caja fuerte datos adjuntos, regla filtrada:**
   - **Regla filtrada:** mensajes filtrados debido a reglas de flujo de correo (también conocidas como reglas de transporte).
 - **DMARC, suplantación, suplantación, suplantación de identidad filtrada:**
   - **DMARC:** mensajes filtrados debido a que el mensaje no ha fallado en la comprobación de autenticación de DMARC.
 - **Detección de detonación de url**
 - **Filtrado contra correo no deseado**
 - **ZAP quitado**
-- **Detección por vínculos seguros**
+- **Detección por Caja fuerte vínculos**
 
 Si selecciona una fila en la tabla de datos, se muestra un desglose adicional de los recuentos de correo electrónico en el menú desplegable.
 
@@ -413,11 +413,11 @@ Al hacer **clic en** Exportar , en **Opciones,** puede seleccionar uno de los si
 - **Resumen (con datos de los últimos 90 días como máximo)**
 - **Detalles (con datos de los últimos 30 días como máximo)**
 
-En **Fecha**, elija un rango y, a continuación, haga clic **en Aplicar**. Los datos de los filtros actuales se exportarán a un archivo .csv.
+En **Fecha**, elija un rango y, a continuación, haga clic **en Aplicar**. Los datos de los filtros actuales se exportarán a un .csv archivo.
 
-Cada archivo .csv exportado está limitado a 150 000 filas. Si los datos contienen más de 150 000 filas, se crearán varios archivos .csv.
+Cada archivo .csv exportada está limitado a 150 000 filas. Si los datos contienen más de 150 000 filas, se crearán varios .csv archivos.
 
- ![Vista técnica en el informe de estado del flujo de correo ](../../media/mail-flow-status-report-Tech-view.png)
+ ![Vista técnica en el informe de estado del flujo de correo](../../media/mail-flow-status-report-Tech-view.png)
 
 ## <a name="sent-and-received-email-report"></a>Informe de correo electrónico enviado y recibido
 
@@ -495,7 +495,7 @@ Los gráficos siguientes están disponibles en la vista informe:
 - **Mostrar datos para \> los principales destinatarios de correo**
 - **Mostrar datos para los \> principales destinatarios de correo no deseado**
 - **Mostrar datos para \> Principales destinatarios de malware** (EOP)
-- **Mostrar datos para \> los principales destinatarios de malware (Defender para Office 365)**
+- **Mostrar datos para \> los destinatarios principales de malware (Defender para Office 365)**
 
 La composición del gráfico circular cambia en función de estas selecciones.
 
@@ -529,7 +529,7 @@ Si hace clic **en Ver tabla de detalles,** la información que se muestra depend
   - **Principales destinatarios de malware**
   - **Count**
 
-- **Mostrar datos para \> los principales destinatarios de malware (Defender para Office 365)**
+- **Mostrar datos para \> los destinatarios principales de malware (Defender para Office 365)**
 
   - **Principales destinatarios de malware (Defender para Office 365)**
   - **Count**
@@ -547,7 +547,7 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 - **Lector de seguridad**
 - **Lector global**
 
-Para más información, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 > [!NOTE]
 > Agregar usuarios al rol correspondiente de Azure Active Directory en el Centro de administración de Microsoft 365 otorga a los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento _y_ permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).

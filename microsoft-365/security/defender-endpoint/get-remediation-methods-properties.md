@@ -1,7 +1,7 @@
 ---
 title: Propiedades y métodos de actividad de corrección
-description: La respuesta de la API contiene & de administración de vulnerabilidades creadas en el espacio empresarial. Puede solicitar todas las actividades de corrección, solo una actividad de corrección o información sobre los dispositivos expuestos para una tarea de corrección seleccionada.
-keywords: apis, remediation, remediation api, get, remediation tasks,
+description: La respuesta de la API contiene amenazas & administración de vulnerabilidades de corrección creadas en el espacio empresarial. Puede solicitar todas las actividades de corrección, solo una actividad de corrección o información sobre los dispositivos expuestos para una tarea de corrección seleccionada.
+keywords: apis, remediation, remediation api, get, remediation tasks, remediation methods, remediation properties,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f720d638ec469523a1d567dee9c01fa0974b0090
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 4c0ecd89c45ec2c91dc37f0c9cd0bfb868c0474e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061157"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245545"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>Propiedades y métodos de actividad de corrección
 
@@ -39,21 +39,21 @@ ms.locfileid: "52061157"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-La respuesta de la API contiene [las & de](next-gen-threat-and-vuln-mgt.md)corrección de la administración de vulnerabilidades que se han creado en el espacio   empresarial.  
+La respuesta de la API contiene [& administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)   de corrección de amenazas que se han creado en el espacio empresarial.  
 
 ## <a name="methods"></a>Métodos
 
-Método | Tipo de datos | Description
+Método | Tipo de datos | Descripción
 :---|:---|:---
 [Enumerar todas las actividades de corrección](get-remediation-all-activities.md) | Colección Investigation | Devuelve información sobre todas las actividades de corrección.
-[Enumerar dispositivos expuestos de una actividad de corrección](get-remediation-exposed-devices-activities.md) | Entidad de investigación | Devuelve información sobre los dispositivos expuestos para la actividad de corrección especificada.
+[Lista de dispositivos expuestos de una actividad de corrección](get-remediation-exposed-devices-activities.md) | Entidad de investigación | Devuelve información sobre los dispositivos expuestos para la actividad de corrección especificada.
 [Obtener una actividad de corrección por id.](get-remediation-one-activity.md) | Entidad de investigación | Devuelve información sobre la actividad de corrección especificada.
 
 Obtenga más información sobre [las actividades de corrección](tvm-remediation.md).
 
 ## <a name="properties"></a>Propiedades
 
-Id. de propiedad | Tipo de datos | Description
+Id. de propiedad | Tipo de datos | Descripción
 :---|:---|:---
 categoría | Cadena | Categoría de la actividad de corrección (configuración software/seguridad)
 completerEmail | Cadena | Si alguien completó manualmente la actividad de corrección, esta columna contiene su correo electrónico
@@ -90,8 +90,8 @@ vendorId | Cadena | Nombre de proveedor relacionado
 
 - [Enumerar todas las actividades de corrección](get-remediation-all-activities.md)
 
-- [Enumerar dispositivos expuestos de una actividad de corrección](get-remediation-exposed-devices-activities.md)
+- [Lista de dispositivos expuestos de una actividad de corrección](get-remediation-exposed-devices-activities.md)
 
-- [Administración de vulnerabilidades & amenazas basadas en riesgos](next-gen-threat-and-vuln-mgt.md)
+- [Amenazas basadas en riesgos & administración de vulnerabilidades](next-gen-threat-and-vuln-mgt.md)
 
 - [Vulnerabilidades de la organización](tvm-weaknesses.md)

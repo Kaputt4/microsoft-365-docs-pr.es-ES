@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: be0423b0af8251347420d9e970dcfe10db0bb72b
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 356d843420856c8e7ec4f00ff0f6f0781cfed6b5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591928"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245461"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Investigación y respuesta automatizadas en Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "51591928"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Si su organización usa [Microsoft 365 Defender,](microsoft-365-defender.md)el equipo de operaciones de seguridad recibe una alerta siempre que se detecte un artefacto malintencionado o sospechoso. Dado el flujo aparentemente interminable de amenazas que llegan, los equipos de seguridad a menudo se enfrentan a desafíos al abordar el alto volumen de alertas. Afortunadamente, Microsoft 365 Defender incluye capacidades automatizadas de investigación y corrección (AIR) que pueden ayudar a su equipo de operaciones de seguridad a hacer frente a las amenazas de forma más eficaz y eficaz.
+Si su organización usa [Microsoft 365 Defender,](microsoft-365-defender.md)el equipo de operaciones de seguridad recibe una alerta siempre que se detecte un artefacto malintencionado o sospechoso. Dado el flujo aparentemente interminable de amenazas que llegan, los equipos de seguridad a menudo se enfrentan a desafíos al abordar el alto volumen de alertas. Afortunadamente, Microsoft 365 Defender incluye capacidades automatizadas de investigación y corrección (AIR) que pueden ayudar a su equipo de operaciones de seguridad a abordar las amenazas de forma más eficaz y eficaz.
 
 En este artículo se proporciona información general sobre AIR e incluye vínculos a los siguientes pasos y recursos adicionales.
 
@@ -57,7 +57,7 @@ En Microsoft 365 Defender, la investigación automatizada y la respuesta con cap
 
 ## <a name="your-own-virtual-analyst"></a>Su propio analista virtual
 
-Imagine tener un analista virtual en su equipo de operaciones de seguridad de nivel 1 o nivel 2. El analista virtual imita los pasos más idóneos que llevarían a cabo las operaciones de seguridad para investigar y solucionar las amenazas. El asistente virtual podría funcionar de forma permanente y con capacidad ilimitada realizando una carga considerable de investigación y corrección de amenazas. Ese asistente virtual podría reducir el tiempo de respuesta considerablemente, lo que permitiría al equipo de operaciones de seguridad trabajar en otros proyectos estratégicos importantes. Si este escenario suena a ciencia ficción, no lo es. Dicho analista virtual forma parte de su conjunto de aplicaciones de Microsoft 365 Defender y su nombre es *investigación y respuesta automatizadas.*
+Imagine un analista virtual en su equipo de operaciones de seguridad de nivel 1 o nivel 2. El analista virtual imita los pasos más idóneos que llevarían a cabo las operaciones de seguridad para investigar y solucionar las amenazas. El asistente virtual podría funcionar de forma permanente y con capacidad ilimitada realizando una carga considerable de investigación y corrección de amenazas. Ese asistente virtual podría reducir el tiempo de respuesta considerablemente, lo que permitiría al equipo de operaciones de seguridad trabajar en otros proyectos estratégicos importantes. Si este escenario suena a ciencia ficción, no lo es. Dicho analista virtual forma parte de su conjunto de Microsoft 365 Defender y su nombre es *investigación y respuesta automatizadas.*
 
 Las capacidades automatizadas de investigación y respuesta permiten al equipo de operaciones de seguridad aumentar considerablemente la capacidad de su organización para hacer frente a las alertas e incidentes de seguridad. Con la investigación y la respuesta automatizadas, puede reducir el costo de las actividades de investigación y corrección y sacar el máximo partido a su conjunto de protección contra amenazas. Las capacidades automatizadas de investigación y respuesta ayudan al equipo de operaciones de seguridad:
 
@@ -84,7 +84,7 @@ En función [de cómo se configuren](m365d-configure-auto-investigation-response
 
 Durante la ejecución de una investigación, todas las demás alertas relacionadas que puedan surgir se agregarán a la investigación hasta que se finalice. Si se ve una entidad incriminada en otro lugar, la investigación automatizada amplía su ámbito para incluir esa entidad y el proceso de investigación se repite. 
 
-En Microsoft 365 Defender, cada investigación automatizada correlaciona las señales en Microsoft Defender para identidad, Microsoft Defender para endpoint y Defender para Office 365, como se resume en la tabla siguiente: 
+En Microsoft 365 Defender, cada investigación automatizada correlaciona las señales entre Microsoft Defender for Identity, Microsoft Defender para endpoint y Defender para Office 365, como se resume en la tabla siguiente: 
 
 |Entidades |Servicios de protección contra amenazas  |
 |:---------|:---------|
@@ -101,6 +101,6 @@ Para ver las investigaciones, vaya a la **página Incidentes.** Seleccione un in
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Consulta los requisitos previos para la investigación y respuesta automatizadas en Microsoft 365 Defender](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
+- [Consulte los requisitos previos para la investigación automatizada y la respuesta en Microsoft 365 Defender](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [Configurar la investigación automatizada y la respuesta para su organización](m365d-configure-auto-investigation-response.md)
 - [Más información sobre el Centro de actividades](m365d-action-center.md)

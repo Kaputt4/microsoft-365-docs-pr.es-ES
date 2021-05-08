@@ -1,6 +1,6 @@
 ---
 title: Puntuación de seguridad de Microsoft
-description: Describe puntuación segura de Microsoft en el centro de seguridad de Microsoft 365, cómo mejorar la posición de seguridad y qué pueden esperar los administradores de seguridad.
+description: Describe la puntuación segura de Microsoft en el centro de Microsoft 365 seguridad, cómo mejorar la posición de seguridad y qué pueden esperar los administradores de seguridad.
 keywords: puntuación segura de microsoft, puntuación segura, puntuación segura de office 365, puntuación de seguridad de Microsoft, centro de seguridad de Microsoft 365, acciones de mejora
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,20 +21,20 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 19b83fe7dd733bb8a0668039d4df2b692a398ad4
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 4a2c220cab15751671b9b38c3bb2fda3db12c9e1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570468"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245382"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-La Puntuación de seguridad de Microsoft es una medida de la actitud de seguridad de una organización, donde un número más alto indica que se han tomado más acciones de mejora. Se puede encontrar en el Centro de https://security.microsoft.com/securescore [seguridad de Microsoft 365](overview-security-center.md).
+La Puntuación de seguridad de Microsoft es una medida de la actitud de seguridad de una organización, donde un número más alto indica que se han tomado más acciones de mejora. Se puede encontrar en https://security.microsoft.com/securescore el centro Microsoft 365 [seguridad.](overview-security-center.md)
 
-Seguir las recomendaciones de la puntuación de seguridad puede proteger a su organización de amenazas. Desde un panel centralizado en el centro de seguridad de Microsoft 365, las organizaciones pueden supervisar y trabajar en la seguridad de sus identidades, aplicaciones y dispositivos de Microsoft 365.
+Seguir las recomendaciones de la puntuación de seguridad puede proteger a su organización de amenazas. Desde un panel centralizado en el centro de seguridad de Microsoft 365, las organizaciones pueden supervisar y trabajar en la seguridad de sus Microsoft 365 identidades, aplicaciones y dispositivos.
 
 La puntuación de seguridad ayuda a las organizaciones a:  
 
@@ -44,9 +44,9 @@ La puntuación de seguridad ayuda a las organizaciones a:
 
 Las organizaciones obtienen acceso a visualizaciones sólidas de métricas y tendencias, integración con otros productos de Microsoft, comparación de puntuaciones con organizaciones similares y mucho más. La puntuación también puede reflejar cuándo las soluciones de terceros han abordado las acciones recomendadas.
 
-![Página principal de puntuación segura](../../media/secure-score/secure-score-homepage-new.png)
+![Página principal de puntuación segura](../../media/secure-score/secure-score-home-page.png)
 
-## <a name="how-it-works"></a>Cómo funciona
+## <a name="how-it-works"></a>Funcionamiento
 
 Se le dan puntos para las siguientes acciones:
 
@@ -84,11 +84,11 @@ Actualmente hay recomendaciones para los siguientes productos:
 - Cloud App Security
 - Microsoft Teams
 
-Próximamente se ofrece una serie de recomendaciones para otros productos de seguridad. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea base. También puede marcar las acciones de mejora según lo cubierto por una mitigación alternativa o de terceros.
+Recomendaciones para otros productos de seguridad próximamente. Las recomendaciones no cubren todas las superficies de ataque asociadas con cada producto, pero son una buena línea base. También puede marcar las acciones de mejora según lo cubierto por una mitigación alternativa o de terceros.
 
 ### <a name="security-defaults"></a>Valores predeterminados de seguridad
 
-Microsoft Secure Score ha actualizado las acciones de mejora para admitir los valores predeterminados de seguridad en [Azure Active Directory,](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)lo que facilita la protección de su organización con opciones de seguridad preconfiguradas para ataques comunes.
+Microsoft Secure Score ha actualizado las acciones de mejora para admitir los valores predeterminados de seguridad en Azure Active Directory , lo que facilita la protección de la organización con opciones de seguridad preconfiguradas para [ataques](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)comunes.
 
 Si activas los valores predeterminados de seguridad, se te concederán puntos completos para las siguientes acciones de mejora:
 
@@ -101,7 +101,7 @@ Si activas los valores predeterminados de seguridad, se te concederán puntos co
 
 ## <a name="required-permissions"></a>Permisos necesarios
 
-Para tener permiso para obtener acceso a La puntuación segura de Microsoft, debe tener asignado uno de los siguientes roles en Azure Active Directory.
+Para tener permiso para obtener acceso a Puntuación segura de Microsoft, debe tener asignado uno de los siguientes roles en Azure Active Directory.
 
 ### <a name="read-and-write-roles"></a>Roles de lectura y escritura
 

@@ -11,21 +11,19 @@ localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 11/02/2020
-ms.reviewer: pauhijbr
+ms.date: 05/05/2021
+ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: bfa616423fc0c097b9909df8abf5b9c414490383
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: how-to
+ms.openlocfilehash: 038818b711400eb16fea89573dc70664a442fc1d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764092"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245905"
 ---
-# <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Configurar exámenes programados rápidos o completos de Antivirus de Microsoft Defender
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
+# <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>Configurar los análisis programados rápidos o completos del Antivirus de Windows Defender
 
 **Se aplica a:**
 
@@ -39,21 +37,19 @@ Además de la protección siempre activa [](run-scan-microsoft-defender-antiviru
 
 Puede configurar el tipo de examen, cuándo debe producirse el [](manage-protection-updates-microsoft-defender-antivirus.md) examen y si el examen debe producirse después de una actualización de protección o si se está utilizando el extremo. También puede especificar cuándo deben producirse exámenes especiales para completar la corrección.
 
-En este artículo se describe cómo configurar exámenes programados con directiva de grupo, cmdlets de PowerShell y WMI. También puede configurar exámenes de programación con [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) o Microsoft [Intune](/mem/intune/configuration/device-restrictions-windows-10).
+En este artículo se describe cómo configurar exámenes programados con directiva de grupo, cmdlets de PowerShell y WMI. También puede configurar exámenes de programación [con Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scheduled-scans-settings) o [Microsoft Intune](/mem/intune/configuration/device-restrictions-windows-10).
 
 ## <a name="to-configure-the-group-policy-settings-described-in-this-article"></a>Para configurar las opciones de directiva de grupo descritas en este artículo
 
-1.  En el equipo de administración de directivas de grupo, abra la Consola de administración de directivas de [grupo,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y haga clic en **Editar**.
+1. En el equipo de administración de directivas de grupo, en el Editor de directivas de grupo, vaya a Configuración del equipo Plantillas administrativas  >    >  **Windows componentes**  >  **Antivirus de Microsoft Defender**  >  **Examinar**.
 
-3.  En el **Editor de administración de directivas de grupo** vaya a Configuración del **equipo.**
+2. Haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y, a continuación, **seleccione Editar**.
 
-4.  Haga clic **en Plantillas administrativas**.
+3. Especifique la configuración del objeto de directiva de grupo y, a continuación, seleccione **Aceptar**. 
 
-5.  Expande el árbol a **componentes de Windows > Antivirus** de Microsoft Defender y, a continuación, la **ubicación** especificada en la tabla siguiente.
+4. Repita los pasos del 1 al 4 para cada configuración que desee configurar.
 
-6. Haga doble clic en la configuración **de directiva** especificada en la tabla siguiente y establezca la opción en la configuración deseada. 
-
-7. Haga **clic en** Aceptar y repita cualquier otra configuración.
+5. Implemente el objeto de directiva de grupo como lo hace normalmente. Si necesita ayuda con objetos de directiva de grupo, vea [Crear un objeto de directiva de grupo](/windows/security/threat-protection/windows-firewall/create-a-group-policy-object).
 
 Vea también administrar cuándo [se deben](manage-protection-update-schedule-microsoft-defender-antivirus.md) descargar y aplicar las actualizaciones de protección y Evitar o permitir que los usuarios [modifiquen localmente los](configure-local-policy-overrides-microsoft-defender-antivirus.md) temas de configuración de directivas.
 
@@ -61,25 +57,44 @@ Vea también administrar cuándo [se deben](manage-protection-update-schedule-mi
 
 Al configurar exámenes programados, puede configurar si el examen debe ser un examen completo o rápido.
 
-Los exámenes rápidos examinan todas las ubicaciones donde podría haber malware registrado para empezar con el sistema, como las claves del Registro y las carpetas de inicio conocidas de Windows. 
 
-Combinado con la funcionalidad de protección siempre activa en tiempo [real](configure-real-time-protection-microsoft-defender-antivirus.md) , que revisa los archivos cuando se abren y cierran, y siempre que un usuario navega a una carpeta, un examen rápido ayuda a proporcionar una cobertura segura tanto para malware que comienza con el malware del sistema como del nivel de kernel.  
-
-En la mayoría de los casos, esto significa que un examen rápido es adecuado para encontrar malware que no fue detectado por la protección en tiempo real.
-
-Un examen completo puede ser útil en los puntos de conexión que han encontrado una amenaza de malware para identificar si hay componentes inactivos que requieren una limpieza más exhaustiva. En este caso, es posible que desee usar un examen completo al ejecutar un examen a [petición.](run-scan-microsoft-defender-antivirus.md)
-
-Un examen personalizado le permite especificar los archivos y carpetas que desea examinar, como una unidad USB. 
+|Examen rápido  |Examen completo  | Examen personalizado |
+|---------|---------|---------|
+|Un examen rápido examina todas las ubicaciones donde podría haber malware registrado para empezar con el sistema, como las claves del Registro y las carpetas de inicio Windows de inicio. <p>En la mayoría de los casos, un examen rápido es suficiente y se recomienda para exámenes programados. |Un examen completo comienza ejecutando un examen rápido y, a continuación, continúa con un examen secuencial de archivos de todos los discos fijos montados y unidades extraíbles/de red (si el examen completo está configurado para hacerlo). <p>Un examen completo puede tardar unas horas o días en completarse, según la cantidad y el tipo de datos que se deben examinar.<p>Cuando se completa el examen completo, hay nueva inteligencia de seguridad disponible y se requiere un nuevo examen para asegurarse de que no se detecten otras amenazas con la nueva inteligencia de seguridad.   | Un examen personalizado es un examen rápido que se ejecuta en los archivos y carpetas que especifique. Por ejemplo, puedes optar por examinar una unidad USB o una carpeta específica en la unidad local del dispositivo. <p> | 
 
 >[!NOTE]
 >De forma predeterminada, los exámenes rápidos se ejecutan en dispositivos extraíbles montados, como unidades USB.
 
+### <a name="how-do-i-know-which-scan-type-to-choose"></a>¿Cómo sé qué tipo de examen elegir?
+
+Use la tabla siguiente para elegir un tipo de examen.
+
+
+|Escenario  |Tipo de examen recomendado  |
+|---------|---------|
+|Desea configurar exámenes regulares y programados     | Examen rápido <p>Un examen rápido comprueba los procesos, la memoria, los perfiles y determinadas ubicaciones del dispositivo. Combinado con la protección siempre activa en tiempo [real,](configure-real-time-protection-microsoft-defender-antivirus.md)un examen rápido ayuda a proporcionar una cobertura sólida tanto para malware que comienza con el malware del sistema como del nivel de kernel. La protección en tiempo real revisa los archivos cuando se abren y cierran, y siempre que un usuario navega a una carpeta.         |
+|Las amenazas, como el malware, se detectan en un dispositivo     | Examen completo <p>Un examen completo puede ayudar a identificar si hay componentes inactivos que requieren una limpieza más exhaustiva.         |
+|Desea ejecutar un examen a [petición](run-scan-microsoft-defender-antivirus.md)     | Examen completo  <p>Un examen completo examina todos los archivos del disco del dispositivo, incluidos los archivos obsoletos, archivados y a los que no se accede diariamente.      |
+| Quieres asegurarte de que un dispositivo portátil, como una unidad USB, no contiene malware | Examen personalizado <p>Un examen personalizado permite seleccionar ubicaciones, carpetas o archivos específicos y ejecuta un examen rápido. |
+
+### <a name="what-else-do-i-need-to-know-about-quick-and-full-scans"></a>¿Qué más necesito saber sobre los exámenes rápidos y completos?
+
+- Los archivos malintencionados se pueden almacenar en ubicaciones que no se incluyen en un examen rápido. Sin embargo, la protección siempre activa en tiempo real revisa todos los archivos que se abren y cierran y los archivos que se encuentran en carpetas a las que un usuario tiene acceso. La combinación de protección en tiempo real y un examen rápido ayuda a proporcionar una protección segura contra malware.
+
+- La protección en tiempo de acceso [con](cloud-protection-microsoft-defender-antivirus.md) protección entregada en la nube ayuda a garantizar que todos los archivos a los que se accede en el sistema se examinan con los modelos de inteligencia de seguridad y aprendizaje automático en la nube más recientes.
+
+- Cuando la protección en tiempo real detecta malware y el alcance de los archivos afectados no se determina inicialmente, Antivirus de Microsoft Defender inicia un examen completo como parte del proceso de corrección.
+
+- Un examen completo puede detectar archivos malintencionados que no fueron detectados por otros exámenes, como un examen rápido. Sin embargo, un examen completo puede tardar un tiempo y usar valiosos recursos del sistema para completarse.
+
+- Si un dispositivo está sin conexión durante un período prolongado de tiempo, un examen completo puede tardar más tiempo en completarse. 
+
 ## <a name="set-up-scheduled-scans"></a>Configurar exámenes programados
 
-Los exámenes programados se ejecutarán en el día y la hora que especifique. Puede usar la directiva de grupo, PowerShell y WMI para configurar exámenes programados.
+Los exámenes programados se ejecutan en el día y la hora que especifique. Puede usar la directiva de grupo, PowerShell y WMI para configurar exámenes programados.
 
->[!NOTE]
->Si un equipo se desconecta y se ejecuta en la batería durante un examen completo programado, el examen programado se detendrá con el evento 1002, que indica que el examen se detuvo antes de finalizar. Antivirus de Microsoft Defender ejecutará un examen completo en la próxima hora programada.
+> [!NOTE]
+> Si un dispositivo se desconecta y se ejecuta en la batería durante un examen completo programado, el examen programado se detendrá con el evento 1002, que indica que el examen se detuvo antes de finalizar. Antivirus de Microsoft Defender se ejecutará un examen completo en la próxima hora programada.
 
 ### <a name="use-group-policy-to-schedule-scans"></a>Usar directiva de grupo para programar exámenes
 
@@ -88,7 +103,7 @@ Los exámenes programados se ejecutarán en el día y la hora que especifique. P
 |Examinar | Especificar el tipo de examen que se usará para un examen programado | Examen rápido |
 |Examinar | Especificar el día de la semana para ejecutar un examen programado | Especifique el día (o nunca) para ejecutar un examen. | Nunca |
 |Examinar | Especificar la hora del día para ejecutar un examen programado | Especifique el número de minutos después de medianoche (por ejemplo, escriba **60** para la 1 a.m.). | 2 a. m. |
-|Raíz | Randomize scheduled task times |En Antivirus de Microsoft Defender: aleatorice la hora de inicio del examen a cualquier intervalo de 0 a 4 horas. <br>En FEP/SCEP: aleatorizar a cualquier intervalo más o menos 30 minutos. Esto puede ser útil en implementaciones de VM o VDI. | Habilitado |
+|Raíz | Randomize scheduled task times |En Antivirus de Microsoft Defender, aleatorice la hora de inicio del examen a cualquier intervalo de 0 a 4 horas. <p>En [SCEP,](/mem/intune/protect/certificates-scep-configure)aleatorice los exámenes a cualquier intervalo más o menos 30 minutos. Esto puede ser útil en máquinas virtuales o implementaciones de VDI. | Habilitado |
 
 
 ### <a name="use-powershell-cmdlets-to-schedule-scans"></a>Usar cmdlets de PowerShell para programar exámenes
@@ -103,9 +118,9 @@ Set-MpPreference -RandomizeScheduleTaskTimes
 
 ```
 
-Consulte [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Microsoft Defender Antivirus.
+Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender.
 
-### <a name="use-windows-management-instruction-wmi-to-schedule-scans"></a>Usar instrucciones de administración de Windows (WMI) para programar exámenes
+### <a name="use-windows-management-instruction-wmi-to-schedule-scans"></a>Usar Windows de administración de documentos (WMI) para programar exámenes
 
 Utilice el [ **método Set** de la **clase MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
 
@@ -116,10 +131,7 @@ ScanScheduleTime
 RandomizeScheduleTaskTimes
 ```
 
-Vea lo siguiente para obtener más información y parámetros permitidos:
-- [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
-
-
+Para obtener más información y parámetros permitidos, [vea Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 
 ## <a name="start-scheduled-scans-only-when-the-endpoint-is-not-in-use"></a>Iniciar exámenes programados solo cuando el extremo no esté en uso
@@ -143,9 +155,9 @@ Use los cmdlets siguientes:
 Set-MpPreference -ScanOnlyIfIdleEnabled
 ```
 
-Consulte [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Microsoft Defender Antivirus.
+Para obtener más información, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/).
 
-### <a name="use-windows-management-instruction-wmi"></a>Usar instrucciones de administración de Windows (WMI)
+### <a name="use-windows-management-instruction-wmi"></a>Use Windows Management Instruction (WMI)
 
 Utilice el [ **método Set** de la **clase MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
 
@@ -153,13 +165,12 @@ Utilice el [ **método Set** de la **clase MSFT_MpPreference**](/previous-versio
 ScanOnlyIfIdleEnabled
 ```
 
-Vea lo siguiente para obtener más información y parámetros permitidos:
-- [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+Para obtener más información acerca de las API y los [parámetros permitidos, vea Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 <a id="remed"></a>
 ## <a name="configure-when-full-scans-should-be-run-to-complete-remediation"></a>Configurar cuándo deben ejecutarse exámenes completos para completar la corrección
 
-Algunas amenazas pueden requerir un examen completo para completar su eliminación y corrección. Puede programar cuándo deben producirse estos exámenes con la directiva de grupo, PowerShell o WMI.
+Algunas amenazas pueden requerir un examen completo para completar su eliminación y corrección. Puede especificar cuándo deben producirse estos exámenes con la directiva de grupo, PowerShell o WMI.
 
 ### <a name="use-group-policy-to-schedule-remediation-required-scans"></a>Usar la directiva de grupo para programar exámenes necesarios para la corrección
 
@@ -177,9 +188,9 @@ Set-MpPreference -RemediationScheduleDay
 Set-MpPreference -RemediationScheduleTime
 ```
 
-Consulte [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Microsoft Defender Antivirus.
+Consulte [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Antivirus de Microsoft Defender.
 
-### <a name="use-windows-management-instruction-wmi"></a>Usar instrucciones de administración de Windows (WMI)
+### <a name="use-windows-management-instruction-wmi"></a>Use Windows Management Instruction (WMI)
 
 Utilice el [ **método Set** de la **clase MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
 
@@ -188,19 +199,14 @@ RemediationScheduleDay
 RemediationScheduleTime
 ```
 
-Vea lo siguiente para obtener más información y parámetros permitidos:
-- [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
-
-
+Para obtener más información y parámetros [permitidos, vea Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 
 ## <a name="set-up-daily-quick-scans"></a>Configurar exámenes rápidos diarios
 
 Puede habilitar un examen rápido diario que se puede ejecutar además de los otros exámenes programados con la directiva de grupo, PowerShell o WMI.
 
-
 ### <a name="use-group-policy-to-schedule-daily-scans"></a>Usar directiva de grupo para programar exámenes diarios
-
 
 |Ubicación | Configuración | Descripción | Configuración predeterminada (si no está configurada) |
 |:---|:---|:---|:---|
@@ -215,9 +221,9 @@ Use los cmdlets siguientes:
 Set-MpPreference -ScanScheduleQuickScanTime
 ```
 
-Consulte [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/) para obtener más información sobre cómo usar PowerShell con Microsoft Defender Antivirus.
+Para obtener más información acerca de cómo usar PowerShell con Antivirus de Microsoft Defender, vea [Use PowerShell cmdlets to configure and run Antivirus de Microsoft Defender](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/).
 
-### <a name="use-windows-management-instruction-wmi-to-schedule-daily-scans"></a>Usar Windows Management Instruction (WMI) para programar exámenes diarios
+### <a name="use-windows-management-instruction-wmi-to-schedule-daily-scans"></a>Usar Windows de administración de documentos (WMI) para programar exámenes diarios
 
 Utilice el [ **método Set** de la **clase MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) para las siguientes propiedades:
 
@@ -225,8 +231,7 @@ Utilice el [ **método Set** de la **clase MSFT_MpPreference**](/previous-versio
 ScanScheduleQuickScanTime
 ```
 
-Vea lo siguiente para obtener más información y parámetros permitidos:
-- [Windows Defender API WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+Para obtener más información y parámetros [permitidos, vea Windows Defender API wmiv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
 
 ## <a name="enable-scans-after-protection-updates"></a>Habilitar exámenes después de actualizaciones de protección
@@ -240,9 +245,10 @@ Puede forzar que se produzca un examen después de cada actualización [de prote
 |Actualizaciones de firmas | Activar el examen después de la actualización de inteligencia de seguridad | Un examen se realizará inmediatamente después de descargar una nueva actualización de protección | Habilitado |
 
 ## <a name="see-also"></a>Vea también
+
 - [Impedir o permitir que los usuarios modifiquen localmente la configuración de directiva](configure-local-policy-overrides-microsoft-defender-antivirus.md)
-- [Configurar y ejecutar exámenes de Antivirus de Microsoft Defender a petición](run-scan-microsoft-defender-antivirus.md)
-- [Configurar opciones de análisis de Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)
-- [Administrar actualizaciones de Antivirus de Microsoft Defender y aplicar líneas base](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Configurar y ejecutar análisis bajo petición en el Antivirus de Microsoft Defender](run-scan-microsoft-defender-antivirus.md)
+- [Configurar opciones de análisis del Antivirus de Microsoft Defender](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+- [Administrar Antivirus de Microsoft Defender actualizaciones y aplicar líneas base](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Administrar cuándo se deben descargar y aplicar las actualizaciones de protección](manage-protection-update-schedule-microsoft-defender-antivirus.md) 
 - [Antivirus de Microsoft Defender en Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -539,6 +539,12 @@
 ####### [Enumerar máquinas por recomendación](get-recommendation-machines.md)
 ####### [Enumerar vulnerabilidades por recomendación](get-recommendation-vulnerabilities.md)
 
+###### [Actividad de corrección]()
+####### [Propiedades y métodos de la actividad de corrección](get-remediation-methods-properties.md)
+####### [Obtener una actividad de corrección de acuerdo con su id.](get-remediation-one-activity.md)
+####### [Enumerar todas las actividades de corrección](get-remediation-all-activities.md)
+####### [Lista de dispositivos expuestos de una actividad de corrección](get-remediation-exposed-devices-activities.md)
+
 ###### [Puntuación]()
 ####### [Propiedades y métodos de puntuación](score.md)
 ####### [Puntuación de exposición de lista por grupo de máquinas](get-machine-group-exposure-score.md)

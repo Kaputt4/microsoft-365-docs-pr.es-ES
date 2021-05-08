@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 834ce13917237dd822bdfbb7b88967dcac4bc0f8
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: dab72da02927c3fff6025eb2d0fa9ed0fdf1d0d7
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929018"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245281"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>Configurar Microsoft Defender para endpoint en características de iOS
 
@@ -38,9 +38,12 @@ ms.locfileid: "51929018"
 > Defender para endpoint en iOS usaría una VPN para proporcionar la característica de protección web. No se trata de una VPN normal y es una VPN local o auto-looping que no toma tráfico fuera del dispositivo.
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-ios"></a>Acceso condicional con Defender para endpoint en iOS  
-Microsoft Defender para endpoint en iOS junto con Microsoft Intune y Azure Active Directory permite aplicar directivas de cumplimiento de dispositivos y acceso condicional en función de los niveles de riesgo del dispositivo. Defender for Endpoint es una solución de Mobile Threat Defense (MTD) que puedes implementar para aprovechar esta funcionalidad a través de Intune.
+Microsoft Defender para endpoint en iOS junto con Microsoft Intune y Azure Active Directory permite aplicar el cumplimiento de dispositivos y las directivas de acceso condicional en función de la puntuación de riesgo del dispositivo. Defender for Endpoint es una solución de Mobile Threat Defense (MTD) que puedes implementar para aprovechar esta funcionalidad a través de Intune.
 
 Para obtener más información acerca de cómo configurar el acceso condicional con Defender para endpoint en iOS, vea [Defender for Endpoint e Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
+
+> [!NOTE]
+> **La detección de jailbreak de Microsoft Defender para endpoint en iOS se encuentra actualmente en versión preliminar.** Si Microsoft Defender para endpoint detecta que un dispositivo está en la cárcel, se notifica una alerta de alto riesgo al Centro de seguridad y si el acceso condicional se configura en función de la puntuación de riesgo del dispositivo, se bloqueará el acceso a los datos corporativos.
 
 ## <a name="web-protection-and-vpn"></a>Protección web y VPN
 
@@ -48,9 +51,9 @@ De forma predeterminada, Defender para endpoint en iOS incluye y habilita la car
 
 Aunque está habilitado de forma predeterminada, puede haber algunos casos que requieran deshabilitar VPN. Por ejemplo, quieres ejecutar algunas aplicaciones que no funcionan cuando se configura una VPN. En tales casos, puedes optar por deshabilitar VPN desde la aplicación en el dispositivo siguiendo los pasos siguientes:
 
-1. En el dispositivo iOS, abre la aplicación **Configuración,** haz clic o pulsa **General** y, a continuación, **VPN.**
+1. En el dispositivo iOS, abre la **aplicación Configuración,** haz clic o pulsa **General** y, a continuación, **VPN.**
 1. Haga clic o pulse en el botón "i" de Microsoft Defender para endpoint.
-1. Desactiva **Conectar a petición para** deshabilitar VPN.
+1. Desactiva la **Conectar a petición** para deshabilitar VPN.
 
     > [!div class="mx-imgBorder"]
     > ![Configuración de VPN conectarse a petición](images/ios-vpn-config.png)
@@ -68,11 +71,11 @@ Apple iOS no admite varias VPN de todo el dispositivo para estar activas simult�
 Para proteger los datos corporativos de acceso en dispositivos iOS con jailbreak, le recomendamos que configure la siguiente directiva de cumplimiento en Intune.
 
 > [!NOTE]
-> En este momento, Microsoft Defender para Endpoint en iOS no proporciona protección contra escenarios de jailbreak. Si se usa en un dispositivo con jailbreak, en escenarios específicos, los datos que usa la aplicación como el identificador de correo electrónico corporativo y la imagen de perfil corporativo (si está disponible) se pueden exponer localmente
+> En este momento, la detección de jailbreak por Parte de Microsoft Defender para Endpoint en iOS está en versión preliminar. Se recomienda configurar esta directiva como una capa adicional de defensa contra escenarios de jailbreak.
 
 Siga los pasos siguientes para crear una directiva de cumplimiento contra dispositivos con jailbreak.
 
-1. En [el Centro de administración de Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a Directivas **de** cumplimiento  ->  **de dispositivos** Crear  ->  **directiva**. Seleccione "iOS/iPadOS" como plataforma y haga clic **en Crear**.
+1. En [Microsoft Endpoint Manager de administración,](https://go.microsoft.com/fwlink/?linkid=2109431)vaya a **Directivas de** cumplimiento de  ->  **dispositivos** Crear  ->  **directiva**. Seleccione "iOS/iPadOS" como plataforma y haga clic **en Crear**.
 
     > [!div class="mx-imgBorder"]
     > ![Crear directiva](images/ios-jb-policy.png)
@@ -81,7 +84,7 @@ Siga los pasos siguientes para crear una directiva de cumplimiento contra dispos
 3. En la página Configuración de cumplimiento, haga clic para expandir **la sección Estado del** dispositivo y haga clic en **Bloquear** para el **campo Dispositivos con jailbreak.**
 
     > [!div class="mx-imgBorder"]
-    > ![Configuración de directiva](images/ios-jb-settings.png)
+    > ![Directiva Configuración](images/ios-jb-settings.png)
 
 4. En la *sección Acción por* incumplimiento, seleccione las acciones según sus requisitos y seleccione **Siguiente**.
 
@@ -104,6 +107,6 @@ Los sitios web de suplantación de identidad suplantan sitios web de confianza c
 
 ## <a name="battery-consumption-issues-on-ios-when-microsoft-defender-for-endpoint-is-installed"></a>Problemas de consumo de batería en iOS cuando se instala Microsoft Defender para endpoint
 
-Apple calcula el uso de la batería por parte de una aplicación en función de una gran variedad de factores, como el uso de la CPU y la red. Microsoft Defender para endpoint usa una VPN local/loop-back en segundo plano para comprobar el tráfico web en busca de sitios web o conexiones malintencionadas. Los paquetes de red de cualquier aplicación pasan por esta comprobación y eso hace que el uso de la batería de Microsoft Defender para Endpoint se calcule incorrectamente. Esto da una impresión falsa al usuario. El consumo real de batería de Microsoft Defender para Endpoint es menor que lo que se muestra en la página Configuración de la batería en el dispositivo. Esto se basa en pruebas realizadas en la aplicación Microsoft Defender para Endpoint para comprender el consumo de batería.
+Apple calcula el uso de la batería por parte de una aplicación en función de una gran variedad de factores, como el uso de la CPU y la red. Microsoft Defender para endpoint usa una VPN local/loop-back en segundo plano para comprobar el tráfico web en busca de sitios web o conexiones malintencionadas. Los paquetes de red de cualquier aplicación pasan por esta comprobación y eso hace que el uso de la batería de Microsoft Defender para Endpoint se calcule incorrectamente. Esto da una impresión falsa al usuario. El consumo real de batería de Microsoft Defender para Endpoint es menor que lo que se muestra en la página De Configuración batería en el dispositivo. Esto se basa en pruebas realizadas en la aplicación Microsoft Defender para Endpoint para comprender el consumo de batería.
 
 Además, la VPN usada es una VPN local y, a diferencia de las VPN tradicionales, el tráfico de red no se envía fuera del dispositivo.

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b3fef3479fa2d36806e6657b31f5152c54b9251f
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 1c61e69b5c8d414ab229fa8bf64eb657a6e40304
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765004"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245965"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Preguntas más frecuentes sobre detección de dispositivos
 
@@ -49,13 +49,17 @@ Tienes la opción de desactivar la detección de dispositivos a través de la [p
  En este modo, los puntos de conexión incorporados a Microsoft Defender para Endpoint pueden sondear activamente los dispositivos observados en la red para enriquecer los datos recopilados (con una cantidad insignificante de tráfico de red). Este modo es muy recomendable para crear un inventario de dispositivos confiable y coherente. Si decide deshabilitar este modo y seleccionar el modo de detección básico, es probable que solo obtenga una visibilidad limitada de los puntos de conexión no administrados en la red.
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>¿Puedo controlar qué dispositivos realizan la detección estándar?
- Puedes personalizar la lista de dispositivos que se usan para realizar la detección estándar. Puedes habilitar la detección estándar en todos los dispositivos incorporados que también admiten esta funcionalidad (actualmente solo dispositivos Windows 10) o seleccionar un subconjunto o subconjuntos de los dispositivos especificando sus etiquetas de dispositivo. En este caso, todos los demás dispositivos se configurarán para ejecutar solo la detección básica. La configuración está disponible en la página configuración de detección de dispositivos.
+ Puedes personalizar la lista de dispositivos que se usan para realizar la detección estándar. Puedes habilitar la detección estándar en todos los dispositivos incorporados que también admiten esta funcionalidad (actualmente solo Windows 10 dispositivos) o seleccionar un subconjunto o subconjuntos de los dispositivos especificando sus etiquetas de dispositivo. En este caso, todos los demás dispositivos se configurarán para ejecutar solo la detección básica. La configuración está disponible en la página configuración de detección de dispositivos.
+
+## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>¿Puedo excluir dispositivos no administrados de la lista de inventario de dispositivos?
+Sí, puedes aplicar filtros que excluyan los dispositivos no administrados de la lista de inventario de dispositivos. También puede usar la columna de estado de incorporación en las consultas API para filtrar los dispositivos no administrados. 
+
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>¿Qué dispositivos incorporados pueden realizar la detección?
- Los dispositivos incorporados que se ejecutan en Windows 10 versión 1809 o posterior pueden realizar la detección.
+ Los dispositivos incorporados que se Windows 10 versión 1809 o posterior pueden realizar la detección.
 
 ## <a name="what-happens-if-my-onboarded-devices-is-connected-to-my-home-network-or-to-public-access-point"></a>¿Qué sucede si mis dispositivos incorporados están conectados a mi red doméstica o al punto de acceso público?
- El motor de detección distingue entre los eventos de red que se reciben en la red corporativa frente a fuera de la red corporativa. Al correlacionar los identificadores de red entre todos los clientes del inquilino, los eventos se diferencian entre los que se recibieron de redes privadas y redes corporativas. Los dispositivos de red privada no aparecerán en el inventario y no se sondearán activamente.
+ El motor de detección distingue entre los eventos de red que se reciben en la red corporativa frente a fuera de la red corporativa. Al correlacionar los identificadores de red entre todos los clientes del inquilino, los eventos se diferencian entre los que se recibieron de redes privadas y redes corporativas. Por ejemplo, si la mayoría de los dispositivos del informe de red informan de que están conectados al mismo nombre de red, con la misma puerta de enlace predeterminada y la misma dirección del servidor DHCP, se puede suponer que esta red es probablemente una red corporativa. Los dispositivos de red privada no aparecerán en el inventario y no se sondearán activamente.
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>¿Qué protocolos está capturando y analizando?
  De forma predeterminada, todos los dispositivos incorporados que se ejecutan en Windows 10 versión 1809 o posterior capturan y analizan los siguientes protocolos: ARP, CDP, DHCP, DHCPv6, IP (encabezados), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (encabezados), UDP (encabezados), WSD

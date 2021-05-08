@@ -1,5 +1,5 @@
 ---
-title: Ayudar a los usuarios a instalar Office en dispositivos Windows 10
+title: Ayudar a los usuarios a instalar Office en Windows 10 dispositivos
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -26,27 +26,27 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
-description: Ayude a los usuarios a instalar aplicaciones de Office en dispositivos Con Windows 10 e instale Office fácilmente en equipos con Windows 10 desde el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 35588589cf0b816bcbd686c69684d82b62383f17
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Ayude a los usuarios a instalar Office aplicaciones en Windows 10 dispositivos e instalar fácilmente Office en equipos Windows 10 desde el centro Microsoft 365 administración.
+ms.openlocfilehash: 74c17533995b74655be57524b77d9c508f703c50
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580222"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245172"
 ---
-# <a name="help-your-users-install-office-on-windows-10-devices"></a>Ayudar a los usuarios a instalar Office en dispositivos Windows 10
+# <a name="help-your-users-install-office-on-windows-10-devices"></a>Ayudar a los usuarios a instalar Office en Windows 10 dispositivos
 
 [![Etiqueta para informarle que el centro de administración está cambiando y puede encontrar más detalles en aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](/office365/admin/microsoft-365-admin-center-preview)
 
-Puedes instalar Office en equipos con Windows 10 de forma rápida y sencilla desde el Centro de administración de Microsoft 365.
+Puede instalar de forma rápida y Office en Windows 10 equipos desde el centro Microsoft 365 administración.
   
 Para entender cómo funciona con aplicaciones de Office instaladas anteriormente, lea [Preparar la instalación del cliente de Office](prepare-for-office-client-deployment.md) antes de empezar.
 
-Vea un breve vídeo sobre la instalación de aplicaciones de Office.<br><br>
+Vea un breve vídeo sobre cómo instalar Office aplicaciones.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
 
 ## <a name="manage-office-deployments"></a>Administrar implementaciones de Office
 
@@ -54,14 +54,14 @@ Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para l
 
 2. Ve a **Configuración en** el panel de navegación izquierdo y, en **la** página Configuración, desplázate a Aplicaciones **y actualizaciones.**
     > [!NOTE]
-    > Es posible que no vea esta tarjeta si todos los usuarios han instalado aplicaciones de Office.
+    > Es posible que no veas esta tarjeta si todos los usuarios han instalado Office aplicaciones.
   
-3. En la **ayuda para que los usuarios instalen su tarjeta de aplicaciones de Office,** elija **Ver** y, a continuación, **Introducción.**
+3. En la **ayuda, los usuarios instalan Office de aplicaciones,** elija **Ver** y, a continuación, **Introducción.**
     
-4. En el vínculo Usuarios de correo electrónico un vínculo para descargar el panel de **Office,** seleccione los usuarios que desea enviar por correo electrónico y, a continuación, **Envíe un correo electrónico a los usuarios seleccionados.**
+4. En el panel Enviar un vínculo a los usuarios **de correo electrónico para descargar Office,** seleccione los usuarios que desea enviar por correo electrónico y, a continuación, Envíe un correo electrónico a los usuarios **seleccionados.**
 
-   ![Seleccione usuarios para enviar correo electrónico con el vínculo de descarga de Office.](../media/sendemailtousers.png)
+   ![Seleccione usuarios para enviar correo electrónico con Office de descarga.](../media/sendemailtousers.png)
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Para obtener más información sobre cómo configurar y usar Microsoft 365 Empresa Premium
 
-[Vídeos de aprendizaje de Microsoft 365 para empresas](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vídeos de aprendizaje de Microsoft 365 para empresas](../business-video/index.yml)

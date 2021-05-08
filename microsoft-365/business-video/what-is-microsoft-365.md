@@ -20,12 +20,12 @@ search.appverid:
 description: Información acerca de Microsoft 365 Empresa
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: f4c41e86f3a98c2af076a58e311aa14be79704e9
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 336d206b3853baa2bdde5d925113dc0887919da7
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580335"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245185"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Empresa Premium
 
@@ -45,5 +45,7 @@ Cuando se suscribe a Microsoft 365 Empresa Premium, obtiene todas las mismas her
 | Proteger datos empresariales | Sus datos personales se protegen en dispositivos personales con acceso a PIN, y la copia y almacenamiento restringidos. También puede agregar la protección de la información para asegurarse de que solo los usuarios autorizados puedan acceder a información confidencial. |
 | Proteger sus dispositivos | Para proteger los archivos de trabajo en dispositivos, restrinja el acceso móvil, como copiar y pegar. También puede borrar de forma selectiva los datos comerciales de los dispositivos móviles registrados en caso de pérdida o robo. |
 | Características de seguridad adicionales | Las características avanzadas de Microsoft 365 Empresa Premium están disponibles para ayudarle a proteger su empresa frente a amenazas cibernéticos y proteger la información confidencial. Entre las características se incluyen Office 365, la protección contra amenazas avanzada, las directivas de prevención de pérdida de datos (DLP), archivado de Exchange Online, Azure Information Protection y Intune. |
+
+Si tiene Microsoft Empresa Premium, la forma más rápida de configurar la seguridad y empezar a colaborar de forma segura es seguir las instrucciones de esta biblioteca: [Microsoft 365 para empresas y campañas pequeñas](../campaigns/index.md). Esta guía fue desarrollada en asociación con el equipo de Microsoft Defending Democracy para proteger a todos los clientes de empresas pequeñas de las amenazas cibernéticas por parte de hackers sofisticados. 
 
 Para obtener los detalles completos, consulte [Contenido de Microsoft 365 Empresa](../business/index.yml).

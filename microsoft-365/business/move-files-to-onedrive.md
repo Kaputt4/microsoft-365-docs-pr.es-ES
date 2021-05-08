@@ -23,13 +23,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
-description: Obtenga información sobre cómo puede mover los archivos de trabajo personales y los archivos confidenciales de la empresa a OneDrive para la Empresa en unos sencillos pasos.
-ms.openlocfilehash: d6bcf2b41f1052c521fda50557aac4bf6a3800fa
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Obtenga información sobre cómo puede mover los archivos de trabajo personales y los archivos confidenciales de la empresa a OneDrive para la Empresa en unos pocos pasos sencillos.
+ms.openlocfilehash: 4dadc87c0168a9fcdcc795a94df8ee5b7fc7fd91
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580082"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245112"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Mover archivos a OneDrive para la Empresa
 
@@ -37,7 +37,7 @@ Vea un breve vídeo sobre cómo mover archivos a OneDrive para la Empresa.<br><b
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341] 
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
 
 
 ## <a name="move-files-to-onedrive-for-business"></a>Mover archivos a OneDrive para la Empresa
@@ -54,4 +54,4 @@ Para transferir el perfil de usuario y archivos importantes, también puede usar
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Para obtener más información sobre cómo configurar y usar Microsoft 365 para empresas
 
-[Vídeos de aprendizaje de Microsoft 365 para empresas](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Vídeos de aprendizaje de Microsoft 365 para empresas](../business-video/index.yml)

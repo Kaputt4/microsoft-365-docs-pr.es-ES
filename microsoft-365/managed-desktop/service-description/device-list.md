@@ -1,6 +1,6 @@
 ---
-title: Dispositivos de Escritorio administrado de Microsoft
-description: En este artículo se enumeran las especificaciones de los dispositivos aprobados para El escritorio administrado de Microsoft.
+title: Escritorio administrado de Microsoft dispositivos
+description: En este artículo se enumeran las especificaciones de los dispositivos aprobados para Escritorio administrado de Microsoft.
 keywords: Escritorio administrado de Microsoft, Microsoft 365, servicio, documentación
 ms.service: m365-md
 author: jaimeo
@@ -8,30 +8,35 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 59609da65701112ced43b73b67650881bc81be8a
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 636d32f47c4fd9fdd5c0409a4ebbc2d9e79a166d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218669"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245941"
 ---
-# <a name="microsoft-managed-desktop-devices"></a>Dispositivos de Escritorio administrado de Microsoft 
+# <a name="microsoft-managed-desktop-devices"></a>Escritorio administrado de Microsoft dispositivos
 
-Microsoft Managed Desktop evalúa periódicamente los dispositivos que se incluirán en el servicio. En este artículo se enumeran los dispositivos específicos que se admiten actualmente. Para obtener una declaración más general de los requisitos del dispositivo, consulta [Requisitos del dispositivo](device-requirements.md).
+> [!NOTE]
+> Escritorio administrado de Microsoft ya no requiere que los modelos de dispositivos sean de esta lista. A partir del 3 de mayo de 2021, todos los dispositivos de un fabricante aprobado deben cumplir con nuestros requisitos de hardware y software publicados. Puedes seguir usando dispositivos en esta lista con confianza. Puedes encontrar más dispositivos recomendados para Escritorio administrado de Microsoft en el sitio [De Windows 10 Pro de dispositivos](https://www.microsoft.com/windowsforbusiness/view-all-devices) empresariales. En ese sitio, vea los dispositivos  recomendados expandiendo **Características** en el área Filtrar por y, a continuación, **seleccionando Escritorio administrado de Microsoft**. Cada vez que planees inscribir un modelo de dispositivo determinado en el servicio por primera vez, debes probar un ejemplo para asegurarte de que ofrece la experiencia de usuario que esperas. Para obtener más información, vea [Validate new devices](../get-started/validate-device.md).
 
-Para obtener más información sobre Microsoft Managed Desktop, consulte [Microsoft Managed Desktop documentation and resources](../index.yml). 
+Escritorio administrado de Microsoft evalúa periódicamente los dispositivos que se incluirán en el servicio. En este artículo se enumeran los dispositivos específicos que se admiten actualmente. Para obtener una declaración más general de los requisitos del dispositivo, consulta [Requisitos del dispositivo](device-requirements.md).
+
+Para obtener más información sobre Escritorio administrado de Microsoft, [vea Escritorio administrado de Microsoft documentación y recursos](../index.yml). 
+
+[Seleccionar y validar nuevos dispositivos](../get-started/validate-device.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Para inscribirse en Microsoft Managed Desktop, un dispositivo debe ser uno de los siguientes modelos y cumplir o superar las especificaciones enumeradas para ram, familia de procesadores y espacio en disco. 
+Para inscribirse en Escritorio administrado de Microsoft, un dispositivo debe ser uno de los siguientes modelos y cumplir o superar las especificaciones enumeradas para ram, familia de procesadores y espacio en disco. 
 
-Los vínculos a dispositivos aquí son solo para tu referencia. Si quieres pedir dispositivos, trabaja con los contactos del canal comercial para asegurarte de elegir las configuraciones correctas. En esta tabla, la fecha *de archivo* es la fecha en la que estos modelos estarán sujetos a una vida de servicio de Escritorio administrado de Microsoft más corta; cualquiera de estos dispositivos incorporados después de esta fecha no recibirá un período completo de soporte técnico de tres años de Microsoft Managed Desktop. Los dispositivos archivados también se enumeran en [los dispositivos archivados de Escritorio administrado de Microsoft.](archived-device-list.md) *La fecha de* retiro es la fecha en la que microsoft Managed Desktop ya no admite este modelo. En esa fecha, todos los dispositivos inscritos de este modelo se quitarán del Escritorio administrado de Microsoft, independientemente de cuándo se inscribieron.
+Los vínculos a dispositivos aquí son solo para tu referencia. Si quieres pedir dispositivos, trabaja con los contactos del canal comercial para asegurarte de elegir las configuraciones correctas. En esta tabla, la fecha *de archivo* es la fecha en la que estos modelos estarán sujetos a una duración Escritorio administrado de Microsoft de servicio; cualquiera de estos dispositivos incorporados después de esta fecha no recibirá un período completo de soporte técnico de tres años de Escritorio administrado de Microsoft. Los dispositivos archivados también se enumeran [Escritorio administrado de Microsoft los dispositivos archivados.](archived-device-list.md) *La fecha* de retiro es la fecha en la que este modelo ya no será compatible con Escritorio administrado de Microsoft en absoluto. En esa fecha, todos los dispositivos inscritos de este modelo se quitarán de Escritorio administrado de Microsoft, independientemente de cuándo se inscribieron.
 
 >[!NOTE]
 >Los dispositivos se pueden agregar a esta tabla en cualquier momento, pero proporcionaremos un aviso de 90 días para cualquier cambio que afecte al archivo o la fecha de retiro. Los dispositivos agregados más recientemente están marcados con **\*** .
 
 
-## <a name="microsoft-managed-desktop-devices"></a>Dispositivos de escritorio administrados de Microsoft
+## <a name="microsoft-managed-desktop-devices"></a>Escritorio administrado de Microsoft Dispositivos
 
 ### <a name="dell"></a>Dell
 
@@ -69,20 +74,20 @@ Los vínculos a dispositivos aquí son solo para tu referencia. Si quieres pedir
 |----------|----------------|---------------------------|----------------|--------------------|
 | [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB ram | Ninguno | 21 de mayo de 2022 | 21 de mayo de 2027 |
 | [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB / Intel Core M3 / 8 GB ram | Ninguno | 21 de mayo de 2022 | 21 de mayo de 2027 |
-| [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB / Intel i5 / 8 GB de RAM | Ninguno | 12 de octubre de 2022 | 12 de octubre de 2025 |
+| [Surface Laptop Ir](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB / Intel i5 / 8 GB de RAM | Ninguno | 12 de octubre de 2022 | 12 de octubre de 2025 |
 | [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB / Intel i5 / 8 GB de RAM | Ninguno | 22 de octubre de 2021 | 22 de octubre de 2024 |
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB / Intel i5 / 8 GB de RAM | Ninguno | 22 de octubre de 2021 | 22 de octubre de 2024 |
 | **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB / Intel i5 / 8 GB de RAM | Ninguno | 15 de enero de 2022 | 15 de enero de 2025 |
 
 Además, el dispositivo también debe cumplir estos criterios:     
 
-- Si una SKU específica aparece en los requisitos del dispositivo, asegúrate de usarla al realizar el pedido. Al hacerlo, se garantiza que los dispositivos cumplan con los requisitos de software de Escritorio administrado de Microsoft. 
-- No ha completado la experiencia de primera ejecución de Windows.
-- Estar registrado en Microsoft Managed Desktop con la [característica Registro de](../get-started/register-devices-self.md) dispositivos
+- Si una SKU específica aparece en los requisitos del dispositivo, asegúrate de usarla al realizar el pedido. Al hacerlo, se garantiza que los dispositivos cumplan Escritorio administrado de Microsoft requisitos de software. 
+- No se ha completado la Windows primera ejecución.
+- Estar registrado con Escritorio administrado de Microsoft la característica [Registro de](../get-started/register-devices-self.md) dispositivos
 
 >[!NOTE]
 >Los dispositivos con un procesador de 2,0 GHz o más rápido proporcionarán una experiencia mucho mejor para los usuarios que participan en estas actividades:
->- Uso de videoconferencia con Teams. Consulta [Requisitos de hardware para Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app) para obtener más información.
+>- Uso de videoconferencia con Teams. Consulte [Requisitos de hardware Microsoft Teams](/microsoftteams/hardware-requirements-for-the-teams-app) para obtener más información.
 >-  Usar un dispositivo para varias cargas de trabajo diferentes.
 >- Uso de varios monitores.
 
