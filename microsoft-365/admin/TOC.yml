@@ -107,16 +107,30 @@
               href: create-groups/manage-guest-access-in-groups.md
             - name: Cambiar un nombre de usuario y una dirección de correo electrónico
               href: add-users/change-a-user-name-and-email-address.md
-            - name: Quitar un antiguo empleado
-              href: add-users/remove-former-employee.md
-            - name: Acceso y copia de seguridad de los datos de un antiguo usuario
-              href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
             - name: Restaurar un usuario
               href: add-users/restore-user.md
             - name: Crear plantilla para agregar usuarios
               href: add-users/create-and-use-a-template-to-add-users.md
             - name: Actualizar usuarios a las últimas aplicaciones
               href: setup/upgrade-users-to-latest-office-client.md
+        - name: Quitar a un exempleado
+          items:
+            - name: Información general
+              href: add-users/remove-former-employee.md
+            - name: Paso 1. Impedir que un empleado inicie sesión y bloquee el acceso a los servicios de Microsoft 365
+              href: add-users/remove-former-employee-step-1.md
+            - name: Paso 2. Guardar el contenido del buzón del exempleado
+              href: add-users/remove-former-employee-step-2.md
+            - name: Paso 3. Reenviar el correo electrónico de un exempleado a otro empleado o convertirlo en un buzón compartido
+              href: add-users/remove-former-employee-step-3.md
+            - name: Paso 4. Proporcionar acceso a otro empleado a OneDrive y a los datos de Outlook
+              href: add-users/remove-former-employee-step-4.md
+            - name: Paso 5. Borrar y bloquear el dispositivo móvil de un exempleado
+              href: add-users/remove-former-employee-step-5.md
+            - name: Paso 6. Quitar la licencia de Microsoft 365 a un exempleado
+              href: add-users/remove-former-employee-step-6.md
+            - name: Paso 7. Eliminar la cuenta de usuario de un exempleado
+              href: add-users/remove-former-employee-step-7.md
         - name: Grupos
           items:
             - name: Introducción a grupos
