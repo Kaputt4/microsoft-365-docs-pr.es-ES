@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,26 +13,26 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
-ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
+search.appverid: MET150
 description: Obtenga información sobre qué opciones de pago están disponibles para pagar por su suscripción a Microsoft 365 para empresas.
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-- commerce
-ms.openlocfilehash: 65454dcc71645b370d2ebfc875474151c0954a3c
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+- commerce_billing
+- PPM_jmueller
+ms.date: 05/04/2021
+ms.openlocfilehash: 85fdcc0aca52b91ed34b1729f6eea805cce37ade
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245009"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280588"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
 
 > [!IMPORTANT]
-> A partir del 26 de enero de 2021, dejarán de admitirse cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si es un cliente existente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones siempre que la cuenta bancaria esté en buenos términos.
+> A partir del 26 de enero de 2021, dejarán de admitirse cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si usted es un cliente existente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones siempre que la cuenta bancaria esté en buenos términos.
 
 Puede pagar la suscripción con tarjeta de crédito, débito o una cuenta bancaria. En algunos casos, puede pagar mediante factura, mediante cheque o transferencia electrónica de fondos (EFT). Si tiene un perfil de facturación, sus opciones son algo diferentes. Para más información, consulte [Cómo pagar la suscripción con un perfil de facturación](pay-for-subscription-billing-profile.md). Si no está seguro de si su cuenta tiene un perfil de facturación, consulte [Información de perfiles de facturación](manage-billing-profiles.md).
 
@@ -89,6 +90,7 @@ Si no agregó el método de pago usado para pagar la suscripción, debe reemplaz
  **Elija su país o región de facturación del menú desplegable siguiente.**
 
 > [!div class="op_single_selector"]
+>
 > - **Elija su país o región**
 > - [Afganistán](../pay/afghanistan.md)
 > - [Albania](../pay/albania.md)
@@ -254,7 +256,7 @@ Solo puede cambiar al pago con factura si el precio de su suscripción es superi
 
 No puede cambiar automáticamente del pago con factura al pago con un método de pago diferente. En su lugar, debe [comprar otra suscripción](../try-or-buy-microsoft-365.md#buy-a-different-subscription) con otra tarjeta de crédito/débito o cuenta bancaria, [mover a todos los usuarios a la nueva suscripción](../subscriptions/move-users-different-subscription.md) y [cancelar la suscripción antigua](../subscriptions/cancel-your-subscription.md).
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
 [Administrar métodos de pago](manage-payment-methods.md) (artículo)\
 [Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)\
