@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 94507a05dcddc147f5d6e022f84721e67bd6316b
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 26e9f4d4078f64490dfdd13a9fc716fcc9e99aec
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544461"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297709"
 ---
-# <a name="contact-support-for-slovakia"></a><span data-ttu-id="6388e-103">Póngase en contacto con el soporte técnico de Eslovaquia</span><span class="sxs-lookup"><span data-stu-id="6388e-103">Contact support for Slovakia</span></span>
+# <a name="contact-support-for-slovakia"></a><span data-ttu-id="1f24b-103">Póngase en contacto con el soporte técnico de Eslovaquia</span><span class="sxs-lookup"><span data-stu-id="1f24b-103">Contact support for Slovakia</span></span>
 
-<span data-ttu-id="6388e-104">[Buscar otro país o región](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="6388e-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="1f24b-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="1f24b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="6388e-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="6388e-105">Phone number</span></span>
-<span data-ttu-id="6388e-106">0800 102 365</span><span class="sxs-lookup"><span data-stu-id="6388e-106">0800 102 365</span></span>
+## <a name="phone-number"></a><span data-ttu-id="1f24b-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="1f24b-105">Phone number</span></span>
+<span data-ttu-id="1f24b-106">0800 102 365</span><span class="sxs-lookup"><span data-stu-id="1f24b-106">0800 102 365</span></span>
 
-## <a name="hours"></a><span data-ttu-id="6388e-107">Horas</span><span class="sxs-lookup"><span data-stu-id="6388e-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="6388e-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="6388e-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="1f24b-107">Horas</span><span class="sxs-lookup"><span data-stu-id="1f24b-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="1f24b-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="1f24b-108">Billing Support:</span></span>
 
-<span data-ttu-id="6388e-109">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="6388e-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="1f24b-109">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="1f24b-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="6388e-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="6388e-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="1f24b-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="1f24b-110">Technical Support:</span></span>
 
-<span data-ttu-id="6388e-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="6388e-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="1f24b-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="1f24b-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="6388e-112">Número de teléfono alternativo: 026 862 2111</span><span class="sxs-lookup"><span data-stu-id="6388e-112">Alternative Phone Number: 026 862 2111</span></span>
+<span data-ttu-id="1f24b-112">Número Teléfono alternativa: 026 862 2111</span><span class="sxs-lookup"><span data-stu-id="1f24b-112">Alternative Phone Number: 026 862 2111</span></span>
 
-<span data-ttu-id="6388e-113">Se aplican tarifas de llamada local</span><span class="sxs-lookup"><span data-stu-id="6388e-113">Local call charges apply</span></span>
+<span data-ttu-id="1f24b-113">Se aplican tarifas de llamada local</span><span class="sxs-lookup"><span data-stu-id="1f24b-113">Local call charges apply</span></span>
