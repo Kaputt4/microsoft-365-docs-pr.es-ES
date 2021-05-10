@@ -38,8 +38,14 @@
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Vista general del Centro de seguridad de Microsoft 365
           href: ../defender/overview-security-center.md
-        - name: Explorador de amenazas (y detecciones en tiempo real)
-          href: threat-explorer.md
+        - name: Explorador de amenazas para Defender para Office 365
+          items:
+            - name: Búsqueda de amenazas en el Explorador de amenazas
+              href: threat-hunting-in-threat-explorer.md
+            - name: Seguridad del correo electrónico con el Explorador de amenazas
+              href: email-security-in-microsoft-defender.md
+            - name: Conceptos básicos del Explorador de amenazas y detección en tiempo real
+              href: real-time-detections.md
         - name: Página de la entidad de correo electrónico
           href: mdo-email-entity-page.md
         - name: Visión general de AIR
@@ -188,6 +194,8 @@
           href: message-trace-scc.md
         - name: Notificar mensajes y archivos a Microsoft
           href: report-junk-email-messages-to-microsoft.md
+        - name: Habilitar los complementos Informar sobre el mensaje e Informar sobre suplantación de identidad
+          href: enable-the-report-message-add-in.md
         - name: Usar reglas de flujo de correo para bloquear mensajes con datos adjuntos ejecutables en EOP
           href: reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md
         - name: Usar reglas de flujo de correo para filtrar correo electrónico masivo en EOP

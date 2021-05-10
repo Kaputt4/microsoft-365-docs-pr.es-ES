@@ -344,6 +344,8 @@
 #### [Control de dispositivo]()
 ##### [Informes del control de dispositivo](device-control-report.md)
 ##### [Controlar dispositivos USB](control-usb-devices-using-intune.md)
+##### [Protección de almacenamiento extraíble](device-control-removable-storage-protection.md)
+##### [Control de acceso de almacenamiento extraíble](device-control-removable-storage-access-control.md)
 
 #### [Bloqueo y contención de comportamientos]()
 ##### [Bloqueo y contención de comportamientos](behavioral-blocking-containment.md)
@@ -535,7 +537,7 @@
 ###### [Recomendación]()
 ####### [Propiedades y métodos estáticos.](recommendation.md)
 ####### [Enumerar todas las recomendaciones](get-all-recommendations.md)
-####### [Obtener recomendación por identificador](get-recommendation-by-id.md)
+####### [Obtener recomendación por identificación](get-recommendation-by-id.md)
 ####### [Obtener recomendación por software](get-recommendation-software.md)
 ####### [Enumerar máquinas por recomendación](get-recommendation-machines.md)
 ####### [Enumerar vulnerabilidades por recomendación](get-recommendation-vulnerabilities.md)
@@ -570,7 +572,7 @@
 ####### [Propiedades y métodos de vulnerabilidad](vulnerability.md)
 ####### [Enumerar vulnerabilidades](get-all-vulnerabilities.md)
 ####### [Enumerar vulnerabilidades por máquina y software](get-all-vulnerabilities-by-machines.md)
-####### [Obtener vulnerabilidad por identificador](get-vulnerability-by-id.md)
+####### [Obtener vulnerabilidad por identificación](get-vulnerability-by-id.md)
 ####### [Enumerar máquinas por vulnerabilidad](get-machines-by-vulnerability.md)
 
 ##### [Cómo usar las API: Ejemplos]()
