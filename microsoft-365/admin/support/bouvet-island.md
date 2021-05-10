@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5cadd89a0dd86e0a7346fbe8df1a88cf3265d4a3
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 7b5a5d47c0ddcca8300f7e7503c01aa6b309c4dd
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548469"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296436"
 ---
 # <a name="contact-support-for-bouvet-island"></a>Póngase en contacto con el soporte técnico de La isla de Bouvet
 
-[Buscar otro país o región](../contact-support-for-business-products.md).
+[Buscar otro país o región](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 +1 312 843 5149

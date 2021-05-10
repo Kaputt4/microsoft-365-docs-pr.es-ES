@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 68fec474bddf5c9b2a0ef2e61f49a7632c8b32c7
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 149c75e827eaea3c5fb77a78e22b878b2f7fa0ed
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548637"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296532"
 ---
 # <a name="contact-support-for-bermuda"></a>Póngase en contacto con el soporte técnico para Bermudas
 
-[Buscar otro país o región](../contact-support-for-business-products.md).
+[Buscar otro país o región](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 1 877 639 9636

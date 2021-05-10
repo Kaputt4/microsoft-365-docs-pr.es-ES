@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implemente Microsoft Information Protection (MIP) para proteger la información confidencial donde esta resida o hacia donde se transfiera.
-ms.openlocfilehash: f39890db2338d5811e15c81dfafef47c60b028c5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 86b4704ab12d14702bb0a8dde47208f054c67a54
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244337"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296748"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection en Microsoft 365.
 
@@ -82,15 +82,4 @@ Para ayudar a evitar el uso compartido accidental de información confidencial, 
 |[Obtenga más información sobre la prevención de pérdida de datos en punto de conexión](endpoint-dlp-learn-about.md)| Amplía las capacidades de DLP a los elementos que se usan y comparten en equipos con Windows 10. | [Introducción a la prevención de pérdida de datos en punto de conexión](endpoint-dlp-getting-started.md)|
 |[Obtenga información sobre la extensión de cumplimiento de Microsoft (versión preliminar)](dlp-chrome-learn-about.md) | Amplía las capacidades de DLP al explorador Chrome. | [Introducción a la extensión de cumplimiento de Microsoft (versión preliminar)](dlp-chrome-get-started.md)|
 |[Obtenga más información sobre el examen de prevención de pérdida de datos locales de Microsoft 365 (versión preliminar)](dlp-on-premises-scanner-learn.md)|Extiende la supervisión de DLP de las actividades de archivos y las acciones de protección de esos archivos a recursos compartidos de archivos locales y bibliotecas de documentos y carpetas de SharePoint.|[Introducción al examen de prevención de pérdida de datos de Microsoft 365 en entorno local (versión preliminar)](dlp-on-premises-scanner-get-started.md)|
-|[Proteger la información confidencial en mensajes de chat y canales de Microsoft Teams](dlp-microsoft-teams.md) | Amplía algunas funciones de DLP a los mensajes de canal y chat de Teams | [Obtenga información sobre la directiva de prevención de pérdida de datos predeterminada en Microsoft Teams (versión preliminar)](dlp-teams-default-policy.md)| 
-
-
-## <a name="additional-resources"></a>Recursos adicionales
-
-Muchas organizaciones usan estas funciones de protección de información para cumplir con las normativas de privacidad de datos. Para ayudarle, hemos diseñado un flujo de trabajo para guiarlo a través de un proceso de un extremo a otro para planear e implementar funcionalidades en Microsoft 365, incluido el acceso seguro, la protección contra amenazas, la protección de la información y el gobierno de datos. Para obtener más información, consulte [Implementar la protección de la información para normativas de privacidad de datos con Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
-
-Además, puede descargar el conjunto de ilustraciones de *Information Protection y funcionalidades de cumplimiento de Microsoft 365* para planificar una estrategia integrada para implementar las funcionalidades de protección de la información.  Siéntase libre de adaptar estas ilustraciones para su propio uso.
-
-| Elemento | Descripción |
-|:-----|:------------|
-|[![Póster modelo: capacidades de protección y cumplimiento de la información de Microsoft 365](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Descargar como PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japonés: [Descargar como PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Descargar como Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> Actualizado en octubre de 2020|Incluye: <ul><li>  Protección de la información y prevención de la pérdida de datos de Microsoft</li><li>Directivas y etiquetas de retención </li><li>Barreras de información</li><li>Cumplimiento de comunicaciones</li><li>Administración de riesgos internos</li><li>Ingesta de datos de terceros</li>|
+|[Proteger la información confidencial en mensajes de chat y canales de Microsoft Teams](dlp-microsoft-teams.md) | Amplía algunas funciones de DLP a los mensajes de canal y chat de Teams | [Obtenga información sobre la directiva de prevención de pérdida de datos predeterminada en Microsoft Teams (versión preliminar)](dlp-teams-default-policy.md)|

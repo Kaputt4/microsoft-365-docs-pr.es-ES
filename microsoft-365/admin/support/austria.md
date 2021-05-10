@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 079b0172571c59b227bfcd9fc4f953abb2ff7b3b
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 5ceca007e3ad9d20ffaf5d4410f531404ec7349b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548853"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296604"
 ---
 # <a name="contact-support-for-austria"></a>Póngase en contacto con el soporte técnico de Austria
 
-[Buscar otro país o región](../contact-support-for-business-products.md).
+[Buscar otro país o región](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 0800 080 650
@@ -39,6 +39,6 @@ Alemán: Mon-Fri 8 AM-9 PM
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Número de teléfono alternativo: 01 206 09 15 78
+Número Teléfono alternativa: 01 206 09 15 78
 
 Se aplican tarifas de llamada local

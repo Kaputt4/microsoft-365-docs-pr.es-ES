@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c413c93e25f7ae16276464146beeb703e967ddc1
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 911fe3a783a1a129d6fa7e7f3a9878146737550b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545745"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295788"
 ---
 # <a name="contact-support-for-moldova"></a>Póngase en contacto con el soporte técnico de Moldova
 
-[Buscar otro país o región](../contact-support-for-business-products.md).
+[Buscar otro país o región](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 022 20 13 34

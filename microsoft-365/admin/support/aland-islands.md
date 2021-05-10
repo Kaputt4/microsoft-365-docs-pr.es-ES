@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: dc43559640aeeb6beb089a4212a202ba4b41ff06
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: e3481b8adab6e5c777f6ba3eb4ad46a92a838a2d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549141"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296688"
 ---
 # <a name="contact-support-for-aland-islands"></a>Póngase en contacto con el soporte técnico de Islas Aland
 
-[Buscar otro país o región](../contact-support-for-business-products.md).
+[Buscar otro país o región](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 08009 8462

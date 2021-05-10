@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: material de referencia de prevención de pérdida de datos
-ms.openlocfilehash: a94dde0bba3fdfc869746f51687ed7709a96639a
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: a039b8d99bd92be0040f6207803981e8a2937c6f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114406"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296773"
 ---
 # <a name="data-loss-prevention-reference"></a>Referencia de prevención de pérdida de datos
  
@@ -385,7 +385,7 @@ Al usar una [etiqueta de retención](retention.md#retention-labels) que haya cre
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>Usar una etiqueta de confidencialidad como condición en una directiva DLP
 
-La etiqueta de confidencialidad como condición en las directivas DLP actualmente es una versión preliminar. [Más información](./dlp-sensitivity-label-as-condition.md).
+[Obtenga más información](./dlp-sensitivity-label-as-condition.md) sobre cómo usar la etiqueta de confidencialidad como condición en las directivas DLP.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Cómo esta característica se relaciona con otras características
 

@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: babdfd3ed314e4fa0317d8e8afef3963685e6ab2
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 2894d7d9f86be3b54926b1cdf7b94bc1e0aad839
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545709"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295800"
 ---
 # <a name="contact-support-for-mongolia"></a>Póngase en contacto con el soporte técnico de Mongolia
 
-[Buscar otro país o región](../contact-support-for-business-products.md).
+[Buscar otro país o región](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 +7 499 922 86 23

@@ -23,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2527389634cda9912f45ecdcd3213f7d987b7bb8
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0d4c59f24f5d5979d0f63d035edd1ca668ff4314
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221876"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296700"
 ---
 # <a name="what-is-a-domain"></a>¿Qué es un dominio?
 
@@ -46,7 +46,7 @@ Use Microsoft 365 para comprar un nuevo dominio: configuraremos todo. [Aprende m
   
  **Use un dominio de su propiedad:**
   
-Si ya tienes un dominio como  *you@yourcompany. <span> com*  puede agregarlo y empezar a usar las aplicaciones de OneDrive y Microsoft de inmediato. Necesitará dedicar unos minutos a configurar el correo y Skype Empresarial. 
+Si ya tienes un dominio como *you@yourcompany. <span> com* puedes agregarlo y empezar a usar OneDrive aplicaciones de Microsoft inmediatamente. Necesitará dedicar unos minutos a configurar el correo y Skype Empresarial. 
   
 > [!TIP]
 > ¿No sabe dónde está registrado su dominio? [Obtenga ayuda para encontrar su registrador de dominios](find-your-domain-registrar.md)
@@ -57,6 +57,6 @@ Puede usar un dominio predeterminado como  *yourcompany.onmicrosoft. <span> com*
   
 ## <a name="feeling-stuck"></a>¿Está bloqueado?
 
-Llamar al soporte técnico de [Microsoft: obtener ayuda para configurar un dominio](../contact-support-for-business-products.md)
+Llamar al soporte técnico de [Microsoft: obtener ayuda para configurar un dominio](../../business-video/get-help-support.md)
   
 
