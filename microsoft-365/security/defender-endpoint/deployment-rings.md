@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8123bdf610b30407e5d262296f9c3639bc21b12f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 5aeaa51e5ab8974c8ca26453534396dac14b5853
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893490"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297213"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Implementar Microsoft Defender para endpoint en anillos
 
@@ -81,8 +81,8 @@ En la tabla siguiente se muestran los puntos de conexión compatibles y la herra
 
 | Extremo     | Herramienta de implementación                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br> NOTA: Si desea implementar más de 10 dispositivos en un entorno de producción, use el método de directiva de grupo en su lugar o las otras herramientas compatibles que se enumeran a continuación.<br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md)   |
-| **macOS**    | [Script local](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md) |
+| **Windows**  |  [Script local (hasta 10 dispositivos)](configure-endpoints-script.md) <br> NOTA: Si desea implementar más de 10 dispositivos en un entorno de producción, use el método de directiva de grupo en su lugar o las otras herramientas compatibles que se enumeran a continuación.<br>  [Directiva de grupo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Administrador de dispositivos móviles](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Scripts VDI](configure-endpoints-vdi.md)   |
+| **macOS**    | [Script local](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [Jamf Pro](mac-install-with-jamf.md) <br> [Administración de dispositivos móviles](mac-install-with-other-mdm.md) |
 | **Servidor Linux** | [Script local](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Basado en aplicaciones](ios-install.md)                                |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
@@ -96,7 +96,7 @@ En esta fase, puede usar el material de planeación [de implementación](deploym
 
 Use el siguiente material para seleccionar la arquitectura de Microsoft Defender para endpoint adecuada que mejor se adapte a su organización.
 
-|**Item**|**Descripción**|
+|**Elemento**|**Descripción**|
 |:-----|:-----|
 |[![Imagen digital de la estrategia de implementación de Microsoft Defender para endpoints](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | El material arquitectónico le ayuda a planear la implementación de las arquitecturas siguientes: <ul><li> Nativo en la nube </li><li> Administración conjunta </li><li> Local</li><li>Evaluación e incorporación local</li>
 
@@ -105,25 +105,25 @@ Use el siguiente material para seleccionar la arquitectura de Microsoft Defender
 
 ## <a name="existing-deployments"></a>Implementaciones existentes
 
-### <a name="windows-endpoints"></a>Puntos de conexión de Windows
-Para Windows y/o Windows Servers, seleccionas varias máquinas para probar con antelación (antes de la revisión del martes) mediante el programa de validación de actualizaciones de seguridad **(SUVP).**
+### <a name="windows-endpoints"></a>Windows de conexión
+Para Windows y/o servidores Windows, seleccione varias máquinas para probar con antelación (antes del martes de revisión) mediante el programa de validación de actualización de seguridad **(SUVP).**
 
 Para obtener más información, vea:
 - [¿Qué es el programa de validación de actualización de seguridad?](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
-- [Software Update Validation Program and Centro de protección contra malware de Microsoft Establishment - TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
+- [Software Update Validation Program and Centro de protección contra malware de Microsoft Establishment : TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
 
-### <a name="non-windows-endpoints"></a>Puntos de conexión que no son de Windows
-Con macOS y Linux, puede tomar un par de sistemas y ejecutarse en el canal "InsidersFast".
+### <a name="non-windows-endpoints"></a>Puntos de conexión Windows sin conexión
+Con macOS y Linux, puede usar un par de sistemas y ejecutarse en el canal Beta.
 
 >[!NOTE]
->Lo ideal es que al menos un administrador de seguridad y un desarrollador puedan encontrar problemas de compatibilidad, rendimiento y confiabilidad antes de que la compilación lo haga en el canal "Producción".
+>Lo ideal es que al menos un administrador de seguridad y un desarrollador puedan encontrar problemas de compatibilidad, rendimiento y confiabilidad antes de que la compilación lo haga en el canal actual.
 
-La elección del canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen al dispositivo. Los dispositivos de insiders-fast son los primeros en recibir actualizaciones y nuevas características, seguidos más adelante por insiders-slow y, por último, por prod.
+La elección del canal determina el tipo y la frecuencia de las actualizaciones que se ofrecen al dispositivo. Los dispositivos en Beta son los primeros en recibir actualizaciones y nuevas características, seguidos más adelante por Preview y, por último, por Current.
 
 ![Imagen de anillos insider](images/insider-rings.png)
 
-Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa para que usen insiders-fast o insiders-slow.
+Para obtener una vista previa de las nuevas características y proporcionar comentarios anticipados, se recomienda configurar algunos dispositivos de la empresa para que usen Beta o Preview.
 
 >[!WARNING]
 >Cambiar el canal después de la instalación inicial requiere que se vuelva a instalar el producto. Para cambiar el canal de producto: desinstale el paquete existente, vuelva a configurar el dispositivo para que use el nuevo canal y siga los pasos descritos en este documento para instalar el paquete desde la nueva ubicación.

@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Obtenga información Microsoft 365 para empresas, cómo configurarla y cómo preparar los dispositivos y equipos de los usuarios para asegurarse de que están protegidos por Microsoft 365 para empresas.
-ms.openlocfilehash: cc54147e75a27fbb93255d6f706b4f9044c75858
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ddf6f8d12587c6fb562a599a41c190ffef32c147
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245132"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293715"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Introducción a Microsoft 365 para empresas
 
@@ -65,7 +65,7 @@ Vea este vídeo para obtener información general sobre la configuración Micros
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../business-video/index.yml).
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: Configurar Microsoft 365 para empresas (administrador)
@@ -99,13 +99,13 @@ Si su organización usa Windows Server Active Directory local, puede configurar 
 Si conserva un Active Directory local que contiene algunos recursos locales (como recursos compartidos de archivos e impresoras), puede proporcionar a los dispositivos unidos a **Azure AD** acceso a estos recursos siguiendo los pasos que se indican a continuación: Obtener acceso a recursos locales desde un dispositivo unido a Azure AD en [Microsoft 365](access-resources.md)para empresas.
   
   
-## <a name="contact-support"></a>Ponerse en contacto con el soporte técnico
+## <a name="contact-support"></a>Contactar soporte
 
  **Si necesita ponerse en contacto con soporte técnico:**
   
 - Póngase en contacto con su partner.
     
-- Como administrador Microsoft 365 para empresas, tiene acceso a nuestro equipo de soporte al cliente: Póngase en contacto con el soporte técnico para productos **[empresariales- Ayuda para administradores](../admin/contact-support-for-business-products.md)**
+- Como administrador Microsoft 365 para empresas, tiene acceso a nuestro equipo de soporte al cliente: Póngase en contacto con el soporte técnico para productos **[empresariales- Ayuda para administradores](../business-video/get-help-support.md)**
     
 ## <a name="related-content"></a>Contenido relacionado
 

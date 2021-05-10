@@ -21,12 +21,12 @@ search.appverid: MET150
 description: Obtenga información sobre cómo actualizar desde una Office 365 de E4.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f9143497ac2ee15009a3a2b3af9e76426d408d38
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 0e30ece58cfc10ea258a684f9ac6ca4dba1b8692
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280516"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297289"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Actualización desde una suscripción Office 365 E4
 
@@ -63,7 +63,7 @@ Actualizar planes manualmente significa completar los siguientes procedimientos 
 3. Seleccione la **pestaña** Actualizar. Si ves otros planes enumerados, significa que puedes actualizar los planes automáticamente.
 4. Si no puede actualizar automáticamente, verá un mensaje que describe el motivo por el que no puede actualizar.
 
-Hay varias razones por las que no puede actualizar los planes automáticamente. La mayoría de los problemas son temporales, como los problemas de estado del servicio que puede resolver. Para obtener más información, consulta [¿Por qué no puedo actualizar los planes?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) Si necesita ayuda con la actualización, póngase [en contacto con el soporte técnico](../../admin/contact-support-for-business-products.md).
+Hay varias razones por las que no puede actualizar los planes automáticamente. La mayoría de los problemas son temporales, como los problemas de estado del servicio que puede resolver. Para obtener más información, consulta [¿Por qué no puedo actualizar los planes?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) Si necesita ayuda con la actualización, póngase [en contacto con el soporte técnico](../../business-video/get-help-support.md).
 
 ## <a name="will-a-credit-check-be-required"></a>¿Se requiere una comprobación de crédito?
 

@@ -24,12 +24,12 @@ ms.custom:
 - PPM_jmueller
 description: Busque la factura o el extracto en el Centro de administración de Microsoft 365. También puede guardar e imprimir una copia de la factura.
 ms.date: 07/31/2020
-ms.openlocfilehash: f9dc6fb9be765e6e221ddf43f703d64737870f01
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: eff193689817c1c89fff7c8ffbc5335fff64ee0f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280828"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297361"
 ---
 # <a name="view-your-bill-or-invoice"></a>Ver la factura o recibo
 
@@ -37,7 +37,7 @@ Este artículo está dirigido a las personas que tienen una suscripción a Micro
   
 Si necesita ayuda para interpretar los cargos que aparecen en su factura, vea [Entender la factura](understand-your-invoice2.md) para obtener una guía detallada.
   
-**¿Tiene algún problema con la factura?** [Póngase en contacto con soporte técnico para productos empresariales](../../admin/contact-support-for-business-products.md)
+**¿Tiene algún problema con la factura?** [Póngase en contacto con soporte técnico para productos empresariales](../../business-video/get-help-support.md)
 
 ## <a name="before-you-begin"></a>Antes de empezar
 

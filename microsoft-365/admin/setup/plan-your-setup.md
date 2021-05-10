@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Obtenga información sobre los requisitos y consideraciones para realizar el cambio a Microsoft 365 para empresas.
-ms.openlocfilehash: ba97253beed1544d8f993a462559037a0a1a4281
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b4d2b5d500b73b62c67d3f8126b6313484e2bc78
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244508"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297037"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planear la configuración de Microsoft 365 para empresas
 
@@ -56,7 +56,7 @@ El asistente de configuración le guiará a través de la instalación de las ap
   
 Si no completa el asistente para la instalación, puede completar las tareas de configuración en cualquier momento desde el Centro [de administración](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >  **Configuración**. Desde aquí puede migrar el correo electrónico y los contactos desde otro servicio de correo electrónico, cambiar el dominio de su cuenta de administrador, administrar la información de facturación, agregar o quitar usuarios, restablecer contraseñas y realizar otras funciones empresariales. Para obtener más información acerca de  las diferencias entre el asistente para la instalación y la página De instalación, vea [Diferencias](o365-setup-wizard-and-setup-page.md)entre el asistente para Microsoft 365 instalación y la página Configuración .
 
-Si tiene problemas con algún paso, comuníquese con nosotros. [Estamos aquí para ayudarle.](../contact-support-for-business-products.md)
+Si tiene problemas con algún paso, comuníquese con nosotros. [Estamos aquí para ayudarle.](../../business-video/get-help-support.md)
   
 ## <a name="when-not-to-use-the-setup-wizard-active-directory-synchronization-and-hybrid-environments"></a>Cuándo no debería usar el asistente de configuración: Sincronización de Active Directory y entornos híbridos
 
@@ -138,7 +138,7 @@ Para organizaciones más grandes o si está empezando desde implementaciones Sky
 - **Si tiene menos de 50 empleados:**
 
   - **Pida ayuda a y le llamaremos**. Después de comprar Microsoft 365, puede acceder al Centro de administración (no es necesario ejecutar el programa de instalación para llegar a él). En la parte inferior del centro de administración, seleccione **¿Necesita ayuda?** Describa el problema y le llamaremos. 
-  - **Llame [Microsoft 365 soporte técnico para empresas](../contact-support-for-business-products.md) con sus preguntas**. ¡Estamos aquí para ayudarle! 
+  - **Llame [Microsoft 365 soporte técnico para empresas](../../business-video/get-help-support.md) con sus preguntas**. ¡Estamos aquí para ayudarle! 
   - **Considere la posibilidad de contratar un [partner de Microsoft](https://go.microsoft.com/fwlink/?linkid=391089)**. Si tiene poco tiempo o tiene requisitos avanzados (como mover miles de archivos Microsoft 365 un almacenamiento en la nube o integrarse con otro software), un partner experimentado puede ser una gran ayuda. 
 
 - **Si tiene más de 50 empleados**, el [Centro de integración FastTrack](https://go.microsoft.com/fwlink/?LinkId=517115) puede ayudarle con la implementación.

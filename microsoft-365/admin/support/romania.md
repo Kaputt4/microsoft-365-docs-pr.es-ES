@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c970f535f7282ff79d9b69f8d711e990d21587d6
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: c1177fe198422433afb83b62e12a75f64581b3f8
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544941"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297829"
 ---
 # <a name="contact-support-for-romania"></a>Póngase en contacto con el soporte técnico de Rumania
 
-[Buscar otro país o región](../contact-support-for-business-products.md).
+[Buscar otro país o región](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 0800 896 956
@@ -35,6 +35,6 @@ Inglés: lunes a viernes de 9:00 a 17:00
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Número de teléfono alternativo: 372 741 961
+Número Teléfono alternativa: 372 741 961
 
 Se aplican tarifas de llamada local

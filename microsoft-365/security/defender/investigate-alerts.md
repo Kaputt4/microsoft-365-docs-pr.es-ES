@@ -1,6 +1,6 @@
 ---
-title: Analizar alertas en Microsoft 365 Defender
-description: Analizar alertas vistas en dispositivos, usuarios y buzones.
+title: Investigar alertas en Microsoft 365 Defender
+description: Investigar las alertas que se ven en dispositivos, usuarios y buzones.
 keywords: incidentes, alertas, investigar, analizar, responder, correlación, ataque, máquinas, dispositivos, usuarios, identidades, identidad, buzón, correo electrónico, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 18b4df6a2dbb22235d6781f1430f7a75e319fbcf
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: b9bbe058042a49586e8515fde85371b1487e8d25
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939547"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297133"
 ---
-# <a name="analyze-alerts-in-microsoft-365-defender"></a>Analizar alertas en Microsoft 365 Defender
+# <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -46,7 +46,7 @@ La **cola De alertas** muestra el conjunto actual de alertas. You get to the ale
 
 Las alertas de diferentes soluciones de seguridad de Microsoft como Microsoft Defender para endpoint, Microsoft Defender para Office 365 y Microsoft 365 Defender aparecen aquí.
 
-De forma predeterminada, la cola de alertas del Centro de seguridad de Microsoft 365 muestra las alertas nuevas y en curso de los últimos 30 días. La alerta más reciente está en la parte superior de la lista para que pueda verla primero. 
+De forma predeterminada, la cola de alertas del centro de seguridad Microsoft 365 muestra las alertas nuevas y en curso de los últimos 30 días. La alerta más reciente está en la parte superior de la lista para que pueda verla primero. 
 
 En la cola de alertas predeterminada, puede seleccionar Filtros **para** ver un panel **Filtros,** desde el que puede especificar un subconjunto de las alertas. Por ejemplo:
 
@@ -54,19 +54,19 @@ En la cola de alertas predeterminada, puede seleccionar Filtros **para** ver un 
 
 Puede filtrar alertas según estos criterios:
 
-- Severity
+- Gravedad
 - Estado
 - Categoría
 - Origen de detección
 - Etiquetas
-- Policy
+- Directiva
 - Activos afectados
 
 ## <a name="analyze-an-alert"></a>Analizar una alerta
 
 Para ver la página de alerta principal, seleccione el nombre de la alerta. Por ejemplo:
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Ejemplo de la página de detalles de una alerta en el Centro de seguridad de Microsoft 365":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Ejemplo de la página de detalles de una alerta en el centro Microsoft 365 seguridad":::
 
 También puede seleccionar la acción **Abrir la página de alerta** principal en el panel **Administrar** alerta.
 
@@ -77,7 +77,7 @@ Una página de alerta se compone de estas secciones:
 - Eventos relacionados
 - Detalles de resumen
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Ejemplo de la página de detalles de una alerta en el Centro de seguridad de Microsoft 365":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Ejemplo de la página de detalles de una alerta en el centro Microsoft 365 seguridad":::
 
 A lo largo de una página de alerta, puede seleccionar los puntos suspensivos (**...**) junto a cualquier entidad para ver acciones disponibles, como abrir la página de activos específica o realizar pasos de corrección específicos.
 
@@ -85,7 +85,7 @@ A lo largo de una página de alerta, puede seleccionar los puntos suspensivos (*
 
 La **sección Acciones realizadas** tiene una lista de activos afectados, como buzones, dispositivos y usuarios afectados por esta alerta. 
 
-También puede seleccionar **Ver en el centro** de  acciones para ver la pestaña Historial del Centro de acciones en el Centro de seguridad de Microsoft 365.  
+También puede seleccionar Ver **en el centro** de  acciones para ver la pestaña Historial del Centro de acciones en el centro de Microsoft 365 seguridad.  
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>Seguimiento del rol de una alerta en el artículo de alerta
 
@@ -114,7 +114,7 @@ El **panel Administrar alerta** permite especificar:
 - Un comentario sobre la alerta.
 
 > [!NOTE]
-> Una forma de administrar alertas mediante el uso de etiquetas. La funcionalidad de etiquetado de Microsoft Defender para Office 365 se está implantando de forma incremental y actualmente está en versión preliminar. <br>
+> Una forma de administrar alertas mediante el uso de etiquetas. La funcionalidad de etiquetado para Microsoft Defender para Office 365 se está ejecutando de forma incremental y actualmente está en versión preliminar. <br>
 > Actualmente, los nombres de etiqueta modificados solo se aplican a las alertas *creadas después de* la actualización. Las alertas que se generaron antes de la modificación no reflejarán el nombre de la etiqueta actualizada. 
 
 Desde este panel, también puede realizar estas acciones adicionales: 
@@ -128,7 +128,7 @@ Desde este panel, también puede realizar estas acciones adicionales:
 
 Por ejemplo:
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Ejemplo de las acciones de una alerta en el Centro de seguridad de Microsoft 365":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Ejemplo de las acciones de una alerta en el centro de Microsoft 365 seguridad":::
 
 La lista de acciones adicionales depende del tipo de alerta.
 
@@ -138,8 +138,12 @@ Una vez que haya terminado de analizar una alerta  y se pueda resolver, vaya al 
 
 Clasificar alertas y especificar su determinación ayuda a ajustar Microsoft 365 Defender para proporcionar alertas más verdaderas y menos falsas.
 
-## <a name="see-also"></a>Ver también
+## <a name="next-steps"></a>Pasos siguientes
+
+Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
+
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)
-- [Analizar incidentes](investigate-incidents.md)
+- [Investigar incidentes](investigate-incidents.md)

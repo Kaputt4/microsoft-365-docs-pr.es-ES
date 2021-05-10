@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Los usuarios pueden aprender a administrar sus compras de autoservicio.
-ms.openlocfilehash: 73b044ab9954744e89a13ccff0145f35bc1b821b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9935259f05432b964fbe138b39397f192e203eb2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920197"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297301"
 ---
 # <a name="manage-self-service-purchases-users"></a>Administrar compras de autoservicio (usuarios)
 
@@ -31,7 +31,7 @@ ms.locfileid: "50920197"
 
 ::: moniker-end
 
-Como usuario, puede comprar suscripciones a determinados productos y asignar licencias para esas suscripciones a personas de su equipo. Eres responsable de pagar las compras de autoservicio que realices. Puede administrar sus suscripciones en el Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
+Como usuario, puede comprar suscripciones a determinados productos y asignar licencias para esas suscripciones a personas de su equipo. Eres responsable de pagar las compras de autoservicio que realices. Puede administrar las suscripciones en el centro de administración Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
 
 El administrador tiene una vista de solo lectura en las suscripciones que compre. Pueden ver el producto, el nombre del comprador, las suscripciones compradas, la fecha de expiración, el precio de compra y los usuarios asignados para cada suscripción que compres.
 
@@ -107,4 +107,4 @@ Puedes ver una lista de todas las suscripciones compradas por autoservicio que c
 
 Para obtener preguntas comunes acerca de las compras de autoservicio, consulta Preguntas más frecuentes sobre compras [de autoservicio.](self-service-purchase-faq.md)
 
-Si tiene preguntas o necesita ayuda con las compras de autoservicio, póngase [en contacto con el soporte técnico](../../admin/contact-support-for-business-products.md).
+Si tiene preguntas o necesita ayuda con las compras de autoservicio, póngase [en contacto con el soporte técnico](../../business-video/get-help-support.md).

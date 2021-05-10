@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1890b4f9b4c71efebe833ebaee62debedbf0fb72
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 83889123067897483478aec3d881a5a7b6ec14cc
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114926"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297229"
 ---
-# <a name="step-1-triage-and-analyze-your-first-incident"></a>Paso 1. Triage and analyze your first incident
+# <a name="step-1-triage-and-analyze-your-first-incident"></a>Paso 1. Triage and analyze your first incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -97,7 +97,7 @@ A continuación se muestra un solo enfoque para el triage:
 
 Es igualmente importante comprender el contexto que rodea las alertas. A menudo, una alerta no es un solo evento independiente. Hay una cadena de procesos creados, comandos y acciones que podrían no haber ocurrido al mismo tiempo. Por lo tanto, un analista debe buscar la primera y la última actividad de la entidad sospechosa en las escalas de tiempo del dispositivo para comprender el contexto de las alertas.
 
-Hay varias maneras de leer y analizar datos con Microsoft 365 Defender, pero el objetivo final para los analistas es responder a incidentes lo antes posible. Aunque Microsoft 365 Defender puede reducir significativamente el tiempo medio de corrección [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) a través de la característica de corrección automática líder del sector, siempre hay casos que requieren análisis manual. 
+Hay varias maneras de leer y analizar datos con Microsoft 365 Defender, pero el objetivo final para los analistas es responder a incidentes lo antes posible. Aunque Microsoft 365 Defender puede reducir significativamente el tiempo medio para corregir [(MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) a través de la característica de investigación y respuesta automatizada líder del sector, siempre hay casos que requieren análisis manual. [](m365d-autoir.md) 
 
 Aquí le mostramos un ejemplo:
 
@@ -136,5 +136,5 @@ Obtenga información sobre [cómo corregir incidentes](first-incident-remediate.
 ## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
-- [Analizar incidentes](investigate-incidents.md)
+- [Investigar incidentes](investigate-incidents.md)
 - [Administrar incidentes](manage-incidents.md)

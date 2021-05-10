@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo cerrar su cuenta con Microsoft.
 ms.date: 04/02/2021
-ms.openlocfilehash: 4fa1366186f0a37d3319208224628332d958a0ea
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 86232e3f433526cc60ef369eda03ef8d20ab08c9
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107477"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293672"
 ---
 # <a name="close-your-account"></a>Cerrar la cuenta
 
@@ -37,7 +37,7 @@ Al cerrar la cuenta de Microsoft, se elimina toda la información relacionada co
 
 Antes de iniciar este proceso, asegúrese de realizar una copia de seguridad de los datos que desea conservar.
 
-Para poder realizar las tareas de este artículo, debe ser un administrador global o de facturación. Para más información, consulte[Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+Para poder realizar las tareas de este artículo, debe ser un administrador global o de facturación. Para más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="step-1-delete-users"></a>Paso 1: Eliminar usuarios
 
@@ -69,7 +69,7 @@ Si su organización usa Active Directory que se sincroniza con Microsoft Azure A
 6. Para cada suscripción deshabilitada, repita los pasos del 3 al 5 hasta que se eliminen todas las suscripciones.
 
 > [!NOTE]
-> Si no puede eliminar inmediatamente una suscripción deshabilitada, póngase [en contacto con el soporte técnico](../admin/contact-support-for-business-products.md).
+> Si no puede eliminar inmediatamente una suscripción deshabilitada, póngase [en contacto con el soporte técnico](../business-video/get-help-support.md).
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>Paso 4: Deshabilitar la autenticación multifactor
 

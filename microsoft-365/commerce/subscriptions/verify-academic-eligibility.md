@@ -1,5 +1,5 @@
 ---
-title: Comprobar la elegibilidad académica para suscripciones a Microsoft 365 Education
+title: Comprobar la elegibilidad académica para Microsoft 365 Educación suscripciones
 f1.keywords:
 - CSH
 - FWLink 2135711
@@ -17,31 +17,31 @@ ms.collection:
 ms.custom: ''
 search.appverid:
 - MET150
-description: Obtenga información sobre cómo comprobar la elegibilidad de su escuela para los precios académicos de Microsoft 365 Education.
+description: Obtenga información sobre cómo comprobar la elegibilidad de su escuela Microsoft 365 Educación precios académicos.
 ms.date: 07/21/2020
-ms.openlocfilehash: 374c27283d51b97ee24dd11079a72d0a3d7429b0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ad014cd72d82413073e1e645484f2a7fd0090b3c
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920161"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293492"
 ---
-# <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Comprobar la elegibilidad académica para suscripciones a Microsoft 365 Education
+# <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Comprobar la elegibilidad académica para Microsoft 365 Educación suscripciones
 
-Si forma parte de una institución académica, puede registrarse para obtener una prueba gratuita de Microsoft 365 Education. Después de que Microsoft compruebe la idoneidad académica de su escuela, puede comprar productos de Microsoft 365 a precios académicos. Esto incluye productos que están disponibles de forma gratuita, como Office 365 A1 para profesores y Office 365 A1 para estudiantes. Tienes hasta el final de la prueba gratuita para convertirla en una suscripción de pago a precios académicos.
+Si forma parte de una institución académica, puede registrarse para obtener una prueba gratuita de Microsoft 365 Educación. Después de que Microsoft compruebe la elegibilidad académica de su escuela, puede comprar productos Microsoft 365 a precios académicos. Esto incluye productos que están disponibles de forma gratuita, como Office 365 A1 para profesores y Office 365 A1 para estudiantes. Tienes hasta el final de la prueba gratuita para convertirla en una suscripción de pago a precios académicos.
 
 En este artículo se describe cómo comprobar la elegibilidad académica de su escuela, comprobar el estado de elegibilidad y comprar suscripciones a precios académicos después de aprobar su escuela.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Ya debe tener una suscripción de prueba de Microsoft 365 Education. Si no tiene una suscripción de prueba, [visite esta](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) página web y seleccione Introducción de **forma gratuita.**
+Ya debe tener una suscripción de Microsoft 365 Educación de prueba. Si no tiene una suscripción de prueba, [visite esta](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) página web y seleccione Introducción de **forma gratuita.**
 
 ## <a name="verify-that-you-have-a-trial-subscription"></a>Comprobar que tiene una suscripción de prueba
 
-Si no está seguro de si tiene una suscripción de prueba de Microsoft 365 Education, siga estos pasos para comprobar que lo hace.
+Si no está seguro de si tiene una Microsoft 365 Educación de prueba, siga estos pasos para comprobar que lo hace.
 
-1. En el Centro de administración de Microsoft 365, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. Busque **Office 365 A1 para pruebas** para profesores y **Office 365 A1 para estudiantes de prueba**. Si no encuentra estas suscripciones, visite esta página [web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) y **seleccione Introducción de forma gratuita.**
+1. En el centro Microsoft 365 administración,  vaya a la página \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Facturación de sus productos.</a>
+2. Busque las **Office 365 A1 para pruebas** de profesores y Office 365 A1 **para los alumnos De prueba**. Si no encuentra estas suscripciones, visite esta página [web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) y **seleccione Introducción de forma gratuita.**
 
 ## <a name="verify-your-schools-academic-eligibility"></a>Comprobar la elegibilidad académica de su escuela
 
@@ -56,20 +56,20 @@ Si se deniega su elegibilidad académica, consulte [Mi escuela no es elegible. �
 
 ## <a name="check-the-status-of-your-schools-academic-eligibility"></a>Comprobar el estado de la elegibilidad académica de su escuela
 
-Después de tener una prueba de Microsoft 365 Education, puede comprobar el estado de la elegibilidad académica de su escuela en cualquier momento.
+Después de tener una Microsoft 365 Educación, puede comprobar el estado de la elegibilidad académica de su escuela en cualquier momento.
 
-1. Vaya al [Centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+1. Vaya al Centro [Microsoft 365 administración.](https://go.microsoft.com/fwlink/p/?linkid=2024339)
 2. En la página principal, busque la tarjeta **de** facturación.\
     La **tarjeta de** facturación indica el estado del proceso de comprobación. La tarjeta muestra uno de los siguientes estados: aprobado, pendiente, rechazado o agregar el dominio.
 
     > [!NOTE]
-    > Si no ve uno de estos estados, significa que no tiene una suscripción de prueba de Microsoft 365 Education. Para iniciar una prueba gratuita, [visite esta página web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) y seleccione Introducción de forma **gratuita.**
+    > Si no ves uno de esos estados, significa que no tienes una suscripción de Microsoft 365 Educación prueba. Para iniciar una prueba gratuita, [visite esta página web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) y seleccione Introducción de forma **gratuita.**
 
 ## <a name="buy-subscriptions-at-academic-prices"></a>Comprar suscripciones a precios académicos
 
 Después de comprobar la elegibilidad de su escuela, puede comprar suscripciones a precios académicos. También puede convertir [la versión de prueba gratuita en una suscripción de pago.](../try-or-buy-microsoft-365.md) Si desea convertir la suscripción de prueba, debe hacerlo antes de que finalice el período de prueba.
 
-1. En el Centro de administración de Microsoft 365, vaya a la página **Servicios de compra** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">facturación.</a>
+1. En el centro Microsoft 365 administración, vaya a la página **Servicios de compra** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">facturación.</a>
 2. Para ver ofertas académicas, seleccione la **pestaña** Educación.
 
     > [!NOTE]
@@ -82,7 +82,7 @@ Después de comprobar la elegibilidad de su escuela, puede comprar suscripciones
 
 Puede encontrar la fecha de expiración de su suscripción de prueba gratuita en la **página Sus productos.** También puede ampliar la versión de prueba.
 
-1. En el Centro de administración de Microsoft 365, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro Microsoft 365 administración,  vaya a la página \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Facturación de sus productos.</a>
 2. Busque la suscripción de prueba.
 3. En la **sección Facturación,** en **Suscripción de prueba gratuita,** se muestra la fecha de expiración.
 4. Si desea ampliar la versión de prueba, seleccione **Extender la versión de prueba**. Solo puedes hacerlo una vez por suscripción de prueba gratuita.
@@ -91,16 +91,16 @@ Puede encontrar la fecha de expiración de su suscripción de prueba gratuita en
 
 Si su escuela no califica como una institución académica calificada de Microsoft, puede comprar ofertas comerciales en el centro de administración en la página **Servicios de compra** de \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">facturación.</a> Si su organización es un grupo sin ánimo de lucro, es posible que su grupo sea apto para suscripciones sin ánimo de lucro. Para obtener más información, consulta [Descuentos y donaciones para organizaciones sin ánimo de lucro.](https://www.microsoft.com/nonprofits/eligibility)
 
-Si tiene preguntas sobre la decisión de elegibilidad académica de su escuela, póngase [en contacto con el soporte técnico](../../admin/contact-support-for-business-products.md).
+Si tiene preguntas sobre la decisión de elegibilidad académica de su escuela, póngase [en contacto con el soporte técnico](../../business-video/get-help-support.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para obtener información sobre cómo implementar Microsoft 365 para su escuela, visite Documentación y recursos de [Microsoft 365 Educación.](/microsoft-365/education/deploy/) A continuación, [puede agregar usuarios y asignar licencias al mismo tiempo.](../../admin/add-users/add-users.md) Si es necesario, también puede comprar [más licencias para su suscripción.](../licenses/buy-licenses.md)
+Para obtener información sobre cómo implementar Microsoft 365 para su escuela, visite [Microsoft 365 Educación documentación y recursos](/microsoft-365/education/deploy/). A continuación, [puede agregar usuarios y asignar licencias al mismo tiempo.](../../admin/add-users/add-users.md) Si es necesario, también puede comprar [más licencias para su suscripción.](../licenses/buy-licenses.md)
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Documentación educativa de Microsoft 365 para administradores de TI (vínculos](/education/itadmins) de artículo)\
-[Microsoft Teams for Education](https://microsoft.com/education/products/teams/default.aspx) (página del producto)\
+[Microsoft 365 Educación documentación para administradores de TI (vínculos](/education/itadmins) de artículo)\
+[Microsoft Teams para Educación](https://microsoft.com/education/products/teams/default.aspx) (página del producto)\
 [Comprender las suscripciones y licencias en Microsoft 365 para empresas](../licenses/subscriptions-and-licenses.md) (artículo)\
 [Asignar licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md) (artículo)\
 [Comprar o quitar licencias de suscripción](../licenses/buy-licenses.md) (artículo)\

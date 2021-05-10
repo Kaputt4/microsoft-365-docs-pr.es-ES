@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f66c9821e5db00cc3da5718f52b8aaaeff5a431e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 5ea847e822e094049dd8f0b941f22f3bb4f7eff4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114759"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297181"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>Introducción a la respuesta a su primer incidente
 
@@ -58,6 +58,17 @@ Asegúrese de que su organización y Microsoft 365 inquilino esté [preparado pa
 
 ## <a name="see-also"></a>Vea también
 
+Instrucciones de respuesta a incidentes para Microsoft 365 Defender:
+
 - [Información general sobre incidentes](incidents-overview.md)
-- [Analizar incidentes](investigate-incidents.md)
+- [Investigar incidentes](investigate-incidents.md)
 - [Administrar incidentes](manage-incidents.md)
+
+Ejemplos adicionales de las primeras respuestas a incidentes:
+
+- [Correo de suplantación de identidad](first-incident-path-phishing.md)
+- [Ataque de base de identidad](first-incident-path-identity.md)
+
+[Libros de juegos de respuesta a incidentes detallados](https://docs.microsoft.com/security/compass/incident-response-playbooks)
+
+

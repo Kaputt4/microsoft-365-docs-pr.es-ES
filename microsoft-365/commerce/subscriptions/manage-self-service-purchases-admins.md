@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a administrar las compras de autoservicio realizadas por los usuarios de su organización.
-ms.openlocfilehash: 59d64c047ddf4f33c2ef3277f3139f1b7692b891
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 5378d14affd074bfad356fea4bb2adbd6ca104dd
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244997"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293576"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Administrar compras de autoservicio (administrador)
 
@@ -201,4 +201,4 @@ Cuando decide cancelar una suscripción de compra de autoservicio, los usuarios 
 
 Para obtener preguntas comunes acerca de las compras de autoservicio, consulta Preguntas más frecuentes sobre compras [de autoservicio.](self-service-purchase-faq.md)
 
-Si tiene preguntas o necesita ayuda con las compras de autoservicio, póngase [en contacto con el soporte técnico](../../admin/contact-support-for-business-products.md).
+Si tiene preguntas o necesita ayuda con las compras de autoservicio, póngase [en contacto con el soporte técnico](../../business-video/get-help-support.md).

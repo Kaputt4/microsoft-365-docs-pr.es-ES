@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 88001dc7126a55539213d4c560127d573a09f4bd
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 76bead8fd855e4119db6297d2ab1a3d08d64a48c
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114807"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297169"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Preparar la posición de seguridad para el primer incidente
 
@@ -45,7 +45,7 @@ Microsoft 365 Defender puede ayudar a abordar varios aspectos de la prevención 
 - Prevención de amenazas mediante evaluaciones de vulnerabilidad en [Administración de amenazas y vulnerabilidades](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Descripción de las amenazas de seguridad más recientes para que pueda prepararse para ellas
 
-## <a name="step-1-implement-zero-trust"></a>Paso 1. Implementar la confianza cero
+## <a name="step-1-implement-zero-trust"></a>Paso 1. Implementar la confianza cero
 
 [Zero Trust](https://docs.microsoft.com/security/zero-trust/) es una filosofía de seguridad integrada y una estrategia integral que tiene en cuenta la naturaleza compleja de cualquier entorno moderno, incluidos los trabajadores móviles y los usuarios, dispositivos, aplicaciones y datos, dondequiera que estén ubicados. Al proporcionar un único panel de cristal para administrar todas las detecciones de puntos de conexión de forma coherente, Microsoft 365 Defender puede facilitar que el equipo de operaciones de seguridad implemente los [principios](https://docs.microsoft.com/security/zero-trust/#guiding-principles-of-zero-trust) de guía de confianza cero. 
 
@@ -53,9 +53,9 @@ Los componentes de Microsoft 365 Defender pueden mostrar infracciones de reglas 
 
 El riesgo del dispositivo influye directamente en los recursos a los que podrá acceder el usuario de ese dispositivo. La denegación de acceso a los recursos según determinados criterios es el tema principal de La confianza cero y Microsoft 365 Defender proporciona la información necesaria para determinar los criterios de nivel de confianza. Por ejemplo, Microsoft 365 Defender puede proporcionar el nivel de versión de software de un dispositivo a través de la página Administración de amenazas y vulnerabilidades, mientras que las directivas de acceso condicional restringen los dispositivos que tienen versiones obsoletas o vulnerables.
 
-La automatización es una parte fundamental de la implementación y el mantenimiento de un entorno de confianza cero, al tiempo que se reduce el número de alertas que podrían dar lugar a eventos de respuesta a incidentes (IR). Los componentes de Microsoft 365 Defender se pueden automatizar, como acciones de corrección (conocidas como investigaciones de un incidente en el centro de seguridad de Microsoft 365), acciones de notificación e incluso la creación de vales de soporte técnico, como [en ServiceNow](https://microsoft.service-now.com/sp/).
+La automatización es una parte fundamental de la implementación y el mantenimiento de un entorno de confianza cero, al tiempo que se reduce el número de alertas que podrían dar lugar a eventos de respuesta a incidentes (IR). Los componentes de Microsoft 365 Defender se [](m365d-autoir.md) pueden automatizar, como acciones de corrección (conocidas como investigaciones de un incidente en el centro de seguridad de Microsoft 365), acciones de notificación e incluso la creación de vales de soporte técnico, como [en ServiceNow](https://microsoft.service-now.com/sp/).
 
-## <a name="step-2-determine-your-organizations-security-posture"></a>Paso 2. Determinar la posición de seguridad de la organización
+## <a name="step-2-determine-your-organizations-security-posture"></a>Paso 2. Determinar la posición de seguridad de la organización
 
 A continuación, las organizaciones pueden usar la puntuación segura de [Microsoft](microsoft-secure-score.md) en Microsoft 365 Defender para determinar su posición de seguridad actual y considerar recomendaciones sobre cómo mejorarla. Cuanto mayor sea la puntuación, más recomendaciones de seguridad y acciones de mejora han sido tomadas por la organización. Las recomendaciones de puntuación segura se pueden tomar en diferentes productos y permitir que las organizaciones eleven sus puntuaciones incluso más alto. 
 
@@ -92,5 +92,5 @@ Obtenga información sobre [cómo triage and analyze incidents](first-incident-a
 ## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
-- [Analizar incidentes](investigate-incidents.md)
+- [Investigar incidentes](investigate-incidents.md)
 - [Administrar incidentes](manage-incidents.md)

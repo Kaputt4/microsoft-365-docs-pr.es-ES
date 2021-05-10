@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo cancelar su suscripción de prueba o de pago a Microsoft 365 para empresas.
 ms.date: 04/08/2021
-ms.openlocfilehash: 15ab7ed31af24fa4cb1c83c6babc945871584375
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 329bc10adbe6c2ad0efe3609e7cb72141ae346bd
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244665"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297313"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
-*Idoneidad:* Si tiene menos de 25 licencias asignadas a usuarios, puede cancelar su suscripción de prueba o de pago a Microsoft 365 para empresas en línea en el Centro de administración de Microsoft 365 en cualquier momento. Si tiene más de 25 licencias asignadas a usuarios, puede reducirlas a menos de 25 o [llamar al soporte técnico para cancelar su suscripción](../../admin/contact-support-for-business-products.md).
+*Idoneidad:* Si tiene menos de 25 licencias asignadas a usuarios, puede cancelar su suscripción de prueba o de pago a Microsoft 365 para empresas en línea en el Centro de administración de Microsoft 365 en cualquier momento. Si tiene más de 25 licencias asignadas a usuarios, puede reducirlas a menos de 25 o [llamar al soporte técnico para cancelar su suscripción](../../business-video/get-help-support.md).
 
 *Reembolso:* cualquier crédito prorrateado se le devolverá en el próximo ciclo de facturación.
 

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 description: Aprenda a agregar y reducir el almacenamiento de archivos en su Microsoft 365 suscripción. Con el almacenamiento de archivos adicional, puede almacenar más contenido en SharePoint Online y OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: 576efee4ba0e1ad8fb43b3d8475d6c3a949ee1e8
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 14f72f59493be04165f0e7b28f26b14f8ae01a08
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107393"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293684"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Agregar espacio de almacenamiento para la suscripción
 
@@ -40,7 +40,7 @@ Si empieza a quedarse sin espacio de almacenamiento en las colecciones de sitios
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o SharePoint para realizar las tareas de este artículo. Para más información, consulte[Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o SharePoint para realizar las tareas de este artículo. Para más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="view-available-storage"></a>Ver almacenamiento disponible
 
@@ -71,7 +71,7 @@ Si aún no has comprado almacenamiento adicional para la suscripción, puedes ha
 
 ## <a name="increase-or-decrease-storage"></a>Aumentar o disminuir el almacenamiento
 
-Si ya compró almacenamiento de archivos adicional a través del complemento **Office 365 Extra File Storage,** puede usar estos pasos para aumentar o disminuir el espacio de almacenamiento adicional para su suscripción. Puede reducir el almacenamiento hasta 1 gigabyte. Para quitar todo el espacio de almacenamiento adicional, póngase [en contacto con el soporte técnico](../admin/contact-support-for-business-products.md).
+Si ya compró almacenamiento de archivos adicional a través del complemento **Office 365 Extra File Storage,** puede usar estos pasos para aumentar o disminuir el espacio de almacenamiento adicional para su suscripción. Puede reducir el almacenamiento hasta 1 gigabyte. Para quitar todo el espacio de almacenamiento adicional, póngase [en contacto con el soporte técnico](../business-video/get-help-support.md).
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la **pestaña** Productos, seleccione la suscripción que contiene **el Office 365 Extra File Storage** complemento.

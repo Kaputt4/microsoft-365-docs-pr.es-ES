@@ -22,21 +22,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2fe6c5b1b0feea2163c0a2bcc871921a885abb85
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ed597c55a646eb00d6e6d256c287b22c119f8148
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114987"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297349"
 ---
-# <a name="step-2-remediate-your-first-incident"></a>Paso 2. Corregir el primer incidente
+# <a name="step-2-remediate-your-first-incident"></a>Paso 2. Corregir el primer incidente
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender no solo proporciona capacidades de detección y análisis, sino que también proporciona contención y eliminación de malware. La contención incluye pasos para reducir el impacto del ataque, mientras que la eliminación garantiza que todos los seguimientos de la actividad del atacante se quiten de la red.  Microsoft 365 Defender ofrece varias acciones de corrección que se pueden configurar para corregir automáticamente según el sistema operativo y el tipo de ataque.
+Microsoft 365 Defender no solo proporciona capacidades de detección y análisis, sino que también proporciona contención y eliminación de malware. La contención incluye pasos para reducir el impacto del ataque, mientras que la eliminación garantiza que todos los seguimientos de la actividad del atacante se quiten de la red.  Microsoft 365 Defender ofrece varias acciones de corrección que se pueden configurar para [corregir](m365d-autoir.md) automáticamente según el sistema operativo y el tipo de ataque.
 
 Microsoft 365 Defender ofrece varias acciones de corrección que los analistas pueden iniciar manualmente. Las acciones se separan en dos categorías: Acciones en dispositivos y Acciones en archivos. Algunas acciones se pueden usar para detener inmediatamente la amenaza, mientras que otras ayudan a realizar más análisis forenses.
 
@@ -98,5 +98,5 @@ Obtenga información sobre cómo [realizar una revisión posterior al incidente 
 ## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
-- [Analizar incidentes](investigate-incidents.md)
+- [Investigar incidentes](investigate-incidents.md)
 - [Administrar incidentes](manage-incidents.md)

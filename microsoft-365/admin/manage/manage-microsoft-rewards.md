@@ -15,17 +15,18 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
+ROBOTS: NOINDEX, NOFOLLOW
 description: Los usuarios que tienen cuentas personales de Microsoft pueden obtener puntos de Microsoft Rewards en relación con sus búsquedas de trabajo si la característica Vincular AAD con Recompensas está habilitada.
-ms.openlocfilehash: 7ae88c9fd355251c47747ef8460bab1f0b30bbaa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 92a319d5917c49f0457a560fe52212608bd26dc2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929520"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297073"
 ---
 # <a name="manage-microsoft-rewards"></a>Administrar Microsoft Rewards
 
-Los usuarios que tienen cuentas personales de Microsoft pueden obtener puntos de [Microsoft Rewards](https://www.microsoft.com/rewards) en relación con sus búsquedas de trabajo si la característica Vincular Microsoft Azure Active *Directory (Azure AD)* con Recompensas está habilitada.
+Los usuarios que tienen cuentas personales de Microsoft pueden obtener puntos de [Microsoft Rewards](https://www.microsoft.com/rewards) en relación con sus búsquedas de trabajo si la característica Vincular *Microsoft Azure Active Directory (Azure AD)* con Recompensas está habilitada.
 
 A menos que el usuario opte por no participar en esta característica, su cuenta personal de Microsoft se asociará con su cuenta de Azure AD en el lugar de trabajo. Microsoft Rewards recibe y registra información de que se ha producido una búsqueda, pero no recibe información sobre el contenido de la búsqueda. El contenido de las consultas de su organización no se compartirá con Microsoft Rewards como parte de esta característica.
 

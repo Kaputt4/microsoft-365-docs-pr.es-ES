@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e56d6d5d78101da1f6da4c14ade25e80aa5b5063
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: c028289a58247075c33e85d6d6f3797b3ddad7b4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114855"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297193"
 ---
 # <a name="example-of-an-identity-based-attack"></a>Ejemplo de un ataque basado en identidad
 
@@ -95,4 +95,4 @@ Consulta la ruta [de la investigación de suplantación](first-incident-path-phi
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Administrar incidentes](manage-incidents.md)
-- [Analizar incidentes](investigate-incidents.md)
+- [Investigar incidentes](investigate-incidents.md)

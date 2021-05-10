@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre las cuentas de facturación y cómo administrarlas.
 ms.date: 03/17/2021
-ms.openlocfilehash: 504811e8cdfb84569a4bc3cea021c3c37030fca7
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: ecac005b8b49739cb74efc4ca2fae44667f37bad
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107585"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293648"
 ---
 # <a name="manage-billing-accounts"></a>Administrar cuentas de facturación
 
@@ -56,7 +56,7 @@ En la tabla siguiente se enumeran los términos importantes que se ven en la pá
 | Perfiles de facturación | Un perfil de facturación define las propiedades de la factura, como quién recibe la factura, cómo se entrega la factura, los términos de pago y un número de pedido. Para distribuir la facturación en toda la organización, puede crear varios perfiles de facturación e identificar el perfil de facturación adecuado en el momento de la compra. Para obtener más información sobre los perfiles de facturación y cómo usarlos para crear opciones de facturación más flexibles para su organización, comprenda los perfiles [de facturación](billing-and-payments/manage-billing-profiles.md). |
 
 > [!NOTE]
-> Si necesita cambiar el **nombre** o la dirección vendidos, pero no ve un vínculo **Editar,** debe ponerse en contacto con el soporte técnico [para](../admin/contact-support-for-business-products.md) cambiarlo. Las solicitudes para un cambio **de nombre** vendido requerirán una comprobación de crédito. Complete [este formulario](https://www.microsoft.com/download/details.aspx?id=102732)y esté listo para compartir uno de los siguientes documentos con Microsoft al ponerse en contacto con el soporte técnico:
+> Si necesita cambiar el **nombre** o la dirección vendidos, pero no ve un vínculo **Editar,** debe ponerse en contacto con el soporte técnico [para](../business-video/get-help-support.md) cambiarlo. Las solicitudes para un cambio **de nombre** vendido requerirán una comprobación de crédito. Complete [este formulario](https://www.microsoft.com/download/details.aspx?id=102732)y esté listo para compartir uno de los siguientes documentos con Microsoft al ponerse en contacto con el soporte técnico:
 >
 > - Documento emitido por el gobierno o carta de registro
 > - Imprimir del registro de la empresa local

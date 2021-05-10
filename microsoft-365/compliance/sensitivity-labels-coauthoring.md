@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Active una configuración que permita la coautoría y el autoguardado en las aplicaciones de escritorio para documentos etiquetados y cifrados en SharePoint y OneDrive.
-ms.openlocfilehash: 990ab13508565fb910abe0d5e759a93e54766915
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4b2c4551579d2609b66b5cd8fa8857f98b966a7d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245725"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297265"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Habilitar la coautoría para archivos cifrados con etiquetas de confidencialidad
 
@@ -173,7 +173,7 @@ Cuando haya habilitado la coautoría para archivos con etiquetas de confidencial
 
 ![Opción que muestra la coautoría activada para etiquetas de confidencialidad](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-Como puede ver en la captura de pantalla cuando esta configuración se ha activado, puede ponerse en contacto con el [Soporte técnico de Microsoft](/office365/admin/contact-support-for-business-products) y solicitar desactivar esta configuración. Esta solicitud puede tardar varios días y necesitará demostrar que es un administrador global de su espacio empresarial. Se aplicarán los cargos de soporte técnico habituales. 
+Como puede ver en la captura de pantalla cuando esta configuración se ha activado, puede ponerse en contacto con el [Soporte técnico de Microsoft](../business-video/get-help-support.md) y solicitar desactivar esta configuración. Esta solicitud puede tardar varios días y necesitará demostrar que es un administrador global de su espacio empresarial. Se aplicarán los cargos de soporte técnico habituales. 
 
 Si un ingeniero de soporte técnico deshabilita esta configuración para su espacio empresarial:
 

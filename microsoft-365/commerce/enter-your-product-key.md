@@ -23,12 +23,12 @@ ms.custom:
 ms.reviewer: jkinma
 description: Obtén información sobre cómo canjear una Microsoft 365 Empresa Estándar de producto comprada en una tienda comercial.
 ms.date: 11/13/2020
-ms.openlocfilehash: 0e647b8d52d024750b3944a03133755c1257ee4c
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: ed9fb3c1ecc02930f55ddc11c523cf5989d6bbbe
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107453"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297325"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Escriba la clave de producto para Microsoft 365 Empresa Estándar
 
@@ -67,4 +67,4 @@ Si no es nuevo en Microsoft 365 para empresas, obtenga información sobre cómo 
 
 Consulte esta lista de errores y soluciones comunes: ¿Problemas con su [clave de producto Microsoft 365 para empresas?](product-key-errors-and-solutions.md)
   
-O bien, [llama al soporte técnico de Microsoft](../admin/contact-support-for-business-products.md).
+O bien, [llama al soporte técnico de Microsoft](../business-video/get-help-support.md).

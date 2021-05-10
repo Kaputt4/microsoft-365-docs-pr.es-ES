@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ce709131b7a2e25a352a2cdafdf0bb79c98b4f3b
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 00e1bdfce00cc3a0a83bc89d5b1639764a4b2aaa
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544329"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297697"
 ---
 # <a name="contact-support-for-solomon-islands"></a>Póngase en contacto con el soporte técnico de Islas Salomón
 
-[Buscar otro país o región](../contact-support-for-business-products.md).
+[Buscar otro país o región](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 +1 312 843 5148
