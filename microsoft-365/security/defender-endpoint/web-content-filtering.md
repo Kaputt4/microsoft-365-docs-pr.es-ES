@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c9a069deded237c5ded6bcd9f6c6a77f644e65a2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 47211e187d1f9f883745f008c6d94d04ee762e98
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689346"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302069"
 ---
 # <a name="web-content-filtering"></a>Filtrado de contenido web
 
@@ -36,7 +36,8 @@ ms.locfileid: "51689346"
 > Esta versión preliminar se proporciona sin un contrato de nivel de servicio y no se recomienda para cargas de trabajo de producción. Es posible que algunas características no sean compatibles o que tengan capacidades limitadas.
 > Para obtener más información, vea Características de vista previa [de Microsoft Defender para endpoint](preview.md).
 
->¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> [!TIP]
+> ¿Desea experimentar Microsoft Defender para endpoint? [Regístrate para obtener una versión de prueba gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 El filtrado de contenido web forma parte de [las funciones de protección web](web-protection-overview.md) en Microsoft Defender para endpoint. Permite a la organización realizar un seguimiento y regular el acceso a sitios web en función de sus categorías de contenido. Muchos de estos sitios web, aunque no son malintencionados, pueden ser problemáticos debido a las normativas de cumplimiento, el uso del ancho de banda u otras preocupaciones.
 
@@ -47,36 +48,32 @@ El filtrado de contenido web está disponible en los principales exploradores we
 Resumen de las ventajas:
 
 - Se impide que los usuarios accedan a sitios web en categorías bloqueadas, ya sea que estén explorando localmente o lejos
-- Implementar directivas para grupos de usuarios que usan grupos de dispositivos definidos en [Microsoft Defender para la](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/rbac) configuración de control de acceso basado en roles de punto de conexión
-- Acceder a informes web en la misma ubicación central, con visibilidad sobre los bloques reales y el uso web
+- El equipo de seguridad puede implementar directivas cómodamente en grupos de usuarios que usan grupos de dispositivos definidos en La configuración del control de acceso basado en roles de [Microsoft Defender](/microsoft-365/security/defender-endpoint/rbac) para endpoint
+- El equipo de seguridad puede tener acceso a los informes web en la misma ubicación central, con visibilidad sobre los bloques reales y el uso web
 
 ## <a name="user-experience"></a>Experiencia del usuario
 
-La protección de red proporciona la experiencia de bloqueo de los exploradores compatibles con terceros, que proporciona una notificación del sistema que notifica al usuario de una conexión bloqueada. 
-
-Para una experiencia más fácil de usar en el explorador, considere el uso de Microsoft Edge.
+La protección de red proporciona la experiencia de bloqueo de los exploradores compatibles con terceros, que proporciona una notificación del sistema que notifica al usuario de una conexión bloqueada. Para una experiencia más fácil de usar en el explorador, considere la posibilidad de usar Microsoft Edge.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 Antes de probar esta característica, asegúrese de que tiene los siguientes requisitos:
 
-- Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security add-on o la licencia independiente de Microsoft Defender para Endpoint. 
-- Acceso al portal del Centro de seguridad de Microsoft Defender
-- Dispositivos que ejecutan Windows 10 Anniversary Update (versión 1607) o posterior con la última actualización de MoCAMP.
+- Windows 10 Enterprise E5, Microsoft 365 E5, Seguridad de Microsoft 365 E5, Microsoft 365 E3 + Seguridad de Microsoft 365 E5 complemento o la licencia independiente de Microsoft Defender para endpoint. 
+- Acceso a Centro de seguridad de Microsoft Defender portal ( https://securitycenter.windows.com) .
+- Dispositivos que Windows 10 actualización de aniversario (versión 1607) o posterior con la actualización más reciente de MoCAMP.
 
-Si Windows Defender SmartScreen no está activado, Protección de red asumirá el bloqueo. Requiere habilitar [la protección de red](enable-network-protection.md) en el dispositivo. Chrome, Firefox, Brave y Opera son actualmente exploradores de terceros en los que esta característica está habilitada.
+## <a name="data-handling"></a>Control de datos
 
-## <a name="data-handling"></a>Tratamiento de datos
-
-Seguiremos la región que haya elegido usar como parte de la configuración de administración de datos de [Microsoft Defender para endpoint.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/data-storage-privacy) Los datos no abandonarán el centro de datos en esa región. Además, sus datos no se compartirán con terceros, incluidos nuestros proveedores de datos.
+Seguiremos la región que haya elegido usar como parte de la configuración de administración de datos de [Microsoft Defender para endpoint.](data-storage-privacy.md) Los datos no abandonarán el centro de datos en esa región. Además, sus datos no se compartirán con terceros, incluidos nuestros proveedores de datos.
 
 ## <a name="turn-on-web-content-filtering"></a>Activar el filtrado de contenido web
 
-En el menú de navegación izquierdo, seleccione **Configuración > General > Características avanzadas**. Desplácese hacia abajo hasta que vea la entrada para el filtrado **de contenido web**. Cambie la alternancia a **Las preferencias Activar** **y Guardar**.
+En el menú de navegación izquierdo, **seleccione Configuración**  >  **General**  >  **Advanced Features**. Desplácese hacia abajo hasta que vea la entrada para el filtrado **de contenido web**. Cambie la alternancia a **Las preferencias Activar** **y Guardar**.
 
 ### <a name="configure-web-content-filtering-policies"></a>Configurar directivas de filtrado de contenido web
 
-Las directivas de filtrado de contenido web especifican qué categorías de sitio están bloqueadas en qué grupos de dispositivos. Para administrar las directivas, vaya **a Configuración > reglas > filtrado de contenido web**.
+Las directivas de filtrado de contenido web especifican qué categorías de sitio están bloqueadas en qué grupos de dispositivos. Para administrar las directivas, vaya a **Configuración** Reglas de filtrado  >    >  **de contenido web**.
 
 Usa el filtro para buscar directivas que contengan determinadas categorías bloqueadas o que se apliquen a grupos de dispositivos específicos.
 
@@ -85,12 +82,17 @@ Usa el filtro para buscar directivas que contengan determinadas categorías bloq
 Para agregar una nueva directiva:
 
 1. Seleccione **Agregar directiva en** la página Filtrado de **contenido** web en **Configuración**.
+
 2. Especifique un nombre.
+
 3. Seleccione las categorías que desea bloquear. Use el icono expandir para expandir completamente cada categoría principal y seleccionar categorías de contenido web específicas.
+
 4. Especifique el ámbito de directiva. Selecciona los grupos de dispositivos para especificar dónde aplicar la directiva. Solo se impedirá el acceso a los sitios web de los grupos de dispositivos seleccionados en las categorías seleccionadas.
+
 5. Revise el resumen y guarde la directiva. La actualización de la directiva puede tardar hasta 2 horas en aplicarse a los dispositivos seleccionados.
 
-Sugerencia: Puedes implementar una directiva sin seleccionar ninguna categoría en un grupo de dispositivos. Esta acción creará una directiva de solo auditoría para ayudarle a comprender el comportamiento de los usuarios antes de crear una directiva de bloqueo.
+> [!TIP]
+> Puedes implementar una directiva sin seleccionar ninguna categoría en un grupo de dispositivos. Esta acción creará una directiva de solo auditoría para ayudarle a comprender el comportamiento de los usuarios antes de crear una directiva de bloqueo.
 
 >[!NOTE]
 >Si quita una directiva o cambia los grupos de dispositivos al mismo tiempo, esto puede provocar un retraso en la implementación de directivas.
@@ -102,15 +104,17 @@ Sugerencia: Puedes implementar una directiva sin seleccionar ninguna categoría 
 
 Es posible invalidar la categoría bloqueada en el filtrado de contenido web para permitir un solo sitio mediante la creación de una directiva de indicador personalizada. La directiva de indicador personalizado reemplazará la directiva de filtrado de contenido web cuando se aplique al grupo de dispositivos en cuestión.
 
-1. Para crear un indicador personalizado en el Centro de seguridad de Microsoft Defender, vaya a **Dirección** URL de  >  **indicadores** de  >  **configuración/Elemento de**  >  **adición de dominio**
-2. Escriba el dominio del sitio
+1. Para crear un indicador personalizado en el Centro de seguridad de Microsoft Defender, vaya a **Configuración**  >  **Indicadores**  >  **URL/Elemento agregar**  >  **dominio**.
+
+2. Escriba el dominio del sitio.
+
 3. Establezca la acción de directiva en **Permitir**.  
 
 ### <a name="reporting-inaccuracies"></a>Imprecisiones de informes
 
-Si encuentra un dominio que se ha categorizado incorrectamente, puede notificar imprecisiones directamente desde la página De informes de filtrado de contenido web. Esta característica solo está disponible en el nuevo centro de seguridad de Microsoft 365 (security.microsoft.com).
+Si encuentra un dominio que se ha categorizado incorrectamente, puede notificar imprecisiones directamente desde la página De informes de filtrado de contenido web. Esta característica solo está disponible en el nuevo centro de Microsoft 365 seguridad (security.microsoft.com).
 
-Para notificar una imprecisión, vaya a **Informes > protección web**> detalles de filtrado de contenido web > dominios . En la pestaña dominios de nuestros informes de filtrado de contenido web, verá puntos suspensivos junto a cada uno de los dominios. Mantenga el puntero sobre estos puntos suspensivos y seleccione **Error de informe**.
+Para informar de una imprecisión, vaya a **Reports**  >  **Web protection Web** Content Filtering  >  **Details**  >  **Domains**. En la pestaña dominios de nuestros informes de filtrado de contenido web, verá puntos suspensivos junto a cada uno de los dominios. Mantenga el puntero sobre estos puntos suspensivos y seleccione **Error de informe**.
 
 Se abrirá un panel donde puede seleccionar la prioridad y agregar detalles adicionales, como la categoría sugerida para volver a categorizar. Una vez completado el formulario, seleccione **Enviar**. Nuestro equipo revisará la solicitud en un plazo de un día laborable. Para desbloquear inmediatamente, cree un [indicador de permitir personalizado](indicator-ip-domain.md).
 
@@ -156,11 +160,11 @@ Use el filtro de intervalo de tiempo en la parte superior izquierda de la págin
 
 ### <a name="limitations-and-known-issues-in-this-preview"></a>Limitaciones y problemas conocidos en esta versión preliminar
 
-- Solo se admite Microsoft Edge si la configuración del sistema operativo del dispositivo es Server (cmd > Systeminfo > configuración del sistema operativo). La protección de red solo se admite en el modo Inspeccionar en dispositivos de servidor, que es responsable de proteger el tráfico en los exploradores de terceros compatibles.
+- Solo Microsoft Edge se admite si la configuración del sistema operativo del dispositivo es Server (**cmd**  >  **Systeminfo**  >  **OS Configuration**). La protección de red solo se admite en el modo Inspeccionar en dispositivos de servidor, que es responsable de proteger el tráfico en los exploradores de terceros compatibles.
 
-- Los dispositivos sinsignar tendrán datos incorrectos que se mostrarán en el informe. En el pivot Detalles del > grupos de dispositivos, es posible que veas una fila con un campo Grupo de dispositivos en blanco. Este grupo contiene los dispositivos sinsignación antes de que se coloquen en el grupo especificado. Es posible que el informe de esta fila no contenga un recuento preciso de dispositivos o recuentos de acceso.
+- Los dispositivos sinsignar tendrán datos incorrectos que se mostrarán en el informe. En el **pivot Detalles del** informe Grupos de dispositivos, es posible que  >   veas una fila con un campo Grupo de dispositivos en blanco. Este grupo contiene los dispositivos sinsignación antes de que se coloquen en el grupo especificado. Es posible que el informe de esta fila no contenga un recuento preciso de dispositivos o recuentos de acceso.
 
-- Actualmente, los informes de filtrado de contenido web están limitados a mostrar los 5000 registros principales. Por ejemplo, el informe "Dominios" solo mostrará un máximo de los 5000 dominios principales para una consulta de filtro determinada, si procede. 
+- Actualmente, los informes de filtrado de contenido web están limitados a mostrar los 5000 registros principales. Por ejemplo, el informe Dominios solo mostrará un máximo de los 5000 dominios principales para una consulta de filtro determinada, si procede. 
 
 ## <a name="related-topics"></a>Temas relacionados
 

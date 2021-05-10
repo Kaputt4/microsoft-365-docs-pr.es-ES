@@ -14,22 +14,22 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Información general de Temas Viva.
-ms.openlocfilehash: 1d66751d55c0144149fa8325e89be404e3df19ed
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: ecd090036f35a3cfdaffe532c800244c8174183b
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281034"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302129"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Información general de Temas Microsoft Viva 
 
-Viva Topics usa la tecnología de inteligencia artificial de Microsoft, Microsoft 365, Microsoft Graph, Búsqueda y otros componentes y servicios para aportar conocimiento a los usuarios en aplicaciones de Microsoft 365 que usan todos los días, empezando por SharePoint páginas modernas, Búsqueda de Microsoft y Búsqueda en Word y PowerPoint.
+Viva Topics usa la tecnología de inteligencia artificial de Microsoft, Microsoft 365, Microsoft Graph, Búsqueda y otros componentes y servicios para acercar conocimientos Microsoft 365 los usuarios en aplicaciones que usan todos los días, empezando por SharePoint páginas modernas, Búsqueda de Microsoft y Búsqueda en Word, PowerPoint, Outlook y Excel.
 
-</br>
+<br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
 
-</br>
+<br/>
 
 Temas Viva ayuda a solucionar un importante problema comercial de muchas empresas, proporcionando información a los usuarios cuando la necesitan. Por ejemplo, los nuevos empleados necesitan obtener mucha información nueva rápidamente y se encuentran con términos que no conocen al leer el contenido de la compañía. Para obtener más información, es posible que el usuario deba dejar lo que está haciendo y dedicar un tiempo valioso a buscar detalles, como información sobre qué es el término, quién en la organización es un experto en la materia y quizás sitios y documentos relacionados con el término.
 
@@ -42,7 +42,7 @@ Cuando se menciona un tema en el contenido de noticias y páginas de SharePoint,
 
    ![Contenido destacado del tema](../media/knowledge-management/saturn.png) 
 
-Al usar La búsqueda en Word o PowerPoint, ya sea a  través del cuadro de búsqueda o seleccionando Buscar en el menú contextual, los resultados que se muestran también pueden mostrar el resumen del tema.
+Cuando se usa la búsqueda en Word, PowerPoint, Outlook o Excel, ya sea a través del cuadro de búsqueda o seleccionando **Buscar** en el menú contextual, los resultados que se muestran también pueden mostrar el resumen del tema.
 
    ![Captura de pantalla que muestra la búsqueda en Word a través del cuadro Buscar.](../media/knowledge-management/word-search-2.png)
 
@@ -71,7 +71,7 @@ Cuando se identifica un tema y la inteligencia artificial determina que tiene su
 
 Los administradores de información pueden rastrear todos los sitios de SharePoint de su espacio empresarial por temas o seleccionar algunos determinados.
 
-Consulte [Detección y conservación de los temas](./topic-experiences-discovery-curation.md)
+Vea [Detección de temas y curación](./topic-experiences-discovery-curation.md).
 
 ## <a name="roles"></a>Funciones
 
@@ -97,7 +97,7 @@ Los gestores de información pueden realizar las siguientes acciones:
 
 - Confirmar o quitar los temas detectados en su espacio empresarial.
 - Crear nuevos temas manualmente según sea necesario (por ejemplo, si no se ha proporcionado suficiente información para que lo detecte la inteligencia artificial).
-- Editar páginas de temas existentes.</br>
+- Editar páginas de temas existentes.<br/>
 
 Consulte [Administrar temas en el centro de temas](manage-topics.md) para obtener más información.  
 
@@ -125,7 +125,8 @@ Es posible que se pregunte a los usuarios a los que permite acceder a ver temas 
 
 Además, los usuarios con los permisos adecuados pueden etiquetar elementos, como la conversación de Yammer, que sean relevantes para un tema y agregarlos a un tema específico. 
 
-Consulte [Detección y conservación de los temas](./topic-experiences-discovery-curation.md)
+Vea [Detección de temas y curación](./topic-experiences-discovery-curation.md).
 
-
-## <a name="see-also"></a>Consulte también
+<!--
+## See also
+-->

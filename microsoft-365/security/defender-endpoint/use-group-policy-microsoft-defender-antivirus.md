@@ -10,18 +10,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/07/2021
+ms.date: 05/08/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 81cba445482b1fceb8bd520f2be88d55db2a47fb
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 74f58959c22313806ebc95aef14e8ccb2d75326b
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296736"
+ms.locfileid: "52302105"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Usar la configuración de directiva de grupo para configurar y administrar Antivirus de Microsoft Defender
 
@@ -55,7 +55,7 @@ En general, puede usar el siguiente procedimiento para configurar o cambiar la c
 En la tabla siguiente de este tema se enumeran las opciones de configuración de directiva de grupo disponibles en Windows 10, versión 1703, y se proporcionan vínculos al tema correspondiente en esta biblioteca de documentación (cuando corresponda). 
 
 > [!TIP]
-> Descargue la hoja de cálculo de referencia Configuración directiva de grupo [para Windows 10 de mayo de 2020 (2004).](https://www.microsoft.com/download/101451) Esta hoja de cálculo enumera la configuración de directiva para las configuraciones de equipo y usuario que se incluyen en los archivos de plantilla administrativa entregados para la actualización de mayo de 2020 (2004) para Windows 10 mayo de 2020. Puede configurar estas opciones de directiva al editar objetos de directiva de grupo.
+> Descargue la hoja de cálculo de referencia Configuración directiva de grupo [para Windows 10 de mayo de 2020 (2004).](https://www.microsoft.com/download/101451) Esta hoja de cálculo enumera la configuración de directiva para las configuraciones de equipo y usuario que se incluyen en los archivos de plantilla administrativa entregados para la actualización de mayo de 2020 (2004) para Windows 10 mayo de 2020. Puede configurar hacer referencia a la hoja de cálculo al editar objetos de directiva de grupo.
 
 | Ubicación | Configuración | Artículo |
 |:---|:---|:---|

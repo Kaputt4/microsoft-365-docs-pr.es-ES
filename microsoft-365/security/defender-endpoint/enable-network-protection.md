@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5c7a2d943ec1813623065e70330b914a3911d1eb
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: a2bc36f9d3a3e9179f07662da8d97f4c55e72a24
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769003"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302057"
 ---
 # <a name="turn-on-network-protection"></a>Habilitar protección de red
 
@@ -43,7 +43,7 @@ Compruebe si la protección de red se ha habilitado en un dispositivo local medi
 
 2. Elija **HKEY_LOCAL_MACHINE** en el menú lateral
 
-3. Navegue por los menús anidados a **Directivas de SOFTWARE** de  >    >  **Microsoft**  >  **Windows Defender** Windows Defender Protección  >  **de red de Protección contra**  >  **vulnerabilidades de seguridad**
+3. Navegue por los menús anidados hasta **Directivas**  >  **de**  >  **SOFTWARE Microsoft**  >  **Windows Defender**  >  **Policy Manager** 
 
 4. Selecciona **EnableNetworkProtection** para ver el estado actual de la protección de red en el dispositivo
 
@@ -59,12 +59,12 @@ Habilite la protección de red mediante cualquiera de estos métodos:
 
 * [PowerShell](#powershell)
 * [Administración de dispositivos móviles (MDM)](#mobile-device-management-mdm)
-* [Microsoft Endpoint Manager /Intune](#microsoft-endpoint-manager-formerly-intune)
+* [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
 * [Directiva de grupo](#group-policy)
 
 ### <a name="powershell"></a>PowerShell
 
-1. Escriba **powershell** en el menú Inicio, haga clic con el Windows PowerShell **y** seleccione Ejecutar como **administrador**
+1. Escriba **powershell** en el menú Inicio, haga clic con el botón Windows PowerShell **y** seleccione Ejecutar como **administrador**
 2. Escriba el siguiente cmdlet:
 
     ```PowerShell
@@ -85,11 +85,11 @@ Use [el proveedor ./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](
 
 ### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (anteriormente Intune)
 
-1. Inicie sesión en el Centro de administración de Microsoft Endpoint Manager (https://endpoint.microsoft.com)
+1. Inicie sesión en el centro Microsoft Endpoint Manager de administración (https://endpoint.microsoft.com)
 
 2. Crear o editar un perfil de [configuración de endpoint protection](/mem/intune/protect/endpoint-protection-configure)
 
-3. En **Configuración del** flujo de perfiles, vaya a Protección de red de filtrado de protección de red de Microsoft Defender Exploit **Guard**  >    >    >  **Habilitar** o **auditar solo**
+3. En **Configuración Configuración** en el flujo de perfiles, vaya a Protección contra vulnerabilidades de seguridad de Microsoft Defender  >  **Network filtering** Network  >  **protection**  >  **Enable** or **Audit only**
 
 ### <a name="group-policy"></a>Directiva de grupo
 
@@ -101,17 +101,17 @@ Use el siguiente procedimiento para habilitar la protección de red en equipos u
 
     En un equipo de administración de directivas de grupo unido a un dominio, abra la Consola de administración de directivas de grupo [,](https://technet.microsoft.com/library/cc731212.aspx)haga clic con el botón secundario en el objeto de directiva de grupo que desea configurar y **seleccione Editar**.
 
-2. En el **Editor de administración de directivas de** grupo, vaya a Configuración del equipo **y** seleccione **Plantillas administrativas.**
+2. En el **Editor de administración de directiva de grupo**, vaya a **Configuración del equipo** y seleccione **Plantillas administrativas**.
 
-3. Expande el árbol a **Componentes de Windows** Antivirus de Microsoft Defender  >  **Windows Defender** protección de la red de  >  **Protección** contra  >  **vulnerabilidades de seguridad**.
+3. Expanda el árbol para Windows **componentes Antivirus de Microsoft Defender** Windows Defender protección de la red  >    >  **de Protección**  >  **contra vulnerabilidades de seguridad**.
 
 > [!NOTE]
-> En versiones anteriores de Windows, la ruta de acceso de directiva de grupo puede decir "Windows Defender Antivirus" en lugar de "Antivirus de Microsoft Defender".
+> En versiones anteriores de Windows, la ruta de acceso de directiva de grupo puede decir "Antivirus de Windows Defender" en lugar de "Antivirus de Microsoft Defender".
 
 4. Haz doble clic en la configuración **Impedir que los usuarios y aplicaciones** tengan acceso a sitios web peligrosos y establece la opción en **Habilitado**. En la sección opciones, debe especificar una de las siguientes opciones:
     * **Bloquear:** los usuarios no pueden acceder a direcciones IP malintencionadas y dominios
     * **Deshabilitar (predeterminado):** la característica de protección de red no funcionará. Los usuarios no se bloquearán para acceder a dominios malintencionados
-    * **Modo auditoría:** si un usuario visita una dirección IP malintencionada o un dominio, se registrará un evento en el registro de eventos de Windows. Sin embargo, no se bloqueará al usuario para que visite la dirección.
+    * **Modo auditoría:** si un usuario visita una dirección IP malintencionada o un dominio, se registrará un evento en el Windows de eventos. Sin embargo, no se bloqueará al usuario para que visite la dirección.
 
 > [!IMPORTANT]
 > Para habilitar completamente la protección de red, debe establecer la opción Directiva de grupo en **Habilitado** y también seleccionar **Bloquear** en el menú desplegable opciones.

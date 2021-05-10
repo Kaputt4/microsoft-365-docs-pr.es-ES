@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Obtenga información general sobre cómo su organización está adoptando Microsoft 365 para comunicarse y colaborar.
-ms.openlocfilehash: 7d267dcbbb35a03794567991fddb2e3a573d47dc
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: ac54e8bbc24393b7140fbc32efd48047beca2a1c
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297397"
+ms.locfileid: "52301745"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Análisis de uso de Microsoft 365
 
@@ -89,6 +89,9 @@ Los informes de actividad de usuario están disponibles para determinados servic
 No es gratuito, necesitará una Power BI Pro licencia. Para obtener más información, consulta [requisitos previos](/power-bi/service-template-apps-install-distribute#prerequisites) para instalar, personalizar y distribuir una aplicación de plantilla.
 
 Para compartir los paneles con otros usuarios, vea más información en [Compartir paneles e informes.](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports)
+### <a name="is-the-usage-summary-reports-reader-role-enough-to-view-the-usage-analytics"></a>¿El rol Lector de informes de resumen de uso es suficiente para ver el análisis de uso?
+
+El rol Lector de informes de resumen de uso solo permite el acceso a agregados de nivel de inquilino en Microsoft 365 análisis de uso.  Se recomienda el rol Lector de informes o Lector de informes de resumen de uso a cualquier persona responsable de la administración y adopción de cambios, pero no necesariamente un administrador de TI.
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>¿Quién puede conectarse a análisis de uso de Microsoft 365?
 

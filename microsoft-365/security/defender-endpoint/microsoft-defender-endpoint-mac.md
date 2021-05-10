@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b5af93e82f72bac900682b2e231453e448b267d9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 365fed8b5f7c7fc617ea068e324da541f7f1b187
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934194"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301781"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender para endpoint en Mac
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934194"
 En este tema se describe cómo instalar, configurar, actualizar y usar Defender para Endpoint en Mac.
 
 > [!CAUTION]
-> Es probable que la ejecución de otros productos de protección de puntos de conexión de terceros junto con Microsoft Defender para Endpoint en Mac lleve a problemas de rendimiento y efectos secundarios impredecibles. Si la protección de extremo que no es de Microsoft es un requisito absoluto en su entorno, puede aprovechar de forma segura la funcionalidad de Defender para endpoint en Mac EDR después de configurar la funcionalidad antivirus para que se ejecute en modo [pasivo.](mac-preferences.md#enable--disable-passive-mode)
+> Es probable que la ejecución de otros productos de protección de puntos de conexión de terceros junto con Microsoft Defender para Endpoint en Mac lleve a problemas de rendimiento y efectos secundarios impredecibles. Si la protección de extremo que no es de Microsoft es un requisito absoluto en su entorno, puede aprovechar de forma segura la funcionalidad de Defender para Endpoint en Mac EDR después de configurar la funcionalidad antivirus para que se ejecute en modo [pasivo.](mac-preferences.md#enable--disable-passive-mode)
 
 ## <a name="whats-new-in-the-latest-release"></a>Novedades de la versión más reciente
 
@@ -50,13 +50,13 @@ En este tema se describe cómo instalar, configurar, actualizar y usar Defender 
 > [!TIP]
 > Si tienes algún comentario que quieras compartir, envíalo abriendo Microsoft Defender para Endpoint en Mac en el dispositivo y navegando a **Ayuda** para  >  **enviar comentarios.**
 
-Para obtener las características más recientes, incluidas las funcionalidades de vista previa (como la detección de puntos de conexión y la respuesta para los dispositivos Mac), configura el dispositivo macOS que ejecuta Microsoft Defender para Endpoint para que sea un dispositivo "Insider".
+Para obtener las características más recientes, incluidas las funcionalidades de vista previa (como detección y respuesta de puntos de conexión para los dispositivos Mac), configura el dispositivo macOS que ejecuta Microsoft Defender para Endpoint para que sea un dispositivo "Insider".
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Cómo instalar Microsoft Defender para Endpoint en Mac
 
 ### <a name="prerequisites"></a>Requisitos previos
 
-- Una suscripción a Defender for Endpoint y acceso al portal del Centro de seguridad de Microsoft Defender
+- Una suscripción a Defender for Endpoint y acceso al portal de Centro de seguridad de Microsoft Defender web
 - Experiencia de nivel principiante en scripting de macOS y BASH
 - Privilegios administrativos en el dispositivo (en caso de implementación manual)
 
@@ -98,10 +98,12 @@ Microsoft Defender para Endpoint en Mac requiere una de las siguientes ofertas d
 - Microsoft 365 E5 (M365 E5)
 - Seguridad de Microsoft 365 E5
 - Microsoft 365 A5 (M365 A5)
+- Windows 10 Enterprise E5
+- Microsoft Defender para punto de conexión
 
 > [!NOTE]
 > Los usuarios con licencia elegibles pueden usar Microsoft Defender para Endpoint en hasta cinco dispositivos simultáneos.
-> Microsoft Defender para endpoint también está disponible para la compra de un proveedor de soluciones en la nube (CSP). Cuando se compra a través de un CSP, no requiere ofertas de licencias por volumen de Microsoft enumeradas.
+> Microsoft Defender para endpoint también está disponible para la compra desde un Proveedor de soluciones en la nube (CSP). Cuando se compra a través de un CSP, no requiere ofertas de licencias por volumen de Microsoft enumeradas.
 
 ### <a name="network-connections"></a>Conexiones de red
 
