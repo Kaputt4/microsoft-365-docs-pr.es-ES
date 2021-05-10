@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: da2150d14328de83648f84913cf5edbb89a57ccc
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: d4dddb33d9425bebaebc6a5e8dbb0b17e039eff1
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543597"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295012"
 ---
 # <a name="contact-support-for-uae-united-arab-emirates"></a>Póngase en contacto con el soporte técnico de EMI (Emiratos Árabes Unidos)
 
-[Buscar otro país o región](../contact-support-for-business-products.md).
+[Buscar otro país o región](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 8000 444 1578

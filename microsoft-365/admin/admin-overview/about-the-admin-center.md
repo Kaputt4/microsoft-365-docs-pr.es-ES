@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Puede usar el centro de administración para configurar la organización en la nube y administrar usuarios y suscripciones. Introducción iniciando sesión en la cuenta con permisos de administrador.
-ms.openlocfilehash: f2b8a22019e3292c93d07161f3825dfe90629ccc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: db88904e16cf9410d3eb4e4aac161f714993150b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241753"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52290988"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Acerca del centro de administración de Microsoft 365
 
@@ -64,7 +64,7 @@ A continuación se muestran las características y la configuración que encontr
 |**Grupos** <br/> |Cree y administre grupos en la organización, como un grupo de Microsoft 365, un grupo de distribución, un grupo de seguridad o un buzón compartido. Más información sobre cómo [crear](../create-groups/create-groups.md) y [administrar](../create-groups/manage-groups.md) grupos.  <br/> |
 |**Recursos** <br/> |Cree y administre recursos, como por ejemplo una colección de sitios de SharePoint. Aprenda cómo [crear colecciones de sitios](/sharepoint/create-site-collection).  <br/> |
 |**Facturación** <br/> |Vea, compre o cancele las suscripciones de su organización. Revise los extractos de las facturas pasadas o el número de licencias asignadas a usuarios individuales. Más información sobre cómo [administrar la facturación](../../commerce/index.yml).  <br/> |
-|**Soporte técnico** <br/> | Vea las solicitudes de servicio existentes o cree otras nuevas. Obtenga más información en [póngase en contacto con el soporte técnico para productos para empresas: ayuda de administración](../contact-support-for-business-products.md). |
+|**Soporte técnico** <br/> | Vea las solicitudes de servicio existentes o cree otras nuevas. Obtenga más información en [póngase en contacto con el soporte técnico para productos para empresas: ayuda de administración](../../business-video/get-help-support.md). |
 |**Configuración** <br/> |Administre la configuración global de aplicaciones, como correo electrónico, sitios y el conjunto de aplicaciones de Office. Cambie la directiva y la fecha de expiración de su contraseña. Agregue y actualice nombres de dominio, como contoso.com. Cambie las preferencias de perfil y versión de su organización. Y decida si los socios pueden acceder a su centro de administración.  <br/> |
 |**Instalación** <br/> |Administre los dominios existentes, active y administre la autenticación multifactorial, administre el acceso de administrador, migre los buzones de correo de los usuarios a Office 365, administre las actualizaciones de funciones y ayude a los usuarios a instalar sus aplicaciones de Office. |
 |**Informes** <br/> |Vea de un vistazo cómo su organización usa Microsoft 365 informes detallados sobre el uso de correo electrónico, Office activaciones y mucho más. Aprenda a usar los nuevos [informes de actividades](../activity-reports/activity-reports.md).  <br/> |

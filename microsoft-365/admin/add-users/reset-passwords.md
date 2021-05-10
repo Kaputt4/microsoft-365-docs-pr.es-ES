@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Obtenga información sobre cómo restablecer la contraseña de un usuario en Microsoft 365 suscripción para empresas.
-ms.openlocfilehash: fa368c7f44d4df847cf007568853c11970e7adc1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 8720942d60b5ce4efaca8885bd5209cb3e7e7ef8
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241705"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291000"
 ---
 # <a name="reset-passwords"></a>Restablecer contraseñas
 
@@ -50,7 +50,7 @@ Vea un breve vídeo sobre el restablecimiento de contraseñas de usuario.<br><br
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>Pasos: Restablecer una contraseña de empresa para un usuario
 
@@ -86,7 +86,7 @@ Si ha olvidado la contraseña y no puede iniciar sesión:
 
 - Asegúrese de que ha proporcionado información de contacto alternativa, incluido un número de teléfono móvil.
 
-- O bien, [llama al soporte técnico de Microsoft](../contact-support-for-business-products.md).
+- O bien, [llama al soporte técnico de Microsoft](../../business-video/get-help-support.md).
 
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Restablecer todas las contraseñas empresariales para todos los usuarios de la organización al mismo tiempo
 <a name="bkmk_forgot"> </a>

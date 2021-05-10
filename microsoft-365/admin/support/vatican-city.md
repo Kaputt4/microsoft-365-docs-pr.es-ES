@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5fcdc7d9890df18fa24c80a2169c75b1300b986c
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 2fbfe46a3f0f99adca974765e370f2bbd766b882
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543513"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52294988"
 ---
 # <a name="contact-support-for-vatican-city"></a>Póngase en contacto con el soporte técnico de Ciudad del Vaticano
 
-[Buscar otro país o región](../contact-support-for-business-products.md).
+[Buscar otro país o región](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 800 917 919
@@ -39,6 +39,6 @@ Italiano: Mon-Fri 9 AM-6 PM
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Número de teléfono alternativo: 02 6943 0746
+Número Teléfono alternativa: 02 6943 0746
 
 Se aplican tarifas de llamada local

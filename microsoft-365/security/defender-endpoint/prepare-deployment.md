@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00e57d03ae636837120b53c0de16861ad142ef76
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: e3df1286c69132c960c412f6f74512bb49c32b28
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280938"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291048"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Preparar Microsoft Defender para la implementación de puntos de conexión
 
@@ -134,7 +134,6 @@ Elija el componente de Defender para endpoint que se va a usar y quite los que n
 | Expertos en amenazas de Microsoft (MTE)          | Expertos en amenazas de Microsoft es un servicio de búsqueda administrado que proporciona a los Centros de operaciones de seguridad (SOC) supervisión y análisis de nivel de experto para ayudarles a garantizar que las amenazas críticas en sus entornos únicos no se pierden. <br>[Aprende más.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | No aplicable      |
 
 ## <a name="next-step"></a>Paso siguiente
-|||
-|:-------|:-----|
-|![Fase 2: Configuración](images/setup.png) <br>[Fase 2: Configuración](production-deployment.md) | Configurar Microsoft Defender para la implementación de puntos de conexión
+
+![Fase 2: Configuración](images/setup.png) <br>[Fase 2: Configuración |](production-deployment.md) Configurar Microsoft Defender para la implementación de puntos de conexión
 
