@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 75faac2c946d93f7e0aed7ef6daca40f2b9982c5
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 4151df013ffd1116a65740dc44aed1707c6f3950
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547641"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296280"
 ---
-# <a name="contact-support-for-el-salvador"></a><span data-ttu-id="2f132-103">Póngase en contacto con el soporte técnico de El Salvador</span><span class="sxs-lookup"><span data-stu-id="2f132-103">Contact support for El Salvador</span></span>
+# <a name="contact-support-for-el-salvador"></a><span data-ttu-id="cbd39-103">Póngase en contacto con el soporte técnico de El Salvador</span><span class="sxs-lookup"><span data-stu-id="cbd39-103">Contact support for El Salvador</span></span>
 
-<span data-ttu-id="2f132-104">[Buscar otro país o región](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="2f132-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="cbd39-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="cbd39-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="2f132-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="2f132-105">Phone number</span></span>
-<span data-ttu-id="2f132-106">800 6676</span><span class="sxs-lookup"><span data-stu-id="2f132-106">800 6676</span></span>
+## <a name="phone-number"></a><span data-ttu-id="cbd39-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="cbd39-105">Phone number</span></span>
+<span data-ttu-id="cbd39-106">800 6676</span><span class="sxs-lookup"><span data-stu-id="cbd39-106">800 6676</span></span>
 
-<span data-ttu-id="2f132-107">Seleccionar la opción 4</span><span class="sxs-lookup"><span data-stu-id="2f132-107">Select option 4</span></span>
+<span data-ttu-id="cbd39-107">Seleccionar la opción 4</span><span class="sxs-lookup"><span data-stu-id="cbd39-107">Select option 4</span></span>
 
-<span data-ttu-id="2f132-108">Escriba el código 7007</span><span class="sxs-lookup"><span data-stu-id="2f132-108">Enter code 7007</span></span>
+<span data-ttu-id="cbd39-108">Escriba el código 7007</span><span class="sxs-lookup"><span data-stu-id="cbd39-108">Enter code 7007</span></span>
 
-## <a name="hours"></a><span data-ttu-id="2f132-109">Horas</span><span class="sxs-lookup"><span data-stu-id="2f132-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="2f132-110">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="2f132-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="cbd39-109">Horas</span><span class="sxs-lookup"><span data-stu-id="cbd39-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="cbd39-110">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="cbd39-110">Billing Support:</span></span>
 
-<span data-ttu-id="2f132-111">Español: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="2f132-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="cbd39-111">Español: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="cbd39-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="2f132-112">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="2f132-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="cbd39-112">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="cbd39-112">Technical Support:</span></span>
 
-<span data-ttu-id="2f132-113">Español: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="2f132-113">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="cbd39-113">Español: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="cbd39-113">Spanish: 24 hours a day, 7 days a week</span></span>
