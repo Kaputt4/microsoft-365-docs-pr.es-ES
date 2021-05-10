@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 62b2d6516e44b7bcd9b76e427491697046092882
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: dbc862fbab11e3fe16783bd3269cd18e9599a8bf
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546921"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298664"
 ---
-# <a name="contact-support-for-honduras"></a><span data-ttu-id="3da7f-103">Póngase en contacto con el soporte técnico de Honduras</span><span class="sxs-lookup"><span data-stu-id="3da7f-103">Contact support for Honduras</span></span>
+# <a name="contact-support-for-honduras"></a><span data-ttu-id="df2fe-103">Póngase en contacto con el soporte técnico de Honduras</span><span class="sxs-lookup"><span data-stu-id="df2fe-103">Contact support for Honduras</span></span>
 
-<span data-ttu-id="3da7f-104">[Buscar otro país o región](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="3da7f-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="df2fe-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="df2fe-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="3da7f-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="3da7f-105">Phone number</span></span>
-<span data-ttu-id="3da7f-106">800 0123</span><span class="sxs-lookup"><span data-stu-id="3da7f-106">800 0123</span></span>
+## <a name="phone-number"></a><span data-ttu-id="df2fe-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="df2fe-105">Phone number</span></span>
+<span data-ttu-id="df2fe-106">800 0123</span><span class="sxs-lookup"><span data-stu-id="df2fe-106">800 0123</span></span>
 
-<span data-ttu-id="3da7f-107">Después de marcar, escriba</span><span class="sxs-lookup"><span data-stu-id="3da7f-107">After dialing, enter</span></span>
+<span data-ttu-id="df2fe-107">Después de marcar, escriba</span><span class="sxs-lookup"><span data-stu-id="df2fe-107">After dialing, enter</span></span>
 
-<span data-ttu-id="3da7f-108">877 635 7034</span><span class="sxs-lookup"><span data-stu-id="3da7f-108">877 635 7034</span></span>
+<span data-ttu-id="df2fe-108">877 635 7034</span><span class="sxs-lookup"><span data-stu-id="df2fe-108">877 635 7034</span></span>
 
-## <a name="hours"></a><span data-ttu-id="3da7f-109">Horas</span><span class="sxs-lookup"><span data-stu-id="3da7f-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="3da7f-110">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="3da7f-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="df2fe-109">Horas</span><span class="sxs-lookup"><span data-stu-id="df2fe-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="df2fe-110">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="df2fe-110">Billing Support:</span></span>
 
-<span data-ttu-id="3da7f-111">Español: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="3da7f-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="df2fe-111">Español: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="df2fe-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="3da7f-112">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="3da7f-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="df2fe-112">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="df2fe-112">Technical Support:</span></span>
 
-<span data-ttu-id="3da7f-113">Español: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="3da7f-113">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="df2fe-113">Español: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="df2fe-113">Spanish: 24 hours a day, 7 days a week</span></span>

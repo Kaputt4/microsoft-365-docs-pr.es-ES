@@ -12,37 +12,37 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 07983faa86c1ac2fe2a5daaaa8784d8071d9430b
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 4bcec12d518d56ed8aafdd7c1100446c2dae1dd2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546153"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298402"
 ---
-# <a name="contact-support-for-macau-sar"></a><span data-ttu-id="2c570-103">Póngase en contacto con el soporte técnico para Macao SAR</span><span class="sxs-lookup"><span data-stu-id="2c570-103">Contact support for Macau SAR</span></span>
+# <a name="contact-support-for-macau-sar"></a><span data-ttu-id="1673e-103">Póngase en contacto con el soporte técnico para Macao SAR</span><span class="sxs-lookup"><span data-stu-id="1673e-103">Contact support for Macau SAR</span></span>
 
-<span data-ttu-id="2c570-104">[Buscar otro país o región](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="2c570-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="1673e-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="1673e-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="2c570-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="2c570-105">Phone number</span></span>
-<span data-ttu-id="2c570-106">0800 111</span><span class="sxs-lookup"><span data-stu-id="2c570-106">0800 111</span></span>
+## <a name="phone-number"></a><span data-ttu-id="1673e-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="1673e-105">Phone number</span></span>
+<span data-ttu-id="1673e-106">0800 111</span><span class="sxs-lookup"><span data-stu-id="1673e-106">0800 111</span></span>
 
-<span data-ttu-id="2c570-107">Después de marcar, escriba</span><span class="sxs-lookup"><span data-stu-id="2c570-107">After dialing, enter</span></span>
+<span data-ttu-id="1673e-107">Después de marcar, escriba</span><span class="sxs-lookup"><span data-stu-id="1673e-107">After dialing, enter</span></span>
 
-<span data-ttu-id="2c570-108">877 860 4890</span><span class="sxs-lookup"><span data-stu-id="2c570-108">877 860 4890</span></span>
+<span data-ttu-id="1673e-108">877 860 4890</span><span class="sxs-lookup"><span data-stu-id="1673e-108">877 860 4890</span></span>
 
-## <a name="hours"></a><span data-ttu-id="2c570-109">Horas</span><span class="sxs-lookup"><span data-stu-id="2c570-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="2c570-110">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="2c570-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="1673e-109">Horas</span><span class="sxs-lookup"><span data-stu-id="1673e-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="1673e-110">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="1673e-110">Billing Support:</span></span>
 
-<span data-ttu-id="2c570-111">Cantón: Mon-Fri 9 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="2c570-111">Cantonese: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="1673e-111">Cantón: Mon-Fri 9 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="1673e-111">Cantonese: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="2c570-112">Mandarín: Mon-Fri 9 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="2c570-112">Mandarin: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="1673e-112">Mandarín: Mon-Fri 9 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="1673e-112">Mandarin: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="2c570-113">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="2c570-113">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="1673e-113">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="1673e-113">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="2c570-114">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="2c570-114">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="1673e-114">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="1673e-114">Technical Support:</span></span>
 
-<span data-ttu-id="2c570-115">Cantón: Mon-Fri 9 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="2c570-115">Cantonese: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="1673e-115">Cantón: Mon-Fri 9 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="1673e-115">Cantonese: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="2c570-116">Mandarín: Mon-Fri 9 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="2c570-116">Mandarin: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="1673e-116">Mandarín: Mon-Fri 9 AM-5 PM</span><span class="sxs-lookup"><span data-stu-id="1673e-116">Mandarin: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="2c570-117">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="2c570-117">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="1673e-117">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="1673e-117">English: 24 hours a day, 7 days a week</span></span>

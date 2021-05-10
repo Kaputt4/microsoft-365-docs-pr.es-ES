@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d3eb7b9d6c08dbe7b671f8d185b4e9a0e852b1e1
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 31a5f5f7748882f885570c38e8413dbcacab5b73
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545265"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297925"
 ---
-# <a name="contact-support-for-norway"></a><span data-ttu-id="9c329-103">Póngase en contacto con el soporte técnico de Noruega</span><span class="sxs-lookup"><span data-stu-id="9c329-103">Contact support for Norway</span></span>
+# <a name="contact-support-for-norway"></a><span data-ttu-id="b4c3b-103">Póngase en contacto con el soporte técnico de Noruega</span><span class="sxs-lookup"><span data-stu-id="b4c3b-103">Contact support for Norway</span></span>
 
-<span data-ttu-id="9c329-104">[Buscar otro país o región](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="9c329-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="b4c3b-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="b4c3b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="9c329-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="9c329-105">Phone number</span></span>
-<span data-ttu-id="9c329-106">800 31068</span><span class="sxs-lookup"><span data-stu-id="9c329-106">800 31068</span></span>
+## <a name="phone-number"></a><span data-ttu-id="b4c3b-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="b4c3b-105">Phone number</span></span>
+<span data-ttu-id="b4c3b-106">800 31068</span><span class="sxs-lookup"><span data-stu-id="b4c3b-106">800 31068</span></span>
 
-## <a name="hours"></a><span data-ttu-id="9c329-107">Horas</span><span class="sxs-lookup"><span data-stu-id="9c329-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="9c329-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="9c329-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="b4c3b-107">Horas</span><span class="sxs-lookup"><span data-stu-id="b4c3b-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="b4c3b-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="b4c3b-108">Billing Support:</span></span>
 
-<span data-ttu-id="9c329-109">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="9c329-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="b4c3b-109">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="b4c3b-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="9c329-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="9c329-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="b4c3b-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="b4c3b-110">Technical Support:</span></span>
 
-<span data-ttu-id="9c329-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="9c329-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="b4c3b-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="b4c3b-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="9c329-112">Número de teléfono alternativo: 22 31 07 48</span><span class="sxs-lookup"><span data-stu-id="9c329-112">Alternative Phone Number: 22 31 07 48</span></span>
+<span data-ttu-id="b4c3b-112">Número Teléfono alternativa: 22 31 07 48</span><span class="sxs-lookup"><span data-stu-id="b4c3b-112">Alternative Phone Number: 22 31 07 48</span></span>
 
-<span data-ttu-id="9c329-113">Se aplican tarifas de llamada local</span><span class="sxs-lookup"><span data-stu-id="9c329-113">Local call charges apply</span></span>
+<span data-ttu-id="b4c3b-113">Se aplican tarifas de llamada local</span><span class="sxs-lookup"><span data-stu-id="b4c3b-113">Local call charges apply</span></span>
