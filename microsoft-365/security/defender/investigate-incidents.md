@@ -1,6 +1,6 @@
 ---
-title: Analizar incidentes en Microsoft 365 Defender
-description: Analizar incidentes relacionados con dispositivos, usuarios y buzones de correo.
+title: Investigar incidentes en Microsoft 365 Defender
+description: Investigar incidentes relacionados con dispositivos, usuarios y buzones.
 keywords: incidente, incidentes, análisis, respuesta, máquinas, dispositivos, usuarios, identidades, correo, correo electrónico, buzón, investigación, gráfico, evidencia
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72e1efb8a06fb7fa64b83ab6522fe4cdcfd1a73e
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 7abc99a14ec538afea8cdbd4d8f3b4940bcccd9f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259641"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300090"
 ---
-# <a name="analyze-incidents-in-microsoft-365-defender"></a>Analizar incidentes en Microsoft 365 Defender
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>Investigar incidentes en Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ Microsoft 365 Defender agrega todas las alertas, activos, investigaciones y prue
 
 Dentro de un incidente, se analizan las alertas que afectan a la red, se entiende lo que significan y se recopilan las pruebas para poder diseñar un plan de corrección eficaz.
 
-## <a name="initial-analysis"></a>Análisis inicial
+## <a name="initial-investigation"></a>Investigación inicial
 
 Antes de entrar en detalles, echa un vistazo a las propiedades y el resumen del incidente.
 
@@ -88,7 +88,7 @@ Por ejemplo:
 
 De forma predeterminada, las alertas se ordenan cronológicamente para que pueda ver cómo se produjo el incidente con el tiempo. La selección de cada alerta te lleva a la página principal de la alerta, donde puedes realizar un análisis detallado de esa alerta. 
 
-Obtenga información sobre cómo usar la cola de alertas y las páginas de alertas en [el análisis de alertas](investigate-alerts.md)
+Obtenga información sobre cómo usar la cola de alertas y las páginas de alertas en [investigar alertas](investigate-alerts.md).
 
 ## <a name="devices"></a>Dispositivos
 
@@ -123,11 +123,13 @@ Puede seleccionar la marca de verificación de un buzón para ver una lista de a
 
 ## <a name="investigations"></a>Investigaciones
 
-La **pestaña Investigaciones** enumera todas las investigaciones automatizadas desencadenadas por alertas en este incidente. Las investigaciones realizarán acciones de corrección o esperarán a que los analistas aprueben las acciones, según cómo haya configurado las investigaciones automatizadas para que se ejecuten en Microsoft Defender para Endpoint y Defender para Office 365.
+La **pestaña Investigaciones** enumera todas las [investigaciones automatizadas desencadenadas](m365d-autoir.md) por alertas en este incidente. Las investigaciones realizarán acciones de corrección o esperarán a que los analistas aprueben las acciones, según cómo haya configurado las investigaciones automatizadas para que se ejecuten en Microsoft Defender para Endpoint y Defender para Office 365.
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Ejemplo de una página de investigaciones para un incidente":::
 
 Seleccione una investigación para ir a la página de detalles de la investigación para obtener toda la información sobre la investigación y el estado de corrección. Si hay acciones pendientes para su aprobación como parte de la investigación, aparecerán en la pestaña Acciones pendientes. Tome medidas como parte de la corrección de incidentes.
+
+Para obtener más información, vea [Automated investigation and response in Microsoft 365 Defender](m365d-autoir.md).
 
 ## <a name="evidence-and-response"></a>Evidencia y respuesta
 
@@ -155,8 +157,14 @@ El gráfico de incidentes le ayuda a comprender rápidamente el ámbito completo
 
 Ahora puedes comprender cómo el ataque se extendió a través de la red con el tiempo, dónde se inició y hasta dónde llegó el ataque.
 
+## <a name="next-steps"></a>Pasos siguientes
 
-## <a name="related-topics"></a>Temas relacionados
+Según sea necesario:
+
+- [Investigar las alertas de un incidente](investigate-alerts.md)
+- [Investigar los usuarios de un incidente](investigate-users.md)
+
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)

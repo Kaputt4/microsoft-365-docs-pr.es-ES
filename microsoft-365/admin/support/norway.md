@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d3eb7b9d6c08dbe7b671f8d185b4e9a0e852b1e1
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 31a5f5f7748882f885570c38e8413dbcacab5b73
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545265"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297925"
 ---
 # <a name="contact-support-for-norway"></a>Póngase en contacto con el soporte técnico de Noruega
 
-[Buscar otro país o región](../contact-support-for-business-products.md).
+[Buscar otro país o región](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 800 31068
@@ -35,6 +35,6 @@ Inglés: lunes a viernes de 9:00 a 17:00
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Número de teléfono alternativo: 22 31 07 48
+Número Teléfono alternativa: 22 31 07 48
 
 Se aplican tarifas de llamada local

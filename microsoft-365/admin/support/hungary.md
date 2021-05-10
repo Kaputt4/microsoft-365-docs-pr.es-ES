@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9475a197b189c98cd920a5eb6b52be82c0e7144d
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 925d924c4e4bdd1de36516942a0c585ee10984e4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546873"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298652"
 ---
 # <a name="contact-support-for-hungary"></a>Póngase en contacto con el soporte técnico de Hungría
 
-[Buscar otro país o región](../contact-support-for-business-products.md).
+[Buscar otro país o región](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 +36 80 983 899
@@ -37,6 +37,6 @@ Húngaro: Mon-Fri 8 AM-6 PM
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Número de teléfono alternativo: +36 1 778 9292
+Número Teléfono alternativa: +36 1 778 9292
 
 Se aplican tarifas de llamada local

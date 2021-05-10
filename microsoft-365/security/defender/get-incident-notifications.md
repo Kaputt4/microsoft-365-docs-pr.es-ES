@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7ba21e08f72760654993335764df00e78abc87b2
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 8d29291c63bdc437163feecce8164089d958d71d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939723"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299969"
 ---
 # <a name="get-incident-notifications-by-email"></a>Obtener notificaciones de incidentes por correo electrónico
 
@@ -43,7 +43,7 @@ Puedes configurar Microsoft 365 Defender para notificar a tu personal con un cor
 - Grupo de dispositivos.
 - Solo en la primera actualización por incidente.
 
-La notificación por correo electrónico contiene detalles importantes sobre el incidente, como el nombre del incidente, la gravedad y las categorías, entre otras. También puede ir directamente al incidente e iniciar el análisis de inmediato. Para obtener más información, vea [Analizar incidentes](investigate-incidents.md).
+La notificación por correo electrónico contiene detalles importantes sobre el incidente, como el nombre del incidente, la gravedad y las categorías, entre otras. También puede ir directamente al incidente e iniciar el análisis de inmediato. Para obtener más información, vea [Investigar incidentes](investigate-incidents.md).
 
 Puede agregar o quitar destinatarios en las notificaciones de correo electrónico. Los nuevos destinatarios reciben notificaciones sobre incidentes después de agregarse. 
 
@@ -55,7 +55,7 @@ Del mismo modo, si tu organización usa el control de acceso basado en roles (RB
 
 Siga estos pasos para crear una nueva regla y personalizar la configuración de notificaciones por correo electrónico.
 
-1. En el panel de navegación, seleccione Configuración > notificaciones de correo electrónico de **Microsoft 365 Defender > incidentes**.
+1. En el panel de navegación, **seleccione Configuración > Microsoft 365 Defender > notificaciones de correo** electrónico de incidentes .
 2. Seleccione **Agregar elemento**.
 3. En la **página Conceptos básicos,** escriba el nombre de la regla y una descripción y, a continuación, **seleccione Siguiente**.
 4. En la **página Configuración de** notificaciones, configure:
@@ -63,7 +63,7 @@ Siga estos pasos para crear una nueva regla y personalizar la configuración de 
     - **Ámbito de grupo de dispositivos:** puede especificar todos los grupos de dispositivos o seleccionar en la lista de grupos de dispositivos del espacio empresarial.
     - **Notificar solo en la primera aparición por** incidente: seleccione si desea una notificación solo en la primera alerta que coincida con las demás selecciones. Las actualizaciones posteriores o las alertas relacionadas con el incidente no enviarán notificaciones adicionales.
     - **Incluir el nombre de la organización en el correo** electrónico: seleccione si desea que el nombre de la organización aparezca en la notificación de correo electrónico.
-    - **Incluir vínculo de portal específico** del inquilino: seleccione si desea agregar un vínculo con el identificador de inquilino en la notificación de correo electrónico para obtener acceso a un inquilino específico de Microsoft 365.
+    - **Incluir vínculo de portal específico** del inquilino: seleccione si desea agregar un vínculo con el identificador de inquilino en la notificación de correo electrónico para obtener acceso a un inquilino Microsoft 365 inquilino específico.
 
     :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Configuración de notificaciones para notificaciones de correo electrónico de incidentes":::
 
@@ -74,7 +74,7 @@ Para editar una regla existente, selecciónelo en la lista de reglas. En el pane
 
 Para editar una regla existente, selecciónelo en la lista de reglas. En el panel con el nombre de regla, seleccione **Eliminar**.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)
-- [Analizar incidentes](investigate-incidents.md)
+- [Investigar incidentes](investigate-incidents.md)

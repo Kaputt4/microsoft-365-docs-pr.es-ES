@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 97971699ec6000ab9233c2fd739f471cdda01b2d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 47d494016161f306745ea4116c95c22bd18e1402
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933858"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300078"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support-for-us-government-customers"></a>Póngase en contacto con Microsoft Defender para obtener soporte técnico para puntos de conexión para clientes del Gobierno de ESTADOS UNIDOS
 
@@ -44,7 +44,7 @@ GCC-M | [https://gcc.securitycenter.microsoft.us](https://gcc.securitycenter.mic
 GCC-H | [https://securitycenter.microsoft.us](https://securitycenter.microsoft.us)
 DoD | [https://securitycenter.microsoft.us](https://securitycenter.microsoft.us)
 
-Si no puede iniciar sesión en el portal, también puede abrir un caso de soporte técnico con el [teléfono](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products?view=o365-worldwide&tabs=phone&preserve-view=true).
+Si no puede iniciar sesión en el portal, también puede abrir un caso de soporte técnico con el [teléfono](../../business-video/get-help-support.md).
 
 ## <a name="opening-a-support-case"></a>Abrir un caso de soporte técnico
 Para obtener instrucciones y requisitos previos, consulte [Póngase en contacto con Microsoft Defender para obtener soporte técnico para puntos de conexión.](contact-support.md)

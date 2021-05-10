@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 65d9e2d99a7533c78135f6b8f5be4ff918510de6
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 379580c2c404a1a0669cad4fb657c28857072c1c
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547784"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298943"
 ---
 # <a name="contact-support-for-denmark"></a>Póngase en contacto con el soporte técnico de Dinamarca
 
-[Buscar otro país o región](../contact-support-for-business-products.md).
+[Buscar otro país o región](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 80 34 76 23
@@ -35,6 +35,6 @@ Inglés: lunes a viernes de 9:00 a 17:00
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Número de teléfono alternativo: 38 48 70 67
+Número Teléfono alternativa: 38 48 70 67
 
 Se aplican tarifas de llamada local

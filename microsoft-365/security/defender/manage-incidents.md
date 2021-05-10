@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5f66189979f401430353f4c15978a85276b48840
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 09c391d6b02e1273f55070283a6e11454f677114
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939759"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300006"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Administrar incidentes en Microsoft 365 Defender
 
@@ -39,7 +39,7 @@ ms.locfileid: "51939759"
 
 La administración de incidentes es fundamental para garantizar que las amenazas se contengan y se aborde.
 
-Puede administrar incidentes desde incidentes **& alertas > incidentes** en el inicio rápido del centro de seguridad de Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)). Por ejemplo:
+Puede administrar incidentes de **incidentes & alertas > incidentes en** el inicio rápido del centro de seguridad de Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)). Por ejemplo:
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Ejemplo de la cola de incidentes":::
 
@@ -98,8 +98,16 @@ Si se trataba de una alerta verdadera, también debe especificar qué tipo de am
 
 Puede agregar varios comentarios a un incidente con el **campo Comentario.** Cada comentario se agrega a los eventos históricos del incidente. Puede ver los comentarios y el historial de un incidente desde el vínculo **Comentarios e** historial en la **página Resumen.**
 
-## <a name="related-topics"></a>Temas relacionados
+## <a name="next-steps"></a>Pasos siguientes
+
+Para nuevos incidentes, inicie la [investigación](investigate-incidents.md).
+
+Para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
+
+Para los incidentes resueltos, realice una [revisión posterior al incidente](first-incident-post.md).
+
+## <a name="see-also"></a>Vea también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)
-- [Analizar incidentes](investigate-incidents.md)
+- [Investigar incidentes](investigate-incidents.md)

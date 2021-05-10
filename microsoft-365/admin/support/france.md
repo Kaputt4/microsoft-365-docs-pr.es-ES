@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0a6e29a3ff2879f3d2eb44ff3a2e11b1ebc7853a
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: b0837e2169e1cd20fd11b0d2987ad8265a60adb5
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547413"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298859"
 ---
 # <a name="contact-support-for-france"></a>Póngase en contacto con el soporte técnico de Francia
 
-[Buscar otro país o región](../contact-support-for-business-products.md).
+[Buscar otro país o región](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Número de teléfono
 0805 540 594
@@ -39,6 +39,6 @@ Francés: Mon-Fri 8 AM-9 PM
 
 Inglés: 24 horas al día, 7 días a la semana
 
-Número de teléfono alternativo: 01 57 32 42 97
+Número Teléfono alternativa: 01 57 32 42 97
 
 Se aplican tarifas de llamada local

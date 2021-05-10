@@ -13,12 +13,12 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5859adec666fc8cd957ab0b199a1bd600279288f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 85d6c23dcec77fac6a91ae353bce951c005a4b29
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205400"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298043"
 ---
 # <a name="help-and-support-for-eop"></a>Ayuda y soporte técnico para EOP
 
@@ -29,25 +29,25 @@ ms.locfileid: "51205400"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, los recursos de soporte técnico que se enumeran en este artículo le ayudarán a encontrar respuestas si tiene dificultades con EOP. Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
+En Microsoft 365 organizaciones con buzones en organizaciones de Exchange Online o independientes de Exchange Online Protection (EOP) sin buzones de correo de Exchange Online, los recursos de soporte técnico enumerados en este artículo le ayudarán a encontrar respuestas si tiene dificultades con EOP. Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
 
 ## <a name="self-support-options"></a>Opciones de autosoporte
 
-Al iniciar sesión, el Centro de administración de Microsoft 365 proporciona información sobre el estado de los servicios de su organización. Además, la sección estado del servicio muestra el estado actual de los servicios, detalles sobre interrupciones y interrupciones, y enumera los tiempos de mantenimiento planeados. El Centro de administración de Microsoft 365 también proporciona información sobre problemas conocidos y resoluciones esperadas. Si se ve afectado por una incidencia masiva, debería aparecer una alerta de comunicación (que suele ir acompañada de un icono de campana). Le recomendamos que la lea y tome las medidas necesarias en los elementos que procedan. Para obtener más información acerca del área de mantenimiento del servicio, vea [Mantenimiento y continuidad del servicio.](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) Es posible que pueda encontrar más ayuda por su cuenta mediante las herramientas, foros y sitios de la comunidad que se enumeran aquí.
+Al iniciar sesión, el centro Microsoft 365 de administración proporciona información sobre el estado de los servicios de su organización. Además, la sección estado del servicio muestra el estado actual de los servicios, detalles sobre interrupciones y interrupciones, y enumera los tiempos de mantenimiento planeados. El Microsoft 365 de administración también proporciona información sobre problemas conocidos y resoluciones esperadas. Si se ve afectado por una incidencia masiva, debería aparecer una alerta de comunicación (que suele ir acompañada de un icono de campana). Le recomendamos que la lea y tome las medidas necesarias en los elementos que procedan. Para obtener más información acerca del área de mantenimiento del servicio, vea [Mantenimiento y continuidad del servicio.](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) Es posible que pueda encontrar más ayuda por su cuenta mediante las herramientas, foros y sitios de la comunidad que se enumeran aquí.
 
 [Información del producto de Protección en línea de Exchange](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Contactar con el soporte técnico para productos empresariales: ayuda para administradores](../../admin/contact-support-for-business-products.md)
+[Contactar con el soporte técnico para productos empresariales: ayuda para administradores](../../business-video/get-help-support.md)
 
-[Comunidad de Microsoft 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[Microsoft 365 comunidad](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Asistente para soporte técnico y recuperación de Microsoft (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
+[Microsoft Asistente de soporte y recuperación (ASyR)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
 [Solucionador de problemas del flujo de correo](https://aka.ms/FixEmail)
 
 ## <a name="assisted-support-from-microsoft"></a>Soporte técnico asistido de Microsoft
 
-Para obtener ayuda de Microsoft, inicie una nueva solicitud de servicio en el Centro de administración de Microsoft 365 o llame por teléfono. Los suscriptores de soporte premier tienen opciones de soporte técnico adicionales.
+Puede obtener ayuda de Microsoft iniciando una nueva solicitud de servicio en el centro de administración de Microsoft 365 o llamando por teléfono. Los suscriptores de soporte premier tienen opciones de soporte técnico adicionales.
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Soporte para suscriptores de soporte premier de Microsoft
 
@@ -57,7 +57,7 @@ Para obtener más información acerca de cómo el Soporte Premier puede ayudar a
 
 ### <a name="ask-for-help-on-the-web"></a>Solicitar ayuda en la Web
 
-1. Inicie sesión en el Centro de administración de Microsoft 365.
+1. Inicie sesión en el centro Microsoft 365 administración.
 
 2. Vaya a **Soporte**\> **Solicitar soporte técnico**\> **Nueva solicitud de servicio**
 
@@ -65,7 +65,7 @@ Para obtener más información acerca de cómo el Soporte Premier puede ayudar a
 
 ### <a name="ask-for-help-on-the-telephone"></a>Solicitar ayuda por teléfono
 
-1. Inicie sesión en el Centro de administración de Microsoft 365.
+1. Inicie sesión en el centro Microsoft 365 administración.
 
 2. Para problemas generales del producto, vaya **a Soporte técnico** Solicitar soporte técnico de atención al \>  \> **cliente.**
 

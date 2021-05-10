@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e2e29015d4cb5e04510577118eb847b9b596a6c5
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 93751a8297e61a969e0049e27a847324a3d16872
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114287"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300018"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Incidentes en Microsoft 365 Defender
 
@@ -62,7 +62,7 @@ La agrupación de alertas relacionadas en un incidente le ofrece una vista compl
 - El ámbito del ataque, como el número de dispositivos, usuarios y buzones de correo afectados. 
 - Todos los datos asociados con el ataque.
 
-Si [está habilitado,](m365d-enable.md)Microsoft 365 Defender puede investigar y resolver alertas automáticamente a través de la automatización y la inteligencia artificial. También puedes realizar pasos de corrección adicionales para resolver el ataque. 
+Si [está habilitado,](m365d-enable.md)Microsoft 365 Defender puede [investigar y](m365d-autoir.md) resolver alertas automáticamente a través de la automatización y la inteligencia artificial. También puedes realizar pasos de corrección adicionales para resolver el ataque. 
 
 ## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a>Incidentes y alertas en el centro Microsoft 365 seguridad
 
@@ -84,7 +84,7 @@ Las pestañas adicionales para un incidente son:
 
   Todos los dispositivos que se han identificado para formar parte o relacionados con el incidente.
 
-- Users
+- Usuarios
 
   Todos los usuarios identificados para formar parte del incidente o relacionados con ellos.
 
@@ -94,11 +94,15 @@ Las pestañas adicionales para un incidente son:
 
 - Investigaciones
 
-  Todas las investigaciones automatizadas desencadenadas por alertas en el incidente.
+  Todas las [investigaciones automatizadas desencadenadas](m365d-autoir.md) por alertas en el incidente.
 
 - Evidencia y respuesta
 
   Todos los eventos admitidos y las entidades sospechosas en las alertas del incidente.
+
+- Graph (en versión preliminar)
+
+  Una figura que muestra la conexión de alertas a los activos afectados de la organización.
 
 Esta es la relación entre un incidente y sus datos y las pestañas de un incidente en el centro Microsoft 365 seguridad.
 
@@ -115,7 +119,7 @@ De forma continua, identifique los incidentes de mayor prioridad para el anális
 - [Triaging](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.
 - [Administrar](manage-incidents.md) incidentes modificando su título, asignándolos a un analista y agregando etiquetas y comentarios.
 
-1. Para cada incidente, comience un [análisis de ataques y alertas:](investigate-incidents.md)
+1. Para cada incidente, inicie una investigación y análisis de [ataques y alertas:](investigate-incidents.md)
  
    a. Vea el resumen del incidente para comprender su ámbito y gravedad y qué entidades se ven afectadas (la **pestaña Resumen).**
 
@@ -123,7 +127,7 @@ De forma continua, identifique los incidentes de mayor prioridad para el anális
 
    c. Según sea necesario, recopila información sobre dispositivos, usuarios y buzones afectados (las pestañas **Dispositivos,** **Usuarios** y **Buzones).**
 
-   d. Vea cómo Microsoft 365 Defender ha resuelto automáticamente algunas **alertas** (la pestaña Investigaciones).
+   d. Vea cómo Microsoft 365 Defender ha [resuelto automáticamente algunas](m365d-autoir.md) alertas (la pestaña **Investigaciones).**
    
    e. Según sea necesario, use la información del conjunto de datos para el incidente para obtener más información (la **pestaña Evidencia y** respuesta).
 
@@ -149,7 +153,7 @@ Este es un ejemplo de operaciones de seguridad para Microsoft 365 Defender.
 Las tareas diarias pueden incluir:
 
 - [Administración](manage-incidents.md) de incidentes
-- Revisión de [acciones de investigación y respuesta automatizadas (AIR)](m365d-action-center.md)
+- Revisión [de acciones de investigación y respuesta automatizadas (AIR)](m365d-action-center.md) en el Centro de acciones
 - Revisión de los análisis [de amenazas más recientes](threat-analytics.md)
 - [Responder a](investigate-incidents.md) incidentes
 
@@ -165,10 +169,21 @@ Las tareas anuales pueden incluir llevar a cabo un ejercicio importante de incid
 
 Las tareas diarias, mensuales, trimestrales y anuales se pueden usar para actualizar o refinar procesos, directivas y configuraciones de seguridad.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
-La cola de incidentes de **la página Incidentes** enumera los incidentes más recientes. Desde aquí, puede:
+**Si es nuevo en el análisis** de seguridad y la respuesta a incidentes:
 
-- Vea qué incidentes deben [priorizarse en](incident-queue.md) función de la gravedad y otros factores. 
-- [Administrar incidentes, que](manage-incidents.md)incluye cambiar el nombre, la asignación, clasificar y agregar etiquetas y comentarios para el flujo de trabajo de administración de incidentes.
-- Realice un [análisis](investigate-incidents.md) de un incidente.
+- Consulte [el](first-incident-overview.md) tutorial Responder a su primer incidente para obtener una visita guiada de un proceso típico de análisis, corrección y revisión posterior al incidente en el centro de seguridad de Microsoft 365 con un ejemplo de un ataque.
+
+**Si tiene experiencia con el análisis** de seguridad y la respuesta a incidentes:
+
+- Introducción a la cola de incidentes desde la **página Incidentes** del centro Microsoft 365 seguridad. Desde aquí, puede:
+
+  - Vea qué incidentes deben [priorizarse en](incident-queue.md) función de la gravedad y otros factores. 
+
+  - [Administrar incidentes, que](manage-incidents.md)incluye cambiar el nombre, la asignación, clasificar y agregar etiquetas y comentarios en función del flujo de trabajo de administración de incidentes.
+
+  - Realizar [investigaciones](investigate-incidents.md) de incidentes.
+
+- Consulta estos [libros de reproducción de respuesta a](https://docs.microsoft.com/security/compass/incident-response-playbooks) incidentes para obtener instrucciones detalladas sobre los ataques de suplantación de identidad (phishing), el uso de contraseñas y la concesión de consentimiento de la aplicación.
+
