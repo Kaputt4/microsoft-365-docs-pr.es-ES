@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, independientemente de si usa una revisión para eliminación o el contenido se elimina automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: c49f669498424169a89fa99fcdd259de1f5c720b
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: b64db336aa619313f2ff744e94d48e44c13856a0
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488173"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296761"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -52,7 +52,7 @@ Asegúrese de que la auditoría está activada al menos un día antes de la prim
 
 ## <a name="disposition-reviews"></a>Revisiones para eliminación
 
-Cuando el contenido llega al final de su período de retención, hay varios motivos por los que es posible que quiera revisar el contenido y confirmar si se puede borrar de forma permanente ("eliminar"). Por ejemplo, en vez de borrar el contenido, podría necesitar:
+Cuando el contenido llegue al final de su período de retención, hay varios motivos por los que puede que quiera revisarlo y confirmar si se puede borrar de forma permanente ("eliminar"). Por ejemplo, en vez de eliminar el contenido, puede que deba:
   
 - Suspender la eliminación de contenido relevante en caso de litigio o una auditoría.
 
@@ -114,7 +114,7 @@ Como puede ver en la imagen, las acciones compatibles son las siguientes:
 
 Siempre que disponga de permisos para la ubicación y el contenido, puede usar el vínculo de la columna **Ubicación** para ver los documentos en su ubicación original. Durante una revisión para eliminación, el contenido nunca se mueve de su ubicación original y nunca se elimina hasta que el revisor elija hacerlo.
 
-Las notificaciones por correo electrónico se envían automáticamente a los revisores cada semana. Este proceso programado significa que cuando el contenido llega al final de su período de retención, es posible que los revisores tarden hasta siete días en recibir la notificación por correo electrónico de que el contenido está esperando la eliminación.
+Las notificaciones por correo electrónico se envían automáticamente a los revisores cada semana. Este proceso programado significa que cuando el contenido llega al final de su período de retención, es posible que los revisores tarden hasta siete días en recibir la notificación por correo electrónico de que el contenido está esperando a ser eliminado.
   
 Se pueden auditar todas las acciones de eliminación. Además, el texto de justificación introducido por el revisor se guarda y se muestra en la columna **Comentario** de la página **Elementos eliminados**.
   
@@ -133,7 +133,7 @@ Estos elementos muestran **Registros eliminados** en la columna **Tipo**. Por ej
 
 ![Elementos que se eliminaron sin una revisión para eliminación](../media/records-disposed2.png)
 
-Los elementos que se muestran en la pestaña **Elementos eliminados** se guardan hasta siete años después de que se elimine el elemento, con un límite de un millón artículos por registro para ese período. Si ve que el número de **Recuento** está a punto de alcanzar este límite de un millón y necesita una prueba de eliminación de los registros, póngase en contacto con el [Soporte técnico de Microsoft](/office365/admin/contact-support-for-business-products).
+Los elementos que se muestran en la pestaña **Elementos eliminados** se guardan hasta siete años después de que se elimine el elemento, con un límite de un millón artículos por registro para ese período. Si ve que el número de **Recuento** está a punto de alcanzar este límite de un millón y necesita una prueba de eliminación de los registros, póngase en contacto con el [Soporte técnico de Microsoft](../business-video/get-help-support.md).
 
 > [!NOTE]
 > Esta funcionalidad usa la información del [registro de auditoría unificado](search-the-audit-log-in-security-and-compliance.md) y, por lo tanto, requiere que la auditoría se [habilite y se pueda buscar](turn-audit-log-search-on-or-off.md) para que se puedan capturar los eventos correspondientes.

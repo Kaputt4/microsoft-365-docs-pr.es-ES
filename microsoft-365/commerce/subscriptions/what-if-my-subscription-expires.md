@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Obtenga información sobre lo que sucede con sus datos cuando su suscripción de Microsoft 365 para empresas expira, está deshabilitada o la cancela.
-ms.openlocfilehash: 8f853000ebd20ab8f6625df9f773bbb182bdb7fd
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 45f331fd14abb2f851c8ff84e729b8443a60b59b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644661"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297277"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?
 
 Si su suscripción finaliza, ya sea porque expira o porque decide cancelarla, el acceso a los servicios, aplicaciones y datos de clientes de Microsoft 365 pasa por varios estados antes de que la suscripción se desactive por completo o se *elimine*. Si está al tanto de esta progresión, estará más preparado para devolver su suscripción a un estado activo antes de que sea tarde o, si decide abandonar Microsoft 365, realizar una copia de seguridad de sus datos antes de que se eliminen finalmente.
 
-Lea esta información importante antes de ponerse en contacto con el [soporte técnico de Microsoft 365](../../admin/contact-support-for-business-products.md).
+Lea esta información importante antes de ponerse en contacto con el [soporte técnico de Microsoft 365](../../business-video/get-help-support.md).
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>¿Qué ocurre con los datos cuando una suscripción expira?
 
@@ -73,7 +73,7 @@ Para obtener información sobre cómo cancelar la suscripción, vea [Cancelar su
 
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>¿Cuáles son mis opciones si mi suscripción está a punto de expirar?
 
-Mientras una suscripción esté activa, usted y sus usuarios finales tendrán acceso normal a sus datos, servicios como el correo electrónico y OneDrive para la Empresa, y otras aplicaciones de Office. Como administrador, recibirá una serie de notificaciones a través del correo electrónico en el centro de administración cuando se aproxime la fecha de expiración de su suscripción.
+Mientras una suscripción está activa, usted y sus usuarios finales tienen acceso normal a sus datos, los servicios como el correo electrónico y OneDrive para la Empresa, y otras aplicaciones de Office. Como administrador, recibirá una serie de notificaciones a través del correo electrónico en el Centro de administración cuando se aproxime la fecha de expiración de la suscripción.
   
 Antes de que la suscripción llegue a su fecha de expiración, tendrá algunas opciones:
   
@@ -99,7 +99,7 @@ Antes de que la suscripción llegue a su fecha de expiración, tendrá algunas o
 
 ## <a name="what-happens-after-my-subscription-expires"></a>¿Qué pasa después de que expira la suscripción?
 
-Si deja que la suscripción expire, esta pasa por varias fases antes de eliminarse de forma permanente. Como administrador, esto le da tiempo de reactivarla si desea continuar con el servicio o bien realizar una copia de seguridad de sus datos si decide que ya no desea la suscripción.
+Si deja que la suscripción expire, esta pasará por varias fases antes de eliminarse de forma permanente. Esto, como administrador, le da tiempo de reactivarla si desea continuar con el servicio o de realizar una copia de seguridad de sus datos si decide que ya no desea la suscripción.
   
 Esto es lo que puede ocurrir cuando su suscripción pase por cada estado.
   
@@ -123,9 +123,9 @@ Como administrador global o de facturación, puede [reactivar la suscripción](r
   
  **Qué es lo que va a pasar:** Si no reactiva la suscripción mientras está expirada o deshabilitada, la suscripción se eliminará.
   
-Los administradores y usuarios ya no tendrán acceso a los servicios ni aplicaciones de Office incluidos en la suscripción. Todos los datos del cliente, desde los datos del usuario hasta los documentos y el correo electrónico, se eliminarán permanente y no serán recuperables.
+Los administradores y usuarios ya no tienen acceso a los servicios ni aplicaciones de Office incluidos en la suscripción. Todos los datos del cliente, desde los datos de usuarios hasta los documentos y correos electrónicos, se eliminarán de forma permanente y no se podrán recuperar de ninguna manera.
   
-A partir de ese momento, no podrá reactivar la suscripción. Sin embargo, como administrador global o de facturación, todavía podrá acceder al centro de administración para administrar otras suscripciones o bien comprar nuevas suscripciones para satisfacer las necesidades de su negocio.
+A partir de ese momento, no podrá reactivar la suscripción. Sin embargo, como administrador global o de facturación, todavía podrá acceder al Centro de administración para administrar otras suscripciones o para comprar nuevas suscripciones que satisfagan las necesidades de su negocio.
   
 > [!NOTE]
 > - Si agrega una nueva suscripción del mismo tipo de la que ha sido eliminada, no se restauran los datos asociados a la suscripción eliminada.
@@ -133,7 +133,7 @@ A partir de ese momento, no podrá reactivar la suscripción. Sin embargo, como 
 
 ### <a name="what-happens-when-my-trial-ends"></a>¿Qué ocurre cuando termina la versión de prueba?
 
-Cuando termine la versión de prueba, no podrá continuar usando Microsoft 365 de forma gratuita. Tiene varias opciones: 
+Cuando termine la versión de prueba, no podrá continuar usando Microsoft 365 de forma gratuita. Tiene varias opciones:
 
 - **Compre Microsoft 365.** Al expirar la prueba, entrará en la fase de Expirada, que le dará otros 30 días (para la mayoría de las pruebas, en la mayoría de los países y regiones) para comprar Microsoft 365. Para obtener información sobre cómo convertir su versión de prueba en una suscripción de pago, vea [Comprar una suscripción a partir de la evaluación gratuita](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial).
 

@@ -22,12 +22,12 @@ description: Use etiquetas de confidencialidad de Microsoft Information Protecti
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: da660f79cd218c4b97cd2159f2811985d4651cef
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: bd3cc0a71fab9f2ceb6d3219a371bb4d5c030744
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245629"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297253"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Información sobre las etiquetas de confidencialidad
 
@@ -44,12 +44,14 @@ Las etiquetas de confidencial de la solución de Microsoft Information Protectio
 
 Ejemplo que muestra las etiquetas de confidencialidad disponibles en Excel, en la pestaña **Inicio** de la cinta de opciones. En este ejemplo, la etiqueta aplicada se muestra en la barra de estado:
 
-![Etiqueta de sensibilidad en la barra de herramientas de Excel y en la barra de estado](../media/Sensitivity-label-in-Excel.png)
+![Etiqueta de confidencialidad en la barra de herramientas de Excel y en la barra de estado](../media/Sensitivity-label-in-Excel.png)
 
 Para aplicar etiquetas de confidencialidad, los usuarios tienen que haber iniciado sesión en Microsoft 365 con su cuenta profesional o educativa.
 
 > [!NOTE]
-> Para los inquilinos de la Administración gubernamental de EE. UU., [etiquetas sensibles son compatibles ahora con los entornos GCC y GCC High](/officeupdates/current-channel#version-2101-january-26) y actualmente se están implementando para entornos DoD.
+> Para espacios empresariales de la Administración gubernamental de EE. UU., las etiquetas de confidencialidad ahora son compatibles con todas las plataformas:
+> - Para entornos de GCC y GCC High: Notas de la versión para [Office para Windows](/officeupdates/current-channel#version-2101-january-26) y [Office para Mac](/officeupdates/release-notes-office-for-mac#feature-updates-2)
+> - Para entornos DoD: Notas de versión para [Office para Windows](/officeupdates/current-channel#version-2103-march-30)
 >
 > Si usa el cliente de etiquetas unificado y el escáner de Azure Information Protection para estos entornos, vea el [Descripción del servicio de Azure Information Protection Premium Government](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
@@ -71,7 +73,7 @@ Puede usar etiquetas de confidencialidad para:
 
 - **Clasificar contenido sin usar una configuración de protección.** También puede simplemente asignar una etiqueta como resultado de la clasificación del contenido. Esto proporciona a los usuarios una asignación visual de la clasificación de los nombres de etiqueta de la organización y pueden usar las etiquetas para crear informes de uso y ver los datos de la actividad de su contenido confidencial. También puede usar esta información para aplicar la configuración de protección más adelante.
 
-En todos estos casos, las etiquetas de confidencialidad de Microsoft 365 pueden ayudarle a realizar las acciones correctas en el contenido adecuado. Con las etiquetas de confidencialidad, puede clasificar los datos en toda la organización, y aplicar la configuración de protección en función de dicha clasificación.
+En todos estos casos, las etiquetas de confidencialidad de Microsoft 365 pueden ayudarle a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de confidencialidad, puede clasificar los datos de su organización para administrarlos mejor y aplicar configuraciones de protección basadas en esa clasificación.
 
 Para obtener más información sobre estos y otros escenarios que son compatibles con las etiquetas de confidencialidad, vea [Escenarios comunes para las etiquetas de confidencialidad](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). Se siguen desarrollando nuevas funciones compatibles con las etiquetas de confidencialidad, por lo que también le puede resultar útil consultar el [Plan de desarrollo de Microsoft 365](https://aka.ms/MIPC/Roadmap).
 
@@ -154,7 +156,7 @@ Aunque, el orden de las subetiquetas se usa en el [ etiquetado automático](appl
 
 ### <a name="sublabels-grouping-labels"></a>Subetiquetas (agrupación de etiquetas)
 
-Con las subetiquetas, puede agrupar una o varias etiquetas bajo una etiqueta principal que el usuario ve en la aplicación de Office. Por ejemplo, en Confidencial, su organización puede usar varias etiquetas distintas para determinados tipos dentro de esa clasificación. En este ejemplo, la etiqueta principal Confidencial es simplemente una etiqueta de texto sin ninguna configuración de protección y, como contiene subetiquetas, no se puede aplicar al contenido. En su lugar, los usuarios deben elegir Confidencial para ver las subetiquetas y, a continuación, pueden elegir una subetiqueta para que se aplique al contenido.
+Con las subetiquetas, puede agrupar una o varias etiquetas bajo una etiqueta primaria que un usuario vea en una aplicación de Office. Por ejemplo, bajo Confidencial, su organización puede usar varias etiquetas distintas para determinados tipos dentro de esa clasificación. En este ejemplo, la etiqueta primaria Confidencial es simplemente una etiqueta de texto sin ninguna configuración de protección y, como contiene subetiquetas, no se puede aplicar al contenido. En su lugar, los usuarios deben elegir Confidencial para ver las subetiquetas y, a continuación, pueden elegir una subetiqueta para que se aplique al contenido.
 
 Las subetiquetas son simplemente una forma de presentar etiquetas a los usuarios en grupos lógicos. Las subetiquetas no heredan ninguna configuración de su etiqueta principal. Cuando publique una subetiqueta para un usuario, éste podrá aplicar dicha subetiqueta al contenido, pero no podrá aplicar solo la etiqueta principal.
 
@@ -219,13 +221,14 @@ Una directiva de etiqueta consiste en lo siguiente:
 - Los usuarios y grupos a los que se asignará la directiva con etiquetas.
 - El ámbito de la directiva y la configuración de directiva para ese ámbito (como la etiqueta predeterminada para los archivos y mensajes de correo electrónico).
 
-Puede incluir un usuario en varias directivas de etiquetas, y el usuario recibirá todas las etiquetas de confidencialidad y la configuración de esas directiva. Si hay un conflicto en la configuración de varias directivas, se aplicará el valor de la directiva con la prioridad más alta. Es decir, la prioridad más alta gana en cada valor.
+Puede incluir un usuario en varias directivas de etiquetas, y el usuario recibirá todas las etiquetas de confidencialidad y la configuración de esas directiva. Si hay un conflicto en la configuración de varias directivas, se aplicará el valor de la directiva con la prioridad más alta (la posición más baja). Es decir, la prioridad más alta gana en cada valor.
 
-Si no ve la etiqueta o el comportamiento del valor de la directiva de etiquetas que esperaba para un usuario o un grupo, compruebe el orden de las directivas de etiqueta de sensibilidad. Para cambiar el orden de las directivas de etiqueta, seleccione una directiva de etiqueta de confidencialidad > seleccione los puntos suspensivos a la derecha > **Mover hacia abajo** o **Mover hacia arriba**.
+Si no ve la etiqueta o el comportamiento del valor de la directiva de etiquetas que esperaba para un usuario o un grupo, compruebe el orden de las directivas de etiqueta de sensibilidad. Es posible que necesite mover la directiva hacia abajo. Para cambiar el orden de las directivas de etiqueta, seleccione una directiva de etiqueta de confidencialidad > seleccione los puntos suspensivos a la derecha > **Mover hacia abajo** o **Mover hacia arriba**.
 
 ![Opción Mover en la página de directivas de etiquetas de confidencialidad](../media/sensitivity-label-policy-priority.png)
 
-Si usa etiquetas de retención además de etiquetas de carácter, es importante que recuerde que los temas prioritarios son las directivas de etiquetas de carácter, pero no para [las etiquetas de retención](retention.md#the-principles-of-retention-or-what-takes-precedence).
+> [!NOTE]
+> Recuerde: Cuando haya un conflicto de configuración para un usuario que tiene varias directivas asignadas, se aplicará la configuración de la directiva con la prioridad más alta (la posición más baja).
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Etiquetas de confidencialidad y Azure Information Protection
 
