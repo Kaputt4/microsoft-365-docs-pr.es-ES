@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3d3890706e0519072d363f571f9e7b9279765043
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: e80a0d5370a58ee8988ceab0b52d401afc04a7aa
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50543777"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295060"
 ---
-# <a name="contact-support-for-turkey"></a><span data-ttu-id="b4977-103">Póngase en contacto con el soporte técnico de Turquía</span><span class="sxs-lookup"><span data-stu-id="b4977-103">Contact support for Turkey</span></span>
+# <a name="contact-support-for-turkey"></a><span data-ttu-id="5bb4d-103">Póngase en contacto con el soporte técnico de Turquía</span><span class="sxs-lookup"><span data-stu-id="5bb4d-103">Contact support for Turkey</span></span>
 
-<span data-ttu-id="b4977-104">[Buscar otro país o región](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="b4977-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="5bb4d-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="5bb4d-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="b4977-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="b4977-105">Phone number</span></span>
-<span data-ttu-id="b4977-106">0 850 3902777</span><span class="sxs-lookup"><span data-stu-id="b4977-106">0 850 3902777</span></span>
+## <a name="phone-number"></a><span data-ttu-id="5bb4d-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="5bb4d-105">Phone number</span></span>
+<span data-ttu-id="5bb4d-106">0 850 3902777</span><span class="sxs-lookup"><span data-stu-id="5bb4d-106">0 850 3902777</span></span>
 
-## <a name="hours"></a><span data-ttu-id="b4977-107">Horas</span><span class="sxs-lookup"><span data-stu-id="b4977-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="b4977-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="b4977-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="5bb4d-107">Horas</span><span class="sxs-lookup"><span data-stu-id="5bb4d-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="5bb4d-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="5bb4d-108">Billing Support:</span></span>
 
-<span data-ttu-id="b4977-109">Turco: Mon-Fri 9 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="b4977-109">Turkish: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="5bb4d-109">Turco: Mon-Fri 9 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="5bb4d-109">Turkish: Mon-Fri 9 AM-6 PM</span></span>
 
-<span data-ttu-id="b4977-110">Inglés: Mon-Fri 9 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="b4977-110">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="5bb4d-110">Inglés: Mon-Fri 9 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="5bb4d-110">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="b4977-111">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="b4977-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="5bb4d-111">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="5bb4d-111">Technical Support:</span></span>
 
-<span data-ttu-id="b4977-112">Turco: Mon-Fri 8 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="b4977-112">Turkish: Mon-Fri 8 AM-6 PM</span></span>
+<span data-ttu-id="5bb4d-112">Turco: Mon-Fri 8 AM-6 PM</span><span class="sxs-lookup"><span data-stu-id="5bb4d-112">Turkish: Mon-Fri 8 AM-6 PM</span></span>
 
-<span data-ttu-id="b4977-113">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="b4977-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="5bb4d-113">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="5bb4d-113">English: 24 hours a day, 7 days a week</span></span>

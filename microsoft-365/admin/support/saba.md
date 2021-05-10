@@ -12,27 +12,27 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 89c79d7f0c902d9244a4d1bdc9f22f5a79a86788
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 60ca450aafa3a064fe1f87d5156343c26142b2c0
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544797"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295492"
 ---
-# <a name="contact-support-for-saba"></a><span data-ttu-id="b4962-103">Póngase en contacto con el soporte técnico de Saba</span><span class="sxs-lookup"><span data-stu-id="b4962-103">Contact support for Saba</span></span>
+# <a name="contact-support-for-saba"></a><span data-ttu-id="e95a4-103">Póngase en contacto con el soporte técnico de Saba</span><span class="sxs-lookup"><span data-stu-id="e95a4-103">Contact support for Saba</span></span>
 
-<span data-ttu-id="b4962-104">[Buscar otro país o región](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="b4962-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="e95a4-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="e95a4-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="b4962-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="b4962-105">Phone number</span></span>
-<span data-ttu-id="b4962-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="b4962-106">+1 312 843 5145</span></span>
+## <a name="phone-number"></a><span data-ttu-id="e95a4-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="e95a4-105">Phone number</span></span>
+<span data-ttu-id="e95a4-106">+1 312 843 5145</span><span class="sxs-lookup"><span data-stu-id="e95a4-106">+1 312 843 5145</span></span>
 
-## <a name="hours"></a><span data-ttu-id="b4962-107">Horas</span><span class="sxs-lookup"><span data-stu-id="b4962-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="b4962-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="b4962-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="e95a4-107">Horas</span><span class="sxs-lookup"><span data-stu-id="e95a4-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="e95a4-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="e95a4-108">Billing Support:</span></span>
 
-<span data-ttu-id="b4962-109">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="b4962-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="e95a4-109">Inglés: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="e95a4-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="b4962-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="b4962-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="e95a4-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="e95a4-110">Technical Support:</span></span>
 
-<span data-ttu-id="b4962-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="b4962-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="e95a4-111">Inglés: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="e95a4-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="b4962-112">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="b4962-112">International call charges apply</span></span>
+<span data-ttu-id="e95a4-112">Se aplican cargos por llamadas internacionales</span><span class="sxs-lookup"><span data-stu-id="e95a4-112">International call charges apply</span></span>

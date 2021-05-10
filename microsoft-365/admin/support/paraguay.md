@@ -12,25 +12,25 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Obtenga información acerca de cómo ponerse en contacto con el soporte técnico de su país o región.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7485a4650eef146cff0492513d5c1824ad774292
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 41701c1a8f4aa14019025c373ce92b91487c2a25
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545085"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295564"
 ---
-# <a name="contact-support-for-paraguay"></a><span data-ttu-id="ca98d-103">Póngase en contacto con el soporte técnico para Paraguay</span><span class="sxs-lookup"><span data-stu-id="ca98d-103">Contact support for Paraguay</span></span>
+# <a name="contact-support-for-paraguay"></a><span data-ttu-id="ccc3a-103">Póngase en contacto con el soporte técnico para Paraguay</span><span class="sxs-lookup"><span data-stu-id="ccc3a-103">Contact support for Paraguay</span></span>
 
-<span data-ttu-id="ca98d-104">[Buscar otro país o región](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="ca98d-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="ccc3a-104">[Buscar otro país o región](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="ccc3a-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="ca98d-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="ca98d-105">Phone number</span></span>
-<span data-ttu-id="ca98d-106">009 800 441 0088</span><span class="sxs-lookup"><span data-stu-id="ca98d-106">009 800 441 0088</span></span>
+## <a name="phone-number"></a><span data-ttu-id="ccc3a-105">Número de teléfono</span><span class="sxs-lookup"><span data-stu-id="ccc3a-105">Phone number</span></span>
+<span data-ttu-id="ccc3a-106">009 800 441 0088</span><span class="sxs-lookup"><span data-stu-id="ccc3a-106">009 800 441 0088</span></span>
 
-## <a name="hours"></a><span data-ttu-id="ca98d-107">Horas</span><span class="sxs-lookup"><span data-stu-id="ca98d-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="ca98d-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="ca98d-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="ccc3a-107">Horas</span><span class="sxs-lookup"><span data-stu-id="ccc3a-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="ccc3a-108">Soporte de facturación:</span><span class="sxs-lookup"><span data-stu-id="ccc3a-108">Billing Support:</span></span>
 
-<span data-ttu-id="ca98d-109">Español: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="ca98d-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="ccc3a-109">Español: lunes a viernes de 9:00 a 17:00</span><span class="sxs-lookup"><span data-stu-id="ccc3a-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="ca98d-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="ca98d-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="ccc3a-110">Soporte técnico:</span><span class="sxs-lookup"><span data-stu-id="ccc3a-110">Technical Support:</span></span>
 
-<span data-ttu-id="ca98d-111">Español: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="ca98d-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="ccc3a-111">Español: 24 horas al día, 7 días a la semana</span><span class="sxs-lookup"><span data-stu-id="ccc3a-111">Spanish: 24 hours a day, 7 days a week</span></span>
