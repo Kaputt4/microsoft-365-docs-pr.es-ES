@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Los administradores pueden obtener más información sobre las características contra la suplantación de identidad disponibles en Exchange Online Protection (EOP), que pueden ayudar a reducir los ataques de suplantación de identidad de los remitentes y dominios falsos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20294bf00c62e59da33b54ea0c8ee85f7b1372af
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 76ad8ac14de7b176ae12dc02272e31e790b6b410
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769027"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291036"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protección contra la suplantación de identidad en EOP
 
@@ -80,7 +80,7 @@ Los mensajes de suplantación de identidad tienen estas implicaciones negativas 
 
   ![Restablecimiento de contraseña legítimo de Microsoft](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
-  El mensaje procede de Microsoft, pero los usuarios se han acostumbrado a sospechar. Como es difícil notar la diferencia entre un mensaje de restablecimiento de contraseña verdadero y uno falso, los usuarios pueden ignorar estos mensajes, marcarlos como correo no deseado o informar innecesariamente sobre ellos a Microsoft como intentos de suplantaciones de identidad.
+  El mensaje sí procede de Microsoft, pero los usuarios se han acostumbrado a sospechar. Como es difícil notar la diferencia entre un mensaje de restablecimiento de contraseña verdadero y uno falso, los usuarios pueden ignorar estos mensajes, marcarlos como correo no deseado o informar innecesariamente sobre ellos a Microsoft como intentos de suplantaciones de identidad.
 
 ## <a name="different-types-of-spoofing"></a>Distintos tipos de suplantación
 
@@ -163,7 +163,7 @@ Para ayudar a que los mensajes de la lista de distribución de correo pasen las 
 
   - Cree reglas de buzón en el cliente de correo para mover mensajes a la Bandeja de entrada. También puede pedir a los administradores que configuren las sustituciones, tal como se describe en [Uso de la inteligencia contra la suplantación de identidad para configurar remitentes permitidos de correo electrónico no autenticado](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email).
 
-  - Cree un vale de soporte con Microsoft 365 para crear una invalidación de la lista de distribución de correo y usarla como legítima. Para obtener más información, consulte [Ponerse en contacto con el soporte técnico para productos empresariales: ayuda para administradores](../../admin/contact-support-for-business-products.md).
+  - Cree un vale de soporte con Microsoft 365 para crear una invalidación de la lista de distribución de correo y usarla como legítima. Para obtener más información, consulte [Ponerse en contacto con el soporte técnico para productos empresariales: ayuda para administradores](../../business-video/get-help-support.md).
 
 Si todos los demás falla, puede notificar el mensaje como falso positivo a Microsoft. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Obtenga información acerca de cómo un administrador global puede cambiar la dirección de correo electrónico y el nombre para mostrar de un usuario. '
-ms.openlocfilehash: 94ed05d87fa290f2ae1059ae04c62c5d0d5e6860
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: a785ef17f0823429ad5eb216a330dc6f04dc7761
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023778"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291024"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiar un nombre de usuario y una dirección de correo electrónico
 
@@ -63,7 +63,7 @@ Para poder realizar estos pasos, debe ser [Administrador global](about-admin-rol
 
 2. Seleccione el usuario. En el panel flotante próximo a **Nombre de usuario/Correo electrónico**, seleccione **Editar**.
 
-3. En el primer cuadro, escriba la primera parte de la nueva dirección de correo electrónico. Si ha agregado su propio dominio a Microsoft 365, puede elegir el dominio para el nuevo alias de correo electrónico mediante la lista desplegable.
+3. En el primer cuadro, escriba la primera parte de la nueva dirección de correo electrónico. Si ha agregado su propio dominio a Microsoft 365, puede elegir el dominio para el nuevo alias de correo electrónico a través de la lista desplegable.
 
 4. Seleccione **Guardar**.
 
@@ -75,7 +75,7 @@ Para poder realizar estos pasos, debe ser [Administrador global](about-admin-rol
 
 2. Seleccione el usuario. En el panel flotante próximo a **Nombre de usuario/Correo electrónico**, seleccione **Editar**.
 
-3. En el primer cuadro, escriba la primera parte de la nueva dirección de correo electrónico. Si ha agregado su propio dominio a Microsoft 365, puede elegir el dominio para el nuevo alias de correo electrónico mediante la lista desplegable.
+3. En el primer cuadro, escriba la primera parte de la nueva dirección de correo electrónico. Si ha agregado su propio dominio a Microsoft 365, puede elegir el dominio para el nuevo alias de correo electrónico a través de la lista desplegable.
 
 4. Seleccione **Guardar**.
 
@@ -221,9 +221,9 @@ Este cambio puede tardar hasta 24 horas en surtir efecto en todos los servicios.
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>"No se encuentra ningún parámetro que coincida con el nombre de parámetro `EmailAddresses´"
 
-Si recibe el mensaje de error "**No se encuentra ningún parámetro que coincida con el nombre de parámetro ‘EmailAddresses’"**, significa que la configuración de su espacio empresarial o de su dominio personalizado, si ha agregado alguno recientemente, está tardando un poco más de lo normal. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al [soporte técnico](../contact-support-for-business-products.md) y pídales que hagan una sincronización completa.
+Si recibe el mensaje de error "**No se encuentra ningún parámetro que coincida con el nombre de parámetro ‘EmailAddresses’"**, significa que la configuración de su espacio empresarial o de su dominio personalizado, si ha agregado alguno recientemente, está tardando un poco más de lo normal. El proceso de configuración puede tardar hasta 4 horas en completarse. Espere un poco para que el proceso de configuración tenga el tiempo suficiente para finalizarse y, a continuación, inténtelo de nuevo. Si el problema continúa, llame al [soporte técnico](../../business-video/get-help-support.md) y pídales que hagan una sincronización completa.
   
-### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"No se pudo modificar el usuario. Revise la información de usuario y vuelva a intentarlo"
+### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"Lo sentimos, no se pudo modificar el usuario. Revise la información de usuario y vuelva a intentarlo"
 
 Si recibió el mensaje de error "**No se pudo modificar el usuario. Revise la información de usuario y vuelva a intentarlo**". significa que no es un administrador global y no tiene permisos para cambiar el nombre del usuario. Busque el administrador global de su empresa y pídale que realice el cambio.
 
