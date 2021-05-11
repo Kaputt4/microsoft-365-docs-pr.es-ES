@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga información sobre cómo administrar elementos parcialmente indizados (también denominados elementos no indexados) desde Exchange, SharePoint y OneDrive para la Empresa dentro de la organización.
-ms.openlocfilehash: c24fb2d9b633181538d76cf35e27dae1824b311d
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 539fd2687735a5ee14be543750becca8c6c3154c
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994809"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311473"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Investigar elementos parcialmente indizados en eDiscovery
 
@@ -49,9 +49,9 @@ Después de ejecutar una búsqueda de exhibición de documentos electrónicos, e
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Cálculo de la relación de elementos parcialmente indizados en la organización
 
-Para comprender la exposición de su organización a elementos parcialmente indizados, puede ejecutar una búsqueda de todo el contenido en todos los buzones (mediante una consulta de palabra clave en blanco). En el siguiente ejemplo, hay 56.208 (4.830 MB) elementos totalmente indexados y 470 (316 MB) elementos parcialmente indizados.
+Para comprender la exposición de su organización a elementos parcialmente indizados, puede ejecutar una búsqueda de todo el contenido en todos los buzones (mediante una consulta de palabra clave en blanco). En el siguiente ejemplo, hay 1.629.904 (146,46 GB) elementos totalmente indizados y 10.025 (10,27 GB) elementos parcialmente indizados.
   
-![Ejemplo de estadísticas de búsqueda que muestran elementos parcialmente indizados](../media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
+![Ejemplo de estadísticas de búsqueda que muestran elementos parcialmente indizados](../media/PartiallyIndexedItemsTest.png)
   
 Puede determinar el porcentaje de elementos parcialmente indizados mediante los siguientes cálculos.
   
@@ -59,23 +59,23 @@ Puede determinar el porcentaje de elementos parcialmente indizados mediante los 
 
 `(Total number of partially indexed items/Total number of items) x 100`
 
-`(470/56,208) x 100 = 0.84%`
+`(10025/1629904) x 100 = 0.62%`
 
-Al usar los resultados de búsqueda del ejemplo anterior, el .84 % de todos los elementos de buzones se indizan parcialmente.
+Al usar los resultados de búsqueda del ejemplo anterior, el 0,62 % de todos los elementos de buzones se indizan parcialmente.
   
  **Para calcular el porcentaje del tamaño de los elementos parcialmente indizados en la organización:**
 
 `(Size of all partially indexed items/Size of all items) x 100`
 
-`(316 MB/4830 MB) x 100 = 6.54%`
+`(10.27 GB/146.46 MB) x 100 = 7.0%`
 
-Por lo tanto, en el ejemplo anterior, el 6,54 % del tamaño total de los elementos de buzón son de elementos parcialmente indizados. Como se ha indicado anteriormente, la mayoría de los clientes de organizaciones tienen menos del 1 % de contenido por volumen y menos del 12 % del contenido por tamaño que está parcialmente indizado.
+Por lo tanto, en el ejemplo anterior, el 7 % del tamaño total de los elementos de buzón son de elementos parcialmente indizados. Como se ha indicado anteriormente, la mayoría de los clientes de organizaciones tienen menos del 1 % de contenido por volumen y menos del 12 % del contenido por tamaño que está parcialmente indizado.
 
 ## <a name="working-with-partially-indexed-items"></a>Trabajar con elementos parcialmente indizados
 
 En los casos en que necesite examinar parcialmente los elementos para [](export-a-content-search-report.md) validar que no contienen información relevante, puede exportar un informe de búsqueda de contenido que contenga información sobre elementos parcialmente indizados. Al exportar un informe de búsqueda de contenido, asegúrese de elegir una de las opciones de exportación que incluye elementos parcialmente indizados.
   
-![Elija la segunda o tercera opción para exportar elementos parcialmente indizados](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
+![Elija la segunda o tercera opción para exportar elementos parcialmente indizados](../media/PartiallyIndexedItemsExportOptions.png)
   
 Al exportar resultados de búsqueda de exhibición de documentos electrónicos o un informe de búsqueda mediante una de estas opciones, la exportación incluye un informe denominado Unindexed Items.csv. Este informe incluye la mayor parte de la misma información que el ResultsLog.csv archivo; sin embargo, el archivo Items.csv unindexed también incluye dos campos relacionados con elementos parcialmente indizados: **Etiquetas** de error y **Propiedades de error**. Estos campos contienen información sobre el error de indización de cada elemento parcialmente indizado. El uso de la información de estos dos campos puede ayudarle a determinar si el error de indización de un determinado impacto en la investigación. Si lo hace, puede realizar una búsqueda dirigida y recuperar y exportar mensajes de correo electrónico específicos y documentos SharePoint o OneDrive para que pueda examinarlos para determinar si son relevantes para la investigación. Para obtener instrucciones paso a paso, vea [Prepare a CSV file for a targeted search in Office 365](csv-file-for-an-id-list-content-search.md).
 

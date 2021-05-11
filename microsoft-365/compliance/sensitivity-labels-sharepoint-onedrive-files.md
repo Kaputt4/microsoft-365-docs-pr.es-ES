@@ -17,16 +17,28 @@ search.appverid:
 - MOE150
 - MET150
 description: Los administradores pueden habilitar la compatibilidad con etiquetas de confidencialidad para Word, Excel y PowerPoint archivos en SharePoint y OneDrive.
-ms.openlocfilehash: c3d4320937b441510424454197c4eb4ffa46d9fe
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f610e04a9115b7654332bcc1f479144b4d100618
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245641"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311933"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Habilitar etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive
 
 >*[Instrucciones de licencias de Microsoft 365 para la seguridad y el cumplimiento](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+> [!NOTE]
+> Hay un problema actual que provoca que los archivos etiquetados y cifrados no se abran en Office en la Web:
+>
+> Aunque investigamos un problema relacionado con propiedades de documento específicas, no podrá abrir muchos archivos en Office en la Web. Para estos archivos, puedes seguir abrirlos y editarlos en las aplicaciones de escritorio y Office móviles. O bien, haga lo siguiente:
+>
+> 1. Abra el archivo en la aplicación Office escritorio.
+> 2. Quite la etiqueta que aplica el cifrado.
+> 3. Guarde el archivo en la ubicación original (SharePoint o OneDrive) y cierre la aplicación de escritorio.
+> 4. Abra el archivo en Office en la Web y vuelva a aplicar la etiqueta original que aplica el cifrado.
+> 
+> Los archivos que se crean y editan solo en Office en la Web no se ven afectados.
 
 Habilite las etiquetas de confidencialidad Office archivos SharePoint y OneDrive para que [](sensitivity-labels.md) los usuarios puedan aplicar las etiquetas de confidencialidad Office para la web. Cuando esta característica está habilitada,  los usuarios verán el botón Confidencialidad en la cinta de opciones para que puedan aplicar etiquetas y ver cualquier nombre de etiqueta aplicado en la barra de estado.
 
@@ -71,14 +83,6 @@ Estas nuevas funcionalidades solo funcionan con [etiquetas de](sensitivity-label
 Usa la versión 19.002.0121.0008 de la aplicación de sincronización de OneDrive o posterior en Windows y la versión 19.002.0107.0008 o posterior en Mac. Ambas versiones se lanzaron el 28 de enero de 2019 y actualmente se lanzan a todos los anillos. Para obtener más información, vea [OneDrive notas de la versión](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). Después de habilitar las etiquetas de confidencialidad para los archivos Office en SharePoint y OneDrive, se pedirá a los usuarios que ejecuten una versión anterior de la aplicación de sincronización que la actualicen.
 
 ## <a name="limitations"></a>Limitaciones
-
-- Power Query y complementos personalizados con Excel en la Web: si estos archivos se cifran con una etiqueta de confidencialidad, SharePoint y OneDrive no pueden procesar los archivos para que los usuarios no puedan abrirlos en Office en la Web. Para estos archivos, aplique una etiqueta sin cifrado para que se puedan abrir en Office en la Web o indique a los usuarios que abran los archivos en sus aplicaciones de escritorio.
-
-- Si tiene problemas para abrir archivos etiquetados y cifrados en Office en la Web, pruebe lo siguiente:
-    1. Abra el archivo en la aplicación Office escritorio.
-    2. Quite la etiqueta que aplica el cifrado.
-    3. Guarde el archivo en la ubicación original (SharePoint o OneDrive) y cierre la aplicación de escritorio.
-    4. Abra el archivo en Office en la Web y vuelva a aplicar la etiqueta original que aplica el cifrado.
 
 - SharePoint y OneDrive automáticamente no aplican etiquetas de confidencialidad a los archivos existentes que ya haya cifrado con etiquetas de Azure Information Protection. En su lugar, para que las características funcionen después de habilitar las etiquetas de confidencialidad Office archivos de SharePoint y OneDrive, complete estas tareas:
     
@@ -173,7 +177,8 @@ Para habilitar las nuevas funcionalidades, use el cmdlet [Set-SPOTenant](/powers
 
 1. Con una cuenta profesional o educativa que tenga privilegios de administrador global SharePoint administrador en Microsoft 365, conéctese a SharePoint. Para saber cómo hacerlo, consulte [Introducción al Shell de administración de SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
     
-    Nota: Si tiene Microsoft 365 Multi-Geo, use el parámetro -Url con [Conectar-SPOService](/powershell/module/sharepoint-online/connect-sposervice)y especifique la dirección URL del sitio del Centro de administración en línea de SharePoint para una de las ubicaciones geográficas.
+   > [!NOTE]
+   > Si ha Microsoft 365 multigeográfico, use el parámetro -Url con [Conectar-SPOService](/powershell/module/sharepoint-online/connect-sposervice)y especifique la dirección URL del sitio del Centro de administración en línea de SharePoint para una de las ubicaciones geográficas.
 
 2. Ejecute el siguiente comando y presione **Y** para confirmar:
 

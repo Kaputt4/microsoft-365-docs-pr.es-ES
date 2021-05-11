@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las características de seguridad incluidas con Microsoft 365 para empresas.
-ms.openlocfilehash: 0cbb13d08b52484d69c50de7e45dafb5020a9192
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a1195ee1296936f3f0106b845f641aa5aaad0dac
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245209"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311441"
 ---
 # <a name="overview-of-security"></a>Información general sobre la seguridad
 
@@ -39,25 +39,25 @@ Microsoft 365 Empresa Premium proporciona características de protección contra
 
 ## <a name="threat-protection"></a>Protección contra amenazas
 
-Microsoft 365 Empresa Premium incluye Office 365 protección contra amenazas avanzada (ATP), un servicio de filtrado de correo electrónico basado en la nube que le protege contra malware, ransomware, vínculos dañinos y mucho más. Atp Caja fuerte links le protege de direcciones URL malintencionadas en el correo electrónico o Office documentos. Atp Caja fuerte datos adjuntos le protege de malware y virus adjuntos a mensajes o documentos.
+Microsoft 365 Empresa Premium incluye Office 365 protección contra amenazas [avanzada (ATP),](safe-links.md)un servicio de filtrado de correo electrónico basado en la nube que le protege contra malware, ransomware, vínculos dañinos y mucho más. Atp Caja fuerte links le protege de direcciones URL malintencionadas en el correo electrónico o Office documentos. Atp Caja fuerte datos adjuntos le protege de malware y virus adjuntos a mensajes o documentos.
 
-La autenticación multifactor (MFA) o la comprobación en dos pasos requiere que presente una segunda forma de autenticación, como un código de verificación, para confirmar su identidad antes de poder acceder a los recursos.  
+[La autenticación multifactor (MFA)](turn-on-mfa.md)o la comprobación en dos pasos requiere que presente una segunda forma de autenticación, como un código de verificación, para confirmar su identidad antes de poder acceder a los recursos.  
 
-Windows Defender proporciona protección completa para el sistema, los archivos y las actividades en línea contra virus, malware, spyware y otras amenazas.
+[Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10) proporciona protección completa para el sistema, los archivos y las actividades en línea contra virus, malware, spyware y otras amenazas.
 
 ## <a name="data-protection"></a>Protección de datos
 
 Las características de protección de Microsoft 365 Empresa Premium ayudan a garantizar que los datos importantes se mantienen seguros y solo las personas autorizadas tienen acceso a ella.
 
-Puede usar directivas de prevención de pérdida de datos (DLP) para identificar y administrar información confidencial, como números de tarjeta de crédito o seguridad social, para que no se comparta por error. 
+Puede usar directivas de prevención de pérdida de datos [(DLP)](set-up-dlp.md) para identificar y administrar información confidencial, como números de tarjeta de crédito o seguridad social, para que no se comparta por error. 
 
-Cifrado de mensajes de Office 365 combina el cifrado y las capacidades de derechos de acceso para garantizar que solo los destinatarios previstos puedan ver el contenido del mensaje. Cifrado de mensajes de Office 365 funciona con Outlook.com, Yahoo!, Gmail y otros servicios de correo electrónico.
+[Cifrado de mensajes de Office 365](https://docs.microsoft.com/microsoft-365/compliance/ome) capacidades de cifrado y derechos de acceso para garantizar que solo los destinatarios previstos puedan ver el contenido del mensaje. Cifrado de mensajes de Office 365 funciona con Outlook.com, Yahoo!, Gmail y otros servicios de correo electrónico.
 
-Archivado de Exchange Online es una solución de archivado basada en la nube que funciona con Microsoft Exchange o Exchange Online para proporcionar capacidades avanzadas de archivado, incluidas las retenciones y la redundancia de datos. Puede usar directivas de retención para ayudar a su organización a reducir las responsabilidades asociadas con el correo electrónico y otras comunicaciones. Si su empresa tiene que conservar las comunicaciones relacionadas con litigios, puede usar las In-Place y las retenciones por juicio para conservar el correo electrónico relacionado.
+[Archivado de Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description) es una solución de archivado basada en la nube que funciona con Microsoft Exchange o Exchange Online para proporcionar capacidades avanzadas de archivado, incluidas las retenciones y la redundancia de datos. Puede usar directivas de retención para ayudar a su organización a reducir las responsabilidades asociadas con el correo electrónico y otras comunicaciones. Si su empresa tiene que conservar las comunicaciones relacionadas con litigios, puede usar las In-Place y las retenciones por juicio para conservar el correo electrónico relacionado.
 
 ## <a name="device-management"></a>Administración de dispositivos
 
-Microsoft 365 Empresa Premium avanzadas de administración de dispositivos te permiten supervisar y controlar lo que los usuarios pueden hacer con los dispositivos inscritos. Estas características incluyen acceso condicional, Administración de dispositivos móviles (MDM), BitLocker y actualizaciones automáticas.
+Microsoft 365 Empresa Premium avanzadas de administración de dispositivos te permiten supervisar y controlar lo que los usuarios pueden hacer con los dispositivos inscritos. Estas características incluyen acceso condicional, Administración de dispositivos móviles [(MDM),](https://docs.microsoft.com/microsoft-365/admin/basic-mobility-security/manage-enrolled-devices)BitLocker y actualizaciones automáticas.
 
 Puede usar directivas de acceso condicional para requerir medidas de seguridad adicionales para determinados usuarios y tareas. Por ejemplo, puede requerir autenticación multifactor (MFA) o bloquear clientes que no admitan el acceso condicional.
 
@@ -69,4 +69,4 @@ Puedes configurar las actualizaciones automáticas para que las últimas caracte
 
 ## <a name="recommended-security-guidance"></a>Instrucciones de seguridad recomendadas
 
-Si tiene Microsoft Business Premium, la forma más rápida de configurar la seguridad y empezar a colaborar de forma segura es seguir las instrucciones de esta biblioteca: Microsoft 365 para empresas y campañas más [pequeñas.](../campaigns/index.md) Esta guía se desarrolló en asociación con el equipo de Microsoft Defending Democracy para proteger a todos los clientes de pequeñas empresas contra las amenazas cibernéticas lanzadas por sofisticados hackers.
+Si tiene Microsoft Empresa Premium, la forma más rápida de configurar la seguridad y empezar a colaborar de forma segura es seguir las instrucciones de esta biblioteca: [Microsoft 365 para empresas y campañas pequeñas](../campaigns/index.md). Esta guía fue desarrollada en asociación con el equipo de Microsoft Defending Democracy para proteger a todos los clientes de empresas pequeñas de las amenazas cibernéticas por parte de hackers sofisticados.

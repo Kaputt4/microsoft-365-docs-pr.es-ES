@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12f648ce476f6e29cbb6b038cc42f2e744d77104
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: dc1e8707dc0810c0986698674a64e969792b5fb8
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933306"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311237"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Solucionar problemas de instalación de Microsoft Defender para Endpoint en Linux
 
@@ -40,8 +40,8 @@ ms.locfileid: "51933306"
 
 Un error en la instalación puede o no provocar un mensaje de error significativo por parte del administrador de paquetes. Para comprobar si la instalación se ha hecho correctamente, obtenga y compruebe los registros de instalación mediante:
 
- ```bash
- sudo journalctl | grep 'microsoft-mdatp'  > installation.log
+```bash
+ sudo journalctl --no-pager | grep 'microsoft-mdatp' > installation.log
 ```
 
 ```bash
@@ -50,7 +50,7 @@ Un error en la instalación puede o no provocar un mensaje de error significativ
 
 ```Output
  microsoft-mdatp-installer[102243]: postinstall end [2020-03-26 07:04:43OURCE +0000] 102216
- ```
+```
 
 Un resultado del comando anterior con la fecha y hora correctas de instalación indica que se ha correcto.
 
@@ -77,6 +77,7 @@ Compruebe si el servicio mdatp se está ejecutando:
 ```bash
 systemctl status mdatp
 ```
+
 ```Output
  ● mdatp.service - Microsoft Defender for Endpoint
    Loaded: loaded (/lib/systemd/system/mdatp.service; enabled; vendor preset: enabled)
@@ -119,7 +120,7 @@ systemctl status mdatp
     sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path>
     ```
 
-    donde ```<systemd_path>``` está para las distribuciones de Ubuntu y Debian y para ```/lib/systemd/system``` ```/usr/lib/systemd/system``` Rhel, CentOS, Oracle y SLES.
+    donde `<systemd_path>` está para las distribuciones de Ubuntu y Debian y para `/lib/systemd/system` `/usr/lib/systemd/system` Rhel, CentOS, Oracle y SLES.
    A continuación, vuelva a ejecutar el paso 2.
 
 4. Si los pasos anteriores no funcionan, compruebe si SELinux está instalado y en modo de aplicación. Si es así, intenta establecerlo en modo permisivo (preferiblemente) o deshabilitado. Se puede hacer estableciendo el parámetro en "permisivo" o "deshabilitado" en el archivo, seguido `SELINUX` `/etc/selinux/config` del reinicio. Consulta la página man de selinux para obtener más detalles.

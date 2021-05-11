@@ -1,5 +1,5 @@
 ---
-title: Límites para la búsqueda de contenido y la exhibición de documentos electrónicos principales en el centro de cumplimiento
+title: Límites de búsqueda de contenido y exhibición de documentos electrónicos principales en el centro de cumplimiento
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,16 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: Obtenga información sobre los límites vigentes para la característica de búsqueda de contenido en el centro de Microsoft 365 cumplimiento, como el número máximo de búsquedas simultáneas. Estos límites de búsqueda también se aplican a las búsquedas asociadas con casos de exhibición de documentos electrónicos principales.
-ms.openlocfilehash: e4cfc79d35b4dc6a22e8e7a872699d906b39a901
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Obtenga información sobre los límites vigentes para la búsqueda de contenido y las características principales de exhibición de documentos electrónicos en el centro de Microsoft 365 cumplimiento.
+ms.openlocfilehash: 47004473efe3407e9123fd15a7b1bf5f23e9fb23
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244325"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311417"
 ---
-# <a name="limits-for-content-search"></a>Límites de búsqueda de contenido 
-Se aplican varios límites a la herramienta de búsqueda de contenido en el centro Microsoft 365 cumplimiento. Esto incluye las búsquedas que se ejecutan en la página **Búsqueda** de contenido y las búsquedas asociadas con un caso de exhibición de documentos electrónicos en la **página eDiscovery** principal. Estos límites ayudan a mantener el estado y la calidad de los servicios proporcionados a las organizaciones. También hay límites relacionados con la indización de mensajes de correo electrónico en Exchange Online búsqueda. No puede modificar los límites de la búsqueda de contenido o la indización de correo electrónico, pero debe tener en cuenta estos límites para planear, ejecutar y solucionar problemas de búsquedas de contenido.
+# <a name="limits-for-ediscovery-search"></a>Límites para la búsqueda de exhibición de documentos electrónicos 
+
+Se aplican varios límites a las herramientas de búsqueda de exhibición de documentos electrónicos en el Microsoft 365 de cumplimiento. Esto incluye las búsquedas que se ejecutan en la página **Búsqueda** de contenido y las búsquedas asociadas con un caso de exhibición de documentos electrónicos en la **página eDiscovery** principal. Estos límites ayudan a mantener el estado y la calidad de los servicios proporcionados a las organizaciones. También hay límites relacionados con la indización de mensajes de correo electrónico en Exchange Online búsqueda. No puede modificar los límites de las búsquedas de exhibición de documentos electrónicos o la indización de correo electrónico, pero debe tenerlas en cuenta para tener en cuenta estos límites al planear, ejecutar y solucionar problemas de búsquedas de exhibición de documentos electrónicos.
+
+Para ver los límites relacionados con la Advanced eDiscovery, vea [Limits in Advanced eDiscovery](limits-ediscovery20.md)
   
 ## <a name="search-limits"></a>Límites de búsqueda
 

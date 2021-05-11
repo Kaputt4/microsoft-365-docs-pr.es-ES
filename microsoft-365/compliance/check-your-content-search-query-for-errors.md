@@ -1,5 +1,5 @@
 ---
-title: Comprobar errores en la consulta de búsqueda de contenido
+title: Comprobar errores en la consulta de búsqueda
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,17 +15,17 @@ search.appverid:
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
-description: Obtenga información sobre cómo detectar errores y errores tipográficos en la consulta de palabras clave para la búsqueda de contenido antes de ejecutar la búsqueda.
-ms.openlocfilehash: 939ac3d227f176a0b74138107ced5dd5b7142bcd
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+description: Obtenga información sobre cómo detectar errores y errores tipográficos en la consulta de palabras clave para las búsquedas de exhibición de documentos electrónicos antes de ejecutar la búsqueda.
+ms.openlocfilehash: 9c041ca690df3306347cbca77df3ba9639801245
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488217"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311693"
 ---
-# <a name="check-your-content-search-query-for-errors"></a>Comprobar errores en la consulta de búsqueda de contenido
+# <a name="check-your-search-query-for-errors"></a>Comprobar errores en la consulta de búsqueda
   
-Esta es una lista de los caracteres no admitidos que buscamos. Los caracteres no admitidos suelen estar ocultos y normalmente causan un error de búsqueda o devuelven resultados no deseados.
+Esta es una lista de los caracteres no admitidos que buscamos en las consultas de búsqueda para búsqueda de contenido y exhibición de documentos electrónicos principales. Los caracteres no admitidos suelen estar ocultos y normalmente causan un error de búsqueda o devuelven resultados no deseados.
   
 - **Comillas inteligentes:** no se admiten comillas simples y dobles inteligentes (también denominadas comillas rizado). Solo pueden usarse las comillas tipográficas en una consulta de búsqueda. 
 
@@ -45,4 +45,4 @@ Este es un ejemplo del mensaje de advertencia que  se muestra después de hacer 
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>Cómo evitar caracteres no admitidos en las consultas de búsqueda
 
-Los caracteres no admitidos normalmente se agregan a una consulta cuando se copia la consulta o partes de la consulta desde otras aplicaciones (como Microsoft Word o Microsoft Excel) y se pegan en el cuadro de palabras clave de la página de consulta de una búsqueda de contenido. La mejor manera de evitar los caracteres no admitidos es simplemente escribir la consulta en el cuadro de palabras clave. O bien, puede copiar una consulta de Word o Excel y, a continuación, pegarla en un editor de texto sin formato, como el Bloc de notas de Microsoft. Guarde el archivo de texto y **seleccione ANSI** en **la** lista desplegable Codificación. Esto quitará cualquier carácter no admitido y de formato. Después, podrá copiar y pegar la consulta del archivo de texto en el cuadro de consulta de palabras clave. 
+Los caracteres no admitidos normalmente se agregan a una consulta cuando se copia la consulta o partes de la consulta desde otras aplicaciones (como Microsoft Word o Microsoft Excel) y se pegan en el cuadro de palabras clave de la página de consulta de una búsqueda de contenido. La mejor manera de evitar los caracteres no admitidos es simplemente escribir la consulta en el cuadro de palabras clave. O puede copiar una consulta de Word o Excel y, a continuación, pegarla en un editor de texto sin formato, como Microsoft Bloc de notas. Guarde el archivo de texto y **seleccione ANSI** en **la** lista desplegable Codificación. Esto quitará cualquier carácter no admitido y de formato. Después, podrá copiar y pegar la consulta del archivo de texto en el cuadro de consulta de palabras clave.

@@ -1,5 +1,5 @@
 ---
-title: Buscar contenido en un caso de exhibición de documentos electrónicos principal
+title: Buscar contenido en un caso principal de exhibición de documentos electrónicos
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,76 +16,70 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Puede buscar contenido que pueda ser relevante para un caso de eDiscovery principal.
-ms.openlocfilehash: d17a9d16643ec9077e02b5438597237b80f09af5
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+description: Busque contenido que pueda ser relevante para un caso de exhibición de documentos electrónicos principal.
+ms.openlocfilehash: 8d2e2a20135312a8f111a071abbe77b03b8e8363
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224627"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311782"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>Buscar contenido en un caso de exhibición de documentos electrónicos principal
 
-Una vez creado un caso de exhibición de documentos electrónicos principal y las personas de interés en el caso se colocan en espera, puede crear y ejecutar una o más búsquedas de contenido relevante para el caso. Las búsquedas asociadas a un caso de  exhibición de documentos electrónicos principal no aparecen en la página Búsqueda de contenido en el Centro de cumplimiento de Microsoft 365. Estas búsquedas se enumeran en la **página Búsquedas** del caso de eDiscover principal al que están asociadas las búsquedas. Esto también significa que solo los miembros del caso pueden tener acceso a las búsquedas asociadas a un caso.
+Después de crear un caso de exhibición de documentos electrónicos principal y de que los interesados en el caso estén en espera, puede crear y ejecutar una o más búsquedas de contenido relevante para el caso. Las búsquedas asociadas con un caso de  exhibición de documentos electrónicos principales no aparecen en la página Búsqueda de contenido del centro de Microsoft 365 cumplimiento. Estas búsquedas se enumeran en la **página Búsquedas** del caso de exhibición de documentos electrónicos principales al que están asociadas las búsquedas. Esto también significa que los miembros del caso solo pueden acceder a las búsquedas asociadas a un caso.
 
 Para crear una búsqueda de exhibición de documentos electrónicos principal:
   
-1. Vaya e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado los permisos de exhibición de [https://compliance.microsoft.com](https://compliance.microsoft.com) documentos electrónicos adecuados.
+1. Vaya a e inicie sesión con las credenciales de la cuenta de usuario a la que se han asignado los permisos de exhibición de documentos electrónicos adecuados y es miembro <https://compliance.microsoft.com> del caso.
 
-2. En el panel de navegación izquierdo del Centro de cumplimiento de Microsoft 365, haga clic en Mostrar todo y, a continuación, haga clic en **eDiscovery > Principal.**
+2. En el panel de navegación izquierdo del centro de Microsoft 365 cumplimiento, haga clic en Mostrar todo **y,** a continuación, haga clic en **eDiscovery > Core**.
 
-3. En la **página eDiscovery** principal, seleccione el caso en el que desea crear una búsqueda asociada y, a continuación, haga clic **en Abrir caso.**
+3. En la **página Exhibición de** documentos electrónicos principal, seleccione el caso en el que desea crear una búsqueda asociada y, a continuación, haga clic **en Abrir caso**.
 
-4. En la **página principal** del caso, haga clic en la **pestaña** Búsquedas.
+4. En la **página principal** del caso, haga clic en la **pestaña Búsquedas** y, a continuación, haga clic **en Nueva búsqueda**.
+
+   ![Haga clic en Nueva búsqueda para crear una búsqueda de exhibición de documentos electrónicos principal](../media/CoreeDiscoverySearch1.png)
+
+   > [!NOTE]
+   > La **opción Buscar por lista de** identificadores le permite buscar mensajes de correo electrónico específicos y otros elementos de buzón mediante una lista de Exchange identificadores. Para crear una búsqueda por lista de id., debe enviar un archivo CSV que identifique los elementos de buzón específicos que desee buscar. Para sabe cómo hacerlo, consulte [Preparar un archivo CSV para una búsqueda por lista de id.](csv-file-for-an-id-list-content-search.md)
+
+5. En el **Asistente para nueva** búsqueda, escriba un nombre para la búsqueda y una descripción opcional que ayude a identificar la búsqueda. El nombre de la búsqueda debe ser único en la organización.
+
+6. En la **página Ubicaciones,** elija las ubicaciones de contenido que desea buscar. Puede buscar buzones, sitios y carpetas públicas.
+
+    ![Elegir las ubicaciones de contenido para colocar en suspensión](../media/ContentSearchLocations.png)
   
-5. En la **página Buscar,** haga clic **en Nueva búsqueda.**
+   1. **Exchange buzones** de correo: establece la alternancia en **Activar** y, a continuación, haz clic en Elegir **usuarios,** grupos o equipos para especificar los buzones que se colocarán en espera. Use el cuadro de búsqueda para buscar buzones de usuario y grupos de distribución (para colocar una retención en los buzones de los miembros del grupo) para colocar en espera. También puede buscar en el buzón asociado a un equipo de Microsoft (para mensajes de canal), Office 365 grupo y Yammer grupo. Para obtener más información acerca de los datos de la aplicación almacenados en buzones, vea Contenido almacenado en [buzones para eDiscovery](what-is-stored-in-exo-mailbox.md).
 
-6. En la página **Nueva búsqueda**, puede agregar palabras clave y condiciones para crear la consulta de búsqueda. 
-
-    ![Nueva búsqueda](../media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
+   2. **SharePoint:** establece la alternancia en **Activar**  y, a continuación, haz clic en Elegir sitios para especificar SharePoint sitios y OneDrive cuentas que se colocarán en espera. Escriba la dirección URL de cada sitio que quiere suspender. También puede agregar la dirección URL del sitio SharePoint para un grupo de Microsoft, Office 365 grupo o Yammer grupo.
   
-   a. Puede especificar palabras clave, propiedades de mensaje, como fechas de envío y recibido, o propiedades de documento, como nombres de archivo o la fecha en que se modificó por última vez un documento. Puede usar consultas más complejas que usen un operador booleano, como **AND**, **OR**, **NOT** o **NEAR**. Además, puede buscar información confidencial (como los números de la seguridad social) en documentos o buscar en documentos que se han compartido de forma externa. Si deja vacío el cuadro de palabras clave, todo el contenido ubicado en las ubicaciones de contenido especificadas se incluirá en los resultados de la búsqueda.
-
-   b. Puede hacer clic en la casilla **Mostrar lista** de palabras clave y escribir una palabra clave en cada fila. Si lo hace, las palabras clave de cada fila se conectan mediante el operador **OR** en la consulta de búsqueda que se crea. Puede escribir un máximo de 20 palabras clave en la lista.
-
-    ![Lista de palabras clave](../media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
+   3. **Exchange carpetas públicas:** establece la alternancia en **Activar** para poner todas las carpetas públicas de la Exchange Online organización en espera. No puede elegir carpetas públicas específicas para poner en espera. Deje el botón de alternancia desactivado si no desea poner una retención en carpetas públicas.
   
-    ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestran cuántos elementos coinciden con cada palabra clave. Esto le ayudará a identificar rápidamente las palabras clave más (y menos) efectivas. También puede usar una frase de palabras clave (entre paréntesis) en una fila. Para saber más sobre las estadísticas de búsqueda, consulte [Ver estadísticas de palabras clave para resultados de búsqueda de contenido](view-keyword-statistics-for-content-search.md).
+   4. Mantenga esta casilla activada para buscar contenido Teams para los usuarios locales. Por ejemplo, si busca en todos los buzones de Exchange de la organización y esta casilla está activada, el almacenamiento basado en la nube que se usa para almacenar datos de chat Teams los usuarios locales se incluirá en el ámbito de la búsqueda. Para obtener más información, consulte [Buscar los datos de chat de Teams de usuarios locales](search-cloud-based-mailboxes-for-on-premises-users.md).
 
-    Para obtener más información acerca del uso de la lista de palabras clave, vea [Creación de una consulta de búsqueda.](content-search.md#building-a-search-query)
+7. En la **página Definir las condiciones de búsqueda,** escriba una consulta de palabra clave y agregue condiciones a la consulta de búsqueda si es necesario.
 
-   c. Puede hacer clic **en Condiciones** y agregar condiciones a una consulta de búsqueda para restringir una búsqueda y devolver un conjunto de resultados más refinado. Con cada condición, se agrega una cláusula a la consulta de búsqueda KQL que se crea y se ejecuta al iniciar la búsqueda. Una condición está conectada de forma lógica con la consulta por palabra clave (especificada en el cuadro de palabra clave) mediante el operador **AND**. Esto significa que los elementos deben satisfacer tanto la consulta de palabra clave como cada condición que se incluirá en los resultados. De esta manera, las condiciones permiten restringir los resultados.
+   ![Configurar la consulta de búsqueda](../media/ContentSearchQuery.png)
 
-    Para obtener más información sobre cómo crear una consulta de búsqueda y el uso de las condiciones, consulte [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
+   1. Especifique palabras clave, propiedades de mensaje, como fechas enviadas y recibidas, o propiedades de documento como nombres de archivo o la fecha en que se modificó por última vez un documento. También puede usar consultas más complejas con operadores booleanos como **Y**, **O**, **NOT** y **NEAR**. Si deja el cuadro de la palabra clave en blanco, todo el contenido en las ubicaciones especificadas se incluye en los resultados de la búsqueda. Para obtener más información, vea [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
 
-7. En **Ubicaciones: ubicaciones en espera,** elija las ubicaciones de contenido en las que desea buscar. Puede buscar buzones, sitios y carpetas públicas en la misma búsqueda.
+   2. También puede marcar la casilla **Mostrar lista de palabras clave** y escribir una palabra clave en cada fila. En este caso, las palabras clave de cada fila estarán conectadas por un operador lógico (**c:s**) funcionalmente similar al operador **O** en la consulta de búsqueda creada.
 
-    ![Ubicaciones, ubicaciones en espera](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
-  
-    - **Todas las ubicaciones**. Seleccione esta opción para buscar en todas las ubicaciones de contenido de la organización. Al seleccionar esta opción, puede elegir buscar en todos los buzones de Exchange (incluidos los buzones de todos los grupos de Microsoft Teams, Yammer y Office 365), todos los sitios de SharePoint y OneDrive para la Empresa (que incluyen los sitios de todos los grupos de Microsoft Teams, Yammer y Office 365) y todas las carpetas públicas.
-    
-    - **Todas las ubicaciones en espera.** Seleccione esta opción para buscar en todas las ubicaciones de contenido que se han colocado en retención de exhibición de documentos electrónicos en el caso. Si el caso contiene varias retenciones, se buscarán las ubicaciones de contenido de todas las retenciones. Además, si una ubicación de contenido se colocó en una retención basada en consultas, solo se buscarán los elementos que están en retención cuando ejecute la búsqueda de contenido que está creando en este paso. Por ejemplo, si un usuario se coloca en conservación de casos basada en consulta que conserva los elementos que se enviaron o crearon antes de una fecha específica, solo se buscarían esos elementos. Esto se logra conectando la consulta de retención de casos y la consulta de búsqueda de contenido mediante un **operador AND.** Para obtener más información, vea [Ubicaciones de búsqueda en retención de exhibición de documentos electrónicos.](create-ediscovery-holds.md#search-locations-on-ediscovery-hold)
-    
-    - **Ubicaciones específicas**. Seleccione esta opción para seleccionar los buzones y sitios en los que desea buscar. Al seleccionar esta opción y hacer **clic** en Modificar, aparece una lista de ubicaciones. Puede elegir buscar en cualquiera o todos los usuarios, grupos, equipos o ubicaciones de sitios. También puede buscar en las carpetas públicas de su organización.
-    
-      ![Seleccionar ubicaciones específicas](../media/97469b15-7be1-4aee-be27-f8343636152c.png)
-  
-     Si selecciona esta opción y busca en cualquier ubicación de contenido que esté en espera, cualquier consulta de una retención de casos basada en consulta no se aplicará a la consulta de búsqueda. En otras palabras, se busca todo el contenido, no solo el contenido que se conserva mediante una retención de casos basada en consultas.
+      ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestran cuántos elementos coinciden con cada palabra clave. Esto le ayudará a identificar rápidamente las palabras clave más (y menos) efectivas. También puede usar una frase de palabras clave (entre paréntesis) en una fila. Para obtener más información acerca de la lista de palabras clave y las estadísticas de búsqueda, vea [Get keyword statistics for searches](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-searches).
 
-8. Después de seleccionar las ubicaciones de contenido para buscar, haga clic **en Listo** y, a continuación, haga clic en **Guardar**.
+      > [!NOTE]
+      > Para ayudar a reducir los problemas causados por listas de palabras clave grandes, estás limitado a un máximo de 20 filas en la lista de palabras clave.
 
-9. En la **página Nueva búsqueda,** haga clic en **& ejecutar** y, a continuación, escriba un nombre para la búsqueda. Las búsquedas asociadas a un caso de exhibición de documentos electrónicos principal deben tener nombres únicos en la organización de Office 365.
+   3. Puede agregar condiciones de búsqueda para restringir una búsqueda y devolver un conjunto de resultados más refinado. Cada condición agrega una cláusula a la consulta de búsqueda que se crea y se ejecuta cuando se inicia la búsqueda. Una condición se conecta lógicamente a la consulta de palabras clave (especificada en el cuadro de palabras clave) mediante el operador **c:c**, que tiene una función parecida al operador **Y**. Eso significa que los elementos tienen que satisfacer la consulta de palabra clave y una o más condiciones para que se incluyan en los resultados. De esta manera, las condiciones permiten restringir los resultados. Para obtener una lista y una descripción de las condiciones que puede usar en una consulta de búsqueda, consulte [Condiciones de búsqueda](keyword-queries-and-search-conditions.md#search-conditions).
 
-10. Haga **clic en** Guardar para guardar la configuración de búsqueda e iniciar la búsqueda.
+8. Revise la configuración de búsqueda (y edite si es necesario) y, a continuación, envíe la búsqueda para iniciarla.
 
-  Una vez finalizada la búsqueda, puede obtener una vista previa de los resultados de la búsqueda. Si es necesario, haga **clic en Actualizar** en la página **Búsquedas** para mostrar la búsqueda que creó en la lista.
-
-11. Haga clic en la búsqueda para mostrar la página desplegable, que contiene estadísticas sobre la búsqueda y para realizar otras tareas, como ver estadísticas de búsqueda y exportar los resultados de la búsqueda.
+Una vez finalizada la búsqueda, puede obtener una vista previa de los resultados de la búsqueda. Si es necesario, haga **clic en Actualizar** en la página **Búsquedas** para mostrar la búsqueda que creó.
 
 ## <a name="more-information-about-searching-content-locations"></a>Más información sobre la búsqueda de ubicaciones de contenido
 
-- Al hacer clic **en Elegir usuarios, grupos** o equipos para especificar los buzones en los que buscar, el selector de buzones que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar destinatarios a esta lista, haga clic en Elegir **usuarios,** grupos o equipos , escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda, active la casilla situada junto al nombre y, a continuación, haga clic en Elegir **.**
+- Al hacer clic **en Elegir usuarios, grupos** o equipos para especificar buzones de correo en los que buscar, el selector de buzones que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar destinatarios a esta lista, haga clic en Elegir **usuarios,** grupos o equipos , escriba un nombre (un mínimo de tres caracteres) en el cuadro de búsqueda, active la casilla situada junto al nombre y, a continuación, haga clic en **Elegir**.
 
-- Puede agregar buzones inactivos, Microsoft Teams, Grupos de Yammer, Grupos de Office 365 y grupos de distribución a la lista de buzones para buscar. No se admiten grupos de distribución dinámicos. Si agrega Microsoft Teams, Grupos de Yammer u Grupos de Office 365, se busca en el buzón de grupo o equipo; No se busca en los buzones de los miembros del grupo.
+- Puede agregar buzones inactivos, Microsoft Teams, grupos de Yammer, grupos de Office 365 y grupos de distribución a la lista de buzones para buscar. No se admiten grupos de distribución dinámicos. Si agrega Microsoft Teams, Yammer grupos o grupos de Office 365, se busca en el buzón de grupo o equipo; los buzones de los miembros del grupo no se buscan.
 
-- Para agregar sitios, haga **clic en Elegir** sitios, vuelva **a** hacer clic en Elegir sitios y, a continuación, escriba la dirección URL de cada sitio en el que desee buscar. También puede agregar la dirección URL del sitio de SharePoint para un equipo de Microsoft, un grupo de Yammer o un grupo de Office 365.
+- Para agregar sitios a la búsqueda, active la alternancia y, a continuación, haga clic **en Elegir sitios**. Escriba la dirección URL de cada sitio en el que desea buscar. También puede agregar la dirección URL del sitio SharePoint para un equipo de Microsoft, un grupo de Yammer o un grupo Office 365 grupo.
