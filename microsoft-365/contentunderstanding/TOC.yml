@@ -42,6 +42,16 @@
   items:
     - name: Introducción a la adopción
       href: adoption-getstarted.md
+    - name: Administrar contratos en Microsoft 365
+      items:
+        - name: Información general
+          href: solution-manage-contracts-in-microsoft-365.md
+        - name: Paso 1. Usar SharePoint Syntex
+          href: solution-manage-contracts-step1.md
+        - name: "Paso\_2. Usar Microsoft Teams."
+          href: solution-manage-contracts-step2.md
+        - name: Paso 3. Power Automate
+          href: solution-manage-contracts-step3.md
 - name: Configuración y administración
   items:
     - name: Configurar la comprensión del contenido
