@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Use herramientas de eDiscovery en Microsoft 365 para buscar y exportar datos de chat de Teams para usuarios locales en una implementación híbrida de Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5053eb54b59d55c428290987bcc8b2a8ce26b5b
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: ab59c179b62903dd5f1ddd9b718f81a1ac78923a
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471029"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311806"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Buscar los datos de chat de Teams de usuarios locales
 
@@ -40,7 +40,7 @@ A continuación, se presentan los requisitos y limitaciones para habilitar el al
 - Solo los datos de chat de Teams asociados a un usuario local se almacenan en el área de almacenamiento basada en la nube. Un usuario local no puede acceder de ninguna manera a esta área de almacenamiento.
 
 > [!NOTE]
-> Las conversaciones del canal de Teams siempre se almacenan en el buzón de correo en la nube asociado al equipo, por lo que puede buscar conversaciones del canal. Para obtener más información sobre la búsqueda de conversaciones en los canales de los equipos, consulte [Búsqueda Microsoft Teams y Grupos de Microsoft 365](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
+> Las conversaciones del canal de Teams siempre se almacenan en el buzón de correo en la nube asociado al equipo, por lo que puede buscar conversaciones del canal. Para obtener más información sobre la búsqueda de conversaciones en los canales de los equipos, consulte [Búsqueda Microsoft Teams y Grupos de Microsoft 365](content-search-reference.md#searching-microsoft-teams-and-microsoft-365-groups).
   
 ## <a name="how-it-works"></a>Cómo funciona
 
@@ -56,11 +56,11 @@ Además de esta nueva capacidad, también puede usar las herramientas de eDiscov
 
 En los siguientes elementos de la interfaz de usuario en la Búsqueda de contenido y las herramientas de búsqueda de los casos de Core eDiscovery en el Centro de cumplimiento de Microsoft 365:
   
-- **Agregar contenido de aplicaciones de Office para usuarios locales** se agrega en la sección **Ubicaciones** en la Búsqueda de contenido. Active esta casilla para incluir el almacenamiento basado en la nube para los usuarios locales en una búsqueda de contenido.
+- La casilla **Agregar contenido de aplicación para usuarios locales** aparece en la página del asistente de **Ubicaciones** en la herramienta de búsqueda de contenido y está seleccionada de manera predeterminada. Mantenga seleccionada esta casilla para incluir el almacenamiento basado en la nube para los usuarios locales en una búsqueda de contenido.
 
-    ![La casilla de verificación "Agregar contenido de aplicaciones de Office para usuarios locales" se agrega a la interfaz de búsqueda de contenido](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
+    ![La casilla de verificación "Agregar contenido de aplicaciones de Office para usuarios locales" se agrega a la interfaz de usuario de búsqueda de contenido](../media/EHAMShardCheckBox.png)
   
-- Los usuarios locales aparecen en el selector de ubicaciones de contenido que se utiliza para seleccionar los buzones de correo de los usuarios para realizar búsquedas.
+- Puede buscar usuarios locales cuando elija usuarios específicos que buscar.
 
 ## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>Buscar el contenido de chat de Teams de los usuarios locales
 
@@ -68,29 +68,25 @@ Aquí le explicamos cómo usar la Búsqueda de contenido en el Centro de cumplim
   
 1. En el Centro de cumplimiento de Microsoft 365, vaya a **Búsqueda de contenido**.
 
-2. En la pestaña **Buscar**, haga clic en el ![Icono agregar](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nueva búsqueda**.
+2. En la pestaña **Búsquedas**, haga clic en **Nueva búsqueda** y asigne un nombre a la nueva búsqueda.
 
-    Como se ha explicado anteriormente, la casilla de verificación **Agregar contenido de la aplicación de Office para usuarios locales** se muestra en la sección **Ubicaciones**. Está seleccionado de forma predeterminada.
+3. En la página **Ubicaciones**, establezca el botón de alternancia en **Activado** para los buzones de Exchange. Observe que la casilla **Agregar contenido de aplicación para usuarios locales** se muestra y está activada de forma predeterminada.
 
-3. Crear la consulta de la palabra clave y añadir condiciones a la consulta de búsqueda si es necesario. Para buscar sólo los datos de los chats de Teams, puede añadir la siguiente consulta en el cuadro **Palabras clave**:
+4. Para buscar contenido de Teams para usuarios específicos, seleccione **Elegir usuarios, grupos o equipos** y elija usuarios específicos para incluir en la búsqueda. En caso contrario, haga clic **Siguiente** para buscar contenido de Teams para todos los usuarios, incluidos los usuarios locales.
+
+5. En la página **Definir las condiciones de búsqueda**, cree una consulta de palabra clave y agregue condiciones a la consulta de búsqueda si es necesario. Para buscar sólo los datos de los chats de Teams, puede añadir la siguiente consulta en el cuadro **Palabras clave**:
 
     ```text
     kind:im AND kind:microsoftteams
     ```
 
-4. En este punto, puede elegir una de las siguientes opciones en **Ubicaciones**:
+6. Envíe y ejecute la búsqueda. Se puede obtener una vista previa de cualquier resultado de la búsqueda de usuarios locales como de cualquier otro resultado de búsqueda. También puede exportar los resultados de la búsqueda (incluyendo cualquier dato del chat de los equipos) a un archivo PST. Para más información, consulte lo siguiente:
 
-    - **Todas las ubicaciones:** Seleccione esta opción para buscar en los buzones de correo de todos los usuarios de su organización. Al seleccionar la casilla de verificación, también se buscarán todos los almacenamientos basados en la nube para los usuarios locales.
+    - [Crear una búsqueda](content-search.md)
 
-    - **Ubicaciones específicas:** Seleccione esta opción y luego haga clic en **Modificar** \> Elija usuarios, grupos o equipos para buscar en buzones específicos. Como se ha explicado anteriormente, el selector de ubicaciones permite buscar datos de chat de Teams de usuarios locales.
+    - [Vista previa de los resultados de búsqueda](preview-ediscovery-search-results.md)
 
-5. Guardar y ejecutar la búsqueda. Se puede obtener una vista previa de cualquier resultado de la búsqueda de usuarios locales como de cualquier otro resultado de búsqueda. También puede exportar los resultados de la búsqueda (incluyendo cualquier dato del chat de los equipos) a un archivo PST. Para más información, consulte lo siguiente:
-
-    - [Crear una búsqueda](content-search.md#create-a-search)
-
-    - [Vista previa de los resultados de búsqueda](content-search.md#preview-search-results)
-
-    - [Exportar resultados de la búsqueda de contenido](export-search-results.md)
+    - [Exportar resultados de la búsqueda](export-search-results.md)
 
 ## <a name="using-powershell-to-search-for-teams-chat-data-for-on-premises-users"></a>Usar PowerShell para buscar datos de chat de Teams de usuarios locales
 
@@ -106,13 +102,13 @@ Puede usar los cmdlets **New-ComplianceSearch** y **Set-ComplianceSearch** en el
 
     El parámetro *IncludeUserAppContent* se utiliza para especificar el almacenamiento basado en la nube del usuario o los usuarios que se especifican en el parámetro *ExchangeLocation*. El parámetro *AllowNotFoundExchangeLocationsEnabled* permite buscar el almacenamiento basado en la nube de los usuarios locales. Cuando se utiliza el valor `$true` de este parámetro, la búsqueda no intenta validar la existencia del buzón antes de que se ejecute. Esto es necesario para buscar el almacenamiento basado en la nube de los usuarios locales, ya que este almacenamiento basado en la nube no se resuelve como un buzón de correo basado en la nube.
 
-    El siguiente ejemplo busca los chats de Teams (que son mensajes instantáneos) que contienen la palabra clave "redstone" en el almacenamiento basado en la nube de Sara Davis, quien es una usuario local de la organización Contoso.
+    El siguiente ejemplo busca los chats de Teams que contienen la palabra clave "redstone" en el almacenamiento basado en la nube de Sara Davis, quien es una usuaria local de la organización Contoso.
   
     ```powershell
-    New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
+    New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND (kind:im AND kind:microsoftteams)" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 
-   Después de crear una búsqueda, asegúrese de usar el cmdlet **Start-ComplianceSearch** para ejecutar la búsqueda. 
+   Después de crear una búsqueda, asegúrese de usar el cmdlet **Start-ComplianceSearch** para ejecutar la búsqueda.
   
 Para más información sobre el uso de estos cmdlets, consulte:
   
@@ -146,7 +142,7 @@ Los datos del chat de Teams se almacenan en la Ubicación de datos preferida (PD
 
 **¿Existe el riesgo de perder los datos del chat de los equipos si el buzón del usuario se migra a la nube?**
   
-No. Cuando migre el buzón principal de un usuario local a la nube, los datos de chat de los equipos de ese usuario se migrarán a su nuevo buzón principal basado en la nube.
+No. Cuando migre el buzón principal de un usuario local a la nube, los datos de chat de Teams de ese usuario se migrarán a su nuevo buzón principal basado en la nube.
   
  **¿Puedo aplicar una retención de eDiscovery o las directivas de retención a los usuarios locales?**
   
