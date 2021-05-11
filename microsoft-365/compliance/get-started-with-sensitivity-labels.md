@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ¿Se ha decidido a implementar etiquetas de confidencialidad para proteger los datos de su organización, pero no sabe por dónde empezar? Lea algunas instrucciones prácticas que le ayudarán a ponerse en marcha.
-ms.openlocfilehash: 08ecf97e3cb45896390c3dac9074c54a2b0bbe96
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 2e757f7f07dbb911a8d89890b1f1cce80d7247b5
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994777"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302117"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Empiece a usar las etiquetas de confidencialidad
 
@@ -97,7 +97,10 @@ Todos los escenarios requieren que [Crear y configurar etiquetas de confidencial
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Documentación de usuario final para las etiquetas de confidencialidad
 
-La documentación más eficaz para los usuarios finales serán la guía y las instrucciones que proporcione para los nombres de etiquetas y configuraciones que elija. Para el etiquetado integrado, puede usar la configuración de directiva de etiquetado **Proporcionar a los usuarios un vínculo a una página de ayuda personalizada** para especificar un vínculo interno para esta documentación. A continuación, los usuarios pueden acceder a ella él fácilmente seleccionando **Más información** en el botón **Confidencialidad** de la cinta de opciones de Office para Word, PowerPoint, Excel y Outlook.
+La documentación más eficaz para los usuarios finales serán la guía y las instrucciones que proporcione para los nombres de etiquetas y configuraciones que elija. Puede usar el valor de directiva de etiquetado **Proporcionar a los usuarios un vínculo a una página de ayuda personalizada** para especificar un vínculo interno para esta documentación. Así, los usuarios pueden acceder con facilidad desde el botón **Confidencialidad**:
+
+- Para las etiquetas integradas: opción del menú **Más información**.
+- Para el cliente de etiquetado unificado de Azure Information Protection: opción del menú **Ayuda y comentarios** > vínculo **Más información** en el cuadro de diálogo de Azure Information Protection.
 
 Para escribir la documentación personalizada con mayor facilidad, consulte la siguiente entrada de blog para obtener un paquete de descarga que puede usar para entrenar a los usuarios e impulsar la adopción: [Formación de usuarios finales para las etiquetas de confidencialidad en M365: Cómo acelerar la adopción](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880). 
 
