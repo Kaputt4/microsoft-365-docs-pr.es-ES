@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre lo que sucede con sus datos cuando su suscripción de Microsoft 365 para empresas expira, está deshabilitada o la cancela.
 ms.date: 04/08/2021
-ms.openlocfilehash: f226514078a9f6d6bc1f4761269e2740300ef88d
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: d0821214f9a8c242306685db2ee7faf3779cecff
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326803"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333031"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?
 
@@ -50,6 +50,7 @@ La siguiente tabla muestra qué sucederá cuando expira una suscripción de pago
 *Para la mayoría de las ofertas, en la mayoría de los países y las regiones.
   
 > [!NOTE]
+>
 > **¿Qué son los "datos del cliente"?** Los datos del cliente, tal y como se indica en los [Términos de Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkId=613649), hacen referencia a todos los datos, incluidos todos los archivos de texto, sonido e imagen que el cliente, o alguien en su nombre, proporciona a Microsoft a través del uso de los servicios de Microsoft 365. Para obtener más información acerca de la protección de los datos del cliente, vea [Introducción al Portal de confianza de servicios de Microsoft](../../compliance/get-started-with-service-trust-portal.md).
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>¿Qué pasa si cancelo una suscripción?
@@ -68,6 +69,7 @@ Para obtener información sobre cómo cancelar la suscripción, vea [Cancelar su
 > Si quiere que se eliminen los datos de su suscripción antes de que se termine la fase típica de Deshabilitada, puede [cerrar su cuenta](../close-your-account.md).
   
 > [!NOTE]
+>
 > Si elimina explícitamente una suscripción, omite las fases Expirada y Deshabilitada, y los datos y el contenido de SharePoint Online, incluido OneDrive, se eliminan inmediatamente.
 
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>¿Cuáles son mis opciones si mi suscripción está a punto de expirar?

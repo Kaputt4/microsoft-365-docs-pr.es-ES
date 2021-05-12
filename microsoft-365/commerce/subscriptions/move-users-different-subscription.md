@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: micurn
+ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,16 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
 - commerce_subscriptions
-- PPM_nicholak
 search.appverid: MET150
 description: Obtén información sobre cómo mover usuarios entre suscripciones.
 ms.date: 07/01/2020
-ms.openlocfilehash: 7adaa0eba1ccc06029ab5f4e1ada1d961155e66b
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 0261ee15d16e895cb2552320097d8e6b396d5220
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280483"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333211"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Mover usuarios a una suscripción diferente
 
@@ -64,7 +63,7 @@ Debe ser un administrador global, de licencia o de usuarios para asignar licenci
 
 5. En la parte inferior, seleccione **Guardar cambios** \> **cerrar**.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Si no va a reasignar las licencias no [usadas](../../managed-desktop/get-started/assign-licenses.md)a otros usuarios, considere la posibilidad de quitar las licencias de la suscripción para que no pague más licencias de las que necesita. [](../../commerce/licenses/buy-licenses.md)
 
@@ -74,4 +73,4 @@ Si no va a reasignar las licencias no [usadas](../../managed-desktop/get-started
 [Quitar licencias de la suscripción](../licenses/buy-licenses.md) (artículo)\
 [Cambiar planes manualmente](change-plans-manually.md) (artículo)\
 [Comprender las suscripciones y licencias en Microsoft 365 para empresas](../licenses/subscriptions-and-licenses.md) (artículo)\
-[Comprar otra suscripción Microsoft 365 para empresas](../try-or-buy-microsoft-365.md) (artículo)
+[Comprar otra suscripción de Microsoft 365 para empresas](../try-or-buy-microsoft-365.md) (artículo)

@@ -1,10 +1,11 @@
 ---
-title: Escriba la clave de producto para Microsoft 365 Empresa Estándar
+title: Escriba la clave de producto para Microsoft 365 Business Standard
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,31 +13,28 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 ROBOTS: NOINDEX
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
-ms.reviewer: jkinma
-description: Obtén información sobre cómo canjear una Microsoft 365 Empresa Estándar de producto comprada en una tienda comercial.
+description: Obtenga información sobre cómo canjear una clave de producto de Microsoft 365 Business Standard comprada en una tienda comercial.
 ms.date: 11/13/2020
-ms.openlocfilehash: ed9fb3c1ecc02930f55ddc11c523cf5989d6bbbe
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: b313b38fbb4fff332bb13402dc5af5db4e0bf676
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297325"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331732"
 ---
-# <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Escriba la clave de producto para Microsoft 365 Empresa Estándar
+# <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Escriba la clave de producto para Microsoft 365 Business Standard
 
-Si has comprado Microsoft 365 Empresa Estándar una tienda comercial, este artículo te ayuda a activar la suscripción.
+Si compraste Microsoft 365 Business Standard en una tienda comercial, este artículo te ayuda a activar la suscripción.
   
  **¿Necesita algo más?**
- **Para obtener ayuda con Microsoft 365 Familia o Microsoft 365 Personal**, vea Using product keys with [Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
- **¿Cliente de licencias por volumen?** Si ha comprado Microsoft 365 para empresas a través de un Programa de licencias abiertas de [Microsoft,](https://go.microsoft.com/fwlink/p/?LinkID=613298)consulte el artículo, Escriba la clave de producto comprada [en Microsoft Open](purchases-from-microsoft-open.md).
+ **Para obtener ayuda con Microsoft 365 Family o Microsoft 365 Personal,** vea [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **¿Cliente de licencias por volumen?** Si compró Microsoft 365 para empresas a través de un Programa de licencias abiertas de [Microsoft,](https://go.microsoft.com/fwlink/p/?LinkID=613298)consulte el artículo, Escriba la clave de producto [comprada en Microsoft Open](purchases-from-microsoft-open.md).
   
 ## <a name="activate-a-new-subscription"></a>Activar una suscripción nueva
 
@@ -57,14 +55,14 @@ Si has comprado Microsoft 365 Empresa Estándar una tienda comercial, este artí
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Ampliar la fecha de expiración o agregar una licencia a una suscripción existente
 
-Para ampliar la fecha de expiración o agregar una licencia a la suscripción de Microsoft 365 Empresa Estándar existente, use una clave nueva y sin usar para el mismo plan Microsoft 365 usuario. Escribir la clave Microsoft 365 producto original no funcionará porque no se puede volver a usar una clave que ya se haya canjeado. Consulte [Agregar licencias a o ampliar una suscripción pagada por usar una clave de producto.](licenses/add-licenses-using-product-key.md)
+Para ampliar la fecha de expiración o agregar una licencia a la suscripción a Microsoft 365 Business Standard existente, use una clave nueva y sin usar para el mismo plan de Microsoft 365. Escribir la clave de producto original de Microsoft 365 no funcionará porque no se puede volver a usar una clave que ya se haya canjeado. Consulte [Agregar licencias a o ampliar una suscripción pagada por usar una clave de producto.](licenses/add-licenses-using-product-key.md)
 
 ## <a name="whats-next"></a>¿Cuál es el siguiente paso?
 
-Si no es nuevo en Microsoft 365 para empresas, obtenga información sobre cómo [configurar](../admin/setup/setup.md)Microsoft 365 .
+Si es nuevo en Microsoft 365 para empresas, obtenga información sobre cómo [configurar Microsoft 365](../admin/setup/setup.md).
   
 ## <a name="still-having-trouble-with-product-keys"></a>¿Todavía tiene problemas con las claves de producto?
 
-Consulte esta lista de errores y soluciones comunes: ¿Problemas con su [clave de producto Microsoft 365 para empresas?](product-key-errors-and-solutions.md)
+Consulte esta lista de errores y soluciones comunes: ¿Tiene problemas con su clave de producto de [Microsoft 365 para empresas?](product-key-errors-and-solutions.md)
   
 O bien, [llama al soporte técnico de Microsoft](../business-video/get-help-support.md).

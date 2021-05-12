@@ -23,19 +23,19 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Configurar el reenvío de correo electrónico a una o más cuentas de correo electrónico con Office 365.
-ms.openlocfilehash: b5612a915fce21e9e9865fca6cb2275d8af17bd2
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4b205c0a21f076b9c7858c8a8fc46e240920cd32
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52242413"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332635"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Configurar el reenvío de correo electrónico en Microsoft 365
 
 Como administrador de una organización, es posible que tenga requisitos de la compañía para configurar el reenvío de correo electrónico para el buzón de un usuario. El reenvío de correo electrónico le permite reenviar los mensajes del buzón de correo enviados al buzón de un usuario dentro o fuera de la organización.
 
 > [!IMPORTANT]
-> Puede usar las directivas del filtro de correo no deseado saliente para controlar el reenvío automático a destinatarios externos. Para obtener más información, consulte [Controlar el reenvío automático de correo electrónico externo en Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide&preserve-view=true#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
+> Puede usar las directivas del filtro de correo no deseado saliente para controlar el reenvío automático a destinatarios externos. Para obtener más información, consulte [Controlar el reenvío automático de correo electrónico externo en Microsoft 365](/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide&preserve-view=true#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
 
 ## <a name="configure-email-forwarding"></a>Configurar el reenvío de correo electrónico
 
@@ -49,7 +49,7 @@ Debe ser Administrador de Exchange o Administrador global en Microsoft 365 para 
 
 1. En el Centro de administración, vaya a la página **Usuarios** \> **[Usuarios activos](https://go.microsoft.com/fwlink/p/?linkid=834822)**.
 
-2. Seleccione el nombre del usuario cuyo correo electrónico quiere reenviar para abrir la página de propiedades.
+2. Seleccione el nombre del usuario cuyo correo electrónico desea reenviar y, a continuación, abra la página de propiedades.
 
 3. En la pestaña **Correo**, seleccione **Administrar el reenvío de correos**.
 
@@ -60,3 +60,42 @@ Debe ser Administrador de Exchange o Administrador global en Microsoft 365 para 
      O bien, en el Centro de administración, [cree un grupo de distribución](../setup/create-distribution-lists.md), [agregue las direcciones](add-user-or-contact-to-distribution-list.md) y luego, configure el reenvío para que apunte a la DL con las instrucciones de este artículo.
 
 5. No elimine la cuenta del usuario cuyo correo electrónico está reenviando ni le quite su licencia.  Si lo hace, se detendrá el reenvío de correo electrónico.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. En el Centro de administración, vaya a la página **Usuarios** \> **[Usuarios activos](https://go.microsoft.com/fwlink/p/?linkid=847686)**.
+
+2. Seleccione el nombre del usuario cuyo correo electrónico quiere reenviar para abrir la página de propiedades.
+
+3. Expanda **Configuración de correo** y luego, en la sección **Reenvío de correo electrónico**, seleccione **Editar**.
+
+4. En la página de reenvío de correo electrónico, establezca el botón de alternancia en **Activado**, escriba la dirección de reenvío y elija si quiere conservar una copia de los correos electrónicos reenviados. Si no ve esta opción, asegúrese de tener asignada una licencia asignada a la cuenta del usuario. Seleccione **Guardar**.
+
+   **Para reenviar a varias direcciones de correo**, puede pedir al usuario que configure una regla en Outlook para que se reenvía a las direcciones. Para obtener más información, consulte [Usar reglas para reenviar mensajes automáticamente](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746).
+
+   O bien, en el Centro de administración, [cree un grupo de distribución](../setup/create-distribution-lists.md), [agregue las direcciones](add-user-or-contact-to-distribution-list.md) y luego, configure el reenvío para que apunte a la DL con las instrucciones de este artículo.
+
+5. No elimine la cuenta del usuario cuyo correo electrónico está reenviando ni le quite su licencia.  Si lo hace, se detendrá el reenvío de correo electrónico.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. En el Centro de administración, vaya a la página **Usuarios** \> **[Usuarios activos](https://go.microsoft.com/fwlink/p/?linkid=850628)**.
+
+2. Seleccione el nombre del usuario cuyo correo electrónico quiere reenviar para abrir la página de propiedades.
+
+3. Expanda **Configuración de correo** y luego, en la sección **Reenvío de correo electrónico**, seleccione **Editar**.
+
+4. En la página de reenvío de correo electrónico, establezca el botón de alternancia en **Activado**, escriba la dirección de reenvío y elija si quiere conservar una copia de los correos electrónicos reenviados. Si no ve esta opción, asegúrese de tener asignada una licencia asignada a la cuenta del usuario. Seleccione **Guardar**.
+
+   **Para reenviar a varias direcciones de correo**, puede pedir al usuario que configure una regla en Outlook para que se reenvía a las direcciones. Para obtener más información, consulte [Usar reglas para reenviar mensajes automáticamente](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746).
+
+   O bien, en el Centro de administración, [cree un grupo de distribución](../setup/create-distribution-lists.md), [agregue las direcciones](add-user-or-contact-to-distribution-list.md) y luego, configure el reenvío para que apunte a la DL con las instrucciones de este artículo.
+
+5. No elimine la cuenta del usuario cuyo correo electrónico está reenviando ni le quite su licencia.  Si lo hace, se detendrá el reenvío de correo electrónico.
+
+::: moniker-end
+

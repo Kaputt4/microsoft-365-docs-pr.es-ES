@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,20 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
-ms.reviewer: jkinma
 search.appverid:
 - MET150
 - GEA150
 description: Obtenga información sobre cómo enviar su solicitud de Fapiao al sistema de administración de Fapiao de 21Vianet después de realizar un pago en el Office 365 operado por 21Vianet en China.
 monikerRange: o365-21vianet
 ms.date: 03/30/2021
-ms.openlocfilehash: 1f2dec1ca224b7f8c6c22d5d9d0d2a0cac8630ea
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 605e1bf001f6c6acb3a8b5044adeb66e110641b0
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107465"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332467"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Solicitar un Fapiao para Office 365 operado por 21Vianet
 
@@ -42,7 +41,7 @@ Hay dos formas de solicitar un Fapiao:
   
 1. Después de realizar un pago en el Office 365 operado por el sitio web de 21Vianet, recibirá un correo electrónico de confirmación de pedido que contiene su número de pedido y un vínculo al sistema de administración de Fapiao. Puede usar el vínculo del correo electrónico para crear una cuenta en el sistema de administración de información <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao</a>.
 
-    O bien:
+    O bien
 
 2. Puede solicitar un Fapiao desde el Centro <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">de administración.</a>
 
@@ -134,7 +133,7 @@ Si quieres cambiar el título de Fapiao, envíanos el Fapiao de vuelta y volvere
 
 ### <a name="how-do-i-find-my-order-id"></a>¿Cómo puedo encontrar el identificador de mi pedido?
 
-1. En el [Centro de administración,](https://go.microsoft.com/fwlink/p/?linkid=850627)vaya a la página  \> **Facturación & pagos.**
+1. En el [Centro de administración](https://go.microsoft.com/fwlink/p/?linkid=850627), vaya a la página **Facturación** \> **Facturas y pagos**.
 
 2. Busca la factura que quieras, selecciona para ver o elige descargar el PDF.
 

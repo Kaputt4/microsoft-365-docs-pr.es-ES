@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: presharm
+ms.reviewer: presharm, jmueller
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,17 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
 search.appverid: MET150
 description: Obtenga información sobre las propuestas que le ayudarán a comprar productos y servicios de Microsoft.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: a3c91168c90b91d83a9aa116c1ff57d103b3c48c
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: c61fa53267f2fdb60e78a05cd89aa6f364cb2395
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280876"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332959"
 ---
 # <a name="understand-the-proposal-workflow"></a>Comprender el flujo de trabajo de propuestas
 

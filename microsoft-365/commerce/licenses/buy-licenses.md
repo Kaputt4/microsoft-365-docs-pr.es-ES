@@ -19,14 +19,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: Obtenga información sobre cómo comprar más licencias o reducir el número de licencias para su suscripción a Microsoft 365 para empresas.
+description: Obtenga información sobre cómo comprar más licencias o reducir el número de licencias para su suscripción Microsoft 365 para empresas.
 ms.date: 04/07/2021
-ms.openlocfilehash: 6603b49ed7af8b5213141d5c2434093c3af9540a
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: a327149a780d2059cfc69068fc4b2122e549773c
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327123"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331687"
 ---
 # <a name="buy-or-remove-licenses"></a>Comprar o quitar licencias
 
@@ -36,7 +36,7 @@ Puede comprar más licencias o reducir el número de licencias para sus suscripc
 
 - Debe ser un administrador global o de facturación para realizar las tareas descritas en este artículo. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 - Puede agregar [usuarios y asignar licencias al mismo tiempo.](../../admin/add-users/add-users.md)
-- Si compró su plan de Microsoft 365 para empresas o Office 365 Enterprise a través de un partner de terceros, debe comprar licencias adicionales a través de ese partner.
+- Si compró su Microsoft 365 para empresas o Office 365 Enterprise a través de un partner de terceros, debe comprar licencias adicionales a través de ese partner.
 
 ## <a name="watch-buy-new-licenses"></a>Ver: Comprar nuevas licencias
 
@@ -84,7 +84,7 @@ En esta tabla se describen los motivos por los que los **botones Comprar** licen
 |---------|---------|---------|
 |Está pendiente una comprobación de crédito. |Si una comprobación de crédito está pendiente, no puede comprar ni quitar licencias hasta que se complete la comprobación de crédito.  | Vuelva más tarde para ver si la comprobación de crédito se ha completado. Las comprobaciones de crédito suelen tardar unos dos días laborables.<br/>Una vez completada la comprobación de crédito, debería ver los **botones Comprar licencias** y **Quitar licencias.** |
 |Ha activado la suscripción mediante una clave de producto.| Si la suscripción se compró y activó con una clave de producto  de 25 caracteres, verá la palabra "Prepago" en la columna Canal de compra de la **página Sus** productos.  |Consulte [Add licenses to a subscription paid for using a product key](add-licenses-using-product-key.md). |
-|Has comprado la suscripción a través de un revendedor.| Verá la palabra "Revendedor" en la columna **Canal de compra** de la página **Sus** productos. | Si la suscripción se compró a través de un partner de proveedor de soluciones en la nube (CSP), póngase en contacto con su partner de CSP para comprar más licencias.        |
+|Has comprado la suscripción a través de un revendedor.| Verá la palabra "Revendedor" en la columna **Canal de compra** de la página **Sus** productos. | Si la suscripción se compró a través de un Proveedor de soluciones en la nube (CSP), ponte en contacto con tu partner de CSP para comprar más licencias.        |
 |Tiene una suscripción de prueba. | Para ver las suscripciones de prueba, seleccione el botón de filtro y, a continuación, elija **Prueba**. | Primero compra la suscripción de prueba y luego puedes comprar más licencias.|
 
 ## <a name="when-will-the-new-licenses-be-available-to-assign"></a>¿Cuándo estarán disponibles las nuevas licencias para asignar?
@@ -108,4 +108,4 @@ Si ha reducido el número de licencias de la suscripción porque alguien ha deja
 
 [Asignar licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md) (artículo)\
 [Entender las suscripciones y las licencias](subscriptions-and-licenses.md) (artículo)\
-[Pruebe o compre una suscripción a Microsoft 365](../try-or-buy-microsoft-365.md) (artículo)
+[Pruebe o compre una suscripción Microsoft 365 (artículo)](../try-or-buy-microsoft-365.md)

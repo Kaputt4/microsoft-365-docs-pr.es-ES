@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,16 +18,15 @@ ms.custom:
 - fwlink 874703
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
 search.appverid: MET150
 description: Obtenga información sobre cómo reactivar la suscripción cuando expire, se deshabilite o cancele.
 ms.date: 04/07/2021
-ms.openlocfilehash: 80d1594890ec15fc4c2391d439ccbc16be6ae707
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 7f77a9782e9028521cbcefbdbffc49bc28db8e9c
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280900"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333175"
 ---
 # <a name="reactivate-your-subscription"></a>Reactivar la suscripción
 
@@ -35,7 +34,7 @@ Puede reactivar la suscripción en el centro de administración si: la suscripci
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o de facturación para reactivar una suscripción. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o de facturación para reactivar una suscripción. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 **¿No es un administrador?** Póngase en contacto con su administración para reactivar la suscripción.
 
@@ -66,6 +65,6 @@ Debe ser un administrador global o de facturación para reactivar una suscripci�
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Pruebe o compre una suscripción Microsoft 365 para empresas](../try-or-buy-microsoft-365.md) (artículo)\
+[Pruebe o compre una suscripción a Microsoft 365 para empresas](../try-or-buy-microsoft-365.md) (artículo)\
 [Renovar Microsoft 365 para empresas](renew-your-subscription.md) (artículo)\
 [Cancelar la suscripción](cancel-your-subscription.md) (artículo)

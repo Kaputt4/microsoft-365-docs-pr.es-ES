@@ -5,22 +5,25 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.collection: M365-subscription-management
+ms.custom:
+- AdminSurgePortfolio
+- commerce_ssp
 search.appverid:
 - MET150
 description: Los usuarios pueden aprender a administrar sus compras de autoservicio.
-ms.openlocfilehash: 9935259f05432b964fbe138b39397f192e203eb2
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.date: 03/17/2021
+ms.openlocfilehash: 0f9832f69d7e89346e82e3acef0e626fc7f6c4de
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297301"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333259"
 ---
 # <a name="manage-self-service-purchases-users"></a>Administrar compras de autoservicio (usuarios)
 
@@ -31,7 +34,7 @@ ms.locfileid: "52297301"
 
 ::: moniker-end
 
-Como usuario, puede comprar suscripciones a determinados productos y asignar licencias para esas suscripciones a personas de su equipo. Eres responsable de pagar las compras de autoservicio que realices. Puede administrar las suscripciones en el centro de administración Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
+Como usuario, puede comprar suscripciones a determinados productos y asignar licencias para esas suscripciones a personas de su equipo. Eres responsable de pagar las compras de autoservicio que realices. Puede administrar sus suscripciones en el Centro de administración de Microsoft 365 en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
 
 El administrador tiene una vista de solo lectura en las suscripciones que compre. Pueden ver el producto, el nombre del comprador, las suscripciones compradas, la fecha de expiración, el precio de compra y los usuarios asignados para cada suscripción que compres.
 

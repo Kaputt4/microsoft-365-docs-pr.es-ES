@@ -5,28 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- Adm_TOC
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- manage_licenses
 - okr_smb
-- commerce
-search.appverid:
-- MET150
+- manage_licenses
+- commerce_licensing
+search.appverid: MET150
 description: Obtenga información sobre cómo desasignación de licencias de cuentas de usuario.
 ms.date: 07/01/2020
-ms.openlocfilehash: 87bb8f6fe0e85fc4ac832f2bc4ad746e8d6386eb
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 6f2cbf65e1d6a38a4b1ed00976d4dd473d7331e9
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52310997"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332419"
 ---
 # <a name="unassign-licenses-from-users"></a>Cancelar la asignación de licencias a usuarios
 
@@ -95,7 +95,7 @@ Al usar la página **Usuarios activos** para desasignación de licencias, se des
 3. En el panel derecho, seleccione **licencias y aplicaciones**.
 4. Expanda la **sección Licencias,** desactive los cuadros de las licencias que desea desasignación y, a continuación, **seleccione Guardar cambios**.
 
-###  <a name="unassign-licenses-from-multiple-users"></a>Unassign licenses from multiple users
+### <a name="unassign-licenses-from-multiple-users"></a>Unassign licenses from multiple users
 
 ::: moniker range="o365-worldwide"
 
@@ -123,13 +123,13 @@ Al usar la página **Usuarios activos** para desasignación de licencias, se des
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>¿Qué sucede con los datos de un usuario al quitar su licencia?
 
 - Cuando se quita una licencia de un usuario, los datos asociados a esa cuenta se mantienen durante 30 días. Después del período de gracia de 30 días, los datos se eliminan y no se pueden recuperar.
-- Los archivos guardados en OneDrive para la Empresa no se eliminan a menos que el usuario se elimine del centro de administración de Microsoft 365 o se quite a través de la sincronización de Active Directory. Para obtener más información, [vea OneDrive retención y eliminación.](/onedrive/retention-and-deletion)
-- Cuando se quita la licencia, el buzón del usuario ya no se puede buscar mediante una herramienta de exhibición de documentos electrónicos, como búsqueda de contenido o Advanced eDiscovery. Para obtener más información, vea "Buscar buzones desconectados o sin licencia" en [Referencia de búsqueda de contenido.](../../compliance/content-search-reference.md#searching-disconnected-or-de-licensed-mailboxes)
-- Si tiene una suscripción Enterprise, como Office 365 Enterprise E3, Exchange Online permite conservar los datos del buzón de una cuenta de usuario eliminada mediante buzones [inactivos.](../../compliance/inactive-mailboxes-in-office-365.md) Para obtener más información, vea [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
-- Para obtener información sobre cómo bloquear el acceso de un usuario Microsoft 365 datos después de quitar su licencia y cómo obtener acceso a los datos después, vea [Remove a former employee](../add-users/remove-former-employee.md).
-- Si quitas la licencia de un usuario y aún tienen Office aplicaciones instaladas, verán Errores de activación y producto sin licencia en [Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) cuando usen Office aplicaciones.
+- Los archivos guardados en OneDrive para la Empresa no se eliminan a menos que el usuario se elimine del Centro de administración de Microsoft 365 o se quite a través de la sincronización de Active Directory. Para obtener más información, vea [Retención y eliminación de OneDrive.](/onedrive/retention-and-deletion)
+- Cuando se quita la licencia, el buzón del usuario ya no se puede buscar mediante una herramienta de exhibición de documentos electrónicos como la búsqueda de contenido o la exhibición de documentos electrónicos avanzada. Para obtener más información, vea "Buscar buzones desconectados o sin licencia" en Búsqueda de contenido [en Microsoft 365](../../compliance/content-search.md).
+- Si tiene una suscripción enterprise, como Office 365 Enterprise E3, Exchange Online le permite conservar los datos de buzón de una cuenta de usuario eliminada mediante buzones [inactivos.](../../compliance/inactive-mailboxes-in-office-365.md) Para obtener más información, vea [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
+- Para obtener información sobre cómo bloquear el acceso de un usuario a los datos de Microsoft 365 después de quitar su licencia y cómo obtener acceso a los datos después, vea [Remove a former employee](../add-users/remove-former-employee.md).
+- Si quita la licencia de un usuario y aún tiene instaladas aplicaciones de Office, verá Errores de activación y producto sin licencia en [Office](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) cuando usan aplicaciones de Office.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Si no va a reasignar las licencias no [usadas](../../managed-desktop/get-started/assign-licenses.md)a otros usuarios, considere la posibilidad de quitar las licencias de la suscripción para que no pague más licencias de las que necesita. [](../../commerce/licenses/buy-licenses.md)
 

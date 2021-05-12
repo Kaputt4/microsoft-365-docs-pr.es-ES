@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver, crear, modificar y eliminar directivas de correo no deseado salientes en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ceaf0d276aff4504dd34aa3229c28c9cb042742d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2448bb7942f7694d2a6d6e9b98537a2b7ccb14d1
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207314"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331675"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurar el filtrado de correo no deseado saliente en EOP
 
@@ -271,11 +271,11 @@ Para cambiar la prioridad de una directiva, suba o baje la directiva en la lista
 
 No puede quitar la directiva predeterminada.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies"></a>Usar PowerShell de Exchange Online o PowerShell de EOP independiente para configurar directivas de correo no deseado saliente
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies"></a>Usar Exchange Online PowerShell o PowerShell de EOP independiente para configurar directivas de correo no deseado saliente
 
 Como se describió anteriormente, una directiva de correo no deseado saliente consta de una directiva de filtro de correo no deseado saliente y una regla de filtro de correo no deseado saliente.
 
-En PowerShell de Exchange Online o en PowerShell de EOP independiente, la diferencia entre las directivas de filtro de correo no deseado saliente y las reglas de filtro de correo no deseado saliente es aparente. Las directivas de filtro de correo no deseado saliente se administran mediante los cmdlets **\* -HostedOutboundSpamFilterPolicy** y se administran las reglas de filtro de correo no deseado saliente mediante los cmdlets **\* -HostedOutboundSpamFilterRule.**
+En Exchange Online PowerShell o PowerShell independiente de EOP, la diferencia entre las directivas de filtro de correo no deseado saliente y las reglas de filtro de correo no deseado saliente es evidente. Las directivas de filtro de correo no deseado saliente se administran mediante los cmdlets **\* -HostedOutboundSpamFilterPolicy** y se administran las reglas de filtro de correo no deseado saliente mediante los cmdlets **\* -HostedOutboundSpamFilterRule.**
 
 - En PowerShell, primero se crea la directiva de filtro de correo no deseado saliente y, a continuación, se crea la regla de filtro de correo no deseado saliente que identifica la directiva a la que se aplica la regla.
 - En PowerShell, modifica la configuración de la directiva de filtro de correo no deseado saliente y la regla de filtro de correo no deseado saliente por separado.
@@ -515,6 +515,6 @@ Para obtener información detallada sobre la sintaxis y los parámetros, [vea Re
 
 [Grupo de entrega de alto riesgo para mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md)
 
-[Preguntas más frecuentes sobre la protección contra correo electrónico no deseado](anti-spam-protection-faq.md)
+[Preguntas más frecuentes sobre la protección contra correo electrónico no deseado](anti-spam-protection-faq.yml)
 
 [Informe de mensajes reenviados automáticamente](mfi-auto-forwarded-messages-report.md)

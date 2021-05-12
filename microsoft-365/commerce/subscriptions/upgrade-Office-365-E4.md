@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,17 +16,16 @@ ms.collection:
 ms.custom:
 - customer-email
 - commerce_subscriptions
-- PPM_jmueller
 search.appverid: MET150
 description: Obtenga información sobre cómo actualizar desde una Office 365 de E4.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0e30ece58cfc10ea258a684f9ac6ca4dba1b8692
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 59add18b8f6ede3d8696ee8e443c21ac4d6d3549
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297289"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333127"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Actualización desde una suscripción Office 365 E4
 

@@ -21,18 +21,18 @@ ms.custom:
 search.appverid: MET150
 description: Aprenda a comprobar qué suscripciones tiene su organización yendo a la página Sus productos.
 ms.date: 01/21/2021
-ms.openlocfilehash: c54b9795487f1cfc5902c2c761fdd65b78109bcf
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: e1f7ebecafa5edff1ccc3d6eb4e4dc143054996a
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327239"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332671"
 ---
 # <a name="what-subscription-do-i-have"></a>¿Qué suscripción tengo?
 
 Si eres administrador, puedes comprobar qué suscripciones tiene tu organización yendo al Centro de administración.
   
- **¿No es un administrador?** Consulta ¿Qué producto o licencia [de Microsoft 365](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) para empresas tengo?
+**¿No es un administrador?** Vea [¿Microsoft 365 para empresas o licencia que tengo?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la **pestaña Productos,** verá todas las suscripciones. Cada línea de suscripción incluye información sobre licencias, estado de suscripción y facturación.

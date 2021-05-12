@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: drjones
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,16 +16,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
 search.appverid: MET150
 description: Obtenga información sobre cómo obtener una versión de prueba gratuita o comprar una suscripción para Microsoft 365 para empresas.
 ms.date: 08/07/2020
-ms.openlocfilehash: 592ab457dd9b393afa4ef3a3bff9f7ef89af4ea9
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 709f687b282246b90c1b1a14398174e616e0494a
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280912"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332971"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Probar o comprar una suscripción Microsoft 365 para empresas
 
@@ -46,7 +45,7 @@ Microsoft 365 para empresas es un servicio de suscripción que le permite ejecut
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-No necesita una cuenta de Microsoft existente para registrarse en una versión de prueba gratuita. Para todos los demás procedimientos de este artículo, debe ser administrador global o de facturación de su organización. Para más información, consulte[Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+No necesita una cuenta de Microsoft existente para registrarse en una versión de prueba gratuita. Para todos los demás procedimientos de este artículo, debe ser administrador global o de facturación de su organización. Para más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="try-a-free-trial-subscription"></a>Probar una suscripción de prueba gratuita
 
@@ -131,7 +130,7 @@ El comprobante de pago se proporciona en forma de Fapiaos. Puede enviar su solic
 > No se aceptan tarjetas de crédito internacionales.
 ::: moniker-end
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Si tiene una cuenta nueva y está configurando su primera suscripción, puede usar los artículos de configuración guiados para ayudarle a empezar.
 

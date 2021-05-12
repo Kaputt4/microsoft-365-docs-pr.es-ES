@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Obtenga información sobre cómo enviar correo electrónico como una lista de distribución en Microsoft 365.
-ms.openlocfilehash: 379f2471fd38da5098bf8f2ca82f4f76ee82bd8e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bb1d5a62d2b1a3bbfae87849e8aa96cef14c173e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915163"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332440"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Enviar correo electrónico como una lista de distribución
 
@@ -34,10 +34,12 @@ En Microsoft 365, puede enviar correo electrónico como una lista de distribuci�
   
 ## <a name="send-email-as-a-distribution-list"></a>Enviar correo electrónico como una lista de distribución
 
-Antes de realizar estos pasos, asegúrese de que se ha agregado a una lista de distribución de Microsoft 365 y de que se le ha concedido permiso Enviar como permiso.
+Antes de realizar estos pasos, asegúrese de que se ha agregado a una lista de distribución Microsoft 365 y de que se le ha concedido permiso Enviar como permiso.
   
- **Administradores:** asegúrese de que ha seguido los pasos descritos en los temas Agregar un usuario o contacto de [Microsoft 365 a](../email/add-user-or-contact-to-distribution-list.md) una lista y Permitir a los miembros enviar correo electrónico como un tema de grupo de [Microsoft 365](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) y agregar las personas correctas a la lista de distribución.
+ **Administradores:** asegúrese de que ha seguido los pasos descritos en los temas Agregar un usuario o contacto de [Microsoft 365 a](../email/add-user-or-contact-to-distribution-list.md) una lista y Permitir que los miembros envíen correo electrónico como un grupo de [Microsoft 365](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) y agregue las personas correctas a la lista de distribución.
   
+## <a name="outlook-on-the-web"></a>Outlook en la Web
+
 1. Abra Outlook en la web y vaya a la bandeja de entrada. 
     
 2. Abra un mensaje que se envió a la lista de distribución. 
@@ -49,3 +51,13 @@ Antes de realizar estos pasos, asegúrese de que se ha agregado a una lista de d
 5. Haga clic con el botón secundario en la dirección De , como `Ina@weewalter.me` - y elija **Quitar**.<br/> ![Quitar el alias FROM](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
 6. A continuación, escriba la dirección de la lista de distribución como support@contoso.com y envíe el mensaje. La próxima vez que responda desde la lista de distribución, su dirección aparecerá como una opción en la **lista** De.<br/>![Aparece el alias del buzón compartido](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+
+## <a name="outlook"></a>Outlook
+
+1. Abra Outlook cliente de escritorio.
+
+2. Redacción de un nuevo correo electrónico. Haga clic en **el campo De** y seleccione Otra dirección de correo **electrónico**. Si no ve el campo De, vaya a **Opciones** y seleccione **De en** la sección Mostrar campos.
+
+3. Seleccione la **dirección lista de** distribución de la lista global de direcciones.
+
+4. Envíe el correo electrónico.

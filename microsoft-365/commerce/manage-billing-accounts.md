@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +16,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
-ms.reviewer: tugu
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Obtenga información sobre las cuentas de facturación y cómo administrarlas.
 ms.date: 03/17/2021
-ms.openlocfilehash: ecac005b8b49739cb74efc4ca2fae44667f37bad
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 05ab759f300cb7fa6b02e06714d7d98e64890be8
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293648"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331603"
 ---
 # <a name="manage-billing-accounts"></a>Administrar cuentas de facturación
 

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +16,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Obtenga información sobre cómo administrar suscripciones de registro de autoservicio gratuitas para su organización.
 ms.date: 03/17/2021
-ms.openlocfilehash: 64648151d7761bd8bb0d2301d59fb093de98b127
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: b469515a649399c71ef64ba2567dfa376f21e9a7
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107621"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333223"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Administrar suscripciones de registro de autoservicio
 
