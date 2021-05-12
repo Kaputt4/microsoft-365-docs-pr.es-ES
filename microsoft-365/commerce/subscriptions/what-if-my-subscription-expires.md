@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +13,18 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- commerce
-search.appverid:
-- MET150
-ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
+- commerce_subscriptions
+search.appverid: MET150
 description: Obtenga información sobre lo que sucede con sus datos cuando su suscripción de Microsoft 365 para empresas expira, está deshabilitada o la cancela.
-ms.openlocfilehash: 45f331fd14abb2f851c8ff84e729b8443a60b59b
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.date: 04/08/2021
+ms.openlocfilehash: f226514078a9f6d6bc1f4761269e2740300ef88d
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297277"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326803"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>¿Qué sucede con mis datos y mi acceso cuando termina mi suscripción de Microsoft 365 para empresas?
 
@@ -78,23 +77,14 @@ Mientras una suscripción está activa, usted y sus usuarios finales tienen acce
 Antes de que la suscripción llegue a su fecha de expiración, tendrá algunas opciones:
   
 - **Habilite la facturación periódica para la suscripción.**
-
   - Si la **Facturación periódica** ya está activada, no tiene que hacer nada. La suscripción se facturará automáticamente y se le cobrará por un año o mes adicional, según su frecuencia de pago actual. Si, por algún motivo, ha desactivado la **Facturación periódica**, siempre puede [volver a activar la Facturación periódica](renew-your-subscription.md).
-
   - Si ha comprado Aplicaciones de Microsoft 365 para negocios con una tarjeta de prepago, puede [activar la Facturación periódica](renew-your-subscription.md) para su suscripción.
-
   - Si es un cliente del programa de Licencias por volumen abierto con una suscripción prepago de un año, póngase en contacto con su asociado para comprar una clave de producto nueva. Recibirá las instrucciones por correo electrónico para activar su clave en el [Centro de servicio de licencias por volumen](https://go.microsoft.com/fwlink/p/?LinkID=282016). Para obtener información sobre cómo encontrar un nuevo asociado o uno con el que ha trabajado anteriormente, vea [Busque su asociado o revendedor](../../admin/manage/find-your-partner-or-reseller.md).
-
   - Si tiene Aplicaciones de Microsoft 365 para negocios, consulte [Administrar la facturación periódica de su suscripción](renew-your-subscription.md).
-
 - **Deje que la suscripción expire.**
-
   - Si está pagando con tarjeta de crédito o factura y no quiere continuar la suscripción, [desactive la Facturación periódica](renew-your-subscription.md). La suscripción terminará en la fecha de expiración y podrá ignorar todas las notificaciones relacionadas que lleguen por correo electrónico.
-
   - Si es cliente del programa de Licencias por volumen abierto y trabaja con un asociado, simplemente no haga nada y la suscripción expirará.
-
   - Si es un cliente de Microsoft 365 Empresa Estándar que ha realizado un prepago de su suscripción y la ha activado con una clave de producto, simplemente no haga nada y la suscripción expirará.
-
 - **Cancele antes de que la suscripción expire.** Para más información, consulte [Cancelar su suscripción](cancel-your-subscription.md).
 
 ## <a name="what-happens-after-my-subscription-expires"></a>¿Qué pasa después de que expira la suscripción?
@@ -105,7 +95,7 @@ Esto es lo que puede ocurrir cuando su suscripción pase por cada estado.
   
 ### <a name="state-expired"></a>Estado: Expirada
 
- **Qué es lo que va a pasar**: La fase de Expirada dura 30 días para casi todas las suscripciones, incluidas las suscripciones compradas a través de [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), en la mayoría de los países y regiones. Para los productos de licencias por volumen, excepto Microsoft Open, la fase de Expirada dura 90 días.
+**Qué es lo que va a pasar**: La fase de Expirada dura 30 días para casi todas las suscripciones, incluidas las suscripciones compradas a través de [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), en la mayoría de los países y regiones. Para los productos de licencias por volumen, excepto Microsoft Open, la fase de Expirada dura 90 días.
 
 En este estado, los usuarios tienen acceso normal al portal de Microsoft 365, las aplicaciones de Office y servicios como el correo electrónico y SharePoint Online.
   
@@ -113,7 +103,7 @@ Como administrador, tendrá acceso al centro de administración. No se preocupe,
   
 ### <a name="state-disabled"></a>Estado: Deshabilitada
 
- **Qué es lo que va a pasar**: Si no reactiva la suscripción mientras esta está en la fase de Expirada, la suscripción pasará a la fase de Deshabilitada, que dura 90 días para casi todas las suscripciones, en la mayoría de los países y las regiones. Para productos de licencias por volumen, el estado Expirada dura 30 días.
+**Qué es lo que va a pasar**: Si no reactiva la suscripción mientras esta está en la fase de Expirada, la suscripción pasará a la fase de Deshabilitada, que dura 90 días para casi todas las suscripciones, en la mayoría de los países y las regiones. Para productos de licencias por volumen, el estado Expirada dura 30 días.
 
 En esta fase, el acceso se limita de forma significativa. Sus usuarios no podrán iniciar sesión ni tener acceso a servicios como el correo electrónico o SharePoint Online. Además, las aplicaciones de Office pasarán al modo de solo lectura con funcionalidad limitada y mostrarán [Notificaciones de producto sin licencia](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Aún podrá iniciar sesión y entrar en el centro de administración, pero no podrá asignar licencias a usuarios. Los datos de cliente, incluidos todos los datos de usuario, el correo electrónico y los archivos de los sitios de grupo, estarán disponibles solo para usted y para los demás administradores.
 
@@ -121,13 +111,14 @@ Como administrador global o de facturación, puede [reactivar la suscripción](r
 
 ### <a name="state-deleted"></a>Estado: Eliminada
   
- **Qué es lo que va a pasar:** Si no reactiva la suscripción mientras está expirada o deshabilitada, la suscripción se eliminará.
+**Qué es lo que va a pasar:** Si no reactiva la suscripción mientras está expirada o deshabilitada, la suscripción se eliminará.
   
 Los administradores y usuarios ya no tienen acceso a los servicios ni aplicaciones de Office incluidos en la suscripción. Todos los datos del cliente, desde los datos de usuarios hasta los documentos y correos electrónicos, se eliminarán de forma permanente y no se podrán recuperar de ninguna manera.
   
 A partir de ese momento, no podrá reactivar la suscripción. Sin embargo, como administrador global o de facturación, todavía podrá acceder al Centro de administración para administrar otras suscripciones o para comprar nuevas suscripciones que satisfagan las necesidades de su negocio.
   
 > [!NOTE]
+>
 > - Si agrega una nueva suscripción del mismo tipo de la que ha sido eliminada, no se restauran los datos asociados a la suscripción eliminada.
 > - Si se suspende una licencia de Proveedor de soluciones en la nube de Microsoft, no hay ninguna fase de Expirada de 30 días y los servicios se deshabilitan inmediatamente. Los datos se eliminan después de 90 días si el espacio empresarial no se reactiva agregando una nueva licencia.
 
@@ -136,12 +127,11 @@ A partir de ese momento, no podrá reactivar la suscripción. Sin embargo, como 
 Cuando termine la versión de prueba, no podrá continuar usando Microsoft 365 de forma gratuita. Tiene varias opciones:
 
 - **Compre Microsoft 365.** Al expirar la prueba, entrará en la fase de Expirada, que le dará otros 30 días (para la mayoría de las pruebas, en la mayoría de los países y regiones) para comprar Microsoft 365. Para obtener información sobre cómo convertir su versión de prueba en una suscripción de pago, vea [Comprar una suscripción a partir de la evaluación gratuita](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial).
-
 - **Extender la versión de prueba.** ¿Necesita más tiempo para probar Microsoft 365? En algunos casos, puede [extender su versión de prueba](../extend-your-trial.md).
-
 - **Cancele la versión de prueba o déjela expirar.** Si decide no comprar Microsoft 365, puede dejar que su versión de prueba expire o [cancelarla](cancel-your-subscription.md). Asegúrese de realizar una copia de seguridad de los datos que desee conservar. Poco después de la fase de Expirada de 30 días, la información y los datos de su cuenta de prueba se eliminan de forma permanente.
 
 > [!NOTE]
+>
 > La información de esta página está sujeta a [Aviso de cambio y exención de responsabilidades de la directiva de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=613651). Vuelva a este sitio de forma periódica para revisar cualquier cambio.
 
 ## <a name="related-content"></a>Contenido relacionado

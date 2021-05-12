@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,26 +14,25 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
-- Adm_TOC
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
+- commerce_subscriptions
+search.appverid: MET150
 description: Aprenda a comprobar qué suscripciones tiene su organización yendo a la página Sus productos.
-ms.openlocfilehash: 38098eb01a9a1e7fa2ee46acf20cc03ed8f31f93
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 01/21/2021
+ms.openlocfilehash: c54b9795487f1cfc5902c2c761fdd65b78109bcf
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244001"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327239"
 ---
 # <a name="what-subscription-do-i-have"></a>¿Qué suscripción tengo?
 
 Si eres administrador, puedes comprobar qué suscripciones tiene tu organización yendo al Centro de administración.
   
- **¿No es un administrador?** Vea [¿Microsoft 365 para empresas o licencia que tengo?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+ **¿No es un administrador?** Consulta ¿Qué producto o licencia [de Microsoft 365](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd) para empresas tengo?
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la **pestaña Productos,** verá todas las suscripciones. Cada línea de suscripción incluye información sobre licencias, estado de suscripción y facturación.

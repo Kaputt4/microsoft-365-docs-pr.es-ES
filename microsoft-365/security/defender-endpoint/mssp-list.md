@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71db42f4bd651f4e9d4236e1f4d794aeb99dfa9f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 48e45385fb138c19b76dc2d672566cf2ad0fb3cc
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862156"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327313"
 ---
 # <a name="supported-managed-security-service-providers"></a>Proveedores de servicios de seguridad administrados compatibles
 
@@ -36,6 +36,7 @@ Se puede obtener acceso a los siguientes proveedores de servicios de seguridad a
 
 Logotipo |Nombre del partner   | Descripción 
 :---|:---|:---
+![Imagen del logotipo de Aujas](images/aujas-logo.png) | [Servicio MDE administrado de Aujas](https://go.microsoft.com/fwlink/?linkid=2162429) | La ciberseguridad de Aujas proporciona servicios de seguridad administrados 24*7 en todo el espectro empresarial, con Microsoft Defender para puntos de conexión a través de sus Centros de ciberdefensa.
 ![Imagen del logotipo de BDO Digital](images/bdo-logo.png)| [BDO Digital](https://go.microsoft.com/fwlink/?linkid=2090394) | La Defensa administrada de BDO Digital aprovecha las herramientas de procedimientos recomendados, la inteligencia artificial y los expertos en seguridad locales para la protección de identidades 24/7/365
 ![Imagen del logotipo de BlueVoyant](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | MDR para Microsoft Defender para endpoint proporciona soporte técnico para supervisar, investigar y mitigar ataques avanzados en puntos de conexión
 ![Imagen del logotipo del Centro de seguridad en la nube](images/cloudsecuritycenter-logo.png)| [Centro de seguridad en la nube](https://go.microsoft.com/fwlink/?linkid=2099315) | El Centro de seguridad en la nube de InSpark es un servicio administrado 24 x 7 que ofrece protección, detección & capacidades de respuesta
@@ -44,6 +45,7 @@ Logotipo |Nombre del partner   | Descripción
 ![Imagen del logotipo de Dell Technologies Advanced Threat Protection](images/dell-logo.png)| [Protección contra amenazas avanzada de Dell Technologies](https://go.microsoft.com/fwlink/?linkid=2091004) | Servicio de supervisión profesional para comportamiento malintencionado y anomalías con funcionalidad 24/7
 ![Imagen del logotipo DXC-Managed de detección y respuesta de amenazas de punto de conexión](images/dxc-logo.png)| [Respuesta y detección de amenazas de extremo administrado por DXC](https://go.microsoft.com/fwlink/?linkid=2090395) | Identificar las amenazas de puntos de conexión que evaden las defensas de seguridad tradicionales y las contienen en horas o minutos, no en días
 ![Imagen del registro de eSentire](images/esentire-logo.png) | [Respuesta y detección administrada de eSentire](https://go.microsoft.com/fwlink/?linkid=2154970) | 24x7 threat investigations and response via Microsoft Defender for Endpoint.
+![Imagen del logotipo de la expel](images/expel-logo.png)| [Expulsar la detección administrada y la respuesta para el punto de conexión de Microsoft Defender](https://go.microsoft.com/fwlink/?linkid=2162430) | Expulsar ayuda a su seguridad a mantenerse al día al detectar riesgos de seguridad en el punto de conexión de Microsoft Defender.
 ![Imagen del logotipo de seguridad de NTT](images/ntt-logo.png)| [Seguridad de NTT](https://go.microsoft.com/fwlink/?linkid=2095320) | El servicio EDR de NTT proporciona una respuesta de supervisión de seguridad 24/7 & en el punto de conexión y la red
 ![Imagen del logotipo de OneVinn](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| Detección administrada y respuesta 24/7 integradas en Microsoft Defender y Azure Sentinel, enriquecidas con la inteligencia de amenazas de Onevinn.
 ![Imagen del logotipo de Quorum Cyber](images/quorum-logo.png) | [Quorum Cyber](https://go.microsoft.com/fwlink/?linkid=2155202)| Un servicio de ingeniería de seguridad & de búsqueda de amenazas de última generación.

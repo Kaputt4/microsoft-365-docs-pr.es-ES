@@ -5,27 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
+- Adm_o365
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - manage_licenses
-- commerce
-search.appverid:
-- MET150
+- commerce_licensing
+search.appverid: MET150
 description: Obtenga información sobre cómo comprar más licencias o reducir el número de licencias para su suscripción a Microsoft 365 para empresas.
-ms.date: ''
-ms.openlocfilehash: d4d0b73fb33d27f82a02b4ae0c6ecb009eb9d38d
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.date: 04/07/2021
+ms.openlocfilehash: 6603b49ed7af8b5213141d5c2434093c3af9540a
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615140"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327123"
 ---
 # <a name="buy-or-remove-licenses"></a>Comprar o quitar licencias
 
@@ -33,7 +34,7 @@ Puede comprar más licencias o reducir el número de licencias para sus suscripc
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser un administrador global o de facturación para realizar las tareas descritas en este artículo. Para obtener más información, vea [Asignar roles de administrador](../../admin/add-users/about-admin-roles.md).
+- Debe ser un administrador global o de facturación para realizar las tareas descritas en este artículo. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 - Puede agregar [usuarios y asignar licencias al mismo tiempo.](../../admin/add-users/add-users.md)
 - Si compró su plan de Microsoft 365 para empresas o Office 365 Enterprise a través de un partner de terceros, debe comprar licencias adicionales a través de ese partner.
 
@@ -53,18 +54,18 @@ Si ha quitado licencias de una suscripción, lo siguiente que debe hacer es elim
 
 ::: moniker range="o365-worldwide"
 
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
 ::: moniker-end
 
 2. En la **pestaña** Productos, busque la suscripción para la que desea comprar o quitar licencias. Seleccione **Más acciones** (tres puntos) y, a continuación, seleccione Comprar **licencias.** [¿Qué ocurre si no veo los botones Comprar licencias o Quitar licencias?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
@@ -97,7 +98,7 @@ Si prepagó la suscripción con una clave de producto, puede agregar más licenc
 - Las licencias agregadas en mitad del período de facturación aparecen en la siguiente factura. Si paga anualmente, se le factura en un mes por estos cambios.
 - En el siguiente extracto de facturación, se descuenta el cargo anterior para el número original de licencias. Agregamos un cargo prorrateado para el período de tiempo con el número original de licencias y agregamos un cargo para el nuevo recuento de licencias. También hay un cargo por el recuento de licencias actual durante el resto del período de facturación.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Si compró más licencias para su suscripción, lo siguiente que debe hacer es asignar esas licencias a los usuarios [de su organización](../../admin/manage/assign-licenses-to-users.md).
 

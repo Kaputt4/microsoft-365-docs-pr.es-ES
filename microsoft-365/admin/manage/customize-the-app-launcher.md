@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'Cree vínculos rápidos a su correo electrónico, documentos, aplicaciones, sitios de SharePoint, sitios externos y otros recursos agregando iconos personalizados al iniciador de aplicaciones. '
-ms.openlocfilehash: b6ae4deed1566492574e30cf8cb66a750c9858c8
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 598cfeb75fc811c87519c4479fa8fcab450466c3
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470636"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327215"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Agregar iconos personalizados en el iniciador de aplicaciones
 
@@ -46,21 +46,30 @@ Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a s
   
 3. Seleccione **Agregar un icono personalizado**. 
   
-4. Escriba un **nombre de icono** para el nuevo icono. El nombre aparecerá en el mosaico. 
+4. Introduzca un **Nombre de icono** para que aparezca en el nuevo icono. 
     
-5. Escriba una **dirección URL del sitio web** para el icono. Esta es la ubicación en la que quieres que los usuarios vayan cuando seleccionen el icono en el iniciador de aplicaciones. Use HTTPS en la dirección URL.<br/>SUGERENCIA: Si va a crear un icono para un sitio de SharePoint, vaya a ese sitio, copie la dirección URL y péguela aquí. La dirección URL del sitio de grupo predeterminado tiene este aspecto: `https://<company_name>.sharepoint.com` 
+5. Escriba una **dirección URL del sitio web** para el icono. Esta es la ubicación en la que quieres que los usuarios vayan cuando seleccionen el icono en el iniciador de aplicaciones. Use HTTPS en la dirección URL.
+
+    > [!TIP]
+    > Si está creando un icono para un sitio de SharePoint, vaya a ese sitio, copie la dirección URL y péguela aquí. La dirección URL del sitio de grupo predeterminado tiene este aspecto: `https://<company_name>.sharepoint.com` 
   
-6. Escriba una **dirección URL de la imagen** del icono. La imagen aparece en la página Mis aplicaciones y en el iniciador de aplicaciones.<br/>SUGERENCIA: La imagen debe tener 60 x 60 píxeles y estar disponible para todos los usuarios de la organización sin necesidad de autenticación.
+6. Escriba una **dirección URL de la imagen** para el icono. La imagen aparece en la página Mis aplicaciones y en el iniciador de aplicaciones.
+
+    > [!TIP]
+    > La imagen debe tener 60 x 60 píxeles y estar disponible para todos los usuarios de la organización sin necesidad de autenticación.
 
 7. Introduzca una **Descripción** para el icono. Esto se ve cuando selecciona el icono en la página Mis aplicaciones y selecciona **Detalles de la aplicación.** 
   
 8. Seleccione **Guardar cambios** para crear el icono personalizado. 
     
-El icono personalizado aparece en el iniciador de aplicaciones en la pestaña **Todas** para sus usuarios y usted. 
+    El icono personalizado aparece en el iniciador de aplicaciones en la pestaña **Todas** para sus usuarios y usted. 
+
+    > [!NOTE]
+    > Si no ve el icono personalizado que se creó en los pasos anteriores, asegúrese de que tiene un buzón de Exchange Online asignado a usted y de que ha iniciado sesión en su buzón al menos una vez. Estos pasos son necesarios para iconos personalizados en Microsoft 365. 
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. En el Centro de administración, vaya a la pestaña **Configuración**  >  **de la organización** Configuración del perfil de  >  **la** </a> organización.
+1. En el Centro de administración, vaya a la pestaña **Configuración**  >  **de la organización** Configuración del perfil de  >  **la** organización.
     
 2. En la **página Perfil de** la organización, junto a Agregar iconos   **personalizados para su organización,** seleccione **Editar**.
 
