@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,73 +13,71 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - SaRA
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
+- commerce_subscriptions
+search.appverid: MET150
 description: Obtenga información acerca de cómo renovar la suscripción de Microsoft 365 al activar o desactivar la facturación periódica.
-ms.openlocfilehash: afa899bd60b761d196df01c6f0bf18d51e546d8e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: e24f7301f6229e76b86f19594526e3ed84689221
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244653"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333187"
 ---
-# <a name="renew-microsoft-365-for-business"></a><span data-ttu-id="e62cc-103">Renovar Microsoft 365 para empresas</span><span class="sxs-lookup"><span data-stu-id="e62cc-103">Renew Microsoft 365 for business</span></span>
+# <a name="renew-microsoft-365-for-business"></a><span data-ttu-id="7cbab-103">Renovar Microsoft 365 para empresas</span><span class="sxs-lookup"><span data-stu-id="7cbab-103">Renew Microsoft 365 for business</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="e62cc-104">A partir del 26 de enero de 2021, ya no se admitirán cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos.</span><span class="sxs-lookup"><span data-stu-id="e62cc-104">As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States.</span></span> <span data-ttu-id="e62cc-105">Si usted es un cliente existente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones, pero siempre que la cuenta bancaria esté en buenos términos.</span><span class="sxs-lookup"><span data-stu-id="e62cc-105">If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.</span></span>
+> <span data-ttu-id="7cbab-104">A partir del 26 de enero de 2021, ya no se admitirán cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos.</span><span class="sxs-lookup"><span data-stu-id="7cbab-104">As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States.</span></span> <span data-ttu-id="7cbab-105">Si usted es un cliente existente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones, pero siempre que la cuenta bancaria esté en buenos términos.</span><span class="sxs-lookup"><span data-stu-id="7cbab-105">If you’re an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account, and you can add new subscriptions to it, but only as long as the bank account is in good standing.</span></span>
 
-<span data-ttu-id="e62cc-106">Este artículo se aplica a la mayoría de las suscripciones a Microsoft 365 para empresas de pago.</span><span class="sxs-lookup"><span data-stu-id="e62cc-106">This article applies to most paid Microsoft 365 for business subscriptions.</span></span>
+<span data-ttu-id="7cbab-106">Este artículo se aplica a la mayoría de las suscripciones a Microsoft 365 para empresas de pago.</span><span class="sxs-lookup"><span data-stu-id="7cbab-106">This article applies to most paid Microsoft 365 for business subscriptions.</span></span>
   
-<span data-ttu-id="e62cc-107">Si ya ha comprado una clave de producto para la renovación en una tienda minorista o a través de un partner de Microsoft, vea [Buscar y escribir la clave de producto](../enter-your-product-key.md).</span><span class="sxs-lookup"><span data-stu-id="e62cc-107">To renew by using a product key that you bought from a retail store or Microsoft partner, see [Find and enter your product key](../enter-your-product-key.md).</span></span>
+<span data-ttu-id="7cbab-107">Si ya ha comprado una clave de producto para la renovación en una tienda minorista o a través de un partner de Microsoft, vea [Buscar y escribir la clave de producto](../enter-your-product-key.md).</span><span class="sxs-lookup"><span data-stu-id="7cbab-107">To renew by using a product key that you bought from a retail store or Microsoft partner, see [Find and enter your product key](../enter-your-product-key.md).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="e62cc-108">Pagar con la cuenta bancaria no está disponible en algunos países o regiones.</span><span class="sxs-lookup"><span data-stu-id="e62cc-108">Paying by bank account isn't available in some countries or regions.</span></span>
+> <span data-ttu-id="7cbab-108">Pagar con la cuenta bancaria no está disponible en algunos países o regiones.</span><span class="sxs-lookup"><span data-stu-id="7cbab-108">Paying by bank account isn't available in some countries or regions.</span></span>
   
-## <a name="turn-recurring-billing-off-or-on"></a><span data-ttu-id="e62cc-109">Activar o desactivar la facturación periódica</span><span class="sxs-lookup"><span data-stu-id="e62cc-109">Turn Recurring billing off or on</span></span>
+## <a name="turn-recurring-billing-off-or-on"></a><span data-ttu-id="7cbab-109">Activar o desactivar la facturación periódica</span><span class="sxs-lookup"><span data-stu-id="7cbab-109">Turn Recurring billing off or on</span></span>
 
-<span data-ttu-id="e62cc-110">Si paga mediante tarjeta de crédito, la **facturación periódica** se activa de forma predeterminada.</span><span class="sxs-lookup"><span data-stu-id="e62cc-110">If you pay by credit card or bank account, **Recurring billing** is turned on by default.</span></span> <span data-ttu-id="e62cc-111">Cuando la **facturación periódica** está activada, la suscripción seguirá siendo facturada cada año el día en que se suscribió.</span><span class="sxs-lookup"><span data-stu-id="e62cc-111">When **Recurring billing** is on, your subscription will continue to be billed each year on the day you subscribed.</span></span> <span data-ttu-id="e62cc-112">Puede desactivar o volver a activar esta opción en el centro de administración mientras su suscripción esté activa.</span><span class="sxs-lookup"><span data-stu-id="e62cc-112">You can turn it off or back on again in the admin center if your subscription is active.</span></span>
+<span data-ttu-id="7cbab-110">Si paga mediante tarjeta de crédito, la **facturación periódica** se activa de forma predeterminada.</span><span class="sxs-lookup"><span data-stu-id="7cbab-110">If you pay by credit card or bank account, **Recurring billing** is turned on by default.</span></span> <span data-ttu-id="7cbab-111">Cuando la **facturación periódica** está activada, la suscripción seguirá siendo facturada cada año el día en que se suscribió.</span><span class="sxs-lookup"><span data-stu-id="7cbab-111">When **Recurring billing** is on, your subscription will continue to be billed each year on the day you subscribed.</span></span> <span data-ttu-id="7cbab-112">Puede desactivar o volver a activar esta opción en el centro de administración mientras su suscripción esté activa.</span><span class="sxs-lookup"><span data-stu-id="7cbab-112">You can turn it off or back on again in the admin center if your subscription is active.</span></span>
   
-<span data-ttu-id="e62cc-113">Si pagó por adelantado la suscripción con una clave de producto, expirará al final del período de suscripción.</span><span class="sxs-lookup"><span data-stu-id="e62cc-113">If you prepaid for your subscription with a product key, your subscription will expire at the end of subscription term.</span></span> <span data-ttu-id="e62cc-114">Puede activar la **facturación periódica** y proporcionar la información de su tarjeta de crédito o cuenta bancaria para que la suscripción se facture cada año el día en el que se suscribió.</span><span class="sxs-lookup"><span data-stu-id="e62cc-114">You can turn on **Recurring billing** and provide credit card or bank account information so that your subscription will continue to be billed every year on the day you subscribed.</span></span> <span data-ttu-id="e62cc-115">También tiene la opción de pagar cada mes o pagar por todo el año por adelantado.</span><span class="sxs-lookup"><span data-stu-id="e62cc-115">You also have the option to pay every month, or to pay for the entire year up front.</span></span> <span data-ttu-id="e62cc-116">No se le realizará ningún cargo en la tarjeta de crédito ni en la cuenta bancaria hasta que no expire el período de suscripción inicial.</span><span class="sxs-lookup"><span data-stu-id="e62cc-116">Your credit card or bank account will not be charged until your initial subscription term has expired.</span></span>
+<span data-ttu-id="7cbab-113">Si pagó por adelantado la suscripción con una clave de producto, expirará al final del período de suscripción.</span><span class="sxs-lookup"><span data-stu-id="7cbab-113">If you prepaid for your subscription with a product key, your subscription will expire at the end of subscription term.</span></span> <span data-ttu-id="7cbab-114">Puede activar la **facturación periódica** y proporcionar la información de su tarjeta de crédito o cuenta bancaria para que la suscripción se facture cada año el día en el que se suscribió.</span><span class="sxs-lookup"><span data-stu-id="7cbab-114">You can turn on **Recurring billing** and provide credit card or bank account information so that your subscription will continue to be billed every year on the day you subscribed.</span></span> <span data-ttu-id="7cbab-115">También tiene la opción de pagar cada mes o pagar por todo el año por adelantado.</span><span class="sxs-lookup"><span data-stu-id="7cbab-115">You also have the option to pay every month, or to pay for the entire year up front.</span></span> <span data-ttu-id="7cbab-116">No se le realizará ningún cargo en la tarjeta de crédito ni en la cuenta bancaria hasta que no expire el período de suscripción inicial.</span><span class="sxs-lookup"><span data-stu-id="7cbab-116">Your credit card or bank account will not be charged until your initial subscription term has expired.</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="e62cc-117">En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="e62cc-117">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="7cbab-117">En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="7cbab-117">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="e62cc-118">En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="e62cc-118">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="7cbab-118">En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="7cbab-118">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="e62cc-119">En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="e62cc-119">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="7cbab-119">En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.</span><span class="sxs-lookup"><span data-stu-id="7cbab-119">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.</span></span>
+
 ::: moniker-end
 
-2. <span data-ttu-id="e62cc-120">Elija la suscripción para la que quiere administrar la facturación periódica.</span><span class="sxs-lookup"><span data-stu-id="e62cc-120">Select the subscription for which you want to manage recurring billing.</span></span>
-3. <span data-ttu-id="e62cc-121">En la página Detalles de la suscripción, en **Configuración de suscripción y pago**, seleccione **Editar facturación periódica**.</span><span class="sxs-lookup"><span data-stu-id="e62cc-121">On the subscription details page, under **Subscription and payment settings**, select **Edit recurring billing**.</span></span>
-4. <span data-ttu-id="e62cc-122">En el panel **Editar la configuración de facturación periódica**, seleccione **Activado**, **Activado pero renovar una vez** o **Desactivar**.</span><span class="sxs-lookup"><span data-stu-id="e62cc-122">In the **Edit recurring billing settings** pane, select **On**, **On, but renew once**, or **Turn off**.</span></span>
-5. <span data-ttu-id="e62cc-123">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="e62cc-123">Select **Save**.</span></span>
+2. <span data-ttu-id="7cbab-120">Elija la suscripción para la que quiere administrar la facturación periódica.</span><span class="sxs-lookup"><span data-stu-id="7cbab-120">Select the subscription for which you want to manage recurring billing.</span></span>
+3. <span data-ttu-id="7cbab-121">En la página Detalles de la suscripción, en **Configuración de suscripción y pago**, seleccione **Editar facturación periódica**.</span><span class="sxs-lookup"><span data-stu-id="7cbab-121">On the subscription details page, under **Subscription and payment settings**, select **Edit recurring billing**.</span></span>
+4. <span data-ttu-id="7cbab-122">En el panel **Editar la configuración de facturación periódica**, seleccione **Activado**, **Activado pero renovar una vez** o **Desactivar**.</span><span class="sxs-lookup"><span data-stu-id="7cbab-122">In the **Edit recurring billing settings** pane, select **On**, **On, but renew once**, or **Turn off**.</span></span>
+5. <span data-ttu-id="7cbab-123">Seleccione **Guardar**.</span><span class="sxs-lookup"><span data-stu-id="7cbab-123">Select **Save**.</span></span>
 
     > [!NOTE]
-    > - <span data-ttu-id="e62cc-124">Solo puede cambiar la **facturación periódica** para las suscripciones activas.</span><span class="sxs-lookup"><span data-stu-id="e62cc-124">You can only change the **Recurring billing** setting for active subscriptions.</span></span> <span data-ttu-id="e62cc-125">Si la suscripción ya ha expirado o si está desactivada, tendrá que [reactivarla](reactivate-your-subscription.md) antes de poder activar o desactivar la **facturación periódica**.</span><span class="sxs-lookup"><span data-stu-id="e62cc-125">If your subscription has already expired or is disabled, you will need to [reactivate it](reactivate-your-subscription.md) before you can turn **Recurring billing** on or off.</span></span>
-    > - <span data-ttu-id="e62cc-126">La suscripción no se cancela inmediatamente cuando se desactiva la **facturación periódica**.</span><span class="sxs-lookup"><span data-stu-id="e62cc-126">When **Recurring billing** is turned off, the subscription isn't cancelled.</span></span> <span data-ttu-id="e62cc-127">Si desea mantener la suscripción activada, debe pagar la factura manualmente.</span><span class="sxs-lookup"><span data-stu-id="e62cc-127">If you want to keep the subscription active, you must pay the bill manually.</span></span>
-    > - <span data-ttu-id="e62cc-128">Si desactiva la **Facturación periódica**, la suscripción permanece activa hasta que expira.</span><span class="sxs-lookup"><span data-stu-id="e62cc-128">If you turn off **Recurring billing**, the subscription remains active until it expires.</span></span> <span data-ttu-id="e62cc-129">Puede ver la fecha de expiración en la página Detalles de la suscripción en la sección **Configuración de la suscripción y el pago**.</span><span class="sxs-lookup"><span data-stu-id="e62cc-129">You can view the expiration date on the subscription details page in the **Subscription and payment settings** section.</span></span>
-    > - <span data-ttu-id="e62cc-130">Para obtener información sobre cómo cancelar la suscripción inmediatamente, consulte [Cancelar la suscripción](cancel-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="e62cc-130">To learn how to cancel the subscription right away, see [Cancel my subscription](cancel-your-subscription.md).</span></span>
+    >
+    > - <span data-ttu-id="7cbab-124">Solo puede cambiar la **facturación periódica** para las suscripciones activas.</span><span class="sxs-lookup"><span data-stu-id="7cbab-124">You can only change the **Recurring billing** setting for active subscriptions.</span></span> <span data-ttu-id="7cbab-125">Si la suscripción ya ha expirado o si está desactivada, tendrá que [reactivarla](reactivate-your-subscription.md) antes de poder activar o desactivar la **facturación periódica**.</span><span class="sxs-lookup"><span data-stu-id="7cbab-125">If your subscription has already expired or is disabled, you will need to [reactivate it](reactivate-your-subscription.md) before you can turn **Recurring billing** on or off.</span></span>
+    > - <span data-ttu-id="7cbab-126">La suscripción no se cancela inmediatamente cuando se desactiva la **facturación periódica**.</span><span class="sxs-lookup"><span data-stu-id="7cbab-126">When **Recurring billing** is turned off, the subscription isn't cancelled.</span></span> <span data-ttu-id="7cbab-127">Si desea mantener la suscripción activada, debe pagar la factura manualmente.</span><span class="sxs-lookup"><span data-stu-id="7cbab-127">If you want to keep the subscription active, you must pay the bill manually.</span></span>
+    > - <span data-ttu-id="7cbab-128">Si desactiva la **Facturación periódica**, la suscripción permanece activa hasta que expira.</span><span class="sxs-lookup"><span data-stu-id="7cbab-128">If you turn off **Recurring billing**, the subscription remains active until it expires.</span></span> <span data-ttu-id="7cbab-129">Puede ver la fecha de expiración en la página Detalles de la suscripción en la sección **Configuración de la suscripción y el pago**.</span><span class="sxs-lookup"><span data-stu-id="7cbab-129">You can view the expiration date on the subscription details page in the **Subscription and payment settings** section.</span></span>
+    > - <span data-ttu-id="7cbab-130">Para obtener información sobre cómo cancelar la suscripción inmediatamente, consulte [Cancelar la suscripción](cancel-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="7cbab-130">To learn how to cancel the subscription right away, see [Cancel my subscription](cancel-your-subscription.md).</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="e62cc-131">Artículos relacionados</span><span class="sxs-lookup"><span data-stu-id="e62cc-131">Related articles</span></span>
+## <a name="related-content"></a><span data-ttu-id="7cbab-131">Contenido relacionado</span><span class="sxs-lookup"><span data-stu-id="7cbab-131">Related content</span></span>
 
-[<span data-ttu-id="e62cc-132">Reactivar la suscripción</span><span class="sxs-lookup"><span data-stu-id="e62cc-132">Reactivate your subscription</span></span>](reactivate-your-subscription.md)
-  
-[<span data-ttu-id="e62cc-133">¿Qué pasa con mis datos y mi acceso cuando termina mi suscripción?</span><span class="sxs-lookup"><span data-stu-id="e62cc-133">What happens to my data and access when my subscription ends?</span></span>](what-if-my-subscription-expires.md)
-
-[<span data-ttu-id="e62cc-134">Especificar la clave de producto</span><span class="sxs-lookup"><span data-stu-id="e62cc-134">Enter your product key</span></span>](../enter-your-product-key.md)
-  
-[<span data-ttu-id="e62cc-135">Comprar la versión de prueba de Microsoft 365 para empresas</span><span class="sxs-lookup"><span data-stu-id="e62cc-135">Buy your trial version of Microsoft 365 for business</span></span>](../try-or-buy-microsoft-365.md)
+<span data-ttu-id="7cbab-132">[Reactivar la suscripción](reactivate-your-subscription.md) (artículo)</span><span class="sxs-lookup"><span data-stu-id="7cbab-132">[Reactivate your subscription](reactivate-your-subscription.md) (article)</span></span>\
+[<span data-ttu-id="7cbab-133">¿Qué pasa con mis datos y mi acceso cuando termina mi suscripción?</span><span class="sxs-lookup"><span data-stu-id="7cbab-133">What happens to my data and access when my subscription ends?</span></span>](what-if-my-subscription-expires.md) <span data-ttu-id="7cbab-134">(artículo)</span><span class="sxs-lookup"><span data-stu-id="7cbab-134">(article)</span></span>\
+<span data-ttu-id="7cbab-135">[Especificar la clave de producto](../enter-your-product-key.md) (artículo)</span><span class="sxs-lookup"><span data-stu-id="7cbab-135">[Enter your product key](../enter-your-product-key.md) (article)</span></span>\
+<span data-ttu-id="7cbab-136">[Comprar la versión de prueba de Microsoft 365 para empresas](../try-or-buy-microsoft-365.md) (artículo)</span><span class="sxs-lookup"><span data-stu-id="7cbab-136">[Buy your trial version of Microsoft 365 for business](../try-or-buy-microsoft-365.md) (article)</span></span>

@@ -11,12 +11,12 @@ metadata:
   ms.date: 03/25/2021
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 2ca0bc79cc70ce738603dcdb7cb09ea1d238e4c9
-  ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+  ms.openlocfilehash: 38cf5ad6b551763b5ffc6520617b393b07f2646e
+  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/26/2021
-  ms.locfileid: "51379718"
+  ms.lasthandoff: 05/12/2021
+  ms.locfileid: "52332587"
 landingContent:
 - title: Administrar dominios
   linkLists:
@@ -38,13 +38,13 @@ landingContent:
     links:
     - text: Transferir un dominio de Microsoft a otro host
       url: https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host
-- title: Piloto de Microsoft 365
+- title: Piloto Microsoft 365
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Piloto de Microsoft 365 desde mi dominio personalizado
       url: https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain
-- title: Instrucciones específicas de host
+- title: Registros DNS & servidor de nombres
   linkLists:
   - linkListType: how-to-guide
     links:
