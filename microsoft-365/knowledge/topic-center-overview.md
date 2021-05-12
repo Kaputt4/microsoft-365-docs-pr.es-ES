@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: bdb49af4ac43976a1ad734e507902781d63c5670
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 2e7152530dc3221eb3ab01047416993178193732
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301793"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333823"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Introducción al centro de temas en Temas de Microsoft Viva
 
@@ -37,11 +37,11 @@ El centro de temas se crea durante la instalación de Viva Topics. Una vez compl
 1. En el centro Microsoft 365 administración, **seleccione Configuración** y, a continuación, seleccione **Configuración de la organización**.
 2. En la **pestaña Servicios,** seleccione **Experiencias del tema**.
 
-    ![Conectar personas al conocimiento](../media/admin-org-knowledge-options-completed.png) </br>
+    ![Conectar personas al conocimiento](../media/admin-org-knowledge-options-completed.png) 
 
 3. Seleccione la **pestaña Centro de** temas. En **Dirección del sitio** es un vínculo al Centro de temas.
 
-    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) </br>
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
 
 
 
@@ -58,32 +58,35 @@ En la página principal del centro de temas, puede ver los temas de su organizac
 
 - Conexiones sugeridas: verá los temas enumerados en **We've listed you on these topics. ¿Lo hemos hecho bien?** Estos son temas en los que se ha sugerido la conexión al tema a través de la IA. Por ejemplo, puede ser un autor de un archivo o sitio relacionado. Se le pedirá que confirme que debe mantenerse en la lista como una persona relacionada para el tema.
 
-   ![Conexiones sugeridas](../media/knowledge-management/my-topics.png) </br>
+   ![Conexiones sugeridas](../media/knowledge-management/my-topics.png) 
  
 - Conexiones confirmadas: se trata de temas en los que está anclado en la página del tema o ha confirmado una conexión sugerida al tema. Los temas pasarán de la sección sugerida a confirmada cuando confirme una conexión sugerida.
  
-   ![Temas confirmados](../media/knowledge-management/my-topics-confirmed.png) </br>
+   ![Temas confirmados](../media/knowledge-management/my-topics-confirmed.png) 
 
 Una vez que un usuario confirma su conexión a un tema, el usuario puede realizar modificaciones en la página del tema para seleccionar su conexión. Por ejemplo, pueden proporcionar más información sobre su conexión con el tema.
 
 
 ## <a name="manage-topics-page"></a>Página Administrar temas
 
-Para trabajar en la sección **Administrar temas** del centro de temas, debe tener los permisos necesarios administrar temas necesarios para el rol de administrador de conocimientos. El administrador puede asignar estos [](set-up-topic-experiences.md)permisos a los usuarios durante la configuración de administración de [conocimientos,](topic-experiences-knowledge-rules.md) o un administrador puede agregar nuevos usuarios después a través del centro de administración Microsoft 365 administración.
+Para trabajar en la página **Administrar temas** del centro de temas, debe tener los permisos necesarios administrar temas necesarios para el rol de administrador de conocimientos. El administrador puede asignar estos [](set-up-topic-experiences.md)permisos a los usuarios durante la configuración de administración de [conocimientos,](topic-experiences-knowledge-rules.md) o un administrador puede agregar nuevos usuarios después a través del centro de administración Microsoft 365 administración.
 
-En la página Administrar temas, el panel de temas muestra todos los temas a los que tiene acceso que se identificaron desde las ubicaciones de origen especificadas. Cada tema mostrará la fecha en que se descubrió el tema. Un usuario al que se asignaron permisos administrar temas puede revisar los temas no confirmados y elegir:
-- Confirmar el tema: indica a los usuarios que un curador humano validó un tema sugerido por IA. 
-- Publicar el tema: edite la información del tema para mejorar la calidad del tema que se identificó inicialmente y resalta el tema para todos los usuarios que tienen acceso a temas. 
+En la **página Administrar temas,** el panel de temas muestra todos los temas, a los que tiene acceso, que se identificaron desde las ubicaciones de origen especificadas. Cada tema mostrará la fecha en que se descubrió el tema. Un usuario al que se asignaron permisos administrar temas puede revisar los temas no confirmados y elegir:
+
+- Confirmar el tema: indica a los usuarios que un curador humano validó un tema sugerido por IA.
+
+- Publicar el tema: edite la información del tema para mejorar la calidad del tema que se identificó inicialmente y resalta el tema para todos los usuarios que tienen acceso a temas.
+ 
 - Quitar el tema: hace que el tema no se pueda detectar para los usuarios finales. El tema se mueve a la **pestaña Quitado** y se puede confirmar más adelante si es necesario. 
 
-> [!Note] 
-> Vea [Administrar temas para](manage-topics.md) obtener más información sobre la administración de temas en la página Administrar temas.
+Para obtener más información acerca de cómo administrar temas en la página **Administrar temas, vea [Administrar temas](manage-topics.md).
 
 ## <a name="create-or-edit-a-topic"></a>Crear o editar un tema
 
 Si tiene permisos crear y editar temas, puede:
 
 - [Editar temas existentes:](edit-a-topic.md)puede realizar cambios en las páginas de temas existentes que se crearon mediante la detección.
+
 - [Crear nuevos temas:](create-a-topic.md)puede crear nuevos temas para los que no se encontraron a través de la detección, o si las herramientas de inteligencia artificial no encontraron suficiente evidencia para crear un tema.
 
 

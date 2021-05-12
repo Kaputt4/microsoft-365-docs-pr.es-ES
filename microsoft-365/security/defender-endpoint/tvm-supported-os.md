@@ -1,7 +1,7 @@
 ---
-title: Sistemas operativos y plataformas compatibles para la administración de amenazas y vulnerabilidades
+title: Capacidades y plataformas de sistemas operativos compatibles
 description: Asegúrese de que cumple los requisitos del sistema operativo o de la plataforma para la administración de amenazas y vulnerabilidades, de modo que las actividades de todos los dispositivos se tienen en cuenta correctamente.
-keywords: administración & vulnerabilidades, administración de amenazas y vulnerabilidades, sistema operativo, requisitos de plataforma, requisitos previos, os compatibles con Microsoft Defender para Endpoint-tvm, Microsoft Defender para Endpoint-tvm,
+keywords: threat & vulnerability management, threat and vulnerability management, operating system, platform requirements, prerequisites, Microsoft Defender for Endpoint-tvm supported os, Microsoft Defender for Endpoint-tvm, supported operating systems, supported platforms, linux support, mac support, mac support
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 55322d238839d347882ec1d74b767c68fd2be2b3
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 72dc9d448a6170cbacc71d37a60bdd059ef6ec3e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935526"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333799"
 ---
-# <a name="supported-operating-systems-and-platforms---threat-and-vulnerability-management"></a>Plataformas y sistemas operativos compatibles: administración de amenazas y vulnerabilidades
+# <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Sistemas operativos, plataformas y capacidades compatibles: para la administración de amenazas y vulnerabilidades
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,18 +42,27 @@ Antes de comenzar, asegúrese de cumplir los siguientes requisitos del sistema o
 >[!NOTE]
 >Los sistemas y plataformas admitidos para la administración de amenazas y vulnerabilidades pueden ser diferentes de la [lista Requisitos](minimum-requirements.md) mínimos de Microsoft Defender para puntos de conexión.
 
-Sistema operativo | Soporte técnico de evaluación de seguridad
-:---|:---
-Windows 7 | Vulnerabilidades del sistema operativo (SO)
-Windows 8.1 | Vulnerabilidades del sistema operativo (SO)<br/>Vulnerabilidades de productos de software<br/>Evaluación de configuración del sistema operativo (SO)<br/>Evaluación de configuración de controles de seguridad<br/>Evaluación de configuración de productos de software |
-Windows 10, versiones 1607-1703 | Vulnerabilidades del sistema operativo (SO)
-Windows 10, versión 1709 o posterior |Vulnerabilidades del sistema operativo (SO)<br/>Vulnerabilidades de productos de software<br/>Evaluación de configuración del sistema operativo (SO)<br/>Evaluación de configuración de controles de seguridad<br/>Evaluación de configuración de productos de software
-Windows Server 2008 R2 | Vulnerabilidades del sistema operativo (SO)<br/>Vulnerabilidades de productos de software<br/>Evaluación de configuración del sistema operativo (SO)<br/>Evaluación de configuración de controles de seguridad<br/>Evaluación de configuración de productos de software
-Windows Server 2012 R2 | Vulnerabilidades del sistema operativo (SO)<br/>Vulnerabilidades de productos de software<br/>Evaluación de configuración del sistema operativo (SO)<br/>Evaluación de configuración de controles de seguridad<br/>Evaluación de configuración de productos de software
-Windows Server 2016 | Vulnerabilidades del sistema operativo (SO)<br/>Vulnerabilidades de productos de software<br/>Evaluación de configuración del sistema operativo (SO)<br/>Evaluación de configuración de controles de seguridad<br/>Evaluación de configuración de productos de software
-Windows Server 2019 | Vulnerabilidades del sistema operativo (SO)<br/>Vulnerabilidades de productos de software<br/>Evaluación de configuración del sistema operativo (SO)<br/>Evaluación de configuración de controles de seguridad<br/>Evaluación de configuración de productos de software
-macOS 10.14 "Mojave" y superior | Vulnerabilidades del sistema operativo (SO)<br/>Vulnerabilidades de productos de software 
-Linux | No compatible (planeado)
+## <a name="capabilities-per-supported-operating-systems-os-and-platforms"></a>Capacidades por sistemas operativos (SO) y plataformas compatibles
+
+En la tabla siguiente, "Sí" indica que se admite una funcionalidad de administración de amenazas y vulnerabilidades para el sistema operativo o la plataforma de esa fila.
+
+Sistema operativo o plataforma compatibles | Vulnerabilidades del sistema operativo | Vulnerabilidades de productos de software | Evaluación de configuración del sistema operativo | Evaluación de configuración de controles de seguridad | Evaluación de configuración de productos de software
+:---|:---|:---|:---|:---|:---
+Windows 7 | Sí | No se admite | No se admite | No se admite | No se admite
+Windows 8.1 | Sí | Sí | Sí | Sí| Sí
+Windows 10, versiones 1607-1703 | Sí  | No se admite | No se admite | No se admite | No se admite
+Windows 10, versión 1709 o posterior | Sí | Sí | Sí | Sí | Sí
+Windows Server 2008 R2 | Sí | Sí | Sí | Sí | Sí
+Windows Server 2012 R2 | Sí | Sí | Sí | Sí | Sí
+Windows Server 2016 | Sí | Sí | Sí | Sí | Sí
+Windows Server 2019 | Sí | Sí | Sí | Sí | Sí
+macOS 10.14 "Mojave" y superior | Sí | Sí | Sí (versión preliminar) | Sí (versión preliminar) | Sí (versión preliminar)
+Red Hat Enterprise Linux 7.2 o posterior **(versión preliminar)** \* (vea el aviso "Importante" a continuación) | Sí | Sí | Sí | Sí | Sí
+CentOS 7.2 o superior **(versión preliminar)** | Sí | Sí | Sí | Sí | Sí
+Ubuntu 16,04 LTS o superior LTS **(versión preliminar)** | Sí | Sí | Sí | Sí | Sí
+
+>[!IMPORTANT]
+> \* Red Hat Enterprise Linux: "Los datos de vulnerabilidad proporcionados y mostrados como parte de los servicios de Microsoft Defender para endpoints están disponibles en su forma sin procesar, "AS IS", de Red Hat, Inc., y es posible que no estén actualizados. Los datos a los que se puede acceder en la API de datos de seguridad de Red Hat se licencian con la licencia Creative Commons Attribution 4.0 International License. Asume el riesgo de usar estos datos. Microsoft y sus proveedores externos renuncian a cualquier responsabilidad por daños indirectos y de otro tipo y garantías implícitas, incluidas las garantías implícitas de no infracción, comercialización y idoneidad para un fin determinado. © 2020 Red Hat. Todos los derechos reservados. © 2020 Microsoft. Todos los derechos reservados."
 
 ## <a name="related-articles"></a>Artículos relacionados
 

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: prkalid, guyb
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,16 +16,17 @@ ms.collection:
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo administrar quién recibe correos electrónicos de notificación de facturación y datos adjuntos de facturación.
-ms.openlocfilehash: 8997a4d3ca575c60214adbedccc018e6768850cd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: d4083dc5a9d70eb8c20b4107389ec5fec65749ad
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911859"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332143"
 ---
 # <a name="manage-billing-notifications-and-invoice-attachments"></a>Administrar las notificaciones de facturación y los datos adjuntos en las facturas
 
@@ -32,7 +34,7 @@ La **página Notificaciones de facturación** le permite administrar quién reci
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global para realizar los pasos descritos en este artículo. Los administradores de facturación pueden realizar algunos de estos cambios, como se indica en las secciones siguientes. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global para realizar los pasos descritos en este artículo. Los administradores de facturación pueden realizar algunos de estos cambios, como se indica en las secciones siguientes. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="change-the-language-you-receive-email-in"></a>Cambiar el idioma en el que recibe el correo electrónico
 
@@ -41,7 +43,7 @@ Debe ser un administrador global para realizar los pasos descritos en este artí
 
 Los correos electrónicos de notificación de facturación se envían en el idioma preferido de la organización. Para cambiar el idioma preferido, siga estos pasos.
 
-1. En el Centro de administración de Microsoft 365, vaya a la página **Notificaciones**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">de facturación de</a> facturación.
+1. En el centro Microsoft 365 administración, vaya a la página **Notificaciones**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">de facturación de</a> facturación.
 2. En la sección **Configuración de notificación de facturación,** seleccione Editar configuración de **notificación**.
 3. En el **panel Configuración de notificación de** facturación, en **Idioma** preferido, seleccione el idioma que desea usar y, a continuación, **seleccione Guardar**.
 
@@ -101,7 +103,7 @@ Para dejar de recibir los datos adjuntos de la factura en cualquier momento, sig
 
 Si tienes un perfil de facturación, algunos de los pasos descritos en este artículo pueden ser ligeramente diferentes para algunas de tus suscripciones. En esta sección se describen esas diferencias. [¿Cómo sé si tengo un perfil de facturación?](manage-billing-profiles.md)
 
-### <a name="who-receives-billing-notifications"></a>¿Quién recibe notificaciones de facturación?
+### <a name="who-receives-billing-notifications"></a>Quién Recibe notificaciones de facturación?
 
 Los correos electrónicos de notificación de facturación se envían a las direcciones de correo electrónico principales y alternativas para los usuarios a los que se asigna uno de los siguientes roles:
 

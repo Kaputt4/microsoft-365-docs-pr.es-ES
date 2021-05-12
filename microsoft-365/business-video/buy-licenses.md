@@ -2,9 +2,10 @@
 title: Comprar nuevas licencias
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,28 +16,29 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- commerce_purchase
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Obtenga información sobre cómo comprar nuevas licencias de Microsoft 365 para empresas.
-ms.openlocfilehash: 3ca503abdf35e1bef95f784b7fc19c70a8de84bd
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+description: Obtenga información sobre cómo comprar nuevas Microsoft 365 licencias para empresas.
+ms.openlocfilehash: c9077dbb4c653d162df97e7f7bda47d929eb67ce
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422980"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332215"
 ---
-# <a name="buy-microsoft-365-licenses"></a>Comprar licencias de Microsoft 365
+# <a name="buy-microsoft-365-licenses"></a>Comprar Microsoft 365 licencias
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE?autoplay=false]
 
-A medida que agregue nuevos usuarios, tendrá que comprar más licencias de Microsoft 365 para esos usuarios.
+A medida que agregue nuevos usuarios, tendrá que comprar más Microsoft 365 licencias para esos usuarios.
 
 ## <a name="try-it"></a>¿Se atreve?
 
-1. En el Centro de administración de Microsoft 365, elija **Facturación**, **Productos** y, a continuación, seleccione la suscripción.
+1. En el centro Microsoft 365 administración, elija **Facturación**, **Productos** y, a continuación, seleccione la suscripción.
 1. Elija **Comprar licencias**.
 1. Escribe el número de licencias que quieres comprar.
 1. Seleccione **Guardar**.

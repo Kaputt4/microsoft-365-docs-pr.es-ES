@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Opciones de fin de ciclo de vida para grupos, equipos y Yammer.
-ms.openlocfilehash: 405d87c645118cf0ef318d4d68802d17da8c5673
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f1f91e64af7e16016398a7c326feec5a9b073ca9
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916135"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333787"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Opciones de fin de ciclo de vida para grupos, equipos y Yammer
 
@@ -53,7 +53,7 @@ Los grupos y los equipos permanecen en estado de eliminación suave durante 30 d
 
 Hay tres áreas clave que los propietarios de equipos y grupos y los administradores de TI deben tener en cuenta al eliminar un grupo o equipo.
 
-**Contenido**
+**Content**
 
 ¿Es necesario conservar el contenido después de que el equipo ya no esté funcional o en existencia? ¿Es suficiente confiar en las capacidades de retención de Microsoft 365 o es parte del contenido de aplicaciones y servicios que no ofrecen retención? ¿Es necesario conservar el contenido con fines de administración de registros, con fines de archivo o con fines futuros de uso y referencia?
 
@@ -79,7 +79,8 @@ El contenido específico de Teams se encuentra principalmente en forma de conver
 
 Las conversaciones en canales no se pueden copiar ni mover con la funcionalidad nativa de Microsoft Teams. Sin embargo, se pueden exportar mediante la API de Graph.
 
-Además, si se aplica una directiva de retención a Teams, las conversaciones se conservan y están disponibles a través de búsquedas de exhibición de documentos electrónicos. (Los elementos encontrados en las búsquedas de exhibición de documentos electrónicos se pueden exportar, pero no hay ningún contexto o estructura de su origen original, sino simplemente mensajes individuales).
+Además, si se aplica una directiva de retención a Teams, las conversaciones se conservan y están disponibles a través de búsquedas de exhibición de documentos electrónicos. Con eDiscovery avanzado puede [reconstruir una conversación de chat de Teams.](/microsoft-365/compliance/conversation-review-sets)
+
 
 ### <a name="archiving-a-team"></a>Archivado de un equipo
 

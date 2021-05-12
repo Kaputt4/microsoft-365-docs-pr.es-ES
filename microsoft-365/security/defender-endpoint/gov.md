@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1f0005ed4614a8d01d2a64e8853be99a204825c8
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 189cb574a436a457cce312f6cb02ca1bf7863a18
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086823"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333499"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender para punto de conexión para clientes del Gobierno de los EE. UU.
 
@@ -78,7 +78,7 @@ Windows 10, versión 1909 (con [KB4586819](https://support.microsoft.com/help/45
 Windows 10, versión 1903 (con [KB4586819](https://support.microsoft.com/help/4586819)) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows 10, versión 1809 (con [KB4586839](https://support.microsoft.com/help/4586839)) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows 10, versión 1803 (con [KB4598245](https://support.microsoft.com/help/4598245)) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
-Windows 10, versión 1709 | ![No](images/svg/check-no.svg)<br />Nota: No se admite | ![Sí ](images/svg/check-yes.svg) con [KB4499147](https://support.microsoft.com/help/4499147)<br />Nota: [En desuso,](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)actualice | ![No](images/svg/check-no.svg)<br />Nota: No se admite
+Windows 10, versión 1709 | ![No](images/svg/check-no.svg)<br />Nota: No se admite | ![Sí ](images/svg/check-yes.svg) con [KB4499147](https://support.microsoft.com/help/4499147)<br />Nota: [En desuso,](/lifecycle/announcements/revised-end-of-service-windows-10-1709)actualice | ![No](images/svg/check-no.svg)<br />Nota: No se admite
 Windows 10, versión 1703 y versiones anteriores | ![No](images/svg/check-no.svg)<br />Nota: No se admite | ![No](images/svg/check-no.svg)<br />Nota: No se admite | ![No](images/svg/check-no.svg)<br />Nota: No se admite
 Windows Server 2019 (con [KB4586839](https://support.microsoft.com/help/4586839)) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows Server 2016 | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
@@ -88,8 +88,8 @@ Windows 8.1 Enterprise | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/ch
 Windows 8 Pro | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows 7 SP1 Enterprise | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Windows 7 SP1 Pro | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
-Linux | ![Sí](images/svg/check-yes.svg) En versión preliminar<br />Vea la nota a continuación | ![Sí](images/svg/check-yes.svg) En versión preliminar<br />Vea la nota a continuación | ![Sí](images/svg/check-yes.svg) En versión preliminar<br />Vea la nota a continuación
-macOS | ![Sí](images/svg/check-yes.svg) En versión preliminar<br />Vea la nota a continuación | ![Sí](images/svg/check-yes.svg) En versión preliminar<br />Vea la nota a continuación | ![Sí](images/svg/check-yes.svg) En versión preliminar<br />Vea la nota a continuación
+Linux | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
+macOS | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Android | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería
 iOS | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería
 
@@ -97,13 +97,10 @@ iOS | ![No](images/svg/check-no.svg) En el trabajo pendiente de ingeniería | ![
 > Cuando se especifica una revisión, debe implementarse antes de la incorporación del dispositivo para configurar Defender for Endpoint en el entorno correcto.
 
 > [!NOTE]
-> ¿Intenta incorporar Windows dispositivos anteriores a Windows 10 o Windows Server 2019 con [Microsoft Monitoring Agent?](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) Deberá elegir "Azure US Government" en "Azure Cloud" si usa el [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) asistente para la instalación [o](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)si usa una línea de comandos o un [script:](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1.
-
-> [!NOTE]
-> Necesitará la versión 101.25.72 y versiones posteriores para Linux, y la versión 101.25.69 y versiones posteriores para macOS.
+> ¿Intenta incorporar dispositivos Windows anteriores a Windows 10 o Windows Server 2019 con [Microsoft Monitoring Agent?](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) Deberá elegir "Azure US Government" en "Azure Cloud" si usa el [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) asistente para la instalación [o](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)si usa una línea de comandos o un [script:](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) establezca el parámetro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" en 1.
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>Versiones del sistema operativo al usar Azure Defender para servidores
-Las siguientes versiones del sistema operativo se admiten al [usar Azure Defender para servidores:](https://docs.microsoft.com/azure/security-center/security-center-wdatp)
+Las siguientes versiones del sistema operativo se admiten al [usar Azure Defender para servidores:](/azure/security-center/security-center-wdatp)
 
 Versión del sistema operativo | GCC | GCC High | DoD
 :---|:---|:---|:---
@@ -160,11 +157,11 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 ## <a name="feature-parity-with-commercial"></a>Paridad de características con comercial
 Defender for Endpoint for US Government customers doesn't have complete parity with the commercial offering. Aunque nuestro objetivo es ofrecer todas las funciones y características comerciales a nuestros clientes del Gobierno de Estados Unidos, aún no hay algunas funcionalidades disponibles que queremos destacar.
 
-Estas son las diferencias conocidas a partir de abril de 2021:
+Estas son las diferencias conocidas:
 
 Nombre de la característica | GCC | GCC High | DoD
 :---|:---|:---|:---
-Administración y API: API de streaming | ![Sí](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo
+Administración y API: API de streaming | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg)
 Filtrado de contenido web | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo
 Integraciones: Azure Sentinel | ![Sí](images/svg/check-yes.svg) | ![Sí](images/svg/check-yes.svg) Alertas <br /> ![No](images/svg/check-no.svg) Incidentes & datos sin procesar: En desarrollo | ![Sí](images/svg/check-yes.svg) Alertas <br /> ![No](images/svg/check-no.svg) Incidentes & datos sin procesar: En desarrollo
 Integraciones: Microsoft Cloud App Security | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo | ![No](images/svg/check-no.svg) En desarrollo

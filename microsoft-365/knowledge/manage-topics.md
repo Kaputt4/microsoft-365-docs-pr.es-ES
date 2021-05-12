@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 59581dce3701e622a1e2d7ed264370c9d92b3211
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 2c29cdb6823e695cb9c96a4f51ef7b1c41642ac9
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327278"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333631"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Administrar temas en el centro de temas en Temas de Microsoft Viva
 
@@ -45,10 +45,6 @@ Los administradores de conocimientos ayudan a guiar los temas detectados a trav�
 - **Publicado:** un tema confirmado que se ha seleccionado: se han realizado ediciones manuales para mejorar su calidad.
 
 - **Eliminado:** un administrador de conocimientos rechaza un tema y ya no será visible para los visores. Un tema se puede quitar en cualquier estado (sugerido, confirmado o publicado). Para que se quite un tema, debe haber una red de dos votos negativos recibidos de los usuarios que votaron con los mecanismos de comentarios en la tarjeta del tema. Por ejemplo, si un usuario votó negativo y un usuario votó positivo para un tema en particular, aún necesitará dos votos negativos más para que se elimine el tema. Cuando se quita un tema publicado, la página con los detalles seleccionados tendrá que eliminarse manualmente a través de la Biblioteca de páginas del centro de temas.
-
-En la **página Administrar temas,** un administrador de conocimientos puede ver si un tema se confirmó o eliminó por votos de usuario o por una persona específica. Por ejemplo, para los temas eliminados por votos de usuario, el motivo se muestra en la columna **Eliminado** por como **Votos** de usuario en lugar del nombre de una persona. 
-
-   ![Captura de pantalla de la página Administrar temas que muestra la lista de temas eliminados con los votos de usuario resaltados.](../media/knowledge-management/removed-topics-user-votes.png) 
 
 > [!Note] 
 > En la página Administrar **temas,** cada administrador de conocimientos solo podrá ver temas en los que tengan acceso a los archivos y páginas subyacentes conectados al tema. Este recorte de permisos se reflejará en la lista de temas que aparecen en las pestañas **Sugerido,** **Confirmado,** Publicado **y** Eliminado. Sin embargo, los recuentos de temas muestran los recuentos totales de la organización independientemente de los permisos.

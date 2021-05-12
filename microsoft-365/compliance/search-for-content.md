@@ -12,23 +12,25 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
-description: Use la herramienta de exhibición de documentos electrónicos de búsqueda de contenido en el Centro de seguridad y cumplimiento de & para buscar rápidamente correo electrónico en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype Empresarial.
-ms.openlocfilehash: a6aa416768e7910e546b39d5866f884d2d532732
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Use la herramienta de exhibición de documentos electrónicos de búsqueda de contenido en el Centro de seguridad y cumplimiento de & para buscar rápidamente correo electrónico en buzones de Exchange, documentos en sitios SharePoint y ubicaciones OneDrive y conversaciones de mensajería instantánea en Skype Empresarial.
+ms.openlocfilehash: 80234a512d13deda29a61073bec62990d135f30e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927596"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333691"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Buscar contenido con la herramienta de búsqueda de contenido
 
-Use la herramienta búsqueda de contenido en el Centro de seguridad & cumplimiento para buscar rápidamente correo electrónico en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive y conversaciones de mensajería instantánea en Skype Empresarial. Puede usar la herramienta de búsqueda de contenido para buscar conversaciones de correo electrónico, documentos y mensajería instantánea en herramientas de colaboración como Microsoft Teams y Grupos de Microsoft 365.
+Use la herramienta búsqueda de contenido en el Centro de seguridad y cumplimiento de & para buscar rápidamente correo electrónico en buzones de Exchange, documentos en sitios SharePoint y ubicaciones OneDrive y conversaciones de mensajería instantánea en Skype Empresarial. Puede usar la herramienta de búsqueda de contenido para buscar conversaciones de correo electrónico, documentos y mensajería instantánea en herramientas de colaboración como Microsoft Teams y Microsoft 365 grupos.
   
 ## <a name="search-for-content"></a>Buscar contenido
 
 El primer paso es empezar a usar la herramienta búsqueda de contenido para elegir ubicaciones de contenido para buscar y configurar una consulta de palabras clave para buscar elementos específicos. O bien, puede dejar la consulta en blanco y devolver todos los elementos de las ubicaciones de destino.
   
-- [Crear y ejecutar una](content-search.md) búsqueda de contenido 
+- [Crear y ejecutar una](content-search.md) búsqueda de contenido
+
+- [Referencia de característica] para búsqueda de contenido (content-search-reference.md)
 
 - [Crear consultas de búsqueda y usar condiciones para](keyword-queries-and-search-conditions.md) restringir la búsqueda 
 
@@ -36,11 +38,11 @@ El primer paso es empezar a usar la herramienta búsqueda de contenido para eleg
 
 - [Ejecutar una búsqueda de lista de identificadores](csv-file-for-an-id-list-content-search.md) para buscar mensajes de correo electrónico específicos 
 
-- [Buscar buzones basados en la nube ](search-cloud-based-mailboxes-for-on-premises-users.md) para usuarios locales en Microsoft 365
+- [Buscar buzones de correo basados en la nube](search-cloud-based-mailboxes-for-on-premises-users.md) para usuarios locales en Microsoft 365
 
 - [Ver estadísticas de palabras clave](view-keyword-statistics-for-content-search.md) para los resultados de una búsqueda y, a continuación, refinar la consulta si es necesario
 
-- [Buscar datos de terceros](use-content-search-to-search-third-party-data-that-was-imported.md) que su organización haya importado a Microsoft 365
+- [Busque datos de terceros que](use-content-search-to-search-third-party-data-that-was-imported.md) su organización haya importado a Microsoft 365
 
 - [Editar de forma masiva](bulk-edit-content-searches.md) las ubicaciones de consulta y contenido de varias búsquedas
 
@@ -62,7 +64,7 @@ Después de ejecutar una búsqueda y refinarla según sea necesario, el siguient
 
 La búsqueda de contenido es fácil de usar, pero también es una herramienta eficaz. En segundo plano, hay mucho que hacer. Cuanto más sepa sobre él y comprenda su comportamiento y sus limitaciones, más correcto lo va a usar para las necesidades de búsqueda e investigación de su organización. Obtenga información sobre:
   
-- [Elementos parcialmente indizados en Exchange y SharePoint](partially-indexed-items-in-content-search.md) y cómo incluirlos o excluirlos al exportar y descargar resultados de búsqueda
+- [Elementos parcialmente indizados en Exchange](partially-indexed-items-in-content-search.md) y SharePoint y cómo incluirlos o excluirlos al exportar y descargar resultados de búsqueda
 
 - [Investigar elementos parcialmente indizados](investigating-partially-indexed-items-in-ediscovery.md) y determinar la exposición de su organización a ellos
 
@@ -78,7 +80,7 @@ A veces, debe realizar tareas de búsqueda de contenido más avanzadas, compleja
   
 - [Buscar carpetas de sitios](use-content-search-for-targeted-collections.md) y buzones específicos (denominadas colecciones *dirigidas) cuando esté seguro de que los elementos que responden a un caso se encuentran en esa carpeta.
 
-- [Buscar en el buzón y la ubicación de OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) una lista de usuarios 
+- [Busque una lista de usuarios en OneDrive buzón](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) de correo y la ubicación del buzón de correo. 
 
 - [Crear, informar y eliminar varias búsquedas](create-report-on-and-delete-multiple-content-searches.md) para identificar y controlar de forma rápida y eficaz los datos de búsqueda 
 

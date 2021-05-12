@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +17,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
-ms.reviewer: tugu
-search.appverid:
-- MET150
-description: Obtenga información sobre cómo actualizar las direcciones de facturación para Microsoft 365 para empresas. También puedes actualizar la dirección de correo electrónico usada para recibir notificaciones de facturación.
+search.appverid: MET150
+description: Obtenga información sobre cómo actualizar las direcciones de facturación de Microsoft 365 para empresas. También puedes actualizar la dirección de correo electrónico usada para recibir notificaciones de facturación.
 ms.date: 04/07/2021
-ms.openlocfilehash: ea212d79ef28d5d387bdb5503c267d7cd5113786
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 8bff090353c409f4364aed63e3b48a831608be2b
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107199"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332178"
 ---
 # <a name="change-your-billing-addresses"></a>Cambiar las direcciones de facturación
 
@@ -111,7 +109,7 @@ Para obtener más información sobre su factura o factura, vea [Ver la factura](
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
 
-    Si está usando Office 365 operado por 21Vianet en China, vea Ver su factura u obtener Fapiaos para Office 365 operado por [21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
+    Si usa Office 365 operado por 21Vianet en China, vea Ver la factura o obtener [Fapiaos para Office 365 operado por 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
 
@@ -125,7 +123,7 @@ Para obtener más información sobre su factura o factura, vea [Ver la factura](
 
 De forma predeterminada, las notificaciones de facturación de su organización se envían a la dirección de correo electrónico de Microsoft y a la dirección de correo electrónico alternativa de todos los administradores globales y de facturación de su organización. Cada administrador puede cambiar su dirección de correo electrónico alternativa actualizando la información de su perfil.
   
-1. Inicie sesión en Microsoft 365 con su cuenta de trabajo o escuela como administrador global. [Obtenga información sobre](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)cómo iniciar sesión .
+1. Inicie sesión en Microsoft 365 con su cuenta laboral o educativa como administrador global. Obtenga información sobre cómo [iniciar sesión](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Seleccione el **icono Usuario y,** a continuación, **seleccione Mi cuenta**.
   

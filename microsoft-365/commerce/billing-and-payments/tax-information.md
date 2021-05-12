@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: tugu
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,14 +19,13 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
 ms.date: 03/17/2021
-ms.openlocfilehash: fc1e2924a6b28c30841f890396d5d82ed2944bea
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 5c472615846ba6460bc829bc0157c6c6da940292
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280600"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332023"
 ---
 # <a name="tax-information"></a>Información de impuestos
 
@@ -171,5 +170,5 @@ Si reúne los requisitos para el estado de exención de impuestos en el mercado,
   
 ## <a name="related-content"></a>Contenido relacionado
   
-[Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)
+[Vea su factura o recibo](view-your-bill-or-invoice.md) (artículo)\
 [Entender su factura o recibo](understand-your-invoice.md) (artículo)
