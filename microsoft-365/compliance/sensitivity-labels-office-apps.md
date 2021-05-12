@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 55c22c9901f163fdf64e6148d5b2c19e51136bc1
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 2cc1cb494569e054825875a4d0dc67e5c56f8146
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086807"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326623"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -89,7 +89,7 @@ Los números indicados son la versión mínima de la aplicación Office requerid
 |[Asignar permisos ahora](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
 |[Permitir a los usuarios asignar permisos: <br /> - No reenviar](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sí               |
 |[Permitir a los usuarios asignar permisos: <br /> - Solo cifrar](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ | 4.2112.0+  | 4.2112.0+ | Sí |
-|[Requerir a los usuarios que apliquen una etiqueta a sus correos electrónicos y documentos ](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | Implementando: 4.2111+            | Implementando: 4.2111+                | Sí                |
+|[Requerir a los usuarios que apliquen una etiqueta a sus correos electrónicos y documentos ](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Sí                |
 |[Auditoría de la actividad de los usuarios relacionada con las etiquetas](data-classification-activity-explorer.md) | 2011+ | En revisión | En revisión           | En revisión               | En revisión |
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | En revisión           | En revisión               | Sí |
 |[Diferentes opciones de configuración para etiquetas predeterminadas y etiquetas obligatorias](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Implementando en la versión preliminar: [Canal Beta](https://office.com/insider)                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | Sí |
@@ -134,7 +134,7 @@ Para Microsoft Word 2016, Excel 2016, PowerPoint 2016 y Outlook 2016, especifiqu
 | | | 
 
 
-Implementar esta configuración mediante la directiva de grupo o mediante el [Servicio de directiva de la nube de Office](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service).
+Implementar esta configuración mediante la directiva de grupo o mediante el [Servicio de directiva de la nube de Office](/DeployOffice/overview-office-cloud-policy-service).
 
 > [!NOTE]
 > Si usa la configuración de directiva de grupo **Use la característica de confidencialidad en Office para aplicar y ver etiquetas de confidencialidad** y la establece en **1**, habrá algunas situaciones en las que el cliente de Azure Information Protection aún se podrá cargar en las aplicaciones de Office. Bloquear la carga del complemento en cada aplicación evita que esto suceda.
