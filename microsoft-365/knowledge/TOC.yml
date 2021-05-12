@@ -42,6 +42,8 @@
       href: topic-experiences-security-trimming.md
     - name: Buscar temas
       href: search.md
+    - name: Administrar temas a escala
+      href: scale-topics.md
 - name: Adopción
   items:
     - name: Introducción a la adopción guiada

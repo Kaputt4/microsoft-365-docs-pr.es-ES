@@ -501,9 +501,11 @@
       items:
         - name: Información general sobre la búsqueda de contenido
           href: search-for-content.md
-        - name: Usar búsqueda de contenido
+        - name: Buscar contenido
           href: content-search.md
           items:
+            - name: Referencia de características para la búsqueda de contenido
+              href: content-search-reference.md
             - name: Consultas de palabras clave y condiciones de búsqueda
               href: keyword-queries-and-search-conditions.md
             - name: Vista previa de los resultados de la búsqueda de eDiscovery
@@ -663,32 +665,20 @@
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: Corrección de errores en un único elemento
               href: single-item-error-remediation.md
-        - name: Recopilar contenido para un caso (vista previa)
+        - name: Recopilar contenido para un caso
           items:
-            - name: Obtenga más información sobre las colecciones (vista previa)
+            - name: Obtener información acerca de las colecciones
               href: collections-overview.md
-            - name: Crear una colección de borrador (vista previa)
+            - name: Crear una colección de borrador
               href: create-draft-collection.md
-            - name: Confirmar una colección de borrador en un conjunto de revisión (vista previa)
+            - name: Confirmar una colección de borrador en un conjunto de revisión
               href: commit-draft-collection.md
-            - name: Estadística e informes de colecciones (vista previa)
+            - name: Estadística e informes de colecciones
               href: collection-statistics-reports.md
             - name: Crear consultas de búsqueda para colecciones
               href: building-search-queries.md
             - name: Consultas de palabras clave y condiciones de búsqueda
               href: keyword-queries-and-search-conditions.md
-        - name: Recopilar datos para un caso
-          items:
-            - name: Crear una búsqueda
-              href: create-search-to-collect-data.md
-            - name: Crear consultas de búsqueda
-              href: building-search-queries.md
-            - name: Consultas de palabras clave y condiciones de búsqueda
-              href: keyword-queries-and-search-conditions.md
-            - name: Estadísticas de búsqueda
-              href: search-statistics-in-advanced-ediscovery.md
-            - name: Agregar los resultados de búsqueda a un conjunto de revisión
-              href: add-data-to-review-set.md
         - name: Administrar conjuntos de revisión
           href: managing-review-sets.md
           items:
@@ -840,6 +830,8 @@
       items:
         - name: Obtenga más información sobre el Administrador de cumplimiento
           href: compliance-manager.md
+        - name: Novedades del Administrador de cumplimiento
+          href: compliance-manager-whats-new.md
         - name: Inicio rápido del Administrador de cumplimiento
           href: compliance-manager-quickstart.md
         - name: Introducción al Administrador de cumplimiento
