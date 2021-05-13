@@ -110,7 +110,7 @@
                       href: first-incident-prepare.md
                     - name: Paso 1. Triage and analyze
                       href: first-incident-analyze.md
-                    - name: Paso 2. Corrección
+                    - name: "Paso\_2. Corrección"
                       href: first-incident-remediate.md
                     - name: Paso 3. Revisar
                       href: first-incident-post.md
@@ -186,8 +186,6 @@
                   href: advanced-hunting-alertevidence-table.md
                 - name: AlertInfo
                   href: advanced-hunting-alertinfo-table.md
-                - name: AppFileEvents
-                  href: advanced-hunting-appfileevents-table.md
                 - name: CloudAppEvents
                   href: advanced-hunting-cloudappevents-table.md
                 - name: DeviceEvents
