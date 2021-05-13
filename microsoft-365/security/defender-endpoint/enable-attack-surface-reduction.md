@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: fc04db0c9fe8ee6d09efc9802ab4a747af0b3e9c
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: fc952ceec7d26d853e39cab0a803daace62a4767
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326705"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345893"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar las reglas de la reducción de superficie expuesta a ataques
 
@@ -167,32 +167,32 @@ Ejemplo:
    > [!WARNING]
    > No use comillas, ya que no son compatibles con la columna **Nombre de** valor o la **columna** Valor.
 
-## <a name="microsoft-endpoint-manager-custom-procedure"></a>Procedimiento personalizado de Microsoft Endpoint Manager
+## <a name="microsoft-endpoint-manager-custom-procedure"></a>Microsoft Endpoint Manager procedimiento personalizado
 
-Puede usar un centro de administración de Microsoft Endpoint Manager (MEM) para configurar reglas ASR personalizadas.
+Puede usar un centro de administración Microsoft Endpoint Manager (MEM) para configurar reglas ASR personalizadas.
 
-1. Abra el Centro de administración de Microsoft Endpoint Manager (MEM). En el **menú Inicio,** haga clic en **Dispositivos**, seleccione **Perfil de configuración** y, a continuación, haga clic en Crear **perfil.**
+1. Abra el centro Microsoft Endpoint Manager administración de Microsoft Endpoint Manager (MEM). En el **menú Inicio,** haga clic en **Dispositivos**, seleccione **Perfil de configuración** y, a continuación, haga clic en Crear **perfil.**
 
    ![MEM Create Profile](images/mem01-create-profile.png)
 
 2. En **Crear un perfil**, en las dos listas desplegables siguientes, seleccione lo siguiente:
 
-   - En **Plataforma,** seleccione **Windows 10 y versiones posteriores**
+   - En **Plataforma,** **seleccione Windows 10 y versiones posteriores**
    - En **Tipo de perfil**, seleccione **Plantillas**
 
    Seleccione **Personalizado** y, a continuación, haga clic **en Crear**.
 
    ![Atributos de perfil de regla MEM](images/mem02-profile-attributes.png)
 
-3. La herramienta Plantilla personalizada se abre en el paso **1 Conceptos básicos**. En **1 Conceptos básicos**, en **Nombre**, escriba un nombre para la plantilla y, en **Descripción,** puede escribir una descripción opcional.
+3. La herramienta Plantilla personalizada se abre en el paso **1 Conceptos básicos**. En **1 Conceptos básicos**, en **Nombre**, escriba un nombre para la plantilla y, en **Descripción,** puede escribir una descripción (opcional).
 
    ![Atributos básicos de MEM](images/mem03-1-basics.png)
 
-4. Haga clic en **Siguiente**. Paso **2 Se abren las opciones de** configuración. Para Configuración de OMA-URI, haga clic **en Agregar**. Ahora aparecen dos opciones: **Agregar** y **Exportar**.
+4. Haga clic en **Siguiente**. Paso **2 Se abren las opciones de** configuración. Para OMA-URI Configuración, haga clic en **Agregar**. Ahora aparecen dos opciones: **Agregar** y **Exportar**.
 
    ![Configuración de MEM](images/mem04-2-configuration-settings.png)
 
-5. Haga clic **en Agregar** de nuevo. Se abre la opción Agregar configuración **de OMA-URI** de fila. En **Agregar fila**, haga lo siguiente:
+5. Haga clic **en Agregar** de nuevo. Se abre el Configuración agregar fila **OMA-URI.** En **Agregar fila**, haga lo siguiente:
 
    - En **Nombre**, escriba un nombre para la regla.
    - En **Descripción**, escriba una breve descripción.
@@ -223,7 +223,7 @@ Puede usar un centro de administración de Microsoft Endpoint Manager (MEM) para
    - En **Propiedad**, seleccione la propiedad a la que desea que se aplique esta regla
    - En **Valor**, escriba el valor o intervalo de valores aplicable
 
-   ![Reglas de aplicabilidad de MEM](images/mem07-5-applicability -rules.png)
+   ![Reglas de aplicabilidad de MEM](images/mem07-5-applicability-rules.png)
 
 10. Haga clic en **Siguiente**. En el paso **6 Revisar + crear**, revise la configuración y la información que ha seleccionado y especificado y, a continuación, haga clic en **Crear**.
 
@@ -241,7 +241,7 @@ Puede usar un centro de administración de Microsoft Endpoint Manager (MEM) para
 > [!WARNING]
 > Si administra los equipos y dispositivos con Intune, Configuration Manager u otra plataforma de administración de nivel empresarial, el software de administración sobrescribirá cualquier configuración de PowerShell en conflicto al iniciarse. Para permitir que los usuarios definan el valor con PowerShell, use la opción "User Defined" para la regla en la plataforma de administración.
 
-1. Escriba **powershell** en el menú Inicio, haga clic con el botón **secundario en Windows PowerShell** y seleccione Ejecutar como **administrador**.
+1. Escriba **powershell** en el menú Inicio, haga clic con el botón **Windows PowerShell** y seleccione Ejecutar **como administrador**.
 
 2. Escriba el siguiente cmdlet:
 
@@ -260,6 +260,12 @@ Puede usar un centro de administración de Microsoft Endpoint Manager (MEM) para
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Warn
     ```
+
+    Para habilitar ASR Bloquear el uso indebido de controladores firmados vulnerables explotados, use el siguiente cmdlet:
+
+   ```PowerShell
+   "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+   ```
 
     Para desactivar las reglas ASR, use el siguiente cmdlet:
 

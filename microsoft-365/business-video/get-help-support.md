@@ -21,7 +21,7 @@ search.appverid:
 description: Más información sobre cómo obtener ayuda de administración o soporte técnico en Microsoft 365 Empresa Premium.
 ms.openlocfilehash: 8db4f7675f96bac2157c9c0f93ab506c8a39e1bb
 ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/11/2021
 ms.locfileid: "52327191"
@@ -43,7 +43,7 @@ Comience por [comprobar el estado actual de los servicios](../enterprise/view-se
 
 Ahorre tiempo iniciando su solicitud de servicio en línea. Le ayudaremos a encontrar una solución o le pondremos en contacto con el soporte técnico.
 
-1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje que indica que no tiene permiso para tener acceso a esta página o realizar esta acción, no es administrador. (Para obtener más información, vea [Quién has admin permissions in my business?](admin-center-overview.md#who-has-admin-permissions-in-my-business).)
+1. Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Si recibe un mensaje en el que se indica que no tiene permiso para acceder a esta página o llevar a cabo esta acción, no es administrador. (Para más información, consulte [¿Quién tiene permisos de administrador en mi empresa?](admin-center-overview.md#who-has-admin-permissions-in-my-business)).
 
 2. Seleccione el botón **¿Necesita ayuda?**.
 
@@ -215,7 +215,7 @@ La función del soporte de 21Vianet es:
 
 ## <a name="feature-availability"></a>Disponibilidad de características
 
-Para ver la disponibilidad de características en los planes de Office 365, vea [Office 365 Service Description](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
+Para ver la disponibilidad de características entre planes de Office 365, consulte [Descripción del servicio de Office 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
 
 ## <a name="follow-us-on-wechat"></a>Síganos en WeChat
 

@@ -1,5 +1,5 @@
 ---
-title: Cambiar los planes de Microsoft 365 para empresas manualmente
+title: Cambiar Microsoft 365 planes de negocio manualmente
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,15 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-ROBOTS: NOINDEX
 description: Cambie las suscripciones manualmente comprando una nueva suscripción y asegurándose de que ambas suscripciones estén enumeradas y activas.
+ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 99bb732405d6420e430adad3ece7ea7f0c93579b
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 4935301c6d2a530f34d628f946032b7007e5c907
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333307"
+ms.locfileid: "52345183"
 ---
 # <a name="change-plans-manually"></a>Cambiar planes manualmente
 
@@ -50,7 +50,7 @@ Para continuar con un cambio manual, lea [Paso 2: Comprar una nueva suscripción
 
 O
 
-**Comprar una suscripción y licencias nuevas:** Siga los pasos de Comprar otra suscripción de [Microsoft 365](../try-or-buy-microsoft-365.md) para empresas para comprar una nueva suscripción.
+**Comprar una suscripción y licencias nuevas:** Siga los pasos de [Comprar otra suscripción Microsoft 365 para empresas](../try-or-buy-microsoft-365.md) para comprar una nueva suscripción.
 
 Asegúrese de comprar una suscripción para la misma organización en la que están los usuarios ahora. Por ejemplo, compruebe las direcciones de correo electrónico de los usuarios que desea mover. Si sus direcciones de correo electrónico incluyen contoso.com, debe comprar una \@ nueva suscripción para contoso.com.
 Incluye una licencia para cada usuario que quieras mover.
@@ -101,7 +101,7 @@ Las licencias de la suscripción actual se quitarán más adelante; solo pagará
 5. Cambie la alternancia a **la posición On** para los productos que desea asignar a estos usuarios.
 
     > [!TIP]
-    > - Para limitar los servicios que están disponibles para  el usuario, cambie a alternancias a la posición Desactivado para los servicios que desea quitar para ese usuario. Por ejemplo, si desea que el usuario tenga acceso a todos los servicios disponibles excepto Skype Empresarial Online, puede cambiar la alternancia del servicio de Skype Empresarial Online a la **posición** Desactivado.
+    > - Para limitar los servicios que están disponibles para  el usuario, cambie a alternancias a la posición Desactivado para los servicios que desea quitar para ese usuario. Por ejemplo, si desea que el usuario tenga acceso a todos los servicios disponibles excepto Skype Empresarial Online, puede cambiar la alternancia del servicio Skype Empresarial Online a la posición **Desactivado.**
     > - Cualquier asignación de licencia anterior para los usuarios seleccionados se quitará.
 
 6. En la parte inferior del panel **Reemplazar productos existentes**, seleccione **Reemplazar** \> **Cerrar**.

@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo actualizar a un plan diferente.
 ms.date: 04/21/2021
-ms.openlocfilehash: 2cfb5c3c6c5052a813e7dd078f15b6c0c943b004
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 4882ad4296eb05faf0bb549ebf850562a7ebf780
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333115"
+ms.locfileid: "52344622"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Actualizar a un plan diferente
 
@@ -99,7 +99,7 @@ Puede cambiar [los planes manualmente o](change-plans-manually.md) llamar al sop
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>Tiene dos o más planes para el mismo producto
 
-Solo puede usar la pestaña **Actualizar** si todos los usuarios se suscriben al mismo plan. Por ejemplo, si tiene dos planes de Microsoft 365 Business Standard, no podrá actualizar automáticamente uno de ellos a otro plan.
+Solo puede usar la pestaña **Actualizar** si todos los usuarios se suscriben al mismo plan. Por ejemplo, si tiene dos Microsoft 365 Empresa Estándar, no podrá actualizar automáticamente uno de ellos a otro plan.
 
 #### <a name="you-have-a-prepaid-plan"></a>Tiene un plan de prepago.
 
@@ -143,11 +143,11 @@ Los **usuarios** no experimentarán ninguna interrupción del servicio. Seguirá
 
 Los usuarios de la suscripción antigua se transferirán automáticamente a la nueva suscripción.
   
-Si la suscripción antigua incluye varios servicios y ha cambiado a qué servicios están asignados los usuarios, es posible que desee tomar nota de esto antes de actualizar los planes para poder volver a crear estos cambios más adelante. Todos los usuarios tendrán acceso a todos los servicios de la nueva suscripción. Por ejemplo, si previamente compró Microsoft 365 Empresa Premium para los 100 usuarios, pero no asignó el servicio de SharePoint Online a 50 de ellos, este cambio no se conservaría después de actualizar los planes.
+Si la suscripción antigua incluye varios servicios y ha cambiado a qué servicios están asignados los usuarios, es posible que desee tomar nota de esto antes de actualizar los planes para poder volver a crear estos cambios más adelante. Todos los usuarios tendrán acceso a todos los servicios de la nueva suscripción. Por ejemplo, si compró anteriormente Microsoft 365 Empresa Premium para los 100 usuarios, pero no asignó el servicio de SharePoint Online a 50 de ellos, este cambio no se conservaría después de actualizar los planes.
   
 Si tiene más de una suscripción antes de actualizar los planes y tiene usuarios asignados licencias a más de una suscripción, este patrón de asignación se mantendrá tanto como sea posible en la nueva suscripción.
   
-Todos los datos de usuario se conservarán durante la actualización, incluidos los buzones de Exchange y los documentos, listas y otra información de SharePoint Online.
+Todos los datos de usuario se conservarán durante la actualización, incluidos Exchange buzones de correo y SharePoint documentos en línea, listas y otra información.
   
 ### <a name="billing"></a>Facturación
 
@@ -165,4 +165,4 @@ El día que se complete la actualización del plan, se desactivará la facturaci
 ## <a name="related-content"></a>Contenido relacionado
 
 [Cambiar planes manualmente](change-plans-manually.md) (artículo)\
-Copia de seguridad de datos antes de cambiar los planes de [Microsoft 365 para](back-up-data-before-switching-plans.md) empresas (artículo)
+[Copia de seguridad de datos antes de cambiar Microsoft 365 planes para empresas](back-up-data-before-switching-plans.md) (artículo)

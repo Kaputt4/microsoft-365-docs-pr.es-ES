@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Obtenga información sobre cómo actualizar desde una Office 365 de E4.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 59add18b8f6ede3d8696ee8e443c21ac4d6d3549
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ee90038bb80120ed727cd2dee0c43a894053440f
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333127"
+ms.locfileid: "52344631"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Actualización desde una suscripción Office 365 E4
 

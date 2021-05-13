@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Información general de Puntuación de productividad de Microsoft
-ms.openlocfilehash: 0eac22eadd099ebe4c7efbdf1198f6dc576dc080
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 1d5e163e6ec8a394065c09e51879582d101a75bf
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876136"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345243"
 ---
 # <a name="microsoft-productivity-score"></a>Puntuación de productividad de Microsoft 
 
@@ -63,7 +63,7 @@ La Puntuación de productividad se basa en los resultados combinados de las cate
 - Estado de las Aplicaciones de Microsoft 365 (100 puntos)
 - **Total posible = 800 puntos**
  
- En cada categoría de puntuación, cuantificamos los indicadores clave de cómo su organización usa Microsoft 365 en su camino hacia la transformación digital. Ofrecemos una vista de las actividades clave de 28 días y de 180 días. También proporcionamos métricas de apoyo que no forman parte del cálculo de la puntuación, pero son importantes para ayudarle a identificar las configuraciones y estadísticas de uso subyacentes que puede abordar.
+En cada categoría de puntuación, cuantificamos los indicadores clave de cómo su organización usa Microsoft 365 en su camino hacia la transformación digital. Ofrecemos una vista de las actividades clave de 28 días y de 180 días. También proporcionamos métricas de apoyo que no forman parte del cálculo de la puntuación, pero son importantes para ayudarle a identificar las configuraciones y estadísticas de uso subyacentes que puede abordar.
 
 ### <a name="products-included-in-productivity-score"></a>Productos incluidos en la Puntuación de productividad 
 
@@ -74,7 +74,7 @@ La puntuación de su organización se actualiza todos los días y refleja las ac
 
 ## <a name="prerequisites"></a>Requisitos previos 
 
-Para los datos de experiencias de personas, necesitará una suscripción a Microsoft 365 para empresas u Office 365 para empresas. Para los datos de análisis de punto de conexión de su espacio empresarial, necesita agregar Microsoft Intune a la suscripción. Intune le ayuda a proteger los datos de su organización mediante la administración de dispositivos y aplicaciones. Cuando tenga Intune, puede activar el análisis de punto de conexión en la experiencia de Intune. Más información sobre [Microsoft Intune](/mem/intune/). 
+Para los datos de experiencias de personas, necesitará una suscripción a Microsoft 365 para empresas u Office 365 para empresas. Para los datos de análisis de punto de conexión de su espacio empresarial, necesita agregar Microsoft Intune a la suscripción. Intune ayuda a proteger los datos de su organización mediante la administración de dispositivos y aplicaciones. Cuando tenga Intune, puede activar el análisis de punto de conexión en la experiencia de Intune. Para más información sobre Microsoft Intune, consulte la [documentación de Microsoft Intune](/mem/intune/). 
 
 > [!NOTE]
 > No es necesario disponer de una licencia de Workplace Analytics para obtener las características de Puntuación de productividad.
@@ -107,7 +107,10 @@ La página principal de la Puntuación de productividad muestra la puntuación t
 
 **La Puntuación de su organización** se muestra como un valor de porcentaje y en puntos. Puede ver sus puntos en el numerador y el número máximo de puntos posibles en el denominador.
 
-**Los puntos de referencia del mismo nivel** permiten comparar su puntuación con organizaciones como la suya. El punto de referencia del mismo nivel para las categorías de experiencias de personas se calcula como promedio de medidas en un conjunto de organizaciones similares. El conjunto de organizaciones se compone de organizaciones en su región con un número similar de usuarios con licencia, tipos de licencias, sector y permanencia con Microsoft 365. 
+**Los puntos de referencia del mismo nivel** permiten comparar su puntuación con organizaciones como la suya. El punto de referencia del mismo nivel para las categorías de experiencias de personas se calcula como promedio de medidas en un conjunto de organizaciones similares. El conjunto de organizaciones se compone de organizaciones en su región con un número similar de usuarios con licencia, tipos de licencias, sector y permanencia con Microsoft 365.
+
+> [!NOTE]
+> Microsoft usa datos internos para determinar el sector al que se asigna una organización. Los espacios empresariales que están en una organización principal se asignan al mismo sector que la organización principal. Las organizaciones no pueden ver ni modificar asignaciones del sector.
 
 El punto de referencia del mismo nivel de los análisis de puntos de conexión incluye objetivos de rendimiento de inicio de dispositivo y configuración de software recomendada en función de los valores agregados de media en todos los espacios empresariales.
 
@@ -158,8 +161,6 @@ Comparta su opinión sobre la Puntuación de productividad y sus ideas sobre có
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Supervisar la actividad de Microsoft 365 mediante informes](https://docs.microsoft.com/microsoft-365/admin/activity-reports/activity-reports) (artículo)
-
-[Habilitar análisis de uso de Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/enable-usage-analytics) (artículo)
-
-[Información general del Centro de administración de Microsoft 365](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (vídeo)
+[Supervisar la actividad de Microsoft 365 mediante informes](/microsoft-365/admin/activity-reports/activity-reports) (artículo)\
+[Habilitar análisis de uso de Microsoft 365](/microsoft-365/admin/usage-analytics/enable-usage-analytics) (artículo)\
+[Información general del Centro de administración de Microsoft 365](/microsoft-365/business-video/admin-center-overview) (vídeo)

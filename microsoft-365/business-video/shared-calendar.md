@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo crear un calendario compartido.
-ms.openlocfilehash: 684122bcbccd7e8a419cc98eb0d0028c6218141a
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 21b594d1d5f28cc38c907cb8e85085a296ef20b8
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903699"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464362"
 ---
 # <a name="create-a-shared-calendar"></a>Crear un calendario compartido
 
@@ -35,7 +35,7 @@ ms.locfileid: "51903699"
 
 Un calendario compartido puede ayudarle a ver rápidamente cuándo hay personas disponibles para reuniones u otros eventos.
 
-1. En Outlook, seleccione el icono del calendario.
+1. En Outlook, seleccione el icono de calendario.
 1. En la **pestaña Inicio,** elija **Agregar calendario** y, a continuación, De la libreta **de direcciones.**
 1. Para agregar usuarios al calendario compartido, escriba su nombre o seleccione su nombre en la lista y, a continuación, elija **Aceptar**.
 1. Ahora puede ver el calendario y los calendarios de las personas que agregó.
@@ -43,4 +43,8 @@ Un calendario compartido puede ayudarle a ver rápidamente cuándo hay personas 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Administrar el calendario y los contactos en Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (artículo) [Colaboración](https://docs.microsoft.com/microsoft-365/admin/email/email-collaboration) de correo electrónico (artículo) Información general del Centro de administración de [Microsoft 365](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (artículo)
+[Administrar el calendario y los contactos en Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (artículo)
+
+[Colaboración de correo](../admin/email/email-collaboration.md) electrónico (artículo)
+
+[Información general sobre el Microsoft 365 de administración](admin-center-overview.md) (artículo)

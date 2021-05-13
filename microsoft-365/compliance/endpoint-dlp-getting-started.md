@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configure la Prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: 118c2f3f87df5ac9930bebd1338157d323b1e5e1
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 8fc8bef62827a5e6125565f5d7227a88cd923dcf
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259504"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332815"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
 
@@ -147,7 +147,7 @@ En este escenario de implementación, incorporará dispositivos que aún no haya
     - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
     - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles
     - Incorporar equipos con Windows 10 usando un script local
-    - Incorporar equipos de infraestructura de escritorio virtual no persistente (VDI).
+    - Incorporar equipos de infraestructura de escritorio virtual (VDI) no persistentes en escenarios de sesión única
 
 Una vez que se haya incorporado el punto de conexión, debería estar visible en la lista de dispositivos y también empezar a informar de los registros de actividad de auditoría al explorador de actividad.
 

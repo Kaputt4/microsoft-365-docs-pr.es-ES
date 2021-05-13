@@ -17,15 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 - commerce_purchase
-search.appverid: MET150
+search.appverid: MET150 S
 description: Obtén información sobre cómo aplicar un código promocional a tu suscripción Microsoft 365 para reducir el precio y cómo solucionar problemas de código de promoción en caso de error.
 ms.date: 03/17/2021
-ms.openlocfilehash: 30484915246e1d8b1389f09d71d9d67865962a7e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 2a75f3e31a417e505c0f91044c61270f8bad8bae
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332923"
+ms.locfileid: "52344655"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>Usar el código de promoción para reducir el precio
 

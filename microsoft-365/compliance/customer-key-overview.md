@@ -3,7 +3,6 @@ title: Cifrado de servicio con clave de cliente
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 02/05/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,72 +15,88 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: En este artículo, aprenderá cómo funciona el cifrado de servicio con la clave de cliente en Microsoft 365.
-ms.openlocfilehash: 21291dc45cd634cd5b6a88c4e58972c17486724f
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: 3d0c86dbca02a66547f0ade643b745ecfc8f92cd
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394728"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52344775"
 ---
 # <a name="service-encryption-with-customer-key"></a>Cifrado de servicio con clave de cliente
 
-Microsoft 365 proporciona cifrado de nivel de volumen y línea base habilitado a través de BitLocker y el Administrador de claves distribuidas (DKM). Microsoft 365 ofrece una capa de cifrado agregada en la capa de aplicación para el contenido. Este contenido incluye datos de archivos de Exchange Online, Skype Empresarial, SharePoint Online, OneDrive para la Empresa y Teams. Esta capa de cifrado agregada se denomina cifrado de servicio.
+Microsoft 365 proporciona cifrado de nivel de volumen y línea base habilitado mediante BitLocker y el Administrador de claves distribuidas (DKM). Microsoft 365 ofrece una capa de cifrado adicional para el contenido. Este contenido incluye datos de Exchange Online, Skype Empresarial, SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 
 ## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>Cómo funcionan conjuntamente el cifrado de servicio, BitLocker y clave de cliente
 
-El cifrado de servicio garantiza que el contenido en reposo se cifra en la capa de servicio. **Los datos siempre se cifran en reposo en el servicio de Microsoft 365 con BitLocker y DKM.** Para obtener más información, vea "Security, Privacy, and Compliance Information" y [How Exchange Online secures your email secrets](exchange-online-secures-email-secrets.md). La clave de cliente proporciona protección adicional contra la visualización de datos por parte de sistemas o personal no autorizados, y complementa el cifrado de disco de BitLocker en centros de datos de Microsoft. El cifrado de servicio no está diseñado para impedir que el personal de Microsoft acceda a los datos de los clientes. El objetivo principal es ayudar a los clientes a cumplir con las obligaciones reglamentarias o de cumplimiento para controlar las claves raíz. Los clientes autorizan explícitamente a los servicios de O365 a usar sus claves de cifrado para proporcionar servicios en la nube de valor agregado, como exhibición de documentos electrónicos, antimalware, correo no deseado, indización de búsqueda, etc.
+Los datos siempre se cifran en reposo en el servicio Microsoft 365 con BitLocker y DKM. Para obtener más información, [vea How Exchange Online secures your email secrets](exchange-online-secures-email-secrets.md). Clave de cliente proporciona protección adicional contra la visualización de datos por parte de sistemas o personal no autorizados, y complementa BitLocker cifrado de disco en centros de datos de Microsoft. El cifrado de servicio no está diseñado para impedir que el personal de Microsoft acceda a sus datos. En su lugar, la clave de cliente le ayuda a cumplir con las obligaciones reglamentarias o de cumplimiento para controlar las claves raíz. Autoriza explícitamente Microsoft 365 servicios de cifrado para que usen las claves de cifrado para proporcionar servicios en la nube de valor agregado, como exhibición de documentos electrónicos, antimalware, correo no deseado, indización de búsqueda, entre otros.
 
-La clave de cliente se basa en el cifrado de servicio y le permite proporcionar y controlar claves de cifrado. Microsoft 365 usa estas claves para cifrar los datos en reposo, tal como se describe en los Términos de servicios en [línea (OST).](https://www.microsoft.com/licensing/product-licensing/products.aspx) La clave de cliente le ayuda a cumplir las obligaciones de cumplimiento porque controla las claves de cifrado que Microsoft 365 usa para cifrar y descifrar datos.
+La clave de cliente se basa en el cifrado de servicio y le permite proporcionar y controlar claves de cifrado. Microsoft 365 a continuación, usa estas claves para cifrar los datos en reposo, tal como se describe en los Términos de servicios en [línea (OST).](https://www.microsoft.com/licensing/product-licensing/products.aspx) Clave de cliente le ayuda a cumplir las obligaciones de cumplimiento porque controla las claves de cifrado que Microsoft 365 para cifrar y descifrar datos.
   
-Clave de cliente mejora la capacidad de su organización para satisfacer las demandas de requisitos de cumplimiento que especifican acuerdos clave con el proveedor de servicios en la nube. Con la clave de cliente, proporciona y controla las claves de cifrado raíz de los datos de Microsoft 365 en reposo en el nivel de la aplicación. Como resultado, se ejerce el control sobre las claves de la organización. Si decide salir del servicio, revoca el acceso a las claves raíz de su organización. Para todos los servicios de Microsoft 365, revocar el acceso a las claves es el primer paso en la ruta hacia la eliminación de datos. Al revocar el acceso a las claves, los datos son ilegibles para el servicio.
+Clave de cliente mejora la capacidad de su organización para satisfacer las demandas de requisitos de cumplimiento que especifican acuerdos clave con el proveedor de servicios en la nube. Con la clave de cliente, proporciona y controla las claves de cifrado raíz de sus Microsoft 365 datos en reposo en el nivel de aplicación. Como resultado, se ejerce el control sobre las claves de la organización.
 
-## <a name="customer-key-encrypts-data-at-rest-in-office-365"></a>Clave de cliente cifra los datos en reposo en Office 365
+## <a name="customer-key-with-hybrid-deployments"></a>Clave de cliente con implementaciones híbridas
 
-Con las claves que proporcione, la clave de cliente en el nivel de aplicación cifra:
+Clave de cliente solo cifra los datos en reposo en la nube. La clave de cliente no funciona para proteger los buzones y archivos locales. Puede cifrar los datos locales mediante otro método, como BitLocker.
 
-- Archivos de SharePoint Online, OneDrive para la Empresa y Teams.
-- Archivos cargados en OneDrive para la Empresa.
-- Contenido del buzón de Exchange Online, incluido el contenido del cuerpo del correo electrónico, las entradas del calendario y el contenido de los datos adjuntos de correo electrónico.
-- Conversaciones de texto de Skype Empresarial.
+## <a name="about-data-encryption-policies"></a>Acerca de las directivas de cifrado de datos
 
-Actualmente no ofrecemos el control del cliente de las claves de cifrado para las cargas de contenido de skype Meeting Broadcast y Skype Meeting. En su lugar, este contenido se cifra junto con el resto del contenido de Office 365.
+Una directiva de cifrado de datos (DEP) define la jerarquía de cifrado. El servicio usa esta jerarquía para cifrar los datos con cada una de las claves que administra y la clave de disponibilidad protegida por Microsoft. Puede crear DEP con cmdlets de PowerShell y, a continuación, asignar esos DEP para cifrar los datos de la aplicación. Hay tres tipos de DEP admitidos por Microsoft 365 customer key, cada tipo de directiva usa cmdlets diferentes y proporciona cobertura para un tipo diferente de datos. Los DEP que puede definir incluyen:
 
-### <a name="customer-key-with-hybrid-deployments"></a>Clave de cliente con implementaciones híbridas
+**DEP para varias cargas Microsoft 365 de trabajo** Estos DEP cifran los datos en varias cargas de trabajo M365 para todos los usuarios del espacio empresarial. Estas cargas de trabajo incluyen:
 
-Clave de cliente solo cifra los datos en reposo en la nube. La clave de cliente no funciona para proteger los buzones y archivos locales. Puedes cifrar los datos locales mediante otro método, como BitLocker.
+- Teams de chat (chats de 1:1, chats de grupo, chats de reunión y conversaciones de canal)
+- Teams multimedia (imágenes, fragmentos de código, mensajes de vídeo, mensajes de audio, imágenes wiki)
+- Teams de llamadas y reuniones almacenadas en Teams almacenamiento
+- Teams de chat
+- Teams sugerencias de chat de Cortana
+- Teams de estado
+- Información de usuario y señal para Exchange Online
+- Exchange Online buzones de correo que no están cifrados por los DEP de buzones
+- Datos de coincidencia exacta de datos mip (EDM): (esquemas de archivo de datos, paquetes de reglas y sales usadas para hash de los datos confidenciales).
+  Para la coincidencia exacta de datos de MIP (EDM) y Microsoft Teams, el DEP de varias cargas de trabajo cifra los nuevos datos desde el momento en que asigna el DEP al inquilino. Por Exchange Online, clave de cliente cifra todos los datos existentes y nuevos.
 
-## <a name="about-the-data-encryption-policy-dep"></a>Acerca de la directiva de cifrado de datos (DEP)
+Los DEP de varias cargas de trabajo no cifran los siguientes tipos de datos. En su lugar, Microsoft 365 otros tipos de cifrado para proteger estos datos.
 
-Una directiva de cifrado de datos define la jerarquía de cifrado para cifrar los datos mediante cada una de las claves que proporcione, así como la clave de disponibilidad protegida por Microsoft. Puede crear DEP con cmdlets de PowerShell, que son diferentes para cada servicio, y asignar esos DEP para cifrar los datos de la aplicación. Por ejemplo:
+- SharePoint y OneDrive para la Empresa datos.
+- Microsoft Teams archivos y algunas Teams de llamadas y reuniones guardadas en OneDrive para la Empresa y SharePoint Online se cifran mediante SharePoint Online DEP.
+- Otras Microsoft 365 de trabajo como Yammer y Planner que actualmente no son compatibles con la clave de cliente.
+- Teams Eventos en directo y preguntas&A en eventos en directo. Por Teams, este escenario es el único que no está cifrado por clave de cliente mediante DEP de varias cargas de trabajo.
 
-**Exchange Online y Skype Empresarial** Puede crear hasta 50 DEP por inquilino. Los DEP se asocian a las claves de cliente en Azure Key Vault y, a continuación, se asignan DEP a buzones individuales. Al asignar un DEP a un buzón:
+Puede crear varios DEP por inquilino, pero solo asignar un DEP a la vez. Al asignar el DEP, el cifrado comienza automáticamente pero tarda algún tiempo en completarse en función del tamaño del espacio empresarial.
 
-- el buzón está marcado para un movimiento de buzón. Basándose en las prioridades de Microsoft 365, como se describe aquí [Mover solicitudes en el servicio de Microsoft 365](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service).
+**DEP para Exchange Online buzones de correo** Los DEP de buzones proporcionan un control más preciso sobre los buzones individuales dentro de Exchange Online. Use DEP de buzones de correo para cifrar los datos almacenados en buzones EXO de distintos tipos, como UserMailbox, MailUser, Group, PublicFolder y Buzones compartidos. Puede tener hasta 50 DEP activos por inquilino y asignar esos DEP a buzones individuales. Puede asignar un DEP a varios buzones.
 
-- El cifrado tiene lugar mientras se mueve el buzón. Espere 72 horas para que el buzón se cifra con el nuevo DEP. Si los buzones no están cifrados después de esperar 72 horas desde el momento en que asignó el DEP, póngase en contacto con Microsoft.
+De forma predeterminada, los buzones se cifran con claves administradas por Microsoft. Al asignar un DEP de clave de cliente a un buzón:
 
-Más adelante, puede actualizar el DEP o asignar un DEP diferente al buzón, tal como se describe en [Manage Customer Key for Office 365](customer-key-manage.md). Cada buzón debe tener licencias adecuadas para asignar un DEP. Para obtener más información acerca de las licencias, vea [Before you set up Customer Key](customer-key-set-up.md#before-you-set-up-customer-key).
+- Si el buzón se cifra mediante un DEP de varias cargas de trabajo, el servicio vuelve a envolver el buzón con el nuevo DEP de buzón siempre que un usuario o una operación del sistema tenga acceso a los datos del buzón.
 
-> [!NOTE]
-> El DEP se puede aplicar a un buzón compartido, un buzón de carpetas públicas y un buzón de grupo de Microsoft 365 para los inquilinos que cumplan el requisito de licencia para los buzones de usuario, aunque algunos de estos tipos de buzones no pueden ser una licencia asignada (buzón de carpetas públicas y buzón de grupo de Microsoft 365) o necesitan una licencia para aumentar el almacenamiento (buzón compartido).
+- Si el buzón ya está cifrado mediante claves administradas por Microsoft, el servicio vuelve a envolver el buzón con el nuevo DEP de buzón siempre que un usuario o una operación del sistema acceda a los datos del buzón.
 
-**Archivos de SharePoint Online, OneDrive para la Empresa y Teams** Si usa la característica multige geográfica, puede crear hasta un DEP por geo para su organización. Puede usar diferentes claves de cliente para cada geo. Si no usa la característica multigeós, solo puede crear un DEP por inquilino. Al asignar el DEP, el cifrado comienza automáticamente, pero puede tardar algún tiempo en completarse. Consulte los detalles de [Configurar clave de cliente](customer-key-set-up.md).
+- Si el buzón aún no está cifrado mediante cifrado predeterminado, el servicio marca el buzón para un movimiento. El cifrado tiene lugar una vez completado el movimiento. Los movimientos de buzones se rigen en función de las prioridades establecidas para todos los Microsoft 365. Para obtener más información, vea [Move requests in the Microsoft 365 service](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service). Si los buzones no están cifrados en el tiempo especificado, póngase en contacto con Microsoft.
 
-## <a name="leaving-the-service"></a>Salir del servicio
+Más adelante, puede actualizar el DEP o asignar un DEP diferente al buzón, tal como se describe en Administrar clave de cliente [para Office 365](customer-key-manage.md). Cada buzón debe tener licencias adecuadas para tener asignado un DEP. Para obtener más información acerca de las licencias, vea [Before you set up Customer Key](customer-key-set-up.md#before-you-set-up-customer-key).
 
-La clave de cliente le ayuda a cumplir con las obligaciones de cumplimiento, ya que le permite revocar las claves cuando abandone el servicio de Microsoft 365. Cuando revoca las claves como parte de la salida del servicio, la clave de disponibilidad se elimina, lo que provoca la eliminación criptográfica de los datos. La eliminación criptográfica mitiga el riesgo de remanencia de datos, que es importante para cumplir con las obligaciones de seguridad y cumplimiento. Para obtener información sobre el proceso de purga de datos y la revocación de claves, vea Revocar las claves e iniciar el proceso de ruta [de depuración de datos.](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)
+Los DEP se pueden asignar a un buzón compartido, un buzón de carpetas públicas y un buzón de Microsoft 365 de grupo para los inquilinos que cumplan el requisito de licencia para los buzones de usuario. No necesita licencias independientes para buzones que no son específicos del usuario para asignar DEP de clave de cliente.
+
+Para los DEP de clave de cliente que asigne a buzones individuales, puede solicitar que Microsoft purgue los DEP específicos al salir del servicio. Para obtener información sobre el proceso de purga de datos y la revocación de claves, vea Revocar las claves e iniciar el proceso de ruta [de depuración de datos.](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)
+
+Al revocar el acceso a las claves como parte de la salida del servicio, se elimina la clave de disponibilidad, lo que da como resultado la eliminación criptográfica de los datos. La eliminación criptográfica mitiga el riesgo de remanencia de datos, lo que es importante para cumplir con las obligaciones de seguridad y cumplimiento.
+
+**DEP para SharePoint Online y OneDrive para la Empresa** Este DEP se usa para cifrar el contenido almacenado en SPO y OneDrive para la Empresa, incluidos los Microsoft Teams almacenados en SPO. Si usa la característica multige geográfica, puede crear un DEP por geo para su organización. Si no usa la característica multigeós, solo puede crear un DEP por inquilino. Consulte los detalles de [Configurar clave de cliente](customer-key-set-up.md).
 
 ### <a name="encryption-ciphers-used-by-customer-key"></a>Cifrados usados por clave de cliente
 
-Clave de cliente usa una variedad de cifrados de cifrado para cifrar claves como se muestra en las siguientes cifras.
+Clave de cliente usa varios cifrados de cifrado para cifrar claves como se muestra en las siguientes figuras.
+
+La jerarquía de claves usada para los DEP que cifran los datos de varias cargas de trabajo Microsoft 365 es similar a la jerarquía usada para los DEP para buzones de correo Exchange Online individuales. La única diferencia es que la clave de buzón se reemplaza por la clave Microsoft 365 de carga de trabajo correspondiente.
 
 #### <a name="encryption-ciphers-used-to-encrypt-keys-for-exchange-online-and-skype-for-business"></a>Cifrados usados para cifrar claves para Exchange Online y Skype Empresarial
 
-![Cifrado de cifrado para la clave de cliente de Exchange Online](../media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Cifrado de cifrado para Exchange Online clave de cliente](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
-#### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Cifrados usados para cifrar claves para archivos de SharePoint Online, OneDrive para la Empresa y Teams
+#### <a name="encryption-ciphers-used-to-encrypt-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Cifrados usados para cifrar claves para SharePoint online, OneDrive para la Empresa y Teams archivos
 
-![Cifrado de cifrado para la clave de cliente de SharePoint Online](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![Cifrado de cifrado para SharePoint clave de cliente en línea](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## <a name="related-articles"></a>Artículos relacionados
 

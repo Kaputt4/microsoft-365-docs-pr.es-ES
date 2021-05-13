@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Obtenga información sobre las propuestas que le ayudarán a comprar productos y servicios de Microsoft.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: c61fa53267f2fdb60e78a05cd89aa6f364cb2395
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 5dece5ccc0cc26b157ae0cc33ec9bb1fe44c44b3
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332959"
+ms.locfileid: "52345087"
 ---
 # <a name="understand-the-proposal-workflow"></a>Comprender el flujo de trabajo de propuestas
 
@@ -118,7 +118,7 @@ Si desea realizar cualquier cambio en la propuesta después de la revisión, pó
 
 La propuesta contiene la siguiente información:
 
-| Sección | Descripción |
+| Sección | Description |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Nombre de la organización | Nombre de la organización para la que se preparó la propuesta. |
 | Válido hasta la fecha | La fecha en que expira la oferta de propuesta. Si se pierde esta fecha de expiración, póngase en contacto con su representante de Microsoft para comunicarles que aún está interesado en la propuesta. |

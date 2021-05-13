@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo obtener una versión de prueba gratuita o comprar una suscripción para Microsoft 365 para empresas.
 ms.date: 08/07/2020
-ms.openlocfilehash: 709f687b282246b90c1b1a14398174e616e0494a
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 78716d78745616530729ff2fa5cfa31202e056c8
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332971"
+ms.locfileid: "52344691"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Probar o comprar una suscripción Microsoft 365 para empresas
 
@@ -130,7 +130,7 @@ El comprobante de pago se proporciona en forma de Fapiaos. Puede enviar su solic
 > No se aceptan tarjetas de crédito internacionales.
 ::: moniker-end
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Si tiene una cuenta nueva y está configurando su primera suscripción, puede usar los artículos de configuración guiados para ayudarle a empezar.
 

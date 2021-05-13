@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eb6dfa628488239e3953d19d5e78b338e76f50a2
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: a387892dde0fbe96e4a523b2247448a3c7e374b8
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023790"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470501"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Esquema de búsqueda avanzada: cambios de nomenclatura
 
@@ -67,7 +67,7 @@ Los cambios de nomenclatura se aplican automáticamente a las consultas que se g
 | `DetectionSource` | AutomatedInvestigation |Investigación automatizada | Rebranding |
 | `DetectionSource` | ThreatExperts | Expertos en amenazas de Microsoft | Rebranding |
 | `DetectionSource` | TI de terceros | Sensores de terceros | Rebranding |
-| `ServiceSource` | inquilino dedicado| Microsoft Defender para punto de conexión | Rebranding |
+| `ServiceSource` | ATP de Microsoft Defender| Microsoft Defender para punto de conexión | Rebranding |
 |`ServiceSource` |Protección contra amenazas de Microsoft   | Microsoft 365 Defender | Rebranding |
 | `ServiceSource` | ATP de Office 365  |Microsoft Defender para Office 365 | Rebranding |
 | `ServiceSource` |Azure ATP    |Microsoft Defender for Identity | Rebranding |
@@ -78,12 +78,12 @@ Los cambios de nomenclatura se aplican automáticamente a las consultas que se g
 
 1. En las [tablas EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) y [EmailEvents,](advanced-hunting-emailevents-table.md) las columnas y se han `MalwareFilterVerdict` reemplazado por la `PhishFilterVerdict` `ThreatTypes` columna. Las `MalwareDetectionMethod` columnas y también se `PhishDetectionMethod` reemplazaron por la `DetectionMethods` columna. Esta racionalización nos permite proporcionar más información debajo de las nuevas columnas. La asignación se proporciona a continuación.
 
-| Nombre de tabla | Nombre de columna original | Nuevo nombre de columna | Motivo del cambio
-|--|--|--|--|
-| `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Incluir más métodos de detección |
-| `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Incluir más tipos de amenazas |
-| `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Incluir más métodos de detección |
-| `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Incluir más tipos de amenazas |
+    | Nombre de tabla | Nombre de columna original | Nuevo nombre de columna | Motivo del cambio
+    |--|--|--|--|
+    | `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Incluir más métodos de detección |
+    | `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Incluir más tipos de amenazas |
+    | `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Incluir más métodos de detección |
+    | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Incluir más tipos de amenazas |
 
 
 2. En las `EmailAttachmentInfo` tablas `EmailEvents` y, la `ThreatNames` columna se agregó para proporcionar más información sobre la amenaza de correo electrónico. Esta columna contiene valores como Correo no deseado o Phish.
@@ -92,18 +92,20 @@ Los cambios de nomenclatura se aplican automáticamente a las consultas que se g
 
 4. En la [tabla DeviceEvents,](advanced-hunting-deviceevents-table.md) se modificaron varios nombres ActionType para reflejar mejor la descripción de la acción. Los detalles de los cambios se pueden encontrar a continuación.
 
-| Nombre de tabla | Nombre ActionType original | Nuevo nombre actionType | Motivo del cambio
-|--|--|--|--|
-| `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | Comentarios del cliente |
-| `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Comentarios del cliente |
-| `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Comentarios del cliente |
-| `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Comentarios del cliente |
+    | Nombre de tabla | Nombre ActionType original | Nuevo nombre actionType | Motivo del cambio
+    |--|--|--|--|
+    | `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | Comentarios del cliente |
+    | `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Comentarios del cliente |
+    | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Comentarios del cliente |
+    | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Comentarios del cliente |
 
 ## <a name="march-2021"></a>Marzo de 2021
 
 La `DeviceTvmSoftwareInventoryVulnerabilities` tabla ha quedado en desuso. Reemplazarlo son las `DeviceTvmSoftwareInventory` tablas `DeviceTvmSoftwareVulnerabilities` y.
 
+## <a name="may-2021"></a>Mayo de 2021
 
+La `AppFileEvents` tabla ha quedado en desuso. La `CloudAppEvents` tabla incluye información que solía estar en la `AppFileEvents` tabla, junto con otras actividades en servicios en la nube.
 
 ## <a name="related-topics"></a>Temas relacionados
 - [Información general sobre la búsqueda avanzada de amenazas](advanced-hunting-overview.md)

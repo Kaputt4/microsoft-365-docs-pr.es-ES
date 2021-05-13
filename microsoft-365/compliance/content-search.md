@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Utilice la herramienta de búsqueda de contenido de eDiscovery en el centro de cumplimiento de Microsoft para buscar contenido en diferentes servicios de Microsoft 365.
-ms.openlocfilehash: a058c07d080962723e9f6bc7a150cbfb5074e7db
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 5f48418882d5d4c7589b3ef394a0a306c0675f34
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311680"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332851"
 ---
 # <a name="create-a-content-search"></a>Crear una búsqueda de contenido
 
@@ -88,7 +88,7 @@ Para acceder a la página de **Búsqueda de contenido** en el Centro de cumplimi
 7. Revise la configuración de búsqueda (y edítela si es necesario) y envíe la búsqueda para iniciarla.
   
 Para acceder nuevamente a esta búsqueda de contenido o para ver otras búsquedas de contenido en la página **Búsqueda de contenido**, seleccione la búsqueda y, a continuación, haga clic en **Abrir**.
-  
+
 ## <a name="next-steps"></a>Siguientes pasos
 
 A continuación se ofrece una lista de los pasos siguientes que debe realizar después de crear y ejecutar una búsqueda de contenido.
@@ -100,3 +100,7 @@ A continuación se ofrece una lista de los pasos siguientes que debe realizar de
 - [Exportar resultados de la búsqueda](export-search-results.md)
 
 - [Exportar un informe de búsqueda](export-a-content-search-report.md)
+
+## <a name="more-information"></a>Más información
+
+Para obtener más información sobre la búsqueda de contenido, como buscar contenido en distintos servicios de Microsoft 365, vea [Referencia de características para la búsqueda de contenido](content-search-reference.md).

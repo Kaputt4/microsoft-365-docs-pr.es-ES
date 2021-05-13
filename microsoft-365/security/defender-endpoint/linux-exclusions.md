@@ -17,19 +17,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8e861055067a55630da458e87b7376a607dc69c4
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: bd506caa041af2585778fb3ecd7a40562463b17e
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934302"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346419"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Configurar y validar exclusiones para Microsoft Defender para Endpoint en Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +38,7 @@ ms.locfileid: "51934302"
 En este artículo se proporciona información sobre cómo definir exclusiones que se aplican a los exámenes a petición y la protección y supervisión en tiempo real.
 
 > [!IMPORTANT]
-> Las exclusiones descritas en este artículo no se aplican a otras capacidades de Defender for Endpoint on Linux, incluida la detección y respuesta de puntos de conexión (EDR). Los archivos que se excluyen mediante los métodos descritos en este artículo aún pueden desencadenar alertas de EDR y otras detecciones.
+> Las exclusiones descritas en este artículo no se aplican a otras funcionalidades de Defender for Endpoint en Linux, incluidas detección y respuesta de puntos de conexión (EDR). Los archivos que se excluyen mediante los métodos descritos en este artículo aún pueden desencadenar EDR alertas y otras detecciones.
 
 Puede excluir determinados archivos, carpetas, procesos y archivos abiertos por procesos de los exámenes de Defender para endpoint en Linux.
 
@@ -55,7 +55,7 @@ Exclusión | Definición | Ejemplos
 ---|---|---
 Extensión de archivo | Todos los archivos con la extensión, en cualquier lugar del dispositivo | `.test`
 Archivo | Un archivo específico identificado por la ruta de acceso completa | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-Folder | Todos los archivos de la carpeta especificada (recursivamente) | `/var/log/`<br/>`/var/*/`
+Carpeta | Todos los archivos de la carpeta especificada (recursivamente) | `/var/log/`<br/>`/var/*/`
 Proceso | Un proceso específico (especificado por la ruta de acceso completa o el nombre de archivo) y todos los archivos abiertos por él | `/bin/cat`<br/>`cat`<br/>`c?t`
 
 > [!IMPORTANT]
@@ -63,7 +63,7 @@ Proceso | Un proceso específico (especificado por la ruta de acceso completa o 
 
 Las exclusiones de archivos, carpetas y procesos admiten los siguientes caracteres comodín:
 
-Carácter comodín | Descripción | Ejemplo | Coincidencias | No coincide
+Carácter comodín | Description | Ejemplo | Coincidencias | No coincide
 ---|---|---|---|---
 \* |    Coincide con cualquier número de caracteres, incluido ninguno (tenga en cuenta que cuando se usa este comodín dentro de una ruta de acceso, solo sustituirá una carpeta) | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
 ? | Coincide con cualquier carácter | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`

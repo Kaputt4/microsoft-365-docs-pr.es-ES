@@ -18,18 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34feeec0f8c34748678862b9aa7b20f84087eb5e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 29e9eefdf85c80b6d3c44eba01d0df57be0193a4
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934530"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346395"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Recursos para Microsoft Defender para endpoint en macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Se aplica a:**
+
 - [Microsoft Defender para punto de conexión](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -51,7 +52,7 @@ Si puede reproducir un problema, aumente el nivel de registro, ejecute el sistem
 
 2. Reproducir el problema
 
-3. Ejecute `sudo mdatp diagnostic create` para realizar una copia de seguridad de los registros de Microsoft Defender para puntos de conexión. Los archivos se almacenarán dentro de un archivo .zip. Este comando también imprimirá la ruta de acceso del archivo a la copia de seguridad después de que la operación se realice correctamente.
+3. Ejecute `sudo mdatp diagnostic create` para realizar una copia de seguridad de los registros de Microsoft Defender para puntos de conexión. Los archivos se almacenarán dentro de un .zip archivo. Este comando también imprimirá la ruta de acceso del archivo a la copia de seguridad después de que la operación se realice correctamente.
 
    > [!TIP]
    > De forma predeterminada, los registros de diagnóstico se guardan en `/Library/Application Support/Microsoft/Defender/wdavdiag/` . Para cambiar el directorio donde se guardan los registros de diagnóstico, pase al `--path [directory]` comando siguiente, reemplazando `[directory]` por el directorio deseado.
@@ -59,6 +60,7 @@ Si puede reproducir un problema, aumente el nivel de registro, ejecute el sistem
    ```bash
    sudo mdatp diagnostic create
    ```
+
    ```console
    Diagnostic file created: "/Library/Application Support/Microsoft/Defender/wdavdiag/932e68a8-8f2e-4ad0-a7f2-65eb97c0de01.zip"
    ```
@@ -68,6 +70,7 @@ Si puede reproducir un problema, aumente el nivel de registro, ejecute el sistem
    ```bash
    mdatp log level set --level info
    ```
+
    ```console
    Log level configured successfully
    ```
@@ -80,7 +83,7 @@ El registro detallado se guardará en `/Library/Logs/Microsoft/mdatp/install.log
 
 ## <a name="uninstalling"></a>Desinstalación
 
-Hay varias maneras de desinstalar Microsoft Defender para Endpoint en macOS. Tenga en cuenta que aunque la desinstalación administrada centralmente está disponible en JAMF, todavía no está disponible para Microsoft Intune.
+Hay varias maneras de desinstalar Microsoft Defender para Endpoint en macOS. Tenga en cuenta que aunque la desinstalación administrada centralmente está disponible en JAMF, aún no está disponible para Microsoft Intune.
 
 ### <a name="interactive-uninstallation"></a>Desinstalación interactiva
 
@@ -88,14 +91,13 @@ Hay varias maneras de desinstalar Microsoft Defender para Endpoint en macOS. Ten
 
 ### <a name="from-the-command-line"></a>Desde la línea de comandos
 
-- ```sudo rm -rf '/Applications/Microsoft Defender ATP.app'```
-- ```sudo rm -rf '/Library/Application Support/Microsoft/Defender/'```
+- ```sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'```
 
 ## <a name="configuring-from-the-command-line"></a>Configuración desde la línea de comandos
 
 Las tareas importantes, como controlar la configuración del producto y desencadenar exámenes a petición, se pueden realizar desde la línea de comandos:
 
-|Group        |Escenario                                   |Comando                                                                           |
+|Group        |Escenario                                   |Get-Help                                                                           |
 |-------------|-------------------------------------------|----------------------------------------------------------------------------------|
 |Configuración|Activar/desactivar la protección en tiempo real           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
 |Configuración|Activar/desactivar la protección en la nube               |`mdatp config cloud --value [enabled/disabled]`                                   |
@@ -108,8 +110,8 @@ Las tareas importantes, como controlar la configuración del producto y desencad
 |Configuración|Desactivar la protección de LA PUA                    |`mdatp threat policy set --type potentially_unwanted_application -- action off`   |
 |Configuración|Activar el modo de auditoría para la protección de PUA      |`mdatp threat policy set --type potentially_unwanted_application -- action audit` |
 |Configuración|Activar/desactivar passiveMode                    |`mdatp config passive-mode --value enabled [enabled/disabled]`                    |
-|Diagnóstico  |Cambiar el nivel de registro                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
-|Diagnóstico  |Generar registros de diagnóstico                   |`mdatp diagnostic create --path [directory]`                                      |
+|Diagnostics  |Cambiar el nivel de registro                       |`mdatp log level set --level [error/warning/info/verbose]`                        |
+|Diagnostics  |Generar registros de diagnóstico                   |`mdatp diagnostic create --path [directory]`                                      |
 |Salud       |Comprobar el estado del producto                 |`mdatp health`                                                                    |
 |Salud       |Buscar un atributo de producto spefic       |`mdatp health --field [attribute: healthy/licensed/engine_version...]`            |
 |Protection   |Examinar una ruta de acceso                                |`mdatp scan custom --path [path] [--ignore-exclusions]`                           |
@@ -117,7 +119,7 @@ Las tareas importantes, como controlar la configuración del producto y desencad
 |Protection   |Realizar un examen completo                             |`mdatp scan full`                                                                 |
 |Protection   |Cancelar un examen a petición en curso           |`mdatp scan cancel`                                                               |
 |Protection   |Solicitar una actualización de inteligencia de seguridad     |`mdatp definitions update`                                                        |
-|EDR          |Agregar etiqueta de grupo al dispositivo. Las etiquetas EDR se usan para administrar grupos de dispositivos. Para obtener más información, visite https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
+|EDR          |Agregar etiqueta de grupo al dispositivo. EDR etiquetas se usan para administrar grupos de dispositivos. Para obtener más información, visite https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-groups |`mdatp edr tag set --name GROUP --value [name]` |
 |EDR          |Quitar etiqueta de grupo del dispositivo               |`mdatp edr tag remove --tag-name [name]`                                          |
 |EDR          |Agregar id. de grupo                               |`mdatp edr group-ids --group-id [group]`                                          |
 
@@ -158,4 +160,4 @@ Para habilitar la autocompleción en zsh:
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>Información del portal de Microsoft Defender para puntos de conexión
 
-[Las capacidades de EDR](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)para macOS ya han llegado, en el blog de Microsoft Defender para endpoints, proporciona instrucciones detalladas sobre lo que se espera en Microsoft Defender para endpoint Security Center.
+[EDR capacidades](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)para macOS han llegado, en el blog de Microsoft Defender para endpoints, proporciona instrucciones detalladas sobre lo que se espera en Microsoft Defender para endpoint Security Center.

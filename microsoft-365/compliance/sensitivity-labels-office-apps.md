@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2cc1cb494569e054825875a4d0dc67e5c56f8146
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: a9755542b608c8ed7d3cd93bebbd764fd56b9768
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326623"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332719"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -67,7 +67,7 @@ Los números indicados son la versión mínima de la aplicación Office requerid
 |[Auditoría de la actividad de los usuarios relacionada con las etiquetas](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | Desplegando: 16.0.13628+ | Si <sup>\*</sup>                                                        |
 |[Requerir a los usuarios que apliquen una etiqueta a sus correos electrónicos y documentos ](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | Desplegando: 16.45+         | Implementando: 2.47+ | Desplegando: 16.0.13628+ | Implementando                                            
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Desplegando: 16.44+ | En revisión | En revisión | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Compatibilidad con la coautoría y el autoguardado](sensitivity-labels-coauthoring.md) documentos etiquetados y cifrados | Vista previa: [Canal actual (Previsualización) ](https://office.com/insider) | Vista previa: [Canal Beta](https://office.com/insider) | En revisión | En revisión | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Compatibilidad con la coautoría y el autoguardado](sensitivity-labels-coauthoring.md) documentos etiquetados y cifrados | Vista previa: [Canal actual (Previsualización) ](https://office.com/insider) | Vista previa: [canal actual (vista previa)](https://office.com/insider) | En revisión | En revisión | [Sí - participar](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 **Nota al pie.**

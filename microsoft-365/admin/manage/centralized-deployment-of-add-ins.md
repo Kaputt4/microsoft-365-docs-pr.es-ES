@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar Office complementos.
-ms.openlocfilehash: 8f73deb1059097640946fcf7dad1ca97cb2831b1
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 482f2231c0c2c9fa30e863f25f474d90a22f52fa
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296724"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464410"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -155,5 +155,16 @@ Si usted o sus usuarios tienen problemas para cargar el complemento mientras usa
   
 |**Plataforma**|**Información de depuración**|
 |:-----|:-----|
-|Office  <br/> | Registros Charles/Fiddler  <br/>  Id. del espacio empresarial ( [más información](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id))      <br/>  CorrelationID. Vea el origen de una de las páginas de office y busque el valor de Id. de correlación y envíelo para admitir:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Registros Charles/Fiddler  <br/>  Id. del espacio empresarial ( [más información](/onedrive/find-your-office-365-tenant-id.md))      <br/>  CorrelationID. Vea el origen de una de las páginas de office y busque el valor de Id. de correlación y envíelo para admitir:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Clientes enriquecidos (Windows y Mac)  <br/> | Registros Charles/Fiddler  <br/>  Generar números de la aplicación cliente (preferiblemente como una captura de pantalla de **Archivo/Cuenta**)  <br/> |
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Implementar complementos en el Centro de administración](../manage/manage-deployment-of-add-ins.md) (artículo)
+
+[Administrar complementos en el Centro de administración](manage-addins-in-the-admin-center.md) (artículo)
+
+[Preguntas más frecuentes sobre implementación](../manage/centralized-deployment-faq.md) centralizada (artículo)
+
+[Actualizar su Microsoft 365 usuarios empresariales al último Office cliente](../setup/upgrade-users-to-latest-office-client.md) (artículo)
+ 

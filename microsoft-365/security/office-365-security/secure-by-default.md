@@ -17,12 +17,12 @@ ms.collection:
 description: Obtenga más información sobre la configuración segura de forma predeterminada en Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f1b495a9c985077dfc88d1da7a221bb60ca10df9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 957ca3b563d4f1466dd537c3ae974a4fd61aa6f2
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205647"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346321"
 ---
 # <a name="secure-by-default-in-office-365"></a>Proteger de forma predeterminada en Office 365
 
@@ -38,21 +38,21 @@ ms.locfileid: "51205647"
 
 Sin embargo, la seguridad debe equilibrarse con la productividad. Esto puede incluir el equilibrio entre:
 
-- **Facilidad de uso:** la configuración no debe inquiete a la productividad del usuario.
+- **Facilidad de** uso: Configuración no debe inquiete a la productividad del usuario.
 - **Riesgo:** la seguridad puede bloquear actividades importantes.
 - **Configuración heredada:** es posible que algunas configuraciones de productos y características anteriores deban mantenerse por motivos empresariales, incluso si se mejoran las configuraciones nuevas y modernas.
 
-Las organizaciones de Microsoft 365 con buzones en Exchange Online están protegidas por Exchange Online Protection (EOP). Esta protección incluye:
+Microsoft 365 organizaciones con buzones en Exchange Online están protegidas por Exchange Online Protection (EOP). Esta protección incluye:
 
 - El correo electrónico con malware sospechoso se pondrá automáticamente en cuarentena y se notificará a los destinatarios. Consulte [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 - El correo electrónico identificado como phishing de elevada confianza se controlará de acuerdo con la acción de directiva contra correo no deseado. Vea [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
-Para obtener más información acerca de EOP, vea [Exchange Online Protection overview](exchange-online-protection-overview.md).
+Para obtener más información acerca de EOP, [vea Exchange Online Protection overview](exchange-online-protection-overview.md).
 
 Dado que Microsoft quiere mantener a nuestros clientes seguros de forma predeterminada, algunas invalidaciones de inquilinos no se aplican para malware o phishing de elevada confianza. Estas invalidaciones incluyen:
 
 - Listas de remitentes permitidos o listas de dominios permitidos (directivas contra correo no deseado)
-- Remitentes seguros de Outlook
+- Outlook Caja fuerte remitentes
 - Lista de direcciones IP permitidos (filtrado de conexiones)
 
 Encontrará más información sobre estas invalidaciones en [Crear listas de remitentes seguros.](create-safe-sender-lists-in-office-365.md)
@@ -68,17 +68,20 @@ El ánimo de ser seguro de forma predeterminada es: estamos tomando la misma acc
 
 Nuestros datos indican que un usuario tiene 30 veces más probabilidades de hacer clic en un vínculo malintencionado en los mensajes de la carpeta Correo no deseado frente a cuarentena. Nuestros datos también indican que la tasa de falsos positivos (mensajes buenos marcados como negativos) para mensajes de suplantación de identidad de elevada confianza es muy baja y los administradores pueden resolver los falsos positivos con envíos de administrador.
 
-También determinamos que el remitente permitido y las listas de dominios permitidos en directivas contra correo no deseado y remitentes seguros en Outlook eran demasiado amplios y causaban más daños que buenos.
+También determinamos que el remitente permitido y las listas de dominios permitidos en las directivas contra correo no deseado y los remitentes Caja fuerte en Outlook eran demasiado amplios y causaban más daños que buenos.
 
-Para ponerlo de otra manera: como servicio de seguridad, estamos actuando en su nombre para evitar que los usuarios se pongan en peligro. 
+Para ponerlo de otra manera: como servicio de seguridad, estamos actuando en su nombre para evitar que los usuarios se pongan en peligro.
 
-## <a name="exceptions"></a>Exceptions
+## <a name="exceptions"></a>Excepciones
 
-La única invalidación que permite que los mensajes de suplantación de identidad de elevada confianza omitan el filtrado son las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte). Para usar reglas de flujo de correo para omitir el filtrado, vea Usar reglas de flujo de [correo para establecer el SCL en mensajes](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+> [!NOTE]
+> En julio de 2021, la seguridad se extenderá de forma predeterminada a Exchange de flujo de correo (también conocidas como reglas de transporte). Si usa reglas de flujo de correo para permitir simulaciones de suplantación de identidad de terceros o entrega [](configure-advanced-delivery.md) sin filtrar a buzones de operación de seguridad, finalmente deberá eliminar estas reglas y cambiar al uso de la directiva de entrega avanzada cuando la característica esté _disponible._
+
+La única invalidación que permite que los mensajes de suplantación de identidad de elevada confianza omita el filtrado son las reglas de flujo de correo. Para usar reglas de flujo de correo para omitir el filtrado, vea Usar reglas de flujo de [correo para establecer el SCL en mensajes](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
 Solo debe considerar el uso de invalidaciones en los siguientes escenarios:
 
 - Simulaciones de phishing: los ataques simulados pueden ayudarle a identificar usuarios vulnerables antes de que un ataque real impacte en su organización.
-- Buzones de seguridad/SecOps: buzones dedicados usados por los equipos de seguridad para obtener mensajes sin filtrar (tanto buenos como malos). Teams puede revisar si contienen contenido malintencionado.
+- Buzones de seguridad/SecOps: buzones dedicados usados por los equipos de seguridad para obtener mensajes sin filtrar (tanto buenos como malos). Teams revisar para ver si contienen contenido malintencionado.
 - Filtros de terceros: la seguridad de forma predeterminada no se aplica cuando el registro MX del dominio no apunta a Office 365.
 - Falsos positivos: es posible que quieras permitir temporalmente determinados mensajes que Microsoft sigue analizando a través de [envíos de administrador.](admin-submission.md) Al igual que con todas las invalidaciones, se recomienda que sean temporales.

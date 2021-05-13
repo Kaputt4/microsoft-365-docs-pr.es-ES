@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los usuarios que tienen cuentas personales de Microsoft pueden obtener puntos de Microsoft Rewards en relación con sus búsquedas de trabajo si la característica Vincular AAD con Recompensas está habilitada.
-ms.openlocfilehash: 92a319d5917c49f0457a560fe52212608bd26dc2
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 8cbd88de530ec4aa566962bb74715dc9c417f296
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297073"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464353"
 ---
 # <a name="manage-microsoft-rewards"></a>Administrar Microsoft Rewards
 
@@ -33,3 +33,13 @@ A menos que el usuario opte por no participar en esta característica, su cuenta
 Para los administradores de organizaciones educativas con niños menores, se requiere una cuenta de Microsoft parental para que el niño participe en Microsoft Rewards. La cuenta parental no se asociará con la cuenta organizativa del alumno. Para obtener más información acerca de las cuentas de Microsoft para niños, vea [Consentimiento paterno y Cuentas secundarias de Microsoft](https://support.microsoft.com/account-billing/c6951746-8ee5-8461-0809-fbd755cd902e).
 
 Esta característica no está disponible para los usuarios gubernamentales. Los administradores deben asegurarse de que las directivas de cumplimiento de su organización permiten el uso de cuentas personales de Microsoft Rewards con búsquedas de trabajo.
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Configurar Microsoft Search](/microsoftsearch/setup-microsoft-search.md) (artículo)
+
+[Las 12 tareas principales para que los equipos de seguridad admitan el trabajo desde casa](../../security/top-security-tasks-for-remote-work.md) (artículo)
+
+[Novedades de Microsoft 365](https://support.microsoft.com/en-us/office/what-s-new-in-microsoft-365-95c8d81d-08ba-42c1-914f-bca4603e1426) (artículo)
+
+

@@ -21,17 +21,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga más información sobre el centro Microsoft 365 administración.
-ms.openlocfilehash: 47eafbf49ac70d86b4065d3a67672c79abc16e63
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7d355b5064c2a0344ac62653afcae8712dbfc73f
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332251"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470429"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Información general del Centro de administración de Microsoft 365
 
 - [El Centro de administración en la vista simplificada](#the-admin-center-in-simplified-view)
 - [El Centro de administración en la vista panel](#the-admin-center-in-dashboard-view)
+
+El Microsoft 365 de administración tiene dos vistas: la vista simplificada ayuda a las organizaciones más pequeñas a administrar sus tareas más comunes. La vista Panel incluye tareas y configuraciones más complejas. Puedes cambiar entre ellos desde un botón en la parte superior del centro de administración.
 
 ## <a name="the-admin-center-in-simplified-view"></a>El Centro de administración en la vista simplificada
 

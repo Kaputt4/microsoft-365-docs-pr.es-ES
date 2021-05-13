@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 42b15edd933d80dd397f4681c4f0fdb035f030f2
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: 29505a6e975fdfa2283efe3391c615e40e678164
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943022"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346383"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Establecer preferencias para Microsoft Defender para endpoint en Linux
 
@@ -105,6 +105,7 @@ Especifica la directiva de combinación para exclusiones. Puede ser una combinac
 #### <a name="scan-exclusions"></a>Exclusiones de examen
 
 Entidades que se han excluido del examen. Las exclusiones se pueden especificar por rutas de acceso completas, extensiones o nombres de archivo.
+(Las exclusiones se especifican como una matriz de elementos, el administrador puede especificar tantos elementos como sea necesario, en cualquier orden).
 
 |||
 |:---|:---|
@@ -305,7 +306,7 @@ Los datos de diagnóstico se usan para mantener Defender for Endpoint seguro y a
 Determina si se envían muestras sospechosas (que probablemente contengan amenazas) a Microsoft. Existen tres niveles para controlar el envío de muestra:
 
 - **Ninguno:** no se envían muestras sospechosas a Microsoft.
-- **Seguro:** solo se envían automáticamente muestras sospechosas que no contienen información de identificación personal (PII). Este es el valor predeterminado para esta configuración.
+- **Caja fuerte:** solo se envían automáticamente muestras sospechosas que no contienen información de identificación personal (PII). Este es el valor predeterminado para esta configuración.
 - **All**: todas las muestras sospechosas se envían a Microsoft.
 
 |||
@@ -337,7 +338,7 @@ El siguiente perfil de configuración será:
   - **Las aplicaciones potencialmente no deseadas (PUA)** están bloqueadas
   - **Las bomba de archivo** (archivo con una tasa de compresión alta) se auditan en los registros del producto
 - Habilitar actualizaciones automáticas de inteligencia de seguridad
-- Habilitar la protección de entrega en la nube
+- Habilitar la protección proporcionada en la nube
 - Habilitar el envío automático de muestra en `safe` el nivel
 
 ### <a name="sample-profile"></a>Perfil de ejemplo
@@ -387,7 +388,12 @@ El siguiente perfil de configuración contiene entradas para todas las opciones 
          {
             "$type":"excludedPath",
             "isDirectory":true,
-            "path":"/home"
+            "path":"/run"
+         },
+         {
+            "$type":"excludedPath",
+            "isDirectory":true,
+            "path":"/home/*/git"
          },
          {
             "$type":"excludedFileExtension",

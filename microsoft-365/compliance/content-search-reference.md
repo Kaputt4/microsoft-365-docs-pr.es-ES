@@ -1,5 +1,5 @@
 ---
-title: Referencia de búsqueda de contenido
+title: Referencia de características para la búsqueda de contenido
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,15 +19,17 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Este artículo contiene información de referencia sobre la herramienta Búsqueda de contenido de eDiscovery del Centro de cumplimiento de Microsoft 365 para ayudarle a obtener una gran cantidad de detalles sobre la búsqueda de contenido.
-ms.openlocfilehash: c345cf00bddba30cb543ad9682a2a332607d31fe
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+description: Este artículo contiene información de referencia sobre la herramienta de eDiscovery de búsqueda de contenido del Centro de cumplimiento de Microsoft 365 para ayudarle a obtener una gran cantidad de detalles sobre la búsqueda de contenido.
+ms.openlocfilehash: f3545cc4644ca8b0a96ee37713d8fe62be7466e5
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314377"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332899"
 ---
-# <a name="content-search-reference"></a>Referencia de búsqueda de contenido
+# <a name="feature-reference-for-content-search"></a>Referencia de características para la búsqueda de contenido
+
+En este artículo se describen las características y funciones de la búsqueda de contenido.
 
 ## <a name="content-search-limits"></a>Límites de búsqueda de contenido
 
@@ -71,6 +73,10 @@ Tenga en cuenta lo siguiente cuando use la lista de palabras clave para crear un
     
 - Si su consulta de búsqueda contiene palabras clave con caracteres especiales (que no pertenecen al alfabeto inglés), puede hacer clic en **Consulta idioma-país/región**![el icono Consulta idioma-país/región](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) y seleccionar el código cultural del idioma y país relevantes para la búsqueda. Por defecto, la versión del idioma/región es la neutra. ¿Cómo saber si es necesario cambiar la configuración de idioma para una búsqueda de contenido? Si sabe que las ubicaciones de contenido contienen los caracteres especiales que busca, pero la búsqueda no devuelve ningún resultado, la configuración de idioma puede ser la causa. 
   
+## <a name="partially-indexed-items"></a>Elementos indexados parcialmente
+
+- Los elementos indexados parcialmente en los buzones se incluyen en los resultados de búsqueda estimados. Los elementos indexados parcialmente en SharePoint y OneDrive no se incluyen en los resultados de búsqueda estimados. Para más información, vea [Elementos indexados parcialmente en eDiscovery](partially-indexed-items-in-content-search.md).
+
 ## <a name="searching-onedrive-accounts"></a>Buscar en cuentas de OneDrive
 
 - Para obtener una lista de las direcciones URL de los sitios de OneDrive de su organización, vea [Crear una lista de todas las ubicaciones de OneDrive en la organización](/onedrive/list-onedrive-urls). El script en este artículo crea un archivo de texto que contiene una lista de todos los sitios de OneDrive. Para ejecutar este script, tiene que instalar y usar el Shell de SharePoint Online Management. Asegúrese de anexar la dirección URL para el dominio MiSitio de su organización a cada sitio de OneDrive que quiera buscar. Este es el dominio que contiene todos los sitios OneDrive; por ejemplo, `https://contoso-my.sharepoint.com`. Este es un ejemplo de una dirección URL para un sitio de usuario de OneDrive: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
@@ -228,12 +234,6 @@ Si se quita la licencia de Exchange Online (o la licencia de Microsoft 365) de 
 - Si usa el cmdlet **New-ComplianceSearch** para crear una búsqueda de contenido y especifica un buzón desconectado como la ubicación de contenido de Exchange en la que buscar, la búsqueda de contenido no devolverá resultados de búsqueda del buzón desconectado.
 
 Si necesita conservar los datos de un buzón desconectado para poder buscarlos, debe poner el buzón en suspensión antes de quitar la licencia. De este forma, se conservan los datos y se permite la búsqueda en el buzón desconectado hasta que se quite la suspensión. Para más información sobre las suspensiones, vea [Cómo identificar el tipo de suspensión en un buzón de Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md)
-
-## <a name="partially-indexed-items"></a>Elementos indexados parcialmente
-
-- Como se ha explicado anteriormente, los elementos indexados parcialmente en los buzones se incluyen en los resultados de búsqueda estimados. En cambio, los elementos indexados parcialmente de SharePoint y OneDrive no se incluyen.
-
-- Si un elemento parcialmente indexado coincide con la búsqueda de consulta (porque otras propiedades del mensaje o documento cumplen los criterios de búsqueda), no se incluirá en el número estimado de elementos sin indexar. Si el criterio de búsqueda excluye un elemento parcialmente indexado, no se incluye en el número estimado de elementos sin indexar. Para más información, vea [Elementos parcialmente indexados en la búsqueda de contenido de Office 365](partially-indexed-items-in-content-search.md).
 
 ## <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>Búsqueda de contenido en un entorno de SharePoint Multi-Geo
 

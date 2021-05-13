@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo administrar suscripciones de registro de autoservicio gratuitas para su organización.
 ms.date: 03/17/2021
-ms.openlocfilehash: b469515a649399c71ef64ba2567dfa376f21e9a7
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 9c29d36ff28e312fa3782b60f89fa755d4df9bf3
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333223"
+ms.locfileid: "52345135"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Administrar suscripciones de registro de autoservicio
 
