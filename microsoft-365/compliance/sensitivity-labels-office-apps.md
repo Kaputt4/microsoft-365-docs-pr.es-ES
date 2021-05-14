@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a9755542b608c8ed7d3cd93bebbd764fd56b9768
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: cb385ec5589af115ce1a0d323e3660def42179b9
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332719"
+ms.locfileid: "52345769"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -92,7 +92,7 @@ Los números indicados son la versión mínima de la aplicación Office requerid
 |[Requerir a los usuarios que apliquen una etiqueta a sus correos electrónicos y documentos ](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Sí                |
 |[Auditoría de la actividad de los usuarios relacionada con las etiquetas](data-classification-activity-explorer.md) | 2011+ | En revisión | En revisión           | En revisión               | En revisión |
 |[Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | En revisión           | En revisión               | Sí |
-|[Diferentes opciones de configuración para etiquetas predeterminadas y etiquetas obligatorias](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Implementando en la versión preliminar: [Canal Beta](https://office.com/insider)                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | Sí |
+|[Diferentes opciones de configuración para etiquetas predeterminadas y etiquetas obligatorias](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | Sí |
 |
 
 **Notas al pie:**
