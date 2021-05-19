@@ -1,23 +1,24 @@
 ---
 title: Información de pago para Saint Kitts y Nevis
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
-description: Obtén información sobre dónde enviar el pago de la suscripción.
+description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b2dfa5f74c7648df0340dd403bed961b7491bdb7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 3077ee6e346c3162a333572a2f40278ce964890c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272977"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535235"
 ---
 # <a name="payment-information-for-saint-kitts-and-nevis"></a>Información de pago para Saint Kitts y Nevis
 
@@ -31,4 +32,4 @@ Pague solo en USD y haga referencia a los números de factura en su remesa de pa
 **Rama:** Dallas  
 **Código SWIFT:** BOFAUS3N  
 **Número de cuenta:** 4426587954  
-**Nombre de cuenta:** Microsoft  
+**Nombre de cuenta:** Microsoft

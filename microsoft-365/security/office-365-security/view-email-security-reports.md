@@ -19,12 +19,12 @@ description: Obtenga información sobre cómo buscar y usar informes de segurida
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d9f6d12fef8a2ef6241fbbd5e0e2a980284e9cc
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 11fe6fd76d21b2dbd7a3e651d40efaa79f675a43
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207259"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52531023"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento
 
@@ -42,7 +42,7 @@ Hay varios informes disponibles en el Centro de seguridad y cumplimiento de & pa
 ## <a name="compromised-users-report"></a>Informe de usuarios comprometidos
 
 > [!NOTE]
-> Este informe está disponible en organizaciones de Microsoft 365 con buzones de Exchange Online. No está disponible en organizaciones independientes de Exchange Online Protection (EOP).
+> Este informe está disponible en Microsoft 365 organizaciones con Exchange Online buzones de correo. No está disponible en organizaciones independientes Exchange Online Protection (EOP).
 
 El **informe Usuarios comprometidos** muestra el número de  cuentas  de usuario que se marcaron como Sospechosas o Restringidas en los últimos 7 días. Las cuentas en cualquiera de estos estados son problemáticas o incluso están en peligro. Con el uso frecuente, puede usar el informe para detectar picos e incluso tendencias en cuentas sospechosas o restringidas. Para obtener más información acerca de los usuarios en peligro, vea [Responder a una cuenta de correo electrónico comprometida.](responding-to-a-compromised-email-account.md)
 
@@ -66,15 +66,15 @@ Si hace clic **en Ver tabla de detalles,** puede ver los siguientes detalles:
 
 - **Tiempo de creación**
 - **Nombre de usuario**
-- **Acción**
+- **Action**
 
 Para volver a la vista informe, haga clic **en Ver informe**.
 
 ## <a name="encryption-report"></a>Informe de cifrado
 
-El **informe de cifrado** está disponible en EOP (suscripciones con buzones en Exchange Online o EOP independiente sin buzones de Exchange Online). El equipo de seguridad de su organización puede usar la información de este informe para identificar patrones y aplicar o ajustar proactivamente directivas para mensajes de correo electrónico confidenciales. Por ejemplo:
+El **informe de cifrado** está disponible en EOP (suscripciones con buzones en Exchange Online o EOP independiente sin Exchange Online buzones de correo). El equipo de seguridad de su organización puede usar la información de este informe para identificar patrones y aplicar o ajustar proactivamente directivas para mensajes de correo electrónico confidenciales. Por ejemplo:
 
-- Si ve un gran número de mensajes de correo electrónico cifrados por los usuarios, es posible que desee agregar una directiva de cifrado para automatizar el cifrado en determinados casos de uso. Para obtener más información, vea Definir reglas de flujo de correo para cifrar mensajes de correo [electrónico en Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).
+- Si ve un gran número de mensajes de correo electrónico cifrados por los usuarios, es posible que desee agregar una directiva de cifrado para automatizar el cifrado en determinados casos de uso. Para obtener más información, vea [Define mail flow rules to encrypt email messages in Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).
 
 - Si tiene varias plantillas de cifrado disponibles, pero nadie las usa, puede explorar si los usuarios necesitan formación en características.
 
@@ -160,7 +160,7 @@ Para ver el informe, abra el Centro de  [seguridad y & cumplimiento,](https://pr
 Puede filtrar tanto el gráfico como la tabla de detalles haciendo clic **en Filtros** y seleccionando:
 
 - **Fecha de inicio** y **fecha de finalización**
-- **Entrada**
+- **Entrante**
 - **Saliente**
 
 ![Vista Informe en el informe de detección de malware en el correo electrónico](../../media/malware-detections-report-view.png)
@@ -214,7 +214,7 @@ Los gráficos siguientes están disponibles en la vista informe:
 
 - **Dividir por: Dirección:** se muestran las siguientes direcciones:
 
-  - **Entrada**
+  - **Entrante**
   - **Saliente**
 
   ![Vista Dirección en el informe de detecciones de correo no deseado](../../media/spam-detections-report-direction-view.png)
@@ -233,7 +233,7 @@ Si hace clic en **Ver tabla de detalles** en cualquier vista de informe, se mues
 - **Dirección del remitente**
 - **Dirección de destinatario**
 - **Tipo de evento**
-- **Acción**
+- **Action**
 - **Asunto**
 
 Si hace clic **en Filtros** en una tabla de detalles, puede modificar los resultados con los filtros siguientes:
@@ -246,48 +246,64 @@ Para volver a la vista informe, haga clic **en Ver informe**.
 
 ## <a name="spoof-detections-report"></a>Informe de detecciones de suplantación
 
-El **informe de** detecciones de suplantación muestra cuántos mensajes de correo suplantación de suplantación se detectaron y de esos, que se consideraron "buenos" (correo suplantación de suplantación realizado por motivos profesionales legítimos). Para obtener más información acerca de la suplantación, vea Protección contra la suplantación [en EOP](anti-spoofing-protection.md).
+> [!NOTE]
+> El informe de detecciones de suplantación mejoradas, tal como se describe en este artículo, está en versión preliminar, está sujeto a cambios y no está disponible en todas las organizaciones. La versión anterior del informe mostraba solo **Correo bueno** y Capturado como correo **no deseado.**
 
-La vista agregada del informe permite 90 días de filtrado, mientras que la vista de detalles solo permite diez días de filtrado.
+El **informe Detecciones** de suplantación muestra información sobre los mensajes bloqueados o permitidos debido a la suplantación. Para obtener más información acerca de la suplantación, vea Protección contra la suplantación [en EOP](anti-spoofing-protection.md).
+
+La vista de agregado del informe permite 45 días de filtrado, mientras que la vista de detalles solo permite <sup>\*</sup> diez días de filtrado.
+
+<sup>\*</sup> Con el tiempo, podrás usar hasta 90 días de filtrado.
 
 Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel de informes y \>  seleccione **Detecciones de suplantación de seguridad.** Para ir directamente al informe, abra <https://protection.office.com/reportv2?id=SpoofMailReport> .
 
 ![Widget Detecciones de suplantación en el panel Informes](../../media/spoof-detections-widget.png)
 
-Cuando mantiene el mouse sobre un día (punto de datos) en el gráfico, puede ver cuántos mensajes de correo suplantación se han recibido.
+Al pasar el mouse sobre un día (punto de datos) en el gráfico, puede ver cuántos mensajes suplantados se detectaron y por qué.
 
 Puede filtrar tanto el gráfico como la tabla de detalles haciendo clic en **Filtros** y seleccionando uno o varios de los siguientes valores:
 
 - **Fecha de inicio** y **fecha de finalización**
 
-- **Correo bueno**
+- **Resultado**
+  - **Pasar**
+  - **Error**
+  - **SoftPass**
+  - **Ninguna**
+  - **Otros**
 
-- **Capturado como correo no deseado**
+- **Tipo de suplantación:** **Interno** y **Externo**
 
 ![Vista Informe en el informe Detecciones de suplantación](../../media/spoof-detections-report-view.png)
 
 Si hace clic **en Ver tabla de detalles,** puede ver los siguientes detalles:
 
 - **Fecha**
-- **Remitente suplantado**
-- **Remitente verdadero**
-- **IP del remitente**
-- **Acción**
+- **Usuario suplantado**
+- **Infraestructura de envío**
+- **Tipo de suplantación**
+- **Resultado**
+- **Código de resultados**
+- **SPF**
+- **DKIM**
+- **DMARC**
 - **Recuento de mensajes**
 
 Para volver a la vista informe, haga clic **en Ver informe**.
 
+Para obtener más información acerca de los códigos de resultados de autenticación compuesta, vea [Encabezados de mensajes](anti-spam-message-headers.md)contra correo no deseado en Microsoft 365 .
+
 ## <a name="threat-protection-status-report"></a>Informe de estado de protección contra amenazas
 
-El **informe de estado de** protección contra amenazas está disponible en EOP y Microsoft Defender para Office 365; sin embargo, los informes contienen datos diferentes. Por ejemplo, los clientes de EOP pueden ver información sobre malware detectado en el correo electrónico, pero no información sobre archivos malintencionados detectados por datos adjuntos seguros para [SharePoint, OneDrive](mdo-for-spo-odb-and-teams.md)y Microsoft Teams .
+El **informe de estado de** protección contra amenazas está disponible en EOP y Microsoft Defender para Office 365; sin embargo, los informes contienen datos diferentes. Por ejemplo, los clientes de EOP pueden ver información sobre malware detectado en el correo electrónico, pero no información sobre archivos malintencionados detectados por [Caja fuerte Attachments for SharePoint, OneDrive](mdo-for-spo-odb-and-teams.md)y Microsoft Teams .
 
-El informe proporciona el recuento de mensajes de correo electrónico con contenido malintencionado, como archivos o direcciones de sitio web (URL) bloqueadas por el motor [](safe-attachments.md)antimalware, purga automática de hora cero [(ZAP)](zero-hour-auto-purge.md)y características de Defender para Office 365 como vínculos [seguros,](safe-links.md)datos adjuntos seguros y anti [phishing.](set-up-anti-phishing-policies.md) Puede usar esta información para identificar tendencias o determinar si las directivas de la organización necesitan ajustes.
+El informe proporciona el recuento de mensajes de correo electrónico con contenido malintencionado, como archivos o direcciones de sitio web (URL) bloqueadas por el motor antimalware, purga automática de hora cero [(ZAP)](zero-hour-auto-purge.md)y Defender para características de Office 365 como vínculos [de Caja fuerte,](safe-links.md)datos adjuntos de [Caja fuerte](safe-attachments.md)y anti [phishing.](set-up-anti-phishing-policies.md) Puede usar esta información para identificar tendencias o determinar si las directivas de la organización necesitan ajustes.
 
 **Nota:** Es importante comprender que si un mensaje se envía a cinco destinatarios, lo contamos como cinco mensajes diferentes y no un mensaje.
 
 Para ver el informe, abra el Centro de  [seguridad & cumplimiento,](https://protection.office.com)vaya al Panel de informes y seleccione Estado de protección \>  **contra amenazas**. Para ir directamente al informe, abra una de las siguientes direcciones URL:
 
-- Microsoft Defender para Office 365: <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
+- Microsoft Defender para Office 365:<https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP: <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
 ![Widget de estado de protección contra amenazas en el panel Informes](../../media/threat-protection-status-report-widget.png)
@@ -296,7 +312,7 @@ De forma predeterminada, el gráfico muestra los datos de los últimos 7 días. 
 
 ### <a name="report-view-for-the-threat-protection-status-report"></a>Vista Informe para el informe de estado de protección contra amenazas
 
-Las vistas siguientes están disponibles:
+Están disponibles las siguientes vistas:
 
 - **Ver datos por: Información general:** se muestra la siguiente información de detección:
 
@@ -306,10 +322,10 @@ Las vistas siguientes están disponibles:
 
   ![Vista general en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-overview-view.png)
 
-- **Ver datos por: Contenido \> Malware**<sup>1:</sup>Se muestra la siguiente información para organizaciones de Microsoft Defender para Office 365:
+- **Ver datos por: Contenido \> Malware**<sup>1:</sup>Se muestra la siguiente información para Microsoft Defender para Office 365 organizaciones:
 
-  - **Motor antimalware:** archivos malintencionados detectados en Sharepoint, OneDrive y Microsoft Teams mediante la detección de virus integrada [en Microsoft 365](virus-detection-in-spo.md).
-  - **Detonación de archivos:** archivos malintencionados detectados por datos adjuntos seguros para [SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+  - **Motor antimalware:** archivos malintencionados detectados en Sharepoint, OneDrive y Microsoft Teams por la detección de virus integrada en [Microsoft 365](virus-detection-in-spo.md).
+  - **Detonación de archivos:** archivos malintencionados detectados por Caja fuerte datos adjuntos para [SharePoint, OneDrive y Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
   ![Vista de malware de contenido en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -322,14 +338,14 @@ Las vistas siguientes están disponibles:
   - **Permitir dominio**
   - **ZAP no habilitado**
   - **Carpeta de correo no deseado no habilitada**
-  - **Remitente seguro del usuario**
-  - **Dominio seguro del usuario**
+  - **Remitente Caja fuerte usuario**
+  - **Dominio Caja fuerte usuario**
 
   ![Vista De invalidación de mensajes en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-message-override-view.png)
 
 - **Dividir por: Tecnología de detección** y **Ver datos por: Email \> Phish**: Se muestra la siguiente información:
 
-  - **Reputación** de url generada por ATP <sup>1:</sup>Reputación de url malintencionada generada a partir de detonaciones de Defender para Office 365 en otros clientes de Microsoft 365.
+  - **Reputación** de url generada por ATP <sup>1:</sup>reputación de url malintencionada generada desde Defender para Office 365 detonaciones en otros Microsoft 365 clientes.
   - **Filtro de phishing** avanzado: señales de suplantación de identidad basadas en el aprendizaje automático.
   - **Anti-spoof: error dmarc:** error de autenticación dmarc en mensajes.
   - **Anti-spoof - intra-org**: El remitente está intentando suplantación del dominio de destinatario.
@@ -347,10 +363,10 @@ Las vistas siguientes están disponibles:
 
 - **Dividir por: Tecnología de detección** y **Ver datos por: Malware \> de correo** electrónico : Se muestra la siguiente información:
 
-  - **Reputación de archivo generada por ATP**<sup>1:</sup>Toda la reputación de archivos malintencionados generada por Detonaciones de Defender para Office 365.
+  - **Reputación de archivo generada por ATP**<sup>1:</sup>toda la reputación de archivos malintencionados generada por Defender para Office 365 detonaciones.
   - **Motor antimalware**<sup>1:</sup>Detección de motores antimalware.
   - Bloque de tipo de archivo de directiva **antimalware:** se trata de mensajes de correo electrónico filtrados debido al tipo de archivo malintencionado identificado en el mensaje.
-  - **Detonación de archivos**<sup>1:</sup>Detección por datos adjuntos seguros.
+  - **Detonación de archivos**<sup>1:</sup>Detección por Caja fuerte datos adjuntos.
   - **Reputación de archivos malintencionados**
   - **MALWARE ZAP**<sup>2</sup>
   - **Otros**
@@ -360,7 +376,7 @@ Las vistas siguientes están disponibles:
 - **Dividir por: Tipo de directiva** y Ver datos **por: Email \> Phish** o **View data by: Email \> Malware**: Se muestra la siguiente información:
 
   - **Antimalware**
-  - **Datos adjuntos**<sup>seguros 1</sup>
+  - **Caja fuerte adjuntos**<sup>1</sup>
   - **Anti-phish**
   - **Contra correo no deseado**
   - **Regla de flujo de** correo (también conocida como regla de transporte)
@@ -382,9 +398,9 @@ Las vistas siguientes están disponibles:
 
   ![Vista Estado de entrega para correo electrónico de suplantación de identidad (phishing) en el informe de estado de protección contra amenazas](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
-<sup>1</sup> Defender solo para Office 365
+<sup>1</sup> Defender para Office 365 solo
 
-<sup>2</sup> La purga automática de hora cero (ZAP) no está disponible en EOP independiente (solo funciona en buzones de Exchange Online).
+<sup>2</sup> La purga automática de cero horas (ZAP) no está disponible en EOP independiente (solo funciona en Exchange Online buzones).
 
 Si hace clic **en Filtros,** los filtros disponibles dependen del gráfico que esté mirando:
 
@@ -480,7 +496,7 @@ Si hace clic **en Filtros en** la vista informe o en la vista tabla detalles, pu
 
 ## <a name="url-threat-protection-report"></a>Informe de protección contra amenazas de url
 
-El **informe de protección contra amenazas de dirección URL** está disponible en Microsoft Defender para Office 365. Para obtener más información, vea [Informe de protección contra amenazas de url](view-reports-for-mdo.md#url-threat-protection-report).
+El **informe de protección contra amenazas de url** está disponible en Microsoft Defender para Office 365. Para obtener más información, vea [Informe de protección contra amenazas de url](view-reports-for-mdo.md#url-threat-protection-report).
 
 ## <a name="user-reported-messages-report"></a>Informe de mensajes notificados por el usuario
 
@@ -499,7 +515,7 @@ Para ver este informe, en el Centro de [seguridad & cumplimiento](https://protec
 ![En el Centro de seguridad & cumplimiento, elija Administración de amenazas \> Revisar \> mensajes notificados por el usuario](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
 > [!IMPORTANT]
-> Para que el informe de mensajes notificados  por el usuario funcione correctamente, el registro de auditoría debe estar activado para el entorno de Office 365. Esto lo suele hacer alguien que tiene el rol Registros de auditoría asignado en Exchange Online. Para obtener más información, vea Activar o desactivar la búsqueda del registro de auditoría de [Microsoft 365](../../compliance/turn-audit-log-search-on-or-off.md).
+> Para que el informe de mensajes notificados  por el usuario funcione correctamente, el registro de auditoría debe estar activado para el Office 365 usuario. Esto lo suele hacer alguien que tenga el rol Registros de auditoría asignado en Exchange Online. Para obtener más información, vea Activar Microsoft 365 o desactivar la búsqueda del [registro de auditoría.](../../compliance/turn-audit-log-search-on-or-off.md)
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>¿Qué permisos se necesitan para ver estos informes?
 
@@ -510,9 +526,9 @@ Para ver y usar los informes descritos en este artículo, debe ser miembro de un
 - **Lector de seguridad**
 - **Lector global**
 
-Para más información, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
+Para obtener más información, vea [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
-**Nota:** Agregar usuarios al rol de Azure Active Directory correspondiente en el Centro de administración de Microsoft  365 proporciona a los usuarios los permisos necesarios en el Centro de seguridad & cumplimiento y permisos para otras características de Microsoft 365. Para más información, consulte[Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
+**Nota:** Agregar usuarios al rol Azure Active Directory correspondiente en el Centro de administración de Microsoft 365 proporciona a  los usuarios los permisos necesarios en el Centro de seguridad y cumplimiento de & y permisos para otras características de Microsoft 365. Para más información, vea [Sobre los roles de administrador](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran datos?
 

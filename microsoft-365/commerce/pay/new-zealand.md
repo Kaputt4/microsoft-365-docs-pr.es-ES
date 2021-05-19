@@ -2,22 +2,23 @@
 title: Información de pago para Nueva Zelanda
 f1.keywords:
 - NOCSH
-author: cmcatee-MSFT
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
-description: Obtén información sobre dónde enviar el pago de la suscripción.
+description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: db42ce70f5533101ecb39bd504f3e5eb16c2b396
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 4ff9056421d32abf83970356f9f99d9aea2adc3f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273193"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535343"
 ---
 # <a name="payment-information-for-new-zealand"></a>Información de pago para Nueva Zelanda
 
@@ -29,19 +30,19 @@ ms.locfileid: "52273193"
 
 Si tiene una factura facturada por **MICROSOFT REGIONAL SALES PTE LTD,** use esta información bancaria:
 
-Banco: Citibank\
-Código bancario: 31\
-Código de sucursal: 2840\
-Código SWIFT: CITINZ2X\
-Sufijo (3 dígitos): 004\
-Sufijo (2 dígitos): 04\
-Número de cuenta: 0026181\
-Nombre de cuenta: MICROSOFT
+**Banco:** Citibank  
+**Código bancario:** 31  
+**Código de sucursal:** 2840  
+**Código SWIFT:** CITINZ2X  
+**Sufijo (3 dígitos):** 004  
+**Sufijo (2 dígitos):** 04  
+**Número de cuenta:** 0026181  
+**Nombre de cuenta:** MICROSOFT
 
 Si tiene una factura facturada por **Microsoft New Zealand Limited** para pedidos y consumo a partir del 1 de marzo de 2021, use esta información bancaria:
 
-Banco: Citibank, N.A. Rama de Nueva Zelanda\
-Código SWIFT: CTINZ2X\
-BSB: 312825\
-Número de cuenta: 0008655083\
-Nombre de cuenta: MICROSOFT
+**Banco:** Citibank, N.A. Rama de Nueva Zelanda  
+**Código SWIFT:** CTINZ2X  
+**BSB:** 312825  
+**Número de cuenta:** 0008655083  
+**Nombre de cuenta:** MICROSOFT

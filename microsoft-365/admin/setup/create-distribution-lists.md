@@ -23,14 +23,14 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Obtenga información sobre cómo crear grupos de distribución o listas en el Centro de administración de Microsoft 365 para que pueda enviar correos electrónicos a un grupo sin tener que escribir el nombre de cada destinatario.
-ms.openlocfilehash: 5c4781653a5f18b7a41dc20212771368132801cd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bd5e246caa8d1b56a33db21d70eb5cbdb7b5ed92
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914251"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535823"
 ---
-# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Crear grupos de distribución en el Centro de administración de Microsoft 365
+# <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Crear grupos de distribución en el centro Microsoft 365 administración
   
 Se usa cuando se desea enviar correo electrónico a un grupo de personas sin tener que escribir el nombre de cada destinatario individual, los grupos de distribución (listas de distribución) se organizan por un tema de discusión determinado (como "Marketing") o por usuarios que comparten un trabajo común que requiere que se comuniquen con frecuencia. También proporcionan una forma de reenviar automáticamente el correo electrónico a varias direcciones de correo electrónico.
 
@@ -70,6 +70,6 @@ Vaya al Centro de administración en <a href="https://go.microsoft.com/fwlink/p/
     
 6. Para agregar usuarios a la lista de distribución, vea [Agregar un usuario o contacto a un grupo de distribución.](../email/add-user-or-contact-to-distribution-list.md)
     
-Consulte cómo usar el grupo en Outlook 2016 y Outlook en la web en el tema Usar grupos de contactos (anteriormente listas de [distribución) en Outlook.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
+Consulte cómo usar el grupo en Outlook 2016 y Outlook en la web en Usar grupos de contactos (anteriormente listas de [distribución) en Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39). 
   
 Consulte Problemas [de grupo de distribución](/office365/troubleshoot/groups/distribution-list-issues) para obtener ayuda con problemas de listas de distribución. 

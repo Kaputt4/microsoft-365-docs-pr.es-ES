@@ -1,23 +1,24 @@
 ---
 title: Información de pago para islas Feroe
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
-description: Obtén información sobre dónde enviar el pago de la suscripción.
+description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0972d9912d7eb56c0fcb2e83a040a679a7b16eb4
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: a4d2db1ce27d6da9ba32baa2f646ea0872c2636f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273829"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535547"
 ---
 # <a name="payment-information-for-faroe-islands"></a>Información de pago para islas Feroe
 
@@ -32,4 +33,4 @@ Paga solo en EUR y haz referencia a los números de factura en la remesa de pago
 **IBAN:** GB31CITI18500812207591  
 **Código SORT:** 185008  
 **Número de cuenta:** 12207591  
-**Nombre de cuenta:** MICROSOFT  
+**Nombre de cuenta:** MICROSOFT

@@ -1,23 +1,24 @@
 ---
 title: Información de pago para México
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 37546e213631b43a6797c7c12f37cf0cad783cd9
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
-ms.translationtype: HT
+ms.openlocfilehash: 5300552fdd2b33986c96ad5f59e827e3e309ca47
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273301"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535427"
 ---
 # <a name="payment-information-by-deposit-or-electronic-transfer-only-for-mexico"></a>Información de pago por depósito o transferencia electrónica (solo para México)
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 09c391d6b02e1273f55070283a6e11454f677114
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 725e6226a56b3aae3670cde18969afdda1ec1940
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300006"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530843"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Administrar incidentes en Microsoft 365 Defender
 
@@ -45,12 +45,12 @@ Puede administrar incidentes de **incidentes & alertas > incidentes en** el inic
 
 Estas son las formas en que puede administrar sus incidentes:
 
-- Cambiar el nombre del incidente
-- Agregar etiquetas de incidentes.
-- Asignar el incidente a una cuenta de usuario
-- Resolverlos 
-- Establecer su clasificación y determinación
-- Agregar comentarios.
+- [Editar el nombre del incidente](#edit-the-incident-name)
+- [Agregar etiquetas de incidente](#add-incident-tags)
+- [Asignar el incidente a una cuenta de usuario](#assign-incidents)
+- [Resolverlos](#resolve-an-incident)
+- [Establecer su clasificación y determinación](#set-the-classification-and-determination)
+- [Agregar comentarios](#add-comments)
 
 Puede administrar incidentes desde el panel **Administrar incidentes** para un incidente. Por ejemplo:
 
@@ -61,7 +61,7 @@ Puede mostrar este panel desde el vínculo **Administrar incidentes** en:
 - Panel de propiedades de un incidente en la cola de incidentes.
 - **Página de** resumen de un incidente.
 
-En los casos en los que, al analizar las alertas de un  incidente a otro, también puede hacerlo desde la pestaña Alertas, creando así un incidente mayor o menor que incluya todas las alertas relevantes.
+En los casos en los que quiera mover alertas de  un incidente a otro, también puede hacerlo desde la pestaña Alertas, creando así un incidente más grande o más pequeño que incluya todas las alertas relevantes.
 
 ## <a name="edit-the-incident-name"></a>Editar el nombre del incidente
 
@@ -82,7 +82,7 @@ Al empezar a escribir, tiene la opción de seleccionar de una lista de etiquetas
 
 Si aún no se ha asignado un incidente, puede seleccionar **Asignar a** y especificar la cuenta de usuario. Al hacerlo, se asigna la propiedad del incidente y todas las alertas asociadas con él.
 
-## <a name="resolve-incident"></a>Resolver incidente
+## <a name="resolve-an-incident"></a>Resolver un incidente
 
 Si el incidente se ha corregido, seleccione **Resolver incidente** para mover la alternancia a la derecha. Tenga en cuenta que la resolución de un incidente también resuelve todas las alertas vinculadas y activas relacionadas con el incidente.
 
@@ -106,7 +106,7 @@ Para incidentes en el proceso, continúe con la [investigación](investigate-inc
 
 Para los incidentes resueltos, realice una [revisión posterior al incidente](first-incident-post.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general sobre incidentes](incidents-overview.md)
 - [Priorizar incidentes](incident-queue.md)

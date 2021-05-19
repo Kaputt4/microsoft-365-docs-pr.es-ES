@@ -1,23 +1,24 @@
 ---
 title: Información de pago para Ecuador
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
-description: Obtén información sobre dónde enviar el pago de la suscripción.
+description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 495206c84dbc427e98024355ca31742d8556d39e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: df2db6704d1cbeebc5d4a90b2e4df318a9c04e53
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273889"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535607"
 ---
 # <a name="payment-information-for-ecuador"></a>Información de pago para Ecuador
 
@@ -31,4 +32,4 @@ Pague solo en USD y haga referencia a los números de factura en su remesa de pa
 **Rama:** Dallas  
 **Código SWIFT:** BOFAUS3N  
 **Número de cuenta:** 4426587954  
-**Nombre de cuenta:** Microsoft  
+**Nombre de cuenta:** Microsoft

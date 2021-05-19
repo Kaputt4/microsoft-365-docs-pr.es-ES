@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Más información sobre cómo obtener ayuda de administración o soporte técnico en Microsoft 365 Empresa Premium.
-ms.openlocfilehash: 8db4f7675f96bac2157c9c0f93ab506c8a39e1bb
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
-ms.translationtype: HT
+description: Debe ser administrador de una suscripción empresarial para obtener ayuda de administrador o soporte técnico en línea o por teléfono en Microsoft 365 Empresa Premium.
+ms.openlocfilehash: e6308a9728731052d540cf3e872b6e153b64aae2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327191"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535715"
 ---
 # <a name="get-support"></a>Obtener soporte técnico
 
@@ -252,3 +252,12 @@ Las opciones de soporte asistido son solo para administradores de organizaciones
 También puede [buscar en los foros de la comunidad de Microsoft 365 para empresas](https://go.microsoft.com/fwlink/p/?LinkId=518605) para encontrar problemas conocidos y temas destacados, o publicar una pregunta nueva. Los foros de la comunidad están supervisados por agentes de soporte técnico de Microsoft cualificados que pueden ayudarle a solucionar el problema.
 
 ::: moniker-end
+
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Buscar documentos y formación](find-help-answers.md) (artículo)
+
+[Configuración rápida de empleados](employee-quick-setup.md) (artículo)
+
+[Información general sobre Microsoft 365 Empresa Premium configuración](setup-overview.md) (vídeo)

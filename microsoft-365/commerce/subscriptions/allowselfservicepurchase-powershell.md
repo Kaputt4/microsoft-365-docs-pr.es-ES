@@ -21,12 +21,12 @@ search.appverid:
 description: Obtenga información sobre cómo usar el cmdlet De PowerShell AllowSelfServicePurchase para activar o desactivar la compra de autoservicio.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 03/18/2021
-ms.openlocfilehash: 09161f69e72babe8270b339243d73444b93d9959
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 012874a8794e006d97c4f74014e92e1f7f3c2709
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333379"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536135"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Usar AllowSelfServicePurchase para el módulo de PowerShell de MSCommerce
 
@@ -42,13 +42,14 @@ Puede usar el módulo **MSCommerce** PowerShell para:
 
 Para usar el **módulo de PowerShell de MSCommerce,** necesita:
 
-- Un dispositivo Windows 10
+- Un Windows 10 móvil
+- PowerShell 5 o inferior. Actualmente, PowerShell 6.x/7.x no es compatible con este módulo.
 - Permiso de administrador para el dispositivo
 - Rol de administrador global o de facturación para el inquilino
 
 ## <a name="install-the-mscommerce-powershell-module"></a>Instalar el módulo de PowerShell de MSCommerce
 
-El módulo **MSCommerce** PowerShell se instala una vez en el dispositivo Windows 10 y, a continuación, se importa en cada sesión de PowerShell que inicie. Descargue el **módulo MSCommerce** PowerShell de la [Galería de PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery).
+El módulo **de PowerShell de MSCommerce** se instala en el dispositivo Windows 10 una vez y, a continuación, se importa en cada sesión de PowerShell que inicie. Descargue el **módulo MSCommerce** PowerShell de la [Galería de PowerShell](https://aka.ms/allowselfservicepurchase-powershell-gallery).
 
 Para instalar el **módulo de PowerShell de MSCommerce** con **PowerShellGet,** ejecute el siguiente comando:
 
@@ -58,13 +59,13 @@ Install-Module -Name MSCommerce
 
 ## <a name="import-mscommerce-into-the-powershell-session"></a>Importar MSCommerce a la sesión de PowerShell
 
-Después de instalar el módulo en el dispositivo Windows 10, luego lo importas en cada sesión de PowerShell que inicies. Para importarlo en una sesión de PowerShell, ejecute el siguiente comando:
+Después de instalar el módulo en el dispositivo Windows 10, luego lo importa en cada sesión de PowerShell que inicie. Para importarlo en una sesión de PowerShell, ejecute el siguiente comando:
 
 ```powershell
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a>Conectarse a MSCommerce con sus credenciales
+## <a name="connect-to-mscommerce-with-your-credentials"></a>Conectar a MSCommerce con sus credenciales
 
 Para conectarse al módulo de PowerShell con sus credenciales, ejecute el siguiente comando.
 
@@ -72,7 +73,7 @@ Para conectarse al módulo de PowerShell con sus credenciales, ejecute el siguie
 Connect-MSCommerce
 ```
 
-Este comando conecta la sesión actual de PowerShell a un inquilino de Azure Active Directory. El comando le pide un nombre de usuario y una contraseña para el espacio empresarial al que desea conectarse. Si la autenticación multifactor está habilitada para sus credenciales, use la opción interactiva para iniciar sesión.
+Este comando conecta la sesión actual de PowerShell a un Azure Active Directory inquilino. El comando le pide un nombre de usuario y una contraseña para el espacio empresarial al que desea conectarse. Si la autenticación multifactor está habilitada para sus credenciales, use la opción interactiva para iniciar sesión.
 
 ## <a name="view-details-for-allowselfservicepurchase"></a>Ver detalles de AllowSelfServicePurchase
 
@@ -99,10 +100,10 @@ En la tabla siguiente se enumeran los productos disponibles y **su ProductId**.
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (independiente) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
-| Plan de proyecto 1 | CFQ7TTC0KXND |
-| Plan de proyecto 3 | CFQ7TTC0KXNC |
-| Plan 1 de Visio | CFQ7TTC0KXN9 |
-| Plan 2 de Visio | CFQ7TTC0KXN8 |
+| Project Plan 1 | CFQ7TTC0KXND |
+| Project Plan 3 | CFQ7TTC0KXNC |
+| Visio Plan 1 | CFQ7TTC0KXN9 |
+| Visio Plan 2 | CFQ7TTC0KXN8 |
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>Ver o establecer el estado de AllowSelfServicePurchase
 
@@ -128,7 +129,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>Script de ejemplo para deshabilitar AllowSelfServicePurchase
 
-En el siguiente ejemplo se explica cómo importar el módulo **MSCommerce,** iniciar sesión con su cuenta, obtener **ProductId** para Power Automate y, a continuación, deshabilitar **AllowSelfServicePurchase** para ese producto.
+En el siguiente ejemplo se explica cómo importar el módulo **MSCommerce,** iniciar sesión con su cuenta, obtener **el ProductId** para Power Automate y, a continuación, deshabilitar **AllowSelfServicePurchase** para ese producto.
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -161,3 +162,9 @@ To remove the **MSCommerce** PowerShell module from your computer, run the follo
 ```powershell
 Uninstall-Module -Name MSCommerce
 ```-->
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Administrar compras de autoservicio (administrador)](manage-self-service-purchases-admins.md) (artículo)
+
+[Preguntas más frecuentes sobre la compra de](self-service-purchase-faq.yml) autoservicio (artículo)

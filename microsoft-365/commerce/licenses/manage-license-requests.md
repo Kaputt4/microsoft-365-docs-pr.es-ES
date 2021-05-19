@@ -20,17 +20,17 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo revisar y aprobar o denegar solicitudes de licencia de los usuarios para su suscripción Microsoft 365 para empresas.
 ms.date: 08/07/2020
-ms.openlocfilehash: 06ee210b39c19c1f2c8a2041c463568e55001b6e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 6cbfd81f4f6deba642729f1fef0b826b07a99f56
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331555"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535679"
 ---
 # <a name="manage-license-requests"></a>Administrar solicitudes de licencia
 
 > [!NOTE]
-> La información de este artículo solo se aplica a los productos comprados por autoservicio. Para obtener más información, consulta [Preguntas más frecuentes sobre la compra de autoservicio.](../subscriptions/self-service-purchase-faq.md)
+> La información de este artículo solo se aplica a los productos comprados por autoservicio. Para obtener más información, consulta [Preguntas más frecuentes sobre la compra de autoservicio.](../subscriptions/self-service-purchase-faq.yml)
 
 Si deshabilita las compras de autoservicio en su organización, puede usar solicitudes de licencias para administrar el proceso de solicitud de licencia para los usuarios. Cuando un usuario intenta realizar una compra de autoservicio para un producto que ha bloqueado, puede enviar una solicitud de licencia a usted, el administrador. Cuando realicen una solicitud, pueden agregar los nombres de otros usuarios que también necesitan licencias para el producto.
 

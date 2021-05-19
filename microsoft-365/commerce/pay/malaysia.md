@@ -1,23 +1,24 @@
 ---
 title: Información de pago para Malasia
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
-description: Obtén información sobre dónde enviar el pago de la suscripción.
+description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ef5ff36ae4ce1d43e221af3a5c42eb6a3ebd64e1
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9724f44e02f427b2cc6642ba657748eef6d9a986
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273337"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535535"
 ---
 # <a name="payment-information-for-malaysia"></a>Información de pago para Malasia
 
@@ -30,4 +31,4 @@ Pague solo en MYR y haga referencia a los números de factura en su remesa de pa
 **Banco:** Citibank, Singapur  
 **Código SWIFT:** CITISGSG  
 **Número de cuenta:** 0-817543-138  
-**Nombre de cuenta:** MICROSOFT REGIONAL SALES CORP  
+**Nombre de cuenta:** MICROSOFT REGIONAL SALES CORP
