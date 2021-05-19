@@ -34,9 +34,9 @@ Para pagar mediante depósito o transferencia electrónica:
 **CLABE** 002180002337160225  
 **Número de cuenta:** 0233716022  
 **Nombre de cuenta:** Microsoft Payments Inc.  
-**Moneda:** pesos colombianos
+**Moneda:** pesos mexicanos
 
 ## <a name="important-information"></a>Información importante
 
-1. El pago por depósito o transferencia electrónica solo está disponible para cantidades superiores a 3500 MXN.
+1. El pago por depósito o transferencia electrónica solo está disponible para cantidades superiores a 3,500 MXN.
 2. El pago debe realizarse en un plazo de 30 días; en caso contrario, el pedido se cancelará automáticamente.
