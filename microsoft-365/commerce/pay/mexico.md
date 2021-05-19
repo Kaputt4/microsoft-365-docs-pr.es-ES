@@ -1,42 +1,43 @@
 ---
 title: Información de pago para México
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 37546e213631b43a6797c7c12f37cf0cad783cd9
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
-ms.translationtype: HT
+ms.openlocfilehash: 5300552fdd2b33986c96ad5f59e827e3e309ca47
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273301"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535427"
 ---
-# <a name="payment-information-by-deposit-or-electronic-transfer-only-for-mexico"></a><span data-ttu-id="1bbdc-103">Información de pago por depósito o transferencia electrónica (solo para México)</span><span class="sxs-lookup"><span data-stu-id="1bbdc-103">Payment information by deposit or electronic transfer (only for Mexico)</span></span>
+# <a name="payment-information-by-deposit-or-electronic-transfer-only-for-mexico"></a><span data-ttu-id="13283-103">Información de pago por depósito o transferencia electrónica (solo para México)</span><span class="sxs-lookup"><span data-stu-id="13283-103">Payment information by deposit or electronic transfer (only for Mexico)</span></span>
 
-<span data-ttu-id="1bbdc-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="1bbdc-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="13283-104">[Buscar otro país o región](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="13283-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="1bbdc-105">Para pagar mediante depósito o transferencia electrónica:</span><span class="sxs-lookup"><span data-stu-id="1bbdc-105">To pay by deposit or electronic transfer:</span></span>
+<span data-ttu-id="13283-105">Para pagar mediante depósito o transferencia electrónica:</span><span class="sxs-lookup"><span data-stu-id="13283-105">To pay by deposit or electronic transfer:</span></span>
 
-1. <span data-ttu-id="1bbdc-106">Seleccione el método de pago "Factura (pagar por cheque o transferencia bancaria)".</span><span class="sxs-lookup"><span data-stu-id="1bbdc-106">Please select at checkout the payment method "Invoice (pay by check or wire transfer)".</span></span> <span data-ttu-id="1bbdc-107">En las próximas 24 a 72 horas recibirá la factura del producto en el correo electrónico que dio al registrarse como contacto.</span><span class="sxs-lookup"><span data-stu-id="1bbdc-107">Within the next 24 to 72 hours you will receive the invoice of the product in the email registered as contact.</span></span> <span data-ttu-id="1bbdc-108">La factura incluirá las instrucciones para completar el pago.</span><span class="sxs-lookup"><span data-stu-id="1bbdc-108">The invoice will include the instructions to complete the payment.</span></span>
-2. <span data-ttu-id="1bbdc-109">Envíe el pago a la siguiente cuenta bancaria (para que el pago se procese correctamente, indique el nombre del comprador y el número de factura correspondiente):</span><span class="sxs-lookup"><span data-stu-id="1bbdc-109">Pay to the following bank account (in order for your payment to be processed correctly, please indicate the name of purchaser and the corresponding invoice number):</span></span>  
+1. <span data-ttu-id="13283-106">Seleccione el método de pago "Factura (pagar por cheque o transferencia bancaria)".</span><span class="sxs-lookup"><span data-stu-id="13283-106">Please select at checkout the payment method "Invoice (pay by check or wire transfer)".</span></span> <span data-ttu-id="13283-107">En las próximas 24 a 72 horas recibirá la factura del producto en el correo electrónico que dio al registrarse como contacto.</span><span class="sxs-lookup"><span data-stu-id="13283-107">Within the next 24 to 72 hours you will receive the invoice of the product in the email registered as contact.</span></span> <span data-ttu-id="13283-108">La factura incluirá las instrucciones para completar el pago.</span><span class="sxs-lookup"><span data-stu-id="13283-108">The invoice will include the instructions to complete the payment.</span></span>
+2. <span data-ttu-id="13283-109">Envíe el pago a la siguiente cuenta bancaria (para que el pago se procese correctamente, indique el nombre del comprador y el número de factura correspondiente):</span><span class="sxs-lookup"><span data-stu-id="13283-109">Pay to the following bank account (in order for your payment to be processed correctly, please indicate the name of purchaser and the corresponding invoice number):</span></span>  
 
-<span data-ttu-id="1bbdc-110">**Banco:** Citibank/Banamex</span><span class="sxs-lookup"><span data-stu-id="1bbdc-110">**Bank:** Citibank/Banamex</span></span>  
-<span data-ttu-id="1bbdc-111">**Sucursal:** Act. Roberto Medellín 800, P.B.</span><span class="sxs-lookup"><span data-stu-id="1bbdc-111">**Branch:** Act. Roberto Medellin 800, P.B.</span></span> <span data-ttu-id="1bbdc-112">Sur, Col. Santa Fe, Ciudad de México C.P.</span><span class="sxs-lookup"><span data-stu-id="1bbdc-112">Sur, Col. Santa Fe, Mexico City C.P.</span></span> <span data-ttu-id="1bbdc-113">01210, México</span><span class="sxs-lookup"><span data-stu-id="1bbdc-113">01210, Mexico</span></span>  
-<span data-ttu-id="1bbdc-114">**Código SWIFT:** BNMXMM</span><span class="sxs-lookup"><span data-stu-id="1bbdc-114">**SWIFT Code:** BNMXMM</span></span>  
-<span data-ttu-id="1bbdc-115">**CLABE** 002180002337160225</span><span class="sxs-lookup"><span data-stu-id="1bbdc-115">**CLABE** 002180002337160225</span></span>  
-<span data-ttu-id="1bbdc-116">**Número de cuenta:** 0233716022</span><span class="sxs-lookup"><span data-stu-id="1bbdc-116">**Account Number:** 0233716022</span></span>  
-<span data-ttu-id="1bbdc-117">**Nombre de cuenta:** Microsoft Payments Inc.</span><span class="sxs-lookup"><span data-stu-id="1bbdc-117">**Account Name:** Microsoft Payments Inc.</span></span>  
-<span data-ttu-id="1bbdc-118">**Moneda:** pesos mexicanos</span><span class="sxs-lookup"><span data-stu-id="1bbdc-118">**Currency:** Mexican pesos</span></span>
+<span data-ttu-id="13283-110">**Banco:** Citibank/Banamex</span><span class="sxs-lookup"><span data-stu-id="13283-110">**Bank:** Citibank/Banamex</span></span>  
+<span data-ttu-id="13283-111">**Sucursal:** Act. Roberto Medellín 800, P.B.</span><span class="sxs-lookup"><span data-stu-id="13283-111">**Branch:** Act. Roberto Medellin 800, P.B.</span></span> <span data-ttu-id="13283-112">Sur, Col. Santa Fe, Ciudad de México C.P.</span><span class="sxs-lookup"><span data-stu-id="13283-112">Sur, Col. Santa Fe, Mexico City C.P.</span></span> <span data-ttu-id="13283-113">01210, México</span><span class="sxs-lookup"><span data-stu-id="13283-113">01210, Mexico</span></span>  
+<span data-ttu-id="13283-114">**Código SWIFT:** BNMXMM</span><span class="sxs-lookup"><span data-stu-id="13283-114">**SWIFT Code:** BNMXMM</span></span>  
+<span data-ttu-id="13283-115">**CLABE** 002180002337160225</span><span class="sxs-lookup"><span data-stu-id="13283-115">**CLABE** 002180002337160225</span></span>  
+<span data-ttu-id="13283-116">**Número de cuenta:** 0233716022</span><span class="sxs-lookup"><span data-stu-id="13283-116">**Account Number:** 0233716022</span></span>  
+<span data-ttu-id="13283-117">**Nombre de cuenta:** Microsoft Payments Inc.</span><span class="sxs-lookup"><span data-stu-id="13283-117">**Account Name:** Microsoft Payments Inc.</span></span>  
+<span data-ttu-id="13283-118">**Moneda:** pesos mexicanos</span><span class="sxs-lookup"><span data-stu-id="13283-118">**Currency:** Mexican pesos</span></span>
 
-## <a name="important-information"></a><span data-ttu-id="1bbdc-119">Información importante</span><span class="sxs-lookup"><span data-stu-id="1bbdc-119">Important Information</span></span>
+## <a name="important-information"></a><span data-ttu-id="13283-119">Información importante</span><span class="sxs-lookup"><span data-stu-id="13283-119">Important Information</span></span>
 
-1. <span data-ttu-id="1bbdc-120">El pago por depósito o transferencia electrónica solo está disponible para cantidades superiores a 3,500 MXN.</span><span class="sxs-lookup"><span data-stu-id="1bbdc-120">Payment by deposit or electronic transfer is only available for amounts greater than MXN $3,500.</span></span>
-2. <span data-ttu-id="1bbdc-121">El pago debe realizarse en un plazo de 30 días; en caso contrario, el pedido se cancelará automáticamente.</span><span class="sxs-lookup"><span data-stu-id="1bbdc-121">Payment must be made within 30 days; otherwise the order will be automatically cancelled.</span></span>
+1. <span data-ttu-id="13283-120">El pago por depósito o transferencia electrónica solo está disponible para cantidades superiores a 3,500 MXN.</span><span class="sxs-lookup"><span data-stu-id="13283-120">Payment by deposit or electronic transfer is only available for amounts greater than MXN $3,500.</span></span>
+2. <span data-ttu-id="13283-121">El pago debe realizarse en un plazo de 30 días; en caso contrario, el pedido se cancelará automáticamente.</span><span class="sxs-lookup"><span data-stu-id="13283-121">Payment must be made within 30 days; otherwise the order will be automatically cancelled.</span></span>
