@@ -88,55 +88,55 @@
           items:
             - name: Información general
               href: incidents-overview.md
-            - name: Priorizar incidentes
+            - name: Priorizar
               href: incident-queue.md
-            - name: Administrar incidentes
+            - name: Administrar
               href: manage-incidents.md
-            - name: Respuesta a incidentes
+            - name: Investigación
               items:
-                - name: Investigar incidentes
+                - name: Información general
                   href: investigate-incidents.md
-                - name: Investigar alertas
+                - name: Alertas
                   href: investigate-alerts.md
-                - name: Investigar usuarios
+                - name: Usuarios
                   href: investigate-users.md
-                - name: Playbooks de respuesta a incidentes
-                  href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
-                - name: Responder a su primer incidente
+            - name: Responder a su primer incidente
+              items:
+                - name: Introducción
+                  href: first-incident-overview.md
+                - name: Preparación
+                  href: first-incident-prepare.md
+                - name: Paso 1. Triage and analyze
+                  href: first-incident-analyze.md
+                - name: "Paso\_2. Corrección"
+                  href: first-incident-remediate.md
+                - name: Paso 3. Revisar
+                  href: first-incident-post.md
+                - name: Ejemplos de incidentes adicionales
                   items:
-                    - name: Introducción
-                      href: first-incident-overview.md
-                    - name: Preparación
-                      href: first-incident-prepare.md
-                    - name: Paso 1. Triage and analyze
-                      href: first-incident-analyze.md
-                    - name: "Paso\_2. Corrección"
-                      href: first-incident-remediate.md
-                    - name: Paso 3. Revisar
-                      href: first-incident-post.md
-                    - name: Ejemplos de incidentes adicionales
-                      items:
-                        - name: Correo de suplantación de identidad
-                          href: first-incident-path-phishing.md
-                        - name: Identidad
-                          href: first-incident-path-identity.md
-            - name: Obtener tus notificaciones de correo electrónico
+                    - name: Correo de suplantación de identidad
+                      href: first-incident-path-phishing.md
+                    - name: Identidad
+                      href: first-incident-path-identity.md
+            - name: Playbooks de respuesta a incidentes
+              href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
+            - name: Notificaciones de correo electrónico
               href: get-incident-notifications.md
         - name: Investigación y respuesta automatizada
           items:
-            - name: Introducción a la investigación y respuesta automatizada
+            - name: Información general
               href: m365d-autoir.md
-            - name: Configurar las funciones de investigación y respuesta automatizada
+            - name: Configurar capacidades
               href: m365d-configure-auto-investigation-response.md
             - name: Acciones de corrección
               href: m365d-remediation-actions.md
-            - name: Visite el Centro de actividades
+            - name: Usar el Centro de acciones
               href: m365d-action-center.md
             - name: Ver y administrar acciones de corrección
               href: m365d-autoir-actions.md
-            - name: Ver detalles y resultados de las investigaciones automatizadas
+            - name: Ver detalles y resultados
               href: m365d-autoir-results.md
-            - name: Dirección de falsos positivos/negativos
+            - name: Dirección de falsos positivos y negativos
               href: m365d-autoir-report-false-positives-negatives.md
         - name: Búsqueda avanzada
           items:
