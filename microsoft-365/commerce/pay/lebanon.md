@@ -1,23 +1,24 @@
 ---
 title: Información de pago para Líbano
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
-description: Obtén información sobre dónde enviar el pago de la suscripción.
+description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c9901a9587e3f1e94dbd1fa4b7d2b91b3bf3fca1
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 3be3aa316038d0d017fbeaaa34265d04924a10af
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273431"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536471"
 ---
 # <a name="payment-information-for-lebanon"></a>Información de pago para Líbano
 
@@ -31,4 +32,4 @@ Pague solo en USD y haga referencia a los números de factura en su remesa de pa
 **Código SWIFT:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
 **Número de cuenta:** 12510049  
-**Nombre de cuenta:** MICROSOFT 
+**Nombre de cuenta:** MICROSOFT

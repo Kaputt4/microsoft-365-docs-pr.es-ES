@@ -1,23 +1,24 @@
 ---
 title: Información de pago para Kuwait
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
-description: Obtén información sobre dónde enviar el pago de la suscripción.
+description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: dd70fc30e9696c26b03f192ffe53e86286371b16
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: d5e9600864081b98a992be2deba73245149f2de8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273469"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536507"
 ---
 # <a name="payment-information-for-kuwait"></a>Información de pago para Kuwait
 
@@ -31,4 +32,4 @@ Pague solo en USD y haga referencia a los números de factura en la remesa de fa
 **Código SWIFT:** CITIGB2L  
 **IBAN:** GB95CITI18500812510049  
 **Número de cuenta:** 12510049  
-**Nombre de cuenta:** MICROSOFT  
+**Nombre de cuenta:** MICROSOFT

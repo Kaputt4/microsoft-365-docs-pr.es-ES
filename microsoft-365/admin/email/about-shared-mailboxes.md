@@ -22,18 +22,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Los buzones compartidos se usan cuando varias personas necesitan acceder al mismo buzón. Obtenga información sobre lo que debe saber antes de crear un buzón compartido.
-ms.openlocfilehash: 83e779d59a8e763b3d0c0482966e75604d5f1574
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 156ba100cb2c51d1e54a2ee82c45db20845931f9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903219"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535859"
 ---
 # <a name="about-shared-mailboxes"></a>Acerca de los buzones compartidos
 
 Los buzones compartidos se usan cuando varios usuarios necesitan tener acceso al mismo buzón, como la dirección de correo electrónico del soporte técnico o información de la empresa, el escritorio de recepción u otra función que puedan compartir varios usuarios.
 
 Los usuarios con permisos para el buzón del grupo pueden enviar como o enviar en nombre de la dirección de correo electrónico del buzón si el administrador le ha concedido permisos de usuario para hacerlo. Esto es especialmente útil para los buzones de ayuda y soporte técnico, ya que los usuarios pueden enviar mensajes de correo electrónico desde "Soporte técnico de Contoso" o "Escritorio de recepción del edificio A".
+
+## <a name="before-you-begin"></a>Antes de empezar
 
 Antes de [crear un buzón compartido](create-a-shared-mailbox.md), estas son algunas cosas que debe saber:
 
@@ -65,12 +67,12 @@ Antes de [crear un buzón compartido](create-a-shared-mailbox.md), estas son alg
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Crear un buzón compartido](create-a-shared-mailbox.md)
+[Crear un buzón compartido](create-a-shared-mailbox.md) (artículo)
 
-[Configurar un buzón compartido](configure-a-shared-mailbox.md)
+[Configurar un buzón compartido](configure-a-shared-mailbox.md) (artículo)
 
-[Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md)
+[Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md) (artículo)
 
-[Quitar la licencia de un buzón compartido](remove-license-from-shared-mailbox.md)
+[Quitar una licencia de un buzón compartido](remove-license-from-shared-mailbox.md) (artículo)
 
-[Resolver problemas con los buzones compartidos](resolve-issues-with-shared-mailboxes.md)
+[Resolver problemas con buzones compartidos](resolve-issues-with-shared-mailboxes.md) (artículo)

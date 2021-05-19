@@ -14,19 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
-description: Obtenga información sobre qué opciones de pago están disponibles para pagar por su suscripción a Microsoft 365 para empresas.
+description: Use una tarjeta de crédito o débito o una cuenta bancaria para pagar la suscripción de Microsoft 365 para empresas. O bien, en algunos casos puede pagar mediante factura.
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce_billing
 ms.date: 05/04/2021
-ms.openlocfilehash: 282e8106e75a94b3c9693a2aba9bfa2edf72f6ed
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: eb1e8ed9e932b09a82dc8529f933a1926868319d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331975"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535703"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Cómo pagar la suscripción
 

@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Cambie las suscripciones manualmente comprando una nueva suscripción y asegurándose de que ambas suscripciones estén enumeradas y activas.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 4935301c6d2a530f34d628f946032b7007e5c907
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: f5a44b7a3c01883ed42ca4ed203b63ccf77f9b72
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345183"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536111"
 ---
 # <a name="change-plans-manually"></a>Cambiar planes manualmente
 
@@ -94,7 +94,7 @@ Las licencias de la suscripción actual se quitarán más adelante; solo pagará
 
 2. Seleccione los círculos junto a los nombres de los usuarios para los que desea reemplazar las licencias existentes.
 
-3. En la parte superior, seleccione **Más opciones** (**...**) y, a continuación, elija Administrar licencias **de productos**.
+3. En la parte superior, seleccione los tres puntos (más acciones) y, a continuación, elija **Administrar licencias de productos**.
 
 4. Seleccione **Reemplazar las asignaciones de licencias de producto existentes** \> **Siguiente**.
 

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga estos pasos para eliminar la cuenta de usuario de un antiguo empleado.
-ms.openlocfilehash: 0afa9b112919d2668d7553ac5bcf08e664bc1749
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 5ca428079091c4af44ef1efa9be3d7340e254995
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244292"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535943"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Paso 7: Eliminar la cuenta de usuario de un antiguo empleado
 
@@ -43,7 +43,13 @@ Después de haber guardado y accedido a todos los datos de usuario del antiguo e
 3. En el nombre del usuario, seleccione **Eliminar usuario**. Elija las opciones que desee para este usuario y, a continuación, **seleccione Eliminar usuario**. Si ya ha concedido a otro usuario acceso al correo electrónico y al OneDrive, no tiene que volver a hacerlo aquí.
 
 Al eliminar un usuario, la cuenta se vuelve inactiva durante aproximadamente 30 días. Tiene tiempo hasta ese momento para restaurar la cuenta antes de que se elimine de forma permanente.
-  
+
+## <a name="watch-delete-a-former-employees-user-account"></a>Watch: Delete a former employee's user account
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
+
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
+
 ## <a name="does-your-organization-use-active-directory"></a>¿Su organización utiliza Active Directory?
 
 Si su organización sincroniza las cuentas de usuario Microsoft 365 desde un entorno local de Active Directory, debe eliminar y restaurar esas cuentas de usuario en el servicio de Active Directory local. No puede suprimirlas ni restaurarlas en Office 365.
@@ -81,3 +87,5 @@ Las operaciones anteriores se pueden realizar en tres lugares:
 ## <a name="related-articles"></a>Artículos relacionados
 
 [Restaurar un usuario](restore-user.md)
+
+[Restablecer contraseñas](reset-passwords.md)

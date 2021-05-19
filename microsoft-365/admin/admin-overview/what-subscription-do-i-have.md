@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Aprenda a comprobar qué suscripciones tiene su organización yendo a la página Sus productos.
 ms.date: 01/21/2021
-ms.openlocfilehash: e1f7ebecafa5edff1ccc3d6eb4e4dc143054996a
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: c33ba799880e6c687a08c2d49b17cbae8e80552c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332671"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535895"
 ---
 # <a name="what-subscription-do-i-have"></a>¿Qué suscripción tengo?
 
@@ -42,3 +42,9 @@ Si eres administrador, puedes comprobar qué suscripciones tiene tu organizació
 ## <a name="related-content"></a>Contenido relacionado
   
 [Suscripciones y facturación](../../commerce/index.yml) (vínculos)
+
+[Ver la factura o factura](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (artículo)
+
+[Pagar por la suscripción](../../commerce/billing-and-payments/pay-for-your-subscription.md) (artículo)
+
+[Cambiar las direcciones de facturación](../../commerce/billing-and-payments/change-your-billing-addresses.md) (artículo)

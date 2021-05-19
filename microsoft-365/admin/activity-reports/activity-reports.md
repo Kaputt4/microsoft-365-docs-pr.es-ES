@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: Obtenga un informe periódico de cómo las personas de su organización están utilizando los servicios de Microsoft 365. Panel de información general del uso le permite profundizar en cada gráfico para obtener más información.
-ms.openlocfilehash: 3133e468ef99114b1c89e16fbd0f4b5170af30d0
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: Obtenga un informe periódico de cómo usan los usuarios los servicios de Microsoft 365 y explore en profundidad cada gráfico para obtener más información.
+ms.openlocfilehash: 917a44f4b6f7458c50ac193b95c7751c66c9e7cd
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759815"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530975"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Informes de Microsoft 365 en el centro de administración
 
@@ -63,7 +63,7 @@ Vea este vídeo para obtener información general sobre cómo puede usar los inf
 
 Usuarios que tengan los permisos siguientes:
   
-- Administradores globales: le recomendamos que solo unos pocos usuarios de su empresa tengan este rol. Esto reduce los posibles riesgos para su empresa.
+- Administradores globales: le recomendamos que solo unos pocos usuarios de su empresa tengan este rol, pues reduce el riesgo de su empresa.
     
 - Administradores de Exchange
     
@@ -199,6 +199,10 @@ Siempre que cierre una cuenta de usuario, Microsoft eliminará los datos de uso 
   
 Sin embargo, si selecciona un día concreto (ver número 3), hasta 28 días después de la fecha actual, el informe mostrará el uso que el usuario hace a ese día en la tabla detalles del usuario (ver número 2).
   
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Informes del centro de cumplimiento de seguridad &amp;](../../compliance/reports-in-security-and-compliance.md)
+[Informes del Centro de seguridad &amp; cumplimiento](../../compliance/reports-in-security-and-compliance.md) (artículo)
+
+[Análisis de uso de Microsoft 365](../usage-analytics/usage-analytics.md) (artículo)
+
+[Personalizar los informes de análisis de uso de Microsoft 365](../usage-analytics/customize-reports.md) (artículo)

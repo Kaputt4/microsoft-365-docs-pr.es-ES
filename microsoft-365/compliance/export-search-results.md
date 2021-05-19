@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exporte los resultados de la búsqueda de una búsqueda de contenido en el Microsoft 365 de cumplimiento a un equipo local. Los resultados del correo electrónico se exportan como archivos PST. El contenido SharePoint y OneDrive para la Empresa se exportan como documentos Office nativos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5e900d44e59c2c37263c1162a7e631b1635cb06
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 8ec09706fecbe703fa2ab38cad5f8f8304484f44
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311980"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536063"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -37,7 +37,7 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
   
 ## <a name="before-you-export-search-results"></a>Antes de exportar resultados de búsqueda
 
-- Para exportar resultados de búsqueda, debe tener asignado el rol de administración Exportar en el Centro de & cumplimiento. Este rol se asigna al grupo de roles de administrador de exhibición de documentos electrónicos integrado. No se asigna de forma predeterminada al grupo de roles de administración de la organización. Para obtener más información, consulte [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
+- Para exportar resultados de búsqueda, debe tener asignado el rol de administración Exportar en el Centro de & cumplimiento. Este rol se asigna al grupo de roles de administrador de exhibición de documentos electrónicos integrado. No se asigna de forma predeterminada al grupo de roles de administración de la organización. Para más información, consulte [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md).
 
 - El equipo que use para exportar los resultados de búsqueda debe cumplir los siguientes requisitos del sistema:
   
@@ -122,7 +122,7 @@ El primer paso es preparar los resultados de búsqueda para la exportación. Al 
   
 5. Configure las siguientes opciones adicionales:
 
-   ![Opciones de Exchange](../media/OtherExportOptions.png)
+   ![Configurar otras opciones de exportación](../media/OtherExportOptions.png)
 
    1. Active la **casilla Habilitar desduplicación para Exchange contenido para** excluir mensajes duplicados.
   

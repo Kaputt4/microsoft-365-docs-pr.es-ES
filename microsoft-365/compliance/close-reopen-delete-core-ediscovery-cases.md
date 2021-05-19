@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este artículo se describe cómo administrar los casos principales de exhibición de documentos electrónicos. Esto incluye cerrar un caso, volver a abrir un caso cerrado y eliminar un caso.
-ms.openlocfilehash: 251ca932954071cf949c45343130f122464dcf01
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 8a54d5c8f93d36351538bc235a6dbeaaa602c3e9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52310901"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532451"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Cerrar, volver a abrir y eliminar un caso de exhibición de documentos electrónicos principal
 
@@ -82,7 +82,7 @@ Al volver a abrir un caso, las retenciones de exhibición de documentos electró
 
     Una vez completado el proceso, el estado del caso cambia a **Activo** en la **página eDiscovery** principal.
 
-7. (Opcional) Para activar las retenciones asociadas con  el caso reabierto, vaya a la  pestaña Retenciones, seleccione una retención y, a continuación, active la casilla en Estado en la página de control desplegable de retención.
+6. (Opcional) Para activar las retenciones asociadas con  el caso reabierto, vaya a la  pestaña Retenciones, seleccione una retención y, a continuación, active la casilla en Estado en la página de control desplegable de retención.
   
 ## <a name="delete-a-case"></a>Eliminar un caso
 
@@ -108,6 +108,6 @@ Para eliminar un caso:
 
 3. En la página principal del caso, en **Estado**, haga clic **en Eliminar caso**.
 
-      ![Volver a abrir un caso cerrado](../media/eDiscoveryCaseHomePageDelete.png)
+      ![Eliminar un caso](../media/eDiscoveryCaseHomePageDelete.png)
 
 Si el caso que intenta eliminar aún contiene retenciones de exhibición de documentos electrónicos, recibirá un mensaje de error. Tendrás que eliminar todas las retenciones asociadas con el caso e intentar de nuevo eliminar el caso.

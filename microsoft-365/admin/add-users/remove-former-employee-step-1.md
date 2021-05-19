@@ -24,16 +24,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Bloquear el acceso a los servicios Microsoft 365 un antiguo empleado.
-ms.openlocfilehash: 60f4cf6b5c9a0b5dc2023b3ef7b6460685142d07
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 8eb41c3b449e63284371aaf168262307a4c21941
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244301"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535955"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Paso 1: impedir que un antiguo empleado inicia sesión y bloquee el acceso a Microsoft 365 servicios
 
 Si necesita impedir inmediatamente el acceso de inicio de sesión de un usuario, debe restablecer su contraseña. En este paso, fuerza la salida del usuario de Microsoft 365.
+
+> [!NOTE]
+> Debe ser un administrador global para iniciar la sesión.
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 2. Seleccione el cuadro situado junto al nombre del usuario y, a continuación, seleccione **Restablecer contraseña.**

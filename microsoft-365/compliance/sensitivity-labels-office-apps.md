@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Información para que los administradores de TI administren las etiquetas de confidencialidad en las aplicaciones de Office para escritorio, móvil y web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cb385ec5589af115ce1a0d323e3660def42179b9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: f280cae2364a3ad76a3a3ff91ce382fdf69eab2b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345769"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532055"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Administrar etiquetas de confidencialidad en las aplicaciones de Office
 
@@ -170,7 +170,7 @@ Cuando los usuarios etiquetan inicialmente un documento o correo electrónico, p
 
 - Un usuario aplica la etiqueta **Confidencial/todos los empleados** a un documento y esta etiqueta está configurada para aplicar la configuración de cifrado a todos los usuarios de la organización. A continuación, este usuario configura manualmente los ajustes del IRM para restringir el acceso a un usuario ajeno a su organización. El resultado final es un documento etiquetado como **Confidencial/todos los empleados** y encriptado, pero los usuarios de su organización no pueden abrirlo como se esperaba.
 
-- Un usuario aplica la etiqueta **Confidencial/sólo para destinatarios** a un correo electrónico y este correo está configurado para aplicar la configuración de cifrado de **No reenviar**. En la aplicación de Outlook, este usuario configura manualmente la configuración de IRM para que el correo electrónico no esté restringido. El resultado final es que el correo electrónico puede ser reenviado por los destinatarios, a pesar de tener la etiqueta de **Confidencial/sólo para destinatarios**.
+- Un usuario aplica la etiqueta **Confidencial/sólo para destinatarios** a un correo electrónico y este correo está configurado para aplicar la configuración de cifrado de **No reenviar**. En la aplicación de Outlook, este usuario selecciona manualmente la configuración de IRM para Solo cifrar. El resultado final es que aunque el correo siga cifrado, puede ser reenviado por los destinatarios, a pesar de tener la etiqueta de **Confidencial/Solo para destinatarios**.
     
     Como excepción, en el caso de Outlook en la Web, las opciones del menú **Cifrar** no están disponibles para que el usuario las seleccione cuando la etiqueta seleccionada actualmente aplica el cifrado.
 
@@ -178,13 +178,23 @@ Cuando los usuarios etiquetan inicialmente un documento o correo electrónico, p
 
 Si el documento o el correo electrónico ya está etiquetado, un usuario puede realizar cualquiera de estas acciones si el contenido no está ya encriptado, o tiene el [derecho de uso ](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Exportar o Control total. 
 
-Para una experiencia de etiquetado más consistente con informes significativos, proporcione etiquetas y orientación adecuadas para que los usuarios apliquen solo etiquetas para proteger los documentos. Por ejemplo:
+Para una experiencia de etiquetado más uniforme con los informes significativos, proporcione etiquetas y orientación adecuadas para que los usuarios apliquen solo etiquetas para proteger los documentos y correos electrónicos. Por ejemplo:
 
 - Para los casos excepcionales en los que los usuarios deben asignar sus propios permisos, proporcione etiquetas que [permitan a los usuarios asignar sus propios permisos](encryption-sensitivity-labels.md#let-users-assign-permissions). 
 
 - En lugar de que los usuarios eliminen manualmente el cifrado después de seleccionar una etiqueta que aplique cifrado, proporcione una alternativa de subetiqueta cuando los usuarios necesiten una etiqueta con la misma clasificación, pero sin cifrado. Como:
     - **Confidencial/todos los empleados**
     - **Confidencial/cualquiera (sin cifrado)**
+
+- Puede deshabilitar la configuración de IRM para impedir que los usuarios los seleccionen:
+    - Outlook para Windows: 
+        - Claves del Registro (DWORD:00000001) *DisableDNDE* y *DisableEO* de HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DOMAIN
+        - Asegúrese de que la configuración de directiva de grupo **Configuración de cifrado predeterminada para el botón Cifrar** no está configurada
+    - Outlook para Mac: 
+        - Claves *DisableEncryptOnly* y *DisableDoNotForward* documentadas en [Establecer preferencias para Outlook para Mac](/DeployOffice/mac/preferences-outlook)
+    - Outlook en la web: 
+        - Parámetros *SimplifiedClientAccessDoNotForwardDisabled* y *SimplifiedClientAccessEncryptOnlyDisabled* documentados para [Set-IRMConfiguración](/powershell/module/exchange/set-irmconfiguration)
+        - Outlook para iOS y Android: estas aplicaciones no admiten que los usuarios apliquen cifrado sin etiquetas, por lo que no hay nada que deshabilitar.
 
 > [!NOTE]
 > Si los usuarios eliminan manualmente el cifrado de un documento etiquetado que está almacenado en SharePoint o OneDrive y usted ha [habilitado las etiquetas de confidencialidad para los archivos de Office en SharePoint y OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), el cifrado de la etiqueta se restaurará automáticamente la próxima vez que se acceda al documento o se descargue. 
@@ -413,7 +423,7 @@ El resto de las opciones avanzadas de PowerShell siguen siendo compatibles solo 
 
 #### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>Sugerencias de PowerShell para especificar la configuración avanzada
 
-Para especificar una etiqueta predeterminada diferente para Outlook, debe especificar el GUID de la etiqueta. Para buscar este valor, puede usar el comando siguiente:
+Para especificar una etiqueta predeterminada diferente para Outlook, identifique la etiqueta mediante el GUID. Para buscar este valor, puede usar el comando siguiente:
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid

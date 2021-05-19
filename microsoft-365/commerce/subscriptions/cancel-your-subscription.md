@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Obtenga información sobre cómo cancelar su suscripción de prueba o de pago a Microsoft 365 para empresas.
+description: Si tiene menos de 25 licencias de usuario, puede cancelar la suscripción de prueba o de pago de Microsoft 365 para empresas en el Centro de administración.
 ms.date: 04/08/2021
-ms.openlocfilehash: 022981e91abc985a0540acccccd6f211b39620a4
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 583433e2c2cc939724f772c1cd699cc5763cb21c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333319"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536123"
 ---
 # <a name="cancel-your-subscription"></a>Cancelar su suscripción
 
@@ -46,7 +46,7 @@ Si ha agregado su propio nombre de dominio para usarlo con su suscripción, debe
 ::: moniker range="o365-worldwide"
 
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. Busque la suscripción que desea cancelar. Seleccione **Más acciones** (tres puntos) y luego seleccione **Cancelar suscripción**.
+2. Busque la suscripción que desea cancelar. Seleccione los tres puntos (más acciones) y, después, seleccione **Cancelar suscripción**.
 3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione algún comentario.
 4. Seleccione **Guardar**.
 
@@ -69,7 +69,7 @@ Su suscripción ahora aparecerá en estado de **Deshabilitada** y tendrá funcio
 ::: moniker-end
 
 2. Seleccione la pestaña **Productos**.
-3. Busque la suscripción que desea cancelar. Seleccione **Más acciones** (tres puntos) y luego seleccione **Cancelar suscripción**.
+3. Busque la suscripción que desea cancelar. Seleccione los tres puntos (más acciones) y, después, seleccione **Cancelar suscripción**.
 4. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione algún comentario.
 5. Seleccione **Guardar**.
 

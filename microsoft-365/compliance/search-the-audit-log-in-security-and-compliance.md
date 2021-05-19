@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Use el centro de cumplimiento de Microsoft 365 para buscar en el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f61a67b29dec114d222dfc7b25e44c163859ba41
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: dfda69e5695d2097de5bfae48b580e23799edf87
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051742"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536051"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Buscar el registro de auditoría en el centro de cumplimiento
 
@@ -112,7 +112,7 @@ Lea los elementos siguientes antes de iniciar la búsqueda en el registro de aud
 
 - Si desea descargar mediante programación los datos del registro de auditoría, le recomendamos que use la API de Actividad de administración de Office 365 en lugar de usar un script de PowerShell. La API de Actividad de administración de Office 365 es un servicio REST de la web que puede usar para desarrollar operaciones, soluciones de supervisión de seguridad y cumplimiento para su organización. Para obtener más información, consulte[la referencia de la API de Actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- El registro de auditoría correspondiente puede tardar hasta 30 minutos o 24 horas después de que se produzca el evento en mostrarse en los resultados de una búsqueda de registro de auditoría. En la siguiente tabla, se muestra el tiempo que tarda para los distintos servicios en Office 365..
+- Después de que se produzca un evento, puede llevar de 30 minutos a 24 horas que se devuelva el registro de auditoría correspondiente en los resultados de la búsqueda de registros de auditoría. En la tabla siguiente se muestra el tiempo que tarda para los distintos servicios en Office 365.
 
   |Característica o servicio de Microsoft 365|30 minutos|24 horas|
   |:-----|:-----:|:-----:|
@@ -457,7 +457,7 @@ En la siguiente tabla se describen las actividades de archivos y páginas en Sha
 |Extracción del archivo descartada|FileCheckOutDiscarded|El usuario descarta (o deshace) la extracción del repositorio de un archivo. Eso significa que cualquier cambio que haya realizado en el archivo cuando estaba extraído del repositorio se descarta y no se guarda en la versión del documento de la biblioteca de documentos.|
 |Archivo descargado|FileDownloaded|El usuario descarga un documento de un sitio.|
 |Archivo modificado|FileModified|La cuenta del sistema o usuario modifica el contenido o las propiedades de un documento ubicado en un sitio.|
-|(ninguno)|FileModifiedExtended|Esto está relacionado con la actividad "Archivo modificado" (FileModified). Se registra un evento FileModifiedExtended cuando la misma persona modifica constantemente un archivo durante un largo período de tiempo (hasta 3 horas). <br/><br/> El objetivo del registro de eventos FileModifiedExtended es reducir el número de eventos FileModified que se registran cuando se modifica continuamente un archivo. Esto ayuda a reducir el ruido de varios registros de FileModified para lo que básicamente es la misma actividad de usuario, y le permite centrarse en el evento FileModified inicial (el más importante).|
+|(ninguno)|FileModifiedExtended|Esto está relacionado con la actividad "Archivo modificado" (FileModified). Un evento de FileModifiedExtended se registra cuando la misma persona modifica continuamente un archivo durante un período prolongado (hasta 3 horas). <br/><br/> El objetivo del registro de eventos FileModifiedExtended es reducir el número de eventos FileModified que se registran cuando se modifica continuamente un archivo. Esto ayuda a reducir el ruido de varios registros de FileModified para lo que básicamente es la misma actividad de usuario, y le permite centrarse en el evento FileModified inicial (el más importante).|
 |Archivo movido|FileMoved|El usuario mueve un documento de su ubicación actual en un sitio a una nueva ubicación.|
 |(ninguno)|FilePreviewed|El usuario obtiene la vista previa de un documento de SharePoint o de OneDrive para un sitio de Empresas. Estos sucesos suelen producirse en grandes volúmenes basándose en una sola actividad, como ver una galería de imágenes.|
 |Consulta de búsqueda realizada|SearchQueryPerformed|La cuenta del sistema o el usuario lleva a cabo una búsqueda en SharePoint o OneDrive para la Empresa. Entre los escenarios comunes en los que una cuenta de servicio lleva a cabo una consulta de búsqueda se incluye aplicar una directiva de retención de eDiscovery a los sitios y cuentas de OneDrive, y aplicar automáticamente etiquetas de retención o confidencialidad al contenido del sitio.|
@@ -501,7 +501,7 @@ Aquí se muestran algunos otros escenarios en los que se puede identificar app@s
 
 - Grupos de Microsoft 365. Cuando un usuario o un administrador crea un grupo nuevo, se generan registros de auditoría para crear una colección de sitios, actualizar listas y agregar miembros a un grupo de SharePoint. Estas tareas se ejecutan en una aplicación en nombre del usuario que creó el grupo.
 
-- Microsoft Teams. Como ocurre en los grupos de Microsoft 365, cuando se crea un equipo se generan registros de auditoría para crear una colección de sitios, actualizar listas y agregar miembros a un grupo de SharePoint.
+- Microsoft Teams. De forma similar a los grupos de Microsoft 365, los registros de auditoría se generan para crear una colección de sitios, actualizar listas y agregar miembros a un grupo de SharePoint cuando se crea un equipo.
 
 - Características de cumplimiento. Estas se dan cuando un administrador implementa características de cumplimiento, como directivas de retención, suspensiones de eDiscovery y etiquetas de confidencialidad de aplicación automática.
 
@@ -575,7 +575,7 @@ La siguiente tabla describe las actividades de solicitud de acceso y uso compart
 |Solicitud de acceso denegada |AccessRequestDenied|Una solicitud de acceso a un sitio, una carpeta o un documento se ha denegado.|
 |Vínculo quitado que se puede compartir de la empresa|CompanyLinkRemoved|El usuario ha quitado un vínculo de toda la empresa a un recurso. El vínculo ya no puede usarse para tener acceso al recurso.|
 |Vínculo anónimo quitado|AnonymousLinkRemoved|El usuario ha quitado un vínculo anónimo a un recurso. El vínculo ya no puede usarse para tener acceso al recurso.|
-|Sitio, carpeta o archivo compartidos|SharingSet|El usuario (miembro o invitado) ha compartido un archivo, carpeta o sitio en SharePoint o OneDrive con un usuario en el directorio de la organización. El valor de la columna **Detalles** para esta actividad identifica el nombre del usuario que el recurso ha compartido y si este usuario es un miembro o un invitado. <br/><br/> Esta actividad a menudo está acompañada por un segundo evento que describe cómo se le ha concedido acceso al usuario a los recursos. Por ejemplo, al agregar el usuario a un grupo que tiene acceso al recurso.|
+|Sitio, carpeta o archivo compartidos|SharingSet|El usuario (miembro o invitado) ha compartido un archivo, carpeta o sitio en SharePoint o OneDrive con un usuario en el directorio de la organización. El valor de la columna **Detalles** para esta actividad identifica el nombre del usuario que el recurso ha compartido y si este usuario es un miembro o un invitado. <br/><br/> Esta actividad a menudo está acompañada por un segundo evento que describe cómo se le ha concedido acceso al usuario al recurso, por ejemplo, al agregar el usuario a un grupo que tiene acceso al recurso.|
 |Solicitud de acceso actualizada|AccessRequestUpdated|Se actualizó una solicitud de acceso a un elemento.|
 |Vínculo anónimo actualizado |AnonymousLinkUpdated|El usuario ha actualizado un vínculo anónimo a un recurso. El campo actualizado se incluye en la propiedad EventData cuando exporta los resultados de búsqueda.|
 |Invitación de uso compartido actualizada|SharingInvitationUpdated|Se actualizó una invitación para uso compartido externo.|
@@ -673,7 +673,7 @@ La siguiente tabla enumera las actividades que pueden registrarse mediante el re
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
 |Elementos de buzón a los que se ha accedido|MailItemsAccessed|Se han leído mensajes o se obtuvo acceso a los mensajes del buzón. Los registros de auditoría de esta actividad se activan de una de estas dos maneras: cuando un cliente de correo (por ejemplo, Outlook) realiza una operación de vinculación en mensajes o cuando los protocolos de correo (como Exchange ActiveSync o IMAP) sincronizan elementos en una carpeta de correo. Esta actividad solo se registra para los usuarios que tengan una licencia de Office 365 o Microsoft 365 E5. Analizar los registros de auditoría de esta actividad es útil al investigar cuentas de correo electrónico vulnerables. Para obtener más información, vea la sección "Acceder a eventos fundamentales para las investigaciones" en [Auditoría avanzada](advanced-audit.md#access-to-crucial-events-for-investigations). |
-|Permisos de buzón de delegado agregados|AddMailboxPermissions|Un administrador asignó el permiso de FullAccess del buzón a un usuario (conocido como delegado) para el buzón de otra persona. El permiso FullAccess permite al delegado abrir el buzón de la otra persona, así como leer y administrar el contenido del buzón.|
+|Permisos de buzón de delegado agregados|Add-MailboxPermission|Un administrador asignó el permiso de FullAccess del buzón a un usuario (conocido como delegado) para el buzón de otra persona. El permiso FullAccess permite al delegado abrir el buzón de la otra persona, así como leer y administrar el contenido del buzón.|
 |Se ha agregado o quitado un usuario con acceso delegado a la carpeta calendario|UpdateCalendarDelegation|Se ha agregado o quitado un usuario como delegado hacia el calendario del buzón de otro usuario. La delegación de calendario otorga a otra persona en la misma organización permisos para administrar el calendario del propietario del buzón.|
 |Se agregaron permisos a la carpeta|AddFolderPermissions|Un permiso de la carpeta se ha cambiado. Los permisos de carpeta controlan qué usuarios de su organización pueden tener acceso las carpetas de un buzón de correo y los mensajes que contienen.|
 |Mensajes copiados a otra carpeta|Copiar|Se ha copiado un mensaje a otra carpeta.|
@@ -789,7 +789,7 @@ En la siguiente tabla se enumeran las actividades relacionadas con los dominios 
 
 ### <a name="ediscovery-activities"></a>Actividades de eDiscovery
 
-La búsqueda de contenido y las actividades relacionadas con eDiscovery que son realizadas en el centro de seguridad y cumplimento o ejecutando los cmdlets correspondientes de PowerShell que están archivados en el registro de auditoría. Esto incluye las siguientes actividades:
+Las actividades de búsqueda de contenido y relacionadas con la exhibición de documentos electrónicos que se llevan a cabo en el centro de seguridad y cumplimiento o mediante la ejecución de los cmdlets de PowerShell correspondientes se registran en el registro de auditoría. Esto incluye las siguientes actividades:
 
 - Crear y administrar casos de exhibición de documentos electrónicos
 
@@ -900,7 +900,7 @@ En la tabla siguiente, se enumeran las actividades del explorador de contenido q
 
 ### <a name="quarantine-activities"></a>Actividades de cuarentena
 
-En la tabla siguiente se enumeran las actividades de cuarentena que puede buscar en el registro de auditoría. Para obtener más información, consulte [Mensajes de correo electrónico en cuarentena en Office 365](../security/defender-365-security/quarantine-email-messages.md).
+En la tabla siguiente se enumeran las actividades de cuarentena que puede buscar en el registro de auditoría. Para obtener más información, consulte [Mensajes de correo electrónico en cuarentena en Office 365](../security/office-365-security/quarantine-email-messages.md).
 
 |Nombre descriptivo|Operación|Descripción|
 |:-----|:-----|:-----|
@@ -999,7 +999,7 @@ En la tabla siguiente se enumeran los eventos que se producen a partir de las ta
 
 ### <a name="briefing-email-activities"></a>Actividades de correo de informe de tareas pendientes
 
-En la tabla siguiente se enumeran las actividades del correo de informe de tareas pendientes de contenido que se registran en el registro de auditoría de Office 365. Para obtener más información acerca del correo de informe de tareas pendientes, consulte:
+En la tabla siguiente se enumeran las actividades del correo de Informe de tareas pendientes de contenido que se registran en el registro de auditoría de Office 365. Para obtener más información acerca del correo de Informe de tareas pendientes, consulte:
 
 - [Información general sobre el correo de informe de tareas pendientes](/Briefing/be-overview)
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configure las etiquetas de confidencialidad para el cifrado que protege los datos con el acceso y uso restringido.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6163e48e3e80b76506d970b77d6cd66f7a050d51
-ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
+ms.openlocfilehash: 804cfa9da39b5dc9b9dffdcd68fb196e8676f9af
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52079263"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532091"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado
 
@@ -65,7 +65,9 @@ Cuando usa esta solución de cifrado, la característica de **superusuario** gar
 
 4.  En la página **Cifrado** del asistente, seleccione una de las siguientes opciones:
     
-    - **Quitar el cifrado si el archivo está cifrado**: para obtener más información sobre este escenario, vea la sección [¿Qué ocurre con el cifrado existente al aplicar una etiqueta?](#what-happens-to-existing-encryption-when-a-labels-applied). Es importante tener en cuenta que esta configuración puede dar lugar a que los usuarios no puedan aplicar una etiqueta de confidencialidad cuando no tienen permisos suficientes.
+    - **Quitar el cifrado del archivo (si lo tiene)**: esta opción solo es compatible con el cliente de etiquetas unificado de Azure Information Protection. Si selecciona esta opción y usa etiquetas integradas, es posible que la etiqueta no se muestre en las aplicaciones o que se muestre, pero no se realicen cambios de cifrado.
+        
+        Para obtener más información sobre este escenario, vea la sección [¿Qué ocurre con el cifrado existente al aplicar una etiqueta?](#what-happens-to-existing-encryption-when-a-labels-applied) Es importante tener en cuenta que esta configuración puede dar lugar a que los usuarios no puedan aplicar una etiqueta de confidencialidad cuando no tienen permisos suficientes.
     
     - **Configurar las opciones de cifrado**: activa el cifrado y hace que la configuración de cifrado sea visible:
         
@@ -85,13 +87,17 @@ Sin embargo, es posible que el contenido ya esté cifrado. Por ejemplo, otro usu
 
 En la tabla siguiente se identifica lo que ocurre con el cifrado existente cuando se aplica una etiqueta de confidencialidad al contenido:
 
-| | Cifrado: no seleccionado | Cifrado: configurado | Cifrado: quitar |
+| | Cifrado: no seleccionado | Cifrado: configurado | Cifrado: quitar <sup>\*</sup> |
 |:-----|:-----|:-----|:-----|
 |**Permisos especificados por un usuario**|Se preserva el cifrado original|Se aplica el cifrado de la nueva etiqueta|Se quita el cifrado original|
 |**Plantilla de protección**|Se preserva el cifrado original|Se aplica el cifrado de la nueva etiqueta|Se quita el cifrado original|
 |**Etiqueta con permisos definidos por el administator**|Se quita el cifrado original|Se aplica el cifrado de la nueva etiqueta|Se quita el cifrado original|
 
-Tenga en cuenta que, en los casos en los que se aplica el cifrado de la nueva etiqueta o se elimina el cifrado original, esto solo se produce si el usuario que aplica la etiqueta tiene un derecho de uso o un rol que admite esta acción:
+**Nota al pie.**
+
+<sup>\*</sup> Solo es compatible con el cliente de etiquetas unificado de Azure Information Protection
+
+En los casos en los que se aplica el cifrado de la nueva etiqueta o se elimina el cifrado original, esto solo se produce si el usuario que aplica la etiqueta tiene un derecho de uso o un rol que admite esta acción:
 
 - El [derecho de uso](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) exportar o control total.
 - El rol de [emisor de Administración de derechos o propietario de la Administración de derechos](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner), o bien de [superusuario](/azure/information-protection/configure-super-users).
@@ -269,11 +275,11 @@ Cuando cualquiera de estas opciones se aplica a un correo electrónico, este se 
 
 - **No reenviar**: los destinatarios no podrán reenviar el correo electrónico, imprimirlo ni copiarlo. Por ejemplo, en el cliente de Outlook, el botón Reenviar y las opciones de menú Guardar como e Imprimir no están disponibles, y no se pueden agregar o cambiar destinatarios en los cuadros Para, CC o CCO.
     
-    Para obtener más información sobre cómo funciona esta opción, consulte [Opción No reenviar para correos electrónicos](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
+    Para obtener más información sobre cómo funciona esta opción, consulte [Opción No reenviar para correos electrónicos](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
 
 - **Solo cifrar**: los destinatarios tienen todos los derechos de uso excepto Guardar como, Exportar y Control total. Esta combinación de derechos de uso significa que los destinatarios no tienen restricciones, a excepción de que no pueden quitar la protección. Por ejemplo, un destinatario puede copiar del correo electrónico, imprimirlo y reenviarlo.
     
-    Para obtener más información sobre cómo funciona esta opción, consulte [Opción Solo cifrar para correos electrónicos](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails).
+    Para obtener más información sobre cómo funciona esta opción, consulte [Opción Solo cifrar para correos electrónicos](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails).
 
 Los documentos de Office sin cifrar asociados al correo electrónico heredan automáticamente las mismas restricciones. Para No reenviar, los derechos de uso que se aplican a estos documentos son Editar contenido, Editar; Guardar; Ver, Abrir, Leer y Permitir macros. Si el usuario quiere derechos de uso distintos para los datos adjuntos o el archivo adjunto no es un documento de Office compatible con esta protección heredada, debe cifrar el archivo antes de adjuntarlo al correo electrónico.
 

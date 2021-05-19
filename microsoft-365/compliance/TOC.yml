@@ -785,7 +785,7 @@
     - name: Auditoría básica
       items:
         - name: Configurar la Auditoría básica
-          href: set-up-basic-auditing.md
+          href: set-up-basic-audit.md
         - name: Búsquedas en el registro de auditoría
           href: search-the-audit-log-in-security-and-compliance.md
         - name: Usar un script de PowerShell para buscar en el registro de auditoría

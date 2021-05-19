@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo administrar suscripciones de registro de autoservicio gratuitas para su organización.
 ms.date: 03/17/2021
-ms.openlocfilehash: 9c29d36ff28e312fa3782b60f89fa755d4df9bf3
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 741c9e0b45f127ffc0753b34982073f90c525d5b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345135"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536075"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Administrar suscripciones de registro de autoservicio
 
@@ -39,7 +39,7 @@ Hay un número limitado de suscripciones de registro de autoservicio gratuitas d
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>¿En qué se diferencian estas suscripciones de las suscripciones de compra sin servicio?
 
-Las suscripciones de registro de autoservicio son gratuitas y están disponibles para una lista más grande de productos que las suscripciones de compra de autoservicio. Cuando un usuario se inscribe en una suscripción de compra de autoservicio, es responsable de pagar por ella. Las suscripciones de compra de autoservicio solo están disponibles para productos de Power Platform (Power BI, Power Apps y Power Automate), Project y Visio. Para obtener más información, consulta Preguntas más frecuentes [sobre la compra de autoservicio.](self-service-purchase-faq.md)
+Las suscripciones de registro de autoservicio son gratuitas y están disponibles para una lista más grande de productos que las suscripciones de compra de autoservicio. Cuando un usuario se inscribe en una suscripción de compra de autoservicio, es responsable de pagar por ella. Las suscripciones de compra de autoservicio solo están disponibles para productos de Power Platform (Power BI, Power Apps y Power Automate), Project y Visio. Para obtener más información, consulta Preguntas más frecuentes [sobre la compra de autoservicio.](self-service-purchase-faq.yml)
 
 ## <a name="block-users-from-signing-up"></a>Impedir que los usuarios se inscriba
 

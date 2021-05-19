@@ -24,41 +24,29 @@ search.appverid:
 - MET150
 - MOE150
 description: Siga los pasos de esta solución para quitar un antiguo empleado Microsoft 365 proteger los datos de su organización.
-ms.openlocfilehash: 4b4cf59fdce81b3098ee333095daa8e1af1cd5c5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 79baf5cbd94d555c1dff1859f5045cde3dbcfdc0
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241741"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535916"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Información general: Quitar un antiguo empleado y datos seguros
 
 A question we often get is, "What should I do to secure data and protect access when an employee leaves my organization?" En esta serie de artículos se explica cómo bloquear el acceso a Microsoft 365, los pasos que debe seguir para proteger los datos y cómo permitir que otros empleados accedan a los datos.
 
-Vea un breve vídeo sobre cómo quitar a un empleado. <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
-
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
-
-Para evitar que un empleado inicia sesión:
-
-1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
-2. Seleccione el cuadro situado junto al nombre del usuario y, a continuación, seleccione **Restablecer contraseña.**
-3. Escriba una nueva contraseña y, a continuación, **seleccione Restablecer**. (No se lo envíe).
-4. Seleccione el nombre del usuario para ir al panel de propiedades y, en la pestaña **Cuenta,** seleccione **Iniciar la sesión.**
-
-> [!NOTE]
-> Debe ser un administrador global para iniciar la sesión.
-
-Dentro de una hora , o después de salir de la página Microsoft 365 actual en la que se encuentran, se les pedirá que inicien sesión de nuevo. Un token de acceso es bueno durante una hora, por lo que la escala de tiempo depende de cuánto tiempo queda en ese token y de si navegan fuera de su página web actual.
-
-> [!IMPORTANT]
-> Aunque hemos numerado los pasos de esta solución y no tiene que completar la solución con el orden exacto, se recomienda realizar los pasos de esta manera.
+:::image type="content" source="../../media/delete-user-overview.png" alt-text="Screenshot: Overview steps for removing a former employee":::
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 Debe ser un administrador global para completar los pasos de esta solución.
+
+## <a name="solution-remove-a-former-employee"></a>Solución: quitar un antiguo empleado
+
+> [!IMPORTANT]
+> Aunque hemos numerado los pasos de esta solución y no tiene que completar la solución con el orden exacto, se recomienda realizar los pasos de esta manera.
+
+:::image type="content" source="../../media/delete-user-account.png" alt-text="Screenshot: Steps for removing a former employee from your organization":::
 
 |||
 |:-----|:-----|
