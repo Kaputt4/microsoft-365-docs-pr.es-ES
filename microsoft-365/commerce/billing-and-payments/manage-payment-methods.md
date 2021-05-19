@@ -19,14 +19,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Obtenga información sobre cómo administrar los métodos de pago en el Centro de administración de Microsoft 365.
+description: Compre productos o servicios empresariales de Microsoft con un método de pago existente o agregue uno nuevo en el Centro de administración de Microsoft 365.
 ms.date: 04/02/2021
-ms.openlocfilehash: b6fe62a70d478a98eb13a17fafb4320afc6b5952
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: bda7eca29b92cdf131c6d3f5a6069ea2be77f6fa
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332011"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537324"
 ---
 # <a name="manage-payment-methods"></a>Administrar métodos de pago
 
@@ -87,7 +87,7 @@ Puede cambiar el método de pago que se usa para pagar una sola suscripción.
 
 1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la pestaña **Productos**, busque la suscripción por la que quiere pagar con el método de pago alternativo.
-3. Seleccione **Más acciones** (tres puntos) y, después, seleccione **Reemplazar método de pago**.
+3. Seleccione los tres puntos (más acciones) y, después, **Reemplazar método de pago**.
 4. En el panel **Reemplazar método de pago**, de la lista desplegable, elija un método de pago alternativo o elija agregar un método de pago.
 5. Si agrega un método de pago, escriba la tarjeta o los detalles de la cuenta y, después, **Guardar**.
 6. Compruebe que el método de pago seleccionado es el correcto y, a continuación, **Reemplazar**.

@@ -21,55 +21,62 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo los perfiles de facturación admiten facturas.
 ms.date: 04/02/2021
-ms.openlocfilehash: 36d762e50627763b7856ed1fe6c109e8da2b4789
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: e66efe12e05d2aaf286b689c955f17c8401144f1
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332035"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537336"
 ---
 # <a name="understand-billing-profiles"></a>Entender los perfiles de facturación
 
-Para los clientes comerciales que compran productos y servicios de Microsoft, los perfiles de facturación te permiten personalizar qué elementos se incluyen en la factura y cómo pagas tus facturas.
+Un perfil de facturación contiene un método de pago, información de facturación y otras opciones de facturación, como el número de pedido de compra y la preferencia de factura de correo electrónico. Usas un perfil de facturación para pagar los productos que compras a Microsoft. Un perfil de facturación se crea automáticamente cuando un usuario realiza una compra de autoservicio. Cada perfil de facturación se factura por separado.
 
-Los perfiles de facturación incluyen la siguiente información:
+> [!NOTE]
+>
+> Los perfiles de facturación no están disponibles para los clientes  que compren productos y servicios de Microsoft.com o en la página Servicios de compra del centro de administración Microsoft 365 administración.
 
-- **Cuenta de facturación** &ndash; Nombre de la cuenta de facturación con la que está relacionado el perfil
-- **Métodos de pago** &ndash; Tarjetas de crédito o débito, cuentas bancarias, cheque o transferencia bancaria
-- **Información de contacto** &ndash; Dirección de facturación y un nombre de contacto
-- **Configuración de factura** &ndash; Moneda basada en el país de la cuenta de facturación, un número de PEDIDO opcional y la opción de recibir facturas como datos adjuntos de correo electrónico
-- **Permisos** &ndash; Permisos que le permiten cambiar el perfil de facturación, pagar facturas o usar el método de pago en el perfil de facturación para realizar compras
+## <a name="what-are-billing-profile-roles"></a>¿Qué son los roles de perfil de facturación?
 
-Usa perfiles de facturación para controlar tus compras y personalizar la factura. Se genera una factura mensual para los productos comprados con el perfil de facturación. Puede personalizar la factura, como actualizar el número de pedido de compra y la preferencia de factura de correo electrónico.
+Los roles de los perfiles de facturación tienen permisos para controlar las compras y ver y administrar facturas. Asigne estos roles a los usuarios que realicen un seguimiento, organicen y paguen facturas. Por ejemplo, los miembros del equipo de compras de la organización.
 
-Se crea automáticamente un perfil de facturación para tu cuenta de facturación durante la primera compra. Puede crear perfiles de facturación en la página <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Perfiles de facturación</a> para configurar más facturas. Por ejemplo, puede usar diferentes perfiles de facturación al realizar compras para cada departamento de su organización. En la próxima fecha de facturación, recibirás una factura para cada perfil de facturación.
-
-## <a name="billing-profile-roles"></a>Roles de perfil de facturación
-
-Los roles de los perfiles de facturación tienen permisos para controlar las compras y ver y administrar facturas. Asigne estos roles a los usuarios que realicen un seguimiento, organicen y paguen facturas, como los miembros del equipo de compras de la organización.
-
-| Role                         | Descripción                                                                      |
+| Función                         | Descripción                                                                      |
 |----------------------------- |--------------------------------------------------------------------------------- |
 | Propietario del perfil de facturación        | Administrar todo para un perfil de facturación                                          |
 | Colaborador de perfiles de facturación  | Administrar todo excepto los permisos en un perfil de facturación                        |
 | Lector de perfiles de facturación       | Vista de solo lectura de todo en un perfil de facturación                                |
 | Administrador de facturas              | Ver y pagar facturas y tiene una vista de solo lectura de todo en un perfil de facturación  |
 
-## <a name="view-billing-profiles"></a>Ver perfiles de facturación
+## <a name="view-my-billing-profiles"></a>Ver mis perfiles de facturación
+
+> [!NOTE]
+>
+> Si sigues estos pasos y la lista de perfiles de facturación está vacía, significa que no tienes un perfil de facturación y no puedes usar esta característica.
 
 1. En el Centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Facturas y pagos</a>.
-2. Elija **Perfiles de facturación** y, a continuación, elija un perfil de facturación de la lista.
+2. Seleccione la **pestaña Perfil de facturación** y, a continuación, seleccione un perfil de facturación de la lista.
 
-    - En la **pestaña Información** general, puede editar los detalles del perfil de facturación y activar o desactivar el envío de una factura por correo electrónico.
-    - En la **pestaña Permisos,** puede asignar roles a los usuarios para pagar facturas.
-    - En la **pestaña Saldo de crédito de Azure,** los clientes de Azure pueden ver el historial de saldos de transacciones para los créditos de Azure usados por ese perfil de facturación.
-    - En la **pestaña Créditos de Azure,** los clientes de Azure pueden ver una lista de créditos de Azure asociados con ese perfil de facturación y sus fechas de expiración.
+Cada perfil de facturación incluye la siguiente información:
 
-    > [!NOTE]
-    > Si no tiene créditos de Azure, no verá las pestañas Saldo de crédito de **Azure** o **Créditos de Azure.**
+- **Nombre y estado del perfil de facturación** &ndash; Nombre único del perfil de facturación y si el perfil de facturación está activo o deshabilitado para la compra.
+- **Configuración de factura** &ndash; Moneda basada en el país de la cuenta de facturación, información sobre la frecuencia y la fecha de facturación, la opción de recibir facturas como datos adjuntos de correo electrónico y un campo de número de pedido opcional
+- **Métodos de pago** &ndash; Muestra el método de pago principal y de copia de seguridad, si lo hay, para el perfil
+- **Cuenta de facturación** &ndash; Nombre de la cuenta de facturación a la que está relacionado el perfil. Para obtener más información acerca de las cuentas de facturación, vea [Comprender cuentas de facturación.](../manage-billing-accounts.md)
+- **Información de contacto** &ndash; Dirección de facturación y nombre de contacto y dirección de correo electrónico
+- **Roles de perfil de facturación** &ndash; Una lista de personas a las que se asigna uno de los roles de perfil de facturación para hacer cosas para ese perfil. Por ejemplo, pagar facturas, agregar un número de PEDIDO o reemplazar el método de pago que se usa para realizar compras.
 
-## <a name="need-help-contact-support"></a>¿Necesita ayuda? Contactar soporte
+> [!NOTE]
+>
+> Solo puede asignar roles de perfil de facturación a los usuarios de su organización.
+
+## <a name="need-help-contact-support"></a>¿Necesita ayuda? Ponerse en contacto con soporte técnico
 
 Si tiene preguntas o necesita ayuda con los cargos de Azure, cree una solicitud de soporte <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">técnico con soporte técnico de Azure</a>.
 
-Si tiene preguntas o necesita ayuda con su perfil de facturación en el Centro de administración de Microsoft 365, póngase en contacto con el soporte [técnico para productos empresariales](../../business-video/get-help-support.md).
+Si tiene preguntas o necesita ayuda con su perfil de facturación en Microsoft 365 centro de administración, póngase [en contacto con el soporte técnico](../../business-video/get-help-support.md).
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Cómo pagar la suscripción con un perfil de facturación](pay-for-subscription-billing-profile.md) (artículo)\
+[Comprender cuentas de facturación](../manage-billing-accounts.md) (artículo)\
+[Administrar métodos de pago](manage-payment-methods.md) (artículo)

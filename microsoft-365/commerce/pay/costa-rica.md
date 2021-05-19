@@ -1,23 +1,24 @@
 ---
 title: Información de pago para Costa Rica
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
-description: Obtén información sobre dónde enviar el pago de la suscripción.
+description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 22c04b4d2c4f8b29dcce2b20e2a4f291955d22e0
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1cb8feabf2c3046ef6bd51c78fe91920f77730ab
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273985"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536939"
 ---
 # <a name="payment-information-for-costa-rica"></a>Información de pago para Costa Rica
 
@@ -31,4 +32,4 @@ Paga solo en USD y haz referencia a tus números de factura en la remesa de pago
 **Rama:** Dallas  
 **Código SWIFT:** BOFAUS3N  
 **Número de cuenta:** 4426587954  
-**Nombre de cuenta:** Microsoft  
+**Nombre de cuenta:** Microsoft

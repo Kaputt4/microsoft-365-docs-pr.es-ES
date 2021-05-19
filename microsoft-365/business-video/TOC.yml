@@ -49,7 +49,7 @@
       items:
         - name: Usar Outlook y Teams
           href: collab-outlook-teams.md
-        - name: Configurar Microsoft Teams para empresas pequeñas
+        - name: Introducción a Teams
           href: get-started-teams-small-business.md
         - name: Crear una dirección de correo electrónico del grupo
           href: group-email.md

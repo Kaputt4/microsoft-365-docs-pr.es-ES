@@ -1,23 +1,24 @@
 ---
 title: Información de pago para República Dominicana
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
-description: Obtén información sobre dónde enviar el pago de la suscripción.
+description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 99a3c67df67a856c8ac8b89c89a0da89272d9ff9
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: e0c13fcc5309418beaf92f5f34ed83b7295e0ef3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273901"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536843"
 ---
 # <a name="payment-information-for-dominican-republic"></a>Información de pago para República Dominicana
 
@@ -31,4 +32,4 @@ Pague solo en USD y haga referencia a los números de factura en su remesa de pa
 **Rama:** Dallas  
 **Código SWIFT:** BOFAUS3N  
 **Número de cuenta:** 4426587954  
-**Nombre de cuenta:** Microsoft  
+**Nombre de cuenta:** Microsoft

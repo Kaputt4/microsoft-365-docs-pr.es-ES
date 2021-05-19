@@ -1,23 +1,24 @@
 ---
 title: Información de pago para Belice
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
-description: Obtén información sobre dónde enviar el pago de la suscripción.
+description: Obtenga información sobre dónde enviar el pago de la suscripción.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 48c499ff49ddf8c117603c6c75c2b37648200967
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 7e531aba1aeb53125b628e4fec964b496316f3ae
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274177"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537119"
 ---
 # <a name="payment-information-for-belize"></a>Información de pago para Belice
 
@@ -31,4 +32,4 @@ Pague solo en USD y haga referencia a los números de factura en la remesa de fa
 **Rama:** Dallas  
 **Código SWIFT:** BOFAUS3N  
 **Número de cuenta:** 4426587954  
-**Nombre de cuenta:** MICROSOFT  
+**Nombre de cuenta:** MICROSOFT

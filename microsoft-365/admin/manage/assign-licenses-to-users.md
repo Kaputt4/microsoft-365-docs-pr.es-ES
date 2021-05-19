@@ -21,14 +21,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: Obtenga información sobre cómo asignar las licencias a los usuarios.
+description: Asigne licencias dependiendo de si quiere asignar licencias de producto a usuarios específicos o asignar licencias de usuarios a un producto específico.
 ms.date: 04/26/2021
-ms.openlocfilehash: ef8169658c6aef03cf8ff0cf9714c980ce63b060
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 707c1c952aa737f0aa91d886e9fa304eabe26321
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332491"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537540"
 ---
 # <a name="assign-licenses-to-users"></a>Asignar licencias a los usuarios
 
@@ -53,20 +53,22 @@ Al usar la página de **licencias** de para asignar licencias, asigna licencias 
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página de **Facturación** ><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"> Licencias</a>.
+1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"> Licencias</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página de **Facturación** > **Licencias**.
+ 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank"> Licencias</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página de **Facturación** > **Licencias**.
+ 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"> Licencias</a>.
 
 ::: moniker-end
+
 
 2. Seleccione un producto.
 3. En la página de detalles del producto, seleccione **Asignar licencias**.
@@ -80,21 +82,22 @@ Si hay un conflicto, se muestra un mensaje que indica cuál es el problema y có
 
 ::: moniker range="o365-worldwide"
 
-1. En el centro de administración, vaya a la página de **Facturación** ><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"> Licencias</a>.
+1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"> Licencias</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página de **Facturación** > **Licencias**.
+ 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank"> Licencias</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página de **Facturación** > **Licencias**.
+ 1. En el centro de administración, vaya a la página de **Facturación** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank"> Licencias</a>.
 
 ::: moniker-end
+
 
 2. En la página **Licencias**, seleccione la fila para un usuario específico.
 3. En el panel derecho, active o desactive las aplicaciones y servicios a los que quiere dar o quitar acceso.
@@ -114,18 +117,19 @@ Cuando usa la página **Usuarios activos** para asignar licencias, asigna licenc
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Facturación** > **Usuarios activos**.
+ 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Facturación** > **Usuarios activos**.
+ 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 
+
 2. Seleccione los círculos que se encuentran junto a los nombres de los usuarios a los que quiere asignarles licencias.
-3. En la parte superior, seleccione **más opciones (...)** y seleccione **administrar licencias de producto**.
+3. En la parte superior, seleccione los tres puntos (Más acciones) y, después, seleccione **Administrar licencias de producto**.
 4. En el panel **administrar licencias de producto**, seleccione **agregar a las asignaciones de licencias de producto existentes** \> **siguiente**.
 5. En el panel **Agregar a los productos existentes**, cambie el botón a la posición de **Activado** para la licencia que quiere que tengan los usuarios seleccionados.\
     De forma predeterminada, todos los servicios asociados con esas licencias se asignan automáticamente a los usuarios. Puede limitar los servicios que están disponibles para los usuarios. Cambie el botón de alternancia a la posición de **desactivado** para los servicios que no quiere que tengan los usuarios.
@@ -145,15 +149,16 @@ Cuando usa la página **Usuarios activos** para asignar licencias, asigna licenc
 
 ::: moniker range="o365-germany"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">centro de administración</a>, vaya a la página **Facturación** > **Usuarios activos**.
+ 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">centro de administración</a>, vaya a la página **Facturación** > **Usuarios activos**.
+ 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Usuarios activos</a>.
 
 ::: moniker-end
+
 
 2. Seleccione la fila del usuario al que quiere asignar una licencia.
 3. En el panel derecho, seleccione **licencias y aplicaciones**.

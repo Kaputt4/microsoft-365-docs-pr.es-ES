@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo cerrar su cuenta con Microsoft.
 ms.date: 04/02/2021
-ms.openlocfilehash: 767a82088500bc24c0d4755a2dafd40742fc796c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ed73c191063a328490945c54dc2f5101c88f17e8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331771"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537300"
 ---
 # <a name="close-your-account"></a>Cerrar la cuenta
 
@@ -52,7 +52,7 @@ Si su organización usa Active Directory que se sincroniza con Microsoft Azure A
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Paso 2: Cancelar todas las suscripciones activas
 
 1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. En la **pestaña Productos,** busque una suscripción activa. Seleccione **Más acciones** (tres puntos) y luego seleccione **Cancelar suscripción**.
+2. En la **pestaña Productos,** busque una suscripción activa. Seleccione los tres puntos (más acciones) y, a continuación, **seleccione Cancelar suscripción**.
 3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione algún comentario.
 4. Seleccione **Guardar**.
 5. Repita los pasos del 1 al 4 para cancelar todas las suscripciones activas.

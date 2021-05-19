@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenga información general sobre el Microsoft 365 de mensajes y su rol en la administración de cambios.
-ms.openlocfilehash: af65db32edd56b11adede0e4e690b3f69b07180e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 01e43eb6fa9502c138bfc9ab3595c47ec33ad098
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244424"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537528"
 ---
 # <a name="message-center"></a>Centro de mensajes
 
@@ -249,66 +249,21 @@ Si quiere enviar comentarios en el mensaje, en el panel de detalles seleccione e
 
 ¿Necesita realizar un seguimiento con otro administrador para asegurarse de que es consciente de un cambio y de tomar medidas? Puede generar un vínculo para compartir mediante correo electrónico o mensajería instantánea, por ejemplo, que conectará al usuario directamente a ese mensaje. La persona con la que comparta el vínculo debe tener acceso al Centro de mensajes. Consulte [Roles de administrador que no tienen acceso al Centro de mensajes](message-center.md#admin-roles-that-dont-have-access-to-the-message-center) para obtener más información.
 
-::: moniker range="o365-worldwide"
-
 1. Seleccione el mensaje para abrirlo.
 
 2. Seleccione **Copiar vínculo**.
 
 3. Use Ctrl+V o haga clic con el botón derecho y seleccione **Pegar** para insertar el vínculo en el documento que quiera.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Seleccione el mensaje para abrirlo.
-
-2. Elija **Más** \> **Obtener un vínculo** en la barra de acciones.
-
-3. Permita que la página web pueda acceder a su Portapapeles. Un vínculo directo se ha copiado en su Portapapeles.
-
-4. Use Ctrl+V o haga clic con el botón derecho y seleccione **Pegar** para insertar el vínculo.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Seleccione el mensaje para abrirlo.
-
-2. Seleccione **Copiar vínculo**.
-
-3. Use Ctrl+V o haga clic con el botón derecho y seleccione **Pegar** para insertar el vínculo en el documento que quiera.
-
-::: moniker-end
 
 ## <a name="read-and-unread-states"></a>Estados leídos y no leídos
 
 Todos los mensajes del Centro de mensajes no leídos se mostrarán en negrita. Al abrir un mensaje, se marca como leído. Usted puede marcar un mensaje como no leído.
 
-::: moniker range="o365-worldwide"
 
 - En la página principal del Centro de mensajes, seleccione el icono de puntos suspensivos **Más opciones** junto a un mensaje y, después, seleccione **Marcar como no leído**.
 
 También puede abrir un mensaje y marcarlo como no leído en el panel de detalles.
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Seleccione el mensaje para abrirlo.
-
-2. Seleccione **Más** \> **Marcar como no leído**.
-
-3. Cierre el mensaje.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-- En la página principal del Centro de mensajes, seleccione el icono de puntos suspensivos **Más opciones** junto a un mensaje y, después, seleccione **Marcar como no leído**.
-
-::: moniker-end
-
 ## <a name="archive-and-restore"></a>Archivar y restaurar
 
 Si ve un mensaje cuyo contenido no le concierne, o sobre el cual ya realizara una acción, puede archivar el mensaje para eliminarlo de la Bandeja de entrada. La vista que se ve en el centro de mensajes es específica de su cuenta de usuario, por lo que archivar desde su vista no afecta a otros administradores. Hay dos formas de archivar un mensaje.

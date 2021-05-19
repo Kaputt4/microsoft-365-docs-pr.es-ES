@@ -22,26 +22,19 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
-description: Aprenda a establecer la directiva de expiración de contraseñas para su organización en el Centro de administración de Microsoft 365.
-ms.openlocfilehash: 14ff08126533d5c530fb56761a2ef1676d5864b8
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: Obtenga información sobre cómo un administrador puede establecer una directiva de expiración de contraseñas para su empresa, escuela u ONG en el Centro de administración de Microsoft 365.
+ms.openlocfilehash: 5469d4dcd75bee2e6f8a188aa6f50d18ce6e06c4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903159"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537492"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Cambiar la directiva de expiración de las contraseñas de la organización
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> El Centro de administración está cambiando. Si su experiencia no coincide con los detalles presentados aquí, consulte [Acerca del nuevo Centro de administración de Microsoft 365](../microsoft-365-admin-center-preview.md?view=o365-worldwide).
-
-::: moniker-end
-
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview).
+Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?](../../business-video/admin-center-overview.md).
 
 Como administrador, puede hacer que las contraseñas de usuario expiren al cabo de un número determinado de días, o establecer que las contraseñas nunca expiren. De forma predeterminada, para su organización, las contraseñas están configuradas para que nunca expiren.
 
@@ -49,7 +42,7 @@ Según estudios recientes, los cambios de contraseña obligatorios causan más d
 
 Para poder realizar estos pasos, debe ser [Administrador global](../add-users/about-admin-roles.md).
 
-En caso de ser un usuario, no posee los permisos para establecer una contraseña que no expire nunca. Pídale al soporte técnico de su trabajo o escuela que siga los pasos de este artículo por usted.
+Si es un usuario, no tiene los permisos necesarios para configurar que la contraseña no expire nunca. Solicite al soporte técnico de su institución educativa o de su trabajo que siga los pasos de este artículo por usted.
 
 ## <a name="set-password-expiration-policy"></a>Establecer directiva de expiración de contraseña
 
@@ -90,12 +83,12 @@ Puede establecer más directivas y restricciones de contraseñas en Azure Active
 
 ## <a name="update-password-policy"></a>Actualizar la directiva de contraseñas
 
-El cmdlet Set-MsolPasswordPolicy actualiza la directiva de contraseñas de un inquilino o un dominio específico. Se requieren dos opciones de configuración. La primera es indicar el período de tiempo en el que una contraseña sigue siendo válida antes de que se cambie, y la segunda es indicar el número de días antes de la fecha de expiración de la contraseña que se activará cuando los usuarios reciban la primera notificación de que la contraseña va a expirar pronto.
+El cmdlet Set-MsolPasswordPolicy actualiza la directiva de contraseñas de un espacio empresarial o un dominio específico. Se requieren dos opciones de configuración. La primera es indicar el período de tiempo en el que una contraseña sigue siendo válida antes de que se cambie, y la segunda es indicar el número de días antes de la fecha de expiración de la contraseña en que se activará la primera notificación para los usuarios de que la contraseña va a expirar pronto.
 
 Para obtener información sobre cómo actualizar la directiva de contraseñas para un dominio o un inquilino específico, consulte [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0).
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Permitir que los usuarios puedan restablecer sus propias contraseñas](../add-users/let-users-reset-passwords.md)
+[Permitir que los usuarios puedan restablecer sus propias contraseñas](../add-users/let-users-reset-passwords.md) (artículo)
 
-[Restablecer contraseñas](../add-users/reset-passwords.md)
+[Restablecer contraseñas](../add-users/reset-passwords.md) (artículo)

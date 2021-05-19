@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga más información sobre el centro Microsoft 365 administración.
-ms.openlocfilehash: 7d355b5064c2a0344ac62653afcae8712dbfc73f
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 6d7fe36345ebd9234027e943d11266b7bcc2b30f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470429"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537396"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Información general del Centro de administración de Microsoft 365
 
@@ -47,11 +47,11 @@ Si tienes permiso para acceder al Centro de administración, verás **Administra
 
 En la parte superior del centro de administración, revisa las acciones principales. Es posible que veas diferentes acciones según lo que ya hayas configurado, como crear nuevas cuentas, usar Teams, configurar el correo electrónico e instalar Office aplicaciones. 
  
-En **Su organización** en la pestaña Usuarios hay una lista de personas que pueden acceder a aplicaciones y servicios, agregar nuevos usuarios, restablecer contraseñas o usar el **menú** Más acciones.  Seleccione una persona para ver o editar su información y configuración.  
+En **Su** organización  en la pestaña Usuarios hay una lista de personas que pueden acceder a aplicaciones y servicios, agregar nuevos usuarios, restablecer contraseñas o usar el menú tres puntos (más acciones). Seleccione una persona para ver o editar su información y configuración.  
 
-En la **Teams,** cree un nuevo equipo o administre los equipos existentes. Puede administrar los miembros de un equipo o seleccionar **Más acciones** para cambiar otras Teams configuración. 
+En la **Teams,** cree un nuevo equipo o administre los equipos existentes. Puede administrar los miembros de un equipo o seleccionar los tres puntos (más acciones) para cambiar otras Teams configuración. 
 
-En la **pestaña Suscripciones,** agregue más productos,  agregue licencias o use el menú Más acciones para modificar licencias o método de pago.
+En la **pestaña Suscripciones,** agregue más productos, agregue licencias o use el menú tres puntos (más acciones) para modificar licencias o método de pago.
 
 En la **pestaña Información,** busque vídeos y artículos sobre el Centro de administración y otras Microsoft 365 características. Para explorar las características más avanzadas del centro de administración, abra el menú de navegación y expanda los encabezados para ver más. Selecciona **Mostrar todo** para ver todo en el menú de navegación o usa la barra de búsqueda para encontrar rápidamente lo que estás buscando.
 
@@ -67,7 +67,7 @@ Las áreas de trabajo especializadas, como seguridad o administración de dispos
 
 Para ir al Centro de administración de Microsoft 365, vaya [a admin.microsoft.com](https://admin.microsoft.com) o, si ya ha iniciado sesión, seleccione el iniciador de aplicaciones y elija **Administrador**.
 
-En la página principal, puede crear tarjetas para tareas que realice con frecuencia. Para agregar una tarjeta nueva, selecciona **Agregar tarjeta** y, a continuación, selecciona el signo más junto a la tarjeta que quieras agregar. Cuando haya terminado, cierre la ventana. Puedes reorganizar las tarjetas seleccionándolas y arrastrándolas a donde quieras. Para quitar una tarjeta, seleccione **Más acciones** y, a continuación, elija **Quitar**.
+En la página principal, puede crear tarjetas para tareas que realice con frecuencia. Para agregar una tarjeta nueva, selecciona **Agregar tarjeta** y, a continuación, selecciona el signo más junto a la tarjeta que quieras agregar. Cuando haya terminado, cierre la ventana. Puedes reorganizar las tarjetas seleccionándolas y arrastrándolas a donde quieras. Para quitar una tarjeta, seleccione los tres puntos (más acciones) y, a continuación, **elija Quitar**.
 
 Para ver más tareas de administración, expanda el menú de navegación. Encontrarás opciones de configuración avanzadas en los centros de administración adicionales en la parte inferior.
 

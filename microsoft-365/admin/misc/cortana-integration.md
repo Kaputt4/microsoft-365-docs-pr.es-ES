@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Cuando inicien sesión con cuentas válidas profesionales o educativas, los usuarios podrán obtener servicios de asistencia basados en la nube con Cortana en experiencias Microsoft 365 que cumplen las promesas de Office 365 a nivel empresarial de privacidad, seguridad y cumplimiento.
-ms.openlocfilehash: a45f23c022474ff39eca891eec03139dda936027
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: dd00972f6e84f5d430ad860ea9cbf637bd7c790f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164674"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537468"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -81,6 +81,9 @@ Cortana empezó con Windows 10, versión 2004, y es una aplicación de Plataform
 [Más información sobre Cortana en Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview)
 
 ### <a name="cortana-voice-assistance-in-teams"></a>Asistente de voz de Cortana en Teams
+
+> [!NOTE]
+> La asistencia de voz de Cortana se admite en Microsoft Teams aplicaciones móviles para iOS y Android y Microsoft Teams para usuarios de Estados Unidos, Reino Unido, Canadá, India y Australia.  Salas de Microsoft Teams en Windows solo se admite para usuarios de Estados Unidos. La asistencia de voz de Cortana no está disponible actualmente para los inquilinos GCC, GCC-High, DoD, EDU. La expansión a otros idiomas y regiones se realizará como parte de futuras versiones.
 
 El asistente de voz de Cortana en la aplicación móvil de Teams y en dispositivos de pantalla de Microsoft Teams permite a los usuarios de Microsoft 365 Enterprise simplificar la comunicación, colaboración y tareas relacionadas con reuniones mediante el lenguaje natural hablado. Los usuarios pueden hablar a Cortana si seleccionan el botón del micrófono ubicado en la parte superior derecha en la aplicación móvil de Teams, o si dicen &#8220;Cortana&#8221; en la pantalla de Microsoft Teams. Para conectarse rápidamente con su equipo con manos libres y mientras se desplazan, los usuarios pueden decir consultas como &#8220;llamar a Megan&#8221; o &#8220;enviar mensaje a mi siguiente reunión&#8221;. Asimismo, los usuarios pueden entrar a reuniones si dicen &#8220;entrar a mi siguiente reunión&#8221; y usar el asistente de voz para compartir archivos, ver su calendario y más. Las experiencias de asistente de voz se ofrecen mediante servicios de Cortana de nivel empresarial que cumplen con todas las promesas de Office 365 de privacidad, seguridad y cumplimiento, tal y como se refleja en los [Términos de servicios en línea (OST)](https://www.microsoft.com/licensing/product-licensing/products).
 
@@ -139,7 +142,7 @@ Los usuarios individuales pueden optar por no usar Reproducir mis correos electr
 
 ### <a name="briefing-email"></a>Usar el correo de Informe de tareas pendientes
 
-Cortana envía un breve correo electrónico personalizado con tareas y compromisos que usted ha realizado y ofrece una forma práctica de marcarlos como **listo** o de programar tiempo de concentración para dedicarse a ellos. También incluye un resumen de sus reuniones y documentos relevantes para la jornada. Cortana extrae información de los mensaje de correo electrónico del usuario y los almacena en su buzón de correo de Exchange Online hasta que se consolide en el correo de Informe de tareas pendientes. En ningún momento serán los datos personales accesibles desde fuera de su buzón de correo de Exchange Online.
+Cortana envía un breve correo electrónico personalizado con tareas y compromisos que usted ha realizado y ofrece una forma práctica de marcarlos como **listo** o de programar tiempo de concentración para dedicarse a ellos. También incluye un resumen de sus reuniones y documentos relevantes para la jornada. Cortana extrae información de los mensaje de correo electrónico del usuario y los almacena en su buzón de correo de Exchange Online hasta que se consolide en el correo de Informe de tareas pendientes. En ningún momento serán los datos personales accesibles desde fuera de su buzón de correo de Exchange Online. Los usuarios obtienen acceso al correo electrónico de información solo si tienen licencias que incluyen el Exchange Online de servicio.
 
 ### <a name="how-to-opt-out-of-briefing-email"></a>Cómo optar por no usar el correo de Informe de tareas pendientes
 

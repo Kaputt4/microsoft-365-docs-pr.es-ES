@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: "Recursos de Microsoft\_365 Empresa Premium"
-summary: "Microsoft\_365 Empresa Premium (anteriormente Microsoft\_365 Empresa) es un servicio completo de suscripción para empresas de menos de 300\_empleados. Incluye los servicios y las aplicaciones de productividad de Office, herramientas de colaboración como Microsoft\_Teams y funcionalidades avanzadas de administración de dispositivos y seguridad."
+summary: "Microsoft\_365 Empresa Premium (anteriormente Microsoft\_365 Empresa) es un servicio completo de suscripción para empresas con menos de 300\_empleados. Incluye los servicios y las aplicaciones de productividad de Office, herramientas de colaboración como Microsoft\_Teams con funcionalidades avanzadas de administración de dispositivos y seguridad."
 brand: m365
 metadata:
   title: "Recursos de Microsoft\_365 Empresa Premium"
@@ -15,10 +15,10 @@ metadata:
 productDirectory:
   title: "Trabajo remoto seguro con Microsoft\_365 Empresa Premium"
   items:
-    - title: Lectura
+    - title: Reloj
       imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'
-      summary: Las mejores formas de habilitar el trabajo remoto seguro con Microsoft 365 Empresa Premium.
-      url: 'https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623'
+      summary: "Cinco principales ventajas de Microsoft\_365 Empresa Premium"
+      url: 'https://aka.ms/M365BPvideo'
     - title: Obtenga el kit de partners gratuito
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
       summary: Instrucciones prácticas y recursos indispensables para los partners para asegurar el trabajo remoto.

@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo comprar más licencias o reducir el número de licencias para su suscripción Microsoft 365 para empresas.
 ms.date: 04/07/2021
-ms.openlocfilehash: a327149a780d2059cfc69068fc4b2122e549773c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: a20e89ff28c582018c55281a85dbe115b58f9d74
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331687"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537276"
 ---
 # <a name="buy-or-remove-licenses"></a>Comprar o quitar licencias
 
@@ -68,7 +68,7 @@ Si ha quitado licencias de una suscripción, lo siguiente que debe hacer es elim
 1. En el centro de administración, vaya a la página **Facturación** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Sus productos</a>.
 ::: moniker-end
 
-2. En la **pestaña** Productos, busque la suscripción para la que desea comprar o quitar licencias. Seleccione **Más acciones** (tres puntos) y, a continuación, seleccione Comprar **licencias.** [¿Qué ocurre si no veo los botones Comprar licencias o Quitar licencias?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+2. En la **pestaña** Productos, busque la suscripción para la que desea comprar o quitar licencias. Seleccione los tres puntos (más acciones) y, a continuación, **seleccione Comprar licencias**. [¿Qué ocurre si no veo los botones Comprar licencias o Quitar licencias?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
 3. Si desea reducir el número de licencias, en  la parte superior del panel Comprar licencias, seleccione **quitar licencias**.
 4. Para comprar o quitar  licencias, en Nueva cantidad en el cuadro **Licencias** totales, escriba el número total de licencias que desea para esta suscripción. Por ejemplo, si tiene 100 licencias y desea agregar cinco más, escriba 105. Si desea quitar cinco de ellos, escriba 95.
 5. Seleccione **Guardar**.
@@ -98,7 +98,7 @@ Si prepagó la suscripción con una clave de producto, puede agregar más licenc
 - Las licencias agregadas en mitad del período de facturación aparecen en la siguiente factura. Si paga anualmente, se le factura en un mes por estos cambios.
 - En el siguiente extracto de facturación, se descuenta el cargo anterior para el número original de licencias. Agregamos un cargo prorrateado para el período de tiempo con el número original de licencias y agregamos un cargo para el nuevo recuento de licencias. También hay un cargo por el recuento de licencias actual durante el resto del período de facturación.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Si compró más licencias para su suscripción, lo siguiente que debe hacer es asignar esas licencias a los usuarios [de su organización](../../admin/manage/assign-licenses-to-users.md).
 
