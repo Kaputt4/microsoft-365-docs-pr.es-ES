@@ -18,12 +18,12 @@ description: Obtenga información sobre cómo reconocer y corregir el ataque de 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7869419677ba1d5d6b480b7f0dea7f67880af0c7
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: e5675a7a83bb62bae80f20e8e7c86fde38599ec6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644685"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538308"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Detectar y corregir las concesiones ilegales de consentimiento
 
@@ -64,7 +64,7 @@ Debe buscar en el registro de **auditoría** para encontrar signos, también den
 >
 > La entrada del registro de auditoría correspondiente puede tardar entre 30 minutos y 24 horas en mostrarse en los resultados de búsqueda después de que se produzca un evento.
 >
-> El tiempo durante el que se conserva y se puede buscar un registro de auditoría en el registro de auditoría depende de la suscripción de Microsoft 365 y, específicamente, del tipo de licencia asignada a un usuario específico. Para obtener más información, vea [Registro de auditoría](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> El tiempo durante el que se conserva y se puede buscar un registro de auditoría en el registro de auditoría depende de la suscripción Microsoft 365 y, específicamente, del tipo de licencia asignada a un usuario específico. Para obtener más información, vea [Registro de auditoría](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 >
 > Si este valor es true, indica que alguien con acceso de administrador global puede haber concedido un amplio acceso a los datos. Si esto es inesperado, siga los pasos [necesarios para confirmar un ataque](#how-to-confirm-an-attack).
 
@@ -72,7 +72,7 @@ Debe buscar en el registro de **auditoría** para encontrar signos, también den
 
 Si tiene una o más instancias de los IIC enumerados anteriormente, debe realizar una investigación adicional para confirmar positivamente que se produjo el ataque. Puedes usar cualquiera de estos tres métodos para confirmar el ataque:
 
-- Aplicaciones de inventario y sus permisos mediante el portal de Azure Active Directory. Este método es exhaustivo, pero solo puede comprobar un usuario a la vez, lo que puede llevar mucho tiempo si tiene muchos usuarios que comprobar.
+- Aplicaciones de inventario y sus permisos mediante el portal Azure Active Directory web. Este método es exhaustivo, pero solo puede comprobar un usuario a la vez, lo que puede llevar mucho tiempo si tiene muchos usuarios que comprobar.
 
 - Aplicaciones de inventario y sus permisos con PowerShell. Este es el método más rápido y exhaustivo, con la menor cantidad de sobrecarga.
 
@@ -80,15 +80,15 @@ Si tiene una o más instancias de los IIC enumerados anteriormente, debe realiza
 
 ## <a name="inventory-apps-with-access-in-your-organization"></a>Inventario de aplicaciones con acceso en la organización
 
-Puede hacerlo para los usuarios con el Portal de Azure Active Directory o PowerShell o hacer que los usuarios enumeren individualmente su acceso a la aplicación.
+Puede hacerlo para los usuarios con el portal de Azure Active Directory o PowerShell o hacer que los usuarios enumeren individualmente su acceso a la aplicación.
 
-### <a name="steps-for-using-the-azure-active-directory-portal"></a>Pasos para usar Azure Active Directory Portal
+### <a name="steps-for-using-the-azure-active-directory-portal"></a>Pasos para usar el Azure Active Directory Portal
 
-Puede buscar las aplicaciones a las que cualquier usuario individual ha concedido permisos mediante [el Portal de Azure Active Directory](https://portal.azure.com/).
+Puede buscar las aplicaciones a las que cualquier usuario individual ha concedido permisos mediante [el Azure Active Directory Portal](https://portal.azure.com/).
 
 1. Inicie sesión en Azure Portal con derechos administrativos.
 
-2. Seleccione la hoja Azure Active Directory.
+2. Seleccione la hoja Azure Active Directory hoja.
 
 3. Seleccione **Usuarios**.
 
@@ -104,7 +104,7 @@ Haga que los usuarios vayan y https://myapps.microsoft.com revisen su propio acc
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Pasos para hacerlo con PowerShell
 
-La forma más sencilla de comprobar el ataque de concesión ilegal de consentimiento es ejecutar [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), que volcará todas las concesiones de consentimiento de OAuth y las aplicaciones de OAuth para todos los usuarios del arrendamiento en un archivo .csv.
+La forma más sencilla de comprobar el ataque de concesión ilegal de consentimiento es ejecutar [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), que volcará todas las concesiones de consentimiento de OAuth y las aplicaciones de OAuth para todos los usuarios de su arrendamiento en un archivo .csv.
 
 #### <a name="pre-requisites"></a>Requisitos previos
 
@@ -119,11 +119,11 @@ La forma más sencilla de comprobar el ataque de concesión ilegal de consentimi
 
 1. Inicie sesión en el equipo desde el que ejecutará el script con derechos de administrador local.
 
-2. Descargue o copie el script [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) de GitHub en una carpeta desde la que ejecutará el script. Esta será la misma carpeta en la que se escribirá el archivo "permissions.csv" de salida.
+2. Descargue o copie el script [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) de GitHub a una carpeta desde la que ejecutará el script. Esta será la misma carpeta en la que se escribirá el archivo "permissions.csv" de salida.
 
 3. Abra una instancia de PowerShell como administrador y abra la carpeta en la que guardó el script.
 
-4. Conéctese al directorio mediante el cmdlet [Connect-AzureAD.](/powershell/module/azuread/connect-azuread)
+4. Conectar a su directorio mediante el cmdlet [Conectar-AzureAD.](/powershell/module/azuread/connect-azuread)
 
 5. Ejecute este comando de PowerShell:
 
@@ -133,7 +133,7 @@ La forma más sencilla de comprobar el ataque de concesión ilegal de consentimi
 
 El script genera un archivo denominado Permissions.csv. Siga estos pasos para buscar concesiones de permisos de aplicación ilegales:
 
-1. En la columna ConsentType (columna G) busque el valor "AllPrinciples". El permiso AllPrincipals permite a la aplicación cliente obtener acceso al contenido de todos los usuarios del arrendamiento. Las aplicaciones nativas de Microsoft 365 necesitan este permiso para funcionar correctamente. Todas las aplicaciones que no sean de Microsoft con este permiso deben revisarse detenidamente.
+1. En la columna ConsentType (columna G) busque el valor "AllPrinciples". El permiso AllPrincipals permite a la aplicación cliente obtener acceso al contenido de todos los usuarios del arrendamiento. Las Microsoft 365 nativas necesitan este permiso para funcionar correctamente. Todas las aplicaciones que no sean de Microsoft con este permiso deben revisarse detenidamente.
 
 2. En la columna Permiso (columna F) revise los permisos que cada aplicación delegada tiene para el contenido. Busque el permiso "Lectura" y "Escritura" o "*. All" permiso y revisar estos cuidadosamente porque puede que no sean adecuados.
 
@@ -143,7 +143,7 @@ El script genera un archivo denominado Permissions.csv. Siga estos pasos para bu
 
 ## <a name="determine-the-scope-of-the-attack"></a>Determinar el ámbito del ataque
 
-Una vez que haya terminado de realizar el inventario del acceso a la aplicación, revise el registro de **auditoría** para determinar el ámbito completo de la infracción. Busque en los usuarios afectados, los períodos de tiempo a los que la aplicación ilícita tuvo acceso a su organización y los permisos que tenía la aplicación. Puede buscar el registro **de auditoría** en el Centro de seguridad y cumplimiento de [Microsoft 365.](../../compliance/search-the-audit-log-in-security-and-compliance.md)
+Una vez que haya terminado de realizar el inventario del acceso a la aplicación, revise el registro de **auditoría** para determinar el ámbito completo de la infracción. Busque en los usuarios afectados, los períodos de tiempo a los que la aplicación ilícita tuvo acceso a su organización y los permisos que tenía la aplicación. Puede buscar el registro **de auditoría en** el Centro de seguridad & [cumplimiento](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 
 > [!IMPORTANT]
 > [La auditoría de buzones](../../compliance/enable-mailbox-auditing.md) de correo y la auditoría de actividad para administradores y usuarios deben estar [habilitadas](../../compliance/turn-audit-log-search-on-or-off.md) antes del ataque para que pueda obtener esta información.
@@ -152,9 +152,9 @@ Una vez que haya terminado de realizar el inventario del acceso a la aplicación
 
 Después de identificar una aplicación con permisos ilícitos, tiene varias formas de quitar ese acceso.
 
-- Puede revocar el permiso de la aplicación en el Portal de Azure Active Directory:
+- Puede revocar el permiso de la aplicación en el portal de Azure Active Directory mediante:
 
-  - Vaya al usuario afectado en la **hoja Usuario de Azure Active Directory.**
+  - Vaya al usuario afectado en la **hoja Azure Active Directory Usuario.**
 
   - Seleccione **Aplicaciones**.
 
@@ -184,10 +184,10 @@ Su suscripción a Microsoft 365 incluye un potente conjunto de capacidades de se
 
 - [Una aplicación inesperada en la lista de](/azure/active-directory/application-access-unexpected-application) aplicaciones guía a los administradores a través de varias acciones que pueden querer realizar después de darse cuenta de que hay aplicaciones inesperadas con acceso a datos.
 
-- [La integración de aplicaciones con Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent) es una introducción de alto nivel de consentimiento y permisos.
+- [La integración de aplicaciones Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent) es una introducción de alto nivel de permisos y consentimientos.
 
 - [Los problemas de desarrollo de mi aplicación](/azure/active-directory/active-directory-application-dev-development-content-map) proporcionan vínculos a diversos artículos relacionados con el consentimiento.
 
-- Los objetos de entidad de seguridad de aplicación y servicio de [Azure Active Directory (Azure AD)](/azure/active-directory/develop/active-directory-application-objects) proporcionan una introducción a los objetos de entidad de seguridad de aplicación y servicio que son esenciales para el modelo de aplicaciones.
+- Los objetos de entidad de seguridad de aplicación y servicio [de Azure Active Directory (Azure AD)](/azure/active-directory/develop/active-directory-application-objects) proporcionan una introducción a los objetos de entidad de seguridad de aplicación y servicio que son esenciales para el modelo de aplicaciones.
 
 - [Administrar el acceso a las aplicaciones](/azure/active-directory/active-directory-managing-access-to-apps) es una introducción a las capacidades que los administradores tienen para administrar el acceso de los usuarios a las aplicaciones.

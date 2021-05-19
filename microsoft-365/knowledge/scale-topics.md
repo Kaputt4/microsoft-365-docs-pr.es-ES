@@ -13,22 +13,22 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Obtenga información sobre procedimientos recomendados para administrar los muchos temas de su organización con Temas de Viva.
-ms.openlocfilehash: 3246c7e91c315dadb6c2b14008c9a4da378409d5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: dd9fe658d4f698ac50563b5c9ea141a090f6141d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52334156"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538416"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Administrar temas a escala en Temas de Microsoft Viva
 
-Al indizar los sitios de SharePoint o toda la organización para Temas de Viva, es posible que se generen muchos temas. Cuando esto sucede y ve miles  de temas sugeridos en la página Administrar temas, puede resultar difícil saber por dónde empezar. En este artículo se describe cómo Viva Topics le ayuda a optimizar los temas e información que se muestran a los usuarios que buscan información, incluso en organizaciones grandes con un gran número de temas.
+Al indizar los SharePoint web o toda la organización para Temas de Viva, se pueden generar muchos temas. Cuando esto sucede y ve miles  de temas sugeridos en la página Administrar temas, puede resultar difícil saber por dónde empezar. En este artículo se describe cómo Viva Topics le ayuda a optimizar los temas e información que se muestran a los usuarios que buscan información, incluso en organizaciones grandes con un gran número de temas.
 
-En primer lugar, un aviso de los cuatro estados para los temas:
+En primer lugar, un aviso de las [cuatro etapas de los temas:](manage-topics.md#topic-stages)
 
-- **Sugerido:** AI ha identificado un tema y tiene suficientes recursos, conexiones y propiedades compatibles. (Se marcan como **un tema sugerido** en la interfaz de usuario).
+- **Sugerido**: se ha identificado un tema en AI y tiene suficientes recursos compatibles, conexiones y propiedades. (Se marcan como **un tema sugerido** en la interfaz de usuario).
 
-- **Confirmado:** se valida un tema sugerido por AI. Un administrador de conocimientos debe confirmar la validación del tema. Para que un tema se confirme, debe haber una red de dos votos positivos recibidos de usuarios que votaron mediante el mecanismo de comentarios en la tarjeta del tema. Por ejemplo, si un usuario votó positivo y un usuario votó negativo para un tema en particular, aún necesitará dos votos positivos más para confirmar el tema.
+- **Confirmado**: se valida un tema sugerido por AI. Un administrador de conocimientos debe confirmar la validación del tema. Para que un tema se confirme, debe haber una red de dos votos positivos recibidos de usuarios que votaron mediante el mecanismo de comentarios en la tarjeta del tema. Por ejemplo, si un usuario votó positivo y un usuario votó negativo para un tema en particular, aún necesitará dos votos positivos más para confirmar el tema.
  
 - **Publicado:** un tema confirmado que se ha seleccionado: se han realizado ediciones manuales para mejorar su calidad.
 
@@ -98,7 +98,7 @@ La página principal de un centro de temas es otra ubicación donde se recopilan
 
 Cuando permita una amplia aglomeración de temas, debe tener en cuenta los siguientes factores:
 
--   Los usuarios verán la **opción Editar** en páginas de temas y podrán editar las páginas en la misma experiencia que otras páginas modernas de SharePoint.
+-   Los usuarios verán la **opción Editar** en las páginas de temas y podrán editar las páginas en la misma experiencia que otras páginas SharePoint modernas.
 
 -   Algunos elementos web **de** temas sugeridos no se pueden quitar. El nombre del tema, los nombres alternativos, la definición, las personas sugeridas y los recursos sugeridos no se pueden quitar.
 
@@ -126,7 +126,7 @@ El uso de taxonomías existentes puede proporcionar una lista de temas que proba
 
 -   Productos y servicios que proporciona su organización
 
--   Teams en su organización
+-   Teams en la organización
 
 -   Proyectos de alto perfil
 
@@ -160,7 +160,7 @@ Los sitios de portal más grandes de la organización podrían haber invertido t
 
 Si su organización ha invertido en bases de conocimiento o sitios wiki, estos pueden proporcionar una lista de temas que usar para sus esfuerzos de curación iniciales. Si son especialmente grandes, seleccione los temas más vistos o editados como punto de partida.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Administrar temas en el Centro de temas](manage-topics.md)
 

@@ -14,25 +14,26 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Obtenga información sobre cómo evitar que los invitados se agregó a un grupo específico
-ms.openlocfilehash: 572746a666586920ad85dafddbd78997940490d7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1db2055f3e546c05905dbf4c854333387112f06e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907945"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538932"
 ---
-# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Impedir que los invitados se agregó a un grupo específico de Microsoft 365 o a un equipo de Microsoft Teams
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Impedir que los invitados se agregó a un grupo Microsoft 365 grupo o Microsoft Teams grupo
 
 Si desea permitir el acceso de invitado a la mayoría de grupos y equipos, pero tiene algunos en los que desea impedir el acceso de invitado, puede bloquear el acceso de invitado para grupos y equipos individuales. (Bloquear el acceso de invitado a un equipo se realiza bloqueando el acceso de invitado al grupo asociado). Esto evita que se agregó invitados nuevos, pero no quita los invitados que ya están en el grupo o el equipo.
 
-Si usa etiquetas de confidencialidad en su organización, se recomienda usarlas para controlar el acceso de invitados por grupo. Para obtener información sobre cómo hacerlo, use etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos [de Microsoft 365 y sitios de SharePoint.](../compliance/sensitivity-labels-teams-groups-sites.md) Este es el método recomendado.
+Si usa etiquetas de confidencialidad en su organización, se recomienda usarlas para controlar el acceso de invitados por grupo. Para obtener información sobre cómo hacerlo, use etiquetas de confidencialidad para proteger el contenido de [Microsoft Teams, Microsoft 365 grupos](../compliance/sensitivity-labels-teams-groups-sites.md)y SharePoint web . Este es el método recomendado.
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>Cambiar la configuración de grupo con Microsoft PowerShell
 
-También puede evitar la adición de nuevos invitados a grupos individuales mediante PowerShell. (Recuerde que el sitio de SharePoint asociado del equipo tiene [controles de uso compartido de invitados independientes](/sharepoint/change-external-sharing-site)).)
+También puede evitar la adición de nuevos invitados a grupos individuales mediante PowerShell. (Recuerde que el sitio asociado del equipo SharePoint cuenta con controles de uso [compartido de invitados independientes).)](/sharepoint/change-external-sharing-site)
 
-Debe usar la versión preliminar de [Azure Active Directory PowerShell para Graph](/powershell/azure/active-directory/install-adv2) (nombre de módulo **AzureADPreview**) para cambiar la configuración de acceso de invitado de nivel de grupo:
+Debe usar la versión preliminar de [Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2) para Graph (nombre de módulo **AzureADPreview**) para cambiar la configuración de acceso de invitado de nivel de grupo:
 
 - Si todavía no ha instalado ninguna de las versiones de los módulos de PowerShell de Azure AD, consulte [Instalar el módulo de Azure AD](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) y siga las instrucciones para instalar la versión preliminar pública.
 
@@ -75,7 +76,7 @@ Para obtener más información, vea [Allow or block invitations to B2B users fro
 
 ## <a name="add-guests-to-the-global-address-list"></a>Agregar invitados a la lista global de direcciones
 
-De forma predeterminada, los invitados no están visibles en la lista global de direcciones de Exchange. Siga los pasos que se indican a continuación para que un invitado sea visible en la lista global de direcciones.
+De forma predeterminada, los invitados no están visibles en la Exchange global de direcciones. Siga los pasos que se indican a continuación para que un invitado sea visible en la lista global de direcciones.
 
 Para buscar el ObjectID del invitado, ejecute:
 
@@ -95,8 +96,8 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 [Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 
-[Administrar la pertenencia a grupos en el Centro de administración de Microsoft 365](../admin/create-groups/add-or-remove-members-from-groups.md)
+[Administrar la pertenencia a grupos en el centro Microsoft 365 administración](../admin/create-groups/add-or-remove-members-from-groups.md)
   
-[Revisiones de acceso a Azure Active Directory](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
+[Azure Active Directory de acceso](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser)

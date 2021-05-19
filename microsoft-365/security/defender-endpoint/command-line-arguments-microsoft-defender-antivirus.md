@@ -12,20 +12,17 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ksarens
 manager: dansimp
-ms.date: 03/19/2021
+ms.date: 05/17/2021
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 85fb60d8d4504ba3a4aa8744c1183d094da01a9b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: eb7fa7fdf5b88bd9361176003817116bcbb1a087
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274753"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538908"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>Configurar y administrar Antivirus de Microsoft Defender con la mpcmdrun.exe de línea de comandos
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Se aplica a:**
 
@@ -35,13 +32,15 @@ Puede realizar varias funciones Antivirus de Microsoft Defender con la herramien
 
 > [!NOTE]
 > Es posible que deba abrir una versión de nivel de administrador del símbolo del sistema. Cuando busque símbolo **del sistema en** el menú Inicio, elija Ejecutar como **administrador**.
-> Si está ejecutando una versión actualizada de Microsoft Defender Platform, ejecute `**MpCmdRun**` desde la siguiente ubicación: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>` .
+> Si está ejecutando una versión actualizada de Microsoft Defender Platform, ejecute `**MpCmdRun**` desde la siguiente ubicación: `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>` .
+> Para obtener más información acerca de la plataforma antimalware, [vea Antivirus de Microsoft Defender actualizaciones y líneas base](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-La utilidad tiene los siguientes comandos:
+La utilidad MpCmdRun usa la siguiente sintaxis:
 
 ```console
 MpCmdRun.exe [command] [-options]
 ```
+
 Aquí le mostramos un ejemplo:
 
 ```console
@@ -51,7 +50,7 @@ MpCmdRun.exe -Scan -ScanType 2
 | Comando  | Descripción   |
 |:----|:----|
 | `-?`**o**`-h`   | Muestra todas las opciones disponibles para esta herramienta |
-| `-Scan [-ScanType [0\|1\|2\|3]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | Busca software malintencionado. Los valores **de ScanType** son: **0** Valor predeterminado, según la configuración, **-1** Examen rápido, **-2** Examen completo, **-3** Examen personalizado de archivos y directorios.  CpuThrottling respetará la limitación de CPU configurada desde la directiva |
+| `-Scan [-ScanType [0\|1\|2\|3]] [-File <path> [-DisableRemediation] [-BootSectorScan] [-CpuThrottling]] [-Timeout <days>] [-Cancel]` | Busca software malintencionado. Los valores **de ScanType** son:<p>**0** Valor predeterminado, según la configuración<p>**-1** Examen rápido<p>**-2** Examen completo<p>**-3** Examen personalizado de archivos y directorios.<p>CpuThrottling respetará la limitación de CPU configurada desde la directiva |
 | `-Trace [-Grouping #] [-Level #]` | Inicia el seguimiento de diagnóstico |
 | `-GetFiles [-SupportLogLocation <path>]` | Recopila información de soporte técnico. Vea '[collecting diagnostic data](collect-diagnostic-data.md)'  |
 | `-GetFilesDiagTrack`  | Igual que `-GetFiles` , pero salidas a la carpeta temporal de DiagTrack |
@@ -71,7 +70,7 @@ MpCmdRun.exe -Scan -ScanType 2
 
 |Mensaje de error | Posible motivo
 |:----|:----|
-| `ValidateMapsConnection failed (800106BA) or 0x800106BA` | El Antivirus de Microsoft Defender está deshabilitado. Habilite el servicio e inténtelo de nuevo. <br>   **Nota:**  En Windows 10 1909 o versiones anteriores y Windows Server 2019 o versiones anteriores, el servicio se llamaba servicio "Antivirus de Windows Defender".|
+| `ValidateMapsConnection failed (800106BA) or 0x800106BA` | El Antivirus de Microsoft Defender está deshabilitado. Habilite el servicio e inténtelo de nuevo. <br>   **Nota:**  En Windows 10 1909 o versiones anteriores, y Windows Server 2019 o versiones anteriores, el servicio se llamaba servicio Antivirus de Windows Defender *anterior.*|
 | `0x80070667` | Está ejecutando el comando desde un equipo que Windows 10 versión 1607 o anterior, o Windows Server 2016 `-ValidateMapsConnection` o posterior. Ejecute el comando desde un equipo que Windows 10 versión 1703 o posterior, o Windows Server 2019 o posterior.|
 | `'MpCmdRun' is not recognized as an internal or external command, operable program or batch file.` | La herramienta debe ejecutarse desde: o (donde puede diferir dado que las actualizaciones de la plataforma `%ProgramFiles%\Windows Defender` `C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2012.4-0` son `2012.4-0` mensuales excepto marzo)|
 | `ValidateMapsConnection failed to establish a connection to MAPS (hr=80070005 httpcode=450)` | No hay suficientes privilegios. Use el símbolo del sistema (cmd.exe) como administrador.|
@@ -81,7 +80,7 @@ MpCmdRun.exe -Scan -ScanType 2
 | `ValidateMapsConnection failed to establish a connection to MAPS (hr=800722F0D` | El firewall bloquea la conexión o realiza una inspección SSL. |
 | `ValidateMapsConnection failed to establish a connection to MAPS (hr=80072EE7 httpcode=451)` | El firewall bloquea la conexión o realiza una inspección SSL. |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Configurar las funciones del Antivirus de Microsoft Defender](configure-microsoft-defender-antivirus-features.md)
 - [Administrar Antivirus de Microsoft Defender en su empresa](configuration-management-reference-microsoft-defender-antivirus.md)

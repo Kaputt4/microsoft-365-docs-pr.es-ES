@@ -1,5 +1,5 @@
 ---
-title: Página de entidad de correo electrónico de Microsoft Defender para Office 365 (MDO)
+title: La página de entidad de correo electrónico de Microsoft Defender Office 365 (MDO)
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Los clientes de Microsoft Defender para Office 365 E5 y P1 y P2 ahora pueden obtener una vista de 360 grados de cada correo electrónico con página de entidad de correo electrónico.
-ms.openlocfilehash: 8b531980852336679aad5f2013d63269c238e49c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: aa5d7effb66c4805f6983fa1afac19255bc996e4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933366"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539100"
 ---
 # <a name="the-email-entity-page"></a>Página de la entidad de correo electrónico
 
@@ -34,7 +34,7 @@ Los administradores de Microsoft Defender para Office 365 (o MDO) E5 y MDO P1 y 
 
 ## <a name="reach-the-email-entity-page"></a>Llegar a la página de entidad de correo electrónico
 
-Cualquiera de los centros de seguridad y cumplimiento de Office existentes (protection.office.com) o el nuevo Centro de seguridad de Microsoft 365 (security.microsoft.com) le permitirán ver y usar la página de entidad de correo electrónico.
+El Centro de seguridad & cumplimiento (protection.office.com) o el nuevo centro de seguridad de Microsoft 365 (security.microsoft.com) le permitirán ver y usar la página de entidad de correo electrónico.
 
 |Hacia el centro|URL|Navegación|
 |---|---|---|
@@ -111,12 +111,12 @@ Los usuarios verán detalles enriquecidos de detonación para los datos adjuntos
 
 *Detalles del correo* electrónico: detalles necesarios para una comprensión más detallada del correo electrónico disponible en la *pestaña* Análisis.
 
-- *Reglas de transporte de Exchange (ETR* o reglas de flujo de correo): estas reglas se aplican a un mensaje en la capa de transporte y tienen prioridad sobre los veredictos de suplantación de identidad y correo no deseado. Solo se pueden crear y modificar en el Centro de administración de Exchange, pero si algún ETR se aplica a un mensaje, aquí se mostrarán el nombre etr y el GUID. Información valiosa para fines de seguimiento.
+- Exchange de transporte *(ETR* o reglas de flujo de correo): estas reglas se aplican a un mensaje en la capa de transporte y tienen prioridad sobre los veredictos de suplantación de identidad y correo no deseado. Solo se pueden crear y modificar en el centro de administración de Exchange, pero si algún ETR se aplica a un mensaje, el nombre etr y el GUID se mostrarán aquí. Información valiosa para fines de seguimiento.
 
 - *Invalidaciones del* sistema: este es un medio para hacer excepciones a la ubicación de entrega destinada a un mensaje al invalidar la ubicación de entrega dada por el sistema (según la tecnología de amenazas y detección).
 
 - *Regla de buzón de* correo no deseado: 'Junk' es una regla de bandeja de entrada oculta que está habilitada de forma predeterminada en todos los buzones.
-  - Cuando la regla de correo no deseado está habilitada en el buzón de correo, Exchange Online Protection (EOP) puede mover mensajes a correo no deseado según algunos criterios. El movimiento puede basarse en la acción de veredicto de filtrado de correo no deseado Mover el mensaje a la carpeta *correo* no deseado o en la lista Remitentes bloqueados en el buzón. Deshabilitar la regla de correo no deseado impide la entrega de mensajes a la carpeta de correo no deseado según la *lista Remitentes seguros* del buzón.
+  - Cuando la regla de correo no deseado está habilitada en el buzón, Exchange Online Protection (EOP) puede mover mensajes a correo no deseado según algunos criterios. El movimiento puede basarse en la acción de veredicto de filtrado de correo no deseado Mover el mensaje a la carpeta *correo* no deseado o en la lista Remitentes bloqueados en el buzón. Deshabilitar la regla de correo no deseado impide la entrega de mensajes a la carpeta de correo no deseado en función de la lista Caja fuerte *remitentes* en el buzón.
   - Cuando la regla  de correo no deseado está deshabilitada en el buzón, EOP no puede mover mensajes a la carpeta correo no deseado en función de la acción de veredicto de filtrado de correo no deseado Mover el mensaje a la carpeta correo no deseado *o* la colección de listas seguras del buzón.
 
 - *Nivel de queja masiva (BCL):* el nivel de queja masiva (BCL) del mensaje. Un BCL más alto indica que es más probable que un mensaje de correo masivo genere quejas (el resultado natural si es probable que el correo electrónico sea correo no deseado).
@@ -131,7 +131,7 @@ Los usuarios verán detalles enriquecidos de detonación para los datos adjuntos
 
 - *Fecha de creación del* dominio: especifica la fecha de creación del dominio de envío. Un dominio recién creado es algo que podrías tener cuidado si otras señales indican algún comportamiento sospechoso.
 
-*Autenticación de* correo electrónico: los métodos de autenticación de correo electrónico usados por Microsoft 365 incluyen SPF, DKIM y DMARC.
+*Autenticación de* correo electrónico: los métodos de autenticación de correo Microsoft 365 incluyen SPF, DKIM y DMARC.
 
 - Marco de directivas de remitente (**SPF):** describe los resultados de la comprobación de SPF para el mensaje. Los valores posibles pueden ser:
   - Pass (dirección IP): la comprobación SPF del mensaje pasado e incluye la dirección IP del remitente. El cliente tiene autorización para enviar o retransmitir un correo electrónico en nombre del dominio del remitente.
@@ -153,4 +153,4 @@ Los usuarios verán detalles enriquecidos de detonación para los datos adjuntos
   - Bestguesspass: indica que no existe ningún registro TXT de DMARC para el dominio, pero si hubiera existido, la comprobación DMARC del mensaje habría pasado.
   - Ninguno: indica que no existe ningún registro TXT de DMARC para el dominio de envío en DNS.
 
-*Autenticación* compuesta: Microsoft 365 usa este valor para combinar la autenticación de correo electrónico como SPF, DKIM y DMARC, para determinar si el mensaje es auténtico. Usa el *dominio From:* del correo como base de la evaluación.
+*Autenticación* compuesta: este es un valor que Microsoft 365 para combinar la autenticación de correo electrónico como SPF, DKIM y DMARC, para determinar si el mensaje es auténtico. Usa el *dominio From:* del correo como base de la evaluación.

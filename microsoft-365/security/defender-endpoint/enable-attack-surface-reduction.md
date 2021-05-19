@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: fc952ceec7d26d853e39cab0a803daace62a4767
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: b3460e2c9b6073c518bea46147be69d4b89cd96a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345893"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538644"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Habilitar las reglas de la reducción de superficie expuesta a ataques
 
@@ -98,6 +98,86 @@ Los siguientes procedimientos para habilitar reglas ASR incluyen instrucciones s
 
 4. Seleccione **Aceptar en** los tres paneles de configuración. A **continuación,** seleccione Crear si está creando un nuevo archivo de protección de puntos de conexión o **Guardar** si está editando uno existente.
 
+## <a name="mem"></a>MEM
+
+Puede usar Microsoft Endpoint Manager (MEM) OMA-URI para configurar reglas ASR personalizadas. El siguiente procedimiento usa la regla Bloquear el uso indebido de controladores [firmados vulnerables](attack-surface-reduction.md#block-abuse-of-exploited-vulnerable-signed-drivers) explotados para el ejemplo.
+
+1. Abra el centro Microsoft Endpoint Manager administración de Microsoft Endpoint Manager (MEM). En el **menú Inicio,** haga clic en **Dispositivos**, seleccione **Perfil de configuración** y, a continuación, haga clic en Crear **perfil.**
+
+   > [!div class="mx-imgBorder"]
+   > ![MEM Create Profile](images/mem01-create-profile.png)
+
+2. En **Crear un perfil**, en las dos listas desplegables siguientes, seleccione lo siguiente:
+
+   - En **Plataforma,** **seleccione Windows 10 y versiones posteriores**
+   - En **Tipo de perfil**, seleccione **Plantillas**
+
+   Seleccione **Personalizado** y, a continuación, haga clic **en Crear**.
+
+   > [!div class="mx-imgBorder"]
+   > ![Atributos de perfil de regla MEM](images/mem02-profile-attributes.png)
+
+3. La herramienta Plantilla personalizada se abre en el paso **1 Conceptos básicos**. En **1 Conceptos básicos**, en **Nombre**, escriba un nombre para la plantilla y, en **Descripción,** puede escribir una descripción (opcional).
+
+   > [!div class="mx-imgBorder"]
+   > ![Atributos básicos de MEM](images/mem03-1-basics.png)
+
+4. Haga clic en **Siguiente**. Paso **2 Se abren las opciones de** configuración. Para OMA-URI Configuración, haga clic en **Agregar**. Ahora aparecen dos opciones: **Agregar** y **Exportar**.
+
+   > [!div class="mx-imgBorder"]
+   > ![Configuración de MEM](images/mem04-2-configuration-settings.png)
+
+5. Haga clic **en Agregar** de nuevo. Se abre el Configuración agregar fila **OMA-URI.** En **Agregar fila**, haga lo siguiente:
+
+   - En **Nombre**, escriba un nombre para la regla.
+   - En **Descripción**, escriba una breve descripción.
+   - En **OMA-URI,** escriba o pegue el vínculo OMA-URI específico de la regla que va a agregar.
+   - En **Tipo de datos**, seleccione **Cadena**.
+   - En **Value**, escriba o pegue el valor GUID, el signo y el valor State sin espacios \= (_GUID=StateValue_). Dónde: {0 : Disable (Disable the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
+
+   > [!div class="mx-imgBorder"]
+   > ![Configuración de URI de OMA de MEM](images/mem05-add-row-oma-uri.png)
+
+6. Haga clic en **Guardar**. **Agregar cierres** de fila. En **Personalizado**, haga clic **en Siguiente**. En el paso **3 Etiquetas de ámbito,** las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
+
+   - Haga **clic en Seleccionar etiquetas de ámbito,** seleccione la etiqueta de ámbito (opcional) y, a continuación, haga clic en **Siguiente**.
+   - O haga clic en **Siguiente**
+
+7. En el **paso 4 Asignaciones**, en **Grupos** incluidos - para los grupos que desea que se aplique esta regla - seleccione una de las siguientes opciones:
+
+   - **Agregar grupos**
+   - **Agregar todos los usuarios**
+   - **Agregar todos los dispositivos**
+
+   > [!div class="mx-imgBorder"]
+   > ![Asignaciones de MEM](images/mem06-4-assignments.png)
+
+8. En **Grupos excluidos,** seleccione los grupos que desee excluir de esta regla y, a continuación, haga clic **en Siguiente**.
+
+9. En el **paso 5 Reglas de aplicabilidad** para la siguiente configuración, haga lo siguiente:
+
+   - En **Regla**, seleccione **Asignar perfil si**, o No asignar perfil **si**
+   - En **Propiedad**, seleccione la propiedad a la que desea que se aplique esta regla
+   - En **Valor**, escriba el valor o intervalo de valores aplicable
+
+   > [!div class="mx-imgBorder"]
+   > ![Reglas de aplicabilidad de MEM](images/mem07-5-applicability-rules.png)
+
+10. Haga clic en **Siguiente**. En el paso **6 Revisar + crear**, revise la configuración y la información que ha seleccionado y especificado y, a continuación, haga clic en **Crear**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Revisión y creación de MEM](images/mem08-6-review-create.png)
+
+    > [!NOTE]
+    > Las reglas están activas y están activas en cuestión de minutos.
+
+>[!NOTE]
+> Control de conflictos:
+> 
+> Si asignas a un dispositivo dos directivas ASR diferentes, la forma en que se controla el conflicto son reglas a las que se asignan estados diferentes, no hay ninguna administración de conflictos en su lugar y el resultado es un error.
+> 
+> Las reglas no conflictivas no producirán un error y la regla se aplicará correctamente. El resultado es que se aplica la primera regla y las siguientes reglas no conflictivas se combinan en la directiva.
+
 ## <a name="mdm"></a>MDM
 
 Use el proveedor de servicios de configuración [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) (CSP) para habilitar y establecer individualmente el modo de cada regla.
@@ -166,75 +246,6 @@ Ejemplo:
 
    > [!WARNING]
    > No use comillas, ya que no son compatibles con la columna **Nombre de** valor o la **columna** Valor.
-
-## <a name="microsoft-endpoint-manager-custom-procedure"></a>Microsoft Endpoint Manager procedimiento personalizado
-
-Puede usar un centro de administración Microsoft Endpoint Manager (MEM) para configurar reglas ASR personalizadas.
-
-1. Abra el centro Microsoft Endpoint Manager administración de Microsoft Endpoint Manager (MEM). En el **menú Inicio,** haga clic en **Dispositivos**, seleccione **Perfil de configuración** y, a continuación, haga clic en Crear **perfil.**
-
-   ![MEM Create Profile](images/mem01-create-profile.png)
-
-2. En **Crear un perfil**, en las dos listas desplegables siguientes, seleccione lo siguiente:
-
-   - En **Plataforma,** **seleccione Windows 10 y versiones posteriores**
-   - En **Tipo de perfil**, seleccione **Plantillas**
-
-   Seleccione **Personalizado** y, a continuación, haga clic **en Crear**.
-
-   ![Atributos de perfil de regla MEM](images/mem02-profile-attributes.png)
-
-3. La herramienta Plantilla personalizada se abre en el paso **1 Conceptos básicos**. En **1 Conceptos básicos**, en **Nombre**, escriba un nombre para la plantilla y, en **Descripción,** puede escribir una descripción (opcional).
-
-   ![Atributos básicos de MEM](images/mem03-1-basics.png)
-
-4. Haga clic en **Siguiente**. Paso **2 Se abren las opciones de** configuración. Para OMA-URI Configuración, haga clic en **Agregar**. Ahora aparecen dos opciones: **Agregar** y **Exportar**.
-
-   ![Configuración de MEM](images/mem04-2-configuration-settings.png)
-
-5. Haga clic **en Agregar** de nuevo. Se abre el Configuración agregar fila **OMA-URI.** En **Agregar fila**, haga lo siguiente:
-
-   - En **Nombre**, escriba un nombre para la regla.
-   - En **Descripción**, escriba una breve descripción.
-   - En **OMA-URI,** escriba o pegue el vínculo OMA-URI específico de la regla que va a agregar.
-   - En **Tipo de datos**, seleccione **Cadena**.
-   - En **Value**, escriba o pegue el valor GUID, el signo y el valor State sin espacios \= (_GUID=StateValue_). Dónde: {0 : Disable (Disable the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
-
-   ![Configuración de URI de OMA de MEM](images/mem05-add-row-oma-uri.png)
-
-6. Haga clic en **Guardar**. **Agregar cierres** de fila. En **Personalizado**, haga clic **en Siguiente**. En el paso **3 Etiquetas de ámbito,** las etiquetas de ámbito son opcionales. Realiza una de las siguientes acciones:
-
-   - Haga **clic en Seleccionar etiquetas de ámbito,** seleccione la etiqueta de ámbito (opcional) y, a continuación, haga clic en **Siguiente**.
-   - O haga clic en **Siguiente**
-
-7. En el **paso 4 Asignaciones**, en **Grupos** incluidos - para los grupos que desea que se aplique esta regla - seleccione una de las siguientes opciones:
-
-   - **Agregar grupos**
-   - **Agregar todos los usuarios**
-   - **Agregar todos los dispositivos**
-
-   ![Asignaciones de MEM](images/mem06-4-assignments.png)
-
-8. En **Grupos excluidos,** seleccione los grupos que desee excluir de esta regla y, a continuación, haga clic **en Siguiente**.
-
-9. En el **paso 5 Reglas de aplicabilidad** para la siguiente configuración, haga lo siguiente:
-
-   - En **Regla**, seleccione **Asignar perfil si**, o No asignar perfil **si**
-   - En **Propiedad**, seleccione la propiedad a la que desea que se aplique esta regla
-   - En **Valor**, escriba el valor o intervalo de valores aplicable
-
-   ![Reglas de aplicabilidad de MEM](images/mem07-5-applicability-rules.png)
-
-10. Haga clic en **Siguiente**. En el paso **6 Revisar + crear**, revise la configuración y la información que ha seleccionado y especificado y, a continuación, haga clic en **Crear**.
-
-   ![Revisión y creación de MEM](images/mem08-6-review-create.png)
-
->[!NOTE]
-> Las reglas están activas y están activas en cuestión de minutos.
-
->[!NOTE]
-> Control de conflictos: si asigna a un dispositivo dos directivas ASR diferentes, la forma en que se controla el conflicto son reglas a las que se asignan estados diferentes, no hay ninguna administración de conflictos en su lugar y el resultado es un error.
-> Las reglas no conflictivas no producirán un error y la regla se aplicará correctamente. El resultado es que se aplica la primera regla y las siguientes reglas no conflictivas se combinan en la directiva.
 
 ## <a name="powershell"></a>PowerShell
 

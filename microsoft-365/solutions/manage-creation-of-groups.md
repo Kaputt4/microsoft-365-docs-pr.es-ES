@@ -16,19 +16,20 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
-description: Obtenga información sobre cómo controlar qué usuarios pueden crear grupos de Microsoft 365.
-ms.openlocfilehash: 092ff821911ef0af2b7867e1b870b68b1b6355b3
-ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
+recommendations: false
+description: Obtenga información sobre cómo controlar qué usuarios pueden crear Microsoft 365 grupos.
+ms.openlocfilehash: 19a106d255708f4b1df8f798219ea7ea778bbef3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51656990"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539184"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Administrar quién puede crear grupos de Microsoft 365
 
-De forma predeterminada, todos los usuarios pueden crear grupos de Microsoft 365. Este es el enfoque recomendado porque permite a los usuarios empezar a colaborar sin necesidad de asistencia de TI.
+De forma predeterminada, todos los usuarios pueden crear Microsoft 365 grupos. Este es el enfoque recomendado porque permite a los usuarios empezar a colaborar sin necesidad de asistencia de TI.
 
-Si su empresa requiere restringir quién puede crear grupos, puede restringir la creación de grupos de Microsoft 365 a los miembros de un grupo o grupo de seguridad de Microsoft 365 en particular.
+Si su empresa requiere restringir quién puede crear grupos, puede restringir la creación de grupos Microsoft 365 a los miembros de un grupo de Microsoft 365 grupo o grupo de seguridad determinados.
 
 Si le preocupa que los usuarios creen equipos o grupos que no cumplan con los estándares empresariales, considere la posibilidad de requerir a los usuarios que completen un curso de formación y, a continuación, agregarlos al grupo de usuarios permitidos.
 
@@ -41,35 +42,35 @@ Cuando se limita quién puede crear un grupo, afecta a todos los servicios que d
 - Microsoft Stream
 - Planner
 - Power BI (clásico)
-- Project for the web /Roadmap
+- Project web /Roadmap
 
-Los pasos de este artículo no impedirán que los miembros de determinados roles creen grupos. Los administradores globales de Office 365 pueden crear grupos a través del Centro de administración de Microsoft 365, Planner, Exchange y SharePoint Online. Otros roles pueden crear grupos a través de medios limitados, que se enumeran a continuación.
+Los pasos de este artículo no impedirán que los miembros de determinados roles creen grupos. Office 365 Los administradores globales pueden crear grupos a través Microsoft 365 centro de administración, Planner, Exchange y SharePoint Online. Otros roles pueden crear grupos a través de medios limitados, que se enumeran a continuación.
 
-- Administrador de Exchange: Centro de administración de Exchange, Azure AD
-- Soporte técnico de nivel 1 de partner: Centro de administración de Microsoft 365, Centro de administración de Exchange, Azure AD
-- Soporte técnico de nivel 2 de partner: Centro de administración de Microsoft 365, Centro de administración de Exchange, Azure AD
+- Exchange Administrador: Exchange de administración, Azure AD
+- Soporte técnico de nivel 1 de partner: centro Microsoft 365 administración, centro Exchange administración, Azure AD
+- Soporte técnico de nivel 2 de partners: centro Microsoft 365 administración, centro Exchange administración, Azure AD
 - Escritores de directorios: Azure AD
-- Administrador de SharePoint: Centro de administración de SharePoint, Azure AD
-- Administrador de servicio de Teams: Centro de administración de Teams, Azure AD
-- Administrador de usuarios: Centro de administración de Microsoft 365, Azure AD
+- SharePoint Administrador: SharePoint de administración, Azure AD
+- Teams Administrador de servicios: Teams de administración, Azure AD
+- Administrador de usuarios: Microsoft 365 de administración, Azure AD
 
 Si es miembro de uno de estos roles, puede crear grupos de Microsoft 365 para usuarios restringidos y, a continuación, asignar al usuario como propietario del grupo.
 
-## <a name="licensing-requirements"></a>Requisitos de licencia
+## <a name="licensing-requirements"></a>Requisitos de licencias
 
-Para administrar quién crea grupos, las siguientes personas necesitan licencias de Azure AD Premium o licencias EDU básicas de Azure AD asignadas:
+Para administrar quién crea grupos, las siguientes personas necesitan licencias de Azure AD Premium o licencias EDU básicas de Azure AD asignadas a ellos:
 
 - El administrador que configura estas opciones de creación de grupos
 - Los miembros del grupo a los que se les permite crear grupos
 
 > [!NOTE]
-> Consulta [Asignar o quitar licencias en el portal](/azure/active-directory/fundamentals/license-users-groups) de Azure Active Directory para obtener más información sobre cómo asignar licencias de Azure.
+> Consulte [Asignar o quitar licencias en el portal de Azure Active Directory para](/azure/active-directory/fundamentals/license-users-groups) obtener más información sobre cómo asignar licencias de Azure.
 
-Las siguientes personas no necesitan licencias EDU de Azure AD Premium o Azure AD Basic asignadas:
+Las siguientes personas no necesitan licencias educaciones de Azure AD Premium o De Azure AD Basic asignadas:
 
-- Personas que son miembros de grupos de Microsoft 365 y que no tienen la capacidad de crear otros grupos.
+- Personas que son miembros de Microsoft 365 y que no tienen la capacidad de crear otros grupos.
 
-## <a name="step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups"></a>Paso 1: Crear un grupo para usuarios que necesiten crear grupos de Microsoft 365
+## <a name="step-1-create-a-group-for-users-who-need-to-create-microsoft-365-groups"></a>Paso 1: Crear un grupo para los usuarios que necesitan crear Microsoft 365 grupos
 
 Solo se puede usar un grupo de la organización para controlar quién puede crear grupos. Sin embargo, puede anidar otros grupos como miembros de este grupo.
 
@@ -83,11 +84,11 @@ Los administradores de los roles enumerados anteriormente no necesitan ser miemb
 
 4. Termina de configurar el grupo, agregando personas u otros grupos que quieras que puedan crear grupos en tu organización.
 
-Para obtener instrucciones detalladas, vea Crear, editar o eliminar un grupo de seguridad en el Centro de administración [de Microsoft 365](../admin/email/create-edit-or-delete-a-security-group.md).
+Para obtener instrucciones detalladas, vea [Create, edit, or delete a security group in the Microsoft 365 admin center](../admin/email/create-edit-or-delete-a-security-group.md).
 
 ## <a name="step-2-run-powershell-commands"></a>Paso 2: Ejecutar los comandos de PowerShell
 
-Debe usar la versión preliminar de [Azure Active Directory PowerShell para Graph (AzureAD)](/powershell/azure/active-directory/install-adv2) (nombre de módulo **AzureADPreview**) para cambiar la configuración de acceso de invitado de nivel de grupo:
+Debe usar la versión preliminar de Azure Active Directory PowerShell para [Graph (AzureAD) (nombre](/powershell/azure/active-directory/install-adv2) de módulo **AzureADPreview**) para cambiar la configuración de acceso de invitado de nivel de grupo:
 
 - Si todavía no ha instalado ninguna de las versiones de los módulos de PowerShell de Azure AD, consulte [Instalar el módulo de Azure AD](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) y siga las instrucciones para instalar la versión preliminar pública.
 
@@ -95,7 +96,7 @@ Debe usar la versión preliminar de [Azure Active Directory PowerShell para Grap
 
 - Si ya ha instalado la versión preliminar, ejecute `Install-Module AzureADPreview` para asegurarse de que es la última versión de este módulo.
 
-Copie el script siguiente en un editor de texto, como bloc de notas, o el [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
+Copie el script siguiente en un editor de texto, como Bloc de notas, o el Windows PowerShell [ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise).
 
 Reemplace *\<GroupName\>* por el nombre del grupo que creó. Por ejemplo:
 

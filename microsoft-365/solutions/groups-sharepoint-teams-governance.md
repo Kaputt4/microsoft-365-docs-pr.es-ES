@@ -14,38 +14,39 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Obtenga información sobre las interacciones de configuración entre grupos de Microsoft 365, Teams y SharePoint
-ms.openlocfilehash: ba3578903731a66d66c943f8daaec1a61943228c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: Obtenga información sobre las interacciones de configuración entre Microsoft 365 grupos, Teams y SharePoint
+ms.openlocfilehash: 14a21cd34fe38b47d93d0cbcec5e9cb2a3bc49c7
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921017"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539088"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-teams-and-sharepoint"></a>Interacciones de configuración entre grupos de Microsoft 365, Teams y SharePoint
 
-Algunas opciones de configuración para grupos de Microsoft 365, Microsoft Teams y SharePoint en Microsoft 365, especialmente relacionadas con el uso compartido y la creación de grupos o grupos y sitios de SharePoint, se superponen entre sí. En este artículo se proporcionan descripciones de estas interacciones y procedimientos recomendados para trabajar con esta configuración.
+Algunas opciones de configuración para grupos de Microsoft 365, Microsoft Teams y SharePoint en Microsoft 365, especialmente relacionadas con el uso compartido y la creación de sitios de grupo o grupo y SharePoint, se superponen entre sí. En este artículo se proporcionan descripciones de estas interacciones y procedimientos recomendados para trabajar con esta configuración.
 
-![Diagrama venn de características de SharePoint, Teams y grupos](../media/teams-groups-sharepoint-venn.png)
+![Diagrama venn de características SharePoint, Teams y grupos](../media/teams-groups-sharepoint-venn.png)
 
-## <a name="the-effects-of-sharepoint-settings-on-groups-and-teams"></a>Efectos de la configuración de SharePoint en grupos y equipos
+## <a name="the-effects-of-sharepoint-settings-on-groups-and-teams"></a>Efectos de la configuración SharePoint en grupos y equipos
 
-|Configuración de SharePoint|Descripción|Efecto en grupos de Microsoft 365 y Teams|Recomendación|
+|SharePoint configuración|Descripción|Efecto en Microsoft 365 grupos y Teams|Recomendación|
 |:-----------------|:----------|:---------------------------------------|:-------------|
-|Uso compartido externo para la organización y el sitio|Determina si los sitios, archivos y carpetas se pueden compartir con personas ajenas a la organización.|Si la configuración de SharePoint, grupos y Teams no coincide, es posible que los invitados del equipo no tengan acceso al sitio o que se produzca un acceso externo inesperado.|Al cambiar la configuración de uso compartido, compruebe Configuración de grupos, Configuración de Teams y Configuración del sitio de SharePoint para los sitios de grupo conectados a grupos.<br><br> Consulta [Colaborar con invitados en un equipo](./collaborate-as-team.md)|
-|Domain allow/block|Permite o impide que el contenido se comparta con dominios especificados.|Grupos y Teams no reconocen listas de permitidos o bloqueados de SharePoint. Los usuarios de dominios no permitidos en SharePoint podrían obtener acceso a sitios o contenido de SharePoint a través de un equipo.|Administrar listas de dominios permitidos y bloqueados para Azure AD y SharePoint juntos. Cree un proceso de gobierno en toda la organización para permitir y bloquear dominios.<br><br>Consulte [Configuración de dominio de SharePoint](/sharepoint/restricted-domains-sharing) y Configuración de dominio de Azure [AD](/azure/active-directory/b2b/allow-deny-list)|
-|Permitir que solo los usuarios en grupos de seguridad específicos compartan externamente|Especifica grupos de seguridad que pueden compartir sitios, carpetas y archivos de SharePoint externamente.|Esta configuración no impide que los propietarios de equipos compartan equipos externamente. Los invitados de equipo tienen acceso al sitio de SharePoint asociado.||
-|Configuración de uso compartido de sitios de SharePoint|Determina quién puede compartir el sitio directamente fuera de la pertenencia al equipo. Esto lo configura el propietario del equipo o del sitio.|Esta configuración no afecta directamente al equipo, pero puede permitir a los usuarios agregarse a un sitio y no tener acceso al propio equipo ni a otros recursos de Teams|Considere la posibilidad de usar esta configuración para limitar el uso compartido del sitio directamente y administrar el acceso al sitio a través del equipo.|
-|Permitir a los usuarios crear sitios desde la página de inicio de SharePoint y OneDrive|Especifica si los usuarios pueden crear nuevos sitios de SharePoint.|Si esta configuración está desactivada, los usuarios aún pueden crear sitios de grupo conectados mediante la creación de un equipo.||
+|Uso compartido externo para la organización y el sitio|Determina si los sitios, archivos y carpetas se pueden compartir con personas ajenas a la organización.|Si SharePoint, grupos y Teams no coinciden, es posible que los invitados del equipo no tengan acceso al sitio o que se produzca un acceso externo inesperado.|Al cambiar la configuración de uso compartido, comprueba La configuración de grupos, Teams configuración y SharePoint configuración del sitio para sitios de grupo conectados a grupos.<br><br> Consulta [Colaborar con invitados en un equipo](./collaborate-as-team.md)|
+|Domain allow/block|Permite o impide que el contenido se comparta con dominios especificados.|Los grupos y Teams no reconocen SharePoint permitir o bloquear listas. Los usuarios de dominios no permitidos en SharePoint podrían obtener acceso a SharePoint sitios o contenido a través de un equipo.|Administrar listas de dominios permitidos o bloqueados para Azure AD y SharePoint juntos. Cree un proceso de gobierno en toda la organización para permitir y bloquear dominios.<br><br>Consulta [SharePoint configuración de dominio y](/sharepoint/restricted-domains-sharing) configuración de dominio de Azure [AD](/azure/active-directory/b2b/allow-deny-list)|
+|Permitir que solo los usuarios en grupos de seguridad específicos compartan externamente|Especifica grupos de seguridad que pueden compartir SharePoint sitios, carpetas y archivos de forma externa.|Esta configuración no impide que los propietarios de equipos compartan equipos externamente. Los invitados de equipo tienen acceso al sitio SharePoint asociado.||
+|SharePoint de uso compartido de sitios|Determina quién puede compartir el sitio directamente fuera de la pertenencia al equipo. Esto lo configura el propietario del equipo o del sitio.|Esta configuración no afecta directamente al equipo, pero puede permitir a los usuarios agregarse a un sitio y no tener acceso al propio equipo u otros recursos Teams web|Considere la posibilidad de usar esta configuración para limitar el uso compartido del sitio directamente y administrar el acceso al sitio a través del equipo.|
+|Permitir a los usuarios crear sitios desde SharePoint página de inicio y OneDrive|Especifica si los usuarios pueden crear nuevos SharePoint web.|Si esta configuración está desactivada, los usuarios aún pueden crear sitios de grupo conectados mediante la creación de un equipo.||
 
 ## <a name="the-effects-of-groups-settings-on-teams"></a>Efectos de la configuración de grupos en equipos
 
-|Configuración de grupos de Microsoft 365|Descripción|Efecto en Teams|Recomendación|
+|Microsoft 365 configuración de grupos|Descripción|Efecto en Teams|Recomendación|
 |:---------------------------|:----------|:--------------|:-------------|
 |Directivas de nomenclatura|Especifica prefijos y sufijos de nombre de grupo y palabras bloqueadas para la creación de grupos|Las directivas se aplican para los usuarios que crean equipos.||
-|Acceso de invitado de grupo|Especifica si se pueden agregar personas fuera de la organización a grupos.|Si la configuración de grupos o de uso compartido de invitados de Teams está desactivada, el equipo no se puede compartir con invitados.|Al cambiar la configuración de uso compartido de invitados, compruebe la configuración de Teams, Grupos y el sitio de SharePoint asociado con el equipo.<br><br> Consulta [Colaborar con invitados en un equipo](./collaborate-as-team.md)|
-|Creación de grupos por grupo de seguridad|Los grupos solo los pueden crear los miembros de un grupo de seguridad específico.|Los usuarios que no sean miembros del grupo de seguridad no podrán crear un equipo.|Asegúrese de que el proceso para solicitar un grupo incluye instrucciones para solicitar un equipo o un sitio de SharePoint.|
-|Directiva de expiración de grupo|Especifica un período de tiempo después del cual los grupos que no se usan activamente se eliminarán automáticamente.|Cuando se elimina el grupo, también se eliminan el equipo y el sitio de SharePoint asociado. El contenido protegido por directivas de retención se conserva.|Use directivas de expiración para evitar la expansión de equipos, grupos y sitios sin usar.|
+|Acceso de invitado de grupo|Especifica si se pueden agregar personas fuera de la organización a grupos.|Si los grupos o Teams configuración de uso compartido de invitados están desactivados, el equipo no se puede compartir con invitados.|Al cambiar la configuración de uso compartido de invitados, compruebe la configuración de Teams, Grupos y el sitio SharePoint asociado con el equipo.<br><br> Consulta [Colaborar con invitados en un equipo](./collaborate-as-team.md)|
+|Creación de grupos por grupo de seguridad|Los grupos solo los pueden crear los miembros de un grupo de seguridad específico.|Los usuarios que no sean miembros del grupo de seguridad no podrán crear un equipo.|Asegúrese de que el proceso para solicitar un grupo incluye instrucciones para solicitar un equipo o un SharePoint web.|
+|Directiva de expiración de grupo|Especifica un período de tiempo después del cual los grupos que no se usan activamente se eliminarán automáticamente.|Cuando se elimina el grupo, el equipo y el sitio SharePoint asociado también se eliminan. El contenido protegido por directivas de retención se conserva.|Use directivas de expiración para evitar la expansión de equipos, grupos y sitios sin usar.|
 
 ## <a name="related-topics"></a>Temas relacionados
 

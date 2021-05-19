@@ -21,12 +21,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la configuración y los filtros contra correo no deseado que ayudarán a evitar el correo no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eaff771d6fa0490819ec076b5a9a43ac843cf207
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: e6a4113925956c67e80a5239b8f9823acaf7f75b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650271"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538320"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protección contra correo no deseado en EOP
 
@@ -40,7 +40,7 @@ ms.locfileid: "51650271"
 > [!NOTE]
 > Este tema está dirigido a los administradores. Para obtener temas de usuario final, vea [Overview of the Junk Email Filter](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) y Learn about junk email and [phishing](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31).
 
-En organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP protege automáticamente los mensajes de correo electrónico contra correo no deseado (correo no deseado).
+En Microsoft 365 organizaciones con buzones en organizaciones de Exchange Online o independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, EOP protege automáticamente los mensajes de correo electrónico contra correo no deseado (correo no deseado).
 
 El plan de seguridad para el correo electrónico de Microsoft incluye un enfoque sin igual que abarca diferentes productos. La tecnología contra correo no deseado y anti phishing de EOP se aplica en nuestras plataformas de correo electrónico para proporcionar a los usuarios las últimas herramientas e innovaciones contra correo no deseado y contra suplantación de identidad en toda la red. El objetivo de EOP es ofrecer un servicio de correo electrónico completo y práctico que ayude a detectar el correo no deseado, las amenazas de correo electrónico fraudulento (phishing) y los virus, y que proteja a los usuarios de todo ello.
 
@@ -51,23 +51,20 @@ A medida que su uso aumenta, también lo hace el abuso. El correo electrónico n
 
 ## <a name="anti-spam-technologies-in-eop"></a>Tecnologías contra correo no deseado en EOP
 
-Para ayudar a reducir el correo no deseado, EOP incluye protección contra correo no deseado que usa tecnologías de filtrado de correo no deseado propietarias para identificar y separar el correo no deseado del correo electrónico legítimo. El filtrado de correo no deseado de EOP aprende de las amenazas conocidas de correo no deseado y suplantación de identidad y los comentarios de los usuarios de nuestra plataforma de consumidores, Outlook.com. Los comentarios continuos de los usuarios de EOP que participan en el programa de clasificación de correo electrónico no deseado garantizan que las tecnologías de EOP estén en un proceso continuo de aprendizaje y mejora.
+Para ayudar a reducir el correo no deseado, EOP incluye protección contra correo no deseado que usa tecnologías de filtrado de correo no deseado propietarias para identificar y separar el correo no deseado del correo electrónico legítimo. EOP spam filtering learns from known spam and phishing threats and user feedback from our consumer platform, Outlook.com. Los comentarios continuos de los usuarios de EOP que participan en el programa de clasificación de correo electrónico no deseado garantizan que las tecnologías de EOP estén en un proceso continuo de aprendizaje y mejora.
 
 La configuración contra correo no deseado en EOP está hecha de las siguientes tecnologías:
 
 - **Filtrado de** conexiones: identifica los servidores de origen de correo electrónico buenos y malos al principio de la conexión de correo electrónico entrante a través de la lista de direcciones IP permitidos, la lista de direcciones IP bloqueados y la lista segura *(una* lista dinámica pero no editable de remitentes de confianza mantenidos por Microsoft). Estas opciones se configuran en la directiva de filtro de conexión. Obtenga más información en [Configurar el filtrado de conexiones](configure-the-connection-filter-policy.md).
 
-  > [!NOTE]
-  > La inteligencia suplantación de identidad usa el filtrado de conexiones para crear listas de permitidos y bloqueados de remitentes que suplanten su dominio de correo electrónico. Para obtener más información, vea [Learn more about spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
-
 - Filtrado de correo no deseado (filtrado de **contenido):** EOP usa los veredictos de filtrado de correo no deseado **Correo** no deseado **,** Correo no deseado de alta **confianza,** Correo electrónico masivo, **Correo** electrónico de suplantación de identidad y Correo electrónico de **suplantación** de identidad de elevada confianza para clasificar los mensajes. Puede configurar las acciones que deben realizarse en función de estos veredictos y puede configurar las opciones de notificación del usuario final para los mensajes que se han puesto en cuarentena en lugar de entregarse. Para obtener más información, vea [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
   > [!NOTE]
-  > De forma predeterminada, el filtrado de correo no deseado está configurado para enviar mensajes marcados como correo no deseado a la carpeta de correo no deseado del destinatario. Sin embargo, en entornos híbridos donde EOP protege los buzones de Exchange locales, debe configurar dos reglas de flujo de correo (también conocidas como reglas de transporte) en la organización local de Exchange para reconocer los encabezados de correo no deseado de EOP que se agregan a los mensajes. Para obtener información, consulte [Configuración de un EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+  > De forma predeterminada, el filtrado de correo no deseado está configurado para enviar mensajes marcados como correo no deseado a la carpeta de correo no deseado del destinatario. Sin embargo, en entornos híbridos donde EOP protege los buzones de correo de Exchange locales, debe configurar dos reglas de flujo de correo (también conocidas como reglas de transporte) en la organización de Exchange local para reconocer los encabezados de correo no deseado de EOP que se agregan a los mensajes. Para obtener información, consulte [Configuración de un EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
 - **Filtrado de correo** no deseado saliente: EOP también comprueba que los usuarios no envíen correo no deseado, ya sea en el contenido de mensajes salientes o superando los límites de mensajes salientes. Para obtener más información, vea [Configure outbound spam filtering in Microsoft 365](configure-the-outbound-spam-policy.md).
 
-- **Inteligencia suplantación:** para obtener más información, vea Más información sobre la [suplantación de inteligencia en Microsoft 365](learn-about-spoof-intelligence.md).
+- **Inteligencia de suplantación:** para obtener más información, vea Protección contra la suplantación [en EOP](anti-spoofing-protection.md).
 
 ## <a name="manage-errors-in-spam-filtering"></a>Administrar errores en el filtrado de correo no deseado
 
@@ -79,7 +76,7 @@ Estos son algunos procedimientos recomendados que se aplican a cualquiera de los
 
 - **Examine los encabezados de mensajes** contra correo no deseado: estos valores le dirán por qué se marcó un mensaje como correo no deseado o por qué omitió el filtrado de correo no deseado. Para obtener más información, vea [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md).
 
-- Apunte su registro MX a **Microsoft 365:** para que EOP proporcione la mejor protección, siempre recomendamos que primero envíe correo electrónico a Microsoft 365. Para obtener instrucciones, vea [Create DNS records at any DNS hosting provider for Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+- **Apunte el registro MX** a Microsoft 365: para que EOP proporcione la mejor protección, siempre recomendamos que envíe correo electrónico a Microsoft 365 primero. Para obtener instrucciones, vea [Create DNS records at any DNS hosting provider for Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
   Si el registro MX apunta a otra ubicación (por ejemplo, una solución o dispositivo contra correo no deseado de terceros), es difícil que EOP proporcione un filtrado de correo no deseado preciso. En este escenario, debe configurar el filtrado mejorado para conectores (también conocido como _listado de omitir_). Para obtener instrucciones, consulte [Enhanced Filtering for Connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
@@ -95,7 +92,7 @@ Estos son algunos procedimientos recomendados que se aplican a cualquiera de los
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>Impedir la entrega de correo no deseado a la Bandeja de entrada
 
-- **Compruebe la configuración de** la organización: tenga cuidado con las opciones que permiten a los mensajes omitir el filtrado de correo no deseado (por ejemplo, si agrega su propio dominio a la lista de dominios permitidos en directivas contra correo no deseado). Para obtener nuestra configuración recomendada, vea Configuración recomendada para EOP y Microsoft Defender para la seguridad de [Office 365](recommended-settings-for-eop-and-office365.md) y [Crear listas de remitentes seguros.](create-safe-sender-lists-in-office-365.md)
+- **Compruebe la configuración de** la organización: tenga cuidado con las opciones que permiten a los mensajes omitir el filtrado de correo no deseado (por ejemplo, si agrega su propio dominio a la lista de dominios permitidos en directivas contra correo no deseado). Para obtener nuestra configuración recomendada, vea Configuración recomendada para [EOP](recommended-settings-for-eop-and-office365.md) y Microsoft Defender para Office 365 seguridad y [Crear listas de remitentes seguros.](create-safe-sender-lists-in-office-365.md)
 
 - **Compruebe que** la regla de correo no deseado está habilitada en el buzón del usuario: está habilitada de forma predeterminada, pero si está deshabilitada, los mensajes marcados como correo no deseado no se pueden mover a la carpeta correo no deseado. Para obtener más información, vea [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
@@ -103,25 +100,25 @@ Estos son algunos procedimientos recomendados que se aplican a cualquiera de los
 
 - **Cancelar la suscripción al correo electrónico masivo** Si el mensaje era algo para lo que el usuario se suscribió (boletines, anuncios de productos, etc.) y contiene un vínculo para cancelar la suscripción de una fuente de confianza, considere la posibilidad de pedirles que simplemente cancelen la suscripción.
 
-- EOP independiente: cree reglas de flujo de correo en los veredictos de filtrado de correo no deseado local de Exchange para **EOP:** en entornos EOP independientes donde EOP protege los buzones locales de Exchange, debe configurar reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtrado de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta Correo no deseado. Para obtener información, consulte [Configuración de un EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+- EOP independiente: cree reglas de flujo de correo en Exchange local para veredictos de filtrado de correo no deseado de **EOP:** en entornos EOP independientes donde EOP protege buzones de correo Exchange locales, debe configurar reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtrado de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta correo no deseado. Para obtener información, consulte [Configuración de un EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
 ### <a name="prevent-good-email-from-being-identified-as-spam"></a>Impedir que el correo electrónico bueno se identifique como correo no deseado
 
 Estos son algunos pasos que puede seguir para ayudar a evitar falsos positivos:
 
-- **Compruebe la configuración del filtro de correo no** deseado de Outlook del usuario:
+- **Compruebe la configuración del filtro de correo Outlook correo no deseado del usuario:**
 
-  - **Compruebe que el filtro** de correo no deseado de Outlook está deshabilitado: cuando el filtro de correo no deseado de Outlook está establecido en el valor predeterminado **No** hay filtrado automático, Outlook no intenta clasificar los masajes como correo no deseado.  Cuando se establece  en Bajo o **Alto,** el filtro de correo no deseado de Outlook usa su propia tecnología de filtro SmartScreen para identificar y mover correo no deseado a la carpeta correo no deseado, por lo que podría obtener falsos positivos. Tenga en cuenta que Microsoft dejó de producir actualizaciones de definición de correo no deseado para los filtros SmartScreen en Exchange y Outlook en noviembre de 2016. Las definiciones de correo no deseado de SmartScreen existentes se dejaron en su lugar, pero es probable que su eficacia se degrade con el tiempo.
+  - **Compruebe** que el filtro de correo no deseado de Outlook está deshabilitado: cuando el filtro de correo no deseado de Outlook se establece en el valor predeterminado **No** hay filtrado automático , Outlook no intenta clasificar los masajes como correo no deseado.  Cuando se establece  en Bajo o **Alto,** el filtro de correo no deseado de Outlook usa su propia tecnología de filtro SmartScreen para identificar y mover correo no deseado a la carpeta correo no deseado, por lo que podría obtener falsos positivos. Tenga en cuenta que Microsoft dejó de producir actualizaciones de definición de correo no deseado para los filtros SmartScreen en Exchange y Outlook noviembre de 2016. Las definiciones de correo no deseado de SmartScreen existentes se dejaron en su lugar, pero es probable que su eficacia se degrade con el tiempo.
 
-  - Compruebe que la configuración **de Outlook "Solo** listas seguras" está deshabilitada: cuando esta configuración está habilitada, solo los mensajes de los remitentes de la lista remitentes seguros del usuario o la lista de destinatarios seguros se entregan a la Bandeja de entrada; el correo electrónico de todos los demás se mueve automáticamente a la carpeta Correo no deseado.
+  - Compruebe que la configuración Outlook "solo listas de **Caja fuerte"** está deshabilitada: cuando esta configuración está habilitada, solo los mensajes de remitentes de la lista de remitentes de Caja fuerte o de la lista de destinatarios Caja fuerte del usuario se entregan a la Bandeja de entrada; el correo electrónico de todos los demás se mueve automáticamente a la carpeta Correo no deseado.
 
   Para obtener más información acerca de estas opciones, vea [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Use las listas de remitentes seguros** disponibles: Para obtener información, vea [Crear listas de remitentes seguros.](create-safe-sender-lists-in-office-365.md)
 
-- **Compruebe que los usuarios se encuentran dentro** de los límites de envío y recepción, tal como se describe en [Límites](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) de recepción y envío en la descripción del servicio de Exchange Online.
+- **Compruebe que los usuarios se encuentran dentro** de los límites de envío y recepción, tal como se describe en [Límites](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) de recepción y envío en la Exchange Online descripción del servicio.
 
-- **EOP independiente:** use la sincronización de directorios: si usa EOP independiente para ayudar a proteger la organización local de Exchange, debe sincronizar la configuración del usuario con el servicio mediante la sincronización de directorios. De esta forma, se asegura de que EOP respeta las listas de remitentes seguros de los usuarios. Para obtener más información, consulte [utilizar la sincronización de directorios para administrar usuarios de correo](manage-mail-users-in-eop.md#use-directory-synchronization-to-manage-mail-users).
+- **EOP independiente:** use la sincronización de directorios: si usa EOP independiente para ayudar a proteger su organización Exchange local, debe sincronizar la configuración del usuario con el servicio mediante la sincronización de directorios. De esta forma, se asegura de que EOP respeta las listas de remitentes seguros de los usuarios. Para obtener más información, consulte [utilizar la sincronización de directorios para administrar usuarios de correo](manage-mail-users-in-eop.md#use-directory-synchronization-to-manage-mail-users).
 
 ## <a name="anti-spam-legislation"></a>Legislación contra correo no deseado
 

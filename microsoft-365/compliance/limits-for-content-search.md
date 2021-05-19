@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Obtenga información sobre los límites vigentes para la búsqueda de contenido y las características principales de exhibición de documentos electrónicos en el centro de Microsoft 365 cumplimiento.
-ms.openlocfilehash: 47004473efe3407e9123fd15a7b1bf5f23e9fb23
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 5ca6fd30b40fbfaa3b93095eee403979f541d154
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311417"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538428"
 ---
 # <a name="limits-for-ediscovery-search"></a>Límites para la búsqueda de exhibición de documentos electrónicos 
 
@@ -39,7 +39,7 @@ En la tabla siguiente se enumeran los límites de búsqueda al usar la herramien
 |El número máximo de buzones o sitios que se pueden buscar en una sola búsqueda  <br/> |Sin límite <sup>1</sup> <br/> |
 |El número máximo de búsquedas que se pueden ejecutar al mismo tiempo en la organización.  <br/> |30  <br/> |
 |El número máximo de búsquedas en toda la organización que se pueden ejecutar al mismo tiempo. <br/> |3  <br/> |
-|El número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo. Este límite es más probable que se cumpla cuando el usuario intente iniciar varias búsquedas mediante el comando **Get-ComplianceSearch \| Start-ComplianceSearch** en PowerShell del Centro de seguridad & cumplimiento.  <br/> |10    <br/> |
+|El número máximo de búsquedas que un solo usuario puede iniciar al mismo tiempo. Este límite es más probable que se cumpla cuando el usuario intente iniciar varias búsquedas mediante el comando **Get-ComplianceSearch \| Start-ComplianceSearch** en PowerShell del Centro de seguridad & cumplimiento.  <br/> |10  <br/> |
 |Número máximo de elementos por buzón de usuario que se muestran en la página de vista previa al obtener una vista previa de los resultados de búsqueda de contenido.  <br/> |100  <br/> |
 |El número máximo de elementos encontrados en todos los buzones de usuario que se muestran en la página de vista previa al obtener una vista previa de los resultados de la búsqueda. Se muestran los elementos más recientes.  <br/> |1,000  <br/> |
 |El número máximo de buzones de usuario de los que se puede obtener una vista previa de los resultados de búsqueda. Si hay más de 1000 buzones que contienen contenido que coincide con la consulta de búsqueda, solo estarán disponibles los primeros 1000 buzones con la mayoría de resultados de búsqueda para la vista previa.  <br/> |1,000  <br/> |
@@ -47,12 +47,12 @@ En la tabla siguiente se enumeran los límites de búsqueda al usar la herramien
 |El número máximo de sitios (en SharePoint y OneDrive para la Empresa) que se pueden obtener una vista previa de los resultados de búsqueda. Si hay más de 200 sitios totales que contienen contenido que coincide con la consulta de búsqueda, solo los 200 sitios principales con más resultados de búsqueda estarán disponibles para la vista previa.  <br/> |200  <br/> |
 |Número máximo de elementos por buzón de carpetas públicas que se muestran en la página de vista previa al obtener una vista previa de los resultados de búsqueda de contenido.  <br/> |100  <br/> |
 |El número máximo de elementos encontrados en todos los buzones de carpetas públicas que se muestran en la página de vista previa al obtener una vista previa de los resultados de búsqueda de contenido.  <br/> |200  <br/> |
-|El número máximo de buzones públicos que se pueden obtener una vista previa de los resultados de búsqueda. Si hay más de 500 buzones de carpetas públicas que contienen contenido que coincide con la consulta de búsqueda, solo los 500 buzones de carpetas públicas con más resultados de búsqueda estarán disponibles para la vista previa.  <br/> |500  <br/> |
+|Número máximo de buzones de carpetas públicas que se pueden obtener una vista previa de los resultados de búsqueda. Si hay más de 500 buzones de carpetas públicas que contienen contenido que coincide con la consulta de búsqueda, solo los 500 buzones de carpetas públicas con más resultados de búsqueda estarán disponibles para la vista previa.  <br/> |500  <br/> |
 |Número máximo de caracteres para la consulta de búsqueda (incluidos los operadores y las condiciones) de una búsqueda.  <br/><br/> **Nota:** Este límite tiene efecto después de expandir la consulta e incluye caracteres de la consulta de palabras clave, los filtros de permisos de búsqueda aplicados al usuario y las direcciones URL de todas las ubicaciones de sitios. Esto significa que la consulta se expandirá con cada una de las palabras clave. Por ejemplo, si una consulta de búsqueda tiene 15 palabras clave y parámetros y condiciones adicionales, la consulta se expande 15 veces, cada una con los demás parámetros y condiciones de la consulta. Por lo tanto, aunque el número de caracteres de la consulta de búsqueda puede estar por debajo del límite, es la consulta expandida la que puede contribuir a superar este límite.  <br/> |**Buzones:** 10 000  <br/> **Sitios:** 4.000 al buscar en todos los sitios o 2.000 al buscar hasta 20 sitios <sup>2</sup> <br/> |
 |Número máximo de variantes devueltas al usar un prefijo comodín para buscar una frase exacta en una consulta de búsqueda o cuando se usa un prefijo comodín y el **operador booleano NEAR.**  <br/> |10 000 <sup>3</sup> <br/> |
 |Número mínimo de caracteres alfa para caracteres comodín de prefijo; por ejemplo,  `time*` ,  `one*` o  `set*` .  <br/> |3  <br/> |
 |Número máximo de buzones de una búsqueda en la que puede eliminar elementos mediante una acción de "búsqueda y purga" (mediante el comando **New-ComplianceSearchAction -Purge).** Si la búsqueda para la que está realizando una acción de purga tiene más buzones de origen que este límite, se producirá un error en la acción de purga. Para obtener más información acerca de la búsqueda y la purga, vea Buscar y eliminar mensajes de correo electrónico [en la organización.](search-for-and-delete-messages-in-your-organization.md)  <br/> |50 000  <br/> |
-|El número máximo de ubicaciones de una búsqueda desde la que se pueden exportar elementos. Si la búsqueda que está exportando tiene más ubicaciones que este límite, se producirá un error en la exportación. Para obtener más información, vea [Exportar resultados de búsqueda de contenido](export-search-results.md).  <br/> |100,000  <br/> |
+|El número máximo de ubicaciones de una búsqueda desde la que se pueden exportar elementos. Si la búsqueda que está exportando tiene más ubicaciones que este límite, se producirá un error en la exportación. Para obtener más información, vea [Exportar resultados de búsqueda de contenido](export-search-results.md).  <br/> |100 000  <br/> |
 |||
 
 > [!NOTE]
@@ -78,9 +78,9 @@ En la tabla siguiente se enumeran los límites al exportar los resultados de una
 |:-----|:-----|
 |Cantidad máxima de datos exportables de una sola búsqueda  <br/><br/> **Nota:** Si los resultados de la búsqueda son superiores a 2 TB, considere la posibilidad de usar intervalos de fechas u otros tipos de filtros para reducir el tamaño total de los resultados de búsqueda. <br/>  |2 TB  <br/> | 
 |Máximo que una organización puede exportar en un solo día <br/><br/> **Nota:** Este límite se restablece diariamente a las 12:00 UTC <br/> |2 TB <br/> |
-|Máximo de exportaciones simultáneas que se pueden ejecutar al mismo tiempo en la organización <br/><br/> **Nota:** La ejecución de **una exportación de solo** informe cuenta con el total de exportaciones simultáneas de la organización. Si tres usuarios realizan tres exportaciones cada uno, solo se puede realizar otra exportación. Independientemente de si exporta un informe o resultados de búsqueda, no se pueden realizar otras exportaciones hasta que se haya completado.   <br/> |10   <br/> |
+|Máximo de exportaciones simultáneas que se pueden ejecutar al mismo tiempo en la organización <br/><br/> **Nota:** La ejecución de **una exportación de solo** informe cuenta con el total de exportaciones simultáneas de la organización. Si tres usuarios realizan tres exportaciones cada uno, solo se puede realizar otra exportación. Independientemente de si exporta un informe o resultados de búsqueda, no se pueden realizar otras exportaciones hasta que se haya completado.   <br/> |10 <br/> |
 |Exportaciones máximas que un solo usuario puede ejecutar en cualquier momento <br/> |3 <br/> |
-|Número máximo de buzones de correo para los resultados de búsqueda que se pueden descargar con la herramienta de exportación de exhibición de documentos electrónicos <br/>| 100,000 <br/>|
+|Número máximo de buzones de correo para los resultados de búsqueda que se pueden descargar con la herramienta de exportación de exhibición de documentos electrónicos <br/>| 100 000 <br/>|
 |Tamaño máximo del archivo PST que se puede exportar <br/><br/> **Nota:** Si los resultados de la búsqueda del buzón de un usuario son superiores a 10 GB, los resultados de búsqueda del buzón se exportarán en dos (o más) archivos PST independientes. Si decide exportar todos los resultados de búsqueda en un único archivo PST, el archivo PST se mostrará en archivos PST adicionales si el tamaño total de los resultados de búsqueda es mayor que 10 GB. Si desea cambiar este tamaño predeterminado, puede editar el registro de Windows en el equipo que use para exportar los resultados de búsqueda. Vea [Cambiar el tamaño de los archivos PST al exportar resultados](change-the-size-of-pst-files-when-exporting-results.md)de búsqueda de exhibición de documentos electrónicos . Los resultados de la búsqueda de un buzón específico no se dividirán entre varios archivos PST a menos que el contenido de un único buzón tenga más de 10 GB. Si optó por exportar los resultados de la búsqueda en un archivo PST para que contenga todos los mensajes de una sola carpeta y los resultados de la búsqueda superen los 10 GB, los elementos siguen organizados en orden cronológico, por lo que se enviarán a archivos PST adicionales en función de la fecha enviada.<br/> | 10 GB <br/> |
 |Velocidad a la que se cargan los resultados de la búsqueda de buzones y sitios en una ubicación Azure Storage microsoft. |Máximo de 2 GB por hora|
 |||

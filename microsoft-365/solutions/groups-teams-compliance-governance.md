@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Obtenga información sobre las opciones de cumplimiento para Microsoft 365 grupos, Teams y SharePoint colaboración.
-ms.openlocfilehash: a9a94f0c1886ac5b60292f5f4d4b9b9d6d84380c
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 236b977b22066830e1b36bc87676fd5fa2c9d3f5
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241681"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538128"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opciones de cumplimiento para Microsoft 365 grupos, Teams y SharePoint colaboración
 
@@ -38,8 +39,8 @@ En la tabla siguiente se proporciona una referencia rápida para los controles d
 ||Clasificar automáticamente contenido confidencial|[Aplicar una etiqueta de confidencialidad automáticamente al contenido](../compliance/apply-sensitivity-label-automatically.md)|
 ||Cifrar contenido confidencial|[Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado](../compliance/encryption-sensitivity-labels.md)|
 |Protección de la información|||
-||Evitar la pérdida de información confidencial|[Obtenga más información acerca de la prevención de pérdida de datos](../compliance/dlp-learn-about-dlp.md)|
-||Proteger la información confidencial en el chat.|[Prevención y prevención de pérdida de datos Microsoft Teams](../compliance/dlp-microsoft-teams.md)|
+||Evitar la pérdida de información confidencial|[Obtenga más información acerca de la prevención contra la pérdida de datos](../compliance/dlp-learn-about-dlp.md)|
+||Proteger la información confidencial en el chat.|[Prevención de pérdida de datos y Microsoft Teams](../compliance/dlp-microsoft-teams.md).|
 ||Definir la información confidencial de la organización|[Tipos de información confidencial personalizados](../compliance/sensitive-information-type-learn-about.md)|
 |Segmentación de usuarios|||
 ||Restringir la comunicación entre segmentos de usuario|[Barreras de información](../compliance/information-barriers.md)|
@@ -84,7 +85,7 @@ Puede usar etiquetas de confidencialidad para cifrar archivos, lo que permite qu
 
 - [Restringir el acceso al contenido mediante el uso de etiquetas de confidencialidad para aplicar el cifrado](../compliance/encryption-sensitivity-labels.md)
 
-- [Configuración de un equipo con aislamiento de seguridad](./secure-teams-security-isolation.md)
+- [Configurar un equipo con aislamiento de seguridad](./secure-teams-security-isolation.md)
 
 Recursos adicionales:
 
@@ -95,11 +96,11 @@ Recursos adicionales:
 
 Las directivas DLP pueden impedir el uso compartido accidental de información confidencial entre SharePoint, Exchange y Teams. Puede crear directivas que especifiquen acciones que deben realizarse (como bloquear el acceso) en función de un conjunto de reglas.
 
-- [Obtenga más información acerca de la prevención de pérdida de datos](../compliance/dlp-learn-about-dlp.md)
+- [Obtenga más información acerca de la prevención contra la pérdida de datos](../compliance/dlp-learn-about-dlp.md)
 
 DLP en Teams puede ayudar a proteger la información confidencial en Teams mensajes de chat y canal mediante la eliminación de mensajes que contienen información confidencial.
 
-- [Prevención y prevención de pérdida de datos Microsoft Teams](../compliance/dlp-microsoft-teams.md)
+- [Prevención de pérdida de datos y Microsoft Teams](../compliance/dlp-microsoft-teams.md).
 
 Si tiene información confidencial que es exclusiva de su organización, como nombres de código de proyecto, puede crear sus propios tipos de información confidencial y aplicarlos a directivas DLP para proteger el contenido en grupos, equipos y Sharepoint.
 

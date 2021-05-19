@@ -1,5 +1,5 @@
 ---
-title: Directiva de nomenclatura de grupos de Microsoft 365
+title: Microsoft 365 de nomenclatura de grupos
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -16,22 +16,23 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
-description: Obtenga información sobre cómo crear una directiva de nomenclatura para grupos de Microsoft 365.
-ms.openlocfilehash: 7fd2ea36b536924d85c7ca09b55593161a24dbe4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: Obtenga información sobre cómo crear una directiva de nomenclatura para Microsoft 365 grupos.
+ms.openlocfilehash: 5ab5f252e2b81470413b4efea17b131613aabc18
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921053"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538176"
 ---
-# <a name="microsoft-365-groups-naming-policy"></a>Directiva de nomenclatura de grupos de Microsoft 365
+# <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 de nomenclatura de grupos
 
 Puede usar una directiva de nomenclatura de grupo para aplicar una estrategia de nomenclatura coherente para los grupos creados por usuarios de la organización. Una directiva de nomenclatura puede ayudarle a usted y a los usuarios a identificar la función del grupo, la pertenencia, la región geográfica o quién creó el grupo. La directiva de nomenclatura también puede ayudar a clasificar grupos en la libreta de direcciones. Puede usar la directiva para impedir que se usen palabras específicas en nombres de grupo y alias.
 
 La directiva de nomenclatura se aplica a los grupos que se crean en todas las cargas de trabajo de grupos (como Outlook, Microsoft Teams, SharePoint, Planner, Yammer, etc.). Se aplica tanto al nombre del grupo como al alias de grupo. También se aplica cuando un usuario crea un grupo y cuando se edita el nombre, el alias, la descripción o el avatar del grupo para un grupo existente.
 
 > [!TIP]
-> Una directiva de nomenclatura de grupos de Microsoft 365 solo se aplica a grupos de Microsoft 365. No se aplica a los grupos de distribución creados en Exchange Online. Para crear una directiva de nomenclatura para grupos de distribución, vea [Create a distribution group naming policy](/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
+> Una Microsoft 365 de nomenclatura de grupos solo se aplica a Microsoft 365 grupos. No se aplica a los grupos de distribución creados en Exchange Online. Para crear una directiva de nomenclatura para grupos de distribución, vea [Create a distribution group naming policy](/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
 
 La directiva de nomenclatura de grupo consta de las siguientes características:
 
@@ -39,9 +40,9 @@ La directiva de nomenclatura de grupo consta de las siguientes características:
 
 - **Palabras bloqueadas** personalizadas: puede cargar un conjunto de palabras bloqueadas específicas de su organización que se bloquearían en grupos creados por usuarios. (Por ejemplo: "CEO, Payroll, HR").
 
-## <a name="licensing-requirements"></a>Requisitos de licencia
+## <a name="licensing-requirements"></a>Requisitos de licencias
 
-El uso de la directiva de nomenclatura de Azure AD para grupos de Microsoft 365 requiere que posea una licencia de Azure Active Directory Premium P1 o una licencia EDU básica de Azure AD para cada usuario único (incluidos los invitados) que sea miembro de uno o varios grupos de Microsoft 365.
+El uso de la directiva de nomenclatura de Azure AD para grupos de Microsoft 365 requiere que posea una licencia de Azure Active Directory Premium P1 o una licencia EDU básica de Azure AD para cada usuario único (incluidos los invitados) que sea miembro de uno o más grupos de Microsoft 365.
 
 Esto también es necesario para el administrador que crea la directiva de nomenclatura de grupos.
 
@@ -63,7 +64,7 @@ Ejemplos:
 - Departamento del usuario = Ingeniería
 - Nombre de grupo creado = "GRP Mi ingeniería de grupo"
 
-Los atributos admitidos de Azure Active Directory (Azure AD) son [Department], [Company], [Office], [StateOrProvince], [CountryOrRegion] y [Title].
+Los atributos Azure Active Directory (Azure AD) son [Department], [Company], [Office], [StateOrProvince], [CountryOrRegion] y [Title].
 
 - Los atributos de usuario no admitidos se consideran cadenas fijas, por ejemplo [postalCode].
 
@@ -80,13 +81,13 @@ Se recomienda usar atributos que tengan valores rellenados para todos los usuari
   > [!NOTE]
   > Se permite un punto (.) o un guión (-) en cualquier lugar del nombre del grupo, excepto al principio o al final del nombre. Se permite un carácter de subrayado (_) en cualquier lugar del nombre del grupo, incluso al principio o al final del nombre.
 
-- Si usa grupos conectados a Yammer Office 365, evite usar los siguientes caracteres en la directiva de nomenclatura: @, \# \[ , , , \] \<, and \> . Si estos caracteres están en la directiva de nomenclatura, los usuarios de Yammer normales no podrán crear grupos.
+- Si usa grupos Yammer Office 365 conectados, evite usar los siguientes caracteres en la directiva de nomenclatura: @, \# , \[ , , \] \<, and \> . Si estos caracteres están en la directiva de nomenclatura, los usuarios Yammer no podrán crear grupos.
 
 > [!Tip]
 > - Use cadenas cortas como sufijo.
 > - Use atributos con valores.
 > - No seas demasiado creativo, la longitud total del nombre tiene un máximo de 264 caracteres.
-> - Cargue palabras bloqueadas específicas de la organización para restringir el uso.
+> - Upload palabras bloqueadas específicas de la organización para restringir el uso.
 
 ## <a name="custom-blocked-words"></a>Palabras bloqueadas personalizadas
 
@@ -121,7 +122,7 @@ Algunos administradores están exentos de estas directivas, en todas las cargas 
 Para configurar una directiva de nomenclatura:
 
 1. En [Azure Active Directory](https://aad.portal.azure.com), en **Administrar**, haga clic en **Grupos**.
-2. En **Configuración,** haga clic **en Directiva de nomenclatura**.
+2. En **Configuración**, haga clic **en Directiva de nomenclatura**.
 3. Elija la **pestaña Directiva de nomenclatura de** grupo.
 4. En **Directiva actual,** elija si desea requerir un prefijo o sufijo o ambos, y active las casillas correspondientes.
 5. Elija entre **Atributo** y **Cadena** para cada línea y, a continuación, especifique el atributo o cadena.

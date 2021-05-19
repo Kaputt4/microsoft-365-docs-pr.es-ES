@@ -16,35 +16,36 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: Obtenga información sobre cómo permitir a los miembros del grupo enviar correo electrónico como un grupo de Microsoft 365 o enviar correo electrónico en nombre de un grupo de Microsoft 365.
-ms.openlocfilehash: cc0a9472f127fae94d77f618ed7347d844879ba8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: Obtenga información sobre cómo permitir que los miembros del grupo envíen correo electrónico como Microsoft 365 grupo o envíen correo electrónico en nombre de un Microsoft 365 grupo.
+ms.openlocfilehash: 07db8f415da46e6235c051e262237de79e61c8b9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904749"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538260"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>Permitir que los miembros envíen como o envíen en nombre de un grupo
 
-Un miembro de un grupo de Microsoft  365 al que se han concedido permisos Enviar como o Enviar en nombre puede enviar correo electrónico como grupo o en nombre del grupo.  (No se pueden conceder estos permisos a los invitados del grupo).
+Un miembro de un Microsoft 365 a quien  se  le hayan concedido permisos Enviar como o Enviar en nombre puede enviar correo electrónico como grupo o en nombre del grupo. (No se pueden conceder estos permisos a los invitados del grupo).
 
-En este artículo se explica cómo un administrador global o de Exchange puede establecer estos permisos.
+En este artículo se explica cómo un administrador global Exchange puede establecer estos permisos.
   
-Por ejemplo, si Megan Bowen forma parte del grupo **De** aprendizaje de Microsoft 365 y tiene permisos Enviar como  en el grupo, si envía un correo electrónico como grupo, parecerá que el grupo de aprendizaje envió el correo electrónico.  
+Por ejemplo, si Megan Bowen  forma parte del grupo  Microsoft 365 de aprendizaje y tiene permisos Enviar como en el grupo, si envía un correo electrónico como grupo, parecerá que el grupo de aprendizaje envió el correo electrónico.  
   
-El **permiso Enviar en nombre** permite a un usuario enviar correo electrónico en nombre de un grupo de Microsoft 365. Por ejemplo, si Alex Wilber forma parte del grupo **marketing**  de Microsoft 365 y tiene permisos Enviar en nombre y envía un correo electrónico como grupo, el correo electrónico parece que lo envió **Alex Wilber en** nombre de Marketing .
+El **permiso Enviar en nombre** permite que un usuario envíe correo electrónico en nombre de un Microsoft 365 grupo. Por ejemplo, si Alex Wilber forma parte del grupo **Marketing** Microsoft 365 y tiene permisos Enviar en nombre y envía un correo electrónico como grupo, el correo electrónico parece que lo envió **Alex Wilber en** nombre de Marketing . 
 
 > [!IMPORTANT]
 > Puede configurar **Enviar como** o Enviar en **nombre** de un usuario determinado, pero no ambos. Si configura ambos, se establecerá de forma predeterminada **en Enviar como**.
 
 > [!TIP]
-> Consulte Enviar correo electrónico desde o en nombre de un grupo de [Microsoft 365](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) para obtener información sobre cómo usar Outlook y Outlook en la Web para enviar correo electrónico desde un grupo.
+> Consulte [Enviar correo](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) electrónico desde o en nombre de un grupo de Microsoft 365 para obtener información sobre cómo usar Outlook y Outlook en la Web para enviar correo electrónico desde un grupo.
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>Permitir que los miembros envíen correo electrónico como grupo
 
-En esta sección se explica cómo permitir a los usuarios enviar correo electrónico como grupo en el Centro de administración de [Exchange](https://go.microsoft.com/fwlink/p/?linkid=2059104) (EAC) en Exchange Online.
+En esta sección se explica cómo permitir a [](https://go.microsoft.com/fwlink/p/?linkid=2059104) los usuarios enviar correo electrónico como grupo en el Centro de administración de Exchange (EAC) en Exchange Online.
   
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange,</a>vaya a Grupos de  \> **destinatarios**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange de administración,</a>vaya a **Grupos de** \> **destinatarios**.
     
 2. Seleccione **Editar icono** editar grupo en el grupo que desea permitir que los usuarios envíen ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) como.   
     
@@ -62,7 +63,7 @@ En esta sección se explica cómo permitir a los usuarios enviar correo electró
 
 En esta sección se explica cómo permitir a los usuarios enviar correo electrónico en nombre de un grupo en el Centro de administración de Exchange (EAC) en Exchange Online.
   
-1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange,</a>vaya a Grupos de  \> **destinatarios**.
+1. En el <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange de administración,</a>vaya a **Grupos de** \> **destinatarios**.
     
 2. Seleccione **Editar icono** editar grupo en el grupo que desea permitir que los usuarios envíen ![ ](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) como. 
     
@@ -82,7 +83,7 @@ En esta sección se explica cómo permitir a los usuarios enviar correo electró
 
 [Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 
-[Más información sobre los grupos de Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Obtenga más información sobre Microsoft 365 grupos](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)
 

@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Solucionar errores relacionados con las retenciones legales aplicadas a custodios y orígenes de datos no custodiados en eDiscovery principal.
-ms.openlocfilehash: 3bd417f2eb6bfb8de8d4b5ccaeb48e6ae1c888eb
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: b101bf92c6a304262b3886a4ce0280f427a4a847
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860391"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538476"
 ---
 # <a name="troubleshoot-ediscovery-hold-errors"></a>Solución de problemas de suspensión de eDiscovery
 
@@ -33,12 +33,25 @@ Para reducir el número de errores relacionados con las retenciones de exhibici�
 
 - Si una distribución de retención aún está pendiente, con un estado de o , espere hasta que se complete la distribución de retención antes de `On (Pending)` `Off (Pending)` realizar más actualizaciones.
 
+- Compruebe si una directiva de retención está pendiente antes de realizar más actualizaciones. Ejecute los siguientes comandos o guárdelos en un script de PowerShell.
+
+    ```powershell
+    $status = Get-CaseHoldPolicy -Identity <policyname> 
+    if($status.DistributionStatus -ne "Pending"){
+        # policy no longer pending
+        Set-CaseHoldPolicy -Identity <policyname> -AddExchangeLocation $user1
+    }else{
+        # policy still pending
+        Write-Host "Hold policy still pending."
+    }
+   ```
+
 - Combina las actualizaciones en una retención de exhibición de documentos electrónicos en una única solicitud masiva en lugar de actualizar la directiva de retención repetidamente para cada transacción. Por ejemplo, para agregar varios buzones de usuario a una directiva de retención existente mediante el cmdlet [Set-CaseHoldPolicy,](/powershell/module/exchange/set-caseholdpolicy) ejecute el comando (o agregue como un bloque de código a un script) para que se ejecute solo una vez para agregar varios usuarios.
 
   **Correcto:**
 
     ```powershell
-    Set-CaseHoldPolicy -AddExchangeLocation {$user1, $user2, $user3, $user4, $user5}
+    Set-CaseHoldPolicy -Identity <policyname> -AddExchangeLocation {$user1, $user2, $user3, $user4, $user5}
     ```
 
    **Incorrecto:**
@@ -47,7 +60,7 @@ Para reducir el número de errores relacionados con las retenciones de exhibici�
     $users = {$user1, $user2, $user3, $user4, $user5}
     ForEach($user in $users)
     {
-        Set-CaseHoldPolicy -AddExchangeLocation $user
+        Set-CaseHoldPolicy -Identity <policyname> -AddExchangeLocation $user
     }
     ```
 
@@ -83,12 +96,36 @@ Si ve uno de los siguientes mensajes de error al poner a los custodios y orígen
    Set-CaseHoldPolicy <policyname> -RetryDistribution
    ```
 
+## <a name="error-the-sharepoint-site-is-read-only-or-not-accessible"></a>Error: el sitio SharePoint es de solo lectura o no es accesible
+
+Si ve el siguiente mensaje de error al poner en espera a los custodios y los orígenes de datos, significa que el administrador [global](/sharepoint/sharepoint-admin-role) de la organización o el administrador SharePoint ha bloqueado el sitio. Un sitio bloqueado impide que la exhibición de documentos electrónicos coloque una retención en el sitio.
+
+> El SharePoint es de solo lectura o no es accesible. Póngase en contacto con el administrador del sitio para que el sitio se grabe y, a continuación, vuelva a implementar esta directiva.
+
+### <a name="resolution"></a>Solución
+
+Desbloquea el sitio (o pide a un administrador que lo desbloquee) para resolver este problema. Para obtener más información sobre cómo cambiar el estado de bloqueo de un sitio, vea [Bloquear y desbloquear sitios](/sharepoint/manage-lock-status).
+
+## <a name="error-the-mailbox-or-sharepoint-site-may-not-exist"></a>Error: es posible que el buzón SharePoint sitio no exista
+
+Si ve el siguiente mensaje de error al poner en espera a los custodios y orígenes de datos, siga los pasos de resolución para solucionar el problema.
+
+> Es posible que el buzón SharePoint sitio no exista.  Si esto es incorrecto, póngase en contacto con el soporte técnico de Microsoft.  De lo contrario, quítela de esta directiva.
+
+### <a name="resolution"></a>Solución
+
+- Ejecute [get-mailbox](/powershell/module/exchange/get-mailbox) in Exchange Online PowerShell para comprobar si el buzón de usuario existe en la organización.
+
+- Ejecute el cmdlet [Get-SPOSite](/powershell/module/sharepoint-online/get-sposite) en SharePoint PowerShell en línea para comprobar si el sitio existe en la organización.
+
+- Compruebe si la dirección URL del sitio ha cambiado.
+
 ## <a name="more-information"></a>Más información
 
-- Las instrucciones sobre cómo actualizar directivas de retención para varios usuarios en la sección "Prácticas recomendadas" se deben al hecho de que el sistema bloquea las actualizaciones simultáneas de una directiva de retención. Esto significa que cuando se aplica una directiva de retención actualizada a nuevas ubicaciones de contenido y la directiva de retención está en un estado pendiente, no se pueden agregar ubicaciones de contenido adicionales a la directiva de retención. Estas son algunas cosas que debe tener en cuenta para ayudarle a mitigar este problema:
+Las instrucciones sobre cómo actualizar directivas de retención para varios usuarios en la sección "Prácticas recomendadas" se deben al hecho de que el sistema bloquea las actualizaciones simultáneas de una directiva de retención. Esto significa que cuando se aplica una directiva de retención actualizada a nuevas ubicaciones de contenido y la directiva de retención está en un estado pendiente, no se pueden agregar ubicaciones de contenido adicionales a la directiva de retención. Estas son algunas cosas que debe tener en cuenta para ayudarle a mitigar este problema:
   
-  - Cada vez que se actualiza una retención, pasa inmediatamente a un estado pendiente. El estado pendiente significa que la retención se aplica a las ubicaciones de contenido.
+- Cada vez que se actualiza una retención, pasa inmediatamente a un estado pendiente. El estado pendiente significa que la retención se aplica a las ubicaciones de contenido.
   
-  - Si tiene un script que ejecuta un bucle y agrega ubicaciones a la directiva uno a uno (similar al ejemplo incorrecto que se muestra en la sección "Prácticas recomendadas"), la primera ubicación de contenido (por ejemplo, un buzón de usuario) inicia el proceso de sincronización que desencadena el estado pendiente. Esto significa que los demás usuarios que se agregan a la directiva en bucles posteriores producirán un error.
+- Si tiene un script que ejecuta un bucle y agrega ubicaciones a la directiva uno a uno (similar al ejemplo incorrecto que se muestra en la sección "Prácticas recomendadas"), la primera ubicación de contenido (por ejemplo, un buzón de usuario) inicia el proceso de sincronización que desencadena el estado pendiente. Esto significa que los demás usuarios que se agregan a la directiva en bucles posteriores producirán un error.
   
-  - Si su organización usa un script que ejecuta un bucle para actualizar las ubicaciones de contenido de una directiva de retención, debe actualizar el script para que actualice las ubicaciones en una sola operación masiva (como se muestra en el ejemplo correcto en la sección "Prácticas recomendadas").
+- Si su organización usa un script que ejecuta un bucle para actualizar las ubicaciones de contenido de una directiva de retención, debe actualizar el script para que actualice las ubicaciones en una sola operación masiva (como se muestra en el ejemplo correcto en la sección "Prácticas recomendadas").

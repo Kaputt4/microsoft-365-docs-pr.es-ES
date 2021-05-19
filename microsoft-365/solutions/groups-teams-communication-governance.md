@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Obtenga información sobre los escenarios de colaboración de gobierno de comunicaciones.
-ms.openlocfilehash: 5386b127ead11f27dad94207383b7a5afddfde6f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6b49f0725cb300316580e972626a96b7057b5ccb
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920909"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538140"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>Gobierno de comunicaciones para escenarios de colaboración
 
@@ -31,38 +32,38 @@ En la tabla siguiente se proporciona una referencia rápida para los controles d
 |Categoría|Descripción|Referencia|
 |:-------|:----------|:--------|
 |Mensajería |||
-||Administrar lo que los usuarios pueden hacer durante la mensajería en Teams.|[Administrar directivas de mensajería de Teams](/microsoftteams/messaging-policies-in-teams)|
+||Administrar lo que los usuarios pueden hacer mientras la mensajería se Teams.|[Administrar directivas de mensajería de Teams](/microsoftteams/messaging-policies-in-teams)|
 ||Controle quién puede iniciar y responder a las publicaciones de un canal.|[Configurar y administrar la moderación de canales en Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)|
 |Reuniones|||
-||Administrar lo que pueden hacer los participantes de la reunión.|[Administración de directivas de reunión en Teams](/microsoftteams/meeting-policies-in-teams)|
+||Administrar lo que pueden hacer los participantes de la reunión.|[Manage meeting policies in Teams](/microsoftteams/meeting-policies-in-teams) (Administración de directivas de reunión en Teams)|
 ||Permitir o impedir que los usuarios anónimos se unan a reuniones.|[Permitir que los usuarios anónimos se unan a reuniones](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)|
 |Cumplimiento de comunicaciones|||
 ||Surface y responder a comunicaciones negligentes y negligentes|[Cumplimiento de comunicaciones en Microsoft 365](../compliance/communication-compliance.md)|
 
 ## <a name="messaging"></a>Mensajería 
 
-Puedes controlar qué características de mensajería de chat y canal (como editar o eliminar mensajes) están disponibles para los usuarios de Microsoft Teams mediante directivas de mensajería. Puede crear diferentes directivas para diferentes usuarios y grupos.
+Puede controlar qué características de mensajería de chat y canal (como editar o eliminar mensajes) están disponibles para los usuarios en Microsoft Teams mediante directivas de mensajería. Puede crear diferentes directivas para diferentes usuarios y grupos.
 
 [Administrar directivas de mensajería de Teams](/microsoftteams/messaging-policies-in-teams)
 
-Puedes controlar quién puede iniciar nuevas publicaciones y responder a las publicaciones en un canal de Teams configurando la moderación del canal.
+Puede controlar quién puede iniciar nuevas publicaciones y responder a las publicaciones en un canal Teams mediante la configuración de la moderación del canal.
 
 [Configurar y administrar la moderación de canales en Microsoft Teams](/microsoftteams/manage-channel-moderation-in-teams)
 
 ## <a name="meetings"></a>Reuniones
 
-Puedes controlar las características que están disponibles para los participantes de reuniones de Teams, como la programación, el uso compartido de contenido, los participantes y las directivas de audio y vídeo.
+Puedes controlar las características que están disponibles para los Teams de la reunión, incluida la programación, el uso compartido de contenido, los participantes y las directivas de audio y vídeo.
 
-[Administración de directivas de reunión en Teams](/microsoftteams/meeting-policies-in-teams)
+[Manage meeting policies in Teams](/microsoftteams/meeting-policies-in-teams) (Administración de directivas de reunión en Teams)
 
-Puedes controlar la unión anónima para reuniones de Teams, lo que permite que cualquier persona con un vínculo a la reunión se una.
+Puede controlar la unión anónima para Teams reuniones, lo que permite que cualquier persona con un vínculo a la reunión se una.
 
 [Permitir que los usuarios anónimos se unan a reuniones](/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)
 
 
 ## <a name="communication-compliance"></a>Cumplimiento de comunicaciones
 
-El cumplimiento de las comunicaciones en Microsoft 365 le permite examinar las comunicaciones en busca de lenguaje ofensivo, información confidencial e información relacionada con estándares internos y normativos. Todas las comunicaciones de chat, buzones y mensajes de Yammer se pueden supervisar y generar alertas. Con las herramientas de administración, puede identificar y tomar medidas rápidamente en los mensajes con coincidencias de directiva.
+El cumplimiento de las Microsoft 365 permite examinar las comunicaciones en busca de lenguaje ofensivo, información confidencial e información relacionada con estándares internos y normativos. Todas las comunicaciones de chat, buzones Yammer mensajes pueden supervisarse, generando alertas. Con las herramientas de administración, puede identificar y tomar medidas rápidamente en los mensajes con coincidencias de directiva.
 
 [Cumplimiento de comunicaciones en Microsoft 365](../compliance/communication-compliance.md)
 
@@ -72,6 +73,6 @@ El cumplimiento de las comunicaciones en Microsoft 365 le permite examinar las c
 
 [Crear el plan de gobierno de colaboración](collaboration-governance-first.md)
 
-[Administrar la configuración de Microsoft Teams para su organización](/microsoftteams/enable-features-office-365)
+[Administrar Microsoft Teams configuración de la organización](/microsoftteams/enable-features-office-365)
 
 [Manage Yammer data compliance](/yammer/manage-security-and-compliance/manage-data-compliance) (Administrar el cumplimiento de datos de Yammer)

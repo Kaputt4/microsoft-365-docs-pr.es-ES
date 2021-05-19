@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Opciones de fin de ciclo de vida para grupos, equipos y Yammer.
-ms.openlocfilehash: 468f41df747b6cf12d3f6619d79cb97248eba1d1
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: fccdf838b7ebec6a1ab1fae2f709824bfbd3b6d1
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346431"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538836"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>Opciones de fin de ciclo de vida para grupos, equipos y Yammer
 
@@ -265,3 +266,7 @@ Cualquier usuario puede mover las conversaciones Yammer otro grupo de usuarios, 
 **Exportar datos de red**
 
 Yammer administradores de red [exportan datos de red](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Sin embargo, al hacerlo, se exportarán todas las conversaciones de toda la red. La exportación resultante muestra el identificador de grupo. Es posible filtrar conversaciones en función de este identificador.
+
+## <a name="related-topics"></a>Temas relacionados
+
+[Quitar un antiguo empleado y proteger datos](/microsoft-365/admin/add-users/remove-former-employee)

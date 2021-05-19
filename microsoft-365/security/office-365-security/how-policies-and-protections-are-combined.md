@@ -1,6 +1,6 @@
 ---
 title: Orden y prioridad de protección de correo electrónico
-keywords: seguridad, malware, Microsoft 365, M365, centro de seguridad, Microsoft Defender para endpoint, Microsoft Defender para Office 365, Microsoft Defender para la identidad
+keywords: security, malware, Microsoft 365, M365, security center, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre el orden de las protecciones de la aplicación en Exchange Online Protection (EOP) y cómo el valor de prioridad en las directivas de protección determina qué directiva se aplica.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8cd2809fa69064c2058516f459eeba60683c91b9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 24d43aeb70e2cdef4bdf65fd3943cdfda9ec3862
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930382"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539016"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Orden y prioridad de protección de correo electrónico
 
@@ -33,7 +33,7 @@ ms.locfileid: "51930382"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, el correo electrónico entrante puede estar marcado por varias formas de protección. Por ejemplo, las directivas contra suplantación de identidad integradas en EOP que están disponibles para todos los clientes de Microsoft 365 y las directivas contra suplantación de identidad más sólidas que están disponibles para los clientes de Microsoft Defender para Office 365. Los mensajes también pasan a través de varios exámenes de detección en busca de malware, correo no deseado, phishing, etc. Dada toda esta actividad, puede haber cierta confusión en cuanto a qué directiva se aplica.
+En Microsoft 365 organizaciones con buzones en organizaciones de Exchange Online o independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, el correo electrónico entrante puede estar marcado por varias formas de protección. Por ejemplo, las directivas integradas contra la suplantación de identidad en EOP que están disponibles para todos los clientes de Microsoft 365 y las directivas anti phishing más sólidas que están disponibles para Microsoft Defender para Office 365 clientes. Los mensajes también pasan a través de varios exámenes de detección en busca de malware, correo no deseado, phishing, etc. Dada toda esta actividad, puede haber cierta confusión en cuanto a qué directiva se aplica.
 
 En general, una directiva que se aplica a un mensaje se identifica en el encabezado **X-Forefront-Antispam-Report** de la propiedad **CAT (Category).** Para obtener más información, vea [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md).
 
@@ -45,31 +45,31 @@ Hay dos factores principales que determinan qué directiva se aplica a un mensaj
 
   ****
 
-  |Priority|Protección de correo electrónico|Categoría|Dónde administrar|
+  |Prioridad|Protección de correo electrónico|Categoría|Dónde administrar|
   |---|---|---|---|
   |1|Malware|CAT:MALW|[Configurar directivas antimalware en EOP](configure-anti-malware-policies.md)|
   |2|Phishing|CAT:PHSH|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
   |3|Correo no deseado de alta confianza|CAT:HSPM|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
-  |4 |Suplantación|CAT:SPOOF|[Configurar la inteligencia de suplantación en EOP](learn-about-spoof-intelligence.md)|
+  |4 |Suplantación|CAT:SPOOF|[Suplantación de información de inteligencia en EOP](learn-about-spoof-intelligence.md)|
   |5<sup>\*</sup>|Suplantación de usuario (usuarios protegidos)|UIMP|[Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-atp-anti-phishing-policies.md)|
   |6<sup>\*</sup>|Suplantación de dominio (dominios protegidos)|DIMP|[Configurar directivas contra suplantación de identidad en Microsoft Defender para Office 365](configure-atp-anti-phishing-policies.md)|
   |7 |Correo no deseado|CAT:SPM|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
   |8 |Masivo|CAT:BULK|[Configuración de directivas contra correo no deseado en EOP](configure-your-spam-filter-policies.md)|
   |
 
-  <sup>\*</sup> Estas características solo están disponibles en las directivas contra suplantación de identidad en Microsoft Defender para Office 365.
+  <sup>\*</sup>Estas características solo están disponibles en las directivas contra suplantación de identidad en Microsoft Defender para Office 365.
 
 - La **prioridad** de la directiva: para cada tipo de directiva (antispam, antimalware, anti phishing, etc.), hay una directiva predeterminada que se aplica a todos, pero puede crear directivas personalizadas que se apliquen a usuarios específicos. Cada directiva personalizada tiene un valor de prioridad que determina el orden en que se aplican las directivas. La directiva predeterminada siempre se aplica en último lugar.
 
   Si un usuario se define en varias directivas del mismo tipo, solo se aplica la directiva con la prioridad más alta. Las directivas restantes de ese tipo no se evalúan para el usuario (incluida la directiva predeterminada).
 
-Por ejemplo, considere las siguientes directivas contra suplantación de identidad en Microsoft Defender para Office 365 que se aplican a los mismos usuarios y un mensaje que se identifica como suplantación de usuario y suplantación de identidad:
+Por ejemplo, considere las siguientes directivas anti phishing en Microsoft Defender para Office 365 que se aplican **a** los mismos usuarios y un mensaje que se identifica como suplantación de usuario y suplantación de identidad:
 
 <br>
 
 ****
 
-|Nombre de directiva|Priority|Suplantación de usuario|Directiva contra la suplantación|
+|Nombre de directiva|Prioridad|Suplantación de usuario|Directiva contra la suplantación|
 |---|---|---|---|
 |Directiva A|1|Activada|Desactivada|
 |Directiva B|2|Desactivada|Activada|

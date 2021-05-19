@@ -14,13 +14,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 1efa72d5b8d204b6aec1cef05fe3c8afe1ca82f7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 05/06/2021
+ms.topic: how-to
+ms.openlocfilehash: 1942531b77df1c2bd9408815d3ad54b4b7211e8b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275315"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538404"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Configurar opciones de análisis del Antivirus de Microsoft Defender
 
@@ -33,7 +34,7 @@ ms.locfileid: "52275315"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Usar Microsoft Intune para configurar opciones de examen
 
-Para obtener más información, consulte Configure [device restriction settings in Microsoft Intune](/intune/device-restrictions-configure) and Antivirus de Microsoft Defender device restriction settings for Windows 10 in [Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+Consulte [Configurar la configuración de restricciones de dispositivo en Microsoft Intune](/intune/device-restrictions-configure) y la [Configuración de restricciones de dispositivo de Antivirus de Microsoft Defender para Windows 10 en Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) para más información.
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Usar Microsoft Endpoint Manager para configurar opciones de examen
 
@@ -51,19 +52,19 @@ Para configurar las opciones de directiva de grupo que se describen en la tabla 
 
 4. Haga doble clic en la configuración **de directiva** especificada en la tabla siguiente y establezca la opción en la configuración deseada. Haga **clic en** Aceptar y repita cualquier otra configuración.
 
-Descripción | Ubicación y configuración | Configuración predeterminada (si no está configurada) | Parámetro de PowerShell `Set-MpPreference` o propiedad WMI para `MSFT_MpPreference` clase
----|---|---|---
-Examen de correo electrónico Vea [Limitaciones de examen de correo electrónico](#ref1)| Examinar > Activar el examen de correo electrónico | Deshabilitada | `-DisableEmailScanning`
-Examinar [puntos de repetición](/windows/win32/fileio/reparse-points) | Examinar > Activar el examen de puntos de repetición | Deshabilitada | No disponible
-Examinar unidades de red asignadas | Examinar > realizar el examen completo en unidades de red asignadas | Deshabilitada | `-DisableScanningMappedNetworkDrivesForFullScan`
- Examinar archivos de archivo (como .zip o .rar archivos). La [lista de exclusiones de extensiones](configure-extension-file-exclusions-microsoft-defender-antivirus.md) tendrá prioridad sobre esta configuración. | Examinar > archivos de archivo | Habilitado | `-DisableArchiveScanning`
-Examinar archivos en la red | Examinar > Detección de archivos de red | Deshabilitada | `-DisableScanningNetworkFiles`
-Examinar archivos ejecutables empaquetados | Examinar > ejecutables empaquetados | Habilitado | No disponible
-Examinar solo unidades extraíbles durante exámenes completos | Examinar > unidades extraíbles | Deshabilitada | `-DisableRemovableDriveScanning`
-Especificar el nivel de subcarpetas dentro de una carpeta de archivo para examinar | Examinar > Especificar la profundidad máxima para examinar archivos de archivo | 0 | No disponible
- Especifique la carga máxima de CPU (como porcentaje) durante un examen. Nota: Este no es un límite difícil, sino una guía para que el motor de análisis no supere este máximo en promedio. | Examen > Especifica el porcentaje máximo de uso de LA CPU durante un examen | 50 |  `-ScanAvgCPULoadFactor`
- Especifique el tamaño máximo (en kilobytes) de los archivos de archivo que deben examinarse. El valor predeterminado, **0**, no aplica ningún límite | Examinar > especificar el tamaño máximo de los archivos de archivo que se examinarán | Sin límite | No disponible
- Configurar una prioridad de CPU baja para exámenes programados | Examen > configurar la prioridad de CPU baja para exámenes programados | Deshabilitada | No disponible
+| Descripción | Ubicación y configuración | Configuración predeterminada (si no está configurada) | Parámetro de PowerShell `Set-MpPreference` o propiedad WMI para `MSFT_MpPreference` clase |
+|---|---|---|---|
+| Examen de correo electrónico Vea [Limitaciones de examen de correo electrónico](#ref1)| Examinar > Activar el examen de correo electrónico | Deshabilitada | `-DisableEmailScanning` |
+|Examinar [puntos de repetición](/windows/win32/fileio/reparse-points) | Examinar > Activar el examen de puntos de repetición | Deshabilitada | No disponible |
+| Examinar unidades de red asignadas | Examinar > realizar el examen completo en unidades de red asignadas | Deshabilitada | `-DisableScanningMappedNetworkDrivesForFullScan`|
+ Examinar archivos de archivo (como .zip o .rar archivos). La [lista de exclusiones de extensiones](configure-extension-file-exclusions-microsoft-defender-antivirus.md) tendrá prioridad sobre esta configuración. | Examinar > archivos de archivo | Habilitado | `-DisableArchiveScanning` |
+| Examinar archivos en la red | Examinar > Detección de archivos de red | Deshabilitada | `-DisableScanningNetworkFiles` |
+| Examinar archivos ejecutables empaquetados | Examinar > ejecutables empaquetados | Habilitado | No disponible |
+| Examinar solo unidades extraíbles durante exámenes completos | Examinar > unidades extraíbles | Deshabilitada | `-DisableRemovableDriveScanning` |
+| Especificar el nivel de subcarpetas dentro de una carpeta de archivo para examinar | Examinar > Especificar la profundidad máxima para examinar archivos de archivo | 0 | No disponible |
+| Especifique la carga máxima de CPU (como porcentaje) durante un examen. Nota: Este no es un límite difícil, sino una guía para que el motor de análisis no supere este máximo en promedio. Los exámenes de ejecución manual omitirán esta configuración y se ejecutarán sin límites de CPU. | Examen > Especifica el porcentaje máximo de uso de LA CPU durante un examen | 50 |  `-ScanAvgCPULoadFactor` |
+| Especifique el tamaño máximo (en kilobytes) de los archivos de archivo que deben examinarse. El valor predeterminado, **0**, no aplica ningún límite | Examinar > especificar el tamaño máximo de los archivos de archivo que se examinarán | Sin límite | No disponible |
+| Configurar una prioridad de CPU baja para exámenes programados | Examen > configurar la prioridad de CPU baja para exámenes programados | Deshabilitada | No disponible |
  
 > [!NOTE]
 > Si la protección en tiempo real está activada, los archivos se examinan antes de tener acceso a ellos y ejecutarse. El ámbito de examen incluye todos los archivos, incluidos los archivos en medios extraíbles montados, como las unidades USB. Si el dispositivo que realiza el examen tiene activada la protección en tiempo real o la protección en tiempo real, el examen también incluirá recursos compartidos de red.

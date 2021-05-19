@@ -1,5 +1,5 @@
 ---
-title: Administración del acceso en grupos de Microsoft 365, Teams y SharePoint
+title: Administración del acceso en Microsoft 365 grupos, Teams y SharePoint
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,17 +14,18 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Obtenga información sobre cómo regular el acceso en grupos de Microsoft 365, Teams y SharePoint.
-ms.openlocfilehash: 44b90e461c81875fa5ccf728c890d5eaebf7d613
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: Obtenga información sobre cómo regular el acceso en Microsoft 365 grupos, Teams y SharePoint.
+ms.openlocfilehash: 3e0485813a264fe9042e0de9596ba07e50ef72a3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922285"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538152"
 ---
-# <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Administración del acceso en grupos de Microsoft 365, Teams y SharePoint
+# <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Administración del acceso en Microsoft 365 grupos, Teams y SharePoint
 
-Hay muchos controles que le permiten controlar el modo en que las personas acceden a los recursos en grupos, equipos y SharePoint. Revisa estas opciones y considera cómo se asignan a las necesidades de tu empresa, la confidencialidad de los datos y el ámbito de las personas con las que los usuarios necesitan colaborar.
+Hay muchos controles que permiten controlar la forma en que las personas acceden a los recursos en grupos, equipos y SharePoint. Revisa estas opciones y considera cómo se asignan a las necesidades de tu empresa, la confidencialidad de los datos y el ámbito de las personas con las que los usuarios necesitan colaborar.
 
 En la tabla siguiente se proporciona una referencia rápida para los controles de acceso disponibles en Microsoft 365. Se proporciona más información en las secciones siguientes.
 
@@ -37,11 +38,11 @@ En la tabla siguiente se proporciona una referencia rápida para los controles d
 |Acceso condicional|||
 ||Autenticación multifactor|[Autenticación multifactor de Azure AD](/azure/active-directory/authentication/concept-mfa-howitworks)|
 ||Controle el acceso a dispositivos según la confidencialidad de grupo, equipo o sitio.|[Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)|
-||Limitar el acceso al sitio para dispositivos no administrados.|[Controlar el acceso de SharePoint desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices)|
+||Limitar el acceso al sitio para dispositivos no administrados.|[Controlar SharePoint acceso desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices)|
 ||Controlar el acceso al sitio en función de la ubicación|[Controlar el acceso a los datos de SharePoint y OneDrive en función de la ubicación de red](/sharepoint/control-access-based-on-network-location)|
 |Acceso de invitado|||
-||Permitir o bloquear el uso compartido de SharePoint desde dominios especificados.|[Restringir el uso compartido de contenido de SharePoint y OneDrive por dominio](/sharepoint/restricted-domains-sharing)|
-||Permitir o bloquear la pertenencia a grupos o equipos de dominios especificados.|[Permitir o bloquear invitaciones a usuarios B2B de organizaciones específicas](/azure/active-directory/b2b/allow-deny-list)|
+||Permitir o bloquear el SharePoint compartido de dominios especificados.|[Restringir el uso compartido de contenido de SharePoint y OneDrive por dominio](/sharepoint/restricted-domains-sharing)|
+||Permitir o bloquear la pertenencia a grupos o equipos de dominios especificados.|[Permitir o bloquear las invitaciones a usuarios de B2B desde organizaciones específicas](/azure/active-directory/b2b/allow-deny-list)|
 ||Impedir el uso compartido anónimo.|[Desactivar vínculos de tipo Cualquiera](./share-limit-accidental-exposure.md#turn-off-anyone-links)|
 ||Controle los permisos de los vínculos de acceso anónimo.|[Establecer permisos de vínculo para vínculos cualquiera](./best-practices-anonymous-sharing.md#set-link-permissions)|
 ||Controlar la expiración de los vínculos de uso compartido anónimo.|[Establezca una fecha de expiración de los vínculos para Cualquiera](./best-practices-anonymous-sharing.md#set-an-expiration-date-for-anyone-links)|
@@ -60,18 +61,18 @@ Los propietarios controlan la pertenencia a equipos y grupos. Los miembros puede
 
 - [Administrar la detección de equipos privados en Microsoft Teams](/microsoftteams/manage-discovery-of-private-teams)
 
-Puede administrar la pertenencia a un grupo o equipo dinámicamente en función de algunos criterios, como el departamento. En este caso, los miembros y propietarios no pueden invitar a personas al equipo. Los grupos dinámicos usan metadatos definidos en Azure Active Directory para controlar quién es miembro del grupo. Asegúrese de que los metadatos que está usando están completos y actualizados, ya que los metadatos incorrectos pueden provocar que los usuarios no se puedan agregar a grupos o usuarios incorrectos.
+Puede administrar la pertenencia a un grupo o equipo dinámicamente en función de algunos criterios, como el departamento. En este caso, los miembros y propietarios no pueden invitar a personas al equipo. Los grupos dinámicos usan metadatos que se definen Azure Active Directory para controlar quién es miembro del grupo. Asegúrese de que los metadatos que está usando están completos y actualizados, ya que los metadatos incorrectos pueden provocar que los usuarios no se puedan agregar a grupos o usuarios incorrectos.
 
 - [Crear o actualizar un grupo dinámico en Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)
 
-Los sitios de SharePoint proporcionan la capacidad de agregar propietarios, miembros y visitantes aparte de la pertenencia a grupos o equipos. Según sus requisitos, es posible que desee restringir quién puede invitar a personas al sitio. Además, según la confidencialidad de la información de un sitio determinado, es posible que desee restringir quién puede compartir archivos y carpetas. El propietario del equipo, grupo o sitio configura estas restricciones:
+SharePoint sitios proporcionan la capacidad de agregar propietarios, miembros y visitantes aparte de la pertenencia a grupos o equipos. Según sus requisitos, es posible que desee restringir quién puede invitar a personas al sitio. Además, según la confidencialidad de la información de un sitio determinado, es posible que desee restringir quién puede compartir archivos y carpetas. El propietario del equipo, grupo o sitio configura estas restricciones:
 
 - [Configurar y administrar solicitudes de acceso](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)
 
 
 ## <a name="conditional-access"></a>Acceso condicional
 
-Con Microsoft 365, puede requerir autenticación multifactor tanto para personas dentro como fuera de la organización. Hay muchas opciones para las circunstancias en las que se solicita a las personas un segundo factor de autenticación. Le recomendamos encarecidamente que implemente la autenticación multifactor para su organización:
+Con Microsoft 365, puede requerir autenticación multifactor para personas dentro y fuera de la organización. Hay muchas opciones para las circunstancias en las que se solicita a las personas un segundo factor de autenticación. Le recomendamos encarecidamente que implemente la autenticación multifactor para su organización:
 
 - [Autenticación multifactor de Azure AD](/azure/active-directory/authentication/concept-mfa-howitworks)
 
@@ -88,20 +89,20 @@ Recursos adicionales:
 
 - [Planear una implementación de acceso condicional](/azure/active-directory/conditional-access/plan-conditional-access)
 
-- [Introducción a Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
+- [Microsoft Intune general](/mem/intune/fundamentals/what-is-intune)
 
-- [Controlar el acceso de SharePoint desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices)
+- [Controlar SharePoint acceso desde dispositivos no administrados](/sharepoint/control-access-from-unmanaged-devices)
 
 
 ## <a name="guest-access"></a>Acceso de invitado
 
-Puede restringir a los invitados en función del dominio de su dirección de correo electrónico. SharePoint ofrece una configuración de restricción de dominio específica de toda la organización y del sitio. Grupos y Teams usan las listas de dominios permitir y denegar en Azure AD. Asegúrese de configurar ambas opciones para evitar el uso compartido no deseado y garantizar una experiencia de usuario coherente:
+Puede restringir a los invitados en función del dominio de su dirección de correo electrónico. SharePoint ofrece una configuración de restricción de dominio específica de toda la organización y del sitio. Los grupos Teams usar las listas de dominios permitir y denegar en Azure AD. Asegúrese de configurar ambas opciones para evitar el uso compartido no deseado y garantizar una experiencia de usuario coherente:
 
 - [Restringir el uso compartido de contenido de SharePoint y OneDrive por dominio](/sharepoint/restricted-domains-sharing)
 
-- [Permitir o bloquear invitaciones a usuarios B2B de organizaciones específicas](/azure/active-directory/b2b/allow-deny-list)
+- [Permitir o bloquear las invitaciones a usuarios de B2B desde organizaciones específicas](/azure/active-directory/b2b/allow-deny-list)
 
-Microsoft 365 permite el uso compartido anónimo de archivos y carpetas mediante *vínculos de uso* compartido de cualquier persona. *Los* vínculos de cualquier persona se pueden reenviar y cualquier persona con el vínculo puede tener acceso al elemento compartido. En función de la confidencialidad de  los datos, considere la posibilidad de regular cómo se usan los vínculos cualquiera, incluidos desactivarlos por completo, restringir los permisos de vínculos a solo lectura o establecer una hora de expiración para ellos:
+Microsoft 365 permite el uso compartido anónimo de archivos y carpetas mediante vínculos *de uso* compartido de cualquier persona. *Los* vínculos de cualquier persona se pueden reenviar y cualquier persona con el vínculo puede tener acceso al elemento compartido. En función de la confidencialidad de  los datos, considere la posibilidad de regular cómo se usan los vínculos cualquiera, incluidos desactivarlos por completo, restringir los permisos de vínculos a solo lectura o establecer una hora de expiración para ellos:
 
 - [Desactivar vínculos de tipo Cualquiera](./share-limit-accidental-exposure.md#turn-off-anyone-links)
 
@@ -117,7 +118,7 @@ Si su organización tiene datos confidenciales que necesita compartir con invita
 
 - [Limitar el uso compartido externo a grupos de seguridad especificados](./share-limit-accidental-exposure.md#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)
 
-Los grupos y Teams tienen una configuración de nivel de organización que permite o deniega el acceso de invitado. Aunque puede restringir el acceso de invitado a grupos o equipos específicos mediante [Microsoft PowerShell,](per-group-guest-access.md)se recomienda hacerlo mediante una etiqueta de confidencialidad. Con las etiquetas de confidencialidad puede permitir o denegar automáticamente el acceso de invitado en función de la etiqueta aplicada:
+Los grupos y Teams tienen opciones de configuración de nivel de organización que permiten o deniegan el acceso de invitado. Aunque puede restringir el acceso de invitado a grupos o equipos específicos mediante [Microsoft PowerShell,](per-group-guest-access.md)se recomienda hacerlo mediante una etiqueta de confidencialidad. Con las etiquetas de confidencialidad puede permitir o denegar automáticamente el acceso de invitado en función de la etiqueta aplicada:
 
 - [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md)
 
@@ -131,7 +132,7 @@ Microsoft 365 ofrece muchos métodos diferentes para compartir información. Si 
 
 Recursos adicionales:
 
-- [Configurar la colaboración moderna con Microsoft 365](./setup-secure-collaboration-with-teams.md)
+- [Configurar la colaboración segura con Microsoft 365](./setup-secure-collaboration-with-teams.md)
 
 - [Prácticas recomendadas para compartir archivos y carpetas con usuarios no autenticados](./best-practices-anonymous-sharing.md)
 
@@ -151,7 +152,7 @@ Muchas organizaciones tienen asociaciones empresariales con otras organizaciones
 
 - [¿Qué es la administración de derechos de Azure AD?](/azure/active-directory/governance/entitlement-management-overview)
 
-Los canales privados de Teams permiten conversaciones de ámbito y uso compartido de archivos entre un subconjunto de miembros del equipo. Según sus necesidades empresariales específicas, es posible que desee permitir o bloquear esta funcionalidad.
+Los canales privados Teams permiten conversaciones con ámbito y uso compartido de archivos entre un subconjunto de miembros del equipo. Según sus necesidades empresariales específicas, es posible que desee permitir o bloquear esta funcionalidad.
 
 - [Canales privados en Microsoft Teams](/MicrosoftTeams/private-channels)
 
@@ -159,7 +160,7 @@ Los canales privados de Teams permiten conversaciones de ámbito y uso compartid
 
 Recursos adicionales:
 
-- [Gobierno de identidades de Azure Active Directory](/azure/active-directory/governance)
+- [Azure Active Directory Gobierno de identidades](/azure/active-directory/governance)
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Obtenga información sobre cómo reactivar la suscripción cuando expire, se deshabilite o cancele.
 ms.date: 04/07/2021
-ms.openlocfilehash: 902be48b32acdff5173a0dd5cc84dbd5972e1ba9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 63c65e90d01bfd2c67d1d2ecfed32a4d4ff8d27a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345147"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538464"
 ---
 # <a name="reactivate-your-subscription"></a>Reactivar la suscripción
 
@@ -58,7 +58,7 @@ Debe ser un administrador global o de facturación para reactivar una suscripci�
 
 ::: moniker-end
 
-2. En la pestaña **Productos**, busque la suscripción que quiere reactivar. Seleccione **Más acciones** (tres puntos) y, a continuación, seleccione **Reactivar esta suscripción**.\
+2. En la pestaña **Productos**, busque la suscripción que quiere reactivar. Seleccione los tres puntos (más acciones) y, a continuación, **seleccione Reactivar esta suscripción**.\
     Si no ve **Reactivar** esta suscripción, póngase [en contacto con el soporte técnico.](../../business-video/get-help-support.md)
 3. En el panel **Reactivar esta suscripción**, seleccione un método de pago de la lista desplegable o seleccione **Agregar método de pago**.
 4. Seleccione **Guardar**.

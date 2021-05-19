@@ -19,12 +19,12 @@ ms.custom:
 description: Aprenda a actualizar un registro de Servicio de nombres de dominio (DNS) para usar el marco de directivas de remitente (SPF) con su dominio personalizado en Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d200c4cf17a3d42ddafca301fecbf18c249ac37
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 828d76b95a1e3f8d1a1851121d28603a1922f486
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245689"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538992"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurar SPF para ayudar a evitar la suplantación de identidad
 
@@ -45,6 +45,13 @@ ms.locfileid: "52245689"
 En este artículo se describe cómo actualizar un registro del servicio de nombres de dominio (DNS) para que pueda usar la autenticación de correo electrónico del Marco de directivas de remitente (SPF)  con su dominio personalizado en Office 365.
 
 SPF ayuda a *validar* el correo electrónico saliente enviado desde su dominio personalizado (si proviene de quien dice ser). Es un primer paso para configurar los métodos completos de autenticación de correo electrónico recomendados de SPF, [DKIM](use-dkim-to-validate-outbound-email.md)y [DMARC](use-dmarc-to-validate-email.md).
+
+- [Requisitos previos](#prerequisites)
+- [Crear o actualizar el registro TXT de SPF](#create-or-update-your-spf-txt-record)
+  - [¿Cómo se tratan los subdominios?](#how-to-handle-subdomains)
+- [¿Qué hace realmente la autenticación de correo electrónico SPF?](#what-does-spf-email-authentication-actually-do)
+  - [Solucionar problemas relacionados con SPF](#troubleshooting-spf)
+- [Más información sobre SPF](#more-information-about-spf)
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -118,7 +125,6 @@ Se necesita un registro de SPF (`*.`) comodín para todos los dominios y subdomi
 ## <a name="troubleshooting-spf"></a>Solucionar problemas relacionados con SPF
 
 ¿Tiene problemas con el registro TXT de SPF? Lea [Solución de problemas: Procedimientos recomendados para SPF en Office 365](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot).
-
 
 ## <a name="what-does-spf-email-authentication-actually-do"></a>¿Qué hace realmente la autenticación de correo electrónico SPF?
 

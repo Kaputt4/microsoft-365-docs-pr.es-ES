@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden aprender a ver y administrar mensajes en cuarentena para todos los usuarios de Exchange Online Protection (EOP). Los administradores de organizaciones con Microsoft Defender para Office 365 también pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 508866fd66e4cbd00f559446d4ce52a4be063c94
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272209"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539112"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Administración de mensajes en cuarentena y archivos como administrador en EOP
 
@@ -72,7 +72,7 @@ Puede ver y administrar mensajes en cuarentena en el Centro de seguridad y cumpl
 
 ### <a name="view-quarantined-email"></a>Ver correo electrónico en cuarentena
 
-1. En el Centro de seguridad y cumplimiento, vaya a **Administración de amenazas** \> **Revisar** \> **Cuarentena**.
+1. En el Centro de & cumplimiento, vaya a **Cuarentena de revisión de administración** \> **de** \> **amenazas.**
 
 2. Compruebe que **Ver en cuarentena** esté configurado en el valor predeterminado **correo electrónico**.
 
@@ -196,7 +196,7 @@ Después de seleccionar un mensaje, tiene varias opciones para qué hacer con lo
 
 - **Descargar mensaje**: En el panel de flotante que aparece, seleccione **Entiendo los riesgos de descargar este mensaje** para guardar una copia local del mensaje en formato .eml.
 
-- **Bloquear remitente:** agregue el remitente a la lista Remitentes bloqueados del buzón. Para obtener más información, vea [Bloquear un remitente de correo](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+- **Bloquear remitente**: Agregue el remitente a la lista Remitentes bloqueados del buzón. Para más información, consulte [Bloquear un remitente de correo](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - **Enviar mensaje:** en el panel desplegable que aparece, elija las siguientes opciones:
 
@@ -225,16 +225,16 @@ Al seleccionar varios mensajes en cuarentena de la lista (hasta 100), se mostrar
 
 Cuando haya terminado, haga clic en **Cerrar**.
 
-## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>Solo Microsoft Defender para Office 365: Use el Centro de seguridad & cumplimiento para administrar archivos en cuarentena
+## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>Microsoft Defender solo para Office 365: Use el Centro de seguridad y & cumplimiento para administrar archivos en cuarentena
 
 > [!NOTE]
-> Los procedimientos para los archivos en cuarentena de esta sección solo están disponibles para suscriptores de Microsoft Defender para Office 365 Plan 1 y Plan 2.
+> Los procedimientos para los archivos en cuarentena de esta sección solo están disponibles para Microsoft Defender Office 365 los suscriptores del Plan 1 y plan 2.
 
-En organizaciones con Defender para Office 365, los administradores pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams. Para habilitar la protección de estos archivos, vea Activar datos adjuntos seguros para [SharePoint, OneDrive y Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+En organizaciones con Defender para Office 365, los administradores pueden administrar archivos en cuarentena en SharePoint Online, OneDrive para la Empresa y Microsoft Teams. Para habilitar la protección de estos archivos, vea Activar Caja fuerte datos adjuntos para [SharePoint, OneDrive y Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>Ver archivos en cuarentena
 
-1. En el Centro de seguridad y cumplimiento, vaya a **Administración de amenazas** \> **Revisar** \> **Cuarentena**.
+1. En el Centro de & cumplimiento, vaya a **Cuarentena de revisión de administración** \> **de** \> **amenazas.**
 
 2. Cambiar **Vista en cuarentena a** los archivos de **valor**. Puede ordenar un campo haciendo clic en un encabezado de columna disponible.
 
@@ -268,7 +268,7 @@ Después de encontrar un archivo en cuarentena específico, seleccione el archiv
 Al seleccionar un archivo en la lista, los siguientes detalles de archivo aparecen en el **panel** desplegable Detalles:
 
 - **Nombre de archivo**
-- **Dirección URL de** archivo: dirección URL que define la ubicación del archivo (por ejemplo, en SharePoint Online).
+- **Dirección URL de** archivo: dirección URL que define la ubicación del archivo (por ejemplo, en SharePoint online).
 - **Contenido malintencionado detectado en** La fecha y hora en que el archivo se ha puesto en cuarentena.
 - **Expira:** la fecha en la que el archivo se eliminará de la cuarentena.
 - **Detectado por**: Defender para Office 365 o el motor antimalware de Microsoft.

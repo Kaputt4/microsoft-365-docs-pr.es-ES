@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f3dba2116e0f13f265937ef65fd3b69bcb1e725b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9e82f1c5de9fe1f4a03385458338edf18c4f35bd
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274657"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538848"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Ver y administrar acciones en el Centro de acciones
 
@@ -36,7 +36,7 @@ ms.locfileid: "52274657"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-Las características de protección contra amenazas en Microsoft 365 Defender pueden dar lugar a determinadas acciones de corrección. Estos son algunos ejemplos:
+Las características de protección contra amenazas de Microsoft 365 Defender pueden dar lugar a determinadas acciones de corrección. Estos son algunos ejemplos:
 
 - [Las investigaciones automatizadas](m365d-autoir.md) pueden dar como resultado acciones de corrección que se toman automáticamente o esperar su aprobación.
 - Antivirus, antimalware y otras características de protección contra amenazas pueden provocar acciones de corrección, como bloquear un archivo, una dirección URL o un proceso, o enviar un artefacto a la cuarentena.
@@ -98,4 +98,4 @@ Si has determinado que un dispositivo o un archivo no es una amenaza, puedes des
 ## <a name="next-steps"></a>Pasos siguientes
 
 - [Ver los detalles y los resultados de una investigación automatizada](m365d-autoir-results.md)
-- [Dirección de falsos positivos o falsos negativos)](m365d-autoir-report-false-positives-negatives.md)
+- [Dirección de falsos positivos o falsos negativos](m365d-autoir-report-false-positives-negatives.md)
