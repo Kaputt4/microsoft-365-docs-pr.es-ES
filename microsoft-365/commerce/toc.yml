@@ -68,7 +68,7 @@
       href: billing-and-payments/psd2.md
 - name: Cuentas de facturación
   items:
-    - name: Administrar cuentas de facturación
+    - name: Comprender las cuentas de facturación
       href: manage-billing-accounts.md
     - name: Asociar un espacio empresarial con su cuenta de facturación
       href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
