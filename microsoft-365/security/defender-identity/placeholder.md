@@ -1,6 +1,6 @@
 ---
-title: Tema de marcador de posición para crear la carpeta en master-to ser eliminado
-description: Tema de marcador de posición para crear la carpeta en master-to ser eliminado
+title: Tema Marcador de posición para crear la carpeta en el patrón que se va a eliminar
+description: Tema Marcador de posición para crear la carpeta en el patrón que se va a eliminar
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -29,5 +29,5 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 05/19/2021
 ms.locfileid: "52572825"
 ---
-# <a name="placeholder-topic-to-create-the-folder-in-master-to-be-deleted"></a><span data-ttu-id="c4d5e-103">Tema de marcador de posición para crear la carpeta en master-to ser eliminado</span><span class="sxs-lookup"><span data-stu-id="c4d5e-103">Placeholder topic to create the folder in master-to be deleted</span></span>
+# <a name="placeholder-topic-to-create-the-folder-in-master-to-be-deleted"></a><span data-ttu-id="a9bef-103">Tema Marcador de posición para crear la carpeta en el patrón que se va a eliminar</span><span class="sxs-lookup"><span data-stu-id="a9bef-103">Placeholder topic to create the folder in master-to be deleted</span></span>
 
