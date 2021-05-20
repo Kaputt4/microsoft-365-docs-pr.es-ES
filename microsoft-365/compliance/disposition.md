@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, cuando usa una revisión para eliminación o los elementos marcados como registros se eliminan automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: dd03c429bf1b12a4c733c2e6800d0b71ca7a691f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3c5d178b4eab267759506dcd86d66fb2bf4d93ee
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532175"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583477"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -33,6 +33,8 @@ Use la página **Eliminación** de **Administración de registros** en el Centro
 > Implementando en versión preliminar: **revisión para eliminación de varias etapas**
 > 
 > Ahora un administrador puede agregar hasta cinco fases consecutivas de revisión para eliminación en una etiqueta de retención y los revisores pueden agregar a otros usuarios a su fase de revisión para eliminación. También puede personalizar las notificaciones por correo electrónico y los avisos. En las siguientes secciones se ofrece más información sobre los cambios en esta versión preliminar.
+>
+> Para leer el anuncio de la versión, consulte la entrada de blog [Anuncio de la disposición de varias etapas en la Administración de registros de Microsoft](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-multi-stage-disposition-in-microsoft-records/ba-p/2361849).
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Requisitos previos para ver las eliminaciones de contenido
 

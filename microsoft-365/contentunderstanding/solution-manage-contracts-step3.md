@@ -6,18 +6,18 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/19/2021
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo usar Power Automate para crear el flujo para procesar los contratos mediante una Microsoft 365 solución.
-ms.openlocfilehash: d9892110d6aebd3eaae6fbc21d453b7eb14d7f7e
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 54e92f36b19cefde92111cdbc960fad7715cf8b0
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281364"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583105"
 ---
 # <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>Paso 3. Usar Power Automate para crear el flujo para procesar los contratos
 
@@ -36,11 +36,11 @@ En el siguiente diagrama se muestra el Power Automate de la solución de adminis
 
 ## <a name="prepare-your-contract-for-review"></a>Preparar el contrato para revisión
 
-Cuando el modelo de comprensión de documentos de SharePoint Syntex identifica y clasifica un contrato, el flujo de Power Automate cambiará primero el estado a "En revisión".
+Cuando el modelo SharePoint de comprensión de documentos de Syntex identifica y clasifica un contrato, el flujo de Power Automate cambiará primero el estado a **En revisión**.
 
 ![Estado de actualización.](../media/content-understanding/flow-overview.png)
 
-Después de desaltear el archivo, cambie el valor de estado a "En revisión".
+Después de desaltear el archivo, cambie el valor de estado a **En revisión**.
 
 ![En estado de revisión.](../media/content-understanding/in-review.png)
 
@@ -141,7 +141,7 @@ Cuando se ha aprobado un contrato, se producen los siguientes aspectos:
 
    ![Estado de la tarjeta aprobado.](../media/content-understanding/approved-contracts-tab.png)
 
-- En el flujo, el estado cambia a "Aprobado".
+- En el flujo, el estado cambia a **Aprobado**.
 
    ![Flow estado aprobado.](../media/content-understanding/status-approved.png)
 

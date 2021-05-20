@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Obtenga información sobre cómo planear los temas de Microsoft Viva
-ms.openlocfilehash: d64e4b341fe96d7aa3636f58bffe3dd8f388838e
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: de7534ce58a7888ac822826ef4ef1b4934ed8cb1
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957544"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583117"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planeación de temas de Microsoft Viva
 
@@ -23,7 +23,7 @@ Tiene el control de cómo se experimentan los temas en su organización. Las dec
 
 En este artículo examinaremos estas decisiones de planeación:
 
-- Qué sitios de SharePoint desea rastrear para los temas
+- Qué SharePoint los sitios que desea rastrear para los temas
 - Qué temas, si los hay, que desea excluir de las experiencias de temas
 - Qué usuarios desea que los temas sean visibles
 - Qué usuarios desea conceder permisos para administrar temas en el centro de temas
@@ -32,26 +32,28 @@ En este artículo examinaremos estas decisiones de planeación:
 
 Se respeta la seguridad y privacidad de los datos y las experiencias de temas no conceden a los usuarios acceso adicional a los archivos a los que no tienen derechos. También se recomienda leer Temas de [Microsoft Viva seguridad y privacidad](topic-experiences-security-privacy.md) como parte del proceso de planeación.
 
+Para obtener más información sobre la tecnología de inteligencia artificial detrás de Los temas de Viva, lea El tema de Alejandría en [Temas de Microsoft Viva: de big data a big knowledge](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge).
+
 ## <a name="requirements"></a>Requisitos
 
-Debe estar suscrito a [Viva Topics](https://www.microsoft.com/microsoft-viva/topics) y ser administrador global o administrador de SharePoint para tener acceso al Centro de administración de Microsoft 365 y configurar Temas.
+Debe estar suscrito a [Viva Topics](https://www.microsoft.com/microsoft-viva/topics) y ser administrador global o administrador de SharePoint para tener acceso al centro de administración de Microsoft 365 y configurar Temas.
 
 Todos los usuarios que van a usar Temas requieren una **licencia de Experiencias de** tema. La asignación de licencias se trata [en Configurar temas de Microsoft Viva](set-up-topic-experiences.md).
 
 ## <a name="topic-discovery"></a>Detección de temas
 
-La configuración de detección de temas especifica qué sitios de SharePoint se usan como orígenes para los temas. Puede elegir incluir todos los sitios de SharePoint, una lista específica de sitios o ningún sitio. Le recomendamos que elija todos los sitios para que las experiencias del tema puedan descubrir una gran cantidad de temas buenos para los usuarios.
+La configuración de la detección de temas especifica qué sitios de SharePoint se utilizan como fuentes de temas. Puede elegir entre incluir todos los sitios de SharePoint, una lista específica de sitios o ningún sitio. Le recomendamos que elija todos los sitios para que las experiencias del tema puedan descubrir una gran cantidad de temas buenos para los usuarios.
 
-Al configurar Temas, puede elegir entre las siguientes opciones:
+Cuando se configuran los Temas, se puede elegir entre las siguientes opciones:
 
-- **Todos los sitios:** todos los sitios de SharePoint de la organización. Esto incluye sitios actuales y futuros.
-- **Todos, excepto los sitios seleccionados:** todos los sitios excepto los que especifique. Los sitios creados en el futuro se incluirán como orígenes para la detección de temas. 
-- **Solo sitios seleccionados:** solo los sitios que especifique. Los sitios creados en el futuro no se incluirán como orígenes para la detección de temas.
-- **Sin sitios:** no incluya ningún sitio de SharePoint.
+- **Todos los sitios**: Todos los sitios de SharePoint de su organización. Esto incluye los sitios actuales y futuros.
+- **Todos, excepto los sitios seleccionados**: Todos los sitios excepto los que usted especifique. Los sitios creados en el futuro se incluirán como orígenes para la detección de temas. 
+- **Solo sitios seleccionados:** solo los sitios que especifique. Los sitios creados en el futuro no se incluirán como fuentes para el descubrimiento de temas.
+- **Ningún sitio**: No incluya ningún sitio de SharePoint.
 
-Si elige **Todos, excepto** los sitios seleccionados o Solo los sitios seleccionados, puede cargar un archivo .csv con una lista de sitios. Estas opciones son útiles si está realizando una prueba piloto y desea incluir un número limitado de sitios para iniciar.
+Si elige **Todos,** excepto los sitios seleccionados o Solo los sitios seleccionados, puede cargar un archivo .csv con una lista de sitios. Estas opciones son útiles si está realizando una prueba piloto y desea incluir un número limitado de sitios para iniciar.
 
-Puede copiar la plantilla .csv siguiente:
+Puede copiar la siguiente .csv siguiente:
 
 ``` csv
 Site name,URL
@@ -63,7 +65,7 @@ Se recomienda crear un proceso para que los usuarios o administradores de conoci
 
 ### <a name="multi-geo"></a>Multi-Geo
 
-Si su organización ha implementado [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo), el centro de temas se aprovisiona en la ubicación central y solo los sitios de SharePoint en la ubicación central están disponibles para usarlos como orígenes de temas. (Si selecciona Todos **los sitios,** Viva Topics usará todos los sitios de la ubicación central).
+Si su organización ha implementado [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo), el centro de temas se aprovisiona en la ubicación central y solo SharePoint los sitios de la ubicación central están disponibles para su uso como orígenes para los temas. (Si selecciona Todos **los sitios,** Viva Topics usará todos los sitios de la ubicación central).
 
 Todo el procesamiento y almacenamiento del contenido se realiza en la ubicación central.
 
@@ -92,7 +94,7 @@ Puedes elegir no permitir que nadie contribuya a los temas, pero esto no se reco
 
 *Visores de temas*
 
-Los visores de temas pueden ver información sobre las páginas de temas, los resultados de búsqueda y cuándo se resaltan los temas en el contenido como las páginas de SharePoint. Los usuarios solo pueden ver temas detectados cuando tienen acceso a los archivos y páginas en los que se descubrió el tema.
+Los visores de temas pueden ver información sobre las páginas de temas, los resultados de la búsqueda y cuándo se resaltan los temas en el contenido, como SharePoint páginas. Los usuarios solo pueden ver temas detectados cuando tienen acceso a los archivos y páginas en los que se descubrió el tema.
 
 Al configurar visores de temas, puede elegir entre:
 
@@ -108,9 +110,9 @@ Como administrador, puede excluir determinados temas de las experiencias del tem
 
 Si desea excluir temas en el nivel de administrador, debe agregarlos a un archivo .csv y cargar el archivo. Puede hacerlo durante la instalación o posterior.
 
-El archivo .csv debe contener los siguientes parámetros:
+El .csv debe contener los siguientes parámetros:
 
-- **Nombre:** escriba el nombre del tema que desea excluir. Puede realizar esto de dos maneras:
+- **Nombre**: Escriba el nombre del tema que quiera excluir. Hay dos formas de hacerlo:
 - **MatchType-Exact/Partial:** escriba si el nombre que escribió era *un tipo de* coincidencia exacto *o* parcial.
     - Coincidencia exacta: puede incluir el nombre exacto o el acrónimo (por ejemplo, *Contoso* o *ATL*).
     - Coincidencia parcial: puede excluir todos los temas que tengan una palabra específica.  Por ejemplo, *el arco* excluirá  todos los temas con la palabra arco en él, como *Círculo* de arco, *Soldador de arco de* plasma o Arco *de aprendizaje.* Tenga en cuenta que no excluirá los temas en los que el texto se incluye como parte de una palabra, como *Arquitectura*.
@@ -126,7 +128,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>Administración
 
-Al configurar Temas, como parte del proceso de configuración, se crea automáticamente un centro de temas. Piense en lo que desea nombrar el centro de temas y en qué desea que sea la dirección URL. Puede establecer el nombre y la dirección URL como parte del proceso de configuración y puede cambiar el nombre (pero no la dirección URL) más adelante en el Centro de administración de Microsoft 365. Solo puede tener un centro de temas.
+Al configurar Temas, como parte del proceso de configuración, se crea automáticamente un centro de temas. Piense en lo que desea nombrar el centro de temas y en qué desea que sea la dirección URL. Puede establecer el nombre y la dirección URL como parte del proceso de instalación y puede cambiar el nombre (pero no la dirección URL) más adelante en el centro de administración de Microsoft 365 configuración. Solo puede tener un centro de temas.
 
 ## <a name="setup-checklist"></a>Lista de comprobación de configuración
 
@@ -134,20 +136,20 @@ Cuando configures experiencias de tema, necesitarás los siguientes elementos a 
 
 > [!div class="checklist"]
 > * Lista de sitios que se incluirán o excluirán si no se incluyen todos los sitios para la detección de temas
-> * Grupo de seguridad para los visores de temas si no permite que todos los usuarios puedan ver temas
-> * Grupo de seguridad para colaboradores de temas si no permite que todos los usuarios creen y editan temas
-> * Grupo de seguridad para administradores de conocimientos de temas si no permite que todos los usuarios administren temas
+> * Grupo de seguridad para lectores de temas si no se permite que todos los usuarios puedan ver los temas
+> * Grupo de seguridad para colaboradores de temas si no se permite que los usuarios creen y editen temas
+> * Grupo de seguridad para gerentes de información de temas si no se permite que todos los usuarios administren temas
 > * Lista de temas confidenciales que se excluirán de la detección de temas
 > * Un nombre para el sitio del centro de temas
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Configurar las experiencias temáticas](set-up-topic-experiences.md)
 
 [Administrar la detección de temas en Microsoft 365](topic-experiences-discovery.md)
 
-[Administrar visibilidad de temas en Microsoft 365](topic-experiences-knowledge-rules.md)
+[Administrar la visibilidad del tema en Microsoft 365](topic-experiences-knowledge-rules.md)
 
 [Administrar permisos de temas en Microsoft 365](topic-experiences-user-permissions.md)
 
-[Cambiar el nombre del centro de temas en Microsoft 365](topic-experiences-administration.md)
+[Cambie el nombre del centro de temas en Microsoft 365](topic-experiences-administration.md)

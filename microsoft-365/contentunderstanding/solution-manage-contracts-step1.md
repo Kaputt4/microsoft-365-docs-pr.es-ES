@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Obtenga información sobre cómo usar SharePoint Syntex para identificar archivos de contrato y extraer datos mediante una Microsoft 365 solución.
-ms.openlocfilehash: f246dd4ed619dd9885d2c45c69d607cfa9c2483f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 67c0a072b070cd414f5079fe4fb61e7391839951
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538560"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583573"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Paso 1. Usar SharePoint Syntex para identificar archivos de contrato y extraer datos
 
@@ -42,7 +42,7 @@ Su organización necesita una forma de identificar y clasificar todos los docume
 ## <a name="steps-to-create-and-train-your-model"></a>Pasos para crear y entrenar el modelo
 
 > [!NOTE]
-> Para estos pasos, puede usar los archivos de ejemplo en el repositorio de muestras de Syntex de [Microsoft SharePoint.](https://github.com/pnp/syntex-samples) Los ejemplos de este repositorio contienen tanto los archivos del modelo de descripción del documento como los archivos usados para entrenar el modelo.
+> Para estos pasos, puede usar los archivos de ejemplo en el repositorio activos de solución de administración [de contratos](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management). Los ejemplos de este repositorio contienen tanto los archivos del modelo de descripción de documentos como los archivos usados para entrenar el modelo.
 
 ### <a name="create-a-contract-model"></a>Crear un modelo de contrato
 

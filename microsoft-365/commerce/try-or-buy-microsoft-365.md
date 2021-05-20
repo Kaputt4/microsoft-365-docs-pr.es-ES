@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 search.appverid: MET150
-description: Obtenga información sobre cómo obtener una versión de prueba gratuita o comprar una suscripción para Microsoft 365 para empresas.
+description: Regístrate para una prueba gratuita de 30 días para Microsoft 365 Empresa Estándar, Microsoft 365 Empresa Premium o Aplicaciones Microsoft 365 para negocios.
 ms.date: 08/07/2020
-ms.openlocfilehash: 78716d78745616530729ff2fa5cfa31202e056c8
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 20ceb683c6224e572a1c532330d45fa8fa5c8416
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344691"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583453"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Probar o comprar una suscripción Microsoft 365 para empresas
 
@@ -143,9 +143,9 @@ Si ya tienes una suscripción y estás agregando una nueva suscripción, puedes 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Microsoft 365 vídeos de aprendizaje para empresas](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (vídeos de aprendizaje)\
+[Microsoft 365 vídeos de aprendizaje para empresas](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (vídeo)\
 [Agregar usuarios y asignar licencias al mismo tiempo](../admin/add-users/add-users.md) (artículo)\
 [Asignar licencias a los usuarios](../admin/manage/assign-licenses-to-users.md) (artículo)\
 [Actualizar a otro plan](subscriptions/upgrade-to-different-plan.md) (artículo)\
 [Comprar o editar un complemento para Microsoft 365 para empresas](buy-or-edit-an-add-on.md) (artículo)\
-[Agregar espacio de almacenamiento para la suscripción](add-storage-space.md)
+[Agregar espacio de almacenamiento para la suscripción](add-storage-space.md) (artículo)

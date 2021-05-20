@@ -21,13 +21,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: Obtenga información sobre cómo quitar un dominio antiguo de Microsoft 365 y mover usuarios y grupos a otro dominio.
-ms.openlocfilehash: 3586cc8b288b77725c0dd3484629688e98e0a218
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+description: Obtenga información sobre cómo quitar un dominio antiguo de Microsoft 365 y mover usuarios y grupos a otro dominio o cancelar la suscripción.
+ms.openlocfilehash: 089f0378109dd2a5abdf922694390bfdc943693a
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572122"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582937"
 ---
 # <a name="remove-a-domain"></a>Quitar un dominio
   
@@ -218,10 +218,10 @@ Si tiene cientos o miles de usuarios, use PowerShell para consultar todos los us
   
 ::: moniker-end
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Preguntas más frecuentes de dominios](../setup/domains-faq.yml)
+[Preguntas más frecuentes sobre](../setup/domains-faq.yml) dominios (artículo)
 
-[Cambiar a otro plan de Microsoft 365 para empresas](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[Cambiar a otro plan Microsoft 365 para empresas](../../commerce/subscriptions/switch-to-a-different-plan.md) (artículo)
 
-[Cancelar la suscripción](../../commerce/subscriptions/cancel-your-subscription.md)
+[Cancelar la suscripción](../../commerce/subscriptions/cancel-your-subscription.md) (artículo)

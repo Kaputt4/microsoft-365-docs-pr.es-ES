@@ -23,13 +23,13 @@ search.appverid:
 - BSA160
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
-description: Obtenga información sobre los dominios y sus registros DNS asociados para ayudarle a administrar los dominios.
-ms.openlocfilehash: f8d8171e306a0206facec1621bf2b1a9f8085757
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: El sistema de nombres de dominio asigna los nombres de host del equipo a las direcciones IP, comprender los conceptos básicos de DNS y registrador de dominios puede ayudarle a administrar los dominios.
+ms.openlocfilehash: f9982ad55652eac9faf33986bb1481e29897a48e
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915667"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582949"
 ---
 # <a name="dns-basics"></a>Conceptos básicos sobre DNS
 
@@ -53,7 +53,7 @@ Los nombres de dominio, como contoso.com, se administran con un sistema mundial 
 
 ::: moniker range="o365-21vianet"
 
-Los nombres de dominio, como contoso.com, se administran con un sistema mundial de bases de datos y registradores de dominios. El Sistema de nombres de dominio (DNS) proporciona una asignación entre nombres de hosts de equipos legibles y las direcciones IP que usan los dispositivos de red. Comprender los conceptos básicos de DNS y los registradores de dominios ayudará a administrar dominios.
+Los nombres de dominio, como contoso.com, se administran con un sistema mundial de bases de datos y registradores de dominios. El Sistema de nombres de dominio (DNS) proporciona una asignación entre nombres de hosts de equipos legibles y las direcciones IP que usan los dispositivos de red. Comprender los conceptos básicos de DNS y de registrador de dominios ayudará a los administradores a administrar los dominios.
   
 ::: moniker-end
 
@@ -122,7 +122,7 @@ Supongamos que el registro NS para contoso.com pone "godaddy.com". Ahora Interne
 
 ::: moniker range="o365-21vianet"
 
-Supongamos que el registro NS para contoso.com dice "hichina.com.". Ahora, Internet sabe que hichina.com es donde debe buscar el archivo de zona en el que se enumeran los demás registros de DNS para contoso.com. Estos registros DNS incluyen el registro MX que dice dónde deben enviarse los correos electrónicos de contoso.com y otros registros. Si el registro MX tiene un valor que indica (en términos técnicos) "enviar correo electrónico a Microsoft 365", aquí es donde se enviarán todos los mensajes de correo electrónico enviados a una dirección de correo electrónico contoso.com (como joe@contoso.com). Y siempre que haya un buzón llamado "joe" en esa ubicación, el correo electrónico se entregará.
+Supongamos que el registro NS para contoso.com pone "hichina.com". Ahora Internet sabe que hichina.com es donde debe buscar el archivo de zona que contiene todos los demás registros DNS para contoso.com. Estos registros DNS incluyen el registro MX que pone dónde deben enviarse los correos electrónicos de contoso.com y otros registros. Si el registro MX tiene un valor que indica (en términos técnicos) "enviar correo electrónico a Microsoft 365", aquí es donde se enviarán todos los mensajes de correo electrónico enviado a una dirección de correo electrónico contoso.com (como joe@contoso.com). Entonces, siempre que haya un buzón llamado "joe" en esa ubicación, el correo electrónico se entregará.
 
 ::: moniker-end
 
@@ -142,7 +142,7 @@ Los valores reales que debe introducir para que todo esto funcione con Microsoft
 
 ::: moniker range="o365-21vianet"
 
-¿Por qué es posible que el archivo de zona de su dominio esté en otro lugar aparte del registrador de dominios? Bueno, es posible que registre su nombre de dominio en un registrador de dominios como HiChina, pero que los registros DNS se administren en otra ubicación, en una empresa de hospedaje DNS independiente o una compañía de hospedaje de sitios web. Los registros NS de su dominio almacenan esta información para que todos los servidores DNS sepan dónde buscar.
+¿Por qué es posible que el archivo de zona de su dominio esté en otro lugar aparte del registrador de dominios? Bueno, es posible que registre su nombre de dominio en un registrador de dominios como hichina, pero que los registros DNS se administren en otra ubicación, en una empresa de hospedaje DNS independiente o una compañía de hospedaje de sitios web. Los registros NS de su dominio almacenan esta información para que todos los servidores DNS sepan dónde buscar.
 
 ::: moniker-end
 
@@ -198,3 +198,11 @@ Consulte uno de estos procedimientos:
   
 - ¿No sabe dónde está registrado su dominio? [Obtenga ayuda para encontrar su registrador de dominios](find-your-domain-registrar.md).
 - Averigüe [por qué tiene que completar los pasos del asistente](../setup/add-domain.md) para poder usar su dominio con Microsoft 365.
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Preguntas más frecuentes sobre dominios](../setup/domains-faq.yml) (artículo)
+
+[Buscar y corregir problemas después de agregar el dominio o los registros DNS](find-and-fix-issues.md) (artículo)
+
+[Administrar dominios](index.yml) (página de vínculo)

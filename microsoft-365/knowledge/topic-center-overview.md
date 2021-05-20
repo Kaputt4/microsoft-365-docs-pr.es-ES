@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: 2e7152530dc3221eb3ab01047416993178193732
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 073c14f84f4858a1853da062bf87ae9e78c05cbd
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333823"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583597"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Introducción al centro de temas en Temas de Microsoft Viva
 
@@ -39,7 +39,7 @@ El centro de temas se crea durante la instalación de Viva Topics. Una vez compl
 
     ![Conectar personas al conocimiento](../media/admin-org-knowledge-options-completed.png) 
 
-3. Seleccione la **pestaña Centro de** temas. En **Dirección del sitio** es un vínculo al Centro de temas.
+3. Seleccione la **pestaña Centro de** temas. En **Dirección del sitio** es un vínculo al centro de temas.
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
 
@@ -79,7 +79,7 @@ En la **página Administrar temas,** el panel de temas muestra todos los temas, 
  
 - Quitar el tema: hace que el tema no se pueda detectar para los usuarios finales. El tema se mueve a la **pestaña Quitado** y se puede confirmar más adelante si es necesario. 
 
-Para obtener más información acerca de cómo administrar temas en la página **Administrar temas, vea [Administrar temas](manage-topics.md).
+Para obtener más información sobre cómo administrar temas en la página Administrar **temas,** vea [Administrar temas](manage-topics.md).
 
 ## <a name="create-or-edit-a-topic"></a>Crear o editar un tema
 
@@ -90,7 +90,7 @@ Si tiene permisos crear y editar temas, puede:
 - [Crear nuevos temas:](create-a-topic.md)puede crear nuevos temas para los que no se encontraron a través de la detección, o si las herramientas de inteligencia artificial no encontraron suficiente evidencia para crear un tema.
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Administrar temas en el Centro de temas](manage-topics.md)
 

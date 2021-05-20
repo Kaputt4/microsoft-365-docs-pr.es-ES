@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 2bd719377e36cf608a0fe75078ab8bef004ad92e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 42ab124f3026cf0b7441edf44c0e6433be5f0ecd
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346333"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583673"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Directivas comunes de acceso a dispositivos e identidades
 
@@ -42,7 +42,7 @@ En esta guía se describe cómo implementar las directivas recomendadas en un en
 
 En el siguiente diagrama se muestra el conjunto de directivas recomendado. Muestra a qué nivel de protección se aplica cada directiva y si las directivas se aplican a equipos, teléfonos y tabletas, o ambas categorías de dispositivos. También indica dónde se configuran estas directivas.
 
-[![Directivas comunes para configurar la identidad y el acceso a dispositivos](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[![Directivas comunes para configurar la identidad y el acceso a dispositivos](../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 Este es un resumen pdf de una página con vínculos a las directivas individuales:
 
@@ -197,7 +197,7 @@ En la segunda **sección Asignaciones:**
 
 |Tipo|Propiedades|Valores|Action|
 |---|---|---|---|
-|Acceso|**Permitir acceso**||Select|
+|Access|**Permitir acceso**||Select|
 |||**Exigir cambio de contraseña**|Cheque|
 |
 
@@ -313,7 +313,7 @@ Para **Seguridad del sistema,** consulte esta tabla.
 ||Contraseñas sencillas|Bloquear|Select|
 ||Tipo de contraseña|Valor predeterminado del dispositivo|Select|
 ||Longitud mínima de la contraseña|6 |Tipo|
-||Minutos máximos de inactividad antes de que se requiera la contraseña|15 |Tipo <p> Esta configuración es compatible con las versiones 4.0 y posteriores de Android o KNOX 4.0 y versiones posteriores. Para dispositivos iOS, es compatible con iOS 8.0 y versiones posteriores.|
+||Minutos máximos de inactividad antes de que se requiera la contraseña|15|Tipo <p> Esta configuración es compatible con las versiones 4.0 y posteriores de Android o KNOX 4.0 y versiones posteriores. Para dispositivos iOS, es compatible con iOS 8.0 y versiones posteriores.|
 ||Expiración de contraseña (días)|41|Tipo|
 ||Número de contraseñas anteriores para evitar la reutilización|5 |Tipo|
 ||Requerir contraseña cuando el dispositivo devuelve el estado de inactividad (móvil y holográfico)|Obligatoria|Disponible para Windows 10 y versiones posteriores|

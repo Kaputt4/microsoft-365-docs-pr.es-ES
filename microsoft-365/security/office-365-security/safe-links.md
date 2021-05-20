@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: En este artículo, los administradores pueden obtener información sobre la protección de vínculos de Caja fuerte en Defender for Office 365 para proteger su organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c93ed2ec46cd0fd82ae1808ff7cfdb4a4f758117
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 573fd5b92400996fa595b5953028e20fcecec976
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246506"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583585"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Caja fuerte Vínculos en Microsoft Defender para Office 365
 
@@ -52,6 +52,9 @@ Caja fuerte La protección de vínculos está disponible en las siguientes ubica
 - **Mensajes de correo** electrónico: Caja fuerte protección de vínculos para vínculos en mensajes de correo electrónico está controlada por Caja fuerte de vínculos. No hay ninguna directiva Caja fuerte links predeterminada, por lo que para obtener la protección de los vínculos de Caja fuerte en los mensajes de correo electrónico, debe crear una o más directivas de vínculos de **Caja fuerte.** Para obtener instrucciones, vea [Configurar directivas Caja fuerte vínculos en Microsoft Defender para Office 365](set-up-safe-links-policies.md).
 
   Para obtener más información acerca de Caja fuerte de vínculos para mensajes de correo electrónico, vea la sección Caja fuerte [configuración](#safe-links-settings-for-email-messages) de vínculos para mensajes de correo electrónico más adelante en este artículo.
+  
+  > [!NOTE]
+  > Los vínculos de venta no funcionan en carpetas públicas habilitadas para correo.
 
 - **Microsoft Teams** (actualmente en vista previa de TAP): la protección de vínculos de Caja fuerte para vínculos en conversaciones Teams, chats de grupo o desde canales también está controlada por las directivas de vínculos de Caja fuerte. No hay ninguna directiva Caja fuerte links predeterminada, por lo que para obtener la protección de los vínculos de Caja fuerte en **Teams,** debe crear una o más directivas de vínculos Caja fuerte .
 
@@ -65,13 +68,13 @@ Caja fuerte La protección de vínculos está disponible en las siguientes ubica
 
 En este artículo se incluyen descripciones detalladas de los siguientes tipos de Caja fuerte de vínculos:
 
-- **Configuración en Caja fuerte de** vínculos: esta configuración se aplica solo a los usuarios que se incluyen en las directivas específicas y la configuración puede ser diferente entre directivas. Estas opciones incluyen:
+- **Configuración en Caja fuerte de** vínculos: esta configuración se aplica solo a los usuarios que se incluyen en las directivas específicas y la configuración puede ser diferente entre directivas. Entre estas opciones se incluyen:
 
   - [Caja fuerte Configuración de vínculos para mensajes de correo electrónico](#safe-links-settings-for-email-messages)
   - [Caja fuerte Configuración de vínculos para Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - ["No reescribir las siguientes direcciones URL" en las directivas Caja fuerte vínculos](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Configuración Caja fuerte vínculos** globales: esta configuración se configura globalmente, no en Caja fuerte de vínculos. Sin embargo, la configuración solo se aplica a los usuarios incluidos en las directivas de vínculos Caja fuerte activas. Estas opciones incluyen:
+- **Configuración Caja fuerte vínculos** globales: esta configuración se configura globalmente, no en Caja fuerte de vínculos. Sin embargo, la configuración solo se aplica a los usuarios incluidos en las directivas de vínculos Caja fuerte activas. Entre estas opciones se incluyen:
 
   - [Caja fuerte Configuración de vínculos para Office 365 aplicaciones](#safe-links-settings-for-office-365-apps)
   - [Lista "Bloquear las siguientes direcciones URL" para Caja fuerte vínculos](#block-the-following-urls-list-for-safe-links)
@@ -107,9 +110,7 @@ La configuración de las Caja fuerte de vínculos que se aplican a los mensajes 
   - Las direcciones URL que no tienen una reputación válida se detonan de forma asincrónica en segundo plano.
 
 - **Aplicar análisis** de direcciones URL en tiempo real en busca de vínculos sospechosos y vínculos que apunten a archivos: habilita el examen en tiempo real de vínculos, incluidos los vínculos en mensajes de correo electrónico que apuntan a contenido descargable. El valor recomendado está habilitado.
-
   - **Espere a que se complete el examen de direcciones URL antes de entregar el mensaje:**
-
     - Habilitado: los mensajes que contienen direcciones URL se mantienen hasta que finaliza el examen. Los mensajes se entregan solo después de confirmar que las direcciones URL son seguras. Este es el valor recomendado.
     - Deshabilitado: si el examen de direcciones URL no se puede completar, entregue el mensaje de todos modos.
 
@@ -128,7 +129,6 @@ La configuración de las Caja fuerte de vínculos que se aplican a los mensajes 
   Para obtener más información acerca de los valores recomendados para la configuración de directivas estándar y estricta para las directivas Caja fuerte vínculos, vea Caja fuerte configuración de directiva [vínculos](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
 - **Filtros de destinatarios:** debe especificar las condiciones de destinatario y las excepciones que determinan a quién se aplica la directiva. Puede usar estas propiedades para condiciones y excepciones:
-
   - **El destinatario es**
   - **El dominio de destinatario es**
   - **El destinatario es un miembro de**
@@ -138,7 +138,7 @@ La configuración de las Caja fuerte de vínculos que se aplican a los mensajes 
 - **Prioridad:** si crea varias directivas, puede especificar el orden en que se aplican. Ninguna de las dos directivas puede tener la misma prioridad, y el procesamiento de directivas se detendrá cuando se aplique la primera directiva.
 
   Para obtener más información sobre el orden de prioridad y cómo se evalúan y aplican las distintas directivas, consulte [Orden y prioridad de la protección de correo electrónico](how-policies-and-protections-are-combined.md).
-
+  
 ### <a name="how-safe-links-works-in-email-messages"></a>Cómo Caja fuerte links en mensajes de correo electrónico
 
 En un nivel alto, aquí se muestra cómo funciona la protección Caja fuerte vínculos en las direcciones URL de los mensajes de correo electrónico:
@@ -259,26 +259,23 @@ Cuando un usuario de una directiva de vínculos Caja fuerte activa hace clic en 
 
 La lista de direcciones URL se configura en la configuración global de Caja fuerte vínculos. Para obtener instrucciones, [vea Configure the "Block the following URLs" list](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center).
 
-> [!NOTE]
-> 
-> - Para obtener una lista realmente universal de direcciones URL bloqueadas en todas partes, vea [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-> 
-> - Límites:
->   - El número máximo de entradas es 500.
->   - La longitud máxima de una entrada es de 128 caracteres.
->   - Todas las entradas no pueden superar los 10.000 caracteres.
-> 
-> - No incluya una barra diagonal ( `/` ) al final de la dirección URL. Por ejemplo, use `https://www.contoso.com` , no `https://www.contoso.com/` .
-> 
-> - Una dirección URL de solo dominio (por ejemplo `contoso.com` o `tailspintoys.com` ) bloqueará cualquier dirección URL que contenga el dominio.
-> 
-> - Puede bloquear un subdominio sin bloquear el dominio completo. Por ejemplo, `toys.contoso.com*` bloquea cualquier dirección URL que contenga el subdominio, pero no bloquea las direcciones URL que contienen el dominio completo `contoso.com` .
-> 
-> - Puede incluir hasta tres caracteres comodín ( `*` ) por entrada de dirección URL.
+**Notas**:
+
+- Para obtener una lista realmente universal de direcciones URL bloqueadas en todas partes, vea [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+- Límites para **la lista Bloquear las siguientes direcciones** URL:
+  - El número máximo de entradas es 500.
+  - La longitud máxima de una entrada es de 128 caracteres.
+  - Todas las entradas no pueden superar los 10.000 caracteres.
+- No incluya una barra diagonal ( `/` ) al final de la dirección URL. Por ejemplo, use `https://www.contoso.com` , no `https://www.contoso.com/` .
+- Una dirección URL de solo dominio (por ejemplo `contoso.com` o `tailspintoys.com` ) bloqueará cualquier dirección URL que contenga el dominio.
+- Puede bloquear un subdominio sin bloquear el dominio completo. Por ejemplo, `toys.contoso.com*` bloquea cualquier dirección URL que contenga el subdominio, pero no bloquea las direcciones URL que contienen el dominio completo `contoso.com` .
+- Puede incluir hasta tres caracteres comodín ( `*` ) por entrada de dirección URL.
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>Sintaxis de entrada para la lista "Bloquear las siguientes direcciones URL"
 
 En la tabla siguiente se describen ejemplos de los valores que puede especificar y sus resultados:
+
+<br>
 
 ****
 
@@ -299,24 +296,24 @@ Cada directiva Caja fuerte links contiene una lista Do **not rewrite the followi
 
 Para agregar entradas a la lista en directivas de vínculos de Caja fuerte nuevas o existentes, vea [Create Caja fuerte Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) o Modify Caja fuerte Links [policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies).
 
-> [!NOTE]
-> 
-> - Los siguientes clientes no reconocen las siguientes listas de **direcciones URL** en Caja fuerte de vínculos. Se puede bloquear el acceso a las direcciones URL de los usuarios incluidos en las policías en función de los resultados de la detección de vínculos Caja fuerte en estos clientes:
-> 
->   - Microsoft Teams
->   - Office web
-> 
->   Para obtener una lista realmente universal de direcciones URL permitidas en todas partes, vea [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-> 
-> - Considere la posibilidad de agregar direcciones URL internas usadas habitualmente a la lista para mejorar la experiencia del usuario. Por ejemplo, si tiene servicios locales, como Skype Empresarial o SharePoint, puede agregar esas direcciones URL para excluirlas del examen.
-> 
-> - Si ya tiene **No volver** a escribir las siguientes entradas de direcciones URL en las directivas de vínculos de Caja fuerte, asegúrese de revisar las listas y agregar caracteres comodín según sea necesario. Por ejemplo, la lista tiene una entrada como y más adelante decide incluir `https://contoso.com/a` subpaths como `https://contoso.com/a/b` . En lugar de agregar una nueva entrada, agregue un comodín a la entrada existente para que se convierta en `https://contoso.com/a/*` .
-> 
-> - Puede incluir hasta tres caracteres comodín ( `*` ) por entrada de dirección URL. Los caracteres comodín incluyen explícitamente prefijos o subdominios. Por ejemplo, la entrada no es la misma que , porque permite a los usuarios visitar subdominios y rutas de acceso `contoso.com` `*.contoso.com/*` en el dominio `*.contoso.com/*` especificado.
+**Notas**:
+
+- Los siguientes clientes no reconocen las siguientes listas de **direcciones URL** en Caja fuerte de vínculos. Se puede bloquear el acceso a las direcciones URL de los usuarios incluidos en las policías en función de los resultados de la detección de vínculos Caja fuerte en estos clientes:
+  - Microsoft Teams
+  - Office web
+
+  Para obtener una lista realmente universal de direcciones URL permitidas en todas partes, vea [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+
+- Considere la posibilidad de agregar direcciones URL internas usadas habitualmente a la lista para mejorar la experiencia del usuario. Por ejemplo, si tiene servicios locales, como Skype Empresarial o SharePoint, puede agregar esas direcciones URL para excluirlas del examen.
+- Si ya tiene **No volver** a escribir las siguientes entradas de direcciones URL en las directivas de vínculos de Caja fuerte, asegúrese de revisar las listas y agregar caracteres comodín según sea necesario. Por ejemplo, la lista tiene una entrada como y más adelante decide incluir `https://contoso.com/a` subpaths como `https://contoso.com/a/b` . En lugar de agregar una nueva entrada, agregue un comodín a la entrada existente para que se convierta en `https://contoso.com/a/*` .
+- Puede incluir hasta tres caracteres comodín ( `*` ) por entrada de dirección URL. Los caracteres comodín incluyen explícitamente prefijos o subdominios. Por ejemplo, la entrada no es la misma que , porque permite a los usuarios visitar subdominios y rutas de acceso `contoso.com` `*.contoso.com/*` en el dominio `*.contoso.com/*` especificado.
+- Si una dirección URL usa el redireccionamiento automático de HTTP a HTTPS (por ejemplo, redirección 302 para ) e intenta escribir entradas HTTP y HTTPS para la misma dirección URL de la lista, puede observar que la segunda entrada de dirección URL reemplaza a la primera entrada `http://www.contoso.com` `https://www.contoso.com` de dirección URL. Este comportamiento no se produce si las versiones HTTP y HTTPS de la dirección URL son completamente independientes.
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>Sintaxis de entrada para la lista "No volver a escribir las siguientes direcciones URL"
 
 En la tabla siguiente se describen ejemplos de los valores que puede especificar y sus resultados:
+
+<br>
 
 ****
 

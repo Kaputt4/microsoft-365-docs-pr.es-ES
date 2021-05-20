@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
-description: Cuando inicien sesión con cuentas válidas profesionales o educativas, los usuarios podrán obtener servicios de asistencia basados en la nube con Cortana en experiencias Microsoft 365 que cumplen las promesas de Office 365 a nivel empresarial de privacidad, seguridad y cumplimiento.
-ms.openlocfilehash: dd00972f6e84f5d430ad860ea9cbf637bd7c790f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Los usuarios con cuentas profesionales o educativas válidas pueden obtener Cortana en experiencias Microsoft 365 que cumplan Office 365 promesas de seguridad de nivel empresarial.
+ms.openlocfilehash: aad371fc531a03f42e1756a41405082b6b528b06
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537468"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582781"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -183,3 +183,12 @@ Desactivar el acceso de Cortana a los datos alojados de Microsoft de su organiza
 3. Seleccione **Guardar cambios**.
 
 Para los servicios que se rigen por el [Contrato de servicios de Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=2109174) y la  [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement), Microsoft es el responsable de los datos. Como responsable de los datos, Microsoft usa los datos para mejorar productos y servicios en conformidad con la [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement).
+
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Asistencia de voz de Cortana en Teams](/microsoftteams/cortana-in-teams) (artículo)
+
+[Configurar Cortana en Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (artículo)
+
+[¿Qué puedes hacer con Reproducir mis correos electrónicos de Cortana?](https://support.microsoft.com/help/4558256)

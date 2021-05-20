@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
-description: Obtenga información acerca de cómo hacer que su organización sea más segura frente a ataques a contraseñas y por qué debe prohibir contraseñas comunes y habilitar la autenticación multifactor basada en riesgos.
-ms.openlocfilehash: d3f86a6e85ab2f8e469a57ea98a661e4cc453673
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+description: Haga que su organización sea más segura contra ataques a contraseñas y prohíba las contraseñas comunes y habilite la autenticación multifactor basada en riesgos.
+ms.openlocfilehash: 1927e481625e93afa8aa064666e75ea8f891669e
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073870"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572302"
 ---
 # <a name="password-policy-recommendations"></a>Recomendaciones de directiva de contraseñas
 
@@ -74,7 +74,7 @@ El principal objetivo de un sistema de contraseña más seguro es la diversidad 
 
 ### <a name="password-guidance-for-your-users"></a>Guía de contraseñas para los usuarios
 
-Esta es una guía de contraseñas para los usuarios de su organización. Asegúrese de que los usuarios sepan estas recomendaciones y apliquen las directivas de contraseñas recomendadas en el nivel de organización.
+Esta es una guía sobre contraseñas para los usuarios de su organización. Asegúrese de que los usuarios sepan estas recomendaciones y apliquen las directivas de contraseñas recomendadas a nivel de la organización.
   
 - No use una contraseña igual o similar a una que use en otros sitios web
 
