@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, cuando usa una revisión para eliminación o los elementos marcados como registros se eliminan automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: 13310eca369949e2b66163907be4268120aa0ed0
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: dd03c429bf1b12a4c733c2e6800d0b71ca7a691f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344968"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532175"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -53,16 +53,24 @@ Además:
 
 - Para ver el contenido de los elementos durante el proceso de eliminación, agregue usuarios al grupo de roles **Visor de contenido del Explorador de contenido**. Si los usuarios no tienen los permisos de este grupo de roles, aún pueden seleccionar una acción de revisión para eliminación para completar la revisión para eliminación, pero deben hacerlo sin poder ver el contenido del elemento desde el panel de vista previa en miniatura del centro de cumplimiento.
 
-- En la versión preliminar: de forma predeterminada, cada persona que accede a la página **Eliminación** solo ve los elementos que tienen asignados para revisar. Para que un administrador de administración de registros vea todos los elementos asignados a todos los usuarios y todas las etiquetas de retención que están configuradas para la revisión para eliminación: vaya a **Configuración de administración de registros** > **General** > **Grupo de seguridad Administrador de registros** para seleccionar y habilitar un grupo de seguridad habilitado para correo que contiene las cuentas de administrador.
+- En la versión preliminar: de forma predeterminada, cada persona que accede a la página **Eliminación** solo ve los elementos que tienen asignados para revisar. Para que un administrador de administración de registros vea todos los elementos asignados a todos los usuarios y todas las etiquetas de retención que están configuradas para la revisión para eliminación: vaya a **Configuración de administración de registros** > **General** > **Grupo de seguridad para el administrador de registros** para seleccionar y habilitar un grupo de seguridad habilitado para correo que contiene las cuentas de administrador.
     
     Los grupos de Microsoft 365 y los grupos de seguridad que no están habilitados para correo no admiten esta característica y no se mostrarán en la lista para seleccionar. Si necesita crear un grupo de seguridad habilitado para correo, use el vínculo al Centro de administración de Microsoft 365 para crear el nuevo grupo. 
     
     > [!IMPORTANT]
-    > No puede deshabilitar este permiso ni reemplazar el grupo que ha habilitado desde el Centro de cumplimiento. Sin embargo, puede habilitar otro grupo de seguridad habilitado para correo si usa el cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
-    > 
-    > Por ejemplo: `Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com`
+    > Una vez habilitado el grupo, no puede cambiarlo en el centro de cumplimiento. Vea la sección siguiente sobre cómo habilitar un grupo diferente mediante PowerShell.
 
 - En la versión preliminar: la opción **Configuración de administración de registros** solo está visible para los administradores de administración de registros. 
+
+#### <a name="enabling-another-security-group-for-disposition"></a>Habilitar otro grupo de seguridad para su eliminación
+
+Después de habilitar un grupo de seguridad para su eliminación de la **Configuración de administración de registros** en el Centro de cumplimiento de Microsoft 365, no puede deshabilitar este permiso para el grupo ni reemplazar el grupo seleccionado en el centro de cumplimiento. Sin embargo, puede habilitar otro grupo de seguridad habilitado para correo si usa el cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage).
+
+Por ejemplo: 
+
+```PowerShell
+Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com
+````
 
 ### <a name="enable-auditing"></a>Habilitar auditoría
 
@@ -83,7 +91,7 @@ Cuando se activa una revisión para eliminación al final del período de retenc
 - Los revisores que elija recibirán una notificación por correo electrónico de que tienen contenido para revisar. Estos revisores pueden ser usuarios individuales o grupos de seguridad habilitados para correo. Novedades de la versión preliminar:
    - Puede personalizar el correo electrónico que reciben, incluidas instrucciones en diferentes idiomas. Para obtener compatibilidad con varios idiomas, debe especificar las traducciones usted mismo y este texto personalizado se mostrará a todos los revisores, con independencia de su configuración regional.
    - Los usuarios reciben una notificación por correo electrónico inicial por etiqueta al final del periodo de retención del elemento, con un aviso por etiqueta una vez por semana de todas las revisiones para eliminación que se les han asignado. Pueden hacer clic en el vínculo de los correos electrónicos de notificación y aviso para ir a la página **Eliminación** del Centro de cumplimiento de Microsoft 365 para revisar el contenido y tomar medidas. De forma alternativa, los revisores pueden ir directamente a la página de **Eliminación** en el centro de cumplimiento.
-   - Los revisores solo ven las revisiones para eliminación que se les han asignado, mientras que los administradores agregados al grupo de seguridad Administrador de registros seleccionado ven todas las revisiones para eliminación.
+   - Los revisores solo ven las revisiones para eliminación que se les han asignado, mientras que los administradores agregados al grupo de seguridad del administrador de registros seleccionado ven todas las revisiones para eliminación.
    - Los revisores pueden agregar nuevos usuarios a la misma revisión para eliminación. Actualmente, esta acción no concede automáticamente a estos usuarios agregados los [permisos necesarios](#permissions-for-disposition).
    - Para el proceso de revisión para eliminación, un panel de revisión en miniatura de cada elemento muestra una vista previa del contenido si tienen permisos para verlo. Si no tienen permisos, pueden seleccionar el vínculo de contenido y solicitar permisos. Este panel de revisión en pequeño también tiene pestañas para obtener información adicional sobre el contenido:
        - **Detalles** para mostrar las propiedades indizadas, dónde se encuentra, quién lo creó, cuándo, quién lo modificó por última vez y cuándo.
@@ -142,17 +150,21 @@ Después de especificar a los revisores, recuerde concederles el permiso de rol 
 
 ### <a name="how-to-customize-email-messages-for-disposition-review"></a>Cómo personalizar los mensajes de correo electrónico para la revisión para eliminación
 
+Ejemplo de notificación de correo electrónico predeterminada que se envía a un revisor:
+
+![Ejemplo de notificación por correo electrónico con texto predeterminado cuando un elemento está listo para la revisión para eliminación](../media/disposition-review-email.png)
+
 También en la vista previa, puede personalizar los mensajes de correo electrónico que se envían a los revisores para eliminación para la notificación inicial y los avisos.
 
 En cualquiera de las páginas de Eliminación del Centro de cumplimiento, seleccione **Configuración de administración de registros**:  
 
 ![Configuración de administración de registros](../media/record-management-settings.png)
 
-Después, seleccione la pestaña **Plantillas de correo electrónico** y especifique si quiere usar solo las plantillas de correo electrónico predeterminadas o agregar su propio texto a la plantilla predeterminada. El texto personalizado se agrega a las instrucciones de correo electrónico después de la información sobre la etiqueta de retención y antes de las instrucciones de los pasos siguientes.
+Después, seleccione la pestaña **Notificaciones de eliminación** y especifique si desea usar solo el mensaje de correo electrónico predeterminado o agregar su propio texto al mensaje predeterminado. El texto personalizado se agrega a las instrucciones de correo electrónico después de la información sobre la etiqueta de retención y antes de las instrucciones de los pasos siguientes.
 
 Se puede agregar texto para todos los idiomas, pero actualmente el formato y las imágenes no son compatibles. Las direcciones URL y las direcciones de correo pueden especificarse como texto y, en función del cliente de correo electrónico, mostrarse como hipervínculos o texto sin formato en el correo electrónico personalizado.
 
-Texto de ejemplo que se anexará:
+Texto de ejemplo que se añadirá:
 
 ```console
 If you need additional information, visit the helpdesk website (https://support.contoso.com) or send them an email (helpdesk@contoso.com).
@@ -162,7 +174,7 @@ Seleccione **Guardar** para guardar los cambios.
 
 ### <a name="viewing-and-disposing-of-content"></a>Visualización y eliminación de contenido
 
-Cuando un revisor recibe una notificación por correo electrónico de que el contenido está listo para su revisión, puede ir a la pestaña **Eliminación** de **Administración de registros** en el Centro de cumplimiento de Microsoft 365. Los revisores pueden ver cuántos elementos para cada etiqueta de retención están pendientes de eliminación con el **Tipo** que muestra **Eliminación pendiente**. Después, seleccionan una etiqueta de retención y **Abrir en ventana nueva** para ver todo el contenido con esa etiqueta:
+Cuando un revisor recibe una notificación por correo electrónico de que el contenido está listo para revisar, puede hacer clic en un vínculo del correo electrónico que le lleve directamente a la página **Eliminación** de **Administración de registros** en el Centro de cumplimiento de Microsoft 365. Los revisores pueden ver cuántos elementos para cada etiqueta de retención están pendientes de eliminación con el **Tipo** que muestra **Eliminación pendiente**. Después, seleccionan una etiqueta de retención y **Abrir en ventana nueva** para ver todo el contenido con esa etiqueta:
 
 ![Abrir en una nueva ventana para revisión para eliminación](../media/open-in-new-window.png)
 

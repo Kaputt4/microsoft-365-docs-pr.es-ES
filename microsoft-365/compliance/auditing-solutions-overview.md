@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo auditar las actividades de los usuarios y administradores de su organización de Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 214ea43348a4a33e6ce1b754cbaf9be6a43b2c70
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: d8686a2cd7b1fc6e9082e85b18ba352c1fd7f830
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314386"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538523"
 ---
 # <a name="auditing-solutions-in-microsoft-365"></a>Soluciones de auditoría en Microsoft 365
 
@@ -34,7 +34,9 @@ Las soluciones de auditoría de Microsoft 365 proporcionan una solución integra
 
 Microsoft 365 ofrece dos soluciones de auditoría: auditoría básica y auditoría avanzada.
 
-### <a name="basic-auditing"></a>Auditoría básica
+![Funcionalidades clave de auditoría básica y auditoría avanzada](..\media\AuditingSolutionsComparison.png)
+
+### <a name="basic-audit"></a>Auditoría básica
 
 La auditoría básica le proporciona la capacidad de registrar y buscar actividades auditadas y reforzar su análisis forense, TI, cumplimiento e investigaciones legales.
 
@@ -46,12 +48,12 @@ La auditoría básica le proporciona la capacidad de registrar y buscar activida
 
 - **cmdlet Search-UnifiedAuditLog**. También puede usar el cmdlet **Search-UnifiedAudtLog** en PowerShell de Exchange Online (el cmdlet subyacente de la herramienta de búsqueda) para buscar eventos de auditoría o para usarlo en un script. Para más información vea:
 
-  - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
+  - [Referencia del cmdlet Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
   - [Usar un script de PowerShell para buscar en el registro de auditoría](audit-log-search-script.md)
 
 - **Exportar registros de auditoría a un archivo CSV**. Después de ejecutar la herramienta de búsqueda de registros de auditoría del Centro de cumplimiento, puede exportar los registros de auditoría encontrados a un archivo CSV. Esto le permite usar Microsoft Excel para ordenar y filtrar según diferentes propiedades de los registro de auditoría. También puede usar la funcionalidad de transformación de Power Query de Excel para dividir cada propiedad del objeto JSON de AuditData en su propia columna. Esto le permite ver y comparar eficazmente datos similares de diferentes eventos. Para más información, consulte[Exportar, configurar y ver registros de auditoría](export-view-audit-log-records.md).
 
-- **Acceso a registros de auditoría a través de la API de Actividad de administración de Office 365**. Un tercer método para obtener acceso y encontrar registros de auditoría es usar la API de Actividad de administración de Office 365. Esto permite a las organizaciones conservar los datos de auditoría durante períodos superiores a los 90 días predeterminados, y les permite importar sus datos de auditoría a una solución SIEM. Para obtener más información, consulte [referencia de la API de Actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
+- **Acceso a registros de auditoría a través de la API de Actividad de administración de Office 365**. Un tercer método para obtener acceso y encontrar registros de auditoría es usar la API de Actividad de administración de Office 365. Esto permite a las organizaciones conservar los datos de auditoría durante períodos superiores a los 90 días predeterminados, y les permite importar sus datos de auditoría a una solución SIEM. Para obtener más información, consulte la [referencia de la API de Actividad de administración de Office 365](/office/office-365-management-api/office-365-management-activity-api-reference).
 
 - **Retención de registros de auditoría de 90 días**. Cuando un usuario o administrador realiza una actividad auditada, se genera un registro de auditoría y se almacena en el registro de auditoría de la organización. En la auditoría básica los registros se conservan durante 90 días, lo que significa que puede buscar actividades que se produjeron en los últimos tres meses.
 
@@ -78,7 +80,7 @@ En la tabla siguiente se comparan las funcionalidades clave disponibles en audit
 |Habilitado de forma predeterminada|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
 |Miles de eventos de auditoría que se pueden buscar|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
 |Herramienta de búsqueda de auditorías del Centro de cumplimiento de Microsoft 365|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
-|**cmdlet Search-UnifiedAuditLog** |![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
+|cmdlet Search-UnifiedAuditLog|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
 |Exportar registros de auditoría a un archivo CSV|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
 |Acceso a registros de auditoría a través de la API de Actividad de administración de Office 365 <sup>1</sup>|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)</sup>|
 |Retención de 90 días del registro de auditoría|![Compatible](../media/check-mark.png)|![Compatible](../media/check-mark.png)|
@@ -94,7 +96,7 @@ En la tabla siguiente se comparan las funcionalidades clave disponibles en audit
 
 En las secciones siguientes se identifican los requisitos de licencia para auditoría básica y auditoría avanzada. La auditoría avanzada incluye las funcionalidades de la auditoría básica.
 
-### <a name="basic-auditing"></a>Auditoría básica
+### <a name="basic-audit"></a>Auditoría básica
 
 - Suscripción a Microsoft 365 Enterprise E3
 - Microsoft 365 Empresa Premium
@@ -125,7 +127,7 @@ En las secciones siguientes se identifican los requisitos de licencia para audit
 
 Para empezar a usar las soluciones de auditoría de Microsoft 365 vea las siguientes instrucciones de configuración.
 
-### <a name="set-up-basic-auditing"></a>Configurar la auditoría básica
+### <a name="set-up-basic-audit"></a>Configurar la auditoría básica
 
 El primer paso es configurar la auditoría básica y, después, empezar a ejecutar las búsquedas de registros de auditoría.
 
@@ -135,7 +137,9 @@ El primer paso es configurar la auditoría básica y, después, empezar a ejecut
 
 2. Asigne permisos en Exchange Online a las personas de su organización que usarán la herramienta de búsqueda de registros de auditoría del Centro de cumplimiento de Microsoft 365 o el cmdlet **Search-UnifiedAsignlog**. Concretamente, deberá asignar a los usuarios el rol de registros de auditoría de solo lectura o registros de auditoría en Exchange Online.
 
-3. Búsquedas en el registro de auditoría. Después de completar los pasos 1 y 2 los usuarios de la organización pueden usar la herramienta de búsqueda de registros de auditoría (o el cmdlet correspondiente) para buscar actividades auditadas.
+3. Búsquedas en el registro de auditoría. Después de completar los pasos 1 y 2, los usuarios de la organización pueden usar la herramienta de búsqueda en el registro de auditoría (o el cmdlet correspondiente) para buscar actividades auditadas.
+
+Para obtener instrucciones más detalladas, consulte [Configurar la auditoría básica](set-up-basic-audit.md).
 
 ### <a name="set-up-advanced-audit"></a>Configurar la auditoría avanzada
 
@@ -156,6 +160,8 @@ Si su organización tiene una suscripción compatible con la auditoría avanzada
 3. Configurar las directivas de retención de registros de auditoría. Además de la directiva predeterminada que conserva los registros de auditoría de Exchange, SharePoint y Azure AD durante un año, puede crear otras directivas de retención de registros de auditoría para cumplir los requisitos de los equipos de operaciones de seguridad, TI y cumplimiento de su organización.
 
 4. Busque eventos cruciales y otras actividades al llevar a cabo investigaciones forenses. Después de completar los pasos 1 y 2 puede buscar en el registro de auditoría eventos cruciales y otras actividades durante investigaciones exhaustivas de cuentas comprometidas y otros tipos de investigaciones de seguridad o cumplimiento.
+
+Para obtener instrucciones más detalladas, consulte [Configurar la auditoría avanzada](set-up-advanced-audit.md).
 
 ## <a name="training"></a>Formación
 

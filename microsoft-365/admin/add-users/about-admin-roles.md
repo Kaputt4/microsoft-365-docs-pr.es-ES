@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: Los roles de administrador se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración. Por ejemplo, el Administrador del servicio puede abrir tickets de soporte técnico a través del centro de administración.
-ms.openlocfilehash: d220ee918f70a56ba27bdad9d7d0f45025fad451
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: Los roles de administrador, como los administradores de servicios, se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración.
+ms.openlocfilehash: 7ba8b6fd483901fde31a9bceca189797b4f2e16d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759413"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536015"
 ---
 # <a name="about-admin-roles"></a>Acerca de los roles de administrador
 
@@ -43,7 +43,7 @@ El Centro de administración de Microsoft 365 le permite administrar roles de Az
 
 Para más información acerca de la asignación de roles en el Centro de administración de Microsoft 365, consulte [Asignar roles de administrador](assign-admin-roles.md).
 
-### <a name="watch-what-is-an-admin"></a>Ver: ¿Qué es un administrador?
+## <a name="watch-what-is-an-admin"></a>Ver: ¿Qué es un administrador?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
@@ -70,7 +70,7 @@ Probablemente solo necesitará asignar los siguientes roles en su organización.
 |Administrador de facturación     |   Asigne el rol de administrador de facturación a los usuarios que hagan compras, administren suscripciones y solicitudes de servicio y supervisen el estado del servicio. <br><br> Los administradores de facturación también pueden:<br> - Administrar todos los aspectos de la facturación <br> - Crear y administrar vales de soporte técnico en el portal de Azure <br>  |
 |Administrador de Exchange     |   Asigne el rol de administrador de Exchange a los usuarios que necesiten ver y administrar los buzones de correo de sus usuarios, los grupos de Microsoft 365 y Exchange Online. <br><br> Los administradores de Exchange también pueden:<br> - Recuperar elementos eliminados en un buzón de usuario <br> - Configurar los delegados "Enviar como" y "Enviar en nombre de" <br>  |
 |Administrador global     |   Asigne el rol de administrador global a los usuarios que necesiten acceso global a la mayoría de las características de administración y datos en los servicios en línea de Microsoft. <br><br> Otorgar acceso global a un gran número de usuarios es un riesgo para la seguridad y le recomendamos que solo tenga entre 2 y 4 administradores globales. <br><br> Solo los administradores globales pueden:<br> - Restablecer las contraseñas de todos los usuarios <br> - Agregar y administrar dominios <br> <br> **Nota:**   la persona que se registró en los servicios en línea de Microsoft se convierte automáticamente en administrador global. |
-|Lector global    |   Asigne el rol de lector global a los usuarios que necesiten ver la configuración y las funciones de administración en los centros de administración que el administrador global puede ver. El administrador del lector global no puede editar ninguna configuración.   |
+|Lector global    |   Asigne el rol de lector global a los usuarios que necesitan ver las características y la configuración de administración en centros de administración que puede ver el administrador global. El administrador del lector global no puede editar ninguna configuración.   |
 |Administrador de grupos     |   Asigne el rol de administrador de grupos a los usuarios que necesiten administrar la configuración de todos los grupos en los centros de administración, incluido el Centro de administración de Microsoft 365 y el portal de Azure Active Directory. <br><br> Los administradores de grupos pueden:<br> - Crear, editar, eliminar y restaurar los grupos de Microsoft 365 <br> - Crear y actualizar las directivas de creación, expiración y nomenclatura de grupos <br> - Crear, editar, eliminar y restaurar grupos de seguridad de Azure Active Directory| 
 |Administrador del departamento de soporte técnico     |   Asigne el rol de administrador del departamento de soporte técnico a los usuarios que necesiten que hacer lo siguiente:<br> - Restablecer contraseñas <br> - Forzar a los usuarios a cerrar sesión <br> - Administrar solicitudes de servicio <br> - Supervisar el estado del servicio <br> <br> **Nota**: el administrador del departamento de soporte técnico solo puede ayudar a usuarios que no son administradores y a usuarios que tienen asignados estos roles: Lector de directorios, Invitador de usuarios invitados, Administrador del departamento de soporte técnico, Lector del centro de mensajes y Lector de informes.      |
 |Administrador de licencias    |   Asigne el rol de administrador de licencias a los usuarios que necesiten asignar y quitar licencias a usuarios y editar su ubicación de uso. <br/><br/> Los administradores de licencias también pueden: <br> - Volver a procesar asignaciones de licencia para licencias basadas en grupos <br> - Asignar licencias de producto a grupos de licencias basadas en grupos  |
@@ -93,12 +93,12 @@ Un partner puede asignar estos roles:
 
 Antes de que el partner pueda asignar estos roles a los usuarios, usted debe agregarlo como un administrador delegado a su cuenta. Este proceso puede iniciarlo un partner autorizado. El partner le envía un correo electrónico para preguntarle si quiere concederle permiso para actuar como administrador delegado. Para obtener instrucciones, consulte [Autorizar o quitar relaciones de partner](../misc/add-partner.md).
   
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Asignar roles de administrador](assign-admin-roles.md)
+[Asignar roles de administrador](assign-admin-roles.md) (artículo)
 
-[Roles de Azure AD en el Centro de administración de Microsoft 365](azure-ad-roles-in-the-mac.md)
+[Roles de Azure AD en el Centro de administración de Microsoft 365](azure-ad-roles-in-the-mac.md) (artículo)
 
-[Rol de administrador de Exchange Online](about-exchange-online-admin-role.md)
+[Rol de administrador de Exchange Online](about-exchange-online-admin-role.md) (artículo)
   
-[Informes de actividad en el Centro de administración de Microsoft 365](../activity-reports/activity-reports.md)
+[Informes de actividad del Centro de administración de Microsoft 365](../activity-reports/activity-reports.md) (artículo)

@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Los administradores pueden obtener más información sobre las características contra la suplantación de identidad disponibles en Exchange Online Protection (EOP), que pueden ayudar a reducir los ataques de suplantación de identidad de los remitentes y dominios falsos.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 76ad8ac14de7b176ae12dc02272e31e790b6b410
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 7680c2f4eae54aa53eba72b328baf1bf92fbcf98
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291036"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537972"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protección contra la suplantación de identidad en EOP
 
@@ -44,17 +44,28 @@ Cuando se trata de proteger a sus usuarios, Microsoft se toma muy en serio las a
 
 Las siguientes tecnologías contra la suplantación de identidad están disponibles en EOP:
 
-- **Inteligencia contra la suplantación de identidad**: revisa mensajes falsificados de remitentes en dominios internos y externos y permite o bloquea el acceso de los remitentes. Para obtener más información, consulte [Configuración de inteligencia contra la suplantación de identidad en Microsoft 365 ](learn-about-spoof-intelligence.md).
+- **Autenticación de correo electrónico**: una parte integral de cualquier esfuerzo contra la suplantación de identidad es el uso de la autenticación de correo electrónico (también conocida como validación de correo electrónico) por registros de DMARC, DKIM y DMARC en DNS. Puede configurar estos registros para sus dominios, de modo que los sistemas de correo electrónico de destino puedan comprobar la validez de los mensajes que requieran que se envíen a los remitentes de su dominio. Para los mensajes entrantes, Microsoft 365 requiere la autenticación de correo electrónico para los dominios de remitente. Para obtener más información, consulte [Autenticación de correo electrónico de Microsoft 365](email-validation-and-authentication.md).
 
-- **Directivas contra la suplantación de identidad**: en EOP, las directivas contra la suplantación de identidad le permiten activar o desactivar la inteligencia contra la suplantación de identidad, activar o desactivar la identificación de remitente no autenticado en Outlook, y especificar la acción para remitentes falsos bloqueados (mover a la carpeta de correo no deseado o a cuarentena). Las directivas avanzadas contra el phishing disponibles en Microsoft Defender para Office 365 también contienen la configuración de protección contra la suplantación (remitentes y dominios protegidos), la configuración de inteligencia de buzón y umbrales de suplantación de identidad avanzados ajustables. Para obtener más información, consulte [Directivas contra la suplantación de identidad en Microsoft 365 ](set-up-anti-phishing-policies.md).
+  EOP analiza y bloquea los mensajes que no se pueden autenticar con la combinación de métodos de autenticación de correo electrónico estándar y técnicas de reputación del remitente.
 
-- **Autenticación de correo electrónico**: una parte integral de cualquier esfuerzo contra la suplantación de identidad es el uso de la autenticación de correo electrónico (también conocida como validación de correo electrónico) por registros de DMARC, DKIM y DMARC en DNS. Puede configurar estos registros para sus dominios, de modo que los sistemas de correo electrónico de destino puedan comprobar la validez de los mensajes que requieran que se envíen a los remitentes de su dominio. Para los mensajes entrantes, Microsoft 365 requiere la autenticación de correo electrónico para los dominios de remitente. Para obtener más información, consulte [Autenticación de correo electrónico de Microsoft 365](email-validation-and-authentication.md).
+  ![Pruebas contra la suplantación de identidad de EOP](../../media/eop-anti-spoofing-protection.png)
 
-A partir de octubre del 2018, la protección contra la suplantación de identidad está disponible en EOP.
+- **Información de la inteligencia contra la suplantación de identidad**: Revisa mensajes falsificados de remitentes en dominios durante los últimos 7 días internos y externos, y permite o bloquea el acceso de los remitentes. Para obtener más información, consulte [Información de inteligencia contra la suplantación de identidad en EOP](learn-about-spoof-intelligence.md).
 
-EOP analiza y bloquea los mensajes que no se pueden autenticar con la combinación de métodos de autenticación de correo electrónico estándar y técnicas de reputación del remitente.
+- **Permitir o bloquear remitentes a los que se les ha suplantado la identidad en la lista de permitidos y bloqueados del espacio empresarial**: al invalidar el veredicto en la información de inteligencia contra la suplantación de identidad, el remitente a que se la ha suplantado la identidad se convierte en una entrada manual de permitido o bloqueado que solo aparece en la pestaña **Suplantación de identidad** en la lista de permitidos o bloqueados del espacio empresarial. También puede crear entradas de permitidos o bloqueados manualmente para remitentes de suplantación de identidad antes de que la inteligencia contra la suplantación de identidad los detecte. Para obtener más información, consulte [Administrar la lista de permitidos y bloqueados del espacio empresarial en EOP](tenant-allow-block-list.md).
 
-![Pruebas contra la suplantación de identidad de EOP](../../media/eop-anti-spoofing-protection.png)
+- **Directivas contra phishing**: en EOP, las directivas de protección contra phishing contienen las siguientes opciones de configuración contra la suplantación de identidad:
+  - Activar o desactivar la inteligencia contra la suplantación de identidad.
+  - Activar o desactivar la identificación del remitente sin autenticar en Outlook.
+  - Especificar la acción para los remitentes bloqueados a los que se les ha suplantado la identidad.
+
+  Para obtener más información, consulte [Configuración de suplantación de identidad en las directivas contra phishing](set-up-anti-phishing-policies.md#spoof-settings).
+
+  **Nota**: Las directivas contra phishing en Microsoft Defender para Office 365 contienen protecciones de adición, lo que incluye protección frente a la **suplantación**. Para obtener más información, consulte [Configuración exclusiva en directivas contra phishing en Microsoft Defender para Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+- **Informe de detección de suplantación de identidad**: Para obtener más información, consulte el [Informe de detección de suplantación de identidad](view-email-security-reports.md#spoof-detections-report).
+
+  **Nota**: Defender para Office 365 en organizaciones también puede usar la detección en tiempo real (plan 1) o el explorador de amenazas (plan 2) para ver información sobre intentos de phishing. Para obtener más información, consulte [Investigación y respuesta frente a amenazas de Microsoft 365](office-365-ti.md).
 
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Uso de la suplantación de identidad (spoofing) en ataques de phishing
 
@@ -125,13 +136,7 @@ Microsoft distingue entre dos tipos de mensajes falsificados:
 > [!NOTE]
 > Si ha recibido un mensaje como ***compauth=fail reason=###** _ y necesita información sobre la autenticación compuesta (compauth) y los valores relacionados con la suplantación de identidad, vea [_Encabezados de mensaje de correo no deseado en Microsoft 365*](anti-spam-message-headers.md). O vaya directamente a los códigos de [*motivos*](anti-spam-message-headers.md).
 
-Para obtener más información acerca de la configuración de DMARC, consulte [Usar DMARC para comprobar el correo electrónico en Microsoft 365](use-dmarc-to-validate-email.md).
-
-## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>Informes acerca de cuántos mensajes se marcan como falsificados
-
-Las organizaciones de EOP pueden usar el informe de **Detecciones de suplantación** en el panel de Informes del Centro de seguridad y cumplimiento. Para obtener más información, consulte [Informe de detecciones de suplantación](view-email-security-reports.md#spoof-detections-report).
-
-La organización de Microsoft Defender para Office 365 puede usar el explorador de amenazas en el Centro de seguridad y cumplimiento para ver información acerca de los intentos de phishing. Para obtener más información, consulte [Investigación y respuesta frente a amenazas de Microsoft 365](office-365-ti.md).
+Para obtener más información acerca de la configuración de DMARC, consulte [Usar DMARC para comprobar el correo electrónico en Microsoft 365](use-dmarc-to-validate-email.md).
 
 ## <a name="problems-with-anti-spoofing-protection"></a>Problemas con la protección contra la suplantación de identidad
 
@@ -161,9 +166,9 @@ Para ayudar a que los mensajes de la lista de distribución de correo pasen las 
 
     Cuando hay suficientes remitentes que responden a los propietarios de dominios pidiéndoles que configuren los registros de autenticación de correo electrónico, es más probable que tomen medidas. Aunque Microsoft también trabaja con los propietarios de dominios para publicar los registros necesarios, es aún más efectivo cuando los usuarios individuales lo solicitan.
 
-  - Cree reglas de buzón en el cliente de correo para mover mensajes a la Bandeja de entrada. También puede pedir a los administradores que configuren las sustituciones, tal como se describe en [Uso de la inteligencia contra la suplantación de identidad para configurar remitentes permitidos de correo electrónico no autenticado](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email).
+  - Cree reglas de buzón en el cliente de correo para mover mensajes a la Bandeja de entrada. También puede pedir a sus administradores que configuren reemplazos tal y como se describe en [Información de la inteligencia contra la suplantación de identidad en EOP](learn-about-spoof-intelligence.md) y [Administrar la lista de permitidos o bloqueados del espacio empresarial](tenant-allow-block-list.md).
 
-  - Cree un vale de soporte con Microsoft 365 para crear una invalidación de la lista de distribución de correo y usarla como legítima. Para obtener más información, consulte [Ponerse en contacto con el soporte técnico para productos empresariales: ayuda para administradores](../../business-video/get-help-support.md).
+  - Cree un vale de soporte con Microsoft 365 para crear una invalidación de la lista de distribución de correo y usarla como legítima. Para obtener más información, consulte [Ponerse en contacto con el soporte técnico para productos empresariales: ayuda para administradores](../../business-video/get-help-support.md).
 
 Si todos los demás falla, puede notificar el mensaje como falso positivo a Microsoft. Para obtener más información, consulte [Notificar mensajes y archivos a Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -171,7 +176,7 @@ También puede contactar con el administrador que puede crear una incidencia de 
 
 ## <a name="considerations-for-anti-spoofing-protection"></a>Consideraciones para la protección contra la suplantación de identidad
 
-Si es un administrador que actualmente envía mensajes a Microsoft 365, debe asegurarse de que el correo electrónico se haya autenticado correctamente. En caso contrario, es posible que se marque como correo no deseado o phishing. Para obtener más información, consulte [Soluciones para remitentes legítimos que envían correo electrónico sin autenticar](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
+Si es un administrador que actualmente envía mensajes a Microsoft 365, debe asegurarse de que el correo electrónico se haya autenticado correctamente. En caso contrario, es posible que se marque como correo no deseado o phishing. Para obtener más información, consulte [Soluciones para remitentes legítimos que envían correo electrónico sin autenticar](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
 
 Los remitentes en la lista de remitentes seguros de un usuario individual (o administrador) omitirán partes de la pila de filtrado, incluida la protección contra la suplantación electrónica. Para más información, consulte [Remitentes seguros de Outlook](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders).
 
