@@ -4,7 +4,7 @@
   items:
     - name: Información general
       items:
-        - name: "Información general acerca de la seguridad de Office\_365"
+        - name: Información general acerca de la seguridad de Office 365
           href: overview.md
         - name: Defender para Office 365
           href: defender-for-office-365.md
@@ -38,14 +38,6 @@
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Vista general del Centro de seguridad de Microsoft 365
           href: ../defender/overview-security-center.md
-        - name: Explorador de amenazas para Defender para Office 365
-          items:
-            - name: Búsqueda de amenazas en el Explorador de amenazas
-              href: threat-hunting-in-threat-explorer.md
-            - name: Seguridad del correo electrónico con el Explorador de amenazas
-              href: email-security-in-microsoft-defender.md
-            - name: Conceptos básicos del Explorador de amenazas y detección en tiempo real
-              href: real-time-detections.md
         - name: Página de la entidad de correo electrónico
           href: mdo-email-entity-page.md
         - name: Visión general de AIR
@@ -138,7 +130,7 @@
           href: user-submission.md
         - name: Etiquetas de usuario en Microsoft Defender para Office 365
           href: user-tags.md
-        - name: "Activar Datos adjuntos seguros para SharePoint, OneDrive y Microsoft\_Teams"
+        - name: 'Activar Datos adjuntos seguros para SharePoint, OneDrive y Microsoft Teams'
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Usar DKIM para validar el correo saliente
           href: use-dkim-to-validate-outbound-email.md
@@ -200,6 +192,14 @@
           href: zero-hour-auto-purge.md
     - name: Detección
       items:
+        - name: Explorador de amenazas para Defender para Office 365
+          items:
+            - name: Búsqueda de amenazas en el Explorador de amenazas
+              href: threat-hunting-in-threat-explorer.md
+            - name: Seguridad del correo electrónico con el Explorador de amenazas
+              href: email-security-in-microsoft-defender.md
+            - name: Conceptos básicos del Explorador de amenazas y detección en tiempo real
+              href: real-time-detections.md
         - name: Usar rastreadores de amenazas
           href: threat-trackers.md
         - name: Ver alertas
