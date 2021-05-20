@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Después de crear un buzón compartido, querrá configurar algunas opciones para sus usuarios, como el reenvío de correo electrónico y las respuestas automáticas. Más adelante, es posible que desee cambiar otras opciones de configuración, como el nombre del buzón o los miembros.
-ms.openlocfilehash: 01d5aaa686e1d64c9ea7d89913d8208f779dcfd1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Cree un buzón compartido y configure algunas opciones para sus usuarios, como el reenvío de correo electrónico y las respuestas automáticas.
+ms.openlocfilehash: ab23353f07a24f06d43172e8087819dd915ab720
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52243977"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582673"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Establecer la configuración de buzón compartido
 
@@ -150,6 +150,6 @@ Si decide no mostrar el buzón compartido en la lista global de direcciones, el 
 
 [Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md) (artículo)
 
-[Quitar una licencia de un buzón compartido](remove-license-from-shared-mailbox.md) (artículo)
+[Quitar la licencia de un buzón compartido](remove-license-from-shared-mailbox.md) (artículo)
 
-[Resolver problemas con buzones compartidos](resolve-issues-with-shared-mailboxes.md) (artículo)
+[Resolver problemas con los buzones compartidos](resolve-issues-with-shared-mailboxes.md) (artículo)

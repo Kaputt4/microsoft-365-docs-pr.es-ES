@@ -19,14 +19,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: Obtenga información sobre las suscripciones y licencias en Microsoft 365 para empresas.
+description: Las aplicaciones y servicios que reciba dependen del producto Microsoft 365 que haya comprado, como Aplicaciones Microsoft 365 para negocios.
 ms.date: 07/01/2020
-ms.openlocfilehash: a8ec5b0716a5ceaa02526520e76dc390a6fba0f7
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 4e93a84df106475417289da168ca472ed5a07475
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331495"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582733"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Comprender las suscripciones y licencias en Microsoft 365 para empresas
 
@@ -87,4 +87,4 @@ Los distintos tipos de administradores pueden trabajar con las licencias de dife
 [Comprar o quitar licencias para su suscripción empresarial](buy-licenses.md) (artículo)\
 [Asignar licencias a los usuarios](../../admin/manage/assign-licenses-to-users.md) (artículo)\
 [Cancelar asignación a licencias de usuarios](../../admin/manage/remove-licenses-from-users.md) (artículo)\
-[Quitar una licencia de un buzón compartido](../../admin/email/remove-license-from-shared-mailbox.md) (artículo)
+[Quitar la licencia de un buzón compartido](../../admin/email/remove-license-from-shared-mailbox.md) (artículo)

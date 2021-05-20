@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: Aprenda a administrar firmas de correo electrónico, incluidas las declinaciones de responsabilidades legales o las declaraciones de divulgación de todos los mensajes de correo electrónico que entran o salen de su organización.
-ms.openlocfilehash: e1c3df235442fdc6f569825a7137c92bfc5bb044
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Administrar firmas de correo electrónico, incluidas declinaciones de responsabilidades legales o declaraciones de divulgación para todos los mensajes de correo electrónico que entran o salen de la organización.
+ms.openlocfilehash: 05cfeeb01231e7f99d2a96fc37581b4c9a23f5aa
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244532"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582757"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidades en toda la organización
 
@@ -40,7 +40,7 @@ ms.locfileid: "52244532"
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>Crear una firma que se aplique a todos los mensajes
 
@@ -115,4 +115,13 @@ Para obtener estas y otras capacidades para administrar firmas de correo electr�
   
 ## <a name="more-resources"></a>Más recursos
 
-- Vea Avisos de declinación de responsabilidades [de mensajes, firmas,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) pies de página o encabezados en toda la organización en Exchange Online para obtener información sobre el uso de PowerShell.
+Para obtener información acerca del uso de PowerShell, vea Avisos de declinación de responsabilidades de [mensajes, firmas,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)pies de página o encabezados de toda la organización en Exchange Online .
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Migrar correo electrónico y contactos a Microsoft 365](migrate-email-and-contacts-admin.md) (vídeo)
+
+[Configuración de correo electrónico del usuario](../email/office-365-user-email-settings.md) (artículo)
+
+[Información general del Centro de administración de Microsoft 365](../../business-video/admin-center-overview.md) (vídeo)
+
