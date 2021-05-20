@@ -20,12 +20,12 @@ ms.custom:
 description: Más información sobre cómo usar DomainKeys Identified Mail (DKIM) con Microsoft 365 para asegurarse de que los mensajes que se envían desde su dominio personalizado sean de confianza para los sistemas de correo electrónico de destino.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1fc811fb513935645fa596c5a9d2e3e552b50324
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2cd04911e3663bb6b9fa00d4946b26086dc8094d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245365"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538272"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado
 
@@ -59,7 +59,7 @@ En este artículo:
 > [!NOTE]
 > Microsoft 365 configura automáticamente DKIM para sus dominios "onmicrosoft.com" iniciales. Lo que significa que no es necesario realizar ninguna acción para configurar DKIM para un nombre de dominio inicial (por ejemplo, litware.onmicrosoft.com). Para más información sobre los dominios, vea [Preguntas más frecuentes de dominios](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
 
-DKIM es uno de los tres métodos de autenticación (SPF, DKIM y DMARC) que ayudan a evitar que los suplantadores envíen mensajes que parecen procedentes de su dominio.
+DKIM es uno de los tres métodos de autenticación (SPF, KIM y DMARC) que ayudan a evitar que los atacantes envíen mensajes que parecen procedentes de su dominio.
 
 DKIM le permite agregar una firma digital a los mensajes de correo electrónico salientes en el encabezado del mensaje. Suena complicado, pero realmente no lo es. Cuando configura DKIM, autoriza que su dominio pueda asociar su nombre (o firmar) a un mensaje de correo electrónico mediante la autenticación criptográfica. Los sistemas de correo electrónico que reciben correo electrónico desde el dominio pueden usar esta firma digital para ayudar a determinar si el correo entrante que reciben es legítimo.
 

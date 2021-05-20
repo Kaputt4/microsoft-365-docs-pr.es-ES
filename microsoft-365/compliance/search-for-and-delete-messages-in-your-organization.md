@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el Centro de seguridad y cumplimiento para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: b7bb1008120df8efefc983d526d90e8397b3a89e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 629b236be3f857da47674cda9350d8b89e6f3445
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924240"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537648"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Buscar y eliminar mensajes de correo electrónico
 
@@ -41,7 +41,10 @@ Puede usar la característica de búsqueda de contenido para buscar y eliminar u
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Para crear y ejecutar una búsqueda de contenido, tiene que ser miembro del grupo de roles **Administrador de eDiscovery** o tener asignado el rol de administración **Búsqueda de cumplimiento**. Para eliminar mensajes, tiene que ser miembro del grupo de roles **Administración de la organización** o tener asignado el rol de administración **Búsqueda y depuración**. Para más información sobre cómo agregar usuarios a un grupo de roles, consulte [ Asignar permisos de eDiscovery en el Centro de seguridad y cumplimiento](assign-ediscovery-permissions.md).
+- Para crear y ejecutar una búsqueda de contenido, tiene que ser un miembro del grupo de roles **Administrador de eDiscovery** o que se le asigne el rol **Búsqueda de cumplimiento** en el Centro de seguridad y cumplimiento. Para eliminar mensajes, debe ser un miembro del grupo de roles **Administración de la organización** o que se le asigne el rol **Buscar y purgar** en el Centro de seguridad y cumplimiento. Para más información sobre cómo agregar usuarios a un grupo de roles, consulte [ Asignar permisos de eDiscovery en el Centro de seguridad y cumplimiento](assign-ediscovery-permissions.md).
+
+  > [!NOTE]
+  > El rol **Administración de la organización** existe en Exchange Online y en el Centro de seguridad y cumplimiento. Se trata de grupos de roles independientes que conceden permisos diferentes. Ser miembro de la **Administración de la organización** en Exchange Online no concede los permisos necesarios para eliminar mensajes de correo electrónico. Si no se le asigna el rol **Buscar y purgar** en el Centro de seguridad y cumplimiento (ya sea directamente o a través de un grupo de roles como la **Administración de la organización**), recibirá un error en el Paso 3 cuando ejecute el cmdlet **New-ComplianceSearchAction** con el mensaje "No se puede encontrar un parámetro que coincida con el nombre de parámetro 'Purge'".
 
 - Debe usar el PowerShell del Centro de seguridad y cumplimiento para eliminar mensajes. Vea el [paso 2](#step-2-connect-to-security--compliance-center-powershell) para obtener instrucciones sobre cómo conectarse.
 

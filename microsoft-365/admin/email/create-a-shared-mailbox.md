@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: 004473b329b14be9287f249b1d640c3b0803412a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 808b98b45c3d6f5ba3cd9847ba2aa843ff53d106
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915883"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537612"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
@@ -38,7 +38,7 @@ ms.locfileid: "50915883"
 
 Es fácil crear buzones compartidos de Office 365 para que un grupo de personas pueda supervisar y enviar correos electrónicos desde una dirección de correo electrónico común, como, por ejemplo, info@contoso.com. Cuando un miembro del grupo responde a un mensaje enviado al buzón compartido, parece que el correo electrónico procede del buzón compartido y no de un usuario individual.
 
-Los buzones compartidos incluyen un calendario compartido. A una gran cantidad de pequeñas empresas les gusta usar el calendario compartido como un lugar en el que todos los usuarios introduzcan sus citas. Por ejemplo, si tiene 3 personas que realizan visitas de clientes, todos pueden usar el calendario compartido para introducir las citas. Esta es una forma sencilla de mantener a todos informados.
+Los buzones compartidos incluyen un calendario compartido. A una gran cantidad de pequeñas empresas le gusta usar el calendario compartido como un lugar en el que todos los usuarios pueden insertar sus citas. Por ejemplo, si tiene 3 personas que realizan visitas a clientes, todas ellas pueden usar el calendario compartido para insertar las citas. Esta es una forma sencilla de mantener a todos informados.
 
 Antes de crear un buzón compartido, asegúrese de leer [acerca de los buzones compartidos](about-shared-mailboxes.md) para obtener más información.
 
@@ -198,14 +198,14 @@ Cuando creó el buzón compartido, creó automáticamente un calendario comparti
 
 3. Todos los miembros del buzón compartido pueden crear, ver y administrar citas en el calendario, igual que lo hacen con sus citas personales. Todos los usuarios que sean miembros del buzón compartido pueden ver sus cambios en el calendario compartido.
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Acerca de los buzones compartidos](about-shared-mailboxes.md)
+[Acerca de los buzones compartidos](about-shared-mailboxes.md) (artículo)
 
-[Configurar un buzón compartido](configure-a-shared-mailbox.md)
+[Configurar un buzón compartido](configure-a-shared-mailbox.md) (artículo)
 
-[Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md)
+[Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md) (artículo)
 
-[Quitar la licencia de un buzón compartido](remove-license-from-shared-mailbox.md)
+[Quitar la licencia de un buzón compartido](remove-license-from-shared-mailbox.md) (artículo)
 
-[Resolver problemas con los buzones compartidos](resolve-issues-with-shared-mailboxes.md)
+[Resolver problemas con los buzones compartidos](resolve-issues-with-shared-mailboxes.md) (artículo)

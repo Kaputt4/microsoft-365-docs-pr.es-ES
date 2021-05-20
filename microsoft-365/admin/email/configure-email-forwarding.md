@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
-description: Configurar el reenvío de correo electrónico a una o más cuentas de correo electrónico con Office 365.
-ms.openlocfilehash: 4b205c0a21f076b9c7858c8a8fc46e240920cd32
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: El reenvío de correo electrónico le permite reenviar los mensajes de correo electrónico enviados a un buzón Microsoft 365 de usuario a otro buzón dentro o fuera de la organización.
+ms.openlocfilehash: 7389651cbbec5316c307cd10b331fda6812c1cd4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332635"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537636"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Configurar el reenvío de correo electrónico en Microsoft 365
 
@@ -95,7 +95,15 @@ Debe ser Administrador de Exchange o Administrador global en Microsoft 365 para 
 
    O bien, en el Centro de administración, [cree un grupo de distribución](../setup/create-distribution-lists.md), [agregue las direcciones](add-user-or-contact-to-distribution-list.md) y luego, configure el reenvío para que apunte a la DL con las instrucciones de este artículo.
 
-5. No elimine la cuenta del usuario cuyo correo electrónico está reenviando ni le quite su licencia.  Si lo hace, se detendrá el reenvío de correo electrónico.
+5. No elimine la cuenta del usuario cuyo correo electrónico está reenviando ni le quite su licencia. Si lo hace, se detendrá el reenvío de correo electrónico.
 
 ::: moniker-end
+
+## <a name="related-content"></a>Contenido relacionado 
+
+[Crear un buzón compartido](../email/create-a-shared-mailbox.md) (artículo)
+
+[Enviar correo electrónico desde una dirección diferente](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (artículo)
+
+[Cambiar un nombre de usuario y una dirección de correo electrónico](../add-users/change-a-user-name-and-email-address.md) (artículo)
 

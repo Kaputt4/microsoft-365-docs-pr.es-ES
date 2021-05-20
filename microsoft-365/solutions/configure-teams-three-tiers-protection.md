@@ -20,19 +20,20 @@ ms.custom:
 - Ent_Architecture
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
+recommendations: false
 description: Obtenga información acerca de cómo configurar Teams para mejorar la seguridad del uso compartido de sus archivos al usar tres niveles de protección y equilibrar la seguridad con la simplicidad en la colaboración.
-ms.openlocfilehash: 37d59d968d3a8e83a5b42fcce4c0400940314a41
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ab2dd4cbf2b9cfc7b285f049eeaa876371574202
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916219"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539220"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurar Teams con tres niveles de protección
 
 En los artículo de esta serie se ofrecen recomendaciones para configurar equipos en Microsoft Teams y sus sitios de SharePoint asociados, de forma que se equilibre la seguridad con la facilidad de colaboración.
 
-Aquí se definen cuatro configuraciones distintas, empezando por un equipo público con las directivas de uso compartido más abiertas. Cada configuración adicional representa un paso significativo para la protección, mientras que el correspondiente conjunto de miembros del equipo pierde capacidad de acceder a los archivos almacenados en Teams y de colaborar en ellos. 
+En este artículo se definen cuatro configuraciones diferentes, comenzando por un equipo público con las directivas de uso compartido más abiertas. Cada configuración adicional representa un paso significativo en la protección, mientras que la capacidad para obtener acceso y colaborar en archivos almacenados en equipos se reduce al conjunto relevante de miembros del equipo. 
 
 Las configuraciones que se explican en este artículo concuerdan con las recomendaciones de Microsoft para los tres niveles de protección de datos, identidades y dispositivos:
 
@@ -87,7 +88,7 @@ Los permisos resultantes permiten lo siguiente:
 
 De forma predeterminada, los propietarios y miembros del equipo pueden compartir el sitio con personas ajenas al equipo sin tener que agregarlos al equipo. Se recomienda no hacerlo ya que complica la administración de usuarios y puede dar lugar a que personas que no son miembros del equipo tengan acceso a los archivos del equipo sin que los propietarios del equipo se den cuenta. Para ayudar a evitar esto, comenzando por el nivel de línea base de protección, se recomienda permitir que solo los propietarios puedan compartir el sitio directamente.
 
-Mientras que los equipos no tienen una opción de permisos de solo lectura, el sitio de SharePoint sí. Si tiene miembros de grupos de asociados que necesitan ver archivos del equipo, pero no editarlos, considere la posibilidad de agregarlos directamente al sitio de SharePoint con permisos de lectura.
+Aunque los equipos no tienen una opción de permisos de solo lectura, el sitio de SharePoint sí. Si tiene partes interesadas de grupos de partners que necesitan poder ver los archivos del equipo pero no modificarlos, considere la posibilidad de agregarlos directamente al sitio de SharePoint con permisos de lectura.
 
 ## <a name="sharing-files-and-folders"></a>Compartir archivos y carpetas
 
@@ -115,7 +116,7 @@ Vea las siguientes referencias para crear un entorno de uso compartido de invita
 
 Para los niveles confidenciales y altamente confidenciales, restringimos el acceso al contenido de SharePoint con etiquetas de confidencialidad. El acceso condicional de Azure AD ofrece muchas opciones para determinar cómo los usuarios acceden a Microsoft 365, incluyendo limitaciones basadas en la ubicación, el riesgo, el cumplimiento de dispositivos y otros factores. Se recomienda leer [¿Qué es el acceso condicional?](/azure/active-directory/conditional-access/overview) y considerar otras directivas que podrían ser adecuadas para su organización.
 
-Tenga en cuenta que los invitados a menudo no tienen dispositivos administrados por su organización. Si permite invitados en cualquiera de los niveles, tenga en cuenta qué tipos de dispositivos usarán para acceder a equipos y sitios y establezca las directivas de dispositivo no administrados en consecuencia.
+No olvide que los invitados a menudo no tienen dispositivos administrados por su organización. Si permite invitados en cualquiera de los niveles, tenga en cuenta qué tipos de dispositivos usarán para acceder a equipos y sitios, y establezca las directivas de dispositivos no administrados en consecuencia.
 
 ## <a name="next-step"></a>Paso siguiente
 

@@ -16,13 +16,14 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: Obtenga información sobre los pasos de configuración necesarios para Microsoft 365 para configurar un equipo para la colaboración en tareas, conversaciones y documentación con invitados en Teams.
-ms.openlocfilehash: 4e734af198563d0bc4599b4476b3823384989212
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c17732705c1d88ff70e56f5d26d9e268e3ff7c19
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904665"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539268"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Colaborar con invitados en un equipo
 
@@ -146,7 +147,7 @@ Para crear un equipo
 5. Escriba un nombre y una descripción para el equipo y haga clic en **Crear**.
 6. Haga clic **Omitir**.
 
-Invitaremos a los usuarios más tarde. A continuación, es importante comprobar la configuración de uso compartido de nivel de sitio para el sitio de SharePoint que está asociado al equipo.
+Invitaremos a los usuarios más tarde. A continuación, es importante comprobar la configuración de uso compartido a nivel de sitio para el sitio de SharePoint asociado al equipo.
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Configuración de uso compartido de nivel de sitio de SharePoint
 

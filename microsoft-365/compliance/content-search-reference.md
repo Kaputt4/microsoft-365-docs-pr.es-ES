@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Este artículo contiene información de referencia sobre la herramienta de eDiscovery de búsqueda de contenido del Centro de cumplimiento de Microsoft 365 para ayudarle a obtener una gran cantidad de detalles sobre la búsqueda de contenido.
-ms.openlocfilehash: f3545cc4644ca8b0a96ee37713d8fe62be7466e5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 14660b4cfcd09f5346fa8d0d901880d0a6c774c2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332899"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538488"
 ---
 # <a name="feature-reference-for-content-search"></a>Referencia de características para la búsqueda de contenido
 
@@ -33,19 +33,7 @@ En este artículo se describen las características y funciones de la búsqueda 
 
 ## <a name="content-search-limits"></a>Límites de búsqueda de contenido
 
-- Para obtener una descripción de los límites que se aplican a la búsqueda de contenido, consulte [Límites de Búsqueda de contenido](limits-for-content-search.md).
-  
-- Microsoft recopila información del rendimiento de las búsquedas de contenido ejecutadas por todas las organizaciones en el servicio. Aunque la complejidad de una consulta de búsqueda puede afectar al tiempo que lleva ejecutarla, en realidad, el factor más determinante es el número de buzones incluidos en la búsqueda. Microsoft no proporciona un acuerdo de nivel de servicio para los tiempos de búsqueda. Sin embargo, en la siguiente tabla le mostramos los tiempos de búsqueda promedio en base al número de buzones.
-  
-  |**Número de buzones**|**Promedio de tiempo de búsqueda**|
-  |:-----|:-----|
-  |100  <br/> |30 segundos  <br/> |
-  |1000  <br/> |45 segundos  <br/> |
-  |10 000  <br/> |4 minutos  <br/> |
-  |25 000  <br/> |10 minutos  <br/> |
-  |50 000  <br/> |20 minutos  <br/> |
-  |100 000  <br/> |25 minutos  <br/> |
-  |||
+Para obtener una descripción de los límites que se aplican a la búsqueda de contenido, consulte [Límites de Búsqueda de contenido](limits-for-content-search.md).
   
 ## <a name="building-a-search-query"></a>Crear una consulta de búsqueda
 
@@ -71,7 +59,7 @@ Tenga en cuenta lo siguiente cuando use la lista de palabras clave para crear un
   
 - Cuando ejecuta una búsqueda de contenido, Microsoft 365 comprueba automáticamente la búsqueda para verificar que no haya caracteres no admitidos ni operadores booleanos en minúsculas. Los caracteres no admitidos suelen estar ocultos y pueden provocar un error de búsqueda o devolver resultados no deseados. Para obtener más información acerca de la verificación de caracteres no compatibles, vea [Comprobar si hay errores en la consulta de búsqueda de contenido](check-your-content-search-query-for-errors.md).
     
-- Si su consulta de búsqueda contiene palabras clave con caracteres especiales (que no pertenecen al alfabeto inglés), puede hacer clic en **Consulta idioma-país/región**![el icono Consulta idioma-país/región](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) y seleccionar el código cultural del idioma y país relevantes para la búsqueda. Por defecto, la versión del idioma/región es la neutra. ¿Cómo saber si es necesario cambiar la configuración de idioma para una búsqueda de contenido? Si sabe que las ubicaciones de contenido contienen los caracteres especiales que busca, pero la búsqueda no devuelve ningún resultado, la configuración de idioma puede ser la causa. 
+- Si su consulta de búsqueda contiene palabras clave con caracteres especiales (que no pertenecen al alfabeto inglés), puede hacer clic en **Consulta idioma-país/región**![el icono Consulta idioma-país/región](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) y seleccionar el código cultural del idioma y país relevantes para la búsqueda. Por defecto, la versión del idioma/región es la neutra. ¿Cómo saber si es necesario cambiar la configuración de idioma para una búsqueda de contenido? Si sabe que las ubicaciones de contenido contienen los caracteres especiales que busca, pero la búsqueda no devuelve ningún resultado, la configuración de idioma puede ser la causa.
   
 ## <a name="partially-indexed-items"></a>Elementos indexados parcialmente
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Obtenga información sobre los elementos sin indizar en Exchange y SharePoint que puede incluir en una búsqueda de exhibición de documentos electrónicos que ejecute en el centro de cumplimiento Microsoft 365 de documentos electrónicos.
-ms.openlocfilehash: 40995aa403686caadd5e35b6fa9c6ca20ee017ee
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: e1730959cd3177fe1f7bce1f0315c871b5a57598
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994737"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537660"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Elementos parcialmente indizados en eDiscovery
 
@@ -67,7 +67,7 @@ Para obtener una lista de formatos de archivo compatibles y deshabilitados, vea 
 
 No todos los mensajes de correo electrónico con datos adjuntos de archivos parcialmente indizados o todos los documentos SharePoint parcialmente indizados se devuelven automáticamente como un elemento parcialmente indizado. Esto se debe a que otras propiedades de mensaje o documento, como la propiedad **Subject** de los mensajes de correo electrónico y las propiedades **Title** o **Author** de los documentos están indizadas y están disponibles para buscarse. Por ejemplo, una búsqueda de palabras clave para "financial" devolverá elementos con datos adjuntos de archivo parcialmente indizados si esa palabra clave aparece en el asunto de un mensaje de correo electrónico o en el nombre de archivo o el título de un documento. Sin embargo, si la palabra clave aparece solo en el cuerpo del archivo, el mensaje o documento se devolverá como un elemento parcialmente indizado.
   
-Del mismo modo, los mensajes con datos adjuntos de archivo parcialmente indizados y documentos de un tipo de archivo parcialmente indizado se incluyen en los resultados de búsqueda cuando otras propiedades de mensaje o documento, que son indizadas y que se pueden buscar, cumplen los criterios de búsqueda. Las propiedades de los mensajes que se indexan para la búsqueda son las fechas de envío y recepción, el remitente y el destinatario, el nombre de archivo de un adjunto, y el texto del cuerpo del mensaje. Las propiedades de los documentos que se indexan para la búsqueda son las fechas de creación y modificación. Por lo tanto, aunque los datos adjuntos de un mensaje pueden ser un elemento parcialmente indizado, el mensaje se incluirá en los resultados de búsqueda normales si el valor de otras propiedades de mensaje o documento coincide con los criterios de búsqueda.
+Del mismo modo, los mensajes con datos adjuntos de archivo parcialmente indizados y documentos de un tipo de archivo parcialmente indizado se incluyen en los resultados de búsqueda cuando otras propiedades de mensaje o documento, indizadas y que se pueden buscar, coinciden con los criterios de búsqueda. Las propiedades de los mensajes que se indexan para la búsqueda son las fechas de envío y recepción, el remitente y el destinatario, el nombre de archivo de un adjunto, y el texto del cuerpo del mensaje. Las propiedades de los documentos que se indexan para la búsqueda son las fechas de creación y modificación. Por lo tanto, aunque los datos adjuntos de un mensaje pueden ser un elemento parcialmente indizado, el mensaje se incluirá en los resultados de búsqueda normales si el valor de otras propiedades de mensaje o documento coincide con los criterios de búsqueda.
   
 Para obtener una lista de propiedades de correo electrónico y documentos que puede buscar mediante la característica de búsqueda en el Centro de seguridad y cumplimiento de &, vea Consultas de palabras clave y condiciones de búsqueda para [eDiscovery](keyword-queries-and-search-conditions.md).
   
@@ -77,7 +77,7 @@ Es posible que su organización tenga que identificar y realizar análisis adici
   
 Tenga en cuenta lo siguiente acerca de los elementos parcialmente indizados:
   
-- Al ejecutar una búsqueda de exhibición de documentos electrónicos, el número total y el tamaño de los elementos de Exchange parcialmente indizados (devueltos por la consulta de búsqueda) se muestran en las estadísticas de búsqueda de la página desplegable y se etiquetan como elementos sin indizar **.** Las estadísticas sobre elementos parcialmente indizados que se muestran en la página desplegable no incluyen elementos parcialmente indizados en SharePoint o OneDrive.
+- Al ejecutar una búsqueda de exhibición de documentos electrónicos, el número total y el tamaño de los elementos de Exchange parcialmente indizados (devueltos por la consulta de búsqueda) se muestran en las estadísticas de búsqueda de la página desplegable y se etiquetan como elementos sin indizar **.** Las estadísticas sobre elementos parcialmente indizados que se muestran en la página desplegable no incluyen elementos parcialmente indizados en SharePoint sitios o OneDrive cuentas.
 
 - Si la búsqueda de la que está exportando resultados era una búsqueda de ubicaciones de contenido específicas o de todas las ubicaciones de contenido de la organización, solo se exportarán los elementos sin indizar de las ubicaciones de contenido que contienen elementos que coinciden con los criterios de búsqueda. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. El motivo es que exportar elementos parcialmente indizados desde muchas ubicaciones de la organización podría aumentar la probabilidad de errores de exportación y aumentar el tiempo necesario para exportar y descargar los resultados de la búsqueda.
 
@@ -87,22 +87,16 @@ Tenga en cuenta lo siguiente acerca de los elementos parcialmente indizados:
 
 - Los elementos indizados parcialmente no están disponibles para obtener una vista previa. Debe exportar los resultados de la búsqueda para ver los elementos parcialmente indizados devueltos por la búsqueda.
 
-Además, al exportar resultados de búsqueda e incluir elementos parcialmente indizados en la exportación, los elementos parcialmente indizados de SharePoint se exportan a una carpeta denominada **Uncrawlable**. Al exportar elementos Exchange indexados parcialmente, se exportan de forma diferente en función de si los elementos parcialmente indizados coinciden con la consulta de búsqueda y la configuración de la configuración de exportación. 
+   Además, al exportar resultados de búsqueda e incluir elementos parcialmente indizados en la exportación, los elementos parcialmente indizados de SharePoint se exportan a una carpeta denominada **Uncrawlable**. Al exportar elementos Exchange indexados parcialmente, se exportan de forma diferente en función de si los elementos parcialmente indizados coinciden con la consulta de búsqueda y la configuración de la configuración de exportación. 
 
-En la tabla siguiente se muestra el comportamiento de exportación de los elementos indizados y parcialmente indizados y si cada uno está incluido o no para las distintas opciones de configuración de exportación.
+- En la tabla siguiente se muestra el comportamiento de exportación de los elementos indizados y parcialmente indizados y si cada uno está incluido o no para las distintas opciones de configuración de exportación.
 
-|**Configuración de exportación**|**Elementos indizados que coinciden con la consulta de búsqueda**|**Elementos parcialmente indizados que coinciden con la consulta de búsqueda**|**Elementos parcialmente indizados que no coinciden con la consulta de búsqueda**|
-|:-----|:-----|:-----|:-----|
-|Exportar solo los elementos indexados  <br/> |Exported<br/> |Exportada (incluida con los elementos indizados que se exportan)<br/>  |No exportado <br/>|
-|Exportar solo elementos parcialmente indizados  <br/> |No exportado  <br/> |Exportada (como elementos parcialmente indizados)<br/> |Exportada (como elementos parcialmente indizados)|
-|Exportar elementos indexados y parcialmente indizados  <br/> |Exported<br/> |Exportada (incluida con los elementos indizados que se exportan)<br/>  |Exportada (como elementos parcialmente indizados)<br/>|
-||||
-
-## <a name="partially-indexed-items-excluded-from-the-search-results"></a>Elementos parcialmente indizados excluidos de los resultados de búsqueda
-
-Si un elemento se indiza parcialmente pero no cumple los criterios de consulta de búsqueda, no se incluirá como elemento parcialmente indizado en los resultados de búsqueda. En otras palabras, el elemento se excluye de los resultados de la búsqueda. Del mismo modo, si decide incluir elementos parcialmente indizados al exportar los resultados de una búsqueda, los elementos parcialmente indizados que se excluyeron de los resultados de búsqueda no se exportarán.
-  
-Una excepción a esta regla es cuando se crea una retención basada en consultas asociada a un caso de exhibición de documentos electrónicos. Si crea una retención de exhibición de documentos electrónicos basada en consultas, todos los elementos parcialmente indizados se colocan en espera. Esto incluye elementos parcialmente indizados que no coinciden con los criterios de consulta de búsqueda. Para obtener más información acerca de cómo crear retenciones de exhibición de documentos electrónicos basadas en consultas, vea [Create an eDiscovery hold](create-ediscovery-holds.md).
+  |**Configuración de exportación**|**Elementos indizados que coinciden con la consulta de búsqueda**|**Elementos parcialmente indizados que coinciden con la consulta de búsqueda**|**Elementos parcialmente indizados que no coinciden con la consulta de búsqueda**|
+  |:-----|:-----|:-----|:-----|
+  |Exportar solo los elementos indexados  <br/> |Exported<br/> |Exportada (incluida con los elementos indizados que se exportan)<br/>  |No exportado <br/>|
+  |Exportar solo elementos parcialmente indizados  <br/> |No exportado  <br/> |Exportada (como elementos parcialmente indizados)<br/> |Exportada (como elementos parcialmente indizados)|
+  |Exportar elementos indexados y parcialmente indizados  <br/> |Exported<br/> |Exportada (incluida con los elementos indizados que se exportan)<br/>  |Exportada (como elementos parcialmente indizados)<br/>|
+  ||||
   
 ## <a name="indexing-limits-for-messages"></a>Límites de indización de mensajes
 
@@ -122,12 +116,13 @@ Para obtener una lista de los límites de indización SharePoint documentos, vea
 |Tokens de anotación máximos  <br/> |2 millones  <br/> |Cuando se indiza un mensaje de correo electrónico, cada palabra se anota con diferentes instrucciones de procesamiento que especifican cómo se debe indizar esa palabra. Cada conjunto de instrucciones de procesamiento se denomina token de anotación. Para mantener la calidad del servicio en Office 365, hay un límite de 2 millones de tokens de anotación para un mensaje de correo electrónico.  <br/> |
 |Tamaño máximo del cuerpo en el índice  <br/> |67 millones de caracteres  <br/> |El número total de caracteres en el cuerpo de un mensaje de correo electrónico y todos sus datos adjuntos. Cuando se indiza un mensaje de correo electrónico, todo el texto del cuerpo del mensaje y de todos los datos adjuntos se concatena en una sola cadena. El tamaño máximo de esta cadena indizada es de 67 millones de caracteres.  <br/> |
 |Tokens únicos máximos en el cuerpo  <br/> |1 millón  <br/> |Como se explicó anteriormente, los tokens son el resultado de extraer texto del contenido, quitar la puntuación y los espacios y, a continuación, dividirlo en palabras (denominadas tokens) que se almacenan en el índice. Por ejemplo, la frase  `"cat, mouse, bird, dog, dog"` contiene 5 tokens. Pero solo 4 de estos son tokens únicos. Hay un límite de 1 millón de tokens únicos por mensaje de correo electrónico, lo que ayuda a evitar que el índice se haga demasiado grande con tokens aleatorios.  <br/> |
+||||
 
 ## <a name="more-information-about-partially-indexed-items"></a>Más información sobre elementos parcialmente indizados
 
 - Como se ha indicado anteriormente, como las propiedades del mensaje y del documento y sus metadatos están indizados, una búsqueda de palabras clave podría devolver resultados si esa palabra clave aparece en los metadatos indizados. En cambio, la misma búsqueda de palabra clave podría no devolver el mismo elemento si la palabra clave solo aparece en el contenido de un elemento con un tipo de archivo no admitido. En este caso, el elemento se devolvería como un elemento parcialmente indizado.
 
-- Si un elemento parcialmente indizado se incluye en los resultados de búsqueda porque cumple los criterios de consulta de búsqueda (y no se excluye), no se incluirá como elemento parcialmente indizado en las estadísticas de búsqueda estimadas. Además, no se incluirá con elementos parcialmente indizados al exportar resultados de búsqueda.
+- Si un elemento parcialmente indizado se incluye en los resultados de búsqueda porque coincide con los criterios de consulta de búsqueda, no se incluirá como elemento parcialmente indizado en las estadísticas de búsqueda estimadas. Además, no se incluirá con elementos parcialmente indizados al exportar resultados de búsqueda.
 
 - Aunque un tipo de archivo es compatible con la indización y está indizado, puede haber errores de indización o de búsqueda que harán que un archivo se devuelva como un elemento indizado parcialmente. Por ejemplo, la búsqueda de un archivo Excel muy grande puede ser parcialmente correcta (porque se indizan los primeros 4 MB), pero, a continuación, se produce un error porque se supera el límite de tamaño del archivo. En este caso, es posible que se devuelva el mismo archivo con los resultados de búsqueda y como elemento parcialmente indizado.
 
@@ -137,6 +132,8 @@ Para obtener una lista de los límites de indización SharePoint documentos, vea
 
 - Los mensajes de correo electrónico protegidos Azure Rights Management se indizan y se incluirán en los resultados de búsqueda si coinciden con la consulta de búsqueda. Los mensajes de correo electrónico protegidos por derechos se descifran y se pueden obtener una vista previa y exportarse. Esta funcionalidad requiere que se le asigne el rol Descifrar RMS, que se asigna de forma predeterminada al grupo de roles administrador de exhibición de documentos electrónicos.
 
-## <a name="see-also"></a>Vea también
+- Si crea una retención basada en consultas asociada a un caso de exhibición de documentos electrónicos, todos los elementos parcialmente indizados se colocan en espera. Esto incluye elementos parcialmente indizados que no coinciden con los criterios de consulta de búsqueda para la retención. Para obtener más información acerca de cómo crear retenciones de exhibición de documentos electrónicos basadas en consultas, vea [Create an eDiscovery hold](create-ediscovery-holds.md).
+
+## <a name="see-also"></a>Consulte también
 
 [Investigar elementos parcialmente indizados en eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)

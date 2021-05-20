@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
-description: 'Obtenga información sobre cómo convertir un buzón privado en un buzón compartido al que puedan tener acceso varios usuarios. '
-ms.openlocfilehash: d5b33731908d2d555a8dd12d5d7fbbd462bd83ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 'Aprenda a convertir un buzón privado en un buzón compartido al que puedan tener acceso varias personas en lugar de solo una persona. '
+ms.openlocfilehash: 73e2bad40037e1343f4e08c07ca6b26df16b1a30
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915871"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537624"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertir un buzón de usuario en un buzón compartido
 
@@ -41,7 +41,7 @@ Al convertir el buzón de un usuario en un buzón compartido, se conserva todo e
 
 - Las reglas están intactas después de convertir el buzón en un buzón compartido.
 
-## <a name="use-the-exchange-admin-center-to-convert-a-mailbox"></a>Usar el Centro de administración de Exchange para convertir un buzón
+## <a name="use-the-exchange-admin-center-to-convert-a-mailbox"></a>Usar el Centro Exchange administración para convertir un buzón
  
 1. Vaya al <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Centro de administración de Exchange</a>.
 
@@ -57,7 +57,7 @@ Al convertir el buzón de un usuario en un buzón compartido, se conserva todo e
 Para todo lo demás que necesita saber acerca de los buzones compartidos, vea Acerca de los buzones [compartidos](about-shared-mailboxes.md) y [Crear un buzón compartido.](create-a-shared-mailbox.md)
 
 > [!NOTE]
-> Los buzones compartidos no requieren una licencia independiente. Sin embargo, si desea habilitar In-Place Archive o poner una retención de In-Place o una retención por juicio en un buzón compartido, debe asignar una licencia de Exchange Online Plan 1 con Archivado de Exchange Online o Exchange Online Plan 2 al buzón.
+> Los buzones compartidos no requieren una licencia independiente. Sin embargo, si desea habilitar In-Place Archive o poner una retención de In-Place o una retención por juicio en un buzón compartido, debe asignar una licencia del Plan 1 de Exchange Online con una licencia del Plan 2 Archivado de Exchange Online o Exchange Online al buzón.
 
 
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>Convertir el buzón de un usuario eliminado
@@ -66,7 +66,7 @@ Supongamos que ha eliminado una cuenta de usuario y ahora desea convertir su buz
 
 1. [Restaurar la cuenta del usuario](../add-users/restore-user.md).
 
-2. Asegúrese de que tiene asignada una licencia de Microsoft 365.
+2. Asegúrese de que Microsoft 365 licencia de usuario está asignada.
 
 3. Restablezca la contraseña del usuario.
     
@@ -93,23 +93,23 @@ Supongamos que ha eliminado una cuenta de usuario y ahora desea convertir su buz
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>Convertir el buzón de un usuario en un entorno híbrido
 
-Para obtener más información sobre cómo convertir un buzón de usuario en un buzón compartido en un entorno híbrido de Exchange, vea:
+Para obtener más información sobre cómo convertir un buzón de usuario en un buzón compartido en un Exchange híbrido, vea:
 
- - [Cmdlets para crear o modificar un buzón compartido remoto en un entorno de Exchange local](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
- - [Los buzones compartidos se convierten inesperadamente en buzones de usuario después de que se ejecute la sincronización de directorios en una implementación híbrida de Exchange](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+ - [Cmdlets para crear o modificar un buzón compartido remoto en un entorno Exchange local](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
+ - [Los buzones compartidos se convierten inesperadamente en buzones de usuario después de que se ejecute la sincronización de directorios Exchange implementación híbrida](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
  
 
 > [!NOTE]
 > Si es miembro del grupo de roles Administración de la organización o Administración de destinatarios, puede usar el Shell de administración de Exchange para cambiar un buzón de usuario a un buzón compartido local. Por ejemplo, `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Acerca de los buzones compartidos](about-shared-mailboxes.md)
+[Acerca de los buzones compartidos](about-shared-mailboxes.md) (artículo)
 
-[Crear un buzón compartido](create-a-shared-mailbox.md)
+[Crear un buzón compartido](create-a-shared-mailbox.md) (artículo)
 
-[Configurar un buzón compartido](configure-a-shared-mailbox.md)
+[Configurar un buzón compartido](configure-a-shared-mailbox.md) (artículo)
 
-[Quitar la licencia de un buzón compartido](remove-license-from-shared-mailbox.md)
+[Quitar una licencia de un buzón compartido](remove-license-from-shared-mailbox.md) (artículo)
 
-[Resolver problemas con los buzones compartidos](resolve-issues-with-shared-mailboxes.md)
+[Resolver problemas con buzones compartidos](resolve-issues-with-shared-mailboxes.md) (artículo)

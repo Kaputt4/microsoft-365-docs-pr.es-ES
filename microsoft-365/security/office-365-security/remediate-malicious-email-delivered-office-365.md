@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 202ebc8b79368c8d41fd3727b67359ddcb8a08fa
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a59b24cd29ab8bf3b9b08c7818813a7ab89f7ce2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207410"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537888"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Corregir el correo electrónico malintencionado entregado en Office 365
 
@@ -29,10 +29,10 @@ ms.locfileid: "51207410"
 **Se aplica a**
 - [Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 
-Remediation means taking a prescribed action against a threat. El sistema puede limpiar el correo electrónico malintencionado enviado a su organización, a través de la purga automática de cero horas (ZAP) o de los equipos de seguridad a través de acciones de corrección como mover a la bandeja de *entrada,* mover a correo no *deseado,* mover a elementos eliminados, eliminar temporalmente *o* eliminar de forma *permanente*. Microsoft Defender para Office 365 P2/E5 permite a los equipos de seguridad corregir las amenazas en la funcionalidad de correo electrónico y colaboración mediante una investigación manual y automatizada.
+Remediation means taking a prescribed action against a threat. El sistema puede limpiar el correo electrónico malintencionado enviado a su organización, a través de la purga automática de cero horas (ZAP) o de los equipos de seguridad a través de acciones de corrección como mover a la bandeja de *entrada,* mover a correo no *deseado,* mover a elementos eliminados, eliminar temporalmente *o* eliminar de forma *permanente*. Microsoft Defender para Office 365 P2/E5 permite a los equipos de seguridad corregir amenazas en la funcionalidad de correo electrónico y colaboración mediante una investigación manual y automatizada.
 
 > [!NOTE]
-> Para corregir el correo electrónico malintencionado, los equipos de seguridad necesitan el rol *de búsqueda y* purga asignado. La asignación de roles se realiza a través de permisos en el Centro de seguridad y cumplimiento.
+> Para corregir el correo electrónico malintencionado, los equipos de seguridad necesitan el rol *de búsqueda y* purga asignado. La asignación de roles se realiza [mediante permisos en el Centro de seguridad & cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Lo que necesita saber antes de comenzar
 
@@ -43,7 +43,7 @@ Los administradores pueden realizar las acciones necesarias en los correos  elec
 *La búsqueda manual* se produce cuando los equipos de seguridad identifican las amenazas manualmente mediante las funciones de búsqueda y filtrado del Explorador de amenazas. La corrección manual del correo electrónico se puede desencadenar a través de cualquier vista de correo electrónico (*Malware*, *Phish* o *All email*) después de identificar un conjunto de correos electrónicos que deben corregirse.
 
 > [!div class="mx-imgBorder"]
-> [![Búsqueda manual en el Explorador de amenazas de Office 365 por fecha.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+> [![Búsqueda manual en el Office 365 amenazas por fecha.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 Los equipos de seguridad pueden usar el Explorador de amenazas para seleccionar correos electrónicos de varias maneras:
 
@@ -88,7 +88,7 @@ Abra cualquier elemento de corrección para ver detalles sobre él, incluido su 
       > Actualmente, solo un usuario con acceso al buzón puede recuperar elementos de una carpeta eliminada temporalmente.
 
   - **No se pueden realizar** acciones: los correos electrónicos de las siguientes ubicaciones no se pueden actuar ni mover en acciones de corrección:
-    - Quarantine
+    - Cuarentena
     - Carpeta eliminada de forma permanente
     - Local/externo
     - Error o caída
@@ -104,7 +104,7 @@ Abra cualquier elemento de corrección para ver detalles sobre él, incluido su 
   > [!NOTE]
   > Para obtener mejores resultados, la corrección debe realizarse en lotes de 50 000 o menos.
 
-  Solo se actúan los correos electrónicos que se pueden corregir durante la corrección. El sistema de correo electrónico de Office 365 no puede corregir los mensajes de correo electrónico no inmediatos, ya que no se almacenan en buzones de correo en la nube.
+  Solo se actúan los correos electrónicos que se pueden corregir durante la corrección. El sistema de correo electrónico Office 365 no puede corregir los correos electrónicos no inmediatos, ya que no se almacenan en buzones de correo en la nube.
 
   Los administradores pueden realizar acciones en los correos electrónicos en cuarentena si es necesario, pero esos correos electrónicos expirarán fuera de cuarentena si no se purgan manualmente. Los usuarios no pueden acceder a los correos electrónicos en cuarentena debido a contenido malintencionado, por lo que el personal de seguridad no tiene que realizar ninguna acción para deshacerse de las amenazas en cuarentena. Si los correos electrónicos son locales o externos, se puede ponerse en contacto con el usuario para dirigirse al correo electrónico sospechoso. O bien, los administradores pueden usar herramientas de seguridad/servidor de correo electrónico independientes para la eliminación. Estos correos electrónicos se pueden identificar aplicando la ubicación de entrega *=* filtro externo local en el Explorador de amenazas. Para correo electrónico con errores o eliminados, o correo electrónico no accesible por los usuarios, no habrá ningún correo electrónico para mitigar, ya que estos correos no llegan al buzón.
 

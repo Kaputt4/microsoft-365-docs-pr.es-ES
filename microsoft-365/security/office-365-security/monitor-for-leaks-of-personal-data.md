@@ -19,12 +19,12 @@ search.appverid:
 description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b51bc5d5d3cbfa8951392f88edc6e178778206df
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0976c0d1c0c8d3ebb25ebf423f1d9df2f71fc852
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205279"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538284"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
 
@@ -79,7 +79,7 @@ El centro de seguridad y el centro de cumplimiento ofrecen dos formas de supervi
 
 - Buscar el registro de auditoría directamente: Busque todos los eventos en un intervalo de fechas definido, o filtre los resultados basándose en criterios específicos, como la acción, el usuario que la realizó o el objeto de destino.
 
-Los equipos de seguridad y cumplimiento de información pueden usar estas herramientas para revisar proactivamente las actividades realizadas por los usuarios finales y los administradores en los servicios. Pueden configurarse alertas automáticas para enviar notificaciones por correo electrónico cuando se producen ciertas actividades en colecciones de sitios específicos, por ejemplo, cuando se comparte el contenido de los sitios que se sabe que contienen información relacionada con RGPD. Esto permite que los equipos contacten con usuarios para asegurarse de que se siguen directivas de seguridad corporativa, o que proporcionen aprendizaje adicional.
+Los equipos de cumplimiento y seguridad de la información pueden usar estas herramientas para revisar proactivamente las actividades realizadas por los usuarios finales y los administradores en los servicios. Pueden configurarse alertas automáticas para enviar notificaciones por correo electrónico cuando se producen ciertas actividades en colecciones de sitios específicos, por ejemplo, cuando se comparte el contenido de los sitios que se sabe que contienen información relacionada con RGPD. Esto permite que los equipos contacten con usuarios para asegurarse de que se siguen directivas de seguridad corporativa, o que proporcionen aprendizaje adicional.
 
 Los equipos de seguridad de información también pueden buscar en el registro de auditoría para investigar las posibles infracciones de datos y determinar la causa raíz y la extensión de la infracción. Esta función integrada facilita el cumplimiento de los artículos 33 y 34 del RGPD, que requieren que se proporcionen notificaciones a la autoridad de control del RGPD y a los propietarios de los datos sujetos a una infracción en un período de tiempo determinado. Las entradas del registro de auditoría solo se conservan durante 90 días en el servicio, por lo que a menudo se recomienda, y muchas organizaciones lo requieren, que estos registros se conserven durante largos períodos de tiempo.
 
@@ -87,7 +87,7 @@ Existen soluciones que se adhieren a los Registros de auditoría unificados medi
 
 Más información sobre las directivas de alerta y buscar en el registro de auditoría:
 
-- [Directivas de alerta en los centros de seguridad y cumplimiento de Microsoft 365](../../compliance/alert-policies.md)
+- [Directivas de alerta en Microsoft 365](../../compliance/alert-policies.md)
 
 - [Buscar en el registro de auditoría de actividad de usuario y administración de Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (introducción)
 

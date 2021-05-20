@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden obtener información sobre los valores de nivel de queja masiva (BCL) que se usan en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08924a7db0a5c4588ed70bc41e4caf46afb35b53
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 11f884ec6b32795deba09c0f1ba88055a6422e9b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650259"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537948"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Nivel de queja masiva (BCL) en EOP
 
@@ -33,11 +33,13 @@ ms.locfileid: "51650259"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En organizaciones de Microsoft 365 con buzones en Exchange Online o en organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP asigna un nivel de queja masiva (BCL) a los mensajes entrantes de los buzones masivos. El BCL se agrega al mensaje en un encabezado X y es similar al nivel de confianza de correo no deseado [(SCL)](spam-confidence-levels.md) que se usa para identificar mensajes como correo no deseado. Un BCL más alto indica que un mensaje masivo es más probable que genere quejas (y, por lo tanto, es más probable que sea correo no deseado). Microsoft usa orígenes internos y de terceros para identificar el correo masivo y determinar el BCL adecuado.
+En Microsoft 365 organizaciones con buzones en organizaciones de Exchange Online o independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, EOP asigna un nivel de queja masiva (BCL) a los mensajes entrantes de los buzones masivos. El BCL se agrega al mensaje en un encabezado X y es similar al nivel de confianza de correo no deseado [(SCL)](spam-confidence-levels.md) que se usa para identificar mensajes como correo no deseado. Un BCL más alto indica que un mensaje masivo es más probable que genere quejas (y, por lo tanto, es más probable que sea correo no deseado). Microsoft usa orígenes internos y de terceros para identificar el correo masivo y determinar el BCL adecuado.
 
 Los remitentes masivos varían en sus patrones de envío, creación de contenido y prácticas de adquisición de destinatarios. Los buenos carteros masivos envían mensajes deseados con contenido relevante a sus suscriptores. Estos mensajes generan pocas quejas por parte de los destinatarios. Otros troyanos de envío masivo de correo electrónico envían mensajes no solicitados muy similares al correo no deseado y generan muchas quejas por parte de los destinatarios. Los mensajes de un correo masivo se conocen como correo masivo o correo gris.
 
  El filtrado de  correo no deseado marca los mensajes como correo electrónico masivo en función del umbral BCL (el valor predeterminado o un valor que especifique) y realiza la acción especificada en el mensaje (la acción predeterminada es entregar el mensaje a la carpeta correo no deseado del destinatario). Para obtener más información, vea [Configure anti-spam policies](configure-your-spam-filter-policies.md) y [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md)
+
+Puede usar la lista de inquilinos permitidos o bloqueados para configurar excepciones para el filtrado masivo de correo. Los mensajes de remitentes de los dominios especificados no reciben la acción para el veredicto de filtrado de **correo** no deseado masivo en directivas contra correo no deseado. Para obtener más información, vea [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
 
 Los umbrales BCL se describen en la tabla siguiente.
 

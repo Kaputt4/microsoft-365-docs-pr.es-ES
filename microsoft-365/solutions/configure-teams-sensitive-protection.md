@@ -17,20 +17,21 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: Obtenga información sobre cómo implementar equipos con la protección de datos confidenciales.
-ms.openlocfilehash: 03f10c91461d440413ace418a3b6fdd84da1660a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 16b60230c18f4a4f5e10b4bd421fd1bf02b39779
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916231"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538188"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Configure equipos con protección de datos confidenciales
 
 En este artículo, observamos la configuración de un equipo con un nivel de protección confidencial. Asegúrese de que ha completado los pasos descritos en [Implementar equipos con la protección de línea base](configure-teams-baseline-protection.md) antes de seguir los pasos de este artículo. El nivel confidencial ofrece las siguientes protecciones adicionales al nivel de línea base:
 
-- Una etiqueta de confidencialidad para el equipo que le permite activar o desactivar el uso compartido de invitado y limita el acceso a contenido de SharePoint a solo web para dispositivos no administrados. Esta etiqueta también se puede usar para clasificar archivos.
-- Un tipo de vínculo para compartir predeterminado más restrictivo.
+- Una etiqueta de confidencialidad para el equipo que le permite activar o desactivar el uso compartido de invitados, y limita el acceso al contenido de SharePoint a solo web para dispositivos no administrados. Esta etiqueta también se puede usar para clasificar archivos.
+- Un tipo de vínculo para compartir predeterminado más restrictivo
 - Solo los propietarios del equipo podrán crear canales privados.
 
 ## <a name="guest-sharing"></a>Uso compartido de invitados
