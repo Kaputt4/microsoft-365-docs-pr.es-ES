@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: material de referencia para la prevención de pérdida de datos
+description: material de referencia de prevención de pérdida de datos
 ms.openlocfilehash: a6dc0b2702899e05f78c54331fb33b87495672d8
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "52572566"
 # <a name="data-loss-prevention-reference"></a>Referencia de prevención de pérdida de datos
  
 > [!IMPORTANT]
-> Este es el tema de referencia ya no es el recurso principal para Microsoft 365 información de prevención de pérdida de datos (DLP). El conjunto de contenido DLP se está actualizando y reestructurando. Los temas tratados en este artículo se moverán a nuevos artículos actualizados. Para obtener más información acerca de DLP, consulte [Información sobre la prevención de pérdida de datos](dlp-learn-about-dlp.md).
+> Este es el tema de referencia ya no es el recurso principal para Microsoft 365 de prevención de pérdida de datos (DLP). El conjunto de contenido DLP se está actualizando y reestructurando. Los temas tratados en este artículo se trasladarán a artículos nuevos y actualizados. Para obtener más información acerca de DLP, vea [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -66,7 +66,7 @@ With a DLP policy, you can:
     To view alerts and metadata related to your DLP policies you can use the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md). You can also view policy match reports to assess how your organization is complying with a DLP policy. If a DLP policy allows users to override a policy tip and report a false positive, you can also view what users have reported
 
 -->    
-## <a name="create-and-manage-dlp-policies"></a>Crear y administrar políticas DLP
+## <a name="create-and-manage-dlp-policies"></a>Crear y administrar directivas DLP
 
 Para crear y administrar las directivas DLP, vaya a la página sobre la prevención de pérdida de datos del Centro de cumplimiento de Microsoft 365.
   
@@ -385,7 +385,7 @@ Al usar una [etiqueta de retención](retention.md#retention-labels) que haya cre
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>Usar una etiqueta de confidencialidad como condición en una directiva DLP
 
-[Obtenga más información](./dlp-sensitivity-label-as-condition.md) sobre el uso de la etiqueta Sensibilidad como condición en las directivas DLP.
+[Obtenga más información](./dlp-sensitivity-label-as-condition.md) sobre cómo usar la etiqueta de confidencialidad como condición en las directivas DLP.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Cómo esta característica se relaciona con otras características
 
@@ -520,7 +520,7 @@ A medida que los usuarios agregan o cambian documentos en sus sitios, el motor d
 DLP evalúa el contenido que se puede indexar. Para obtener más información sobre los tipos de archivo que se rastrean de forma predeterminada, consulte [Extensiones de nombre de archivo y tipos de archivo analizados predeterminados en SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 > [!NOTE]
-> Con el fin de evitar que los documentos se compartan antes de que las directivas DLP tuvieran la oportunidad de analizarlos, el uso compartido de nuevos archivos en SharePoint se puede bloquear hasta que su contenido se haya indexado. Para obtener más información, consulte [Marcar archivos nuevos como confidenciales de forma predeterminada](/sharepoint/sensitive-by-default). 
+> Para evitar que los documentos se compartan antes de que las directivas DLP tuvieran la oportunidad de analizarlos, el uso compartido de nuevos archivos en SharePoint puede bloquearse hasta que su contenido se haya indizado. Para obtener más información, consulte [Marcar archivos nuevos como confidenciales de forma predeterminada](/sharepoint/sensitive-by-default). 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Evaluación de la directiva en Exchange Online, Outlook y Outlook en la Web
 

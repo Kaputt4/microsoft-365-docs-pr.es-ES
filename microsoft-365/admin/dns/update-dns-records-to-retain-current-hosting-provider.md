@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: Obtén información sobre cómo enrutar el tráfico a un sitio web público existente alojado fuera de Microsoft, si has establecido Microsoft para administrar registros DNS para tu dominio personalizado.
+description: Obtenga información sobre cómo enrutar el tráfico a un sitio web público existente hospedado fuera de Microsoft, si ha establecido Microsoft para administrar registros DNS para su dominio personalizado.
 ms.openlocfilehash: 2a1559bbb902375bbc363180cdb4f98ec2b3a939
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
@@ -30,18 +30,18 @@ ms.locfileid: "52572146"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>Actualizar registros DNS para conservar su sitio web con su proveedor de hospedaje actual
 
- **Si administras los registros de Microsoft de tu dominio en tu proveedor de hospedaje de DNS,** no tienes que preocuparte por los pasos de este tema. El sitio web permanece en su ubicación y los usuarios pueden obtener acceso a él. 
+ **Si administra los registros de Microsoft** de su dominio en su proveedor de hospedaje DNS, no tiene que preocuparse por los pasos descritos en este tema. El sitio web permanece en su ubicación y los usuarios pueden obtener acceso a él. 
   
- **Si Microsoft administra los registros DNS,** para enrutar el tráfico a un sitio web público existente hospedado fuera de Microsoft, después de agregar el dominio a Microsoft, haga lo siguiente: 
+ **Si Microsoft administra los** registros DNS , para enrutar el tráfico a un sitio web público existente hospedado fuera de Microsoft, después de agregar el dominio a Microsoft, haga lo siguiente: 
   
-## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Actualizar registros DNS en el centro de administración de Microsoft 365
+## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Actualizar registros DNS en el Centro Microsoft 365 administración
 1. En el centro de administración, diríjase a la página **configuración** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">dominios</a>.
 
-1. En la página **Dominios,** seleccione el dominio y, a continuación, elija **Registros DNS**.
+1. En la **página Dominios,** seleccione el dominio y, a continuación, elija **Registros DNS**.
 
-1. Seleccione **+ Agregar registro** e introduzca lo siguiente: 
+1. Seleccione **+ Agregar registro** y escriba lo siguiente: 
     
-   - Para **el tipo** enter: A **(Dirección)**
+   - Para **el tipo** escriba: A **(Dirección)**
     
    - Como **Nombre de host o alias**, escriba " **@** ".
     
@@ -53,9 +53,9 @@ ms.locfileid: "52572146"
     
 Además, puede crear un registro CNAME para ayudar a los clientes a encontrar su sitio web.
   
-1. Seleccione **+ Agregar registro** e introduzca lo siguiente: 
+1. Seleccione **+ Agregar registro** y escriba lo siguiente: 
     
-   - Para **el tipo** enter: **CNAME (Alias)**
+   - Para **el tipo** escriba: **CNAME (Alias)**
     
    - Como **Nombre de host o alias**, escriba " **www** ".
     
@@ -65,6 +65,6 @@ Además, puede crear un registro CNAME para ayudar a los clientes a encontrar su
     
 Por último, haga lo siguiente:
   
-[Actualiza los registros NS de tu dominio](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) para que apunten a Microsoft. 
+[Actualice los registros NS de su dominio](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) para que apunten a Microsoft. 
   
-Cuando los registros de NS se han actualizado para que apunten a Microsoft, el dominio está configurado. El correo electrónico se enrutará a Microsoft y el tráfico a la dirección de su sitio web seguirá siendo al host actual del sitio web.
+Cuando los registros NS se hayan actualizado para que apunten a Microsoft, el dominio está configurado. El correo electrónico se enruta a Microsoft y el tráfico a la dirección de su sitio web continuará en el host del sitio web actual.

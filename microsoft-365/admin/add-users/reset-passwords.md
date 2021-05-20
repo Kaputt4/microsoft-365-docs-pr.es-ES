@@ -26,7 +26,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: Inicia sesión con tu cuenta de administrador de Microsoft 365 para restablecer las contraseñas de los usuarios de Microsoft 365 para la suscripción empresarial.
+description: Inicie sesión con su cuenta Microsoft 365 administrador para restablecer las contraseñas de los usuarios en Microsoft 365 suscripción para empresas.
 ms.openlocfilehash: 8d4666eb70b1d5349f71c906f05510a8a54ded74
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
@@ -36,17 +36,17 @@ ms.locfileid: "52571978"
 ---
 # <a name="reset-passwords"></a>Restablecer contraseñas
 
-En este artículo se explica cómo restablecer las contraseñas por sí mismo y para los usuarios cuando tiene una suscripción Microsoft 365 para empresas.
+En este artículo se explica cómo restablecer las contraseñas para usted y para los usuarios cuando tiene una suscripción Microsoft 365 para empresas.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
 Este artículo está dirigido a personas que establecen una política de caducidad de contraseñas para una empresa, una escuela o una organización sin fines de lucro. Para completar estos pasos, debe iniciar sesión con su cuenta de administrador de Microsoft 365. [¿Qué es una cuenta de administrador?](../../business-video/admin-center-overview.md).
 
-Debe ser [administrador global o administrador de contraseñas](about-admin-roles.md) para realizar estos pasos.
+Debe ser administrador global o administrador [de contraseñas](about-admin-roles.md) para realizar estos pasos.
 
-## <a name="watch-reset-a-business-password-for-a-user"></a>Vea: Restablecer una contraseña de empresa para un usuario
+## <a name="watch-reset-a-business-password-for-a-user"></a>Watch: Reset a business password for a user
 
-Vea un breve vídeo sobre el restablecimiento de las contraseñas de usuario.<br><br>
+Vea un breve vídeo sobre el restablecimiento de contraseñas de usuario.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
@@ -56,11 +56,11 @@ Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje p
 
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 
-2. En la página **Usuarios activos,** seleccione el usuario y, a continuación, seleccione **Restablecer contraseña.**
+2. En la **página Usuarios activos,** seleccione el usuario y, a continuación, **seleccione Restablecer contraseña.**
 
-3. Siga las instrucciones de la página **Restablecer contraseña** para generar automáticamente una nueva contraseña para el usuario o crear una para ellos y, a continuación, seleccione **Restablecer**.  
+3. Siga las instrucciones de la **página Restablecer contraseña** para generar automáticamente una nueva contraseña para el usuario o crear una para ellos y, a continuación, seleccione **Restablecer**.  
 
-4. Introduzca una dirección de correo electrónico a la que el usuario pueda llegar para que reciba la nueva contraseña y haga un seguimiento con ellos para asegurarse de que la obtuvo.
+4. Escriba una dirección de correo electrónico a la que pueda llegar el usuario para que reciba la nueva contraseña y realice un seguimiento con ellos para asegurarse de que la obtuvo.
 
 ## <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
@@ -68,55 +68,55 @@ Le recomendamos encarecidamente que configure el autoservicio de restablecimient
 
 ## <a name="reset-my-admin-password"></a>Restablecer mi contraseña de administrador
 
-Sigue estos pasos si olvidaste tu contraseña pero puedes iniciar sesión en Microsoft 365 porque, por ejemplo, tu contraseña se guarda en tu navegador:
+Siga estos pasos si ha olvidado la contraseña, pero puede iniciar sesión en Microsoft 365 porque, por ejemplo, la contraseña se guarda en el explorador:
 
-1. Seleccione su nombre (icono) en la esquina superior derecha > Información personal **de mi cuenta.**  >  
+1. Seleccione su nombre (icono) en la esquina superior derecha > Información personal **de Mi**  >  **cuenta**.
 
-2. En **Datos de contacto,** comprueba que tu **correo electrónico alternativo** es preciso y que has proporcionado un número de teléfono móvil. Si no, cámbialos ahora.
+2. En **Detalles de contacto,** compruebe que **el** correo electrónico alternativo es preciso y que ha proporcionado un número de teléfono móvil. Si no es así, cámbienlos ahora.
 
-3. Cerrar sesión: selecciona tu nombre en la esquina superior derecha \> **Cerrar sesión.**
+3. Cerrar sesión: seleccione su nombre en la esquina superior derecha \> **Cerrar sesión.**
 
-4. Ahora inicia sesión de nuevo: escribe tu nombre de usuario \> **Siguiente** \> y, a continuación, selecciona **Olvidé la contraseña.**
+4. Ahora vuelva a iniciar sesión: escriba el nombre de usuario Siguiente y, a \>  \> continuación, seleccione **Contraseña olvidada.**
 
-5. Siga los pasos del asistente para restablecer la contraseña. Utiliza tu información de contacto alternativa para verificar que eres la persona adecuada para restablecer tu contraseña.
+5. Siga los pasos del asistente para restablecer la contraseña. Usa la información de contacto alternativa para comprobar que eres la persona adecuada para restablecer la contraseña.
 
-Si olvidaste tu contraseña y no puedes iniciar sesión:
+Si ha olvidado la contraseña y no puede iniciar sesión:
 
-- Pídele a otro administrador global de tu empresa que restablezca tu contraseña por ti.
+- Pida a otro administrador global de su empresa que restablezca su contraseña.
 
-- Asegúrese de haber proporcionado información de contacto alternativa, incluido un número de teléfono móvil.
+- Asegúrese de que ha proporcionado información de contacto alternativa, incluido un número de teléfono móvil.
 
-- O bien, [llame al soporte técnico de Microsoft](../../business-video/get-help-support.md).
+- O bien, [llama al soporte técnico de Microsoft](../../business-video/get-help-support.md).
 
-## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Restablezca todas las contraseñas empresariales para todos los miembros de su organización al mismo tiempo
+## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Restablecer todas las contraseñas empresariales para todos los usuarios de la organización al mismo tiempo
 <a name="bkmk_forgot"> </a>
 
-Estos pasos son aplicables a una empresa con decenas de usuarios. Si tiene cientos o miles de usuarios, consulte la siguiente sección sobre el restablecimiento de contraseñas de forma masiva (máximo 40 usuarios a la vez).
+Estos pasos son aplicables a una empresa con decenas de usuarios. Si tiene cientos o miles de usuarios, consulte la siguiente sección sobre el restablecimiento masivo de contraseñas (máximo 40 usuarios a la vez).
   
 1. En el centro de administración, vaya a la página **Usuarios** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Usuarios activos</a>.
 
-2. Seleccione la opción situada junto a **Mostrar nombre** para seleccionar todos los miembros de su negocio. A continuación, desmarque su usuario. No puede restablecer su propia contraseña y las contraseñas de todas las personas de su organización al mismo tiempo.
+2. Seleccione la opción situada junto a **Nombre para mostrar** para seleccionar todos los usuarios de su empresa. A continuación, desmarque su usuario. No puede restablecer su propia contraseña y las contraseñas de todas las personas de su organización al mismo tiempo.
 
 3. Seleccione **Restablecer contraseña**. 
 
-4. Siga las instrucciones de la página **Restablecer contraseña** y seleccione **Restablecer**.  Si optó por generar automáticamente las contraseñas, se mostrarán las nuevas contraseñas temporales.
+4. Siga las instrucciones de la **página Restablecer contraseña** y seleccione **Restablecer**.  Si optó por generar automáticamente las contraseñas, se mostrarán las nuevas contraseñas temporales.
 
-5. Introduzca una dirección de correo electrónico donde pueda recibir las contraseñas temporales. Deberá notificar a los usuarios cuáles son sus contraseñas temporales.
+5. Escriba una dirección de correo electrónico donde pueda recibir las contraseñas temporales. Deberá notificar a los usuarios cuáles son sus contraseñas temporales.
   
-## <a name="reset-business-passwords-in-bulk"></a>Restablecer contraseñas de negocios a granel
+## <a name="reset-business-passwords-in-bulk"></a>Restablecer contraseñas empresariales en masa
 <a name="bkmk_forgot"> </a>
 
 Use PowerShell. Lea esta publicación de Eyal Doron: [Administrar contraseñas con PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-Para obtener información general, vea [Administrar Microsoft 365 con PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
+Para obtener información general, [vea Manage Microsoft 365 with PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Forzar un cambio de contraseña para todos los usuarios de su empresa
 
 Consulte esta excelente entrada de blog publicada por Vasil Michev, MVP de Microsoft: [Forzar el cambio de contraseña para todos los usuarios en Office 365](https://go.microsoft.com/fwlink/?linkid=853693).
   
-## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>No tengo un Microsoft 365 para la suscripción de negocios
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>No tengo una suscripción de Microsoft 365 para empresas
 
 Lea el artículo [He olvidado el nombre de usuario o la contraseña de la cuenta que uso en Office.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
   
@@ -128,6 +128,6 @@ Lea el artículo [He olvidado el nombre de usuario o la contraseña de la cuenta
 
 [Establecer la contraseña de un usuario individual para que nunca expire](set-password-to-never-expire.md) (artículo)
 
-[Establezca la directiva de expiración de contraseñas para su organización](../manage/set-password-expiration-policy.md) (artículo)
+[Establecer la directiva de expiración de contraseña para su organización](../manage/set-password-expiration-policy.md) (artículo)
 
-[Microsoft 365 para vídeos de formación empresarial](../../business-video/index.yml) (página de enlaces)
+[Microsoft 365 vídeos de aprendizaje para empresas](../../business-video/index.yml) (página de vínculos)
