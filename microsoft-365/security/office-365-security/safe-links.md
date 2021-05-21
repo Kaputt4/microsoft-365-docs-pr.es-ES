@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: En este artículo, los administradores pueden obtener información sobre la protección de vínculos de Caja fuerte en Defender for Office 365 para proteger su organización contra suplantación de identidad (phishing) y otros ataques que usan direcciones URL malintencionadas.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 573fd5b92400996fa595b5953028e20fcecec976
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 407f04685e41269c0e8436d3b68db7d755fce129
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583585"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593574"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Caja fuerte Vínculos en Microsoft Defender para Office 365
 
@@ -54,7 +54,7 @@ Caja fuerte La protección de vínculos está disponible en las siguientes ubica
   Para obtener más información acerca de Caja fuerte de vínculos para mensajes de correo electrónico, vea la sección Caja fuerte [configuración](#safe-links-settings-for-email-messages) de vínculos para mensajes de correo electrónico más adelante en este artículo.
   
   > [!NOTE]
-  > Los vínculos de venta no funcionan en carpetas públicas habilitadas para correo.
+  > Caja fuerte Los vínculos no funcionan en carpetas públicas habilitadas para correo.
 
 - **Microsoft Teams** (actualmente en vista previa de TAP): la protección de vínculos de Caja fuerte para vínculos en conversaciones Teams, chats de grupo o desde canales también está controlada por las directivas de vínculos de Caja fuerte. No hay ninguna directiva Caja fuerte links predeterminada, por lo que para obtener la protección de los vínculos de Caja fuerte en **Teams,** debe crear una o más directivas de vínculos Caja fuerte .
 

@@ -19,19 +19,19 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
-description: Obtenga información sobre cómo eliminar una cuenta de usuario. Decida qué hacer con el correo electrónico y el contenido OneDrive usuario. Y decide si quieres mantener la licencia del producto o dejar de pagarla.
-ms.openlocfilehash: f4b1e0b1fb591d369cc09010db86dd995d7d4896
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Obtenga información sobre cómo eliminar una cuenta de usuario y qué hacer con el correo electrónico del usuario y OneDrive contenido y si desea conservar la licencia del producto.
+ms.openlocfilehash: c30edb598f659337778ec956737934da5fedad18
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535979"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593410"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Elimine un usuario de su organización
   
 **¿Está buscando cómo eliminar su propia cuenta *Microsoft 365* usuario que usa en el trabajo o en la escuela? Póngase en contacto con el soporte técnico de su trabajo o universidad para realizar estos pasos por usted.**
 
-## <a name="what-you-need-to-know-about-deleting-users"></a>Información importante acerca de cómo eliminar usuarios
+## <a name="before-you-begin"></a>Antes de empezar
 
 - Solo las personas que [tienen Microsoft 365 administrador global](about-admin-roles.md) o permisos de administración de usuarios para la empresa o la escuela pueden eliminar cuentas de usuario.
 - Tiene 30 días para [restaurar](restore-user.md) la cuenta antes de que los datos del usuario se eliminen de forma permanente.
@@ -54,7 +54,7 @@ Antes de empezar, piense en lo que desea hacer con el correo electrónico del us
 |Correo electrónico  <br/> | Si otro usuario tiene acceso al correo electrónico del usuario eliminado, se convertirá el buzón del usuario eliminado en un buzón compartido. A continuación, el nuevo propietario del buzón puede tener acceso al buzón y supervisar el nuevo correo electrónico. También tendrá las siguientes opciones:  <br/>  <br/>Cambiar el nombre para mostrar: se recomienda cambiar el nombre para mostrar para que sea fácil identificar el buzón compartido en la **lista Usuarios** activos.  <br/>  Activar las respuestas automáticas: ya hemos escrito una respuesta automática educada. Puede enviar diferentes respuestas automáticas a personas dentro de su organización y a personas de fuera de la organización.  <br/> <br/> Limpiar alias: los alias son direcciones de correo electrónico adicionales para los usuarios. Algunas organizaciones no las usan, por lo que si no tiene ninguna, no necesita hacer nada más aquí. Si el usuario tiene alias, se recomienda eliminarlos para que pueda reutilizar esas direcciones de correo electrónico. De lo contrario, no puede volver a usar esas direcciones de correo electrónico hasta que haya transcurrido el período de retención de los buzones eliminados. De forma predeterminada, un buzón eliminado se puede recuperar durante 30 días. Para obtener más información, vea [Eliminar o restaurar buzones](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox)de usuario en Exchange Online . <br/> |
 |Active Directory  <br/> |Si su empresa usa **Active Directory** que está sincronizando con Azure AD, debe eliminar la cuenta de usuario de Active Directory. No podrá hacerlo a través de Office 365. Para obtener instrucciones, [vea Eliminar una cuenta de usuario](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).  <br/> |
 
-### <a name="get-started"></a>Comenzar
+### <a name="get-started"></a>Introducción
 
 Dado que la experiencia guiada recorre los pasos para eliminar un usuario, aquí le explicamos cómo empezar.
 
@@ -169,14 +169,14 @@ Estos son los problemas más comunes que los usuarios encuentran al eliminar un 
 
 **¿Desea eliminar Microsoft 365 del equipo? Vaya a [Cancelar la suscripción](../../commerce/subscriptions/cancel-your-subscription.md).**
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Restaurar un usuario](restore-user.md)
+[Restaurar un usuario](restore-user.md) (artículo)
   
-[Eliminar un buzón de forma permanente](/exchange/permanently-delete-a-mailbox-exchange-2013-help)
+[Eliminar permanentemente un buzón](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (artículo)
 
-[Quitar un antiguo empleado de Office 365](remove-former-employee.md)
+[Quitar un antiguo empleado de Office 365](remove-former-employee.md) (artículo)
 
-[Agregar un nuevo empleado a Office 365](add-new-employee.md)
+[Agregar un nuevo empleado a Office 365](add-new-employee.md) (artículo)
 
-[Eliminar una cuenta de usuario:](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))use estas instrucciones si su empresa usa **Active Directory** que se sincroniza con Azure AD. No podrá hacerlo a través de Office 365.
+[Eliminar una cuenta de usuario:](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))use estas instrucciones si su empresa usa **Active Directory** que se sincroniza con Azure AD. No podrá hacerlo a través de Office 365. (artículo)
