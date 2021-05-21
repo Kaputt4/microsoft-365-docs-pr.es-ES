@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 05/14/2021
+ms.date: 05/20/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 0ba6f3da326223dcefb1c29f91c5a631ec8a866c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 939fea5b815827f5afbe6cdf78fd9335da6337e8
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539172"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594066"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Cambiar a Microsoft Defender para endpoint - Fase 3: Incorporación
 
@@ -42,20 +42,15 @@ ms.locfileid: "52539172"
 **Bienvenido a la fase 3 de [cambio a Defender para endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. Esta fase de migración incluye los siguientes pasos:
 
 1. [Incorporar dispositivos a Defender para endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
-
 2. [Ejecute una prueba de detección](#run-a-detection-test).
-
 3. [Confirme que Antivirus de Microsoft Defender está en modo pasivo en los puntos de conexión](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints).
-
 4. [Obtener actualizaciones para Antivirus de Microsoft Defender](#get-updates-for-microsoft-defender-antivirus).
-
 5. [Desinstale la solución que no es de Microsoft](#uninstall-your-non-microsoft-solution). 
-
 6. [Asegúrese de que Defender for Endpoint funciona correctamente.](#make-sure-defender-for-endpoint-is-working-correctly)
 
 ## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Incorporar dispositivos a Microsoft Defender para punto de conexión
 
-1. Vaya al Centro de seguridad de Microsoft Defender ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ) e inicie sesión.
+1. Vaya al Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) e inicie sesión.
 
 2. Elija **Configuración**  >  **incorporación de administración de**  >  **dispositivos**. 
 
@@ -67,15 +62,15 @@ ms.locfileid: "52539172"
  
 Los métodos de implementación varían según el sistema operativo y los métodos preferidos. En la tabla siguiente se enumeran los recursos que le ayudarán a incorporarse a Defender for Endpoint:
 
-|Sistemas operativos  |Métodos  |
+|Sistemas operativos  |Methods  |
 |---------|---------|
 | Windows 10     | [Directiva de grupo](configure-endpoints-gp.md)<p>[Configuration Manager](configure-endpoints-sccm.md)<p>[Administración de dispositivos móviles (Intune)](configure-endpoints-mdm.md)<p>[Script local](configure-endpoints-script.md) <p>**NOTA:** Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo, Microsoft Endpoint Configuration Manager o Intune.         |
 | Windows 8.1 Enterprise <p>Windows 8.1 Pro <p>Windows 7 SP1 Enterprise <p>Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md)<p>**NOTA:** Microsoft Monitoring Agent es ahora agente de Azure Log Analytics. Para obtener más información, consulte [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).        |
 | Windows Server 2019 y versiones posteriores <p>Windows Edición principal de Server 2019 <p>Windows Server version 1803 and later | [Script local](configure-endpoints-script.md) <p>[Directiva de grupo](configure-endpoints-gp.md) <p>[Configuration Manager](configure-endpoints-sccm.md) <p>[System Center Configuration Manager](configure-endpoints-sccm.md) <p>[Scripts de incorporación de VDI para dispositivos no persistentes](configure-endpoints-vdi.md) <p>**NOTA:** Un script local es adecuado para una prueba de concepto, pero no debe usarse para la implementación de producción. Para una implementación de producción, se recomienda usar la directiva de grupo, Microsoft Endpoint Configuration Manager o Intune.    |
 | Windows Server 2016 <p>Windows Server 2012 R2 <p>Windows Server 2008 R2 SP1  | [Centro de seguridad de Microsoft Defender](configure-server-endpoints.md)<p>[Azure Defender](/azure/security-center/security-center-wdatp) |
-|macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave)|[Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)  |
-|iOS |[Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)  |
-|Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS o LTS superior<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 |[Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)  |
+| macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave) | [Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)  |
+| iOS | [Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)  |
+| Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS o LTS superior<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 | [Incorporar dispositivos que no tienen Windows](configure-endpoints-non-windows.md)  |
 
 ## <a name="run-a-detection-test"></a>Ejecutar una prueba de detección
 
@@ -83,18 +78,18 @@ Para comprobar que los dispositivos incorporados están correctamente conectados
 
 |Sistema operativo  |Instrucciones  |
 |---------|---------|
-| Windows 10 <p>Windows Server 2019 <p>Windows Servidor, versión 1803 <p>Windows Server 2016 <p>Windows Server 2012 R2     | Consulte [Ejecutar una prueba de detección.](run-detection-test.md) <p>Visite el sitio de escenarios de demostración de Defender for Endpoint ( ) y [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) pruebe uno o varios de los escenarios. Por ejemplo, pruebe el escenario **de demostración de** protección entregado en la nube.         |
-| macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave)    |Descargue y use la aplicación DE BRICOLAJE en [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) . <p>Para obtener más información, [vea Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).        |
-| Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS o LTS superior<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 |1. Ejecute el siguiente comando y busque un resultado de **1**: <br/>`mdatp health --field real_time_protection_enabled`. <p>2. Abra una ventana terminal y ejecute el siguiente comando: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <p>3. Ejecute el siguiente comando para enumerar las amenazas detectadas: <br/>`mdatp threat list`. <p>Para obtener más información, [vea Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md). |
+| Windows 10 <p>Windows Server 2019 <p>Windows Servidor, versión 1803 <p>Windows Server 2016 <p>Windows Server 2012 R2     | Consulte [Ejecutar una prueba de detección.](run-detection-test.md) <p>Visite el sitio de escenarios de demostración de Defender for Endpoint ( ) y [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) pruebe uno o varios de los escenarios. Por ejemplo, pruebe el escenario **de demostración de** protección entregado en la nube.    |
+| macOS:<p>11.3.1 (Big Sur) <p>10.15 (Catalina)<p>10.14 (Mojave)    | Descargue y use la aplicación DE BRICOLAJE en [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) . <p>Para obtener más información, [vea Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).        |
+| Linux:<p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS o LTS superior<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 | 1. Ejecute el siguiente comando y busque un resultado de **1**: <br/>`mdatp health --field real_time_protection_enabled`. <p>2. Abra una ventana terminal y ejecute el siguiente comando: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <p>3. Ejecute el siguiente comando para enumerar las amenazas detectadas: <br/>`mdatp threat list`. <p>Para obtener más información, [vea Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md). |
 
 ## <a name="confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints"></a>Confirme que Antivirus de Microsoft Defender está en modo pasivo en los puntos de conexión
 
 Ahora que los puntos de conexión se han incorporado a Defender for Endpoint, el siguiente paso es asegurarse de que Antivirus de Microsoft Defender se está ejecutando en modo pasivo. Puede usar el símbolo del sistema o PowerShell para realizar esta tarea, como se describe en la tabla siguiente:
 
-|Método  |Qué hacer  |
-|---------|---------|
+| Método  | Qué hacer  |
+|:-------|:-------|
 |Símbolo del sistema     | 1. En un dispositivo Windows, abra el símbolo del sistema como administrador.<p>2. Escriba `sc query windefend` y, a continuación, presione ENTRAR.<p>3. Revise los resultados para confirmar que Antivirus de Microsoft Defender se está ejecutando en modo pasivo.         |
-|PowerShell     | 1. En un dispositivo Windows, abra Windows PowerShell como administrador.<p>2. Ejecute el cmdlet [Get-MpComputerStatus.](/powershell/module/defender/Get-MpComputerStatus) <p>3. En la lista de resultados, busque **AMRunningMode: Passive Mode** o **AMRunningMode: SxS Passive Mode**.          |
+| PowerShell     | 1. En un dispositivo Windows, abra Windows PowerShell como administrador.<p>2. Ejecute el cmdlet [Get-MpComputerStatus.](/powershell/module/defender/Get-MpComputerStatus) <p>3. En la lista de resultados, busque **AMRunningMode: Passive Mode** o **AMRunningMode: SxS Passive Mode**.    |
 
 > [!NOTE]
 > Es posible que *Antivirus de Windows Defender* en lugar *de Antivirus de Microsoft Defender* en algunas versiones de Windows.
@@ -122,21 +117,30 @@ Si usas Windows Server 2016, es posible que deba empezar a Antivirus de Microsof
 
 ## <a name="get-updates-for-microsoft-defender-antivirus"></a>Obtener actualizaciones para Antivirus de Microsoft Defender
 
-Mantener Antivirus de Microsoft Defender actualizado es fundamental para garantizar que los dispositivos tienen la tecnología y las características más recientes necesarias para protegerse contra nuevos malware y técnicas de ataque, incluso si Antivirus de Microsoft Defender se está ejecutando en modo [pasivo.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+Mantener Antivirus de Microsoft Defender actualizado es fundamental para garantizar que los dispositivos tienen la tecnología y las características más recientes necesarias para protegerse contra nuevas técnicas de ataque y malware, incluso si Antivirus de Microsoft Defender se está ejecutando en modo pasivo. (Vea [Antivirus de Microsoft Defender compatibilidad](microsoft-defender-antivirus-compatibility.md).)
 
 Hay dos tipos de actualizaciones relacionadas con mantener Antivirus de Microsoft Defender actualizado:
+
 - Actualizaciones de inteligencia de seguridad
 - Actualizaciones de productos
 
-Para obtener las actualizaciones, siga las instrucciones de [Manage Antivirus de Microsoft Defender updates y apply baselines](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
+Para obtener las actualizaciones, siga las instrucciones de [Manage Antivirus de Microsoft Defender updates y apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ## <a name="uninstall-your-non-microsoft-solution"></a>Desinstalar la solución que no es de Microsoft
 
-Ahora que ha incorporado los dispositivos de su organización a Defender for Endpoint y Antivirus de Microsoft Defender está instalado y habilitado, el siguiente paso es desinstalar la solución de protección de puntos de conexión que no es de Microsoft. Para obtener ayuda con esta tarea, llegue al equipo de soporte técnico del proveedor de soluciones.
+Si en este momento tiene:
+
+- Incorporó los dispositivos de la organización a Defender for Endpoint y 
+- Antivirus de Microsoft Defender está instalado y habilitado, 
+
+A continuación, el siguiente paso es desinstalar la solución de protección de puntos de conexión que no es de Microsoft. 
+
+Para obtener ayuda con esta tarea, llegue al equipo de soporte técnico del proveedor de soluciones.
 
 ## <a name="make-sure-defender-for-endpoint-is-working-correctly"></a>Asegúrese de que Defender for Endpoint funciona correctamente
 
 Ahora que has incorporado a Defender for Endpoint y has desinstalado la solución anterior que no es de Microsoft, el siguiente paso es asegurarte de que Defender for Endpoint funciona correctamente. Una buena forma de hacerlo es visitando el sitio de escenarios de demostración de Defender for Endpoint ( [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) ). Pruebe uno o varios de los escenarios de demostración de esa página, incluidos al menos los siguientes:
+
 - Protección entregada en la nube
 - Aplicaciones potencialmente no deseadas (PUA)
 - Protección de red (NP)
@@ -145,6 +149,5 @@ Ahora que has incorporado a Defender for Endpoint y has desinstalado la solució
 
 **¡Enhorabuena!** Ha completado la migración [a Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)! 
 
-- [Visite el panel de operaciones de seguridad](security-operations-dashboard.md) en el Centro de seguridad de Microsoft Defender ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ). 
-
+- [Visite el panel de operaciones de seguridad](security-operations-dashboard.md) en el Centro de seguridad de Microsoft Defender ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ). 
 - [Administrar Defender para endpoint, después de la migración](manage-atp-post-migration.md).

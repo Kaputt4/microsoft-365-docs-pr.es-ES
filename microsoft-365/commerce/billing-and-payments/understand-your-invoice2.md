@@ -19,14 +19,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Aprenda a interpretar la información de los cargos, la facturación y los pagos en su factura o recibo de Microsoft 365 para empresas, y sepa cómo modificar el número de la orden de compra.
+description: Interprete los cargos, la facturación y la información de pago en su Microsoft 365 factura o factura empresarial, y cómo cambiar un número de pedido de compra.
 ms.date: 05/04/2021
-ms.openlocfilehash: febcbdee563c18b3f17ee35b98f2d68b15f456d8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: aa898f570fb17f2d9e2ebba769e285cb9d507c31
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535691"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593530"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Entender su factura o recibo de Microsoft 365 para empresas
 
@@ -134,6 +134,6 @@ Si paga mediante factura, puede agregar o cambiar el número de orden de compra 
 
 [Cambiar la dirección de su organización, el correo electrónico de contacto técnico y otra información](../../admin/manage/change-address-contact-and-more.md) (artículo)
 
-[Pagar por su suscripción Microsoft 365 para empresas](pay-for-your-subscription.md) (artículo)\
+[Pagar por su suscripción Microsoft 365 para empresas](pay-for-your-subscription.md) (artículo)
 
 [Opciones de pago de Minecraft: Education Edition](/education/windows/school-get-minecraft) (artículo)

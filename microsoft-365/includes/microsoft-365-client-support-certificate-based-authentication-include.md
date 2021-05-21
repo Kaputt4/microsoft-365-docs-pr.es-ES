@@ -1,14 +1,14 @@
 <!-- This file is generated automatically. Changes made to this file will be overwritten.-->
-|Clientes|Android|iOS|Mac|Windows 10<br>Desktop|Windows 10<br>Aplicaciones modernas|
+|Clientes|Android|iOS|Mac|Windows 10<br>Desktop|Windows 10<br>Aplicaciones modernas|
 |:-|:-|:-|:-|:-|:-|
-|ACCESS|N/D|N/D|N/D|✔|N/A|
-|ADMINISTRADOR DE AZURE ACTIVE DIRECTORY|N/D|N/D|N/D|✔|N/A|
+|ACCESS|N/D|N/D|N/D|✔|N/D|
+|ADMINISTRADOR DE AZURE ACTIVE DIRECTORY|N/D|N/D|N/D|✔|N/D|
 |ADMINISTRADOR DE AZURE|N/D|N/D|N/D|N/D|N/D|
-|PORTAL DE EMPRESA|✔|✔|✔|N/A|✔|
+|PORTAL DE EMPRESA|✔|✔|✔|N/D|✔|
 |CORTANA|N/D|N/D|N/D|N/D|✔|
 |DELVE|✔|✔|N/D|N/D|N/D|
 |EXCEL|✔|✔|✔|✔|✔|
-|ADMINISTRADOR DE EXCHANGE|N/D|N/D|N/D|✔|N/A|
+|ADMINISTRADOR DE EXCHANGE|N/D|N/D|N/D|✔|N/D|
 |FORMULARIOS|N/D|N/D|N/D|N/D|N/D|
 |KAIZALA|✔|✔|N/D|N/D|N/D|
 |MICROSOFT ROOMS|Planeado|Planeado|N/D|N/D|N/D|
@@ -22,20 +22,20 @@
 |PLANNER|✔|✔|N/D|N/D|N/D|
 |POWER APPS|✔|✔|N/D|N/D|✔|
 |POWER AUTOMATE|✔|✔|N/D|N/D|N/D|
-|POWER BI|✔|✔|N/A|✔|✔|
+|POWER BI|✔|✔|N/D|✔|✔|
 |POWERPOINT|✔|✔|✔|✔|✔|
-|PROJECT|N/D|N/D|N/D|✔|N/A|
-|PUBLISHER|N/D|N/D|N/D|✔|N/A|
-|ADMINISTRADOR DE SHAREPOINT|N/D|N/D|N/D|✔|N/A|
+|PROJECT|N/D|N/D|N/D|✔|N/D|
+|PUBLISHER|N/D|N/D|N/D|✔|N/D|
+|ADMINISTRADOR DE SHAREPOINT|N/D|N/D|N/D|✔|N/D|
 |SHAREPOINT|✔|✔|N/D|N/D|N/D|
-|ADMINISTRADOR DE SKYPE EMPRESARIAL|N/D|N/D|N/D|✔|N/A|
-|SKYPE EMPRESARIAL|✔|✔|✔|✔|N/A|
+|ADMINISTRADOR DE SKYPE EMPRESARIAL|N/D|N/D|N/D|✔|N/D|
+|SKYPE EMPRESARIAL|✔|✔|✔|✔|N/D|
 |NOTAS PEGAJOSAS|N/D|N/D|N/D|N/D|✔|
 |STREAM|✔|✔|N/D|N/D|N/D|
 |SWAY|N/D|N/D|N/D|N/D|✔|
-|TEAMS|✔|✔|✔|Planeado|N/A|
-|TO-DO|✔|✔|✔|N/A|✔|
-|VISIO|N/A|✔|N/A|✔|N/A|
+|TEAMS|✔|✔|✔|✔|N/D|
+|TO-DO|✔|✔|✔|N/D|✔|
+|VISIO|N/D|✔|N/D|✔|N/D|
 |PIZARRA|✔|Planeado|N/D|N/D|✔|
 |WORD|✔|✔|✔|✔|✔|
 |WORKPLACE ANALYTICS|N/D|N/D|N/D|N/D|N/D|

@@ -21,23 +21,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: 'Aprende a cambiar el tema predeterminado de Microsoft 365 y personalizarlo para que coincida con el logotipo o el color de tu empresa. '
-ms.openlocfilehash: b7a0b142b8bd465a9e3258aaaeb951b72bc53fc7
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+description: Aprende a cambiar el tema predeterminado de la parte superior de la barra de navegación en Microsoft 365 y personalízalo para que coincida con el logotipo o color de tu empresa.
+ms.openlocfilehash: b2177eebc31f34f7067c8464724623e4bf7d4870
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060933"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593834"
 ---
-# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizar el tema de Microsoft 365 para su organización
+# <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizar el Microsoft 365 de la organización
 
 Como administrador de la organización, puede crear varios temas para las personas de la organización y seleccionar qué temas se aplican a los distintos miembros de la organización. El tema de la organización es lo que aparece en la barra de navegación superior para los usuarios de la organización.
 
-Puede agregar o actualizar un tema predeterminado que se aplique a todos los usuarios de su organización. También puede crear hasta cuatro temas de grupo adicionales que se pueden asignar a varios grupos de Microsoft 365.
+Puede agregar o actualizar un tema predeterminado que se aplique a todos los usuarios de su organización. También puede crear hasta cuatro temas de grupo adicionales que se pueden asignar a varios Microsoft 365 grupos.
   
 ## <a name="add-or-update-your-organizations-theme"></a>Agregar o actualizar el tema de la organización
 
-1. En el Centro de administración, vaya a la página **Configuración** de la \> **organización y,** a continuación, elija la pestaña **Perfil de** la organización.
+1. En el Centro de administración, vaya a la **Configuración** de la Configuración y, a continuación, \>  elija la pestaña **Perfil de** la organización.
 
 2. En la **pestaña Perfil de** la organización, seleccione Tema de la **organización**.
 
@@ -46,7 +46,7 @@ Todos los temas se pueden personalizar mediante las pestañas siguientes.
 |**Tab**|**What can you do?**|
 |:-----|:-----|
 |[General](#general-modify-a-theme) <br/> |Modifique un nombre de tema y asígnele hasta cinco grupos (si procede).  <br/> |
-|[Logotipos](#logos-specify-your-theme-logos) <br/> |Agregue el logotipo del tema, incluido el tema oscuro de Office y las opciones móviles.  <br/> |
+|[Logotipos](#logos-specify-your-theme-logos) <br/> |Agrega el logotipo del tema, incluido el Office oscuro y las opciones móviles.  <br/> |
 |[Colors](#colors-choose-theme-colors) <br/> |Personalice una combinación de colores especificando los colores de la barra de navegación, el acento, el texto y el icono. <br/> |
 
 ## <a name="general-modify-a-theme"></a>General: Modificar un tema
@@ -72,7 +72,7 @@ Puede crear hasta cuatro temas de grupo adicionales.
 
 1. En la **página General,** escriba un nombre para el tema.
 
-2. En **Grupos,** puede seleccionar hasta 5 grupos de Microsoft 365 que puedan ver el tema de grupo, en lugar de usar el tema predeterminado. También puede impedir que los usuarios invaliden su tema y muestren el nombre para mostrar del usuario.
+2. En **Grupos,** puede seleccionar hasta 5 grupos Microsoft 365 que puedan ver el tema de grupo, en lugar de usar el tema predeterminado. También puede impedir que los usuarios invaliden su tema y muestren el nombre para mostrar del usuario.
 
 3. Seleccione **Guardar**.
 
@@ -83,7 +83,7 @@ Puede crear hasta cuatro temas de grupo adicionales.
 En la **página Logotipos,** puede agregar los logotipos y especificar la dirección URL a la que navegarán los usuarios cuando seleccionen el logotipo.
 
 - **Logotipo predeterminado:** agregue una ubicación URL que apunta al logotipo. Asegúrese de que la dirección URL usa HTTPS y de que la imagen tiene al menos 200 x 30 píxeles. El logotipo predeterminado puede estar en formato JPG, PNG, GIF o SVG.
-- **Logotipo alternativo:** agregue una ubicación URL que apunta al logotipo. El logotipo alternativo debe optimizarse para su uso en temas oscuros de Office. Los mismos requisitos que el logotipo predeterminado.
+- **Logotipo alternativo:** agregue una ubicación URL que apunta al logotipo. El logotipo alternativo debe optimizarse para su uso en Office temas oscuros. Los mismos requisitos que el logotipo predeterminado.
 - **Logotipo predeterminado pequeño:** agregue una ubicación URL que apunta al logotipo. La imagen debe tener al menos 48 x 48 píxeles. Puedes escalar esta imagen para que se ajuste a dispositivos más pequeños o móviles.
 - **Logotipo alternativo pequeño:** agregue una ubicación URL que apunta al logotipo. Esta imagen tiene los mismos requisitos que el logotipo predeterminado pequeño.
 - **Vínculo Al hacer clic:** agregue una ubicación URL que apunta al logotipo. Puede usar el logotipo como un vínculo a cualquier recurso de la compañía, por ejemplo, el sitio web de su empresa.
@@ -103,17 +103,17 @@ En la **página Colores,** puede establecer los colores predeterminados y elegir
 
 - **Color de la barra de** navegación: seleccione un color que se usará para el fondo de la barra de navegación. La barra de navegación aparece en la parte superior de cada página.
 - **Color de texto e icono:** seleccione un color que se usará para el texto y los iconos de la barra de navegación superior.
-- **Color de** énfeño: elija uno que se muestre bien en un fondo blanco o claro. El color de énfal se usa para colorear algunos vínculos y botones que se muestran en un fondo blanco o claro. Por ejemplo, el color de énfal se usa para colorear elementos en la bandeja de entrada de un usuario y en su página Office.com portal.
+- **Color de** énfeño: elija uno que se muestre bien en un fondo blanco o claro. El color de énfal se usa para colorear algunos vínculos y botones que se muestran en un fondo blanco o claro. Por ejemplo, el color de énfal se usa para colorear elementos en la bandeja de entrada de un usuario y en su página del portal Office.com.
 - **Restablecer color:** seleccione este vínculo para restablecer los colores a los colores predeterminados.
 - **¿Qué logotipo se debe usar?**: Seleccione los logotipos predeterminados o cualquier otro logotipo que haya creado usted mismo.
 
 :::image type="content" source="../../media/default-theme-colors.png" alt-text="Captura de pantalla: pestaña Colores que muestra los colores predeterminados del tema para su organización":::
 
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Mi organización ya tiene un tema para todos los empleados. ¿Cómo cambiará esto?
 
-El tema predeterminado seguirá mostrárselo a todos los empleados.Agregar un nuevo tema de grupo solo estará disponible para los grupos de Microsoft 365 asociados con ese tema.
+El tema predeterminado seguirá mostrárselo a todos los empleados.Agregar un nuevo tema de grupo solo estará disponible para los grupos Microsoft 365 asociados con ese tema.
 
 ### <a name="whydont-isee-group-themes-in-the-admin-center"></a>¿Por qué no veo temas de grupo en el Centro de administración?
 
@@ -123,16 +123,16 @@ Solo los administradores globales pueden personalizar los temas de la compañía
 
 Se pueden crear hasta cinco temas. Un tema predeterminado y cuatro temas de grupo.  
 
-### <a name="can-i-use-security-groups-or-distribution-groups-instead-of-microsoft-365-groups"></a>¿Puedo usar grupos de seguridad o grupos de distribución en lugar de grupos de Microsoft 365?
+### <a name="can-i-use-security-groups-or-distribution-groups-instead-of-microsoft-365-groups"></a>¿Puedo usar grupos de seguridad o grupos de distribución en lugar de Microsoft 365 grupos?
 
-No, los nuevos temas de grupo deben asignarse a uno o más grupos de Microsoft 365 y no a grupos de seguridad o grupos de distribución.
+No, los nuevos temas de grupo deben asignarse a uno o más grupos Microsoft 365 y no a grupos de seguridad o de distribución.
 
 > [!NOTE]
-> Puede convertir grupos [de distribución a grupos de Microsoft 365](../manage/upgrade-distribution-lists.md) en Outlook.
+> Puede convertir grupos [de distribución en Microsoft 365 en](../manage/upgrade-distribution-lists.md) Outlook.
 
-### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>¿Puedo asignar manualmente un tema independiente de Grupos de Microsoft 365?  
+### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>¿Puedo asignar manualmente un tema independiente de Microsoft 365 grupos?  
 
-No, los nuevos temas de grupo deben asignarse a uno o más grupos de Microsoft 365. Los usuarios que sean miembros del grupo de Microsoft 365 recibirán el tema aplicado a su grupo. Puede crear y agregar nuevos miembros a un grupo [de Microsoft 365](../create-groups/create-groups.md) yendo a Grupos **de**   >  **configuración** en el Centro de administración.
+No, los nuevos temas de grupo deben asignarse a uno o más Microsoft 365 grupos. Los usuarios que son miembros del grupo Microsoft 365 recibirán el tema aplicado a su grupo. Puede crear [y agregar nuevos miembros a](../create-groups/create-groups.md) un grupo de Microsoft 365 si va a los grupos **Configuración**   >  **en** el Centro de administración.
 
 ### <a name="what-happens-if-a-user-is-assigned-to-multiple-group-themes"></a>¿Qué sucede si un usuario está asignado a varios temas de grupo?  
 
@@ -144,18 +144,18 @@ El tema predeterminado solo se puede eliminar una vez que se eliminen todos los 
 
 ### <a name="why-am-i-receiving-an-error-message-every-time-i-uploadalogo-url"></a>Por qué recibo un mensaje de error cada vez que subo una dirección URL de logotipo.  
 
-Asegúrese de que el logotipo que está usando se especifica como una dirección URL direccionable públicamente. Siga estos pasos para [cargar logotipos en Azure Blob Storage](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) o en la Red de entrega de contenido de Office [365 con SharePoint Online](../../enterprise/use-microsoft-365-cdn-with-spo.md).
+Asegúrese de que el logotipo que está usando se especifica como una dirección URL direccionable públicamente. Siga estos pasos para [cargar logotipos en Azure Blob Storage](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) o el Office 365 Content Delivery Network con SharePoint [Online](../../enterprise/use-microsoft-365-cdn-with-spo.md).
 
 ### <a name="why-am-i-receiving-themessagedoesnt-meet-minimum-color-contrast-ratio-of-451"></a>¿Por qué recibo el mensaje "No cumple la relación de contraste de color mínima de 4,5:1"?
 
 La relación de contraste recomendada entre el texto, el icono o el color del botón y el color de fondo es 4.5:1. Puedes invalidar esta recomendación y guardar el tema, ya que no es un requisito.
 
-### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Si definio un tema, ¿qué lugares de Microsoft 365 se usarán?
+### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Si definio un tema, ¿qué lugares Microsoft 365 se usará?
 
-Cualquier tema aparecerá en la barra de navegación superior para todos los usuarios de la organización como parte del encabezado del conjunto de aplicaciones de Microsoft 365.  
+Cualquier tema aparecerá en la barra de navegación superior para todos los usuarios de la organización como parte del encabezado Microsoft 365 conjunto de elementos.  
   
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Agregar iconos personalizados a la página Mis aplicaciones y al iniciador de aplicaciones](../manage/customize-the-app-launcher.md)
+[Agregar iconos personalizados a la página Mis aplicaciones y al iniciador de aplicaciones](../manage/customize-the-app-launcher.md) (artículo)
 
-[Información general de los grupos de Microsoft 365 para administradores](https://docs.microsoft.com/microsoft-365/admin/create-groups/office-365-groups)
+[Información general sobre Microsoft 365 grupos de servidores para administradores](../create-groups/office-365-groups.md) (artículo)

@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: Obtenga información general sobre el Microsoft 365 de mensajes y su rol en la administración de cambios.
-ms.openlocfilehash: 01e43eb6fa9502c138bfc9ab3595c47ec33ad098
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Obtenga información general sobre el Microsoft 365 de mensajes y su rol en el seguimiento de características nuevas y modificadas y otros anuncios importantes.
+ms.openlocfilehash: edef3bb5a9016cf6f65f307fcd7c706bf4424d2f
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537528"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593962"
 ---
 # <a name="message-center"></a>Centro de mensajes
 
@@ -58,7 +58,7 @@ También puedes usar la aplicación [Microsoft 365 administración](https://go.m
 Para cancelar la suscripción a los correos electrónicos del Centro de mensajes, consulte Cancelar la suscripción a los correos [electrónicos del Centro](#unsubscribe-from-message-center-emails) de mensajes en este artículo.
 
   
-## <a name="frequently-asked-questions"></a>Preguntas frecuentes
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 |**Pregunta**|**Respuesta**|
 |:-----|:-----|

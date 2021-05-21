@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 725e6226a56b3aae3670cde18969afdda1ec1940
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9cb3cc67c3992773897ea8178f261d25dcd87da0
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530843"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594160"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Administrar incidentes en Microsoft 365 Defender
 
@@ -47,7 +47,7 @@ Estas son las formas en que puede administrar sus incidentes:
 
 - [Editar el nombre del incidente](#edit-the-incident-name)
 - [Agregar etiquetas de incidente](#add-incident-tags)
-- [Asignar el incidente a una cuenta de usuario](#assign-incidents)
+- [Asignar el incidente a usted mismo](#assign-incidents)
 - [Resolverlos](#resolve-an-incident)
 - [Establecer su clasificación y determinación](#set-the-classification-and-determination)
 - [Agregar comentarios](#add-comments)
@@ -80,7 +80,15 @@ Al empezar a escribir, tiene la opción de seleccionar de una lista de etiquetas
 
 ## <a name="assign-incidents"></a>Asignar incidentes
 
-Si aún no se ha asignado un incidente, puede seleccionar **Asignar a** y especificar la cuenta de usuario. Al hacerlo, se asigna la propiedad del incidente y todas las alertas asociadas con él.
+Para asignar un incidente, seleccione **Asignarme**. Al hacerlo, se asigna la propiedad del incidente y todas las alertas asociadas a ella a su cuenta de usuario.
+
+Puede obtener una lista de incidentes asignados filtrando la cola de incidentes. 
+
+1. En la cola de incidentes, seleccione **Filtros**.
+2. en la **sección Asignación de** incidentes, desactive **Seleccionar todo** y seleccione Asignado **a mí**.
+3. Seleccione **Aplicar** y, a continuación, cierre el **panel** Filtros.
+
+A continuación, puede guardar la dirección URL resultante en el explorador como marcador para ver rápidamente la lista de incidentes asignados.
 
 ## <a name="resolve-an-incident"></a>Resolver un incidente
 

@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Obtenga información sobre cómo comprobar la propiedad del dominio y el correo electrónico para asumir un inquilino no administrado en Microsoft 365
-ms.openlocfilehash: 72278fd0e373848a79f9823e186b19bc1cb47770
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Obtenga información sobre cómo comprobar la propiedad del dominio y el correo electrónico para asumir un inquilino no administrado creado por un registro de usuario de autoservicio en Microsoft 365.
+ms.openlocfilehash: c37bf153edf39f53b5c10f020b0cbb8d630eb4a6
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914851"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593938"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Realizar una toma de administración interna
 
@@ -39,9 +39,9 @@ Si es un administrador y desea asumir un inquilino no administrado creado por un
 ## <a name="step-1-verify-your-email-address"></a>Paso 1: Comprobar la dirección de correo electrónico
 
 > [!NOTE]
-> Si el autoservicio está habilitado en el inquilino, los usuarios pueden suscribirse a servicios gratuitos, como Power BI, por su cuenta. Estos pasos suponen que una suscripción de usuario de autoservicio ha creado el inquilino no administrado que desea asumir como administrador. En el primer paso se crea un contexto de usuario en el inquilino no administrado, con Power BI para ilustrar la ruta de acceso de adquisición de administrador.
+> Si el autoservicio está habilitado en el inquilino, los usuarios pueden suscribirse a servicios gratuitos, como Power BI, por su cuenta. Estos pasos suponen que una suscripción de usuario de autoservicio ha creado el inquilino no administrado que desea asumir como administrador. En el primer paso, se crea un contexto de usuario en el inquilino no administrado, mediante Power BI para ilustrar la ruta de acceso de toma de posesión de administrador.
 
-1. Para registrarse en Power BI, vaya al sitio de [Power BI](https://powerbi.com) y seleccione **Iniciar** prueba gratuita de inicio gratuito (en Cuadro Compartir con Power  >   BI Pro). 
+1. Para registrarse en Power BI, vaya al [](https://powerbi.com) sitio Power BI y seleccione Iniciar prueba gratuita de inicio  >   gratuito (en Compartir con Power BI Pro). 
 
 2. Registrarse con una cuenta de usuario que use el nombre de dominio de su organización (como `powerbiadmin@contoso.com` ). Si tu cuenta ya está en uso, inicia sesión con la contraseña actual.
 
@@ -66,12 +66,12 @@ Si es un administrador y desea asumir un inquilino no administrado creado por un
 > [!NOTE]
 > La toma del espacio empresarial de instantáneas no afectará a ninguna información o servicios existentes. Sin embargo, si algún usuario del dominio se ha registrado en los servicios que requieren una licencia, se le pedirá que compre licencias para ellos como parte de la toma del rol de administrador. Puede comprar o quitar licencias una vez finalizado el proceso de configuración de administración.
   
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-YouTube: 3 pasos para realizar una toma de administración de [TI para Power BI y Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
+YouTube: [3 pasos para realizar una](https://www.youtube.com/watch?v=xt5EsrQBZZk) toma de administración de TI para Power BI y Microsoft 365 (vídeo)
 
-[Toma de posesión de administradores en Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover)
+[Toma de posesión de administradores en Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (artículo)
 
-[Uso del registro de autoservicio en su organización](self-service-sign-up.md)
+[Uso del registro de autoservicio en su organización](self-service-sign-up.md) (artículo)
   
-[Descripción del rol de administrador de servicio de Power BI](/power-bi/service-admin-role)
+[Descripción de la Power BI de administrador de servicios (artículo)](/power-bi/service-admin-role)

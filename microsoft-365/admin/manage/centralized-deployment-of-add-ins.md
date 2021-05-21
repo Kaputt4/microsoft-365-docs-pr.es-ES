@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determine si el inquilino y los usuarios cumplen los requisitos, de modo que pueda usar la implementación centralizada para implementar Office complementos.
-ms.openlocfilehash: 482f2231c0c2c9fa30e863f25f474d90a22f52fa
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: e5d3337cdf1bbb0dc18ee6940ab8bd289d2e5f65
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464410"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593926"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinar si la implementación centralizada de complementos funciona para su organización
 
@@ -43,7 +43,7 @@ La implementación centralizada admite tres plataformas de escritorio Windows, M
 
 Un complemento puede tardar hasta 24 horas en aparecer para todos los usuarios.
   
-## <a name="requirements"></a>Requisitos
+## <a name="before-you-begin"></a>Antes de empezar
 
 La implementación centralizada de complementos requiere que los usuarios usen SKU de Microsoft 365 Enterprise: E3/E5/F3 o SKU empresariales: Business Basic, Business Standard, Business Premium (y han iniciado sesión en Office con su identificador de organización) y tienen buzones de Exchange Online y Exchange Online activos. El directorio de suscripción debe estar en o federado para Azure Active Directory.
 Puede ver requisitos específicos para Office y Exchange a continuación, o usar el Control de compatibilidad de implementación [centralizada](#centralized-deployment-compatibility-checker).

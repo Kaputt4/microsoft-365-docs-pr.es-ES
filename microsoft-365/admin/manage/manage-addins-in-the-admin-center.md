@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Obtenga información sobre el uso de complementos centralizados para implementar complementos para usuarios y grupos de la organización.
-ms.openlocfilehash: 76bfa6272ec784518f045a50299fc7cda719eec8
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: c103cfc4e3e7b404ea4d31d81bc30d7990a922dc
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327203"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593974"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Administrar complementos en el centro de administración
 
@@ -155,14 +155,14 @@ Si el complemento implementado no admite comandos de complemento o si desea ver 
   
 2. Seleccione **Gestionado por el administrador** en la barra de navegación izquierda. 
 
-## <a name="learn-more"></a>Más información
+## <a name="related-content"></a>Contenido relacionado
 
-[Implementar complementos en el centro de administración](./manage-deployment-of-add-ins.md)
+[Implementar complementos en el Centro de administración](./manage-deployment-of-add-ins.md) (artículo)
 
-Obtenga más información sobre la creación y generación de [complementos de Office](/office/dev/add-ins/overview/office-add-ins).
+Más información sobre cómo crear [y crear Office complementos](/office/dev/add-ins/overview/office-add-ins) (artículo)
   
-[Use cmdlets de PowerShell de implementación centralizada para administrar complementos.](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md)
+[Usar cmdlets de PowerShell de implementación centralizada para administrar complementos](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (artículo)
   
-[Solución de problemas: el usuario no ve complementos](/office365/troubleshoot/access-management/user-not-seeing-add-ins)
+[Solución de problemas: el usuario no ve complementos](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (artículo)
 
-[Menores y la adquisición de complementos de la Microsoft Store](./minors-and-acquiring-addins-from-the-store.md)
+[Menores y la adquisición de complementos](./minors-and-acquiring-addins-from-the-store.md) de la Microsoft Store (artículo)
