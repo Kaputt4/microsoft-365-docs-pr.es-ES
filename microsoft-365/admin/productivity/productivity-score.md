@@ -18,13 +18,13 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-description: Información general de Puntuación de productividad de Microsoft
-ms.openlocfilehash: 1d5e163e6ec8a394065c09e51879582d101a75bf
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+description: Obtenga información sobre cómo la Puntuación de productividad de Microsoft refleja los resultados en cuanto a las experiencias de los usuarios y la tecnología. Estos resultados se comparan con los de otras organizaciones de tamaño similar.
+ms.openlocfilehash: ded8b3ee6cbe6df308a4e7388107ea394debe020
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345243"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593846"
 ---
 # <a name="microsoft-productivity-score"></a>Puntuación de productividad de Microsoft 
 
@@ -44,35 +44,9 @@ Proporcionamos métricas, información y recomendaciones en dos áreas:
 
 - **Experiencias tecnológicas:** la organización depende de una tecnología confiable y de buen rendimiento, así como del uso eficiente de Microsoft 365. [El Análisis de punto de conexión](https://aka.ms/endpointanalytics) le ayuda a comprender cómo los problemas de rendimiento y estado del software y el hardware pueden afectar a la organización. El estado de las aplicaciones de Microsoft 365 le ayuda a comprender si los dispositivos de su organización ejecutan las aplicaciones de Microsoft 365 en canales recomendados.
 
+## <a name="before-you-begin"></a>Antes de empezar
+
 Consulte [Qué es el Análisis de punto de conexión](/mem/analytics/overview) para obtener una descripción general y los detalles de los requisitos previos. Para más información sobre la información de conectividad de red de Microsoft 365, consulte [la descripción general de la conectividad de red](../../enterprise/microsoft-365-networking-overview.md).
-  
-
-## <a name="how-the-score-is-calculated"></a>Cómo se calcula la puntuación
-
-La Puntuación de productividad se basa en los resultados combinados de las categorías de personas y tecnología. Cada categoría se pondera de forma equitativa, con un total de 100 puntos. La máxima Puntuación de productividad posible es 800.
-
-### <a name="score-categories"></a>Categorías de puntuación 
-
-- Comunicación (100 puntos)
-- Reuniones (100 puntos)
-- Colaboración de contenido (100 puntos)
-- Trabajo en equipo (100 puntos)
-- Movilidad (100 puntos)
-- Análisis de punto de conexión (100 puntos)
-- Conectividad de red (100 puntos)
-- Estado de las Aplicaciones de Microsoft 365 (100 puntos)
-- **Total posible = 800 puntos**
- 
-En cada categoría de puntuación, cuantificamos los indicadores clave de cómo su organización usa Microsoft 365 en su camino hacia la transformación digital. Ofrecemos una vista de las actividades clave de 28 días y de 180 días. También proporcionamos métricas de apoyo que no forman parte del cálculo de la puntuación, pero son importantes para ayudarle a identificar las configuraciones y estadísticas de uso subyacentes que puede abordar.
-
-### <a name="products-included-in-productivity-score"></a>Productos incluidos en la Puntuación de productividad 
-
-La Puntuación de productividad incluye datos de Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer y Skype.
-
-La puntuación de su organización se actualiza todos los días y refleja las acciones de usuarios completadas en los últimos 28 días (incluido el día actual).
-
-
-## <a name="prerequisites"></a>Requisitos previos 
 
 Para los datos de experiencias de personas, necesitará una suscripción a Microsoft 365 para empresas u Office 365 para empresas. Para los datos de análisis de punto de conexión de su espacio empresarial, necesita agregar Microsoft Intune a la suscripción. Intune ayuda a proteger los datos de su organización mediante la administración de dispositivos y aplicaciones. Cuando tenga Intune, puede activar el análisis de punto de conexión en la experiencia de Intune. Para más información sobre Microsoft Intune, consulte la [documentación de Microsoft Intune](/mem/intune/). 
 
@@ -98,6 +72,30 @@ El modelo de control de acceso basado en roles para la Puntuación de productivi
 Microsoft se compromete a proteger la privacidad individual. Este [documento de privacidad](privacy.md)  explica los controles que le proporcionamos, como administrador de TI de su organización, con el fin de asegurar que la información se pueda accionar sin comprometer la confianza que ha depositado en Microsoft.
 
 Puede acceder a la experiencia desde la página principal de Administración de Microsoft 365, en **Informes** > **Puntuación de productividad**.
+  
+## <a name="how-the-score-is-calculated"></a>Cómo se calcula la puntuación
+
+La Puntuación de productividad se basa en los resultados combinados de las categorías de personas y tecnología. Cada categoría se pondera de forma equitativa, con un total de 100 puntos. La máxima Puntuación de productividad posible es 800.
+
+### <a name="score-categories"></a>Categorías de puntuación 
+
+- Comunicación (100 puntos)
+- Reuniones (100 puntos)
+- Colaboración de contenido (100 puntos)
+- Trabajo en equipo (100 puntos)
+- Movilidad (100 puntos)
+- Análisis de punto de conexión (100 puntos)
+- Conectividad de red (100 puntos)
+- Estado de las Aplicaciones de Microsoft 365 (100 puntos)
+- **Total posible = 800 puntos**
+ 
+En cada categoría de puntuación, cuantificamos los indicadores clave de cómo su organización usa Microsoft 365 en su camino hacia la transformación digital. Ofrecemos una vista de las actividades clave de 28 días y de 180 días. También proporcionamos métricas de apoyo que no forman parte del cálculo de la puntuación, pero son importantes para ayudarle a identificar las configuraciones y estadísticas de uso subyacentes que puede abordar.
+
+### <a name="products-included-in-productivity-score"></a>Productos incluidos en la Puntuación de productividad 
+
+La Puntuación de productividad incluye datos de Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer y Skype.
+
+La puntuación de su organización se actualiza todos los días y refleja las acciones de usuarios completadas en los últimos 28 días (incluido el día actual).
 
 ## <a name="interpreting-your-organizations-productivity-score"></a>Interpretar la Puntuación de productividad de su organización 
 
@@ -161,6 +159,6 @@ Comparta su opinión sobre la Puntuación de productividad y sus ideas sobre có
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Supervisar la actividad de Microsoft 365 mediante informes](/microsoft-365/admin/activity-reports/activity-reports) (artículo)\
-[Habilitar análisis de uso de Microsoft 365](/microsoft-365/admin/usage-analytics/enable-usage-analytics) (artículo)\
-[Información general del Centro de administración de Microsoft 365](/microsoft-365/business-video/admin-center-overview) (vídeo)
+[Supervisar la actividad de Microsoft 365 mediante informes](../../admin/activity-reports/activity-reports.md) (artículo)\
+[Habilitar análisis de uso de Microsoft 365](../../admin/usage-analytics/enable-usage-analytics.md) (artículo)\
+[Información general del Centro de administración de Microsoft 365](../../business-video/admin-center-overview.md) (vídeo)

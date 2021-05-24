@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Obtenga información sobre cómo implementar equipos con la protección de datos con un nivel de confidencialidad alto.
-ms.openlocfilehash: d83c10df50d02f47a6d70ee80b2ddbf89fff37d0
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7c5485a008434b351eebbec3ea1f20b10d82278a
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538200"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583693"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configuración de equipos con protección de datos con un nivel de confidencialidad alto
 
@@ -41,7 +41,7 @@ El nivel de confidencialidad alto ofrece las siguientes protecciones adicionales
 
 ## <a name="guest-sharing"></a>Uso compartido de invitados
 
-Según la naturaleza de su empresa, es posible que quiera habilitar o no el uso compartido de invitados para equipos que contienen datos con un nivel de confidencialidad alto. Si tiene previsto colaborar con personas ajenas a su organización en el equipo, le recomendamos que habilite el uso compartido de invitados. Microsoft 365 incluye una variedad de características de seguridad y cumplimiento para ayudarle a compartir contenido confidencial de forma segura. Por lo general, se trata de una opción más segura que enviar correo directamente a las personas de fuera de su organización.
+Según la naturaleza de su empresa, es posible que quiera habilitar o no el uso compartido de invitados para equipos que contienen datos con un nivel de confidencialidad alto. Si tiene previsto colaborar con personas ajenas a su organización en el equipo, le recomendamos que habilite el uso compartido de invitados. Microsoft 365 incluye una variedad de características de seguridad y cumplimiento para ayudarle a compartir contenido confidencial de forma segura. Por lo general, se trata de una opción más segura que enviar correo directamente a las personas de fuera de su organización.
 
 Para más información sobre el uso compartido de invitados de forma segura, vea los recursos siguientes:
 
@@ -61,7 +61,7 @@ Si ya tiene las etiquetas de confidencialidad implementadas en la organización,
 Cuando haya habilitado las etiquetas de confidencialidad para Teams, el siguiente paso es crear la etiqueta.
 
 Crear una etiqueta de confidencialidad
-1. Abra el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
+1. Abra el [Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com).
 2. En **Soluciones**, haga clic en **Protección de la información**.
 3. Haga clic en **Crear una etiqueta**.
 4. Asigne un nombre a la etiqueta. Le sugerimos **Confidencialidad alta**, pero puede elegir otro nombre si ya está en uso.
@@ -115,31 +115,19 @@ También puede usar [Directivas de equipos](/MicrosoftTeams/teams-policies) para
 
 Cada vez que cree un nuevo equipo con la etiqueta de confidencialidad alta, debe realizar dos pasos en SharePoint:
 
-- Actualice la configuración de uso compartido de invitado para el sitio en el Centro de administración de SharePoint para que coincida con lo que ha elegido al crear la etiqueta, y actualice el vínculo para compartir predeterminado a *Usuarios con acceso existente*.
+- Actualice la configuración de uso compartido de invitado para el sitio en el Centro de administración de SharePoint para que actualizar el vínculo de uso compartido predeterminado para *Usuarios con acceso existente*.
 - Actualice la configuración de uso compartido del sitio en el propio sitio para evitar que los miembros compartan los archivos, las carpetas o el sitio, y desactivar las solicitudes de acceso.
 
-### <a name="site-guest-sharing-settings"></a>Configuración de uso compartido de invitado del sitio
+### <a name="site-default-sharing-link-settings"></a>Configuración del vínculo para compartir predeterminado del sitio
 
-La configuración de uso compartido de invitado que eligió al crear la etiqueta (que solo afecta a la pertenencia al equipo) debe coincidir con la configuración de uso compartido de invitados para el sitio de SharePoint asociado de la siguiente manera:
+Para actualizar el tipo de vínculo para compartir predeterminado del sitio
 
-|Configuración de etiqueta|Configuración del sitio de SharePoint|
-|:------------|:----------------------|
-|**Permitir que los propietarios de grupos de Ofﬁce 365 agreguen a usuarios ajenos a la organización a los grupos** seleccionado|**Invitados nuevos y existentes** (predeterminado para equipos nuevos)|
-|**Permitir que los propietarios de grupos de Ofﬁce 365 agreguen a usuarios ajenos a la organización a los grupos** no seleccionado|**Solo personas de la organización**|
-
-Para actualizar la configuración del sitio
 1. Abra el [Centro de administración de SharePoint](https://admin.microsoft.com/sharepoint).
 2. En **Sitios**, haga clic en **Sitios activos**.
 3. Haga clic en el sitio que está asociado al equipo.
 4. En **Uso compartido externo** de la pestaña **Directivas**, haga clic en **Editar**.
-5. Si permitió el uso compartido de invitados al crear la etiqueta Confidencialidad alta, asegúrese de que **Invitados nuevos y existentes** está seleccionado. Si no ha permitió el uso compartido cuando creó la etiqueta, elija **Solo las personas de la organización**.
-6. En Tipo de vínculo de uso compartido predeterminado, desactive la casilla de verificación **Igual que la configuración de nivel de organización** y seleccione **Usuarios con acceso existente**.
-7. Haga clic en **Guardar**.
-
-Si quiere realizar scripts como parte del proceso de creación de su equipo, puede usar [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) con los parámetros siguientes:
-
-- `-SharingCapability Disabled` para desactivar el uso compartido de invitados (está activado de forma predeterminada)
-- `-DefaultSharingLinkType Internal` para cambiar el vínculo para compartir predeterminado a *Usuarios específicos*
+5. En Tipo de vínculo de uso compartido predeterminado, desactive la casilla de verificación **Igual que la configuración de nivel de organización** y seleccione **Usuarios con acceso existente**.
+6. Haga clic en **Guardar**.
 
 #### <a name="private-channels"></a>Canales privados
 

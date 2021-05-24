@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Supervise y administre la eliminación de contenido, cuando usa una revisión para eliminación o los elementos marcados como registros se eliminan automáticamente de acuerdo con la configuración que haya establecido.
-ms.openlocfilehash: 3c5d178b4eab267759506dcd86d66fb2bf4d93ee
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 99ab789b99385af9ad2677995606d21ece54705c
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583477"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594078"
 ---
 # <a name="disposition-of-content"></a>Eliminación de contenido
 
@@ -30,7 +30,7 @@ ms.locfileid: "52583477"
 Use la página **Eliminación** de **Administración de registros** en el Centro de cumplimiento de Microsoft 365 para administrar las revisiones de eliminación y ver los metadatos de los [registros](records-management.md#records) que se hayan eliminado automáticamente al final de su período de retención.
 
 > [!NOTE]
-> Implementando en versión preliminar: **revisión para eliminación de varias etapas**
+> Versión preliminar: **revisión para eliminación de varias etapas**
 > 
 > Ahora un administrador puede agregar hasta cinco fases consecutivas de revisión para eliminación en una etiqueta de retención y los revisores pueden agregar a otros usuarios a su fase de revisión para eliminación. También puede personalizar las notificaciones por correo electrónico y los avisos. En las siguientes secciones se ofrece más información sobre los cambios en esta versión preliminar.
 >

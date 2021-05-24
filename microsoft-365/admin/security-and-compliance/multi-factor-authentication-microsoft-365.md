@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
-description: Obtenga información sobre la autenticación multifactor en Microsoft 365.
-ms.openlocfilehash: 080251efa7d7d3bda6ad89e95960e43dd38d076d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: La autenticación multifactor (MFA) usa una contraseña, que debe ser segura, y un método de comprobación adicional.
+ms.openlocfilehash: 84d26d0a9908e51ce734e71961d4643a2df3471b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050671"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623694"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Autenticación multifactor para Microsoft 365
 
@@ -43,32 +43,32 @@ El método de comprobación adicional no se emplea hasta después de comprobar l
 
 ## <a name="mfa-support-in-microsoft-365"></a>Compatibilidad con MFA en Microsoft 365
 
-De forma predeterminada, Microsoft 365 y Office 365 admiten MFA para cuentas de usuario que usan:
+De forma predeterminada, tanto Microsoft 365 como Office 365 mfa para cuentas de usuario que usan:
 
 - Un mensaje de texto enviado a un teléfono que requiere que el usuario escriba un código de verificación.
 - Una llamada telefónica.
-- La aplicación de teléfono inteligente Microsoft Authenticator.
+- La Microsoft Authenticator de teléfono inteligente.
 
-En ambos casos, el inicio de sesión de MFA usa el método "algo que tienes contigo que no se duplica fácilmente" para la comprobación adicional. Existen varias formas de habilitar MFA para Microsoft 365 y Office 365:
+En ambos casos, el inicio de sesión de MFA usa el método "algo que tienes contigo que no se duplica fácilmente" para la comprobación adicional. Hay varias maneras de habilitar MFA para Microsoft 365 y Office 365:
 
 - Con valores predeterminados de seguridad
 - Con directivas de acceso condicional
 - Para cada cuenta de usuario individual (no recomendada)
 
-Estas formas se basan en el plan de Microsoft 365.
+Estas formas se basan en su Microsoft 365 plan.
 
 |Plan|Recomendación|Tipo de cliente|
 |---|---|---|
-|Todos los planes de Microsoft 365|Use valores predeterminados de seguridad, que requieren MFA para todas las cuentas de usuario. <p> También puede configurar MFA por usuario en cuentas de usuario individuales, pero esto no se recomienda.|Empresa pequeña|
-|Microsoft 365 Empresa Premium <p> Microsoft 365 E3 <p> Licencias de Azure Active Directory (Azure AD) Premium P1|Use directivas de acceso condicional para requerir MFA para cuentas de usuario basadas en la pertenencia a grupos, aplicaciones u otros criterios.|Pequeña empresa a empresa|
-|Microsoft 365 E5 <p> Licencias de Azure AD Premium P2|Use Azure AD Identity Protection para requerir MFA en función de los criterios de riesgo de inicio de sesión.|Empresas|
+|Todos Microsoft 365 planes|Use valores predeterminados de seguridad, que requieren MFA para todas las cuentas de usuario. <p> También puede configurar MFA por usuario en cuentas de usuario individuales, pero esto no se recomienda.|Empresa pequeña|
+|Microsoft 365 Empresa Premium <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) Premium licencias P1|Use directivas de acceso condicional para requerir MFA para cuentas de usuario basadas en la pertenencia a grupos, aplicaciones u otros criterios.|Pequeña empresa a empresa|
+|Microsoft 365 E5 <p> Licencias Premium P2 de Azure AD|Use Azure AD Identity Protection para requerir MFA en función de los criterios de riesgo de inicio de sesión.|Empresa|
 ||||
 
 ### <a name="security-defaults"></a>Valores predeterminados de seguridad
 
 Los valores predeterminados de seguridad son una nueva característica para las suscripciones pago o de prueba de Microsoft 365 y Office 365 creadas después del 21 de octubre de 2019. Estas suscripciones tienen activados los valores predeterminados de seguridad, que:
 
-- Requiere que todos los usuarios usen MFA con la aplicación Microsoft Authenticator.
+- Requiere que todos los usuarios usen MFA con la Microsoft Authenticator aplicación.
 - Bloquea la autenticación heredada.
 
 Los usuarios tienen 14 días para registrarse en MFA con la aplicación Microsoft Authenticator desde sus teléfonos inteligentes, que comienzan a contar desde la primera vez que inician sesión después de que se hayan habilitado los valores predeterminados de seguridad. Transcurridos 14 días, el usuario no podrá iniciar sesión hasta que el registro de MFA se haya completado.
@@ -79,7 +79,7 @@ Los valores predeterminados de seguridad se habilitan o deshabilitan en el panel
 
 ![Imagen de la página Propiedades del directorio.](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
-Puede usar valores predeterminados de seguridad con cualquier plan de Microsoft 365.
+Puede usar valores predeterminados de seguridad con cualquier Microsoft 365 plan.
 
 Para más información, vea esta [información general de los valores predeterminados de seguridad](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
@@ -103,7 +103,7 @@ Puede usar directivas de acceso condicional con:
 - Microsoft 365 E3 y E5
 - Licencias de Azure AD Premium P1 y Azure AD Premium P2
 
-Para las pequeñas empresas con Microsoft 365 Empresa Premium, puede usar fácilmente directivas de acceso condicional con los siguientes pasos:
+Para pequeñas empresas con Microsoft 365 Empresa Premium, puede usar fácilmente directivas de acceso condicional con los siguientes pasos:
 
 1. Cree un grupo para contener las cuentas de usuario que requieren MFA.
 2. Habilite la **directiva Requerir MFA para administradores** globales.
@@ -127,12 +127,12 @@ Para más información, vea esta [información general sobre el acceso condicion
 
 ### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-Con Azure AD Identity Protection, puede crear una directiva de acceso condicional adicional para requerir MFA cuando el riesgo de inicio de sesión [es medio o alto.](../../security/defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)
+Con Azure AD Identity Protection, puede crear una directiva de acceso condicional adicional para requerir MFA cuando el riesgo de inicio de sesión [es medio o alto.](../../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)
 
 Puede usar Azure AD Identity Protection y directivas de acceso condicional basadas en riesgos con:
 
 - Microsoft 365 E5
-- Licencias de Azure AD Premium P2
+- Licencias Premium P2 de Azure AD
 
 Para más información, vea esta [información general sobre la protección de identidad de Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
@@ -140,7 +140,7 @@ Para más información, vea esta [información general sobre la protección de i
 
 Debe usar los valores predeterminados de seguridad o las directivas de acceso condicional para requerir MFA para los inicios de sesión de la cuenta de usuario. Sin embargo, si cualquiera de estos no se puede usar, Microsoft recomienda encarecidamente MFA para cuentas de usuario que tienen roles de administrador, especialmente el rol de administrador global, para cualquier suscripción de tamaño.
 
-Puede habilitar MFA para cuentas de usuario individuales desde el **panel usuario** activo del Centro de administración de Microsoft 365.
+Puede habilitar MFA para cuentas de usuario individuales desde el **panel usuario** activo del centro Microsoft 365 administración.
 
 ![Imagen de la opción de autenticación multifactor en la página Usuarios activos](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
@@ -168,14 +168,13 @@ En Azure Portal, puede:
 - Habilitar y deshabilitar valores predeterminados de seguridad
 - Configurar directivas de acceso condicional
 
-En el Centro de administración de Microsoft 365, puede configurar las opciones de MFA por usuario y servicio.
+En el centro Microsoft 365 administración, puede configurar la configuración de MFA por usuario y servicio.
 
 ## <a name="your-next-step"></a>El siguiente paso
 
 [Configurar MFA para Microsoft 365](set-up-multi-factor-authentication.md)
 
-## <a name="related-topics"></a>Temas relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Vídeo: Activar la autenticación multifactor](../../business-video/turn-on-mfa.md)
-
-[Vídeo: Activar la autenticación multifactor para su teléfono](../../business-video/set-up-mfa.md)
+[Activar la autenticación multifactor](../../business-video/turn-on-mfa.md) (vídeo)\
+[Activar la autenticación multifactor para su teléfono (Vídeo)](../../business-video/set-up-mfa.md)
