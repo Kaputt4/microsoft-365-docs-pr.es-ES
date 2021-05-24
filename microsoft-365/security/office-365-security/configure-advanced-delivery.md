@@ -17,12 +17,12 @@ ms.custom: ''
 description: Los administradores pueden aprender a usar la directiva de entrega avanzada en Exchange Online Protection (EOP) para identificar mensajes que no deben filtrarse en escenarios compatibles específicos (simulaciones de suplantación de identidad de terceros y mensajes entregados a buzones de operaciones de seguridad (SecOps).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8bebc094b56a20a43f92d1acf8d374110de43d71
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 0e4e230fdca7fe29fc1c7a1bc68085454ba883b9
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594126"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624794"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurar la entrega de simulaciones de suplantación de identidad de terceros a usuarios y mensajes sin filtrar a buzones de SecOps
 
@@ -107,6 +107,6 @@ Además de los dos escenarios con los que la directiva de entrega avanzada puede
 
 - **Filtros de terceros:** si el registro  MX de su dominio no apunta a Office 365 (los mensajes se enruta en otro lugar primero), [la](secure-by-default.md) seguridad de forma predeterminada no *está disponible*.
 
-  Para omitir el filtrado de Microsoft para los mensajes que ya han sido evaluados por el filtrado de terceros, use reglas de flujo de correo (también conocidas como reglas de transporte), vea Usar reglas de flujo de correo para establecer el [SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)en mensajes .
+  Para omitir el filtrado de Microsoft para los mensajes que ya han sido evaluados por el filtrado de terceros, use reglas de flujo de correo (también conocidas como reglas de transporte), vea Usar reglas de flujo de correo para establecer el [SCL](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md)en mensajes .
 
 - **Falsos positivos** en revisión: es posible que desee permitir temporalmente que determinados mensajes que Microsoft sigue analizando a través de [envíos](admin-submission.md) de administrador informen de mensajes buenos conocidos que se marcan incorrectamente como incorrectos para Microsoft (falsos positivos). Al igual que con todas las invalidaciones, se recomienda **_encarecidamente_** que estas asignaciones se puedan realizar temporalmente.

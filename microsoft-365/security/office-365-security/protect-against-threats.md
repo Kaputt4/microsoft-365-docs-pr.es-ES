@@ -20,12 +20,12 @@ description: Los administradores pueden obtener información sobre la protecció
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3381ce66433f1f4e32f0251c45601e3cb84865b6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 438200f3f8a6a846d49bc397d6a4b0a0a33cad40
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538728"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624626"
 ---
 # <a name="protect-against-threats"></a>Protección contra amenazas
 
@@ -41,7 +41,7 @@ Esta es una guía de inicio rápido que divide la configuración de Defender par
 > [!IMPORTANT]
 > **La configuración recomendada inicial se incluye para** cada tipo de directiva; sin embargo, hay muchas opciones disponibles y puede ajustar la configuración para satisfacer las necesidades de su organización específica. Espere aproximadamente 30 minutos para que las directivas o los cambios funcionen a través del centro de datos.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 ### <a name="subscriptions"></a>Suscripciones
 
@@ -188,7 +188,7 @@ Para configurar vínculos [Caja fuerte,](safe-links.md)revise y edite la configu
    - **No realizar un seguimiento cuando los usuarios hacen clic Caja fuerte vínculos:** desactive esta opción para realizar un seguimiento de los clics del usuario: ![ Desactivar ](../../media/scc-toggle-off.png) .
    - **No permitir que los usuarios hagan clic en vínculos seguros** a la dirección URL original: Compruebe que esta configuración está activada: ![ Activar ](../../media/scc-toggle-on.png) .
 
-   Cuando termine, haga clic en **Guardar**.
+   Cuando haya terminado, haga clic en **Guardar**.
 
 2. De nuevo en la página Caja fuerte vínculos principales, haga clic en **Crear**.
 
@@ -277,7 +277,7 @@ Además de configurar la protección contra malware, direcciones URL malintencio
 
 - Las acciones de correo no deseado se establecen **en Mover mensaje a carpeta correo no deseado** en directivas contra correo no [deseado.](anti-spam-protection.md)
 
-- Los usuarios han mantenido su configuración predeterminada de [correo](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)no deseado y no han desactivado la protección de correo no deseado.
+- Los usuarios han mantenido su configuración predeterminada de [correo](configure-junk-email-settings-on-exo-mailboxes.md)no deseado y no han desactivado la protección de correo no deseado.
 
 Para obtener más información, consulte [Zero-hour auto purge - protection against spam and malware](zero-hour-auto-purge.md).
 

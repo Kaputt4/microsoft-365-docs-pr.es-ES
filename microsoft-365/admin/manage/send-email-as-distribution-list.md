@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
-description: Obtenga información sobre cómo enviar correo electrónico como una lista de distribución en Microsoft 365.
-ms.openlocfilehash: bb1d5a62d2b1a3bbfae87849e8aa96cef14c173e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: Envíe correo electrónico como una lista de distribución en Microsoft 365 para que cuando un miembro responda a un mensaje parezca que es de la lista de distribución.
+ms.openlocfilehash: 01bff7e1d2515670c5a6faa199355e7de591f1fb
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332440"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624542"
 ---
 # <a name="send-email-as-a-distribution-list"></a>Enviar correo electrónico como una lista de distribución
 
 En Microsoft 365, puede enviar correo electrónico como una lista de distribución. Cuando una persona que es miembro de la lista de distribución responde a un mensaje enviado a la lista de distribución, el correo electrónico parece ser de la lista de distribución, no del usuario individual. En este tema se muestra cómo hacerlo.
   
-## <a name="send-email-as-a-distribution-list"></a>Enviar correo electrónico como una lista de distribución
+## <a name="before-you-begin"></a>Antes de empezar
 
 Antes de realizar estos pasos, asegúrese de que se ha agregado a una lista de distribución Microsoft 365 y de que se le ha concedido permiso Enviar como permiso.
   
@@ -61,3 +61,9 @@ Antes de realizar estos pasos, asegúrese de que se ha agregado a una lista de d
 3. Seleccione la **dirección lista de** distribución de la lista global de direcciones.
 
 4. Envíe el correo electrónico.
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Crear, editar o eliminar un grupo](../email/create-edit-or-delete-a-security-group.md) de seguridad en el centro Microsoft 365 administración (artículo)\
+[Colaboración de correo](../email/email-collaboration.md) electrónico (artículo)\
+[Agregar un usuario o contacto a un grupo de distribución](../email/add-user-or-contact-to-distribution-list.md)

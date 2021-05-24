@@ -18,12 +18,12 @@ description: Los administradores y los usuarios finales pueden aprender a enviar
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0a6f564d82750c5ab8156680854c2453cda6971
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9c3a02c710472a996245a38d996ff4485efd1748
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207363"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624030"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Enviar mensajes manualmente a Microsoft para su análisis
 
@@ -35,7 +35,7 @@ ms.locfileid: "51207363"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Si es administrador de una organización con buzones de Exchange Online, le recomendamos que use el portal de envíos en el Centro de seguridad & cumplimiento. Para obtener más información, vea [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> Si es administrador de una organización con buzones de correo Exchange Online, le recomendamos que use el portal de envíos en el Centro de seguridad & cumplimiento. Para obtener más información, vea [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
 Puede ser frustrante cuando los usuarios de la organización reciben mensajes de correo no deseado o mensajes de suplantación de identidad en su Bandeja de entrada, o si no reciben un mensaje de correo electrónico legítimo porque está marcado como correo no deseado. Estamos ajustando constantemente nuestros filtros de correo no deseado para que sean más precisos.
 
@@ -54,7 +54,6 @@ Si recibe un mensaje que pasó por el filtrado de correo no deseado que debería
 1. Cree un nuevo mensaje de correo electrónico en blanco con uno de los siguientes destinatarios:
 
    - **Correo no deseado**: `junk@office365.microsoft.com`
-
    - **Phishing**: `phish@office365.microsoft.com`
 
 2. Arrastre y coloque el mensaje de correo no deseado o suplantación de identidad en el nuevo mensaje. Esto guardará el mensaje de correo no deseado o suplantación de identidad como datos adjuntos en el nuevo mensaje. No copie y pegue el contenido del mensaje o reenvía el mensaje (necesitamos el mensaje original para poder inspeccionar los encabezados del mensaje).
@@ -62,10 +61,8 @@ Si recibe un mensaje que pasó por el filtrado de correo no deseado que debería
    > [!NOTE]
    >
    > - Puede adjuntar varios mensajes en el nuevo mensaje. Asegúrese de que todos los mensajes son del mismo tipo: mensajes de suplantación de identidad (phishing) o mensajes de correo no deseado.
-   >
    > - Deje el cuerpo del nuevo mensaje en blanco.
-   >
-   > - Use los formatos .msg (formato predeterminado de Outlook) o .eml (formato predeterminado de Outlook en la Web) para los mensajes adjuntos.
+   > - Use los formatos .msg (Outlook predeterminado) o .eml (Outlook predeterminado en el formato web) para los mensajes adjuntos.
 
 3. Cuando haya terminado, haga clic en **Enviar**.
 
@@ -77,20 +74,17 @@ Si recibe un mensaje que pasó por el filtrado de correo no deseado que debería
 > [!TIP]
 > En lugar de usar los siguientes procedimientos para notificar falsos positivos, los usuarios de Outlook y Outlook en la web (anteriormente conocidos como Outlook Web App) pueden usar el complemento Report Message o el complemento Report Phishing. Para obtener información sobre cómo instalar y usar estas herramientas, vea [Enable the Report Message add-in](enable-the-report-message-add-in.md) and Enable the Report [Phishing add-in](enable-the-report-phish-add-in.md).
 
-
 Si un mensaje se identificó incorrectamente como correo no deseado, puede enviar el mensaje al equipo de análisis de correo no deseado de Microsoft. Los analistas evaluarán el mensaje y (según los resultados del análisis) los filtros de todo el servicio se pueden ajustar para permitir que el mensaje pase.
 
-1. Cree un nuevo mensaje de correo electrónico en blanco `not_junk@office365.microsoft.com` con como destinatario:
+1. Cree un nuevo mensaje de correo electrónico en blanco `not_junk@office365.microsoft.com` con como destinatario.
 
 2. Arrastre y coloque el mensaje no identificado en el nuevo mensaje. Esto guardará el mensaje no identificado como datos adjuntos en el nuevo mensaje. No copie y pegue el contenido del mensaje o reenvía el mensaje (necesitamos el mensaje original para poder inspeccionar los encabezados del mensaje).
 
    > [!NOTE]
    >
    > - Puede adjuntar varios mensajes en el nuevo mensaje. Asegúrese de que todos los mensajes son del mismo tipo: mensajes de suplantación de identidad (phishing) o mensajes de correo no deseado.
-   >
    > - Deje el cuerpo del nuevo mensaje en blanco.
-   >
-   > - Use los formatos .msg (formato predeterminado de Outlook) o .eml (formato predeterminado de Outlook en la Web) para los mensajes adjuntos.
+   > - Use los formatos .msg (Outlook predeterminado) o .eml (Outlook predeterminado en el formato web) para los mensajes adjuntos.
 
 3. Cuando haya terminado, haga clic en **Enviar**.
 
@@ -99,8 +93,8 @@ Si un mensaje se identificó incorrectamente como correo no deseado, puede envia
 
 ## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>¿Dónde se almacenan los datos de los envíos a Microsoft?
 
-Los datos residen en el límite de cumplimiento de Office 365 en los centros de datos de Norteamérica. Los analistas del equipo de ingeniería revisan los datos para ayudar a mejorar la eficacia de los filtros.
+Los datos residen en el límite Office 365 cumplimiento normativo en los centros de datos de Norteamérica. Los analistas del equipo de ingeniería revisan los datos para ayudar a mejorar la eficacia de los filtros.
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Crear una regla de flujo de correo para recibir copias de los mensajes que se notifican a Microsoft
 
-Para obtener instrucciones, consulte [Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).
+Para obtener instrucciones, vea [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).

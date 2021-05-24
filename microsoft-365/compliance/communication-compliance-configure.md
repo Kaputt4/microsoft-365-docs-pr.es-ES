@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3e84c3266dd802fb6cab12db0c20773838b4e2a9
-ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
+ms.openlocfilehash: 60b9577c2a42ef080fa6a734e0207225bf197cab
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52077193"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624274"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introducción al cumplimiento de las comunicaciones
 
@@ -66,7 +66,7 @@ Dependiendo de cómo desee administrar las directivas de comunicación y las ale
 
 Elija entre estas opciones de grupo de roles al configurar el cumplimiento de la comunicación:
 
-| Role | Permisos de funciones |
+| Función | Permisos de funciones |
 |:-----|:-----|
 | **Cumplimiento de comunicaciones** | Use este grupo de roles para administrar el cumplimiento de comunicaciones de su organización en un solo grupo. Al agregar todas las cuentas de usuario para administradores designados, analistas, investigadores y visores, puede configurar los permisos de cumplimiento de comunicaciones en un solo grupo. Este grupo de funciones contiene todos los roles de permisos de cumplimiento de comunicación. Esta configuración es la forma más sencilla de empezar rápidamente con el cumplimiento de las comunicaciones y es una buena opción para las organizaciones que no necesitan permisos independientes definidos para grupos independientes de usuarios. |
 | **Administrador de cumplimiento de comunicaciones** | Use este grupo de roles para configurar inicialmente el cumplimiento de las comunicaciones y posteriormente para segregar a los administradores de cumplimiento de comunicaciones en un grupo definido. Los usuarios asignados a este grupo de roles pueden crear, leer, actualizar y eliminar directivas de cumplimiento de comunicación, configuración global y asignaciones de grupos de roles. Los usuarios asignados a este grupo de roles no pueden ver alertas de mensajes. |
@@ -116,9 +116,9 @@ Para obtener más información acerca de los grupos de roles y los permisos, vea
 
 ## <a name="step-2-required-enable-the-audit-log"></a>Paso 2 (obligatorio): Habilitar el registro de auditoría
 
-El cumplimiento de la comunicación requiere registros de auditoría para mostrar alertas y realizar un seguimiento de las acciones de corrección realizadas por los revisores. Los registros de auditoría son un resumen de todas las actividades asociadas con una directiva organizativa definida o en cualquier momento en que cambie una directiva de cumplimiento de comunicación.
+El Cumplimiento de comunicaciones requiere registros de auditoría para mostrar alertas y realizar un seguimiento de las acciones de corrección realizadas por los revisores. Los registros de auditoría son un resumen de todas las actividades asociadas con una directiva organizativa definida o en cualquier momento en que se realicen cambios en la directiva de cumplimiento de comunicaciones.
 
-Para obtener instrucciones paso a paso para activar la auditoría, vea Activar o desactivar la búsqueda del [registro de auditoría.](turn-audit-log-search-on-or-off.md) Después de activar la auditoría, se muestra un mensaje que dice que el registro de auditoría se está preparando y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Solo tienes que hacer esta acción una vez. Para obtener más información acerca del uso del registro de auditoría, vea [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).
+Para obtener instrucciones paso a paso para activar la auditoría, vea Activar o desactivar la búsqueda del [registro de auditoría.](turn-audit-log-search-on-or-off.md) Después de activar la auditoría, se muestra un mensaje que dice que el registro de auditoría se está preparando y que puede ejecutar una búsqueda en un par de horas después de que se complete la preparación. Solo tiene que realizar esta acción una vez. Para obtener más información acerca del uso del registro de auditoría, vea [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>Paso 3 (opcional): Configurar grupos para el cumplimiento de las comunicaciones
 
@@ -187,7 +187,7 @@ Para obtener más información sobre cómo configurar Yammer en modo nativo, vea
 
 2. En el centro Microsoft 365 cumplimiento, seleccione **Cumplimiento de comunicaciones**.
   
-3. Seleccione la **pestaña** Directivas.
+3. Seleccione la pestaña **Directivas**.
 
 4. Seleccione **Crear directiva** para crear y configurar una nueva directiva desde una plantilla o para crear y configurar una directiva personalizada.
 
@@ -202,17 +202,17 @@ Para obtener más información sobre cómo configurar Yammer en modo nativo, vea
     - Elija un campo de condición limitado, normalmente un tipo de información confidencial o un diccionario de palabras clave para aplicar a la directiva.
 
     >[!NOTE]
-    >Si desea habilitar el reconocimiento óptico de caracteres [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) para examinar imágenes incrustadas o adjuntas en mensajes de texto impreso o escrito a mano que coincidan con las condiciones de directiva, seleccione **Personalizar** las condiciones y el porcentaje de directiva y habilite Extraer texto impreso o escrito a mano de las imágenes para su  >   evaluación.
+    >Si desea habilitar el reconocimiento óptico de caracteres [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) para examinar imágenes incrustadas o adjuntas en mensajes de texto impreso o escrito a mano que coincidan con las condiciones de directiva, seleccione **Personalizar** las condiciones y el porcentaje de directiva y habilite Extraer texto impreso o escrito a mano de las imágenes para su  >   evaluación.
 
     Si elige usar el Asistente para directivas para crear una directiva personalizada, hará lo siguiente:
 
-    - Asigne a la directiva un nombre y una descripción. Los nombres de directivas no se pueden cambiar una vez creada la directiva.
+    - Asigne a la directiva un nombre y una descripción. Los nombres de las directivas no se pueden cambiar una vez se crea la directiva.
 
     - Elija los usuarios o grupos que desea supervisar, incluidos todos los usuarios de la organización, usuarios y grupos específicos, u otros usuarios y grupos que quiera excluir.
 
     - Elija los revisores de la directiva. Los revisores son usuarios individuales y todos los revisores deben tener buzones hospedados en Exchange Online. Los revisores agregados aquí son los revisores que puede elegir al escalar una alerta en el flujo de trabajo de investigación y corrección. Cuando se agregan revisores a una directiva, reciben automáticamente un mensaje de correo electrónico que les notifica la asignación a la directiva y proporciona vínculos a información sobre el proceso de revisión.
 
-    - Elija los canales de comunicación que desea examinar, incluidos Exchange, Microsoft Teams, Yammer o Skype Empresarial. También elegirá examinar orígenes de terceros si ha configurado un conector en Microsoft 365.
+    - Elija los canales de comunicación que desea examinar, incluidos Exchange, Microsoft Teams, Yammer o Skype Empresarial. También tendrá que examinar los orígenes de terceros si configuró un conector en Microsoft 365.
 
     - Elija la dirección de comunicación que desea supervisar, incluidas las comunicaciones entrantes, salientes o internas.
 
@@ -222,15 +222,15 @@ Para obtener más información sobre cómo configurar Yammer en modo nativo, vea
 
     - Elija si desea habilitar clasificadores. Los clasificadores pueden detectar el idioma inapropiado y las imágenes enviadas o recibidas en el cuerpo de los mensajes de correo electrónico u otros tipos de texto. Puede elegir los siguientes clasificadores integrados: *Threat*, *Profanity*, *Targeted harassment*, *Adult images*, *Racy images* y *Gory images*.
 
-    - Habilite el reconocimiento óptico de caracteres [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) para examinar imágenes incrustadas o adjuntas en mensajes en busca de texto impreso o escrito a mano que coincida con las condiciones de la directiva. Para las directivas personalizadas, una o más configuraciones condicionales asociadas con texto, palabras clave, clasificadores o tipos de información confidencial deben configurarse en la directiva para habilitar la selección del examen óptico de reconocimiento de caracteres.
+    - Habilite el reconocimiento óptico de caracteres [(OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) para examinar imágenes incrustadas o adjuntas en mensajes en busca de texto impreso o escrito a mano que coincida con las condiciones de la directiva. Para las directivas personalizadas, una o más configuraciones condicionales asociadas con texto, palabras clave, clasificadores o tipos de información confidencial deben configurarse en la directiva para habilitar la selección del examen óptico de reconocimiento de caracteres.
 
-    - Definir el porcentaje de comunicaciones que se revisarán.
+    - Definir el porcentaje de comunicaciones que se revisan.
 
     - Revise las selecciones de directiva y cree la directiva.
 
 5. Seleccione **Crear directiva** al usar las plantillas o **Enviar** al usar el asistente para directivas personalizadas.
 
-6. La **página Su directiva se creó** se muestra con instrucciones sobre cuándo se activará la directiva y qué comunicaciones se capturarán.
+6. La página **Se ha creado la directiva** muestra con instrucciones sobre cuándo se activará la directiva y qué comunicaciones se capturarán.
 
 ## <a name="step-6-optional-create-notice-templates-and-configure-user-anonymization"></a>Paso 6 (opcional): crear plantillas de aviso y configurar el anonimización de usuarios
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: aad0f00292a1a1182fc4b731e562b2e4c78d97f8
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 7592b92b74173e77e7937151ba88c23163363fde
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259516"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624698"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introducción a la configuración de administración de riesgos de insider
 
@@ -60,7 +60,7 @@ Las directivas desencadenan alertas cuando los usuarios realizan actividades rel
 Los indicadores de directiva se segmentan en las siguientes áreas. Puede elegir los indicadores para activar y personalizar los límites de eventos del indicador para cada nivel de indicador al crear una directiva de riesgo de información interna:
 
 - **Office:** estos incluyen indicadores de directiva para SharePoint sitios, Microsoft Teams y mensajería de correo electrónico.
-- **Indicadores de dispositivo:** estos incluyen indicadores de directiva para la actividad, como compartir archivos a través de la red o con dispositivos. Los indicadores incluyen actividades relacionadas Microsoft Office archivos, .csv (valores separados por comas) y archivos .pdf (formato de documento portátil). Si selecciona Indicadores **de dispositivo,** la actividad solo se procesará para dispositivos con Windows 10 compilación 1809 o posterior y primero debe incorporar dispositivos al centro de cumplimiento. Para obtener más información sobre cómo configurar dispositivos para la integración con riesgos de insider, consulta la siguiente sección Habilitar indicadores de dispositivos y [dispositivos integrados](insider-risk-management-settings.md#OnboardDevices) en este artículo.
+- **Indicadores de dispositivo:** estos incluyen indicadores de directiva para la actividad, como compartir archivos a través de la red o con dispositivos. Los indicadores incluyen actividades que implican todos los tipos de archivo, excepto la actividad de archivos ejecutables (.exe) y la biblioteca de vínculos dinámicos (.dll). Si selecciona Indicadores **de dispositivo,** la actividad solo se procesará para dispositivos con Windows 10 compilación 1809 o posterior y primero debe incorporar dispositivos al centro de cumplimiento. Para obtener más información sobre cómo configurar dispositivos para la integración con riesgos de insider, consulta la siguiente sección Habilitar indicadores de dispositivos y [dispositivos integrados](insider-risk-management-settings.md#OnboardDevices) en este artículo.
 - **Indicador de infracción de** directivas de seguridad (versión preliminar): estos incluyen indicadores de Microsoft Defender para Endpoint relacionados con la instalación de software no aprobado o malintencionado o la omisión de controles de seguridad. Para recibir alertas en la administración de riesgos de insider, debe tener habilitada una licencia de Defender for Endpoint activa e integración de riesgos de insider. Para obtener más información sobre cómo configurar Defender for Endpoint para la integración de la administración de riesgos insider, consulte [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 - **Indicadores de acceso físico (versión preliminar):** estos incluyen indicadores de directiva para el acceso físico a activos confidenciales. Por ejemplo, el intento de acceso a un área restringida en los registros del sistema de administración de errores físicos se puede compartir con directivas de administración de riesgos internas. Para recibir estos tipos de alertas en la administración de riesgos de insider, debe tener activos físicos prioritarios habilitados en la administración de riesgos de insider y el conector de datos de protección física [configurado.](import-physical-badging-data.md) Para obtener más información sobre cómo configurar el acceso físico, consulte la sección [Prioridad de acceso físico](#priority-physical-assets-preview) en este artículo.
 - **Microsoft Cloud App Security indicadores (versión preliminar):** estos incluyen indicadores de directiva de alertas compartidas de Cloud App Security. La detección de anomalías habilitada automáticamente en Cloud App Security comienza inmediatamente a detectar y recopilar resultados, lo que apunta a numerosas anomalías de comportamiento entre los usuarios y las máquinas y dispositivos conectados a la red. Para incluir estas actividades en alertas de directivas de administración de riesgos insider, seleccione uno o más indicadores en esta sección. Para obtener más información sobre Cloud App Security análisis y detección de anomalías, consulte [Get behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy).
@@ -190,8 +190,8 @@ A las actividades de usuario detectadas por las directivas de riesgo de insider 
 
 Según los tipos de señales que le interesen, puede elegir importar alertas a la administración de riesgos de información interna en función del estado de evaluación de alertas de Defender for Endpoint. Puede definir uno o varios de los siguientes estados de triaje de alertas en la configuración global que se va a importar:
 
-- Desconocido
-- Nueva
+- Unknown
+- Nuevo
 - En curso
 - Resuelto
 

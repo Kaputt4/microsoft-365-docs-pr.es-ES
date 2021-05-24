@@ -18,14 +18,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Obtenga información sobre cómo actualizar a un plan diferente.
+description: La forma más sencilla de actualizar los planes es usar la pestaña Actualizar en el Centro de administración. Sin embargo, la pestaña Actualizar no siempre es compatible.
 ms.date: 04/21/2021
-ms.openlocfilehash: 4882ad4296eb05faf0bb549ebf850562a7ebf780
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: da0b0a826087ea7e963dde85f9b4612acf0eaf99
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344622"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624318"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Actualizar a un plan diferente
 

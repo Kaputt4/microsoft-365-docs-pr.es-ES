@@ -1,5 +1,5 @@
 ---
-title: Simulador de ataques en Microsoft Defender para Office 365
+title: Simulador de ataque en Microsoft Defender para Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,35 +17,35 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Los administradores pueden aprender a usar Attack Simulator para ejecutar ataques simulados de suplantación de identidad y contraseña en sus organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 Plan 2.
+description: Los administradores pueden aprender a usar Attack Simulator para ejecutar ataques simulados de suplantación de identidad (phishing) y contraseñas en sus organizaciones de Microsoft 365 E5 o Microsoft Defender para Office 365 plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 637e84281b85e8c859207ae81342a3c6ab3d00be
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 73ad3501ed9818261c9fbec6ba12b4dc884da84f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205429"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624830"
 ---
-# <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulador de ataques en Microsoft Defender para Office 365
+# <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulador de ataque en Microsoft Defender para Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Se aplica a** [Microsoft Defender para Office 365 plan 2](defender-for-office-365.md)
 
-Si su organización tiene Microsoft Defender para Office 365 Plan 2, que incluye capacidades de investigación de amenazas y [respuesta,](office-365-ti.md)puede usar Attack Simulator en el Centro de seguridad & Cumplimiento para ejecutar escenarios de ataque realistas en su organización. Estos ataques simulados pueden ayudarte a identificar y encontrar usuarios vulnerables antes de que un ataque real impacte en la línea de fondo. Lea este artículo para obtener más información.
+Si su organización tiene Microsoft Defender para Office 365 Plan 2, que incluye capacidades de investigación de amenazas y [respuesta,](office-365-ti.md)puede usar attack simulator en el Centro de seguridad & cumplimiento para ejecutar escenarios de ataque realistas en su organización. Estos ataques simulados pueden ayudarte a identificar y encontrar usuarios vulnerables antes de que un ataque real impacte en la línea de fondo. Lea este artículo para obtener más información.
 
 > [!NOTE]
 >
-> Attack Simulator, tal como se describe en este  artículo, es ahora de solo lectura y ha sido reemplazado por el aprendizaje de simulación de ataque en el nodo de colaboración Email **&** en el Centro de seguridad de [Microsoft 365](https://security.microsoft.com). Para obtener más información, vea [Get started using Attack simulation training](attack-simulation-training-get-started.md).
+> Attack Simulator, tal como se describe en este  artículo, ahora es de solo lectura y ha sido reemplazado por el aprendizaje de simulación de ataque en el nodo de colaboración Email **&** en el centro de seguridad [Microsoft 365.](https://security.microsoft.com) Para obtener más información, vea [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 >
 > Se ha deshabilitado la capacidad de iniciar nuevas simulaciones desde esta versión de Attack Simulator. Sin embargo, aún puede acceder a informes durante un máximo de 90 días a partir del 24 de enero de 2021.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Para abrir el Centro de seguridad y cumplimiento, vaya a <https://protection.office.com/>. El simulador de ataque está disponible en **el simulador de ataque de administración** de \> **amenazas.** Vaya directamente al simulador de ataque, abra <https://protection.office.com/attacksimulator> .
+- Para abrir el Centro de seguridad y cumplimiento, vaya a <https://protection.office.com/>. El simulador de ataque está disponible en **el simulador de ataque de administración** de \> **amenazas.** Para ir directamente al simulador de ataque, abra <https://protection.office.com/attacksimulator> .
 
-- Para obtener más información sobre la disponibilidad de Attack Simulator en diferentes suscripciones de Microsoft 365, vea Descripción del servicio de [Microsoft Defender para Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- Para obtener más información acerca de la disponibilidad de Attack Simulator en diferentes Microsoft 365 suscripciones, vea [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 - Debe ser miembro de los grupos de roles **Administración** de la organización o Administrador **de** seguridad. Para obtener más información acerca de los grupos de roles en el Centro de seguridad y cumplimiento, consulte [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md).
 
@@ -55,7 +55,7 @@ Si su organización tiene Microsoft Defender para Office 365 Plan 2, que incluye
 
 - Las campañas de suplantación de identidad recopilarán y procesarán eventos durante 30 días. Los datos históricos de la campaña estarán disponibles hasta 90 días después de iniciar la campaña.
 
-- Los datos relacionados con la simulación de ataques y el aprendizaje se almacenan con otros datos de clientes para los servicios de Microsoft 365. Para obtener más información, [vea Ubicaciones de datos de Microsoft 365](../../enterprise/o365-data-locations.md).
+- Los datos relacionados con la simulación de ataques y el aprendizaje se almacenan con otros datos de clientes para Microsoft 365 servicios. Para obtener más [información, vea Microsoft 365 de datos](../../enterprise/o365-data-locations.md).
 
 - No hay cmdlets de PowerShell correspondientes para Attack Simulator.
 
@@ -73,7 +73,7 @@ En Attack Simulator, hay disponibles dos tipos diferentes de campañas de suplan
 
   - Una página personalizada (DIRECCIÓN URL) que especifique.
 
-- **Phishing de lanza (datos adjuntos):** el ataque intenta convencer a los destinatarios para que abran un archivo adjunto .docx o .pdf en el mensaje. Los datos adjuntos contienen el mismo contenido del vínculo de suplantación de identidad predeterminado, pero la primera oración comienza por " , estás viendo este mensaje como un mensaje de correo electrónico reciente \<Display Name\> que has abierto...".
+- **Phishing de lanza (datos adjuntos):** el ataque intenta convencer a los destinatarios para que abran .docx o .pdf datos adjuntos en el mensaje. Los datos adjuntos contienen el mismo contenido del vínculo de suplantación de identidad predeterminado, pero la primera oración comienza por " , estás viendo este mensaje como un mensaje de correo electrónico reciente \<Display Name\> que has abierto...".
 
 > [!NOTE]
 > Actualmente, las campañas de suplantación de identidad de lanza en Attack Simulator no expiran.
@@ -170,7 +170,7 @@ Si va a usar una de las plantillas integradas o crear el mensaje de correo elect
 
 4. En el **paso Destinatarios de** destino, siga uno de estos pasos:
 
-   - Haga **clic en Libreta de** direcciones para seleccionar los destinatarios (usuarios o grupos) de la campaña. Cada destinatario de destino debe tener un buzón de Exchange Online. Si hace clic **en Filtrar y** **aplicar** sin especificar un criterio de búsqueda, todos los destinatarios se devuelven y se agregan a la campaña.
+   - Haga **clic en Libreta de** direcciones para seleccionar los destinatarios (usuarios o grupos) de la campaña. Cada destinatario de destino debe tener un Exchange Online buzón de correo. Si hace clic **en Filtrar y** **aplicar** sin especificar un criterio de búsqueda, todos los destinatarios se devuelven y se agregan a la campaña.
 
    - Haga **clic en** Importar **y,** a continuación, en Importar archivo para importar un valor separado por comas (CSV) o un archivo de direcciones de correo electrónico separados por líneas. Cada línea debe contener la dirección de correo electrónico del destinatario.
 
@@ -207,9 +207,9 @@ Si va a usar una de las plantillas integradas o crear el mensaje de correo elect
      >
      > - Es necesario seleccionar una dirección URL. En el caso de las campañas de **phishing (datos adjuntos),** puedes quitar el vínculo del  cuerpo del mensaje en el siguiente paso (de lo contrario, el mensaje contendrá un vínculo y un archivo adjunto).
 
-   - **Tipo de datos adjuntos:** esta configuración solo está disponible en campañas **de phishing de** lanza (datos adjuntos). Haga clic en la lista desplegable y seleccione **. DOCX** o **. PDF** de la lista.
+   - **Tipo de datos adjuntos:** esta configuración solo está disponible en campañas **de phishing de** lanza (datos adjuntos). Haga clic en la lista desplegable **y seleccione.DOCX** o **.PDF** de la lista.
 
-   - **Nombre de datos adjuntos:** esta configuración solo está disponible en campañas **de phishing (datos adjuntos)** de Lanza. Escriba un nombre de archivo para los datos adjuntos .docx o .pdf.
+   - **Nombre de datos adjuntos:** esta configuración solo está disponible en campañas **de phishing (datos adjuntos)** de Lanza. Escriba un nombre de archivo para los .docx o .pdf datos adjuntos.
 
    - **Dirección URL de página de aterrizaje** personalizada: escriba una página de aterrizaje opcional en la que los usuarios se toman si hacen clic en el vínculo de suplantación de identidad y escriben sus credenciales. Este vínculo reemplaza la página de aterrizaje predeterminada. Por ejemplo, si tiene formación de reconocimiento interno, puede especificar esa dirección URL aquí.
 
@@ -265,7 +265,7 @@ En Attack Simulator, hay dos tipos diferentes de campañas de ataque con contras
 
 4. En el **paso Usuarios de** destino, siga uno de estos pasos:
 
-   - Haga **clic en Libreta de** direcciones para seleccionar los destinatarios (usuarios o grupos) de la campaña. Cada destinatario de destino debe tener un buzón de Exchange Online. Si hace clic **en Filtrar y** **aplicar** sin especificar un criterio de búsqueda, todos los destinatarios se devuelven y se agregan a la campaña.
+   - Haga **clic en Libreta de** direcciones para seleccionar los destinatarios (usuarios o grupos) de la campaña. Cada destinatario de destino debe tener un Exchange Online buzón de correo. Si hace clic **en Filtrar y** **aplicar** sin especificar un criterio de búsqueda, todos los destinatarios se devuelven y se agregan a la campaña.
 
    - Haga **clic en** Importar **y,** a continuación, en Importar archivo para importar un valor separado por comas (CSV) o un archivo de direcciones de correo electrónico separados por líneas. Cada línea debe contener la dirección de correo electrónico del destinatario.
 
@@ -277,7 +277,7 @@ En Attack Simulator, hay dos tipos diferentes de campañas de ataque con contras
 
      - **Escribir contraseñas manualmente:** en el **cuadro Presione entrar para agregar** una contraseña, escriba una contraseña y, a continuación, presione ENTRAR. Repita este paso tantas veces como sea necesario.
 
-     - **Cargar contraseñas desde un archivo de diccionario:** haga **clic** en Cargar para importar un archivo de texto existente que contenga una contraseña en cada línea y una última línea en blanco. El archivo de texto debe tener 10 MB o menos de tamaño y no puede contener más de 30000 contraseñas.
+     - **Upload contraseñas** de un archivo de diccionario: haga clic en **Upload** para importar un archivo de texto existente que contenga una contraseña en cada línea y una última línea en blanco. El archivo de texto debe tener 10 MB o menos de tamaño y no puede contener más de 30000 contraseñas.
 
    - **Ataque de spray de** contraseña: en **las contraseñas que** se deben usar en el cuadro de ataque, escriba una contraseña.
 
@@ -335,7 +335,7 @@ La siguiente información está disponible en la página **Detalles de ataque** 
 
   - Dirección IP del cliente.
 
-  - Detalles sobre la versión del usuario de Windows y el explorador web.
+  - Detalles sobre la versión del usuario de Windows explorador web.
 
   Puede hacer clic **en Exportar** para exportar los resultados a un archivo CSV.
 

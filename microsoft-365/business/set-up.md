@@ -1,5 +1,5 @@
 ---
-title: Configuración de Microsoft 365 Empresa Premium
+title: Configuración de Microsoft 365 Empresa Premium
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -30,14 +30,16 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Descubra los pasos de configuración para Microsoft 365 Empresa Premium, como agregar un dominio y usuarios, configurar directivas de seguridad y mucho más.
-ms.openlocfilehash: 37607b483686fc12ac6253ae9f693ec86c073c4e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3e15f16db2a233d2e11d444600398102b075932d
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245052"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624397"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurar Microsoft 365 Empresa Premium en el Asistente para configuración
+
+## <a name="watch-overview-of-microsoft-365-setup"></a>Watch: Overview of Microsoft 365 setup
 
 Vea este vídeo para obtener información general sobre Microsoft 365 Empresa Premium configuración.<br><br>
 
@@ -62,7 +64,7 @@ Al comprar Microsoft 365 Empresa Premium, tiene la opción de usar un dominio de
 4. En el paso **Agregar dominio**, escriba el nombre de dominio que desee usar (como contoso.com).
 
     > [!IMPORTANT]
-    > Si adquirió un dominio durante el inicio de sesión, no verá el paso **Agregar dominio** aquí. Vaya a [Agregar usuarios](#add-users-and-assign-licenses) en su lugar.
+    > Si ha comprado un dominio durante el registro, no verá el paso **Agregar un dominio** aquí. En su lugar, vaya a [Agregar usuarios](#add-users-and-assign-licenses).
 
     ![Captura de pantalla de la página Personalizar el inicio de sesión.](../media/adddomain.png)
 
@@ -85,7 +87,7 @@ A los usuarios que agregues en el asistente se les asignará automáticamente un
 
 1. Si la Microsoft 365 Empresa Premium cuenta con usuarios existentes (por ejemplo, si usó Azure AD Conectar), ahora obtiene una opción para asignarles licencias. Proceda y agrégueles licencias también.
 
-2. Una vez que haya agregado los usuarios, también verá una opción para compartir las credenciales con los nuevos usuarios que ha agregado. Puede elegir imprimirlas, enviarlas por correo electrónico o descargarlas.
+2. Después de agregar a los usuarios, también verá una opción para compartir las credenciales con los nuevos usuarios agregados. Puede escoger entre imprimirlas, enviarlas por correo electrónico o descargarlas.
 
 ### <a name="connect-your-domain"></a>Conectar su dominio
 
@@ -97,7 +99,7 @@ Para configurar servicios, es necesario actualizar algunos registros en su regis
 1. Normalmente, el asistente para configuración detecta el registrador y le proporciona un vínculo con instrucciones paso a paso para actualizar los registros NS en el sitio web del registrador. Si no es así, cambie los servidores de nombres para configurar Microsoft 365 [con cualquier registrador de dominio](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md). 
 
     - Si tiene registros DNS existentes (por ejemplo, un sitio web existente), pero el host DNS está habilitado para usar la [conexión de dominio](/office365/admin/get-help-with-domains/domain-connect), elija **Agregar registros para mí**. En la página **Seleccione sus servicios en línea**, acepte todos los valores predeterminados, haga clic en **Siguiente** y elija **Autorizar** en la página del host DNS.
-    - Si tiene registros DNS en otros hosts (que no están habilitados para usar la conexión de dominio), le recomendamos administrar sus propios registros DNS para asegurarse de que los servicios existentes permanezcan conectados. Para obtener más información, consulte [Conceptos básicos sobre DNS](/office365/admin/get-help-with-domains/dns-basics).
+    - Si tiene registros DNS existentes con otros hosts DNS (no habilitados para conexión de dominios), le conviene administrar sus propios registros DNS para asegurarse de que los servicios existentes siguen conectados. Consulte [conceptos básicos de dominio](/office365/admin/get-help-with-domains/dns-basics) para obtener más información.
 
         ![Página Activar registros.](../media/activaterecords.png)
 
@@ -131,6 +133,6 @@ Para instalar Office dispositivos móviles iOS o Android, consulta Configurar di
 
 También puede instalar Office individualmente. Consulta [instalar Office en un EQUIPO o Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) para obtener instrucciones.
 
-## <a name="see-also"></a>Vea también
+## <a name="related-content"></a>Contenido relacionado
 
-[Vídeos de aprendizaje de Microsoft 365 para empresas](../business-video/index.yml)
+[Microsoft 365 vídeos de aprendizaje para empresas](../business-video/index.yml) (página de vínculos)

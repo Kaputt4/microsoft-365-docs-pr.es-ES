@@ -16,12 +16,12 @@ metadata:
   description: Los administradores pueden ver preguntas y respuestas más frecuentes sobre las tareas de administración delegadas en Microsoft 365 para partners y revendedores de Microsoft.
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 836e52139ef2e6191bda26d6fdb92da521dff6bd
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: b62c1d53d4b2a482aeb91cea147ed9feaa4027c4
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52334073"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52624102"
 title: Preguntas más frecuentes sobre administración delegada
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -54,7 +54,7 @@ sections:
   - question: >
       Soy un cliente, no un revendedor. ¿Cómo se puede configurar el administrador delegado para mis subterfugios?
     answer: >
-      La administración delegada solo está disponible para revendedores y partners. Sin embargo, hay un script de PowerShell de ejemplo que le ayudará a aplicar directivas a sus subterfugios (empresas). Para obtener más información, consulte [Script de ejemplo para aplicar la configuración de EOP a varios inquilinos](sample-script-for-applying-eop-settings-to-multiple-tenants.md).
+      La administración delegada solo está disponible para revendedores y partners. Sin embargo, hay un script de PowerShell de ejemplo que le ayudará a aplicar directivas a sus subterfugios (empresas). Para obtener más información, consulte [Script de ejemplo para aplicar la configuración de EOP a varios inquilinos](/exchange/standalone-eop/sample-script-standalone-eop-settings-to-multiple-tenants).
   - question: >
       ¿Puedo impedir que mi administrador subteniente modifique mi directiva?
     answer: >

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3df8fbf20fd00bd584af2fd329949939433a19eb
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 87f5e414a13d966ba2fbb30d84d7d4adae7a1d13
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583489"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624354"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referencia de característica de cumplimiento de comunicaciones
 
@@ -187,9 +187,9 @@ Los clasificadores globales y los clasificadores integrados no proporcionan una 
 
 Para obtener información acerca de los clasificadores que se pueden entrenar en Microsoft 365, vea [Getting started with trainable classifiers](classifier-get-started-with.md).
 
-### <a name="optical-character-recognition-ocr-preview"></a>Reconocimiento óptico de caracteres (OCR) (versión preliminar)
+### <a name="optical-character-recognition-ocr"></a>Reconocimiento óptico de caracteres (OCR)
 
-Configure directivas de cumplimiento de comunicación integradas o personalizadas para examinar e identificar texto impreso o escrito a mano de imágenes que puedan ser inapropiadas en su organización. La compatibilidad integrada de Azure Cognitive Services y el examen óptico para identificar texto en imágenes ayudan a los analistas e investigadores a detectar y actuar en casos en los que se puede perder una conducta inapropiada en comunicaciones que no son principalmente textuales.
+Configure directivas de cumplimiento de comunicación integradas o personalizadas para examinar e identificar texto impreso o escrito a mano de imágenes que puedan ser inapropiadas en su organización. La compatibilidad integrada de [Azure Cognitive Services](/azure/cognitive-services/computer-vision/overview-ocr) y el examen óptico para identificar texto en imágenes ayudan a los analistas e investigadores a detectar y actuar en casos en los que se puede perder una conducta inapropiada en comunicaciones que no son principalmente textuales.
 
 Puede habilitar el reconocimiento óptico de caracteres (OCR) en nuevas directivas de plantillas, directivas personalizadas o actualizar directivas existentes para ampliar la compatibilidad con el procesamiento de imágenes incrustadas y datos adjuntos. Cuando se habilita en una directiva creada a partir de una plantilla de directiva, se admite el examen automático para imágenes incrustadas o adjuntas en el correo electrónico Microsoft Teams mensajes de chat. Para las directivas personalizadas, una o más configuraciones condicionales asociadas con palabras clave, clasificadores integrados o tipos de información confidencial deben configurarse en la directiva para habilitar la selección del examen OCR.
 
@@ -477,6 +477,17 @@ El **panel informes contiene** los siguientes widgets de informe y vínculos de 
     - Case created
 
     Use la *opción* Exportar para crear un archivo .csv que contenga los detalles del informe.
+
+- **Informe detallado de tipo** de información confidencial por ubicación (versión preliminar): revise y exporte información sobre la detección de tipos de información confidencial y los orígenes asociados en las directivas de cumplimiento de comunicaciones. Incluye el total general y el desglose específico de las instancias de tipo de información confidencial en los orígenes configurados en la organización. Algunos ejemplos son:
+
+    - **Correo** electrónico: tipos de información confidencial detectados en Exchange de correo electrónico.
+    - **Teams:** tipos de información confidencial detectados en Microsoft Teams canales y mensajes de chat.
+    - **Skype Empresarial:** tipos de información confidencial detectados en Skype para comunicaciones empresariales.
+    - **Yammer:** tipos de información confidencial detectados en Yammer bandejas de entrada, publicaciones, chats y respuestas.
+    - **Orígenes de terceros:** tipos de información confidencial detectados para actividades asociadas con conectores de terceros configurados en la organización. Para ver el desglose de orígenes de terceros para un tipo de información confidencial específico en el informe, mantenga el mouse sobre el valor del tipo de información confidencial en la columna Origen de terceros.
+    - **Otros:** tipos de información confidencial usados para el procesamiento interno del sistema. Seleccionar o anular la selección de este origen para el informe no afectará a ningún valor.
+
+    Use la *opción* Exportar para crear un archivo .csv que contenga los detalles del informe. Los valores de cada origen de terceros se muestran en columnas independientes en el .csv archivo.
 
 ## <a name="audit"></a>Auditoría
 

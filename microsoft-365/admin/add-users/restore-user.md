@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: Obtenga información sobre cómo restaurar cuentas de usuario eliminadas y todos los datos asociados.
-ms.openlocfilehash: b7d98c1f49f8252ea9fdda2d863b5b77ac5bea9d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: En un plazo de 30 días después de eliminar una cuenta de usuario, puede restaurar la cuenta y todos los datos, y el usuario puede iniciar sesión con la misma cuenta.
+ms.openlocfilehash: 83852136ee22ab3f63d8ada6a5a7290883c392e5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291072"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623826"
 ---
 # <a name="restore-a-user"></a>Restaurar un usuario
    
@@ -91,6 +91,8 @@ Debe tener permisos [de administrador en](about-admin-roles.md) Microsoft 365 pa
     
 4. Después de revisar los resultados, seleccione **Cerrar**.
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Eliminar un usuario](delete-a-user.md)
+[Eliminar un usuario](delete-a-user.md) (artículo)\
+[Asignar roles de administrador](assign-admin-roles.md) (vídeo)\
+[Asignar licencias a usuarios](../manage/assign-licenses-to-users.md) (artículo)

@@ -14,12 +14,12 @@ search.appverid:
 description: Los administradores pueden obtener información sobre las opciones disponibles y preferidas para bloquear los mensajes entrantes en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fa2a5e0c71f14838dc8446431f5ea02a535fb787
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: c844378a19ba7995cbd616f615e8a84994f9bf26
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331459"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624093"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Crear listas de remitentes bloqueados en EOP
 
@@ -30,11 +30,11 @@ ms.locfileid: "52331459"
 - [Plan 1 y Plan 2 de Microsoft Defender para Office 365](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-En organizaciones de Microsoft 365 con buzones en Exchange Online o organizaciones independientes de Exchange Online Protection (EOP) sin buzones de Exchange Online, EOP ofrece varias formas de bloquear el correo electrónico de remitentes no deseados. Estas opciones incluyen remitentes bloqueados de Outlook, listas de remitentes bloqueados o listas de dominios bloqueados en directivas contra correo no deseado, reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) y la lista de direcciones IP bloqueadas (filtrado de conexión). Colectivamente, puede pensar en estas opciones como listas _de remitentes bloqueadas._
+En Microsoft 365 Exchange Online organizaciones con buzones de correo en organizaciones de Exchange Online Protection o independientes de Exchange Online Protection (EOP) sin buzones de correo Exchange Online, EOP ofrece varias formas de bloquear el correo electrónico de remitentes no deseados. Estas opciones incluyen Outlook remitentes bloqueados, listas de remitentes bloqueados o listas de dominios bloqueados en directivas contra correo no deseado, reglas de flujo de correo Exchange (también conocidas como reglas de transporte) y la lista de direcciones IP bloqueadas (filtrado de conexiones). Colectivamente, puede pensar en estas opciones como listas _de remitentes bloqueadas._
 
-El mejor método para bloquear remitentes varía en función del ámbito de impacto. Para un solo usuario, la solución correcta podría ser Remitentes bloqueados de Outlook. Para muchos usuarios, una de las otras opciones sería más apropiada. Las siguientes opciones se clasifican por ámbito de impacto y amplitud. La lista va de estrecha a amplia, pero *lee los detalles para* obtener recomendaciones completa.
+El mejor método para bloquear remitentes varía en función del ámbito de impacto. Para un único usuario, la solución correcta podría ser Outlook remitentes bloqueados. Para muchos usuarios, una de las otras opciones sería más apropiada. Las siguientes opciones se clasifican por ámbito de impacto y amplitud. La lista va de estrecha a amplia, pero *lee los detalles para* obtener recomendaciones completa.
 
-1. Remitentes bloqueados de Outlook (la lista de remitentes bloqueados que se almacena en cada buzón)
+1. Outlook Remitentes bloqueados (la lista de remitentes bloqueados que se almacena en cada buzón)
 
 2. Listas de remitentes bloqueados o listas de dominios bloqueados (directivas contra correo no deseado)
 
@@ -57,9 +57,9 @@ Un mensaje de correo electrónico SMTP estándar está compuesto por el *sobre d
 
 Con frecuencia, las direcciones y son las mismas (comunicación de persona `5321.MailFrom` a `5322.From` persona). Sin embargo, cuando el correo electrónico se envía en nombre de otra persona, las direcciones pueden ser diferentes.
 
-Las listas de remitentes bloqueados y las listas de dominios bloqueados en directivas contra correo no deseado en EOP inspeccionan las `5321.MailFrom` direcciones `5322.From` y. Los remitentes bloqueados de Outlook solo usan la `5322.From` dirección.
+Las listas de remitentes bloqueados y las listas de dominios bloqueados en directivas contra correo no deseado en EOP inspeccionan las `5321.MailFrom` direcciones `5322.From` y. Outlook Los remitentes bloqueados solo usan la `5322.From` dirección.
 
-## <a name="use-outlook-blocked-senders"></a>Usar remitentes bloqueados de Outlook
+## <a name="use-outlook-blocked-senders"></a>Usar Outlook remitentes bloqueados
 
 Cuando solo un pequeño número de usuarios recibió correo electrónico no deseado, los usuarios o administradores pueden agregar las direcciones de correo electrónico del remitente a la lista remitentes bloqueados en el buzón. Para obtener instrucciones, vea [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).
 
@@ -78,7 +78,7 @@ El límite máximo de estas listas es de aproximadamente 1000 entradas.
 
 Si necesita bloquear los mensajes que se envían a usuarios específicos o a toda la organización, puede usar reglas de flujo de correo. Las reglas de flujo de correo son más flexibles que bloquear listas de remitentes o listas de dominios de remitente bloqueados porque también pueden buscar palabras clave u otras propiedades en los mensajes no deseados.
 
-Independientemente de las condiciones o excepciones que use para identificar los mensajes, configure la acción para establecer el nivel de confianza de correo no deseado (SCL) del mensaje en 9, que marca el mensaje como correo no deseado de alta **confianza.** Para obtener más información, vea [Usar reglas de flujo de correo para establecer el SCL en mensajes](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+Independientemente de las condiciones o excepciones que use para identificar los mensajes, configure la acción para establecer el nivel de confianza de correo no deseado (SCL) del mensaje en 9, que marca el mensaje como correo no deseado de alta **confianza.** Para obtener más información, vea [Usar reglas de flujo de correo para establecer el SCL en mensajes](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 > [!IMPORTANT]
 > Es fácil crear reglas demasiado  agresivas, por lo que es importante que identifique solo los mensajes que desea bloquear usando criterios muy específicos. Además, asegúrese de habilitar la auditoría en la regla y probar los resultados de la regla para asegurarse de que todo funciona según lo esperado.

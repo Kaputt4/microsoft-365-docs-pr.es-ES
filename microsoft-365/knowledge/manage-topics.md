@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 2c29cdb6823e695cb9c96a4f51ef7b1c41642ac9
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ba8f27c90f9c84729a10f461e85b2e1441b49549
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333631"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625406"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Administrar temas en el centro de temas en Temas de Microsoft Viva
 
@@ -38,18 +38,28 @@ Los administradores de conocimientos ayudan a guiar los temas detectados a trav�
 
    ![Gráfico de ciclo de vida de temas](../media/knowledge-management/topic-lifecycle.png) 
 
-- **Sugerido:** AI ha identificado un tema y tiene suficientes recursos, conexiones y propiedades compatibles. (Se marcan como **un tema sugerido** en la interfaz de usuario).
+- **Sugerido**: se ha identificado un tema en AI y tiene suficientes recursos compatibles, conexiones y propiedades. (Se marcan como **un tema sugerido** en la interfaz de usuario).
 
-- **Confirmado:** se valida un tema sugerido por AI. Un administrador de conocimientos debe confirmar la validación del tema. Para que un tema se confirme, debe haber una red de dos votos positivos recibidos de usuarios que votaron mediante el mecanismo de comentarios en la tarjeta del tema. Por ejemplo, si un usuario votó positivo y un usuario votó negativo para un tema en particular, aún necesitará dos votos positivos más para confirmar el tema.
+- **Confirmado:** un tema que ha sido detectado por AI y que se ha validado. La validación del tema se produce cuando:
+
+   - Un administrador de conocimientos confirma un tema. Un administrador de [conocimientos confirma un tema en](manage-topics.md#confirmed-topics) la página Administrar **temas.**
+
+   - Varios usuarios confirman un tema. Debe haber una red de dos votos positivos recibidos de usuarios que votaron mediante el mecanismo de comentarios en la tarjeta de tema. Por ejemplo, si un usuario votó positivo y un usuario votó negativo para un tema en particular, aún necesitará dos votos positivos más para confirmar el tema.
  
-- **Publicado:** un tema confirmado que se ha seleccionado: se han realizado ediciones manuales para mejorar su calidad.
+- **Publicado:** tema que se ha seleccionado. Se han realizado modificaciones manuales para mejorar su calidad o ha sido creada por un usuario.
 
-- **Eliminado:** un administrador de conocimientos rechaza un tema y ya no será visible para los visores. Un tema se puede quitar en cualquier estado (sugerido, confirmado o publicado). Para que se quite un tema, debe haber una red de dos votos negativos recibidos de los usuarios que votaron con los mecanismos de comentarios en la tarjeta del tema. Por ejemplo, si un usuario votó negativo y un usuario votó positivo para un tema en particular, aún necesitará dos votos negativos más para que se elimine el tema. Cuando se quita un tema publicado, la página con los detalles seleccionados tendrá que eliminarse manualmente a través de la Biblioteca de páginas del centro de temas.
+- **Eliminado:** un tema que se ha rechazado y que ya no será visible para los visores. Un tema se puede quitar en cualquier estado (sugerido, confirmado o publicado). La eliminación del tema se produce cuando:
+
+   - Un administrador de conocimientos quita un tema. Un administrador de conocimientos quita un tema de la **página Administrar temas.**
+
+   - Varios usuarios emitirán votos negativos mediante el mecanismo de comentarios en la tarjeta de tema. Para que se quite un tema, debe haber una red de dos votos negativos recibidos de los usuarios. Por ejemplo, si un usuario votó negativo y un usuario votó positivo para un tema en particular, aún necesitará dos votos negativos más para que se elimine el tema.
+
+  Cuando se quita un tema publicado, la página con los detalles seleccionados tendrá que eliminarse manualmente a través de la Biblioteca de páginas del centro de temas.
 
 > [!Note] 
 > En la página Administrar **temas,** cada administrador de conocimientos solo podrá ver temas en los que tengan acceso a los archivos y páginas subyacentes conectados al tema. Este recorte de permisos se reflejará en la lista de temas que aparecen en las pestañas **Sugerido,** **Confirmado,** Publicado **y** Eliminado. Sin embargo, los recuentos de temas muestran los recuentos totales de la organización independientemente de los permisos.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requirements
 
 Para administrar temas en el centro de temas, debe:
 - Tener una licencia de Temas Microsoft Viva.
@@ -74,7 +84,7 @@ Para revisar un tema sugerido:
 
 3. Después de revisar el tema, vuelva a la **página Administrar temas.** Para el tema seleccionado, puede:
 
-   - Seleccione la marca de verificación para confirmar el tema.
+   - Seleccionar la marca de verificación para confirmar el tema.
     
    - Seleccione la **x** si desea quitar el tema.
 
@@ -86,7 +96,7 @@ Para revisar un tema sugerido:
 
 Cada tema que aparece en la **página Temas** sugeridos tiene asignada una puntuación de calidad. La puntuación de calidad es un reflejo de la cantidad de información que el usuario promedio verá para la información sobre el tema, teniendo en cuenta que cada usuario puede ver más o menos información debido a los permisos que podrían o no tener en la información de un tema. 
 
-La puntuación de calidad puede ayudar a proporcionar información sobre los temas con más información y puede ser útil para encontrar temas que pueden necesitar editarse manualmente. Por ejemplo, un tema con una puntuación de calidad inferior puede ser el resultado de que algunos usuarios no tengan permisos SharePoint los archivos o sitios pertinentes que AI ha incluido en el tema. A continuación, un colaborador podría editar el tema para incluir la información (cuando corresponda), que, a continuación, se podrá ver para todos los usuarios que puedan ver el tema.
+La puntuación de calidad puede ayudar a proporcionar información sobre los temas con más información y puede ser útil para encontrar temas que pueden necesitar editarse manualmente. Por ejemplo, un tema con una puntuación de calidad inferior puede ser el resultado de que algunos usuarios no tengan permisos SharePoint los archivos o sitios pertinentes que AI ha incluido en el tema. A continuación, un colaborador podría editar el tema para incluir la información (cuando sea necesaria), lo que estará visible para todos los usuarios que puedan verlo.
 
 ### <a name="impressions"></a>Impresiones
 
@@ -98,7 +108,7 @@ En  la página Administrar temas, los temas detectados en las ubicaciones de ori
 
 Para revisar un tema confirmado:
 
-1. En la **pestaña Confirmado,** seleccione el tema para abrir la página del tema.
+1. En la pestaña **Confirmado**, seleccione el tema para abrir la página de tema.
 
 2. En la página del tema, revise la página del tema y **seleccione Editar** si necesita realizar cambios en la página.
 
@@ -106,6 +116,6 @@ Tenga en cuenta que todavía puede optar por rechazar un tema confirmado. Para e
 
 ## <a name="published-topics"></a>Temas publicados
 
-Los temas publicados se han editado para que la información específica siempre aparezca a quien encuentre la página. Aquí también se enumeran los temas creados manualmente.
+Los temas publicados se han editado para que la información específica siempre aparezca a quien encuentre la página. Aquí también se muestran los temas creados manualmente.
 
    ![Administrar temas](../media/knowledge-management/manage-topics-new.png)

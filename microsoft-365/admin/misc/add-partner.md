@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: Obtenga información sobre cómo agregar un partner asesor de suscripción como partner de registro en el momento de la Microsoft 365 compra, cambiar el partner o eliminar un partner de una suscripción.
-ms.openlocfilehash: d45f9e3278b0a25cc5603d322c96f40eee45e6f8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Agregue un partner de registro en el momento de Microsoft 365 compra, cambie el partner o elimine un partner de una suscripción.
+ms.openlocfilehash: e21c324bc84e360b80deae2abeec610e73834819
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537480"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624530"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Agregar, cambiar o eliminar un partner asesor de suscripción
 
@@ -42,6 +42,8 @@ ms.locfileid: "52537480"
 Un partner autorizado de Microsoft que actúa como asesor de suscripción le proporciona los conocimientos técnicos, sobre ventas y soporte técnico que necesita para que configurar y mantener la suscripción sea más fácil. Puedes agregar un partner asesor de suscripción como partner de registro cuando compres Microsoft 365 en otro momento. Si actualmente no está trabajando con un partner, también puede encontrar uno en el sitio web [de Microsoft Pinpoint.](https://pinpoint.microsoft.com)
 
 ::: moniker-end
+
+## <a name="before-you-begin"></a>Antes de empezar
 
 ::: moniker range="o365-worldwide"
 
@@ -218,6 +220,7 @@ Tendrá que pedir a su partner revendedor que siga estas instrucciones: [Quitar 
   
 ::: moniker-end
 
-## <a name="related-articles"></a>Artículos relacionados
+## <a name="related-content"></a>Contenido relacionado
 
-[Buscar su Microsoft 365 o revendedor](../manage/find-your-partner-or-reseller.md)
+[Busque su Microsoft 365 partner o revendedor](../manage/find-your-partner-or-reseller.md) (artículo)\
+[Planear la configuración de Microsoft 365 para empresas](../setup/plan-your-setup.md) (artículo)

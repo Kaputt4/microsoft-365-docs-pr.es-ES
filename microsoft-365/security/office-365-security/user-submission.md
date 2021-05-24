@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender a configurar un buzón para recopilar correo no deseado y correo electrónico de suplantación de identidad notificados por los usuarios.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a23f27478d01092705a47d49884f200478348182
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 852e87ee76d9692b789ca217720ac3efb08f31a8
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583717"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624614"
 ---
 # <a name="user-submissions-policy"></a>Directiva de envíos de usuarios
 
@@ -39,22 +39,18 @@ En Microsoft 365 con Exchange Online buzones de correo, puede especificar un buz
 
 - [El complemento Detección de suplantación de identidad de informes](enable-the-report-phish-add-in.md)
 
-- [Informes integrados en Outlook web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (anteriormente conocido como Outlook Web App)
+- [Herramientas de informes de terceros](#third-party-reporting-tools)
 
-- [Informes integrados en Outlook para iOS y Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
+La entrega de mensajes notificados por el usuario a un buzón personalizado en lugar de directamente a Microsoft permite a los administradores notificar mensajes de forma selectiva y manual a Microsoft mediante [el envío de administrador.](admin-submission.md)
 
   > [!NOTE]
   > Si los informes se han deshabilitado en Outlook en la [web,](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)al habilitar los envíos de usuario aquí se invalidará esa configuración y se permitirá a los usuarios notificar mensajes en Outlook en la web de nuevo.
-
-También puede configurar herramientas de informes de mensajes de terceros para reenviar mensajes al buzón que especifique.
-
-La entrega de mensajes notificados por el usuario a un buzón personalizado en lugar de directamente a Microsoft permite a los administradores notificar mensajes de forma selectiva y manual a Microsoft mediante [el envío de administrador.](admin-submission.md)
 
 ## <a name="custom-mailbox-prerequisites"></a>Requisitos previos de buzón personalizado
 
 Use los artículos siguientes para configurar los requisitos previos necesarios para que los mensajes notificados por el usuario vayan al buzón personalizado:
 
-- Omitir el filtrado de correo no deseado en el buzón personalizado mediante la creación de una regla de flujo de correo de Exchange para establecer el nivel de confianza de correo no deseado. Vea [Usar el EAC para crear una](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) regla de flujo de correo que establezca el SCL de un mensaje para establecer el SCL en Omitir filtrado de correo no **deseado.**
+- Omitir el filtrado de correo no deseado en el buzón personalizado mediante la creación de una regla de flujo de correo de Exchange para establecer el nivel de confianza de correo no deseado. Vea [Usar el EAC para crear una](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) regla de flujo de correo que establezca el SCL de un mensaje para establecer el SCL en Omitir filtrado de correo no **deseado.**
 
 - Desactiva el examen de datos adjuntos en busca de malware en el buzón personalizado. Use [Configurar directivas](set-up-safe-attachments-policies.md) Caja fuerte datos adjuntos en Defender para Office 365 para crear una directiva de datos adjuntos de Caja fuerte con la opción **Desactivado** para la respuesta de malware desconocido de Caja fuerte **datos adjuntos.**
 
@@ -141,9 +137,17 @@ Después de comprobar que el buzón cumple todos los requisitos previos aplicabl
 
        Cuando haya terminado, haga clic en **Confirmar**.
 
+## <a name="third-party-reporting-tools"></a>Herramientas de informes de terceros
+
+Puede configurar herramientas de informes de mensajes de terceros para enviar mensajes notificados al buzón personalizado. El único requisito es que el mensaje original se incluya como datos adjuntos en el mensaje que se envía al buzón personalizado (no solo reenvía el mensaje original al buzón personalizado).
+
+Los requisitos de formato de mensaje se describen en la sección siguiente.
+
 ## <a name="message-submission-format"></a>Formato de envío de mensajes
 
-Los mensajes enviados a buzones personalizados deben seguir un formato de correo de envío específico. El asunto (título del sobre) del envío debe tener este formato:
+Para identificar correctamente los mensajes adjuntos originales, los mensajes que se envían al buzón personalizado requieren un formato específico. Si los mensajes no usan este formato, los mensajes adjuntos originales siempre se identifican como envíos de suplantación de identidad.
+
+Para identificar correctamente los mensajes adjuntos originales, los mensajes que se envían al buzón personalizado deben usar la siguiente sintaxis para el asunto (título del sobre):
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
@@ -153,7 +157,7 @@ donde SafetyAPIAction es uno de los siguientes valores enteros:
 - 2: No deseado
 - 3: Phishing
 
-En el siguiente ejemplo:
+En este ejemplo se usan los siguientes valores:
 
 - El mensaje se notifica como suplantación de identidad.
 - El identificador de mensaje de red es 49871234-6dc6-43e8-abcd-08d797f20abe.

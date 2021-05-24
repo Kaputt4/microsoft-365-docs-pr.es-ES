@@ -13,12 +13,12 @@ ms.collection:
 description: Obtenga información sobre cómo notificar falsos positivos y falsos negativos en Outlook la característica Mensaje de informe.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e848595035501f5da7b6099efd2700ebac6f17e3
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6f8c4fc327bfd467cdd1d0043c454e222e84125c
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291168"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625118"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Informar de falsos positivos y falsos negativos en Outlook
 
@@ -55,7 +55,7 @@ En las organizaciones de Microsoft 365 con buzones en buzones de Exchange Online
 Para los mensajes de la Bandeja de entrada o cualquier otra carpeta de correo electrónico excepto correo no deseado, use el siguiente método para notificar mensajes de correo no deseado y suplantación de identidad:
 
 1. Haga clic en **los** puntos suspensivos Más acciones  de la esquina superior derecha  del mensaje seleccionado, haga clic en Informar mensaje en el menú desplegable y, a continuación, seleccione Correo no deseado o **Suplantación de identidad**.
-  
+
    > [!div class="mx-imgBorder"]
    > ![Mensaje de informe: más acciones](../../media/report-message-more-actions.png)
 
@@ -67,10 +67,10 @@ Para los mensajes de la Bandeja de entrada o cualquier otra carpeta de correo el
    - Se ha movido a la carpeta correo no deseado si se ha notificado como correo no deseado.
 
    - Se elimina si se ha notificado como suplantación de identidad.
-   
+
 ### <a name="report-messages-that-are-not-junk"></a>Informar de mensajes que no son correo no deseado
 
-1. Haga clic **en los** puntos suspensivos Más acciones  de la esquina superior derecha del mensaje seleccionado, haga clic en Informar mensaje en el menú desplegable y, a continuación, haga clic en **No deseado**.  
+1. Haga clic **en los** puntos suspensivos Más acciones  de la esquina superior derecha del mensaje seleccionado, haga clic en Informar mensaje en el menú desplegable y, a continuación, haga clic en **No deseado**.
 
    > [!div class="mx-imgBorder"]
    > ![Mensaje de informe: más acciones](../../media/report-message-more-actions.png)
@@ -86,4 +86,4 @@ Para revisar los mensajes que los usuarios informan a Microsoft, tiene estas opc
 
 - Use el portal de envíos de administrador. Para obtener más información, vea [Ver envíos de usuarios a Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
 
-- Cree una regla de flujo de correo (también conocida como regla de transporte) para enviar copias de los mensajes notificados. Para obtener instrucciones, consulte [Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).
+- Cree una regla de flujo de correo (también conocida como regla de transporte) para enviar copias de los mensajes notificados. Para obtener instrucciones, vea [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).

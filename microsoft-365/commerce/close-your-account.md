@@ -18,14 +18,14 @@ ms.custom:
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
 search.appverid: MET150
-description: Obtenga información sobre cómo cerrar su cuenta con Microsoft.
+description: Al cerrar su cuenta con Microsoft, se elimina toda la información relacionada con su cuenta, incluidas las licencias, los usuarios y los datos de usuario.
 ms.date: 04/02/2021
-ms.openlocfilehash: ed73c191063a328490945c54dc2f5101c88f17e8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b212911707b5d6a967ab833a5a06bc76f5ceeb3b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537300"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624330"
 ---
 # <a name="close-your-account"></a>Cerrar la cuenta
 
@@ -51,15 +51,15 @@ Si su organización usa Active Directory que se sincroniza con Microsoft Azure A
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Paso 2: Cancelar todas las suscripciones activas
 
-1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
-2. En la **pestaña Productos,** busque una suscripción activa. Seleccione los tres puntos (más acciones) y, a continuación, **seleccione Cancelar suscripción**.
+1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+2. En la **pestaña Productos,** busque una suscripción activa. Seleccione los tres puntos (más acciones) y, después, seleccione **Cancelar suscripción**.
 3. En el panel **Cancelar suscripción**, seleccione una razón por la que cancela. Opcionalmente, proporcione algún comentario.
 4. Seleccione **Guardar**.
 5. Repita los pasos del 1 al 4 para cancelar todas las suscripciones activas.
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>Paso 3: Eliminar todas las suscripciones deshabilitadas
 
-1. En el centro de administración, vaya a la página **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
+1. En el centro de administración, vaya a la página de **Facturación** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Sus productos</a>.
 2. En la **pestaña Productos,** seleccione una suscripción deshabilitada.
 3. En la página detalles de la suscripción, en la sección Configuración de **suscripción y pago,** seleccione **Eliminar suscripción**.
 4. En el **panel Eliminar suscripción,** seleccione **Eliminar suscripción**.
@@ -88,3 +88,9 @@ También puede usar [PowerShell para deshabilitar la autenticación multifactor 
 5. Si su organización falla una o más comprobaciones, verá un vínculo a más información sobre cómo pasar las comprobaciones. Después de pasar todas las comprobaciones, **seleccione Eliminar** para completar el proceso.
 
 Después de completar este paso final, la cuenta con Microsoft se cierra y elimina.
+
+## <a name="related-content"></a>Contenido relacionado 
+
+[Comprender la factura o factura de Microsoft 365 para empresas](./billing-and-payments/understand-your-invoice2.md) (artículo)\
+[Cancelar la suscripción](./subscriptions/cancel-your-subscription.md) (artículo)
+

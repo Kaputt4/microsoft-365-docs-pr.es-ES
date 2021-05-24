@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Obtenga información sobre procedimientos recomendados para administrar los muchos temas de su organización con Temas de Viva.
-ms.openlocfilehash: d5cdae62cdec9193d354e7585364bd842a514a26
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 613c4ed85a62efd22ba104c810420a2d0af015c5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593882"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624842"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Administrar temas a escala en Temas de Microsoft Viva
 
@@ -28,15 +28,16 @@ En primer lugar, un aviso de las [cuatro etapas de los temas:](manage-topics.md#
 
 - **Sugerido**: se ha identificado un tema en AI y tiene suficientes recursos compatibles, conexiones y propiedades. (Se marcan como **un tema sugerido** en la interfaz de usuario).
 
-- **Confirmado:** es necesario validar un tema sugerido por la IA. La validación del tema se produce cuando:
+- **Confirmado:** un tema que ha sido detectado por AI y que se ha validado. La validación del tema se produce cuando:
 
    - Un administrador de conocimientos confirma un tema. Un administrador de [conocimientos confirma un tema en](manage-topics.md#confirmed-topics) la página Administrar **temas.**
 
    - Varios usuarios confirman un tema. Debe haber una red de dos votos positivos recibidos de usuarios que votaron mediante el mecanismo de comentarios en la tarjeta de tema. Por ejemplo, si un usuario votó positivo y un usuario votó negativo para un tema en particular, aún necesitará dos votos positivos más para confirmar el tema.
  
-- **Publicado:** un tema confirmado que se ha seleccionado. Se han realizado ediciones manuales para mejorar su calidad.
+- **Publicado:** tema que se ha seleccionado. Se han realizado modificaciones manuales para mejorar su calidad o ha sido creada por un usuario.
 
 - **Eliminado:** un tema que se ha rechazado y que ya no será visible para los visores. Un tema se puede quitar en cualquier estado (sugerido, confirmado o publicado). La eliminación del tema se produce cuando:
+
    - Un administrador de conocimientos quita un tema. Un administrador de conocimientos quita un tema de la **página Administrar temas.**
 
    - Varios usuarios emitirán votos negativos mediante el mecanismo de comentarios en la tarjeta de tema. Para que se quite un tema, debe haber una red de dos votos negativos recibidos de los usuarios. Por ejemplo, si un usuario votó negativo y un usuario votó positivo para un tema en particular, aún necesitará dos votos negativos más para que se elimine el tema.
@@ -169,7 +170,7 @@ Los sitios de portal más grandes de la organización podrían haber invertido t
 
 Si su organización ha invertido en bases de conocimiento o sitios wiki, estos pueden proporcionar una lista de temas que usar para sus esfuerzos de curación iniciales. Si son especialmente grandes, seleccione los temas más vistos o editados como punto de partida.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Administrar temas en el Centro de temas](manage-topics.md)
 

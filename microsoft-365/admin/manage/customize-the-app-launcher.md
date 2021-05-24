@@ -22,17 +22,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
-description: 'Cree vínculos rápidos a su correo electrónico, documentos, aplicaciones, sitios de SharePoint, sitios externos y otros recursos agregando iconos personalizados al iniciador de aplicaciones. '
-ms.openlocfilehash: 598cfeb75fc811c87519c4479fa8fcab450466c3
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+description: Crea vínculos rápidos a tu correo electrónico, documentos, aplicaciones, sitios SharePoint, sitios externos y otros recursos agregando iconos personalizados al iniciador de aplicaciones.
+ms.openlocfilehash: 47f871d66f180225e877a521ef159fc745960507
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327215"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623778"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Agregar iconos personalizados en el iniciador de aplicaciones
 
-En Microsoft 365, puedes acceder rápida y fácilmente a tu correo electrónico, calendarios, documentos y aplicaciones con el iniciador de aplicaciones ([más información](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)). Se trata de aplicaciones que obtiene con Microsoft 365, así como aplicaciones personalizadas que se agregan desde la [Tienda SharePoint](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) o [Azure AD.](/previous-versions/office/office-365-api/)
+En Microsoft 365, puedes acceder rápida y fácilmente a tu correo electrónico, calendarios, documentos y aplicaciones con el iniciador de aplicaciones ([más información](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)). Estas son aplicaciones que obtienes con Microsoft 365 aplicaciones personalizadas que agregas desde SharePoint [Store](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43) o [Azure AD](/previous-versions/office/office-365-api/).
   
 Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a sitios de SharePoint, sitios externos, aplicaciones heredadas y mucho más. El icono personalizado aparece en **Todas** las aplicaciones del iniciador de aplicaciones, pero puede anclarlo a las aplicaciones del **Inicio** e indicar a los usuarios que hagan lo mismo. Esto le facilitará la tarea de buscar los sitios, aplicaciones y recursos necesarios para realizar su trabajo. En el ejemplo siguiente, se usa un icono personalizado denominado "Contoso Portal" para obtener acceso a un sitio de intranet de SharePoint de la organización. 
   
@@ -40,7 +40,7 @@ Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a s
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>Agregar un icono personalizado en el iniciador de aplicaciones
 
-1. Inicie sesión en el Centro de administración como administrador global, vaya a Configuración de la organización  >  **Configuración** y elija la pestaña **Perfil de** la organización.
+1. Inicie sesión en el Centro de administración como administrador global, vaya a Configuración Org Configuración y elija la pestaña  >   **Perfil de** la organización.
     
 2. En la **pestaña Perfil de** la organización, elija Iconos del **iniciador de aplicaciones personalizados.**
   
@@ -65,11 +65,11 @@ Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a s
     El icono personalizado aparece en el iniciador de aplicaciones en la pestaña **Todas** para sus usuarios y usted. 
 
     > [!NOTE]
-    > Si no ve el icono personalizado que se creó en los pasos anteriores, asegúrese de que tiene un buzón de Exchange Online asignado a usted y de que ha iniciado sesión en su buzón al menos una vez. Estos pasos son necesarios para iconos personalizados en Microsoft 365. 
+    > Si no ve el icono personalizado que se creó en los pasos anteriores, asegúrese de que tiene un buzón de Exchange Online asignado a usted y de que ha iniciado sesión en su buzón al menos una vez. Estos pasos son necesarios para los iconos personalizados de Microsoft 365. 
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. En el Centro de administración, vaya a la pestaña **Configuración**  >  **de la organización** Configuración del perfil de  >  **la** organización.
+1. En el Centro de administración, vaya a la **pestaña Configuración**  >  **Organización Configuración** perfil de  >  **la** organización.
     
 2. En la **página Perfil de** la organización, junto a Agregar iconos   **personalizados para su organización,** seleccione **Editar**.
 
@@ -79,6 +79,12 @@ Puede agregar sus propios iconos en el iniciador de aplicaciones que apunten a s
     
 Para eliminar un icono personalizado, en la ventana Iconos **personalizados,** seleccione el icono, seleccione **Quitar icono**  >  **Eliminar**. 
   
-## <a name="whats-next"></a>¿Cuál es el siguiente paso?
+## <a name="next-steps"></a>Pasos siguientes
 
-Además de agregar iconos al iniciador de aplicaciones, puedes agregar iconos del iniciador de aplicaciones a la barra de navegación ([más información](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). Para personalizar la apariencia de Microsoft 365 para que coincida con la marca de su organización, vea Personalizar el tema [de Microsoft 365](../setup/customize-your-organization-theme.md).
+Además de agregar iconos al iniciador de aplicaciones, puedes agregar iconos del iniciador de aplicaciones a la barra de navegación ([más información](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)). Para personalizar el aspecto de Microsoft 365 para que coincida con la marca de su [organización,](../setup/customize-your-organization-theme.md)vea Personalizar el Microsoft 365 tema .
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Anclar aplicaciones al iniciador de aplicaciones](pin-apps-to-app-launcher.md) de los usuarios (artículo)\
+[Actualice su Microsoft 365 usuarios empresariales al último Office cliente](../setup/upgrade-users-to-latest-office-client.md) (artículo)\
+[Administrar complementos en el Centro de administración](../manage/manage-addins-in-the-admin-center.md) (artículo)

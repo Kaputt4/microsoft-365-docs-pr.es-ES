@@ -17,12 +17,12 @@ ms.collection:
 description: Obtenga más información sobre la configuración segura de forma predeterminada en Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 957ca3b563d4f1466dd537c3ae974a4fd61aa6f2
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 2d5cdc8f8faa9c2d5772fd1572134ea49cdd77da
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346321"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624054"
 ---
 # <a name="secure-by-default-in-office-365"></a>Proteger de forma predeterminada en Office 365
 
@@ -77,7 +77,7 @@ Para ponerlo de otra manera: como servicio de seguridad, estamos actuando en su 
 > [!NOTE]
 > En julio de 2021, la seguridad se extenderá de forma predeterminada a Exchange de flujo de correo (también conocidas como reglas de transporte). Si usa reglas de flujo de correo para permitir simulaciones de suplantación de identidad de terceros o entrega [](configure-advanced-delivery.md) sin filtrar a buzones de operación de seguridad, finalmente deberá eliminar estas reglas y cambiar al uso de la directiva de entrega avanzada cuando la característica esté _disponible._
 
-La única invalidación que permite que los mensajes de suplantación de identidad de elevada confianza omita el filtrado son las reglas de flujo de correo. Para usar reglas de flujo de correo para omitir el filtrado, vea Usar reglas de flujo de [correo para establecer el SCL en mensajes](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+La única invalidación que permite que los mensajes de suplantación de identidad de elevada confianza omita el filtrado son las reglas de flujo de correo. Para usar reglas de flujo de correo para omitir el filtrado, vea Usar reglas de flujo de [correo para establecer el SCL en mensajes](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 Solo debe considerar el uso de invalidaciones en los siguientes escenarios:
 
