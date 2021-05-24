@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 05/12/2021
+ms.date: 05/24/2021
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: Obtenga información sobre cómo configurar Microsoft Viva Learning (versión preliminar) en el centro Teams administración.
-ms.openlocfilehash: e5af676752064738e26f9b934a60973cb9b0200d
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a96a2f3ecf7d4e1ee0c136ae155868218f08aaf4
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625314"
+ms.locfileid: "52636139"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Configurar Microsoft Viva Learning (versión preliminar) en el Centro Teams administración
 
@@ -29,7 +29,7 @@ ms.locfileid: "52625314"
 
 El Teams instala Viva Learning (versión preliminar) y aplica directivas de permisos a través del centro Teams administración.
 
-1. Para Public Preview, primero debe establecer la directiva Update. Para obtener más información, vea el Teams de Microsoft Teams [Public Preview](/MicrosoftTeams/public-preview-doc-updates).
+1. Para Viva Learning (versión preliminar), primero debe establecer la directiva de actualización en Teams. Para obtener más información, [vea Microsoft Teams Public Preview](/MicrosoftTeams/public-preview-doc-updates).
 
     1. Inicie sesión en el Centro Teams administración.
 
@@ -39,17 +39,17 @@ El Teams instala Viva Learning (versión preliminar) y aplica directivas de perm
 
     4. Asigne un nombre a la directiva de actualización, agregue una directiva y active **Mostrar características de vista previa.**
 
-2. El administrador debe notificar a los usuarios la actualización de directivas para que muevan su compilación a Public Preview para Teams. 
+2. El administrador debe notificar a los usuarios de la actualización de directivas para que muevan su compilación a la versión preliminar pública para Teams. 
 
-    1. El usuario debe seleccionar su imagen de perfil --> Acerca de --> vista previa pública.
+    1. Los usuarios deben seleccionar su imagen de perfil > **Acerca de** la vista  >  **previa pública**.
    
         ![Navegación superior en la Teams que muestra el perfil del usuario](../media/learning/learning-app-select-profile-teams.png)
     
-    2. El usuario debe aceptar los términos de versión preliminar pública.
+    2. Los usuarios deben aceptar los **términos y** condiciones de la versión preliminar pública.
 
         ![Cambiar a la compilación de vista previa pública](../media/learning/learning-app-switch-to-public-preview.png)
  
-3. Para las organizaciones que tienen directivas restrictivas y necesitan habilitar Viva Learning, siga el proceso en la siguiente sección.
+3. Para las organizaciones que tienen directivas restrictivas y necesitan habilitar Viva Learning (versión preliminar), siga el proceso en la sección siguiente.
 
 ## <a name="manage-settings-for-viva-learning-preview"></a>Administrar la configuración de Viva Learning (versión preliminar)
 

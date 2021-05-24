@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Los usuarios con cuentas profesionales o educativas válidas pueden obtener Cortana en experiencias Microsoft 365 que cumplan Office 365 promesas de seguridad de nivel empresarial.
-ms.openlocfilehash: aad371fc531a03f42e1756a41405082b6b528b06
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f626ba0d0295655dcdb3d4df2b332dcf05f1a6b5
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582781"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635803"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -187,8 +187,6 @@ Para los servicios que se rigen por el [Contrato de servicios de Microsoft](http
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Asistencia de voz de Cortana en Teams](/microsoftteams/cortana-in-teams) (artículo)
-
-[Configurar Cortana en Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (artículo)
-
+[Asistencia de voz de Cortana en Teams](/microsoftteams/cortana-in-teams) (artículo)\
+[Configurar Cortana en Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (artículo)\
 [¿Qué puedes hacer con Reproducir mis correos electrónicos de Cortana?](https://support.microsoft.com/help/4558256)

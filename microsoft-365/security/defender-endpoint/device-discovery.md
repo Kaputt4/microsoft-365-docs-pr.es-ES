@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2dee1193e9f852e66df324927bf38d37d736d251
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ed4e0c477bd2a8840e920b337f05c8730965bcff
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245953"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636247"
 ---
 # <a name="device-discovery-overview"></a>Información general de la detección de dispositivo
 
@@ -62,7 +62,7 @@ Hay dos modos de detección:
 
 
 > [!IMPORTANT]
-> La detección se establece en modo básico. Puede elegir conservar esta configuración a través de la página de configuración. La detección estándar será el modo predeterminado para todos los clientes de vista previa a partir del 10 de mayo de 2021, a menos que se modifique a través de la página de configuración antes de esta fecha.
+> La detección se establece en modo básico. Puede elegir conservar esta configuración a través de la página de configuración. La detección estándar será el modo predeterminado para todos los clientes a partir del 19 de julio de 2021, a menos que se modifique a través de la página de configuración antes de esta fecha.
 
 ### <a name="basic-discovery"></a>Detección básica 
 

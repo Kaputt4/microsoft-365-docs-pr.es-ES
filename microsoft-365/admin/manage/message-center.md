@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Obtenga información general sobre el Microsoft 365 de mensajes y su rol en el seguimiento de características nuevas y modificadas y otros anuncios importantes.
-ms.openlocfilehash: edef3bb5a9016cf6f65f307fcd7c706bf4424d2f
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 51cdf1924b3aaa507a6b41f903a6aea5d81d68f1
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593962"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636051"
 ---
 # <a name="message-center"></a>Centro de mensajes
 
@@ -303,8 +303,6 @@ Para obtener información general sobre el Centro de mensajes, vea [Centro de me
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Configurar las opciones de versión estándar o dirigida](../manage/release-options-in-office-365.md) (artículo)
-
-[Administrar qué Office aparecen en Novedades](../manage/show-hide-new-features.md) (artículo)
-
-[Suscripciones empresariales y documentación de facturación](../../commerce/index.yml) (vínculos)
+[Configurar las opciones de versión estándar o dirigida](../manage/release-options-in-office-365.md) (artículo)\
+[Administrar qué Office aparecen en Novedades](../manage/show-hide-new-features.md) (artículo)\
+[Suscripciones empresariales y documentación de facturación](../../commerce/index.yml) (página de vínculos)

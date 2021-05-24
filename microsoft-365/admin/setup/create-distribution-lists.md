@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Cree grupos de distribución o listas en el centro de administración de Microsoft 365 para que pueda enviar correos electrónicos a un grupo sin escribir el nombre de cada destinatario.
-ms.openlocfilehash: 7c04ca3e17959afd4138a6ddf9d9cbcd6c4dbafb
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 845aa04e5e26beb14fca0fa3bc08c0599077b152
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572254"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635671"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Crear grupos de distribución en el centro Microsoft 365 administración
   
@@ -76,8 +76,6 @@ Consulte Problemas [de grupo de distribución](/office365/troubleshoot/groups/di
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Configuración de correo electrónico del usuario](../email/office-365-user-email-settings.md) (artículo)
-
-[Crear, editar o eliminar un grupo de seguridad en el centro Microsoft 365 administración](../email/create-edit-or-delete-a-security-group.md) (artículo)
-
+[Configuración de correo electrónico del](../email/office-365-user-email-settings.md) usuario (artículo)\
+[Crear, editar o eliminar un grupo](../email/create-edit-or-delete-a-security-group.md) de seguridad en el centro Microsoft 365 administración (artículo)\
 [Crear un buzón compartido](../email/create-a-shared-mailbox.md) (artículo)

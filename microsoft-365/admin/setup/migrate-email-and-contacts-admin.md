@@ -28,12 +28,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Aprenda a importar contactos, calendarios y correos electrónicos de Gmail u otro proveedor de correo electrónico y migrarlos a Microsoft 365.
-ms.openlocfilehash: 56075c19e15621755a1500d37513430842ac99e8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 9f775135e739c91a0fb48a060136728f901159f5
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297049"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635919"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Migrar correo y contactos a Microsoft 365
 
@@ -52,6 +52,8 @@ Siga estos pasos para importar o migrar el correo electrónico, los contactos y 
 - [Importar contactos a Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
 - [Importar un calendario de Google Calendar](https://support.microsoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330)
+
+## <a name="watch-import-calendars"></a>Watch: Import calendars
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
@@ -90,3 +92,9 @@ Agregue una cuenta, como su cuenta privada de Gmail, a Outlook.
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>Varios buzones: los administradores pueden importar masivamente correo electrónico, contactos y calendarios a Microsoft 365
 
 Según el sistema de correo electrónico de origen que use, podrá elegir entre varios métodos de migración masiva. Lea [Formas de migrar varias cuentas de](/Exchange/mailbox-migration/mailbox-migration) correo electrónico Microsoft 365 para decidir qué método funciona por usted.
+
+## <a name="related-content"></a>Contenido relacionado
+
+[Planear la configuración de Microsoft 365 para empresas](plan-your-setup.md) (artículo)\
+[Instalar Office aplicaciones](install-applications.md) (página de vínculos)\
+[Información general del Centro de administración de Microsoft 365](../../business-video/admin-center-overview.md) (vídeo)

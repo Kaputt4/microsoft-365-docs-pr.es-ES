@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Obtenga información sobre cómo eliminar una cuenta de usuario y qué hacer con el correo electrónico del usuario y OneDrive contenido y si desea conservar la licencia del producto.
-ms.openlocfilehash: c30edb598f659337778ec956737934da5fedad18
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: ff10d3289eae87f84685c22b81db03798ca9d7eb
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593410"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634213"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Elimine un usuario de su organización
   
@@ -171,12 +171,8 @@ Estos son los problemas más comunes que los usuarios encuentran al eliminar un 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Restaurar un usuario](restore-user.md) (artículo)
-  
-[Eliminar permanentemente un buzón](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (artículo)
-
-[Quitar un antiguo empleado de Office 365](remove-former-employee.md) (artículo)
-
-[Agregar un nuevo empleado a Office 365](add-new-employee.md) (artículo)
-
+[Restaurar un usuario](restore-user.md) (artículo)\
+[Eliminar permanentemente un buzón](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (artículo)\
+[Quitar un antiguo empleado de Office 365](remove-former-employee.md) (artículo)\
+[Agregar un nuevo empleado a Office 365](add-new-employee.md) (artículo)\
 [Eliminar una cuenta de usuario:](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))use estas instrucciones si su empresa usa **Active Directory** que se sincroniza con Azure AD. No podrá hacerlo a través de Office 365. (artículo)

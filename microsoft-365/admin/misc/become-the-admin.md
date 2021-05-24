@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Obtenga información sobre cómo comprobar la propiedad del dominio y el correo electrónico para asumir un inquilino no administrado creado por un registro de usuario de autoservicio en Microsoft 365.
-ms.openlocfilehash: c37bf153edf39f53b5c10f020b0cbb8d630eb4a6
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: aa44023ffdc2b59e4db024706323c5b872566260
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593938"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635991"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Realizar una toma de administración interna
 
@@ -68,10 +68,7 @@ Si es un administrador y desea asumir un inquilino no administrado creado por un
   
 ## <a name="related-content"></a>Contenido relacionado
 
-YouTube: [3 pasos para realizar una](https://www.youtube.com/watch?v=xt5EsrQBZZk) toma de administración de TI para Power BI y Microsoft 365 (vídeo)
-
-[Toma de posesión de administradores en Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (artículo)
-
-[Uso del registro de autoservicio en su organización](self-service-sign-up.md) (artículo)
-  
+YouTube: [3 pasos para realizar](https://www.youtube.com/watch?v=xt5EsrQBZZk) una toma de administración de TI para Power BI y Microsoft 365 (vídeo)\
+[Toma de administración en Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (artículo)\
+[Uso del registro de autoservicio en la organización](self-service-sign-up.md) (artículo)\
 [Descripción de la Power BI de administrador de servicios (artículo)](/power-bi/service-admin-role)

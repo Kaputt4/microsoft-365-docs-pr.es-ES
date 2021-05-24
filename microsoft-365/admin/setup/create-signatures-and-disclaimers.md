@@ -25,18 +25,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Administrar firmas de correo electrónico, incluidas declinaciones de responsabilidades legales o declaraciones de divulgación para todos los mensajes de correo electrónico que entran o salen de la organización.
-ms.openlocfilehash: 05cfeeb01231e7f99d2a96fc37581b4c9a23f5aa
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f72d522c7dc592a7f719d716e22ecf726d00a6de
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582757"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635659"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Crear firmas y avisos de declinación de responsabilidades en toda la organización
 
  Puede administrar firmas de correo electrónico agregando una firma de correo electrónico, un aviso legal o una declaración de divulgación a los mensajes de correo electrónico que entran o salen de su organización. Puede configurarlo para que se aplique a todos los mensajes entrantes y salientes, como se muestra a continuación. O puede aplicarlo a determinados mensajes; por ejemplo, a aquellos que contengan palabras específicas o patrones de texto.
 
- Vea un breve vídeo sobre cómo crear una firma de correo electrónico en toda la empresa. <br><br>
+## <a name="watch-create-a-company-wide-email-signature"></a>Watch: Create a company-wide email signature
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
@@ -119,9 +119,7 @@ Para obtener información acerca del uso de PowerShell, vea Avisos de declinaci�
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Migrar correo electrónico y contactos a Microsoft 365](migrate-email-and-contacts-admin.md) (vídeo)
-
-[Configuración de correo electrónico del usuario](../email/office-365-user-email-settings.md) (artículo)
-
+[Migrar correo electrónico y contactos a Microsoft 365](migrate-email-and-contacts-admin.md) (vídeo)\
+[Configuración de correo electrónico del](../email/office-365-user-email-settings.md) usuario (artículo)\
 [Información general del Centro de administración de Microsoft 365](../../business-video/admin-center-overview.md) (vídeo)
 

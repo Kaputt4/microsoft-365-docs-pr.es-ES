@@ -19,14 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Debe ser administrador de una suscripción empresarial para obtener ayuda de administrador o soporte técnico en línea o por teléfono en Microsoft 365 Empresa Premium.
-ms.openlocfilehash: e6308a9728731052d540cf3e872b6e153b64aae2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e1250d5c291832e5a337f34e49ce0b7cf68fb08d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535715"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635907"
 ---
 # <a name="get-support"></a>Obtener soporte técnico
+
+## <a name="watch-get-help-or-support"></a>Watch: Obtener ayuda o soporte técnico 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -256,8 +258,6 @@ También puede [buscar en los foros de la comunidad de Microsoft 365 para empre
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Buscar documentos y formación](find-help-answers.md) (artículo)
-
-[Configuración rápida de empleados](employee-quick-setup.md) (artículo)
-
+[Buscar documentos y aprendizaje](find-help-answers.md) (artículo)\
+[Configuración rápida de empleados](employee-quick-setup.md) (artículo)\
 [Información general sobre Microsoft 365 Empresa Premium configuración](setup-overview.md) (vídeo)

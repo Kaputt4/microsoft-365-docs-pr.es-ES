@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: Habilitar el uso compartido de calendarios en el Microsoft 365 de administración para que los usuarios puedan compartir sus calendarios con cualquier persona dentro o fuera de la organización.
-ms.openlocfilehash: 6f4c215403e16ac6658619e50e6115606f106397
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: ee2b48182efec3e8bc22f47fd1657cd123ec65f8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582721"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635815"
 ---
 # <a name="share-calendars-with-external-users"></a>Compartir calendarios con usuarios externos
 
@@ -50,12 +50,10 @@ Puede habilitar el uso compartido de calendarios para todos los usuarios de la o
 
 ## <a name="invite-people-to-access-calendars"></a>Invitar a personas a acceder a los calendarios
 
-Una vez habilitado el uso compartido, los propietarios del calendario pueden extender invitaciones a usuarios específicos. Consulte [Compartir su calendario en Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5) para obtener instrucciones.
+Una vez habilitado el uso compartido, los propietarios del calendario pueden extender invitaciones a usuarios específicos. Para obtener instrucciones, consulte [Sharing your calendar in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5).
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Activar o desactivar el uso compartido externo de un sitio](/sharepoint/change-external-sharing-site) (artículo)
-
-[Información general del Centro de administración de Microsoft 365](../../business-video/admin-center-overview.md) (vídeo)
-
+[Activar o desactivar el uso compartido externo de un sitio](/sharepoint/change-external-sharing-site) (artículo)\
+[Información general sobre el Microsoft 365 de administración](../../business-video/admin-center-overview.md) (vídeo)\
 [Administrar el correo electrónico y los calendarios](../email/index.yml) (página de vínculos)

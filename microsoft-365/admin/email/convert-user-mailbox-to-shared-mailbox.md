@@ -20,16 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Aprenda a convertir un buzón privado en un buzón compartido al que puedan tener acceso varias personas en lugar de solo una persona. '
-ms.openlocfilehash: 73e2bad40037e1343f4e08c07ca6b26df16b1a30
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0beb85e5a69b72bcd244cd654c399e91ded06ba7
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537624"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635479"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertir un buzón de usuario en un buzón compartido
 
 Al convertir el buzón de un usuario en un buzón compartido, se conserva todo el correo electrónico y el calendario existentes. Solo ahora está en un buzón compartido en el que varias personas podrán tener acceso a él en lugar de una persona. En una fecha posterior, puede volver a convertir un buzón compartido en un buzón de usuario (privado).
+
+## <a name="before-you-begin"></a>Antes de empezar
 
 **Estas son algunas cosas realmente importantes que necesita saber:**
 
@@ -59,7 +61,6 @@ Para todo lo demás que necesita saber acerca de los buzones compartidos, vea Ac
 > [!NOTE]
 > Los buzones compartidos no requieren una licencia independiente. Sin embargo, si desea habilitar In-Place Archive o poner una retención de In-Place o una retención por juicio en un buzón compartido, debe asignar una licencia del Plan 1 de Exchange Online con una licencia del Plan 2 Archivado de Exchange Online o Exchange Online al buzón.
 
-
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>Convertir el buzón de un usuario eliminado
 
 Supongamos que ha eliminado una cuenta de usuario y ahora desea convertir su buzón antiguo en un buzón de recurso compartido. Esto es lo que debe hacer:
@@ -77,7 +78,6 @@ Supongamos que ha eliminado una cuenta de usuario y ahora desea convertir su buz
 6. Una vez hecho esto, puede quitar la licencia del buzón del usuario. No elimine el buzón antiguo del usuario. El buzón compartido lo necesita allí como delimitador.
     
 7. Agregue miembros al buzón compartido.
-
 
 ## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>Convertir un buzón compartido de nuevo en el buzón (privado) de un usuario
 
@@ -104,12 +104,8 @@ Para obtener más información sobre cómo convertir un buzón de usuario en un 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Acerca de los buzones compartidos](about-shared-mailboxes.md) (artículo)
-
-[Crear un buzón compartido](create-a-shared-mailbox.md) (artículo)
-
-[Configurar un buzón compartido](configure-a-shared-mailbox.md) (artículo)
-
-[Quitar una licencia de un buzón compartido](remove-license-from-shared-mailbox.md) (artículo)
-
-[Resolver problemas con buzones compartidos](resolve-issues-with-shared-mailboxes.md) (artículo)
+[Acerca de los buzones compartidos](about-shared-mailboxes.md) (artículo)\
+[Crear un buzón compartido](create-a-shared-mailbox.md) (artículo)\
+[Configurar un buzón compartido](configure-a-shared-mailbox.md) (artículo)\
+[Quitar una licencia de un buzón compartido](remove-license-from-shared-mailbox.md) (artículo)\
+[Resolver problemas con los buzones compartidos](resolve-issues-with-shared-mailboxes.md) (artículo)

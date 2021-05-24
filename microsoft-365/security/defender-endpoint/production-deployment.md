@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7abf1c9e4115c928ae581da3789270fd8ed036d3
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 6b49565c45c1f38d0d2ce71b097af079782ba4de
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476315"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636199"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurar Microsoft Defender para la implementación de puntos de conexión
 
@@ -56,9 +56,9 @@ En este escenario de implementación, se le guiará a través de los pasos sigui
 
 ## <a name="check-license-state"></a>Comprobar el estado de la licencia
 
-La comprobación del estado de la licencia y si se aprovisionó correctamente, se puede realizar a través del Centro de administración o a través de **Microsoft Azure Portal**.
+Comprobar el estado de la licencia y si se aprovisionó correctamente, se puede realizar a través del Centro de administración o a través **del portal Microsoft Azure .**
 
-1. Para ver las licencias, vaya a **Microsoft Azure Portal** y vaya a la sección licencia de Microsoft Azure [Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
+1. Para ver las licencias, vaya al **portal de** Microsoft Azure y vaya a la sección Microsoft Azure licencia [del portal.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
 
    ![Imagen de la página licencias de Azure](images/atp-licensing-azure-portal.png)
 
@@ -82,41 +82,14 @@ Para obtener acceso a las licencias que se aprovisionan a su empresa y comprobar
 
 
 ## <a name="tenant-configuration"></a>Configuración del espacio empresarial
+La incorporación a Microsoft Defender para Endpoint es fácil. En el menú de navegación, seleccione cualquier elemento en la sección Extremos o cualquier característica de Microsoft 365 Defender como Incidentes, Cacería, Centro de acción o Análisis de amenazas para iniciar el proceso de incorporación.
 
-Al obtener acceso al Centro de seguridad de Microsoft Defender por primera vez, un asistente que le guiará a través de algunos pasos iniciales. Al final del asistente para la instalación, se creará una instancia en la nube dedicada de Defender para endpoint. El método más sencillo es realizar estos pasos desde un dispositivo cliente de Windows 10.
-
-1. Desde un explorador web, vaya a <https://securitycenter.windows.com> .
-
-    ![Imagen de Configurar los permisos de Microsoft Defender para endpoint](images/atp-setup-permissions-wdatp-portal.png)
-
-2. Si va a través de una licencia DE PRUEBA, vaya al vínculo ( <https://signup.microsoft.com/Signup?OfferId=6033e4b5-c320-4008-a936-909c2825d83c&dl=WIN_DEF_ATP&pc=xxxxxxx-xxxxxx-xxx-x> )
-
-    Una vez completado el paso de autorización, se mostrará **la** pantalla de bienvenida.
-3. Siga los pasos de autorización.
-
-    ![Imagen de la pantalla de bienvenida para la configuración del portal](images/welcome1.png)
-
-4. Configurar preferencias.
-
-   **Ubicación de almacenamiento de** datos: es importante configurar esto correctamente. Determine dónde quiere hospedarse el cliente principalmente: ESTADOS UNIDOS, UE o Reino Unido. No puede cambiar la ubicación después de esta configuración y Microsoft no transferirá los datos desde la geolocalización especificada. 
-
-    **Retención de datos:** el valor predeterminado es de seis meses.
-
-    **Habilitar características de vista previa:** el valor predeterminado está en, se puede cambiar más adelante.
-
-    ![Imagen de la ubicación geográfica en configuración](images/setup-preferences.png)
-
-5. Seleccione **Siguiente**.
-
-     ![Imagen de configuración de preferencias finales](images/setup-preferences2.png)
-
-6. Seleccione **Continuar**.
-
+Desde un explorador web, vaya al Centro [Microsoft 365 seguridad](https://security.microsoft.com).
 
 ## <a name="network-configuration"></a>Configuración de red
 Si la organización no requiere que los puntos de conexión usen un proxy para tener acceso a Internet, omita esta sección.
 
-El sensor de Microsoft Defender para punto de conexión requiere HTTP de Microsoft Windows (WinHTTP) para informar los datos del sensor y comunicarse con el servicio Microsoft Defender para punto de conexión. El sensor incrustado de Microsoft Defender para endpoint se ejecuta en el contexto del sistema mediante la cuenta LocalSystem. El sensor usa los servicios HTTP de Microsoft Windows (WinHTTP) para habilitar la comunicación con el servicio en la nube Microsoft Defender para punto de conexión. La configuración de WinHTTP es independiente de la configuración de proxy de exploración de Internet de Windows Internet (WinINet) y solo puede detectar un servidor proxy mediante los siguientes métodos de detección:
+El sensor de Microsoft Defender para punto de conexión requiere HTTP de Microsoft Windows (WinHTTP) para informar los datos del sensor y comunicarse con el servicio Microsoft Defender para punto de conexión. El sensor incrustado de Microsoft Defender para endpoint se ejecuta en el contexto del sistema mediante la cuenta LocalSystem. El sensor usa los servicios HTTP de Microsoft Windows (WinHTTP) para habilitar la comunicación con el servicio en la nube Microsoft Defender para punto de conexión. La configuración de WinHTTP es independiente de la configuración de proxy de exploración de Internet de Windows (WinINet) y solo puede detectar un servidor proxy mediante los siguientes métodos de detección:
 
 **Métodos de detección automática:**
 
@@ -136,18 +109,18 @@ Si se ha implementado un proxy transparente o WPAD en la topología de red, no e
 
 Configure un proxy estático basado en el Registro para permitir que solo el sensor de Microsoft Defender para endpoints informe datos de diagnóstico y se comunique con Microsoft Defender para los servicios de punto de conexión si un equipo no tiene permiso para conectarse a Internet. El proxy estático se puede configurar mediante la directiva de grupo (GP). La directiva de grupo se puede encontrar aquí:
 
- - Plantillas administrativas Componentes de Windows Recopilación de datos y versiones preliminares \> Configurar el uso de proxy \> autenticado para el servicio de telemetría y experiencia del usuario \> conectado
+ - Plantillas administrativas Windows recopilación de datos y versiones preliminares Configurar el uso de \> proxy autenticado para el servicio de telemetría y experiencia del usuario \> \> conectado
      - Estadíla en **Habilitada** y seleccione **Deshabilitar el uso de proxy autenticado**
 
 1. Abra la Consola de administración de directivas de grupo.
 2. Cree una directiva o edite una directiva existente basada en las prácticas organizativas.
-3. Edite la directiva de grupo y vaya a Plantillas administrativas Componentes de Windows Recopilación de datos y versiones preliminares Configure **\> \> \> Authenticated Proxy usage for the Connected User Experience and Telemetry Service**. 
+3. Edite la directiva de grupo y vaya a Plantillas administrativas Windows Componentes de recopilación de datos y versiones preliminares Configure **\> \> \> Authenticated Proxy usage for the Connected User Experience and Telemetry Service**. 
     ![Imagen de configuración de directiva de grupo](images/atp-gpo-proxy1.png)
 
 4. Seleccione **Habilitado**.
 5. Seleccione **Deshabilitar el uso de proxy autenticado**.
    
-6. Vaya a Plantillas administrativas Componentes de Windows Recopilación de datos **\> y Versiones \> preliminares Configure connected user experiences and \> telemetry**.
+6. Vaya a Plantillas administrativas Windows de datos componentes y versiones **\> \> preliminares \> Configure las experiencias de usuario conectadas y la telemetría**.
     ![Imagen de la configuración de directiva de grupo](images/atp-gpo-proxy2.png)
 7. Seleccione **Habilitado**.
 8. Escriba el **nombre del servidor proxy**.
@@ -189,10 +162,10 @@ Use netsh para configurar un proxy estático en todo el sistema.
 
 ###  <a name="proxy-configuration-for-down-level-devices"></a>Configuración de proxy para dispositivos de nivel inferior
 
-Down-Level incluyen estaciones de trabajo de Windows 7 SP1 y Windows 8.1, así como Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 y versiones de Windows Server 2016 anteriores a Windows Server CB 1803. Estos sistemas operativos tendrán el proxy configurado como parte del Agente de administración de Microsoft para controlar la comunicación desde el punto de conexión a Azure. Consulte la Guía de implementación rápida de Microsoft Management Agent para obtener información sobre cómo se configura un proxy en estos dispositivos.
+Down-Level incluyen Windows estaciones de trabajo 7 SP1 y Windows 8.1, así como Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 y versiones de Windows Server 2016 anteriores a Windows Server CB 1803. Estos sistemas operativos tendrán el proxy configurado como parte del Agente de administración de Microsoft para controlar la comunicación desde el punto de conexión a Azure. Consulte la Guía de implementación rápida de Microsoft Management Agent para obtener información sobre cómo se configura un proxy en estos dispositivos.
 
 ### <a name="proxy-service-urls"></a>Direcciones URL del servicio proxy
-Las direcciones URL que incluyen v20 solo son necesarias si tienes dispositivos Windows 10, versión 1803 o posteriores. Por ejemplo, solo es necesario si el dispositivo ```us-v20.events.data.microsoft.com``` está en Windows 10, versión 1803 o posterior.
+Las direcciones URL que incluyen v20 solo son necesarias si tienes Windows 10, versión 1803 o posterior. Por ejemplo, solo es necesario si el dispositivo está ```us-v20.events.data.microsoft.com``` en Windows 10 versión 1803 o posterior.
  
 
 Si un proxy o firewall bloquea el tráfico anónimo, ya que el sensor de Microsoft Defender para endpoint se conecta desde el contexto del sistema, asegúrese de que el tráfico anónimo está permitido en las direcciones URL enumeradas.

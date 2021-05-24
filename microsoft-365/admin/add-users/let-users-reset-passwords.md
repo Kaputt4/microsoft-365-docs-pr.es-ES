@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Obtenga información sobre cómo puede establecer una directiva para permitir a los usuarios restablecer sus propias contraseñas mediante la herramienta de restablecimiento de contraseñas de autoservicio.
-ms.openlocfilehash: 2c79d5611ab2db00f4de5f227b0ec2f411955558
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 81fbe1949b8d5e4a601411703d86165f95cc7b7f
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571858"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634273"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Permitir que los usuarios puedan restablecer sus propias contraseñas
 
@@ -74,8 +74,6 @@ Siga estos pasos para activar el restablecimiento de contraseña de autoservicio
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Establecer la directiva de expiración de contraseña para su organización](../manage/set-password-expiration-policy.md) (artículo)
-
-[Establecer la contraseña de un usuario individual para que nunca expire](set-password-to-never-expire.md) (artículo)
-
+[Establecer la directiva de expiración de contraseña para su organización](../manage/set-password-expiration-policy.md) (artículo)\
+[Establecer la contraseña de un usuario individual para que nunca expire](set-password-to-never-expire.md) (artículo)\
 [Microsoft 365 Empresa vídeos de aprendizaje](../../business-video/index.yml) (página de vínculos)

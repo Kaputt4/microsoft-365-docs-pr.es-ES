@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: Recopila los valores/información que necesita para crear registros DNS para conectar su dominio a su Microsoft 365 suscripción.
-ms.openlocfilehash: c8ff30c27e67c8a29b7122ea80a6a33f0594b1b9
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: e65d53269f5fb8625b12c4eb22f78516818045be
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582961"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635731"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Recopilar la información que necesita para crear registros DNS
 
@@ -100,8 +100,6 @@ ms.locfileid: "52582961"
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Preguntas más frecuentes sobre](../setup/domains-faq.yml) dominios (artículo)
-
-[Buscar y corregir problemas después de agregar el dominio o los registros DNS](find-and-fix-issues.md) (artículo)
-
+[Preguntas más frecuentes](../setup/domains-faq.yml) sobre dominios (artículo)\
+[Buscar y corregir problemas después de agregar los registros DNS](find-and-fix-issues.md) o de dominio (artículo)\
 [Administrar dominios](index.yml) (página de vínculo)

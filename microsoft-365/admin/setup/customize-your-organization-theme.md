@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Aprende a cambiar el tema predeterminado de la parte superior de la barra de navegación en Microsoft 365 y personalízalo para que coincida con el logotipo o color de tu empresa.
-ms.openlocfilehash: b2177eebc31f34f7067c8464724623e4bf7d4870
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 5f6536d575ef055cda7a97a0860315c491100a1d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593834"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635931"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Personalizar el Microsoft 365 de la organización
 
@@ -152,10 +152,9 @@ La relación de contraste recomendada entre el texto, el icono o el color del bo
 
 ### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Si definio un tema, ¿qué lugares Microsoft 365 se usará?
 
-Cualquier tema aparecerá en la barra de navegación superior para todos los usuarios de la organización como parte del encabezado Microsoft 365 conjunto de elementos.  
+Cualquier tema aparece en la barra de navegación superior para todos los usuarios de la organización como parte del encabezado Microsoft 365 conjunto de elementos.  
   
 ## <a name="related-content"></a>Contenido relacionado
 
-[Agregar iconos personalizados a la página Mis aplicaciones y al iniciador de aplicaciones](../manage/customize-the-app-launcher.md) (artículo)
-
+[Agregar iconos personalizados a la página Mis aplicaciones y al iniciador de aplicaciones](../manage/customize-the-app-launcher.md) (artículo)\
 [Información general sobre Microsoft 365 grupos de servidores para administradores](../create-groups/office-365-groups.md) (artículo)

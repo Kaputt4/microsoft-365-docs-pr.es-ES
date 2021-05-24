@@ -1,5 +1,5 @@
 ---
-title: Solucionar problemas en Microsoft Defender para endpoint en iOS
+title: Solucionar problemas y encontrar respuestas en preguntas frecuentes relacionadas con Microsoft Defender para endpoint en iOS
 description: 'Solución de problemas y preguntas frecuentes: Microsoft Defender para endpoint en iOS'
 keywords: microsoft, defender, Microsoft Defender para Endpoint, ios, troubleshoot, faq, how to
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 82a3fcc58b97f53f584befae77c86e8a18952a23
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 13c0a575fd2614f58eb6a2163cda04118c2a391d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539328"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636283"
 ---
-# <a name="troubleshoot-issues-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas en Microsoft Defender para endpoint en iOS
+# <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Solucionar problemas y encontrar respuestas a preguntas frecuentes en Microsoft Defender para endpoint en iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

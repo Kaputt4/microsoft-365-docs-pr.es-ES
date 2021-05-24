@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre cómo crear un equipo con invitados en el centro Microsoft 365 administración y cómo unirse a un equipo como invitado.
-ms.openlocfilehash: c05a8d7e10b40c22bb041ce88748eb3dd919d83d
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: b458aaba464121e2e408013d4c8f32cd8a6852c5
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593870"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634189"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Usuarios invitados en Microsoft 365 de administración
 
@@ -65,4 +65,4 @@ Para quitar usuarios en El portal de Azure AD, vea [quitar un usuario invitado y
 ## <a name="related-content"></a>Contenido relacionado
 
 [Administrar el acceso de invitado Microsoft 365 grupos](../create-groups/manage-guest-access-in-groups.md) de invitados (artículo)\
-[Impedir que los invitados se agregó a un grupo Microsoft 365 grupo o Microsoft Teams grupo](../../solutions/per-group-guest-access.md)
+[Impedir que los invitados se agregó a un grupo Microsoft 365 grupo o Microsoft Teams grupo](../../solutions/per-group-guest-access.md) (artículo)

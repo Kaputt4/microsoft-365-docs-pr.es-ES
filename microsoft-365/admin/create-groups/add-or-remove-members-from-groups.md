@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Obtenga información sobre cómo agregar un miembro a un grupo, quitar miembro del grupo y administrar el estado del propietario del grupo en el centro de administración Microsoft 365 grupo.
-ms.openlocfilehash: 3ab3ebe21caa2d9d3dfa381dd3b68c9d2512cb79
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: b5b0a398a5ebb47a5f27066f1daea1a822adbff2
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593386"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635611"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Agregar o quitar miembros de Microsoft 365 grupos mediante el Centro de administración
 
@@ -101,7 +101,7 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
 
 5. Seleccione **Guardar**.
 
-## <a name="more-on-managing-membership"></a>Más información sobre cómo administrar la pertenencia
+## <a name="next-steps"></a>Pasos siguientes
 
 - [Administrar grupos dinámicamente en Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal): vea la sección "¿Cómo puedo administrar la pertenencia a un grupo dinámicamente?"
 
@@ -111,12 +111,8 @@ De manera predeterminada, la persona que creó el grupo es el propietario del gr
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Actualizar listas de distribución a Microsoft 365 grupos en Outlook](../manage/upgrade-distribution-lists.md) (artículo)
-
-[Por qué debería actualizar sus listas de distribución a grupos de Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (artículo)
-
-[Administrar el acceso de invitado en Microsoft 365 grupos](manage-guest-access-in-groups.md) de invitados (artículo)
-
-[Administrar Microsoft 365 con PowerShell:](../../enterprise/manage-microsoft-365-groups-with-powershell.md)en este artículo se presentan los cmdlets clave y se proporcionan ejemplos (artículo)
-
+[Actualizar listas de distribución a Microsoft 365 grupos en Outlook](../manage/upgrade-distribution-lists.md) (artículo)\
+[Por qué debe actualizar las listas de distribución a grupos en Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (artículo)\
+[Administrar el acceso de invitado Microsoft 365 grupos](manage-guest-access-in-groups.md) de invitados (artículo)\
+[Administrar Microsoft 365 con PowerShell:](../../enterprise/manage-microsoft-365-groups-with-powershell.md)en este artículo se presentan los cmdlets clave y se proporcionan ejemplos (artículo)\
 [Microsoft 365 de nomenclatura de grupos (artículo)](../../solutions/groups-naming-policy.md)

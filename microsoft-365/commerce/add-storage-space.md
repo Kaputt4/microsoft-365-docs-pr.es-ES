@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Agregue almacenamiento de archivos en su Microsoft 365 suscripción. Con el almacenamiento de archivos adicional, puede almacenar más contenido en SharePoint Online y OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: b573205c7053aba0339d1f32deb2996ef80f8754
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 14b688e850f62a06c39e4a315d871202e57d70d6
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572326"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635863"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Agregar espacio de almacenamiento para la suscripción
 
@@ -38,7 +38,7 @@ Si empieza a quedarse sin espacio de almacenamiento en las colecciones de sitios
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe ser un administrador global o SharePoint para realizar las tareas de este artículo. Para más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
+Debe ser un administrador global o SharePoint para realizar las tareas de este artículo. Para obtener más información, vea [Sobre los roles de administrador](../admin/add-users/about-admin-roles.md).
 
 ## <a name="view-available-storage"></a>Ver almacenamiento disponible
 
@@ -104,4 +104,4 @@ Office 365 Extra File Storage está disponible para las siguientes suscripciones
 ## <a name="related-content"></a>Contenido relacionado
 
 [Administrar límites de almacenamiento de sitios](/sharepoint/manage-site-collection-storage-limits) (artículo)\
-[Establecer el espacio de almacenamiento predeterminado para OneDrive usuarios](/onedrive/set-default-storage-space)(artículo)
+[Establecer el espacio de almacenamiento predeterminado para OneDrive usuarios](/onedrive/set-default-storage-space) (artículo)

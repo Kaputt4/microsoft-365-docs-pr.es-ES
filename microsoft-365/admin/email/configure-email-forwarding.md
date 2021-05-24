@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: El reenvío de correo electrónico le permite reenviar los mensajes de correo electrónico enviados a un buzón Microsoft 365 de usuario a otro buzón dentro o fuera de la organización.
-ms.openlocfilehash: 7389651cbbec5316c307cd10b331fda6812c1cd4
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: eb72204211a8eff929c024fbcede66dfe1f4b879
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537636"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635491"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Configurar el reenvío de correo electrónico en Microsoft 365
 
@@ -101,9 +101,7 @@ Debe ser Administrador de Exchange o Administrador global en Microsoft 365 para 
 
 ## <a name="related-content"></a>Contenido relacionado 
 
-[Crear un buzón compartido](../email/create-a-shared-mailbox.md) (artículo)
-
-[Enviar correo electrónico desde una dirección diferente](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (artículo)
-
+[Crear un buzón compartido](../email/create-a-shared-mailbox.md) (artículo)\
+[Enviar correo electrónico desde una dirección](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) diferente (artículo)\
 [Cambiar un nombre de usuario y una dirección de correo electrónico](../add-users/change-a-user-name-and-email-address.md) (artículo)
 

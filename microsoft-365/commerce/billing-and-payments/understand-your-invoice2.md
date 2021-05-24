@@ -21,17 +21,17 @@ ms.custom:
 search.appverid: MET150
 description: Interprete los cargos, la facturación y la información de pago en su Microsoft 365 factura o factura empresarial, y cómo cambiar un número de pedido de compra.
 ms.date: 05/04/2021
-ms.openlocfilehash: aa898f570fb17f2d9e2ebba769e285cb9d507c31
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 63d532ddfb86eb80a1cdeb6001fff683c5999146
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593530"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635839"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Entender su factura o recibo de Microsoft 365 para empresas
 
 > [!IMPORTANT]
-> A partir del 26 de enero de 2021, dejarán de admitirse cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si usted es un cliente existente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones siempre que la cuenta bancaria esté en buenos términos.
+> A partir del 26 de enero de 2021, ya no se admitirán cuentas bancarias nuevas para clientes en Bélgica, Francia, Italia, Luxemburgo, Portugal, España y Estados Unidos. Si usted es un cliente existente en alguno de esos países, podrá seguir pagando la suscripción con la cuenta bancaria existente y agregarle nuevas suscripciones, pero siempre que la cuenta bancaria esté en buenos términos.
 
 Sea mensual o anualmente (dependiendo de la opción que elija al comprar la suscripción), recibirá un correo electrónico en el que se le indicará que su nuevo extracto de facturación está disponible en el Centro de administración. [Obtenga más información sobre cómo encontrar y ver su factura](view-your-bill-or-invoice.md).
   
@@ -128,12 +128,8 @@ Si paga mediante factura, puede agregar o cambiar el número de orden de compra 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Obtenga información sobre cómo buscar y ver su factura o factura](view-your-bill-or-invoice.md) (artículo)
-
-[Cambiar las direcciones de facturación](change-your-billing-addresses.md) (artículo)
-
-[Cambiar la dirección de su organización, el correo electrónico de contacto técnico y otra información](../../admin/manage/change-address-contact-and-more.md) (artículo)
-
-[Pagar por su suscripción Microsoft 365 para empresas](pay-for-your-subscription.md) (artículo)
-
+[Obtenga información sobre cómo buscar y ver su factura](view-your-bill-or-invoice.md) o factura (artículo)\
+[Cambiar las direcciones de facturación](change-your-billing-addresses.md) (artículo)\
+[Cambiar la dirección de su organización, el correo electrónico de contacto técnico y otra información](../../admin/manage/change-address-contact-and-more.md) (artículo)\
+[Pagar por su suscripción Microsoft 365 para empresas](pay-for-your-subscription.md) (artículo)\
 [Opciones de pago de Minecraft: Education Edition](/education/windows/school-get-minecraft) (artículo)

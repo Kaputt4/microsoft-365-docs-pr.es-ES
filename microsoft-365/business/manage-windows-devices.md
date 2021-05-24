@@ -24,24 +24,26 @@ search.appverid:
 - BCS160
 - MET150
 description: Obtenga información sobre cómo habilitar Microsoft 365 proteger los dispositivos locales unidos a Active-Directory Windows 10 en unos pocos pasos.
-ms.openlocfilehash: f16962dd3c33c3c228da507bc5c4a902d76a8a08
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: ec80159bdceffd8a13d09a297a2acc1b78c9b1b3
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593901"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636094"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Habilitar dispositivos de Windows 10 unidos a un dominio para que los pueda administrar Microsoft 365 Empresa Premium
 
 Si su organización usa Windows Server Active Directory local, puede configurar Microsoft 365 Empresa Premium para proteger los dispositivos Windows 10 y mantener el acceso a los recursos locales que requieren autenticación local.
 Para configurar esta protección, puede implementar **dispositivos híbridos unidos a Azure AD**. Estos dispositivos se unen a su Active Directory local y a su Azure Active Directory.
 
+## <a name="watch-configure-hybrid-azure-active-directory-join"></a>Watch: Configure Hybrid Azure Active Directory join
+
 En este vídeo se describen los pasos para configurar esto para el escenario más común, que también se detalla en los pasos siguientes.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
+## <a name="before-you-begin"></a>Antes de empezar
 
-## <a name="before-you-get-started-make-sure-you-complete-these-steps"></a>Antes de empezar, asegúrese de completar estos pasos:
 - Sincronizar usuarios con Azure AD con Azure AD Conectar.
 - Complete la sincronización Conectar unidad organizativa (OU) de Azure AD.
 - Asegúrese de que todos los usuarios de dominio que sincronice tengan licencias para Microsoft 365 Empresa Premium.
@@ -119,8 +121,6 @@ En este punto, debería poder ver la directiva Habilitar la inscripción **autom
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Sincronizar usuarios de dominio Microsoft 365](manage-domain-users.md) (artículo)
-
-[Crear un grupo en el Centro de administración](../admin/create-groups/create-groups.md) (artículo)
-
+[Sincronizar usuarios de dominio Microsoft 365](manage-domain-users.md) (artículo)\
+[Crear un grupo en el Centro de administración](../admin/create-groups/create-groups.md) (artículo)\
 [Tutorial: Configurar la combinación Azure Active Directory híbrida para dominios administrados](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) (artículo)

@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Inicie sesión con su cuenta Microsoft 365 administrador para restablecer las contraseñas de los usuarios en Microsoft 365 suscripción para empresas.
-ms.openlocfilehash: 8d4666eb70b1d5349f71c906f05510a8a54ded74
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 0cec6c7874b51c76fca60c6c237395c940c47bbe
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571978"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635575"
 ---
 # <a name="reset-passwords"></a>Restablecer contraseñas
 
@@ -122,12 +122,8 @@ Lea el artículo [He olvidado el nombre de usuario o la contraseña de la cuenta
   
 ## <a name="related-content"></a>Contenido relacionado
   
-[Permitir que los usuarios puedan restablecer sus propias contraseñas](../add-users/let-users-reset-passwords.md) (artículo)
-
-[Restablecer contraseñas](../add-users/reset-passwords.md) (artículo)
-
-[Establecer la contraseña de un usuario individual para que nunca expire](set-password-to-never-expire.md) (artículo)
-
-[Establecer la directiva de expiración de contraseña para su organización](../manage/set-password-expiration-policy.md) (artículo)
-
+[Permitir que los usuarios restablezcan sus propias contraseñas](../add-users/let-users-reset-passwords.md) (artículo)\
+[Restablecer contraseñas](../add-users/reset-passwords.md) (artículo)\
+[Establecer la contraseña de un usuario individual para que nunca expire](set-password-to-never-expire.md) (artículo)\
+[Establecer la directiva de expiración de contraseña para su organización](../manage/set-password-expiration-policy.md) (artículo)\
 [Microsoft 365 vídeos de aprendizaje para empresas](../../business-video/index.yml) (página de vínculos)

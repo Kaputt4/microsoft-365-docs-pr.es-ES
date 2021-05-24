@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Proteja el correo electrónico y los datos de su empresa frente a amenazas cibernéticas, como ransomware, phishing y datos adjuntos malintencionados.
-ms.openlocfilehash: 12bdb9f12c1b0d3072a4c84c006787c26050cc8b
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: b274bb6bcdf71641ff8b196921a501bae9cbba28
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582805"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635967"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Las 10 formas principales de proteger Microsoft 365 planes empresariales
 
@@ -348,8 +348,6 @@ Para obtener más información, [vea Caja fuerte Links in Microsoft Defender for
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Autenticación multifactor para Microsoft 365](multi-factor-authentication-microsoft-365.md) (artículo)
-
-[Administrar y supervisar cuentas de prioridad](../setup/priority-accounts.md) (artículo)
-
+[Autenticación multifactor para Microsoft 365](multi-factor-authentication-microsoft-365.md) (artículo)\
+[Administrar y supervisar cuentas de prioridad](../setup/priority-accounts.md) (artículo)\
 [Microsoft 365 informes en el Centro de administración](../activity-reports/activity-reports.md) (vídeo)

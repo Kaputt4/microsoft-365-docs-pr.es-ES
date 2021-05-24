@@ -29,22 +29,22 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Obtenga información sobre cómo usar OneDrive y un sitio de grupo para el almacenamiento de Microsoft 365 y el uso compartido de archivos de Microsoft 365.
-ms.openlocfilehash: 9e739b1f90296167fc47bdd5f19bacd73c43f9e2
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: f94ff8a60b1b4691b36ec2e1bd04088d96b1af8c
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572182"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635647"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Configurar el almacenamiento y el uso compartido de archivos de Microsoft 365
 
 Una de las mejores formas de configurar el almacenamiento y el uso compartido de archivos para su negocio es usar OneDrive con un sitio de grupo. Esto es ideal si tiene una pequeña empresa con pocos empleados.
 
-Vea un vídeo corto sobre cómo almacenar archivos en la nube de Microsoft 365.<br><br>
+## <a name="watch-where-to-store-files-in-office-365"></a>Watch: Where to store files in Office 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
-Si este vídeo le ha sido de ayuda, vea la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
+Si este vídeo le ha sido de ayuda, consulte la [serie completa de aprendizaje para las pequeñas empresas y las novedades de Microsoft 365](../../business-video/index.yml).
 
 ## <a name="microsoft-365-document-storage-and-management"></a>Microsoft 365 y administración de documentos
 
@@ -207,8 +207,6 @@ Puede habilitar el almacenamiento de terceros para sus usuarios en Microsoft 365
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Agregar espacio de almacenamiento para la suscripción](../../commerce/add-storage-space.md) (artículo)
-
-[Compartir archivos y carpetas con Microsoft 365 Empresa](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (vídeo)
-
+[Agregar espacio de almacenamiento para la suscripción](../../commerce/add-storage-space.md) (artículo)\
+[Compartir archivos y carpetas con Microsoft 365 Empresa](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (vídeo)\
 [Personalizar el sitio de grupo para el almacenamiento y uso compartido de archivos](customize-team-site.md) (artículo)

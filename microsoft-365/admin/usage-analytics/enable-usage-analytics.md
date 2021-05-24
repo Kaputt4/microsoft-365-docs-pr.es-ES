@@ -20,22 +20,22 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Obtén información sobre cómo empezar a recopilar datos para el inquilino mediante la aplicación de plantilla Microsoft 365 de análisis de uso en Power BI.
-ms.openlocfilehash: 329878365aa07da4615a849ad04cde7f75a07872
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 01923887b4af143d1490e14d59a6174700e6ae93
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593374"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635419"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Habilitar análisis de uso de Microsoft 365
 
 Microsoft 365 análisis de uso aún no está disponible para Microsoft 365 us government Community.
   
-## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>Pasos para habilitar el análisis de uso de Microsoft 365
+## <a name="before-you-begin"></a>Antes de empezar
 
 Para empezar con el Microsoft 365 de uso, primero debes hacer que los datos estén disponibles en el Centro de administración de Microsoft 365 e iniciar la aplicación de plantilla en Power BI.
   
-### <a name="get-power-bi"></a>Obtener Power BI
+## <a name="get-power-bi"></a>Obtener Power BI
 
 Si aún no tiene Power BI, puede [registrarse](https://go.microsoft.com/fwlink/p/?linkid=845347)para obtener Power BI Pro . Selecciona **Probar gratis** para suscribirte a una prueba o Comprar **ahora** para obtener Power BI Pro.
   
@@ -47,7 +47,7 @@ También puede expandir la sección **Productos** para comprar una versión de P
 
 Para compartir los datos, tanto usted como las personas con las que comparte los datos, necesitan una licencia de Power BI Pro o el contenido debe estar en un área de trabajo en un servicio [Power BI premium](/power-bi/service-premium-what-is). 
   
-### <a name="enable-the-template-app"></a>Habilitar la aplicación de plantilla
+## <a name="enable-the-template-app"></a>Habilitar la aplicación de plantilla
 
 Para habilitar la aplicación de plantilla, debes ser administrador **global.**
   
@@ -61,7 +61,7 @@ Vea [acerca de los roles de administrador](../add-users/about-admin-roles.md) pa
   
 El proceso de recopilación de datos se completará en dos o 48 horas según el tamaño del espacio empresarial. El **botón Ir a Power BI** se habilitará (ya no es gris) cuando se complete la recopilación de datos. 
     
-### <a name="start-the-template-app"></a>Iniciar la aplicación de plantilla
+## <a name="start-the-template-app"></a>Iniciar la aplicación de plantilla
 
 Para iniciar la aplicación de plantilla, debe ser un administrador **global,** un lector de **informes,** un **Exchange,** un Skype Empresarial **o** **un SharePoint.** 
   
@@ -99,8 +99,6 @@ Para establecer que los datos que se recopilen para todos los informes sean anó
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Acerca del análisis de uso](usage-analytics.md) (artículo)
-
-[Obtener la versión más reciente de análisis de uso](get-the-latest-version-of-usage-analytics.md) (artículo)
-
+[Acerca del análisis de uso](usage-analytics.md) (artículo)\
+[Obtener la versión más reciente de análisis de uso](get-the-latest-version-of-usage-analytics.md) (artículo)\
 [Navegar y usar los informes de Microsoft 365 análisis de uso](navigate-and-utilize-reports.md) (artículo)

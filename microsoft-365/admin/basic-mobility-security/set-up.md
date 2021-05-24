@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Configura Movilidad y seguridad básicas para proteger y administrar los dispositivos móviles de los usuarios mediante acciones como limpiar un dispositivo de forma remota.
-ms.openlocfilehash: 830baa79838818501101c0c4f2d3163f57d47611
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 02ba28deca6286456af5f87841a741262c1a135d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593422"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634297"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Configurar Movilidad y seguridad básicas
 
@@ -129,6 +129,5 @@ Los usuarios con dispositivos Android o iOS deben instalar la Portal de empresa 
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Capacidades de movilidad y seguridad básicas](capabilities.md) (artículo)
-
+[Capacidades de movilidad y seguridad básicas](capabilities.md) (artículo)\
 [Crear directivas de seguridad de dispositivos en Movilidad básica y seguridad](create-device-security-policies.md) (artículo)
