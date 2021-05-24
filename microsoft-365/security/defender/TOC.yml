@@ -92,7 +92,7 @@
               href: incident-queue.md
             - name: Administrar
               href: manage-incidents.md
-            - name: Investigación
+            - name: Investigar
               items:
                 - name: Información general
                   href: investigate-incidents.md
@@ -282,42 +282,42 @@
               items:
                 - name: Información general de la integración de ServiceNow
                   href: ./tickets.md
-            - name: API de Microsoft 365 Defender (versión preliminar)
+        - name: API de Microsoft 365 Defender (versión preliminar)
+          items:
+            - name: Información general sobre las API de Microsoft 365 Defender (versión preliminar)
+              href: api-overview.md
+            - name: Introducción a las API de Microsoft 365 Defender (versión preliminar)
               items:
-                - name: Información general sobre las API de Microsoft 365 Defender (versión preliminar)
-                  href: api-overview.md
-                - name: Introducción a las API de Microsoft 365 Defender (versión preliminar)
+                - name: Licencia y términos de uso de la API de Microsoft 365 Defender
+                  href: api-terms.md
+                - name: Acceso a las API de Microsoft 365 Defender (versión preliminar)
+                  href: api-access.md
+                - name: 'Hola mundo, ejemplo'
+                  href: api-hello-world.md
+                - name: Obtener acceso con el contexto de la aplicación
+                  href: api-create-app-web.md
+                - name: Obtener acceso con el contexto de usuario
+                  href: api-create-app-user-context.md
+                - name: Obtener acceso a aplicaciones de asociados
+                  href: api-partner-access.md
+                - name: Otros recursos de API
+                  href: api-articles.md
+            - name: Esquema y API de Microsoft 365 Defender (versión preliminar)
+              items:
+                - name: API de Microsoft 365 Defender (versión preliminar) admitidas
+                  href: api-supported.md
+                - name: Códigos de error comunes de API de REST
+                  href: api-error-codes.md
+                - name: API de Búsqueda avanzada de amenazas
+                  href: api-advanced-hunting.md
+                - name: API de incidentes
                   items:
-                    - name: Licencia y términos de uso de la API de Microsoft 365 Defender
-                      href: api-terms.md
-                    - name: Acceso a las API de Microsoft 365 Defender (versión preliminar)
-                      href: api-access.md
-                    - name: 'Hola mundo, ejemplo'
-                      href: api-hello-world.md
-                    - name: Obtener acceso con el contexto de la aplicación
-                      href: api-create-app-web.md
-                    - name: Obtener acceso con el contexto de usuario
-                      href: api-create-app-user-context.md
-                    - name: Obtener acceso a aplicaciones de asociados
-                      href: api-partner-access.md
-                    - name: Otros recursos de API
-                      href: api-articles.md
-                - name: Esquema y API de Microsoft 365 Defender (versión preliminar)
-                  items:
-                    - name: API de Microsoft 365 Defender (versión preliminar) admitidas
-                      href: api-supported.md
-                    - name: Códigos de error comunes de API de REST
-                      href: api-error-codes.md
-                    - name: API de Búsqueda avanzada de amenazas
-                      href: api-advanced-hunting.md
-                    - name: API de incidentes
-                      items:
-                        - name: Métodos y propiedades del incidente
-                          href: api-incident.md
-                        - name: Lista de Incidentes
-                          href: api-list-incidents.md
-                        - name: Incidente de actualización
-                          href: api-update-incidents.md
+                    - name: Métodos y propiedades del incidente
+                      href: api-incident.md
+                    - name: Lista de Incidentes
+                      href: api-list-incidents.md
+                    - name: Incidente de actualización
+                      href: api-update-incidents.md
     - name: "Microsoft Defender para Office\_365"
       href: ../office-365-security/index.yml
     - name: Microsoft Defender para punto de conexión

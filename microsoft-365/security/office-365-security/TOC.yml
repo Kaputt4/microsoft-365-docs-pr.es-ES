@@ -164,6 +164,8 @@
           href: attack-simulation-training-insights.md
         - name: 'Implementación y preguntas más frecuentes del aprendizaje de simulación de ataques  '
           href: attack-simulation-training-faq.md
+        - name: Configurar la entrega de simulaciones de suplantación de identidad (phishing) de terceros y buzones de SecOps
+          href: configure-advanced-delivery.md
         - name: Ajustes recomendados para configurar EOP y Microsoft Defender para Seguridad de Office 365
           href: recommended-settings-for-eop-and-office365.md
         - name: Procedimientos recomendados para configurar EOP

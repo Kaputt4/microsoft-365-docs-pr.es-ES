@@ -185,7 +185,7 @@
         - name: Cifrado de correo electrónico
           href: email-encryption.md
           items:
-            - name: "Cifrado de mensajes de Office\_365 (OME)"
+            - name: Cifrado de mensajes de Office 365 (OME)
               href: ome.md
             - name: Configurar las nuevas capacidades de cifrado de mensajes de Office 365
               href: set-up-new-message-encryption-capabilities.md
@@ -205,7 +205,7 @@
               href: revoke-ome-encrypted-mail.md
             - name: Comparar versiones de OME
               href: ome-version-comparison.md
-            - name: "Preguntas más frecuentes sobre el cifrado de mensajes de Office\_365"
+            - name: Preguntas más frecuentes sobre el cifrado de mensajes de Office 365
               href: ome-faq.yml
             - name: Cómo Exchange Online protege su información confidencial de correo electrónico
               href: exchange-online-secures-email-secrets.md
@@ -245,6 +245,10 @@
               href: dlp-chrome-learn-about.md
             - name: Obtenga información sobre el panel de alertas de prevención de pérdida de datos
               href: dlp-alerts-dashboard-learn.md
+        - name: Plan para DLP
+          items:
+            - name: Plan de prevención de pérdida de datos
+              href: dlp-overview-plan-for-dlp.md
         - name: Introducción a DLP
           items:
             - name: Introducción a la directiva predeterminada de DLP
@@ -263,9 +267,9 @@
               href: dlp-chrome-get-started.md
             - name: Introducción al panel de alertas de prevención de pérdida de datos
               href: dlp-alerts-dashboard-get-started.md
-            - name: "Herramientas y métodos de incorporación de la prevención de pérdida de datos en punto de conexión para dispositivos Windows\_10"
+            - name: Herramientas y métodos de incorporación de la prevención de pérdida de datos en punto de conexión para dispositivos Windows 10
               items:
-                - name: "Herramientas y métodos de incorporación para dispositivos Windows\_10"
+                - name: Herramientas y métodos de incorporación para dispositivos Windows 10
                   href: dlp-configure-endpoints.md
                 - name: Incorporar dispositivos Windows 10 mediante la directiva de grupo
                   href: dlp-configure-endpoints-gp.md

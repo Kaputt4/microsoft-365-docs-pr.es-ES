@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Documentación de Seguridad de Microsoft 365
-summary: El Centro de seguridad de Microsoft 365 une varias tecnologías de seguridad en una consola de administración completa, con mejoras para proteger su empresa.
+summary: El Centro de seguridad de Microsoft 365 une varias tecnologías de seguridad en una consola de administración completa, con mejoras para proteger su empresa.
 metadata:
   title: Documentación de Seguridad de Microsoft 365
   description: 'Obtenga más información sobre Microsoft Defender para punto de conexión: cómo protege los puntos de conexión de ciberamenazas y proporciona a los equipos de operaciones de seguridad con capacidades para corregir amenazas.'
@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 02/05/2021
   localization_priority: Priority
-  ms.openlocfilehash: a8d2e2c5ec41436bba7f013304daa8f259db9444
-  ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+  ms.openlocfilehash: b7e193c15951a446d2fa21f36394085ad5016ee2
+  ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 04/15/2021
-  ms.locfileid: "51768559"
+  ms.lasthandoff: 05/21/2021
+  ms.locfileid: "52593986"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -55,7 +55,7 @@ landingContent:
   - linkListType: overview
     links:
     - text: ¿Qué es Defender para Office 365?
-      url: office-365-security/defender-for-office-365.md
+      url: /office-365-security/defender-for-office-365
     - text: Descripción del servicio de Defender para Office 365
       url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
 - title: Microsoft Defender para punto de conexión
@@ -63,9 +63,9 @@ landingContent:
   - linkListType: overview
     links:
     - text: ¿Qué es Microsoft Defender para punto de conexión?
-      url: /windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-    - text: Información general sobre las funciones
-      url: /windows/security/threat-protection/microsoft-defender-atp/overview
+      url: /defender-endpoint/microsoft-defender-endpoint
+    - text: Información general del portal del Centro de seguridad de Microsoft Defender
+      url: /defender-endpoint/portal-overview
 - title: Azure Defender
   linkLists:
   - linkListType: overview

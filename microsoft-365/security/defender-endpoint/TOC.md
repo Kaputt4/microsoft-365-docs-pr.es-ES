@@ -27,6 +27,11 @@
 #### [Incorporar dispositivos admitidos](onboard-configure.md)
 
 ## [Guías de migración](migration-guides.md)
+### [Cambiar de una protección de puntos de conexión distinta de Microsoft a Defender para punto de conexión]()
+#### [Introducción a la migración](switch-to-microsoft-defender-migration.md)
+#### [Fase 1: Preparación](switch-to-microsoft-defender-prepare.md)
+#### [Fase 2: Configuración](switch-to-microsoft-defender-setup.md)
+#### [Fase 3: Incorporación](switch-to-microsoft-defender-onboard.md)
 ### [Cambiar de McAfee a Microsoft Defender para punto de conexión]()
 #### [Introducción a la migración](mcafee-to-microsoft-defender-migration.md)
 #### [Fase 1: Preparación](mcafee-to-microsoft-defender-prepare.md) 
@@ -37,11 +42,6 @@
 #### [Fase 1: Preparación](symantec-to-microsoft-defender-atp-prepare.md)
 #### [Fase 2: Configuración](symantec-to-microsoft-defender-atp-setup.md)
 #### [Fase 3: Incorporación](symantec-to-microsoft-defender-atp-onboard.md)
-### [Cambiar de una solución de seguridad de puntos de conexión que no es de Microsoft a Microsoft Defender para punto de conexión]()
-#### [Introducción a la migración](switch-to-microsoft-defender-migration.md)
-#### [Fase 1: Preparación](switch-to-microsoft-defender-prepare.md)
-#### [Fase 2: Configuración](switch-to-microsoft-defender-setup.md)
-#### [Fase 3: Incorporación](switch-to-microsoft-defender-onboard.md)
 ### [Administrar Microsoft Defender para punto de conexión después de la migración]()
 #### [Vista general de Microsoft Defender para punto de conexión](manage-atp-post-migration.md)
 #### [Intune (recomendado)](manage-atp-post-migration-intune.md)
@@ -55,7 +55,7 @@
 #### [Incorporar dispositivos a Microsoft Defender para punto de conexión](onboard-configure.md)
 #### [Incorporar versiones anteriores de Windows](onboard-downlevel.md)
 #### [Incorporar dispositivos Windows 10 mediante la directiva de grupo]()
-##### [Herramientas y métodos de incorporación para equipos con Windows 10](configure-endpoints.md).
+##### [Herramientas y métodos de incorporación para equipos con Windows 10](configure-endpoints.md).
 ##### [Incorporar dispositivos con la directiva de grupo](configure-endpoints-gp.md)
 ##### [Incorporar dispositivos con el Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 ##### [Incorporar dispositivos con las herramientas de administración de dispositivos móviles](configure-endpoints-mdm.md)
