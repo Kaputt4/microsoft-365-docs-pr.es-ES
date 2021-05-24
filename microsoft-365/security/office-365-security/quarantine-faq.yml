@@ -20,12 +20,12 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: f146cd9eba6e333376bcfeb6e8c74b3378387b5b
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: 42e848309589fa8786346b5921d1cade0ed074b9
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52334060"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52625418"
 title: Preguntas más frecuentes sobre mensajes en cuarentena
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -64,7 +64,7 @@ sections:
   - question: >
       ¿Cómo puedo dar a los usuarios acceso a la cuarentena?
     answer: >
-      Un usuario debe tener una cuenta válida para tener acceso a sus propios mensajes en cuarentena. EOP independiente requiere que los usuarios se represente como usuarios de correo en EOP (creados manualmente o creados mediante la sincronización de directorios). Para obtener más información acerca de la administración de usuarios en entornos EOP independientes, vea [Manage mail users in EOP](manage-mail-users-in-eop.md).
+      Un usuario debe tener una cuenta válida para tener acceso a sus propios mensajes en cuarentena. EOP independiente requiere que los usuarios se represente como usuarios de correo en EOP (creados manualmente o creados mediante la sincronización de directorios). Para obtener más información acerca de la administración de usuarios en entornos EOP independientes, vea Administrar usuarios [de correo en EOP independiente.](/exchange/standalone-eop/manage-mail-users-in-eop)
   - question: >
       ¿A qué mensajes pueden acceder los usuarios finales en cuarentena?
     answer: >

@@ -16,12 +16,12 @@ metadata:
   description: Obtenga respuestas a las preguntas generales más comunes sobre el servicio de filtrado de correo electrónico Exchange Online Protection (EOP) hospedado en la nube.
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 9929bd9d90f4e63e130fc478ce974fc373dea396
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: e7ae5858841384c31acf9b785fc0071607ba5f1d
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52334026"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52625370"
 title: Preguntas más frecuentes sobre EOP
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -69,7 +69,7 @@ sections:
   - question: >
       ¿Cuánto tiempo se tarda en poner EOP operativo?
     answer: >
-      El filtrado comienza de manera inmediata después de cambiar el registro MX, según los pasos detallados en [Configurar un servicio de EOP](set-up-your-eop-service.md) y de que el correo pase por EOP. El registro MX puede tardar entre 24 y 48 horas en propagarse a través de DNS. Puede ajustar la configuración de protección en cualquier momento durante este proceso.
+      El filtrado comienza de manera inmediata después de cambiar el registro MX, según los pasos detallados en [Configurar un servicio de EOP](/exchange/standalone-eop/set-up-your-eop-service) y de que el correo pase por EOP. El registro MX puede tardar entre 24 y 48 horas en propagarse a través de DNS. Puede ajustar la configuración de protección en cualquier momento durante este proceso.
   - question: >
       ¿Tengo que usar todas las características de Microsoft 365 usar EOP? ¿Qué ocurre si solo quiero protección EOP y eso es todo?
     answer: >
