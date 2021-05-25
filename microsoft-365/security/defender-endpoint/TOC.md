@@ -3,7 +3,7 @@
 ## [Información general]()
 ### [¿Qué es Microsoft Defender para punto de conexión?](microsoft-defender-endpoint.md)
 ### [Requisitos mínimos](minimum-requirements.md)
-### [Novedades de Microsoft Defender para punto de conexión](whats-new-in-microsoft-defender-atp.md)
+### [¿Cuáles son las novedades de Microsoft Defender para punto de conexión?](whats-new-in-microsoft-defender-atp.md)
 ### [Versión preliminar de las características](preview.md)
 ### [Almacenamiento de datos y privacidad](data-storage-privacy.md)
 ### [Introducción al Centro de seguridad de Microsoft Defender](use.md)
@@ -134,7 +134,8 @@
 ###### [Implementación manual](linux-install-manually.md)
 ###### [Implementación basada en Puppet](linux-install-with-puppet.md)
 ###### [Implementación basada en Ansible](linux-install-with-ansible.md)
- 
+###### [Implementar Defender para punto de conexión en Linux con Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
 ##### [Actualizar](linux-updates.md)
  
 ##### [Configurar]()
@@ -144,7 +145,7 @@
 ###### [Detectar y bloquear aplicaciones potencialmente no deseadas](linux-pua.md)
 ###### [Programar análisis con Microsoft Defender para punto de conexión en Linux](linux-schedule-scan-atp.md)
 ###### [Programar una actualización de Microsoft Defender para punto de conexión (Linux)](linux-update-MDE-Linux.md)
-###### [Implementar Defender para punto de conexión en Linux con Chef](linux-deploy-defender-for-endpoint-with-chef.md)
+
  
 ##### [Solucionar problemas]()
 ###### [Solución de problemas de instalación](linux-support-install.md)
