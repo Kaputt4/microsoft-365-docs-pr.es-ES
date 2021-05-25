@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a1e07ac2e2e544605f04e9090177004db64d2f04
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: d01e1d847a8932d95e645a89eff15cf0793491e5
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995002"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651277"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novedades de Microsoft Defender para Endpoint en Mac
 
@@ -37,6 +37,14 @@ ms.locfileid: "51995002"
 
 > [!IMPORTANT]
 > En macOS 11 (Big Sur), Microsoft Defender para Endpoint requiere perfiles de configuración adicionales. Si es un cliente existente que actualiza desde versiones anteriores de macOS, asegúrese de implementar los perfiles de configuración adicionales enumerados en [esta página](mac-sysext-policies.md).
+
+## <a name="1012964-20121042129640"></a>101.29.64 (20.121042.12964.0)
+
+- A partir de esta versión, las amenazas detectadas durante los exámenes antivirus a petición desencadenados a través del cliente de línea de comandos se corrigen automáticamente. Las amenazas detectadas durante los exámenes desencadenados a través de la interfaz de usuario aún requieren una acción manual.
+- `mdatp diagnostic real-time-protection-statistics` ahora admite dos modificadores adicionales:
+  - `--sort`: ordena el resultado descendente por número total de archivos analizados
+  - `--top N`: muestra los resultados N superiores (solo funciona si `--sort` también se especifica)
+- Mejoras de rendimiento (específicamente para cuando se usa YARN) & correcciones de errores
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0)
 
@@ -114,7 +122,7 @@ ms.locfileid: "51995002"
 
 ## <a name="1010723"></a>101.07.23
 
-- Se agregaron nuevos campos a la salida de para comprobar el estado del modo pasivo y el id. `mdatp --health` de grupo de EDR
+- Se agregaron nuevos campos a la salida de para comprobar el estado del modo pasivo y el `mdatp --health` EDR de grupo
 
   > [!NOTE]
   > `mdatp --health` se reemplazará con `mdatp health` en una actualización futura del producto.
@@ -178,7 +186,7 @@ ms.locfileid: "51995002"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> Para garantizar la protección más completa para los dispositivos macOS y en línea con que Apple detenga la entrega de actualizaciones de seguridad nativas de macOS en versiones del sistema operativo anteriores a [actual – 2], la implementación y las actualizaciones de MDATP para Mac ya no se admiten en macOS Sierra [10.12]. Las actualizaciones y mejoras de MDATP para Mac se entregarán a dispositivos que ejecutan versiones de Catalina [10.15], Mojave [10.14] y High Sierra [10.13]. 
+> Para garantizar la protección más completa para los dispositivos macOS y en la alineación con Apple deteniendo la entrega de actualizaciones de seguridad nativas de macOS en versiones del sistema operativo anteriores a [actual – 2], MDATP para la implementación y las actualizaciones de Mac ya no se admiten en macOS Sierra [10.12]. MDATP actualizaciones y mejoras de Mac se entregarán a dispositivos que ejecutan versiones de Catalina [10.15], Mojave [10.14] y High Sierra [10.13]. 
 >
 > Si ya tienes MDATP para Mac implementado en tus dispositivos Sierra [10.12], actualiza a la versión más reciente de macOS para eliminar los riesgos de pérdida de protección.
 
@@ -231,6 +239,6 @@ ms.locfileid: "51995002"
   > El mecanismo para conceder este consentimiento depende de cómo implementó Microsoft Defender para endpoint:
   >
   > - Para las implementaciones manuales, vea las instrucciones actualizadas en el [tema Implementación](mac-install-manually.md#how-to-allow-full-disk-access) manual.
-  > - Para las implementaciones administradas, vea las instrucciones actualizadas en los temas de implementación basada en [JAMF](mac-install-with-jamf.md) y [microsoft Intune.](mac-install-with-intune.md#create-system-configuration-profiles)
+  > - Para las implementaciones administradas, vea las instrucciones actualizadas en los temas de implementación basada en [JAMF](mac-install-with-jamf.md) [y Microsoft Intune de implementación](mac-install-with-intune.md#create-system-configuration-profiles) basada en JAMF.
 
 - Mejoras de rendimiento & correcciones de errores

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7abc99a14ec538afea8cdbd4d8f3b4940bcccd9f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 865aa9dc34a91be251d6f7772da5cc686f9641a4
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300090"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651323"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Investigar incidentes en Microsoft 365 Defender
 
@@ -86,7 +86,19 @@ Por ejemplo:
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Ejemplo de una página de alertas para un incidente":::
 
-De forma predeterminada, las alertas se ordenan cronológicamente para que pueda ver cómo se produjo el incidente con el tiempo. La selección de cada alerta te lleva a la página principal de la alerta, donde puedes realizar un análisis detallado de esa alerta. 
+De forma predeterminada, las alertas se ordenan cronológicamente para que pueda ver cómo se produjo el incidente con el tiempo. Al seleccionar una alerta dentro de un incidente, Microsoft 365 Defender muestra la información de alerta específica del contexto del incidente general. 
+
+Puede ver los eventos de la alerta, qué otras alertas desencadenadas provocaron la alerta actual y todas las entidades y actividades afectadas implicadas en el ataque, incluidos los archivos, los usuarios y los buzones.
+
+Por ejemplo:
+
+:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="Ejemplo de una página de detalles de alerta dentro de un incidente":::
+
+Esta página de alerta de incidentes se compone de estas secciones:
+
+- Artículo de alerta, que incluye un resumen de lo que ocurrió
+- Alertas y eventos relacionados
+- Detalles de resumen
 
 Obtenga información sobre cómo usar la cola de alertas y las páginas de alertas en [investigar alertas](investigate-alerts.md).
 
@@ -112,6 +124,9 @@ La **pestaña** Usuarios enumera todos los usuarios que se han identificado para
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Ejemplo de una página Usuarios para un incidente":::
 
 Puede seleccionar la marca de verificación de un usuario para ver los detalles de la amenaza, la exposición y la información de contacto de la cuenta de usuario. Seleccione el nombre de usuario para ver los detalles adicionales de la cuenta de usuario.
+
+Obtenga información sobre cómo ver información de usuario adicional y administrar los usuarios de un incidente en [investigar usuarios](investigate-users.md).
+
 
 ## <a name="mailboxes"></a>Buzones
 
@@ -157,7 +172,7 @@ El gráfico de incidentes le ayuda a comprender rápidamente el ámbito completo
 
 Ahora puedes comprender cómo el ataque se extendió a través de la red con el tiempo, dónde se inició y hasta dónde llegó el ataque.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Según sea necesario:
 

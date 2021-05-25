@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8d29291c63bdc437163feecce8164089d958d71d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 2e47b35646a1cd6e1075d80f9ed0550e8e1e819f
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299969"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651397"
 ---
 # <a name="get-incident-notifications-by-email"></a>Obtener notificaciones de incidentes por correo electrónico
 
@@ -72,7 +72,7 @@ Siga estos pasos para crear una nueva regla y personalizar la configuración de 
 
 Para editar una regla existente, selecciónelo en la lista de reglas. En el panel con el nombre de regla, seleccione **Editar** regla y realice los cambios en las páginas **Conceptos** básicos, Configuración de **notificación** y **Destinatarios.**
 
-Para editar una regla existente, selecciónelo en la lista de reglas. En el panel con el nombre de regla, seleccione **Eliminar**.
+Para eliminar una regla, selecciónelo en la lista de reglas. En el panel con el nombre de regla, seleccione **Eliminar**.
 
 ## <a name="see-also"></a>Vea también
 - [Información general sobre incidentes](incidents-overview.md)

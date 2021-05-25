@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b2897766570c6ef8979a7944a687ba024e55b3ce
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 2884ffc695abc1c6b4b5be9bbd7c9ad37ad05439
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934554"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651301"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Privacidad de Microsoft Defender para endpoint en macOS
 
@@ -85,7 +85,7 @@ Hay cierta información acerca de los eventos que es común a todos, independien
 
 Los siguientes campos se consideran comunes para todos los eventos:
 
-| Field                   | Descripción |
+| Campo                   | Descripción |
 | ----------------------- | ----------- |
 | plataforma                | La clasificación general de la plataforma en la que se ejecuta la aplicación. Permite a Microsoft identificar en qué plataformas se puede producir un problema para que se pueda priorizar correctamente. |
 | machine_guid            | Identificador único asociado al dispositivo. Permite a Microsoft identificar si los problemas afectan a un conjunto selecto de instalaciones y cuántos usuarios se verán afectados. |
@@ -109,9 +109,9 @@ Los datos de diagnóstico necesarios ayudan a identificar problemas con Microsof
 
 **Instalación y desinstalación de Microsoft Defender para endpoint**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
-| Field            | Descripción |
+| Campo            | Descripción |
 | ---------------- | ----------- |
 | correlation_id   | Identificador único asociado a la instalación. |
 | version          | Versión del paquete. |
@@ -121,9 +121,9 @@ Se recopilan los campos siguientes:
 
 **Configuración de Microsoft Defender para punto de conexión**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
-| Field                                               | Descripción |
+| Campo                                               | Descripción |
 | --------------------------------------------------- | ----------- |
 | antivirus_engine.enable_real_time_protection        | Si la protección en tiempo real está habilitada en el dispositivo o no. |
 | antivirus_engine.passive_mode                       | Si el modo pasivo está habilitado en el dispositivo o no. |
@@ -133,7 +133,8 @@ Se recopilan los campos siguientes:
 | cloud_service.service_uri                           | URI usado para comunicarse con la nube. |
 | cloud_service.diagnostic_level                      | Nivel de diagnóstico del dispositivo (obligatorio, opcional). |
 | cloud_service.automatic_sample_submission           | Si el envío de muestra automático está activado o no. |
-| edr.early_preview                                   | Si el dispositivo debe ejecutar características de vista previa de EDR. |
+| cloud_service.automatic_definition_update_enabled   | Si la actualización automática de definiciones está activada o no. |
+| edr.early_preview                                   | Si el dispositivo debe ejecutarse EDR características de vista previa anticipada. |
 | edr.group_id                                        | Identificador de grupo usado por el componente de detección y respuesta. |
 | edr.tags                                            | Etiquetas definidas por el usuario. |
 | características. \[ nombre de característica opcional\]                  | Lista de características de vista previa, junto con si están habilitadas o no. |
@@ -142,9 +143,9 @@ Se recopilan los campos siguientes:
 
 **Informe de actualización de inteligencia de seguridad**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
-| Field            | Descripción |
+| Campo            | Descripción |
 | ---------------- | ----------- |
 | from_version     | Versión original de inteligencia de seguridad. |
 | to_version       | Nueva versión de inteligencia de seguridad. |
@@ -159,19 +160,19 @@ Se recopilan los campos siguientes:
 
 Recopila información del sistema y el estado de una aplicación cuando una aplicación se cierra inesperadamente.
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
-| Field                          | Descripción |
+| Campo                          | Descripción |
 | ------------------------------ | ----------- |
 | v1_crash_count                 | Número de veces que el proceso del motor V1 se bloquea cada hora en el equipo cliente  |
 | v2_crash_count                 | Número de veces que el proceso del motor V2 se bloquea cada hora en el equipo cliente  |
-| EDR_crash_count                | Número de veces que el proceso de EDR se bloquea cada hora en el equipo cliente        |
+| EDR_crash_count                | Número de veces que EDR proceso se bloquea cada hora en el equipo cliente        |
 
 **Estadísticas de extensión de kernel**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
-| Field            | Descripción |
+| Campo            | Descripción |
 | ---------------- | ----------- |
 | version          | Versión de Microsoft Defender para endpoint en macOS. |
 | instance_id      | Identificador único generado en el inicio de extensión de kernel. |
@@ -183,7 +184,7 @@ Se recopilan los campos siguientes:
 
 #### <a name="support-data"></a>Datos de soporte técnico
 
-**Registros de diagnóstico**
+**Registro de diagnóstico**
 
 Los registros de diagnóstico solo se recopilan con el consentimiento del usuario como parte de la característica de envío de comentarios. Los siguientes archivos se recopilan como parte de los registros de soporte técnico:
 
@@ -205,9 +206,9 @@ Algunos ejemplos de datos de diagnóstico opcionales incluyen datos que Microsof
 
 **Configuración de Microsoft Defender para punto de conexión**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
-| Field                                              | Descripción |
+| Campo                                              | Descripción |
 | -------------------------------------------------- | ----------- |
 | connection_retry_timeout                           | Tiempo de espera de reintento de conexión cuando se comunica con la nube. |
 | file_hash_cache_maximum                            | Tamaño de la memoria caché del producto. |
@@ -219,6 +220,7 @@ Se recopilan los campos siguientes:
 | antivirus_engine.scan_cache_maximum                | Tamaño de la memoria caché del producto. |
 | antivirus_engine.maximum_scan_threads              | Número máximo de subprocesos usados para el examen. |
 | antivirus_engine.threat_restoration_exclusion_time | Tiempo de espera antes de que se pueda detectar de nuevo un archivo restaurado desde la cuarentena. |
+| antivirus_engine.threat_type_settings              | Configuración de la forma en que el producto controla los distintos tipos de amenazas. |
 | filesystem_scanner.full_scan_directory             | Directorio de examen completo. |
 | filesystem_scanner.quick_scan_directories          | Lista de directorios usados en el examen rápido. |
 | edr.latency_mode                                   | Modo de latencia usado por el componente de detección y respuesta. |
@@ -226,9 +228,9 @@ Se recopilan los campos siguientes:
 
 **Configuración de Actualización automática de Microsoft**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
-| Field                       | Descripción |
+| Campo                       | Descripción |
 | --------------------------- | ----------- |
 | how_to_check                | Determina cómo se comprueban las actualizaciones de productos (por ejemplo, automáticas o manuales). |
 | channel_name                | Actualizar canal asociado al dispositivo. |
@@ -239,9 +241,9 @@ Se recopilan los campos siguientes:
 
 #### <a name="diagnostic-log-upload-started-report"></a>Informe de carga iniciada del registro de diagnóstico
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
-| Field            | Descripción |
+| Campo            | Descripción |
 | ---------------- | ----------- |
 | sha256           | Identificador SHA256 del registro de soporte técnico. |
 | size             | Tamaño del registro de soporte técnico. |
@@ -250,9 +252,9 @@ Se recopilan los campos siguientes:
 
 #### <a name="diagnostic-log-upload-completed-report"></a>Informe completado de carga de registro de diagnóstico
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
-| Field            | Descripción |
+| Campo            | Descripción |
 | ---------------- | ----------- |
 | request_id       | Identificador de correlación para la solicitud de carga del registro de soporte técnico. |
 | sha256           | Identificador SHA256 del registro de soporte técnico. |
@@ -266,9 +268,9 @@ Cierres de aplicación inesperados y el estado de la aplicación cuando esto ocu
 
 **Estadísticas de extensión de kernel**
 
-Se recopilan los campos siguientes: 
+Se recopilan los siguientes campos:
 
-| Field                          | Descripción |
+| Campo                          | Descripción |
 | ------------------------------ | ----------- |
 | pkt_ack_timeout                | Las siguientes propiedades son valores numéricos agregados, que representan el recuento de eventos que se han producido desde el inicio de la extensión del kernel. |
 | pkt_ack_conn_timeout             | |

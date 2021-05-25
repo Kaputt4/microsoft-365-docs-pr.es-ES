@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b9bbe058042a49586e8515fde85371b1487e8d25
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6a34269c414f59d40c9160d5728159ed9cddf976
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297133"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651359"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Investigar alertas en Microsoft 365 Defender
 
@@ -72,14 +72,12 @@ También puede seleccionar la acción **Abrir la página de alerta** principal e
 
 Una página de alerta se compone de estas secciones: 
 
-- Artículo de alerta
-- Acciones realizadas (incluidos los activos afectados)
-- Eventos relacionados
+- Historia de alertas, que es la cadena de eventos y alertas relacionadas con esta alerta en orden cronológico
 - Detalles de resumen
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Ejemplo de la página de detalles de una alerta en el centro Microsoft 365 seguridad":::
 
-A lo largo de una página de alerta, puede seleccionar los puntos suspensivos (**...**) junto a cualquier entidad para ver acciones disponibles, como abrir la página de activos específica o realizar pasos de corrección específicos.
+A lo largo de una página de alerta, puede seleccionar los puntos suspensivos (**...**) junto a cualquier entidad para ver las acciones disponibles, como abrir la página de alerta o vincular la alerta a otro incidente.
 
 ### <a name="analyze-affected-assets"></a>Analizar activos afectados
 
@@ -138,7 +136,7 @@ Una vez que haya terminado de analizar una alerta  y se pueda resolver, vaya al 
 
 Clasificar alertas y especificar su determinación ayuda a ajustar Microsoft 365 Defender para proporcionar alertas más verdaderas y menos falsas.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Según sea necesario para incidentes en el proceso, continúe con la [investigación](investigate-incidents.md).
 

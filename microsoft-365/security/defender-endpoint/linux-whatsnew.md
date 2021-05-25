@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 21eaf1c0e0d3f61bb5798c8a4de6fe8f97ce4a0b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0adcecefc19c681ef68498a3e7c375913d85985d
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538800"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651133"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Novedades de Microsoft Defender para Endpoint en Linux
 
@@ -31,6 +31,10 @@ ms.locfileid: "52538800"
 
 ## <a name="1012964-30121042129640"></a>101.29.64 (30.121042.12964.0)
 
+- A partir de esta versión, las amenazas detectadas durante los exámenes antivirus a petición desencadenados a través del cliente de línea de comandos se corrigen automáticamente. Las amenazas detectadas durante los exámenes desencadenados a través de la interfaz de usuario aún requieren una acción manual.
+- `mdatp diagnostic real-time-protection-statistics` ahora admite dos modificadores adicionales:
+  - `--sort`: ordena el resultado descendente por número total de archivos analizados
+  - `--top N`: muestra los resultados N superiores (solo funciona si `--sort` también se especifica)
 - Mejoras de rendimiento & correcciones de errores
 
 ## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0)

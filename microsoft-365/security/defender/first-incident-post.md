@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 44f583d32de166fe3d68a182406eb3a2ee814084
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6b5311a2923d7b299ba4f70ef3c2e8d91809e7c8
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297157"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651373"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Paso 3. Realizar una revisión posterior al incidente de su primer incidente
 
@@ -36,7 +36,7 @@ ms.locfileid: "52297157"
 **Se aplica a:**
 - Microsoft 365 Defender
 
-El Instituto Nacional de Estándares y Tecnología (NIST) recomienda que una vez que se hayan dado todos los pasos para recuperarse del ataque, las organizaciones deben revisar el incidente para aprender de él y aprender y mejorar la postura o los procesos de seguridad. La evaluación de los distintos aspectos del tratamiento de incidentes es importante para prepararse para el siguiente incidente.
+El Instituto Nacional de Estándares y Tecnología (NIST) recomienda que una vez que se hayan tomado todos los pasos para recuperarse del ataque, las organizaciones deben revisar el incidente para aprender de él y mejorar la postura o los procesos de seguridad. La evaluación de los distintos aspectos del tratamiento de incidentes es importante para prepararse para el siguiente incidente.
 
 Microsoft 365 Defender puede ayudar a realizar actividades posteriores al incidente proporcionando a una organización alertas que se alinean con [MITRE ATT&CK Framework](https://attack.mitre.org/). Todas las soluciones de Microsoft Defender etiquetan los ataques de acuerdo con una técnica o una táctica&CK de ATT. 
 

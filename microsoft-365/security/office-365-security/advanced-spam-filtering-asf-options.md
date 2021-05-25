@@ -19,12 +19,12 @@ ms.custom:
 description: Los administradores pueden obtener información sobre la configuración del filtro de correo no deseado avanzado (ASF) que están disponibles en las directivas contra correo no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5ade36086d1503b89b506730b98ac7965845e86b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3639b12c0003c958681671fce6bb2b857b3931b8
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51207454"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651205"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Configuración avanzada del filtro de correo no deseado (ASF) en EOP
 
@@ -38,7 +38,7 @@ ms.locfileid: "51207454"
 > [!NOTE]
 > La configuración de ASF que está disponible actualmente en las directivas contra correo no deseado está en desuso. Se recomienda no usar esta configuración en directivas contra correo no deseado. La funcionalidad de esta configuración de ASF se está incorporando a otras partes de la pila de filtrado. Para obtener más información, vea [Configuración de la directiva contra correo no deseado de EOP](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
-En todas las organizaciones de Microsoft 365, la configuración del Filtro de correo no deseado avanzado (ASF) en las directivas contra correo no deseado en EOP permite a los administradores marcar los mensajes como correo no deseado en función de propiedades de mensaje específicas. ASF se dirige específicamente a estas propiedades porque se encuentran comúnmente en correo no deseado. Según la propiedad, las detecciones de ASF marcarán el mensaje como **Correo** no deseado o Correo no **deseado de alta confianza.**
+En todas Microsoft 365, la configuración del Filtro de correo no deseado avanzado (ASF) en las directivas contra correo no deseado en EOP permite a los administradores marcar los mensajes como correo no deseado en función de propiedades de mensaje específicas. ASF se dirige específicamente a estas propiedades porque se encuentran comúnmente en correo no deseado. Según la propiedad, las detecciones de ASF marcarán el mensaje como **Correo** no deseado o Correo no **deseado de alta confianza.**
 
 > [!NOTE]
 > Habilitar una o varias opciones de configuración de ASF es un enfoque agresivo para el filtrado de correo no deseado. No puede notificar mensajes filtrados por ASF como falsos positivos. Puede identificar los mensajes filtrados por ASF mediante:
@@ -49,7 +49,7 @@ En todas las organizaciones de Microsoft 365, la configuración del Filtro de co
 >
 > - Los campos `X-CustomSpam:` de encabezado X específicos que se agregan a los mensajes como se describe en este artículo.
 
-En las secciones siguientes se describen las opciones y la configuración de ASF que están disponibles en las directivas contra correo no deseado en el Centro de seguridad y cumplimiento de & y en PowerShell de Exchange Online o en PowerShell de EOP independiente ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) y [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
+En las secciones siguientes se describen las opciones y la configuración de ASF que están disponibles en las directivas contra correo no deseado en el Centro de seguridad y cumplimiento de & y en Exchange Online PowerShell o PowerShell independiente de EOP ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) y [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)). Para más información, consulte [Configurar directivas contra correo electrónico no deseado en EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="enable-disable-or-test-asf-settings"></a>Habilitar, deshabilitar o probar la configuración de ASF
 
@@ -81,6 +81,8 @@ Para cada configuración de ASF, las siguientes opciones están disponibles en l
 
 La siguiente configuración de ASF establece el nivel de confianza de correo no deseado  (SCL) de los mensajes detectados en 5 o 6, que corresponde al veredicto de filtro de correo no deseado y a la acción correspondiente en las directivas contra correo no deseado.
 
+<br>
+
 ****
 
 |Configuración de directiva contra correo no deseado|Descripción|Encabezado X agregado|
@@ -94,6 +96,8 @@ La siguiente configuración de ASF establece el nivel de confianza de correo no 
 ## <a name="mark-as-spam-settings"></a>Marcar como configuración de correo no deseado
 
 La siguiente configuración de ASF establece el SCL de los mensajes detectados en 9, que corresponde al veredicto de filtro de **correo no** deseado de elevada confianza y a la acción correspondiente en las directivas contra correo no deseado.
+
+<br>
 
 ****
 
@@ -109,5 +113,5 @@ La siguiente configuración de ASF establece el SCL de los mensajes detectados e
 |**Aplicar lista de palabras confidenciales** <p> *MarkAsSpamSensitiveWordList*|Microsoft mantiene una lista dinámica pero no editable de palabras asociadas con mensajes potencialmente ofensivos. <p> Los mensajes que contienen palabras de la lista de palabras confidenciales del asunto o cuerpo del mensaje se marcan como correo no deseado de elevada confianza.|`X-CustomSpam: Sensitive word in subject/body`|
 |**Registro de SPF: error** <p> *MarkAsSpamSpfRecordHardFail*|Los mensajes enviados desde una dirección IP que no se especifica en el registro SPF Sender Policy Framework (SPF) en DNS para el dominio de correo electrónico de origen se marcan como correo no deseado de elevada confianza. <p> El modo de prueba no está disponible para esta configuración.|`X-CustomSpam: SPF Record Fail`|
 |**Filtrado de identificador del remitente condicional: error** <p> *MarkAsSpamFromAddressAuthFail*|Los mensajes que no cumplen una comprobación condicional del id. del remitente se marcan como correo no deseado. <p> Esta configuración combina una comprobación de SPF con una comprobación de id. de remitente para ayudar a proteger contra encabezados de mensaje que contienen remitentes falsificados. <p> El modo de prueba no está disponible para esta configuración.|`X-CustomSpam: SPF From Record Fail`|
-|**Reenvío masivo de correo electrónico no deseado de NDR** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* es informes de no entrega inútiles (también conocidos como NDR o mensajes de despegar) causados por remitentes falsificados en mensajes de correo electrónico. Para obtener más información, [vea Backscatter messages y EOP](backscatter-messages-and-eop.md). <p> No es necesario configurar esta configuración en los siguientes entornos, ya que se entregan NDR legítimos y el backscatter se marca como correo no deseado: <ul><li>Organizaciones de Microsoft 365 con buzones de Exchange Online.</li><li>Organizaciones de correo electrónico locales a las que se *enruta el correo* electrónico saliente a través de EOP.</li></ul> <p> En entornos EOP independientes que protegen el correo electrónico entrante en buzones locales, activar o desactivar esta configuración tiene el siguiente resultado: <ul><li> **On**: Se entregan NDR legítimos y el backscatter se marca como correo no deseado.</li><li>**Desactivado:** los NDR legítimos y el backscatter pasan por el filtrado de correo no deseado normal. La mayoría de las NDR legítimas se entregarán al remitente del mensaje original. Algunos, pero no todos, se marcan como correo no deseado de elevada confianza. Por definición, el backscatter solo se puede entregar al remitente suplantado, no al remitente original.</li></ul> <p> El modo de prueba no está disponible para esta configuración.|`X-CustomSpam: Backscatter NDR`|
+|**Reenvío masivo de correo electrónico no deseado de NDR** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* es informes de no entrega inútiles (también conocidos como NDR o mensajes de despegar) causados por remitentes falsificados en mensajes de correo electrónico. Para obtener más información, [vea Backscatter messages y EOP](backscatter-messages-and-eop.md). <p> No es necesario configurar esta configuración en los siguientes entornos, ya que se entregan NDR legítimos y el backscatter se marca como correo no deseado: <ul><li>Microsoft 365 organizaciones con Exchange Online buzones de correo.</li><li>Organizaciones de correo electrónico locales a las que se *enruta el correo* electrónico saliente a través de EOP.</li></ul> <p> En entornos EOP independientes que protegen el correo electrónico entrante en buzones locales, activar o desactivar esta configuración tiene el siguiente resultado: <ul><li> **On**: Se entregan NDR legítimos y el backscatter se marca como correo no deseado.</li><li>**Desactivado:** los NDR legítimos y el backscatter pasan por el filtrado de correo no deseado normal. La mayoría de las NDR legítimas se entregarán al remitente del mensaje original. Algunos, pero no todos, se marcan como correo no deseado de elevada confianza. Por definición, el backscatter solo se puede entregar al remitente suplantado, no al remitente original.</li></ul> <p> El modo de prueba no está disponible para esta configuración.|`X-CustomSpam: Backscatter NDR`|
 |

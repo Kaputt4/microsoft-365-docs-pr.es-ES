@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: ba8f27c90f9c84729a10f461e85b2e1441b49549
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f2429b0ffdd4a238bc9322ae9199eebbbfd407b5
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625406"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651167"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Administrar temas en el centro de temas en Temas de Microsoft Viva
 
@@ -59,12 +59,12 @@ Los administradores de conocimientos ayudan a guiar los temas detectados a trav�
 > [!Note] 
 > En la página Administrar **temas,** cada administrador de conocimientos solo podrá ver temas en los que tengan acceso a los archivos y páginas subyacentes conectados al tema. Este recorte de permisos se reflejará en la lista de temas que aparecen en las pestañas **Sugerido,** **Confirmado,** Publicado **y** Eliminado. Sin embargo, los recuentos de temas muestran los recuentos totales de la organización independientemente de los permisos.
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>Requisitos
 
 Para administrar temas en el centro de temas, debe:
 - Tener una licencia de Temas Microsoft Viva.
 
-- Tenga el [**Quién puede administrar permisos de temas.**](./topic-experiences-user-permissions.md) Los administradores del conocimientos pueden conceder a los usuarios este permiso en la configuración de permisos del tema de Temas Viva. 
+- Tenga el [**Quién puede administrar permisos de temas.**](./topic-experiences-user-permissions.md) Los Administradores de conocimientos pueden conceder a los usuarios este permiso en la configuración de permisos del tema de Temas Viva. 
 
 No podrá ver la  página Administrar temas en el centro de temas a menos que tenga el permiso **Quién administrar temas.**
 
@@ -119,3 +119,11 @@ Tenga en cuenta que todavía puede optar por rechazar un tema confirmado. Para e
 Los temas publicados se han editado para que la información específica siempre aparezca a quien encuentre la página. Aquí también se muestran los temas creados manualmente.
 
    ![Administrar temas](../media/knowledge-management/manage-topics-new.png)
+
+## <a name="topic-count-dashboard"></a>Panel de recuento de temas
+
+Este gráfico de la vista panel le permite ver el número de temas en el Centro de temas de Viva Topics. El gráfico muestra los recuentos de temas por fase de ciclo de vida del tema y también muestra cómo los recuentos de temas han tenido tendencia con el tiempo. Los administradores de conocimientos pueden supervisar visualmente la velocidad a la que AI detecta nuevos temas y la velocidad a la que el administrador de conocimientos o las acciones del usuario confirman o publican los temas.
+
+Los administradores de conocimientos pueden ver un número  diferente de temas representados en la lista de temas de la página Administrar temas de los que se ven en el panel. Esto se debe a que es posible que un administrador de conocimientos no tenga acceso a todos los temas. El recuento que se muestra en la vista de panel se toma antes de aplicar el recorte de permisos. 
+
+   ![Captura de pantalla del panel de recuento de temas](../media/knowledge-management/topic-count-dashboard.png)

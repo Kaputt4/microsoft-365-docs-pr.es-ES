@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 40d86f9f3a4896bbe788f0a9894a7e08efe3a690
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 2a4b122b3ef3a1ddaf61d8f9373bec3e721db177
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301733"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651385"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-office-365-to-the-microsoft-365-security-center"></a>Redirigir cuentas de Microsoft Defender para Office 365 al centro Microsoft 365 seguridad
 
@@ -64,13 +64,13 @@ Para iniciar el enrutamiento de cuentas al centro Microsoft 365 seguridad en sec
 > Una vez habilitada la redirección, las cuentas en sesiones activas mientras se aplica esta configuración no se expulsarán de su sesión y solo se enrutarán al centro de seguridad de Microsoft 365 después de finalizar la sesión actual y volver a iniciar sesión.
 
 ## <a name="can-i-go-back-to-using-the-former-portal"></a>¿Puedo volver a usar el portal anterior?
-Si algo no funciona para usted o si hay algo que no puede completar a través del portal del centro de seguridad de Microsoft 365, queremos saber cómo hacerlo con la opción de comentarios del portal. Si ha encontrado algún problema con el redireccionamiento, le recomendamos que se ponga en contacto con su compañero de pm directamente a través de la vista previa privada o háganoslo saber a través del formulario Enviar comentarios.
+Si algo no funciona para usted o si hay algo que no puede completar a través del portal del centro de seguridad de Microsoft 365, queremos saber cómo hacerlo con la opción de comentarios del portal. Si ha encontrado algún problema con el redireccionamiento, háganoslo saber.
 
 Para volver al portal anterior:
 
 1. [Inicie sesión](https://security.microsoft.com/) en el centro Microsoft 365 seguridad como administrador global o use y cuenta con permisos de administrador de seguridad en Azure Active Directory.
 
-2. Vaya a la **Configuración**  >  **de Endpoints**  >  **General**  >  **Portal**.  
+2. Desplácese hasta **Configuración**  >  **correo & redireccionamiento del** portal de  >  **colaboración.**   
 
 3. Alterna la opción Redirección automática a **Desactivado**.
 
