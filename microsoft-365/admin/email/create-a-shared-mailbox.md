@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Cree un buzón compartido para permitir que varios usuarios de su empresa puedan compartir la responsabilidad de leer y responder correo electrónico enviado a una dirección.
-ms.openlocfilehash: 808b98b45c3d6f5ba3cd9847ba2aa843ff53d106
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e628d72482ed7ff32a204eaf9503fdd9a271844a
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537612"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635503"
 ---
 # <a name="create-a-shared-mailbox"></a>Creación de un buzón compartido 
 
@@ -90,7 +90,7 @@ Puede usar los siguientes permisos con un buzón compartido:
 
 - **Enviar como**: el permiso para Enviar como le permite al usuario suplantar el buzón compartido al enviar un mensaje de correo. Por ejemplo, si Carlos inicia sesión en el buzón compartido del departamento de marketing y envía un correo electrónico, el remitente de dicho correo será el departamento de marketing.
 
-- **Enviar en nombre de**: el permiso Enviar en nombre de le permite al usuario enviar mensajes en nombre del buzón compartido. Por ejemplo, si Sergio inicia sesión en el buzón compartido del Edificio de recepción 32 y envía un mensaje de correo electrónico, los destinatarios verán el mensaje como enviado por “Sergio en nombre del Edificio de recepción 32”. No puede usar el CEF para conceder permisos de Enviar en nombre de. En este caso, debe utilizar el cmdlet **Set-Mailbox** con el parámetro _GrantSendonBehalf_.
+- **Enviar en nombre de**: el permiso Enviar en nombre de le permite al usuario enviar mensajes en nombre del buzón compartido. Por ejemplo, si Sergio inicia sesión en el buzón compartido del Edificio de recepción 32 y envía un mensaje de correo electrónico, los destinatarios verán el mensaje como enviado por “Sergio en nombre del Edificio de recepción 32”. No puede usar el CEF para conceder permisos de Enviar en nombre de. En este caso, debe utilizar el cmdlet **Set-Mailbox** con el parámetro _GrantSendonBehalf_.
 
 ### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>Usar el EAC para editar la delegación de buzones compartidos
 
@@ -200,12 +200,8 @@ Cuando creó el buzón compartido, creó automáticamente un calendario comparti
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Acerca de los buzones compartidos](about-shared-mailboxes.md) (artículo)
-
-[Configurar un buzón compartido](configure-a-shared-mailbox.md) (artículo)
-
-[Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md) (artículo)
-
-[Quitar la licencia de un buzón compartido](remove-license-from-shared-mailbox.md) (artículo)
-
+[Acerca de los buzones compartidos](about-shared-mailboxes.md) (artículo)\
+[Configurar un buzón compartido](configure-a-shared-mailbox.md) (artículo)\
+[Convertir un buzón de usuario en un buzón compartido](convert-user-mailbox-to-shared-mailbox.md) (artículo)\
+[Quitar la licencia de un buzón compartido](remove-license-from-shared-mailbox.md) (artículo)\
 [Resolver problemas con los buzones compartidos](resolve-issues-with-shared-mailboxes.md) (artículo)

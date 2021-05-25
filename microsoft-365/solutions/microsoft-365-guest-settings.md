@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Priority
 recommendations: false
 description: Más información sobre las opciones de configuración de uso compartido de invitados disponibles en Microsoft 365 que pueden afectar al uso compartido con personas de fuera de su organización.
-ms.openlocfilehash: 60ebff4f564e7046a54cb707781acc0151aa8ad9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b209477e2fa205ebb6b298b7fa9f37c21e2b3d7e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538116"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625437"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referencia de la configuración de uso compartido de invitados de Microsoft 365
 
@@ -38,7 +38,7 @@ Azure Active Directory es el servicio de directorio que usa Microsoft 365. La co
 > [!NOTE]
 > Esta configuración solo afecta a SharePoint cuando se ha configurado la [Integración de SharePoint y OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview). En la tabla siguiente se presupone que esta se ha configurado.
 
-### <a name="organizational-relationships-settings"></a>Configuración de relaciones de organización
+### <a name="external-collaboration-settings"></a>Configuración de la colaboración externa
 
 **Navegación:** [Centro de administración de Azure Active Directory](https://aad.portal.azure.com) > Azure Active Directory > Identidades externas > Configuración de colaboración externa
 
@@ -46,11 +46,9 @@ Azure Active Directory es el servicio de directorio que usa Microsoft 365. La co
 
 | Valor | Predeterminado | Descripción |
 |:-----|:-----|:-----|
-|Los permisos de usuarios invitados son limitados|Sí|Esta configuración afecta a las tareas del directorio que pueden realizar los invitados.|
-|Solo pueden invitar los administradores y usuarios con el rol de invitador de usuarios invitados|Sí|Si se establece en **Sí**, los administradores pueden invitar a través de Azure AD y a través de las experiencias de uso compartido de Microsoft 365, como Teams y SharePoint; si se establece en **No**, no pueden hacerlo.|
-|Los miembros pueden invitar|Sí|Si se establece en **Sí**, los miembros de Azure AD pueden invitar a través de Azure AD; si se establece en **No**, no pueden hacerlo. Cuando se establece en **Sí**, los miembros del Grupo de Microsoft 365 pueden invitar con la aprobación del propietario; cuando se establece en **No**, los miembros del Grupo de Microsoft 365 pueden invitar con la aprobación del propietario, pero los propietarios deben ser administradores globales para poder aprobar. <br><br>Tenga en cuenta que la opción **Los miembros pueden invitar** hace referencia a los miembros de Azure AD (frente a los invitados) y no a los miembros del sitio o grupo de Microsoft 365. <br><br>Esto es idéntico a la opción de configuración **Permitir que los usuarios agreguen nuevos invitados a la organización** en seguridad y privacidad de Microsoft 365.|
-|Los invitados pueden invitar|Sí|Si se establece en **Sí**, los invitados en el directorio pueden invitar a otros invitados a colaborar en los recursos de Azure AD y en los archivos y carpetas de SharePoint y OneDrive; si se establece en **No**, no pueden hacerlo. <br><br>Tenga en cuenta que **Permitir que los usuarios externos detecten cuentas de usuario en el directorio si escriben la dirección de correo electrónico exacta** se debe activar en el Centro de administración de SharePoint para que los invitados puedan compartir archivos y carpetas con otros invitados.|
-|Habilitar el código de acceso de un solo uso de correo electrónico para invitados (versión preliminar)|No|Si se establece en **Sí**, los invitados que no tengan MSA o una cuenta profesional o educativa pueden [autenticarse con Azure AD mediante un código de acceso de un solo uso](/azure/active-directory/b2b/one-time-passcode); si se establece en **No**, los usuarios tendrán que crear un cuenta de Microsoft para autenticarse. Esta configuración se debe establecer en **Sí** para la [Integración de SharePoint y OneDrive con Azure AD B2B (versión preliminar)](/sharepoint/sharepoint-azureb2b-integration-preview).|
+|Acceso de usuario invitado|Los usuarios invitados tienen acceso limitado a propiedades y pertenencia a objetos de directorio|Determina los [permisos que tienen los invitados en Azure Active Directory](/azure/active-directory/fundamentals/users-default-permissions).|
+|Configuración de invitaciones para usuarios invitados|Cualquier persona de la organización puede invitar a usuarios invitados, incluidos los invitados y los no administradores|Determina si los invitados, miembros y administradores pueden invitar a usuarios invitados a la organización.<br><br> Esta configuración afecta a las experiencias de uso compartido de Microsoft 365 como Teams y SharePoint.|
+|Habilitar el registro de autoservicio de invitados a través de los flujos de usuario|No|Determina si puede crear flujos de usuario que permitan a alguien registrarse en una aplicación que ha creado y crear una cuenta de invitado.|
 |Restricciones de colaboración|Permitir el envío de invitaciones a cualquier dominio|Esta configuración le permite especificar una lista de dominios permitidos o bloqueados para el uso compartido. Si se especifican dominios permitidos, las invitaciones de uso compartido solo se pueden enviar a estos dominios. Si se especifican dominios denegados, las invitaciones de uso compartido no se pueden enviar a estos dominios.<br><br> Esta configuración afecta a las experiencias de uso compartido de Microsoft 365 como Teams y SharePoint. Puede permitir o bloquear dominios en un nivel más granular con el filtrado de dominios de SharePoint o Teams.|
 
 Esta configuración afecta al modo en que se invitan a los usuarios al directorio. No afecta al uso compartido de invitados que ya están en el directorio.
@@ -210,7 +208,7 @@ Como estas opciones están sujetas a la configuración de toda la organización 
 
 Puede establecer permisos para el uso compartido de invitados para cada sitio de SharePoint. Esta configuración se aplica al uso compartido de sitios y al uso compartido de archivos y carpetas. (El uso compartido de *Cualquiera* no está disponible para compartir sitios. Si elige **Cualquiera**, los usuarios podrán compartir archivos y carpetas mediante vínculos de *Cualquiera*, y el mismo sitio con invitados nuevos y existentes).
 
-Si en el sitio se ha aplicado una etiqueta de confidencialidad, puede que dicha etiqueta controle la configuración de uso compartido externo. Para obtener más información, consulte [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
+Si en el sitio se ha aplicado una etiqueta de confidencialidad, puede que dicha etiqueta controle la configuración de uso compartido externo. Para obtener más información, consulte [Usar etiquetas de confidencialidad para proteger el contenido en Microsoft Teams, grupos de Microsoft 365 y sitios de SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 **Navegación:** Centro de administración de SharePoint > Sitios activos > seleccione el sitio > Editar uso compartido externo
 

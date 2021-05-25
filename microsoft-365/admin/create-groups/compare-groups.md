@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Los miembros de Microsoft 365 obtienen un correo electrónico de grupo y un área de trabajo compartida para las conversaciones, los archivos y los eventos de calendario, Stream y un Planner.
-ms.openlocfilehash: d8bf2e20b428063b99d540896bac3e6e1ae59481
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3e4fa36520247179b653f799f7b2a061b9d9f4a9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535871"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635599"
 ---
 # <a name="compare-groups"></a>Comparar grupos
 
 En la sección **Grupos** del Centro de administración de Microsoft 365, puede crear y administrar estos tipos de grupos: 
 
-- **Los grupos de Microsoft 365** (anteriormente grupos de Office 365) se usan para la colaboración entre usuarios, tanto dentro como fuera de la empresa.
+- **Los grupos de Microsoft 365** (anteriormente grupos de Office 365) se usan para la colaboración entre usuarios, tanto dentro como fuera de la empresa.
 - **Los grupos de distribución** se usan para enviar notificaciones de correo electrónico a un grupo de personas.
 - **Los grupos de seguridad** se usan para conceder acceso a los recursos como SharePoint.
 - **Los grupos de seguridad habilitados para correo** se usan para conceder acceso a recursos como SharePoint y enviar notificaciones por correo electrónico a estos usuarios.
@@ -93,6 +93,5 @@ Actualmente, no es posible migrar un buzón compartido a un grupo de Microsoft 3
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Obtener más información sobre los grupos de Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (artículo)
-
+[Obtener información sobre los grupos de Microsoft 365](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (artículo)\
 [Por qué debería actualizar sus listas de distribución a grupos de Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (artículo)

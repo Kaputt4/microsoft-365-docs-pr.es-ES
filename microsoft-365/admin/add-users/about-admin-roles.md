@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Los roles de administrador, como los administradores de servicios, se asignan a funciones empresariales y dan permisos para realizar tareas específicas en el centro de administración.
-ms.openlocfilehash: 7ba8b6fd483901fde31a9bceca189797b4f2e16d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3163b7a4037a923122d2da170ac5ea9e8c2d0185
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536015"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634201"
 ---
 # <a name="about-admin-roles"></a>Acerca de los roles de administrador
 
@@ -95,10 +95,6 @@ Antes de que el partner pueda asignar estos roles a los usuarios, usted debe agr
   
 ## <a name="related-content"></a>Contenido relacionado
 
-[Asignar roles de administrador](assign-admin-roles.md) (artículo)
-
-[Roles de Azure AD en el Centro de administración de Microsoft 365](azure-ad-roles-in-the-mac.md) (artículo)
-
-[Rol de administrador de Exchange Online](about-exchange-online-admin-role.md) (artículo)
-  
-[Informes de actividad del Centro de administración de Microsoft 365](../activity-reports/activity-reports.md) (artículo)
+[Asignar roles de administrador](assign-admin-roles.md) (artículo)\
+[Roles de Azure AD en el Centro de administración de Microsoft 365](azure-ad-roles-in-the-mac.md) (artículo)\
+[Rol de administrador de Exchange Online](about-exchange-online-admin-role.md) (artículo)\ [Informes de actividades en el Centro de administración de Microsoft 365](../activity-reports/activity-reports.md) (artículo)
