@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre directivas y etiquetas de retención que le ayudarán a conservar lo que necesita y eliminar el contenido innecesario.
-ms.openlocfilehash: 2695d34e29492a88da86c2511ce32e4036031e9d
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: ba17a94fa4ae0d12405cc7e38d7d74e90fa7ad02
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572662"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625226"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Más información sobre directivas y etiquetas de retención
 
@@ -368,7 +368,7 @@ Usted aplica el Bloqueo de conservación después de crear la directiva o etique
 
 Siempre que sus directivas de retención no tengan ningún Bloqueo de conservación, podrá eliminar las directivas en cualquier momento, lo cual desactiva de forma eficaz la configuración de retención aplicada previamente. También puede mantener la directiva, pero quitar el sitio de SharePoint o la cuenta de OneDrive, o bien, cambiar el estado de ubicación a desactivado o deshabilitar la directiva.
  
-Al realizar cualquiera de estas acciones, cualquier contenido de SharePoint o OneDrive sujeto a la retención de la directiva se conservará durante 30 días para evitar la pérdida involuntaria de datos. Durante este período de gracia de 30 días, no podrá eliminar el sitio y los archivos eliminados aún se conservarán (los archivos se seguirán agregando a la Biblioteca de suspensión para conservación), pero el trabajo de temporizador que limpia periódicamente la Biblioteca de suspensión para conservación se suspende para estos archivos para que pueda restaurarlos si es necesario.
+Al realizar cualquiera de estas acciones, cualquier contenido de SharePoint o OneDrive sujeto a la retención de la directiva se conservará durante 30 días para evitar la pérdida involuntaria de datos. Durante este período de gracia de 30 días, aún se conservarán los archivos eliminados (se seguirán agregando a la Biblioteca de suspensión para conservación), pero el trabajo de temporizador que limpia periódicamente la Biblioteca de suspensión para conservación se suspende para estos archivos para que pueda restaurarlos si es necesario.
 
 Para obtener más información sobre la Biblioteca de suspensión para conservación, consulte [Cómo funciona la retención para SharePoint y OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 

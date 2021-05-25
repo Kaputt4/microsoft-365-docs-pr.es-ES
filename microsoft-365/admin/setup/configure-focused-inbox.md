@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
-description: 'Obtenga información acerca de cómo configurar la Bandeja de entrada Prioritarios para todos los usuarios específicos de su organización. '
-ms.openlocfilehash: 62a38f911e4e1b878af6489f096f17644e070978
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+description: Si es el responsable de configurar las opciones de correo electrónico para todos los usuarios de una empresa, en este artículo se explica cómo configurar Bandeja de entrada Prioritarios para los usuarios.
+ms.openlocfilehash: ddd0886988072139a199bfc3f6e8adbbf25ad58b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644517"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623706"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurar la Bandeja de entrada Prioritarios para todos los usuarios de la organización
 
@@ -168,7 +168,7 @@ Sí. Puede activar o desactivar la Bandeja de entrada Prioritarios para toda la 
   
 ### <a name="is-the-focused-inbox-feature-only-available-for-office-2016-clients"></a>¿La característica Bandeja de entrada Prioritarios solo está disponible para los clientes de Office 2016?
 
-Sí, solo los usuarios de Office 2016 se verán afectados. Esta característica no se incorporará a Outlook 2013 ni a las versiones anteriores.
+Sí, esto afecta solo los usuarios de Office 2016. Esta característica no se incorporará a Outlook 2013 ni a las versiones anteriores.
   
 ### <a name="how-long-does-it-take-for-focused-inbox-changes-to-take-place-in-outlook"></a>¿Cuánto tiempo tardan los cambios de la Bandeja de entrada Prioritarios en aplicarse en Outlook?
 
@@ -180,7 +180,7 @@ Después de cambiar, ya no recibirá el correo electrónico que requiere menos a
   
 Lea esta publicación de [Tony Redmond](https://www.petri.com/author/tony-redmond), MVP (Most Valuable Professional) de Microsoft: [La Bandeja de entrada Prioritarios sustituye a Otros correos en Office 365](https://www.petri.com/focused-inbox-office-365).
   
-### <a name="can-i-keep-users-on-clutter-what-is-microsofts-recommendation-when-it-comes-to-using-clutter-vs-focused-inbox"></a>¿Puedo mantener a los usuarios en Otros correos? ¿Cuál es la recomendación de Microsoft cuando se trata de usar Otros correos frente a Bandeja de entrada Prioritarios?
+### <a name="can-i-keep-users-on-clutter-what-is-microsofts-recommendation-when-it-comes-to-using-clutter-vs-focused-inbox"></a>¿Puedo mantener a los usuarios en Otros correos? ¿Qué recomienda Microsoft: Otros correos o la Bandeja de entrada Prioritarios?
 
 Sí, puede mantener a los usuarios en Otros correos y deshabilitar la Bandeja de entrada Prioritarios. Sin embargo, la Bandeja de entrada Prioritarios sustituirá a Otros correos tarde o temprano, por lo que Microsoft recomienda cambiar a la Bandeja de entrada Prioritarios. Para obtener más información sobre cuándo usar Otros correos con Exchange Online, consulte la entrada de blog: [Actualización de la Bandeja de entrada Prioritarios y planes para Otros correos](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448).
   
@@ -206,5 +206,10 @@ Existen dos cmdlets para controlar la Bandeja de entrada Prioritarios. Al ejecut
   
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>¿Puedo ejecutar un script para ver quién tiene activada la Bandeja de entrada Prioritarios?
 
-No, y no se puede cambiar. La habilitación de la Bandeja de entrada Prioritarios es una configuración del lado del cliente, por lo que los cmdlets solo pueden decirle si el buzón del usuario puede activar o no la experiencia del cliente. Es posible que esté habilitada en algunos clientes y en otros deshabilitada, por ejemplo, habilitada en la aplicación Outlook y Outlook Mobile, pero deshabilitada en Outlook en la Web.
+No, y no se puede cambiar. La habilitación de la Bandeja de entrada Prioritarios es una configuración del cliente, por lo que los cmdlets solo pueden decirle si el buzón del usuario puede activar o no la experiencia del cliente. Es posible que esté habilitada en algunos clientes y en otros deshabilitada, por ejemplo, habilitada en la aplicación Outlook y Outlook Mobile, pero deshabilitada en Outlook en la Web.
 
+## <a name="related-content"></a>Contenido relacionado
+
+[Configurar Otros correos para su organización](../email/configure-clutter.md) (artículo)\
+[Establecer la configuración de buzón compartido](../email/configure-a-shared-mailbox.md) (artículo)\
+[Crear firmas y avisos de declinación de responsabilidades](create-signatures-and-disclaimers.md) (vídeo)

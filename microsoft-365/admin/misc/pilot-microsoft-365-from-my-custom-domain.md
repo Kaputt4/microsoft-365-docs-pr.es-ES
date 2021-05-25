@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información acerca de cómo probar la funcionalidad de correo electrónico de mi dominio personalizado en un buzón de Microsoft 365 usando solo dos cuentas de prueba.
-ms.openlocfilehash: bdcf86474a7f2edb458075e884c20e56d231df6d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b2017da30aba3b48b51de26b7907167dc5dd3e6e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197844"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623650"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Prueba piloto de Microsoft 365 desde mi dominio personalizado
 
@@ -60,7 +60,7 @@ Siga estos pasos para configurar una prueba piloto de Microsoft 365:
 
 3. Seleccione los servicios que desee probar con su dominio, como el correo electrónico y la mensajería instantánea.
 
-5. En la página **Comprobar** dominio, siga las instrucciones paso a paso y, a continuación, haga clic en y **Comprobar**.
+4. En la página **Comprobar** dominio, siga las instrucciones paso a paso y, a continuación, haga clic en y **Comprobar**.
 
     Se tarda entre unos minutos y 72 horas en que los cambios en el DNS surtan efecto.
 
@@ -70,7 +70,7 @@ Siga estos pasos para configurar una prueba piloto de Microsoft 365:
 
 1. En el Centro de administración de Exchange, en la sección **Flujo de correo**, seleccione **Dominios aceptados** y, a continuación, seleccione el dominio que desea modificar.
 
-2. Haga doble clic para abrir la ventana y, a continuación, seleccione **retransmisión interna**. 
+2. Haga doble clic para abrir la ventana y, a continuación, seleccione **retransmisión interna**.
 
 3. Seleccione **Guardar**.
 
@@ -85,7 +85,7 @@ Microsoft 365 usa Exchange Online Protection (EOP) para la protección contra co
 
 1. En el panel de navegación del Centro de administración de Exchange, seleccione **Protección** y, a continuación, seleccione **Filtro de conexión**.
 
-2. En la **Lista de direcciones IP permitidas**, seleccione **+**, y agregue la dirección IP para el servidor de correo electrónico a su proveedor de correo electrónico actual. 
+2. En la **Lista de direcciones IP permitidas**, seleccione **+**, y agregue la dirección IP para el servidor de correo electrónico a su proveedor de correo electrónico actual.
 
 ### <a name="step-5-create-user-accounts-and-set-the-primary-reply-to-address"></a>Paso 5: crear cuentas de usuario y configurar la dirección de respuesta principal
 
@@ -97,9 +97,9 @@ Microsoft 365 usa Exchange Online Protection (EOP) para la protección contra co
 
     Para asegurarse de que el correo electrónico de un usuario siga siendo el mismo, el campo **Nombre de usuario** tiene que coincidir con la dirección de correo electrónico actual del usuario.
 
-3. Elija la licencia adecuada, haga clic en **Siguiente** y, después, haga clic en **Finalizar la agregación**. 
+3. Elija la licencia adecuada, haga clic en **Siguiente** y, después, haga clic en **Finalizar la agregación**.
 
-4. Junto a **Nombre de usuario**, seleccione su nombre de dominio personalizado de la lista desplegable. 
+4. Junto a **Nombre de usuario**, seleccione su nombre de dominio personalizado de la lista desplegable.
 
 5. Seleccione **Crear** > **Cerrar**.
 
@@ -115,7 +115,7 @@ Para lograr esto, hay dos pasos:
 
 Asegúrese de que ha realizado lo siguiente en Microsoft 365 u Office 365:
 
-1. Para configurar conectores, necesita permisos asignados antes de comenzar. Para comprobar qué permisos necesita, consulte la entrada sobre conectores de Microsoft 365 y Office 365 en el tema [Permisos de características en EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop).
+1. Para configurar conectores, necesita permisos asignados antes de comenzar. Para comprobar qué permisos necesita, consulte la entrada sobre conectores de Microsoft 365 y Office 365 en el tema [Permisos de características en Exchange Online](/exchange/permissions-exo/feature-permissions).
 
 2. Si desea que EOP o Exchange Online retransmitan correo electrónico desde los servidores de correo electrónico a Internet, elija una de las siguientes opciones:
 
@@ -156,7 +156,7 @@ Inicie sesión en el sitio web de su proveedor de host DNS y siga las instruccio
 
     Por ejemplo, "v=spf1 mx include:adatum.com include:spf.protection.outlook.com ~all".
 
-    Si no tiene un registro de SPF, modifique el recomendado por Microsoft 365 para incluir el dominio de su proveedor de correo electrónico actual y agregue spf.protection.outlook.com. Esto autoriza los mensajes salientes de ambos sistemas de correo electrónico.
+    Si no tiene un registro de SPF, modifique el que recomienda Microsoft 365 para que incluya el dominio de su proveedor de correo electrónico actual, más spf.protection.outlook.com. Esto autoriza los mensajes salientes de ambos sistemas de correo electrónico.
 
 ### <a name="step-8-set-up-email-forwarding-at-your-current-provider"></a>Paso 8: configurar el reenvío de correo electrónico en su proveedor actual
 

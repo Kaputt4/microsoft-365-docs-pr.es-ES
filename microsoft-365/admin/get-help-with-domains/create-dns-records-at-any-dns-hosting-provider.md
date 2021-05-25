@@ -20,12 +20,12 @@ description: Conecte un dominio en cualquier proveedor de host DNS a Microsoft 3
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: facdd460bd3197e39dd6d4d9f4a5450dc972bf03
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 62b6793dd97e146b703c82e0ba23f4d7414025b6
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537564"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623982"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Agregar registros DNS para conectarse a su dominio
 
@@ -169,8 +169,6 @@ Para agregar estos valores, cree una sola cadena, separando los valores con espa
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Cambiar los servidores DNS para configurar Microsoft 365 con cualquier registrador de dominios](change-nameservers-at-any-domain-registrar.md) (artículo)
-
-[Buscar y corregir problemas después de agregar el dominio o los registros DNS](find-and-fix-issues.md) (artículo)
-
+[Cambiar los servidores DNS para configurar Microsoft 365 con cualquier registrador de dominios](change-nameservers-at-any-domain-registrar.md) (artículo)\
+[Buscar y corregir problemas después de agregar el dominio o los registros DNS](find-and-fix-issues.md) (artículo)\
 [Administrar dominios](index.yml) (página de vínculo)
