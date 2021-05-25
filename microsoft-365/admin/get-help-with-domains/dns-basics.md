@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: El sistema de nombres de dominio asigna los nombres de host del equipo a las direcciones IP, comprender los conceptos básicos de DNS y registrador de dominios puede ayudarle a administrar los dominios.
-ms.openlocfilehash: f9982ad55652eac9faf33986bb1481e29897a48e
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 19fc444c056bbf3e1ea1f601d20a9b9cbd75bec8
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582949"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635431"
 ---
 # <a name="dns-basics"></a>Conceptos básicos sobre DNS
 
@@ -38,6 +38,8 @@ ms.locfileid: "52582949"
 ::: moniker range="o365-worldwide"
 
 Los nombres de dominio, como contoso.com, se administran con un sistema mundial de bases de datos y registradores de dominios. El Sistema de nombres de dominio (DNS) proporciona una asignación entre nombres de hosts de equipos legibles y las direcciones IP que usan los dispositivos de red. Comprender los conceptos básicos de DNS y de registrador de dominios le ayudará a administrar los dominios.
+
+## <a name="watch-domains--dns-an-overview"></a>Ver: Dominios y DNS: Información general
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -46,6 +48,8 @@ Los nombres de dominio, como contoso.com, se administran con un sistema mundial 
 ::: moniker range="o365-germany"
 
 Los nombres de dominio, como contoso.com, se administran con un sistema mundial de bases de datos y registradores de dominios. El Sistema de nombres de dominio (DNS) proporciona una asignación entre nombres de hosts de equipos legibles y las direcciones IP que usan los dispositivos de red. Comprender los conceptos básicos de DNS y de registrador de dominios le ayudará a administrar los dominios.
+
+## <a name="watch-domains--dns-an-overview"></a>Ver: Dominios y DNS: Información general
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -159,7 +163,7 @@ Puede usar su nombre de dominio en Microsoft 365 con su correo electrónico, sit
   
 - **Correo electrónico:** su nombre de dominio le permite personalizar el correo electrónico, por lo que puede usar una dirección más corta y fácil de recordar que no sea [la dirección de correo electrónico onmicrosoft.com inicial](../setup/domains-faq.yml) que viene con su cuenta. Así, en vez de joe@contoso.onmicrosoft.com, la dirección de correo electrónico (que también es el cuenta profesional que usa para iniciar sesión en Microsoft 365) podría ser joe@contoso.com. 
     
-- **Sitio web:** si dispone de una suscripción a Microsoft 365 que incluye un sitio web público de SharePoint Online (ya no está disponible para la compra), la dirección inicial de dicho sitio web es de este tipo: contoso-public.sharepoint.com. Si configura un sitio web para su empresa, puede usar un nombre de dominio personalizado para cambiar el nombre de la dirección del sitio web por algo como, por ejemplo, www.contoso.com. 
+- **Sitio web**: si dispone de una suscripción a Microsoft 365 que incluye un sitio web público de SharePoint Online (ya no está disponible para la compra), la dirección inicial de dicho sitio web es de este tipo: contoso-public.sharepoint.com. Si configura un sitio web para su empresa, puede usar un nombre de dominio personalizado para cambiar el nombre de la dirección del sitio web por algo como, por ejemplo, www.contoso.com. 
     
 - **Mensajería instantánea:** la dirección de Skype Empresarial Online también puede personalizarse para usar el nombre del dominio, de modo que las personas de la organización puedan conectarse entre ellas en Skype Empresarial Online usando una dirección más corta y fácil de recordar (por ejemplo, joe@contoso.com). 
     
@@ -178,7 +182,7 @@ Puede usar su nombre de dominio en Microsoft 365 con su correo electrónico, sit
   
 - **Correo electrónico:** su nombre de dominio le permite personalizar el correo electrónico, por lo que puede usar una dirección más corta y fácil de recordar que no sea [la dirección de correo electrónico onmicrosoft.com inicial](../setup/domains-faq.yml) que viene con su cuenta. Así, en vez de joe@contoso.onmicrosoft.com, la dirección de correo electrónico (que también es el cuenta profesional que usa para iniciar sesión en Microsoft 365) podría ser joe@contoso.com. 
     
-- **Sitio web:** si dispone de una suscripción que incluye un sitio web público de SharePoint Online (ya no está disponible para la compra), la dirección inicial de dicho sitio web es de este tipo: contoso-public.sharepoint.com. Si configura un sitio web para su empresa, puede usar un nombre de dominio personalizado para cambiar el nombre de la dirección del sitio web por algo como, por ejemplo, www.contoso.com. 
+- **Sitio web**: si dispone de una suscripción que incluye un sitio web público de SharePoint Online (ya no está disponible para la compra), la dirección inicial de dicho sitio web es de este tipo: contoso-public.sharepoint.com. Si configura un sitio web para su empresa, puede usar un nombre de dominio personalizado para cambiar el nombre de la dirección del sitio web por algo como, por ejemplo, www.contoso.com. 
     
 - **Mensajería instantánea:** la dirección de Skype Empresarial Online también puede personalizarse para usar el nombre del dominio, de modo que las personas de la organización puedan conectarse entre ellas en Skype Empresarial Online usando una dirección más corta y fácil de recordar (por ejemplo, joe@contoso.com). 
     
@@ -190,9 +194,9 @@ Se necesitan varios registros DNS para que Microsoft 365 funcione con su dominio
   
 También puede [encontrar una lista de valores](information-for-dns-records.md) para configurar su dominio. Se incluyen directamente en el centro de administración de Microsoft 365. 
   
-Si está planificando una implementación, tal vez quiera revisar una lista de todos los registros DNS necesarios para Microsoft 365, sus funciones y valores de ejemplo. Consulte [Registros externos del sistema de nombres de dominio para Microsoft 365](../../enterprise/external-domain-name-system-records.md).
+O, si está planificando una implementación, tal vez quiera revisar una lista de todos los registros DNS necesarios para Microsoft 365, sus funciones y valores de ejemplo. Consulte [Registros externos del sistema de nombres de dominio para Microsoft 365](../../enterprise/external-domain-name-system-records.md).
   
-## <a name="how-can-i-learn-more"></a>¿Cómo puedo obtener más información?
+## <a name="next-steps"></a>Siguientes pasos
 
 Consulte uno de estos procedimientos: 
   
@@ -201,8 +205,6 @@ Consulte uno de estos procedimientos:
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Preguntas más frecuentes sobre dominios](../setup/domains-faq.yml) (artículo)
-
-[Buscar y corregir problemas después de agregar el dominio o los registros DNS](find-and-fix-issues.md) (artículo)
-
+[Preguntas más frecuentes sobre dominios](../setup/domains-faq.yml) (artículo)\
+[Buscar y corregir problemas después de agregar el dominio o los registros DNS](find-and-fix-issues.md) (artículo)\
 [Administrar dominios](index.yml) (página de vínculo)

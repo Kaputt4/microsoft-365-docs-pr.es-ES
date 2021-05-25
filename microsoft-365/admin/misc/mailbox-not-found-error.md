@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Un error **No se pudo encontrar el buzón** significa que la cuenta que usó para conectarse a Outlook en la Web no tiene una licencia de Exchange Online.
-ms.openlocfilehash: 5ae850da3b9a4022c01f8bf4469f5e86f44b10bd
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: cb82f917adca8f1fc183fd9516321a524c63eb69
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537444"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635791"
 ---
 # <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a>¿Aparece el error No se pudo encontrar el buzón en Outlook en la Web?
 
@@ -37,8 +37,6 @@ El administrador puede asignar una licencia a su cuenta siguiendo estos pasos:
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Agregar otro alias de correo electrónico para un usuario](../email/add-another-email-alias-for-a-user.md) (artículo)
-
-[Configurar el reenvío de correo electrónico en Microsoft 365](../email/configure-email-forwarding.md) (artículo)
-
+[Agregar otro alias de correo electrónico para un usuario](../email/add-another-email-alias-for-a-user.md) (artículo)\
+[Configurar el reenvío de correo electrónico en Microsoft 365](../email/configure-email-forwarding.md) (artículo)\
 [Crear un buzón compartido](../email/create-a-shared-mailbox.md) (artículo)

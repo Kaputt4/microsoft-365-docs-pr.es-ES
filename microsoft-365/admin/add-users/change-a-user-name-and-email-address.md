@@ -23,18 +23,18 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Obtenga información acerca de cómo un administrador global de Microsoft 365 puede cambiar la dirección de correo electrónico y el nombre para mostrar cuando cambie su nombre. '
-ms.openlocfilehash: 2614e0ae53e5ff1cf08ded384e7470cc5967e682
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1aa3fd3b67333937e64aab825e64533ccb09eea9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535991"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634225"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiar un nombre de usuario y una dirección de correo electrónico
 
 Es posible que deba cambiar la dirección de correo electrónico y el nombre para mostrar de un usuario si, por ejemplo, este decide cambiarse los apellidos.
 
-Vea un vídeo corto sobre el cambio de la dirección de correo electrónico de un usuario. <br><br>
+## <a name="watch-change-a-users-name-or-email-address"></a>Ver: Cambiar el nombre o la dirección de correo electrónico de un usuario
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
@@ -253,8 +253,6 @@ Para obtener información sobre cómo cambiar el nombre de usuario de una person
   
 ## <a name="related-content"></a>Contenido relacionado
 
-[Administradores: restablecer una contraseña de uno o más usuarios](reset-passwords.md) (artículo)
-  
-[Agregar otra dirección de correo electrónico a un usuario](../email/add-another-email-alias-for-a-user.md) (artículo)
-
+[Administradores: Restablecer una contraseña de uno o más usuarios](reset-passwords.md) (artículo)\
+[Agregar otra dirección de correo electrónico a un usuario](../email/add-another-email-alias-for-a-user.md) (artículo)\
 [Crear un buzón compartido](../email/create-a-shared-mailbox.md) (artículo)

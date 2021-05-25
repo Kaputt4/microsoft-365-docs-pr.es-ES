@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Haga que su organización sea más segura contra ataques a contraseñas y prohíba las contraseñas comunes y habilite la autenticación multifactor basada en riesgos.
-ms.openlocfilehash: f2b9b9188a6f05bbcdae45dcc22d401e1eb6f1a8
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: f42905c6bf7769e558581338fd122f26d530423e
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593914"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635979"
 ---
 # <a name="password-policy-recommendations"></a>Recomendaciones de directiva de contraseñas
 
@@ -128,7 +128,9 @@ Para obtener más información, consulte [configurar la autenticación multifact
 
 La autenticación multifactor basada en riesgos garantiza que, cuando nuestro sistema detecta actividad sospechosa, puede poner a prueba al usuario para asegurarse de que es el propietario legítimo de la cuenta. 
   
-## <a name="want-to-know-more-recommended-reading"></a>¿Desea obtener más información? Lectura recomendada
+## <a name="next-steps"></a>Siguientes pasos
+
+¿Quiere obtener más información acerca de la administración de contraseñas? Estas son algunas lecturas recomendadas:
 
 - [¿Las contraseñas de web seguras realizan alguna acción?](https://go.microsoft.com/fwlink/p/?linkid=861008)
 
@@ -144,10 +146,7 @@ La autenticación multifactor basada en riesgos garantiza que, cuando nuestro si
 
 ## <a name="related-content"></a>Contenido relacionado
 
-[Restablecer contraseñas](../add-users/reset-passwords.md) (artículo)
-
-[Establecer la contraseña de un usuario individual para que nunca expire](../add-users/set-password-to-never-expire.md) (artículo)
-
-[Permitir que los usuarios puedan restablecer sus propias contraseñas](../add-users/let-users-reset-passwords.md) (artículo)
-
+[Restablecer contraseñas](../add-users/reset-passwords.md) (artículo)\
+[Establecer la contraseña de un usuario individual para que nunca expire](../add-users/set-password-to-never-expire.md) (artículo)\
+[Permitir que los usuarios puedan restablecer sus propias contraseñas](../add-users/let-users-reset-passwords.md) (artículo)\
 [Volver a enviar la contraseña de un usuario: ayuda para administradores](../add-users/resend-user-password.md) (artículo)

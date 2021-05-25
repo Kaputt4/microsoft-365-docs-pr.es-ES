@@ -21,12 +21,12 @@ description: 'El Microsoft 365 de administración: obtenga información sobre la
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: b75c6be901dfe2bcfe9a0d8fad8fbb56eecd34d6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 964689c431b45671a92dda62ccf8a083291213a3
+ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535751"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52639559"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novedades del Centro de administración Microsoft 365 administración
 
@@ -49,6 +49,24 @@ Y si quiere saber las novedades de otros servicios en la nube de Microsoft:
 - [Novedades del Centro de administración SharePoint administración](/sharepoint/what-s-new-in-admin-center)
 - [Actualizaciones de Office](/OfficeUpdates/)
 - [Cómo comprobar el estado Windows versión](/windows/deployment/update/check-release-health)
+
+## <a name="may-2021"></a>Mayo de 2021
+
+### <a name="admin-mobile-app"></a>Aplicación móvil de administración
+
+### <a name="keep-track-of-support-ticket-updates-using-the-admin-mobile-app"></a>Realizar un seguimiento de las actualizaciones de vales de soporte técnico con la aplicación móvil Administrador
+
+Para todas las solicitudes de servicio creadas en el espacio empresarial, ahora puede realizar un seguimiento del estado del vale, ver los detalles del vale y proporcionar /solicitar información adicional agregando notas & datos adjuntos. 
+
+:::image type="content" source="../media/whats-new-track-support-tickets.png" alt-text="Captura de pantalla: realizar un seguimiento de las actualizaciones de vales de soporte técnico":::
+
+### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>Manténgase al tanto de todas las actualizaciones principales de la aplicación y su Microsoft 365 suscripción 
+
+- Mantente al tanto de todas las actualizaciones principales de tu suscripción Microsoft 365 a través de notificaciones push del Centro de mensajes (ahora habilitadas de forma predeterminada). 
+
+- Realiza un seguimiento de las características más recientes disponibles en la aplicación mediante **la** sección Novedades. Vaya **a Configuración**  >  **¿Qué hay de nuevo?**
+
+:::image type="content" source="../media/whats-new-updates.png" alt-text="Captura de pantalla: realizar un seguimiento de las principales actualizaciones y características":::
 
 ## <a name="april-2021"></a>Abril de 2021
 
@@ -382,7 +400,7 @@ Los nuevos nombres de producto entraron en vigor el 21 de abril de 2020. Solo se
 |Nombre actual |Nuevo nombre  |
 |---------|---------|
 |Office 365 Empresa Essentials     |   Microsoft 365 Empresa Básico      |
-|Office 365 Empresa Premium     |    Microsoft 365 Empresa Estándar     |
+|Office 365 Empresa Premium     |    Microsoft 365 Empresa Estándar     |
 |Microsoft 365 Empresa     |    Microsoft 365 Empresa Premium     |
 |Office 365 Empresa     |    Aplicaciones de Microsoft 365 para negocios       |
 |Office 365 ProPlus    |   Microsoft 365 aplicaciones para empresas      |
