@@ -82,6 +82,10 @@
               href: microsoft-secure-score-whats-coming.md
             - name: Novedades
               href: microsoft-secure-score-whats-new.md
+        - name: Proteger las identidades
+          items:
+            - name: Administrar alertas de seguridad
+              href: ../defender-identity/manage-security-alerts.md
     - name: Investigar y responder a amenazas
       items:
         - name: Incidentes
@@ -92,7 +96,7 @@
               href: incident-queue.md
             - name: Administrar
               href: manage-incidents.md
-            - name: Investigar
+            - name: Investigación
               href: investigate-incidents.md
             - name: Alertas de incidentes
               href: investigate-alerts.md
@@ -120,6 +124,12 @@
               href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
             - name: Notificaciones de correo electrónico
               href: get-incident-notifications.md
+        - name: Análisis de amenazas
+          items:
+            - name: Seguimiento y respuesta a amenazas emergentes
+              href: threat-analytics.md
+            - name: Comprender el informe de analistas
+              href: threat-analytics-analyst-reports.md
         - name: Investigación y respuesta automatizada
           items:
             - name: Información general
