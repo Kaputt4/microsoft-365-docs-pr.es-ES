@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Obtenga información sobre qué eventos se registran cuando los usuarios asignados a permisos de exhibición de documentos electrónicos realizan búsquedas de contenido, exhibición de documentos electrónicos principales y Advanced eDiscovery tareas en el centro de Microsoft 365 cumplimiento.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce0dcc50c13ad705cb36f065639a4e971d032f22
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 8b1f3f235f3411e2f637e4e32104c6179643757d
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653504"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657698"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Buscar actividades de eDiscovery en el registro de auditoría
 
@@ -112,7 +112,7 @@ En la tabla siguiente se describen las actividades de búsqueda de contenido y e
 |Exportación iniciada de búsqueda de contenido  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |Un usuario exportó los resultados de una búsqueda de contenido.  <br/> |
 |Informe de exportación iniciado  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |Un usuario exportó un informe de búsqueda de contenido.  <br/> |
 |Búsqueda de contenido detenida  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |Un usuario detuvo una búsqueda de contenido.  <br/> |
-|(ninguno)|CaseViewed|Get-ComplianceCase|Un usuario ha visto la lista de casos en la página **eDiscovery** principal en el centro de cumplimiento o ejecutando el cmdlet Get-ComplianceCase.|
+|(ninguno)|CaseViewed|Get-ComplianceCase|Un usuario ha visto la lista de casos en la página **eDiscovery** principal o en la página **Advanced eDiscovery** en el centro de cumplimiento o ejecutando el cmdlet Get-ComplianceCase web.|
 |(ninguno)|SearchViewed|Get-ComplianceSearch|Un usuario ha visto la lista en  búsquedas de contenido (enumeradas en la pestaña Búsquedas) en el centro de cumplimiento o ejecutando el cmdlet. Esta actividad también se registra cuando un usuario ve la lista de búsquedas de contenido asociadas con un caso de exhibición de documentos electrónicos (haciendo clic en la pestaña Búsquedas en un caso) o ejecutando el comando **Get-ComplianceSearch -Case.** |
 |(ninguno)|ViewedSearchExported|Get-ComplianceSearchAction -Export|Un usuario ha visto la lista de trabajos  de exportación de búsqueda de contenido (enumerados en la pestaña Exportaciones) en el centro de cumplimiento o ejecutando el cmdlet. Esta actividad también se registra cuando un usuario ve la lista de  trabajos de exportación en un caso de exhibición de documentos electrónicos (enumerado en la pestaña Exportaciones en un caso) o ejecutando el comando **Get-ComplianceSearchAction -Case -Export.**|
 |(ninguno)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|Un usuario obtiene una vista previa de los resultados de una búsqueda de contenido en el centro de cumplimiento o ejecutando el cmdlet.|
