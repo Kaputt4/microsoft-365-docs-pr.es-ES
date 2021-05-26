@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Comprenda por qué los resultados de búsqueda estimados y reales pueden variar en las búsquedas que se ejecutan con herramientas de exhibición de documentos electrónicos en Office 365.
-ms.openlocfilehash: d530b083b2353b66ee5d4fd4bb72b175aef28be8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 17a4c2eea9833afa2112fa8ab918dcda074eeb36
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532122"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653516"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Diferencias entre los resultados de búsqueda de exhibición de documentos electrónicos estimados y reales
 
@@ -81,7 +81,7 @@ Estas son algunas de las razones de estas diferencias:
 
 - **Desduplicación de Exchange durante la exportación**. Para Exchange, la desduplicación reduce el número de elementos que se exportan. Tiene la opción de desduplicar los resultados de búsqueda al exportarlos. Para Exchange, esto significa que solo se exporta una única instancia de un mensaje, aunque ese mensaje se pueda encontrar en varios buzones. Los resultados de búsqueda estimados incluyen todas las instancias de un mensaje. Por lo tanto, si elige la opción de desduplicación al exportar resultados de búsqueda, el número real de elementos que se exportan puede ser considerablemente menor que el número estimado de elementos.
 
-    Otra cosa que debe tener en cuenta si elige la opción de desduplicación es que todos los elementos de Exchange se exportan en un único archivo PST y la estructura de carpetas de los buzones de origen no se conserva. El archivo PST exportado solo contiene los elementos de correo electrónico. Sin embargo, un informe de resultados de búsqueda contiene una entrada para cada mensaje exportado que identifica el buzón de origen donde se encuentra el mensaje. Esto le ayuda a identificar todos los buzones que contienen un mensaje duplicado. Si no habilita la desduplicación, se exportará un archivo PST independiente por cada buzón incluido en la búsqueda.
+El informe de resultados de búsqueda (Results.csv archivo) contiene una entrada para cada mensaje duplicado e identifica el buzón de origen donde se encuentra un mensaje duplicado. Esto le ayuda a identificar todos los buzones que contienen un mensaje duplicado.
 
 > [!NOTE]
 > Si no selecciona la  opción Incluir elementos cifrados o con un formato no reconocido al exportar resultados de búsqueda o simplemente descargar los informes, se descargan los informes de error de índice, pero no tienen ninguna entrada. Esto no significa que no haya errores de indización. Solo significa que los elementos no indexados no se incluyeron en la exportación.

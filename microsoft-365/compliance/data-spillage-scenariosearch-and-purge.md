@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use la exhibición de documentos electrónicos y las herramientas de búsqueda para administrar y responder a un incidente de derrame de datos en su organización.
-ms.openlocfilehash: da473fcdf553176d3c6d4dfa2a4c4b17b2bcce03
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4305dbdb2fb59e4275852c88f8b74f6c4128a5cb
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051982"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653528"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Serie de soluciones de exhibición de documentos electrónicos: escenario de derrame de datos: búsqueda y purga
 
@@ -52,9 +52,9 @@ Este es un ejemplo de cómo administrar un incidente de derrame de datos:
 
 - Cuando un buzón está en espera, un mensaje eliminado permanece en la carpeta Elementos recuperables hasta que expira el período de retención o se libera la suspensión. [En el paso 6](#step-6-prepare-the-mailboxes) se describe cómo quitar la retención de los buzones. Consulte con los departamentos legales o de administración de registros antes de quitar la retención. Es posible que la organización tenga una directiva que defina si un buzón de correo en espera o un incidente de derrame de datos tiene prioridad. 
     
-- Para controlar qué buzones de usuario puede buscar y administrar el investigador de derrame de datos, puede configurar límites de cumplimiento y crear un grupo de roles personalizado, que se describe en el paso [1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries). Para ello, debe ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración de roles. Si usted o el administrador de su organización ya ha establecido límites de cumplimiento, puede omitir el paso 1.
+- Para controlar qué buzones de usuario puede buscar y administrar quién puede tener acceso al caso, puede configurar los límites de cumplimiento y crear un grupo de roles personalizado, que se describe en el paso [1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries). Para ello, debe ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración de roles. Si usted o el administrador de su organización ya ha establecido límites de cumplimiento, puede omitir el paso 1.
     
-- Para crear un caso, debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos o ser miembro de un grupo de roles personalizado al que se haya asignado el rol de administración de casos. Si no es miembro, pida a un administrador de Microsoft 365 que le agregue al grupo de roles administrador de [exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
+- Para crear un caso, debe ser miembro del grupo de roles administrador de exhibición de documentos electrónicos o ser miembro de un grupo de roles personalizado al que se haya asignado el rol de administración de casos. Si no es miembro, pida a un administrador de Microsoft 365 que le agregue al grupo de roles administrador de exhibición [de documentos electrónicos](assign-ediscovery-permissions.md).
     
 - Para crear y ejecutar una búsqueda de contenido, tiene que ser miembro del grupo de roles Administrador de eDiscovery o tener asignado el rol de administración Búsqueda de cumplimiento. Para eliminar mensajes, tiene que ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración Búsqueda y eliminación. Para más información sobre cómo agregar usuarios a un grupo de roles, consulte [ Asignar permisos de eDiscovery en el Centro de seguridad y cumplimiento](./assign-ediscovery-permissions.md).
     
@@ -64,7 +64,7 @@ Este es un ejemplo de cómo administrar un incidente de derrame de datos:
 
 Según la práctica organizativa, debe controlar quién puede tener acceso al caso de exhibición de documentos electrónicos usado para investigar un incidente de derrame de datos y configurar límites de cumplimiento. La forma más sencilla de hacerlo es agregar investigadores como miembros de un grupo de roles existente en el Centro de seguridad y cumplimiento de & y, a continuación, agregar el grupo de roles como miembro del caso de exhibición de documentos electrónicos. Para obtener información sobre los grupos de roles de exhibición de documentos electrónicos [integrados](assign-ediscovery-permissions.md)y cómo agregar miembros a un caso de exhibición de documentos electrónicos, vea Asignar permisos de exhibición de documentos electrónicos .
   
-También puede crear un nuevo grupo de roles que se alinee con las necesidades de la organización. Por ejemplo, es posible que desee que un grupo de investigadores de derrame de datos de la organización acceda y colabore en todos los casos de derrame de datos. Para ello, cree un grupo de roles "Data Spillage Researcher", asigne los roles adecuados (Export, RMS Decrypt, Review, Preview, Compliance Search y Case Management), agregue los investigadores de derrame de datos al grupo de roles y, a continuación, agregue el grupo de roles como miembro del caso de exhibición de documentos electrónicos de derrame de datos. Consulte Configurar límites de cumplimiento para investigaciones de exhibición de documentos electrónicos en [Office 365](tagging-and-assessment-in-advanced-ediscovery.md) para obtener instrucciones detalladas sobre cómo hacerlo. 
+También puede crear un nuevo grupo de roles que se alinee con las necesidades de la organización. Por ejemplo, es posible que desee que un grupo de investigadores de derrame de datos de la organización acceda y colabore en todos los casos de derrame de datos. Para ello, cree un grupo de roles "Data Spillage Researcher", asigne los roles adecuados (Export, RMS Decrypt, Review, Preview, Compliance Search y Case Management), agregue los investigadores de derrame de datos al grupo de roles y, a continuación, agregue el grupo de roles como miembro del caso de exhibición de documentos electrónicos de derrame de datos. Consulte [Configurar límites de cumplimiento](tagging-and-assessment-in-advanced-ediscovery.md) para las investigaciones de exhibición de documentos electrónicos en Office 365 para obtener instrucciones detalladas sobre cómo hacerlo. 
   
 ## <a name="step-2-create-an-ediscovery-case"></a>Paso 2: Crear un caso de exhibición de documentos electrónicos
 
@@ -87,11 +87,11 @@ Después de crear una búsqueda de contenido, debe revisar y validar que los res
   
 Si tiene más de 1.000 buzones o más de 100 mensajes de correo electrónico por buzón para revisar, puede dividir la búsqueda inicial en varias búsquedas mediante palabras clave o condiciones adicionales, como intervalo de fechas o remitente/destinatario, y revisar los resultados de cada búsqueda individualmente. Asegúrese de tener en cuenta todas las consultas de búsqueda que se deben usar al eliminar mensajes en el [paso 7](#step-7-permanently-delete-the-spilled-data).
 
-Si a un administrador o usuario final se le asigna una licencia de Office 365 E5, puede examinar hasta 10 000 resultados de búsqueda a la vez mediante eDiscovery avanzado. Si hay más de 10 000 mensajes de correo electrónico que revisar, puede dividir la consulta de búsqueda por intervalo de fechas y revisar cada resultado individualmente a medida que los resultados de la búsqueda se ordenan por fecha. En Exhibición de documentos electrónicos avanzada, puede etiquetar los resultados de la búsqueda mediante la característica **Etiqueta** como en el panel de vista previa y filtrar el resultado de la búsqueda por la etiqueta etiquetada. Esto es útil cuando colaboras con un revisor secundario. Al usar herramientas de análisis adicionales en eDiscovery avanzada, como el reconocimiento óptico de caracteres, el subproceso de correo electrónico y la codificación predictiva, puede procesar y revisar rápidamente miles de mensajes y etiquetarlos para su revisión. Consulte [Configuración rápida para eDiscovery avanzada.](./get-started-with-advanced-ediscovery.md)
+Si a un administrador o usuario final se le asigna una licencia Office 365 E5, puede examinar hasta 10 000 resultados de búsqueda a la vez mediante Advanced eDiscovery. Si hay más de 10 000 mensajes de correo electrónico que revisar, puede dividir la consulta de búsqueda por intervalo de fechas y revisar cada resultado individualmente a medida que los resultados de la búsqueda se ordenan por fecha. En Advanced eDiscovery, puede etiquetar los resultados de búsqueda mediante la característica **Etiqueta** como en el panel de vista previa y filtrar el resultado de la búsqueda por la etiqueta etiquetada. Esto es útil cuando colaboras con un revisor secundario. Al usar herramientas de análisis adicionales en Advanced eDiscovery, como el reconocimiento óptico de caracteres, el subproceso de correo electrónico y la codificación predictiva, puede procesar y revisar rápidamente miles de mensajes y etiquetarlos para su revisión posterior. Consulte [Configuración rápida para Advanced eDiscovery](./get-started-with-advanced-ediscovery.md).
 
-Cuando encuentre un mensaje de correo electrónico que contenga datos derramados, compruebe los destinatarios del mensaje para determinar si se ha compartido externamente. Para seguir rastreando un mensaje, puede recopilar información del remitente y el intervalo de fechas para que pueda usar los registros de seguimiento de mensajes, que se describen en [el paso 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
+Cuando encuentre un mensaje de correo electrónico que contenga datos derramados, compruebe los destinatarios del mensaje para determinar si se ha compartido externamente. Para seguir rastreando un mensaje, puede recopilar información del remitente y intervalos de fechas para que pueda usar los registros de seguimiento de mensajes. Este proceso se describe en [el paso 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared).
 
-Después de comprobar los resultados de la búsqueda, es posible que desee compartir los resultados con otros usuarios para una revisión secundaria. Las personas que asignó al caso en el paso 1 pueden revisar el contenido del caso en eDiscovery y eDiscovery avanzada y aprobar los resultados de casos. También puede generar un informe sin exportar el contenido real. También puede usar este mismo informe como prueba de eliminación, que se describe en [el paso 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
+Después de comprobar los resultados de la búsqueda, es posible que desee compartir los resultados con otros usuarios para una revisión secundaria. Las personas que asignó al caso en el paso 1 pueden revisar el contenido del caso en eDiscovery y Advanced eDiscovery y aprobar los resultados de casos. También puede generar un informe sin exportar el contenido real. También puede usar este mismo informe como prueba de eliminación, que se describe en [el paso 8](#step-8-verify-provide-a-proof-of-deletion-and-audit).
   
  **Para generar un informe estadístico:**
   
@@ -105,7 +105,7 @@ Después de comprobar los resultados de la búsqueda, es posible que desee compa
     
 3. Seleccione **Todos los elementos, incluidos** los que tienen formato no reconocido, están cifrados o no se indizaron por otros motivos y, a continuación, haga clic en **Generar informe**.
 
-4. En el caso de exhibición de documentos electrónicos, haga clic **en Exportar** para mostrar la lista de trabajos de exportación. Es posible que tenga que hacer clic **en Actualizar** para actualizar la lista para mostrar el trabajo de exportación que acaba de crear.
+4. En el caso de exhibición de documentos electrónicos, haga clic **en Exportar** para mostrar la lista de trabajos de exportación. Es posible que tenga que hacer clic **en Actualizar** para actualizar la lista para mostrar el trabajo de exportación que creó.
 
 5. Haga clic en el trabajo de exportación y, a continuación, haga clic **en Descargar** informe en la página desplegable.
  
@@ -117,17 +117,17 @@ Para obtener más información acerca de la exportación de informes, vea [Expor
     
 ## <a name="step-5-use-message-trace-log-to-check-how-spilled-data-was-shared"></a>Paso 5: Usar el registro de seguimiento de mensajes para comprobar cómo se compartieron los datos derramados
 
-Para investigar aún más si se compartió el correo electrónico con datos filtrados, puede consultar los registros de seguimiento de mensajes con la información del remitente y la información del intervalo de fechas que recopiló en el paso 4. Tenga en cuenta que el período de retención para el seguimiento de mensajes es de 30 días para los datos en tiempo real y 90 días para los datos históricos.
+Para investigar aún más si se compartió el correo electrónico con datos filtrados, puede consultar los registros de seguimiento de mensajes con la información del remitente y la información del intervalo de fechas que recopiló en el paso 4. El período de retención para el seguimiento de mensajes es de 30 días para los datos en tiempo real y 90 días para los datos históricos.
   
 Puede usar el seguimiento de mensajes en el centro de seguridad y cumplimiento o usar los cmdlets correspondientes en Exchange Online PowerShell. Es importante tener en cuenta que el seguimiento de mensajes no ofrece garantías completas sobre la integridad de los datos devueltos. Para obtener más información acerca del uso del seguimiento de mensajes, vea: 
   
-- [Seguimiento de mensajes en el Centro de seguridad y cumplimiento](../security/defender-365-security/message-trace-scc.md)
+- [Seguimiento de mensajes en el Centro de seguridad y cumplimiento](../security/office-365-security/message-trace-scc.md)
     
 - [Nuevo seguimiento de mensajes en el Centro de & seguridad](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Paso 6: Preparar los buzones
 
-Después de revisar y validar que los resultados de la búsqueda contienen solo los mensajes que deben eliminarse, debe recopilar una lista de las direcciones de correo electrónico de los buzones afectados para usarlos en el paso 7 al eliminar los datos derramados. Es posible que también tenga que preparar los buzones para poder eliminar permanentemente los mensajes de correo electrónico en función de si la recuperación de elementos únicos está habilitada en los buzones que contienen los datos que se han derramado o si alguno de esos buzones está en espera.
+Después de revisar y validar que los resultados de la búsqueda contienen solo los mensajes que deben eliminarse, debe recopilar una lista de las direcciones de correo electrónico de los buzones afectados que se usarán en el paso 7 al eliminar los datos que se han derramado. Es posible que también tenga que preparar los buzones para poder eliminar permanentemente los mensajes de correo electrónico en función de si la recuperación de elementos únicos está habilitada en los buzones que contienen los datos que se han derramado o si alguno de esos buzones está en espera.
   
 ### <a name="get-a-list-of-addresses-of-mailboxes-with-spilled-data"></a>Obtener una lista de direcciones de buzones con datos desbordados
 
@@ -174,14 +174,20 @@ Asegúrese de revertir el buzón a configuraciones anteriores después de compro
 
 Con las ubicaciones de buzones de correo que recopiló y preparó en el paso 6 y la consulta de búsqueda que se creó y refinó en el paso 3 para buscar mensajes de correo electrónico que contengan los datos derramados, ahora puede eliminar permanentemente los datos derramados.  Como se explicó anteriormente, para eliminar mensajes, debe ser miembro del grupo de roles Administración de la organización o tener asignado el rol de administración Buscar y purgar. Para más información sobre cómo agregar usuarios a un grupo de roles, consulte [ Asignar permisos de eDiscovery en el Centro de seguridad y cumplimiento](./assign-ediscovery-permissions.md).
 
-Para eliminar los mensajes derramados, consulte los pasos 2 & 3 en [Buscar y eliminar mensajes de correo electrónico](./search-for-and-delete-messages-in-your-organization.md)
+Para eliminar los mensajes derramados, vea [Buscar y eliminar mensajes de correo electrónico.](search-for-and-delete-messages-in-your-organization.md)
+
+Tenga en cuenta los siguientes límites al eliminar los datos derramados:
+
+- El número máximo de buzones de una búsqueda que puede usar para eliminar elementos mediante una acción de búsqueda y purga es de 50 000. Si la búsqueda que cree en el paso 3 busca más de 50.000 buzones, se producirá un error en la acción de purga. Hacer la búsqueda en más de 50 000 buzones en una sola búsqueda suele ocurrir cuando se configura para que incluya a todos los buzones de la organización. Esta restricción aplica incluso cuando haya menos de 50 000 buzones que contengan elementos que coincidan con la consulta de la búsqueda.
+
+- Se puede eliminar un máximo de 10 elementos por buzón a la vez. Como la función de buscar y quitar mensajes está diseñada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes se quitan rápidamente de los buzones. Esta característica no está diseñada para limpiar buzones de usuarios.
 
 > [!IMPORTANT]
-> Los elementos de correo electrónico en un conjunto de revisiones en un caso de eDiscovery avanzado no se pueden eliminar utilizando los procedimientos de este artículo. Esto se debe a que los elementos de un conjunto de revisión son copias de elementos del servicio en directo que se copian y almacenan en una ubicación de Azure Storage. Esto significa que no se devolverán mediante una búsqueda de contenido que cree en el paso 3. Para eliminar elementos en un conjunto de revisiones, tiene que eliminar el caso de eDiscovery avanzado que contiene el conjunto de revisiones. Para más información, consulte [Cerrar o eliminar un caso de eDiscovery avanzado](close-or-delete-case.md).
+> Los elementos de correo electrónico en un conjunto de revisiones en un caso de eDiscovery avanzado no se pueden eliminar utilizando los procedimientos de este artículo. Esto se debe a que los elementos de un conjunto de revisión son copias de elementos del servicio en directo que se copian y almacenan en una Azure Storage de revisión. Esto significa que no se devolverán mediante una búsqueda de contenido que cree en el paso 3. Para eliminar elementos en un conjunto de revisiones, tiene que eliminar el caso de eDiscovery avanzado que contiene el conjunto de revisiones. Para más información, consulte [Cerrar o eliminar un caso de eDiscovery avanzado](close-or-delete-case.md).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Paso 8: Comprobar, proporcionar una prueba de eliminación y auditoría
 
-El último paso del flujo de trabajo para administrar un incidente de derrame de datos es comprobar que los datos derramados se quitaron permanentemente del buzón yendo al caso de exhibición de documentos electrónicos y ejecutando de nuevo la misma consulta de búsqueda que se usó para eliminar los datos para confirmar que no se devuelve ningún resultado. Después de confirmar que los datos se han quitado permanentemente, puede exportar un informe e incluirlo (junto con el informe original) como prueba de eliminación. A [continuación, puede cerrar el caso,](close-reopen-delete-core-ediscovery-cases.md) lo que le permitirá volver a abrirlo si lo ha hecho en el futuro. Además, también puede revertir los buzones a su estado anterior, eliminar la consulta de búsqueda usada para buscar los datos derramados y buscar registros de auditoría de las tareas realizadas al administrar el incidente de derrame de datos.
+El último paso en el flujo de trabajo para administrar un incidente de derrame de datos es comprobar que los datos derramados se quitaron permanentemente del buzón yendo al caso de exhibición de documentos electrónicos y rerunning la misma consulta de búsqueda que se usó para eliminar los datos para confirmar que no se devuelven resultados. Después de confirmar que los datos se han quitado permanentemente, puede exportar un informe e incluirlo (junto con el informe original) como prueba de eliminación. A [continuación, puede cerrar el caso,](close-reopen-delete-core-ediscovery-cases.md) lo que le permitirá volver a abrirlo si tiene que hacer referencia a él en el futuro. Además, también puede revertir los buzones a su estado anterior, eliminar la consulta de búsqueda usada para buscar los datos derramados y buscar registros de auditoría de las tareas realizadas al administrar el incidente de derrame de datos.
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>Revertir los buzones a su estado anterior
 
@@ -192,14 +198,14 @@ Si cambió cualquier configuración de buzón en el paso 6 para preparar los buz
 Si las palabras clave de la consulta de búsqueda que creó y usó en el paso 3 contienen algunos de los datos reales que se han derramado, debe eliminar la consulta de búsqueda para evitar que se derramen más datos.
   
 1. En el Centro de seguridad y cumplimiento, abra el caso de exhibición de documentos electrónicos, vaya a la **página** Búsqueda y seleccione la búsqueda de contenido adecuada.
-    
+
 2. En la página desplegable, haga clic en **Eliminar**.
 
     ![Seleccione la búsqueda y, a continuación, haga clic en Eliminar en la página desplegable](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
-    
+
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Auditoría del proceso de investigación de derrame de datos
 
-Puede buscar en el registro de auditoría las actividades de exhibición de documentos electrónicos que se realizaron durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría del comando **New-ComplianceSearchAction -Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para más información, vea:
+Puede buscar en el registro de auditoría las actividades de exhibición de documentos electrónicos que se realizaron durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría del comando **New-ComplianceSearchAction -Purge** que ejecutó en el paso 7 para eliminar los datos derramados. Para obtener más información, vea:
 
 - [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md)
 

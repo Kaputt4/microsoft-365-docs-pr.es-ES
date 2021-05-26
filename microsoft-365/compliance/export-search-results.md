@@ -22,18 +22,18 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exporte los resultados de la búsqueda de una búsqueda de contenido en el Microsoft 365 de cumplimiento a un equipo local. Los resultados del correo electrónico se exportan como archivos PST. El contenido SharePoint y OneDrive para la Empresa se exportan como documentos Office nativos.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ec09706fecbe703fa2ab38cad5f8f8304484f44
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b39bb52457599090f2898da222c71a3a56889290
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536063"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653540"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
 Después de ejecutar correctamente una búsqueda de contenido, puede exportar los resultados de la búsqueda a un equipo local. Cuando exporta los resultados de correo electrónico, estos se descargan en su equipo como archivos PST. Al exportar contenido de sitios SharePoint y OneDrive para la Empresa, se exportan copias de documentos Office nativos. Hay otros documentos e informes incluidos con los resultados de búsqueda exportados.
   
-Exportar los resultados de una búsqueda de contenido implica preparar los resultados y, a continuación, descargarlos en un equipo local.
+Exportar los resultados de una búsqueda de contenido implica preparar los resultados y, a continuación, descargarlos en un equipo local. Estos pasos para exportar resultados de búsqueda también se aplican a la exportación de los resultados de una búsqueda asociada a casos principales de exhibición de documentos electrónicos.
   
 ## <a name="before-you-export-search-results"></a>Antes de exportar resultados de búsqueda
 
@@ -57,6 +57,8 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
   > <sup>1</sup> Microsoft no fabrica extensiones de terceros ni complementos para ClickOnce aplicaciones. No se admite la exportación de resultados de búsqueda mediante un explorador no compatible con extensiones o complementos de terceros.<br/>
   > <sup>2</sup> Como resultado de los cambios recientes en Microsoft Edge, ClickOnce soporte técnico ya no está habilitado de forma predeterminada. Para obtener instrucciones sobre cómo ClickOnce compatibilidad en Edge, vea [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
   
+- La herramienta de exportación de exhibición de documentos electrónicos que se usa en el paso 2 para descargar resultados de búsqueda no admite la automatización (mediante un script o cmdlets en ejecución). Le recomendamos encarecidamente que no automatice el proceso de preparación en el paso 1 o el proceso de descarga en el paso 2. Si automatiza cualquiera de estos procesos, el Soporte técnico de Microsoft no proporcionará asistencia si tiene problemas.
+
 - Se recomienda descargar los resultados de la búsqueda en un equipo local. Para eliminar la infraestructura de firewall o proxy de su empresa para evitar problemas al descargar resultados de búsqueda, puede que considere la posibilidad de descargar resultados de búsqueda en un escritorio virtual fuera de la red. Esto puede disminuir los tiempos de espera que se producen en las conexiones de datos de Azure al exportar un gran número de archivos. Para obtener más información acerca de los escritorios virtuales, [vea Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop).
 
 - Para mejorar el rendimiento al descargar resultados de búsqueda, considere la posibilidad de dividir las búsquedas que devuelven un gran conjunto de resultados en búsquedas más pequeñas. Por ejemplo, puede usar intervalos de fechas en las consultas de búsqueda para devolver un conjunto más pequeño de resultados que se pueden descargar más rápido.
@@ -82,7 +84,7 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
     </system.net>
     ```
 
-- Si los resultados de una búsqueda de contenido son mayores de 7 días y envía un trabajo de exportación, se muestra un mensaje de error que le pedirá que vuelva a ejecutar la búsqueda para actualizar los resultados de la búsqueda. Si esto sucede, cancele la exportación, vuelva a ejecutar la búsqueda y vuelva a iniciar la exportación.
+- Si los resultados de una búsqueda son mayores de 7 días y envía un trabajo de exportación, se muestra un mensaje de error que le pedirá que vuelva a ejecutar la búsqueda para actualizar los resultados de la búsqueda. Si esto sucede, cancele la exportación, vuelva a ejecutar la búsqueda y vuelva a iniciar la exportación.
 
 ## <a name="step-1-prepare-search-results-for-export"></a>Paso 1: Preparar los resultados de búsqueda para la exportación
 
@@ -169,7 +171,7 @@ El siguiente paso es descargar los resultados de la búsqueda desde la Azure Sto
       >- Deshabilite el examen antivirus de la carpeta en la que descarga el resultado de la búsqueda.<br/>
       >- Descargue los resultados de búsqueda en diferentes carpetas para trabajos de descarga simultáneos.
 
-6. Haga clic en **Iniciar** para descargar los resultados de la búsqueda en el equipo.
+7. Haga clic en **Iniciar** para descargar los resultados de la búsqueda en el equipo.
   
     La **Herramienta de exportación de exhibición de documentos electrónicos** muestra información del estado acerca del proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Una vez completado el proceso de exportación, puede obtener acceso a los archivos en la ubicación donde se descargaron.
 
