@@ -17,12 +17,12 @@ ms.collection:
 description: Los administradores pueden aprender cómo ver, crear, modificar y eliminar directivas contra correo electrónico no deseado en Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5cd6a1a2ce1ca6c6ce3741674945a1e2a43694b7
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1241e6ebb838938f82fce5dc08ea93a3038f4ace
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206019"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624238"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Configuración de directivas contra correo no deseado en EOP
 
@@ -123,9 +123,9 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
      |**Ninguna acción**|||||![Marca de verificación](../../media/checkmark.png)|
      |
 
-     > <sup>1</sup> En Exchange Online, el mensaje se mueve a la carpeta Correo no deseado si está habilitada la regla de correo no deseado en el buzón (está activada de forma predeterminada). Para más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
+     > <sup>1</sup> En Exchange Online, el mensaje se mueve a la carpeta Correo no deseado si está habilitada la regla de correo no deseado en el buzón (está activada de forma predeterminada). Para más información, consulte [Configuración de las opciones del correo no deseado en buzones de Exchange Online](configure-junk-email-settings-on-exo-mailboxes.md).
      >
-     > En entornos de EOP independientes en los que EOP protege los buzones de Exchange locales, tiene que configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtro de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta de correo electrónico no deseado. Para obtener información, consulte [Configuración de un EOP independiente para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+     > En entornos híbridos en los que EOP protege los buzones de Exchange locales, tiene que configurar las reglas de flujo de correo (también conocidas como reglas de transporte) en Exchange local para traducir el veredicto de filtro de correo no deseado de EOP para que la regla de correo no deseado pueda mover el mensaje a la carpeta de correo electrónico no deseado. Para obtener información, consulte [Configuración de un EOP para entregar el correo no deseado en la carpeta de correo no deseado en entornos híbridos](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
      >
      > <sup>2</sup> Puede usar este valor como condición en las reglas de flujo de correo (también conocidas como reglas de transporte) para filtrar o redirigir el mensaje.
 
@@ -137,7 +137,7 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 
      - **_MarkAsSpamBulkMail_ está desactivada**: el mensaje está marcado con los BCL, pero no se realiza _ninguna acción_ para un veredicto de filtro de **Correo electrónico en masa**. De hecho, el umbral de BCL y el veredicto de filtrado de **Correo electrónico en masa** no es relevante.
 
-   - **Cuarentena**: especifica cuánto tiempo debe mantenerse el mensaje en cuarentena si ha seleccionado **Mensaje en cuarentena** como la acción para un veredicto de filtrado de correo no deseado. Cuando expire el período de tiempo, el mensaje se eliminará. El valor predeterminado es 30 días. Los valores válidos están comprendidos entre 1 y 30 días. Para obtener más información acerca de la cuarentena, consulte los siguientes temas:
+   - **Cuarentena**: especifica cuánto tiempo debe mantenerse el mensaje en cuarentena si ha seleccionado **Mensaje en cuarentena** como la acción para un veredicto de filtrado de correo no deseado. Cuando expire el período de tiempo, el mensaje se eliminará. El valor predeterminado es 30 días. Los valores válidos están comprendidos entre 1 y 30 días. Para obtener más información acerca de la cuarentena, consulte los siguientes temas:
 
      - [Mensajes en cuarentena en EOP](quarantine-email-messages.md)
      - [Administración de mensajes en cuarentena y archivos como administrador en EOP](manage-quarantined-messages-and-files.md)
@@ -145,7 +145,7 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 
    - **Agregar este texto de encabezado X**: este cuadro es obligatorio y solo está disponible si se ha seleccionado **Agregar encabezado X** como acción para un veredicto de filtrado de correo no deseado. El valor que especifique es el *nombre* del campo de encabezado que se agrega al encabezado del mensaje. El *valor* del campo de encabezado siempre es `This message appears to be spam`.
 
-     La longitud máxima es de 255 caracteres y el valor no puede contener espacios o dos puntos (:).
+     La longitud máxima es de 255 caracteres y el valor no puede contener espacios o dos puntos (:).
 
      Por ejemplo, si escribe el valor `X-This-is-my-custom-header`, el encabezado X que se agrega al mensaje es `X-This-is-my-custom-header: This message appears to be spam.`
 
@@ -153,7 +153,7 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 
    - **Anteponer la línea de asunto con este texto**: este cuadro es obligatorio y solo está disponible si se ha seleccionado **Anteponer la línea de asunto con este texto** como acción para un veredicto de filtrado de correo no deseado. Escriba el texto que se agregará al principio de la línea de asunto del mensaje.
 
-   - **Redirigir a esta dirección de correo electrónico**: este cuadro es obligatorio y solo está disponible si ha seleccionado la **Redirigir el mensaje a dirección de correo electrónico** como la acción para un veredicto de filtrado de correo no deseado. Escriba la dirección de correo electrónico a la que quiere enviar el mensaje. Puede especificar varios valores separados por punto y coma (;).
+   - **Redirigir a esta dirección de correo electrónico**: este cuadro es obligatorio y solo está disponible si ha seleccionado la **Redirigir el mensaje a dirección de correo electrónico** como la acción para un veredicto de filtrado de correo no deseado. Escriba la dirección de correo electrónico a la que quiere enviar el mensaje. Puede especificar varios valores separados por punto y coma (;).
 
    - **Sugerencias de seguridad**: de forma predeterminada, las Sugerencias de seguridad están habilitadas, pero puede deshabilitarlas si desactiva la casilla de verificación **Activada**. Para obtener más información sobre las Sugerencias de seguridad, consulte [Sugerencias de seguridad en mensajes de correo electrónico](safety-tips-in-office-365.md).
 
@@ -173,54 +173,54 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 
    - **Permitir remitente**: haga clic en **Editar**. En la ventana **Lista de remitentes permitidos** que aparece:
 
-      a. Escriba la dirección de correo electrónico del remitente. Puede especificar varias direcciones de correo electrónico separadas por punto y coma (;).
+      a. Escriba la dirección de correo electrónico del remitente. Puede especificar varias direcciones de correo electrónico separadas por punto y coma (;).
 
       b. Haga clic en ![Icono Agregar](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) para agregar los remitentes.
 
       Repita estos pasos tantas veces como sea necesario.
 
-      Los remitentes que agregue aparecerán en la sección **Remitentes permitidos** en la ventana. Para eliminar un remitente, haga clic en el ![icono Quitar](../../media/scc-remove-icon.png).
+      Los remitentes que agregue aparecerán en la sección **Remitentes permitidos** en la ventana. Para eliminar un remitente, haga clic en el ![icono Quitar](../../media/scc-remove-icon.png).
 
       Cuando haya terminado, haga clic en **Guardar**.
 
    - **Permitir dominio**: haga clic en **Editar**. En la ventana **Lista de dominios permitidos** que aparece, siga estos pasos:
 
-      a. Escriba el dominio. Puede especificar varios dominios separados por punto y coma (;).
+      a. Escriba el dominio. Puede especificar varios dominios separados por punto y coma (;).
 
       b. Haga clic en ![Icono Agregar](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) para agregar los dominios.
 
       Repita estos pasos tantas veces como sea necesario.
 
-      Los dominios que agregue aparecerán en la sección **Dominios permitidos** en la ventana. Para eliminar un dominio, haga clic en el ![icono Quitar](../../media/scc-remove-icon.png).
+      Los dominios que agregue aparecerán en la sección **Dominios permitidos** en la ventana. Para eliminar un dominio, haga clic en el ![icono Quitar](../../media/scc-remove-icon.png).
 
       Cuando haya terminado, haga clic en **Guardar**.
 
-6. (Opcional) Expanda la sección **Listas de bloqueados** para configurar los remitentes de mensajes según la dirección de correo electrónico o el dominio de correo electrónico que siempre se marcarán como correo no deseado de alta confianza:
+6. (Opcional) Expanda la sección **Listas de bloqueados** para configurar los remitentes de mensajes según la dirección de correo electrónico o el dominio de correo electrónico que siempre se marcarán como correo no deseado de alta confianza:
 
    > [!NOTE]
    > Bloquear manualmente los dominios no es peligroso, pero puede incrementar la carga de trabajo administrativa. Para más información, consulte [Crear listas de remitentes bloqueados en EOP](create-block-sender-lists-in-office-365.md)
 
    - **Bloquear remitente**: haga clic en **Editar**. En la ventana **Lista de remitentes bloqueados** que aparece, siga estos pasos:
 
-      a. Escriba la dirección de correo electrónico del remitente. Puede especificar varias direcciones de correo electrónico separadas por punto y coma (;). No se admiten los caracteres comodín (*).
+      a. Escriba la dirección de correo electrónico del remitente. Puede especificar varias direcciones de correo electrónico separadas por punto y coma (;). No se admiten los caracteres comodín (*).
 
       b. Haga clic en ![Icono Agregar](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) para agregar los remitentes.
 
       Repita estos pasos tantas veces como sea necesario.
 
-      Los remitentes que agregue aparecerán en la sección **Remitentes bloqueados** en la ventana. Para eliminar un remitente, haga clic en el ![botón Quitar](../../media/scc-remove-icon.png).
+      Los remitentes que agregue aparecerán en la sección **Remitentes bloqueados** en la ventana. Para eliminar un remitente, haga clic en el ![botón Quitar](../../media/scc-remove-icon.png).
 
       Cuando haya terminado, haga clic en **Guardar**.
 
    - **Bloquear dominio**: haga clic en **Editar**. En la **lista Dominios bloqueados** que aparece:
 
-      a. Escriba el dominio. Puede especificar varios dominios separados por punto y coma (;). No se admiten los caracteres comodín (*).
+      a. Escriba el dominio. Puede especificar varios dominios separados por punto y coma (;). No se admiten los caracteres comodín (*).
 
       b. Haga clic en ![Icono Agregar](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) para agregar los dominios.
 
       Repita estos pasos tantas veces como sea necesario.
 
-      Los dominios que agregue aparecerán en la lista **Dominios bloqueados** en la ventana. Para eliminar un dominio, haga clic en el ![botón Quitar](../../media/scc-remove-icon.png).
+      Los dominios que agregue aparecerán en la lista **Dominios bloqueados** en la ventana. Para eliminar un dominio, haga clic en el ![botón Quitar](../../media/scc-remove-icon.png).
 
       Cuando haya terminado, haga clic en **Guardar**.
 
@@ -228,7 +228,7 @@ La creación de una directiva contra correo no deseado en el Centro de seguridad
 
    - **Filtrar mensajes de correo electrónico escritos en los siguientes idiomas**: esta opción está deshabilitada de forma predeterminada (**Estado: Desactivada**). Haga clic en **Editar**. En la **Configuración de correo no deseado internacional** que aparece, configure las siguientes opciones:
 
-     - **Filtrar mensajes de correo electrónico en los siguientes idioma**: seleccione la casilla para habilitar esta configuración. Desactive la casilla para deshabilitar esta configuración.
+     - **Filtrar mensajes de correo electrónico en los siguientes idioma**: seleccione la casilla para habilitar esta configuración. Desactive la casilla para deshabilitar esta configuración.
 
      - Haga clic en el cuadro y empiece a escribir el *nombre* del idioma. Se mostrará una lista filtrada de idiomas compatibles, junto con el código de lenguaje ISO 639-2. Cuando encuentre el idioma que está buscando, selecciónelo. Repita este paso tantas veces como sea necesario.
 
@@ -352,7 +352,7 @@ Cuando un veredicto de filtrado de correo no deseado pone en cuarentena un mensa
 
    - **Habilitar las notificaciones de correo no deseado para el usuario final**: seleccione la casilla para habilitar las notificaciones. Desactive la casilla para deshabilitar las notificaciones.
 
-   - **Enviar notificaciones de correo no deseado para el usuario final cada (días)**: seleccione la frecuencia con la que se envían las notificaciones. El valor predeterminado es 3 días. Puede escribir entre 1 y 15 días.
+   - **Enviar notificaciones de correo no deseado para el usuario final cada (días)**: seleccione la frecuencia con la que se envían las notificaciones. El valor predeterminado es 3 días. Puede escribir entre 1 y 15 días.
 
      Existen tres ciclos de notificaciones de correo no deseado del usuario final dentro de un período de 24 horas que comienzan en los siguientes horarios: 01:00 UTC, 08:00 UTC y 16:00 UTC.
 
@@ -480,7 +480,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 ### <a name="use-powershell-to-view-spam-filter-rules"></a>Uso de PowerShell para ver reglas de filtro de correo no deseado
 
-Para ver reglas de filtro de correo no deseado existentes, use la siguiente sintaxis:
+Para ver reglas de filtro de correo no deseado existentes, use la siguiente sintaxis:
 
 ```PowerShell
 Get-HostedContentFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
@@ -518,7 +518,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>Uso de PowerShell para modificar directivas de filtro de correo no deseado
 
-Además de los siguientes elementos, las mismas opciones están disponibles al modificar una directiva de filtro de correo no deseado en PowerShell como cuando crea la directiva, como se describe en la sección [Paso 1: Usar PowerShell para crear una directiva de filtro de correo no deseado](#step-1-use-powershell-to-create-a-spam-filter-policy) anteriormente en este artículo.
+Además de los siguientes elementos, las mismas opciones están disponibles al modificar una directiva de filtro de correo no deseado en PowerShell como cuando crea la directiva, como se describe en la sección [Paso 1: Usar PowerShell para crear una directiva de filtro de correo no deseado](#step-1-use-powershell-to-create-a-spam-filter-policy) anteriormente en este artículo.
 
 - El conmutador _MakeDefault_ que convierte la directiva especificada en la predeterminada (se aplica a todos los usuarios, siempre tiene la prioridad **Mínima** y no se puede eliminar) solo está disponible cuando se modifica una directiva de filtro de correo no deseado en PowerShell.
 
@@ -639,7 +639,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 ### <a name="send-a-gtube-message-to-test-your-spam-policy-settings"></a>Envíe un mensaje GTUBE para comprobar la configuración de la directiva de correo no deseado
 
 > [!NOTE]
-> Estos pasos solo funcionarán si la organización de correo electrónico desde la que está enviando el mensaje GTUBE no detecta correo no deseado saliente. Si lo hace, no se puede enviar el mensaje de prueba.
+> Estos pasos solo funcionarán si la organización de correo electrónico desde la que envía el mensaje GTUBE no detecta correo no deseado saliente. Si lo hace, no se puede enviar el mensaje de prueba.
 
 Prueba genérica de correo electrónico en masa no solicitado (GTUBE) es una cadena de texto que se incluye en un mensaje de prueba para comprobar la configuración del correo no deseado de la organización. Un mensaje GTUBE es similar al archivo de texto del European Institute of Computer virus Research (EICAR) para probar la configuración de malware.
 

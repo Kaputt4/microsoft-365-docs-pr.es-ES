@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configure la Prevención de pérdida de datos de Microsoft 365 Endpoint para supervisar las actividades de archivo e implemente acciones de protección de estos archivos en los puntos de conexión.
-ms.openlocfilehash: 8fc8bef62827a5e6125565f5d7227a88cd923dcf
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: a6c0ec6f1248fdeecd8616b7eda000b7608d452d
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332815"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651013"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Introducción a la prevención de pérdida de datos en punto de conexión
 
@@ -102,7 +102,11 @@ Asegúrese de que los dispositivos con Windows 10 en los que planee implementar 
     - For Windows 10 2004 - KB4568831, KB4577063
     - Para dispositivos que ejecutan Office 2016 (en lugar de cualquier otra versión de Office): KB4577063 
 
-4. Todos los dispositivos deben estar [unidos a Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join), unidos a AD, unidos a Azure AD híbrido o registrados en AAD.
+4. Todos los dispositivos deben cumplir una de estas opciones:
+- [Unido a Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join)
+- Unido a Azure AD
+- [Unido a Azure AD híbrido ](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
+- [Registrado en AAD](/azure/active-directory/user-help/user-help-register-device-on-network)
 
 5. Instale el explorador Chromium Edge de Microsoft en el dispositivo del punto de conexión para aplicar acciones de directiva para cargar a la actividad de la nube. Consulte [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
@@ -144,7 +148,7 @@ En este escenario de implementación, incorporará dispositivos que aún no haya
 6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de aterrizaje en la que puede acceder a los procedimientos de Microsoft Defender para punto de conexión que coinciden con el paquete de implementación que seleccionó en el paso 5:
 
     - Incorporar equipos con Windows 10 usando Directiva de grupo
-    - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
+    - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
     - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles
     - Incorporar equipos con Windows 10 usando un script local
     - Incorporar equipos de infraestructura de escritorio virtual (VDI) no persistentes en escenarios de sesión única
@@ -174,7 +178,7 @@ En este escenario, Microsoft Defender para punto de conexión ya está implement
 6. Siga los procedimientos adecuados que puede consultar en [Herramientas y métodos de incorporación para equipos con Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). Este vínculo le lleva a una página de aterrizaje en la que puede acceder a los procedimientos de Microsoft Defender para punto de conexión que coinciden con el paquete de implementación que seleccionó en el paso 5:
 
     - Incorporar equipos con Windows 10 usando Directiva de grupo
-    - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
+    - Incorporar equipos con Windows con Microsoft Endpoint Configuration Manager
     - Incorporar equipos con Windows 10 con herramientas de administración de dispositivos móviles
     - Incorporar equipos con Windows 10 usando un script local
     - Incorporar equipos de infraestructura de escritorio virtual no persistente (VDI).
@@ -213,7 +217,7 @@ Ahora que tiene dispositivos incorporados y puede ver los datos de la actividad 
 - [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
 - [Introducción al explorador de actividad](data-classification-activity-explorer.md)
 - [Microsoft Defender para punto de conexión](/windows/security/threat-protection/)
-- [Herramientas y métodos de incorporación para equipos con Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+- [Herramientas y métodos de incorporación para equipos con Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 - [Suscripción a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Dispositivos de Azure AD Unidos](/azure/active-directory/devices/concept-azure-ad-join)
 - [Descargar el nuevo Microsoft Edge basado en Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

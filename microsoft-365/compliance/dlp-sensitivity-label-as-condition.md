@@ -20,19 +20,19 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Obtenga más información sobre los servicios y los tipos de elementos en los que puede usar etiquetas de confidencialidad como condiciones en directivas DLP
-ms.openlocfilehash: 19bd80de225f703b5c280163e94826498fa097bd
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: b33e6704a3311740c1e386f77f1c751382ee6958
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876299"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651097"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Usar etiquetas de confidencialidad como condiciones en las directivas de DLP
 
 Puede usar [etiquetas de confidencialidad](sensitivity-labels.md) como condiciones en las directivas DLP para estas ubicaciones:
 
 - Mensajes de correo electrónico de Exchange Online
-- SharePoint Online
+- SharePoint Online
 - Sitios de OneDrive para la Empresa
 - Dispositivos con Windows 10
 
@@ -54,15 +54,15 @@ Puede usar etiquetas de confidencialidad como condiciones para estos elementos y
 |Servicio  |Tipo de elemento  |Disponible para sugerencia de directiva  |Aplicable  |
 |---------|---------|---------|---------|
 |Exchange    |mensaje de correo electrónico         |sí         |sí         |
-|Exchange    |datos adjuntos de correo electrónico         |no *         |sí *         |
-|SharePoint Online     |elementos en SharePoint Online         |sí         |sí         |
+|Exchange    |datos adjuntos de correo electrónico         |no         |sí *         |
+|SharePoint Online     |elementos en SharePoint Online         |sí         |sí         |
 |OneDrive para la Empresa     |elementos         |sí         |sí         |
 |Teams     |Mensajes de canal y de Teams         |no aplicable         |no aplicable         |
 |Teams     |datos adjuntos         |sí **         |sí **         |
-|Dispositivos con Windows 10     |elementos         |sí         |sí         |
+|Dispositivos con Windows 10     |elementos         |sí         |sí         |
 |MCAS (vista previa) |elementos         |sí         |sí         |
 
-\* Se admite en tránsito la detección de DLP y el cumplimiento de etiquetas de confidencialidad en correos electrónicos y datos adjuntos. No se admiten las sugerencias de directivas DLP de los datos adjuntos de correo electrónico con etiquetas de confidencialidad.
+\* La detección DLP de etiquetas de confidencialidad en los datos adjuntos de correo electrónico solo es compatible con tipos de archivo de Office.
 
 \** Los datos adjuntos enviados en Teams sobre chats o canales 1:1 son cargados automáticamente en OneDrive para la Empresa y SharePoint. De modo que si SharePoint Online o OneDrive para la Empresa están incluidos como ubicaciones en su directiva de DLP, entonces los adjuntos etiquetados enviados en Teams serán incluidos de forma automática en el alcance de esta condición. No es necesario seleccionar Teams como una ubicación en la Directiva DLP.
 
